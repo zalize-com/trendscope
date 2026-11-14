@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>trendscope tools — free in-browser developer utilities</title>
+<meta name="description" content="Free developer tools that run entirely in your browser: JSON formatter, regex tester, cron explainer, timestamp converter, Base64/URL encoder. No upload, no signup, no tracking.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --border: #30363d; --fg: #e6edf3;
+    --dim: #8b949e; --accent: #58a6ff; --green: #3fb950; --red: #f85149;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --fg: #1f2328;
+      --dim: #59636e; --accent: #0969da; --green: #1a7f37; --red: #cf222e;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--fg);
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 28px 18px 60px; }
+  a.back { color: var(--accent); text-decoration: none; font-size: 14px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; }
+  .sub { color: var(--dim); font-size: 14px; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 20px 0 16px; }
+  .tab {
+    padding: 7px 14px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--panel); color: var(--dim); cursor: pointer; font-size: 14px;
+  }
+  .tab.active { color: var(--fg); border-color: var(--accent); }
+  .tool { display: none; }
+  .tool.active { display: block; }
+  h2 { font-size: 18px; margin-bottom: 4px; }
+  .hint { color: var(--dim); font-size: 13px; margin-bottom: 12px; }
+  textarea, input[type=text], input[type=number] {
+    width: 100%; padding: 10px 12px; border-radius: 8px; font-size: 14px;
+    border: 1px solid var(--border); background: var(--panel); color: var(--fg);
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  }
+  textarea { min-height: 140px; resize: vertical; }
+  .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 640px) { .row2 { grid-template-columns: 1fr; } }
+  .btns { display: flex; gap: 8px; margin: 10px 0; flex-wrap: wrap; }
+  button.act {
+    padding: 8px 16px; border-radius: 8px; border: 1px solid var(--accent);
+    background: transparent; color: var(--accent); cursor: pointer; font-size: 14px;
+  }
+  button.act:hover { background: var(--accent); color: var(--bg); }
+  .out {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+    padding: 12px 14px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 13px; white-space: pre-wrap; word-break: break-all; min-height: 60px;
+  }
+  .ok { color: var(--green); }
+  .bad { color: var(--red); }
+  mark { background: var(--orange, #d29922); color: #fff; border-radius: 3px; padding: 0 1px; }
+  :root { --orange: #d29922; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 10px; margin-top: 10px; }
+  .cell { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+  .cell .k { color: var(--dim); font-size: 12px; }
+  .cell .v { font-family: ui-monospace, Menlo, monospace; font-size: 15px; margin-top: 2px; }
+  footer { margin-top: 40px; color: var(--dim); font-size: 13px; border-top: 1px solid var(--border); padding-top: 14px; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../index.html">← trendscope dashboard</a>
+  <h1>tools</h1>
+  <p class="sub">Five utilities, 100% client-side. No upload, no signup, no tracking.</p>
+
+  <div class="tabs" id="tabs"></div>
+
+  <!-- JSON -->
+  <div class="tool" data-tool="json">
+    <h2>JSON formatter</h2>
+    <p class="hint">Paste JSON → format, minify, or validate.</p>
+    <textarea id="json-in" placeholder='{"a":1,"b":[2,3]}'></textarea>
+    <div class="btns">
+      <button class="act" onclick="jsonDo('pretty')">Format</button>
+      <button class="act" onclick="jsonDo('minify')">Minify</button>
+      <button class="act" onclick="jsonDo('validate')">Validate</button>
+    </div>
+    <div class="out" id="json-out"></div>
+  </div>
+
+  <!-- Regex -->
+  <div class="tool" data-tool="regex">
+    <h2>Regex tester</h2>
+    <p class="hint">JavaScript flavor. Flags: g i m s u y.</p>
+    <input type="text" id="re-pat" placeholder="pattern, e.g. \b\w+@\w+\.\w+\b">
+    <div style="height:8px"></div>
+    <input type="text" id="re-flags" placeholder="flags (default: g)">
+    <div style="height:8px"></div>
+    <textarea id="re-text" placeholder="test string…"></textarea>
+    <div class="out" id="re-out"></div>
+  </div>
+
+  <!-- Cron -->
+  <div class="tool" data-tool="cron">
+    <h2>Cron explainer</h2>
+    <p class="hint">Standard 5-field cron (min hour dom mon dow).</p>
+    <input type="text" id="cron-in" placeholder="e.g. 5 6 * * 1-5">
+    <div class="btns"><button class="act" onclick="cronGo()">Explain</button></div>
+    <div class="out" id="cron-out"></div>
+  </div>
+
+  <!-- Timestamp -->
+  <div class="tool" data-tool="ts">
+    <h2>Timestamp converter</h2>
+    <p class="hint">Unix seconds/ms ↔ human date (UTC + local).</p>
+    <div class="grid">
+      <div class="cell"><div class="k">now (unix s)</div><div class="v" id="ts-now"></div></div>
+      <div class="cell"><div class="k">now (UTC)</div><div class="v" id="ts-utc"></div></div>
+    </div>
+    <div style="height:12px"></div>
+    <input type="text" id="ts-in" placeholder="unix seconds or ISO date, e.g. 1731700000 or 2026-11-15T04:00:00Z">
+    <div class="btns"><button class="act" onclick="tsGo()">Convert</button></div>
+    <div class="grid" id="ts-out"></div>
+  </div>
+
+  <!-- Base64 / URL -->
+  <div class="tool" data-tool="enc">
+    <h2>Base64 / URL encoder</h2>
+    <p class="hint">Unicode-safe. Encode or decode either format.</p>
+    <textarea id="enc-in" placeholder="text or base64 or %encoded"></textarea>
+    <div class="btns">
+      <button class="act" onclick="encDo('b64e')">→ Base64</button>
+      <button class="act" onclick="encDo('b64d')">Base64 →</button>
+      <button class="act" onclick="encDo('urle')">→ URL-encoded</button>
+      <button class="act" onclick="encDo('urld')">URL-decoded →</button>
+    </div>
+    <div class="out" id="enc-out"></div>
+  </div>
+
+  <footer>
+    Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
+    Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
+  </footer>
+</div>
+
+<script>
+const TOOLS = [
+  {id:"json", label:"JSON formatter"},
+  {id:"regex", label:"Regex tester"},
+  {id:"cron", label:"Cron explainer"},
+  {id:"ts", label:"Timestamp"},
+  {id:"enc", label:"Base64 / URL"},
+];
+const tabsEl = document.getElementById("tabs");
+tabsEl.innerHTML = TOOLS.map((t,i) =>
+  `<button class="tab${i===0?" active":""}" data-t="${t.id}">${t.label}</button>`).join("");
+tabsEl.addEventListener("click", ev => {
+  const b = ev.target.closest(".tab"); if (!b) return;
+  tabsEl.querySelectorAll(".tab").forEach(x => x.classList.toggle("active", x===b));
+  document.querySelectorAll(".tool").forEach(d =>
+    d.classList.toggle("active", d.dataset.tool === b.dataset.t));
+  location.hash = b.dataset.t;
+});
+document.querySelector(`[data-tool="${location.hash.slice(1)}"]`)?.classList.add("active")
+  || document.querySelector('[data-tool="json"]').classList.add("active");
+if (location.hash.slice(1)) {
+  const id = location.hash.slice(1);
+  tabsEl.querySelectorAll(".tab").forEach(x =>
+    x.classList.toggle("active", x.dataset.t === id));
+}
+
+// ---- JSON ----
+function jsonDo(op) {
+  const inEl = document.getElementById("json-in"), out = document.getElementById("json-out");
+  try {
+    const v = JSON.parse(inEl.value);
+    if (op === "pretty") out.textContent = JSON.stringify(v, null, 2);
+    else if (op === "minify") out.textContent = JSON.stringify(v);
+    else { out.innerHTML = `<span class="ok">Valid JSON · ${Array.isArray(v)?"array":typeof v} · ${JSON.stringify(v).length} chars</span>`; }
+  } catch (e) {
+    out.innerHTML = `<span class="bad">${e.message}</span>`;
+  }
+}
+
+// ---- Regex ----
+function reGo() {
+  const pat = document.getElementById("re-pat").value;
+  const flags = document.getElementById("re-flags").value || "g";
+  const text = document.getElementById("re-text").value;
+  const out = document.getElementById("re-out");
+  try {
+    const re = new RegExp(pat, flags);
+    const matches = [...text.matchAll(flags.includes("g") ? re : new RegExp(pat, flags+"g"))];
+    let html = text.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+    let i = 0, out2 = "";
+    for (const m of matches) {
+      out2 += html.slice(i, m.index) + "<mark>" + html.slice(m.index, m.index + m[0].length) + "</mark>";
+      i = m.index + m[0].length;
+    }
+    out2 += html.slice(i);
+    out.innerHTML = `<div class="${matches.length?"ok":"bad"}">${matches.length} match${matches.length===1?"":"es"}</div><br>` + out2;
+  } catch (e) { out.innerHTML = `<span class="bad">${e.message}</span>`; }
+}
+["re-pat","re-flags","re-text"].forEach(id => document.getElementById(id).addEventListener("input", reGo));
+
+// ---- Cron ----
+const CRON_NAMES = [["minute",0,59],["hour",0,23],["day of month",1,31],["month",1,12],["day of week",0,7]];
+const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const DOW = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+function cronField(f, [name, lo, hi]) {
+  const map = v => name==="month" ? (MON[+v-1]||v) : name==="day of week" ? (DOW[+v]||v) : v;
+  if (f === "*") return `every ${name}`;
+  if (f.startsWith("*/")) return `every ${f.slice(2)} ${name}${f.slice(2)>1?"s":""}`;
+  if (f.includes("-")) { const [a,b]=f.split("-"); return `${name} ${map(a)}–${map(b)}`; }
+  if (f.includes(",")) return `${name} ${f.split(",").map(map).join(", ")}`;
+  if (f.includes("/")) { const [r,s]=f.split("/"); return `every ${s} ${name}s in ${r}`; }
+  return `${name} ${map(f)}`;
+}
+function cronGo() {
+  const v = document.getElementById("cron-in").value.trim();
+  const out = document.getElementById("cron-out");
+  const parts = v.split(/\s+/);
+  if (parts.length !== 5) { out.innerHTML = `<span class="bad">need 5 fields, got ${parts.length}</span>`; return; }
+  out.innerHTML = parts.map((p,i) => `<div><b>${CRON_NAMES[i][0]}:</b> ${cronField(p, CRON_NAMES[i])}</div>`).join("")
+    + `<div style="margin-top:8px" class="ok">runs at: ${describe(parts)}</div>`;
+}
+function describe([m,h,dom,mon,dow]) {
+  const time = (h==="*") ? `every hour at minute ${m}` :
+    (m==="*") ? `every minute of hour ${h}` :
+    `${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}`;
+  const day = (dom==="*" && dow==="*") ? "every day" :
+    (dom!=="*") ? `on day ${dom} of the month` : `on ${dow==="1-5"?"weekdays":dow}`;
+  return `${time}, ${day}${mon==="*"?"":`, in ${mon}`}`;
+}
+
+// ---- Timestamp ----
+function tick() {
+  const n = Date.now();
+  document.getElementById("ts-now").textContent = Math.floor(n/1000);
+  document.getElementById("ts-utc").textContent = new Date(n).toISOString().replace("T"," ").slice(0,19)+"Z";
+}
+setInterval(tick, 1000); tick();
+function tsGo() {
+  const v = document.getElementById("ts-in").value.trim();
+  const out = document.getElementById("ts-out");
+  let ms;
+  if (/^\d{13}$/.test(v)) ms = +v;
+  else if (/^\d{10}$/.test(v)) ms = +v * 1000;
+  else ms = Date.parse(v);
+  if (isNaN(ms)) { out.innerHTML = `<div class="cell"><span class="bad">unrecognized — try unix seconds, ms, or ISO date</span></div>`; return; }
+  const d = new Date(ms);
+  out.innerHTML = [
+    ["unix (s)", Math.floor(ms/1000)],
+    ["unix (ms)", ms],
+    ["UTC", d.toISOString()],
+    ["local", d.toLocaleString()],
+    ["relative", relTime(ms)],
+  ].map(([k,val]) => `<div class="cell"><div class="k">${k}</div><div class="v">${val}</div></div>`).join("");
+}
+function relTime(ms) {
+  const s = Math.round((ms - Date.now())/1000), a = Math.abs(s);
+  const u = a<60?`${a}s`:a<3600?`${Math.round(a/60)}m`:a<86400?`${Math.round(a/3600)}h`:`${Math.round(a/86400)}d`;
+  return s>=0 ? `in ${u}` : `${u} ago`;
+}
+
+// ---- Encode ----
+function encDo(op) {
+  const v = document.getElementById("enc-in").value;
+  const out = document.getElementById("enc-out");
+  try {
+    if (op==="b64e") out.textContent = btoa(unescape(encodeURIComponent(v)));
+    else if (op==="b64d") out.textContent = decodeURIComponent(escape(atob(v.trim())));
+    else if (op==="urle") out.textContent = encodeURIComponent(v);
+    else out.textContent = decodeURIComponent(v.trim());
+  } catch (e) { out.innerHTML = `<span class="bad">${e.message}</span>`; }
+}
+</script>
+</body>
+</html>
