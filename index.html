@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>trendscope — daily open dataset of what developers are reading &amp; building</title>
+<meta name="description" content="trendscope is a daily open dataset of developer attention: Hacker News, GitHub trending, Lobste.rs, Dev.to, npm, PyPI and crates.io — snapshotted every day, free to download (CC0).">
+<meta name="keywords" content="hacker news daily, github trending, developer trends dataset, open dataset, npm downloads, pypi downloads">
+<meta property="og:title" content="trendscope — the developer attention dataset">
+<meta property="og:description" content="Daily cross-source snapshot of what developers are reading, building and downloading. Open data, CC0.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "trendscope — developer attention dataset",
+  "description": "Daily cross-source snapshot of developer attention: Hacker News, GitHub trending, Lobste.rs, Dev.to, npm, PyPI, crates.io.",
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "isAccessibleForFree": true,
+  "distribution": [
+    {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "data/latest.json"},
+    {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "data/history.csv"}
+  ]
+}
+</script>
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --border: #30363d; --fg: #e6edf3;
+    --dim: #8b949e; --accent: #58a6ff; --green: #3fb950; --orange: #d29922;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --fg: #1f2328;
+      --dim: #59636e; --accent: #0969da; --green: #1a7f37; --orange: #9a6700;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--fg);
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 32px 20px 64px; }
+  header.hero { text-align: center; padding: 28px 0 20px; }
+  .hero h1 { font-size: 34px; letter-spacing: -0.5px; }
+  .hero h1 .scope { color: var(--accent); }
+  .tagline { color: var(--dim); margin-top: 6px; font-size: 16px; }
+  .stamp {
+    display: inline-block; margin-top: 14px; padding: 4px 14px;
+    border: 1px solid var(--border); border-radius: 999px;
+    color: var(--dim); font-size: 13px; background: var(--panel);
+  }
+  .stamp b { color: var(--green); font-weight: 600; }
+  .topics { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 18px 0 4px; }
+  .topic-chip {
+    padding: 4px 12px; border-radius: 999px; font-size: 13px;
+    background: var(--panel); border: 1px solid var(--border); color: var(--dim);
+  }
+  .topic-chip b { color: var(--fg); font-weight: 600; }
+  section { margin-top: 34px; }
+  h2 { font-size: 20px; margin-bottom: 12px; }
+  h2 .sub { color: var(--dim); font-size: 13px; font-weight: 400; margin-left: 8px; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+  .tab {
+    padding: 6px 14px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--panel); color: var(--dim); cursor: pointer; font-size: 14px;
+  }
+  .tab.active { color: var(--fg); border-color: var(--accent); }
+  .board { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .row {
+    display: grid; grid-template-columns: 34px 1fr auto; gap: 8px;
+    padding: 10px 14px; border-top: 1px solid var(--border); align-items: baseline;
+  }
+  .row:first-child { border-top: none; }
+  .row .rank { color: var(--dim); font-variant-numeric: tabular-nums; font-size: 13px; }
+  .row a { color: var(--fg); text-decoration: none; }
+  .row a:hover { color: var(--accent); text-decoration: underline; }
+  .row .meta { color: var(--dim); font-size: 12px; margin-top: 2px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .src {
+    font-size: 11px; padding: 1px 7px; border-radius: 999px;
+    border: 1px solid var(--border); color: var(--dim); white-space: nowrap;
+  }
+  .score { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .score b { font-weight: 600; }
+  .delta { font-size: 12px; color: var(--green); display: block; }
+  .delta.new { color: var(--orange); }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 10px; padding: 16px;
+  }
+  .card h3 { font-size: 15px; margin-bottom: 6px; }
+  .card p { color: var(--dim); font-size: 13px; }
+  .card a { color: var(--accent); }
+  .btn {
+    display: inline-block; margin-top: 10px; padding: 7px 14px; font-size: 13px;
+    border: 1px solid var(--accent); border-radius: 8px; color: var(--accent);
+    text-decoration: none;
+  }
+  .btn:hover { background: var(--accent); color: var(--bg); }
+  .btn.ghost { border-color: var(--border); color: var(--dim); }
+  code {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 5px;
+    padding: 1px 6px; font-size: 12.5px;
+  }
+  footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--dim); font-size: 13px; }
+  footer a { color: var(--accent); text-decoration: none; }
+  .muted { color: var(--dim); }
+  #err { color: var(--orange); display: none; margin-top: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>trend<span class="scope">scope</span></h1>
+    <p class="tagline">The developer attention dataset — updated daily.</p>
+    <div class="stamp" id="stamp">loading…</div>
+    <div class="topics" id="topics"></div>
+    <p id="err">Could not load <code>data/latest.json</code> — the first snapshot may not have run yet.</p>
+  </header>
+
+  <section>
+    <h2>Today's cross-source board <span class="sub" id="board-sub"></span></h2>
+    <div class="tabs" id="tabs"></div>
+    <div class="board" id="board"></div>
+  </section>
+
+  <section>
+    <h2>Rising this week <span class="sub">velocity vs. previous snapshots</span></h2>
+    <div class="board" id="rising">
+      <div class="row"><span></span><span class="muted">Needs a second daily snapshot — check back tomorrow.</span><span></span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Dataset <span class="sub">CC0 — take it, use it, cite us</span></h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Latest snapshot</h3>
+        <p>All items from the most recent run, normalized schema.</p>
+        <a class="btn" href="data/latest.json">latest.json</a>
+        <a class="btn ghost" href="data/latest.csv">latest.csv</a>
+      </div>
+      <div class="card">
+        <h3>Full history</h3>
+        <p>Append-only cumulative rows for velocity analysis. <span id="hist-days"></span></p>
+        <a class="btn" href="data/history.csv">history.csv</a>
+        <a class="btn ghost" href="data/index.json">index.json</a>
+      </div>
+      <div class="card">
+        <h3>Daily archives</h3>
+        <p>Per-day JSON + CSV snapshots under <code>data/daily/</code>.</p>
+        <div id="daily-links"></div>
+      </div>
+      <div class="card">
+        <h3>Schema</h3>
+        <p><code>source, rank, title, url, score, metric, comments, author, tags, captured_at</code></p>
+        <a class="btn ghost" href="docs/data-dictionary.md">data-dictionary.md</a>
+      </div>
+      <div class="card">
+        <h3>Pro</h3>
+        <p>Cleaned long-range history, API access, weekly digests — coming soon.</p>
+        <a class="btn ghost" href="#">Sponsor / get notified →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><b>Method.</b> A GitHub Action runs <code>scripts/collect.py</code> once a day, aggregating public keyless endpoints:
+       Hacker News (Algolia), GitHub search, Lobste.rs, Dev.to, npm downloads, PyPI Stats, crates.io.
+       Scores are source-native (points / stars / reactions / downloads) — compare within a source, not across.</p>
+    <p style="margin-top:8px">Open data, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.
+       Built in the open — <a href="https://github.com/zalize-com/trendscope">source on GitHub</a>.</p>
+  </footer>
+
+</div>
+
+<script>
+const TABS = [
+  { id: "all",             label: "All" },
+  { id: "hackernews",      label: "Hacker News" },
+  { id: "github_trending", label: "GitHub" },
+  { id: "lobsters",        label: "Lobsters" },
+  { id: "devto",           label: "Dev.to" },
+  { id: "packages",        label: "Packages" },
+];
+const PKG = new Set(["npm", "pypi", "crates"]);
+
+const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B"
+             : n >= 1e6 ? (n/1e6).toFixed(1)+"M"
+             : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
+
+let SNAP = null, YDAY = null;
+
+async function j(url) {
+  const r = await fetch(url, {cache: "no-cache"});
+  if (!r.ok) throw new Error(url + " " + r.status);
+  return r.json();
+}
+
+function prevScore(item) {
+  if (!YDAY || !YDAY.top_scores) return null;
+  for (const k of Object.keys(YDAY.top_scores)) {
+    const hit = YDAY.top_scores[k].find(x => x.url === item.url);
+    if (hit) return hit.score;
+  }
+  return undefined; // present yesterday list, but this item wasn't in it
+}
+
+function render(items, tab) {
+  const board = document.getElementById("board");
+  board.innerHTML = "";
+  let list;
+  if (tab === "all") {
+    list = items.flatMap(([s, its]) => its).sort((a, b) => b.score - a.score).slice(0, 30);
+  } else if (tab === "packages") {
+    list = items.flatMap(([s, its]) => PKG.has(s) ? its : [])
+                .sort((a, b) => b.score - a.score).slice(0, 30);
+  } else {
+    list = (items.find(([s]) => s === tab) || [null, []])[1];
+  }
+  if (!list.length) {
+    board.innerHTML = `<div class="row"><span></span><span class="muted">No items for this source yet.</span><span></span></div>`;
+    return;
+  }
+  list.forEach((it, i) => {
+    const prev = prevScore(it);
+    let delta = "";
+    if (prev === undefined && YDAY) delta = `<span class="delta new">new</span>`;
+    else if (typeof prev === "number") {
+      const d = it.score - prev;
+      delta = `<span class="delta">${d >= 0 ? "+" : ""}${fmt(d)}</span>`;
+    }
+    const tags = (it.tags || []).slice(0, 4).map(t => `<span class="src">${t}</span>`).join(" ");
+    const comments = it.comments ? `<span>💬 ${it.comments}</span>` : "";
+    const author = it.author ? `<span>@${it.author}</span>` : "";
+    board.insertAdjacentHTML("beforeend", `
+      <div class="row">
+        <span class="rank">${i + 1}</span>
+        <span>
+          <a href="${it.url}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a>
+          <span class="meta"><span class="src">${it.source}</span>${comments}${author}${tags}</span>
+        </span>
+        <span class="score"><b>${fmt(it.score)}</b> <span class="muted" style="font-size:11px">${it.metric}</span>${delta}</span>
+      </div>`);
+  });
+}
+
+function escapeHtml(s) {
+  const d = document.createElement("div");
+  d.textContent = s || "";
+  return d.innerHTML;
+}
+
+async function main() {
+  try {
+    SNAP = await j("data/latest.json");
+  } catch (e) {
+    document.getElementById("err").style.display = "block";
+    return;
+  }
+  const date = SNAP.date || SNAP.generated_at.slice(0, 10);
+  document.getElementById("stamp").innerHTML =
+    `snapshot <b>${date}</b> · ${SNAP.total_items} items · ${Object.keys(SAP_SOURCES()).length} sources`;
+
+  document.getElementById("board-sub").textContent =
+    `${SNAP.total_items} items across ${Object.keys(SAP_SOURCES()).length} sources`;
+  document.getElementById("topics").innerHTML = (SNAP.topics || [])
+    .map(t => `<span class="topic-chip">${t.topic} <b>${t.count}</b></span>`).join("");
+
+  // yesterday's snapshot for deltas
+  try {
+    const idx = await j("data/index.json");
+    const days = idx.snapshots.filter(d => d !== date);
+    if (days.length) YDAY = await j(`data/daily/${days[days.length - 1]}.json`);
+    document.getElementById("hist-days").textContent =
+      `${idx.snapshots.length} day${idx.snapshots.length === 1 ? "" : "s"} so far.`;
+    document.getElementById("daily-links").innerHTML = idx.snapshots.slice(-7).reverse()
+      .map(d => `<div><a href="data/daily/${d}.json" style="color:var(--accent)">${d}.json</a>
+                 <a href="data/daily/${d}.csv" style="color:var(--dim);font-size:12px">.csv</a></div>`).join("");
+    renderRising();
+  } catch (e) { /* optional */ }
+
+  const items = Object.entries(SNAP.items);
+  const tabsEl = document.getElementById("tabs");
+  tabsEl.innerHTML = TABS.map((t, i) =>
+    `<button class="tab${i === 0 ? " active" : ""}" data-tab="${t.id}">${t.label}</button>`).join("");
+  tabsEl.addEventListener("click", ev => {
+    const b = ev.target.closest(".tab");
+    if (!b) return;
+    tabsEl.querySelectorAll(".tab").forEach(x => x.classList.toggle("active", x === b));
+    render(items, b.dataset.tab);
+  });
+  render(items, "all");
+}
+
+const SAP_SOURCES = () => SNAP.sources || {};
+
+function renderRising() {
+  if (!YDAY || !YDAY.top_scores || !SNAP) return;
+  // rank-movers: items present yesterday and today, biggest absolute score gain
+  const ymap = new Map();
+  for (const k of Object.keys(YDAY.top_scores))
+    for (const x of YDAY.top_scores[k]) ymap.set(x.url, x.score);
+  const movers = [];
+  for (const [src, its] of Object.entries(SNAP.items))
+    for (const it of its) {
+      const prev = ymap.get(it.url);
+      if (typeof prev === "number" && it.score > prev)
+        movers.push({ it, gain: it.score - prev });
+    }
+  movers.sort((a, b) => b.gain - a.gain);
+  if (!movers.length) return;
+  const el = document.getElementById("rising");
+  el.innerHTML = "";
+  movers.slice(0, 10).forEach(({ it, gain }) => {
+    el.insertAdjacentHTML("beforeend", `
+      <div class="row">
+        <span class="rank"></span>
+        <span><a href="${it.url}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a>
+          <span class="meta"><span class="src">${it.source}</span></span></span>
+        <span class="score"><b>${fmt(it.score)}</b> <span class="delta">+${fmt(gain)}</span></span>
+      </div>`);
+  });
+}
+
+main();
+</script>
+</body>
+</html>

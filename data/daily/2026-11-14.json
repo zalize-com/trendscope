@@ -1,0 +1,491 @@
+{
+  "date": "2026-11-14",
+  "generated_at": "2026-11-14T20:20:18.617927+00:00",
+  "sources": {
+    "hackernews": 20,
+    "lobsters": 15,
+    "devto": 15,
+    "github_trending": 15,
+    "npm": 24,
+    "pypi": 22,
+    "crates": 15
+  },
+  "top_scores": {
+    "hackernews": [
+      {
+        "title": "Why get an expensive Pi when I have an old phone?",
+        "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
+        "score": 433,
+        "metric": "points"
+      },
+      {
+        "title": "Monkey Island: all 13 versions side by side",
+        "url": "https://monkeyisland.pages.dev/",
+        "score": 410,
+        "metric": "points"
+      },
+      {
+        "title": "Tech Companies Are Trying to Shift the Concept of Privacy (Again)",
+        "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+        "score": 339,
+        "metric": "points"
+      },
+      {
+        "title": "Lovable apps expose passport details and more than 200K private messages",
+        "url": "https://www.crissyfield.de/research/lovable-en/",
+        "score": 318,
+        "metric": "points"
+      },
+      {
+        "title": "KDE: The documentary [video]",
+        "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
+        "score": 273,
+        "metric": "points"
+      },
+      {
+        "title": "Italy fines Meta $887M over Android users' data access",
+        "url": "https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/",
+        "score": 232,
+        "metric": "points"
+      },
+      {
+        "title": "PyPI's redesigned project pages with clearer security signals are now live",
+        "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
+        "score": 148,
+        "metric": "points"
+      },
+      {
+        "title": "Generative AI uses more energy on non-English text",
+        "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
+        "score": 138,
+        "metric": "points"
+      },
+      {
+        "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
+        "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+        "score": 114,
+        "metric": "points"
+      },
+      {
+        "title": "Advancing science and engineering with Antigravity's /teamwork",
+        "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+        "score": 112,
+        "metric": "points"
+      }
+    ],
+    "lobsters": [
+      {
+        "title": "How Not to Build a Music Player",
+        "url": "https://alichraghi.github.io/blog/how-not-to-build-a-music-player",
+        "score": 105,
+        "metric": "score"
+      },
+      {
+        "title": "The need for at least a third option",
+        "url": "https://blog.ovalerio.net/archives/3359",
+        "score": 79,
+        "metric": "score"
+      },
+      {
+        "title": "Probabilistic data structures in Go",
+        "url": "https://antonz.org/probabilistic-data-structures/",
+        "score": 55,
+        "metric": "score"
+      },
+      {
+        "title": "Terminal borders that don't cost a cell",
+        "url": "https://www.joshka.net/cell-borders/",
+        "score": 54,
+        "metric": "score"
+      },
+      {
+        "title": "Running a law firm on Free software (2026 edition)",
+        "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
+        "score": 47,
+        "metric": "score"
+      },
+      {
+        "title": "Someone's impersonating this blog",
+        "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/",
+        "score": 41,
+        "metric": "score"
+      },
+      {
+        "title": "Beating the frontier on NetHack",
+        "url": "https://antithesis.com/blog/2026/nethack/",
+        "score": 36,
+        "metric": "score"
+      },
+      {
+        "title": "ML Modules for Mere Mortals",
+        "url": "https://thunderseethe.dev/posts/ml-modules-for-mere-mortals/intro/",
+        "score": 31,
+        "metric": "score"
+      },
+      {
+        "title": "What happened to 3com?",
+        "url": "https://dfarq.homeip.net/what-happened-to-3com/",
+        "score": 20,
+        "metric": "score"
+      },
+      {
+        "title": "Creating a self booting ZIP archive",
+        "url": "https://goliath32.com/blog/ziphead.html",
+        "score": 13,
+        "metric": "score"
+      }
+    ],
+    "devto": [
+      {
+        "title": "How do you truly stand out in Tech?",
+        "url": "https://dev.to/francistrdev/how-do-you-truly-stand-out-in-tech-478a",
+        "score": 202,
+        "metric": "reactions"
+      },
+      {
+        "title": "Necoz Has a New Home on DEV! 🐈🎉",
+        "url": "https://dev.to/necoz/necoz-has-a-new-home-on-dev-3454",
+        "score": 179,
+        "metric": "reactions"
+      },
+      {
+        "title": "How did you end up in tech, and are you staying?",
+        "url": "https://dev.to/maame-codes/how-did-you-end-up-in-tech-and-are-you-staying-4l9b",
+        "score": 159,
+        "metric": "reactions"
+      },
+      {
+        "title": "MCP Is Dead Simple. And That's Exactly the Problem",
+        "url": "https://dev.to/sylwia-lask/mcp-is-dead-simple-and-thats-exactly-the-problem-5811",
+        "score": 156,
+        "metric": "reactions"
+      },
+      {
+        "title": "The C Trilogy: How Dennis Ritchie, Bjarne Stroustrup, and Anders Hejlsberg Built the Modern World 🏛️",
+        "url": "https://dev.to/devengers/the-c-trilogy-how-dennis-ritchie-bjarne-stroustrup-and-anders-hejlsberg-built-the-modern-world-1onp",
+        "score": 154,
+        "metric": "reactions"
+      },
+      {
+        "title": "Our Looping Factory Cut DEV Page Load Time by 75% and Counting",
+        "url": "https://dev.to/dailycontext/our-looping-factory-cut-dev-page-load-time-by-75-and-counting-1hnf",
+        "score": 142,
+        "metric": "reactions"
+      },
+      {
+        "title": "Long Live Rails",
+        "url": "https://dev.to/ben/long-live-rails-3p21",
+        "score": 123,
+        "metric": "reactions"
+      },
+      {
+        "title": "We Keep Hearing About AI Productivity. The QA Group Chat Told a Different Story.",
+        "url": "https://dev.to/xulingfeng/we-keep-hearing-about-ai-productivity-the-qa-group-chat-told-a-different-story-2nma",
+        "score": 110,
+        "metric": "reactions"
+      },
+      {
+        "title": "A 10 years old developer who has become a DEV.to Trusted Member! 😱",
+        "url": "https://dev.to/necoz/a-10-years-old-developer-who-has-become-a-devto-trusted-member-49c8",
+        "score": 95,
+        "metric": "reactions"
+      },
+      {
+        "title": "Dev Opportunity Radar #25: $120K+ Atlassian Hackathon, MLH Fellowship, and INSEAD AI Founder Sprint",
+        "url": "https://dev.to/devengers/dev-opportunity-radar-25-120k-atlassian-hackathon-mlh-fellowship-and-insead-ai-founder-sprint-m96",
+        "score": 88,
+        "metric": "reactions"
+      }
+    ],
+    "github_trending": [
+      {
+        "title": "huamidev/GestaltX",
+        "url": "https://github.com/huamidev/GestaltX",
+        "score": 7546,
+        "metric": "stars"
+      },
+      {
+        "title": "jhaizhou-ops/S2Arm",
+        "url": "https://github.com/jhaizhou-ops/S2Arm",
+        "score": 2978,
+        "metric": "stars"
+      },
+      {
+        "title": "Kianuni/Erosion-CN",
+        "url": "https://github.com/Kianuni/Erosion-CN",
+        "score": 2051,
+        "metric": "stars"
+      },
+      {
+        "title": "apex-compute/ANR",
+        "url": "https://github.com/apex-compute/ANR",
+        "score": 1779,
+        "metric": "stars"
+      },
+      {
+        "title": "deepseek-ai/chat-demo",
+        "url": "https://github.com/deepseek-ai/chat-demo",
+        "score": 1699,
+        "metric": "stars"
+      },
+      {
+        "title": "HybridRobotics/supermimic",
+        "url": "https://github.com/HybridRobotics/supermimic",
+        "score": 1495,
+        "metric": "stars"
+      },
+      {
+        "title": "FrigadeHQ/yogurt",
+        "url": "https://github.com/FrigadeHQ/yogurt",
+        "score": 1445,
+        "metric": "stars"
+      },
+      {
+        "title": "agentes-chat/agentes-chat",
+        "url": "https://github.com/agentes-chat/agentes-chat",
+        "score": 1390,
+        "metric": "stars"
+      },
+      {
+        "title": "HolyArrs/HolyArrs",
+        "url": "https://github.com/HolyArrs/HolyArrs",
+        "score": 1170,
+        "metric": "stars"
+      },
+      {
+        "title": "DevedevT/FFmpeg-GUI-Editor-Windows",
+        "url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows",
+        "score": 1047,
+        "metric": "stars"
+      }
+    ],
+    "npm": [
+      {
+        "title": "zod",
+        "url": "https://www.npmjs.com/package/zod",
+        "score": 456795275,
+        "metric": "weekly downloads"
+      },
+      {
+        "title": "typescript",
+        "url": "https://www.npmjs.com/package/typescript",
+        "score": 420299292,
+        "metric": "weekly downloads"
+      },
+      {
+        "title": "esbuild",
+        "url": "https://www.npmjs.com/package/esbuild",
+        "score": 419566667,
+        "metric": "weekly downloads"
+      },
+      {
+        "title": "vite",
+        "url": "https://www.npmjs.com/package/vite",
+        "score": 271758738,
+        "metric": "weekly downloads"
+      },
+      {
+        "title": "react",
+        "url": "https://www.npmjs.com/package/react",
+        "score": 256249908,
+        "metric": "weekly downloads"
+      },
+      {
+        "title": "lodash",
+        "url": "https://www.npmjs.com/package/lodash",
+        "score": 200438316,
+        "metric": "weekly downloads"
+      },
+      {
+        "title": "express",
+        "url": "https://www.npmjs.com/package/express",
+        "score": 195709453,
+        "metric": "weekly downloads"
+      },
+      {
+        "title": "vitest",
+        "url": "https://www.npmjs.com/package/vitest",
+        "score": 182460991,
+        "metric": "weekly downloads"
+      },
+      {
+        "title": "tailwindcss",
+        "url": "https://www.npmjs.com/package/tailwindcss",
+        "score": 178999790,
+        "metric": "weekly downloads"
+      },
+      {
+        "title": "axios",
+        "url": "https://www.npmjs.com/package/axios",
+        "score": 142159537,
+        "metric": "weekly downloads"
+      }
+    ],
+    "pypi": [
+      {
+        "title": "boto3",
+        "url": "https://pypi.org/project/boto3/",
+        "score": 2600056407,
+        "metric": "monthly downloads"
+      },
+      {
+        "title": "requests",
+        "url": "https://pypi.org/project/requests/",
+        "score": 1478957330,
+        "metric": "monthly downloads"
+      },
+      {
+        "title": "pydantic",
+        "url": "https://pypi.org/project/pydantic/",
+        "score": 1138753582,
+        "metric": "monthly downloads"
+      },
+      {
+        "title": "click",
+        "url": "https://pypi.org/project/click/",
+        "score": 1097885406,
+        "metric": "monthly downloads"
+      },
+      {
+        "title": "numpy",
+        "url": "https://pypi.org/project/numpy/",
+        "score": 1095220575,
+        "metric": "monthly downloads"
+      },
+      {
+        "title": "pytest",
+        "url": "https://pypi.org/project/pytest/",
+        "score": 960310675,
+        "metric": "monthly downloads"
+      },
+      {
+        "title": "httpx",
+        "url": "https://pypi.org/project/httpx/",
+        "score": 794805198,
+        "metric": "monthly downloads"
+      },
+      {
+        "title": "pandas",
+        "url": "https://pypi.org/project/pandas/",
+        "score": 698520592,
+        "metric": "monthly downloads"
+      },
+      {
+        "title": "rich",
+        "url": "https://pypi.org/project/rich/",
+        "score": 565221275,
+        "metric": "monthly downloads"
+      },
+      {
+        "title": "fastapi",
+        "url": "https://pypi.org/project/fastapi/",
+        "score": 532085116,
+        "metric": "monthly downloads"
+      }
+    ],
+    "crates": [
+      {
+        "title": "hashbrown",
+        "url": "https://crates.io/crates/hashbrown",
+        "score": 912501410,
+        "metric": "recent downloads"
+      },
+      {
+        "title": "syn",
+        "url": "https://crates.io/crates/syn",
+        "score": 898659910,
+        "metric": "recent downloads"
+      },
+      {
+        "title": "getrandom",
+        "url": "https://crates.io/crates/getrandom",
+        "score": 819207341,
+        "metric": "recent downloads"
+      },
+      {
+        "title": "rand",
+        "url": "https://crates.io/crates/rand",
+        "score": 641675826,
+        "metric": "recent downloads"
+      },
+      {
+        "title": "rand_core",
+        "url": "https://crates.io/crates/rand_core",
+        "score": 639223677,
+        "metric": "recent downloads"
+      },
+      {
+        "title": "bitflags",
+        "url": "https://crates.io/crates/bitflags",
+        "score": 597110437,
+        "metric": "recent downloads"
+      },
+      {
+        "title": "thiserror",
+        "url": "https://crates.io/crates/thiserror",
+        "score": 533389555,
+        "metric": "recent downloads"
+      },
+      {
+        "title": "thiserror-impl",
+        "url": "https://crates.io/crates/thiserror-impl",
+        "score": 533317022,
+        "metric": "recent downloads"
+      },
+      {
+        "title": "base64",
+        "url": "https://crates.io/crates/base64",
+        "score": 530394575,
+        "metric": "recent downloads"
+      },
+      {
+        "title": "windows-sys",
+        "url": "https://crates.io/crates/windows-sys",
+        "score": 521914502,
+        "metric": "recent downloads"
+      }
+    ]
+  },
+  "topics": [
+    {
+      "topic": "AI/LLM",
+      "count": 32,
+      "total_score": 2003031607
+    },
+    {
+      "topic": "Web Dev",
+      "count": 24,
+      "total_score": 3548309094
+    },
+    {
+      "topic": "Security",
+      "count": 23,
+      "total_score": 3402
+    },
+    {
+      "topic": "Languages",
+      "count": 15,
+      "total_score": 2869442877
+    },
+    {
+      "topic": "Tools/OSS",
+      "count": 13,
+      "total_score": 2556331984
+    },
+    {
+      "topic": "Data Eng",
+      "count": 7,
+      "total_score": 1224678797
+    },
+    {
+      "topic": "Career/Business",
+      "count": 3,
+      "total_score": 471
+    },
+    {
+      "topic": "DevOps/Infra",
+      "count": 1,
+      "total_score": 1390
+    }
+  ]
+}
