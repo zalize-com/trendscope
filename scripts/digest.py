@@ -23,6 +23,9 @@ def main():
         sys.exit(1)
 
     rows = list(csv.DictReader(open(history, newline="")))
+    if not rows:
+        print("history.csv has no rows yet", file=sys.stderr)
+        sys.exit(1)
     dates = sorted({r["date"] for r in rows})[-days:]
     rows = [r for r in rows if r["date"] in dates]
 

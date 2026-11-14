@@ -67,8 +67,20 @@ GITHUB_TOKEN=... python3 scripts/collect.py   # optional: higher GitHub API limi
 Then serve the dashboard statically from the repo root (e.g. `python3 -m http.server`)
 and open `index.html`.
 
-## Monetization hooks (placeholders, owner activates)
+## Attribution
 
-- Full-history cleaned dataset → Gumroad / data.zalize.com link TBD
+Free to use, share and build on — including commercially. When you publish or
+redistribute, please credit **trendscope** with a link back to
+<https://github.com/zalize-com/trendscope> or the dashboard:
+
+```text
+trendscope developer attention dataset, https://zalize-com.github.io/trendscope/
+```
+
+## Roadmap & paid tier (owner activates)
+
+- Cleaned long-range history + per-topic slices → dataset listing on
+  [data.zalize.com](https://data.zalize.com) (link TBD)
+- Weekly digest archives under `docs/digest/` → subscription-ready content
 - GitHub Sponsors → enable on the account and this repo
 - README sponsor slot below → TBD
