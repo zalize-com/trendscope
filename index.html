@@ -297,12 +297,13 @@ function paint() {
   const date = CUR_DATE;
   const total = SNAP.total_items ??
     Object.values(SNAP.items || {}).reduce((a, v) => a + v.length, 0);
+  const nsrc = Object.keys(SAP_SOURCES()).length;
   document.getElementById("stamp").innerHTML =
-    `snapshot <b>${date}</b> · ${total} items · ${Object.keys(SAP_SOURCES()).length} sources`;
+    `snapshot <b>${date}</b> · ${total} items · ${nsrc} source${nsrc === 1 ? "" : "s"}`;
   const isToday = INDEX && date === INDEX.snapshots[INDEX.snapshots.length - 1];
   document.getElementById("board-title").textContent = isToday ? "Today's" : `${date}`;
   document.getElementById("board-sub").textContent =
-    `${total} items across ${Object.keys(SAP_SOURCES()).length} sources`;
+    `${total} items across ${nsrc} source${nsrc === 1 ? "" : "s"}`;
   document.getElementById("topics").innerHTML = (SNAP.topics || [])
     .map(t => `<span class="topic-chip">${t.topic} <b>${t.count}</b></span>`).join("");
 
