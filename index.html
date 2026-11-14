@@ -213,7 +213,13 @@ function render(items, tab) {
   board.innerHTML = "";
   let list;
   if (tab === "all") {
-    list = items.flatMap(([s, its]) => its).sort((a, b) => b.score - a.score).slice(0, 30);
+    // Normalize each item to a 0-100 "heat" within its source so downloads
+    // don't bury editorial scores; then interleave sources.
+    const maxBySrc = {};
+    items.forEach(([s, its]) => { maxBySrc[s] = its[0]?.score || 1; });
+    list = items.flatMap(([s, its]) =>
+        its.map(it => ({ it, heat: it.score / (maxBySrc[s] || 1) })))
+      .sort((a, b) => b.heat - a.heat).slice(0, 30).map(x => x.it);
   } else if (tab === "packages") {
     list = items.flatMap(([s, its]) => PKG.has(s) ? its : [])
                 .sort((a, b) => b.score - a.score).slice(0, 30);
@@ -232,7 +238,9 @@ function render(items, tab) {
       const d = it.score - prev;
       delta = `<span class="delta">${d >= 0 ? "+" : ""}${fmt(d)}</span>`;
     }
-    const tags = (it.tags || []).slice(0, 4).map(t => `<span class="src">${t}</span>`).join(" ");
+    const tags = (it.tags || [])
+      .filter(t => t !== it.source && !String(t).startsWith("author_"))
+      .slice(0, 4).map(t => `<span class="src">${t}</span>`).join(" ");
     const comments = it.comments ? `<span>💬 ${it.comments}</span>` : "";
     const author = it.author ? `<span>@${it.author}</span>` : "";
     board.insertAdjacentHTML("beforeend", `
