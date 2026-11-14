@@ -161,13 +161,12 @@ tabsEl.addEventListener("click", ev => {
     d.classList.toggle("active", d.dataset.tool === b.dataset.t));
   location.hash = b.dataset.t;
 });
-document.querySelector(`[data-tool="${location.hash.slice(1)}"]`)?.classList.add("active")
-  || document.querySelector('[data-tool="json"]').classList.add("active");
-if (location.hash.slice(1)) {
-  const id = location.hash.slice(1);
-  tabsEl.querySelectorAll(".tab").forEach(x =>
-    x.classList.toggle("active", x.dataset.t === id));
-}
+const start = location.hash.slice(1);
+const t0 = TOOLS.some(t => t.id === start) ? start : "json";
+document.querySelectorAll(".tool").forEach(d =>
+  d.classList.toggle("active", d.dataset.tool === t0));
+tabsEl.querySelectorAll(".tab").forEach(x =>
+  x.classList.toggle("active", x.dataset.t === t0));
 
 // ---- JSON ----
 function jsonDo(op) {

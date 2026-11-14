@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>trendscope tools+ — diff viewer & markdown preview, free in-browser</title>
+<meta name="description" content="More free developer tools that run entirely in your browser: text diff viewer and markdown preview. No upload, no signup, no tracking.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --border: #30363d; --fg: #e6edf3;
+    --dim: #8b949e; --accent: #58a6ff; --green: #3fb950; --red: #f85149; --orange: #d29922;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --fg: #1f2328;
+      --dim: #59636e; --accent: #0969da; --green: #1a7f37; --red: #cf222e; --orange: #9a6700;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--fg);
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px 60px; }
+  a.back { color: var(--accent); text-decoration: none; font-size: 14px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; }
+  .sub { color: var(--dim); font-size: 14px; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 20px 0 16px; }
+  .tab {
+    padding: 7px 14px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--panel); color: var(--dim); cursor: pointer; font-size: 14px;
+  }
+  .tab.active { color: var(--fg); border-color: var(--accent); }
+  .tool { display: none; }
+  .tool.active { display: block; }
+  h2 { font-size: 18px; margin-bottom: 4px; }
+  .hint { color: var(--dim); font-size: 13px; margin-bottom: 12px; }
+  textarea, input[type=text] {
+    width: 100%; padding: 10px 12px; border-radius: 8px; font-size: 14px;
+    border: 1px solid var(--border); background: var(--panel); color: var(--fg);
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  }
+  textarea { min-height: 160px; resize: vertical; }
+  .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 640px) { .row2 { grid-template-columns: 1fr; } }
+  .btns { display: flex; gap: 8px; margin: 10px 0; flex-wrap: wrap; }
+  button.act {
+    padding: 8px 16px; border-radius: 8px; border: 1px solid var(--accent);
+    background: transparent; color: var(--accent); cursor: pointer; font-size: 14px;
+  }
+  button.act:hover { background: var(--accent); color: var(--bg); }
+  .out {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+    padding: 12px 14px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 13px; white-space: pre-wrap; word-break: break-word; min-height: 60px;
+    overflow-x: auto;
+  }
+  .diff-add { background: rgba(63,185,80,.15); color: var(--green); display: block; }
+  .diff-del { background: rgba(248,81,73,.15); color: var(--red); display: block; }
+  .diff-ctx { color: var(--dim); display: block; }
+  .ok { color: var(--green); }
+  .bad { color: var(--red); }
+  .stat { color: var(--dim); font-size: 13px; margin-bottom: 8px; }
+  /* markdown preview output */
+  .md h1, .md h2, .md h3 { margin: 14px 0 6px; font-family: inherit; }
+  .md h1 { font-size: 22px; border-bottom: 1px solid var(--border); padding-bottom: 4px; }
+  .md h2 { font-size: 18px; } .md h3 { font-size: 16px; }
+  .md p { margin: 8px 0; }
+  .md code { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: 0 5px; }
+  .md pre { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 10px; overflow-x: auto; margin: 8px 0; }
+  .md pre code { background: none; border: none; padding: 0; }
+  .md blockquote { border-left: 3px solid var(--border); padding-left: 12px; color: var(--dim); margin: 8px 0; }
+  .md ul, .md ol { padding-left: 22px; margin: 8px 0; }
+  .md a { color: var(--accent); }
+  .md table { border-collapse: collapse; margin: 8px 0; }
+  .md th, .md td { border: 1px solid var(--border); padding: 4px 10px; }
+  .md hr { border: none; border-top: 1px solid var(--border); margin: 14px 0; }
+  footer { margin-top: 40px; color: var(--dim); font-size: 13px; border-top: 1px solid var(--border); padding-top: 14px; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← more tools</a>
+  <h1>tools+</h1>
+  <p class="sub">Two more utilities, 100% client-side. No upload, no signup, no tracking.</p>
+
+  <div class="tabs" id="tabs"></div>
+
+  <!-- Diff viewer -->
+  <div class="tool" data-tool="diff">
+    <h2>Text diff</h2>
+    <p class="hint">Line-based diff (LCS). Paste the original on the left, the new version on the right.</p>
+    <div class="row2">
+      <textarea id="diff-a" placeholder="original text…"></textarea>
+      <textarea id="diff-b" placeholder="changed text…"></textarea>
+    </div>
+    <div class="btns">
+      <button class="act" onclick="diffGo()">Compare</button>
+      <button class="act" onclick="diffSwap()">Swap</button>
+    </div>
+    <div class="stat" id="diff-stat"></div>
+    <div class="out" id="diff-out"></div>
+  </div>
+
+  <!-- Markdown preview -->
+  <div class="tool" data-tool="md">
+    <h2>Markdown preview</h2>
+    <p class="hint">Live preview. Supports headings, bold/italic/code, lists, tables, links, quotes, fences.</p>
+    <textarea id="md-in" placeholder="# Hello&#10;&#10;Type **markdown** here…"></textarea>
+    <div class="out md" id="md-out"></div>
+  </div>
+
+  <footer>
+    Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
+    Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
+  </footer>
+</div>
+
+<script>
+const TOOLS = [
+  {id:"diff", label:"Text diff"},
+  {id:"md",   label:"Markdown preview"},
+];
+const tabsEl = document.getElementById("tabs");
+tabsEl.innerHTML = TOOLS.map((t,i) =>
+  `<button class="tab${i===0?" active":""}" data-t="${t.id}">${t.label}</button>`).join("");
+tabsEl.addEventListener("click", ev => {
+  const b = ev.target.closest(".tab"); if (!b) return;
+  tabsEl.querySelectorAll(".tab").forEach(x => x.classList.toggle("active", x===b));
+  document.querySelectorAll(".tool").forEach(d =>
+    d.classList.toggle("active", d.dataset.tool === b.dataset.t));
+  location.hash = b.dataset.t;
+});
+const start = location.hash.slice(1);
+const t0 = TOOLS.some(t => t.id === start) ? start : "diff";
+document.querySelectorAll(".tool").forEach(d =>
+  d.classList.toggle("active", d.dataset.tool === t0));
+tabsEl.querySelectorAll(".tab").forEach(x =>
+  x.classList.toggle("active", x.dataset.t === t0));
+
+// ---- Diff (LCS over lines) ----
+function lcsDiff(a, b) {
+  const n = a.length, m = b.length;
+  const dp = Array.from({length: n + 1}, () => new Uint32Array(m + 1));
+  for (let i = n - 1; i >= 0; i--)
+    for (let j = m - 1; j >= 0; j--)
+      dp[i][j] = a[i] === b[j] ? dp[i+1][j+1] + 1 : Math.max(dp[i+1][j], dp[i][j+1]);
+  const ops = [];
+  let i = 0, j = 0;
+  while (i < n && j < m) {
+    if (a[i] === b[j]) { ops.push(["ctx", a[i]]); i++; j++; }
+    else if (dp[i+1][j] >= dp[i][j+1]) { ops.push(["del", a[i]]); i++; }
+    else { ops.push(["add", b[j]]); j++; }
+  }
+  while (i < n) ops.push(["del", a[i++]]);
+  while (j < m) ops.push(["add", b[j++]]);
+  return ops;
+}
+function esc(s) { return s.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
+function diffGo() {
+  const a = document.getElementById("diff-a").value.split("\n");
+  const b = document.getElementById("diff-b").value.split("\n");
+  const ops = lcsDiff(a, b);
+  const adds = ops.filter(o => o[0] === "add").length;
+  const dels = ops.filter(o => o[0] === "del").length;
+  document.getElementById("diff-stat").innerHTML =
+    adds + dels === 0 ? `<span class="ok">identical — ${a.length} lines</span>`
+                      : `<span class="ok">+${adds}</span> / <span class="bad">−${dels}</span> lines`;
+  document.getElementById("diff-out").innerHTML = ops.map(([k, line]) =>
+    `<span class="diff-${k}">${k === "add" ? "+ " : k === "del" ? "− " : "  "}${esc(line) || " "}</span>`).join("");
+}
+function diffSwap() {
+  const a = document.getElementById("diff-a"), b = document.getElementById("diff-b");
+  [a.value, b.value] = [b.value, a.value]; diffGo();
+}
+["diff-a","diff-b"].forEach(id => document.getElementById(id).addEventListener("input", diffGo));
+
+// ---- Markdown (minimal, escape-first) ----
+function mdInline(s) {
+  s = s.replace(/`([^`]+)`/g, (m, c) => `<code>${c}</code>`);
+  s = s.replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>").replace(/__([^_]+)__/g, "<b>$1</b>");
+  s = s.replace(/\*([^*\n]+)\*/g, "<i>$1</i>").replace(/\b_([^_\n]+)_/g, "<i>$1</i>");
+  s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+|[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  s = s.replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, '<img alt="$1" src="$2" style="max-width:100%">');
+  return s;
+}
+function mdRender(src) {
+  const lines = src.split("\n");
+  let html = "", inCode = false, list = null, para = [], tbl = null;
+  const flushPara = () => { if (para.length) { html += `<p>${mdInline(para.join(" "))}</p>`; para = []; } };
+  const flushList = () => { if (list) { html += `</${list}>`; list = null; } };
+  const flushTbl = () => { if (tbl) { html += "</table>"; tbl = null; } };
+  for (let raw of lines) {
+    if (/^```/.test(raw)) {
+      flushPara(); flushList(); flushTbl();
+      html += inCode ? "</code></pre>" : "<pre><code>";
+      inCode = !inCode; continue;
+    }
+    if (inCode) { html += esc(raw) + "\n"; continue; }
+    const t = raw.trimEnd();
+    if (!t.trim()) { flushPara(); flushList(); flushTbl(); continue; }
+    if (/^\|.+\|$/.test(t)) {
+      flushPara(); flushList();
+      const cells = t.split("|").slice(1, -1).map(c => c.trim());
+      if (cells.every(c => /^:?-+:?$/.test(c))) continue; // separator row
+      if (!tbl) { tbl = true; html += "<table>"; }
+      html += "<tr>" + cells.map(c => `<td>${mdInline(esc(c))}</td>`).join("") + "</tr>";
+      continue;
+    }
+    flushTbl();
+    let m;
+    if (m = t.match(/^(#{1,6})\s+(.*)/)) {
+      flushPara(); flushList();
+      const lv = Math.min(m[1].length, 3);
+      html += `<h${lv}>${mdInline(esc(m[2]))}</h${lv}>`;
+    } else if (/^(-{3,}|\*{3,})$/.test(t)) {
+      flushPara(); flushList(); html += "<hr>";
+    } else if (m = t.match(/^&gt;|^>/)) {
+      flushPara(); flushList();
+      html += `<blockquote>${mdInline(esc(t.replace(/^&gt;|^>\s?/, "")))}</blockquote>`;
+    } else if (m = t.match(/^[-*+]\s+(.*)/)) {
+      flushPara();
+      if (list !== "ul") { flushList(); html += "<ul>"; list = "ul"; }
+      html += `<li>${mdInline(esc(m[1]))}</li>`;
+    } else if (m = t.match(/^\d+[.)]\s+(.*)/)) {
+      flushPara();
+      if (list !== "ol") { flushList(); html += "<ol>"; list = "ol"; }
+      html += `<li>${mdInline(esc(m[1]))}</li>`;
+    } else {
+      flushList(); para.push(esc(t));
+    }
+  }
+  flushPara(); flushList(); flushTbl();
+  if (inCode) html += "</code></pre>";
+  return html;
+}
+function mdGo() {
+  document.getElementById("md-out").innerHTML = mdRender(document.getElementById("md-in").value);
+}
+document.getElementById("md-in").addEventListener("input", mdGo);
+mdGo();
+</script>
+</body>
+</html>
