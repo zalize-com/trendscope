@@ -7,6 +7,7 @@ Items: one per daily snapshot (data/daily/*.json) and one per weekly digest
 
 import json
 import os
+import re
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from xml.sax.saxutils import escape
@@ -18,6 +19,18 @@ BASE = "https://zalize-com.github.io/trendscope"
 REPO = "https://github.com/zalize-com/trendscope"
 
 
+def item_date(name):
+    """Edition date for a daily snapshot (YYYY-MM-DD) or digest (YYYY-Www)."""
+    if "-W" in name:
+        y, w = name.split("-W")
+        return datetime.strptime(f"{y}-W{w}-7", "%G-W%V-%u").replace(tzinfo=timezone.utc)
+    try:
+        return datetime.strptime(name, "%Y-%m-%d").replace(
+            hour=6, minute=10, tzinfo=timezone.utc)
+    except ValueError:
+        return datetime.now(timezone.utc)
+
+
 def items():
     out = []
     for name in sorted(os.listdir(DAILY), reverse=True):
@@ -26,9 +39,8 @@ def items():
         day = name[:-5]
         try:
             doc = json.load(open(os.path.join(DAILY, name)))
-            items = doc.get("items", {})
-            n = sum(len(v) for v in items.values())
-            src = len(items)
+            n = sum(len(v) for v in doc.get("items", {}).values())
+            src = len(doc.get("items", {}))
             tops = []
             for src_items in (doc.get("top_scores") or {}).values():
                 tops += [i["title"][:80] for i in src_items[:1]]
@@ -36,13 +48,13 @@ def items():
                 "Top: " + "; ".join(tops[:3]) if tops else "")
         except Exception:
             desc = "Daily snapshot."
-        out.append((day, f"Snapshot {day}",
+        out.append((item_date(day), f"Snapshot {day}",
                     f"{BASE}/", f"{REPO}/blob/main/data/daily/{name}", desc))
     for name in sorted(os.listdir(DIGEST), reverse=True):
-        if not name.endswith(".md"):
+        if not re.fullmatch(r"\d{4}-W\d{2}\.md", name):
             continue
         week = name[:-3]
-        out.append((week, f"Weekly digest {week}",
+        out.append((item_date(week), f"Weekly digest {week}",
                     f"{REPO}/blob/main/docs/digest/{name}", f"{REPO}/blob/main/docs/digest/{name}",
                     "Weekly digest: top movers, per-source leaders, hot tags."))
     out.sort(key=lambda t: t[0], reverse=True)
@@ -52,11 +64,11 @@ def items():
 def main():
     now = format_datetime(datetime.now(timezone.utc))
     body = []
-    for _, title, link, guid, desc in items():
+    for pub, title, link, guid, desc in items():
         body.append(
             f"  <item>\n    <title>{escape(title)}</title>\n    <link>{escape(link)}</link>\n"
             f"    <guid isPermaLink=\"true\">{escape(guid)}</guid>\n"
-            f"    <pubDate>{now}</pubDate>\n    <description>{escape(desc)}</description>\n  </item>")
+            f"    <pubDate>{format_datetime(pub)}</pubDate>\n    <description>{escape(desc)}</description>\n  </item>")
     xml = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<rss version="2.0">\n<channel>\n'
