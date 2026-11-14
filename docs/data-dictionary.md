@@ -3,6 +3,11 @@
 One row per captured item. Present in `data/latest.json`, `data/daily/*.json/.csv`
 and `data/history.csv` (CSV joins `tags` with `|`).
 
+`data/daily/YYYY-MM-DD.json` is the complete daily archive:
+`{date, generated_at, sources, items, top_scores, topics}` where `items` is the
+full per-source item lists and `top_scores` is a compact top-10 summary kept for
+backward compatibility.
+
 | Field | Type | Description |
 |---|---|---|
 | `source` | string | `hackernews`, `github_trending`, `lobsters`, `devto`, `npm`, `pypi`, `crates` |
@@ -31,5 +36,6 @@ ranking.
 - Scores are **not comparable across sources** (points ≠ downloads).
 - npm/PyPI entries cover a fixed watchlist (see `scripts/collect.py`), not the
   whole registry.
-- GitHub section = repos **created in the last 7 days** sorted by stars, not the
-  official trending page.
+- GitHub section = repos **created in the last 7 days** sorted by total stars
+  (via the Search API), not the official trending page — it's "hot new repos".
+- Hacker News `tags` exclude Algolia bookkeeping tokens (`author_*`, `story_*`).

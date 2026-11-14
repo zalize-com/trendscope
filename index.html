@@ -199,13 +199,19 @@ async function j(url) {
   return r.json();
 }
 
+function ydayMap() {
+  const m = new Map();
+  if (!YDAY) return m;
+  // Prefer full item lists (newer snapshots); fall back to top_scores.
+  const groups = YDAY.items || YDAY.top_scores || {};
+  for (const k of Object.keys(groups))
+    for (const x of groups[k]) m.set(x.url, x.score);
+  return m;
+}
+
 function prevScore(item) {
-  if (!YDAY || !YDAY.top_scores) return null;
-  for (const k of Object.keys(YDAY.top_scores)) {
-    const hit = YDAY.top_scores[k].find(x => x.url === item.url);
-    if (hit) return hit.score;
-  }
-  return undefined; // present yesterday list, but this item wasn't in it
+  if (!YDAY) return null;
+  return ydayMap().get(item.url); // undefined = not on yesterday's board
 }
 
 function render(items, tab) {
@@ -213,16 +219,19 @@ function render(items, tab) {
   board.innerHTML = "";
   let list;
   if (tab === "all") {
-    // Normalize each item to a 0-100 "heat" within its source so downloads
-    // don't bury editorial scores; then interleave sources.
+    // Normalize each item to a 0-1 "heat" within its source so downloads
+    // don't bury editorial scores.
     const maxBySrc = {};
     items.forEach(([s, its]) => { maxBySrc[s] = its[0]?.score || 1; });
     list = items.flatMap(([s, its]) =>
         its.map(it => ({ it, heat: it.score / (maxBySrc[s] || 1) })))
       .sort((a, b) => b.heat - a.heat).slice(0, 30).map(x => x.it);
   } else if (tab === "packages") {
-    list = items.flatMap(([s, its]) => PKG.has(s) ? its : [])
-                .sort((a, b) => b.score - a.score).slice(0, 30);
+    // Interleave registries by rank — weekly vs monthly windows aren't comparable.
+    const queues = items.filter(([s]) => PKG.has(s)).map(([, its]) => [...its]);
+    list = [];
+    while (list.length < 30 && queues.some(q => q.length))
+      for (const q of queues) if (q.length) list.push(q.shift());
   } else {
     list = (items.find(([s]) => s === tab) || [null, []])[1];
   }
@@ -306,11 +315,9 @@ async function main() {
 const SAP_SOURCES = () => SNAP.sources || {};
 
 function renderRising() {
-  if (!YDAY || !YDAY.top_scores || !SNAP) return;
+  if (!YDAY || !SNAP) return;
   // rank-movers: items present yesterday and today, biggest absolute score gain
-  const ymap = new Map();
-  for (const k of Object.keys(YDAY.top_scores))
-    for (const x of YDAY.top_scores[k]) ymap.set(x.url, x.score);
+  const ymap = ydayMap();
   const movers = [];
   for (const [src, its] of Object.entries(SNAP.items))
     for (const it of its) {
@@ -319,7 +326,10 @@ function renderRising() {
         movers.push({ it, gain: it.score - prev });
     }
   movers.sort((a, b) => b.gain - a.gain);
-  if (!movers.length) return;
+  if (!movers.length) {
+    // identical or shrunken board — nothing gained score
+    return;
+  }
   const el = document.getElementById("rising");
   el.innerHTML = "";
   movers.slice(0, 10).forEach(({ it, gain }) => {

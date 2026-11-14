@@ -120,7 +120,9 @@ def fetch_hackernews(limit=20):
             h.get("url") or f"https://news.ycombinator.com/item?id={h.get('objectID')}",
             h.get("points", 0),
             "points",
-            tags=[t for t in (h.get("_tags") or []) if t not in ("front_page", "story")],
+            tags=[t for t in (h.get("_tags") or [])
+                  if not (t.startswith(("author_", "story_", "poll_"))
+                          or t in ("front_page", "story", "poll", "comment"))],
             comments=h.get("num_comments", 0),
             author=h.get("author"),
         ))
@@ -354,6 +356,7 @@ def main():
         "date": today,
         "generated_at": now.isoformat(),
         "sources": {k: len(v) for k, v in sections.items()},
+        "items": sections,
         "top_scores": {
             k: [{"title": i["title"], "url": i["url"], "score": i["score"],
                  "metric": i["metric"]} for i in v[:10]]

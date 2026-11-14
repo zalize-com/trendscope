@@ -34,6 +34,18 @@ compare within a source, not across.
 | `data/history.csv` | Append-only cumulative history — velocity analysis |
 | `data/index.json` | List of all snapshot dates |
 
+## Quick start
+
+```bash
+curl -s https://raw.githubusercontent.com/zalize-com/trendscope/main/data/latest.json | jq .
+```
+
+## Use cases
+
+- Trend research: what is the dev community paying attention to this week?
+- Velocity signals: which repos/packages are gaining attention *fastest*?
+- Benchmarks & journalism: a citable, timestamped record of dev attention.
+
 ## Data dictionary
 
 See [`docs/data-dictionary.md`](docs/data-dictionary.md). Schema:
