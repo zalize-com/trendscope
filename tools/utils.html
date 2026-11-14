@@ -6,6 +6,7 @@
 <title>trendscope utils — color converter, text inspector, URL editor, free in-browser</title>
 <meta name="description" content="Free developer utilities that run entirely in your browser: color format converter, text statistics & case tools, URL query editor. No upload, no signup, no tracking — a replacement for dead utility extensions.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js" defer></script>
 <style>
   :root {
     --bg: #0d1117; --panel: #161b22; --border: #30363d; --fg: #e6edf3;
@@ -107,6 +108,21 @@
     <div class="out" id="t-out"></div>
   </div>
 
+  <!-- YAML <-> JSON -->
+  <div class="tool" data-tool="yaml">
+    <h2>YAML ↔ JSON</h2>
+    <p class="hint">JSON→YAML always runs offline. YAML→JSON uses js-yaml via CDN when available.</p>
+    <div class="row2">
+      <textarea id="y-in" placeholder='{"name":"demo","tags":["a","b"]}'></textarea>
+      <div class="out" id="y-out" style="min-height:140px"></div>
+    </div>
+    <div class="btns">
+      <button class="act" onclick="yGo('j2y')">JSON → YAML</button>
+      <button class="act" onclick="yGo('y2j')">YAML → JSON</button>
+    </div>
+    <div class="stat" id="y-stat"></div>
+  </div>
+
   <!-- URL editor -->
   <div class="tool" data-tool="url">
     <h2>URL query editor</h2>
@@ -129,6 +145,7 @@
 const TOOLS = [
   {id:"color", label:"Color converter"},
   {id:"text",  label:"Text inspector"},
+  {id:"yaml",  label:"YAML ↔ JSON"},
   {id:"url",   label:"URL query editor"},
 ];
 const tabsEl = document.getElementById("tabs");
@@ -216,6 +233,61 @@ function tGo(op){
   document.getElementById("t-out").textContent=s;
 }
 document.getElementById("t-in").addEventListener("input",()=>{tStat();document.getElementById("t-out").textContent=document.getElementById("t-in").value});
+
+// ---- YAML <-> JSON ----
+function j2y(v, ind){
+  ind = ind || "";
+  if (v === null) return "null";
+  if (Array.isArray(v)){
+    if (!v.length) return "[]";
+    return v.map(x => {
+      if (x && typeof x === "object"){
+        const s = j2y(x, ind + "  ");
+        return ind + "-" + s.slice(ind.length);
+      }
+      return ind + "- " + j2y(x, ind + "  ");
+    }).join("\n");
+  }
+  if (typeof v === "object"){
+    const ks = Object.keys(v);
+    if (!ks.length) return "{}";
+    return ks.map(k => {
+      const val = v[k];
+      if (val && typeof val === "object")
+        return ind + k + ":\n" + j2y(val, ind + "  ");
+      return ind + k + ": " + j2y(val, ind + "  ");
+    }).join("\n");
+  }
+  if (typeof v === "string"){
+    return /^[\w .-]*$/.test(v) && v !== "" ? v : JSON.stringify(v);
+  }
+  return String(v);
+}
+function yGo(dir){
+  const inp = document.getElementById("y-in").value;
+  const out = document.getElementById("y-out"), st = document.getElementById("y-stat");
+  try {
+    if (dir === "j2y"){
+      out.textContent = j2y(JSON.parse(inp));
+      st.textContent = "";
+    } else {
+      if (window.jsyaml && window.jsyaml.load){
+        out.textContent = JSON.stringify(window.jsyaml.load(inp), null, 2);
+        st.textContent = "";
+      } else {
+        out.textContent = "";
+        st.textContent = "js-yaml CDN unavailable (offline?) — YAML→JSON needs the network once.";
+      }
+    }
+  } catch(e){
+    out.textContent = "";
+    st.textContent = "error: " + e.message;
+  }
+}
+document.getElementById("y-in").addEventListener("input", () => {
+  const s = document.getElementById("y-in").value.trim();
+  if (s.startsWith("{") || s.startsWith("[")) yGo("j2y");
+});
 
 // ---- URL editor ----
 function uGo(){
