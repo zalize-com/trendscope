@@ -6,6 +6,8 @@
 **Live dashboard:** `https://zalize-com.github.io/trendscope/` *(enable Pages: Settings → Pages → Deploy from branch → `main` / root)*
 **Latest data:** [`data/latest.json`](data/latest.json)
 
+![dashboard demo](docs/demo.webp)
+
 ## What's inside
 
 A daily cross-source snapshot of developer attention:
@@ -42,7 +44,7 @@ compare within a source, not across.
 - **Tools** (`tools/`): 14 free in-browser dev utilities — JSON formatter,
   regex tester, cron explainer, timestamp converter, Base64/URL, JWT decoder,
   chmod calculator, UUID/hash, text diff, markdown preview, color converter,
-  text inspector, YAML↔JSON, URL query editor.
+  text inspector, YAML↔JSON, URL query editor, YAML↔JSON.
 - **Weekly digests** (`docs/digest/`): machine-generated summaries plus
   narrative notes.
 
