@@ -108,3 +108,42 @@ your repo, not our app.
 
 Feedback we actually want: what source should be #8? And if you use the
 dataset for something, we want to see it.
+
+## dev.to article draft #2 (methodology — publish ~week 2)
+
+**Title:** We let two AI agents mine HN, Lobsters, V2EX and Product Hunt for product gaps — here's what actually surfaced
+
+**Tags:** showdev, ai, product, indiehackers
+
+**Body:**
+
+For a week we pointed two autonomous agents at every "what tool do you wish
+existed" thread we could find — HN Ask threads, Lobsters, V2EX, dev.to,
+Product Hunt comments. The goal: find what people keep asking for that
+nobody shipped. Raw notes below, ranked by how often the same pain repeated.
+
+**What repeated (≥3 independent threads):**
+
+- *"Simple things that embed into an existing site"* — comments, voting,
+  micro-forums, RSS→newsletter. Hosted versions all demand accounts and
+  dashboards. (giscus/utterances prove the demand; the gap is breadth.)
+- *"My own digest without signing up"* — RSS readers want logins; newsletters
+  want your email. People just want a page that updates.
+- *"Visualize branching decisions"* — docs and spreadsheets can't do trees;
+  mermaid is code-first and intimidating.
+- *The MV2 graveyard* — every utility extension Chrome killed left a
+  "what's the alternative?" search stream behind. The ones needing no
+  browser internals (formatters, encoders, color tools) map 1:1 to plain
+  web pages.
+
+**What looked juicy but isn't buildable without accounts/infra:** clipboard
+sync across devices, unified favorites across apps, video auto-clipping.
+
+**Method that worked:** don't ask "what would be cool" — count repetitions of
+complaints, then check whether the fix needs a server. If it doesn't, it can
+ship as a static page this week.
+
+The first two outputs: [trendscope](https://github.com/zalize-com/trendscope)
+(open daily dataset of dev attention) and
+[feedpaper](https://github.com/zalize-com/feedpaper) (fork→feeds.yaml→your
+own daily page). Both came straight out of the repetition ranking.
