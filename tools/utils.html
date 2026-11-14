@@ -123,6 +123,17 @@
     <div class="stat" id="y-stat"></div>
   </div>
 
+  <!-- Outline -> tree -->
+  <div class="tool" data-tool="tree">
+    <h2>Outline → tree</h2>
+    <p class="hint">Indented list (2 spaces or tab per level) → SVG decision tree. Great for branching options.</p>
+    <div class="row2">
+      <textarea id="tr-in" placeholder="Launch?&#10;  yes&#10;    write docs&#10;    tweet&#10;  no&#10;    fix bugs"></textarea>
+      <div class="out" id="tr-out" style="min-height:140px;overflow:auto"></div>
+    </div>
+    <div class="stat" id="tr-stat"></div>
+  </div>
+
   <!-- URL editor -->
   <div class="tool" data-tool="url">
     <h2>URL query editor</h2>
@@ -146,6 +157,7 @@ const TOOLS = [
   {id:"color", label:"Color converter"},
   {id:"text",  label:"Text inspector"},
   {id:"yaml",  label:"YAML ↔ JSON"},
+  {id:"tree",  label:"Outline → tree"},
   {id:"url",   label:"URL query editor"},
 ];
 const tabsEl = document.getElementById("tabs");
@@ -288,6 +300,63 @@ document.getElementById("y-in").addEventListener("input", () => {
   const s = document.getElementById("y-in").value.trim();
   if (s.startsWith("{") || s.startsWith("[")) yGo("j2y");
 });
+
+// ---- Outline -> tree ----
+function parseOutline(src){
+  const root={label:"",children:[]},stack=[root];
+  for(const raw of src.split("\n")){
+    if(!raw.trim())continue;
+    const ind=(raw.match(/^[ \t]*/)[0].replace(/\t/g,"  ")).length;
+    const lvl=Math.floor(ind/2)+1;
+    const node={label:raw.trim(),children:[]};
+    stack.length=Math.min(stack.length,lvl);
+    stack[stack.length-1].children.push(node);
+    stack.push(node);
+  }
+  return root.children;
+}
+function layoutTree(nodes){
+  // tidy layout: assign each leaf a y slot, parents at midpoint
+  let y=0;const pos=[];const links=[];
+  function walk(n,depth,parentY){
+    let my;
+    if(!n.children.length){my=y++;}
+    else{
+      const kids=n.children.map(c=>walk(c,depth+1));
+      my=(kids[0]+kids[kids.length-1])/2;
+    }
+    pos.push({n,x:depth,y:my});
+    if(parentY!==undefined)links.push([depth-1,parentY,depth,my]);
+    return my;
+  }
+  nodes.forEach(n=>walk(n,0,undefined));
+  return {pos,links,leaves:y};
+}
+function trGo(){
+  const src=document.getElementById("tr-in").value;
+  const nodes=parseOutline(src);
+  const out=document.getElementById("tr-out"),st=document.getElementById("tr-stat");
+  if(!nodes.length){out.innerHTML='<span style="color:var(--dim)">paste an outline…</span>';st.textContent="";return}
+  const {pos,links,leaves}=layoutTree(nodes);
+  const XW=150,YH=34,LW=8,W=Math.max(...pos.map(p=>p.x))*XW+220,H=leaves*YH+20;
+  const cx=p=>p.x*XW+20, cy=p=>p.y*YH+26;
+  const posOf=(d,y)=>pos.find(p=>p.x===d&&Math.abs(p.y-y)<1e-6)||{x:d,y};
+  let svg=`<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg" style="max-width:100%">`;
+  for(const [d0,y0,d1,y1] of links){
+    const a=posOf(d0,y0),b=posOf(d1,y1);
+    const x0=cx(a)+140,y0c=cy(a)+8,x1=cx(b),y1c=cy(b)+8;
+    svg+=`<path d="M ${x0} ${y0c} C ${x0+40} ${y0c}, ${x1-40} ${y1c}, ${x1} ${y1c}" fill="none" stroke="var(--border)" stroke-width="1.5"/>`;
+  }
+  for(const p of pos){
+    const x=cx(p),y=cy(p);
+    svg+=`<rect x="${x}" y="${y-8}" rx="6" ry="6" width="140" height="24" fill="var(--panel)" stroke="var(--border)"/>`
+       +`<text x="${x+8}" y="${y+8}" font-size="12" fill="var(--fg)">${esc(p.n.label.length>18?p.n.label.slice(0,17)+"…":p.n.label)}</text>`;
+  }
+  svg+="</svg>";
+  out.innerHTML=svg;
+  st.textContent=`${pos.length} nodes · ${leaves} leaves`;
+}
+document.getElementById("tr-in").addEventListener("input",trGo);
 
 // ---- URL editor ----
 function uGo(){
