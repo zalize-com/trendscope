@@ -71,7 +71,7 @@
 <div class="wrap">
   <a class="back" href="../index.html">← trendscope dashboard</a>
   <h1>tools</h1>
-  <p class="sub">Five utilities, 100% client-side. No upload, no signup, no tracking.
+  <p class="sub">Eight utilities, 100% client-side. No upload, no signup, no tracking.
     &nbsp;·&nbsp;<a href="more.html" style="color:var(--accent)">more: text diff + markdown preview →</a></p>
 
   <div class="tabs" id="tabs"></div>
@@ -138,6 +138,39 @@
     <div class="out" id="enc-out"></div>
   </div>
 
+  <!-- JWT -->
+  <div class="tool" data-tool="jwt">
+    <h2>JWT decoder</h2>
+    <p class="hint">Decodes header + payload locally. Signature is NOT verified.</p>
+    <textarea id="jwt-in" placeholder="eyJhbGciOi…"></textarea>
+    <div class="out" id="jwt-out"></div>
+  </div>
+
+  <!-- Chmod -->
+  <div class="tool" data-tool="chmod">
+    <h2>Chmod calculator</h2>
+    <p class="hint">Tick boxes or type a number — both stay in sync.</p>
+    <div id="chmod-grid"></div>
+    <div class="btns"></div>
+    <input type="text" id="chmod-num" placeholder="e.g. 755" maxlength="4">
+    <div class="out" id="chmod-out"></div>
+  </div>
+
+  <!-- UUID / hash -->
+  <div class="tool" data-tool="id">
+    <h2>UUID &amp; hash</h2>
+    <p class="hint">Random UUIDs + crypto digests (SHA-1/256/384/512, MD5 not supported by WebCrypto).</p>
+    <div class="btns">
+      <button class="act" onclick="uuidGo(1)">UUID ×1</button>
+      <button class="act" onclick="uuidGo(5)">UUID ×5</button>
+      <button class="act" onclick="hashGo('SHA-256')">SHA-256</button>
+      <button class="act" onclick="hashGo('SHA-1')">SHA-1</button>
+      <button class="act" onclick="hashGo('SHA-512')">SHA-512</button>
+    </div>
+    <textarea id="hash-in" placeholder="text to hash…"></textarea>
+    <div class="out" id="id-out"></div>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -151,23 +184,29 @@ const TOOLS = [
   {id:"cron", label:"Cron explainer"},
   {id:"ts", label:"Timestamp"},
   {id:"enc", label:"Base64 / URL"},
+  {id:"jwt", label:"JWT decoder"},
+  {id:"chmod", label:"Chmod"},
+  {id:"id", label:"UUID & hash"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
   `<button class="tab${i===0?" active":""}" data-t="${t.id}">${t.label}</button>`).join("");
+function activate(id) {
+  tabsEl.querySelectorAll(".tab").forEach(x => x.classList.toggle("active", x.dataset.t === id));
+  document.querySelectorAll(".tool").forEach(d =>
+    d.classList.toggle("active", d.dataset.tool === id));
+}
 tabsEl.addEventListener("click", ev => {
   const b = ev.target.closest(".tab"); if (!b) return;
-  tabsEl.querySelectorAll(".tab").forEach(x => x.classList.toggle("active", x===b));
-  document.querySelectorAll(".tool").forEach(d =>
-    d.classList.toggle("active", d.dataset.tool === b.dataset.t));
+  activate(b.dataset.t);
   location.hash = b.dataset.t;
 });
+window.addEventListener("hashchange", () => {
+  const h = location.hash.slice(1);
+  if (TOOLS.some(t => t.id === h)) activate(h);
+});
 const start = location.hash.slice(1);
-const t0 = TOOLS.some(t => t.id === start) ? start : "json";
-document.querySelectorAll(".tool").forEach(d =>
-  d.classList.toggle("active", d.dataset.tool === t0));
-tabsEl.querySelectorAll(".tab").forEach(x =>
-  x.classList.toggle("active", x.dataset.t === t0));
+activate(TOOLS.some(t => t.id === start) ? start : "json");
 
 // ---- JSON ----
 function jsonDo(op) {
@@ -273,6 +312,74 @@ function encDo(op) {
     else if (op==="urle") out.textContent = encodeURIComponent(v);
     else out.textContent = decodeURIComponent(v.trim());
   } catch (e) { out.innerHTML = `<span class="bad">${e.message}</span>`; }
+}
+
+// ---- JWT ----
+function b64url(s) {
+  s = s.replace(/-/g, "+").replace(/_/g, "/");
+  while (s.length % 4) s += "=";
+  return decodeURIComponent(escape(atob(s)));
+}
+function jwtGo() {
+  const v = document.getElementById("jwt-in").value.trim();
+  const out = document.getElementById("jwt-out");
+  const parts = v.split(".");
+  if (parts.length < 2) { out.innerHTML = `<span class="bad">a JWT has 3 dot-separated parts</span>`; return; }
+  try {
+    const h = JSON.parse(b64url(parts[0])), p = JSON.parse(b64url(parts[1]));
+    const claims = [["exp","expires"],["iat","issued at"],["nbf","not before"]]
+      .filter(([k]) => p[k]).map(([k,l]) => `${l}: ${new Date(p[k]*1000).toISOString()}`).join("\n");
+    out.textContent =
+      "── header ──\n" + JSON.stringify(h, null, 2) +
+      "\n\n── payload ──\n" + JSON.stringify(p, null, 2) +
+      (claims ? "\n\n── times ──\n" + claims : "") +
+      "\n\n(signature: " + (parts[2] ? "present, not verified" : "missing") + ")";
+  } catch (e) { out.innerHTML = `<span class="bad">${e.message}</span>`; }
+}
+document.getElementById("jwt-in").addEventListener("input", jwtGo);
+
+// ---- Chmod ----
+const CHMOD = ["read","write","execute"], WHO = ["owner","group","other"];
+const grid = document.getElementById("chmod-grid");
+grid.innerHTML = `<div class="grid" style="grid-template-columns:80px repeat(3,1fr)">` +
+  `<div class="cell"></div>` + WHO.map(w => `<div class="cell"><b>${w}</b></div>`).join("") +
+  CHMOD.map((p,pi) => `<div class="cell"><b>${p}</b></div>` +
+    WHO.map((_,wi) => `<div class="cell"><label><input type="checkbox" data-p="${pi}" data-w="${wi}"> ${"rwx"[pi]}</label></div>`).join("")).join("") + `</div>`;
+function chmodShow() {
+  let oct = "", sym = "";
+  for (let w = 0; w < 3; w++) {
+    let n = 0;
+    for (let p = 0; p < 3; p++) {
+      const on = grid.querySelector(`input[data-p="${p}"][data-w="${w}"]`).checked;
+      if (on) { n += 4 >> p; sym += "rwx"[p]; } else sym += "-";
+    }
+    oct += n;
+  }
+  document.getElementById("chmod-num").value = oct;
+  document.getElementById("chmod-out").textContent =
+    `chmod ${oct}  ·  ls -l: -${sym}\nu=+${"rwx".split("").filter((_,i)=>grid.querySelector(`input[data-p="${i}"][data-w="0"]`).checked).join("")}`;
+}
+grid.addEventListener("change", chmodShow);
+document.getElementById("chmod-num").addEventListener("input", e => {
+  const v = e.target.value.trim();
+  if (!/^[0-7]{3}$/.test(v)) return;
+  for (let w = 0; w < 3; w++) for (let p = 0; p < 3; p++)
+    grid.querySelector(`input[data-p="${p}"][data-w="${w}"]`).checked = !!(+v[w] & (4 >> p));
+  chmodShow();
+});
+chmodShow();
+
+// ---- UUID & hash ----
+function uuidGo(n) {
+  const out = document.getElementById("id-out");
+  out.textContent = Array.from({length: n}, () => crypto.randomUUID()).join("\n");
+}
+async function hashGo(algo) {
+  const v = document.getElementById("hash-in").value;
+  const out = document.getElementById("id-out");
+  const buf = await crypto.subtle.digest(algo, new TextEncoder().encode(v));
+  const hex = [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, "0")).join("");
+  out.textContent = `${algo}\n${hex}`;
 }
 </script>
 </body>
