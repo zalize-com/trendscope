@@ -51,6 +51,50 @@ def hn_top_for_day(day, limit=20):
     return out
 
 
+TOPIC_RULES = {
+    "AI/LLM": ["ai", "llm", "gpt", "claude", "gemini", "openai", "anthropic",
+               "machine learning", "ml ", "neural", "diffusion", "agent",
+               "rag", "transformer", "model", "inference", "fine-tun",
+               "copilot", "mcp", "prompt"],
+    "Web Dev": ["react", "vue", "svelte", "angular", "next.js", "nextjs",
+                "typescript", "javascript", "css", "html", "web", "vite",
+                "tailwind", "frontend", "browser", "dom"],
+    "DevOps/Infra": ["kubernetes", "k8s", "docker", "terraform", "ci/cd",
+                     "deploy", "aws", "cloud", "serverless", "infra",
+                     "observability", "monitor", "devops"],
+    "Security": ["security", "vuln", "cve", "exploit", "breach", "malware",
+                 "ransomware", "phishing", "zero-day", "0day", "auth",
+                 "encryption", "privacy"],
+    "Data Eng": ["data", "postgres", "sql", "database", "duckdb",
+                 "pipeline", "etl", "spark", "kafka", "analytics",
+                 "warehouse", "dbt"],
+    "Languages": ["rust", "golang", "go ", "python", "java", "kotlin",
+                  "swift", "zig", "c++", "compiler", "lua"],
+    "Tools/OSS": ["open source", "cli", "tool", "github", "git ",
+                  "editor", "vscode", "neovim", "terminal", "framework",
+                  "library", "release", "v1.0"],
+    "Career/Business": ["startup", "hiring", "salary", "remote", "career",
+                        "interview", "acquisition", "ipo", "funding",
+                        "layoff", "business", "saas"],
+}
+
+
+def classify_topics(items):
+    topics = {k: {"count": 0, "total_score": 0, "examples": []} for k in TOPIC_RULES}
+    for it in items:
+        text = it.get("title", "").lower()
+        for topic, keywords in TOPIC_RULES.items():
+            if any(k in text for k in keywords):
+                t = topics[topic]
+                t["count"] += 1
+                t["total_score"] += it.get("score", 0)
+                if len(t["examples"]) < 3:
+                    t["examples"].append({"title": it["title"], "url": it["url"], "source": it["source"]})
+    return [{"topic": k, **v} for k, v in sorted(
+        topics.items(), key=lambda kv: (-kv[1]["count"], -kv[1]["total_score"]))
+        if v["count"] > 0]
+
+
 def main():
     days = int(sys.argv[1]) if len(sys.argv) > 1 else 7
     today = datetime.now(timezone.utc).date()
@@ -81,7 +125,7 @@ def main():
             "top_scores": {"hackernews": [
                 {"title": x["title"], "url": x["url"], "score": x["score"],
                  "metric": x["metric"]} for x in items[:10]]},
-            "topics": [],
+            "topics": classify_topics(items),
         }
         with open(path, "w") as f:
             json.dump(snap, f, indent=2, ensure_ascii=False)

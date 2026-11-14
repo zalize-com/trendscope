@@ -334,5 +334,79 @@
       }
     ]
   },
-  "topics": []
+  "topics": [
+    {
+      "topic": "AI/LLM",
+      "count": 9,
+      "total_score": 4804,
+      "examples": [
+        {
+          "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+          "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+          "source": "hackernews"
+        },
+        {
+          "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+          "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+          "source": "hackernews"
+        },
+        {
+          "title": "Goodbye Claude, hello Pi",
+          "url": "https://caleb.software/posts/claude-to-pi.html",
+          "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "Web Dev",
+      "count": 3,
+      "total_score": 1535,
+      "examples": [
+        {
+          "title": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
+          "url": "https://ketchup3d.github.io/app/",
+          "source": "hackernews"
+        },
+        {
+          "title": "Outlook.com is rejecting email from domains without DMARC",
+          "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+          "source": "hackernews"
+        },
+        {
+          "title": "The Web Is More Than Enough",
+          "url": "https://ftrain.com/aboard-the-web-is-more-than-enough",
+          "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "Languages",
+      "count": 2,
+      "total_score": 960,
+      "examples": [
+        {
+          "title": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
+          "url": "https://ketchup3d.github.io/app/",
+          "source": "hackernews"
+        },
+        {
+          "title": "OpenAI raises $11B at a $1.25T valuation",
+          "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+          "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "Tools/OSS",
+      "count": 1,
+      "total_score": 475,
+      "examples": [
+        {
+          "title": "Writing as a thinking tool",
+          "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
+          "source": "hackernews"
+        }
+      ]
+    }
+  ]
 }

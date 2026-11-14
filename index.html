@@ -127,6 +127,13 @@
   </section>
 
   <section>
+    <h2>Topic trend <span class="sub">items per day across sources</span></h2>
+    <div class="cards" id="trend-cards">
+      <div class="card"><p class="muted">Collecting history…</p></div>
+    </div>
+  </section>
+
+  <section>
     <h2>Rising this week <span class="sub">velocity vs. previous snapshots</span></h2>
     <div class="board" id="rising">
       <div class="row"><span></span><span class="muted">Needs a second daily snapshot — check back tomorrow.</span><span></span></div>
@@ -297,6 +304,7 @@ async function main() {
       .map(d => `<div><a href="data/daily/${d}.json" style="color:var(--accent)">${d}.json</a>
                  <a href="data/daily/${d}.csv" style="color:var(--dim);font-size:12px">.csv</a></div>`).join("");
     renderRising();
+    renderTrends(idx.snapshots.slice(-10));
   } catch (e) { /* optional */ }
 
   const items = Object.entries(SNAP.items);
@@ -341,6 +349,35 @@ function renderRising() {
         <span class="score"><b>${fmt(it.score)}</b> <span class="delta">+${fmt(gain)}</span></span>
       </div>`);
   });
+}
+
+async function renderTrends(days) {
+  if (!days.length) return;
+  const perTopic = {}; // topic -> [{day, count}]
+  const snaps = await Promise.all(days.map(d =>
+    j(`data/daily/${d}.json`).catch(() => null)));
+  snaps.forEach((snap, i) => {
+    if (!snap) return;
+    (snap.topics || []).forEach(t => {
+      (perTopic[t.topic] = perTopic[t.topic] || {})[days[i]] = t.count;
+    });
+  });
+  const top = Object.entries(perTopic)
+    .map(([topic, m]) => ({ topic, series: days.map(d => m[d] || 0) }))
+    .filter(t => t.series.some(v => v > 0))
+    .sort((a, b) => b.series.reduce((x, y) => x + y, 0) - a.series.reduce((x, y) => x + y, 0))
+    .slice(0, 6);
+  if (!top.length) return;
+  document.getElementById("trend-cards").innerHTML = top.map(({ topic, series }) => {
+    const max = Math.max(...series, 1);
+    const bars = series.map((v, i) => {
+      const h = Math.max(1, Math.round(v / max * 30));
+      return `<rect x="${i * 9}" y="${34 - h}" width="6" height="${h}" rx="1.5"/>`;
+    }).join("");
+    return `<div class="card"><h3>${topic}</h3>
+      <svg width="${series.length * 9}" height="34" fill="var(--accent)" opacity="0.85">${bars}</svg>
+      <p>${series[series.length - 1]} today · ${series.reduce((a, b) => a + b, 0)} in ${days.length}d</p></div>`;
+  }).join("");
 }
 
 main();

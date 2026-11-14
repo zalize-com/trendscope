@@ -334,5 +334,57 @@
       }
     ]
   },
-  "topics": []
+  "topics": [
+    {
+      "topic": "AI/LLM",
+      "count": 8,
+      "total_score": 2818,
+      "examples": [
+        {
+          "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+          "url": "https://status.claude.com/incidents/nn11wk485zfn",
+          "source": "hackernews"
+        },
+        {
+          "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+          "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+          "source": "hackernews"
+        },
+        {
+          "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+          "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+          "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "Tools/OSS",
+      "count": 2,
+      "total_score": 778,
+      "examples": [
+        {
+          "title": "Terminal borders that don't cost a cell",
+          "url": "https://www.joshka.net/cell-borders/",
+          "source": "hackernews"
+        },
+        {
+          "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+          "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+          "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "Languages",
+      "count": 1,
+      "total_score": 362,
+      "examples": [
+        {
+          "title": "AI is destroying the trust between writers and readers",
+          "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
+          "source": "hackernews"
+        }
+      ]
+    }
+  ]
 }

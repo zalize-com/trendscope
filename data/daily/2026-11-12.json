@@ -334,5 +334,98 @@
       }
     ]
   },
-  "topics": []
+  "topics": [
+    {
+      "topic": "AI/LLM",
+      "count": 7,
+      "total_score": 4047,
+      "examples": [
+        {
+          "title": "Anthropic IPO",
+          "url": "https://ipo.anthropic.com/us/",
+          "source": "hackernews"
+        },
+        {
+          "title": "Reverse engineering my Coway air purifier to ditch the cloud",
+          "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
+          "source": "hackernews"
+        },
+        {
+          "title": "Gemini 4 Hydrogen",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+          "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "Languages",
+      "count": 2,
+      "total_score": 1204,
+      "examples": [
+        {
+          "title": "Rust 1.100",
+          "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+          "source": "hackernews"
+        },
+        {
+          "title": "Rust 1.100",
+          "url": "https://github.com/rust-lang/rust/releases/tag/1.100.0",
+          "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "Security",
+      "count": 2,
+      "total_score": 775,
+      "examples": [
+        {
+          "title": "\"Humble Bundle just killed most of their security through vibecoding\"",
+          "url": "https://forums.spacebattles.com/threads/humble-bundle-just-completely-killed-most-of-their-security-through-vibecoding.1346295/",
+          "source": "hackernews"
+        },
+        {
+          "title": "Critical RCE Vulnerability in Apache HTTP Server",
+          "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+          "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "Career/Business",
+      "count": 1,
+      "total_score": 1001,
+      "examples": [
+        {
+          "title": "Anthropic IPO",
+          "url": "https://ipo.anthropic.com/us/",
+          "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "DevOps/Infra",
+      "count": 1,
+      "total_score": 780,
+      "examples": [
+        {
+          "title": "Reverse engineering my Coway air purifier to ditch the cloud",
+          "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
+          "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "Tools/OSS",
+      "count": 1,
+      "total_score": 321,
+      "examples": [
+        {
+          "title": "Nintendo Takes Down Emulators and Firmware in Massive GitHub DMCA Sweep",
+          "url": "https://www.ign.com/articles/nintendo-takes-down-switch-emulators-and-mod-chip-firmware-in-massive-github-dmca-sweep",
+          "source": "hackernews"
+        }
+      ]
+    }
+  ]
 }

@@ -334,5 +334,88 @@
       }
     ]
   },
-  "topics": []
+  "topics": [
+    {
+      "topic": "AI/LLM",
+      "count": 7,
+      "total_score": 3197,
+      "examples": [
+        {
+          "title": "AI usage generates a fragile codebase",
+          "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+          "source": "hackernews"
+        },
+        {
+          "title": "Apple has new Mac app coming to make running local AI models easy",
+          "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+          "source": "hackernews"
+        },
+        {
+          "title": "Synaptics patent claims stop work on DisplayLink drivers",
+          "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+          "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "Tools/OSS",
+      "count": 1,
+      "total_score": 498,
+      "examples": [
+        {
+          "title": "Blender 5.3 released with Gaussian Splat support",
+          "url": "https://www.blender.org/download/releases/5-3/",
+          "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "Security",
+      "count": 1,
+      "total_score": 460,
+      "examples": [
+        {
+          "title": "Tracking Anthropic-discovered vulnerabilities",
+          "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+          "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "Web Dev",
+      "count": 1,
+      "total_score": 443,
+      "examples": [
+        {
+          "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance",
+          "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "Languages",
+      "count": 1,
+      "total_score": 443,
+      "examples": [
+        {
+          "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance",
+          "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "Data Eng",
+      "count": 1,
+      "total_score": 297,
+      "examples": [
+        {
+          "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
+          "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+          "source": "hackernews"
+        }
+      ]
+    }
+  ]
 }
