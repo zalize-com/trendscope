@@ -149,7 +149,7 @@
   <section>
     <h2>Rising this week <span class="sub">velocity vs. previous snapshots</span></h2>
     <div class="board" id="rising">
-      <div class="row"><span></span><span class="muted">Needs a second daily snapshot — check back tomorrow.</span><span></span></div>
+      <div class="row"><span></span><span class="muted" id="rising-empty">Loading…</span><span></span></div>
     </div>
   </section>
 
@@ -373,7 +373,11 @@ async function main() {
 const SAP_SOURCES = () => SNAP.sources || {};
 
 function renderRising() {
-  if (!YDAY || !SNAP) return;
+  const empty = document.getElementById("rising-empty");
+  if (!YDAY || !SNAP) {
+    if (empty) empty.textContent = "Needs a second daily snapshot — check back tomorrow.";
+    return;
+  }
   // rank-movers: items present yesterday and today, biggest absolute score gain
   const ymap = ydayMap();
   const movers = [];
@@ -385,7 +389,7 @@ function renderRising() {
     }
   movers.sort((a, b) => b.gain - a.gain);
   if (!movers.length) {
-    // identical or shrunken board — nothing gained score
+    if (empty) empty.textContent = "No items gained score vs. the previous snapshot.";
     return;
   }
   const el = document.getElementById("rising");
