@@ -126,11 +126,15 @@
     <p class="tagline">The developer attention dataset — updated daily. · <a href="tools/" style="color:var(--accent)">free in-browser tools →</a></p>
     <div class="stamp" id="stamp">loading…</div>
     <div class="topics" id="topics"></div>
+    <div style="margin-top:10px">
+      <select id="daypick" style="display:none;padding:6px 10px;border-radius:8px;border:1px solid var(--border);background:var(--panel);color:var(--fg);font-size:13px"></select>
+      <span class="muted" id="daypick-hint" style="font-size:12px"></span>
+    </div>
     <p id="err">Could not load <code>data/latest.json</code> — the first snapshot may not have run yet.</p>
   </header>
 
   <section>
-    <h2>Today's cross-source board <span class="sub" id="board-sub"></span></h2>
+    <h2><span id="board-title">Today's</span> cross-source board <span class="sub" id="board-sub"></span></h2>
     <div class="tabs" id="tabs"></div>
     <div class="board" id="board"></div>
   </section>
@@ -287,6 +291,42 @@ function escapeHtml(s) {
   return d.innerHTML;
 }
 
+let ITEMS = [], INDEX = null, CUR_DATE = null;
+
+function paint() {
+  const date = CUR_DATE;
+  const total = SNAP.total_items ??
+    Object.values(SNAP.items || {}).reduce((a, v) => a + v.length, 0);
+  document.getElementById("stamp").innerHTML =
+    `snapshot <b>${date}</b> · ${total} items · ${Object.keys(SAP_SOURCES()).length} sources`;
+  const isToday = INDEX && date === INDEX.snapshots[INDEX.snapshots.length - 1];
+  document.getElementById("board-title").textContent = isToday ? "Today's" : `${date}`;
+  document.getElementById("board-sub").textContent =
+    `${total} items across ${Object.keys(SAP_SOURCES()).length} sources`;
+  document.getElementById("topics").innerHTML = (SNAP.topics || [])
+    .map(t => `<span class="topic-chip">${t.topic} <b>${t.count}</b></span>`).join("");
+
+  ITEMS = Object.entries(SNAP.items || {});
+  render(ITEMS, currentTab());
+}
+
+function currentTab() {
+  const b = document.querySelector("#tabs .tab.active");
+  return b ? b.dataset.tab : "all";
+}
+
+async function loadDay(day) {
+  if (!INDEX) return;
+  const i = INDEX.snapshots.indexOf(day);
+  try {
+    SNAP = await j(`data/daily/${day}.json`);
+    CUR_DATE = day;
+    YDAY = i > 0 ? await j(`data/daily/${INDEX.snapshots[i - 1]}.json`) : null;
+    paint();
+    renderRising();
+  } catch (e) { /* snapshot missing */ }
+}
+
 async function main() {
   try {
     SNAP = await j("data/latest.json");
@@ -294,30 +334,28 @@ async function main() {
     document.getElementById("err").style.display = "block";
     return;
   }
-  const date = SNAP.date || SNAP.generated_at.slice(0, 10);
-  document.getElementById("stamp").innerHTML =
-    `snapshot <b>${date}</b> · ${SNAP.total_items} items · ${Object.keys(SAP_SOURCES()).length} sources`;
+  CUR_DATE = SNAP.date || SNAP.generated_at.slice(0, 10);
 
-  document.getElementById("board-sub").textContent =
-    `${SNAP.total_items} items across ${Object.keys(SAP_SOURCES()).length} sources`;
-  document.getElementById("topics").innerHTML = (SNAP.topics || [])
-    .map(t => `<span class="topic-chip">${t.topic} <b>${t.count}</b></span>`).join("");
-
-  // yesterday's snapshot for deltas
   try {
-    const idx = await j("data/index.json");
-    const days = idx.snapshots.filter(d => d !== date);
+    INDEX = await j("data/index.json");
+    const days = INDEX.snapshots.filter(d => d !== CUR_DATE);
     if (days.length) YDAY = await j(`data/daily/${days[days.length - 1]}.json`);
     document.getElementById("hist-days").textContent =
-      `${idx.snapshots.length} day${idx.snapshots.length === 1 ? "" : "s"} so far.`;
-    document.getElementById("daily-links").innerHTML = idx.snapshots.slice(-7).reverse()
+      `${INDEX.snapshots.length} day${INDEX.snapshots.length === 1 ? "" : "s"} so far.`;
+    document.getElementById("daily-links").innerHTML = INDEX.snapshots.slice(-7).reverse()
       .map(d => `<div><a href="data/daily/${d}.json" style="color:var(--accent)">${d}.json</a>
                  <a href="data/daily/${d}.csv" style="color:var(--dim);font-size:12px">.csv</a></div>`).join("");
-    renderRising();
-    renderTrends(idx.snapshots.slice(-10));
+    if (INDEX.snapshots.length > 1) {
+      const sel = document.getElementById("daypick");
+      sel.style.display = "";
+      sel.innerHTML = INDEX.snapshots.slice().reverse()
+        .map(d => `<option${d === CUR_DATE ? " selected" : ""}>${d}</option>`).join("");
+      sel.addEventListener("change", () => loadDay(sel.value));
+      document.getElementById("daypick-hint").textContent = "← browse any past day";
+    }
+    renderTrends(INDEX.snapshots.slice(-10));
   } catch (e) { /* optional */ }
 
-  const items = Object.entries(SNAP.items);
   const tabsEl = document.getElementById("tabs");
   tabsEl.innerHTML = TABS.map((t, i) =>
     `<button class="tab${i === 0 ? " active" : ""}" data-tab="${t.id}">${t.label}</button>`).join("");
@@ -325,9 +363,10 @@ async function main() {
     const b = ev.target.closest(".tab");
     if (!b) return;
     tabsEl.querySelectorAll(".tab").forEach(x => x.classList.toggle("active", x === b));
-    render(items, b.dataset.tab);
+    render(ITEMS, b.dataset.tab);
   });
-  render(items, "all");
+  paint();
+  renderRising();
 }
 
 const SAP_SOURCES = () => SNAP.sources || {};
