@@ -33,6 +33,17 @@ compare within a source, not across.
 | `data/daily/YYYY-MM-DD.json` / `.csv` | Full snapshot for that day |
 | `data/history.csv` | Append-only cumulative history — velocity analysis |
 | `data/index.json` | List of all snapshot dates |
+| `feed.xml` | RSS feed of every snapshot + weekly digest |
+
+## Site
+
+- **Dashboard** (`index.html`): cross-source board, topic trends, rising items,
+  and a day picker to browse any past snapshot.
+- **Tools** (`tools/`): 10 free in-browser dev utilities — JSON formatter,
+  regex tester, cron explainer, timestamp converter, Base64/URL, JWT decoder,
+  chmod calculator, UUID/hash, text diff, markdown preview.
+- **Weekly digests** (`docs/digest/`): machine-generated summaries plus
+  narrative notes.
 
 ## Quick start
 
