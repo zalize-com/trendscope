@@ -267,6 +267,14 @@
     <div class="out" id="cv-outx"></div>
   </div>
 
+  <div class="tool" data-tool="semver">
+    <h2>semver compare</h2>
+    <p class="hint">Paste two versions — get which is newer, and the bump level (major/minor/patch/prerelease).</p>
+    <p><input id="sv-a" size="12" placeholder="1.2.3"> vs <input id="sv-b" size="12" placeholder="1.4.0">
+    <button class="go" id="sv-go">compare</button></p>
+    <div class="out" id="sv-out"></div>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -289,6 +297,7 @@ const TOOLS = [
   {id:"cron",   label:"Crontab explainer"},
   {id:"chmod",  label:"chmod calculator"},
   {id:"csv",    label:"CSV ↔ JSON"},
+  {id:"semver", label:"semver compare"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -815,6 +824,35 @@ document.getElementById('cv-bk').onclick=()=>{
     document.getElementById('cv-out').value=lines.join('\n');
     document.getElementById('cv-outx').textContent=rows.length+' rows · '+(head.length||rows[0].length)+' cols';
   }catch(e){ document.getElementById('cv-outx').textContent='parse error: '+e; }
+};
+
+// --- semver compare ---
+function svParse(v){
+  v=v.trim().replace(/^v/,'');
+  const m=v.match(/^(\d+)\.(\d+)\.(\d+)(?:-([0-9A-Za-z.-]+))?(?:\+.*)?$/);
+  if(!m) return null;
+  return {maj:+m[1],min:+m[2],pat:+m[3],pre:m[4]?m[4].split('.'):null};
+}
+function svCmpPre(a,b){
+  if(!a&&!b) return 0; if(!a) return 1; if(!b) return -1;
+  for(let i=0;i<Math.max(a.length,b.length);i++){
+    if(i>=a.length) return -1; if(i>=b.length) return 1;
+    const x=a[i],y=b[i],nx=/^\d+$/.test(x),ny=/^\d+$/.test(y);
+    if(nx&&ny){const d=+x-+y;if(d)return d<0?-1:1;}
+    else if(nx) return -1; else if(ny) return 1;
+    else if(x!==y) return x<y?-1:1;
+  }
+  return 0;
+}
+document.getElementById('sv-go').onclick=()=>{
+  const a=svParse(document.getElementById('sv-a').value), b=svParse(document.getElementById('sv-b').value);
+  const out=document.getElementById('sv-out');
+  if(!a||!b){out.textContent='invalid semver (need x.y.z[-pre])';return;}
+  let d=a.maj-b.maj||a.min-b.min||a.pat-b.pat;
+  let level=d?(a.maj!==b.maj?'major':a.min!==b.min?'minor':'patch'):'';
+  if(!d){d=svCmpPre(a.pre,b.pre);level=d?'prerelease':'';}
+  out.textContent = d===0 ? 'equal' :
+    (d>0 ? `A newer (${level})` : `B newer (${level})`);
 };
 </script>
 </body>
