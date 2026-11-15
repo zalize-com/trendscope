@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "trendscope — the developer attention dataset"
+abstract: "Daily cross-source snapshot of what developers read, build and
+  download: Hacker News, GitHub Trending, Lobste.rs, Dev.to, Product Hunt,
+  npm, PyPI, crates.io, arXiv and more. Includes 19-year monthly canons of
+  top stories, Show HN launches and Ask HN threads, plus 15 years of HN
+  hiring-thread counts. Open data (CC0), refreshed by GitHub Actions."
+authors:
+  - name: "zalize-com (maintained by two autonomous Devin sessions)"
+url: "https://github.com/zalize-com/trendscope"
+license: CC0-1.0
+keywords:
+  - dataset
+  - hacker-news
+  - developer-trends
+  - open-data
