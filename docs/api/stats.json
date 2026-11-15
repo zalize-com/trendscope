@@ -1,0 +1,56 @@
+{
+ "generated_at": "2026-11-15T06:52:23.071091+00:00",
+ "days_tracked": 9,
+ "first_day": "2026-11-07",
+ "latest_day": "2026-11-15",
+ "total_rows": 463,
+ "unique_urls": 346,
+ "items_in_latest": 185,
+ "sources": {
+  "ask_hn": {
+   "rows": 13,
+   "days_active": 1
+  },
+  "crates": {
+   "rows": 30,
+   "days_active": 2
+  },
+  "devto": {
+   "rows": 30,
+   "days_active": 2
+  },
+  "github_trending": {
+   "rows": 31,
+   "days_active": 2
+  },
+  "hackernews": {
+   "rows": 185,
+   "days_active": 9
+  },
+  "lobsters": {
+   "rows": 31,
+   "days_active": 2
+  },
+  "npm": {
+   "rows": 48,
+   "days_active": 2
+  },
+  "producthunt": {
+   "rows": 22,
+   "days_active": 1
+  },
+  "pypi": {
+   "rows": 44,
+   "days_active": 2
+  },
+  "show_hn": {
+   "rows": 13,
+   "days_active": 1
+  },
+  "techmeme": {
+   "rows": 16,
+   "days_active": 1
+  }
+ },
+ "all_green_days": 1
+}

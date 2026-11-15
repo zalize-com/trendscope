@@ -37,8 +37,10 @@ jobs:
       - name: Regenerate RSS feed
         run: python3 scripts/feed.py || true
 
-      - name: Rebuild content index
-        run: python3 scripts/content_index.py || true
+      - name: Rebuild content index + stats
+        run: |
+          python3 scripts/content_index.py || true
+          python3 scripts/stats.py || true
 
       - name: Commit dataset
         run: |
