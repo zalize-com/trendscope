@@ -152,6 +152,13 @@
   </div>
 
   <!-- URL editor -->
+  <div class="tool" data-tool="slug">
+    <h2>Slug generator</h2>
+    <p class="hint">Title → URL-safe slug. Handles accents (Café → cafe), keeps '-' and '_', batch mode = one per line.</p>
+    <textarea id="sg-in" rows="5" placeholder="Café Notes: Why I Love Rust!&#10;你好 world"></textarea>
+    <div class="out" id="sg-out" style="margin-top:10px"></div>
+  </div>
+
   <div class="tool" data-tool="url">
     <h2>URL query editor</h2>
     <p class="hint">Paste a URL — inspect and edit its parts, get the rebuilt URL.</p>
@@ -177,6 +184,7 @@ const TOOLS = [
   {id:"tree",  label:"Outline → tree"},
   {id:"url",   label:"URL query editor"},
   {id:"contrast", label:"Contrast checker"},
+  {id:"slug",   label:"Slug generator"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -436,6 +444,21 @@ document.getElementById("cc-fg").addEventListener("input",ccGo);
 document.getElementById("cc-bg").addEventListener("input",ccGo);
 
 cGo(); tStat(); uGo(); ccGo();
+
+// ---- Slug ----
+function sgGo(){
+  const lines = document.getElementById("sg-in").value.split("\n");
+  const slugs = lines.map(l => l
+    .normalize("NFKD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[''’]/g, "")
+    .replace(/[^a-z0-9\u4e00-\u9fff_-]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .replace(/-{2,}/g, "-"));
+  document.getElementById("sg-out").innerHTML =
+    slugs.map((s,i) => s ? `<div class="kv"><code>${esc(s)}</code></div>` : "").join("") || "…";
+}
+document.getElementById("sg-in").addEventListener("input", sgGo);
 </script>
 </body>
 </html>
