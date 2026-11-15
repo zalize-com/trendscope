@@ -215,7 +215,7 @@
        <a href="authors.html">authors</a> ·
        <a href="ideas.html">ideas</a> ·
        <a href="item.html">item</a> · <a href="week.html">this week</a> · <a href="digest.html">digests</a> ·
-       <a href="health.html">status</a>.</p>
+       <a href="health.html">status</a> · <a href="hiring.html">hiring</a>.</p>
   </footer>
 
 </div>
@@ -532,7 +532,7 @@ async function main() {
       document.getElementById("hiring-pulse").innerHTML =
         `HN ${t.hiring ? t.hiring.month : ""} hiring pulse — ` +
         [bit("hiring", "who's hiring"), bit("seeking", "wants to be hired")]
-          .filter(Boolean).join(" · ");
+          .filter(Boolean).join(" · ") + ` · <a href="hiring.html" style="color:var(--dim)">details →</a>`;
     }
   } catch (e) { /* optional */ }
 

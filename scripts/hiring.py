@@ -48,16 +48,24 @@ def main():
     found = {k: latest_thread(q, p) for k, (q, p) in THREADS.items()}
 
     hist = os.path.join(DATA_DIR, "hiring-history.csv")
-    new = not os.path.exists(hist)
-    with open(hist, "a", newline="") as f:
+    header = ["captured_at", "kind", "thread_id", "month", "comments", "url"]
+    rows = []
+    if os.path.exists(hist):
+        with open(hist, newline="") as f:
+            r = csv.reader(f)
+            rows = [row for row in r if row and row != header]
+    today = now[:10]
+    rows = [row for row in rows
+            if not (row[0][:10] == today and row[1] in found)]
+    for kind, t in found.items():
+        if t:
+            rows.append([now, kind, t["id"], t["month"],
+                         t["comments"], t["url"]])
+    rows.sort(key=lambda row: (row[0], row[1]))
+    with open(hist, "w", newline="") as f:
         w = csv.writer(f)
-        if new:
-            w.writerow(["captured_at", "kind", "thread_id", "month",
-                        "comments", "url"])
-        for kind, t in found.items():
-            if t:
-                w.writerow([now, kind, t["id"], t["month"],
-                            t["comments"], t["url"]])
+        w.writerow(header)
+        w.writerows(rows)
 
     out = {"generated_at": now, "threads": {
         k: t for k, t in found.items() if t}}
