@@ -49,3 +49,11 @@ fine in review; nothing ran. Acceptance for any page change now means:
 open the page and count rendered rows/items (CDP Runtime.evaluate),
 not "the code is there". A one-line syntax error in a shared script
 block kills every feature on the page silently.
+
+
+### 7. Regression-test the gate with the incident artifact
+A fix is not a gate until it has caught the thing that hurt you. When
+the white-screen bug shipped, the JS literal-balance scanner added to
+linkcheck.py was first run against the *broken* commit to prove it
+would have caught that exact backtick — then trusted. Any new CI check
+should be validated on the real failure, not just on green input.
