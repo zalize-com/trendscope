@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-15T19:21:06.632079+00:00",
+  "generated_at": "2026-11-15T19:25:42.763398+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
-      "items": 189,
-      "unique_urls": 176,
+      "items": 190,
+      "unique_urls": 177,
       "median_days_on_board": 1,
       "one_day_pct": 93,
       "top_item": {
@@ -135,8 +135,8 @@
       }
     },
     "techmeme": {
-      "items": 25,
-      "unique_urls": 25,
+      "items": 26,
+      "unique_urls": 26,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -8678,6 +8678,162 @@
         "rank": 1
       }
     },
+    "badconcurrencyblogspot": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "I Heard a Rumour...",
+        "url": "http://bad-concurrency.blogspot.com/2020/04/i-heard-rumour.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogcleancoder": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Functional Classes in Clojure",
+        "url": "http://blog.cleancoder.com/uncle-bob/2023/01/19/functional-classes-clojure.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogjayfields": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Starting a New Engagement as a Lead Consultant",
+        "url": "http://blog.jayfields.com/2017/05/starting-new-engagement-as-lead.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogpamelafox": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Browser automation with Pydantic AI + Playwright",
+        "url": "http://blog.pamelafox.org/2026/08/browser-automation-with-pydantic-ai.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogvanillajava": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Deciding how to progress your career and find work you find interesting/challenging.",
+        "url": "http://blog.vanillajava.blog/2026/09/deciding-how-to-progress-your-career.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "engineeringhackerearth": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Computing accurate skill percentile with DDSketch",
+        "url": "http://engineering.hackerearth.com/2023/09/17/building-a-relaible-global-benchmarking-platform/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "engineeringwingify": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "From Postgres to ClickHouse: Achieving Real-Time Aggregations with Materialized Views and Cutting Costs by 80%",
+        "url": "https://engineering.wingify.com//posts/achieving-real-time-aggregations-with-ch-materialized-views/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "fuzzyblog": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Testing Rails Apps with FactoryBot and MiniTest",
+        "url": "http://fuzzyblog.io/blog/rails/2022/07/27/testing-rails-apps-with-factorybot-and-minitest.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "huonwgithub": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Gell-Mann AImnesia",
+        "url": "https://huonw.github.io/blog/2026/04/gell-mann-aimnesia/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "ieftimov": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How to Make Reviewers Love Your Big Pull Requests",
+        "url": "https://ieftimov.com/posts/how-to-make-reviewers-love-your-big-pull-requests/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "johannesbrodwall": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "About this website",
+        "url": "https://jhannes.github.io/about/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "lackingrhoticityblogspot": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Observing interrupts from userland on x86",
+        "url": "http://lackingrhoticity.blogspot.com/2018/01/observing-interrupts-from-userland-on-x86.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "lifepluslinuxblogspot": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Magic Cauldron: Harry Potter Themed Gender Reveal Party",
+        "url": "http://lifepluslinux.blogspot.com/2024/09/magic-cauldron-harry-potter-themed.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -9346,6 +9502,18 @@
       "top_item": {
         "title": "Enforcer 100",
         "url": "https://zhengziying.com/2024/03/14/enforcer-100/",
+        "score": 12,
+        "rank": 1
+      }
+    },
+    "blogthislongrun": {
+      "items": 12,
+      "unique_urls": 12,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "You Do It Too: Forfeiting Network Partition Tolerance in Distributed Systems",
+        "url": "http://blog.thislongrun.com/2015/07/Forfeit-Partition-Tolerance-Distributed-System-CAP-Theorem.html",
         "score": 12,
         "rank": 1
       }
@@ -14842,6 +15010,66 @@
       "top_item": {
         "title": "Multi-stroke text effect in CSS",
         "url": "https://yuanchuan.dev/multi-stroke-text-effect-in-css",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "engineeringbrandwatch": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Does Boolean Search Still Matter When AI Can Do the Searching?",
+        "url": "https://www.brandwatch.com/blog/boolean-search-ai/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "engineeringcuralate": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Safely Modifying Your Hosts File with Gas Mask",
+        "url": "http://engineering.curalate.com/2019/05/30/gas-mask.html",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "engineeringgrab": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "App stability at scale with a layered defense",
+        "url": "https://engineering.grab.com/app-stability-at-scale-with-a-layered-defense",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "engineeringremind": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Transitive Closure in PostgreSQL",
+        "url": "http://engineering.remind.com/Transitive-Closure-In-PostgreSQL/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "jelv": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Writing Code To Be Read at a Glance",
+        "url": "http://jelv.is/blog/Writing-Code-To-Be-Read-at-a-Glance",
         "score": 10,
         "rank": 1
       }
