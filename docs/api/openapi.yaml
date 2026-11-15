@@ -5,7 +5,7 @@ info:
   description: |
     Static JSON/CSV/SVG/RSS endpoints for the developer attention dataset —
     daily cross-source snapshots of what developers read, build and download
-    across 100 tracked sources. All endpoints are plain files served from
+    across 123 tracked sources. All endpoints are plain files served from
     GitHub Pages (or the repo): no keys, no rate limits, CC0.
   license:
     name: CC0-1.0
@@ -161,7 +161,7 @@ components:
       properties:
         title: {type: string}
         url: {type: string, format: uri}
-        source: {type: string, description: 'one of: hackernews, show_hn, ask_hn, github_trending, lobsters, devto, producthunt, techmeme, slashdot, arstechnica, theverge, arxiv, npm, pypi, crates, lemmy, krebs, changelog, freecodecamp, echojs, infoq, theregister, lwn, hackaday, thenewstack, opensourcecom, soblog, codinghorror, martinfowler, pragmatic, bendersky, cheney, lucumr, hynek, susam, haxx, jvns, wingolog, philopp, sanglard, antirez, beesbuzz, gargron, overreacted, swizec, kentcdodds, cloudflare, netflix, github_eng, slack_eng, aws_blog, dropbox, lyft, pinterest, etsy, discord, stripe, vercel, meta_eng, airbnb, mongodb, elastic, gitlab_blog, aphyr, thisweek, pythonblog, rands, catonmat, dabeaz, mitchw, birklund, simonw, daringfireball, marco, danluu, stratechery, baeldung, troyhunt, tonsky, joelonsoftware, raphlinus, xeiaso, jetbrains, tedinski, drmaciver, matklad, grumpyg, chriskiehl, dimitri, hillel, ridiculousfish, nadia, henrikwarne, charity, surfingcomplexity, lorinhochstein, geshan, mtlynch, nelhage, schneems'}
+        source: {type: string, description: 'one of: hackernews, show_hn, ask_hn, github_trending, lobsters, devto, producthunt, techmeme, slashdot, arstechnica, theverge, arxiv, npm, pypi, crates, lemmy, krebs, changelog, freecodecamp, echojs, infoq, theregister, lwn, hackaday, thenewstack, opensourcecom, soblog, codinghorror, martinfowler, pragmatic, bendersky, cheney, lucumr, hynek, susam, haxx, jvns, wingolog, philopp, sanglard, antirez, beesbuzz, gargron, overreacted, swizec, kentcdodds, cloudflare, netflix, github_eng, slack_eng, aws_blog, dropbox, lyft, pinterest, etsy, discord, stripe, vercel, meta_eng, airbnb, mongodb, elastic, gitlab_blog, aphyr, thisweek, pythonblog, rands, catonmat, dabeaz, mitchw, birklund, simonw, daringfireball, marco, danluu, stratechery, baeldung, troyhunt, tonsky, joelonsoftware, raphlinus, xeiaso, jetbrains, tedinski, drmaciver, matklad, grumpyg, chriskiehl, dimitri, hillel, ridiculousfish, nadia, henrikwarne, charity, surfingcomplexity, lorinhochstein, geshan, mtlynch, nelhage, schneems, lcamtuf, copyconstruct, verdagon, bitbashing, ntietz, murat, begriffs, gds, bitslog, roytang, tbray, bertrand, bret, codemadness, jacobian, karl, gwern, andrewkelley, joeduffy, bravenewgeek, ciechanow, mikeash, fogus'}
         rank: {type: integer}
         score: {type: number, description: source-native score (points/stars/reactions/downloads)}
         metric: {type: string}
