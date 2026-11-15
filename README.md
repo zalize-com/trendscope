@@ -38,6 +38,7 @@ A daily cross-source snapshot of developer attention:
 | Lemmy (programming.dev) | hot posts in the programming community | `programming.dev/api/v3` |
 | Krebs on Security | security journalism | `krebsonsecurity.com/feed` |
 | Changelog News | dev news + podcasts | `changelog.com/news/feed` |
+| freeCodeCamp News | tutorials + guides | `freecodecamp.org/news/rss/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

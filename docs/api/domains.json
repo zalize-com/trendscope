@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T13:05:02.013142+00:00",
+ "generated_at": "2026-11-15T13:06:34.232234+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 203,
+ "total": 204,
  "domains": [
   {
    "hostname": "so.long.thanks.fish",
@@ -626,6 +626,21 @@
    }
   },
   {
+   "hostname": "freecodecamp.org",
+   "days_on_board": 1,
+   "items": 10,
+   "sources": [
+    "freecodecamp"
+   ],
+   "top_hit": {
+    "title": "Build and Train a GLM-5.3-Flash Model From Scratch with Python",
+    "url": "https://www.freecodecamp.org/news/build-and-train-a-glm-53-flash-model-from-scratch-with-python/",
+    "score": 10,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "yro.slashdot.org",
    "days_on_board": 1,
    "items": 4,
@@ -742,21 +757,6 @@
     "title": "Monkey Island: all 13 versions side by side",
     "url": "https://monkeyisland.pages.dev/",
     "score": 410,
-    "metric": "points",
-    "date": "2026-11-14"
-   }
-  },
-  {
-   "hostname": "developer.nvidia.com",
-   "days_on_board": 1,
-   "items": 1,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
-    "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
-    "score": 114,
     "metric": "points",
     "date": "2026-11-14"
    }
