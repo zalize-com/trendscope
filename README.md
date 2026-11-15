@@ -105,7 +105,8 @@ compare within a source, not across.
 Params: `?n=` rows (5–30), `?s=github_trending` single source,
 `?q=llm` title/tag keyword filter, `?t=AI/LLM` topic filter (same
 taxonomy as `topics.html` — niche blogs can embed just their beat),
-`?mode=hiring`, `?mode=stats` renders the hiring-pulse card instead of the board,
+`?mode=hiring` renders the hiring-pulse card instead of the board,
+`?mode=stats` renders a live dataset stats card (rows/days/sources — no-code data badge),
 `?mode=canon` renders the HN all-time top stories,
 `?mode=week` renders the rolling last-7-days board by cumulative heat,
 `?mode=movers` renders today's top gainers + new entries.
