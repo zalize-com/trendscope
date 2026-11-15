@@ -95,6 +95,8 @@ compare within a source, not across.
 - **Hiring pulse** (`hiring.html`): monthly HN "Who is hiring?" tracker —
   positions-vs-seekers ratio, 15-year monthly history chart (hiring-monthly.csv).
 - **Digests** (`digest.html`): weekly markdown digests rendered in-site.
+  Plus auto-generated **daily briefs** (`docs/brief/YYYY-MM-DD.md`) — rule-based
+  prose: top story, biggest climber, new entries, streaks, source mix.
 - **Embed widget** (`embed.html`): the top-10 board as a drop-in iframe for
   blogs/docs (no signup, updates daily):
 

@@ -31,7 +31,12 @@ def main():
         reverse=True,
     )
 
-    out = {"digests": digests, "movers": movers, "analysis": analysis}
+    briefs = sorted(
+        (f[:-3] for f in os.listdir(os.path.join(DOCS, "brief")) if MOVERS_RE.match(f)),
+        reverse=True,
+    ) if os.path.isdir(os.path.join(DOCS, "brief")) else []
+
+    out = {"digests": digests, "movers": movers, "analysis": analysis, "briefs": briefs}
     with open(os.path.join(DOCS, "index.json"), "w") as f:
         json.dump(out, f, indent=2)
         f.write("\n")

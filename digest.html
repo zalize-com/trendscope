@@ -158,6 +158,13 @@ if (!files.length) {
   });
   await show(wanted).catch(() => { $("doc").innerHTML = '<p id="err">failed to load digest</p>'; });
 }
+const briefs = idx.briefs || [];
+if (briefs.length) {
+  $("movers").insertAdjacentHTML("afterend",
+    `<p class="movers-note">Daily brief: ` +
+    briefs.slice(0, 5).map(d2 => `<a href="https://github.com/zalize-com/trendscope/blob/main/docs/brief/${d2}.md">${d2}</a>`).join(" · ") +
+    `</p>`);
+}
 const movers = idx.movers || [];
 if (movers.length) {
   const latest = movers[0];
