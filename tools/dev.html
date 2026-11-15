@@ -68,6 +68,7 @@
     <button data-tool="curl">curl → code</button>
     <button data-tool="hidden">hidden chars</button>
     <button data-tool="env">.env auditor</button>
+    <button data-tool="ent">html entities</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -176,13 +177,26 @@
     <div class="out" id="env-list" style="display:none"></div>
     <button class="copy" id="env-copy">copy sanitized</button>
   </div>
+  <div class="panel" id="p-ent">
+    <h2>HTML entity encoder / decoder</h2>
+    <p class="hint">Encode text for safe embedding (&amp; &lt; &gt; &quot; ' → entities) or decode entities back. Catches the double-encoding bug class too.</p>
+    <textarea id="ent-in" rows="7" placeholder="can't use <tags> "raw" & stuff — or &#8217; decoded"></textarea>
+    <div class="btns" style="display:flex;gap:8px;margin:8px 0">
+      <button class="act" onclick="entGo(1)">encode →</button>
+      <button class="act" onclick="entGo(2)">decode →</button>
+      <button class="act" onclick="entGo(3)">encode×2 →</button>
+      <button class="copy" onclick="navigator.clipboard.writeText(document.getElementById('ent-out').textContent)">copy</button>
+    </div>
+    <div class="out" id="ent-out"></div>
+    <div class="out" id="ent-warn" style="display:none"></div>
+  </div>
 
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -650,6 +664,19 @@ function auditEnv(){
 $("env-in").addEventListener("input",auditEnv);
 $("env-copy").addEventListener("click",()=>{if(window._envSan)navigator.clipboard.writeText(window._envSan)});
 
+
+function entGo(mode) {
+  const v = document.getElementById("ent-in").value;
+  const enc = t => t.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const dec = t => { const d = document.createElement("textarea"); d.innerHTML = t; return d.value; };
+  const out = mode === 1 ? enc(v) : mode === 2 ? dec(v) : enc(enc(v));
+  document.getElementById("ent-out").textContent = out;
+  const w = document.getElementById("ent-warn");
+  const dbl = mode !== 3 && dec(dec(v)) !== dec(v);
+  w.style.display = dbl ? "block" : "none";
+  if (dbl) w.textContent = "⚠ input looks DOUBLE-ENCODED — decoding once still leaves entities";
+  const res = document.querySelectorAll('#ent-out');
+}
 </script>
 </body>
 </html>
