@@ -24,6 +24,7 @@ Fetch straight from GitHub raw or the Pages site (`/trendscope/…`).
 | `docs/api/streaks.json` | JSON | Active on-board streaks (2+ consecutive days) + all-time longest runs |
 | `docs/api/domains.json` | JSON | Most-linked hostnames leaderboard (days/items/sources/top hit) |
 | `docs/api/authors.json` | JSON | Most-featured authors & orgs leaderboard (days/items/sources/top hit) |
+| `docs/api/discussed.json` | JSON | Comment leaderboards: most-discussed + heated (comments/point ratio, score ≥ 50) |
 | `docs/api/sources.json` | JSON | Per-source stats over the whole window: items, unique urls, median days-on-board, one-day %, top item |
 | `data/hiring.json` | JSON | Latest HN monthly hiring/seeking thread comment counts |
 | `data/hiring-history.csv` | CSV | Append-only daily log of those counts (labor-demand signal) |

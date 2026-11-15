@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Aggregates → docs/api/domains.json + docs/api/authors.json: the two
-leaderboards the site computes client-side, published as endpoints.
-Same semantics as domains.html / authors.html. Daily via collect workflow."""
+"""Aggregates → docs/api/{domains,authors,discussed}.json: leaderboards the
+site computes client-side, published as endpoints.
+Same semantics as the matching pages. Daily via collect workflow."""
 
 import csv
 import json
@@ -30,6 +30,7 @@ def main():
     days = set()
     doms = defaultdict(lambda: {"hits": 0, "days": set(), "srcs": set(), "top": None})
     authors = defaultdict(lambda: {"hits": 0, "days": set(), "srcs": set(), "top": None})
+    items = {}  # url -> best comment-bearing row
     for r in csv.DictReader(open(HIST, encoding="utf-8")):
         url = r.get("url") or ""
         d = r.get("date") or ""
@@ -50,6 +51,16 @@ def main():
                 dm["srcs"].add(r["source"])
                 if not dm["top"] or score > dm["top"]["score"]:
                     dm["top"] = hit
+
+        comments = int(float(r.get("comments") or 0))
+        if comments:
+            cur = items.get(url)
+            if not cur or comments > cur["comments"]:
+                items[url] = {"title": r["title"], "url": url,
+                              "score": score, "comments": comments,
+                              "metric": r.get("metric") or "",
+                              "source": r["source"], "date": d,
+                              "author": r.get("author") or ""}
 
         who = (r.get("author") or "").strip()
         if who:
@@ -79,6 +90,16 @@ def main():
         with open(os.path.join(API, f"{name}.json"), "w", encoding="utf-8") as f:
             json.dump(out, f, ensure_ascii=False, indent=1)
         print(f"{name}.json: {len(data)} rows / {out['total']} total")
+
+    discussed = sorted(items.values(), key=lambda x: -x["comments"])[:LIMIT]
+    heated = sorted((x for x in items.values() if x["score"] >= 50),
+                    key=lambda x: -x["comments"] / max(1, x["score"]))[:LIMIT]
+    out = {"generated_at": now, "latest_snapshot": max(days),
+           "total": len(items),
+           "discussed": discussed, "heated": heated}
+    with open(os.path.join(API, "discussed.json"), "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=1)
+    print(f"discussed.json: {len(discussed)}+{len(heated)} rows / {out['total']} total")
 
 
 if __name__ == "__main__":

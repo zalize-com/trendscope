@@ -82,6 +82,8 @@ compare within a source, not across.
   hits and coverage for each of the 15 tracked sources.
 - **Domains** (`domains.html`): most-linked sites across all snapshots,
   grouped by hostname from `history.csv`.
+- **Discussed** (`discuss.html`): comment leaderboards — most-discussed items
+  + "heated" ratio (comments per point), from `history.csv`.
 - **Item history** (`item.html?q=`): any story/package's day-by-day rank & score trajectory.
 - **This week** (`week.html`): last-7-day cumulative board + staying-power list.
 - **Calendar** (`calendar.html`): month grid — each day's highest-scoring item at a glance.
