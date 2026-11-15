@@ -131,7 +131,7 @@ function render() {
   $("res").innerHTML = shown.map((x, i) =>
     `<li><span class="r">${i+1}</span>
       <span class="it"><a href="${x.url}" target="_blank" rel="noopener">${highlight(x.title, terms)}</a>
-        <span class="yr">${x.when}${x.author ? " · " + esc(x.author) : ""}</span><span class="tag">${x.corp}${x.src ? "/" + x.src : ""}</span></span>
+        <span class="yr">${x.when}${x.author ? " · " + esc(x.author) : ""}</span><span class="tag">${x.corp}${x.src ? "/" + x.src : ""}</span>${x.corp === "recent" ? `<a href="item.html?q=${encodeURIComponent(x.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a>` : ""}</span>
       <span class="sc"><b>${fmt(x.pts)}</b></span></li>`).join("");
 }
 
