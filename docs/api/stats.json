@@ -1,14 +1,18 @@
 {
- "generated_at": "2026-11-15T07:17:32.180414+00:00",
+ "generated_at": "2026-11-15T07:34:28.413431+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 544,
- "unique_urls": 412,
- "items_in_latest": 200,
- "items_per_day_avg": 60.4,
+ "total_rows": 561,
+ "unique_urls": 428,
+ "items_in_latest": 215,
+ "items_per_day_avg": 62.3,
  "sources": {
+  "arxiv": {
+   "rows": 15,
+   "days_active": 1
+  },
   "ask_hn": {
    "rows": 75,
    "days_active": 8
@@ -26,7 +30,7 @@
    "days_active": 2
   },
   "hackernews": {
-   "rows": 185,
+   "rows": 186,
    "days_active": 9
   },
   "lobsters": {
@@ -38,7 +42,7 @@
    "days_active": 2
   },
   "producthunt": {
-   "rows": 22,
+   "rows": 23,
    "days_active": 1
   },
   "pypi": {
@@ -58,8 +62,12 @@
    "days_active": 1
   }
  },
- "all_green_days": 1,
+ "all_green_days": 0,
  "top_domains": [
+  {
+   "domain": "arxiv.org",
+   "hits": 16
+  },
   {
    "domain": "yro.slashdot.org",
    "hits": 4
@@ -94,10 +102,6 @@
   },
   {
    "domain": "eff.org",
-   "hits": 2
-  },
-  {
-   "domain": "crissyfield.de",
    "hits": 2
   }
  ],
