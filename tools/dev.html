@@ -56,11 +56,12 @@
 <body>
   <nav><a href="../index.html">← trendscope</a> · <a href="./">tools</a> · <a href="more.html">tools+</a> · <a href="utils.html">utils</a></nav>
   <h1>dev<span> tools</span></h1>
-  <p class="sub">Subnet calculator · number base converter · password generator — all client-side.</p>
+  <p class="sub">Subnet calculator · number base · number base · password gen · CSV↔JSON — all client-side.</p>
   <div class="tabs" id="tabs">
     <button data-tool="subnet">IPv4 subnet</button>
     <button data-tool="base">number base</button>
     <button data-tool="pw">password gen</button>
+    <button data-tool="csv">CSV ↔ JSON</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -100,13 +101,22 @@
     <button class="copy" id="pw-regen">regenerate</button>
   </div>
 
+  <div class="panel" id="p-csv">
+    <h2>CSV ↔ JSON</h2>
+    <p class="hint">Auto-detects direction: paste CSV → JSON array of objects; paste a JSON array → CSV. Handles quoted fields with commas/newlines.</p>
+    <textarea id="csv-in" placeholder="name,score\nalpha,12\nbeta,7" style="width:100%;height:150px"></textarea>
+    <div class="out" id="csv-out" style="white-space:pre;overflow-x:auto"></div>
+    <button class="copy" id="csv-copy">copy output</button>
+    <div class="err" id="csv-err"></div>
+  </div>
+
   <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw"];
+const tools = ["subnet","base","pw","csv"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -199,6 +209,45 @@ function pwgen() {
 $("pw-regen").onclick = pwgen;
 $("pw-copy").onclick = () => { navigator.clipboard?.writeText($("pw-out").textContent); $("pw-copy").textContent = "copied"; setTimeout(()=>$("pw-copy").textContent="copy",1200); };
 pwgen();
+
+// --- CSV ↔ JSON ---
+function csvParse(text) {
+  const rows = []; let field = "", row = [], inQ = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQ) { if (c === '"') { if (text[i+1] === '"') { field += '"'; i++; } else inQ = false; } else field += c; }
+    else if (c === '"') inQ = true;
+    else if (c === ",") { row.push(field); field = ""; }
+    else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+    else if (c !== "\r") field += c;
+  }
+  if (field || row.length) { row.push(field); rows.push(row); }
+  return rows.filter(r => r.length > 1 || r[0] !== "");
+}
+const csvEsc = v => /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
+function csvConvert() {
+  $("csv-err").textContent = ""; $("csv-out").textContent = "";
+  const t = $("csv-in").value.trim();
+  if (!t) return;
+  try {
+    if (t.startsWith("[")) {
+      const arr = JSON.parse(t);
+      if (!Array.isArray(arr)) throw new Error("not an array");
+      const cols = [...new Set(arr.flatMap(o => (o && typeof o === "object") ? Object.keys(o) : []))];
+      const cell = v => csvEsc(v == null ? "" : (typeof v === "object" ? JSON.stringify(v) : String(v)));
+      $("csv-out").textContent = [cols.map(csvEsc).join(","),
+        ...arr.map(o => cols.map(c => cell(o?.[c])).join(","))].join("\n");
+    } else {
+      const rows = csvParse(t);
+      const hdr = rows[0];
+      $("csv-out").textContent = JSON.stringify(
+        rows.slice(1).map(r => Object.fromEntries(hdr.map((h,i)=>[h, r[i] ?? ""]))), null, 1);
+    }
+  } catch (e) { $("csv-err").textContent = "✕ " + e.message; }
+}
+$("csv-in").oninput = csvConvert;
+$("csv-copy").onclick = () => { navigator.clipboard?.writeText($("csv-out").textContent); $("csv-copy").textContent = "copied"; setTimeout(()=>$("csv-copy").textContent="copy output",1200); };
+csvConvert();
 </script>
 </body>
 </html>

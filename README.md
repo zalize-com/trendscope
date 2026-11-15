@@ -52,10 +52,10 @@ compare within a source, not across.
 
 - **Dashboard** (`index.html`): cross-source board, topic trends, rising items,
   and a day picker to browse any past snapshot.
-- **Tools** (`tools/`): 18 free in-browser dev utilities — JSON formatter,
+- **Tools** (`tools/`): 19 free in-browser dev utilities — JSON formatter,
   regex tester, cron explainer, timestamp converter, Base64/URL, JWT decoder,
   chmod calculator, UUID/hash, text diff, markdown preview, color converter,
-  text inspector, YAML↔JSON, outline→tree, URL query editor.
+  text inspector, YAML↔JSON, outline→tree, URL query editor, CSV↔JSON.
 - **Weekly digests** (`docs/digest/`): machine-generated summaries plus
   narrative notes.
 - **Topics** (`topics.html?t=AI%2FLLM`): per-topic drill-down — every story,
