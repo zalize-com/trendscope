@@ -375,6 +375,40 @@ def fetch_slashdot(limit=15):
     return out
 
 
+def fetch_arstechnica(limit=15):
+    """Ars Technica RSS — long-form tech editorial, position-scored like techmeme."""
+    print("Fetching Ars Technica feed...")
+    import re
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://feeds.arstechnica.com/arstechnica/index",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] arstechnica attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    DC = "{http://purl.org/dc/elements/1.1/}"
+    entries = root.findall("channel/item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("title", default="") or "").strip()
+        url = (e.findtext("link", default="") or "").strip() or "https://arstechnica.com/"
+        desc = " ".join(re.sub(r"<[^>]+>", " ", e.findtext("description", default="") or "").split())
+        desc = html.unescape(desc)[:200]
+        author = (e.findtext(f"{DC}creator", default="") or "").strip() or None
+        out.append(item(
+            "arstechnica", title, url, len(entries) - i, "feed rank",
+            extra={"description": desc, "author": author},
+        ))
+    return out
+
+
 def fetch_arxiv(limit=15):
     """arXiv recent CS submissions — research attention signal, position-scored."""
     print("Fetching arXiv recent...")
@@ -527,6 +561,7 @@ def main():
         "producthunt": fetch_producthunt,
         "techmeme": fetch_techmeme,
         "slashdot": fetch_slashdot,
+        "arstechnica": fetch_arstechnica,
         "arxiv": fetch_arxiv,
         "github_trending": fetch_github_trending,
         "npm": fetch_npm_downloads,
