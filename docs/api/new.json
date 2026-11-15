@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T19:17:49.111184+00:00",
+ "generated_at": "2026-11-15T19:21:05.546368+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 16946,
- "new_items": 16819,
+ "total_items": 17045,
+ "new_items": 16918,
  "by_source": {
   "show_hn": 50,
   "producthunt": 45,
@@ -721,11 +721,14 @@
   "xiaohui": 15,
   "xtdb": 15,
   "yahooengtumblr": 15,
+  "yatil": 15,
   "yehudakatz": 15,
   "yulingtianxia": 15,
   "zeldman": 15,
+  "zellwk": 15,
   "zhenghao": 15,
   "zmonster": 15,
+  "zwt": 15,
   "beesbuzz": 14,
   "bogoyavlensky": 14,
   "ericbidelman": 14,
@@ -776,6 +779,7 @@
   "webdevlaw": 12,
   "webventuresrejh": 12,
   "weeklytw93": 12,
+  "zhengziying": 12,
   "agis": 11,
   "bret": 11,
   "brycevandyk": 11,
@@ -1232,10 +1236,14 @@
   "xeiaso": 10,
   "yangqinyuan": 10,
   "yegor256": 10,
+  "yetanother": 10,
+  "yuanchuan": 10,
+  "yubico": 10,
   "zachleat": 10,
   "zackkanter": 10,
   "zeichenschatz": 10,
   "zopatista": 10,
+  "zwischenzugs": 10,
   "bejarano": 9,
   "bitbashing": 9,
   "codesgo": 9,
@@ -1345,6 +1353,7 @@
   "lukechannings": 2,
   "nlpfast": 2,
   "phabricatorwikimedia": 2,
+  "yakim": 2,
   "bentojs": 1,
   "cnnr": 1,
   "codedump": 1,
@@ -134828,6 +134837,22 @@
    "metric": "feed rank"
   },
   {
+   "title": "How to start testing screen reader support using VoiceOver",
+   "url": "https://yakim.nl/articles/voiceover-testing/",
+   "source": "yakim",
+   "rank": 1,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why you shouldn't use content-visibility (yet)",
+   "url": "https://yakim.nl/articles/content-visibility/",
+   "source": "yakim",
+   "rank": 2,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "投资的行动策略",
    "url": "http://yangqinyuan.com/essay/tzcl.html",
    "source": "yangqinyuan",
@@ -134904,6 +134929,126 @@
    "url": "http://yangqinyuan.com/essay/tlgl.html",
    "source": "yangqinyuan",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Band-aid accessibility",
+   "url": "https://yatil.net/blog/band-aid-accessibility",
+   "source": "yatil",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WCAG 3’s road to hell is paved with supplemental requirements",
+   "url": "https://yatil.net/blog/wcag-3-road-to-hell-paved-with-supplemental-requirements",
+   "source": "yatil",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Screen readers are not testing tools",
+   "url": "https://yatil.net/blog/screen-readers-are-not-testing-tools",
+   "source": "yatil",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "“WCAG is difficult to read, don’t read it” is a self-fulfilling prophecy",
+   "url": "https://yatil.net/blog/wcag-is-difficult-to-read-dont-read-it-is-a-self-fulfilling-prophecy",
+   "source": "yatil",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Meeting WCAG is an achievement",
+   "url": "https://yatil.net/blog/meeting-wcag-is-an-achievement",
+   "source": "yatil",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "“AI is inevitable” is bullshit",
+   "url": "https://yatil.net/blog/ai-is-inevitable-is-bullshit",
+   "source": "yatil",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WCAG’s Longevity",
+   "url": "https://yatil.net/blog/wcags-longevity",
+   "source": "yatil",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "About “best practices”",
+   "url": "https://yatil.net/blog/about-best-practices",
+   "source": "yatil",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Avoiding the word “help”",
+   "url": "https://yatil.net/blog/avoiding-the-word-help",
+   "source": "yatil",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deutschland: Berichte belegen blamable Bilanz bei digitaler Barrierefreiheit",
+   "url": "https://yatil.net/blog/barrieren-gutachten",
+   "source": "yatil",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "So, you screwed up your EAA compliance. What now?",
+   "url": "https://yatil.net/blog/so-you-screwed-up-your-eaa-compliance-what-now",
+   "source": "yatil",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tag, you’re it",
+   "url": "https://yatil.net/blog/tag-you-re-it",
+   "source": "yatil",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WAI A Day: A week",
+   "url": "https://yatil.net/blog/wai-a-day-a-week",
+   "source": "yatil",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WAI A Day",
+   "url": "https://yatil.net/blog/wai-a-day",
+   "source": "yatil",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Values",
+   "url": "https://yatil.net/blog/values",
+   "source": "yatil",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -135104,6 +135249,246 @@
    "url": "https://yehudakatz.com/2019/04/24/powershell-installation/",
    "source": "yehudakatz",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Let&#39;s build an accordion with plain HTML and CSS",
+   "url": "https://yetanother.blog/2022-01-13-22-01-12-lets-build-an-accordion-with-plain-html-and-css/?utm_source=rss-feed&utm_medium=rss",
+   "source": "yetanother",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Indiepen: A privacy-friendly tool to embed HTML, CSS &amp; JS code examples",
+   "url": "https://yetanother.blog/2021-06-24-introducing-indiepen-a-privacy-friendly-tool-to-embed-html-css-js-code-examples/?utm_source=rss-feed&utm_medium=rss",
+   "source": "yetanother",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Server-side rendering (SSR) with Netlify",
+   "url": "https://yetanother.blog/2021-04-28-server-side-rendering-with-netlify/?utm_source=rss-feed&utm_medium=rss",
+   "source": "yetanother",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quick Tip: First Letter Selector in CSS",
+   "url": "https://yetanother.blog/2021-04-07-first-letter-selector/?utm_source=rss-feed&utm_medium=rss",
+   "source": "yetanother",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simple Dark Mode Toggle with CSS and JS",
+   "url": "https://yetanother.blog/2021-03-22-simple-dark-mode-toggle-with-css-and-js/?utm_source=rss-feed&utm_medium=rss",
+   "source": "yetanother",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why should I use a UI library?",
+   "url": "https://yetanother.blog/2021-03-14-why-should-i-use-a-ui-library/?utm_source=rss-feed&utm_medium=rss",
+   "source": "yetanother",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why we don’t use Google Analytics anymore",
+   "url": "https://yetanother.blog/2021-03-13-why-we-dont-use-google-analytics-anymore/?utm_source=rss-feed&utm_medium=rss",
+   "source": "yetanother",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Modern text decoration with CSS box-decoration-break",
+   "url": "https://yetanother.blog/2021-03-08-modern-text-decoration-with-css-box-decoration-break/?utm_source=rss-feed&utm_medium=rss",
+   "source": "yetanother",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Collaborative UI Development",
+   "url": "https://yetanother.blog/2020-05-17-collaborative-ui-development/?utm_source=rss-feed&utm_medium=rss",
+   "source": "yetanother",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Continuous Integration With Netlify Build Plugins",
+   "url": "https://yetanother.blog/2020-05-02-continuous-integration-with-netlify-build-plugins/?utm_source=rss-feed&utm_medium=rss",
+   "source": "yetanother",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Multi-stroke text effect in CSS",
+   "url": "https://yuanchuan.dev/multi-stroke-text-effect-in-css",
+   "source": "yuanchuan",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing aivo",
+   "url": "https://yuanchuan.dev/introducing-aivo",
+   "source": "yuanchuan",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Remove black color with shaders",
+   "url": "https://yuanchuan.dev/remove-black-color-with-shaders",
+   "source": "yuanchuan",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS Animation with offset-path",
+   "url": "https://yuanchuan.dev/css-animation-with-offset-path",
+   "source": "yuanchuan",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An Introduction to css-doodle",
+   "url": "https://yuanchuan.dev/an-introduction-to-css-doodle",
+   "source": "yuanchuan",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generating images from css-doodle code",
+   "url": "https://yuanchuan.dev/generating-images-from-css-doodle-code.html",
+   "source": "yuanchuan",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Adding a shortcut for hue-rotate()",
+   "url": "https://yuanchuan.dev/adding-shortcut-for-hue-rotate",
+   "source": "yuanchuan",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Time-based CSS Animations",
+   "url": "https://yuanchuan.dev/time-based-css-animations",
+   "source": "yuanchuan",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fun with stroke-dasharray",
+   "url": "https://yuanchuan.dev/fun-with-stroke-dasharray",
+   "source": "yuanchuan",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simplifying CSS Variable Calculations",
+   "url": "https://yuanchuan.dev/simplifying-css-variable-calculations",
+   "source": "yuanchuan",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "YubiNation 2026 takeaways: Customers and partners shaping the future of digital trust",
+   "url": "https://www.yubico.com/blog/yubination-takeaways/",
+   "source": "yubico",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Leading Yubico forward: Q3 reflections and the next phase of growth",
+   "url": "https://www.yubico.com/blog/leading-yubico-forward-q3-reflections-and-the-next-phase-of-growth/",
+   "source": "yubico",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "YubiNation 2026: Coming together to shape the future of digital trust",
+   "url": "https://www.yubico.com/blog/yubination-2026-future-of-digital-trust/",
+   "source": "yubico",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Secure it Forward Spotlight: Where sustainability meets security",
+   "url": "https://www.yubico.com/blog/secure-it-forward-sustainability/",
+   "source": "yubico",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Imagine an internet that protects us, even when we make mistakes",
+   "url": "https://www.yubico.com/blog/ten-times-trust-safer-internet/",
+   "source": "yubico",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Underwriting the AI threat: Why cyber insurance must evolve to phishing-resistant MFA",
+   "url": "https://www.yubico.com/blog/cyber-insurance-phishing-resistant-mfa/",
+   "source": "yubico",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2026 Global Authentication Survey: Cybersecurity and IT pros are still using passwords…",
+   "url": "https://www.yubico.com/blog/2026-global-authentication-survey-cybersecurity-pros-are-still-using-passwords/",
+   "source": "yubico",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "European cyber resilience starts with trusted identity: Q&A with ECSO’s Cristian Tracci",
+   "url": "https://www.yubico.com/blog/european-cyber-resilience-starts-with-trusted-identity-qa-with-ecsos-cristian-tracci/",
+   "source": "yubico",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hardware root of trust in a digital world: Verifying identity across every layer of the enterprise",
+   "url": "https://www.yubico.com/blog/hardware-root-of-trust-in-a-digital-world-verifying-identity-across-every-layer-of-the-enterprise/",
+   "source": "yubico",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "OpenAI Daybreak signals a new era for AI security and the critical role of hardware security keys",
+   "url": "https://www.yubico.com/blog/openai-daybreak-signals-a-new-era-for-ai-security-and-the-critical-role-of-hardware-security-keys/",
+   "source": "yubico",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -135588,6 +135973,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Redefining My Relationship With You",
+   "url": "https://zellwk.com/blog/fellow-wayfarers/",
+   "source": "zellwk",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The omitEmpty Function",
+   "url": "https://zellwk.com/blog/omit-empty/",
+   "source": "zellwk",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speaking Without Inhibition",
+   "url": "https://zellwk.com/blog/speaking-without-inhibition/",
+   "source": "zellwk",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sharpen The Saw — Only 3 Mins",
+   "url": "https://zellwk.com/blog/sharpen-the-saw-three-minutes/",
+   "source": "zellwk",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Circle Of Influence",
+   "url": "https://zellwk.com/blog/circle-of-influence/",
+   "source": "zellwk",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Be Grateful, But Not Overly Grateful",
+   "url": "https://zellwk.com/blog/gifts-dont-need-repaying/",
+   "source": "zellwk",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Walking Stick On The Journey",
+   "url": "https://zellwk.com/blog/help-as-a-walking-stick/",
+   "source": "zellwk",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Help, Or Don't",
+   "url": "https://zellwk.com/blog/help-or-dont/",
+   "source": "zellwk",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hard Skills, Soft Skills, And Money-Making Skills",
+   "url": "https://zellwk.com/blog/money-making-skills-are-soft-skills/",
+   "source": "zellwk",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unblocking My Publishing",
+   "url": "https://zellwk.com/blog/unblocking-my-publishing/",
+   "source": "zellwk",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Infinite Game of Blogging",
+   "url": "https://zellwk.com/blog/the-infinite-game-of-blogging/",
+   "source": "zellwk",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I've Built an AI Clone That Works!",
+   "url": "https://zellwk.com/blog/an-ai-clone-that-works/",
+   "source": "zellwk",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building Responsive Layouts Without Writing More CSS",
+   "url": "https://zellwk.com/blog/building-responsive-layouts-without-writing-more-css/",
+   "source": "zellwk",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The State of Tech Education in the AI Age",
+   "url": "https://zellwk.com/blog/the-state-of-tech-education-in-the-ai-age/",
+   "source": "zellwk",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a Real Blog Easily in Astro",
+   "url": "https://zellwk.com/blog/real-astro-blog-made-easy/",
+   "source": "zellwk",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Three common interview practices I wish to see less of",
    "url": "https://zhenghao.io/posts/bad-interview-practices",
    "source": "zhenghao",
@@ -135704,6 +136209,102 @@
    "url": "https://zhenghao.io/posts/type-programming",
    "source": "zhenghao",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Enforcer 100",
+   "url": "https://zhengziying.com/2024/03/14/enforcer-100/",
+   "source": "zhengziying",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "白葡萄酒加冰",
+   "url": "https://zhengziying.com/2024/03/14/%e7%99%bd%e8%91%a1%e8%90%84%e9%85%92%e5%8a%a0%e5%86%b0/",
+   "source": "zhengziying",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "杭州徒步路线",
+   "url": "https://zhengziying.com/2024/03/14/%e6%9d%ad%e5%b7%9e%e5%be%92%e6%ad%a5%e8%b7%af%e7%ba%bf/",
+   "source": "zhengziying",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "把缺点说成优点",
+   "url": "https://zhengziying.com/2024/03/14/%e6%8a%8a%e7%bc%ba%e7%82%b9%e8%af%b4%e6%88%90%e4%bc%98%e7%82%b9/",
+   "source": "zhengziying",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "西雅图小腰",
+   "url": "https://zhengziying.com/2024/03/14/%e8%a5%bf%e9%9b%85%e5%9b%be%e5%b0%8f%e8%85%b0/",
+   "source": "zhengziying",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "怎么拍月亮",
+   "url": "https://zhengziying.com/2024/03/14/%e6%80%8e%e4%b9%88%e6%8b%8d%e6%9c%88%e4%ba%ae/",
+   "source": "zhengziying",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "谁推翻了“罗伊诉韦德案”",
+   "url": "https://zhengziying.com/2022/07/14/%e8%b0%81%e6%8e%a8%e7%bf%bb%e4%ba%86%e7%bd%97%e4%bc%8a%e8%af%89%e9%9f%a6%e5%be%b7%e6%a1%88/",
+   "source": "zhengziying",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "听说阿里内网不删帖",
+   "url": "https://zhengziying.com/2022/07/14/%e5%90%ac%e8%af%b4%e9%98%bf%e9%87%8c%e5%86%85%e7%bd%91%e4%b8%8d%e5%88%a0%e5%b8%96/",
+   "source": "zhengziying",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我在交大 BBS 删帖的日子",
+   "url": "https://zhengziying.com/2022/04/22/%e6%88%91%e5%9c%a8%e4%ba%a4%e5%a4%a7bbs%e5%88%a0%e5%b8%96%e7%9a%84%e6%97%a5%e5%ad%90/",
+   "source": "zhengziying",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "美国不是一个法治国家",
+   "url": "https://zhengziying.com/2022/04/22/%e7%be%8e%e5%9b%bd%e4%b8%8d%e6%98%af%e4%b8%80%e4%b8%aa%e6%b3%95%e6%b2%bb%e5%9b%bd%e5%ae%b6/",
+   "source": "zhengziying",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "为什么美国有那么多印度裔CEO",
+   "url": "https://zhengziying.com/2022/04/22/%e4%b8%ba%e4%bb%80%e4%b9%88%e7%be%8e%e5%9b%bd%e6%9c%89%e9%82%a3%e4%b9%88%e5%a4%9a%e5%8d%b0%e5%ba%a6%e8%a3%94ceo/",
+   "source": "zhengziying",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "美国就是一盘散沙",
+   "url": "https://zhengziying.com/2022/04/19/%e7%be%8e%e5%9b%bd%e5%b0%b1%e6%98%af%e4%b8%80%e7%9b%98%e6%95%a3%e6%b2%99/",
+   "source": "zhengziying",
+   "rank": 12,
    "score": 1,
    "metric": "feed rank"
   },
@@ -135904,6 +136505,206 @@
    "url": "https://www.zopatista.com/plone/2007/11/09/one-cookie-please/",
    "source": "zopatista",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Family Tree of Software Job Titles",
+   "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+   "source": "zwischenzugs",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What I Learned Building a RAG Server on my Home Server",
+   "url": "https://zwischenzugs.com/2026/11/02/what-i-learned-building-a-rag-server-in-my-spare-room/",
+   "source": "zwischenzugs",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding Out What You Actually Liked",
+   "url": "https://zwischenzugs.com/2026/10/30/finding-out-what-you-actually-liked/",
+   "source": "zwischenzugs",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Everything Is An API Now",
+   "url": "https://zwischenzugs.com/2026/10/24/everything-is-an-api-now/",
+   "source": "zwischenzugs",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reinventing The Wheel, Now At A Bargain Price!",
+   "url": "https://zwischenzugs.com/2026/06/24/reinventing-the-wheel-now-at-a-bargain-price/",
+   "source": "zwischenzugs",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fine-Tuning an AI – Part I",
+   "url": "https://zwischenzugs.com/2025/11/04/fine-tuning-an-ai-part-i/",
+   "source": "zwischenzugs",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I’m Writing a New Book!",
+   "url": "https://zwischenzugs.com/2025/07/12/im-writing-a-new-book/",
+   "source": "zwischenzugs",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exploring OSCAL Using Neo4J",
+   "url": "https://zwischenzugs.com/2025/03/15/exploring-oscal-using-neo4j/",
+   "source": "zwischenzugs",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Does Crossplane Replace Terraform? Part I: the Theory",
+   "url": "https://zwischenzugs.com/2024/07/16/does-crossplane-replace-terraform-part-i-the-theory/",
+   "source": "zwischenzugs",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In Praise of Low Tech DevEx",
+   "url": "https://zwischenzugs.com/2024/07/05/in-praise-of-low-tech-devex/",
+   "source": "zwischenzugs",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "就把自己先搞丢",
+   "url": "https://jtsang.me/posts/just-lost-myself/",
+   "source": "zwt",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "搭建 DERP 中转节点与 Headscale，实现多设备组网",
+   "url": "https://jtsang.me/posts/derp-headscale-setup/",
+   "source": "zwt",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "清晨，日暮，何处是我的归宿",
+   "url": "https://jtsang.me/posts/on-the-way/",
+   "source": "zwt",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "关于共识与争论",
+   "url": "https://jtsang.me/posts/consensus-and-debate/",
+   "source": "zwt",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "十五分钟，能写点什么就写点什么",
+   "url": "https://jtsang.me/posts/freely-writing/",
+   "source": "zwt",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "如何实现自己的 ChatGPT Code Interpreter",
+   "url": "https://jtsang.me/posts/implements-your-own-chatgpt-interpreter/",
+   "source": "zwt",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "纪念多牧君",
+   "url": "https://jtsang.me/posts/remember-duo-mu-jun/",
+   "source": "zwt",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "因理智而悲观，因意志而乐观",
+   "url": "https://jtsang.me/posts/optimistic-and-pessimistic/",
+   "source": "zwt",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我的表达之局限，即我的世界之局限",
+   "url": "https://jtsang.me/posts/my-expression-is-my-limitation/",
+   "source": "zwt",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "总工程师 42 岁移民从工人做起，活出精彩人生 - 观后感",
+   "url": "https://jtsang.me/posts/42-years-old-immigrant/",
+   "source": "zwt",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I just had a dream, and it was the most terrifying dream I've ever had.",
+   "url": "https://jtsang.me/posts/i-just-had-a-nightmare/",
+   "source": "zwt",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "拒绝算法推荐，用 RSS 构建属于自己的信息流",
+   "url": "https://jtsang.me/posts/build-your-own-rss-feed/",
+   "source": "zwt",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Linux 一键 DD 重装脚本",
+   "url": "https://jtsang.me/posts/linux-one-click-dd-reinstall-script/",
+   "source": "zwt",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Linux TCP 加速一键安装 常见/最新内核脚本 锐速/BBRPLUS/BBR2",
+   "url": "https://jtsang.me/posts/linux-tcp-bbr-server-speed-up/",
+   "source": "zwt",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "配置服务器仅用密钥进行 SSH 登录",
+   "url": "https://jtsang.me/posts/configure-ssh-login-with-keys-only/",
+   "source": "zwt",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   }
