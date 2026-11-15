@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T15:37:06.164986+00:00",
+ "generated_at": "2026-11-15T15:38:42.043969+00:00",
  "latest_snapshot": "2026-11-15",
  "total": 341,
  "authors": [
@@ -725,6 +725,21 @@
    }
   },
   {
+   "author": "ksec",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Jensen Huang resigns as Nvidia CEO immediately",
+    "url": "https://www.reuters.com/live/nvidia-live-board-meets-fate-ceo-jensen-huang-after-affair-reports-2026-11-12/",
+    "score": 375,
+    "metric": "points",
+    "date": "2026-11-12"
+   }
+  },
+  {
    "author": "simonebrunozzi",
    "days_on_board": 2,
    "items": 2,
@@ -738,21 +753,6 @@
     "score": 265,
     "metric": "points",
     "date": "2026-11-13"
-   }
-  },
-  {
-   "author": "dverlaeckt80",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Reverse engineering a vintage diode-transistor logic chip",
-    "url": "https://www.righto.com/2026/11/signetics-st680a-dtl-nand.html",
-    "score": 106,
-    "metric": "points",
-    "date": "2026-11-15"
    }
   }
  ]

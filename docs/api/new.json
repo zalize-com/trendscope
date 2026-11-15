@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-15T15:37:06.164986+00:00",
+ "generated_at": "2026-11-15T15:38:42.043969+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 958,
- "new_items": 832,
+ "total_items": 974,
+ "new_items": 848,
  "by_source": {
   "producthunt": 45,
-  "hackernews": 27,
+  "hackernews": 28,
   "show_hn": 26,
   "techmeme": 19,
   "slashdot": 18,
@@ -35,6 +35,7 @@
   "overreacted": 15,
   "philopp": 15,
   "pragmatic": 15,
+  "pythonblog": 15,
   "sanglard": 15,
   "soblog": 15,
   "swizec": 15,
@@ -2530,6 +2531,14 @@
    "source": "hackernews",
    "rank": 19,
    "score": 54,
+   "metric": "points"
+  },
+  {
+   "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+   "url": "https://prog21.dadgum.com/116.html",
+   "source": "hackernews",
+   "rank": 19,
+   "score": 49,
    "metric": "points"
   },
   {
@@ -5041,6 +5050,126 @@
    "url": "https://www.producthunt.com/products/project-nexus-2",
    "source": "producthunt",
    "rank": 20,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python 3.16.0 alpha 2 is now available",
+   "url": "https://blog.python.org/2026/11/python-3160-alpha-2-is-now-available/",
+   "source": "pythonblog",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18 are out",
+   "url": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/",
+   "source": "pythonblog",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python 3.15.1, 3.14.9 and 3.13.17 are out",
+   "url": "https://blog.python.org/2026/10/python-3151-3149-31317/",
+   "source": "pythonblog",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python 3.16.0 alpha 1 is now available",
+   "url": "https://blog.python.org/2026/10/python-3160-alpha-1-is-now-available/",
+   "source": "pythonblog",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python 3.15.0 (final) is here!",
+   "url": "https://blog.python.org/2026/10/python-3150-final-is-here/",
+   "source": "pythonblog",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python 3.15.0 candidate 3 is here!",
+   "url": "https://blog.python.org/2026/10/python-3150-rc3/",
+   "source": "pythonblog",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python 3.10.22, 3.11.17, 3.12.15, 3.13.16 and 3.14.8 are now available!",
+   "url": "https://blog.python.org/2026/10/python-31022-31117/",
+   "source": "pythonblog",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python Language Summit 2026",
+   "url": "https://blog.python.org/2026/09/language-summit-2026/",
+   "source": "pythonblog",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lightning Talks (Python Language Summit 2026)",
+   "url": "https://blog.python.org/2026/09/language-summit-2026-lightning-talks/",
+   "source": "pythonblog",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PEP 827: Type Manipulation (Python Language Summit 2026)",
+   "url": "https://blog.python.org/2026/09/language-summit-2026-pep-827-type-manipulation/",
+   "source": "pythonblog",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Free-Threaded Python Post-Era (Python Language Summit 2026)",
+   "url": "https://blog.python.org/2026/09/language-summit-2026-free-threading-post-era/",
+   "source": "pythonblog",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Developer-in-Residence Update & Future (Python Language Summit 2026)",
+   "url": "https://blog.python.org/2026/09/language-summit-2026-developer-in-residence-update-and-future/",
+   "source": "pythonblog",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Spicycrab (Python Language Summit 2026)",
+   "url": "https://blog.python.org/2026/09/language-summit-2026-spicycrab/",
+   "source": "pythonblog",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rust for CPython (Python Language Summit 2026)",
+   "url": "https://blog.python.org/2026/09/language-summit-2026-rust-for-cpython/",
+   "source": "pythonblog",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Memory Snapshots for CPython (Python Language Summit 2026)",
+   "url": "https://blog.python.org/2026/09/language-summit-2026-memory-snapshots/",
+   "source": "pythonblog",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
