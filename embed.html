@@ -118,6 +118,38 @@ if (MODE === "hiring") {
       ${ratio ? `<li><span class="rank">≈</span><span>positions per seeker</span><span class="score">${ratio}</span></li>` : ""}`;
   }).catch(() => { document.getElementById("err").textContent = "hiring data unavailable"; });
 } else
+if (MODE === "risers") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/risers.html";
+  fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(text => {
+    const rows = parseCSV(text), hdr = rows[0];
+    const ci = Object.fromEntries(hdr.map((h,i)=>[h,i]));
+    const ROLLING = new Set(["npm","pypi","crates"]);
+    const items = {};
+    for (const r of rows.slice(1)) {
+      const url = r[ci.url]; if (!url) continue;
+      const it = items[url] ||= { title: r[ci.title], source: r[ci.source], metric: r[ci.metric], obs: [] };
+      it.obs.push({ date: r[ci.date], score: +r[ci.score]||0 });
+    }
+    const pd = d => new Date(new Date(d+"T00:00:00Z") - 86400000).toISOString().slice(0,10);
+    const spikes = [];
+    for (const [url, it] of Object.entries(items)) {
+      if (ROLLING.has(it.source)) continue;
+      it.obs.sort((a,b) => a.date < b.date ? -1 : 1);
+      for (let i = 1; i < it.obs.length; i++) {
+        const p = it.obs[i-1], c = it.obs[i];
+        if (pd(c.date) === p.date && c.score > p.score)
+          spikes.push({ url, ...it, delta: c.score - p.score, date: c.date });
+      }
+    }
+    spikes.sort((a,b) => b.delta - a.delta);
+    document.getElementById("date").textContent = "biggest 1-day spikes";
+    document.getElementById("list").innerHTML = spikes.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · ${e.date}</span></span>
+        <span class="score up">+${fmt(e.delta)}</span></li>`).join("")
+      || `<li id="err">no spikes yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "risers data unavailable"; });
+} else
 if (MODE === "movers") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/compare.html";
   fetch("docs/api/movers-latest.json", {cache:"no-cache"}).then(r => r.json()).then(mv => {
