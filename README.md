@@ -166,6 +166,9 @@ A daily cross-source snapshot of developer attention:
 | swyx | AI engineering and learning in public | `swyx.io/rss.xml` |
 | Sam Rose | visual systems essays | `samwho.dev/rss.xml` |
 | Guillermo Rauch | Vercel CEO writing | `rauchg.com/atom` |
+| Andrej Karpathy | neural nets and deep learning | `karpathy.github.io/feed.xml` |
+| Matthew Rocklin | Dask creator, data tools | `matthewrocklin.com/feed.xml` |
+| Wesley Aptekar-Cassels | systems and software essays | `blog.wesleyac.com/feed.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

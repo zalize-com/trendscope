@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:33:07.883586+00:00",
+ "generated_at": "2026-11-15T16:34:28.600327+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 2007,
- "new_items": 1881,
+ "total_items": 2042,
+ "new_items": 1916,
  "by_source": {
   "producthunt": 45,
   "show_hn": 39,
@@ -57,6 +57,7 @@
   "lwn": 15,
   "marco": 15,
   "martinfowler": 15,
+  "matthewrocklin": 15,
   "mikeash": 15,
   "mitchw": 15,
   "mongodb": 15,
@@ -111,6 +112,7 @@
   "joelonsoftware": 10,
   "justinpot": 10,
   "jwz": 10,
+  "karpathy": 10,
   "krebs": 10,
   "lorinhochstein": 10,
   "lucumr": 10,
@@ -128,6 +130,7 @@
   "surfingcomplexity": 10,
   "tedinski": 10,
   "terrytao": 10,
+  "wesleyac": 10,
   "wingolog": 10,
   "xeiaso": 10,
   "zackkanter": 10,
@@ -7349,6 +7352,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "microgpt",
+   "url": "http://karpathy.github.io/2026/02/12/microgpt/",
+   "source": "karpathy",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deep Neural Nets: 33 years ago and 33 years from now",
+   "url": "http://karpathy.github.io/2022/03/14/lecun1989/",
+   "source": "karpathy",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A from-scratch tour of Bitcoin in Python",
+   "url": "http://karpathy.github.io/2021/06/21/blockchain/",
+   "source": "karpathy",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Short Story on AI: Forward Pass",
+   "url": "http://karpathy.github.io/2021/03/27/forward-pass/",
+   "source": "karpathy",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Biohacking Lite",
+   "url": "http://karpathy.github.io/2020/06/11/biohacking-lite/",
+   "source": "karpathy",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Recipe for Training Neural Networks",
+   "url": "http://karpathy.github.io/2019/04/25/recipe/",
+   "source": "karpathy",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "(started posting on Medium instead)",
+   "url": "http://karpathy.github.io/2018/01/20/medium/",
+   "source": "karpathy",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Survival Guide to a PhD",
+   "url": "http://karpathy.github.io/2016/09/07/phd/",
+   "source": "karpathy",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deep Reinforcement Learning: Pong from Pixels",
+   "url": "http://karpathy.github.io/2016/05/31/rl/",
+   "source": "karpathy",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Short Story on AI: A Cognitive Discontinuity.",
+   "url": "http://karpathy.github.io/2015/11/14/ai/",
+   "source": "karpathy",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "You Own the Outcome: Product Engineering in the Age of AI",
    "url": "https://kentcdodds.com/blog/you-own-the-outcome",
    "source": "kentcdodds",
@@ -8561,6 +8644,126 @@
    "url": "https://matklad.github.io/2026/08/06/neat-io-threaded.html",
    "source": "matklad",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Starting Over - Twenty Again",
+   "url": "https://matthewrocklin.com/starting-over-twenty-again/",
+   "source": "matthewrocklin",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Frisky and Xarray Example",
+   "url": "https://matthewrocklin.com/frisky-xarray/",
+   "source": "matthewrocklin",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Updated Thoughts on AI",
+   "url": "https://matthewrocklin.com/ai-2026-06/",
+   "source": "matthewrocklin",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stepping Back",
+   "url": "https://matthewrocklin.com/stepping-back/",
+   "source": "matthewrocklin",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Saying Goodbye to Winner-take-all Software",
+   "url": "https://matthewrocklin.com/winner-take-all/",
+   "source": "matthewrocklin",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Claude Chic: Week 2",
+   "url": "https://matthewrocklin.com/claude-chic-week-2/",
+   "source": "matthewrocklin",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Multi-Agent Workflows",
+   "url": "https://matthewrocklin.com/ai-multi-agent/",
+   "source": "matthewrocklin",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beginning Again",
+   "url": "https://matthewrocklin.com/ai-beginners/",
+   "source": "matthewrocklin",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Claude Chic",
+   "url": "https://matthewrocklin.com/introducing-claude-chic/",
+   "source": "matthewrocklin",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Zealotry",
+   "url": "https://matthewrocklin.com/ai-zealotry/",
+   "source": "matthewrocklin",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Twitter, LinkedIn, and Failing in Public",
+   "url": "https://matthewrocklin.com/fail-in-public/",
+   "source": "matthewrocklin",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I Walked across Spain",
+   "url": "https://matthewrocklin.com/camino/",
+   "source": "matthewrocklin",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughtful Professional Writing",
+   "url": "https://matthewrocklin.com/organized-writing/",
+   "source": "matthewrocklin",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Transactionalism vs Respect",
+   "url": "https://matthewrocklin.com/transactionalism/",
+   "source": "matthewrocklin",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hammers and Nailguns",
+   "url": "https://matthewrocklin.com/hammers-and-nailguns/",
+   "source": "matthewrocklin",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -14833,6 +15036,86 @@
    "url": "https://wcedmisten.fyi/post/dashcam-to-openstreetmap",
    "source": "wcedmisten",
    "rank": 13,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "End-to-end testing emails",
+   "url": "https://blog.wesleyac.com/posts/e2e-testing-email",
+   "source": "wesleyac",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Motivating X3DH",
+   "url": "https://blog.wesleyac.com/posts/motivating-x3dh",
+   "source": "wesleyac",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "If you think Bluesky is decentralized, you’ve been conned",
+   "url": "https://blog.wesleyac.com/posts/bluesky",
+   "source": "wesleyac",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Storage Space PSA for Mastodon Admins",
+   "url": "https://blog.wesleyac.com/posts/mastodon-storage-psa",
+   "source": "wesleyac",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Subdomains as identity",
+   "url": "https://blog.wesleyac.com/posts/subdomains-as-identity",
+   "source": "wesleyac",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minify and Gzip",
+   "url": "https://blog.wesleyac.com/posts/minify-and-gzip",
+   "source": "wesleyac",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to reset the USB stack on Linux",
+   "url": "https://blog.wesleyac.com/posts/linux-reset-usb",
+   "source": "wesleyac",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SNES Development Part 6: Sprites",
+   "url": "https://blog.wesleyac.com/posts/snes-dev-6-sprites",
+   "source": "wesleyac",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SNES Development Part 5: DMA",
+   "url": "https://blog.wesleyac.com/posts/snes-dev-5-dma",
+   "source": "wesleyac",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SNES Development Part 4: NMIs and vblank",
+   "url": "https://blog.wesleyac.com/posts/snes-dev-4-nmi-and-vblank",
+   "source": "wesleyac",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
