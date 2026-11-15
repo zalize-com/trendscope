@@ -41,6 +41,11 @@
   .sev.err { color: var(--red); } .sev.warn { color: var(--orange); }
   .issue code { color: var(--dim); word-break: break-all; }
   .issue .what { flex: 1; }
+  .foc { display: flex; gap: 10px; padding: 5px 10px; border-left: 2px solid var(--border);
+    margin-bottom: 4px; font-size: 13px; align-items: baseline; }
+  .foc .num { color: var(--dim); min-width: 30px; font-family: ui-monospace, monospace; }
+  .foc .nm { color: var(--dim); }
+  .foc.bad { border-left-color: var(--orange); }
   .stat { color: var(--dim); font-size: 13px; margin-top: 12px; }
   .ok { color: var(--green); font-weight: 600; }
   h2 { font-size: 15px; color: var(--dim); font-weight: 600; margin: 22px 0 8px;
@@ -54,12 +59,14 @@
 <div class="wrap">
   <nav><a class="back" href="../index.html">← trendscope</a> · <a href="./">tools</a> · <a href="utils.html">utils</a> · <a href="dev.html">dev</a> · <a href="web.html">web</a></nav>
   <h1>a11y audit</h1>
-  <p class="sub">Paste HTML — get an instant accessibility audit. Checks run in your browser via DOMParser; nothing is uploaded.
+  <p class="sub">Paste HTML — get an instant accessibility audit + tab-order map. Checks run in your browser via DOMParser; nothing is uploaded.
     &nbsp;·&nbsp;<a href="utils.html#contrast" style="color:var(--accent)">contrast checker →</a></p>
 
   <textarea id="in" placeholder='<html>&#10;  <body>&#10;    <img src="logo.png">&#10;    <button></button>&#10;    <input type="text">&#10;  </body>&#10;</html>'></textarea>
   <div class="stat" id="stat"></div>
   <div class="out" id="out"></div>
+  <h2>tab order</h2>
+  <div class="out" id="focus"></div>
 
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
@@ -142,6 +149,33 @@ function audit(html) {
   return { issues, doc };
 }
 
+const FOCUSABLE = "a[href],area[href],button,input:not([type=hidden]),select,textarea," +
+  "iframe,audio[controls],video[controls],summary,[contenteditable=true],[tabindex]";
+function inHidden(el) {
+  for (let p = el; p; p = p.parentElement)
+    if (p.hasAttribute && (p.hasAttribute("hidden") || p.getAttribute("aria-hidden") === "true")) return true;
+  return false;
+}
+function focusOrder(doc) {
+  const els = [...doc.querySelectorAll(FOCUSABLE)].filter(el =>
+    !el.disabled && !inHidden(el) && el.getAttribute("tabindex") !== "-1");
+  const pos = els.filter(el => +el.getAttribute("tabindex") > 0)
+    .sort((a, b) => +a.getAttribute("tabindex") - +b.getAttribute("tabindex"));
+  const nat = els.filter(el => !(+el.getAttribute("tabindex") > 0));
+  return pos.concat(nat);
+}
+function renderFocus(doc) {
+  const list = focusOrder(doc), box = $("focus");
+  if (!list.length) { box.innerHTML = '<div class="stat">no focusable elements</div>'; return; }
+  box.innerHTML = list.map((el, i) => {
+    const name = accessibleName(el);
+    const tv = +el.getAttribute("tabindex");
+    const label = `<${el.tagName.toLowerCase()}${el.id ? "#" + el.id : ""}${tv ? ' tabindex="' + tv + '"' : ""}>`;
+    return `<div class="foc${tv ? " bad" : ""}"><span class="num">${i + 1}</span>` +
+      `<span><code>${esc(label)}</code> <span class="nm">${name ? "— " + esc(name.slice(0, 60)) : ""}${tv ? " ⚠ tabindex>0" : ""}</span></span></div>`;
+  }).join("");
+}
+
 function go() {
   const html = $("in").value;
   const out = $("out"), stat = $("stat");
@@ -156,6 +190,7 @@ function go() {
   out.innerHTML = issues.map(i =>
     `<div class="issue"><span class="sev ${i.sev}">${i.sev}</span>
       <span class="what">${esc(i.what)}${i.code ? ` — <code>${esc(i.code)}</code>` : ""}</span></div>`).join("");
+  renderFocus(doc);
 }
 $("in").addEventListener("input", go);
 </script>
