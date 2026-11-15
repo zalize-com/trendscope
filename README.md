@@ -200,15 +200,11 @@ A daily cross-source snapshot of developer attention:
 | Dewith | software and indie posts | `dewith.com/feed/` |
 | Dyskinetic | personal tech blog | `dyskinetic.net/feed/` |
 | Scott Hanselman | Microsoft dev advocate blog | `feeds.hanselman.com/ScottHanselman` |
-| MacRumors | Apple news and rumors | `feeds.macrumors.com/MacRumors-Front` |
-| swissmiss | design blog by Tina Roth Eisenberg | `feeds2.feedburner.com/Swissmiss` |
-| fetchrss feed | community-generated RSS | `fetchrss.com/rss/5f4456fa8a93f86d388b45685fdc1cf61232f518d12bb832.xml` |
 | Jank Free | web rendering performance | `jankfree.org/feed/all.xml` |
 | John Keefe | data journalism at WNYC | `johnkeefe.net/posts.atom` |
 | Karbon Based | engineering blog | `karbonbased.io/index.xml` |
 | NPR Charts | NPR charts n things | `kpq.github.io/chartsnthings/atom.xml` |
 | Perfection Kills | JavaScript deep-dives | `perfectionkills.com/feed.xml` |
-| HubSpot Product | HubSpot product engineering | `product.hubspot.com/blog/rss.xml` |
 | BBC Responsive News | BBC responsive news lab | `responsivenews.co.uk/rss` |
 | SimpleBits | Dan Cederholm design blog | `simplebits.com/feed.xml` |
 | The Code Barbarian | Valeri Karpov Node.js blog | `thecodebarbarian.com/feed.xml` |
@@ -220,7 +216,6 @@ A daily cross-source snapshot of developer attention:
 | 0Xda De | weblog | `0xda.de/blog/index.xml` |
 | 100R Co | weblog | `100r.co/links/rss.xml` |
 | 512Pixels Net | weblog | `512pixels.net/feed/` |
-| 9To5Mac Com | weblog | `9to5mac.com/feed/` |
 | AJ Stuyvenberg | Datadog serverless engineer | `aaronstuyvenberg.com/feed.xml` |
 | aartaka | Lisp and Emacs blog | `aartaka.me/rss.xml` |
 | Ada Rose Cannon | web and XR at Samsung | `ada.is/feed` |
