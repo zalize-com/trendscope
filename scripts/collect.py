@@ -86687,6 +86687,68 @@ def fetch_wdrl(limit=15):
     return out
 
 
+
+def fetch_yahooeng(limit=15):
+    """Yahoo Engineering (Tumblr)."""
+    print("Fetching Yahoo Engineering feed")
+    from xml.etree import ElementTree as ET
+    items = []
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://yahooeng.tumblr.com/rss",
+                headers={"User-Agent": "Mozilla/5.0"})
+            resp = urllib.request.urlopen(req, timeout=15)
+            root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            entries = root.findall(".//item") or root.findall(".//entry")
+            break
+        except Exception as e:
+            print(f"  [warn] yahooeng attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 ** attempt)
+            if attempt == 2:
+                return []
+    for e in entries[:limit]:
+        t = e.find("title")
+        l = e.find("link")
+        title = t.text.strip() if t is not None and t.text else ""
+        link = (l.text if l is not None and l.text else (l.get("href") if l is not None else "")) or ""
+        if title:
+            items.append(make_item("yahooeng", title, link.strip() or "https://yahooeng.tumblr.com/", 0, "posts"))
+    return items
+
+
+def fetch_youtubeblog(limit=15):
+    """YouTube Official Blog."""
+    print("Fetching YouTube Official Blog feed")
+    from xml.etree import ElementTree as ET
+    items = []
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://blog.youtube/rss/",
+                headers={"User-Agent": "Mozilla/5.0"})
+            resp = urllib.request.urlopen(req, timeout=15)
+            root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            entries = root.findall(".//item") or root.findall(".//entry")
+            break
+        except Exception as e:
+            print(f"  [warn] youtubeblog attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 ** attempt)
+            if attempt == 2:
+                return []
+    for e in entries[:limit]:
+        t = e.find("title")
+        l = e.find("link")
+        title = t.text.strip() if t is not None and t.text else ""
+        link = (l.text if l is not None and l.text else (l.get("href") if l is not None else "")) or ""
+        if title:
+            items.append(make_item("youtubeblog", title, link.strip() or "https://blog.youtube/", 0, "posts"))
+    return items
+
 def fetch_slashdot(limit=15):
     """Slashdot RSS 1.0 (RDF) — nerd news, position-scored like techmeme."""
     print("Fetching Slashdot feed...")
@@ -88977,6 +89039,8 @@ def main():
         "auiou": fetch_auiou,
         "lruihao": fetch_lruihao,
         "w3api": fetch_w3api,
+        "yahooeng": fetch_yahooeng,
+        "youtubeblog": fetch_youtubeblog,
         "deepmind": fetch_deepmind,
         "darkreading": fetch_darkreading,
         "phys": fetch_phys,
