@@ -1,13 +1,13 @@
 {
  "a": "2026-11-14",
  "b": "2026-11-15",
- "generated": "2026-11-15 09:14 UTC",
+ "generated": "2026-11-15 09:18 UTC",
  "entered": [
   {
    "title": "SpaceX catches the Starship to end Flight 15",
    "url": "https://www.spacex.com/launches/starship-flight-15",
    "source": "hackernews",
-   "score": 1177,
+   "score": 1180,
    "metric": "points",
    "rank": 1
   },
@@ -15,7 +15,7 @@
    "title": "Eynnzerr/TelemetryCleaner",
    "url": "https://github.com/Eynnzerr/TelemetryCleaner",
    "source": "github_trending",
-   "score": 763,
+   "score": 765,
    "metric": "stars",
    "rank": 15
   },
@@ -44,18 +44,18 @@
    "rank": 1
   },
   {
-   "title": "Memory Safety Bugs in Rust Standard Library",
-   "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
+   "title": "Court denies motion to dismiss DRAM price fixing case",
+   "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
    "source": "hackernews",
-   "score": 118,
+   "score": 122,
    "metric": "points",
    "rank": 13
   },
   {
-   "title": "Court denies motion to dismiss DRAM price fixing case",
-   "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+   "title": "Memory Safety Bugs in Rust Standard Library",
+   "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
    "source": "hackernews",
-   "score": 117,
+   "score": 121,
    "metric": "points",
    "rank": 14
   },
@@ -63,7 +63,7 @@
    "title": "Testing a trash can Faraday cage",
    "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
    "source": "hackernews",
-   "score": 78,
+   "score": 79,
    "metric": "points",
    "rank": 15
   },
@@ -87,15 +87,23 @@
    "title": "Oxford Molecular Motors",
    "url": "https://www.physics.ox.ac.uk/research/group/oxford-molecular-motors/research/bacterial-flagellar-motor",
    "source": "hackernews",
-   "score": 48,
+   "score": 49,
    "metric": "points",
    "rank": 19
+  },
+  {
+   "title": "A rare glimpse inside the high-risk, high-reward Hormuz trade",
+   "url": "https://www.lloydslist.com/LL1158922/A-rare-glimpse-inside-the-highrisk-highreward-Hormuz-trade",
+   "source": "hackernews",
+   "score": 48,
+   "metric": "points",
+   "rank": 20
   },
   {
    "title": "Show HN: Gawain \u2013 Require type hints on all Python variables",
    "url": "https://github.com/matheuzgomes/gawain",
    "source": "show_hn",
-   "score": 46,
+   "score": 47,
    "metric": "points",
    "rank": 1
   },
@@ -119,7 +127,7 @@
    "title": "Show HN: A custom font based on the Jamaican flag alphabet",
    "url": "https://bobbiec.github.io/jamaican-font.html",
    "source": "show_hn",
-   "score": 35,
+   "score": 36,
    "metric": "points",
    "rank": 2
   },
@@ -127,7 +135,7 @@
    "title": "Show HN: Turbo-Browser-MCP \u2013 Batch forms, DOM deltas and submit guards for MCP",
    "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
    "source": "show_hn",
-   "score": 31,
+   "score": 32,
    "metric": "points",
    "rank": 3
   },
@@ -140,31 +148,31 @@
    "rank": 5
   },
   {
-   "title": "Spiik",
-   "url": "https://www.producthunt.com/products/spiik",
+   "title": "Canvas by AgentGrid.io",
+   "url": "https://www.producthunt.com/products/agentgrid-io",
    "source": "producthunt",
    "score": 20,
    "metric": "feed rank",
    "rank": 1
   },
   {
-   "title": "Tulvo",
-   "url": "https://www.producthunt.com/products/tulvo",
+   "title": "TwoBucket",
+   "url": "https://www.producthunt.com/products/twobucket",
    "source": "producthunt",
    "score": 19,
    "metric": "feed rank",
    "rank": 2
-  },
-  {
-   "title": "TwoBucket",
-   "url": "https://www.producthunt.com/products/twobucket",
-   "source": "producthunt",
-   "score": 18,
-   "metric": "feed rank",
-   "rank": 3
   }
  ],
  "left": [
+  {
+   "title": "openai",
+   "url": "https://pypi.org/project/openai/",
+   "source": "pypi",
+   "score": 376229755,
+   "metric": "monthly downloads",
+   "rank": 13
+  },
   {
    "title": "jhaizhou-ops/S2Arm",
    "url": "https://github.com/jhaizhou-ops/S2Arm",
@@ -262,6 +270,14 @@
    "rank": 20
   },
   {
+   "title": "Probabilistic data structures in Go",
+   "url": "https://antonz.org/probabilistic-data-structures/",
+   "source": "lobsters",
+   "score": 55,
+   "metric": "score",
+   "rank": 4
+  },
+  {
    "title": "Running a law firm on Free software (2026 edition)",
    "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
    "source": "lobsters",
@@ -308,22 +324,6 @@
    "score": 11,
    "metric": "score",
    "rank": 14
-  },
-  {
-   "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
-   "url": "https://arxiv.org/abs/2605.29713",
-   "source": "lobsters",
-   "score": 7,
-   "metric": "score",
-   "rank": 15
-  },
-  {
-   "title": "Ask HN: My product makes money, AI does the coding, and I feel useless",
-   "url": "https://news.ycombinator.com/item?id=50495982",
-   "source": "ask_hn",
-   "score": 5,
-   "metric": "points",
-   "rank": 6
   }
  ],
  "gainers": [
@@ -331,10 +331,10 @@
    "title": "Lovable apps expose passport details and more than 200K private messages",
    "url": "https://www.crissyfield.de/research/lovable-en/",
    "source": "hackernews",
-   "score": 797,
+   "score": 799,
    "metric": "points",
    "rank": 2,
-   "delta": 446
+   "delta": 448
   },
   {
    "title": "deepseek-ai/chat-demo",
@@ -349,28 +349,28 @@
    "title": "A family tree of software job titles",
    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
    "source": "hackernews",
-   "score": 298,
+   "score": 300,
    "metric": "points",
    "rank": 5,
-   "delta": 218
+   "delta": 220
   },
   {
    "title": "KDE: The documentary [video]",
    "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
    "source": "hackernews",
-   "score": 460,
+   "score": 461,
    "metric": "points",
    "rank": 4,
-   "delta": 181
+   "delta": 182
   },
   {
    "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
    "url": "https://projectzero.google/2026/11/disclosure-policy.html",
    "source": "hackernews",
-   "score": 242,
+   "score": 243,
    "metric": "points",
    "rank": 6,
-   "delta": 180
+   "delta": 181
   },
   {
    "title": "adriadam10/mkw-recomp",
@@ -385,19 +385,19 @@
    "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
    "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
    "source": "hackernews",
-   "score": 229,
+   "score": 230,
    "metric": "points",
    "rank": 8,
-   "delta": 140
+   "delta": 141
   },
   {
    "title": "apex-compute/ANR",
    "url": "https://github.com/apex-compute/ANR",
    "source": "github_trending",
-   "score": 1908,
+   "score": 1910,
    "metric": "stars",
    "rank": 4,
-   "delta": 124
+   "delta": 126
   },
   {
    "title": "Why get an expensive Pi when I have an old phone?",
@@ -439,10 +439,10 @@
    "title": "Advancing science and engineering with Antigravity's /teamwork",
    "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
    "source": "hackernews",
-   "score": 194,
+   "score": 195,
    "metric": "points",
    "rank": 12,
-   "delta": 78
+   "delta": 79
   },
   {
    "title": "Generative AI uses more energy on non-English text",
@@ -475,10 +475,10 @@
    "title": "agentes-chat/agentes-chat",
    "url": "https://github.com/agentes-chat/agentes-chat",
    "source": "github_trending",
-   "score": 1433,
+   "score": 1434,
    "metric": "stars",
    "rank": 7,
-   "delta": 43
+   "delta": 44
   },
   {
    "title": "HolyArrs/HolyArrs",
@@ -493,10 +493,10 @@
    "title": "serveroshq/panel",
    "url": "https://github.com/serveroshq/panel",
    "source": "github_trending",
-   "score": 822,
+   "score": 823,
    "metric": "stars",
    "rank": 13,
-   "delta": 37
+   "delta": 38
   },
   {
    "title": "alexeyw/lot-map",
@@ -509,15 +509,6 @@
   }
  ],
  "droppers": [
-  {
-   "title": "Ask HN: What are the most useful, concrete AI skills to independently learn?",
-   "url": "https://news.ycombinator.com/item?id=50494696",
-   "source": "ask_hn",
-   "score": 82,
-   "metric": "points",
-   "rank": 2,
-   "delta": 0
-  },
   {
    "title": "Vercel should fork and maintain Deno",
    "url": "https://news.ycombinator.com/item?id=50497196",
@@ -627,6 +618,15 @@
    "delta": 0
   },
   {
+   "title": "Ask HN: What are the most useful, concrete AI skills to independently learn?",
+   "url": "https://news.ycombinator.com/item?id=50494696",
+   "source": "ask_hn",
+   "score": 83,
+   "metric": "points",
+   "rank": 2,
+   "delta": 1
+  },
+  {
    "title": "Ask HN: Best books you read in 2026?",
    "url": "https://news.ycombinator.com/item?id=50501990",
    "source": "ask_hn",
@@ -668,7 +668,7 @@
    "source": "lobsters",
    "score": 59,
    "metric": "score",
-   "rank": 4,
+   "rank": 3,
    "delta": 4
   },
   {
@@ -690,6 +690,88 @@
    "delta": 4
   }
  ],
- "pkg_rank_up": [],
+ "pkg_rank_up": [
+  {
+   "title": "scikit-learn",
+   "url": "https://pypi.org/project/scikit-learn/",
+   "source": "pypi",
+   "score": 213066429,
+   "metric": "monthly downloads",
+   "rank": 13,
+   "rank_delta": 1
+  },
+  {
+   "title": "flask",
+   "url": "https://pypi.org/project/flask/",
+   "source": "pypi",
+   "score": 205187325,
+   "metric": "monthly downloads",
+   "rank": 14,
+   "rank_delta": 1
+  },
+  {
+   "title": "matplotlib",
+   "url": "https://pypi.org/project/matplotlib/",
+   "source": "pypi",
+   "score": 189251063,
+   "metric": "monthly downloads",
+   "rank": 15,
+   "rank_delta": 1
+  },
+  {
+   "title": "langchain",
+   "url": "https://pypi.org/project/langchain/",
+   "source": "pypi",
+   "score": 155924931,
+   "metric": "monthly downloads",
+   "rank": 16,
+   "rank_delta": 1
+  },
+  {
+   "title": "transformers",
+   "url": "https://pypi.org/project/transformers/",
+   "source": "pypi",
+   "score": 117605093,
+   "metric": "monthly downloads",
+   "rank": 17,
+   "rank_delta": 1
+  },
+  {
+   "title": "torch",
+   "url": "https://pypi.org/project/torch/",
+   "source": "pypi",
+   "score": 60157816,
+   "metric": "monthly downloads",
+   "rank": 18,
+   "rank_delta": 1
+  },
+  {
+   "title": "celery",
+   "url": "https://pypi.org/project/celery/",
+   "source": "pypi",
+   "score": 51503290,
+   "metric": "monthly downloads",
+   "rank": 19,
+   "rank_delta": 1
+  },
+  {
+   "title": "django",
+   "url": "https://pypi.org/project/django/",
+   "source": "pypi",
+   "score": 50283944,
+   "metric": "monthly downloads",
+   "rank": 20,
+   "rank_delta": 1
+  },
+  {
+   "title": "tensorflow",
+   "url": "https://pypi.org/project/tensorflow/",
+   "source": "pypi",
+   "score": 12496761,
+   "metric": "monthly downloads",
+   "rank": 21,
+   "rank_delta": 1
+  }
+ ],
  "pkg_rank_down": []
 }
