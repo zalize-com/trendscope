@@ -17,7 +17,8 @@ OUT = os.path.join(ROOT, "docs", "api", "streaks.json")
 def main():
     days = set()
     items = defaultdict(lambda: {"title": "", "source": "", "url": "",
-                                 "days": set(), "top_score": 0, "top_rank": 99})
+                                 "metric": "", "days": set(),
+                                 "top_score": 0, "top_rank": 99})
     for row in csv.DictReader(open(HIST, encoding="utf-8")):
         url = row.get("url")
         d = row.get("date")
@@ -28,6 +29,7 @@ def main():
         it["title"] = row["title"]
         it["source"] = row["source"]
         it["url"] = url
+        it["metric"] = row.get("metric") or it["metric"]
         it["days"].add(d)
         try:
             sc = int(row.get("score") or 0)
@@ -52,8 +54,9 @@ def main():
         if end:
             cur = streak_from(it["days"], end)
             if cur >= 2:
-                active.append({**{k: it[k] for k in ("title", "source", "url", "top_score", "top_rank")},
-                               "consecutive_days": cur})
+                active.append({**{k: it[k] for k in ("title", "source", "url", "metric", "top_score", "top_rank")},
+                               "consecutive_days": cur,
+                               "days_on_board": len(it["days"])})
         # longest run anywhere in its history
         run = best = 0
         ds = sorted(it["days"])
@@ -64,8 +67,9 @@ def main():
             best = max(best, run)
             prev = cur_d
         if best >= 2:
-            longest.append({**{k: it[k] for k in ("title", "source", "url")},
-                            "longest_streak": best})
+            longest.append({**{k: it[k] for k in ("title", "source", "url", "metric", "top_score", "top_rank")},
+                            "longest_streak": best,
+                            "days_on_board": len(it["days"])})
 
     active.sort(key=lambda x: (-x["consecutive_days"], -x["top_score"]))
     longest.sort(key=lambda x: -x["longest_streak"])
@@ -73,6 +77,9 @@ def main():
     out = {
         "generated_at": date.today().isoformat(),
         "latest_snapshot": latest,
+        "days_tracked": len(days),
+        "active_count": len(active),
+        "repeat_appearances": len(longest),
         "active": active[:50],
         "longest_all_time": longest[:50],
     }

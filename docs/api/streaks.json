@@ -1,406 +1,509 @@
 {
   "generated_at": "2026-11-15",
   "latest_snapshot": "2026-11-15",
+  "days_tracked": 9,
+  "active_count": 118,
+  "repeat_appearances": 118,
   "active": [
     {
       "title": "Terminal borders that don't cost a cell",
       "source": "lobsters",
       "url": "https://www.joshka.net/cell-borders/",
+      "metric": "score",
       "top_score": 396,
       "top_rank": 9,
-      "consecutive_days": 3
+      "consecutive_days": 3,
+      "days_on_board": 3
     },
     {
       "title": "boto3",
       "source": "pypi",
       "url": "https://pypi.org/project/boto3/",
+      "metric": "monthly downloads",
       "top_score": 2600056407,
       "top_rank": 1,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "requests",
       "source": "pypi",
       "url": "https://pypi.org/project/requests/",
+      "metric": "monthly downloads",
       "top_score": 1478957330,
       "top_rank": 2,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "pydantic",
       "source": "pypi",
       "url": "https://pypi.org/project/pydantic/",
+      "metric": "monthly downloads",
       "top_score": 1138753582,
       "top_rank": 3,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "click",
       "source": "pypi",
       "url": "https://pypi.org/project/click/",
+      "metric": "monthly downloads",
       "top_score": 1097885406,
       "top_rank": 4,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "numpy",
       "source": "pypi",
       "url": "https://pypi.org/project/numpy/",
+      "metric": "monthly downloads",
       "top_score": 1095220575,
       "top_rank": 5,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "pytest",
       "source": "pypi",
       "url": "https://pypi.org/project/pytest/",
+      "metric": "monthly downloads",
       "top_score": 960310675,
       "top_rank": 6,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "hashbrown",
       "source": "crates",
       "url": "https://crates.io/crates/hashbrown",
+      "metric": "recent downloads",
       "top_score": 912501410,
       "top_rank": 1,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "syn",
       "source": "crates",
       "url": "https://crates.io/crates/syn",
+      "metric": "recent downloads",
       "top_score": 898659910,
       "top_rank": 2,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "getrandom",
       "source": "crates",
       "url": "https://crates.io/crates/getrandom",
+      "metric": "recent downloads",
       "top_score": 819207341,
       "top_rank": 3,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "httpx",
       "source": "pypi",
       "url": "https://pypi.org/project/httpx/",
+      "metric": "monthly downloads",
       "top_score": 794805198,
       "top_rank": 7,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "pandas",
       "source": "pypi",
       "url": "https://pypi.org/project/pandas/",
+      "metric": "monthly downloads",
       "top_score": 698520592,
       "top_rank": 8,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "rand",
       "source": "crates",
       "url": "https://crates.io/crates/rand",
+      "metric": "recent downloads",
       "top_score": 641675826,
       "top_rank": 4,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "rand_core",
       "source": "crates",
       "url": "https://crates.io/crates/rand_core",
+      "metric": "recent downloads",
       "top_score": 639223677,
       "top_rank": 5,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "bitflags",
       "source": "crates",
       "url": "https://crates.io/crates/bitflags",
+      "metric": "recent downloads",
       "top_score": 597110437,
       "top_rank": 6,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "rich",
       "source": "pypi",
       "url": "https://pypi.org/project/rich/",
+      "metric": "monthly downloads",
       "top_score": 565221275,
       "top_rank": 9,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "thiserror",
       "source": "crates",
       "url": "https://crates.io/crates/thiserror",
+      "metric": "recent downloads",
       "top_score": 533389555,
       "top_rank": 7,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "thiserror-impl",
       "source": "crates",
       "url": "https://crates.io/crates/thiserror-impl",
+      "metric": "recent downloads",
       "top_score": 533317022,
       "top_rank": 8,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "fastapi",
       "source": "pypi",
       "url": "https://pypi.org/project/fastapi/",
+      "metric": "monthly downloads",
       "top_score": 532085116,
       "top_rank": 10,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "base64",
       "source": "crates",
       "url": "https://crates.io/crates/base64",
+      "metric": "recent downloads",
       "top_score": 530394575,
       "top_rank": 9,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "windows-sys",
       "source": "crates",
       "url": "https://crates.io/crates/windows-sys",
+      "metric": "recent downloads",
       "top_score": 521914502,
       "top_rank": 10,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "quote",
       "source": "crates",
       "url": "https://crates.io/crates/quote",
+      "metric": "recent downloads",
       "top_score": 492695548,
       "top_rank": 11,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "libc",
       "source": "crates",
       "url": "https://crates.io/crates/libc",
+      "metric": "recent downloads",
       "top_score": 491005750,
       "top_rank": 12,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "indexmap",
       "source": "crates",
       "url": "https://crates.io/crates/indexmap",
+      "metric": "recent downloads",
       "top_score": 489409968,
       "top_rank": 13,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "proc-macro2",
       "source": "crates",
       "url": "https://crates.io/crates/proc-macro2",
+      "metric": "recent downloads",
       "top_score": 485201335,
       "top_rank": 14,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "memchr",
       "source": "crates",
       "url": "https://crates.io/crates/memchr",
+      "metric": "recent downloads",
       "top_score": 470802397,
       "top_rank": 15,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "zod",
       "source": "npm",
       "url": "https://www.npmjs.com/package/zod",
+      "metric": "weekly downloads",
       "top_score": 456795275,
       "top_rank": 1,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "typescript",
       "source": "npm",
       "url": "https://www.npmjs.com/package/typescript",
+      "metric": "weekly downloads",
       "top_score": 423856689,
       "top_rank": 2,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "esbuild",
       "source": "npm",
       "url": "https://www.npmjs.com/package/esbuild",
+      "metric": "weekly downloads",
       "top_score": 419566667,
       "top_rank": 3,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "sqlalchemy",
       "source": "pypi",
       "url": "https://pypi.org/project/sqlalchemy/",
+      "metric": "monthly downloads",
       "top_score": 405468918,
       "top_rank": 11,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "scipy",
       "source": "pypi",
       "url": "https://pypi.org/project/scipy/",
+      "metric": "monthly downloads",
       "top_score": 385547821,
       "top_rank": 12,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "openai",
       "source": "pypi",
       "url": "https://pypi.org/project/openai/",
+      "metric": "monthly downloads",
       "top_score": 376229755,
       "top_rank": 13,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "vite",
       "source": "npm",
       "url": "https://www.npmjs.com/package/vite",
+      "metric": "weekly downloads",
       "top_score": 271758738,
       "top_rank": 4,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "react",
       "source": "npm",
       "url": "https://www.npmjs.com/package/react",
+      "metric": "weekly downloads",
       "top_score": 258500204,
       "top_rank": 5,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "scikit-learn",
       "source": "pypi",
       "url": "https://pypi.org/project/scikit-learn/",
+      "metric": "monthly downloads",
       "top_score": 215203255,
       "top_rank": 14,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "flask",
       "source": "pypi",
       "url": "https://pypi.org/project/flask/",
+      "metric": "monthly downloads",
       "top_score": 207427404,
       "top_rank": 15,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "lodash",
       "source": "npm",
       "url": "https://www.npmjs.com/package/lodash",
+      "metric": "weekly downloads",
       "top_score": 201638951,
       "top_rank": 6,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "express",
       "source": "npm",
       "url": "https://www.npmjs.com/package/express",
+      "metric": "weekly downloads",
       "top_score": 197054038,
       "top_rank": 7,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "matplotlib",
       "source": "pypi",
       "url": "https://pypi.org/project/matplotlib/",
+      "metric": "monthly downloads",
       "top_score": 190852970,
       "top_rank": 16,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "vitest",
       "source": "npm",
       "url": "https://www.npmjs.com/package/vitest",
+      "metric": "weekly downloads",
       "top_score": 182460991,
       "top_rank": 8,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "tailwindcss",
       "source": "npm",
       "url": "https://www.npmjs.com/package/tailwindcss",
+      "metric": "weekly downloads",
       "top_score": 178999790,
       "top_rank": 9,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "langchain",
       "source": "pypi",
       "url": "https://pypi.org/project/langchain/",
+      "metric": "monthly downloads",
       "top_score": 156867095,
       "top_rank": 17,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "axios",
       "source": "npm",
       "url": "https://www.npmjs.com/package/axios",
+      "metric": "weekly downloads",
       "top_score": 142918770,
       "top_rank": 10,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "transformers",
       "source": "pypi",
       "url": "https://pypi.org/project/transformers/",
+      "metric": "monthly downloads",
       "top_score": 118379121,
       "top_rank": 18,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "next",
       "source": "npm",
       "url": "https://www.npmjs.com/package/next",
+      "metric": "weekly downloads",
       "top_score": 93677602,
       "top_rank": 11,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "webpack",
       "source": "npm",
       "url": "https://www.npmjs.com/package/webpack",
+      "metric": "weekly downloads",
       "top_score": 73286825,
       "top_rank": 12,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "graphql",
       "source": "npm",
       "url": "https://www.npmjs.com/package/graphql",
+      "metric": "weekly downloads",
       "top_score": 69819237,
       "top_rank": 13,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "torch",
       "source": "pypi",
       "url": "https://pypi.org/project/torch/",
+      "metric": "monthly downloads",
       "top_score": 60717074,
       "top_rank": 19,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "jest",
       "source": "npm",
       "url": "https://www.npmjs.com/package/jest",
+      "metric": "weekly downloads",
       "top_score": 59769774,
       "top_rank": 14,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     },
     {
       "title": "celery",
       "source": "pypi",
       "url": "https://pypi.org/project/celery/",
+      "metric": "monthly downloads",
       "top_score": 52627840,
       "top_rank": 20,
-      "consecutive_days": 2
+      "consecutive_days": 2,
+      "days_on_board": 2
     }
   ],
   "longest_all_time": [
@@ -408,301 +511,501 @@
       "title": "Terminal borders that don't cost a cell",
       "source": "lobsters",
       "url": "https://www.joshka.net/cell-borders/",
-      "longest_streak": 3
+      "metric": "score",
+      "top_score": 396,
+      "top_rank": 9,
+      "longest_streak": 3,
+      "days_on_board": 3
     },
     {
       "title": "Why get an expensive Pi when I have an old phone?",
       "source": "hackernews",
       "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
-      "longest_streak": 2
+      "metric": "points",
+      "top_score": 533,
+      "top_rank": 3,
+      "longest_streak": 2,
+      "days_on_board": 3
     },
     {
       "title": "Lovable apps expose passport details and more than 200K private messages",
       "source": "hackernews",
       "url": "https://www.crissyfield.de/research/lovable-en/",
-      "longest_streak": 2
+      "metric": "points",
+      "top_score": 743,
+      "top_rank": 2,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "KDE: The documentary [video]",
       "source": "hackernews",
       "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
-      "longest_streak": 2
+      "metric": "points",
+      "top_score": 430,
+      "top_rank": 4,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "PyPI's redesigned project pages with clearer security signals are now live",
       "source": "hackernews",
       "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
-      "longest_streak": 2
+      "metric": "points",
+      "top_score": 225,
+      "top_rank": 7,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Generative AI uses more energy on non-English text",
       "source": "hackernews",
       "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
-      "longest_streak": 2
+      "metric": "points",
+      "top_score": 196,
+      "top_rank": 10,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Advancing science and engineering with Antigravity's /teamwork",
       "source": "hackernews",
       "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
-      "longest_streak": 2
+      "metric": "points",
+      "top_score": 188,
+      "top_rank": 11,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
       "source": "hackernews",
       "url": "https://gitlab.com/snipedbywifi/terminactory",
-      "longest_streak": 2
+      "metric": "points",
+      "top_score": 151,
+      "top_rank": 14,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
       "source": "hackernews",
       "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
-      "longest_streak": 2
+      "metric": "points",
+      "top_score": 213,
+      "top_rank": 9,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "A family tree of software job titles",
       "source": "hackernews",
       "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
-      "longest_streak": 2
+      "metric": "points",
+      "top_score": 265,
+      "top_rank": 6,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Testing a trash can Faraday cage",
       "source": "hackernews",
       "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
-      "longest_streak": 2
+      "metric": "points",
+      "top_score": 72,
+      "top_rank": 16,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "How Not to Build a Music Player",
       "source": "lobsters",
       "url": "https://alichraghi.github.io/blog/how-not-to-build-a-music-player",
-      "longest_streak": 2
+      "metric": "score",
+      "top_score": 113,
+      "top_rank": 1,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "The need for at least a third option",
       "source": "lobsters",
       "url": "https://blog.ovalerio.net/archives/3359",
-      "longest_streak": 2
+      "metric": "score",
+      "top_score": 85,
+      "top_rank": 2,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Probabilistic data structures in Go",
       "source": "lobsters",
       "url": "https://antonz.org/probabilistic-data-structures/",
-      "longest_streak": 2
+      "metric": "score",
+      "top_score": 62,
+      "top_rank": 3,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Someone's impersonating this blog",
       "source": "lobsters",
       "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/",
-      "longest_streak": 2
+      "metric": "score",
+      "top_score": 46,
+      "top_rank": 5,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "What happened to 3com?",
       "source": "lobsters",
       "url": "https://dfarq.homeip.net/what-happened-to-3com/",
-      "longest_streak": 2
+      "metric": "score",
+      "top_score": 33,
+      "top_rank": 6,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Creating a self booting ZIP archive",
       "source": "lobsters",
       "url": "https://goliath32.com/blog/ziphead.html",
-      "longest_streak": 2
+      "metric": "score",
+      "top_score": 18,
+      "top_rank": 9,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Solving the fox game",
       "source": "lobsters",
       "url": "http://blog.sesse.net/blog/tech/2026-11-13-19-51_solving_the_fox_game.html",
-      "longest_streak": 2
+      "metric": "score",
+      "top_score": 19,
+      "top_rank": 8,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Let Me Let You Own Your Data",
       "source": "lobsters",
       "url": "https://www.willett.io/posts/data/",
-      "longest_streak": 2
+      "metric": "score",
+      "top_score": 31,
+      "top_rank": 7,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Writing a DSL for high performance parallel programming in OxCaml",
       "source": "lobsters",
       "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
-      "longest_streak": 2
+      "metric": "score",
+      "top_score": 14,
+      "top_rank": 10,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "How do you truly stand out in Tech?",
       "source": "devto",
       "url": "https://dev.to/francistrdev/how-do-you-truly-stand-out-in-tech-478a",
-      "longest_streak": 2
+      "metric": "reactions",
+      "top_score": 202,
+      "top_rank": 1,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Necoz Has a New Home on DEV! 🐈🎉",
       "source": "devto",
       "url": "https://dev.to/necoz/necoz-has-a-new-home-on-dev-3454",
-      "longest_streak": 2
+      "metric": "reactions",
+      "top_score": 179,
+      "top_rank": 2,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "How did you end up in tech, and are you staying?",
       "source": "devto",
       "url": "https://dev.to/maame-codes/how-did-you-end-up-in-tech-and-are-you-staying-4l9b",
-      "longest_streak": 2
+      "metric": "reactions",
+      "top_score": 161,
+      "top_rank": 4,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "MCP Is Dead Simple. And That's Exactly the Problem",
       "source": "devto",
       "url": "https://dev.to/sylwia-lask/mcp-is-dead-simple-and-thats-exactly-the-problem-5811",
-      "longest_streak": 2
+      "metric": "reactions",
+      "top_score": 161,
+      "top_rank": 3,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "The C Trilogy: How Dennis Ritchie, Bjarne Stroustrup, and Anders Hejlsberg Built the Modern World 🏛️",
       "source": "devto",
       "url": "https://dev.to/devengers/the-c-trilogy-how-dennis-ritchie-bjarne-stroustrup-and-anders-hejlsberg-built-the-modern-world-1onp",
-      "longest_streak": 2
+      "metric": "reactions",
+      "top_score": 154,
+      "top_rank": 5,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Our Looping Factory Cut DEV Page Load Time by 75% and Counting",
       "source": "devto",
       "url": "https://dev.to/dailycontext/our-looping-factory-cut-dev-page-load-time-by-75-and-counting-1hnf",
-      "longest_streak": 2
+      "metric": "reactions",
+      "top_score": 142,
+      "top_rank": 6,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Long Live Rails",
       "source": "devto",
       "url": "https://dev.to/ben/long-live-rails-3p21",
-      "longest_streak": 2
+      "metric": "reactions",
+      "top_score": 126,
+      "top_rank": 7,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "We Keep Hearing About AI Productivity. The QA Group Chat Told a Different Story.",
       "source": "devto",
       "url": "https://dev.to/xulingfeng/we-keep-hearing-about-ai-productivity-the-qa-group-chat-told-a-different-story-2nma",
-      "longest_streak": 2
+      "metric": "reactions",
+      "top_score": 110,
+      "top_rank": 8,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "A 10 years old developer who has become a DEV.to Trusted Member! 😱",
       "source": "devto",
       "url": "https://dev.to/necoz/a-10-years-old-developer-who-has-become-a-devto-trusted-member-49c8",
-      "longest_streak": 2
+      "metric": "reactions",
+      "top_score": 95,
+      "top_rank": 9,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Dev Opportunity Radar #25: $120K+ Atlassian Hackathon, MLH Fellowship, and INSEAD AI Founder Sprint",
       "source": "devto",
       "url": "https://dev.to/devengers/dev-opportunity-radar-25-120k-atlassian-hackathon-mlh-fellowship-and-insead-ai-founder-sprint-m96",
-      "longest_streak": 2
+      "metric": "reactions",
+      "top_score": 89,
+      "top_rank": 10,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "How much does it cost to run a text game with LLMs",
       "source": "devto",
       "url": "https://dev.to/hiper2d/how-much-does-it-cost-to-run-a-text-game-with-llms-57o7",
-      "longest_streak": 2
+      "metric": "reactions",
+      "top_score": 85,
+      "top_rank": 11,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Congrats to the Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine Winners!",
       "source": "devto",
       "url": "https://dev.to/devteam/congrats-to-the-hacktoberfest-open-source-ai-challenge-week-4-ghost-in-the-machine-winners-nok",
-      "longest_streak": 2
+      "metric": "reactions",
+      "top_score": 86,
+      "top_rank": 11,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "🐾 DEV Pet Corner #5: Show Us Your Pets!",
       "source": "devto",
       "url": "https://dev.to/hemapriya_kanagala/dev-pet-corner-5-show-us-your-pets-dao",
-      "longest_streak": 2
+      "metric": "reactions",
+      "top_score": 78,
+      "top_rank": 13,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "One Year on DEV.to, 109 Articles Later",
       "source": "devto",
       "url": "https://dev.to/dannwaneri/one-year-on-devto-109-articles-later-p31",
-      "longest_streak": 2
+      "metric": "reactions",
+      "top_score": 67,
+      "top_rank": 14,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Ask More of Your UI",
       "source": "devto",
       "url": "https://dev.to/dailycontext/ask-more-of-your-ui-2nf7",
-      "longest_streak": 2
+      "metric": "reactions",
+      "top_score": 57,
+      "top_rank": 15,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "huamidev/GestaltX",
       "source": "github_trending",
       "url": "https://github.com/huamidev/GestaltX",
-      "longest_streak": 2
+      "metric": "stars",
+      "top_score": 7616,
+      "top_rank": 1,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "Kianuni/Erosion-CN",
       "source": "github_trending",
       "url": "https://github.com/Kianuni/Erosion-CN",
-      "longest_streak": 2
+      "metric": "stars",
+      "top_score": 2076,
+      "top_rank": 2,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "apex-compute/ANR",
       "source": "github_trending",
       "url": "https://github.com/apex-compute/ANR",
-      "longest_streak": 2
+      "metric": "stars",
+      "top_score": 1878,
+      "top_rank": 4,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "deepseek-ai/chat-demo",
       "source": "github_trending",
       "url": "https://github.com/deepseek-ai/chat-demo",
-      "longest_streak": 2
+      "metric": "stars",
+      "top_score": 1884,
+      "top_rank": 3,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "HybridRobotics/supermimic",
       "source": "github_trending",
       "url": "https://github.com/HybridRobotics/supermimic",
-      "longest_streak": 2
+      "metric": "stars",
+      "top_score": 1512,
+      "top_rank": 6,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "FrigadeHQ/yogurt",
       "source": "github_trending",
       "url": "https://github.com/FrigadeHQ/yogurt",
-      "longest_streak": 2
+      "metric": "stars",
+      "top_score": 1520,
+      "top_rank": 5,
+      "longest_streak": 2,
+      "days_on_board": 3
     },
     {
       "title": "agentes-chat/agentes-chat",
       "source": "github_trending",
       "url": "https://github.com/agentes-chat/agentes-chat",
-      "longest_streak": 2
+      "metric": "stars",
+      "top_score": 1416,
+      "top_rank": 7,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "HolyArrs/HolyArrs",
       "source": "github_trending",
       "url": "https://github.com/HolyArrs/HolyArrs",
-      "longest_streak": 2
+      "metric": "stars",
+      "top_score": 1200,
+      "top_rank": 8,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "DevedevT/FFmpeg-GUI-Editor-Windows",
       "source": "github_trending",
       "url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows",
-      "longest_streak": 2
+      "metric": "stars",
+      "top_score": 1051,
+      "top_rank": 9,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "adriadam10/mkw-recomp",
       "source": "github_trending",
       "url": "https://github.com/adriadam10/mkw-recomp",
-      "longest_streak": 2
+      "metric": "stars",
+      "top_score": 970,
+      "top_rank": 10,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "kolbicz/WQFiles",
       "source": "github_trending",
       "url": "https://github.com/kolbicz/WQFiles",
-      "longest_streak": 2
+      "metric": "stars",
+      "top_score": 869,
+      "top_rank": 11,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "alexeyw/lot-map",
       "source": "github_trending",
       "url": "https://github.com/alexeyw/lot-map",
-      "longest_streak": 2
+      "metric": "stars",
+      "top_score": 840,
+      "top_rank": 12,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "serveroshq/panel",
       "source": "github_trending",
       "url": "https://github.com/serveroshq/panel",
-      "longest_streak": 2
+      "metric": "stars",
+      "top_score": 816,
+      "top_rank": 13,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "JDhruv14/line-art-animation",
       "source": "github_trending",
       "url": "https://github.com/JDhruv14/line-art-animation",
-      "longest_streak": 2
+      "metric": "stars",
+      "top_score": 782,
+      "top_rank": 14,
+      "longest_streak": 2,
+      "days_on_board": 2
     },
     {
       "title": "zod",
       "source": "npm",
       "url": "https://www.npmjs.com/package/zod",
-      "longest_streak": 2
+      "metric": "weekly downloads",
+      "top_score": 456795275,
+      "top_rank": 1,
+      "longest_streak": 2,
+      "days_on_board": 2
     }
   ]
 }

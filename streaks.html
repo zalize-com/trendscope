@@ -52,74 +52,23 @@
     <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a></footer>
 <script type="module">
 const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
-const fmt = n => {
-  const s = n < 0 ? "-" : "", a = Math.abs(n);
-  return s + (a >= 1e9 ? (a/1e9).toFixed(1)+"B" : a >= 1e6 ? (a/1e6).toFixed(1)+"M" : a >= 1e3 ? (a/1e3).toFixed(1)+"k" : String(a));
-};
+const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B" : n >= 1e6 ? (n/1e6).toFixed(1)+"M" : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
 const $ = id => document.getElementById(id);
-
-function parseCSV(text) {
-  const rows = []; let field = "", row = [], inQ = false;
-  for (let i = 0; i < text.length; i++) {
-    const c = text[i];
-    if (inQ) {
-      if (c === '"') {
-        if (text[i+1] === '"') { field += '"'; i++; } else inQ = false;
-      } else field += c;
-    } else if (c === '"') inQ = true;
-    else if (c === ",") { row.push(field); field = ""; }
-    else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
-    else if (c !== "\r") field += c;
-  }
-  if (field || row.length) { row.push(field); rows.push(row); }
-  return rows;
-}
-
-const text = await fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text());
-const rows = parseCSV(text);
-const hdr = rows[0];
-const ci = Object.fromEntries(hdr.map((h,i)=>[h,i]));
-const items = {};  // url -> {title, source, metric, dates:Set, lastScore, lastRank}
-for (const r of rows.slice(1)) {
-  const url = r[ci.url]; if (!url) continue;
-  const it = items[url] ||= { title: r[ci.title], source: r[ci.source], metric: r[ci.metric], dates: new Set(), lastScore: 0, bestRank: 999 };
-  it.dates.add(r[ci.date]);
-  it.lastScore = Math.max(it.lastScore, Number(r[ci.score])||0);
-  it.bestRank = Math.min(it.bestRank, Number(r[ci.rank])||999);
-}
-const allDates = [...new Set(rows.slice(1).map(r => r[ci.date]))].sort();
-const latest = allDates[allDates.length-1];
-const day = 86400000;
-const prevDay = d => new Date(new Date(d+"T00:00:00Z") - day).toISOString().slice(0,10);
-
-const recs = Object.entries(items).map(([url, it]) => {
-  const ds = [...it.dates].sort();
-  // current streak: consecutive days ending at `latest`
-  let cur = 0;
-  for (let d = latest; it.dates.has(d); d = prevDay(d)) cur++;
-  // longest run anywhere
-  let run = 1, best = 1;
-  for (let i = 1; i < ds.length; i++) {
-    run = ds[i-1] === prevDay(ds[i]) ? run + 1 : 1;
-    best = Math.max(best, run);
-  }
-  return { url, ...it, days: ds.length, cur, best };
-});
-
-const live = recs.filter(r => r.cur >= 2).sort((a,b) => b.cur - a.cur || b.lastScore - a.lastScore);
-const allTime = [...recs].sort((a,b) => b.best - a.best || b.days - a.days || b.lastScore - a.lastScore).slice(0, 15);
-const multi = recs.filter(r => r.days >= 2).length;
+const d = await fetch("docs/api/streaks.json", {cache:"no-cache"}).then(r => r.json());
+const recs = d.active.concat(d.longest_all_time);
+const live = d.active.slice().sort((a,b) => b.consecutive_days - a.consecutive_days || b.top_score - a.top_score);
+const allTime = d.longest_all_time.slice(0, 15);
 
 $("stats").innerHTML =
-  `<div class="stat"><b>${latest}</b><small>latest snapshot</small></div>
-   <div class="stat"><b>${allDates.length}</b><small>days tracked</small></div>
-   <div class="stat"><b class="cur">${live.length}</b><small>on active streak (≥2d)</small></div>
-   <div class="stat"><b>${multi}</b><small>repeat appearances</small></div>`;
+  `<div class="stat"><b>${d.latest_snapshot}</b><small>latest snapshot</small></div>
+   <div class="stat"><b>${d.days_tracked}</b><small>days tracked</small></div>
+   <div class="stat"><b class="cur">${d.active_count}</b><small>on active streak (≥2d)</small></div>
+   <div class="stat"><b>${d.repeat_appearances}</b><small>repeat appearances</small></div>`;
 
 const row = (r, badge) =>
   `<li><span class="it"><a href="${r.url}">${esc(r.title)}</a><span class="src">${r.source}</span>
    <a href="item.html?q=${encodeURIComponent(r.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>
-   <span class="sc">${badge} · ${fmt(r.lastScore)} ${r.metric}</span></li>`;
+   <span class="sc">${badge} · ${fmt(r.top_score)} ${r.metric||""}</span></li>`;
 
 const srcs = [...new Set(recs.map(r => r.source))].sort();
 const QS = new URLSearchParams(location.search).get("s");
@@ -132,10 +81,10 @@ const liveF = live.filter(sf), allF = allTime.filter(sf);
 $("out").innerHTML =
   `<h2>on the board right now (consecutive days)</h2><ol>` +
     (liveF.length
-      ? liveF.slice(0, 25).map(r => row(r, `<span class="streak">${r.cur}d streak</span>`)).join("")
+      ? liveF.slice(0, 25).map(r => row(r, `<span class="streak">${r.consecutive_days}d streak</span>`)).join("")
       : `<li><span class="it" style="color:var(--dim)">nothing on a streak yet — streaks start at 2 consecutive days</span></li>`) + `</ol>` +
   `<h2>longest runs (all time)</h2><ol>` +
-    allF.map(r => row(r, `<span class="streak">${r.best}d</span> <span class="dim">(${r.days}d total)</span>`)).join("") + `</ol>`;
+    allF.map(r => row(r, `<span class="streak">${r.longest_streak}d</span> <span class="dim">(${r.days_on_board}d total)</span>`)).join("") + `</ol>`;
 </script>
 </body>
 </html>
