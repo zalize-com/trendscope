@@ -81,6 +81,7 @@
     <button data-tool="mcp">MCP config</button>
     <button data-tool="sql">SQL format</button>
     <button data-tool="b64file">b64→file</button>
+    <button data-tool="ascii">ASCII</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -301,12 +302,20 @@
     <div class="err" id="b64f-err"></div>
   </div>
 
+
+  <div class="panel" id="p-ascii">
+    <h2>ASCII table</h2>
+    <p class="hint">All 128 ASCII codes — searchable by char, code, hex or name.</p>
+    <input id="as-q" placeholder="search: A / 65 / 0x41 / space / \n…" style="width:100%;padding:8px 11px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg);margin-bottom:8px">
+    <div class="tbl" id="as-out"></div>
+  </div>
+
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts","csvprof","mcp","sql","b64file"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts","csvprof","mcp","sql","b64file","ascii"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -1159,6 +1168,34 @@ ccommit();
   $("b64f-in").addEventListener("input", go);
   $("b64f-in").value = "data:text/plain;base64," + btoa("hello trendscope");
   go();
+})();
+
+/* ---------- ascii table ---------- */
+(function () {
+  const NAMES = "NUL|SOH|STX|ETX|EOT|ENQ|ACK|BEL|BS|HT\nTAB|LF\nNL|VT|FF|CR|SO|SI|DLE|DC1|DC2|DC3|DC4|NAK|SYN|ETB|CAN|EM|SUB|ESC|FS|GS|RS|US|SP\nspace".split("|");
+  const rows = [];
+  for (let i = 0; i < 128; i++) {
+    const c = i < 33 ? NAMES[i] : (i === 127 ? "DEL" : String.fromCharCode(i));
+    const printable = i >= 32 && i < 127;
+    rows.push({dec: i, hex: "0x" + i.toString(16).toUpperCase(), oct: "0" + i.toString(8),
+               ch: printable ? c : c.split("\n")[0], name: printable ? "" : (NAMES[i] ? NAMES[i].split("\n")[0] : "DEL")});
+  }
+  function disp(r) { return r.ch === " " ? "␣" : r.ch; }
+  function go() {
+    const q = $("as-q").value.trim().toLowerCase();
+    let list = rows;
+    if (q) {
+      const num = /^0x[0-9a-f]+$/.test(q) ? parseInt(q, 16) : (/^\d+$/.test(q) ? parseInt(q) : (/^0[0-7]+$/.test(q) ? parseInt(q, 8) : null));
+      list = rows.filter(r =>
+        (num !== null && r.dec === num) ||
+        r.ch.toLowerCase() === q || r.name.toLowerCase().includes(q) ||
+        r.hex.toLowerCase() === q);
+    }
+    $("as-out").innerHTML = "<table><thead><tr><th>dec</th><th>hex</th><th>oct</th><th>char</th><th>name</th></tr></thead><tbody>" +
+      list.map(r => `<tr><td>${r.dec}</td><td class="mono">${r.hex}</td><td class="mono">${r.oct}</td><td class="mono"><b>${disp(r)}</b></td><td class="muted">${r.name}</td></tr>`).join("") +
+      "</tbody></table>";
+  }
+  $("as-q").addEventListener("input", go); go();
 })();
 
 </script>
