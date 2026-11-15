@@ -20,6 +20,7 @@ Outputs (the accumulating CC0 dataset):
 """
 
 import concurrent.futures
+import threading
 import csv
 import html
 import json
@@ -60380,11 +60381,24 @@ def main():
     # the run instead of the sum of all sources).
     sections, health = {}, {}
 
+    # reddit.com rate-limits bursts (429s); serialize that lane.
+    REDDIT_KEYS = {k for k in fetchers if k.startswith("r") and k[1:] in {
+        "programming", "webdev", "golang", "rust", "python", "javascript",
+        "typescript", "devops", "sysadmin", "netsec", "kubernetes", "aws",
+        "compsci", "coding", "technology", "artificial", "lisp",
+        "datascience", "haskell"}}
+    reddit_lock = threading.Lock()
+
     def run_one(item):
         name, fn = item
         t0 = time.time()
         try:
-            items = fn()
+            if name in REDDIT_KEYS:
+                with reddit_lock:
+                    items = fn()
+                    time.sleep(1.5)  # pace the lane
+            else:
+                items = fn()
         except Exception as e:
             items = []
             print(f"  {name}: FAILED {e}")
