@@ -239,6 +239,19 @@
     <div class="err" id="cr-err"></div>
   </div>
 
+  <div class="tool" data-tool="chmod">
+    <h2>chmod calculator</h2>
+    <p class="hint">Tick the permission boxes — get the octal and symbolic forms, or paste an octal to fill the boxes.</p>
+    <table id="cm-t" style="font-size:13px;border-collapse:collapse;margin:6px 0">
+      <tr><th></th><th>read</th><th>write</th><th>execute</th></tr>
+      <tr><td>owner</td><td><input type="checkbox" data-g="0" data-b="4"></td><td><input type="checkbox" data-g="0" data-b="2"></td><td><input type="checkbox" data-g="0" data-b="1"></td></tr>
+      <tr><td>group</td><td><input type="checkbox" data-g="1" data-b="4"></td><td><input type="checkbox" data-g="1" data-b="2"></td><td><input type="checkbox" data-g="1" data-b="1"></td></tr>
+      <tr><td>others</td><td><input type="checkbox" data-g="2" data-b="4"></td><td><input type="checkbox" data-g="2" data-b="2"></td><td><input type="checkbox" data-g="2" data-b="1"></td></tr>
+    </table>
+    <div class="out" id="cm-out"></div>
+    <p class="hint" style="margin-top:6px">octal: <input id="cm-oct" size="6" placeholder="755"> → fill boxes</p>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -259,6 +272,7 @@ const TOOLS = [
   {id:"freq",   label:"Word frequency"},
   {id:"opml",   label:"OPML → YAML"},
   {id:"cron",   label:"Crontab explainer"},
+  {id:"chmod",  label:"chmod calculator"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -721,6 +735,28 @@ function crGo(){
     (hits.length?"":"<li>no fire times in the next year — check dom/dow combination</li>");
 }
 document.getElementById("cr-in").addEventListener("input",crGo);
+
+
+// ---- chmod calculator ----
+const cmBoxes=[...document.querySelectorAll('#cm-t input')];
+function cmGo(){
+  const g=[0,0,0];
+  cmBoxes.forEach(b=>{if(b.checked)g[+b.dataset.g]|= +b.dataset.b;});
+  const oct=g.join('');
+  const sym=['u','g','o'].map((u,i)=>
+    u+'='+(g[i]&4?'r':'-')+(g[i]&2?'w':'-')+(g[i]&1?'x':'-')).join(', ');
+  const ls=g.map(v=>'rwx'.split('').map((c,i)=>(v>>(2-i))&1?c:'-').join('')).join(' ');
+  document.getElementById('cm-out').innerHTML=
+    `<b>chmod ${oct}</b> · symbolic <code>${sym}</code> · ls -l <code>${ls}</code>`;
+  const o=document.getElementById('cm-oct');if(o.value!==oct)o.value=oct;
+}
+cmBoxes.forEach(b=>b.addEventListener('change',cmGo));
+document.getElementById('cm-oct').addEventListener('input',e=>{
+  const v=e.target.value.trim();
+  if(!/^[0-7]{3}$/.test(v))return;
+  cmBoxes.forEach(b=>b.checked=((+v[+b.dataset.g])&+b.dataset.b)!==0);
+  cmGo();
+});
 
 </script>
 </body>
