@@ -458,7 +458,8 @@ function paintTabs() {
   const have = new Set(ITEMS.map(([s]) => s));
   const visible = TABS.filter(t =>
     t.id === "all" || (t.id === "packages" ? [...PKG].some(p => have.has(p)) : have.has(t.id)));
-  const cur = currentTab();
+  const wantTab = new URLSearchParams(location.search).get("s");
+  const cur = visible.some(t => t.id === wantTab) ? wantTab : currentTab();
   const keep = visible.some(t => t.id === cur) ? cur : "all";
   document.getElementById("tabs").innerHTML = visible.map(t =>
     `<button class="tab${t.id === keep ? " active" : ""}" data-tab="${t.id}">${t.label}</button>`).join("");
@@ -576,6 +577,9 @@ async function main() {
     const b = ev.target.closest(".tab");
     if (!b) return;
     document.querySelectorAll("#tabs .tab").forEach(x => x.classList.toggle("active", x === b));
+    const u = new URL(location.href);
+    b.dataset.tab === "all" ? u.searchParams.delete("s") : u.searchParams.set("s", b.dataset.tab);
+    history.replaceState(null, "", u);
     render(ITEMS, b.dataset.tab);
   });
   paint();
