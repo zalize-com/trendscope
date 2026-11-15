@@ -38,6 +38,9 @@ def main():
             check(not missing, f"{src} item missing fields {missing}: {it.get('title','?')[:50]}")
             check(isinstance(it.get("score"), (int, float)),
                   f"{src} score not numeric: {it.get('title','?')[:50]}")
+            title = it.get("title") or ""
+            check(not ("&#" in title or "&amp;" in title),
+                  f"{src} title has HTML entity residue: {title[:60]}")
 
     # data/daily/<today>.json exists
     day = latest["date"]
