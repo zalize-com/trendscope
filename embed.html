@@ -204,6 +204,19 @@ if (MODE === "streak") {
       || `<li id="err">no streaks yet</li>`;
   }).catch(() => { document.getElementById("err").textContent = "streak data unavailable"; });
 } else
+if (MODE === "ideas") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/ideas.html";
+  fetch("docs/api/ideas-latest.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    document.getElementById("date").textContent = `demand signals · ${d.unique_threads} threads`;
+    const rows = (d.themes || []).slice(0, N).map(t => {
+      const top = (t.threads || []).sort((a,b)=>b.max_score-a.max_score)[0] || {};
+      return `<li><span><a href="${esc(top.url || "#")}" target="_blank" rel="noopener">${esc(top.title || t.theme)}</a>
+          <span class="meta"><span class="src">${t.theme}</span> ${(t.threads||[]).length} threads</span></span>
+        <span class="score">${fmt(t.score || 0)}</span></li>`;
+    });
+    document.getElementById("list").innerHTML = rows.join("") || `<li id="err">no themes yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "ideas data unavailable"; });
+} else
 if (MODE === "topics") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/topics.html";
   fetch("data/topics-history.csv", {cache:"no-cache"}).then(r => r.text()).then(text => {

@@ -111,7 +111,8 @@ taxonomy as `topics.html` — niche blogs can embed just their beat),
 `?mode=streak` renders the current on-board streaks (items on the board N consecutive days),
 `?mode=canon` renders the HN all-time top stories,
 `?mode=week` renders the rolling last-7-days board by cumulative heat,
-`?mode=movers` renders today's top gainers + new entries.
+`?mode=movers` renders today's top gainers + new entries,
+`?mode=ideas` renders today's demand-signal themes (Ask HN clusters).
 
 ## Terminal
 
