@@ -49,8 +49,19 @@ def main():
         rd = csv.reader(f)
         header = next(rd)
         check(header == HIST_HEADER, f"history.csv header drifted: {header}")
-        today = sum(1 for r in rd if r and r[0] == day)
+        today = 0
+        seen, dupes = set(), 0
+        for r in rd:
+            if not r:
+                continue
+            if r[0] == day:
+                today += 1
+            key = tuple(r)
+            if key in seen:
+                dupes += 1
+            seen.add(key)
         check(today > 0, f"history.csv has no rows for {day}")
+        check(dupes == 0, f"history.csv has {dupes} duplicate rows")
 
     # health.json: every collected source reported ok
     health = json.load(open(os.path.join(ROOT, "data", "health.json")))
