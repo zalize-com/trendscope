@@ -29882,3 +29882,610 @@ date,source,rank,title,url,score,metric,comments,author,tags,captured_at
 2026-11-15,tim,8,"Q&A with Tim — The 4-Hour Workweek in a World of AI, Rebuilding Personal Agency, The 4-Hour Body After 40, and More (#887)",https://tim.blog/2026/10/21/qa-with-tim-ai-4-hour-workweek/,3,feed rank,0,,,2026-11-15T21:59:57.880191+00:00
 2026-11-15,tim,9,"The Tim Ferriss Show Transcripts: The Random Show — AI Super Assistants, Boner Pills, Dream Engineering, Wizards, Supplements, Books, and More (#886)",https://tim.blog/2026/10/11/the-random-show-ai-super-assistants-boner-pills-dream-engineering-wizards-supplements-books-and-more-transcript/,2,feed rank,0,,,2026-11-15T21:59:57.880191+00:00
 2026-11-15,tim,10,"The Random Show — AI Super Assistants, Boner Pills, Dream Engineering, Wizards, Supplements, Books, and More (#886)",https://tim.blog/2026/10/09/the-random-show-ai-super-assistants-boner-pills-dream-engineering-wizards-supplements-books-and-more/,1,feed rank,0,,,2026-11-15T21:59:57.880191+00:00
+2026-11-15,hackernews,20,Protomaps: Self-hosting map tiles has gotten cheap and easy,https://bruceroettgers.eu/blog/protomaps/,53,points,11,bcye,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,techmeme,1,"Analysis: Huawei's Horinger data center, among China's largest for AI, has ~7% of the compute of SpaceX's Colossus 2 and may stay far behind until at least 2028 (Ben Cottier/Epoch AI)",https://www.techmeme.com/261115/p16#a261115p16,15,feed rank,0,Ben Cottier / Epoch AI,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,steveblank,1,What’s Next For Nvidia?,https://steveblank.com/2026/11/15/whats-next-for-nvidia/,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,databricks,1,Teach Genie One your workflows: The ultimate guide for skills in Genie One,https://www.databricks.com/blog/teach-genie-one-your-workflows-ultimate-guide-skills-genie-one,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rrust,3,Jiff 1.0: A datetime library for Rust,https://www.reddit.com/r/rust/comments/1xx7v4v/jiff_10_a_datetime_library_for_rust/,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rrust,4,What happens when you force stripped C/C++ binaries through #![forbid(unsafe_code)]? Auditing 8 years of Android vendor blobs with the borrow checker,https://www.reddit.com/r/rust/comments/1xx7wu3/what_happens_when_you_force_stripped_cc_binaries/,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rrust,7,PTY in Rust Evolving into a Terminal,https://www.reddit.com/r/rust/comments/1xx7jz0/pty_in_rust_evolving_into_a_terminal/,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rrust,15,Rust will have a devroom at FOSDEM 2027!,https://www.reddit.com/r/rust/comments/1xvo91t/rust_will_have_a_devroom_at_fosdem_2027/,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rdevops,2,"Platform engineering, DevEx, SRE, how freely can you move between them?",https://www.reddit.com/r/devops/comments/1xx7dlu/platform_engineering_devex_sre_how_freely_can_you/,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rsysadmin,15,How do you stay on top of CVE (vulnerability) information without spending your entire day just monitoring security alerts?,https://www.reddit.com/r/sysadmin/comments/1xw3mx2/how_do_you_stay_on_top_of_cve_vulnerability/,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,planetpostgresql,1,"Chris van Eijk: invalid input syntax for type json in PostgreSQL, measured",https://postgr.es/p/9C2,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rpostgresql,1,"Postgres Conference 2027 CFP is open (San Jose, April 21-23)",https://www.reddit.com/r/PostgreSQL/comments/1x733v2/postgres_conference_2027_cfp_is_open_san_jose/,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rpostgresql,2,How did Postgres displace MySQL?,https://www.reddit.com/r/PostgreSQL/comments/1xwgqg0/how_did_postgres_displace_mysql/,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rpostgresql,3,"I got tired of ""SELECT 1"" microbenchmarks, so I tested 25 ORMs across 9 languages against a real 78M-row Postgres database. Here is what broke.",https://www.reddit.com/r/PostgreSQL/comments/1xx4r73/i_got_tired_of_select_1_microbenchmarks_so_i/,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rpostgresql,4,"I built a free native Windows client for PostgreSQL (and SQL Server, MySQL, SQLite)",https://www.reddit.com/r/PostgreSQL/comments/1xwc3ca/i_built_a_free_native_windows_client_for/,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rpostgresql,5,CFP is open for POSETTE: An Event for Postgres 2027 (until Sun 3 Jan 2027),https://www.reddit.com/r/PostgreSQL/comments/1xvkgsu/cfp_is_open_for_posette_an_event_for_postgres/,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rpostgresql,6,Two tricks we used to cache tables with Row Level Security (policy inlining + pg_logical_emit_message),https://www.reddit.com/r/PostgreSQL/comments/1xumpz0/two_tricks_we_used_to_cache_tables_with_row_level/,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rpostgresql,7,I built a Postgres client for my phone because I kept needing to check prod away from my laptop,https://www.reddit.com/r/PostgreSQL/comments/1xuf553/i_built_a_postgres_client_for_my_phone_because_i/,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rpostgresql,8,𝗔𝘂𝗱𝗮𝘅 𝗗𝗮𝘁𝗮 𝗠𝗮𝗻𝗮𝗴𝗲𝗿 𝟭.𝟲 𝗶𝘀 𝗹𝗶𝘃𝗲!,https://www.reddit.com/r/PostgreSQL/comments/1xuku7b/𝗔𝘂𝗱𝗮𝘅_𝗗𝗮𝘁𝗮_𝗠𝗮𝗻𝗮𝗴𝗲𝗿_𝟭𝟲_𝗶𝘀_𝗹𝗶𝘃𝗲/,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rpostgresql,9,PostgreSQL 18 on a 512 MiB VM: testing two low-memory configurations,https://www.reddit.com/r/PostgreSQL/comments/1xsrqrz/postgresql_18_on_a_512_mib_vm_testing_two/,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rpostgresql,10,"pg_fts: Open source BM25 extension for full-text search and boolean, phrase, NEAR, prefix, fuzzy, and regex queries",https://www.reddit.com/r/PostgreSQL/comments/1xscgv2/pg_fts_open_source_bm25_extension_for_fulltext/,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rpostgresql,11,How to compare PostgreSQL schemas across environments and catch drift early,https://www.reddit.com/r/PostgreSQL/comments/1xsl5im/how_to_compare_postgresql_schemas_across/,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rpostgresql,12,[RAG / pgvector] How do you handle vector chunks when a document is soft-deleted?,https://www.reddit.com/r/PostgreSQL/comments/1xskyvc/rag_pgvector_how_do_you_handle_vector_chunks_when/,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rpostgresql,13,Xata is joining ClickHouse,https://www.reddit.com/r/PostgreSQL/comments/1xrxnff/xata_is_joining_clickhouse/,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rpostgresql,14,PostgreSQL related events between Nov 09 - Dec 08,https://www.reddit.com/r/PostgreSQL/comments/1xrt6u3/postgresql_related_events_between_nov_09_dec_08/,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rpostgresql,15,Query optimization,https://www.reddit.com/r/PostgreSQL/comments/1xqewsr/query_optimization/,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rcpp,1,C++ Show and Tell - November 2026,https://www.reddit.com/r/cpp/comments/1xo0gru/c_show_and_tell_november_2026/,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rcpp,2,C++ Jobs - Q4 2026,https://www.reddit.com/r/cpp/comments/1ww85t3/c_jobs_q4_2026/,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rcpp,3,"clice 1.0: a C++ language server built on Clang, with C++20 modules out of the box, non-self-contained headers, and crash isolation",https://www.reddit.com/r/cpp/comments/1xwyk9n/clice_10_a_c_language_server_built_on_clang_with/,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rcpp,4,CMake 4.5.0 released; supports import std for all scannable targets with C++20 and later,https://www.reddit.com/r/cpp/comments/1xw12mg/cmake_450_released_supports_import_std_for_all/,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rcpp,5,DO NOT USE FIBERS! - I did it anyway,https://www.reddit.com/r/cpp/comments/1xw0hez/do_not_use_fibers_i_did_it_anyway/,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rcpp,6,P4476R0: HANDLING A REJECTED DIS,https://www.reddit.com/r/cpp/comments/1xvyz36/p4476r0_handling_a_rejected_dis/,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rcpp,7,What really kills C++,https://www.reddit.com/r/cpp/comments/1xwwm6p/what_really_kills_c/,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rcpp,8,How can I make it easier to use the helper class that lets me pass more than one parameter to co_await?,https://www.reddit.com/r/cpp/comments/1xvs788/how_can_i_make_it_easier_to_use_the_helper_class/,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rcpp,9,MSVC Build Tools Preview updates - November 2026,https://www.reddit.com/r/cpp/comments/1xvf9xw/msvc_build_tools_preview_updates_november_2026/,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rcpp,10,"Terrible tips for a C++ developer: 2026 edition, Part 1",https://www.reddit.com/r/cpp/comments/1xv9394/terrible_tips_for_a_c_developer_2026_edition_part/,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rcpp,11,"InsideC++ 26431: A New Show, Contracts as Clickbait",https://www.reddit.com/r/cpp/comments/1xvhssb/insidec_26431_a_new_show_contracts_as_clickbait/,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rcpp,12,"For the first time, a C++ standard failed to pass the national bodies",https://www.reddit.com/r/cpp/comments/1xtq0yd/for_the_first_time_a_c_standard_failed_to_pass/,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rcpp,13,"MSVC 14.52, migration code to C++23",https://www.reddit.com/r/cpp/comments/1xtc3a4/msvc_1452_migration_code_to_c23/,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rcpp,14,"Stop Rebuilding the World: Faster C++ CI with vcpkg Binary Caching (Wed, Nov. 18th 6pm MDT)",https://www.reddit.com/r/cpp/comments/1xswtrd/stop_rebuilding_the_world_faster_c_ci_with_vcpkg/,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rcpp,15,A faster way to calculate the date of Easter,https://www.reddit.com/r/cpp/comments/1xsmn3e/a_faster_way_to_calculate_the_date_of_easter/,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rgamedev,9,Need help with understanding how you can have exact copies of cars legally without license,https://www.reddit.com/r/gamedev/comments/1xx7lvl/need_help_with_understanding_how_you_can_have/,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,rgamedev,13,Steamworks Identity Verification?,https://www.reddit.com/r/gamedev/comments/1xx7kv5/steamworks_identity_verification/,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,lorekernel,1,Re: [PATCH v4 3/4] devfreq: Factor out devfreq_set_governor(),https://lore.kernel.org/all/4794724e-456e-4efc-b5e7-536c8afad0fd@gmail.com/,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,lorekernel,2,Replication probe 2026-11-15T22:35Z,https://lore.kernel.org/all/179478210041.2203375.9273795024046225964.replication-probe@kernel.org/,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,lorekernel,3,[PATCH RFC nf-next 9/9] selftests: netfilter: exercise nfqueue memory accounting,https://lore.kernel.org/all/20261115-b4-nfqueue-memory-accounting-v1-9-b9cc30819997@asgari.net/,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,lorekernel,4,[PATCH RFC nf-next 8/9] netfilter: nfqueue: add KUnit memory accounting coverage,https://lore.kernel.org/all/20261115-b4-nfqueue-memory-accounting-v1-8-b9cc30819997@asgari.net/,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,lorekernel,5,[PATCH RFC nf-next 7/9] netfilter: nfqueue: reserve capacity against the bound owner,https://lore.kernel.org/all/20261115-b4-nfqueue-memory-accounting-v1-7-b9cc30819997@asgari.net/,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,lorekernel,6,[PATCH RFC nf-next 8/9] netfilter: nfqueue: add KUnit memory accounting coverage,https://lore.kernel.org/all/20261115-b4-nfqueue-memory-accounting-v1-8-b9cc30819997@asgari.net/,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,lorekernel,7,[PATCH RFC nf-next 5/9] memcg: test capacity reservation rollback and refunds,https://lore.kernel.org/all/20261115-b4-nfqueue-memory-accounting-v1-5-b9cc30819997@asgari.net/,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,lorekernel,8,[PATCH RFC nf-next 9/9] selftests: netfilter: exercise nfqueue memory accounting,https://lore.kernel.org/all/20261115-b4-nfqueue-memory-accounting-v1-9-b9cc30819997@asgari.net/,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,lorekernel,9,[PATCH RFC nf-next 7/9] netfilter: nfqueue: reserve capacity against the bound owner,https://lore.kernel.org/all/20261115-b4-nfqueue-memory-accounting-v1-7-b9cc30819997@asgari.net/,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,lorekernel,10,[PATCH RFC nf-next 2/9] memcg: bound memory.high delay arithmetic,https://lore.kernel.org/all/20261115-b4-nfqueue-memory-accounting-v1-2-b9cc30819997@asgari.net/,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,lorekernel,11,[PATCH RFC nf-next 6/9] netfilter: nfqueue: account saved skb bytes per queue,https://lore.kernel.org/all/20261115-b4-nfqueue-memory-accounting-v1-6-b9cc30819997@asgari.net/,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,lorekernel,12,[PATCH RFC nf-next 6/9] netfilter: nfqueue: account saved skb bytes per queue,https://lore.kernel.org/all/20261115-b4-nfqueue-memory-accounting-v1-6-b9cc30819997@asgari.net/,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,lorekernel,13,[PATCH RFC nf-next 4/9] memcg: add an owner-bound capacity reservation interface,https://lore.kernel.org/all/20261115-b4-nfqueue-memory-accounting-v1-4-b9cc30819997@asgari.net/,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,lorekernel,14,[PATCH RFC nf-next 3/9] memcg: add KUnit coverage for memory.high accounting,https://lore.kernel.org/all/20261115-b4-nfqueue-memory-accounting-v1-3-b9cc30819997@asgari.net/,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,lorekernel,15,[PATCH RFC nf-next 0/9] netfilter: nfqueue: account queued memory and reserve capacity,https://lore.kernel.org/all/20261115-b4-nfqueue-memory-accounting-v1-0-b9cc30819997@asgari.net/,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,forummanjaro,1,Gitlab.manjaro.org status?,https://forum.manjaro.org/t/gitlab-manjaro-org-status/191238,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,engadget,1,Samsung is discontinuing these useful mobile apps in December,https://www.engadget.com/2313930/samsung-is-discontinuing-these-useful-mobile-apps-in-december/,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,engadget,2,How one 13-year-old is helping solve a huge solar panel limitation,https://www.engadget.com/2313927/13-year-old-solving-solar-panel-limitation/,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,hnrss,1,Old Bitly Links Are Being Hijacked,https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,euroweeklynews,1,Spain hit by yet another train derailment as Madrid railway line is shut,https://euroweeklynews.com/2026/11/15/spain-hit-by-yet-another-train-derailment-as-madrid-railway-line-is-shut/,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,yahooeng,1,"Bullet Updates - Windowing, Apache Pulsar PubSub, Configuration-based Data Ingestion, and More",https://yahooeng.tumblr.com/post/183315480351,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,yahooeng,2,"Announcing OpenTSDB 2.4.0: Rollup and Pre-Aggregation Storage, Histograms, Sketches, and More",https://yahooeng.tumblr.com/post/181461332311,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,yahooeng,3,"Vespa Product Updates, December 2018 - ONNX Import and Map Attribute Grouping",https://yahooeng.tumblr.com/post/181089393751,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,yahooeng,4,A New Chapter for Omid,https://yahooeng.tumblr.com/post/180867271141,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,yahooeng,5,Hadoop Contributors Meetup at Oath,https://yahooeng.tumblr.com/post/179901430546,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,yahooeng,6,Sharing Vespa (Open Source Big Data Serving Engine) at the SF Big Analytics Meetup,https://yahooeng.tumblr.com/post/179150583591,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,yahooeng,7,"Open-Sourcing Panoptes, Oath’s distributed network telemetry collector",https://yahooeng.tumblr.com/post/178738044351,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,yahooeng,8,Apache Pulsar graduates to Top-Level Project,https://yahooeng.tumblr.com/post/178450976346,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,yahooeng,9,"Introducing HaloDB, a fast, embedded key-value storage engine written in Java",https://yahooeng.tumblr.com/post/178262468576,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,yahooeng,10,Introducing Oak: an Open Source Scalable Key-Value Map for Big Data Analytics,https://yahooeng.tumblr.com/post/178045294111,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,yahooeng,11,Innovating on Authentication Standards,https://yahooeng.tumblr.com/post/175238642656,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,yahooeng,12,A Peek Behind the Mail Curtain,https://yahooeng.tumblr.com/post/174023151641,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,yahooeng,13,Achieving Major Stability and Performance Improvements in Yahoo Mail with a Novel Redux Architecture,https://yahooeng.tumblr.com/post/173062946866,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,yahooeng,14,Secure Images,https://yahooeng.tumblr.com/post/172068649246,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,yahooeng,15,Success at Apache: A Newbie’s Narrative,https://yahooeng.tumblr.com/post/170536010891,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,youtubeblog,1,YouTube celebrates the launch and cultural impact of Grand Theft Auto VI,https://blog.youtube/news-and-events/youtube-rockstar-games-gta-vi-launch/,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,youtubeblog,2,"Paris Hilton talks vulnerability, privilege and creativity for ADHD Awareness Month",https://blog.youtube/creator-and-artist-stories/paris-hilton-adhd-awareness-interview/,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,youtubeblog,3,Watch the 'Always Lalisa' documentary with YouTube Premium on November 18,https://blog.youtube/culture-and-trends/youtube-premium-always-lalisa-documentary/,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,youtubeblog,4,A change to YouTube’s inclusion on the U.S. Billboard charts,https://blog.youtube/news-and-events/youtube-billboard-chart-update/,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,youtubeblog,5,New accessibility tags come to YouTube Playables,https://blog.youtube/news-and-events/new-accessibility-tags-youtube-playables/,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,youtubeblog,6,“Kind of Big News”: How Sonny Side earned Best Ever Food Review Show an Emmy nom,https://blog.youtube/creator-and-artist-stories/sonny-side-youtube-emmy-nomination-interview/,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,youtubeblog,7,5 ways media companies are growing audiences and revenue on YouTube,https://blog.youtube/creator-and-artist-stories/media-companies-youtube-growth-strategies/,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,youtubeblog,8,The evolution of web series on YouTube: Microdramas,https://blog.youtube/culture-and-trends/the-evolution-of-web-series-on-youtube-microdramas/,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,youtubeblog,9,Uncover the magic of ACOTAR with YouTube,https://blog.youtube/culture-and-trends/youtube-sarah-j-maas-acotar-book-release/,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,youtubeblog,10,Inside YouTube's findings on generative video and personal creativity,https://blog.youtube/culture-and-trends/youtube-generative-ai-video-creativity-report/,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,youtubeblog,11,Why Lilly Singh is returning to sketch comedy on YouTube,https://blog.youtube/creator-and-artist-stories/lilly-singh-superwoman-youtube-return/,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,youtubeblog,12,"What 20,000 creators told us about unleashing Europe’s potential",https://blog.youtube/news-and-events/europe-creator-consultation-creative-capital-report/,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,youtubeblog,13,3 ways YouTube is helping news organizations build for the future,https://blog.youtube/inside-youtube/youtube-news-working-group-tools-future/,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,youtubeblog,14,"How to watch, shop, & engage with the 2026 Victoria’s Secret Fashion Show",https://blog.youtube/culture-and-trends/watch-victorias-secret-fashion-show-2026-youtube/,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,youtubeblog,15,We go behind the scenes at Made On YouTube 2026,https://blog.youtube/inside-youtube/behind-scenes-make-it-made-on-youtube-2026/,0,posts,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,investing,1,Diamondback Energy nears $5 bln Double Eagle deal - report,https://www.investing.com/news/stock-market-news/diamondback-energy-nears-5-bln-double-eagle-deal--report-5028152,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,investing,2,"Designer Brands svp Mark Haley sells $123,520 in shares",https://www.investing.com/news/insider-trading-news/designer-brands-svp-mark-haley-sells-123520-in-shares-93CH-5028150,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,investing,3,UBS sees Brent hitting $110 as tight supply buffers leave oil vulnerable,https://www.investing.com/news/commodities-news/ubs-sees-brent-hitting-110-as-tight-supply-buffers-leave-oil-vulnerable-5028142,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,seekingalpha,1,Baidu Q3 2026 Earnings Preview,https://seekingalpha.com/news/4672582-baidu-q3-2026-earnings-preview?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,seekingalpha,2,Pictet raises Japan allocation as it looks beyond AI stocks,https://seekingalpha.com/news/4672813-pictet-raises-japan-allocation-as-it-looks-beyond-ai-stocks?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,seekingalpha,3,Bombardier secures 12-jet order from Saudi Arabia’s THC,https://seekingalpha.com/news/4672812-bombardier-secures-12-jet-order-from-saudi-arabia-s-thc?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,moneysavingmom,1,"Week 46: A Peek Into This Past Week (+ what I’m reading, watching, and listening to!)",https://moneysavingmom.com/week-46-a-peek-into-this-past-week-what-im-reading-watching-and-listening-to/,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,savingadvice,1,8 Things People Over 65 Are Paying For That May Already Be Available at No Extra Cost,https://www.savingadvice.com/articles/2026/11/15/10769703_8-things-people-over-65-are-paying-for-that-may-already-be-available-at-no-extra-cost.html,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,feeds11,6,Police ban protests near 10 schools and five universities in Paris,https://www.bbc.co.uk/news/articles/cqm2j0jvep4eo?at_medium=RSS&at_campaign=rss,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,forbes,1,"Today’s Wordle #1976 Hints, Clues And Answer For Monday November 16",https://www.forbes.com/sites/erikkain/2026/11/15/wordle-hints-clues-answer-monday-november-16/,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,w4news,3,"Photos, videos show mammoth waves hitting Bay Area shoreline - SFGATE",https://news.google.com/rss/articles/CBMigAFBVV95cUxQeU9Dd2FMYnJXdlBqOFN1ZnhDRmNKcjRaOERnS3BoaXJtN0V2a1J0enZ3c1pPU0xJVWpwRXdTZTZFN1NJRzZVM2xDYWppU2Z2dXNmREpMMUpkalo2V0ZZbFJLRW5DSkU3aGNhLXhDdk04U2tjRUhHcTlmQmd3elM5Sw?oc=5,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,w4news,5,Lutnick Pushed to Weaken Chip Rules That Overlap With His Family Business - The New York Times,https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNmlDTE1xbEwwa3NwamwyY09wSXoyaE1UZ2prNXJ3OHItZGZlTkdneDB5RjRtRGQwal8tWERrRUhxSGJFa3F1SkFIV2ZpdHd1MWFqZDV1R0ZweHlWbXB4TW56UDBuaUdRYWhzZndoc3R1a0RscWxSZTRoSUlYMDI2TGxEeC1TTUF1bFJoZ1lwOHYxcERFRkUwa01ETFpJNF9LT3p3R1Yybmk5aDUtWDJ3M3NUZWpESnVJU1RGZ25Hdnl0d1U?oc=5,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,w4news,7,"Duffy blames Congress, prior administrations for air travel halt, chaos - The Washington Post",https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVlQzU3hQUWZCUmRhaEFhLWJqU29tT2Z0c3lwV1RQckNNVVkxV0gxdW0wOER1Vmp6UklNb09rQUcxT2d2ZDNhT0RjTERxaTFXTHEtZGJodk5oY3NyVTFDRE1QdXZkckFoMV9rTGFubjRGODhUS2VUaDBMcV9GbmFNU3Y1VUlWZEJ0WS0zaVVxcWEwc0Q0TVNOMHpKM1FrbDFPYzFTN2gtU1V0V2dBNndTTnhQZXA4WXJEQkxoSjYwanNPUQ?oc=5,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,w4news,8,Two planes collide on taxiway at Miami airport one day after national grounding - The Guardian,https://news.google.com/rss/articles/CBMiggFBVV95cUxNbnlqY0IwelVhVGQxdGoxSjVjOVNVRDY2NjJDZFVad1Z5Q05ORWlXX1QzVUZseWhnVVBNOGRBX0dqbWVtOFJTTFVGdko5ZnlETEhMVU41R1VWTm1Fek8tLV85bDVOdXh4Nng1TzJucEZ4ZEVlR2Q0Vk15dnZSUU5UYW9R?oc=5,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,w4news,9,"Sen. Bill Cassidy slams RFK Jr. for ""series of failures"" as Health Secretary - CBS News",https://news.google.com/rss/articles/CBMijwFBVV95cUxQRUc2djFCNUJLUFUxSE9OVEdFaTJXekJTNElLUVU4dEVVNFdPNThfZzlLQUtWTUFuaGdEaTM1SG1ucDFScVFhUlk1aE9VUURUbTFuNUVRMmdpVWt0ZkJmVDIybnNnQ3hZZGJGQ0NlSjlGY2VOU0NIS080cWpMTXVWeEVQUktqUW1FYnFtLVM4MA?oc=5,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,w4news,14,Leidy Rimaycuna: Pope Leo XIV is close to his people - Vatican News,https://news.google.com/rss/articles/CBMirwFBVV95cUxNUl9kRUlXS2ZXMmJjQ1Y3WUF2OUFFRUthSlhVZWpPdnlmZUJDemRRb0NfZkgza0I4N2VzT0ZJQ0VYMVNvUWliVG4zbGRlVzVraFFFaG9KNW1Wb3lzV3NiYWpBNVJBenhTenpEMGpHUXpRLWdlVDE0SXhYVC1qclZDeURrSWlIbnBsUGhDYWFuMldNamlyTmlRUkdmLVZPWDNkZUVJTGRFZTFrYTFZYnhB?oc=5,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,timesofindia,4,Alabama mother regains parental rights to older child; court upholds termination for younger child,https://timesofindia.indiatimes.com/world/us/an-alabama-mother-lost-parental-rights-to-her-two-young-children-one-living-with-a-great-aunt-and-the-other-with-a-foster-family-on-november-13-appeals-judges-reversed-the-decision-for-her-older-child-only/articleshow/135829855.cms,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,timesofindia,5,San Francisco 'Painted Lady' bought for $1.85 million now listed for $5.595 million,https://timesofindia.indiatimes.com/world/us/a-san-francisco-couple-bought-a-neglected-victorian-for-1-85-million-in-2022-rebuilt-its-interiors-and-added-a-separate-apartment-the-restored-painted-lady-is-now-asking-5-595-million/articleshow/135810607.cms,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,1stwebdesigner,1,Two Adobe AI Features Worth a Web Designer’s Attention,https://1stwebdesigner.com/adobe-creative-cloud-ai-workflow/,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,1stwebdesigner,2,"What Is SKILL.md, and Why Should Web Designers Care?",https://1stwebdesigner.com/what-is-skill-md-and-why-should-web-designers-care/,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,1stwebdesigner,3,The CSS Upgrade Your AI Coding Assistant Needs,https://1stwebdesigner.com/css-dev/,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,1stwebdesigner,4,Retro CSS Text Effect: A Step-by-Step Tutorial,https://1stwebdesigner.com/retro-css-text-effect/,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,1stwebdesigner,5,Conducting UX Surveys: A Practical Guide,https://1stwebdesigner.com/practical-guide-conducting-ux-surveys/,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,1stwebdesigner,6,Minimizing User Decision Fatigue in Web Design,https://1stwebdesigner.com/minimizing-decision-fatigue-web-design/,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,1stwebdesigner,7,Making an Underwater CSS Text Effect,https://1stwebdesigner.com/underwater-css-text-effect/,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,1stwebdesigner,8,How to Limit Post Revisions in WordPress,https://1stwebdesigner.com/limit-post-revisions-wordpress/,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,1stwebdesigner,9,How to Optimize UX Design for Screen Readers,https://1stwebdesigner.com/how-to-optimize-ux-design-for-screen-readers/,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,1stwebdesigner,10,WordPress Dashboard: Removing Unwanted Widgets,https://1stwebdesigner.com/wordpress-dashboard-remove-widgets/,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,levelup,1,Inside the GPU: A Complete Guide for AI and Machine Learning Engineers,https://levelup.gitconnected.com/inside-the-gpu-a-complete-guide-for-ai-and-machine-learning-engineers-ca9c3c144d80?source=rss----5517fd7b58a6---4,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,levelup,2,Fusing Tiny 3B LLMs to Rival Claude Opus 5.5 Quality,https://levelup.gitconnected.com/fusing-tiny-3b-llms-to-rival-claude-opus-5-5-quality-08aea4077e8f?source=rss----5517fd7b58a6---4,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,levelup,3,The new core skills: agentic engineering at Granola,https://levelup.gitconnected.com/the-new-core-skills-agentic-engineering-at-granola-a3b2bc2e9384?source=rss----5517fd7b58a6---4,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,levelup,4,"Build Your Own RAG System: Architecture, Code, and What to Watch For",https://levelup.gitconnected.com/build-your-own-rag-system-architecture-code-and-what-to-watch-for-1d85c7f2ff1a?source=rss----5517fd7b58a6---4,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,levelup,5,Async Foundations: tokio and .await in Rust for Agents,https://levelup.gitconnected.com/async-foundations-tokio-and-await-in-rust-for-agents-a0aa98f58666?source=rss----5517fd7b58a6---4,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,levelup,6,"Agentic AI Attacks: When the Adversary Is an Agent Too, Part 8.2",https://levelup.gitconnected.com/agentic-ai-attacks-when-the-adversary-is-an-agent-too-part-8-2-4dee5add7181?source=rss----5517fd7b58a6---4,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,levelup,7,The Hidden Reason AI Agents Fail After Five Minutes,https://levelup.gitconnected.com/the-hidden-reason-ai-agents-fail-after-five-minutes-eb6aac79d0b2?source=rss----5517fd7b58a6---4,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,levelup,8,Discord’s 290 MB Rust App Is Real. The Reason Isn’t Rust.,https://levelup.gitconnected.com/discords-290-mb-rust-app-is-real-the-reason-isn-t-rust-793e6684af6c?source=rss----5517fd7b58a6---4,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,levelup,9,"An Avocado, a Microphone, and a Different Way to Work With Codex",https://levelup.gitconnected.com/an-avocado-a-microphone-and-a-different-way-to-work-with-codex-0c88b980f8d7?source=rss----5517fd7b58a6---4,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,levelup,10,Building a Deep-Search Agent with the Claude Agent SDK — Part 2,https://levelup.gitconnected.com/building-a-deep-search-agent-with-the-claude-agent-sdk-part-2-fd7a103741be?source=rss----5517fd7b58a6---4,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,webdesignerdepot,1,AI Is Killing the CAPTCHA—and the Irony Is Perfect,https://webdesignerdepot.com/ai-is-killing-the-captcha-and-the-irony-is-perfect/,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,webdesignerdepot,2,Some of the World’s “Best” Websites Are Actually Terrible,https://webdesignerdepot.com/some-of-the-worlds-best-websites-are-actually-terrible/,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,webdesignerdepot,3,STRG Review: Can It Make Cloud Storage Costs More Predictable?,https://webdesignerdepot.com/strg-review-can-it-make-cloud-storage-costs-more-predictable/,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,webdesignerdepot,4,"AI Was Coming for Your Design Job. Turns Out, It Might Just Be the Intern",https://webdesignerdepot.com/ai-was-coming-for-your-design-job-turns-out-it-might-just-be-the-intern/,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,webdesignerdepot,5,The “Rage Click” Manifesto: Is Your Design Making People Angry?,https://webdesignerdepot.com/the-rage-click-manifesto-is-your-design-making-people-angry/,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,webdesignerdepot,6,“Is Web Development Still Worth Learning in 2026?” Reddit Had Opinions,https://webdesignerdepot.com/is-web-development-still-worth-learning-in-2026-reddit-had-opinions/,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,webdesignerdepot,7,30 Google Secrets You’ll Wish You Knew Years Ago,https://webdesignerdepot.com/30-google-secrets-youll-wish-you-knew-years-ago/,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,webdesignerdepot,8,15 Reddit Scandals That Changed the Internet Forever,https://webdesignerdepot.com/15-reddit-scandals-that-changed-the-internet-forever/,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,webdesignerdepot,9,5 Creative Type Foundries You Should Know About,https://webdesignerdepot.com/5-creative-type-foundries-you-should-know-about/,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,webdesignerdepot,10,She Taught the Macintosh to Smile,https://webdesignerdepot.com/she-taught-the-macintosh-to-smile/,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,webdesignerdepot,11,The Death of the Portfolio (And What to Do Before You’re Left Behind),https://webdesignerdepot.com/the-death-of-the-portfolio-and-what-to-do-before-youre-left-behind/,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,webdesignerdepot,12,Web Design Schools Have a Giant YouTube University Problem — And AI Just Made It Worse,https://webdesignerdepot.com/web-design-schools-have-a-giant-youtube-university-problem-and-ai-just-made-it-worse/,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,webdesignerdepot,13,Web Designers Love Dark Mode Toggles. Users Might Not Care.,https://webdesignerdepot.com/web-designers-love-dark-mode-toggles-users-might-not-care/,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,webdesignerdepot,14,Turn Any Photo Into Retro ASCII Art in Seconds,https://webdesignerdepot.com/turn-any-photo-into-retro-ascii-art-in-seconds/,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,webdesignerdepot,15,How the Prompt Box is Swallowing Website Interfaces Whole,https://webdesignerdepot.com/how-the-prompt-box-is-swallowing-website-interfaces-whole/,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic,1,"Not Equal Sign (≠, !=, !==): Meaning and How to Type It",https://markodenic.com/not-equal-sign/,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic,2,var vs let vs const in JavaScript: What’s the Difference?,https://markodenic.com/var-let-const/,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic,3,What Is Coding? A Plain-English Guide for Beginners,https://markodenic.com/what-is-coding/,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic,4,"HTTP Methods: GET, POST, PUT, PATCH and DELETE Explained",https://markodenic.com/http-methods/,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic,5,"CSS aspect-ratio: Responsive Boxes, Images and Videos",https://markodenic.com/css-aspect-ratio/,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic,6,HTML mailto and tel Links: Email and Phone Links Explained,https://markodenic.com/mailto-link/,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic,7,"CSS linear-gradient(): Syntax, Angles and Examples",https://markodenic.com/css-linear-gradient/,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic,8,"CSS Underline: Style, Offset, Thickness and Remove It",https://markodenic.com/css-underline/,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic,9,17 Business Ideas for Web Developers,https://markodenic.com/business-ideas-for-web-developers/,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic,10,How to Make a Triangle in CSS (3 Ways),https://markodenic.com/css-triangle/,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic2,1,Show users exactly what the AI changed before they accept it,https://markodenic.tech/show-users-exactly-what-the-ai-changed-before-they-accept-it/,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic2,2,Make your stats count up with zero JavaScript,https://markodenic.tech/make-your-stats-count-up-with-zero-javascript/,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic2,3,Your AI chat scrolls wrong. Fix it in 4 lines of CSS,https://markodenic.tech/your-ai-chat-scrolls-wrong-fix-it-in-4-lines-of-css/,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic2,4,Highlight search matches without touching the DOM,https://markodenic.tech/highlight-search-matches-without-touching-the-dom/,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic2,5,Your articles need a “Copy for AI” button,https://markodenic.tech/your-articles-need-a-copy-for-ai-button/,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic2,6,Stream AI answers word by word in 15 lines,https://markodenic.tech/stream-ai-answers-word-by-word-in-15-lines/,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic2,7,Let AI agents use your site with 3 HTML attributes,https://markodenic.tech/let-ai-agents-use-your-site-with-3-html-attributes/,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic2,8,Skeleton loaders in pure CSS,https://markodenic.tech/skeleton-loaders-in-pure-css/,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic2,9,Skip the CSV export library: 12 lines of vanilla JS,https://markodenic.tech/export-any-table-to-csv-in-12-lines/,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,markodenic2,10,A tag input that feels like a real product,https://markodenic.tech/a-tag-input-that-feels-like-a-real-product/,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,dxsrc,1,dxsrc’s Global RSS Feed Is Now a Paid Feature,https://dxsrc.org/posts/2025/frontend-dogma-rss-feed/,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,wdrl,1,"Edition 313: Native URL parse check, HTML popovers, and native loading states in JavaScript.",https://wdrl.info/archive/313,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,wdrl,2,"Edition 312: Modern CSS isn’t always easy, DOM efficiency, and how the room sounds right now.",https://wdrl.info/archive/312,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,wdrl,3,"Edition 311: People-first leadership, Scoped CSS and Grid View Transitions",https://wdrl.info/archive/311,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,wdrl,4,"Edition 310: 4-day Work Weeks, Awesome CSS, Image Performance, and Type-safe APIs.",https://wdrl.info/archive/310,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,wdrl,5,"Edition 309: CSS Layer Resets, Backlog refinement, extending ElementInternals, and cancelled fetch requests",https://wdrl.info/archive/309,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,wdrl,6,"Edition 308: Mostly CSS, MPAs, and seeing Time and Gifts",https://wdrl.info/archive/308,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,wdrl,7,"Edition 307: Test Selectors in CSS, image() functions, readable typo, and speeding up JavaScript libraries.",https://wdrl.info/archive/307,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,wdrl,8,"Edition 306: Icon-Quiz, Dynamic viewports, and natural input design.",https://wdrl.info/archive/306,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,wdrl,9,"Edition 305: Free, Independent and hand-made. That’s the Internet we like.",https://wdrl.info/archive/305,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,wdrl,10,"Edition 304: New CSS, an unplugged life, and new Open Source challenges.",https://wdrl.info/archive/304,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,wdrl,11,"Edition 303: Container query lab, default exports, disabled browser features and Openring.",https://wdrl.info/archive/303,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,wdrl,12,"Edition 302: Digital accessibility, learning modern CSS, UI tricks, serving images the right way, and proper waiting in JavaScript.",https://wdrl.info/archive/302,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,wdrl,13,"Edition 301: CSS on fire, custom maps, text experience and testing",https://wdrl.info/archive/301,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,wdrl,14,Edition 300: Threehundred and the web still evolves fast,https://wdrl.info/archive/300,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,wdrl,15,"Edition 299: Parent selectors, JS concepts, Custom Elements, debugging page reloads and too smart SPAs",https://wdrl.info/archive/299,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bytebytego,1,LAST CALL FOR ENROLLMENT: AI Engineering Fundamentals,https://blog.bytebytego.com/p/last-call-for-enrollment-ai-engineering,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bytebytego,2,EP233: Kubernetes Explained for Busy Engineers,https://blog.bytebytego.com/p/ep233-kubernetes-explained-for-busy,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bytebytego,3,Free Live Masterclass: Building AI Agents That Work in the Real World,https://blog.bytebytego.com/p/free-live-masterclass-building-ai,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bytebytego,4,Top Types of Hidden Coupling and How to Deal With Them,https://blog.bytebytego.com/p/top-types-of-hidden-coupling-and,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bytebytego,5,LAST CALL FOR ENROLLMENT: Build Production Grade AI Systems,https://blog.bytebytego.com/p/last-call-for-enrollment-build-production,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bytebytego,6,The Roundup by ByteByteGo,https://blog.bytebytego.com/p/the-roundup-by-bytebytego,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bytebytego,7,How GitHub Used AI to Port Copilot From TypeScript to Rust in Record Time,https://blog.bytebytego.com/p/how-github-used-ai-to-port-copilot,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bytebytego,8,"How LinkedIn Uses AI to Review 40,000 Pull Requests a Week",https://blog.bytebytego.com/p/how-linkedin-uses-ai-to-review-40000,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bytebytego,9,EP232: 6 Frequently Used Orchestration Frameworks in an AI system,https://blog.bytebytego.com/p/ep232-6-frequently-used-orchestration,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bytebytego,10,The Hidden Work Behind Every Database Request,https://blog.bytebytego.com/p/the-hidden-work-behind-every-database,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bytebytego,11,How Anthropic Redesigned Source Control,https://blog.bytebytego.com/p/how-anthropic-redesigned-source-control,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bytebytego,12,How Netflix Uses AI Agents for Performance Engineering,https://blog.bytebytego.com/p/how-netflix-uses-ai-agents-for-performance,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bytebytego,13,How Nvidia's New Nemotron Model Works,https://blog.bytebytego.com/p/how-nvidias-new-nemotron-model-works,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bytebytego,14,EP231: AI Terms You Need to Know,https://blog.bytebytego.com/p/ep231-ai-terms-you-need-to-know,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bytebytego,15,Data Movement Strategies In System Design,https://blog.bytebytego.com/p/data-movement-strategies-in-system,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bigtechnology,1,The Jensen Huang Honeypot Fallout: What Happens Next,https://www.bigtechnology.com/p/the-jensen-huang-honeypot-fallout,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bigtechnology,2,"OpenAI: ChatGPT Search Is About 20% of Google’s, 250 Million People Speak With ChatGPT, and Chat Is Merging With Work",https://www.bigtechnology.com/p/openai-chatgpt-search-is-about-20,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bigtechnology,3,Why Are We All Just Waiting For The Inevitable AI-Driven Catastrophe To Happen?,https://www.bigtechnology.com/p/why-are-we-all-just-waiting-for-the,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bigtechnology,4,Why AI Hackers Still Fall for Simple Traps,https://www.bigtechnology.com/p/why-ai-hackers-still-fall-for-simple,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bigtechnology,5,The Big Technology Guide To: Enterprise AI,https://www.bigtechnology.com/p/the-big-technology-guide-to-enterprise,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bigtechnology,6,Far from RSI? Compute Shortages? Google CEO Sundar Pichai’s View Of AI’s Trajectory,https://www.bigtechnology.com/p/far-from-rsi-compute-shortages-google,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bigtechnology,7,"Sundar Pichai: Google’s Frontier Imperative, Compute Scarcity Dilemmas, Future AI Products and Businesses",https://www.bigtechnology.com/p/sundar-pichai-googles-frontier-imperative,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bigtechnology,8,Rivian CEO: Robotics Is Progressing Much Faster Than You Think,https://www.bigtechnology.com/p/rivian-ceo-robotics-is-progressing,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bigtechnology,9,Can AI Keep Growing Exponentially? SemiAnalysis Makes the Case,https://www.bigtechnology.com/p/can-ai-keep-growing-exponentially,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bigtechnology,10,The Key Anthropic Numbers You Need To Know Ahead Of Its IPO,https://www.bigtechnology.com/p/the-key-anthropic-numbers-you-need,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bigtechnology,11,Anthropic’s IPO and Our Collective Leap Of Faith,https://www.bigtechnology.com/p/anthropics-ipo-and-our-collective,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bigtechnology,12,Here’s Everything OpenAI’s Bots (And Others) Have Hacked Or Considered Hacking,https://www.bigtechnology.com/p/heres-everything-openais-bots-and,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bigtechnology,13,"What I Got Wrong About Meta’s Muse, And The Deeper Threat To Frontier AI",https://www.bigtechnology.com/p/what-i-got-wrong-about-metas-muse,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bigtechnology,14,YouTube CEO Neal Mohan: Why We’re Betting On AI And Not Afraid Of It,https://www.bigtechnology.com/p/youtube-ceo-neal-mohan-why-were-betting,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,bigtechnology,15,It’s Time to Bring Some Sanity to the AI Risk Conversation,https://www.bigtechnology.com/p/its-time-to-bring-some-sanity-to,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,oneusefulthing,1,Fable 5.2 and Jagged AGI,https://www.oneusefulthing.org/p/fable-52-and-jagged-agi,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,oneusefulthing,2,30 Months on the Exponential (in Charts),https://www.oneusefulthing.org/p/30-months-on-the-exponential-in-charts,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,oneusefulthing,3,The Dot and the Swarm,https://www.oneusefulthing.org/p/the-dot-and-the-swarm,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,oneusefulthing,4,The Overhang,https://www.oneusefulthing.org/p/the-overhang,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,oneusefulthing,5,Agency and Agents,https://www.oneusefulthing.org/p/agency-and-agents,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,oneusefulthing,6,An opinionated guide to which AI to use to do stuff,https://www.oneusefulthing.org/p/an-opinionated-guide-to-which-ai-b22,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,oneusefulthing,7,The twilight of the chatbots,https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,oneusefulthing,8,What it feels like to work with Mythos,https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,oneusefulthing,9,Co-Existence and the End of Co-Intelligence,https://www.oneusefulthing.org/p/co-existence-and-the-end-of-co-intelligence,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,oneusefulthing,10,Choosing to Stay Human,https://www.oneusefulthing.org/p/choosing-to-stay-human,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,oneusefulthing,11,Sign of the future: GPT-5.5,https://www.oneusefulthing.org/p/sign-of-the-future-gpt-55,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,oneusefulthing,12,Claude Dispatch and the Power of Interfaces,https://www.oneusefulthing.org/p/claude-dispatch-and-the-power-of,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,oneusefulthing,13,The Shape of the Thing,https://www.oneusefulthing.org/p/the-shape-of-the-thing,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,oneusefulthing,14,A Guide to Which AI to Use in the Agentic Era,https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,oneusefulthing,15,Management as AI superpower,https://www.oneusefulthing.org/p/management-as-ai-superpower,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,sequence,1,The Sequence Radar - Issue #972: Last Week in AI: The Invisible Hand Wore a Leather Jacket,https://thesequence.substack.com/p/the-sequence-radar-issue-972-last,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,sequence,2,The Sequence Robotics - Issue #971: Robots Should Learn on the Job,https://thesequence.substack.com/p/the-sequence-robotics-issue-971-robots,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,sequence,3,The Sequence Opinion - Issue #970: The Neocloud Financing Squeeze,https://thesequence.substack.com/p/the-sequence-opinion-issue-970-the,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,sequence,4,"The Sequence Learning Loop - Issue #969: Last Week in AI: Security Agents, Custom Models, and Editable Video",https://thesequence.substack.com/p/the-sequence-learning-loop-issue-b13,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,sequence,5,The Sequence Knowledge - Issue #968: Learning RSI: Mathematics as a Laboratory for Recursive Improvement,https://thesequence.substack.com/p/the-sequence-knowledge-issue-968,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,sequence,6,The Sequence Radar - Issue #967: Last Week in AI: The Models Got Smarter. The Money Got Nervous.,https://thesequence.substack.com/p/the-sequence-radar-issue-967-last,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,sequence,7,The Sequence Opinion - Issue #966: The Forward Curve of Intelligence,https://thesequence.substack.com/p/the-sequence-opinion-issue-966-the,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,sequence,8,The Sequence Learning Loop - Issue #965: Gemini and Timestral Take on Longer Horizons,https://thesequence.substack.com/p/the-sequence-learning-loop-issue-bfe,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,sequence,9,The Sequence Knowledge - Issue #964: Learning RSI: How Models Generate Their Own Learning Curricula,https://thesequence.substack.com/p/the-sequence-knowledge-issue-964,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,sequence,10,The Sequence Radar - Issue #963: This Week in AI: The Future Has a Payment Schedule,https://thesequence.substack.com/p/the-sequence-radar-issue-963-this,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,sequence,11,The Sequence Robotics - Issue #962: Rhoda AI and Robots That Predict Their Next Move,https://thesequence.substack.com/p/the-sequence-robotics-issue-962-rhoda,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,sequence,12,The Sequence Opinion - Issue #961: The AI Credit Crunch,https://thesequence.substack.com/p/the-sequence-opinion-issue-961-the,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,sequence,13,The Sequence Learning Loop - Issue #960: Last Week in AI Infrastructure,https://thesequence.substack.com/p/the-sequence-learning-loop-issue-a23,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,sequence,14,The Sequence Knowledge - Issue #959: Learning RSI: How Models Learn to Direct Their Own Updates,https://thesequence.substack.com/p/the-sequence-knowledge-issue-959,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,sequence,15,"The Sequence Radar - Issue #958: Last Week in AI: Cheap Intelligence, Expensive Ambitions",https://thesequence.substack.com/p/the-sequence-radar-issue-958-last,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,latentspace,1,[AINews] The No AI Slop Manifesto,https://latent.space/p/ainews-the-no-ai-slop-manifesto/,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,latentspace,2,[AINews] Jensen Huang resigns after 33 years leading NVIDIA,https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,latentspace,3,"AI Ambition: ArtCraft Cloned Photoshop and Now Wants to ""Rebuild Everything""",https://latent.space/p/artcraft/,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,latentspace,4,[AINews] D-Day (Decision Models Day),https://latent.space/p/ainews-d-day-decision-models-day/,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,latentspace,5,The Jev Revolution: What Engineers Are Already Building with System One Models,https://latent.space/p/jev-revolution/,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,latentspace,6,"[AINews] Mercor $750m Series D at $20B valuation, $3B run rate",https://latent.space/p/ainews-mercor-750m-series-d-at-20b-valuation-3b-run-rate/,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,latentspace,7,AI Engineer Code Summit: OpenAI on New Ways of Working With Codex,https://latent.space/p/codex-work/,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,latentspace,8,"Designing for Agents — Zeno Rocha, Resend",https://latent.space/p/resend/,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,latentspace,9,"NaiveAI Promises 2,100 Tokens per Second. How Well Does It Code?",https://latent.space/p/naiveai/,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,latentspace,10,[AINews] Fable 5.2 retakes World #1 LLM spot as $ANT IPO roadshow begins,https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,latentspace,11,What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team,https://latent.space/p/handshake/,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,latentspace,12,"How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",https://latent.space/p/cs146s/,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,latentspace,13,"[One Million AI Engineer Special] How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",https://latent.space/p/one_million_ai_engineer_special_how_stanford_teaches_ai-native_engineering_mihail_eric_monaco/,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,latentspace,14,[AINews] Anthropic IPO: Whither Now?,https://latent.space/p/ainews-anthropic-ipo-whither-now/,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,latentspace,15,"Controlling Biology - Fabian Theis, Helmholtz Munich",https://latent.space/p/controlling-biology-fabian-theis-helmholtz-munich/,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aisnakeoil,1,The missing quadrant in responses to AI,https://www.normaltech.ai/p/the-missing-quadrant-in-responses,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aisnakeoil,2,New paper: Emerging trends in AI agent evaluation,https://www.normaltech.ai/p/new-paper-emerging-trends-in-ai-agent,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aisnakeoil,3,Steering AI Beyond Automation,https://www.normaltech.ai/p/steering-ai-beyond-automation,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aisnakeoil,4,A big-tent or small-tent AI safety movement?,https://www.normaltech.ai/p/a-big-tent-or-small-tent-ai-safety,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aisnakeoil,5,AI existential risk probabilities are (still) too unreliable to inform policy,https://www.normaltech.ai/p/p-doom,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aisnakeoil,6,The AI-as-Normal-Technology view of loss-of-control incidents,https://www.normaltech.ai/p/the-ai-as-normal-technology-view,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aisnakeoil,7,AI agents can't yet do open-ended AI research,https://www.normaltech.ai/p/ai-agents-cant-yet-do-open-ended,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aisnakeoil,8,What will be left for us to work on?,https://www.normaltech.ai/p/what-will-be-left-for-us-to-work,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aisnakeoil,9,Up the Stack: How AI’s Escape From the Commodity Trap Risks Enterprise Lock-in,https://www.normaltech.ai/p/up-the-stack-how-ais-escape-from,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aisnakeoil,10,"Why AI hasn’t replaced software engineers, and won’t",https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aisnakeoil,11,Did Google’s AI agents really build an operating system for $916?,https://www.normaltech.ai/p/did-googles-ai-agents-really-build,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aisnakeoil,12,Do AI Risks Require Extraordinary Government Intervention?,https://www.normaltech.ai/p/do-ai-risks-require-extraordinary,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aisnakeoil,13,Open-world evaluations for measuring frontier AI capabilities,https://www.normaltech.ai/p/open-world-evaluations-for-measuring,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aisnakeoil,14,New Paper: Towards a science of AI agent reliability,https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aisnakeoil,15,AI Won’t Automatically Make Legal Services Cheaper,https://www.normaltech.ai/p/ai-wont-automatically-make-legal,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,garymarcus,1,What could possibly go wrong? Nationwide FAA Ground Stop edition,https://garymarcus.substack.com/p/what-could-possibly-go-wrong-nationwide,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,garymarcus,2,The great Generative AI unraveling,https://garymarcus.substack.com/p/the-great-generative-ai-unraveling,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,garymarcus,3,Jensen Huang resigns.,https://garymarcus.substack.com/p/jensen-huang-resigns,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,garymarcus,4,"Breaking: Eli Lilly CEO becomes latest to push back on Dario Amodei’s ludicrous, Elizabeth Holmes-like medical claims",https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,garymarcus,5,Jensen is reportedly about to get fired,https://garymarcus.substack.com/p/jensen-is-reportedly-about-to-get,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,garymarcus,6,Just say no to Anthropic’s IPO,https://garymarcus.substack.com/p/just-say-no-to-anthropics-ipo,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,garymarcus,7,Jensen is cooked,https://garymarcus.substack.com/p/jensen-is-cooked,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,garymarcus,8,The Huang Affair: What did they know and when did they know it?,https://garymarcus.substack.com/p/the-huang-affair-what-did-they-know,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,garymarcus,9,The markets dropped $2.5 trillion yesterday. What happens next?,https://garymarcus.substack.com/p/the-markets-dropped-25-trillion-yesterday,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,garymarcus,10,Breaking: Mayhem in the market 🫧,https://garymarcus.substack.com/p/breaking-mayhem-in-the-market,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,garymarcus,11,Report from the Vatican,https://garymarcus.substack.com/p/report-from-the-vatican,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,garymarcus,12,What Anthropic left out of their draft S-1,https://garymarcus.substack.com/p/what-anthropic-left-out-of-their,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,garymarcus,13,Generative AI’s make-or-break week?,https://garymarcus.substack.com/p/ais-make-or-break-week,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,garymarcus,14,Will Generative AI do more harm than good?,https://garymarcus.substack.com/p/will-generative-ai-do-more-harm-than,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,garymarcus,15,All the king’s horses and all the king’s men haven’t been able to put CoreWeave back together again,https://garymarcus.substack.com/p/all-the-kings-horses-and-all-the,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,newcomer,1,"Nvidia Crises, Anthropic IPO & Off-the-Charts Demand Have the AI World in a Tizzy",https://www.newcomer.co/p/nvidia-crises-anthropic-ipo-and-off,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,newcomer,2,The AI 100: The 100 Private Companies Defining the Age of AI,https://www.newcomer.co/p/the-ai-100,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,newcomer,3,"CEOs of Perplexity, Applied Intuition, Flapping Airplanes, Vercel & General Catalyst Join Cerebral Valley Speaker Lineup Ahead of Our Summit Next Week",https://www.newcomer.co/p/ceos-of-perplexity-applied-intuition,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,newcomer,4,The Blue Tsunami Is a Victory for Democracy — and a Wake-Up Call for Silicon Valley,https://www.newcomer.co/p/the-blue-tsunami-is-a-victory-for,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,newcomer,5,Introducing Emergent: The Founder-Generated Startup List,https://www.newcomer.co/p/emergent-2026,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,newcomer,6,"EXCLUSIVE: Sequoia Parts Ways With Half-a-Dozen Partners, Shuts European Office Amid AI-Era Reorg",https://www.newcomer.co/p/exclusive-sequoia-parts-ways-with,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,newcomer,7,Latest Fundraising Efforts Show OpenAI & Anthropic on Divergent Paths,https://www.newcomer.co/p/latest-fundraising-efforts-show-openai,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,newcomer,8,Compute Crunch? Startups Aim to Financialize It,https://www.newcomer.co/p/compute-crunch-startups-aim-to-financialize,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,newcomer,9,Big Tech Defied Tradition With a Risky Bet on Trump. It’s Not Looking Like a Winner.,https://www.newcomer.co/p/big-tech-defied-tradition-with-a,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,newcomer,10,EXCLUSIVE: Former Sequoia India Partners Launch Mettle Capital with $350 million Fund,https://www.newcomer.co/p/exclusive-former-sequoia-india-partners,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,newcomer,11,"The New Space Race: Startups Press Ahead on ‘Orbital Infrastructure,’ Test Feasibility of Data Centers",https://www.newcomer.co/p/the-new-space-race-startups-press,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,newcomer,12,Anthropic’s S-1: Key Data Points & Fun Facts for Venture Investors,https://www.newcomer.co/p/anthropics-s-1-key-data-points-and,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,newcomer,13,Anthropic’s Pending IPO Has Silicon Valley on the Edge of Its Seat,https://www.newcomer.co/p/anthropics-pending-ipo-has-silicon,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,newcomer,14,"The Story of Anthropic’s Cap Table: VCs Showed Up Late to the Party, Toting All the Cash They Could Wrangle",https://www.newcomer.co/p/the-story-of-anthropics-cap-table,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,newcomer,15,"Emmett Shear + Founders of Simile, SambaNova & WorkOS to Lead Discussions at CVAI Summit",https://www.newcomer.co/p/emmett-shear-founders-of-simile-sambanova,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,exponentialview,1,🔮 The $22 billion question about AI self-improvement #610,https://www.exponentialview.co/p/ev-610,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,exponentialview,2,🔮 What does it cost to make a worker?,https://www.exponentialview.co/p/what-does-it-cost-to-make-a-worker,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,exponentialview,3,🔥 Jensen Huang and the future of the AI boom,https://www.exponentialview.co/p/jensen-huang-and-the-future-of-the,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,exponentialview,4,Madness and mayhem,https://www.exponentialview.co/p/madness-and-mayhem,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,exponentialview,5,📈 AI-exposed workers wait a month longer for a job,https://www.exponentialview.co/p/monday-data-09-11-2026,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,exponentialview,6,🔮 The people vs tech; the Europoor; forgotten Creole++ #609,https://www.exponentialview.co/p/ev-609,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,exponentialview,7,"What to build next? With Bill Gross, IdeaLab.ai",https://www.exponentialview.co/p/what-to-build-next-with-bill-gross,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,exponentialview,8,🔮 Don’t waste a good backlash,https://www.exponentialview.co/p/dont-waste-a-good-backlash,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,exponentialview,9,👀 EV Unfiltered – opening my sketchbook,https://www.exponentialview.co/p/ev-unfiltered-opening-my-sketchbook,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,exponentialview,10,📈 Political ads turn against data centers,https://www.exponentialview.co/p/political-ads-turn-against-data-centers,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,exponentialview,11,"🔮 39 charts on Anthropic, one-person biotech firm & cheap solar #608",https://www.exponentialview.co/p/ev-608,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,exponentialview,12,🤖 Microsoft is making room for machines,https://www.exponentialview.co/p/microsoft-is-making-room-for-machines,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,exponentialview,13,🔮 Anthropic’s S-1 in charts,https://www.exponentialview.co/p/anthropics-s-1-in-charts,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,exponentialview,14,📈 Monday data: For science the bottleneck isn’t intelligence,https://www.exponentialview.co/p/monday-data-for-science-the-bottleneck,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,exponentialview,15,"🔮 The internet under attack, AGI compression & the next oil shock that never will be... #607",https://www.exponentialview.co/p/ev-607,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,codingchallenges,1,Coding Challenge #146 - Kanban,https://codingchallenges.substack.com/p/coding-challenge-146-kanban,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,codingchallenges,2,Coding Challenge #145 - Disk Analyser,https://codingchallenges.substack.com/p/coding-challenge-145-disk-analyser,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,codingchallenges,3,Coding Challenge #144 - Matrix Falling Text Generator,https://codingchallenges.substack.com/p/coding-challenge-144-matrix-falling,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,codingchallenges,4,Coding Challenge #142 - Software KVM,https://codingchallenges.substack.com/p/coding-challenge-142-software-kvm,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,codingchallenges,5,Coding Challenge #141 - Tail,https://codingchallenges.substack.com/p/coding-challenge-141-tail,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,codingchallenges,6,Coding Challenge #140 - Bluetooth Proximity Finder,https://codingchallenges.substack.com/p/coding-challenge-140-bluetooth-proximity,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,codingchallenges,7,Coding Challenge #139 - Code Context MCP Server,https://codingchallenges.substack.com/p/coding-challenge-139-code-context,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,codingchallenges,8,Coding Challenge #138 - DMB,https://codingchallenges.substack.com/p/coding-challenge-138-dmb,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,codingchallenges,9,Coding Challenge #137 - fzf,https://codingchallenges.substack.com/p/coding-challenge-137-fzf,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,codingchallenges,10,Coding Challenge #136 - Hyperfine,https://codingchallenges.substack.com/p/coding-challenge-136-hyperfine,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,codingchallenges,11,Coding Challenge #135 - Voice Dictation App,https://codingchallenges.substack.com/p/coding-challenge-135-voice-dictation,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,codingchallenges,12,Coding Challenge #134 - Agentic Engineering Graph,https://codingchallenges.substack.com/p/coding-challenge-134-agentic-engineering,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,codingchallenges,13,Coding Challenge #133 - Particle Playground,https://codingchallenges.substack.com/p/coding-challenge-133-particle-playground,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,codingchallenges,14,"Just Four Days Left To Enter The Ready, Spec, Ship Hackathon!",https://codingchallenges.substack.com/p/just-four-days-left-to-enter-the,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,codingchallenges,15,Coding Challenge #131 - Automated Code Review Agent,https://codingchallenges.substack.com/p/coding-challenge-131-automated-code,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,devinterrupted,1,All the code review is a stage,https://devinterrupted.substack.com/p/all-the-code-review-is-a-stage,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,devinterrupted,2,Balancing AI innovation with compliance and governance | Capital One’s Abhijit Bose,https://devinterrupted.substack.com/p/balancing-ai-innovation-with-compliance,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,devinterrupted,3,The software factory isn't a prompt,https://devinterrupted.substack.com/p/the-software-factory-isnt-a-prompt,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,devinterrupted,4,"Bet on research, not on vibes | Together AI’s Dan Fu",https://devinterrupted.substack.com/p/bet-on-research-not-on-vibes-together,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,devinterrupted,5,Do the models you use have an AI bill of materials? | CIQ’s Gregory Kurtzer,https://devinterrupted.substack.com/p/do-the-models-you-use-have-an-ai,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,devinterrupted,6,Multiplayer AI will revolutionize the way we work | OpenClaw Foundation’s Vincent Koc,https://devinterrupted.substack.com/p/multiplayer-ai-will-revolutionize,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,devinterrupted,7,Your agents should ask the factory first,https://devinterrupted.substack.com/p/your-agents-should-ask-the-factory,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,devinterrupted,8,Building the software factory from the spec up | LinearB's Ariel Illouz & Ofer Affias,https://devinterrupted.substack.com/p/building-the-software-factory-from,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,devinterrupted,9,The hardest parts about agents can’t fit on a billboard,https://devinterrupted.substack.com/p/the-hardest-parts-about-agents-cant,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,devinterrupted,10,"A neutral home for MCP, A2A, goose, and more | AAIF co-founder Manik Surtani",https://devinterrupted.substack.com/p/a-neutral-home-for-mcp-a2a-goose,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,devinterrupted,11,"Why AI made code review the new bottleneck, and the metric that spotted it | Newsela's Dee Wilcox",https://devinterrupted.substack.com/p/why-ai-made-code-review-the-new-bottleneck,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,devinterrupted,12,They're building the factory as much as the product,https://devinterrupted.substack.com/p/theyre-building-the-factory-as-much,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,devinterrupted,13,"Securing tomorrow’s git forge, so we can reimagine everything else | Entire's Thomas Dohmke & Apiiro's Idan Plotnik",https://devinterrupted.substack.com/p/securing-tomorrows-git-forge-so-we,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,devinterrupted,14,"Treat your data pipelines like code, because your agents already do | MotherDuck's Jordan Tigani",https://devinterrupted.substack.com/p/treat-your-data-pipelines-like-code,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,devinterrupted,15,Your agents are starving! Airbyte’s Michel Tricot on the data ingestion crisis,https://devinterrupted.substack.com/p/your-agents-are-starving-airbytes,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,chinai,1,ChinAI #381: China’s Venture Capital Market is Defying Common Sense,https://chinai.substack.com/p/chinai-381-chinas-venture-capital,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,chinai,2,ChinAI #380: It’s getting more and more difficult to make money,https://chinai.substack.com/p/chinai-380-its-getting-more-and-more,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,chinai,3,ChinAI #379: “Chinese AI only makes trash TV?”,https://chinai.substack.com/p/chinai-379-chinese-ai-can-only-make,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,chinai,4,ChinAI #378: China’s Two-day Weekend Defenders,https://chinai.substack.com/p/chinai-378-chinas-two-day-weekend,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,chinai,5,ChinAI #377: American Data Center Hegemony - the Center-Satellite Structure,https://chinai.substack.com/p/chinai-377-us-dominance-of-the-center,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,chinai,6,ChinAI #376: Around the Horn (27th episode),https://chinai.substack.com/p/chinai-376-around-the-horn-27th-episode,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,chinai,7,ChinAI #375: Critiquing Anthropic’s Variant of Pacing the Frontier,https://chinai.substack.com/p/chinai-375-critiquing-anthropics,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,chinai,8,ChinAI #374: China’s first AI-generated longform TV series,https://chinai.substack.com/p/chinai-374-chinas-first-ai-generated,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,chinai,9,ChinAI #373: The OpenClaw Hype and Overestimating China’s Diffusion Advantage,https://chinai.substack.com/p/chinai-373-the-openclaw-hype-and,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,chinai,10,ChinAI #372: China’s Overhyped Embodied AI Sector,https://chinai.substack.com/p/chinai-372-chinas-overhyped-embodied,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,chinai,11,"ChinAI #371: Quiet Goodbyes, Switching Platforms, and Confrontation: Reactions to China's AI Companion Regulations",https://chinai.substack.com/p/chinai-371-a-quiet-goodbye-adaptation,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,chinai,12,ChinAI #370: Why is there No Star AI Company from Guangdong?,https://chinai.substack.com/p/chinai-370-why-is-there-no-star-ai,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,chinai,13,"ChinAI #369: My Boss Wants Me to Run Kimi K3, What Should I Do?",https://chinai.substack.com/p/chinai-369-my-boss-wants-me-to-run,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,chinai,14,ChinAI #368: The Affordable Luxury of Kimi K3,https://chinai.substack.com/p/chinai-368-the-affordable-luxury,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,chinai,15,ChinAI #367: Claude Code's Future in China?,https://chinai.substack.com/p/chinai-367-claude-codes-future-in,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aheadofai,1,Understanding Positional Embeddings in Modern LLMs,https://magazine.sebastianraschka.com/p/understanding-positional-embeddings,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aheadofai,2,Building Reasoning Models from the Ground Up: A Full Video Course,https://magazine.sebastianraschka.com/p/building-reasoning-models,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aheadofai,3,Language Models for Text Classification: From Bag-of-Words to Jev,https://magazine.sebastianraschka.com/p/classifier-history-and-jev,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aheadofai,4,"GPT-6 Astra, Looped Transformers, and Hidden Reasoning",https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aheadofai,5,How Claude Watermarks AI-Generated Text,https://magazine.sebastianraschka.com/p/claude-watermarking,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aheadofai,6,Building an AI Text Detector From Scratch,https://magazine.sebastianraschka.com/p/ai-detector-from-scratch,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aheadofai,7,Controlling Reasoning Effort in LLMs,https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aheadofai,8,Using Local Coding Agents,https://magazine.sebastianraschka.com/p/using-local-coding-agents,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aheadofai,9,LLM Research Papers: The 2026 List (January to May),https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aheadofai,10,"Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention",https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aheadofai,11,My Workflow for Understanding LLM Architectures,https://magazine.sebastianraschka.com/p/workflow-for-understanding-llms,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aheadofai,12,Components of A Coding Agent,https://magazine.sebastianraschka.com/p/components-of-a-coding-agent,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aheadofai,13,A Visual Guide to Attention Variants in Modern LLMs,https://magazine.sebastianraschka.com/p/visual-attention-variants,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aheadofai,14,A Dream of Spring for Open-Weight LLMs: 10 Architectures from Jan-Feb 2026,https://magazine.sebastianraschka.com/p/a-dream-of-spring-for-open-weight,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,aheadofai,15,Categories of Inference-Time Scaling for Improved LLM Reasoning,https://magazine.sebastianraschka.com/p/categories-of-inference-time-scaling,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,interconnected,1,So What's Next With…,https://interconnected.blog/so-whats-next-with/,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,interconnected,2,($) Q3 2026 Performance Update: Suitably Paranoid,https://interconnected.blog/q3-2026-performance-update-suitably-paranoid/,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,interconnected,3,From Trees to Granite,https://interconnected.blog/from-trees-to-granite/,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,interconnected,4,There and Back Again: Tracking Global AI Talent Flow,https://interconnected.blog/there-and-back-again-tracking-global-ai-talent-flow/,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,interconnected,5,Don’t Sleep on the BRICS AI Open Source Community,https://interconnected.blog/dont-sleep-on-the-brics-ai-open-source-community/,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,interconnected,6,While I Was Gone…,https://interconnected.blog/while-i-was-gone/,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,interconnected,7,Fear of AI Bubble Could Pop The Bubble,https://interconnected.blog/fear-of-ai-bubble-could-pop-the-bubble/,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,interconnected,8,"Kimi’s Tightrope: Openness and Revenue at Once, but New US Ban Risks",https://interconnected.blog/kimis-tightrope-openness-and-revenue-at-once-but-new-us-ban-risks/,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,interconnected,9,H1 2026 Performance Update: Getting Worse Before Getting Better,https://interconnected.blog/h1-2026-performance-update-getting-worse-before-getting-better/,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,interconnected,10,The Great American Tech “Crackdown” Is Looking Like China’s,https://interconnected.blog/the-great-american-tech-crackdown-is-looking-like-chinas/,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,interconnected,11,Banning Open Source AI Would Be A Mistake,https://interconnected.blog/banning-open-source-ai-would-be-a-mistake/,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,interconnected,12,Why Do (Some) Chinese AI Labs Distill?,https://interconnected.blog/why-do-some-chinese-ai-labs-distill/,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,interconnected,13,($) Berkshire Hathaway: AI Tourist or Energy Veteran?,https://interconnected.blog/berkshire-hathaway-ai-tourist-or-energy-veteran/,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,interconnected,14,Watching the Super Bowl of US-China Nerds,https://interconnected.blog/watching-the-super-bowl-of-us-china-nerds/,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,interconnected,15,"ChinAI Mood: April 26 - May 4, 2026",https://interconnected.blog/chinai-mood-april-26-may-4-2026/,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,theengineeringmanager,1,One-way and two-way doors,https://www.theengineeringmanager.com/growth/one-way-and-two-way-doors/,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,theengineeringmanager,2,Put a name on it,https://www.theengineeringmanager.com/growth/put-a-name-on-it/,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,theengineeringmanager,3,Nobody needs a human router,https://www.theengineeringmanager.com/growth/nobody-needs-a-human-router/,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,theengineeringmanager,4,Landing the plane,https://www.theengineeringmanager.com/growth/landing-the-plane/,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,theengineeringmanager,5,"Code Yellow, Code Red",https://www.theengineeringmanager.com/growth/code-yellow-code-red/,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,theengineeringmanager,6,The right kind of AI sceptic,https://www.theengineeringmanager.com/uncategorized/the-right-kind-of-ai-sceptic/,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,theengineeringmanager,7,Earn your scepticism,https://www.theengineeringmanager.com/growth/earn-your-scepticism/,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,theengineeringmanager,8,Distilling leadership wisdom,https://www.theengineeringmanager.com/growth/distilling-leadership-wisdom/,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,theengineeringmanager,9,Who will be the senior engineers of 2035?,https://www.theengineeringmanager.com/current-affairs/who-will-be-the-senior-engineers-of-2035/,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,theengineeringmanager,10,Slow down to speed up,https://www.theengineeringmanager.com/growth/slow-down-to-speed-up/,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,ludicity,1,AI Mania Is Eviscerating Global Decision-Making,https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,ludicity,2,The Worlds Left To Conquer,https://ludic.mataroa.blog/blog/the-worlds-left-to-conquer/,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,ludicity,3,"Merry Christmas, Ya Filthy Animals (2025)",https://ludic.mataroa.blog/blog/merry-christmas-ya-filthy-animals-2025/,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,ludicity,4,I Am Out Of Data Hell,https://ludic.mataroa.blog/blog/i-am-out-of-data-hell/,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,ludicity,5,Contra Ptacek's Terrible Article On AI,https://ludic.mataroa.blog/blog/contra-ptaceks-terrible-article-on-ai/,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,ludicity,6,The Narrative Fallacy,https://ludic.mataroa.blog/blog/the-narrative-fallacy/,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,ludicity,7,Get Weird And Disappear,https://ludic.mataroa.blog/blog/get-weird-and-disappear/,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,ludicity,8,Ludic's Guide To Getting Software Engineering Jobs,https://ludic.mataroa.blog/blog/ludics-guide-to-getting-software-engineering-jobs/,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,ludicity,9,Brainwash An Executive Today!,https://ludic.mataroa.blog/blog/brainwash-an-executive-today/,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,ludicity,10,"Merry Christmas, Ya Filthy Animals (2024)",https://ludic.mataroa.blog/blog/merry-christmas-ya-filthy-animals-2024/,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,ludicity,11,Why I Will Always Be Angry About Software Engineering,https://ludic.mataroa.blog/blog/why-i-will-always-be-angry-about-software-engineering/,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,ludicity,12,Get Me Out Of Data Hell,https://ludic.mataroa.blog/blog/get-me-out-of-data-hell/,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,ludicity,13,Tossed Salads And Scrumbled Eggs,https://ludic.mataroa.blog/blog/tossed-salads-and-scrumbled-eggs/,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,ludicity,14,Quitting My Job For The Way Of Pain,https://ludic.mataroa.blog/blog/quitting-my-job-for-the-way-of-pain/,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,ludicity,15,Kneel Before The Emperor Of Mecatol Rex,https://ludic.mataroa.blog/blog/kneel-before-the-emperor-of-mecatol-rex/,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,huyenchip,1,Common pitfalls when building generative AI applications,https://huyenchip.com//2025/01/16/ai-engineering-pitfalls.html,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,huyenchip,2,Agents,https://huyenchip.com//2025/01/07/agents.html,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,huyenchip,3,Building A Generative AI Platform,https://huyenchip.com//2024/07/25/genai-platform.html,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,huyenchip,4,Measuring personal growth,https://huyenchip.com//2024/04/17/personal-growth.html,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,huyenchip,5,What I learned from looking at 900 most popular open source AI tools,https://huyenchip.com//2024/03/14/ai-oss.html,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,huyenchip,6,Predictive Human Preference: From Model Ranking to Model Routing,https://huyenchip.com//2024/02/28/predictive-human-preference.html,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,huyenchip,7,"Generation configurations: temperature, top-k, top-p, and test time compute",https://huyenchip.com//2024/01/16/sampling.html,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,huyenchip,8,Multimodality and Large Multimodal Models (LMMs),https://huyenchip.com//2023/10/10/multimodal.html,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,huyenchip,9,Open challenges in LLM research,https://huyenchip.com//2023/08/16/llm-research-open-challenges.html,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,huyenchip,10,Generative AI Strategy,https://huyenchip.com//2023/06/07/generative-ai-strategy.html,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,gotime,1,That's Go Time!,https://changelog.com/gotime/340,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,gotime,2,Pitching Go in 2025,https://changelog.com/gotime/339,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,gotime,3,Unpop roundup! 2023,https://changelog.com/gotime/338,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,gotime,4,"Crawl, walk & run your way to usable CLIs in Go",https://changelog.com/gotime/337,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,gotime,5,Writing a shell in Go,https://changelog.com/gotime/336,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,gotime,6,AI for Observability,https://changelog.com/gotime/335,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,gotime,7,Unpop roundup! 2022,https://changelog.com/gotime/334,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,gotime,8,Russ Cox on passing the torch,https://changelog.com/gotime/333,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,gotime,9,"""Founder Mode"" at work when you're not a founder",https://changelog.com/gotime/332,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,gotime,10,How I lost my (old) job to AI,https://changelog.com/gotime/331,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,gotime,11,Home automation with Go,https://changelog.com/gotime/330,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,gotime,12,The community of gophers,https://changelog.com/gotime/329,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,gotime,13,⚡ Lightning Talk life ⚡,https://changelog.com/gotime/327,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,gotime,14,Big shoes to fill,https://changelog.com/gotime/326,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,gotime,15,OpenAPI & API design,https://changelog.com/gotime/328,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,jsparty,1,One last party,https://changelog.com/jsparty/350,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,jsparty,2,React: then & now,https://changelog.com/jsparty/349,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,jsparty,3,WYSIWYG,https://changelog.com/jsparty/348,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,jsparty,4,Nine pillars of great Node apps,https://changelog.com/jsparty/347,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,jsparty,5,It's all about documentation,https://changelog.com/jsparty/346,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,jsparty,6,How Vercel thinks about Next.js,https://changelog.com/jsparty/345,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,jsparty,7,Kind of a big deal,https://changelog.com/jsparty/344,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,jsparty,8,Digging through Jerod Santo’s tool box,https://changelog.com/jsparty/343,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,jsparty,9,A great horse to bet on,https://changelog.com/jsparty/342,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,jsparty,10,Create interactive tutorials the easy way,https://changelog.com/jsparty/341,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,jsparty,11,Leveling up JavaScript with Deno 2,https://changelog.com/jsparty/340,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,jsparty,12,It's all about the squiggles,https://changelog.com/jsparty/339,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,jsparty,13,Undirected hyper arrows,https://changelog.com/jsparty/338,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,jsparty,14,Don’t ever use these TypeScript features,https://changelog.com/jsparty/337,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,jsparty,15,When 3rd party JavaScript attacks,https://changelog.com/jsparty/336,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,syntaxfm,1,1055: What the hell is going on with GitHub?,https://syntax.fm/1055,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,syntaxfm,2,1054: Reddit Closing it’s Doors,https://syntax.fm/1054,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,syntaxfm,3,1053: What’s in Our Home Lab,https://syntax.fm/1053,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,syntaxfm,4,1052: Github Universe Keynote Recap,https://syntax.fm/1052,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,syntaxfm,5,1051: Mourning the Death of Code,https://syntax.fm/1051,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,syntaxfm,6,1050 - Everyone Is Hacking Their TV,https://syntax.fm/1050,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,syntaxfm,7,1049: WTF is a Software Factory?,https://syntax.fm/1049,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,syntaxfm,8,1048: Deno Is Dead,https://syntax.fm/1048,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,syntaxfm,9,1047: Adobe has a big problem,https://syntax.fm/1047,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,syntaxfm,10,1046: The Pi Updates are insane,https://syntax.fm/1046,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,syntaxfm,11,1045: Who can actually max out 5 AI subscriptions?,https://syntax.fm/1045,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,syntaxfm,12,1044: Ruby on Rails is Dead,https://syntax.fm/1044,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,syntaxfm,13,1043: I’m Using GPUI For Everything,https://syntax.fm/1043,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,syntaxfm,14,1042: Is the Jev Hype Overblown?,https://syntax.fm/1042,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,syntaxfm,15,1041: What are normies using AI for?,https://syntax.fm/1041,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,corecursive,1,"Random to Whom? Dice, Tetris, and a lunch bet over what random means",https://corecursive.com/random-to-whom/,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,corecursive,2,"The Hutter Prize: Compression, prediction, and the limits of intelligence",https://corecursive.com/the-hutter-prize/,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,corecursive,3,The Bitter Lesson: The history of reinforcement learning,https://corecursive.com/the-bitter-lesson/,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,corecursive,4,The Pre-Training Wall and the Treadmill After It,https://corecursive.com/the-pre-training-wall-and-the-treadmill-after-it/,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,corecursive,5,Story: The Aging Programmer,https://corecursive.com/the-aging-programmer/,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,corecursive,6,From Hacker News to TikTok - How Algorithms Learned to Hook Us,https://corecursive.com/from-hacker-news-to-tiktok/,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,corecursive,7,Notes: The Universal Paperclip Clicker,https://corecursive.com/paperclip-clicker/,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,corecursive,8,"Story: Inside Early Google - Race Conditions, Java Pain, and the Birth of AdWords",https://corecursive.com/inside-early-google/,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,corecursive,9,Story: The Bug He Couldn't Name - A 15-Year Fight Inside One Developer's Mind,https://corecursive.com/anxiety-with-burke-holland/,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,corecursive,10,Story: Godbolt's Rule - When Abstractions Fail,https://corecursive.com/godbolt-rule-matt-godbolt/,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,corecursive,11,Story: Risk Rolls Downhill - The Software Bug That Sent People to Prison,https://corecursive.com/horizon-scandal-with-scott-darlington/,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,corecursive,12,Quick Update,https://corecursive.com/podcast-update-september-2025/,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,corecursive,13,Coding in the Red-Queen Era,https://corecursive.com/red-queen-coding/,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,corecursive,14,"When AI Codes, What's Left for me?",https://corecursive.com/coding-agents/,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,corecursive,15,"Story: Coding Through Chaos : Addiction, Recovery and Acceptance",https://corecursive.com/coding-through-chaos-with-john-walker/,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,talkpython,1,#568: Cloudflare Python Workers,https://talkpython.fm/episodes/show/568/cloudflare-python-workers,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,talkpython,2,#567: Personal AI Agents for Pythonistas,https://talkpython.fm/episodes/show/567/personal-ai-agents-for-pythonistas,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,talkpython,3,#566: State of the art in Python 2026,https://talkpython.fm/episodes/show/566/state-of-the-art-in-python-2026,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,talkpython,4,"#565: Tachyon, Python 3.15's Built-in Sampling Profiler",https://talkpython.fm/episodes/show/565/tachyon-python-3.15s-built-in-sampling-profiler,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,talkpython,5,#564: EVE Online Departs for Python 3,https://talkpython.fm/episodes/show/564/eve-online-departs-for-python-3,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,talkpython,6,#563: Getting Started with Rust as Python Devs,https://talkpython.fm/episodes/show/563/getting-started-with-rust-as-python-devs,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,talkpython,7,#562: DuckLake: The Lakehouse That's Just SQL and Parquet,https://talkpython.fm/episodes/show/562/ducklake-the-lakehouse-thats-just-sql-and-parquet,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,talkpython,8,"#561: TonIO, a Multi-threaded Async Runtime for Python",https://talkpython.fm/episodes/show/561/tonio-a-multi-threaded-async-runtime-for-python,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,talkpython,9,"#560: Building a Research OS: From Django to 30,000 Samples",https://talkpython.fm/episodes/show/560/building-a-research-os-from-django-to-30-000-samples,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,talkpython,10,#559: 12 Things You Should (and Shouldn't) Do in AWS,https://talkpython.fm/episodes/show/559/12-things-you-should-and-shouldnt-do-in-aws,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,talkpython,11,#558: Hyper-Personal Software with Python,https://talkpython.fm/episodes/show/558/hyper-personal-software-with-python,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,talkpython,12,#557: Security of everything at PyCon 2026,https://talkpython.fm/episodes/show/557/security-of-everything-at-pycon-2026,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,talkpython,13,#556: Updates on Django's Async Story,https://talkpython.fm/episodes/show/556/updates-on-djangos-async-story,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,talkpython,14,#555: Marimo Pair - A Canvas for Agent + Developers Collaboration,https://talkpython.fm/episodes/show/555/marimo-pair-a-canvas-for-agent-developers-collaboration,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,talkpython,15,#554: Trustworthy AI in Healthcare and Longevity,https://talkpython.fm/episodes/show/554/trustworthy-ai-in-healthcare-and-longevity,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,pythonbytes,1,#504 Who turned the GIL back on?,https://pythonbytes.fm/episodes/show/504/who-turned-the-gil-back-on,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,pythonbytes,2,#503 It’s not 85% HTML,https://pythonbytes.fm/episodes/show/503/it-s-not-85-html,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,pythonbytes,3,#502 Introducing chameleon-rs,https://pythonbytes.fm/episodes/show/502/introducing-chameleon-rs,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,pythonbytes,4,#501 A Nod to Sir-Mix-Alot,https://pythonbytes.fm/episodes/show/501/a-nod-to-sir-mix-alot,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,pythonbytes,5,#500 Episode 500!,https://pythonbytes.fm/episodes/show/500/episode-500,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,pythonbytes,6,#499 So many questions??,https://pythonbytes.fm/episodes/show/499/so-many-questions,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,pythonbytes,7,#498 A Tiny Episode,https://pythonbytes.fm/episodes/show/498/a-tiny-episode,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,pythonbytes,8,#497 Faster than light profiling,https://pythonbytes.fm/episodes/show/497/faster-than-light-profiling,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,pythonbytes,9,#496 A lake house in Seattle,https://pythonbytes.fm/episodes/show/496/a-lake-house-in-seattle,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,pythonbytes,10,#495 Banned,https://pythonbytes.fm/episodes/show/495/banned,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,pythonbytes,11,#494 Python Wrapture,https://pythonbytes.fm/episodes/show/494/python-wrapture,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,pythonbytes,12,#493 CalVer and LTS,https://pythonbytes.fm/episodes/show/493/calver-and-lts,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,pythonbytes,13,#492 Codeberg Puts Head in Sand,https://pythonbytes.fm/episodes/show/492/codeberg-puts-head-in-sand,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,pythonbytes,14,#491 Feeling Judged,https://pythonbytes.fm/episodes/show/491/feeling-judged,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,pythonbytes,15,#490 It’s a vibe coding party,https://pythonbytes.fm/episodes/show/490/it-s-a-vibe-coding-party,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,undertheradar,1,332: Relaunching Developing Perspective,http://relay.fm/radar/332,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,undertheradar,2,331: Reflection,http://relay.fm/radar/331,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,undertheradar,3,330: Engaging with Reddit,http://relay.fm/radar/330,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,undertheradar,4,329: Zero Utilization on Your Brain,http://relay.fm/radar/329,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,undertheradar,5,328: Five Years of Enough,http://relay.fm/radar/328,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,undertheradar,6,327: Ready for Distribution,http://relay.fm/radar/327,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,undertheradar,7,326: Tree-Planting Features,http://relay.fm/radar/326,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,undertheradar,8,325: Upswing,http://relay.fm/radar/325,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,undertheradar,9,324: Design Despair,http://relay.fm/radar/324,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,undertheradar,10,323: The Tidal Wave,http://relay.fm/radar/323,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,undertheradar,11,322: Requiring iOS 26?,http://relay.fm/radar/322,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,undertheradar,12,321: WWDC 2025 Aftermath,http://relay.fm/radar/321,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,undertheradar,13,320: Before the Barrier,http://relay.fm/radar/320,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,undertheradar,14,319: Unfreezing Your Brain,http://relay.fm/radar/319,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,undertheradar,15,318: The Forgotten Customer,http://relay.fm/radar/318,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,hanselminutes,1,AI Preceptorships with CMU's Dr Michael Hilton and Julia Gao,https://www.hanselminutes.com,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,hanselminutes,2,Changing how Engineering works with Ironclad CTO Sunita Verma,https://www.hanselminutes.com,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,hanselminutes,3,The Quantum Revolution with Turing Award Winners Charles Bennett and Gilles Brassard,https://www.hanselminutes.com,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,hanselminutes,4,Compile after Class Crossover Episode,https://www.hanselminutes.com,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,hanselminutes,5,"Robots, Nukes, and AI: A Career at the Frontier with Maynard Holliday",https://www.hanselminutes.com,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,hanselminutes,6,Language Model Builder with Felix Rieseberg,https://www.hanselminutes.com,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,hanselminutes,7,AI and the Software Supply Chain with Endor Lab's Varun Badhwar,https://www.hanselminutes.com,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,hanselminutes,8,Stack Overflow for the Agent Era - with VP of Product Alex Lato,https://www.hanselminutes.com,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,hanselminutes,9,Who is left behind when AI moves fast? with Dr. Chinasa T. Okolo,https://www.hanselminutes.com,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,hanselminutes,10,The space between the Commits with Zed and DeltaDB's Nathan Sobo,https://www.hanselminutes.com,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,hanselminutes,11,Braille Is Freedom with Bristol Braille's Ed Rogers,https://www.hanselminutes.com,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,hanselminutes,12,"""Observabilitying"" the Future of Software with Charity Majors",https://www.hanselminutes.com,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,hanselminutes,13,Cloud Commitments Without the Lock-In with Archera's Aran Khanna,https://www.hanselminutes.com,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,hanselminutes,14,How IBM Z Is Modernizing Mainframes with Skyla Loomis,https://www.hanselminutes.com,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,hanselminutes,15,Making opinionated AI tooling decisions with Nimbalyst's Greg Hinkle,https://www.hanselminutes.com,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,kubernetespod,1,"Agent Substrate, with Tim Hockin and Brandon Royal",https://e780d51f-f115-44a6-8252-aed9216bb521.libsyn.com/agent-sandbox-with-tim-hockin-and-brandon-royal,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,kubernetespod,2,"Kubernetes 1.37, with Dipesh Rawat",https://e780d51f-f115-44a6-8252-aed9216bb521.libsyn.com/kubernetes-137-with-dipesh-rawat,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,kubernetespod,3,"Measuring Sustainability via Project Kepler, with Niki Manoledaki",https://e780d51f-f115-44a6-8252-aed9216bb521.libsyn.com/measuring-sustainability-via-project-kepler-with-niki-manoledaki,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,kubernetespod,4,"Navigating AI Guidelines in Kubernetes, with Kat Cosgrove and Natali Vlatko",https://e780d51f-f115-44a6-8252-aed9216bb521.libsyn.com/navigating-ai-guidelines-in-kubernetes-with-kat-cosgrove-and-natali-vlatko,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,kubernetespod,5,"Agent Sandbox with Lovable, with Jonathan Grahl",https://e780d51f-f115-44a6-8252-aed9216bb521.libsyn.com/agent-sandbox-with-lovable-with-jonathan-grahl,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,kubernetespod,6,"Kubernetes 1.36, with Ryota Sawada",https://e780d51f-f115-44a6-8252-aed9216bb521.libsyn.com/kubernetes-136-with-ryota-sawada,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,kubernetespod,7,Kubernetes at Uber with Lucy Sweet,https://e780d51f-f115-44a6-8252-aed9216bb521.libsyn.com/kubernetes-at-uber-with-lucy-sweet,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,kubernetespod,8,"GKE Turns 10 Hackathon, with Amie Wei",https://e780d51f-f115-44a6-8252-aed9216bb521.libsyn.com/gke-turns-10-hackathon-with-amie-wei,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,kubernetespod,9,"Kubernetes 1.35: Timbernetes, with Drew Hagen",https://e780d51f-f115-44a6-8252-aed9216bb521.libsyn.com/kubernetes-135-timbernetes-with-drew-hagen,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,kubernetespod,10,"Kubernetes AI Conformance, with Janet Kuo",https://e780d51f-f115-44a6-8252-aed9216bb521.libsyn.com/kubernetes-ai-conformance-with-janet-kuo,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,kubernetespod,11,"GKE 10 Year Anniversary, with Gari Singh",https://e780d51f-f115-44a6-8252-aed9216bb521.libsyn.com/gke-10-year-anniversary-with-gari-singh,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,kubernetespod,12,"GKE 10 years and SIG Networking, With Antonio Ojea",https://e780d51f-f115-44a6-8252-aed9216bb521.libsyn.com/gke-10-years-and-sig-networking-with-antonio-ojea,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,kubernetespod,13,"Kubernetes SIG Docs, With Shannon Kularathna",https://e780d51f-f115-44a6-8252-aed9216bb521.libsyn.com/kubernetes-sig-docs-with-shannon-kularathna,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,kubernetespod,14,"Kubernetes 1.34 Of Wind & Will, With Vyom Yadav",https://e780d51f-f115-44a6-8252-aed9216bb521.libsyn.com/kubernetes-134-of-wind-will-with-vyom-yadav,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,kubernetespod,15,"LLM-D, with Clayton Coleman and Rob Shaw",https://e780d51f-f115-44a6-8252-aed9216bb521.libsyn.com/llm-d-with-clayton-coleman-and-rob-shaw,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,thestackpod,1,"Agentic search doesn't find pages, it assembles answers",https://feeds.simplecast.com/XA_851k3,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,thestackpod,2,Customer support is the gnarliest AI problem,https://feeds.simplecast.com/XA_851k3,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,thestackpod,3,Welcome to life in the chip age,https://feeds.simplecast.com/XA_851k3,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,thestackpod,4,"Oh, your agents need OAuth2, too",https://feeds.simplecast.com/XA_851k3,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,thestackpod,5,It’s ok that computers are (sometimes) better than us,https://feeds.simplecast.com/XA_851k3,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,thestackpod,6,"Elevators, toasters, and the birth of Java",https://feeds.simplecast.com/XA_851k3,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,thestackpod,7,Rumors of the SaaS demise are greatly exaggerated,https://feeds.simplecast.com/XA_851k3,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,thestackpod,8,Don't forget about the UI for AI,https://feeds.simplecast.com/XA_851k3,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,thestackpod,9,"AI says you’re right, formal methods say you’re wrong",https://feeds.simplecast.com/XA_851k3,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,thestackpod,10,Keep calm and call clone with Rust,https://feeds.simplecast.com/XA_851k3,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,thestackpod,11,Taking a look under your agent’s hood,https://feeds.simplecast.com/XA_851k3,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,thestackpod,12,Tales from the 2026 Developer Survey results,https://feeds.simplecast.com/XA_851k3,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,thestackpod,13,Constraints that make developers faster,https://feeds.simplecast.com/XA_851k3,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,thestackpod,14,Your phone is AI’s newest hardware,https://feeds.simplecast.com/XA_851k3,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,thestackpod,15,Professional skepticism is a dev’s best skill,https://feeds.simplecast.com/XA_851k3,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,freecodecamppod,1,"#217 Stanford's youngest instructor on InfoSec, AI, catching cheaters - Rachel Fernandez",https://podcast.freecodecamp.org/217-stanfords-youngest-instructor-on-infosec-ai-catching-cheaters-rachel-fernandez,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,freecodecamppod,2,#216 How to friction-max your learning with software engineer Jessica Rose,https://podcast.freecodecamp.org/216-how-to-friction-max-your-learning-with-software-engineer-jessica-rose,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,freecodecamppod,3,#215 How to learn programming and CS in the AI hype era – interview with dev and prof Mark Mahoney,https://podcast.freecodecamp.org/215-how-to-learn-programming-and-cs-in-the-ai-hype-era-interview-with-dev-and-prof-mark-mahoney,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,freecodecamppod,4,"#214 Lessons from 15,031 hours of coding live on Twitch with Chris Griffing",https://podcast.freecodecamp.org/214-lessons-from-15031-hours-of-coding-live-on-twitch-with-chris-griffing,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,freecodecamppod,5,#213 What happens when the model CAN'T fix it? Interview with software engineer Landon Gray,https://podcast.freecodecamp.org/213-what-happens-when-the-model-cant-fix-it-interview-with-software-engineer-landon-gray,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,freecodecamppod,6,#212 The world still needs people who care - CodePen founder Chris Coyier interview,https://podcast.freecodecamp.org/212-the-world-still-needs-people-who-care-codepen-founder-chris-coyier-interview,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,freecodecamppod,7,#211 How to Land Freelance Clients with Small Business Whisperer Luke Ciciliano (Developer Interview),https://podcast.freecodecamp.org/211-how-to-land-freelance-clients-with-small-business-whisperer-luke-ciciliano-developer-interview,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,freecodecamppod,8,#210 There are 2 kinds of devs. One of them is screwed. Justin Searls interview,https://podcast.freecodecamp.org/210-there-are-2-kinds-of-devs-one-of-them-is-screwed-justin-searls-interview,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,freecodecamppod,9,#209 The ultimate dev skill is Integration Testing – Interview with Internet of Bugs,https://podcast.freecodecamp.org/209-the-ultimate-dev-skill-is-integration-testing-interview-with-internet-of-bugs,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,freecodecamppod,10,#208 The three paths AI could take from here - Shawn Wang SWYX interview,https://podcast.freecodecamp.org/208-the-three-paths-ai-could-take-from-here-shawn-wang-swyx-interview,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,freecodecamppod,11,#207 Why maintaining a codebase is so damn hard – with OhMyZSH creator Robby Russell,https://podcast.freecodecamp.org/207-why-maintaining-a-codebase-is-so-damn-hard-with-ohmyzsh-creator-robby-russell,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,freecodecamppod,12,#206 Tips from a 20-year developer veteran turned consultancy founder – Tapas Adhikary interview,https://podcast.freecodecamp.org/206-tips-from-a-20-year-developer-veteran-turned-consultancy-founder-tapas-adhikary-interview,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,freecodecamppod,13,#205 How to stay curious as a dev in the AI hype era with Sumit Saha,https://podcast.freecodecamp.org/205-how-to-stay-curious-as-a-dev-in-the-ai-hype-era-with-sumit-saha,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,freecodecamppod,14,#204 The Most Important Skills Going Forward with CTO + Homebrew Maintainer Mike McQuaid,https://podcast.freecodecamp.org/204-the-most-important-skills-going-forward-with-cto-homebrew-maintainer-mike-mcquaid,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,freecodecamppod,15,#203 First developer job at age 38 with lawyer turned software engineer Zubin Pratap,https://podcast.freecodecamp.org/203-first-developer-job-at-age-38-with-lawyer-turned-software-engineer-zubin-pratap,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,changelogships,1,Shipped It!,https://changelog.com/shipit/135,15,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,changelogships,2,AI IRL at Honeycomb,https://changelog.com/shipit/134,14,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,changelogships,3,CI/CDagger,https://changelog.com/shipit/133,13,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,changelogships,4,Public safety Kubernetes,https://changelog.com/shipit/132,12,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,changelogships,5,Abstractions and implementations,https://changelog.com/shipit/131,11,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,changelogships,6,Hosting Hachyderm,https://changelog.com/shipit/130,10,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,changelogships,7,News & whitepapers,https://changelog.com/shipit/129,9,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,changelogships,8,Infosec & OpenTelemetry,https://changelog.com/shipit/128,8,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,changelogships,9,Your customer is Amazon.com,https://changelog.com/shipit/127,7,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,changelogships,10,Kubernetes is an anti-platform,https://changelog.com/shipit/126,6,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,changelogships,11,TIME to get SERIESous about databases,https://changelog.com/shipit/125,5,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,changelogships,12,You suck at programming,https://changelog.com/shipit/124,4,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,changelogships,13,"A learning mindset, starting with COBOL",https://changelog.com/shipit/123,3,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,changelogships,14,Linux distros,https://changelog.com/shipit/122,2,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
+2026-11-15,changelogships,15,Building Rawkode Academy,https://changelog.com/shipit/121,1,feed rank,0,,,2026-11-15T22:26:24.442603+00:00
