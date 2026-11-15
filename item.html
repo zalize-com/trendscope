@@ -70,6 +70,11 @@ function parseCSV(txt) {
 }
 
 let RECS = null;
+let LIVE = new Set();
+fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
+  for (const its of Object.values(snap.items)) for (const i of its) LIVE.add(i.url);
+  if (RECS) paint();
+}).catch(() => {});
 fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
   const rows = parseCSV(txt);
   const hdr = rows[0];
@@ -108,8 +113,9 @@ function paint() {
     const mx = peak || 1;
     const spark = `<svg width="${days*10}" height="18" viewBox="0 0 ${days*10} 18" style="vertical-align:-3px;margin-left:8px">${
       rs.map((r,i) => `<rect x="${i*10}" y="${18-Math.round(14*(+r.score||0)/mx)}" width="8" height="${Math.max(1,Math.round(14*(+r.score||0)/mx))}" fill="var(--accent)"/>`).join("")}</svg>`;
+    const live = LIVE.has(it.url) ? ` <span style="color:var(--green);font-size:11px" title="on today's board">● live</span>` : "";
     return `<div class="card">
-      <b><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a></b>
+      <b><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a>${live}</b>
       <div class="stats">
         <div class="stat"><b>${days}</b><small>days on board</small></div>
         <div class="stat"><b>#${best}</b><small>best rank</small></div>
