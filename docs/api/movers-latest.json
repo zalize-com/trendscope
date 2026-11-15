@@ -1,13 +1,13 @@
 {
  "a": "2026-11-14",
  "b": "2026-11-15",
- "generated": "2026-11-15 08:27 UTC",
+ "generated": "2026-11-15 08:32 UTC",
  "entered": [
   {
    "title": "SpaceX catches the Starship to end Flight 15",
    "url": "https://www.spacex.com/launches/starship-flight-15",
    "source": "hackernews",
-   "score": 1131,
+   "score": 1135,
    "metric": "points",
    "rank": 1
   },
@@ -15,7 +15,7 @@
    "title": "Eynnzerr/TelemetryCleaner",
    "url": "https://github.com/Eynnzerr/TelemetryCleaner",
    "source": "github_trending",
-   "score": 750,
+   "score": 753,
    "metric": "stars",
    "rank": 15
   },
@@ -31,7 +31,7 @@
    "title": "How did Woz write the Apple 1 BASIC before building the computer?",
    "url": "https://retrocomputing.stackexchange.com/questions/17957",
    "source": "hackernews",
-   "score": 197,
+   "score": 199,
    "metric": "points",
    "rank": 11
   },
@@ -47,7 +47,7 @@
    "title": "Memory Safety Bugs in Rust Standard Library",
    "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
    "source": "hackernews",
-   "score": 101,
+   "score": 107,
    "metric": "points",
    "rank": 13
   },
@@ -55,7 +55,7 @@
    "title": "Seagate's new hybrid drive raises some old questions",
    "url": "https://arstechnica.com/gadgets/2026/11/seagate-resurrects-the-ssd-hdd-hybrid-drive/",
    "source": "hackernews",
-   "score": 94,
+   "score": 95,
    "metric": "points",
    "rank": 14
   },
@@ -63,7 +63,7 @@
    "title": "Court denies motion to dismiss DRAM price fixing case",
    "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
    "source": "hackernews",
-   "score": 94,
+   "score": 95,
    "metric": "points",
    "rank": 15
   },
@@ -71,7 +71,7 @@
    "title": "Testing a trash can Faraday cage",
    "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
    "source": "hackernews",
-   "score": 77,
+   "score": 78,
    "metric": "points",
    "rank": 16
   },
@@ -132,6 +132,14 @@
    "rank": 2
   },
   {
+   "title": "Show HN: Turbo-Browser-MCP \u2013 Batch forms, DOM deltas and submit guards for MCP",
+   "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
+   "source": "show_hn",
+   "score": 30,
+   "metric": "points",
+   "rank": 3
+  },
+  {
    "title": "Ask HN: Can anyone name anything new that AI has done?",
    "url": "https://news.ycombinator.com/item?id=50484426",
    "source": "ask_hn",
@@ -140,16 +148,8 @@
    "rank": 5
   },
   {
-   "title": "Show HN: Turbo-Browser-MCP \u2013 Batch forms, DOM deltas and submit guards for MCP",
-   "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
-   "source": "show_hn",
-   "score": 29,
-   "metric": "points",
-   "rank": 3
-  },
-  {
-   "title": "Tulvo",
-   "url": "https://www.producthunt.com/products/tulvo",
+   "title": "collecto.rs",
+   "url": "https://www.producthunt.com/products/collecto-rs",
    "source": "producthunt",
    "score": 20,
    "metric": "feed rank",
@@ -316,6 +316,14 @@
    "score": 5,
    "metric": "points",
    "rank": 6
+  },
+  {
+   "title": "Ask HN: How do you decide when to stick with a project",
+   "url": "https://news.ycombinator.com/item?id=50498484",
+   "source": "ask_hn",
+   "score": 5,
+   "metric": "points",
+   "rank": 7
   }
  ],
  "gainers": [
@@ -323,28 +331,28 @@
    "title": "Lovable apps expose passport details and more than 200K private messages",
    "url": "https://www.crissyfield.de/research/lovable-en/",
    "source": "hackernews",
-   "score": 785,
+   "score": 786,
    "metric": "points",
    "rank": 2,
-   "delta": 434
+   "delta": 435
   },
   {
    "title": "deepseek-ai/chat-demo",
    "url": "https://github.com/deepseek-ai/chat-demo",
    "source": "github_trending",
-   "score": 1922,
+   "score": 1923,
    "metric": "stars",
    "rank": 3,
-   "delta": 220
+   "delta": 221
   },
   {
    "title": "A family tree of software job titles",
    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
    "source": "hackernews",
-   "score": 291,
+   "score": 292,
    "metric": "points",
    "rank": 5,
-   "delta": 211
+   "delta": 212
   },
   {
    "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
@@ -359,19 +367,19 @@
    "title": "KDE: The documentary [video]",
    "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
    "source": "hackernews",
-   "score": 451,
+   "score": 452,
    "metric": "points",
    "rank": 4,
-   "delta": 172
+   "delta": 173
   },
   {
    "title": "adriadam10/mkw-recomp",
    "url": "https://github.com/adriadam10/mkw-recomp",
    "source": "github_trending",
-   "score": 1009,
+   "score": 1010,
    "metric": "stars",
    "rank": 10,
-   "delta": 149
+   "delta": 150
   },
   {
    "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
@@ -413,19 +421,19 @@
    "title": "FrigadeHQ/yogurt",
    "url": "https://github.com/FrigadeHQ/yogurt",
    "source": "github_trending",
-   "score": 1535,
+   "score": 1536,
    "metric": "stars",
    "rank": 5,
-   "delta": 87
+   "delta": 88
   },
   {
    "title": "PyPI's redesigned project pages with clearer security signals are now live",
    "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
    "source": "hackernews",
-   "score": 234,
+   "score": 235,
    "metric": "points",
    "rank": 7,
-   "delta": 82
+   "delta": 83
   },
   {
    "title": "Advancing science and engineering with Antigravity's /teamwork",
@@ -449,19 +457,19 @@
    "title": "JDhruv14/line-art-animation",
    "url": "https://github.com/JDhruv14/line-art-animation",
    "source": "github_trending",
-   "score": 792,
+   "score": 793,
    "metric": "stars",
    "rank": 14,
-   "delta": 50
+   "delta": 51
   },
   {
    "title": "Kianuni/Erosion-CN",
    "url": "https://github.com/Kianuni/Erosion-CN",
    "source": "github_trending",
-   "score": 2092,
+   "score": 2093,
    "metric": "stars",
    "rank": 2,
-   "delta": 40
+   "delta": 41
   },
   {
    "title": "HolyArrs/HolyArrs",
@@ -476,10 +484,10 @@
    "title": "agentes-chat/agentes-chat",
    "url": "https://github.com/agentes-chat/agentes-chat",
    "source": "github_trending",
-   "score": 1426,
+   "score": 1427,
    "metric": "stars",
    "rank": 7,
-   "delta": 36
+   "delta": 37
   },
   {
    "title": "serveroshq/panel",
@@ -535,15 +543,6 @@
    "score": 7,
    "metric": "points",
    "rank": 10,
-   "delta": 0
-  },
-  {
-   "title": "Ask HN: How do you decide when to stick with a project",
-   "url": "https://news.ycombinator.com/item?id=50498484",
-   "source": "ask_hn",
-   "score": 5,
-   "metric": "points",
-   "rank": 12,
    "delta": 0
   },
   {
@@ -679,6 +678,15 @@
    "score": 18,
    "metric": "score",
    "rank": 9,
+   "delta": 4
+  },
+  {
+   "title": "MCP Is Dead Simple. And That's Exactly the Problem",
+   "url": "https://dev.to/sylwia-lask/mcp-is-dead-simple-and-thats-exactly-the-problem-5811",
+   "source": "devto",
+   "score": 161,
+   "metric": "reactions",
+   "rank": 3,
    "delta": 4
   }
  ],

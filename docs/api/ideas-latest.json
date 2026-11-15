@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-15 08:27 UTC",
-  "unique_threads": 62,
+  "generated": "2026-11-15 08:32 UTC",
+  "unique_threads": 63,
   "themes": [
     {
       "theme": "outage",
@@ -12,16 +12,16 @@
           "max_score": 18
         },
         {
-          "url": "https://news.ycombinator.com/item?id=50471668",
-          "title": "Ask HN: Microsoft/Azure Outage?",
-          "days_on_board": 1,
-          "max_score": 402
-        },
-        {
           "url": "https://news.ycombinator.com/item?id=50472411",
           "title": "Tell HN: Major Microsoft Outlook/Exchange Online/Teams Outage in the Americas",
           "days_on_board": 1,
           "max_score": 14
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50471668",
+          "title": "Ask HN: Microsoft/Azure Outage?",
+          "days_on_board": 1,
+          "max_score": 402
         }
       ],
       "score": 434,
@@ -39,14 +39,20 @@
       "theme": "claude",
       "threads": [
         {
+          "url": "https://news.ycombinator.com/item?id=50480936",
+          "title": "Claude OAuth Failures",
+          "days_on_board": 1,
+          "max_score": 28
+        },
+        {
           "url": "https://news.ycombinator.com/item?id=50467233",
           "title": "Claude Code's API billing depends on how often the cache expires",
           "days_on_board": 1,
           "max_score": 6
         },
         {
-          "url": "https://news.ycombinator.com/item?id=50480936",
-          "title": "Claude OAuth Failures",
+          "url": "https://news.ycombinator.com/item?id=50480941",
+          "title": "Claude AI Is Down",
           "days_on_board": 1,
           "max_score": 28
         },
@@ -55,12 +61,6 @@
           "title": "Tell HN: Claude Code Is Down",
           "days_on_board": 1,
           "max_score": 37
-        },
-        {
-          "url": "https://news.ycombinator.com/item?id=50480941",
-          "title": "Claude AI Is Down",
-          "days_on_board": 1,
-          "max_score": 28
         },
         {
           "url": "https://news.ycombinator.com/item?id=50481347",
@@ -84,16 +84,16 @@
       "theme": "google",
       "threads": [
         {
-          "url": "https://news.ycombinator.com/item?id=50491617",
-          "title": "Tell HN: Google Search to start locking down search behind a login wall",
-          "days_on_board": 2,
-          "max_score": 44
-        },
-        {
           "url": "https://news.ycombinator.com/item?id=50455454",
           "title": "The absolute travesty that is Google",
           "days_on_board": 1,
           "max_score": 11
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50491617",
+          "title": "Tell HN: Google Search to start locking down search behind a login wall",
+          "days_on_board": 2,
+          "max_score": 44
         },
         {
           "url": "https://news.ycombinator.com/item?id=50478730",
@@ -117,12 +117,6 @@
       "theme": "human",
       "threads": [
         {
-          "url": "https://news.ycombinator.com/item?id=50421778",
-          "title": "Ask HN: As a human, are you glad the AI bubble is bursting?",
-          "days_on_board": 1,
-          "max_score": 5
-        },
-        {
           "url": "https://news.ycombinator.com/item?id=50453369",
           "title": "Ask HN: Is lack of human imagination now the bottleneck instead of intelligence?",
           "days_on_board": 1,
@@ -133,6 +127,12 @@
           "title": "Ask HN: Do you see a human written book more valuable than an AI written one?",
           "days_on_board": 1,
           "max_score": 9
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50421778",
+          "title": "Ask HN: As a human, are you glad the AI bubble is bursting?",
+          "days_on_board": 1,
+          "max_score": 5
         }
       ],
       "score": 22,

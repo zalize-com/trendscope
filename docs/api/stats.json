@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T08:27:36.854007+00:00",
+ "generated_at": "2026-11-15T08:32:05.622056+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 599,
- "unique_urls": 465,
- "items_in_latest": 230,
- "items_per_day_avg": 66.6,
+ "total_rows": 610,
+ "unique_urls": 476,
+ "items_in_latest": 240,
+ "items_per_day_avg": 67.8,
  "sources": {
   "arstechnica": {
    "rows": 15,
@@ -18,7 +18,7 @@
    "days_active": 1
   },
   "ask_hn": {
-   "rows": 75,
+   "rows": 76,
    "days_active": 8
   },
   "crates": {
@@ -64,6 +64,10 @@
   "techmeme": {
    "rows": 18,
    "days_active": 1
+  },
+  "theverge": {
+   "rows": 10,
+   "days_active": 1
   }
  },
  "all_green_days": 0,
@@ -75,6 +79,10 @@
   {
    "domain": "arstechnica.com",
    "hits": 16
+  },
+  {
+   "domain": "theverge.com",
+   "hits": 12
   },
   {
    "domain": "yro.slashdot.org",
@@ -102,10 +110,6 @@
   },
   {
    "domain": "blog.google",
-   "hits": 3
-  },
-  {
-   "domain": "tech.slashdot.org",
    "hits": 3
   }
  ],
