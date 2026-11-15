@@ -70,13 +70,20 @@ fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
   const days = [...new Set(recs.map(r => r.date))].sort();
   const last7 = new Set(days.slice(-7));
   const wk = recs.filter(r => last7.has(r.date));
+  // per-day per-source max score → heat = score/max (rolling-window metrics like
+  // pypi monthly downloads would otherwise swamp cumulative raw-score ranking)
+  const mx = {};
+  for (const r of wk) {
+    const k = r.date + "|" + r.source;
+    mx[k] = Math.max(mx[k] || 0, +r.score || 0);
+  }
   // aggregate by url (dedup a story appearing across days)
   const byUrl = {};
   for (const r of wk) {
     const k = r.url || r.title;
     const e = byUrl[k] || (byUrl[k] = {title: r.title, url: r.url, source: r.source,
       total: 0, days: new Set(), bestRank: 99, metric: r.metric});
-    e.total += +r.score || 0;
+    e.total += (+r.score || 0) / (mx[r.date + "|" + r.source] || 1);
     e.days.add(r.date);
     e.bestRank = Math.min(e.bestRank, +r.rank || 99);
   }
@@ -87,13 +94,13 @@ fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
   const multi = items.filter(e => e.days.size >= 3)
     .sort((a,b) => b.days.size - a.days.size || b.total - a.total).slice(0, 15);
   document.getElementById("out").innerHTML = `
-    <h2>top of the week — by cumulative score</h2>
+    <h2>top of the week — by cumulative heat</h2>
     <ol>${top.map((e,i) => `<li><span class="sc" style="min-width:16px;text-align:right">${i+1}</span>
       <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span></span>
-      <span class="sc">${fmt(e.total)} ${e.metric}</span></li>`).join("")}</ol>
+      <span class="sc">${e.total.toFixed(1)} heat</span></li>`).join("")}</ol>
     <h2>staying power — on the board 3+ days</h2>
     <ol>${multi.map(e => `<li><span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span></span>
-      <span class="sc"><span class="days">${e.days.size}d</span> · ${fmt(e.total)}</span></li>`).join("")
+      <span class="sc"><span class="days">${e.days.size}d</span> · ${e.total.toFixed(1)} heat</span></li>`).join("")
       || `<li><span id="err">none yet — the dataset needs a few more days</span></li>`}</ol>`;
 }).catch(e => { document.getElementById("err").textContent = "history unavailable"; });
 </script>

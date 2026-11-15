@@ -86,6 +86,17 @@ compare within a source, not across.
 Params: `?n=` rows (5–30), `?s=github_trending` single source,
 `?q=llm` title/tag keyword filter.
 
+## Terminal
+
+```bash
+curl -sL https://zalize-com.github.io/trendscope/trendscope.py | python3 -
+python3 trendscope.py --movers   # what entered/left today
+python3 trendscope.py --week     # top of the last 7 days (heat-normalized)
+```
+
+Zero-dependency stdlib CLI — reads the dataset straight off GitHub Pages.
+`TRENDSCOPE_BASE` points it at a fork/mirror.
+
 ## Quick start
 
 ```bash
