@@ -409,6 +409,48 @@ def fetch_arstechnica(limit=15):
     return out
 
 
+def fetch_theverge(limit=15):
+    """The Verge Atom feed — mainstream tech news, position-scored like techmeme."""
+    print("Fetching The Verge feed...")
+    import re
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.theverge.com/rss/index.xml",
+                headers={"User-Agent": UA, "Accept": "application/atom+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] theverge attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    ns = {"a": "http://www.w3.org/2005/Atom"}
+    entries = root.findall("a:entry", ns)[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("a:title", default="", namespaces=ns) or "").strip()
+        url = ""
+        for l in e.findall("a:link", ns):
+            if l.get("rel", "alternate") == "alternate" and l.get("href"):
+                url = l.get("href")
+                break
+        url = url or "https://www.theverge.com/"
+        desc = " ".join(re.sub(r"<[^>]+>", " ",
+            e.findtext("a:summary", default="", namespaces=ns) or "").split())
+        desc = html.unescape(desc)[:200]
+        author = (e.findtext("a:author/a:name", default="", namespaces=ns) or "").strip() or None
+        tags = [c.get("term") for c in e.findall("a:category", ns) if c.get("term")][:4]
+        out.append(item(
+            "theverge", title, url, len(entries) - i, "feed rank",
+            tags=tags or None,
+            extra={"description": desc, "author": author},
+        ))
+    return out
+
+
 def fetch_arxiv(limit=15):
     """arXiv recent CS submissions — research attention signal, position-scored."""
     print("Fetching arXiv recent...")
@@ -562,6 +604,7 @@ def main():
         "techmeme": fetch_techmeme,
         "slashdot": fetch_slashdot,
         "arstechnica": fetch_arstechnica,
+        "theverge": fetch_theverge,
         "arxiv": fetch_arxiv,
         "github_trending": fetch_github_trending,
         "npm": fetch_npm_downloads,

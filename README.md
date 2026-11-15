@@ -30,6 +30,7 @@ A daily cross-source snapshot of developer attention:
 | Techmeme | editorial tech news | `techmeme.com/feed.xml` |
 | Slashdot | nerd news | `rss.slashdot.org/Slashdot/slashdotMain` |
 | Ars Technica | tech editorial | `feeds.arstechnica.com/arstechnica/index` |
+| The Verge | tech news | `theverge.com/rss/index.xml` |
 | arXiv | latest CS submissions (cs.AI/CL/LG/SE) | `export.arxiv.org/api/query` |
 | npm | weekly downloads (watchlist) | `api.npmjs.org` |
 | PyPI | monthly downloads (watchlist) | `pypistats.org` |

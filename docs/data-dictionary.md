@@ -10,7 +10,7 @@ backward compatibility.
 
 | Field | Type | Description |
 |---|---|---|
-| `source` | string | `hackernews`, `show_hn`, `ask_hn`, `github_trending`, `lobsters`, `devto`, `producthunt`, `techmeme`, `slashdot`, `arstechnica`, `arxiv`, `npm`, `pypi`, `crates` |
+| `source` | string | `hackernews`, `show_hn`, `ask_hn`, `github_trending`, `lobsters`, `devto`, `producthunt`, `techmeme`, `slashdot`, `arstechnica`, `theverge`, `arxiv`, `npm`, `pypi`, `crates` |
 | `rank` | int | Rank within that source for that day (1-based) |
 | `title` | string | Story title, or `owner/name` for repos, package name for registries |
 | `url` | string | Canonical link (provenance) |
