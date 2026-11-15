@@ -59,6 +59,7 @@ A daily cross-source snapshot of developer attention:
 | Susam | long-form hacker blog | `susam.net/feed.xml` |
 | Daniel Haxx | curl author blog | `daniel.haxx.se/blog/feed/` |
 | Julia Evans | zines/dev teaching blog | `jvns.ca/atom.xml` |
+| Andy Wingo | compilers/GC deep dives | `wingolog.org/feed/atom` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
