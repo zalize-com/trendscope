@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:55:29.458319+00:00",
+ "generated_at": "2026-11-15T16:57:17.396040+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 3043,
- "new_items": 2917,
+ "total_items": 3308,
+ "new_items": 3182,
  "by_source": {
   "producthunt": 45,
   "show_hn": 39,
@@ -46,7 +46,20 @@
   "begriffs": 15,
   "benjamin": 15,
   "bertrand": 15,
+  "betterdev": 15,
+  "birchtree": 15,
+  "bitmathblogspot": 15,
+  "bitsofco": 15,
+  "blog1password": 15,
+  "blogalexmaccaw": 15,
+  "blogasciinema": 15,
+  "blogaxlight": 15,
   "blogchromium": 15,
+  "blogcoiled": 15,
+  "blogfrankel": 15,
+  "blogj11y": 15,
+  "blogjanestreet": 15,
+  "blogjessfraz": 15,
   "bobmonsour": 15,
   "brandur": 15,
   "bravenewgeek": 15,
@@ -77,6 +90,7 @@
   "gamasutra": 15,
   "geshan": 15,
   "gitlab_blog": 15,
+  "googleblog": 15,
   "grumpyg": 15,
   "hillel": 15,
   "hynek": 15,
@@ -160,6 +174,11 @@
   "bensmithgall": 10,
   "birklund": 10,
   "bitslog": 10,
+  "blogangular": 10,
+  "blogdomenic": 10,
+  "blogiconfactory": 10,
+  "blogkenanb": 10,
+  "blogkhanacademy": 10,
   "codeflickr": 10,
   "copyconstruct": 10,
   "deliverooengineering": 10,
@@ -219,6 +238,7 @@
   "samwho": 6,
   "tonsky": 6,
   "bendersky": 5,
+  "blogchristianposta": 5,
   "fetchrss": 5,
   "github_trending": 4,
   "thisweek": 4,
@@ -5817,6 +5837,246 @@
    "metric": "feed rank"
   },
   {
+   "title": "Should you minify Lambda code?",
+   "url": "https://betterdev.blog/lambda-code-minification/",
+   "source": "betterdev",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Next-Level Integration Testing with ServerlessSpy",
+   "url": "https://betterdev.blog/integration-testing-with-serverless-spy/",
+   "source": "betterdev",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "25 Good and Bad Serverless (and other) Announcements from re:Invent 2023",
+   "url": "https://betterdev.blog/25-good-and-bad-serverless-announcements-reinvent-2023/",
+   "source": "betterdev",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dynamic Content with Lambda Response Streaming",
+   "url": "https://betterdev.blog/lambda-response-streaming-dynamic-content/",
+   "source": "betterdev",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Forcing Lambda Response Streaming to Flush Content",
+   "url": "https://betterdev.blog/lambda-response-streaming-flush-content/",
+   "source": "betterdev",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a CDK Construct Library: thoughts and tips",
+   "url": "https://betterdev.blog/building-cdk-construct-library/",
+   "source": "betterdev",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AWS Lambda - Node.js vs. Python for serverless",
+   "url": "https://betterdev.blog/aws-lambda-runtime-nodejs-python/",
+   "source": "betterdev",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Understanding Logical IDs in CDK and CloudFormation",
+   "url": "https://betterdev.blog/understanding-logical-ids-in-cdk-and-cloudformation/",
+   "source": "betterdev",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Top 12 Serverless Announcements from re:Invent 2022",
+   "url": "https://betterdev.blog/top-12-serverless-announcements-reinvent-2022/",
+   "source": "betterdev",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to pass AWS Certification exams",
+   "url": "https://betterdev.blog/how-to-pass-aws-certification-exams/",
+   "source": "betterdev",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Running Serverless ML on AWS Lambda",
+   "url": "https://betterdev.blog/serverless-ml-on-aws-lambda/",
+   "source": "betterdev",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Least deployment privilege with CDK Bootstrap",
+   "url": "https://betterdev.blog/cdk-bootstrap-least-deployment-privilege/",
+   "source": "betterdev",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The AWS CDK, Or Why I Stopped Being a CDK Skeptic",
+   "url": "https://betterdev.blog/aws-cdk-pros-and-cons/",
+   "source": "betterdev",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things I Found Interesting #5",
+   "url": "https://betterdev.blog/tifi-5/",
+   "source": "betterdev",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Decision Tree: choose the right AWS messaging service",
+   "url": "https://betterdev.blog/decision-tree-sqs-sns-kinesis-eventbridge/",
+   "source": "betterdev",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "All flights across the US grounded",
+   "url": "https://birchtree.me/blog/all-flights-across-the-us-grounded/",
+   "source": "birchtree",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My mental trick to not buy things",
+   "url": "https://birchtree.me/blog/my-mental-trick-to-not-buy-things/",
+   "source": "birchtree",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The journey and the destination",
+   "url": "https://birchtree.me/blog/the-journey-and-the-destination/",
+   "source": "birchtree",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Micro app 22: Settling In",
+   "url": "https://birchtree.me/blog/micro-app-22-settling-in/",
+   "source": "birchtree",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Workbench is cooking",
+   "url": "https://birchtree.me/blog/workbench-is-cooking/",
+   "source": "birchtree",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "+ I need to enjoy more art",
+   "url": "https://birchtree.me/blog/i-need-to-enjoy-more-art/",
+   "source": "birchtree",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PROLED is here and I'm touching it",
+   "url": "https://birchtree.me/blog/proled-is-here-and-im-touching-it/",
+   "source": "birchtree",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quick test of thermals on the new PROLED MacBook Pro",
+   "url": "https://birchtree.me/blog/quick-test-of-thermals-on-the-new-proled-macbook-pro/",
+   "source": "birchtree",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Workbench for iOS is out of beta",
+   "url": "https://birchtree.me/blog/workbench-for-ios-is-out-of-beta/",
+   "source": "birchtree",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The new MacBook Pro with touch is not the endgame",
+   "url": "https://birchtree.me/blog/the-new-macbook-pro-with-touch-is-not-the-endgame/",
+   "source": "birchtree",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI should kill cross-platform platforms",
+   "url": "https://birchtree.me/blog/ai-should-kill-cross-platform-platforms/",
+   "source": "birchtree",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Do we really know how all this works?",
+   "url": "https://birchtree.me/blog/do-we-really-know-how-all-this-works/",
+   "source": "birchtree",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Credit where it's due, Apple's doing RAM right",
+   "url": "https://birchtree.me/blog/credit-where-its-due-apples-doing-ram-right/",
+   "source": "birchtree",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Workbench 0.9",
+   "url": "https://birchtree.me/blog/workbench-0-9/",
+   "source": "birchtree",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Weather Channel RetroCast",
+   "url": "https://birchtree.me/blog/the-weather-channel-retrocast/",
+   "source": "birchtree",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "How the ARPANET Protocols Worked",
    "url": "https://twobithistory.org/2021/03/08/arpanet-protocols.html",
    "source": "birklund",
@@ -5969,6 +6229,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Asking a bit-permutation what it does (and cloning it)",
+   "url": "https://bitmath.blogspot.com/2026/07/asking-bit-permutation-what-it-does-and.html",
+   "source": "bitmathblogspot",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fenwick trees for products mod 2ⁿ",
+   "url": "https://bitmath.blogspot.com/2026/06/fenwick-trees-for-products-mod-2.html",
+   "source": "bitmathblogspot",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is abs(x - y)",
+   "url": "https://bitmath.blogspot.com/2026/06/what-is-absx-y.html",
+   "source": "bitmathblogspot",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Computing 264 mod N, where N is a u64",
+   "url": "https://bitmath.blogspot.com/2025/12/computing-2-64-mod-n-where-n-is-u64.html",
+   "source": "bitmathblogspot",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From Boolean logic to bitmath and SIMD: transitive closure of tiny graphs",
+   "url": "https://bitmath.blogspot.com/2025/06/from-boolean-logic-to-bitmath-and-simd.html",
+   "source": "bitmathblogspot",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bit-permuting 16 u32s at once with AVX-512",
+   "url": "https://bitmath.blogspot.com/2024/12/bit-permuting-16-u32s-at-once-with-avx.html",
+   "source": "bitmathblogspot",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Histogramming bytes with positional popcount (GF2P8AFFINEQB edition)",
+   "url": "https://bitmath.blogspot.com/2024/11/histogramming-bytes-with-positional.html",
+   "source": "bitmathblogspot",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Enumerating identities, part 2",
+   "url": "https://bitmath.blogspot.com/2024/08/enumerating-identities-part-2.html",
+   "source": "bitmathblogspot",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sorting the nibbles of a u64",
+   "url": "https://bitmath.blogspot.com/2024/06/sorting-nibbles-of-u64.html",
+   "source": "bitmathblogspot",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sharpening a lower bound with KnownBits information",
+   "url": "https://bitmath.blogspot.com/2024/06/sharpening-lower-bound-with-knownbits.html",
+   "source": "bitmathblogspot",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Multiplying 64x64 bit-matrices with GF2P8AFFINEQB",
+   "url": "https://bitmath.blogspot.com/2024/06/multiplying-64x64-bit-matrices-with.html",
+   "source": "bitmathblogspot",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Implementing grevmul with GF2P8AFFINEQB",
+   "url": "https://bitmath.blogspot.com/2024/05/implementing-grevmul-with-gf2p8affineqb.html",
+   "source": "bitmathblogspot",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Enumerating all mathematical identities (in fixed-size bitvector arithmetic with a restricted set of operations) of a certain size",
+   "url": "https://bitmath.blogspot.com/2024/04/enumerating-all-mathematical-identities.html",
+   "source": "bitmathblogspot",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The solutions to 𝚙𝚘𝚙𝚌𝚗𝚝(𝚡) < 𝚝𝚣𝚌𝚗𝚝(𝚡) and why there are Fibonacci[n] of them below 2ⁿ",
+   "url": "https://bitmath.blogspot.com/2024/03/the-solutions-to-and-why-there-are.html",
+   "source": "bitmathblogspot",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Partial sums of popcount",
+   "url": "https://bitmath.blogspot.com/2024/01/partial-sums-of-popcount.html",
+   "source": "bitmathblogspot",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Merged mining (Part I)",
    "url": "https://bitslog.com/2022/11/22/merged-mining-part-i/",
    "source": "bitslog",
@@ -6045,6 +6425,726 @@
    "url": "https://bitslog.com/2018/08/21/simple-change-to-the-bitcoin-merkleblock-command-to-protect-from-leaf-node-weakness-in-transaction-merkle-tree/",
    "source": "bitslog",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When is :focus-visible visible?",
+   "url": "https://bitsofco.de/when-is-focus-visible-visible/",
+   "source": "bitsofco",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From Ghost to 11ty",
+   "url": "https://bitsofco.de/from-ghost-to-11ty/",
+   "source": "bitsofco",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Performance Metrics Cheatsheet",
+   "url": "https://bitsofco.de/web-performance-metrics-cheatsheet/",
+   "source": "bitsofco",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Setting up a Decentralised Website (ENS + IPFS = dWeb)",
+   "url": "https://bitsofco.de/setting-up-a-decentralised-website/",
+   "source": "bitsofco",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Highlights from Chrome Dev Summit 2020",
+   "url": "https://bitsofco.de/chrome-dev-summit-2020/",
+   "source": "bitsofco",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What I wish I knew about React",
+   "url": "https://bitsofco.de/what-i-wish-i-knew-about-react/",
+   "source": "bitsofco",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I created 488 \"live images\"",
+   "url": "https://bitsofco.de/how-i-created-488-live-images/",
+   "source": "bitsofco",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Highlights from Chrome Dev Summit 2019",
+   "url": "https://bitsofco.de/chrome-dev-summit-2019/",
+   "source": "bitsofco",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to use Puppeteer in a Netlify (AWS Lambda) function",
+   "url": "https://bitsofco.de/how-to-use-puppeteer-in-a-netlify-aws-lambda-function/",
+   "source": "bitsofco",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Calling smart contract functions using web3.js - call() vs send()",
+   "url": "https://bitsofco.de/calling-smart-contract-functions-using-web3-js-call-vs-send/",
+   "source": "bitsofco",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Solidity function visibility, explained",
+   "url": "https://bitsofco.de/solidity-function-visibility-explained/",
+   "source": "bitsofco",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your first performance budget with Lighthouse",
+   "url": "https://bitsofco.de/your-first-performance-budget-with-lighthouse/",
+   "source": "bitsofco",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Removing duplicate objects from an Array (is hard)",
+   "url": "https://bitsofco.de/removing-duplicate-objects-from-an-array-is-hard/",
+   "source": "bitsofco",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tips for making interactive elements accessible on mobile devices",
+   "url": "https://bitsofco.de/tips-for-making-interactive-elements-accessible-on-mobile-devices/",
+   "source": "bitsofco",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Revisiting the abbr element",
+   "url": "https://bitsofco.de/revisiting-the-abbr-element/",
+   "source": "bitsofco",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How 1Password for Agents preserves security and privacy",
+   "url": "https://1password.com/blog/1password-for-agents-security-privacy",
+   "source": "blog1password",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scaling security reviews at 1Password: Adding an agentic pipeline stage (safely)",
+   "url": "https://1password.com/blog/scaling-security-reviews-agentic-pipeline",
+   "source": "blog1password",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "After the breach, attackers go credential harvesting",
+   "url": "https://1password.com/blog/ai-credential-harvesting",
+   "source": "blog1password",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A practical security guide for developers",
+   "url": "https://1password.com/blog/developer-guide-to-exposed-credentials",
+   "source": "blog1password",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What October's security incidents taught us about exposed credentials",
+   "url": "https://1password.com/blog/october-security-incidents-exposed-credentials",
+   "source": "blog1password",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What it’s like to build an exceptional Customer Experience team at 1Password",
+   "url": "https://1password.com/blog/build-a-customer-experience-team-at-1password",
+   "source": "blog1password",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reducing credential exposure as agents take on more work",
+   "url": "https://1password.com/blog/reducing-credential-exposure-ai-agents",
+   "source": "blog1password",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "1Password recognized in the 2026 Gartner® Magic Quadrant™ for Privileged Access Management",
+   "url": "https://1password.com/blog/1password-recognized-in-2026-gartner-magic-quadrant-for-privileged-access-management",
+   "source": "blog1password",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing 1Password for Agents",
+   "url": "https://1password.com/blog/1password-for-ai-agents",
+   "source": "blog1password",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Launching post-quantum safe passkeys",
+   "url": "https://1password.com/blog/post-quantum-passkeys",
+   "source": "blog1password",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SaaS access governance: Does access end when employees leave?",
+   "url": "https://1password.com/blog/saas-access-governance-checklist",
+   "source": "blog1password",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 signs that standing privileges are putting systems at risk",
+   "url": "https://1password.com/blog/signs-standing-privilege-risk",
+   "source": "blog1password",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A path to user verification in 1Password",
+   "url": "https://1password.com/blog/user-verification-passkeys",
+   "source": "blog1password",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Detection engineering meets AI-driven adversary emulation",
+   "url": "https://1password.com/blog/ai-driven-adversary-emulation",
+   "source": "blog1password",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How attackers maintained persistence in AWS after stealing credentials",
+   "url": "https://1password.com/blog/aws-credential-theft-persistence",
+   "source": "blog1password",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The problem with US healthcare is not capitalism",
+   "url": "https://blog.alexmaccaw.com/the-problem-with-us-healthcare-is-not-capitalism/",
+   "source": "blogalexmaccaw",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Vibe Code as a Senior Engineer",
+   "url": "https://blog.alexmaccaw.com/how-to-vibe-code-as-a-senior-engineer/",
+   "source": "blogalexmaccaw",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We Won’t Save the Planet by Shrinking",
+   "url": "https://blog.alexmaccaw.com/we-wont-save-the-planet-by-shrinking/",
+   "source": "blogalexmaccaw",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AGI, agents, and timelines",
+   "url": "https://blog.alexmaccaw.com/agi-agents-and-timelines/",
+   "source": "blogalexmaccaw",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Pain",
+   "url": "https://blog.alexmaccaw.com/pain/",
+   "source": "blogalexmaccaw",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Toad",
+   "url": "https://blog.alexmaccaw.com/5meodmt/",
+   "source": "blogalexmaccaw",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Common logical fallacies surrounding capitalism",
+   "url": "https://blog.alexmaccaw.com/common-logical-fallacies-surrounding-capitalism/",
+   "source": "blogalexmaccaw",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Artificial Knowledge Creation",
+   "url": "https://blog.alexmaccaw.com/artificial-knowledge-creation/",
+   "source": "blogalexmaccaw",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unshackling Artificial Minds",
+   "url": "https://blog.alexmaccaw.com/unshackling-artificial-minds/",
+   "source": "blogalexmaccaw",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Captain's Log #2",
+   "url": "https://blog.alexmaccaw.com/man-vs-machine/",
+   "source": "blogalexmaccaw",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Stars",
+   "url": "https://blog.alexmaccaw.com/stars/",
+   "source": "blogalexmaccaw",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Illusion of Free Will",
+   "url": "https://blog.alexmaccaw.com/free-will/",
+   "source": "blogalexmaccaw",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Universality and APIs",
+   "url": "https://blog.alexmaccaw.com/universality/",
+   "source": "blogalexmaccaw",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Captain's Log #1",
+   "url": "https://blog.alexmaccaw.com/captains-log-1/",
+   "source": "blogalexmaccaw",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The AI is coming",
+   "url": "https://blog.alexmaccaw.com/the-ai-is-coming/",
+   "source": "blogalexmaccaw",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Core Vitals Optimization, SSR Deployments, and Signal-First Architecture ⚡",
+   "url": "https://blog.angular.dev/core-vitals-optimization-ssr-deployments-and-signal-first-architecture-be82fd4a8c87?source=rss----447683c3d9a3---4",
+   "source": "blogangular",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From running edge-rendered Angular apps on Cloudflare Workers to crafting lifelike speech with…",
+   "url": "https://blog.angular.dev/from-running-edge-rendered-angular-apps-on-cloudflare-workers-to-crafting-lifelike-speech-with-67513b4b85e1?source=rss----447683c3d9a3---4",
+   "source": "blogangular",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Signal Value Transforms, Routing Essentials, and Video Extension with Veo! ⚡",
+   "url": "https://blog.angular.dev/signal-value-transforms-routing-essentials-and-video-extension-with-veo-3846cae9283a?source=rss----447683c3d9a3---4",
+   "source": "blogangular",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Architecting the Modern Web: Debounce APIs, Rendering Strategies, and Automated AI Setup! ⚡",
+   "url": "https://blog.angular.dev/architecting-the-modern-web-debounce-apis-rendering-strategies-and-automated-ai-setup-826bc54ae3a9?source=rss----447683c3d9a3---4",
+   "source": "blogangular",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An update on Angular’s TypeScript 7-powered Compiler",
+   "url": "https://blog.angular.dev/an-update-on-angulars-typescript-7-powered-compiler-9619a35e2b0a?source=rss----447683c3d9a3---4",
+   "source": "blogangular",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Customizing Angular Aria Tabs Quickly with Google Antigravity CLI",
+   "url": "https://blog.angular.dev/customizing-angular-aria-tabs-quickly-with-google-antigravity-cli-39ff8e0271a4?source=rss----447683c3d9a3---4",
+   "source": "blogangular",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Styling Mastery and Declarative Form Submissions",
+   "url": "https://blog.angular.dev/styling-mastery-and-declarative-form-submissions-743bb9bd0b0e?source=rss----447683c3d9a3---4",
+   "source": "blogangular",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Forms Evolution, Web AI, and Architectural Vision!",
+   "url": "https://blog.angular.dev/the-forms-evolution-web-ai-and-architectural-vision-4f96634b0ae3?source=rss----447683c3d9a3---4",
+   "source": "blogangular",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Free Book Chapters, Better Testing Control, and Smart MCP Configuration!",
+   "url": "https://blog.angular.dev/free-book-chapters-better-testing-control-and-smart-mcp-configuration-ebc715561ca1?source=rss----447683c3d9a3---4",
+   "source": "blogangular",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reactive Flows, AI Agents, and State Events: This Week’s Angular Masterclass! ⚡",
+   "url": "https://blog.angular.dev/angular-weekly-july-17-2026-05440da623ad?source=rss----447683c3d9a3---4",
+   "source": "blogangular",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "3.0",
+   "url": "https://blog.asciinema.org/post/three-point-o/",
+   "source": "blogasciinema",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's new in asciinema - part III: the server",
+   "url": "https://blog.asciinema.org/post/whats-new-in-the-server/",
+   "source": "blogasciinema",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's new in asciinema - part II: the recorder",
+   "url": "https://blog.asciinema.org/post/whats-new-in-the-recorder/",
+   "source": "blogasciinema",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's new in asciinema - part I: the player",
+   "url": "https://blog.asciinema.org/post/whats-new-in-the-player/",
+   "source": "blogasciinema",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Blast from the past",
+   "url": "https://blog.asciinema.org/post/blast-from-the-past/",
+   "source": "blogasciinema",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "4x smaller, 50x faster",
+   "url": "https://blog.asciinema.org/post/smaller-faster/",
+   "source": "blogasciinema",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Archival of unclaimed recordings",
+   "url": "https://blog.asciinema.org/post/archival/",
+   "source": "blogasciinema",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2.0",
+   "url": "https://blog.asciinema.org/post/two-point-o/",
+   "source": "blogasciinema",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "<asciinema-player> HTML5 element",
+   "url": "https://blog.asciinema.org/post/html5-element/",
+   "source": "blogasciinema",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "1.3 aka \"And Now for Something Completely Different\"",
+   "url": "https://blog.asciinema.org/post/and-now-for-something-completely-different/",
+   "source": "blogasciinema",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Self-hosting",
+   "url": "https://blog.asciinema.org/post/self-hosting/",
+   "source": "blogasciinema",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Private asciicasts",
+   "url": "https://blog.asciinema.org/post/private/",
+   "source": "blogasciinema",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New ways of asciicast embedding",
+   "url": "https://blog.asciinema.org/post/embedding/",
+   "source": "blogasciinema",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "1.0",
+   "url": "https://blog.asciinema.org/post/one-point-o/",
+   "source": "blogasciinema",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "asciinema switching to Mozilla Persona for login",
+   "url": "https://blog.asciinema.org/post/persona/",
+   "source": "blogasciinema",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My React Talks to Date in Various Formats",
+   "url": "https://blog.axlight.com/posts/my-react-talks-to-date-in-various-formats/",
+   "source": "blogaxlight",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughts on State Management Libraries in the React Compiler Era",
+   "url": "https://blog.axlight.com/posts/thoughts-on-state-management-libraries-in-the-react-compiler-era/",
+   "source": "blogaxlight",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughts on What RSC Means for SPAs",
+   "url": "https://blog.axlight.com/posts/thoughts-on-what-rsc-means-for-spas/",
+   "source": "blogaxlight",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I Got Involved in OSS",
+   "url": "https://blog.axlight.com/posts/how-i-got-involved-in-oss/",
+   "source": "blogaxlight",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Valtio Was Born",
+   "url": "https://blog.axlight.com/posts/how-valtio-was-born/",
+   "source": "blogaxlight",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Jotai Was Born",
+   "url": "https://blog.axlight.com/posts/how-jotai-was-born/",
+   "source": "blogaxlight",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Zustand Was Born",
+   "url": "https://blog.axlight.com/posts/how-zustand-was-born/",
+   "source": "blogaxlight",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Jotai Tips",
+   "url": "https://blog.axlight.com/posts/jotai-tips/",
+   "source": "blogaxlight",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why useSyncExternalStore Is Not Used in Jotai",
+   "url": "https://blog.axlight.com/posts/why-use-sync-external-store-is-not-used-in-jotai/",
+   "source": "blogaxlight",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Use Jotai and useTransition for Mutation",
+   "url": "https://blog.axlight.com/posts/how-to-use-jotai-and-use-transition-for-mutation/",
+   "source": "blogaxlight",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Zustand Typescript Implementation Is So Ugly",
+   "url": "https://blog.axlight.com/posts/why-zustand-typescript-implementation-is-so-ugly/",
+   "source": "blogaxlight",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why You Don't Need Signals in React",
+   "url": "https://blog.axlight.com/posts/why-you-dont-need-signals-in-react/",
+   "source": "blogaxlight",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Demystifying Create React Signals Internals",
+   "url": "https://blog.axlight.com/posts/demystifying-create-react-signals-internals/",
+   "source": "blogaxlight",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You Might Not Need React Query for Jotai",
+   "url": "https://blog.axlight.com/posts/you-might-not-need-react-query-for-jotai/",
+   "source": "blogaxlight",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why We Need Jotai v2 API",
+   "url": "https://blog.axlight.com/posts/why-we-need-jotai-v2-api/",
+   "source": "blogaxlight",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Credential Brokering Patterns for AI Agents Part 3: Protecting the Token Vault with OpenBao",
+   "url": "https://blog.christianposta.com/credential-brokering-patterns-for-ai-agent-egress-part3/",
+   "source": "blogchristianposta",
+   "rank": 1,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Not All Agent Sandboxes Are Created Equally",
+   "url": "https://blog.christianposta.com/not-all-agent-sandboxes-are-created-equally/",
+   "source": "blogchristianposta",
+   "rank": 2,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Credential Brokering Patterns for AI Agents Part 2.5: Where KMS Grants Stop Scaling",
+   "url": "https://blog.christianposta.com/credential-brokering-mode-3-at-scale/",
+   "source": "blogchristianposta",
+   "rank": 3,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Human-in-the-loop Authorization Patterns for Agents",
+   "url": "https://blog.christianposta.com/human-in-the-loop-authorization-patterns-for-agents/",
+   "source": "blogchristianposta",
+   "rank": 4,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "APIs for Probabilistic Callers",
+   "url": "https://blog.christianposta.com/apis-for-probabilistic-callers/",
+   "source": "blogchristianposta",
+   "rank": 5,
    "score": 1,
    "metric": "feed rank"
   },
@@ -6165,6 +7265,926 @@
    "url": "http://blog.chromium.org/2024/05/manifest-v2-phase-out-begins.html",
    "source": "blogchromium",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "One Trillion Row Challenge",
+   "url": "https://docs.coiled.io/blog/1trc.html",
+   "source": "blogcoiled",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Real-world Grocery Demand Forecasting",
+   "url": "https://docs.coiled.io/blog/grocery-demand-forecasting.html",
+   "source": "blogcoiled",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Schedule Python Jobs with Prefect and Coiled",
+   "url": "https://docs.coiled.io/blog/prefect-scheduled-jobs.html",
+   "source": "blogcoiled",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "1BRC in Python with Dask",
+   "url": "https://docs.coiled.io/blog/1brc.html",
+   "source": "blogcoiled",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Xarray at Large Scale: A Beginner’s Guide",
+   "url": "https://docs.coiled.io/blog/xarray-at-scale.html",
+   "source": "blogcoiled",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Process Hundreds of GB of Data in the Cloud with Polars",
+   "url": "https://docs.coiled.io/blog/coiled-functions-polars.html",
+   "source": "blogcoiled",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Processing Terabyte-Scale NASA Cloud Datasets with Coiled",
+   "url": "https://docs.coiled.io/blog/processing-terabyte-scale-nasa-cloud-datasets-with-coiled.html",
+   "source": "blogcoiled",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Run Your Jupyter Notebook on a GPU in the Cloud",
+   "url": "https://docs.coiled.io/blog/jupyter-notebook-gpu.html",
+   "source": "blogcoiled",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ten Cents Per Terabyte",
+   "url": "https://docs.coiled.io/blog/ten-cents.html",
+   "source": "blogcoiled",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TPC-H Benchmarks for Query Optimization with Dask Expressions",
+   "url": "https://docs.coiled.io/blog/dask-expr-tpch-dask.html",
+   "source": "blogcoiled",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Coiled observability wins: Chunksize",
+   "url": "https://docs.coiled.io/blog/coiled_observability_chunksize.html",
+   "source": "blogcoiled",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Parallel Serverless Functions at Scale",
+   "url": "https://docs.coiled.io/blog/parallel-coiled-functions.html",
+   "source": "blogcoiled",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Processing a 250 TB dataset with Coiled, Dask, and Xarray",
+   "url": "https://docs.coiled.io/blog/coiled-xarray.html",
+   "source": "blogcoiled",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reduce training time for CPU intensive models with scikit-learn and Coiled Functions",
+   "url": "https://docs.coiled.io/blog/coiled-run-scikit-learn.html",
+   "source": "blogcoiled",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fine Performance Metrics and Spans",
+   "url": "https://docs.coiled.io/blog/fine-performance-metrics.html",
+   "source": "blogcoiled",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "“We Didn't Start the Scaling”",
+   "url": "https://domenic.me/how-we-didnt-start-the-scaling/",
+   "source": "blogdomenic",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Agentic Coding Setup, July 2026",
+   "url": "https://domenic.me/agentic-coding-setup/",
+   "source": "blogdomenic",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Windows Native App Development Is a Mess",
+   "url": "https://domenic.me/windows-native-dev/",
+   "source": "blogdomenic",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On the Streams Standard",
+   "url": "https://domenic.me/streams-standard/",
+   "source": "blogdomenic",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Wrong Work, Done Beautifully",
+   "url": "https://domenic.me/jsdom-claude-code/",
+   "source": "blogdomenic",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Onward",
+   "url": "https://domenic.me/retirement/",
+   "source": "blogdomenic",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Designing the Built-in AI Web APIs",
+   "url": "https://domenic.me/builtin-ai-api-design/",
+   "source": "blogdomenic",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Participation in the METR AI Productivity Study",
+   "url": "https://domenic.me/metr-ai-productivity/",
+   "source": "blogdomenic",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Spaced Repetition Systems Have Gotten Way Better",
+   "url": "https://domenic.me/fsrs/",
+   "source": "blogdomenic",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learning Japanese Part-Time",
+   "url": "https://domenic.me/part-time-japanese/",
+   "source": "blogdomenic",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Skills across coding assistants",
+   "url": "https://blog.frankel.ch/skills-across-coding-assistants/",
+   "source": "blogfrankel",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From Google Drive to Syncthing over Tailscale",
+   "url": "https://blog.frankel.ch/google-drive-syncthing-tailscale/",
+   "source": "blogfrankel",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Security Baked Into the JVM: DirtyChai scales vertically, JGDMS scales horizontally",
+   "url": "https://blog.frankel.ch/security-baked-into-jvm/6/",
+   "source": "blogfrankel",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Maps without a tile server",
+   "url": "https://blog.frankel.ch/maps-without-tile-server/",
+   "source": "blogfrankel",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scraping websites and bot-protection",
+   "url": "https://blog.frankel.ch/bypass-bot-protection/",
+   "source": "blogfrankel",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Security Baked Into the JVM: no single party controls the outcome",
+   "url": "https://blog.frankel.ch/security-baked-into-jvm/5/",
+   "source": "blogfrankel",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From documenting decisions to questioning them",
+   "url": "https://blog.frankel.ch/from-madrs-to-questioning-them/",
+   "source": "blogfrankel",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI-assisted genealogy, a follow-up",
+   "url": "https://blog.frankel.ch/ai-assisted-genealogy-follow-up/",
+   "source": "blogfrankel",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "World geography gotchas",
+   "url": "https://blog.frankel.ch/world-geography-gotchas/",
+   "source": "blogfrankel",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build an AI Agent (From Scratch)",
+   "url": "https://blog.frankel.ch/building-ai-agent-from-scratch/",
+   "source": "blogfrankel",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI-assisted genealogy",
+   "url": "https://blog.frankel.ch/ai-assisted-genealogy/",
+   "source": "blogfrankel",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Security Baked Into the JVM: sixteen Subjects on the wire",
+   "url": "https://blog.frankel.ch/security-baked-into-jvm/4/",
+   "source": "blogfrankel",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Solving Gradle metadata and Renovate integration",
+   "url": "https://blog.frankel.ch/gradle-metadata-renovate-integration/",
+   "source": "blogfrankel",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Security Baked Into the JVM: two Subjects, one call",
+   "url": "https://blog.frankel.ch/security-baked-into-jvm/3/",
+   "source": "blogfrankel",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GitHub agentic workflows and Renovate",
+   "url": "https://blog.frankel.ch/github-agentic-workflow-renovate/",
+   "source": "blogfrankel",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Triode: Duo for Youo",
+   "url": "https://blog.iconfactory.com/2026/10/triode-duo-for-youo/",
+   "source": "blogiconfactory",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Iconfactory Tapestry 2.0: What You’ve Always Wanted",
+   "url": "https://blog.iconfactory.com/2026/09/iconfactory-tapestry-2-0-what-youve-always-wanted/",
+   "source": "blogiconfactory",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inktober 2026 – “We are the dreamers of dreams.”",
+   "url": "https://blog.iconfactory.com/2026/09/inktober-2026-we-are-the-dreamers-of-dreams/",
+   "source": "blogiconfactory",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Now Playing: Triode 2.4",
+   "url": "https://blog.iconfactory.com/2026/09/now-playing-triode-2-4/",
+   "source": "blogiconfactory",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pro Icons. Indie Prices.",
+   "url": "https://blog.iconfactory.com/2026/07/pro-icons-indie-prices/",
+   "source": "blogiconfactory",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Celebrate 30 Years of Iconfactory at Cotton Bureau",
+   "url": "https://blog.iconfactory.com/2026/06/celebrate-30-years-of-iconfactory-at-cotton-bureau/",
+   "source": "blogiconfactory",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Iconfactory Turns 30 – How Time Flies!",
+   "url": "https://blog.iconfactory.com/2026/06/the-iconfactory-turns-30-how-time-flies/",
+   "source": "blogiconfactory",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Triode 2.3 – It Hits the Spotify",
+   "url": "https://blog.iconfactory.com/2026/05/triode-2-3-it-hits-the-spotify/",
+   "source": "blogiconfactory",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bust Out New Moves with Linea Sketch 4.4",
+   "url": "https://blog.iconfactory.com/2026/05/bust-out-new-moves-with-linea-sketch-4-4/",
+   "source": "blogiconfactory",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Free Artemis Wallpapers are Out of this World!",
+   "url": "https://blog.iconfactory.com/2026/04/free-artemis-wallpapers-are-out-of-this-world/",
+   "source": "blogiconfactory",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A letter to the AI labs shouldering the great burden of humanity’s survival",
+   "url": "https://blog.j11y.io/2026-09-14_a-letter-to-the-ai-labs/",
+   "source": "blogj11y",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Anthropic’s weak watermarks appease a weak law",
+   "url": "https://blog.j11y.io/2026-08-12_Anthropics-weak-watermarks-appease-a-weak-law/",
+   "source": "blogj11y",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using git diffs to circumvent Fable’s safeguards",
+   "url": "https://blog.j11y.io/2026-07-18_Jailbreaking-Fable-disinformation/",
+   "source": "blogj11y",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don't let the LLM speak, just probe it.",
+   "url": "https://blog.j11y.io/2026-06-10_hidden-state-probes/",
+   "source": "blogj11y",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Safety is theatre",
+   "url": "https://blog.j11y.io/2026-05-06_AI-Safety-Theatre/",
+   "source": "blogj11y",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I am building an AI safety company",
+   "url": "https://blog.j11y.io/2026-01-23_NOPE/",
+   "source": "blogj11y",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CITE: Layered Defense in AI Chat Safety",
+   "url": "https://blog.j11y.io/2025-11-13_CITE-AI-Safety/",
+   "source": "blogj11y",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tips for stroke-surviving software engineers",
+   "url": "https://blog.j11y.io/2025-10-29_stroke_tips_for_engineers/",
+   "source": "blogj11y",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sorry, We Deprecated Your Friend",
+   "url": "https://blog.j11y.io/2025-08-30_openai_gpt5_reckless/",
+   "source": "blogj11y",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Browser AI Agents Break Zero Trust",
+   "url": "https://blog.j11y.io/2025-08-28_llms_in_browsers/",
+   "source": "blogj11y",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The scribbler, the scribe, the sculptor.",
+   "url": "https://blog.j11y.io/2025-04-12_scribbler/",
+   "source": "blogj11y",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Latent Pluralism in Language Models",
+   "url": "https://blog.j11y.io/2025-02-21_latent-pluralism/",
+   "source": "blogj11y",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unrepresented Zeitgeists in AI",
+   "url": "https://blog.j11y.io/2025-02-05_zeit/",
+   "source": "blogj11y",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Working with LLMs – not against them.",
+   "url": "https://blog.j11y.io/2024-12-15_xmllm/",
+   "source": "blogj11y",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "LLM Security: Keep Untrusted Content in the User Role—Always",
+   "url": "https://blog.j11y.io/2024-10-30_ROLP/",
+   "source": "blogj11y",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing a DSL for high performance parallel programming in OxCaml",
+   "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
+   "source": "blogjanestreet",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Our software engineering interviews are changing (a little)",
+   "url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/",
+   "source": "blogjanestreet",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Flex Model: an event-driven feature engineering system",
+   "url": "https://blog.janestreet.com/flex-model-an-event-driven-feature-engineering-system/",
+   "source": "blogjanestreet",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building and testing a config management orchestrator for Windows",
+   "url": "https://blog.janestreet.com/config-management-orchestrator-for-windows/",
+   "source": "blogjanestreet",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scaling and benchmarking a critical message bus using a new indexing strategy",
+   "url": "https://blog.janestreet.com/scaling-and-benchmarking-a-critical-message-bus/",
+   "source": "blogjanestreet",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How recurring network maintenance exposed 6 bugs",
+   "url": "https://blog.janestreet.com/how-recurring-network-maintenance-exposed-6-bugs/",
+   "source": "blogjanestreet",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Results from the ASIC puzzle",
+   "url": "https://blog.janestreet.com/asic-puzzle-results/",
+   "source": "blogjanestreet",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A resilient kernel log reporter",
+   "url": "https://blog.janestreet.com/linux-engineering-kernel-reporter-index/",
+   "source": "blogjanestreet",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A FUSE server for our in-house storage backend",
+   "url": "https://blog.janestreet.com/linux-engineering-depot-fuse-index/",
+   "source": "blogjanestreet",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What the interns have wrought, special jumbo 2026 edition",
+   "url": "https://blog.janestreet.com/wrought-2026/",
+   "source": "blogjanestreet",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What the SP interns have wrought, 2026 edition",
+   "url": "https://blog.janestreet.com/wrought-2026-sp/",
+   "source": "blogjanestreet",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trading off compute for memory with activation checkpointing",
+   "url": "https://blog.janestreet.com/trading-off-compute-for-memory-with-activation-checkpointing/",
+   "source": "blogjanestreet",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What the TDOE interns have wrought, 2026 edition",
+   "url": "https://blog.janestreet.com/tdoe-intern-projects-2026/",
+   "source": "blogjanestreet",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mitigating memorization in LLMs",
+   "url": "https://blog.janestreet.com/mitigating-memorization-in-llms/",
+   "source": "blogjanestreet",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can you use autoregressive diffusion to generate market data?",
+   "url": "https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data/",
+   "source": "blogjanestreet",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Home Hardware, Part 2: Width Matters",
+   "url": "https://blog.jessfraz.com/post/home-hardware-part-two/",
+   "source": "blogjessfraz",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Home Hardware, Part 1: My Control4 Revenge Arc",
+   "url": "https://blog.jessfraz.com/post/home-hardware-part-one/",
+   "source": "blogjessfraz",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DUM-E and U",
+   "url": "https://blog.jessfraz.com/post/dum-e-and-u/",
+   "source": "blogjessfraz",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Battery Day",
+   "url": "https://blog.jessfraz.com/post/battery-day/",
+   "source": "blogjessfraz",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Automated CIO",
+   "url": "https://blog.jessfraz.com/post/the-automated-cio/",
+   "source": "blogjessfraz",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Tale of Two 3D Printers (and all additive manufacturing processes)",
+   "url": "https://blog.jessfraz.com/post/a-tale-of-two-3d-printers/",
+   "source": "blogjessfraz",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Size Matters",
+   "url": "https://blog.jessfraz.com/post/size-matters/",
+   "source": "blogjessfraz",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Where is the high bandwidth internet for the masses?",
+   "url": "https://blog.jessfraz.com/post/where-is-the-high-bandwidth-internet-for-the-masses/",
+   "source": "blogjessfraz",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Art of Automation",
+   "url": "https://blog.jessfraz.com/post/the-art-of-automation/",
+   "source": "blogjessfraz",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Life of a Data Byte",
+   "url": "https://blog.jessfraz.com/post/the-life-of-a-data-byte/",
+   "source": "blogjessfraz",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Power to the People",
+   "url": "https://blog.jessfraz.com/post/power-to-the-people/",
+   "source": "blogjessfraz",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Network booted, home initialized",
+   "url": "https://blog.jessfraz.com/post/network-booted-home-initialized/",
+   "source": "blogjessfraz",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Born in a Garage",
+   "url": "https://blog.jessfraz.com/post/born-in-a-garage/",
+   "source": "blogjessfraz",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tales from Firmware Camp",
+   "url": "https://blog.jessfraz.com/post/tales-from-firmware-camp/",
+   "source": "blogjessfraz",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Transactional Memory and Tech Hype Waves",
+   "url": "https://blog.jessfraz.com/post/transactional-memory-and-tech-hype-waves/",
+   "source": "blogjessfraz",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Converting HSV to RGB",
+   "url": "https://blog.kenanb.com/code/cg/2024/03/03/converting-hsv-to-rgb.html",
+   "source": "blogkenanb",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Timesampled Attribute Support",
+   "url": "https://blog.kenanb.com/code/lisp/mopr/2024/02/15/mopr-timesampled-attribute-support.html",
+   "source": "blogkenanb",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Means of Production",
+   "url": "https://blog.kenanb.com/code/lisp/2024/02/14/means-of-production.html",
+   "source": "blogkenanb",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chez Scheme and Gambit Scheme",
+   "url": "https://blog.kenanb.com/code/lisp/2024/02/08/chez-scheme-and-gambit-scheme.html",
+   "source": "blogkenanb",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Common Lisp Standard Method Combination",
+   "url": "https://blog.kenanb.com/code/lisp/2024/02/07/common-lisp-method-combination.html",
+   "source": "blogkenanb",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "One Year Since the Earthquake",
+   "url": "https://blog.kenanb.com/life/2024/02/06/one-year-since-earthquake.html",
+   "source": "blogkenanb",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Common Lisp Supplied-p Parameters",
+   "url": "https://blog.kenanb.com/code/lisp/2024/02/05/common-lisp-supplied-p-parameters.html",
+   "source": "blogkenanb",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Common Lisp AUX Variables",
+   "url": "https://blog.kenanb.com/code/lisp/2024/02/04/common-lisp-aux-variables.html",
+   "source": "blogkenanb",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Common Lisp Lambda Lists",
+   "url": "https://blog.kenanb.com/code/lisp/2024/02/03/common-lisp-lambda-lists.html",
+   "source": "blogkenanb",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ECL Object Lifetime and Ownership",
+   "url": "https://blog.kenanb.com/code/lisp/2024/02/02/ecl-object-lifetime-and-ownership.html",
+   "source": "blogkenanb",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How We Rebuilt Khan Academy’s Color System from the Ground Up",
+   "url": "https://blog.khanacademy.org/how-we-rebuilt-khan-academys-color-system-from-the-ground-up/",
+   "source": "blogkhanacademy",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How a Khan Academy Intern Helped Teachers Find Their AI-Generated Documents Faster",
+   "url": "https://blog.khanacademy.org/how-a-khan-academy-intern-helped-teachers-find-their-ai-generated-documents-faster/",
+   "source": "blogkhanacademy",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rebuilding Graphs for Accessibility: Inside Khan Academy’s Inclusive Design",
+   "url": "https://blog.khanacademy.org/rebuilding-graphs-for-accessibility-inside-khan-academys-inclusive-designrebuilding-graphs-for-accessibility-inside-khan-academys-inclusive-design/",
+   "source": "blogkhanacademy",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Communication for Custom Developer Tools",
+   "url": "https://blog.khanacademy.org/communication-for-custom-developer-tools/",
+   "source": "blogkhanacademy",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Meet Sujata Salem, Director of Engineering",
+   "url": "https://blog.khanacademy.org/meet-sujata-salem-director-of-engineering/",
+   "source": "blogkhanacademy",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Statically typed context in Go",
+   "url": "https://blog.khanacademy.org/statically-typed-context-in-go/",
+   "source": "blogkhanacademy",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We count on you! Protecting privacy, enabling analytics",
+   "url": "https://blog.khanacademy.org/we-count-on-you-balancing-privacy-and-analytics/",
+   "source": "blogkhanacademy",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beating the odds: Khan Academy’s successful monolith→services rewrite",
+   "url": "https://blog.khanacademy.org/beating-the-odds-khan-academys-successful-monolith%e2%86%92services-rewrite/",
+   "source": "blogkhanacademy",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Technical choices behind a successful rewrite project",
+   "url": "https://blog.khanacademy.org/technical-choices-behind-a-successful-rewrite-project/",
+   "source": "blogkhanacademy",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Where Go and GraphQL collide: Behind the curtain with genqlient",
+   "url": "https://blog.khanacademy.org/where-go-and-graphql-collide-behind-the-curtain-with-genqlient/",
+   "source": "blogkhanacademy",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -11060,6 +13080,126 @@
    "title": "AI Governance: One view of agent activity",
    "url": "https://about.gitlab.com/blog/ai-governance-dashboard/",
    "source": "gitlab_blog",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Connect Google Wallet to Gemini for personal finance insights",
+   "url": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+   "source": "googleblog",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+   "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+   "source": "googleblog",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gemini 4 Hydrogen: everyday coding and agentic workflows for developers",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
+   "source": "googleblog",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Gemini 4 Hydrogen",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+   "source": "googleblog",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Get quick answers from Gemini on any website.",
+   "url": "https://blog.google/innovation-and-ai/products/gemini-app/research-with-gemini-in-chrome/",
+   "source": "googleblog",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Talk it through with Gemini, now on Apple CarPlay",
+   "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/",
+   "source": "googleblog",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gemini Intelligence: New features, on more devices",
+   "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+   "source": "googleblog",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing the Multimodal Knowledge Agent benchmark",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/multimodal-knowledge-agent-benchmark/",
+   "source": "googleblog",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gemini 4 Carbon is now available",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+   "source": "googleblog",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+   "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
+   "source": "googleblog",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+   "source": "googleblog",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Transform a quick drawing into a live app with Gemini.",
+   "url": "https://blog.google/innovation-and-ai/products/gemini-app/turn-drawings-into-apps-gemini/",
+   "source": "googleblog",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The latest AI news we announced in October 2026",
+   "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+   "source": "googleblog",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You can now generate, preview, and edit documents, PDFs, presentations, spreadsheets, and more directly in Gemini.",
+   "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
+   "source": "googleblog",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to use Gemini to update your resume",
+   "url": "https://blog.google/innovation-and-ai/products/gemini-app/update-resume-with-gemini/",
+   "source": "googleblog",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"

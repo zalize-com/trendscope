@@ -1,8 +1,24 @@
 {
- "generated_at": "2026-11-15T16:55:29.458319+00:00",
+ "generated_at": "2026-11-15T16:57:17.396040+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 454,
+ "total": 472,
  "domains": [
+  {
+   "hostname": "blog.google",
+   "days_on_board": 4,
+   "items": 18,
+   "sources": [
+    "googleblog",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Gemini Decisions API",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "score": 568,
+    "metric": "points",
+    "date": "2026-11-11"
+   }
+  },
   {
    "hostname": "reuters.com",
    "days_on_board": 3,
@@ -51,21 +67,6 @@
    }
   },
   {
-   "hostname": "blog.google",
-   "days_on_board": 3,
-   "items": 3,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Gemini Decisions API",
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-    "score": 568,
-    "metric": "points",
-    "date": "2026-11-11"
-   }
-  },
-  {
    "hostname": "npmjs.com",
    "days_on_board": 2,
    "items": 48,
@@ -78,6 +79,22 @@
     "score": 456795275,
     "metric": "weekly downloads",
     "date": "2026-11-14"
+   }
+  },
+  {
+   "hostname": "blog.janestreet.com",
+   "days_on_board": 2,
+   "items": 17,
+   "sources": [
+    "blogjanestreet",
+    "lobsters"
+   ],
+   "top_hit": {
+    "title": "Writing a DSL for high performance parallel programming in OxCaml",
+    "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
    }
   },
   {
@@ -588,21 +605,6 @@
     "title": "Let Me Let You Own Your Data",
     "url": "https://www.willett.io/posts/data/",
     "score": 31,
-    "metric": "score",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "blog.janestreet.com",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "Writing a DSL for high performance parallel programming in OxCaml",
-    "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
-    "score": 14,
     "metric": "score",
     "date": "2026-11-15"
    }

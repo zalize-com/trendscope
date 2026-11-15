@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-15T16:55:29.662369+00:00",
+  "generated_at": "2026-11-15T16:57:17.681227+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
-      "items": 195,
-      "unique_urls": 180,
+      "items": 193,
+      "unique_urls": 178,
       "median_days_on_board": 1,
       "one_day_pct": 92,
       "top_item": {
@@ -86,18 +86,6 @@
         "rank": 1
       }
     },
-    "lobsters": {
-      "items": 32,
-      "unique_urls": 21,
-      "median_days_on_board": 1,
-      "one_day_pct": 52,
-      "top_item": {
-        "title": "Terminal borders that don't cost a cell",
-        "url": "https://www.joshka.net/cell-borders/",
-        "score": 396,
-        "rank": 9
-      }
-    },
     "devto": {
       "items": 32,
       "unique_urls": 17,
@@ -108,6 +96,18 @@
         "url": "https://dev.to/francistrdev/how-do-you-truly-stand-out-in-tech-478a",
         "score": 202,
         "rank": 1
+      }
+    },
+    "lobsters": {
+      "items": 30,
+      "unique_urls": 20,
+      "median_days_on_board": 1,
+      "one_day_pct": 55,
+      "top_item": {
+        "title": "Terminal borders that don't cost a cell",
+        "url": "https://www.joshka.net/cell-borders/",
+        "score": 396,
+        "rank": 9
       }
     },
     "crates": {
@@ -182,6 +182,18 @@
         "rank": 4
       }
     },
+    "googleblog": {
+      "items": 17,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 87,
+      "top_item": {
+        "title": "Introducing Gemini 4 Hydrogen",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+        "score": 568,
+        "rank": 7
+      }
+    },
     "thenewstack": {
       "items": 17,
       "unique_urls": 17,
@@ -190,6 +202,18 @@
       "top_item": {
         "title": "AWS Emulator proves agents need a verification loop. Realism is the hard part.",
         "url": "https://thenewstack.io/aws-emulator-verification-loops/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogjanestreet": {
+      "items": 16,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 93,
+      "top_item": {
+        "title": "Writing a DSL for high performance parallel programming in OxCaml",
+        "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
         "score": 15,
         "rank": 1
       }
@@ -1610,6 +1634,150 @@
         "rank": 1
       }
     },
+    "betterdev": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Should you minify Lambda code?",
+        "url": "https://betterdev.blog/lambda-code-minification/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "birchtree": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "All flights across the US grounded",
+        "url": "https://birchtree.me/blog/all-flights-across-the-us-grounded/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "bitmathblogspot": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Asking a bit-permutation what it does (and cloning it)",
+        "url": "https://bitmath.blogspot.com/2026/07/asking-bit-permutation-what-it-does-and.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "bitsofco": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "When is :focus-visible visible?",
+        "url": "https://bitsofco.de/when-is-focus-visible-visible/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blog1password": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How 1Password for Agents preserves security and privacy",
+        "url": "https://1password.com/blog/1password-for-agents-security-privacy",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogalexmaccaw": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The problem with US healthcare is not capitalism",
+        "url": "https://blog.alexmaccaw.com/the-problem-with-us-healthcare-is-not-capitalism/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogasciinema": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "3.0",
+        "url": "https://blog.asciinema.org/post/three-point-o/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogaxlight": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "My React Talks to Date in Various Formats",
+        "url": "https://blog.axlight.com/posts/my-react-talks-to-date-in-various-formats/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogcoiled": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "One Trillion Row Challenge",
+        "url": "https://docs.coiled.io/blog/1trc.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogfrankel": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Skills across coding assistants",
+        "url": "https://blog.frankel.ch/skills-across-coding-assistants/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogj11y": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "A letter to the AI labs shouldering the great burden of humanity’s survival",
+        "url": "https://blog.j11y.io/2026-09-14_a-letter-to-the-ai-labs/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogjessfraz": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Home Hardware, Part 2: Width Matters",
+        "url": "https://blog.jessfraz.com/post/home-hardware-part-two/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -2486,6 +2654,66 @@
         "rank": 1
       }
     },
+    "blogangular": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Core Vitals Optimization, SSR Deployments, and Signal-First Architecture ⚡",
+        "url": "https://blog.angular.dev/core-vitals-optimization-ssr-deployments-and-signal-first-architecture-be82fd4a8c87?source=rss----447683c3d9a3---4",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogdomenic": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "“We Didn't Start the Scaling”",
+        "url": "https://domenic.me/how-we-didnt-start-the-scaling/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogiconfactory": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Triode: Duo for Youo",
+        "url": "https://blog.iconfactory.com/2026/10/triode-duo-for-youo/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogkenanb": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Converting HSV to RGB",
+        "url": "https://blog.kenanb.com/code/cg/2024/03/03/converting-hsv-to-rgb.html",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogkhanacademy": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How We Rebuilt Khan Academy’s Color System from the Ground Up",
+        "url": "https://blog.khanacademy.org/how-we-rebuilt-khan-academys-color-system-from-the-ground-up/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "susam": {
       "items": 9,
       "unique_urls": 9,
@@ -2638,6 +2866,18 @@
       "top_item": {
         "title": "Progress update",
         "url": "https://rocketgems.com/blog/may-2022-progress/",
+        "score": 5,
+        "rank": 1
+      }
+    },
+    "blogchristianposta": {
+      "items": 5,
+      "unique_urls": 5,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Credential Brokering Patterns for AI Agents Part 3: Protecting the Token Vault with OpenBao",
+        "url": "https://blog.christianposta.com/credential-brokering-patterns-for-ai-agent-egress-part3/",
         "score": 5,
         "rank": 1
       }
