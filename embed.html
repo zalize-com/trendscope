@@ -193,6 +193,19 @@ if (MODE === "weekday") {
     }).join("") || `<li id="err">no weekday data</li>`;
   }).catch(() => { document.getElementById("err").textContent = "weekday data unavailable"; });
 } else
+if (MODE === "rhythm") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/rhythm.html";
+  fetch("docs/api/rhythm.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const srcs = Object.entries(d.sources).slice(0, N);
+    document.getElementById("date").textContent = `capture rhythm · ${Object.keys(d.sources).length} sources · UTC`;
+    document.getElementById("list").innerHTML = srcs.map(([name, v], i) => {
+      const peak = v.counts.indexOf(Math.max(...v.counts));
+      return `<li><span class="rank">${i+1}</span>
+        <span><a href="https://zalize-com.github.io/trendscope/source.html?s=${encodeURIComponent(name)}" target="_blank" rel="noopener">${esc(name)}</a><span class="src">peaks ${String(peak).padStart(2,"0")}:00 · ${v.total} captures</span></span>
+        <span class="score">${v.counts.filter(c=>c>0).length}h</span></li>`;
+    }).join("") || `<li id="err">no rhythm data</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "rhythm data unavailable"; });
+} else
 if (MODE === "domain") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/domains.html";
   fetch("docs/api/domains.json", {cache:"no-cache"}).then(r => r.json()).then(d => {

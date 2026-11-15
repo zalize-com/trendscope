@@ -203,6 +203,24 @@ def main():
                   f, ensure_ascii=False, indent=1)
     print(f"weekday.json: {len(grid)} sources x 7 days")
 
+    # rhythm: hour-of-day (UTC captured_at) x source capture counts
+    hgrid = defaultdict(lambda: [0] * 24)
+    htotals = defaultdict(int)
+    for r in csv.DictReader(open(HIST, encoding="utf-8")):
+        ts, src = r.get("captured_at") or "", r.get("source") or ""
+        m = ts[11:13] if len(ts) >= 13 and ts[10] == "T" else ""
+        if not m.isdigit() or not src:
+            continue
+        hgrid[src][int(m)] += 1
+        htotals[src] += 1
+    with open(os.path.join(API, "rhythm.json"), "w", encoding="utf-8") as f:
+        json.dump({"generated_at": now, "latest_snapshot": max(days),
+                   "days_tracked": len(days), "utc": True,
+                   "sources": {s: {"counts": hgrid[s], "total": htotals[s]}
+                               for s in sorted(htotals, key=lambda k: -htotals[k])}},
+                  f, ensure_ascii=False, indent=1)
+    print(f"rhythm.json: {len(hgrid)} sources x 24 hours")
+
     discussed = sorted(items.values(), key=lambda x: -x["comments"])[:LIMIT]
     heated = sorted((x for x in items.values() if x["score"] >= 50),
                     key=lambda x: -x["comments"] / max(1, x["score"]))[:LIMIT]

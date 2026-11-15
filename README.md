@@ -147,6 +147,7 @@ taxonomy as `topics.html` — niche blogs can embed just their beat),
 `?mode=sources` renders the all-sources stats card (items / unique / one-day%).
 `?mode=velocity` renders the fastest-growing stories card (+/day over multi-day items).
 `?mode=weekday` renders the posting-rhythm card (per-source Mon..Sun counts + peak day).
+`?mode=rhythm` renders the capture-rhythm card (per-source UTC hour counts + peak hour).
 `?theme=light` (or `dark`) overrides the card color scheme.
 
 ## Terminal
