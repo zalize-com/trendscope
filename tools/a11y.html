@@ -145,6 +145,29 @@ function audit(html) {
     if (el.querySelector("a[href],button,input,select,textarea,[tabindex]:not([tabindex='-1'])"))
       add("err", "aria-hidden element contains focusable content", el);
   });
+  const VAGUE = /^(click here|here|read more|more|learn more|link|this|go|继续|更多|点击这里|阅读更多|了解详情)\.?$/i;
+  doc.querySelectorAll("a[href]").forEach(el => {
+    const t = (el.textContent || "").trim();
+    if (t && VAGUE.test(t)) add("warn", `vague link text "${t}" — say what it leads to`, el);
+  });
+  doc.querySelectorAll("area[href]").forEach(el => {
+    if (!el.getAttribute("alt")) add("err", "<area> in image map missing alt", el);
+  });
+  doc.querySelectorAll('input[type="image"]').forEach(el => {
+    if (!el.getAttribute("alt") && !el.getAttribute("aria-label")) add("err", "input[type=image] missing alt", el);
+  });
+  doc.querySelectorAll("[autofocus]").forEach(el => {
+    add("warn", "autofocus moves focus without warning", el);
+  });
+  doc.querySelectorAll("[role='button'],[role='link']").forEach(el => {
+    const t = el.getAttribute("tabindex");
+    if (t === null || +t < 0) add("warn", `${el.getAttribute("role")} role element not keyboard-focusable`, el);
+  });
+  doc.querySelectorAll("a[target='_blank']").forEach(el => {
+    const t = (el.textContent || "") + " " + (el.getAttribute("aria-label") || "");
+    if (!/new (tab|window)|新窗口|新标签/i.test(t))
+      add("warn", "target=_blank link doesn't warn it opens a new tab", el);
+  });
   doc.querySelectorAll("table").forEach(el => {
     if (!el.querySelector("th")) add("warn", "<table> has no <th> headers", el);
   });
