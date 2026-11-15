@@ -186,6 +186,13 @@ GITHUB_TOKEN=... python3 scripts/collect.py   # optional: higher GitHub API limi
 Then serve the dashboard statically from the repo root (e.g. `python3 -m http.server`)
 and open `index.html`.
 
+## Support
+
+This dataset is free forever (CC0). If it saves you time, you can sponsor the
+infrastructure via the **Sponsor** button on this repo — GitHub Sponsors is
+wired up in `.github/FUNDING.yml`. Sponsorship keeps the twice-daily collection,
+the public API files, and the 72 free tools running.
+
 ## Attribution
 
 Free to use, share and build on — including commercially. When you publish or
