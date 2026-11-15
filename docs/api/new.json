@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T12:33:09.244852+00:00",
+ "generated_at": "2026-11-15T12:34:35.531285+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 296,
- "new_items": 170,
+ "total_items": 297,
+ "new_items": 171,
  "by_source": {
   "producthunt": 45,
   "show_hn": 20,
@@ -11,7 +11,7 @@
   "arstechnica": 16,
   "slashdot": 16,
   "arxiv": 15,
-  "theverge": 10,
+  "theverge": 11,
   "lobsters": 8,
   "github_trending": 2,
   "ask_hn": 1,
@@ -1373,6 +1373,14 @@
   {
    "title": "FAA lifts nationwide ground stop that blocked takeoffs for hours",
    "url": "https://www.theverge.com/news/1033489/faa-ground-stop",
+   "source": "theverge",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Amazon has a plan to index the world’s online shopping data",
+   "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
    "source": "theverge",
    "rank": 10,
    "score": 1,
