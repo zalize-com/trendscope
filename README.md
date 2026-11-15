@@ -13,6 +13,7 @@
 
 **Live dashboard:** `https://zalize-com.github.io/trendscope/` *(enable Pages: Settings → Pages → Deploy from branch → `main` / root)*
 **Latest data:** [`data/latest.json`](data/latest.json)
+**Fully reproducible:** every snapshot is produced by `python3 scripts/collect.py` — stdlib only, no dependencies, no keys for most sources. Trust the data because you can rebuild it.
 
 ![dashboard demo](docs/demo.webp)
 
