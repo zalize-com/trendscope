@@ -19,10 +19,14 @@
     --dim: #8b949e; --accent: #58a6ff;
   }
   @media (prefers-color-scheme: light) {
-    :root {
+    :root:not([data-theme]) {
       --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --fg: #1f2328;
       --dim: #59636e; --accent: #0969da;
     }
+  }
+  :root[data-theme="light"] {
+    --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --fg: #1f2328;
+    --dim: #59636e; --accent: #0969da;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -75,6 +79,7 @@ const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B" : n >= 1e6 ? (n/1e6).toFixed(
              : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
 const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
 const P = new URLSearchParams(location.search);
+{ const th = P.get("theme"); if (th === "light" || th === "dark") document.documentElement.setAttribute("data-theme", th); }
 const N = Math.min(Math.max(parseInt(P.get("n") || "10"), 5), 30);
 const QS = (P.get("s") || "").toLowerCase();   // ?s=github_trending — single source
 const QQ = (P.get("q") || "").toLowerCase();   // ?q=llm — title/tag keyword
