@@ -76,6 +76,7 @@
     <button data-tool="ccommit">commit msg</button>
     <button data-tool="ts">JSON → TS</button>
     <button data-tool="csvprof">CSV profile</button>
+    <button data-tool="mcp">MCP config</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -264,12 +265,21 @@
     <div class="err" id="prof-err"></div>
   </div>
 
+
+  <div class="panel" id="p-mcp">
+    <h2>MCP server config validator</h2>
+    <p class="hint">Paste an <code>mcp.json</code> / <code>claude_desktop_config.json</code> — validates each server entry: stdio needs <code>command</code>, remote needs <code>url</code>, flags inline secrets and unpinned packages.</p>
+    <textarea id="mcp-in" placeholder='{"mcpServers":{"github":{"command":"npx","args":["-y","@modelcontextprotocol/server-github"],"env":{"GITHUB_TOKEN":"ghp_..."}}}}' style="width:100%;height:140px"></textarea>
+    <div class="out" id="mcp-out" style="white-space:pre-wrap"></div>
+    <div class="err" id="mcp-err"></div>
+  </div>
+
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts","csvprof"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts","csvprof","mcp"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -770,6 +780,58 @@ function entGo(mode) {
     hist.innerHTML = `<span style="color:var(--dim)">recent:</span> ` + seen.slice(0, 20).join(" ");
   });
 })();
+(() => {
+  const esc = t => String(t).replace(/[&<>]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+  const SECRET = /^(AKIA[0-9A-Z]{16}|xox[baprs]-|gh[pousr]_[A-Za-z0-9]{20,}|sk-[A-Za-z0-9_-]{16,}|-----BEGIN)/;
+  function check(name, c, out){
+    if(!c || typeof c !== "object" || Array.isArray(c)){ out.push(`✗ ${name}: entry is not an object`); return; }
+    const hasCmd = typeof c.command === "string" && c.command;
+    const hasUrl = typeof c.url === "string" && /^https?:\/\//.test(c.url);
+    const type = c.type || c.transport;
+    if(hasCmd && hasUrl) out.push(`⚠ ${name}: has both command and url — clients pick one transport, ambiguous`);
+    else if(!hasCmd && !hasUrl) out.push(`✗ ${name}: needs either "command" (stdio) or "url" (http/sse)`);
+    else {
+      const kind = hasCmd ? "stdio" : "remote";
+      let extra = "";
+      if(hasCmd){
+        const cmd = c.command;
+        if((cmd==="npx"||cmd==="uvx"||cmd==="bunx") && Array.isArray(c.args) && c.args.length){
+          const pkg = c.args.filter(a=>!a.startsWith("-")).pop()||"";
+          if(pkg && !pkg.includes("@") ) extra += " · ⚠ package not version-pinned";
+        }
+        if(c.args!==undefined && !(Array.isArray(c.args)&&c.args.every(a=>typeof a==="string")))
+          extra += " · ✗ args must be an array of strings";
+      }
+      if(hasUrl && c.url && !/^https?:\/\//.test(c.url)) extra += " · ✗ url must be http(s)";
+      out.push(`✓ ${name} (${kind})${extra}`);
+    }
+    if(type && !["stdio","sse","streamable-http","http"].includes(type))
+      out.push(`   ⚠ unknown type/transport "${esc(type)}"`);
+    if(c.env!==undefined){
+      if(typeof c.env!=="object"||Array.isArray(c.env)) out.push(`   ✗ env must be an object`);
+      else for(const [k,v] of Object.entries(c.env)){
+        if(typeof v==="string" && SECRET.test(v))
+          out.push(`   ⚠ ${k}: looks like a raw secret — prefer an env var reference over committing it`);
+      }
+    }
+    const known = new Set(["command","args","url","type","transport","env","cwd","headers","description","disabled","autoApprove","alwaysAllow","timeout"]);
+    for(const k of Object.keys(c)) if(!known.has(k)) out.push(`   ⚠ unknown key "${esc(k)}"`);
+  }
+  function run(){
+    $("mcp-err").textContent=""; $("mcp-out").innerHTML="";
+    const raw = $("mcp-in").value.trim(); if(!raw) return;
+    let doc; try{ doc = JSON.parse(raw); }catch(e){ $("mcp-err").textContent="JSON parse error: "+e.message; return; }
+    const servers = doc.mcpServers || doc.servers || doc;
+    if(!servers || typeof servers!=="object" || Array.isArray(servers)){ $("mcp-err").textContent="expected {mcpServers: {name: {...}}}"; return; }
+    const out = [];
+    const names = Object.keys(servers);
+    if(!names.length){ $("mcp-err").textContent="no server entries found"; return; }
+    names.forEach(n=>check(n, servers[n], out));
+    $("mcp-out").innerHTML = `<b>${names.length} server${names.length>1?"s":""}</b>\n` + out.join("\n");
+  }
+  $("mcp-in").addEventListener("input", run);
+})();
+
 
 // json diff
 (function(){
