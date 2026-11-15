@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T15:28:29.694676+00:00",
+ "generated_at": "2026-11-15T15:31:11.860590+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 895,
- "new_items": 769,
+ "total_items": 910,
+ "new_items": 784,
  "by_source": {
   "producthunt": 45,
   "hackernews": 26,
@@ -29,6 +29,7 @@
   "lemmy": 15,
   "lwn": 15,
   "martinfowler": 15,
+  "mongodb": 15,
   "overreacted": 15,
   "philopp": 15,
   "pragmatic": 15,
@@ -3612,6 +3613,126 @@
    "url": "https://engineering.fb.com/2026/10/27/security/privacylib/",
    "source": "meta_eng",
    "rank": 9,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Model an Insurance Policy Without Joining Dozens of Tables",
+   "url": "https://www.mongodb.com/company/blog/innovation/how-model-insurance-policy-without-joining-dozens-tables",
+   "source": "mongodb",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Optimizing Document Lookup: Making Atlas Search and Vector Search Up to 5x Faster",
+   "url": "https://www.mongodb.com/company/blog/engineering/optimizing-document-lookup-making-atlas-search-vector-search-up-to-5x-faster",
+   "source": "mongodb",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The $5 Trillion Shift: Preparing Retail Backends for the Age of AI Agents",
+   "url": "https://www.mongodb.com/company/blog/innovation/5-trillion-shift-preparing-retail-backends-for-age-of-ai-agents",
+   "source": "mongodb",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Observe.AI Used MongoDB Resharding to Scale Its AI Platform",
+   "url": "https://www.mongodb.com/company/blog/innovation/how-observe-ai-used-mongodb-resharding-scale-ai-platform",
+   "source": "mongodb",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing the MongoDB Vercel AI SDK Integration: Persistent Memory for AI Applications",
+   "url": "https://www.mongodb.com/company/blog/product-release-announcements/introducing-mongodb-vercel-ai-sdk-integration-persistent-memory-applications",
+   "source": "mongodb",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing the MongoDB Claude SDK Session Adapter: Durable Session Storage for Agents",
+   "url": "https://www.mongodb.com/company/blog/product-release-announcements/introducing-claude-sdk-session-adapter-durable-session-storage-for-agents",
+   "source": "mongodb",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing the MongoDB Google ADK Integration: Durable Memory for Agent State",
+   "url": "https://www.mongodb.com/company/blog/product-release-announcements/introducing-mongodb-google-adk-integration-durable-memory-agent-state",
+   "source": "mongodb",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Atlas Data Federation and Online Archive Can Now Be Deployed in Azure",
+   "url": "https://www.mongodb.com/company/blog/product-release-announcements/atlas-data-federation-online-archive-can-now-be-deployed-in-azure",
+   "source": "mongodb",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Search for Agents: Announcing Automated Embedding in MongoDB Atlas",
+   "url": "https://www.mongodb.com/company/blog/product-release-announcements/ai-search-for-agents-announcing-automated-embedding-atlas",
+   "source": "mongodb",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Actionable Banking Is the Critical Stepping Stone to Full Autonomy",
+   "url": "https://www.mongodb.com/company/blog/innovation/why-actionable-banking-is-critical-stepping-stone-full-autonomy",
+   "source": "mongodb",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building an Agentic Warehouse Management System—Part 3: Tools, Decisions, and Actions",
+   "url": "https://www.mongodb.com/company/blog/technical/building-an-agentic-warehouse-management-system-part-3-tools-decisions-actions",
+   "source": "mongodb",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quick Start: C# and MongoDB - Starting and Setup",
+   "url": "https://www.mongodb.com/company/blog/technical/quick-start-c-sharp-and-mongodb-starting-and-setup",
+   "source": "mongodb",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Atlas App Connections: Secure, One-Click Access for AI Tools",
+   "url": "https://www.mongodb.com/company/blog/product-release-announcements/introducing-atlas-app-connections-secure-one-click-access-for-ai-tools",
+   "source": "mongodb",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building Next-gen AI agents: The MongoDB Atlas-Microsoft Foundry Integration",
+   "url": "https://www.mongodb.com/company/blog/innovation/building-next-gen-ai-agents-mongodb-atlas-integration-microsoft-foundry",
+   "source": "mongodb",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Automated, Secure, and Scalable: Reference Implementation for Atlas on Azure",
+   "url": "https://www.mongodb.com/company/blog/innovation/automated-secure-scalable-reference-implementation-mongodb-atlas-on-azure",
+   "source": "mongodb",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },

@@ -82,6 +82,7 @@ A daily cross-source snapshot of developer attention:
 | Vercel Blog | frontend cloud platform | `vercel.com/atom` |
 | Meta Engineering | facebook-scale infrastructure | `engineering.fb.com/feed/` |
 | Airbnb Engineering | marketplace infrastructure | `medium.com/airbnb-engineering` |
+| MongoDB Blog | database engineering | `mongodb.com/blog/rss` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
