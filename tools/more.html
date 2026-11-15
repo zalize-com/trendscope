@@ -181,6 +181,8 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/turndown@7.2.2/dist/turndown.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/turndown-plugin-gfm@1.0.2/dist/turndown-plugin-gfm.min.js"></script>
 <script>
 const TOOLS = [
   {id:"diff", label:"Text diff"},
@@ -379,55 +381,12 @@ if(document.getElementById("toc-in")){
 // ---- html2md ----
 {
   const $ = id => document.getElementById(id);
-  function conv(node, ctx) {
-    if (node.nodeType === 3) return node.textContent;
-    if (node.nodeType !== 1) return "";
-    const t = node.tagName.toLowerCase();
-    const kids = n => [...n.childNodes].map(c => conv(c, ctx)).join("");
-    const block = x => "\n\n" + x.trim() + "\n\n";
-    switch (t) {
-      case "h1": case "h2": case "h3": case "h4": case "h5": case "h6":
-        return block("#".repeat(+t[1]) + " " + kids(node));
-      case "p": return block(kids(node));
-      case "br": return "  \n";
-      case "hr": return block("---");
-      case "a": { const h = node.getAttribute("href") || "";
-        const tx = kids(node).trim() || h;
-        return h ? `[${tx}](${h})` : tx; }
-      case "img": { const src = node.getAttribute("src") || "";
-        const alt = node.getAttribute("alt") || "";
-        return `![${alt}](${src})`; }
-      case "strong": case "b": return `**${kids(node)}**`;
-      case "em": case "i": return `*${kids(node)}*`;
-      case "code": { const txt = node.textContent;
-        return txt.includes("`") ? "`` " + txt + " ``" : "`" + txt + "`"; }
-      case "pre": return block("```\n" + node.textContent.replace(/\n$/, "") + "\n```");
-      case "blockquote": return block(kids(node).trim().split("\n").map(l => "> " + l).join("\n"));
-      case "ul": case "ol": {
-        const items = [...node.children].filter(c => c.tagName === "LI")
-          .map((c, i) => (t === "ol" ? `${i + 1}. ` : "- ") +
-               kids(c).trim().replace(/\n+/g, "\n  ")).join("\n");
-        return block(items); }
-      case "table": {
-        const rows = [...node.querySelectorAll("tr")].map(tr =>
-          "| " + [...tr.children].map(c => kids(c).trim().replace(/\|/g, "\\|")).join(" | ") + " |");
-        if (rows.length > 0) {
-          const ncols = rows[0].split("|").length - 2;
-          rows.splice(1, 0, "| " + Array(ncols).fill("---").join(" | ") + " |");
-        }
-        return block(rows.join("\n")); }
-      case "script": case "style": case "noscript": case "template": return "";
-      default: return kids(node);
-    }
-  }
+  const tds = new TurndownService({ headingStyle: "atx", codeBlockStyle: "fenced" });
+  tds.use(turndownPluginGfm.gfm);
   function go() {
     const src = $("h2m-in").value;
     try {
-      const doc = new DOMParser().parseFromString(src, "text/html");
-      ["script","style","noscript","template"].forEach(t =>
-        doc.querySelectorAll(t).forEach(n => n.remove()));
-      const out = conv(doc.body, {}).replace(/\n{3,}/g, "\n\n").trim();
-      $("h2m-out").textContent = out || "(no output)";
+      $("h2m-out").textContent = tds.turndown(src) || "(no output)";
     } catch (e) { $("h2m-out").textContent = "parse error: " + e.message; }
   }
   $("h2m-in").addEventListener("input", go);
