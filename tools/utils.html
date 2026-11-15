@@ -317,6 +317,19 @@ cherry"></textarea>
     <div class="out" id="sl-stat"></div>
   </div>
 
+  <div class="tool" data-tool="uuid">
+    <h2>uuid v4 generator</h2>
+    <p class="hint">Random UUIDs from <code>crypto.randomUUID()</code> (CSPRNG), batch of N.</p>
+    <p>
+      <input id="uu-n" type="number" value="5" min="1" max="100" style="width:4em">
+      <label><input type="checkbox" id="uu-up"> uppercase</label>
+      <label><input type="checkbox" id="uu-nodash"> no dashes</label>
+      <button class="go" id="uu-go">generate</button>
+      <button class="go" id="uu-copy">copy</button>
+    </p>
+    <textarea id="uu-out" rows="6" style="width:100%" readonly></textarea>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -343,6 +356,7 @@ const TOOLS = [
   {id:"pwgen",  label:"password gen"},
   {id:"case",   label:"case converter"},
   {id:"sortlines",label:"sort & dedupe lines"},
+  {id:"uuid",  label:"uuid v4 generator"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -964,6 +978,20 @@ document.querySelectorAll('[data-sl]').forEach(b=>b.onclick=()=>{
   document.getElementById('sl-out').value=lines.join('\n');
   document.getElementById('sl-stat').textContent=lines.length+' lines out';
 });
+
+// --- uuid v4 generator ---
+document.getElementById('uu-go').onclick=()=>{
+  const n=Math.max(1,Math.min(100,+document.getElementById('uu-n').value||5));
+  const up=document.getElementById('uu-up').checked, nd=document.getElementById('uu-nodash').checked;
+  let out=[];
+  for(let i=0;i<n;i++){let u=crypto.randomUUID();if(nd)u=u.replaceAll('-','');if(up)u=u.toUpperCase();out.push(u);}
+  document.getElementById('uu-out').value=out.join('\n');
+};
+document.getElementById('uu-copy').onclick=async()=>{
+  await navigator.clipboard.writeText(document.getElementById('uu-out').value);
+  document.getElementById('uu-copy').textContent='copied!';
+  setTimeout(()=>document.getElementById('uu-copy').textContent='copy',1200);
+};
 </script>
 </body>
 </html>
