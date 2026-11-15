@@ -183,6 +183,7 @@
 <script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/turndown@7.2.2/dist/turndown.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/turndown-plugin-gfm@1.0.2/dist/turndown-plugin-gfm.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/diff@7.0.0/dist/diff.min.js"></script>
 <script>
 const TOOLS = [
   {id:"diff", label:"Text diff"},
@@ -210,33 +211,20 @@ document.querySelectorAll(".tool").forEach(d =>
 tabsEl.querySelectorAll(".tab").forEach(x =>
   x.classList.toggle("active", x.dataset.t === t0));
 
-// ---- Diff (LCS over lines) ----
-function lcsDiff(a, b) {
-  const n = a.length, m = b.length;
-  const dp = Array.from({length: n + 1}, () => new Uint32Array(m + 1));
-  for (let i = n - 1; i >= 0; i--)
-    for (let j = m - 1; j >= 0; j--)
-      dp[i][j] = a[i] === b[j] ? dp[i+1][j+1] + 1 : Math.max(dp[i+1][j], dp[i][j+1]);
-  const ops = [];
-  let i = 0, j = 0;
-  while (i < n && j < m) {
-    if (a[i] === b[j]) { ops.push(["ctx", a[i]]); i++; j++; }
-    else if (dp[i+1][j] >= dp[i][j+1]) { ops.push(["del", a[i]]); i++; }
-    else { ops.push(["add", b[j]]); j++; }
-  }
-  while (i < n) ops.push(["del", a[i++]]);
-  while (j < m) ops.push(["add", b[j++]]);
-  return ops;
-}
+// ---- Diff (jsdiff library) ----
 function esc(s) { return s.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
 function diffGo() {
-  const a = document.getElementById("diff-a").value.split("\n");
-  const b = document.getElementById("diff-b").value.split("\n");
-  const ops = lcsDiff(a, b);
+  const a = document.getElementById("diff-a").value;
+  const b = document.getElementById("diff-b").value;
+  const ops = [];
+  for (const p of Diff.diffLines(a, b)) {
+    const k = p.added ? "add" : p.removed ? "del" : "ctx";
+    for (const line of p.value.replace(/\n$/, "").split("\n")) ops.push([k, line]);
+  }
   const adds = ops.filter(o => o[0] === "add").length;
   const dels = ops.filter(o => o[0] === "del").length;
   document.getElementById("diff-stat").innerHTML =
-    adds + dels === 0 ? `<span class="ok">identical — ${a.length} lines</span>`
+    adds + dels === 0 ? `<span class="ok">identical — ${a.split("\n").length} lines</span>`
                       : `<span class="ok">+${adds}</span> / <span class="bad">−${dels}</span> lines`;
   document.getElementById("diff-out").innerHTML = ops.map(([k, line]) =>
     `<span class="diff-${k}">${k === "add" ? "+ " : k === "del" ? "− " : "  "}${esc(line) || " "}</span>`).join("");
