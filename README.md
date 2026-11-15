@@ -124,6 +124,10 @@ A daily cross-source snapshot of developer attention:
 | Richard Schneeman | Ruby performance and open source | `schneems.com/feed.xml` |
 | lcamtuf | security research and essays | `lcamtuf.substack.com/feed` |
 | Copy Construct | distributed systems essays | `copyconstruct.medium.com/feed` |
+| Verdagon | Vale language design | `verdagon.dev/rss.xml` |
+| BitBashing | low-level systems essays | `bitbashing.io/feed.xml` |
+| ntietz | distributed systems essays | `ntietz.com/atom.xml` |
+| Murat Demirbas | distributed systems papers | `muratbuffalo.blogspot.com/feeds/posts/default` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:15:44.679081+00:00",
+ "generated_at": "2026-11-15T16:17:08.304178+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1475,
- "new_items": 1349,
+ "total_items": 1529,
+ "new_items": 1403,
  "by_source": {
   "producthunt": 45,
   "show_hn": 31,
@@ -49,7 +49,9 @@
   "mitchw": 15,
   "mongodb": 15,
   "mtlynch": 15,
+  "murat": 15,
   "nelhage": 15,
+  "ntietz": 15,
   "overreacted": 15,
   "philopp": 15,
   "pragmatic": 15,
@@ -63,6 +65,7 @@
   "theverge": 15,
   "troyhunt": 15,
   "vercel": 15,
+  "verdagon": 15,
   "beesbuzz": 14,
   "aphyr": 12,
   "baeldung": 12,
@@ -94,6 +97,7 @@
   "tedinski": 10,
   "wingolog": 10,
   "xeiaso": 10,
+  "bitbashing": 9,
   "meta_eng": 9,
   "susam": 9,
   "hackaday": 8,
@@ -1111,6 +1115,78 @@
    "url": "https://twobithistory.org/2019/01/31/simula.html",
    "source": "birklund",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simulating Airband AM Radios",
+   "url": "https://bitbashing.io/am-radio.html",
+   "source": "bitbashing",
+   "rank": 1,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Arc Troopers: Adventures in Async Rust",
+   "url": "https://bitbashing.io/async-arc.html",
+   "source": "bitbashing",
+   "rank": 2,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Concurrency in Haskell: Fast, Simple, Correct",
+   "url": "https://bitbashing.io/haskell-concurrency.html",
+   "source": "bitbashing",
+   "rank": 3,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unsafe at Any Speed: Tradeoffs and values in the Rust ecosystem",
+   "url": "https://bitbashing.io/rust-http.html",
+   "source": "bitbashing",
+   "rank": 4,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Garbage Collection for Systems Programmers",
+   "url": "https://bitbashing.io/gc-for-systems-programmers.html",
+   "source": "bitbashing",
+   "rank": 5,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Async Rust Is A Bad Language",
+   "url": "https://bitbashing.io/async-rust.html",
+   "source": "bitbashing",
+   "rank": 6,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stating the Obvious: Error Handling",
+   "url": "https://bitbashing.io/stating-the-obvious-error-handling.html",
+   "source": "bitbashing",
+   "rank": 7,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Modern LaTeX",
+   "url": "https://bitbashing.io/modern-latex.html",
+   "source": "bitbashing",
+   "rank": 8,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What every systems programmer should know about concurrency",
+   "url": "https://bitbashing.io/concurrency-primer.html",
+   "source": "bitbashing",
+   "rank": 9,
    "score": 1,
    "metric": "feed rank"
   },
@@ -6755,6 +6831,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Writing as a thinking tool",
+   "url": "https://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
+   "source": "murat",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TLA-Verus: LLM agents prove temporal properties of TLA+ specs",
+   "url": "https://muratbuffalo.blogspot.com/2026/10/tla-verus-llm-agents-prove-temporal.html",
+   "source": "murat",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Man from the Future: Why Johnny Can't Stop Abstracting",
+   "url": "https://muratbuffalo.blogspot.com/2026/10/the-man-from-future-why-johnny-cant.html",
+   "source": "murat",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Do the Frontier Labs Actually Believe?",
+   "url": "https://muratbuffalo.blogspot.com/2026/10/what-do-frontier-labs-actually-believe.html",
+   "source": "murat",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HPTS 2026 (Day 2 and Day 3)",
+   "url": "https://muratbuffalo.blogspot.com/2026/10/hpts-2026-day-2-and-day-3.html",
+   "source": "murat",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HPTS 2026 (Day 1)",
+   "url": "https://muratbuffalo.blogspot.com/2026/10/hpts-2026-day-1.html",
+   "source": "murat",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Atlas Infinite: MongoDB's Disaggregated Architecture",
+   "url": "https://muratbuffalo.blogspot.com/2026/10/atlas-infinite-mongodbs-disaggregated.html",
+   "source": "murat",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Happens When the Model Eats the Stack? Rethinking the Research Agenda for Data Agents to Withstand the Bitter Lesson",
+   "url": "https://muratbuffalo.blogspot.com/2026/09/what-happens-when-model-eats-stack.html",
+   "source": "murat",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In Search of a Compositional Theory of Self-Stabilization",
+   "url": "https://muratbuffalo.blogspot.com/2026/09/in-search-of-compositional-theory-of.html",
+   "source": "murat",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Academic Doomerism",
+   "url": "https://muratbuffalo.blogspot.com/2026/09/academic-doomerism.html",
+   "source": "murat",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Jetpack: Consensus Made Generally Fast (OSDI '26)",
+   "url": "https://muratbuffalo.blogspot.com/2026/09/jetpack-consensus-made-generally-fast.html",
+   "source": "murat",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Metastability as a failed conditional discharge of rely-guarantee composition",
+   "url": "https://muratbuffalo.blogspot.com/2026/09/metastability-as-failed-conditional.html",
+   "source": "murat",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Safest Job from AI may be Writing",
+   "url": "https://muratbuffalo.blogspot.com/2026/08/the-safest-job-from-ai-may-be-writing.html",
+   "source": "murat",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Composition and Modular Verification of TLA+ specs",
+   "url": "https://muratbuffalo.blogspot.com/2026/08/composition-and-modular-verification-of.html",
+   "source": "murat",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughts on LLMs",
+   "url": "https://muratbuffalo.blogspot.com/2026/08/thoughts-on-llms.html",
+   "source": "murat",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Does meditation experience improve success with the jhanas?",
    "url": "http://nadia.xyz/meditation-experience",
    "source": "nadia",
@@ -7031,6 +7227,126 @@
    "url": "https://netflixtechblog.com/timeseries-tiered-storage-journey-kafka-flink-streams-to-native-cassandra-cold-reads-e59d597c9d60?source=rss----2615bd06b42e---4",
    "source": "netflix",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Where I've been, and the future of this blog",
+   "url": "https://ntietz.com/blog/where-ive-been/?utm_source=atom&utm_medium=feed",
+   "source": "ntietz",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Let yourself fall down more",
+   "url": "https://ntietz.com/blog/let-yourself-fall-down-more/?utm_source=atom&utm_medium=feed",
+   "source": "ntietz",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You can't always fix it",
+   "url": "https://ntietz.com/blog/you-cant-always-fix-it/?utm_source=atom&utm_medium=feed",
+   "source": "ntietz",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Binding port 0 to avoid port collisions",
+   "url": "https://ntietz.com/blog/binding-ephemeral-port/?utm_source=atom&utm_medium=feed",
+   "source": "ntietz",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TIL: Docker log rotation",
+   "url": "https://ntietz.com/blog/til-docker-log-rotation/?utm_source=atom&utm_medium=feed",
+   "source": "ntietz",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using an engineering notebook",
+   "url": "https://ntietz.com/blog/using-an-engineering-notebook/?utm_source=atom&utm_medium=feed",
+   "source": "ntietz",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Some good English word datasets",
+   "url": "https://ntietz.com/blog/good-english-word-datasets/?utm_source=atom&utm_medium=feed",
+   "source": "ntietz",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making niche solutions is the point",
+   "url": "https://ntietz.com/blog/making-niche-solutions-is-the-point/?utm_source=atom&utm_medium=feed",
+   "source": "ntietz",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "3D printing my laptop ergonomic setup",
+   "url": "https://ntietz.com/blog/3d-printing-my-laptop-ergonomic-setup/?utm_source=atom&utm_medium=feed",
+   "source": "ntietz",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bayes theorem and how we talk about medical tests",
+   "url": "https://ntietz.com/blog/bayes-theorem-medical-tests/?utm_source=atom&utm_medium=feed",
+   "source": "ntietz",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reflecting on 2025, preparing for 2026",
+   "url": "https://ntietz.com/blog/reflecting-on-2025-preparing-for-2026/?utm_source=atom&utm_medium=feed",
+   "source": "ntietz",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A new system for organizing my writing and projects",
+   "url": "https://ntietz.com/blog/a-system-for-organizing-my-blog-writing/?utm_source=atom&utm_medium=feed",
+   "source": "ntietz",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Automating updates to a digital vigil",
+   "url": "https://ntietz.com/blog/automating-updates-to-a-digital-vigil/?utm_source=atom&utm_medium=feed",
+   "source": "ntietz",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Interview with a new hosting provider founder",
+   "url": "https://ntietz.com/blog/andromeda-industries-interview/?utm_source=atom&utm_medium=feed",
+   "source": "ntietz",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Custom for designing, off-the-shelf for shipping",
+   "url": "https://ntietz.com/blog/custom-for-designing-offtheshelf-for-shipping/?utm_source=atom&utm_medium=feed",
+   "source": "ntietz",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -10734,6 +11050,126 @@
    "title": "Gemini 4 Carbon now available on AI Gateway",
    "url": "https://vercel.com/changelog/gemini-4-carbon-now-available-on-ai-gateway",
    "source": "vercel",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A New Way to Think About Borrow Checking (In Reverse)",
+   "url": "https://verdagon.dev/blog/reverse-borrow-checking",
+   "source": "verdagon",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Valen's Memory Safety: A New Kind of Borrow Checking",
+   "url": "https://verdagon.dev/blog/valen-group-borrowing",
+   "source": "verdagon",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Second Golden Spike: Memory Safety Across the Valen/Rust Boundary",
+   "url": "https://verdagon.dev/blog/boundary-memory-safety",
+   "source": "verdagon",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Golden Spike, and Resurrecting the Vale(n) Programming Language",
+   "url": "https://verdagon.dev/blog/golden-spike-reviving-vale-valen",
+   "source": "verdagon",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ante: A New Way to Blend Borrow Checking and Reference Counting",
+   "url": "https://verdagon.dev/blog/ante-blending-borrowing-rc",
+   "source": "verdagon",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Impossible Optimization, and the Metaprogramming To Achieve It",
+   "url": "https://verdagon.dev/blog/impossible-optimization",
+   "source": "verdagon",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Group Borrowing: Zero-Cost Memory Safety with Fewer Restrictions",
+   "url": "https://verdagon.dev/blog/group-borrowing",
+   "source": "verdagon",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Joining the Mojo Compiler Team",
+   "url": "https://verdagon.dev/blog/on-joining-mojo-compiler-team",
+   "source": "verdagon",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Crossing the Impossible FFI Boundary, and My Gradual Descent Into Madness",
+   "url": "https://verdagon.dev/blog/exploring-seamless-rust-interop-part-2",
+   "source": "verdagon",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exploring Seamless Rust Interop for Newer Languages, Part 1",
+   "url": "https://verdagon.dev/blog/exploring-seamless-rust-interop-part-1",
+   "source": "verdagon",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Higher RAII, and the Seven Arcane Uses of Linear Types",
+   "url": "https://verdagon.dev/blog/higher-raii-uses-linear-types",
+   "source": "verdagon",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Layer-wise inferencing + batching: Small VRAM doesn't limit LLM throughput anymore",
+   "url": "https://verdagon.dev/blog/llm-throughput-not-ram-limited",
+   "source": "verdagon",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Borrow checking, RC, GC, and the Eleven (!) Other Memory Safety Approaches",
+   "url": "https://verdagon.dev/grimoire/grimoire",
+   "source": "verdagon",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vale's First Prototype for Immutable Region Borrowing",
+   "url": "https://verdagon.dev/blog/first-regions-prototype",
+   "source": "verdagon",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generational References (Expanded)",
+   "url": "https://verdagon.dev/blog/generational-references",
+   "source": "verdagon",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"

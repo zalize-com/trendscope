@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T16:15:44.679081+00:00",
+ "generated_at": "2026-11-15T16:17:08.304178+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 310,
+ "total": 313,
  "domains": [
   {
    "hostname": "reuters.com",
@@ -110,6 +110,22 @@
     "score": 15,
     "metric": "arxiv recent",
     "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "muratbuffalo.blogspot.com",
+   "days_on_board": 2,
+   "items": 16,
+   "sources": [
+    "hackernews",
+    "murat"
+   ],
+   "top_hit": {
+    "title": "Writing as a thinking tool",
+    "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
+    "score": 475,
+    "metric": "points",
+    "date": "2026-11-08"
    }
   },
   {
@@ -751,22 +767,6 @@
    "top_hit": {
     "title": "How Pinterest Improved Analytics Agent Compliance with Loop Engineering",
     "url": "https://medium.com/pinterest-engineering/how-pinterest-improved-analytics-agent-compliance-with-loop-engineering-d3c52d0abaa2?source=rss-ef81ef829bcb------2",
-    "score": 10,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "surfingcomplexity.blog",
-   "days_on_board": 1,
-   "items": 20,
-   "sources": [
-    "lorinhochstein",
-    "surfingcomplexity"
-   ],
-   "top_hit": {
-    "title": "Constraints and production pressure at eMudhra",
-    "url": "https://surfingcomplexity.blog/2026/11/12/constraints-and-production-pressure-at-emudhra/",
     "score": 10,
     "metric": "feed rank",
     "date": "2026-11-15"
