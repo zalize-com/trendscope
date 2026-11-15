@@ -88,6 +88,7 @@ A daily cross-source snapshot of developer attention:
 | Aphyr | Jepsen distributed-systems analyses | `aphyr.com/posts.atom` |
 | This Week in Rust | Rust community newsletter | `this-week-in-rust.org/rss.xml` |
 | Python Blog | official Python announcements | `blog.python.org/feeds/posts/default` |
+| Rands in Repose | engineering management essays | `randsinrepose.com/feed/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
