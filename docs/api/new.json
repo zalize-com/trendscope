@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T14:11:36.320326+00:00",
+ "generated_at": "2026-11-15T14:14:03.426177+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 539,
- "new_items": 413,
+ "total_items": 554,
+ "new_items": 428,
  "by_source": {
   "producthunt": 45,
   "show_hn": 21,
@@ -15,6 +15,7 @@
   "cheney": 15,
   "codinghorror": 15,
   "echojs": 15,
+  "hynek": 15,
   "infoq": 15,
   "lemmy": 15,
   "lwn": 15,
@@ -1139,6 +1140,126 @@
    "rank": 20,
    "score": 56,
    "metric": "points"
+  },
+  {
+   "title": "Why I Still Use Python Virtual Environments in Docker",
+   "url": "https://hynek.me/articles/docker-virtualenv/",
+   "source": "hynek",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Production-ready Python Docker Containers with uv",
+   "url": "https://hynek.me/articles/docker-uv/",
+   "source": "hynek",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python Project-Local Virtualenv Management Redux",
+   "url": "https://hynek.me/articles/python-virtualenv-redux/",
+   "source": "hynek",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don’t Start Pull Requests from Your Main Branch",
+   "url": "https://hynek.me/articles/pull-requests-branch/",
+   "source": "hynek",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Two Ways to Turbo-Charge tox",
+   "url": "https://hynek.me/articles/turbo-charge-tox/",
+   "source": "hynek",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I Like Nox",
+   "url": "https://hynek.me/articles/why-i-like-nox/",
+   "source": "hynek",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Surprising Consequences of macOS’s Environment Variable Sanitization",
+   "url": "https://hynek.me/articles/macos-dyld-env/",
+   "source": "hynek",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I’m a Productive Programmer With a Memory of a Fruit Fly",
+   "url": "https://hynek.me/articles/productive-fruit-fly-programmer/",
+   "source": "hynek",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Recursive Optional Dependencies in Python",
+   "url": "https://hynek.me/articles/python-recursive-optional-dependencies/",
+   "source": "hynek",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "“Don’t Mock What You Don’t Own” in 5 Minutes",
+   "url": "https://hynek.me/articles/what-to-mock-in-5-mins/",
+   "source": "hynek",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "import attrs",
+   "url": "https://hynek.me/articles/import-attrs/",
+   "source": "hynek",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Ditch Codecov for Python Projects",
+   "url": "https://hynek.me/articles/ditch-codecov-python/",
+   "source": "hynek",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing a New Section: TIL",
+   "url": "https://hynek.me/articles/til/",
+   "source": "hynek",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Subclassing in Python Redux",
+   "url": "https://hynek.me/articles/python-subclassing-redux/",
+   "source": "hynek",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Canonical SEO Failure",
+   "url": "https://hynek.me/articles/canonical-seo-fail/",
+   "source": "hynek",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
   },
   {
    "title": "Anthropic Outlines Its AI-Powered Code Review Process for Claude Code",

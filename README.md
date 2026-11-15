@@ -55,6 +55,7 @@ A daily cross-source snapshot of developer attention:
 | Eli Bendersky | deep-dive dev blog | `eli.thegreenplace.net/feeds/all.atom.xml` |
 | Dave Cheney | Go/engineering blog | `dave.cheney.net/feed` |
 | Lucumr | Armin Ronacher blog | `lucumr.pocoo.org/feed.atom` |
+| Hynek | Python ecosystem blog | `hynek.me/articles/index.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
