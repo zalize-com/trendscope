@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T15:01:03.916115+00:00",
+ "generated_at": "2026-11-15T15:02:58.350275+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 696,
- "new_items": 570,
+ "total_items": 713,
+ "new_items": 587,
  "by_source": {
   "producthunt": 45,
   "hackernews": 26,
@@ -10,6 +10,7 @@
   "techmeme": 19,
   "slashdot": 17,
   "arstechnica": 16,
+  "thenewstack": 16,
   "antirez": 15,
   "arxiv": 15,
   "changelog": 15,
@@ -28,7 +29,7 @@
   "pragmatic": 15,
   "sanglard": 15,
   "soblog": 15,
-  "thenewstack": 15,
+  "swizec": 15,
   "theregister": 15,
   "beesbuzz": 14,
   "theverge": 14,
@@ -40,7 +41,7 @@
   "opensourcecom": 10,
   "wingolog": 10,
   "susam": 9,
-  "hackaday": 7,
+  "hackaday": 8,
   "bendersky": 5,
   "github_trending": 3,
   "ask_hn": 2,
@@ -1298,6 +1299,14 @@
   {
    "title": "An MP3 Player, Implemented As A Factorio Blueprint",
    "url": "https://hackaday.com/2026/11/15/an-mp3-player-implemented-as-a-factorio-blueprint/",
+   "source": "hackaday",
+   "rank": 1,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Printing Smooth Upper Surfaces with a Non-Planar Slicer",
+   "url": "https://hackaday.com/2026/11/15/printing-smooth-upper-surfaces-with-a-non-planar-slicer/",
    "source": "hackaday",
    "rank": 1,
    "score": 7,
@@ -4024,6 +4033,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Software has no value",
+   "url": "https://swizec.com/blog/software-has-no-value",
+   "source": "swizec",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How do we auto-approve and merge 60% of PRs?",
+   "url": "https://swizec.com/blog/how-do-we-auto-approve-and-merge-60p-of-prs",
+   "source": "swizec",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "No more tech debt",
+   "url": "https://swizec.com/blog/no-more-tech-debt",
+   "source": "swizec",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When code is cheap, judgement becomes the job",
+   "url": "https://swizec.com/blog/when-code-is-cheap-judgement-becomes-the-job",
+   "source": "swizec",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I'm excited about Jev-like classifiers",
+   "url": "https://swizec.com/blog/why-im-excited-about-jev-like-classifiers",
+   "source": "swizec",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We now auto-approve and merge 15% of PRs",
+   "url": "https://swizec.com/blog/we-now-auto-approve-and-merge-15p-of-prs",
+   "source": "swizec",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What B2B SaaS taught me about having kids",
+   "url": "https://swizec.com/blog/what-b2-b-saa-s-taught-me-about-having-kids",
+   "source": "swizec",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Focus and followthrough are the moat",
+   "url": "https://swizec.com/blog/focus-and-followthrough-are-the-moat",
+   "source": "swizec",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stop burning tokens on code review",
+   "url": "https://swizec.com/blog/stop-burning-tokens-on-code-review",
+   "source": "swizec",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beware the spaceships",
+   "url": "https://swizec.com/blog/beware-the-spaceships",
+   "source": "swizec",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Agents change the math on big bang migrations",
+   "url": "https://swizec.com/blog/agents-change-the-math-on-big-bang-migrations",
+   "source": "swizec",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to be useful as a software architect",
+   "url": "https://swizec.com/blog/how-to-be-useful-as-a-software-architect",
+   "source": "swizec",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "swizec.com is now on TimberJS, a new React framework",
+   "url": "https://swizec.com/blog/swizec-com-is-now-on-timber-js-a-new-react-framework",
+   "source": "swizec",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The one thing every experienced engineer gets wrong",
+   "url": "https://swizec.com/blog/the-one-thing-every-experienced-engineer-gets-wrong",
+   "source": "swizec",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Theory of constraints, AI, and code review",
+   "url": "https://swizec.com/blog/theory-of-constraints-ai-and-code-review",
+   "source": "swizec",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A (Tamara Djurickovic/Tech.eu)",
    "url": "https://www.techmeme.com/261115/p3#a261115p3",
    "source": "techmeme",
@@ -4178,6 +4307,14 @@
   {
    "title": "AWS Emulator proves agents need a verification loop. Realism is the hard part.",
    "url": "https://thenewstack.io/aws-emulator-verification-loops/",
+   "source": "thenewstack",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Claude Fable 5.2 vs. Opus 5.5: Same scores at almost 4x the cost",
+   "url": "https://thenewstack.io/claude-fable-5-2-vs-opus-5-5/",
    "source": "thenewstack",
    "rank": 1,
    "score": 15,

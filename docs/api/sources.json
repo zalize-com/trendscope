@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T15:01:50.330833+00:00",
+  "generated_at": "2026-11-15T15:02:58.181973+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -170,6 +170,18 @@
         "rank": 1
       }
     },
+    "thenewstack": {
+      "items": 16,
+      "unique_urls": 16,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "AWS Emulator proves agents need a verification loop. Realism is the hard part.",
+        "url": "https://thenewstack.io/aws-emulator-verification-loops/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "arxiv": {
       "items": 15,
       "unique_urls": 15,
@@ -238,18 +250,6 @@
       "top_item": {
         "title": "[$] 25 years of Buildroot",
         "url": "https://lwn.net/Articles/1103395/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "thenewstack": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "AWS Emulator proves agents need a verification loop. Realism is the hard part.",
-        "url": "https://thenewstack.io/aws-emulator-verification-loops/",
         "score": 15,
         "rank": 1
       }
@@ -519,8 +519,8 @@
       }
     },
     "hackaday": {
-      "items": 7,
-      "unique_urls": 7,
+      "items": 8,
+      "unique_urls": 8,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {

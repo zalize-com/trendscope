@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T15:01:14.675044+00:00",
+ "generated_at": "2026-11-15T15:03:00.231699+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 1026,
- "unique_urls": 888,
- "items_in_latest": 620,
- "items_per_day_avg": 114.0,
+ "total_rows": 1043,
+ "unique_urls": 905,
+ "items_in_latest": 635,
+ "items_per_day_avg": 115.9,
  "sources": {
   "antirez": {
    "rows": 15,
@@ -70,7 +70,7 @@
    "days_active": 2
   },
   "hackaday": {
-   "rows": 7,
+   "rows": 8,
    "days_active": 1
   },
   "hackernews": {
@@ -165,12 +165,16 @@
    "rows": 9,
    "days_active": 1
   },
+  "swizec": {
+   "rows": 15,
+   "days_active": 1
+  },
   "techmeme": {
    "rows": 19,
    "days_active": 1
   },
   "thenewstack": {
-   "rows": 15,
+   "rows": 16,
    "days_active": 1
   },
   "theregister": {
@@ -205,6 +209,10 @@
    "hits": 16
   },
   {
+   "domain": "thenewstack.io",
+   "hits": 16
+  },
+  {
    "domain": "changelog.com",
    "hits": 15
   },
@@ -214,10 +222,6 @@
   },
   {
    "domain": "theregister.com",
-   "hits": 15
-  },
-  {
-   "domain": "thenewstack.io",
    "hits": 15
   },
   {

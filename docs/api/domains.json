@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T15:01:03.916115+00:00",
+ "generated_at": "2026-11-15T15:02:58.350275+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 243,
+ "total": 244,
  "domains": [
   {
    "hostname": "so.long.thanks.fish",
@@ -643,6 +643,21 @@
    }
   },
   {
+   "hostname": "thenewstack.io",
+   "days_on_board": 1,
+   "items": 16,
+   "sources": [
+    "thenewstack"
+   ],
+   "top_hit": {
+    "title": "AWS Emulator proves agents need a verification loop. Realism is the hard part.",
+    "url": "https://thenewstack.io/aws-emulator-verification-loops/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "changelog.com",
    "days_on_board": 1,
    "items": 15,
@@ -682,21 +697,6 @@
    "top_hit": {
     "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
     "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "thenewstack.io",
-   "days_on_board": 1,
-   "items": 15,
-   "sources": [
-    "thenewstack"
-   ],
-   "top_hit": {
-    "title": "AWS Emulator proves agents need a verification loop. Realism is the hard part.",
-    "url": "https://thenewstack.io/aws-emulator-verification-loops/",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
