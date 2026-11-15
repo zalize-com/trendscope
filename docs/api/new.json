@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T18:07:28.814668+00:00",
+ "generated_at": "2026-11-15T18:10:01.342774+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 11026,
- "new_items": 10899,
+ "total_items": 11271,
+ "new_items": 11144,
  "by_source": {
   "show_hn": 46,
   "producthunt": 45,
@@ -200,6 +200,9 @@
   "cwilso": 15,
   "d3noob": 15,
   "dabeaz": 15,
+  "danabyerly": 15,
+  "danburzo": 15,
+  "daniel": 15,
   "danielcwilson": 15,
   "danielfeldroy": 15,
   "danielmiessler": 15,
@@ -208,15 +211,24 @@
   "dashbit": 15,
   "datanewstumblr": 15,
   "datomic": 15,
+  "daveceddia": 15,
   "daverupert": 15,
   "davidsmith": 15,
+  "dbaron": 15,
   "deanebarker": 15,
   "deathandgravity": 15,
+  "defensivecss": 15,
   "den": 15,
+  "deno": 15,
   "dev37signals": 15,
+  "developermozilla": 15,
+  "developerokta": 15,
   "developertoarchitect": 15,
+  "dillionmegida": 15,
   "dimitri": 15,
   "discord": 15,
+  "distill": 15,
+  "dmitripavlutin": 15,
   "dolthub": 15,
   "dracosco": 15,
   "drmaciver": 15,
@@ -485,6 +497,7 @@
   "chriscoyier": 12,
   "codetutsplus": 12,
   "codium": 12,
+  "darekkay": 12,
   "jetbrains": 12,
   "jonmellman": 12,
   "lastweekinaws": 12,
@@ -495,6 +508,7 @@
   "agis": 11,
   "bret": 11,
   "csshell": 11,
+  "dbushell": 11,
   "geoffreylitt": 11,
   "lobsters": 11,
   "wattenberger": 11,
@@ -609,6 +623,7 @@
   "cssauditors": 10,
   "cunderwood": 10,
   "daimajia": 10,
+  "danieltakeshigithub": 10,
   "dannorris": 10,
   "darice": 10,
   "davefarley": 10,
@@ -616,10 +631,12 @@
   "debugmode": 10,
   "deliverooengineering": 10,
   "deque": 10,
+  "designnotesbloggov": 10,
   "devblogsmicrosoft": 10,
   "devcop": 10,
   "developerchrome": 10,
   "developsense": 10,
+  "devyarns": 10,
   "dewith": 10,
   "diablohorn": 10,
   "diarybraniecki": 10,
@@ -816,6 +833,7 @@
   "meta_eng": 9,
   "susam": 9,
   "blogchriszacharias": 8,
+  "darker": 8,
   "dbanotes": 8,
   "eigr": 8,
   "kellysutton": 8,
@@ -857,6 +875,7 @@
   "blogsamuelmaddock": 4,
   "bottossongithub": 4,
   "coderyi": 4,
+  "davidflanagan": 4,
   "github_trending": 4,
   "javascriptweekly": 4,
   "thisweek": 4,
@@ -34128,6 +34147,366 @@
    "metric": "feed rank"
   },
   {
+   "title": "A post under the wire",
+   "url": "https://danabyerly.com/notes/a-post-under-the-wire/",
+   "source": "danabyerly",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Defaults 2024",
+   "url": "https://danabyerly.com/notes/defaults-2024/",
+   "source": "danabyerly",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Year in nothing to review",
+   "url": "https://danabyerly.com/notes/year-in-nothing-to-review/",
+   "source": "danabyerly",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Defaults 2023",
+   "url": "https://danabyerly.com/notes/defaults-2023/",
+   "source": "danabyerly",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ye olde Twitter archive",
+   "url": "https://danabyerly.com/notes/ye-olde-twitter-archive/",
+   "source": "danabyerly",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Year three in the books",
+   "url": "https://danabyerly.com/notes/year-three-in-the-books/",
+   "source": "danabyerly",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hot HTML Summer housekeeping",
+   "url": "https://danabyerly.com/notes/hot-html-summer-housekeeping/",
+   "source": "danabyerly",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hot HTML Summer: Wrap up",
+   "url": "https://danabyerly.com/notes/hot-html-summer-wrap-up/",
+   "source": "danabyerly",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hot HTML Summer: Dialog",
+   "url": "https://danabyerly.com/notes/hot-html-summer-dialog/",
+   "source": "danabyerly",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hot HTML Summer: Details and summary",
+   "url": "https://danabyerly.com/notes/hot-html-summer-details-and-summary/",
+   "source": "danabyerly",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hot HTML Summer: Other inline text elements",
+   "url": "https://danabyerly.com/notes/hot-html-summer-other-inline-text-elements/",
+   "source": "danabyerly",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hot HTML Summer: Focus",
+   "url": "https://danabyerly.com/notes/hot-html-summer-focus/",
+   "source": "danabyerly",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hot HTML Summer: HTML APIs",
+   "url": "https://danabyerly.com/notes/hot-html-summer-html-apis/",
+   "source": "danabyerly",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hot HTML Summer: Template, slot, and shadow",
+   "url": "https://danabyerly.com/notes/hot-html-summer-template-slot-and-shadow/",
+   "source": "danabyerly",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hot HTML Summer: Audio and Video",
+   "url": "https://danabyerly.com/notes/hot-html-summer-audio-and-video/",
+   "source": "danabyerly",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Printing a web page to a custom-sized PDF on macOS",
+   "url": "https://danburzo.ro/notes/web-page-to-custom-size-pdf/",
+   "source": "danburzo",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On the off-label benefits of No-Vary-Search",
+   "url": "https://danburzo.ro/notes/no-vary-search-vs-canonical/",
+   "source": "danburzo",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using esbuild in Eleventy",
+   "url": "https://danburzo.ro/notes/eleventy-esbuild/",
+   "source": "danburzo",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build-time og:image generation with eleventy-img",
+   "url": "https://danburzo.ro/notes/eleventy-og-images/",
+   "source": "danburzo",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HTTP 301 redirects in Eleventy",
+   "url": "https://danburzo.ro/notes/eleventy-301-redirects/",
+   "source": "danburzo",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HTTP caching, a refresher",
+   "url": "https://danburzo.ro/http-caching-refresher/",
+   "source": "danburzo",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "-moz-bullet-font can affect the line height",
+   "url": "https://danburzo.ro/notes/moz-bullet-font/",
+   "source": "danburzo",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A note on feeds, a feed on notes",
+   "url": "https://danburzo.ro/notes/a-note-on-feeds-a-feed-on-notes/",
+   "source": "danburzo",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My favorite records from 2025",
+   "url": "https://danburzo.ro/favorite-records-2025/",
+   "source": "danburzo",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My favorite records from 2024",
+   "url": "https://danburzo.ro/favorite-records-2024/",
+   "source": "danburzo",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My “Skip to content” markup was breaking the back button on iOS",
+   "url": "https://danburzo.ro/skip-to-content-back-button/",
+   "source": "danburzo",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to think about HTML responsive images",
+   "url": "https://danburzo.ro/responsive-images-html/",
+   "source": "danburzo",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WSF 46",
+   "url": "https://danburzo.ro/watchstarfork/2024-01-03/",
+   "source": "danburzo",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My favorite records from 2023",
+   "url": "https://danburzo.ro/favorite-records-2023/",
+   "source": "danburzo",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "So you want to add a web feed",
+   "url": "https://danburzo.ro/add-a-web-feed/",
+   "source": "danburzo",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My favorite thing to do with AI doesn't really have a label",
+   "url": "https://daniel.do/article/my-favorite-thing-to-do-with-ai",
+   "source": "daniel",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making noisy SVGs",
+   "url": "https://daniel.do/article/making-noisy-svgs",
+   "source": "daniel",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Manifest V3’s foibles",
+   "url": "https://daniel.do/article/chromes-manifest-v3-foibles",
+   "source": "daniel",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "It’s the future — you can stop using JPEGs",
+   "url": "https://daniel.do/article/its-the-future-stop-using-jpegs",
+   "source": "daniel",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Laying myself off from Amazon",
+   "url": "https://daniel.do/article/laying-myself-off-from-amazon",
+   "source": "daniel",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The “je ne sais quoi” of TikTok",
+   "url": "https://daniel.do/article/the-je-ne-sais-quoi-of-TikTok",
+   "source": "daniel",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On being “currently based anywhere”",
+   "url": "https://daniel.do/article/currently-based-anywhere",
+   "source": "daniel",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a new personal website",
+   "url": "https://daniel.do/article/building-a-new-personal-site",
+   "source": "daniel",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hacktoberfest 2020: Government edition",
+   "url": "https://daniel.do/article/hacktoberfest-2020-govcon-edition",
+   "source": "daniel",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My time fighting COVID-19 as a CDC software engineer",
+   "url": "https://daniel.do/article/my-time-fighting-covid-19-as-a-cdc-software-engineer",
+   "source": "daniel",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2019: Lessons learned",
+   "url": "https://daniel.do/article/2019-lessons-learned",
+   "source": "daniel",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Hacktoberfest 2019",
+   "url": "https://daniel.do/article/my-hacktoberfest-2019",
+   "source": "daniel",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What it’s like open sourcing code created for the government",
+   "url": "https://daniel.do/article/what-its-like-open-sourcing-software-created-for-the-government",
+   "source": "daniel",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building and launching my first iPhone app",
+   "url": "https://daniel.do/article/building-launching-first-iphone-app",
+   "source": "daniel",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2018: A year in review",
+   "url": "https://daniel.do/article/2018-a-year-in-review",
+   "source": "daniel",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "The New CSS Math: pi and other constants",
    "url": "https://danielcwilson.com/posts/mathematicss-constants/",
    "source": "danielcwilson",
@@ -34488,6 +34867,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "My Faculty Application Experience",
+   "url": "https://danieltakeshi.github.io/2023/06/15/faculty-application",
+   "source": "danieltakeshigithub",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Books Read in 2022",
+   "url": "https://danieltakeshi.github.io/2022/12/31/books-2022",
+   "source": "danieltakeshigithub",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Conference on Robot Learning 2022",
+   "url": "https://danieltakeshi.github.io/2022/12/27/corl-2022/",
+   "source": "danieltakeshigithub",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The 2022 Robotics: Science and Systems Conference",
+   "url": "https://danieltakeshi.github.io/2022/12/11/rss-2022/",
+   "source": "danieltakeshigithub",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The (In-Person) ICRA 2022 Conference in Philadelphia",
+   "url": "https://danieltakeshi.github.io/2022/08/03/icra-2022/",
+   "source": "danieltakeshigithub",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Two New Papers: Learning to Fling and Singulate Fabrics",
+   "url": "https://danieltakeshi.github.io/2022/07/28/two-new-fabric-manipulation-papers/",
+   "source": "danieltakeshigithub",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Plea to End Harassment",
+   "url": "https://danieltakeshi.github.io/2022/07/16/scott-aaronson/",
+   "source": "danieltakeshigithub",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Paper Reviewing Load",
+   "url": "https://danieltakeshi.github.io/2022/04/23/paper-reviewing-load/",
+   "source": "danieltakeshigithub",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I Stand with Ukraine",
+   "url": "https://danieltakeshi.github.io/2022/02/25/ukraine/",
+   "source": "danieltakeshigithub",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Books Read in 2021",
+   "url": "https://danieltakeshi.github.io/2021/12/31/books-2021",
+   "source": "danieltakeshigithub",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Test and verification technique effectiveness with GPT-6 Astra",
    "url": "https://danluu.com/astra-testing/",
    "source": "danluu",
@@ -34808,6 +35267,102 @@
    "metric": "feed rank"
   },
   {
+   "title": "#0198",
+   "url": "https://dariuszwinkler.com/photo/0198/",
+   "source": "darekkay",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My new digital home",
+   "url": "https://dariuszwinkler.com/blog/digital-home/",
+   "source": "darekkay",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sabbatical #18: Great Ocean Road",
+   "url": "https://dariuszwinkler.com/blog/sabbatical-18-great-ocean-road/",
+   "source": "darekkay",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sabbatical #17: Melbourne",
+   "url": "https://dariuszwinkler.com/blog/sabbatical-17-melbourne/",
+   "source": "darekkay",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sabbatical #16: Kaikōura",
+   "url": "https://dariuszwinkler.com/blog/sabbatical-16-kaikoura/",
+   "source": "darekkay",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sabbatical #15: Tasman-Marlborough",
+   "url": "https://dariuszwinkler.com/blog/sabbatical-15-tasman-marlborough/",
+   "source": "darekkay",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sabbatical #14: West Coast",
+   "url": "https://dariuszwinkler.com/blog/sabbatical-14-west-coast/",
+   "source": "darekkay",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "#0197",
+   "url": "https://dariuszwinkler.com/photo/0197/",
+   "source": "darekkay",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sabbatical #13: Wānaka",
+   "url": "https://dariuszwinkler.com/blog/sabbatical-13-wanaka/",
+   "source": "darekkay",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "#0196",
+   "url": "https://dariuszwinkler.com/photo/0196/",
+   "source": "darekkay",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "#0195",
+   "url": "https://dariuszwinkler.com/photo/0195/",
+   "source": "darekkay",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sabbatical #12: Milford Sound",
+   "url": "https://dariuszwinkler.com/blog/sabbatical-12-milford-sound/",
+   "source": "darekkay",
+   "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Life Things",
    "url": "https://darice.org/2026/09/30/life-things/",
    "source": "darice",
@@ -35020,6 +35575,70 @@
    "url": "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
    "source": "daringfireball",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kyoto postcards — April 2025",
+   "url": "https://darker.ink/writings/Kyoto-postcards-April-2025",
+   "source": "darker",
+   "rank": 1,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Towards richer colors on the Web",
+   "url": "https://darker.ink/writings/Towards-richer-colors-on-the-Web",
+   "source": "darker",
+   "rank": 2,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mobile design with device-to-device networks",
+   "url": "https://darker.ink/writings/Mobile-design-with-device-to-device-networks",
+   "source": "darker",
+   "rank": 3,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An embodied installation to explore memory and communication",
+   "url": "https://darker.ink/writings/An-embodied-installation-to-explore-memory-and-communication",
+   "source": "darker",
+   "rank": 4,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "P2P presentations",
+   "url": "https://darker.ink/writings/P2P-presentations",
+   "source": "darker",
+   "rank": 5,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Design research on Web browsing",
+   "url": "https://darker.ink/writings/Design-research-on-Web-browsing",
+   "source": "darker",
+   "rank": 6,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Research in Interaction Design",
+   "url": "https://darker.ink/writings/Research-in-Interaction-Design",
+   "source": "darker",
+   "rank": 7,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "La sagesse",
+   "url": "https://darker.ink/writings/La-sagesse",
+   "source": "darker",
+   "rank": 8,
    "score": 1,
    "metric": "feed rank"
   },
@@ -35384,6 +36003,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Delete Git Branches That Have Been Merged",
+   "url": "https://daveceddia.com/clean-up-merged-git-branches/",
+   "source": "daveceddia",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Run SketchUp Make 2017 on an M1 Mac with macOS Monterey",
+   "url": "https://daveceddia.com/sketchup-make-2017-on-m1-mac-monterey/",
+   "source": "daveceddia",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Installing a Code Signing Cert from Sectigo (to sign an Electron app on Windows)",
+   "url": "https://daveceddia.com/code-signing-windows-electron-sectigo/",
+   "source": "daveceddia",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Implementing A Svelte Store In Rust",
+   "url": "https://daveceddia.com/svelte-store-in-rust/",
+   "source": "daveceddia",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Interview Questions to Ask Your Interviewer",
+   "url": "https://daveceddia.com/interview-questions-to-ask-company/",
+   "source": "daveceddia",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Attach VSCode Debugger to native Rust in an Electron app",
+   "url": "https://daveceddia.com/debug-electron-native-rust-with-vscode/",
+   "source": "daveceddia",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Example of Using napi-rs with Electron",
+   "url": "https://daveceddia.com/napi-rs-electron-example/",
+   "source": "daveceddia",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Escape Liquid in ConvertKit (so you can use double braces)",
+   "url": "https://daveceddia.com/escape-liquid-braces-in-convertkit/",
+   "source": "daveceddia",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Manually Symbolicate a Crash Log from a macOS App",
+   "url": "https://daveceddia.com/manually-symbolicate-crash-log-macos-app/",
+   "source": "daveceddia",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using Forms in React",
+   "url": "https://daveceddia.com/react-forms/",
+   "source": "daveceddia",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ESLint + VSCode: How to Format Your Code Using .eslintrc",
+   "url": "https://daveceddia.com/vscode-use-eslintrc/",
+   "source": "daveceddia",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Read React Errors (fix 'Cannot read property of undefined'!)",
+   "url": "https://daveceddia.com/fix-react-errors/",
+   "source": "daveceddia",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React State Management Libraries and How to Choose",
+   "url": "https://daveceddia.com/react-state-management/",
+   "source": "daveceddia",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "State of the React Ecosystem in 2021",
+   "url": "https://daveceddia.com/react-ecosystem-overview/",
+   "source": "daveceddia",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using the image tag in React",
+   "url": "https://daveceddia.com/react-image-tag/",
+   "source": "daveceddia",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "MSEC – The Modern Software Engineer’s Companion",
    "url": "https://www.davefarley.net/?p=370",
    "source": "davefarley",
@@ -35580,6 +36319,38 @@
    "url": "https://daverupert.com/2026/06/curated-public-domain-images/",
    "source": "daverupert",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JavaScript Features To Forget",
+   "url": "https://davidflanagan.com/2020/05/12/javascript-to-forget.html",
+   "source": "davidflanagan",
+   "rank": 1,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Changes in the Seventh Edition of JavaScript: The Definitive Guide",
+   "url": "https://davidflanagan.com/2020/05/03/changes-in-the-seventh-edition.html",
+   "source": "davidflanagan",
+   "rank": 2,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Back Cover Copy for JSTDG7",
+   "url": "https://davidflanagan.com/2020/04/27/back-cover-copy.html",
+   "source": "davidflanagan",
+   "rank": 3,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JSTDG7 Cover Image",
+   "url": "https://davidflanagan.com/2020/04/27/jstdg7-cover-image.html",
+   "source": "davidflanagan",
+   "rank": 4,
    "score": 1,
    "metric": "feed rank"
   },
@@ -35844,6 +36615,214 @@
    "url": "https://dbanotes.net/review/oceanbase.html",
    "source": "dbanotes",
    "rank": 8,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Semantic markup, browsers, and identity in the DOM",
+   "url": "https://dbaron.org/log/20200221-dom-identity",
+   "source": "dbaron",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Software engineering, responsibility, and ownership",
+   "url": "https://dbaron.org/log/20170328-ownership",
+   "source": "dbaron",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Security and Inequality",
+   "url": "https://dbaron.org/log/20160322-security-inequality",
+   "source": "dbaron",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Running animations on the compositor thread",
+   "url": "https://dbaron.org/log/20150916-compositor-animations",
+   "source": "dbaron",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tying ecosystems through browsers",
+   "url": "https://dbaron.org/log/20150803-ecosystems",
+   "source": "dbaron",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Payments on the Web",
+   "url": "https://dbaron.org/log/20150731-payments",
+   "source": "dbaron",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughts on migrating to a secure Web",
+   "url": "https://dbaron.org/log/20150423-secure-web",
+   "source": "dbaron",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The need for government",
+   "url": "https://dbaron.org/log/20150329-government",
+   "source": "dbaron",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Priority of constituencies",
+   "url": "https://dbaron.org/log/20150318-priority-of-constituencies",
+   "source": "dbaron",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How browser developers should seek feedback from Web developers",
+   "url": "https://dbaron.org/log/20150213-feedback",
+   "source": "dbaron",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fifteen years",
+   "url": "https://dbaron.org/log/20141106-release-cycles",
+   "source": "dbaron",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fifteen years",
+   "url": "https://dbaron.org/log/20130919-fifteen-years",
+   "source": "dbaron",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why debug builds (and assertions) are important",
+   "url": "https://dbaron.org/log/20130729-debug-builds",
+   "source": "dbaron",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ten years of the Mozilla Foundation",
+   "url": "https://dbaron.org/log/20130715-ten-years",
+   "source": "dbaron",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Open licensing at the W3C",
+   "url": "https://dbaron.org/log/20130522-w3c-licensing",
+   "source": "dbaron",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visited links are purple",
+   "url": "https://dbushell.com/2026/11/16/visited-links/",
+   "source": "dbushell",
+   "rank": 1,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RSS Club #010: Chatbots",
+   "url": "https://dbushell.com/2026/11/15/RSS010/",
+   "source": "dbushell",
+   "rank": 2,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I was wrong about dark mode",
+   "url": "https://dbushell.com/2026/11/09/dark-mode/",
+   "source": "dbushell",
+   "rank": 3,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Death comes for XSLT",
+   "url": "https://dbushell.com/2026/11/03/xslt-rip/",
+   "source": "dbushell",
+   "rank": 4,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tangled, hire a front-end accessibility expert",
+   "url": "https://dbushell.com/2026/11/01/tangled-accessibility/",
+   "source": "dbushell",
+   "rank": 5,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Danse Macabre",
+   "url": "https://dbushell.com/2026/10/28/danse-macabre/",
+   "source": "dbushell",
+   "rank": 6,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How not to migrate from Cloudflare DNS",
+   "url": "https://dbushell.com/2026/10/20/how-not-to-migrate-from-cloudflare-dns/",
+   "source": "dbushell",
+   "rank": 7,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cloudflare killed Deno and look I’m on TV!",
+   "url": "https://dbushell.com/2026/10/16/cloudflare-killed-deno/",
+   "source": "dbushell",
+   "rank": 8,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "D-Bus Hell",
+   "url": "https://dbushell.com/2026/10/11/d-bus-hell/",
+   "source": "dbushell",
+   "rank": 9,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A sustainable web career, for when all this blows over",
+   "url": "https://dbushell.com/2026/10/07/sustainable-web-career/",
+   "source": "dbushell",
+   "rank": 10,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Friendship ended with Deno, now Node is my best friend",
+   "url": "https://dbushell.com/2026/10/03/deno-to-node/",
+   "source": "dbushell",
+   "rank": 11,
    "score": 1,
    "metric": "feed rank"
   },
@@ -36168,6 +37147,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Button minimum width",
+   "url": "https://defensivecss.dev/tip/button-min-width/",
+   "source": "defensivecss",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Input zoom on iOS Safari",
+   "url": "https://defensivecss.dev/tip/input-zoom-safari/",
+   "source": "defensivecss",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Default flexbox stretching",
+   "url": "https://defensivecss.dev/tip/default-flexbox-stretching/",
+   "source": "defensivecss",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Image inner border",
+   "url": "https://defensivecss.dev/tip/inner-shadow/",
+   "source": "defensivecss",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accidental hover on mobile",
+   "url": "https://defensivecss.dev/tip/hover-media/",
+   "source": "defensivecss",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vertical media queries",
+   "url": "https://defensivecss.dev/tip/vertical-mq/",
+   "source": "defensivecss",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Text over image",
+   "url": "https://defensivecss.dev/tip/text-over-image/",
+   "source": "defensivecss",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using space-between",
+   "url": "https://defensivecss.dev/tip/space-between/",
+   "source": "defensivecss",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scrollbars on demand",
+   "url": "https://defensivecss.dev/tip/scrollbar/",
+   "source": "defensivecss",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scrollbar gutter",
+   "url": "https://defensivecss.dev/tip/scrollbar-gutter/",
+   "source": "defensivecss",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scroll chaining",
+   "url": "https://defensivecss.dev/tip/scroll-chain/",
+   "source": "defensivecss",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Position sticky with CSS Grid",
+   "url": "https://defensivecss.dev/tip/position-sticky-grid/",
+   "source": "defensivecss",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Image maximum width",
+   "url": "https://defensivecss.dev/tip/img-max-width/",
+   "source": "defensivecss",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Grouping vendor selectors",
+   "url": "https://defensivecss.dev/tip/grouping-selectors/",
+   "source": "defensivecss",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minimum Content Size In CSS grid",
+   "url": "https://defensivecss.dev/tip/grid-min-content-size/",
+   "source": "defensivecss",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Roonomics: How Economics Helped Us to Build a Churn Prediction Model",
    "url": "https://deliveroo.engineering/2026/09/22/roonomics-how-economics-helped-us-to-build-a-churn-prediction-model.html",
    "source": "deliverooengineering",
@@ -36368,6 +37467,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Deno is joining Cloudflare",
+   "url": "https://deno.com/blog/cloudflare",
+   "source": "deno",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deno 2.9",
+   "url": "https://deno.com/blog/v2.9",
+   "source": "deno",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deno 2.8",
+   "url": "https://deno.com/blog/v2.8",
+   "source": "deno",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Claw Patrol: an open-source security firewall for agents",
+   "url": "https://deno.com/blog/clawpatrol",
+   "source": "deno",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fresh 2.3: Zero JS by default, View Transitions, and Temporal support",
+   "url": "https://deno.com/blog/fresh-2.3",
+   "source": "deno",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deno 2.7: Temporal API, Windows ARM, and npm overrides",
+   "url": "https://deno.com/blog/v2.7",
+   "source": "deno",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build a dinosaur runner game with Deno, pt. 6",
+   "url": "https://deno.com/blog/build-a-game-with-deno-6",
+   "source": "deno",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build a dinosaur runner game with Deno, pt. 5",
+   "url": "https://deno.com/blog/build-a-game-with-deno-5",
+   "source": "deno",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deno Deploy is Generally Available",
+   "url": "https://deno.com/blog/deno-deploy-is-ga",
+   "source": "deno",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Deno Sandbox",
+   "url": "https://deno.com/blog/introducing-deno-sandbox",
+   "source": "deno",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build a dinosaur runner game with Deno, pt. 4",
+   "url": "https://deno.com/blog/build-a-game-with-deno-4",
+   "source": "deno",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build a dinosaur runner game with Deno, pt. 3",
+   "url": "https://deno.com/blog/build-a-game-with-deno-3",
+   "source": "deno",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build a dinosaur runner game with Deno, pt. 2",
+   "url": "https://deno.com/blog/build-a-game-with-deno-2",
+   "source": "deno",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React / Next.js Denial-of-Service Vulnerability: Deno Deploy users protected",
+   "url": "https://deno.com/blog/cve-2025-55184",
+   "source": "deno",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deno 2.6: dx is the new npx",
+   "url": "https://deno.com/blog/v2.6",
+   "source": "deno",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "How to choose the right VPAT approach for your organization (and whether you should use AI to complete your ACR!)",
    "url": "https://www.deque.com/blog/how-to-choose-the-right-vpat-approach-for-your-organization/",
    "source": "deque",
@@ -36443,6 +37662,86 @@
    "title": "Deque and Microsoft: Two decades of shaping the future of accessibility",
    "url": "https://www.deque.com/blog/deque-and-microsoft-two-decades-of-shaping-the-future-of-accessibility/",
    "source": "deque",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating tools for scaling generated content",
+   "url": "https://designnotes.blog.gov.uk/2026/11/03/creating-tools-for-scaling-generated-content/",
+   "source": "designnotesbloggov",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What are the principles of prototyping?",
+   "url": "https://designnotes.blog.gov.uk/2026/09/29/what-are-the-principles-of-prototyping/",
+   "source": "designnotesbloggov",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Designing services for people who’ve lost trust online",
+   "url": "https://designnotes.blog.gov.uk/2026/06/23/designing-services-for-people-whove-lost-trust-online/",
+   "source": "designnotesbloggov",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Updating the skills content designers need in government",
+   "url": "https://designnotes.blog.gov.uk/2026/06/09/updating-the-skills-content-designers-need-in-government/",
+   "source": "designnotesbloggov",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When AI answers the question, what happens to the user journey?",
+   "url": "https://designnotes.blog.gov.uk/2026/03/31/when-ai-answers-the-question-what-happens-to-the-user-journey/",
+   "source": "designnotesbloggov",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bringing together international public designers in Amsterdam, Berlin and Brussels",
+   "url": "https://designnotes.blog.gov.uk/2025/12/09/bringing-together-international-public-designers-in-amsterdam-berlin-and-brussels/",
+   "source": "designnotesbloggov",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Keeping services alive",
+   "url": "https://designnotes.blog.gov.uk/2025/04/25/keeping-services-alive/",
+   "source": "designnotesbloggov",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How we refreshed the Government Digital Service brand, and what we’re doing differently",
+   "url": "https://designnotes.blog.gov.uk/2025/04/04/how-we-refreshed-the-government-digital-service-brand-and-what-were-doing-differently/",
+   "source": "designnotesbloggov",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sharing Camden’s work on Universal Basic Services",
+   "url": "https://designnotes.blog.gov.uk/2025/02/18/sharing-camdens-work-on-universal-basic-services/",
+   "source": "designnotesbloggov",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Progressing international design discourse in Helsinki, Amsterdam and beyond",
+   "url": "https://designnotes.blog.gov.uk/2025/01/14/progressing-international-design-discourse-in-helsinki-amsterdam-and-beyond/",
+   "source": "designnotesbloggov",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -36808,6 +38107,246 @@
    "metric": "feed rank"
   },
   {
+   "title": "Introducing the MDN MCP server",
+   "url": "https://developer.mozilla.org/en-US/blog/introducing-mdn-mcp-server/",
+   "source": "developermozilla",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Under the hood of MDN's new frontend",
+   "url": "https://developer.mozilla.org/en-US/blog/mdn-front-end-deep-dive/",
+   "source": "developermozilla",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Image formats: Codecs and compression tools",
+   "url": "https://developer.mozilla.org/en-US/blog/image-formats-codecs-compression-tools/",
+   "source": "developermozilla",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A beginner-friendly guide to view transitions in CSS",
+   "url": "https://developer.mozilla.org/en-US/blog/view-transitions-beginner-guide/",
+   "source": "developermozilla",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Launching MDN's new front end",
+   "url": "https://developer.mozilla.org/en-US/blog/launching-new-front-end/",
+   "source": "developermozilla",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Image formats: Pixel data from encoders to decoders",
+   "url": "https://developer.mozilla.org/en-US/blog/image-formats-pixels-graphics/",
+   "source": "developermozilla",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Celebrating 20 years of MDN",
+   "url": "https://developer.mozilla.org/en-US/blog/mdn-turns-20/",
+   "source": "developermozilla",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Image formats: Color models for humans and devices",
+   "url": "https://developer.mozilla.org/en-US/blog/color-models-humans-devices/",
+   "source": "developermozilla",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Default styles for h1 elements are changing",
+   "url": "https://developer.mozilla.org/en-US/blog/h1-element-styles/",
+   "source": "developermozilla",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Implications of Global Privacy Control",
+   "url": "https://developer.mozilla.org/en-US/blog/global-privacy-control/",
+   "source": "developermozilla",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JavaScript Temporal is coming",
+   "url": "https://developer.mozilla.org/en-US/blog/javascript-temporal-is-coming/",
+   "source": "developermozilla",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fix your website's Largest Contentful Paint by optimizing image loading",
+   "url": "https://developer.mozilla.org/en-US/blog/fix-image-lcp/",
+   "source": "developermozilla",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MDN 2024 content projects",
+   "url": "https://developer.mozilla.org/en-US/blog/mdn-2024-content-projects/",
+   "source": "developermozilla",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A new learning experience on MDN",
+   "url": "https://developer.mozilla.org/en-US/blog/curriculum-learn-web-development/",
+   "source": "developermozilla",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Countdown to the holidays with daily coding challenges",
+   "url": "https://developer.mozilla.org/en-US/blog/daily-holiday-javascript-challenges/",
+   "source": "developermozilla",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build a Secure TypeScript MCP Client with Cross App Access (XAA)",
+   "url": "https://developer.okta.com/blog/2026/10/09/typescript-mcp-sdk-cross-app-access/",
+   "source": "developerokta",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Classic Engine Feature EOL: SSR, Desktop SSO, Device Trust",
+   "url": "https://developer.okta.com/blog/2026/09/18/okta-classic-engine-deprecation/",
+   "source": "developerokta",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Supercharge Auth with Signals and the New Okta Angular SDK",
+   "url": "https://developer.okta.com/blog/2026/08/25/angular-auth-signals/",
+   "source": "developerokta",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Add Cross App Access to Your OIDC Resource Application",
+   "url": "https://developer.okta.com/blog/2026/08/24/xaa-oidc-resource/",
+   "source": "developerokta",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Add Cross App Access to Your OIDC Requesting Application",
+   "url": "https://developer.okta.com/blog/2026/08/21/xaa-oidc-requesting/",
+   "source": "developerokta",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I Found My Coordinates: Code, Community, and Okta",
+   "url": "https://developer.okta.com/blog/2026/08/20/vanshika-intro-blog/",
+   "source": "developerokta",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build a Flask App with Okta for Secure OIDC Login and Authorized API Calls",
+   "url": "https://developer.okta.com/blog/2026/07/28/flask-oauth-web-app/",
+   "source": "developerokta",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Enable Your SAML Requesting App for Cross App Access",
+   "url": "https://developer.okta.com/blog/2026/07/17/xaa-saml-requester/",
+   "source": "developerokta",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build a Secure C# MCP App with Cross App Access (XAA)",
+   "url": "https://developer.okta.com/blog/2026/07/16/csharp-mcp-cross-app-access/",
+   "source": "developerokta",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Okta Journeys: A Better Way for Developers to Learn Identity",
+   "url": "https://developer.okta.com/blog/2026/07/07/okta-journeys-for-developers/",
+   "source": "developerokta",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build, Test, and Publish a Cross App Access App in the Okta Integration Network",
+   "url": "https://developer.okta.com/blog/2026/07/06/submit-oin-xaa/",
+   "source": "developerokta",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Enabling Cross App Access for SAML-Based Resource Apps",
+   "url": "https://developer.okta.com/blog/2026/07/03/cross-app-access-saml/",
+   "source": "developerokta",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Builder Revolution: Why We're Shifting to Builder Advocacy",
+   "url": "https://developer.okta.com/blog/2026/06/30/builder-revolution/",
+   "source": "developerokta",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Verifiable Digital Credentials Are Reshaping Trust Architecture",
+   "url": "https://developer.okta.com/blog/2026/06/29/verifiable-digital-credentials/",
+   "source": "developerokta",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Long Story Short: I Found My Place Between Code and Community",
+   "url": "https://developer.okta.com/blog/2026/06/24/aasawari-sahasrabuddhe-intro-blog/",
+   "source": "developerokta",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Lesson 225 - Architecture Narrative Act One (November 2, 2026)",
    "url": "http://www.developertoarchitect.com/lessons/lesson225.html",
    "source": "developertoarchitect",
@@ -37022,6 +38561,86 @@
    "rank": 13,
    "score": 82,
    "metric": "reactions"
+  },
+  {
+   "title": "Understanding Logical Focus Order",
+   "url": "https://devyarns.com/logical-focus-order/",
+   "source": "devyarns",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Just F*ing Ship It Challenge 2020 - My Project Recap",
+   "url": "https://devyarns.com/women-make-challenge-recap-2020/",
+   "source": "devyarns",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why and How to Start Manual Accessibility Testing",
+   "url": "https://devyarns.com/manual-accessibility-testing/",
+   "source": "devyarns",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Know Whether to Use a Button or a Link for Accessibility",
+   "url": "https://devyarns.com/button-or-link/",
+   "source": "devyarns",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Five Ways to Write Better Alt Text",
+   "url": "https://devyarns.com/write-better-alt-text/",
+   "source": "devyarns",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Give a Talk Without Being an Expert",
+   "url": "https://devyarns.com/how-to-give-a-talk-without-being-an-expert/",
+   "source": "devyarns",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Add \"Click to Tweet\" Links to Your Gatsby Blog",
+   "url": "https://devyarns.com/click-to-tweet/",
+   "source": "devyarns",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beginner's Guide to Blogging with Gatsby: The Blog Post Template",
+   "url": "https://devyarns.com/gatsby-blog-post-template/",
+   "source": "devyarns",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Make Emojis Accessible in HTML",
+   "url": "https://devyarns.com/accessible-emojis/",
+   "source": "devyarns",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 Tips for Getting the Most out of Video Coding Tutorials",
+   "url": "https://devyarns.com/5-tips-for-getting-the-most-out-of-video-coding-tutorials/",
+   "source": "devyarns",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
   },
   {
    "title": "My new project: Ride Earth",
@@ -37264,6 +38883,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "No title",
+   "url": "https://dillionmegida.com/projects/gatsby-remark-liquid-tags/",
+   "source": "dillionmegida",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "No title",
+   "url": "https://dillionmegida.com/projects/cross-cmd/",
+   "source": "dillionmegida",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is Dillion doing now?",
+   "url": "https://dillionmegida.com/now/",
+   "source": "dillionmegida",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What does \"cascading\" mean in Cascading Stylesheets (CSS)?",
+   "url": "https://dillionmegida.com/p/cascade-in-cascading-stylesheets/",
+   "source": "dillionmegida",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Concept of Short-Circuit Evaluation in JavaScript, Simplified",
+   "url": "https://dillionmegida.com/p/short-circuit-in-programming-simplified/",
+   "source": "dillionmegida",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Temporal Dead Zone in JavaScript, Simplified",
+   "url": "https://dillionmegida.com/p/temporal-dead-zone-in-javascript/",
+   "source": "dillionmegida",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "git branch --merged does not show all merged branches [SOLVED]",
+   "url": "https://dillionmegida.com/p/why-git-merged-does-not-show-merged-branches/",
+   "source": "dillionmegida",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What are Tracked and Untracked Files in Git?",
+   "url": "https://dillionmegida.com/p/tracked-and-untracked-files-git/",
+   "source": "dillionmegida",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What does Staged Changes mean in Git?",
+   "url": "https://dillionmegida.com/p/staged-changes-in-git/",
+   "source": "dillionmegida",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Case Sensitivity vs Case Insensitivity",
+   "url": "https://dillionmegida.com/p/case-sensitivity-vs-case-insensitivity/",
+   "source": "dillionmegida",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Content Creation 2022 Recap",
+   "url": "https://dillionmegida.com/p/content-creation-recap-2022/",
+   "source": "dillionmegida",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Repurposing Content Across Different Platforms",
+   "url": "https://dillionmegida.com/p/repurposing-content/",
+   "source": "dillionmegida",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2022 In Review | A Reflection",
+   "url": "https://dillionmegida.com/p/2022-in-review/",
+   "source": "dillionmegida",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Spread Operator in JavaScript, Simplified",
+   "url": "https://dillionmegida.com/p/spread-operator-simplified/",
+   "source": "dillionmegida",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Array concat method simplified",
+   "url": "https://dillionmegida.com/p/array-concat/",
+   "source": "dillionmegida",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Postgres logical replication beyond one writer",
    "url": "https://tapoueh.org/blog/2026/11/postgres-logical-replication-beyond-one-writer/",
    "source": "dimitri",
@@ -37499,6 +39238,246 @@
    "title": "A letter to the Discord community in Brazil",
    "url": "https://discord.com/blog/a-letter-to-the-discord-community-in-brazil",
    "source": "discord",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Understanding Convolutions on Graphs",
+   "url": "https://distill.pub/2021/understanding-gnns",
+   "source": "distill",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Gentle Introduction to Graph Neural Networks",
+   "url": "https://distill.pub/2021/gnn-intro",
+   "source": "distill",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Distill Hiatus",
+   "url": "https://distill.pub/2021/distill-hiatus",
+   "source": "distill",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Adversarial Reprogramming of Neural Cellular Automata",
+   "url": "https://distill.pub/selforg/2021/adversarial",
+   "source": "distill",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weight Banding",
+   "url": "https://distill.pub/2020/circuits/weight-banding",
+   "source": "distill",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Branch Specialization",
+   "url": "https://distill.pub/2020/circuits/branch-specialization",
+   "source": "distill",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Multimodal Neurons in Artificial Neural Networks",
+   "url": "https://distill.pub/2021/multimodal-neurons",
+   "source": "distill",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Self-Organising Textures",
+   "url": "https://distill.pub/selforg/2021/textures",
+   "source": "distill",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visualizing Weights",
+   "url": "https://distill.pub/2020/circuits/visualizing-weights",
+   "source": "distill",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Curve Circuits",
+   "url": "https://distill.pub/2020/circuits/curve-circuits",
+   "source": "distill",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "High-Low Frequency Detectors",
+   "url": "https://distill.pub/2020/circuits/frequency-edges",
+   "source": "distill",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Naturally Occurring Equivariance in Neural Networks",
+   "url": "https://distill.pub/2020/circuits/equivariance",
+   "source": "distill",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Understanding RL Vision",
+   "url": "https://distill.pub/2020/understanding-rl-vision",
+   "source": "distill",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Communicating with Interactive Articles",
+   "url": "https://distill.pub/2020/communicating-with-interactive-articles",
+   "source": "distill",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thread: Differentiable Self-organizing Systems",
+   "url": "https://distill.pub/2020/selforg",
+   "source": "distill",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pure Functions in JavaScript: A Beginner's Guide",
+   "url": "https://dmitripavlutin.com/javascript-pure-function/",
+   "source": "dmitripavlutin",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Record Type in TypeScript: A Quick Intro",
+   "url": "https://dmitripavlutin.com/typescript-record/",
+   "source": "dmitripavlutin",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Write Comments in React: The Good, the Bad and the Ugly",
+   "url": "https://dmitripavlutin.com/react-comments/",
+   "source": "dmitripavlutin",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "4 Ways to Create an Enum in JavaScript",
+   "url": "https://dmitripavlutin.com/javascript-enum/",
+   "source": "dmitripavlutin",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React forwardRef(): How to Pass Refs to Child Components",
+   "url": "https://dmitripavlutin.com/react-forwardref/",
+   "source": "dmitripavlutin",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TypeScript Function Types: A Beginner's Guide",
+   "url": "https://dmitripavlutin.com/typescript-function-type/",
+   "source": "dmitripavlutin",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Use v-model to Access Input Values in Vue",
+   "url": "https://dmitripavlutin.com/vue-v-model-form-inputs/",
+   "source": "dmitripavlutin",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mastering Vue refs: From Zero to Hero",
+   "url": "https://dmitripavlutin.com/ref-in-vue/",
+   "source": "dmitripavlutin",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Environment Variables in JavaScript: process.env",
+   "url": "https://dmitripavlutin.com/environment-variables-javascript/",
+   "source": "dmitripavlutin",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 Must-Know Differences Between ref() and reactive() in Vue",
+   "url": "https://dmitripavlutin.com/ref-reactive-differences-vue/",
+   "source": "dmitripavlutin",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Destructure Props in Vue (Composition API)",
+   "url": "https://dmitripavlutin.com/props-destructure-vue-composition/",
+   "source": "dmitripavlutin",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Triangulation in Test-Driven Development",
+   "url": "https://dmitripavlutin.com/triangulation-test-driven-development/",
+   "source": "dmitripavlutin",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Use nextTick() in Vue",
+   "url": "https://dmitripavlutin.com/vue-next-tick/",
+   "source": "dmitripavlutin",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Programming to Interface Vs to Implementation",
+   "url": "https://dmitripavlutin.com/interface-vs-implementation/",
+   "source": "dmitripavlutin",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Smarter JavaScript Mapper: array.flatMap()",
+   "url": "https://dmitripavlutin.com/javascript-array-flatmap/",
+   "source": "dmitripavlutin",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
