@@ -5,6 +5,7 @@ what left, and the biggest score movers vs the previous snapshot."""
 import json
 import os
 from datetime import datetime, timedelta, timezone
+from urllib.parse import quote
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DAILY = os.path.join(ROOT, "data", "daily")
@@ -43,6 +44,7 @@ def rows(items, badge, fmt_score, limit=15):
     out = []
     for it, extra in items[:limit]:
         out.append(f"- {badge} [{it['title']}]({it['url']}) "
+                   f"[⤳](item.html?q={quote(it['title'])}) "
                    f"`{it['source']}` — {fmt_score(it, extra)}")
     return "\n".join(out) or "- _(none)_"
 
