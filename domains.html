@@ -89,6 +89,9 @@ const list = Object.entries(doms)
 const byUrl = {};
 for (const r of rows.slice(1)) {
   const url = r[ci.url]; if (!url) continue;
+  let h = "";
+  try { h = new URL(url).hostname.replace(/^www\./, ""); } catch (_) {}
+  if (SKIP.has(h)) continue; // platform self-links (e.g. an Ask HN permalink) aren't crossovers
   const e = byUrl[url] ||= { title: r[ci.title], srcs: new Set(), score: 0, metric: r[ci.metric] };
   e.srcs.add(r[ci.source]);
   e.score = Math.max(e.score, Number(r[ci.score]) || 0);
