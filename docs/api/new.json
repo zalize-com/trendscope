@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T13:55:43.780241+00:00",
+ "generated_at": "2026-11-15T13:57:07.395231+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 488,
- "new_items": 362,
+ "total_items": 489,
+ "new_items": 363,
  "by_source": {
   "producthunt": 45,
   "show_hn": 21,
   "techmeme": 19,
-  "hackernews": 17,
+  "hackernews": 18,
   "slashdot": 17,
   "arstechnica": 16,
   "arxiv": 15,
@@ -942,6 +942,14 @@
    "source": "hackernews",
    "rank": 20,
    "score": 55,
+   "metric": "points"
+  },
+  {
+   "title": "Disk encryption on NetBSD – achieving secrecy",
+   "url": "https://netbsd.org/~nia/disk-encrypt/",
+   "source": "hackernews",
+   "rank": 20,
+   "score": 60,
    "metric": "points"
   },
   {
