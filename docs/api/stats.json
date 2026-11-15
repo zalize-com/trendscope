@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T13:24:17.381096+00:00",
+ "generated_at": "2026-11-15T13:27:16.898552+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 726,
- "unique_urls": 589,
- "items_in_latest": 334,
- "items_per_day_avg": 80.7,
+ "total_rows": 741,
+ "unique_urls": 604,
+ "items_in_latest": 350,
+ "items_per_day_avg": 82.3,
  "sources": {
   "arstechnica": {
    "rows": 16,
@@ -65,6 +65,10 @@
    "rows": 34,
    "days_active": 2
   },
+  "lwn": {
+   "rows": 15,
+   "days_active": 1
+  },
   "npm": {
    "rows": 48,
    "days_active": 2
@@ -109,6 +113,10 @@
    "hits": 16
   },
   {
+   "domain": "lwn.net",
+   "hits": 16
+  },
+  {
    "domain": "changelog.com",
    "hits": 15
   },
@@ -134,10 +142,6 @@
   },
   {
    "domain": "yro.slashdot.org",
-   "hits": 4
-  },
-  {
-   "domain": "tech.slashdot.org",
    "hits": 4
   }
  ],

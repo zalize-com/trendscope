@@ -1,13 +1,13 @@
 {
  "a": "2026-11-14",
  "b": "2026-11-15",
- "generated": "2026-11-15 13:24 UTC",
+ "generated": "2026-11-15 13:27 UTC",
  "entered": [
   {
    "title": "SpaceX catches the Starship to end Flight 15",
    "url": "https://www.spacex.com/launches/starship-flight-15",
    "source": "hackernews",
-   "score": 1351,
+   "score": 1352,
    "metric": "points",
    "rank": 1
   },
@@ -15,7 +15,7 @@
    "title": "Eynnzerr/TelemetryCleaner",
    "url": "https://github.com/Eynnzerr/TelemetryCleaner",
    "source": "github_trending",
-   "score": 847,
+   "score": 848,
    "metric": "stars",
    "rank": 13
   },
@@ -31,7 +31,7 @@
    "title": "Court denies motion to dismiss DRAM price fixing case",
    "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
    "source": "hackernews",
-   "score": 263,
+   "score": 266,
    "metric": "points",
    "rank": 8
   },
@@ -39,7 +39,7 @@
    "title": "How did Woz write the Apple 1 BASIC before building the computer?",
    "url": "https://retrocomputing.stackexchange.com/questions/17957",
    "source": "hackernews",
-   "score": 243,
+   "score": 244,
    "metric": "points",
    "rank": 11
   },
@@ -79,9 +79,17 @@
    "title": "Why did some Apollo missions carry a grenade launcher?",
    "url": "https://space.stackexchange.com/questions/37775",
    "source": "hackernews",
-   "score": 81,
+   "score": 82,
    "metric": "points",
    "rank": 16
+  },
+  {
+   "title": "500 Lines or Less A 3D Modeller",
+   "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
+   "source": "hackernews",
+   "score": 74,
+   "metric": "points",
+   "rank": 17
   },
   {
    "title": "For the first time, a C++ standard failed to pass the national bodies",
@@ -92,18 +100,10 @@
    "rank": 3
   },
   {
-   "title": "500 Lines or Less A 3D Modeller",
-   "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
-   "source": "hackernews",
-   "score": 72,
-   "metric": "points",
-   "rank": 17
-  },
-  {
    "title": "Kiri \u2013 The Modern Container Runtime",
    "url": "https://runkiri.com/",
    "source": "hackernews",
-   "score": 66,
+   "score": 68,
    "metric": "points",
    "rank": 18
   },
@@ -165,14 +165,6 @@
   }
  ],
  "left": [
-  {
-   "title": "celery",
-   "url": "https://pypi.org/project/celery/",
-   "source": "pypi",
-   "score": 52627840,
-   "metric": "monthly downloads",
-   "rank": 20
-  },
   {
    "title": "jhaizhou-ops/S2Arm",
    "url": "https://github.com/jhaizhou-ops/S2Arm",
@@ -324,6 +316,14 @@
    "score": 13,
    "metric": "score",
    "rank": 11
+  },
+  {
+   "title": "Writing a DSL for high performance parallel programming in OxCaml",
+   "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
+   "source": "lobsters",
+   "score": 11,
+   "metric": "score",
+   "rank": 14
   }
  ],
  "gainers": [
@@ -331,10 +331,10 @@
    "title": "Lovable apps expose passport details and more than 200K private messages",
    "url": "https://www.crissyfield.de/research/lovable-en/",
    "source": "hackernews",
-   "score": 879,
+   "score": 880,
    "metric": "points",
    "rank": 2,
-   "delta": 528
+   "delta": 529
   },
   {
    "title": "DevedevT/FFmpeg-GUI-Editor-Windows",
@@ -349,28 +349,28 @@
    "title": "deepseek-ai/chat-demo",
    "url": "https://github.com/deepseek-ai/chat-demo",
    "source": "github_trending",
-   "score": 2178,
+   "score": 2183,
    "metric": "stars",
    "rank": 2,
-   "delta": 476
+   "delta": 481
   },
   {
    "title": "A family tree of software job titles",
    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
    "source": "hackernews",
-   "score": 352,
+   "score": 353,
    "metric": "points",
    "rank": 5,
-   "delta": 272
+   "delta": 273
   },
   {
    "title": "KDE: The documentary [video]",
    "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
    "source": "hackernews",
-   "score": 513,
+   "score": 515,
    "metric": "points",
    "rank": 4,
-   "delta": 234
+   "delta": 236
   },
   {
    "title": "adriadam10/mkw-recomp",
@@ -394,19 +394,19 @@
    "title": "apex-compute/ANR",
    "url": "https://github.com/apex-compute/ANR",
    "source": "github_trending",
-   "score": 1944,
+   "score": 1946,
    "metric": "stars",
    "rank": 4,
-   "delta": 160
+   "delta": 162
   },
   {
    "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
    "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
    "source": "hackernews",
-   "score": 246,
+   "score": 247,
    "metric": "points",
    "rank": 10,
-   "delta": 157
+   "delta": 158
   },
   {
    "title": "huamidev/GestaltX",
@@ -690,25 +690,6 @@
    "delta": 5
   }
  ],
- "pkg_rank_up": [
-  {
-   "title": "django",
-   "url": "https://pypi.org/project/django/",
-   "source": "pypi",
-   "score": 50283944,
-   "metric": "monthly downloads",
-   "rank": 20,
-   "rank_delta": 1
-  },
-  {
-   "title": "tensorflow",
-   "url": "https://pypi.org/project/tensorflow/",
-   "source": "pypi",
-   "score": 12496761,
-   "metric": "monthly downloads",
-   "rank": 21,
-   "rank_delta": 1
-  }
- ],
+ "pkg_rank_up": [],
  "pkg_rank_down": []
 }
