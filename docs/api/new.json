@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-15T16:09:55.270141+00:00",
+ "generated_at": "2026-11-15T16:12:10.002721+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1437,
- "new_items": 1311,
+ "total_items": 1438,
+ "new_items": 1312,
  "by_source": {
   "producthunt": 45,
-  "show_hn": 30,
+  "show_hn": 31,
   "theregister": 29,
   "hackernews": 28,
   "techmeme": 20,
@@ -8338,6 +8338,14 @@
   {
    "title": "Show HN: A tiny macOS app that turns off the MacBook display [free license]",
    "url": "https://blackoutapp.io/",
+   "source": "show_hn",
+   "rank": 7,
+   "score": 2,
+   "metric": "points"
+  },
+  {
+   "title": "Show HN: Rust Commander (RC)",
+   "url": "https://github.com/hbbio/rc",
    "source": "show_hn",
    "rank": 7,
    "score": 2,
