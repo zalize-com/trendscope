@@ -29,6 +29,7 @@ def main():
         it["title"] = row["title"]
         it["source"] = row["source"]
         it["url"] = url
+        it["metric"] = row.get("metric") or it.get("metric") or ""
         try:
             it["obs"].append({"date": d, "score": int(row.get("score") or 0),
                               "rank": int(row.get("rank") or 99)})
@@ -44,7 +45,7 @@ def main():
     for it in items.values():
         it["obs"].sort(key=lambda o: o["date"])
         obs = it["obs"]
-        base = {k: it[k] for k in ("title", "source", "url")}
+        base = {k: it[k] for k in ("title", "source", "url", "metric")}
         for i in range(1, len(obs)):
             p, c = obs[i - 1], obs[i]
             if prev_day(c["date"]) != p["date"]:
@@ -72,6 +73,7 @@ def main():
     out = {
         "generated_at": date.today().isoformat(),
         "latest_snapshot": latest,
+        "days_tracked": len(days),
         "single_day_spikes": spikes[:50],
         "package_rank_jumps": jumps[:50],
         "sustained_climbers": climbers[:50],

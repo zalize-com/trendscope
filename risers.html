@@ -53,107 +53,42 @@
     <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a></footer>
 <script type="module">
 const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
-const fmt = n => {
-  const s = n < 0 ? "-" : "", a = Math.abs(n);
-  return s + (a >= 1e9 ? (a/1e9).toFixed(1)+"B" : a >= 1e6 ? (a/1e6).toFixed(1)+"M" : a >= 1e3 ? (a/1e3).toFixed(1)+"k" : String(a));
-};
+const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B" : n >= 1e6 ? (n/1e6).toFixed(1)+"M" : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
 const $ = id => document.getElementById(id);
-const ROLLING = new Set(["npm","pypi","crates"]);
+const d = await fetch("docs/api/risers.json", {cache:"no-cache"}).then(r => r.json());
+const spikes = d.single_day_spikes, jumps = d.package_rank_jumps,
+      climbers = d.sustained_climbers, latest = d.latest_snapshot;
 
-function parseCSV(text) {
-  const rows = []; let field = "", row = [], inQ = false;
-  for (let i = 0; i < text.length; i++) {
-    const c = text[i];
-    if (inQ) {
-      if (c === '"') {
-        if (text[i+1] === '"') { field += '"'; i++; } else inQ = false;
-      } else field += c;
-    } else if (c === '"') inQ = true;
-    else if (c === ",") { row.push(field); field = ""; }
-    else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
-    else if (c !== "\r") field += c;
-  }
-  if (field || row.length) { row.push(field); rows.push(row); }
-  return rows;
-}
-
-const text = await fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text());
-const rows = parseCSV(text);
-const hdr = rows[0];
-const ci = Object.fromEntries(hdr.map((h,i)=>[h,i]));
-
-// url -> {title, source, metric, obs: [{date, score, rank}] sorted}
-const items = {};
-for (const r of rows.slice(1)) {
-  const url = r[ci.url]; if (!url) continue;
-  const it = items[url] ||= { title: r[ci.title], source: r[ci.source], metric: r[ci.metric], obs: [] };
-  it.obs.push({ date: r[ci.date], score: Number(r[ci.score])||0, rank: Number(r[ci.rank])||99 });
-}
-const allDates = [...new Set(rows.slice(1).map(r => r[ci.date]))].sort();
-const latest = allDates[allDates.length-1];
-const prevDay = d => new Date(new Date(d+"T00:00:00Z") - 86400000).toISOString().slice(0,10);
-
-// score spikes: only consecutive-day observations, non-rolling sources
-const spikes = [];
-// rank jumps: consecutive-day, rolling sources (rank decrease = gained places)
-const jumps = [];
-for (const [url, it] of Object.entries(items)) {
-  it.obs.sort((a,b) => a.date < b.date ? -1 : 1);
-  for (let i = 1; i < it.obs.length; i++) {
-    const p = it.obs[i-1], c = it.obs[i];
-    if (prevDay(c.date) !== p.date) continue;
-    if (ROLLING.has(it.source)) {
-      const j = p.rank - c.rank;
-      if (j > 0) jumps.push({ url, ...it, jump: j, from: p.rank, to: c.rank, date: c.date });
-    } else {
-      const d = c.score - p.score;
-      if (d > 0) spikes.push({ url, ...it, delta: d, from: p.score, to: c.score, date: c.date });
-    }
-  }
-}
-spikes.sort((a,b) => b.delta - a.delta);
-jumps.sort((a,b) => b.jump - a.jump);
 const QS = new URLSearchParams(location.search).get("s");
-const srcs = [...new Set(Object.values(items).map(i => i.source))].sort();
+const srcs = [...new Set(spikes.concat(jumps, climbers).map(i => i.source))].sort();
 $("srcbar").innerHTML = srcs.map(s =>
   `<a class="chip${s===QS?" on":""}" href="?s=${encodeURIComponent(s)}">${s}</a>`).join(" ") +
   (QS ? ` <a class="chip" href="?">all</a>` : "");
 const sf = e => !QS || e.source === QS;
-const spikesF = spikes.filter(sf), jumpsF = jumps.filter(sf);
+const spikesF = spikes.filter(sf), jumpsF = jumps.filter(sf), climbersF = climbers.filter(sf);
 
 $("stats").innerHTML =
   `<div class="stat"><b>${latest}</b><small>latest snapshot</small></div>
-   <div class="stat"><b>${allDates.length}</b><small>days tracked</small></div>
+   <div class="stat"><b>${d.days_tracked}</b><small>days tracked</small></div>
    <div class="stat"><b class="up">+${spikes.length ? fmt(spikes[0].delta) : 0}</b><small>biggest 1-day spike</small></div>
    <div class="stat"><b>${spikes.length}</b><small>positive single-day deltas</small></div>`;
 
-// sustained climbers: total rise from first to last observation for items
-// still on the latest board (non-rolling), longest-first among gainers
-const climbers = [];
-for (const [url, it] of Object.entries(items)) {
-  if (ROLLING.has(it.source) || it.obs.length < 2) continue;
-  if (it.obs[it.obs.length-1].date !== latest) continue;
-  const gain = it.obs[it.obs.length-1].score - it.obs[0].score;
-  if (gain > 0) climbers.push({ url, ...it, gain, days: it.obs.length });
-}
-climbers.sort((a,b) => b.gain - a.gain);
-const climbersF = climbers.filter(sf);
 const crow = (e,i) =>
   `<li><span class="sc" style="min-width:16px;text-align:right">${i+1}</span>
    <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span>
    <a href="item.html?q=${encodeURIComponent(e.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>
-   <span class="sc"><span class="up">+${fmt(e.gain)}</span> ${e.metric} <span class="date">over ${e.days}d · still on board</span></span></li>`;
+   <span class="sc"><span class="up">+${fmt(e.gain)}</span> ${e.metric} <span class="date">over ${e.days_tracked}d · still on board</span></span></li>`;
 
 const srow = (e,i) =>
   `<li><span class="sc" style="min-width:16px;text-align:right">${i+1}</span>
    <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span>
    <a href="item.html?q=${encodeURIComponent(e.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>
-   <span class="sc"><span class="up">+${fmt(e.delta)}</span> ${e.metric} <span class="date">· ${e.date} · ${fmt(e.from)}→${fmt(e.to)}</span></span></li>`;
+   <span class="sc"><span class="up">+${fmt(e.delta)}</span> ${e.metric} <span class="date">· ${e.date} · ${fmt(e.from_score)}→${fmt(e.to_score)}</span></span></li>`;
 const jrow = (e,i) =>
   `<li><span class="sc" style="min-width:16px;text-align:right">${i+1}</span>
    <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span>
    <a href="item.html?q=${encodeURIComponent(e.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>
-   <span class="sc"><span class="up">▲${e.jump}</span> <span class="date">· ${e.date} · #${e.from}→#${e.to}</span></span></li>`;
+   <span class="sc"><span class="up">▲${e.jump}</span> <span class="date">· ${e.date} · #${e.from_rank}→#${e.to_rank}</span></span></li>`;
 
 $("out").innerHTML =
   `<h2>sustained climbers — still on board today</h2><ol>` +
