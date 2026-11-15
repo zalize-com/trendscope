@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T14:05:21.210685+00:00",
+ "generated_at": "2026-11-15T14:06:11.090828+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 222,
+ "total": 223,
  "domains": [
   {
    "hostname": "so.long.thanks.fish",
@@ -748,16 +748,16 @@
    }
   },
   {
-   "hostname": "krebsonsecurity.com",
+   "hostname": "dave.cheney.net",
    "days_on_board": 1,
-   "items": 10,
+   "items": 15,
    "sources": [
-    "krebs"
+    "cheney"
    ],
    "top_hit": {
-    "title": "Who Runs the Ransomware Group Qilin?",
-    "url": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
-    "score": 10,
+    "title": "Pop quiz: what time was it?",
+    "url": "https://dave.cheney.net/2025/12/18/pop-quiz-what-time-was-it",
+    "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
    }
