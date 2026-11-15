@@ -1,7 +1,7 @@
 {
  "a": "2026-11-14",
  "b": "2026-11-15",
- "generated": "2026-11-15 13:21 UTC",
+ "generated": "2026-11-15 13:24 UTC",
  "entered": [
   {
    "title": "SpaceX catches the Starship to end Flight 15",
@@ -15,7 +15,7 @@
    "title": "Eynnzerr/TelemetryCleaner",
    "url": "https://github.com/Eynnzerr/TelemetryCleaner",
    "source": "github_trending",
-   "score": 845,
+   "score": 847,
    "metric": "stars",
    "rank": 13
   },
@@ -165,6 +165,14 @@
   }
  ],
  "left": [
+  {
+   "title": "celery",
+   "url": "https://pypi.org/project/celery/",
+   "source": "pypi",
+   "score": 52627840,
+   "metric": "monthly downloads",
+   "rank": 20
+  },
   {
    "title": "jhaizhou-ops/S2Arm",
    "url": "https://github.com/jhaizhou-ops/S2Arm",
@@ -316,14 +324,6 @@
    "score": 13,
    "metric": "score",
    "rank": 11
-  },
-  {
-   "title": "Writing a DSL for high performance parallel programming in OxCaml",
-   "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
-   "source": "lobsters",
-   "score": 11,
-   "metric": "score",
-   "rank": 14
   }
  ],
  "gainers": [
@@ -349,10 +349,10 @@
    "title": "deepseek-ai/chat-demo",
    "url": "https://github.com/deepseek-ai/chat-demo",
    "source": "github_trending",
-   "score": 2173,
+   "score": 2178,
    "metric": "stars",
    "rank": 2,
-   "delta": 471
+   "delta": 476
   },
   {
    "title": "A family tree of software job titles",
@@ -394,10 +394,10 @@
    "title": "apex-compute/ANR",
    "url": "https://github.com/apex-compute/ANR",
    "source": "github_trending",
-   "score": 1943,
+   "score": 1944,
    "metric": "stars",
    "rank": 4,
-   "delta": 159
+   "delta": 160
   },
   {
    "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
@@ -690,6 +690,25 @@
    "delta": 5
   }
  ],
- "pkg_rank_up": [],
+ "pkg_rank_up": [
+  {
+   "title": "django",
+   "url": "https://pypi.org/project/django/",
+   "source": "pypi",
+   "score": 50283944,
+   "metric": "monthly downloads",
+   "rank": 20,
+   "rank_delta": 1
+  },
+  {
+   "title": "tensorflow",
+   "url": "https://pypi.org/project/tensorflow/",
+   "source": "pypi",
+   "score": 12496761,
+   "metric": "monthly downloads",
+   "rank": 21,
+   "rank_delta": 1
+  }
+ ],
  "pkg_rank_down": []
 }
