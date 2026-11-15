@@ -71,6 +71,7 @@ compare within a source, not across.
   consecutive days on the board, computed client-side from `history.csv`.
 - **Domains** (`domains.html`): most-linked sites across all snapshots,
   grouped by hostname from `history.csv`.
+- **Item history** (`item.html?q=`): any story/package's day-by-day rank & score trajectory.
 - **This week** (`week.html`): last-7-day cumulative board + staying-power list.
 - **Digests** (`digest.html`): weekly markdown digests rendered in-site.
 - **Embed widget** (`embed.html`): the top-10 board as a drop-in iframe for

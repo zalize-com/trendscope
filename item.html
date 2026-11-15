@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>item history — trendscope</title>
+<meta name="description" content="Track a single story or package's rank and score across every day it's been on the trendscope board.">
+<meta property="og:title" content="trendscope item history — day-by-day trajectory">
+<meta property="og:image" content="og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+<style>
+  :root { --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
+          --dim:#8b949e; --accent:#58a6ff; --green:#3fb950; --orange:#d29922; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 18px; }
+  input[type=search] {
+    width: 100%; padding: 8px 12px; background: var(--panel); color: var(--fg);
+    border: 1px solid var(--border); border-radius: 6px; font-size: 14px;
+  }
+  h2 { font-size: 15px; color: var(--dim); font-weight: 600; margin: 22px 0 6px;
+       text-transform: uppercase; letter-spacing: .04em; }
+  ol { list-style: none; }
+  li { display: flex; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--border); align-items: baseline; }
+  .it a { color: var(--fg); } .it a:hover { color: var(--accent); }
+  .src { color: var(--dim); font-size: 11px; border: 1px solid var(--border);
+         border-radius: 4px; padding: 0 5px; margin-left: 6px; }
+  .sc { margin-left: auto; white-space: nowrap; font-size: 12px; color: var(--dim); }
+  .rk { color: var(--accent); font-weight: 600; min-width: 38px; text-align: right; }
+  .card { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; margin-top: 16px; }
+  .card b { font-size: 16px; }
+  .stats { display: flex; gap: 18px; flex-wrap: wrap; margin: 10px 0 0; }
+  .stat b { font-size: 20px; } .stat small { color: var(--dim); display: block; font-size: 11px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+  #err { color: var(--dim); }
+</style>
+</head>
+<body>
+  <nav><a href="index.html">← trendscope</a> · <a href="week.html">this week</a> · <a href="streaks.html">streaks</a></nav>
+  <h1>item <span>history</span></h1>
+  <div class="sub">Every day a story or package has been on the board — rank and score trajectory, from <a href="data/history.csv">history.csv</a>.</div>
+  <input type="search" id="q" placeholder="search title / url / author — e.g. SpaceX, boto3, val.town…" autofocus>
+  <div id="out"></div>
+  <footer>
+    <a href="https://github.com/zalize-com/trendscope">trendscope</a> · CC0
+  </footer>
+<script>
+const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B" : n >= 1e6 ? (n/1e6).toFixed(1)+"M"
+             : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
+const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
+
+function parseCSV(txt) {
+  const rows = []; let f = "", row = [], q = false;
+  for (let i = 0; i <= txt.length; i++) {
+    const c = txt[i];
+    if (q) {
+      if (c === '"') { if (txt[i+1] === '"') { f += '"'; i++; } else q = false; }
+      else if (c === undefined) {} else f += c;
+    } else if (c === '"') q = true;
+    else if (c === ',' ) { row.push(f); f = ""; }
+    else if (c === '\n' || c === undefined) { row.push(f); f = ""; rows.push(row); row = []; }
+    else if (c !== '\r') f += c;
+  }
+  return rows.filter(r => r.length > 1);
+}
+
+let RECS = null;
+fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
+  const rows = parseCSV(txt);
+  const hdr = rows[0];
+  RECS = rows.slice(1).map(r => Object.fromEntries(hdr.map((h,i)=>[h,r[i]])));
+  const q0 = new URLSearchParams(location.search).get("q") || "";
+  document.getElementById("q").value = q0;
+  paint();
+  document.getElementById("q").addEventListener("input", paint);
+}).catch(() => { document.getElementById("out").innerHTML = "<p id='err'>history unavailable</p>"; });
+
+function paint() {
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const out = document.getElementById("out");
+  if (!RECS || q.length < 2) { out.innerHTML = ""; return; }
+  // group matching items by url
+  const hits = {};
+  for (const r of RECS) {
+    if (!((r.title||"").toLowerCase().includes(q) || (r.url||"").toLowerCase().includes(q)
+          || (r.author||"").toLowerCase() === q)) continue;
+    const k = r.url || r.title;
+    (hits[k] = hits[k] || []).push(r);
+  }
+  const groups = Object.values(hits);
+  if (!groups.length) { out.innerHTML = `<p id="err">no matches in history.</p>`; return; }
+  out.innerHTML = groups.slice(0, 8).map(rs => {
+    rs.sort((a,b) => a.date.localeCompare(b.date));
+    const it = rs[rs.length-1];
+    const days = rs.length;
+    const best = Math.min(...rs.map(r => +r.rank || 99));
+    const peak = Math.max(...rs.map(r => +r.score || 0));
+    // score sparkline
+    const mx = peak || 1;
+    const spark = `<svg width="${days*10}" height="18" viewBox="0 0 ${days*10} 18" style="vertical-align:-3px;margin-left:8px">${
+      rs.map((r,i) => `<rect x="${i*10}" y="${18-Math.round(14*(+r.score||0)/mx)}" width="8" height="${Math.max(1,Math.round(14*(+r.score||0)/mx))}" fill="var(--accent)"/>`).join("")}</svg>`;
+    return `<div class="card">
+      <b><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a></b>
+      <div class="stats">
+        <div class="stat"><b>${days}</b><small>days on board</small></div>
+        <div class="stat"><b>#${best}</b><small>best rank</small></div>
+        <div class="stat"><b>${fmt(peak)}</b><small>peak ${it.metric}</small></div>
+        <div class="stat"><b>${spark}</b><small>score/day</small></div>
+      </div>
+      <h2>trajectory</h2>
+      <ol>${rs.map(r => `<li><span class="rk">#${r.rank}</span>
+        <span class="it">${r.date}<span class="src">${r.source}</span></span>
+        <span class="sc">${fmt(+r.score||0)} ${r.metric}</span></li>`).join("")}</ol>
+    </div>`;
+  }).join("") + (groups.length > 8 ? `<p id="err">…and ${groups.length-8} more matches</p>` : "");
+}
+</script>
+</body>
+</html>
