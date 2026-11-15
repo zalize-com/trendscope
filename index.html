@@ -576,9 +576,15 @@ async function main() {
       for (let i = days.length - 1; i >= 0 && byDay[days[i]]; i--) n++;
       if (n >= 2) streak = ` · all green ${n} days running`;
     } catch (e) { /* log optional */ }
+    let fresh = "";
+    if (H.generated_at) {
+      const mins = Math.max(0, Math.round((Date.now() - new Date(H.generated_at).getTime()) / 60000));
+      fresh = mins < 60 ? ` · updated ${mins || "just now"}m ago` : ` · updated ${Math.round(mins / 60)}h ago`;
+    }
     document.getElementById("src-health").innerHTML = bad.length
       ? `<span style="color:var(--orange)">⚠ degraded: ${bad.join(", ")}</span>`
       : `<span style="color:var(--green)">●</span> all ${Object.keys(H.sources).length} sources healthy`
+        + fresh
         + (slowest ? ` · slowest ${slowest[0]} ${(slowest[1].ms/1000).toFixed(1)}s` : "")
         + `<span style="color:var(--green)">${streak}</span>`;
   } catch (e) { /* health file optional */ }
