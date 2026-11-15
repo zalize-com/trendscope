@@ -5,7 +5,7 @@ workflow. Fork this repo and you get your own cross-source attention
 dataset in about two minutes:
 
 1. **Fork** → Settings → Pages → Deploy from branch → `main` / root.
-2. **The workflow is already enabled** — it runs daily at 06:05 UTC and
+2. **The workflow is already enabled** — it runs twice daily at 06:05 and 18:05 UTC and
    commits `data/` back to your fork. First run: Actions → "Run workflow".
 3. **Edit the watchlists** in `scripts/collect.py` — `NPM_WATCHLIST` and
    `PYPI_WATCHLIST` pick the packages, `TOPIC_RULES` re-labels the topic
