@@ -81,6 +81,9 @@ compare within a source, not across.
 <iframe src="https://zalize-com.github.io/trendscope/embed.html" width="400" height="520" frameborder="0"></iframe>
 ```
 
+Params: `?n=` rows (5–30), `?s=github_trending` single source,
+`?q=llm` title/tag keyword filter.
+
 ## Quick start
 
 ```bash

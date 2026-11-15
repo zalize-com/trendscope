@@ -55,18 +55,24 @@
 const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B" : n >= 1e6 ? (n/1e6).toFixed(1)+"M"
              : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
 const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
-const N = Math.min(Math.max(parseInt(new URLSearchParams(location.search).get("n") || "10"), 5), 30);
+const P = new URLSearchParams(location.search);
+const N = Math.min(Math.max(parseInt(P.get("n") || "10"), 5), 30);
+const QS = (P.get("s") || "").toLowerCase();   // ?s=github_trending — single source
+const QQ = (P.get("q") || "").toLowerCase();   // ?q=llm — title/tag keyword
 fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
   document.getElementById("date").textContent = snap.date || snap.generated_at.slice(0,10);
   const max = {};
   for (const [s, its] of Object.entries(snap.items)) max[s] = its[0]?.score || 1;
   const flat = Object.entries(snap.items).flatMap(([s, its]) =>
-    its.map(it => ({it, heat: it.score / (max[s] || 1)})));
+    its.map(it => ({it, heat: it.score / (max[s] || 1)})))
+    .filter(x => (!QS || x.it.source === QS) &&
+                 (!QQ || (x.it.title + " " + (x.it.tags||[]).join(" ")).toLowerCase().includes(QQ)));
   flat.sort((a,b) => b.heat - a.heat);
-  document.getElementById("list").innerHTML = flat.slice(0, N).map((x, i) =>
+  document.getElementById("list").innerHTML = flat.length ? flat.slice(0, N).map((x, i) =>
     `<li><span class="rank">${i+1}</span>
       <span><a href="${x.it.url}" target="_blank" rel="noopener">${esc(x.it.title)}</a><span class="src">${x.it.source}</span></span>
-      <span class="score">${fmt(x.it.score)} ${x.it.metric}</span></li>`).join("");
+      <span class="score">${fmt(x.it.score)} ${x.it.metric}</span></li>`).join("")
+    : `<li id="err">no items match this filter today</li>`;
 }).catch(() => { document.getElementById("err").textContent = "snapshot unavailable"; });
 </script>
 </body>
