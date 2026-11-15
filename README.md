@@ -145,6 +145,7 @@ A daily cross-source snapshot of developer attention:
 | Ciechanowski | interactive visual essays | `ciechanow.ski/atom.xml` |
 | mikeash | Friday Q&A systems blog | `mikeash.com/pyblog/rss.py` |
 | fogus | Clojure and PL essays | `blog.fogus.me/feed/` |
+| Nicky Case | explorable explanations | `blog.ncase.me/rss/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
