@@ -32,3 +32,4 @@ the collision-avoidance rules.
   that sentence again.
 - The data is the product; the pages are the storefront. When in doubt,
   add a dataset, not a chart.
+- **Function declarations are block-scoped in modules.** Declaring `function f()` inside an `if` block then calling it outside silently fails. When auditing JS, check the call site, not just the declaration — a naive grep counts helpers defined and used inside the same DOMContentLoaded wrapper as false positives.
