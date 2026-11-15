@@ -484,3 +484,24 @@ Expose the dataset to any MCP-capable agent (Claude Desktop etc.):
 Tools: `ts_latest`, `ts_new`, `ts_risers`, `ts_search`, `ts_streaks`,
 `ts_topics`, `ts_sources`. Zero deps; `TRENDSCOPE_BASE` overrides the data
 root for self-hosted mirrors.
+
+| Trivago Tech | trivago engineering | `tech.trivago.com/rss.xml` |
+| iO Tech Hub | digital agency tech | `techhub.iodigital.com/feed.xml` |
+| Terrill Thompson | a11y expert | `terrillthompson.com/feed` |
+| Tess OConnor | engineering notes | `tess.oconnor.cx/feed` |
+| Testing A11y | a11y testing | `testingaccessibility.com/rss.xml` |
+| TetraLogical | a11y consultancy | `tetralogical.com/feed.xml` |
+| That HTML | HTML blog | `thathtml.blog/feed.xml` |
+| CSS Ninja | CSS techniques | `thecssninja.com/index.xml` |
+| Idea Place | dev notes | `theideaplace.net/feed/` |
+| The New Toys | dev notes | `thenewtoys.dev/rss.xml` |
+| No Red | design notes | `thereshouldbenored.com/feed/feed.xml` |
+| Think Do Create | Manuel Matuzovic | `thinkdobecreate.com/feed/` |
+| This Cute | dev notes | `thiscute.world/index.xml` |
+| Optimal | dev notes | `thisisoptimal.com/blog/index.xml` |
+| Thomas Park | creative dev | `thomaspark.co/feed/` |
+| Tim Daub | engineering notes | `timdaub.github.io/atom.xml` |
+| Timmy Kokke | frontend dev | `timmykokke.com/blog/index.xml` |
+| Timmy OMahony | dev notes | `timmyomahony.com/feed.rss` |
+| Tim Tech | dev notes | `timtech.blog/feed/feed.xml` |
+| Tink | Leonie Watson a11y | `tink.uk/feed.xml` |
