@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T13:47:21.882067+00:00",
+ "generated_at": "2026-11-15T13:51:13.951408+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 218,
+ "total": 219,
  "domains": [
   {
    "hostname": "so.long.thanks.fish",
@@ -687,6 +687,21 @@
    }
   },
   {
+   "hostname": "blog.codinghorror.com",
+   "days_on_board": 1,
+   "items": 15,
+   "sources": [
+    "codinghorror"
+   ],
+   "top_hit": {
+    "title": "Suffering as a Feature",
+    "url": "https://blog.codinghorror.com/suffering-as-a-feature/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "krebsonsecurity.com",
    "days_on_board": 1,
    "items": 10,
@@ -742,21 +757,6 @@
     "title": "An MP3 Player, Implemented As A Factorio Blueprint",
     "url": "https://hackaday.com/2026/11/15/an-mp3-player-implemented-as-a-factorio-blueprint/",
     "score": 7,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "yro.slashdot.org",
-   "days_on_board": 1,
-   "items": 4,
-   "sources": [
-    "slashdot"
-   ],
-   "top_hit": {
-    "title": "America Officially Loses Its Measles-elimination Status After Continued Spread of the Disease",
-    "url": "https://yro.slashdot.org/story/26/11/14/2325219/america-officially-loses-its-measles-elimination-status-after-continued-spread-of-the-disease?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-    "score": 12,
     "metric": "feed rank",
     "date": "2026-11-15"
    }
