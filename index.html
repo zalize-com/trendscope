@@ -430,10 +430,26 @@ async function main() {
     const H = await j("data/health.json");
     const bad = Object.entries(H.sources).filter(([, h]) => !h.ok).map(([s]) => s);
     const slowest = Object.entries(H.sources).sort((a, b) => b[1].ms - a[1].ms)[0];
+    let streak = "";
+    try {
+      // consecutive all-green days, walking back from the latest logged date
+      const txt = await fetch("data/health-log.csv", {cache:"no-cache"}).then(r => r.ok ? r.text() : "");
+      const byDay = {};
+      txt.trim().split("\n").slice(1).forEach(l => {
+        const [d, , ok] = l.split(",");
+        if (!d) return;
+        byDay[d] = (byDay[d] ?? true) && ok === "1";
+      });
+      const days = Object.keys(byDay).sort();
+      let n = 0;
+      for (let i = days.length - 1; i >= 0 && byDay[days[i]]; i--) n++;
+      if (n >= 2) streak = ` · all green ${n} days running`;
+    } catch (e) { /* log optional */ }
     document.getElementById("src-health").innerHTML = bad.length
       ? `<span style="color:var(--orange)">⚠ degraded: ${bad.join(", ")}</span>`
       : `<span style="color:var(--green)">●</span> all ${Object.keys(H.sources).length} sources healthy`
-        + (slowest ? ` · slowest ${slowest[0]} ${(slowest[1].ms/1000).toFixed(1)}s` : "");
+        + (slowest ? ` · slowest ${slowest[0]} ${(slowest[1].ms/1000).toFixed(1)}s` : "")
+        + `<span style="color:var(--green)">${streak}</span>`;
   } catch (e) { /* health file optional */ }
 
   // watchlist: seed from ?pkgs= (shareable), persist to localStorage

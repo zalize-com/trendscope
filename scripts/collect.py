@@ -463,6 +463,17 @@ def main():
     with open(os.path.join(DATA_DIR, "health.json"), "w") as f:
         json.dump({"generated_at": now.isoformat(), "sources": health}, f, indent=2)
 
+    # Append-only per-source health log — powers the "N consecutive green days"
+    # badge on the dashboard.
+    hlog = os.path.join(DATA_DIR, "health-log.csv")
+    new_file = not os.path.exists(hlog)
+    with open(hlog, "a", newline="") as f:
+        w = csv.writer(f)
+        if new_file:
+            w.writerow(["date", "source", "ok", "items", "ms"])
+        for name, h in health.items():
+            w.writerow([today, name, int(h["ok"]), h["items"], h["ms"]])
+
     all_items = []
     for items in sections.values():
         for rank, it in enumerate(items, start=1):
