@@ -44,6 +44,7 @@ ranking.
 
 - `data/health.json` — per-source run health `{ok, items, ms}` for the latest
   collection; `data/health-log.csv` appends `date,source,ok,items,ms` daily.
+- `data/topics-history.csv` — append-only `date,topic,count,total_score` per day.
 - `docs/api/movers-latest.json` — structured entered/left/gainers/droppers and
   package rank movers for the latest snapshot pair (same computation as
   `docs/movers/*.md`).
