@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T15:35:51.605514+00:00",
+  "generated_at": "2026-11-15T15:37:06.260779+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -135,8 +135,8 @@
       }
     },
     "slashdot": {
-      "items": 17,
-      "unique_urls": 17,
+      "items": 18,
+      "unique_urls": 18,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -767,6 +767,18 @@
         "title": "Monads in Lean",
         "url": "https://eli.thegreenplace.net/2026/monads-in-lean/",
         "score": 5,
+        "rank": 1
+      }
+    },
+    "thisweek": {
+      "items": 4,
+      "unique_urls": 4,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "This Week in Rust 677",
+        "url": "https://this-week-in-rust.org/blog/2026/11/11/this-week-in-rust-677/",
+        "score": 4,
         "rank": 1
       }
     }
