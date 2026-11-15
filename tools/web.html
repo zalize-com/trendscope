@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>trendscope web tools — QR generator, social card preview, robots.txt builder</title>
-<meta name="description" content="Free in-browser web tools: QR code generator, Open Graph/Twitter card preview + meta tag generator, and a robots.txt builder. No upload, no signup, no tracking.">
+<meta name="description" content="Free in-browser web tools: QR code generator, Open Graph/Twitter card preview + meta tag generator, robots.txt builder, and a typosquat checker. No upload, no signup, no tracking.">
 <meta property="og:title" content="trendscope web tools">
 <meta property="og:image" content="../og.png">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
@@ -56,11 +56,12 @@
 <body>
   <nav><a href="../index.html">← trendscope</a> · <a href="./">tools</a> · <a href="more.html">tools+</a> · <a href="utils.html">utils</a> · <a href="dev.html">dev</a> · <a href="a11y.html">a11y</a> · <a href="geo.html">geo</a></nav>
   <h1>web<span> tools</span></h1>
-  <p class="sub">QR codes · social card preview · robots.txt — all client-side.</p>
+  <p class="sub">QR codes · social card · robots.txt · typosquat check — all client-side.</p>
   <div class="tabs" id="tabs">
     <button data-tool="qr">QR code</button>
     <button data-tool="og">social card</button>
     <button data-tool="robots">robots.txt</button>
+    <button data-tool="squat">typosquat</button>
   </div>
 
   <div class="panel" id="p-qr">
@@ -104,14 +105,21 @@
     <button class="copy" id="rb-copy">copy robots.txt</button>
   </div>
 
-  <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
+    <div class="panel" id="p-squat">
+    <h2>Typosquat generator + checker</h2>
+    <p class="hint">Enter a domain → common lookalike registrations an impersonator might grab. Click any candidate to look it up.</p>
+    <input type="text" id="sq-in" placeholder="example.com" value="example.com">
+    <div class="out" id="sq-out" style="margin-top:12px"></div>
+  </div>
+
+<footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["qr","og","robots"];
+const tools = ["qr","og","robots","squat"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "qr");
@@ -206,6 +214,41 @@ function robots() {
 ["rb-all","rb-dis","rb-map","rb-extra"].forEach(id => $(id).oninput = robots);
 $("rb-copy").onclick = () => { navigator.clipboard?.writeText($("rb-out").textContent); $("rb-copy").textContent="copied"; setTimeout(()=>$("rb-copy").textContent="copy robots.txt",1200); };
 robots();
+
+/* ---------- typosquat ---------- */
+const HOMO = {l:"1",o:"0",e:"3",s:"5",i:"1",t:"7",g:"9",a:"4"};
+const HOMO_SEQ = [["rn","m"],["vv","w"],["cl","d"],["nn","m"]];
+const TLDS = ["com","net","io","co","dev","app","org"];
+function squat() {
+  const raw = $("sq-in").value.trim().toLowerCase().replace(/^https?:\/\//,"").replace(/\/.*$/,"");
+  const out = $("sq-out"); out.innerHTML = "";
+  if (!raw || !raw.includes(".")) { out.textContent = "enter a domain like example.com"; return; }
+  const parts = raw.split("."), name = parts[0], tld = parts.slice(1).join(".");
+  const seen = new Set(), cands = [];
+  const add = (d, why) => { if (d !== raw && !seen.has(d)) { seen.add(d); cands.push({d, why}); } };
+  // omissions / doubles / swaps / substitutions
+  for (let i = 0; i < name.length; i++) {
+    add(name.slice(0,i) + name.slice(i+1) + "." + tld, "missing letter");
+    add(name.slice(0,i) + name[i] + name.slice(i) + "." + tld, "doubled letter");
+    if (i < name.length-1)
+      add(name.slice(0,i) + name[i+1] + name[i] + name.slice(i+2) + "." + tld, "swapped letters");
+    const sub = HOMO[name[i]];
+    if (sub) add(name.slice(0,i) + sub + name.slice(i+1) + "." + tld, "character substitution");
+  }
+  for (const [seq, repl] of HOMO_SEQ)
+    if (name.includes(seq)) add(name.replace(seq, repl) + "." + tld, "letter-pair lookalike");
+  if (name.length > 2) add(name.slice(0, -1) + "-" + name.slice(-1) + "." + tld, "hyphen insertion");
+  for (const t of TLDS) if (t !== tld) add(name + "." + t, "different TLD");
+  const rows = cands.slice(0, 40).map(c => {
+    const span = document.createElement("span");
+    span.innerHTML = `<a href="https://who.is/whois/${c.d}" target="_blank" rel="noopener">${c.d}</a> <span style="color:var(--dim)">— ${c.why}</span>`;
+    return span;
+  });
+  out.textContent = `${cands.length} candidates (showing ${rows.length}) — click to check whois:\n`;
+  rows.forEach(r => { out.appendChild(r); out.appendChild(document.createTextNode("\n")); });
+}
+$("sq-in").oninput = squat;
+squat();
 </script>
 </body>
 </html>
