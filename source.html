@@ -75,14 +75,14 @@ function parseCSV(text) {
   return rows;
 }
 
-const text = await fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text());
-const rows = parseCSV(text);
-const ci = Object.fromEntries(rows[0].map((h,i)=>[h,i]));
-const all = rows.slice(1).map(r => ({
-  source: r[ci.source], date: r[ci.date], title: r[ci.title], url: r[ci.url],
-  score: Number(r[ci.score]) || 0, metric: r[ci.metric], rank: Number(r[ci.rank]) || 0,
-  comments: r[ci.comments], author: r[ci.author]
-}));
+const ser = await fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json());
+const all = [];
+for (const [url, it] of Object.entries(ser.items)) {
+  for (const [date, [score, rank, comments]] of Object.entries(it.days)) {
+    all.push({source: it.source, date, title: it.title, url, score, metric: it.metric,
+              rank, comments, author: it.author});
+  }
+}
 const sources = [...new Set(all.map(r => r.source))].sort();
 if (!sources.includes(S)) location.search = "?s=hackernews";
 
