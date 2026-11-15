@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T13:57:07.395231+00:00",
+ "generated_at": "2026-11-15T13:57:44.277147+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 220,
+ "total": 221,
  "domains": [
   {
    "hostname": "so.long.thanks.fish",
@@ -717,6 +717,21 @@
    }
   },
   {
+   "hostname": "blog.pragmaticengineer.com",
+   "days_on_board": 1,
+   "items": 15,
+   "sources": [
+    "pragmatic"
+   ],
+   "top_hit": {
+    "title": "The Pulse: Details of incident.io’s AI spend",
+    "url": "https://blog.pragmaticengineer.com/the-pulse-details-of-incident-ios-ai-spend/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "krebsonsecurity.com",
    "days_on_board": 1,
    "items": 10,
@@ -741,21 +756,6 @@
    "top_hit": {
     "title": "Build and Train a GLM-5.3-Flash Model From Scratch with Python",
     "url": "https://www.freecodecamp.org/news/build-and-train-a-glm-53-flash-model-from-scratch-with-python/",
-    "score": 10,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "opensource.com",
-   "days_on_board": 1,
-   "items": 10,
-   "sources": [
-    "opensourcecom"
-   ],
-   "top_hit": {
-    "title": "New developments at Opensource.com",
-    "url": "https://opensource.com/article/23/6/new-developments-opensourcecom",
     "score": 10,
     "metric": "feed rank",
     "date": "2026-11-15"

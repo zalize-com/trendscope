@@ -762,6 +762,36 @@ def fetch_martinfowler(limit=15):
     return out
 
 
+
+def fetch_pragmatic(limit=15):
+    """The Pragmatic Engineer — big SWE newsletter/blog RSS, position-scored."""
+    print("Fetching Pragmatic Engineer feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://blog.pragmaticengineer.com/rss/",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] pragmatic attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or "").split())
+        link = (e.findtext("link") or "").strip() or "https://blog.pragmaticengineer.com/"
+        out.append(item(
+            "pragmatic", title, link,
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
 def fetch_slashdot(limit=15):
     """Slashdot RSS 1.0 (RDF) — nerd news, position-scored like techmeme."""
     print("Fetching Slashdot feed...")
@@ -1038,6 +1068,7 @@ def main():
         "soblog": fetch_soblog,
         "codinghorror": fetch_codinghorror,
         "martinfowler": fetch_martinfowler,
+        "pragmatic": fetch_pragmatic,
         "arstechnica": fetch_arstechnica,
         "theverge": fetch_theverge,
         "arxiv": fetch_arxiv,

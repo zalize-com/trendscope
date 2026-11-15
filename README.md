@@ -51,6 +51,7 @@ A daily cross-source snapshot of developer attention:
 | Stack Overflow Blog | dev culture | `stackoverflow.blog/feed/` |
 | Coding Horror | classic dev blog | `blog.codinghorror.com/rss/` |
 | Martin Fowler | SWE essays | `martinfowler.com/feed.atom` |
+| Pragmatic Engineer | SWE newsletter | `blog.pragmaticengineer.com/rss/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
