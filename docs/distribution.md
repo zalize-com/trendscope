@@ -69,8 +69,10 @@ public — but nobody keeps them. Every "trending" page is ephemeral: yesterday
 is gone.
 
 So we built [trendscope](https://github.com/zalize-com/trendscope): a tiny
-pipeline that snapshots all seven sources every day and commits the result
-back to the repo as a normal file.
+pipeline that snapshots **eleven sources** every day — Hacker News (front
+page, Show HN *and* Ask HN), GitHub trending, Lobsters, dev.to, npm, PyPI,
+crates.io, Product Hunt and Techmeme — and commits the result back to the
+repo as a normal file.
 
 The interesting part isn't the dashboard — it's that **the data is the
 product**:
@@ -79,6 +81,11 @@ product**:
 - `data/history.csv` — append-only, built for "what's rising this week" queries
 - `data/latest.json` — stable URL, embed it anywhere
 - CC0 license. Do whatever you want with it.
+
+The storefront page does more than a leaderboard: day-to-day diffs
+(`compare.html`), staying-power streaks (`streaks.html`), and a demand lane
+(`ideas.html`) that clusters Ask HN threads into "what devs keep asking for"
+— with a built-vs-gap check against everything else on the radar.
 
 ### What's in it already
 
@@ -101,13 +108,15 @@ Three things we noticed in week one (full notes in
 - One GitHub Action on a cron — the runner commits data back to main.
 - A static page that fetches `latest.json` — no backend, no build step.
 
-If you want the same thing for *your own* feeds, we also made
-[feedpaper](https://github.com/zalize-com/feedpaper): fork it, edit
-`feeds.yaml`, get your own daily digest page. Same idea — your data lives in
-your repo, not our app.
+If you want the same thing for *your own* feeds, we also made feedpaper
+(link in the repo README once public): fork it, edit `feeds.yaml`, get your
+own daily digest page. Same idea — your data lives in your repo, not our app.
 
-Feedback we actually want: what source should be #8? And if you use the
+Feedback we actually want: what source should be #12? And if you use the
 dataset for something, we want to see it.
+
+*[Publish note: replace the feedpaper mention with the real repo URL once
+the repo is public; ask_hn/ideas angle works best after 2–3 days of data.]*
 
 ## dev.to article draft #2 (methodology — publish ~week 2)
 
