@@ -295,6 +295,28 @@
     <div class="out" id="cc-out" style="font-family:ui-monospace,monospace;font-size:13px;white-space:pre-wrap"></div>
   </div>
 
+  <div class="tool" data-tool="sortlines">
+    <h2>sort &amp; dedupe lines</h2>
+    <p class="hint">Paste lines &rarr; sorted/deduped/reversed/shuffled out.</p>
+    <textarea id="sl-in" rows="7" style="width:100%" placeholder="banana
+Apple
+banana
+cherry"></textarea>
+    <p>
+      <button class="go" data-sl="az">a&rarr;z</button>
+      <button class="go" data-sl="za">z&rarr;a</button>
+      <button class="go" data-sl="len">by length</button>
+      <button class="go" data-sl="num">numeric</button>
+      <button class="go" data-sl="dedupe">dedupe</button>
+      <button class="go" data-sl="rev">reverse order</button>
+      <button class="go" data-sl="shuffle">shuffle</button>
+      <label><input type="checkbox" id="sl-ci"> ignore case</label>
+      <label><input type="checkbox" id="sl-trim"> trim</label>
+    </p>
+    <textarea id="sl-out" rows="7" style="width:100%" readonly></textarea>
+    <div class="out" id="sl-stat"></div>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -320,6 +342,7 @@ const TOOLS = [
   {id:"semver", label:"semver compare"},
   {id:"pwgen",  label:"password gen"},
   {id:"case",   label:"case converter"},
+  {id:"sortlines",label:"sort & dedupe lines"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -922,6 +945,24 @@ document.getElementById('cc-in').addEventListener('input',()=>{
     'UPPER CASE': ws.join(' ').toUpperCase(),
   };
   out.textContent=Object.entries(rows).map(([k,v])=>k.padEnd(16,' ')+v).join('\n');
+});
+
+// --- sort & dedupe lines ---
+document.querySelectorAll('[data-sl]').forEach(b=>b.onclick=()=>{
+  const ci=document.getElementById('sl-ci').checked, tr=document.getElementById('sl-trim').checked;
+  let lines=document.getElementById('sl-in').value.split('\n');
+  if(tr) lines=lines.map(l=>l.trim());
+  const key=l=>ci?l.toLowerCase():l;
+  const mode=b.dataset.sl;
+  if(mode==='az') lines.sort((a,c)=>key(a).localeCompare(key(c)));
+  else if(mode==='za') lines.sort((a,c)=>key(c).localeCompare(key(a)));
+  else if(mode==='len') lines.sort((a,c)=>a.length-c.length||key(a).localeCompare(key(c)));
+  else if(mode==='num') lines.sort((a,c)=>(parseFloat(a)||0)-(parseFloat(c)||0));
+  else if(mode==='dedupe'){const seen=new Set();lines=lines.filter(l=>{const k=key(l);if(seen.has(k))return false;seen.add(k);return true;});}
+  else if(mode==='rev') lines=lines.slice().reverse();
+  else if(mode==='shuffle'){for(let i=lines.length-1;i>0;i--){const j=crypto.getRandomValues(new Uint32Array(1))[0]%(i+1);[lines[i],lines[j]]=[lines[j],lines[i]];}}
+  document.getElementById('sl-out').value=lines.join('\n');
+  document.getElementById('sl-stat').textContent=lines.length+' lines out';
 });
 </script>
 </body>
