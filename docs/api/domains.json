@@ -1,15 +1,16 @@
 {
- "generated_at": "2026-11-15T18:43:18.594751+00:00",
+ "generated_at": "2026-11-15T18:46:03.139225+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 1410,
+ "total": 1429,
  "domains": [
   {
    "hostname": "blog.google",
    "days_on_board": 4,
-   "items": 18,
+   "items": 33,
    "sources": [
     "googleblog",
-    "hackernews"
+    "hackernews",
+    "searchgoogleblog"
    ],
    "top_hit": {
     "title": "Gemini Decisions API",
