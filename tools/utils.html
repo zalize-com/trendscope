@@ -788,7 +788,7 @@ function cvParse(t){
   row.push(cur);rows.push(row);
   return rows.filter(r=>r.length>1||r[0]!=="");
 }
-function cvEsc(v){ v=String(v); return /[",\n]/.test(v) ? '"'+v.replace(/"/g,'""')+'"' : v; }
+function cvEsc(v){ v=String(v); const needsQ=/[",\n]/.test(v); return needsQ ? '"'+v.replace(/"/g,'""')+'"' : v; }
 document.getElementById('cv-go').onclick=()=>{
   try{
     const rows=cvParse(document.getElementById('cv-in').value);
