@@ -1,13 +1,13 @@
 {
  "a": "2026-11-14",
  "b": "2026-11-15",
- "generated": "2026-11-15 11:15 UTC",
+ "generated": "2026-11-15 11:22 UTC",
  "entered": [
   {
    "title": "SpaceX catches the Starship to end Flight 15",
    "url": "https://www.spacex.com/launches/starship-flight-15",
    "source": "hackernews",
-   "score": 1262,
+   "score": 1264,
    "metric": "points",
    "rank": 1
   },
@@ -15,7 +15,7 @@
    "title": "Eynnzerr/TelemetryCleaner",
    "url": "https://github.com/Eynnzerr/TelemetryCleaner",
    "source": "github_trending",
-   "score": 795,
+   "score": 799,
    "metric": "stars",
    "rank": 15
   },
@@ -23,7 +23,7 @@
    "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
    "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
    "source": "hackernews",
-   "score": 237,
+   "score": 239,
    "metric": "points",
    "rank": 8
   },
@@ -39,7 +39,7 @@
    "title": "Court denies motion to dismiss DRAM price fixing case",
    "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
    "source": "hackernews",
-   "score": 183,
+   "score": 185,
    "metric": "points",
    "rank": 13
   },
@@ -79,7 +79,7 @@
    "title": "500 Lines or Less A 3D Modeller",
    "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
    "source": "hackernews",
-   "score": 60,
+   "score": 62,
    "metric": "points",
    "rank": 17
   },
@@ -143,7 +143,7 @@
    "title": "Show HN: Turbo-Browser-MCP \u2013 Batch forms, DOM deltas and submit guards for MCP",
    "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
    "source": "show_hn",
-   "score": 35,
+   "score": 36,
    "metric": "points",
    "rank": 3
   },
@@ -165,14 +165,6 @@
   }
  ],
  "left": [
-  {
-   "title": "scipy",
-   "url": "https://pypi.org/project/scipy/",
-   "source": "pypi",
-   "score": 385547821,
-   "metric": "monthly downloads",
-   "rank": 12
-  },
   {
    "title": "jhaizhou-ops/S2Arm",
    "url": "https://github.com/jhaizhou-ops/S2Arm",
@@ -324,6 +316,14 @@
    "score": 13,
    "metric": "score",
    "rank": 11
+  },
+  {
+   "title": "Writing a DSL for high performance parallel programming in OxCaml",
+   "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
+   "source": "lobsters",
+   "score": 11,
+   "metric": "score",
+   "rank": 14
   }
  ],
  "gainers": [
@@ -340,10 +340,10 @@
    "title": "deepseek-ai/chat-demo",
    "url": "https://github.com/deepseek-ai/chat-demo",
    "source": "github_trending",
-   "score": 1982,
+   "score": 1992,
    "metric": "stars",
    "rank": 3,
-   "delta": 280
+   "delta": 290
   },
   {
    "title": "A family tree of software job titles",
@@ -376,10 +376,10 @@
    "title": "adriadam10/mkw-recomp",
    "url": "https://github.com/adriadam10/mkw-recomp",
    "source": "github_trending",
-   "score": 1050,
+   "score": 1052,
    "metric": "stars",
    "rank": 10,
-   "delta": 190
+   "delta": 192
   },
   {
    "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
@@ -394,10 +394,10 @@
    "title": "apex-compute/ANR",
    "url": "https://github.com/apex-compute/ANR",
    "source": "github_trending",
-   "score": 1925,
+   "score": 1927,
    "metric": "stars",
    "rank": 4,
-   "delta": 141
+   "delta": 143
   },
   {
    "title": "Why get an expensive Pi when I have an old phone?",
@@ -412,19 +412,19 @@
    "title": "huamidev/GestaltX",
    "url": "https://github.com/huamidev/GestaltX",
    "source": "github_trending",
-   "score": 7663,
+   "score": 7664,
    "metric": "stars",
    "rank": 1,
-   "delta": 117
+   "delta": 118
   },
   {
    "title": "FrigadeHQ/yogurt",
    "url": "https://github.com/FrigadeHQ/yogurt",
    "source": "github_trending",
-   "score": 1553,
+   "score": 1554,
    "metric": "stars",
    "rank": 5,
-   "delta": 105
+   "delta": 106
   },
   {
    "title": "PyPI's redesigned project pages with clearer security signals are now live",
@@ -457,10 +457,10 @@
    "title": "agentes-chat/agentes-chat",
    "url": "https://github.com/agentes-chat/agentes-chat",
    "source": "github_trending",
-   "score": 1451,
+   "score": 1452,
    "metric": "stars",
    "rank": 7,
-   "delta": 61
+   "delta": 62
   },
   {
    "title": "JDhruv14/line-art-animation",
@@ -690,97 +690,6 @@
    "delta": 5
   }
  ],
- "pkg_rank_up": [
-  {
-   "title": "openai",
-   "url": "https://pypi.org/project/openai/",
-   "source": "pypi",
-   "score": 371770955,
-   "metric": "monthly downloads",
-   "rank": 12,
-   "rank_delta": 1
-  },
-  {
-   "title": "scikit-learn",
-   "url": "https://pypi.org/project/scikit-learn/",
-   "source": "pypi",
-   "score": 213066429,
-   "metric": "monthly downloads",
-   "rank": 13,
-   "rank_delta": 1
-  },
-  {
-   "title": "flask",
-   "url": "https://pypi.org/project/flask/",
-   "source": "pypi",
-   "score": 205187325,
-   "metric": "monthly downloads",
-   "rank": 14,
-   "rank_delta": 1
-  },
-  {
-   "title": "matplotlib",
-   "url": "https://pypi.org/project/matplotlib/",
-   "source": "pypi",
-   "score": 189251063,
-   "metric": "monthly downloads",
-   "rank": 15,
-   "rank_delta": 1
-  },
-  {
-   "title": "langchain",
-   "url": "https://pypi.org/project/langchain/",
-   "source": "pypi",
-   "score": 155924931,
-   "metric": "monthly downloads",
-   "rank": 16,
-   "rank_delta": 1
-  },
-  {
-   "title": "transformers",
-   "url": "https://pypi.org/project/transformers/",
-   "source": "pypi",
-   "score": 117605093,
-   "metric": "monthly downloads",
-   "rank": 17,
-   "rank_delta": 1
-  },
-  {
-   "title": "torch",
-   "url": "https://pypi.org/project/torch/",
-   "source": "pypi",
-   "score": 60157816,
-   "metric": "monthly downloads",
-   "rank": 18,
-   "rank_delta": 1
-  },
-  {
-   "title": "celery",
-   "url": "https://pypi.org/project/celery/",
-   "source": "pypi",
-   "score": 51503290,
-   "metric": "monthly downloads",
-   "rank": 19,
-   "rank_delta": 1
-  },
-  {
-   "title": "django",
-   "url": "https://pypi.org/project/django/",
-   "source": "pypi",
-   "score": 50283944,
-   "metric": "monthly downloads",
-   "rank": 20,
-   "rank_delta": 1
-  },
-  {
-   "title": "tensorflow",
-   "url": "https://pypi.org/project/tensorflow/",
-   "source": "pypi",
-   "score": 12496761,
-   "metric": "monthly downloads",
-   "rank": 21,
-   "rank_delta": 1
-  }
- ],
+ "pkg_rank_up": [],
  "pkg_rank_down": []
 }

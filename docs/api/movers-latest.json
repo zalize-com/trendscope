@@ -1,351 +1,693 @@
 {
- "a": "2026-11-13",
- "b": "2026-11-14",
- "generated": "2026-11-15 11:21 UTC",
+ "a": "2026-11-14",
+ "b": "2026-11-15",
+ "generated": "2026-11-15 11:22 UTC",
  "entered": [
   {
-   "title": "boto3",
-   "url": "https://pypi.org/project/boto3/",
-   "source": "pypi",
-   "score": 2600056407,
-   "metric": "monthly downloads",
-   "rank": 1
-  },
-  {
-   "title": "requests",
-   "url": "https://pypi.org/project/requests/",
-   "source": "pypi",
-   "score": 1478957330,
-   "metric": "monthly downloads",
-   "rank": 2
-  },
-  {
-   "title": "pydantic",
-   "url": "https://pypi.org/project/pydantic/",
-   "source": "pypi",
-   "score": 1138753582,
-   "metric": "monthly downloads",
-   "rank": 3
-  },
-  {
-   "title": "click",
-   "url": "https://pypi.org/project/click/",
-   "source": "pypi",
-   "score": 1097885406,
-   "metric": "monthly downloads",
-   "rank": 4
-  },
-  {
-   "title": "numpy",
-   "url": "https://pypi.org/project/numpy/",
-   "source": "pypi",
-   "score": 1095220575,
-   "metric": "monthly downloads",
-   "rank": 5
-  },
-  {
-   "title": "pytest",
-   "url": "https://pypi.org/project/pytest/",
-   "source": "pypi",
-   "score": 960310675,
-   "metric": "monthly downloads",
-   "rank": 6
-  },
-  {
-   "title": "hashbrown",
-   "url": "https://crates.io/crates/hashbrown",
-   "source": "crates",
-   "score": 912501410,
-   "metric": "recent downloads",
-   "rank": 1
-  },
-  {
-   "title": "syn",
-   "url": "https://crates.io/crates/syn",
-   "source": "crates",
-   "score": 898659910,
-   "metric": "recent downloads",
-   "rank": 2
-  },
-  {
-   "title": "getrandom",
-   "url": "https://crates.io/crates/getrandom",
-   "source": "crates",
-   "score": 819207341,
-   "metric": "recent downloads",
-   "rank": 3
-  },
-  {
-   "title": "httpx",
-   "url": "https://pypi.org/project/httpx/",
-   "source": "pypi",
-   "score": 794805198,
-   "metric": "monthly downloads",
-   "rank": 7
-  },
-  {
-   "title": "pandas",
-   "url": "https://pypi.org/project/pandas/",
-   "source": "pypi",
-   "score": 698520592,
-   "metric": "monthly downloads",
-   "rank": 8
-  },
-  {
-   "title": "rand",
-   "url": "https://crates.io/crates/rand",
-   "source": "crates",
-   "score": 641675826,
-   "metric": "recent downloads",
-   "rank": 4
-  },
-  {
-   "title": "rand_core",
-   "url": "https://crates.io/crates/rand_core",
-   "source": "crates",
-   "score": 639223677,
-   "metric": "recent downloads",
-   "rank": 5
-  },
-  {
-   "title": "bitflags",
-   "url": "https://crates.io/crates/bitflags",
-   "source": "crates",
-   "score": 597110437,
-   "metric": "recent downloads",
-   "rank": 6
-  },
-  {
-   "title": "rich",
-   "url": "https://pypi.org/project/rich/",
-   "source": "pypi",
-   "score": 565221275,
-   "metric": "monthly downloads",
-   "rank": 9
-  },
-  {
-   "title": "thiserror",
-   "url": "https://crates.io/crates/thiserror",
-   "source": "crates",
-   "score": 533389555,
-   "metric": "recent downloads",
-   "rank": 7
-  },
-  {
-   "title": "thiserror-impl",
-   "url": "https://crates.io/crates/thiserror-impl",
-   "source": "crates",
-   "score": 533317022,
-   "metric": "recent downloads",
-   "rank": 8
-  },
-  {
-   "title": "fastapi",
-   "url": "https://pypi.org/project/fastapi/",
-   "source": "pypi",
-   "score": 532085116,
-   "metric": "monthly downloads",
-   "rank": 10
-  },
-  {
-   "title": "base64",
-   "url": "https://crates.io/crates/base64",
-   "source": "crates",
-   "score": 530394575,
-   "metric": "recent downloads",
-   "rank": 9
-  },
-  {
-   "title": "windows-sys",
-   "url": "https://crates.io/crates/windows-sys",
-   "source": "crates",
-   "score": 521914502,
-   "metric": "recent downloads",
-   "rank": 10
-  }
- ],
- "left": [
-  {
-   "title": "FAA issues national ground stop \u2013\u00a0lifted 4.5 hours later",
-   "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
+   "title": "SpaceX catches the Starship to end Flight 15",
+   "url": "https://www.spacex.com/launches/starship-flight-15",
    "source": "hackernews",
-   "score": 1629,
+   "score": 1264,
    "metric": "points",
    "rank": 1
   },
   {
-   "title": "LibreOffice actually works 365 days a year",
-   "url": "https://twitter.com/LibreOffice/status/2121205272479998268",
-   "source": "hackernews",
-   "score": 923,
-   "metric": "points",
-   "rank": 2
-  },
-  {
-   "title": "Nvidia employees petition to bring back Jensen Huang",
-   "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
-   "source": "hackernews",
-   "score": 811,
-   "metric": "points",
-   "rank": 3
-  },
-  {
-   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
-   "url": "https://status.claude.com/incidents/nn11wk485zfn",
-   "source": "hackernews",
-   "score": 492,
-   "metric": "points",
-   "rank": 4
-  },
-  {
-   "title": "Doomsday: Friday, 13 November, A.D. 2026 (1960)",
-   "url": "https://www.science.org/doi/10.1126/science.132.3436.1291",
-   "source": "hackernews",
-   "score": 487,
-   "metric": "points",
-   "rank": 5
-  },
-  {
-   "title": "Microsoft Outlook/365 still down after 12 hours",
-   "url": "https://twitter.com/MSFT365Status/status/2121079061774491735",
-   "source": "hackernews",
-   "score": 467,
-   "metric": "points",
-   "rank": 6
-  },
-  {
-   "title": "Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video]",
-   "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
-   "source": "hackernews",
-   "score": 444,
-   "metric": "points",
-   "rank": 7
-  },
-  {
-   "title": "AI unlocks G\u00f6del's notebooks, said to contain hundreds of proved theorems",
-   "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
-   "source": "hackernews",
-   "score": 416,
-   "metric": "points",
-   "rank": 8
-  },
-  {
-   "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
-   "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
-   "source": "hackernews",
-   "score": 382,
-   "metric": "points",
-   "rank": 10
-  },
-  {
-   "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
-   "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
-   "source": "hackernews",
-   "score": 377,
-   "metric": "points",
-   "rank": 11
-  },
-  {
-   "title": "IceWM",
-   "url": "https://ice-wm.org/",
-   "source": "hackernews",
-   "score": 371,
-   "metric": "points",
-   "rank": 12
-  },
-  {
-   "title": "AI is destroying the trust between writers and readers",
-   "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
-   "source": "hackernews",
-   "score": 362,
-   "metric": "points",
-   "rank": 13
-  },
-  {
-   "title": "Global Microsoft Outage",
-   "url": "https://www.cnn.com/2026/11/12/business/live-news/microsoft-global-outage-intl-hnk",
-   "source": "hackernews",
-   "score": 292,
-   "metric": "points",
-   "rank": 14
-  },
-  {
-   "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
-   "url": "https://orcasairband.com/",
-   "source": "hackernews",
-   "score": 291,
-   "metric": "points",
+   "title": "Eynnzerr/TelemetryCleaner",
+   "url": "https://github.com/Eynnzerr/TelemetryCleaner",
+   "source": "github_trending",
+   "score": 799,
+   "metric": "stars",
    "rank": 15
   },
   {
-   "title": "After 600 experiments, here's what I discovered about JEPA world models",
-   "url": "https://haddyalchaer.com/jepa",
+   "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
+   "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
    "source": "hackernews",
-   "score": 284,
+   "score": 239,
    "metric": "points",
-   "rank": 16
+   "rank": 8
   },
   {
-   "title": "Eli Lilly CEO pushes back on Dario Amodei's medical claims",
-   "url": "https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest",
+   "title": "How did Woz write the Apple 1 BASIC before building the computer?",
+   "url": "https://retrocomputing.stackexchange.com/questions/17957",
    "source": "hackernews",
-   "score": 269,
+   "score": 226,
    "metric": "points",
-   "rank": 17
+   "rank": 10
   },
   {
-   "title": "FM-1 Workbench",
-   "url": "https://open.m-vave.com/fm1-workbench",
+   "title": "Court denies motion to dismiss DRAM price fixing case",
+   "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
    "source": "hackernews",
-   "score": 265,
+   "score": 185,
    "metric": "points",
-   "rank": 18
-  },
-  {
-   "title": "Brave Search API now accepts agentic payments via the x402 protocol",
-   "url": "https://brave.com/blog/search-api-agentic-payments/",
-   "source": "hackernews",
-   "score": 260,
-   "metric": "points",
-   "rank": 19
-  },
-  {
-   "title": "Found: A protein that drives ageing without unleashing inflammation",
-   "url": "https://www.nature.com/articles/d41586-026-03638-3",
-   "source": "hackernews",
-   "score": 247,
-   "metric": "points",
-   "rank": 20
+   "rank": 13
   },
   {
    "title": "U.S. October PPI Rises 6.5% YoY, Highest in Nearly Four Years",
    "url": "https://news.ycombinator.com/item?id=50484421",
    "source": "ask_hn",
-   "score": 173,
+   "score": 174,
    "metric": "points",
    "rank": 1
+  },
+  {
+   "title": "Memory Safety Bugs in Rust Standard Library",
+   "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
+   "source": "hackernews",
+   "score": 155,
+   "metric": "points",
+   "rank": 14
+  },
+  {
+   "title": "Meet type-tune! \ud83e\udd80 Give Your TypeScript Types a Better Home! \ud83d\ude38",
+   "url": "https://dev.to/necoz/meet-type-tune-give-your-typescript-types-a-better-home-1p6l",
+   "source": "devto",
+   "score": 109,
+   "metric": "reactions",
+   "rank": 9
+  },
+  {
+   "title": "A rare glimpse inside the high-risk, high-reward Hormuz trade",
+   "url": "https://www.lloydslist.com/LL1158922/A-rare-glimpse-inside-the-highrisk-highreward-Hormuz-trade",
+   "source": "hackernews",
+   "score": 77,
+   "metric": "points",
+   "rank": 16
+  },
+  {
+   "title": "500 Lines or Less A 3D Modeller",
+   "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
+   "source": "hackernews",
+   "score": 62,
+   "metric": "points",
+   "rank": 17
+  },
+  {
+   "title": "Kiri \u2013 The Modern Container Runtime",
+   "url": "https://runkiri.com/",
+   "source": "hackernews",
+   "score": 58,
+   "metric": "points",
+   "rank": 18
+  },
+  {
+   "title": "The Evolving Story of How Chemistry Became Biology",
+   "url": "https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/",
+   "source": "hackernews",
+   "score": 58,
+   "metric": "points",
+   "rank": 19
+  },
+  {
+   "title": "Oxford Molecular Motors",
+   "url": "https://www.physics.ox.ac.uk/research/group/oxford-molecular-motors/research/bacterial-flagellar-motor",
+   "source": "hackernews",
+   "score": 57,
+   "metric": "points",
+   "rank": 20
+  },
+  {
+   "title": "Show HN: Gawain \u2013 Require type hints on all Python variables",
+   "url": "https://github.com/matheuzgomes/gawain",
+   "source": "show_hn",
+   "score": 55,
+   "metric": "points",
+   "rank": 1
+  },
+  {
+   "title": "Tell HN: Google Search to start locking down search behind a login wall",
+   "url": "https://news.ycombinator.com/item?id=50491617",
+   "source": "ask_hn",
+   "score": 44,
+   "metric": "points",
+   "rank": 3
+  },
+  {
+   "title": "Show HN: A custom font based on the Jamaican flag alphabet",
+   "url": "https://bobbiec.github.io/jamaican-font.html",
+   "source": "show_hn",
+   "score": 42,
+   "metric": "points",
+   "rank": 2
+  },
+  {
+   "title": "Ask HN: What is the state of self-hosting email in 2026?",
+   "url": "https://news.ycombinator.com/item?id=50488230",
+   "source": "ask_hn",
+   "score": 41,
+   "metric": "points",
+   "rank": 4
+  },
+  {
+   "title": "Show HN: Turbo-Browser-MCP \u2013 Batch forms, DOM deltas and submit guards for MCP",
+   "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
+   "source": "show_hn",
+   "score": 36,
+   "metric": "points",
+   "rank": 3
+  },
+  {
+   "title": "Ask HN: Can anyone name anything new that AI has done?",
+   "url": "https://news.ycombinator.com/item?id=50484426",
+   "source": "ask_hn",
+   "score": 30,
+   "metric": "points",
+   "rank": 5
+  },
+  {
+   "title": "25 of my favourite modern NES games",
+   "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
+   "source": "lobsters",
+   "score": 28,
+   "metric": "score",
+   "rank": 6
+  }
+ ],
+ "left": [
+  {
+   "title": "jhaizhou-ops/S2Arm",
+   "url": "https://github.com/jhaizhou-ops/S2Arm",
+   "source": "github_trending",
+   "score": 2978,
+   "metric": "stars",
+   "rank": 2
+  },
+  {
+   "title": "Monkey Island: all 13 versions side by side",
+   "url": "https://monkeyisland.pages.dev/",
+   "source": "hackernews",
+   "score": 414,
+   "metric": "points",
+   "rank": 2
+  },
+  {
+   "title": "Tech Companies Are Trying to Shift the Concept of Privacy (Again)",
+   "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+   "source": "hackernews",
+   "score": 345,
+   "metric": "points",
+   "rank": 4
+  },
+  {
+   "title": "Italy fines Meta $887M over Android users' data access",
+   "url": "https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/",
+   "source": "hackernews",
+   "score": 241,
+   "metric": "points",
+   "rank": 6
+  },
+  {
+   "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
+   "url": "https://gitlab.com/snipedbywifi/terminactory",
+   "source": "hackernews",
+   "score": 110,
+   "metric": "points",
+   "rank": 10
+  },
+  {
+   "title": "Formalizing US Tax Code (Using Lean)",
+   "url": "https://lexifina.com/blog/formalizing-the-us-tax-code",
+   "source": "hackernews",
+   "score": 108,
+   "metric": "points",
+   "rank": 11
+  },
+  {
+   "title": "US IRS free online tax filing open source repo (2025)",
+   "url": "https://github.com/IRS-Public/direct-file",
+   "source": "hackernews",
+   "score": 100,
+   "metric": "points",
+   "rank": 12
+  },
+  {
+   "title": "Let's Write a PostScript Interpreter",
+   "url": "https://beyondloom.com/blog/postscript.html",
+   "source": "hackernews",
+   "score": 89,
+   "metric": "points",
+   "rank": 13
+  },
+  {
+   "title": "A visual explanation of reinforcement learning",
+   "url": "https://aatishb.com/myriad/how-brains-learn/",
+   "source": "hackernews",
+   "score": 79,
+   "metric": "points",
+   "rank": 16
+  },
+  {
+   "title": "\ud83d\udc3e DEV Pet Corner #5: Show Us Your Pets!",
+   "url": "https://dev.to/hemapriya_kanagala/dev-pet-corner-5-show-us-your-pets-dao",
+   "source": "devto",
+   "score": 78,
+   "metric": "reactions",
+   "rank": 13
+  },
+  {
+   "title": "LinkedIn, Monster take down over 1000 fake job postings after CBC investigation",
+   "url": "https://www.cbc.ca/news/canada/linkedin-monster-take-down-over-1-000-fake-job-postings-after-cbc-investigation-9.7415379",
+   "source": "hackernews",
+   "score": 75,
+   "metric": "points",
+   "rank": 17
+  },
+  {
+   "title": "Show HN: Agweb \u2013 a browser for agents that stays out of your way",
+   "url": "https://github.com/paul-nameless/agweb",
+   "source": "hackernews",
+   "score": 67,
+   "metric": "points",
+   "rank": 18
+  },
+  {
+   "title": "Reverse engineering a vintage diode-transistor logic chip",
+   "url": "https://www.righto.com/2026/11/signetics-st680a-dtl-nand.html",
+   "source": "hackernews",
+   "score": 56,
+   "metric": "points",
+   "rank": 20
+  },
+  {
+   "title": "Probabilistic data structures in Go",
+   "url": "https://antonz.org/probabilistic-data-structures/",
+   "source": "lobsters",
+   "score": 55,
+   "metric": "score",
+   "rank": 4
+  },
+  {
+   "title": "Running a law firm on Free software (2026 edition)",
+   "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
+   "source": "lobsters",
+   "score": 47,
+   "metric": "score",
+   "rank": 5
+  },
+  {
+   "title": "Someone's impersonating this blog",
+   "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/",
+   "source": "lobsters",
+   "score": 41,
+   "metric": "score",
+   "rank": 6
+  },
+  {
+   "title": "Beating the frontier on NetHack",
+   "url": "https://antithesis.com/blog/2026/nethack/",
+   "source": "lobsters",
+   "score": 36,
+   "metric": "score",
+   "rank": 7
+  },
+  {
+   "title": "ML Modules for Mere Mortals",
+   "url": "https://thunderseethe.dev/posts/ml-modules-for-mere-mortals/intro/",
+   "source": "lobsters",
+   "score": 31,
+   "metric": "score",
+   "rank": 8
+  },
+  {
+   "title": "Link Previews and You",
+   "url": "https://sable.moe/en/blog/link-previews-and-you/",
+   "source": "lobsters",
+   "score": 13,
+   "metric": "score",
+   "rank": 11
+  },
+  {
+   "title": "Writing a DSL for high performance parallel programming in OxCaml",
+   "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
+   "source": "lobsters",
+   "score": 11,
+   "metric": "score",
+   "rank": 14
   }
  ],
  "gainers": [
   {
-   "title": "Terminal borders that don't cost a cell",
-   "url": "https://www.joshka.net/cell-borders/",
-   "source": "lobsters",
-   "score": 55,
-   "metric": "score",
+   "title": "Lovable apps expose passport details and more than 200K private messages",
+   "url": "https://www.crissyfield.de/research/lovable-en/",
+   "source": "hackernews",
+   "score": 843,
+   "metric": "points",
+   "rank": 2,
+   "delta": 492
+  },
+  {
+   "title": "deepseek-ai/chat-demo",
+   "url": "https://github.com/deepseek-ai/chat-demo",
+   "source": "github_trending",
+   "score": 1992,
+   "metric": "stars",
    "rank": 3,
-   "delta": -341
+   "delta": 290
+  },
+  {
+   "title": "A family tree of software job titles",
+   "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+   "source": "hackernews",
+   "score": 325,
+   "metric": "points",
+   "rank": 5,
+   "delta": 245
+  },
+  {
+   "title": "KDE: The documentary [video]",
+   "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
+   "source": "hackernews",
+   "score": 489,
+   "metric": "points",
+   "rank": 4,
+   "delta": 210
+  },
+  {
+   "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
+   "url": "https://projectzero.google/2026/11/disclosure-policy.html",
+   "source": "hackernews",
+   "score": 261,
+   "metric": "points",
+   "rank": 6,
+   "delta": 199
+  },
+  {
+   "title": "adriadam10/mkw-recomp",
+   "url": "https://github.com/adriadam10/mkw-recomp",
+   "source": "github_trending",
+   "score": 1052,
+   "metric": "stars",
+   "rank": 10,
+   "delta": 192
+  },
+  {
+   "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
+   "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
+   "source": "hackernews",
+   "score": 237,
+   "metric": "points",
+   "rank": 9,
+   "delta": 148
+  },
+  {
+   "title": "apex-compute/ANR",
+   "url": "https://github.com/apex-compute/ANR",
+   "source": "github_trending",
+   "score": 1927,
+   "metric": "stars",
+   "rank": 4,
+   "delta": 143
+  },
+  {
+   "title": "Why get an expensive Pi when I have an old phone?",
+   "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
+   "source": "hackernews",
+   "score": 564,
+   "metric": "points",
+   "rank": 3,
+   "delta": 125
+  },
+  {
+   "title": "huamidev/GestaltX",
+   "url": "https://github.com/huamidev/GestaltX",
+   "source": "github_trending",
+   "score": 7664,
+   "metric": "stars",
+   "rank": 1,
+   "delta": 118
+  },
+  {
+   "title": "FrigadeHQ/yogurt",
+   "url": "https://github.com/FrigadeHQ/yogurt",
+   "source": "github_trending",
+   "score": 1554,
+   "metric": "stars",
+   "rank": 5,
+   "delta": 106
+  },
+  {
+   "title": "PyPI's redesigned project pages with clearer security signals are now live",
+   "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
+   "source": "hackernews",
+   "score": 246,
+   "metric": "points",
+   "rank": 7,
+   "delta": 94
+  },
+  {
+   "title": "Advancing science and engineering with Antigravity's /teamwork",
+   "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+   "source": "hackernews",
+   "score": 203,
+   "metric": "points",
+   "rank": 12,
+   "delta": 87
+  },
+  {
+   "title": "Generative AI uses more energy on non-English text",
+   "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
+   "source": "hackernews",
+   "score": 214,
+   "metric": "points",
+   "rank": 11,
+   "delta": 75
+  },
+  {
+   "title": "agentes-chat/agentes-chat",
+   "url": "https://github.com/agentes-chat/agentes-chat",
+   "source": "github_trending",
+   "score": 1452,
+   "metric": "stars",
+   "rank": 7,
+   "delta": 62
+  },
+  {
+   "title": "JDhruv14/line-art-animation",
+   "url": "https://github.com/JDhruv14/line-art-animation",
+   "source": "github_trending",
+   "score": 801,
+   "metric": "stars",
+   "rank": 14,
+   "delta": 59
+  },
+  {
+   "title": "Kianuni/Erosion-CN",
+   "url": "https://github.com/Kianuni/Erosion-CN",
+   "source": "github_trending",
+   "score": 2101,
+   "metric": "stars",
+   "rank": 2,
+   "delta": 49
+  },
+  {
+   "title": "HolyArrs/HolyArrs",
+   "url": "https://github.com/HolyArrs/HolyArrs",
+   "source": "github_trending",
+   "score": 1216,
+   "metric": "stars",
+   "rank": 8,
+   "delta": 46
+  },
+  {
+   "title": "serveroshq/panel",
+   "url": "https://github.com/serveroshq/panel",
+   "source": "github_trending",
+   "score": 823,
+   "metric": "stars",
+   "rank": 13,
+   "delta": 38
+  },
+  {
+   "title": "alexeyw/lot-map",
+   "url": "https://github.com/alexeyw/lot-map",
+   "source": "github_trending",
+   "score": 849,
+   "metric": "stars",
+   "rank": 12,
+   "delta": 33
   }
  ],
  "droppers": [
   {
+   "title": "Vercel should fork and maintain Deno",
+   "url": "https://news.ycombinator.com/item?id=50497196",
+   "source": "ask_hn",
+   "score": 15,
+   "metric": "points",
+   "rank": 7,
+   "delta": 0
+  },
+  {
+   "title": "Do what must be done",
+   "url": "https://news.ycombinator.com/item?id=50496383",
+   "source": "ask_hn",
+   "score": 8,
+   "metric": "points",
+   "rank": 9,
+   "delta": 0
+  },
+  {
+   "title": "Elon should hire Jensen to run Terafab",
+   "url": "https://news.ycombinator.com/item?id=50493765",
+   "source": "ask_hn",
+   "score": 7,
+   "metric": "points",
+   "rank": 10,
+   "delta": 0
+  },
+  {
+   "title": "How do you truly stand out in Tech?",
+   "url": "https://dev.to/francistrdev/how-do-you-truly-stand-out-in-tech-478a",
+   "source": "devto",
+   "score": 202,
+   "metric": "reactions",
+   "rank": 1,
+   "delta": 0
+  },
+  {
+   "title": "Necoz Has a New Home on DEV! \ud83d\udc08\ud83c\udf89",
+   "url": "https://dev.to/necoz/necoz-has-a-new-home-on-dev-3454",
+   "source": "devto",
+   "score": 179,
+   "metric": "reactions",
+   "rank": 2,
+   "delta": 0
+  },
+  {
+   "title": "Our Looping Factory Cut DEV Page Load Time by 75% and Counting",
+   "url": "https://dev.to/dailycontext/our-looping-factory-cut-dev-page-load-time-by-75-and-counting-1hnf",
+   "source": "devto",
+   "score": 142,
+   "metric": "reactions",
+   "rank": 6,
+   "delta": 0
+  },
+  {
+   "title": "Ask HN: What are the most useful, concrete AI skills to independently learn?",
+   "url": "https://news.ycombinator.com/item?id=50494696",
+   "source": "ask_hn",
+   "score": 83,
+   "metric": "points",
+   "rank": 2,
+   "delta": 1
+  },
+  {
+   "title": "Ask HN: Best books you read in 2026?",
+   "url": "https://news.ycombinator.com/item?id=50501990",
+   "source": "ask_hn",
+   "score": 9,
+   "metric": "points",
+   "rank": 8,
+   "delta": 1
+  },
+  {
+   "title": "How did you end up in tech, and are you staying?",
+   "url": "https://dev.to/maame-codes/how-did-you-end-up-in-tech-and-are-you-staying-4l9b",
+   "source": "devto",
+   "score": 161,
+   "metric": "reactions",
+   "rank": 4,
+   "delta": 1
+  },
+  {
+   "title": "The C Trilogy: How Dennis Ritchie, Bjarne Stroustrup, and Anders Hejlsberg Built the Modern World \ud83c\udfdb\ufe0f",
+   "url": "https://dev.to/devengers/the-c-trilogy-how-dennis-ritchie-bjarne-stroustrup-and-anders-hejlsberg-built-the-modern-world-1onp",
+   "source": "devto",
+   "score": 155,
+   "metric": "reactions",
+   "rank": 5,
+   "delta": 1
+  },
+  {
+   "title": "We Keep Hearing About AI Productivity. The QA Group Chat Told a Different Story.",
+   "url": "https://dev.to/xulingfeng/we-keep-hearing-about-ai-productivity-the-qa-group-chat-told-a-different-story-2nma",
+   "source": "devto",
+   "score": 111,
+   "metric": "reactions",
+   "rank": 8,
+   "delta": 1
+  },
+  {
+   "title": "A 10 years old developer who has become a DEV.to Trusted Member! \ud83d\ude31",
+   "url": "https://dev.to/necoz/a-10-years-old-developer-who-has-become-a-devto-trusted-member-49c8",
+   "source": "devto",
+   "score": 96,
+   "metric": "reactions",
+   "rank": 10,
+   "delta": 1
+  },
+  {
+   "title": "Dev Opportunity Radar #25: $120K+ Atlassian Hackathon, MLH Fellowship, and INSEAD AI Founder Sprint",
+   "url": "https://dev.to/devengers/dev-opportunity-radar-25-120k-atlassian-hackathon-mlh-fellowship-and-insead-ai-founder-sprint-m96",
+   "source": "devto",
+   "score": 89,
+   "metric": "reactions",
+   "rank": 12,
+   "delta": 1
+  },
+  {
+   "title": "How much does it cost to run a text game with LLMs",
+   "url": "https://dev.to/hiper2d/how-much-does-it-cost-to-run-a-text-game-with-llms-57o7",
+   "source": "devto",
+   "score": 86,
+   "metric": "reactions",
+   "rank": 13,
+   "delta": 1
+  },
+  {
+   "title": "One Year on DEV.to, 109 Articles Later",
+   "url": "https://dev.to/dannwaneri/one-year-on-devto-109-articles-later-p31",
+   "source": "devto",
+   "score": 67,
+   "metric": "reactions",
+   "rank": 14,
+   "delta": 1
+  },
+  {
+   "title": "Ask More of Your UI",
+   "url": "https://dev.to/dailycontext/ask-more-of-your-ui-2nf7",
+   "source": "devto",
+   "score": 58,
+   "metric": "reactions",
+   "rank": 15,
+   "delta": 1
+  },
+  {
    "title": "Terminal borders that don't cost a cell",
    "url": "https://www.joshka.net/cell-borders/",
    "source": "lobsters",
-   "score": 55,
+   "score": 59,
    "metric": "score",
    "rank": 3,
-   "delta": -341
+   "delta": 4
+  },
+  {
+   "title": "Long Live Rails",
+   "url": "https://dev.to/ben/long-live-rails-3p21",
+   "source": "devto",
+   "score": 127,
+   "metric": "reactions",
+   "rank": 7,
+   "delta": 4
+  },
+  {
+   "title": "The need for at least a third option",
+   "url": "https://blog.ovalerio.net/archives/3359",
+   "source": "lobsters",
+   "score": 85,
+   "metric": "score",
+   "rank": 2,
+   "delta": 5
+  },
+  {
+   "title": "Creating a self booting ZIP archive",
+   "url": "https://goliath32.com/blog/ziphead.html",
+   "source": "lobsters",
+   "score": 19,
+   "metric": "score",
+   "rank": 8,
+   "delta": 5
   }
  ],
  "pkg_rank_up": [],
