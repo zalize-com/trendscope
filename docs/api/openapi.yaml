@@ -133,6 +133,20 @@ paths:
         - {name: source, in: path, required: true, schema: {type: string}}
       responses:
         '200': {description: SVG image, content: {image/svg+xml: {}}}
+  /docs/api/gone.json:
+    get:
+      summary: items on the previous snapshot but not the latest (drop side of new.json)
+      operationId: gone
+      responses:
+        '200':
+          description: dropped items with yesterday's rank/score
+  /docs/api/meta.json:
+    get:
+      summary: dataset self-description (endpoints, sources, snapshot dates, counts)
+      operationId: meta
+      responses:
+        '200':
+          description: dataset metadata object
   /docs/api/latest.rss:
     get: {tags: [feeds], summary: Today's top 25 items as RSS 2.0, responses: {'200': {description: RSS feed, content: {application/rss+xml: {}}}}}
   /feed.xml:
