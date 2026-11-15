@@ -124,6 +124,35 @@ def main():
                    "crossovers": cross}, f, ensure_ascii=False, indent=1)
     print(f"crossovers.json: {len(cross)} rows")
 
+    # new today: latest-date rows whose (source,url) never appeared on an earlier date
+    first_seen = set()
+    latest_rows = []
+    maxday = max(days)
+    for r in csv.DictReader(open(HIST, encoding="utf-8")):
+        d, src, url = r.get("date") or "", r.get("source") or "", r.get("url") or ""
+        if not url:
+            continue
+        if d < maxday:
+            first_seen.add((src, url))
+        elif d == maxday:
+            latest_rows.append(r)
+    new_items = sorted(
+        ({"title": r["title"], "url": r["url"], "source": r["source"],
+          "rank": int(float(r.get("rank") or 0)),
+          "score": int(float(r.get("score") or 0)),
+          "metric": r.get("metric") or ""}
+         for r in latest_rows if (r["source"], r["url"]) not in first_seen),
+        key=lambda x: (x["source"], x["rank"]))
+    by_src = {}
+    for i in new_items:
+        by_src[i["source"]] = by_src.get(i["source"], 0) + 1
+    with open(os.path.join(API, "new.json"), "w", encoding="utf-8") as f:
+        json.dump({"generated_at": now, "latest_snapshot": maxday,
+                   "total_items": len(latest_rows), "new_items": len(new_items),
+                   "by_source": dict(sorted(by_src.items(), key=lambda x: -x[1])),
+                   "items": new_items}, f, ensure_ascii=False, indent=1)
+    print(f"new.json: {len(new_items)}/{len(latest_rows)} first-seen")
+
     discussed = sorted(items.values(), key=lambda x: -x["comments"])[:LIMIT]
     heated = sorted((x for x in items.values() if x["score"] >= 50),
                     key=lambda x: -x["comments"] / max(1, x["score"]))[:LIMIT]
