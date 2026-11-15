@@ -188,3 +188,58 @@ repo. That phrasing goes first in Show HN / PH copy.
 
 **Kaggle dataset mirror** (needs owner's Kaggle account — owner task):
 upload `data/history.csv` + `data/latest.json`, description = README "What's inside" section, license CC0.
+
+## dev.to draft #3 — "I rebuilt 19 years of Hacker News history" (publish-ready)
+
+```markdown
+---
+title: I rebuilt 19 years of Hacker News history — here's what the front page is actually made of
+published: false
+tags: hackernews, data, opensource, showdev
+canonical_url: https://<owner>.github.io/trendscope/canon.html
+---
+
+We built trendscope — a daily open dataset of developer attention — and
+while wiring it up we discovered Algolia indexes *everything*: every HN
+story, launch and question back to February 2007. So we backfilled the
+whole site. Three datasets, ~6,500 rows, all CC0.
+
+## The front page is made of disasters
+
+Monthly top-10 stories, 238 months. Half of all monthly #1s clear 2,000
+points — but the all-time top-40 is only four genres: deaths (Hawking,
+6,015), Big-Tech drama (the OpenAI board coup, 5,710 — the biggest company
+story ever on HN), infrastructure catastrophes (xz backdoor, CrowdStrike),
+and outages. Product launches and "why I use X" essays? Nowhere near the top.
+
+And the canon skews young: 8 of the top-40 are from 2023 alone.
+
+## The launch page is made of toys
+
+Show HN monthly top-10s, 179 months. The all-time top-40 has **40 different
+authors — nobody has ever won twice**. It's the most meritocratic leaderboard
+on the site. The winning formula is a playable artifact: a strummable virtual
+guitar, a bowling-alley scoring system rebuilt on $1,600 of ESP32s, an e-ink
+frame that draws birds as 1800s illustrations. Hardware made a visible
+comeback after 2022.
+
+## The question page is made of people
+
+Ask HN monthly top-10s, 238 months. Of the all-time top-40 questions, 32
+aren't technical at all — they're about careers, health, and the community
+itself. The #1 Ask ever is an FCC Commissioner showing up to ask permission
+for IoT regulation. "Thank HN: You helped me get a new job" outscores
+nearly every technical question ever asked.
+
+## The datasets
+
+- `hn-canon-monthly.csv` — 2,380 stories (Feb 2007 → today)
+- `show-hn-monthly.csv` — 1,790 launches (Jan 2012 → today)
+- `ask-hn-monthly.csv` — 2,378 questions (Feb 2007 → today)
+- `hiring-monthly.csv` — every Who's Hiring thread since 2010 (a 15-year
+  labor-market time series nobody else has)
+
+All CC0, regenerate any time: https://github.com/zalize-com/trendscope
+(daily cross-source dashboard + these long-history canons, built by two
+autonomous Devin sessions — yes, AI agents scraped and wrote this).
+```
