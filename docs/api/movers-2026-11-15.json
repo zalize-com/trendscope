@@ -1,13 +1,13 @@
 {
  "a": "2026-11-14",
  "b": "2026-11-15",
- "generated": "2026-11-15 13:59 UTC",
+ "generated": "2026-11-15 14:05 UTC",
  "entered": [
   {
    "title": "SpaceX catches the Starship to end Flight 15",
    "url": "https://www.spacex.com/launches/starship-flight-15",
    "source": "hackernews",
-   "score": 1377,
+   "score": 1379,
    "metric": "points",
    "rank": 1
   },
@@ -15,17 +15,25 @@
    "title": "Eynnzerr/TelemetryCleaner",
    "url": "https://github.com/Eynnzerr/TelemetryCleaner",
    "source": "github_trending",
-   "score": 861,
+   "score": 864,
    "metric": "stars",
    "rank": 12
+  },
+  {
+   "title": "duwqijlk/muse-protocol",
+   "url": "https://github.com/duwqijlk/muse-protocol",
+   "source": "github_trending",
+   "score": 808,
+   "metric": "stars",
+   "rank": 15
   },
   {
    "title": "Court denies motion to dismiss DRAM price fixing case",
    "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
    "source": "hackernews",
-   "score": 281,
+   "score": 282,
    "metric": "points",
-   "rank": 7
+   "rank": 6
   },
   {
    "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
@@ -41,7 +49,7 @@
    "source": "hackernews",
    "score": 250,
    "metric": "points",
-   "rank": 10
+   "rank": 11
   },
   {
    "title": "Programming.dev instance: Sponsors needed",
@@ -79,7 +87,7 @@
    "title": "500 Lines or Less A 3D Modeller",
    "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
    "source": "hackernews",
-   "score": 76,
+   "score": 77,
    "metric": "points",
    "rank": 16
   },
@@ -124,6 +132,14 @@
    "rank": 1
   },
   {
+   "title": "Book list for streetfighting computer scientists",
+   "url": "https://nick-black.com/dankwiki/index.php?title=Book_list_for_streetfighting_computer_scientists",
+   "source": "hackernews",
+   "score": 60,
+   "metric": "points",
+   "rank": 20
+  },
+  {
    "title": "How to rediscover your passion for learning?",
    "url": "https://lemmy.zip/post/75003138",
    "source": "lemmy",
@@ -146,25 +162,25 @@
    "score": 44,
    "metric": "points",
    "rank": 3
-  },
-  {
-   "title": "Personal programming thoughts",
-   "url": "https://akselmo.dev/posts/programming-thoughts/",
-   "source": "lemmy",
-   "score": 43,
-   "metric": "score",
-   "rank": 5
-  },
-  {
-   "title": "Ask HN: What is the state of self-hosting email in 2026?",
-   "url": "https://news.ycombinator.com/item?id=50488230",
-   "source": "ask_hn",
-   "score": 42,
-   "metric": "points",
-   "rank": 4
   }
  ],
  "left": [
+  {
+   "title": "httpx",
+   "url": "https://pypi.org/project/httpx/",
+   "source": "pypi",
+   "score": 794805198,
+   "metric": "monthly downloads",
+   "rank": 7
+  },
+  {
+   "title": "langchain",
+   "url": "https://pypi.org/project/langchain/",
+   "source": "pypi",
+   "score": 156867095,
+   "metric": "monthly downloads",
+   "rank": 17
+  },
   {
    "title": "jhaizhou-ops/S2Arm",
    "url": "https://github.com/jhaizhou-ops/S2Arm",
@@ -172,6 +188,14 @@
    "score": 2978,
    "metric": "stars",
    "rank": 2
+  },
+  {
+   "title": "JDhruv14/line-art-animation",
+   "url": "https://github.com/JDhruv14/line-art-animation",
+   "source": "github_trending",
+   "score": 742,
+   "metric": "stars",
+   "rank": 15
   },
   {
    "title": "Monkey Island: all 13 versions side by side",
@@ -300,30 +324,6 @@
    "score": 31,
    "metric": "score",
    "rank": 8
-  },
-  {
-   "title": "Creating a self booting ZIP archive",
-   "url": "https://goliath32.com/blog/ziphead.html",
-   "source": "lobsters",
-   "score": 14,
-   "metric": "score",
-   "rank": 10
-  },
-  {
-   "title": "Link Previews and You",
-   "url": "https://sable.moe/en/blog/link-previews-and-you/",
-   "source": "lobsters",
-   "score": 13,
-   "metric": "score",
-   "rank": 11
-  },
-  {
-   "title": "Writing a DSL for high performance parallel programming in OxCaml",
-   "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
-   "source": "lobsters",
-   "score": 11,
-   "metric": "score",
-   "rank": 14
   }
  ],
  "gainers": [
@@ -331,10 +331,10 @@
    "title": "deepseek-ai/chat-demo",
    "url": "https://github.com/deepseek-ai/chat-demo",
    "source": "github_trending",
-   "score": 2254,
+   "score": 2266,
    "metric": "stars",
    "rank": 2,
-   "delta": 552
+   "delta": 564
   },
   {
    "title": "Lovable apps expose passport details and more than 200K private messages",
@@ -358,10 +358,10 @@
    "title": "A family tree of software job titles",
    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
    "source": "hackernews",
-   "score": 357,
+   "score": 358,
    "metric": "points",
    "rank": 5,
-   "delta": 277
+   "delta": 278
   },
   {
    "title": "KDE: The documentary [video]",
@@ -376,10 +376,10 @@
    "title": "adriadam10/mkw-recomp",
    "url": "https://github.com/adriadam10/mkw-recomp",
    "source": "github_trending",
-   "score": 1085,
+   "score": 1087,
    "metric": "stars",
    "rank": 10,
-   "delta": 225
+   "delta": 227
   },
   {
    "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
@@ -387,53 +387,53 @@
    "source": "hackernews",
    "score": 281,
    "metric": "points",
-   "rank": 6,
+   "rank": 7,
    "delta": 219
   },
   {
    "title": "apex-compute/ANR",
    "url": "https://github.com/apex-compute/ANR",
    "source": "github_trending",
-   "score": 1953,
+   "score": 1954,
    "metric": "stars",
    "rank": 4,
-   "delta": 169
+   "delta": 170
   },
   {
    "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
    "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
    "source": "hackernews",
-   "score": 250,
+   "score": 251,
    "metric": "points",
-   "rank": 11,
-   "delta": 161
+   "rank": 10,
+   "delta": 162
   },
   {
    "title": "Why get an expensive Pi when I have an old phone?",
    "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
    "source": "hackernews",
-   "score": 581,
+   "score": 582,
    "metric": "points",
    "rank": 3,
-   "delta": 142
+   "delta": 143
   },
   {
    "title": "huamidev/GestaltX",
    "url": "https://github.com/huamidev/GestaltX",
    "source": "github_trending",
-   "score": 7688,
+   "score": 7689,
    "metric": "stars",
    "rank": 1,
-   "delta": 142
+   "delta": 143
   },
   {
    "title": "FrigadeHQ/yogurt",
    "url": "https://github.com/FrigadeHQ/yogurt",
    "source": "github_trending",
-   "score": 1571,
+   "score": 1572,
    "metric": "stars",
    "rank": 5,
-   "delta": 123
+   "delta": 124
   },
   {
    "title": "PyPI's redesigned project pages with clearer security signals are now live",
@@ -466,19 +466,10 @@
    "title": "agentes-chat/agentes-chat",
    "url": "https://github.com/agentes-chat/agentes-chat",
    "source": "github_trending",
-   "score": 1462,
+   "score": 1463,
    "metric": "stars",
    "rank": 8,
-   "delta": 72
-  },
-  {
-   "title": "JDhruv14/line-art-animation",
-   "url": "https://github.com/JDhruv14/line-art-animation",
-   "source": "github_trending",
-   "score": 808,
-   "metric": "stars",
-   "rank": 15,
-   "delta": 66
+   "delta": 73
   },
   {
    "title": "Kianuni/Erosion-CN",
@@ -493,10 +484,10 @@
    "title": "HolyArrs/HolyArrs",
    "url": "https://github.com/HolyArrs/HolyArrs",
    "source": "github_trending",
-   "score": 1220,
+   "score": 1221,
    "metric": "stars",
    "rank": 9,
-   "delta": 50
+   "delta": 51
   },
   {
    "title": "serveroshq/panel",
@@ -506,6 +497,15 @@
    "metric": "stars",
    "rank": 14,
    "delta": 45
+  },
+  {
+   "title": "kolbicz/WQFiles",
+   "url": "https://github.com/kolbicz/WQFiles",
+   "source": "github_trending",
+   "score": 895,
+   "metric": "stars",
+   "rank": 11,
+   "delta": 44
   }
  ],
  "droppers": [
@@ -690,6 +690,133 @@
    "delta": 7
   }
  ],
- "pkg_rank_up": [],
+ "pkg_rank_up": [
+  {
+   "title": "transformers",
+   "url": "https://pypi.org/project/transformers/",
+   "source": "pypi",
+   "score": 117605093,
+   "metric": "monthly downloads",
+   "rank": 16,
+   "rank_delta": 2
+  },
+  {
+   "title": "torch",
+   "url": "https://pypi.org/project/torch/",
+   "source": "pypi",
+   "score": 60157816,
+   "metric": "monthly downloads",
+   "rank": 17,
+   "rank_delta": 2
+  },
+  {
+   "title": "celery",
+   "url": "https://pypi.org/project/celery/",
+   "source": "pypi",
+   "score": 51503290,
+   "metric": "monthly downloads",
+   "rank": 18,
+   "rank_delta": 2
+  },
+  {
+   "title": "django",
+   "url": "https://pypi.org/project/django/",
+   "source": "pypi",
+   "score": 50283944,
+   "metric": "monthly downloads",
+   "rank": 19,
+   "rank_delta": 2
+  },
+  {
+   "title": "tensorflow",
+   "url": "https://pypi.org/project/tensorflow/",
+   "source": "pypi",
+   "score": 12496761,
+   "metric": "monthly downloads",
+   "rank": 20,
+   "rank_delta": 2
+  },
+  {
+   "title": "pandas",
+   "url": "https://pypi.org/project/pandas/",
+   "source": "pypi",
+   "score": 693710064,
+   "metric": "monthly downloads",
+   "rank": 7,
+   "rank_delta": 1
+  },
+  {
+   "title": "rich",
+   "url": "https://pypi.org/project/rich/",
+   "source": "pypi",
+   "score": 558498003,
+   "metric": "monthly downloads",
+   "rank": 8,
+   "rank_delta": 1
+  },
+  {
+   "title": "fastapi",
+   "url": "https://pypi.org/project/fastapi/",
+   "source": "pypi",
+   "score": 527005636,
+   "metric": "monthly downloads",
+   "rank": 9,
+   "rank_delta": 1
+  },
+  {
+   "title": "sqlalchemy",
+   "url": "https://pypi.org/project/sqlalchemy/",
+   "source": "pypi",
+   "score": 400582389,
+   "metric": "monthly downloads",
+   "rank": 10,
+   "rank_delta": 1
+  },
+  {
+   "title": "scipy",
+   "url": "https://pypi.org/project/scipy/",
+   "source": "pypi",
+   "score": 382849430,
+   "metric": "monthly downloads",
+   "rank": 11,
+   "rank_delta": 1
+  },
+  {
+   "title": "openai",
+   "url": "https://pypi.org/project/openai/",
+   "source": "pypi",
+   "score": 371770955,
+   "metric": "monthly downloads",
+   "rank": 12,
+   "rank_delta": 1
+  },
+  {
+   "title": "scikit-learn",
+   "url": "https://pypi.org/project/scikit-learn/",
+   "source": "pypi",
+   "score": 213066429,
+   "metric": "monthly downloads",
+   "rank": 13,
+   "rank_delta": 1
+  },
+  {
+   "title": "flask",
+   "url": "https://pypi.org/project/flask/",
+   "source": "pypi",
+   "score": 205187325,
+   "metric": "monthly downloads",
+   "rank": 14,
+   "rank_delta": 1
+  },
+  {
+   "title": "matplotlib",
+   "url": "https://pypi.org/project/matplotlib/",
+   "source": "pypi",
+   "score": 189251063,
+   "metric": "monthly downloads",
+   "rank": 15,
+   "rank_delta": 1
+  }
+ ],
  "pkg_rank_down": []
 }

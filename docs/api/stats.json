@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T13:59:59.711597+00:00",
+ "generated_at": "2026-11-15T14:05:25.719533+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 835,
- "unique_urls": 697,
- "items_in_latest": 442,
- "items_per_day_avg": 92.8,
+ "total_rows": 843,
+ "unique_urls": 705,
+ "items_in_latest": 445,
+ "items_per_day_avg": 93.7,
  "sources": {
   "arstechnica": {
    "rows": 16,
@@ -20,6 +20,10 @@
   "ask_hn": {
    "rows": 76,
    "days_active": 8
+  },
+  "bendersky": {
+   "rows": 5,
+   "days_active": 1
   },
   "changelog": {
    "rows": 15,
@@ -46,7 +50,7 @@
    "days_active": 1
   },
   "github_trending": {
-   "rows": 31,
+   "rows": 32,
    "days_active": 2
   },
   "hackaday": {
@@ -54,7 +58,7 @@
    "days_active": 1
   },
   "hackernews": {
-   "rows": 193,
+   "rows": 194,
    "days_active": 9
   },
   "infoq": {
@@ -126,7 +130,7 @@
    "days_active": 1
   },
   "theverge": {
-   "rows": 13,
+   "rows": 14,
    "days_active": 1
   }
  },
@@ -146,7 +150,7 @@
   },
   {
    "domain": "theverge.com",
-   "hits": 15
+   "hits": 16
   },
   {
    "domain": "changelog.com",
