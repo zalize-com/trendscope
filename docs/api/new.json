@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T15:53:46.988367+00:00",
+ "generated_at": "2026-11-15T15:55:03.680758+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1106,
- "new_items": 980,
+ "total_items": 1122,
+ "new_items": 996,
  "by_source": {
   "producthunt": 45,
   "theregister": 29,
@@ -12,6 +12,7 @@
   "slashdot": 18,
   "thenewstack": 17,
   "arstechnica": 16,
+  "daringfireball": 16,
   "antirez": 15,
   "arxiv": 15,
   "aws_blog": 15,
@@ -22,7 +23,6 @@
   "codinghorror": 15,
   "codinghorror2": 15,
   "dabeaz": 15,
-  "daringfireball": 15,
   "discord": 15,
   "echojs": 15,
   "elastic": 15,
@@ -35,6 +35,7 @@
   "kentcdodds": 15,
   "lemmy": 15,
   "lwn": 15,
+  "marco": 15,
   "martinfowler": 15,
   "mitchw": 15,
   "mongodb": 15,
@@ -1832,6 +1833,14 @@
   {
    "title": "Joanna Stern Reviews the HomeView",
    "url": "https://www.youtube.com/watch?v=yVTcVtLn2o4",
+   "source": "daringfireball",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WorkOS: Let Agents Use Your Tools Without Giving Them Free Rein",
+   "url": "https://www.workos.com/airlock?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q42026",
    "source": "daringfireball",
    "rank": 1,
    "score": 15,
@@ -4346,6 +4355,126 @@
    "url": "https://eng.lyft.com/beyond-a-b-testing-using-surrogacy-and-region-splits-to-measure-long-term-effects-in-marketplaces-9cb06d628f2d?source=rss----25cd379abb8---4",
    "source": "lyft",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Community",
+   "url": "https://marco.org/2026/10/24/community",
+   "source": "marco",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bob and Van",
+   "url": "https://marco.org/2026/09/04/bob-and-van",
+   "source": "marco",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unforgetful",
+   "url": "https://marco.org/2026/08/14/unforgetful",
+   "source": "marco",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A letter to John Ternus",
+   "url": "https://marco.org/2026/04/01/letter-to-john-ternus",
+   "source": "marco",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Retreating to Safety",
+   "url": "https://marco.org/2025/05/30/retreat",
+   "source": "marco",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ten years of Overcast: A new foundation",
+   "url": "https://marco.org/2024/07/16/overcast-rewrite",
+   "source": "marco",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Overcast Redesign: Part One",
+   "url": "https://marco.org/2022/03/25/overcast-redesign-2022",
+   "source": "marco",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ten years after we lost Steve Jobs",
+   "url": "https://marco.org/2021/10/05/steve-jobs-ten-years",
+   "source": "marco",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The future of the App Store",
+   "url": "https://marco.org/2021/09/13/future-of-the-app-store",
+   "source": "marco",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Developer relations",
+   "url": "https://marco.org/2021/06/03/developer-relations",
+   "source": "marco",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In-App Purchase Rules",
+   "url": "https://marco.org/2020/09/11/app-review-changes",
+   "source": "marco",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Voice Boost 2: Remaster your podcasts",
+   "url": "https://marco.org/2020/01/31/voiceboost2",
+   "source": "marco",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Low Power Mode for Mac laptops: making the case again",
+   "url": "https://marco.org/2020/01/13/macos-low-power-mode-redux",
+   "source": "marco",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The 16-inch MacBook Pro",
+   "url": "https://marco.org/2019/11/13/mbp16",
+   "source": "marco",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Overcast summer update",
+   "url": "https://marco.org/2019/07/21/overcast-summer-update",
+   "source": "marco",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },

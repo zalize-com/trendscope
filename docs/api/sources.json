@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T15:53:47.093925+00:00",
+  "generated_at": "2026-11-15T15:55:03.876946+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -146,6 +146,18 @@
         "rank": 1
       }
     },
+    "daringfireball": {
+      "items": 18,
+      "unique_urls": 16,
+      "median_days_on_board": 1,
+      "one_day_pct": 88,
+      "top_item": {
+        "title": "Nvidia Employees Petition for Jensen Huang’s Return",
+        "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+        "score": 811,
+        "rank": 3
+      }
+    },
     "slashdot": {
       "items": 18,
       "unique_urls": 18,
@@ -156,18 +168,6 @@
         "url": "https://hardware.slashdot.org/story/26/11/15/0510225/did-alice-huangs-megaspeed-bypass-americas-controls-on-exporting-nvidia-chip-to-china?utm_source=rss1.0mainlinkanon&utm_medium=feed",
         "score": 15,
         "rank": 1
-      }
-    },
-    "daringfireball": {
-      "items": 17,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 87,
-      "top_item": {
-        "title": "Nvidia Employees Petition for Jensen Huang’s Return",
-        "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
-        "score": 811,
-        "rank": 3
       }
     },
     "thenewstack": {
@@ -598,6 +598,18 @@
       "top_item": {
         "title": "datasette-llm 0.1a11",
         "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "marco": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Community",
+        "url": "https://marco.org/2026/10/24/community",
         "score": 15,
         "rank": 1
       }
