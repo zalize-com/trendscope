@@ -60,5 +60,8 @@ jobs:
             echo "No changes"
           else
             git commit -m "data: daily snapshot $(date -u +%Y-%m-%d)"
-            git push
+            # retry on push races with concurrent manual pushes
+            for i in 1 2 3; do
+              git pull --rebase origin main && git push && break || sleep 5
+            done
           fi
