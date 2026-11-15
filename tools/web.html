@@ -66,6 +66,7 @@
     <button data-tool="hash">file checksum</button>
     <button data-tool="pxrem">px ↔ rem</button>
     <button data-tool="utm">UTM builder</button>
+    <button data-tool="aifree">AI-free badge</button>
   </div>
 
   <div class="panel" id="p-qr">
@@ -130,6 +131,26 @@
     <div id="hs-out" style="margin-top:8px"></div>
   </div>
 
+  <div class="panel" id="p-aifree">
+    <h2>AI-free badge</h2>
+    <p class="hint">Declare your site is human-made. Pick a label + style, copy the SVG or HTML snippet.</p>
+    <label>label</label>
+    <select id="af-label">
+      <option>made by humans</option>
+      <option>100% human-written</option>
+      <option>no AI used here</option>
+      <option>handcrafted, no LLM</option>
+    </select>
+    <label>style</label>
+    <select id="af-style">
+      <option value="dark">dark</option>
+      <option value="light">light</option>
+      <option value="outline">outline</option>
+    </select>
+    <div id="af-view" style="margin:12px 0"></div>
+    <div class="out" id="af-out"></div>
+    <button class="copy" id="af-copy">copy snippet</button>
+  </div>
   <div class="panel" id="p-utm">
     <h2>UTM builder</h2>
     <label>URL <input id="ut-url" placeholder="https://example.com/page" style="width:100%"></label>
@@ -162,7 +183,37 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["qr","og","robots","squat","http","hash","pxrem","utm"];
+const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree"];
+
+// ---- AI-free badge ----
+function afSvg(label, style) {
+  const w = 190, h = 32, rx = 5;
+  const pal = {
+    dark:   {bg:"#0f1115", fg:"#7ee2a8", bd:"#2a2e37"},
+    light:  {bg:"#f5f5f0", fg:"#1a7a4a", bd:"#d0d0c8"},
+    outline:{bg:"none",    fg:"#7ee2a8", bd:"#7ee2a8"},
+  }[style] || {};
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}">
+  <rect x="1" y="1" width="${w-2}" height="${h-2}" rx="${rx}" fill="${pal.bg}" stroke="${pal.bd}" stroke-width="1.5"/>
+  <text x="${w/2}" y="${h/2+4}" font-family="ui-monospace,monospace" font-size="13" fill="${pal.fg}" text-anchor="middle">\u2726 ${label} \u2726</text>
+</svg>`;
+}
+function afGo() {
+  const label = document.getElementById("af-label").value;
+  const style = document.getElementById("af-style").value;
+  const svg = afSvg(label, style);
+  document.getElementById("af-view").innerHTML = svg;
+  document.getElementById("af-out").textContent =
+    `<a href="https://zalize-com.github.io/trendscope/about.html" title="declared human-made">\n  ${svg.replace(/\n/g, "\n  ")}\n</a>`;
+}
+document.getElementById("af-label").addEventListener("change", afGo);
+document.getElementById("af-style").addEventListener("change", afGo);
+document.getElementById("af-copy").addEventListener("click", () => {
+  navigator.clipboard.writeText(document.getElementById("af-out").textContent);
+  document.getElementById("af-copy").textContent = "copied";
+  setTimeout(() => document.getElementById("af-copy").textContent = "copy snippet", 1200);
+});
+afGo();
 
 // ---- UTM builder ----
 function utmGo() {
