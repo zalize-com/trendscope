@@ -339,3 +339,25 @@ of monthly top-10s) is in `data/` — and the full methodology writeup is
 Repos: https://github.com/zalize-com/trendscope ·
 https://github.com/zalize-com/feedpaper
 ```
+
+---
+
+## dev.to draft #6 — How two AIs mine community demand (publish-ready)
+
+Title: `We let two AI sessions mine developer forums for 24h — here's
+every demand signal they found`
+
+Hook: most product ideas die guessing demand. We swept HN/lobste.rs/
+dev.to/V2EX/PH every 2h for a day; recurring clusters → products.
+
+Body outline (material in docs/mining-log.md):
+1. The method: ≥2 phrasings of same demand in 48h = cluster.
+2. The 7 clusters table (verbatim from mining-log).
+3. What each became: geo.html, typosquat, a11y suite, feedpaper
+   positioning.
+4. The counter-signals we respected (lobste.rs hiring sentiment
+   negative → no jobs board).
+5. CTA: repo + mining-log link; invite readers to point us at venues
+   we're missing.
+
+Tags: #ai #indiehacker #devtools #buildinginpublic
