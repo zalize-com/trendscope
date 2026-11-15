@@ -31,6 +31,8 @@
   .it a { color: var(--fg); } .it a:hover { color: var(--accent); }
   .src { color: var(--dim); font-size: 11px; border: 1px solid var(--border);
          border-radius: 4px; padding: 0 5px; margin-left: 6px; }
+  .traj { color: var(--dim); font-size: 11px; margin-left: 6px; text-decoration: none; }
+  .traj:hover { color: var(--accent); }
   .sc { margin-left: auto; white-space: nowrap; font-size: 12px; }
   .up { color: var(--green); } .down { color: var(--red); } .dim { color: var(--dim); }
   .stats { display: flex; gap: 18px; flex-wrap: wrap; margin: 10px 0 6px; }
@@ -71,7 +73,7 @@ bEl.value = params.get("b") || days[days.length - 1];
 aEl.onchange = bEl.onchange = () => { history.replaceState(null,"",`?a=${aEl.value}&b=${bEl.value}`); run(); };
 
 function row(it, badge, scoreTxt, cls) {
-  return `<li><span class="it"><a href="${it.url}">${esc(it.title)}</a><span class="src">${it.source}</span></span>
+  return `<li><span class="it"><a href="${it.url}">${esc(it.title)}</a><span class="src">${it.source}</span><a class="traj" href="item.html?q=${encodeURIComponent(it.title)}" title="score trajectory">⤳</a></span>
           <span class="sc">${badge} <span class="${cls}">${scoreTxt}</span></span></li>`;
 }
 
