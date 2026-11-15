@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T17:36:43.604499+00:00",
+  "generated_at": "2026-11-15T17:38:49.142614+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -146,6 +146,18 @@
         "rank": 1
       }
     },
+    "slashdot": {
+      "items": 20,
+      "unique_urls": 20,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Did Alice Huang's Megaspeed Bypass America's Controls on Exporting Nvidia Chip to China?",
+        "url": "https://hardware.slashdot.org/story/26/11/15/0510225/did-alice-huangs-megaspeed-bypass-americas-controls-on-exporting-nvidia-chip-to-china?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "daringfireball": {
       "items": 19,
       "unique_urls": 17,
@@ -156,18 +168,6 @@
         "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
         "score": 811,
         "rank": 3
-      }
-    },
-    "slashdot": {
-      "items": 19,
-      "unique_urls": 19,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Did Alice Huang's Megaspeed Bypass America's Controls on Exporting Nvidia Chip to China?",
-        "url": "https://hardware.slashdot.org/story/26/11/15/0510225/did-alice-huangs-megaspeed-bypass-americas-controls-on-exporting-nvidia-chip-to-china?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-        "score": 15,
-        "rank": 1
       }
     },
     "googleblog": {
@@ -4058,6 +4058,114 @@
         "rank": 1
       }
     },
+    "blogmgechev": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "skill grade",
+        "url": "https://blog.mgechev.com/2026/03/14/skillgrade/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogportswigger": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Heading to San Francisco? Meet PortSwigger at OWASP Global AppSec USA 2026",
+        "url": "https://portswigger.net/blog/heading-to-san-francisco-meet-portswigger-at-owasp-global-appsec-usa-2026",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogsapegin": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Thoughts on using AI for software development",
+        "url": "https://sapegin.me/blog/coding-with-ai/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogsunnyxx": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "重识 Objective-C Runtime - 看透 Type 与 Value",
+        "url": "http://blog.sunnyxx.com/2016/08/13/reunderstanding-runtime-1/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogtojicode": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "WebGPU/glTF case study",
+        "url": "https://blog.tojicode.com/2022/07/webgpugltf-case-study.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogunicode": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "ICU 79 Released",
+        "url": "http://blog.unicode.org/2026/10/icu-79-released.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "casatwy": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "PThread完全入门",
+        "url": "https://casatwy.com/PThread_course.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "colobu": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "jev 兼容",
+        "url": "https://colobu.com/2026/09/21/jev-compatibility/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "component": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Building a Storybook-like demo browser with web components — a much simpler way to get most of the benefits",
+        "url": "http://component.kitchen/blog/posts/building-a-storybook-like-demo-browser-with-web-components-a-much-simpler-way-to-get-most-of-the-benefits",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -6626,6 +6734,126 @@
         "rank": 1
       }
     },
+    "bloglizardwrangler": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Global AI Summit on Africa: my experience",
+        "url": "https://mitchellbaker.net/2025/04/global-ai-summit-on-africa-2/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogmozilla": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Raising the Minimum Android Version for Firefox",
+        "url": "https://blog.mozilla.org/futurereleases/2025/09/15/raising-the-minimum-android-version-for-firefox/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogreybango": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Offensive Security Tools for Pentesting & Red Team Operations",
+        "url": "https://blog.reybango.com/2022/01/11/offensive-security-tools-for-pentesting-red-team-operations/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogshakirm": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Visions of AI: Building our Sociotechnical Future",
+        "url": "https://blog.shakirm.com/2024/06/visions-of-ai-building-our-sociotechnical-future/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogwhatwg": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Staged proposals at the WHATWG",
+        "url": "https://blog.whatwg.org/staged-proposals-at-the-whatwg",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogsbing": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Introducing Topics Portfolio (Beta) in AI Performance",
+        "url": "https://blogs.bing.com/webmaster/2026/10/introducing-topics-portfolio-beta-in-ai-performance/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogsigalia": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Protocol Handler Registration via Browser Extensions",
+        "url": "https://blogs.igalia.com/jfernandez/2026/03/24/protocol-handler-registration-via-browser-extensions/?pk_campaign=feed&pk_kwd=protocol-handler-registration-via-browser-extensions",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "calendarperfplanet": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The Curious Case of the Shallow Session SPAs",
+        "url": "https://calendar.perfplanet.com/2025/the-curious-case-of-the-shallow-session-spas/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "codingitwrong": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Don't Sleep on Exhaustive Dependencies",
+        "url": "https://codingitwrong.com/2024/05/30/dont-sleep-on-exhaustive-dependencies.html",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "crisal": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Thoughts on code reviews",
+        "url": "http://crisal.io/words/2026/08/03/code-review-thoughts.html",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "susam": {
       "items": 9,
       "unique_urls": 9,
@@ -7018,6 +7246,18 @@
       "top_item": {
         "title": "2025 Year in Review",
         "url": "https://toni.li/blog/2025_in_review",
+        "score": 5,
+        "rank": 1
+      }
+    },
+    "clagnut": {
+      "items": 5,
+      "unique_urls": 5,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Ian Harry Rutter 1942 – 2026",
+        "url": "https://clagnut.com/blog/2448/",
         "score": 5,
         "rank": 1
       }

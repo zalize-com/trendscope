@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-15T17:36:43.094173+00:00",
+ "generated_at": "2026-11-15T17:38:48.541599+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 7708,
- "new_items": 7582,
+ "total_items": 7949,
+ "new_items": 7823,
  "by_source": {
   "producthunt": 45,
   "show_hn": 43,
   "hackernews": 31,
   "theregister": 29,
   "techmeme": 23,
-  "slashdot": 19,
+  "slashdot": 20,
   "daringfireball": 17,
   "thenewstack": 17,
   "theverge": 17,
@@ -77,11 +77,17 @@
   "blogj11y": 15,
   "blogjanestreet": 15,
   "blogjessfraz": 15,
+  "blogmgechev": 15,
+  "blogportswigger": 15,
   "blogroboflow": 15,
+  "blogsapegin": 15,
   "blogscottlogic": 15,
   "blogsentry": 15,
   "blogsnewardassociates": 15,
+  "blogsunnyxx": 15,
   "blogtensorflow": 15,
+  "blogtojicode": 15,
+  "blogunicode": 15,
   "blogvuejs": 15,
   "blogwokwi": 15,
   "blueskyweb": 15,
@@ -95,6 +101,7 @@
   "buffer": 15,
   "calpaterson": 15,
   "cameronmoll": 15,
+  "casatwy": 15,
   "caseymuratori": 15,
   "catonmat": 15,
   "cezarypiatekgithub": 15,
@@ -112,6 +119,8 @@
   "codingblocks": 15,
   "codinghorror": 15,
   "codinghorror2": 15,
+  "colobu": 15,
+  "component": 15,
   "computerenhance": 15,
   "cppcast": 15,
   "cssirl": 15,
@@ -401,20 +410,30 @@
   "blogkhanacademy": 10,
   "blogknatten": 10,
   "blogkukiel": 10,
+  "bloglizardwrangler": 10,
   "blogluden": 10,
+  "blogmozilla": 10,
   "blogpythonlibrary": 10,
+  "blogreybango": 10,
   "blogrustlang": 10,
+  "blogsbing": 10,
+  "blogshakirm": 10,
+  "blogsigalia": 10,
+  "blogwhatwg": 10,
   "borischerny": 10,
   "bram": 10,
+  "calendarperfplanet": 10,
   "calv": 10,
   "carljohansenwordpress": 10,
   "caseyliss": 10,
   "chrisprather": 10,
   "chriswarrick": 10,
   "codeflickr": 10,
+  "codingitwrong": 10,
   "copyconstruct": 10,
   "cordcuttersnews": 10,
   "createaprowebsite": 10,
+  "crisal": 10,
   "csaiot": 10,
   "dannorris": 10,
   "davefarley": 10,
@@ -578,6 +597,7 @@
   "bendersky": 5,
   "blogchristianposta": 5,
   "christianheilmann": 5,
+  "clagnut": 5,
   "feedbin": 5,
   "ferd": 5,
   "fetchrss": 5,
@@ -11738,6 +11758,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Global AI Summit on Africa: my experience",
+   "url": "https://mitchellbaker.net/2025/04/global-ai-summit-on-africa-2/",
+   "source": "bloglizardwrangler",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Ethos of Open Source",
+   "url": "https://mitchellbaker.net/2025/04/the-ethos-of-open-source/",
+   "source": "bloglizardwrangler",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Global AI Summit on Africa",
+   "url": "https://mitchellbaker.net/2025/03/global-ai-summit-on-africa/",
+   "source": "bloglizardwrangler",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Topic Areas for Building a Better World Through Technology",
+   "url": "https://mitchellbaker.net/2025/03/topic-areas-for-building-a-better-world-through-technology/",
+   "source": "bloglizardwrangler",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a Better World Through Technology",
+   "url": "https://mitchellbaker.net/2025/02/building-a-better-world-through-technology/",
+   "source": "bloglizardwrangler",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Quarter Century of Mozilla",
+   "url": "https://mitchellbaker.net/2023/03/a-quarter-century-of-mozilla/",
+   "source": "bloglizardwrangler",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Expanding Mozilla’s Boards in 2023",
+   "url": "https://mitchellbaker.net/2023/03/expanding-mozillas-boards-in-2023/",
+   "source": "bloglizardwrangler",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Expanding Mozilla’s Boards in 2020",
+   "url": "https://mitchellbaker.net/2020/01/expanding-mozillas-boards-in-2020/",
+   "source": "bloglizardwrangler",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In Memoriam: Gervase Markham",
+   "url": "https://mitchellbaker.net/2018/08/in-memoriam-gervase-markham/",
+   "source": "bloglizardwrangler",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Busting the myth that net neutrality hampers investment",
+   "url": "https://mitchellbaker.net/2017/09/busting-the-myth-that-net-neutrality-hampers-investment/",
+   "source": "bloglizardwrangler",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Top 5 AI code review tools in 2026",
    "url": "https://blog.logrocket.com/ai-code-review-tools-2026/",
    "source": "bloglogrocket",
@@ -11914,6 +12014,326 @@
    "metric": "feed rank"
   },
   {
+   "title": "skill grade",
+   "url": "https://blog.mgechev.com/2026/03/14/skillgrade/",
+   "source": "blogmgechev",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unit Tests for AI Agent Skills",
+   "url": "https://blog.mgechev.com/2026/02/26/skill-eval/",
+   "source": "blogmgechev",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You Should Care About AI",
+   "url": "https://blog.mgechev.com/2025/11/07/you-should-care-about-ai/",
+   "source": "blogmgechev",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generative Development",
+   "url": "https://blog.mgechev.com/2025/10/20/generative-development/",
+   "source": "blogmgechev",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "LLM-first Web Framework",
+   "url": "https://blog.mgechev.com/2025/04/19/llm-first-web-framework/",
+   "source": "blogmgechev",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reactive framework in ~200 lines of JavaScript",
+   "url": "https://blog.mgechev.com/2025/01/09/minimal-reactive-framework/",
+   "source": "blogmgechev",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Managing Angular",
+   "url": "https://blog.mgechev.com/2024/08/25/managing-angular/",
+   "source": "blogmgechev",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Are LLMs going to replace us?",
+   "url": "https://blog.mgechev.com/2024/05/28/are-llms-going-to-replace-us/",
+   "source": "blogmgechev",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prefetching Heuristics",
+   "url": "https://blog.mgechev.com/2021/02/07/prefetching-strategies-heuristics-faster-web-apps/",
+   "source": "blogmgechev",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Design Patterns in Open Source Projects - Part II",
+   "url": "https://blog.mgechev.com/2021/01/24/design-pattens-in-open-source-projects-part-ii/",
+   "source": "blogmgechev",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Design Patterns in Open Source Projects - Part I",
+   "url": "https://blog.mgechev.com/2021/01/18/design-pattens-in-open-source-projects-part-i/",
+   "source": "blogmgechev",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What I learned doing 125 public talks - Part I",
+   "url": "https://blog.mgechev.com/2020/11/26/what-i-learned-doing-100-public-talks-part-i/",
+   "source": "blogmgechev",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dynamic imports solve all the problems, right?",
+   "url": "https://blog.mgechev.com/2019/05/11/dynamic-imports-javascript/",
+   "source": "blogmgechev",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 Angular CLI Features You Didn't Know About",
+   "url": "https://blog.mgechev.com/2019/02/06/5-angular-cli-features/",
+   "source": "blogmgechev",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Angular quicklink Preloading Strategy",
+   "url": "https://blog.mgechev.com/2018/12/24/quicklink-angular-prefetching-preloading-strategy/",
+   "source": "blogmgechev",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Raising the Minimum Android Version for Firefox",
+   "url": "https://blog.mozilla.org/futurereleases/2025/09/15/raising-the-minimum-android-version-for-firefox/",
+   "source": "blogmozilla",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Firefox 32-bit Linux Support to End in 2026",
+   "url": "https://blog.mozilla.org/futurereleases/2025/09/05/firefox-32-bit-linux-support-to-end-in-2026/",
+   "source": "blogmozilla",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Extended Firefox ESR 115 Support for Windows 7, 8, and 8.1 and macOS 10.12-10.14",
+   "url": "https://blog.mozilla.org/futurereleases/2025/09/04/firefox-esr-115-support-for-windows-7-8-and-8-1-and-old-mac-os-versions-extended-until-march-2026/",
+   "source": "blogmozilla",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Firefox support for Windows 7, 8 and 8.1",
+   "url": "https://blog.mozilla.org/futurereleases/2023/07/06/firefox-support-for-windows-7-8-and-8-1/",
+   "source": "blogmozilla",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Firefox support for macOS 10.12, 10.13 and 10.14",
+   "url": "https://blog.mozilla.org/futurereleases/2023/07/06/firefox-support-for-macos-10-12-10-13-and-10-14/",
+   "source": "blogmozilla",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ending Firefox support for Flash",
+   "url": "https://blog.mozilla.org/futurereleases/2020/11/17/ending-firefox-support-for-flash/",
+   "source": "blogmozilla",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Update on Firefox Support for macOS 10.9, 10.10 and 10.11",
+   "url": "https://blog.mozilla.org/futurereleases/2020/06/23/update-on-firefox-support-for-macos-10-9-10-10-and-10-11/",
+   "source": "blogmozilla",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Mozilla VPN",
+   "url": "https://blog.mozilla.org/futurereleases/2020/06/18/introducing-firefox-private-network-vpns-official-product-the-mozilla-vpn/",
+   "source": "blogmozilla",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Next steps in testing our Firefox Private Network browser extension beta",
+   "url": "https://blog.mozilla.org/futurereleases/2020/06/09/next-steps-in-testing-our-firefox-private-network-browser-extension-beta/",
+   "source": "blogmozilla",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A brand new browsing experience arrives in Firefox for Android Nightly",
+   "url": "https://blog.mozilla.org/futurereleases/2020/01/17/a-brand-new-browsing-experience-arrives-in-firefox-for-android-nightly/",
+   "source": "blogmozilla",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Heading to San Francisco? Meet PortSwigger at OWASP Global AppSec USA 2026",
+   "url": "https://portswigger.net/blog/heading-to-san-francisco-meet-portswigger-at-owasp-global-appsec-usa-2026",
+   "source": "blogportswigger",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PHP2Shell x Burp Suite: Detection in your hands within a day of disclosure",
+   "url": "https://portswigger.net/blog/php2shell-x-burp-suite-detection-in-your-hands-within-a-day-of-disclosure",
+   "source": "blogportswigger",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Burp AT: What's new since Black Hat",
+   "url": "https://portswigger.net/blog/burp-at-whats-new-since-black-hat",
+   "source": "blogportswigger",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can AI invent new attack techniques? New research from James Kettle and PortSwigger Research",
+   "url": "https://portswigger.net/blog/can-ai-invent-new-attack-techniques-new-research-from-james-kettle-and-portswigger-research",
+   "source": "blogportswigger",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Burp AT helped expose whistleblower reports via a critical vulnerability that was overlooked for years",
+   "url": "https://portswigger.net/blog/how-burp-at-helped-expose-whistleblower-reports-via-a-critical-vulnerability-that-was-overlooked-for-years",
+   "source": "blogportswigger",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From capable AI models to trusted security testing",
+   "url": "https://portswigger.net/blog/from-capable-ai-models-to-trusted-security-testing",
+   "source": "blogportswigger",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Burp AT: agentic AI, built on two decades of Burp Suite",
+   "url": "https://portswigger.net/blog/introducing-burp-at",
+   "source": "blogportswigger",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Burp's new Ambassadors: learn from the people who use Burp Suite everyday",
+   "url": "https://portswigger.net/blog/burps-new-ambassadors-learn-from-the-people-who-use-burp-suite-everyday",
+   "source": "blogportswigger",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Heading to Vegas? Meet PortSwigger at Black Hat, BSides, and DEF CON 34.",
+   "url": "https://portswigger.net/blog/heading-to-vegas-meet-portswigger-at-black-hat-bsides-and-def-con-34",
+   "source": "blogportswigger",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Burp Extensibility 2026: Awards, Talks, and Highlights",
+   "url": "https://portswigger.net/blog/burp-extensibility-2026-awards-talks-and-highlights",
+   "source": "blogportswigger",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The beast needs a cage: What's next for AppSec post-Mythos",
+   "url": "https://portswigger.net/blog/the-beast-needs-a-cage-whats-next-for-appsec-post-mythos",
+   "source": "blogportswigger",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "3 ways custom scan checks turn practitioner knowledge into scalable automation",
+   "url": "https://portswigger.net/blog/3-ways-custom-scan-checks-turn-practitioner-knowledge-into-scalable-automation",
+   "source": "blogportswigger",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PortSwigger recognized at the Northern Tech Awards 2026.",
+   "url": "https://portswigger.net/blog/portswigger-recognized-at-the-northern-tech-awards-2026",
+   "source": "blogportswigger",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing the official Burp Ambassador Program",
+   "url": "https://portswigger.net/blog/introducing-the-official-burp-ambassador-program",
+   "source": "blogportswigger",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PortSwigger partners with Meta Bug Bounty to empower bug hunters with training and Pro licenses",
+   "url": "https://portswigger.net/blog/portswigger-partners-with-meta-bug-bounty-to-empower-bug-hunters-with-training-and-pro-licenses",
+   "source": "blogportswigger",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "An Intro to Python Logging Handlers (Video)",
    "url": "https://blog.pythonlibrary.org/2026/11/06/12823/",
    "source": "blogpythonlibrary",
@@ -11989,6 +12409,86 @@
    "title": "Textual – An Intro to DOM Queries (Part I)",
    "url": "https://blog.pythonlibrary.org/2026/04/17/textual-an-intro-to-dom-queries-part-i/",
    "source": "blogpythonlibrary",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Offensive Security Tools for Pentesting & Red Team Operations",
+   "url": "https://blog.reybango.com/2022/01/11/offensive-security-tools-for-pentesting-red-team-operations/",
+   "source": "blogreybango",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From Dev to InfoSec Part 3 â€“ My First Cert",
+   "url": "https://blog.reybango.com/2018/10/22/from-dev-to-infosec-part-3-my-first-cert/",
+   "source": "blogreybango",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Security is All of our Problem and I Want to do Better",
+   "url": "https://blog.reybango.com/2017/09/23/security-is-all-of-our-problem-and-i-want-to-do-better/",
+   "source": "blogreybango",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Managing Line-feeds in a Cross-platform Team via Git",
+   "url": "https://blog.reybango.com/2017/04/01/managing-line-feeds-cross-platform-team-git/",
+   "source": "blogreybango",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You Can’t Get Comfortable in Web Development",
+   "url": "https://blog.reybango.com/2016/10/07/you-cant-get-comfortable-in-web-development-anymore/",
+   "source": "blogreybango",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Node Community Moves Fast & Books Get Left in the Dust",
+   "url": "https://blog.reybango.com/2016/10/01/node-community-moves-fast-books-get-left-in-the-dust/",
+   "source": "blogreybango",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Which Browser Extensions do Web Developers Use?",
+   "url": "https://blog.reybango.com/2016/01/20/which-browser-extensions-do-web-developers-use/",
+   "source": "blogreybango",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Adding ESLint to the Microsoft VS Code Editor",
+   "url": "https://blog.reybango.com/2015/12/17/adding-eslint-to-the-microsoft-vs-code-editor/",
+   "source": "blogreybango",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Migrate npm Packages When Upgrading Node.js using nvm",
+   "url": "https://blog.reybango.com/2015/08/04/how-to-migrate-npm-modules-when-upgrading-node-js-using-nvm/",
+   "source": "blogreybango",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Windows 10 Upgrade Notification Users Will Start Seeing",
+   "url": "https://blog.reybango.com/2015/06/02/the-windows-10-upgrade-notification-users-will-start-seeing/",
+   "source": "blogreybango",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -12189,6 +12689,206 @@
    "title": "GitHub Actions leaking secrets when Miri output is cached",
    "url": "https://blog.rust-lang.org/2026/09/21/github-actions-leaking-secrets-when-miri-output-is-cached/",
    "source": "blogrustlang",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughts on using AI for software development",
+   "url": "https://sapegin.me/blog/coding-with-ai/",
+   "source": "blogsapegin",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Washing your code: don’t make me think",
+   "url": "https://sapegin.me/blog/dont-make-me-think/",
+   "source": "blogsapegin",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Washing your code: divide and conquer, or merge and relax",
+   "url": "https://sapegin.me/blog/divide/",
+   "source": "blogsapegin",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Better autosave and autoformat in Visual Studio Code",
+   "url": "https://sapegin.me/blog/vscode-autosave/",
+   "source": "blogsapegin",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Modern React testing, part 5: Playwright",
+   "url": "https://sapegin.me/blog/react-testing-5-playwright/",
+   "source": "blogsapegin",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I stay (more) focused with ADHD",
+   "url": "https://sapegin.me/blog/adhd-focus/",
+   "source": "blogsapegin",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Typewriter 2.0: search for the perfect writing experience on iPad",
+   "url": "https://sapegin.me/blog/writing-on-ipad/",
+   "source": "blogsapegin",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Healthier way to open source your code",
+   "url": "https://sapegin.me/blog/healthy-open-source/",
+   "source": "blogsapegin",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I quit open source",
+   "url": "https://sapegin.me/blog/open-source-no-more/",
+   "source": "blogsapegin",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hiding tabs completely in Visual Studio Code",
+   "url": "https://sapegin.me/blog/hiding-tabs-in-visual-studio-code/",
+   "source": "blogsapegin",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Migrating my blog from Gatsby to Astro",
+   "url": "https://sapegin.me/blog/gatsby-to-astro/",
+   "source": "blogsapegin",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Washing your code: naming is hard",
+   "url": "https://sapegin.me/blog/naming/",
+   "source": "blogsapegin",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Healing my open source addiction",
+   "url": "https://sapegin.me/blog/ex-open-source/",
+   "source": "blogsapegin",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Washing your code: avoid comments",
+   "url": "https://sapegin.me/blog/avoid-comments/",
+   "source": "blogsapegin",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A rebel’s guide to pull requests, commits, and code reviews",
+   "url": "https://sapegin.me/blog/rebels-guide-to-pull-requests-commits-code-reviews/",
+   "source": "blogsapegin",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Topics Portfolio (Beta) in AI Performance",
+   "url": "https://blogs.bing.com/webmaster/2026/10/introducing-topics-portfolio-beta-in-ai-performance/",
+   "source": "blogsbing",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing AI Performance in Bing Webmaster Tools Public Preview",
+   "url": "https://blogs.bing.com/webmaster/2026/2/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview/",
+   "source": "blogsbing",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Does Duplicate Content Hurt SEO and AI Search Visibility?",
+   "url": "https://blogs.bing.com/webmaster/2025/12/Does-Duplicate-Content-Hurt-SEO-and-AI-Search-Visibility/",
+   "source": "blogsbing",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How AI Search Is Changing the Way Conversions are Measured",
+   "url": "https://blogs.bing.com/webmaster/2025/11/How-AI-Search-Is-Changing%E2%80%AFthe%E2%80%AFWay%E2%80%AFConversions%E2%80%AFare-Measured/",
+   "source": "blogsbing",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bing Introduces Support for the data-nosnippet HTML Attribute",
+   "url": "https://blogs.bing.com/webmaster/2025/10/Bing-Introduces-Support-for-the-data-nosnippet-HTML-Attribute/",
+   "source": "blogsbing",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Keeping Content Discoverable with Sitemaps in AI Powered Search",
+   "url": "https://blogs.bing.com/webmaster/2025/7/Keeping-Content-Discoverable-with-Sitemaps-in-AI-Powered-Search/",
+   "source": "blogsbing",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Start Using Bing Webmaster Tools to Improve Your Site Visibility",
+   "url": "https://blogs.bing.com/webmaster/2025/6/Start-Using-Bing-Webmaster-Tools-to-Improve-Your-Site-Visibility/",
+   "source": "blogsbing",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "IndexNow Enables Faster and More Reliable Updates for Shopping and Ads",
+   "url": "https://blogs.bing.com/webmaster/2025/5/IndexNow-Enables-Faster-and-More-Reliable-Updates-for-Shopping-and-Ads/",
+   "source": "blogsbing",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "IndexNow Drives Smarter and Faster Content Discovery",
+   "url": "https://blogs.bing.com/webmaster/2025/5/IndexNow-Drives-Smarter-and-Faster-Content-Discovery/",
+   "source": "blogsbing",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Revolutionizes Search: Key Insights from Microsoft Accelerate",
+   "url": "https://blogs.bing.com/webmaster/2025/4/AI-Revolutionizes-Search-Key-Insights-from-Microsoft-Accelerate/",
+   "source": "blogsbing",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -12434,6 +13134,166 @@
    "metric": "feed rank"
   },
   {
+   "title": "Visions of AI: Building our Sociotechnical Future",
+   "url": "https://blog.shakirm.com/2024/06/visions-of-ai-building-our-sociotechnical-future/",
+   "source": "blogshakirm",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generative Science: Roles for Generative AI in Scientific Discovery",
+   "url": "https://blog.shakirm.com/2023/12/generative-science-roles-for-generative-ai-in-scientific-discovery/",
+   "source": "blogshakirm",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Responsibilities of the Pioneer: Generative AI and its Sociotechnical Foundations",
+   "url": "https://blog.shakirm.com/2023/10/responsibilities-of-the-pioneer-generative-ai-and-its-sociotechnical-foundations/",
+   "source": "blogshakirm",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Machine Learning with Social Purpose",
+   "url": "https://blog.shakirm.com/2023/08/machine-learning-with-social-purpose/",
+   "source": "blogshakirm",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elevating our Evaluations: Technical and Sociotechnical Standards of Assessment in Machine Learning",
+   "url": "https://blog.shakirm.com/2023/04/elevating-our-evaluations-technical-and-sociotechnical-standards-of-assessment-in-machine-learning/",
+   "source": "blogshakirm",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generative Models for Climate Informatics",
+   "url": "https://blog.shakirm.com/2023/04/generative-models-for-climate-informatics/",
+   "source": "blogshakirm",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Harnessing Machine Learning to Achieve Net Zero",
+   "url": "https://blog.shakirm.com/2021/07/harnessing-machine-learning-to-achieve-net-zero/",
+   "source": "blogshakirm",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generating Reality: Technical and Social Explorations in Generative Machine Learning Research",
+   "url": "https://blog.shakirm.com/2021/06/generating-reality-technical-and-social-explorations-in-generative-machine-learning-research/",
+   "source": "blogshakirm",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inventing Ourselves: Responsibility and Diversity in Research",
+   "url": "https://blog.shakirm.com/2021/02/inventing-ourselves-responsibility-and-diversity-in-research/",
+   "source": "blogshakirm",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pain and Machine Learning",
+   "url": "https://blog.shakirm.com/2020/12/pain-and-machine-learning/",
+   "source": "blogshakirm",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Protocol Handler Registration via Browser Extensions",
+   "url": "https://blogs.igalia.com/jfernandez/2026/03/24/protocol-handler-registration-via-browser-extensions/?pk_campaign=feed&pk_kwd=protocol-handler-registration-via-browser-extensions",
+   "source": "blogsigalia",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ed25519 Support Lands in Chrome: What It Means for Developers and the Web.",
+   "url": "https://blogs.igalia.com/jfernandez/2025/08/25/ed25519-support-lands-in-chrome-what-it-means-for-developers-and-the-web/?pk_campaign=feed&pk_kwd=ed25519-support-lands-in-chrome-what-it-means-for-developers-and-the-web",
+   "source": "blogsigalia",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can I use Secure Curves in the Web Platform?",
+   "url": "https://blogs.igalia.com/jfernandez/2025/02/28/can-i-use-secure-curves-in-the-web-platform/?pk_campaign=feed&pk_kwd=can-i-use-secure-curves-in-the-web-platform",
+   "source": "blogsigalia",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Secure Curves in the Web Cryptography API",
+   "url": "https://blogs.igalia.com/jfernandez/2023/06/20/secure-curves-in-the-web-cryptography-api/?pk_campaign=feed&pk_kwd=secure-curves-in-the-web-cryptography-api",
+   "source": "blogsigalia",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Discovering Chrome’s pre-defined Custom Handlers",
+   "url": "https://blogs.igalia.com/jfernandez/2022/11/14/discovering-chromes-pre-defined-custom-handlers/?pk_campaign=feed&pk_kwd=discovering-chromes-pre-defined-custom-handlers",
+   "source": "blogsigalia",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Custom Handlers component for Chrome",
+   "url": "https://blogs.igalia.com/jfernandez/2022/08/10/new-custom-handlers-component-for-chrome/?pk_campaign=feed&pk_kwd=new-custom-handlers-component-for-chrome",
+   "source": "blogsigalia",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Improving CSS Custom Properties performance",
+   "url": "https://blogs.igalia.com/jfernandez/2020/08/13/improving-css-custom-properties-performance/?pk_campaign=feed&pk_kwd=improving-css-custom-properties-performance",
+   "source": "blogsigalia",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A new terminal-style line breaking with CSS Text",
+   "url": "https://blogs.igalia.com/jfernandez/2019/06/10/a-new-terminal-style-line-breaking-with-css-text/?pk_campaign=feed&pk_kwd=a-new-terminal-style-line-breaking-with-css-text",
+   "source": "blogsigalia",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS Grid on LayoutNG: a Web Engines Hackfest story",
+   "url": "https://blogs.igalia.com/jfernandez/2018/11/07/css-grid-on-layoutng-a-web-engines-hackfest-story/?pk_campaign=feed&pk_kwd=css-grid-on-layoutng-a-web-engines-hackfest-story",
+   "source": "blogsigalia",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can I use CSS Box Alignment ?",
+   "url": "https://blogs.igalia.com/jfernandez/2017/05/03/can-i-use-css-box-alignment/?pk_campaign=feed&pk_kwd=can-i-use-css-box-alignment",
+   "source": "blogsigalia",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Research: \"What's the Default Language of an LLM?\"",
    "url": "http://blogs.newardassociates.com/blog/2026/rnd-whichlang.html",
    "source": "blogsnewardassociates",
@@ -12549,6 +13409,126 @@
    "title": "Why Writing Matters (to the Technical Professional)",
    "url": "http://blogs.newardassociates.com/blog/2025/why-writing-matters.html",
    "source": "blogsnewardassociates",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "重识 Objective-C Runtime - 看透 Type 与 Value",
+   "url": "http://blog.sunnyxx.com/2016/08/13/reunderstanding-runtime-1/",
+   "source": "blogsunnyxx",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "重识 Objective-C Runtime - Smalltalk 与 C 的融合",
+   "url": "http://blog.sunnyxx.com/2016/08/13/reunderstanding-runtime-0/",
+   "source": "blogsunnyxx",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Clang Attributes 黑魔法小记",
+   "url": "http://blog.sunnyxx.com/2016/05/14/clang-attributes/",
+   "source": "blogsunnyxx",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "巧用 Class Extension 分离接口依赖",
+   "url": "http://blog.sunnyxx.com/2016/04/22/objc-class-extension-tips/",
+   "source": "blogsunnyxx",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iOS 开发中的 Self-Manager 模式",
+   "url": "http://blog.sunnyxx.com/2015/12/19/self-manager-pattern-in-ios/",
+   "source": "blogsunnyxx",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Objective-C Class Ivar Layout 探索",
+   "url": "http://blog.sunnyxx.com/2015/09/13/class-ivar-layout/",
+   "source": "blogsunnyxx",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "招聘一个靠谱的 iOS",
+   "url": "http://blog.sunnyxx.com/2015/07/04/ios-interview/",
+   "source": "blogsunnyxx",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2015 Objective-C 新特性",
+   "url": "http://blog.sunnyxx.com/2015/06/12/objc-new-features-in-2015/",
+   "source": "blogsunnyxx",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "一个丝滑的全屏滑动返回手势",
+   "url": "http://blog.sunnyxx.com/2015/06/07/fullscreen-pop-gesture/",
+   "source": "blogsunnyxx",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "优化UITableViewCell高度计算的那些事",
+   "url": "http://blog.sunnyxx.com/2015/05/17/cell-height-calculation/",
+   "source": "blogsunnyxx",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "巧用多字符Char常量",
+   "url": "http://blog.sunnyxx.com/2015/05/07/multiple-char/",
+   "source": "blogsunnyxx",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "0代码隐藏GroupedTableView上边多余的间隔",
+   "url": "http://blog.sunnyxx.com/2015/04/15/ios-hide-grouped-tableview-header/",
+   "source": "blogsunnyxx",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Xcode Tip合集",
+   "url": "http://blog.sunnyxx.com/2015/03/29/xcode-tips/",
+   "source": "blogsunnyxx",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Notification Once",
+   "url": "http://blog.sunnyxx.com/2015/03/09/notification-once/",
+   "source": "blogsunnyxx",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "实现一个TODO宏",
+   "url": "http://blog.sunnyxx.com/2015/03/01/todo-macro/",
+   "source": "blogsunnyxx",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -12674,6 +13654,246 @@
    "metric": "feed rank"
   },
   {
+   "title": "WebGPU/glTF case study",
+   "url": "https://blog.tojicode.com/2022/07/webgpugltf-case-study.html",
+   "source": "blogtojicode",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WebXR Scene Optimization",
+   "url": "https://blog.tojicode.com/2020/03/webxr-scene-optimization.html",
+   "source": "blogtojicode",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Early access to the WebXR Device API in Chrome Canary",
+   "url": "https://blog.tojicode.com/2018/02/early-access-to-webxr-device-api-in.html",
+   "source": "blogtojicode",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New experimental WebVR builds for Android",
+   "url": "https://blog.tojicode.com/2016/12/new-experimental-webvr-builds-for.html",
+   "source": "blogtojicode",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Update on WebVR spec, Chrome, and HTTPS",
+   "url": "https://blog.tojicode.com/2016/09/update-on-webvr-spec-chrome-and-https.html",
+   "source": "blogtojicode",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Oculus Rift and HTC Vive review",
+   "url": "https://blog.tojicode.com/2016/04/oculus-rift-and-htc-vive-review.html",
+   "source": "blogtojicode",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Moving towards WebVR 1.0",
+   "url": "https://blog.tojicode.com/2016/02/moving-towards-webvr-10.html",
+   "source": "blogtojicode",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bringing VR to Chrome",
+   "url": "https://blog.tojicode.com/2014/07/bringing-vr-to-chrome.html",
+   "source": "blogtojicode",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Crowdsourcing Unreal Tournament",
+   "url": "https://blog.tojicode.com/2014/05/crowdsourcing-unreal-tournament.html",
+   "source": "blogtojicode",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Oculus, Facebook, and the dreaded &quot;Ecosystem&quot;",
+   "url": "https://blog.tojicode.com/2014/03/oculus-facebook-and-dreaded-ecosystem.html",
+   "source": "blogtojicode",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Xbox One controller in Chrome on OSX",
+   "url": "https://blog.tojicode.com/2014/02/xbox-one-controller-in-chrome-on-osx.html",
+   "source": "blogtojicode",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Blink has affected WebGL, Part 2",
+   "url": "https://blog.tojicode.com/2014/02/how-blink-has-affected-webgl-part-2.html",
+   "source": "blogtojicode",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Notch, WebGL, Dart, and ramping up quickly",
+   "url": "https://blog.tojicode.com/2013/12/notch-webgl-dart-and-ramping-up-quickly.html",
+   "source": "blogtojicode",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "failIfMajorPerformanceCaveat: With great blacklisting power comes the need for self restraint",
+   "url": "https://blog.tojicode.com/2013/12/failifmajorperformancecaveat-with-great.html",
+   "source": "blogtojicode",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using WebGL on Chrome (AKA: \"Why don't I have the WebGLs?!?\")",
+   "url": "https://blog.tojicode.com/2013/11/the-state-of-webgl-on-chrome-aka-why.html",
+   "source": "blogtojicode",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ICU 79 Released",
+   "url": "http://blog.unicode.org/2026/10/icu-79-released.html",
+   "source": "blogunicode",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unicode CLDR 49 Released",
+   "url": "http://blog.unicode.org/2026/10/unicode-cldr-49-released.html",
+   "source": "blogunicode",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unicode CLDR 49 Beta available for specification review",
+   "url": "http://blog.unicode.org/2026/09/unicode-cldr-49-beta-available-for.html",
+   "source": "blogunicode",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Recent Unicode Happenings: September 2026",
+   "url": "http://blog.unicode.org/2026/09/recent-unicode-happenings-september-2026.html",
+   "source": "blogunicode",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing the Unicode® Standard, Version 18.0",
+   "url": "http://blog.unicode.org/2026/09/announcing-unicode-standard-version-180.html",
+   "source": "blogunicode",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unicode CLDR 49 Alpha available for testing",
+   "url": "http://blog.unicode.org/2026/09/unicode-cldr-49-alpha-available-for.html",
+   "source": "blogunicode",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ICU4X 2.3 Released!",
+   "url": "http://blog.unicode.org/2026/08/icu4x-23-released.html",
+   "source": "blogunicode",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why do some new emoji look familiar?",
+   "url": "http://blog.unicode.org/2026/07/why-do-some-new-emoji-look-familiar.html",
+   "source": "blogunicode",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Recent Unicode Happenings: June 2026",
+   "url": "http://blog.unicode.org/2026/07/recent-unicode-happenings-june-2026.html",
+   "source": "blogunicode",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unicode 18.0 Beta Review Opens for Feedback",
+   "url": "http://blog.unicode.org/2026/05/unicode-180-beta-review-opens-for.html",
+   "source": "blogunicode",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unicode CLDR 49: Submission open through June 2026",
+   "url": "http://blog.unicode.org/2026/05/unicode-cldr-49-submission-open-through.html",
+   "source": "blogunicode",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unicode Technology Workshop 2026: Call for Sessions Now Open!",
+   "url": "http://blog.unicode.org/2026/05/unicode-technology-workshop-2026-call.html",
+   "source": "blogunicode",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ICU4X 2.2 released!",
+   "url": "http://blog.unicode.org/2026/04/icu4x-22-released.html",
+   "source": "blogunicode",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unicode ICU 78.3 and CLDR 48.2 released",
+   "url": "http://blog.unicode.org/2026/03/unicode-icu-783-and-cldr-482-released.html",
+   "source": "blogunicode",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "UTS #18: More Unicode Properties in Regular Expressions",
+   "url": "http://blog.unicode.org/2026/03/uts-18-more-unicode-properties-in.html",
+   "source": "blogunicode",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Announcing Vue 3.5",
    "url": "https://blog.vuejs.org/posts/vue-3-5",
    "source": "blogvuejs",
@@ -12790,6 +14010,86 @@
    "url": "https://blog.vuejs.org/posts/vue-3-one-piece",
    "source": "blogvuejs",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Staged proposals at the WHATWG",
+   "url": "https://blog.whatwg.org/staged-proposals-at-the-whatwg",
+   "source": "blogwhatwg",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The URL Pattern Standard",
+   "url": "https://blog.whatwg.org/url-pattern-standard",
+   "source": "blogwhatwg",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Retro-specifying fetch/performance",
+   "url": "https://blog.whatwg.org/retro-specifying-fetch-performance",
+   "source": "blogwhatwg",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Living Standards",
+   "url": "https://blog.whatwg.org/new-living-standards-2021",
+   "source": "blogwhatwg",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Newline normalizations in form submission",
+   "url": "https://blog.whatwg.org/newline-normalizations-in-form-submission",
+   "source": "blogwhatwg",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Update from the Steering Group",
+   "url": "https://blog.whatwg.org/update-from-the-steering-group",
+   "source": "blogwhatwg",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Considering accessibility",
+   "url": "https://blog.whatwg.org/considering-accessibility",
+   "source": "blogwhatwg",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Focusing on focus",
+   "url": "https://blog.whatwg.org/focusing-on-focus",
+   "source": "blogwhatwg",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The state of fieldset interoperability",
+   "url": "https://blog.whatwg.org/the-state-of-fieldset-interoperability",
+   "source": "blogwhatwg",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "First set of Review Drafts published",
+   "url": "https://blog.whatwg.org/first-review-drafts",
+   "source": "blogwhatwg",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -14354,6 +15654,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "The Curious Case of the Shallow Session SPAs",
+   "url": "https://calendar.perfplanet.com/2025/the-curious-case-of-the-shallow-session-spas/",
+   "source": "calendarperfplanet",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From Theory to Tiny: Implementing Compression Dictionaries",
+   "url": "https://calendar.perfplanet.com/2025/from-theory-to-tiny-implementing-compression-dictionaries/",
+   "source": "calendarperfplanet",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Teaching Agents about Performance insights",
+   "url": "https://calendar.perfplanet.com/2025/teaching-agents-about-performance-insights/",
+   "source": "calendarperfplanet",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chrome DevTools Features I Use All the Time (and Why You Should Too)",
+   "url": "https://calendar.perfplanet.com/2025/chrome-devtools-all-the-time/",
+   "source": "calendarperfplanet",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Open Source RUM with BasicRUM",
+   "url": "https://calendar.perfplanet.com/2025/open-source-rum-with-basicrum/",
+   "source": "calendarperfplanet",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7 Steps of a Web Performance Journey",
+   "url": "https://calendar.perfplanet.com/2025/7-steps-of-a-web-performance-journey/",
+   "source": "calendarperfplanet",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Third Parties and Single Points of Failure",
+   "url": "https://calendar.perfplanet.com/2025/third-parties-and-single-points-of-failure/",
+   "source": "calendarperfplanet",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tips for making the Performance Panel less overwhelming",
+   "url": "https://calendar.perfplanet.com/2025/tips-for-making-the-performance-panel-less-overwhelming/",
+   "source": "calendarperfplanet",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chrome DevTools for Debugging Web Performance",
+   "url": "https://calendar.perfplanet.com/2025/chrome-devtools-for-debugging-web-performance/",
+   "source": "calendarperfplanet",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Revisiting HTML streaming for modern web performance",
+   "url": "https://calendar.perfplanet.com/2025/revisiting-html-streaming-for-modern-web-performance/",
+   "source": "calendarperfplanet",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Agent memory as a file format",
    "url": "https://calpaterson.com/memoryfields.html",
    "source": "calpaterson",
@@ -14750,6 +16130,126 @@
    "url": "https://carljohansen.wordpress.com/2024/10/03/shallow-thought-chess-player-in-react/",
    "source": "carljohansenwordpress",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PThread完全入门",
+   "url": "https://casatwy.com/PThread_course.html",
+   "source": "casatwy",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CTMediator的Swift应用",
+   "url": "https://casatwy.com/CTMediator_in_Swift.html",
+   "source": "casatwy",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iOS11中网络层的一些变化(Session707&709脱水版)",
+   "url": "https://casatwy.com/Advance_In_iOS11_Networking.html",
+   "source": "casatwy",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "一种基于ResponderChain的对象交互方式",
+   "url": "https://casatwy.com/responder_chain_communication.html",
+   "source": "casatwy",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "对象间交互模式",
+   "url": "https://casatwy.com/communication_patterns.html",
+   "source": "casatwy",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "在现有工程中实施基于CTMediator的组件化方案",
+   "url": "https://casatwy.com/modulization_in_action.html",
+   "source": "casatwy",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "惰性计算辨析",
+   "url": "https://casatwy.com/lazy_evaluation.html",
+   "source": "casatwy",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "去model化和数据对象",
+   "url": "https://casatwy.com/OOP_nomodel.html",
+   "source": "casatwy",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iOS应用架构谈 组件化方案",
+   "url": "https://casatwy.com/iOS-Modulization.html",
+   "source": "casatwy",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iOS应用架构谈 本地持久化方案及动态部署",
+   "url": "https://casatwy.com/iosying-yong-jia-gou-tan-ben-di-chi-jiu-hua-fang-an-ji-dong-tai-bu-shu.html",
+   "source": "casatwy",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "怎么面试架构师",
+   "url": "https://casatwy.com/zen-yao-mian-shi-jia-gou-shi.html",
+   "source": "casatwy",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iOS应用架构谈 网络层设计方案",
+   "url": "https://casatwy.com/iosying-yong-jia-gou-tan-wang-luo-ceng-she-ji-fang-an.html",
+   "source": "casatwy",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iOS应用架构谈 view层的组织和调用方案",
+   "url": "https://casatwy.com/iosying-yong-jia-gou-tan-viewceng-de-zu-zhi-he-diao-yong-fang-an.html",
+   "source": "casatwy",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iOS应用架构谈 开篇",
+   "url": "https://casatwy.com/iosying-yong-jia-gou-tan-kai-pian.html",
+   "source": "casatwy",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "库",
+   "url": "https://casatwy.com/ku.html",
+   "source": "casatwy",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -16106,6 +17606,46 @@
    "metric": "feed rank"
   },
   {
+   "title": "Ian Harry Rutter 1942 – 2026",
+   "url": "https://clagnut.com/blog/2448/",
+   "source": "clagnut",
+   "rank": 1,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new in web typography?",
+   "url": "https://clagnut.com/blog/2447/",
+   "source": "clagnut",
+   "rank": 2,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Helpful rather than hurtful to the interests of mankind",
+   "url": "https://clagnut.com/blog/2446/",
+   "source": "clagnut",
+   "rank": 3,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My requests for Interop 2026",
+   "url": "https://clagnut.com/blog/2445/",
+   "source": "clagnut",
+   "rank": 4,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Critical questions for design leaders working with AI",
+   "url": "https://clagnut.com/blog/2444/",
+   "source": "clagnut",
+   "rank": 5,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Agentic Security Engineering",
    "url": "https://cloudberry.engineering/article/agentic-security-engineering/",
    "source": "cloudberry",
@@ -17370,6 +18910,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Don't Sleep on Exhaustive Dependencies",
+   "url": "https://codingitwrong.com/2024/05/30/dont-sleep-on-exhaustive-dependencies.html",
+   "source": "codingitwrong",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Four Essentials for an Effective Software Development Process",
+   "url": "https://codingitwrong.com/2024/04/18/four-essentials-for-effective-software-development-process.html",
+   "source": "codingitwrong",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simple Design: Passes the Tests",
+   "url": "https://codingitwrong.com/2024/03/11/simple-design-passes-the-tests.html",
+   "source": "codingitwrong",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simple Design: Fewest Elements",
+   "url": "https://codingitwrong.com/2024/03/08/simple-design-fewest-elements.html",
+   "source": "codingitwrong",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simple Design: No* Duplication",
+   "url": "https://codingitwrong.com/2024/03/07/simple-design-no-duplication.html",
+   "source": "codingitwrong",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simple Design: Reveals Intention",
+   "url": "https://codingitwrong.com/2024/03/06/simple-design-reveals-intention.html",
+   "source": "codingitwrong",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Brief Summary of Evolutionary Design",
+   "url": "https://codingitwrong.com/2024/01/29/brief-summary-of-evolutionary-design.html",
+   "source": "codingitwrong",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Frontend Web Architectures",
+   "url": "https://codingitwrong.com/2024/01/17/frontend-web-architectures.html",
+   "source": "codingitwrong",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Running OPENSTEP 4.2 in a Virtual Machine",
+   "url": "https://codingitwrong.com/2024/01/08/openstep-vm.html",
+   "source": "codingitwrong",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Play Marathon over a LAN on Classic Macs",
+   "url": "https://codingitwrong.com/2023/12/04/marathon-infinity-lan.html",
+   "source": "codingitwrong",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Agents Wrote All of AWS Emulator’s 200+ Services. What’s the Engineer’s Job Now?",
    "url": "https://www.qodo.ai/blog/aws-emulator-agents-merge-gate/",
    "source": "codium",
@@ -17462,6 +19082,246 @@
    "url": "https://www.qodo.ai/blog/openai-git-pando-codex-code-review/",
    "source": "codium",
    "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "jev 兼容",
+   "url": "https://colobu.com/2026/09/21/jev-compatibility/",
+   "source": "colobu",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "新AI模型 Jev 实战：概念、场景和两个实战",
+   "url": "https://colobu.com/2026/09/21/jev-ai-model-concepts-scenarios-hands-on/",
+   "source": "colobu",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "网站被投毒",
+   "url": "https://colobu.com/2026/09/19/website-poisoned-cdn-script/",
+   "source": "colobu",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "grep 工具大盘点：rg、tgrep、rawgrep、zg",
+   "url": "https://colobu.com/2026/09/13/grep-tools-comparison-rg-tgrep-rawgrep-zg/",
+   "source": "colobu",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "go time.After 优化",
+   "url": "https://colobu.com/2026/09/11/go-time-after-optimization/",
+   "source": "colobu",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PostgreSQL与MySQL的JSON类型及Go语言处理",
+   "url": "https://colobu.com/2026/09/09/postgresql-mysql-json-types-go/",
+   "source": "colobu",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MySQL 和 PostgreSQL 中的时间戳：Go 和 Java 访问时的坑",
+   "url": "https://colobu.com/2026/09/05/mysql-postgresql-timestamp-go-java-pitfalls/",
+   "source": "colobu",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "如果你不能外包你的理解，你咋掌控AI写的那一大坨代码",
+   "url": "https://colobu.com/2026/09/05/control-ai-code-without-outsourcing-understanding/",
+   "source": "colobu",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "都不 code review 了， AI coding Agent 生成的垃圾代码怎么办？",
+   "url": "https://colobu.com/2026/08/27/no-code-review-ai-generated-garbage-code/",
+   "source": "colobu",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "测试最新的几个大模型创建五子棋游戏",
+   "url": "https://colobu.com/2026/08/03/testing-latest-llms-gomoku-game/",
+   "source": "colobu",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "使用 Go 语言开发Pi coding agent, 以AI自主的方式",
+   "url": "https://colobu.com/2026/08/01/build-pi-coding-agent-go-autonomous/",
+   "source": "colobu",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Graph Engineering：从Loop到Graph，以及 graph skill 的一次真实实践",
+   "url": "https://colobu.com/2026/07/22/graph-engineering-from-loop-to-graph/",
+   "source": "colobu",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "四个流行的需求规划 Skill 的功能对比",
+   "url": "https://colobu.com/2026/07/16/four-requirement-planning-skills-comparison/",
+   "source": "colobu",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Matt Pocock 的工作流：从一个模糊想法到可交付代码",
+   "url": "https://colobu.com/2026/07/16/matt-pocock-workflow-vague-idea-to-code/",
+   "source": "colobu",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "循环入门",
+   "url": "https://colobu.com/2026/07/09/claude-code-loop-design-primer/",
+   "source": "colobu",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a Storybook-like demo browser with web components — a much simpler way to get most of the benefits",
+   "url": "http://component.kitchen/blog/posts/building-a-storybook-like-demo-browser-with-web-components-a-much-simpler-way-to-get-most-of-the-benefits",
+   "source": "component",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unsurprising code and magic — optimizing for the first time vs the nth time",
+   "url": "http://component.kitchen/blog/posts/unsurprising-code-and-magic-optimizing-for-the-first-time-vs-the-nth-time",
+   "source": "component",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Supporting both automatic and manual registration of custom elements",
+   "url": "http://component.kitchen/blog/posts/supporting-both-automatic-and-manual-registration-of-custom-elements",
+   "source": "component",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hiding internal framework methods and properties from web component APIs",
+   "url": "http://component.kitchen/blog/posts/hiding-internal-framework-methods-and-properties-from-web-component-apis",
+   "source": "component",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Should the Elix project maintain React versions of its general-purpose UI components?",
+   "url": "http://component.kitchen/blog/posts/should-the-elix-project-maintain-react-versions-of-its-general-purpose-ui-components",
+   "source": "component",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A simple state-based recalc engine for web components",
+   "url": "http://component.kitchen/blog/posts/a-simple-state-based-recalc-engine-for-web-components",
+   "source": "component",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A history of the HTML slot element",
+   "url": "http://component.kitchen/blog/posts/a-history-of-the-html-slot-element",
+   "source": "component",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a great combo box component is so much trickier than you'd think",
+   "url": "http://component.kitchen/blog/posts/building-a-great-combo-box-component-is-so-much-trickier-than-youd-think",
+   "source": "component",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a great menu component is so much trickier than you'd think",
+   "url": "http://component.kitchen/blog/posts/building-a-great-menu-component-is-so-much-trickier-than-youd-think",
+   "source": "component",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating software in 2028 is so amazing now that we build with reusable UI components!",
+   "url": "http://component.kitchen/blog/posts/creating-software-in-2028-is-so-amazing-now-that-we-build-with-reusable-ui-components",
+   "source": "component",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using JavaScript template literals with JSX for server-side rendering",
+   "url": "http://component.kitchen/blog/posts/using-javascript-template-literals-with-jsx-for-server-side-rendering",
+   "source": "component",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elix v2.0 released with support for extensively customizable components",
+   "url": "http://component.kitchen/blog/posts/elix-v20-released-with-support-for-extensively-customizable-components",
+   "source": "component",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using Elix to build a small and fast native-like PWA for mobile devices",
+   "url": "http://component.kitchen/blog/posts/using-elix-to-build-a-small-and-fast-native-like-pwa-for-mobile-devices",
+   "source": "component",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Customizing custom elements with... custom elements",
+   "url": "http://component.kitchen/blog/posts/customizing-custom-elements-with-custom-elements",
+   "source": "component",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elix general-purpose web component library releases v1.0.0",
+   "url": "http://component.kitchen/blog/posts/elix-general-purpose-web-component-library-releases-v100",
+   "source": "component",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -17941,6 +19801,86 @@
    "title": "WordPress Maintenance Cost: What You Actually Pay",
    "url": "https://createaprowebsite.com/wordpress-maintenance-cost/",
    "source": "createaprowebsite",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughts on code reviews",
+   "url": "http://crisal.io/words/2026/08/03/code-review-thoughts.html",
+   "source": "crisal",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "XUL Layout is gone",
+   "url": "http://crisal.io/words/2023/03/30/xul-layout-is-gone.html",
+   "source": "crisal",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Developing Firefox on Windows on MSYS2 with zsh and the Windows Terminal",
+   "url": "http://crisal.io/words/2022/11/22/msys2-firefox-development.html",
+   "source": "crisal",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reproducing automation failures locally",
+   "url": "http://crisal.io/words/2021/05/05/reproducing-automation-failures-locally.html",
+   "source": "crisal",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "More Gecko leak debugging",
+   "url": "http://crisal.io/words/2020/09/29/more-leak-debugging.html",
+   "source": "crisal",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Border rounding in CSS",
+   "url": "http://crisal.io/words/2020/06/13/rounding-borders.html",
+   "source": "crisal",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Focus changes landing in Firefox 78",
+   "url": "http://crisal.io/words/2020/05/17/focus-changes.html",
+   "source": "crisal",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "FFI patterns #1 - Complex Rust data structures exposed seamlessly to C++",
+   "url": "http://crisal.io/words/2020/02/28/C++-rust-ffi-patterns-1-complex-data-structures.html",
+   "source": "crisal",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hunting an intermittent leak until shutdown.",
+   "url": "http://crisal.io/words/2019/11/13/shutdown-leak-hunting.html",
+   "source": "crisal",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "More Reference Browser debugging fun.",
+   "url": "http://crisal.io/words/2019/08/08/more-geckoview-debugging-fun.html",
+   "source": "crisal",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -51796,6 +53736,14 @@
   {
    "title": "Bill Gates Has Earned Billions Investing in Climate-Polluting Landfills, Reports ProPublica",
    "url": "https://news.slashdot.org/story/26/11/15/0957227/bill-gates-has-earned-billions-investing-in-climate-polluting-landfills-reports-propublica?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "slashdot",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Huawei Set To Challenge Tesla Powerwall with New, 20 kW Home Battery",
+   "url": "https://hardware.slashdot.org/story/26/11/15/1028237/huawei-set-to-challenge-tesla-powerwall-with-new-20-kw-home-battery?utm_source=rss1.0mainlinkanon&utm_medium=feed",
    "source": "slashdot",
    "rank": 1,
    "score": 15,
