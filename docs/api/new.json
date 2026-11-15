@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-15T20:39:44.574936+00:00",
+ "generated_at": "2026-11-15T20:44:15.439940+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 20575,
- "new_items": 20448,
+ "total_items": 20618,
+ "new_items": 20491,
  "by_source": {
-  "show_hn": 51,
+  "show_hn": 52,
   "producthunt": 45,
   "hackernews": 39,
   "reddit": 32,
@@ -21,6 +21,7 @@
   "kooslooijesteijn": 16,
   "lemmy": 16,
   "robinrendle": 16,
+  "rprogramming": 16,
   "smitop": 16,
   "0xadada": 15,
   "100r": 15,
@@ -518,6 +519,7 @@
   "lihautan": 15,
   "linghao": 15,
   "lisilinhart": 15,
+  "lobsters": 15,
   "localghost": 15,
   "localizely": 15,
   "loige": 15,
@@ -599,6 +601,7 @@
   "neo4j": 15,
   "neopythonicblogspot": 15,
   "netmeister": 15,
+  "neverworkintheory": 15,
   "newsletterpragmaticengineer": 15,
   "newsmit": 15,
   "ngrmr": 15,
@@ -709,7 +712,6 @@
   "robinwieruch": 15,
   "romainguy": 15,
   "romaricpascal": 15,
-  "rprogramming": 15,
   "rpython": 15,
   "rtechnology": 15,
   "rtpg": 15,
@@ -893,7 +895,6 @@
   "fotis": 14,
   "gwern": 14,
   "lit": 14,
-  "lobsters": 14,
   "mpatacchiolagithub": 14,
   "orlp": 14,
   "pepelsbey": 14,
@@ -950,8 +951,10 @@
   "funwithforms": 11,
   "geoffreylitt": 11,
   "iainbean": 11,
+  "itnext": 11,
   "jjenzz": 11,
   "lethain": 11,
+  "spinellis": 11,
   "thenextweb": 11,
   "wattenberger": 11,
   "0xdade": 10,
@@ -1213,7 +1216,6 @@
   "imperialviolet": 10,
   "imtx": 10,
   "insidegovukbloggov": 10,
-  "itnext": 10,
   "itsecurityguru": 10,
   "jakearchibald": 10,
   "jakelazaroff": 10,
@@ -1515,6 +1517,7 @@
   "meta_eng": 9,
   "nateberkopec": 9,
   "pmdartus": 9,
+  "softwareprocesses": 9,
   "susam": 9,
   "timtech": 9,
   "blogchriszacharias": 8,
@@ -1545,6 +1548,7 @@
   "themodernlifegithub": 7,
   "webaxe": 7,
   "aerotwist": 6,
+  "ask_hn": 6,
   "blogsensible": 6,
   "charlottedann": 6,
   "frankforce": 6,
@@ -1562,7 +1566,6 @@
   "accessibilitybloggov": 5,
   "andybellco": 5,
   "archivejlongster": 5,
-  "ask_hn": 5,
   "bendersky": 5,
   "blogarkency": 5,
   "blogchristianposta": 5,
@@ -1631,6 +1634,7 @@
   "fathy": 2,
   "igor": 2,
   "josephscott": 2,
+  "kaggarwal": 2,
   "lukechannings": 2,
   "nlpfast": 2,
   "phabricatorwikimedia": 2,
@@ -1642,6 +1646,7 @@
   "roytang": 1,
   "sebastiangreger": 1,
   "simplified": 1,
+  "thoughtsofmei": 1,
   "uncaughtreferenceerror": 1,
   "unixdigest": 1
  },
@@ -13236,6 +13241,14 @@
    "source": "ask_hn",
    "rank": 11,
    "score": 5,
+   "metric": "points"
+  },
+  {
+   "title": "Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence",
+   "url": "https://news.ycombinator.com/item?id=50510042",
+   "source": "ask_hn",
+   "rank": 11,
+   "score": 4,
    "metric": "points"
   },
   {
@@ -79583,6 +79596,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Your AI agent writes frontend code like it’s 2015. Chrome has a fix for that",
+   "url": "https://itnext.io/your-ai-agent-writes-frontend-code-like-its-2015-chrome-has-a-fix-for-that-8dad089d68ab?source=rss----5b301f10ddcd---4",
+   "source": "itnext",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
    "title": "Building a Lightweight Kubernetes Environment on K3s and the kubectl command on WSL2 Windows 11",
    "url": "https://itnext.io/building-a-lightweight-kubernetes-environment-on-k3s-and-the-kubectl-command-on-wsl2-windows-11-e2b2ca3af082?source=rss----5b301f10ddcd---4",
    "source": "itnext",
@@ -87463,6 +87484,22 @@
    "metric": "feed rank"
   },
   {
+   "title": "MSR presentation",
+   "url": "http://kaggarwal32.blogspot.com/2014/05/blog-post.html",
+   "source": "kaggarwal",
+   "rank": 1,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Power of System Call Traces: Predicting the Software Energy Consumption Impact of Changes",
+   "url": "http://kaggarwal32.blogspot.com/2014/05/this-blog-post-is-from-work-thepower-of.html",
+   "source": "kaggarwal",
+   "rank": 2,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Meet Kai Merchant at AfricaCom 2026",
    "url": "https://kaiostech.com/meet-kai-merchant-africacom-2026/",
    "source": "kaiostech",
@@ -93932,6 +93969,14 @@
    "source": "lobsters",
    "rank": 13,
    "score": 2,
+   "metric": "score"
+  },
+  {
+   "title": "Blog: Preventing Cross-Service UDP Loops in QUIC",
+   "url": "https://bughunters.google.com/blog/preventing-cross-service-udp-loops-in-quic",
+   "source": "lobsters",
+   "rank": 13,
+   "score": 1,
    "metric": "score"
   },
   {
@@ -109203,6 +109248,126 @@
    "url": "/f15-se2/2025/01/09/start-runs.html",
    "source": "neuviemeportegithub",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Retrospective",
+   "url": "https://neverworkintheory.org/2024/03/21/retrospective.html",
+   "source": "neverworkintheory",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shurui Zhou on Sustainability of Open Source Scientific Software",
+   "url": "https://neverworkintheory.org/2023/06/13/zhou-shurui.html",
+   "source": "neverworkintheory",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Andreas Zeller on Creating Nasty Test Inputs",
+   "url": "https://neverworkintheory.org/2023/06/13/zeller-andreas.html",
+   "source": "neverworkintheory",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ethel Tshukudu on Conceptual Transfer in Students Learning New Programming Languages",
+   "url": "https://neverworkintheory.org/2023/06/13/tshukudu-ethel.html",
+   "source": "neverworkintheory",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Allison Sullivan on the Benefits of Unit Tests for Software Models",
+   "url": "https://neverworkintheory.org/2023/06/13/sullivan-allison.html",
+   "source": "neverworkintheory",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Alexander Serebrenik on Employability and Experiences of Older Developers",
+   "url": "https://neverworkintheory.org/2023/06/13/serebrenik-alexander.html",
+   "source": "neverworkintheory",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kai Presler-Marshall on Teaching Collaborative Skills to Undergrads",
+   "url": "https://neverworkintheory.org/2023/06/13/presler-marshall-kai.html",
+   "source": "neverworkintheory",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gustavo Pinto on Cognitive-Driven Development",
+   "url": "https://neverworkintheory.org/2023/06/13/pinto-gustavo.html",
+   "source": "neverworkintheory",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Christian Newman on Crafting Strong Identifier Naming Practices",
+   "url": "https://neverworkintheory.org/2023/06/13/newman-christian.html",
+   "source": "neverworkintheory",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ariana Mirian on Enterprise Vulnerability Remediation",
+   "url": "https://neverworkintheory.org/2023/06/13/mirian-ariana.html",
+   "source": "neverworkintheory",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lauren Margulieux on Things Software Developers Should Know About Learning",
+   "url": "https://neverworkintheory.org/2023/06/13/margulieux-lauren.html",
+   "source": "neverworkintheory",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sherlock Licorish on Using Genetic Improvement to Enhance Code Snippets",
+   "url": "https://neverworkintheory.org/2023/06/13/licorish-sherlock.html",
+   "source": "neverworkintheory",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Carol Lee on Developer Thriving",
+   "url": "https://neverworkintheory.org/2023/06/13/lee-carol.html",
+   "source": "neverworkintheory",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thomas LaToza on Programming Strategically",
+   "url": "https://neverworkintheory.org/2023/06/13/latoza-thomas.html",
+   "source": "neverworkintheory",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Raula Kula on What We Know About Libraries and Their Dependencies",
+   "url": "https://neverworkintheory.org/2023/06/13/kula-raula.html",
+   "source": "neverworkintheory",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -130615,6 +130780,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "How Playboy’s Miss November 1972 Helped Create the JPEG (unpaywalled)",
+   "url": "https://www.reddit.com/r/programming/comments/1xx65wp/how_playboys_miss_november_1972_helped_create_the/",
+   "source": "rprogramming",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
    "title": "Understanding Go: inside PGO",
    "url": "https://www.reddit.com/r/programming/comments/1xwz44b/understanding_go_inside_pgo/",
    "source": "rprogramming",
@@ -137135,6 +137308,14 @@
    "metric": "points"
   },
   {
+   "title": "Show HN: Perfectclone – Yoink the source code of any website, not an AI clone",
+   "url": "https://github.com/eshaangulati123/perfectclone",
+   "source": "show_hn",
+   "rank": 12,
+   "score": 2,
+   "metric": "points"
+  },
+  {
    "title": "CyberClip #66 个人成长",
    "url": "https://shyrz.me/cyberclip-66-personal-growth/",
    "source": "shyrz",
@@ -140847,6 +141028,78 @@
    "metric": "feed rank"
   },
   {
+   "title": "Software Science and Empirical Software Engineering",
+   "url": "http://softwareprocess.es/blog/blog/2018/06/18/software-science-and-empirical-software-engineering/",
+   "source": "softwareprocesses",
+   "rank": 1,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "More Sabbatical Thoughts",
+   "url": "http://softwareprocess.es/blog/blog/2017/12/18/more-sabbatical-thoughts/",
+   "source": "softwareprocesses",
+   "rank": 2,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Analyzing the Effects of Test Driven Development in GitHub",
+   "url": "http://softwareprocess.es/blog/blog/2017/11/27/analyzing-the-effects-of-test-driven-development-in-github/",
+   "source": "softwareprocesses",
+   "rank": 3,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "They Gave Me Tenure. Or You're Stuck With Me Now.",
+   "url": "http://softwareprocess.es/blog/blog/2017/11/26/they-gave-me-tenure/",
+   "source": "softwareprocesses",
+   "rank": 4,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deep Learning Bitmaps to PCM",
+   "url": "http://softwareprocess.es/blog/blog/2015/08/11/deep-learning-bitmaps-to-pcm/",
+   "source": "softwareprocesses",
+   "rank": 5,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Youtube and Content ID",
+   "url": "http://softwareprocess.es/blog/blog/2014/04/15/youtube-and-content-id/",
+   "source": "softwareprocesses",
+   "rank": 6,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Updates -- 2013 in Review",
+   "url": "http://softwareprocess.es/blog/blog/2014/03/03/updates/",
+   "source": "softwareprocesses",
+   "rank": 7,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An Attempt at a Video Lecture",
+   "url": "http://softwareprocess.es/blog/blog/2012/09/21/an-attempt-at-a-video-lecture/",
+   "source": "softwareprocesses",
+   "rank": 8,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SWARMED",
+   "url": "http://softwareprocess.es/blog/blog/2012/06/23/swarmed/",
+   "source": "softwareprocesses",
+   "rank": 9,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Designing an Autonomous Development Team",
    "url": "https://sookocheff.com/post/ai/designing-an-autonomous-development-team/",
    "source": "sookocheff",
@@ -141603,6 +141856,94 @@
    "url": "https://spin.atomicobject.com/legacy-system-migration-ai/",
    "source": "spinatomicobject",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thinking will become a hobby",
+   "url": "https://www.spinellis.gr/blog/20261008",
+   "source": "spinellis",
+   "rank": 1,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A controversial proposal for hallucinated references",
+   "url": "https://www.spinellis.gr/blog/20260817",
+   "source": "spinellis",
+   "rank": 2,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Blockchain technology in 500 simple words",
+   "url": "https://www.spinellis.gr/blog/20260803",
+   "source": "spinellis",
+   "rank": 3,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Barings, Boeing, and Bots",
+   "url": "https://www.spinellis.gr/blog/20260715",
+   "source": "spinellis",
+   "rank": 4,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why agentic AI needs better experts",
+   "url": "https://www.spinellis.gr/blog/20260708",
+   "source": "spinellis",
+   "rank": 5,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Documenting AI-generated code commits",
+   "url": "https://www.spinellis.gr/blog/20260702",
+   "source": "spinellis",
+   "rank": 6,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why reviewing AI-generated code is devilishly hard",
+   "url": "https://www.spinellis.gr/blog/20260523",
+   "source": "spinellis",
+   "rank": 7,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Empirical software research in the age of AI",
+   "url": "https://www.spinellis.gr/blog/20260413",
+   "source": "spinellis",
+   "rank": 8,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vibe coding toward the incident horizon",
+   "url": "https://www.spinellis.gr/blog/20260302",
+   "source": "spinellis",
+   "rank": 9,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An initial analysis of the discovered Unix V4 tape",
+   "url": "https://www.spinellis.gr/blog/20251223",
+   "source": "spinellis",
+   "rank": 10,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I choose email over messaging",
+   "url": "https://www.spinellis.gr/blog/20250926",
+   "source": "spinellis",
+   "rank": 11,
    "score": 1,
    "metric": "feed rank"
   },
@@ -151187,6 +151528,14 @@
    "url": "http://thorstenball.com/blog/2017/01/16/what-i-didnt-do-to-write-a-book/",
    "source": "thorstenball",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Birds of a feather: Reviewing SE research papers",
+   "url": "http://thoughtsofmei.blogspot.com/2020/07/birds-of-feather-reviewing-se-research.html",
+   "source": "thoughtsofmei",
+   "rank": 1,
    "score": 1,
    "metric": "feed rank"
   },
