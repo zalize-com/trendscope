@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-11-15T17:16:33.229794+00:00",
+ "generated_at": "2026-11-15T17:18:47.087956+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 5779,
- "new_items": 5653,
+ "total_items": 6013,
+ "new_items": 5887,
  "by_source": {
   "producthunt": 45,
   "show_hn": 40,
   "hackernews": 31,
   "theregister": 29,
-  "techmeme": 22,
+  "techmeme": 23,
   "slashdot": 19,
   "daringfireball": 17,
   "thenewstack": 17,
@@ -236,9 +236,17 @@
   "robinrendle": 15,
   "sanglard": 15,
   "seangoedecke": 15,
+  "seattledataguysubstack": 15,
+  "sebgnotessubstack": 15,
   "shkspr": 15,
+  "shortdiv": 15,
+  "signal": 15,
   "simonw": 15,
   "simplebits": 15,
+  "sindresorhus": 15,
+  "slottsoftwarearchitectblogspot": 15,
+  "smallcultfollowing": 15,
+  "snarky": 15,
   "soblog": 15,
   "steveblank": 15,
   "stevekrouse": 15,
@@ -258,6 +266,7 @@
   "orlp": 14,
   "architectelevator": 13,
   "fogus": 13,
+  "rosenzweig": 13,
   "wcedmisten": 13,
   "aphyr": 12,
   "baeldung": 12,
@@ -399,7 +408,15 @@
   "researchfb": 10,
   "responsivenewsco": 10,
   "rmurphey": 10,
+  "robertheaton": 10,
+  "rubyonrails": 10,
+  "rushter": 10,
   "schneems": 10,
+  "serokell": 10,
+  "sidsite": 10,
+  "sizovs": 10,
+  "smallsheds": 10,
+  "sneak": 10,
   "stratechery": 10,
   "stripe": 10,
   "stubbornella": 10,
@@ -420,9 +437,11 @@
   "hackaday": 8,
   "kellysutton": 8,
   "nullprogram": 8,
+  "samwooe": 8,
   "slack_eng": 8,
   "forweb": 7,
   "mangopdf": 7,
+  "scriptsdotchatwordpress": 7,
   "aerotwist": 6,
   "frankforce": 6,
   "kpqgithub": 6,
@@ -435,6 +454,7 @@
   "ferd": 5,
   "fetchrss": 5,
   "martialtesterwordpress": 5,
+  "sethmlarson": 5,
   "github_trending": 4,
   "javascriptweekly": 4,
   "thisweek": 4,
@@ -40905,6 +40925,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "diceomatic: a DSL for making children's dice games",
+   "url": "https://robertheaton.com/diceomatic/",
+   "source": "robertheaton",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MinorMiner: we turn your kid's maths homework into Bitcoin",
+   "url": "https://robertheaton.com/minor-miner/",
+   "source": "robertheaton",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "It's not cheating if you write the video game solver yourself",
+   "url": "https://robertheaton.com/cocoon/",
+   "source": "robertheaton",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PyMyFlySpy: track your flight using its headrest data",
+   "url": "https://robertheaton.com/pymyflyspy/",
+   "source": "robertheaton",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generating infinite, age-appropriate Cat Crimes puzzles",
+   "url": "https://robertheaton.com/cat-crimes/",
+   "source": "robertheaton",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PySkyWiFi: completely free, unbelievably stupid wi-fi on long-haul flights",
+   "url": "https://robertheaton.com/pyskywifi/",
+   "source": "robertheaton",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I've written a book about being a dad; now I want to get it published",
+   "url": "https://robertheaton.com/book-draft-finished/",
+   "source": "robertheaton",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thousands of elderly twins assure me that my kids will be alright",
+   "url": "https://robertheaton.com/twins/",
+   "source": "robertheaton",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hello Deep Learning",
+   "url": "https://robertheaton.com/hello-deep-learning/",
+   "source": "robertheaton",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to pass a coding interview with me",
+   "url": "https://robertheaton.com/interview/",
+   "source": "robertheaton",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "The Notebook",
    "url": "https://robinrendle.com/notes/the-notebook/",
    "source": "robinrendle",
@@ -41025,10 +41125,274 @@
    "metric": "feed rank"
   },
   {
+   "title": "Dissecting the Apple M1 GPU, the end",
+   "url": "https://alyssarosenzweig.ca/blog/asahi-gpu-part-n.html",
+   "source": "rosenzweig",
+   "rank": 1,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vulkan 1.4 sur Asahi Linux",
+   "url": "https://alyssarosenzweig.ca/blog/vulkan-14-sur-asahi-linux.html",
+   "source": "rosenzweig",
+   "rank": 2,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AAA gaming on Asahi Linux",
+   "url": "https://alyssarosenzweig.ca/blog/aaa-gaming-on-m1.html",
+   "source": "rosenzweig",
+   "rank": 3,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vulkan 1.3 on the M1 in 1 month",
+   "url": "https://alyssarosenzweig.ca/blog/vk13-on-the-m1-in-1-month.html",
+   "source": "rosenzweig",
+   "rank": 4,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Conformant OpenGL 4.6 on the M1",
+   "url": "https://alyssarosenzweig.ca/blog/conformant-gl46-on-the-m1.html",
+   "source": "rosenzweig",
+   "rank": 5,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The first conformant M1 GPU driver",
+   "url": "https://alyssarosenzweig.ca/blog/first-conformant-m1-gpu-driver.html",
+   "source": "rosenzweig",
+   "rank": 6,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "OpenGL 3.1 on Asahi Linux",
+   "url": "https://alyssarosenzweig.ca/blog/opengl3-on-asahi-linux.html",
+   "source": "rosenzweig",
+   "rank": 7,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Passing the reins on Panfrost",
+   "url": "https://alyssarosenzweig.ca/blog/passing-reins-panfrost.html",
+   "source": "rosenzweig",
+   "rank": 8,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple GPU drivers now in Asahi Linux",
+   "url": "https://alyssarosenzweig.ca/blog/asahi-gpu-part-7.html",
+   "source": "rosenzweig",
+   "rank": 9,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Clip control on the Apple GPU",
+   "url": "https://alyssarosenzweig.ca/blog/asahi-gpu-part-6.html",
+   "source": "rosenzweig",
+   "rank": 10,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Apple GPU and the Impossible Bug",
+   "url": "https://alyssarosenzweig.ca/blog/asahi-gpu-part-5.html",
+   "source": "rosenzweig",
+   "rank": 11,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fun and Games with Exposure Notifications",
+   "url": "https://alyssarosenzweig.ca/blog/fun-and-games-with-exposure-notifications.html",
+   "source": "rosenzweig",
+   "rank": 12,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hilariously Fast Volume Computation with the Divergence Theorem",
+   "url": "https://alyssarosenzweig.ca/blog/hilariously-fast-volume-computation-with-the-divergence-theorem.html",
+   "source": "rosenzweig",
+   "rank": 13,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "This feed is deprecated.",
    "url": "https://roytang.net/",
    "source": "roytang",
    "rank": 1,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Rails — Marco Roth: Teaching Rails to Read Its Own Template",
+   "url": "https://rubyonrails.org/2026/11/13/on-rails-marco-roth-herb-reaction-view",
+   "source": "rubyonrails",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hotwire guide and more",
+   "url": "https://rubyonrails.org/2026/11/13/this-week-in-rails",
+   "source": "rubyonrails",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "This Week in Rails: November 6, 2026",
+   "url": "https://rubyonrails.org/2026/11/6/this-week-in-rails",
+   "source": "rubyonrails",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rails Versions 8.0.5.2 and 8.1.4.1 have been released!",
+   "url": "https://rubyonrails.org/2026/11/4/Rails-8.0.5.2-and-8.1.4.1-have-been-released",
+   "source": "rubyonrails",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "No tricks, just treats",
+   "url": "https://rubyonrails.org/2026/10/30/this-week-in-rails",
+   "source": "rubyonrails",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Safer secrets, ZJIT, and more!",
+   "url": "https://rubyonrails.org/2026/10/23/this-week-in-rails",
+   "source": "rubyonrails",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Rails — Hussain Akram &amp; Antonio Carlos de Souza: Rails Scales for the Rest of Us",
+   "url": "https://rubyonrails.org/2026/10/22/on-rails-hussain-akram-and-antonio-carlos-de-souza-donorbox",
+   "source": "rubyonrails",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Faster blank? checks, safer SQLite rollbacks, and more!",
+   "url": "https://rubyonrails.org/2026/10/16/this-week-in-rails",
+   "source": "rubyonrails",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Agents on Rails: Stage 3. Can a model build on its own work?",
+   "url": "https://rubyonrails.org/2026/10/13/agents-on-rails-stage-3",
+   "source": "rubyonrails",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Better ACL S3 control and more",
+   "url": "https://rubyonrails.org/2026/10/9/this-week-in-rails",
+   "source": "rubyonrails",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The future of the internet could be paywalls",
+   "url": "https://rushter.com/blog/slop-communications/",
+   "source": "rushter",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python's binary wheels and supply chain attacks",
+   "url": "https://rushter.com/blog/python-binary-wheels/",
+   "source": "rushter",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Real attackers don't think in bug bounty scopes",
+   "url": "https://rushter.com/blog/security-bb-and-scopes/",
+   "source": "rushter",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Astroturfing on Reddit and the dead internet",
+   "url": "https://rushter.com/blog/astroturfing/",
+   "source": "rushter",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing arenas in Rust from scratch",
+   "url": "https://rushter.com/blog/rust-memory-arenas/",
+   "source": "rushter",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Domain registration information should be transparent",
+   "url": "https://rushter.com/blog/domain-whois-information/",
+   "source": "rushter",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hexora v0.3: New features and improvements",
+   "url": "https://rushter.com/blog/hexora-update/",
+   "source": "rushter",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using local ClickHouse for data processing",
+   "url": "https://rushter.com/blog/clickhouse-data-processing/",
+   "source": "rushter",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NULLs in ClickHouse can hurt performance",
+   "url": "https://rushter.com/blog/clickhouse-nulls/",
+   "source": "rushter",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PyPI packages are increasing rapidly",
+   "url": "https://rushter.com/blog/pypi-packages/",
+   "source": "rushter",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -41077,6 +41441,70 @@
    "url": "https://samwho.dev/bloom-filters/",
    "source": "samwho",
    "rank": 6,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sept 2025 Notebook",
+   "url": "https://samwooe.com/sept-2025-notebook",
+   "source": "samwooe",
+   "rank": 1,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "March 2025 notebook",
+   "url": "https://samwooe.com/march-2025-notebook",
+   "source": "samwooe",
+   "rank": 2,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "February 2025 notebook",
+   "url": "https://samwooe.com/february-2025-notebook",
+   "source": "samwooe",
+   "rank": 3,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "January 2025 notebook",
+   "url": "https://samwooe.com/january-2025-notebook",
+   "source": "samwooe",
+   "rank": 4,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lockheed Martin Apparel / Korea",
+   "url": "https://samwooe.com/lockheed-martin-apparel-korea",
+   "source": "samwooe",
+   "rank": 5,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NewJeans – Cool With You",
+   "url": "https://samwooe.com/newjeans-cool-with-you",
+   "source": "samwooe",
+   "rank": 6,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Spotify + Patreon",
+   "url": "https://samwooe.com/spotify-patreon",
+   "source": "samwooe",
+   "rank": 7,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bitwig Interface",
+   "url": "https://samwooe.com/bitwig-interface",
+   "source": "samwooe",
+   "rank": 8,
    "score": 1,
    "metric": "feed rank"
   },
@@ -41281,6 +41709,62 @@
    "metric": "feed rank"
   },
   {
+   "title": "Moving To Linux",
+   "url": "https://scripts.chat/2020/11/07/moving-to-linux/",
+   "source": "scriptsdotchatwordpress",
+   "rank": 1,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "for loop & JavaScript",
+   "url": "https://scripts.chat/2020/09/23/for-loop-javascript/",
+   "source": "scriptsdotchatwordpress",
+   "rank": 2,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React Unit-testing – Finding DOM Elements",
+   "url": "https://scripts.chat/2020/05/26/react-unit-testing-finding-dom-elements/",
+   "source": "scriptsdotchatwordpress",
+   "rank": 3,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vim for JavaScript Developers",
+   "url": "https://scripts.chat/2020/05/03/vim-for-javascript-developers/",
+   "source": "scriptsdotchatwordpress",
+   "rank": 4,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Atom for React & JavaScript Developers – 2020",
+   "url": "https://scripts.chat/2020/05/01/atom-for-react-javascript-developers-2020/",
+   "source": "scriptsdotchatwordpress",
+   "rank": 5,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Equality Gotchas – JavaScript",
+   "url": "https://scripts.chat/2016/07/10/javascript-type-coercion-vs/",
+   "source": "scriptsdotchatwordpress",
+   "rank": 6,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JavaScript – Data Types",
+   "url": "https://scripts.chat/2016/07/10/javascript-data-types/",
+   "source": "scriptsdotchatwordpress",
+   "rank": 7,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "How to find meaning in large tech companies",
    "url": "https://seangoedecke.com/how-to-find-meaning-in-large-tech-companies/",
    "source": "seangoedecke",
@@ -41401,6 +41885,366 @@
    "metric": "feed rank"
   },
   {
+   "title": "What’s Going To Matter In 2027 For Data Engineers?",
+   "url": "https://seattledataguy.substack.com/p/whats-going-to-matter-in-2027-for",
+   "source": "seattledataguysubstack",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Are Data Teams Solving the Right Problems?",
+   "url": "https://seattledataguy.substack.com/p/are-data-teams-solving-the-right",
+   "source": "seattledataguysubstack",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Do You Actually Need Real-Time Data?",
+   "url": "https://seattledataguy.substack.com/p/do-you-actually-need-real-time-data",
+   "source": "seattledataguysubstack",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Engineers Are Obsessed With The How And Often Forget Why?",
+   "url": "https://seattledataguy.substack.com/p/engineers-are-obsessed-with-the-how",
+   "source": "seattledataguysubstack",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From Vibe Coding to the AI Software Factory",
+   "url": "https://seattledataguy.substack.com/p/from-vibe-coding-to-the-ai-software",
+   "source": "seattledataguysubstack",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Problem With Asking Employees to “Take Ownership”",
+   "url": "https://seattledataguy.substack.com/p/the-problem-with-asking-employees",
+   "source": "seattledataguysubstack",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your Data Warehouse Isn’t Integrated Just Because the Tables Are in One Place",
+   "url": "https://seattledataguy.substack.com/p/your-data-warehouse-isnt-integrated",
+   "source": "seattledataguysubstack",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Forward Deployed Engineering Is About To Get Diluted",
+   "url": "https://seattledataguy.substack.com/p/forward-deployed-engineering-is-about",
+   "source": "seattledataguysubstack",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In 2026 The Data Fundamentals Matter More Than Ever",
+   "url": "https://seattledataguy.substack.com/p/in-2026-the-data-fundamentals-matter",
+   "source": "seattledataguysubstack",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "If AI Can Replace Workers, Why Is It Hiring Consultants?",
+   "url": "https://seattledataguy.substack.com/p/if-ai-can-replace-workers-why-is",
+   "source": "seattledataguysubstack",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Leading a Data Team Actually Looks Like Right Now",
+   "url": "https://seattledataguy.substack.com/p/what-leading-a-data-team-actually",
+   "source": "seattledataguysubstack",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The 5 Silent Failures in Data Pipelines",
+   "url": "https://seattledataguy.substack.com/p/the-5-silent-failures-in-data-pipelines",
+   "source": "seattledataguysubstack",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Data Pipeline Foundations - Everything You Need To Know About Data Pipelines",
+   "url": "https://seattledataguy.substack.com/p/data-pipeline-foundations-everything",
+   "source": "seattledataguysubstack",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Daily Tasks With Data Pipelines - Data Quality Checks And The Problem With Noisy Checks",
+   "url": "https://seattledataguy.substack.com/p/daily-tasks-with-data-pipelines-data",
+   "source": "seattledataguysubstack",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You Will Know Nothing And Be Happy",
+   "url": "https://seattledataguy.substack.com/p/you-will-know-nothing-and-be-happy",
+   "source": "seattledataguysubstack",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Friday Finds Post, 2025-06-06",
+   "url": "https://sebgnotes.substack.com/p/friday-finds-post-2025-06-06",
+   "source": "sebgnotessubstack",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thought you might find this interesting",
+   "url": "https://sebgnotes.substack.com/p/thought-you-might-find-this-interesting-6b2",
+   "source": "sebgnotessubstack",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thought you might find this interesting",
+   "url": "https://sebgnotes.substack.com/p/thought-you-might-find-this-interesting-1c7",
+   "source": "sebgnotessubstack",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thought you might find this interesting",
+   "url": "https://sebgnotes.substack.com/p/thought-you-might-find-this-interesting",
+   "source": "sebgnotessubstack",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Friday Finds Post, 2025-04-11",
+   "url": "https://sebgnotes.substack.com/p/friday-finds-post-2025-04-11",
+   "source": "sebgnotessubstack",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Friday Finds Post, 2025-03-21",
+   "url": "https://sebgnotes.substack.com/p/friday-finds-post-2025-03-21",
+   "source": "sebgnotessubstack",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Friday Finds Post, 2025-03-14",
+   "url": "https://sebgnotes.substack.com/p/friday-finds-post-2025-03-14",
+   "source": "sebgnotessubstack",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Friday Finds Post, 2025-03-07",
+   "url": "https://sebgnotes.substack.com/p/friday-finds-post-2025-03-07",
+   "source": "sebgnotessubstack",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Friday Finds Post, 2025-02-28",
+   "url": "https://sebgnotes.substack.com/p/friday-finds-post-2025-02-28",
+   "source": "sebgnotessubstack",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Poll - what day do you want to hear from me?",
+   "url": "https://sebgnotes.substack.com/p/poll-what-day-do-you-want-to-hear",
+   "source": "sebgnotessubstack",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Poll - newsletter post frequency",
+   "url": "https://sebgnotes.substack.com/p/poll-newsletter-post-frequency",
+   "source": "sebgnotessubstack",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Poll - what else would you like to see?",
+   "url": "https://sebgnotes.substack.com/p/poll-what-else-would-you-like-to",
+   "source": "sebgnotessubstack",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Task Tracking: The Missing Infrastructure for AI Agent Systems",
+   "url": "https://sebgnotes.substack.com/p/task-tracking-the-missing-infrastructure",
+   "source": "sebgnotessubstack",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Qodo Merge 1.0: The Evolution of AI Code Review",
+   "url": "https://sebgnotes.substack.com/p/qodo-merge-10-the-evolution-of-ai",
+   "source": "sebgnotessubstack",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Multi-Agent Design: Applying Human Organization Principles to AI Systems",
+   "url": "https://sebgnotes.substack.com/p/multi-agent-design-applying-human",
+   "source": "sebgnotessubstack",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bringing Rust into Ubuntu at Scale: Interview with Jon Seager",
+   "url": "https://serokell.io/blog/ubuntu-rust-coreutils-jon-seager",
+   "source": "serokell",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fund the Products, Not the Foundation",
+   "url": "https://serokell.io/blog/funding-haskell-upstream",
+   "source": "serokell",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "deploy-rs in 2026: reviving our Nix deployment tool",
+   "url": "https://serokell.io/blog/deploy-rs-nix",
+   "source": "serokell",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Anthropic's AI Proofs Mean for Formal Verification",
+   "url": "https://serokell.io/blog/claude-formal-verification",
+   "source": "serokell",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Contributions to GHC",
+   "url": "https://serokell.io/blog/ai-contributions-to-ghc",
+   "source": "serokell",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Hidden Challenges of Rust Infrastructure: Interview with Marco Ieni",
+   "url": "https://serokell.io/blog/the-hidden-challenges-of-rust-infrastructure-interview-with-marco-ieni",
+   "source": "serokell",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Teaching Haskell in the Age of LLMs, Part 1: Ban or Embrace?",
+   "url": "https://serokell.io/blog/teaching-haskell-in-the-age-of-llms",
+   "source": "serokell",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How We Use Claude Code at Serokell",
+   "url": "https://serokell.io/blog/how-we-use-claude-code-at-serokell",
+   "source": "serokell",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Haskell Certification Program: What We Built and Why We’re Stepping Back | Serokell",
+   "url": "https://serokell.io/blog/sunsetting-the-haskell-certification-program",
+   "source": "serokell",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Solana Chose Rust: Greg Fitzgerald on Haskell & Systems | Serokell",
+   "url": "https://serokell.io/blog/rust-haskell-and-the-architecture-behind-solana-interview-with-greg-fitzgerald",
+   "source": "serokell",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating for yourself",
+   "url": "https://sethmlarson.dev/creating-for-yourself?utm_campaign=rss",
+   "source": "sethmlarson",
+   "rank": 1,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Extracting Billy Hatcher “Joycarry Game” ROMs with Python",
+   "url": "https://sethmlarson.dev/extracting-billy-hatcher-joycarry-game-roms-with-python?utm_campaign=rss",
+   "source": "sethmlarson",
+   "rank": 2,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bowser’s Fury outshines Sunshine, SA2B, and Billy Hatcher",
+   "url": "https://sethmlarson.dev/bowsers-fury?utm_campaign=rss",
+   "source": "sethmlarson",
+   "rank": 3,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Documenting certificate distribution pain points for the Python ecosystem",
+   "url": "https://sethmlarson.dev/python-cert-dist-pain-points?utm_campaign=rss",
+   "source": "sethmlarson",
+   "rank": 4,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gaming’s all-digital future doesn’t include “Sonic the Hedgehog 3” and “Pikmin 2”",
+   "url": "https://sethmlarson.dev/gaming-all-digital-future-and-creative-constraint?utm_campaign=rss",
+   "source": "sethmlarson",
+   "rank": 5,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Variable Electricity Pricing - the Highs and the Lows",
    "url": "https://shkspr.mobi/blog/2026/11/variable-electricity-pricing-the-highs-and-the-lows/",
    "source": "shkspr",
@@ -41516,6 +42360,126 @@
    "title": "10 Years on Mastodon",
    "url": "https://shkspr.mobi/blog/2026/11/10-years-on-mastodon/",
    "source": "shkspr",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stealth (YC)",
+   "url": "https://shortdiv.com/work/stealth-yc/",
+   "source": "shortdiv",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "LM Studio",
+   "url": "https://shortdiv.com/work/lm-studio/",
+   "source": "shortdiv",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tero",
+   "url": "https://shortdiv.com/work/tero/",
+   "source": "shortdiv",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Keep the box, save the prompt",
+   "url": "https://shortdiv.com/posts/keep-the-box-save-the-prompt/",
+   "source": "shortdiv",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Should I use an agent?",
+   "url": "https://shortdiv.com/posts/should-i-use-an-agent/",
+   "source": "shortdiv",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The joy of being wrong",
+   "url": "https://shortdiv.com/posts/the-joy-of-being-wrong/",
+   "source": "shortdiv",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ship fast, think later",
+   "url": "https://shortdiv.com/posts/ship-fast-think-later/",
+   "source": "shortdiv",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Infra has an intent problem",
+   "url": "https://shortdiv.com/posts/infra-has-an-intent-problem/",
+   "source": "shortdiv",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Whatever you do, don't lose the plot",
+   "url": "https://shortdiv.com/posts/dont-lose-the-plot/",
+   "source": "shortdiv",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2025; Welcome Home",
+   "url": "https://shortdiv.com/posts/2025-welcome-home/",
+   "source": "shortdiv",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Infra is stacks of turtles",
+   "url": "https://shortdiv.com/posts/infra-is-stacks-of-turtles/",
+   "source": "shortdiv",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Journey to Otel Collector",
+   "url": "https://shortdiv.com/posts/the-journey-to-otel-collector/",
+   "source": "shortdiv",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You might not need an orchestrator",
+   "url": "https://shortdiv.com/posts/you-might-not-need-an-orchestrator/",
+   "source": "shortdiv",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "There's an 'A' in failure",
+   "url": "https://shortdiv.com/posts/theres-an-a-in-failure/",
+   "source": "shortdiv",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sync the local-first powerhouse",
+   "url": "https://shortdiv.com/posts/sync-the-local-first-powerhouse/",
+   "source": "shortdiv",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -41841,6 +42805,206 @@
    "metric": "points"
   },
   {
+   "title": "The apostrophe’s in the wrong place show I’m human",
+   "url": "https://sidsite.com/posts/apostrophes/",
+   "source": "sidsite",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The hierarchical highlight journalling system",
+   "url": "https://sidsite.com/posts/highlight-journalling/",
+   "source": "sidsite",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Transformer neural net learns to run Conway’s Game of Life just from examples",
+   "url": "https://sidsite.com/posts/life-transformer/",
+   "source": "sidsite",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Extracting copyrighted text from GPT",
+   "url": "https://sidsite.com/posts/copyrighted-text-gpt/",
+   "source": "sidsite",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gridnotes - an infinite 2D text editor",
+   "url": "https://sidsite.com/posts/gridnotes/",
+   "source": "sidsite",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Analyzing Data 170,000x Faster with Python",
+   "url": "https://sidsite.com/posts/python-corrset-optimization/",
+   "source": "sidsite",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visual content search over music videos - demo",
+   "url": "https://sidsite.com/posts/video-search-demo/",
+   "source": "sidsite",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prompting Improvements: 4x Accuracy in ‘The Reversal Curse’ Experiment 2",
+   "url": "https://sidsite.com/posts/reversal-curse/",
+   "source": "sidsite",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How BPE works - the tokenization algorithm used by large language models",
+   "url": "https://sidsite.com/posts/bpe/",
+   "source": "sidsite",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Measuring the learning per example, via loss diffs",
+   "url": "https://sidsite.com/posts/lpe/",
+   "source": "sidsite",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Proudly nonprofit",
+   "url": "https://signal.org/blog/proudly-nonprofit/",
+   "source": "signal",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Back to Backups: A Year in Review",
+   "url": "https://signal.org/blog/backup-improvements/",
+   "source": "signal",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Automatic Key Verification",
+   "url": "https://signal.org/blog/automatic-key-verification/",
+   "source": "signal",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "More linked devices are on the table (and the Android tablet)",
+   "url": "https://signal.org/blog/linked-devices-and-android-tablets/",
+   "source": "signal",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Label yourself",
+   "url": "https://signal.org/blog/group-member-labels/",
+   "source": "signal",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Put a pin in it",
+   "url": "https://signal.org/blog/pinned-messages/",
+   "source": "signal",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Signal Polls: Yes, no, maybe (yes!)",
+   "url": "https://signal.org/blog/polls/",
+   "source": "signal",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Signal Protocol and Post-Quantum Ratchets",
+   "url": "https://signal.org/blog/spqr/",
+   "source": "signal",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Signal Secure Backups",
+   "url": "https://signal.org/blog/introducing-secure-backups/",
+   "source": "signal",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "By Default, Signal Doesn't Recall",
+   "url": "https://signal.org/blog/signal-doesnt-recall/",
+   "source": "signal",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Synchronized Start for Linked Devices",
+   "url": "https://signal.org/blog/a-synchronized-start-for-linked-devices/",
+   "source": "signal",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Improving Private Signal Calls: Call Links & More",
+   "url": "https://signal.org/blog/call-links/",
+   "source": "signal",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Proxy Please: Help People Connect to Signal",
+   "url": "https://signal.org/blog/proxy-please/",
+   "source": "signal",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Keep your phone number private with Signal usernames",
+   "url": "https://signal.org/blog/phone-number-privacy-usernames/",
+   "source": "signal",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trend report: Use Signal",
+   "url": "https://signal.org/blog/trend-report-use-signal/",
+   "source": "signal",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "datasette-llm 0.1a11",
    "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
    "source": "simonw",
@@ -42081,6 +43245,206 @@
    "metric": "feed rank"
   },
   {
+   "title": "Bare",
+   "url": "https://sindresorhus.com/bare",
+   "source": "sindresorhus",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Super Menu",
+   "url": "https://sindresorhus.com/super-menu",
+   "source": "sindresorhus",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SOML Editor",
+   "url": "https://sindresorhus.com/soml-editor",
+   "source": "sindresorhus",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mailway",
+   "url": "https://sindresorhus.com/mailway",
+   "source": "sindresorhus",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Imago",
+   "url": "https://sindresorhus.com/imago",
+   "source": "sindresorhus",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DS_Store Inspector",
+   "url": "https://sindresorhus.com/ds-store-inspector",
+   "source": "sindresorhus",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Zone Bar",
+   "url": "https://sindresorhus.com/zone-bar",
+   "source": "sindresorhus",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Menu Drop",
+   "url": "https://sindresorhus.com/menu-drop",
+   "source": "sindresorhus",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Short Run",
+   "url": "https://sindresorhus.com/short-run",
+   "source": "sindresorhus",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simple Color Palette",
+   "url": "https://sindresorhus.com/simple-color-palette",
+   "source": "sindresorhus",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Text Lens",
+   "url": "https://sindresorhus.com/text-lens",
+   "source": "sindresorhus",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Googly Eyes",
+   "url": "https://sindresorhus.com/googly-eyes",
+   "source": "sindresorhus",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shortcutie",
+   "url": "https://sindresorhus.com/shortcutie",
+   "source": "sindresorhus",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Default Browser",
+   "url": "https://sindresorhus.com/default-browser",
+   "source": "sindresorhus",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "App Buddy",
+   "url": "https://sindresorhus.com/app-buddy",
+   "source": "sindresorhus",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Choose boring tools",
+   "url": "https://sizovs.net/boring/",
+   "source": "sizovs",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The safe box",
+   "url": "https://sizovs.net/safe/",
+   "source": "sizovs",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I ditched sprints (and regretted it)",
+   "url": "https://sizovs.net/sprints/",
+   "source": "sizovs",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A technical retrospective",
+   "url": "https://sizovs.net/tech-retro/",
+   "source": "sizovs",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Use/Reuse paradox",
+   "url": "https://sizovs.net/reuse/",
+   "source": "sizovs",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Be a good interviewer",
+   "url": "https://sizovs.net/interviewer/",
+   "source": "sizovs",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simple is not easy",
+   "url": "https://sizovs.net/simple-not-easy/",
+   "source": "sizovs",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The red line",
+   "url": "https://sizovs.net/redline/",
+   "source": "sizovs",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On working solo",
+   "url": "https://sizovs.net/solo/",
+   "source": "sizovs",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Welcome to our tech interview",
+   "url": "https://sizovs.net/welcome/",
+   "source": "sizovs",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Shipyard: How We Built Slack’s Next-Generation EC2 Platform",
    "url": "https://slack.engineering/shipyard-how-we-built-slacks-next-generation-ec2-platform/",
    "source": "slack_eng",
@@ -42293,6 +43657,526 @@
    "url": "https://news.slashdot.org/story/26/11/14/0128254/faa-lifts-nationwide-ground-stop-for-all-aircraft-update?utm_source=rss1.0mainlinkanon&utm_medium=feed",
    "source": "slashdot",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Content Moved",
+   "url": "https://slott-softwarearchitect.blogspot.com/2023/01/content-moved.html",
+   "source": "slottsoftwarearchitectblogspot",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DZone's lack of a Python Zone",
+   "url": "https://slott-softwarearchitect.blogspot.com/2023/01/dzones-lack-of-python-zone.html",
+   "source": "slottsoftwarearchitectblogspot",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Christmas Book Offers",
+   "url": "https://slott-softwarearchitect.blogspot.com/2022/12/christmas-book-offers.html",
+   "source": "slottsoftwarearchitectblogspot",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Algorithm Design",
+   "url": "https://slott-softwarearchitect.blogspot.com/2022/12/on-algorithm-design.html",
+   "source": "slottsoftwarearchitectblogspot",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My algorithm performs badly, do I need asyncio?",
+   "url": "https://slott-softwarearchitect.blogspot.com/2022/12/my-algorithm-performs-badly-do-i-need.html",
+   "source": "slottsoftwarearchitectblogspot",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Functional Programming and Finite State Automata (FSA)",
+   "url": "https://slott-softwarearchitect.blogspot.com/2022/11/functional-programming-and-finite-state.html",
+   "source": "slottsoftwarearchitectblogspot",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Testing with PySpark",
+   "url": "https://slott-softwarearchitect.blogspot.com/2022/11/testing-with-pyspark.html",
+   "source": "slottsoftwarearchitectblogspot",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generators as Stacks of Operations",
+   "url": "https://slott-softwarearchitect.blogspot.com/2022/11/generators-as-stacks-of-operations.html",
+   "source": "slottsoftwarearchitectblogspot",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fighting Against Over-Engineering",
+   "url": "https://slott-softwarearchitect.blogspot.com/2022/11/fighting-against-over-engineering.html",
+   "source": "slottsoftwarearchitectblogspot",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Some Functional Programming in Python material",
+   "url": "https://slott-softwarearchitect.blogspot.com/2022/10/some-functional-programming-in-python.html",
+   "source": "slottsoftwarearchitectblogspot",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Books! Books! More Channels!",
+   "url": "https://slott-softwarearchitect.blogspot.com/2022/08/books-books-more-channels.html",
+   "source": "slottsoftwarearchitectblogspot",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Enterprise Python -- Some initial thoughts",
+   "url": "https://slott-softwarearchitect.blogspot.com/2022/08/enterprise-python-some-initial-thoughts.html",
+   "source": "slottsoftwarearchitectblogspot",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tragedy Averted",
+   "url": "https://slott-softwarearchitect.blogspot.com/2022/08/tragedy-averted.html",
+   "source": "slottsoftwarearchitectblogspot",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Books! Books! Books!",
+   "url": "https://slott-softwarearchitect.blogspot.com/2022/08/books-books-books.html",
+   "source": "slottsoftwarearchitectblogspot",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bashing the Bash -- The shell is awful and what you can do about it",
+   "url": "https://slott-softwarearchitect.blogspot.com/2022/07/bashing-bash-shell-is-awful-and-what.html",
+   "source": "slottsoftwarearchitectblogspot",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "'Trust but verify'; or, 'the correctness ratchet'",
+   "url": "https://smallcultfollowing.com/babysteps/blog/2026/10/30/trust-but-verify/",
+   "source": "smallcultfollowing",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What agents mean for Rust (and vice versa)",
+   "url": "https://smallcultfollowing.com/babysteps/blog/2026/10/14/agentic-dev-and-rust/",
+   "source": "smallcultfollowing",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why 'externalized' proofs of cyclic trait impls does not work",
+   "url": "https://smallcultfollowing.com/babysteps/blog/2026/10/10/modular-vs-external-proofs/",
+   "source": "smallcultfollowing",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cylic trait implementations: motivation",
+   "url": "https://smallcultfollowing.com/babysteps/blog/2026/08/10/cyclic-trait-solving/",
+   "source": "smallcultfollowing",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Battery packs: Let's talk about crates, baby",
+   "url": "https://smallcultfollowing.com/babysteps/blog/2026/07/15/battery-packs/",
+   "source": "smallcultfollowing",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Only Bounds",
+   "url": "https://smallcultfollowing.com/babysteps/blog/2026/06/09/only-bounds/",
+   "source": "smallcultfollowing",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Symposium: community-oriented agentic development",
+   "url": "https://smallcultfollowing.com/babysteps/blog/2026/04/21/symposium/",
+   "source": "smallcultfollowing",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Maximally minimal view types, a follow-up",
+   "url": "https://smallcultfollowing.com/babysteps/blog/2026/03/22/max-min-view-types-followup/",
+   "source": "smallcultfollowing",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Maximally minimal view types",
+   "url": "https://smallcultfollowing.com/babysteps/blog/2026/03/21/view-types-max-min/",
+   "source": "smallcultfollowing",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Dada enables internal references",
+   "url": "https://smallcultfollowing.com/babysteps/blog/2026/02/27/dada-internal-references/",
+   "source": "smallcultfollowing",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What it means that Ubuntu is using Rust",
+   "url": "https://smallcultfollowing.com/babysteps/blog/2026/02/23/ubuntu-rustnation/",
+   "source": "smallcultfollowing",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sharing in Dada",
+   "url": "https://smallcultfollowing.com/babysteps/blog/2026/02/14/sharing-in-dada/",
+   "source": "smallcultfollowing",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dada: moves and mutation",
+   "url": "https://smallcultfollowing.com/babysteps/blog/2026/02/10/dada-moves-and-mutation/",
+   "source": "smallcultfollowing",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hello, Dada!",
+   "url": "https://smallcultfollowing.com/babysteps/blog/2026/02/09/hello-dada/",
+   "source": "smallcultfollowing",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fun With Dada",
+   "url": "https://smallcultfollowing.com/babysteps/blog/2026/02/08/fun-with-dada/",
+   "source": "smallcultfollowing",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "If developers have autonomy, mastery and purpose, what do you need testers for?",
+   "url": "https://smallsheds.garden/blog/2026/if-developers-have-autonomy-mastery-purpose/",
+   "source": "smallsheds",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How do I know my testers are doing a good job?",
+   "url": "https://smallsheds.garden/blog/2026/how-do-i-know-my-testers-are-doing-a-good-job/",
+   "source": "smallsheds",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thinking in threes about software testing",
+   "url": "https://smallsheds.garden/blog/2026/thinking-in-threes-about-software-testing/",
+   "source": "smallsheds",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On the acceptance of GenAI",
+   "url": "https://smallsheds.garden/blog/2026/on-the-acceptance-of-genai/",
+   "source": "smallsheds",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "It's clearly a bug, but what is the bug exactly?",
+   "url": "https://smallsheds.garden/blog/2026/its-clearly-a-bug-but-what-is-the-bug-exactly/",
+   "source": "smallsheds",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reflections after writing a release advice",
+   "url": "https://smallsheds.garden/blog/2026/reflections-after-writing-a-release-advice/",
+   "source": "smallsheds",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Three basic truths about planning",
+   "url": "https://smallsheds.garden/blog/2026/three-basic-truths-about-planning/",
+   "source": "smallsheds",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Not continuous everything!",
+   "url": "https://smallsheds.garden/blog/2025/not-continuous-everything/",
+   "source": "smallsheds",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Testing types - beyond definitions",
+   "url": "https://smallsheds.garden/blog/2025/testing-types-beyond-definitions/",
+   "source": "smallsheds",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We do not all have the same job",
+   "url": "https://smallsheds.garden/blog/2025/we-do-not-all-have-the-same-job/",
+   "source": "smallsheds",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's missing to have reproducible builds on PyPI",
+   "url": "https://snarky.ca/whats-missing-to-have-reproducible-builds-on-pypi/",
+   "source": "snarky",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My nomination statement for the 2026 Python packaging council",
+   "url": "https://snarky.ca/my-nomination-statement-for-the-2026-python-packaging-council/",
+   "source": "snarky",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to publish to PyPI using GitHub Actions securely",
+   "url": "https://snarky.ca/how-to-publish-to-pypi-using-github-actions-securely/",
+   "source": "snarky",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I wrote PEP 832 -- virtual environment discovery",
+   "url": "https://snarky.ca/why-i-wrote-pep-832-virtual-environment-discovery/",
+   "source": "snarky",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why pylock.toml includes digital attestations",
+   "url": "https://snarky.ca/why-pylock-toml-includes-digital-attestations/",
+   "source": "snarky",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "State of WASI support for CPython: March 2026",
+   "url": "https://snarky.ca/state-of-wasi-support-for-cpython-march-2026/",
+   "source": "snarky",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CLI subcommands with lazy imports",
+   "url": "https://snarky.ca/subcommands-with-lazy-imports/",
+   "source": "snarky",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Should I rewrite the Python Launcher for Unix in Python?",
+   "url": "https://snarky.ca/should-i-rewrite-the-python-launcher-for-unix-in-python/",
+   "source": "snarky",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The varying strictness of TypedDict",
+   "url": "https://snarky.ca/the-varying-strictness-of-typeddict/",
+   "source": "snarky",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why it took 4 years to get a lock files specification",
+   "url": "https://snarky.ca/why-it-took-4-years-to-get-a-lock-files-specification/",
+   "source": "snarky",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unravelling t-strings",
+   "url": "https://snarky.ca/unravelling-t-strings/",
+   "source": "snarky",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I won't be attending PyCon US this year",
+   "url": "https://snarky.ca/why-i-wont-be-attending-pycon-us-this-year/",
+   "source": "snarky",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My impressions of Gleam",
+   "url": "https://snarky.ca/my-impressions-of-gleam/",
+   "source": "snarky",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What the PSF Conduct WG does",
+   "url": "https://snarky.ca/what-the-psf-conduct-wg-does/",
+   "source": "snarky",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don't return named tuples in new APIs",
+   "url": "https://snarky.ca/dont-use-named-tuples-in-new-apis/",
+   "source": "snarky",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Megalopolis",
+   "url": "https://sneak.berlin/20260227/megalopolis/",
+   "source": "sneak",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build / Buy / Bot",
+   "url": "https://sneak.berlin/20251224/build-buy-bot/",
+   "source": "sneak",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Show Candidates Your Cap Table.",
+   "url": "https://sneak.berlin/20250801/show-candidates-your-cap-table/",
+   "source": "sneak",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minio Are Assholes",
+   "url": "https://sneak.berlin/20250720/minio-are-assholes/",
+   "source": "sneak",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The AGPL License Is Nonfree",
+   "url": "https://sneak.berlin/20250720/the-agpl-is-nonfree/",
+   "source": "sneak",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Subject Lines and File Names: You're doing it wrong.",
+   "url": "https://sneak.berlin/20250430/subject-lines/",
+   "source": "sneak",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "README HOWTO",
+   "url": "https://sneak.berlin/20241224/readme-howto/",
+   "source": "sneak",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The United States Virgin Islands: Notes",
+   "url": "https://sneak.berlin/20241224/usvi/",
+   "source": "sneak",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My 2024 Code Styleguide",
+   "url": "https://sneak.berlin/20240610/code-styleguide/",
+   "source": "sneak",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple OSes Are Insecure By Design To Aid Surveillance",
+   "url": "https://sneak.berlin/20231005/apple-operating-system-surveillance/",
+   "source": "sneak",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -43467,6 +45351,14 @@
   {
    "title": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI (Mark Gurman/Bloomberg)",
    "url": "https://www.techmeme.com/261115/p10#a261115p10",
+   "source": "techmeme",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashing with Scott Bessent and others over Nvidia chip curbs (Ashley Gold/Semafor)",
+   "url": "https://www.techmeme.com/261115/p11#a261115p11",
    "source": "techmeme",
    "rank": 1,
    "score": 15,
