@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T19:50:08.521425+00:00",
+ "generated_at": "2026-11-15T19:53:35.726868+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 1818,
+ "total": 1837,
  "domains": [
   {
    "hostname": "blog.google",
@@ -117,6 +117,23 @@
    }
   },
   {
+   "hostname": "reddit.com",
+   "days_on_board": 2,
+   "items": 33,
+   "sources": [
+    "hackernews",
+    "k8s",
+    "reddit"
+   ],
+   "top_hit": {
+    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+    "score": 382,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
    "hostname": "youtube.com",
    "days_on_board": 2,
    "items": 32,
@@ -159,23 +176,6 @@
     "score": 378,
     "metric": "points",
     "date": "2026-11-11"
-   }
-  },
-  {
-   "hostname": "reddit.com",
-   "days_on_board": 2,
-   "items": 18,
-   "sources": [
-    "hackernews",
-    "k8s",
-    "reddit"
-   ],
-   "top_hit": {
-    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
-    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
-    "score": 382,
-    "metric": "points",
-    "date": "2026-11-13"
    }
   },
   {
