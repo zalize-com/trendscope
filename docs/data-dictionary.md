@@ -39,3 +39,11 @@ ranking.
 - GitHub section = repos **created in the last 7 days** sorted by total stars
   (via the Search API), not the official trending page — it's "hot new repos".
 - Hacker News `tags` exclude Algolia bookkeeping tokens (`author_*`, `story_*`).
+
+## Auxiliary files
+
+- `data/health.json` — per-source run health `{ok, items, ms}` for the latest
+  collection; `data/health-log.csv` appends `date,source,ok,items,ms` daily.
+- `docs/api/movers-latest.json` — structured entered/left/gainers/droppers and
+  package rank movers for the latest snapshot pair (same computation as
+  `docs/movers/*.md`).
