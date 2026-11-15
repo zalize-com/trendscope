@@ -16,7 +16,7 @@ page is appreciated but not required.
 is append-only and never rewritten — safe to build on.
 
 ## What's the difference between daily/, history.csv and the long-history CSVs?
-- `daily/YYYY-MM-DD.json` — full snapshot for one day, all 19 sources.
+- `daily/YYYY-MM-DD.json` — full snapshot for one day, all 20 sources.
 - `history.csv` — the same rows, append-only, for velocity analysis.
 - `hn-canon-monthly.csv` / `show-hn-monthly.csv` / `ask-hn-monthly.csv` —
   monthly top-10 canon backfills (2007-02 / 2012-01 / 2007-02 → today).

@@ -1,100 +1,105 @@
 {
-  "generated_at": "2026-11-15T13:07:02.930749+00:00",
+  "generated_at": "2026-11-15T13:09:12.359236+00:00",
   "sources": {
     "hackernews": {
       "ok": true,
       "items": 20,
-      "ms": 240
+      "ms": 338
     },
     "show_hn": {
       "ok": true,
       "items": 12,
-      "ms": 278
+      "ms": 338
     },
     "ask_hn": {
       "ok": true,
       "items": 12,
-      "ms": 1186
+      "ms": 385
     },
     "lobsters": {
       "ok": true,
       "items": 15,
-      "ms": 380
+      "ms": 231
     },
     "devto": {
       "ok": true,
       "items": 15,
-      "ms": 60
+      "ms": 64
     },
     "lemmy": {
       "ok": true,
       "items": 15,
-      "ms": 319
+      "ms": 371
     },
     "producthunt": {
       "ok": true,
       "items": 20,
-      "ms": 145
+      "ms": 44
     },
     "techmeme": {
       "ok": true,
       "items": 15,
-      "ms": 369
+      "ms": 231
     },
     "slashdot": {
       "ok": true,
       "items": 15,
-      "ms": 48
+      "ms": 134
     },
     "krebs": {
       "ok": true,
       "items": 10,
-      "ms": 33
+      "ms": 91
     },
     "changelog": {
       "ok": true,
       "items": 15,
-      "ms": 70
+      "ms": 357
     },
     "freecodecamp": {
       "ok": true,
       "items": 10,
-      "ms": 54
+      "ms": 324
+    },
+    "echojs": {
+      "ok": true,
+      "items": 15,
+      "ms": 256
     },
     "arstechnica": {
       "ok": true,
       "items": 15,
-      "ms": 14
+      "ms": 54
     },
     "theverge": {
       "ok": true,
       "items": 10,
-      "ms": 26
+      "ms": 49
     },
     "arxiv": {
       "ok": true,
       "items": 15,
-      "ms": 46
+      "ms": 114
     },
     "github_trending": {
       "ok": true,
       "items": 15,
-      "ms": 581
+      "ms": 474
     },
     "npm": {
       "ok": true,
       "items": 24,
-      "ms": 6730
+      "ms": 7122
     },
     "pypi": {
       "ok": true,
       "items": 22,
-      "ms": 46089
+      "ms": 48432
     },
     "crates": {
       "ok": true,
       "items": 15,
-      "ms": 474
+      "ms": 501
     }
   }
 }

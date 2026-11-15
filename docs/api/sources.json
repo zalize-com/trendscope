@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T13:07:49.560799+00:00",
+  "generated_at": "2026-11-15T13:10:01.444213+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -190,6 +190,18 @@
       "top_item": {
         "title": "Bitwarden CLI compromised",
         "url": "https://changelog.com/news/185",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "echojs": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Dual JWT Authentication: Security, Redis, and Trade-Offs",
+        "url": "https://www.jstools.space/blog/dual-jwt-authentication/",
         "score": 15,
         "rank": 1
       }

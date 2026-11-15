@@ -452,6 +452,36 @@ def fetch_freecodecamp(limit=15):
     return out
 
 
+def fetch_echojs(limit=15):
+    """Echo JS RSS — JavaScript community news, position-scored."""
+    print("Fetching Echo JS feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.echojs.com/rss",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                raw = resp.read().decode("utf-8")
+            # echojs emits whitespace inside tag text — tolerant parse
+            root = ET.fromstring(raw)
+            break
+        except Exception as e:
+            print(f"  [warn] echojs attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title", default="") or "").split())
+        url = " ".join((e.findtext("link", default="") or "").split()) or "https://www.echojs.com/"
+        out.append(item(
+            "echojs", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
 def fetch_slashdot(limit=15):
     """Slashdot RSS 1.0 (RDF) — nerd news, position-scored like techmeme."""
     print("Fetching Slashdot feed...")
@@ -718,6 +748,7 @@ def main():
         "krebs": fetch_krebs,
         "changelog": fetch_changelog,
         "freecodecamp": fetch_freecodecamp,
+        "echojs": fetch_echojs,
         "arstechnica": fetch_arstechnica,
         "theverge": fetch_theverge,
         "arxiv": fetch_arxiv,
