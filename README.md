@@ -77,6 +77,7 @@ A daily cross-source snapshot of developer attention:
 | Lyft Engineering | rideshare platform engineering | `eng.lyft.com/feed` |
 | Pinterest Engineering | visual discovery platform | `medium.com/@Pinterest_Engineering` |
 | Etsy Code as Craft | marketplace engineering | `etsy.com/codeascraft/rss` |
+| Discord Blog | chat platform engineering | `discord.com/blog/rss.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
