@@ -45,6 +45,9 @@ jobs:
           python3 scripts/content_index.py || true
           python3 scripts/stats.py || true
 
+      - name: Check internal links + sitemap
+        run: python3 scripts/linkcheck.py
+
       - name: Validate dataset contract
         run: python3 scripts/validate.py
 
