@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>source deep-dive — trendscope</title>
+<meta name="description" content="Per-source deep dive: top items, daily volume, and standouts for every source in the trendscope dataset.">
+<meta property="og:title" content="source deep-dive — trendscope">
+<meta property="og:description" content="Top items, daily volume and standouts per source in the developer attention dataset.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zalize-com.github.io/trendscope/source.html">
+<meta property="og:image" content="https://zalize-com.github.io/trendscope/og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>">
+<style>
+  :root { --bg:#0d1117; --fg:#e6edf3; --dim:#8b949e; --border:#21262d; --accent:#58a6ff;
+          --green:#3fb950; --orange:#d29922; }
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 18px; }
+  .stats { display: flex; gap: 18px; flex-wrap: wrap; margin: 10px 0 6px; }
+  .stat b { font-size: 22px; } .stat small { color: var(--dim); display: block; font-size: 11px; }
+  h2 { font-size: 15px; color: var(--dim); font-weight: 600; margin: 26px 0 6px;
+       text-transform: uppercase; letter-spacing: .04em; }
+  ol { list-style: none; }
+  li { display: flex; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--border); align-items: baseline; }
+  .it a { color: var(--fg); } .it a:hover { color: var(--accent); }
+  .sc { margin-left: auto; white-space: nowrap; font-size: 12px; color: var(--dim); }
+  .date { color: var(--dim); font-size: 11px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+  #err { color: var(--dim); }
+  .chip { display:inline-block; padding:2px 9px; border:1px solid var(--border); border-radius:12px; font-size:12px; color:var(--fg); text-decoration:none; margin:2px 3px 2px 0; opacity:.75; }
+  .chip.on { opacity:1; border-color:var(--accent); color:var(--accent); }
+  .bars { display:flex; gap:3px; align-items:flex-end; height:44px; margin:6px 0; }
+  .bar { flex:1; background:var(--accent); opacity:.7; border-radius:2px 2px 0 0; min-height:2px; }
+  .blabels { display:flex; gap:3px; font-size:9px; color:var(--dim); font-family:ui-monospace,monospace; }
+  .blabels span { flex:1; text-align:center; }
+</style>
+</head>
+<body>
+  <nav><a href="index.html">← trendscope</a> · <a href="streaks.html">streaks</a> · <a href="domains.html">domains</a></nav>
+  <h1>sou<span>rce</span></h1>
+  <p class="sub">Per-source deep dive: coverage, daily volume and top hits for every source in <code>data/history.csv</code>.</p>
+  <div id="srcbar" style="margin:8px 0"></div>
+  <div class="stats" id="stats"></div>
+  <div id="out"><p id="err">loading…</p></div>
+  <footer>Open data, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> ·
+    <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a></footer>
+<script type="module">
+const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
+const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B" : n >= 1e6 ? (n/1e6).toFixed(1)+"M" : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
+const $ = id => document.getElementById(id);
+const S = new URLSearchParams(location.search).get("s") || "hackernews";
+
+function parseCSV(text) {
+  const rows = []; let field = "", row = [], inQ = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQ) {
+      if (c === '"') { if (text[i+1] === '"') { field += '"'; i++; } else inQ = false; }
+      else field += c;
+    } else if (c === '"') inQ = true;
+    else if (c === ',') { row.push(field); field = ""; }
+    else if (c === '\n') { row.push(field); rows.push(row); row = []; field = ""; }
+    else if (c !== '\r') field += c;
+  }
+  if (field || row.length) { row.push(field); rows.push(row); }
+  return rows;
+}
+
+const text = await fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text());
+const rows = parseCSV(text);
+const ci = Object.fromEntries(rows[0].map((h,i)=>[h,i]));
+const all = rows.slice(1).map(r => ({
+  source: r[ci.source], date: r[ci.date], title: r[ci.title], url: r[ci.url],
+  score: Number(r[ci.score]) || 0, metric: r[ci.metric], rank: Number(r[ci.rank]) || 0,
+  comments: r[ci.comments], author: r[ci.author]
+}));
+const sources = [...new Set(all.map(r => r.source))].sort();
+if (!sources.includes(S)) location.search = "?s=hackernews";
+
+$("srcbar").innerHTML = sources.map(s =>
+  `<a class="chip ${s===S?"on":""}" href="?s=${encodeURIComponent(s)}">${s}</a>`).join("");
+
+const items = all.filter(r => r.source === S);
+const days = [...new Set(items.map(r => r.date))].sort();
+const byDay = {}; for (const d of days) byDay[d] = 0;
+for (const r of items) byDay[r.date] = (byDay[r.date]||0) + 1;
+const byUrl = {};
+for (const r of items) {
+  const e = byUrl[r.url] ||= { title: r.title, url: r.url, score: 0, metric: r.metric, days: new Set(), best: 99, comments: 0, author: r.author };
+  e.score = Math.max(e.score, r.score);
+  e.comments = Math.max(e.comments, Number(r.comments)||0);
+  e.days.add(r.date);
+  if (r.rank && r.rank < e.best) e.best = r.rank;
+}
+const top = Object.values(byUrl).sort((a,b) => b.score - a.score).slice(0, 30);
+const maxPerDay = Math.max(...Object.values(byDay), 1);
+
+$("stats").innerHTML =
+  `<div class="stat"><b>${items.length}</b><small>items tracked</small></div>` +
+  `<div class="stat"><b>${days.length}</b><small>days covered</small></div>` +
+  `<div class="stat"><b>${Object.keys(byUrl).length}</b><small>unique urls</small></div>` +
+  `<div class="stat"><b>${fmt(top[0]?.score||0)}</b><small>top score</small></div>`;
+
+const bars = days.map(d => `<div class="bar" style="height:${Math.max(2, Math.round(44*byDay[d]/maxPerDay))}px" title="${d}: ${byDay[d]} items"></div>`).join("");
+const labels = days.map(d => `<span>${d.slice(5)}</span>`).join("");
+
+$("out").innerHTML =
+  `<h2>items per day</h2><div class="bars">${bars}</div><div class="blabels">${labels}</div>` +
+  `<h2>top hits (all days)</h2><ol>` +
+  top.map((t,i) =>
+    `<li><span class="date">${i<3?["①","②","③"][i]:i+1+"."}</span>` +
+    `<span class="it"><a href="${t.url}">${esc(t.title.length>85?t.title.slice(0,85)+"…":t.title)}</a>` +
+    `<a href="item.html?q=${encodeURIComponent(t.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>` +
+    `<span class="sc">${t.days.size>1?t.days.size+"d · ":""}${t.best<99?"#"+t.best+" · ":""}${fmt(t.score)}${t.comments?" · "+t.comments+"💬":""}</span></li>`
+  ).join("") + `</ol>`;
+</script>
+</body>
+</html>
