@@ -66,6 +66,7 @@
     <button data-tool="gi">.gitignore</button>
     <button data-tool="semver">semver compare</button>
     <button data-tool="curl">curl → code</button>
+    <button data-tool="hidden">hidden chars</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -156,13 +157,22 @@
     <div class="err" id="cu-err"></div>
   </div>
 
+  <div class="panel" id="p-hidden">
+    <h2>Hidden character inspector</h2>
+    <p class="hint">Paste text that came from somewhere else — finds zero-width chars, bidi controls, non-breaking/exotic spaces, soft hyphens and lookalike non-ASCII letters (common in copy-paste attacks and broken diffs).</p>
+    <textarea id="hc-in" style="width:100%;height:100px" placeholder="paste suspicious text…"></textarea>
+    <div class="out" id="hc-summary"></div>
+    <div class="out" id="hc-list" style="white-space:pre;overflow-x:auto;max-height:220px;overflow-y:auto"></div>
+    <button class="copy" id="hc-strip">copy cleaned text</button>
+  </div>
+
   <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -540,6 +550,52 @@ $("cu-in").addEventListener("input", cuRender);
 $("cu-copy").onclick = () => { navigator.clipboard?.writeText($("cu-fetch").textContent); $("cu-copy").textContent = "copied"; setTimeout(()=>$("cu-copy").textContent="copy fetch",1200); };
 $("cu-copy-py").onclick = () => { navigator.clipboard?.writeText($("cu-py").textContent); $("cu-copy-py").textContent = "copied"; setTimeout(()=>$("cu-copy-py").textContent="copy requests",1200); };
 cuRender();
+
+// --- hidden chars ---
+const HC = [
+  [/\u200b/g, "U+200B ZERO WIDTH SPACE"],
+  [/\u200c/g, "U+200C ZERO WIDTH NON-JOINER"],
+  [/\u200d/g, "U+200D ZERO WIDTH JOINER"],
+  [/\u2060/g, "U+2060 WORD JOINER"],
+  [/\ufeff/g, "U+FEFF BOM / ZWNBSP"],
+  [/g\u00ad/, "U+00AD SOFT HYPHEN"],
+  [/g\u1680/, "U+1680 OGHAM SPACE"],
+  [/g\u2002|\u2003/, "U+2002/g2003 EN/EM SPACE"],
+  [/g\u2004|\u2005|\u2006|\u2007|\u2008|\u2009|\u200a/, "U+2004-200A exotic spaces"],
+  [/g\u00a0/, "U+00A0 NO-BREAK SPACE"],
+  [/g\u202f|\u205f|\u3000/, "U+202F/g205F/3000 wide spaces"],
+  [/g\u202a|\u202b|\u202c|\u202d|\u202e/, "U+202A-E BIDI embedding/goverride"],
+  [/\u2066|\u2067|\u2068|\u2069/g, "U+2066-9 BIDI isolate"],
+  [/\u008d|\u008f|\u0090/g, "C1 control characters"],
+];
+const HOMO = { "\u0430":"cyrillic a","\u0435":"cyrillic e","\u043e":"cyrillic o","\u0440":"cyrillic p","\u0441":"cyrillic c","\u0445":"cyrillic x","\u0443":"cyrillic y","\u0456":"cyrillic i","\u0458":"cyrillic j","\u0455":"cyrillic s","\u04bb":"cyrillic h","\u03bf":"greek omicron","\u03bd":"greek nu","\u03c4":"greek tau","\u03b9":"greek iota","\u03c1":"greek rho","\u0391":"greek Alpha","\u0392":"greek Beta","\u0395":"greek Epsilon","\u0396":"greek Zeta","\u0397":"greek Eta","\u0399":"greek Iota","\u039a":"greek Kappa","\u039c":"greek Mu","\u039d":"greek Nu","\u039f":"greek Omicron","\u03a1":"greek Rho","\u03a4":"greek Tau","\u03a7":"greek Chi","\uff10":"fullwidth digit","\uff11":"fullwidth digit","\uff12":"fullwidth digit","\uff13":"fullwidth digit","\uff14":"fullwidth digit","\uff15":"fullwidth digit","\uff16":"fullwidth digit","\uff17":"fullwidth digit","\uff18":"fullwidth digit","\uff19":"fullwidth digit","\uff21":"fullwidth letter","\uff41":"fullwidth letter" };
+let hcClean = "";
+function hcScan() {
+  const s = $("hc-in").value;
+  if (!s) { $("hc-summary").textContent = ""; $("hc-list").textContent = ""; hcClean = ""; return; }
+  const found = [];
+  s.split("").forEach((ch, i) => {
+    for (const [rx, name] of HC) {
+      rx.lastIndex = 0;
+      if (rx.test(ch)) { found.push({ i, ch, name }); return; }
+    }
+    if (HOMO[ch]) found.push({ i, ch, name: `${HOMO[ch]} (lookalike)` });
+    else if (ch.charCodeAt(0) < 32 && ch !== "\n" && ch !== "\t")
+      found.push({ i, ch, name: `U+${ch.charCodeAt(0).toString(16).toUpperCase().padStart(4,"0")} control` });
+  });
+  hcClean = s.split("").filter(ch => {
+    for (const [rx] of HC) { rx.lastIndex = 0; if (rx.test(ch)) return false; }
+    return !(ch.charCodeAt(0) < 32 && ch !== "\n" && ch !== "\t");
+  }).join("");
+  $("hc-summary").innerHTML = found.length
+    ? `<b style="color:var(--orange)">${found.length} suspicious character${found.length>1?"s":""}</b> in ${s.length} chars`
+    : `<b style="color:var(--green)">clean</b> — ${s.length} chars, nothing hidden`;
+  $("hc-list").textContent = found.slice(0, 300).map(f =>
+    `pos ${String(f.i).padStart(5)}  ${f.name}${f.ch.charCodeAt(0) > 32 ? `  [${f.ch}]` : ""}`).join("\n")
+    + (found.length > 300 ? `\n… ${found.length - 300} more` : "");
+}
+$("hc-in").addEventListener("input", hcScan);
+$("hc-strip").onclick = () => { navigator.clipboard?.writeText(hcClean); $("hc-strip").textContent = "copied"; setTimeout(()=>$("hc-strip").textContent="copy cleaned text",1200); };
 </script>
 </body>
 </html>
