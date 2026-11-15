@@ -205,6 +205,21 @@
     <button class="copy" id="fq-csv">copy as CSV</button>
   </div>
 
+  <div class="tool" data-tool="lines">
+    <h2>Line ops</h2>
+    <p class="hint">Paste lines — sort, dedupe, reverse, shuffle, number, or strip whitespace in one click.</p>
+    <textarea id="ln-in" placeholder="one\nper\nline\nline" style="width:100%;height:120px"></textarea>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin:8px 0">
+      <button data-op="az">A→Z</button><button data-op="za">Z→A</button>
+      <button data-op="uniq">dedupe</button><button data-op="rev">reverse</button>
+      <button data-op="shuf">shuffle</button><button data-op="num">number</button>
+      <button data-op="trim">trim</button><button data-op="empty">remove empty</button>
+    </div>
+    <div class="out" id="ln-out"></div>
+    <button class="copy" id="ln-copy">copy</button>
+    <p class="hint" id="ln-stat" style="margin-top:6px"></p>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -584,6 +599,35 @@ document.getElementById("sg-in").addEventListener("input", sgGo);
   document.getElementById("fq-in").value = "the quick brown fox jumps over the lazy dog and the dog looks back at the fox the fox grins";
   run();
 })();
+// ---- line ops ----
+(function(){
+  const $ = id => document.getElementById(id);
+  let out = [];
+  function apply(op, lines){
+    switch(op){
+      case "az": return [...lines].sort((a,b)=>a.localeCompare(b));
+      case "za": return [...lines].sort((a,b)=>b.localeCompare(a));
+      case "uniq": return [...new Set(lines)];
+      case "rev": return [...lines].reverse();
+      case "shuf": { const l=[...lines]; for(let i=l.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[l[i],l[j]]=[l[j],l[i]];} return l; }
+      case "num": return lines.map((l,i)=>`${i+1}. ${l}`);
+      case "trim": return lines.map(l=>l.trim()).filter(l=>l!=="");
+      case "empty": return lines.filter(l=>l.trim()!=="");
+    }
+  }
+  function show(){
+    $("ln-out").textContent = out.join("\n") || "(empty)";
+    $("ln-stat").textContent = `${out.length} lines`;
+  }
+  document.querySelectorAll('[data-op]').forEach(b=>b.onclick=()=>{
+    out = apply(b.dataset.op, $("ln-in").value.split("\n"));
+    show();
+  });
+  $("ln-copy").onclick=()=>navigator.clipboard?.writeText($("ln-out").textContent)
+    .then(()=>{const b=$("ln-copy");b.textContent="✓";setTimeout(()=>b.textContent="copy",1200);});
+  $("ln-in").value = "banana\napple\ncherry\napple\n  fig  \n\ndate";
+})();
+
 </script>
 </body>
 </html>
