@@ -87,7 +87,26 @@ def main():
         f"  <lastBuildDate>{now}</lastBuildDate>\n" + "\n".join(body) + "\n</channel>\n</rss>\n")
     with open(os.path.join(ROOT, "feed.xml"), "w") as f:
         f.write(xml)
-    print(f"feed.xml: {len(body)} items")
+
+    # JSON Feed v1.1 (feed.json) — same items, modern format.
+    jfeed = {
+        "version": "https://jsonfeed.org/version/1.1",
+        "title": "trendscope — developer attention dataset",
+        "home_page_url": f"{BASE}/",
+        "feed_url": f"{BASE}/feed.json",
+        "description": "Daily cross-source snapshot of what developers are "
+                       "reading, building and downloading.",
+        "items": [{
+            "id": guid,
+            "url": link,
+            "title": title,
+            "summary": desc,
+            "date_published": pub.isoformat(),
+        } for pub, title, link, guid, desc in items()],
+    }
+    with open(os.path.join(ROOT, "feed.json"), "w") as f:
+        json.dump(jfeed, f, indent=1, ensure_ascii=False)
+    print(f"feed.xml + feed.json: {len(body)} items")
 
 
 if __name__ == "__main__":
