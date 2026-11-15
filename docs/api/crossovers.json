@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T18:02:54.784351+00:00",
+ "generated_at": "2026-11-15T18:05:18.790765+00:00",
  "latest_snapshot": "2026-11-15",
  "crossovers": [
   {
@@ -183,6 +183,21 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-10"
+   }
+  },
+  {
+   "url": "https://brave.com/blog/search-api-agentic-payments",
+   "title": "The Brave Search API now accepts agentic payments via the x402 protocol",
+   "sources": [
+    "brave",
+    "hackernews"
+   ],
+   "days": 2,
+   "best": {
+    "score": 260,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-13"
    }
   },
   {
@@ -737,21 +752,6 @@
     "score": 2,
     "metric": "feed rank",
     "source": "surfingcomplexity",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.codinghorror.com/the-rise-of-the-electric-scooter",
-   "title": "The Rise of the Electric Scooter",
-   "sources": [
-    "codinghorror",
-    "codinghorror2"
-   ],
-   "days": 1,
-   "best": {
-    "score": 1,
-    "metric": "feed rank",
-    "source": "codinghorror",
     "date": "2026-11-15"
    }
   }

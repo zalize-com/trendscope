@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T18:02:54.784351+00:00",
+ "generated_at": "2026-11-15T18:05:18.790765+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 1110,
+ "total": 1129,
  "domains": [
   {
    "hostname": "blog.google",
@@ -313,6 +313,22 @@
     "score": 196,
     "metric": "points",
     "date": "2026-11-07"
+   }
+  },
+  {
+   "hostname": "brave.com",
+   "days_on_board": 2,
+   "items": 11,
+   "sources": [
+    "brave",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Brave Search API now accepts agentic payments via the x402 protocol",
+    "url": "https://brave.com/blog/search-api-agentic-payments/",
+    "score": 260,
+    "metric": "points",
+    "date": "2026-11-13"
    }
   },
   {
@@ -770,25 +786,6 @@
     "title": "MAP & GO!",
     "url": "https://www.producthunt.com/products/expert-chase-deleted-1107920",
     "score": 20,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "medium.com",
-   "days_on_board": 1,
-   "items": 32,
-   "sources": [
-    "airbnb",
-    "bostocks",
-    "k8s",
-    "norvig",
-    "pinterest"
-   ],
-   "top_hit": {
-    "title": "A Better Way to Code",
-    "url": "https://medium.com/@mbostock/a-better-way-to-code-2b1d2876a3a0",
-    "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
    }
