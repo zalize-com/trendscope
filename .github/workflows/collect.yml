@@ -31,6 +31,9 @@ jobs:
       - name: Regenerate daily movers
         run: python3 scripts/movers.py || true
 
+      - name: Regenerate ideas API
+        run: python3 scripts/ideas.py || true
+
       - name: Regenerate RSS feed
         run: python3 scripts/feed.py || true
 
