@@ -85,6 +85,7 @@ A daily cross-source snapshot of developer attention:
 | MongoDB Blog | database engineering | `mongodb.com/blog/rss` |
 | Elastic Blog | search engine engineering | `elastic.co/blog/feed` |
 | GitLab Blog | DevOps platform news | `about.gitlab.com/atom.xml` |
+| Aphyr | Jepsen distributed-systems analyses | `aphyr.com/posts.atom` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

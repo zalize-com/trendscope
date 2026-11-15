@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T15:34:16.872795+00:00",
+ "generated_at": "2026-11-15T15:35:51.512531+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 941,
- "new_items": 815,
+ "total_items": 953,
+ "new_items": 827,
  "by_source": {
   "producthunt": 45,
   "hackernews": 27,
@@ -42,6 +42,7 @@
   "vercel": 15,
   "beesbuzz": 14,
   "theverge": 14,
+  "aphyr": 12,
   "airbnb": 10,
   "dropbox": 10,
   "freecodecamp": 10,
@@ -263,6 +264,102 @@
    "url": "http://antirez.com/news/158",
    "source": "antirez",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Hegel-clj",
+   "url": "https://aphyr.com/posts/428-announcing-hegel-clj",
+   "source": "aphyr",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RIP, Harvest",
+   "url": "https://aphyr.com/posts/427-rip-harvest",
+   "source": "aphyr",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "More Fake Mastodon Signups",
+   "url": "https://aphyr.com/posts/425-more-fake-mastodon-signups",
+   "source": "aphyr",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting Paid by Flat Rate Movers",
+   "url": "https://aphyr.com/posts/424-getting-paid-by-flat-rate-movers",
+   "source": "aphyr",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Kyle Kingsbury Podcast Podcast - Episode 2 - Dave Rossi",
+   "url": "https://aphyr.com/posts/423-the-kyle-kingsbury-podcast-podcast-episode-2-dave-rossi",
+   "source": "aphyr",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Kyle Kingsbury Podcast Podcast - Episode 1 - Alex Dripchak",
+   "url": "https://aphyr.com/posts/422-the-kyle-kingsbury-podcast-podcast-episode-1-alex-dripchak",
+   "source": "aphyr",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JStack by Command String",
+   "url": "https://aphyr.com/posts/421-jstack-by-command-string",
+   "source": "aphyr",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Future of Everything is Lies, I Guess: Where Do We Go From Here?",
+   "url": "https://aphyr.com/posts/420-the-future-of-everything-is-lies-i-guess-where-do-we-go-from-here",
+   "source": "aphyr",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Future of Everything is Lies, I Guess: New Jobs",
+   "url": "https://aphyr.com/posts/419-the-future-of-everything-is-lies-i-guess-new-jobs",
+   "source": "aphyr",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Future of Everything is Lies, I Guess: Work",
+   "url": "https://aphyr.com/posts/418-the-future-of-everything-is-lies-i-guess-work",
+   "source": "aphyr",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Future of Everything is Lies, I Guess: Safety",
+   "url": "https://aphyr.com/posts/417-the-future-of-everything-is-lies-i-guess-safety",
+   "source": "aphyr",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Future of Everything is Lies, I Guess: Psychological Hazards",
+   "url": "https://aphyr.com/posts/416-the-future-of-everything-is-lies-i-guess-psychological-hazards",
+   "source": "aphyr",
+   "rank": 12,
    "score": 1,
    "metric": "feed rank"
   },

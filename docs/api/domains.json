@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T15:34:16.872795+00:00",
+ "generated_at": "2026-11-15T15:35:51.512531+00:00",
  "latest_snapshot": "2026-11-15",
  "total": 263,
  "domains": [
@@ -110,6 +110,22 @@
     "score": 378,
     "metric": "points",
     "date": "2026-11-11"
+   }
+  },
+  {
+   "hostname": "aphyr.com",
+   "days_on_board": 2,
+   "items": 13,
+   "sources": [
+    "aphyr",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "RIP, Harvest",
+    "url": "https://aphyr.com/posts/427-rip-harvest",
+    "score": 445,
+    "metric": "points",
+    "date": "2026-11-09"
    }
   },
   {
@@ -745,21 +761,6 @@
    "top_hit": {
     "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
     "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "stackoverflow.blog",
-   "days_on_board": 1,
-   "items": 15,
-   "sources": [
-    "soblog"
-   ],
-   "top_hit": {
-    "title": "Your coding agent shouldn't grade its own homework",
-    "url": "https://stackoverflow.blog/2026/11/13/your-coding-agent-shouldn-t-grade-its-own-homework/",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
