@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T19:25:41.641265+00:00",
+ "generated_at": "2026-11-15T19:29:21.046446+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 17304,
- "new_items": 17177,
+ "total_items": 17509,
+ "new_items": 17382,
  "by_source": {
   "show_hn": 50,
   "producthunt": 45,
@@ -303,6 +303,7 @@
   "ethanmarcotte": 15,
   "etsy": 15,
   "eugeneyan": 15,
+  "evanmiller": 15,
   "evertpot": 15,
   "evilmartians": 15,
   "eviltester": 15,
@@ -478,6 +479,7 @@
   "mattias": 15,
   "mattt": 15,
   "matttproud": 15,
+  "mattwarren": 15,
   "matuzo": 15,
   "maximorlov": 15,
   "mayank": 15,
@@ -520,6 +522,7 @@
   "nazhamid": 15,
   "nelhage": 15,
   "neo4j": 15,
+  "neopythonicblogspot": 15,
   "netmeister": 15,
   "newsletterpragmaticengineer": 15,
   "newsmit": 15,
@@ -575,6 +578,7 @@
   "pqvst": 15,
   "pragmatic": 15,
   "pragprog": 15,
+  "preshing": 15,
   "prettier": 15,
   "priver": 15,
   "proceedingsmlr": 15,
@@ -583,6 +587,7 @@
   "pythonblog": 15,
   "quii": 15,
   "rachsmith": 15,
+  "radek": 15,
   "radumatei": 15,
   "raganwald": 15,
   "rands": 15,
@@ -608,6 +613,7 @@
   "ryanmulligan": 15,
   "ryantrimble": 15,
   "sallylait": 15,
+  "samsaffron": 15,
   "samuelkraft": 15,
   "sanglard": 15,
   "sarajoy": 15,
@@ -670,9 +676,11 @@
   "tantek": 15,
   "tbray": 15,
   "tbrown": 15,
+  "techfinn": 15,
   "techhubiodigital": 15,
   "techtrivago": 15,
   "tempertemper": 15,
+  "tenderlovemaking": 15,
   "testguild": 15,
   "testingaccessibility": 15,
   "tetralogical": 15,
@@ -820,6 +828,7 @@
   "adblockplus": 10,
   "addyosmani": 10,
   "adrianroselli": 10,
+  "afronski": 10,
   "ahmadawais": 10,
   "ahrefs": 10,
   "aimeemarieknight": 10,
@@ -898,6 +907,7 @@
   "borischerny": 10,
   "bram": 10,
   "brave": 10,
+  "brendangregg": 10,
   "browserlondon": 10,
   "bryanbraun": 10,
   "brycewray": 10,
@@ -973,6 +983,7 @@
   "erikrunyon": 10,
   "erlang": 10,
   "eslint": 10,
+  "evanjones": 10,
   "falkus": 10,
   "feedingcloudgeek": 10,
   "felixarntz": 10,
@@ -1077,6 +1088,7 @@
   "mathematicaforpredictionwordpress": 10,
   "matklad": 10,
   "matthenry": 10,
+  "mattmight": 10,
   "mattzeunert": 10,
   "maxiferreira": 10,
   "medium": 10,
@@ -1111,6 +1123,7 @@
   "nielsleenheer": 10,
   "nolanlawson": 10,
   "notgull": 10,
+  "nshipster": 10,
   "ntsstrzibny": 10,
   "nytco": 10,
   "opennytimes": 10,
@@ -1137,6 +1150,7 @@
   "phpied": 10,
   "phuu": 10,
   "pinterest": 10,
+  "piotrpasich": 10,
   "pixelambacht": 10,
   "pixelscommander": 10,
   "planeterlang": 10,
@@ -1144,6 +1158,7 @@
   "plex": 10,
   "pmjones": 10,
   "poulpita": 10,
+  "practicallyefficient": 10,
   "pragtobwordpress": 10,
   "presetenvcssdb": 10,
   "producthubspot": 10,
@@ -1167,6 +1182,7 @@
   "robertheaton": 10,
   "robertocallahan": 10,
   "robinosborneco": 10,
+  "rocksdb": 10,
   "rubenverborgh": 10,
   "rubylang": 10,
   "rubyonrails": 10,
@@ -1337,6 +1353,7 @@
   "sandordargo": 5,
   "sethmlarson": 5,
   "toni": 5,
+  "upcoder": 5,
   "xanthir": 5,
   "blogsamuelmaddock": 4,
   "bottossongithub": 4,
@@ -4924,6 +4941,86 @@
    "url": "https://aframe.io/blog/awoa-159-161/",
    "source": "aframe",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CloudFormation vs. Terraform",
+   "url": "http://www.afronski.pl/2017/04/11/terraform-vs-cloudformation.html",
+   "source": "afronski",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A mythical beast called JIT",
+   "url": "http://www.afronski.pl/2016/04/08/a-mythical-beast-called-jit.html",
+   "source": "afronski",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Jenkins 2.0",
+   "url": "http://www.afronski.pl/2016/04/03/jenkins-2-0.html",
+   "source": "afronski",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing custom modules for Ansible",
+   "url": "http://www.afronski.pl/2016/03/28/writing-custom-modules-for-ansible.html",
+   "source": "afronski",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "500 shades of Green",
+   "url": "http://www.afronski.pl/2016/02/17/500-shades-of-green.html",
+   "source": "afronski",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My year in review - 2015",
+   "url": "http://www.afronski.pl/2015/12/31/my-year-in-review-2015.html",
+   "source": "afronski",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is wrong with gen_event?",
+   "url": "http://www.afronski.pl/2015/11/02/what-is-wrong-with-gen-event.html",
+   "source": "afronski",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SICP in Clojure - Chapter 5",
+   "url": "http://www.afronski.pl/sicp-in-clojure/2015/10/19/sicp-in-clojure-chapter-5.html",
+   "source": "afronski",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SICP in Clojure - Chapter 4",
+   "url": "http://www.afronski.pl/sicp-in-clojure/2015/10/05/sicp-in-clojure-chapter-4.html",
+   "source": "afronski",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SICP in Clojure - Chapter 3",
+   "url": "http://www.afronski.pl/sicp-in-clojure/2015/09/18/sicp-in-clojure-chapter-3.html",
+   "source": "afronski",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -28412,6 +28509,86 @@
    "url": "https://bravenewgeek.com/structuring-a-cloud-infrastructure-organization/",
    "source": "bravenewgeek",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I joined OpenAI",
+   "url": "http://www.brendangregg.com/blog//2026-02-07/why-i-joined-openai.html",
+   "source": "brendangregg",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Leaving Intel",
+   "url": "http://www.brendangregg.com/blog//2025-12-05/leaving-intel.html",
+   "source": "brendangregg",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On \"AI Brendans\" or \"Virtual Brendans\"",
+   "url": "http://www.brendangregg.com/blog//2025-11-28/ai-virtual-brendans.html",
+   "source": "brendangregg",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Intel is listening, don't waste your shot",
+   "url": "http://www.brendangregg.com/blog//2025-11-22/intel-is-listening.html",
+   "source": "brendangregg",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Third Stage Engineering",
+   "url": "http://www.brendangregg.com/blog//2025-11-17/third-stage-engineering.html",
+   "source": "brendangregg",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When to Hire a Computer Performance Engineering Team (2025) part 1 of 2",
+   "url": "http://www.brendangregg.com/blog//2025-08-04/when-to-hire-a-computer-performance-engineering-team-2025-part1.html",
+   "source": "brendangregg",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "3 Years of Extremely Remote Work",
+   "url": "http://www.brendangregg.com/blog//2025-05-22/3-years-of-extremely-remote-work.html",
+   "source": "brendangregg",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Doom GPU Flame Graphs",
+   "url": "http://www.brendangregg.com/blog//2025-05-01/doom-gpu-flame-graphs.html",
+   "source": "brendangregg",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Flame Graphs",
+   "url": "http://www.brendangregg.com/blog//2024-10-29/ai-flame-graphs.html",
+   "source": "brendangregg",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "No More Blue Fridays",
+   "url": "http://www.brendangregg.com/blog//2024-07-22/no-more-blue-fridays.html",
+   "source": "brendangregg",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -52387,6 +52564,206 @@
    "title": "NVIDIA GTC 2025 - Building LLM-Powered Applications",
    "url": "https://eugeneyan.com/speaking/nvidia-gtc-2025",
    "source": "eugeneyan",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Setenv is not Thread Safe and C Doesn't Want to Fix It",
+   "url": "https://www.evanjones.ca/setenv-is-not-thread-safe.html",
+   "source": "evanjones",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Random Load Balancing is Unevenly Distributed",
+   "url": "https://www.evanjones.ca/random-load-balancing-is-uneven.html",
+   "source": "evanjones",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nanosecond timestamp collisions are common",
+   "url": "https://www.evanjones.ca/nanosecond-collisions.html",
+   "source": "evanjones",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How much does the read/write buffer size matter for socket throughput?",
+   "url": "https://www.evanjones.ca/read-write-buffer-size.html",
+   "source": "evanjones",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The C Standard Library Function isspace() Depends on Locale",
+   "url": "https://www.evanjones.ca/isspace_locale.html",
+   "source": "evanjones",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Huge Pages are a Good Idea",
+   "url": "https://www.evanjones.ca/hugepages-are-a-good-idea.html",
+   "source": "evanjones",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Replicating Database Changes to a Message Queue is Tricky",
+   "url": "https://www.evanjones.ca/replicating-db-to-queue.html",
+   "source": "evanjones",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Go: Functional options are slow",
+   "url": "https://www.evanjones.ca/go-functional-options-slow.html",
+   "source": "evanjones",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Postgres large sub-string query performance",
+   "url": "https://www.evanjones.ca/postgres-large-string-performance.html",
+   "source": "evanjones",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Postgres large JSON value query performance",
+   "url": "https://www.evanjones.ca/postgres-large-json-performance.html",
+   "source": "evanjones",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Likelihood-ratio inference on differences in quantiles",
+   "url": "https://arxiv.org/abs/2401.10233",
+   "source": "evanmiller",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Attention Is Off By One",
+   "url": "https://www.evanmiller.org/attention-is-off-by-one.html",
+   "source": "evanmiller",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Formulas for Bootstrapping Sample Medians",
+   "url": "https://www.evanmiller.org/bootstrapping-sample-medians.html",
+   "source": "evanmiller",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You Can’t Spell CUPED Without Frisch-Waugh-Lovell",
+   "url": "https://www.evanmiller.org/you-cant-spell-cuped-without-frisch-waugh-lovell.html",
+   "source": "evanmiller",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Floppy Disk of Floating Point",
+   "url": "https://www.evanmiller.org/the-floppy-disk-of-floating-point.html",
+   "source": "evanmiller",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Updated: Formulas for Bayesian A/B Testing",
+   "url": "https://www.evanmiller.org/bayesian-ab-testing.html",
+   "source": "evanmiller",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SlowerLogLog",
+   "url": "https://www.evanmiller.org/slower-log-log.html",
+   "source": "evanmiller",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Preface to A Lost Lady",
+   "url": "https://www.evanmiller.org/prefaces/a-lost-lady.html",
+   "source": "evanmiller",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Preface to Brave New World",
+   "url": "https://www.evanmiller.org/prefaces/brave-new-world.html",
+   "source": "evanmiller",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Preface to The Time Machine",
+   "url": "https://www.evanmiller.org/prefaces/the-time-machine.html",
+   "source": "evanmiller",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Preface to Frankenstein",
+   "url": "https://www.evanmiller.org/prefaces/frankenstein.html",
+   "source": "evanmiller",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Amex EveryDay Bonus: A Stochastic Valuation Model",
+   "url": "https://www.evanmiller.org/amex-everyday-bonus-stochastic-valuation.html",
+   "source": "evanmiller",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things That Bother Me About Swift",
+   "url": "https://www.evanmiller.org/things-that-bother-me-about-swift.html",
+   "source": "evanmiller",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things That Bother Me About macOS",
+   "url": "https://www.evanmiller.org/things-that-bother-me-about-macos.html",
+   "source": "evanmiller",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Review of Perl 6",
+   "url": "https://www.evanmiller.org/a-review-of-perl-6.html",
+   "source": "evanmiller",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -85608,6 +85985,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "HOWTO: Change your behavior",
+   "url": "http://matt.might.net/articles/how-to-change-your-behavior/",
+   "source": "mattmight",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hello, Perceptron: An introduction to artificial neural networks",
+   "url": "http://matt.might.net/articles/hello-perceptron/",
+   "source": "mattmight",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Make a fun, infinitely replayable game in 5 minutes with GPT-4",
+   "url": "http://matt.might.net/articles/make-a-text-game-with-generative-ai/",
+   "source": "mattmight",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "12 resolutions for programmers",
+   "url": "http://matt.might.net/articles/programmers-resolutions/",
+   "source": "mattmight",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "26 programming languages in 25 days, Part 2: Reflections on language design",
+   "url": "http://matt.might.net/articles/26-languages-part2/",
+   "source": "mattmight",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "26 programming languages in 25 days, Part 1: Strategy, tactics and logistics",
+   "url": "http://matt.might.net/articles/26-languages-part1/",
+   "source": "mattmight",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HOWTO: Avoid temptation -- why avoiding temptation is harder than you think",
+   "url": "http://matt.might.net/articles/how-to-avoid-temptation/",
+   "source": "mattmight",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HOWTO: Control yourself",
+   "url": "http://matt.might.net/articles/how-to-control-yourself/",
+   "source": "mattmight",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HOWTO: Get tenure",
+   "url": "http://matt.might.net/articles/tenure/",
+   "source": "mattmight",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Counting hash collisions with the birthday paradox",
+   "url": "http://matt.might.net/articles/counting-hash-collisions/",
+   "source": "mattmight",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Eric’s Memorial",
    "url": "https://ma.tt/2026/11/erics-memorial/",
    "source": "mattt",
@@ -85843,6 +86300,126 @@
    "title": "Using Elves to Keep Go Toolchain Up-to-Date",
    "url": "https://matttproud.com/blog/posts/using-elves-to-keep-go-up-to-date.html",
    "source": "matttproud",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Analysing .NET start-up time with Flamegraphs",
+   "url": "http://www.mattwarren.org/2020/03/03/Analysing-.NET-Runtime-Startup-with-Flamegraphs/",
+   "source": "mattwarren",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Under the hood of \"Default Interface Methods\"",
+   "url": "http://www.mattwarren.org/2020/02/19/Under-the-hood-of-Default-Interface-Methods/",
+   "source": "mattwarren",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Research based on the .NET Runtime",
+   "url": "http://www.mattwarren.org/2019/10/25/Research-based-on-the-.NET-Runtime/",
+   "source": "mattwarren",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"Stubs\" in the .NET Runtime",
+   "url": "http://www.mattwarren.org/2019/09/26/Stubs-in-the-.NET-Runtime/",
+   "source": "mattwarren",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ASCII Art in .NET Code",
+   "url": "http://www.mattwarren.org/2019/04/25/ASCII-Art-in-.NET-Code/",
+   "source": "mattwarren",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is C# a low-level language?",
+   "url": "http://www.mattwarren.org/2019/03/01/Is-CSharp-a-low-level-language/",
+   "source": "mattwarren",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"Stack Walking\" in the .NET Runtime",
+   "url": "http://www.mattwarren.org/2019/01/21/Stackwalking-in-the-.NET-Runtime/",
+   "source": "mattwarren",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exploring the .NET Core Runtime (in which I set myself a challenge)",
+   "url": "http://www.mattwarren.org/2018/12/13/Exploring-the-.NET-Core-Runtime/",
+   "source": "mattwarren",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Open Source .NET – 4 years later",
+   "url": "http://www.mattwarren.org/2018/12/04/Open-Source-.Net-4-years-later",
+   "source": "mattwarren",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A History of .NET Runtimes",
+   "url": "http://www.mattwarren.org/2018/10/02/A-History-of-.NET-Runtimes/",
+   "source": "mattwarren",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fuzzing the .NET JIT Compiler",
+   "url": "http://www.mattwarren.org/2018/08/28/Fuzzing-the-.NET-JIT-Compiler/",
+   "source": "mattwarren",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Monitoring and Observability in the .NET Runtime",
+   "url": "http://www.mattwarren.org/2018/08/21/Monitoring-and-Observability-in-the-.NET-Runtime/",
+   "source": "mattwarren",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Presentations and Talks covering '.NET Internals'",
+   "url": "http://www.mattwarren.org/2018/07/12/Presentations-and-Talks-covering-.NET-Internals/",
+   "source": "mattwarren",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": ".NET JIT and CLR - Joined at the Hip",
+   "url": "http://www.mattwarren.org/2018/07/05/.NET-JIT-and-CLR-Joined-at-the-Hip/",
+   "source": "mattwarren",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tools for Exploring .NET Internals",
+   "url": "http://www.mattwarren.org/2018/06/15/Tools-for-Exploring-.NET-Internals/",
+   "source": "mattwarren",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -93488,6 +94065,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Reasoning about asyncio.Semaphore",
+   "url": "http://neopythonic.blogspot.com/2022/10/reasoning-about-asynciosemaphore.html",
+   "source": "neopythonicblogspot",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Meeting Mike Burrows",
+   "url": "http://neopythonic.blogspot.com/2022/02/meeting-mike-burrows.html",
+   "source": "neopythonicblogspot",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why operators are useful",
+   "url": "http://neopythonic.blogspot.com/2019/03/why-operators-are-useful.html",
+   "source": "neopythonicblogspot",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What to do with your computer science career",
+   "url": "http://neopythonic.blogspot.com/2018/11/what-do-do-with-your-computer-science.html",
+   "source": "neopythonicblogspot",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "About spammers and comments",
+   "url": "http://neopythonic.blogspot.com/2016/07/about-spammers-and-comments.html",
+   "source": "neopythonicblogspot",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Union syntax",
+   "url": "http://neopythonic.blogspot.com/2016/05/union-syntax.html",
+   "source": "neopythonicblogspot",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Adding type annotations for fspath",
+   "url": "http://neopythonic.blogspot.com/2016/05/adding-type-annotations-for-fspath.html",
+   "source": "neopythonicblogspot",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The AnyStr type variable",
+   "url": "http://neopythonic.blogspot.com/2016/05/the-anystr-type-variable.html",
+   "source": "neopythonicblogspot",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "King's Day Speech",
+   "url": "http://neopythonic.blogspot.com/2016/04/kings-day-speech.html",
+   "source": "neopythonicblogspot",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Book review: Introduction to Computer Science Using Python (by Charles Dierbach)",
+   "url": "http://neopythonic.blogspot.com/2013/10/book-review-charles-dierbach.html",
+   "source": "neopythonicblogspot",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Letter to a young programmer",
+   "url": "http://neopythonic.blogspot.com/2013/10/letter-to-young-programmer.html",
+   "source": "neopythonicblogspot",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Compare-And-Set in Memcache",
+   "url": "http://neopythonic.blogspot.com/2011/08/compare-and-set-in-memcache.html",
+   "source": "neopythonicblogspot",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Before Python",
+   "url": "http://neopythonic.blogspot.com/2011/07/before-python.html",
+   "source": "neopythonicblogspot",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The depth and breadth of Python",
+   "url": "http://neopythonic.blogspot.com/2011/06/depth-and-breadth-of-python.html",
+   "source": "neopythonicblogspot",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Asynchronous RPC in App Engine Today",
+   "url": "http://neopythonic.blogspot.com/2011/01/asynchronous-rpc-in-app-engine-today.html",
+   "source": "neopythonicblogspot",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "WWW Ep260 Will AI Kill Us All Jev Says 87",
    "url": "https://nerdy.dev/www-ep260-will-ai-kill-us-all-jev-says-87?utm_source=rss",
    "source": "nerdy",
@@ -96228,6 +96925,86 @@
    "url": "https://notlaura.com/weekly-wanderings-5-5/",
    "source": "notlaura",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Replay",
+   "url": "https://nshipster.com/replay",
+   "source": "nshipster",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Manim",
+   "url": "https://nshipster.com/manim",
+   "source": "nshipster",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "@isolated(any)",
+   "url": "https://nshipster.com/isolated-any",
+   "source": "nshipster",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Uncertain⟨T⟩",
+   "url": "https://nshipster.com/uncertainty",
+   "source": "nshipster",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Model Context Protocol (MCP)",
+   "url": "https://nshipster.com/model-context-protocol",
+   "source": "nshipster",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ollama",
+   "url": "https://nshipster.com/ollama",
+   "source": "nshipster",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "op run",
+   "url": "https://nshipster.com/1password-cli",
+   "source": "nshipster",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "As We May Code",
+   "url": "https://nshipster.com/as-we-may-code",
+   "source": "nshipster",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WWDC 2020",
+   "url": "https://nshipster.com/wwdc-2020",
+   "source": "nshipster",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Language Server Protocol",
+   "url": "https://nshipster.com/language-server-protocol",
+   "source": "nshipster",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -102552,6 +103329,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "How To Setup Own Bitcoin Simulation Network",
+   "url": "http://piotrpasich.com/how-to-setup-own-bitcoin-simulation-network/",
+   "source": "piotrpasich",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introduction to Bitcoin for Developers",
+   "url": "http://piotrpasich.com/introduction-bitcoin-for-developers/",
+   "source": "piotrpasich",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Blockchain fundamentals for developers",
+   "url": "http://piotrpasich.com/the-blockchain-fundamentals-for-developers/",
+   "source": "piotrpasich",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7 PHP UK 2017’s talks you must see",
+   "url": "http://piotrpasich.com/7-php-uk-2017s-talks-you-must-see/",
+   "source": "piotrpasich",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to hack the form? SQL Injection",
+   "url": "http://piotrpasich.com/how-to-hack-the-form-sql-injection/",
+   "source": "piotrpasich",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Putting all pieces together and shipping with Codeship (part III)",
+   "url": "http://piotrpasich.com/putting-all-pieces-together-and-shipping-with-codeship-part-iii/",
+   "source": "piotrpasich",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Automated deployment with AWS Elastic Beanstalk (EB) – Part II",
+   "url": "http://piotrpasich.com/automated-deployment-with-aws-elastic-beanstalk-eb-part-ii/",
+   "source": "piotrpasich",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Continuous Deployment environment with Docker, AWS EB and Codeship",
+   "url": "http://piotrpasich.com/continuous-deployment-environment-with-docker-aws-eb-and-codeship/",
+   "source": "piotrpasich",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Livecoding the SlackMessenger",
+   "url": "http://piotrpasich.com/livecoding-the-slackmessenger/",
+   "source": "piotrpasich",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From 0 to Continuous deployment in 90 minutes",
+   "url": "http://piotrpasich.com/from-0-to-continuous-deployment-in-90-minutes/",
+   "source": "piotrpasich",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Ten Lines Of Code That Changed My World",
    "url": "/2026/ten-lines-of-code/",
    "source": "pixelambacht",
@@ -104264,6 +105121,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "From boiling lead and black art: An essay on the history of mathematical typography",
+   "url": "http://www.practicallyefficient.com/2017/10/13/from-boiling-lead-and-black-art.html",
+   "source": "practicallyefficient",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "But I already paid for it?!?!",
+   "url": "http://www.practicallyefficient.com/2017/08/15/but-i-already-paid.html",
+   "source": "practicallyefficient",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dave, this conversation can serve no purpose anymore. Goodbye.",
+   "url": "http://www.practicallyefficient.com/2017/07/29/open-the-pod-bay-doors.html",
+   "source": "practicallyefficient",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A nod to checklists",
+   "url": "http://www.practicallyefficient.com/2017/07/25/checklists.html",
+   "source": "practicallyefficient",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A couple of Jekyll updates",
+   "url": "http://www.practicallyefficient.com/2017/07/02/a-couple-of-jekyll-updates.html",
+   "source": "practicallyefficient",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Look but don't type",
+   "url": "http://www.practicallyefficient.com/2017/06/24/look-but-dont-type.html",
+   "source": "practicallyefficient",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "It doesn’t want anything",
+   "url": "http://www.practicallyefficient.com/2017/06/21/doesnt-want-anything.html",
+   "source": "practicallyefficient",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thinking out loud about the Apple Watch",
+   "url": "http://www.practicallyefficient.com/2017/06/20/watch-thinking.html",
+   "source": "practicallyefficient",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "One-off shell script execution in BBEdit",
+   "url": "http://www.practicallyefficient.com/2017/06/14/shell-scripts-in-bbedit.html",
+   "source": "practicallyefficient",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lessons from the president",
+   "url": "http://www.practicallyefficient.com/2017/06/10/lessons-from-the-president.html",
+   "source": "practicallyefficient",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "The Pulse: Details of incident.io’s AI spend",
    "url": "https://blog.pragmaticengineer.com/the-pulse-details-of-incident-ios-ai-spend/",
    "source": "pragmatic",
@@ -104660,6 +105597,126 @@
    "url": "https://preset-env.cssdb.org/blog/can-use-boolean-custom-media/",
    "source": "presetenvcssdb",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How C++ Resolves a Function Call",
+   "url": "https://preshing.com/20210315/how-cpp-resolves-a-function-call",
+   "source": "preshing",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Flap Hero Code Review",
+   "url": "https://preshing.com/20201210/flap-hero-code-review",
+   "source": "preshing",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Small Open Source Game In C++",
+   "url": "https://preshing.com/20201126/a-small-open-source-game-in-cpp",
+   "source": "preshing",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Automatically Detecting Text Encodings in C++",
+   "url": "https://preshing.com/20200727/automatically-detecting-text-encodings-in-cpp",
+   "source": "preshing",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I/O in Plywood",
+   "url": "https://preshing.com/20200708/io-in-plywood",
+   "source": "preshing",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A New Cross-Platform Open Source C++ Framework",
+   "url": "https://preshing.com/20200526/a-new-cross-platform-open-source-cpp-framework",
+   "source": "preshing",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Flexible Reflection System in C++: Part 2",
+   "url": "https://preshing.com/20180124/a-flexible-reflection-system-in-cpp-part-2",
+   "source": "preshing",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Flexible Reflection System in C++: Part 1",
+   "url": "https://preshing.com/20180116/a-primitive-reflection-system-in-cpp-part-1",
+   "source": "preshing",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Write Your Own C++ Game Engine",
+   "url": "https://preshing.com/20171218/how-to-write-your-own-cpp-game-engine",
+   "source": "preshing",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can Reordering of Release/Acquire Operations Introduce Deadlock?",
+   "url": "https://preshing.com/20170612/can-reordering-of-release-acquire-operations-introduce-deadlock",
+   "source": "preshing",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Here's a Standalone Cairo DLL for Windows",
+   "url": "https://preshing.com/20170529/heres-a-standalone-cairo-dll-for-windows",
+   "source": "preshing",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learn CMake's Scripting Language in 15 Minutes",
+   "url": "https://preshing.com/20170522/learn-cmakes-scripting-language-in-15-minutes",
+   "source": "preshing",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Build a CMake-Based Project",
+   "url": "https://preshing.com/20170511/how-to-build-a-cmake-based-project",
+   "source": "preshing",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using Quiescent States to Reclaim Memory",
+   "url": "https://preshing.com/20160726/using-quiescent-states-to-reclaim-memory",
+   "source": "preshing",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Leapfrog Probing",
+   "url": "https://preshing.com/20160314/leapfrog-probing",
+   "source": "preshing",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -106683,6 +107740,126 @@
    "title": "Month notes & numbers No. 15",
    "url": "https://rachsmith.com/mnan-15",
    "source": "rachsmith",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing DevReading.com",
+   "url": "https://radek.io/posts/introducing-devreading-com/",
+   "source": "radek",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Will AI Make Us Prisoners of Our Bad Habits?",
+   "url": "https://radek.io/posts/will-ai-make-us-prisoners-of-our-bad-habits/",
+   "source": "radek",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Humane AI Pin and the Future of Computer Interfaces",
+   "url": "https://radek.io/posts/the-humane-ai-pin-and-the-future-of-computer-interfaces/",
+   "source": "radek",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Google or Meta Won't Let You Pay for Privacy",
+   "url": "https://radek.io/posts/why-google-or-meta-wont-let-you-pay-for-privacy/",
+   "source": "radek",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Add Synonyms to MiniSearch",
+   "url": "https://radek.io/posts/how-to-add-synonyms-to-minisearch/",
+   "source": "radek",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What I Learned from Zero to One",
+   "url": "https://radek.io/posts/zero-to-one-what-i-learned/",
+   "source": "radek",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Architecture and Gardening for Startups",
+   "url": "https://radek.io/posts/architecture-and-gardening-for-startups/",
+   "source": "radek",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can You Move the Button 30px to the Left?",
+   "url": "https://radek.io/posts/can-you-move-the-button/",
+   "source": "radek",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Build a Secret Dark Mode Toggle for Your Blog",
+   "url": "https://radek.io/posts/secret-darkmode-toggle/",
+   "source": "radek",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "FOSDEM 2016: What I learned",
+   "url": "https://radek.io/posts/fosdem-2016/",
+   "source": "radek",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2015 on radek.io",
+   "url": "https://radek.io/posts/happy-new-year/",
+   "source": "radek",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing for developers, part 3",
+   "url": "https://radek.io/posts/writing-for-developers-3/",
+   "source": "radek",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing for developers, part 2",
+   "url": "https://radek.io/posts/writing-for-programmers-2/",
+   "source": "radek",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing for developers",
+   "url": "https://radek.io/posts/writing-for-programmers-1/",
+   "source": "radek",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My notes from LNUG November 2015",
+   "url": "https://radek.io/posts/lnug-november-2015/",
+   "source": "radek",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -110112,6 +111289,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Native Async/Coroutine Reads in RocksDB",
+   "url": "http://rocksdb.org/blog/2026/08/24/native-coroutine-reads.html",
+   "source": "rocksdb",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Range Tombstone Conversion: Faster Scans Over Long Runs of Deletes",
+   "url": "http://rocksdb.org/blog/2026/06/22/range-tombstone-conversion.html",
+   "source": "rocksdb",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "FIFO KV-Ratio Compaction for BlobDB-Backed TTL Workloads",
+   "url": "http://rocksdb.org/blog/2026/06/20/fifo-kv-ratio-compaction.html",
+   "source": "rocksdb",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Blob Direct Write With Partitioned Blob Files",
+   "url": "http://rocksdb.org/blog/2026/06/20/blob-direct-write-partitioned-blob-files.html",
+   "source": "rocksdb",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Resumable Remote Compaction",
+   "url": "http://rocksdb.org/blog/2026/05/19/resumable-remote-compaction.html",
+   "source": "rocksdb",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Interpolation search for SST index blocks",
+   "url": "http://rocksdb.org/blog/2026/05/04/interpolation-search.html",
+   "source": "rocksdb",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RocksDB development finds a CPU bug",
+   "url": "http://rocksdb.org/blog/2026/02/17/cpu-bug.html",
+   "source": "rocksdb",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "BitFields API: Type-Safe Bit Packing for Lock-Free Data Structures",
+   "url": "http://rocksdb.org/blog/2025/12/31/bit-fields-api.html",
+   "source": "rocksdb",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Parallel Compression Revamp: Dramatically Reduced CPU Overhead",
+   "url": "http://rocksdb.org/blog/2025/10/08/parallel-compression-revamp.html",
+   "source": "rocksdb",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "IO Activity Tagging",
+   "url": "http://rocksdb.org/blog/2025/09/25/io-tagging.html",
+   "source": "rocksdb",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Things 3",
    "url": "https://www.romainguy.dev/posts/2026/things-3/",
    "source": "romainguy",
@@ -111500,6 +112757,126 @@
    "url": "https://sammacbeth.eu/running-webextensions-on-android-with-geckoview",
    "source": "sammacbeth",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "About the Blog category",
+   "url": "https://discuss.samsaffron.com/t/about-the-blog-category/3060#post_1",
+   "source": "samsaffron",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The age of personalized software",
+   "url": "https://discuss.samsaffron.com/t/the-age-of-personalized-software/2511#post_1",
+   "source": "samsaffron",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your vibe coded slop PR is not welcome",
+   "url": "https://discuss.samsaffron.com/t/your-vibe-coded-slop-pr-is-not-welcome/2492#post_4",
+   "source": "samsaffron",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your vibe coded slop PR is not welcome",
+   "url": "https://discuss.samsaffron.com/t/your-vibe-coded-slop-pr-is-not-welcome/2492#post_3",
+   "source": "samsaffron",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your vibe coded slop PR is not welcome",
+   "url": "https://discuss.samsaffron.com/t/your-vibe-coded-slop-pr-is-not-welcome/2492#post_2",
+   "source": "samsaffron",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your vibe coded slop PR is not welcome",
+   "url": "https://discuss.samsaffron.com/t/your-vibe-coded-slop-pr-is-not-welcome/2492#post_1",
+   "source": "samsaffron",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Discourse in a Docker container",
+   "url": "https://discuss.samsaffron.com/t/discourse-in-a-docker-container/78?page=2#post_25",
+   "source": "samsaffron",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Discourse in a Docker container",
+   "url": "https://discuss.samsaffron.com/t/discourse-in-a-docker-container/78?page=2#post_24",
+   "source": "samsaffron",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Commenting powered by Discourse",
+   "url": "https://discuss.samsaffron.com/t/commenting-powered-by-discourse/82#post_15",
+   "source": "samsaffron",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Commenting powered by Discourse",
+   "url": "https://discuss.samsaffron.com/t/commenting-powered-by-discourse/82#post_14",
+   "source": "samsaffron",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Category definition for Meta",
+   "url": "https://discuss.samsaffron.com/t/category-definition-for-meta/86#post_2",
+   "source": "samsaffron",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "About the AI category",
+   "url": "https://discuss.samsaffron.com/t/about-the-ai-category/1228#post_1",
+   "source": "samsaffron",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Claude 3 Opus - First impressions",
+   "url": "https://discuss.samsaffron.com/t/claude-3-opus-first-impressions/1205#post_1",
+   "source": "samsaffron",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An analysis of memory bloat in Active Record 5.2",
+   "url": "https://discuss.samsaffron.com/t/an-analysis-of-memory-bloat-in-active-record-5-2/422#post_20",
+   "source": "samsaffron",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An analysis of memory bloat in Active Record 5.2",
+   "url": "https://discuss.samsaffron.com/t/an-analysis-of-memory-bloat-in-active-record-5-2/422#post_19",
+   "source": "samsaffron",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -123416,6 +124793,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Haskell at FINN.no",
+   "url": "https://tech.finn.no2018/10/18/haskell-at-finn-no/",
+   "source": "techfinn",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Preparing your product for machine learning",
+   "url": "https://tech.finn.no2018/08/09/preparing-your-product-for-ml/",
+   "source": "techfinn",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 learnings from Hack Days in FINN",
+   "url": "https://tech.finn.no2018/06/28/hack-days-in-finn/",
+   "source": "techfinn",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Personalized search with a custom Solr plugin",
+   "url": "https://tech.finn.no2018/04/10/personalized-search/",
+   "source": "techfinn",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Åpen fagkveld hjemme hos FINN",
+   "url": "https://tech.finn.no2018/02/06/fagkveld/",
+   "source": "techfinn",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Browser statistics December 2017",
+   "url": "https://tech.finn.no2017/12/13/browser-statistics-december-2017/",
+   "source": "techfinn",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "FINN wins Universal Design Award",
+   "url": "https://tech.finn.no2017/10/30/finn-wins-universal-design-award/",
+   "source": "techfinn",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Akka workshop at Finn.no",
+   "url": "https://tech.finn.no2017/10/17/akka-workshop-finn-no/",
+   "source": "techfinn",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deep NLP-based Recommenders at Finn.no",
+   "url": "https://tech.finn.no2017/09/08/NLP-based-recommenders-at-finn/",
+   "source": "techfinn",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The summer interns of 2017",
+   "url": "https://tech.finn.no2017/08/08/summerinterns-2017/",
+   "source": "techfinn",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From Hadoop and Cassandra to Kafka Streams",
+   "url": "https://tech.finn.no2017/07/31/from-hadoop-and-cassandra-to-kafka-streams/",
+   "source": "techfinn",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Flappy Cat",
+   "url": "https://tech.finn.no2017/07/19/flappy-cat/",
+   "source": "techfinn",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WAI-ARIA and its true impact on assistive technologies",
+   "url": "https://tech.finn.no2017/06/07/wai-aria-and-its-true-impact-on-assistive-technologies/",
+   "source": "techfinn",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unleash Your Features Gradually",
+   "url": "https://tech.finn.no2017/03/10/unleash-your-features-gradually/",
+   "source": "techfinn",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Åpen fagkveld 7. mars",
+   "url": "https://tech.finn.no2017/02/09/fagkveld/",
+   "source": "techfinn",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Element-scoped View Transitions",
    "url": "https://techhub.iodigital.com/articles/element-scoped-view-transitions",
    "source": "techhubiodigital",
@@ -124139,6 +125636,126 @@
    "title": "Designing and building from our own worldview",
    "url": "https://www.tempertemper.net/blog/designing-and-building-from-our-own-worldview",
    "source": "tempertemper",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Static Analysis for the Uninitialized",
+   "url": "https://tenderlovemaking.com/2026/10/18/static-analysis-for-the-uninitialized/",
+   "source": "tenderlovemaking",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What a time to be alive",
+   "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive/",
+   "source": "tenderlovemaking",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Detecting Full Table Scans With SQLite",
+   "url": "https://tenderlovemaking.com/2026/07/15/detecting-full-table-scans-with-sqlite/",
+   "source": "tenderlovemaking",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rails Security, AI, and IBB",
+   "url": "https://tenderlovemaking.com/2026/05/06/rails-security-ai-and-ibb/",
+   "source": "tenderlovemaking",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bainbridge Island Mochi Tsuki",
+   "url": "https://tenderlovemaking.com/shots/2026-01-19-bainbridge-island-mochi-tsuki/",
+   "source": "tenderlovemaking",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pixoo64 Ruby Client",
+   "url": "https://tenderlovemaking.com/2026/01/01/pixoo64-ruby-client/",
+   "source": "tenderlovemaking",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cat Pics",
+   "url": "https://tenderlovemaking.com/shots/2025-12-30-cat-pics/",
+   "source": "tenderlovemaking",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can Bundler Be as Fast as uv?",
+   "url": "https://tenderlovemaking.com/2025/12/29/can-bundler-be-as-fast-as-uv/",
+   "source": "tenderlovemaking",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Happy Holidays",
+   "url": "https://tenderlovemaking.com/shots/2025-12-22-happy-holidays/",
+   "source": "tenderlovemaking",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Seattle Waterfront",
+   "url": "https://tenderlovemaking.com/shots/2025-12-16-seattle-waterfront/",
+   "source": "tenderlovemaking",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Seattle Downtown Library",
+   "url": "https://tenderlovemaking.com/shots/2025-11-30-public-library/",
+   "source": "tenderlovemaking",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple Photos App Corrupts Images",
+   "url": "https://tenderlovemaking.com/2025/09/17/apple-photos-app-corrupts-images/",
+   "source": "tenderlovemaking",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "File preallocation on macOS in Ruby",
+   "url": "https://tenderlovemaking.com/2025/09/10/file-preallocation-on-macos-in-ruby/",
+   "source": "tenderlovemaking",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Monkey Patch Detection in Ruby",
+   "url": "https://tenderlovemaking.com/2024/10/16/monkey-patch-detection-in-ruby/",
+   "source": "tenderlovemaking",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Eliminating Intermediate Array Allocations",
+   "url": "https://tenderlovemaking.com/2024/09/29/eliminating-intermediate-array-allocations/",
+   "source": "tenderlovemaking",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -130972,6 +132589,46 @@
    "url": "https://unsearcher.org/cookie-reidentification-with-viadeo",
    "source": "unsearcher",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Alignment Trap: AI Safety as Path to Power",
+   "url": "https://upcoder.com/22/the-alignment-trap-ai-safety-as-path-to-power",
+   "source": "upcoder",
+   "rank": 1,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is There a Power Play Overhang?",
+   "url": "https://upcoder.com/21/is-there-a-power-play-overhang",
+   "source": "upcoder",
+   "rank": 2,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "C/C++ Include Guidelines",
+   "url": "https://upcoder.com/20/cc-include-guidelines",
+   "source": "upcoder",
+   "rank": 3,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Automatic Object Linkage, with Include Graphs",
+   "url": "https://upcoder.com/19/automatic-object-linkage-with-include-graphs",
+   "source": "upcoder",
+   "rank": 4,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Static Libs Do Not Modular Make",
+   "url": "https://upcoder.com/18/static-libs-do-not-modular-make",
+   "source": "upcoder",
+   "rank": 5,
    "score": 1,
    "metric": "feed rank"
   },

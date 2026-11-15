@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T19:25:41.641265+00:00",
+ "generated_at": "2026-11-15T19:29:21.046446+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 1680,
+ "total": 1698,
  "domains": [
   {
    "hostname": "blog.google",
@@ -193,6 +193,23 @@
    }
   },
   {
+   "hostname": "arxiv.org",
+   "days_on_board": 2,
+   "items": 17,
+   "sources": [
+    "arxiv",
+    "evanmiller",
+    "lobsters"
+   ],
+   "top_hit": {
+    "title": "Unbundling Multimodal Vision Encoding",
+    "url": "http://arxiv.org/abs/2611.17334v1",
+    "score": 15,
+    "metric": "arxiv recent",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "reddit.com",
    "days_on_board": 2,
    "items": 17,
@@ -207,22 +224,6 @@
     "score": 382,
     "metric": "points",
     "date": "2026-11-13"
-   }
-  },
-  {
-   "hostname": "arxiv.org",
-   "days_on_board": 2,
-   "items": 16,
-   "sources": [
-    "arxiv",
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "Unbundling Multimodal Vision Encoding",
-    "url": "http://arxiv.org/abs/2611.17334v1",
-    "score": 15,
-    "metric": "arxiv recent",
-    "date": "2026-11-15"
    }
   },
   {
