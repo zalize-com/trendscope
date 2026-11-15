@@ -74,6 +74,7 @@ compare within a source, not across.
   copy lives at `docs/api/movers-latest.json` for programmatic consumers.
 - **Streaks** (`streaks.html`): staying-power leaderboard — items ranked by
   consecutive days on the board, computed client-side from `history.csv`.
+- **Risers** (`risers.html`): biggest single-day score spikes across all history, computed client-side from `history.csv`.
 - **Domains** (`domains.html`): most-linked sites across all snapshots,
   grouped by hostname from `history.csv`.
 - **Item history** (`item.html?q=`): any story/package's day-by-day rank & score trajectory.
