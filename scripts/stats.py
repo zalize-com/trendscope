@@ -92,6 +92,21 @@ def main():
         json.dump({"schemaVersion": 1, "label": "items tracked",
                    "message": f"{doc['total_rows']:,} rows · {doc['days_tracked']}d",
                    "color": "2b6cb0"}, f)
+
+    # "top story today" badge — a one-line README widget; every README that
+    # embeds it is an inbound link back to trendscope.
+    try:
+        latest = json.load(open(os.path.join(ROOT, "data", "latest.json")))
+        items = latest.get("items", {})
+        hn = items.get("hackernews", [])
+        top = hn[0]["title"] if hn else ""
+        if len(top) > 60:
+            top = top[:57] + "…"
+        with open(os.path.join(API, "badge-top.json"), "w") as f:
+            json.dump({"schemaVersion": 1, "label": "trendscope top",
+                       "message": top, "color": "2b6cb0"}, f)
+    except Exception as e:
+        print(f"  [warn] top badge skipped: {e}", file=sys.stderr)
     print(f"wrote {os.path.relpath(out, ROOT)} "
           f"({doc['days_tracked']}d, {doc['total_rows']} rows, "
           f"{doc['unique_urls']} urls)")

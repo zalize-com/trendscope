@@ -34,3 +34,11 @@ print(snap["date"], snap["total_items"])
 ```
 
 Attribution is welcome but not required — CC0.
+
+### `docs/api/badge-top.json`
+shields.io endpoint badge carrying today's #1 HN story — embed a live
+"top story" widget in any README:
+
+```markdown
+![top](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zalize-com/trendscope/main/docs/api/badge-top.json)
+```
