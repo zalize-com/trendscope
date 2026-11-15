@@ -419,6 +419,15 @@ cherry"></textarea>
     <div class="out" id="sv-out"></div>
   </div>
 
+  <div class="tool" data-tool="regex">
+    <h2>regex tester</h2>
+    <p class="hint">Pattern + flags + test text → highlighted matches with capture groups.</p>
+    <input id="rx-pat" placeholder="\b\w+@\w+\.\w+\b" style="width:62%;font-family:ui-monospace,monospace">
+    <input id="rx-fl" placeholder="gi" style="width:10%;font-family:ui-monospace,monospace">
+    <textarea id="rx-in" rows="4" placeholder="mail a@b.com or c@d.org" style="width:100%"></textarea>
+    <div class="out" id="rx-out" style="margin-top:8px"></div>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -458,6 +467,7 @@ const TOOLS = [
   {id:"roman",label:"roman numerals"},
   {id:"mime",  label:"mime types"},
   {id:"semver",label:"semver"},
+  {id:"regex", label:"regex tester"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -1179,6 +1189,31 @@ function svCmp(){
     out.innerHTML=`<code>${a}</code> ${r<0?"&lt;":r>0?"&gt;":"="} <code>${b}</code>`;
   }catch(e){out.textContent="invalid semver: "+e.message}
 }
+
+function rxGo(){
+  const pat=document.getElementById("rx-pat").value;
+  const fl=document.getElementById("rx-fl").value.trim()||"g";
+  const txt=document.getElementById("rx-in").value;
+  const out=document.getElementById("rx-out");
+  out.innerHTML="";
+  if(!pat||!txt)return;
+  let re;
+  try{re=new RegExp(pat,fl.includes("g")?fl:fl+"g")}
+  catch(e){out.textContent="invalid pattern: "+e.message;return}
+  const escx=x=>{const d=document.createElement("div");d.textContent=x;return d.innerHTML};
+  let html="",last=0,groups=[],m,n=0;
+  while((m=re.exec(txt))&&n<200){
+    html+=escx(txt.slice(last,m.index))+"<mark>"+escx(m[0])+"</mark>";
+    last=m.index+m[0].length;
+    groups.push(`#${n+1}: "${m[0]}"`+(m.length>1?" groups: "+m.slice(1).map(g=>JSON.stringify(g)).join(", "):""));
+    n++;
+    if(m[0].length===0)re.lastIndex++;
+  }
+  html+=escx(txt.slice(last));
+  out.innerHTML=`<div style="margin-bottom:6px">${n} match${n===1?"":"es"}</div><div style="font-family:ui-monospace,monospace;white-space:pre-wrap">${html}</div>`
+    +(n?`<div class="hint" style="margin-top:6px">${groups.slice(0,12).map(escx).join("<br>")}${n>12?"<br>…":""}</div>`:"");
+}
+["rx-pat","rx-fl","rx-in"].forEach(id=>document.getElementById(id).addEventListener("input",rxGo));
 </script>
 </body>
 </html>
