@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T20:28:49.483063+00:00",
+  "generated_at": "2026-11-15T20:34:20.335984+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -74,18 +74,6 @@
         "rank": 1
       }
     },
-    "lobsters": {
-      "items": 34,
-      "unique_urls": 23,
-      "median_days_on_board": 1,
-      "one_day_pct": 57,
-      "top_item": {
-        "title": "Terminal borders that don't cost a cell",
-        "url": "https://www.joshka.net/cell-borders/",
-        "score": 396,
-        "rank": 9
-      }
-    },
     "github_trending": {
       "items": 34,
       "unique_urls": 19,
@@ -108,6 +96,18 @@
         "url": "https://dev.to/francistrdev/how-do-you-truly-stand-out-in-tech-478a",
         "score": 202,
         "rank": 1
+      }
+    },
+    "lobsters": {
+      "items": 32,
+      "unique_urls": 22,
+      "median_days_on_board": 1,
+      "one_day_pct": 59,
+      "top_item": {
+        "title": "Terminal borders that don't cost a cell",
+        "url": "https://www.joshka.net/cell-borders/",
+        "score": 396,
+        "rank": 9
       }
     },
     "reddit": {
@@ -348,6 +348,18 @@
         "url": "https://legal.programming.dev/docs/donation-policy/",
         "score": 197,
         "rank": 1
+      }
+    },
+    "planetdebian": {
+      "items": 15,
+      "unique_urls": 14,
+      "median_days_on_board": 1,
+      "one_day_pct": 93,
+      "top_item": {
+        "title": "Steinar H. Gunderson: Solving the fox game",
+        "url": "http://blog.sesse.net/blog/tech/2026-11-13-19-51_solving_the_fox_game.html",
+        "score": 19,
+        "rank": 8
       }
     },
     "arxiv": {
@@ -662,6 +674,18 @@
         "rank": 1
       }
     },
+    "planetclojure": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "slk 0.32.0",
+        "url": "https://kirahowe.com/2026/nov/12/slk-0-32-0",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "pythonblog": {
       "items": 15,
       "unique_urls": 15,
@@ -766,6 +790,18 @@
       "top_item": {
         "title": "Finally, Payment by Bank Transfer Comes to Have I Been Pwned",
         "url": "https://www.troyhunt.com/finally-payment-by-bank-transfer-comes-to-have-i-been-pwned/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "planetpython": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Speed Matters: zar-rs",
+        "url": "https://brmmm3.github.io/posts/2026/11/15/zar-rs/",
         "score": 15,
         "rank": 1
       }
@@ -2990,14 +3026,14 @@
         "rank": 1
       }
     },
-    "planetgnu": {
+    "planetemacs": {
       "items": 15,
       "unique_urls": 15,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
-        "title": "Get your free software gear for the end of the year",
-        "url": "http://www.fsf.org/blogs/community/get-your-free-software-gear-for-the-end-of-the-year",
+        "title": "Irreal: Vim To Emacs",
+        "url": "https://irreal.org/blog/?p=14220",
         "score": 15,
         "rank": 1
       }
@@ -3454,6 +3490,18 @@
       "top_item": {
         "title": "Polymarket users' funds stolen, again",
         "url": "https://web3isgoinggreat.com/single/polymarket-vendor-exploit-2",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "planethaskell": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Tweag I/O: Running local development services",
+        "url": "https://tweag.io/blog/2026-10-29-running-local-dev-services-with-nix/",
         "score": 15,
         "rank": 1
       }
@@ -3958,18 +4006,6 @@
       "top_item": {
         "title": "A Practical Guide to Robot Programming in Python",
         "url": "https://www.toptal.com/developers/robotics/programming-a-robot-an-introductory-tutorial",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "tweag": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Running local development services",
-        "url": "https://tweag.io/blog/2026-10-29-running-local-dev-services-with-nix/",
         "score": 15,
         "rank": 1
       }
@@ -4598,14 +4634,14 @@
         "rank": 1
       }
     },
-    "planetigalia": {
+    "planetfreedesktop": {
       "items": 15,
       "unique_urls": 15,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
-        "title": "Jan Varga: CSS Typed OM in Firefox: Ready to ride the trains",
-        "url": "https://blogs.igalia.com/jvarga/css-typed-om-in-firefox-ready-to-ride-the-trains/",
+        "title": "Ricardo Garcia: XDC 2026 CTS Talk",
+        "url": "https://rg3.name/202611091721.html",
         "score": 15,
         "rank": 1
       }
@@ -10142,6 +10178,66 @@
         "rank": 1
       }
     },
+    "rartificial": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "built a fact-checker that catches politicians lying in real-time",
+        "url": "https://www.reddit.com/r/artificial/comments/1xwmtff/built_a_factchecker_that_catches_politicians/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "planetgnome": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Code of Conduct Committee: Announcement: Missed CoC reports",
+        "url": "https://blogs.gnome.org/conduct/2026/09/29/announcement-missed-coc-reports/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "planetpostgresql": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Dinesh Kumar: How to Reduce PostgreSQL Memory Usage and Cut Your Cloud Bill in Half",
+        "url": "https://postgr.es/p/9BQ",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "planetjabber": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The XMPP Standards Foundation: XMPP Summit 30",
+        "url": "https://xmpp.org/2026/11/xmpp-summit-30/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "planetfedora": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Fedora Infrastructure Status: Updates and reboots on Fedora infrastructure",
+        "url": "https://status.fedoraproject.org/2026-11-19-updates-reboots.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -10162,18 +10258,6 @@
       "top_item": {
         "title": "May 2021 Gwern.net Newsletter",
         "url": "https://gwern.substack.com/p/may-2021-gwernnet-newsletter",
-        "score": 14,
-        "rank": 1
-      }
-    },
-    "bogoyavlensky": {
-      "items": 14,
-      "unique_urls": 14,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "clj-pulse: a fast Clojure language server",
-        "url": "https://bogoyavlensky.com/blog/clj-pulse/",
         "score": 14,
         "rank": 1
       }
@@ -10202,6 +10286,18 @@
         "rank": 1
       }
     },
+    "planetgnu": {
+      "items": 14,
+      "unique_urls": 14,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Get your free software gear for the end of the year",
+        "url": "http://www.fsf.org/blogs/community/get-your-free-software-gear-for-the-end-of-the-year",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "tinyprojects": {
       "items": 14,
       "unique_urls": 14,
@@ -10226,6 +10322,18 @@
         "rank": 1
       }
     },
+    "tweag": {
+      "items": 14,
+      "unique_urls": 14,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Adopting Nickel in CodeCommons",
+        "url": "https://tweag.io/blog/2026-10-22-code-commons-x-nickel/",
+        "score": 14,
+        "rank": 2
+      }
+    },
     "fengjian0106github": {
       "items": 14,
       "unique_urls": 14,
@@ -10235,6 +10343,18 @@
         "title": "手机端运行卷积神经网络实现文档检测功能(二) -- 从 VGG 到 MobileNetV2 知识梳理",
         "url": "http://fengjian0106.github.io/2018/06/02/Document-Scanning-With-TensorFlow-And-OpenCV-Part-Two/",
         "score": 14,
+        "rank": 1
+      }
+    },
+    "planetigalia": {
+      "items": 14,
+      "unique_urls": 14,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Jan Varga: CSS Typed OM in Firefox: Ready to ride the trains",
+        "url": "https://blogs.igalia.com/jvarga/css-typed-om-in-firefox-ready-to-ride-the-trains/",
+        "score": 15,
         "rank": 1
       }
     },
@@ -10370,30 +10490,6 @@
         "rank": 1
       }
     },
-    "aphyr": {
-      "items": 13,
-      "unique_urls": 12,
-      "median_days_on_board": 1,
-      "one_day_pct": 92,
-      "top_item": {
-        "title": "RIP, Harvest",
-        "url": "https://aphyr.com/posts/427-rip-harvest",
-        "score": 445,
-        "rank": 14
-      }
-    },
-    "jetbrains": {
-      "items": 13,
-      "unique_urls": 13,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "What’s Fixed and Improved in PyCharm 2026.3",
-        "url": "https://blog.jetbrains.com/pycharm/2026/11/what-s-fixed-and-improved-in-pycharm-2026-3/",
-        "score": 12,
-        "rank": 1
-      }
-    },
     "fogus": {
       "items": 13,
       "unique_urls": 13,
@@ -10428,6 +10524,18 @@
         "url": "https://architectelevator.com/transformation/digital-grass-greener/",
         "score": 13,
         "rank": 1
+      }
+    },
+    "bogoyavlensky": {
+      "items": 13,
+      "unique_urls": 13,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Sandboxing AI coding agents with Lima",
+        "url": "https://bogoyavlensky.com/blog/sandboxing-ai-coding-agents-with-lima/",
+        "score": 13,
+        "rank": 2
       }
     },
     "rosenzweig": {
@@ -10514,6 +10622,18 @@
         "rank": 1
       }
     },
+    "aphyr": {
+      "items": 12,
+      "unique_urls": 11,
+      "median_days_on_board": 1,
+      "one_day_pct": 91,
+      "top_item": {
+        "title": "RIP, Harvest",
+        "url": "https://aphyr.com/posts/427-rip-harvest",
+        "score": 445,
+        "rank": 14
+      }
+    },
     "baeldung": {
       "items": 12,
       "unique_urls": 12,
@@ -10522,6 +10642,18 @@
       "top_item": {
         "title": "Rate Limit Information from Anthropic API Response Headers Using ChatResponseMetadata in Spring AI",
         "url": "https://feeds.feedblitz.com/~/972994280/0/baeldung",
+        "score": 12,
+        "rank": 1
+      }
+    },
+    "jetbrains": {
+      "items": 12,
+      "unique_urls": 12,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "AI models hate Python and love PHP: we asked 12 of them 1,200 times",
+        "url": "https://blog.jetbrains.com/ai/2026/11/ai-models-hate-python-and-love-php-we-asked-12-of-them-1-200-times/",
         "score": 12,
         "rank": 1
       }
@@ -12338,18 +12470,6 @@
         "rank": 1
       }
     },
-    "metaredux": {
-      "items": 10,
-      "unique_urls": 10,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Clojurists Together Update: September and October 2026",
-        "url": "https://metaredux.com/posts/2026/11/06/clojurists-together-update-september-october-2026.html",
-        "score": 10,
-        "rank": 1
-      }
-    },
     "mko": {
       "items": 10,
       "unique_urls": 10,
@@ -12886,18 +13006,6 @@
       "top_item": {
         "title": "Get SoundSource 6.2 Today",
         "url": "https://weblog.rogueamoeba.com/2026/11/12/get-soundsource-6-2-today/",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "welltyped": {
-      "items": 10,
-      "unique_urls": 10,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Hypha: navigating Haskell source code for humans and machines",
-        "url": "https://well-typed.com/blog/2026/10/hypha-navigating-haskell-source-code",
         "score": 10,
         "rank": 1
       }
@@ -16658,18 +16766,6 @@
         "rank": 1
       }
     },
-    "blogrtwilson": {
-      "items": 10,
-      "unique_urls": 10,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "I released Cloud-Native Environment Agency DEM data!",
-        "url": "https://blog.rtwilson.com/i-released-cloud-native-environment-agency-dem-data/",
-        "score": 10,
-        "rank": 1
-      }
-    },
     "bohops": {
       "items": 10,
       "unique_urls": 10,
@@ -17498,6 +17594,18 @@
         "rank": 1
       }
     },
+    "welltyped": {
+      "items": 9,
+      "unique_urls": 9,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "First official release of hs-bindgen",
+        "url": "https://well-typed.com/blog/2026/10/hs-bindgen-official-release",
+        "score": 9,
+        "rank": 2
+      }
+    },
     "gtdstudy": {
       "items": 9,
       "unique_urls": 9,
@@ -17618,6 +17726,18 @@
         "rank": 1
       }
     },
+    "blogrtwilson": {
+      "items": 9,
+      "unique_urls": 9,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "New site for my John Snow Cholera Map data",
+        "url": "https://blog.rtwilson.com/new-site-for-my-john-snow-cholera-map-data/",
+        "score": 9,
+        "rank": 2
+      }
+    },
     "hostinger": {
       "items": 9,
       "unique_urls": 9,
@@ -17700,6 +17820,18 @@
         "url": "https://blog.master.dev/my-interop-2027-picks/",
         "score": 9,
         "rank": 2
+      }
+    },
+    "metaredux": {
+      "items": 8,
+      "unique_urls": 8,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "neorepl 0.5: CIDER in a Terminal",
+        "url": "https://metaredux.com/posts/2026/11/05/neorepl-0-5.html",
+        "score": 8,
+        "rank": 3
       }
     },
     "nullprogram": {
