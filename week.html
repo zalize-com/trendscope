@@ -123,11 +123,13 @@ fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
     <p id="chips" class="src-chips">${chips}</p>
     <p style="margin:4px 0 10px;font-size:12px"><a id="wk-csv" style="cursor:pointer">⤓ download window as CSV</a> <span class="muted">· top-50 by cumulative heat</span></p>
     <ol>${top.map((e,i) => `<li><span class="sc" style="min-width:16px;text-align:right">${i+1}</span>
-      <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span></span>
+      <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span>
+      <a href="item.html?q=${encodeURIComponent(e.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>
       <span class="sc">${e.total.toFixed(1)} heat</span></li>`).join("")
       || `<li><span id="err">no ${selSrc} items in window</span></li>`}</ol>
     <h2>staying power — on the board 3+ days</h2>
-    <ol>${multi.map(e => `<li><span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span></span>
+    <ol>${multi.map(e => `<li><span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span>
+      <a href="item.html?q=${encodeURIComponent(e.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>
       <span class="sc"><span class="days">${e.days.size}d</span> · ${e.total.toFixed(1)} heat</span></li>`).join("")
       || `<li><span id="err">none yet — the dataset needs a few more days</span></li>`}</ol>`;
   document.getElementById("chips").onclick = ev => {
