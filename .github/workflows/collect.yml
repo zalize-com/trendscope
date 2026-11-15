@@ -33,6 +33,8 @@ jobs:
 
       - name: Regenerate daily brief
         run: python3 scripts/brief.py || true
+      - name: Source stats
+        run: python3 scripts/sources.py
 
       - name: Regenerate weekly aggregate API
         run: python3 scripts/weekly.py || true

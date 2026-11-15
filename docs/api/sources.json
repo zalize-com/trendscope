@@ -1,0 +1,186 @@
+{
+  "generated_at": "2026-11-15T10:34:16.927590+00:00",
+  "days_tracked": 9,
+  "sources": {
+    "hackernews": {
+      "items": 185,
+      "unique_urls": 170,
+      "median_days_on_board": 1,
+      "one_day_pct": 92,
+      "top_item": {
+        "title": "Jensen Huang resigns",
+        "url": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f",
+        "score": 4040,
+        "rank": 1
+      }
+    },
+    "ask_hn": {
+      "items": 76,
+      "unique_urls": 63,
+      "median_days_on_board": 1,
+      "one_day_pct": 79,
+      "top_item": {
+        "title": "Ask HN: Microsoft/Azure Outage?",
+        "url": "https://news.ycombinator.com/item?id=50471668",
+        "score": 402,
+        "rank": 12
+      }
+    },
+    "npm": {
+      "items": 48,
+      "unique_urls": 24,
+      "median_days_on_board": 2,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "zod",
+        "url": "https://www.npmjs.com/package/zod",
+        "score": 456795275,
+        "rank": 1
+      }
+    },
+    "producthunt": {
+      "items": 45,
+      "unique_urls": 45,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "MAP & GO!",
+        "url": "https://www.producthunt.com/products/expert-chase-deleted-1107920",
+        "score": 20,
+        "rank": 1
+      }
+    },
+    "pypi": {
+      "items": 44,
+      "unique_urls": 22,
+      "median_days_on_board": 2,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "boto3",
+        "url": "https://pypi.org/project/boto3/",
+        "score": 2600056407,
+        "rank": 1
+      }
+    },
+    "lobsters": {
+      "items": 32,
+      "unique_urls": 21,
+      "median_days_on_board": 1,
+      "one_day_pct": 52,
+      "top_item": {
+        "title": "Terminal borders that don't cost a cell",
+        "url": "https://www.joshka.net/cell-borders/",
+        "score": 396,
+        "rank": 9
+      }
+    },
+    "github_trending": {
+      "items": 32,
+      "unique_urls": 17,
+      "median_days_on_board": 2,
+      "one_day_pct": 18,
+      "top_item": {
+        "title": "huamidev/GestaltX",
+        "url": "https://github.com/huamidev/GestaltX",
+        "score": 7616,
+        "rank": 1
+      }
+    },
+    "devto": {
+      "items": 30,
+      "unique_urls": 15,
+      "median_days_on_board": 2,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "How do you truly stand out in Tech?",
+        "url": "https://dev.to/francistrdev/how-do-you-truly-stand-out-in-tech-478a",
+        "score": 202,
+        "rank": 1
+      }
+    },
+    "crates": {
+      "items": 30,
+      "unique_urls": 15,
+      "median_days_on_board": 2,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "hashbrown",
+        "url": "https://crates.io/crates/hashbrown",
+        "score": 912501410,
+        "rank": 1
+      }
+    },
+    "show_hn": {
+      "items": 18,
+      "unique_urls": 18,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Show HN: A custom font based on the Jamaican flag alphabet",
+        "url": "https://bobbiec.github.io/jamaican-font.html",
+        "score": 23,
+        "rank": 1
+      }
+    },
+    "techmeme": {
+      "items": 18,
+      "unique_urls": 18,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A (Tamara Djurickovic/Tech.eu)",
+        "url": "https://www.techmeme.com/261115/p3#a261115p3",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "slashdot": {
+      "items": 16,
+      "unique_urls": 16,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Did Alice Huang's Megaspeed Bypass America's Controls on Exporting Nvidia Chip to China?",
+        "url": "https://hardware.slashdot.org/story/26/11/15/0510225/did-alice-huangs-megaspeed-bypass-americas-controls-on-exporting-nvidia-chip-to-china?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "arxiv": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Unbundling Multimodal Vision Encoding",
+        "url": "http://arxiv.org/abs/2611.17334v1",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "arstechnica": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "With Starship catch, SpaceX still shows it can dazzle the world",
+        "url": "https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "theverge": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Watch SpaceX successfully execute the first ‘chopstick’ catch of Starship",
+        "url": "https://www.theverge.com/science/1033930/spacex-chopstick-starship-catch",
+        "score": 10,
+        "rank": 1
+      }
+    }
+  }
+}
