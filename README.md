@@ -146,6 +146,9 @@ A daily cross-source snapshot of developer attention:
 | mikeash | Friday Q&A systems blog | `mikeash.com/pyblog/rss.py` |
 | fogus | Clojure and PL essays | `blog.fogus.me/feed/` |
 | Nicky Case | explorable explanations | `blog.ncase.me/rss/` |
+| jwz | Netscape co-founder commentary | `jwz.org/blog/feed/` |
+| Steve Blank | startup methodology | `steveblank.com/feed/` |
+| Zack Kanter | startups and strategy | `zackkanter.com/feed/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
