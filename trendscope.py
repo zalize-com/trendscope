@@ -102,18 +102,32 @@ def week(_args):
     return 0
 
 
+def canon(_args):
+    data = fetch("data/hn-canon-monthly.csv", binary=True).decode("utf-8")
+    rows = [r for r in csv.DictReader(io.StringIO(data)) if r.get("points")]
+    top = sorted(rows, key=lambda r: -int(r["points"]))[:20]
+    print(f"trendscope canon — HN all-time top (of {len(rows)} stories, 2007→today)")
+    for i, r in enumerate(top, 1):
+        print(f"{i:>3}. {r['title'][:72]}")
+        print(f"      {fmt(int(r['points']))} pts · {r['month']}  {r['hn_url']}")
+    return 0
+
+
 def main():
     p = argparse.ArgumentParser(description="trendscope — the developer attention dataset, in your terminal")
     p.add_argument("-n", type=int, default=15, help="rows to show (board mode)")
     p.add_argument("--source", help="one source only, e.g. hackernews")
     p.add_argument("--movers", action="store_true", help="today's board changes")
     p.add_argument("--week", action="store_true", help="last-7-day cumulative top")
+    p.add_argument("--canon", action="store_true", help="HN all-time top stories")
     args = p.parse_args()
     try:
         if args.movers:
             return movers(args)
         if args.week:
             return week(args)
+        if args.canon:
+            return canon(args)
         return board(args)
     except Exception as e:
         print(f"trendscope: fetch failed: {e}", file=sys.stderr)
