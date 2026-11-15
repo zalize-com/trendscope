@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>this week — trendscope</title>
-<meta name="description" content="The week's top developer stories and packages, aggregated from the last 7 days of the trendscope dataset.">
+<title>rolling window — trendscope</title>
+<meta name="description" content="Top developer stories and packages over a rolling window (7/14/30 days) of the trendscope dataset.">
 <meta property="og:title" content="trendscope — this week's developer board">
 <meta property="og:image" content="og.png">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
@@ -34,12 +34,13 @@
 </head>
 <body>
   <nav><a href="index.html">← trendscope</a> · <a href="streaks.html">streaks</a> · <a href="digest.html">digests</a></nav>
-  <h1>this <span>week</span></h1>
+  <h1 id="h1">this <span>week</span></h1>
+  <div class="sub" id="wins"><a href="?d=7">7d</a> · <a href="?d=14">14d</a> · <a href="?d=30">30d</a></div>
   <div class="sub" id="sub">loading…</div>
   <div id="out"><p id="err">loading…</p></div>
   <footer>
     Computed in your browser from <a href="data/history.csv">history.csv</a> —
-    sum of daily scores over the last 7 snapshot days. ·
+    sum of daily-normalized heat over the window. ·
     <a href="https://github.com/zalize-com/trendscope">trendscope</a>
   </footer>
 <script>
@@ -67,9 +68,12 @@ function parseCSV(txt) {
 fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
   const rows = parseCSV(txt);
   const hdr = rows[0], recs = rows.slice(1).map(r => Object.fromEntries(hdr.map((h,i)=>[h,r[i]])));
+  const WIN = Math.min(30, Math.max(2, +new URLSearchParams(location.search).get("d") || 7));
+  document.getElementById("h1").innerHTML = `last <span>${WIN} days</span>`;
+  document.title = `last ${WIN} days — trendscope`;
   const days = [...new Set(recs.map(r => r.date))].sort();
-  const last7 = new Set(days.slice(-7));
-  const wk = recs.filter(r => last7.has(r.date));
+  const win = new Set(days.slice(-WIN));
+  const wk = recs.filter(r => win.has(r.date));
   // per-day per-source max score → heat = score/max (rolling-window metrics like
   // pypi monthly downloads would otherwise swamp cumulative raw-score ranking)
   const mx = {};
@@ -89,12 +93,12 @@ fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
   }
   const items = Object.values(byUrl);
   document.getElementById("sub").textContent =
-    `${[...last7][0]} → ${[...last7][6]} · ${items.length} unique items · ${wk.length} rows`;
+    `${[...win][0]} → ${[...win][[...win].length - 1]} · ${items.length} unique items · ${wk.length} rows`;
   const top = items.sort((a,b) => b.total - a.total).slice(0, 50);
-  const multi = items.filter(e => e.days.size >= 3)
+  const multi = items.filter(e => e.days.size >= Math.min(3, WIN))
     .sort((a,b) => b.days.size - a.days.size || b.total - a.total).slice(0, 15);
   document.getElementById("out").innerHTML = `
-    <h2>top of the week — by cumulative heat</h2>
+    <h2>top of the window — by cumulative heat</h2>
     <ol>${top.map((e,i) => `<li><span class="sc" style="min-width:16px;text-align:right">${i+1}</span>
       <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span></span>
       <span class="sc">${e.total.toFixed(1)} heat</span></li>`).join("")}</ol>
