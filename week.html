@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>this week — trendscope</title>
+<meta name="description" content="The week's top developer stories and packages, aggregated from the last 7 days of the trendscope dataset.">
+<meta property="og:title" content="trendscope — this week's developer board">
+<meta property="og:image" content="og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+<style>
+  :root { --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
+          --dim:#8b949e; --accent:#58a6ff; --green:#3fb950; --orange:#d29922; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 18px; }
+  h2 { font-size: 15px; color: var(--dim); font-weight: 600; margin: 26px 0 6px;
+       text-transform: uppercase; letter-spacing: .04em; }
+  ol { list-style: none; }
+  li { display: flex; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--border); align-items: baseline; }
+  .it a { color: var(--fg); } .it a:hover { color: var(--accent); }
+  .src { color: var(--dim); font-size: 11px; border: 1px solid var(--border);
+         border-radius: 4px; padding: 0 5px; margin-left: 6px; }
+  .sc { margin-left: auto; white-space: nowrap; font-size: 12px; color: var(--dim); }
+  .days { color: var(--green); font-weight: 600; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+  #err { color: var(--dim); }
+</style>
+</head>
+<body>
+  <nav><a href="index.html">← trendscope</a> · <a href="streaks.html">streaks</a> · <a href="digest.html">digests</a></nav>
+  <h1>this <span>week</span></h1>
+  <div class="sub" id="sub">loading…</div>
+  <div id="out"><p id="err">loading…</p></div>
+  <footer>
+    Computed in your browser from <a href="data/history.csv">history.csv</a> —
+    sum of daily scores over the last 7 snapshot days. ·
+    <a href="https://github.com/zalize-com/trendscope">trendscope</a>
+  </footer>
+<script>
+const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B" : n >= 1e6 ? (n/1e6).toFixed(1)+"M"
+             : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
+const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
+const SKIP = new Set(["news.ycombinator.com","github.com","lobste.rs","dev.to",
+  "producthunt.com","techmeme.com","slashdot.org","crates.io","pypi.org","npmjs.com"]);
+
+function parseCSV(txt) {
+  const rows = []; let f = "", row = [], q = false;
+  for (let i = 0; i <= txt.length; i++) {
+    const c = txt[i];
+    if (q) {
+      if (c === '"') { if (txt[i+1] === '"') { f += '"'; i++; } else q = false; }
+      else if (c === undefined) {} else f += c;
+    } else if (c === '"') q = true;
+    else if (c === ',' ) { row.push(f); f = ""; }
+    else if (c === '\n' || c === undefined) { row.push(f); f = ""; rows.push(row); row = []; }
+    else if (c !== '\r') f += c;
+  }
+  return rows.filter(r => r.length > 1);
+}
+
+fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
+  const rows = parseCSV(txt);
+  const hdr = rows[0], recs = rows.slice(1).map(r => Object.fromEntries(hdr.map((h,i)=>[h,r[i]])));
+  const days = [...new Set(recs.map(r => r.date))].sort();
+  const last7 = new Set(days.slice(-7));
+  const wk = recs.filter(r => last7.has(r.date));
+  // aggregate by url (dedup a story appearing across days)
+  const byUrl = {};
+  for (const r of wk) {
+    const k = r.url || r.title;
+    const e = byUrl[k] || (byUrl[k] = {title: r.title, url: r.url, source: r.source,
+      total: 0, days: new Set(), bestRank: 99, metric: r.metric});
+    e.total += +r.score || 0;
+    e.days.add(r.date);
+    e.bestRank = Math.min(e.bestRank, +r.rank || 99);
+  }
+  const items = Object.values(byUrl);
+  document.getElementById("sub").textContent =
+    `${[...last7][0]} → ${[...last7][6]} · ${items.length} unique items · ${wk.length} rows`;
+  const top = items.sort((a,b) => b.total - a.total).slice(0, 50);
+  const multi = items.filter(e => e.days.size >= 3)
+    .sort((a,b) => b.days.size - a.days.size || b.total - a.total).slice(0, 15);
+  document.getElementById("out").innerHTML = `
+    <h2>top of the week — by cumulative score</h2>
+    <ol>${top.map((e,i) => `<li><span class="sc" style="min-width:16px;text-align:right">${i+1}</span>
+      <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span></span>
+      <span class="sc">${fmt(e.total)} ${e.metric}</span></li>`).join("")}</ol>
+    <h2>staying power — on the board 3+ days</h2>
+    <ol>${multi.map(e => `<li><span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span></span>
+      <span class="sc"><span class="days">${e.days.size}d</span> · ${fmt(e.total)}</span></li>`).join("")
+      || `<li><span id="err">none yet — the dataset needs a few more days</span></li>`}</ol>`;
+}).catch(e => { document.getElementById("err").textContent = "history unavailable"; });
+</script>
+</body>
+</html>
