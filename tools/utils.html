@@ -275,6 +275,19 @@
     <div class="out" id="sv-out"></div>
   </div>
 
+  <div class="tool" data-tool="pwgen">
+    <h2>password generator</h2>
+    <p class="hint">crypto.getRandomValues, runs entirely in your browser — nothing is sent anywhere.</p>
+    <p>
+      length <input id="pg-n" type="number" value="20" min="4" max="128" size="4">
+      <label><input type="checkbox" id="pg-sym" checked> symbols</label>
+      <label><input type="checkbox" id="pg-amb"> no-ambiguous (0O1lI)</label>
+      <button class="go" id="pg-go">generate</button>
+    </p>
+    <div class="out mono" id="pg-out" style="word-break:break-all"></div>
+    <p class="hint" id="pg-bits"></p>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -298,6 +311,7 @@ const TOOLS = [
   {id:"chmod",  label:"chmod calculator"},
   {id:"csv",    label:"CSV ↔ JSON"},
   {id:"semver", label:"semver compare"},
+  {id:"pwgen",  label:"password gen"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -853,6 +867,26 @@ document.getElementById('sv-go').onclick=()=>{
   if(!d){d=svCmpPre(a.pre,b.pre);level=d?'prerelease':'';}
   out.textContent = d===0 ? 'equal' :
     (d>0 ? `A newer (${level})` : `B newer (${level})`);
+};
+
+// --- password generator ---
+document.getElementById('pg-go').onclick=()=>{
+  let chars='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  if(document.getElementById('pg-sym').checked) chars+='!@#$%^&*()-_=+[]{};:,.<>?';
+  if(document.getElementById('pg-amb').checked) chars=chars.replace(/[0O1lI]/g,'');
+  const n=Math.max(4,Math.min(128,+document.getElementById('pg-n').value||20));
+  const rnd=crypto.getRandomValues(new Uint32Array(n));
+  // rejection-sample to avoid modulo bias
+  const out=[];
+  let i=0;
+  while(out.length<n){
+    const v=rnd[i%rnd.length];i++;
+    if(v<Math.floor(4294967296/chars.length)*chars.length) out.push(chars[v%chars.length]);
+  }
+  const pw=out.join('');
+  document.getElementById('pg-out').textContent=pw;
+  const bits=Math.round(n*Math.log2(chars.length));
+  document.getElementById('pg-bits').textContent=`${n} chars · ${chars.length}-char alphabet · ~${bits} bits entropy`;
 };
 </script>
 </body>
