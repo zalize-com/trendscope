@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T13:30:31.491850+00:00",
+ "generated_at": "2026-11-15T13:34:50.724332+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 418,
- "new_items": 292,
+ "total_items": 433,
+ "new_items": 307,
  "by_source": {
   "producthunt": 45,
   "show_hn": 21,
@@ -16,6 +16,7 @@
   "infoq": 15,
   "lemmy": 15,
   "lwn": 15,
+  "thenewstack": 15,
   "theregister": 15,
   "theverge": 12,
   "freecodecamp": 10,
@@ -2143,6 +2144,126 @@
    "title": "Tesla's Cybercab Autonomy Subscription agreement states the vehicles will only work inside Tesla-enabled geofences, which the company can change at any time (Fred Lambert/Electrek)",
    "url": "https://www.techmeme.com/261114/p12#a261114p12",
    "source": "techmeme",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AWS Emulator proves agents need a verification loop. Realism is the hard part.",
+   "url": "https://thenewstack.io/aws-emulator-verification-loops/",
+   "source": "thenewstack",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Claude Fable 5.2 vs. Fable 5.1: Fewer refusals, with small savings on the login fix",
+   "url": "https://thenewstack.io/claude-fable-5-2-vs-fable-5-1/",
+   "source": "thenewstack",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web search for agents is here: Why ranking still decides the answer",
+   "url": "https://thenewstack.io/ai-agent-search-ranking/",
+   "source": "thenewstack",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DuckLake 1.1 solves the absurd complexity of data lakes at AI scale",
+   "url": "https://thenewstack.io/ducklake-sql-lakehouse-metadata/",
+   "source": "thenewstack",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Anthropic wants you to build on Claude. There’s a catch.",
+   "url": "https://thenewstack.io/anthropic-enterprise-developer-competition/",
+   "source": "thenewstack",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Claude Fable 5.2 vs. GPT-6 Astra: A lower list price didn’t mean a lower bill",
+   "url": "https://thenewstack.io/claude-fable-5-2-vs-gpt-6-astra/",
+   "source": "thenewstack",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Anthropic now lets you self-host Claude Managed Agents. The catch? 8 hours to act if it flags a safety risk in the software",
+   "url": "https://thenewstack.io/self-hosted-claude-managed-agents/",
+   "source": "thenewstack",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The context problem: It’s what’s really breaking AI agents at scale",
+   "url": "https://thenewstack.io/elastic-ai-context-gap/",
+   "source": "thenewstack",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DeepSeek’s coding agent is too tidy for its own good — and benchmarks are punishing it",
+   "url": "https://thenewstack.io/deepseek-harness-cleanup-benchmark/",
+   "source": "thenewstack",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Here’s how to teach AI agents to search like human experts",
+   "url": "https://thenewstack.io/ai-agents-retrieval-agent-ready-schema/",
+   "source": "thenewstack",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google’s Gemini 4 coding agent now switches models mid-task — and finishes 19% faster",
+   "url": "https://thenewstack.io/gemini-4-hydrogen-orchestrator/",
+   "source": "thenewstack",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google’s coding agents now /swarm for one developer. Cursor’s go multiplayer so teammates’ agents can talk.",
+   "url": "https://thenewstack.io/cursor-google-multiplayer-swarm/",
+   "source": "thenewstack",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chainguard defends its choice to break the PHP security embargo: “We own the decision.”",
+   "url": "https://thenewstack.io/chainguard-php-embargo-defense/",
+   "source": "thenewstack",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google built an AI model that can’t write a sentence — and that’s the point",
+   "url": "https://thenewstack.io/google-gemini-decisions-api/",
+   "source": "thenewstack",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The death of the 14-day patch: Surviving machine-speed vulnerability discovery",
+   "url": "https://thenewstack.io/machine-speed-vulnerability-discovery/",
+   "source": "thenewstack",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
