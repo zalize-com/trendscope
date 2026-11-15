@@ -67,6 +67,8 @@
   <div class="out" id="out"></div>
   <h2>tab order</h2>
   <div class="out" id="focus"></div>
+  <h2>heading outline</h2>
+  <div class="out" id="outline"></div>
 
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
@@ -146,7 +148,21 @@ function audit(html) {
   doc.querySelectorAll("iframe").forEach(el => {
     if (!el.getAttribute("title")) add("warn", "<iframe> missing title", el);
   });
+  if (!doc.querySelector("main, [role=main]") && doc.querySelectorAll("*").length > 8)
+    add("warn", "no <main> landmark");
+  if (heads.filter(h => h.tagName === "H1").length > 1)
+    add("warn", `multiple <h1> (${heads.filter(h => h.tagName === "H1").length})`, heads.find(h => h.tagName === "H1"));
   return { issues, doc };
+}
+
+function renderOutline(doc) {
+  const heads = [...doc.querySelectorAll("h1,h2,h3,h4,h5,h6")], box = $("outline");
+  if (!heads.length) { box.innerHTML = '<div class="stat">no headings</div>'; return; }
+  box.innerHTML = heads.map(h => {
+    const lvl = +h.tagName[1];
+    return `<div class="foc" style="padding-left:${(lvl - 1) * 18 + 10}px">` +
+      `<span class="num">h${lvl}</span><span>${esc((h.textContent || "").trim().slice(0, 80)) || "<i class='nm'>(empty)</i>"}</span></div>`;
+  }).join("");
 }
 
 const FOCUSABLE = "a[href],area[href],button,input:not([type=hidden]),select,textarea," +
@@ -191,6 +207,7 @@ function go() {
     `<div class="issue"><span class="sev ${i.sev}">${i.sev}</span>
       <span class="what">${esc(i.what)}${i.code ? ` — <code>${esc(i.code)}</code>` : ""}</span></div>`).join("");
   renderFocus(doc);
+  renderOutline(doc);
 }
 $("in").addEventListener("input", go);
 </script>
