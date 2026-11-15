@@ -113,37 +113,36 @@ function tokens(title) {
   return out;
 }
 
-const text = await fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text());
-const rows = parseCSV(text);
-const hdr = rows[0];
-const ci = Object.fromEntries(hdr.map((h,i)=>[h,i]));
+const ser = await fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json());
 
 // dedupe ask_hn items by url: max score, days seen
-const items = {};
-for (const r of rows.slice(1)) {
-  if (r[ci.source] !== "ask_hn") continue;
-  const url = r[ci.url]; if (!url) continue;
-  const it = items[url] ||= { title: r[ci.title], days: new Set(), maxScore: 0 };
-  it.days.add(r[ci.date]);
-  it.maxScore = Math.max(it.maxScore, Number(r[ci.score]) || 0);
+const items = {}, allDates = new Set();
+for (const [url, o] of Object.entries(ser.items)) {
+  if (o.source !== "ask_hn") continue;
+  const it = items[url] ||= { title: o.title, days: new Set(), maxScore: 0 };
+  for (const [d, [sc]] of Object.entries(o.days)) {
+    it.days.add(d); allDates.add(d);
+    it.maxScore = Math.max(it.maxScore, sc);
+  }
 }
 const recs = Object.entries(items).map(([url, it]) => ({ url, ...it, nDays: it.days.size }));
-const allDates = [...new Set(rows.slice(1).filter(r => r[ci.source]==="ask_hn").map(r => r[ci.date]))].sort();
-const latest = allDates[allDates.length-1];
+const sorted = [...allDates].sort(); allDates.clear(); for (const d of sorted) allDates.add(d);
+const datesArr = sorted;
+const latest = datesArr[datesArr.length-1];
 
 // demand volume: ask_hn threads per day
 const perDay = {};
 for (const it of Object.values(items)) for (const d of it.days) perDay[d] = (perDay[d]||0) + 1;
-const pdays = allDates.slice(-14);
+const pdays = datesArr.slice(-14);
 const pmax = Math.max(...pdays.map(d => perDay[d]||0), 1);
 const strip = pdays.map(d => `<span class="db" title="${d}: ${perDay[d]||0} threads"><i style="height:${Math.max(2, Math.round((perDay[d]||0)/pmax*26))}px"></i><s>${d.slice(8)}</s></span>`).join("");
 
 // everything ELSE on our radar — used to mark themes as "already built" or "gap"
 const others = [];
-for (const r of rows.slice(1)) {
-  if (r[ci.source] === "ask_hn" || !r[ci.url]) continue;
-  others.push({ title: r[ci.title] || "", url: r[ci.url], source: r[ci.source],
-                score: Number(r[ci.score]) || 0 });
+for (const [url, o] of Object.entries(ser.items)) {
+  if (o.source === "ask_hn") continue;
+  const sc = Math.max(...Object.values(o.days).map(v => v[0]));
+  others.push({ title: o.title || "", url, source: o.source, score: sc });
 }
 // does anything already address this theme? title contains the theme words
 const coverage = theme =>
@@ -181,7 +180,7 @@ const today = (snap.items?.ask_hn || []).slice(0, 12);
 
 $("stats").innerHTML =
   `<div class="stat"><b>${recs.length}</b><small>unique ask/tell threads</small></div>
-   <div class="stat"><b>${allDates.length}</b><small>days of demand data</small></div>
+   <div class="stat"><b>${datesArr.length}</b><small>days of demand data</small></div>
    <div class="stat"><b>${topThemes.length}</b><small>recurring themes</small></div>
    <div class="stat"><b>${latest}</b><small>latest snapshot</small></div>`;
 
