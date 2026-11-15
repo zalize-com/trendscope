@@ -457,18 +457,9 @@ function parseCSV(text) {
 
 async function loadStreaks() {
   try {
-    const rows = parseCSV(await fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()));
-    const ci = Object.fromEntries(rows[0].map((h,i)=>[h,i]));
-    const seen = {}, all = new Set();
-    for (const r of rows.slice(1)) { if (r[ci.url]) { (seen[r[ci.url]] ||= new Set()).add(r[ci.date]); all.add(r[ci.date]); } }
-    const latest = [...all].sort().pop();
-    const prevDay = d => new Date(new Date(d+"T00:00:00Z") - 86400000).toISOString().slice(0,10);
+    const st = await fetch("docs/api/streaks.json", {cache:"no-cache"}).then(r => r.json());
     const m = new Map();
-    for (const [u, ds] of Object.entries(seen)) {
-      let n = 0;
-      for (let d = latest; ds.has(d); d = prevDay(d)) n++;
-      if (n >= 3) m.set(u, n);
-    }
+    for (const it of st.active) { if (it.consecutive_days >= 3) m.set(it.url, it.consecutive_days); }
     STREAK = m;
     render(ITEMS, currentTab());
   } catch (e) { /* history optional */ }
