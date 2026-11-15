@@ -62,6 +62,7 @@
     <button data-tool="base">number base</button>
     <button data-tool="pw">password gen</button>
     <button data-tool="csv">CSV ↔ JSON</button>
+    <button data-tool="schema">JSON → schema</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -110,13 +111,23 @@
     <div class="err" id="csv-err"></div>
   </div>
 
+
+  <div class="panel" id="p-schema">
+    <h2>JSON → JSON Schema</h2>
+    <p class="hint">Paste a JSON sample — infers a draft-2020-12 schema (types, required keys, array item schemas, enums for small string sets).</p>
+    <textarea id="sc-in" placeholder='[{"name":"alpha","score":12,"tags":["a","b"]}]' style="width:100%;height:150px"></textarea>
+    <div class="out" id="sc-out" style="white-space:pre;overflow-x:auto"></div>
+    <button class="copy" id="sc-copy">copy schema</button>
+    <div class="err" id="sc-err"></div>
+  </div>
+
   <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv"];
+const tools = ["subnet","base","pw","csv","schema"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -248,6 +259,65 @@ function csvConvert() {
 $("csv-in").oninput = csvConvert;
 $("csv-copy").onclick = () => { navigator.clipboard?.writeText($("csv-out").textContent); $("csv-copy").textContent = "copied"; setTimeout(()=>$("csv-copy").textContent="copy output",1200); };
 csvConvert();
+
+/* ---------- JSON → schema ---------- */
+function typeOf(v) {
+  if (v === null) return "null";
+  if (Array.isArray(v)) return "array";
+  if (typeof v === "number") return Number.isInteger(v) ? "integer" : "number";
+  return typeof v;
+}
+function mergeSchema(a, b) {
+  if (!a) return b;
+  if (!b) return a;
+  if (a.type !== b.type) return { anyOf: [a, b] };
+  if (a.type === "object") {
+    const keys = new Set([...Object.keys(a.properties), ...Object.keys(b.properties)]);
+    const props = {}, req = new Set();
+    keys.forEach(k => {
+      const pa = a.properties[k], pb = b.properties[k];
+      if (pa && pb) props[k] = mergeSchema(pa, pb);
+      else props[k] = pa || pb;
+    });
+    (a.required || []).forEach(k => { if ((b.required || []).includes(k)) req.add(k); });
+    const out = { type: "object", properties: props };
+    if (req.size) out.required = [...req];
+    return out;
+  }
+  if (a.type === "array") return { type: "array", items: mergeSchema(a.items, b.items) };
+  const en = new Set([...(a.enum||[]), ...(b.enum||[])]);
+  if (a.type === "string" && en.size && en.size <= 6) { const o={type:"string"}; if(en.size>1)o.enum=[...en]; return o; }
+  return a;
+}
+function infer(v) {
+  const t = typeOf(v);
+  if (t === "object") {
+    const properties = {}, required = [];
+    for (const [k, val] of Object.entries(v)) { properties[k] = infer(val); required.push(k); }
+    const out = { type: "object", properties };
+    if (required.length) out.required = required;
+    return out;
+  }
+  if (t === "array") {
+    const items = v.reduce((acc, el) => mergeSchema(acc, infer(el)), null);
+    const out = { type: "array" };
+    if (items) out.items = items;
+    return out;
+  }
+  return { type: t };
+}
+function inferSchema() {
+  $("sc-err").textContent = ""; $("sc-out").textContent = "";
+  const t = $("sc-in").value.trim();
+  if (!t) return;
+  try {
+    const v = JSON.parse(t);
+    $("sc-out").textContent = JSON.stringify(
+      { "$schema": "https://json-schema.org/draft/2020-12/schema", ...infer(v) }, null, 2);
+  } catch (e) { $("sc-err").textContent = "✕ " + e.message; }
+}
+$("sc-in").oninput = inferSchema;
+$("sc-copy").onclick = () => { navigator.clipboard?.writeText($("sc-out").textContent); $("sc-copy").textContent = "copied"; setTimeout(()=>$("sc-copy").textContent="copy schema",1200); };
 </script>
 </body>
 </html>
