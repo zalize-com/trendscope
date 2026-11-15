@@ -47,7 +47,7 @@ gh repo edit zalize-com/feedpaper --add-topic rss,digest,github-actions,github-p
 ## Already done for you
 
 - ✅ trendscope: 15 sources, 10-day history, 29 data/analysis pages (incl. four
-  canon-history datasets 2007→today), 65 tools, CLI, embed widget, RSS + JSON
+  canon-history datasets 2007→today), 66 tools, CLI, embed widget, RSS + JSON
   Feed, OG card, health monitoring, API docs, llms.txt
 - ✅ feedpaper: production-verified (Actions bot already committing daily
   digests), RSS+Atom+OPML, tag chips, archive, own RSS feed, tests, FEEDS.md
