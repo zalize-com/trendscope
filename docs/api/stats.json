@@ -1,14 +1,18 @@
 {
- "generated_at": "2026-11-15T14:44:41.701865+00:00",
+ "generated_at": "2026-11-15T14:53:56.242846+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 963,
- "unique_urls": 825,
- "items_in_latest": 561,
- "items_per_day_avg": 107.0,
+ "total_rows": 980,
+ "unique_urls": 842,
+ "items_in_latest": 576,
+ "items_per_day_avg": 108.9,
  "sources": {
+  "antirez": {
+   "rows": 15,
+   "days_active": 1
+  },
   "arstechnica": {
    "rows": 16,
    "days_active": 1
@@ -62,7 +66,7 @@
    "days_active": 1
   },
   "hackernews": {
-   "rows": 198,
+   "rows": 200,
    "days_active": 9
   },
   "haxx": {

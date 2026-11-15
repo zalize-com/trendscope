@@ -1,13 +1,13 @@
 {
  "a": "2026-11-14",
  "b": "2026-11-15",
- "generated": "2026-11-15 14:44 UTC",
+ "generated": "2026-11-15 14:53 UTC",
  "entered": [
   {
    "title": "SpaceX catches the Starship to end Flight 15",
    "url": "https://www.spacex.com/launches/starship-flight-15",
    "source": "hackernews",
-   "score": 1403,
+   "score": 1412,
    "metric": "points",
    "rank": 1
   },
@@ -15,7 +15,7 @@
    "title": "Eynnzerr/TelemetryCleaner",
    "url": "https://github.com/Eynnzerr/TelemetryCleaner",
    "source": "github_trending",
-   "score": 881,
+   "score": 885,
    "metric": "stars",
    "rank": 12
   },
@@ -23,25 +23,17 @@
    "title": "duwqijlk/muse-protocol",
    "url": "https://github.com/duwqijlk/muse-protocol",
    "source": "github_trending",
-   "score": 831,
+   "score": 842,
    "metric": "stars",
-   "rank": 15
+   "rank": 14
   },
   {
    "title": "Court denies motion to dismiss DRAM price fixing case",
    "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
    "source": "hackernews",
-   "score": 315,
+   "score": 322,
    "metric": "points",
    "rank": 6
-  },
-  {
-   "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
-   "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
-   "source": "hackernews",
-   "score": 284,
-   "metric": "points",
-   "rank": 8
   },
   {
    "title": "How did Woz write the Apple 1 BASIC before building the computer?",
@@ -49,7 +41,7 @@
    "source": "hackernews",
    "score": 256,
    "metric": "points",
-   "rank": 10
+   "rank": 9
   },
   {
    "title": "Programming.dev instance: Sponsors needed",
@@ -71,9 +63,9 @@
    "title": "Why did some Apollo missions carry a grenade launcher?",
    "url": "https://space.stackexchange.com/questions/37775",
    "source": "hackernews",
-   "score": 110,
+   "score": 112,
    "metric": "points",
-   "rank": 12
+   "rank": 11
   },
   {
    "title": "Meet type-tune! \ud83e\udd80 Give Your TypeScript Types a Better Home! \ud83d\ude38",
@@ -87,15 +79,23 @@
    "title": "Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business",
    "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
    "source": "hackernews",
-   "score": 83,
+   "score": 92,
    "metric": "points",
-   "rank": 13
+   "rank": 12
   },
   {
    "title": "500 Lines or Less A 3D Modeller",
    "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
    "source": "hackernews",
-   "score": 78,
+   "score": 80,
+   "metric": "points",
+   "rank": 13
+  },
+  {
+   "title": "The MacBook Pro's OLED PWM Problem: When a 'Better' Display Becomes Worse to Use",
+   "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
+   "source": "hackernews",
+   "score": 79,
    "metric": "points",
    "rank": 14
   },
@@ -116,20 +116,12 @@
    "rank": 15
   },
   {
-   "title": "The MacBook Pro's OLED PWM Problem: When a 'Better' Display Becomes Worse to Use",
-   "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
-   "source": "hackernews",
-   "score": 66,
-   "metric": "points",
-   "rank": 16
-  },
-  {
    "title": "The Evolving Story of How Chemistry Became Biology",
    "url": "https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/",
    "source": "hackernews",
-   "score": 66,
+   "score": 69,
    "metric": "points",
-   "rank": 17
+   "rank": 16
   },
   {
    "title": "Show HN: Gawain \u2013 Require type hints on all Python variables",
@@ -145,7 +137,7 @@
    "source": "hackernews",
    "score": 57,
    "metric": "points",
-   "rank": 19
+   "rank": 18
   },
   {
    "title": "How to rediscover your passion for learning?",
@@ -156,12 +148,20 @@
    "rank": 4
   },
   {
-   "title": "Show HN: A custom font based on the Jamaican flag alphabet",
-   "url": "https://bobbiec.github.io/jamaican-font.html",
-   "source": "show_hn",
-   "score": 46,
+   "title": "Understanding Positional Embeddings in Modern LLMs",
+   "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+   "source": "hackernews",
+   "score": 44,
    "metric": "points",
-   "rank": 2
+   "rank": 19
+  },
+  {
+   "title": "Tell HN: Google Search to start locking down search behind a login wall",
+   "url": "https://news.ycombinator.com/item?id=50491617",
+   "source": "ask_hn",
+   "score": 44,
+   "metric": "points",
+   "rank": 3
   }
  ],
  "left": [
@@ -331,19 +331,19 @@
    "title": "deepseek-ai/chat-demo",
    "url": "https://github.com/deepseek-ai/chat-demo",
    "source": "github_trending",
-   "score": 2365,
+   "score": 2387,
    "metric": "stars",
    "rank": 2,
-   "delta": 663
+   "delta": 685
   },
   {
    "title": "Lovable apps expose passport details and more than 200K private messages",
    "url": "https://www.crissyfield.de/research/lovable-en/",
    "source": "hackernews",
-   "score": 909,
+   "score": 913,
    "metric": "points",
    "rank": 2,
-   "delta": 558
+   "delta": 562
   },
   {
    "title": "DevedevT/FFmpeg-GUI-Editor-Windows",
@@ -358,10 +358,10 @@
    "title": "A family tree of software job titles",
    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
    "source": "hackernews",
-   "score": 365,
+   "score": 369,
    "metric": "points",
    "rank": 5,
-   "delta": 285
+   "delta": 289
   },
   {
    "title": "KDE: The documentary [video]",
@@ -376,28 +376,37 @@
    "title": "adriadam10/mkw-recomp",
    "url": "https://github.com/adriadam10/mkw-recomp",
    "source": "github_trending",
-   "score": 1097,
+   "score": 1098,
    "metric": "stars",
    "rank": 10,
-   "delta": 237
+   "delta": 238
   },
   {
    "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
    "url": "https://projectzero.google/2026/11/disclosure-policy.html",
    "source": "hackernews",
-   "score": 291,
+   "score": 292,
    "metric": "points",
    "rank": 7,
-   "delta": 229
+   "delta": 230
   },
   {
    "title": "apex-compute/ANR",
    "url": "https://github.com/apex-compute/ANR",
    "source": "github_trending",
-   "score": 1965,
+   "score": 1967,
    "metric": "stars",
    "rank": 4,
-   "delta": 181
+   "delta": 183
+  },
+  {
+   "title": "huamidev/GestaltX",
+   "url": "https://github.com/huamidev/GestaltX",
+   "source": "github_trending",
+   "score": 7701,
+   "metric": "stars",
+   "rank": 1,
+   "delta": 155
   },
   {
    "title": "Why get an expensive Pi when I have an old phone?",
@@ -406,15 +415,6 @@
    "score": 590,
    "metric": "points",
    "rank": 3,
-   "delta": 151
-  },
-  {
-   "title": "huamidev/GestaltX",
-   "url": "https://github.com/huamidev/GestaltX",
-   "source": "github_trending",
-   "score": 7697,
-   "metric": "stars",
-   "rank": 1,
    "delta": 151
   },
   {
@@ -430,10 +430,10 @@
    "title": "PyPI's redesigned project pages with clearer security signals are now live",
    "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
    "source": "hackernews",
-   "score": 258,
+   "score": 259,
    "metric": "points",
-   "rank": 9,
-   "delta": 106
+   "rank": 8,
+   "delta": 107
   },
   {
    "title": "agentes-chat/agentes-chat",
@@ -448,10 +448,10 @@
    "title": "Kianuni/Erosion-CN",
    "url": "https://github.com/Kianuni/Erosion-CN",
    "source": "github_trending",
-   "score": 2112,
+   "score": 2113,
    "metric": "stars",
    "rank": 3,
-   "delta": 60
+   "delta": 61
   },
   {
    "title": "HolyArrs/HolyArrs",
@@ -468,7 +468,7 @@
    "source": "github_trending",
    "score": 832,
    "metric": "stars",
-   "rank": 14,
+   "rank": 15,
    "delta": 47
   },
   {
@@ -533,7 +533,7 @@
    "source": "ask_hn",
    "score": 8,
    "metric": "points",
-   "rank": 9,
+   "rank": 10,
    "delta": 0
   },
   {
@@ -618,15 +618,6 @@
    "delta": 1
   },
   {
-   "title": "Dev Opportunity Radar #25: $120K+ Atlassian Hackathon, MLH Fellowship, and INSEAD AI Founder Sprint",
-   "url": "https://dev.to/devengers/dev-opportunity-radar-25-120k-atlassian-hackathon-mlh-fellowship-and-insead-ai-founder-sprint-m96",
-   "source": "devto",
-   "score": 89,
-   "metric": "reactions",
-   "rank": 11,
-   "delta": 1
-  },
-  {
    "title": "One Year on DEV.to, 109 Articles Later",
    "url": "https://dev.to/dannwaneri/one-year-on-devto-109-articles-later-p31",
    "source": "devto",
@@ -670,6 +661,15 @@
    "metric": "reactions",
    "rank": 6,
    "delta": 5
+  },
+  {
+   "title": "Dev Opportunity Radar #25: $120K+ Atlassian Hackathon, MLH Fellowship, and INSEAD AI Founder Sprint",
+   "url": "https://dev.to/devengers/dev-opportunity-radar-25-120k-atlassian-hackathon-mlh-fellowship-and-insead-ai-founder-sprint-m96",
+   "source": "devto",
+   "score": 94,
+   "metric": "reactions",
+   "rank": 10,
+   "delta": 6
   },
   {
    "title": "The need for at least a third option",
