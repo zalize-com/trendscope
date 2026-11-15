@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T17:07:52.960980+00:00",
+ "generated_at": "2026-11-15T17:09:28.485850+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 577,
+ "total": 603,
  "domains": [
   {
    "hostname": "blog.google",
@@ -194,6 +194,27 @@
    }
   },
   {
+   "hostname": "youtube.com",
+   "days_on_board": 2,
+   "items": 15,
+   "sources": [
+    "bret",
+    "daringfireball",
+    "hackernews",
+    "jankfree",
+    "jmesnil",
+    "k8s",
+    "planeterlang"
+   ],
+   "top_hit": {
+    "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+    "score": 444,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
    "hostname": "aphyr.com",
    "days_on_board": 2,
    "items": 13,
@@ -240,25 +261,6 @@
     "score": 196,
     "metric": "points",
     "date": "2026-11-07"
-   }
-  },
-  {
-   "hostname": "youtube.com",
-   "days_on_board": 2,
-   "items": 11,
-   "sources": [
-    "bret",
-    "daringfireball",
-    "hackernews",
-    "jankfree",
-    "planeterlang"
-   ],
-   "top_hit": {
-    "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
-    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
-    "score": 444,
-    "metric": "points",
-    "date": "2026-11-13"
    }
   },
   {
@@ -689,6 +691,22 @@
    }
   },
   {
+   "hostname": "reddit.com",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews",
+    "k8s"
+   ],
+   "top_hit": {
+    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+    "score": 382,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
    "hostname": "righto.com",
    "days_on_board": 2,
    "items": 2,
@@ -734,6 +752,25 @@
    }
   },
   {
+   "hostname": "medium.com",
+   "days_on_board": 1,
+   "items": 32,
+   "sources": [
+    "airbnb",
+    "bostocks",
+    "k8s",
+    "norvig",
+    "pinterest"
+   ],
+   "top_hit": {
+    "title": "A Better Way to Code",
+    "url": "https://medium.com/@mbostock/a-better-way-to-code-2b1d2876a3a0",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "blog.codinghorror.com",
    "days_on_board": 1,
    "items": 30,
@@ -744,39 +781,6 @@
    "top_hit": {
     "title": "Suffering as a Feature",
     "url": "https://blog.codinghorror.com/suffering-as-a-feature/",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "theregister.com",
-   "days_on_board": 1,
-   "items": 29,
-   "sources": [
-    "theregister"
-   ],
-   "top_hit": {
-    "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
-    "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "medium.com",
-   "days_on_board": 1,
-   "items": 27,
-   "sources": [
-    "airbnb",
-    "bostocks",
-    "norvig",
-    "pinterest"
-   ],
-   "top_hit": {
-    "title": "A Better Way to Code",
-    "url": "https://medium.com/@mbostock/a-better-way-to-code-2b1d2876a3a0",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
