@@ -93,7 +93,11 @@ function paint() {
     (hits[k] = hits[k] || []).push(r);
   }
   const groups = Object.values(hits);
-  if (!groups.length) { out.innerHTML = `<p id="err">no matches in history.</p>`; return; }
+  if (!groups.length) {
+    out.innerHTML = `<p id="err">no matches in the 10-day history.
+      <a href="canon.html?q=${encodeURIComponent(q)}">search 19 years of HN canon →</a></p>`;
+    return;
+  }
   out.innerHTML = groups.slice(0, 8).map(rs => {
     rs.sort((a,b) => a.date.localeCompare(b.date));
     const it = rs[rs.length-1];
