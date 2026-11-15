@@ -8,13 +8,14 @@ Items: one per daily snapshot (data/daily/*.json) and one per weekly digest
 import json
 import os
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
 from xml.sax.saxutils import escape
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DAILY = os.path.join(ROOT, "data", "daily")
 DIGEST = os.path.join(ROOT, "docs", "digest")
+MOVERS = os.path.join(ROOT, "docs", "movers")
 BASE = "https://zalize-com.github.io/trendscope"
 REPO = "https://github.com/zalize-com/trendscope"
 
@@ -57,6 +58,14 @@ def items():
         out.append((item_date(week), f"Weekly digest {week}",
                     f"{REPO}/blob/main/docs/digest/{name}", f"{REPO}/blob/main/docs/digest/{name}",
                     "Weekly digest: top movers, per-source leaders, hot tags."))
+    if os.path.isdir(MOVERS):
+        for name in sorted(os.listdir(MOVERS), reverse=True):
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}\.md", name):
+                continue
+            day = name[:-3]
+            out.append((item_date(day) + timedelta(minutes=10), f"Movers {day}",
+                        f"{REPO}/blob/main/docs/movers/{name}", f"{REPO}/blob/main/docs/movers/{name}",
+                        "Daily movers: what entered the board, what left, biggest gainers."))
     out.sort(key=lambda t: t[0], reverse=True)
     return out[:30]
 
