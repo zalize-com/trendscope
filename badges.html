@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>badges — trendscope</title>
+<meta name="description" content="Live data badges powered by trendscope's shields.io endpoint JSON — drop them into any README, no code required.">
+<meta property="og:title" content="trendscope badges — live dataset signals">
+<meta property="og:description" content="Copy-paste live badges backed by the trendscope dataset.">
+<meta property="og:image" content="https://zalize-com.github.io/trendscope/og.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+<style>
+  :root { --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
+          --dim:#8b949e; --accent:#58a6ff; --green:#3fb950; --orange:#f0883e; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--green); }
+  .sub { color: var(--dim); margin-bottom: 18px; }
+  h2 { font-size: 15px; margin: 22px 0 8px; color: var(--dim); text-transform: uppercase; letter-spacing:.05em; }
+  .card { border:1px solid var(--border); border-radius:10px; padding:14px 16px; margin:10px 0 18px; background:var(--panel); }
+  .card h3 { font-size:15px; margin-bottom:8px; }
+  .card img { height:20px; vertical-align:middle; margin:4px 0 10px; }
+  pre { background:var(--bg); border:1px solid var(--border); border-radius:8px; padding:10px 12px;
+        font:12px/1.5 ui-monospace,monospace; overflow-x:auto; color:var(--fg); margin:6px 0; }
+  .lbl { color:var(--dim); font-size:12px; margin-top:8px; }
+  code { font-family:ui-monospace,monospace; font-size:12px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+</style>
+</head>
+<body>
+  <nav><a href="index.html">← trendscope</a> · <a href="embed.html">embeds</a> · <a href="docs/api.md">api</a> · <a href="datasets.html">datasets</a></nav>
+  <h1>badges</h1>
+  <p class="sub">Live <a href="https://shields.io/endpoint">shields.io endpoint badges</a> backed by this dataset —
+    they refresh daily with the pipeline, no code required on your side. Paste the markdown into any README.</p>
+  <div id="out"></div>
+  <h2>make your own</h2>
+  <p class="sub" style="margin-bottom:8px">Every endpoint in <a href="docs/api.md">docs/api.md</a> can feed a badge.
+    Schema: <code>{"schemaVersion":1,"label":"…","message":"…","color":"2b6cb0"}</code>. See
+    <code>scripts/stats.py</code> / <code>scripts/sources.py</code> for how ours are generated.</p>
+  <footer>Open data, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> ·
+    <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a></footer>
+<script type="module">
+const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
+const PAGES = "https://zalize-com.github.io/trendscope";
+const RAW   = "https://raw.githubusercontent.com/zalize-com/trendscope/main";
+
+const BADGES = [
+  { name: "items tracked", file: "badge.json",
+    blurb: "Total history rows and days tracked — a live dataset-size counter." },
+  { name: "today's #1 story", file: "badge-top.json",
+    blurb: "The current top item on the board. Changes every snapshot." },
+  { name: "sources tracked", file: "badge-sources.json",
+    blurb: "How many attention sources the pipeline currently covers." },
+];
+
+const out = document.getElementById("out");
+out.innerHTML = BADGES.map(b => {
+  const endpoint = `${PAGES}/docs/api/${b.file}`;
+  const rawEndpoint = `${RAW}/docs/api/${b.file}`;
+  const shields = `https://img.shields.io/endpoint?url=${encodeURIComponent(endpoint)}`;
+  const shieldsRaw = `https://img.shields.io/endpoint?url=${encodeURIComponent(rawEndpoint)}`;
+  const md = `[![${b.name}](${shields})](${PAGES})`;
+  const mdRaw = `[![${b.name}](${shieldsRaw})](${PAGES})`;
+  const html = `<a href="${PAGES}"><img src="${shields}" alt="${b.name}"></a>`;
+  return `<div class="card">
+    <h3>${esc(b.name)}</h3>
+    <div class="lbl">${esc(b.blurb)}</div>
+    <img src="${shieldsRaw}" alt="${esc(b.name)} badge"
+         onerror="this.outerHTML='<span style=\\'color:var(--dim)\\'>badge preview unavailable</span>'">
+    <div class="lbl">markdown (GitHub Pages endpoint)</div>
+    <pre>${esc(md)}</pre>
+    <div class="lbl">markdown (raw endpoint — works before Pages is enabled)</div>
+    <pre>${esc(mdRaw)}</pre>
+    <div class="lbl">endpoint JSON: <code>docs/api/${esc(b.file)}</code> · <a href="${rawEndpoint}">view</a></div>
+  </div>`;
+}).join("");
+</script>
+</body>
+</html>

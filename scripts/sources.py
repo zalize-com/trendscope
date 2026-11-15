@@ -65,6 +65,13 @@ def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
+
+    badge = {"schemaVersion": 1, "label": "sources tracked",
+             "message": str(len(out["sources"])), "color": "2b6cb0"}
+    with open(os.path.join(ROOT, "docs", "api", "badge-sources.json"),
+              "w", encoding="utf-8") as f:
+        json.dump(badge, f)
+
     print(f"sources.json: {len(out['sources'])} sources over {len(all_days)} days")
 
 
