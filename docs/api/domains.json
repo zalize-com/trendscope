@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T12:36:48.679710+00:00",
+ "generated_at": "2026-11-15T12:41:42.819062+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 187,
+ "total": 200,
  "domains": [
   {
    "hostname": "so.long.thanks.fish",
@@ -247,6 +247,22 @@
    }
   },
   {
+   "hostname": "lexifina.com",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews",
+    "lemmy"
+   ],
+   "top_hit": {
+    "title": "Formalizing US Tax Code (Using Lean)",
+    "url": "https://lexifina.com/blog/formalizing-the-us-tax-code",
+    "score": 104,
+    "metric": "points",
+    "date": "2026-11-14"
+   }
+  },
+  {
    "hostname": "zwischenzugs.com",
    "days_on_board": 2,
    "items": 2,
@@ -488,6 +504,22 @@
    }
   },
   {
+   "hostname": "blog.rust-lang.org",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews",
+    "lemmy"
+   ],
+   "top_hit": {
+    "title": "Rust 1.100",
+    "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+    "score": 890,
+    "metric": "points",
+    "date": "2026-11-12"
+   }
+  },
+  {
    "hostname": "righto.com",
    "days_on_board": 2,
    "items": 2,
@@ -700,21 +732,6 @@
    }
   },
   {
-   "hostname": "lexifina.com",
-   "days_on_board": 1,
-   "items": 1,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Formalizing US Tax Code (Using Lean)",
-    "url": "https://lexifina.com/blog/formalizing-the-us-tax-code",
-    "score": 104,
-    "metric": "points",
-    "date": "2026-11-14"
-   }
-  },
-  {
    "hostname": "beyondloom.com",
    "days_on_board": 1,
    "items": 1,
@@ -740,21 +757,6 @@
     "title": "A visual explanation of reinforcement learning",
     "url": "https://aatishb.com/myriad/how-brains-learn/",
     "score": 74,
-    "metric": "points",
-    "date": "2026-11-14"
-   }
-  },
-  {
-   "hostname": "cbc.ca",
-   "days_on_board": 1,
-   "items": 1,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "LinkedIn, Monster take down over 1000 fake job postings after CBC investigation",
-    "url": "https://www.cbc.ca/news/canada/linkedin-monster-take-down-over-1-000-fake-job-postings-after-cbc-investigation-9.7415379",
-    "score": 66,
     "metric": "points",
     "date": "2026-11-14"
    }

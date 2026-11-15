@@ -196,6 +196,28 @@ def fetch_lobsters(limit=15):
     return sorted(out, key=lambda x: -x["score"])
 
 
+def fetch_lemmy(limit=15):
+    """programming.dev (Lemmy) hot posts — fediverse programming community signal."""
+    print("Fetching lemmy programming.dev hot...")
+    data = get_json(
+        "https://programming.dev/api/v3/post/list?community_name=programming&sort=Hot&limit=%d" % limit,
+        headers={"User-Agent": UA})
+    out = []
+    for p in (data or {}).get("posts", [])[:limit]:
+        po, co, cr = p.get("post", {}), p.get("counts", {}), p.get("creator", {})
+        out.append(item(
+            "lemmy",
+            po.get("name", ""),
+            po.get("url") or po.get("ap_id", ""),
+            co.get("score", 0),
+            "score",
+            tags=[po.get("community_name") or p.get("community", {}).get("name", "")],
+            comments=co.get("comments", 0),
+            author=cr.get("name"),
+        ))
+    return sorted(out, key=lambda x: -x["score"])
+
+
 def fetch_devto(limit=15):
     print("Fetching dev.to top articles...")
     data = get_json("https://dev.to/api/articles?top=7&per_page=25")
@@ -603,6 +625,7 @@ def main():
         "ask_hn": fetch_ask_hn,
         "lobsters": fetch_lobsters,
         "devto": fetch_devto,
+        "lemmy": fetch_lemmy,
         "producthunt": fetch_producthunt,
         "techmeme": fetch_techmeme,
         "slashdot": fetch_slashdot,

@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T12:36:48.679710+00:00",
+ "generated_at": "2026-11-15T12:41:42.819062+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 298,
- "new_items": 172,
+ "total_items": 313,
+ "new_items": 187,
  "by_source": {
   "producthunt": 45,
   "show_hn": 20,
@@ -11,6 +11,7 @@
   "slashdot": 17,
   "arstechnica": 16,
   "arxiv": 15,
+  "lemmy": 15,
   "theverge": 11,
   "lobsters": 8,
   "github_trending": 2,
@@ -433,6 +434,126 @@
    "rank": 20,
    "score": 55,
    "metric": "points"
+  },
+  {
+   "title": "Programming.dev instance: Sponsors needed",
+   "url": "https://legal.programming.dev/docs/donation-policy/",
+   "source": "lemmy",
+   "rank": 1,
+   "score": 197,
+   "metric": "score"
+  },
+  {
+   "title": "Lean proof of the entire US tax code to find loopholes",
+   "url": "https://lexifina.com/blog/formalizing-the-us-tax-code",
+   "source": "lemmy",
+   "rank": 2,
+   "score": 87,
+   "metric": "score"
+  },
+  {
+   "title": "For the first time, a C++ standard failed to pass the national bodies",
+   "url": "https://herecomesthemoon.net/2026/11/cpp26-failed-the-national-bodies/",
+   "source": "lemmy",
+   "rank": 3,
+   "score": 73,
+   "metric": "score"
+  },
+  {
+   "title": "How to rediscover your passion for learning?",
+   "url": "https://lemmy.zip/post/75003138",
+   "source": "lemmy",
+   "rank": 4,
+   "score": 56,
+   "metric": "score"
+  },
+  {
+   "title": "Personal programming thoughts",
+   "url": "https://akselmo.dev/posts/programming-thoughts/",
+   "source": "lemmy",
+   "rank": 5,
+   "score": 43,
+   "metric": "score"
+  },
+  {
+   "title": "Does this community have its own version of the StackOverflow Developer Survey?",
+   "url": "https://ani.social/post/39410726",
+   "source": "lemmy",
+   "rank": 6,
+   "score": 34,
+   "metric": "score"
+  },
+  {
+   "title": "Tool for bash script to send push notification to my phone?",
+   "url": "https://sh.itjust.works/post/69835965",
+   "source": "lemmy",
+   "rank": 7,
+   "score": 22,
+   "metric": "score"
+  },
+  {
+   "title": "Google Search's foundational PageRank patent has expired. What will be the impact of this",
+   "url": "https://deepsystemstuff.com/patent-for-pagerank-algorithm-who-made-google-search-what-it-is-today-has-expired-what-does-it-means-for-open-source-developers/",
+   "source": "lemmy",
+   "rank": 8,
+   "score": 22,
+   "metric": "score"
+  },
+  {
+   "title": "Announcing Rust 1.100.0",
+   "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+   "source": "lemmy",
+   "rank": 9,
+   "score": 19,
+   "metric": "score"
+  },
+  {
+   "title": "eMudhra's official incident report on how they ended up with private key 4",
+   "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2083449#c82",
+   "source": "lemmy",
+   "rank": 10,
+   "score": 17,
+   "metric": "score"
+  },
+  {
+   "title": "The 0rwx Framework",
+   "url": "https://makertube.net/w/iNrtKXYyZx1eZyAS5aVgD8",
+   "source": "lemmy",
+   "rank": 11,
+   "score": 16,
+   "metric": "score"
+  },
+  {
+   "title": "Does an index of source forges exist?",
+   "url": "https://programming.dev/post/59355186",
+   "source": "lemmy",
+   "rank": 12,
+   "score": 13,
+   "metric": "score"
+  },
+  {
+   "title": "Tutorial for Verus, a language and checker for statically verifying correctness of Rust code sections",
+   "url": "https://verus-lang.github.io/verus/guide/",
+   "source": "lemmy",
+   "rank": 13,
+   "score": 13,
+   "metric": "score"
+  },
+  {
+   "title": "How Cloudflare uses QuePaxa—a leaderless, fault-detection-free consensus algorithm—for its global control plane",
+   "url": "https://blog.cloudflare.com/choosing-quepaxa/",
+   "source": "lemmy",
+   "rank": 14,
+   "score": 7,
+   "metric": "score"
+  },
+  {
+   "title": "Announcing .NET 11",
+   "url": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/",
+   "source": "lemmy",
+   "rank": 15,
+   "score": 7,
+   "metric": "score"
   },
   {
    "title": "25 of my favourite modern NES games",

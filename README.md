@@ -35,6 +35,7 @@ A daily cross-source snapshot of developer attention:
 | npm | weekly downloads (watchlist) | `api.npmjs.org` |
 | PyPI | monthly downloads (watchlist) | `pypistats.org` |
 | crates.io | recent downloads | `crates.io/api` |
+| Lemmy (programming.dev) | hot posts in the programming community | `programming.dev/api/v3` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
