@@ -53,6 +53,18 @@
     <div style="margin-top:12px"><button class="go" id="export">export audit as markdown</button></div>
     <div class="out" id="out"></div>
   </div>
+  <div class="cat" style="margin-top:18px">
+    <h3>llms.txt generator</h3>
+    <p class="note">Checked the AI-native box above? Emit the file here. <code>llms.txt</code> is a Markdown index AI agents read to navigate your site — title, one-line summary, then grouped links.</p>
+    <label class="note" style="display:block;margin-top:10px">site name</label>
+    <input id="ll-name" style="width:100%;background:var(--bg);border:1px solid var(--border);border-radius:6px;color:var(--fg);padding:7px;font-size:13px" placeholder="My Project">
+    <label class="note" style="display:block;margin-top:8px">one-line summary</label>
+    <input id="ll-desc" style="width:100%;background:var(--bg);border:1px solid var(--border);border-radius:6px;color:var(--fg);padding:7px;font-size:13px" placeholder="What it is and why an AI agent would cite it">
+    <label class="note" style="display:block;margin-top:8px">links — one per line: <code>section | link text | URL | optional note</code></label>
+    <textarea id="ll-links" rows="7" style="width:100%;background:var(--bg);border:1px solid var(--border);border-radius:6px;color:var(--fg);padding:7px;font-size:13px;font-family:ui-monospace,monospace" placeholder="Docs | Getting started | https://example.com/docs | setup in 5 min&#10;API | Endpoint reference | https://example.com/api&#10;Data | Downloads | https://example.com/data | CC0"></textarea>
+    <div style="margin-top:10px"><button class="go" id="ll-go">generate llms.txt</button></div>
+    <textarea id="ll-out" rows="10" readonly style="width:100%;margin-top:8px;background:var(--bg);border:1px solid var(--border);border-radius:6px;color:var(--fg);padding:7px;font-size:12px;font-family:ui-monospace,monospace" placeholder="llms.txt appears here"></textarea>
+  </div>
   <footer>In-browser only — no tracking, no upload. Part of
     <a href="https://github.com/zalize-com/trendscope">trendscope</a>.</footer>
 <script>
@@ -121,6 +133,22 @@ document.getElementById("export").onclick = () => {
   out.textContent = md; out.style.display = "block";
 };
 score();
+
+document.getElementById("ll-go").onclick = () => {
+  const name = document.getElementById("ll-name").value.trim() || "Untitled";
+  const desc = document.getElementById("ll-desc").value.trim();
+  const groups = {};
+  for (const line of document.getElementById("ll-links").value.split("\n")) {
+    const parts = line.split("|").map(s => s.trim()).filter(Boolean);
+    if (parts.length < 3) continue;
+    const [sec, text, url, note] = parts;
+    (groups[sec] = groups[sec] || []).push(`- [${text}](${url})${note ? `: ${note}` : ""}`);
+  }
+  let md = `# ${name}\n\n${desc ? `> ${desc}\n\n` : ""}`;
+  for (const [sec, items] of Object.entries(groups))
+    md += `## ${sec}\n\n${items.join("\n")}\n\n`;
+  document.getElementById("ll-out").value = md.trim() + "\n";
+};
 </script>
 </body>
 </html>
