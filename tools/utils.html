@@ -134,6 +134,18 @@
     <div class="stat" id="tr-stat"></div>
   </div>
 
+  <!-- Contrast checker -->
+  <div class="tool" data-tool="contrast">
+    <h2>Contrast checker</h2>
+    <p class="hint">WCAG 2.1 contrast ratio for text on background — AA needs 4.5:1, AAA 7:1.</p>
+    <div class="row2">
+      <input type="text" id="cc-fg" placeholder="foreground #e6edf3">
+      <input type="text" id="cc-bg" placeholder="background #0d1117">
+    </div>
+    <div class="swatch" id="cc-sw" style="display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:600">Aa preview</div>
+    <div class="out kv" id="cc-out"></div>
+  </div>
+
   <!-- URL editor -->
   <div class="tool" data-tool="url">
     <h2>URL query editor</h2>
@@ -159,6 +171,7 @@ const TOOLS = [
   {id:"yaml",  label:"YAML ↔ JSON"},
   {id:"tree",  label:"Outline → tree"},
   {id:"url",   label:"URL query editor"},
+  {id:"contrast", label:"Contrast checker"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -381,7 +394,43 @@ function uGo(){
 }
 document.getElementById("u-in").addEventListener("input", uGo);
 
-cGo(); tStat(); uGo();
+// ---- Contrast checker (WCAG 2.1) ----
+function ccParse(s){
+  s=(s||"").trim().toLowerCase();
+  if(NAMED[s]) return NAMED[s];
+  let m=s.match(/^#?([0-9a-f]{3}|[0-9a-f]{6})$/);
+  if(m){const h=m[1];return h.length===3?[0,1,2].map(i=>parseInt(h[i]+h[i],16))
+      :[0,2,4].map(i=>parseInt(h.substr(i,2),16));}
+  m=s.match(/rgba?\(([^)]+)\)/);
+  if(m){const p=m[1].split(",").map(x=>parseFloat(x));return p.length>=3?p.slice(0,3):null;}
+  return null;
+}
+function ccLum(rgb){
+  const f=v=>{v/=255;return v<=0.03928?v/12.92:Math.pow((v+0.055)/1.055,2.4);};
+  return 0.2126*f(rgb[0])+0.7152*f(rgb[1])+0.0722*f(rgb[2]);
+}
+function ccGo(){
+  const fg=ccParse(document.getElementById("cc-fg").value);
+  const bg=ccParse(document.getElementById("cc-bg").value);
+  const sw=document.getElementById("cc-sw"), out=document.getElementById("cc-out");
+  if(!fg||!bg){sw.style.background="";sw.style.color="";sw.textContent="Aa preview";
+    out.innerHTML='<span style="color:var(--dim)">enter two colors (hex, rgb(), or named)</span>';return;}
+  const l1=ccLum(fg),l2=ccLum(bg);
+  const r=(Math.max(l1,l2)+0.05)/(Math.min(l1,l2)+0.05);
+  const hx=c=>"#"+c.map(v=>v.toString(16).padStart(2,"0")).join("");
+  sw.style.background=hx(bg);sw.style.color=hx(fg);sw.textContent="Aa preview — the quick brown fox";
+  const grade=v=>v?"✓ pass":"✗ fail";
+  out.innerHTML=
+    `<span class="k">ratio</span><span><b>${r.toFixed(2)}</b> : 1</span>`+
+    `<span class="k">AA normal text (≥4.5)</span><span style="color:${r>=4.5?"var(--green)":"var(--orange)"}">${grade(r>=4.5)}</span>`+
+    `<span class="k">AA large text (≥3)</span><span style="color:${r>=3?"var(--green)":"var(--orange)"}">${grade(r>=3)}</span>`+
+    `<span class="k">AAA normal text (≥7)</span><span style="color:${r>=7?"var(--green)":"var(--orange)"}">${grade(r>=7)}</span>`+
+    `<span class="k">AAA large text (≥4.5)</span><span style="color:${r>=4.5?"var(--green)":"var(--orange)"}">${grade(r>=4.5)}</span>`;
+}
+document.getElementById("cc-fg").addEventListener("input",ccGo);
+document.getElementById("cc-bg").addEventListener("input",ccGo);
+
+cGo(); tStat(); uGo(); ccGo();
 </script>
 </body>
 </html>
