@@ -76,6 +76,7 @@
     <button data-tool="favicon">favicon pack</button>
     <button data-tool="sitemapgen">sitemap.xml</button>
     <button data-tool="llmstxt">llms.txt</button>
+    <button data-tool="manifest">manifest.json</button>
   </div>
 
   <div class="panel" id="p-qr">
@@ -244,7 +245,24 @@
 
 <footer>
 <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<div class="panel" id="p-manifest">
+    <h2>Web app manifest builder</h2>
+    <p class="hint">Generate a <code>manifest.json</code> — pair with the <a href="?t=favicon">favicon pack</a> for installable apps.</p>
+    <div class="kv" style="display:grid;grid-template-columns:150px 1fr;gap:6px 10px;margin-bottom:8px">
+      <span class="muted" style="align-self:center">name</span><input id="mf-name" placeholder="My App" style="padding:7px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)">
+      <span class="muted" style="align-self:center">short_name</span><input id="mf-short" placeholder="App" style="padding:7px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)">
+      <span class="muted" style="align-self:center">start_url</span><input id="mf-start" placeholder="/" style="padding:7px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)">
+      <span class="muted" style="align-self:center">display</span><select id="mf-display" style="padding:7px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)"><option>standalone</option><option>browser</option><option>minimal-ui</option><option>fullscreen</option></select>
+      <span class="muted" style="align-self:center">theme_color</span><input id="mf-theme" placeholder="#0d1117" style="padding:7px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)">
+      <span class="muted" style="align-self:center">background_color</span><input id="mf-bg" placeholder="#0d1117" style="padding:7px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)">
+      <span class="muted" style="align-self:center">icons</span><input id="mf-icons" placeholder="favicon-16.png,android-chrome-192.png,android-chrome-512.png" style="padding:7px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)">
+    </div>
+    <div class="out" id="mf-out" style="white-space:pre;overflow-x:auto"></div>
+    <button class="copy" id="mf-copy">copy manifest.json</button>
+    <div class="err" id="mf-err"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
   <div class="panel" id="p-favicon">
     <h2>Favicon pack</h2>
@@ -282,7 +300,7 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots","spage","feed","badge","ogimg","favicon","sitemapgen","llmstxt"];
+const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots","spage","feed","badge","ogimg","favicon","sitemapgen","llmstxt","manifest"];
 
 // ---- status-page checker ----
 function spreset(u){ const i=document.getElementById("sp-in"); if(i){ i.value=u; i.dispatchEvent(new Event("input")); } return false; }
@@ -414,6 +432,39 @@ document.getElementById("ma-go").addEventListener("click", () => {
       <div style="margin-top:10px">${row("twitter:card", M.tw_card)}${row("og:type", M.og_type)}${row("canonical", M.canonical)}</div>
     </div></div>`;
 });
+/* ---------- manifest.json builder ---------- */
+(function () {
+  function go() {
+    const v = id => $(id).value.trim();
+    const name = v("mf-name"), short = v("mf-short"), start = v("mf-start"),
+          disp = v("mf-display"), theme = v("mf-theme"), bg = v("mf-bg");
+    const icons = v("mf-icons").split(",").map(x => x.trim()).filter(Boolean).map(fn => {
+      const m = fn.match(/(\d+)/);
+      const sz = m ? m[1] : "192";
+      return { src: fn, sizes: sz + "x" + sz, type: "image/png" };
+    });
+    if (!name && !short && !icons.length) { $("mf-out").textContent = ""; $("mf-err").textContent = ""; return; }
+    const man = {
+      name: name || "My App",
+      short_name: short || name || "App",
+      start_url: start || "/",
+      display: disp,
+      background_color: bg || "#ffffff",
+      theme_color: theme || "#ffffff",
+      icons,
+    };
+    $("mf-out").textContent = JSON.stringify(man, null, 2);
+    $("mf-err").textContent = icons.length ? "" : "⚠ no icons — add file names like android-chrome-192.png";
+  }
+  for (const id of ["mf-name","mf-short","mf-start","mf-display","mf-theme","mf-bg","mf-icons"])
+    $(id).addEventListener("input", go);
+  $("mf-copy").onclick = () => navigator.clipboard?.writeText($("mf-out").textContent).then(() => { $("mf-copy").textContent = "copied"; setTimeout(() => $("mf-copy").textContent = "copy manifest.json", 1200); });
+  $("mf-name").value = "trendscope"; $("mf-short").value = "trendscope";
+  $("mf-start").value = "/"; $("mf-theme").value = "#0d1117"; $("mf-bg").value = "#0d1117";
+  $("mf-icons").value = "favicon-16.png,android-chrome-192.png,android-chrome-512.png";
+  go();
+})();
+
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "qr");
