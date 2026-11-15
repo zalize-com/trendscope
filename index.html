@@ -370,7 +370,7 @@ function render(items, tab) {
       .filter(t => t !== it.source && !String(t).startsWith("author_"))
       .slice(0, 4).map(t => `<span class="src">${t}</span>`).join(" ");
     const streak = STREAK.get(it.url)
-      ? `<span class="delta" style="color:var(--orange)">🔥${STREAK.get(it.url)}d</span>` : "";
+      ? `<a class="delta" style="color:var(--orange)" href="item.html?q=${encodeURIComponent(it.title)}">🔥${STREAK.get(it.url)}d</a>` : "";
     const comments = it.comments ? `<span>💬 ${it.comments}</span>` : "";
     const author = it.author ? `<span>@${it.author}</span>` : "";
     board.insertAdjacentHTML("beforeend", `
