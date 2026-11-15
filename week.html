@@ -121,6 +121,7 @@ fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
   document.getElementById("out").innerHTML = `
     <h2>top of the window — by cumulative heat</h2>
     <p id="chips" class="src-chips">${chips}</p>
+    <p style="margin:4px 0 10px;font-size:12px"><a id="wk-csv" style="cursor:pointer">⤓ download window as CSV</a> <span class="muted">· top-50 by cumulative heat</span></p>
     <ol>${top.map((e,i) => `<li><span class="sc" style="min-width:16px;text-align:right">${i+1}</span>
       <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span></span>
       <span class="sc">${e.total.toFixed(1)} heat</span></li>`).join("")
@@ -135,6 +136,16 @@ fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
     const u = new URL(location.href);
     c.dataset.s ? u.searchParams.set("s", c.dataset.s) : u.searchParams.delete("s");
     location.href = u;
+  };
+  document.getElementById("wk-csv").onclick = () => {
+    const esc2 = v => '"' + String(v ?? "").replace(/"/g, '""') + '"';
+    const rows = [["rank","title","url","source","days_on_board","total_heat"]]
+      .concat(top.map((e, i) => [i + 1, e.title, e.url, e.source, e.days.size, e.total.toFixed(2)].map(esc2).join(",")));
+    const blob = new Blob([rows.join("\n") + "\n"], {type: "text/csv"});
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `trendscope-week-${wdays[0]}_${WIN}d.csv`;
+    a.click(); URL.revokeObjectURL(a.href);
   };
 }).catch(e => { document.getElementById("err").textContent = "history unavailable"; });
 </script>
