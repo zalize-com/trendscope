@@ -288,6 +288,13 @@
     <p class="hint" id="pg-bits"></p>
   </div>
 
+  <div class="tool" data-tool="case">
+    <h2>case converter</h2>
+    <p class="hint">Paste any identifier or text &rarr; all naming conventions at once.</p>
+    <p><input id="cc-in" size="36" placeholder="hello_world-example"></p>
+    <div class="out" id="cc-out" style="font-family:ui-monospace,monospace;font-size:13px;white-space:pre-wrap"></div>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -312,6 +319,7 @@ const TOOLS = [
   {id:"csv",    label:"CSV ↔ JSON"},
   {id:"semver", label:"semver compare"},
   {id:"pwgen",  label:"password gen"},
+  {id:"case",   label:"case converter"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -888,6 +896,33 @@ document.getElementById('pg-go').onclick=()=>{
   const bits=Math.round(n*Math.log2(chars.length));
   document.getElementById('pg-bits').textContent=`${n} chars · ${chars.length}-char alphabet · ~${bits} bits entropy`;
 };
+
+// --- case converter ---
+function ccWords(t){
+  return t.replace(/([a-z0-9])([A-Z])/g,'$1 $2')
+          .replace(/[^A-Za-z0-9]+/g,' ')
+          .trim().split(/\s+/).filter(Boolean).map(w=>w.toLowerCase());
+}
+document.getElementById('cc-in').addEventListener('input',()=>{
+  const ws=ccWords(document.getElementById('cc-in').value);
+  const out=document.getElementById('cc-out');
+  if(!ws.length){out.textContent='';return;}
+  const cap=w=>w[0].toUpperCase()+w.slice(1);
+  const j=(a)=>a.join('');
+  const rows={
+    'camelCase': ws[0]+j(ws.slice(1).map(cap)),
+    'PascalCase': j(ws.map(cap)),
+    'snake_case': ws.join('_'),
+    'SCREAMING_SNAKE': ws.join('_').toUpperCase(),
+    'kebab-case': ws.join('-'),
+    'TRAIN-CASE': ws.join('-').toUpperCase(),
+    'dot.case': ws.join('.'),
+    'Title Case': ws.map(cap).join(' '),
+    'lower case': ws.join(' '),
+    'UPPER CASE': ws.join(' ').toUpperCase(),
+  };
+  out.textContent=Object.entries(rows).map(([k,v])=>k.padEnd(16,' ')+v).join('\n');
+});
 </script>
 </body>
 </html>
