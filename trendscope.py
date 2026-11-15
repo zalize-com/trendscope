@@ -24,10 +24,19 @@ UA = "trendscope-cli/1.0"
 
 
 def fetch(path, binary=False):
-    req = urllib.request.Request(f"{BASE}/{path}", headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        data = r.read()
-    return data if binary else data.decode("utf-8")
+    try:
+        req = urllib.request.Request(f"{BASE}/{path}", headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            data = r.read()
+        return data if binary else data.decode("utf-8")
+    except Exception:
+        # fall back to the local dataset when running inside the repo
+        local = os.path.join(os.path.dirname(os.path.abspath(__file__)), path)
+        if os.path.exists(local):
+            with open(local, "rb") as f:
+                data = f.read()
+            return data if binary else data.decode("utf-8")
+        raise
 
 
 def fmt(n):
