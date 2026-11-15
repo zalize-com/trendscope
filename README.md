@@ -47,6 +47,12 @@ compare within a source, not across.
   text inspector, YAML↔JSON, outline→tree, URL query editor.
 - **Weekly digests** (`docs/digest/`): machine-generated summaries plus
   narrative notes.
+- **Embed widget** (`embed.html`): the top-10 board as a drop-in iframe for
+  blogs/docs (no signup, updates daily):
+
+```html
+<iframe src="https://zalize-com.github.io/trendscope/embed.html" width="400" height="520" frameborder="0"></iframe>
+```
 
 ## Quick start
 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>trendscope embed — top of today's developer board</title>
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --border: #30363d; --fg: #e6edf3;
+    --dim: #8b949e; --accent: #58a6ff;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --fg: #1f2328;
+      --dim: #59636e; --accent: #0969da;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--fg);
+    font: 13px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    padding: 10px 12px;
+  }
+  .brand { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+  .brand b { font-size: 14px; }
+  .brand b span { color: var(--accent); }
+  .brand .date { color: var(--dim); font-size: 11px; }
+  ol { list-style: none; }
+  li {
+    display: flex; gap: 8px; padding: 4px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  li:last-child { border-bottom: 0; }
+  .rank { color: var(--dim); min-width: 14px; text-align: right; }
+  a { color: var(--fg); text-decoration: none; }
+  a:hover { color: var(--accent); text-decoration: underline; }
+  .src {
+    color: var(--dim); font-size: 10px; border: 1px solid var(--border);
+    border-radius: 4px; padding: 0 4px; margin-left: 6px; white-space: nowrap;
+  }
+  .score { margin-left: auto; color: var(--dim); white-space: nowrap; font-size: 11px; }
+  .foot { margin-top: 8px; text-align: right; }
+  .foot a { color: var(--dim); font-size: 11px; }
+  #err { color: var(--dim); padding: 8px 0; }
+</style>
+</head>
+<body>
+  <div class="brand">
+    <b>trend<span>scope</span></b>
+    <span class="date" id="date"></span>
+  </div>
+  <ol id="list"><li id="err">loading…</li></ol>
+  <div class="foot"><a href="https://zalize-com.github.io/trendscope/" target="_blank" rel="noopener">open dataset · CC0 →</a></div>
+<script>
+const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B" : n >= 1e6 ? (n/1e6).toFixed(1)+"M"
+             : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
+const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
+const N = Math.min(Math.max(parseInt(new URLSearchParams(location.search).get("n") || "10"), 5), 30);
+fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
+  document.getElementById("date").textContent = snap.date || snap.generated_at.slice(0,10);
+  const max = {};
+  for (const [s, its] of Object.entries(snap.items)) max[s] = its[0]?.score || 1;
+  const flat = Object.entries(snap.items).flatMap(([s, its]) =>
+    its.map(it => ({it, heat: it.score / (max[s] || 1)})));
+  flat.sort((a,b) => b.heat - a.heat);
+  document.getElementById("list").innerHTML = flat.slice(0, N).map((x, i) =>
+    `<li><span class="rank">${i+1}</span>
+      <span><a href="${x.it.url}" target="_blank" rel="noopener">${esc(x.it.title)}</a><span class="src">${x.it.source}</span></span>
+      <span class="score">${fmt(x.it.score)} ${x.it.metric}</span></li>`).join("");
+}).catch(() => { document.getElementById("err").textContent = "snapshot unavailable"; });
+</script>
+</body>
+</html>
