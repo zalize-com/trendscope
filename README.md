@@ -163,6 +163,9 @@ A daily cross-source snapshot of developer attention:
 | William Edmisten | geospatial and data notes | `wcedmisten.fyi/feed.xml` |
 | Programming in the 21st Century | James Hague programming essays | `prog21.dadgum.com/atom.xml` |
 | Daniel Miessler | security and AI analysis | `danielmiessler.com/feed` |
+| swyx | AI engineering and learning in public | `swyx.io/rss.xml` |
+| Sam Rose | visual systems essays | `samwho.dev/rss.xml` |
+| Guillermo Rauch | Vercel CEO writing | `rauchg.com/atom` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

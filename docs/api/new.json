@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-11-15T16:31:39.089132+00:00",
+ "generated_at": "2026-11-15T16:33:07.883586+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1970,
- "new_items": 1844,
+ "total_items": 2007,
+ "new_items": 1881,
  "by_source": {
   "producthunt": 45,
   "show_hn": 39,
   "theregister": 29,
   "hackernews": 28,
-  "techmeme": 21,
+  "techmeme": 22,
   "slashdot": 18,
   "thenewstack": 17,
   "arstechnica": 16,
@@ -70,6 +70,7 @@
   "pragmatic": 15,
   "pythonblog": 15,
   "rands": 15,
+  "rauchg": 15,
   "ridiculousfish": 15,
   "robinrendle": 15,
   "sanglard": 15,
@@ -78,6 +79,7 @@
   "soblog": 15,
   "steveblank": 15,
   "swizec": 15,
+  "swyx": 15,
   "tbray": 15,
   "theverge": 15,
   "thisdavej": 15,
@@ -134,6 +136,7 @@
   "susam": 9,
   "hackaday": 8,
   "slack_eng": 8,
+  "samwho": 6,
   "tonsky": 6,
   "bendersky": 5,
   "github_trending": 4,
@@ -11058,6 +11061,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "The AI Cloud",
+   "url": "https://rauchg.com/2025/the-ai-cloud",
+   "source": "rauchg",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making the web. Faster.",
+   "url": "https://rauchg.com/2021/making-the-web-faster",
+   "source": "rauchg",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Next for Vercel",
+   "url": "https://rauchg.com/2020/next-for-vercel",
+   "source": "rauchg",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Books people re-read",
+   "url": "https://rauchg.com/2020/books-people-reread",
+   "source": "rauchg",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Develop, preview, test",
+   "url": "https://rauchg.com/2020/develop-preview-test",
+   "source": "rauchg",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Static hoisting",
+   "url": "https://rauchg.com/2020/static-hoisting",
+   "source": "rauchg",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An ode to code golf",
+   "url": "https://rauchg.com/2020/an-ode-to-code-golf",
+   "source": "rauchg",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vercel",
+   "url": "https://rauchg.com/2020/vercel",
+   "source": "rauchg",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2019 in review",
+   "url": "https://rauchg.com/2020/2019-in-review",
+   "source": "rauchg",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "It's hard to forego efficiency",
+   "url": "https://rauchg.com/2017/its-hard-to-forego-efficiency",
+   "source": "rauchg",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2016 in review",
+   "url": "https://rauchg.com/2017/2016-in-review",
+   "source": "rauchg",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Addressable errors",
+   "url": "https://rauchg.com/2016/addressable-errors",
+   "source": "rauchg",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pure UI",
+   "url": "https://rauchg.com/2015/pure-ui",
+   "source": "rauchg",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ECMAScript 6",
+   "url": "https://rauchg.com/2015/ecmascript-6",
+   "source": "rauchg",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7 principles of rich web applications",
+   "url": "https://rauchg.com/2014/7-principles-of-rich-web-applications",
+   "source": "rauchg",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Labor of Division (Episode VI): Narrowing Division Insight and Benchmarks",
    "url": "http://ridiculousfish.com/blog/posts/labor-of-division-episode-vi.html",
    "source": "ridiculousfish",
@@ -11302,6 +11425,54 @@
    "url": "https://roytang.net/",
    "source": "roytang",
    "rank": 1,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2025",
+   "url": "https://samwho.dev/2025/",
+   "source": "samwho",
+   "rank": 1,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Big O",
+   "url": "https://samwho.dev/big-o/",
+   "source": "samwho",
+   "rank": 2,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reservoir Sampling",
+   "url": "https://samwho.dev/reservoir-sampling/",
+   "source": "samwho",
+   "rank": 3,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Turing Machines",
+   "url": "https://samwho.dev/turing-machines/",
+   "source": "samwho",
+   "rank": 4,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Commitment to Art and Dogs",
+   "url": "https://samwho.dev/dogs/",
+   "source": "samwho",
+   "rank": 5,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bloom Filters",
+   "url": "https://samwho.dev/bloom-filters/",
+   "source": "samwho",
+   "rank": 6,
    "score": 1,
    "metric": "feed rank"
   },
@@ -12938,6 +13109,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "What America has meant to me",
+   "url": "https://swyx.io/america250",
+   "source": "swyx",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AIE Singapore: The Agentic Nation",
+   "url": "https://swyx.io/aie-singapore-the-agentic-nation",
+   "source": "swyx",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What you can do in a decade",
+   "url": "https://swyx.io/decade",
+   "source": "swyx",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Thought Lead (2026)",
+   "url": "https://swyx.io/lead",
+   "source": "swyx",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Constance Crozier: Forecasting s-curves is hard",
+   "url": "https://swyx.io/scurves",
+   "source": "swyx",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Take a hard game, and make it shorter",
+   "url": "https://swyx.io/shorter",
+   "source": "swyx",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How To Podcast",
+   "url": "https://swyx.io/podcast",
+   "source": "swyx",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Impossible Triangle of LLM Infra",
+   "url": "https://swyx.io/impossible-triangle",
+   "source": "swyx",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The only Permanent Underclass are the ones who believe it is permanent",
+   "url": "https://swyx.io/permanent-underclass",
+   "source": "swyx",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Year in Agents - AI Engineer Paris",
+   "url": "https://swyx.io/aie-paris",
+   "source": "swyx",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cognition: The Devin is in the Details",
+   "url": "https://swyx.io/cognition",
+   "source": "swyx",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My 2025 New Mac Setup",
+   "url": "https://swyx.io/new-mac-setup",
+   "source": "swyx",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Becoming a High Taste Tester",
+   "url": "https://swyx.io/high-taste-tester",
+   "source": "swyx",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gemini Nano in Chrome 137: notes for AI Engineers",
+   "url": "https://swyx.io/gemini-nano",
+   "source": "swyx",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "notes from Naval (2025)",
+   "url": "https://swyx.io/naval-2025",
+   "source": "swyx",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Long Links (with Pangram)",
    "url": "https://www.tbray.org/ongoing/When/202x/2026/11/08/Long-Links",
    "source": "tbray",
@@ -13108,6 +13399,14 @@
   {
    "title": "Investigation: Howard Lutnick pushed to narrow chip curbs affecting a client of his former firm Cantor Fitzgerald whose Malaysia data center may serve Tencent (New York Times)",
    "url": "https://www.techmeme.com/261115/p9#a261115p9",
+   "source": "techmeme",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI (Mark Gurman/Bloomberg)",
+   "url": "https://www.techmeme.com/261115/p10#a261115p10",
    "source": "techmeme",
    "rank": 1,
    "score": 15,
