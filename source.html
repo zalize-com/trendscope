@@ -99,11 +99,16 @@ for (const r of items) {
 }
 const top = Object.values(byUrl).sort((a,b) => b.score - a.score).slice(0, 30);
 const maxPerDay = Math.max(...Object.values(byDay), 1);
+const dayCounts = Object.values(byUrl).map(u => u.days.size).sort((a,b) => a-b);
+const medDays = dayCounts.length ? dayCounts[Math.floor(dayCounts.length/2)] : 0;
+const oneDayPct = dayCounts.length ? Math.round(100*dayCounts.filter(d => d===1).length/dayCounts.length) : 0;
 
 $("stats").innerHTML =
   `<div class="stat"><b>${items.length}</b><small>items tracked</small></div>` +
   `<div class="stat"><b>${days.length}</b><small>days covered</small></div>` +
   `<div class="stat"><b>${Object.keys(byUrl).length}</b><small>unique urls</small></div>` +
+  `<div class="stat"><b>${medDays}d</b><small>median days on board</small></div>` +
+  `<div class="stat"><b>${oneDayPct}%</b><small>one-day items</small></div>` +
   `<div class="stat"><b>${fmt(top[0]?.score||0)}</b><small>top score</small></div>`;
 
 const bars = days.map(d => `<div class="bar" style="height:${Math.max(2, Math.round(44*byDay[d]/maxPerDay))}px" title="${d}: ${byDay[d]} items"></div>`).join("");
