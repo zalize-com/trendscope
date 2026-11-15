@@ -89,6 +89,7 @@ A daily cross-source snapshot of developer attention:
 | This Week in Rust | Rust community newsletter | `this-week-in-rust.org/rss.xml` |
 | Python Blog | official Python announcements | `blog.python.org/feeds/posts/default` |
 | Rands in Repose | engineering management essays | `randsinrepose.com/feed/` |
+| catonmat | unix tools and programming | `catonmat.net/feed` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
