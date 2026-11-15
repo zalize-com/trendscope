@@ -41,7 +41,10 @@
   <h2>cumulative rows</h2>
   <svg class="chart" id="cum" viewBox="0 0 820 200"></svg>
   <h2>rows per source</h2>
-  <div id="srcs"></div>
+  <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start">
+    <svg id="donut" width="200" height="200" viewBox="0 0 200 200"></svg>
+    <div id="srcs" style="flex:1;min-width:280px"></div>
+  </div>
   <footer>API: <a href="docs/api/stats.json">stats.json</a> ·
     <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a> · CC0</footer>
 <script type="module">
@@ -108,12 +111,28 @@ function chart(id, vals, color, fill=false) {
 chart("daily", counts, "var(--accent)");
 chart("cum", cums, "var(--green)", true);
 
+const srcList = Object.entries(perSrc).sort((a,b) => b[1]-a[1]);
 const maxS = Math.max(...Object.values(perSrc));
-document.getElementById("srcs").innerHTML = Object.entries(perSrc)
-  .sort((a,b) => b[1]-a[1]).map(([s, n]) =>
+const PALETTE = ["#58a6ff","#7ee2a8","#f0883e","#d2a8ff","#79c0ff","#ffa657","#56d4bc","#ff9bcf","#a5d6ff","#e3b341","#8ddb8c","#f778ba","#76e3ea","#d3a6ff","#ffb86b"];
+document.getElementById("srcs").innerHTML = srcList.map(([s, n], i) =>
     `<div class="bar"><span class="nm">${s}</span>
-     <span class="fill" style="width:${Math.round(400*n/maxS)}px"></span>
+     <span class="fill" style="width:${Math.round(400*n/maxS)}px;background:${PALETTE[i % PALETTE.length]}"></span>
      <span class="v">${fmt(n)}</span></div>`).join("");
+// per-source share donut
+const totalS = srcList.reduce((a, [,n]) => a + n, 0);
+const R = 70, CX = 100, CY = 100, CIRC = 2 * Math.PI * R;
+let acc = 0;
+document.getElementById("donut").innerHTML =
+  srcList.map(([s, n], i) => {
+    const frac = n / totalS, len = frac * CIRC;
+    const seg = `<circle cx="${CX}" cy="${CY}" r="${R}" fill="none" stroke="${PALETTE[i % PALETTE.length]}"
+      stroke-width="26" stroke-dasharray="${len.toFixed(2)} ${(CIRC - len).toFixed(2)}"
+      stroke-dashoffset="${(-acc * CIRC).toFixed(2)}" transform="rotate(-90 ${CX} ${CY})"
+      ><title>${s} — ${fmt(n)} (${(frac*100).toFixed(1)}%)</title></circle>`;
+    acc += frac; return seg;
+  }).join("") +
+  `<text x="${CX}" y="${CY-4}" fill="var(--fg)" font-size="18" font-weight="600" text-anchor="middle">${srcList.length}</text>` +
+  `<text x="${CX}" y="${CY+14}" fill="var(--dim)" font-size="11" text-anchor="middle">sources</text>`;
 </script>
 </body>
 </html>
