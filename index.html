@@ -267,6 +267,7 @@ const TABS = [
   { id: "theverge",        label: "Verge" },
   { id: "arxiv",           label: "arXiv" },
   { id: "packages",        label: "Packages" },
+  { id: "zh",              label: "中文" },
   { id: "lemmy",            label: "Lemmy" },
   { id: "krebs",            label: "Krebs" },
   { id: "changelog",        label: "Changelog" },
@@ -337,6 +338,7 @@ const TABS = [
   { id: "jetbrains",         label: "JB" },
 ];
 const PKG = new Set(["npm", "pypi", "crates"]);
+const ZH = new Set("billwang1990github,blogcodingnow,blogdevtang,colobu,dbanotes,cnblogs,headsalon,onevcat,techmeituan,casatwy,daimajia,42jing,aigcweekly,akimio,bojieli,yuanchaofa,huhuhang,liamding,lyricquail,lyricim,liduos,fusheng,quaily,baoyu,lijigang,datawhale,huggingface,paperweekly,xinzhi,jiqizhixin,mlbeginner,qbitai,qbitaigzh,xgo5b632,xgo831fa,bilibilitech,bytetech,xiaomitech,dewutech,iqiyitech,baidusec,tencenttech,alimiddle,the5fire,luenci,michealwayne,maonie,kekxv,corvo".split(","));
 
 const fmt = n => {
   const s = n < 0 ? "-" : "", a = Math.abs(n);
@@ -461,6 +463,11 @@ function render(items, tab) {
     }
     list = [...merged.values()]
       .sort((a, b) => b.heat - a.heat).slice(0, 30).map(x => x.it);
+  } else if (tab === "zh") {
+    const queues = items.filter(([s]) => ZH.has(s)).map(([, its]) => [...its]);
+    list = [];
+    while (list.length < 30 && queues.some(q => q.length))
+      for (const q of queues) if (q.length) list.push(q.shift());
   } else if (tab === "packages") {
     // Interleave registries by rank — weekly vs monthly windows aren't comparable.
     const queues = items.filter(([s]) => PKG.has(s)).map(([, its]) => [...its]);
@@ -635,7 +642,7 @@ function paint() {
 function paintTabs() {
   const have = new Set(ITEMS.map(([s]) => s));
   const visible = TABS.filter(t =>
-    t.id === "all" || (t.id === "packages" ? [...PKG].some(p => have.has(p)) : have.has(t.id)));
+    t.id === "all" || (t.id === "packages" ? [...PKG].some(p => have.has(p)) : t.id === "zh" ? [...ZH].some(p => have.has(p)) : have.has(t.id)));
   const wantTab = new URLSearchParams(location.search).get("s");
   const cur = visible.some(t => t.id === wantTab) ? wantTab : currentTab();
   const keep = visible.some(t => t.id === cur) ? cur : "all";
