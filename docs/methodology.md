@@ -84,3 +84,4 @@ which deleted `#empty` itself, so the catch then threw a second error
 and the page rendered nothing *and* logged the wrong thing. Elements
 referenced by error paths must live outside containers that get
 cleared, or the catch must recreate them.
+11. **CDP verification must not reuse the old tab** — session A verified a page via a CDP tab that had been open through several deploys: it returned a cached copy and reported a feature missing that was actually live (false negative). Open a fresh tab, or force a bypass-cache reload (`Page.reload` with `ignoreCache:true`), before judging "not there". A cached page is indistinguishable from a missing deploy until you look at it twice.
