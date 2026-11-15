@@ -141,7 +141,9 @@ const movers = idx.movers || [];
 if (movers.length) {
   const latest = movers[0];
   $("movers").innerHTML =
-    `Daily movers: <a href="compare.html?a=${movers[1]||latest}&b=${latest}">what changed on ${latest}</a> · ` +
+    `Daily movers: ` +
+    (movers[1] ? `<a href="compare.html?a=${movers[1]}&b=${latest}">what changed on ${latest}</a> · `
+               : `<a href="https://github.com/zalize-com/trendscope/blob/main/docs/movers/${latest}.md">what changed on ${latest}</a> · `) +
     movers.slice(0, 5).map(d => `<a href="https://github.com/zalize-com/trendscope/blob/main/docs/movers/${d}.md">${d}</a>`).join(" · ");
 }
 </script>
