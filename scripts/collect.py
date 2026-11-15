@@ -366,6 +366,36 @@ def fetch_techmeme(limit=20):
     return out
 
 
+def fetch_krebs(limit=15):
+    """Krebs on Security RSS — security journalism lane, position-scored."""
+    print("Fetching Krebs on Security feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://krebsonsecurity.com/feed/",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] krebs attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("title", default="") or "").strip()
+        url = (e.findtext("link", default="") or "").strip() or "https://krebsonsecurity.com/"
+        author = (e.findtext("{http://purl.org/dc/elements/1.1/}creator", default="") or "").strip() or None
+        out.append(item(
+            "krebs", title, url, len(entries) - i, "feed rank",
+            extra={"author": author},
+        ))
+    return out
+
+
 def fetch_slashdot(limit=15):
     """Slashdot RSS 1.0 (RDF) — nerd news, position-scored like techmeme."""
     print("Fetching Slashdot feed...")
@@ -629,6 +659,7 @@ def main():
         "producthunt": fetch_producthunt,
         "techmeme": fetch_techmeme,
         "slashdot": fetch_slashdot,
+        "krebs": fetch_krebs,
         "arstechnica": fetch_arstechnica,
         "theverge": fetch_theverge,
         "arxiv": fetch_arxiv,

@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T12:43:17.581434+00:00",
+ "generated_at": "2026-11-15T12:46:17.268425+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 200,
+ "total": 201,
  "domains": [
   {
    "hostname": "so.long.thanks.fish",
@@ -596,6 +596,21 @@
    }
   },
   {
+   "hostname": "krebsonsecurity.com",
+   "days_on_board": 1,
+   "items": 10,
+   "sources": [
+    "krebs"
+   ],
+   "top_hit": {
+    "title": "Who Runs the Ransomware Group Qilin?",
+    "url": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
+    "score": 10,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "yro.slashdot.org",
    "days_on_board": 1,
    "items": 4,
@@ -742,21 +757,6 @@
     "title": "Let's Write a PostScript Interpreter",
     "url": "https://beyondloom.com/blog/postscript.html",
     "score": 88,
-    "metric": "points",
-    "date": "2026-11-14"
-   }
-  },
-  {
-   "hostname": "aatishb.com",
-   "days_on_board": 1,
-   "items": 1,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "A visual explanation of reinforcement learning",
-    "url": "https://aatishb.com/myriad/how-brains-learn/",
-    "score": 74,
     "metric": "points",
     "date": "2026-11-14"
    }
