@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>weekday rhythm — trendscope</title>
+  <link rel="search" type="application/opensearchdescription+xml" title="trendscope" href="opensearch.xml">
+  <link rel="alternate" type="application/rss+xml" title="trendscope snapshots" href="feed.xml">
+  <link rel="alternate" type="application/feed+json" title="trendscope snapshots" href="feed.json">
+<meta name="description" content="Which weekday do front-page items land on? Day-of-week × source heatmap from the trendscope history.">
+<meta property="og:title" content="trendscope — weekday rhythm">
+<meta property="og:image" content="https://zalize-com.github.io/trendscope/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+<style>
+  :root { --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
+          --dim:#8b949e; --accent:#58a6ff; --green:#3fb950; --orange:#d29922; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 18px; }
+  h2 { font-size: 15px; color: var(--dim); font-weight: 600; margin: 26px 0 6px;
+       text-transform: uppercase; letter-spacing: .04em; }
+  table { border-collapse: collapse; width: 100%; font-size: 12px; }
+  td, th { border: 1px solid var(--border); padding: 4px 6px; text-align: center; }
+  th { color: var(--dim); font-weight: 600; }
+  td.src { color: var(--dim); text-align: left; padding-left: 8px; white-space: nowrap; }
+  td.c { color: var(--fg); }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+  #err { color: var(--dim); }
+</style>
+</head>
+<body>
+  <nav><a href="index.html">← trendscope</a> · <a href="rhythm.html">hourly</a> · <a href="calendar.html">calendar</a> · <a href="week.html">this week</a></nav>
+  <h1 id="h1">weekday <span>rhythm</span></h1>
+  <div class="sub" id="sub">loading…</div>
+  <h2>day-of-week × source</h2>
+  <div id="grid"><p id="err">loading…</p></div>
+  <h2>reading the board</h2>
+  <div id="notes" style="color:var(--dim);font-size:13px"></div>
+  <footer>
+    Computed in your browser from <a href="data/history.csv">history.csv</a> snapshot dates — which day each item first appeared on a front page. ·
+    <a href="https://github.com/zalize-com/trendscope">trendscope</a>
+  </footer>
+<script>
+const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
+function parseCSV(txt) {
+  const rows = []; let f = "", row = [], q = false;
+  for (let i = 0; i <= txt.length; i++) {
+    const c = txt[i];
+    if (q) {
+      if (c === '"') { if (txt[i+1] === '"') { f += '"'; i++; } else q = false; }
+      else if (c === undefined) {} else f += c;
+    } else if (c === '"') q = true;
+    else if (c === ',' ) { row.push(f); f = ""; }
+    else if (c === '\n' || c === undefined) { row.push(f); f = ""; rows.push(row); row = []; }
+    else if (c !== '\r') f += c;
+  }
+  return rows.filter(r => r.length > 1);
+}
+const DOW = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
+  const rows = parseCSV(txt), hdr = rows[0];
+  const ci = Object.fromEntries(hdr.map((h,i)=>[h,i]));
+  const grid = {}, totals = {};
+  for (const r of rows.slice(1)) {
+    const src = r[ci.source], d = r[ci.date];
+    const m = d && d.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (!m) continue;
+    // weekday of the snapshot date (UTC); 1970-01-01 was a Thursday
+    const dt = Date.UTC(+m[1], +m[2]-1, +m[3]);
+    const w = (new Date(dt).getUTCDay() + 6) % 7;   // 0=Mon
+    grid[src] = grid[src] || {};
+    grid[src][w] = (grid[src][w]||0) + 1;
+    totals[src] = (totals[src]||0) + 1;
+  }
+  const srcs = Object.keys(totals).sort((a,b)=>totals[b]-totals[a]);
+  const max = Math.max(...srcs.flatMap(s=>Object.values(grid[s]||{})),1);
+  let h = '<table><tr><th>source</th>' + DOW.map(x=>`<th>${x}</th>`).join("") + '<th>total</th></tr>';
+  for (const s of srcs) {
+    h += `<tr><td class="src">${esc(s)}</td>`;
+    for (let x = 0; x < 7; x++) {
+      const v = (grid[s]||{})[x] || 0;
+      const a = v ? (0.12 + 0.88*v/max).toFixed(2) : 0;
+      h += `<td class="c" title="${v} items first-seen on ${DOW[x]}" style="background:rgba(88,166,255,${a})">${v||""}</td>`;
+    }
+    h += `<td class="c">${totals[s]}</td></tr>`;
+  }
+  document.getElementById("grid").innerHTML = h + "</table>";
+  const notes = srcs.slice(0,4).map(s => {
+    const ent = Object.entries(grid[s]||{}).sort((a,b)=>b[1]-a[1]);
+    return `${esc(s)} peaks on <b>${DOW[ent[0]?.[0]]}</b> (${ent[0]?.[1]} items)`;
+  }).join(" · ");
+  const tot = Object.values(totals).reduce((a,b)=>a+b,0);
+  const days = new Set(rows.slice(1).map(r=>r[ci.date]));
+  document.getElementById("sub").textContent = `${tot} items · ${srcs.length} sources · ${days.size} days of snapshots`;
+  document.getElementById("notes").innerHTML = notes + ". Based on the day each item first appeared on a front page — early days of data, so treat small numbers as directional.";
+}).catch(() => { document.getElementById("err").textContent = "history.csv unavailable"; });
+</script>
+</body>
+</html>
