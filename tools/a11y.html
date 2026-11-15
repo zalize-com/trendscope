@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>a11y audit — trendscope tools</title>
+<meta name="description" content="Paste HTML, get an instant accessibility audit: missing alt, unlabeled inputs, heading order, duplicate ids, and more. 100% client-side.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --border: #30363d; --fg: #e6edf3;
+    --dim: #8b949e; --accent: #58a6ff; --green: #3fb950; --red: #f85149; --orange: #d29922;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --fg: #1f2328;
+      --dim: #59636e; --accent: #0969da; --green: #1a7f37; --red: #cf222e; --orange: #9a6700;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--fg);
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 24px 20px 60px; }
+  a.back { color: var(--accent); text-decoration: none; font-size: 14px; }
+  nav a { color: var(--dim); font-size: 13px; text-decoration: none; }
+  nav a:hover { color: var(--accent); }
+  h1 { font-size: 26px; margin: 14px 0 4px; }
+  .sub { color: var(--dim); font-size: 14px; }
+  textarea, input[type=text] {
+    width: 100%; padding: 10px 12px; border-radius: 8px; font-size: 14px;
+    border: 1px solid var(--border); background: var(--panel); color: var(--fg);
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  }
+  textarea { min-height: 180px; resize: vertical; }
+  .out { margin-top: 12px; }
+  .issue { display: flex; gap: 10px; padding: 8px 10px; border: 1px solid var(--border);
+    border-radius: 8px; margin-bottom: 8px; background: var(--panel);
+    font-size: 13px; align-items: baseline; }
+  .issue .sev { font-weight: 700; min-width: 52px; }
+  .sev.err { color: var(--red); } .sev.warn { color: var(--orange); }
+  .issue code { color: var(--dim); word-break: break-all; }
+  .issue .what { flex: 1; }
+  .stat { color: var(--dim); font-size: 13px; margin-top: 12px; }
+  .ok { color: var(--green); font-weight: 600; }
+  h2 { font-size: 15px; color: var(--dim); font-weight: 600; margin: 22px 0 8px;
+    text-transform: uppercase; letter-spacing: .04em; }
+  footer { margin-top: 36px; padding-top: 14px; border-top: 1px solid var(--border);
+    color: var(--dim); font-size: 13px; }
+  footer a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a class="back" href="../index.html">← trendscope</a> · <a href="./">tools</a> · <a href="utils.html">utils</a> · <a href="dev.html">dev</a> · <a href="web.html">web</a></nav>
+  <h1>a11y audit</h1>
+  <p class="sub">Paste HTML — get an instant accessibility audit. Checks run in your browser via DOMParser; nothing is uploaded.
+    &nbsp;·&nbsp;<a href="utils.html#contrast" style="color:var(--accent)">contrast checker →</a></p>
+
+  <textarea id="in" placeholder='<html>&#10;  <body>&#10;    <img src="logo.png">&#10;    <button></button>&#10;    <input type="text">&#10;  </body>&#10;</html>'></textarea>
+  <div class="stat" id="stat"></div>
+  <div class="out" id="out"></div>
+
+  <footer>
+    Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
+    Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
+  </footer>
+</div>
+<script>
+const esc = s => { const d = document.createElement("div"); d.textContent = s || ""; return d.innerHTML; };
+const $ = id => document.getElementById(id);
+
+function snippet(el) {
+  const s = el.outerHTML || "";
+  return s.length > 110 ? s.slice(0, 107) + "…" : s;
+}
+function accessibleName(el) {
+  return (el.getAttribute("aria-label") ||
+          el.getAttribute("aria-labelledby") ||
+          el.getAttribute("alt") ||
+          el.getAttribute("title") ||
+          (el.textContent || "")).trim();
+}
+
+function audit(html) {
+  const issues = [];
+  const doc = new DOMParser().parseFromString(html, "text/html");
+  const add = (sev, what, el) => issues.push({ sev, what, code: el ? snippet(el) : "" });
+
+  if (!/<html[^>]*\slang=/i.test(html))
+    add("warn", "missing lang attribute on <html>");
+  if (!/<title[^>]*>[^<]/i.test(html) && /<html/i.test(html))
+    add("warn", "missing <title>");
+
+  doc.querySelectorAll("img").forEach(el => {
+    if (el.getAttribute("role") === "presentation" || el.getAttribute("aria-hidden") === "true") return;
+    if (!el.hasAttribute("alt")) add("err", "<img> missing alt text", el);
+  });
+  doc.querySelectorAll("button").forEach(el => {
+    if (!accessibleName(el)) add("err", "<button> has no accessible name", el);
+  });
+  doc.querySelectorAll("a[href]").forEach(el => {
+    if (!accessibleName(el)) add("err", "<a> has no link text", el);
+    if (/^#|javascript:/i.test(el.getAttribute("href") || "") && !accessibleName(el))
+      add("warn", "placeholder link with no text", el);
+  });
+  doc.querySelectorAll("input:not([type=hidden]):not([type=submit]):not([type=button]), select, textarea").forEach(el => {
+    const id = el.id;
+    const labelled = el.getAttribute("aria-label") || el.getAttribute("aria-labelledby") ||
+      (id && doc.querySelector(`label[for="${id}"]`)) || el.closest("label");
+    if (!labelled) add("err", `<${el.tagName.toLowerCase()}> has no label`, el);
+  });
+  const heads = [...doc.querySelectorAll("h1,h2,h3,h4,h5,h6")];
+  let prev = 0;
+  heads.forEach(h => {
+    const lvl = +h.tagName[1];
+    if (prev && lvl > prev + 1) add("warn", `heading skips <h${prev}> → <h${lvl}>`, h);
+    prev = lvl;
+  });
+  if (!heads.some(h => h.tagName === "H1") && heads.length)
+    add("warn", "headings present but no <h1>");
+  const ids = {};
+  doc.querySelectorAll("[id]").forEach(el => {
+    const id = el.id;
+    if (ids[id]) add("err", `duplicate id "${id}"`, el);
+    ids[id] = 1;
+  });
+  doc.querySelectorAll("[aria-hidden='true']").forEach(el => {
+    if (el.querySelector("a,button,input,select,textarea,[tabindex]"))
+      add("err", "aria-hidden element contains focusable content", el);
+  });
+  doc.querySelectorAll("table").forEach(el => {
+    if (!el.querySelector("th")) add("warn", "<table> has no <th> headers", el);
+  });
+  doc.querySelectorAll("[tabindex]").forEach(el => {
+    const v = +el.getAttribute("tabindex");
+    if (v > 0) add("warn", `tabindex="${v}" disrupts natural tab order`, el);
+  });
+  doc.querySelectorAll("iframe").forEach(el => {
+    if (!el.getAttribute("title")) add("warn", "<iframe> missing title", el);
+  });
+  return { issues, doc };
+}
+
+function go() {
+  const html = $("in").value;
+  const out = $("out"), stat = $("stat");
+  if (!html.trim()) { out.innerHTML = ""; stat.textContent = ""; return; }
+  const { issues, doc } = audit(html);
+  const errs = issues.filter(i => i.sev === "err").length;
+  const warns = issues.filter(i => i.sev === "warn").length;
+  const n = doc.querySelectorAll("*").length;
+  stat.innerHTML = `${n} elements · ` + (issues.length
+    ? `<span style="color:var(--red)">${errs} errors</span> · <span style="color:var(--orange)">${warns} warnings</span>`
+    : `<span class="ok">no issues found</span>`);
+  out.innerHTML = issues.map(i =>
+    `<div class="issue"><span class="sev ${i.sev}">${i.sev}</span>
+      <span class="what">${esc(i.what)}${i.code ? ` — <code>${esc(i.code)}</code>` : ""}</span></div>`).join("");
+}
+$("in").addEventListener("input", go);
+</script>
+</body>
+</html>
