@@ -140,6 +140,7 @@ See [`docs/data-dictionary.md`](docs/data-dictionary.md). Schema:
 
 New public endpoints welcome — see [docs/adding-a-source.md](docs/adding-a-source.md)
 (one fetcher + five lines of wiring, test instructions included).
+Bugs, data issues, source requests: [open an issue](https://github.com/zalize-com/trendscope/issues).
 
 ## Provenance & compliance
 
