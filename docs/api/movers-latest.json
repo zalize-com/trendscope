@@ -1,7 +1,7 @@
 {
  "a": "2026-11-14",
  "b": "2026-11-15",
- "generated": "2026-11-15 09:18 UTC",
+ "generated": "2026-11-15 09:19 UTC",
  "entered": [
   {
    "title": "SpaceX catches the Starship to end Flight 15",
@@ -15,7 +15,7 @@
    "title": "Eynnzerr/TelemetryCleaner",
    "url": "https://github.com/Eynnzerr/TelemetryCleaner",
    "source": "github_trending",
-   "score": 765,
+   "score": 767,
    "metric": "stars",
    "rank": 15
   },
@@ -148,16 +148,16 @@
    "rank": 5
   },
   {
-   "title": "Canvas by AgentGrid.io",
-   "url": "https://www.producthunt.com/products/agentgrid-io",
+   "title": "Tulvo",
+   "url": "https://www.producthunt.com/products/tulvo",
    "source": "producthunt",
    "score": 20,
    "metric": "feed rank",
    "rank": 1
   },
   {
-   "title": "TwoBucket",
-   "url": "https://www.producthunt.com/products/twobucket",
+   "title": "Rakazo",
+   "url": "https://www.producthunt.com/products/rakazo",
    "source": "producthunt",
    "score": 19,
    "metric": "feed rank",
@@ -165,14 +165,6 @@
   }
  ],
  "left": [
-  {
-   "title": "openai",
-   "url": "https://pypi.org/project/openai/",
-   "source": "pypi",
-   "score": 376229755,
-   "metric": "monthly downloads",
-   "rank": 13
-  },
   {
    "title": "jhaizhou-ops/S2Arm",
    "url": "https://github.com/jhaizhou-ops/S2Arm",
@@ -324,6 +316,14 @@
    "score": 11,
    "metric": "score",
    "rank": 14
+  },
+  {
+   "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+   "url": "https://arxiv.org/abs/2605.29713",
+   "source": "lobsters",
+   "score": 7,
+   "metric": "score",
+   "rank": 15
   }
  ],
  "gainers": [
@@ -412,10 +412,10 @@
    "title": "huamidev/GestaltX",
    "url": "https://github.com/huamidev/GestaltX",
    "source": "github_trending",
-   "score": 7649,
+   "score": 7650,
    "metric": "stars",
    "rank": 1,
-   "delta": 103
+   "delta": 104
   },
   {
    "title": "FrigadeHQ/yogurt",
@@ -484,10 +484,10 @@
    "title": "HolyArrs/HolyArrs",
    "url": "https://github.com/HolyArrs/HolyArrs",
    "source": "github_trending",
-   "score": 1210,
+   "score": 1211,
    "metric": "stars",
    "rank": 8,
-   "delta": 40
+   "delta": 41
   },
   {
    "title": "serveroshq/panel",
@@ -690,88 +690,6 @@
    "delta": 4
   }
  ],
- "pkg_rank_up": [
-  {
-   "title": "scikit-learn",
-   "url": "https://pypi.org/project/scikit-learn/",
-   "source": "pypi",
-   "score": 213066429,
-   "metric": "monthly downloads",
-   "rank": 13,
-   "rank_delta": 1
-  },
-  {
-   "title": "flask",
-   "url": "https://pypi.org/project/flask/",
-   "source": "pypi",
-   "score": 205187325,
-   "metric": "monthly downloads",
-   "rank": 14,
-   "rank_delta": 1
-  },
-  {
-   "title": "matplotlib",
-   "url": "https://pypi.org/project/matplotlib/",
-   "source": "pypi",
-   "score": 189251063,
-   "metric": "monthly downloads",
-   "rank": 15,
-   "rank_delta": 1
-  },
-  {
-   "title": "langchain",
-   "url": "https://pypi.org/project/langchain/",
-   "source": "pypi",
-   "score": 155924931,
-   "metric": "monthly downloads",
-   "rank": 16,
-   "rank_delta": 1
-  },
-  {
-   "title": "transformers",
-   "url": "https://pypi.org/project/transformers/",
-   "source": "pypi",
-   "score": 117605093,
-   "metric": "monthly downloads",
-   "rank": 17,
-   "rank_delta": 1
-  },
-  {
-   "title": "torch",
-   "url": "https://pypi.org/project/torch/",
-   "source": "pypi",
-   "score": 60157816,
-   "metric": "monthly downloads",
-   "rank": 18,
-   "rank_delta": 1
-  },
-  {
-   "title": "celery",
-   "url": "https://pypi.org/project/celery/",
-   "source": "pypi",
-   "score": 51503290,
-   "metric": "monthly downloads",
-   "rank": 19,
-   "rank_delta": 1
-  },
-  {
-   "title": "django",
-   "url": "https://pypi.org/project/django/",
-   "source": "pypi",
-   "score": 50283944,
-   "metric": "monthly downloads",
-   "rank": 20,
-   "rank_delta": 1
-  },
-  {
-   "title": "tensorflow",
-   "url": "https://pypi.org/project/tensorflow/",
-   "source": "pypi",
-   "score": 12496761,
-   "metric": "monthly downloads",
-   "rank": 21,
-   "rank_delta": 1
-  }
- ],
+ "pkg_rank_up": [],
  "pkg_rank_down": []
 }
