@@ -42,6 +42,8 @@ jobs:
         run: python3 scripts/risers.py
       - name: Aggregates API (domains/authors)
         run: python3 scripts/aggregates.py
+      - name: OPML export
+        run: python3 scripts/opml.py
 
       - name: Regenerate weekly aggregate API
         run: python3 scripts/weekly.py || true
