@@ -44,7 +44,7 @@
 <body>
   <nav><a href="index.html">← trendscope</a> · <a href="streaks.html">streaks</a> · <a href="calendar.html">calendar</a> · <a href="digest.html">digests</a></nav>
   <h1 id="h1">this <span>week</span></h1>
-  <div class="sub" id="wins"><a href="?d=7">7d</a> · <a href="?d=14">14d</a> · <a href="?d=30">30d</a></div>
+  <div class="sub" id="wins"><a href="?d=7">7d</a> · <a href="?d=14">14d</a> · <a href="?d=30">30d</a> &nbsp;·&nbsp; <span id="wjson"></span></div>
   <div class="sub" id="sub">loading…</div>
   <div id="daystrip" style="display:flex;gap:5px;align-items:flex-end;margin:6px 0 2px"></div>
   <div id="out"><p id="err">loading…</p></div>
@@ -79,6 +79,8 @@ fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
   const rows = parseCSV(txt);
   const hdr = rows[0], recs = rows.slice(1).map(r => Object.fromEntries(hdr.map((h,i)=>[h,r[i]])));
   const WIN = Math.min(30, Math.max(2, +new URLSearchParams(location.search).get("d") || 7));
+  document.getElementById("wjson").innerHTML =
+    `<a href="docs/api/${WIN >= 30 ? "month" : "week"}.json">↓ json</a>`;
   document.getElementById("h1").innerHTML = `last <span>${WIN} days</span>`;
   document.title = `last ${WIN} days — trendscope`;
   const days = [...new Set(recs.map(r => r.date))].sort();
