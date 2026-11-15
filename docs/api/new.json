@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-15T12:25:30.292595+00:00",
+ "generated_at": "2026-11-15T12:27:11.098101+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 293,
- "new_items": 167,
+ "total_items": 296,
+ "new_items": 170,
  "by_source": {
   "producthunt": 45,
   "show_hn": 20,
-  "techmeme": 18,
-  "hackernews": 16,
+  "techmeme": 19,
+  "hackernews": 17,
+  "arstechnica": 16,
   "slashdot": 16,
-  "arstechnica": 15,
   "arxiv": 15,
   "theverge": 10,
   "lobsters": 8,
@@ -21,6 +21,14 @@
   {
    "title": "With Starship catch, SpaceX still shows it can dazzle the world",
    "url": "https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/",
+   "source": "arstechnica",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How the world’s fires changed while humanity hit pause",
+   "url": "https://arstechnica.com/science/2026/11/how-the-worlds-fires-changed-while-humanity-hit-pause/",
    "source": "arstechnica",
    "rank": 1,
    "score": 15,
@@ -336,6 +344,14 @@
    "source": "hackernews",
    "rank": 17,
    "score": 56,
+   "metric": "points"
+  },
+  {
+   "title": "Why did some Apollo missions carry a grenade launcher?",
+   "url": "https://space.stackexchange.com/questions/37775",
+   "source": "hackernews",
+   "rank": 17,
+   "score": 67,
    "metric": "points"
   },
   {
@@ -1157,6 +1173,14 @@
   {
    "title": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the US' most valuable company cannot dictate US foreign policy (Chris Miller/Financial Times)",
    "url": "https://www.techmeme.com/261115/p6#a261115p6",
+   "source": "techmeme",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inside the first AI Music Awards in Los Angeles, featuring AI announcers, lip-syncing, and human stand-ins, as the ceremony was mired in technical issues (Corbin Bolies/Variety)",
+   "url": "https://www.techmeme.com/261115/p7#a261115p7",
    "source": "techmeme",
    "rank": 1,
    "score": 15,
