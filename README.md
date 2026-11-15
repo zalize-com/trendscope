@@ -82,6 +82,20 @@ compare within a source, not across.
   hits and coverage for each of the 15 tracked sources.
 - **Domains** (`domains.html`): most-linked sites across all snapshots,
   grouped by hostname from `history.csv`.
+- **Domain deep-dive** (`domain.html?d=`): every board hit from one hostname —
+  which sources carried it and how big it got.
+- **Author deep-dive** (`author.html?u=`): every board hit by one author,
+  across all sources.
+- **Crossovers** (`crossovers.html`): items that appeared on 2+ sources in the
+  same window — stories that escaped a single community.
+- **New today** (`new.html`): items that hit the board for the first time in
+  the latest snapshot (first-seen from `history.csv`).
+- **Velocity** (`velocity.html`): cross-day items ranked by +score/day —
+  how fast attention is compounding.
+- **Rhythm** (`rhythm.html`): 24-hour × source capture-heatmap — when each
+  source's board turns over.
+- **Weekday** (`weekday.html`): weekday × source capture-heatmap — the
+  weekly pulse of each community.
 - **Discussed** (`discuss.html`): comment leaderboards — most-discussed items
   + "heated" ratio (comments per point), from `history.csv`.
 - **Item history** (`item.html?q=`): any story/package's day-by-day rank & score trajectory.
