@@ -328,6 +328,8 @@ function render(items, tab) {
     const tags = (it.tags || [])
       .filter(t => t !== it.source && !String(t).startsWith("author_"))
       .slice(0, 4).map(t => `<span class="src">${t}</span>`).join(" ");
+    const streak = STREAK.get(it.url)
+      ? `<span class="delta" style="color:var(--orange)">🔥${STREAK.get(it.url)}d</span>` : "";
     const comments = it.comments ? `<span>💬 ${it.comments}</span>` : "";
     const author = it.author ? `<span>@${it.author}</span>` : "";
     board.insertAdjacentHTML("beforeend", `
@@ -335,7 +337,7 @@ function render(items, tab) {
         <span class="rank">${i + 1}</span>
         <span>
           <a href="${it.url}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a>
-          <span class="meta"><span class="src">${it.source}</span>${comments}${author}${tags}</span>
+          <span class="meta"><span class="src">${it.source}</span>${streak}${comments}${author}${tags}</span>
         </span>
         <span class="score"><b>${fmt(it.score)}</b> <span class="muted" style="font-size:11px">${it.metric}</span>${delta}</span>
       </div>`);
@@ -349,7 +351,42 @@ function escapeHtml(s) {
   return d.innerHTML;
 }
 
-let ITEMS = [], INDEX = null, CUR_DATE = null;
+let ITEMS = [], INDEX = null, CUR_DATE = null, STREAK = new Map();
+
+function parseCSV(text) {
+  const rows = []; let field = "", row = [], inQ = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQ) {
+      if (c === '"') { if (text[i+1] === '"') { field += '"'; i++; } else inQ = false; }
+      else field += c;
+    } else if (c === '"') inQ = true;
+    else if (c === ",") { row.push(field); field = ""; }
+    else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+    else if (c !== "\r") field += c;
+  }
+  if (field || row.length) { row.push(field); rows.push(row); }
+  return rows;
+}
+
+async function loadStreaks() {
+  try {
+    const rows = parseCSV(await fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()));
+    const ci = Object.fromEntries(rows[0].map((h,i)=>[h,i]));
+    const seen = {}, all = new Set();
+    for (const r of rows.slice(1)) { if (r[ci.url]) { (seen[r[ci.url]] ||= new Set()).add(r[ci.date]); all.add(r[ci.date]); } }
+    const latest = [...all].sort().pop();
+    const prevDay = d => new Date(new Date(d+"T00:00:00Z") - 86400000).toISOString().slice(0,10);
+    const m = new Map();
+    for (const [u, ds] of Object.entries(seen)) {
+      let n = 0;
+      for (let d = latest; ds.has(d); d = prevDay(d)) n++;
+      if (n >= 3) m.set(u, n);
+    }
+    STREAK = m;
+    render(ITEMS, currentTab());
+  } catch (e) { /* history optional */ }
+}
 
 function paint() {
   const date = CUR_DATE;
@@ -483,6 +520,7 @@ async function main() {
   });
   paint();
   renderRising();
+  loadStreaks();
 }
 
 const SAP_SOURCES = () => SNAP.sources || {};
