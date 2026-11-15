@@ -69,6 +69,7 @@
     <button data-tool="hidden">hidden chars</button>
     <button data-tool="env">.env auditor</button>
     <button data-tool="ent">html entities</button>
+    <button data-tool="keys">key inspector</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -168,6 +169,14 @@
     <button class="copy" id="hc-strip">copy cleaned text</button>
   </div>
 
+  <div class="panel" id="p-keys">
+    <h2>Keyboard key inspector</h2>
+    <p class="hint">Click the box, then press any key — shows <code>event.key</code>, <code>code</code>, <code>which</code> and modifiers. Recent keys below.</p>
+    <div id="kb-box" tabindex="0" style="border:1px dashed var(--border);border-radius:8px;padding:26px;text-align:center;color:var(--dim);outline:none;cursor:pointer">press a key…</div>
+    <div id="kb-out" style="margin-top:10px"></div>
+    <div id="kb-hist" style="margin-top:12px;font-size:13px"></div>
+  </div>
+
   <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
   <div class="panel" id="p-env">
     <h2>.env file auditor</h2>
@@ -196,7 +205,7 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -677,6 +686,26 @@ function entGo(mode) {
   if (dbl) w.textContent = "⚠ input looks DOUBLE-ENCODED — decoding once still leaves entities";
   const res = document.querySelectorAll('#ent-out');
 }
+
+// key inspector
+(function(){
+  const box = document.getElementById("kb-box"), out = document.getElementById("kb-out"), hist = document.getElementById("kb-hist");
+  if (!box) return;
+  const escAttr = t => String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+  const seen = [];
+  box.addEventListener("keydown", e => {
+    e.preventDefault();
+    const mods = ["ctrlKey","shiftKey","altKey","metaKey"].filter(m => e[m]).map(m => m.replace("Key","").toLowerCase());
+    out.innerHTML = `<table style="border-collapse:collapse;font-size:13px;width:100%">
+      <tr><td style="padding:4px 8px;color:var(--dim)">key</td><td><b>${escAttr(e.key)}</b></td>
+          <td style="padding:4px 8px;color:var(--dim)">code</td><td><b>${escAttr(e.code)}</b></td></tr>
+      <tr><td style="padding:4px 8px;color:var(--dim)">which/keyCode</td><td>${e.which}</td>
+          <td style="padding:4px 8px;color:var(--dim)">location</td><td>${e.location}</td></tr>
+      <tr><td style="padding:4px 8px;color:var(--dim)">modifiers</td><td colspan="3">${mods.join(" + ") || "<span style='color:var(--dim)'>none</span>"}</td></tr></table>`;
+    seen.unshift(`<code>${escAttr(e.key)}</code>`);
+    hist.innerHTML = `<span style="color:var(--dim)">recent:</span> ` + seen.slice(0, 20).join(" ");
+  });
+})();
 </script>
 </body>
 </html>
