@@ -154,6 +154,29 @@ def fetch_show_hn(limit=12):
     return out
 
 
+def fetch_ask_hn(limit=12):
+    print("Fetching Ask HN...")
+    since = int(time.time()) - 48 * 3600
+    data = get_json(
+        "https://hn.algolia.com/api/v1/search_by_date"
+        f"?tags=ask_hn&hitsPerPage=40&numericFilters=created_at_i>{since}"
+    )
+    hits = sorted((data or {}).get("hits", []),
+                  key=lambda h: h.get("points", 0), reverse=True)
+    out = []
+    for h in hits[:limit]:
+        out.append(item(
+            "ask_hn",
+            h.get("title", ""),
+            f"https://news.ycombinator.com/item?id={h.get('objectID')}",
+            h.get("points", 0),
+            "points",
+            comments=h.get("num_comments", 0),
+            author=h.get("author"),
+        ))
+    return out
+
+
 def fetch_lobsters(limit=15):
     print("Fetching Lobsters hottest...")
     data = get_json("https://lobste.rs/hottest.json")
@@ -346,6 +369,7 @@ def main():
     sections = {
         "hackernews": fetch_hackernews(),
         "show_hn": fetch_show_hn(),
+        "ask_hn": fetch_ask_hn(),
         "lobsters": fetch_lobsters(),
         "devto": fetch_devto(),
         "github_trending": fetch_github_trending(),
