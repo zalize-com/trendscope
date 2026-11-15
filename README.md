@@ -67,6 +67,7 @@ A daily cross-source snapshot of developer attention:
 | Gargron | Mastodon creator posts | `mastodon.social/@Gargron.rss` |
 | Dan Abramov | React/longform dev blog | `overreacted.io/rss.xml` |
 | Swizec Teller | indie hacker/dev blog | `swizec.com/rss.xml` |
+| Kent C. Dodds | React/testing blog | `kentcdodds.com/blog/rss.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
