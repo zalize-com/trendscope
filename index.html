@@ -139,6 +139,7 @@
   <section>
     <h2><span id="board-title">Today's</span> cross-source board <span class="sub" id="board-sub"></span></h2>
     <div class="tabs" id="tabs"></div>
+    <input id="q" type="search" placeholder="filter titles…" style="width:100%;max-width:340px;margin:0 0 12px;padding:7px 12px;border-radius:8px;border:1px solid var(--border);background:var(--panel);color:var(--fg);font:inherit;font-size:13px">
     <div id="cpk-bar" style="display:none;margin:0 0 10px">
       <input id="cpk-input" placeholder="track an npm package — e.g. hono" style="background:var(--panel);border:1px solid var(--border);border-radius:8px;color:var(--fg);padding:7px 12px;font-size:13px;width:260px">
       <a id="cpk-add" class="btn" style="margin-top:0;padding:5px 12px;cursor:pointer">+ track</a>
@@ -205,6 +206,7 @@
        <a href="about.html">about & methodology</a> ·
        <a href="compare.html">compare snapshots</a> ·
        <a href="streaks.html">streaks</a> ·
+       <a href="domains.html">domains</a> ·
        <a href="ideas.html">ideas</a> ·
        <a href="digest.html">digests</a>.</p>
   </footer>
@@ -303,6 +305,11 @@ function render(items, tab) {
   } else {
     list = (items.find(([s]) => s === tab) || [null, []])[1];
   }
+  const q = (document.getElementById("q")?.value || "").trim().toLowerCase();
+  if (q) list = list.filter(it =>
+    (it.title || "").toLowerCase().includes(q) ||
+    (it.author || "").toLowerCase().includes(q) ||
+    (it.tags || []).join(" ").toLowerCase().includes(q));
   if (!list.length) {
     board.innerHTML = `<div class="row"><span></span><span class="muted">No items for this source yet.</span><span></span></div>`;
     if (tab === "packages") renderCustomPkgs(board);
@@ -449,6 +456,7 @@ async function main() {
     render(ITEMS, currentTab());
   });
 
+  document.getElementById("q").addEventListener("input", () => render(ITEMS, currentTab()));
   document.getElementById("tabs").addEventListener("click", ev => {
     const b = ev.target.closest(".tab");
     if (!b) return;
