@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cite this dataset — trendscope</title>
+<meta name="description" content="How to cite the trendscope developer attention dataset — BibTeX, APA, plain text.">
+<meta property="og:title" content="trendscope — cite this dataset">
+<meta property="og:description" content="Citation formats for the daily developer attention dataset (CC0).">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zalize-com.github.io/trendscope/cite.html">
+<meta property="og:image" content="https://zalize-com.github.io/trendscope/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<style>
+:root{--bg:#fff;--fg:#1f2328;--dim:#57606a;--line:#d8dee4;--acc:#0969da;--hot:#cf222e}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e6edf3;--dim:#8b949e;--line:#30363d;--acc:#58a6ff;--hot:#f85149}}
+*{box-sizing:border-box}
+body{margin:0 auto;max-width:760px;padding:16px;background:var(--bg);color:var(--fg);font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+a{color:var(--acc);text-decoration:none}
+h1{font-size:22px;margin:4px 0}
+h2{font-size:15px;margin:20px 0 6px}
+.sub{color:var(--dim);font-size:13px;margin-bottom:14px}
+nav{font-size:13px;margin:8px 0 14px}
+nav a{margin-right:8px}
+pre{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:10px;overflow-x:auto;font-size:12.5px;position:relative}
+.copy{position:absolute;top:6px;right:6px;font:inherit;font-size:11px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--dim);cursor:pointer;padding:1px 6px}
+li{margin:4px 0}
+.stat{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:2px 8px;margin:0 6px 6px 0;font-size:12px}
+</style>
+</head>
+<body>
+<h1>cite this dataset</h1>
+<div class="sub">trendscope is CC0 — no citation required, but attribution helps others find the data.</div>
+<nav><a href="index.html">← board</a><a href="datasets.html">datasets</a><a href="docs/api.md">api docs</a><a href="CITATION.cff">CITATION.cff</a><a href="https://github.com/zalize-com/trendscope">repo</a></nav>
+
+<h2>BibTeX</h2>
+<pre id="bib">@dataset{trendscope2026,
+  title   = {trendscope: the developer attention dataset},
+  author  = {{zalize-com}},
+  year    = {2026},
+  url     = {https://zalize-com.github.io/trendscope/},
+  note    = {Daily cross-source snapshot of developer attention
+             across 20 tracked sources. Open data (CC0).}
+}<button class="copy" data-t="bib">copy</button></pre>
+
+<h2>APA</h2>
+<pre id="apa">zalize-com. (2026). <i>trendscope: the developer attention dataset</i>
+  [Data set]. https://zalize-com.github.io/trendscope/<button class="copy" data-t="apa">copy</button></pre>
+
+<h2>Plain text</h2>
+<pre id="txt">trendscope — the developer attention dataset (2026).
+  Daily cross-source snapshots, CC0.
+  https://zalize-com.github.io/trendscope/<button class="copy" data-t="txt">copy</button></pre>
+
+<h2>What to cite</h2>
+<ul>
+  <li><b>The dataset</b> — <a href="data/latest.json">data/latest.json</a>, <a href="data/history.csv">history.csv</a>, <a href="data/daily/">data/daily/</a> (per-day snapshots).</li>
+  <li><b>The API surface</b> — 23 endpoints under <a href="docs/api/">docs/api/</a> (<a href="docs/api.md">docs</a>).</li>
+  <li><b>The HN canons</b> — 19 years of monthly top stories / Show HN / Ask HN (<a href="canon.html">canon</a>), 15 years of hiring-thread counts (<a href="hiring.html">hiring</a>).</li>
+  <li><b>The software</b> — MIT-licensed collectors + static dashboard at the <a href="https://github.com/zalize-com/trendscope">repo</a>.</li>
+</ul>
+
+<h2>Provenance</h2>
+<ul>
+  <li>Every record carries <code>url</code>, <code>captured_at</code>, <code>source</code> and <code>rank</code>.</li>
+  <li>Snapshots run twice daily via GitHub Actions — see <a href="data/index.json">data/index.json</a> for the full edition list.</li>
+  <li>Per-source item counts and latency: <a href="data/health.json">health.json</a> / <a href="health.html">health page</a>.</li>
+</ul>
+
+<script>
+document.querySelectorAll('.copy').forEach(b=>b.onclick=()=>{
+  navigator.clipboard.writeText(document.getElementById(b.dataset.t).innerText.replace(/\ncopy$/,''));
+  b.textContent='copied';setTimeout(()=>b.textContent='copy',1500);
+});
+</script>
+</body>
+</html>
