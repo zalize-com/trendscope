@@ -527,6 +527,21 @@ def main():
     with open(history_path, "w") as f:
         json.dump(history_record, f, indent=2, ensure_ascii=False)
 
+    # Per-day topic counts, append-only (time-series for analysts).
+    tcsv = os.path.join(DATA_DIR, "topics-history.csv")
+    tnew = not os.path.exists(tcsv)
+    tdone = set()
+    if not tnew:
+        with open(tcsv, newline="") as f:
+            tdone = {(r["date"], r["topic"]) for r in csv.DictReader(f)}
+    with open(tcsv, "a", newline="") as f:
+        w = csv.writer(f)
+        if tnew:
+            w.writerow(["date", "topic", "count", "total_score"])
+        for t in topics:
+            if (today, t["topic"]) not in tdone:
+                w.writerow([today, t["topic"], t["count"], t["total_score"]])
+
     with open(os.path.join(daily_dir, f"{today}.csv"), "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=[
             "date", "source", "rank", "title", "url", "score", "metric",
