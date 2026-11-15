@@ -3,6 +3,10 @@
 > The developer attention dataset — what developers are reading, building and
 > downloading, snapshotted daily. Open data (CC0), updated by GitHub Actions.
 
+![snapshots](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzalize-com%2Ftrendscope%2Fmain%2Fdata%2Findex.json&query=%24.snapshots%5B%23%5D&label=snapshots&color=58a6ff)
+![items today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzalize-com%2Ftrendscope%2Fmain%2Fdata%2Flatest.json&query=%24.total_items&label=items%20today&color=3fb950)
+![license](https://img.shields.io/badge/data-CC0-green)
+
 **Live dashboard:** `https://zalize-com.github.io/trendscope/` *(enable Pages: Settings → Pages → Deploy from branch → `main` / root)*
 **Latest data:** [`data/latest.json`](data/latest.json)
 
@@ -50,6 +54,8 @@ compare within a source, not across.
   narrative notes.
 - **Topics** (`topics.html?t=AI%2FLLM`): per-topic drill-down — every story,
   repo and package matching a topic, grouped by source.
+- **Compare** (`compare.html?a=…&b=…`): diff two daily snapshots — entries,
+  exits and biggest gainers/droppers.
 - **Embed widget** (`embed.html`): the top-10 board as a drop-in iframe for
   blogs/docs (no signup, updates daily):
 
