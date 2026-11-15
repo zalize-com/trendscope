@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T16:12:10.159531+00:00",
+  "generated_at": "2026-11-15T16:15:44.825926+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -75,10 +75,10 @@
       }
     },
     "github_trending": {
-      "items": 33,
-      "unique_urls": 18,
+      "items": 34,
+      "unique_urls": 19,
       "median_days_on_board": 2,
-      "one_day_pct": 22,
+      "one_day_pct": 26,
       "top_item": {
         "title": "huamidev/GestaltX",
         "url": "https://github.com/huamidev/GestaltX",
@@ -135,8 +135,8 @@
       }
     },
     "techmeme": {
-      "items": 20,
-      "unique_urls": 20,
+      "items": 21,
+      "unique_urls": 21,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -770,6 +770,18 @@
         "rank": 1
       }
     },
+    "lcamtuf": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Spreadsheets and other models of morality",
+        "url": "https://blog.coredump.cx/p/spreadsheets-and-other-models-of",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -1090,6 +1102,30 @@
       "top_item": {
         "title": "Constraints and production pressure at eMudhra",
         "url": "https://surfingcomplexity.blog/2026/11/12/constraints-and-production-pressure-at-emudhra/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "schneems": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "A Type Stronger than the Sum of its Components",
+        "url": "https://www.schneems.com/2026/09/24/a-type-stronger-than-the-sum-of-its-components/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "copyconstruct": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How to effectively debug when you no longer understand the code",
+        "url": "https://copyconstruct.medium.com/how-to-effectively-debug-when-you-no-longer-understand-the-code-bd3dcb2c5f7b?source=rss-87c8c84f24b1------2",
         "score": 10,
         "rank": 1
       }

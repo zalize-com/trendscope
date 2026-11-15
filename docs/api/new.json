@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-11-15T16:12:10.002721+00:00",
+ "generated_at": "2026-11-15T16:15:44.679081+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1438,
- "new_items": 1312,
+ "total_items": 1475,
+ "new_items": 1349,
  "by_source": {
   "producthunt": 45,
   "show_hn": 31,
   "theregister": 29,
   "hackernews": 28,
-  "techmeme": 20,
+  "techmeme": 21,
   "slashdot": 18,
   "thenewstack": 17,
   "arstechnica": 16,
@@ -41,6 +41,7 @@
   "infoq": 15,
   "jvns": 15,
   "kentcdodds": 15,
+  "lcamtuf": 15,
   "lemmy": 15,
   "lwn": 15,
   "marco": 15,
@@ -69,6 +70,7 @@
   "lobsters": 11,
   "airbnb": 10,
   "birklund": 10,
+  "copyconstruct": 10,
   "dropbox": 10,
   "freecodecamp": 10,
   "github_eng": 10,
@@ -85,6 +87,7 @@
   "opensourcecom": 10,
   "pinterest": 10,
   "raphlinus": 10,
+  "schneems": 10,
   "stratechery": 10,
   "stripe": 10,
   "surfingcomplexity": 10,
@@ -97,8 +100,8 @@
   "slack_eng": 8,
   "tonsky": 6,
   "bendersky": 5,
+  "github_trending": 4,
   "thisweek": 4,
-  "github_trending": 3,
   "ask_hn": 2,
   "devto": 1
  },
@@ -2072,6 +2075,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "How to effectively debug when you no longer understand the code",
+   "url": "https://copyconstruct.medium.com/how-to-effectively-debug-when-you-no-longer-understand-the-code-bd3dcb2c5f7b?source=rss-87c8c84f24b1------2",
+   "source": "copyconstruct",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Success Is Often Elusive at the Highest Echelons",
+   "url": "https://copyconstruct.medium.com/why-success-is-often-elusive-at-the-highest-echelons-3e02e4dd3e7f?source=rss-87c8c84f24b1------2",
+   "source": "copyconstruct",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "know how your org works (or how to become a more effective engineer)",
+   "url": "https://copyconstruct.medium.com/know-how-your-org-works-or-how-to-become-a-more-effective-engineer-1a3287d1f58d?source=rss-87c8c84f24b1------2",
+   "source": "copyconstruct",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Best of 2021 in Tech [Talks]",
+   "url": "https://copyconstruct.medium.com/best-of-2021-in-tech-talks-331ec9454b4?source=rss-87c8c84f24b1------2",
+   "source": "copyconstruct",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Best of 2020 in Tech [Talks]",
+   "url": "https://copyconstruct.medium.com/best-of-2020-in-tech-talks-2f29002f4a92?source=rss-87c8c84f24b1------2",
+   "source": "copyconstruct",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Seamless file descriptor transfer between processes with pidfd and pidfd_getfd",
+   "url": "https://copyconstruct.medium.com/seamless-file-descriptor-transfer-between-processes-with-pidfd-and-pidfd-getfd-816afcd19ed4?source=rss-87c8c84f24b1------2",
+   "source": "copyconstruct",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Waypoint",
+   "url": "https://copyconstruct.medium.com/waypoint-3f00b11da4a?source=rss-87c8c84f24b1------2",
+   "source": "copyconstruct",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bash Redirection Fun With Descriptors",
+   "url": "https://copyconstruct.medium.com/bash-redirection-fun-with-descriptors-e799ec5a3c16?source=rss-87c8c84f24b1------2",
+   "source": "copyconstruct",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "File Descriptor Transfer over Unix Domain Sockets",
+   "url": "https://copyconstruct.medium.com/file-descriptor-transfer-over-unix-domain-sockets-dcbbf5b3b6ec?source=rss-87c8c84f24b1------2",
+   "source": "copyconstruct",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tactical Challenges In Hiring Junior Engineers",
+   "url": "https://copyconstruct.medium.com/tactical-challenges-in-hiring-junior-engineers-29e31634a9bd?source=rss-87c8c84f24b1------2",
+   "source": "copyconstruct",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Python Courses for Fall 2014 with David Beazley",
    "url": "https://dabeaz.blogspot.com/2014/09/python-courses-for-fall-2014-with-david.html",
    "source": "dabeaz",
@@ -3680,6 +3763,14 @@
    "metric": "stars"
   },
   {
+   "title": "Noniv/abyssal-garden",
+   "url": "https://github.com/Noniv/abyssal-garden",
+   "source": "github_trending",
+   "rank": 15,
+   "score": 836,
+   "metric": "stars"
+  },
+  {
    "title": "Turn Jira tickets into GitLab merge requests with Duo Agent Platform",
    "url": "https://about.gitlab.com/blog/jira-ticket-to-gitlab-mr-with-duo-agent-platform/",
    "source": "gitlab_blog",
@@ -5220,6 +5311,126 @@
    "url": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
    "source": "krebs",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Spreadsheets and other models of morality",
+   "url": "https://blog.coredump.cx/p/spreadsheets-and-other-models-of",
+   "source": "lcamtuf",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "It came from the token void!",
+   "url": "https://blog.coredump.cx/p/it-came-from-the-token-void",
+   "source": "lcamtuf",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ontology #2: wish you were here",
+   "url": "https://blog.coredump.cx/p/ontology-2-wish-you-were-here",
+   "source": "lcamtuf",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quasi-logarithmic kitchen timer",
+   "url": "https://blog.coredump.cx/p/quasi-logarithmic-kitchen-timer",
+   "source": "lcamtuf",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deus ex machina",
+   "url": "https://blog.coredump.cx/p/deus-ex-machina",
+   "source": "lcamtuf",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stop! Ontology time!",
+   "url": "https://blog.coredump.cx/p/stop-ontology-time",
+   "source": "lcamtuf",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Secret Life of Circuits is now in stock everywhere",
+   "url": "https://blog.coredump.cx/p/the-secret-life-of-circuits-is-now",
+   "source": "lcamtuf",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dead German guys",
+   "url": "https://blog.coredump.cx/p/dead-german-guys",
+   "source": "lcamtuf",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Yours truly",
+   "url": "https://blog.coredump.cx/p/yours-truly",
+   "source": "lcamtuf",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Haunted by the ghosts of materialism",
+   "url": "https://blog.coredump.cx/p/haunted-by-the-ghosts-of-materialism",
+   "source": "lcamtuf",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A SKILL.md for commenting on Hacker News",
+   "url": "https://blog.coredump.cx/p/a-skillmd-for-commenting-on-hacker",
+   "source": "lcamtuf",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The “C” word",
+   "url": "https://blog.coredump.cx/p/the-c-word",
+   "source": "lcamtuf",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What little hope remains",
+   "url": "https://blog.coredump.cx/p/what-little-hope-remains",
+   "source": "lcamtuf",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "“The Secret Life of Circuits” is here",
+   "url": "https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here",
+   "source": "lcamtuf",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inverse-square law",
+   "url": "https://blog.coredump.cx/p/inverse-square-law",
+   "source": "lcamtuf",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -8264,6 +8475,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "A Type Stronger than the Sum of its Components",
+   "url": "https://www.schneems.com/2026/09/24/a-type-stronger-than-the-sum-of-its-components/",
+   "source": "schneems",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cinnamon Buns & Commit Bits: A RubyConf Story",
+   "url": "https://www.schneems.com/2026/06/29/cinnamon-buns-and-commit-bits/",
+   "source": "schneems",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RubyGems Fracture Incident Report",
+   "url": "https://www.schneems.com/2026/03/31/rubygems-fracture-incident-report/",
+   "source": "schneems",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to \"Sustain Heroku\"",
+   "url": "https://www.schneems.com/2026/03/01/how-to-sustain-heroku/",
+   "source": "schneems",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Non-Violent Comments: Calling out or Calling in?",
+   "url": "https://www.schneems.com/2025/12/19/non-violent-comments-calling-out-or-calling-in/",
+   "source": "schneems",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Disallow code usage with a custom `clippy.toml`",
+   "url": "https://www.schneems.com/2025/11/19/find-accidental-code-usage-with-a-custom-clippytoml/",
+   "source": "schneems",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Upgrade to Puma 7 and Unlock the Power of Fair Scheduled Keep-alive",
+   "url": "https://www.schneems.com/2025/11/05/upgrade-to-puma-7-and-unlock-the-power-of-fair-scheduled-keepalive/",
+   "source": "schneems",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learn How to Lower Heroku Dyno Latency through Persistent Connections (Keep-alive)",
+   "url": "https://www.schneems.com/2025/11/04/learn-how-to-lower-heroku-dyno-latency-through-persistent-connections-keepalive/",
+   "source": "schneems",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "'Our app supports Markdown' and other lies apps tell",
+   "url": "https://www.schneems.com/2025/08/03/our-app-supports-markdown-and-other-lies-apps-tell/",
+   "source": "schneems",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don't McBlock me",
+   "url": "https://www.schneems.com/2025/06/03/dont-mcblock-me/",
+   "source": "schneems",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Show HN: A custom font based on the Jamaican flag alphabet",
    "url": "https://bobbiec.github.io/jamaican-font.html",
    "source": "show_hn",
@@ -9434,6 +9725,14 @@
   {
    "title": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pushed \"seemingly illicit\" chip sales to China to boost revenue (Tony Czuczka/Bloomberg)",
    "url": "https://www.techmeme.com/261115/p8#a261115p8",
+   "source": "techmeme",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Investigation: Howard Lutnick pushed to narrow chip curbs affecting a client of his former firm Cantor Fitzgerald whose Malaysia data center may serve Tencent (New York Times)",
+   "url": "https://www.techmeme.com/261115/p9#a261115p9",
    "source": "techmeme",
    "rank": 1,
    "score": 15,

@@ -122,6 +122,8 @@ A daily cross-source snapshot of developer attention:
 | mtlynch | indie hacking and SRE retros | `mtlynch.io/feed.xml` |
 | Nelson Elhage | systems and tooling deep dives | `blog.nelhage.com/atom.xml` |
 | Richard Schneeman | Ruby performance and open source | `schneems.com/feed.xml` |
+| lcamtuf | security research and essays | `lcamtuf.substack.com/feed` |
+| Copy Construct | distributed systems essays | `copyconstruct.medium.com/feed` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
