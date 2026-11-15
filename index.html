@@ -17,6 +17,7 @@
 <meta name="twitter:title" content="trendscope — the developer attention dataset">
 <meta name="twitter:description" content="Daily cross-source snapshot of what developers are reading, building and downloading. Open data, CC0.">
 <meta name="twitter:image" content="https://zalize-com.github.io/trendscope/og.png">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
 <link rel="search" type="application/opensearchdescription+xml" title="trendscope" href="opensearch.xml">
 <link rel="manifest" href="manifest.json">
@@ -130,6 +131,7 @@
   .skiplink:focus{left:0}
   .meta a.authl, .meta a.doml { color: var(--dim); font-size: 11px; margin-left: 6px; }
   .meta a.authl:hover, .meta a.doml:hover { color: var(--accent); }
+  svg.lucide { width: 13px; height: 13px; vertical-align: -2px; stroke-width: 2; }
 </style>
 </head>
 <body>
@@ -138,7 +140,7 @@
 
   <header class="hero">
     <h1>trend<span class="scope">scope</span></h1>
-    <p class="tagline">The developer attention dataset — updated twice daily. · <a href="tools/" style="color:var(--accent)">free in-browser tools →</a> · <a href="search.html" style="color:var(--accent)">search 19y of HN →</a> · <a href="https://github.com/zalize-com/trendscope" style="color:var(--accent)">★ star on GitHub</a> · <a href="feed.xml" style="color:var(--accent)">📡 subscribe</a></p>
+    <p class="tagline">The developer attention dataset — updated twice daily. · <a href="tools/" style="color:var(--accent)">free in-browser tools →</a> · <a href="search.html" style="color:var(--accent)">search 19y of HN →</a> · <a href="https://github.com/zalize-com/trendscope" style="color:var(--accent)"><i data-lucide="star"></i> star on GitHub</a> · <a href="feed.xml" style="color:var(--accent)"><i data-lucide="rss"></i> subscribe</a></p>
     <div class="stamp" id="stamp">loading…</div>
     <div id="src-health" class="muted" style="font-size:12px;margin-top:4px"></div>
     <div id="brief-link" class="muted" style="font-size:12px;margin-top:2px"></div>
@@ -346,19 +348,19 @@ async function renderCustomPkgs(board) {
       }
       frags.push(`
         <div class="row">
-          <span class="rank">★</span>
+          <span class="rank"><i data-lucide="pin"></i></span>
           <span>
             <a href="${href}" target="_blank" rel="noopener">${escapeHtml(name)}</a>
             <span class="meta"><span class="src">${isGh ? "github" : isCrates ? "crates" : "npm"}</span><span class="src">watchlist</span></span>
           </span>
           <span class="score"><b>${fmt(score)}</b> <span class="muted" style="font-size:11px">${metric}</span>
-            <a href="#" data-untrack="${escapeHtml(p)}" class="delta" style="color:var(--dim)">✕</a></span>
+            <a href="#" data-untrack="${escapeHtml(p)}" class="delta" style="color:var(--dim)"><i data-lucide="x"></i></a></span>
         </div>`);
     } catch (e) { /* fetch failed — skip package */ }
   }
   if (live()) board.insertAdjacentHTML("beforeend",
     `<div class="row"><span></span><span class="muted" style="font-size:12px">— your watchlist —</span><span></span></div>`
-    + frags.join(""));
+    + frags.join(""));  if (window.lucide) lucide.createIcons();
 }
 
 function render(items, tab) {
@@ -435,8 +437,8 @@ function render(items, tab) {
       .filter(t => t !== it.source && !String(t).startsWith("author_"))
       .slice(0, 4).map(t => `<span class="src">${t}</span>`).join(" ");
     const streak = STREAK.get(it.url)
-      ? `<a class="delta" style="color:var(--orange)" href="item.html?q=${encodeURIComponent(it.title)}">🔥${STREAK.get(it.url)}d</a>` : "";
-    const comments = it.comments ? `<span>💬 ${it.comments}</span>` : "";
+      ? `<a class="delta" style="color:var(--orange)" href="item.html?q=${encodeURIComponent(it.title)}"><i data-lucide="flame"></i>${STREAK.get(it.url)}d</a>` : "";
+    const comments = it.comments ? `<span><i data-lucide="message-square"></i> ${it.comments}</span>` : "";
     const author = it.author ? `<a class="authl" href="author.html?u=${encodeURIComponent(it.author)}" title="author deep-dive">@${escapeHtml(it.author)}</a>` : "";
     let doml = "";
     try { const h = new URL(it.url).hostname.replace(/^www\./,"");
@@ -452,6 +454,7 @@ function render(items, tab) {
       </div>`);
   });
   if (tab === "packages") renderCustomPkgs(board);
+  if (window.lucide) lucide.createIcons();
 }
 
 function escapeHtml(s) {
@@ -699,7 +702,7 @@ async function main() {
       fresh = mins < 60 ? ` · updated ${mins || "just now"}m ago` : ` · updated ${Math.round(mins / 60)}h ago`;
     }
     document.getElementById("src-health").innerHTML = bad.length
-      ? `<span style="color:var(--orange)">⚠ degraded: ${bad.join(", ")}</span>`
+      ? `<span style="color:var(--orange)"><i data-lucide="triangle-alert"></i> degraded: ${bad.join(", ")}</span>`
       : `<span style="color:var(--green)">●</span> all ${Object.keys(H.sources).length} sources healthy`
         + fresh
         + (slowest ? ` · slowest ${slowest[0]} ${(slowest[1].ms/1000).toFixed(1)}s` : "")
@@ -709,8 +712,9 @@ async function main() {
       const today = CUR_DATE;
       if (IX.briefs && IX.briefs.includes(today))
         document.getElementById("brief-link").innerHTML =
-          `<a href="digest.html?w=${today}.md" style="color:var(--dim)">📄 today's brief →</a>`;
+          `<a href="digest.html?w=${today}.md" style="color:var(--dim)"><i data-lucide="file-text"></i> today's brief →</a>`;
     } catch(e2) {}
+    if (window.lucide) lucide.createIcons();
   } catch (e) { /* health file optional */ }
 
   // watchlist: seed from ?pkgs= (shareable), persist to localStorage
@@ -857,7 +861,7 @@ document.getElementById("md-btn").addEventListener("click", () => {
   const md = [`# ${document.getElementById("board-title").textContent} cross-source board — ${CUR_DATE}`, "",
     ...lines, "", "via [trendscope](https://github.com/zalize-com/trendscope) — daily developer attention dataset (CC0)"].join("\n");
   const btn = document.getElementById("md-btn");
-  navigator.clipboard?.writeText(md).then(() => { btn.textContent = "✓ copied"; setTimeout(() => btn.textContent = "⧉ copy board as markdown", 1600); });
+  navigator.clipboard?.writeText(md).then(() => { btn.textContent = "✓ copied"; setTimeout(() => { btn.textContent = "⧉ copy board as markdown"; }, 1600); });
 });
 document.getElementById("json-btn").addEventListener("click", () => {
   const rows = [...document.querySelectorAll("#board .row")].slice(0, 30);
@@ -915,3 +919,4 @@ main();
 </script>
 </body>
 </html>
+<script>lucide.createIcons();</script>
