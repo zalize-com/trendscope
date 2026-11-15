@@ -159,6 +159,10 @@ A daily cross-source snapshot of developer attention:
 | Dave Rupert | front-end and web components | `daverupert.com/atom.xml` |
 | Bob Monsour | personal tech essays | `bobmonsour.com/feed.xml` |
 | Justin Pot | productivity and software writing | `justinpot.com/rss/` |
+| Jake Lazaroff | web tech deep-dives | `jakelazaroff.com/rss.xml` |
+| William Edmisten | geospatial and data notes | `wcedmisten.fyi/feed.xml` |
+| Programming in the 21st Century | James Hague programming essays | `prog21.dadgum.com/atom.xml` |
+| Daniel Miessler | security and AI analysis | `danielmiessler.com/feed` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

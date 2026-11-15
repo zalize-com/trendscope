@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:30:02.193042+00:00",
+ "generated_at": "2026-11-15T16:31:39.089132+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1929,
- "new_items": 1803,
+ "total_items": 1970,
+ "new_items": 1844,
  "by_source": {
   "producthunt": 45,
   "show_hn": 39,
@@ -33,6 +33,7 @@
   "codinghorror": 15,
   "codinghorror2": 15,
   "dabeaz": 15,
+  "danielmiessler": 15,
   "danluu": 15,
   "daverupert": 15,
   "dimitri": 15,
@@ -87,6 +88,7 @@
   "beesbuzz": 14,
   "gwern": 14,
   "fogus": 13,
+  "wcedmisten": 13,
   "aphyr": 12,
   "baeldung": 12,
   "jetbrains": 12,
@@ -102,6 +104,7 @@
   "github_eng": 10,
   "haxx": 10,
   "henrikwarne": 10,
+  "jakelazaroff": 10,
   "joeduffy": 10,
   "joelonsoftware": 10,
   "justinpot": 10,
@@ -135,6 +138,7 @@
   "bendersky": 5,
   "github_trending": 4,
   "thisweek": 4,
+  "prog21": 3,
   "ask_hn": 2,
   "ciechanow": 2,
   "devto": 1,
@@ -3281,6 +3285,126 @@
    "title": "Practical Python with Raymond Hettinger",
    "url": "https://dabeaz.blogspot.com/2011/04/practical-python-with-raymond-hettinger.html",
    "source": "dabeaz",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Bitter Wall",
+   "url": "https://danielmiessler.com/blog/bitter-wall?utm_source=rss&utm_medium=feed&utm_campaign=website",
+   "source": "danielmiessler",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Bitter Lesson, Generalized",
+   "url": "https://danielmiessler.com/blog/bitter-lesson-generalized?utm_source=rss&utm_medium=feed&utm_campaign=website",
+   "source": "danielmiessler",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vibe Coding Isn't Using AI to Make Things",
+   "url": "https://danielmiessler.com/blog/vibe-coding-isnt-using-ai?utm_source=rss&utm_medium=feed&utm_campaign=website",
+   "source": "danielmiessler",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Focus on Problems Instead of Companies",
+   "url": "https://danielmiessler.com/blog/focus-on-problems-not-companies?utm_source=rss&utm_medium=feed&utm_campaign=website",
+   "source": "danielmiessler",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Hard Problem of Jealousy and the Easy Problem of Consciousness",
+   "url": "https://danielmiessler.com/blog/hard-problem-of-jealousy?utm_source=rss&utm_medium=feed&utm_campaign=website",
+   "source": "danielmiessler",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Post-AI Security Floor",
+   "url": "https://danielmiessler.com/blog/post-ai-security-floor?utm_source=rss&utm_medium=feed&utm_campaign=website",
+   "source": "danielmiessler",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your Energy Level Changes How You See the World",
+   "url": "https://danielmiessler.com/blog/your-energy-changes-how-you-see-the-world?utm_source=rss&utm_medium=feed&utm_campaign=website",
+   "source": "danielmiessler",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "General Hill-Climbing: The One Main Loop in AI",
+   "url": "https://danielmiessler.com/blog/general-hill-climbing?utm_source=rss&utm_medium=feed&utm_campaign=website",
+   "source": "danielmiessler",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I'm on Team Explanation",
+   "url": "https://danielmiessler.com/blog/team-explanation?utm_source=rss&utm_medium=feed&utm_campaign=website",
+   "source": "danielmiessler",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Models Are the How, Harnesses Are the What",
+   "url": "https://danielmiessler.com/blog/models-how-harnesses-what?utm_source=rss&utm_medium=feed&utm_campaign=website",
+   "source": "danielmiessler",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing Is Closer to Thought Than Code",
+   "url": "https://danielmiessler.com/blog/writing-is-closer-to-thought-than-code?utm_source=rss&utm_medium=feed&utm_campaign=website",
+   "source": "danielmiessler",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Custom Content for Everyone",
+   "url": "https://danielmiessler.com/blog/custom-content-for-everyone?utm_source=rss&utm_medium=feed&utm_campaign=website",
+   "source": "danielmiessler",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AGI Prediction Update (2025-2028)",
+   "url": "https://danielmiessler.com/blog/agi-prediction-update?utm_source=rss&utm_medium=feed&utm_campaign=website",
+   "source": "danielmiessler",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing UL Gauntlet, a Benchmark for How Well AI Explains",
+   "url": "https://danielmiessler.com/blog/introducing-ul-gauntlet?utm_source=rss&utm_medium=feed&utm_campaign=website",
+   "source": "danielmiessler",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I Write My Own Stage Directions Now",
+   "url": "https://danielmiessler.com/blog/kai-fish-voice?utm_source=rss&utm_medium=feed&utm_campaign=website",
+   "source": "danielmiessler",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -6482,6 +6606,86 @@
    "url": "https://jacobian.org/bookmarks/1271273881/",
    "source": "jacobian",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building More Resilient Local-First Software with atproto",
+   "url": "https://jakelazaroff.com/words/building-more-resilient-local-first-software-with-atproto/",
+   "source": "jakelazaroff",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DHH Is Way Worse Than I Thought",
+   "url": "https://jakelazaroff.com/words/dhh-is-way-worse-than-i-thought/",
+   "source": "jakelazaroff",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Homomorphically Encrypting CRDTs",
+   "url": "https://jakelazaroff.com/words/homomorphically-encrypted-crdts/",
+   "source": "jakelazaroff",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Isomorphic Web Components",
+   "url": "https://jakelazaroff.com/words/isomorphic-web-components/",
+   "source": "jakelazaroff",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Drinking from the Bluesky Firehose",
+   "url": "https://jakelazaroff.com/words/drinking-from-the-bluesky-firehose/",
+   "source": "jakelazaroff",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's a Single-Page App?",
+   "url": "https://jakelazaroff.com/words/whats-a-single-page-app/",
+   "source": "jakelazaroff",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Modern CSS Reset",
+   "url": "https://jakelazaroff.com/words/my-modern-css-reset/",
+   "source": "jakelazaroff",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a Single-Page App with htmx",
+   "url": "https://jakelazaroff.com/words/building-a-single-page-app-with-htmx/",
+   "source": "jakelazaroff",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Local-First Case Study",
+   "url": "https://jakelazaroff.com/words/a-local-first-case-study/",
+   "source": "jakelazaroff",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Web Component Success Story",
+   "url": "https://jakelazaroff.com/words/the-web-component-success-story/",
+   "source": "jakelazaroff",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -10510,6 +10714,30 @@
    "metric": "feed rank"
   },
   {
+   "title": "So Long, Prog21",
+   "url": "http://prog21.dadgum.com/229.html",
+   "source": "prog21",
+   "rank": 1,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing Video Games in a Functional Style",
+   "url": "http://prog21.dadgum.com/228.html",
+   "source": "prog21",
+   "rank": 2,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Progress Bars are Surprisingly Difficult",
+   "url": "http://prog21.dadgum.com/227.html",
+   "source": "prog21",
+   "rank": 3,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Python 3.16.0 alpha 2 is now available",
    "url": "https://blog.python.org/2026/11/python-3160-alpha-2-is-now-available/",
    "source": "pythonblog",
@@ -14202,6 +14430,110 @@
    "url": "https://verdagon.dev/blog/generational-references",
    "source": "verdagon",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "6 Open Source Tools to Query OpenStreetMap",
+   "url": "https://wcedmisten.fyi/post/how-to-query-osm",
+   "source": "wcedmisten",
+   "rank": 1,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Copy of a Copy of a Copy: the Story of FDA Medical Device Clearances",
+   "url": "https://wcedmisten.fyi/post/medical-device-analysis",
+   "source": "wcedmisten",
+   "rank": 2,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Adding Keyboard Shortcuts to a 24 Year Old Government Website with Userscripts",
+   "url": "https://wcedmisten.fyi/post/keyboard-shortcuts-userscripts",
+   "source": "wcedmisten",
+   "rank": 3,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Comparing User Activity on two OSM Data Imports Communication Channels",
+   "url": "https://wcedmisten.fyi/post/comparing-communication-on-osm-imports-channels",
+   "source": "wcedmisten",
+   "rank": 4,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mapping Hospital Accessibility with OpenStreetMap",
+   "url": "https://wcedmisten.fyi/post/visualizing-hospital-accessibility",
+   "source": "wcedmisten",
+   "rank": 5,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making A Stateful Webapp on a $7.68 per Month Budget",
+   "url": "https://wcedmisten.fyi/post/stateful-webapp-on-7-68-budget",
+   "source": "wcedmisten",
+   "rank": 6,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Upgrading My Self Hosted Maps with Headway",
+   "url": "https://wcedmisten.fyi/post/upgrading-with-headway-maps",
+   "source": "wcedmisten",
+   "rank": 7,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Self Hosting a Google Maps Alternative with OpenStreetMap",
+   "url": "https://wcedmisten.fyi/post/self-hosting-osm",
+   "source": "wcedmisten",
+   "rank": 8,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Measuring Walkability with Openstreetmap and Isochrone Maps",
+   "url": "https://wcedmisten.fyi/post/isochrone-walkability",
+   "source": "wcedmisten",
+   "rank": 9,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Analyzing All Recipes",
+   "url": "https://wcedmisten.fyi/post/analyzing-all-recipes",
+   "source": "wcedmisten",
+   "rank": 10,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Evaluating Mechanical Keyboard Delivery Estimates with Python Web Scraping",
+   "url": "https://wcedmisten.fyi/post/analyzing-keycap-estimates",
+   "source": "wcedmisten",
+   "rank": 11,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding Missing Speed Limits in Openstreetmap from Dashcam Footage",
+   "url": "https://wcedmisten.fyi/post/dashcam-to-speed-limits",
+   "source": "wcedmisten",
+   "rank": 12,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Integrating Dashcam Data with Openstreetmap",
+   "url": "https://wcedmisten.fyi/post/dashcam-to-openstreetmap",
+   "source": "wcedmisten",
+   "rank": 13,
    "score": 1,
    "metric": "feed rank"
   },
