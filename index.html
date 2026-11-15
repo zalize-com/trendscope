@@ -523,7 +523,20 @@ async function main() {
     render(ITEMS, currentTab());
   });
 
-  document.getElementById("q").addEventListener("input", () => render(ITEMS, currentTab()));
+  const qEl = document.getElementById("q");
+  const q0 = new URLSearchParams(location.search).get("q");
+  if (q0) qEl.value = q0;
+  qEl.addEventListener("input", () => {
+    const u = new URL(location.href);
+    qEl.value ? u.searchParams.set("q", qEl.value) : u.searchParams.delete("q");
+    history.replaceState(null, "", u);
+    render(ITEMS, currentTab());
+  });
+  document.addEventListener("keydown", e => {
+    if (e.key === "/" && !/INPUT|TEXTAREA/.test(document.activeElement?.tagName)) {
+      e.preventDefault(); qEl.focus();
+    }
+  });
   document.getElementById("tabs").addEventListener("click", ev => {
     const b = ev.target.closest(".tab");
     if (!b) return;
