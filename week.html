@@ -77,9 +77,14 @@ function parseCSV(txt) {
   return rows.filter(r => r.length > 1);
 }
 
-fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
-  const rows = parseCSV(txt);
-  const hdr = rows[0], recs = rows.slice(1).map(r => Object.fromEntries(hdr.map((h,i)=>[h,r[i]])));
+fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json()).then(ser => {
+  const recs = [];
+  for (const [url, it] of Object.entries(ser.items)) {
+    for (const [date, [score, rank]] of Object.entries(it.days)) {
+      recs.push({title: it.title, url, source: it.source, metric: it.metric,
+                 date, score, rank});
+    }
+  }
   const WIN = Math.min(30, Math.max(2, +new URLSearchParams(location.search).get("d") || 7));
   document.getElementById("wjson").innerHTML =
     `<a href="docs/api/${WIN >= 30 ? "month" : "week"}.json">↓ json</a>`;
