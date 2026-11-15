@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:18:22.406417+00:00",
+ "generated_at": "2026-11-15T16:19:39.318148+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1555,
- "new_items": 1429,
+ "total_items": 1607,
+ "new_items": 1481,
  "by_source": {
   "producthunt": 45,
   "show_hn": 31,
@@ -19,6 +19,7 @@
   "arxiv": 15,
   "aws_blog": 15,
   "begriffs": 15,
+  "bertrand": 15,
   "catonmat": 15,
   "changelog": 15,
   "charity": 15,
@@ -63,6 +64,7 @@
   "simonw": 15,
   "soblog": 15,
   "swizec": 15,
+  "tbray": 15,
   "theverge": 15,
   "troyhunt": 15,
   "vercel": 15,
@@ -71,9 +73,11 @@
   "aphyr": 12,
   "baeldung": 12,
   "jetbrains": 12,
+  "bret": 11,
   "lobsters": 11,
   "airbnb": 10,
   "birklund": 10,
+  "bitslog": 10,
   "copyconstruct": 10,
   "dropbox": 10,
   "freecodecamp": 10,
@@ -109,7 +113,8 @@
   "github_trending": 4,
   "thisweek": 4,
   "ask_hn": 2,
-  "devto": 1
+  "devto": 1,
+  "roytang": 1
  },
  "items": [
   {
@@ -1161,6 +1166,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "La seule solution pour éviter le désastre",
+   "url": "https://bertrandmeyer.com/2026/11/02/la-seule-solution-pour-eviter-le-desastre/",
+   "source": "bertrand",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Questions and answers on AI and verification: a follow-up to my May ACM Tech Talk",
+   "url": "https://bertrandmeyer.com/2026/07/21/questions-and-answers-on-ai-and-verification-a-follow-up-to-my-may-acm-tech-talk/",
+   "source": "bertrand",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Q&A after ACM Webinar on Software Verification in the Age of Artificial Intelligence",
+   "url": "https://bertrandmeyer.com/2026/06/10/acm-webinar/",
+   "source": "bertrand",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Newsletter archive available",
+   "url": "https://bertrandmeyer.com/2026/06/09/newsletter-archive-available/",
+   "source": "bertrand",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Celebrating Tony Hoare’s mark on computer science",
+   "url": "https://bertrandmeyer.com/2026/03/16/celebrating-tony-hoares-mark-on-computer-science/",
+   "source": "bertrand",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Yes, AI is intelligent. Prove me wrong.",
+   "url": "https://bertrandmeyer.com/2026/02/26/yes-ai-is-intelligent-prove-me-wrong/",
+   "source": "bertrand",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Assemblée annuelle de la SDIS",
+   "url": "https://bertrandmeyer.com/2026/01/20/assemblee-annuelle-de-la-sdis/",
+   "source": "bertrand",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CloudFlare outage: the lesson that will not be drawn",
+   "url": "https://bertrandmeyer.com/2026/01/06/cloudflare-outage-the-lesson-that-will-not-be-drawn/",
+   "source": "bertrand",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Criteria and recipes for good technical definitions",
+   "url": "https://bertrandmeyer.com/2025/12/29/criteria-and-recipes-for-good-technical-definitions/",
+   "source": "bertrand",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A revolutionary approach to university teaching",
+   "url": "https://bertrandmeyer.com/2025/11/11/a-revolutionary-approach-to-university-teaching/",
+   "source": "bertrand",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thanks for your help but I write my own texts",
+   "url": "https://bertrandmeyer.com/2025/11/02/thanks-for-your-help-but-i-write-my-own-texts/",
+   "source": "bertrand",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exponentially bad phrasing",
+   "url": "https://bertrandmeyer.com/2025/09/12/exponentially-bad-phrasing/",
+   "source": "bertrand",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "More sizzle than steak? Using an LLM to produce verified bug fixes (new preprint)",
+   "url": "https://bertrandmeyer.com/2025/07/24/more-sizzle-than-steak-using-an-llm-to-produce-verified-bug-fixes-new-paper/",
+   "source": "bertrand",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A paean to programming",
+   "url": "https://bertrandmeyer.com/2025/04/23/a-paean-to-programming/",
+   "source": "bertrand",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New article: obituary of Niklaus Wirth",
+   "url": "https://bertrandmeyer.com/2025/03/04/new-article-obituary-of-niklaus-wirth/",
+   "source": "bertrand",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "How the ARPANET Protocols Worked",
    "url": "https://twobithistory.org/2021/03/08/arpanet-protocols.html",
    "source": "birklund",
@@ -1309,6 +1434,174 @@
    "url": "https://bitbashing.io/concurrency-primer.html",
    "source": "bitbashing",
    "rank": 9,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Merged mining (Part I)",
+   "url": "https://bitslog.com/2022/11/22/merged-mining-part-i/",
+   "source": "bitslog",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Dark Side of Ethereum 1/64th CALL Gas Reduction",
+   "url": "https://bitslog.com/2021/06/10/the-dark-side-of-ethereum-1-64th-call-gas-reduction/",
+   "source": "bitslog",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2021",
+   "url": "https://bitslog.com/2021/06/10/2021/",
+   "source": "bitslog",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Re-mining Patoshi Blocks for Dummies",
+   "url": "https://bitslog.com/2020/09/03/re-mining-patoshi-blocks-for-dummies/",
+   "source": "bitslog",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Patoshi Mining Machine",
+   "url": "https://bitslog.com/2020/08/22/the-patoshi-mining-machine/",
+   "source": "bitslog",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A New Mystery in Patoshi Timestamps",
+   "url": "https://bitslog.com/2020/06/22/a-new-mystery-in-patoshi-timestamps/",
+   "source": "bitslog",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An overwhelming task",
+   "url": "https://bitslog.com/2019/08/23/an-overwhelming-task/",
+   "source": "bitslog",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Armadillo: More Consensus Security for RSK",
+   "url": "https://bitslog.com/2019/08/01/armadillo-more-consensus-security-for-rsk/",
+   "source": "bitslog",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Return of the Deniers and the Revenge of Patoshi",
+   "url": "https://bitslog.com/2019/04/16/the-return-of-the-deniers-and-the-revenge-of-patoshi/",
+   "source": "bitslog",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simple change to the Bitcoin MERKLEBLOCK command to protect from Leaf-Node weakness in Transaction Merkle Tree",
+   "url": "https://bitslog.com/2018/08/21/simple-change-to-the-bitcoin-merkleblock-command-to-protect-from-leaf-node-weakness-in-transaction-merkle-tree/",
+   "source": "bitslog",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New website",
+   "url": "https://worrydream.com/",
+   "source": "bret",
+   "rank": 1,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hypercard in the World",
+   "url": "https://www.youtube.com/watch?v=uI7J3II59lc",
+   "source": "bret",
+   "rank": 2,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dynamicland website",
+   "url": "https://dynamicland.org",
+   "source": "bret",
+   "rank": 3,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Website updated",
+   "url": "https://worrydream.com",
+   "source": "bret",
+   "rank": 4,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Realtoys",
+   "url": "https://worrydream.com",
+   "source": "bret",
+   "rank": 5,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Booklets",
+   "url": "https://worrydream.com/booklets/",
+   "source": "bret",
+   "rank": 6,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bio and contact",
+   "url": "https://worrydream.com/",
+   "source": "bret",
+   "rank": 7,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tweet refs",
+   "url": "https://worrydream.com/Tweets/",
+   "source": "bret",
+   "rank": 8,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Preview images",
+   "url": "https://worrydream.com/",
+   "source": "bret",
+   "rank": 9,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Links to archives",
+   "url": "https://worrydream.com/Links2025/",
+   "source": "bret",
+   "rank": 10,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Computational Public Space",
+   "url": "https://dynamicland.org/2024/Computational_Public_Space/",
+   "source": "bret",
+   "rank": 11,
    "score": 1,
    "metric": "feed rank"
   },
@@ -8881,6 +9174,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "This feed is deprecated.",
+   "url": "https://roytang.net/",
+   "source": "roytang",
+   "rank": 1,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "My agent.md to improve LLM-assisted code quality",
    "url": "https://fabiensanglard.net/agent.md/index.html",
    "source": "sanglard",
@@ -10204,6 +10505,126 @@
    "title": "Theory of constraints, AI, and code review",
    "url": "https://swizec.com/blog/theory-of-constraints-ai-and-code-review",
    "source": "swizec",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Long Links (with Pangram)",
+   "url": "https://www.tbray.org/ongoing/When/202x/2026/11/08/Long-Links",
+   "source": "tbray",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CoSocialism Update",
+   "url": "https://www.tbray.org/ongoing/When/202x/2026/10/29/CoSocial-AGM",
+   "source": "tbray",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "That AI Temptation",
+   "url": "https://www.tbray.org/ongoing/When/202x/2026/10/19/The-AI-Temptation",
+   "source": "tbray",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2026 Aussie Visit",
+   "url": "https://www.tbray.org/ongoing/When/202x/2026/10/12/Aussie-Visit-2026",
+   "source": "tbray",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I Wasted an Hour on X",
+   "url": "https://www.tbray.org/ongoing/When/202x/2026/10/13/True-Things-About-X",
+   "source": "tbray",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Color Study: Fujifilm vs Pixel",
+   "url": "https://www.tbray.org/ongoing/When/202x/2026/10/10/Color-Study-Fuji-vs-Pixel",
+   "source": "tbray",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Purpose Isn’t What It Does",
+   "url": "https://www.tbray.org/ongoing/When/202x/2026/09/24/The-Purpose-Isnt-What-It-Does",
+   "source": "tbray",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Regulate and Standardize AI? Nope.",
+   "url": "https://www.tbray.org/ongoing/When/202x/2026/09/18/On-Regulating-AI",
+   "source": "tbray",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Canceling Emily",
+   "url": "https://www.tbray.org/ongoing/When/202x/2026/09/08/Emily-Got-Canceled",
+   "source": "tbray",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Clankers and Data Races",
+   "url": "https://www.tbray.org/ongoing/When/202x/2026/09/01/Un-Racing",
+   "source": "tbray",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Text Watermarking",
+   "url": "https://www.tbray.org/ongoing/When/202x/2026/08/24/Text-Watermarking",
+   "source": "tbray",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Happiness Bookmarks",
+   "url": "https://www.tbray.org/ongoing/When/202x/2026/08/13/Happiness",
+   "source": "tbray",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Five Views of the Wilcox Prairie",
+   "url": "https://www.tbray.org/ongoing/When/202x/2026/08/17/Prairie-Views",
+   "source": "tbray",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dununba, Sangban, Kenkini (and Stands)",
+   "url": "https://www.tbray.org/ongoing/When/202x/2026/08/08/Kenkini-Sangban-Dununba",
+   "source": "tbray",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Upside Down",
+   "url": "https://www.tbray.org/ongoing/When/202x/2026/08/03/Upside-Down",
+   "source": "tbray",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"

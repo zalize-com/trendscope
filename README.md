@@ -130,6 +130,11 @@ A daily cross-source snapshot of developer attention:
 | Murat Demirbas | distributed systems papers | `muratbuffalo.blogspot.com/feeds/posts/default` |
 | Begriffs | API design and Postgres | `begriffs.com/atom.xml` |
 | GDS | UK gov digital service | `gds.blog.gov.uk/feed/` |
+| BitsLog | security research | `bitslog.com/feed/` |
+| Roy Tang | dev notes and links | `roytang.net/feed/` |
+| Tim Bray | XML inventor, tech commentary | `tbray.org/ongoing/ongoing.atom` |
+| Bertrand Meyer | Eiffel creator, SE methodology | `bertrandmeyer.com/feed/` |
+| Bret Victor | dynamic media essays | `worrydream.com/feed.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
