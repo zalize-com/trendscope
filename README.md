@@ -133,7 +133,7 @@ curl -s https://raw.githubusercontent.com/zalize-com/trendscope/main/data/latest
 - Velocity signals: which repos/packages are gaining attention *fastest*?
 - Benchmarks & journalism: a citable, timestamped record of dev attention.
 
-[FAQ](docs/faq.md) answers provenance, license and freshness questions.
+Pipeline changes are tracked in [docs/changelog.md](docs/changelog.md). [FAQ](docs/faq.md) answers provenance, license and freshness questions.
 
 ## Data dictionary
 
