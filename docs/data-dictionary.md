@@ -48,3 +48,6 @@ ranking.
 - `docs/api/movers-latest.json` — structured entered/left/gainers/droppers and
   package rank movers for the latest snapshot pair (same computation as
   `docs/movers/*.md`).
+- `data/hiring.json` / `data/hiring-history.csv` — monthly HN "Who is hiring?"
+  and "Who wants to be hired?" thread comment counts, tracked daily
+  (`captured_at,kind,thread_id,month,comments,url`); a labor-demand signal.
