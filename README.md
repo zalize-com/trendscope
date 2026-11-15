@@ -172,6 +172,10 @@ A daily cross-source snapshot of developer attention:
 | Michael Feathers | legacy code and org design | `michaelfeathers.silvrback.com/feed` |
 | Agis Anastasopoulos | programming and systems notes | `agis.io/feed.xml` |
 | Molly White | Web3 criticism and tech notes | `mollywhite.net/micro/feed.xml` |
+| Andrew Montalenti | Parse.ly founder, data engineering | `amontalenti.com/rss/` |
+| Brandur | engineering essays | `brandur.org/articles.atom` |
+| Jesse Duffield | lazygit creator | `jesseduffield.com/feed.xml` |
+| Vicki Boykis | data science and ML essays | `vicki.substack.com/feed` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

@@ -1,20 +1,21 @@
 {
- "generated_at": "2026-11-15T16:36:47.383152+00:00",
+ "generated_at": "2026-11-15T16:38:53.182160+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 2071,
- "new_items": 1945,
+ "total_items": 2127,
+ "new_items": 2001,
  "by_source": {
   "producthunt": 45,
   "show_hn": 39,
   "theregister": 29,
   "hackernews": 28,
   "techmeme": 22,
-  "slashdot": 18,
+  "slashdot": 19,
   "thenewstack": 17,
   "arstechnica": 16,
   "daringfireball": 16,
   "gargron": 16,
   "lemmy": 16,
+  "amontalenti": 15,
   "andrewkelley": 15,
   "antirez": 15,
   "arxiv": 15,
@@ -22,6 +23,7 @@
   "begriffs": 15,
   "bertrand": 15,
   "bobmonsour": 15,
+  "brandur": 15,
   "bravenewgeek": 15,
   "catonmat": 15,
   "changelog": 15,
@@ -88,6 +90,7 @@
   "troyhunt": 15,
   "vercel": 15,
   "verdagon": 15,
+  "vicki": 15,
   "x065": 15,
   "beesbuzz": 14,
   "gwern": 14,
@@ -110,6 +113,7 @@
   "haxx": 10,
   "henrikwarne": 10,
   "jakelazaroff": 10,
+  "jesseduffield": 10,
   "joeduffy": 10,
   "joelonsoftware": 10,
   "justinpot": 10,
@@ -319,6 +323,126 @@
    "url": "https://medium.com/airbnb-engineering/eval-driven-development-lessons-from-evaluating-genai-at-scale-e817e5ae5788?source=rss----53c7c27702d5---4",
    "source": "airbnb",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From laptop to cloud cluster within seconds (via the PX CLI)",
+   "url": "https://amontalenti.com/2026/05/18/px-launch-overview",
+   "source": "amontalenti",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Programming in 2026: excitement, dread, and the coming wave",
+   "url": "https://amontalenti.com/2026/04/23/excitement-and-dread",
+   "source": "amontalenti",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "It’s official: Claude Code has made it a weird year for tech",
+   "url": "https://amontalenti.com/2026/02/15/a-weird-year",
+   "source": "amontalenti",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Less mindless scrolling, less mindless listening",
+   "url": "https://amontalenti.com/2025/12/20/2025-app-audit",
+   "source": "amontalenti",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hypernormalization and distrust",
+   "url": "https://amontalenti.com/2025/06/14/hypernormalization-and-distrust",
+   "source": "amontalenti",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My tricks and accessories for working ergonomically on a laptop while on the go",
+   "url": "https://amontalenti.com/2025/02/22/laptop-tricks-on-the-go",
+   "source": "amontalenti",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Linux is free and your mind is valuable",
+   "url": "https://amontalenti.com/2025/01/05/linux-is-free",
+   "source": "amontalenti",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Linux backup workflow for hackers with restic, rclone, Backblaze B2",
+   "url": "https://amontalenti.com/2024/06/19/backups-restic-rclone",
+   "source": "amontalenti",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Good Python Software",
+   "url": "https://amontalenti.com/2024/05/28/good-python-software",
+   "source": "amontalenti",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My relationship with digital media in the last few years",
+   "url": "https://amontalenti.com/2024/05/27/media-roundup",
+   "source": "amontalenti",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Partially Examined Life: a podcast, a new book, an antidote to doomscrolling",
+   "url": "https://amontalenti.com/2024/04/20/the-partially-examined-life",
+   "source": "amontalenti",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The smartphone app audit",
+   "url": "https://amontalenti.com/2024/03/26/the-smartphone-app-audit",
+   "source": "amontalenti",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Core Python",
+   "url": "https://amontalenti.com/2024/02/14/core-python",
+   "source": "amontalenti",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Putting Your Media on a Diet",
+   "url": "https://amontalenti.com/2024/01/31/media-diet",
+   "source": "amontalenti",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Blog Chill",
+   "url": "https://amontalenti.com/2023/12/28/the-blog-chill",
+   "source": "amontalenti",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -1878,6 +2002,126 @@
    "title": "Where do the red and blue colors on this site come from?",
    "url": "https://www.bobmonsour.com/blog/from-where-are-the-red-and-blue/",
    "source": "bobmonsour",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Minimum Viable Unit of Saleable Software",
+   "url": "https://brandur.org/minimum-viable-unit",
+   "source": "brandur",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Second Wave of the API-first Economy",
+   "url": "https://brandur.org/second-wave-api-first",
+   "source": "brandur",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Eradicating N+1s: The Two-phase Data Load and Render Pattern in Go",
+   "url": "https://brandur.org/two-phase-render",
+   "source": "brandur",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Notifier Pattern for Applications That Use Postgres",
+   "url": "https://brandur.org/notifier",
+   "source": "brandur",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web APIs: Enriched DX By Disallowing Unknown Fields",
+   "url": "https://brandur.org/disallow-unknown-fields",
+   "source": "brandur",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "River: a Fast, Robust Job Queue for Go + Postgres",
+   "url": "https://brandur.org/river",
+   "source": "brandur",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Using Go's `t.Parallel()`",
+   "url": "https://brandur.org/t-parallel",
+   "source": "brandur",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Soft Deletion Probably Isn't Worth It",
+   "url": "https://brandur.org/soft-deletion",
+   "source": "brandur",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Postgres: Boundless `text` and Back Again",
+   "url": "https://brandur.org/text",
+   "source": "brandur",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How We Went All In on sqlc/pgx for Postgres + Go",
+   "url": "https://brandur.org/sqlc",
+   "source": "brandur",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minimally Invasive (and More Accurate) Analytics: GoAccess and Athena/SQL",
+   "url": "https://brandur.org/minimal-analytics",
+   "source": "brandur",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Feature Casualties of Large Databases",
+   "url": "https://brandur.org/large-database-casualties",
+   "source": "brandur",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Doubling the Sorting Speed of Postgres Network Types with Abbreviated Keys",
+   "url": "https://brandur.org/sortsupport-inet",
+   "source": "brandur",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sequences: A Modest, Contra-garden Travel Project",
+   "url": "https://brandur.org/sequences-project",
+   "source": "brandur",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a Robust Live Reloader with WebSockets and Go",
+   "url": "https://brandur.org/live-reload",
+   "source": "brandur",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -6782,6 +7026,86 @@
    "title": "The Web Component Success Story",
    "url": "https://jakelazaroff.com/words/the-web-component-success-story/",
    "source": "jakelazaroff",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Whoops, I context-switched one too many times",
+   "url": "https://jesseduffield.com/Whoops-I-context-switched-one-too-many-times/",
+   "source": "jesseduffield",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The sword in the stone in the office",
+   "url": "https://jesseduffield.com/The-sword-in-the-stone-in-the-office/",
+   "source": "jesseduffield",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Negative-interest tech debt",
+   "url": "https://jesseduffield.com/Negative-interest-tech-debt/",
+   "source": "jesseduffield",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "At the end of the day, my slaves are just a tool",
+   "url": "https://jesseduffield.com/my-slaves-are-just-a-tool/",
+   "source": "jesseduffield",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI-isms go deeper than em-dashes and ‘load-bearing’",
+   "url": "https://jesseduffield.com/AI-isms-go-deeper/",
+   "source": "jesseduffield",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "OpenPray - Your server’s security doesn’t need a doctor, it needs a priest",
+   "url": "https://jesseduffield.com/OpenPray/",
+   "source": "jesseduffield",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "IT’S DEATH",
+   "url": "https://jesseduffield.com/ITS-DEATH/",
+   "source": "jesseduffield",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You think unemployed, I think retired",
+   "url": "https://jesseduffield.com/You-Think-Unemployed-I-Think-Retired/",
+   "source": "jesseduffield",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Are AI agents cognitive Ozempic?",
+   "url": "https://jesseduffield.com/Are-AI-Agents-Cognitive-Ozempic/",
+   "source": "jesseduffield",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Escaping the Trifecta",
+   "url": "https://jesseduffield.com/Escaping-the-Trifecta/",
+   "source": "jesseduffield",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -12763,6 +13087,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Bill Gates Has Earned Billions Investing in Climate-Polluting Landfills, Reports ProPublica",
+   "url": "https://news.slashdot.org/story/26/11/15/0957227/bill-gates-has-earned-billions-investing-in-climate-polluting-landfills-reports-propublica?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "slashdot",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "50th Anniversary of 'Star Wars' Celebrated with iMax 70mm Re-Release, Special Events, New Movie",
    "url": "https://entertainment.slashdot.org/story/26/11/15/034240/50th-anniversary-of-star-wars-celebrated-with-imax-70mm-re-release-special-events-new-movie?utm_source=rss1.0mainlinkanon&utm_medium=feed",
    "source": "slashdot",
@@ -15166,6 +15498,126 @@
    "title": "Generational References (Expanded)",
    "url": "https://verdagon.dev/blog/generational-references",
    "source": "verdagon",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What are embeddings?",
+   "url": "https://vicki.substack.com/p/what-are-embeddings",
+   "source": "vicki",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Where do we go from here",
+   "url": "https://vicki.substack.com/p/where-do-we-go-from-here",
+   "source": "vicki",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The art of the long goodbye",
+   "url": "https://vicki.substack.com/p/the-art-of-the-long-goodbye",
+   "source": "vicki",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What we talk about when we talk about The Algo",
+   "url": "https://vicki.substack.com/p/what-we-talk-about-when-we-talk-about",
+   "source": "vicki",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Duo, the Push, and the Bandits",
+   "url": "https://vicki.substack.com/p/duo-the-push-and-the-bandits",
+   "source": "vicki",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "With the Feed as my witness",
+   "url": "https://vicki.substack.com/p/with-the-feed-as-my-witness",
+   "source": "vicki",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scaling Normcore way down",
+   "url": "https://vicki.substack.com/p/scaling-normcore-way-down",
+   "source": "vicki",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The luxury of length",
+   "url": "https://vicki.substack.com/p/the-luxury-of-length",
+   "source": "vicki",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The last miles and miles of the vaccine",
+   "url": "https://vicki.substack.com/p/the-last-miles-and-miles-of-the-vaccine",
+   "source": "vicki",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Diamond hands, when memes became power ✋💎🤚",
+   "url": "https://vicki.substack.com/p/diamond-hands-when-memes-became-power",
+   "source": "vicki",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The blank slate in your hands",
+   "url": "https://vicki.substack.com/p/the-blank-slate-in-your-hands",
+   "source": "vicki",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Containerized",
+   "url": "https://vicki.substack.com/p/containerized",
+   "source": "vicki",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A winter's tale for the end of the year",
+   "url": "https://vicki.substack.com/p/a-winters-tale-for-the-end-of-the",
+   "source": "vicki",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Hero's Journey to Peloton",
+   "url": "https://vicki.substack.com/p/my-heros-journey-to-peloton",
+   "source": "vicki",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The rules of the game",
+   "url": "https://vicki.substack.com/p/the-rules-of-the-game",
+   "source": "vicki",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
