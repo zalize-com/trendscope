@@ -50,6 +50,7 @@ A daily cross-source snapshot of developer attention:
 | Opensource.com | Red Hat OSS community | `opensource.com/feed` |
 | Stack Overflow Blog | dev culture | `stackoverflow.blog/feed/` |
 | Coding Horror | classic dev blog | `blog.codinghorror.com/rss/` |
+| Martin Fowler | SWE essays | `martinfowler.com/feed.atom` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

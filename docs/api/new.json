@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T13:53:03.760609+00:00",
+ "generated_at": "2026-11-15T13:55:43.780241+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 473,
- "new_items": 347,
+ "total_items": 488,
+ "new_items": 362,
  "by_source": {
   "producthunt": 45,
   "show_hn": 21,
@@ -17,6 +17,7 @@
   "infoq": 15,
   "lemmy": 15,
   "lwn": 15,
+  "martinfowler": 15,
   "soblog": 15,
   "thenewstack": 15,
   "theregister": 15,
@@ -1451,6 +1452,126 @@
    "title": "Three new stable kernels for Tuesday",
    "url": "https://lwn.net/Articles/1106569/",
    "source": "lwn",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bliki: Generated Glossary",
+   "url": "https://martinfowler.com/bliki/GeneratedGlossary.html",
+   "source": "martinfowler",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tests as data: ensuring AI-generated code does what we want",
+   "url": "https://martinfowler.com/articles/tests-as-data.html",
+   "source": "martinfowler",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fragments: November 10",
+   "url": "https://martinfowler.com/fragments/2026-11-10.html",
+   "source": "martinfowler",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Long-horizon agents and durable execution",
+   "url": "https://martinfowler.com/articles/durable-execution-agents.html",
+   "source": "martinfowler",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Data Product Platform Navigator",
+   "url": "https://martinfowler.com/articles/data-product-platform-nav.html",
+   "source": "martinfowler",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bliki: LLM Voice",
+   "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+   "source": "martinfowler",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why are good developers so wary of agentic development?",
+   "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+   "source": "martinfowler",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fragments: October 28",
+   "url": "https://martinfowler.com/fragments/2026-10-28.html",
+   "source": "martinfowler",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fragments: October 21",
+   "url": "https://martinfowler.com/fragments/2026-10-21.html",
+   "source": "martinfowler",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When Software Meets Hardware",
+   "url": "https://martinfowler.com/articles/software-meets-hardware.html",
+   "source": "martinfowler",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build your slide template",
+   "url": "https://martinfowler.com/articles/never-send-slides/build-your-slide-template.html",
+   "source": "martinfowler",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Craft of Practitioner Voice",
+   "url": "https://martinfowler.com/articles/practitioner-voice.html#TheCraftOfPractitionerVoice",
+   "source": "martinfowler",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Are Harnesses Worth the Cost?",
+   "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html",
+   "source": "martinfowler",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fragments: October 4",
+   "url": "https://martinfowler.com/fragments/2026-10-04.html",
+   "source": "martinfowler",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Principles for effective slides",
+   "url": "https://martinfowler.com/articles/never-send-slides/slide-principles.html",
+   "source": "martinfowler",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
