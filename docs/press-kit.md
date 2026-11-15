@@ -24,7 +24,7 @@ One-pager for anyone writing about or linking to this project.
 | Free tools | 72 | `tools/` |
 | API endpoints | 21 JSON/CSV lines | `docs/api.md` |
 | Embed modes | 20 (iframe card) + live gallery | `embed.html` / `embeds.html` |
-| Static pages | 47 | sitemap.xml |
+| Static pages | 48 | sitemap.xml |
 
 ## What makes it different
 
