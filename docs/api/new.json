@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:42:55.026780+00:00",
+ "generated_at": "2026-11-15T16:44:16.763965+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 2194,
- "new_items": 2068,
+ "total_items": 2262,
+ "new_items": 2136,
  "by_source": {
   "producthunt": 45,
   "show_hn": 39,
@@ -15,6 +15,7 @@
   "daringfireball": 16,
   "gargron": 16,
   "lemmy": 16,
+  "alexwlchan": 15,
   "amontalenti": 15,
   "andrewkelley": 15,
   "antirez": 15,
@@ -52,6 +53,7 @@
   "grumpyg": 15,
   "hillel": 15,
   "hynek": 15,
+  "idvorkin": 15,
   "infoq": 15,
   "jacobian": 15,
   "jvns": 15,
@@ -81,10 +83,12 @@
   "ridiculousfish": 15,
   "robinrendle": 15,
   "sanglard": 15,
+  "seangoedecke": 15,
   "shkspr": 15,
   "simonw": 15,
   "soblog": 15,
   "steveblank": 15,
+  "stevekrouse": 15,
   "swizec": 15,
   "swyx": 15,
   "tbray": 15,
@@ -149,6 +153,7 @@
   "meta_eng": 9,
   "susam": 9,
   "hackaday": 8,
+  "kellysutton": 8,
   "slack_eng": 8,
   "samwho": 6,
   "tonsky": 6,
@@ -328,6 +333,126 @@
    "url": "https://medium.com/airbnb-engineering/eval-driven-development-lessons-from-evaluating-genai-at-scale-e817e5ae5788?source=rss----53c7c27702d5---4",
    "source": "airbnb",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "gobench: a tool for comparing Go benchmark runs across branches",
+   "url": "https://alexwlchan.net/2026/gobench/",
+   "source": "alexwlchan",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Verifying my web archives with Playwright",
+   "url": "https://alexwlchan.net/2026/verifying-web-archives/",
+   "source": "alexwlchan",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Positive alerts in Prometheus",
+   "url": "https://alexwlchan.net/2026/positive-alerts/",
+   "source": "alexwlchan",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Organising my cross-stitch patterns",
+   "url": "https://alexwlchan.net/2026/cross-stitch-patterns/",
+   "source": "alexwlchan",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Parametrised tests in Rust with named parameters",
+   "url": "https://alexwlchan.net/2026/table-driven-rust/",
+   "source": "alexwlchan",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Abusing ID3 chapters to turn videos into glanceable podcasts",
+   "url": "https://alexwlchan.net/2026/glancecast/",
+   "source": "alexwlchan",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why can’t you combine <code>.tar.gz</code> files with <code>cat</code>?",
+   "url": "https://alexwlchan.net/2026/cat-confusion/",
+   "source": "alexwlchan",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Tailscale tracked down a 16-year-old SQLite bug &rarr;",
+   "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
+   "source": "alexwlchan",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Preventing line breaks in <code>&lt;code&gt;</code> elements",
+   "url": "https://alexwlchan.net/2026/non-breaking-code/",
+   "source": "alexwlchan",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fixing a bug with byte order marks",
+   "url": "https://alexwlchan.net/2026/byte-order-marks/",
+   "source": "alexwlchan",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Git hook to prevent committing directly to main",
+   "url": "https://alexwlchan.net/2026/no-main-hook/",
+   "source": "alexwlchan",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Describing all my photos",
+   "url": "https://alexwlchan.net/2026/describing-my-photos/",
+   "source": "alexwlchan",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I don’t want to repeat repeat myself",
+   "url": "https://alexwlchan.net/2026/repeating-myself/",
+   "source": "alexwlchan",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rebuilding the computer room",
+   "url": "https://alexwlchan.net/2026/computer-room/",
+   "source": "alexwlchan",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What can wonky APIs tell us about the web?",
+   "url": "https://alexwlchan.net/2026/wonky-web-apis/",
+   "source": "alexwlchan",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -7132,6 +7257,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Igor's Eulogy",
+   "url": "https://idvork.in/eulogy",
+   "source": "idvorkin",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reducing job hunt stress",
+   "url": "https://idvork.in/job-hunt-stress",
+   "source": "idvorkin",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I don't want to die knowing I spent too much time at work, and I bet you don't either",
+   "url": "https://idvork.in/sustainable-work",
+   "source": "idvorkin",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The recruiter does not think you're hot",
+   "url": "https://idvork.in/the-recruiter-does-not-think-you-are-hot",
+   "source": "idvorkin",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Decision making 201",
+   "url": "https://idvork.in/decisive",
+   "source": "idvorkin",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Care about Total Compensation",
+   "url": "https://idvork.in/comp",
+   "source": "idvorkin",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Microsoft Azure - The Genesis Node",
+   "url": "https://idvork.in/The-Genesis-Node",
+   "source": "idvorkin",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What makes a leader",
+   "url": "https://idvork.in/what-makes-a-leader",
+   "source": "idvorkin",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sleeping bag sacrifices",
+   "url": "https://idvork.in/sleeping-bag-sacrifices",
+   "source": "idvorkin",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Save the Souse",
+   "url": "https://idvork.in/save-the-souse",
+   "source": "idvorkin",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Save the Soup",
+   "url": "https://idvork.in/save-the-soup",
+   "source": "idvorkin",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Dream Job",
+   "url": "https://idvork.in/job",
+   "source": "idvorkin",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Strengths from Strength Finder",
+   "url": "https://idvork.in/strengths",
+   "source": "idvorkin",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Magical memories",
+   "url": "https://idvork.in/magic",
+   "source": "idvorkin",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Moments at work",
+   "url": "https://idvork.in/moments-at-work",
+   "source": "idvorkin",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Anthropic Outlines Its AI-Powered Code Review Process for Claude Code",
    "url": "https://www.infoq.com/news/2026/11/claude-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
    "source": "infoq",
@@ -8264,6 +8509,70 @@
    "url": "http://karpathy.github.io/2015/11/14/ai/",
    "source": "karpathy",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Moving on from React, 2 Years Later",
+   "url": "https://kellysutton.com/2026/05/21/moving-on-from-react-2-years-later.html",
+   "source": "kellysutton",
+   "rank": 1,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Retrospective, Predictions",
+   "url": "https://kellysutton.com/2026/03/04/ai-retrospective-predictions.html",
+   "source": "kellysutton",
+   "rank": 2,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How We’re Working, 2025",
+   "url": "https://kellysutton.com/2025/08/04/how-were-working-2025.html",
+   "source": "kellysutton",
+   "rank": 3,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Designing a Hiring Loop in the Age of AI",
+   "url": "https://kellysutton.com/2025/07/02/designing-a-hiring-loop-in-the-age-of-ai.html",
+   "source": "kellysutton",
+   "rank": 4,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Letting Others Get Rich",
+   "url": "https://kellysutton.com/2025/01/25/letting-others-get-rich.html",
+   "source": "kellysutton",
+   "rank": 5,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Moving on from React, a Year Later",
+   "url": "https://kellysutton.com/2025/01/18/moving-on-from-react-a-year-later.html",
+   "source": "kellysutton",
+   "rank": 6,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How We’re Working, 2024",
+   "url": "https://kellysutton.com/2024/05/17/how-were-working.html",
+   "source": "kellysutton",
+   "rank": 7,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Moving on from React",
+   "url": "https://kellysutton.com/2024/01/15/moving-on-from-react.html",
+   "source": "kellysutton",
+   "rank": 8,
    "score": 1,
    "metric": "feed rank"
   },
@@ -12980,6 +13289,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "How to find meaning in large tech companies",
+   "url": "https://seangoedecke.com/how-to-find-meaning-in-large-tech-companies/",
+   "source": "seangoedecke",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Glue work is still harmful in the age of AI",
+   "url": "https://seangoedecke.com/glue-work-is-still-harmful-in-the-age-of-ai/",
+   "source": "seangoedecke",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "LLMs are terrible at designing AI systems",
+   "url": "https://seangoedecke.com/llms-are-terrible-at-designing-ai-systems/",
+   "source": "seangoedecke",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Working with designers",
+   "url": "https://seangoedecke.com/working-with-designers/",
+   "source": "seangoedecke",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A database is a store for global variables",
+   "url": "https://seangoedecke.com/a-database-is-a-store-for-global-variables/",
+   "source": "seangoedecke",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "LLMs are not superhuman at reading and writing neural network weights",
+   "url": "https://seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/",
+   "source": "seangoedecke",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Audience capture",
+   "url": "https://seangoedecke.com/audience-capture/",
+   "source": "seangoedecke",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reliably aligning LLMs is impossible in principle",
+   "url": "https://seangoedecke.com/alignment-is-impossible/",
+   "source": "seangoedecke",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fast and slow ways to improve your reputation",
+   "url": "https://seangoedecke.com/how-to-get-assigned-interesting-work/",
+   "source": "seangoedecke",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elegance and intelligence are anticorrelated",
+   "url": "https://seangoedecke.com/elegance-and-intelligence-are-anticorrelated/",
+   "source": "seangoedecke",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You can just ask AI to do things",
+   "url": "https://seangoedecke.com/you-can-just-ask-ai-to-do-things/",
+   "source": "seangoedecke",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting good at AI takes time and practice",
+   "url": "https://seangoedecke.com/getting-good-at-ai-takes-time-and-practice/",
+   "source": "seangoedecke",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don't anthropomorphize big tech companies",
+   "url": "https://seangoedecke.com/dont-anthropomorphize-big-tech-companies/",
+   "source": "seangoedecke",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Software is slow because of bad design, not slow languages",
+   "url": "https://seangoedecke.com/software-is-slow-because-of-bad-design-not-slow-languages/",
+   "source": "seangoedecke",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Laypeople support technical fields for technology, not art",
+   "url": "https://seangoedecke.com/laypeople-support-technical-fields-for-technology-not-art/",
+   "source": "seangoedecke",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Variable Electricity Pricing - the Highs and the Lows",
    "url": "https://shkspr.mobi/blog/2026/11/variable-electricity-pricing-the-highs-and-the-lows/",
    "source": "shkspr",
@@ -13983,6 +14412,126 @@
    "title": "Your Startup Is Probably Dead On Arrival",
    "url": "https://steveblank.com/2026/03/17/your-startup-is-probably-dead-on-arrival/",
    "source": "steveblank",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Val Town is winding down",
+   "url": "https://stevekrouse.com/syndicated/val-town-winding-down",
+   "source": "stevekrouse",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI gets about 10x cheaper every year",
+   "url": "https://stevekrouse.com/10x",
+   "source": "stevekrouse",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Shall I Teach My Son?",
+   "url": "https://stevekrouse.com/ends",
+   "source": "stevekrouse",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Connecting every app to every other app",
+   "url": "https://stevekrouse.com/syndicated/val-town-connectors",
+   "source": "stevekrouse",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Investor Update – July 2026",
+   "url": "https://stevekrouse.com/syndicated/val-town-2026-july",
+   "source": "stevekrouse",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Investor Update – June 2026",
+   "url": "https://stevekrouse.com/syndicated/val-town-june-2026",
+   "source": "stevekrouse",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learning to code is still worthwhile",
+   "url": "https://stevekrouse.com/learn-to-code",
+   "source": "stevekrouse",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Investor Update – May 2026",
+   "url": "https://stevekrouse.com/syndicated/val-town-2026-may",
+   "source": "stevekrouse",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Chad Fowler's Phoenix Architecture",
+   "url": "https://stevekrouse.com/phoenix",
+   "source": "stevekrouse",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Investor Update – April 2026",
+   "url": "https://stevekrouse.com/syndicated/val-town-2026-april",
+   "source": "stevekrouse",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Agents are briefly overhyped",
+   "url": "https://stevekrouse.com/agent-hype",
+   "source": "stevekrouse",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Investor Update – March 2026",
+   "url": "https://stevekrouse.com/syndicated/val-town-2026-mar",
+   "source": "stevekrouse",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Investor Update – Feb 2026",
+   "url": "https://stevekrouse.com/syndicated/val-town-2026-feb",
+   "source": "stevekrouse",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "steve-eval – getting AI to write like me",
+   "url": "https://stevekrouse.com/eval",
+   "source": "stevekrouse",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reports of code's death are greatly exaggerated",
+   "url": "https://stevekrouse.com/precision",
+   "source": "stevekrouse",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"

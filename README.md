@@ -181,6 +181,11 @@ A daily cross-source snapshot of developer attention:
 | Andy Bromberg | crypto and product essays | `andybromberg.com/feed` |
 | Ariadne Conill | Alpine/fediverse systems | `ariadne.space/atom.xml` |
 | Eugene Yan | applied ML and recommender systems | `eugeneyan.com/rss/` |
+| Sean Goedecke | engineering career essays | `seangoedecke.com/rss.xml` |
+| Igor Dvorkin | tech leadership notes | `idvork.in/feed.xml` |
+| Alex Chan | digital preservation and code | `alexwlchan.net/atom.xml` |
+| Kelly Sutton | software engineering essays | `kellysutton.com/feed.xml` |
+| Steve Krouse | Val Town founder | `stevekrouse.com/rss.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
