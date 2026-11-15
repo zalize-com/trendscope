@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T15:55:03.680758+00:00",
+ "generated_at": "2026-11-15T15:56:16.605292+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1122,
- "new_items": 996,
+ "total_items": 1138,
+ "new_items": 1012,
  "by_source": {
   "producthunt": 45,
+  "show_hn": 29,
   "theregister": 29,
   "hackernews": 28,
-  "show_hn": 28,
   "techmeme": 20,
   "slashdot": 18,
   "thenewstack": 17,
@@ -23,6 +23,7 @@
   "codinghorror": 15,
   "codinghorror2": 15,
   "dabeaz": 15,
+  "danluu": 15,
   "discord": 15,
   "echojs": 15,
   "elastic": 15,
@@ -1826,6 +1827,126 @@
    "title": "Practical Python with Raymond Hettinger",
    "url": "https://dabeaz.blogspot.com/2011/04/practical-python-with-raymond-hettinger.html",
    "source": "dabeaz",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Test and verification technique effectiveness with GPT-6 Astra",
+   "url": "https://danluu.com/astra-testing/",
+   "source": "danluu",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "“We should be more ambitious with the software we build”",
+   "url": "https://danluu.com/ambitious/",
+   "source": "danluu",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "There's no point at which turning your brain off will work",
+   "url": "https://danluu.com/brain-off/",
+   "source": "danluu",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How well do agents use test and verification techniques?",
+   "url": "https://danluu.com/agentic-testing/",
+   "source": "danluu",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ed Zitron's AI prediction track record",
+   "url": "https://danluu.com/zitron/",
+   "source": "danluu",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bug blindness",
+   "url": "https://danluu.com/bug-blind/",
+   "source": "danluu",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "There's no reason for software to be slow anymore",
+   "url": "https://danluu.com/no-slow/",
+   "source": "danluu",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The benchmarkpocalypse",
+   "url": "https://danluu.com/benchpocalypse/",
+   "source": "danluu",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How does programming language affect token efficiency and correctness?",
+   "url": "https://danluu.com/pl-tokens/",
+   "source": "danluu",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bad benchmarks and evals: Senior SWE-Bench, napkin math, and winter tires",
+   "url": "https://danluu.com/exercise-7/",
+   "source": "danluu",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Agentic test processes, LLM benchmarks, and other notes on agentic coding from Galapagos Island",
+   "url": "https://danluu.com/ai-coding/",
+   "source": "danluu",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Steve Ballmer was an underrated CEO",
+   "url": "https://danluu.com/ballmer/",
+   "source": "danluu",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How good can you be at Codenames without knowing any words?",
+   "url": "https://danluu.com/codenames/",
+   "source": "danluu",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A discussion of discussions on AI bias",
+   "url": "https://danluu.com/ai-bias/",
+   "source": "danluu",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What the FTC got wrong in the Google antitrust investigation",
+   "url": "https://danluu.com/ftc-google-antitrust/",
+   "source": "danluu",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -6449,6 +6570,14 @@
   {
    "title": "Show HN: a Rust implementation of the Reticulum mesh networking stack",
    "url": "https://github.com/aljazceru/Reticulum-rs",
+   "source": "show_hn",
+   "rank": 12,
+   "score": 2,
+   "metric": "points"
+  },
+  {
+   "title": "Show HN : Multilingual Minimal Local (MCP only) alternative to Granola",
+   "url": "https://github.com/IndianTinker/quills",
    "source": "show_hn",
    "rank": 12,
    "score": 2,

@@ -96,6 +96,7 @@ A daily cross-source snapshot of developer attention:
 | Simon Willison | LLM tooling and web dev | `simonwillison.net/atom/everything/` |
 | Daring Fireball | Apple and tech commentary | `daringfireball.net/feeds/main` |
 | Marco Arment | indie dev and Apple ecosystem | `marco.org/rss` |
+| Dan Luu | systems performance and career | `danluu.com/atom.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
