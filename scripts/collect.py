@@ -10979,40 +10979,6 @@ def fetch_fireside(limit=15):
     return out
 
 
-def fetch_feltrontumblr(limit=15):
-    """Feltron — data visualization (feed), position-scored."""
-    print("Fetching Feltron feed...")
-    import xml.etree.ElementTree as ET
-    ATOM = "{http://www.w3.org/2005/Atom}"
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(
-                "https://feltron.tumblr.com/rss",
-                headers={"User-Agent": "Mozilla/5.0 trendscope"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
-            break
-        except Exception as e:
-            print(f"  [warn] feltrontumblr attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            time.sleep(2 * (attempt + 1))
-    else:
-        return []
-    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
-    entries = entries[:limit]
-    out = []
-    for i, e in enumerate(entries):
-        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
-        link = e.findtext("link") or ""
-        if not link:
-            for l in e.findall(f"{ATOM}link"):
-                if l.get("rel", "alternate") == "alternate":
-                    link = l.get("href", "")
-        out.append(item(
-            "feltrontumblr", title, link.strip() or "https://feltron.tumblr.com",
-            len(entries) - i, "feed rank",
-        ))
-    return out
-
 
 def fetch_ferd(limit=15):
     """Fred Hebert — Learn You Some Erlang author (feed), position-scored."""
@@ -11643,40 +11609,6 @@ def fetch_holub(limit=15):
         ))
     return out
 
-
-def fetch_howtomarketagame(limit=15):
-    """HTMAG — game marketing (feed), position-scored."""
-    print("Fetching HTMAG feed...")
-    import xml.etree.ElementTree as ET
-    ATOM = "{http://www.w3.org/2005/Atom}"
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(
-                "https://howtomarketagame.com/feed/",
-                headers={"User-Agent": "Mozilla/5.0 trendscope"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
-            break
-        except Exception as e:
-            print(f"  [warn] howtomarketagame attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            time.sleep(2 * (attempt + 1))
-    else:
-        return []
-    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
-    entries = entries[:limit]
-    out = []
-    for i, e in enumerate(entries):
-        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
-        link = e.findtext("link") or ""
-        if not link:
-            for l in e.findall(f"{ATOM}link"):
-                if l.get("rel", "alternate") == "alternate":
-                    link = l.get("href", "")
-        out.append(item(
-            "howtomarketagame", title, link.strip() or "https://howtomarketagame.com",
-            len(entries) - i, "feed rank",
-        ))
-    return out
 
 
 def fetch_iamfran(limit=15):
@@ -13743,40 +13675,6 @@ def fetch_newrelic(limit=15):
         ))
     return out
 
-
-def fetch_newsletterpragmaticengineer(limit=15):
-    """Pragmatic Engineer — Gergely Orosz newsletter (feed), position-scored."""
-    print("Fetching Pragmatic Engineer feed...")
-    import xml.etree.ElementTree as ET
-    ATOM = "{http://www.w3.org/2005/Atom}"
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(
-                "https://newsletter.pragmaticengineer.com/feed/",
-                headers={"User-Agent": "Mozilla/5.0 trendscope"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
-            break
-        except Exception as e:
-            print(f"  [warn] newsletterpragmaticengineer attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            time.sleep(2 * (attempt + 1))
-    else:
-        return []
-    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
-    entries = entries[:limit]
-    out = []
-    for i, e in enumerate(entries):
-        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
-        link = e.findtext("link") or ""
-        if not link:
-            for l in e.findall(f"{ATOM}link"):
-                if l.get("rel", "alternate") == "alternate":
-                    link = l.get("href", "")
-        out.append(item(
-            "newsletterpragmaticengineer", title, link.strip() or "https://newsletter.pragmaticengineer.com",
-            len(entries) - i, "feed rank",
-        ))
-    return out
 
 
 def fetch_newsroomspotify(limit=15):
@@ -16753,40 +16651,6 @@ def fetch_trentwalton(limit=15):
         ))
     return out
 
-
-def fetch_tumblrmapsbynik(limit=15):
-    """Maps by Nik — data viz tumblr (feed), position-scored."""
-    print("Fetching Maps by Nik feed...")
-    import xml.etree.ElementTree as ET
-    ATOM = "{http://www.w3.org/2005/Atom}"
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(
-                "https://tumblr.mapsbynik.com/rss",
-                headers={"User-Agent": "Mozilla/5.0 trendscope"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
-            break
-        except Exception as e:
-            print(f"  [warn] tumblrmapsbynik attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            time.sleep(2 * (attempt + 1))
-    else:
-        return []
-    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
-    entries = entries[:limit]
-    out = []
-    for i, e in enumerate(entries):
-        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
-        link = e.findtext("link") or ""
-        if not link:
-            for l in e.findall(f"{ATOM}link"):
-                if l.get("rel", "alternate") == "alternate":
-                    link = l.get("href", "")
-        out.append(item(
-            "tumblrmapsbynik", title, link.strip() or "https://tumblr.mapsbynik.com",
-            len(entries) - i, "feed rank",
-        ))
-    return out
 
 
 def fetch_underjord(limit=15):
@@ -20009,40 +19873,6 @@ def fetch_xtdb(limit=15):
     return out
 
 
-def fetch_yahooengtumblr(limit=15):
-    """Yahoo Eng — Yahoo engineering (feed), position-scored."""
-    print("Fetching Yahoo Eng feed...")
-    import xml.etree.ElementTree as ET
-    ATOM = "{http://www.w3.org/2005/Atom}"
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(
-                "https://yahooeng.tumblr.com/rss",
-                headers={"User-Agent": "Mozilla/5.0 trendscope"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
-            break
-        except Exception as e:
-            print(f"  [warn] yahooengtumblr attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            time.sleep(2 * (attempt + 1))
-    else:
-        return []
-    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
-    entries = entries[:limit]
-    out = []
-    for i, e in enumerate(entries):
-        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
-        link = e.findtext("link") or ""
-        if not link:
-            for l in e.findall(f"{ATOM}link"):
-                if l.get("rel", "alternate") == "alternate":
-                    link = l.get("href", "")
-        out.append(item(
-            "yahooengtumblr", title, link.strip() or "https://yahooeng.tumblr.com",
-            len(entries) - i, "feed rank",
-        ))
-    return out
-
 
 def fetch_slashdot(limit=15):
     """Slashdot RSS 1.0 (RDF) — nerd news, position-scored like techmeme."""
@@ -20574,7 +20404,6 @@ def main():
         "feedbin": fetch_feedbin,
         "feedpress": fetch_feedpress,
         "fireside": fetch_fireside,
-        "feltrontumblr": fetch_feltrontumblr,
         "ferd": fetch_ferd,
         "fettblog": fetch_fettblog,
         "flowingdata": fetch_flowingdata,
@@ -20593,7 +20422,6 @@ def main():
         "henry": fetch_henry,
         "hex": fetch_hex,
         "holub": fetch_holub,
-        "howtomarketagame": fetch_howtomarketagame,
         "iamfran": fetch_iamfran,
         "incident": fetch_incident,
         "insightsseicmu": fetch_insightsseicmu,
@@ -20653,7 +20481,6 @@ def main():
         "nerdy": fetch_nerdy,
         "neuviemeportegithub": fetch_neuviemeportegithub,
         "newrelic": fetch_newrelic,
-        "newsletterpragmaticengineer": fetch_newsletterpragmaticengineer,
         "newsroomspotify": fetch_newsroomspotify,
         "nickcraver": fetch_nickcraver,
         "nicolasgallagher": fetch_nicolasgallagher,
@@ -20739,7 +20566,6 @@ def main():
         "timotijhof": fetch_timotijhof,
         "tinyprojects": fetch_tinyprojects,
         "trentwalton": fetch_trentwalton,
-        "tumblrmapsbynik": fetch_tumblrmapsbynik,
         "underjord": fetch_underjord,
         "unixdigest": fetch_unixdigest,
         "upmostly": fetch_upmostly,
@@ -20832,7 +20658,6 @@ def main():
         "zhenghao": fetch_zhenghao,
         "zopatista": fetch_zopatista,
         "xtdb": fetch_xtdb,
-        "yahooengtumblr": fetch_yahooengtumblr,
         "hynek": fetch_hynek,
         "susam": fetch_susam,
         "haxx": fetch_haxx,
