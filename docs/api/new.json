@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T20:19:08.198071+00:00",
+ "generated_at": "2026-11-15T20:23:11.635930+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 19698,
- "new_items": 19571,
+ "total_items": 19885,
+ "new_items": 19758,
  "by_source": {
   "show_hn": 51,
   "producthunt": 45,
@@ -504,6 +504,7 @@
   "localghost": 15,
   "localizely": 15,
   "loige": 15,
+  "loopinsight": 15,
   "lowentropy": 15,
   "lutaonan": 15,
   "lwn": 15,
@@ -604,6 +605,7 @@
   "oidaisdes": 15,
   "oleb": 15,
   "oliverjam": 15,
+  "omnycontent": 15,
   "openai": 15,
   "openclaw": 15,
   "openwebadvocacy": 15,
@@ -657,13 +659,17 @@
   "rauchg": 15,
   "rawgithubusercontent": 15,
   "raywenderlich": 15,
+  "rcoding": 15,
+  "rdatascience": 15,
   "rdegges": 15,
   "react": 15,
   "readwrite": 15,
   "reaganray": 15,
   "realpython": 15,
   "redlang": 15,
+  "relay": 15,
   "remysharp": 15,
+  "rgolang": 15,
   "ridiculousfish": 15,
   "rightbadcode": 15,
   "rknight": 15,
@@ -729,6 +735,7 @@
   "softwareengineeringdaily": 15,
   "sookocheff": 15,
   "sophiebits": 15,
+  "space": 15,
   "spreadprivacy": 15,
   "stackabuse": 15,
   "staysaasy": 15,
@@ -822,7 +829,9 @@
   "webplatform": 15,
   "wicki": 15,
   "windytan": 15,
+  "wired": 15,
   "wolvic": 15,
+  "wonderhowto": 15,
   "worldhey": 15,
   "x065": 15,
   "xianmin": 15,
@@ -832,6 +841,7 @@
   "yatil": 15,
   "yehudakatz": 15,
   "yulingtianxia": 15,
+  "zacsweers": 15,
   "zeldman": 15,
   "zellwk": 15,
   "zhenghao": 15,
@@ -1049,6 +1059,7 @@
   "csaiot": 10,
   "cscolumbia": 10,
   "cssauditors": 10,
+  "cultofandroid": 10,
   "cunderwood": 10,
   "daimajia": 10,
   "danieltakeshigithub": 10,
@@ -1436,6 +1447,7 @@
   "zachholman": 10,
   "zachleat": 10,
   "zackkanter": 10,
+  "zarah": 10,
   "zeichenschatz": 10,
   "zolmeister": 10,
   "zopatista": 10,
@@ -1472,6 +1484,7 @@
   "samwooe": 8,
   "slack_eng": 8,
   "socialclawhammer": 8,
+  "thecrazyprogrammer": 8,
   "tom": 8,
   "alexrpco": 7,
   "forweb": 7,
@@ -1530,6 +1543,7 @@
   "toni": 5,
   "upcoder": 5,
   "useyourloaf": 5,
+  "uxmovement": 5,
   "xanthir": 5,
   "blogsamuelmaddock": 4,
   "bottossongithub": 4,
@@ -1545,6 +1559,7 @@
   "meetguns": 4,
   "thisweek": 4,
   "webcomponents": 4,
+  "xkcd": 4,
   "armin": 3,
   "bandcamptechwordpress": 3,
   "blogavenuecode": 3,
@@ -44433,6 +44448,86 @@
    "url": "https://www.ctrl.blog/entry/cloudflare-ip-blockade/",
    "source": "ctrl",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iPhone owners are pickier about apps than Android users",
+   "url": "https://www.cultofandroid.com/84253/iphone-owners-are-pickier-about-apps-than-android-users/",
+   "source": "cultofandroid",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iPhone shipments grow while Android tanks",
+   "url": "https://www.cultofandroid.com/84251/iphone-shipments-grow-while-android-tanks/",
+   "source": "cultofandroid",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Samsung copies one of iPhone’s biggest advantages",
+   "url": "https://www.cultofandroid.com/84242/samsung-copies-one-of-iphones-biggest-advantages/",
+   "source": "cultofandroid",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple’s Tracker Detect app helps Android users spot AirTag spies",
+   "url": "https://www.cultofandroid.com/84239/apples-tracker-detect-app-helps-android-users-spot-airtag-spies/",
+   "source": "cultofandroid",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iMessage reactions now appear as emoji on Android",
+   "url": "https://www.cultofandroid.com/84235/imessage-reactions-now-appear-as-emoji-on-android/",
+   "source": "cultofandroid",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WhatsApp wants to make it easy to transfer chat data from Android to iOS",
+   "url": "https://www.cultofandroid.com/84233/whatsapp-wants-to-make-it-easy-to-transfer-chat-data-from-android-to-ios/",
+   "source": "cultofandroid",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Add MagSafe to your iPhone or Android with convenient Elago sticker",
+   "url": "https://www.cultofandroid.com/84218/add-magsafe-to-your-iphone-or-android-with-convenient-elago-sticker/",
+   "source": "cultofandroid",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple makes it harder for creeps to use AirTags for stalking",
+   "url": "https://www.cultofandroid.com/84208/apple-makes-it-harder-for-creeps-to-use-airtags-for-stalking/",
+   "source": "cultofandroid",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to watch Netflix offline",
+   "url": "https://www.cultofandroid.com/80908/you-can-finally-play-netflix-offline-using-its-ios-or-android-app/",
+   "source": "cultofandroid",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fleeceware apps scam $400 million out of unsuspecting users",
+   "url": "https://www.cultofandroid.com/84201/fleeceware-apps-scam-400-million-out-of-unsuspecting-users/",
+   "source": "cultofandroid",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -91685,6 +91780,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "★ The Dalrymple Report: A look at the iPhone Duo",
+   "url": "https://loopinsight.com/2026/11/13/the-dalrymple-report-a-look-at-the-iphone-duo/",
+   "source": "loopinsight",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "★ The Dalrymple Report: MacBook Neo, Apple Watch, and Samsung mocking the Duo",
+   "url": "https://loopinsight.com/2026/11/06/the-dalrymple-report-macbook-neo-apple-watch-and-samsung-mocking-the-duo/",
+   "source": "loopinsight",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "★ The Dalrymple Report: All about Macs",
+   "url": "https://loopinsight.com/2026/10/30/the-dalrymple-report-all-about-macs/",
+   "source": "loopinsight",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "★ The Dalrymple Report: New products galore",
+   "url": "https://loopinsight.com/2026/10/23/the-dalrymple-report-new-products-galore/",
+   "source": "loopinsight",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "★ The Dalrymple Report: AI, Meta and iPhone 18 Pro Max",
+   "url": "https://loopinsight.com/2026/09/25/the-dalrymple-report-ai-meta-and-iphone-18-pro-max/",
+   "source": "loopinsight",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "★ The Dalrymple Report: iPhone water, Duo Camera, and iOS 27",
+   "url": "https://loopinsight.com/2026/09/18/the-dalrymple-report-iphone-water-duo-camera-and-ios-27/",
+   "source": "loopinsight",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "★ The Dalrymple Report: iPhone Duo and iPhone 18 Pro",
+   "url": "https://loopinsight.com/2026/09/11/the-dalrymple-report-iphone-duo-and-iphone-18-pro/",
+   "source": "loopinsight",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "★ The Dalrymple Report: Phil Schiller, Apple price increases, and succession planning",
+   "url": "https://loopinsight.com/2026/09/04/the-dalrymple-report-phil-schiller-apple-price-increases-and-succession-planning/",
+   "source": "loopinsight",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "★ The Dalrymple Report: Dolly, Apple Event, New Macs",
+   "url": "https://loopinsight.com/2026/08/28/the-dalrymple-report-dolly-apple-event-new-macs/",
+   "source": "loopinsight",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "★ The Dalrymple Report: Winnipeg, Setting Alarms, Camera-Equipped AirPods Confirmed",
+   "url": "https://loopinsight.com/2026/08/21/the-dalrymple-report-winnipeg-setting-alarms-camera-equipped-airpods-confirmed/",
+   "source": "loopinsight",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "★ The Dalrymple Report: Ring, Olympics, Siri slips again",
+   "url": "https://loopinsight.com/2026/02/13/the-dalrymple-report-ring-olympics-siri-slips-again/",
+   "source": "loopinsight",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "★ The Dalrymple Report: Foldable iPhone, Financials, buying a Mac online",
+   "url": "https://loopinsight.com/2026/02/06/the-dalrymple-report-foldable-iphone-financials-buying-a-mac-online/",
+   "source": "loopinsight",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "★ The Dalrymple Report: Shoveling snow with Siri, More on Apple’s Future AI",
+   "url": "https://loopinsight.com/2026/01/30/the-dalrymple-report-shoveling-snow-with-siri-more-on-apples-future-ai/",
+   "source": "loopinsight",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "★ The Dalrymple Report: Snowstorm, Apple chatbot, Guitar software",
+   "url": "https://loopinsight.com/2026/01/23/the-dalrymple-report-snowstorm-apple-chatbot-guitar-software/",
+   "source": "loopinsight",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "★ The Dalrymple Report: CPR, Creator Apps, and Car locks",
+   "url": "https://loopinsight.com/2026/01/16/the-dalrymple-report-cpr-creator-apps-and-car-locks/",
+   "source": "loopinsight",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Constraints and production pressure at eMudhra",
    "url": "https://surfingcomplexity.blog/2026/11/12/constraints-and-production-pressure-at-emudhra/",
    "source": "lorinhochstein",
@@ -110293,6 +110508,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Free Food: The Rise, Fall, and Return of Foraging",
+   "url": "https://omnycontent.com",
+   "source": "omnycontent",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Big Apple Episode",
+   "url": "https://omnycontent.com",
+   "source": "omnycontent",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fibermaxxing FTW: Meet the Neglected Nutrient That's the Key to Health",
+   "url": "https://omnycontent.com",
+   "source": "omnycontent",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Eat Bison to Save Bison",
+   "url": "https://omnycontent.com",
+   "source": "omnycontent",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Plant Milk Proliferation: Oat, Soy, Almond, and More, But Which Is Best?",
+   "url": "https://omnycontent.com",
+   "source": "omnycontent",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "So Hot Right Now: Why We Love the Chile Pepper",
+   "url": "https://omnycontent.com",
+   "source": "omnycontent",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Salad Days: A Story of Science, Sexism, and Jell-O",
+   "url": "https://omnycontent.com",
+   "source": "omnycontent",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Where There's Smoke, There's...Whiskey, Fish, and Barbecue!",
+   "url": "https://omnycontent.com",
+   "source": "omnycontent",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "America's Forbidden Fruit and Forgotten First Soda: Ask Gastropod",
+   "url": "https://omnycontent.com",
+   "source": "omnycontent",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bringing Home the Bacon: From Shakespeare to the Baconator",
+   "url": "https://omnycontent.com",
+   "source": "omnycontent",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What the Shell? Cracking the Lobster's Mysteries",
+   "url": "https://omnycontent.com",
+   "source": "omnycontent",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Dog's Dinner: What Should We Really Be Feeding Our Pets?",
+   "url": "https://omnycontent.com",
+   "source": "omnycontent",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Feel the Beet: The Most Fascinating Woman You've Never Heard Of",
+   "url": "https://omnycontent.com",
+   "source": "omnycontent",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "White vs. Wheat: The Food Fight of the Centuries",
+   "url": "https://omnycontent.com",
+   "source": "omnycontent",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Protein, Pyramids, and Politics: The Forgotten Stories and Controversial Science Behind Government Dietary Advice",
+   "url": "https://omnycontent.com",
+   "source": "omnycontent",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "被拆掉的 NSHostingView 还会再建一次 View",
    "url": "https://onevcat.com/2026/10/nested-hosting-view/",
    "source": "onevcat",
@@ -121741,6 +122076,246 @@
    "metric": "feed rank"
   },
   {
+   "title": "No \"I made a ____\" posts. No AI slop posts. No advertising. No discord links. No surveys.",
+   "url": "https://www.reddit.com/r/coding/comments/1keo68j/no_i_made_a_posts_no_ai_slop_posts_no_advertising/",
+   "source": "rcoding",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Go 1.27’s generic methods made possible for ORMs. Compile-checked columns with no generated code",
+   "url": "https://www.reddit.com/r/coding/comments/1xx1ojs/what_go_127s_generic_methods_made_possible_for/",
+   "source": "rcoding",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Under the Hood: Serving Kimi K3 | DigitalOcean",
+   "url": "https://www.reddit.com/r/coding/comments/1xwfjkm/under_the_hood_serving_kimi_k3_digitalocean/",
+   "source": "rcoding",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Security flaw found in http2 module.",
+   "url": "https://www.reddit.com/r/coding/comments/1xul91s/security_flaw_found_in_http2_module/",
+   "source": "rcoding",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building Barista: Formal Verification and TLA+",
+   "url": "https://www.reddit.com/r/coding/comments/1xumc2c/building_barista_formal_verification_and_tla/",
+   "source": "rcoding",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Problem with concurrent linter fixes",
+   "url": "https://www.reddit.com/r/coding/comments/1xtv0hj/problem_with_concurrent_linter_fixes/",
+   "source": "rcoding",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MCP Explained in 14min..",
+   "url": "https://www.reddit.com/r/coding/comments/1xuf4a4/mcp_explained_in_14min/",
+   "source": "rcoding",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "no, code is not \"cheap\"",
+   "url": "https://www.reddit.com/r/coding/comments/1xsrie4/no_code_is_not_cheap/",
+   "source": "rcoding",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Free online hackathon with 40 awards! Open to beginners",
+   "url": "https://www.reddit.com/r/coding/comments/1xtap4f/free_online_hackathon_with_40_awards_open_to/",
+   "source": "rcoding",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lean explained with TypeScript",
+   "url": "https://www.reddit.com/r/coding/comments/1xsqn0i/lean_explained_with_typescript/",
+   "source": "rcoding",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Super Mario 64 on SNES",
+   "url": "https://www.reddit.com/r/coding/comments/1xrzekk/super_mario_64_on_snes/",
+   "source": "rcoding",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I will not be using LLMs in my coding | Kristian Polso",
+   "url": "https://www.reddit.com/r/coding/comments/1xr1h5b/why_i_will_not_be_using_llms_in_my_coding/",
+   "source": "rcoding",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The future of Software Engineering is boring",
+   "url": "https://www.reddit.com/r/coding/comments/1xqzk7o/the_future_of_software_engineering_is_boring/",
+   "source": "rcoding",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Regressive JPEGs",
+   "url": "https://www.reddit.com/r/coding/comments/1xquz7v/regressive_jpegs/",
+   "source": "rcoding",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Day After Code Is Already Here. This Is What You Need to Know to Survive.",
+   "url": "https://www.reddit.com/r/coding/comments/1xr2gy3/the_day_after_code_is_already_here_this_is_what/",
+   "source": "rcoding",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly Entering & Transitioning - Thread 09 Nov, 2026 - 16 Nov, 2026",
+   "url": "https://www.reddit.com/r/datascience/comments/1xrix7s/weekly_entering_transitioning_thread_09_nov_2026/",
+   "source": "rdatascience",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I've spent 15+ years in AI & Data Science at Amazon & Sony, interviewed thousands of candidates, and have coached 3,000+ students. AMA!",
+   "url": "https://www.reddit.com/r/datascience/comments/1xvdtt6/ive_spent_15_years_in_ai_data_science_at_amazon/",
+   "source": "rdatascience",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What would a fully Bayesian programming environment look like?",
+   "url": "https://www.reddit.com/r/datascience/comments/1xtnalv/what_would_a_fully_bayesian_programming/",
+   "source": "rdatascience",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Data Colada finds evidence of altered data in a fifth Francesca Gino paper, a 2011 leadership study with 900+ citations",
+   "url": "https://www.reddit.com/r/datascience/comments/1xssm7t/data_colada_finds_evidence_of_altered_data_in_a/",
+   "source": "rdatascience",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Standing out in Data Science Interview Case Studies",
+   "url": "https://www.reddit.com/r/datascience/comments/1xt6wqu/standing_out_in_data_science_interview_case/",
+   "source": "rdatascience",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I made Data Science & AI quizzes for (almost) every letter of the alphabet",
+   "url": "https://www.reddit.com/r/datascience/comments/1xsjur1/i_made_data_science_ai_quizzes_for_almost_every/",
+   "source": "rdatascience",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AMA - Staff DS 9 YOE",
+   "url": "https://www.reddit.com/r/datascience/comments/1xqg8j8/ama_staff_ds_9_yoe/",
+   "source": "rdatascience",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Evaluating Kumo, Nori, Chronos-2 and LGBM for Electricity Price Forecasting",
+   "url": "https://www.reddit.com/r/datascience/comments/1xph8n5/evaluating_kumo_nori_chronos2_and_lgbm_for/",
+   "source": "rdatascience",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "mizu: a new tool to speed up parallel data science workflows",
+   "url": "https://www.reddit.com/r/datascience/comments/1xow83g/mizu_a_new_tool_to_speed_up_parallel_data_science/",
+   "source": "rdatascience",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Demystify the entry-level market for me please?",
+   "url": "https://www.reddit.com/r/datascience/comments/1xnqi9t/demystify_the_entrylevel_market_for_me_please/",
+   "source": "rdatascience",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Interactive tools for learning Agentic Analytics and evals for free",
+   "url": "https://www.reddit.com/r/datascience/comments/1xnoy9v/interactive_tools_for_learning_agentic_analytics/",
+   "source": "rdatascience",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is anyone else seeing more relaxed coding rounds lately?",
+   "url": "https://www.reddit.com/r/datascience/comments/1xm1sn9/is_anyone_else_seeing_more_relaxed_coding_rounds/",
+   "source": "rdatascience",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly Entering & Transitioning - Thread 02 Nov, 2026 - 09 Nov, 2026",
+   "url": "https://www.reddit.com/r/datascience/comments/1xloeez/weekly_entering_transitioning_thread_02_nov_2026/",
+   "source": "rdatascience",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Andrew Gelman shares how he came up with R-hat at Bell Labs in 1990",
+   "url": "https://www.reddit.com/r/datascience/comments/1xjj762/andrew_gelman_shares_how_he_came_up_with_rhat_at/",
+   "source": "rdatascience",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is harness engineering?",
+   "url": "https://www.reddit.com/r/datascience/comments/1xjnevi/what_is_harness_engineering/",
+   "source": "rdatascience",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "I'm Writing Again",
    "url": "https://rdegges.com/2024/im-writing-again/",
    "source": "rdegges",
@@ -123117,6 +123692,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "255: A Rigid Phone?!",
+   "url": "http://relay.fm/analogue/255",
+   "source": "relay",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "254: Silly, Complimentary",
+   "url": "http://relay.fm/analogue/254",
+   "source": "relay",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "253: Paper Airplane Boy",
+   "url": "http://relay.fm/analogue/253",
+   "source": "relay",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "252: I’m the Big Dog",
+   "url": "http://relay.fm/analogue/252",
+   "source": "relay",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "251: Spicy Nugs",
+   "url": "http://relay.fm/analogue/251",
+   "source": "relay",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "250: I Do Love a Good Rule",
+   "url": "http://relay.fm/analogue/250",
+   "source": "relay",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "249: It Turns Out There's Only Four Songs",
+   "url": "http://relay.fm/analogue/249",
+   "source": "relay",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "248: Dexterous Ostrich",
+   "url": "http://relay.fm/analogue/248",
+   "source": "relay",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "247: How Could That Possibly Be of Interest to You?",
+   "url": "http://relay.fm/analogue/247",
+   "source": "relay",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "246: I Don't Like the Way That Numbers Work",
+   "url": "http://relay.fm/analogue/246",
+   "source": "relay",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "245: We Can't All Be Stephen",
+   "url": "http://relay.fm/analogue/245",
+   "source": "relay",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "244: Devout Real Tree Person",
+   "url": "http://relay.fm/analogue/244",
+   "source": "relay",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "243: I Can't Help but Press That Button",
+   "url": "http://relay.fm/analogue/243",
+   "source": "relay",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "242: I Have Recognised a Dog Exists",
+   "url": "http://relay.fm/analogue/242",
+   "source": "relay",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "241: We're Part of the Us",
+   "url": "http://relay.fm/analogue/241",
+   "source": "relay",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "The Memory Police [book]",
    "url": "https://remysharp.com/books/2026/the-memory-police",
    "source": "remysharp",
@@ -123393,6 +124088,126 @@
    "url": "https://responsivenews.co.uk/post/71845174511/responsive-iframes",
    "source": "responsivenewsco",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Small Projects",
+   "url": "https://www.reddit.com/r/golang/comments/1xs21mk/small_projects/",
+   "source": "rgolang",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Who's Hiring",
+   "url": "https://www.reddit.com/r/golang/comments/1xl3u3m/whos_hiring/",
+   "source": "rgolang",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Understanding Go: inside PGO",
+   "url": "https://www.reddit.com/r/golang/comments/1xwz33j/understanding_go_inside_pgo/",
+   "source": "rgolang",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Loved writing code, reviewing code but seems spark is gone, any advice of what to do?",
+   "url": "https://www.reddit.com/r/golang/comments/1xwhg57/loved_writing_code_reviewing_code_but_seems_spark/",
+   "source": "rgolang",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "gowt: native GUI for Go",
+   "url": "https://www.reddit.com/r/golang/comments/1xwv2h1/gowt_native_gui_for_go/",
+   "source": "rgolang",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Go Libraries or Workflow Engines for Always-On Agents",
+   "url": "https://www.reddit.com/r/golang/comments/1xwlztf/go_libraries_or_workflow_engines_for_alwayson/",
+   "source": "rgolang",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "encapsulation",
+   "url": "https://www.reddit.com/r/golang/comments/1xwcqn7/encapsulation/",
+   "source": "rgolang",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Help me understand a tree data structure",
+   "url": "https://www.reddit.com/r/golang/comments/1xwdrt7/help_me_understand_a_tree_data_structure/",
+   "source": "rgolang",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shirei 0.9.0: overlay and auxiliary windows, document editing, furigana, and going agent-first",
+   "url": "https://www.reddit.com/r/golang/comments/1xw8rkl/shirei_090_overlay_and_auxiliary_windows_document/",
+   "source": "rgolang",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Should You Write Your Next.js API in Go? (I Tested It)",
+   "url": "https://www.reddit.com/r/golang/comments/1xvvzql/should_you_write_your_nextjs_api_in_go_i_tested_it/",
+   "source": "rgolang",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I built the same Go app five ways: Fyne, Cogent Core, Wails, GoTTH and Qt (MIQT)",
+   "url": "https://www.reddit.com/r/golang/comments/1xvlrfe/i_built_the_same_go_app_five_ways_fyne_cogent/",
+   "source": "rgolang",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Go 1.27’s generic methods made possible for ORMs. Compile-checked columns with no generated code",
+   "url": "https://www.reddit.com/r/golang/comments/1xv9xeq/what_go_127s_generic_methods_made_possible_for/",
+   "source": "rgolang",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Go is going I think",
+   "url": "https://www.reddit.com/r/golang/comments/1xwpyle/go_is_going_i_think/",
+   "source": "rgolang",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building AI Agents using Go + Temporal",
+   "url": "https://www.reddit.com/r/golang/comments/1xwc58n/building_ai_agents_using_go_temporal/",
+   "source": "rgolang",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Anything wrong with setting version 1 of a module to use \"/v1\", similarly to versions 2+? Or, releasing version 2 as the actual first version?",
+   "url": "https://www.reddit.com/r/golang/comments/1xvk920/anything_wrong_with_setting_version_1_of_a_module/",
+   "source": "rgolang",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -135589,6 +136404,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "30 years ago, 'Space Jam' proposed the best way to resolve interplanetary disputes",
+   "url": "https://www.space.com/entertainment/space-movies-shows/30-years-ago-space-jam-proposed-the-best-way-to-resolve-interplanetary-disputes",
+   "source": "space",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On this day in space! Nov. 15, 1988: The 300-foot Green Bank Telescope collapses suddenly, leaving a huge pile of wreckage in West Virginia",
+   "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-15-2026",
+   "source": "space",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why hasn't the 'Blaze Star' exploded yet? Astronomers weigh in on what to expect",
+   "url": "https://www.space.com/stargazing/why-hasnt-the-blaze-star-exploded-yet-astronomers-weigh-in-on-what-to-expect",
+   "source": "space",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How escaping gases ripped apart a comet and caused it to become thousands of times brighter",
+   "url": "https://www.space.com/astronomy/comets/how-escaping-gases-ripped-apart-a-comet-and-caused-it-to-become-thousands-of-times-brighter",
+   "source": "space",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's next for SpaceX's Starship after epic Flight 15 chopsticks catch?",
+   "url": "https://www.space.com/space-exploration/launches-spacecraft/whats-next-for-spacexs-starship-after-epic-flight-15-chopsticks-catch",
+   "source": "space",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "This Week In Space podcast: Episode 236 — Alienspotting",
+   "url": "https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-236-alienspotting",
+   "source": "space",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "'Alien: Fireteam Elite 2' is a good old-fashioned bug hunt, ironically plagued by bugs",
+   "url": "https://www.space.com/entertainment/space-games/alien-fireteam-elite-2-is-a-good-old-fashioned-bug-hunt-ironically-plagued-by-bugs",
+   "source": "space",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why did Starship Flight 15 booster abort 'chopsticks' landing catch? SpaceX still investigating (video)",
+   "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-says-starship-flight-15-booster-aborted-chopsticks-landing-catch-after-launch-due-to-guidance-issue-video",
+   "source": "space",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On this day in space! Nov. 14, 1969: NASA's Apollo 12 astronauts launch to the moon on a 'pinpoint landing' lunar mission",
+   "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-14-2026",
+   "source": "space",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "'Now everything changes': SpaceX catches Starship upper stage for 1st time ever (video)",
+   "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-chopsticks-catch-starship-upper-stage-flight-14",
+   "source": "space",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "See Jupiter and Mars make a spectacular close approach overnight Nov. 15-16",
+   "url": "https://www.space.com/stargazing/see-jupiter-and-mars-make-a-spectacular-close-approach-overnight-nov-15-16",
+   "source": "space",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SpaceX launches Starship on ambitious 22-hour Flight 15 test, but aborts booster 'chopsticks' catch (video)",
+   "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-chopsticks-double-catch-super-heavy-ship",
+   "source": "space",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On this day in space! Nov. 13, 1971: NASA's Mariner 9 becomes 1st spacecraft to orbit Mars, revealing close looks at the Martian surface",
+   "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-13-2026",
+   "source": "space",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "60 years ago the Leonid meteor shower produced 144,000 meteors per hour. Could it happen again?",
+   "url": "https://www.space.com/stargazing/meteor-showers/60-years-ago-the-leonid-meteor-shower-produced-144-000-meteors-per-hour-could-it-happen-again",
+   "source": "space",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "'Arrival' at 10: Denis Villeneuve's alien visitation classic that reminded us it's good to talk",
+   "url": "https://www.space.com/entertainment/space-movies-shows/arrival-at-10-the-denis-villeneuve-alien-visitation-classic-that-reminded-us-its-good-to-talk",
+   "source": "space",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Lessons learned from running a popular Discord server",
    "url": "https://speakofthedevrel.cloud/2025/04/15/lessons-learned-from-running-a-popular-discord-server/",
    "source": "speakofthedevrel",
@@ -142713,6 +143648,70 @@
    "url": "https://www.thecodedself.com/Using-Multiple-Author-Identities-With-Git/",
    "source": "thecodedself",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "13 Ways to Learn Programming Online in 2026",
+   "url": "https://www.thecrazyprogrammer.com/2026/03/ways-to-learn-programming-online.html",
+   "source": "thecrazyprogrammer",
+   "rank": 1,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "8 Best Keyboards for Programming in India 2026",
+   "url": "https://www.thecrazyprogrammer.com/2026/01/best-keyboards-for-programming-in-india.html",
+   "source": "thecrazyprogrammer",
+   "rank": 2,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7 Best Online Compilers 2026 – C, C++, Java, Python",
+   "url": "https://www.thecrazyprogrammer.com/2026/01/best-online-compilers.html",
+   "source": "thecrazyprogrammer",
+   "rank": 3,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10 Best Laptops for Coding and Programming in India 2026",
+   "url": "https://www.thecrazyprogrammer.com/2026/01/best-laptop-for-programming.html",
+   "source": "thecrazyprogrammer",
+   "rank": 4,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Top 10 Soft Skills for Software Developers in 2026",
+   "url": "https://www.thecrazyprogrammer.com/2026/01/soft-skills-for-software-developers.html",
+   "source": "thecrazyprogrammer",
+   "rank": 5,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "8 Best Mouse for Programming in India 2026",
+   "url": "https://www.thecrazyprogrammer.com/2026/01/best-mouse-for-programming.html",
+   "source": "thecrazyprogrammer",
+   "rank": 6,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "9 Best Codecademy Alternatives 2026",
+   "url": "https://www.thecrazyprogrammer.com/2026/01/codecademy-alternatives.html",
+   "source": "thecrazyprogrammer",
+   "rank": 7,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "6 Best Monitors for Programming in India 2026",
+   "url": "https://www.thecrazyprogrammer.com/2026/01/monitors-for-programming.html",
+   "source": "thecrazyprogrammer",
+   "rank": 8,
    "score": 1,
    "metric": "feed rank"
   },
@@ -150053,6 +151052,46 @@
    "metric": "feed rank"
   },
   {
+   "title": "How to Group Your Sidebar Items for Better Findability",
+   "url": "https://uxmovement.com/navigation/how-to-group-your-sidebar-items-for-better-findability/",
+   "source": "uxmovement",
+   "rank": 1,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Make Any Sidebar Menu Easier to Scan",
+   "url": "https://uxmovement.com/navigation/how-to-make-any-sidebar-menu-easier-to-scan/",
+   "source": "uxmovement",
+   "rank": 2,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Optimal Design for Sidebar Indicators",
+   "url": "https://uxmovement.com/navigation/the-optimal-design-for-sidebar-indicators/",
+   "source": "uxmovement",
+   "rank": 3,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Design a Sidebar That Saves Screen Space",
+   "url": "https://uxmovement.com/navigation/how-to-design-a-sidebar-that-saves-screen-space/",
+   "source": "uxmovement",
+   "rank": 4,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Handle Large-Scale Item Groups in a Sidebar",
+   "url": "https://uxmovement.com/navigation/how-to-handle-large-scale-item-groups-in-a-sidebar/",
+   "source": "uxmovement",
+   "rank": 5,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "curry: a modern Emacs mode for Haskell",
    "url": "https://lambdafoo.com/posts/2026-11-15-curry-mode.html",
    "source": "v2ocaml",
@@ -154597,6 +155636,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "It’s Getting Too Dry for Even Cactuses to Survive",
+   "url": "https://www.wired.com/story/droughts-are-getting-too-extreme-even-for-cactuses/",
+   "source": "wired",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Species of Giant Fungus Discovered in China Grows up to 20 Inches Tall",
+   "url": "https://www.wired.com/story/new-species-of-giant-fungus-discovered-in-china-grows-up-to-20-inches-tall/",
+   "source": "wired",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Floods Force Gaza to Choose Between Clean Water and Pumping Out Sewage",
+   "url": "https://www.wired.com/story/gaza-floods-are-forcing-a-choice-between-pumping-out-sewage-and-pumping-in-water/",
+   "source": "wired",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "These ‘Ghostly’ Galaxies Have Lost Their Dark Matter",
+   "url": "https://www.wired.com/story/these-ghostly-galaxies-have-lost-their-dark-matter/",
+   "source": "wired",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Hubble Space Telescope Is Sinking. NASA Is Looking for Ways to Keep It Afloat",
+   "url": "https://www.wired.com/story/nasa-wants-to-keep-the-hubble-space-telescope-afloat/",
+   "source": "wired",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Climate Change Has Pushed the World's Ice Out of Its Safe Zone",
+   "url": "https://www.wired.com/story/climate-change-abolishes-ice/",
+   "source": "wired",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Synchron Pauses Trials of Its Brain Implant Due to Performance Issues",
+   "url": "https://www.wired.com/story/synchron-pauses-trials-of-its-brain-implant-due-to-performance-issues/",
+   "source": "wired",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Polar Vortex Is About to Make Weather Weird From the UK to the US",
+   "url": "https://www.wired.com/story/the-polar-vortex-is-about-to-make-weather-weird-from-the-uk-to-the-us/",
+   "source": "wired",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Startup Wants to Fight AI Bioweapons With AI",
+   "url": "https://www.wired.com/story/startup-fights-ai-bioweapons-with-ai/",
+   "source": "wired",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Michigan Residents Voted to Get Corporate Money Out of Politics. Now Utilities Are Suing",
+   "url": "https://www.wired.com/story/michigan-voters-want-utility-money-out-of-politics-lawsuit/",
+   "source": "wired",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A New Benchmark for De-Aging Comes From Slowly Turning Back Cells’ Clocks",
+   "url": "https://www.wired.com/story/a-new-benchmark-for-de-aging-comes-from-slowly-turning-back-cells-clocks/",
+   "source": "wired",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Here’s What We Know About the X-70 Fractal, NASA’s Experimental New Plane",
+   "url": "https://www.wired.com/story/heres-what-we-know-about-the-x-70-fractal-nasas-experimental-new-plane/",
+   "source": "wired",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scientists May Have Discovered a Massive Starless Galaxy",
+   "url": "https://www.wired.com/story/scientists-discover-massive-starless-galaxy/",
+   "source": "wired",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "These Robotic Arms Are Powered by Algae. Watch How They Move",
+   "url": "https://www.wired.com/story/these-robotic-arms-are-made-of-algae-watch-how-they-move/",
+   "source": "wired",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A 55-Year-Old Math Problem Was Solved—This Time by Humans",
+   "url": "https://www.wired.com/story/a-55-year-old-math-problem-was-solved-this-time-by-humans/",
+   "source": "wired",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "How Smalltalk Became a AI Language",
    "url": "https://wirfs-brock.com/allen/posts/1179",
    "source": "wirfsbrock",
@@ -154872,6 +156031,126 @@
    "title": "Wolvic Chromium 1.1 Released",
    "url": "https://wolvic.com/blog/chromium_release_1.1/",
    "source": "wolvic",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Water, Lemon Juice, Vinegar, or Nothing: Should You Even Bother Rinsing Chicken?",
+   "url": "https://food-hacks.wonderhowto.com/how-to/water-lemon-juice-vinegar-nothing-should-you-even-bother-rinsing-chicken-0157578/",
+   "source": "wonderhowto",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Roll Sushi — The Ultimate Guide",
+   "url": "https://food-hacks.wonderhowto.com/how-to/roll-sushi-the-ultimate-guide-0164682/",
+   "source": "wonderhowto",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Tell if Your 'Expired' Eggs Are Still Good to Eat",
+   "url": "https://food-hacks.wonderhowto.com/how-to/tell-if-your-expired-eggs-are-still-good-eat-0154309/",
+   "source": "wonderhowto",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Make Slime Without Borax: 5 Easy Recipes for Gooey Homemade Ooze",
+   "url": "https://science.wonderhowto.com/how-to/make-slime-without-borax-5-easy-recipes-for-gooey-homemade-ooze-0147194/",
+   "source": "wonderhowto",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Change Your Sleeping Position to Control the Type of Dreams You Have",
+   "url": "https://mind-hacks.wonderhowto.com/how-to/change-your-sleeping-position-control-type-dreams-you-have-0155353/",
+   "source": "wonderhowto",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Perform the Clock Card Trick",
+   "url": "https://card-tricks.wonderhowto.com/how-to/perform-clock-card-trick-332754/",
+   "source": "wonderhowto",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Play 'I'm Yours' by Jason Mraz on Baritone Ukulele",
+   "url": "https://ukulele-lessons.wonderhowto.com/how-to/play-im-yours-by-jason-mraz-baritone-ukulele-408699/",
+   "source": "wonderhowto",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lasagna Soup, Plus Other Yummy Ways to Use Lasagna Noodles",
+   "url": "https://food-hacks.wonderhowto.com/how-to/lasagna-soup-plus-other-yummy-ways-use-lasagna-noodles-0159648/",
+   "source": "wonderhowto",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Break into Locks with Beer Can Shims, Bump Keys & Just Plain Brute Force",
+   "url": "https://lock-picking.wonderhowto.com/how-to/break-into-locks-with-beer-can-shims-bump-keys-just-plain-brute-force-0125726/",
+   "source": "wonderhowto",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "11 Clever Candy Wrapper Crafts You Can Do After Binging on Halloween Chocolate",
+   "url": "https://halloween-ideas.wonderhowto.com/how-to/11-clever-candy-wrapper-crafts-you-can-do-after-binging-halloween-chocolate-0149243/",
+   "source": "wonderhowto",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "After Halloween Guide: How to Remove Makeup, Face Paint, Fake Blood & Body Glue from Skin & Clothing",
+   "url": "https://halloween-ideas.wonderhowto.com/how-to/after-halloween-guide-remove-makeup-face-paint-fake-blood-body-glue-from-skin-clothing-0148858/",
+   "source": "wonderhowto",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "More Links Between Gut Health & Autism as 'Probiotic' Transplant Trials Show Some Success",
+   "url": "https://invisiverse.wonderhowto.com/news/more-links-between-gut-health-autism-as-probiotic-transplant-trials-show-some-success-0176021/",
+   "source": "wonderhowto",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Best 2015 April Fool's Day Pranks from Around the Web",
+   "url": "https://practical-jokes.wonderhowto.com/news/best-2015-april-fools-day-pranks-from-around-web-0161150/",
+   "source": "wonderhowto",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The End of the World Survival Guide: Staying Alive During an Alien Invasion",
+   "url": "https://survivial-training.wonderhowto.com/how-to/end-world-survival-guide-staying-alive-during-alien-invasion-0140763/",
+   "source": "wonderhowto",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Urine Splashing: How to Prank Your Friend's Toilet with Saran Wrap",
+   "url": "https://practical-jokes.wonderhowto.com/how-to/urine-splashing-prank-your-friends-toilet-with-saran-wrap-5603/",
+   "source": "wonderhowto",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -155793,6 +157072,38 @@
    "url": "https://www.xiaohui.com/weekly/another-life.htm",
    "source": "xiaohui",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ultimate Movie Series",
+   "url": "https://xkcd.com/3324/",
+   "source": "xkcd",
+   "rank": 1,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Meteor Fear",
+   "url": "https://xkcd.com/3323/",
+   "source": "xkcd",
+   "rank": 2,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dragonfly",
+   "url": "https://xkcd.com/3322/",
+   "source": "xkcd",
+   "rank": 3,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simulation",
+   "url": "https://xkcd.com/3321/",
+   "source": "xkcd",
+   "rank": 4,
    "score": 1,
    "metric": "feed rank"
   },
@@ -157128,6 +158439,206 @@
    "title": "How to Name Your Startup",
    "url": "https://zackkanter.com/2013/01/06/how-to-name-your-startup/",
    "source": "zackkanter",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stop Sending Tall PR Stacks",
+   "url": "https://www.zacsweers.dev/stop-sending-tall-pr-stacks/",
+   "source": "zacsweers",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Take an 11 Month Sabbatical",
+   "url": "https://www.zacsweers.dev/how-to-take-an-11-month-sabbatical/",
+   "source": "zacsweers",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Kempt",
+   "url": "https://www.zacsweers.dev/introducing-kempt/",
+   "source": "zacsweers",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "🚇 Metro is Stable",
+   "url": "https://www.zacsweers.dev/metro-is-stable/",
+   "source": "zacsweers",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I have two passing tests",
+   "url": "https://www.zacsweers.dev/i-have-two-passing-tests/",
+   "source": "zacsweers",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Two Pillars of (Engineering) Management",
+   "url": "https://www.zacsweers.dev/two-pillars-of-engineering-management/",
+   "source": "zacsweers",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Metro 0.11.0 and MEEPs!",
+   "url": "https://www.zacsweers.dev/metro-0-11-0-and-meeps/",
+   "source": "zacsweers",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Re: Dependency Injection vs. Service Locators",
+   "url": "https://www.zacsweers.dev/re-dependency-injection-vs-service-locators/",
+   "source": "zacsweers",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Where are all the staff+ Android product engineers?",
+   "url": "https://www.zacsweers.dev/where-are-the-staf-android-product-engineers/",
+   "source": "zacsweers",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sponsoring Metro",
+   "url": "https://www.zacsweers.dev/sponsoring-metro/",
+   "source": "zacsweers",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Metro's Design Doc",
+   "url": "https://www.zacsweers.dev/metros-design-doc/",
+   "source": "zacsweers",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Forklifts Require Training",
+   "url": "https://www.zacsweers.dev/forklifts-require-training/",
+   "source": "zacsweers",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don't use Type-safe Project Accessors with Kotlin Gradle DSL",
+   "url": "https://www.zacsweers.dev/dont-use-type-safe-project-accessors-with-kotlin-gradle-dsl/",
+   "source": "zacsweers",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Metro",
+   "url": "https://www.zacsweers.dev/introducing-metro/",
+   "source": "zacsweers",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "One Last View of Mom",
+   "url": "https://www.zacsweers.dev/one-last-view-of-mom/",
+   "source": "zacsweers",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lint Me: Test Sources 🖇️",
+   "url": "https://zarah.dev/2025/12/02/lint-tests.html",
+   "source": "zarah",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lint Revisit: Providing Alternatives 🧙‍♀️",
+   "url": "https://zarah.dev/2024/07/24/lintfix-alternatives.html",
+   "source": "zarah",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lint Revisit: TODO Detector v2",
+   "url": "https://zarah.dev/2024/07/22/todo-detector-v2.html",
+   "source": "zarah",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I Dub Thee… Marginally better at RegEx",
+   "url": "https://zarah.dev/2024/07/21/regex-groups.html",
+   "source": "zarah",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Extended ADB: En Vogue 💃",
+   "url": "https://zarah.dev/2024/02/02/adb-model.html",
+   "source": "zarah",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Extending an Interactive ADB 🔀",
+   "url": "https://zarah.dev/2023/09/21/adb-devices.html",
+   "source": "zarah",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making ADB a little bit dynamic 📱",
+   "url": "https://zarah.dev/2023/08/30/adb-deeplinks.html",
+   "source": "zarah",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bundling Things Nice and Pretty 💝",
+   "url": "https://zarah.dev/2023/08/21/bundle-parcel.html",
+   "source": "zarah",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Multi-module Lint Rules Follow Up: Suppressions ☠️",
+   "url": "https://zarah.dev/2022/02/15/deprecated-suppress.html",
+   "source": "zarah",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Debugging App Links in Android 12 🔗",
+   "url": "https://zarah.dev/2022/02/08/android12-deeplinks.html",
+   "source": "zarah",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"

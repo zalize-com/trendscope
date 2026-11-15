@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T20:19:08.198071+00:00",
+ "generated_at": "2026-11-15T20:23:11.635930+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 1878,
+ "total": 1897,
  "domains": [
   {
    "hostname": "blog.google",
@@ -87,11 +87,14 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 2,
-   "items": 79,
+   "items": 124,
    "sources": [
     "hackernews",
     "k8s",
+    "rcoding",
+    "rdatascience",
     "reddit",
+    "rgolang",
     "rprogramming",
     "rpython",
     "rwebdev"
@@ -229,6 +232,23 @@
     "score": 15,
     "metric": "arxiv recent",
     "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "wired.com",
+   "days_on_board": 2,
+   "items": 17,
+   "sources": [
+    "daringfireball",
+    "hackernews",
+    "wired"
+   ],
+   "top_hit": {
+    "title": "Nvidia employees petition to bring back Jensen Huang",
+    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+    "score": 811,
+    "metric": "points",
+    "date": "2026-11-13"
    }
   },
   {
@@ -743,22 +763,6 @@
     "score": 995,
     "metric": "points",
     "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "wired.com",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "daringfireball",
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Nvidia employees petition to bring back Jensen Huang",
-    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
-    "score": 811,
-    "metric": "points",
-    "date": "2026-11-13"
    }
   },
   {
