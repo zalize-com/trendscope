@@ -86715,7 +86715,7 @@ def fetch_yahooeng(limit=15):
         title = t.text.strip() if t is not None and t.text else ""
         link = (l.text if l is not None and l.text else (l.get("href") if l is not None else "")) or ""
         if title:
-            items.append(make_item("yahooeng", title, link.strip() or "https://yahooeng.tumblr.com/", 0, "posts"))
+            items.append(item("yahooeng", title, link.strip() or "https://yahooeng.tumblr.com/", 0, "posts"))
     return items
 
 
@@ -86746,7 +86746,7 @@ def fetch_youtubeblog(limit=15):
         title = t.text.strip() if t is not None and t.text else ""
         link = (l.text if l is not None and l.text else (l.get("href") if l is not None else "")) or ""
         if title:
-            items.append(make_item("youtubeblog", title, link.strip() or "https://blog.youtube/", 0, "posts"))
+            items.append(item("youtubeblog", title, link.strip() or "https://blog.youtube/", 0, "posts"))
     return items
 
 def fetch_slashdot(limit=15):
