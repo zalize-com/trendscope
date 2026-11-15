@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-11-15T18:58:18.372019+00:00",
+ "generated_at": "2026-11-15T19:01:47.712769+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 15470,
- "new_items": 15343,
+ "total_items": 15722,
+ "new_items": 15595,
  "by_source": {
   "show_hn": 49,
   "producthunt": 45,
   "hackernews": 33,
   "theregister": 29,
-  "techmeme": 23,
+  "techmeme": 24,
   "slashdot": 21,
   "daringfireball": 17,
   "thenewstack": 17,
@@ -25,18 +25,24 @@
   "30secondsofcode": 15,
   "512pixels": 15,
   "9to5mac": 15,
+  "a11yproject": 15,
   "a11ywinstumblr": 15,
+  "a11ywithlindsey": 15,
+  "aarongustafson": 15,
   "aaronpowell": 15,
   "aaronsw": 15,
   "aartaka": 15,
+  "abeautifulsite": 15,
   "adais": 15,
   "adamlynch": 15,
   "adamsilver": 15,
   "addyosubstack": 15,
   "aframe": 15,
+  "agwa": 15,
   "aieworkssubstack": 15,
   "aihero": 15,
   "aiweirdness": 15,
+  "aleksandrhovhannisyan": 15,
   "alex": 15,
   "alexanderell": 15,
   "alexkras": 15,
@@ -51,8 +57,10 @@
   "amontalenti": 15,
   "andersmurphy": 15,
   "andrealeopardi": 15,
+  "andreaverlicchi": 15,
   "andrewkelley": 15,
   "andrewtimberlake": 15,
+  "andrewwalpole": 15,
   "andymalehblogspot": 15,
   "anhvn": 15,
   "antirez": 15,
@@ -73,6 +81,7 @@
   "backendtea": 15,
   "backstage": 15,
   "bandarra": 15,
+  "barretlee": 15,
   "basicappleguy": 15,
   "batkosubstack": 15,
   "begriffs": 15,
@@ -83,6 +92,7 @@
   "benmccormick": 15,
   "benmorris": 15,
   "benmyers": 15,
+  "bennadel": 15,
   "bertrand": 15,
   "betterdev": 15,
   "billwang1990github": 15,
@@ -141,6 +151,7 @@
   "blogzgp": 15,
   "blogzoomquiet": 15,
   "blueskyweb": 15,
+  "bmpi": 15,
   "bobmonsour": 15,
   "boonepetergithub": 15,
   "borisschapira": 15,
@@ -721,6 +732,8 @@
   "a11ymatters": 10,
   "aaronstuyvenberg": 10,
   "aarontgrogg": 10,
+  "abilitynetorg": 10,
+  "accessibilityorg": 10,
   "accessibledreamshome": 10,
   "adactio": 10,
   "adamwathan": 10,
@@ -731,21 +744,26 @@
   "ahrefs": 10,
   "aimeemarieknight": 10,
   "airbnb": 10,
+  "ajsaucier": 10,
   "alastairc": 10,
   "alexlakatos": 10,
   "allthingsdistributed": 10,
   "americanexpress": 10,
+  "amitmerchant": 10,
   "amphtmlwordpress": 10,
   "anderegg": 10,
   "andybromberg": 10,
   "annevankesteren": 10,
   "arialdomartinigithub": 10,
+  "artificiallawyer": 10,
   "artsygithub": 10,
   "askwinston": 10,
   "austingil": 10,
   "auth0": 10,
   "automattic": 10,
+  "aymenloukil": 10,
   "bairberkeley": 10,
+  "baldurbjarnason": 10,
   "baymard": 10,
   "beabetterdev": 10,
   "becominghuman": 10,
@@ -1128,6 +1146,7 @@
   "zackkanter": 10,
   "zeichenschatz": 10,
   "zopatista": 10,
+  "bejarano": 9,
   "bitbashing": 9,
   "codesgo": 9,
   "ferjmgithub": 9,
@@ -1154,6 +1173,7 @@
   "slack_eng": 8,
   "socialclawhammer": 8,
   "tom": 8,
+  "alexrpco": 7,
   "forweb": 7,
   "gomakethings": 7,
   "jgw96github": 7,
@@ -2279,6 +2299,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Accessibility is 'blind people'",
+   "url": "https://a11yproject.com/posts/accessibility-is-blind-people/",
+   "source": "a11yproject",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Navigate using just your keyboard",
+   "url": "https://a11yproject.com/posts/navigate-using-just-your-keyboard/",
+   "source": "a11yproject",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using alt text properly",
+   "url": "https://a11yproject.com/posts/alt-text/",
+   "source": "a11yproject",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ARIA Landmark roles and HTML5 implicit mapping",
+   "url": "https://a11yproject.com/posts/aria-landmark-roles/",
+   "source": "a11yproject",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting started with macOS VoiceOver",
+   "url": "https://a11yproject.com/posts/getting-started-with-voiceover/",
+   "source": "a11yproject",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Never use <code>maximum-scale='1.0'</code>",
+   "url": "https://a11yproject.com/posts/never-use-maximum-scale/",
+   "source": "a11yproject",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don't auto-play video, music and more",
+   "url": "https://a11yproject.com/posts/never-use-auto-play/",
+   "source": "a11yproject",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Check contrast with your mobile device",
+   "url": "https://a11yproject.com/posts/check-contrast-with-mobile-device/",
+   "source": "a11yproject",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Future-proofing your accessibility efforts",
+   "url": "https://a11yproject.com/posts/future-proof-your-accessibility/",
+   "source": "a11yproject",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A primer to visual impairment",
+   "url": "https://a11yproject.com/posts/understanding-visual-impairment/",
+   "source": "a11yproject",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Check comprehension level",
+   "url": "https://a11yproject.com/posts/check-comprehension-level/",
+   "source": "a11yproject",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Never remove CSS outlines",
+   "url": "https://a11yproject.com/posts/never-remove-css-outlines/",
+   "source": "a11yproject",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Use <code>role='application'</code>",
+   "url": "https://a11yproject.com/posts/how-to-use-application-role/",
+   "source": "a11yproject",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hide content",
+   "url": "https://a11yproject.com/posts/how-to-hide-content/",
+   "source": "a11yproject",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "People who use screen readers don't use JavaScript",
+   "url": "https://a11yproject.com/posts/people-who-use-screen-readers-dont-use-javascript/",
+   "source": "a11yproject",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "A11y Project Redesign",
    "url": "https://a11ywins.tumblr.com/post/629349629781327872",
    "source": "a11ywinstumblr",
@@ -2394,6 +2534,246 @@
    "title": "Dragon drop: accessible reordering library",
    "url": "https://a11ywins.tumblr.com/post/166008481313",
    "source": "a11ywinstumblr",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "'Knowing what you're looking at' - JS tips for new React developers",
+   "url": "https://www.a11ywithlindsey.com/blog/javascript-tricks-tips",
+   "source": "a11ywithlindsey",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Guide to Accessible Interactive Components using React Libraries",
+   "url": "https://www.a11ywithlindsey.com/blog/accessible-interactive-components-react",
+   "source": "a11ywithlindsey",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating an Accessible Range Slider with CSS",
+   "url": "https://www.a11ywithlindsey.com/blog/creating-accessible-range-slider-css",
+   "source": "a11ywithlindsey",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Accessibility Taught me to be Better at JavaScript - Part Two",
+   "url": "https://www.a11ywithlindsey.com/blog/how-accessibility-taught-better-javascript-part-two",
+   "source": "a11ywithlindsey",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10 ways to help Accessibility at Conferences as a speaker",
+   "url": "https://www.a11ywithlindsey.com/blog/accessibility-conferences",
+   "source": "a11ywithlindsey",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility in d3 Donut Charts",
+   "url": "https://www.a11ywithlindsey.com/blog/accessibility-d3-donut-charts",
+   "source": "a11ywithlindsey",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Accessibility Taught me to be Better at JavaScript - Part One",
+   "url": "https://www.a11ywithlindsey.com/blog/how-accessibility-taught-better-javascript-part-one",
+   "source": "a11ywithlindsey",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reflections on Year One of Blogging",
+   "url": "https://www.a11ywithlindsey.com/blog/reflections-year-one-blogging",
+   "source": "a11ywithlindsey",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reducing Motion to Improve Accessibility",
+   "url": "https://www.a11ywithlindsey.com/blog/reducing-motion-improve-accessibility",
+   "source": "a11ywithlindsey",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Create custom keyboard accessible radio buttons",
+   "url": "https://www.a11ywithlindsey.com/blog/create-custom-keyboard-accessible-radio-buttons",
+   "source": "a11ywithlindsey",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A11y Lessons I Learned when Starting a Podcast",
+   "url": "https://www.a11ywithlindsey.com/blog/a11y-lessons-learned-starting-podcast",
+   "source": "a11ywithlindsey",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An Introduction to Accessible Labeling",
+   "url": "https://www.a11ywithlindsey.com/blog/introduction-accessible-labeling",
+   "source": "a11ywithlindsey",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An Introduction to ARIA States",
+   "url": "https://www.a11ywithlindsey.com/blog/introduction-aria-states",
+   "source": "a11ywithlindsey",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Blogging Editing Process",
+   "url": "https://www.a11ywithlindsey.com/blog/blogging-editing-process",
+   "source": "a11ywithlindsey",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JavaScript and Accessibility: Accordions",
+   "url": "https://www.a11ywithlindsey.com/blog/javascript-accessibility-accordions",
+   "source": "a11ywithlindsey",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build faster without leaving accessibility behind",
+   "url": "https://www.aaron-gustafson.com/notebook/build-faster-without-leaving-accessibility-behind/",
+   "source": "aarongustafson",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "System Colors Need to Work Together",
+   "url": "https://www.aaron-gustafson.com/notebook/system-colors-need-to-work-together/",
+   "source": "aarongustafson",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Theme Switching Made Easy",
+   "url": "https://www.aaron-gustafson.com/notebook/theme-switching-made-easy/",
+   "source": "aarongustafson",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "There Can Be Only One, Redux",
+   "url": "https://www.aaron-gustafson.com/notebook/there-can-be-only-one-redux/",
+   "source": "aarongustafson",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prompt and Circumstance",
+   "url": "https://www.aaron-gustafson.com/notebook/prompt-and-circumstance/",
+   "source": "aarongustafson",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility Assistant for Figma v53: From Design Decisions to Handoff",
+   "url": "https://www.aaron-gustafson.com/notebook/accessibility-assistant-for-figma-v53/",
+   "source": "aarongustafson",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I’ve Changed My Mind About CSS Variables",
+   "url": "https://www.aaron-gustafson.com/notebook/i-changed-my-mind-about-css-variables/",
+   "source": "aarongustafson",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sortable Tables with Progressive Enhancement",
+   "url": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+   "source": "aarongustafson",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WebMCP Should Prioritize People over Agents",
+   "url": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+   "source": "aarongustafson",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tabbed Interface: The Web Component",
+   "url": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+   "source": "aarongustafson",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can Your AI Pass the Accessibility Test?",
+   "url": "https://www.aaron-gustafson.com/notebook/can-your-ai-pass-the-accessibility-test/",
+   "source": "aarongustafson",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fixing Accessibility After the Fact Is Too Late",
+   "url": "https://www.aaron-gustafson.com/notebook/fixing-accessibility-after-the-fact-is-too-late/",
+   "source": "aarongustafson",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Easy Data-entry Verification with a Web Component",
+   "url": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+   "source": "aarongustafson",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visual Validation Feedback for Form Fields",
+   "url": "https://www.aaron-gustafson.com/notebook/visual-validation-feedback-for-form-fields/",
+   "source": "aarongustafson",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Never Lose Form Progress Again",
+   "url": "https://www.aaron-gustafson.com/notebook/never-lose-form-progress-again/",
+   "source": "aarongustafson",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -2919,6 +3299,206 @@
    "metric": "feed rank"
   },
   {
+   "title": "Revisiting Buttons and Cursors",
+   "url": "https://www.abeautifulsite.net/posts/revisiting-buttons-and-cursors/",
+   "source": "abeautifulsite",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Copying a File Path in Finder",
+   "url": "https://www.abeautifulsite.net/posts/copying-a-file-path-in-finder/",
+   "source": "abeautifulsite",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Named Breakpoints Without Sass",
+   "url": "https://www.abeautifulsite.net/posts/named-breakpoints-without-sass/",
+   "source": "abeautifulsite",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I'd Rather Review Specs",
+   "url": "https://www.abeautifulsite.net/posts/id-rather-review-specs/",
+   "source": "abeautifulsite",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Most Software Was Already Slop",
+   "url": "https://www.abeautifulsite.net/posts/most-software-was-already-slop/",
+   "source": "abeautifulsite",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "FOUCE Should Be the Browser's Problem",
+   "url": "https://www.abeautifulsite.net/posts/fouce-should-be-the-browsers-problem/",
+   "source": "abeautifulsite",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Contextual Styling With CSS Nesting",
+   "url": "https://www.abeautifulsite.net/posts/contextual-styling-with-css-nesting/",
+   "source": "abeautifulsite",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I'm pulling ColorCopy from the macOS App Store",
+   "url": "https://www.abeautifulsite.net/posts/im-pulling-colorcopy-from-the-macos-app-store/",
+   "source": "abeautifulsite",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Software Has Changed",
+   "url": "https://www.abeautifulsite.net/posts/software-has-changed/",
+   "source": "abeautifulsite",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I Mostly Stopped Typing",
+   "url": "https://www.abeautifulsite.net/posts/i-mostly-stopped-typing/",
+   "source": "abeautifulsite",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing ColorCopy",
+   "url": "https://www.abeautifulsite.net/posts/introducing-colorcopy/",
+   "source": "abeautifulsite",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing TongueType",
+   "url": "https://www.abeautifulsite.net/posts/introducing-tonguetype/",
+   "source": "abeautifulsite",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Stance on AI in Software Development",
+   "url": "https://www.abeautifulsite.net/posts/my-stance-on-ai-in-software-development/",
+   "source": "abeautifulsite",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I Use GitHub Issues",
+   "url": "https://www.abeautifulsite.net/posts/how-i-use-git-hub-issues/",
+   "source": "abeautifulsite",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Revisiting FOUCE",
+   "url": "https://www.abeautifulsite.net/posts/revisiting-fouce/",
+   "source": "abeautifulsite",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Charities and broadband providers unite for affordable connectivity",
+   "url": "https://abilitynet.org.uk/news-blogs/charities-and-broadband-providers-unite-affordable-connectivity",
+   "source": "abilitynetorg",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How should accessibility testing change in the age of AI?",
+   "url": "https://abilitynet.org.uk/news-blogs/how-should-accessibility-testing-change-age-ai",
+   "source": "abilitynetorg",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Remembering David Livermore OBE, President of AbilityNet",
+   "url": "https://abilitynet.org.uk/news-blogs/remembering-david-livermore-obe-president-abilitynet",
+   "source": "abilitynetorg",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AbilityNet Live! Free events about technology and disability",
+   "url": "https://abilitynet.org.uk/news-blogs/abilitynet-live-free-events-about-technology-and-disability",
+   "source": "abilitynetorg",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AbilityNet Tech volunteers celebrated with Long Service Awards",
+   "url": "https://abilitynet.org.uk/news-blogs/abilitynet-tech-volunteers-celebrated-long-service-awards",
+   "source": "abilitynetorg",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How accessibility is shaping the future of technology: 10 years of TechShare Pro",
+   "url": "https://abilitynet.org.uk/news-blogs/how-accessibility-shaping-future-technology-10-years-techshare-pro",
+   "source": "abilitynetorg",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Should every AI agent understand accessibility?",
+   "url": "https://abilitynet.org.uk/news-blogs/should-every-ai-agent-understand-accessibility",
+   "source": "abilitynetorg",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to reduce cognitive load for neurodivergent users in digital services",
+   "url": "https://abilitynet.org.uk/news-blogs/how-reduce-cognitive-load-neurodivergent-users-digital-services",
+   "source": "abilitynetorg",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your next customer may be an AI agent. Is your organisation ready?",
+   "url": "https://abilitynet.org.uk/news-blogs/your-next-customer-may-be-ai-agent-your-organisation-ready",
+   "source": "abilitynetorg",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TechShare Pro at 10: How digital accessibility drives the next wave of technology innovation",
+   "url": "https://abilitynet.org.uk/news-blogs/techshare-pro-10-how-digital-accessibility-drives-next-wave-technology-innovation",
+   "source": "abilitynetorg",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "My grandfather was a Nazi, too",
    "url": "https://accessabilly.com/my-grandfather-was-a-nazi-too/",
    "source": "accessabilly",
@@ -2995,6 +3575,86 @@
    "url": "https://accessibility.blog.gov.uk/2025/04/04/top-tips-for-hosting-accessible-and-inclusive-online-events/",
    "source": "accessibilitybloggov",
    "rank": 5,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Australian Access Awards Returning in 2027",
+   "url": "https://www.accessibility.org.au/australian-access-awards-returning-in-2027/",
+   "source": "accessibilityorg",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Blackboard Ally Makes it Easier to Add Alt Text to PDFs",
+   "url": "https://www.accessibility.org.au/blackboard-ally-introduces-new-tool-to-improve-pdf-accessibility/",
+   "source": "accessibilityorg",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ZoomText Update Makes It Easier for People with Low Vision to Explore Photos",
+   "url": "https://www.accessibility.org.au/zoomtext-update-makes-it-easier-for-people-with-low-vision-to-explore-photos/",
+   "source": "accessibilityorg",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JAWS Update Makes Music Creation More Accessible for Blind Musicians",
+   "url": "https://www.accessibility.org.au/jaws-update-makes-music-creation-more-accessible-for-blind-musicians/",
+   "source": "accessibilityorg",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google Meet Makes Sign Language Interpreters Easier to See on Mobile",
+   "url": "https://www.accessibility.org.au/google-meet-makes-sign-language-interpreters-easier-to-see-on-mobile/",
+   "source": "accessibilityorg",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "National Relay Service Expands Video Relay Calls to 24/7",
+   "url": "https://www.accessibility.org.au/national-relay-service-expands-video-relay-calls-to-24-7/",
+   "source": "accessibilityorg",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Six Major Gaming Companies Introduce Accessibility Tags to Help Players Find Suitable Games",
+   "url": "https://www.accessibility.org.au/six-major-gaming-companies-introduce-accessibility-tags-to-help-players-find-suitable-games/",
+   "source": "accessibilityorg",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NVDA Releases New Update with Screen Reader Improvements",
+   "url": "https://www.accessibility.org.au/nvda-releases-new-update-with-screen-reader-improvements/",
+   "source": "accessibilityorg",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CFA Australia to Host Free Digital Access Showcase for International Day of People with Disability",
+   "url": "https://www.accessibility.org.au/cfa-australia-to-host-free-digital-access-showcase-for-international-day-of-people-with-disability/",
+   "source": "accessibilityorg",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Paper2Audio Brings Text-to-Speech To Academic Documents",
+   "url": "https://www.accessibility.org.au/paper2audio-brings-text-to-speech-to-academic-documents/",
+   "source": "accessibilityorg",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -4231,6 +4891,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "sourcespotter-authorize: Monitor Your Go Modules for Malicious Versions, Without the Noise",
+   "url": "https://www.agwa.name/blog/post/monitoring_go_modules_without_noise",
+   "source": "agwa",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "macOS Can't Clone \"Dumb\" Git Repositories Over HTTP/2",
+   "url": "https://www.agwa.name/blog/post/macos_cant_clone_dumb_git_repos_over_http2",
+   "source": "agwa",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "FastCGI: 30 Years Old and Still the Better Protocol for Reverse Proxies",
+   "url": "https://www.agwa.name/blog/post/fastcgi_is_the_better_protocol_for_reverse_proxies",
+   "source": "agwa",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why IP Address Certificates Are Dangerous and Usually Unnecessary",
+   "url": "https://www.agwa.name/blog/post/ip_address_certs",
+   "source": "agwa",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Certificate Authorities Are Once Again Issuing Certificates That Don't Work",
+   "url": "https://www.agwa.name/blog/post/cas_are_issuing_broken_certificates_again",
+   "source": "agwa",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google Just Suspended My Company's Google Cloud Account for the Third Time",
+   "url": "https://www.agwa.name/blog/post/google_suspended_sslmates_cloud_account_again",
+   "source": "agwa",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I'm Independently Verifying Go's Reproducible Builds",
+   "url": "https://www.agwa.name/blog/post/verifying_go_reproducible_builds",
+   "source": "agwa",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SQLite's Durability Settings are a Mess",
+   "url": "https://www.agwa.name/blog/post/sqlite_durability",
+   "source": "agwa",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Story Behind Last Week's Let's Encrypt Downtime",
+   "url": "https://www.agwa.name/blog/post/last_weeks_lets_encrypt_downtime",
+   "source": "agwa",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Difference Between Root Certificate Authorities, Intermediates, and Resellers",
+   "url": "https://www.agwa.name/blog/post/roots_intermediates_and_resellers",
+   "source": "agwa",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The SSL Certificate Issuer Field is a Lie",
+   "url": "https://www.agwa.name/blog/post/the_certificate_issuer_field_is_a_lie",
+   "source": "agwa",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "whoarethey: Determine Who Can Log In to an SSH Server",
+   "url": "https://www.agwa.name/blog/post/whoarethey",
+   "source": "agwa",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "No, Google Did Not Hike the Price of a .dev Domain from $12 to $850",
+   "url": "https://www.agwa.name/blog/post/domain_pricing_is_very_confusing",
+   "source": "agwa",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Checking if a Certificate is Revoked: How Hard Can It Be?",
+   "url": "https://www.agwa.name/blog/post/checking_if_a_certificate_is_revoked_how_hard_can_it_be",
+   "source": "agwa",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Parsing a TLS Client Hello with Go's cryptobyte Package",
+   "url": "https://www.agwa.name/blog/post/parsing_tls_client_hello_with_cryptobyte",
+   "source": "agwa",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "The Full Stack of Terminals Explained: Terminal, Shell, TTY, Console, POSIX, ANSI Escapes, PTYs, Raw/Canonical Modes",
    "url": "https://ahmadawais.com/the-full-stack-of-terminals-explained-terminal-shell-tty-console-posix-ansi-escapes-ptys/",
    "source": "ahmadawais",
@@ -4911,6 +5691,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Focus on tracking focus",
+   "url": "https://ajsaucier.com/accessibility/2026/01/18/focus-on-tracking-focus.html",
+   "source": "ajsaucier",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Voice Control and CSS Psuedo-elements",
+   "url": "https://ajsaucier.com/accessibility/2020/12/14/voice-control-and-css-psuedo-elements.html",
+   "source": "ajsaucier",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lenovo Tab M8 FHD Review",
+   "url": "https://ajsaucier.com/blog/2020/11/28/lenovo-tab-m8-fhd-review.html",
+   "source": "ajsaucier",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Test What You Embed",
+   "url": "https://ajsaucier.com/accessibility/2020/10/21/test-what-you-embed.html",
+   "source": "ajsaucier",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Be Polite",
+   "url": "https://ajsaucier.com/accessibility/2020/05/16/being-polite.html",
+   "source": "ajsaucier",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Look Back on Brain Surgery",
+   "url": "https://ajsaucier.com/post/2019/02/07/a-look-back-on-brain-surgery.html",
+   "source": "ajsaucier",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Improving Required Field Notifications in Wordpress Plugin",
+   "url": "https://ajsaucier.com/accessibility/2018/12/30/improving-contact-form-7-notifications.html",
+   "source": "ajsaucier",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The End is Nigh Review",
+   "url": "https://ajsaucier.com/blog/2018/02/02/the-end-is-nigh-review.html",
+   "source": "ajsaucier",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In Defense of Video Games",
+   "url": "https://ajsaucier.com/blog/2017/07/15/in-defense-of-video-games.html",
+   "source": "ajsaucier",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Thought on Image Alt Tags",
+   "url": "https://ajsaucier.com/accessibility/2017/07/02/image-alt-tag-example.html",
+   "source": "ajsaucier",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Starting in Accessibility is like the Hype Cycle",
    "url": "https://alastairc.uk/blog/2026/10/new-accessibility-hype-cycle/",
    "source": "alastairc",
@@ -4987,6 +5847,126 @@
    "url": "https://alastairc.uk/blog/2025/03/csun-2025-conference-notes/",
    "source": "alastairc",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Use an Android Phone Camera in OBS",
+   "url": "https://www.aleksandrhovhannisyan.com/notes/android-camera-obs/",
+   "source": "aleksandrhovhannisyan",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2D Canvas Sorting",
+   "url": "https://www.aleksandrhovhannisyan.com/blog/2d-canvas-sorting/",
+   "source": "aleksandrhovhannisyan",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fully Local Code Embeds",
+   "url": "https://www.aleksandrhovhannisyan.com/blog/local-code-embeds/",
+   "source": "aleksandrhovhannisyan",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Colorception",
+   "url": "https://www.aleksandrhovhannisyan.com/blog/colorception/",
+   "source": "aleksandrhovhannisyan",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The AI Dilemma",
+   "url": "https://www.aleksandrhovhannisyan.com/blog/the-ai-dilemma/",
+   "source": "aleksandrhovhannisyan",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Let Me Opt In, Not Out",
+   "url": "https://www.aleksandrhovhannisyan.com/blog/let-me-opt-in-not-out/",
+   "source": "aleksandrhovhannisyan",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Split Audio Stems",
+   "url": "https://www.aleksandrhovhannisyan.com/notes/stem-separation/",
+   "source": "aleksandrhovhannisyan",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Remote Code Execution with LLM Agents",
+   "url": "https://www.aleksandrhovhannisyan.com/blog/rce-with-llm-agents/",
+   "source": "aleksandrhovhannisyan",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cache-Busting Assets in Eleventy",
+   "url": "https://www.aleksandrhovhannisyan.com/notes/cache-busting-assets-in-eleventy/",
+   "source": "aleksandrhovhannisyan",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In Memory of Em",
+   "url": "https://www.aleksandrhovhannisyan.com/blog/in-memory-of-em/",
+   "source": "aleksandrhovhannisyan",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making Windows 11 Usable",
+   "url": "https://www.aleksandrhovhannisyan.com/blog/making-windows-11-usable/",
+   "source": "aleksandrhovhannisyan",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Correctly Install the Framework 13 Bezel",
+   "url": "https://www.aleksandrhovhannisyan.com/notes/framework-13-bezel-install/",
+   "source": "aleksandrhovhannisyan",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Wipe a Drive Without Removing It",
+   "url": "https://www.aleksandrhovhannisyan.com/notes/wipe-drive/",
+   "source": "aleksandrhovhannisyan",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Open and Close HTML Dialogs",
+   "url": "https://www.aleksandrhovhannisyan.com/blog/how-to-open-and-close-html-dialogs/",
+   "source": "aleksandrhovhannisyan",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WSL Backup Guide",
+   "url": "https://www.aleksandrhovhannisyan.com/notes/wsl-backups/",
+   "source": "aleksandrhovhannisyan",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -5547,6 +6527,62 @@
    "url": "https://alexplescan.com/posts/2017/06/11/addding-devices-to-provisioning-profile-xcode8-managed-signing/",
    "source": "alexplescan",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to A/B test your site without making it slow",
+   "url": "https://www.alexrp.co.uk/blog/ab-testing-and-web-performance.html",
+   "source": "alexrpco",
+   "rank": 1,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Top web performance tips for Black Friday",
+   "url": "https://www.alexrp.co.uk/blog/web-performance-black-friday.html",
+   "source": "alexrpco",
+   "rank": 2,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Easy ways to make single page apps faster",
+   "url": "https://www.alexrp.co.uk/blog/fast-single-page-apps.html",
+   "source": "alexrpco",
+   "rank": 3,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Three kinds of web page that need special web performance attention",
+   "url": "https://www.alexrp.co.uk/blog/web-performance-special-cases.html",
+   "source": "alexrpco",
+   "rank": 4,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I'm preloading a font even when I shouldn't have to",
+   "url": "https://www.alexrp.co.uk/blog/preloading-fonts.html",
+   "source": "alexrpco",
+   "rank": 5,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to deliver super-fast web pages with prerendering",
+   "url": "https://www.alexrp.co.uk/blog/resource-hints-prerender.html",
+   "source": "alexrpco",
+   "rank": 6,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Does a better speed index score always mean a better experience?",
+   "url": "https://www.alexrp.co.uk/blog/speed-index-and-ux.html",
+   "source": "alexrpco",
+   "rank": 7,
    "score": 1,
    "metric": "feed rank"
   },
@@ -6567,6 +7603,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "What If UI Components Were Built Like Modular Phones?",
+   "url": "https://www.amitmerchant.com/what-if-ui-components-were-built-like-modular-phones/",
+   "source": "amitmerchant",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Giving AI Agents a Better Way to Debug CSS",
+   "url": "https://www.amitmerchant.com/giving-ai-agents-a-better-way-to-debug-css/",
+   "source": "amitmerchant",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Safari Just Made Browser-Controlled Dark Mode Real",
+   "url": "https://www.amitmerchant.com/safari-just-made-browsercontrolled-dark-mode-real/",
+   "source": "amitmerchant",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new in PHP 8.6",
+   "url": "https://www.amitmerchant.com/whats-new-in-php-86/",
+   "source": "amitmerchant",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Next Dependency Problem Is Inside Your AI Agent",
+   "url": "https://www.amitmerchant.com/ai-agent-dependencies-management/",
+   "source": "amitmerchant",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your CI pipeline needs a lockfile, too",
+   "url": "https://www.amitmerchant.com/ci-pipeline-lockfile/",
+   "source": "amitmerchant",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An online-first version control system in this agentic era",
+   "url": "https://www.amitmerchant.com/an-online-first-version-control-system/",
+   "source": "amitmerchant",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Practical Way to Check Your AI Search Visibility",
+   "url": "https://www.amitmerchant.com/practical-way-to-check-your-ai-search-visibility/",
+   "source": "amitmerchant",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7 Game-Changing Web UI Features You Can Start Using Today",
+   "url": "https://www.amitmerchant.com/7-game-changing-web-ui-features-you-need-to-start-using-today/",
+   "source": "amitmerchant",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build an AI Agent with Real‑Time Web Search in JavaScript",
+   "url": "https://www.amitmerchant.com/building-web-searching-ai-agent-javascript/",
+   "source": "amitmerchant",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "From laptop to cloud cluster within seconds (via the PX CLI)",
    "url": "https://amontalenti.com/2026/05/18/px-launch-overview",
    "source": "amontalenti",
@@ -7087,6 +8203,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Claude vs Gemini: My Use Cases",
+   "url": "https://andreaverlicchi.eu/en/blog/claude-vs-gemini-my-use-cases/",
+   "source": "andreaverlicchi",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Should we stop using the word \"Responsive\" for design?",
+   "url": "https://andreaverlicchi.eu/en/blog/should-we-stop-using-the-word-responsive-for-design/",
+   "source": "andreaverlicchi",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Talk: \"Ehi Gemini, sistema il CSS!\" at CSS Day Bologna",
+   "url": "https://andreaverlicchi.eu/en/blog/css-day-bologna-talk-chrome-devtools-agents/",
+   "source": "andreaverlicchi",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google Antigravity 2 & Gemini 3.5 Flash: this AI duo changed my dev workflow... again",
+   "url": "https://andreaverlicchi.eu/en/blog/google-antigravity-2-gemini-35-flash/",
+   "source": "andreaverlicchi",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My dream of a container image format: a call to the web community",
+   "url": "https://andreaverlicchi.eu/en/blog/end-of-responsive-images-dream-image-format/",
+   "source": "andreaverlicchi",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Talk: Enhancing Web Responsiveness at Web Day 2026, Milan",
+   "url": "https://andreaverlicchi.eu/en/blog/web-day-2026-enhancing-web-responsiveness/",
+   "source": "andreaverlicchi",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refactoring Gender Bias, One Commit at a Time",
+   "url": "https://andreaverlicchi.eu/en/blog/refactoring-gender-bias-one-commit-at-a-time/",
+   "source": "andreaverlicchi",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GitBar Podcast: Non toccate quel tag!",
+   "url": "https://andreaverlicchi.eu/en/blog/gitbar-podcast-web-performance/",
+   "source": "andreaverlicchi",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Talk: Gemini + Chrome: Oltre la Chat, Bologna JS Meetup",
+   "url": "https://andreaverlicchi.eu/en/blog/bologna-js-gemini-chrome-devtools-mcp/",
+   "source": "andreaverlicchi",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Talk video: \"Ehi Gemini, sistema il CSS!\", Bologna Front-end #58",
+   "url": "https://andreaverlicchi.eu/en/blog/bologna-front-end-gemini-chrome-devtools-mcp/",
+   "source": "andreaverlicchi",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google Antigravity: The New IDE That Embraces Agentic AI",
+   "url": "https://andreaverlicchi.eu/en/blog/google-antigravity-new-ide-agentic-ai/",
+   "source": "andreaverlicchi",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Improving Web Responsiveness - Interactivity improvements from real-world cases",
+   "url": "https://andreaverlicchi.eu/en/blog/improving-web-responsiveness-interactivity-improvements-from-real-world-cases/",
+   "source": "andreaverlicchi",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The macOS clipboard manager you've been waiting for, now native in MacOS 26 Tahoe",
+   "url": "https://andreaverlicchi.eu/en/blog/how-to-use-multiple-clipboard-feature-on-macOS-26-tahoe/",
+   "source": "andreaverlicchi",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Talk video: \"Debugging and Optimizing Interaction to Next Paint (INP) for a Smoother Web\", Performance Observer Meetup",
+   "url": "https://andreaverlicchi.eu/en/blog/performance-observer-meetup-talk/",
+   "source": "andreaverlicchi",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing yieldy-for-loop: an npm package to keep your loops non-blocking (and your UI smooth)",
+   "url": "https://andreaverlicchi.eu/en/blog/introducing-yieldy-for-loop/",
+   "source": "andreaverlicchi",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Don't Take the Black Pill (Text Adaptation)",
    "url": "https://andrewkelley.me/post/dont-take-black-pill.html",
    "source": "andrewkelley",
@@ -7322,6 +8558,126 @@
    "title": "Use Font Awesome icons in Phoenix with Tailwind 3",
    "url": "https://andrewtimberlake.com/blog/2024/02/use-fontawesome-icons-in-phoenix",
    "source": "andrewtimberlake",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Previews Are Hard! Also, Web Mullets",
+   "url": "https://andrewwalpole.com/blog/previews-are-hard-also-web-mullets/",
+   "source": "andrewwalpole",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "First",
+   "url": "https://andrewwalpole.com/blog/first/",
+   "source": "andrewwalpole",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Living on the Edge Functions",
+   "url": "https://andrewwalpole.com/blog/living-on-the-edge-functions/",
+   "source": "andrewwalpole",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Throw the dart",
+   "url": "https://andrewwalpole.com/blog/throw-the-dart/",
+   "source": "andrewwalpole",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What You've Done is What You'll Do",
+   "url": "https://andrewwalpole.com/blog/what-youve-done-is-what-youll-do/",
+   "source": "andrewwalpole",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Diverge, Converge, and Repeat",
+   "url": "https://andrewwalpole.com/blog/diverge-converge-and-repeat/",
+   "source": "andrewwalpole",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's Your Go-To Web Stack?",
+   "url": "https://andrewwalpole.com/blog/whats-your-go-to-web-stack/",
+   "source": "andrewwalpole",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Fourth Language",
+   "url": "https://andrewwalpole.com/blog/the-fourth-language/",
+   "source": "andrewwalpole",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a Like Button with Cloudflare Workers",
+   "url": "https://andrewwalpole.com/blog/building-a-like-button-with-cloudflare-workers/",
+   "source": "andrewwalpole",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stop Leading Zeros with Leximited Notation",
+   "url": "https://andrewwalpole.com/blog/stop-leading-zeros-with-leximited-notation/",
+   "source": "andrewwalpole",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Work is a Place to Help People",
+   "url": "https://andrewwalpole.com/blog/work-is-a-place-to-help-people/",
+   "source": "andrewwalpole",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Do it for Context",
+   "url": "https://andrewwalpole.com/blog/do-it-for-context/",
+   "source": "andrewwalpole",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility is Hard and Important",
+   "url": "https://andrewwalpole.com/blog/accessibility-is-hard-and-important/",
+   "source": "andrewwalpole",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Do Hard Things Again",
+   "url": "https://andrewwalpole.com/blog/do-hard-things-again/",
+   "source": "andrewwalpole",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Escape Hatches",
+   "url": "https://andrewwalpole.com/blog/escape-hatches/",
+   "source": "andrewwalpole",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -9159,6 +10515,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Legal Innovators NY Starts Tuesday +",
+   "url": "https://www.artificiallawyer.com/2026/11/13/legal-innovators-ny-starts-tuesday/",
+   "source": "artificiallawyer",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Legal Innovators NY – Darby Green, Ropes & Gray",
+   "url": "https://www.artificiallawyer.com/2026/11/12/legal-innovators-ny-darby-green-ropes-gray/",
+   "source": "artificiallawyer",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is Big Law ‘AI Gaslighting’ Us?",
+   "url": "https://www.artificiallawyer.com/2026/11/12/is-big-law-ai-gaslighting-us/",
+   "source": "artificiallawyer",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Keeping Legal AI Connected: Why Your Data and Case Should Work Together",
+   "url": "https://www.artificiallawyer.com/2026/11/12/keeping-legal-ai-connected-why-your-data-and-case-should-work-together/",
+   "source": "artificiallawyer",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Claren Launches ‘Envoys’ Inhouse Agents",
+   "url": "https://www.artificiallawyer.com/2026/11/11/claren-launches-envoys-inhouse-agents/",
+   "source": "artificiallawyer",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Legora Targets Public Sector With Ex-Minister",
+   "url": "https://www.artificiallawyer.com/2026/11/11/legora-targets-public-sector-with-ex-minister/",
+   "source": "artificiallawyer",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mercedes Lawyer Joins AI Native Compound Law",
+   "url": "https://www.artificiallawyer.com/2026/11/11/mercedes-lawyer-joins-ai-native-compound-law/",
+   "source": "artificiallawyer",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Legal Innovators NY – Keynote: Roberto Alarcon, White & Case",
+   "url": "https://www.artificiallawyer.com/2026/11/10/legal-innovators-ny-keynote-roberto-alarcon-white-case/",
+   "source": "artificiallawyer",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Blue J Follows Legora Alliance With $176m Raise",
+   "url": "https://www.artificiallawyer.com/2026/11/10/blue-j-follows-legora-alliance-with-176m-raise/",
+   "source": "artificiallawyer",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Claude on Anthropic IPO – ‘Pressure to Monetize Legal Vertical’",
+   "url": "https://www.artificiallawyer.com/2026/11/10/claude-on-anthropic-ipo-pressure-to-monetize-legal-vertical/",
+   "source": "artificiallawyer",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Going All In on AI Agents for Five Weeks: What I Learned",
    "url": "https://artsy.github.io/blog/2026/10/26/going-all-in-on-ai-agents-for-five-weeks/",
    "source": "artsygithub",
@@ -10303,6 +11739,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "10 years in public speaking, learned lessons",
+   "url": "https://www.aymen-loukil.com/en/blog-en/10-years-in-public-speaking-learned-lessons/",
+   "source": "aymenloukil",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "E-commerce and COVID-19 : how to deal with the crisis",
+   "url": "https://www.aymen-loukil.com/en/blog-en/e-commerce-and-covid-19/",
+   "source": "aymenloukil",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SEO priorities for 2023 and beyond",
+   "url": "https://www.aymen-loukil.com/en/blog-en/seo-priorities-2023/",
+   "source": "aymenloukil",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "11 Free Google SEO Tools [2020]",
+   "url": "https://www.aymen-loukil.com/en/blog-en/google-seo-tools/",
+   "source": "aymenloukil",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "BrightonSEO Slides September 2019",
+   "url": "https://www.aymen-loukil.com/en/blog-en/brightonseo-slides-september-2019/",
+   "source": "aymenloukil",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "BrightonSEO Slides April 2019",
+   "url": "https://www.aymen-loukil.com/en/blog-en/brightonseo-slides-april-2019/",
+   "source": "aymenloukil",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Optimize your content for Google Discover",
+   "url": "https://www.aymen-loukil.com/en/blog-en/optimize-content-google-discover/",
+   "source": "aymenloukil",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Run Google Lighthouse audits on mobile device",
+   "url": "https://www.aymen-loukil.com/en/blog-en/run-lightouse-audits-on-mobile-device/",
+   "source": "aymenloukil",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google Lighthouse custom audits tutorial",
+   "url": "https://www.aymen-loukil.com/en/blog-en/google-lighthouse-custom-audits/",
+   "source": "aymenloukil",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "BrightonSEO Slides – September 2018",
+   "url": "https://www.aymen-loukil.com/en/blog-en/brightonseo-slides-september-2018/",
+   "source": "aymenloukil",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "8.1.0 Released: bytes and text imports, source map range mappings, and ESLint configs",
    "url": "https://babeljs.io/blog/2026/11/02/8.1.0",
    "source": "babeljs",
@@ -10839,6 +12355,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Looking back at snow",
+   "url": "https://www.baldurbjarnason.com/notes/photos/looking-back-at-snow/",
+   "source": "baldurbjarnason",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Automation, algorithms, and self-censorship",
+   "url": "https://www.baldurbjarnason.com/2026/automation-and-self-censorship/",
+   "source": "baldurbjarnason",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing is Magic; Machine Writing is Ash",
+   "url": "https://www.baldurbjarnason.com/2026/machine-writing-is-ash/",
+   "source": "baldurbjarnason",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Out of the ‘AI’ Crisis – Premium Newsletter launch and Halloween Sale",
+   "url": "https://www.baldurbjarnason.com/2026/out-of-the-ai-crisis-halloween-sale-and-launch/",
+   "source": "baldurbjarnason",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Autumn comfort cat photos",
+   "url": "https://www.baldurbjarnason.com/notes/photos/autumn-comfort-cat-photos-2026/",
+   "source": "baldurbjarnason",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The 'AI' Software Crisis: Software Developers have been promoted into incompetence",
+   "url": "https://www.baldurbjarnason.com/2026/07-promoted-into-incompetence/",
+   "source": "baldurbjarnason",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "It’s not our job to fix our employers",
+   "url": "https://www.baldurbjarnason.com/2026/06-its-not-our-job-to-fix-our-employers/",
+   "source": "baldurbjarnason",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ravens and churches",
+   "url": "https://www.baldurbjarnason.com/notes/photos/the-raven-and-the-church/",
+   "source": "baldurbjarnason",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Different modes of thinking",
+   "url": "https://www.baldurbjarnason.com/2026/modes-of-thinking/",
+   "source": "baldurbjarnason",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Old raven photos revisited",
+   "url": "https://www.baldurbjarnason.com/notes/photos/old-raven-photos-revisited/",
+   "source": "baldurbjarnason",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Does WebMCP `outputSchema` Help Agents Pick Better Tools?",
    "url": "https://bandarra.me/posts/webmcp-outputschema",
    "source": "bandarra",
@@ -10954,6 +12550,126 @@
    "title": "Building with Lovable: A Low-Code Experiment",
    "url": "https://bandarra.me/posts/building-with-lovable",
    "source": "bandarra",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Load 持续飙高的原理讲解和应急机制",
+   "url": "https://www.barretlee.com/blog/2023/10/27/sre-load-increase/",
+   "source": "barretlee",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "海外 App Store 账号和礼品卡",
+   "url": "https://www.barretlee.com/blog/2023/09/14/non-chinese-app-store-account/",
+   "source": "barretlee",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "接码平台与海外手机卡",
+   "url": "https://www.barretlee.com/blog/2023/09/13/non-chinese-phone-checkcode-and-uk-giffgaff/",
+   "source": "barretlee",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "构建你自己的信息流",
+   "url": "https://www.barretlee.com/blog/2023/09/10/build-your-own-timeline/",
+   "source": "barretlee",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "新加坡华侨银行 OCBC 开户小记",
+   "url": "https://www.barretlee.com/blog/2023/09/06/ocbc-bank/",
+   "source": "barretlee",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "还写博客么？",
+   "url": "https://www.barretlee.com/blog/2023/06/26/blog-writer/",
+   "source": "barretlee",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "读书笔记《当呼吸化为空气》",
+   "url": "https://www.barretlee.com/blog/2022/09/18/gvnty0/",
+   "source": "barretlee",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "云服务使用过程的问题小记",
+   "url": "https://www.barretlee.com/blog/2022/08/05/bicgb6/",
+   "source": "barretlee",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "孩子出生第一天的一些点滴",
+   "url": "https://www.barretlee.com/blog/2022/08/05/dzrya3/",
+   "source": "barretlee",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "读书笔记《乌合之众》",
+   "url": "https://www.barretlee.com/blog/2022/07/27/wp7gyn/",
+   "source": "barretlee",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "回味是苦药",
+   "url": "https://www.barretlee.com/blog/2022/07/27/dw6f2k/",
+   "source": "barretlee",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "不活成他人眼中的自己",
+   "url": "https://www.barretlee.com/blog/2022/07/26/knaauu/",
+   "source": "barretlee",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "东风不来",
+   "url": "https://www.barretlee.com/blog/2022/06/30/dpltzy/",
+   "source": "barretlee",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "行左右之事",
+   "url": "https://www.barretlee.com/blog/2022/06/30/fi1zpe/",
+   "source": "barretlee",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "核酸数据通大难题",
+   "url": "https://www.barretlee.com/blog/2022/06/05/grgoas/",
+   "source": "barretlee",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -11667,6 +13383,78 @@
    "url": "https://begriffs.com/posts/2018-01-01-sql-keys-in-depth.html",
    "source": "begriffs",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Safe Terraform auto-apply with conftest",
+   "url": "https://www.bejarano.io/terraform-autoapply/",
+   "source": "bejarano",
+   "rank": 1,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advanced Terraform performance optimization",
+   "url": "https://www.bejarano.io/terraform-performance/",
+   "source": "bejarano",
+   "rank": 2,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speeding up Terraform caching with OverlayFS",
+   "url": "https://www.bejarano.io/terraform-overlayfs/",
+   "source": "bejarano",
+   "rank": 3,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "terraform plan -light",
+   "url": "https://www.bejarano.io/terraform-plan-light/",
+   "source": "bejarano",
+   "rank": 4,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A more mature take on stateless Terraform",
+   "url": "https://www.bejarano.io/terraform-stateless-critique/",
+   "source": "bejarano",
+   "rank": 5,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SMS phishing is way too easy",
+   "url": "https://www.bejarano.io/sms-phishing/",
+   "source": "bejarano",
+   "rank": 6,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Find Jira issues faster with this browser shortcut",
+   "url": "https://www.bejarano.io/jira-issues-shortcut/",
+   "source": "bejarano",
+   "rank": 7,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fixing cron jobs in macOS",
+   "url": "https://www.bejarano.io/fixing-cron-jobs-in-mojave/",
+   "source": "bejarano",
+   "rank": 8,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hardening macOS",
+   "url": "https://www.bejarano.io/hardening-macos/",
+   "source": "bejarano",
+   "rank": 9,
    "score": 1,
    "metric": "feed rank"
   },
@@ -12626,6 +14414,126 @@
    "title": "Build a Twitch Chatbot for Sharing Your Content Using Algolia Search",
    "url": "https://benmyers.dev/blog/algolia-twitch-bot/",
    "source": "benmyers",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TLS 1.2 Connection Failure Using CommandBox, Adobe ColdFusion, And CFHTTP",
+   "url": "https://www.bennadel.com/blog/4928-tls-1-2-connection-failure-using-commandbox-adobe-coldfusion-and-cfhttp.htm",
+   "source": "bennadel",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Normalizing Line-Endings, And Other Opinionated Pre-Processing, In ColdFusion",
+   "url": "https://www.bennadel.com/blog/4927-normalizing-line-endings-and-other-opinionated-pre-processing-in-coldfusion.htm",
+   "source": "bennadel",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Breaking Change In Empty-Line RegEx Matching In Adobe ColdFusion 2025 Update 14",
+   "url": "https://www.bennadel.com/blog/4926-breaking-change-in-empty-line-regex-matching-in-adobe-coldfusion-2025-update-14.htm",
+   "source": "bennadel",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Adding \"Multipart/Form-Data\" Support To My Parameter Grouping Polyfill In Adobe ColdFusion",
+   "url": "https://www.bennadel.com/blog/4925-adding-multipart-form-data-support-to-my-parameter-grouping-polyfill-in-adobe-coldfusion.htm",
+   "source": "bennadel",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exploring ColdFusion's Undocumented FORM.getPartsArray() Method",
+   "url": "https://www.bennadel.com/blog/4924-exploring-coldfusions-undocumented-form-getpartsarray-method.htm",
+   "source": "bennadel",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why CFML Can't \"Just\" Compile Variable Scoping Into The Byte Code",
+   "url": "https://www.bennadel.com/blog/4923-why-cfml-cant-just-compile-variable-scoping-into-the-byte-code.htm",
+   "source": "bennadel",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Monitoring My ColdFusion Scheduled Tasks With Grafana Cloud",
+   "url": "https://www.bennadel.com/blog/4922-monitoring-my-coldfusion-scheduled-tasks-with-grafana-cloud.htm",
+   "source": "bennadel",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Code Kata: ArrayMerge() Polyfill In Adobe ColdFusion",
+   "url": "https://www.bennadel.com/blog/4921-code-kata-arraymerge-polyfill-in-adobe-coldfusion.htm",
+   "source": "bennadel",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Replacing \\U And \\L Usage With Java's Matcher.replaceAll() In ColdFusion",
+   "url": "https://www.bennadel.com/blog/4920-replacing-u-and-l-usage-with-javas-matcher-replaceall-in-coldfusion.htm",
+   "source": "bennadel",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using ColdFusion Closures With Java's RegEx Pattern Matcher",
+   "url": "https://www.bennadel.com/blog/4919-using-coldfusion-closures-with-javas-regex-pattern-matcher.htm",
+   "source": "bennadel",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Spread Operator Bug With Method Calls In Adobe ColdFusion 2025",
+   "url": "https://www.bennadel.com/blog/4918-spread-operator-bug-with-method-calls-in-adobe-coldfusion-2025.htm",
+   "source": "bennadel",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Returning A Struct From A One-Line Closure In ColdFusion",
+   "url": "https://www.bennadel.com/blog/4917-returning-a-struct-from-a-one-line-closure-in-coldfusion.htm",
+   "source": "bennadel",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HTMX 4 Adds findAll Support In CSS Selector Attributes",
+   "url": "https://www.bennadel.com/blog/4916-htmx-4-adds-findall-support-in-css-selector-attributes.htm",
+   "source": "bennadel",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using The HTMX HX-Redirect Header For Loop-Backs In ColdFusion",
+   "url": "https://www.bennadel.com/blog/4915-using-the-htmx-hx-redirect-header-for-loop-backs-in-coldfusion.htm",
+   "source": "bennadel",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating Java Classes From JAR Files Using \"new java\" In Adobe ColdFusion 2025",
+   "url": "https://www.bennadel.com/blog/4914-creating-java-classes-from-jar-files-using-new-java-in-adobe-coldfusion-2025.htm",
+   "source": "bennadel",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -23978,6 +25886,126 @@
    "title": "「#確かな情報を得る訓練」3DAYアクションを行います",
    "url": "https://bsky.social/about/blog/03-06-2026-reliable-information-action-jp",
    "source": "blueskyweb",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Agent 走进三维世界之后",
+   "url": "https://www.bmpi.dev/dev/agent-3d-world-building/",
+   "source": "bmpi",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "一个抖音遥控器的开发小记",
+   "url": "https://www.bmpi.dev/dev/free4chat-task-app-development-notes/",
+   "source": "bmpi",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Jev 的边界",
+   "url": "https://www.bmpi.dev/dev/jev-boundary/",
+   "source": "bmpi",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "置身 Agent 时代：当软件开始不再需要软件工程师",
+   "url": "https://www.bmpi.dev/dev/agent-era-software-engineering/",
+   "source": "bmpi",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "给 Agent 造一个 Domain Harness",
+   "url": "https://www.bmpi.dev/dev/agent-native-system-paradigm/",
+   "source": "bmpi",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "一个 WebRTC 聊天室的四次演进",
+   "url": "https://www.bmpi.dev/dev/free4chat/",
+   "source": "bmpi",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我是如何构建一个 AI 原生量化系统的",
+   "url": "https://www.bmpi.dev/dev/ai-native-investment-system/",
+   "source": "bmpi",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "构建自己的信息简报 2.0",
+   "url": "https://www.bmpi.dev/self/use-rss-email-read-v2/",
+   "source": "bmpi",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我的退休计划：把无期变成有期",
+   "url": "https://www.bmpi.dev/self/my-retirement-plan/",
+   "source": "bmpi",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "从情绪化交易到系统化投资",
+   "url": "https://www.bmpi.dev/money/myinvestpilot/emotional_to_system/",
+   "source": "bmpi",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "反脆弱",
+   "url": "https://www.bmpi.dev/self/antifragile/",
+   "source": "bmpi",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "系统化思维",
+   "url": "https://www.bmpi.dev/self/systemic-thinking/",
+   "source": "bmpi",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "策引2025 实盘大考：当算法跑赢人性",
+   "url": "https://www.bmpi.dev/money/myinvestpilot/2025_review/",
+   "source": "bmpi",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "三十五",
+   "url": "https://www.bmpi.dev/self/35/",
+   "source": "bmpi",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我的AI投资助手",
+   "url": "https://www.bmpi.dev/self/my-invest-pilot/",
+   "source": "bmpi",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -110545,6 +112573,14 @@
   {
    "title": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashing with Scott Bessent and others over Nvidia chip curbs (Ashley Gold/Semafor)",
    "url": "https://www.techmeme.com/261115/p11#a261115p11",
+   "source": "techmeme",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of AI technologies and supply chains to protect from China (Financial Times)",
+   "url": "https://www.techmeme.com/261115/p12#a261115p12",
    "source": "techmeme",
    "rank": 1,
    "score": 15,

@@ -545,3 +545,23 @@ root for self-hosted mirrors.
 | WPE WebKit | embedded WebKit | `wpewebkit.org/feed.xml` |
 | 24 A11y | a11y advent | `www.24a11y.com/feed/` |
 | A11y Collective | a11y courses | `www.a11y-collective.com/blog/feed/` |
+| A11y Project | community a11y | `www.a11yproject.com/feed/feed.xml` |
+| A11y Lindsey | a11y educator | `www.a11ywithlindsey.com/rss.xml` |
+| Aaron Gustafson | web standards | `www.aaron-gustafson.com/feeds/latest-posts.xml` |
+| A Beautiful Site | Cory LaViska | `www.abeautifulsite.net/feed/feed.xml` |
+| AbilityNet | a11y charity | `www.abilitynet.org.uk/news-blogs/feed.rss` |
+| A11y AU | a11y org AU | `www.accessibility.org.au/feed/` |
+| AGWA | engineering notes | `www.agwa.name/blog/feed` |
+| AJ Saucier | a11y dev | `www.ajsaucier.com/feed.xml` |
+| Aleksandr H | frontend dev | `www.aleksandrhovhannisyan.com/feed.xml` |
+| Alex RP | engineering notes | `www.alexrp.co.uk/rss.xml` |
+| Amit Merchant | PHP dev | `www.amitmerchant.com/feed.xml` |
+| Andrea Verlicchi | lazyload author | `www.andreaverlicchi.eu/feed/feed.xml` |
+| Andrew Walpole | frontend dev | `www.andrewwalpole.com/feed.xml` |
+| Artificial Lawyer | legal tech | `www.artificiallawyer.com/feed` |
+| Aymen Loukil | SEO engineer | `www.aymen-loukil.com/en/feed/` |
+| Baldur Bjarnason | web critic | `www.baldurbjarnason.com/index.xml` |
+| Barret Lee | Chinese Alibaba dev | `www.barretlee.com/rss2.xml` |
+| Bejarano | engineering notes | `www.bejarano.io/feed.xml` |
+| Ben Nadel | JS dev | `www.bennadel.com/rss` |
+| BMPI | Chinese dev weekly | `www.bmpi.dev/index.xml` |
