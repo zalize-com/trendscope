@@ -102,16 +102,11 @@ fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
        <span class="spark" data-topic="${t.topic}"></span></h2>
        <ol>${(t.examples||[]).map(e => `<li><span class="it"><a href="${e.url}">${esc(e.title)}</a> <span class="sc">${e.source}</span></span></li>`).join("")}</ol>`).join("");
     // per-topic daily counts → inline sparkline
-    fetch("data/topics-history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
-      const [hdr, ...rows] = txt.trim().split("\n").map(l => l.split(","));
-      const ti = hdr.indexOf("topic"), di = hdr.indexOf("date"), ci2 = hdr.indexOf("count");
-      const days = [...new Set(rows.map(r => r[di]))].sort();
+    fetch("docs/api/topics.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+      const days = d.days, topics = d.topics;
       document.querySelectorAll(".spark").forEach(el => {
         const t = el.dataset.topic;
-        const vals = days.map(d => {
-          const r = rows.find(x => x[di] === d && x[ti] === t);
-          return r ? +r[ci2] : 0;
-        });
+        const vals = days.map(dd => (topics[t] && topics[t].counts[dd]) || 0);
         const mx = Math.max(...vals, 1);
         el.innerHTML = `<svg width="${days.length * 8}" height="14" viewBox="0 0 ${days.length * 8} 14" style="vertical-align:-2px;margin-left:8px">${
           vals.map((v,i) => `<rect x="${i*8}" y="${14 - Math.round(12*v/mx)}" width="6" height="${Math.max(1,Math.round(12*v/mx))}" fill="var(--accent)" opacity="${0.35 + 0.65*v/mx}"/>`).join("")}</svg>`;
@@ -119,14 +114,10 @@ fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
       });
       // topic movers: last day vs mean of the previous days
       if (days.length >= 2) {
-        const allT = [...new Set(rows.map(r => r[ti]))];
+        const allT = Object.keys(topics);
         const deltas = allT.map(t => {
-          const last = rows.find(r => r[di] === days[days.length-1] && r[ti] === t);
-          const now = last ? +last[ci2] : 0;
-          const prev = days.slice(0, -1).map(d => {
-            const r = rows.find(x => x[di] === d && x[ti] === t);
-            return r ? +r[ci2] : 0;
-          });
+          const now = (topics[t] && topics[t].counts[days[days.length-1]]) || 0;
+          const prev = days.slice(0, -1).map(dd => (topics[t] && topics[t].counts[dd]) || 0);
           const avg = prev.reduce((a,b) => a+b, 0) / prev.length;
           return { t, now, delta: now - avg };
         }).filter(x => Math.abs(x.delta) >= 1)
@@ -144,14 +135,9 @@ fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
   const matched = all.filter(it => topicsOf(it).includes(want));
   document.getElementById("sub").textContent =
     `${matched.length} items across ${new Set(matched.map(i=>i.source)).size} sources · ${snap.date} snapshot`;
-  fetch("data/topics-history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
-    const [hdr, ...rows] = txt.trim().split("\n").map(l => l.split(","));
-    const ti = hdr.indexOf("topic"), di = hdr.indexOf("date"), ci2 = hdr.indexOf("count");
-    const days = [...new Set(rows.map(r => r[di]))].sort();
-    const vals = days.map(d => {
-      const r = rows.find(x => x[di] === d && x[ti] === want);
-      return r ? +r[ci2] : 0;
-    });
+  fetch("docs/api/topics.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const days = d.days;
+    const vals = days.map(dd => (d.topics[want] && d.topics[want].counts[dd]) || 0);
     const mx = Math.max(...vals, 1);
     const el = document.getElementById("sub");
     el.innerHTML = `${el.textContent} · <svg width="${days.length * 8}" height="14"

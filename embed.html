@@ -351,13 +351,12 @@ if (MODE === "ideas") {
 } else
 if (MODE === "topics") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/topics.html";
-  fetch("data/topics-history.csv", {cache:"no-cache"}).then(r => r.text()).then(text => {
-    const rows = parseCSV(text), hdr = rows[0];
-    const recs = rows.slice(1).map(r => Object.fromEntries(hdr.map((h,i)=>[h,r[i]])));
-    const day = recs[recs.length-1]?.date || "";
-    const ts = recs.filter(r => r.date === day)
-      .sort((a,b) => +b.count - +a.count).slice(0, 8);
-    const mx = +ts[0]?.count || 1;
+  fetch("docs/api/topics.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const day = d.days[d.days.length-1] || "";
+    const ts = Object.entries(d.topics)
+      .map(([topic, t]) => ({ topic, count: t.counts[day] || 0 }))
+      .sort((a,b) => b.count - a.count).slice(0, 8);
+    const mx = ts[0]?.count || 1;
     document.getElementById("date").textContent = `attention mix · ${day}`;
     document.getElementById("list").innerHTML = ts.map(t =>
       `<li><span><a href="https://zalize-com.github.io/trendscope/topics.html?t=${encodeURIComponent(t.topic)}" target="_blank" rel="noopener">${esc(t.topic)}</a></span>

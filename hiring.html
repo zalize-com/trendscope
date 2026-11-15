@@ -53,26 +53,18 @@
   <div id="hist"></div>
   <div id="daily"></div>
   <p class="note" id="note"></p>
-  <footer>Data: <a href="data/hiring.json">data/hiring.json</a> · <a href="data/hiring-history.csv">hiring-history.csv</a> ·
+  <footer>Data: <a href="data/hiring.json">data/hiring.json</a> · <a href="docs/api/hiring-history.json">hiring-history.json</a> ·
     <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a> · CC0</footer>
 <script>
 const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
 const $ = id => document.getElementById(id);
 const fmt = n => n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
 
-function parseCSV(text) {
-  const lines = text.trim().split("\n"); const rows = [];
-  for (const line of lines.slice(1)) {
-    const c = line.split(",");
-    if (c.length >= 5) rows.push({ at: c[0], kind: c[1], month: c[3], comments: +c[4] });
-  }
-  return rows;
-}
 
 async function main() {
-  const [j, csv] = await Promise.all([
+  const [j, hist] = await Promise.all([
     fetch("data/hiring.json").then(r => r.json()).catch(() => null),
-    fetch("data/hiring-history.csv").then(r => r.text()).catch(() => ""),
+    fetch("docs/api/hiring-history.json").then(r => r.json()).catch(() => null),
   ]);
   if (!j || !j.threads) { $("cards").innerHTML = "<p>no data yet</p>"; return; }
   const th = j.threads;
@@ -138,7 +130,7 @@ async function main() {
         <b style="margin-left:auto">hiring peak: ${esc(peak)} (${fmt(Math.max(...hS.filter(v=>v!=null)))})</b></div>`;
   }
 
-  const rows = parseCSV(csv);
+  const rows = (hist && hist.rows || []).map(r => ({ at: r.captured_at, kind: r.kind, month: r.month, comments: +r.comments }));
   if (rows.length < 2) return;
   const days = [...new Set(rows.map(r => r.at.slice(0, 10)))].sort();
   const hirePts = days.map(d => (rows.filter(r => r.kind === "hiring" && r.at.startsWith(d)).pop() || {}).comments);

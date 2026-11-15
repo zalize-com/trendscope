@@ -250,5 +250,33 @@ def main():
     print(f"discussed.json: {len(discussed)}+{len(heated)} rows / {out['total']} total")
 
 
+def emit_history_apis(now):
+    """topics-history.csv + hiring-history.csv → docs/api/*.json"""
+    tpath = os.path.join(ROOT, "data", "topics-history.csv")
+    if os.path.exists(tpath):
+        rows = list(csv.DictReader(open(tpath, encoding="utf-8")))
+        days = sorted({r["date"] for r in rows})
+        topics = {}
+        for r in rows:
+            t = topics.setdefault(r["topic"], {"counts": {}, "scores": {}})
+            t["counts"][r["date"]] = int(r["count"])
+            t["scores"][r["date"]] = int(r.get("total_score") or 0)
+        with open(os.path.join(API, "topics.json"), "w", encoding="utf-8") as f:
+            json.dump({"generated_at": now, "days": days,
+                       "topics": {k: {"counts": v["counts"], "scores": v["scores"]}
+                                  for k, v in sorted(topics.items())}},
+                      f, ensure_ascii=False, separators=(",", ":"))
+        print(f"topics.json: {len(topics)} topics x {len(days)} days")
+    hpath = os.path.join(ROOT, "data", "hiring-history.csv")
+    if os.path.exists(hpath):
+        rows = list(csv.DictReader(open(hpath, encoding="utf-8")))
+        with open(os.path.join(API, "hiring-history.json"), "w", encoding="utf-8") as f:
+            json.dump({"generated_at": now, "rows": rows},
+                      f, ensure_ascii=False, indent=1)
+        print(f"hiring-history.json: {len(rows)} rows")
+
+
 if __name__ == "__main__":
     main()
+    import datetime
+    emit_history_apis(datetime.datetime.now(datetime.timezone.utc).isoformat())
