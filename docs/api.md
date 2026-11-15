@@ -30,6 +30,7 @@ Fetch straight from GitHub raw or the Pages site (`/trendscope/…`).
 | `docs/api/discussed.json` | JSON | Comment leaderboards: most-discussed + heated (comments/point ratio, score ≥ 50) |
 | `docs/api/sources.json` | JSON | Per-source stats over the whole window: items, unique urls, median days-on-board, one-day %, top item |
 | `docs/api/velocity.json` | JSON | Score growth rate for multi-day items: url/title/source/metric/days/delta/per_day/latest, sorted by +/day — rolling counters excluded |
+| `docs/api/weekday.json` | JSON | Day-of-week x source item counts — `{sources:{name:{counts:[mon..sun],total}}}` |
 | `data/hiring.json` | JSON | Latest HN monthly hiring/seeking thread comment counts |
 | `data/hiring-history.csv` | CSV | Append-only daily log of those counts (labor-demand signal) |
 | `data/hiring-monthly.csv` | CSV | All canonical monthly hiring/seeking threads, 2010 → today |

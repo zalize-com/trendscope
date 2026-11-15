@@ -146,6 +146,7 @@ taxonomy as `topics.html` — niche blogs can embed just their beat),
 `?mode=domain` renders the top domains card (`&d=host` for a single domain).
 `?mode=sources` renders the all-sources stats card (items / unique / one-day%).
 `?mode=velocity` renders the fastest-growing stories card (+/day over multi-day items).
+`?mode=weekday` renders the posting-rhythm card (per-source Mon..Sun counts + peak day).
 `?theme=light` (or `dark`) overrides the card color scheme.
 
 ## Terminal

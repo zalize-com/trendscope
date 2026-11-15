@@ -180,6 +180,28 @@ def main():
                   f, ensure_ascii=False, indent=1)
     print(f"velocity.json: {len(vel)} multi-day items")
 
+    # weekday: day-of-week x source item counts (UTC weekday of the snapshot date)
+    grid = defaultdict(lambda: [0] * 7)
+    totals = defaultdict(int)
+    for r in csv.DictReader(open(HIST, encoding="utf-8")):
+        d, src = r.get("date") or "", r.get("source") or ""
+        if not d or not src:
+            continue
+        try:
+            w = (datetime.fromisoformat(d).weekday())  # 0=Mon
+        except ValueError:
+            continue
+        grid[src][w] += 1
+        totals[src] += 1
+    DOW = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
+    with open(os.path.join(API, "weekday.json"), "w", encoding="utf-8") as f:
+        json.dump({"generated_at": now, "latest_snapshot": max(days),
+                   "days_of_week": DOW,
+                   "sources": {s: {"counts": grid[s], "total": totals[s]}
+                               for s in sorted(totals, key=lambda k: -totals[k])}},
+                  f, ensure_ascii=False, indent=1)
+    print(f"weekday.json: {len(grid)} sources x 7 days")
+
     discussed = sorted(items.values(), key=lambda x: -x["comments"])[:LIMIT]
     heated = sorted((x for x in items.values() if x["score"] >= 50),
                     key=lambda x: -x["comments"] / max(1, x["score"]))[:LIMIT]
