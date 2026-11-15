@@ -11,6 +11,7 @@
 <meta property="og:title" content="trendscope stats — dataset growth">
 <meta property="og:image" content="https://zalize-com.github.io/trendscope/og.png">
 <meta name="twitter:card" content="summary_large_image">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
 <style>
   :root { --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
@@ -41,11 +42,11 @@
   <p class="sub">How the dataset grows — computed live from <code>data/history.csv</code> + <code>docs/api/stats.json</code>.</p>
   <div class="stats" id="stats"></div>
   <h2>items per day</h2>
-  <svg class="chart" id="daily" viewBox="0 0 820 200"></svg>
+  <div class="chart" style="height:200px;padding:8px"><canvas id="daily"></canvas></div>
   <h2>cumulative rows</h2>
-  <svg class="chart" id="cum" viewBox="0 0 820 200"></svg>
+  <div class="chart" style="height:200px;padding:8px"><canvas id="cum"></canvas></div>
   <h2>novelty rate</h2>
-  <svg class="chart" id="nov" viewBox="0 0 820 200"></svg>
+  <div class="chart" style="height:200px;padding:8px"><canvas id="nov"></canvas></div>
   <p style="color:var(--dim);font-size:12px;margin:0 0 8px">% of URLs each day seen for the first time — falling line means the board is repeating itself</p>
   <h2>attention by weekday</h2>
   <svg class="chart" id="wd" viewBox="0 0 820 200"></svg>
@@ -104,24 +105,24 @@ document.getElementById("stats").innerHTML = `
   <div class="stat"><b>${Object.keys(perSrc).length}</b><small>sources</small></div>
   ${stats ? `<div class="stat"><b>${fmt(stats.unique_urls)}</b><small>unique urls</small></div>` : ""}`;
 
-function chart(id, vals, color, fill=false) {
-  const W = 820, H = 200, P = 30;
-  const max = Math.max(...vals, 1);
-  const x = i => P + (W - 2*P) * (vals.length < 2 ? 0.5 : i/(vals.length-1));
-  const y = v => H - P - (H - 2*P) * (v/max);
-  const pts = vals.map((v,i) => `${x(i)},${y(v)}`).join(" ");
-  document.getElementById(id).innerHTML = `
-    <line x1="${P}" y1="${H-P}" x2="${W-P}" y2="${H-P}" stroke="var(--border)"/>
-    <line x1="${P}" y1="${P}" x2="${P}" y2="${H-P}" stroke="var(--border)"/>
-    ${fill ? `<polygon fill="${color}" opacity=".15" points="${P},${H-P} ${pts} ${W-P},${H-P}"/>` : ""}
-    <polyline fill="none" stroke="${color}" stroke-width="2" points="${pts}"/>
-    ${vals.map((v,i) => `<circle cx="${x(i)}" cy="${y(v)}" r="2.5" fill="${color}"/>`).join("")}
-    ${days.map((d,i) => i % Math.ceil(days.length/9) === 0
-      ? `<text x="${x(i)}" y="${H-8}" fill="var(--dim)" font-size="10" text-anchor="middle">${d.slice(5)}</text>` : "").join("")}
-    <text x="8" y="${y(max)}" fill="var(--dim)" font-size="10">${fmt(max)}</text>`;
+const CH_LABELS = days.map(d => d.slice(5));
+const CH_GRID = { color: "rgba(139,148,158,.15)" };
+const CH_TICK = { color: "#8b949e", font: { size: 10 } };
+function lineChart(id, vals, color, fill=false, suffix="") {
+  new Chart(document.getElementById(id), {
+    type: "line",
+    data: { labels: CH_LABELS, datasets: [{ data: vals, borderColor: color,
+      backgroundColor: fill ? color.replace(")", ",.15)").replace("rgb", "rgba") : "transparent",
+      fill, borderWidth: 2, pointRadius: 2.5, pointBackgroundColor: color, tension: .15 }] },
+    options: { responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false },
+        tooltip: { callbacks: { label: c => c.parsed.y + suffix } } },
+      scales: { x: { grid: { display: false }, ticks: { ...CH_TICK, maxTicksLimit: 10 } },
+                y: { grid: CH_GRID, ticks: CH_TICK, beginAtZero: true } } }
+  });
 }
-chart("daily", counts, "var(--accent)");
-chart("cum", cums, "var(--green)", true);
+lineChart("daily", counts, "#58a6ff");
+lineChart("cum", cums, "#3fb950", true);
 
 // novelty rate: % of urls on each day never seen on an earlier day
 {
@@ -132,8 +133,9 @@ chart("cum", cums, "var(--green)", true);
     dayUrls.forEach(u => seen.add(u));
     return dayUrls.size ? Math.round(100 * fresh / dayUrls.size) : 0;
   });
-  chart("nov", nov, "#f0883e");
-  document.getElementById("nov").innerHTML += `<text x="790" y="20" fill="#f0883e" font-size="11" text-anchor="end">latest: ${nov[nov.length-1]}%</text>`;
+  lineChart("nov", nov, "#f0883e", false, "%");
+  document.getElementById("nov").insertAdjacentHTML("afterend",
+    `<p style="color:#f0883e;font-size:11px;text-align:right;margin:4px 8px 0">latest: ${nov[nov.length-1]}%</p>`);
 }
 
 const srcList = Object.entries(perSrc).sort((a,b) => b[1]-a[1]);
