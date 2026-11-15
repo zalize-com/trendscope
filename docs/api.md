@@ -26,7 +26,8 @@ Fetch straight from GitHub raw or the Pages site (`/trendscope/…`).
 | `data/hn-canon-monthly.csv` | CSV | HN canon: top-10 stories per month, Feb 2007 → today |
 | `data/show-hn-monthly.csv` | CSV | Show HN canon: top-10 launches per month, Jan 2012 → today |
 | `data/ask-hn-monthly.csv` | CSV | Ask/Tell HN canon: top-10 questions per month, Feb 2007 → today |
-| `docs/index.json` | JSON | Index of `docs/digest/` weekly digests and `docs/movers/` reports |
+| `docs/index.json` | JSON | Index of `docs/digest/` weekly digests, `docs/movers/` reports and `docs/brief/` daily briefs |
+| `docs/brief/YYYY-MM-DD.md` | Markdown | Rule-based daily prose brief: top story, biggest climber, new entries, streaks, source mix |
 | `feed.xml` | RSS | Daily snapshots + movers + digests as feed items |
 
 Schema for item rows: `source, rank, title, url, score, metric, comments, author, tags, captured_at` — see [data-dictionary.md](data-dictionary.md).
