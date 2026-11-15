@@ -3,6 +3,7 @@ name: daily snapshot
 on:
   schedule:
     - cron: "5 6 * * *"   # 06:05 UTC every day
+    - cron: "5 18 * * *"  # 18:05 UTC — second pass catches items that arrive late in the day
   workflow_dispatch:       # manual "Run workflow" button
   push:
     paths: ["scripts/**", ".github/workflows/collect.yml"]
