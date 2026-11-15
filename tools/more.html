@@ -180,6 +180,7 @@
   </footer>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
 <script>
 const TOOLS = [
   {id:"diff", label:"Text diff"},
@@ -245,66 +246,8 @@ function diffSwap() {
 ["diff-a","diff-b"].forEach(id => document.getElementById(id).addEventListener("input", diffGo));
 
 // ---- Markdown (minimal, escape-first) ----
-function mdInline(s) {
-  s = s.replace(/`([^`]+)`/g, (m, c) => `<code>${c}</code>`);
-  s = s.replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>").replace(/__([^_]+)__/g, "<b>$1</b>");
-  s = s.replace(/\*([^*\n]+)\*/g, "<i>$1</i>").replace(/\b_([^_\n]+)_/g, "<i>$1</i>");
-  s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+|[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
-  s = s.replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, '<img alt="$1" src="$2" style="max-width:100%">');
-  return s;
-}
-function mdRender(src) {
-  const lines = src.split("\n");
-  let html = "", inCode = false, list = null, para = [], tbl = null;
-  const flushPara = () => { if (para.length) { html += `<p>${mdInline(para.join(" "))}</p>`; para = []; } };
-  const flushList = () => { if (list) { html += `</${list}>`; list = null; } };
-  const flushTbl = () => { if (tbl) { html += "</table>"; tbl = null; } };
-  for (let raw of lines) {
-    if (/^```/.test(raw)) {
-      flushPara(); flushList(); flushTbl();
-      html += inCode ? "</code></pre>" : "<pre><code>";
-      inCode = !inCode; continue;
-    }
-    if (inCode) { html += esc(raw) + "\n"; continue; }
-    const t = raw.trimEnd();
-    if (!t.trim()) { flushPara(); flushList(); flushTbl(); continue; }
-    if (/^\|.+\|$/.test(t)) {
-      flushPara(); flushList();
-      const cells = t.split("|").slice(1, -1).map(c => c.trim());
-      if (cells.every(c => /^:?-+:?$/.test(c))) continue; // separator row
-      if (!tbl) { tbl = true; html += "<table>"; }
-      html += "<tr>" + cells.map(c => `<td>${mdInline(esc(c))}</td>`).join("") + "</tr>";
-      continue;
-    }
-    flushTbl();
-    let m;
-    if (m = t.match(/^(#{1,6})\s+(.*)/)) {
-      flushPara(); flushList();
-      const lv = Math.min(m[1].length, 3);
-      html += `<h${lv}>${mdInline(esc(m[2]))}</h${lv}>`;
-    } else if (/^(-{3,}|\*{3,})$/.test(t)) {
-      flushPara(); flushList(); html += "<hr>";
-    } else if (m = t.match(/^&gt;|^>/)) {
-      flushPara(); flushList();
-      html += `<blockquote>${mdInline(esc(t.replace(/^&gt;|^>\s?/, "")))}</blockquote>`;
-    } else if (m = t.match(/^[-*+]\s+(.*)/)) {
-      flushPara();
-      if (list !== "ul") { flushList(); html += "<ul>"; list = "ul"; }
-      html += `<li>${mdInline(esc(m[1]))}</li>`;
-    } else if (m = t.match(/^\d+[.)]\s+(.*)/)) {
-      flushPara();
-      if (list !== "ol") { flushList(); html += "<ol>"; list = "ol"; }
-      html += `<li>${mdInline(esc(m[1]))}</li>`;
-    } else {
-      flushList(); para.push(esc(t));
-    }
-  }
-  flushPara(); flushList(); flushTbl();
-  if (inCode) html += "</code></pre>";
-  return html;
-}
 function mdGo() {
-  document.getElementById("md-out").innerHTML = mdRender(document.getElementById("md-in").value);
+  document.getElementById("md-out").innerHTML = marked.parse(document.getElementById("md-in").value, { gfm: true, breaks: false });
 }
 document.getElementById("md-in").addEventListener("input", mdGo);
 mdGo();
