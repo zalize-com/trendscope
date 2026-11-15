@@ -1,7 +1,24 @@
 {
- "generated_at": "2026-11-15T19:33:10.830032+00:00",
+ "generated_at": "2026-11-15T19:36:31.568348+00:00",
  "latest_snapshot": "2026-11-15",
  "crossovers": [
+  {
+   "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml",
+   "title": "Writing a DSL for high performance parallel programming in OxCaml",
+   "sources": [
+    "blogjanestreet",
+    "blogsjanestreet",
+    "lobsters",
+    "v2ocaml"
+   ],
+   "days": 2,
+   "best": {
+    "score": 15,
+    "metric": "feed rank",
+    "source": "blogjanestreet",
+    "date": "2026-11-15"
+   }
+  },
   {
    "url": "https://blog.rust-lang.org/2026/11/12/rust-1.100.0",
    "title": "Announcing Rust 1.100.0",
@@ -16,22 +33,6 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-12"
-   }
-  },
-  {
-   "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml",
-   "title": "Writing a DSL for high performance parallel programming in OxCaml",
-   "sources": [
-    "blogjanestreet",
-    "lobsters",
-    "v2ocaml"
-   ],
-   "days": 2,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "blogjanestreet",
-    "date": "2026-11-15"
    }
   },
   {
@@ -411,6 +412,21 @@
    }
   },
   {
+   "url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little",
+   "title": "Our software engineering interviews are changing (a little)",
+   "sources": [
+    "blogjanestreet",
+    "blogsjanestreet"
+   ],
+   "days": 1,
+   "best": {
+    "score": 14,
+    "metric": "feed rank",
+    "source": "blogjanestreet",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "url": "https://css-tricks.com/re-implementing-nth-child-with-modern-css",
    "title": "Re-Implementing :nth-child() With Modern CSS",
    "sources": [
@@ -437,6 +453,21 @@
     "score": 13,
     "metric": "feed rank",
     "source": "codinghorror",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://blog.janestreet.com/flex-model-an-event-driven-feature-engineering-system",
+   "title": "Flex Model: an event-driven feature engineering system",
+   "sources": [
+    "blogjanestreet",
+    "blogsjanestreet"
+   ],
+   "days": 1,
+   "best": {
+    "score": 13,
+    "metric": "feed rank",
+    "source": "blogjanestreet",
     "date": "2026-11-15"
    }
   },
@@ -486,6 +517,21 @@
    }
   },
   {
+   "url": "https://blog.janestreet.com/config-management-orchestrator-for-windows",
+   "title": "Building and testing a config management orchestrator for Windows",
+   "sources": [
+    "blogjanestreet",
+    "blogsjanestreet"
+   ],
+   "days": 1,
+   "best": {
+    "score": 12,
+    "metric": "feed rank",
+    "source": "blogjanestreet",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "url": "https://blog.codinghorror.com/thank-you-for-being-a-friend",
    "title": "Thank You For Being a Friend",
    "sources": [
@@ -497,6 +543,21 @@
     "score": 11,
     "metric": "feed rank",
     "source": "codinghorror",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://blog.janestreet.com/scaling-and-benchmarking-a-critical-message-bus",
+   "title": "Scaling and benchmarking a critical message bus using a new indexing strategy",
+   "sources": [
+    "blogjanestreet",
+    "blogsjanestreet"
+   ],
+   "days": 1,
+   "best": {
+    "score": 11,
+    "metric": "feed rank",
+    "source": "blogjanestreet",
     "date": "2026-11-15"
    }
   },
@@ -542,6 +603,21 @@
     "score": 10,
     "metric": "feed rank",
     "source": "erlang",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://blog.janestreet.com/how-recurring-network-maintenance-exposed-6-bugs",
+   "title": "How recurring network maintenance exposed 6 bugs",
+   "sources": [
+    "blogjanestreet",
+    "blogsjanestreet"
+   ],
+   "days": 1,
+   "best": {
+    "score": 10,
+    "metric": "feed rank",
+    "source": "blogjanestreet",
     "date": "2026-11-15"
    }
   },
@@ -606,6 +682,21 @@
    }
   },
   {
+   "url": "https://blog.janestreet.com/asic-puzzle-results",
+   "title": "Results from the ASIC puzzle",
+   "sources": [
+    "blogjanestreet",
+    "blogsjanestreet"
+   ],
+   "days": 1,
+   "best": {
+    "score": 9,
+    "metric": "feed rank",
+    "source": "blogjanestreet",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "url": "https://blog.codinghorror.com/lets-talk-about-the-american-dream",
    "title": "Let's Talk About The American Dream",
    "sources": [
@@ -651,107 +742,17 @@
    }
   },
   {
-   "url": "https://blog.codinghorror.com/stay-gold-america",
-   "title": "Stay Gold, America",
+   "url": "https://blog.janestreet.com/linux-engineering-kernel-reporter-index",
+   "title": "A resilient kernel log reporter",
    "sources": [
-    "codinghorror",
-    "codinghorror2"
+    "blogjanestreet",
+    "blogsjanestreet"
    ],
    "days": 1,
    "best": {
-    "score": 7,
+    "score": 8,
     "metric": "feed rank",
-    "source": "codinghorror",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://surfingcomplexity.blog/2026/10/18/anthropic-and-the-changing-nature-of-work",
-   "title": "Anthropic and the changing nature of work",
-   "sources": [
-    "lorinhochstein",
-    "surfingcomplexity"
-   ],
-   "days": 1,
-   "best": {
-    "score": 7,
-    "metric": "feed rank",
-    "source": "surfingcomplexity",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.codinghorror.com/the-great-filter-comes-for-us-all",
-   "title": "The Great Filter Comes For Us All",
-   "sources": [
-    "codinghorror",
-    "codinghorror2"
-   ],
-   "days": 1,
-   "best": {
-    "score": 6,
-    "metric": "feed rank",
-    "source": "codinghorror",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://surfingcomplexity.blog/2026/10/03/quick-thoughts-on-githubs-sept-23-incident",
-   "title": "Quick thoughts on GitHub’s Sept 23 incident",
-   "sources": [
-    "lorinhochstein",
-    "surfingcomplexity"
-   ],
-   "days": 1,
-   "best": {
-    "score": 6,
-    "metric": "feed rank",
-    "source": "surfingcomplexity",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.codinghorror.com/i-fight-for-the-users",
-   "title": "I Fight For The Users",
-   "sources": [
-    "codinghorror",
-    "codinghorror2"
-   ],
-   "days": 1,
-   "best": {
-    "score": 5,
-    "metric": "feed rank",
-    "source": "codinghorror",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://surfingcomplexity.blog/2026/10/02/there-was-a-light-that-never-went-out",
-   "title": "There was a light that never went out",
-   "sources": [
-    "lorinhochstein",
-    "surfingcomplexity"
-   ],
-   "days": 1,
-   "best": {
-    "score": 5,
-    "metric": "feed rank",
-    "source": "surfingcomplexity",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://ferd.ca/control-and-complexity-tension-in-systems-design.html",
-   "title": "Control and complexity: tension in systems design",
-   "sources": [
-    "ferd",
-    "planeterlang"
-   ],
-   "days": 1,
-   "best": {
-    "score": 5,
-    "metric": "feed rank",
-    "source": "planeterlang",
+    "source": "blogjanestreet",
     "date": "2026-11-15"
    }
   }

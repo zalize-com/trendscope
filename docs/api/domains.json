@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T19:33:10.830032+00:00",
+ "generated_at": "2026-11-15T19:36:31.568348+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 1718,
+ "total": 1736,
  "domains": [
   {
    "hostname": "blog.google",
@@ -99,6 +99,24 @@
    }
   },
   {
+   "hostname": "blog.janestreet.com",
+   "days_on_board": 2,
+   "items": 33,
+   "sources": [
+    "blogjanestreet",
+    "blogsjanestreet",
+    "lobsters",
+    "v2ocaml"
+   ],
+   "top_hit": {
+    "title": "Writing a DSL for high performance parallel programming in OxCaml",
+    "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "youtube.com",
    "days_on_board": 2,
    "items": 32,
@@ -141,23 +159,6 @@
     "score": 378,
     "metric": "points",
     "date": "2026-11-11"
-   }
-  },
-  {
-   "hostname": "blog.janestreet.com",
-   "days_on_board": 2,
-   "items": 18,
-   "sources": [
-    "blogjanestreet",
-    "lobsters",
-    "v2ocaml"
-   ],
-   "top_hit": {
-    "title": "Writing a DSL for high performance parallel programming in OxCaml",
-    "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
    }
   },
   {

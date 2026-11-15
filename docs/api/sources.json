@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-15T19:33:11.951682+00:00",
+  "generated_at": "2026-11-15T19:36:32.711477+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
-      "items": 190,
-      "unique_urls": 177,
+      "items": 191,
+      "unique_urls": 178,
       "median_days_on_board": 1,
       "one_day_pct": 93,
       "top_item": {
@@ -218,7 +218,7 @@
         "rank": 16
       }
     },
-    "v2ocaml": {
+    "blogsjanestreet": {
       "items": 16,
       "unique_urls": 15,
       "median_days_on_board": 1,
@@ -9014,6 +9014,114 @@
         "rank": 1
       }
     },
+    "blogjoda": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Embedded records - extracting data from classes",
+        "url": "http://blog.joda.org/2025/11/embedded-records.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogjooq": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Simplifying ANTI JOIN with jOOQ Syntax",
+        "url": "https://blog.jooq.org/simplifying-anti-join-with-jooq-syntax/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogmitrichev": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "A humanity week",
+        "url": "http://blog.mitrichev.ch/2026/07/a-humanity-week.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogmonstermuffin": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Git Pushing My Way To Disaster",
+        "url": "https://blog.muffn.io/posts/git-pushing-my-way-to-disaster/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogpchudzik": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How to setup remote docker host",
+        "url": "https://blog.pchudzik.com/202209/remote-docker/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogrinesi": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Citadel",
+        "url": "https://blog.rinesi.com/2026/02/citadel",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogsnvidia": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How AI Is Helping Care Teams Get Patients the Right Care, Sooner",
+        "url": "https://blogs.nvidia.com/blog/how-ai-is-helping-care-teams/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "carlosbecker": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Old man goes to a Jiu Jitsu tournament",
+        "url": "https://carlosbecker.com/posts/bjj-comp/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "cloudblogcsc": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Docker Hub pull rate limits hit Rahti",
+        "url": "https://cloud.blog.csc.fi/2021/03/docker-hub-pull-rate-limits-hit-rahti.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -9036,18 +9144,6 @@
         "url": "https://gwern.substack.com/p/may-2021-gwernnet-newsletter",
         "score": 14,
         "rank": 1
-      }
-    },
-    "blogjanestreet": {
-      "items": 14,
-      "unique_urls": 14,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Our software engineering interviews are changing (a little)",
-        "url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/",
-        "score": 14,
-        "rank": 2
       }
     },
     "bogoyavlensky": {
@@ -9094,6 +9190,18 @@
       "top_item": {
         "title": "Tiny Website | Tiny Projects",
         "url": "https://tinyprojects.dev/projects/tiny_website",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "v2ocaml": {
+      "items": 14,
+      "unique_urls": 14,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "curry: a modern Emacs mode for Haskell",
+        "url": "https://lambdafoo.com/posts/2026-11-15-curry-mode.html",
         "score": 15,
         "rank": 1
       }
@@ -15446,6 +15554,90 @@
         "rank": 1
       }
     },
+    "blogjgrossi": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Querying and Eager Loading complex relations in Laravel",
+        "url": "https://blog.jgrossi.com/2018/querying-and-eager-loading-complex-relations-in-laravel/?utm_source=rss&utm_medium=rss&utm_campaign=querying-and-eager-loading-complex-relations-in-laravel",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogocto": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "J'ai demandé un PowerPoint à des agents : le premier, on voulait l'oublier ; le dernier, tout le monde l'a accepté",
+        "url": "https://blog.octo.com/j'ai-demande-un-powerpoint-a-des-agents--le-premier-on-voulait-l'oublier-le-dernier-tout-le-monde-l'a-accepte",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogpalantir": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Early Talent Hiring at Palantir",
+        "url": "https://blog.palantir.com/early-talent-hiring-at-palantir-c7388f1fdab7?source=rss----3c87dc14372f---4",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogrtwilson": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "I released Cloud-Native Environment Agency DEM data!",
+        "url": "https://blog.rtwilson.com/i-released-cloud-native-environment-agency-dem-data/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "bohops": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Abusing .NET Core CLR Diagnostic Features (+ CVE-2023-33127)",
+        "url": "https://bohops.com/2023/11/27/abusing-net-core-clr-diagnostic-features-cve-2023-33127/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "brendaneich": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "My dotJS 2017 Keynote",
+        "url": "https://brendaneich.com/2017/12/my-dotjs-2017-keynote/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "codeblender": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Project Setup: What’s In and What’s Next",
+        "url": "https://code.blender.org/2026/11/project-setup-whats-in-and-whats-next/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "hackaday": {
       "items": 9,
       "unique_urls": 9,
@@ -15611,6 +15803,18 @@
         "title": "Firefox for Android release 160 is out!",
         "url": "https://developer.mozilla.org/docs/Mozilla/Firefox/Releases/160",
         "score": 15,
+        "rank": 1
+      }
+    },
+    "blogreverberate": {
+      "items": 9,
+      "unique_urls": 9,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "A Tail Calling Interpreter For Python (And Other Updates)",
+        "url": "https://blog.reverberate.org/2025/02/10/tail-call-updates.html",
+        "score": 9,
         "rank": 1
       }
     },
@@ -16042,6 +16246,18 @@
       "top_item": {
         "title": "Throwaway Work",
         "url": "https://vgpena.github.io/throwaway-work/",
+        "score": 6,
+        "rank": 1
+      }
+    },
+    "blogsensible": {
+      "items": 6,
+      "unique_urls": 6,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "SSH Tunnel - Local and Remote Port Forwarding Explained With Examples",
+        "url": "/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html",
         "score": 6,
         "rank": 1
       }
