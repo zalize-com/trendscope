@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T14:53:56.242846+00:00",
+ "generated_at": "2026-11-15T14:55:20.047694+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 980,
- "unique_urls": 842,
- "items_in_latest": 576,
- "items_per_day_avg": 108.9,
+ "total_rows": 995,
+ "unique_urls": 857,
+ "items_in_latest": 590,
+ "items_per_day_avg": 110.6,
  "sources": {
   "antirez": {
    "rows": 15,
@@ -22,8 +22,12 @@
    "days_active": 1
   },
   "ask_hn": {
-   "rows": 76,
+   "rows": 77,
    "days_active": 8
+  },
+  "beesbuzz": {
+   "rows": 14,
+   "days_active": 1
   },
   "bendersky": {
    "rows": 5,

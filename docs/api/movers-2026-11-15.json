@@ -1,7 +1,7 @@
 {
  "a": "2026-11-14",
  "b": "2026-11-15",
- "generated": "2026-11-15 14:53 UTC",
+ "generated": "2026-11-15 14:55 UTC",
  "entered": [
   {
    "title": "SpaceX catches the Starship to end Flight 15",
@@ -15,7 +15,7 @@
    "title": "Eynnzerr/TelemetryCleaner",
    "url": "https://github.com/Eynnzerr/TelemetryCleaner",
    "source": "github_trending",
-   "score": 885,
+   "score": 886,
    "metric": "stars",
    "rank": 12
   },
@@ -23,7 +23,7 @@
    "title": "duwqijlk/muse-protocol",
    "url": "https://github.com/duwqijlk/muse-protocol",
    "source": "github_trending",
-   "score": 842,
+   "score": 844,
    "metric": "stars",
    "rank": 14
   },
@@ -49,14 +49,6 @@
    "source": "lemmy",
    "score": 197,
    "metric": "score",
-   "rank": 1
-  },
-  {
-   "title": "U.S. October PPI Rises 6.5% YoY, Highest in Nearly Four Years",
-   "url": "https://news.ycombinator.com/item?id=50484421",
-   "source": "ask_hn",
-   "score": 174,
-   "metric": "points",
    "rank": 1
   },
   {
@@ -161,7 +153,15 @@
    "source": "ask_hn",
    "score": 44,
    "metric": "points",
-   "rank": 3
+   "rank": 2
+  },
+  {
+   "title": "Personal programming thoughts",
+   "url": "https://akselmo.dev/posts/programming-thoughts/",
+   "source": "lemmy",
+   "score": 44,
+   "metric": "score",
+   "rank": 5
   }
  ],
  "left": [
@@ -331,10 +331,10 @@
    "title": "deepseek-ai/chat-demo",
    "url": "https://github.com/deepseek-ai/chat-demo",
    "source": "github_trending",
-   "score": 2387,
+   "score": 2391,
    "metric": "stars",
    "rank": 2,
-   "delta": 685
+   "delta": 689
   },
   {
    "title": "Lovable apps expose passport details and more than 200K private messages",
@@ -403,10 +403,10 @@
    "title": "huamidev/GestaltX",
    "url": "https://github.com/huamidev/GestaltX",
    "source": "github_trending",
-   "score": 7701,
+   "score": 7702,
    "metric": "stars",
    "rank": 1,
-   "delta": 155
+   "delta": 156
   },
   {
    "title": "Why get an expensive Pi when I have an old phone?",
@@ -421,10 +421,10 @@
    "title": "FrigadeHQ/yogurt",
    "url": "https://github.com/FrigadeHQ/yogurt",
    "source": "github_trending",
-   "score": 1579,
+   "score": 1580,
    "metric": "stars",
    "rank": 5,
-   "delta": 131
+   "delta": 132
   },
   {
    "title": "PyPI's redesigned project pages with clearer security signals are now live",
@@ -524,7 +524,7 @@
    "source": "ask_hn",
    "score": 15,
    "metric": "points",
-   "rank": 7,
+   "rank": 5,
    "delta": 0
   },
   {
@@ -533,7 +533,7 @@
    "source": "ask_hn",
    "score": 8,
    "metric": "points",
-   "rank": 10,
+   "rank": 8,
    "delta": 0
   },
   {
@@ -542,7 +542,16 @@
    "source": "ask_hn",
    "score": 7,
    "metric": "points",
-   "rank": 11,
+   "rank": 9,
+   "delta": 0
+  },
+  {
+   "title": "Ask HN: How do you decide when to stick with a project",
+   "url": "https://news.ycombinator.com/item?id=50498484",
+   "source": "ask_hn",
+   "score": 5,
+   "metric": "points",
+   "rank": 12,
    "delta": 0
   },
   {
@@ -569,7 +578,7 @@
    "source": "ask_hn",
    "score": 9,
    "metric": "points",
-   "rank": 8,
+   "rank": 6,
    "delta": 1
   },
   {
@@ -650,7 +659,7 @@
    "source": "ask_hn",
    "score": 86,
    "metric": "points",
-   "rank": 2,
+   "rank": 1,
    "delta": 4
   },
   {
@@ -679,15 +688,6 @@
    "metric": "score",
    "rank": 2,
    "delta": 7
-  },
-  {
-   "title": "Solving the fox game",
-   "url": "http://blog.sesse.net/blog/tech/2026-11-13-19-51_solving_the_fox_game.html",
-   "source": "lobsters",
-   "score": 21,
-   "metric": "score",
-   "rank": 6,
-   "delta": 9
   }
  ],
  "pkg_rank_up": [],
