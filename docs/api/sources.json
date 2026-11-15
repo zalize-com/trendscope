@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T15:23:55.710126+00:00",
+  "generated_at": "2026-11-15T15:25:38.762385+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -466,6 +466,18 @@
       "top_item": {
         "title": "Discord <3 Linux: A Year of Upgrades",
         "url": "https://discord.com/blog/discord-linux-a-year-of-upgrades",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "vercel": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Daemons can now send traces to Vercel Tracing",
+        "url": "https://vercel.com/changelog/vercel-daemons-can-now-send-traces-to-vercel-tracing",
         "score": 15,
         "rank": 1
       }

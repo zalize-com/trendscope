@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T15:23:55.624446+00:00",
+ "generated_at": "2026-11-15T15:25:38.676704+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 861,
- "new_items": 735,
+ "total_items": 876,
+ "new_items": 750,
  "by_source": {
   "producthunt": 45,
   "hackernews": 26,
@@ -36,6 +36,7 @@
   "soblog": 15,
   "swizec": 15,
   "theregister": 15,
+  "vercel": 15,
   "beesbuzz": 14,
   "theverge": 14,
   "dropbox": 10,
@@ -5857,6 +5858,126 @@
    "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
    "source": "theverge",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Daemons can now send traces to Vercel Tracing",
+   "url": "https://vercel.com/changelog/vercel-daemons-can-now-send-traces-to-vercel-tracing",
+   "source": "vercel",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Token Pass now includes $150 in tokens for $30/month",
+   "url": "https://vercel.com/changelog/vercel-token-pass-now-includes-one-hundred-fifty-dollars-of-monthly-tokens",
+   "source": "vercel",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vercel Security Review no longer requires a linked Vercel project",
+   "url": "https://vercel.com/changelog/vercel-security-review-no-longer-requires-a-linked-vercel-project",
+   "source": "vercel",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vercel Sandbox starts up to 4x faster",
+   "url": "https://vercel.com/changelog/vercel-sandbox-starts-up-to-four-times-faster",
+   "source": "vercel",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build cache size limit on Vercel increased to 5 GB",
+   "url": "https://vercel.com/changelog/build-cache-size-limit-on-vercel-increased-to-five-gb",
+   "source": "vercel",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Parallel Decisions now available on AI Gateway for free",
+   "url": "https://vercel.com/changelog/parallel-decisions-now-available-on-ai-gateway-for-free",
+   "source": "vercel",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kimi K3.1 Pro is now available in Token Pass",
+   "url": "https://vercel.com/changelog/kimi-k3-1-pro-is-now-available-in-token-pass",
+   "source": "vercel",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Workflow SDK 5: built for production",
+   "url": "https://vercel.com/blog/workflow-sdk-5",
+   "source": "vercel",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vercel Sandbox now supports managed npm credentials",
+   "url": "https://vercel.com/changelog/vercel-sandbox-now-supports-managed-npm-credentials",
+   "source": "vercel",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python 3.15 now available as a Vercel Managed Image",
+   "url": "https://vercel.com/changelog/python-3-15-now-available-as-a-vercel-managed-image",
+   "source": "vercel",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inkling 2 Small now available on AI Gateway",
+   "url": "https://vercel.com/changelog/inkling-2-small-now-available-on-ai-gateway",
+   "source": "vercel",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gemini 4 Hydrogen now available on AI Gateway",
+   "url": "https://vercel.com/changelog/gemini-4-hydrogen-now-available-on-ai-gateway",
+   "source": "vercel",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gemini Decision 1 now available on AI Gateway",
+   "url": "https://vercel.com/changelog/gemini-decision-1-now-available-on-ai-gateway",
+   "source": "vercel",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MiniMax H3 Image and Highspeed now available on AI Gateway",
+   "url": "https://vercel.com/changelog/minimax-h3-image-and-highspeed-now-available-on-ai-gateway",
+   "source": "vercel",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gemini 4 Carbon now available on AI Gateway",
+   "url": "https://vercel.com/changelog/gemini-4-carbon-now-available-on-ai-gateway",
+   "source": "vercel",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },

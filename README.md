@@ -79,6 +79,7 @@ A daily cross-source snapshot of developer attention:
 | Etsy Code as Craft | marketplace engineering | `etsy.com/codeascraft/rss` |
 | Discord Blog | chat platform engineering | `discord.com/blog/rss.xml` |
 | Stripe Blog | payments infrastructure | `stripe.com/blog/feed.rss` |
+| Vercel Blog | frontend cloud platform | `vercel.com/atom` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
