@@ -25,6 +25,12 @@ td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertic
 th{color:var(--dim);font-weight:normal;font-size:11px;text-transform:uppercase}
 code{background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:12px}
 .tag{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 7px;font-size:11px;color:var(--dim)}
+
+  /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
+  :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
 </style>
 </head>
 <body>

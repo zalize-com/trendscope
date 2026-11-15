@@ -39,6 +39,12 @@
   #err { color: var(--dim); }
   .chip { display:inline-block; padding:2px 9px; border:1px solid var(--border); border-radius:12px; font-size:12px; color:var(--fg); text-decoration:none; margin:2px 3px 2px 0; opacity:.75; }
   .chip.on { opacity:1; border-color:var(--accent); color:var(--accent); }
+
+  /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
+  :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
 </style>
 </head>
 <body>

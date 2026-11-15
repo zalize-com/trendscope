@@ -49,6 +49,12 @@
   .db { display:inline-flex; flex-direction:column; align-items:center; gap:2px; }
   .db i { display:block; width:14px; background:var(--accent,#58a6ff); opacity:.65; border-radius:2px; }
   .db s { text-decoration:none; font-size:9px; color:var(--dim); }
+
+  /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
+  :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
 </style>
 </head>
 <body>

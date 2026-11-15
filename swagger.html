@@ -21,6 +21,12 @@ nav{font-size:13px;margin:8px 0 16px}
 nav a{margin-right:8px;color:#0969da;text-decoration:none}
 .swagger-ui .topbar{display:none}
 #err{color:#cf222e;margin-top:16px}
+
+  /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
+  :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
 </style>
 </head>
 <body>

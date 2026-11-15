@@ -39,6 +39,12 @@
            padding: 16px 18px; margin: 8px 0; }
   .pitch b { color: var(--orange); }
   ul { padding-left: 18px; margin: 6px 0; } li { padding: 2px 0; }
+
+  /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
+  :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
 </style>
 </head>
 <body>

@@ -132,6 +132,12 @@
   .meta a.authl, .meta a.doml { color: var(--dim); font-size: 11px; margin-left: 6px; }
   .meta a.authl:hover, .meta a.doml:hover { color: var(--accent); }
   svg.lucide { width: 13px; height: 13px; vertical-align: -2px; stroke-width: 2; }
+
+  /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
+  :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
 </style>
 </head>
 <body>

@@ -18,6 +18,12 @@ nav a{margin-right:8px}
 .muted{color:var(--dim)}
 table{border-collapse:collapse;font-size:13px;width:100%}
 th,td{border:1px solid var(--line);padding:4px 10px;text-align:left}
+
+  /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
+  :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
 </style>
 <meta property="og:title" content="trendscope — board veterans">
 <meta property="og:type" content="website">
