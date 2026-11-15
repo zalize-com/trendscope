@@ -1,5 +1,7 @@
 # trendscope
 
+[中文 README →](README-zh.md)
+
 > The developer attention dataset — what developers are reading, building and
 > downloading, snapshotted daily. Open data (CC0), updated by GitHub Actions.
 
