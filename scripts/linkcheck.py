@@ -151,6 +151,12 @@ for page in sorted(pages):
         end_state = js_string_scan(m.group(1))
         check(end_state is None,
               f"{rel}: inline script #{idx} ends inside {end_state} literal (syntax break → blank page)")
+        # a page that calls $( must define it — a replace can silently eat the
+        # helper and kill every tool on the page (2026-11-15 dev.html incident)
+        body = m.group(1)
+        if re.search(r"(?<![\w$])\$\(", body):
+            check(re.search(r"(const|let|var|function)\s+\$(?!\w)", body) is not None,
+                  f"{rel}: inline script uses $() but never defines $ (blank page)")
 
 # every sitemap entry must resolve to a real page; ?t= entries must name a
 # tool tab that actually exists on that page
