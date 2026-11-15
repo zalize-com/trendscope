@@ -32,7 +32,7 @@
 - [docs/api/series.json](docs/api/series.json): per-item daily series — the canonical feed every analytic page reads
 - [docs/api/crossovers.json](docs/api/crossovers.json): same URL ranked on 2+ sources
 - [docs/api/domains.json](docs/api/domains.json) / [docs/api/authors.json](docs/api/authors.json) / [docs/api/sources.json](docs/api/sources.json): entity leaderboards
-- [docs/api/discussed.json](docs/api/discussed.json) / [docs/api/risers.json](docs/api/risers.json) / [docs/api/streaks.json](docs/api/streaks.json): comment, spike and streak leaderboards
+- [docs/api/discussed.json](docs/api/discussed.json): comment leaderboards
 - [feed.xml](feed.xml): RSS — daily snapshot + movers + weekly digests
 - [feed.json](feed.json): JSON Feed v1.1
 - [docs/api.md](docs/api.md): API index with examples
