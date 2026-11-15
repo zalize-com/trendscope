@@ -28,6 +28,9 @@ A daily cross-source snapshot of developer attention:
 | PyPI | monthly downloads (watchlist) | `pypistats.org` |
 | crates.io | recent downloads | `crates.io/api` |
 
+Every run also writes `data/health.json` — per-source item count and latency —
+shown as the health line on the dashboard.
+
 Every record carries `url` + `captured_at` for provenance, plus a per-source
 `rank`. Scores are source-native (points / stars / reactions / downloads) —
 compare within a source, not across.
@@ -60,6 +63,9 @@ compare within a source, not across.
   as markdown in `docs/movers/` and shipped in `feed.xml`.
 - **Embed widget** (`embed.html`): the top-10 board as a drop-in iframe for
   blogs/docs (no signup, updates daily):
+
+  The Packages tab also supports a personal npm watchlist
+  (`?pkgs=hono,zod` — saved in the browser, shareable).
 
 ```html
 <iframe src="https://zalize-com.github.io/trendscope/embed.html" width="400" height="520" frameborder="0"></iframe>
