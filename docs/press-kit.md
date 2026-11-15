@@ -43,8 +43,8 @@ One-pager for anyone writing about or linking to this project.
 
 ## Links
 
-- Repo: https://github.com/zalize-com/feedpaper is feedpaper;
-  trendscope: https://github.com/zalize-com/trendscope
+- Repo: https://github.com/zalize-com/trendscope
+- Sister project: https://github.com/zalize-com/feedpaper
 - API docs: `docs/api.md` · FAQ: `docs/faq.md` · Citation: `CITATION.cff`
 
 ## Contact
