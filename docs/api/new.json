@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T15:15:59.061632+00:00",
+ "generated_at": "2026-11-15T15:17:41.282409+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 810,
- "new_items": 684,
+ "total_items": 820,
+ "new_items": 694,
  "by_source": {
   "producthunt": 45,
   "hackernews": 26,
@@ -46,6 +46,7 @@
   "lyft": 10,
   "netflix": 10,
   "opensourcecom": 10,
+  "pinterest": 10,
   "wingolog": 10,
   "susam": 9,
   "hackaday": 8,
@@ -3613,6 +3614,86 @@
    "url": "https://os.phil-opp.com/testing/",
    "source": "philopp",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Pinterest Improved Analytics Agent Compliance with Loop Engineering",
+   "url": "https://medium.com/pinterest-engineering/how-pinterest-improved-analytics-agent-compliance-with-loop-engineering-d3c52d0abaa2?source=rss-ef81ef829bcb------2",
+   "source": "pinterest",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Safe and Efficient Multi-Epoch Embedding Training",
+   "url": "https://medium.com/pinterest-engineering/safe-and-efficient-multi-epoch-embedding-training-103bec2abc83?source=rss-ef81ef829bcb------2",
+   "source": "pinterest",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scaling Model Evaluation at Pinterest with Ray (Part 4)",
+   "url": "https://medium.com/pinterest-engineering/scaling-model-evaluation-at-pinterest-with-ray-part-4-4a96cd12cc11?source=rss-ef81ef829bcb------2",
+   "source": "pinterest",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing ModuleLens: Zooming into PyTorch Modules for Human and Agentic Engineering",
+   "url": "https://medium.com/pinterest-engineering/introducing-modulelens-zooming-into-pytorch-modules-for-human-and-agentic-engineering-b7e9be9d29f8?source=rss-ef81ef829bcb------2",
+   "source": "pinterest",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Open Source Profiler on an Internet Scale Fleet: Pinterest and Intel Partnership on gProfiler",
+   "url": "https://medium.com/@Pinterest_Engineering/open-source-profiler-on-an-internet-scale-fleet-pinterest-and-intel-partnership-on-gprofiler-8fcb387d899c?source=rss-ef81ef829bcb------2",
+   "source": "pinterest",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From Activity to Intent: Generating User Journeys with LLMs",
+   "url": "https://medium.com/pinterest-engineering/from-activity-to-intent-generating-user-journeys-with-llms-9652b9417626?source=rss-ef81ef829bcb------2",
+   "source": "pinterest",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Metrics Board: Building an Agent-ready Metrics Layer",
+   "url": "https://medium.com/pinterest-engineering/metrics-board-building-an-agent-ready-metrics-layer-2c8fefe68756?source=rss-ef81ef829bcb------2",
+   "source": "pinterest",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Partition Finalization in Pinterest’s Next-Generation DB Ingestion Framework",
+   "url": "https://medium.com/pinterest-engineering/partition-finalization-in-pinterests-next-generation-db-ingestion-framework-4c7da6e4cc8f?source=rss-ef81ef829bcb------2",
+   "source": "pinterest",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beyond Two Towers: Launching the 3-Tower Engagement Co-Train Model (Part 2)",
+   "url": "https://medium.com/pinterest-engineering/beyond-two-towers-launching-the-3-tower-engagement-co-train-model-part-2-0b96167d2c14?source=rss-ef81ef829bcb------2",
+   "source": "pinterest",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Evolving Pinterest’s Embedding Retrieval Platform",
+   "url": "https://medium.com/pinterest-engineering/evolving-pinterests-embedding-retrieval-platform-aede4e831e01?source=rss-ef81ef829bcb------2",
+   "source": "pinterest",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
