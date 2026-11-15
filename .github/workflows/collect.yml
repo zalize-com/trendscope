@@ -41,7 +41,7 @@ jobs:
         run: |
           git config user.name "trendscope-bot"
           git config user.email "trendscope-bot@users.noreply.github.com"
-          git add data/ docs/digest/ docs/movers/ docs/index.json feed.xml
+          git add data/ docs/digest/ docs/movers/ docs/api/ docs/index.json feed.xml
           if git diff --cached --quiet; then
             echo "No changes"
           else

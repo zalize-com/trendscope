@@ -110,7 +110,24 @@ def main():
     path = os.path.join(OUT, f"{day_b}.md")
     with open(path, "w") as f:
         f.write("\n".join(md))
-    print(f"wrote docs/movers/{day_b}.md (+{len(enter)}/-{len(exit_)}/{len(movers)})")
+
+    api = os.path.join(ROOT, "docs", "api")
+    os.makedirs(api, exist_ok=True)
+    slim = lambda i: {"title": i["title"], "url": i["url"],
+                     "source": i["source"], "score": i["score"],
+                     "metric": i["metric"], "rank": i.get("rank")}
+    api_doc = {
+        "a": day_a, "b": day_b, "generated": gen,
+        "entered": [slim(i) for i in enter[:20]],
+        "left": [slim(i) for i in exit_[:20]],
+        "gainers": [{**slim(i), "delta": d} for i, d in gainers[:20]],
+        "droppers": [{**slim(i), "delta": d} for i, d in droppers[:20]],
+        "pkg_rank_up": [{**slim(i), "rank_delta": d} for i, d in pkg_up[:20]],
+        "pkg_rank_down": [{**slim(i), "rank_delta": d} for i, d in pkg_dn[:20]],
+    }
+    with open(os.path.join(api, "movers-latest.json"), "w") as f:
+        json.dump(api_doc, f, indent=1)
+    print(f"wrote docs/movers/{day_b}.md + api (+{len(enter)}/-{len(exit_)}/{len(movers)})")
 
 
 if __name__ == "__main__":

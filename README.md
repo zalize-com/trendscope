@@ -62,7 +62,8 @@ compare within a source, not across.
   repo and package matching a topic, grouped by source.
 - **Compare** (`compare.html?a=…&b=…`): diff two daily snapshots — entries,
   exits and biggest gainers/droppers. The same diff is auto-published daily
-  as markdown in `docs/movers/` and shipped in `feed.xml`.
+  as markdown in `docs/movers/` and shipped in `feed.xml`. A machine-readable
+  copy lives at `docs/api/movers-latest.json` for programmatic consumers.
 - **Streaks** (`streaks.html`): staying-power leaderboard — items ranked by
   consecutive days on the board, computed client-side from `history.csv`.
 - **Domains** (`domains.html`): most-linked sites across all snapshots,
