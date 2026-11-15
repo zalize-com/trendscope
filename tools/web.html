@@ -77,6 +77,7 @@
     <button data-tool="sitemapgen">sitemap.xml</button>
     <button data-tool="llmstxt">llms.txt</button>
     <button data-tool="manifest">manifest.json</button>
+    <button data-tool="serp">SERP preview</button>
   </div>
 
   <div class="panel" id="p-qr">
@@ -262,6 +263,16 @@
     <div class="err" id="mf-err"></div>
   </div>
 
+  <div class="panel" id="p-serp">
+    <h2>SERP + social card preview</h2>
+    <p class="hint">Paste a page's <code>&lt;head&gt;</code> (or fetch a URL) — see how it renders as a Google result and a social card.</p>
+    <input id="sv-url" placeholder="https://example.com (fetch head)" style="width:58%;padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)">
+    <button id="sv-go" class="copy" style="vertical-align:baseline">fetch</button>
+    <textarea id="sv-in" rows="5" placeholder="<head><title>…</title><meta name=\"description\" content=\"…\">…" style="width:100%;margin-top:8px"></textarea>
+    <div id="sv-out" style="margin-top:12px"></div>
+    <div class="err" id="sv-err"></div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
   <div class="panel" id="p-favicon">
@@ -300,7 +311,7 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots","spage","feed","badge","ogimg","favicon","sitemapgen","llmstxt","manifest"];
+const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots","spage","feed","badge","ogimg","favicon","sitemapgen","llmstxt","manifest","serp"];
 
 // ---- status-page checker ----
 function spreset(u){ const i=document.getElementById("sp-in"); if(i){ i.value=u; i.dispatchEvent(new Event("input")); } return false; }
@@ -463,6 +474,53 @@ document.getElementById("ma-go").addEventListener("click", () => {
   $("mf-start").value = "/"; $("mf-theme").value = "#0d1117"; $("mf-bg").value = "#0d1117";
   $("mf-icons").value = "favicon-16.png,android-chrome-192.png,android-chrome-512.png";
   go();
+})();
+
+/* ---------- SERP + social card preview ---------- */
+(function () {
+  function render() {
+    const src = $("sv-in").value;
+    const out = $("sv-out"); out.innerHTML = "";
+    if (!src.trim()) return;
+    const doc = new DOMParser().parseFromString(src, "text/html");
+    const g = sel => (doc.querySelector(sel) || {}).content || "";
+    const title = doc.querySelector("title")?.textContent?.trim() || "(no title)";
+    const desc = g('meta[name="description"]') || "(no description)";
+    const url = $("sv-url").value.trim() || "https://example.com";
+    const host = (() => { try { return new URL(url).hostname; } catch { return "example.com"; } })();
+    const img = g('meta[property="og:image"]') || g('meta[name="twitter:image"]');
+    const tlen = title.length, dlen = desc.length;
+    const lenNote = (n, lo, hi) => n > hi ? ` <span style="color:#f85149">${n} chars — over ${hi}, likely truncated</span>` : ` <span class="muted">${n} chars</span>`;
+    out.innerHTML = `
+      <div style="background:#fff;color:#202124;border-radius:8px;padding:14px 16px;max-width:600px;font-family:arial,sans-serif">
+        <div style="font-size:12px;color:#4d5156">${host} › …</div>
+        <div style="font-size:20px;color:#1a0dab;line-height:1.3">${title.replace(/</g,"&lt;")}</div>
+        <div style="font-size:13px;color:#4d5156">${desc.replace(/</g,"&lt;")}</div>
+      </div>
+      <div class="hint" style="margin-top:4px">title${lenNote(tlen,50,60)} · description${lenNote(dlen,140,160)}</div>
+      <div style="border:1px solid var(--border);border-radius:10px;overflow:hidden;max-width:500px;margin-top:14px">
+        ${img ? `<img src="${img.replace(/"/g,"&quot;")}" style="width:100%;aspect-ratio:1200/630;object-fit:cover;background:var(--bg)" onerror="this.style.display='none'">` : `<div style="height:120px;display:flex;align-items:center;justify-content:center;color:var(--dim)">no og:image</div>`}
+        <div style="padding:10px 12px;background:var(--bg)">
+          <div class="muted" style="font-size:11px;text-transform:uppercase">${host}</div>
+          <div style="font-weight:600">${(g('meta[property="og:title"]') || title).replace(/</g,"&lt;")}</div>
+          <div class="muted" style="font-size:12px">${(g('meta[property="og:description"]') || desc).replace(/</g,"&lt;").slice(0,140)}</div>
+        </div>
+      </div>`;
+  }
+  $("sv-in").addEventListener("input", render);
+  $("sv-url").addEventListener("input", render);
+  $("sv-go").onclick = async () => {
+    const u = $("sv-url").value.trim(); $("sv-err").textContent = "";
+    try {
+      const html = await fetch(u).then(r => { if (!r.ok) throw 0; return r.text(); });
+      const head = html.match(/<head[\s\S]*?<\/head>/i);
+      $("sv-in").value = head ? head[0] : html.slice(0, 8000);
+      render();
+    } catch { $("sv-err").textContent = "fetch failed (CORS?) — paste the page <head> manually"; }
+  };
+  $("sv-in").value = '<head><title>trendscope — daily trend radar for builders</title><meta name="description" content="One page that watches HN, GitHub, Product Hunt, dev.to, Lobsters, npm, PyPI and 8 more — and keeps a permanent, queryable archive."><meta property="og:title" content="trendscope"><meta property="og:image" content="https://zalize-com.github.io/trendscope/og.png"></head>';
+  $("sv-url").value = "https://zalize-com.github.io/trendscope/";
+  render();
 })();
 
 const t0 = params.get("t") || location.hash.slice(1);
