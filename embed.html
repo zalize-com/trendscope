@@ -176,6 +176,22 @@ if (MODE === "stats") {
       <li><span class="rank">📰</span><span>items in latest snapshot</span><span class="score">${fmt(st.items_in_latest)}</span></li>`;
   }).catch(() => { document.getElementById("err").textContent = "stats unavailable"; });
 } else
+if (MODE === "topics") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/topics.html";
+  fetch("data/topics-history.csv", {cache:"no-cache"}).then(r => r.text()).then(text => {
+    const rows = parseCSV(text), hdr = rows[0];
+    const recs = rows.slice(1).map(r => Object.fromEntries(hdr.map((h,i)=>[h,r[i]])));
+    const day = recs[recs.length-1]?.date || "";
+    const ts = recs.filter(r => r.date === day)
+      .sort((a,b) => +b.count - +a.count).slice(0, 8);
+    const mx = +ts[0]?.count || 1;
+    document.getElementById("date").textContent = `attention mix · ${day}`;
+    document.getElementById("list").innerHTML = ts.map(t =>
+      `<li><span><a href="https://zalize-com.github.io/trendscope/topics.html?t=${encodeURIComponent(t.topic)}" target="_blank" rel="noopener">${esc(t.topic)}</a></span>
+        <span class="score">${t.count} <span style="display:inline-block;width:60px;height:8px;background:var(--accent);opacity:${(+t.count/mx).toFixed(2)};border-radius:2px;margin-left:4px"></span></span></li>`).join("")
+      || `<li id="err">no topics yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "topics data unavailable"; });
+} else
 fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
   document.getElementById("date").textContent = (QT ? QT+" · " : "") + (snap.date || snap.generated_at.slice(0,10));
   const max = {};
