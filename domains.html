@@ -69,60 +69,38 @@ function parseCSV(text) {
   return rows;
 }
 
-const SKIP = new Set(["news.ycombinator.com","github.com","www.npmjs.com","pypi.org","crates.io","dev.to","lobste.rs"]);
-const text = await fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text());
-const rows = parseCSV(text);
-const ci = Object.fromEntries(rows[0].map((h,i)=>[h,i]));
+const [domsApi, crossApi] = await Promise.all([
+  fetch("docs/api/domains.json", {cache:"no-cache"}).then(r => r.json()),
+  fetch("docs/api/crossovers.json", {cache:"no-cache"}).then(r => r.json())]);
 
-const doms = {};
-for (const r of rows.slice(1)) {
-  const url = r[ci.url]; if (!url) continue;
-  let host; try { host = new URL(url).hostname.replace(/^www\./,""); } catch { continue; }
-  if (SKIP.has(host)) continue; // platform self-links aren't signal
-  const d = doms[host] ||= { hits: 0, days: new Set(), srcs: new Set(), top: null };
-  d.hits++; d.days.add(r[ci.date]); d.srcs.add(r[ci.source]);
-  const score = Number(r[ci.score]) || 0;
-  if (!d.top || score > d.top.score) d.top = { title: r[ci.title], url, score, metric: r[ci.metric], date: r[ci.date] };
-}
-const list = Object.entries(doms)
-  .map(([h, d]) => ({ h, ...d, ndays: d.days.size }))
+const list = domsApi.domains
+  .map(d => ({ h: d.hostname, hits: d.items, srcs: d.sources, top: d.top_hit,
+               ndays: d.days_on_board }))
   .sort((a,b) => b.ndays - a.ndays || b.hits - a.hits)
   .slice(0, 40);
 
-// crossovers: same URL picked up by 2+ sources — stories that broke containment
-const byUrl = {};
-for (const r of rows.slice(1)) {
-  const url = r[ci.url]; if (!url) continue;
-  let h = "";
-  try { h = new URL(url).hostname.replace(/^www\./, ""); } catch (_) {}
-  if (SKIP.has(h)) continue; // platform self-links (e.g. an Ask HN permalink) aren't crossovers
-  const e = byUrl[url] ||= { title: r[ci.title], srcs: new Set(), score: 0, metric: r[ci.metric] };
-  e.srcs.add(r[ci.source]);
-  e.score = Math.max(e.score, Number(r[ci.score]) || 0);
-}
-const cross = Object.entries(byUrl).filter(([,e]) => e.srcs.size > 1)
-  .map(([url, e]) => ({ url, ...e }))
-  .sort((a,b) => b.srcs.size - a.srcs.size || b.score - a.score);
+const cross = crossApi.crossovers
+  .map(c => ({ url: c.url, title: c.title, srcs: c.sources, score: c.best.score }))
+  .sort((a,b) => b.srcs.length - a.srcs.length || b.score - a.score);
 
 $("out").innerHTML =
   `<table><tr><th>domain</th><th class="num">days</th><th class="num">items</th><th>sources</th><th>top hit</th></tr>` +
   list.map(d =>
     `<tr><td><a class="dom" href="domain.html?d=${encodeURIComponent(d.h)}">${esc(d.h)}</a></td>
      <td class="num">${d.ndays}</td><td class="num">${d.hits}</td>
-     <td class="srcs">${[...d.srcs].join(", ")}</td>
+     <td class="srcs">${d.srcs.join(", ")}</td>
      <td class="last"><a href="${d.top.url}">${esc(d.top.title.length>70?d.top.title.slice(0,70)+"…":d.top.title)}</a><a href="item.html?q=${encodeURIComponent(d.top.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></td></tr>`
   ).join("") + `</table>` +
   (cross.length ? `<h2 style="margin-top:28px">crossovers — same url on 2+ sources &nbsp;<a href="docs/api/crossovers.json" style="font-size:12px;font-weight:400">↓ json</a></h2><ol>` +
     cross.map(c =>
       `<li><span class="it"><a href="${c.url}">${esc(c.title.length>80?c.title.slice(0,80)+"…":c.title)}</a>` +
-      `<span class="srcs" style="margin-left:6px">${[...c.srcs].join(" + ")}</span>` +
+      `<span class="srcs" style="margin-left:6px">${c.srcs.join(" + ")}</span>` +
       `<a href="item.html?q=${encodeURIComponent(c.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>` +
       `<span class="sc">${fmt(c.score)}</span></li>`).join("") + `</ol>` : "") +
   // source-pair overlap: how many URLs each pair of sources shared
   (() => {
     const pairs = {};
-    for (const [, e] of Object.entries(byUrl)) {
-      if (e.srcs.size < 2) continue;
+    for (const e of cross) {
       const arr = [...e.srcs].sort();
       for (let i = 0; i < arr.length; i++)
         for (let j = i+1; j < arr.length; j++)
