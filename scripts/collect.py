@@ -396,6 +396,34 @@ def fetch_krebs(limit=15):
     return out
 
 
+def fetch_changelog(limit=15):
+    """Changelog News RSS — dev news/podcast lane, position-scored."""
+    print("Fetching Changelog News feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://changelog.com/news/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] changelog attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("title", default="") or "").strip()
+        url = (e.findtext("link", default="") or "").strip() or "https://changelog.com/news"
+        out.append(item(
+            "changelog", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
 def fetch_slashdot(limit=15):
     """Slashdot RSS 1.0 (RDF) — nerd news, position-scored like techmeme."""
     print("Fetching Slashdot feed...")
@@ -660,6 +688,7 @@ def main():
         "techmeme": fetch_techmeme,
         "slashdot": fetch_slashdot,
         "krebs": fetch_krebs,
+        "changelog": fetch_changelog,
         "arstechnica": fetch_arstechnica,
         "theverge": fetch_theverge,
         "arxiv": fetch_arxiv,

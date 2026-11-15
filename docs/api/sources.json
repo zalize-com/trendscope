@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T13:00:08.589997+00:00",
+  "generated_at": "2026-11-15T13:04:00.481812+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -182,9 +182,21 @@
         "rank": 1
       }
     },
+    "changelog": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Bitwarden CLI compromised",
+        "url": "https://changelog.com/news/185",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "theverge": {
-      "items": 11,
-      "unique_urls": 11,
+      "items": 12,
+      "unique_urls": 12,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {

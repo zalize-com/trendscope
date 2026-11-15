@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T13:00:08.741920+00:00",
+ "generated_at": "2026-11-15T13:04:00.434372+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 202,
+ "total": 203,
  "domains": [
   {
    "hostname": "so.long.thanks.fish",
@@ -83,7 +83,7 @@
   {
    "hostname": "theverge.com",
    "days_on_board": 2,
-   "items": 13,
+   "items": 14,
    "sources": [
     "hackernews",
     "theverge"
@@ -596,6 +596,21 @@
    }
   },
   {
+   "hostname": "changelog.com",
+   "days_on_board": 1,
+   "items": 15,
+   "sources": [
+    "changelog"
+   ],
+   "top_hit": {
+    "title": "Bitwarden CLI compromised",
+    "url": "https://changelog.com/news/185",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "krebsonsecurity.com",
    "days_on_board": 1,
    "items": 10,
@@ -742,21 +757,6 @@
     "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
     "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
     "score": 114,
-    "metric": "points",
-    "date": "2026-11-14"
-   }
-  },
-  {
-   "hostname": "beyondloom.com",
-   "days_on_board": 1,
-   "items": 1,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Let's Write a PostScript Interpreter",
-    "url": "https://beyondloom.com/blog/postscript.html",
-    "score": 88,
     "metric": "points",
     "date": "2026-11-14"
    }
