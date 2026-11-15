@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T20:44:17.635979+00:00",
+  "generated_at": "2026-11-15T20:55:31.362870+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -27,8 +27,8 @@
       }
     },
     "show_hn": {
-      "items": 51,
-      "unique_urls": 51,
+      "items": 52,
+      "unique_urls": 52,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -183,8 +183,8 @@
       }
     },
     "theverge": {
-      "items": 18,
-      "unique_urls": 18,
+      "items": 19,
+      "unique_urls": 19,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -192,6 +192,18 @@
         "url": "https://www.theverge.com/science/1033930/spacex-chopstick-starship-catch",
         "score": 10,
         "rank": 1
+      }
+    },
+    "waxy": {
+      "items": 17,
+      "unique_urls": 16,
+      "median_days_on_board": 1,
+      "one_day_pct": 94,
+      "top_item": {
+        "title": "Chimera",
+        "url": "https://chimera-vocal-synth.vercel.app/",
+        "score": 356,
+        "rank": 10
       }
     },
     "thenewstack": {
@@ -218,6 +230,18 @@
         "rank": 3
       }
     },
+    "lemmy": {
+      "items": 16,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 93,
+      "top_item": {
+        "title": "Programming.dev instance: Sponsors needed",
+        "url": "https://legal.programming.dev/docs/donation-policy/",
+        "score": 197,
+        "rank": 1
+      }
+    },
     "jefftk": {
       "items": 16,
       "unique_urls": 15,
@@ -240,18 +264,6 @@
         "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
         "score": 15,
         "rank": 1
-      }
-    },
-    "waxy": {
-      "items": 16,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 93,
-      "top_item": {
-        "title": "Chimera",
-        "url": "https://chimera-vocal-synth.vercel.app/",
-        "score": 356,
-        "rank": 10
       }
     },
     "googleblog": {
@@ -347,18 +359,6 @@
         "title": "Slack’s Migration to a Cellular Architecture",
         "url": "https://www.reddit.com/r/programming/comments/1xwsbxo/slacks_migration_to_a_cellular_architecture/",
         "score": 15,
-        "rank": 1
-      }
-    },
-    "lemmy": {
-      "items": 15,
-      "unique_urls": 14,
-      "median_days_on_board": 1,
-      "one_day_pct": 93,
-      "top_item": {
-        "title": "Programming.dev instance: Sponsors needed",
-        "url": "https://legal.programming.dev/docs/donation-policy/",
-        "score": 197,
         "rank": 1
       }
     },
@@ -10438,6 +10438,126 @@
       "top_item": {
         "title": "Retrospective",
         "url": "https://neverworkintheory.org/2024/03/21/retrospective.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rtypescript": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Who's hiring Typescript developers November",
+        "url": "https://www.reddit.com/r/typescript/comments/1xkp2zp/whos_hiring_typescript_developers_november/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rdevops": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Weekly Self Promotion Thread",
+        "url": "https://www.reddit.com/r/devops/comments/1xrlgil/weekly_self_promotion_thread/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rsysadmin": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Weekly 'I made a useful thing' Thread - November 13, 2026",
+        "url": "https://www.reddit.com/r/sysadmin/comments/1xv229k/weekly_i_made_a_useful_thing_thread_november_13/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rcompsci": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "PSA: This is not r/Programming. Quick Clarification on the guidelines",
+        "url": "https://www.reddit.com/r/compsci/comments/c15nbn/psa_this_is_not_rprogramming_quick_clarification/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rhaskell": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Monthly Hask Anything (November 2026)",
+        "url": "https://www.reddit.com/r/haskell/comments/1xkp46w/monthly_hask_anything_november_2026/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rnode": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Optimized CI, 2 mins cache to 40 seconds",
+        "url": "https://www.reddit.com/r/node/comments/1xwt2k1/optimized_ci_2_mins_cache_to_40_seconds/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rreactjs": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "React 19.3",
+        "url": "https://www.reddit.com/r/reactjs/comments/1wczvs6/react_193/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rdocker": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "mongodb service gets killed when doing a docker stack deploy to another stack",
+        "url": "https://www.reddit.com/r/docker/comments/1xw6uo6/mongodb_service_gets_killed_when_doing_a_docker/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "ropensource": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Adjustment: New Project Showcase Recurring Thread",
+        "url": "https://www.reddit.com/r/opensource/comments/1xu9dar/adjustment_new_project_showcase_recurring_thread/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rselfhosted": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Quarter 2 Update - Revisiting Rules. Again.",
+        "url": "https://www.reddit.com/r/selfhosted/comments/1sey9ch/quarter_2_update_revisiting_rules_again/",
         "score": 15,
         "rank": 1
       }

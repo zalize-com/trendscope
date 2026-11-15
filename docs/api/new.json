@@ -1,28 +1,29 @@
 {
- "generated_at": "2026-11-15T20:44:15.439940+00:00",
+ "generated_at": "2026-11-15T20:55:29.472344+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 20618,
- "new_items": 20491,
+ "total_items": 20772,
+ "new_items": 20645,
  "by_source": {
-  "show_hn": 52,
+  "show_hn": 53,
   "producthunt": 45,
   "hackernews": 39,
   "reddit": 32,
   "theregister": 29,
   "techmeme": 27,
   "slashdot": 21,
-  "theverge": 18,
+  "theverge": 19,
   "daringfireball": 17,
+  "lemmy": 17,
   "thenewstack": 17,
   "arstechnica": 16,
   "blogfrankel": 16,
   "gargron": 16,
   "infoq": 16,
   "kooslooijesteijn": 16,
-  "lemmy": 16,
   "robinrendle": 16,
   "rprogramming": 16,
   "smitop": 16,
+  "waxy": 16,
   "0xadada": 15,
   "100r": 15,
   "12daysofweb": 15,
@@ -692,8 +693,11 @@
   "rawgithubusercontent": 15,
   "raywenderlich": 15,
   "rcoding": 15,
+  "rcompsci": 15,
   "rdatascience": 15,
   "rdegges": 15,
+  "rdevops": 15,
+  "rdocker": 15,
   "react": 15,
   "readwrite": 15,
   "reaganray": 15,
@@ -702,19 +706,26 @@
   "relay": 15,
   "remysharp": 15,
   "rgolang": 15,
+  "rhaskell": 15,
   "ridiculousfish": 15,
   "rightbadcode": 15,
   "rknight": 15,
   "rmarcus": 15,
+  "rnode": 15,
   "roadtolarissa": 15,
   "robbowen": 15,
   "robdodson": 15,
   "robinwieruch": 15,
   "romainguy": 15,
   "romaricpascal": 15,
+  "ropensource": 15,
   "rpython": 15,
+  "rreactjs": 15,
+  "rselfhosted": 15,
+  "rsysadmin": 15,
   "rtechnology": 15,
   "rtpg": 15,
+  "rtypescript": 15,
   "rubick": 15,
   "ruslanspivak": 15,
   "rwebdev": 15,
@@ -862,7 +873,6 @@
   "voidzero": 15,
   "w3cstudio24": 15,
   "wasmlabs": 15,
-  "waxy": 15,
   "web3isgoinggreat": 15,
   "webinista": 15,
   "webperf": 15,
@@ -92156,6 +92166,14 @@
    "metric": "score"
   },
   {
+   "title": "Same-window official baselines for hidden model degradation on LLM API relays",
+   "url": "https://folkbench.com/en/blog/how-folkbench-detects-model-degradation",
+   "source": "lemmy",
+   "rank": 15,
+   "score": 1,
+   "metric": "score"
+  },
+  {
    "title": "I updated my website",
    "url": "https://www.lenesaile.com/en/blog/i-updated-my-website/",
    "source": "lenesaile",
@@ -126684,6 +126702,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "PSA: This is not r/Programming. Quick Clarification on the guidelines",
+   "url": "https://www.reddit.com/r/compsci/comments/c15nbn/psa_this_is_not_rprogramming_quick_clarification/",
+   "source": "rcompsci",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Designing my own SRAM like it's 1969",
+   "url": "https://www.reddit.com/r/compsci/comments/1xx5kvz/designing_my_own_sram_like_its_1969/",
+   "source": "rcompsci",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Do We Measure Computational Efficiency?",
+   "url": "https://www.reddit.com/r/compsci/comments/1xw530t/how_do_we_measure_computational_efficiency/",
+   "source": "rcompsci",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can Quantum Computing Be Fully Understood Through Classical Mathematics?",
+   "url": "https://www.reddit.com/r/compsci/comments/1xvgnye/can_quantum_computing_be_fully_understood_through/",
+   "source": "rcompsci",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DM-MHM Harmonic Matcher",
+   "url": "https://www.reddit.com/r/compsci/comments/1xuem0q/dmmhm_harmonic_matcher/",
+   "source": "rcompsci",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exploring Data Integrity and Fault Tolerance in Erasure-Coded Distributed Storage Systems",
+   "url": "https://www.reddit.com/r/compsci/comments/1xsmti2/exploring_data_integrity_and_fault_tolerance_in/",
+   "source": "rcompsci",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Matrix Multiplication Algorithm Rooted In Graph Theory",
+   "url": "https://www.reddit.com/r/compsci/comments/1xrx0ap/a_matrix_multiplication_algorithm_rooted_in_graph/",
+   "source": "rcompsci",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Symmetry gives 136 states, the Hankel rank is 51: minimal weighted automaton for 3-colourings of grid strips (review request)",
+   "url": "https://www.reddit.com/r/compsci/comments/1xrkhrh/symmetry_gives_136_states_the_hankel_rank_is_51/",
+   "source": "rcompsci",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Moving Beyond The Compute Arms Race: A Discussion and Technical White Paper",
+   "url": "https://www.reddit.com/r/compsci/comments/1xrb9zj/moving_beyond_the_compute_arms_race_a_discussion/",
+   "source": "rcompsci",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Challenges in calculating ETA at scale",
+   "url": "https://www.reddit.com/r/compsci/comments/1xqccpo/challenges_in_calculating_eta_at_scale/",
+   "source": "rcompsci",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "OpenAI lowered the matrix multiplication exponent from ~2.371 to 2.25 — here's how the new proof works",
+   "url": "https://www.reddit.com/r/compsci/comments/1xpj68z/openai_lowered_the_matrix_multiplication_exponent/",
+   "source": "rcompsci",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deriving the Y-combinator",
+   "url": "https://www.reddit.com/r/compsci/comments/1xn4lig/deriving_the_ycombinator/",
+   "source": "rcompsci",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"Galactus the Devourer\", Ben Recht's reaction to The Exponential Time Hypothesis.",
+   "url": "https://www.reddit.com/r/compsci/comments/1xk02hd/galactus_the_devourer_ben_rechts_reaction_to_the/",
+   "source": "rcompsci",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deterministic factoring in time N^o(1)",
+   "url": "https://www.reddit.com/r/compsci/comments/1xiz7aj/deterministic_factoring_in_time_no1/",
+   "source": "rcompsci",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Exponential Time Hypothesis is false",
+   "url": "https://www.reddit.com/r/compsci/comments/1xgadrr/the_exponential_time_hypothesis_is_false/",
+   "source": "rcompsci",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Weekly Entering & Transitioning - Thread 09 Nov, 2026 - 16 Nov, 2026",
    "url": "https://www.reddit.com/r/datascience/comments/1xrix7s/weekly_entering_transitioning_thread_09_nov_2026/",
    "source": "rdatascience",
@@ -126919,6 +127057,246 @@
    "title": "How to Monetize Your Website with Cryptocurrency Mining",
    "url": "https://rdegges.com/2017/how-to-monetize-your-website-with-cryptocurrency-mining/",
    "source": "rdegges",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly Self Promotion Thread",
+   "url": "https://www.reddit.com/r/devops/comments/1xrlgil/weekly_self_promotion_thread/",
+   "source": "rdevops",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Help me wrap my head around AI (agent?) hosting",
+   "url": "https://www.reddit.com/r/devops/comments/1xwfeof/help_me_wrap_my_head_around_ai_agent_hosting/",
+   "source": "rdevops",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When a vibe coded internal tool ends up with other teams depending on it, do you review it like prod code or let it stay disposable?",
+   "url": "https://www.reddit.com/r/devops/comments/1xx1rr7/when_a_vibe_coded_internal_tool_ends_up_with/",
+   "source": "rdevops",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My zero-trust Ubuntu dev environment on Windows",
+   "url": "https://www.reddit.com/r/devops/comments/1xx0mu0/my_zerotrust_ubuntu_dev_environment_on_windows/",
+   "source": "rdevops",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I built an open-source tool to solve polyrepo config drift without clobbering local overrides",
+   "url": "https://www.reddit.com/r/devops/comments/1xx53i1/i_built_an_opensource_tool_to_solve_polyrepo/",
+   "source": "rdevops",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Metrics, logs and alerts for my 3-node Talos homelab",
+   "url": "https://www.reddit.com/r/devops/comments/1xwtif2/metrics_logs_and_alerts_for_my_3node_talos_homelab/",
+   "source": "rdevops",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Do branch preview environments actually make your workflow better?",
+   "url": "https://www.reddit.com/r/devops/comments/1xw5vbq/do_branch_preview_environments_actually_make_your/",
+   "source": "rdevops",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Starting hands-on Linux Admin study group & Discord (No boring slides, just terminal & real-world troubleshooting)",
+   "url": "https://www.reddit.com/r/devops/comments/1xvjftu/starting_handson_linux_admin_study_group_discord/",
+   "source": "rdevops",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Go is going I think",
+   "url": "https://www.reddit.com/r/devops/comments/1xwpzg7/go_is_going_i_think/",
+   "source": "rdevops",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "wfx-loot: what the stealer leaves behind after you rotate the GitHub secrets",
+   "url": "https://www.reddit.com/r/devops/comments/1xvx8t2/wfxloot_what_the_stealer_leaves_behind_after_you/",
+   "source": "rdevops",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Will Separate Great DevOps Engineers from Average Ones in 2027?",
+   "url": "https://www.reddit.com/r/devops/comments/1xuwffc/what_will_separate_great_devops_engineers_from/",
+   "source": "rdevops",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How do you stay informed of DevOps and AI current events?",
+   "url": "https://www.reddit.com/r/devops/comments/1xuk8hz/how_do_you_stay_informed_of_devops_and_ai_current/",
+   "source": "rdevops",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "what do you actually put behind /health?",
+   "url": "https://www.reddit.com/r/devops/comments/1xu7phc/what_do_you_actually_put_behind_health/",
+   "source": "rdevops",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughts on plesk",
+   "url": "https://www.reddit.com/r/devops/comments/1xuyh5l/thoughts_on_plesk/",
+   "source": "rdevops",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trying to understand how security tooling fits into CI/CD, for a uni case study. Would love your take!",
+   "url": "https://www.reddit.com/r/devops/comments/1xumia4/trying_to_understand_how_security_tooling_fits/",
+   "source": "rdevops",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "mongodb service gets killed when doing a docker stack deploy to another stack",
+   "url": "https://www.reddit.com/r/docker/comments/1xw6uo6/mongodb_service_gets_killed_when_doing_a_docker/",
+   "source": "rdocker",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Docker Asks me to Install Rosetta?",
+   "url": "https://www.reddit.com/r/docker/comments/1xwa4yz/docker_asks_me_to_install_rosetta/",
+   "source": "rdocker",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DOCKER CLI VS GUI",
+   "url": "https://www.reddit.com/r/docker/comments/1xwavbu/docker_cli_vs_gui/",
+   "source": "rdocker",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Server is only accessible on host mode or when using container addresses",
+   "url": "https://www.reddit.com/r/docker/comments/1xvkcoq/server_is_only_accessible_on_host_mode_or_when/",
+   "source": "rdocker",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "should i use env vars or docker swarm secrets for stuff that is kinda a secret but not really? like db names, user db names, ports, etc",
+   "url": "https://www.reddit.com/r/docker/comments/1xvdnv9/should_i_use_env_vars_or_docker_swarm_secrets_for/",
+   "source": "rdocker",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "usb passthrough for esp32 on macos docker, anyone got it working?",
+   "url": "https://www.reddit.com/r/docker/comments/1xv8nav/usb_passthrough_for_esp32_on_macos_docker_anyone/",
+   "source": "rdocker",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Guide - Use docker to operate legacy scanner hardware on Windows 11",
+   "url": "https://www.reddit.com/r/docker/comments/1xup9j0/guide_use_docker_to_operate_legacy_scanner/",
+   "source": "rdocker",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sing-box in Docker always restarting",
+   "url": "https://www.reddit.com/r/docker/comments/1xtbxen/singbox_in_docker_always_restarting/",
+   "source": "rdocker",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Matter server not starting",
+   "url": "https://www.reddit.com/r/docker/comments/1xsvfip/matter_server_not_starting/",
+   "source": "rdocker",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Docker Engine 29.10.0 packaging changes (Alma,Oracle,Rocky Linux support)",
+   "url": "https://www.reddit.com/r/docker/comments/1xs483b/docker_engine_29100_packaging_changes/",
+   "source": "rdocker",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The engineering team behind Bitnami has been laid off",
+   "url": "https://www.reddit.com/r/docker/comments/1xpa55f/the_engineering_team_behind_bitnami_has_been_laid/",
+   "source": "rdocker",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Guidance please, on my first docker",
+   "url": "https://www.reddit.com/r/docker/comments/1xpmapv/guidance_please_on_my_first_docker/",
+   "source": "rdocker",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Question over general docker usage/concept",
+   "url": "https://www.reddit.com/r/docker/comments/1xplb98/question_over_general_docker_usageconcept/",
+   "source": "rdocker",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Docker containers can you recommend that I install on my Debian Home Server?",
+   "url": "https://www.reddit.com/r/docker/comments/1xpa2zd/what_docker_containers_can_you_recommend_that_i/",
+   "source": "rdocker",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NetAlertX Problems at Initially Starting the docker Container",
+   "url": "https://www.reddit.com/r/docker/comments/1xp1chn/netalertx_problems_at_initially_starting_the/",
+   "source": "rdocker",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -128700,6 +129078,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Monthly Hask Anything (November 2026)",
+   "url": "https://www.reddit.com/r/haskell/comments/1xkp46w/monthly_hask_anything_november_2026/",
+   "source": "rhaskell",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mischief - The Haskell Game Engine. Now with Rendering, Assets, Input.",
+   "url": "https://www.reddit.com/r/haskell/comments/1xwzf96/mischief_the_haskell_game_engine_now_with/",
+   "source": "rhaskell",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vibe yourself a better ghcid",
+   "url": "https://www.reddit.com/r/haskell/comments/1xw8hy7/vibe_yourself_a_better_ghcid/",
+   "source": "rhaskell",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A technical vision for the Haskell ecosystem - Haskell Foundation",
+   "url": "https://www.reddit.com/r/haskell/comments/1xuza8d/a_technical_vision_for_the_haskell_ecosystem/",
+   "source": "rhaskell",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fund the Products, Not the Foundation",
+   "url": "https://www.reddit.com/r/haskell/comments/1xukbpx/fund_the_products_not_the_foundation/",
+   "source": "rhaskell",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "London Haskell Meetup - November",
+   "url": "https://www.reddit.com/r/haskell/comments/1xtmqq2/london_haskell_meetup_november/",
+   "source": "rhaskell",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[ann] base32-1.0",
+   "url": "https://www.reddit.com/r/haskell/comments/1xs0dm0/ann_base3210/",
+   "source": "rhaskell",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Relase of Swiss Army Knife",
+   "url": "https://www.reddit.com/r/haskell/comments/1xry5ue/new_relase_of_swiss_army_knife/",
+   "source": "rhaskell",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "FSK modulator in Haskell coming from imperative programmer",
+   "url": "https://www.reddit.com/r/haskell/comments/1xr6ysk/fsk_modulator_in_haskell_coming_from_imperative/",
+   "source": "rhaskell",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[ANN] hmssql: Pure Haskell SQL Server client (mostly AI-coded)",
+   "url": "https://www.reddit.com/r/haskell/comments/1xrltqi/ann_hmssql_pure_haskell_sql_server_client_mostly/",
+   "source": "rhaskell",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[ANN] wasmedge-hs: Type-safe Haskell bindings for WasmEdge runtime (v0.18.1)",
+   "url": "https://www.reddit.com/r/haskell/comments/1xqf885/ann_wasmedgehs_typesafe_haskell_bindings_for/",
+   "source": "rhaskell",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Does anyone want to take over maintenance of the Kowainik ecosystem?",
+   "url": "https://www.reddit.com/r/haskell/comments/1xq0pxp/does_anyone_want_to_take_over_maintenance_of_the/",
+   "source": "rhaskell",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is the GHC breakage inventory useful to anyone?",
+   "url": "https://www.reddit.com/r/haskell/comments/1xq1js8/is_the_ghc_breakage_inventory_useful_to_anyone/",
+   "source": "rhaskell",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Haskell Ecosystem Packages now offered by MLabs",
+   "url": "https://www.reddit.com/r/haskell/comments/1xpdbcu/haskell_ecosystem_packages_now_offered_by_mlabs/",
+   "source": "rhaskell",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fully-Funded PhD Studentships at the University of Nottingham, UK",
+   "url": "https://www.reddit.com/r/haskell/comments/1xodchr/fullyfunded_phd_studentships_at_the_university_of/",
+   "source": "rhaskell",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Python’s super() considered super!",
    "url": "https://rhettinger.wordpress.com/2011/05/26/super-considered-super/",
    "source": "rhettingerwordpress",
@@ -129376,6 +129874,126 @@
    "url": "https://rmurphey.com/posts/indeed/",
    "source": "rmurphey",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Optimized CI, 2 mins cache to 40 seconds",
+   "url": "https://www.reddit.com/r/node/comments/1xwt2k1/optimized_ci_2_mins_cache_to_40_seconds/",
+   "source": "rnode",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Blocking requests to private IPs from inside the DNS lookup in Node",
+   "url": "https://www.reddit.com/r/node/comments/1xw9pld/blocking_requests_to_private_ips_from_inside_the/",
+   "source": "rnode",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Diary Dev - Staxis is coming!",
+   "url": "https://www.reddit.com/r/node/comments/1xw5bmk/diary_dev_staxis_is_coming/",
+   "source": "rnode",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I built a typed router on top of Hono + zod-openapi",
+   "url": "https://www.reddit.com/r/node/comments/1xvuoc4/i_built_a_typed_router_on_top_of_hono_zodopenapi/",
+   "source": "rnode",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I built Dakly: A free, zero-setup transactional email engine with multi-Gmail failover so you don't have to pay Resend or SendGrid for side projects",
+   "url": "https://www.reddit.com/r/node/comments/1xv1no6/i_built_dakly_a_free_zerosetup_transactional/",
+   "source": "rnode",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A package for standardizing logging? Looking for thoughts",
+   "url": "https://www.reddit.com/r/node/comments/1xur6ma/a_package_for_standardizing_logging_looking_for/",
+   "source": "rnode",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stop passing req.user everywhere: I ported Spring Security's architecture to Express",
+   "url": "https://www.reddit.com/r/node/comments/1xubgsm/stop_passing_requser_everywhere_i_ported_spring/",
+   "source": "rnode",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "3 years ago I posted my first Node Package, now it's at +1M monthly downloads.",
+   "url": "https://www.reddit.com/r/node/comments/1xtr0ue/3_years_ago_i_posted_my_first_node_package_now/",
+   "source": "rnode",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "npm install",
+   "url": "https://www.reddit.com/r/node/comments/1xtgxuu/npm_install/",
+   "source": "rnode",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a multi-platform gaming project (E-commerce + Community + Video) — Need stack & database feedback",
+   "url": "https://www.reddit.com/r/node/comments/1xtnw2u/building_a_multiplatform_gaming_project_ecommerce/",
+   "source": "rnode",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your JS Error Is Lying to You",
+   "url": "https://www.reddit.com/r/node/comments/1xu2lpv/your_js_error_is_lying_to_you/",
+   "source": "rnode",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I built site2paper, a Node CLI that prints a whole website into a storybook (Playwright + pdf-lib + sharp)",
+   "url": "https://www.reddit.com/r/node/comments/1xsvesc/i_built_site2paper_a_node_cli_that_prints_a_whole/",
+   "source": "rnode",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Best price/performance hosting setup for a TypeScript/Node.js SaaS? Dev vs Production, VPS vs PaaS",
+   "url": "https://www.reddit.com/r/node/comments/1xrtn6u/best_priceperformance_hosting_setup_for_a/",
+   "source": "rnode",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I trace which Node lines one HTTP request ran, using V8 coverage and diagnostics_channel",
+   "url": "https://www.reddit.com/r/node/comments/1xrq354/how_i_trace_which_node_lines_one_http_request_ran/",
+   "source": "rnode",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Skif - a repository/monorepo linter written in Rust",
+   "url": "https://www.reddit.com/r/node/comments/1xrnns9/introducing_skif_a_repositorymonorepo_linter/",
+   "source": "rnode",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -130548,6 +131166,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Adjustment: New Project Showcase Recurring Thread",
+   "url": "https://www.reddit.com/r/opensource/comments/1xu9dar/adjustment_new_project_showcase_recurring_thread/",
+   "source": "ropensource",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Adjustment: Scheduled Post for Contributors and Projects to Find Eachother",
+   "url": "https://www.reddit.com/r/opensource/comments/1xpb4ny/adjustment_scheduled_post_for_contributors_and/",
+   "source": "ropensource",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's a fork you use of a popular software that you think more people should know about?",
+   "url": "https://www.reddit.com/r/opensource/comments/1xx3446/whats_a_fork_you_use_of_a_popular_software_that/",
+   "source": "ropensource",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Are GitHub projects becoming more short-lived?",
+   "url": "https://www.reddit.com/r/opensource/comments/1xwp3xx/are_github_projects_becoming_more_shortlived/",
+   "source": "ropensource",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Motion Cues for Linux!",
+   "url": "https://www.reddit.com/r/opensource/comments/1xx1yru/motion_cues_for_linux/",
+   "source": "ropensource",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[Project] Life HUD: A lightweight, open-source Windows widget dashboard built with Rust",
+   "url": "https://www.reddit.com/r/opensource/comments/1xx0opj/project_life_hud_a_lightweight_opensource_windows/",
+   "source": "ropensource",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "what's one paid tool you replaced with an open source one this year, and was it worth it?",
+   "url": "https://www.reddit.com/r/opensource/comments/1xwg1lk/whats_one_paid_tool_you_replaced_with_an_open/",
+   "source": "ropensource",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Red Hat Working To Improve Memory Tiering For QEMU VMs To Save RAM",
+   "url": "https://www.reddit.com/r/opensource/comments/1xw2l3d/red_hat_working_to_improve_memory_tiering_for/",
+   "source": "ropensource",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "BooruRamen - an open source personalized booru browser that learns what you love - Tiktok for Boorus",
+   "url": "https://www.reddit.com/r/opensource/comments/1xwizax/booruramen_an_open_source_personalized_booru/",
+   "source": "ropensource",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CodeRabbit scanned 1,125 open-source repos for free, found 1,215 serious vulnerabilities, and is helping maintainers fix them at no cost",
+   "url": "https://www.reddit.com/r/opensource/comments/1xwpfl4/coderabbit_scanned_1125_opensource_repos_for_free/",
+   "source": "ropensource",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Radio-Browser lost a bunch of streams?",
+   "url": "https://www.reddit.com/r/opensource/comments/1xvtflg/radiobrowser_lost_a_bunch_of_streams/",
+   "source": "ropensource",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Open Source Contributions in the Age of AI - a rant in the woods",
+   "url": "https://www.reddit.com/r/opensource/comments/1xw7zfg/open_source_contributions_in_the_age_of_ai_a_rant/",
+   "source": "ropensource",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NitroLite: an open-source (MIT) replacement for Acer's NitroSense — 74 MB RAM, no telemetry, custom fan curves",
+   "url": "https://www.reddit.com/r/opensource/comments/1xvq10v/nitrolite_an_opensource_mit_replacement_for_acers/",
+   "source": "ropensource",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JetBrains renewed their support for Godot Engine through 2027",
+   "url": "https://www.reddit.com/r/opensource/comments/1xu7jjb/jetbrains_renewed_their_support_for_godot_engine/",
+   "source": "ropensource",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "LightnerX v0.1.0-beta is out! My open-source C++26 networking library has reached its first public release",
+   "url": "https://www.reddit.com/r/opensource/comments/1xusqwq/lightnerx_v010beta_is_out_my_opensource_c26/",
+   "source": "ropensource",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "How to Set Up Dokploy Self-Hosted PaaS on Debian 13",
    "url": "https://www.rosehosting.com/blog/how-to-set-up-dokploy-self-hosted-paas-on-debian-13/",
    "source": "rosehosting",
@@ -130972,6 +131710,366 @@
    "metric": "feed rank"
   },
   {
+   "title": "React 19.3",
+   "url": "https://www.reddit.com/r/reactjs/comments/1wczvs6/react_193/",
+   "source": "rreactjs",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Looking for AEM Frontend Developer / Frontend Developer Opportunities – Open to Relocate Across India",
+   "url": "https://www.reddit.com/r/reactjs/comments/1xx2wkz/looking_for_aem_frontend_developer_frontend/",
+   "source": "rreactjs",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I built a reusable React Auth Kit to help developers save time building authentication screens",
+   "url": "https://www.reddit.com/r/reactjs/comments/1xwoz6r/i_built_a_reusable_react_auth_kit_to_help/",
+   "source": "rreactjs",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things I didn't expect when exporting a grouped TanStack table to Excel",
+   "url": "https://www.reddit.com/r/reactjs/comments/1xwt3zu/things_i_didnt_expect_when_exporting_a_grouped/",
+   "source": "rreactjs",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I built a React range slider with one, two or many thumbs: accessible, zero dependencies, Tailwind-ready",
+   "url": "https://www.reddit.com/r/reactjs/comments/1xw3jh5/i_built_a_react_range_slider_with_one_two_or_many/",
+   "source": "rreactjs",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Matching SwiftUI's spring feel in a React app: one spring per side, picked by direction",
+   "url": "https://www.reddit.com/r/reactjs/comments/1xw1sxx/matching_swiftuis_spring_feel_in_a_react_app_one/",
+   "source": "rreactjs",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "No jargon, 1 minute to completely understand — a simple Redux alternative: react-shared-vars",
+   "url": "https://www.reddit.com/r/reactjs/comments/1xwbj39/no_jargon_1_minute_to_completely_understand_a/",
+   "source": "rreactjs",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "This Week In React #305: X, Forms, e18e, Next.js, TanStack Start, Storybook, MobX, Zustand, XState | Exact, Discord, Shopify, Expo Modules, Audio API, Bottom Sheet, Keychain, Gesture Handler | Node.js, Safari, Rolldown, Playwright",
+   "url": "https://www.reddit.com/r/reactjs/comments/1xv8dsh/this_week_in_react_305_x_forms_e18e_nextjs/",
+   "source": "rreactjs",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I just shipped Forge UI, an open-source React component library",
+   "url": "https://www.reddit.com/r/reactjs/comments/1xw4yi9/i_just_shipped_forge_ui_an_opensource_react/",
+   "source": "rreactjs",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I built my own React state management library – CreateStore. Would love some honest feedback!",
+   "url": "https://www.reddit.com/r/reactjs/comments/1xvukib/i_built_my_own_react_state_management_library/",
+   "source": "rreactjs",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I built a CLI that extracts a website's design system for AI coding agents",
+   "url": "https://www.reddit.com/r/reactjs/comments/1xvljs1/i_built_a_cli_that_extracts_a_websites_design/",
+   "source": "rreactjs",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I built React (+ vanilla JS) viewers/editors for Excel, Word, Powerpoint (5m+ total npm downloads)",
+   "url": "https://www.reddit.com/r/reactjs/comments/1xvk1iq/i_built_react_vanilla_js_viewerseditors_for_excel/",
+   "source": "rreactjs",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a One React input for text and attachments, all in one lifecycle.",
+   "url": "https://www.reddit.com/r/reactjs/comments/1xv8r6t/building_a_one_react_input_for_text_and/",
+   "source": "rreactjs",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React Anatomy: See how your layouts are composed in an exploded 3D view",
+   "url": "https://www.reddit.com/r/reactjs/comments/1xui31g/react_anatomy_see_how_your_layouts_are_composed/",
+   "source": "rreactjs",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Two bugs from building a drag-and-drop page canvas in React 19",
+   "url": "https://www.reddit.com/r/reactjs/comments/1xupjii/two_bugs_from_building_a_draganddrop_page_canvas/",
+   "source": "rreactjs",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quarter 2 Update - Revisiting Rules. Again.",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1sey9ch/quarter_2_update_revisiting_rules_again/",
+   "source": "rselfhosted",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Project Megathread - Week of 12 Nov 2026",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xurjda/new_project_megathread_week_of_12_nov_2026/",
+   "source": "rselfhosted",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Karakeep 0.35 release - Security, Polish and 30k stars ⭐",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xx04an/karakeep_035_release_security_polish_and_30k_stars/",
+   "source": "rselfhosted",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Two months in, still extremely happy with self-hosting my own AI",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xwutsy/two_months_in_still_extremely_happy_with/",
+   "source": "rselfhosted",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Update your Seerr",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xx63v2/update_your_seerr/",
+   "source": "rselfhosted",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Infisical paywalled custom roles for self-hosters in a patch release. unstar it.",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xwoq7y/infisical_paywalled_custom_roles_for_selfhosters/",
+   "source": "rselfhosted",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Spacebin: a lightweight, self-hosted pastebin server in Go (JS-free, encrypted pastes)",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xx3f8c/spacebin_a_lightweight_selfhosted_pastebin_server/",
+   "source": "rselfhosted",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vortix - Terminal UI for WireGuard and OpenVPN with real-time telemetry and leak guarding",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xwy0n2/vortix_terminal_ui_for_wireguard_and_openvpn_with/",
+   "source": "rselfhosted",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Alt for Searxng - over fighting it",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xws64e/alt_for_searxng_over_fighting_it/",
+   "source": "rselfhosted",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Help with Proxmox",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xwxrao/help_with_proxmox/",
+   "source": "rselfhosted",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Looking for email search suggestions",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xx2fw9/looking_for_email_search_suggestions/",
+   "source": "rselfhosted",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Public Server Security - Need help",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xx5qgd/public_server_security_need_help/",
+   "source": "rselfhosted",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is the Dell Optiplex 9020M suitable for hosting a Minecraft server?",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xwrl6g/is_the_dell_optiplex_9020m_suitable_for_hosting_a/",
+   "source": "rselfhosted",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pixelserv question",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xwppd4/pixelserv_question/",
+   "source": "rselfhosted",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Selfhosted Aircraft Control",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xvotr4/selfhosted_aircraft_control/",
+   "source": "rselfhosted",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly 'I made a useful thing' Thread - November 13, 2026",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xv229k/weekly_i_made_a_useful_thing_thread_november_13/",
+   "source": "rsysadmin",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Patch Tuesday Megathread - (November 10, 2026)",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xsp3bk/patch_tuesday_megathread_november_10_2026/",
+   "source": "rsysadmin",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Root cause of FAA shutdown: Newly installed HPE Juniper router with misconfiguration that broadcast data with a thousand connections every 4-5 seconds",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xwwks0/root_cause_of_faa_shutdown_newly_installed_hpe/",
+   "source": "rsysadmin",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Background history that led up to the FAA failure. You can make your own conclusions, this is the path that got us here.",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xx4v7u/background_history_that_led_up_to_the_faa_failure/",
+   "source": "rsysadmin",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Who installs a router in a late Friday afternoon?",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xwefh5/who_installs_a_router_in_a_late_friday_afternoon/",
+   "source": "rsysadmin",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "US aviation shutdown blamed on L3 Harris installed router",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xwisy6/us_aviation_shutdown_blamed_on_l3_harris/",
+   "source": "rsysadmin",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's the worst thing you've inherited from a previous MSP?",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xx4q86/whats_the_worst_thing_youve_inherited_from_a/",
+   "source": "rsysadmin",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Uninstalling SCCM on AD server question",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xx163h/uninstalling_sccm_on_ad_server_question/",
+   "source": "rsysadmin",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Windows 0-day \"SignDrop\" published, \"this makes this vulnerability unique as it can be used to turn off any antivirus/EDR.\"",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xw1mub/windows_0day_signdrop_published_this_makes_this/",
+   "source": "rsysadmin",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How do people handle updating their security baselines?",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xwsrs8/how_do_people_handle_updating_their_security/",
+   "source": "rsysadmin",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "FAA outage caused by installing new equipment and new technology",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xvs5vc/faa_outage_caused_by_installing_new_equipment_and/",
+   "source": "rsysadmin",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Do automated SharePoint integrations require licensed users?",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xx63xc/do_automated_sharepoint_integrations_require/",
+   "source": "rsysadmin",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Multiple sources tell @CBSNews that an update to the private communications network that connects America’s air traffic control system caused the system to reboot. When the FAA’s telecommunication infrastructure rebooted, it crashed, causing the communications outage.",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xvnjcg/multiple_sources_tell_cbsnews_that_an_update_to/",
+   "source": "rsysadmin",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Am I looking for a unicorn or are these skill requirements a reasonable ask for a job posting?",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xwhtyu/am_i_looking_for_a_unicorn_or_are_these_skill/",
+   "source": "rsysadmin",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CNN just now: Source inside FAA says this may have originated with Network routers",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xvn1ag/cnn_just_now_source_inside_faa_says_this_may_have/",
+   "source": "rsysadmin",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Nvidia board director cashed out $1 billion in stock before Jensen Huang scandal — Mark Stevens sold 4.2 million shares without a trading plan",
    "url": "https://www.reddit.com/r/technology/comments/1xww9xh/nvidia_board_director_cashed_out_1_billion_in/",
    "source": "rtechnology",
@@ -131207,6 +132305,126 @@
    "title": "How To Adopt Mypy On Bigger Projects",
    "url": "http://rtpg.co/2023/03/07/how-to-adopt-mypy-on-bigger-projects.html",
    "source": "rtpg",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Who's hiring Typescript developers November",
+   "url": "https://www.reddit.com/r/typescript/comments/1xkp2zp/whos_hiring_typescript_developers_november/",
+   "source": "rtypescript",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I've spent 3 years on a TypeScript library for generating Excel reports from a typed schema, v5 just shipped",
+   "url": "https://www.reddit.com/r/typescript/comments/1xx0lcm/ive_spent_3_years_on_a_typescript_library_for/",
+   "source": "rtypescript",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nx monorepo with Node.js + Angular projects",
+   "url": "https://www.reddit.com/r/typescript/comments/1xx5s5z/nx_monorepo_with_nodejs_angular_projects/",
+   "source": "rtypescript",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "trpc-demo-link: Build demos using tRPC client links that mock your API without changing your app/components",
+   "url": "https://www.reddit.com/r/typescript/comments/1xx0tx0/trpcdemolink_build_demos_using_trpc_client_links/",
+   "source": "rtypescript",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "It Depends - TypeScript Debated",
+   "url": "https://www.reddit.com/r/typescript/comments/1xx2czl/it_depends_typescript_debated/",
+   "source": "rtypescript",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "getElementById with type guard and variable name guard",
+   "url": "https://www.reddit.com/r/typescript/comments/1xv339b/getelementbyid_with_type_guard_and_variable_name/",
+   "source": "rtypescript",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What happens when a side project you abandoned years ago suddenly becomes relevant again?",
+   "url": "https://www.reddit.com/r/typescript/comments/1xv660s/what_happens_when_a_side_project_you_abandoned/",
+   "source": "rtypescript",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Surprising type of a filtered array",
+   "url": "https://www.reddit.com/r/typescript/comments/1xu2nw5/surprising_type_of_a_filtered_array/",
+   "source": "rtypescript",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A package for standardizing logging? Looking for thoughts",
+   "url": "https://www.reddit.com/r/typescript/comments/1xur56m/a_package_for_standardizing_logging_looking_for/",
+   "source": "rtypescript",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refactoring my vibecoded TS repo",
+   "url": "https://www.reddit.com/r/typescript/comments/1xtofe4/refactoring_my_vibecoded_ts_repo/",
+   "source": "rtypescript",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Skif - a repository/monorepo linter written in Rust",
+   "url": "https://www.reddit.com/r/typescript/comments/1xrnnhz/introducing_skif_a_repositorymonorepo_linter/",
+   "source": "rtypescript",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "libtmux-ts 0.1 - TypeScript Client for tmux",
+   "url": "https://www.reddit.com/r/typescript/comments/1xqysuv/libtmuxts_01_typescript_client_for_tmux/",
+   "source": "rtypescript",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Joist 2.5 -- State Machines, PostgreJS, and Read Locks",
+   "url": "https://www.reddit.com/r/typescript/comments/1xpflks/joist_25_state_machines_postgrejs_and_read_locks/",
+   "source": "rtypescript",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Galactica, a TypeScript codebase map for developers and agents",
+   "url": "https://www.reddit.com/r/typescript/comments/1xpzpmt/galactica_a_typescript_codebase_map_for/",
+   "source": "rtypescript",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Feeling lost with all the TypeScript options now. What are you actually using?",
+   "url": "https://www.reddit.com/r/typescript/comments/1xoqbva/feeling_lost_with_all_the_typescript_options_now/",
+   "source": "rtypescript",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -137310,6 +138528,14 @@
   {
    "title": "Show HN: Perfectclone – Yoink the source code of any website, not an AI clone",
    "url": "https://github.com/eshaangulati123/perfectclone",
+   "source": "show_hn",
+   "rank": 12,
+   "score": 2,
+   "metric": "points"
+  },
+  {
+   "title": "Show HN: Remindly a notes app with reminders built in (Mac, iOS, web)",
+   "url": "https://www.remindly.com/",
    "source": "show_hn",
    "rank": 12,
    "score": 2,
@@ -150540,6 +151766,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Jensen Huang might be plotting a return and more of the latest Nvidia drama",
+   "url": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+   "source": "theverge",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
    "title": "Magic: The Gathering is getting a Netflix animated series. For real this time.",
    "url": "https://www.theverge.com/entertainment/1033909/magic-the-gathering-netflix-series",
    "source": "theverge",
@@ -159358,6 +160592,14 @@
   {
    "title": "Walt Kelly’s Pogo on the 1960 prediction that today would be “doomsday”",
    "url": "https://bergetoons.blogspot.com/2026/11/got-any-plans-next-weekend.html",
+   "source": "waxy",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Internet Archive on preserving 30 years of Salon",
+   "url": "https://waxy.org",
    "source": "waxy",
    "rank": 1,
    "score": 15,
