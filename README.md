@@ -77,6 +77,7 @@ compare within a source, not across.
   grouped by hostname from `history.csv`.
 - **Item history** (`item.html?q=`): any story/package's day-by-day rank & score trajectory.
 - **This week** (`week.html`): last-7-day cumulative board + staying-power list.
+- **Calendar** (`calendar.html`): month grid — each day's highest-scoring item at a glance.
 - **Hiring pulse** (`hiring.html`): monthly HN "Who is hiring?" tracker —
   positions-vs-seekers ratio and comment growth chart (data/hiring.json).
 - **Digests** (`digest.html`): weekly markdown digests rendered in-site.
