@@ -59,7 +59,7 @@ compare within a source, not across.
 
 - **Dashboard** (`index.html`): cross-source board, topic trends, rising items,
   and a day picker to browse any past snapshot.
-- **Tools** (`tools/`): 60 free in-browser dev utilities — JSON formatter,
+- **Tools** (`tools/`): 61 free in-browser dev utilities — JSON formatter,
   regex tester, cron explainer, timestamp converter, Base64/URL, JWT decoder,
   chmod calculator, UUID/hash, text diff, markdown preview, color converter,
   text inspector, YAML↔JSON, outline→tree, URL query editor, CSV↔JSON,

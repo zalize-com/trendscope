@@ -79,6 +79,7 @@
     <button data-tool="ts">JSON → TS</button>
     <button data-tool="csvprof">CSV profile</button>
     <button data-tool="mcp">MCP config</button>
+    <button data-tool="sql">SQL format</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -276,12 +277,22 @@
     <div class="err" id="mcp-err"></div>
   </div>
 
+
+  <div class="panel" id="p-sql">
+    <h2>SQL formatter</h2>
+    <p class="hint">Paste SQL — keywords uppercased, major clauses break to new lines, indent for subqueries and JOIN chains.</p>
+    <textarea id="sql-in" placeholder="select id, name from users where age > 30 order by name limit 10" style="width:100%;height:140px"></textarea>
+    <div style="display:flex;gap:8px;margin-top:6px"><button id="sql-copy">copy</button></div>
+    <div class="out" id="sql-out" style="white-space:pre-wrap"></div>
+    <div class="err" id="sql-err"></div>
+  </div>
+
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts","csvprof","mcp"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts","csvprof","mcp","sql"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -1061,6 +1072,44 @@ ccommit();
     $("prof-out").innerHTML = html; $("prof-err").textContent="";
   }
   $("prof-in").addEventListener("input", ()=>{try{profile()}catch(e){$("prof-err").textContent=String(e)}});
+})();
+
+/* ---------- sql format ---------- */
+(function () {
+  const KW = ["select","from","where","and","or","not","in","is","null","like","between",
+    "inner","left","right","full","outer","join","on","group","by","order","having",
+    "limit","offset","insert","into","values","update","set","delete","create","table",
+    "alter","drop","as","distinct","union","all","exists","case","when","then","else",
+    "end","asc","desc","count","sum","avg","min","max","coalesce","cast","primary","key",
+    "foreign","references","index","view","if","begin","commit","rollback","returning"];
+  const BREAK = new Set(["select","from","where","and","or","join","inner","left","right",
+    "full","on","group","order","having","limit","offset","values","set","union","returning"]);
+  const CONT = new Set(["inner","left","right","full","outer","by","asc","desc"]);
+  function fmt(src) {
+    const toks = src.replace(/('([^']|'')*'|"[^"]*")/g, m => " " + m + " ")
+      .replace(/([(),])/g, " $1 ").split(/\s+/).filter(Boolean);
+    const out = []; let depth = 0, i = 0;
+    const kw = t => KW.includes(t.toLowerCase());
+    while (i < toks.length) {
+      const t = toks[i], low = t.toLowerCase();
+      const isKw = kw(t) && !/^['"]/.test(t);
+      if (t === "(") { depth++; out.push("("); i++; continue; }
+      if (t === ")") { depth = Math.max(0, depth - 1); out.push(")"); i++; continue; }
+      if (isKw && BREAK.has(low) && !CONT.has(low) && out.length) out.push("\n" + "  ".repeat(depth));
+      else if (isKw && BREAK.has(low) && CONT.has(low) && out.length && !out[out.length-1].endsWith(" ")) out.push("\n" + "  ".repeat(depth));
+      out.push((isKw ? low.toUpperCase() : t) + " ");
+      i++;
+    }
+    return out.join("").replace(/ \(/g, " (").replace(/\(\s+/g, "(").replace(/\s+\)/g, ")")
+      .replace(/\n\s*/g, "\n").replace(/\s+$/gm, "").replace(/\n{2,}/g, "\n").trim();
+  }
+  function go(){ try{ $("sql-out").textContent = fmt($("sql-in").value) || "(empty)"; $("sql-err").textContent=""; }
+    catch(e){ $("sql-err").textContent = String(e); } }
+  $("sql-in").addEventListener("input", go);
+  $("sql-copy").onclick = () => navigator.clipboard?.writeText($("sql-out").textContent)
+    .then(()=>{const b=$("sql-copy");b.textContent="✓";setTimeout(()=>b.textContent="copy",1200);});
+  $("sql-in").value = "select u.id, u.name, count(o.id) as orders from users u left join orders o on o.user_id = u.id where u.active = 1 and u.created > '2026-01-01' group by u.id, u.name having count(o.id) > 2 order by orders desc limit 20";
+  go();
 })();
 
 </script>
