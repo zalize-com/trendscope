@@ -65,6 +65,7 @@
     <button data-tool="schema">JSON → schema</button>
     <button data-tool="gi">.gitignore</button>
     <button data-tool="semver">semver compare</button>
+    <button data-tool="curl">curl → code</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -142,13 +143,26 @@
     <div class="err" id="sv-err"></div>
   </div>
 
+  <div class="panel" id="p-curl">
+    <h2>curl → fetch / requests</h2>
+    <p class="hint">Paste a curl command (with or without <code>curl</code> prefix). Emits JS <code>fetch()</code> and Python <code>requests</code> equivalents. Supports -X/-H/-d/--data*/-u/-A/-G/-F/--compressed.</p>
+    <textarea id="cu-in" style="width:100%;height:120px" placeholder="curl -X POST https://api.example.com/v1/items -H 'Content-Type: application/json' -H 'Authorization: Bearer x' -d '{&quot;a&quot;:1}'">curl -X POST https://api.example.com/v1/items -H 'Content-Type: application/json' -H 'Authorization: Bearer TOKEN' -d '{"a":1,"b":[2,3]}'</textarea>
+    <div class="row">
+      <div><label>fetch()</label><div class="out" id="cu-fetch" style="white-space:pre;overflow-x:auto;max-height:300px;overflow-y:auto"></div></div>
+      <div><label>python requests</label><div class="out" id="cu-py" style="white-space:pre;overflow-x:auto;max-height:300px;overflow-y:auto"></div></div>
+    </div>
+    <button class="copy" id="cu-copy">copy fetch</button>
+    <button class="copy" id="cu-copy-py">copy requests</button>
+    <div class="err" id="cu-err"></div>
+  </div>
+
   <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -424,6 +438,108 @@ function renderSv() {
 }
 ["sv-a","sv-b"].forEach(id => $(id).addEventListener("input", renderSv));
 renderSv();
+
+// --- curl → code ---
+function cuTokenize(s) {
+  const out = []; let cur = "", q = null;
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    if (q === "'") { if (c === "'") q = null; else cur += c; continue; }
+    if (q === '"') {
+      if (c === '"') q = null;
+      else if (c === "\\" && s[i+1] === '"') { cur += '"'; i++; }
+      else cur += c;
+      continue;
+    }
+    if (c === "'") { q = "'"; continue; }
+    if (c === '"') { q = '"'; continue; }
+    if (c === "\\" && (s[i+1] === "\n" || s[i+1] === " ")) { if (s[i+1] === " ") cur += " "; i++; continue; }
+    if (/\s/.test(c)) { if (cur) { out.push(cur); cur = ""; } continue; }
+    cur += c;
+  }
+  if (cur) out.push(cur);
+  return out;
+}
+function cuParse(input) {
+  const t = cuTokenize(input.trim().replace(/^\$\s*/, "").replace(/^curl\s+/i, ""));
+  const o = { method: "", url: "", headers: [], data: [], user: "", ua: "", get: false, form: [] };
+  const flagsWithVal = new Set(["-X","--request","-H","--header","-d","--data","--data-raw","--data-binary","--data-ascii","-u","--user","-A","--user-agent","-F","--form","-e","--referer","-o","--output","-b","--cookie","-m","--max-time","--connect-timeout"]);
+  for (let i = 0; i < t.length; i++) {
+    const tok = t[i];
+    const [flag, inline] = tok.includes("=") && tok.startsWith("--") ? tok.split(/=(.*)/s,2).slice(0,2) : [tok, null];
+    const val = inline !== null ? inline : (flagsWithVal.has(flag) ? t[++i] : undefined);
+    switch (flag) {
+      case "-X": case "--request": o.method = val; break;
+      case "-H": case "--header": { const j = val.indexOf(":"); if (j > 0) o.headers.push([val.slice(0,j).trim(), val.slice(j+1).trim()]); break; }
+      case "-d": case "--data": case "--data-raw": case "--data-ascii": o.data.push(val); break;
+      case "--data-binary": o.data.push(val.replace(/^@/, "")); break;
+      case "-u": case "--user": o.user = val; break;
+      case "-A": case "--user-agent": o.ua = val; break;
+      case "-G": case "--get": o.get = true; break;
+      case "-F": case "--form": o.form.push(val); break;
+      case "-e": case "--referer": o.headers.push(["Referer", val]); break;
+      case "-b": case "--cookie": o.headers.push(["Cookie", val]); break;
+      case "-I": case "--head": o.method = "HEAD"; break;
+      case "--compressed": case "-L": case "--location": case "-s": case "-i": case "-v": case "-k": case "--insecure": break;
+      default:
+        if (!flag.startsWith("-") && /^https?:\/\//.test(flag)) o.url = flag;
+        else if (!flag.startsWith("-") && !o.url && flag.includes(".")) o.url = flag.startsWith("http") ? flag : "https://" + flag;
+        break;
+    }
+  }
+  if (!o.method) o.method = o.data.length || o.form.length ? "POST" : "GET";
+  if (o.get && o.data.length) o.method = "GET";
+  return o;
+}
+function cuPy(v) {
+  if (v === null) return "None";
+  if (v === true) return "True";
+  if (v === false) return "False";
+  if (typeof v === "number") return String(v);
+  if (typeof v === "string") return JSON.stringify(v);
+  if (Array.isArray(v)) return "[" + v.map(cuPy).join(", ") + "]";
+  return "{" + Object.entries(v).map(([k, x]) => `${JSON.stringify(k)}: ${cuPy(x)}`).join(", ") + "}";
+}
+function cuRender() {
+  const raw = $("cu-in").value.trim();
+  if (!raw) { $("cu-fetch").textContent = ""; $("cu-py").textContent = ""; $("cu-err").textContent = ""; return; }
+  const o = cuParse(raw);
+  if (!o.url) { $("cu-err").textContent = "no URL found in input"; return; }
+  $("cu-err").textContent = "";
+  const headers = [...o.headers];
+  if (o.ua) headers.push(["User-Agent", o.ua]);
+  if (o.user) headers.push(["Authorization", "Basic " + btoa(o.user)]);
+  const body = o.data.join("&");
+  const isJson = /^\s*[[{]/.test(body);
+  // fetch()
+  let f = `const resp = await fetch("${o.url}", {\n  method: "${o.method}",`;
+  if (headers.length) f += `\n  headers: {\n${headers.map(([k,v]) => `    ${JSON.stringify(k)}: ${JSON.stringify(v)}`).join(",\n")}\n  },`;
+  if (o.form.length) {
+    f += `\n  body: (() => { const fd = new FormData();\n${o.form.map(x => { const j = x.indexOf("="); const k = j > 0 ? x.slice(0,j) : "file"; const v = j > 0 ? x.slice(j+1) : x; return v.startsWith("@") ? `    fd.append(${JSON.stringify(k)}, fileInput.files[0]) // ${v}` : `    fd.append(${JSON.stringify(k)}, ${JSON.stringify(v)})`; }).join("\n")}\n    return fd; })(),`;
+  } else if (body) {
+    f += `\n  body: ${JSON.stringify(body)},`;
+    if (isJson && !headers.some(([k]) => k.toLowerCase() === "content-type"))
+      f += `\n  // tip: add "Content-Type": "application/json" if the API expects JSON`;
+  }
+  f += `\n});\nconst data = await resp.${isJson ? "json" : "text"}();`;
+  // requests
+  let p = `import requests\n\nresp = requests.${o.method.toLowerCase()}(\n    ${JSON.stringify(o.url)},`;
+  if (headers.length) p += `\n    headers={${headers.map(([k,v]) => `${JSON.stringify(k)}: ${JSON.stringify(v)}`).join(", ")}},`;
+  if (o.user) p += `\n    auth=(${JSON.stringify(o.user.split(":")[0])}, ${JSON.stringify(o.user.split(":").slice(1).join(":"))}),`;
+  if (o.form.length) p += `\n    files={${o.form.map(x => { const j = x.indexOf("="); const k = j>0?x.slice(0,j):"file"; const v = j>0?x.slice(j+1):x; return `${JSON.stringify(k)}: open(${JSON.stringify(v.replace(/^@/,""))}, "rb")`; }).join(", ")}},`;
+  else if (body) {
+    let pyObj = null;
+    if (isJson) { try { pyObj = JSON.parse(body); } catch (e) { /* fall through to data= */ } }
+    p += pyObj !== null ? `\n    json=${cuPy(pyObj)},` : `\n    data=${JSON.stringify(body)},`;
+  }
+  p += `\n)\nprint(resp.status_code, resp.text)`;
+  $("cu-fetch").textContent = f;
+  $("cu-py").textContent = p;
+}
+$("cu-in").addEventListener("input", cuRender);
+$("cu-copy").onclick = () => { navigator.clipboard?.writeText($("cu-fetch").textContent); $("cu-copy").textContent = "copied"; setTimeout(()=>$("cu-copy").textContent="copy fetch",1200); };
+$("cu-copy-py").onclick = () => { navigator.clipboard?.writeText($("cu-py").textContent); $("cu-copy-py").textContent = "copied"; setTimeout(()=>$("cu-copy-py").textContent="copy requests",1200); };
+cuRender();
 </script>
 </body>
 </html>
