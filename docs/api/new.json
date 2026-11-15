@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-15T17:56:13.947361+00:00",
+ "generated_at": "2026-11-15T17:58:22.291307+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 9797,
- "new_items": 9670,
+ "total_items": 10032,
+ "new_items": 9905,
  "by_source": {
+  "show_hn": 46,
   "producthunt": 45,
-  "show_hn": 45,
   "hackernews": 32,
   "theregister": 29,
   "techmeme": 23,
@@ -58,24 +58,34 @@
   "apple": 15,
   "ar": 15,
   "ariadne": 15,
+  "ariya": 15,
   "arresteddevops": 15,
   "arxiv": 15,
+  "ashleemboyer": 15,
   "austinhenley": 15,
   "aws_blog": 15,
+  "axesslab": 15,
   "ayende": 15,
+  "babeljs": 15,
   "backendtea": 15,
   "backstage": 15,
+  "bandarra": 15,
   "basicappleguy": 15,
   "batkosubstack": 15,
   "begriffs": 15,
+  "bendyworks": 15,
   "benfrain": 15,
+  "benhoyt": 15,
   "benjamin": 15,
+  "benmccormick": 15,
   "benmorris": 15,
+  "benmyers": 15,
   "bertrand": 15,
   "betterdev": 15,
   "billwang1990github": 15,
   "bimuyu": 15,
   "birchtree": 15,
+  "birtles": 15,
   "bitmathblogspot": 15,
   "bitsofco": 15,
   "blog1password": 15,
@@ -468,16 +478,24 @@
   "arialdomartinigithub": 10,
   "artsygithub": 10,
   "askwinston": 10,
+  "austingil": 10,
   "auth0": 10,
   "automattic": 10,
+  "bairberkeley": 10,
   "baymard": 10,
   "beabetterdev": 10,
+  "becominghuman": 10,
   "benediktmeurer": 10,
   "bensmithgall": 10,
+  "berjon": 10,
   "birklund": 10,
   "bitlog": 10,
   "bitslog": 10,
+  "bkardell": 10,
+  "blanboom": 10,
+  "blobfolio": 10,
   "blogacolyer": 10,
+  "blogalmaer": 10,
   "blogangular": 10,
   "blogarchive": 10,
   "blogcjgammon": 10,
@@ -763,6 +781,7 @@
   "github_trending": 4,
   "javascriptweekly": 4,
   "thisweek": 4,
+  "armin": 3,
   "evanminto": 3,
   "michaelfeathers": 3,
   "neugierig": 3,
@@ -774,6 +793,7 @@
   "devto": 2,
   "dyskinetic": 2,
   "nlpfast": 2,
+  "bentojs": 1,
   "cnnr": 1,
   "roytang": 1,
   "uncaughtreferenceerror": 1,
@@ -8109,6 +8129,150 @@
    "metric": "feed rank"
   },
   {
+   "title": "The Illusion of Perfect LLM Code",
+   "url": "https://ariya.io/2026/05/the-illusion-of-perfect-llm-code/",
+   "source": "ariya",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "One Decade Later: Revisiting Five Front-End Kung Fu Moves",
+   "url": "https://ariya.io/2026/04/one-decade-later-revisiting-five-front-end-kung-fu-moves/",
+   "source": "ariya",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Local, CPU-Friendly, High-Quality TTS (Text-to-Speech) with Kokoro",
+   "url": "https://ariya.io/2026/03/local-cpu-friendly-high-quality-tts-text-to-speech-with-kokoro/",
+   "source": "ariya",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GTX 1080 Ti for Local LLM",
+   "url": "https://ariya.io/2026/02/gtx-1080-ti-for-local-llm/",
+   "source": "ariya",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Not Everything is an Agent",
+   "url": "https://ariya.io/2025/03/not-everything-is-an-agent/",
+   "source": "ariya",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Afterburner and Power Limit",
+   "url": "https://ariya.io/2025/02/afterburner-and-power-limit/",
+   "source": "ariya",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Privacy-Preserving Personal Search Appliance",
+   "url": "https://ariya.io/2025/01/privacy-preserving-personal-search-appliance/",
+   "source": "ariya",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "LLM Inference Machine for $300",
+   "url": "https://ariya.io/2024/12/llm-inference-machine-for-300/",
+   "source": "ariya",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deploying an Uberjar to Dokku",
+   "url": "https://ariya.io/2023/02/deploying-an-uberjar-to-dokku/",
+   "source": "ariya",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Continuous Integration for React Native Apps with GitHub Actions",
+   "url": "https://ariya.io/2020/12/continuous-integration-for-react-native-apps-with-github-actions/",
+   "source": "ariya",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On GitHub Actions with MSYS2",
+   "url": "https://ariya.io/2020/07/on-github-actions-with-msys2/",
+   "source": "ariya",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cross-compiling with musl Toolchains",
+   "url": "https://ariya.io/2020/06/cross-compiling-with-musl-toolchains/",
+   "source": "ariya",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nix Package Manager on Ubuntu or Debian",
+   "url": "https://ariya.io/2020/05/nix-package-manager-on-ubuntu-or-debian/",
+   "source": "ariya",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Practical Testing of Firebase Projects",
+   "url": "https://ariya.io/2020/04/practical-testing-of-firebase-projects/",
+   "source": "ariya",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Search Box and Cloud Function",
+   "url": "https://ariya.io/2020/03/search-box-and-cloud-function/",
+   "source": "ariya",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google and Mozilla are failing to support browser extension developers",
+   "url": "https://armin.dev/blog/2019/08/supporting-browser-extension-developers/",
+   "source": "armin",
+   "rank": 1,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Adblock Plus filter lists may execute arbitrary code in web pages",
+   "url": "https://armin.dev/blog/2019/04/adblock-plus-code-injection/",
+   "source": "armin",
+   "rank": 2,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Firefox extensions cannot securely clear browsing data",
+   "url": "https://armin.dev/blog/2019/03/firefox-extensions-browsing-data-security/",
+   "source": "armin",
+   "rank": 3,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Modern Backups with Gilles Chehade",
    "url": "https://www.arresteddevops.com/modern-backups/",
    "source": "arresteddevops",
@@ -8557,6 +8721,126 @@
    "metric": "arxiv recent"
   },
   {
+   "title": "Help Me Launch The Accessibility Pond",
+   "url": "https://ashleemboyer.com/blog/help-me-launch-the-accessibility-pond",
+   "source": "ashleemboyer",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Disability Is Not a Single-Selection Field",
+   "url": "https://ashleemboyer.com/blog/disability-is-not-a-single-selection-field",
+   "source": "ashleemboyer",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Should accordions auto-close sections?",
+   "url": "https://ashleemboyer.com/blog/should-accordions-auto-close-sections",
+   "source": "ashleemboyer",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Where should 'Skip to main content' links go?",
+   "url": "https://ashleemboyer.com/blog/where-should-skip-to-main-content-links-go",
+   "source": "ashleemboyer",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Dehumanize Accessibility with AI",
+   "url": "https://ashleemboyer.com/blog/how-to-dehumanize-accessibility-with-ai",
+   "source": "ashleemboyer",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Colleges Must Fix Millions of Web Pages. It's About Damn Time.",
+   "url": "https://ashleemboyer.com/blog/college-web-a11y-finally",
+   "source": "ashleemboyer",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An Undefeated Pull Request Template",
+   "url": "https://ashleemboyer.com/blog/pull-request-template",
+   "source": "ashleemboyer",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trying to Press \"Publish\" More Often",
+   "url": "https://ashleemboyer.com/blog/trying-to-press-publish-more-often",
+   "source": "ashleemboyer",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TIL #4: VS Code Key Bindings, tab-size CSS Property, and Void Elements",
+   "url": "https://ashleemboyer.com/blog/today-i-learned-0004",
+   "source": "ashleemboyer",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Quick-ish Accessibility Review: shadcn/ui Charts",
+   "url": "https://ashleemboyer.com/blog/a-quick-ish-accessibility-review-shadcn-ui-charts",
+   "source": "ashleemboyer",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An Accessibility Bookmarklet for Testing 200% Text Size",
+   "url": "https://ashleemboyer.com/blog/an-accessibility-bookmarklet-for-testing-200-percent-text-size",
+   "source": "ashleemboyer",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why You Should Use px Units for margin, padding, & Other Spacing Techniques",
+   "url": "https://ashleemboyer.com/blog/why-you-should-use-px-units-for-margin-padding-and-other-spacing-techniques",
+   "source": "ashleemboyer",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don't Use Fixed CSS height or width on Buttons, Links, or Any Other Text Containers",
+   "url": "https://ashleemboyer.com/blog/don-t-use-fixed-css-height-or-width-on-text-containers",
+   "source": "ashleemboyer",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How TypeScript Can Improve Developer Accessibility",
+   "url": "https://ashleemboyer.com/blog/how-typescript-can-improve-developer-accessibility",
+   "source": "ashleemboyer",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Yes, Deaf People Can Listen to Music",
+   "url": "https://ashleemboyer.com/blog/yes-deaf-people-can-listen-to-music",
+   "source": "ashleemboyer",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Anthropic, can you please make up your mind with your models?",
    "url": "https://news.ycombinator.com/item?id=50504061",
    "source": "ask_hn",
@@ -8648,6 +8932,86 @@
    "title": "My 1st Test Blog",
    "url": "https://askwinston.xyz/blog/2020-03-20-my-1st-test-blog/",
    "source": "askwinston",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Animating <details> Element with Only CSS",
+   "url": "https://austingil.com/animating-details-element-with-only-css/",
+   "source": "austingil",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Portland-Nehalem Bikepacking Route",
+   "url": "https://austingil.com/portland-nehalem-bikepacking-route/",
+   "source": "austingil",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Today, I made Ten Dollars",
+   "url": "https://austingil.com/today-i-made-ten-dollars/",
+   "source": "austingil",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Every CSS Named Color Organized by Palette",
+   "url": "https://austingil.com/every-css-named-color-organized-by-palette/",
+   "source": "austingil",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "This ain’t the Endo…",
+   "url": "https://austingil.com/not-the-endo/",
+   "source": "austingil",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Self Portrait #20251120",
+   "url": "https://austingil.com/self-portrait-20251120/",
+   "source": "austingil",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TS Generic Constraints in JSDocs Syntax",
+   "url": "https://austingil.com/ts-generic-constraints-in-jsdocs-syntax/",
+   "source": "austingil",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Luger",
+   "url": "https://austingil.com/luger/",
+   "source": "austingil",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Choose Your Own Adventure: Page 754",
+   "url": "https://austingil.com/choose-your-own-adventure-page-754/",
+   "source": "austingil",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Add Fallback Slot Content for Qwik Applications",
+   "url": "https://austingil.com/how-to-add-default-slot-content-for-qwik-applications/",
+   "source": "austingil",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -9053,6 +9417,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Webinar: AI and Accessibility – What have we learned so far?",
+   "url": "https://axesslab.com/webinar-ai-and-accessibility-what-have-we-learned-so-far/",
+   "source": "axesslab",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lovable’s AI built a 100% accessible site – or did it?",
+   "url": "https://axesslab.com/lovable/",
+   "source": "axesslab",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Webinar: Lovable’s AI built a 100% accessible site – or did it?",
+   "url": "https://axesslab.com/webinar-lovables-ai-built-a-100-accessible-site-or-did-it/",
+   "source": "axesslab",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Online Banking Accessibility & EAA Compliance",
+   "url": "https://axesslab.com/online-banking-accessibility-eaa-compliance/",
+   "source": "axesslab",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "System Generated PDF Accessibility",
+   "url": "https://axesslab.com/system-pdf-a11y/",
+   "source": "axesslab",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Optimizing VoiceOver in an iOS E-Commerce App with Conditional Accessibility",
+   "url": "https://axesslab.com/optimizing-voiceover-in-an-ios-e-commerce-app-with-conditional-accessibility/",
+   "source": "axesslab",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making an iOS E-Commerce Product List Accessible to VoiceOver and Beyond",
+   "url": "https://axesslab.com/making-an-ios-e-commerce-product-list-accessible-to-voiceover-and-beyond/",
+   "source": "axesslab",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making an iOS E-Commerce Product Detail Page Accessible to VoiceOver and Beyond",
+   "url": "https://axesslab.com/making-an-ios-e-commerce-product-detail-page-accessible-to-voiceover-and-beyond/",
+   "source": "axesslab",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility of Fuel and EV Charging Stations: Wheelchair user insights and the European Accessibility Act",
+   "url": "https://axesslab.com/inaccessible-fuel-and-charging-stations-wheelchair-user-insights-and-the-eaa/",
+   "source": "axesslab",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ADA’s New 2026 Deadline: What Tech Vendors Need To Know",
+   "url": "https://axesslab.com/adas-new-2026-deadline-what-tech-vendors-need-to-know/",
+   "source": "axesslab",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "VPAT – Volountary Product Accessibility Template",
+   "url": "https://axesslab.com/vpat-volountary-product-accessibility-template/",
+   "source": "axesslab",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Button Traits can make a chaotic iOS app accessible",
+   "url": "https://axesslab.com/how-button-traits-can-make-a-chaotic-ios-app-accessible/",
+   "source": "axesslab",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "EAA deadlines, why you probably can’t wait another 5 years!",
+   "url": "https://axesslab.com/eaa-deadlines-why-you-probably-cant-wait-another-5-years/",
+   "source": "axesslab",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ads and accessibility mismatch",
+   "url": "https://axesslab.com/ads-and-accessibility-mismatch/",
+   "source": "axesslab",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessible iOS design: how Forza Football included blind users",
+   "url": "https://axesslab.com/designing-accessible-football-lineups-for-blind-users-lessons-from-forza-football/",
+   "source": "axesslab",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "The exponential growth of shadow IT",
    "url": "http://ayende.com/204292-a/the-exponential-growth-of-shadow-it?Key=92955703-406d-4a7e-a645-f513581f03b3",
    "source": "ayende",
@@ -9168,6 +9652,126 @@
    "title": "Learning to code, 1990s vs 2026",
    "url": "http://ayende.com/203975-a/learning-to-code-1990s-vs-2026?Key=4bf78bb8-056a-412e-adcc-758ff6f269f1",
    "source": "ayende",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "8.1.0 Released: bytes and text imports, source map range mappings, and ESLint configs",
+   "url": "https://babeljs.io/blog/2026/11/02/8.1.0",
+   "source": "babeljs",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Releasing Babel 8 today: ESM-only, drop ES5 default, and a smooth migration path",
+   "url": "https://babeljs.io/blog/2026/06/16/8.0.0",
+   "source": "babeljs",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7.29.0 Released: The last Babel 7 minor release",
+   "url": "https://babeljs.io/blog/2026/01/31/7.29.0",
+   "source": "babeljs",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7.28.0 Released: `babel.config.ts`, explicit resource management, and discard binding proposal",
+   "url": "https://babeljs.io/blog/2025/06/30/7.28.0",
+   "source": "babeljs",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Babel 8 Beta",
+   "url": "https://babeljs.io/blog/2025/05/30/babel-8-beta",
+   "source": "babeljs",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7.27.0 Released: better ecosystem alignment",
+   "url": "https://babeljs.io/blog/2025/03/24/7.27.0",
+   "source": "babeljs",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7.26.0 Released: stage 4 features enabled by default, and a new experimental code printer",
+   "url": "https://babeljs.io/blog/2024/10/25/7.26.0",
+   "source": "babeljs",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7.25.0 Released: Safari bugfixes and duplicated named capturing groups",
+   "url": "https://babeljs.io/blog/2024/07/26/7.25.0",
+   "source": "babeljs",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7.24.0 Released: Decorator updates and JSON modules imports",
+   "url": "https://babeljs.io/blog/2024/02/28/7.24.0",
+   "source": "babeljs",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CVE-2023-45133: Finding an Arbitrary Code Execution Vulnerability In Babel",
+   "url": "https://babeljs.io/blog/2023/10/16/cve-2023-45133",
+   "source": "babeljs",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7.23.0 Released: Decorator Metadata and many new `import` features!",
+   "url": "https://babeljs.io/blog/2023/09/25/7.23.0",
+   "source": "babeljs",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7.22.0 Released: Explicit Resource Management support and Import Attributes parsing",
+   "url": "https://babeljs.io/blog/2023/05/26/7.22.0",
+   "source": "babeljs",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7.21.0 Released: Inline RegExp modifiers, TypeScript 5.0, and Decorators updates",
+   "url": "https://babeljs.io/blog/2023/02/20/7.21.0",
+   "source": "babeljs",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7.20.0 Released: Deno target and TypeScript 4.9",
+   "url": "https://babeljs.io/blog/2022/10/27/7.20.0",
+   "source": "babeljs",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7.19.0 Released: Stage 3 decorators and more RegExp features!",
+   "url": "https://babeljs.io/blog/2022/09/05/7.19.0",
+   "source": "babeljs",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -9505,6 +10109,206 @@
    "url": "https://feeds.feedblitz.com/~/971746664/0/baeldung",
    "source": "baeldung",
    "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "BAIR at CoRL 2026",
+   "url": "http://bair.berkeley.edu/blog/2026/11/09/bair-at-corl-2026/",
+   "source": "bairberkeley",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From CUDA to MLX: How K-Search Brings Decades of Kernel Expertise to Apple Silicon",
+   "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+   "source": "bairberkeley",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Teaching LLMs to Update Beliefs for Efficient Long-Horizon Interaction",
+   "url": "http://bair.berkeley.edu/blog/2026/07/26/abbel/",
+   "source": "bairberkeley",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Intelligence is Free, Now What? <br> Data Systems for, of, and by Agents",
+   "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
+   "source": "bairberkeley",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2026 BAIR Graduate Showcase",
+   "url": "http://bair.berkeley.edu/blog/2026/07/01/grads-2026/",
+   "source": "bairberkeley",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Adaptive Parallel Reasoning: The Next Paradigm in Efficient Inference Scaling",
+   "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+   "source": "bairberkeley",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gradient-based Planning for World Models at Longer Horizons",
+   "url": "http://bair.berkeley.edu/blog/2026/04/20/grasp/",
+   "source": "bairberkeley",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Identifying Interactions at Scale for LLMs",
+   "url": "http://bair.berkeley.edu/blog/2026/03/13/spex/",
+   "source": "bairberkeley",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Information-Driven Design of Imaging Systems",
+   "url": "http://bair.berkeley.edu/blog/2026/01/10/information-driven-imaging/",
+   "source": "bairberkeley",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RL without TD learning",
+   "url": "http://bair.berkeley.edu/blog/2025/11/01/rl-without-td-learning/",
+   "source": "bairberkeley",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Does WebMCP `outputSchema` Help Agents Pick Better Tools?",
+   "url": "https://bandarra.me/posts/webmcp-outputschema",
+   "source": "bandarra",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Would Fine-Tuning Have Beaten Jev?",
+   "url": "https://bandarra.me/posts/ev-vs-fine-tuned-bert",
+   "source": "bandarra",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Bouncer's Dilemma: Jev, k-NN, and MLP for Comment Moderation",
+   "url": "https://bandarra.me/posts/jev-vs-custom-classifier",
+   "source": "bandarra",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fighting Comment Spam Without Training a Model",
+   "url": "https://bandarra.me/posts/fighting-comment-spam",
+   "source": "bandarra",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Closing the WebMCP Feedback Loop",
+   "url": "https://bandarra.me/posts/webmcp-feedback-loop",
+   "source": "bandarra",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Agentic Web",
+   "url": "https://bandarra.me/posts/the-agentic-web",
+   "source": "bandarra",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bringing the Agent Loop to the Web",
+   "url": "https://bandarra.me/posts/bringing-the-agent-loop-to-the-web",
+   "source": "bandarra",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Demystifying AI Agents: Learning the Mechanics with Rust",
+   "url": "https://bandarra.me/posts/demystifying-ai-agents",
+   "source": "bandarra",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exploring Client-Side Code Execution with WebMCP",
+   "url": "https://bandarra.me/posts/webmcp-code-execution",
+   "source": "bandarra",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Agents and WebMCP: Tools as Self-Loading Skills",
+   "url": "https://bandarra.me/posts/webmcp-tools-as-skills",
+   "source": "bandarra",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Vibe to Production Pipeline",
+   "url": "https://bandarra.me/posts/vibe-to-production",
+   "source": "bandarra",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The point-and-click UI paradox",
+   "url": "https://bandarra.me/posts/point-and-click-paradox",
+   "source": "bandarra",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beyond the Viewport: Capturing Full-Size Screenshots with Rust and Chrome",
+   "url": "https://bandarra.me/posts/cdp-full-page-screenshots",
+   "source": "bandarra",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Smarter Filters: Empowering Users with AI-Driven Search",
+   "url": "https://bandarra.me/posts/ai-smart-filters",
+   "source": "bandarra",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building with Lovable: A Low-Code Experiment",
+   "url": "https://bandarra.me/posts/building-with-lovable",
+   "source": "bandarra",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -9909,6 +10713,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "The future of SEO may look more like an Ontology",
+   "url": "https://becominghuman.ai/the-future-of-seo-may-look-more-like-an-ontology-015e6949e9f9?source=rss----5e5bef33608a---4",
+   "source": "becominghuman",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Becoming Human AI Is Expanding — Here’s What’s Changing",
+   "url": "https://becominghuman.ai/becoming-human-ai-is-expanding-heres-what-s-changing-0baaf57030d0?source=rss----5e5bef33608a---4",
+   "source": "becominghuman",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is RAFT? RAG + Fine-Tuning",
+   "url": "https://becominghuman.ai/what-is-raft-rag-fine-tuning-e16cbb3e03f0?source=rss----5e5bef33608a---4",
+   "source": "becominghuman",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Modern Operating Systems for AI Agents",
+   "url": "https://becominghuman.ai/modern-operating-systems-for-ai-agents-ef66f88103c4?source=rss----5e5bef33608a---4",
+   "source": "becominghuman",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NLP in 2026: Trends, Use Cases & Future of Language AI | Shaip",
+   "url": "https://becominghuman.ai/nlp-in-2026-trends-use-cases-future-of-language-ai-shaip-3a0c0362191e?source=rss----5e5bef33608a---4",
+   "source": "becominghuman",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Bias in Hiring Tools: Real Disasters and How Teams Fixed Them",
+   "url": "https://becominghuman.ai/ai-bias-in-hiring-tools-real-disasters-and-how-teams-fixed-them-422de2746bf0?source=rss----5e5bef33608a---4",
+   "source": "becominghuman",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AGI in 2025 |Do you think what matters today will still matter in the coming months? TL;DR: No!",
+   "url": "https://becominghuman.ai/agi-in-2025-do-you-think-what-matters-today-will-still-matter-in-the-coming-months-tl-dr-no-5f22fc93c221?source=rss----5e5bef33608a---4",
+   "source": "becominghuman",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When Algorithms Dream of Photons: Can AI Redefine Reality Like Einstein?",
+   "url": "https://becominghuman.ai/when-algorithms-dream-of-photons-can-ai-redefine-reality-like-einstein-47d1a8373178?source=rss----5e5bef33608a---4",
+   "source": "becominghuman",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Be Part of the AI Revolution at the Chatbot Conference Tomorrow!",
+   "url": "https://becominghuman.ai/be-part-of-the-ai-revolution-at-the-chatbot-conference-tomorrow-e11b93baa6ff?source=rss----5e5bef33608a---4",
+   "source": "becominghuman",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Join the Most-Awaited Chatbot Conference",
+   "url": "https://becominghuman.ai/join-the-most-awaited-chatbot-conference-8aa9da6cefbe?source=rss----5e5bef33608a---4",
+   "source": "becominghuman",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "fluffy rambles: Random updates",
    "url": "https://beesbuzz.biz/blog/9626-Random-updates",
    "source": "beesbuzz",
@@ -10181,6 +11065,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Let Us Dismantle the Artifice of Standup",
+   "url": "https://bendyworks.com/blog/let-us-dismantle-the-artifice-of-standup/index",
+   "source": "bendyworks",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Get Your Capybara System Tests Running in a Docker Dev Container on Apple Silicon",
+   "url": "https://bendyworks.com/blog/how-to-get-your-capybara-system-tests-running-in-a-docker-dev-container-on-apple-silicon/index",
+   "source": "bendyworks",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rails Test Driven Development Fibonacci",
+   "url": "https://bendyworks.com/blog/rails-test-driven-development-fibonacci/index",
+   "source": "bendyworks",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "This RegEx Will Change How You Design With Tailwind",
+   "url": "https://bendyworks.com/blog/this-regex-will-change-how-you-design-with-tailwind/index",
+   "source": "bendyworks",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hooked on Phoenix",
+   "url": "https://bendyworks.com/blog/hooked-on-phoenix/index",
+   "source": "bendyworks",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can you hear me now? - Using Phoenix Presence",
+   "url": "https://bendyworks.com/blog/can-you-hear-me-now-using-phoenix-presence/index",
+   "source": "bendyworks",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting Started with Phoenix LiveView",
+   "url": "https://bendyworks.com/blog/getting-started-with-phoenix-liveview/index",
+   "source": "bendyworks",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stranded at the Edge",
+   "url": "https://bendyworks.com/blog/stranded-at-the-edge/index",
+   "source": "bendyworks",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Importance of Small Conversations<br><small>And how to make them happen in a remote setting</small>",
+   "url": "https://bendyworks.com/blog/the-importance-of-small-conversations/index",
+   "source": "bendyworks",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making Snow Angels in a Brownfield",
+   "url": "https://bendyworks.com/blog/making-snow-angels-in-a-brownfield/index",
+   "source": "bendyworks",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Done is a four letter word",
+   "url": "https://bendyworks.com/blog/done-is-a-four-letter-word/index",
+   "source": "bendyworks",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Happy Holidays From Bendyworks",
+   "url": "https://bendyworks.com/blog/happy-holidays-from-bendyworks/index",
+   "source": "bendyworks",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refactoring Tailwind CSS React Apps with Twin.macro",
+   "url": "https://bendyworks.com/blog/refactoring-tailwind-css-react-with-twin-macro/index",
+   "source": "bendyworks",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Notes from ElixirConf 2021 - What's Now and What's Next",
+   "url": "https://bendyworks.com/blog/elixirconf-2021/index",
+   "source": "bendyworks",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wrangling Complex Rails apps with Docker Part 3 : Testing Rails under Docker",
+   "url": "https://bendyworks.com/blog/wrangling-complex-rails-apps-with-docker-part3/index",
+   "source": "bendyworks",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "From Jekyll to eleventy",
    "url": "https://benediktmeurer.de/2018/12/23/from-jekyll-to-eleventy/",
    "source": "benediktmeurer",
@@ -10381,6 +11385,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Updating a side project with AI in 275 commits",
+   "url": "https://benhoyt.com/writings/updating-gifty-with-ai/",
+   "source": "benhoyt",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fun with an indecisive AI coding agent",
+   "url": "https://benhoyt.com/writings/indecisive-ai-agent/",
+   "source": "benhoyt",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Every dependency you add is a supply chain attack waiting to happen",
+   "url": "https://benhoyt.com/writings/dependencies/",
+   "source": "benhoyt",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don't fear Python subprocess or Go codegen",
+   "url": "https://benhoyt.com/writings/jubilant/",
+   "source": "benhoyt",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Go performance from version 1.0 to 1.22",
+   "url": "https://benhoyt.com/writings/go-version-performance-2024/",
+   "source": "benhoyt",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The One Billion Row Challenge in Go: from 1m45s to 3.4s in nine solutions",
+   "url": "https://benhoyt.com/writings/go-1brc/",
+   "source": "benhoyt",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Switching from S3 to Tigris on Fly.io",
+   "url": "https://benhoyt.com/writings/flyio-and-tigris/",
+   "source": "benhoyt",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Discussing Forth, C, CGI, Python, Go, and AWK on \"Stray Pointers\"",
+   "url": "https://benhoyt.com/writings/stray-pointers-interview/",
+   "source": "benhoyt",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"Stray Pointers\" interview",
+   "url": "https://sites.libsyn.com/481983/discussing-programming-languages-with-ben-hoyt",
+   "source": "benhoyt",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using a Markov chain to generate readable nonsense with 20 lines of Python",
+   "url": "https://benhoyt.com/writings/markov-chain/",
+   "source": "benhoyt",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How (not) to apply for a software job",
+   "url": "https://benhoyt.com/writings/how-to-apply/",
+   "source": "benhoyt",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The AWK book's 60-line version of Make",
+   "url": "https://benhoyt.com/writings/awk-make/",
+   "source": "benhoyt",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using the WordStar diamond in 2023",
+   "url": "https://benhoyt.com/writings/wordstar-diamond/",
+   "source": "benhoyt",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Name before type: why 'age int' is better than 'int age'",
+   "url": "https://benhoyt.com/writings/name-before-type/",
+   "source": "benhoyt",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The proposal to enhance Go's HTTP router",
+   "url": "https://benhoyt.com/writings/go-servemux-enhancements/",
+   "source": "benhoyt",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Retro Game Review - UFO: Enemy Unknown",
    "url": "https://benjamin.computer/posts/2026-10-20-ufo.html",
    "source": "benjamin",
@@ -10496,6 +11620,126 @@
    "title": "Behave Birdnet Bhyve",
    "url": "https://benjamin.computer/posts/2024-10-20-behave-birdnet-bhyve.html",
    "source": "benjamin",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Coding is deciding",
+   "url": "https://benmccormick.org/2025/08/22/coding-is-deciding.html",
+   "source": "benmccormick",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Retraining our Brains To Review LLM-augmented work",
+   "url": "https://benmccormick.org/2025/07/22/retraining-our-brains-to-review.html",
+   "source": "benmccormick",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2024 Lifting Recap - A better year",
+   "url": "https://benmccormick.org/2025/02/09/lifting-recap-a-better-year.html",
+   "source": "benmccormick",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lifting Program Review: Easy Strength",
+   "url": "https://benmccormick.org/2024/08/25/lifting-program-review-easy-strength.html",
+   "source": "benmccormick",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lifting in the first half of 2024",
+   "url": "https://benmccormick.org/2024/07/10/lifting-in-the-first-half.html",
+   "source": "benmccormick",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Simple Path To Building Trust",
+   "url": "https://benmccormick.org/2024/06/25/a-simple-path.html",
+   "source": "benmccormick",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2023 Lifting Recap: Frustration & Learning",
+   "url": "https://benmccormick.org/2024/01/27/lifting-recap-frustration-learning.html",
+   "source": "benmccormick",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Setting Expectations: 4 key areas for performance management",
+   "url": "https://benmccormick.org/2023/02/12/setting-expectations-key.html",
+   "source": "benmccormick",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "3 Pillars For Effective Work",
+   "url": "https://benmccormick.org/2023/01/13/pillars-for-effective.html",
+   "source": "benmccormick",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2022 Books",
+   "url": "https://benmccormick.org/2023/01/03/books.html",
+   "source": "benmccormick",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Books Read in 2022",
+   "url": "https://benmccormick.org/2023/01/02/books-read-in.html",
+   "source": "benmccormick",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7 Months of Lifting At Home",
+   "url": "https://benmccormick.org/2022/12/28/months-of-lifting-at-home.html",
+   "source": "benmccormick",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Blog Updates: New name, new platform",
+   "url": "https://benmccormick.org/2022/12/17/blog-updates-new-name-new.html",
+   "source": "benmccormick",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mental Models For Managing Change",
+   "url": "https://benmccormick.org/2022/01/24/190000.html",
+   "source": "benmccormick",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "More Thoughts On Time",
+   "url": "https://benmccormick.org/2022/01/10/more-thoughts-on-time.html",
+   "source": "benmccormick",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -10621,6 +11865,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Tag, You’re It: Blog Questions 2025",
+   "url": "https://benmyers.dev/blog/blog-questions-2025/",
+   "source": "benmyers",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don’t Use aria-label on Static Text Elements",
+   "url": "https://benmyers.dev/blog/dont-use-aria-label-on-static-text-elements/",
+   "source": "benmyers",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Subtitles, Closed Captions, and Open Captions: What’s the Difference?",
+   "url": "https://benmyers.dev/blog/captions-and-subtitles/",
+   "source": "benmyers",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lost in Translation: Tips for Multilingual Web Accessibility",
+   "url": "https://benmyers.dev/blog/multilingual-web-accessibility/",
+   "source": "benmyers",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build a Blogroll with Eleventy",
+   "url": "https://benmyers.dev/blog/eleventy-blogroll/",
+   "source": "benmyers",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I’m a Spotless Giraffe.",
+   "url": "https://benmyers.dev/blog/spotless-giraffe/",
+   "source": "benmyers",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I Write Alt Text for Code Snippets on Social Media",
+   "url": "https://benmyers.dev/blog/code-snippet-alt-text/",
+   "source": "benmyers",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Curious Case of “iff” and Overriding Screenreader Pronunciations",
+   "url": "https://benmyers.dev/blog/overriding-screenreader-pronunciations/",
+   "source": "benmyers",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Web Needs a Native .visually-hidden",
+   "url": "https://benmyers.dev/blog/native-visually-hidden/",
+   "source": "benmyers",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Create Shareable Automatic Captions for Live Online Events with Web Captioner",
+   "url": "https://benmyers.dev/blog/shareable-captions/",
+   "source": "benmyers",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A First Look at the Websites and Software Applications Accessibility Act Bill",
+   "url": "https://benmyers.dev/blog/a11yact-bill/",
+   "source": "benmyers",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Style with Stateful, Semantic Selectors",
+   "url": "https://benmyers.dev/blog/semantic-selectors/",
+   "source": "benmyers",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I Doubled My Lighthouse Performance Score in One Night",
+   "url": "https://benmyers.dev/blog/doubled-lighthouse-score/",
+   "source": "benmyers",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Fix Your Low-Contrast Text",
+   "url": "https://benmyers.dev/blog/fix-low-contrast-text/",
+   "source": "benmyers",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build a Twitch Chatbot for Sharing Your Content Using Algolia Search",
+   "url": "https://benmyers.dev/blog/algolia-twitch-bot/",
+   "source": "benmyers",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Visualizing a generalized maximum-weight-matching graph algorithm",
    "url": "https://bensmithgall.com//blog/claude-blossom-viz",
    "source": "bensmithgall",
@@ -10696,6 +12060,94 @@
    "title": "The Sprawl Trilogy",
    "url": "https://bensmithgall.com//books/neuromancer",
    "source": "bensmithgall",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing the Bento component library",
+   "url": "https://bentojs.dev/blog/introducing-the-bento-components-library/",
+   "source": "bentojs",
+   "rank": 1,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Real Digital Omnibus for European Competitiveness and Security",
+   "url": "https://berjon.com/data-omnibus/",
+   "source": "berjon",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Media Media",
+   "url": "https://berjon.com/media-media/",
+   "source": "berjon",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rum Baba",
+   "url": "https://berjon.com/baba/",
+   "source": "berjon",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Retweeting Class",
+   "url": "https://berjon.com/rt/",
+   "source": "berjon",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Direction of Interoperability",
+   "url": "https://berjon.com/interoperability/",
+   "source": "berjon",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fascintern Media",
+   "url": "https://berjon.com/fascintern-media/",
+   "source": "berjon",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Digital Sovereignty",
+   "url": "https://berjon.com/digital-sovereignty/",
+   "source": "berjon",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Infrastructure Shock",
+   "url": "https://berjon.com/infrastructure-shock/",
+   "source": "berjon",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ethicswishing",
+   "url": "https://berjon.com/ethicswishing/",
+   "source": "berjon",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Public Interest Internet",
+   "url": "https://berjon.com/public-interest-internet/",
+   "source": "berjon",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -11381,6 +12833,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Lessons learned switching to Rspack",
+   "url": "https://birtles.blog/2024/08/14/lessons-learned-switching-to-rspack/",
+   "source": "birtles",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weird things engineers believe about Web development",
+   "url": "https://birtles.blog/2024/01/06/weird-things-engineers-believe-about-development/",
+   "source": "birtles",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sharding Playwright tests by browser",
+   "url": "https://birtles.blog/2023/12/17/sharding-playwright-tests-by-browser/",
+   "source": "birtles",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In praise of WordPress",
+   "url": "https://birtles.blog/2023/11/28/in-praise-of-wordpress/",
+   "source": "birtles",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RSS the hard way: Adventures with Astro Assets",
+   "url": "https://birtles.blog/2023/10/02/rss-the-hard-way/",
+   "source": "birtles",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sponsoring Open Source as a Japanese Company",
+   "url": "https://birtles.blog/2023/09/09/sponsoring-open-source-as-a-japanese-company/",
+   "source": "birtles",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web animation in 2017",
+   "url": "https://birtles.blog/2017/01/10/web-animation-in-2017/",
+   "source": "birtles",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MozAnime in 2016",
+   "url": "https://birtles.blog/2016/12/27/mozanime-in-2016/",
+   "source": "birtles",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gecko insiders",
+   "url": "https://birtles.blog/2016/04/01/gecko-insiders/",
+   "source": "birtles",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mozilla Japan engineering is quite hot right now",
+   "url": "https://birtles.blog/2015/08/06/mozilla-japan-engineering-is-quite-hot-right-now/",
+   "source": "birtles",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What do we do with SMIL?",
+   "url": "https://birtles.blog/2015/05/01/what-do-we-do-with-smil/",
+   "source": "birtles",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "After 10 years",
+   "url": "https://birtles.blog/2014/10/31/after-10-years/",
+   "source": "birtles",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Animations on Fire @ Graphical Web 2014",
+   "url": "https://birtles.blog/2014/09/08/animations-on-fire-graphical-web-2014/",
+   "source": "birtles",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Animations @ html5j 2013",
+   "url": "https://birtles.blog/2013/12/24/web-animations-html5j-2013/",
+   "source": "birtles",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Players wanted: the pause and seek game",
+   "url": "https://birtles.blog/2013/07/25/players-wanted-the-pause-and-seek-game/",
+   "source": "birtles",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Simulating Airband AM Radios",
    "url": "https://bitbashing.io/am-radio.html",
    "source": "bitbashing",
@@ -11853,6 +13425,246 @@
    "metric": "feed rank"
   },
   {
+   "title": "Ideals",
+   "url": "https://bkardell.com/blog/Ideals.html",
+   "source": "bkardell",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Enhanced Spell Checking on the Web",
+   "url": "https://bkardell.com/blog/EnhancedSpellchecking.html",
+   "source": "bkardell",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A New Browser Vision?",
+   "url": "https://bkardell.com/blog/NewBrowserVision.html",
+   "source": "bkardell",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fine. What Is the Web?",
+   "url": "https://bkardell.com/blog/FWIW.html",
+   "source": "bkardell",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Get Clamped: Unwinding Some Difficult CSS History",
+   "url": "https://bkardell.com/blog/GetClamped.html",
+   "source": "bkardell",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Browsers and Language Features",
+   "url": "https://bkardell.com/blog/language.html",
+   "source": "bkardell",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Priority of Constituencies",
+   "url": "https://bkardell.com/blog/PriorityOfConstituencies.html",
+   "source": "bkardell",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What if we just",
+   "url": "https://bkardell.com/blog/WhatIfYouJustTellMe.html",
+   "source": "bkardell",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Maintaining the Bridges",
+   "url": "https://bkardell.com/blog/Bridges.html",
+   "source": "bkardell",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Secret Life of Custom Elements",
+   "url": "https://bkardell.com/blog/SecretLifeOfCustomElements.html",
+   "source": "bkardell",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "移动端 SSH + CLI Coding Agent 的实践与体验优化",
+   "url": "https://blanboom.org/2026/ssh-cli-coding-agent/",
+   "source": "blanboom",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HEIF & HEVC 转换器 1.0 发布：压缩 iOS 照片库，释放存储空间",
+   "url": "https://blanboom.org/2025/heif_converter/",
+   "source": "blanboom",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "一个 UniFi IPv6 问题的定位与解决",
+   "url": "https://blanboom.org/2024/unifi-ipv6/",
+   "source": "blanboom",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "通过自定义 Prompts，让 Readwise Reader 为文章优化标题、添加中文摘要",
+   "url": "https://blanboom.org/2024/readwise-auto-chinese-title/",
+   "source": "blanboom",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "通过 Waydroid 自动备份 NAS 照片到 Google Photos",
+   "url": "https://blanboom.org/2024/nas-to-google-photos/",
+   "source": "blanboom",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AirTerminal 2.2：Telnet 服务器、自动重连",
+   "url": "https://blanboom.org/2023/airterminal_2_2/",
+   "source": "blanboom",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AirTerminal 2.1：自定义字体、颜色主题、退格键映射",
+   "url": "https://blanboom.org/2023/airterminal_2_1/",
+   "source": "blanboom",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "将 Logseq 的昨日待办事项自动转移到今天",
+   "url": "https://blanboom.org/2023/logseq-yesterday-todo-transfer-to-today/",
+   "source": "blanboom",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "一次使用 ChatGPT 帮助我学习 L4S 的尝试",
+   "url": "https://blanboom.org/2023/learning-l4s-with-chatgpt/",
+   "source": "blanboom",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AirTerminal 2.0：支持连接多个蓝牙设备",
+   "url": "https://blanboom.org/2023/airterminal_2/",
+   "source": "blanboom",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Brute Forcing FLAC Apodization Chains",
+   "url": "https://blobfolio.com/2026/flac-apodizations/",
+   "source": "blobfolio",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ubuntu 25.10: How to Revert to GNU Coreutils",
+   "url": "https://blobfolio.com/2025/revert-to-gnu-coreutils/",
+   "source": "blobfolio",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hello Mesozoic World: Enums and Macros",
+   "url": "https://blobfolio.com/2025/hello-mesozoic-world/",
+   "source": "blobfolio",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fixing Intel Meteor Lake: Less Is More",
+   "url": "https://blobfolio.com/2025/fixing-intel-meteor-lake/",
+   "source": "blobfolio",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Pxsum!",
+   "url": "https://blobfolio.com/2024/pxsum/",
+   "source": "blobfolio",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making Up Numbers: Constrained Numerical Types in Rust",
+   "url": "https://blobfolio.com/2024/making-up-numbers/",
+   "source": "blobfolio",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a Custom XanMod Kernel on Ubuntu 23.10",
+   "url": "https://blobfolio.com/2024/building-a-custom-xanmod-kernel-on-ubuntu-23-10/",
+   "source": "blobfolio",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Rip Rip Hooray!",
+   "url": "https://blobfolio.com/2023/riprip/",
+   "source": "blobfolio",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Installing CUETools 2.2.4 on Linux via WINE",
+   "url": "https://blobfolio.com/2023/cuetools-wine/",
+   "source": "blobfolio",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Disabling Snap, and Keeping It Disabled",
+   "url": "https://blobfolio.com/2023/fully-disabling-snap/",
+   "source": "blobfolio",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "How 1Password for Agents preserves security and privacy",
    "url": "https://1password.com/blog/1password-for-agents-security-privacy",
    "source": "blog1password",
@@ -12169,6 +13981,86 @@
    "url": "https://blog.alexmaccaw.com/the-ai-is-coming/",
    "source": "blogalexmaccaw",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stitching with the new Jules API",
+   "url": "https://blog.almaer.com/stitching-with-the-new-jules-api/",
+   "source": "blogalmaer",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pools of Extraction: How I Hack on Software Projects with LLMs",
+   "url": "https://blog.almaer.com/pools-of-extraction-how-i-hack-on-software-projects-with-llms/",
+   "source": "blogalmaer",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stitch Design Variants: A Picture Really Is Worth a Thousand Words?",
+   "url": "https://blog.almaer.com/stitch-design-variants-a-picture-really-is-worth-a-thousand-words/",
+   "source": "blogalmaer",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stitch Prompt: A CLI for Design Variety",
+   "url": "https://blog.almaer.com/stitch-prompt-a-cli-for-design-variety/",
+   "source": "blogalmaer",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stitch: A Tasteful Idea",
+   "url": "https://blog.almaer.com/stitch-a-tasteful-idea/",
+   "source": "blogalmaer",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "English will become the most popular development language in 6 years",
+   "url": "https://blog.almaer.com/english-will-become-the-most-popular-development-language-in-6-years/",
+   "source": "blogalmaer",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Principles of Developer AI Product Development",
+   "url": "https://blog.almaer.com/principles-of-developer-ai-product-development/",
+   "source": "blogalmaer",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Joining Tessl to become an AI native developer",
+   "url": "https://blog.almaer.com/joining-tessl-to-become-an-ai-native-developer/",
+   "source": "blogalmaer",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Keeping your A-Team together with developer AI",
+   "url": "https://blog.almaer.com/keeping-your-a-team-together-with-developer-ai/",
+   "source": "blogalmaer",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cultivating a Durable Championship Caliber Team",
+   "url": "https://blog.almaer.com/cultivating-a-durable-championship-caliber-team/",
+   "source": "blogalmaer",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -65071,6 +66963,14 @@
   {
    "title": "Show HN: Skillroll – pure Markdown evals for any skill using a Dungeon Master",
    "url": "https://github.com/hagaiw/skillroll",
+   "source": "show_hn",
+   "rank": 12,
+   "score": 2,
+   "metric": "points"
+  },
+  {
+   "title": "Show HN: Online Anthakshari Game",
+   "url": "https://anthakshari.ai",
    "source": "show_hn",
    "rank": 12,
    "score": 2,
