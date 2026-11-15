@@ -645,3 +645,23 @@ root for self-hosted mirrors.
 | Randall Degges | security dev | `www.rdegges.com/feed.xml` |
 | r/ML | Reddit MachineLearning | `www.reddit.com/r/MachineLearning/.rss` |
 | Robin Osborne | dev notes | `www.robinosborne.co.uk/feed/` |
+| Robin Wieruch | React educator | `www.robinwieruch.de/index.xml` |
+| RunningCheese | Firefox distro | `www.runningcheese.com/feed` |
+| Sarah Gebauer | dev notes | `www.sarahgebauer.com/feed.xml` |
+| Schneier | security guru | `www.schneier.com/blog/atom.xml` |
+| ScienceDaily AI | AI research news | `www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml` |
+| Silvestar | frontend dev | `www.silvestar.codes/rss.xml` |
+| Simeon Griggs | Sanity dev | `www.simeongriggs.dev/feed.xml` |
+| Simo Ahava | analytics eng | `www.simoahava.com/index.xml` |
+| SitePen | Dojo consultancy | `www.sitepen.com/rss.xml` |
+| SitePoint | web dev articles | `www.sitepoint.com/sitepoint.rss` |
+| SpicyWeb | frontend dev | `www.spicyweb.dev/feed.xml` |
+| Stacie Arellano | a11y dev | `www.staciearellano.com/feed/` |
+| tempertemper | a11y dev | `www.tempertemper.net/feeds/main.xml` |
+| The Haystack | web dev | `www.the-haystack.com/feed/` |
+| TPGi | a11y consultancy | `www.tpgi.com/blog/feed/` |
+| Trys Mudford | frontend dev | `www.trysmudford.com/blog/index.xml` |
+| tunetheweb | Barry Pollard perf | `www.tunetheweb.com/rss.xml` |
+| WebPerf Tips | perf resources | `www.webperf.tips/rss.xml` |
+| xianmin | Chinese dev | `www.xianmin.org/index.xml` |
+| xiaohui.com | weblog | `www.xiaohui.com/rss/` |
