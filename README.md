@@ -158,6 +158,9 @@ trendscope developer attention dataset, https://zalize-com.github.io/trendscope/
 
 ## Roadmap & paid tier (owner activates)
 
+See **[docs/activation.md](docs/activation.md)** for the one-click checklist
+(Pages ×2, Sponsors, dataset listing, submissions) — ~10 minutes total.
+
 - Cleaned long-range history + per-topic slices → dataset listing on
   [data.zalize.com](https://data.zalize.com) (link TBD)
 - Weekly digest archives under `docs/digest/` → subscription-ready content
