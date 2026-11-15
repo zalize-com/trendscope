@@ -87,6 +87,12 @@ def main():
         ("data/hn-canon-monthly.csv",
          ["month", "rank", "title", "url", "points", "comments",
           "author", "id", "hn_url"], 2000),
+        ("data/show-hn-monthly.csv",
+         ["month", "rank", "title", "url", "points", "comments",
+          "author", "id", "hn_url"], 1500),
+        ("data/ask-hn-monthly.csv",
+         ["month", "rank", "title", "url", "points", "comments",
+          "author", "id", "hn_url"], 2000),
     ):
         fp = os.path.join(ROOT, path)
         check(os.path.exists(fp), f"{path} missing")
@@ -96,6 +102,21 @@ def main():
             check(rd and rd[0] == hdr, f"{path} header drifted: {rd[0] if rd else 'empty'}")
             check(len(rd) - 1 >= min_rows,
                   f"{path} has {len(rd)-1} rows (<{min_rows})")
+            if "title" in hdr:
+                ti = hdr.index("title")
+                for r in rd[1:]:
+                    if len(r) > ti and ("&#" in r[ti] or "&amp;" in r[ti]):
+                        errors.append(f"{path} title has entity residue: {r[ti][:60]}")
+                        break
+
+    # history.csv: entity residue audit on titles (backfill/feed collectors)
+    with open(os.path.join(ROOT, "data", "history.csv")) as f:
+        rd = csv.reader(f)
+        ti = next(rd).index("title")
+        for r in rd:
+            if len(r) > ti and ("&#" in r[ti] or "&amp;" in r[ti]):
+                errors.append(f"history.csv title has entity residue: {r[ti][:60]}")
+                break
 
     if errors:
         print("VALIDATION FAILED:", file=sys.stderr)
