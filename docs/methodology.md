@@ -33,3 +33,9 @@ the collision-avoidance rules.
 - The data is the product; the pages are the storefront. When in doubt,
   add a dataset, not a chart.
 - **Function declarations are block-scoped in modules.** Declaring `function f()` inside an `if` block then calling it outside silently fails. When auditing JS, check the call site, not just the declaration — a naive grep counts helpers defined and used inside the same DOMContentLoaded wrapper as false positives.
+
+5. **Insertion anchors must be unique.** `str.replace("</script>", x, 1)`
+   matches the FIRST `</script>` — which is a CDN tag (`<script
+   src=...></script>`) in files that load js-yaml/qrcodejs. Anchor on a
+   longer unique string (`</script>\n</body>`) or use `rindex`. Audit:
+   only tools/utils.html and tools/web.html carry external script tags.
