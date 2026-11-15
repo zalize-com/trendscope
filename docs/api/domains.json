@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T13:24:16.033693+00:00",
+ "generated_at": "2026-11-15T13:25:43.537023+00:00",
  "latest_snapshot": "2026-11-15",
  "total": 214,
  "domains": [
@@ -78,6 +78,22 @@
     "score": 15,
     "metric": "arxiv recent",
     "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "lwn.net",
+   "days_on_board": 2,
+   "items": 16,
+   "sources": [
+    "hackernews",
+    "lwn"
+   ],
+   "top_hit": {
+    "title": "Synaptics patent claims stop work on DisplayLink drivers",
+    "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+    "score": 491,
+    "metric": "points",
+    "date": "2026-11-10"
    }
   },
   {
@@ -741,22 +757,6 @@
     "title": "Show HN: Offline quoting, receipts, and expense tracking for entrepreneurs",
     "url": "https://play.google.com/store/apps/details?id=com.companyname.moneyacc&hl=en_US",
     "score": 4,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "jordi.inversethought.com",
-   "days_on_board": 1,
-   "items": 2,
-   "sources": [
-    "hackernews",
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "My favourite modern NES games",
-    "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
-    "score": 39,
     "metric": "points",
     "date": "2026-11-15"
    }

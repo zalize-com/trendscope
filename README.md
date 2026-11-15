@@ -44,6 +44,7 @@ A daily cross-source snapshot of developer attention:
 | Echo JS | JavaScript community news | `echojs.com/rss` |
 | InfoQ | enterprise dev news + talks | `feed.infoq.com` |
 | The Register | software/IT news | `theregister.com/software/headlines.atom` |
+| LWN | Linux/kernel news | `lwn.net/headlines/rss` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

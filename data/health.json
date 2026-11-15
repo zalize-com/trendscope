@@ -1,115 +1,120 @@
 {
-  "generated_at": "2026-11-15T13:23:04.130039+00:00",
+  "generated_at": "2026-11-15T13:24:54.102688+00:00",
   "sources": {
     "hackernews": {
       "ok": true,
       "items": 20,
-      "ms": 310
+      "ms": 258
     },
     "show_hn": {
       "ok": true,
       "items": 12,
-      "ms": 367
+      "ms": 292
     },
     "ask_hn": {
       "ok": true,
       "items": 12,
-      "ms": 356
+      "ms": 324
     },
     "lobsters": {
       "ok": true,
       "items": 15,
-      "ms": 267
+      "ms": 404
     },
     "devto": {
       "ok": true,
       "items": 15,
-      "ms": 108
+      "ms": 82
     },
     "lemmy": {
       "ok": true,
       "items": 15,
-      "ms": 265
+      "ms": 379
     },
     "producthunt": {
       "ok": true,
       "items": 20,
-      "ms": 225
+      "ms": 42
     },
     "techmeme": {
       "ok": true,
       "items": 15,
-      "ms": 415
+      "ms": 240
     },
     "slashdot": {
       "ok": true,
       "items": 15,
-      "ms": 78
+      "ms": 91
     },
     "krebs": {
       "ok": true,
       "items": 10,
-      "ms": 35
+      "ms": 167
     },
     "changelog": {
       "ok": true,
       "items": 15,
-      "ms": 68
+      "ms": 374
     },
     "freecodecamp": {
       "ok": true,
       "items": 10,
-      "ms": 94
+      "ms": 676
     },
     "echojs": {
       "ok": true,
       "items": 15,
-      "ms": 170
+      "ms": 360
     },
     "infoq": {
       "ok": true,
       "items": 15,
-      "ms": 330
+      "ms": 23
     },
     "theregister": {
+      "ok": false,
+      "items": 0,
+      "ms": 13336
+    },
+    "lwn": {
       "ok": true,
       "items": 15,
-      "ms": 391
+      "ms": 294
     },
     "arstechnica": {
       "ok": true,
       "items": 15,
-      "ms": 11
+      "ms": 45
     },
     "theverge": {
       "ok": true,
       "items": 10,
-      "ms": 18
+      "ms": 45
     },
     "arxiv": {
       "ok": true,
       "items": 15,
-      "ms": 45
+      "ms": 79
     },
     "github_trending": {
       "ok": true,
       "items": 15,
-      "ms": 570
+      "ms": 491
     },
     "npm": {
       "ok": true,
       "items": 24,
-      "ms": 6728
+      "ms": 7157
     },
     "pypi": {
       "ok": true,
-      "items": 21,
-      "ms": 71067
+      "items": 22,
+      "ms": 48645
     },
     "crates": {
       "ok": true,
       "items": 15,
-      "ms": 359
+      "ms": 674
     }
   }
 }
