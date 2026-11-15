@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T21:08:39.276115+00:00",
+ "generated_at": "2026-11-15T21:26:07.154791+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 2019,
+ "total": 2022,
  "domains": [
   {
    "hostname": "blog.google",
@@ -87,7 +87,7 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 2,
-   "items": 502,
+   "items": 593,
    "sources": [
     "hackernews",
     "k8s",
@@ -98,6 +98,7 @@
     "rclojure",
     "rcoding",
     "rcompsci",
+    "rdartlang",
     "rdatascience",
     "rdevops",
     "rdjango",
@@ -105,17 +106,22 @@
     "rdotnet",
     "reddit",
     "relixir",
+    "rexperienceddevs",
     "rfrontend",
     "rgamedev",
     "rgolang",
     "rhaskell",
     "rjava",
     "rlisp",
+    "rmongodb",
     "rnode",
     "ropensource",
+    "rphp",
     "rprogramming",
     "rpython",
     "rreactjs",
+    "rredis",
+    "rrust",
     "rselfhosted",
     "rswift",
     "rsysadmin",
@@ -197,7 +203,7 @@
   {
    "hostname": "theverge.com",
    "days_on_board": 2,
-   "items": 21,
+   "items": 22,
    "sources": [
     "hackernews",
     "theverge"

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T21:08:40.685426+00:00",
+  "generated_at": "2026-11-15T21:26:08.577779+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -15,10 +15,10 @@
       }
     },
     "ask_hn": {
-      "items": 82,
-      "unique_urls": 68,
+      "items": 84,
+      "unique_urls": 70,
       "median_days_on_board": 1,
-      "one_day_pct": 79,
+      "one_day_pct": 80,
       "top_item": {
         "title": "Ask HN: Microsoft/Azure Outage?",
         "url": "https://news.ycombinator.com/item?id=50471668",
@@ -27,8 +27,8 @@
       }
     },
     "show_hn": {
-      "items": 52,
-      "unique_urls": 52,
+      "items": 54,
+      "unique_urls": 54,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -170,6 +170,18 @@
         "rank": 1
       }
     },
+    "theverge": {
+      "items": 20,
+      "unique_urls": 20,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Watch SpaceX successfully execute the first ‘chopstick’ catch of Starship",
+        "url": "https://www.theverge.com/science/1033930/spacex-chopstick-starship-catch",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "daringfireball": {
       "items": 19,
       "unique_urls": 17,
@@ -180,18 +192,6 @@
         "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
         "score": 811,
         "rank": 3
-      }
-    },
-    "theverge": {
-      "items": 19,
-      "unique_urls": 19,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Watch SpaceX successfully execute the first ‘chopstick’ catch of Starship",
-        "url": "https://www.theverge.com/science/1033930/spacex-chopstick-starship-catch",
-        "score": 10,
-        "rank": 1
       }
     },
     "waxy": {
@@ -382,6 +382,18 @@
       "top_item": {
         "title": "Quarter 2 Update - Revisiting Rules. Again.",
         "url": "https://www.reddit.com/r/selfhosted/comments/1sey9ch/quarter_2_update_revisiting_rules_again/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rgamedev": {
+      "items": 16,
+      "unique_urls": 16,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "I interviewed the former Technical Director of Rockstar Games and the developer of the GTA games!",
+        "url": "https://www.reddit.com/r/gamedev/comments/1xq7u15/i_interviewed_the_former_technical_director_of/",
         "score": 15,
         "rank": 1
       }
@@ -10682,18 +10694,6 @@
         "rank": 1
       }
     },
-    "rgamedev": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "I interviewed the former Technical Director of Rockstar Games and the developer of the GTA games!",
-        "url": "https://www.reddit.com/r/gamedev/comments/1xq7u15/i_interviewed_the_former_technical_director_of/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "rdjango": {
       "items": 15,
       "unique_urls": 15,
@@ -10714,6 +10714,90 @@
       "top_item": {
         "title": "Announcement: We are merging with r/angular",
         "url": "https://www.reddit.com/r/Angular2/comments/1uer01e/announcement_we_are_merging_with_rangular/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "stuffandnonsenseco": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Self-publishing doesn’t have to mean doing everything yourself",
+        "url": "https://stuffandnonsense.co.uk/blog/self-publishing-doesnt-have-to-mean-doing-everything-yourself/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rrust": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Hey Rustaceans! Got a question? Ask here (46/2026)!",
+        "url": "https://www.reddit.com/r/rust/comments/1xrongp/hey_rustaceans_got_a_question_ask_here_462026/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rphp": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Weekly help thread",
+        "url": "https://www.reddit.com/r/PHP/comments/1xrkz2e/weekly_help_thread/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rexperienceddevs": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Experienced Devs Weekly Burnout and Venting Thread: A weekly thread for sharing experiences",
+        "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xsbwrz/experienced_devs_weekly_burnout_and_venting/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rdartlang": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "New video in the Dart series: GraphQL codegen for huge schemas.",
+        "url": "https://www.reddit.com/r/dartlang/comments/1xwneq2/new_video_in_the_dart_series_graphql_codegen_for/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rmongodb": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Does anyone actually use SQL with mongo?",
+        "url": "https://www.reddit.com/r/mongodb/comments/1xw2f1p/does_anyone_actually_use_sql_with_mongo/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rredis": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Redis 8 is now GA",
+        "url": "https://www.reddit.com/r/redis/comments/1kcedvm/redis_8_is_now_ga/",
         "score": 15,
         "rank": 1
       }
@@ -11711,6 +11795,18 @@
         "title": "Build and Train a GLM-5.3-Flash Model From Scratch with Python",
         "url": "https://www.freecodecamp.org/news/build-and-train-a-glm-53-flash-model-from-scratch-with-python/",
         "score": 10,
+        "rank": 1
+      }
+    },
+    "hackaday": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "An MP3 Player, Implemented As A Factorio Blueprint",
+        "url": "https://hackaday.com/2026/11/15/an-mp3-player-implemented-as-a-factorio-blueprint/",
+        "score": 7,
         "rank": 1
       }
     },
@@ -18110,15 +18206,15 @@
         "rank": 1
       }
     },
-    "hackaday": {
-      "items": 9,
-      "unique_urls": 9,
+    "valhead": {
+      "items": 10,
+      "unique_urls": 10,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
-        "title": "An MP3 Player, Implemented As A Factorio Blueprint",
-        "url": "https://hackaday.com/2026/11/15/an-mp3-player-implemented-as-a-factorio-blueprint/",
-        "score": 7,
+        "title": "Senior IC Reading List",
+        "url": "https://valhead.com/2023/01/31/senior-ic-reading-list/",
+        "score": 10,
         "rank": 1
       }
     },
@@ -18782,6 +18878,18 @@
         "rank": 1
       }
     },
+    "lireo": {
+      "items": 6,
+      "unique_urls": 6,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Blogging Challenge: Knowember 2026",
+        "url": "https://www.lireo.com/blogging-challenge-knowember-2026/",
+        "score": 5,
+        "rank": 1
+      }
+    },
     "michaelgooding": {
       "items": 6,
       "unique_urls": 6,
@@ -18994,18 +19102,6 @@
       "top_item": {
         "title": "Creating for yourself",
         "url": "https://sethmlarson.dev/creating-for-yourself?utm_campaign=rss",
-        "score": 5,
-        "rank": 1
-      }
-    },
-    "lireo": {
-      "items": 5,
-      "unique_urls": 5,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Blogging Challenge: Knowember 2026",
-        "url": "https://www.lireo.com/blogging-challenge-knowember-2026/",
         "score": 5,
         "rank": 1
       }

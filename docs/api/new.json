@@ -1,17 +1,17 @@
 {
- "generated_at": "2026-11-15T21:08:39.276115+00:00",
+ "generated_at": "2026-11-15T21:26:07.154791+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 20971,
- "new_items": 20844,
+ "total_items": 21094,
+ "new_items": 20967,
  "by_source": {
-  "show_hn": 53,
+  "show_hn": 55,
   "producthunt": 45,
   "hackernews": 40,
   "reddit": 32,
   "theregister": 29,
   "techmeme": 27,
   "slashdot": 21,
-  "theverge": 19,
+  "theverge": 20,
   "daringfireball": 17,
   "lemmy": 17,
   "thenewstack": 17,
@@ -20,6 +20,7 @@
   "gargron": 16,
   "infoq": 16,
   "kooslooijesteijn": 16,
+  "rgamedev": 16,
   "robinrendle": 16,
   "rprogramming": 16,
   "rselfhosted": 16,
@@ -700,6 +701,7 @@
   "rclojure": 15,
   "rcoding": 15,
   "rcompsci": 15,
+  "rdartlang": 15,
   "rdatascience": 15,
   "rdegges": 15,
   "rdevops": 15,
@@ -714,8 +716,8 @@
   "relay": 15,
   "relixir": 15,
   "remysharp": 15,
+  "rexperienceddevs": 15,
   "rfrontend": 15,
-  "rgamedev": 15,
   "rgolang": 15,
   "rhaskell": 15,
   "ridiculousfish": 15,
@@ -724,6 +726,7 @@
   "rknight": 15,
   "rlisp": 15,
   "rmarcus": 15,
+  "rmongodb": 15,
   "rnode": 15,
   "roadtolarissa": 15,
   "robbowen": 15,
@@ -732,8 +735,11 @@
   "romainguy": 15,
   "romaricpascal": 15,
   "ropensource": 15,
+  "rphp": 15,
   "rpython": 15,
   "rreactjs": 15,
+  "rredis": 15,
+  "rrust": 15,
   "rswift": 15,
   "rsysadmin": 15,
   "rtechnology": 15,
@@ -806,6 +812,7 @@
   "stevekrouse": 15,
   "steveyeggeblogspot": 15,
   "storybookjs": 15,
+  "stuffandnonsenseco": 15,
   "svelte": 15,
   "swiftbysundell": 15,
   "swiftrocks": 15,
@@ -1215,6 +1222,7 @@
   "gregoryszorc": 10,
   "gsqi": 10,
   "gustedtwordpress": 10,
+  "hackaday": 10,
   "hanselman": 10,
   "haptik": 10,
   "hashrocket": 10,
@@ -1488,6 +1496,7 @@
   "uxmatters": 10,
   "uxplanet": 10,
   "v8": 10,
+  "valhead": 10,
   "veroniiiica": 10,
   "vinted": 10,
   "vitalabgithub": 10,
@@ -1532,7 +1541,6 @@
   "codesgo": 9,
   "ferjmgithub": 9,
   "gtdstudy": 9,
-  "hackaday": 9,
   "hostinger": 9,
   "jaredpalmer": 9,
   "jeremydormitzer": 9,
@@ -1543,6 +1551,7 @@
   "softwareprocesses": 9,
   "susam": 9,
   "timtech": 9,
+  "ask_hn": 8,
   "blogchriszacharias": 8,
   "darker": 8,
   "dbanotes": 8,
@@ -1571,13 +1580,13 @@
   "themodernlifegithub": 7,
   "webaxe": 7,
   "aerotwist": 6,
-  "ask_hn": 6,
   "blogsensible": 6,
   "charlottedann": 6,
   "frankforce": 6,
   "ilyagrigorik": 6,
   "jaketracey": 6,
   "kpqgithub": 6,
+  "lireo": 6,
   "michaelgooding": 6,
   "mozillaneckogithub": 6,
   "samwho": 6,
@@ -1602,7 +1611,6 @@
   "holovaty": 5,
   "hsablonniere": 5,
   "laravelnews": 5,
-  "lireo": 5,
   "martialtesterwordpress": 5,
   "michalspacek": 5,
   "microsoftedgegithub": 5,
@@ -13251,6 +13259,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Ask HN: What does building hardware with AI look like?",
+   "url": "https://news.ycombinator.com/item?id=50508089",
+   "source": "ask_hn",
+   "rank": 7,
+   "score": 5,
+   "metric": "points"
+  },
+  {
    "title": "Should proper mouse support be added in CLI harnesses",
    "url": "https://news.ycombinator.com/item?id=50508183",
    "source": "ask_hn",
@@ -13269,6 +13285,14 @@
   {
    "title": "Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence",
    "url": "https://news.ycombinator.com/item?id=50510042",
+   "source": "ask_hn",
+   "rank": 11,
+   "score": 4,
+   "metric": "points"
+  },
+  {
+   "title": "Ask HN: What do coding interviews look like in the age of AI?",
+   "url": "https://news.ycombinator.com/item?id=50510540",
    "source": "ask_hn",
    "rank": 11,
    "score": 4,
@@ -71723,6 +71747,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Loop Antennas for Transmitting",
+   "url": "https://hackaday.com/2026/11/15/loop-antennas-for-transmitting/",
+   "source": "hackaday",
+   "rank": 1,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
    "title": "Reverse Engineer that USB Device in Style",
    "url": "https://hackaday.com/2026/11/15/reverse-engineer-that-usb-device-in-style/",
    "source": "hackaday",
@@ -93709,6 +93741,14 @@
   {
    "title": "Blogging Challenge: Knowember 2026",
    "url": "https://www.lireo.com/blogging-challenge-knowember-2026/",
+   "source": "lireo",
+   "rank": 1,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Photo of the Week: Marigolds Blooming in Mid-November",
+   "url": "https://www.lireo.com/photo-of-the-week-marigolds-blooming-in-mid-november/",
    "source": "lireo",
    "rank": 1,
    "score": 5,
@@ -127323,6 +127363,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "New video in the Dart series: GraphQL codegen for huge schemas.",
+   "url": "https://www.reddit.com/r/dartlang/comments/1xwneq2/new_video_in_the_dart_series_graphql_codegen_for/",
+   "source": "rdartlang",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Dart 3.14",
+   "url": "https://www.reddit.com/r/dartlang/comments/1xtr43v/announcing_dart_314/",
+   "source": "rdartlang",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Spec Driven Development with Dart and Claude (Calendly clone with Jaspr)",
+   "url": "https://www.reddit.com/r/dartlang/comments/1xsiien/spec_driven_development_with_dart_and_claude/",
+   "source": "rdartlang",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Start With the REST API You Have: A Typed Client Today, GraphQL Later",
+   "url": "https://www.reddit.com/r/dartlang/comments/1xs9pv4/start_with_the_rest_api_you_have_a_typed_client/",
+   "source": "rdartlang",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Seeking volunteer DartCloudFunctions co-maintainers ahead of an Apache-2.0 release",
+   "url": "https://www.reddit.com/r/dartlang/comments/1xpv3i4/seeking_volunteer_dartcloudfunctions/",
+   "source": "rdartlang",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Did anyone else notice pub.dev download counts dropping?",
+   "url": "https://www.reddit.com/r/dartlang/comments/1xo6lim/did_anyone_else_notice_pubdev_download_counts/",
+   "source": "rdartlang",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generated Dart class per GraphQL selection, instead of one nullable model",
+   "url": "https://www.reddit.com/r/dartlang/comments/1xlm5vp/generated_dart_class_per_graphql_selection/",
+   "source": "rdartlang",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You don't need a library for your graphql client, GENERATE IT.",
+   "url": "https://www.reddit.com/r/dartlang/comments/1xia4ld/you_dont_need_a_library_for_your_graphql_client/",
+   "source": "rdartlang",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Dart backend framework is now 5× faster than dart:io's HttpServer",
+   "url": "https://www.reddit.com/r/dartlang/comments/1xhgbsn/my_dart_backend_framework_is_now_5_faster_than/",
+   "source": "rdartlang",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Security audits",
+   "url": "https://www.reddit.com/r/dartlang/comments/1xhh1lj/security_audits/",
+   "source": "rdartlang",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing brotli_fast: a fast, pure Dart Brotli encoder/decoder for all Dart platforms, including browser/JS",
+   "url": "https://www.reddit.com/r/dartlang/comments/1xghagj/announcing_brotli_fast_a_fast_pure_dart_brotli/",
+   "source": "rdartlang",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Compile, analyze and run Dart code directly in your browser without any server.",
+   "url": "https://www.reddit.com/r/dartlang/comments/1xerlpr/compile_analyze_and_run_dart_code_directly_in/",
+   "source": "rdartlang",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You can write your own Dart VM, too",
+   "url": "https://www.reddit.com/r/dartlang/comments/1xff9j4/you_can_write_your_own_dart_vm_too/",
+   "source": "rdartlang",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SwaggerUI/OpenAPI specs generation for dart backends.",
+   "url": "https://www.reddit.com/r/dartlang/comments/1xe7cx6/swaggeruiopenapi_specs_generation_for_dart/",
+   "source": "rdartlang",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I rebuilt pubstats.dev with Jaspr. It is a lot faster now.",
+   "url": "https://www.reddit.com/r/dartlang/comments/1xaurgx/i_rebuilt_pubstatsdev_with_jaspr_it_is_a_lot/",
+   "source": "rdartlang",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Weekly Entering & Transitioning - Thread 09 Nov, 2026 - 16 Nov, 2026",
    "url": "https://www.reddit.com/r/datascience/comments/1xrix7s/weekly_entering_transitioning_thread_09_nov_2026/",
    "source": "rdatascience",
@@ -129819,6 +129979,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Experienced Devs Weekly Burnout and Venting Thread: A weekly thread for sharing experiences",
+   "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xsbwrz/experienced_devs_weekly_burnout_and_venting/",
+   "source": "rexperienceddevs",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ask Experienced Devs Weekly Thread: A weekly thread for inexperienced developers to ask experienced ones",
+   "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xrd0p7/ask_experienced_devs_weekly_thread_a_weekly/",
+   "source": "rexperienceddevs",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Preparing career switch from Embedded HW/SW to AI/ML Optimisation (compilers, low-level oriented)",
+   "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xx548x/preparing_career_switch_from_embedded_hwsw_to/",
+   "source": "rexperienceddevs",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Preparing for system design questions when you haven't worked with the systems on same level of scale as big tech companies?",
+   "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xvbbsy/preparing_for_system_design_questions_when_you/",
+   "source": "rexperienceddevs",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a security-conscious team in the AI era",
+   "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xvkthz/building_a_securityconscious_team_in_the_ai_era/",
+   "source": "rexperienceddevs",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Experienced Devs Weekly Win Thread: A weekly thread for sharing positive experiences",
+   "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xu7yxl/experienced_devs_weekly_win_thread_a_weekly/",
+   "source": "rexperienceddevs",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Any W2 Contractors here? How are you liking it?",
+   "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xt02lp/any_w2_contractors_here_how_are_you_liking_it/",
+   "source": "rexperienceddevs",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How do you handle learning resources for Domain knowledge?",
+   "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xsv33a/how_do_you_handle_learning_resources_for_domain/",
+   "source": "rexperienceddevs",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughts on welcometothejungle (Prev 'Otta') now that they have actually switched over?",
+   "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xs0q7l/thoughts_on_welcometothejungle_prev_otta_now_that/",
+   "source": "rexperienceddevs",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What do you do if the people you work with or the environment you’re working in is unprofessional or toxic?",
+   "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xr61g7/what_do_you_do_if_the_people_you_work_with_or_the/",
+   "source": "rexperienceddevs",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How are you able to push juniors devs to care about code design and architecture?",
+   "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xqzbxr/how_are_you_able_to_push_juniors_devs_to_care/",
+   "source": "rexperienceddevs",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Experienced developers, how do you keep up with the rapidly changing tech landscape?",
+   "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xqrc34/experienced_developers_how_do_you_keep_up_with/",
+   "source": "rexperienceddevs",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "N of PRs as an ultimate performance metric",
+   "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xrvcrv/n_of_prs_as_an_ultimate_performance_metric/",
+   "source": "rexperienceddevs",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What do you think the roles of the future look like?",
+   "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xqa6j6/what_do_you_think_the_roles_of_the_future_look/",
+   "source": "rexperienceddevs",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Will AI cause stagnation in software engineering?",
+   "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xqbeyw/will_ai_cause_stagnation_in_software_engineering/",
+   "source": "rexperienceddevs",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Recreating Apple’s genie effect on the web: how the window bends into a funnel and drains into the dock",
    "url": "https://www.reddit.com/r/Frontend/comments/1xvuamk/recreating_apples_genie_effect_on_the_web_how_the/",
    "source": "rfrontend",
@@ -130029,6 +130309,14 @@
   {
    "title": "Has anyone created an arena fighter like Naruto ninja storm?",
    "url": "https://www.reddit.com/r/gamedev/comments/1xwwyt8/has_anyone_created_an_arena_fighter_like_naruto/",
+   "source": "rgamedev",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "If no one could play your games - but you got paid anyway - would you still create games?",
+   "url": "https://www.reddit.com/r/gamedev/comments/1xx72vg/if_no_one_could_play_your_games_but_you_got_paid/",
    "source": "rgamedev",
    "rank": 12,
    "score": 4,
@@ -131135,6 +131423,126 @@
    "url": "https://rmondello.com/2023/02/18/twitter-sms-2fa/",
    "source": "rmondello",
    "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Does anyone actually use SQL with mongo?",
+   "url": "https://www.reddit.com/r/mongodb/comments/1xw2f1p/does_anyone_actually_use_sql_with_mongo/",
+   "source": "rmongodb",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "i need help installing mongodb on my mac",
+   "url": "https://www.reddit.com/r/mongodb/comments/1xumuv9/i_need_help_installing_mongodb_on_my_mac/",
+   "source": "rmongodb",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Ravit Show is FAKE and shady.",
+   "url": "https://www.reddit.com/r/mongodb/comments/1xuodb5/the_ravit_show_is_fake_and_shady/",
+   "source": "rmongodb",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a multi-platform gaming project (E-commerce + Community + Video) — Need stack & database feedback",
+   "url": "https://www.reddit.com/r/mongodb/comments/1xu4l2t/building_a_multiplatform_gaming_project_ecommerce/",
+   "source": "rmongodb",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Giving an AI agent a throwaway copy of a MongoDB database, then reviewing what it changed",
+   "url": "https://www.reddit.com/r/mongodb/comments/1xu2v49/giving_an_ai_agent_a_throwaway_copy_of_a_mongodb/",
+   "source": "rmongodb",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MongoDB",
+   "url": "https://www.reddit.com/r/mongodb/comments/1xu5532/mongodb/",
+   "source": "rmongodb",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How WiredTiger cache dirty pages and eviction can throttle your MongoDB writes",
+   "url": "https://www.reddit.com/r/mongodb/comments/1xthtsc/how_wiredtiger_cache_dirty_pages_and_eviction_can/",
+   "source": "rmongodb",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why separating compute from storage matters: MongoDB Atlas Infinite under the hood",
+   "url": "https://www.reddit.com/r/mongodb/comments/1xsp0v4/why_separating_compute_from_storage_matters/",
+   "source": "rmongodb",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You can now use MongoDB as the persistent memory store for applications and agents built with the Vercel AI SDK.",
+   "url": "https://www.reddit.com/r/mongodb/comments/1xsokih/you_can_now_use_mongodb_as_the_persistent_memory/",
+   "source": "rmongodb",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why is MongoDB so popular? What to choose bw MongoDB, Supabase, Firebase, Custom?",
+   "url": "https://www.reddit.com/r/mongodb/comments/1xrscwf/why_is_mongodb_so_popular_what_to_choose_bw/",
+   "source": "rmongodb",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is MongoDB still a great place to work in 2026?",
+   "url": "https://www.reddit.com/r/mongodb/comments/1xsev8p/is_mongodb_still_a_great_place_to_work_in_2026/",
+   "source": "rmongodb",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Good experiences with mongodb in real products?",
+   "url": "https://www.reddit.com/r/mongodb/comments/1xqvonv/good_experiences_with_mongodb_in_real_products/",
+   "source": "rmongodb",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Now available: convert MongoDB to PostgreSQL on Layerbase",
+   "url": "https://www.reddit.com/r/mongodb/comments/1xr3sza/now_available_convert_mongodb_to_postgresql_on/",
+   "source": "rmongodb",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using TTL deletes as wakeup signals for delayed jobs. What failure cases would you test?",
+   "url": "https://www.reddit.com/r/mongodb/comments/1xquvoq/using_ttl_deletes_as_wakeup_signals_for_delayed/",
+   "source": "rmongodb",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Now Generally Available: MongoDB Memory + Google ADK!",
+   "url": "https://www.reddit.com/r/mongodb/comments/1xq72p5/now_generally_available_mongodb_memory_google_adk/",
+   "source": "rmongodb",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -132803,6 +133211,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Weekly help thread",
+   "url": "https://www.reddit.com/r/PHP/comments/1xrkz2e/weekly_help_thread/",
+   "source": "rphp",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly help thread",
+   "url": "https://www.reddit.com/r/PHP/comments/1x9oyry/weekly_help_thread/",
+   "source": "rphp",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tally: PHP framework for catching performance regressions in CI",
+   "url": "https://www.reddit.com/r/PHP/comments/1xwqvru/tally_php_framework_for_catching_performance/",
+   "source": "rphp",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What happened to the job market?",
+   "url": "https://www.reddit.com/r/PHP/comments/1xwbnuk/what_happened_to_the_job_market/",
+   "source": "rphp",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Add-Ons: One-Click Checks Beside Every Result",
+   "url": "https://www.reddit.com/r/PHP/comments/1xx68zx/addons_oneclick_checks_beside_every_result/",
+   "source": "rphp",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Neuron AI agents in a long-running PHP worker, without blocking",
+   "url": "https://www.reddit.com/r/PHP/comments/1xwz5lh/neuron_ai_agents_in_a_longrunning_php_worker/",
+   "source": "rphp",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I'm tired of working with AI",
+   "url": "https://www.reddit.com/r/PHP/comments/1xvf2hj/im_tired_of_working_with_ai/",
+   "source": "rphp",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PHP 8.6.0 Ships November 19",
+   "url": "https://www.reddit.com/r/PHP/comments/1xvtlt1/php_860_ships_november_19/",
+   "source": "rphp",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
+   "url": "https://www.reddit.com/r/PHP/comments/1xwems9/check_point_gateways_hacked_via_php2shell_to/",
+   "source": "rphp",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I started building an AMQP library after losing my cat. Now I'm wondering if it's worth continuing.",
+   "url": "https://www.reddit.com/r/PHP/comments/1xvow93/i_started_building_an_amqp_library_after_losing/",
+   "source": "rphp",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ios shortcut to upload media",
+   "url": "https://www.reddit.com/r/PHP/comments/1xw4911/ios_shortcut_to_upload_media/",
+   "source": "rphp",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I made a package that checks your migrations for dangerous operations before you run them",
+   "url": "https://www.reddit.com/r/PHP/comments/1xw0bpi/i_made_a_package_that_checks_your_migrations_for/",
+   "source": "rphp",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Artifact integrity for Packagist and Composer",
+   "url": "https://www.reddit.com/r/PHP/comments/1xui0yx/artifact_integrity_for_packagist_and_composer/",
+   "source": "rphp",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "This Week in PHP Internals | Nov 12, 2026",
+   "url": "https://www.reddit.com/r/PHP/comments/1xusku1/this_week_in_php_internals_nov_12_2026/",
+   "source": "rphp",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "php-baremetal 2.0.0 is almost here, and you can already try it in the browser",
+   "url": "https://www.reddit.com/r/PHP/comments/1xudnnb/phpbaremetal_200_is_almost_here_and_you_can/",
+   "source": "rphp",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Slack’s Migration to a Cellular Architecture",
    "url": "https://www.reddit.com/r/programming/comments/1xwsbxo/slacks_migration_to_a_cellular_architecture/",
    "source": "rprogramming",
@@ -133166,6 +133694,246 @@
    "title": "Two bugs from building a drag-and-drop page canvas in React 19",
    "url": "https://www.reddit.com/r/reactjs/comments/1xupjii/two_bugs_from_building_a_draganddrop_page_canvas/",
    "source": "rreactjs",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Redis 8 is now GA",
+   "url": "https://www.reddit.com/r/redis/comments/1kcedvm/redis_8_is_now_ga/",
+   "source": "rredis",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Redis is now available under the the OSI-approved AGPLv3 open source license.",
+   "url": "https://www.reddit.com/r/redis/comments/1kfos5l/redis_is_now_available_under_the_the_osiapproved/",
+   "source": "rredis",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I built a VS Code panel for Docker, K8s, Postgres, Kafka and Redis because I was tired of juggling 5 tools",
+   "url": "https://www.reddit.com/r/redis/comments/1xun1ab/i_built_a_vs_code_panel_for_docker_k8s_postgres/",
+   "source": "rredis",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Workshop today: Getting AI agents to work in production with Redis Iris",
+   "url": "https://www.reddit.com/r/redis/comments/1xuhnm8/workshop_today_getting_ai_agents_to_work_in/",
+   "source": "rredis",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "With Redis ADBC, support for Apache Airflow, Dagster, Prefect, Mage, Kestra",
+   "url": "https://www.reddit.com/r/redis/comments/1xswqu9/with_redis_adbc_support_for_apache_airflow/",
+   "source": "rredis",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "BI and Visualization with data within Redis",
+   "url": "https://www.reddit.com/r/redis/comments/1xonvy2/bi_and_visualization_with_data_within_redis/",
+   "source": "rredis",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tutorial: Testing a changed Streams consumer without stealing entries from the stable one",
+   "url": "https://www.reddit.com/r/redis/comments/1xo2h27/tutorial_testing_a_changed_streams_consumer/",
+   "source": "rredis",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Redis adapters for dbt,",
+   "url": "https://www.reddit.com/r/redis/comments/1xn0b1e/redis_adapters_for_dbt/",
+   "source": "rredis",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Valkey.app - native macOS app for running local Valkey servers",
+   "url": "https://www.reddit.com/r/redis/comments/1xleabq/valkeyapp_native_macos_app_for_running_local/",
+   "source": "rredis",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[Security incident] Redis port exposure — what happened and how we plugged the hole",
+   "url": "https://www.reddit.com/r/redis/comments/1xigcnd/security_incident_redis_port_exposure_what/",
+   "source": "rredis",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I built redis-pane, a terminal UI for Redis and Valkey where keys update live",
+   "url": "https://www.reddit.com/r/redis/comments/1xhbe31/i_built_redispane_a_terminal_ui_for_redis_and/",
+   "source": "rredis",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing redis-rs & redis-test 2 release candidates",
+   "url": "https://www.reddit.com/r/redis/comments/1xeh5yt/announcing_redisrs_redistest_2_release_candidates/",
+   "source": "rredis",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I’m building Redis-backed project memory for Claude and ChatGPT/Codex — looking for feedback on capture, retrieval, and agent handoffs",
+   "url": "https://www.reddit.com/r/redis/comments/1xb1rvk/im_building_redisbacked_project_memory_for_claude/",
+   "source": "rredis",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Embed scheme into redis",
+   "url": "https://www.reddit.com/r/redis/comments/1xau42z/embed_scheme_into_redis/",
+   "source": "rredis",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Redis streams: a different take on event-driven",
+   "url": "https://www.reddit.com/r/redis/comments/1x4s91o/redis_streams_a_different_take_on_eventdriven/",
+   "source": "rredis",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hey Rustaceans! Got a question? Ask here (46/2026)!",
+   "url": "https://www.reddit.com/r/rust/comments/1xrongp/hey_rustaceans_got_a_question_ask_here_462026/",
+   "source": "rrust",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's everyone working on this week (46/2026)?",
+   "url": "https://www.reddit.com/r/rust/comments/1xrooh0/whats_everyone_working_on_this_week_462026/",
+   "source": "rrust",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "grafia v0.9: An interactive 2D Cubic Bézier, Hobby/Spiro spline, and typography canvas widget for egui",
+   "url": "https://www.reddit.com/r/rust/comments/1xx4k08/grafia_v09_an_interactive_2d_cubic_bézier/",
+   "source": "rrust",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "This Month in Redox OS - October 2026",
+   "url": "https://www.reddit.com/r/rust/comments/1xw5883/this_month_in_redox_os_october_2026/",
+   "source": "rrust",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[Project] Driftsync — Multi-repo 3-way structural config sync engine written in Rust",
+   "url": "https://www.reddit.com/r/rust/comments/1xx51tm/project_driftsync_multirepo_3way_structural/",
+   "source": "rrust",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quick question regarding some features",
+   "url": "https://www.reddit.com/r/rust/comments/1xw60mq/quick_question_regarding_some_features/",
+   "source": "rrust",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hey everyone! I've been working on a small Rust project called ForgeCrypt.",
+   "url": "https://www.reddit.com/r/rust/comments/1xx0bqh/hey_everyone_ive_been_working_on_a_small_rust/",
+   "source": "rrust",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nivterm: SSH/SFTP client with an encrypted vault and a sync server, built with Tauri 2 and russh",
+   "url": "https://www.reddit.com/r/rust/comments/1xx43w9/nivterm_sshsftp_client_with_an_encrypted_vault/",
+   "source": "rrust",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tips for a rust beginner",
+   "url": "https://www.reddit.com/r/rust/comments/1xw70vt/tips_for_a_rust_beginner/",
+   "source": "rrust",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vortix - Terminal UI for WireGuard and OpenVPN with real-time telemetry and leak guarding",
+   "url": "https://www.reddit.com/r/rust/comments/1xwy3jx/vortix_terminal_ui_for_wireguard_and_openvpn_with/",
+   "source": "rrust",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to speed up compiling and not waste disk space?",
+   "url": "https://www.reddit.com/r/rust/comments/1xwye5g/how_to_speed_up_compiling_and_not_waste_disk_space/",
+   "source": "rrust",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I diffed uutils coreutils against GNU with generated black-box tests: 43 bug reports, 50 fix PRs, 34 merged",
+   "url": "https://www.reddit.com/r/rust/comments/1xwszc6/i_diffed_uutils_coreutils_against_gnu_with/",
+   "source": "rrust",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[Project] Life HUD: A lightweight Windows widget bar built with Rust + Slint (no Electron)",
+   "url": "https://www.reddit.com/r/rust/comments/1xx06vc/project_life_hud_a_lightweight_windows_widget_bar/",
+   "source": "rrust",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Removing eprintln! made my hot loop 11 % slower. How do you control inlining in production Rust code? Or am I missing something?",
+   "url": "https://www.reddit.com/r/rust/comments/1xvohjp/removing_eprintln_made_my_hot_loop_11_slower_how/",
+   "source": "rrust",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "App with state-of-the-art text rendering, built in Rust",
+   "url": "https://www.reddit.com/r/rust/comments/1xwvolp/app_with_stateoftheart_text_rendering_built_in/",
+   "source": "rrust",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -139915,6 +140683,14 @@
    "metric": "points"
   },
   {
+   "title": "Show HN: Minute – An Offline Meeting Notetaker Using Local LLMs",
+   "url": "https://minutenotes.app/",
+   "source": "show_hn",
+   "rank": 9,
+   "score": 2,
+   "metric": "points"
+  },
+  {
    "title": "Show HN: A blog on how computers work from scratch (1)",
    "url": "https://dinank.dev/posts/between-wall-and-first-fetch.html",
    "source": "show_hn",
@@ -140133,6 +140909,14 @@
   {
    "title": "Show HN: Remindly a notes app with reminders built in (Mac, iOS, web)",
    "url": "https://www.remindly.com/",
+   "source": "show_hn",
+   "rank": 12,
+   "score": 2,
+   "metric": "points"
+  },
+  {
+   "title": "Show HN: Static recompiler that runs Windows x64 on Apple Silicon",
+   "url": "https://github.com/Sahilg93/arm64-recompiler",
    "source": "show_hn",
    "rank": 12,
    "score": 2,
@@ -146779,6 +147563,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Self-publishing doesn’t have to mean doing everything yourself",
+   "url": "https://stuffandnonsense.co.uk/blog/self-publishing-doesnt-have-to-mean-doing-everything-yourself/",
+   "source": "stuffandnonsenseco",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Standout Designs for the Web is available to pre-order",
+   "url": "https://stuffandnonsense.co.uk/blog/standout-designs-for-the-web-available-to-pre-order/",
+   "source": "stuffandnonsenseco",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Last week in the studio (CW45-26)",
+   "url": "https://stuffandnonsense.co.uk/blog/last-week-in-the-studio-cw45-26/",
+   "source": "stuffandnonsenseco",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Behind the cover of Standout Designs for the Web",
+   "url": "https://stuffandnonsense.co.uk/blog/standout-designs-for-the-web-behind-the-scenes-cover-artwork/",
+   "source": "stuffandnonsenseco",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Last week in the studio (CW44-26)",
+   "url": "https://stuffandnonsense.co.uk/blog/last-week-in-the-studio-cw44-26/",
+   "source": "stuffandnonsenseco",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Designing the pages of Standout Designs for the Web",
+   "url": "https://stuffandnonsense.co.uk/blog/standout-designs-for-the-web-behind-the-scenes-designing-the-pages/",
+   "source": "stuffandnonsenseco",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I designed Moonwalk Audio’s website to turn imagination into interaction",
+   "url": "https://stuffandnonsense.co.uk/blog/project-companion-moonwalk-audio/",
+   "source": "stuffandnonsenseco",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I wrote another book. It’s called Standout Designs for the Web",
+   "url": "https://stuffandnonsense.co.uk/blog/i-wrote-another-book-its-called-standout-designs-for-the-web/",
+   "source": "stuffandnonsenseco",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Last week in the studio (CW42-26)",
+   "url": "https://stuffandnonsense.co.uk/blog/last-week-in-the-studio-cw42-26/",
+   "source": "stuffandnonsenseco",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Last week in the studio (CW41-26)",
+   "url": "https://stuffandnonsense.co.uk/blog/last-week-in-the-studio-cw41-26/",
+   "source": "stuffandnonsenseco",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Last week in the studio (CW40-26)",
+   "url": "https://stuffandnonsense.co.uk/blog/last-week-in-the-studio-cw40-26/",
+   "source": "stuffandnonsenseco",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When layouts affect book editing",
+   "url": "https://stuffandnonsense.co.uk/blog/when-layouts-affect-book-editing/",
+   "source": "stuffandnonsenseco",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unfinished Business #145: Talking about writing",
+   "url": "https://stuffandnonsense.co.uk/blog/unfinished-business-145/",
+   "source": "stuffandnonsenseco",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Last week in the studio (CW39-26)",
+   "url": "https://stuffandnonsense.co.uk/blog/last-week-in-the-studio-cw39-26/",
+   "source": "stuffandnonsenseco",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Last week in the studio (CW38-26)",
+   "url": "https://stuffandnonsense.co.uk/blog/last-week-in-the-studio-cw38-26/",
+   "source": "stuffandnonsenseco",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Constraints and production pressure at eMudhra",
    "url": "https://surfingcomplexity.blog/2026/11/12/constraints-and-production-pressure-at-emudhra/",
    "source": "surfingcomplexity",
@@ -153373,6 +154277,14 @@
   {
    "title": "Jensen Huang might be plotting a return and more of the latest Nvidia drama",
    "url": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+   "source": "theverge",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vulcan rocket fails, destroying 40 Amazon Leo satellites",
+   "url": "https://www.theverge.com/science/1034006/vulcan-rocket-fails-destroying-40-amazon-leo-satellites",
    "source": "theverge",
    "rank": 1,
    "score": 10,
@@ -160046,6 +160958,86 @@
    "title": "Static Roots: Objects with Compile-Time Constant Addresses",
    "url": "https://v8.dev/blog/static-roots",
    "source": "v8",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Senior IC Reading List",
+   "url": "https://valhead.com/2023/01/31/senior-ic-reading-list/",
+   "source": "valhead",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rediscovering Film",
+   "url": "https://valhead.com/2023/01/08/rediscovering-film/",
+   "source": "valhead",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thanks for everything, An Event Apart",
+   "url": "https://valhead.com/2022/12/26/thanks-an-event-apart/",
+   "source": "valhead",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Delight is opinionated design",
+   "url": "https://valhead.com/2021/11/20/delight-is-opinionated-design/",
+   "source": "valhead",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Surprise and delight can’t fix bad UX",
+   "url": "https://valhead.com/2021/11/15/surprise-and-delight-cant-fix-bad-ux/",
+   "source": "valhead",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Two paths to surprise and delight",
+   "url": "https://valhead.com/2021/11/11/two-paths-to-surprise-and-delight/",
+   "source": "valhead",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The WSJ On Designing for Motion Sensitivities",
+   "url": "https://valhead.com/2021/06/27/the-wsj-on-reduced-motion/",
+   "source": "valhead",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Animating variable fonts with CSS",
+   "url": "https://valhead.com/2020/11/15/animating-variable-fonts-with-css/",
+   "source": "valhead",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessible Animation: The WCAG on Animation Explained",
+   "url": "https://valhead.com/2020/09/30/accessible-animation-the-wcag-on-animation-explained/",
+   "source": "valhead",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reduced Motion “In The Wild”",
+   "url": "https://valhead.com/2020/05/09/reduced-motion-in-the-wild/",
+   "source": "valhead",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
