@@ -61,8 +61,16 @@
     <span class="date" id="date"></span>
   </div>
   <ol id="list"><li id="err">loading…</li></ol>
-  <div class="foot"><a href="https://zalize-com.github.io/trendscope/" target="_blank" rel="noopener">open dataset · CC0 →</a></div>
+  <div class="foot"><a id="embedlink" href="#" style="margin-right:8px">⧉ embed</a><a href="https://zalize-com.github.io/trendscope/" target="_blank" rel="noopener">open dataset · CC0 →</a></div>
 <script>
+document.getElementById("embedlink").onclick = e => {
+  e.preventDefault();
+  const src = "https://zalize-com.github.io/trendscope/embed.html" + location.search;
+  const code = `<iframe src="${src}" width="340" height="420" style="border:0;border-radius:12px" loading="lazy" title="trendscope"></iframe>`;
+  navigator.clipboard?.writeText(code).then(() => {
+    e.target.textContent = "✓ copied"; setTimeout(() => e.target.textContent = "⧉ embed", 1400);
+  });
+};
 const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B" : n >= 1e6 ? (n/1e6).toFixed(1)+"M"
              : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
 const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
