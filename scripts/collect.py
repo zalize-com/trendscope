@@ -260,6 +260,45 @@ def fetch_npm_downloads():
     return sorted(out, key=lambda x: -x["score"])
 
 
+def fetch_producthunt(limit=20):
+    """Product Hunt daily feed — Atom XML, no vote counts, so items are
+    scored by feed position (top entry gets the highest score)."""
+    print("Fetching Product Hunt feed...")
+    import re
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.producthunt.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/atom+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] producthunt attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    ns = {"a": "http://www.w3.org/2005/Atom"}
+    entries = root.findall("a:entry", ns)[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("a:title", default="", namespaces=ns) or "").strip()
+        link = e.find("a:link", ns)
+        url = link.get("href") if link is not None else "https://www.producthunt.com/"
+        tagline = (e.findtext("a:summary", default="", namespaces=ns) or "").strip()
+        if not tagline:
+            content = (e.findtext("a:content", default="", namespaces=ns) or "")
+            tagline = " ".join(re.sub(r"<[^>]+>", " ", content).split())[:200]
+            tagline = re.sub(r"\s*Discussion\s*\|\s*Link\s*$", "", tagline)
+        out.append(item(
+            "producthunt", title, url or "https://www.producthunt.com/",
+            len(entries) - i, "feed rank",
+            extra={"description": tagline},
+        ))
+    return out
+
+
 def fetch_crates(limit=15):
     print("Fetching crates.io recent downloads...")
     data = get_json(
@@ -372,6 +411,7 @@ def main():
         "ask_hn": fetch_ask_hn,
         "lobsters": fetch_lobsters,
         "devto": fetch_devto,
+        "producthunt": fetch_producthunt,
         "github_trending": fetch_github_trending,
         "npm": fetch_npm_downloads,
         "pypi": fetch_pypi_downloads,

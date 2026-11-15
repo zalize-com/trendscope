@@ -24,6 +24,7 @@ A daily cross-source snapshot of developer attention:
 | GitHub | new repos trending this week | `api.github.com/search` |
 | Lobste.rs | hottest stories | `lobste.rs/hottest.json` |
 | Dev.to | top articles (7d) | `dev.to/api` |
+| Product Hunt | daily launch feed | `producthunt.com/feed` |
 | npm | weekly downloads (watchlist) | `api.npmjs.org` |
 | PyPI | monthly downloads (watchlist) | `pypistats.org` |
 | crates.io | recent downloads | `crates.io/api` |
