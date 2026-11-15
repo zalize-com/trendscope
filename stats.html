@@ -79,28 +79,28 @@ function parseCSV(text) {
   return rows;
 }
 
-const [csv, stats] = await Promise.all([
-  fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()),
+const [ser, stats] = await Promise.all([
+  fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json()),
   fetch("docs/api/stats.json", {cache:"no-cache"}).then(r => r.json()).catch(() => null),
 ]);
-const rows = parseCSV(csv);
-const hdr = rows[0];
-const ci = Object.fromEntries(hdr.map((h,i)=>[h,i]));
 
 const perDay = {}, perSrc = {};
-for (const r of rows.slice(1)) {
-  if (!r[ci.date]) continue;
-  perDay[r[ci.date]] = (perDay[r[ci.date]] || 0) + 1;
-  perSrc[r[ci.source]] = (perSrc[r[ci.source]] || 0) + 1;
+let nrows = 0;
+for (const it of Object.values(ser.items)) {
+  for (const d of Object.keys(it.days)) {
+    perDay[d] = (perDay[d] || 0) + 1;
+    perSrc[it.source] = (perSrc[it.source] || 0) + 1;
+    nrows++;
+  }
 }
 const days = Object.keys(perDay).sort();
 const counts = days.map(d => perDay[d]);
 let cum = 0; const cums = counts.map(v => cum += v);
 
 document.getElementById("stats").innerHTML = `
-  <div class="stat"><b>${fmt(rows.length - 1)}</b><small>total rows</small></div>
+  <div class="stat"><b>${fmt(nrows)}</b><small>total rows</small></div>
   <div class="stat"><b>${days.length}</b><small>days tracked</small></div>
-  <div class="stat"><b>${fmt(Math.round((rows.length-1)/days.length))}</b><small>rows/day avg</small></div>
+  <div class="stat"><b>${fmt(Math.round(nrows/days.length))}</b><small>rows/day avg</small></div>
   <div class="stat"><b>${Object.keys(perSrc).length}</b><small>sources</small></div>
   ${stats ? `<div class="stat"><b>${fmt(stats.unique_urls)}</b><small>unique urls</small></div>` : ""}`;
 
