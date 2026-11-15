@@ -6,7 +6,7 @@ One-pager for anyone writing about or linking to this project.
 
 - Short: *the developer attention dataset — updated twice daily*
 - Medium: *What developers read, build and download — snapshotted twice daily
-  from 15 public sources, plus 19 years of Hacker News history. Open
+  from 30 public sources, plus 19 years of Hacker News history. Open
   data (CC0).*
 - Long: see README intro paragraph.
 
@@ -14,17 +14,17 @@ One-pager for anyone writing about or linking to this project.
 
 | Metric | Value | Source file |
 |---|---|---|
-| Sources | 15 | `data/latest.json` keys |
-| Daily items | ~230 | `data/daily/*.json` |
+| Sources | 30 | `data/latest.json` keys |
+| Daily items | ~440 | `data/daily/*.json` |
 | History rows | 600+ | `data/history.csv` |
 | HN canon span | Feb 2007 → now, 2,380 rows | `data/hn-canon-monthly.csv` |
 | Show HN span | Jan 2012 → now, 1,790 rows | `data/show-hn-monthly.csv` |
 | Ask HN span | Feb 2007 → now, 2,378 rows | `data/ask-hn-monthly.csv` |
 | Hiring threads | Nov 2010 → now, 528 rows | `data/hiring-monthly.csv` |
-| Free tools | 72 | `tools/` |
-| API endpoints | 21 JSON/CSV lines | `docs/api.md` |
-| Embed modes | 22 (iframe card) + live gallery | `embed.html` / `embeds.html` |
-| Static pages | 50 | sitemap.xml |
+| Free tools | 82 | `tools/` |
+| API endpoints | 25 JSON/CSV/RSS lines | `docs/api.md` |
+| Embed modes | 25 (iframe card) + live gallery | `embed.html` / `embeds.html` |
+| Static pages | 57 | sitemap.xml |
 
 ## What makes it different
 

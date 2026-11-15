@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>press kit — trendscope</title>
+<meta name="description" content="One-pager for anyone writing about trendscope: taglines, hard numbers, assets, links.">
+<link rel="canonical" href="https://zalize-com.github.io/trendscope/press-kit.html">
+<style>
+body{font:15px/1.6 ui-sans-serif,system-ui,sans-serif;max-width:840px;margin:0 auto;padding:16px;color:#1a1a1a}
+h1{font-size:22px;margin:0 0 4px}
+h2{font-size:16px;margin:22px 0 6px}
+a{color:#065fd4;text-decoration:none}
+a:hover{text-decoration:underline}
+nav{font-size:13px;margin:8px 0 16px;color:#666}
+nav a{margin-right:10px}
+table{border-collapse:collapse;font-size:13px;width:100%}
+td,th{border:1px solid #ddd;padding:5px 8px;text-align:left}
+.muted{color:#666;font-size:13px}
+blockquote{border-left:3px solid #065fd4;margin:8px 0;padding:4px 12px;color:#333;background:#f7f9fc}
+footer{margin-top:28px;font-size:12px;color:#888;border-top:1px solid #eee;padding-top:10px}
+ul{margin:6px 0;padding-left:20px}
+</style></head><body>
+<nav><a href="index.html">&larr; board</a><a href="about.html">about</a><a href="support.html">support</a></nav>
+<h1>press kit</h1>
+<p class="muted">One-pager for anyone writing about or linking to trendscope. Markdown twin: <a href="docs/press-kit.md">docs/press-kit.md</a>.</p>
+
+<h2>taglines</h2>
+<blockquote>the developer attention dataset — updated twice daily</blockquote>
+<blockquote>What developers read, build and download — snapshotted twice daily from 30 public sources, plus 19 years of Hacker News history. Open data (CC0).</blockquote>
+
+<h2>hard numbers (Nov 2026)</h2>
+<table>
+<tr><th>Metric</th><th>Value</th><th>Source</th></tr>
+<tr><td>Sources</td><td>30</td><td><a href="docs/api/sources.json">sources.json</a></td></tr>
+<tr><td>Daily items</td><td>~440</td><td><a href="docs/api/latest.json">latest.json</a></td></tr>
+<tr><td>Free tools</td><td>82</td><td><a href="tools/index.html">tools/</a></td></tr>
+<tr><td>API endpoints</td><td>25+ JSON/CSV/RSS</td><td><a href="api.html">api.html</a> · <a href="swagger.html">swagger</a></td></tr>
+<tr><td>Embed modes</td><td>25 iframe cards</td><td><a href="embeds.html">embeds.html</a></td></tr>
+<tr><td>Static pages</td><td>57</td><td><a href="sitemap.xml">sitemap.xml</a></td></tr>
+<tr><td>HN canon span</td><td>Feb 2007 → now</td><td><code>data/hn-canon-monthly.csv</code></td></tr>
+<tr><td>License</td><td>CC0 / MIT</td><td><a href="cite.html">cite.html</a></td></tr>
+</table>
+
+<h2>what makes it different</h2>
+<ul>
+<li><b>History, not just a live dashboard</b> — every day is snapshotted: velocity, streaks, time-travel views.</li>
+<li><b>Open</b> — CC0 license, plain JSON/CSV/RSS, no API key, no signup.</li>
+<li><b>Self-hostable</b> — stdlib Python + one GitHub Action; fork it, own the data (<a href="docs/self-host.md">self-host.md</a>).</li>
+<li><b>Agent-era hooks</b> — MCP server, OpenAPI spec, Web Component, llms.txt.</li>
+<li><b>Built in public by two autonomous AI sessions</b> — <a href="docs/methodology.md">methodology.md</a>.</li>
+</ul>
+
+<h2>assets</h2>
+<ul>
+<li>Dashboard animation: <a href="docs/demo.webp">docs/demo.webp</a> · share card: <a href="og.png">og.png</a></li>
+<li>Logos/screens: <a href="index.html">index.html</a> · <a href="heatmap.html">heatmap.html</a> · <a href="streaks.html">streaks.html</a></li>
+<li>Sister project: <a href="https://github.com/zalize-com/feedpaper">feedpaper</a> — self-owned daily RSS digest.</li>
+</ul>
+
+<h2>links &amp; contact</h2>
+<ul>
+<li>Repo: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a></li>
+<li>API: <a href="api.html">api.html</a> · FAQ: <a href="faq.html">faq.html</a> · Cite: <a href="cite.html">cite.html</a></li>
+<li>Contact: open an issue on the repo — fastest channel.</li>
+</ul>
+
+<footer>trendscope press kit · CC0 · <a href="https://github.com/zalize-com/trendscope">source</a></footer>
+</body></html>
