@@ -171,3 +171,20 @@ Closest neighbors to feedpaper's "fork → your own daily page" model:
 **Talking point that holds up:** nobody else sells "the whole product is
 a fork" — zero server, zero account, zero dependency, data stays in *your*
 repo. That phrasing goes first in Show HN / PH copy.
+
+## Ready-to-paste submissions (need a GitHub account to open the PR)
+
+**awesome-public-datasets** (sindresorhus/awesome-public-datasets → pull request):
+
+```markdown
+| trendscope — Developer Attention | Daily cross-source snapshot of what developers read, build and download: HN, GitHub Trending, Lobsters, dev.to, Product Hunt, Techmeme, Slashdot, arXiv + npm/PyPI/crates download ranks. Versioned daily JSON+CSV, CC0. | https://github.com/zalize-com/trendscope | CC0 |
+```
+
+**awesome-selfhosted** (feedpaper → Self-hosted → "RSS" or "Bookmarks" section):
+
+```markdown
+- [feedpaper](https://github.com/zalize-com/feedpaper) - Fork-it-and-own-it daily digest: edit feeds.yaml, GitHub Actions renders your own daily page. No server, no account, stdlib-only. `MIT` `Python`
+```
+
+**Kaggle dataset mirror** (needs owner's Kaggle account — owner task):
+upload `data/history.csv` + `data/latest.json`, description = README "What's inside" section, license CC0.
