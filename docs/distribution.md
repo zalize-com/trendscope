@@ -256,7 +256,9 @@ canonical_url: https://github.com/zalize-com/feedpaper
 
 TLDR-style digests are great until you realize your reading habits are
 someone else's dataset: an account, a subscription, a feed list you can't
-export. So I made the alternative embarrassingly small.
+export. The data-ownership threads keep surfacing — lobste.rs's
+"Let Me Let You Own Your Data" hit 33 points this week — so I made the
+alternative embarrassingly small.
 
 **feedpaper: fork the repo → edit feeds.yaml → enable GitHub Pages.**
 That's the entire product. GitHub Actions runs a 200-line Python script
