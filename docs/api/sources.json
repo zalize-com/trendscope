@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T17:26:41.737495+00:00",
+  "generated_at": "2026-11-15T17:28:42.309199+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -63,8 +63,8 @@
       }
     },
     "show_hn": {
-      "items": 39,
-      "unique_urls": 39,
+      "items": 42,
+      "unique_urls": 42,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -3686,6 +3686,138 @@
         "rank": 1
       }
     },
+    "lihaoyi": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Hello World Blog",
+        "url": "http://www.lihaoyi.com/post/HelloWorldBlog.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "mager": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Lemon Chicken Pastini",
+        "url": "https://mager.co/blog/2026-11-11-chicken-lemon-pasta-soup/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "miriamsuzanne": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Butter bells, fresh from the kiln",
+        "url": "https://www.miriamsuzanne.com/2026/07/21/_micro/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "mitchellhanberg": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Using Agenix with devShells",
+        "url": "https://www.mitchellhanberg.com/using-agenix-with-devshells/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "morling": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Row-Group Control, Faster S3 Reads, Footer Caching: Hardwood 1.1.0.Beta2 Is Out",
+        "url": "https://www.morling.dev/blog/row-group-control-faster-s3-reads-footer-caching-hardwood-1-1-0-beta2/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "msreverseengineering": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "C++ Unwind Exception Metadata: A Hidden Reverse Engineering Bonanza",
+        "url": "https://www.msreverseengineering.com/blog/2024/8/20/c-unwind-metadata-1",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "pantsbuild": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Pants's response to the eMudhra CA certificate compromise",
+        "url": "https://www.pantsbuild.org/blog/2026/10/29/emudhra-response",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "platformer": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Jensen Huang and the end of the ‘lol nothing matters’ era of American politics",
+        "url": "https://www.platformer.news/jensen-huang-resigns-founder-cult-accountability/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "romainguy": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Things 3",
+        "url": "https://www.romainguy.dev/posts/2026/things-3/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rubick": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The ratchet",
+        "url": "https://www.rubick.com/the-ratchet/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "sarasoueidan": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "My top picks for Interop 2027",
+        "url": "https://www.sarasoueidan.com/blog/interop-2027-rankings/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -3946,6 +4078,18 @@
       "top_item": {
         "title": "Advanced TypeScript Patterns: API Contracts",
         "url": "https://jonmellman.com/posts/typescript-for-api-contracts",
+        "score": 12,
+        "rank": 1
+      }
+    },
+    "lastweekinaws": {
+      "items": 12,
+      "unique_urls": 12,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Infinidash: AWS’s New Observability Play Has Great Bones and a Terrible Bedside Manner",
+        "url": "https://www.lastweekinaws.com/blog/cloudwatch-omni-infinidash-review/",
         "score": 12,
         "rank": 1
       }
@@ -5990,6 +6134,78 @@
         "rank": 1
       }
     },
+    "laurentluce": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Towns unemployment, sunshine and housing prices relationship",
+        "url": "https://www.laurentluce.com/posts/towns-unemployment-sunshine-and-housing-prices-relationship/?utm_source=rss&utm_medium=rss&utm_campaign=towns-unemployment-sunshine-and-housing-prices-relationship",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "nytco": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "A.G. Sulzberger: Seek the Facts, Even Those You Disagree With",
+        "url": "https://www.nytco.com/press/a-g-sulzberger-seek-the-facts-even-those-you-disagree-with/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "plex": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "New on Plex in November",
+        "url": "https://www.plex.tv/blog/new-on-plex-in-november/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "raspberrypi": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Experience AI begins reaching classrooms across Latin America",
+        "url": "https://www.raspberrypi.org/blog/experience-ai-begins-reaching-classrooms-across-latin-america/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "raymondcamden": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "A Quick Demo of Gemini's Decisions API",
+        "url": "https://www.raymondcamden.com/2026/11/14/a-quick-demo-of-geminis-decisions-api",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "rubylang": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Ruby 3.3.13 Released",
+        "url": "https://www.ruby-lang.org/en/news/2026/10/23/ruby-3-3-13-released/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "susam": {
       "items": 9,
       "unique_urls": 9,
@@ -6346,6 +6562,30 @@
       "top_item": {
         "title": "Creating for yourself",
         "url": "https://sethmlarson.dev/creating-for-yourself?utm_campaign=rss",
+        "score": 5,
+        "rank": 1
+      }
+    },
+    "lireo": {
+      "items": 5,
+      "unique_urls": 5,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Blogging Challenge: Knowember 2026",
+        "url": "https://www.lireo.com/blogging-challenge-knowember-2026/",
+        "score": 5,
+        "rank": 1
+      }
+    },
+    "sandordargo": {
+      "items": 5,
+      "unique_urls": 5,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Every Craft That Moved Before: What Photography, Compilers, and Looms Teach Us About AI",
+        "url": "https://www.sandordargo.com/blog/2026/11/11/every-craft-that-moved-before",
         "score": 5,
         "rank": 1
       }
