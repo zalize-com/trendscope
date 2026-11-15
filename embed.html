@@ -176,6 +176,34 @@ if (MODE === "stats") {
       <li><span class="rank">📰</span><span>items in latest snapshot</span><span class="score">${fmt(st.items_in_latest)}</span></li>`;
   }).catch(() => { document.getElementById("err").textContent = "stats unavailable"; });
 } else
+if (MODE === "streak") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/streaks.html";
+  fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(text => {
+    const rows = parseCSV(text), hdr = rows[0];
+    const ci = Object.fromEntries(hdr.map((h, i) => [h, i]));
+    const items = {};
+    for (const r of rows.slice(1)) {
+      const u = r[ci.url]; if (!u) continue;
+      const it = items[u] ||= { title: r[ci.title], source: r[ci.source], dates: new Set(), score: 0 };
+      it.dates.add(r[ci.date]); it.score = Math.max(it.score, +r[ci.score] || 0);
+    }
+    const dates = [...new Set(rows.slice(1).map(r => r[ci.date]))].sort();
+    const latest = dates[dates.length - 1];
+    const prev = d => new Date(new Date(d + "T00:00:00Z") - 864e5).toISOString().slice(0, 10);
+    const st = Object.entries(items).map(([u, it]) => {
+      let cur = 0;
+      for (let d = latest; it.dates.has(d); d = prev(d)) cur++;
+      return { u, ...it, cur };
+    }).filter(x => x.cur >= 2).sort((a, b) => b.cur - a.cur || b.score - a.score).slice(0, N);
+    document.getElementById("date").textContent = `active streaks · ${latest}`;
+    document.getElementById("list").innerHTML = st.map((x, i) =>
+      `<li><span class="rank">${i + 1}</span>
+        <span><a href="${esc(x.u)}" target="_blank" rel="noopener">${esc(x.title)}</a>
+          <span class="meta"><span class="src">${x.source}</span> ${fmt(x.score)}</span></span>
+        <span class="score">${x.cur}d</span></li>`).join("")
+      || `<li id="err">no streaks yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "streak data unavailable"; });
+} else
 if (MODE === "topics") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/topics.html";
   fetch("data/topics-history.csv", {cache:"no-cache"}).then(r => r.text()).then(text => {
