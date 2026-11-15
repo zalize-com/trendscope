@@ -129,6 +129,14 @@
     <div class="out" id="mt-out"></div>
   </div>
 
+  <!-- Unicode inspector -->
+  <div class="tool" data-tool="uni">
+    <h2>Unicode inspector</h2>
+    <p class="hint">Paste any text — per-character codepoint, UTF-8 bytes, UTF-16 units, block and category.</p>
+    <textarea id="uni-in" placeholder="héllo → Ω≈ç√ 🚀"></textarea>
+    <div class="out" id="uni-out"></div>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -140,6 +148,7 @@ const TOOLS = [
   {id:"diff", label:"Text diff"},
   {id:"md",   label:"Markdown preview"},
   {id:"mdtable", label:"MD table"},
+  {id:"uni", label:"Unicode"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -285,6 +294,28 @@ function mtGo() {
   const header = rows[0], sep = w.map(x => "-".repeat(x));
   out.textContent = [fmt(header), fmt(sep), ...rows.slice(1).map(fmt)].join("\n");
 }
+// ---- Unicode inspector ----
+const UNI_BLOCKS=[[0,127,"Basic Latin"],[128,255,"Latin-1 Supplement"],[256,383,"Latin Extended-A"],[384,591,"Latin Extended-B"],[592,687,"IPA Extensions"],[880,1023,"Greek and Coptic"],[1024,1279,"Cyrillic"],[1280,1327,"Armenian"],[1424,1535,"Hebrew"],[1536,1791,"Arabic"],[3584,3711,"Thai"],[3840,4095,"Tibetan"],[4096,4255,"Georgian"],[7424,7551,"Phonetic Extensions"],[7680,7935,"Latin Extended Additional"],[8192,8303,"General Punctuation"],[8304,8351,"Super/Subscripts"],[8352,8399,"Currency Symbols"],[8448,8527,"Letterlike Symbols"],[8592,8703,"Arrows"],[8704,8959,"Math Operators"],[9312,9471,"Enclosed Alphanumerics"],[9472,9599,"Box Drawing"],[9632,9727,"Geometric Shapes"],[9728,9983,"Misc Symbols"],[9984,10175,"Dingbats"],[10240,10495,"Braille"],[11904,12031,"CJK Radicals"],[12288,12351,"CJK Punctuation"],[12352,12447,"Hiragana"],[12448,12543,"Katakana"],[19968,40959,"CJK Unified"],[44032,55215,"Hangul Syllables"],[63744,64255,"CJK Compat Ideographs"],[64256,64335,"Alphabetic Presentation"],[65072,65103,"CJK Compat Forms"],[65136,65278,"Arabic Presentation-B"],[65279,65279,"BOM/ZWNBSP"],[65536,66175,"Linear B"],[119808,120831,"Math Alphanumeric"],[126976,127023,"Mahjong/Domino"],[127024,127151,"Enclosed Alphanum Suppl"],[127744,128511,"Misc Symbols+Pictographs"],[128512,128591,"Emoticons"],[128592,128639,"Transport+Map"],[128640,128767,"Transport+Map Suppl"],[129024,129279,"Suppl Arrows-C"],[131072,173791,"CJK Ext B"],[917760,917999,"Tags"]];
+function uniBlock(cp){for(const b of UNI_BLOCKS)if(cp>=b[0]&&cp<=b[1])return b[2];return "Unassigned/Private";}
+function uniCat(ch){for(const[re,n]of[[/\p{Lu}/u,"uppercase letter"],[/\p{Ll}/u,"lowercase letter"],[/\p{Lt}/u,"titlecase letter"],[/\p{Lm}/u,"modifier letter"],[/\p{Lo}/u,"other letter"],[/\p{Nd}/u,"decimal digit"],[/\p{N}/u,"number"],[/\p{P}/u,"punctuation"],[/\p{M}/u,"mark"],[/\p{Sm}/u,"math symbol"],[/\p{Sc}/u,"currency symbol"],[/\p{Sk}/u,"modifier symbol"],[/\p{So}/u,"other symbol"],[/\p{Zs}/u,"space"],[/\p{Cc}/u,"control"],[/\p{Cf}/u,"format (invisible)"],[/\p{Co}/u,"private use"],[/\p{S}/u,"symbol"],[/\p{Z}/u,"separator"]])if(re.test(ch))return n;return "?";}
+function uniInspect(){
+  const t=document.getElementById("uni-in").value,out=document.getElementById("uni-out");
+  if(!t){out.textContent="";return;}
+  const enc=new TextEncoder(),rows=[["char","codepoint","UTF-8","UTF-16","block","category"]];
+  let i=0;
+  for(const ch of t){
+    const cp=ch.codePointAt(0);
+    const hex="U+"+cp.toString(16).toUpperCase().padStart(cp>0xFFFF?6:4,"0");
+    const u8=[...enc.encode(ch)].map(b=>b.toString(16).toUpperCase().padStart(2,"0")).join(" ");
+    const u16=[...ch].map(c=>"0x"+c.charCodeAt(0).toString(16).toUpperCase()).join(" ");
+    const disp=cp<32||cp===127?["NUL","SOH","STX","ETX","EOT","ENQ","ACK","BEL","BS","TAB","LF","VT","FF","CR","SO","SI","DLE","DC1","DC2","DC3","DC4","NAK","SYN","ETB","CAN","EM","SUB","ESC","FS","GS","RS","US","DEL"][cp]:(cp===32?"␣":ch);
+    rows.push([disp,hex,u8,u16,uniBlock(cp),uniCat(ch)]);
+    if(++i>=500){rows.push(["…","truncated at 500 chars","","","",""]);break;}
+  }
+  const w=rows[0].map((_,c)=>Math.max(...rows.map(r=>r[c].length)));
+  out.textContent=rows.map(r=>r.map((c,j)=>c.padEnd(w[j])).join("  ")).join("\n");
+}
+document.getElementById("uni-in").addEventListener("input",uniInspect);
 </script>
 </body>
 </html>
