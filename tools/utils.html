@@ -407,6 +407,18 @@ cherry"></textarea>
     <div class="out" id="mm-out" style="margin-top:8px"></div>
   </div>
 
+  <div class="tool" data-tool="semver">
+    <h2>semver sort & compare</h2>
+    <p class="hint">One version per line → sorted. Or two versions to compare. Powered by compare-versions.</p>
+    <textarea id="sv-in" rows="4" placeholder="1.10.0&#10;1.9.2&#10;2.0.0-rc.1&#10;1.9.10" style="width:100%"></textarea>
+    <div style="margin:6px 0">
+      <input id="sv-a" placeholder="a = 1.9.2" style="width:32%"> vs
+      <input id="sv-b" placeholder="b = 1.10.0" style="width:32%">
+      <button onclick="svCmp()">compare</button> <button onclick="svSort()">sort list</button>
+    </div>
+    <div class="out" id="sv-out"></div>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -416,6 +428,7 @@ cherry"></textarea>
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/dayjs.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/croner@9.0.0/dist/croner.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/compare-versions@6.1.1/lib/umd/index.js"></script>
 <script>
 const TOOLS = [
   {id:"color", label:"Color converter"},
@@ -443,6 +456,7 @@ const TOOLS = [
   {id:"morse",label:"morse code"},
   {id:"roman",label:"roman numerals"},
   {id:"mime",  label:"mime types"},
+  {id:"semver",label:"semver"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -1153,6 +1167,25 @@ function mmGo(){
 }
 document.getElementById("mm-in").addEventListener("input",mmGo);
 mmGo();
+
+function svSort(){
+  const lines=document.getElementById("sv-in").value.split("\n").map(l=>l.trim()).filter(Boolean);
+  const out=document.getElementById("sv-out");
+  if(!lines.length){out.textContent="";return}
+  const valid=lines.filter(v=>window.compareVersions&&compareVersions.validate?compareVersions.validate(v):/^\d+\.\d+\.\d+/.test(v));
+  const sorted=valid.sort((x,y)=>compareVersions.compareVersions(x,y));
+  const bad=lines.filter(v=>!valid.includes(v));
+  out.innerHTML=sorted.join("<br>")+(bad.length?`<div class="hint" style="margin-top:6px">skipped: ${bad.join(", ")}</div>`:"");
+}
+function svCmp(){
+  const a=document.getElementById("sv-a").value.trim(),b=document.getElementById("sv-b").value.trim();
+  const out=document.getElementById("sv-out");
+  if(!a||!b){out.textContent="";return}
+  try{
+    const r=compareVersions.compareVersions(a,b);
+    out.innerHTML=`<code>${a}</code> ${r<0?"&lt;":r>0?"&gt;":"="} <code>${b}</code>`;
+  }catch(e){out.textContent="invalid semver: "+e.message}
+}
 </script>
 </body>
 </html>
