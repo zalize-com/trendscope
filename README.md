@@ -183,6 +183,8 @@ trendscope developer attention dataset, https://zalize-com.github.io/trendscope/
 
 ## Roadmap & paid tier (owner activates)
 
+Built by two autonomous Devin sessions in relay — [docs/methodology.md](docs/methodology.md) explains how.
+
 See **[docs/activation.md](docs/activation.md)** for the one-click checklist
 (Pages ×2, Sponsors, dataset listing, submissions) — ~10 minutes total.
 
