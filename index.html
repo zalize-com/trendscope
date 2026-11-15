@@ -427,7 +427,7 @@ function render(items, tab) {
         <span class="rank">${i + 1}</span>
         <span>
           <a href="${it.url}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a>
-          <span class="meta"><span class="src">${it.source}</span>${(it._also||[]).map(s => `<span class="src">+${s}</span>`).join("")}${streak}${comments}${author}${doml}${tags}<a class="delta" href="item.html?q=${encodeURIComponent(it.title)}" title="day-by-day trajectory">⤳</a></span>
+          <span class="meta"><span class="src">${it.source}</span>${(it._also||[]).map(s => `<span class="src">+${s}</span>`).join("")}${streak}${comments}${author}${doml}${tags}${sparkline(it.url)}<a class="delta" href="item.html?q=${encodeURIComponent(it.title)}" title="day-by-day trajectory">⤳</a></span>
         </span>
         <span class="score"><b>${fmt(it.score)}</b> <span class="muted" style="font-size:11px">${it.metric}</span>${delta}</span>
       </div>`);
@@ -441,7 +441,7 @@ function escapeHtml(s) {
   return d.innerHTML;
 }
 
-let ITEMS = [], INDEX = null, CUR_DATE = null, PREV_DATE = null, STREAK = new Map();
+let ITEMS = [], INDEX = null, CUR_DATE = null, PREV_DATE = null, STREAK = new Map(), SERIES = {};
 
 function parseCSV(text) {
   const rows = []; let field = "", row = [], inQ = false;
@@ -467,6 +467,28 @@ async function loadStreaks() {
     STREAK = m;
     render(ITEMS, currentTab());
   } catch (e) { /* history optional */ }
+}
+
+async function loadSeries() {
+  try {
+    const se = await fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json());
+    SERIES = se.items || {};
+    render(ITEMS, currentTab());
+  } catch (e) { /* series optional */ }
+}
+
+function sparkline(url) {
+  const it = SERIES[url];
+  if (!it) return "";
+  const ds = Object.keys(it.days).sort().slice(-9);
+  if (ds.length < 2) return "";
+  const vals = ds.map(d => it.days[d][0]);
+  const mx = Math.max(...vals, 1);
+  const w = ds.length * 6;
+  const bars = vals.map((v, i) =>
+    `<rect x="${i * 6}" y="${12 - Math.round(10 * v / mx)}" width="4" height="${Math.max(1, Math.round(10 * v / mx))}" fill="var(--accent)" opacity="${(0.3 + 0.7 * v / mx).toFixed(2)}"/>`).join("");
+  const tip = ds.map((d, i) => `${d.slice(5)}: ${vals[i]}`).join(" · ");
+  return `<svg width="${w}" height="12" viewBox="0 0 ${w} 12" style="vertical-align:-1px;margin-left:6px" title="${tip}">${bars}</svg>`;
 }
 
 function paint() {
@@ -723,7 +745,7 @@ async function main() {
   });
   paint();
   renderRising();
-  loadStreaks();
+  loadStreaks(); loadSeries();
 }
 
 const SAP_SOURCES = () => SNAP.sources || {};
