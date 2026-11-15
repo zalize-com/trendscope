@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T15:25:38.676704+00:00",
+ "generated_at": "2026-11-15T15:27:12.095116+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 876,
- "new_items": 750,
+ "total_items": 885,
+ "new_items": 759,
  "by_source": {
   "producthunt": 45,
   "hackernews": 26,
@@ -52,6 +52,7 @@
   "pinterest": 10,
   "stripe": 10,
   "wingolog": 10,
+  "meta_eng": 9,
   "susam": 9,
   "hackaday": 8,
   "slack_eng": 8,
@@ -3458,6 +3459,78 @@
    "url": "https://martinfowler.com/articles/never-send-slides/slide-principles.html",
    "source": "martinfowler",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cuttlefish on Mac: Running Android’s Virtual Device Framework Natively on Apple Silicon",
+   "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/",
+   "source": "meta_eng",
+   "rank": 1,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Intelligent Delivery: Making Every Unit of Compute Serve Better Ads",
+   "url": "https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/",
+   "source": "meta_eng",
+   "rank": 2,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your Algorithm: Giving People More Ways to Personalize Facebook Recommendations",
+   "url": "https://engineering.fb.com/2026/11/10/ml-applications/your-algorithm-giving-people-more-ways-to-personalize-facebook-recommendations/",
+   "source": "meta_eng",
+   "rank": 3,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How We Built TLX: A Hardware-Native GPU Compiler for Production ML at Scale",
+   "url": "https://engineering.fb.com/2026/11/10/open-source/tlx-a-hardware-native-gpu-compiler-for-production-ml/",
+   "source": "meta_eng",
+   "rank": 4,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Extending LLDB to Debug Applications That Span CPUs and GPUs",
+   "url": "https://engineering.fb.com/2026/11/09/developer-tools/extending-lldb-to-debug-applications-that-span-cpus-and-gpus/",
+   "source": "meta_eng",
+   "rank": 5,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale",
+   "url": "https://engineering.fb.com/2026/11/03/ml-applications/f3-lightning-how-meta-accelerates-ads-ml-features-to-production/",
+   "source": "meta_eng",
+   "rank": 6,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale",
+   "url": "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/",
+   "source": "meta_eng",
+   "rank": 7,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
+   "url": "https://engineering.fb.com/2026/10/28/ml-applications/meta-andromeda-next-gen-ads-retrieval-gpu-co-design/",
+   "source": "meta_eng",
+   "rank": 8,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PrivacyLib: Privacy Controls at the Data Access Boundary",
+   "url": "https://engineering.fb.com/2026/10/27/security/privacylib/",
+   "source": "meta_eng",
+   "rank": 9,
    "score": 1,
    "metric": "feed rank"
   },
