@@ -147,6 +147,18 @@
     <div class="out md" id="ai-hl"></div>
   </div>
 
+  <div class="tool" data-tool="toc">
+    <h2>Markdown TOC generator</h2>
+    <p class="hint">Paste markdown — get a table of contents with GitHub-style anchor links. Depth limit optional.</p>
+    <textarea id="toc-in" placeholder="# Title\n## Section\n### Sub…"></textarea>
+    <div style="display:flex;gap:8px;margin-top:6px;align-items:center">
+      <label class="hint" style="margin:0">max depth <input id="toc-depth" type="number" min="1" max="6" value="3" style="width:50px"></label>
+      <label class="hint" style="margin:0"><input id="toc-noh1" type="checkbox" checked> skip H1</label>
+      <button id="toc-copy">copy</button>
+    </div>
+    <pre class="out" id="toc-out"></pre>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -160,6 +172,7 @@ const TOOLS = [
   {id:"mdtable", label:"MD table"},
   {id:"uni", label:"Unicode"},
   {id:"aitext", label:"AI-text tells"},
+  {id:"toc", label:"MD TOC"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -171,7 +184,7 @@ tabsEl.addEventListener("click", ev => {
     d.classList.toggle("active", d.dataset.tool === b.dataset.t));
   location.hash = b.dataset.t;
 });
-const start = location.hash.slice(1);
+const start = new URLSearchParams(location.search).get("t") || location.hash.slice(1);
 const t0 = TOOLS.some(t => t.id === start) ? start : "diff";
 document.querySelectorAll(".tool").forEach(d =>
   d.classList.toggle("active", d.dataset.tool === t0));
@@ -372,6 +385,38 @@ function aiInspect(){
   hl.innerHTML=h.replace(/\n/g,"<br>");
 }
 document.getElementById("ai-in").addEventListener("input",aiInspect);
+// ---- Markdown TOC ----
+function ghAnchor(t){
+  return t.trim().toLowerCase().replace(/[`*_~^\[\]()]/g,"")
+    .replace(/[^\w\- \u4e00-\u9fff]/g,"").replace(/ /g,"-");
+}
+function tocGo(){
+  const t=document.getElementById("toc-in").value,
+        out=document.getElementById("toc-out"),
+        dep=+document.getElementById("toc-depth").value||3,
+        noh1=document.getElementById("toc-noh1").checked;
+  const lines=t.split("\n"); let inCode=false; const hs=[];
+  for(const l of lines){
+    if(/^```/.test(l.trim())) inCode=!inCode;
+    if(inCode) continue;
+    const m=l.match(/^(#{1,6})\s+(.+)/);
+    if(m && m[1].length<=dep && !(noh1 && m[1].length===1)) hs.push([m[1].length,m[2]]);
+  }
+  out.textContent = hs.map(([d,t])=>{
+    const tt=t.replace(/\s*#+\s*$/,"");
+    return "  ".repeat(Math.max(0,d-(noh1?2:1))) + `- [${tt}](#${ghAnchor(tt)})`;
+  }).join("\n");
+}
+if(document.getElementById("toc-in")){
+  ["toc-in","toc-depth","toc-noh1"].forEach(id=>
+    document.getElementById(id).addEventListener("input",tocGo));
+  document.getElementById("toc-copy").onclick=()=>{
+    navigator.clipboard?.writeText(document.getElementById("toc-out").textContent)
+      .then(()=>{const b=document.getElementById("toc-copy");b.textContent="✓";setTimeout(()=>b.textContent="copy",1200);});};
+  document.getElementById("toc-in").value="# My Project\n\n## Getting started\n### Install\n### Configure\n## Usage\n## License";
+  tocGo();
+}
+
 </script>
 </body>
 </html>
