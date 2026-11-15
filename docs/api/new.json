@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-15T16:28:33.794625+00:00",
+ "generated_at": "2026-11-15T16:30:02.193042+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1868,
- "new_items": 1742,
+ "total_items": 1929,
+ "new_items": 1803,
  "by_source": {
   "producthunt": 45,
-  "show_hn": 33,
+  "show_hn": 39,
   "theregister": 29,
   "hackernews": 28,
   "techmeme": 21,
@@ -21,6 +21,7 @@
   "aws_blog": 15,
   "begriffs": 15,
   "bertrand": 15,
+  "bobmonsour": 15,
   "bravenewgeek": 15,
   "catonmat": 15,
   "changelog": 15,
@@ -33,6 +34,7 @@
   "codinghorror2": 15,
   "dabeaz": 15,
   "danluu": 15,
+  "daverupert": 15,
   "dimitri": 15,
   "discord": 15,
   "drmaciver": 15,
@@ -70,6 +72,7 @@
   "ridiculousfish": 15,
   "robinrendle": 15,
   "sanglard": 15,
+  "shkspr": 15,
   "simonw": 15,
   "soblog": 15,
   "steveblank": 15,
@@ -101,6 +104,7 @@
   "henrikwarne": 10,
   "joeduffy": 10,
   "joelonsoftware": 10,
+  "justinpot": 10,
   "jwz": 10,
   "krebs": 10,
   "lorinhochstein": 10,
@@ -1654,6 +1658,126 @@
    "url": "https://bitslog.com/2018/08/21/simple-change-to-the-bitcoin-merkleblock-command-to-protect-from-leaf-node-weakness-in-transaction-merkle-tree/",
    "source": "bitslog",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deconstructing these auto-generated OG images",
+   "url": "https://www.bobmonsour.com/blog/deconstructing-these-auto-generated-og-images/",
+   "source": "bobmonsour",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Three years in on the 11ty Bundle",
+   "url": "https://www.bobmonsour.com/blog/three-years-in-on-the-11ty-bundle/",
+   "source": "bobmonsour",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Changing how I deploy my Eleventy sites",
+   "url": "https://www.bobmonsour.com/blog/changing-how-i-deploy-my-eleventy-sites/",
+   "source": "bobmonsour",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "North Bay Python 2026 - Afterthoughts",
+   "url": "https://www.bobmonsour.com/blog/north-bay-python-2026-afterthoughts/",
+   "source": "bobmonsour",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I've been using AI",
+   "url": "https://www.bobmonsour.com/blog/how-ive-been-using-ai/",
+   "source": "bobmonsour",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Site redesign progress",
+   "url": "https://www.bobmonsour.com/blog/site-redesign-progress/",
+   "source": "bobmonsour",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A post I didn't want to have to write",
+   "url": "https://www.bobmonsour.com/blog/a-post-i-didnt-want-to-have-to-write/",
+   "source": "bobmonsour",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Seeking RSS feeds, favicons, and descriptions",
+   "url": "https://www.bobmonsour.com/blog/seeking-rss-links-favicons-and-descriptions/",
+   "source": "bobmonsour",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cache-busting that CSS & JS",
+   "url": "https://www.bobmonsour.com/blog/cache-busting-that-css-and-js/",
+   "source": "bobmonsour",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On not minifying CSS & JS (part 2)",
+   "url": "https://www.bobmonsour.com/blog/on-not-minifying-part2/",
+   "source": "bobmonsour",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minify those CSS & JS bundles? Maybe not.",
+   "url": "https://www.bobmonsour.com/blog/minify-that-css-bundle-maybe-not/",
+   "source": "bobmonsour",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "11ty Bundle Redesign Survey",
+   "url": "https://www.bobmonsour.com/blog/11ty-bundle-redesign-survey/",
+   "source": "bobmonsour",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sounds of the Pacific",
+   "url": "https://www.bobmonsour.com/blog/sounds-of-the-pacific/",
+   "source": "bobmonsour",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Yes, racism still exists in the US",
+   "url": "https://www.bobmonsour.com/blog/yes-there-is-racism-here-still/",
+   "source": "bobmonsour",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Where do the red and blue colors on this site come from?",
+   "url": "https://www.bobmonsour.com/blog/from-where-are-the-red-and-blue/",
+   "source": "bobmonsour",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -3405,6 +3529,126 @@
    "title": "Reuters Raises the Jensen Huang Affair Tally to Three",
    "url": "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
    "source": "daringfireball",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Conventional Commit rules everything around me",
+   "url": "https://daverupert.com/2026/11/conventional-commit-rules-everything-around-me/",
+   "source": "daverupert",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pseudo-pseudo-classes for maximum interactive demos!",
+   "url": "https://daverupert.com/2026/11/pseudo-pseudo-classes/",
+   "source": "daverupert",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Write mo'",
+   "url": "https://daverupert.com/2026/11/write-mo/",
+   "source": "daverupert",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Arc-like automatic picture-in-picture in Chromium",
+   "url": "https://daverupert.com/2026/10/arc-like-automatic-picture-in-picture-in-chromium/",
+   "source": "daverupert",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bad at email",
+   "url": "https://daverupert.com/2026/10/bad-at-email/",
+   "source": "daverupert",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Recursion is DEAD and HTML killed it",
+   "url": "https://daverupert.com/2026/10/html-recursion/",
+   "source": "daverupert",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tupo",
+   "url": "https://daverupert.com/2026/09/play-tupo/",
+   "source": "daverupert",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Many Dudes?",
+   "url": "https://daverupert.com/2026/09/how-many-dudes/",
+   "source": "daverupert",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I wish you the best in the Offline",
+   "url": "https://daverupert.com/2026/09/i-wish-you-the-best-in-the-offline/",
+   "source": "daverupert",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Microlighter",
+   "url": "https://daverupert.com/2026/08/microlighter/",
+   "source": "daverupert",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shadow-piercing local component variables",
+   "url": "https://daverupert.com/2026/08/how-to-pierce-your-shadow-belly-button/",
+   "source": "daverupert",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vibe Check №43",
+   "url": "https://daverupert.com/2026/08/vibe-check-43/",
+   "source": "daverupert",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Before I go: Double your business with companies you like",
+   "url": "https://daverupert.com/2026/07/number-chart-go-up/",
+   "source": "daverupert",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The new yet familiar CodePen&nbsp;2.0",
+   "url": "https://daverupert.com/2026/07/codepen-2/",
+   "source": "daverupert",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding curated public domain images",
+   "url": "https://daverupert.com/2026/06/curated-public-domain-images/",
+   "source": "daverupert",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -6493,6 +6737,86 @@
    "title": "A Dusting of Gamification",
    "url": "https://www.joelonsoftware.com/2018/04/13/gamification/",
    "source": "joelonsoftware",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://justinpot.com/47999-2/",
+   "source": "justinpot",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A collection of tiny tray apps for Windows",
+   "url": "https://justinpot.com/a-collection-of-tiny-tray-apps-for-windows/",
+   "source": "justinpot",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "This free app finally fixes the Mac menu bar",
+   "url": "https://justinpot.com/this-free-app-finally-fixes-the-mac-menu-bar/",
+   "source": "justinpot",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://justinpot.com/47865-2/",
+   "source": "justinpot",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://justinpot.com/47805-2/",
+   "source": "justinpot",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://justinpot.com/47646-2/",
+   "source": "justinpot",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://justinpot.com/47593-2/",
+   "source": "justinpot",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://justinpot.com/47499-2/",
+   "source": "justinpot",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://justinpot.com/47431-2/",
+   "source": "justinpot",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://justinpot.com/47401-2/",
+   "source": "justinpot",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -10954,6 +11278,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Variable Electricity Pricing - the Highs and the Lows",
+   "url": "https://shkspr.mobi/blog/2026/11/variable-electricity-pricing-the-highs-and-the-lows/",
+   "source": "shkspr",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Theatre Review: FrankenTacit ★★☆☆☆",
+   "url": "https://shkspr.mobi/blog/2026/11/theatre-review-frankentacit/",
+   "source": "shkspr",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gadget Review: Thermal Master P3 Lite - and Linux Instructions ★★★★⯪",
+   "url": "https://shkspr.mobi/blog/2026/11/gadget-review-thermal-master-p3-lite-p2-max-and-linux-instructions/",
+   "source": "shkspr",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Book Review: This Is for Everyone - Tim Berners-Lee ★★★☆☆",
+   "url": "https://shkspr.mobi/blog/2026/11/book-review-this-is-for-everyone-tim-berners-lee/",
+   "source": "shkspr",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HowTo: Fix Eufy HomeBase 2 Storage Full Issues",
+   "url": "https://shkspr.mobi/blog/2026/11/howto-fix-eufy-homebase-2-storage-full-issues/",
+   "source": "shkspr",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Book Review: The Unfinished Harauld Hughes - Richard Ayoade ★★★⯪☆",
+   "url": "https://shkspr.mobi/blog/2026/11/book-review-the-unfinished-harauld-hughes-richard-ayoade/",
+   "source": "shkspr",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Blunt Banhammer Blocks Basic Bots Ballistically",
+   "url": "https://shkspr.mobi/blog/2026/11/blunt-banhammer-blocks-basic-bots-ballistically/",
+   "source": "shkspr",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Some thoughts on restaurant menu QR codes",
+   "url": "https://shkspr.mobi/blog/2026/11/some-thoughts-on-restaurant-menu-qr-codes/",
+   "source": "shkspr",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Book Review: When the Dust Settles - Stories of Love, Loss and Hope from an Expert in Disaster by Lucy Easthope ★★★★★",
+   "url": "https://shkspr.mobi/blog/2026/11/book-review-when-the-dust-settles-stories-of-love-loss-and-hope-from-an-expert-in-disaster-by-lucy-easthope/",
+   "source": "shkspr",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A video game which caused real world violence",
+   "url": "https://shkspr.mobi/blog/2026/11/a-video-game-which-caused-real-world-violence/",
+   "source": "shkspr",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gadget Review: Tozo NC9 Pro Bluetooth Headphones ★★★★⯪",
+   "url": "https://shkspr.mobi/blog/2026/11/gadget-review-tozo-nc9-pro-bluetooth-headphones/",
+   "source": "shkspr",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Book Review: Practice by Rosalind Brown ★★★★☆",
+   "url": "https://shkspr.mobi/blog/2026/11/book-review-practice-by-rosalind-brown/",
+   "source": "shkspr",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Just a little AI resistance, as a treat",
+   "url": "https://shkspr.mobi/blog/2026/11/just-a-little-ai-resistance-as-a-treat/",
+   "source": "shkspr",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lorem Ipsum Dot Gov Dot UK",
+   "url": "https://shkspr.mobi/blog/2026/11/lorem-ipsum-dot-gov-dot-uk/",
+   "source": "shkspr",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10 Years on Mastodon",
+   "url": "https://shkspr.mobi/blog/2026/11/10-years-on-mastodon/",
+   "source": "shkspr",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Show HN: A custom font based on the Jamaican flag alphabet",
    "url": "https://bobbiec.github.io/jamaican-font.html",
    "source": "show_hn",
@@ -11050,6 +11494,14 @@
    "metric": "points"
   },
   {
+   "title": "Show HN: profiler-md converts performance profiles to Markdown",
+   "url": "https://github.com/TomerAberbach/profiler-md",
+   "source": "show_hn",
+   "rank": 7,
+   "score": 2,
+   "metric": "points"
+  },
+  {
    "title": "Show HN: AI Time Estimator – how long Claude Code will take, from your own logs",
    "url": "https://github.com/noambrand/ai-time-estimator",
    "source": "show_hn",
@@ -11060,6 +11512,14 @@
   {
    "title": "Show HN: A custom language that compiles and runs compute kernels on AMD GPUs",
    "url": "https://github.com/drakestapleton/omega-mv",
+   "source": "show_hn",
+   "rank": 8,
+   "score": 2,
+   "metric": "points"
+  },
+  {
+   "title": "Show HN: Pizza – An event-driven AI agent, no while true",
+   "url": "https://pizza.hertzbeat.com/",
    "source": "show_hn",
    "rank": 8,
    "score": 2,
@@ -11087,6 +11547,14 @@
    "source": "show_hn",
    "rank": 9,
    "score": 3,
+   "metric": "points"
+  },
+  {
+   "title": "Show HN: Simple tool for FDEs to avoid missing HITL steps in claude code",
+   "url": "https://github.com/robertodf99/hook-me-up",
+   "source": "show_hn",
+   "rank": 9,
+   "score": 2,
    "metric": "points"
   },
   {
@@ -11122,6 +11590,14 @@
    "metric": "points"
   },
   {
+   "title": "Show HN: Nostalgia Rider",
+   "url": "https://nostalgiarider.com",
+   "source": "show_hn",
+   "rank": 10,
+   "score": 2,
+   "metric": "points"
+  },
+  {
    "title": "Show HN: KrocPDF – A Local-First, Alternative to iLovePDF",
    "url": "https://github.com/KrocPDF/KrocPDF",
    "source": "show_hn",
@@ -11132,6 +11608,14 @@
   {
    "title": "Show HN: A local-first AI agent for the desktop, no Electron, any LLM endpoint",
    "url": "https://github.com/Scronkfinkle/byob",
+   "source": "show_hn",
+   "rank": 11,
+   "score": 2,
+   "metric": "points"
+  },
+  {
+   "title": "Show HN: Codex sessions in the Mac menu bar",
+   "url": "https://smol-ninja.github.io/little-brain/",
    "source": "show_hn",
    "rank": 11,
    "score": 2,
@@ -11212,6 +11696,14 @@
   {
    "title": "Show HN: Building 1M+ RPS Distributed Engines in Go and Rust",
    "url": "https://github.com/grfdsasdvef/awesome-highload-architecture",
+   "source": "show_hn",
+   "rank": 12,
+   "score": 2,
+   "metric": "points"
+  },
+  {
+   "title": "Show HN: FlAIent – Learn interactive AI coding with real agents",
+   "url": "https://flaient.com/",
    "source": "show_hn",
    "rank": 12,
    "score": 2,

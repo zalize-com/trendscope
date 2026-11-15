@@ -155,6 +155,10 @@ A daily cross-source snapshot of developer attention:
 | GameDeveloper | game industry news | `gamedeveloper.com/rss.xml` |
 | ThisDaveJ | Node.js and maker tutorials | `thisdavej.com/feed/` |
 | 0x65 | low-level systems research | `0x65.dev/atom.xml` |
+| Terence Eden | open tech and gov digital | `shkspr.mobi/blog/feed/` |
+| Dave Rupert | front-end and web components | `daverupert.com/atom.xml` |
+| Bob Monsour | personal tech essays | `bobmonsour.com/feed.xml` |
+| Justin Pot | productivity and software writing | `justinpot.com/rss/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
