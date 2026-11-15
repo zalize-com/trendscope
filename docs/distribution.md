@@ -156,3 +156,18 @@ The first two outputs: [trendscope](https://github.com/zalize-com/trendscope)
 (open daily dataset of dev attention) and
 [feedpaper](https://github.com/zalize-com/feedpaper) (fork→feeds.yaml→your
 own daily page). Both came straight out of the repetition ranking.
+
+## Competitive scan — digest space (Nov 15, GitHub search)
+
+Closest neighbors to feedpaper's "fork → your own daily page" model:
+
+| Project | ★ | Model | Why we're different |
+|---|---|---|---|
+| simranjeetc/digest-mirror | 0 | private repo → public Pages, self-use | theirs is a personal mirror; ours is a *fork template* (feeds.yaml + OPML, docs for strangers) |
+| kamui-fin/readspace | 44 | self-hosted RSS reader (server) | needs hosting + accounts; feedpaper is just an Action + Pages |
+| yasinmiran/sift | 0 | serverless tech digest | no fork UX, no archive page |
+| ai-daily-digest et al. | ~0 | LLM-summarized digests | we stay stdlib-only — no API key to provision |
+
+**Talking point that holds up:** nobody else sells "the whole product is
+a fork" — zero server, zero account, zero dependency, data stays in *your*
+repo. That phrasing goes first in Show HN / PH copy.
