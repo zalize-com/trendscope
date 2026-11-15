@@ -1,65 +1,70 @@
 {
-  "generated_at": "2026-11-15T07:17:20.822787+00:00",
+  "generated_at": "2026-11-15T07:33:44.515007+00:00",
   "sources": {
     "hackernews": {
       "ok": true,
       "items": 20,
-      "ms": 317
+      "ms": 371
     },
     "show_hn": {
       "ok": true,
       "items": 12,
-      "ms": 317
+      "ms": 282
     },
     "ask_hn": {
       "ok": true,
       "items": 12,
-      "ms": 382
+      "ms": 365
     },
     "lobsters": {
       "ok": true,
       "items": 15,
-      "ms": 308
+      "ms": 246
     },
     "devto": {
       "ok": true,
       "items": 15,
-      "ms": 79
+      "ms": 64
     },
     "producthunt": {
       "ok": true,
       "items": 20,
-      "ms": 151
+      "ms": 34
     },
     "techmeme": {
       "ok": true,
       "items": 15,
-      "ms": 420
+      "ms": 223
     },
     "slashdot": {
       "ok": true,
       "items": 15,
-      "ms": 272
+      "ms": 53
+    },
+    "arxiv": {
+      "ok": true,
+      "items": 15,
+      "ms": 839
     },
     "github_trending": {
       "ok": true,
       "items": 15,
-      "ms": 516
+      "ms": 420
     },
     "npm": {
       "ok": true,
       "items": 24,
-      "ms": 7147
+      "ms": 7265
     },
     "pypi": {
       "ok": true,
       "items": 22,
-      "ms": 10602
+      "ms": 9391
     },
     "crates": {
       "ok": true,
       "items": 15,
-      "ms": 439
+      "ms": 486
     }
   }
 }

@@ -375,6 +375,43 @@ def fetch_slashdot(limit=15):
     return out
 
 
+def fetch_arxiv(limit=15):
+    """arXiv recent CS submissions — research attention signal, position-scored."""
+    print("Fetching arXiv recent...")
+    import xml.etree.ElementTree as ET
+    url = ("https://export.arxiv.org/api/query?search_query="
+           "cat:cs.AI%20OR%20cat:cs.CL%20OR%20cat:cs.SE%20OR%20cat:cs.LG"
+           "&sortBy=submittedDate&sortOrder=descending&max_results=" + str(limit))
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                url, headers={"User-Agent": UA, "Accept": "application/atom+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] arxiv attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    A = "{http://www.w3.org/2005/Atom}"
+    entries = root.findall(f"{A}entry")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext(f"{A}title", default="") or "").split())
+        link = e.findtext(f"{A}id", default="") or ""
+        cats = [c.get("term") for c in e.findall(f"{A}category") if c.get("term")]
+        authors = [a.findtext(f"{A}name", default="") for a in e.findall(f"{A}author")]
+        out.append(item(
+            "arxiv", title, link or "https://arxiv.org/",
+            len(entries) - i, "arxiv recent",
+            tags=cats[:4],
+            author=authors[0] if authors else None,
+            extra={"authors_count": len(authors)},
+        ))
+    return out
+
+
 def fetch_crates(limit=15):
     print("Fetching crates.io recent downloads...")
     data = get_json(
@@ -490,6 +527,7 @@ def main():
         "producthunt": fetch_producthunt,
         "techmeme": fetch_techmeme,
         "slashdot": fetch_slashdot,
+        "arxiv": fetch_arxiv,
         "github_trending": fetch_github_trending,
         "npm": fetch_npm_downloads,
         "pypi": fetch_pypi_downloads,
