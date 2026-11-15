@@ -400,6 +400,13 @@ cherry"></textarea>
     <div class="out" id="rn-out"></div>
   </div>
 
+  <div class="tool" data-tool="mime">
+    <h2>mime type ↔ extension</h2>
+    <p class="hint">Filter the table — or paste a filename / mime type. Common web dev types.</p>
+    <input id="mm-in" placeholder="e.g. webp, .json, application/pdf, image/" style="width:100%">
+    <div class="out" id="mm-out" style="margin-top:8px"></div>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -435,6 +442,7 @@ const TOOLS = [
   {id:"aspect",label:"aspect ratio calc"},
   {id:"morse",label:"morse code"},
   {id:"roman",label:"roman numerals"},
+  {id:"mime",  label:"mime types"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -1114,6 +1122,37 @@ document.querySelectorAll('[data-rn]').forEach(b=>b.onclick=()=>{
   const v=document.getElementById('rn-in').value.trim();
   document.getElementById('rn-out').textContent=b.dataset.rn==='enc'?toRoman(parseInt(v,10)):fromRoman(v);
 });
+
+// ---- mime types ----
+const MIME=[
+["aac","audio/aac"],["avif","image/avif"],["avi","video/x-msvideo"],["bin","application/octet-stream"],
+["bmp","image/bmp"],["bz2","application/x-bzip2"],["css","text/css"],["csv","text/csv"],
+["doc","application/msword"],["docx","application/vnd.openxmlformats-officedocument.wordprocessingml.document"],
+["eot","application/vnd.ms-fontobject"],["epub","application/epub+zip"],["flac","audio/flac"],["gif","image/gif"],
+["gz","application/gzip"],["htm","text/html"],["html","text/html"],["ico","image/vnd.microsoft.icon"],
+["ics","text/calendar"],["jar","application/java-archive"],["jpeg","image/jpeg"],["jpg","image/jpeg"],
+["js","text/javascript"],["json","application/json"],["jsonld","application/ld+json"],["m3u8","application/vnd.apple.mpegurl"],
+["m4a","audio/mp4"],["md","text/markdown"],["mjs","text/javascript"],["mkv","video/x-matroska"],
+["mov","video/quicktime"],["mp3","audio/mpeg"],["mp4","video/mp4"],["mpg","video/mpeg"],
+["odp","application/vnd.oasis.opendocument.presentation"],["ods","application/vnd.oasis.opendocument.spreadsheet"],
+["odt","application/vnd.oasis.opendocument.text"],["oga","audio/ogg"],["ogv","video/ogg"],["ogx","application/ogg"],
+["otf","font/otf"],["pdf","application/pdf"],["png","image/png"],["pptx","application/vnd.openxmlformats-officedocument.presentationml.presentation"],
+["rar","application/vnd.rar"],["rtf","application/rtf"],["sh","application/x-sh"],["sql","application/sql"],
+["svg","image/svg+xml"],["tar","application/x-tar"],["tif","image/tiff"],["tiff","image/tiff"],
+["ts","video/mp2t"],["ttf","font/ttf"],["txt","text/plain"],["vsd","application/vnd.visio"],
+["wav","audio/wav"],["weba","audio/webm"],["webm","video/webm"],["webmanifest","application/manifest+json"],
+["webp","image/webp"],["woff","font/woff"],["woff2","font/woff2"],["xhtml","application/xhtml+xml"],
+["xls","application/vnd.ms-excel"],["xlsx","application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"],
+["xml","application/xml"],["yaml","application/yaml"],["yml","application/yaml"],["zip","application/zip"],["7z","application/x-7z-compressed"]];
+function mmGo(){
+  const q=document.getElementById("mm-in").value.trim().toLowerCase().replace(/^\./,"");
+  const rows=MIME.filter(([e,t])=>!q||e.includes(q)||t.includes(q));
+  document.getElementById("mm-out").innerHTML = rows.length
+    ? `<table style="width:100%;font-size:12.5px;border-collapse:collapse">${rows.map(([e,t])=>`<tr><td style="padding:2px 8px 2px 0;color:var(--dim)">.${e}</td><td><code>${t}</code></td></tr>`).join("")}</table>`
+    : `<span style="color:var(--dim)">no match — ${MIME.length} types indexed</span>`;
+}
+document.getElementById("mm-in").addEventListener("input",mmGo);
+mmGo();
 </script>
 </body>
 </html>
