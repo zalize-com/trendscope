@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T17:49:21.605137+00:00",
+ "generated_at": "2026-11-15T17:51:36.553145+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 993,
+ "total": 1011,
  "domains": [
   {
    "hostname": "blog.google",
@@ -17,6 +17,22 @@
     "score": 568,
     "metric": "points",
     "date": "2026-11-11"
+   }
+  },
+  {
+   "hostname": "theguardian.com",
+   "days_on_board": 3,
+   "items": 17,
+   "sources": [
+    "guardianco",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
+    "url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you",
+    "score": 560,
+    "metric": "points",
+    "date": "2026-11-07"
    }
   },
   {
@@ -152,6 +168,22 @@
     "score": 339,
     "metric": "points",
     "date": "2026-11-14"
+   }
+  },
+  {
+   "hostname": "jefftk.com",
+   "days_on_board": 2,
+   "items": 17,
+   "sources": [
+    "hackernews",
+    "jefftk"
+   ],
+   "top_hit": {
+    "title": "Testing a trash can Faraday cage",
+    "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
+    "score": 72,
+    "metric": "points",
+    "date": "2026-11-15"
    }
   },
   {
@@ -484,21 +516,6 @@
    }
   },
   {
-   "hostname": "jefftk.com",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Testing a trash can Faraday cage",
-    "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
-    "score": 72,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "alichraghi.github.io",
    "days_on_board": 2,
    "items": 2,
@@ -632,21 +649,6 @@
     "score": 31,
     "metric": "score",
     "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "theguardian.com",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
-    "url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you",
-    "score": 560,
-    "metric": "points",
-    "date": "2026-11-07"
    }
   },
   {

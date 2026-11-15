@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T17:49:21.605137+00:00",
+ "generated_at": "2026-11-15T17:51:36.553145+00:00",
  "latest_snapshot": "2026-11-15",
  "crossovers": [
   {
@@ -198,6 +198,21 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-14"
+   }
+  },
+  {
+   "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
+   "title": "Testing a Trash Can Faraday Cage",
+   "sources": [
+    "hackernews",
+    "jefftk"
+   ],
+   "days": 2,
+   "best": {
+    "score": 72,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
    }
   },
   {
@@ -737,21 +752,6 @@
     "score": 1,
     "metric": "feed rank",
     "source": "codinghorror",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://surfingcomplexity.blog/2026/09/01/thoughts-on-the-buildkite-aug-25-incident",
-   "title": "Thoughts on the Buildkite Aug 25 incident",
-   "sources": [
-    "lorinhochstein",
-    "surfingcomplexity"
-   ],
-   "days": 1,
-   "best": {
-    "score": 1,
-    "metric": "feed rank",
-    "source": "surfingcomplexity",
     "date": "2026-11-15"
    }
   }
