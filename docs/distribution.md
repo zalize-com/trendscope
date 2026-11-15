@@ -451,3 +451,30 @@ web scraping, open dataset
 Note: "Data Is Plural" is the highest-fit single outlet — they feature
 exactly this kind of quirky public dataset weekly. Email a short pitch
 with the canon headline numbers (19 years, 6.5k rows).
+
+
+---
+
+## Indie playbook (learned from PerfectTablePlan, 2026-11-16)
+
+Andy Brice tried ~9 marketing channels over 20 years; measured
+results below, mapped onto our two products.
+
+| Andy's tactic | His result | Our mapping |
+|---|---|---|
+| Google CPC ads | worked | skip — paid; revisit post-launch if a paid tier exists |
+| Press releases / media | worked | press-kit.html + Data Is Plural pitch (highest fit) |
+| Trade shows | too expensive | skip |
+| Email to purchased list | **zero sales in 1000+ sends** | skip cold email entirely |
+| Magazine ads | thousands of £, limited | skip |
+| Forum answers + soft link | worked | answer "HN dataset / GitHub trends API" questions on HN/Reddit/dev.to (user accounts) |
+| Telemarketing | gave up | skip |
+| Product blogging | worked well | dev.to ×6 drafts staged |
+| Download-site / directory listings | worked | **free + doable now**: submit to public-apis/public-apis PR, awesome-public-datasets, awesome-selfhosted (feedpaper), Kaggle datasets, GitHub topics |
+| **Pirate-page trick**: SEO page ranking for "X crack" that converts pirates → buyers | extra revenue | our analog: SEO landing pages for intent keywords — "free alternative to <paid dev-trends tool>", "HN dataset download", "GitHub trending API no key". Tools pages (91) are already the long-tail matrix; keep keyword-targeted copy on each |
+| Upgrade revenue from loyal users | major later income | sponsors tier + paid "history archive" bulk export (canon CSVs are the seed) |
+
+Monetization ladder to validate (his rule: prove someone pays within ~24h of asking):
+1. Free tier forever — API/embed/data (drives citations + stars).
+2. Sponsor button (FUNDING.yml — needs user activation).
+3. Paid add-on candidates: bulk history dump, white-label widget, sponsored source slot — only after traffic lands; a Gumroad/Kaggle listing is the cheapest "will they pay" probe.
