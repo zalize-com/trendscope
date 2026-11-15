@@ -62,6 +62,7 @@
     <button data-tool="og">social card</button>
     <button data-tool="robots">robots.txt</button>
     <button data-tool="squat">typosquat</button>
+    <button data-tool="http">HTTP status</button>
   </div>
 
   <div class="panel" id="p-qr">
@@ -112,6 +113,13 @@
     <div class="out" id="sq-out" style="margin-top:12px"></div>
   </div>
 
+  <div class="panel" id="p-http">
+    <h2>HTTP status codes</h2>
+    <p class="hint">Search by code or word. Click a row for the MDN page.</p>
+    <input type="text" id="ht-in" placeholder="e.g. 429 or rate limit">
+    <div id="ht-out" style="margin-top:12px"></div>
+  </div>
+
 <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
@@ -119,7 +127,7 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["qr","og","robots","squat"];
+const tools = ["qr","og","robots","squat","http"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "qr");
@@ -249,6 +257,88 @@ function squat() {
 }
 $("sq-in").oninput = squat;
 squat();
+
+/* --- HTTP status codes --- */
+const HTTP = [
+[100,"Continue","the server received the request headers; client may send the body"],
+[101,"Switching Protocols","server agrees to switch protocols (e.g. HTTP/1.1 → WebSocket)"],
+[102,"Processing","WebDAV: request received, still being processed"],
+[103,"Early Hints","preload hints sent before the final response"],
+[200,"OK","request succeeded"],
+[201,"Created","request succeeded and a resource was created"],
+[202,"Accepted","request received but not yet acted on"],
+[203,"Non-Authoritative Information","response modified by a transforming proxy"],
+[204,"No Content","success, no body to send"],
+[205,"Reset Content","success — client should reset the document view"],
+[206,"Partial Content","response to a Range request"],
+[207,"Multi-Status","WebDAV: multiple statuses for multiple sub-requests"],
+[208,"Already Reported","WebDAV: members already enumerated"],
+[226,"IM Used","response is a delta-encoding result (instance manipulation)"],
+[300,"Multiple Choices","several possible representations; client should choose"],
+[301,"Moved Permanently","resource permanently moved — update bookmarks/links"],
+[302,"Found","temporary redirect; historically misused like 303"],
+[303,"See Other","redirect to another resource with a GET"],
+[304,"Not Modified","cache hit — conditional request, nothing changed"],
+[305,"Use Proxy","deprecated — must access resource via the given proxy"],
+[307,"Temporary Redirect","same method + body, different URI temporarily"],
+[308,"Permanent Redirect","same method + body, resource permanently moved"],
+[400,"Bad Request","server can't understand the request (syntax)"],
+[401,"Unauthorized","authentication required or failed"],
+[402,"Payment Required","reserved; rarely used"],
+[403,"Forbidden","authenticated or not, server refuses"],
+[404,"Not Found","no resource at that URI"],
+[405,"Method Not Allowed","method unsupported for this resource"],
+[406,"Not Acceptable","no representation matching Accept headers"],
+[407,"Proxy Authentication Required","auth required by the proxy"],
+[408,"Request Timeout","server timed out waiting for the request"],
+[409,"Conflict","request conflicts with current state (e.g. version clash)"],
+[410,"Gone","resource permanently deleted, no forwarding address"],
+[411,"Length Required","Content-Length header missing"],
+[412,"Precondition Failed","If-* conditional header failed"],
+[413,"Payload Too Large","request body exceeds server limits"],
+[414,"URI Too Long","request-target too long"],
+[415,"Unsupported Media Type","Content-Type not accepted"],
+[416,"Range Not Satisfiable","requested byte range can't be served"],
+[417,"Expectation Failed","Expect header can't be met"],
+[418,"I'm a teapot","RFC 2324 joke, kept as an Easter egg"],
+[421,"Misdirected Request","request sent to a server that can't produce a response"],
+[422,"Unprocessable Content","well-formed but semantically invalid (validation errors)"],
+[423,"Locked","WebDAV: resource is locked"],
+[424,"Failed Dependency","WebDAV: a previous request failed"],
+[425,"Too Early","replayable request rejected (0-RTT protection)"],
+[426,"Upgrade Required","client must switch protocols"],
+[428,"Precondition Required","server requires a conditional request (lost-update prevention)"],
+[429,"Too Many Requests","rate limiting — slow down"],
+[431,"Request Header Fields Too Large","headers exceed server limits"],
+[451,"Unavailable For Legal Reasons","content blocked for legal demands (ref. Fahrenheit 451)"],
+[500,"Internal Server Error","generic server-side failure"],
+[501,"Not Implemented","server doesn't support the functionality"],
+[502,"Bad Gateway","gateway/proxy got an invalid upstream response"],
+[503,"Service Unavailable","server overloaded or down for maintenance"],
+[504,"Gateway Timeout","upstream didn't respond in time"],
+[505,"HTTP Version Not Supported","request HTTP version rejected"],
+[506,"Variant Also Negotiates","transparent content negotiation misconfiguration"],
+[507,"Insufficient Storage","WebDAV: server can't store the representation"],
+[508,"Loop Detected","WebDAV: infinite loop in a Depth request"],
+[510,"Not Extended","request needs further extensions"],
+[511,"Network Authentication Required","captive portal intercepts the request"],
+];
+const HT_CLS = {1:"#58a6ff",2:"#3fb950",3:"#d29922",4:"#f85149",5:"#da3633"};
+function htRender() {
+  const q = $("ht-in").value.trim().toLowerCase();
+  const terms = q.split(/\s+/).filter(Boolean);
+  const rows = HTTP.filter(([c,n,d]) => !terms.length ||
+    terms.every(t => String(c).startsWith(t) || (n+" "+d).toLowerCase().includes(t)));
+  $("ht-out").innerHTML = rows.map(([c,n,d]) =>
+    `<div style="display:flex;gap:10px;align-items:baseline;padding:5px 0;border-bottom:1px solid var(--line)">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/${c}" target="_blank" rel="noopener"
+         style="font-weight:700;min-width:44px;color:${HT_CLS[String(c)[0]]}">${c}</a>
+      <span style="min-width:180px">${n}</span>
+      <span style="color:var(--dim);font-size:13px">${d}</span></div>`).join("")
+    || `<span class="err">no matching status codes</span>`;
+}
+$("ht-in").oninput = htRender;
+htRender();
 </script>
 </body>
 </html>
