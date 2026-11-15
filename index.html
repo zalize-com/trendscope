@@ -125,6 +125,8 @@
   #err { color: var(--orange); display: none; margin-top: 12px; }
   .skiplink{position:absolute;left:-9999px;top:0;background:var(--accent);color:#fff;padding:6px 12px;border-radius:0 0 8px 0;z-index:99}
   .skiplink:focus{left:0}
+  .meta a.authl, .meta a.doml { color: var(--dim); font-size: 11px; margin-left: 6px; }
+  .meta a.authl:hover, .meta a.doml:hover { color: var(--accent); }
 </style>
 </head>
 <body>
@@ -412,13 +414,16 @@ function render(items, tab) {
     const streak = STREAK.get(it.url)
       ? `<a class="delta" style="color:var(--orange)" href="item.html?q=${encodeURIComponent(it.title)}">🔥${STREAK.get(it.url)}d</a>` : "";
     const comments = it.comments ? `<span>💬 ${it.comments}</span>` : "";
-    const author = it.author ? `<span>@${it.author}</span>` : "";
+    const author = it.author ? `<a class="authl" href="author.html?u=${encodeURIComponent(it.author)}" title="author deep-dive">@${escapeHtml(it.author)}</a>` : "";
+    let doml = "";
+    try { const h = new URL(it.url).hostname.replace(/^www\./,"");
+      doml = `<a class="doml" href="domain.html?d=${encodeURIComponent(h)}" title="domain deep-dive">${h}</a>`; } catch(e) {}
     board.insertAdjacentHTML("beforeend", `
       <div class="row">
         <span class="rank">${i + 1}</span>
         <span>
           <a href="${it.url}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a>
-          <span class="meta"><span class="src">${it.source}</span>${(it._also||[]).map(s => `<span class="src">+${s}</span>`).join("")}${streak}${comments}${author}${tags}<a class="delta" href="item.html?q=${encodeURIComponent(it.title)}" title="day-by-day trajectory">⤳</a></span>
+          <span class="meta"><span class="src">${it.source}</span>${(it._also||[]).map(s => `<span class="src">+${s}</span>`).join("")}${streak}${comments}${author}${doml}${tags}<a class="delta" href="item.html?q=${encodeURIComponent(it.title)}" title="day-by-day trajectory">⤳</a></span>
         </span>
         <span class="score"><b>${fmt(it.score)}</b> <span class="muted" style="font-size:11px">${it.metric}</span>${delta}</span>
       </div>`);
