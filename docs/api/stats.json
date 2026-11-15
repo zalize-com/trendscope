@@ -1,17 +1,17 @@
 {
- "generated_at": "2026-11-15T06:55:39.479899+00:00",
+ "generated_at": "2026-11-15T07:02:17.895049+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 465,
- "unique_urls": 348,
- "items_in_latest": 185,
- "items_per_day_avg": 51.7,
+ "total_rows": 543,
+ "unique_urls": 411,
+ "items_in_latest": 200,
+ "items_per_day_avg": 60.3,
  "sources": {
   "ask_hn": {
-   "rows": 13,
-   "days_active": 1
+   "rows": 75,
+   "days_active": 8
   },
   "crates": {
    "rows": 30,
@@ -46,7 +46,11 @@
    "days_active": 2
   },
   "show_hn": {
-   "rows": 14,
+   "rows": 15,
+   "days_active": 1
+  },
+  "slashdot": {
+   "rows": 15,
    "days_active": 1
   },
   "techmeme": {
@@ -56,6 +60,10 @@
  },
  "all_green_days": 1,
  "top_domains": [
+  {
+   "domain": "yro.slashdot.org",
+   "hits": 4
+  },
   {
    "domain": "so.long.thanks.fish",
    "hits": 3
@@ -81,19 +89,15 @@
    "hits": 3
   },
   {
+   "domain": "tech.slashdot.org",
+   "hits": 3
+  },
+  {
    "domain": "eff.org",
    "hits": 2
   },
   {
    "domain": "crissyfield.de",
-   "hits": 2
-  },
-  {
-   "domain": "tube.kockatoo.org",
-   "hits": 2
-  },
-  {
-   "domain": "blog.pypi.org",
    "hits": 2
   }
  ],

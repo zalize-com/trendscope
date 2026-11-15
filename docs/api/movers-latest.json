@@ -1,13 +1,13 @@
 {
  "a": "2026-11-14",
  "b": "2026-11-15",
- "generated": "2026-11-15 06:55 UTC",
+ "generated": "2026-11-15 07:02 UTC",
  "entered": [
   {
    "title": "SpaceX catches the Starship to end Flight 15",
    "url": "https://www.spacex.com/launches/starship-flight-15",
    "source": "hackernews",
-   "score": 1041,
+   "score": 1045,
    "metric": "points",
    "rank": 1
   },
@@ -15,33 +15,25 @@
    "title": "Eynnzerr/TelemetryCleaner",
    "url": "https://github.com/Eynnzerr/TelemetryCleaner",
    "source": "github_trending",
-   "score": 703,
+   "score": 708,
    "metric": "stars",
    "rank": 15
-  },
-  {
-   "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
-   "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
-   "source": "hackernews",
-   "score": 412,
-   "metric": "points",
-   "rank": 5
   },
   {
    "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
    "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
    "source": "hackernews",
-   "score": 181,
+   "score": 184,
    "metric": "points",
-   "rank": 12
+   "rank": 11
   },
   {
    "title": "How did Woz write the Apple 1 BASIC before building the computer?",
    "url": "https://retrocomputing.stackexchange.com/questions/17957",
    "source": "hackernews",
-   "score": 177,
+   "score": 179,
    "metric": "points",
-   "rank": 13
+   "rank": 12
   },
   {
    "title": "U.S. October PPI Rises 6.5% YoY, Highest in Nearly Four Years",
@@ -55,9 +47,9 @@
    "title": "'Grey Rocking': The Life-Improving Power of Being Really, Really Boring (2021)",
    "url": "https://www.esquire.com/uk/life/a38473153/grey-rock-technique-being-boring/",
    "source": "hackernews",
-   "score": 135,
+   "score": 136,
    "metric": "points",
-   "rank": 15
+   "rank": 14
   },
   {
    "title": "Seagate's new hybrid drive raises some old questions",
@@ -65,15 +57,7 @@
    "source": "hackernews",
    "score": 92,
    "metric": "points",
-   "rank": 16
-  },
-  {
-   "title": "Ask HN: What are the most useful, concrete AI skills to independently learn?",
-   "url": "https://news.ycombinator.com/item?id=50494696",
-   "source": "ask_hn",
-   "score": 82,
-   "metric": "points",
-   "rank": 2
+   "rank": 15
   },
   {
    "title": "Testing a trash can Faraday cage",
@@ -81,21 +65,29 @@
    "source": "hackernews",
    "score": 73,
    "metric": "points",
-   "rank": 17
+   "rank": 16
   },
   {
    "title": "The Sicilian Citrus Family Tree",
    "url": "https://www.notesfromtheroad.com/europa/citrus-family-tree.html",
    "source": "hackernews",
-   "score": 58,
+   "score": 59,
    "metric": "points",
-   "rank": 18
+   "rank": 17
   },
   {
    "title": "Court denies motion to dismiss DRAM price fixing case",
    "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
    "source": "hackernews",
-   "score": 51,
+   "score": 54,
+   "metric": "points",
+   "rank": 18
+  },
+  {
+   "title": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
+   "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
+   "source": "hackernews",
+   "score": 52,
    "metric": "points",
    "rank": 19
   },
@@ -103,7 +95,7 @@
    "title": "Memory Safety Bugs in Rust Standard Library",
    "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
    "source": "hackernews",
-   "score": 50,
+   "score": 52,
    "metric": "points",
    "rank": 20
   },
@@ -151,17 +143,25 @@
    "title": "Show HN: Turbo-Browser-MCP \u2013 Batch forms, DOM deltas and submit guards for MCP",
    "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
    "source": "show_hn",
-   "score": 21,
+   "score": 22,
    "metric": "points",
    "rank": 3
   },
   {
-   "title": "Dex Semantics",
-   "url": "https://www.producthunt.com/products/dex-by-exmergo",
+   "title": "HiringNow",
+   "url": "https://www.producthunt.com/products/hiringnow",
    "source": "producthunt",
    "score": 20,
    "metric": "feed rank",
    "rank": 1
+  },
+  {
+   "title": "Default Tamer",
+   "url": "https://www.producthunt.com/products/default-tamer",
+   "source": "producthunt",
+   "score": 19,
+   "metric": "feed rank",
+   "rank": 2
   }
  ],
  "left": [
@@ -300,6 +300,14 @@
    "score": 7,
    "metric": "score",
    "rank": 15
+  },
+  {
+   "title": "Ask HN: My product makes money, AI does the coding, and I feel useless",
+   "url": "https://news.ycombinator.com/item?id=50495982",
+   "source": "ask_hn",
+   "score": 5,
+   "metric": "points",
+   "rank": 6
   }
  ],
  "gainers": [
@@ -307,19 +315,19 @@
    "title": "Lovable apps expose passport details and more than 200K private messages",
    "url": "https://www.crissyfield.de/research/lovable-en/",
    "source": "hackernews",
-   "score": 755,
+   "score": 757,
    "metric": "points",
    "rank": 2,
-   "delta": 404
+   "delta": 406
   },
   {
    "title": "deepseek-ai/chat-demo",
    "url": "https://github.com/deepseek-ai/chat-demo",
    "source": "github_trending",
-   "score": 1900,
+   "score": 1902,
    "metric": "stars",
    "rank": 3,
-   "delta": 198
+   "delta": 200
   },
   {
    "title": "A family tree of software job titles",
@@ -327,7 +335,7 @@
    "source": "hackernews",
    "score": 275,
    "metric": "points",
-   "rank": 6,
+   "rank": 5,
    "delta": 195
   },
   {
@@ -336,7 +344,7 @@
    "source": "hackernews",
    "score": 225,
    "metric": "points",
-   "rank": 8,
+   "rank": 7,
    "delta": 163
   },
   {
@@ -354,7 +362,7 @@
    "source": "hackernews",
    "score": 219,
    "metric": "points",
-   "rank": 9,
+   "rank": 8,
    "delta": 130
   },
   {
@@ -367,22 +375,31 @@
    "delta": 123
   },
   {
-   "title": "Why get an expensive Pi when I have an old phone?",
-   "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
-   "source": "hackernews",
-   "score": 538,
-   "metric": "points",
-   "rank": 3,
-   "delta": 99
-  },
-  {
    "title": "apex-compute/ANR",
    "url": "https://github.com/apex-compute/ANR",
    "source": "github_trending",
-   "score": 1883,
+   "score": 1886,
    "metric": "stars",
    "rank": 4,
-   "delta": 99
+   "delta": 102
+  },
+  {
+   "title": "Why get an expensive Pi when I have an old phone?",
+   "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
+   "source": "hackernews",
+   "score": 539,
+   "metric": "points",
+   "rank": 3,
+   "delta": 100
+  },
+  {
+   "title": "huamidev/GestaltX",
+   "url": "https://github.com/huamidev/GestaltX",
+   "source": "github_trending",
+   "score": 7626,
+   "metric": "stars",
+   "rank": 1,
+   "delta": 80
   },
   {
    "title": "PyPI's redesigned project pages with clearer security signals are now live",
@@ -390,17 +407,17 @@
    "source": "hackernews",
    "score": 230,
    "metric": "points",
-   "rank": 7,
+   "rank": 6,
    "delta": 78
   },
   {
-   "title": "huamidev/GestaltX",
-   "url": "https://github.com/huamidev/GestaltX",
+   "title": "FrigadeHQ/yogurt",
+   "url": "https://github.com/FrigadeHQ/yogurt",
    "source": "github_trending",
-   "score": 7624,
+   "score": 1525,
    "metric": "stars",
-   "rank": 1,
-   "delta": 78
+   "rank": 5,
+   "delta": 77
   },
   {
    "title": "Advancing science and engineering with Antigravity's /teamwork",
@@ -408,26 +425,26 @@
    "source": "hackernews",
    "score": 192,
    "metric": "points",
-   "rank": 11,
-   "delta": 76
-  },
-  {
-   "title": "FrigadeHQ/yogurt",
-   "url": "https://github.com/FrigadeHQ/yogurt",
-   "source": "github_trending",
-   "score": 1524,
-   "metric": "stars",
-   "rank": 5,
+   "rank": 10,
    "delta": 76
   },
   {
    "title": "Generative AI uses more energy on non-English text",
    "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
    "source": "hackernews",
-   "score": 198,
+   "score": 199,
    "metric": "points",
-   "rank": 10,
-   "delta": 59
+   "rank": 9,
+   "delta": 60
+  },
+  {
+   "title": "JDhruv14/line-art-animation",
+   "url": "https://github.com/JDhruv14/line-art-animation",
+   "source": "github_trending",
+   "score": 785,
+   "metric": "stars",
+   "rank": 14,
+   "delta": 43
   },
   {
    "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
@@ -435,17 +452,17 @@
    "source": "hackernews",
    "score": 152,
    "metric": "points",
-   "rank": 14,
+   "rank": 13,
    "delta": 42
   },
   {
-   "title": "JDhruv14/line-art-animation",
-   "url": "https://github.com/JDhruv14/line-art-animation",
+   "title": "serveroshq/panel",
+   "url": "https://github.com/serveroshq/panel",
    "source": "github_trending",
-   "score": 784,
+   "score": 818,
    "metric": "stars",
-   "rank": 14,
-   "delta": 42
+   "rank": 13,
+   "delta": 33
   },
   {
    "title": "HolyArrs/HolyArrs",
@@ -454,15 +471,6 @@
    "score": 1202,
    "metric": "stars",
    "rank": 8,
-   "delta": 32
-  },
-  {
-   "title": "serveroshq/panel",
-   "url": "https://github.com/serveroshq/panel",
-   "source": "github_trending",
-   "score": 817,
-   "metric": "stars",
-   "rank": 13,
    "delta": 32
   },
   {
@@ -478,13 +486,67 @@
    "title": "Kianuni/Erosion-CN",
    "url": "https://github.com/Kianuni/Erosion-CN",
    "source": "github_trending",
-   "score": 2079,
+   "score": 2081,
    "metric": "stars",
    "rank": 2,
-   "delta": 27
+   "delta": 29
   }
  ],
  "droppers": [
+  {
+   "title": "Ask HN: What are the most useful, concrete AI skills to independently learn?",
+   "url": "https://news.ycombinator.com/item?id=50494696",
+   "source": "ask_hn",
+   "score": 82,
+   "metric": "points",
+   "rank": 2,
+   "delta": 0
+  },
+  {
+   "title": "Vercel should fork and maintain Deno",
+   "url": "https://news.ycombinator.com/item?id=50497196",
+   "source": "ask_hn",
+   "score": 15,
+   "metric": "points",
+   "rank": 7,
+   "delta": 0
+  },
+  {
+   "title": "Ask HN: Best books you read in 2026?",
+   "url": "https://news.ycombinator.com/item?id=50501990",
+   "source": "ask_hn",
+   "score": 8,
+   "metric": "points",
+   "rank": 8,
+   "delta": 0
+  },
+  {
+   "title": "Do what must be done",
+   "url": "https://news.ycombinator.com/item?id=50496383",
+   "source": "ask_hn",
+   "score": 8,
+   "metric": "points",
+   "rank": 9,
+   "delta": 0
+  },
+  {
+   "title": "Elon should hire Jensen to run Terafab",
+   "url": "https://news.ycombinator.com/item?id=50493765",
+   "source": "ask_hn",
+   "score": 7,
+   "metric": "points",
+   "rank": 10,
+   "delta": 0
+  },
+  {
+   "title": "Ask HN: How do you decide when to stick with a project",
+   "url": "https://news.ycombinator.com/item?id=50498484",
+   "source": "ask_hn",
+   "score": 5,
+   "metric": "points",
+   "rank": 12,
+   "delta": 0
+  },
   {
    "title": "How do you truly stand out in Tech?",
    "url": "https://dev.to/francistrdev/how-do-you-truly-stand-out-in-tech-478a",
@@ -610,60 +672,6 @@
    "metric": "reactions",
    "rank": 7,
    "delta": 3
-  },
-  {
-   "title": "Creating a self booting ZIP archive",
-   "url": "https://goliath32.com/blog/ziphead.html",
-   "source": "lobsters",
-   "score": 18,
-   "metric": "score",
-   "rank": 9,
-   "delta": 4
-  },
-  {
-   "title": "MCP Is Dead Simple. And That's Exactly the Problem",
-   "url": "https://dev.to/sylwia-lask/mcp-is-dead-simple-and-thats-exactly-the-problem-5811",
-   "source": "devto",
-   "score": 161,
-   "metric": "reactions",
-   "rank": 3,
-   "delta": 4
-  },
-  {
-   "title": "DevedevT/FFmpeg-GUI-Editor-Windows",
-   "url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows",
-   "source": "github_trending",
-   "score": 1051,
-   "metric": "stars",
-   "rank": 9,
-   "delta": 4
-  },
-  {
-   "title": "The need for at least a third option",
-   "url": "https://blog.ovalerio.net/archives/3359",
-   "source": "lobsters",
-   "score": 85,
-   "metric": "score",
-   "rank": 2,
-   "delta": 5
-  },
-  {
-   "title": "Terminal borders that don't cost a cell",
-   "url": "https://www.joshka.net/cell-borders/",
-   "source": "lobsters",
-   "score": 60,
-   "metric": "score",
-   "rank": 4,
-   "delta": 5
-  },
-  {
-   "title": "Someone's impersonating this blog",
-   "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/",
-   "source": "lobsters",
-   "score": 46,
-   "metric": "score",
-   "rank": 5,
-   "delta": 5
   }
  ],
  "pkg_rank_up": [],
