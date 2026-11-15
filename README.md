@@ -81,9 +81,11 @@ compare within a source, not across.
   consecutive days on the board, computed client-side from `history.csv`.
 - **Risers** (`risers.html`): biggest single-day score spikes across all history, computed client-side from `history.csv`.
 - **Sources** (`source.html?s=`): per-source deep dive — daily volume, top
-  hits and coverage for each of the 15 tracked sources.
+  hits and coverage for each of the 17 tracked sources.
 - **Domains** (`domains.html`): most-linked sites across all snapshots,
   grouped by hostname from `history.csv`.
+- **Radar** (`radar.html`): the breakout lane — first-seen items today,
+  24h spikes, cross-source spread and brand-new domains, one page.
 - **Domain deep-dive** (`domain.html?d=`): every board hit from one hostname —
   which sources carried it and how big it got.
 - **Author deep-dive** (`author.html?u=`): every board hit by one author,
@@ -147,6 +149,7 @@ taxonomy as `topics.html` — niche blogs can embed just their beat),
 `?mode=new` renders items first-seen on today's boards (from new.json).
 `?mode=domain` renders the top domains card (`&d=host` for a single domain).
 `?mode=sources` renders the all-sources stats card (items / unique / one-day%).
+`?mode=radar` renders today's biggest gainers (single-day spikes in the last 24h).
 `?mode=velocity` renders the fastest-growing stories card (+/day over multi-day items).
 `?mode=weekday` renders the posting-rhythm card (per-source Mon..Sun counts + peak day).
 `?mode=rhythm` renders the capture-rhythm card (per-source UTC hour counts + peak hour).

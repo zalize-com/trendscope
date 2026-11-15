@@ -78,6 +78,7 @@ const MODES = [
   ["author", "?mode=author"],
   ["sources", "?mode=sources"],
   ["item", "?mode=item&q=Show%20HN"],
+  ["radar", "?mode=radar"],
 ];
 const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
 document.getElementById("out").innerHTML = MODES.map(([name, q]) => {

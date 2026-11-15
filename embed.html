@@ -243,6 +243,18 @@ if (MODE === "new") {
       || `<li id="err">nothing new today</li>`;
   }).catch(() => { document.getElementById("err").textContent = "new data unavailable"; });
 } else
+if (MODE === "radar") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/radar.html";
+  fetch("docs/api/risers.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const today = d.single_day_spikes.filter(x => x.date === d.latest_snapshot);
+    document.getElementById("date").textContent = `breakout today · ${d.latest_snapshot}`;
+    document.getElementById("list").innerHTML = today.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source}</span></span>
+        <span class="score up">+${fmt(e.delta)}</span></li>`).join("")
+      || `<li id="err">no spikes today</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "radar data unavailable"; });
+} else
 if (MODE === "risers") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/risers.html";
   fetch("docs/api/risers.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
