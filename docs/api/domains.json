@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T15:08:53.540116+00:00",
+ "generated_at": "2026-11-15T15:09:10.060411+00:00",
  "latest_snapshot": "2026-11-15",
  "total": 246,
  "domains": [
@@ -110,6 +110,22 @@
     "score": 378,
     "metric": "points",
     "date": "2026-11-11"
+   }
+  },
+  {
+   "hostname": "github.blog",
+   "days_on_board": 2,
+   "items": 11,
+   "sources": [
+    "github_eng",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "GitHub New pull request overview page in public preview",
+    "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+    "score": 196,
+    "metric": "points",
+    "date": "2026-11-07"
    }
   },
   {
@@ -743,21 +759,6 @@
    "top_hit": {
     "title": "Suffering as a Feature",
     "url": "https://blog.codinghorror.com/suffering-as-a-feature/",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "martinfowler.com",
-   "days_on_board": 1,
-   "items": 15,
-   "sources": [
-    "martinfowler"
-   ],
-   "top_hit": {
-    "title": "Bliki: Generated Glossary",
-    "url": "https://martinfowler.com/bliki/GeneratedGlossary.html",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"

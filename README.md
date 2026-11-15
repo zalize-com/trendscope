@@ -70,6 +70,7 @@ A daily cross-source snapshot of developer attention:
 | Kent C. Dodds | React/testing blog | `kentcdodds.com/blog/rss.xml` |
 | Cloudflare Blog | infra/network engineering | `blog.cloudflare.com/rss/` |
 | Netflix Tech Blog | streaming platform engineering | `netflixtechblog.com/feed` |
+| GitHub Engineering | platform engineering | `github.blog/engineering.atom` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
