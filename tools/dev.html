@@ -80,6 +80,7 @@
     <button data-tool="csvprof">CSV profile</button>
     <button data-tool="mcp">MCP config</button>
     <button data-tool="sql">SQL format</button>
+    <button data-tool="b64file">b64→file</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -287,12 +288,25 @@
     <div class="err" id="sql-err"></div>
   </div>
 
+
+  <div class="panel" id="p-b64file">
+    <h2>Base64 / data URI → file</h2>
+    <p class="hint">Paste base64 or a full <code>data:…;base64,</code> URI — reconstructs the file locally and downloads it. Nothing leaves the browser.</p>
+    <textarea id="b64f-in" placeholder="data:image/png;base64,iVBORw0KGgo… or plain base64" style="width:100%;height:140px"></textarea>
+    <div style="display:flex;gap:8px;margin-top:6px;flex-wrap:wrap;align-items:center">
+      <input id="b64f-name" placeholder="filename (optional)" style="padding:7px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg);width:180px">
+      <button id="b64f-dl">download</button>
+    </div>
+    <div class="out" id="b64f-out"></div>
+    <div class="err" id="b64f-err"></div>
+  </div>
+
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts","csvprof","mcp","sql"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts","csvprof","mcp","sql","b64file"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -1109,6 +1123,41 @@ ccommit();
   $("sql-copy").onclick = () => navigator.clipboard?.writeText($("sql-out").textContent)
     .then(()=>{const b=$("sql-copy");b.textContent="✓";setTimeout(()=>b.textContent="copy",1200);});
   $("sql-in").value = "select u.id, u.name, count(o.id) as orders from users u left join orders o on o.user_id = u.id where u.active = 1 and u.created > '2026-01-01' group by u.id, u.name having count(o.id) > 2 order by orders desc limit 20";
+  go();
+})();
+
+/* ---------- base64 -> file ---------- */
+(function () {
+  function parse(src) {
+    src = src.trim();
+    let mime = "application/octet-stream", b64 = src;
+    const m = src.match(/^data:([^;,]+)?(;base64)?,(.*)$/s);
+    if (m) { mime = m[1] || mime; b64 = m[3]; }
+    b64 = b64.replace(/\s+/g, "");
+    if (!b64) throw new Error("empty input");
+    const bin = atob(b64);
+    const bytes = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    return { bytes, mime };
+  }
+  function go() {
+    try {
+      const src = $("b64f-in").value;
+      if (!src.trim()) { $("b64f-out").textContent = ""; $("b64f-err").textContent = ""; return; }
+      const { bytes, mime } = parse(src);
+      $("b64f-out").textContent = `${bytes.length.toLocaleString()} bytes · ${mime}`;
+      $("b64f-err").textContent = "";
+      $("b64f-dl").onclick = () => {
+        const ext = (mime.split("/")[1] || "bin").split(";")[0].replace("jpeg","jpg");
+        const name = $("b64f-name").value.trim() || `file.${ext}`;
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(new Blob([bytes], {type: mime}));
+        a.download = name; a.click(); URL.revokeObjectURL(a.href);
+      };
+    } catch (e) { $("b64f-out").textContent = ""; $("b64f-err").textContent = "✗ " + e.message; }
+  }
+  $("b64f-in").addEventListener("input", go);
+  $("b64f-in").value = "data:text/plain;base64," + btoa("hello trendscope");
   go();
 })();
 
