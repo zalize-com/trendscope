@@ -28,6 +28,9 @@
          border-radius: 4px; padding: 0 5px; margin-left: 6px; }
   .sc { margin-left: auto; white-space: nowrap; font-size: 12px; color: var(--dim); }
   .days { color: var(--green); font-weight: 600; }
+  .db { display:inline-flex; flex-direction:column; align-items:center; gap:2px; }
+  .db i { display:block; width:14px; background:var(--accent,#58a6ff); opacity:.65; border-radius:2px; }
+  .db s { text-decoration:none; font-size:9px; color:var(--dim); }
   .src-chips { margin: 4px 0 10px; }
   .chip { display: inline-block; padding: 1px 9px; margin: 0 5px 5px 0; border: 1px solid var(--border);
           border-radius: 999px; color: var(--dim); font-size: 12px; cursor: pointer; }
@@ -41,6 +44,7 @@
   <h1 id="h1">this <span>week</span></h1>
   <div class="sub" id="wins"><a href="?d=7">7d</a> · <a href="?d=14">14d</a> · <a href="?d=30">30d</a></div>
   <div class="sub" id="sub">loading…</div>
+  <div id="daystrip" style="display:flex;gap:5px;align-items:flex-end;margin:6px 0 2px"></div>
   <div id="out"><p id="err">loading…</p></div>
   <footer>
     Computed in your browser from <a href="data/history.csv">history.csv</a> —
@@ -96,8 +100,13 @@ fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
     e.bestRank = Math.min(e.bestRank, +r.rank || 99);
   }
   const items = Object.values(byUrl);
+  const wdays = [...win];
+  const perDay = wdays.map(d => wk.filter(r => r.date === d).length);
+  const pmax = Math.max(...perDay, 1);
+  document.getElementById("daystrip").innerHTML = wdays.map((d, i) =>
+    `<span class="db" title="${d}: ${perDay[i]} items"><i style="height:${Math.max(2, Math.round(perDay[i] / pmax * 26))}px"></i><s>${d.slice(8)}</s></span>`).join("");
   document.getElementById("sub").textContent =
-    `${[...win][0]} → ${[...win][[...win].length - 1]} · ${items.length} unique items · ${wk.length} rows`;
+    `${wdays[0]} → ${wdays[wdays.length - 1]} · ${items.length} unique items · ${wk.length} rows`;
   const srcCounts = {};
   items.forEach(e => srcCounts[e.source] = (srcCounts[e.source] || 0) + 1);
   const selSrc = new URLSearchParams(location.search).get("s") || "";
