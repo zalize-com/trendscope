@@ -136,6 +136,15 @@ A daily cross-source snapshot of developer attention:
 | Bertrand Meyer | Eiffel creator, SE methodology | `bertrandmeyer.com/feed/` |
 | Bret Victor | dynamic media essays | `worrydream.com/feed.xml` |
 | codemadness | minimal Unix tooling | `codemadness.org/atom.xml` |
+| Jacob Kaplan-Moss | Django co-creator, eng leadership | `jacobian.org/feed.xml` |
+| Karl Voit | Org mode and PIM | `karl-voit.at/feeds/lazyblorg-all.atom_1.0.links-and-content.xml` |
+| Gwern | longform research essays | `gwern.net/index.rss` |
+| Andrew Kelley | Zig creator | `andrewkelley.me/rss.xml` |
+| Joe Duffy | Midori/systems essays | `joeduffyblog.com/feed.xml` |
+| Brave New Geek | distributed systems essays | `bravenewgeek.com/feed/` |
+| Ciechanowski | interactive visual essays | `ciechanow.ski/atom.xml` |
+| mikeash | Friday Q&A systems blog | `mikeash.com/pyblog/rss.py` |
+| fogus | Clojure and PL essays | `blog.fogus.me/feed/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
