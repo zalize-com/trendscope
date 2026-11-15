@@ -39,3 +39,13 @@ the collision-avoidance rules.
    src=...></script>`) in files that load js-yaml/qrcodejs. Anchor on a
    longer unique string (`</script>\n</body>`) or use `rindex`. Audit:
    only tools/utils.html and tools/web.html carry external script tags.
+
+
+### 6. Verify by rendered row count, not by handler existence
+A shipped a CSV export whose `esc` line had a stray backtick — the
+whole inline script died at parse time and index.html rendered a white
+screen with only the static placeholder. The button's handler looked
+fine in review; nothing ran. Acceptance for any page change now means:
+open the page and count rendered rows/items (CDP Runtime.evaluate),
+not "the code is there". A one-line syntax error in a shared script
+block kills every feature on the page silently.
