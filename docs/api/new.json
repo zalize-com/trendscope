@@ -1,17 +1,17 @@
 {
- "generated_at": "2026-11-15T12:35:32.550194+00:00",
+ "generated_at": "2026-11-15T12:36:48.679710+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 296,
- "new_items": 170,
+ "total_items": 298,
+ "new_items": 172,
  "by_source": {
   "producthunt": 45,
   "show_hn": 20,
   "techmeme": 19,
   "hackernews": 17,
+  "slashdot": 17,
   "arstechnica": 16,
-  "slashdot": 16,
   "arxiv": 15,
-  "theverge": 10,
+  "theverge": 11,
   "lobsters": 8,
   "github_trending": 2,
   "ask_hn": 1,
@@ -1035,6 +1035,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "How Will AI Affect Open Source Development?",
+   "url": "https://news.slashdot.org/story/26/11/15/0615219/how-will-ai-affect-open-source-development?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "slashdot",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "50th Anniversary of 'Star Wars' Celebrated with iMax 70mm Re-Release, Special Events, New Movie",
    "url": "https://entertainment.slashdot.org/story/26/11/15/034240/50th-anniversary-of-star-wars-celebrated-with-imax-70mm-re-release-special-events-new-movie?utm_source=rss1.0mainlinkanon&utm_medium=feed",
    "source": "slashdot",
@@ -1373,6 +1381,14 @@
   {
    "title": "FAA lifts nationwide ground stop that blocked takeoffs for hours",
    "url": "https://www.theverge.com/news/1033489/faa-ground-stop",
+   "source": "theverge",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Amazon has a plan to index the world’s online shopping data",
+   "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
    "source": "theverge",
    "rank": 10,
    "score": 1,

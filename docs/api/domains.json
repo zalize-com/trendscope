@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T12:35:32.550194+00:00",
+ "generated_at": "2026-11-15T12:36:48.679710+00:00",
  "latest_snapshot": "2026-11-15",
  "total": 187,
  "domains": [
@@ -83,7 +83,7 @@
   {
    "hostname": "theverge.com",
    "days_on_board": 2,
-   "items": 12,
+   "items": 13,
    "sources": [
     "hackernews",
     "theverge"
@@ -594,6 +594,21 @@
    }
   },
   {
+   "hostname": "news.slashdot.org",
+   "days_on_board": 1,
+   "items": 3,
+   "sources": [
+    "slashdot"
+   ],
+   "top_hit": {
+    "title": "How Will AI Affect Open Source Development?",
+    "url": "https://news.slashdot.org/story/26/11/15/0615219/how-will-ai-affect-open-source-development?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "nvidianews.nvidia.com",
    "days_on_board": 1,
    "items": 2,
@@ -650,21 +665,6 @@
     "title": "Manjaro Linux Moves Toward Independent Community Governance",
     "url": "https://linux.slashdot.org/story/26/11/14/2236207/manjaro-linux-moves-toward-independent-community-governance?utm_source=rss1.0mainlinkanon&utm_medium=feed",
     "score": 11,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "news.slashdot.org",
-   "days_on_board": 1,
-   "items": 2,
-   "sources": [
-    "slashdot"
-   ],
-   "top_hit": {
-    "title": "Australian STEM Videogame Challenge Canceled Due To AI",
-    "url": "https://news.slashdot.org/story/26/11/14/0417206/australian-stem-videogame-challenge-canceled-due-to-ai?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-    "score": 5,
     "metric": "feed rank",
     "date": "2026-11-15"
    }
