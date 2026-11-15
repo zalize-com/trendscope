@@ -127,6 +127,7 @@ taxonomy as `topics.html` — niche blogs can embed just their beat),
 `?mode=risers` renders the all-time biggest single-day score spikes,
 `?mode=item&q=<title>` renders one story's attention trajectory (title + day-by-day sparkline).
 `?mode=discussed` renders the most-discussed items leaderboard (peak 💬 count).
+`?mode=crossovers` renders stories that broke containment — same URL on 2+ sources.
 
 ## Terminal
 
