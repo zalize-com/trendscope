@@ -151,6 +151,10 @@ A daily cross-source snapshot of developer attention:
 | Zack Kanter | startups and strategy | `zackkanter.com/feed/` |
 | Robin Rendle | front-end craft essays | `robinrendle.com/feed.xml` |
 | Terence Tao | math research notes | `terrytao.wordpress.com/feed/` |
+| Peter Norvig | AI classic essays | `norvig.com/rss-feed.xml` |
+| GameDeveloper | game industry news | `gamedeveloper.com/rss.xml` |
+| ThisDaveJ | Node.js and maker tutorials | `thisdavej.com/feed/` |
+| 0x65 | low-level systems research | `0x65.dev/atom.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T16:27:06.278672+00:00",
+  "generated_at": "2026-11-15T16:28:33.937764+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -86,6 +86,18 @@
         "rank": 9
       }
     },
+    "show_hn": {
+      "items": 32,
+      "unique_urls": 32,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Show HN: A custom font based on the Jamaican flag alphabet",
+        "url": "https://bobbiec.github.io/jamaican-font.html",
+        "score": 23,
+        "rank": 1
+      }
+    },
     "devto": {
       "items": 31,
       "unique_urls": 16,
@@ -95,18 +107,6 @@
         "title": "How do you truly stand out in Tech?",
         "url": "https://dev.to/francistrdev/how-do-you-truly-stand-out-in-tech-478a",
         "score": 202,
-        "rank": 1
-      }
-    },
-    "show_hn": {
-      "items": 31,
-      "unique_urls": 31,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Show HN: A custom font based on the Jamaican flag alphabet",
-        "url": "https://bobbiec.github.io/jamaican-font.html",
-        "score": 23,
         "rank": 1
       }
     },
@@ -946,6 +946,54 @@
       "top_item": {
         "title": "The Notebook",
         "url": "https://robinrendle.com/notes/the-notebook/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "norvig": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "xkcd 1970: Name Dominoes",
+        "url": "https://github.com/norvig/pytudes/blob/master/ipynb/xkcd-Name-Dominoes.ipynb",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "gamasutra": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Newly-proposed EU law could place tight restrictions on free-to-play games",
+        "url": "https://www.gamedeveloper.com/business/european-union-proposes-digital-fairness-act-which-could-have-major-effects-on-game-development",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "thisdavej": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Elevating the Developer Experience: My Top 10 VS Code Extensions",
+        "url": "https://thisdavej.com/elevating-the-developer-experience-my-top-10-vs-code-extensions/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "x065": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The People Behind the Tech @ Cliqz",
+        "url": "https://0x65.dev/blog/2020-05-16/the-people-behind-the-tech-cliqz.html",
         "score": 15,
         "rank": 1
       }

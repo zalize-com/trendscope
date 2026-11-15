@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-15T16:27:06.013002+00:00",
+ "generated_at": "2026-11-15T16:28:33.794625+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1807,
- "new_items": 1681,
+ "total_items": 1868,
+ "new_items": 1742,
  "by_source": {
   "producthunt": 45,
-  "show_hn": 32,
+  "show_hn": 33,
   "theregister": 29,
   "hackernews": 28,
   "techmeme": 21,
@@ -39,6 +39,7 @@
   "echojs": 15,
   "elastic": 15,
   "etsy": 15,
+  "gamasutra": 15,
   "geshan": 15,
   "gitlab_blog": 15,
   "grumpyg": 15,
@@ -59,6 +60,7 @@
   "mtlynch": 15,
   "murat": 15,
   "nelhage": 15,
+  "norvig": 15,
   "ntietz": 15,
   "overreacted": 15,
   "philopp": 15,
@@ -74,9 +76,11 @@
   "swizec": 15,
   "tbray": 15,
   "theverge": 15,
+  "thisdavej": 15,
   "troyhunt": 15,
   "vercel": 15,
   "verdagon": 15,
+  "x065": 15,
   "beesbuzz": 14,
   "gwern": 14,
   "fogus": 13,
@@ -4394,6 +4398,126 @@
    "url": "https://www.freecodecamp.org/news/captcha-farm-attack/",
    "source": "freecodecamp",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Newly-proposed EU law could place tight restrictions on free-to-play games",
+   "url": "https://www.gamedeveloper.com/business/european-union-proposes-digital-fairness-act-which-could-have-major-effects-on-game-development",
+   "source": "gamasutra",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Development secrets of Dressmaker, ft. Ruan Rothmann &amp; Sara Laubscher",
+   "url": "https://www.gamedeveloper.com/pc/development-secrets-of-dressmaker-ft-ruan-rothmann-sara-laubscher",
+   "source": "gamasutra",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Witcher 3 devs use AI to help Polish voice actor reprise role of Geralt after stroke",
+   "url": "https://www.gamedeveloper.com/production/polish-voice-actor-for-geralt-returns-for-the-witcher-3-with-ai",
+   "source": "gamasutra",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tripwire Interactive lays off workers after announcing new publishing initiative",
+   "url": "https://www.gamedeveloper.com/business/tripwire-interactive-layoffs-come-after-announcing-new-publishing-initiative",
+   "source": "gamasutra",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GenAI-using developers say they mostly employ it for 'research and brainstorming'",
+   "url": "https://www.gamedeveloper.com/production/genai-using-developers-say-they-mostly-use-it-for-research-and-brainstorming-",
+   "source": "gamasutra",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "One in three developers say they've been laid off within the last two years",
+   "url": "https://www.gamedeveloper.com/business/one-in-three-developers-have-been-laid-off-within-the-last-two-years",
+   "source": "gamasutra",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A second 2026 State of the Game Industry survey? It can happen! ft. Beth Elderkin &amp; Imran Khan",
+   "url": "https://www.gamedeveloper.com/business/a-second-2026-state-of-the-game-industry-survey-it-can-happen-ft-beth-elderkin-imran-khan",
+   "source": "gamasutra",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Layoffs, AI, and next-gen: what 2,600+ game professionals told GDC this year",
+   "url": "https://www.gamedeveloper.com/business/layoffs-ai-and-next-gen-what-2-600-game-professionals-told-gdc-this-year",
+   "source": "gamasutra",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nvidia CEO Jensen Huang resigns after potentially damaging marital affairs",
+   "url": "https://www.gamedeveloper.com/business/nvidia-ceo-jensen-huang-resigns-after-scandal",
+   "source": "gamasutra",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PlayStation 5 crosses 100 million consoles sold",
+   "url": "https://www.gamedeveloper.com/console/playstation-5-ships-100-million-consoles",
+   "source": "gamasutra",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tekken creator says he wishes hardware like the Xbox Series S 'wouldn’t be released'",
+   "url": "https://www.gamedeveloper.com/console/katsuhiro-harada-i-wish-hardware-like-the-xbox-series-s-wouldnt-be-released",
+   "source": "gamasutra",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Legend of Zelda: Ocarina of Time exceeds 5 million copies sold in first week",
+   "url": "https://www.gamedeveloper.com/business/the-legend-of-zelda-ocarina-of-time-exceeds-5-million-copies-solid-in-first-week",
+   "source": "gamasutra",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Report: PlayStation's Fairgames cancelled, no devs to be laid off",
+   "url": "https://www.gamedeveloper.com/console/report-playstation-s-fairgame-cancelled-but-haven-studios-remains",
+   "source": "gamasutra",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Take-Two CEO: Grand Theft Auto VI pre-orders are exceeding expectations",
+   "url": "https://www.gamedeveloper.com/business/take-two-financials-are-steady-while-the-ceo-claims-that-grand-theft-auto-vi-pre-orders-are-exceeding-expectations",
+   "source": "gamasutra",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Report: Star Wars Zero Company developer Bit Reactor lays off an unspecified number of staff",
+   "url": "https://www.gamedeveloper.com/business/report-star-wars-zero-company-developer-bitreactor-lays-off-an-unspecified-number-of-staff",
+   "source": "gamasutra",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -8942,6 +9066,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "xkcd 1970: Name Dominoes",
+   "url": "https://github.com/norvig/pytudes/blob/master/ipynb/xkcd-Name-Dominoes.ipynb",
+   "source": "norvig",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Functional Lifestyles Training",
+   "url": "https://medium.com/@peternorvig/functional-lifestyles-training-47984a3cd2ba",
+   "source": "norvig",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advent of Code 2017",
+   "url": "https://github.com/norvig/pytudes/blob/master/ipynb/Advent%202017.ipynb",
+   "source": "norvig",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advent of Code 2016",
+   "url": "http://nbviewer.ipython.org/url/norvig.com/ipython/Advent%20of%20Code.ipynb",
+   "source": "norvig",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Translating English Sentences into Propositional Logic Statements",
+   "url": "http://nbviewer.ipython.org/url/norvig.com/ipython/PropositionalLogic.ipynb",
+   "source": "norvig",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Even Longer Longest Palindrome",
+   "url": "http://norvig.com/palindrome.html",
+   "source": "norvig",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On the (Small) Number of Atoms in the Universe",
+   "url": "http://norvig.com/atoms.html",
+   "source": "norvig",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Strength in Numbers Theorem",
+   "url": "http://nbviewer.ipython.org/url/norvig.com/ipython/Probability.ipynb#The-Central-Limit-Theorem-/-Strength-in-Numbers-Theorem",
+   "source": "norvig",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WWW: Will Warriors Win?",
+   "url": "http://nbviewer.ipython.org/url/norvig.com/ipython/WWW.ipynb",
+   "source": "norvig",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Go, Dog. Gauguin! The P. D. Eastman Story",
+   "url": "https://medium.com/@peternorvig/go-dog-gauguin-the-p-d-eastman-story-a81dd9704cb4",
+   "source": "norvig",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Countdown to 2016",
+   "url": "http://nbviewer.ipython.org/url/norvig.com/ipython/Countdown.ipynb",
+   "source": "norvig",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refactoring a Crossword Game Program",
+   "url": "http://nbviewer.ipython.org/url/norvig.com/ipython/Scrabble.ipynb",
+   "source": "norvig",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beal's Conjecture Revisited",
+   "url": "http://norvig.com/beal.html",
+   "source": "norvig",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Probability, Paradox, and the Reasonable Person Principle",
+   "url": "http://nbviewer.ipython.org/url/norvig.com/ipython/Probability.ipynb",
+   "source": "norvig",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Let's Code About Bike Locks",
+   "url": "http://nbviewer.ipython.org/url/norvig.com/ipython/Fred%20Buns.ipynb",
+   "source": "norvig",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Where I've been, and the future of this blog",
    "url": "https://ntietz.com/blog/where-ive-been/?utm_source=atom&utm_medium=feed",
    "source": "ntietz",
@@ -10755,6 +10999,14 @@
    "source": "show_hn",
    "rank": 6,
    "score": 3,
+   "metric": "points"
+  },
+  {
+   "title": "Show HN: Steamworks.js, steam integration for web based games",
+   "url": "https://github.com/ceifa/steamworks.js",
+   "source": "show_hn",
+   "rank": 6,
+   "score": 2,
    "metric": "points"
   },
   {
@@ -12902,6 +13154,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Elevating the Developer Experience: My Top 10 VS Code Extensions",
+   "url": "https://thisdavej.com/elevating-the-developer-experience-my-top-10-vs-code-extensions/",
+   "source": "thisdavej",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Copy Table in Excel and Paste as a Markdown Table",
+   "url": "https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/",
+   "source": "thisdavej",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "batteryinfo: A Rust-Powered Python Package for Laptop Battery Monitoring",
+   "url": "https://thisdavej.com/batteryinfo-a-rust-powered-python-package-for-laptop-battery-monitoring/",
+   "source": "thisdavej",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to replicate find -execdir behavior using fd",
+   "url": "https://thisdavej.com/how-to-replicate-find-execdir-behavior-using-fd/",
+   "source": "thisdavej",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Freeing Up Gigabytes: Reclaiming Disk Space from Rust Cargo Builds",
+   "url": "https://thisdavej.com/freeing-up-gigabytes-reclaiming-disk-space-from-rust-cargo-builds/",
+   "source": "thisdavej",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Packaging Python Command-Line Apps the Modern Way with uv",
+   "url": "https://thisdavej.com/packaging-python-command-line-apps-the-modern-way-with-uv/",
+   "source": "thisdavej",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HTML Bullet Point Maker - Convert Text to ul Lists",
+   "url": "https://thisdavej.com/html-bullet-point-maker-convert-text-to-ul-lists/",
+   "source": "thisdavej",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Share Python Scripts Like a Pro: uv and PEP 723 for Easy Deployment",
+   "url": "https://thisdavej.com/share-python-scripts-like-a-pro-uv-and-pep-723-for-easy-deployment/",
+   "source": "thisdavej",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beginner’s Guide to Installing Node.js on a Raspberry Pi",
+   "url": "https://thisdavej.com/beginners-guide-to-installing-node-js-on-a-raspberry-pi/",
+   "source": "thisdavej",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using jq and curl to Wrangle JSON Arrays from the Terminal",
+   "url": "https://thisdavej.com/using-jq-and-curl-to-wrangle-json-arrays-from-the-terminal/",
+   "source": "thisdavej",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Consuming Web API JSON Data Using curl and jq",
+   "url": "https://thisdavej.com/consuming-web-api-json-data-using-curl-and-jq/",
+   "source": "thisdavej",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Scraping with Google Sheets: The Definitive Guide",
+   "url": "https://thisdavej.com/web-scraping-with-google-sheets-the-definitive-guide/",
+   "source": "thisdavej",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Three Ways to Build Dynamic Web APIs using PHP",
+   "url": "https://thisdavej.com/three-ways-to-build-dynamic-web-apis-using-php/",
+   "source": "thisdavej",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fetching, Filtering, and Sorting JSON APIs in Google Sheets: The Missing Functions",
+   "url": "https://thisdavej.com/fetching-filtering-and-sorting-json-apis-in-google-sheets-the-missing-functions/",
+   "source": "thisdavej",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Add Emoji to your Node Projects with node-emoji ✨",
+   "url": "https://thisdavej.com/add-emoji-to-your-node-projects-with-node-emoji/",
+   "source": "thisdavej",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "This Week in Rust 677",
    "url": "https://this-week-in-rust.org/blog/2026/11/11/this-week-in-rust-677/",
    "source": "thisweek",
@@ -13418,6 +13790,126 @@
    "url": "https://wingolog.org/archives/2026/02/18/two-mechanisms-for-dynamic-type-checks",
    "source": "wingolog",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The People Behind the Tech @ Cliqz",
+   "url": "https://0x65.dev/blog/2020-05-16/the-people-behind-the-tech-cliqz.html",
+   "source": "x065",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CVE-2019-17004—Semi Universal XSS affecting Firefox for iOS",
+   "url": "https://0x65.dev/blog/2020-03-30/cve-2019-17004-semi-universal-xss-affecting-firefox-for-ios.html",
+   "source": "x065",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Data vs. Privacy in the time of COVID-19",
+   "url": "https://0x65.dev/blog/2020-03-25/data-vs-privacy-in-the-time-of-covid-19.html",
+   "source": "x065",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Implementing the Dat protocol in Cliqz",
+   "url": "https://0x65.dev/blog/2020-03-02/implementing-the-dat-protocol-in-cliqz.html",
+   "source": "x065",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lessons learned - 22 days and half a million readers later",
+   "url": "https://0x65.dev/blog/2019-12-23/lessons-learned-22-days-and-half-a-million-readers-later.html",
+   "source": "x065",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google—Competition is just one click and 27 billion US dollars away",
+   "url": "https://0x65.dev/blog/2019-12-22/google-competition-is-just-one-click-and-27-billion-us-dollars-away.html",
+   "source": "x065",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Anti-phishing with privacy in mind",
+   "url": "https://0x65.dev/blog/2019-12-21/anti-phishing-with-privacy-in-mind.html",
+   "source": "x065",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Not all adblockers are born equal",
+   "url": "https://0x65.dev/blog/2019-12-20/not-all-adblockers-are-born-equal.html",
+   "source": "x065",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Blocking tracking without blocking trackers",
+   "url": "https://0x65.dev/blog/2019-12-19/blocking-tracking-without-blocking-trackers.html",
+   "source": "x065",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The four missing megabytes of Firefox",
+   "url": "https://0x65.dev/blog/2019-12-18/the-four-missing-megabytes-of-firefox.html",
+   "source": "x065",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why we forked Firefox and not Chromium",
+   "url": "https://0x65.dev/blog/2019-12-17/why-we-forked-firefox-and-not-chromium.html",
+   "source": "x065",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your news is not our business",
+   "url": "https://0x65.dev/blog/2019-12-16/your-news-is-not-our-business.html",
+   "source": "x065",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hydra—Kubernetes based Dataset PubSub and Volume Management System",
+   "url": "https://0x65.dev/blog/2019-12-15/hydra-kubernetes-based-dataset-pubsub-and-volume-management-system.html",
+   "source": "x065",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Architecture of a Large-Scale Web Search Engine, circa 2019",
+   "url": "https://0x65.dev/blog/2019-12-14/the-architecture-of-a-large-scale-web-search-engine-circa-2019.html",
+   "source": "x065",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Client-side context search",
+   "url": "https://0x65.dev/blog/2019-12-13/client-side-context-search.html",
+   "source": "x065",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },

@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T16:27:06.013002+00:00",
+ "generated_at": "2026-11-15T16:28:33.794625+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 338,
+ "total": 343,
  "domains": [
   {
    "hostname": "reuters.com",
@@ -743,6 +743,23 @@
    }
   },
   {
+   "hostname": "medium.com",
+   "days_on_board": 1,
+   "items": 22,
+   "sources": [
+    "airbnb",
+    "norvig",
+    "pinterest"
+   ],
+   "top_hit": {
+    "title": "Functional Lifestyles Training",
+    "url": "https://medium.com/@peternorvig/functional-lifestyles-training-47984a3cd2ba",
+    "score": 14,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "techmeme.com",
    "days_on_board": 1,
    "items": 21,
@@ -753,22 +770,6 @@
     "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A (Tamara Djurickovic/Tech.eu)",
     "url": "https://www.techmeme.com/261115/p3#a261115p3",
     "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "medium.com",
-   "days_on_board": 1,
-   "items": 20,
-   "sources": [
-    "airbnb",
-    "pinterest"
-   ],
-   "top_hit": {
-    "title": "How Pinterest Improved Analytics Agent Compliance with Loop Engineering",
-    "url": "https://medium.com/pinterest-engineering/how-pinterest-improved-analytics-agent-compliance-with-loop-engineering-d3c52d0abaa2?source=rss-ef81ef829bcb------2",
-    "score": 10,
     "metric": "feed rank",
     "date": "2026-11-15"
    }
