@@ -1,13 +1,13 @@
 {
  "a": "2026-11-14",
  "b": "2026-11-15",
- "generated": "2026-11-15 07:43 UTC",
+ "generated": "2026-11-15 07:54 UTC",
  "entered": [
   {
    "title": "SpaceX catches the Starship to end Flight 15",
    "url": "https://www.spacex.com/launches/starship-flight-15",
    "source": "hackernews",
-   "score": 1086,
+   "score": 1101,
    "metric": "points",
    "rank": 1
   },
@@ -15,7 +15,7 @@
    "title": "Eynnzerr/TelemetryCleaner",
    "url": "https://github.com/Eynnzerr/TelemetryCleaner",
    "source": "github_trending",
-   "score": 730,
+   "score": 736,
    "metric": "stars",
    "rank": 15
   },
@@ -23,7 +23,7 @@
    "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
    "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
    "source": "hackernews",
-   "score": 196,
+   "score": 200,
    "metric": "points",
    "rank": 10
   },
@@ -31,9 +31,9 @@
    "title": "How did Woz write the Apple 1 BASIC before building the computer?",
    "url": "https://retrocomputing.stackexchange.com/questions/17957",
    "source": "hackernews",
-   "score": 188,
+   "score": 192,
    "metric": "points",
-   "rank": 12
+   "rank": 11
   },
   {
    "title": "U.S. October PPI Rises 6.5% YoY, Highest in Nearly Four Years",
@@ -44,28 +44,28 @@
    "rank": 1
   },
   {
-   "title": "'Grey Rocking': The Life-Improving Power of Being Really, Really Boring (2021)",
-   "url": "https://www.esquire.com/uk/life/a38473153/grey-rock-technique-being-boring/",
-   "source": "hackernews",
-   "score": 138,
-   "metric": "points",
-   "rank": 14
-  },
-  {
    "title": "Seagate's new hybrid drive raises some old questions",
    "url": "https://arstechnica.com/gadgets/2026/11/seagate-resurrects-the-ssd-hdd-hybrid-drive/",
    "source": "hackernews",
    "score": 93,
    "metric": "points",
-   "rank": 15
+   "rank": 13
   },
   {
    "title": "Memory Safety Bugs in Rust Standard Library",
    "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
    "source": "hackernews",
-   "score": 78,
+   "score": 81,
    "metric": "points",
-   "rank": 16
+   "rank": 14
+  },
+  {
+   "title": "Court denies motion to dismiss DRAM price fixing case",
+   "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+   "source": "hackernews",
+   "score": 76,
+   "metric": "points",
+   "rank": 15
   },
   {
    "title": "Testing a trash can Faraday cage",
@@ -73,31 +73,23 @@
    "source": "hackernews",
    "score": 75,
    "metric": "points",
-   "rank": 17
-  },
-  {
-   "title": "Court denies motion to dismiss DRAM price fixing case",
-   "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
-   "source": "hackernews",
-   "score": 70,
-   "metric": "points",
-   "rank": 18
+   "rank": 16
   },
   {
    "title": "The Sicilian Citrus Family Tree",
    "url": "https://www.notesfromtheroad.com/europa/citrus-family-tree.html",
    "source": "hackernews",
-   "score": 65,
+   "score": 69,
    "metric": "points",
-   "rank": 19
+   "rank": 17
   },
   {
    "title": "500 Lines or Less A 3D Modeller",
    "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
    "source": "hackernews",
-   "score": 44,
+   "score": 45,
    "metric": "points",
-   "rank": 20
+   "rank": 18
   },
   {
    "title": "Tell HN: Google Search to start locking down search behind a login wall",
@@ -106,6 +98,14 @@
    "score": 44,
    "metric": "points",
    "rank": 3
+  },
+  {
+   "title": "Oxford Molecular Motors",
+   "url": "https://www.physics.ox.ac.uk/research/group/oxford-molecular-motors/research/bacterial-flagellar-motor",
+   "source": "hackernews",
+   "score": 43,
+   "metric": "points",
+   "rank": 19
   },
   {
    "title": "Ask HN: What is the state of self-hosting email in 2026?",
@@ -119,9 +119,17 @@
    "title": "Show HN: Gawain \u2013 Require type hints on all Python variables",
    "url": "https://github.com/matheuzgomes/gawain",
    "source": "show_hn",
-   "score": 34,
+   "score": 36,
    "metric": "points",
    "rank": 1
+  },
+  {
+   "title": "Show HN: A custom font based on the Jamaican flag alphabet",
+   "url": "https://bobbiec.github.io/jamaican-font.html",
+   "source": "show_hn",
+   "score": 30,
+   "metric": "points",
+   "rank": 2
   },
   {
    "title": "Ask HN: Can anyone name anything new that AI has done?",
@@ -132,32 +140,24 @@
    "rank": 5
   },
   {
-   "title": "Show HN: A custom font based on the Jamaican flag alphabet",
-   "url": "https://bobbiec.github.io/jamaican-font.html",
-   "source": "show_hn",
-   "score": 29,
-   "metric": "points",
-   "rank": 2
-  },
-  {
    "title": "Show HN: Turbo-Browser-MCP \u2013 Batch forms, DOM deltas and submit guards for MCP",
    "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
    "source": "show_hn",
-   "score": 26,
+   "score": 29,
    "metric": "points",
    "rank": 3
   },
   {
-   "title": "CodeMesh",
-   "url": "https://www.producthunt.com/products/codemesh-2",
+   "title": "Default Tamer",
+   "url": "https://www.producthunt.com/products/default-tamer",
    "source": "producthunt",
    "score": 20,
    "metric": "feed rank",
    "rank": 1
   },
   {
-   "title": "Drops",
-   "url": "https://www.producthunt.com/products/drops-4",
+   "title": "Kokonut UI",
+   "url": "https://www.producthunt.com/products/kokonutui",
    "source": "producthunt",
    "score": 19,
    "metric": "feed rank",
@@ -196,6 +196,14 @@
    "score": 241,
    "metric": "points",
    "rank": 6
+  },
+  {
+   "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
+   "url": "https://gitlab.com/snipedbywifi/terminactory",
+   "source": "hackernews",
+   "score": 110,
+   "metric": "points",
+   "rank": 10
   },
   {
    "title": "Formalizing US Tax Code (Using Lean)",
@@ -315,19 +323,19 @@
    "title": "Lovable apps expose passport details and more than 200K private messages",
    "url": "https://www.crissyfield.de/research/lovable-en/",
    "source": "hackernews",
-   "score": 767,
+   "score": 770,
    "metric": "points",
    "rank": 2,
-   "delta": 416
+   "delta": 419
   },
   {
    "title": "deepseek-ai/chat-demo",
    "url": "https://github.com/deepseek-ai/chat-demo",
    "source": "github_trending",
-   "score": 1913,
+   "score": 1918,
    "metric": "stars",
    "rank": 3,
-   "delta": 211
+   "delta": 216
   },
   {
    "title": "A family tree of software job titles",
@@ -351,55 +359,64 @@
    "title": "KDE: The documentary [video]",
    "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
    "source": "hackernews",
-   "score": 442,
+   "score": 445,
    "metric": "points",
    "rank": 4,
-   "delta": 163
+   "delta": 166
   },
   {
    "title": "adriadam10/mkw-recomp",
    "url": "https://github.com/adriadam10/mkw-recomp",
    "source": "github_trending",
-   "score": 997,
+   "score": 1003,
    "metric": "stars",
    "rank": 10,
-   "delta": 137
+   "delta": 143
   },
   {
    "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
    "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
    "source": "hackernews",
-   "score": 221,
+   "score": 224,
    "metric": "points",
    "rank": 8,
-   "delta": 132
+   "delta": 135
   },
   {
    "title": "apex-compute/ANR",
    "url": "https://github.com/apex-compute/ANR",
    "source": "github_trending",
-   "score": 1895,
+   "score": 1897,
    "metric": "stars",
    "rank": 4,
-   "delta": 111
+   "delta": 113
   },
   {
    "title": "Why get an expensive Pi when I have an old phone?",
    "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
    "source": "hackernews",
-   "score": 546,
+   "score": 548,
    "metric": "points",
    "rank": 3,
-   "delta": 107
+   "delta": 109
   },
   {
    "title": "huamidev/GestaltX",
    "url": "https://github.com/huamidev/GestaltX",
    "source": "github_trending",
-   "score": 7636,
+   "score": 7640,
    "metric": "stars",
    "rank": 1,
-   "delta": 90
+   "delta": 94
+  },
+  {
+   "title": "FrigadeHQ/yogurt",
+   "url": "https://github.com/FrigadeHQ/yogurt",
+   "source": "github_trending",
+   "score": 1529,
+   "metric": "stars",
+   "rank": 5,
+   "delta": 81
   },
   {
    "title": "PyPI's redesigned project pages with clearer security signals are now live",
@@ -411,49 +428,31 @@
    "delta": 80
   },
   {
-   "title": "FrigadeHQ/yogurt",
-   "url": "https://github.com/FrigadeHQ/yogurt",
-   "source": "github_trending",
-   "score": 1528,
-   "metric": "stars",
-   "rank": 5,
-   "delta": 80
-  },
-  {
    "title": "Advancing science and engineering with Antigravity's /teamwork",
    "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
    "source": "hackernews",
    "score": 192,
    "metric": "points",
-   "rank": 11,
+   "rank": 12,
    "delta": 76
   },
   {
    "title": "Generative AI uses more energy on non-English text",
    "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
    "source": "hackernews",
-   "score": 201,
+   "score": 202,
    "metric": "points",
    "rank": 9,
-   "delta": 62
+   "delta": 63
   },
   {
    "title": "JDhruv14/line-art-animation",
    "url": "https://github.com/JDhruv14/line-art-animation",
    "source": "github_trending",
-   "score": 788,
+   "score": 789,
    "metric": "stars",
    "rank": 14,
-   "delta": 46
-  },
-  {
-   "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
-   "url": "https://gitlab.com/snipedbywifi/terminactory",
-   "source": "hackernews",
-   "score": 155,
-   "metric": "points",
-   "rank": 13,
-   "delta": 45
+   "delta": 47
   },
   {
    "title": "HolyArrs/HolyArrs",
@@ -465,6 +464,15 @@
    "delta": 37
   },
   {
+   "title": "Kianuni/Erosion-CN",
+   "url": "https://github.com/Kianuni/Erosion-CN",
+   "source": "github_trending",
+   "score": 2087,
+   "metric": "stars",
+   "rank": 2,
+   "delta": 35
+  },
+  {
    "title": "agentes-chat/agentes-chat",
    "url": "https://github.com/agentes-chat/agentes-chat",
    "source": "github_trending",
@@ -474,22 +482,22 @@
    "delta": 35
   },
   {
-   "title": "Kianuni/Erosion-CN",
-   "url": "https://github.com/Kianuni/Erosion-CN",
-   "source": "github_trending",
-   "score": 2085,
-   "metric": "stars",
-   "rank": 2,
-   "delta": 33
-  },
-  {
    "title": "serveroshq/panel",
    "url": "https://github.com/serveroshq/panel",
    "source": "github_trending",
-   "score": 818,
+   "score": 820,
    "metric": "stars",
    "rank": 13,
-   "delta": 33
+   "delta": 35
+  },
+  {
+   "title": "alexeyw/lot-map",
+   "url": "https://github.com/alexeyw/lot-map",
+   "source": "github_trending",
+   "score": 843,
+   "metric": "stars",
+   "rank": 12,
+   "delta": 27
   }
  ],
  "droppers": [
