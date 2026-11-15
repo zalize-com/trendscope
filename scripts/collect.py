@@ -366,17 +366,30 @@ def main():
     now = datetime.now(timezone.utc)
     today = now.strftime("%Y-%m-%d")
 
-    sections = {
-        "hackernews": fetch_hackernews(),
-        "show_hn": fetch_show_hn(),
-        "ask_hn": fetch_ask_hn(),
-        "lobsters": fetch_lobsters(),
-        "devto": fetch_devto(),
-        "github_trending": fetch_github_trending(),
-        "npm": fetch_npm_downloads(),
-        "pypi": fetch_pypi_downloads(),
-        "crates": fetch_crates(),
+    fetchers = {
+        "hackernews": fetch_hackernews,
+        "show_hn": fetch_show_hn,
+        "ask_hn": fetch_ask_hn,
+        "lobsters": fetch_lobsters,
+        "devto": fetch_devto,
+        "github_trending": fetch_github_trending,
+        "npm": fetch_npm_downloads,
+        "pypi": fetch_pypi_downloads,
+        "crates": fetch_crates,
     }
+    sections, health = {}, {}
+    for name, fn in fetchers.items():
+        t0 = time.time()
+        try:
+            items = fn()
+        except Exception as e:
+            items = []
+            print(f"  {name}: FAILED {e}")
+        sections[name] = items
+        health[name] = {"ok": bool(items), "items": len(items),
+                        "ms": int((time.time() - t0) * 1000)}
+    with open(os.path.join(DATA_DIR, "health.json"), "w") as f:
+        json.dump({"generated_at": now.isoformat(), "sources": health}, f, indent=2)
 
     all_items = []
     for items in sections.values():
