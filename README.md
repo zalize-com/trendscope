@@ -186,6 +186,8 @@ A daily cross-source snapshot of developer attention:
 | Alex Chan | digital preservation and code | `alexwlchan.net/atom.xml` |
 | Kelly Sutton | software engineering essays | `kellysutton.com/feed.xml` |
 | Steve Krouse | Val Town founder | `stevekrouse.com/rss.xml` |
+| Phil Calçado | engineering leadership | `philcalcado.com/feed.xml` |
+| Mary Rose Cook | code walkthroughs and experiments | `maryrosecook.com/feed.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
