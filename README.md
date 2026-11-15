@@ -72,6 +72,7 @@ A daily cross-source snapshot of developer attention:
 | Netflix Tech Blog | streaming platform engineering | `netflixtechblog.com/feed` |
 | GitHub Engineering | platform engineering | `github.blog/engineering.atom` |
 | Slack Engineering | messaging platform engineering | `slack.engineering/feed/` |
+| AWS News Blog | cloud announcements | `aws.amazon.com/blogs/aws/feed/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

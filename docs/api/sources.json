@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T15:10:29.929059+00:00",
+  "generated_at": "2026-11-15T15:12:51.182469+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -111,8 +111,8 @@
       }
     },
     "show_hn": {
-      "items": 22,
-      "unique_urls": 22,
+      "items": 23,
+      "unique_urls": 23,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -146,6 +146,18 @@
         "rank": 1
       }
     },
+    "thenewstack": {
+      "items": 17,
+      "unique_urls": 17,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "AWS Emulator proves agents need a verification loop. Realism is the hard part.",
+        "url": "https://thenewstack.io/aws-emulator-verification-loops/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "lemmy": {
       "items": 16,
       "unique_urls": 14,
@@ -166,18 +178,6 @@
       "top_item": {
         "title": "With Starship catch, SpaceX still shows it can dazzle the world",
         "url": "https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "thenewstack": {
-      "items": 16,
-      "unique_urls": 16,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "AWS Emulator proves agents need a verification loop. Realism is the hard part.",
-        "url": "https://thenewstack.io/aws-emulator-verification-loops/",
         "score": 15,
         "rank": 1
       }
@@ -430,6 +430,18 @@
       "top_item": {
         "title": "You Own the Outcome: Product Engineering in the Age of AI",
         "url": "https://kentcdodds.com/blog/you-own-the-outcome",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "aws_blog": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Test your applications against AWS locally with AWS Emulator",
+        "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/",
         "score": 15,
         "rank": 1
       }
