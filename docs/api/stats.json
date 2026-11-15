@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T13:37:53.704123+00:00",
+ "generated_at": "2026-11-15T13:41:20.239525+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 763,
- "unique_urls": 626,
- "items_in_latest": 372,
- "items_per_day_avg": 84.8,
+ "total_rows": 773,
+ "unique_urls": 636,
+ "items_in_latest": 382,
+ "items_per_day_avg": 85.9,
  "sources": {
   "arstechnica": {
    "rows": 16,
@@ -76,6 +76,10 @@
   "npm": {
    "rows": 48,
    "days_active": 2
+  },
+  "opensourcecom": {
+   "rows": 10,
+   "days_active": 1
   },
   "producthunt": {
    "rows": 45,
