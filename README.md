@@ -93,7 +93,8 @@ compare within a source, not across.
 
 Params: `?n=` rows (5–30), `?s=github_trending` single source,
 `?q=llm` title/tag keyword filter, `?t=AI/LLM` topic filter (same
-taxonomy as `topics.html` — niche blogs can embed just their beat).
+taxonomy as `topics.html` — niche blogs can embed just their beat),
+`?mode=hiring` renders the hiring-pulse card instead of the board.
 
 ## Terminal
 
