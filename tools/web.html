@@ -71,6 +71,7 @@
     <button data-tool="aibots">AI bots</button>
     <button data-tool="spage">status page</button>
     <button data-tool="feed">feed finder</button>
+    <button data-tool="badge">badge builder</button>
   </div>
 
   <div class="panel" id="p-qr">
@@ -210,6 +211,24 @@
     <div id="fd-out" style="margin-top:10px"></div>
   </div>
 
+  <div class="panel" id="p-badge">
+    <h2>shields.io badge builder</h2>
+    <p class="hint">Make a <a href="https://shields.io" target="_blank" rel="noopener">shields</a> badge without reading the URL format — label, color, icon, style; get markdown + HTML to paste into a README.</p>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <input id="bd-label" value="status" placeholder="label" style="flex:1;min-width:100px;padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)">
+      <input id="bd-msg" value="live" placeholder="message" style="flex:1;min-width:100px;padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)">
+      <input id="bd-color" value="brightgreen" placeholder="color / hex" style="flex:1;min-width:90px;padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)">
+      <select id="bd-style" style="padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)">
+        <option value="flat">flat</option><option value="flat-square">flat-square</option><option value="for-the-badge">for-the-badge</option><option value="social">social</option><option value="plastic">plastic</option>
+      </select>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px">
+      <input id="bd-logo" placeholder="icon, e.g. github (optional — simple-icons slug)" style="flex:1;min-width:160px;padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)">
+      <input id="bd-link" placeholder="link URL (optional — click target)" style="flex:2;min-width:200px;padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)">
+    </div>
+    <div id="bd-out" style="margin-top:10px"></div>
+  </div>
+
 <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
@@ -217,7 +236,7 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots","spage","feed"];
+const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots","spage","feed","badge"];
 
 // ---- status-page checker ----
 function spreset(u){ const i=document.getElementById("sp-in"); if(i){ i.value=u; i.dispatchEvent(new Event("input")); } return false; }
@@ -687,6 +706,35 @@ aibots();
   $("fd-base").value = "https://simonwillison.net";
   $("fd-in").value = '<head><link rel="alternate" type="application/atom+xml" title="Simon Willison" href="/atom/everything/"><link rel="alternate" type="application/rss+xml" href="/rss/"></head>';
   run();
+})();
+
+/* ---------- shields badge builder ---------- */
+(function(){
+  const ids = ["bd-label","bd-msg","bd-color","bd-style","bd-logo","bd-link"];
+  const o = $("bd-out"); if(!o || !$(ids[0])) return;
+  const escSeg = t => encodeURIComponent(t.trim().replace(/-/g,"--").replace(/_/g,"__").replace(/\s/g,"_"));
+  const row = (k, txt) => `<div style="display:flex;gap:8px;align-items:baseline;margin:4px 0">
+    <span style="color:var(--dim);font-size:12px;width:78px;flex-shrink:0">${k}</span>
+    <code style="flex:1;font-size:12px;word-break:break-all;background:var(--bg);padding:4px 6px;border-radius:6px;border:1px solid var(--border)">${txt.replace(/</g,"&lt;")}</code>
+    <button class="bd-cp" data-t="${txt.replace(/"/g,"&quot;")}" style="padding:2px 8px;border-radius:6px;border:1px solid var(--border);background:var(--bg);color:var(--fg);cursor:pointer;font-size:11px">copy</button></div>`;
+  function go(){
+    const label = $("bd-label").value, msg = $("bd-msg").value;
+    if(!label.trim() && !msg.trim()){ o.innerHTML=""; return; }
+    const color = ($("bd-color").value||"brightgreen").trim().replace(/^#/,"");
+    const style = $("bd-style").value, logo = $("bd-logo").value.trim(), link = $("bd-link").value.trim();
+    let url = `https://img.shields.io/badge/${escSeg(label)||"-"}-${escSeg(msg)||"-"}-${escSeg(color)}?style=${style}`;
+    if(logo) url += `&logo=${encodeURIComponent(logo)}&logoColor=white`;
+    const alt = (label.trim()+" "+msg.trim()).trim() || "badge";
+    const md = link ? `[![${alt}](${url})](${link})` : `![${alt}](${url})`;
+    const html = link ? `<a href="${link}"><img src="${url}" alt="${alt}"></a>` : `<img src="${url}" alt="${alt}">`;
+    o.innerHTML = `<div style="padding:10px 0"><img src="${url}" alt="${alt}"></div>` +
+      row("url", url) + row("markdown", md) + row("html", html);
+    o.querySelectorAll(".bd-cp").forEach(b => b.onclick = () => {
+      navigator.clipboard?.writeText(b.dataset.t).then(() => { b.textContent="✓"; setTimeout(()=>b.textContent="copy",1200); });
+    });
+  }
+  ids.forEach(id => { const el=$(id); el.oninput = go; el.onchange = go; });
+  go();
 })();
 </script>
 </body>
