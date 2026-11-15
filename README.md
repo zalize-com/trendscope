@@ -149,6 +149,8 @@ A daily cross-source snapshot of developer attention:
 | jwz | Netscape co-founder commentary | `jwz.org/blog/feed/` |
 | Steve Blank | startup methodology | `steveblank.com/feed/` |
 | Zack Kanter | startups and strategy | `zackkanter.com/feed/` |
+| Robin Rendle | front-end craft essays | `robinrendle.com/feed.xml` |
+| Terence Tao | math research notes | `terrytao.wordpress.com/feed/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
