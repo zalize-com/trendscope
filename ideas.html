@@ -41,6 +41,10 @@
   footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
   #err { color: var(--dim); }
   .note { color: var(--dim); font-size: 12px; margin-top: 8px; }
+  .strip { display:flex; gap:5px; align-items:flex-end; margin:4px 0 0; }
+  .db { display:inline-flex; flex-direction:column; align-items:center; gap:2px; }
+  .db i { display:block; width:14px; background:var(--accent,#58a6ff); opacity:.65; border-radius:2px; }
+  .db s { text-decoration:none; font-size:9px; color:var(--dim); }
 </style>
 </head>
 <body>
@@ -123,6 +127,13 @@ const recs = Object.entries(items).map(([url, it]) => ({ url, ...it, nDays: it.d
 const allDates = [...new Set(rows.slice(1).filter(r => r[ci.source]==="ask_hn").map(r => r[ci.date]))].sort();
 const latest = allDates[allDates.length-1];
 
+// demand volume: ask_hn threads per day
+const perDay = {};
+for (const it of Object.values(items)) for (const d of it.days) perDay[d] = (perDay[d]||0) + 1;
+const pdays = allDates.slice(-14);
+const pmax = Math.max(...pdays.map(d => perDay[d]||0), 1);
+const strip = pdays.map(d => `<span class="db" title="${d}: ${perDay[d]||0} threads"><i style="height:${Math.max(2, Math.round((perDay[d]||0)/pmax*26))}px"></i><s>${d.slice(8)}</s></span>`).join("");
+
 // everything ELSE on our radar — used to mark themes as "already built" or "gap"
 const others = [];
 for (const r of rows.slice(1)) {
@@ -175,6 +186,7 @@ const row = (r, badge = "") =>
    <span class="sc">${badge} <span class="pts">${r.maxScore ?? r.score} pts</span>${r.nDays > 1 ? ` <span class="days">· ${r.nDays}d on board</span>` : ""}</span></li>`;
 
 $("out").innerHTML =
+  `<h2>demand volume — threads per day</h2><p id="vol" class="strip">${strip}</p>` +
   `<h2>today's ask board (${snap.date})</h2><ol>` +
     today.map(i => row({...i, maxScore: i.score, nDays: (items[i.url]?.nDays)||1}, "")).join("") + `</ol>` +
   `<h2>recurring demand themes</h2>` +
