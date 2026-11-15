@@ -61,6 +61,7 @@ A daily cross-source snapshot of developer attention:
 | Julia Evans | zines/dev teaching blog | `jvns.ca/atom.xml` |
 | Andy Wingo | compilers/GC deep dives | `wingolog.org/feed/atom` |
 | Phil Oppermann | Writing an OS in Rust | `os.phil-opp.com/rss.xml` |
+| Fabien Sanglard | game-engine deep dives | `fabiensanglard.net/rss.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
