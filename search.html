@@ -95,6 +95,11 @@ const files = await Promise.all([
        r => ({ title: r[3], url: r[4], pts: +r[5] || 0, when: r[0], author: r[8], src: r[1] })),
 ]);
 CORPS = files.flat();
+// corpus counts on chips
+document.querySelectorAll("button[data-c]").forEach(b => {
+  const n = b.dataset.c === "all" ? CORPS.length : files[["canon","showhn","askhn","recent"].indexOf(b.dataset.c)]?.length || 0;
+  b.innerHTML += ` <small style="opacity:.6">${n.toLocaleString()}</small>`;
+});
 
 const qEl = $("q");
 qEl.value = QP.get("q") || "";
