@@ -84,6 +84,7 @@
     <button data-tool="ascii">ASCII</button>
     <button data-tool="gostruct">JSON → Go</button>
     <button data-tool="jwtsign">JWT sign</button>
+    <button data-tool="jsonsql">JSON → SQL</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -336,12 +337,26 @@
     <div class="err" id="jwt-e"></div>
   </div>
 
+
+  <div class="panel" id="p-jsonsql">
+    <h2>JSON → SQL</h2>
+    <p class="hint">Paste a JSON array of objects — infers a <code>CREATE TABLE</code> (portable types) plus <code>INSERT</code> rows.</p>
+    <div style="display:flex;gap:8px;align-items:center;margin-bottom:6px">
+      <input id="jsq-table" placeholder="table name (default: items)" style="padding:7px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg);width:200px">
+      <label class="muted" style="font-size:12px"><input type="checkbox" id="jsq-ins" checked> include INSERTs</label>
+    </div>
+    <textarea id="jsq-in" placeholder='[{"id":1,"name":"ada","active":true,"score":9.5},{"id":2,"name":"bob","active":false,"score":8.1}]' style="width:100%;height:130px"></textarea>
+    <div class="out" id="jsq-out" style="white-space:pre;overflow-x:auto"></div>
+    <button class="copy" id="jsq-copy">copy sql</button>
+    <div class="err" id="jsq-err"></div>
+  </div>
+
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts","csvprof","mcp","sql","b64file","ascii","gostruct","jwtsign"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts","csvprof","mcp","sql","b64file","ascii","gostruct","jwtsign","jsonsql"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -1306,6 +1321,56 @@ ccommit();
   $("jwt-h").value = '{"alg":"HS256","typ":"JWT"}';
   $("jwt-p").value = '{"sub":"demo","iat":' + Math.floor(Date.now()/1000) + ',"exp":' + (Math.floor(Date.now()/1000)+3600) + '}';
   $("jwt-s").value = "demo-secret";
+  go();
+})();
+
+/* ---------- json -> sql ---------- */
+(function () {
+  function colType(vals) {
+    const nn = vals.filter(v => v !== null && v !== undefined);
+    if (!nn.length) return "TEXT";
+    const t = new Set(nn.map(v => Array.isArray(v) ? "arr" : typeof v));
+    if (t.size !== 1) return "TEXT";
+    const k = [...t][0];
+    if (k === "boolean") return "BOOLEAN";
+    if (k === "number") return nn.every(v => Number.isInteger(v)) ? "INTEGER" : "REAL";
+    if (k === "object" || k === "arr") return "TEXT"; // serialized JSON
+    return "TEXT";
+  }
+  function lit(v) {
+    if (v === null || v === undefined) return "NULL";
+    if (typeof v === "number") return String(v);
+    if (typeof v === "boolean") return v ? "TRUE" : "FALSE";
+    const s = typeof v === "object" ? JSON.stringify(v) : String(v);
+    return "'" + s.replace(/'/g, "''") + "'";
+  }
+  function go() {
+    try {
+      const raw = $("jsq-in").value.trim();
+      if (!raw) { $("jsq-out").textContent = ""; $("jsq-err").textContent = ""; return; }
+      let rows = JSON.parse(raw);
+      if (!Array.isArray(rows)) rows = [rows];
+      const objs = rows.filter(r => r && typeof r === "object" && !Array.isArray(r));
+      if (!objs.length) throw new Error("no objects found — expects an array of objects");
+      const cols = [], seen = new Set();
+      for (const r of objs) for (const k of Object.keys(r))
+        if (!seen.has(k)) { seen.add(k); cols.push(k); }
+      const tn = ($("jsq-table").value.trim() || "items").replace(/[^\w]/g, "_");
+      const ddl = `CREATE TABLE ${tn} (\n  ` +
+        cols.map(c => `"${c}" ${colType(objs.map(r => r[c]))}`).join(",\n  ") + `\n);`;
+      let out = ddl;
+      if ($("jsq-ins").checked) {
+        const ins = objs.map(r =>
+          `INSERT INTO ${tn} (${cols.map(c => `"${c}"`).join(", ")}) VALUES (` +
+          cols.map(c => lit(r[c])).join(", ") + `);`).join("\n");
+        out += "\n\n" + ins;
+      }
+      $("jsq-out").textContent = out; $("jsq-err").textContent = "";
+    } catch (e) { $("jsq-out").textContent = ""; $("jsq-err").textContent = "✗ " + e.message; }
+  }
+  for (const id of ["jsq-in","jsq-table","jsq-ins"]) $(id).addEventListener("input", go);
+  $("jsq-copy").onclick = () => navigator.clipboard?.writeText($("jsq-out").textContent).then(() => { $("jsq-copy").textContent = "copied"; setTimeout(() => $("jsq-copy").textContent = "copy sql", 1200); });
+  $("jsq-in").value = '[{"id":1,"name":"ada","active":true,"score":9.5},{"id":2,"name":"bob","active":false,"score":8.1}]';
   go();
 })();
 
