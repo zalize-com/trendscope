@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T13:30:35.171729+00:00",
+ "generated_at": "2026-11-15T13:36:01.585668+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 748,
- "unique_urls": 611,
- "items_in_latest": 357,
- "items_per_day_avg": 83.1,
+ "total_rows": 763,
+ "unique_urls": 626,
+ "items_in_latest": 372,
+ "items_per_day_avg": 84.8,
  "sources": {
   "arstechnica": {
    "rows": 16,
@@ -97,6 +97,10 @@
    "rows": 19,
    "days_active": 1
   },
+  "thenewstack": {
+   "rows": 15,
+   "days_active": 1
+  },
   "theregister": {
    "rows": 15,
    "days_active": 1
@@ -133,6 +137,10 @@
    "hits": 15
   },
   {
+   "domain": "thenewstack.io",
+   "hits": 15
+  },
+  {
    "domain": "theverge.com",
    "hits": 14
   },
@@ -143,10 +151,6 @@
   {
    "domain": "freecodecamp.org",
    "hits": 10
-  },
-  {
-   "domain": "hackaday.com",
-   "hits": 7
   }
  ],
  "files": {
