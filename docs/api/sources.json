@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T13:43:00.353199+00:00",
+  "generated_at": "2026-11-15T13:45:12.498502+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -250,6 +250,18 @@
       "top_item": {
         "title": "AWS Emulator proves agents need a verification loop. Realism is the hard part.",
         "url": "https://thenewstack.io/aws-emulator-verification-loops/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "soblog": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Your coding agent shouldn't grade its own homework",
+        "url": "https://stackoverflow.blog/2026/11/13/your-coding-agent-shouldn-t-grade-its-own-homework/",
         "score": 15,
         "rank": 1
       }

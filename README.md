@@ -48,6 +48,7 @@ A daily cross-source snapshot of developer attention:
 | Hackaday | hardware/maker projects | `hackaday.com/feed/` |
 | The New Stack | cloud-native/devops | `thenewstack.io/feed/` |
 | Opensource.com | Red Hat OSS community | `opensource.com/feed` |
+| Stack Overflow Blog | dev culture | `stackoverflow.blog/feed/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
