@@ -85,7 +85,9 @@ compare within a source, not across.
 - **Domains** (`domains.html`): most-linked sites across all snapshots,
   grouped by hostname from `history.csv`.
 - **Radar** (`radar.html`): the breakout lane — first-seen items today,
-  24h spikes, cross-source spread and brand-new domains, one page.
+  24h spikes, cross-source spread and brand-new domains, one page.- **Watch** (`watch.html`): a localStorage keyword watchlist — terms you add
+  are matched against every fresh and on-board item, in your browser only.
+
 - **Domain deep-dive** (`domain.html?d=`): every board hit from one hostname —
   which sources carried it and how big it got.
 - **Author deep-dive** (`author.html?u=`): every board hit by one author,
