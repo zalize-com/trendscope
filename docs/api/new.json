@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T15:27:12.095116+00:00",
+ "generated_at": "2026-11-15T15:28:29.694676+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 885,
- "new_items": 759,
+ "total_items": 895,
+ "new_items": 769,
  "by_source": {
   "producthunt": 45,
   "hackernews": 26,
@@ -39,6 +39,7 @@
   "vercel": 15,
   "beesbuzz": 14,
   "theverge": 14,
+  "airbnb": 10,
   "dropbox": 10,
   "freecodecamp": 10,
   "github_eng": 10,
@@ -62,6 +63,86 @@
   "devto": 1
  },
  "items": [
+  {
+   "title": "Skipper, Airbnb’s embedded workflow engine, is now open source",
+   "url": "https://medium.com/airbnb-engineering/skipper-airbnbs-embedded-workflow-engine-is-now-open-source-78dd354f472b?source=rss----53c7c27702d5---4",
+   "source": "airbnb",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CASTLE: training natural language search before the first real query",
+   "url": "https://medium.com/airbnb-engineering/castle-training-natural-language-search-before-the-first-real-query-3818ef8b4828?source=rss----53c7c27702d5---4",
+   "source": "airbnb",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beyond synthetic testing: Capturing and replaying real database workloads at Airbnb",
+   "url": "https://medium.com/airbnb-engineering/beyond-synthetic-testing-capturing-and-replaying-real-database-workloads-at-airbnb-cea7ee9b1ab2?source=rss----53c7c27702d5---4",
+   "source": "airbnb",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Personalization without user identity",
+   "url": "https://medium.com/airbnb-engineering/personalization-without-user-identity-8e7891a1d486?source=rss----53c7c27702d5---4",
+   "source": "airbnb",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The guest journey, updated in real time: extending Airbnb’s sequence recommender with Chronon",
+   "url": "https://medium.com/airbnb-engineering/the-guest-journey-updated-in-real-time-extending-airbnbs-sequence-recommender-with-chronon-8f1582578553?source=rss----53c7c27702d5---4",
+   "source": "airbnb",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beyond the model: Engineering AI infra with scientific judgement",
+   "url": "https://medium.com/airbnb-engineering/beyond-the-model-engineering-ai-infra-with-scientific-judgement-371316d43261?source=rss----53c7c27702d5---4",
+   "source": "airbnb",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Project Lighthouse — Part 3: Introducing project-lighthouse-anonymize",
+   "url": "https://medium.com/airbnb-engineering/project-lighthouse-part-3-introducing-project-lighthouse-anonymize-74f8b26653fb?source=rss----53c7c27702d5---4",
+   "source": "airbnb",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How we knew COVID was over (and what our models had to unlearn)",
+   "url": "https://medium.com/airbnb-engineering/how-we-knew-covid-was-over-and-what-our-models-had-to-unlearn-c606b9bdb0ab?source=rss----53c7c27702d5---4",
+   "source": "airbnb",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Flexible Authentication: Reimagining authentication for millions of users at Airbnb",
+   "url": "https://medium.com/airbnb-engineering/flexible-authentication-reimagining-authentication-for-millions-of-users-at-airbnb-3a8a4c917137?source=rss----53c7c27702d5---4",
+   "source": "airbnb",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Eval-driven development: Lessons from evaluating GenAI at scale",
+   "url": "https://medium.com/airbnb-engineering/eval-driven-development-lessons-from-evaluating-genai-at-scale-e817e5ae5788?source=rss----53c7c27702d5---4",
+   "source": "airbnb",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
   {
    "title": "The real AI risk is inside the labs",
    "url": "http://antirez.com/news/172",

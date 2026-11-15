@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T15:27:12.193288+00:00",
+  "generated_at": "2026-11-15T15:28:29.781317+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -646,6 +646,18 @@
       "top_item": {
         "title": "Analyze your Stripe data directly with your agent",
         "url": "https://stripe.com/blog/analyze-your-stripe-data-directly-with-your-agent",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "airbnb": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Skipper, Airbnb’s embedded workflow engine, is now open source",
+        "url": "https://medium.com/airbnb-engineering/skipper-airbnbs-embedded-workflow-engine-is-now-open-source-78dd354f472b?source=rss----53c7c27702d5---4",
         "score": 10,
         "rank": 1
       }
