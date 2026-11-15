@@ -407,6 +407,7 @@ cherry"></textarea>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/dayjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/croner@9.0.0/dist/croner.umd.min.js"></script>
 <script>
 const TOOLS = [
   {id:"color", label:"Color converter"},
@@ -876,19 +877,9 @@ function crGo(){
   if(!v)return;
   const f=v.split(/\s+/);
   if(f.length!==5){err.textContent="need exactly 5 fields (min hour dom mon dow)";return;}
-  const sets=[crField(f[0],0,59),crField(f[1],0,23),crField(f[2],1,31),crField(f[3],1,12),crField(f[4],0,7)];
-  if(sets.some(x=>x===null||!x.size)){err.textContent="could not parse one or more fields";return;}
-  const dows=new Set();for(const d of sets[4])dows.add(d%7);
-  // next 5 fire times: scan minutes forward, cap 366 days
-  const t=new Date();t.setSeconds(0,0);t.setMinutes(t.getMinutes()+1);
-  const hits=[];const end=Date.now()+366*864e5;
-  for(let i=0;i<527040&&hits.length<5;i++){
-    const d=new Date(t.getTime()+i*6e4);
-    if(d.getTime()>end)break;
-    if(sets[0].has(d.getMinutes())&&sets[1].has(d.getHours())&&
-       sets[2].has(d.getDate())&&sets[3].has(d.getMonth()+1)&&
-       dows.has(d.getDay()))hits.push(d);
-  }
+  let hits;
+  try { hits = new Cron(v).nextRuns(5); }
+  catch(e) { err.textContent="could not parse one or more fields"; return; }
   out.innerHTML="<b>"+crRead(f)+"</b><ul style='margin:6px 0 0;padding-left:18px'>"+
     hits.map(d=>"<li>"+d.toLocaleString()+"</li>").join("")+"</ul>"+
     (hits.length?"":"<li>no fire times in the next year — check dom/dow combination</li>");
