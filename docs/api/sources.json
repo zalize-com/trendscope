@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-15T21:26:08.577779+00:00",
+  "generated_at": "2026-11-15T21:46:08.167051+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
-      "items": 194,
-      "unique_urls": 181,
+      "items": 195,
+      "unique_urls": 182,
       "median_days_on_board": 1,
       "one_day_pct": 93,
       "top_item": {
@@ -27,8 +27,8 @@
       }
     },
     "show_hn": {
-      "items": 54,
-      "unique_urls": 54,
+      "items": 55,
+      "unique_urls": 55,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -74,6 +74,18 @@
         "rank": 1
       }
     },
+    "lobsters": {
+      "items": 35,
+      "unique_urls": 25,
+      "median_days_on_board": 1,
+      "one_day_pct": 64,
+      "top_item": {
+        "title": "Terminal borders that don't cost a cell",
+        "url": "https://www.joshka.net/cell-borders/",
+        "score": 396,
+        "rank": 9
+      }
+    },
     "github_trending": {
       "items": 34,
       "unique_urls": 19,
@@ -84,18 +96,6 @@
         "url": "https://github.com/huamidev/GestaltX",
         "score": 7616,
         "rank": 1
-      }
-    },
-    "lobsters": {
-      "items": 33,
-      "unique_urls": 23,
-      "median_days_on_board": 1,
-      "one_day_pct": 61,
-      "top_item": {
-        "title": "Terminal borders that don't cost a cell",
-        "url": "https://www.joshka.net/cell-borders/",
-        "score": 396,
-        "rank": 9
       }
     },
     "devto": {
@@ -214,6 +214,30 @@
       "top_item": {
         "title": "AWS Emulator proves agents need a verification loop. Realism is the hard part.",
         "url": "https://thenewstack.io/aws-emulator-verification-loops/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "planetemacs": {
+      "items": 17,
+      "unique_urls": 17,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Irreal: Vim To Emacs",
+        "url": "https://irreal.org/blog/?p=14220",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rgamedev": {
+      "items": 17,
+      "unique_urls": 17,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "I interviewed the former Technical Director of Rockstar Games and the developer of the GTA games!",
+        "url": "https://www.reddit.com/r/gamedev/comments/1xq7u15/i_interviewed_the_former_technical_director_of/",
         "score": 15,
         "rank": 1
       }
@@ -350,6 +374,18 @@
         "rank": 1
       }
     },
+    "targetgithub": {
+      "items": 16,
+      "unique_urls": 16,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Modernizing our IT Environment at Target",
+        "url": "https://target.github.io",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "rprogramming": {
       "items": 16,
       "unique_urls": 16,
@@ -374,6 +410,30 @@
         "rank": 1
       }
     },
+    "rtechnology": {
+      "items": 16,
+      "unique_urls": 16,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Nvidia board director cashed out $1 billion in stock before Jensen Huang scandal — Mark Stevens sold 4.2 million shares without a trading plan",
+        "url": "https://www.reddit.com/r/technology/comments/1xww9xh/nvidia_board_director_cashed_out_1_billion_in/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rartificial": {
+      "items": 16,
+      "unique_urls": 16,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "built a fact-checker that catches politicians lying in real-time",
+        "url": "https://www.reddit.com/r/artificial/comments/1xwmtff/built_a_factchecker_that_catches_politicians/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "rselfhosted": {
       "items": 16,
       "unique_urls": 16,
@@ -386,14 +446,14 @@
         "rank": 1
       }
     },
-    "rgamedev": {
+    "raws": {
       "items": 16,
       "unique_urls": 16,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
-        "title": "I interviewed the former Technical Director of Rockstar Games and the developer of the GTA games!",
-        "url": "https://www.reddit.com/r/gamedev/comments/1xq7u15/i_interviewed_the_former_technical_director_of/",
+        "title": "Is AWS US-East-1 Identity Center sign-in down?",
+        "url": "https://www.reddit.com/r/aws/comments/1xwtve5/is_aws_useast1_identity_center_signin_down/",
         "score": 15,
         "rank": 1
       }
@@ -3070,18 +3130,6 @@
       "top_item": {
         "title": "The Leica reset",
         "url": "https://paulstamatiou.com/the-leica-reset",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "planetemacs": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Irreal: Vim To Emacs",
-        "url": "https://irreal.org/blog/?p=14220",
         "score": 15,
         "rank": 1
       }
@@ -10082,18 +10130,6 @@
         "rank": 1
       }
     },
-    "rtechnology": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Nvidia board director cashed out $1 billion in stock before Jensen Huang scandal — Mark Stevens sold 4.2 million shares without a trading plan",
-        "url": "https://www.reddit.com/r/technology/comments/1xww9xh/nvidia_board_director_cashed_out_1_billion_in/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "appledevnews": {
       "items": 15,
       "unique_urls": 15,
@@ -10198,18 +10234,6 @@
       "top_item": {
         "title": "11 November, 2026 – Episode 1083 – War & Peace & Science",
         "url": "https://www.twis.org/11-november-2026-episode-1083-war-peace-science/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "rartificial": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "built a fact-checker that catches politicians lying in real-time",
-        "url": "https://www.reddit.com/r/artificial/comments/1xwmtff/built_a_factchecker_that_catches_politicians/",
         "score": 15,
         "rank": 1
       }
@@ -10574,18 +10598,6 @@
         "rank": 1
       }
     },
-    "raws": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Is AWS US-East-1 Identity Center sign-in down?",
-        "url": "https://www.reddit.com/r/aws/comments/1xwtve5/is_aws_useast1_identity_center_signin_down/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "rlisp": {
       "items": 15,
       "unique_urls": 15,
@@ -10798,6 +10810,150 @@
       "top_item": {
         "title": "Redis 8 is now GA",
         "url": "https://www.reddit.com/r/redis/comments/1kcedvm/redis_8_is_now_ga/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogappsnpr": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Elections Slackbots",
+        "url": "http://blog.apps.npr.org/2025/01/29/election-bots.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogcyeam": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "小米与 Mac 如何互联：从设备广播、身份认证到剪贴板和文件传输",
+        "url": "https://blog.cyeam.com/rust/2026/10/18/mi-clip-protocol",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "jakeyesbeck": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The Way and Remainder",
+        "url": "https://jakeyesbeck.com/2026/10/03/the-way-and-remainder/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "techgc": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "GameChanger and Anvil",
+        "url": "https://tech.gc.com/gamechanger-and-anvil/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rjavascript": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Showoff Saturday (November 14, 2026)",
+        "url": "https://www.reddit.com/r/javascript/comments/1xvwvgr/showoff_saturday_november_14_2026/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rnetsec": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "r/netsec monthly discussion & tool thread",
+        "url": "https://www.reddit.com/r/netsec/comments/1xl4ghe/rnetsec_monthly_discussion_tool_thread/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "storesteampowered": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Now Available on Steam - Domino VR",
+        "url": "https://store.steampowered.com/news/290724/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rdataengineering": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Monthly General Discussion - Nov 2026",
+        "url": "https://www.reddit.com/r/dataengineering/comments/1xl87i7/monthly_general_discussion_nov_2026/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rscala": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "This week in #Scala (Nov 16, 2026)",
+        "url": "https://www.reddit.com/r/scala/comments/1xwxvvu/this_week_in_scala_nov_16_2026/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rkotlin": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Using Jetpack AppState (alpha) with an MVI library: what worked, and what I found out about StateStore along the way",
+        "url": "https://www.reddit.com/r/Kotlin/comments/1xx5s3t/using_jetpack_appstate_alpha_with_an_mvi_library/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rnextjs": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Weekly Showoff Thread! Share what you've created with Next.js or for the community in this thread only!",
+        "url": "https://www.reddit.com/r/nextjs/comments/1xvew94/weekly_showoff_thread_share_what_youve_created/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rsveltejs": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Svelte Summit Ljubljana 2026 - November 19-20",
+        "url": "https://www.reddit.com/r/sveltejs/comments/1v8bdel/svelte_summit_ljubljana_2026_november_1920/",
         "score": 15,
         "rank": 1
       }
@@ -11702,6 +11858,18 @@
         "rank": 1
       }
     },
+    "jasonwilliamsco": {
+      "items": 11,
+      "unique_urls": 11,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Speeding up VSCode (extensions) in 2022",
+        "url": "https://jason-williams.co.uk",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "jjenzz": {
       "items": 11,
       "unique_urls": 11,
@@ -11770,6 +11938,18 @@
       "top_item": {
         "title": "Thinking will become a hobby",
         "url": "https://www.spinellis.gr/blog/20261008",
+        "score": 11,
+        "rank": 1
+      }
+    },
+    "quirksmode": {
+      "items": 11,
+      "unique_urls": 11,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "New blog - feed moved",
+        "url": "https://quirksmode.org",
         "score": 11,
         "rank": 1
       }
@@ -18218,6 +18398,30 @@
         "rank": 1
       }
     },
+    "nedbatchelder": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Cupcake party",
+        "url": "https://nedbatchelder.com/blog/202611/cupcake_party",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "lnhixie": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "llmdevsilo: Using LLMs to develop code securely",
+        "url": "http://ln.hixie.ch/?start=1781308547&count=1",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "susam": {
       "items": 9,
       "unique_urls": 9,
@@ -19970,18 +20174,6 @@
         "rank": 1
       }
     },
-    "jasonwilliamsco": {
-      "items": 1,
-      "unique_urls": 1,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Speeding up VSCode (extensions) in 2022",
-        "url": "https://jason-williams.co.uk",
-        "score": 10,
-        "rank": 1
-      }
-    },
     "lutaonan": {
       "items": 1,
       "unique_urls": 1,
@@ -20027,18 +20219,6 @@
         "title": "Feed moved",
         "url": "https://www.codedump.info/en/index.xml",
         "score": 1,
-        "rank": 1
-      }
-    },
-    "targetgithub": {
-      "items": 1,
-      "unique_urls": 1,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Modernizing our IT Environment at Target",
-        "url": "https://target.github.io",
-        "score": 15,
         "rank": 1
       }
     },

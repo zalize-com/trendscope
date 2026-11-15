@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T21:26:07.154791+00:00",
+ "generated_at": "2026-11-15T21:46:06.355942+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 2022,
+ "total": 2034,
  "domains": [
   {
    "hostname": "blog.google",
@@ -87,7 +87,7 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 2,
-   "items": 593,
+   "items": 702,
    "sources": [
     "hackernews",
     "k8s",
@@ -99,6 +99,7 @@
     "rcoding",
     "rcompsci",
     "rdartlang",
+    "rdataengineering",
     "rdatascience",
     "rdevops",
     "rdjango",
@@ -112,8 +113,12 @@
     "rgolang",
     "rhaskell",
     "rjava",
+    "rjavascript",
+    "rkotlin",
     "rlisp",
     "rmongodb",
+    "rnetsec",
+    "rnextjs",
     "rnode",
     "ropensource",
     "rphp",
@@ -122,7 +127,9 @@
     "rreactjs",
     "rredis",
     "rrust",
+    "rscala",
     "rselfhosted",
+    "rsveltejs",
     "rswift",
     "rsysadmin",
     "rtechnology",
