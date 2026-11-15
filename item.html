@@ -122,6 +122,24 @@ function paint() {
         <span class="sc">${fmt(+r.score||0)} ${r.metric}</span></li>`).join("")}</ol>
     </div>`;
   }).join("") + (groups.length > 8 ? `<p id="err">…and ${groups.length-8} more matches</p>` : "");
+
+  // canon cross-check: exact-title match against 19 years of HN front-page top-10
+  fetch("data/hn-canon-monthly.csv", {cache:"no-cache"}).then(r => r.text()).then(ct => {
+    const crows = parseCSV(ct), ch = crows.shift() || [];
+    const ct_i = ch.indexOf("title"), cm = ch.indexOf("month"),
+          cr = ch.indexOf("rank"), cp = ch.indexOf("points"), chn = ch.indexOf("hn_url");
+    const cards = out.querySelectorAll(".card");
+    groups.slice(0, 8).forEach((rs, gi) => {
+      const title = rs[rs.length-1].title.toLowerCase();
+      const hits = crows.filter(r => (r[ct_i]||"").toLowerCase() === title);
+      if (!hits.length || !cards[gi]) return;
+      hits.sort((a,b) => +b[cp] - +a[cp]);
+      const h = hits[0];
+      cards[gi].insertAdjacentHTML("beforeend",
+        `<p class="muted" style="font-size:12px">📜 also in all-time canon:
+          <a href="${h[chn]}">#${h[cr]} in ${h[cm]}</a> with ${fmt(+h[cp])} pts</p>`);
+    });
+  }).catch(() => {});
 }
 </script>
 </body>
