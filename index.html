@@ -471,7 +471,7 @@ function paint() {
   if (YDAY && YDAY.items) {
     const seen = new Set(Object.values(YDAY.items).flat().map(i => i.url));
     const n = Object.values(SNAP.items || {}).flat().filter(i => !seen.has(i.url)).length;
-    if (n) fresh = ` · <b style="color:var(--orange)">${n} fresh</b>`;
+    if (n) fresh = ` · <b style="color:var(--orange)">${n} fresh</b> <span style="color:var(--dim)">(${Math.round(100*n/total)}% new)</span>`;
   }
   const bsub = document.getElementById("board-sub");
   delete bsub.dataset.cross;
