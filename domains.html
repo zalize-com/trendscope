@@ -113,7 +113,23 @@ $("out").innerHTML =
       `<li><span class="it"><a href="${c.url}">${esc(c.title.length>80?c.title.slice(0,80)+"…":c.title)}</a>` +
       `<span class="srcs" style="margin-left:6px">${[...c.srcs].join(" + ")}</span>` +
       `<a href="item.html?q=${encodeURIComponent(c.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>` +
-      `<span class="sc">${fmt(c.score)}</span></li>`).join("") + `</ol>` : "");
+      `<span class="sc">${fmt(c.score)}</span></li>`).join("") + `</ol>` : "") +
+  // source-pair overlap: how many URLs each pair of sources shared
+  (() => {
+    const pairs = {};
+    for (const [, e] of Object.entries(byUrl)) {
+      if (e.srcs.size < 2) continue;
+      const arr = [...e.srcs].sort();
+      for (let i = 0; i < arr.length; i++)
+        for (let j = i+1; j < arr.length; j++)
+          pairs[arr[i]+"|"+arr[j]] = (pairs[arr[i]+"|"+arr[j]]||0) + 1;
+    }
+    const top = Object.entries(pairs).sort((a,b) => b[1]-a[1]).slice(0, 12);
+    return top.length
+      ? `<h2 style="margin-top:28px">source overlap — who shares stories</h2><ol>` +
+        top.map(([k,n]) => `<li><span class="it">${k.replace("|", " ↔ ")}</span><span class="sc">${n} url${n>1?"s":""}</span></li>`).join("") + `</ol>`
+      : "";
+  })();
 </script>
 </body>
 </html>
