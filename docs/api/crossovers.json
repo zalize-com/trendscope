@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T16:38:53.182160+00:00",
+ "generated_at": "2026-11-15T16:40:53.876666+00:00",
  "latest_snapshot": "2026-11-15",
  "crossovers": [
   {
@@ -133,6 +133,21 @@
    "days": 1,
    "best": {
     "score": 60,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://lucypero.com/lucynes.html",
+   "title": "A NES emulator written in Odin",
+   "sources": [
+    "hackernews",
+    "lobsters"
+   ],
+   "days": 1,
+   "best": {
+    "score": 52,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-15"

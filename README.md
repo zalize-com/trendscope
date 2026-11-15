@@ -176,6 +176,9 @@ A daily cross-source snapshot of developer attention:
 | Brandur | engineering essays | `brandur.org/articles.atom` |
 | Jesse Duffield | lazygit creator | `jesseduffield.com/feed.xml` |
 | Vicki Boykis | data science and ML essays | `vicki.substack.com/feed` |
+| Geoffrey Litt | malleable software research | `geoffreylitt.com/feed.xml` |
+| Maggie Appleton | visual essays on tech | `maggieappleton.com/rss.xml` |
+| Andy Bromberg | crypto and product essays | `andybromberg.com/feed` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

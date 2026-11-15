@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T16:38:53.182160+00:00",
+ "generated_at": "2026-11-15T16:40:53.876666+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 2127,
- "new_items": 2001,
+ "total_items": 2164,
+ "new_items": 2038,
  "by_source": {
   "producthunt": 45,
   "show_hn": 39,
+  "hackernews": 29,
   "theregister": 29,
-  "hackernews": 28,
   "techmeme": 22,
   "slashdot": 19,
   "thenewstack": 17,
@@ -57,6 +57,7 @@
   "kentcdodds": 15,
   "lcamtuf": 15,
   "lwn": 15,
+  "maggieappleton": 15,
   "marco": 15,
   "martinfowler": 15,
   "matthewrocklin": 15,
@@ -101,8 +102,10 @@
   "jetbrains": 12,
   "agis": 11,
   "bret": 11,
+  "geoffreylitt": 11,
   "lobsters": 11,
   "airbnb": 10,
+  "andybromberg": 10,
   "birklund": 10,
   "bitslog": 10,
   "copyconstruct": 10,
@@ -563,6 +566,86 @@
    "url": "https://andrewkelley.me/post/string-matching-comptime-perfect-hashing-zig.html",
    "source": "andrewkelley",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Personas: calling and texting as someone else",
+   "url": "https://andybromberg.com/personas-phones",
+   "source": "andybromberg",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The bitter lesson, for everything in life",
+   "url": "https://andybromberg.com/bitter-lesson-life",
+   "source": "andybromberg",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pattern: a new calendar",
+   "url": "https://andybromberg.com/pattern-calendar",
+   "source": "andybromberg",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "modelwatch: Dependabot for LLM model strings",
+   "url": "https://andybromberg.com/modelwatch",
+   "source": "andybromberg",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Side Eye: a pomodoro timer that watches you",
+   "url": "https://andybromberg.com/side-eye",
+   "source": "andybromberg",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A love letter to exe.dev",
+   "url": "https://andybromberg.com/love-letter-exe-dev",
+   "source": "andybromberg",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What are we teaching them to be?",
+   "url": "https://andybromberg.com/teaching-them-to-be",
+   "source": "andybromberg",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "daegent: pro-grade, multi-model Claude Cowork",
+   "url": "https://andybromberg.com/daegent",
+   "source": "andybromberg",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "daegent",
+   "url": "https://andybromberg.com/congruence/daegent",
+   "source": "andybromberg",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You can solve problems ambiently",
+   "url": "https://andybromberg.com/solve-problems-ambiently",
+   "source": "andybromberg",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -5439,6 +5522,94 @@
    "metric": "feed rank"
   },
   {
+   "title": "Understanding is the new bottleneck",
+   "url": "https://geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html",
+   "source": "geoffreylitt",
+   "rank": 1,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Code like a surgeon",
+   "url": "https://geoffreylitt.com/2025/10/24/code-like-a-surgeon.html",
+   "source": "geoffreylitt",
+   "rank": 2,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI as teleportation",
+   "url": "https://geoffreylitt.com/2025/09/10/ai-as-teleportation.html",
+   "source": "geoffreylitt",
+   "rank": 3,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Enough AI copilots! We need AI HUDs",
+   "url": "https://geoffreylitt.com/2025/07/27/enough-ai-copilots-we-need-ai-huds.html",
+   "source": "geoffreylitt",
+   "rank": 4,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is chat a good UI for AI? A Socratic dialogue",
+   "url": "https://geoffreylitt.com/2025/06/29/chat-ai-dialogue.html",
+   "source": "geoffreylitt",
+   "rank": 5,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Malleable software: Restoring user agency in a world of locked-down apps",
+   "url": "https://geoffreylitt.com/2025/06/15/malleable-software.html",
+   "source": "geoffreylitt",
+   "rank": 6,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stevens: a hackable AI assistant using a single SQLite table and a handful of cron jobs",
+   "url": "https://geoffreylitt.com/2025/04/12/how-i-made-a-useful-ai-assistant-with-one-sqlite-table-and-a-handful-of-cron-jobs.html",
+   "source": "geoffreylitt",
+   "rank": 7,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Avoid the nightmare bicycle",
+   "url": "https://geoffreylitt.com/2025/03/03/the-nightmare-bicycle.html",
+   "source": "geoffreylitt",
+   "rank": 8,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI-generated tools can make programming more fun",
+   "url": "https://geoffreylitt.com/2024/12/22/making-programming-more-fun-with-an-ai-generated-debugger.html",
+   "source": "geoffreylitt",
+   "rank": 9,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your pie doesn't need to be original (unless you claim it so)",
+   "url": "https://geoffreylitt.com/2024/08/25/your-pie-doesnt-need-be-original.html",
+   "source": "geoffreylitt",
+   "rank": 10,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7 books that stood the test of time in 2023",
+   "url": "https://geoffreylitt.com/2023/12/17/seven-books-that-stuck-with-me-in-2023.html",
+   "source": "geoffreylitt",
+   "rank": 11,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "41 things about how software engineering has changed in 2026 because of AI, LLMs, and coding agents",
    "url": "https://geshan.com.np/blog/2026/10/ai-software-engineering/",
    "source": "geshan",
@@ -6188,6 +6359,14 @@
    "source": "hackernews",
    "rank": 19,
    "score": 49,
+   "metric": "points"
+  },
+  {
+   "title": "A NES emulator written in Odin",
+   "url": "https://lucypero.com/lucynes.html",
+   "source": "hackernews",
+   "rank": 19,
+   "score": 52,
    "metric": "points"
   },
   {
@@ -8739,6 +8918,126 @@
    "url": "https://eng.lyft.com/beyond-a-b-testing-using-surrogacy-and-region-splits-to-measure-long-term-effects-in-marketplaces-9cb06d628f2d?source=rss----25cd379abb8---4",
    "source": "lyft",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fortune Telling and Speculative Design",
+   "url": "https://maggieappleton.com/fortune-telling",
+   "source": "maggieappleton",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Planning with Agents: Divided Worlds, Boundary Objects, and Thicker Interfaces",
+   "url": "https://maggieappleton.com/planning-agents",
+   "source": "maggieappleton",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "August 2026",
+   "url": "https://maggieappleton.com/now-2026-08",
+   "source": "maggieappleton",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In Memoriam, Encountering World War I, and Thinkable Horrors",
+   "url": "https://maggieappleton.com/in-memoriam",
+   "source": "maggieappleton",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "One Developer, Two Dozen Agents, Zero Alignment",
+   "url": "https://maggieappleton.com/zero-alignment",
+   "source": "maggieappleton",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gas Town’s Agent Patterns, Design Bottlenecks, and Vibecoding at Scale",
+   "url": "https://maggieappleton.com/gastown",
+   "source": "maggieappleton",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "January 2026",
+   "url": "https://maggieappleton.com/now-2026-01",
+   "source": "maggieappleton",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Treatise on AI Chatbots Undermining the Enlightenment",
+   "url": "https://maggieappleton.com/ai-enlightenment",
+   "source": "maggieappleton",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vibe Code is Legacy Code",
+   "url": "https://maggieappleton.com/2025-08-vibe-legacy-code",
+   "source": "maggieappleton",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "May 2025",
+   "url": "https://maggieappleton.com/now-2025-05",
+   "source": "maggieappleton",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Statistically, When Will My Baby Be Born?",
+   "url": "https://maggieappleton.com/birth-probability",
+   "source": "maggieappleton",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ChatGPT Would be a Decent Policy Advisor",
+   "url": "https://maggieappleton.com/2025-03-chat-gpt-policy",
+   "source": "maggieappleton",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "March 2025",
+   "url": "https://maggieappleton.com/now-2025-03",
+   "source": "maggieappleton",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Humanity's Last Exam",
+   "url": "https://maggieappleton.com/2025-02-last-exam",
+   "source": "maggieappleton",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DeepSeek",
+   "url": "https://maggieappleton.com/2025-01-deepseek",
+   "source": "maggieappleton",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
