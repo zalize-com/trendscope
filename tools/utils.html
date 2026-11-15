@@ -406,6 +406,7 @@ cherry"></textarea>
   </footer>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/dayjs.min.js"></script>
 <script>
 const TOOLS = [
   {id:"color", label:"Color converter"},
@@ -713,23 +714,22 @@ document.getElementById("sg-in").addEventListener("input", sgGo);
         c=document.getElementById("dc-c"), n=document.getElementById("dc-n"),
         span=document.getElementById("dc-span"), res=document.getElementById("dc-res");
   if(!a) return;
-  const WD=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
-  const iso=d=>d.toISOString().slice(0,10);
-  const today=new Date(); const t7=new Date(Date.now()+7*864e5);
+  const iso=d=>d.format("YYYY-MM-DD");
+  const today=dayjs(); const t7=dayjs().add(7,"day");
   a.value=iso(today); b.value=iso(t7); c.value=iso(today);
   function spanGo(){
-    const A=new Date(a.value+"T00:00:00"), B=new Date(b.value+"T00:00:00");
-    if(isNaN(A)||isNaN(B)){span.textContent="";return}
-    const dd=Math.round((B-A)/864e5);
+    const A=dayjs(a.value), B=dayjs(b.value);
+    if(!A.isValid()||!B.isValid()){span.textContent="";return}
+    const dd=B.diff(A,"day");
     const wk=Math.abs(dd)/7;
     span.innerHTML = `<b>${Math.abs(dd)}</b> days (${Math.abs(dd)+1} inclusive) ≈ <b>${wk.toFixed(1)}</b> weeks` +
-      `<span style="color:var(--dim)"> · ${a.value} is ${WD[A.getDay()]} · ${b.value} is ${WD[B.getDay()]} · business days ≈ ${Math.round(Math.abs(dd)*5/7)}</span>`;
+      `<span style="color:var(--dim)"> · ${a.value} is ${A.format("ddd")} · ${b.value} is ${B.format("ddd")} · business days ≈ ${Math.round(Math.abs(dd)*5/7)}</span>`;
   }
   function plusGo(sign){
-    const C=new Date(c.value+"T00:00:00"), N=parseInt(n.value)||0;
-    if(isNaN(C)){res.textContent="";return}
-    const R=new Date(C.getTime()+sign*N*864e5);
-    res.innerHTML=`<b>${iso(R)}</b> (${WD[R.getDay()]})`;
+    const C=dayjs(c.value), N=parseInt(n.value)||0;
+    if(!C.isValid()){res.textContent="";return}
+    const R=C.add(sign*N,"day");
+    res.innerHTML=`<b>${iso(R)}</b> (${R.format("ddd")})`;
   }
   a.addEventListener("input",spanGo); b.addEventListener("input",spanGo);
   document.getElementById("dc-plus").addEventListener("click",()=>plusGo(1));
