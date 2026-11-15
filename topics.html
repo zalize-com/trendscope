@@ -119,6 +119,20 @@ fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
   const matched = all.filter(it => topicsOf(it).includes(want));
   document.getElementById("sub").textContent =
     `${matched.length} items across ${new Set(matched.map(i=>i.source)).size} sources · ${snap.date} snapshot`;
+  fetch("data/topics-history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
+    const [hdr, ...rows] = txt.trim().split("\n").map(l => l.split(","));
+    const ti = hdr.indexOf("topic"), di = hdr.indexOf("date"), ci2 = hdr.indexOf("count");
+    const days = [...new Set(rows.map(r => r[di]))].sort();
+    const vals = days.map(d => {
+      const r = rows.find(x => x[di] === d && x[ti] === want);
+      return r ? +r[ci2] : 0;
+    });
+    const mx = Math.max(...vals, 1);
+    const el = document.getElementById("sub");
+    el.innerHTML = `${el.textContent} · <svg width="${days.length * 8}" height="14"
+      viewBox="0 0 ${days.length * 8} 14" style="vertical-align:-2px" title="${days.map((d,i)=>`${d}: ${vals[i]}`).join(" · ")}">${
+      vals.map((v,i) => `<rect x="${i*8}" y="${14 - Math.round(12*v/mx)}" width="6" height="${Math.max(1,Math.round(12*v/mx))}" fill="var(--accent)" opacity="${0.35 + 0.65*v/mx}"/>`).join("")}</svg>`;
+  }).catch(() => {});
   const bySrc = {};
   matched.forEach(it => (bySrc[it.source] = bySrc[it.source] || []).push(it));
   document.getElementById("out").innerHTML = Object.entries(bySrc)
