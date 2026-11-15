@@ -51,3 +51,6 @@ ranking.
 - `data/hiring.json` / `data/hiring-history.csv` — monthly HN "Who is hiring?"
   and "Who wants to be hired?" thread comment counts, tracked daily
   (`captured_at,kind,thread_id,month,comments,url`); a labor-demand signal.
+- `data/hiring-monthly.csv` — full backfill: every canonical monthly thread
+  Algolia indexes (2010 → today), `month,kind,comments,thread_id,url,created`;
+  regenerate with `scripts/hiring_backfill.py`.
