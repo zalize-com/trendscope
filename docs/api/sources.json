@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T15:09:10.138032+00:00",
+  "generated_at": "2026-11-15T15:10:29.929059+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -111,8 +111,8 @@
       }
     },
     "show_hn": {
-      "items": 21,
-      "unique_urls": 21,
+      "items": 22,
+      "unique_urls": 22,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -575,6 +575,18 @@
         "title": "An MP3 Player, Implemented As A Factorio Blueprint",
         "url": "https://hackaday.com/2026/11/15/an-mp3-player-implemented-as-a-factorio-blueprint/",
         "score": 7,
+        "rank": 1
+      }
+    },
+    "slack_eng": {
+      "items": 8,
+      "unique_urls": 8,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Shipyard: How We Built Slack’s Next-Generation EC2 Platform",
+        "url": "https://slack.engineering/shipyard-how-we-built-slacks-next-generation-ec2-platform/",
+        "score": 8,
         "rank": 1
       }
     },
