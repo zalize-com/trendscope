@@ -7,7 +7,7 @@ import csv
 import json
 import os
 from collections import defaultdict
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
 from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -90,6 +90,39 @@ def main():
         with open(os.path.join(API, f"{name}.json"), "w", encoding="utf-8") as f:
             json.dump(out, f, ensure_ascii=False, indent=1)
         print(f"{name}.json: {len(data)} rows / {out['total']} total")
+
+    # crossovers: same normalized URL on ≥2 different sources
+    xo = defaultdict(lambda: {"title": "", "sources": set(), "days": set(),
+                             "best": {"score": 0, "metric": "", "source": "", "date": ""}})
+    for r in csv.DictReader(open(HIST, encoding="utf-8")):
+        url = (r.get("url") or "").strip()
+        if not url:
+            continue
+        p = urlparse(url.lower())
+        h = p.hostname or ""
+        h = h[4:] if h.startswith("www.") else h
+        if h in SKIP:
+            continue
+        qs = urlencode([(k, v) for k, v in parse_qsl(p.query)
+                        if not k.startswith("utm_")])
+        key = urlunparse((p.scheme or "https", p.netloc, p.path.rstrip("/"),
+                          "", qs, ""))
+        score = int(float(r.get("score") or 0))
+        e = xo[key]
+        e["title"] = r["title"]
+        e["sources"].add(r["source"])
+        e["days"].add(r.get("date") or "")
+        if score > e["best"]["score"]:
+            e["best"] = {"score": score, "metric": r.get("metric") or "",
+                         "source": r["source"], "date": r.get("date") or ""}
+    cross = sorted(({"url": k, "title": v["title"], "sources": sorted(v["sources"]),
+                     "days": len(v["days"]), "best": v["best"]}
+                    for k, v in xo.items() if len(v["sources"]) >= 2),
+                   key=lambda x: (-len(x["sources"]), -x["days"], -x["best"]["score"]))[:LIMIT]
+    with open(os.path.join(API, "crossovers.json"), "w", encoding="utf-8") as f:
+        json.dump({"generated_at": now, "latest_snapshot": max(days),
+                   "crossovers": cross}, f, ensure_ascii=False, indent=1)
+    print(f"crossovers.json: {len(cross)} rows")
 
     discussed = sorted(items.values(), key=lambda x: -x["comments"])[:LIMIT]
     heated = sorted((x for x in items.values() if x["score"] >= 50),
