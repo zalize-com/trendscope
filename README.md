@@ -47,6 +47,7 @@ compare within a source, not across.
 | `data/history.csv` | Append-only cumulative history — velocity analysis |
 | `data/index.json` | List of all snapshot dates |
 | `feed.xml` | RSS feed of every snapshot + weekly digest |
+| `docs/api.md` | Every data endpoint, documented — no key needed |
 
 ## Site
 
