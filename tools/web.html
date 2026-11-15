@@ -64,6 +64,7 @@
     <button data-tool="squat">typosquat</button>
     <button data-tool="http">HTTP status</button>
     <button data-tool="hash">file checksum</button>
+    <button data-tool="pxrem">px ↔ rem</button>
   </div>
 
   <div class="panel" id="p-qr">
@@ -128,6 +129,18 @@
     <div id="hs-out" style="margin-top:8px"></div>
   </div>
 
+  <div class="panel" id="p-pxrem">
+    <h2>px ↔ rem converter</h2>
+    <p class="hint">Type either side — converts at the base font-size below. Common values on the right.</p>
+    <div style="display:flex;gap:10px;align-items:baseline;flex-wrap:wrap">
+      <input type="number" id="px" placeholder="px" step="any" style="width:110px"> <span style="color:var(--dim)">px =</span>
+      <input type="number" id="rm" placeholder="rem" step="any" style="width:110px"> <span style="color:var(--dim)">rem</span>
+      <span style="color:var(--dim)">· base</span>
+      <input type="number" id="base" value="16" step="any" style="width:70px"> <span style="color:var(--dim)">px</span>
+    </div>
+    <div id="pr-table" style="margin-top:12px"></div>
+  </div>
+
 <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
@@ -135,7 +148,7 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["qr","og","robots","squat","http","hash"];
+const tools = ["qr","og","robots","squat","http","hash","pxrem"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "qr");
@@ -366,6 +379,26 @@ const drop = $("hs-drop");
 drop.ondragover = e => { e.preventDefault(); drop.style.borderColor = "var(--accent)"; };
 drop.ondragleave = () => drop.style.borderColor = "";
 drop.ondrop = e => { e.preventDefault(); drop.style.borderColor = ""; hsGo(e.dataTransfer.files[0]); };
+
+// px <-> rem
+function pxTable() {
+  const b = parseFloat(document.getElementById("base").value) || 16;
+  const vals = [8,10,12,13,14,16,18,20,24,28,32,40,48,56,64,80,96,120,160,200,240,320,480,768,1024];
+  document.getElementById("pr-table").innerHTML =
+    `<table style="width:100%;border-collapse:collapse;font-size:13px"><tr style="color:var(--dim)"><td>px</td><td>rem</td><td>px</td><td>rem</td></tr>` +
+    vals.reduce((acc,v,i)=>{ if(i%2===0) acc.push([]); acc[acc.length-1].push(v); return acc;},[])
+      .map(pair => `<tr>${pair.map(v => `<td style="padding:3px 6px;border-top:1px solid var(--border)">${v}</td><td style="padding:3px 6px;border-top:1px solid var(--border)">${(v/b).toFixed(3).replace(/0+$/,"").replace(/\.$/,"")}</td>`).join("")}${pair.length<2?'<td></td><td></td>':''}</tr>`).join("") +
+    `</table>`;
+}
+function pxGo(from) {
+  const b = parseFloat(document.getElementById("base").value) || 16;
+  const px = document.getElementById("px"), rm = document.getElementById("rm");
+  if (from === "px" && px.value !== "") rm.value = (parseFloat(px.value) / b).toFixed(4);
+  else if (from === "rm" && rm.value !== "") px.value = (parseFloat(rm.value) * b).toFixed(2);
+  pxTable();
+}
+["px","rm","base"].forEach(id => document.getElementById(id).addEventListener("input", () => pxGo(id)));
+pxTable();
 </script>
 </body>
 </html>
