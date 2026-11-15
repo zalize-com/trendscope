@@ -151,7 +151,7 @@
       <span class="muted" style="font-size:12px;margin-left:8px">saved in your browser · npm / crates:</span>
     </div>
     <div class="board" id="board"></div>
-    <p style="margin:8px 0 0;font-size:12px"><a id="png-btn" style="cursor:pointer">⤓ export board as PNG</a> <span class="muted">· share today's top stories anywhere</span></p>
+    <p style="margin:8px 0 0;font-size:12px"><a id="png-btn" style="cursor:pointer">⤓ export board as PNG</a> · <a id="csv-btn" style="cursor:pointer">⤓ download board as CSV</a> <span class="muted">· share today's top stories anywhere</span></p>
   </section>
 
   <section>
@@ -706,6 +706,18 @@ async function renderTrends(days) {
 }
 
 // Export the visible board as a shareable PNG (dark card, top 12 rows).
+document.getElementById("csv-btn").addEventListener("click", () => {
+  const esc = v => `"" + String(v ?? "").replace(/"/g, '""') + '"';
+  const rows = [["source","rank","title","url","score","comments","tags","author","captured_at"]];
+  for (const [s, its] of ITEMS) for (const it of its)
+    rows.push([s, it.rank, it.title, it.url, it.score, it.comments ?? "",
+      (it.tags || []).join("|"), it.author || "", it.captured_at || ""].map(esc).join(","));
+  const blob = new Blob([rows.join("\n") + "\n"], {type: "text/csv"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `trendscope-${CUR_DATE || "board"}.csv`;
+  a.click(); URL.revokeObjectURL(a.href);
+});
 document.getElementById("png-btn").addEventListener("click", () => {
   const rows = [...document.querySelectorAll("#board .row")].slice(0, 12);
   if (!rows.length) return;
