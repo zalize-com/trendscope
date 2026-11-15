@@ -101,6 +101,7 @@ A daily cross-source snapshot of developer attention:
 | Baeldung | Java/Spring/backend tutorials | `feeds.feedburner.com/Baeldung` |
 | Troy Hunt | web security and HaveIBeenPwned | `troyhunt.com/rss/` |
 | Tonsky | UI design, fonts and Clojure | `tonsky.me/atom.xml` |
+| Joel on Software | classic software industry essays | `joelonsoftware.com/feed/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
