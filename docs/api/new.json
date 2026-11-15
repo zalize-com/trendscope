@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:17:08.304178+00:00",
+ "generated_at": "2026-11-15T16:18:22.406417+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1529,
- "new_items": 1403,
+ "total_items": 1555,
+ "new_items": 1429,
  "by_source": {
   "producthunt": 45,
   "show_hn": 31,
@@ -14,9 +14,11 @@
   "arstechnica": 16,
   "daringfireball": 16,
   "gargron": 16,
+  "lemmy": 16,
   "antirez": 15,
   "arxiv": 15,
   "aws_blog": 15,
+  "begriffs": 15,
   "catonmat": 15,
   "changelog": 15,
   "charity": 15,
@@ -42,7 +44,6 @@
   "jvns": 15,
   "kentcdodds": 15,
   "lcamtuf": 15,
-  "lemmy": 15,
   "lwn": 15,
   "marco": 15,
   "martinfowler": 15,
@@ -76,6 +77,7 @@
   "copyconstruct": 10,
   "dropbox": 10,
   "freecodecamp": 10,
+  "gds": 10,
   "github_eng": 10,
   "haxx": 10,
   "henrikwarne": 10,
@@ -995,6 +997,126 @@
    "url": "https://beesbuzz.biz/blog/7409-Gumroad-alternatives",
    "source": "beesbuzz",
    "rank": 14,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to build dependable bare-metal ARM firmware with UNIX tools",
+   "url": "https://begriffs.com/posts/2023-10-10-bare-metal-firmware.html",
+   "source": "begriffs",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pleasant debugging with GDB and DDD",
+   "url": "https://begriffs.com/posts/2022-07-17-debugging-gdb-ddd.html",
+   "source": "begriffs",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Practical parsing with Flex and Bison",
+   "url": "https://begriffs.com/posts/2021-11-28-practical-parsing.html",
+   "source": "begriffs",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dynamic linking best practices",
+   "url": "https://begriffs.com/posts/2021-07-04-shared-libraries.html",
+   "source": "begriffs",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tips for stable and portable software",
+   "url": "https://begriffs.com/posts/2020-08-31-portable-stable-software.html",
+   "source": "begriffs",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Create impeccable MIME email from markdown",
+   "url": "https://begriffs.com/posts/2020-07-16-generating-mime-email.html",
+   "source": "begriffs",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Concurrent programming, with examples",
+   "url": "https://begriffs.com/posts/2020-03-23-concurrent-programming.html",
+   "source": "begriffs",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "History and effective use of Vim",
+   "url": "https://begriffs.com/posts/2019-07-19-history-use-vim.html",
+   "source": "begriffs",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unicode programming, with examples",
+   "url": "https://begriffs.com/posts/2019-05-23-unicode-icu.html",
+   "source": "begriffs",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inside the C Standard Library",
+   "url": "https://begriffs.com/posts/2019-01-19-inside-c-standard-lib.html",
+   "source": "begriffs",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "C Portability Lessons from Old Machines",
+   "url": "https://begriffs.com/posts/2018-11-15-c-portability.html",
+   "source": "begriffs",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Actually, DMARC works fine with mailing lists",
+   "url": "https://begriffs.com/posts/2018-09-18-dmarc-mailing-list.html",
+   "source": "begriffs",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mailing lists vs Github",
+   "url": "https://begriffs.com/posts/2018-06-05-mailing-list-vs-github.html",
+   "source": "begriffs",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "User-defined Order in SQL",
+   "url": "https://begriffs.com/posts/2018-03-20-user-defined-order.html",
+   "source": "begriffs",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SQL Keys in Depth",
+   "url": "https://begriffs.com/posts/2018-01-01-sql-keys-in-depth.html",
+   "source": "begriffs",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -3615,6 +3737,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Opening GOV.UK Wallet sandbox to digital verification services",
+   "url": "https://gds.blog.gov.uk/2026/10/19/opening-gov-uk-wallet-sandbox-to-digital-verification-services/",
+   "source": "gds",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building the foundations for better data sharing across the UK",
+   "url": "https://gds.blog.gov.uk/2026/10/05/building-the-foundations-for-better-data-sharing-across-the-uk/",
+   "source": "gds",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Digital devolution: what’s been happening and what’s coming up?",
+   "url": "https://gds.blog.gov.uk/2026/09/25/digital-devolution-whats-been-happening-and-whats-coming-up/",
+   "source": "gds",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating the conditions for transformation",
+   "url": "https://gds.blog.gov.uk/2026/09/17/creating-the-conditions-for-transformation/",
+   "source": "gds",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How we made it easier for millions of users to sign into government services",
+   "url": "https://gds.blog.gov.uk/2026/09/16/how-we-made-it-easier-for-millions-of-users-to-sign-into-government-services/",
+   "source": "gds",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What the ‘Early Years’ Innovation Challenge showed us about data-sharing and collaboration",
+   "url": "https://gds.blog.gov.uk/2026/09/15/what-the-early-years-innovation-challenge-showed-us-about-data-sharing-and-collaboration/",
+   "source": "gds",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GOV.UK Pay at 10: how it started and how it&#039;s going",
+   "url": "https://gds.blog.gov.uk/2026/09/02/gov-uk-pay-at-10-how-it-started-and-how-its-going/",
+   "source": "gds",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Supporting devolution through digital, data and AI",
+   "url": "https://gds.blog.gov.uk/2026/09/01/supporting-devolution-through-digital-data-and-ai/",
+   "source": "gds",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Services Week 2026 Wrap Up",
+   "url": "https://gds.blog.gov.uk/2026/08/24/services-week-2026-wrap-up/",
+   "source": "gds",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GDS: delivering a better GOV.UK experience for business",
+   "url": "https://gds.blog.gov.uk/2026/08/06/gds-delivering-a-better-gov-uk-experience-for-business/",
+   "source": "gds",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "41 things about how software engineering has changed in 2026 because of AI, LLMs, and coding agents",
    "url": "https://geshan.com.np/blog/2026/10/ai-software-engineering/",
    "source": "geshan",
@@ -5628,6 +5830,14 @@
    "source": "lemmy",
    "rank": 15,
    "score": 7,
+   "metric": "score"
+  },
+  {
+   "title": "All AI-generated code should be Open Source",
+   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+   "source": "lemmy",
+   "rank": 15,
+   "score": 2,
    "metric": "score"
   },
   {

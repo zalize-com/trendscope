@@ -1,7 +1,23 @@
 {
- "generated_at": "2026-11-15T16:17:08.304178+00:00",
+ "generated_at": "2026-11-15T16:18:22.406417+00:00",
  "latest_snapshot": "2026-11-15",
  "crossovers": [
+  {
+   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
+   "title": "All AI-generated code should be Open Source",
+   "sources": [
+    "hackernews",
+    "lemmy",
+    "lobsters"
+   ],
+   "days": 1,
+   "best": {
+    "score": 54,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
   {
    "url": "https://www.joshka.net/cell-borders",
    "title": "Terminal borders that don't cost a cell",
@@ -117,21 +133,6 @@
    "days": 1,
    "best": {
     "score": 60,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
-   "title": "All AI-generated code should be Open Source",
-   "sources": [
-    "hackernews",
-    "lobsters"
-   ],
-   "days": 1,
-   "best": {
-    "score": 54,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-15"

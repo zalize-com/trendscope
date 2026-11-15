@@ -128,6 +128,8 @@ A daily cross-source snapshot of developer attention:
 | BitBashing | low-level systems essays | `bitbashing.io/feed.xml` |
 | ntietz | distributed systems essays | `ntietz.com/atom.xml` |
 | Murat Demirbas | distributed systems papers | `muratbuffalo.blogspot.com/feeds/posts/default` |
+| Begriffs | API design and Postgres | `begriffs.com/atom.xml` |
+| GDS | UK gov digital service | `gds.blog.gov.uk/feed/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

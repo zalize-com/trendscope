@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T16:17:08.424841+00:00",
+  "generated_at": "2026-11-15T16:18:22.528620+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -62,18 +62,6 @@
         "rank": 1
       }
     },
-    "lobsters": {
-      "items": 34,
-      "unique_urls": 23,
-      "median_days_on_board": 1,
-      "one_day_pct": 57,
-      "top_item": {
-        "title": "Terminal borders that don't cost a cell",
-        "url": "https://www.joshka.net/cell-borders/",
-        "score": 396,
-        "rank": 9
-      }
-    },
     "github_trending": {
       "items": 34,
       "unique_urls": 19,
@@ -84,6 +72,18 @@
         "url": "https://github.com/huamidev/GestaltX",
         "score": 7616,
         "rank": 1
+      }
+    },
+    "lobsters": {
+      "items": 33,
+      "unique_urls": 22,
+      "median_days_on_board": 1,
+      "one_day_pct": 55,
+      "top_item": {
+        "title": "Terminal borders that don't cost a cell",
+        "url": "https://www.joshka.net/cell-borders/",
+        "score": 396,
+        "rank": 9
       }
     },
     "devto": {
@@ -170,6 +170,18 @@
         "rank": 1
       }
     },
+    "lemmy": {
+      "items": 17,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 87,
+      "top_item": {
+        "title": "Announcing Rust 1.100.0",
+        "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+        "score": 890,
+        "rank": 4
+      }
+    },
     "thenewstack": {
       "items": 17,
       "unique_urls": 17,
@@ -180,18 +192,6 @@
         "url": "https://thenewstack.io/aws-emulator-verification-loops/",
         "score": 15,
         "rank": 1
-      }
-    },
-    "lemmy": {
-      "items": 16,
-      "unique_urls": 14,
-      "median_days_on_board": 1,
-      "one_day_pct": 86,
-      "top_item": {
-        "title": "Announcing Rust 1.100.0",
-        "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
-        "score": 890,
-        "rank": 4
       }
     },
     "gargron": {
@@ -818,6 +818,18 @@
         "rank": 1
       }
     },
+    "begriffs": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How to build dependable bare-metal ARM firmware with UNIX tools",
+        "url": "https://begriffs.com/posts/2023-10-10-bare-metal-firmware.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -1162,6 +1174,18 @@
       "top_item": {
         "title": "How to effectively debug when you no longer understand the code",
         "url": "https://copyconstruct.medium.com/how-to-effectively-debug-when-you-no-longer-understand-the-code-bd3dcb2c5f7b?source=rss-87c8c84f24b1------2",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "gds": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Opening GOV.UK Wallet sandbox to digital verification services",
+        "url": "https://gds.blog.gov.uk/2026/10/19/opening-gov-uk-wallet-sandbox-to-digital-verification-services/",
         "score": 10,
         "rank": 1
       }
