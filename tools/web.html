@@ -67,6 +67,7 @@
     <button data-tool="pxrem">px ↔ rem</button>
     <button data-tool="utm">UTM builder</button>
     <button data-tool="aifree">AI-free badge</button>
+    <button data-tool="meta">meta audit</button>
   </div>
 
   <div class="panel" id="p-qr">
@@ -131,6 +132,13 @@
     <div id="hs-out" style="margin-top:8px"></div>
   </div>
 
+  <div class="panel" id="p-meta">
+    <h2>Social card audit</h2>
+    <p class="hint">Paste a page's <code>&lt;head&gt;</code> (or full HTML) — extracts Open Graph / Twitter / standard meta, renders the share preview, and lists what's missing.</p>
+    <textarea id="ma-in" rows="7" style="width:100%" placeholder="<head>…<meta property=\"og:title\" …>"></textarea>
+    <p><button class="btn" id="ma-go">audit</button></p>
+    <div id="ma-out"></div>
+  </div>
   <div class="panel" id="p-aifree">
     <h2>AI-free badge</h2>
     <p class="hint">Declare your site is human-made. Pick a label + style, copy the SVG or HTML snippet.</p>
@@ -183,7 +191,7 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree"];
+const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta"];
 
 // ---- AI-free badge ----
 function afSvg(label, style) {
@@ -236,6 +244,54 @@ function utmGo() {
 }
 for (const k of ["url","source","medium","campaign","term","content"])
   document.getElementById("ut-"+k).addEventListener("input", utmGo);
+// ---- social card audit ----
+document.getElementById("ma-go").addEventListener("click", () => {
+  const src = document.getElementById("ma-in").value;
+  const out = document.getElementById("ma-out");
+  if (!src.trim()) { out.innerHTML = ""; return; }
+  const doc = new DOMParser().parseFromString(src, "text/html");
+  const get = sel => (doc.querySelector(sel) || {}).content || "";
+  const M = {
+    title: doc.querySelector("title")?.textContent?.trim() || get('meta[name="twitter:title"]'),
+    description: get('meta[name="description"]') || get('meta[property="og:description"]'),
+    og_title: get('meta[property="og:title"]'),
+    og_desc: get('meta[property="og:description"]'),
+    og_image: get('meta[property="og:image"]'),
+    og_url: get('meta[property="og:url"]'),
+    og_type: get('meta[property="og:type"]'),
+    tw_card: get('meta[name="twitter:card"]'),
+    tw_title: get('meta[name="twitter:title"]'),
+    tw_image: get('meta[name="twitter:image"]'),
+    canonical: (doc.querySelector('link[rel="canonical"]') || {}).href || "",
+    site_name: get('meta[property="og:site_name"]'),
+  };
+  const img = M.og_image || M.tw_image;
+  const checks = [
+    ["title", !!M.title], ["description", !!M.description],
+    ["og:title", !!M.og_title], ["og:description", !!M.og_desc],
+    ["og:image", !!img], ["og:url", !!M.og_url], ["og:type", !!M.og_type],
+    ["twitter:card", !!M.tw_card], ["canonical", !!M.canonical],
+    ["og:site_name", !!M.site_name],
+  ];
+  const miss = checks.filter(c => !c[1]);
+  const mark = ok => ok ? '<b style="color:var(--green)">✓</b>' : '<b style="color:#e5534b">✗</b>';
+  const row = (k, v) => `<div class="row" style="font-size:12px"><span style="color:var(--dim);width:110px;display:inline-block">${k}</span> <span>${v ? v.replace(/</g,"&lt;") : "<i style=color:var(--dim)>—</i>"}</span></div>`;
+  out.innerHTML = `<div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:10px">
+    <div style="border:1px solid var(--border);border-radius:10px;overflow:hidden;width:330px;flex-shrink:0">
+      ${img ? `<img src="${img}" style="width:100%;height:170px;object-fit:cover;display:block" onerror="this.outerHTML='<div style=\\'height:170px;background:#161b22;display:flex;align-items:center;justify-content:center;color:var(--dim)\\'>image failed to load</div>'">`
+            : `<div style="height:170px;background:#161b22;display:flex;align-items:center;justify-content:center;color:var(--dim)">no og:image</div>`}
+      <div style="padding:10px;background:var(--panel)">
+        <div style="font-size:13px;font-weight:600">${(M.og_title || M.tw_title || M.title || "untitled").replace(/</g,"&lt;")}</div>
+        <div style="font-size:12px;color:var(--dim);margin-top:3px">${(M.og_desc || M.description || "").replace(/</g,"&lt;").slice(0, 140)}</div>
+        <div style="font-size:11px;color:var(--dim);margin-top:6px">${(M.og_url || "").replace(/</g,"&lt;")}</div>
+      </div>
+    </div>
+    <div style="flex:1;min-width:260px">
+      <p style="margin:0 0 6px">${mark(!miss.length)} ${miss.length ? miss.length + " missing" : "all key tags present"}</p>
+      ${checks.map(c => `<span style="display:inline-block;margin:2px 8px 2px 0;font-size:12px">${mark(c[1])} ${c[0]}</span>`).join("")}
+      <div style="margin-top:10px">${row("twitter:card", M.tw_card)}${row("og:type", M.og_type)}${row("canonical", M.canonical)}</div>
+    </div></div>`;
+});
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "qr");
