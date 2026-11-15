@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T13:47:23.431489+00:00",
+ "generated_at": "2026-11-15T13:53:05.014042+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 788,
- "unique_urls": 651,
- "items_in_latest": 397,
- "items_per_day_avg": 87.6,
+ "total_rows": 803,
+ "unique_urls": 666,
+ "items_in_latest": 412,
+ "items_per_day_avg": 89.2,
  "sources": {
   "arstechnica": {
    "rows": 16,
@@ -22,6 +22,10 @@
    "days_active": 8
   },
   "changelog": {
+   "rows": 15,
+   "days_active": 1
+  },
+  "codinghorror": {
    "rows": 15,
    "days_active": 1
   },
@@ -153,12 +157,12 @@
    "hits": 15
   },
   {
-   "domain": "theverge.com",
-   "hits": 14
+   "domain": "blog.codinghorror.com",
+   "hits": 15
   },
   {
-   "domain": "krebsonsecurity.com",
-   "hits": 10
+   "domain": "theverge.com",
+   "hits": 14
   }
  ],
  "files": {
