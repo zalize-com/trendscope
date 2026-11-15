@@ -126,7 +126,7 @@ function audit(html) {
     ids[id] = 1;
   });
   doc.querySelectorAll("[aria-hidden='true']").forEach(el => {
-    if (el.querySelector("a,button,input,select,textarea,[tabindex]"))
+    if (el.querySelector("a[href],button,input,select,textarea,[tabindex]:not([tabindex='-1'])"))
       add("err", "aria-hidden element contains focusable content", el);
   });
   doc.querySelectorAll("table").forEach(el => {
