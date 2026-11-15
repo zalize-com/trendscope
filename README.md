@@ -80,6 +80,12 @@ compare within a source, not across.
 - **Calendar** (`calendar.html`): month grid — each day's highest-scoring item at a glance.
 - **Canon** (`canon.html`): the HN canon — monthly top-10 front pages backfilled to 2007
   (data/hn-canon-monthly.csv, 238 months), all-time top-40 + this-month-in-history.
+- **Show HN canon** (`showhn.html`): monthly top-10 product launches backfilled to 2012
+  (data/show-hn-monthly.csv, 179 months) — the history of what builders shipped.
+- **Rituals** (`rituals.html`): any month's three HN rituals side by side — top story,
+  top launch, top question (?m= deep link).
+  Analyses of the three canons live in `docs/canon-analysis.md`,
+  `docs/showhn-analysis.md`, `docs/askhn-analysis.md` — events, objects, people.
 - **Hiring pulse** (`hiring.html`): monthly HN "Who is hiring?" tracker —
   positions-vs-seekers ratio, 15-year monthly history chart (hiring-monthly.csv).
 - **Digests** (`digest.html`): weekly markdown digests rendered in-site.
