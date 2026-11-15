@@ -83,6 +83,7 @@
     <button data-tool="b64file">b64→file</button>
     <button data-tool="ascii">ASCII</button>
     <button data-tool="gostruct">JSON → Go</button>
+    <button data-tool="jwtsign">JWT sign</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -321,12 +322,26 @@
     <div class="err" id="go-err"></div>
   </div>
 
+
+  <div class="panel" id="p-jwtsign">
+    <h2>JWT signer (HS256)</h2>
+    <p class="hint">Signs a JWT with HMAC-SHA256 in your browser via WebCrypto — the secret never leaves this page. Pairs with the JWT decoder.</p>
+    <div style="display:grid;gap:8px">
+      <textarea id="jwt-h" placeholder='{"alg":"HS256","typ":"JWT"}' style="width:100%;height:56px"></textarea>
+      <textarea id="jwt-p" placeholder='{"sub":"user-1","iat":1731700000,"exp":1731703600}' style="width:100%;height:90px"></textarea>
+      <input id="jwt-s" type="text" placeholder="secret" style="padding:8px 11px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)">
+    </div>
+    <div class="out" id="jwt-o" style="word-break:break-all"></div>
+    <button class="copy" id="jwt-c">copy token</button>
+    <div class="err" id="jwt-e"></div>
+  </div>
+
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts","csvprof","mcp","sql","b64file","ascii","gostruct"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts","csvprof","mcp","sql","b64file","ascii","gostruct","jwtsign"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -1263,6 +1278,34 @@ ccommit();
   $("go-in").addEventListener("input", go);
   $("go-copy").onclick = () => navigator.clipboard?.writeText($("go-out").textContent).then(() => { $("go-copy").textContent = "copied"; setTimeout(() => $("go-copy").textContent = "copy structs", 1200); });
   $("go-in").value = '{"user":{"id":1,"name":"ada","tags":["x","y"]},"repos":[{"id":9,"private":false}]}';
+  go();
+})();
+
+/* ---------- jwt hs256 signer ---------- */
+(function () {
+  function b64url(buf) {
+    const bytes = typeof buf === "string" ? new TextEncoder().encode(buf) : new Uint8Array(buf);
+    let bin = ""; bytes.forEach(b => bin += String.fromCharCode(b));
+    return btoa(bin).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
+  }
+  async function go() {
+    try {
+      const h = JSON.parse($("jwt-h").value || "{}"), p = JSON.parse($("jwt-p").value || "{}");
+      const secret = $("jwt-s").value;
+      if (!secret) { $("jwt-o").textContent = ""; $("jwt-e").textContent = "✗ secret required"; return; }
+      const data = b64url(JSON.stringify(h)) + "." + b64url(JSON.stringify(p));
+      const key = await crypto.subtle.importKey("raw", new TextEncoder().encode(secret),
+        {name:"HMAC", hash:"SHA-256"}, false, ["sign"]);
+      const sig = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(data));
+      $("jwt-o").textContent = data + "." + b64url(sig);
+      $("jwt-e").textContent = "";
+    } catch (e) { $("jwt-o").textContent = ""; $("jwt-e").textContent = "✗ " + e.message; }
+  }
+  for (const id of ["jwt-h","jwt-p","jwt-s"]) $(id).addEventListener("input", go);
+  $("jwt-c").onclick = () => navigator.clipboard?.writeText($("jwt-o").textContent).then(() => { $("jwt-c").textContent = "copied"; setTimeout(() => $("jwt-c").textContent = "copy token", 1200); });
+  $("jwt-h").value = '{"alg":"HS256","typ":"JWT"}';
+  $("jwt-p").value = '{"sub":"demo","iat":' + Math.floor(Date.now()/1000) + ',"exp":' + (Math.floor(Date.now()/1000)+3600) + '}';
+  $("jwt-s").value = "demo-secret";
   go();
 })();
 
