@@ -49,6 +49,7 @@
   <h1 id="h1">topi<span>cs</span></h1>
   <p class="sub" id="sub">loading…</p>
   <div class="chips" id="chips"></div>
+  <p class="sub" id="movers" style="margin:-6px 0 12px"></p>
   <div id="out"><p id="err"></p></div>
   <footer>
     Open data, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> ·
@@ -110,6 +111,24 @@ fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
           vals.map((v,i) => `<rect x="${i*8}" y="${14 - Math.round(12*v/mx)}" width="6" height="${Math.max(1,Math.round(12*v/mx))}" fill="var(--accent)" opacity="${0.35 + 0.65*v/mx}"/>`).join("")}</svg>`;
         el.title = vals.map((v,i) => `${days[i]}: ${v}`).join(" · ");
       });
+      // topic movers: last day vs mean of the previous days
+      if (days.length >= 2) {
+        const allT = [...new Set(rows.map(r => r[ti]))];
+        const deltas = allT.map(t => {
+          const last = rows.find(r => r[di] === days[days.length-1] && r[ti] === t);
+          const now = last ? +last[ci2] : 0;
+          const prev = days.slice(0, -1).map(d => {
+            const r = rows.find(x => x[di] === d && x[ti] === t);
+            return r ? +r[ci2] : 0;
+          });
+          const avg = prev.reduce((a,b) => a+b, 0) / prev.length;
+          return { t, now, delta: now - avg };
+        }).filter(x => Math.abs(x.delta) >= 1)
+          .sort((a,b) => b.delta - a.delta);
+        if (deltas.length)
+          document.getElementById("movers").innerHTML = "topic movers vs recent avg: " + deltas.slice(0,4).map(x =>
+            `<a href="topics.html?t=${encodeURIComponent(x.t)}" style="color:${x.delta>0?"var(--green)":"var(--orange)"}">${x.t} ${x.delta>0?"+":"−"}${Math.abs(x.delta).toFixed(1)}</a>`).join(" · ");
+      }
     }).catch(() => {});
     return;
   }
