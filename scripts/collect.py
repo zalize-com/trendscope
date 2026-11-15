@@ -518,7 +518,7 @@ def fetch_theregister(limit=15):
     for attempt in range(3):
         try:
             req = urllib.request.Request(
-                "https://www.theregister.com/software/headlines.atom",
+                "https://feeds.feedburner.com/TheRegister",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
                 root = ET.fromstring(resp.read().decode("utf-8"))
