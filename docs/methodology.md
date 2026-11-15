@@ -66,3 +66,12 @@ reference an undefined identifier and the tool is dead at runtime.
 On pages where `$` is IIFE-local, new blocks must use
 `document.getElementById` explicitly. Before writing `$` into any
 page, grep whether it is a page-global or a closure-local.
+
+
+### 9. Never split a JS string across source lines
+A demo string for the feed-finder tool was edited to include an extra
+`<link>` tag, and the edit let the string wrap to a second source line.
+A literal newline inside a `'...'` string is a SyntaxError — the whole
+inline script died and tools/web.html rendered nothing. When extending
+a JS string literal, keep it on one line (or deliberately use a
+template literal); "string contains the text" is not "the page runs".
