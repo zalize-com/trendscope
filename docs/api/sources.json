@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-15T17:24:51.267109+00:00",
+  "generated_at": "2026-11-15T17:26:41.737495+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
-      "items": 193,
-      "unique_urls": 178,
+      "items": 191,
+      "unique_urls": 176,
       "median_days_on_board": 1,
       "one_day_pct": 92,
       "top_item": {
@@ -204,6 +204,18 @@
         "url": "https://thenewstack.io/aws-emulator-verification-loops/",
         "score": 15,
         "rank": 1
+      }
+    },
+    "eff": {
+      "items": 16,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 93,
+      "top_item": {
+        "title": "Tech Companies Are Trying to Shift the Entire Concept of Privacy (Again)",
+        "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+        "score": 339,
+        "rank": 3
       }
     },
     "v2ocaml": {
@@ -3518,6 +3530,162 @@
         "rank": 1
       }
     },
+    "datomic": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The Pull Newsletter (Nov 5, 2026)",
+        "url": "https://blog.datomic.com/2026/11/thepull.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "davidsmith": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Re-Developing Perspective",
+        "url": "http://david-smith.org/blog/2026/10/01/re-developing-perspective/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "developertoarchitect": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Lesson 225 - Architecture Narrative Act One (November 2, 2026)",
+        "url": "http://www.developertoarchitect.com/lessons/lesson225.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "dolthub": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Lazy Flush",
+        "url": "https://dolthub.com/blog/2026-11-13-lazy-flush/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "dylanpaulus": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "First Ultramarathon: River Run 50k",
+        "url": "https://dylanpaulus.com/posts/2026/riverrun-50k/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "enkisoftware": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Export Voxels to Optimised glTF Mesh for Unreal Nanite",
+        "url": "https://www.enkisoftware.com/devlogpost-20250318-1-Export-Voxels-to-Optimised-glTF-Mesh-for-Unreal-Nanite",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "epicweb": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "React End-to-End Testing with Playwright (workshop)",
+        "url": "https://www.epicweb.dev/workshops/react-end-to-end-testing-with-playwright",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "eviltester": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Quern - Jerimiah Ham | Show 033",
+        "url": "https://www.eviltester.com/show/033-quern-jerimiah-ham/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "furia": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Unread, Unbound (furialog)",
+        "url": "https://furia.com/page.cgi?type=log&id=528",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "hackingwithswift": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Introducing Kickstart: the app that helps indie developers ship",
+        "url": "https://www.hackingwithswift.com/articles/285/introducing-kickstart-the-app-that-helps-indie-developers-ship",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "hashicorp": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "From insight to action: improving infrastructure risk posture with Terraform and Concert",
+        "url": "https://www.hashicorp.com/blog/from-insight-to-action-improving-infrastructure-risk-posture-with-terraform-and-c",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "joshuakgoldberg": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "2022 In Review",
+        "url": "https://joshuakgoldberg.com/blog/2022-in-review/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "joshwcomeau": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The Future of CSS ✨",
+        "url": "https://www.joshwcomeau.com/css/interop-2027/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -3766,6 +3934,18 @@
       "top_item": {
         "title": "Agents Wrote All of AWS Emulator’s 200+ Services. What’s the Engineer’s Job Now?",
         "url": "https://www.qodo.ai/blog/aws-emulator-agents-merge-gate/",
+        "score": 12,
+        "rank": 1
+      }
+    },
+    "jonmellman": {
+      "items": 12,
+      "unique_urls": 12,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Advanced TypeScript Patterns: API Contracts",
+        "url": "https://jonmellman.com/posts/typescript-for-api-contracts",
         "score": 12,
         "rank": 1
       }
@@ -4414,6 +4594,18 @@
       "top_item": {
         "title": "AMP and Responsive Web Design",
         "url": "https://responsivenews.co.uk/post/131144968568/amp-and-responsive-web-design",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "erlang": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Erlang/OTP 29.1 Release",
+        "url": "https://www.erlang.org/news/191",
         "score": 10,
         "rank": 1
       }
@@ -5762,6 +5954,42 @@
         "rank": 1
       }
     },
+    "davefarley": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "MSEC – The Modern Software Engineer’s Companion",
+        "url": "https://www.davefarley.net/?p=370",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "germanvelasco": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Extensible, personal software is the sweet spot for LLMs",
+        "url": "https://www.germanvelasco.com/blog/extensible-personal-software",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "itsecurityguru": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Hackers exploit exposed GeoVision CCTV software to disable Defender and deploy cryptominers",
+        "url": "https://www.itsecurityguru.org/2026/11/13/hackers-exploit-exposed-geovision-cctv-software-to-disable-defender-and-deploy-cryptominers/?utm_source=rss&utm_medium=rss&utm_campaign=hackers-exploit-exposed-geovision-cctv-software-to-disable-defender-and-deploy-cryptominers",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "susam": {
       "items": 9,
       "unique_urls": 9,
@@ -5916,18 +6144,6 @@
         "url": "/blog/posts/2024-06-27-Adventure/",
         "score": 8,
         "rank": 1
-      }
-    },
-    "planeterlang": {
-      "items": 7,
-      "unique_urls": 7,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Keeping Real-Time Communication Platforms Online During Peak Demand - Bart Gorny | ESL Webinar",
-        "url": "https://www.youtube.com/watch?v=2Dn6fGt7wJw",
-        "score": 9,
-        "rank": 2
       }
     },
     "forweb": {
@@ -6144,6 +6360,18 @@
         "url": "https://this-week-in-rust.org/blog/2026/11/11/this-week-in-rust-677/",
         "score": 4,
         "rank": 1
+      }
+    },
+    "planeterlang": {
+      "items": 4,
+      "unique_urls": 4,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Keeping Real-Time Communication Platforms Online During Peak Demand - Bart Gorny | ESL Webinar",
+        "url": "https://www.youtube.com/watch?v=2Dn6fGt7wJw",
+        "score": 9,
+        "rank": 2
       }
     },
     "javascriptweekly": {

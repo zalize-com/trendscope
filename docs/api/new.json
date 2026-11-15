@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T17:24:50.804127+00:00",
+ "generated_at": "2026-11-15T17:26:41.175768+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 6741,
- "new_items": 6615,
+ "total_items": 7003,
+ "new_items": 6877,
  "by_source": {
   "producthunt": 45,
   "show_hn": 40,
@@ -118,16 +118,22 @@
   "danluu": 15,
   "dashbit": 15,
   "datanewstumblr": 15,
+  "datomic": 15,
   "daverupert": 15,
+  "davidsmith": 15,
   "deanebarker": 15,
   "deathandgravity": 15,
   "den": 15,
   "dev37signals": 15,
+  "developertoarchitect": 15,
   "dimitri": 15,
   "discord": 15,
+  "dolthub": 15,
   "drmaciver": 15,
+  "dylanpaulus": 15,
   "ebaytechblog": 15,
   "echojs": 15,
+  "eff": 15,
   "effectivetypescript": 15,
   "elastic": 15,
   "elixirlang": 15,
@@ -135,18 +141,22 @@
   "engineercodexsubstack": 15,
   "engineeringsquarespace": 15,
   "engineeringtumblr": 15,
+  "enkisoftware": 15,
+  "epicweb": 15,
   "ericwbailey": 15,
   "erikarow": 15,
   "esbuenonoahstokes": 15,
   "ethanmarcotte": 15,
   "etsy": 15,
   "eugeneyan": 15,
+  "eviltester": 15,
   "feedpress": 15,
   "feeds2feedburner": 15,
   "feltrontumblr": 15,
   "fettblog": 15,
   "fireside": 15,
   "fly": 15,
+  "furia": 15,
   "gamasutra": 15,
   "geshan": 15,
   "gitlab_blog": 15,
@@ -155,7 +165,9 @@
   "googletestingblogspot": 15,
   "groovyapache": 15,
   "grumpyg": 15,
+  "hackingwithswift": 15,
   "hacksmozilla": 15,
+  "hashicorp": 15,
   "henry": 15,
   "hex": 15,
   "hillel": 15,
@@ -173,6 +185,8 @@
   "jmesnil": 15,
   "johnkeefe": 15,
   "johnmillikin": 15,
+  "joshuakgoldberg": 15,
+  "joshwcomeau": 15,
   "jrsinclair": 15,
   "julialang": 15,
   "jvns": 15,
@@ -308,6 +322,7 @@
   "codetutsplus": 12,
   "codium": 12,
   "jetbrains": 12,
+  "jonmellman": 12,
   "magpiraspberrypi": 12,
   "rmondello": 12,
   "tumblrmapsbynik": 12,
@@ -359,6 +374,7 @@
   "createaprowebsite": 10,
   "csaiot": 10,
   "dannorris": 10,
+  "davefarley": 10,
   "deliverooengineering": 10,
   "devblogsmicrosoft": 10,
   "devcop": 10,
@@ -372,12 +388,14 @@
   "elixirlibhunt": 10,
   "engineeringblogyelp": 10,
   "engineeringindeedblog": 10,
+  "erlang": 10,
   "flowingdata": 10,
   "frankchimero": 10,
   "freecodecamp": 10,
   "frontendmasters": 10,
   "gds": 10,
   "geoffgraham": 10,
+  "germanvelasco": 10,
   "github_eng": 10,
   "gleam": 10,
   "gustedtwordpress": 10,
@@ -387,6 +405,7 @@
   "holub": 10,
   "howtomarketagame": 10,
   "itnext": 10,
+  "itsecurityguru": 10,
   "jakearchibald": 10,
   "jakelazaroff": 10,
   "jesseduffield": 10,
@@ -17767,6 +17786,206 @@
    "metric": "feed rank"
   },
   {
+   "title": "The Pull Newsletter (Nov 5, 2026)",
+   "url": "https://blog.datomic.com/2026/11/thepull.html",
+   "source": "datomic",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Pull Newsletter (Oct 5, 2026)",
+   "url": "https://blog.datomic.com/2026/10/thepull.html",
+   "source": "datomic",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing DatomicConf 2026",
+   "url": "https://blog.datomic.com/2026/09/datomicconf.html",
+   "source": "datomic",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Datomic at Clojure/Conj 2025",
+   "url": "https://blog.datomic.com/2026/01/conj2025.html",
+   "source": "datomic",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Amazing Day of Datomic!",
+   "url": "https://blog.datomic.com/2024/09/Amazing-Day-of-Datomic.html",
+   "source": "datomic",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Jepsen Tests Datomic",
+   "url": "https://blog.datomic.com/2024/05/Jepsen-tests-Datomic.html",
+   "source": "datomic",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Datomic Local is Released",
+   "url": "https://blog.datomic.com/2023/08/datomic-local-is-released.html",
+   "source": "datomic",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Datomic Cloud is Free",
+   "url": "https://blog.datomic.com/2023/06/datomic-cloud-is-free.html",
+   "source": "datomic",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Datomic is Free",
+   "url": "https://blog.datomic.com/2023/04/datomic-is-free.html",
+   "source": "datomic",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Implicit Partitions",
+   "url": "https://blog.datomic.com/2023/04/implicit-partitions.html",
+   "source": "datomic",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Query Stats",
+   "url": "https://blog.datomic.com/2023/01/Query-Stats.html",
+   "source": "datomic",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Datomic Cloud 884-9095: New tiers and internet access",
+   "url": "https://blog.datomic.com/2021/07/Datomic-Cloud-884-9095-New-tiers-and-internet-access.html",
+   "source": "datomic",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Datomic Knowledgebase",
+   "url": "https://blog.datomic.com/2020/10/datomic-knowledgebase.html",
+   "source": "datomic",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cognitect Joins Nubank!",
+   "url": "https://blog.datomic.com/2020/07/cognitect-joins-nubank.html",
+   "source": "datomic",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Datomic Analytics (Preview)",
+   "url": "https://blog.datomic.com/2019/10/datomic-analytics-preview.html",
+   "source": "datomic",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MSEC – The Modern Software Engineer’s Companion",
+   "url": "https://www.davefarley.net/?p=370",
+   "source": "davefarley",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 Things I Learned About Being a Technical Lead",
+   "url": "https://www.davefarley.net/?p=366",
+   "source": "davefarley",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Team Topologies – Book Review",
+   "url": "https://www.davefarley.net/?p=360",
+   "source": "davefarley",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is Modern Software Engineering?",
+   "url": "https://www.davefarley.net/?p=352",
+   "source": "davefarley",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Women in Computing",
+   "url": "https://www.davefarley.net/?p=341",
+   "source": "davefarley",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is SAFe safe?",
+   "url": "https://www.davefarley.net/?p=337",
+   "source": "davefarley",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Are we ‘Deploying’, ‘Releasing’ or ‘Delivering’?",
+   "url": "https://www.davefarley.net/?p=333",
+   "source": "davefarley",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "101 Pieces of Advice for New Developers",
+   "url": "https://www.davefarley.net/?p=322",
+   "source": "davefarley",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Impact of Continuous Delivery",
+   "url": "https://www.davefarley.net/?p=314",
+   "source": "davefarley",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10 Years of “Continuous Delivery”",
+   "url": "https://www.davefarley.net/?p=305",
+   "source": "davefarley",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Conventional Commit rules everything around me",
    "url": "https://daverupert.com/2026/11/conventional-commit-rules-everything-around-me/",
    "source": "daverupert",
@@ -17882,6 +18101,126 @@
    "title": "Finding curated public domain images",
    "url": "https://daverupert.com/2026/06/curated-public-domain-images/",
    "source": "daverupert",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Re-Developing Perspective",
+   "url": "http://david-smith.org/blog/2026/10/01/re-developing-perspective/",
+   "source": "davidsmith",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple-like",
+   "url": "http://david-smith.org/blog/2026/06/03/apple-like/",
+   "source": "davidsmith",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Six Years Perfecting Maps on watchOS",
+   "url": "http://david-smith.org/blog/2026/04/29/maps-on-watchos/",
+   "source": "davidsmith",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pedometer++ v8: Designed for Adventure",
+   "url": "http://david-smith.org/blog/2026/04/28/pedometer-v8/",
+   "source": "davidsmith",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generally Useful Prompts",
+   "url": "http://david-smith.org/blog/2026/03/20/generally-useful-prompts/",
+   "source": "davidsmith",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Display Zoom Statistics",
+   "url": "http://david-smith.org/blog/2026/03/12/display-zoom-stats/",
+   "source": "davidsmith",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Widgetsmith Five Years Later",
+   "url": "http://david-smith.org/blog/2025/09/18/widgetsmith-at-five/",
+   "source": "davidsmith",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pedometer++ Redesign Walkthrough",
+   "url": "http://david-smith.org/blog/2025/09/04/pedometer-redesign/",
+   "source": "davidsmith",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Watch",
+   "url": "http://david-smith.org/blog/2025/07/22/new-watch/",
+   "source": "davidsmith",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fresh Workouts",
+   "url": "http://david-smith.org/blog/2025/07/10/new-workout/",
+   "source": "davidsmith",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Moving Home",
+   "url": "http://david-smith.org/blog/2025/07/04/new-home/",
+   "source": "davidsmith",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding my Way",
+   "url": "http://david-smith.org/blog/2025/07/02/new-maps/",
+   "source": "davidsmith",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding Inspiration",
+   "url": "http://david-smith.org/blog/2025/07/01/inspo-driven/",
+   "source": "davidsmith",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Considerations for New iOS Versions",
+   "url": "http://david-smith.org/blog/2025/06/27/requiring-26/",
+   "source": "davidsmith",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don‘t Liquid Glass All the Things",
+   "url": "http://david-smith.org/blog/2025/06/17/design-dary-liquid-glass-everything/",
+   "source": "davidsmith",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -18687,6 +19026,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Lesson 225 - Architecture Narrative Act One (November 2, 2026)",
+   "url": "http://www.developertoarchitect.com/lessons/lesson225.html",
+   "source": "developertoarchitect",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lesson 224 - Creating an Architecture Narrative (October 5, 2026)",
+   "url": "http://www.developertoarchitect.com/lessons/lesson224.html",
+   "source": "developertoarchitect",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lesson 223 - Approaches For Legacy Migration (September 7, 2026)",
+   "url": "http://www.developertoarchitect.com/lessons/lesson223.html",
+   "source": "developertoarchitect",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lesson 222 - Transactional Sagas and Atomicity (August 3, 2026)",
+   "url": "http://www.developertoarchitect.com/lessons/lesson222.html",
+   "source": "developertoarchitect",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lesson 221 - Introduction to Transactional Sagas (July 6, 2026)",
+   "url": "http://www.developertoarchitect.com/lessons/lesson221.html",
+   "source": "developertoarchitect",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lesson 220 - Collaborating With The Business (June 1, 2026)",
+   "url": "http://www.developertoarchitect.com/lessons/lesson220.html",
+   "source": "developertoarchitect",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lesson 219 - Fitness Function Driven Architecture Revisited (May 4, 2026)",
+   "url": "http://www.developertoarchitect.com/lessons/lesson219.html",
+   "source": "developertoarchitect",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lesson 218 - Thread Delegate Pattern (April 6, 2026)",
+   "url": "http://www.developertoarchitect.com/lessons/lesson218.html",
+   "source": "developertoarchitect",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lesson 217 - Supervisor-Consumer Pattern (March 2, 2026)",
+   "url": "http://www.developertoarchitect.com/lessons/lesson217.html",
+   "source": "developertoarchitect",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lesson 216 - Creating Scalable Systems (February 2, 2026)",
+   "url": "http://www.developertoarchitect.com/lessons/lesson216.html",
+   "source": "developertoarchitect",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lesson 215 - Fitness Function-Driven Architecture (January 5, 2026)",
+   "url": "http://www.developertoarchitect.com/lessons/lesson215.html",
+   "source": "developertoarchitect",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lesson 214 - Microservice All The Things Pitfall (December 1, 2025)",
+   "url": "http://www.developertoarchitect.com/lessons/lesson214.html",
+   "source": "developertoarchitect",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lesson 213 - Governing Architectural Constraints (November 3, 2025)",
+   "url": "http://www.developertoarchitect.com/lessons/lesson213.html",
+   "source": "developertoarchitect",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lesson 212 - A Framework for Stressor Analysis (October 6, 2025)",
+   "url": "http://www.developertoarchitect.com/lessons/lesson212.html",
+   "source": "developertoarchitect",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lesson 211 - Architectural Modularity (September 1, 2025)",
+   "url": "http://www.developertoarchitect.com/lessons/lesson211.html",
+   "source": "developertoarchitect",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Yeah, I Know. Stop Bugging Me.",
    "url": "https://developsense.com/blog/2026/11/yeah-i-know-stop-bugging-me",
    "source": "developsense",
@@ -19183,6 +19642,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Lazy Flush",
+   "url": "https://dolthub.com/blog/2026-11-13-lazy-flush/",
+   "source": "dolthub",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Working with Jev",
+   "url": "https://dolthub.com/blog/2026-11-12-working-with-jev/",
+   "source": "dolthub",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Version Control Database Spotlight: Argon",
+   "url": "https://dolthub.com/blog/2026-11-10-argon-spotlight/",
+   "source": "dolthub",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Doltgres Now Supports Cursors",
+   "url": "https://dolthub.com/blog/2026-11-04-doltgres-cursors/",
+   "source": "dolthub",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DumboDB: Now with More Mongo!",
+   "url": "https://dolthub.com/blog/2026-11-03-dumbodb-operators/",
+   "source": "dolthub",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DoltLite on DoltHub",
+   "url": "https://dolthub.com/blog/2026-11-02-doltlite-on-dolthub/",
+   "source": "dolthub",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DoltLite + datalib",
+   "url": "https://dolthub.com/blog/2026-10-29-doltlite-datalib/",
+   "source": "dolthub",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Going Beyond Three-Way Merge",
+   "url": "https://dolthub.com/blog/2026-10-27-dolt-multiple-merge-bases/",
+   "source": "dolthub",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Make an Explainer Video",
+   "url": "https://dolthub.com/blog/2026-10-28-how-to-make-an-explainer-video/",
+   "source": "dolthub",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WINE: Window Equivalence Translation",
+   "url": "https://dolthub.com/blog/2026-10-26-wine/",
+   "source": "dolthub",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Happy (Belated) Birthday, Beads!",
+   "url": "https://dolthub.com/blog/2026-10-23-beads-birthday/",
+   "source": "dolthub",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Dolt Works: The Prolly Tree",
+   "url": "https://dolthub.com/blog/2026-10-22-how-dolt-works-video/",
+   "source": "dolthub",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dolt now supports committing to multiple branches in one transaction",
+   "url": "https://dolthub.com/blog/2026-10-21-multi-branch-commit/",
+   "source": "dolthub",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DumboDB: Announcing Backup Support",
+   "url": "https://dolthub.com/blog/2026-10-20-dumbodb-backups/",
+   "source": "dolthub",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Doltgres databases are now supported on DoltHub",
+   "url": "https://dolthub.com/blog/2026-10-19-doltgres-on-dolthub/",
+   "source": "dolthub",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "On Mediocrity",
    "url": "https://drmaciver.substack.com/p/on-mediocrity",
    "source": "drmaciver",
@@ -19379,6 +19958,126 @@
    "url": "https://dropbox.tech/security/dropbox-mcp-dash-design-code-security",
    "source": "dropbox",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "First Ultramarathon: River Run 50k",
+   "url": "https://dylanpaulus.com/posts/2026/riverrun-50k/",
+   "source": "dylanpaulus",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Use PostgreSQL for Data Normalization",
+   "url": "https://dylanpaulus.com/posts/2024/how-to-use-postgres-for-data-normalization/",
+   "source": "dylanpaulus",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Resizing AWS Mac Volumes",
+   "url": "https://dylanpaulus.com/posts/2024/resizing-mac-aws-volumes/",
+   "source": "dylanpaulus",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Recursive Query in SQL: What It Is, and How to Write One",
+   "url": "https://dylanpaulus.com/posts/2024/recursive-query-in-sql-what-it-is-and-how-to-write-one/",
+   "source": "dylanpaulus",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Understanding SQL Aggregate Functions",
+   "url": "https://dylanpaulus.com/posts/2024/understanding-sql-aggregate-functions/",
+   "source": "dylanpaulus",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Understanding Foreign Keys in PostgreSQL",
+   "url": "https://dylanpaulus.com/posts/2024/understanding-postgres-foreign-keys/",
+   "source": "dylanpaulus",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Explaining PostgreSQL EXPLAIN",
+   "url": "https://dylanpaulus.com/posts/2024/explaining-postgresql-explain/",
+   "source": "dylanpaulus",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PostgreSQL Security Guide",
+   "url": "https://dylanpaulus.com/posts/2024/postgres-security-guide/",
+   "source": "dylanpaulus",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Use a Common Table Expression (CTE) in SQL",
+   "url": "https://dylanpaulus.com/posts/2024/common-table-expressions-in-sql/",
+   "source": "dylanpaulus",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Understanding PostgreSQL Tablespaces",
+   "url": "https://dylanpaulus.com/posts/2024/understanding-postgres-tablespaces/",
+   "source": "dylanpaulus",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Design Your PostgreSQL Database: Two Schema Examples",
+   "url": "https://dylanpaulus.com/posts/2024/how-to-design-postgres-database-schemas/",
+   "source": "dylanpaulus",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating a Fast Time-Series Graph With Postgres Materialized Views",
+   "url": "https://dylanpaulus.com/posts/2023/creating-fast-time-series-graph-with-postgres/",
+   "source": "dylanpaulus",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Easily Generate Mock Data with PostgreSQL",
+   "url": "https://dylanpaulus.com/posts/2023/easily-generate-mock-data-with-postgresql/",
+   "source": "dylanpaulus",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wrangling Table Bloat in Large PostgreSQL Tables",
+   "url": "https://dylanpaulus.com/posts/2023/how-to-reduce-bloat-in-large-postgresql-tables/",
+   "source": "dylanpaulus",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Reduce Your PostgreSQL Database Size",
+   "url": "https://dylanpaulus.com/posts/2023/how-to-reduce-your-postgresql-database-size/",
+   "source": "dylanpaulus",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -19634,6 +20333,126 @@
    "title": "React Forms and React.memo: Understanding What Actually Re-Renders",
    "url": "https://reactdevelopment.substack.com/p/react-forms-and-reactmemo-understanding",
    "source": "echojs",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tech Companies Are Trying to Shift the Entire Concept of Privacy (Again)",
+   "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+   "source": "eff",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "🤕 Medicare's AI Experiment | EFFector 38.20",
+   "url": "https://www.eff.org/deeplinks/2026/11/medicares-ai-experiment-effector-3820",
+   "source": "eff",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We’re Asking an Appeals Court to Require a Warrant for ALPR Searches",
+   "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
+   "source": "eff",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Fewer People Are Challenging Bad Patents",
+   "url": "https://www.eff.org/deeplinks/2026/11/why-fewer-people-are-challenging-bad-patents",
+   "source": "eff",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "U.S. Supreme Court Deals Final Blow to Corporate Human Rights Accountability",
+   "url": "https://www.eff.org/deeplinks/2026/11/us-supreme-court-deals-final-blow-corporate-human-rights-accountability",
+   "source": "eff",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google Forcing AI on Students Is BS",
+   "url": "https://www.eff.org/deeplinks/2026/11/google-forcing-ai-students-bs",
+   "source": "eff",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Presenting 'Desire Lines: Encoding Queer Digital Futures'",
+   "url": "https://www.eff.org/deeplinks/2026/11/presenting-desire-lines-encoding-queer-digital-futures",
+   "source": "eff",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "EFF Submission to OHCHR Consultation on Child Rights and Safety in the Digital Environment",
+   "url": "https://www.eff.org/deeplinks/2026/11/eff-submission-ohchr-consultation-child-rights-and-safety-digital-environment",
+   "source": "eff",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When the Watchdogs Are Silenced: India's Crackdown on Those Documenting Online Censorship",
+   "url": "https://www.eff.org/deeplinks/2026/11/when-watchdogs-are-silenced-indias-crackdown-those-documenting-online-censorship",
+   "source": "eff",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reflecting on Digital Rights Wins and Losses in Sacramento",
+   "url": "https://www.eff.org/deeplinks/2026/11/reflecting-digital-rights-wins-and-losses-sacramento",
+   "source": "eff",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Join EFF to Celebrate the Life of Aaron Swartz",
+   "url": "https://www.eff.org/deeplinks/2026/11/join-eff-celebrate-life-aaron-swartz",
+   "source": "eff",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We’re Asking the Ninth Circuit to Hold Reverse Location Warrants Categorically Unconstitutional",
+   "url": "https://www.eff.org/deeplinks/2026/11/were-asking-ninth-circuit-hold-reverse-location-warrants-categorically",
+   "source": "eff",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google Summaries Aren't About AI, They're About Lock-In",
+   "url": "https://www.eff.org/deeplinks/2026/11/google-summaries-arent-about-ai-theyre-about-lock",
+   "source": "eff",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Postal Service Surveilled Protest Activities Online With Little Rules, Oversight",
+   "url": "https://www.eff.org/deeplinks/2026/11/postal-service-surveilled-protest-activities-online-little-rules-oversight",
+   "source": "eff",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Privacy's Defenders Podcast: The Secret Room",
+   "url": "https://www.eff.org/deeplinks/2026/10/privacys-defenders-podcast-secret-room",
+   "source": "eff",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -20943,6 +21762,246 @@
    "metric": "feed rank"
   },
   {
+   "title": "Export Voxels to Optimised glTF Mesh for Unreal Nanite",
+   "url": "https://www.enkisoftware.com/devlogpost-20250318-1-Export-Voxels-to-Optimised-glTF-Mesh-for-Unreal-Nanite",
+   "source": "enkisoftware",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Avoyd Voxel Editor new Licences and Independent Store",
+   "url": "https://www.enkisoftware.com/devlogpost-20250310-1-Avoyd-Voxel-Editor-new-Licences-and-Independent-Store",
+   "source": "enkisoftware",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rapid Development with Runtime Compiled C++ Talk",
+   "url": "https://www.enkisoftware.com/devlogpost-20240528-1-Rapid-Development-with-Runtime-Compiled-C++-Talk",
+   "source": "enkisoftware",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Voxel GPU Rendering in Avoyd 0.21",
+   "url": "https://www.enkisoftware.com/devlogpost-20240426-1-Voxel-GPU-Rendering-in-Avoyd-0.21",
+   "source": "enkisoftware",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Moving from FastSpring to Itch.io as a Payment Provider",
+   "url": "https://www.enkisoftware.com/devlogpost-20231222-1-Moving-from-FastSpring-to-Itch.io-as-a-Payment-Provider",
+   "source": "enkisoftware",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Optimising Voxel Meshes for Games Using Blender",
+   "url": "https://www.enkisoftware.com/devlogpost-20230918-1-Optimising-Voxel-Meshes-for-Games-Using-Blender",
+   "source": "enkisoftware",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Implementing a GPU Voxel Octree Path Tracer",
+   "url": "https://www.enkisoftware.com/devlogpost-20230823-1-Implementing-a-GPU-Voxel-Octree-Path-Tracer",
+   "source": "enkisoftware",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Avoyd Release Streams and Minecraft Lit Materials",
+   "url": "https://www.enkisoftware.com/devlogpost-20230207-1-Avoyd-Release-Streams-and-Minecraft-Lit-Materials",
+   "source": "enkisoftware",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Avoyd Beta Stream",
+   "url": "https://www.enkisoftware.com/devlogpost-20230128-1-Avoyd-Beta-Stream",
+   "source": "enkisoftware",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Isometric Render of a Minecraft Map in Avoyd Voxel Editor",
+   "url": "https://www.enkisoftware.com/devlogpost-20220330-1-Isometric-Render-of-a-Minecraft-Map-in-Avoyd-Voxel-Editor",
+   "source": "enkisoftware",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Importing Minecraft maps in Avoyd Voxel Editor improved",
+   "url": "https://www.enkisoftware.com/devlogpost-20210225-1-Importing-Minecraft-maps-in-Avoyd-Voxel-Editor-improved",
+   "source": "enkisoftware",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Runtime Compiled C++ Dear ImGui and DirectX11 Tutorial",
+   "url": "https://www.enkisoftware.com/devlogpost-20200202-1-Runtime-Compiled-C++-Dear-ImGui-and-DirectX11-Tutorial",
+   "source": "enkisoftware",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Boxes in Space: procedural generation of abstract worlds in Avoyd",
+   "url": "https://www.enkisoftware.com/devlogpost-20190621-1-Boxes-in-Space:-procedural-generation-of-abstract-worlds-in-Avoyd",
+   "source": "enkisoftware",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Procedural python word generator: making user names out of 4 syllables",
+   "url": "https://www.enkisoftware.com/devlogpost-20190405-1-Procedural-python-word-generator:-making-user-names-out-of-4-syllables",
+   "source": "enkisoftware",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In-game building",
+   "url": "https://www.enkisoftware.com/devlogpost-20190325-1-In-game-building",
+   "source": "enkisoftware",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React End-to-End Testing with Playwright (workshop)",
+   "url": "https://www.epicweb.dev/workshops/react-end-to-end-testing-with-playwright",
+   "source": "epicweb",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Get Started with Programming for Free in 2026 (article)",
+   "url": "https://www.epicweb.dev/how-to-get-started-with-programming-for-free-in-2026-swucf",
+   "source": "epicweb",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Setting Up Your First Development Environment (article)",
+   "url": "https://www.epicweb.dev/setting-up-your-first-development-environment-d0ga4",
+   "source": "epicweb",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advanced TypeScript (workshop)",
+   "url": "https://www.epicweb.dev/workshops/advanced-typescript",
+   "source": "epicweb",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Object Oriented TypeScript (workshop)",
+   "url": "https://www.epicweb.dev/workshops/object-oriented-typescript",
+   "source": "epicweb",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Type Safety (workshop)",
+   "url": "https://www.epicweb.dev/workshops/type-safety",
+   "source": "epicweb",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Structured Data (tutorial)",
+   "url": "https://www.epicweb.dev/tutorials/structured-data",
+   "source": "epicweb",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Programming Foundations (tutorial)",
+   "url": "https://www.epicweb.dev/tutorials/programming-foundations",
+   "source": "epicweb",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Epic Workshop: Major Updates for 2026 (article)",
+   "url": "https://www.epicweb.dev/epic-workshop-major-updates-for-2026-9afiw",
+   "source": "epicweb",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learn How to Use The Epic Workshop App (tutorial)",
+   "url": "https://www.epicweb.dev/tutorials/learn-how-to-use-the-epic-workshop-app~kfmou",
+   "source": "epicweb",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Congratulations on Completing the Workshop! (tip)",
+   "url": "https://www.epicweb.dev/tips/congratulations-on-completing-the-workshop-kn79h",
+   "source": "epicweb",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "App Varieties - Wrap Up (tip)",
+   "url": "https://www.epicweb.dev/tips/app-varieties-wrap-up-3s1p5",
+   "source": "epicweb",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simple Apps Without package.json - Solution (tip)",
+   "url": "https://www.epicweb.dev/tips/simple-apps-without-package-json-solution-3lvh5",
+   "source": "epicweb",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simple Apps Without package.json - Problem (tip)",
+   "url": "https://www.epicweb.dev/tips/simple-apps-without-package-json-problem-2pdau",
+   "source": "epicweb",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apps Without Preview - Solution (tip)",
+   "url": "https://www.epicweb.dev/tips/apps-without-preview-solution-qlhbc",
+   "source": "epicweb",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "The Accessibility Compat Data project has a homepage now, and you should support the project",
    "url": "https://ericwbailey.website/published/the-accessibility-compat-data-project-has-a-homepage-now-and-you-should-support-the-project/",
    "source": "ericwbailey",
@@ -21179,6 +22238,86 @@
    "url": "https://erikarow.land/notes/git-spelunking-bisect",
    "source": "erikarow",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Erlang/OTP 29.1 Release",
+   "url": "https://www.erlang.org/news/191",
+   "source": "erlang",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Björn on BEAM on the BEAM There, Done That Podcast",
+   "url": "https://www.erlang.org/news/190",
+   "source": "erlang",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Native Records on the Podcast BEAM There, Done That",
+   "url": "https://www.erlang.org/news/189",
+   "source": "erlang",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Erlang/OTP 29.0",
+   "url": "https://www.erlang.org/news/188",
+   "source": "erlang",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Erlang/OTP 28.5 Release",
+   "url": "https://www.erlang.org/news/187",
+   "source": "erlang",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Erlang/OTP 29.0 Release Candidate 3",
+   "url": "https://www.erlang.org/news/186",
+   "source": "erlang",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Erlang/OTP 29.0 Release Candidate 2",
+   "url": "https://www.erlang.org/news/185",
+   "source": "erlang",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Erlang/OTP 28.4 Release",
+   "url": "https://www.erlang.org/news/184",
+   "source": "erlang",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Erlang/OTP 29.0 Release Candidate 1",
+   "url": "https://www.erlang.org/news/183",
+   "source": "erlang",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Erlang/OTP 28.3 Release",
+   "url": "https://www.erlang.org/news/182",
+   "source": "erlang",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -21658,6 +22797,126 @@
    "title": "NVIDIA GTC 2025 - Building LLM-Powered Applications",
    "url": "https://eugeneyan.com/speaking/nvidia-gtc-2025",
    "source": "eugeneyan",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quern - Jerimiah Ham | Show 033",
+   "url": "https://www.eviltester.com/show/033-quern-jerimiah-ham/",
+   "source": "eviltester",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to write an API From Hell or how to send a bad HTTP Response",
+   "url": "https://www.eviltester.com/blog/eviltester/apichallenges/2026-08-20-how-i-coded-api-from-hell/",
+   "source": "eviltester",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Trail of Code - Boomstash",
+   "url": "https://www.eviltester.com/blog/eviltester/trailofcode/boomstash-initial-architecture/",
+   "source": "eviltester",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trowser - Rikard Edgren | Show 032",
+   "url": "https://www.eviltester.com/show/032-trowser-rikard-edgren/",
+   "source": "eviltester",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "API From Hell Shows Your API Client is Lying to you",
+   "url": "https://www.eviltester.com/blog/eviltester/apichallenges/api-from-hell-overview/",
+   "source": "eviltester",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Testing Exercises for an AI Chat Bot",
+   "url": "https://www.eviltester.com/blog/eviltester/testpages/ai-chat-bot/",
+   "source": "eviltester",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "API Challenges with Swagger UI and Simulator Requests",
+   "url": "https://www.eviltester.com/blog/eviltester/apichallenges/2026-07-17-api-challenges-updates/",
+   "source": "eviltester",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I AI - Automated AI Interactive Review",
+   "url": "https://www.eviltester.com/blog/eviltester/ai/how-i-ai/2026-06-30-ai-automated-interactive-review/",
+   "source": "eviltester",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I AI - A Working Position on 20260626",
+   "url": "https://www.eviltester.com/blog/eviltester/ai/how-i-ai/2026-06-26-how-i-use-ai-today/",
+   "source": "eviltester",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "API Spector Open Source API Testing Tool",
+   "url": "https://www.eviltester.com/blog/eviltester/apichallenges/2026-04-14-api-spector-first-look/",
+   "source": "eviltester",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI and Software Testing with the Tech League | Show 031",
+   "url": "https://www.eviltester.com/show/031-eviltester-tech-league-teamup/",
+   "source": "eviltester",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Free Selenium WebDriver Course",
+   "url": "https://www.eviltester.com/blog/eviltester/news/free-selenium-webdriver-course/",
+   "source": "eviltester",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Agentic AI Quality Engineering | Show 030",
+   "url": "https://www.eviltester.com/show/030-agentic-ai-quality-engineering/",
+   "source": "eviltester",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Testing Automating Tooling Masterclass",
+   "url": "https://www.eviltester.com/blog/eviltester/technical_testing/2026-02-5-web-testing-automating-tooling-masterclass/",
+   "source": "eviltester",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Test This - Selenium WebDriver",
+   "url": "https://www.eviltester.com/blog/eviltester/podcasts/how-to-test-this-jan-2026/",
+   "source": "eviltester",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -23031,6 +24290,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Unread, Unbound (furialog)",
+   "url": "https://furia.com/page.cgi?type=log&id=528",
+   "source": "furia",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Not Letting Go (furialog)",
+   "url": "https://furia.com/page.cgi?type=log&id=527",
+   "source": "furia",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "farewellm (furialog)",
+   "url": "https://furia.com/page.cgi?type=log&id=526",
+   "source": "furia",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Live at All About Music, Mumbai, 26 August 2026 (furialog)",
+   "url": "https://furia.com/page.cgi?type=log&id=525",
+   "source": "furia",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Only Software Metric That Matters Is Love (furialog)",
+   "url": "https://furia.com/page.cgi?type=log&id=524",
+   "source": "furia",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Regularer expressions (furialog)",
+   "url": "https://furia.com/page.cgi?type=log&id=523",
+   "source": "furia",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Lamp and the Genie (furialog)",
+   "url": "https://furia.com/page.cgi?type=log&id=522",
+   "source": "furia",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "playlists.playlists.playlists (furialog)",
+   "url": "https://furia.com/page.cgi?type=log&id=521",
+   "source": "furia",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Maker Ecology (furialog)",
+   "url": "https://furia.com/page.cgi?type=log&id=520",
+   "source": "furia",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Choices and Knives (furialog)",
+   "url": "https://furia.com/page.cgi?type=log&id=519",
+   "source": "furia",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Data Seeps Out of Us (furialog)",
+   "url": "https://furia.com/page.cgi?type=log&id=518",
+   "source": "furia",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Where does, or might, your streaming money go? (furialog)",
+   "url": "https://furia.com/page.cgi?type=log&id=517",
+   "source": "furia",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Data Knife (furialog)",
+   "url": "https://furia.com/page.cgi?type=log&id=516",
+   "source": "furia",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Initiative to Cultivate Empathy (furialog)",
+   "url": "https://furia.com/page.cgi?type=log&id=515",
+   "source": "furia",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DECKHAND (furialog)",
+   "url": "https://furia.com/page.cgi?type=log&id=514",
+   "source": "furia",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Newly-proposed EU law could place tight restrictions on free-to-play games",
    "url": "https://www.gamedeveloper.com/business/european-union-proposes-digital-fairness-act-which-could-have-major-effects-on-game-development",
    "source": "gamasutra",
@@ -23523,6 +24902,86 @@
    "url": "https://geoffreylitt.com/2023/12/17/seven-books-that-stuck-with-me-in-2023.html",
    "source": "geoffreylitt",
    "rank": 11,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Extensible, personal software is the sweet spot for LLMs",
+   "url": "https://www.germanvelasco.com/blog/extensible-personal-software",
+   "source": "germanvelasco",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don’t niche down. Position yourself.",
+   "url": "https://www.germanvelasco.com/blog/dont-niche-down-position-yourself",
+   "source": "germanvelasco",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Diverge then converge with LLMs",
+   "url": "https://www.germanvelasco.com/blog/diverge-then-converge-with-llms",
+   "source": "germanvelasco",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Are plan files the new 10k-line PRs?",
+   "url": "https://www.germanvelasco.com/blog/are-plan-files-the-new-10k-line-prs",
+   "source": "germanvelasco",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reflections on creating ExCrap without looking at the code",
+   "url": "https://www.germanvelasco.com/blog/i-wrote-excrap-without-looking-at-the-code",
+   "source": "germanvelasco",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why dead code feels hard to delete",
+   "url": "https://www.germanvelasco.com/blog/why-dead-code-feels-hard-to-delete",
+   "source": "germanvelasco",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Draw the rest of the ___ owl (software factory edition)",
+   "url": "https://www.germanvelasco.com/blog/draw-the-rest-of-the-owl-software-factory-edition",
+   "source": "germanvelasco",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stop writing code by hand (and feel the friction)",
+   "url": "https://www.germanvelasco.com/blog/stop-writing-code-by-hand",
+   "source": "germanvelasco",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Daily writing retrospective",
+   "url": "https://www.germanvelasco.com/blog/daily-writing-retrospective",
+   "source": "germanvelasco",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thinking about the extremes to break out of local maxima",
+   "url": "https://www.germanvelasco.com/blog/thinking-about-the-extremes-to-break-out-of-local-maxima",
+   "source": "germanvelasco",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -25063,6 +26522,126 @@
    "metric": "points"
   },
   {
+   "title": "Introducing Kickstart: the app that helps indie developers ship",
+   "url": "https://www.hackingwithswift.com/articles/285/introducing-kickstart-the-app-that-helps-indie-developers-ship",
+   "source": "hackingwithswift",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Teach your AI to write Swift the Hacking with Swift way",
+   "url": "https://www.hackingwithswift.com/articles/284/teach-your-ai-to-write-swift-the-hacking-with-swift-way",
+   "source": "hackingwithswift",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Agent skills in Xcode: How to install and use them today",
+   "url": "https://www.hackingwithswift.com/articles/283/how-to-install-and-use-ai-agent-skills-in-xcode",
+   "source": "hackingwithswift",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SwiftUI Agent Skill - Write better code with Claude, Codex, and other AI tools",
+   "url": "https://www.hackingwithswift.com/articles/282/swiftui-agent-skill-claude-codex-ai",
+   "source": "hackingwithswift",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What to fix in AI-generated Swift code",
+   "url": "https://www.hackingwithswift.com/articles/281/what-to-fix-in-ai-generated-swift-code",
+   "source": "hackingwithswift",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "One Swift mistake everyone should stop making today",
+   "url": "https://www.hackingwithswift.com/articles/280/one-swift-mistake-everyone-should-stop-making-today",
+   "source": "hackingwithswift",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Level up your SwiftUI",
+   "url": "https://www.hackingwithswift.com/articles/279/level-up-your-swiftui",
+   "source": "hackingwithswift",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's new in SwiftUI for iOS 26",
+   "url": "https://www.hackingwithswift.com/articles/278/whats-new-in-swiftui-for-ios-26",
+   "source": "hackingwithswift",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's new in Swift 6.2?",
+   "url": "https://www.hackingwithswift.com/articles/277/whats-new-in-swift-6-2",
+   "source": "hackingwithswift",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's new in Swift 6.1?",
+   "url": "https://www.hackingwithswift.com/articles/276/whats-new-in-swift-6-1",
+   "source": "hackingwithswift",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple starts accepting GitHub sponsorships for Swift",
+   "url": "https://www.hackingwithswift.com/articles/275/apple-starts-accepting-github-sponsorships-for-swift",
+   "source": "hackingwithswift",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Take on Apple Intelligence at Unwrap Live 2025",
+   "url": "https://www.hackingwithswift.com/articles/274/take-on-apple-intelligence-at-unwrap-live-2025",
+   "source": "hackingwithswift",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Save 50% on all books and bundles this Black Friday",
+   "url": "https://www.hackingwithswift.com/articles/273/save-50-on-all-books-and-bundles-this-black-friday",
+   "source": "hackingwithswift",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Go further, faster with the Swift Career Accelerator",
+   "url": "https://www.hackingwithswift.com/articles/272/swift-career-accelerator",
+   "source": "hackingwithswift",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making mistakes while learning Swift",
+   "url": "https://www.hackingwithswift.com/articles/271/making-mistakes-while-learning-swift",
+   "source": "hackingwithswift",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Intent to Ship: JPEG XL",
    "url": "https://hacks.mozilla.org/2026/08/intent-to-ship-jpeg-xl/",
    "source": "hacksmozilla",
@@ -25259,6 +26838,126 @@
    "url": "http://feeds.hanselman.com/~/737271731/0/scotthanselman~GitHub-Copilot-for-CLI-for-PowerShell",
    "source": "hanselman",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From insight to action: improving infrastructure risk posture with Terraform and Concert",
+   "url": "https://www.hashicorp.com/blog/from-insight-to-action-improving-infrastructure-risk-posture-with-terraform-and-c",
+   "source": "hashicorp",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Consul 2.1.0: Advancing secure, resilient connectivity for modern and agentic applications",
+   "url": "https://www.hashicorp.com/blog/consul-210-advancing-secure-resilient-connectivity-for-modern-and-agentic-applica",
+   "source": "hashicorp",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Migrate Sentinel and OPA policies to Terraform policy faster with the Terraform policy agent",
+   "url": "https://www.hashicorp.com/blog/migrate-sentinel-and-opa-policies-to-terraform-policy-faster",
+   "source": "hashicorp",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Secure AI credentials from discovery to remediation with Vault Radar and Vault",
+   "url": "https://www.hashicorp.com/blog/secure-ai-credentials-from-discovery-to-remediation-with-vault-radar-and-vault",
+   "source": "hashicorp",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing IBM Cloud Secrets Manager Vault Dedicated: HashiCorp Vault Enterprise, managed by IBM",
+   "url": "https://www.hashicorp.com/blog/introducing-ibm-cloud-secrets-manager-vault-dedicated",
+   "source": "hashicorp",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building Self-Service into Terraform: Introducing Terraform Developer Portal (Public Preview)",
+   "url": "https://www.hashicorp.com/blog/introducing-terraform-developer-portal",
+   "source": "hashicorp",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Terraform advances infrastructure lifecycle management for the agentic era",
+   "url": "https://www.hashicorp.com/blog/terraform-advances-infrastructure-lifecycle-management-for-the-agentic-era",
+   "source": "hashicorp",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing the public preview of HashiCorp Secure Hub: Govern Vault at scale",
+   "url": "https://www.hashicorp.com/blog/announcing-the-public-preview-of-hashicorp-secure-hub-govern-vault-at-scale",
+   "source": "hashicorp",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing the public preview of HashiCorp Vault Arc: Evolve security for emerging workloads",
+   "url": "https://www.hashicorp.com/blog/announcing-the-public-preview-of-hashicorp-vault-arc-evolve-security-for-emerging",
+   "source": "hashicorp",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Strengthen security for agentic AI with new Vault, Verify, Boundary, and Secure Hub capabilities",
+   "url": "https://www.hashicorp.com/blog/strengthen-security-for-agentic-ai-with-new-vault-verify-boundary-and-secure-hub",
+   "source": "hashicorp",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Boundary 1.1 improves target discovery, external app integration, and introduces MCP server",
+   "url": "https://www.hashicorp.com/blog/boundary-secures-ai-agent-access-improves-target-discovery-and-introduces-mcp-ser",
+   "source": "hashicorp",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The barriers to autonomous infrastructure",
+   "url": "https://www.hashicorp.com/blog/the-barriers-to-autonomous-infrastructure",
+   "source": "hashicorp",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bring cloud cost insights to Terraform with IBM Cloudability",
+   "url": "https://www.hashicorp.com/blog/bring-cloud-cost-insights-to-terraform-with-ibm-cloudability",
+   "source": "hashicorp",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Drive adoption and operations across hybrid environments with Vault",
+   "url": "https://www.hashicorp.com/blog/drive-adoption-and-operations-across-hybrid-environments-with-vault",
+   "source": "hashicorp",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Eliminate Secret Zero for on-prem workloads with Vault 2.2",
+   "url": "https://www.hashicorp.com/blog/eliminate-secret-zero-for-on-prem-workloads-with-vault",
+   "source": "hashicorp",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -26983,6 +28682,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Hackers exploit exposed GeoVision CCTV software to disable Defender and deploy cryptominers",
+   "url": "https://www.itsecurityguru.org/2026/11/13/hackers-exploit-exposed-geovision-cctv-software-to-disable-defender-and-deploy-cryptominers/?utm_source=rss&utm_medium=rss&utm_campaign=hackers-exploit-exposed-geovision-cctv-software-to-disable-defender-and-deploy-cryptominers",
+   "source": "itsecurityguru",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10 Ways to Improve Productivity in the Workplace",
+   "url": "https://www.itsecurityguru.org/2026/11/12/10-ways-to-improve-productivity-in-the-workplace/?utm_source=rss&utm_medium=rss&utm_campaign=10-ways-to-improve-productivity-in-the-workplace",
+   "source": "itsecurityguru",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Huntress uncovers SCKit: rogue ScreenConnect toolkit hits 288 hosts in 90 minutes",
+   "url": "https://www.itsecurityguru.org/2026/11/12/huntress-uncovers-sckit-rogue-screenconnect-toolkit-hits-288-hosts-in-90-minutes/?utm_source=rss&utm_medium=rss&utm_campaign=huntress-uncovers-sckit-rogue-screenconnect-toolkit-hits-288-hosts-in-90-minutes",
+   "source": "itsecurityguru",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cyber Agony Aunts Launch Christmas Campaign to Tackle Period Poverty",
+   "url": "https://www.itsecurityguru.org/2026/11/12/cyber-agony-aunts-launch-christmas-campaign-to-tackle-period-poverty/?utm_source=rss&utm_medium=rss&utm_campaign=cyber-agony-aunts-launch-christmas-campaign-to-tackle-period-poverty",
+   "source": "itsecurityguru",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Q&A: Why Cybersecurity Has to Move Beyond Technology",
+   "url": "https://www.itsecurityguru.org/2026/11/11/qa-why-cybersecurity-has-to-move-beyond-technology/?utm_source=rss&utm_medium=rss&utm_campaign=qa-why-cybersecurity-has-to-move-beyond-technology",
+   "source": "itsecurityguru",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Open code isn’t the problem: experts on the “god-tier” flaws exposed across UK government repositories",
+   "url": "https://www.itsecurityguru.org/2026/11/11/open-code-isnt-the-problem-experts-on-the-god-tier-flaws-exposed-across-uk-government-repositories/?utm_source=rss&utm_medium=rss&utm_campaign=open-code-isnt-the-problem-experts-on-the-god-tier-flaws-exposed-across-uk-government-repositories",
+   "source": "itsecurityguru",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Agents Promise Convenience, But Are We Giving Them Too Much Control?",
+   "url": "https://www.itsecurityguru.org/2026/11/11/ai-agents-promise-convenience-but-are-we-giving-them-too-much-control/?utm_source=rss&utm_medium=rss&utm_campaign=ai-agents-promise-convenience-but-are-we-giving-them-too-much-control",
+   "source": "itsecurityguru",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Huntress hands incident responders free ITDR to stop attackers walking back in",
+   "url": "https://www.itsecurityguru.org/2026/11/10/huntress-hands-incident-responders-free-itdr-to-stop-attackers-walking-back-in/?utm_source=rss&utm_medium=rss&utm_campaign=huntress-hands-incident-responders-free-itdr-to-stop-attackers-walking-back-in",
+   "source": "itsecurityguru",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10 Ways Cybersecurity Vendors Can Stand Out in a Crowded Market",
+   "url": "https://www.itsecurityguru.org/2026/11/10/10-ways-cybersecurity-vendors-can-stand-out-in-a-crowded-market/?utm_source=rss&utm_medium=rss&utm_campaign=10-ways-cybersecurity-vendors-can-stand-out-in-a-crowded-market",
+   "source": "itsecurityguru",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Huntress turns real-world attack intelligence into fleet-wide ‘herd immunity’ with new platform capabilities",
+   "url": "https://www.itsecurityguru.org/2026/11/06/huntress-turns-real-world-attack-intelligence-into-fleet-wide-herd-immunity-with-new-platform-capabilities/?utm_source=rss&utm_medium=rss&utm_campaign=huntress-turns-real-world-attack-intelligence-into-fleet-wide-herd-immunity-with-new-platform-capabilities",
+   "source": "itsecurityguru",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "You Can't Change Your Boss",
    "url": "https://jacobian.org/2026/oct/12/you-cant-change-your-boss/",
    "source": "jacobian",
@@ -28303,6 +30082,102 @@
    "metric": "feed rank"
   },
   {
+   "title": "Advanced TypeScript Patterns: API Contracts",
+   "url": "https://jonmellman.com/posts/typescript-for-api-contracts",
+   "source": "jonmellman",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advanced Promise Patterns: Promise Memoization",
+   "url": "https://jonmellman.com/posts/promise-memoization",
+   "source": "jonmellman",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Measuring Test Flakiness with a Bash One-Liner",
+   "url": "https://jonmellman.com/posts/flakiness-one-liner",
+   "source": "jonmellman",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advanced Async Patterns: Singleton Promises",
+   "url": "https://jonmellman.com/posts/singleton-promises",
+   "source": "jonmellman",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Opportunistic Refactoring",
+   "url": "https://jonmellman.com/posts/on-opportunistic-refactoring",
+   "source": "jonmellman",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JavaScript Testing Anti-Patterns",
+   "url": "https://jonmellman.com/posts/javascript-testing-anti-patterns",
+   "source": "jonmellman",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elixir Atoms vs JavaScript Symbols",
+   "url": "https://jonmellman.com/posts/elixir-atoms",
+   "source": "jonmellman",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "VeloPads II: Improving the Drum Pad Hardware",
+   "url": "https://jonmellman.com/posts/velopads2",
+   "source": "jonmellman",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cattelganger: Finding Your Cat Lookalike with Python",
+   "url": "https://jonmellman.com/posts/cattelganger",
+   "source": "jonmellman",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Jazz Ear Training with iReal Pro Audio",
+   "url": "https://jonmellman.com/posts/jazz-progression-training",
+   "source": "jonmellman",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "VeloPads: DIY paper-thin, velocity-sensitive drum pad",
+   "url": "https://jonmellman.com/posts/velopads",
+   "source": "jonmellman",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Friend-Hackathons: Having Fun Building Something Fun",
+   "url": "https://jonmellman.com/posts/hackathon-1",
+   "source": "jonmellman",
+   "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "On Coding, Ego and Attention",
    "url": "https://josebrowne.com/on-coding-ego-and-attention/",
    "source": "josebrowne",
@@ -28371,6 +30246,246 @@
    "url": "https://josebrowne.com/launched/",
    "source": "josebrowne",
    "rank": 9,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2022 In Review",
+   "url": "https://joshuakgoldberg.com/blog/2022-in-review/",
+   "source": "joshuakgoldberg",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2023 Conferences In Review",
+   "url": "https://joshuakgoldberg.com/blog/2023-conferences-in-review/",
+   "source": "joshuakgoldberg",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2024 Finances In Review",
+   "url": "https://joshuakgoldberg.com/blog/2024-finances-in-review/",
+   "source": "joshuakgoldberg",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2025 Finances In Review",
+   "url": "https://joshuakgoldberg.com/blog/2025-finances-in-review/",
+   "source": "joshuakgoldberg",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2024 In Review",
+   "url": "https://joshuakgoldberg.com/blog/2024-in-review/",
+   "source": "joshuakgoldberg",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2025 In Review",
+   "url": "https://joshuakgoldberg.com/blog/2025-in-review/",
+   "source": "joshuakgoldberg",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2023 In Review",
+   "url": "https://joshuakgoldberg.com/blog/2023-in-review/",
+   "source": "joshuakgoldberg",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Binary Arithmetic in the TypeScript Type System",
+   "url": "https://joshuakgoldberg.com/blog/binary-arithmetic/",
+   "source": "joshuakgoldberg",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Compassionate Onboardings as Developer Documentation",
+   "url": "https://joshuakgoldberg.com/blog/compassionate-onboardings/",
+   "source": "joshuakgoldberg",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Configuring ESLint, Prettier, and TypeScript Together",
+   "url": "https://joshuakgoldberg.com/blog/configuring-eslint-prettier-and-typescript-together/",
+   "source": "joshuakgoldberg",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Configuring ESLint, Prettier, and TypeScript Together: FAQs",
+   "url": "https://joshuakgoldberg.com/blog/configuring-eslint-prettier-and-typescript-together-faqs/",
+   "source": "joshuakgoldberg",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Configuring Markdownlint Alongside Prettier",
+   "url": "https://joshuakgoldberg.com/blog/configuring-markdownlint-alongside-prettier/",
+   "source": "joshuakgoldberg",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Contributing to a create-typescript-app Repository: FAQs",
+   "url": "https://joshuakgoldberg.com/blog/contributing-to-a-create-typescript-app-repository-faqs/",
+   "source": "joshuakgoldberg",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Contributing to a create-typescript-app Repository",
+   "url": "https://joshuakgoldberg.com/blog/contributing-to-a-create-typescript-app-repository/",
+   "source": "joshuakgoldberg",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don't Write Bad Code",
+   "url": "https://joshuakgoldberg.com/blog/dont-write-bad-code/",
+   "source": "joshuakgoldberg",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Future of CSS ✨",
+   "url": "https://www.joshwcomeau.com/css/interop-2027/",
+   "source": "joshwcomeau",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting Started with Anchor Positioning",
+   "url": "https://www.joshwcomeau.com/css/anchor-positioning/",
+   "source": "joshwcomeau",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS vs. JavaScript",
+   "url": "https://www.joshwcomeau.com/animation/css-vs-javascript/",
+   "source": "joshwcomeau",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scroll-Driven Animations",
+   "url": "https://www.joshwcomeau.com/animation/scroll-driven-animations/",
+   "source": "joshwcomeau",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Squash and Stretch",
+   "url": "https://www.joshwcomeau.com/animation/squash-and-stretch/",
+   "source": "joshwcomeau",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sneaky Header Blocker Trick",
+   "url": "https://www.joshwcomeau.com/css/header-blockers/",
+   "source": "joshwcomeau",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sprites on the Web",
+   "url": "https://www.joshwcomeau.com/animation/sprites/",
+   "source": "joshwcomeau",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Brand New Layouts with CSS Subgrid",
+   "url": "https://www.joshwcomeau.com/css/subgrid/",
+   "source": "joshwcomeau",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Springs and Bounces in Native CSS",
+   "url": "https://www.joshwcomeau.com/animation/linear-timing-function/",
+   "source": "joshwcomeau",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Big Gotcha With @starting-style",
+   "url": "https://www.joshwcomeau.com/css/starting-style/",
+   "source": "joshwcomeau",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Color Shifting in CSS",
+   "url": "https://www.joshwcomeau.com/animation/color-shifting/",
+   "source": "joshwcomeau",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An Interactive Guide to SVG Paths",
+   "url": "https://www.joshwcomeau.com/svg/interactive-guide-to-paths/",
+   "source": "joshwcomeau",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Friendly Introduction to SVG",
+   "url": "https://www.joshwcomeau.com/svg/friendly-introduction-to-svg/",
+   "source": "joshwcomeau",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Partial Keyframes",
+   "url": "https://www.joshwcomeau.com/animation/partial-keyframes/",
+   "source": "joshwcomeau",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Height Enigma",
+   "url": "https://www.joshwcomeau.com/css/height-enigma/",
+   "source": "joshwcomeau",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },

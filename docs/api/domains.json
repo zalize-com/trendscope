@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T17:24:50.804127+00:00",
+ "generated_at": "2026-11-15T17:26:41.175768+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 791,
+ "total": 808,
  "domains": [
   {
    "hostname": "blog.google",
@@ -136,6 +136,22 @@
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "eff.org",
+   "days_on_board": 2,
+   "items": 17,
+   "sources": [
+    "eff",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Tech Companies Are Trying to Shift the Concept of Privacy (Again)",
+    "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+    "score": 339,
+    "metric": "points",
+    "date": "2026-11-14"
    }
   },
   {
@@ -344,21 +360,6 @@
     "score": 1224,
     "metric": "points",
     "date": "2026-11-11"
-   }
-  },
-  {
-   "hostname": "eff.org",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Tech Companies Are Trying to Shift the Concept of Privacy (Again)",
-    "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
-    "score": 339,
-    "metric": "points",
-    "date": "2026-11-14"
    }
   },
   {
