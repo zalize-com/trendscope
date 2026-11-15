@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T13:57:08.713291+00:00",
+ "generated_at": "2026-11-15T13:59:59.711597+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 819,
- "unique_urls": 681,
- "items_in_latest": 427,
- "items_per_day_avg": 91.0,
+ "total_rows": 835,
+ "unique_urls": 697,
+ "items_in_latest": 442,
+ "items_per_day_avg": 92.8,
  "sources": {
   "arstechnica": {
    "rows": 16,
@@ -89,6 +89,10 @@
    "rows": 10,
    "days_active": 1
   },
+  "pragmatic": {
+   "rows": 15,
+   "days_active": 1
+  },
   "producthunt": {
    "rows": 45,
    "days_active": 1
@@ -122,7 +126,7 @@
    "days_active": 1
   },
   "theverge": {
-   "rows": 12,
+   "rows": 13,
    "days_active": 1
   }
  },
@@ -139,6 +143,10 @@
   {
    "domain": "lwn.net",
    "hits": 16
+  },
+  {
+   "domain": "theverge.com",
+   "hits": 15
   },
   {
    "domain": "changelog.com",
@@ -162,10 +170,6 @@
   },
   {
    "domain": "blog.codinghorror.com",
-   "hits": 15
-  },
-  {
-   "domain": "martinfowler.com",
    "hits": 15
   }
  ],
