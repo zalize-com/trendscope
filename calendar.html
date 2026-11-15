@@ -97,7 +97,7 @@ for (const m of months) {
     const b = best[ds];
     if (!b) { grid.innerHTML += `<div class="cell none"><div class="d">${d}</div></div>`; continue; }
     grid.innerHTML += `<div class="cell${ds === last ? " today" : ""}">
-      <div class="d">${d}</div>
+      <div class="d"><a href="index.html?day=${ds}" title="open the ${ds} snapshot" style="color:var(--dim);text-decoration:none">${d}</a></div>
       <a href="${esc(b.url)}">${esc(b.title.slice(0, 90))}</a>
       <div class="meta"><span class="src">${b.source}</span> ${fmt(b.score)} ${b.metric}</div></div>`;
   }

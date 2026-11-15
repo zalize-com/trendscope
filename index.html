@@ -523,6 +523,8 @@ async function main() {
         .map(d => `<option${d === CUR_DATE ? " selected" : ""}>${d}</option>`).join("");
       sel.addEventListener("change", () => loadDay(sel.value));
       document.getElementById("daypick-hint").textContent = "← browse any past day";
+      const wantDay = new URLSearchParams(location.search).get("day");
+      if (wantDay && INDEX.snapshots.includes(wantDay) && wantDay !== CUR_DATE) loadDay(wantDay);
     }
     renderTrends(INDEX.snapshots.slice(-10));
   } catch (e) { /* optional */ }
