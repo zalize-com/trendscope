@@ -170,6 +170,23 @@
     <div class="out" id="u-out"></div>
   </div>
 
+  <div class="tool" data-tool="date">
+    <h2>Date calculator</h2>
+    <p class="hint">Two dates → the span between them (incl./excl.); or a date ± N days → result date. No upload.</p>
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+      <input type="date" id="dc-a"> <span style="color:var(--dim)">→</span> <input type="date" id="dc-b">
+    </div>
+    <div class="out" id="dc-span" style="margin-top:10px"></div>
+    <div class="stat" style="margin-top:12px">date ± days</div>
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:6px">
+      <input type="date" id="dc-c">
+      <button class="btn" id="dc-minus">−</button>
+      <input type="number" id="dc-n" value="30" style="width:80px">
+      <button class="btn" id="dc-plus">+</button>
+      <span class="out" id="dc-res" style="flex:1"></span>
+    </div>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -185,6 +202,7 @@ const TOOLS = [
   {id:"url",   label:"URL query editor"},
   {id:"contrast", label:"Contrast checker"},
   {id:"slug",   label:"Slug generator"},
+  {id:"date",   label:"Date calculator"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -459,6 +477,37 @@ function sgGo(){
     slugs.map((s,i) => s ? `<div class="kv"><code>${esc(s)}</code></div>` : "").join("") || "…";
 }
 document.getElementById("sg-in").addEventListener("input", sgGo);
+
+// date calculator
+(function(){
+  const a=document.getElementById("dc-a"), b=document.getElementById("dc-b"),
+        c=document.getElementById("dc-c"), n=document.getElementById("dc-n"),
+        span=document.getElementById("dc-span"), res=document.getElementById("dc-res");
+  if(!a) return;
+  const WD=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+  const iso=d=>d.toISOString().slice(0,10);
+  const today=new Date(); const t7=new Date(Date.now()+7*864e5);
+  a.value=iso(today); b.value=iso(t7); c.value=iso(today);
+  function spanGo(){
+    const A=new Date(a.value+"T00:00:00"), B=new Date(b.value+"T00:00:00");
+    if(isNaN(A)||isNaN(B)){span.textContent="";return}
+    const dd=Math.round((B-A)/864e5);
+    const wk=Math.abs(dd)/7;
+    span.innerHTML = `<b>${Math.abs(dd)}</b> days (${Math.abs(dd)+1} inclusive) ≈ <b>${wk.toFixed(1)}</b> weeks` +
+      `<span style="color:var(--dim)"> · ${a.value} is ${WD[A.getDay()]} · ${b.value} is ${WD[B.getDay()]} · business days ≈ ${Math.round(Math.abs(dd)*5/7)}</span>`;
+  }
+  function plusGo(sign){
+    const C=new Date(c.value+"T00:00:00"), N=parseInt(n.value)||0;
+    if(isNaN(C)){res.textContent="";return}
+    const R=new Date(C.getTime()+sign*N*864e5);
+    res.innerHTML=`<b>${iso(R)}</b> (${WD[R.getDay()]})`;
+  }
+  a.addEventListener("input",spanGo); b.addEventListener("input",spanGo);
+  document.getElementById("dc-plus").addEventListener("click",()=>plusGo(1));
+  document.getElementById("dc-minus").addEventListener("click",()=>plusGo(-1));
+  c.addEventListener("input",()=>plusGo(1)); n.addEventListener("input",()=>plusGo(1));
+  spanGo(); plusGo(1);
+})();
 </script>
 </body>
 </html>
