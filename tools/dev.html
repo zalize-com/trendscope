@@ -63,6 +63,7 @@
     <button data-tool="pw">password gen</button>
     <button data-tool="csv">CSV ↔ JSON</button>
     <button data-tool="schema">JSON → schema</button>
+    <button data-tool="gi">.gitignore</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -121,13 +122,21 @@
     <div class="err" id="sc-err"></div>
   </div>
 
+  <div class="panel" id="p-gi">
+    <h2>.gitignore generator</h2>
+    <p class="hint">Pick the languages/OS/IDEs in your stack — combined template outputs below.</p>
+    <div class="cn" id="gi-picks"></div>
+    <div class="out" id="gi-out" style="white-space:pre;overflow-x:auto;max-height:280px;overflow-y:auto"></div>
+    <button class="copy" id="gi-copy">copy .gitignore</button>
+  </div>
+
   <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema"];
+const tools = ["subnet","base","pw","csv","schema","gi"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -318,6 +327,43 @@ function inferSchema() {
 }
 $("sc-in").oninput = inferSchema;
 $("sc-copy").onclick = () => { navigator.clipboard?.writeText($("sc-out").textContent); $("sc-copy").textContent = "copied"; setTimeout(()=>$("sc-copy").textContent="copy schema",1200); };
+
+/* --- gitignore --- */
+const GI = {
+"Node":"node_modules/\nnpm-debug.log*\nyarn-debug.log*\nyarn-error.log*\n.pnp/\n.next/\ndist/\ncoverage/",
+"Python":"__pycache__/\n*.py[cod]\n*.egg-info/\n.venv/\nvenv/\nenv/\n.pytest_cache/\n.mypy_cache/\ndist/\nbuild/",
+"Java":"*.class\n*.jar\n*.war\ntarget/\n.gradle/\nbuild/\nout/",
+"Go":"/vendor/\n*.exe\n*.test\n*.prof\nbin/",
+"Rust":"/target/\nCargo.lock",
+"C/C++":"*.o\n*.obj\n*.a\n*.so\n*.dll\n*.exe\n*.out\nbuild/\n*.dSYM/",
+"Ruby":"*.gem\n*.rbc\n.bundle/\nvendor/bundle/\ncoverage/\nlog/*\ntmp/",
+"PHP":"/vendor/\ncomposer.lock\n*.log",
+"Swift":"*.xcuserstate\nDerivedData/\nbuild/\n*.xcodeproj/xcuserdata/",
+"Kotlin":"*.class\n*.jar\n*.iml\n.gradle/\nbuild/\nout/",
+".NET":"bin/\nobj/\n*.user\n*.suo\npackages/\nvso/",
+"Django":"*.log\n*.pot\n*.pyc\n__pycache__/\nlocal_settings.py\n/static/\n/media/\ndb.sqlite3",
+"Rails":"*.rbc\n*.sassc\nconfig/master.key\n/log/*\n/tmp/*\n!/log/.keep\n!/tmp/.keep\n/public/assets\n.byebug_history",
+"macOS":".DS_Store\n._*\n.AppleDouble\n.LSOverride",
+"Windows":"Thumbs.db\nehthumbs.db\nDesktop.ini\n$RECYCLE.BIN/",
+"Linux":"*~\n.fuse_hidden*\n.Trash-*",
+"VSCode":".vscode/*\n!.vscode/settings.json\n!.vscode/tasks.json\n!.vscode/launch.json",
+"JetBrains":".idea/\n*.iml\n*.ipr\n*.iws\nout/",
+"Vim":"*.swp\n*.swo\n*~\nSession.vim",
+"Emacs":"*~\n\\#*#\n.#*"
+};
+const giSel = new Set();
+$("gi-picks").innerHTML = Object.keys(GI).map(k => `<a data-k="${k}">${k}</a>`).join("");
+function renderGI() {
+  const out = [...giSel].map(k => `# ${k}\n${GI[k]}`).join("\n");
+  $("gi-out").textContent = out || "(pick at least one template above)";
+  document.querySelectorAll("#gi-picks a").forEach(a => a.classList.toggle("on", giSel.has(a.dataset.k)));
+}
+$("gi-picks").onclick = e => {
+  const k = e.target.dataset?.k; if (!k) return;
+  giSel.has(k) ? giSel.delete(k) : giSel.add(k); renderGI();
+};
+$("gi-copy").onclick = () => { navigator.clipboard?.writeText($("gi-out").textContent); $("gi-copy").textContent = "copied"; setTimeout(()=>$("gi-copy").textContent="copy .gitignore",1200); };
+["Node","macOS"].forEach(k => giSel.add(k)); renderGI();
 </script>
 </body>
 </html>
