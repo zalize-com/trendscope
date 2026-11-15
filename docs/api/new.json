@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:57:17.396040+00:00",
+ "generated_at": "2026-11-15T16:58:53.902816+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 3308,
- "new_items": 3182,
+ "total_items": 3579,
+ "new_items": 3453,
  "by_source": {
   "producthunt": 45,
   "show_hn": 39,
@@ -60,9 +60,22 @@
   "blogj11y": 15,
   "blogjanestreet": 15,
   "blogjessfraz": 15,
+  "blogroboflow": 15,
+  "blogscottlogic": 15,
+  "blogsentry": 15,
+  "blogsnewardassociates": 15,
+  "blogtensorflow": 15,
+  "blogvuejs": 15,
+  "blogwokwi": 15,
+  "blueskyweb": 15,
   "bobmonsour": 15,
+  "boonepetergithub": 15,
+  "bostocks": 15,
+  "boxofcables": 15,
+  "boz": 15,
   "brandur": 15,
   "bravenewgeek": 15,
+  "buffer": 15,
   "cameronmoll": 15,
   "catonmat": 15,
   "changelog": 15,
@@ -147,12 +160,14 @@
   "vicki": 15,
   "x065": 15,
   "beesbuzz": 14,
+  "bogoyavlensky": 14,
   "gwern": 14,
   "architectelevator": 13,
   "fogus": 13,
   "wcedmisten": 13,
   "aphyr": 12,
   "baeldung": 12,
+  "bloglogrocket": 12,
   "jetbrains": 12,
   "agis": 11,
   "bret": 11,
@@ -179,6 +194,11 @@
   "blogiconfactory": 10,
   "blogkenanb": 10,
   "blogkhanacademy": 10,
+  "blogknatten": 10,
+  "blogkukiel": 10,
+  "blogluden": 10,
+  "blogrustlang": 10,
+  "borischerny": 10,
   "codeflickr": 10,
   "copyconstruct": 10,
   "deliverooengineering": 10,
@@ -8189,6 +8209,1382 @@
    "metric": "feed rank"
   },
   {
+   "title": "A prvalue is not a temporary",
+   "url": "https://blog.knatten.org/2025/10/31/a-prvalue-is-not-a-temporary/",
+   "source": "blogknatten",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A taxonomy of C++ types",
+   "url": "https://blog.knatten.org/2025/04/25/a-taxonomy-of-c-types/",
+   "source": "blogknatten",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to become a conference speaker",
+   "url": "https://blog.knatten.org/2025/03/28/how-to-become-a-conference-speaker/",
+   "source": "blogknatten",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visiting CppCast",
+   "url": "https://blog.knatten.org/2024/11/20/visiting-cppcast/",
+   "source": "blogknatten",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CppQuiz.org is now on C++23",
+   "url": "https://blog.knatten.org/2024/09/19/cppquiz-org-is-now-on-c23/",
+   "source": "blogknatten",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "C++ Brain Teasers Book Launch September 10 (live+streaming)",
+   "url": "https://blog.knatten.org/2024/09/08/c-brain-teasers-book-launch-september-10-livestreaming/",
+   "source": "blogknatten",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I wrote a C++ book!",
+   "url": "https://blog.knatten.org/2024/06/12/i-wrote-a-c-book/",
+   "source": "blogknatten",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Help get CppQuiz to C++23 and win a book!",
+   "url": "https://blog.knatten.org/2024/06/02/help-get-cppquiz-to-c23-and-win-a-book/",
+   "source": "blogknatten",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "References don’t have top-level cv-qualifiers",
+   "url": "https://blog.knatten.org/2023/03/17/references-dont-have-top-level-cv-qualifiers/",
+   "source": "blogknatten",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why we probably shouldn’t have constexpr conditional operator",
+   "url": "https://blog.knatten.org/2023/01/02/why-we-probably-shouldnt-have-constexpr-conditional-operator/",
+   "source": "blogknatten",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI-Written SEO Metadata in CFML on Lucee",
+   "url": "https://blog.kukiel.dev/posts/cfml-seo-metadata-ai-on-lucee.html",
+   "source": "blogkukiel",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Image Generation from CFML in One Function Call",
+   "url": "https://blog.kukiel.dev/posts/cfml-ai-images-with-cloudflare.html",
+   "source": "blogkukiel",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We Cut Our Lambda Bill by 33% Switching to Rust — And AI Wrote the Code",
+   "url": "https://blog.kukiel.dev/posts/rust-vs-python-lambda.html",
+   "source": "blogkukiel",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The right way to setup Python on Macos",
+   "url": "https://blog.kukiel.dev/posts/the-right-way-to-setup-python-on-macos.html",
+   "source": "blogkukiel",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A pathway to success: breaking into a developer career",
+   "url": "https://blog.kukiel.dev/posts/pathway-to-success.html",
+   "source": "blogkukiel",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to make a Python Pandas and Numpy Lambda layer",
+   "url": "https://blog.kukiel.dev/posts/pandas-and-numpy-lambda-layer.html",
+   "source": "blogkukiel",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Jenkins - In AWS",
+   "url": "https://blog.kukiel.dev/posts/jenkins-in-aws.html",
+   "source": "blogkukiel",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lucee - Extensions running cfimage in lambda",
+   "url": "https://blog.kukiel.dev/posts/CFML-Lucee-in-Lambda-with-APIGateway-Part3.html",
+   "source": "blogkukiel",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Compiling Fuseless in Cloud 9 for Coldfusion/CFML in AWS Lambda",
+   "url": "https://blog.kukiel.dev/posts/CFML-Lucee-in-Lambda-with-APIGateway-Part2.html",
+   "source": "blogkukiel",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Running Coldfusion/CFML in AWS Lambda",
+   "url": "https://blog.kukiel.dev/posts/CFML-Lucee-in-Lambda-with-APIGateway.html",
+   "source": "blogkukiel",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Top 5 AI code review tools in 2026",
+   "url": "https://blog.logrocket.com/ai-code-review-tools-2026/",
+   "source": "bloglogrocket",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Are fixed user flows becoming obsolete?",
+   "url": "https://blog.logrocket.com/ux-design/intent-driven-ux-dynamic-user-flows/",
+   "source": "bloglogrocket",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Comparing the top React toast libraries [2026 update]",
+   "url": "https://blog.logrocket.com/react-toast-libraries-compared-2026/",
+   "source": "bloglogrocket",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can Framer replace your web design stack in 2026?",
+   "url": "https://blog.logrocket.com/ux-design/framer-next-full-stack-web-design-tool/",
+   "source": "bloglogrocket",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Tecovas automates bug fixes with LogRocket’s Galileo AI",
+   "url": "https://blog.logrocket.com/tecovas-galileo-ai/",
+   "source": "bloglogrocket",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Goodhart’s Law: How optimizing for metrics can hurt your product",
+   "url": "https://blog.logrocket.com/product-management/goodharts-law-product-metrics/",
+   "source": "bloglogrocket",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is OctaneJS? A compiler-first alternative to React",
+   "url": "https://blog.logrocket.com/octanejs-compiler-first-react-alternative/",
+   "source": "bloglogrocket",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The next UX era: 3 big predictions revisited for 2026",
+   "url": "https://blog.logrocket.com/ux-design/predictions-future-ui-ux-design/",
+   "source": "bloglogrocket",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vercel’s vgpu: A WebGPU library built for AI agents",
+   "url": "https://blog.logrocket.com/vercel-vgpu-webgpu-ai-agents/",
+   "source": "bloglogrocket",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Comparing the best Node.js unit testing frameworks",
+   "url": "https://blog.logrocket.com/comparing-best-node-js-unit-testing-frameworks/",
+   "source": "bloglogrocket",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exploring the top React date pickers",
+   "url": "https://blog.logrocket.com/top-react-date-pickers/",
+   "source": "bloglogrocket",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI-first helpdesks: The UX shift businesses can’t ignore",
+   "url": "https://blog.logrocket.com/ux-design/ai-helpdesk-ux-design-guide/",
+   "source": "bloglogrocket",
+   "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Agents in Game Development: FOMO, Real Production Lessons, Failed Experiments, and Workshop 101",
+   "url": "https://blog.luden.io/ai-agents-in-game-development-real-production-lessons-failed-experiments-and-workshop-101-7d71e64685fa?source=rss----d6f120d108d1---4",
+   "source": "blogluden",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How we stayed on the front page of itch.io for over a month",
+   "url": "https://blog.luden.io/how-we-stayed-on-the-front-page-of-itch-io-for-over-a-month-8e0d0cf1cc17?source=rss----d6f120d108d1---4",
+   "source": "blogluden",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generating prototypes from game design document with Cursor, Zed and LÖVE",
+   "url": "https://blog.luden.io/generating-prototypes-from-game-design-document-with-cursor-zed-and-l%C3%B6ve-7b8d932194d7?source=rss----d6f120d108d1---4",
+   "source": "blogluden",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Defold game engine for Steam games production",
+   "url": "https://blog.luden.io/defold-game-engine-for-steam-games-production-1f4e657c012e?source=rss----d6f120d108d1---4",
+   "source": "blogluden",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What do I think about Lua after shipping a project with 60,000 lines of code?",
+   "url": "https://blog.luden.io/what-do-i-think-about-lua-after-shipping-a-project-with-60-000-lines-of-code-bf72a1328733?source=rss----d6f120d108d1---4",
+   "source": "blogluden",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generated Adventure — The Postmortem of a Game Made With chatGPT and Midjourney (Prompts Included)",
+   "url": "https://blog.luden.io/generated-adventure-the-postmortem-of-a-game-made-with-chatgpt-and-midjourney-prompts-included-f87e7e615204?source=rss----d6f120d108d1---4",
+   "source": "blogluden",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Our new Blog and Newsletter",
+   "url": "https://blog.luden.io/our-new-blog-and-newsletter-806d6a268307?source=rss----d6f120d108d1---4",
+   "source": "blogluden",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Two years of making free games for learners on the autism spectrum",
+   "url": "https://blog.luden.io/two-years-of-making-free-games-for-learners-on-the-autism-spectrum-ea1b302c4b71?source=rss----d6f120d108d1---4",
+   "source": "blogluden",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Meet Learning Factory",
+   "url": "https://blog.luden.io/meet-learning-factory-8d5fd27dac7e?source=rss----d6f120d108d1---4",
+   "source": "blogluden",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rewire VR Lessons: Open Mind School Experience",
+   "url": "https://blog.luden.io/rewire-vr-lessons-open-mind-school-experience-b284efe293c9?source=rss----d6f120d108d1---4",
+   "source": "blogluden",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bring Vision AI into Ignition with Roboflow",
+   "url": "https://roboflow.com/blog/show-vision-ai-results-in-ignition",
+   "source": "blogroboflow",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Run Vision Models on OBS Live Broadcasts",
+   "url": "https://roboflow.com/blog/vision-models-on-obs-live-broadcasts",
+   "source": "blogroboflow",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Roboflow Sells Hardware, and When to Use Your Own",
+   "url": "https://roboflow.com/blog/roboflow-hardware-and-when-to-use-your-own",
+   "source": "blogroboflow",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Design a Machine Vision System Step by Step",
+   "url": "https://roboflow.com/blog/machine-vision-system-design",
+   "source": "blogroboflow",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Set Up a Basler Camera on NVIDIA Jetson with Roboflow",
+   "url": "https://roboflow.com/blog/basler-jetson-deployment",
+   "source": "blogroboflow",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Line Scan Camera Defect Detection with Roboflow",
+   "url": "https://roboflow.com/blog/line-scan-cameras",
+   "source": "blogroboflow",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Turn Videos in S3, GCS or Azure into a Computer Vision Dataset",
+   "url": "https://roboflow.com/blog/label-video-data-s3-gcs-azure",
+   "source": "blogroboflow",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Get Vision AI Data in Your Inbox with Summary Reports",
+   "url": "https://roboflow.com/blog/vision-events-summary-reports",
+   "source": "blogroboflow",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Run Computer Vision Regression Tests with Roboflow",
+   "url": "https://roboflow.com/blog/computer-vision-regression-testing",
+   "source": "blogroboflow",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "OpenRouter Vision Models in Roboflow",
+   "url": "https://roboflow.com/blog/openrouter-vision-models",
+   "source": "blogroboflow",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Run Video Analytics for Manufacturing",
+   "url": "https://roboflow.com/blog/run-video-analytics-for-manufacturing",
+   "source": "blogroboflow",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Train, Evaluate, and Deploy Action Recognition Models with Roboflow",
+   "url": "https://roboflow.com/blog/action-recognition",
+   "source": "blogroboflow",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Physical AI Training Data",
+   "url": "https://roboflow.com/blog/physical-ai-training-data",
+   "source": "blogroboflow",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Roboflow Serverless vs. Self-Hosted Inference: What a 90-Second Traffic Spike Does to One GPU Server",
+   "url": "https://roboflow.com/blog/roboflow-serverless-vs-self-hosted-inference-what-a-90-second-traffic-spike-does-to-one-gpu-server",
+   "source": "blogroboflow",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Roboflow Helps with Compliance and Readiness for Computer Vision",
+   "url": "https://roboflow.com/blog/compliance-and-readiness-for-computer-vision",
+   "source": "blogroboflow",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Rust 1.100.0",
+   "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+   "source": "blogrustlang",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google Summer of Code 2026 results",
+   "url": "https://blog.rust-lang.org/2026/11/11/gsoc-2026-results/",
+   "source": "blogrustlang",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing rustup 1.29.3",
+   "url": "https://blog.rust-lang.org/2026/11/03/Rustup-1.29.3/",
+   "source": "blogrustlang",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to fund Rust contributors",
+   "url": "https://blog.rust-lang.org/2026/10/26/how-to-fund-rust-contributors/",
+   "source": "blogrustlang",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing rustup 1.29.2",
+   "url": "https://blog.rust-lang.org/2026/10/20/Rustup-1.29.2/",
+   "source": "blogrustlang",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Rust 1.99.1",
+   "url": "https://blog.rust-lang.org/2026/10/15/Rust-1.99.1/",
+   "source": "blogrustlang",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Demoting i686 Windows targets to std-only",
+   "url": "https://blog.rust-lang.org/2026/10/02/demoting-i686-windows-targets-to-std-only/",
+   "source": "blogrustlang",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Rust 1.99.0",
+   "url": "https://blog.rust-lang.org/2026/10/01/Rust-1.99.0/",
+   "source": "blogrustlang",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing a Maintainer in Residence: Scott Schafer for the Cargo team",
+   "url": "https://blog.rust-lang.org/2026/09/22/announcing-a-maintainer-in-residence-scott-schafer-for-the-cargo-team/",
+   "source": "blogrustlang",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GitHub Actions leaking secrets when Miri output is cached",
+   "url": "https://blog.rust-lang.org/2026/09/21/github-actions-leaking-secrets-when-miri-output-is-cached/",
+   "source": "blogrustlang",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An honest review of Matt Pocock's Skills framework",
+   "url": "https://blog.scottlogic.com/2026/10/19/an-honest-review-of-matt-pococks-skills.html",
+   "source": "blogscottlogic",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Proactive messaging, reactions, and compute pooling with Microsoft Foundry hosted agents",
+   "url": "https://blog.scottlogic.com/2026/10/15/proactive-messaging-reactions-and-compute-pooling-with-microsoft-foundry-hosted-agents.html",
+   "source": "blogscottlogic",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NoJS 4 - Pure CSS hackery with AI",
+   "url": "https://blog.scottlogic.com/2026/09/30/noJS-4-AI.html",
+   "source": "blogscottlogic",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Start at the beginning: how to get the most out of discovery and alpha",
+   "url": "https://blog.scottlogic.com/2026/09/24/get-most-out-of-discovery-alpha.html",
+   "source": "blogscottlogic",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building the business case for agentic software development",
+   "url": "https://blog.scottlogic.com/2026/09/21/building-the-business-case-for-agentic-software-development.html",
+   "source": "blogscottlogic",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI didn't make me a better marketer... It gave me more time to be one",
+   "url": "https://blog.scottlogic.com/2026/09/18/ai-didnt-make-me-a-better-marketer-dot-dot-dot-it-gave-me-more-time-to-be-one.html",
+   "source": "blogscottlogic",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MCP Apps: Your UI, Their Chat",
+   "url": "https://blog.scottlogic.com/2026/09/16/mcp-apps-your-ui-their-chat.html",
+   "source": "blogscottlogic",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why agentic AI starts with legacy modernisation",
+   "url": "https://blog.scottlogic.com/2026/08/21/why-agentic-ai-starts-with-legacy-modernisation.html",
+   "source": "blogscottlogic",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Want to use AI agents safely? Start with design",
+   "url": "https://blog.scottlogic.com/2026/08/18/want-to-use-ai-agents-safely-start-with-design.html",
+   "source": "blogscottlogic",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to take incremental steps towards data democratisation",
+   "url": "https://blog.scottlogic.com/2026/08/17/incremental-steps-data-democratisation.html",
+   "source": "blogscottlogic",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI success depends on data foundations",
+   "url": "https://blog.scottlogic.com/2026/08/14/ai-success-depends-on-data-foundations.html",
+   "source": "blogscottlogic",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unlocking your data: the value is in collaboration",
+   "url": "https://blog.scottlogic.com/2026/08/12/unlocking-your-data-in-collaboration.html",
+   "source": "blogscottlogic",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Agile Leadership",
+   "url": "https://blog.scottlogic.com/2026/08/10/agile-leadership.html",
+   "source": "blogscottlogic",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to accelerate agentic adoption",
+   "url": "https://blog.scottlogic.com/2026/08/06/how-to-accelerate-agentic-adoption.html",
+   "source": "blogscottlogic",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Confidence Techniques for Guiding AI Migration",
+   "url": "https://blog.scottlogic.com/2026/08/04/ai-migration-techniques.html",
+   "source": "blogscottlogic",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We have a Slopware Factory",
+   "url": "https://blog.sentry.io/slopware-factory/",
+   "source": "blogsentry",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MCP or CLI? Yes.",
+   "url": "https://blog.sentry.io/mcp-or-cli/",
+   "source": "blogsentry",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Monitor your CI performance using Sentry",
+   "url": "https://blog.sentry.io/monitor-ci-performance-sentry/",
+   "source": "blogsentry",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How a broken release name overloaded our symbolication database",
+   "url": "https://blog.sentry.io/broken-release-database-load/",
+   "source": "blogsentry",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding performance wins in our own traces with a coding agent",
+   "url": "https://blog.sentry.io/performance-wins-traces-coding-agent/",
+   "source": "blogsentry",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Android profiling now uses Perfetto via ProfilingManager",
+   "url": "https://blog.sentry.io/android-profilingmanager-perfetto/",
+   "source": "blogsentry",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Measuring soft navigation web vitals",
+   "url": "https://blog.sentry.io/measuring-soft-navigation-web-vitals/",
+   "source": "blogsentry",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Five things you can do with Sentry’s Agent Tracing",
+   "url": "https://blog.sentry.io/agent-tracing-use-cases/",
+   "source": "blogsentry",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How a beagle-shaped AI agent ships code to madewithvuejs.com",
+   "url": "https://blog.sentry.io/beagle-ai-agent-workflows/",
+   "source": "blogsentry",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Should you use a log or a metric?",
+   "url": "https://blog.sentry.io/when-you-need-a-metric/",
+   "source": "blogsentry",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We just gave a million dollars to Open Source maintainers",
+   "url": "https://blog.sentry.io/another-year-another-1-000-000-to-open-source-maintainers/",
+   "source": "blogsentry",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Sentry Android SDK is now 20-30% faster!",
+   "url": "https://blog.sentry.io/android-sdk-faster-startup/",
+   "source": "blogsentry",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sentry's Flutter SDK 10.0: Streaming Traces and More Accurate Crash-Free Rates",
+   "url": "https://blog.sentry.io/flutter-sdk-10/",
+   "source": "blogsentry",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sentry JavaScript SDK v11 adds tracing for all JS platforms",
+   "url": "https://blog.sentry.io/tracing-for-all-js-platforms/",
+   "source": "blogsentry",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reducing Android scope-sync overhead in Sentry Flutter",
+   "url": "https://blog.sentry.io/flutter-android-scope-sync/",
+   "source": "blogsentry",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Research: \"What's the Default Language of an LLM?\"",
+   "url": "http://blogs.newardassociates.com/blog/2026/rnd-whichlang.html",
+   "source": "blogsnewardassociates",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things I Think I Think... The New Internet Era",
+   "url": "http://blogs.newardassociates.com/blog/2026/titit-llms-and-internet.html",
+   "source": "blogsnewardassociates",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things I Think I Think... about Coding Agents and IDEs",
+   "url": "http://blogs.newardassociates.com/blog/2026/titit-agents-as-ides.html",
+   "source": "blogsnewardassociates",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things I Think I Think... about Junior Developers",
+   "url": "http://blogs.newardassociates.com/blog/2026/titit-jrdevs.html",
+   "source": "blogsnewardassociates",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things I Think I Think... Data Privacy",
+   "url": "http://blogs.newardassociates.com/blog/2026/titit-data-privacy.html",
+   "source": "blogsnewardassociates",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Research: \"Roles\"",
+   "url": "http://blogs.newardassociates.com/blog/2026/rnd-prompts.html",
+   "source": "blogsnewardassociates",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things I Think I Think... Agents and (Visual) FoxPro",
+   "url": "http://blogs.newardassociates.com/blog/2026/titit-agents-as-vfp.html",
+   "source": "blogsnewardassociates",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Layoff Thinking",
+   "url": "http://blogs.newardassociates.com/blog/2026/layoff-thinking.html",
+   "source": "blogsnewardassociates",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things I Think I Think... Preferring Local OSS LLMs",
+   "url": "http://blogs.newardassociates.com/blog/2026/titit-local-ai.html",
+   "source": "blogsnewardassociates",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things I Think I Think... Disruption",
+   "url": "http://blogs.newardassociates.com/blog/2026/titit-disruption.html",
+   "source": "blogsnewardassociates",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things I Think I Think... About Touching Code",
+   "url": "http://blogs.newardassociates.com/blog/2026/titit-touching-code.html",
+   "source": "blogsnewardassociates",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2026 Tech Predictions",
+   "url": "http://blogs.newardassociates.com/blog/2026/2025-tech-predictions.html",
+   "source": "blogsnewardassociates",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DevRel Activity Patterns... published",
+   "url": "http://blogs.newardassociates.com/blog/2025/devrel-patterns-published.html",
+   "source": "blogsnewardassociates",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Linguis",
+   "url": "http://blogs.newardassociates.com/blog/2025/introducing-linguis.html",
+   "source": "blogsnewardassociates",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Writing Matters (to the Technical Professional)",
+   "url": "http://blogs.newardassociates.com/blog/2025/why-writing-matters.html",
+   "source": "blogsnewardassociates",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's new in TensorFlow 2.20",
+   "url": "https://blog.tensorflow.org/2025/08/whats-new-in-tensorflow-2-20.html",
+   "source": "blogtensorflow",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's new in TensorFlow 2.19",
+   "url": "https://blog.tensorflow.org/2025/03/whats-new-in-tensorflow-2-19.html",
+   "source": "blogtensorflow",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Wake Vision: A High-Quality, Large-Scale Dataset for TinyML Computer Vision Applications",
+   "url": "https://blog.tensorflow.org/2024/12/introducing-wake-vision-new-dataset-for-person-detection-in-tinyml.html",
+   "source": "blogtensorflow",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MLSysBook.AI: Principles and Practices of Machine Learning Systems Engineering",
+   "url": "https://blog.tensorflow.org/2024/11/mlsysbookai-principles-and-practices-of-machine-learning-systems-engineering.html",
+   "source": "blogtensorflow",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's new in TensorFlow 2.18",
+   "url": "https://blog.tensorflow.org/2024/10/whats-new-in-tensorflow-218.html",
+   "source": "blogtensorflow",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's new in TensorFlow 2.17",
+   "url": "https://blog.tensorflow.org/2024/07/whats-new-in-tensorflow-217.html",
+   "source": "blogtensorflow",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Faster Dynamically Quantized Inference with XNNPack",
+   "url": "https://blog.tensorflow.org/2024/04/faster-dynamically-quantized-inference-with-xnnpack.html",
+   "source": "blogtensorflow",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's new in TensorFlow 2.16",
+   "url": "https://blog.tensorflow.org/2024/03/whats-new-in-tensorflow-216.html",
+   "source": "blogtensorflow",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Graph neural networks in TensorFlow",
+   "url": "https://blog.tensorflow.org/2024/02/graph-neural-networks-in-tensorflow.html",
+   "source": "blogtensorflow",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TensorFlow 2.15 update: hot-fix for Linux installation issue",
+   "url": "https://blog.tensorflow.org/2023/12/tensorflow-215-update-hot-fix-linux-installation-issue.html",
+   "source": "blogtensorflow",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Half-precision Inference Doubles On-Device Inference Performance",
+   "url": "https://blog.tensorflow.org/2023/11/half-precision-inference-doubles-on-device-inference-performance.html",
+   "source": "blogtensorflow",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's new in TensorFlow 2.15",
+   "url": "https://blog.tensorflow.org/2023/11/whats-new-in-tensorflow-2-15.html",
+   "source": "blogtensorflow",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Join us at the third Women in ML Symposium!",
+   "url": "https://blog.tensorflow.org/2023/11/join-us-at-third-women-in-ml-symposium.html",
+   "source": "blogtensorflow",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simulated Spotify Listening Experiences for Reinforcement Learning with TensorFlow and TF-Agents",
+   "url": "https://blog.tensorflow.org/2023/10/simulated-spotify-listening-experiences-reinforcement-learning-tensorflow-tf-agents.html",
+   "source": "blogtensorflow",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a board game with the TFLite plugin for Flutter",
+   "url": "https://blog.tensorflow.org/2023/10/building-board-game-with-tflite-plugin-for-flutter.html",
+   "source": "blogtensorflow",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Vue 3.5",
+   "url": "https://blog.vuejs.org/posts/vue-3-5",
+   "source": "blogvuejs",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing VitePress 1.0",
+   "url": "https://blog.vuejs.org/posts/vitepress-1.0",
+   "source": "blogvuejs",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Vue 3.4",
+   "url": "https://blog.vuejs.org/posts/vue-3-4",
+   "source": "blogvuejs",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vue 2 is Approaching End Of Life",
+   "url": "https://blog.vuejs.org/posts/vue-2-eol",
+   "source": "blogvuejs",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Vue 3.3",
+   "url": "https://blog.vuejs.org/posts/vue-3-3",
+   "source": "blogvuejs",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Volar: a New Beginning",
+   "url": "https://blog.vuejs.org/posts/volar-a-new-beginning",
+   "source": "blogvuejs",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2022 Year In Review",
+   "url": "https://blog.vuejs.org/posts/2022-year-in-review",
+   "source": "blogvuejs",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Escape's Vue 2 to Svelte Migration",
+   "url": "https://blog.vuejs.org/posts/on-migration",
+   "source": "blogvuejs",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Volar 1.0 \"Nika\" Released!",
+   "url": "https://blog.vuejs.org/posts/volar-1.0",
+   "source": "blogvuejs",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vue 2.7 \"Naruto\" Released",
+   "url": "https://blog.vuejs.org/posts/vue-2-7-naruto",
+   "source": "blogvuejs",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vue 2.7 is Now in Beta",
+   "url": "https://blog.vuejs.org/posts/vue-2-7-beta",
+   "source": "blogvuejs",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vue 3 as the New Default",
+   "url": "https://blog.vuejs.org/posts/vue-3-as-the-new-default",
+   "source": "blogvuejs",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vue 3.2 Released!",
+   "url": "https://blog.vuejs.org/posts/vue-3-2",
+   "source": "blogvuejs",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reflections for 2020-2021",
+   "url": "https://blog.vuejs.org/posts/hello-2021",
+   "source": "blogvuejs",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Vue 3.0 \"One Piece\"",
+   "url": "https://blog.vuejs.org/posts/vue-3-one-piece",
+   "source": "blogvuejs",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learn to Control Servo motor using PWM - Wokwi Style",
+   "url": "https://blog.wokwi.com/learn-servo-motor-using-wokwi-logic-analyzer/",
+   "source": "blogwokwi",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learn PWM signal using Wokwi Logic Analyzer",
+   "url": "https://blog.wokwi.com/explore-pwm-with-logic-analyzer/",
+   "source": "blogwokwi",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I tried ChatGPT for Arduino - It’s Surprising",
+   "url": "https://blog.wokwi.com/learn-arduino-using-ai-chatgpt/",
+   "source": "blogwokwi",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Analyzing UART Messages on Wokwi Logic Analyzer Part 2",
+   "url": "https://blog.wokwi.com/wokwi-logic-analyzer-uart-part-2/",
+   "source": "blogwokwi",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learn UART Using Wokwi Logic Analyzer - Part 1",
+   "url": "https://blog.wokwi.com/wokwi-logic-analyzer-uart-part-1/",
+   "source": "blogwokwi",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Custom Chips? Yes Please",
+   "url": "https://blog.wokwi.com/custom-chips-cd4051b-analog-multiplexer/",
+   "source": "blogwokwi",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Successful Hardware Crowdfunding: Behind the Scenes",
+   "url": "https://blog.wokwi.com/hardware-crowdfunding-behind-the-scenes/",
+   "source": "blogwokwi",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ESP32 JTAG Debugging using Raspberry Pi",
+   "url": "https://blog.wokwi.com/gdb-debugging-esp32-using-raspberry-pi/",
+   "source": "blogwokwi",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Running GDB in the Browser",
+   "url": "https://blog.wokwi.com/running-gdb-in-the-browser/",
+   "source": "blogwokwi",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bitwise Operators in GIFs",
+   "url": "https://blog.wokwi.com/bitwise-operators-in-gifs/",
+   "source": "blogwokwi",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Arduino/AVR GDB Cheat Sheet",
+   "url": "https://blog.wokwi.com/gdb-avr-arduino-cheatsheet/",
+   "source": "blogwokwi",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Removing a Curse from ATtiny85 Fuses",
+   "url": "https://blog.wokwi.com/removing-a-curse-from-attiny85-fuses/",
+   "source": "blogwokwi",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Brilliant Things People Built with AVR8js Arduino Simulation 🏃‍♀️",
+   "url": "https://blog.wokwi.com/cool-things-people-built-with-avr8js/",
+   "source": "blogwokwi",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Write Clean Arduino Code",
+   "url": "https://blog.wokwi.com/how-to-write-clean-arduino-code/",
+   "source": "blogwokwi",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "? How I won the CircuitPython Challenge with a Piano ?",
+   "url": "https://blog.wokwi.com/how-i-won-the-circuitpython-challenge-with-a-piano/",
+   "source": "blogwokwi",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing the moderation inbox",
+   "url": "https://bsky.social/about/blog/10-30-2026-moderation-inbox",
+   "source": "blueskyweb",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "プロフィールリンクのご紹介",
+   "url": "https://bsky.social/about/blog/10-22-2026-introducing-profile-links-jp",
+   "source": "blueskyweb",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Profile Links",
+   "url": "https://bsky.social/about/blog/10-22-2026-introducing-profile-links",
+   "source": "blueskyweb",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Protecting the 2026 US Midterm Elections on Bluesky",
+   "url": "https://bsky.social/about/blog/10-19-2026-protecting-us-midterm-elections",
+   "source": "blueskyweb",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bluesky names Toni Schneider CEO",
+   "url": "https://bsky.social/about/blog/07-10-2026-toni-schneider-ceo",
+   "source": "blueskyweb",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Summer of Standard.site",
+   "url": "https://bsky.social/about/blog/06-22-2026-summer-of-standard-site",
+   "source": "blueskyweb",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bluesky Service Interruption Update (April 20)",
+   "url": "https://bsky.social/about/blog/04-20-2026-bluesky-service-interruption-update3",
+   "source": "blueskyweb",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bluesky Service Interruption Update (Morning of April 17)",
+   "url": "https://bsky.social/about/blog/04-17-2026-bluesky-service-interuption-update1",
+   "source": "blueskyweb",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bluesky Service Interruption Update (Afternoon of April 17)",
+   "url": "https://bsky.social/about/blog/04-17-2026-bluesky-service-interuption-update2",
+   "source": "blueskyweb",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bluesky Service Interruption",
+   "url": "https://bsky.social/about/blog/04-16-2026-bluesky-service-interruption",
+   "source": "blueskyweb",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bluesky's 2025 $100M Series B Lays Foundation for Open Social Web",
+   "url": "https://bsky.social/about/blog/03-19-2026-series-b",
+   "source": "blueskyweb",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bluesky、新たな章の始まり",
+   "url": "https://bsky.social/about/blog/03-09-2026-a-new-chapter-for-bluesky-jp",
+   "source": "blueskyweb",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A New Chapter for Bluesky",
+   "url": "https://bsky.social/about/blog/03-09-2026-a-new-chapter-for-bluesky",
+   "source": "blueskyweb",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Coming Off the Bench for Bluesky",
+   "url": "https://bsky.social/about/blog/03-09-2026-coming-off-the-bench-for-bluesky",
+   "source": "blueskyweb",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "「#確かな情報を得る訓練」3DAYアクションを行います",
+   "url": "https://bsky.social/about/blog/03-06-2026-reliable-information-action-jp",
+   "source": "blueskyweb",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Deconstructing these auto-generated OG images",
    "url": "https://www.bobmonsour.com/blog/deconstructing-these-auto-generated-og-images/",
    "source": "bobmonsour",
@@ -8304,6 +9700,678 @@
    "title": "Where do the red and blue colors on this site come from?",
    "url": "https://www.bobmonsour.com/blog/from-where-are-the-red-and-blue/",
    "source": "bobmonsour",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "clj-pulse: a fast Clojure language server",
+   "url": "https://bogoyavlensky.com/blog/clj-pulse/",
+   "source": "bogoyavlensky",
+   "rank": 1,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sandboxing AI coding agents with Lima",
+   "url": "https://bogoyavlensky.com/blog/sandboxing-ai-coding-agents-with-lima/",
+   "source": "bogoyavlensky",
+   "rank": 2,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing GetUUID: a simple UUID, ULID and Nano ID generator",
+   "url": "https://bogoyavlensky.com/blog/announcing-getuuid/",
+   "source": "bogoyavlensky",
+   "rank": 3,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building and publishing a Clojure library from scratch with Slim",
+   "url": "https://bogoyavlensky.com/blog/build-and-publish-clojure-lib-with-slim/",
+   "source": "bogoyavlensky",
+   "rank": 4,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Slim: new build tool for Clojure",
+   "url": "https://bogoyavlensky.com/blog/announcing-slim-new-build-tool-for-clojure/",
+   "source": "bogoyavlensky",
+   "rank": 5,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "End-to-end tests in Clojure with Etaoin and Testcontainers",
+   "url": "https://bogoyavlensky.com/blog/e2e-tests-in-clojure-with-testcontainers/",
+   "source": "bogoyavlensky",
+   "rank": 6,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deploying a full-stack Clojure app with Kamal on a single server",
+   "url": "https://bogoyavlensky.com/blog/deploying-full-stack-clojure-app-with-kamal/",
+   "source": "bogoyavlensky",
+   "rank": 7,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Designing a database schema for a budget tracker with Automigrate",
+   "url": "https://bogoyavlensky.com/blog/db-schema-for-budget-tracker-with-automigrate/",
+   "source": "bogoyavlensky",
+   "rank": 8,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rendering index.html on any route with Reitit in Clojure",
+   "url": "https://bogoyavlensky.com/blog/index-handler-in-reitit/",
+   "source": "bogoyavlensky",
+   "rank": 9,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Auto-reloading of Ring server with Reitit in Clojure",
+   "url": "https://bogoyavlensky.com/blog/auto-reloading-ring/",
+   "source": "bogoyavlensky",
+   "rank": 10,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kubernetes cluster on Hetzner using k3s and Terraform",
+   "url": "https://bogoyavlensky.com/blog/kubernetes-hetzner/",
+   "source": "bogoyavlensky",
+   "rank": 11,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing automigrate",
+   "url": "https://bogoyavlensky.com/blog/announcing-automigrate/",
+   "source": "bogoyavlensky",
+   "rank": 12,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Clojure test coverage with Eftest and Cloverage",
+   "url": "https://bogoyavlensky.com/blog/eftest-cloverage/",
+   "source": "bogoyavlensky",
+   "rank": 13,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Clojure formatting with cljstyle",
+   "url": "https://bogoyavlensky.com/blog/clojure-formatting-cljstyle/",
+   "source": "bogoyavlensky",
+   "rank": 14,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "1987 Honda CH 150 Service Manual",
+   "url": "https://boonepeter.github.io/posts/honda_ch150/",
+   "source": "boonepetergithub",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advent of Code In BigQuery - Day 8",
+   "url": "https://boonepeter.github.io/posts/advent_of_code_2022_day_8/",
+   "source": "boonepetergithub",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advent of Code In BigQuery - Day 7",
+   "url": "https://boonepeter.github.io/posts/advent_of_code_2022_day_7/",
+   "source": "boonepetergithub",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advent of Code In BigQuery - Day 6",
+   "url": "https://boonepeter.github.io/posts/advent_of_code_2022_day_6/",
+   "source": "boonepetergithub",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advent of Code In BigQuery - Day 5",
+   "url": "https://boonepeter.github.io/posts/advent_of_code_2022_day_5/",
+   "source": "boonepetergithub",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advent of Code In BigQuery",
+   "url": "https://boonepeter.github.io/posts/advent_of_code_2022/",
+   "source": "boonepetergithub",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ARVO 2022 Prep",
+   "url": "https://boonepeter.github.io/posts/2022-04-25-arvo-prep/",
+   "source": "boonepetergithub",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "BigQuery Resources",
+   "url": "https://boonepeter.github.io/posts/bigquery-resources/",
+   "source": "boonepetergithub",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tomorrow's Wordle (Spoiler Alert!)",
+   "url": "https://boonepeter.github.io/posts/tomorrows-wordle/",
+   "source": "boonepetergithub",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Spotify Codes - Part 2",
+   "url": "https://boonepeter.github.io/posts/spotify-codes-part-2/",
+   "source": "boonepetergithub",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sequencing my genome",
+   "url": "https://boonepeter.github.io/posts/personal-genome-sequencing/",
+   "source": "boonepetergithub",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NULL in BigQuery",
+   "url": "https://boonepeter.github.io/posts/null-in-bigquery/",
+   "source": "boonepetergithub",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The practical use of repetition and definition levels in BigQuery",
+   "url": "https://boonepeter.github.io/posts/bigquery-records/",
+   "source": "boonepetergithub",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unnecessary BigQuery Optimization",
+   "url": "https://boonepeter.github.io/posts/unnecessary_bigquery_optimization/",
+   "source": "boonepetergithub",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vitamins for Choroideremia",
+   "url": "https://boonepeter.github.io/posts/vitamins-for-chm-part-1/",
+   "source": "boonepetergithub",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I am often wrong",
+   "url": "https://borischerny.com/management,/product/2026/09/19/I-am-often-wrong.html",
+   "source": "borischerny",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NPM and NodeJS should do more to make ES Modules easy to use",
+   "url": "https://borischerny.com/javascript,/typescript/2024/06/19/ES-Modules-Are-A-Mess.html",
+   "source": "borischerny",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learning to work (very) remotely",
+   "url": "https://borischerny.com/tech/2023/12/10/Working-Remotely.html",
+   "source": "borischerny",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Time and Timing",
+   "url": "https://borischerny.com/2022/09/07/time-and-timing.html",
+   "source": "borischerny",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dinosaur Food: 100 million year old foods we still eat today",
+   "url": "https://borischerny.com/food/2022/01/17/Dinosaur-food.html",
+   "source": "borischerny",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Data Management on the Web Still Sucks",
+   "url": "https://borischerny.com/javascript/2021/03/13/Data-Fetching.html",
+   "source": "borischerny",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React+TypeScript: Use unions of objects for props",
+   "url": "https://borischerny.com/typescript/react/2019/12/24/Use-unions-of-objects.html",
+   "source": "borischerny",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Contagion",
+   "url": "https://borischerny.com/philosophy/of/programming/2019/09/08/On-Contagion.html",
+   "source": "borischerny",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "13 Tips for Writing a Technical Book",
+   "url": "https://borischerny.com/writing/2019/05/26/Tips-For-Writing-A-Technical-Book.html",
+   "source": "borischerny",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Derived State",
+   "url": "https://borischerny.com/javascript/typescript/react/2018/08/10/On-Derived-State.html",
+   "source": "borischerny",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Better Way to Code",
+   "url": "https://medium.com/@mbostock/a-better-way-to-code-2b1d2876a3a0",
+   "source": "bostocks",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Command-Line Cartography",
+   "url": "https://medium.com/@mbostock/command-line-cartography-part-1-897aa8f8ca2c",
+   "source": "bostocks",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Makes Software Good?",
+   "url": "https://medium.com/@mbostock/what-makes-software-good-943557f8a488",
+   "source": "bostocks",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing d3-scale",
+   "url": "https://medium.com/@mbostock/introducing-d3-scale-61980c51545f",
+   "source": "bostocks",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing d3-shape",
+   "url": "https://medium.com/@mbostock/introducing-d3-shape-73f8367e6d12",
+   "source": "bostocks",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Let’s Make a (D3) Plugin",
+   "url": "https://bost.ocks.org/mike/d3-plugin/",
+   "source": "bostocks",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mapping Every Path to the N.F.L. Playoffs",
+   "url": "http://www.nytimes.com/interactive/2014/12/27/upshot/mapping-the-paths-to-the-nfl-playoffs.html",
+   "source": "bostocks",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Each Team Can Make the N.F.L. Playoffs",
+   "url": "http://www.nytimes.com/interactive/2014/12/19/upshot/nfl-playoff-simulator.html",
+   "source": "bostocks",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Most Detailed Maps You’ll See From the Midterm Elections",
+   "url": "http://www.nytimes.com/interactive/2014/11/04/upshot/senate-maps.html",
+   "source": "bostocks",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How To Scroll",
+   "url": "https://bost.ocks.org/mike/scroll/",
+   "source": "bostocks",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "‘Stop-and-Frisk’ Is All but Gone From New York",
+   "url": "http://www.nytimes.com/interactive/2014/09/19/nyregion/stop-and-frisk-is-all-but-gone-from-new-york.html",
+   "source": "bostocks",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mapping the Spread of Drought Across the U.S.",
+   "url": "http://www.nytimes.com/interactive/2014/upshot/mapping-the-spread-of-drought-across-the-us.html",
+   "source": "bostocks",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visualizing Algorithms",
+   "url": "https://bost.ocks.org/mike/algorithms/",
+   "source": "bostocks",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Three Little Circles",
+   "url": "https://bost.ocks.org/mike/circles/",
+   "source": "bostocks",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is It Better to Rent or Buy?",
+   "url": "http://www.nytimes.com/interactive/2014/upshot/buy-rent-calculator.html",
+   "source": "bostocks",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Down the rabbit hole: Drag and drop in GNOME Web",
+   "url": "https://www.boxofcables.dev/down-the-rabbit-hole-drag-and-drop-in-gnome/",
+   "source": "boxofcables",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I made an Azure Linux desktop concept to run on my ThinkPad",
+   "url": "https://www.boxofcables.dev/i-made-an-azure-linux-desktop-concept-to-run-on-my-thinkpad/",
+   "source": "boxofcables",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stop quoting Steve Ballmer",
+   "url": "https://www.boxofcables.dev/stop-quoting-steve-ballmer/",
+   "source": "boxofcables",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don't ask Microsoft to do it all",
+   "url": "https://www.boxofcables.dev/dont-ask-microsoft-to-do-it-all/",
+   "source": "boxofcables",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Azure Linux \"Desktop\": A Build 2026 mashup of wslc, WinUI Reactor, and Azure Linux 4.0",
+   "url": "https://www.boxofcables.dev/azure-linux-desktop-a-build-2026-mashup-of-wslc-winui-reactor-and-azure-linux-4-0/",
+   "source": "boxofcables",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build a Custom WSL 2 Kernel in 2026",
+   "url": "https://www.boxofcables.dev/build-a-custom-wsl-2-kernel-in-2026/",
+   "source": "boxofcables",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I'm running for the .NET Foundation Board",
+   "url": "https://www.boxofcables.dev/im-running-for-the-net-foundation-board/",
+   "source": "boxofcables",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Azure Linux 4.0 is Microsoft’s first general-purpose Linux",
+   "url": "https://www.boxofcables.dev/azure-linux-4-0-is-microsofts-first-general-purpose-linux/",
+   "source": "boxofcables",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "wslc: A native Linux container runtime for Windows",
+   "url": "https://www.boxofcables.dev/wslc-a-native-linux-container-runtime-for-windows/",
+   "source": "boxofcables",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WSL 2 is getting faster Windows file system access",
+   "url": "https://www.boxofcables.dev/wsl2-per-device-swiotlb-pools-for-virtiofs-and-virtioproxy/",
+   "source": "boxofcables",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting Started Creating a Linux Desktop App in Visual Studio using Avalonia and WSL",
+   "url": "https://www.boxofcables.dev/creating-a-linux-desktop-app-in-visual-studio-using-avalonia/",
+   "source": "boxofcables",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Windows Dev Drive Benchmarks",
+   "url": "https://www.boxofcables.dev/windows-dev-drive-benchmarks/",
+   "source": "boxofcables",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The GitHub Copilot Lawsuit Threatens Open Source and Human Progress",
+   "url": "https://www.boxofcables.dev/the-github-copilot-lawsuit-threatens-open-source-and-human-progress-1/",
+   "source": "boxofcables",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Microsoft's CBL-Delridge is 404, long live CBL-Mariner",
+   "url": "https://www.boxofcables.dev/cbl-delridge-is-dead-long-live-cbl-mariner/",
+   "source": "boxofcables",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building custom WSL distro images with Podman",
+   "url": "https://www.boxofcables.dev/building-wsl-distro-images-with-podman/",
+   "source": "boxofcables",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ideas Over Implementation",
+   "url": "https://boz.com/articles/ideas-implementation",
+   "source": "boz",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Good Interfaces Make Good Neighbors",
+   "url": "https://boz.com/articles/good-interfaces-make-good-neighbors",
+   "source": "boz",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Love What You Do",
+   "url": "https://boz.com/articles/love-what-you-do",
+   "source": "boz",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Think of Pavlov",
+   "url": "https://boz.com/articles/think-pavlov",
+   "source": "boz",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Gift of Naïveté",
+   "url": "https://boz.com/articles/gift-naivete",
+   "source": "boz",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prioritize Relatively",
+   "url": "https://boz.com/articles/prioritize-relatively",
+   "source": "boz",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Find Space",
+   "url": "https://boz.com/articles/find-space",
+   "source": "boz",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Positraction",
+   "url": "https://boz.com/articles/positraction",
+   "source": "boz",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Emotional Economy",
+   "url": "https://boz.com/articles/emotional-economy",
+   "source": "boz",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You Are How You Act",
+   "url": "https://boz.com/articles/you-are-how-you-act",
+   "source": "boz",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Honesty is the Best Policy",
+   "url": "https://boz.com/articles/honesty-best",
+   "source": "boz",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Self Actualization",
+   "url": "https://boz.com/articles/self-actualization",
+   "source": "boz",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Look For Yes",
+   "url": "https://boz.com/articles/look-for-yes",
+   "source": "boz",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Two Things Can Be True",
+   "url": "https://boz.com/articles/two-things",
+   "source": "boz",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Product Innovation is Discovery not Creation",
+   "url": "https://boz.com/articles/product-discovery",
+   "source": "boz",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -8633,6 +10701,126 @@
    "url": "https://dynamicland.org/2024/Computational_Public_Space/",
    "source": "bret",
    "rank": 11,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Long Should Instagram Reels Be? We Analyzed 2.7 Million Reels",
+   "url": "https://buffer.com/resources/instagram-reels-length/",
+   "source": "buffer",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We’re running an A/B test on human and AI involvement in hiring",
+   "url": "https://buffer.com/resources/ab-test-on-hiring/",
+   "source": "buffer",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "24 Top Social Media Platforms and Apps to Grow Your Brand in 2026",
+   "url": "https://buffer.com/resources/social-media-platforms/",
+   "source": "buffer",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The 8 Best AI Image Generators for Social Media in 2026 (+ Examples)",
+   "url": "https://buffer.com/resources/ai-image-generator/",
+   "source": "buffer",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "9 Genius Ideas to Steal for Your Black Friday + Cyber Monday Marketing Campaigns (with Real-life Examples)",
+   "url": "https://buffer.com/resources/black-friday-marketing/",
+   "source": "buffer",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "20 Social Media Metrics to Track (With Formulas and Benchmarks)",
+   "url": "https://buffer.com/resources/social-media-metrics/",
+   "source": "buffer",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Best MCP Servers for Social Media: The 8-Tool Stack I Use Every Week As A Creator",
+   "url": "https://buffer.com/resources/best-mcp-servers/",
+   "source": "buffer",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We are Retiring Start Page: Why and What to Expect",
+   "url": "https://buffer.com/resources/retiring-start-page/",
+   "source": "buffer",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can You Schedule Instagram Stories? Yes — Here's How (Desktop and Mobile)",
+   "url": "https://buffer.com/resources/how-to-schedule-instagram-stories/",
+   "source": "buffer",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "13 Trending Sounds on Instagram in November 2026 (+ How to Use Them)",
+   "url": "https://buffer.com/resources/trending-audio-instagram/",
+   "source": "buffer",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "8 Best Hootsuite Alternatives for 2026 (Free + Paid)",
+   "url": "https://buffer.com/resources/alternatives-to-hootsuite-free-how-buffer-and-hootsuite-compare/",
+   "source": "buffer",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The 12 Best Social Media Engagement Tools to Build Your Community in 2026",
+   "url": "https://buffer.com/resources/social-media-engagement-tools/",
+   "source": "buffer",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7 Best Metricool Alternatives to Try in 2026 (Free + Paid)",
+   "url": "https://buffer.com/resources/metricool-alternatives-free-paid/",
+   "source": "buffer",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Schedule a Post on Facebook — for Pages, Profiles + Groups",
+   "url": "https://buffer.com/resources/how-to-schedule-facebook-posts/",
+   "source": "buffer",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How the Instagram Algorithm Works: Your Up-to-Date 2026 Guide",
+   "url": "https://buffer.com/resources/instagram-algorithms/",
+   "source": "buffer",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },

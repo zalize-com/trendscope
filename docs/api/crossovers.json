@@ -1,7 +1,23 @@
 {
- "generated_at": "2026-11-15T16:57:17.396040+00:00",
+ "generated_at": "2026-11-15T16:58:53.902816+00:00",
  "latest_snapshot": "2026-11-15",
  "crossovers": [
+  {
+   "url": "https://blog.rust-lang.org/2026/11/12/rust-1.100.0",
+   "title": "Announcing Rust 1.100.0",
+   "sources": [
+    "blogrustlang",
+    "hackernews",
+    "lemmy"
+   ],
+   "days": 2,
+   "best": {
+    "score": 890,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-12"
+   }
+  },
   {
    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
    "title": "All AI-generated code should be Open Source",
@@ -31,21 +47,6 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-13"
-   }
-  },
-  {
-   "url": "https://blog.rust-lang.org/2026/11/12/rust-1.100.0",
-   "title": "Announcing Rust 1.100.0",
-   "sources": [
-    "hackernews",
-    "lemmy"
-   ],
-   "days": 2,
-   "best": {
-    "score": 890,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-12"
    }
   },
   {

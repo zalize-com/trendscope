@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T16:57:17.681227+00:00",
+  "generated_at": "2026-11-15T16:58:54.157172+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -170,18 +170,6 @@
         "rank": 3
       }
     },
-    "lemmy": {
-      "items": 17,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 87,
-      "top_item": {
-        "title": "Announcing Rust 1.100.0",
-        "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
-        "score": 890,
-        "rank": 4
-      }
-    },
     "googleblog": {
       "items": 17,
       "unique_urls": 15,
@@ -227,6 +215,18 @@
         "title": "",
         "url": "https://mastodon.social/@Gargron/117606353009169239",
         "score": 15,
+        "rank": 1
+      }
+    },
+    "lemmy": {
+      "items": 15,
+      "unique_urls": 14,
+      "median_days_on_board": 1,
+      "one_day_pct": 93,
+      "top_item": {
+        "title": "Programming.dev instance: Sponsors needed",
+        "url": "https://legal.programming.dev/docs/donation-policy/",
+        "score": 197,
         "rank": 1
       }
     },
@@ -1778,6 +1778,162 @@
         "rank": 1
       }
     },
+    "blogroboflow": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Bring Vision AI into Ignition with Roboflow",
+        "url": "https://roboflow.com/blog/show-vision-ai-results-in-ignition",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogscottlogic": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "An honest review of Matt Pocock's Skills framework",
+        "url": "https://blog.scottlogic.com/2026/10/19/an-honest-review-of-matt-pococks-skills.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogsentry": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "We have a Slopware Factory",
+        "url": "https://blog.sentry.io/slopware-factory/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogtensorflow": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "What's new in TensorFlow 2.20",
+        "url": "https://blog.tensorflow.org/2025/08/whats-new-in-tensorflow-2-20.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogvuejs": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Announcing Vue 3.5",
+        "url": "https://blog.vuejs.org/posts/vue-3-5",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogwokwi": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Learn to Control Servo motor using PWM - Wokwi Style",
+        "url": "https://blog.wokwi.com/learn-servo-motor-using-wokwi-logic-analyzer/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogsnewardassociates": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Research: \"What's the Default Language of an LLM?\"",
+        "url": "http://blogs.newardassociates.com/blog/2026/rnd-whichlang.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blueskyweb": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Introducing the moderation inbox",
+        "url": "https://bsky.social/about/blog/10-30-2026-moderation-inbox",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "boonepetergithub": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "1987 Honda CH 150 Service Manual",
+        "url": "https://boonepeter.github.io/posts/honda_ch150/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "bostocks": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "A Better Way to Code",
+        "url": "https://medium.com/@mbostock/a-better-way-to-code-2b1d2876a3a0",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "boxofcables": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Down the rabbit hole: Drag and drop in GNOME Web",
+        "url": "https://www.boxofcables.dev/down-the-rabbit-hole-drag-and-drop-in-gnome/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "boz": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Ideas Over Implementation",
+        "url": "https://boz.com/articles/ideas-implementation",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "buffer": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How Long Should Instagram Reels Be? We Analyzed 2.7 Million Reels",
+        "url": "https://buffer.com/resources/instagram-reels-length/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -1798,6 +1954,18 @@
       "top_item": {
         "title": "May 2021 Gwern.net Newsletter",
         "url": "https://gwern.substack.com/p/may-2021-gwernnet-newsletter",
+        "score": 14,
+        "rank": 1
+      }
+    },
+    "bogoyavlensky": {
+      "items": 14,
+      "unique_urls": 14,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "clj-pulse: a fast Clojure language server",
+        "url": "https://bogoyavlensky.com/blog/clj-pulse/",
         "score": 14,
         "rank": 1
       }
@@ -1872,6 +2040,30 @@
         "url": "https://blog.jetbrains.com/pycharm/2026/11/what-s-fixed-and-improved-in-pycharm-2026-3/",
         "score": 12,
         "rank": 1
+      }
+    },
+    "bloglogrocket": {
+      "items": 12,
+      "unique_urls": 12,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Top 5 AI code review tools in 2026",
+        "url": "https://blog.logrocket.com/ai-code-review-tools-2026/",
+        "score": 12,
+        "rank": 1
+      }
+    },
+    "blogrustlang": {
+      "items": 11,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 90,
+      "top_item": {
+        "title": "Announcing Rust 1.100.0",
+        "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+        "score": 890,
+        "rank": 4
       }
     },
     "agis": {
@@ -2710,6 +2902,54 @@
       "top_item": {
         "title": "How We Rebuilt Khan Academy’s Color System from the Ground Up",
         "url": "https://blog.khanacademy.org/how-we-rebuilt-khan-academys-color-system-from-the-ground-up/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogknatten": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "A prvalue is not a temporary",
+        "url": "https://blog.knatten.org/2025/10/31/a-prvalue-is-not-a-temporary/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogkukiel": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "AI-Written SEO Metadata in CFML on Lucee",
+        "url": "https://blog.kukiel.dev/posts/cfml-seo-metadata-ai-on-lucee.html",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogluden": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "AI Agents in Game Development: FOMO, Real Production Lessons, Failed Experiments, and Workshop 101",
+        "url": "https://blog.luden.io/ai-agents-in-game-development-real-production-lessons-failed-experiments-and-workshop-101-7d71e64685fa?source=rss----d6f120d108d1---4",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "borischerny": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "I am often wrong",
+        "url": "https://borischerny.com/management,/product/2026/09/19/I-am-often-wrong.html",
         "score": 10,
         "rank": 1
       }
