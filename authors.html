@@ -63,22 +63,10 @@ function parseCSV(text) {
   return rows;
 }
 
-const text = await fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text());
-const rows = parseCSV(text);
-const ci = Object.fromEntries(rows[0].map((h,i)=>[h,i]));
-
-const authors = {};
-for (const r of rows.slice(1)) {
-  const who = (r[ci.author] || "").trim();
-  if (!who) continue;
-  const a = authors[who] ||= { hits: 0, days: new Set(), srcs: new Set(), top: null };
-  a.hits++; a.days.add(r[ci.date]); a.srcs.add(r[ci.source]);
-  const score = Number(r[ci.score]) || 0;
-  if (!a.top || score > a.top.score)
-    a.top = { title: r[ci.title], url: r[ci.url], score };
-}
-const list = Object.entries(authors)
-  .map(([who, a]) => ({ who, ...a, ndays: a.days.size }))
+const aApi = await fetch("docs/api/authors.json", {cache:"no-cache"}).then(r => r.json());
+const list = aApi.authors
+  .map(a => ({ who: a.author, hits: a.items, srcs: a.sources, top: a.top_hit,
+               ndays: a.days_on_board }))
   .sort((x, y) => y.ndays - x.ndays || y.hits - x.hits)
   .slice(0, 40);
 
@@ -87,7 +75,7 @@ $("out").innerHTML = list.length
     list.map(a =>
       `<tr><td><a class="who" href="author.html?u=${encodeURIComponent(a.who)}">${esc(a.who)}</a></td>
        <td class="num">${a.ndays}</td><td class="num">${a.hits}</td>
-       <td class="srcs">${[...a.srcs].join(", ")}</td>
+       <td class="srcs">${a.srcs.join(", ")}</td>
        <td class="last"><a href="${a.top.url}">${esc(a.top.title.length>70?a.top.title.slice(0,70)+"…":a.top.title)}</a><a href="item.html?q=${encodeURIComponent(a.top.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></td></tr>`).join("") +
     `</table>`
   : `<p id="err">No author data yet — only some sources carry an author field.</p>`;
