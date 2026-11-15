@@ -1,0 +1,155 @@
+openapi: 3.0.3
+info:
+  title: trendscope API
+  version: "1.0"
+  description: |
+    Static JSON/CSV/SVG/RSS endpoints for the developer attention dataset —
+    daily cross-source snapshots of what developers read, build and download
+    across 20 tracked sources. All endpoints are plain files served from
+    GitHub Pages (or the repo): no keys, no rate limits, CC0.
+  license:
+    name: CC0-1.0
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+servers:
+  - url: https://zalize-com.github.io/trendscope
+  - url: https://raw.githubusercontent.com/zalize-com/trendscope/main
+tags:
+  - name: snapshots
+  - name: aggregates
+  - name: feeds
+paths:
+  /data/latest.json:
+    get:
+      tags: [snapshots]
+      summary: Most recent full snapshot
+      responses:
+        '200':
+          description: Today's items grouped by source
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  date: {type: string, format: date}
+                  captured_at: {type: string, format: date-time}
+                  total_items: {type: integer}
+                  items:
+                    type: object
+                    additionalProperties:
+                      type: array
+                      items: {$ref: '#/components/schemas/Item'}
+  /data/index.json:
+    get:
+      tags: [snapshots]
+      summary: List of all snapshot dates
+      responses:
+        '200':
+          description: Edition index
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  snapshots: {type: array, items: {type: string, format: date}}
+  /data/daily/{date}.json:
+    get:
+      tags: [snapshots]
+      summary: Full snapshot for one day
+      parameters:
+        - {name: date, in: path, required: true, schema: {type: string, pattern: '^\d{4}-\d{2}-\d{2}$'}}
+      responses:
+        '200': {description: Same shape as latest.json}
+  /data/history.csv:
+    get:
+      tags: [snapshots]
+      summary: Append-only cumulative history
+      responses:
+        '200':
+          description: CSV, one row per (item, snapshot) — see data-dictionary.md
+          content: {text/csv: {}}
+  /data/health.json:
+    get:
+      tags: [snapshots]
+      summary: Per-source item count and fetch latency
+      responses:
+        '200':
+          description: Health report
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  generated_at: {type: string, format: date-time}
+                  sources:
+                    type: object
+                    additionalProperties:
+                      type: object
+                      properties:
+                        items: {type: integer}
+                        latency_s: {type: number}
+  /docs/api/new.json:
+    get: {tags: [aggregates], summary: Items first seen today, responses: {'200': {description: New items + per-source counts, content: {application/json: {}}}}}
+  /docs/api/movers-latest.json:
+    get: {tags: [aggregates], summary: Rank/score movers vs yesterday, responses: {'200': {description: Movers, content: {application/json: {}}}}}
+  /docs/api/risers.json:
+    get: {tags: [aggregates], summary: Single-day spikes + sustained climbers, responses: {'200': {description: Risers, content: {application/json: {}}}}}
+  /docs/api/streaks.json:
+    get: {tags: [aggregates], summary: Items on the board 3+ consecutive days, responses: {'200': {description: Streaks, content: {application/json: {}}}}}
+  /docs/api/crossovers.json:
+    get: {tags: [aggregates], summary: Same story in 2+ sources, responses: {'200': {description: Crossovers, content: {application/json: {}}}}}
+  /docs/api/domains.json:
+    get: {tags: [aggregates], summary: Domain leaderboard, responses: {'200': {description: Domains, content: {application/json: {}}}}}
+  /docs/api/authors.json:
+    get: {tags: [aggregates], summary: Author leaderboard, responses: {'200': {description: Authors, content: {application/json: {}}}}}
+  /docs/api/sources.json:
+    get: {tags: [aggregates], summary: Per-source stats across all days, responses: {'200': {description: Sources, content: {application/json: {}}}}}
+  /docs/api/topics.json:
+    get: {tags: [aggregates], summary: Topic counts and scores by day, responses: {'200': {description: Topics, content: {application/json: {}}}}}
+  /docs/api/weekday.json:
+    get: {tags: [aggregates], summary: Source x weekday item counts, responses: {'200': {description: Weekday grid, content: {application/json: {}}}}}
+  /docs/api/rhythm.json:
+    get: {tags: [aggregates], summary: Source x hour-of-day capture counts, responses: {'200': {description: Rhythm, content: {application/json: {}}}}}
+  /docs/api/velocity.json:
+    get: {tags: [aggregates], summary: Items appearing on more days than before, responses: {'200': {description: Velocity, content: {application/json: {}}}}}
+  /docs/api/series.json:
+    get: {tags: [aggregates], summary: Per-item day-by-day score/rank series, responses: {'200': {description: Series, content: {application/json: {}}}}}
+  /docs/api/hiring-history.json:
+    get: {tags: [aggregates], summary: HN hiring thread comment counts over time, responses: {'200': {description: Hiring history, content: {application/json: {}}}}}
+  /docs/api/stats.json:
+    get: {tags: [aggregates], summary: Global stats, responses: {'200': {description: Stats, content: {application/json: {}}}}}
+  /docs/api/ideas-latest.json:
+    get: {tags: [aggregates], summary: Opportunity-mining output, responses: {'200': {description: Ideas, content: {application/json: {}}}}}
+  /docs/api/badge.json:
+    get: {tags: [feeds], summary: shields.io endpoint badge (days + items), responses: {'200': {description: Badge JSON, content: {application/json: {}}}}}
+  /docs/api/badge-top.json:
+    get: {tags: [feeds], summary: shields.io endpoint badge (today's top story), responses: {'200': {description: Badge JSON, content: {application/json: {}}}}}
+  /docs/api/sparkline.svg:
+    get: {tags: [feeds], summary: Items-per-day SVG sparkline, responses: {'200': {description: SVG image, content: {image/svg+xml: {}}}}}
+  /docs/api/sparkline/{source}.svg:
+    get:
+      tags: [feeds]
+      summary: Per-source items-per-day SVG sparkline
+      parameters:
+        - {name: source, in: path, required: true, schema: {type: string}}
+      responses:
+        '200': {description: SVG image, content: {image/svg+xml: {}}}
+  /docs/api/latest.rss:
+    get: {tags: [feeds], summary: Today's top 25 items as RSS 2.0, responses: {'200': {description: RSS feed, content: {application/rss+xml: {}}}}}
+  /feed.xml:
+    get: {tags: [feeds], summary: Editions feed — one item per snapshot + weekly digest, responses: {'200': {description: RSS feed, content: {application/rss+xml: {}}}}}
+  /feed.json:
+    get: {tags: [feeds], summary: Same editions feed as JSON Feed 1.1, responses: {'200': {description: JSON feed, content: {application/feed+json: {}}}}}
+components:
+  schemas:
+    Item:
+      type: object
+      required: [title, url, source]
+      properties:
+        title: {type: string}
+        url: {type: string, format: uri}
+        source: {type: string, description: 'one of: hackernews, show_hn, ask_hn, github_trending, lobsters, devto, producthunt, techmeme, slashdot, arstechnica, theverge, arxiv, npm, pypi, crates, lemmy, krebs, changelog, freecodecamp, echojs'}
+        rank: {type: integer}
+        score: {type: number, description: source-native score (points/stars/reactions/downloads)}
+        metric: {type: string}
+        author: {type: string}
+        comments: {type: integer}
