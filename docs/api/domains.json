@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T20:28:48.135925+00:00",
+ "generated_at": "2026-11-15T20:39:44.574936+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 1908,
+ "total": 2009,
  "domains": [
   {
    "hostname": "blog.google",
@@ -87,10 +87,11 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 2,
-   "items": 139,
+   "items": 154,
    "sources": [
     "hackernews",
     "k8s",
+    "rartificial",
     "rcoding",
     "rdatascience",
     "reddit",
@@ -317,6 +318,23 @@
    }
   },
   {
+   "hostname": "aphyr.com",
+   "days_on_board": 2,
+   "items": 14,
+   "sources": [
+    "aphyr",
+    "hackernews",
+    "planetclojure"
+   ],
+   "top_hit": {
+    "title": "RIP, Harvest",
+    "url": "https://aphyr.com/posts/427-rip-harvest",
+    "score": 445,
+    "metric": "points",
+    "date": "2026-11-09"
+   }
+  },
+  {
    "hostname": "zwischenzugs.com",
    "days_on_board": 2,
    "items": 13,
@@ -331,22 +349,6 @@
     "score": 265,
     "metric": "points",
     "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "aphyr.com",
-   "days_on_board": 2,
-   "items": 13,
-   "sources": [
-    "aphyr",
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "RIP, Harvest",
-    "url": "https://aphyr.com/posts/427-rip-harvest",
-    "score": 445,
-    "metric": "points",
-    "date": "2026-11-09"
    }
   },
   {
@@ -430,6 +432,22 @@
     "score": 224,
     "metric": "points",
     "date": "2026-11-07"
+   }
+  },
+  {
+   "hostname": "blog.sesse.net",
+   "days_on_board": 2,
+   "items": 3,
+   "sources": [
+    "lobsters",
+    "planetdebian"
+   ],
+   "top_hit": {
+    "title": "Solving the fox game",
+    "url": "http://blog.sesse.net/blog/tech/2026-11-13-19-51_solving_the_fox_game.html",
+    "score": 19,
+    "metric": "score",
+    "date": "2026-11-15"
    }
   },
   {
@@ -686,21 +704,6 @@
     "title": "Creating a self booting ZIP archive",
     "url": "https://goliath32.com/blog/ziphead.html",
     "score": 18,
-    "metric": "score",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "blog.sesse.net",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "Solving the fox game",
-    "url": "http://blog.sesse.net/blog/tech/2026-11-13-19-51_solving_the_fox_game.html",
-    "score": 19,
     "metric": "score",
     "date": "2026-11-15"
    }

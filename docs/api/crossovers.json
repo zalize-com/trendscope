@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T20:28:48.135925+00:00",
+ "generated_at": "2026-11-15T20:39:44.574936+00:00",
  "latest_snapshot": "2026-11-15",
  "crossovers": [
   {
@@ -64,6 +64,22 @@
     "score": 54,
     "metric": "points",
     "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://www.shemshak.org/~amin/emacs-build.html",
+   "title": "Amin Bandali: Building GNU Emacs from source",
+   "sources": [
+    "planetdebian",
+    "planetemacs",
+    "planetgnu"
+   ],
+   "days": 1,
+   "best": {
+    "score": 14,
+    "metric": "feed rank",
+    "source": "planetgnu",
     "date": "2026-11-15"
    }
   },
@@ -248,6 +264,21 @@
    }
   },
   {
+   "url": "http://blog.sesse.net/blog/tech/2026-11-13-19-51_solving_the_fox_game.html",
+   "title": "Steinar H. Gunderson: Solving the fox game",
+   "sources": [
+    "lobsters",
+    "planetdebian"
+   ],
+   "days": 2,
+   "best": {
+    "score": 19,
+    "metric": "score",
+    "source": "lobsters",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
    "title": "We’re Asking an Appeals Court to Require a Warrant for ALPR Searches",
    "sources": [
@@ -272,6 +303,21 @@
    "days": 1,
    "best": {
     "score": 60,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112",
+   "title": "The Evolving Story of How Chemistry Became Biology",
+   "sources": [
+    "hackernews",
+    "quanta"
+   ],
+   "days": 1,
+   "best": {
+    "score": 55,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-15"
@@ -383,6 +429,36 @@
    }
   },
   {
+   "url": "https://tweag.io/blog/2026-10-29-running-local-dev-services-with-nix",
+   "title": "Tweag I/O: Running local development services",
+   "sources": [
+    "planethaskell",
+    "tweag"
+   ],
+   "days": 1,
+   "best": {
+    "score": 15,
+    "metric": "feed rank",
+    "source": "tweag",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://rg3.name/202611091721.html",
+   "title": "Ricardo Garcia: XDC 2026 CTS Talk",
+   "sources": [
+    "planetfreedesktop",
+    "planetigalia"
+   ],
+   "days": 1,
+   "best": {
+    "score": 15,
+    "metric": "feed rank",
+    "source": "planetfreedesktop",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "url": "https://www.theguardian.com/info/2024/sep/23/cooking-up-recipe-data-for-the-feast-app",
    "title": "Cooking up recipe data for the Feast app",
    "sources": [
@@ -454,6 +530,21 @@
     "score": 14,
     "metric": "feed rank",
     "source": "blogjanestreet",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://bogoyavlensky.com/blog/clj-pulse",
+   "title": "clj-pulse: a fast Clojure language server",
+   "sources": [
+    "bogoyavlensky",
+    "planetclojure"
+   ],
+   "days": 1,
+   "best": {
+    "score": 14,
+    "metric": "feed rank",
+    "source": "bogoyavlensky",
     "date": "2026-11-15"
    }
   },
@@ -608,6 +699,36 @@
    }
   },
   {
+   "url": "https://aphyr.com/posts/428-announcing-hegel-clj",
+   "title": "Announcing Hegel-clj",
+   "sources": [
+    "aphyr",
+    "planetclojure"
+   ],
+   "days": 1,
+   "best": {
+    "score": 12,
+    "metric": "feed rank",
+    "source": "aphyr",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://blog.jetbrains.com/pycharm/2026/11/what-s-fixed-and-improved-in-pycharm-2026-3",
+   "title": "PyCharm: What’s Fixed and Improved in PyCharm 2026.3",
+   "sources": [
+    "jetbrains",
+    "planetpython"
+   ],
+   "days": 1,
+   "best": {
+    "score": 12,
+    "metric": "feed rank",
+    "source": "jetbrains",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "url": "https://blog.janestreet.com/config-management-orchestrator-for-windows",
    "title": "Building and testing a config management orchestrator for Windows",
    "sources": [
@@ -634,126 +755,6 @@
     "score": 12,
     "metric": "feed rank",
     "source": "taniarascia",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.theguardian.com/info/article/2024/jun/17/hack-day-summer-of-sport-fall-of-democracy",
-   "title": "Hack Day: Summer of Sport Fall of Democracy",
-   "sources": [
-    "guardianco",
-    "theguardian"
-   ],
-   "days": 1,
-   "best": {
-    "score": 12,
-    "metric": "feed rank",
-    "source": "guardianco",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.codinghorror.com/thank-you-for-being-a-friend",
-   "title": "Thank You For Being a Friend",
-   "sources": [
-    "codinghorror",
-    "codinghorror2"
-   ],
-   "days": 1,
-   "best": {
-    "score": 11,
-    "metric": "feed rank",
-    "source": "codinghorror",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.janestreet.com/scaling-and-benchmarking-a-critical-message-bus",
-   "title": "Scaling and benchmarking a critical message bus using a new indexing strategy",
-   "sources": [
-    "blogjanestreet",
-    "blogsjanestreet"
-   ],
-   "days": 1,
-   "best": {
-    "score": 11,
-    "metric": "feed rank",
-    "source": "blogjanestreet",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.taniarascia.com/horizontal-scroll-fixed-headers-table",
-   "title": "HTML Tables with Horizontal Scroll and Sticky Headers",
-   "sources": [
-    "tania",
-    "taniarascia"
-   ],
-   "days": 1,
-   "best": {
-    "score": 11,
-    "metric": "feed rank",
-    "source": "taniarascia",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.theguardian.com/info/2024/apr/04/when-security-matters-working-with-qubes-os-at-the-guardian",
-   "title": "When security matters: working with Qubes OS at the Guardian",
-   "sources": [
-    "guardianco",
-    "theguardian"
-   ],
-   "days": 1,
-   "best": {
-    "score": 11,
-    "metric": "feed rank",
-    "source": "guardianco",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.codinghorror.com/launching-the-rural-guaranteed-minimum-income-initiative",
-   "title": "Launching The Rural Guaranteed Minimum Income Initiative",
-   "sources": [
-    "codinghorror",
-    "codinghorror2"
-   ],
-   "days": 1,
-   "best": {
-    "score": 10,
-    "metric": "feed rank",
-    "source": "codinghorror",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://surfingcomplexity.blog/2026/11/12/constraints-and-production-pressure-at-emudhra",
-   "title": "Constraints and production pressure at eMudhra",
-   "sources": [
-    "lorinhochstein",
-    "surfingcomplexity"
-   ],
-   "days": 1,
-   "best": {
-    "score": 10,
-    "metric": "feed rank",
-    "source": "surfingcomplexity",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.erlang.org/news/191",
-   "title": "Erlang/OTP 29.1 Release",
-   "sources": [
-    "erlang",
-    "planeterlang"
-   ],
-   "days": 1,
-   "best": {
-    "score": 10,
-    "metric": "feed rank",
-    "source": "erlang",
     "date": "2026-11-15"
    }
   }
