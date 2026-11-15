@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-15T14:18:04.806710+00:00",
+ "generated_at": "2026-11-15T14:30:43.312379+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 564,
- "new_items": 438,
+ "total_items": 577,
+ "new_items": 451,
  "by_source": {
   "producthunt": 45,
-  "hackernews": 21,
-  "show_hn": 21,
+  "hackernews": 22,
+  "show_hn": 22,
   "techmeme": 19,
   "slashdot": 17,
   "arstechnica": 16,
@@ -26,10 +26,11 @@
   "theregister": 15,
   "theverge": 14,
   "freecodecamp": 10,
+  "haxx": 10,
   "krebs": 10,
+  "lobsters": 10,
   "lucumr": 10,
   "opensourcecom": 10,
-  "lobsters": 9,
   "susam": 9,
   "hackaday": 7,
   "bendersky": 5,
@@ -1151,6 +1152,94 @@
    "metric": "points"
   },
   {
+   "title": "The MacBook Pro's OLED PWM Problem: When a 'Better' Display Becomes Worse to Use",
+   "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
+   "source": "hackernews",
+   "rank": 20,
+   "score": 47,
+   "metric": "points"
+  },
+  {
+   "title": "30 years of Internet transfers with curl",
+   "url": "https://daniel.haxx.se/blog/2026/11/11/30-years-of-internet-transfers-with-curl/",
+   "source": "haxx",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scrutinize our assessments",
+   "url": "https://daniel.haxx.se/blog/2026/11/03/scrutinize-our-assessments/",
+   "source": "haxx",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "“ignore the slop”",
+   "url": "https://daniel.haxx.se/blog/2026/10/22/ignore-the-slop/",
+   "source": "haxx",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Do minor curl vulnerabilities in the open",
+   "url": "https://daniel.haxx.se/blog/2026/10/20/do-minor-curl-vulnerabilities-in-the-open/",
+   "source": "haxx",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "OSI approved the curl license",
+   "url": "https://daniel.haxx.se/blog/2026/10/15/osi-approved-the-curl-license/",
+   "source": "haxx",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A curl audit by Aisle",
+   "url": "https://daniel.haxx.se/blog/2026/10/14/a-curl-audit-by-aisle/",
+   "source": "haxx",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A UAF turned RCE",
+   "url": "https://daniel.haxx.se/blog/2026/10/14/a-uaf-turned-rce/",
+   "source": "haxx",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "curl 8.23.0",
+   "url": "https://daniel.haxx.se/blog/2026/10/14/curl-8-23-0/",
+   "source": "haxx",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A slightly faster slimmer curl",
+   "url": "https://daniel.haxx.se/blog/2026/10/13/a-slightly-faster-slimmer-curl/",
+   "source": "haxx",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The 2026 curl team",
+   "url": "https://daniel.haxx.se/blog/2026/10/12/the-2026-curl-team/",
+   "source": "haxx",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Why I Still Use Python Virtual Environments in Docker",
    "url": "https://hynek.me/articles/docker-virtualenv/",
    "source": "hynek",
@@ -1657,6 +1746,14 @@
   {
    "title": "Memory management in 40 major C projects, a survey",
    "url": "https://theconsensus.dev/p/2026/11/08/c-memory-management-survey.html",
+   "source": "lobsters",
+   "rank": 15,
+   "score": 1,
+   "metric": "score"
+  },
+  {
+   "title": "A NES emulator written in Odin",
+   "url": "https://lucypero.com/lucynes.html",
    "source": "lobsters",
    "rank": 15,
    "score": 1,
@@ -2705,6 +2802,14 @@
   {
    "title": "Show HN: Aurora GeoXAI – Sovereign geospatial AI built out of frustration",
    "url": "https://news.ycombinator.com/item?id=50506331",
+   "source": "show_hn",
+   "rank": 12,
+   "score": 3,
+   "metric": "points"
+  },
+  {
+   "title": "Show HN: Nano-Edge-TTS – 70x realtime, Lightweight Kokoro-based TTS model",
+   "url": "https://huggingface.co/drmhse/nano-edge-tts",
    "source": "show_hn",
    "rank": 12,
    "score": 3,

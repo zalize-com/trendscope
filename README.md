@@ -57,6 +57,7 @@ A daily cross-source snapshot of developer attention:
 | Lucumr | Armin Ronacher blog | `lucumr.pocoo.org/feed.atom` |
 | Hynek | Python ecosystem blog | `hynek.me/articles/index.xml` |
 | Susam | long-form hacker blog | `susam.net/feed.xml` |
+| Daniel Haxx | curl author blog | `daniel.haxx.se/blog/feed/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
