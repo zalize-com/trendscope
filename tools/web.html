@@ -70,6 +70,7 @@
     <button data-tool="meta">meta audit</button>
     <button data-tool="aibots">AI bots</button>
     <button data-tool="spage">status page</button>
+    <button data-tool="feed">feed finder</button>
   </div>
 
   <div class="panel" id="p-qr">
@@ -201,6 +202,14 @@
     <div id="sp-out" style="margin-top:10px"></div>
   </div>
 
+  <div class="panel" id="p-feed">
+    <h2>RSS / Atom feed finder</h2>
+    <p class="hint">Paste a page's HTML source (Ctrl+U → copy) — finds declared <code>&lt;link rel="alternate"&gt;</code> feeds and guesses well-known paths. Browsers can't fetch cross-origin, so HTML paste is the reliable route.</p>
+    <input id="fd-base" placeholder="site URL, e.g. https://simonwillison.net" style="width:100%;padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)">
+    <textarea id="fd-in" placeholder="paste the page's &lt;head&gt; source here…" style="width:100%;height:110px;margin-top:6px"></textarea>
+    <div id="fd-out" style="margin-top:10px"></div>
+  </div>
+
 <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
@@ -208,7 +217,7 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots","spage"];
+const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots","spage","feed"];
 
 // ---- status-page checker ----
 function spreset(u){ const i=document.getElementById("sp-in"); if(i){ i.value=u; i.dispatchEvent(new Event("input")); } return false; }
@@ -634,6 +643,51 @@ function aibots() {
 $("ab-in").oninput = aibots;
 $("ab-in").value = "User-agent: *\nDisallow: /private/\n\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: ClaudeBot\nAllow: /";
 aibots();
+
+// ---- feed finder ----
+(function(){
+  const esc2 = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
+  const COMMON = ["/feed", "/feed/", "/rss", "/rss.xml", "/feed.xml", "/atom.xml",
+                  "/index.xml", "/feed.json", "/blog/feed", "/blog/rss", "/?feed=rss2"];
+  function abs(href, base){
+    try { return base ? new URL(href, base).href : href; } catch { return href; }
+  }
+  function run(){
+    const base = $("fd-base").value.trim();
+    const html = $("fd-in").value;
+    const out = $("fd-out");
+    if (!html.trim() && !base) { out.innerHTML = '<span style="color:var(--dim)">paste a URL and/or page source</span>'; return; }
+    const found = [];
+    if (html.trim()) {
+      const doc = new DOMParser().parseFromString(html, "text/html");
+      doc.querySelectorAll('link[rel="alternate"]').forEach(l => {
+        const t = (l.getAttribute("type")||"").toLowerCase();
+        if (t.includes("rss") || t.includes("atom") || t.includes("json"))
+          found.push({url: l.getAttribute("href"), kind: t, via: "link[rel=alternate] · " + (l.getAttribute("title")||"")});
+      });
+      doc.querySelectorAll('a[href]').forEach(a => {
+        const h = a.getAttribute("href")||"";
+        if (/\/(feed|rss|atom)(\.xml)?(\/)?(\?|$)/i.test(h) || /\.(rss|atom|xml)$/i.test(h) && /feed|rss|atom/i.test(h))
+          found.push({url: h, kind: "guessed", via: "<a> href pattern"});
+      });
+    }
+    const baseOk = base && /^https?:\/\//.test(base);
+    if (baseOk) COMMON.forEach(p => found.push({url: p, kind: "candidate", via: "well-known path guess"}));
+    const seen = new Set();
+    const list = found.map(f => ({...f, url: abs(f.url, base)}))
+      .filter(f => f.url && !seen.has(f.url) && seen.add(f.url));
+    out.innerHTML = !list.length
+      ? '<span style="color:var(--dim)">no feeds found — try the well-known guesses or check for a "/feed" link in the footer</span>'
+      : `<div style="font-size:12px;color:var(--dim);margin-bottom:6px">${list.length} candidate${list.length>1?"s":""} (link tags = declared, rest = guesses to try)</div>` +
+        list.map(f => `<div style="padding:4px 0;border-bottom:1px solid var(--border);display:flex;gap:8px;align-items:baseline">
+          <a href="${esc2(f.url)}" target="_blank" rel="noopener" style="word-break:break-all">${esc2(f.url)}</a>
+          <span style="color:${f.kind==="candidate"?"var(--dim)":"var(--green)"};font-size:11px;margin-left:auto;white-space:nowrap">${esc2(f.kind)}${f.via?" · "+esc2(f.via):""}</span></div>`).join("");
+  }
+  $("fd-in").oninput = run; $("fd-base").oninput = run;
+  $("fd-base").value = "https://simonwillison.net";
+  $("fd-in").value = '<head><link rel="alternate" type="application/atom+xml" title="Simon Willison" href="/atom/everything/"><link rel="alternate" type="application/rss+xml" href="/rss/"></head>';
+  run();
+})();
 </script>
 </body>
 </html>
