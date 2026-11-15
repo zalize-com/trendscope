@@ -1,10 +1,16 @@
 {
-  "generated": "2026-11-15 08:06 UTC",
+  "generated": "2026-11-15 08:11 UTC",
   "unique_threads": 62,
   "themes": [
     {
       "theme": "outage",
       "threads": [
+        {
+          "url": "https://news.ycombinator.com/item?id=50429551",
+          "title": "Tell HN: Another GitHub Major Outage",
+          "days_on_board": 1,
+          "max_score": 18
+        },
         {
           "url": "https://news.ycombinator.com/item?id=50472411",
           "title": "Tell HN: Major Microsoft Outlook/Exchange Online/Teams Outage in the Americas",
@@ -16,12 +22,6 @@
           "title": "Ask HN: Microsoft/Azure Outage?",
           "days_on_board": 1,
           "max_score": 402
-        },
-        {
-          "url": "https://news.ycombinator.com/item?id=50429551",
-          "title": "Tell HN: Another GitHub Major Outage",
-          "days_on_board": 1,
-          "max_score": 18
         }
       ],
       "score": 434,
@@ -39,10 +39,16 @@
       "theme": "claude",
       "threads": [
         {
-          "url": "https://news.ycombinator.com/item?id=50480941",
-          "title": "Claude AI Is Down",
+          "url": "https://news.ycombinator.com/item?id=50467233",
+          "title": "Claude Code's API billing depends on how often the cache expires",
           "days_on_board": 1,
-          "max_score": 28
+          "max_score": 6
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50481347",
+          "title": "Ask HN: What are you doing now that Claude is down?",
+          "days_on_board": 2,
+          "max_score": 7
         },
         {
           "url": "https://news.ycombinator.com/item?id=50480909",
@@ -57,16 +63,10 @@
           "max_score": 28
         },
         {
-          "url": "https://news.ycombinator.com/item?id=50467233",
-          "title": "Claude Code's API billing depends on how often the cache expires",
+          "url": "https://news.ycombinator.com/item?id=50480941",
+          "title": "Claude AI Is Down",
           "days_on_board": 1,
-          "max_score": 6
-        },
-        {
-          "url": "https://news.ycombinator.com/item?id=50481347",
-          "title": "Ask HN: What are you doing now that Claude is down?",
-          "days_on_board": 2,
-          "max_score": 7
+          "max_score": 28
         }
       ],
       "score": 106,
@@ -117,10 +117,10 @@
       "theme": "human",
       "threads": [
         {
-          "url": "https://news.ycombinator.com/item?id=50421778",
-          "title": "Ask HN: As a human, are you glad the AI bubble is bursting?",
+          "url": "https://news.ycombinator.com/item?id=50453369",
+          "title": "Ask HN: Is lack of human imagination now the bottleneck instead of intelligence?",
           "days_on_board": 1,
-          "max_score": 5
+          "max_score": 8
         },
         {
           "url": "https://news.ycombinator.com/item?id=50481227",
@@ -129,10 +129,10 @@
           "max_score": 9
         },
         {
-          "url": "https://news.ycombinator.com/item?id=50453369",
-          "title": "Ask HN: Is lack of human imagination now the bottleneck instead of intelligence?",
+          "url": "https://news.ycombinator.com/item?id=50421778",
+          "title": "Ask HN: As a human, are you glad the AI bubble is bursting?",
           "days_on_board": 1,
-          "max_score": 8
+          "max_score": 5
         }
       ],
       "score": 22,
