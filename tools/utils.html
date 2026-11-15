@@ -252,6 +252,21 @@
     <p class="hint" style="margin-top:6px">octal: <input id="cm-oct" size="6" placeholder="755"> → fill boxes</p>
   </div>
 
+  <div class="tool" data-tool="csv">
+    <h2>CSV &harr; JSON</h2>
+    <p class="hint">Paste CSV on the left &rarr; JSON rows on the right. Paste a JSON array &rarr; back to CSV.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <textarea id="cv-in" rows="9" placeholder="name,score&#10;alpha,10&#10;beta,20" style="width:100%"></textarea>
+      <textarea id="cv-out" rows="9" readonly style="width:100%"></textarea>
+    </div>
+    <p style="margin:6px 0">
+      <button class="go" id="cv-go">csv &rarr; json</button>
+      <button class="go" id="cv-bk">json &rarr; csv</button>
+      <label><input type="checkbox" id="cv-obj"> json as {header:value}</label>
+    </p>
+    <div class="out" id="cv-outx"></div>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -273,6 +288,7 @@ const TOOLS = [
   {id:"opml",   label:"OPML → YAML"},
   {id:"cron",   label:"Crontab explainer"},
   {id:"chmod",  label:"chmod calculator"},
+  {id:"csv",    label:"CSV ↔ JSON"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -758,6 +774,48 @@ document.getElementById('cm-oct').addEventListener('input',e=>{
   cmGo();
 });
 
+
+// --- csv <-> json ---
+function cvParse(t){
+  const rows=[];let row=[],cur="",q=false;
+  for(let i=0;i<t.length;i++){const c=t[i];
+    if(q){ if(c==='"'){ if(t[i+1]==='"'){cur+='"';i++;} else q=false; } else cur+=c; }
+    else if(c==='"') q=true;
+    else if(c===','){ row.push(cur);cur=""; }
+    else if(c==='\n'){ row.push(cur);rows.push(row);row=[];cur=""; }
+    else if(c!=='\r') cur+=c;
+  }
+  row.push(cur);rows.push(row);
+  return rows.filter(r=>r.length>1||r[0]!=="");
+}
+function cvEsc(v){ v=String(v); return /[",\n]/.test(v) ? '"'+v.replace(/"/g,'""')+'"' : v; }
+document.getElementById('cv-go').onclick=()=>{
+  try{
+    const rows=cvParse(document.getElementById('cv-in').value);
+    if(rows.length<1) throw 'empty';
+    const head=rows[0];
+    let out;
+    if(document.getElementById('cv-obj').checked){
+      out=rows.slice(1).map(r=>Object.fromEntries(head.map((h,i)=>[h,r[i]??""])));
+    } else out=rows.slice(1);
+    document.getElementById('cv-out').value=JSON.stringify(out,null,2);
+    document.getElementById('cv-outx').textContent=out.length+' rows · '+head.length+' cols';
+  }catch(e){ document.getElementById('cv-outx').textContent='parse error: '+e; }
+};
+document.getElementById('cv-bk').onclick=()=>{
+  try{
+    const arr=JSON.parse(document.getElementById('cv-in').value);
+    if(!Array.isArray(arr)||!arr.length) throw 'need a JSON array';
+    let head,rows;
+    if(typeof arr[0]==='object'&&arr[0]!==null){
+      head=[...new Set(arr.flatMap(o=>Object.keys(o)))];
+      rows=arr.map(o=>head.map(h=>o[h]??""));
+    } else { head=[];rows=arr; }
+    const lines=[...(head.length?[head]:[]),...rows].map(r=>r.map(cvEsc).join(','));
+    document.getElementById('cv-out').value=lines.join('\n');
+    document.getElementById('cv-outx').textContent=rows.length+' rows · '+(head.length||rows[0].length)+' cols';
+  }catch(e){ document.getElementById('cv-outx').textContent='parse error: '+e; }
+};
 </script>
 </body>
 </html>
