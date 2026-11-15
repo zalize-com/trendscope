@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T13:43:02.084595+00:00",
+ "generated_at": "2026-11-15T13:47:23.431489+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 773,
- "unique_urls": 636,
- "items_in_latest": 382,
- "items_per_day_avg": 85.9,
+ "total_rows": 788,
+ "unique_urls": 651,
+ "items_in_latest": 397,
+ "items_per_day_avg": 87.6,
  "sources": {
   "arstechnica": {
    "rows": 16,
@@ -97,6 +97,10 @@
    "rows": 17,
    "days_active": 1
   },
+  "soblog": {
+   "rows": 15,
+   "days_active": 1
+  },
   "techmeme": {
    "rows": 19,
    "days_active": 1
@@ -145,15 +149,15 @@
    "hits": 15
   },
   {
+   "domain": "stackoverflow.blog",
+   "hits": 15
+  },
+  {
    "domain": "theverge.com",
    "hits": 14
   },
   {
    "domain": "krebsonsecurity.com",
-   "hits": 10
-  },
-  {
-   "domain": "freecodecamp.org",
    "hits": 10
   }
  ],
