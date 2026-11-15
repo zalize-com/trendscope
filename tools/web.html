@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>trendscope web tools — QR generator, social card preview, robots.txt builder</title>
+<meta name="description" content="Free in-browser web tools: QR code generator, Open Graph/Twitter card preview + meta tag generator, and a robots.txt builder. No upload, no signup, no tracking.">
+<meta property="og:title" content="trendscope web tools">
+<meta property="og:image" content="../og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+<style>
+  :root { --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
+          --dim:#8b949e; --accent:#58a6ff; --green:#3fb950; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 900px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 20px; }
+  .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 22px; }
+  .tabs button {
+    background: var(--panel); color: var(--dim); border: 1px solid var(--border);
+    border-radius: 8px; padding: 7px 14px; font: inherit; font-size: 13px; cursor: pointer;
+  }
+  .tabs button.active { color: var(--fg); border-color: var(--accent); background: #1c2330; }
+  .panel { display: none; background: var(--panel); border: 1px solid var(--border);
+           border-radius: 10px; padding: 20px; }
+  .panel.active { display: block; }
+  h2 { font-size: 16px; margin-bottom: 4px; }
+  .hint { color: var(--dim); font-size: 13px; margin-bottom: 14px; }
+  label { display: block; font-size: 12px; color: var(--dim); margin: 12px 0 4px; }
+  input[type=text], textarea, select {
+    width: 100%; background: var(--bg); color: var(--fg); border: 1px solid var(--border);
+    border-radius: 8px; padding: 9px 12px; font: inherit; font-family: ui-monospace, monospace;
+  }
+  .row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .row > div { flex: 1; min-width: 200px; }
+  .out { font-family: ui-monospace, monospace; background: var(--bg); border: 1px solid var(--border);
+         border-radius: 8px; padding: 10px 12px; margin-top: 10px; word-break: break-all; white-space: pre-wrap; }
+  .err { color: #f85149; font-size: 13px; margin-top: 8px; }
+  button.copy { background: var(--panel); color: var(--dim); border: 1px solid var(--border);
+    border-radius: 6px; padding: 4px 12px; font: inherit; font-size: 12px; cursor: pointer; margin-top: 8px; }
+  button.copy:hover { color: var(--fg); }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+  .card { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-top: 10px; background: #fff; color: #1c1e21; }
+  .card .img { background: #ced0d4; height: 110px; display: flex; align-items: center; justify-content: center; color: #65676b; font-size: 12px; }
+  .card .txt { padding: 8px 10px; }
+  .card .dom { color: #65676b; font-size: 11px; text-transform: uppercase; }
+  .card .ttl { font-weight: 600; font-size: 14px; }
+  .card .dsc { color: #65676b; font-size: 12px; }
+  .chk { display: flex; align-items: center; gap: 8px; margin: 6px 0; font-size: 13px; cursor: pointer; }
+</style>
+</head>
+<body>
+  <nav><a href="../index.html">← trendscope</a> · <a href="./">tools</a> · <a href="more.html">tools+</a> · <a href="utils.html">utils</a> · <a href="dev.html">dev</a></nav>
+  <h1>web<span> tools</span></h1>
+  <p class="sub">QR codes · social card preview · robots.txt — all client-side.</p>
+  <div class="tabs" id="tabs">
+    <button data-tool="qr">QR code</button>
+    <button data-tool="og">social card</button>
+    <button data-tool="robots">robots.txt</button>
+  </div>
+
+  <div class="panel" id="p-qr">
+    <h2>QR code generator</h2>
+    <p class="hint">URL or any text → downloadable PNG. Everything happens in your browser.</p>
+    <input type="text" id="qr-in" placeholder="https://example.com" value="https://github.com/zalize-com/trendscope">
+    <div class="row" style="margin-top:10px">
+      <div><label>size (px)</label><select id="qr-size"><option>256</option><option selected>512</option><option>1024</option></select></div>
+      <div><label>error correction</label><select id="qr-ecc"><option>L</option><option selected>M</option><option>Q</option><option>H</option></select></div>
+    </div>
+    <div id="qr-box" style="margin-top:14px;text-align:center"></div>
+    <div id="qr-dl"></div>
+    <div class="err" id="qr-err"></div>
+  </div>
+
+  <div class="panel" id="p-og">
+    <h2>Social card preview + meta tags</h2>
+    <p class="hint">Fill in, see how the link card renders, copy the meta block.</p>
+    <label>title</label><input type="text" id="og-t" value="trendscope — developer attention dataset">
+    <label>description</label><input type="text" id="og-d" value="Daily cross-source snapshot of what developers read and build. Open data, CC0.">
+    <label>canonical URL</label><input type="text" id="og-u" value="https://zalize-com.github.io/trendscope/">
+    <label>image URL</label><input type="text" id="og-i" value="https://zalize-com.github.io/trendscope/og.png">
+    <div class="card" id="og-card">
+      <div class="img" id="og-card-img">image preview</div>
+      <div class="txt"><div class="dom" id="og-card-dom"></div><div class="ttl" id="og-card-t"></div><div class="dsc" id="og-card-d"></div></div>
+    </div>
+    <div class="out" id="og-out"></div>
+    <button class="copy" id="og-copy">copy meta tags</button>
+  </div>
+
+  <div class="panel" id="p-robots">
+    <h2>robots.txt builder</h2>
+    <p class="hint">Pick rules per bot, add a sitemap, copy the file into your repo root.</p>
+    <label class="chk"><input type="checkbox" id="rb-all" checked> allow all crawlers (User-agent: *)</label>
+    <label>disallow paths for * (one per line)</label>
+    <textarea id="rb-dis" rows="3" placeholder="/admin/&#10;/tmp/"></textarea>
+    <label>sitemap URL</label><input type="text" id="rb-map" placeholder="https://example.com/sitemap.xml">
+    <label>extra bot blocks (e.g. "GPTBot: /")</label>
+    <textarea id="rb-extra" rows="2" placeholder="GPTBot: /&#10;CCBot: /"></textarea>
+    <div class="out" id="rb-out"></div>
+    <button class="copy" id="rb-copy">copy robots.txt</button>
+  </div>
+
+  <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const params = new URLSearchParams(location.search);
+
+const tabs = document.getElementById("tabs");
+const tools = ["qr","og","robots"];
+const t0 = params.get("t") || location.hash.slice(1);
+tools.forEach(t => {
+  const active = t === (tools.includes(t0) ? t0 : "qr");
+  document.getElementById("p-"+t).classList.toggle("active", active);
+  tabs.querySelector(`[data-tool=${t}]`).classList.toggle("active", active);
+});
+tabs.onclick = e => {
+  const t = e.target?.dataset?.tool; if (!t) return;
+  tools.forEach(x => {
+    document.getElementById("p-"+x).classList.toggle("active", x===t);
+    tabs.querySelector(`[data-tool=${x}]`).classList.toggle("active", x===t);
+  });
+  history.replaceState(null,"","#"+t);
+};
+addEventListener("hashchange", () => {
+  const t = location.hash.slice(1);
+  if (tools.includes(t)) tabs.querySelector(`[data-tool=${t}]`)?.click();
+});
+
+/* ---------- QR ---------- */
+function qr() {
+  $("qr-err").textContent = ""; $("qr-box").innerHTML = ""; $("qr-dl").innerHTML = "";
+  const txt = $("qr-in").value.trim();
+  if (!txt) return;
+  if (typeof QRCode === "undefined") {
+    $("qr-err").textContent = "QR library failed to load (offline?) — everything else on this page still works.";
+    return;
+  }
+  try {
+    const size = +$("qr-size").value, ecc = QRCode.CorrectLevel[$("qr-ecc").value];
+    const q = new QRCode($("qr-box"), { text: txt, width: size, height: size, correctLevel: ecc });
+    // qrcodejs appends an <img> (table) or <canvas>; normalise to a downloadable PNG
+    setTimeout(() => {
+      const cv = $("qr-box").querySelector("canvas");
+      const img = $("qr-box").querySelector("img");
+      let url = null;
+      if (cv) url = cv.toDataURL("image/png");
+      else if (img && img.src.startsWith("data:")) url = img.src;
+      if (url) {
+        const a = document.createElement("a");
+        a.href = url; a.download = "qr.png"; a.textContent = "⤓ download PNG";
+        a.style.cssText = "display:inline-block;margin-top:8px;color:var(--accent);font-size:13px";
+        $("qr-dl").appendChild(a);
+      }
+    }, 60);
+  } catch (e) { $("qr-err").textContent = "✕ " + e.message; }
+}
+["qr-in","qr-size","qr-ecc"].forEach(id => $(id).oninput = qr);
+qr();
+
+/* ---------- OG card ---------- */
+const escAttr = s => s.replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;");
+function og() {
+  const t=$("og-t").value.trim(), d=$("og-d").value.trim(), u=$("og-u").value.trim(), i=$("og-i").value.trim();
+  let host = ""; try { host = new URL(u).hostname; } catch {}
+  $("og-card-dom").textContent = host || "example.com";
+  $("og-card-t").textContent = t || "(no title)";
+  $("og-card-d").textContent = d;
+  const im = $("og-card-img");
+  if (i) { im.style.background = `#ced0d4 center/cover no-repeat url('${CSS.escape ? i.replace(/'/g,"\\'") : i}')`; im.textContent=""; }
+  else { im.style.background = "#ced0d4"; im.textContent = "no image set"; }
+  $("og-out").textContent =
+`<meta property="og:title" content="${escAttr(t)}">
+<meta property="og:description" content="${escAttr(d)}">
+<meta property="og:url" content="${escAttr(u)}">
+<meta property="og:image" content="${escAttr(i)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${escAttr(t)}">
+<meta name="twitter:description" content="${escAttr(d)}">
+<meta name="twitter:image" content="${escAttr(i)}">`;
+}
+["og-t","og-d","og-u","og-i"].forEach(id => $(id).oninput = og);
+$("og-copy").onclick = () => { navigator.clipboard?.writeText($("og-out").textContent); $("og-copy").textContent="copied"; setTimeout(()=>$("og-copy").textContent="copy meta tags",1200); };
+og();
+
+/* ---------- robots.txt ---------- */
+function robots() {
+  const lines = [];
+  if ($("rb-all").checked) {
+    lines.push("User-agent: *");
+    const dis = $("rb-dis").value.split("\n").map(s=>s.trim()).filter(Boolean);
+    lines.push(dis.length ? dis.map(p=>"Disallow: "+p).join("\n") : "Disallow:");
+  }
+  for (const row of $("rb-extra").value.split("\n")) {
+    const m = row.match(/^\s*([A-Za-z0-9_-]+)\s*:\s*(.+)$/);
+    if (m) lines.push("", `User-agent: ${m[1]}`, `Disallow: ${m[2].trim()}`);
+  }
+  const sm = $("rb-map").value.trim();
+  if (sm) lines.push("", "Sitemap: " + sm);
+  $("rb-out").textContent = lines.join("\n") + "\n";
+}
+["rb-all","rb-dis","rb-map","rb-extra"].forEach(id => $(id).oninput = robots);
+$("rb-copy").onclick = () => { navigator.clipboard?.writeText($("rb-out").textContent); $("rb-copy").textContent="copied"; setTimeout(()=>$("rb-copy").textContent="copy robots.txt",1200); };
+robots();
+</script>
+</body>
+</html>
