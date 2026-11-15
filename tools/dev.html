@@ -70,6 +70,7 @@
     <button data-tool="env">.env auditor</button>
     <button data-tool="ent">html entities</button>
     <button data-tool="keys">key inspector</button>
+    <button data-tool="jdiff">JSON diff</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -177,6 +178,16 @@
     <div id="kb-hist" style="margin-top:12px;font-size:13px"></div>
   </div>
 
+  <div class="panel" id="p-jdiff">
+    <h2>JSON diff</h2>
+    <p class="hint">Paste two JSON values — path-level diff (added / removed / changed). Objects compared recursively; arrays by index.</p>
+    <div style="display:flex;gap:10px">
+      <textarea id="jd-a" rows="8" style="flex:1" placeholder='{"a":1,"b":[1,2]}'></textarea>
+      <textarea id="jd-b" rows="8" style="flex:1" placeholder='{"a":2,"b":[1,3],"c":true}'></textarea>
+    </div>
+    <div id="jd-out" style="margin-top:10px"></div>
+  </div>
+
   <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
   <div class="panel" id="p-env">
     <h2>.env file auditor</h2>
@@ -205,7 +216,7 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -705,6 +716,45 @@ function entGo(mode) {
     seen.unshift(`<code>${escAttr(e.key)}</code>`);
     hist.innerHTML = `<span style="color:var(--dim)">recent:</span> ` + seen.slice(0, 20).join(" ");
   });
+})();
+
+// json diff
+(function(){
+  const A=document.getElementById("jd-a"), B=document.getElementById("jd-b"), out=document.getElementById("jd-out");
+  if(!A) return;
+  const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
+  function diff(a,b,path,acc){
+    if(a===b) return;
+    const ta=typeof a, tb=typeof b;
+    const objA=a!==null&&ta==="object", objB=b!==null&&tb==="object";
+    if(!objA||!objB||Array.isArray(a)!==Array.isArray(b)){
+      acc.push({p:path||"$",t:a===undefined?"added":b===undefined?"removed":"changed",a,b});
+      return;
+    }
+    if(Array.isArray(a)){
+      const n=Math.max(a.length,b.length);
+      for(let i=0;i<n;i++) diff(a[i],b[i],`${path}[${i}]`,acc);
+      return;
+    }
+    const keys=new Set([...Object.keys(a),...Object.keys(b)]);
+    for(const k of keys) diff(a[k],b[k],path?`${path}.${k}`:k,acc);
+  }
+  const sh=v=>v===undefined?'<i style="color:var(--dim)">undefined</i>':'<code>'+esc(JSON.stringify(v))+'</code>';
+  function go(){
+    let a,b;
+    try{a=A.value.trim()?JSON.parse(A.value):undefined}catch(e){out.innerHTML='<span style="color:var(--red)">left: '+esc(e.message)+'</span>';return}
+    try{b=B.value.trim()?JSON.parse(B.value):undefined}catch(e){out.innerHTML='<span style="color:var(--red)">right: '+esc(e.message)+'</span>';return}
+    if(a===undefined&&b===undefined){out.innerHTML="";return}
+    const acc=[]; diff(a,b,"",acc);
+    if(!acc.length){out.innerHTML='<span class="ok" style="color:var(--green)">identical</span>';return}
+    out.innerHTML=acc.slice(0,200).map(d=>{
+      const col=d.t==="added"?"var(--green)":d.t==="removed"?"var(--red)":"var(--orange)";
+      return `<div style="padding:3px 0;border-bottom:1px solid var(--border);font-family:monospace;font-size:13px">
+        <b style="color:${col}">${d.t==="added"?"+":d.t==="removed"?"−":"~"}</b> <code>${esc(d.p)}</code>
+        <span style="color:var(--dim)">${d.t==="changed"?sh(d.a)+" → "+sh(d.b):sh(d.t==="added"?d.b:d.a)}</span></div>`;
+    }).join("")+`<div style="color:var(--dim);margin-top:6px">${acc.length} difference${acc.length>1?"s":""}${acc.length>200?" (showing first 200)":""}</div>`;
+  }
+  A.addEventListener("input",go); B.addEventListener("input",go);
 })();
 </script>
 </body>
