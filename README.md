@@ -107,7 +107,8 @@ Params: `?n=` rows (5–30), `?s=github_trending` single source,
 taxonomy as `topics.html` — niche blogs can embed just their beat),
 `?mode=hiring` renders the hiring-pulse card instead of the board,
 `?mode=canon` renders the HN all-time top stories,
-`?mode=week` renders the rolling last-7-days board by cumulative heat.
+`?mode=week` renders the rolling last-7-days board by cumulative heat,
+`?mode=movers` renders today's top gainers + new entries.
 
 ## Terminal
 

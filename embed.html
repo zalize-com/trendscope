@@ -44,6 +44,8 @@
     border-radius: 4px; padding: 0 4px; margin-left: 6px; white-space: nowrap;
   }
   .score { margin-left: auto; color: var(--dim); white-space: nowrap; font-size: 11px; }
+  .score.up { color: var(--green, #3fb950); }
+  .score.new { color: var(--accent); }
   .foot { margin-top: 8px; text-align: right; }
   .foot a { color: var(--dim); font-size: 11px; }
   #err { color: var(--dim); padding: 8px 0; }
@@ -115,6 +117,21 @@ if (MODE === "hiring") {
       <li><span class="rank">🙋</span><span><a href="${s?.url || "#"}" target="_blank" rel="noopener">who wants to be hired</a><span class="src">ask hn</span></span><span class="score">${s ? fmt(s.comments) : "—"} posts</span></li>
       ${ratio ? `<li><span class="rank">≈</span><span>positions per seeker</span><span class="score">${ratio}</span></li>` : ""}`;
   }).catch(() => { document.getElementById("err").textContent = "hiring data unavailable"; });
+} else
+if (MODE === "movers") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/compare.html";
+  fetch("docs/api/movers-latest.json", {cache:"no-cache"}).then(r => r.json()).then(mv => {
+    document.getElementById("date").textContent = `movers ${mv.a || ""} → ${mv.b || ""}`;
+    const rows = [
+      ...(mv.gainers || []).slice(0, Math.ceil(N / 2)).map(g => ({ g, tag: `+${g.delta}`, cls: "up" })),
+      ...(mv.entered || []).slice(0, Math.floor(N / 2)).map(g => ({ g, tag: "new", cls: "new" })),
+    ].slice(0, N);
+    document.getElementById("list").innerHTML = rows.length ? rows.map((x, i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${x.g.url}" target="_blank" rel="noopener">${esc(x.g.title)}</a><span class="src">${x.g.source}</span></span>
+        <span class="score ${x.cls}">${x.tag}</span></li>`).join("")
+      : `<li id="err">no movers yet — needs two snapshots</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "movers data unavailable"; });
 } else
 if (MODE === "week") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/week.html";
