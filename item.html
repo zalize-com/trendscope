@@ -89,6 +89,12 @@ fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
   document.getElementById("q").addEventListener("input", paint);
 }).catch(() => { document.getElementById("out").innerHTML = "<p id='err'>history unavailable</p>"; });
 
+const CANONS = [
+  ["data/hn-canon-monthly.csv", "📜 all-time canon", "canon"],
+  ["data/show-hn-monthly.csv", "🚀 Show HN canon", "showhn"],
+  ["data/ask-hn-monthly.csv", "❓ Ask HN canon", "askhn"],
+];
+
 function paint() {
   const q = document.getElementById("q").value.trim().toLowerCase();
   const out = document.getElementById("out");
@@ -103,8 +109,35 @@ function paint() {
   }
   const groups = Object.values(hits);
   if (!groups.length) {
-    out.innerHTML = `<p id="err">no matches in the 10-day history.
-      <a href="canon.html?q=${encodeURIComponent(q)}">search 19 years of HN canon →</a></p>`;
+    // Nothing on the recent board — check the monthly archives before giving up.
+    Promise.all(CANONS.map(([file]) =>
+      fetch(file, {cache:"no-cache"}).then(r => r.text()).then(ct => {
+        const rows = parseCSV(ct), h = rows.shift() || [];
+        return { rows, i_title: h.indexOf("title"), i_month: h.indexOf("month"),
+                 i_rank: h.indexOf("rank"), i_pts: h.indexOf("points"),
+                 i_url: h.indexOf("url"), i_hn: h.indexOf("hn_url"),
+                 i_cmt: h.indexOf("comments"), i_auth: h.indexOf("author") };
+      }).catch(() => null)
+    )).then(cs => {
+      let html = "";
+      cs.forEach((c, ci) => {
+        if (!c) return;
+        const hits2 = c.rows.filter(r => (r[c.i_title]||"").toLowerCase().includes(q));
+        if (!hits2.length) return;
+        hits2.sort((a,b) => +b[c.i_pts] - +a[c.i_pts]);
+        const [ , label, ] = CANONS[ci];
+        html += `<h2>in the archives — ${label}</h2><ol>` +
+          hits2.slice(0, 10).map(r =>
+            `<li><span class="rk">#${r[c.i_rank]}</span>
+             <span class="it"><a href="${r[c.i_url] || r[c.i_hn]}" target="_blank" rel="noopener">${esc(r[c.i_title])}</a>
+             <span class="src">${r[c.i_month]}</span></span>
+             <span class="sc">${fmt(+r[c.i_pts]||0)} pts${r[c.i_cmt] ? ` · 💬${fmt(+r[c.i_cmt])}` : ""}
+             ${r[c.i_auth] ? ` · @${esc(r[c.i_auth])}` : ""} <a class="trj" href="${r[c.i_hn]}">hn</a></span></li>`
+          ).join("") + `</ol>`;
+      });
+      out.innerHTML = html || `<p id="err">no matches in the 10-day history or the archives.
+        <a href="canon.html?q=${encodeURIComponent(q)}">search 19 years of HN canon →</a></p>`;
+    });
     return;
   }
   out.innerHTML = groups.slice(0, 8).map(rs => {
@@ -166,23 +199,30 @@ function paint() {
     }
   } catch (e) {}
 
-  // canon cross-check: exact-title match against 19 years of HN front-page top-10
-  fetch("data/hn-canon-monthly.csv", {cache:"no-cache"}).then(r => r.text()).then(ct => {
-    const crows = parseCSV(ct), ch = crows.shift() || [];
-    const ct_i = ch.indexOf("title"), cm = ch.indexOf("month"),
-          cr = ch.indexOf("rank"), cp = ch.indexOf("points"), chn = ch.indexOf("hn_url");
+  // canon cross-check: exact-title match against the three monthly archives
+  Promise.all(CANONS.map(([file]) =>
+    fetch(file, {cache:"no-cache"}).then(r => r.text()).then(ct => {
+      const rows = parseCSV(ct), h = rows.shift() || [];
+      return { rows, i_title: h.indexOf("title"), i_month: h.indexOf("month"),
+               i_rank: h.indexOf("rank"), i_pts: h.indexOf("points"), i_hn: h.indexOf("hn_url") };
+    }).catch(() => null)
+  )).then(cs => {
     const cards = out.querySelectorAll(".card");
     groups.slice(0, 8).forEach((rs, gi) => {
       const title = rs[rs.length-1].title.toLowerCase();
-      const hits = crows.filter(r => (r[ct_i]||"").toLowerCase() === title);
-      if (!hits.length || !cards[gi]) return;
-      hits.sort((a,b) => +b[cp] - +a[cp]);
-      const h = hits[0];
-      cards[gi].insertAdjacentHTML("beforeend",
-        `<p class="muted" style="font-size:12px">📜 also in all-time canon:
-          <a href="${h[chn]}">#${h[cr]} in ${h[cm]}</a> with ${fmt(+h[cp])} pts</p>`);
+      if (!cards[gi]) return;
+      cs.forEach((c, ci) => {
+        if (!c) return;
+        const hits = c.rows.filter(r => (r[c.i_title]||"").toLowerCase() === title);
+        if (!hits.length) return;
+        hits.sort((a,b) => +b[c.i_pts] - +a[c.i_pts]);
+        const h = hits[0], [ , label, ] = CANONS[ci];
+        cards[gi].insertAdjacentHTML("beforeend",
+          `<p class="muted" style="font-size:12px">${label}:
+            <a href="${h[c.i_hn]}">#${h[c.i_rank]} in ${h[c.i_month]}</a> with ${fmt(+h[c.i_pts])} pts</p>`);
+      });
     });
-  }).catch(() => {});
+  });
 }
 document.getElementById("out").addEventListener("click", ev => {
   const btn = ev.target.closest(".embed-btn");
