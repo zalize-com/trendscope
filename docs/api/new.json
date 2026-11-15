@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T15:12:51.103733+00:00",
+ "generated_at": "2026-11-15T15:14:32.995489+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 789,
- "new_items": 663,
+ "total_items": 799,
+ "new_items": 673,
  "by_source": {
   "producthunt": 45,
   "hackernews": 26,
@@ -36,6 +36,7 @@
   "theregister": 15,
   "beesbuzz": 14,
   "theverge": 14,
+  "dropbox": 10,
   "freecodecamp": 10,
   "github_eng": 10,
   "haxx": 10,
@@ -1197,6 +1198,86 @@
    "rank": 9,
    "score": 109,
    "metric": "reactions"
+  },
+  {
+   "title": "How two engineer side projects became the agent taking action inside Dropbox",
+   "url": "https://dropbox.tech/machine-learning/how-two-engineer-side-projects-became-the-agent-taking-action-inside-dropbox",
+   "source": "dropbox",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How AI-assisted development helped us build the new Dropbox experience",
+   "url": "https://dropbox.tech/machine-learning/how-aiassisted-development-helped-us-build-the-new-dropbox-experience",
+   "source": "dropbox",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Evolving our calendar assistant Reclaim to be AI-native without starting over",
+   "url": "https://dropbox.tech/machine-learning/evolving-calendar-assistant-reclaim-to-be-ai-native",
+   "source": "dropbox",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dropbox CTO Ali Dasdan on moving from AI adoption to transformation",
+   "url": "https://dropbox.tech/culture/learnings-from-deploying-ai-at-company-scale",
+   "source": "dropbox",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing our new Dropbox API documentation",
+   "url": "https://dropbox.tech/developers/new-dropbox-api-documentation",
+   "source": "dropbox",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Testing cookie behavior across hundreds of web surfaces with our in-house auditor",
+   "url": "https://dropbox.tech/security/how-our-inhouse-auditor-tests-cookie-behavior-across-hundreds-of-web-surfaces",
+   "source": "dropbox",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Improving infrastructure efficiency for growing demand in the age of AI",
+   "url": "https://dropbox.tech/infrastructure/improving-infrastructure-efficiency-for-growing-demand-in-the-age-of-ai",
+   "source": "dropbox",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How our universal content processing platform Riviera evolved for AI and beyond",
+   "url": "https://dropbox.tech/infrastructure/how-our-universal-content-processing-platform-riviera-evolved-for-ai-and-beyond",
+   "source": "dropbox",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How we used DSPy to turn AI evaluations into better responses in Dash chat",
+   "url": "https://dropbox.tech/machine-learning/how-we-turned-ai-evaluations-into-better-responses-in-dash-chat",
+   "source": "dropbox",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Dropbox uses MCP and Dash to close the design-to-code security gap",
+   "url": "https://dropbox.tech/security/dropbox-mcp-dash-design-code-security",
+   "source": "dropbox",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
   },
   {
    "title": "Dual JWT Authentication: Security, Redis, and Trade-Offs",

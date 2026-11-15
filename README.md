@@ -73,6 +73,7 @@ A daily cross-source snapshot of developer attention:
 | GitHub Engineering | platform engineering | `github.blog/engineering.atom` |
 | Slack Engineering | messaging platform engineering | `slack.engineering/feed/` |
 | AWS News Blog | cloud announcements | `aws.amazon.com/blogs/aws/feed/` |
+| Dropbox Tech | storage infrastructure | `dropbox.tech/feed` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

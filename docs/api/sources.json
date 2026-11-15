@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T15:12:51.182469+00:00",
+  "generated_at": "2026-11-15T15:14:33.075273+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -562,6 +562,18 @@
       "top_item": {
         "title": "Inside GitHub&#8217;s new Git storage architecture",
         "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "dropbox": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How two engineer side projects became the agent taking action inside Dropbox",
+        "url": "https://dropbox.tech/machine-learning/how-two-engineer-side-projects-became-the-agent-taking-action-inside-dropbox",
         "score": 10,
         "rank": 1
       }
