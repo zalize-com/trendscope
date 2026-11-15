@@ -66,6 +66,23 @@ def main():
         check(os.path.exists(fp), f"{p} missing")
     json.load(open(os.path.join(ROOT, "docs/api/stats.json")))
 
+    # long-history datasets: header contracts + sane row counts
+    for path, hdr, min_rows in (
+        ("data/hiring-monthly.csv",
+         ["month", "kind", "comments", "thread_id", "url", "created"], 100),
+        ("data/hn-canon-monthly.csv",
+         ["month", "rank", "title", "url", "points", "comments",
+          "author", "id", "hn_url"], 2000),
+    ):
+        fp = os.path.join(ROOT, path)
+        check(os.path.exists(fp), f"{path} missing")
+        if os.path.exists(fp):
+            with open(fp) as f:
+                rd = list(csv.reader(f))
+            check(rd and rd[0] == hdr, f"{path} header drifted: {rd[0] if rd else 'empty'}")
+            check(len(rd) - 1 >= min_rows,
+                  f"{path} has {len(rd)-1} rows (<{min_rows})")
+
     if errors:
         print("VALIDATION FAILED:", file=sys.stderr)
         for e in errors[:20]:
