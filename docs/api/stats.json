@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T08:33:38.633539+00:00",
+ "generated_at": "2026-11-15T08:42:46.930541+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 610,
- "unique_urls": 476,
+ "total_rows": 611,
+ "unique_urls": 477,
  "items_in_latest": 240,
- "items_per_day_avg": 67.8,
+ "items_per_day_avg": 67.9,
  "sources": {
   "arstechnica": {
    "rows": 15,
@@ -58,7 +58,7 @@
    "days_active": 1
   },
   "slashdot": {
-   "rows": 15,
+   "rows": 16,
    "days_active": 1
   },
   "techmeme": {
@@ -89,6 +89,10 @@
    "hits": 4
   },
   {
+   "domain": "tech.slashdot.org",
+   "hits": 4
+  },
+  {
    "domain": "so.long.thanks.fish",
    "hits": 3
   },
@@ -106,10 +110,6 @@
   },
   {
    "domain": "twitter.com",
-   "hits": 3
-  },
-  {
-   "domain": "blog.google",
    "hits": 3
   }
  ],
