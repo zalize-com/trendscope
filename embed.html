@@ -157,6 +157,19 @@ if (MODE === "crossovers") {
       || `<li id="err">no crossovers yet — stories stay in one lane so far</li>`;
   }).catch(() => { document.getElementById("err").textContent = "crossovers data unavailable"; });
 } else
+if (MODE === "domain") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/domains.html";
+  fetch("docs/api/domains.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const host = P.get("d");
+    const list = host ? (d.domains || []).filter(x => x.hostname === host) : (d.domains || []);
+    document.getElementById("date").textContent = host ? `domain · ${host}` : "top domains this window";
+    document.getElementById("list").innerHTML = list.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.top_hit?.url || "#"}" target="_blank" rel="noopener">${esc(e.hostname)}</a><span class="src">${e.days_on_board}d on board · ${e.items} items · ${e.sources.join("+")}</span></span>
+        <span class="score">${fmt(e.top_hit?.score || 0)}</span></li>`).join("")
+      || `<li id="err">no domain data${host ? " for "+esc(host) : ""}</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "domain data unavailable"; });
+} else
 if (MODE === "new") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/new.html";
   fetch("docs/api/new.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
