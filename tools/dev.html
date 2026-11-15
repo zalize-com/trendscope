@@ -67,6 +67,7 @@
     <button data-tool="semver">semver compare</button>
     <button data-tool="curl">curl → code</button>
     <button data-tool="hidden">hidden chars</button>
+    <button data-tool="env">.env auditor</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -167,12 +168,21 @@
   </div>
 
   <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
+  <div class="panel" id="p-env">
+    <h2>.env file auditor</h2>
+    <p class="hint">Paste a <code>.env</code> — flags keys that look like real secrets, duplicates and placeholders. Nothing leaves the page.</p>
+    <textarea id="env-in" rows="9" placeholder="DATABASE_URL=postgres://u:p@host/db&#10;AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE&#10;DEBUG=true"></textarea>
+    <div class="out" id="env-summary"></div>
+    <div class="out" id="env-list" style="display:none"></div>
+    <button class="copy" id="env-copy">copy sanitized</button>
+  </div>
+
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -596,6 +606,50 @@ function hcScan() {
 }
 $("hc-in").addEventListener("input", hcScan);
 $("hc-strip").onclick = () => { navigator.clipboard?.writeText(hcClean); $("hc-strip").textContent = "copied"; setTimeout(()=>$("hc-strip").textContent="copy cleaned text",1200); };
+
+// .env auditor
+const ENV_SECRET_KEY=/SECRET|TOKEN|KEY|PASS|PWD|PRIVATE|AUTH|CRED|API/i;
+const ENV_PATTERNS=[
+ [/^AKIA[0-9A-Z]{16}$/,"AWS access key id"],
+ [/^-----BEGIN [A-Z ]*PRIVATE KEY-----/,"PEM private key block"],
+ [/^sk-[A-Za-z0-9_-]{20,}$/,"OpenAI-style API key"],
+ [/^ghp_[A-Za-z0-9]{36}$/,"GitHub personal token"],
+ [/^xox[baprs]-[A-Za-z0-9-]{10,}$/,"Slack token"],
+ [/^eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}$/,"JWT token"],
+ [/^https?:\/\/[^\s:]+:[^\s@]+@/,"credential in URL"],
+];
+const ENV_PLACEHOLDER=/^(changeme|change_me|your[_-]|xxx+|<.*>|todo|example|placeholder|redacted|\*+)/i;
+function auditEnv(){
+ const raw=$("env-in").value; if(!raw.trim()){$("env-summary").textContent="";$("env-list").style.display="none";return}
+ const seen={};const rows=[];let leaks=0,infos=0;
+ raw.split(/\r?\n/).forEach((l,idx)=>{
+  const t=l.trim();
+  if(!t||t.startsWith("#"))return;
+  const eq=t.indexOf("=");if(eq<0){rows.push(["?",`line ${idx+1}: not KEY=value — ${t.slice(0,40)}`]);return}
+  const k=t.slice(0,eq).trim();let v=t.slice(eq+1).trim().replace(/^['"]|['"]$/g,"");
+  if(seen[k])rows.push(["warn",`${k}: duplicate key (also line ${seen[k]+1})`]);else seen[k]=idx;
+  if(!v){rows.push(["info",`${k}: empty value`]);infos++;return}
+  let hit=null;for(const[rx,name]of ENV_PATTERNS){if(rx.test(v)){hit=name;break}}
+  if(hit){rows.push(["leak",`${k}: looks like a real ${hit}`]);leaks++;return}
+  if(ENV_PLACEHOLDER.test(v)){rows.push(["info",`${k}: placeholder value`]);infos++;return}
+  if(ENV_SECRET_KEY.test(k)&&v.length>=12&&/^[\w\W]{12,}$/.test(v)&&!/\s/.test(v)){
+    rows.push(["warn",`${k}: secret-like key with a ${v.length}-char value`]);leaks++;return}
+ });
+ const ICON={leak:"🔴",warn:"🟠",info:"🔵","?":"⚪"};
+ $("env-summary").innerHTML=leaks?`<b style="color:#f85149">${leaks} potential secret${leaks>1?"s":""} exposed</b> — do NOT commit this file`:
+  `<b style="color:var(--green)">no obvious secrets</b>${infos?` · ${infos} note${infos>1?"s":""}`:""}`;
+ const el=$("env-list");el.style.display=rows.length?"block":"none";
+ el.textContent=rows.map(([k,m])=>`${ICON[k]} ${m}`).join("\n");
+ window._envSan=raw.split(/\r?\n/).map(l=>{
+  const t=l.trim();if(!t||t.startsWith("#"))return l;
+  const eq=t.indexOf("=");if(eq<0)return l;
+  const k=t.slice(0,eq).trim();const v=t.slice(eq+1).trim();
+  return (ENV_SECRET_KEY.test(k)&&v.length>=8)?`${k}=<redacted>`:l;
+ }).join("\n");
+}
+$("env-in").addEventListener("input",auditEnv);
+$("env-copy").addEventListener("click",()=>{if(window._envSan)navigator.clipboard.writeText(window._envSan)});
+
 </script>
 </body>
 </html>
