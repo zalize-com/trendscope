@@ -267,3 +267,17 @@ See **[docs/activation.md](docs/activation.md)** for the one-click checklist
 - Weekly digest archives under `docs/digest/` → subscription-ready content
 - GitHub Sponsors → enable on the account and this repo
 - README sponsor slot below → TBD
+
+## MCP server
+
+Expose the dataset to any MCP-capable agent (Claude Desktop etc.):
+
+```json
+{"mcpServers": {"trendscope": {
+  "command": "python3",
+  "args": ["/path/to/trendscope/scripts/mcp_server.py"]}}}
+```
+
+Tools: `ts_latest`, `ts_new`, `ts_risers`, `ts_search`, `ts_streaks`,
+`ts_topics`, `ts_sources`. Zero deps; `TRENDSCOPE_BASE` overrides the data
+root for self-hosted mirrors.

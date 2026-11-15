@@ -75,3 +75,8 @@ shields.io endpoint badge carrying today's #1 HN story — embed a live
 ```markdown
 ![top](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zalize-com/trendscope/main/docs/api/badge-top.json)
 ```
+
+## MCP server
+
+`scripts/mcp_server.py` is a stdio JSON-RPC MCP server wrapping these APIs
+(7 tools, zero deps). Set `TRENDSCOPE_BASE` to serve a self-hosted mirror.
