@@ -86,7 +86,8 @@ compare within a source, not across.
 ```
 
 Params: `?n=` rows (5–30), `?s=github_trending` single source,
-`?q=llm` title/tag keyword filter.
+`?q=llm` title/tag keyword filter, `?t=AI/LLM` topic filter (same
+taxonomy as `topics.html` — niche blogs can embed just their beat).
 
 ## Terminal
 

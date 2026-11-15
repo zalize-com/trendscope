@@ -59,13 +59,26 @@ const P = new URLSearchParams(location.search);
 const N = Math.min(Math.max(parseInt(P.get("n") || "10"), 5), 30);
 const QS = (P.get("s") || "").toLowerCase();   // ?s=github_trending — single source
 const QQ = (P.get("q") || "").toLowerCase();   // ?q=llm — title/tag keyword
+const QT = P.get("t") || "";                   // ?t=AI/LLM — topic from topics.html rules
+const TOPIC_RULES = {
+  "AI/LLM": ["ai","llm","gpt","claude","gemini","openai","anthropic","machine learning","ml ","neural","diffusion","agent","rag","transformer","model","inference","fine-tun","copilot","mcp","prompt"],
+  "Web Dev": ["react","vue","svelte","angular","next.js","nextjs","typescript","javascript","css","html","web","vite","tailwind","frontend","browser","dom"],
+  "DevOps/Infra": ["kubernetes","k8s","docker","terraform","ci/cd","deploy","aws","cloud","serverless","infra","observability","monitor","devops"],
+  "Security": ["security","vuln","cve","exploit","breach","malware","ransomware","phishing","zero-day","0day","auth","encryption","privacy"],
+  "Data Eng": ["data","postgres","sql","database","duckdb","pipeline","etl","spark","kafka","analytics","warehouse","dbt"],
+  "Languages": ["rust","golang","go ","python","java","kotlin","swift","zig","c++","compiler","lua"],
+  "Tools/OSS": ["open source","cli","tool","github","git ","editor","vscode","neovim","terminal","framework","library","release","v1.0"],
+  "Career/Business": ["startup","hiring","salary","remote","career","interview","acquisition","ipo","funding","layoff","business","saas"],
+};
+const inTopic = it => !QT || (TOPIC_RULES[QT]||[]).some(k =>
+  `${it.title||""} ${(it.tags||[]).join(" ")}`.toLowerCase().includes(k));
 fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
-  document.getElementById("date").textContent = snap.date || snap.generated_at.slice(0,10);
+  document.getElementById("date").textContent = (QT ? QT+" · " : "") + (snap.date || snap.generated_at.slice(0,10));
   const max = {};
   for (const [s, its] of Object.entries(snap.items)) max[s] = its[0]?.score || 1;
   const flat = Object.entries(snap.items).flatMap(([s, its]) =>
     its.map(it => ({it, heat: it.score / (max[s] || 1)})))
-    .filter(x => (!QS || x.it.source === QS) &&
+    .filter(x => (!QS || x.it.source === QS) && inTopic(x.it) &&
                  (!QQ || (x.it.title + " " + (x.it.tags||[]).join(" ")).toLowerCase().includes(QQ)));
   flat.sort((a,b) => b.heat - a.heat);
   document.getElementById("list").innerHTML = flat.length ? flat.slice(0, N).map((x, i) =>
