@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T17:20:47.094484+00:00",
+ "generated_at": "2026-11-15T17:22:40.024460+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 727,
+ "total": 766,
  "domains": [
   {
    "hostname": "blog.google",
@@ -98,25 +98,9 @@
    }
   },
   {
-   "hostname": "blog.janestreet.com",
-   "days_on_board": 2,
-   "items": 17,
-   "sources": [
-    "blogjanestreet",
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "Writing a DSL for high performance parallel programming in OxCaml",
-    "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "youtube.com",
    "days_on_board": 2,
-   "items": 17,
+   "items": 19,
    "sources": [
     "bret",
     "daringfireball",
@@ -125,7 +109,8 @@
     "jmesnil",
     "k8s",
     "mko",
-    "planeterlang"
+    "planeterlang",
+    "waxy"
    ],
    "top_hit": {
     "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
@@ -133,6 +118,23 @@
     "score": 444,
     "metric": "points",
     "date": "2026-11-13"
+   }
+  },
+  {
+   "hostname": "blog.janestreet.com",
+   "days_on_board": 2,
+   "items": 18,
+   "sources": [
+    "blogjanestreet",
+    "lobsters",
+    "v2ocaml"
+   ],
+   "top_hit": {
+    "title": "Writing a DSL for high performance parallel programming in OxCaml",
+    "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
    }
   },
   {
@@ -661,6 +663,22 @@
    }
   },
   {
+   "hostname": "chimera-vocal-synth.vercel.app",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews",
+    "waxy"
+   ],
+   "top_hit": {
+    "title": "Chimera Vocal Synth",
+    "url": "https://chimera-vocal-synth.vercel.app/",
+    "score": 356,
+    "metric": "points",
+    "date": "2026-11-08"
+   }
+  },
+  {
    "hostname": "spacex.com",
    "days_on_board": 2,
    "items": 2,
@@ -766,22 +784,6 @@
    "top_hit": {
     "title": "A Better Way to Code",
     "url": "https://medium.com/@mbostock/a-better-way-to-code-2b1d2876a3a0",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "blog.codinghorror.com",
-   "days_on_board": 1,
-   "items": 30,
-   "sources": [
-    "codinghorror",
-    "codinghorror2"
-   ],
-   "top_hit": {
-    "title": "Suffering as a Feature",
-    "url": "https://blog.codinghorror.com/suffering-as-a-feature/",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"

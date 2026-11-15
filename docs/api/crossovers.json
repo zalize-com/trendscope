@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T17:20:47.094484+00:00",
+ "generated_at": "2026-11-15T17:22:40.024460+00:00",
  "latest_snapshot": "2026-11-15",
  "crossovers": [
   {
@@ -16,6 +16,22 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-12"
+   }
+  },
+  {
+   "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml",
+   "title": "Writing a DSL for high performance parallel programming in OxCaml",
+   "sources": [
+    "blogjanestreet",
+    "lobsters",
+    "v2ocaml"
+   ],
+   "days": 2,
+   "best": {
+    "score": 15,
+    "metric": "feed rank",
+    "source": "blogjanestreet",
+    "date": "2026-11-15"
    }
   },
   {
@@ -110,6 +126,21 @@
    }
   },
   {
+   "url": "https://chimera-vocal-synth.vercel.app",
+   "title": "Chimera",
+   "sources": [
+    "hackernews",
+    "waxy"
+   ],
+   "days": 2,
+   "best": {
+    "score": 356,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-08"
+   }
+  },
+  {
    "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition",
    "title": "Running a law firm on Free software",
    "sources": [
@@ -152,21 +183,6 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-14"
-   }
-  },
-  {
-   "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml",
-   "title": "Writing a DSL for high performance parallel programming in OxCaml",
-   "sources": [
-    "blogjanestreet",
-    "lobsters"
-   ],
-   "days": 2,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "blogjanestreet",
-    "date": "2026-11-15"
    }
   },
   {

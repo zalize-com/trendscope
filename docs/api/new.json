@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T17:20:47.094484+00:00",
+ "generated_at": "2026-11-15T17:22:40.024460+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 6266,
- "new_items": 6140,
+ "total_items": 6493,
+ "new_items": 6367,
  "by_source": {
   "producthunt": 45,
   "show_hn": 40,
@@ -268,10 +268,19 @@
   "thorstenball": 15,
   "thume": 15,
   "timkadlec": 15,
+  "timotijhof": 15,
+  "tinyprojects": 15,
   "troyhunt": 15,
+  "underjord": 15,
+  "v2ocaml": 15,
   "vercel": 15,
   "verdagon": 15,
+  "verraes": 15,
   "vicki": 15,
+  "viralinstruction": 15,
+  "voidzero": 15,
+  "waxy": 15,
+  "web3isgoinggreat": 15,
   "x065": 15,
   "beesbuzz": 14,
   "bogoyavlensky": 14,
@@ -289,10 +298,13 @@
   "jetbrains": 12,
   "magpiraspberrypi": 12,
   "rmondello": 12,
+  "tumblrmapsbynik": 12,
+  "vite": 12,
   "agis": 11,
   "bret": 11,
   "geoffreylitt": 11,
   "lobsters": 11,
+  "wattenberger": 11,
   "0xdade": 10,
   "aaronstuyvenberg": 10,
   "adactio": 10,
@@ -441,6 +453,11 @@
   "tedinski": 10,
   "terrytao": 10,
   "theclouddevopslearningblog": 10,
+  "trentwalton": 10,
+  "upmostly": 10,
+  "usesthis": 10,
+  "webkit": 10,
+  "weblogrogueamoeba": 10,
   "wesleyac": 10,
   "wingolog": 10,
   "xeiaso": 10,
@@ -466,6 +483,7 @@
   "kpqgithub": 6,
   "samwho": 6,
   "tonsky": 6,
+  "usetheindexluke": 6,
   "bendersky": 5,
   "blogchristianposta": 5,
   "christianheilmann": 5,
@@ -484,7 +502,8 @@
   "ciechanow": 2,
   "devto": 2,
   "dyskinetic": 2,
-  "roytang": 1
+  "roytang": 1,
+  "unixdigest": 1
  },
  "items": [
   {
@@ -48456,6 +48475,246 @@
    "metric": "feed rank"
   },
   {
+   "title": "John Cleese on Creativity (Transcript)",
+   "url": "https://timotijhof.net/posts/2026/john-cleese-on-creativity-transcript/",
+   "source": "timotijhof",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "📎 Unifying Wikipedia mobile and desktop domains",
+   "url": "https://timotijhof.net/posts/2025/unifying-mobile-and-desktop-domains/",
+   "source": "timotijhof",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "YouTube in a feed reader is… better?",
+   "url": "https://timotijhof.net/posts/2025/youtube-in-a-feed-reader-is-better/",
+   "source": "timotijhof",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lockfiles for apps, not packages (still)",
+   "url": "https://timotijhof.net/posts/2024/lockfiles-for-apps-not-packages-still/",
+   "source": "timotijhof",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How we balance security and openness at Wikimedia",
+   "url": "https://timotijhof.net/posts/2023/wikimedia-balances-security-and-openness/",
+   "source": "timotijhof",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An Internet of PHP",
+   "url": "https://timotijhof.net/posts/2023/an-internet-of-php/",
+   "source": "timotijhof",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Browser adoption rates",
+   "url": "https://timotijhof.net/posts/2023/browser-adoption/",
+   "source": "timotijhof",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HTTP/2 performance revisited",
+   "url": "https://timotijhof.net/posts/2022/http-2-performance-revisited/",
+   "source": "timotijhof",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How does Internet Archive know?",
+   "url": "https://timotijhof.net/posts/2022/internet-archive-crawling/",
+   "source": "timotijhof",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "📎 Krinkle Treasure Hunt",
+   "url": "https://timotijhof.net/posts/2021/treasure-hunt/",
+   "source": "timotijhof",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Profiling PHP in production at scale",
+   "url": "https://timotijhof.net/posts/2020/profiling-php-at-scale/",
+   "source": "timotijhof",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "📎 Interview on Uses This",
+   "url": "https://timotijhof.net/posts/2020/uses-this/",
+   "source": "timotijhof",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Should I substr(), substring(), or slice()?",
+   "url": "https://timotijhof.net/posts/2020/substr-substring-slice/",
+   "source": "timotijhof",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Many dots, do not a query make",
+   "url": "https://timotijhof.net/posts/2020/many-dots-do-not/",
+   "source": "timotijhof",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "To throw or not to throw, that is the question",
+   "url": "https://timotijhof.net/posts/2019/to-throw-or-not/",
+   "source": "timotijhof",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tiny Website | Tiny Projects",
+   "url": "https://tinyprojects.dev/projects/tiny_website",
+   "source": "tinyprojects",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tiny websites are great | Tiny Projects",
+   "url": "https://tinyprojects.dev/posts/tiny_websites_are_great",
+   "source": "tinyprojects",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to code a tiny website | Tiny Projects",
+   "url": "https://tinyprojects.dev/posts/tiny_websites_are_great",
+   "source": "tinyprojects",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Silicon Valley Domain Names | Tiny Projects",
+   "url": "https://tinyprojects.dev/projects/silicon_valley_domain_names",
+   "source": "tinyprojects",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I bought netflix.soy | Tiny Projects",
+   "url": "https://tinyprojects.dev/posts/i_bought_netflix_dot_soy",
+   "source": "tinyprojects",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a Battle Royale game | Tiny Projects",
+   "url": "https://tinyprojects.dev/projects/battle_royale",
+   "source": "tinyprojects",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "One Item Store | Tiny Projects",
+   "url": "https://tinyprojects.dev/projects/one_item_store",
+   "source": "tinyprojects",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Snormal | Tiny Projects",
+   "url": "https://tinyprojects.dev/projects/snormal",
+   "source": "tinyprojects",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I Sell Usernames on the Internet | Tiny Projects",
+   "url": "https://tinyprojects.dev/projects/earlyname",
+   "source": "tinyprojects",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Six months of Tiny Projects | Tiny Projects",
+   "url": "https://tinyprojects.dev/posts/six_months_of_tiny_projects",
+   "source": "tinyprojects",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Selling a Tiny Project | Tiny Projects",
+   "url": "https://tinyprojects.dev/posts/selling_a_tiny_project",
+   "source": "tinyprojects",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mailoji: I Bought 300 Emoji Domain Names From Kazakhstan and Built an Email Service | Tiny Projects",
+   "url": "https://tinyprojects.dev/projects/mailoji",
+   "source": "tinyprojects",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Selling Tiny Internet Projects For Fun and Profit | Tiny Projects",
+   "url": "https://tinyprojects.dev/posts/selling_tiny_internet_projects_for_fun_and_profit",
+   "source": "tinyprojects",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I blew $720 on 100 notebooks from Alibaba and started a Paper Website business | Tiny Projects",
+   "url": "https://daily.tinyprojects.dev/paper_website",
+   "source": "tinyprojects",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I Spent 2 years Launching Tiny Projects | Tiny Projects",
+   "url": "https://tinyprojects.dev/posts/i_spent_two_years_launching_tiny_projects",
+   "source": "tinyprojects",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Logo: Squawkbox",
    "url": "https://tonsky.me/design/#2026-07-squawkbox",
    "source": "tonsky",
@@ -48500,6 +48759,86 @@
    "url": "https://tonsky.me/blog/clj-simple-stats/",
    "source": "tonsky",
    "rank": 6,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Metroid Type Explorations",
+   "url": "http://trentwalton.com/notes/2023/03/17/metroid-type-explorations.html",
+   "source": "trentwalton",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Echo Wolf",
+   "url": "http://trentwalton.com/notes/2023/03/03/echo-wolf.html",
+   "source": "trentwalton",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Expanding Upon Design Systems",
+   "url": "http://trentwalton.com/2022/07/13/expanding-upon-design-systems/",
+   "source": "trentwalton",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hyperlight",
+   "url": "http://trentwalton.com/notes/2021/12/31/hyperlight.html",
+   "source": "trentwalton",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Voyager",
+   "url": "http://trentwalton.com/notes/2021/04/29/voyager.html",
+   "source": "trentwalton",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Monarch",
+   "url": "http://trentwalton.com/notes/2020/05/25/monarch.html",
+   "source": "trentwalton",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Fonts on the Ol’ Blog",
+   "url": "http://trentwalton.com/notes/2020/02/18/new-fonts-on-the-ol-blog.html",
+   "source": "trentwalton",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mr. Robot Title Cards",
+   "url": "http://trentwalton.com/notes/2020/02/16/mr-robot-title-cards.html",
+   "source": "trentwalton",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Strokes – At the Door",
+   "url": "http://trentwalton.com/notes/2020/02/14/the-strokes-at-the-door.html",
+   "source": "trentwalton",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sherlock Holmes: A Scandal in Bohemia",
+   "url": "http://trentwalton.com/notes/2020/02/05/sherlock-holmes-a-scandal-in-bohemia.html",
+   "source": "trentwalton",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -48619,6 +48958,558 @@
    "title": "Welcoming the Sri Lankan Government to Have I Been Pwned",
    "url": "https://www.troyhunt.com/welcoming-the-sri-lankan-government-to-have-i-been-pwned/",
    "source": "troyhunt",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Do you just shade the whole tract based on zero/non-zero, or is there some effort to make the areas equal, like square blocks (sq. mi. or sq. km)? Like per pixel or something?",
+   "url": "https://tumblr.mapsbynik.com/post/664320766146412544",
+   "source": "tumblrmapsbynik",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Greater Austin Presidential Election Results 2016 This map...",
+   "url": "https://tumblr.mapsbynik.com/post/153455002607",
+   "source": "tumblrmapsbynik",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Austin Proposition 1 Results Map Proposition 1 was an...",
+   "url": "https://tumblr.mapsbynik.com/post/144124109807",
+   "source": "tumblrmapsbynik",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Full-size map It’s the 2016 primary election season in the...",
+   "url": "https://tumblr.mapsbynik.com/post/141081306557",
+   "source": "tumblrmapsbynik",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Rally’s – Checkers Divide (2014) This map is a...",
+   "url": "https://tumblr.mapsbynik.com/post/115796184042",
+   "source": "tumblrmapsbynik",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Hardee&rsquo;s&ndash;Carl&rsquo;s Jr Line: The Geography of Two Restaurants and One Logo",
+   "url": "https://tumblr.mapsbynik.com/post/115757858462",
+   "source": "tumblrmapsbynik",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nobody Lives Here Map Prints Available",
+   "url": "https://tumblr.mapsbynik.com/post/107762841792",
+   "source": "tumblrmapsbynik",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Waffle House by Latitude After the seriousness of the Nobody...",
+   "url": "https://tumblr.mapsbynik.com/post/84917186437",
+   "source": "tumblrmapsbynik",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "France Edition: Nobody Lives Here This is not a “map by...",
+   "url": "https://tumblr.mapsbynik.com/post/83033311727",
+   "source": "tumblrmapsbynik",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nobody lives here: The nearly 5 million Census Blocks with zero...",
+   "url": "https://tumblr.mapsbynik.com/post/82791188950",
+   "source": "tumblrmapsbynik",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Waffle House Density by Quad The map shown here is a truly...",
+   "url": "https://tumblr.mapsbynik.com/post/82053920556",
+   "source": "tumblrmapsbynik",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Paris Métro Coverage There’s a saying–common in travel...",
+   "url": "https://tumblr.mapsbynik.com/post/69393005328",
+   "source": "tumblrmapsbynik",
+   "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Goatmire 2 - Odin's Folly",
+   "url": "https://underjord.io/goatmire-2-odins-folly.html",
+   "source": "underjord",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nerves IoT framework, apparently popular with agents",
+   "url": "https://underjord.io/nerves-iot-framework-apparently-popular-with-agents.html",
+   "source": "underjord",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What to see at Oredev 2026",
+   "url": "https://underjord.io/oredev-2026-my-picks.html",
+   "source": "underjord",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Injecting tracing the hot way",
+   "url": "https://underjord.io/injecting-tracing-the-hot-way.html",
+   "source": "underjord",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hacking on the Nerves Starter Kit in Malaga",
+   "url": "https://underjord.io/malaga-nerves-event.html",
+   "source": "underjord",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shipping grayscale photos at small scale",
+   "url": "https://underjord.io/shipping-grayscale-photos-at-small-scale.html",
+   "source": "underjord",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Goatmire 2, announced",
+   "url": "https://underjord.io/goatmire-2-announced.html",
+   "source": "underjord",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Conference Report: Goatmire Elixir 2025",
+   "url": "https://underjord.io/conference-report-goatmire-elixir-2025.html",
+   "source": "underjord",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Booting 5000 Erlangs on Ampere One 192-core",
+   "url": "https://underjord.io/booting-5000-erlangs-on-ampere-one.html",
+   "source": "underjord",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "500 virtual Linux devices on ARM 64",
+   "url": "https://underjord.io/500-virtual-linux-devices-on-arm64.html",
+   "source": "underjord",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Delta support - A tale of two firmware versions",
+   "url": "https://underjord.io/delta-support-a-tale-of-two-firmwares.html",
+   "source": "underjord",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making of an Elixir conference",
+   "url": "https://underjord.io/making-of-an-elixir-conference.html",
+   "source": "underjord",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elixir is not owned by Big Tech",
+   "url": "https://underjord.io/elixir-is-not-owned-by-big-tech.html",
+   "source": "underjord",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Elixir Shirt",
+   "url": "https://underjord.io/the-elixir-shirt.html",
+   "source": "underjord",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From big Kubers down to small GenServers",
+   "url": "https://underjord.io/from-big-kubers-down-to-small-genservers.html",
+   "source": "underjord",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The RSS feed has been split into two new, this one is no longer maintained!",
+   "url": "https://unixdigest.com/feeds.html",
+   "source": "unixdigest",
+   "rank": 1,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Validate Email Addresses with Ease in React",
+   "url": "https://upmostly.com/tutorials/how-to-validate-email-addresses-with-ease-in-react",
+   "source": "upmostly",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Definitive Guide to Master React’s Re-rendering Process",
+   "url": "https://upmostly.com/tutorials/the-definitive-guide-to-master-reacts-re-rendering-process",
+   "source": "upmostly",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Create a Search Bar in React",
+   "url": "https://upmostly.com/tutorials/how-to-create-a-search-bar-in-react",
+   "source": "upmostly",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is Hash Routing?",
+   "url": "https://upmostly.com/tutorials/what-is-hash-routing",
+   "source": "upmostly",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to set up a React application using Vite",
+   "url": "https://upmostly.com/tutorials/how-to-set-up-a-react-application-using-vite",
+   "source": "upmostly",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How does React’s Reconciliation Algorithm work?",
+   "url": "https://upmostly.com/tutorials/how-does-reconciliation-in-react-work",
+   "source": "upmostly",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Guide to Effective Error Handling in React",
+   "url": "https://upmostly.com/tutorials/a-guide-to-effective-error-handling-in-react",
+   "source": "upmostly",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How To Build a Modal Component In React",
+   "url": "https://upmostly.com/tutorials/how-to-build-a-modal-component-in-react",
+   "source": "upmostly",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What are React Keys?",
+   "url": "https://upmostly.com/tutorials/what-are-react-keys",
+   "source": "upmostly",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How To Set Up Redux in React",
+   "url": "https://upmostly.com/tutorials/how-to-set-up-redux-in-react",
+   "source": "upmostly",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Jim Capobianco",
+   "url": "https://usesthis.com/interviews/jim.capobianco/",
+   "source": "usesthis",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Manuel Moreale",
+   "url": "https://usesthis.com/interviews/manuel.moreale/",
+   "source": "usesthis",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Isabel Lee",
+   "url": "https://usesthis.com/interviews/isabel.lee/",
+   "source": "usesthis",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Torben Bökemeyer",
+   "url": "https://usesthis.com/interviews/torben.bokemeyer/",
+   "source": "usesthis",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Melanie Walsh",
+   "url": "https://usesthis.com/interviews/melanie.walsh/",
+   "source": "usesthis",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Brett Tweedie",
+   "url": "https://usesthis.com/interviews/brett.tweedie/",
+   "source": "usesthis",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Michael Brough",
+   "url": "https://usesthis.com/interviews/michael.brough/",
+   "source": "usesthis",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Casey Liss",
+   "url": "https://usesthis.com/interviews/casey.liss/",
+   "source": "usesthis",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Justin Garrison",
+   "url": "https://usesthis.com/interviews/justin.garrison/",
+   "source": "usesthis",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Anne-Laure Le Cunff",
+   "url": "https://usesthis.com/interviews/anne-laure.le.cunff/",
+   "source": "usesthis",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Index Usage For EXTRACT(YEAR FROM …), YEAR(…) etc.",
+   "url": "https://use-the-index-luke.com/blog/2024-12/date-time-prefix-rewrite",
+   "source": "usetheindexluke",
+   "rank": 1,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Index INCLUDE Clause: How it works and when to use it",
+   "url": "https://use-the-index-luke.com/blog/2019-04/include-columns-in-btree-indexes",
+   "source": "usetheindexluke",
+   "rank": 2,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Upcoming Training: SQL Performance Kick-Start and modern SQL",
+   "url": "https://use-the-index-luke.com/blog/2018-07/upcoming-advanced-sql-training",
+   "source": "usetheindexluke",
+   "rank": 3,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Spanish Translation and Other News",
+   "url": "https://use-the-index-luke.com/blog/2017-11/spanish-anyone",
+   "source": "usetheindexluke",
+   "rank": 4,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Big News In Databases: Cloud Wars, IBM’s Renaming Insanity, Three Major Releases",
+   "url": "https://use-the-index-luke.com/blog/2017-11/cloud-wars-ibm-db2-renaming-major-database-releases",
+   "source": "usetheindexluke",
+   "rank": 5,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Big News In Databases: new SQL standard, cloud wars, ACIDRain (Spring 2017)",
+   "url": "https://use-the-index-luke.com/blog/2017-05/new-sql-standard-oracle-122-acidrain",
+   "source": "usetheindexluke",
+   "rank": 6,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "curry: a modern Emacs mode for Haskell",
+   "url": "https://lambdafoo.com/posts/2026-11-15-curry-mode.html",
+   "source": "v2ocaml",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trading at the Speed of… Chat? with Chloe Casale",
+   "url": "https://signals-threads.simplecast.com/episodes/trading-at-the-speed-of-chat-with-chloe-casale-EM2186Gc",
+   "source": "v2ocaml",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fixing a Stack Overflow Shrank Js_of_ocaml Output by 16%",
+   "url": "https://tarides.com/blog/2026-11-12-fixing-a-stack-overflow-shrank-js-of-ocaml-output-by-16",
+   "source": "v2ocaml",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "OCaml Weekly News, 10 Nov 2026",
+   "url": "https://alan.petitepomme.net/cwn/2026.11.10.html",
+   "source": "v2ocaml",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "OCaml Roundup: October 2026",
+   "url": "https://patrick.sirref.org/ocaml-roundup-october-2026/",
+   "source": "v2ocaml",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thank you, AppVeyor",
+   "url": "https://www.dra27.uk/blog/platform/2026/11/10/thank-you-appveyor.html",
+   "source": "v2ocaml",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Notes from week 45",
+   "url": "https://www.tunbury.org/2026/11/09/week-45/",
+   "source": "v2ocaml",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Alcotest: finding flaky OCaml tests with JUnit reports",
+   "url": "https://gazagnaire.org/blog/2026-11-09-alcotest-dune-release.html",
+   "source": "v2ocaml",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": ".plan-26-45: Welcome to the House of Fun",
+   "url": "https://anil.recoil.org/notes/2026w45",
+   "source": "v2ocaml",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Checking out the latest features in OxCaml 5.4.0+ox9",
+   "url": "https://anil.recoil.org/notes/oxcaml-ox9-improvements",
+   "source": "v2ocaml",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing a DSL for high performance parallel programming in OxCaml",
+   "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
+   "source": "v2ocaml",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Neocaml 0.11: OxCaml, Indentation Styles, and odoc",
+   "url": "https://batsov.com/articles/2026/11/05/neocaml-0-11-oxcaml-indentation-styles-and-odoc/",
+   "source": "v2ocaml",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Discovering OCaml as a Scala Developer Part 4: Testing against a real PostgreSQL",
+   "url": "https://gilwath.com/articles/from_scala_to_ocaml_part4.html",
+   "source": "v2ocaml",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "OCaml Weekly News, 03 Nov 2026",
+   "url": "https://alan.petitepomme.net/cwn/2026.11.03.html",
+   "source": "v2ocaml",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Notes from week 44",
+   "url": "https://www.tunbury.org/2026/11/02/week-44/",
+   "source": "v2ocaml",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -48864,6 +49755,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Reasoning While We Still Can: Own the Rate of Change",
+   "url": "https://verraes.net/2026/11/reasoning-while-we-still-can/",
+   "source": "verraes",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Software Design in the Agentic Age: Place Your Bets",
+   "url": "https://verraes.net/2026/07/software-design-in-the-agentic-age/",
+   "source": "verraes",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "No, Your Domains and Bounded Contexts Don’t Map 1 on 1",
+   "url": "https://verraes.net/2025/08/domain-and-bounded-contexts-dont-map-one-on-one/",
+   "source": "verraes",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Two Hard Problems with Distributed Systems",
+   "url": "https://verraes.net/2025/08/two-hard-problems-with-distributed-systems/",
+   "source": "verraes",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Submitting talks to a tech conference Call for Papers",
+   "url": "https://verraes.net/2025/06/submitting-talks-to-conference-cfps/",
+   "source": "verraes",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Fix a Bug: Tests, Hypotheses, Timeboxes",
+   "url": "https://verraes.net/2024/03/how-to-fix-a-bug-tests-hypotheses-timeboxes/",
+   "source": "verraes",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Critical Software Redesign: Creating the Environment for Large Scale Change",
+   "url": "https://verraes.net/2024/01/critical-software-redesign/",
+   "source": "verraes",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Surfacing Worldviews in Design",
+   "url": "https://verraes.net/2023/07/surfacing-worldviews-in-design/",
+   "source": "verraes",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "EventSourcing Testing Patterns",
+   "url": "https://verraes.net/2023/05/eventsourcing-testing-patterns/",
+   "source": "verraes",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From Music to Languages and Models (DevJourney Podcast)",
+   "url": "https://verraes.net/2023/05/devjourney-podcast/",
+   "source": "verraes",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Parser Combinators (Full Stack Europe)",
+   "url": "https://verraes.net/2023/04/parser-combinators-full-stack-europe/",
+   "source": "verraes",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bounded Contexts: Manage the Understandability of Your Systems (DDD Australia)",
+   "url": "https://verraes.net/2023/03/bounded-contexts-manage-understandability-ddd-australia/",
+   "source": "verraes",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Software Design for Startups and Scaleups",
+   "url": "https://verraes.net/2023/02/software-design-scaleups-startups-.md/",
+   "source": "verraes",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Critically Engaging With Models (DDD Europe Keynote)",
+   "url": "https://verraes.net/2023/01/critically-engaging-with-models/",
+   "source": "verraes",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Design and Reality (Leanpub Podcast)",
+   "url": "https://verraes.net/2023/01/leanpub-podcast-design-reality/",
+   "source": "verraes",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "What are embeddings?",
    "url": "https://vicki.substack.com/p/what-are-embeddings",
    "source": "vicki",
@@ -48984,6 +49995,550 @@
    "metric": "feed rank"
   },
   {
+   "title": "What scientists must know about hardware to write fast code",
+   "url": "https://viralinstruction.com/posts/hardware/",
+   "source": "viralinstruction",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Asynchronous programming in Julia",
+   "url": "https://viralinstruction.com/posts/threads/",
+   "source": "viralinstruction",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cancellation in Julia 1.14",
+   "url": "https://viralinstruction.com/posts/cancellation/index.html",
+   "source": "viralinstruction",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Review: Julia trimming for Advent of Code 2025",
+   "url": "https://viralinstruction.com/posts/aoc2025/index.html",
+   "source": "viralinstruction",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The borrowchecker is what I like the least about Rust",
+   "url": "https://viralinstruction.com/posts/borrowchecker/index.html",
+   "source": "viralinstruction",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You probably don&#39;t need to validate UTF-8 strings",
+   "url": "https://viralinstruction.com/posts/utf8/index.html",
+   "source": "viralinstruction",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A look at the Mojo language for bioinformatics",
+   "url": "https://viralinstruction.com/posts/mojo/index.html",
+   "source": "viralinstruction",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Julia&#39;s latency: Past, present and future",
+   "url": "https://viralinstruction.com/posts/latency/index.html",
+   "source": "viralinstruction",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What&#39;s great about Julia?",
+   "url": "https://viralinstruction.com/posts/goodjulia/index.html",
+   "source": "viralinstruction",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to optimise Julia code: A practical guide",
+   "url": "https://viralinstruction.com/posts/optimise/index.html",
+   "source": "viralinstruction",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In defense of complicated programming languages",
+   "url": "https://viralinstruction.com/posts/defense/index.html",
+   "source": "viralinstruction",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advent of Code 2021, day 1",
+   "url": "https://viralinstruction.com/posts/aoc2021_1/index.html",
+   "source": "viralinstruction",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Union vs sum types",
+   "url": "https://viralinstruction.com/posts/uniontypes/index.html",
+   "source": "viralinstruction",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Implementing reverse translation",
+   "url": "https://viralinstruction.com/posts/codonset/index.html",
+   "source": "viralinstruction",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What&#39;s bad about Julia?",
+   "url": "https://viralinstruction.com/posts/badjulia/index.html",
+   "source": "viralinstruction",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vite 8.1 is out!",
+   "url": "https://vite.dev/blog/announcing-vite8-1",
+   "source": "vite",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cloudflare supports Vite's mission",
+   "url": "https://vite.dev/blog/cloudflare-supports-vite",
+   "source": "vite",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vite 8.0 is out!",
+   "url": "https://vite.dev/blog/announcing-vite8",
+   "source": "vite",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vite 8 Beta: The Rolldown-powered Vite",
+   "url": "https://vite.dev/blog/announcing-vite8-beta",
+   "source": "vite",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vite 7.0 is out!",
+   "url": "https://vite.dev/blog/announcing-vite7",
+   "source": "vite",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vite 6.0 is out!",
+   "url": "https://vite.dev/blog/announcing-vite6",
+   "source": "vite",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vite 5.1 is out!",
+   "url": "https://vite.dev/blog/announcing-vite5-1",
+   "source": "vite",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vite 5.0 is out!",
+   "url": "https://vite.dev/blog/announcing-vite5",
+   "source": "vite",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vite 4.3 is out!",
+   "url": "https://vite.dev/blog/announcing-vite4-3",
+   "source": "vite",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vite 4.0 is out!",
+   "url": "https://vite.dev/blog/announcing-vite4",
+   "source": "vite",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vite 3.0 is out!",
+   "url": "https://vite.dev/blog/announcing-vite3",
+   "source": "vite",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Vite 2.0",
+   "url": "https://vite.dev/blog/announcing-vite2",
+   "source": "vite",
+   "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tales from the Void: October 2026 Recap",
+   "url": "https://voidzero.dev/posts/whats-new-oct-2026",
+   "source": "voidzero",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tales from the Void: September 2026 Recap",
+   "url": "https://voidzero.dev/posts/whats-new-sep-2026",
+   "source": "voidzero",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Vite+ 1.0",
+   "url": "https://voidzero.dev/posts/announcing-vite-plus-1-0",
+   "source": "voidzero",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tales from the Void: August 2026 Recap",
+   "url": "https://voidzero.dev/posts/whats-new-aug-2026",
+   "source": "voidzero",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tales from the Void: July 2026 Recap",
+   "url": "https://voidzero.dev/posts/whats-new-jul-2026",
+   "source": "voidzero",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tales from the Void: June 2026 Recap",
+   "url": "https://voidzero.dev/posts/whats-new-jun-2026",
+   "source": "voidzero",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Vite+ Beta",
+   "url": "https://voidzero.dev/posts/announcing-vite-plus-beta",
+   "source": "voidzero",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tales from the Void: May 2026 Recap",
+   "url": "https://voidzero.dev/posts/whats-new-may-2026",
+   "source": "voidzero",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "VoidZero is Joining Cloudflare",
+   "url": "https://voidzero.dev/posts/voidzero-cloudflare",
+   "source": "voidzero",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Rolldown 1.0",
+   "url": "https://voidzero.dev/posts/announcing-rolldown-1-0",
+   "source": "voidzero",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tales from the Void: April 2026 Recap",
+   "url": "https://voidzero.dev/posts/whats-new-apr-2026",
+   "source": "voidzero",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How we made the Angular Compiler faster using AI",
+   "url": "https://voidzero.dev/posts/oxc-angular-compiler",
+   "source": "voidzero",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tales from the Void: March 2026 Recap",
+   "url": "https://voidzero.dev/posts/whats-new-mar-2026",
+   "source": "voidzero",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tales from the Void: March Launch Week Recap",
+   "url": "https://voidzero.dev/posts/whats-new-march-launch-week-2026",
+   "source": "voidzero",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Vite+ Alpha",
+   "url": "https://voidzero.dev/posts/announcing-vite-plus-alpha",
+   "source": "voidzero",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chat is AI’s command line.",
+   "url": "https://wattenberger.com/thoughts/ai-is-still-in-its-terminal-era",
+   "source": "wattenberger",
+   "rank": 1,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Code was our medium for thought",
+   "url": "https://wattenberger.com/thoughts/code-is-a-medium-for-thought",
+   "source": "wattenberger",
+   "rank": 2,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Our interfaces have lost their senses",
+   "url": "https://wattenberger.com/thoughts/our-interfaces-have-lost-their-senses",
+   "source": "wattenberger",
+   "rank": 3,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fish eye for text",
+   "url": "https://wattenberger.com/thoughts/fish-eye",
+   "source": "wattenberger",
+   "rank": 4,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "LLMs as a tool for thought",
+   "url": "https://wattenberger.com/thoughts/llms-as-a-tool-for-thought",
+   "source": "wattenberger",
+   "rank": 5,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The internet for the mind",
+   "url": "https://wattenberger.com/thoughts/the-internet-for-the-mind",
+   "source": "wattenberger",
+   "rank": 6,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bridging the hard and the soft",
+   "url": "https://wattenberger.com/thoughts/hard-and-soft",
+   "source": "wattenberger",
+   "rank": 7,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Putting knowledge in its place",
+   "url": "https://wattenberger.com/thoughts/this-is-not-a-rant-about-chatbots",
+   "source": "wattenberger",
+   "rank": 8,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Evolving the infinite canvas",
+   "url": "https://wattenberger.com/thoughts/evolving-the-infinite-canvas",
+   "source": "wattenberger",
+   "rank": 9,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting creative with embeddings",
+   "url": "https://wattenberger.com/thoughts/yay-embeddings-math",
+   "source": "wattenberger",
+   "rank": 10,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chatbots are not the future",
+   "url": "https://wattenberger.com/thoughts/boo-chatbots",
+   "source": "wattenberger",
+   "rank": 11,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Walt Kelly’s Pogo on the 1960 prediction that today would be “doomsday”",
+   "url": "https://bergetoons.blogspot.com/2026/11/got-any-plans-next-weekend.html",
+   "source": "waxy",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hank Green interviews Neal.fun’s Neal Agarwal",
+   "url": "https://www.youtube.com/watch?v=2Qvx6jpQLME",
+   "source": "waxy",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Paper Trail",
+   "url": "https://vimeo.com/1234190827",
+   "source": "waxy",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "hi",
+   "url": "https://www.youtube.com/watch?v=nYxC9j1Bnrw",
+   "source": "waxy",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chimera",
+   "url": "https://chimera-vocal-synth.vercel.app/",
+   "source": "waxy",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Executable Emoji",
+   "url": "https://martypc.blogspot.com/2026/08/executable-emoji.html",
+   "source": "waxy",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Neal.fun’s Battle Draw",
+   "url": "https://neal.fun/battle-draw/",
+   "source": "waxy",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Greg Technology made a tool to learn to talk backwards",
+   "url": "https://backwords.greg.technology/",
+   "source": "waxy",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Maria Tomazou made a film in Excel",
+   "url": "https://vimeo.com/1241981102",
+   "source": "waxy",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Salon.com shutters suddenly after 31 years",
+   "url": "https://www.salon.com/2026/11/05/goodbye-from-salon/",
+   "source": "waxy",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Republicans learn X is the echo chamber",
+   "url": "https://www.404media.co/republicans-learn-x-is-an-echo-chamber/",
+   "source": "waxy",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "zig-zag",
+   "url": "https://www.zig-zag.fm/",
+   "source": "waxy",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Online censorship is crushing indie webcomics",
+   "url": "https://xtramagazine.com/culture/online-censorship-indie-webcomics-284463",
+   "source": "waxy",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Infinite Mac adds support for BeOS",
+   "url": "https://blog.persistent.info/2026/10/infinite-mac-beos.html",
+   "source": "waxy",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Interactive Fiction Comp 2026 winners announced",
+   "url": "https://ifcomp.org/comp/2026",
+   "source": "waxy",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "6 Open Source Tools to Query OpenStreetMap",
    "url": "https://wcedmisten.fyi/post/how-to-query-osm",
    "source": "wcedmisten",
@@ -49084,6 +50639,286 @@
    "url": "https://wcedmisten.fyi/post/dashcam-to-openstreetmap",
    "source": "wcedmisten",
    "rank": 13,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Polymarket users' funds stolen, again",
+   "url": "https://web3isgoinggreat.com/single/polymarket-vendor-exploit-2",
+   "source": "web3isgoinggreat",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "North Korea hacks Binance for around $6.3 billion, some frozen",
+   "url": "https://web3isgoinggreat.com/single/binance-hack",
+   "source": "web3isgoinggreat",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Blur NFT marketplace to shut down",
+   "url": "https://web3isgoinggreat.com/single/blur-shutdown",
+   "source": "web3isgoinggreat",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "At least $86 million stolen via tampered Ledger hardware wallets resold by CryptoBilis",
+   "url": "https://web3isgoinggreat.com/single/cryptobilis-hardware-wallet-tampering",
+   "source": "web3isgoinggreat",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pudgy Penguins company shuts down its Abstract blockchain after losing \"8 figures\" running it",
+   "url": "https://web3isgoinggreat.com/single/abstract-shutdown",
+   "source": "web3isgoinggreat",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Blur shuts down its Blast blockchain",
+   "url": "https://web3isgoinggreat.com/single/blast-shutdown",
+   "source": "web3isgoinggreat",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Porsche shuts down its NFT project with the floor price down 96%",
+   "url": "https://web3isgoinggreat.com/single/porsche-nft-shutdown",
+   "source": "web3isgoinggreat",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Near Intents exploited for $3.8 million, recovers all assets",
+   "url": "https://web3isgoinggreat.com/single/near-intents-exploit",
+   "source": "web3isgoinggreat",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Abracadabra proposes winding down after string of hacks years ago left each $1 \"stablecoin\" token backed by $0.04 in reserves",
+   "url": "https://web3isgoinggreat.com/single/abracadabra-proposes-winding-down",
+   "source": "web3isgoinggreat",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Magic Eden users lose NFTs and $1.8 million in wETH to legacy approvals exploit",
+   "url": "https://web3isgoinggreat.com/single/magic-eden-nft-exploited-for-1-8-million",
+   "source": "web3isgoinggreat",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Meter token prices crash after unauthorized mint",
+   "url": "https://web3isgoinggreat.com/single/meter-unauthorized-mint",
+   "source": "web3isgoinggreat",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Payy Network bridge fully drained of $1.8 million",
+   "url": "https://web3isgoinggreat.com/single/payy-network-bridge-exploit",
+   "source": "web3isgoinggreat",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Duelbits crypto casino goes offline after $7 million theft",
+   "url": "https://web3isgoinggreat.com/single/duelbits-hack",
+   "source": "web3isgoinggreat",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bitget crypto exchange hacked for $388 million, pauses withdrawals",
+   "url": "https://web3isgoinggreat.com/single/bitget-hack",
+   "source": "web3isgoinggreat",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Projects on the defunct Neutron chain lose $1.8 million to governance attack, Cosmos Hub halts chain",
+   "url": "https://web3isgoinggreat.com/single/neutron-governance-attack",
+   "source": "web3isgoinggreat",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Safari on Apple HomeView",
+   "url": "https://webkit.org/blog/18608/safari-on-apple-homeview/",
+   "source": "webkit",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Release Notes for Safari Technology Preview 256",
+   "url": "https://webkit.org/blog/18602/release-notes-for-safari-technology-preview-256/",
+   "source": "webkit",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Adaptive Dark Mode",
+   "url": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/",
+   "source": "webkit",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WebKit Features for Safari 27.2",
+   "url": "https://webkit.org/blog/18515/webkit-features-for-safari-27-2/",
+   "source": "webkit",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WebKit Features for Safari 27.1",
+   "url": "https://webkit.org/blog/18486/webkit-features-for-safari-27-1/",
+   "source": "webkit",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Release Notes for Safari Technology Preview 255",
+   "url": "https://webkit.org/blog/18482/release-notes-for-safari-technology-preview-255/",
+   "source": "webkit",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Blocking Identity Resolution Infrastructure",
+   "url": "https://webkit.org/blog/18438/blocking-identity-resolution-infrastructure/",
+   "source": "webkit",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Release Notes for Safari Technology Preview 254",
+   "url": "https://webkit.org/blog/18420/release-notes-for-safari-technology-preview-254/",
+   "source": "webkit",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Release Notes for Safari Technology Preview 253",
+   "url": "https://webkit.org/blog/18357/release-notes-for-safari-technology-preview-253/",
+   "source": "webkit",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WebKit Features for Safari 27.0",
+   "url": "https://webkit.org/blog/18325/webkit-features-for-safari-27-0/",
+   "source": "webkit",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Get SoundSource 6.2 Today",
+   "url": "https://weblog.rogueamoeba.com/2026/11/12/get-soundsource-6-2-today/",
+   "source": "weblogrogueamoeba",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Airfoil Streaming to Apple TVs and HomePods Is Restored!",
+   "url": "https://weblog.rogueamoeba.com/2026/09/25/airfoil-streaming-to-apple-tvs-and-homepods-is-restored/",
+   "source": "weblogrogueamoeba",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MacOS 27 Fixes Multiple Audio Bugs",
+   "url": "https://weblog.rogueamoeba.com/2026/09/24/macos-27-fixes-multiple-audio-bugs/",
+   "source": "weblogrogueamoeba",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "All Rogue Amoeba Apps Support the New MacOS 27 (Golden Gate)",
+   "url": "https://weblog.rogueamoeba.com/2026/09/11/all-rogue-amoeba-apps-support-the-new-macos-27-golden-gate/",
+   "source": "weblogrogueamoeba",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Problems Streaming to Apple TVs and HomePods with Airfoil",
+   "url": "https://weblog.rogueamoeba.com/2026/09/10/problems-streaming-to-apple-tvs-and-homepods-with-airfoil/",
+   "source": "weblogrogueamoeba",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Get Farrago 2.2 Now",
+   "url": "https://weblog.rogueamoeba.com/2026/09/09/get-farrago-2-2-now/",
+   "source": "weblogrogueamoeba",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Customer Service That Remembers",
+   "url": "https://weblog.rogueamoeba.com/2026/09/03/customer-service-that-remembers/",
+   "source": "weblogrogueamoeba",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Audio Hijack 4.6 Is Now Available",
+   "url": "https://weblog.rogueamoeba.com/2026/08/27/audio-hijack-4-6-is-now-available/",
+   "source": "weblogrogueamoeba",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Sleep-Promoting Resilience of Boring Infrastructure",
+   "url": "https://weblog.rogueamoeba.com/2026/08/19/the-sleep-promoting-resilience-of-boring-infrastructure/",
+   "source": "weblogrogueamoeba",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fifteen Fantastic Years",
+   "url": "https://weblog.rogueamoeba.com/2026/08/05/fifteen-fantastic-years/",
+   "source": "weblogrogueamoeba",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
