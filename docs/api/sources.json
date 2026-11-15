@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T15:22:00.780922+00:00",
+  "generated_at": "2026-11-15T15:23:55.710126+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -111,8 +111,8 @@
       }
     },
     "show_hn": {
-      "items": 24,
-      "unique_urls": 24,
+      "items": 25,
+      "unique_urls": 25,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -622,6 +622,18 @@
       "top_item": {
         "title": "How Pinterest Improved Analytics Agent Compliance with Loop Engineering",
         "url": "https://medium.com/pinterest-engineering/how-pinterest-improved-analytics-agent-compliance-with-loop-engineering-d3c52d0abaa2?source=rss-ef81ef829bcb------2",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "stripe": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Analyze your Stripe data directly with your agent",
+        "url": "https://stripe.com/blog/analyze-your-stripe-data-directly-with-your-agent",
         "score": 10,
         "rank": 1
       }

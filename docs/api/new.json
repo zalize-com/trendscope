@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-15T15:22:00.627245+00:00",
+ "generated_at": "2026-11-15T15:23:55.624446+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 850,
- "new_items": 724,
+ "total_items": 861,
+ "new_items": 735,
  "by_source": {
   "producthunt": 45,
   "hackernews": 26,
-  "show_hn": 25,
+  "show_hn": 26,
   "techmeme": 19,
   "slashdot": 17,
   "thenewstack": 17,
@@ -49,6 +49,7 @@
   "netflix": 10,
   "opensourcecom": 10,
   "pinterest": 10,
+  "stripe": 10,
   "wingolog": 10,
   "susam": 9,
   "hackaday": 8,
@@ -4740,6 +4741,14 @@
    "metric": "points"
   },
   {
+   "title": "Show HN: Keep Your Screen Awake",
+   "url": "https://screenon.app/",
+   "source": "show_hn",
+   "rank": 12,
+   "score": 2,
+   "metric": "points"
+  },
+  {
    "title": "Shipyard: How We Built Slack’s Next-Generation EC2 Platform",
    "url": "https://slack.engineering/shipyard-how-we-built-slacks-next-generation-ec2-platform/",
    "source": "slack_eng",
@@ -5056,6 +5065,86 @@
    "url": "https://stackoverflow.blog/2026/10/23/rumors-of-the-saas-demise-are-greatly-exaggerated/",
    "source": "soblog",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Analyze your Stripe data directly with your agent",
+   "url": "https://stripe.com/blog/analyze-your-stripe-data-directly-with-your-agent",
+   "source": "stripe",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts",
+   "url": "https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts",
+   "source": "stripe",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How the fastest-growing enterprises on Stripe scale globally",
+   "url": "https://stripe.com/blog/how-the-fastest-growing-enterprises-on-stripe-scale-globally",
+   "source": "stripe",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trends from Money20/20 2026: The rise of “hidden” financial services",
+   "url": "https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services",
+   "source": "stripe",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stripe survey: Four trends reshaping how SaaS platforms compete in the AI era",
+   "url": "https://stripe.com/blog/saas-platform-trends-in-AI-era",
+   "source": "stripe",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New ways for fintechs to move money and expand globally",
+   "url": "https://stripe.com/blog/new-ways-for-fintechs-to-move-money-and-expand-globally",
+   "source": "stripe",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sync real-time Stripe data to Postgres with Stripe Data Pipeline",
+   "url": "https://stripe.com/blog/real-time-stripe-data-postgres",
+   "source": "stripe",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The “alien” economics of AI monetization",
+   "url": "https://stripe.com/blog/economics-of-ai-monetization",
+   "source": "stripe",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I tried to kill token billing (and why we kept it)",
+   "url": "https://stripe.com/blog/where-pricing-is-headed",
+   "source": "stripe",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "OUSD is now the default stablecoin on Stripe",
+   "url": "https://stripe.com/blog/ousd-now-live-on-stripe",
+   "source": "stripe",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },

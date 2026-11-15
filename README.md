@@ -78,6 +78,7 @@ A daily cross-source snapshot of developer attention:
 | Pinterest Engineering | visual discovery platform | `medium.com/@Pinterest_Engineering` |
 | Etsy Code as Craft | marketplace engineering | `etsy.com/codeascraft/rss` |
 | Discord Blog | chat platform engineering | `discord.com/blog/rss.xml` |
+| Stripe Blog | payments infrastructure | `stripe.com/blog/feed.rss` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
