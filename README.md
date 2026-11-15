@@ -15,6 +15,7 @@ A daily cross-source snapshot of developer attention:
 | Source | Signal | Endpoint |
 |---|---|---|
 | Hacker News | front-page points & comments | `hn.algolia.com` |
+| Show HN | launches — points & comments | `hn.algolia.com` |
 | GitHub | new repos trending this week | `api.github.com/search` |
 | Lobste.rs | hottest stories | `lobste.rs/hottest.json` |
 | Dev.to | top articles (7d) | `dev.to/api` |
