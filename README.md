@@ -179,6 +179,8 @@ A daily cross-source snapshot of developer attention:
 | Geoffrey Litt | malleable software research | `geoffreylitt.com/feed.xml` |
 | Maggie Appleton | visual essays on tech | `maggieappleton.com/rss.xml` |
 | Andy Bromberg | crypto and product essays | `andybromberg.com/feed` |
+| Ariadne Conill | Alpine/fediverse systems | `ariadne.space/atom.xml` |
+| Eugene Yan | applied ML and recommender systems | `eugeneyan.com/rss/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

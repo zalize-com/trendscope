@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:40:53.876666+00:00",
+ "generated_at": "2026-11-15T16:42:55.026780+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 2164,
- "new_items": 2038,
+ "total_items": 2194,
+ "new_items": 2068,
  "by_source": {
   "producthunt": 45,
   "show_hn": 39,
@@ -18,6 +18,7 @@
   "amontalenti": 15,
   "andrewkelley": 15,
   "antirez": 15,
+  "ariadne": 15,
   "arxiv": 15,
   "aws_blog": 15,
   "begriffs": 15,
@@ -44,6 +45,7 @@
   "echojs": 15,
   "elastic": 15,
   "etsy": 15,
+  "eugeneyan": 15,
   "gamasutra": 15,
   "geshan": 15,
   "gitlab_blog": 15,
@@ -862,6 +864,126 @@
    "url": "https://aphyr.com/posts/416-the-future-of-everything-is-lies-i-guess-psychological-hazards",
    "source": "aphyr",
    "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "humanity has built the records of FATE by accident",
+   "url": "https://ariadne.space/2026/09/01/humanity-has-built-the-records.html",
+   "source": "ariadne",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I am looking for Jellycat alternatives now",
+   "url": "https://ariadne.space/2026/03/28/why-i-am-looking-for.html",
+   "source": "ariadne",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why leaders often disappoint us",
+   "url": "https://ariadne.space/2026/01/22/why-leaders-often-disappoint-us.html",
+   "source": "ariadne",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "vm.overcommit_memory=2 is always the right setting for servers",
+   "url": "https://ariadne.space/2025/12/16/vmovercommitmemory-is-always-the-right.html",
+   "source": "ariadne",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rethinking sudo with object capabilities",
+   "url": "https://ariadne.space/2025/12/12/rethinking-sudo-with-object-capabilities.html",
+   "source": "ariadne",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I want you to understand",
+   "url": "https://ariadne.space/2025/12/02/i-want-you-to-understand.html",
+   "source": "ariadne",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Two weeks of wayback",
+   "url": "https://ariadne.space/2025/07/07/two-weeks-of-wayback.html",
+   "source": "ariadne",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "C SBOMs, and how pkgconf can solve this problem",
+   "url": "https://ariadne.space/2025/02/08/c-sboms-and-how-pkgconf.html",
+   "source": "ariadne",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The XZ Utils backdoor is a symptom of a larger problem",
+   "url": "https://ariadne.space/2024/04/01/the-xz-utils-backdoor-is.html",
+   "source": "ariadne",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Most breaches actually begin in corp",
+   "url": "https://ariadne.space/2023/12/06/most-breaches-actually-begin-in.html",
+   "source": "ariadne",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing portable ARM64 assembly",
+   "url": "https://ariadne.space/2023/04/12/writing-portable-arm-assembly.html",
+   "source": "ariadne",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Help migrate a community from Discord to something else",
+   "url": "https://ariadne.space/2023/03/07/help-migrate-a-community-from.html",
+   "source": "ariadne",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "pkgconf, CVE-2023-24056 and disinformation",
+   "url": "https://ariadne.space/2023/01/23/pkgconf-cve-and-disinformation.html",
+   "source": "ariadne",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building fair webs of trust by leveraging the OCAP model",
+   "url": "https://ariadne.space/2022/12/02/building-fair-webs-of-trust.html",
+   "source": "ariadne",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Twitter's demise is ActivityPub's future",
+   "url": "https://ariadne.space/2022/11/11/twitters-demise-is-activitypubs-future.html",
+   "source": "ariadne",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -5005,6 +5127,126 @@
    "title": "Machine Learning in Content Moderation at Etsy",
    "url": "https://www.etsy.com/codeascraft/machine-learning-in-content-moderation-at-etsy?utm_source=OpenGraph&utm_medium=PageTools&utm_campaign=Share",
    "source": "etsy",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Engineer 2026 - Using LLMs to Secure Source Code",
+   "url": "https://eugeneyan.com/speaking/aie-2026",
+   "source": "eugeneyan",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Patterns for Building Cybersecurity Evals",
+   "url": "https://eugeneyan.com/writing/cybersecurity-evals",
+   "source": "eugeneyan",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using LLMs to Secure Source Code",
+   "url": "https://eugeneyan.com/writing/secure-source-code",
+   "source": "eugeneyan",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Work and Compound with AI",
+   "url": "https://eugeneyan.com/writing/working-with-ai",
+   "source": "eugeneyan",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2025 Year in Review",
+   "url": "https://eugeneyan.com/writing/2025-review",
+   "source": "eugeneyan",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Product Evals in Three Simple Steps",
+   "url": "https://eugeneyan.com/writing/product-evals",
+   "source": "eugeneyan",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advice for New Principal Tech ICs (i.e., Notes to Myself)",
+   "url": "https://eugeneyan.com/writing/principal",
+   "source": "eugeneyan",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Training an LLM-RecSys Hybrid for Steerable Recs with Semantic IDs",
+   "url": "https://eugeneyan.com/writing/semantic-ids",
+   "source": "eugeneyan",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Evaluating Long-Context Question & Answer Systems",
+   "url": "https://eugeneyan.com/writing/qa-evals",
+   "source": "eugeneyan",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Engineer 2025 - Improving RecSys & Search with LLM techniques",
+   "url": "https://eugeneyan.com/speaking/aie-2025",
+   "source": "eugeneyan",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exceptional Leadership: Some Qualities, Behaviors, and Styles",
+   "url": "https://eugeneyan.com/writing/leadership",
+   "source": "eugeneyan",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building News Agents for Daily News Recaps with MCP, Q, and tmux",
+   "url": "https://eugeneyan.com/writing/news-agents",
+   "source": "eugeneyan",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An LLM-as-Judge Won't Save The Product—Fixing Your Process Will",
+   "url": "https://eugeneyan.com/writing/eval-process",
+   "source": "eugeneyan",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Frequently Asked Questions about My Writing Process",
+   "url": "https://eugeneyan.com/writing/writing-faq",
+   "source": "eugeneyan",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NVIDIA GTC 2025 - Building LLM-Powered Applications",
+   "url": "https://eugeneyan.com/speaking/nvidia-gtc-2025",
+   "source": "eugeneyan",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
