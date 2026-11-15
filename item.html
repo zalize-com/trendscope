@@ -152,6 +152,12 @@ function paint() {
     const mx = peak || 1;
     const spark = `<svg width="${days*10}" height="18" viewBox="0 0 ${days*10} 18" style="vertical-align:-3px;margin-left:8px">${
       rs.map((r,i) => `<rect x="${i*10}" y="${18-Math.round(14*(+r.score||0)/mx)}" width="8" height="${Math.max(1,Math.round(14*(+r.score||0)/mx))}" fill="var(--accent)"/>`).join("")}</svg>`;
+    const cmts = rs.map(r => +r.comments || 0);
+    const peakC = Math.max(...cmts);
+    const cspark = peakC > 0
+      ? `<svg width="${days*10}" height="18" viewBox="0 0 ${days*10} 18" style="vertical-align:-3px;margin-left:8px">${
+          cmts.map((c,i) => `<rect x="${i*10}" y="${18-Math.round(14*c/peakC)}" width="8" height="${Math.max(1,Math.round(14*c/peakC))}" fill="var(--orange,#e3a008)"/>`).join("")}</svg>`
+      : '<span class="dim">—</span>';
     const live = LIVE.has(it.url) ? ` <span style="color:var(--green);font-size:11px" title="on today's board">● live</span>` : "";
     return `<div class="card">
       <b><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a>${live}</b>
@@ -161,6 +167,7 @@ function paint() {
         <div class="stat"><b>#${best}</b><small>best rank</small></div>
         <div class="stat"><b>${fmt(peak)}</b><small>peak ${it.metric}</small></div>
         <div class="stat"><b>${spark}</b><small>score/day</small></div>
+        <div class="stat"><b>${cspark}</b><small>💬/day</small></div>
       </div>
       <h2>trajectory</h2>
       <ol>${rs.map((r, i) => {
