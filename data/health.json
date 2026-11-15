@@ -1,225 +1,225 @@
 {
-  "generated_at": "2026-11-15T17:39:09.240747+00:00",
+  "generated_at": "2026-11-15T17:41:28.444873+00:00",
   "sources": {
     "hackernews": {
       "ok": true,
       "items": 20,
-      "ms": 256
+      "ms": 283
     },
     "show_hn": {
       "ok": true,
       "items": 12,
-      "ms": 332
+      "ms": 451
     },
     "ask_hn": {
       "ok": true,
       "items": 12,
-      "ms": 366
+      "ms": 391
     },
     "lobsters": {
       "ok": true,
       "items": 15,
-      "ms": 228
+      "ms": 258
     },
     "devto": {
       "ok": true,
       "items": 15,
-      "ms": 75
+      "ms": 52
     },
     "lemmy": {
       "ok": true,
       "items": 15,
-      "ms": 221
+      "ms": 309
     },
     "producthunt": {
       "ok": true,
       "items": 20,
-      "ms": 111
+      "ms": 41
     },
     "techmeme": {
       "ok": true,
       "items": 15,
-      "ms": 237
+      "ms": 224
     },
     "slashdot": {
       "ok": true,
       "items": 15,
-      "ms": 47
+      "ms": 59
     },
     "krebs": {
       "ok": true,
       "items": 10,
-      "ms": 152
+      "ms": 90
     },
     "changelog": {
       "ok": true,
       "items": 15,
-      "ms": 395
+      "ms": 339
     },
     "freecodecamp": {
       "ok": true,
       "items": 10,
-      "ms": 517
+      "ms": 664
     },
     "echojs": {
       "ok": true,
       "items": 15,
-      "ms": 340
+      "ms": 260
     },
     "infoq": {
       "ok": true,
       "items": 15,
-      "ms": 31
+      "ms": 24
     },
     "theregister": {
       "ok": true,
       "items": 15,
-      "ms": 436
+      "ms": 240
     },
     "lwn": {
       "ok": true,
       "items": 15,
-      "ms": 323
+      "ms": 297
     },
     "hackaday": {
       "ok": true,
       "items": 7,
-      "ms": 55
+      "ms": 298
     },
     "thenewstack": {
       "ok": true,
       "items": 15,
-      "ms": 200
+      "ms": 176
     },
     "opensourcecom": {
       "ok": true,
       "items": 10,
-      "ms": 93
+      "ms": 82
     },
     "soblog": {
       "ok": true,
       "items": 15,
-      "ms": 133
+      "ms": 136
     },
     "codinghorror": {
       "ok": true,
       "items": 15,
-      "ms": 66
+      "ms": 63
     },
     "martinfowler": {
       "ok": true,
       "items": 15,
-      "ms": 431
+      "ms": 434
     },
     "pragmatic": {
       "ok": true,
       "items": 15,
-      "ms": 87
+      "ms": 58
     },
     "bendersky": {
       "ok": true,
       "items": 5,
-      "ms": 645
+      "ms": 599
     },
     "cheney": {
       "ok": true,
       "items": 15,
-      "ms": 132
+      "ms": 130
     },
     "lucumr": {
       "ok": true,
       "items": 10,
-      "ms": 67
+      "ms": 55
     },
     "simonw": {
       "ok": true,
       "items": 15,
-      "ms": 41
+      "ms": 57
     },
     "daringfireball": {
       "ok": true,
       "items": 15,
-      "ms": 93
+      "ms": 92
     },
     "marco": {
       "ok": true,
       "items": 15,
-      "ms": 302
+      "ms": 112
     },
     "danluu": {
       "ok": true,
       "items": 15,
-      "ms": 274
+      "ms": 194
     },
     "stratechery": {
       "ok": true,
       "items": 10,
-      "ms": 115
+      "ms": 64
     },
     "baeldung": {
       "ok": true,
       "items": 12,
-      "ms": 935
+      "ms": 981
     },
     "troyhunt": {
       "ok": true,
       "items": 15,
-      "ms": 123
+      "ms": 108
     },
     "tonsky": {
       "ok": true,
       "items": 6,
-      "ms": 985
+      "ms": 949
     },
     "joelonsoftware": {
       "ok": true,
       "items": 10,
-      "ms": 69
+      "ms": 79
     },
     "raphlinus": {
       "ok": true,
       "items": 10,
-      "ms": 51
+      "ms": 50
     },
     "xeiaso": {
       "ok": true,
       "items": 10,
-      "ms": 314
+      "ms": 402
     },
     "jetbrains": {
       "ok": true,
       "items": 12,
-      "ms": 58
+      "ms": 57
     },
     "tedinski": {
       "ok": true,
       "items": 10,
-      "ms": 400
+      "ms": 335
     },
     "drmaciver": {
       "ok": true,
       "items": 15,
-      "ms": 74
+      "ms": 153
     },
     "matklad": {
       "ok": true,
       "items": 10,
-      "ms": 61
+      "ms": 44
     },
     "grumpyg": {
       "ok": true,
       "items": 15,
-      "ms": 504
+      "ms": 493
     },
     "chriskiehl": {
       "ok": true,
       "items": 15,
-      "ms": 162
+      "ms": 155
     },
     "dimitri": {
       "ok": true,
       "items": 15,
-      "ms": 163
+      "ms": 627
     },
     "hillel": {
       "ok": true,
@@ -229,467 +229,467 @@
     "ridiculousfish": {
       "ok": true,
       "items": 15,
-      "ms": 891
+      "ms": 695
     },
     "nadia": {
       "ok": true,
       "items": 10,
-      "ms": 102
+      "ms": 66
     },
     "henrikwarne": {
       "ok": true,
       "items": 10,
-      "ms": 103
+      "ms": 81
     },
     "charity": {
       "ok": true,
       "items": 15,
-      "ms": 94
+      "ms": 100
     },
     "surfingcomplexity": {
       "ok": true,
       "items": 10,
-      "ms": 120
+      "ms": 100
     },
     "lorinhochstein": {
       "ok": true,
       "items": 10,
-      "ms": 169
+      "ms": 159
     },
     "geshan": {
       "ok": true,
       "items": 15,
-      "ms": 113
+      "ms": 102
     },
     "mtlynch": {
       "ok": true,
       "items": 15,
-      "ms": 1745
+      "ms": 1311
     },
     "nelhage": {
       "ok": true,
       "items": 15,
-      "ms": 117
+      "ms": 129
     },
     "schneems": {
       "ok": true,
       "items": 10,
-      "ms": 471
+      "ms": 536
     },
     "lcamtuf": {
       "ok": true,
       "items": 15,
-      "ms": 115
+      "ms": 286
     },
     "copyconstruct": {
       "ok": true,
       "items": 10,
-      "ms": 776
+      "ms": 314
     },
     "verdagon": {
       "ok": true,
       "items": 15,
-      "ms": 43
+      "ms": 35
     },
     "bitbashing": {
       "ok": true,
       "items": 9,
-      "ms": 761
+      "ms": 621
     },
     "ntietz": {
       "ok": true,
       "items": 15,
-      "ms": 826
+      "ms": 908
     },
     "murat": {
       "ok": true,
       "items": 15,
-      "ms": 186
+      "ms": 162
     },
     "begriffs": {
       "ok": true,
       "items": 15,
-      "ms": 227
+      "ms": 214
     },
     "gds": {
       "ok": true,
       "items": 10,
-      "ms": 141
+      "ms": 67
     },
     "bitslog": {
       "ok": true,
       "items": 10,
-      "ms": 115
+      "ms": 110
     },
     "roytang": {
       "ok": true,
       "items": 1,
-      "ms": 276
+      "ms": 218
     },
     "tbray": {
       "ok": true,
       "items": 15,
-      "ms": 139
+      "ms": 96
     },
     "bertrand": {
       "ok": true,
       "items": 15,
-      "ms": 737
+      "ms": 348
     },
     "bret": {
       "ok": true,
       "items": 11,
-      "ms": 87
+      "ms": 56
     },
     "codemadness": {
       "ok": true,
       "items": 15,
-      "ms": 860
+      "ms": 653
     },
     "jacobian": {
       "ok": true,
       "items": 15,
-      "ms": 111
+      "ms": 116
     },
     "karl": {
       "ok": true,
       "items": 15,
-      "ms": 1663
+      "ms": 1446
     },
     "gwern": {
       "ok": true,
       "items": 14,
-      "ms": 879
+      "ms": 765
     },
     "andrewkelley": {
       "ok": true,
       "items": 15,
-      "ms": 325
+      "ms": 351
     },
     "joeduffy": {
       "ok": true,
       "items": 10,
-      "ms": 259
+      "ms": 161
     },
     "bravenewgeek": {
       "ok": true,
       "items": 15,
-      "ms": 71
+      "ms": 62
     },
     "ciechanow": {
       "ok": true,
       "items": 2,
-      "ms": 65
+      "ms": 68
     },
     "mikeash": {
       "ok": true,
       "items": 15,
-      "ms": 358
+      "ms": 362
     },
     "fogus": {
       "ok": true,
       "items": 13,
-      "ms": 507
+      "ms": 505
     },
     "ncase": {
       "ok": true,
       "items": 10,
-      "ms": 102
+      "ms": 67
     },
     "jwz": {
       "ok": true,
       "items": 10,
-      "ms": 303
+      "ms": 550
     },
     "steveblank": {
       "ok": true,
       "items": 15,
-      "ms": 77
+      "ms": 110
     },
     "zackkanter": {
       "ok": true,
       "items": 10,
-      "ms": 536
+      "ms": 329
     },
     "robinrendle": {
       "ok": true,
       "items": 15,
-      "ms": 324
+      "ms": 272
     },
     "terrytao": {
       "ok": true,
       "items": 10,
-      "ms": 110
+      "ms": 105
     },
     "norvig": {
       "ok": true,
       "items": 15,
-      "ms": 375
+      "ms": 395
     },
     "gamasutra": {
       "ok": true,
       "items": 15,
-      "ms": 395
+      "ms": 339
     },
     "thisdavej": {
       "ok": true,
       "items": 15,
-      "ms": 373
+      "ms": 433
     },
     "x065": {
       "ok": true,
       "items": 15,
-      "ms": 126
+      "ms": 87
     },
     "shkspr": {
       "ok": true,
       "items": 15,
-      "ms": 1498
+      "ms": 895
     },
     "daverupert": {
       "ok": true,
       "items": 15,
-      "ms": 165
+      "ms": 157
     },
     "bobmonsour": {
       "ok": true,
       "items": 15,
-      "ms": 118
+      "ms": 117
     },
     "justinpot": {
       "ok": true,
       "items": 10,
-      "ms": 1353
+      "ms": 727
     },
     "jakelazaroff": {
       "ok": true,
       "items": 10,
-      "ms": 147
+      "ms": 157
     },
     "wcedmisten": {
       "ok": true,
       "items": 13,
-      "ms": 88
+      "ms": 92
     },
     "prog21": {
       "ok": true,
       "items": 3,
-      "ms": 98
+      "ms": 55
     },
     "danielmiessler": {
       "ok": true,
       "items": 15,
-      "ms": 221
+      "ms": 183
     },
     "swyx": {
       "ok": true,
       "items": 15,
-      "ms": 436
+      "ms": 469
     },
     "samwho": {
       "ok": true,
       "items": 6,
-      "ms": 518
+      "ms": 452
     },
     "rauchg": {
       "ok": true,
       "items": 15,
-      "ms": 225
+      "ms": 207
     },
     "karpathy": {
       "ok": true,
       "items": 10,
-      "ms": 76
+      "ms": 63
     },
     "matthewrocklin": {
       "ok": true,
       "items": 15,
-      "ms": 69
+      "ms": 54
     },
     "wesleyac": {
       "ok": true,
       "items": 10,
-      "ms": 58
+      "ms": 50
     },
     "michaelfeathers": {
       "ok": true,
       "items": 3,
-      "ms": 475
+      "ms": 489
     },
     "agis": {
       "ok": true,
       "items": 11,
-      "ms": 110
+      "ms": 78
     },
     "mollywhite": {
       "ok": true,
       "items": 15,
-      "ms": 113
+      "ms": 121
     },
     "amontalenti": {
       "ok": true,
       "items": 15,
-      "ms": 1246
+      "ms": 1231
     },
     "brandur": {
       "ok": true,
       "items": 15,
-      "ms": 88
+      "ms": 80
     },
     "jesseduffield": {
       "ok": true,
       "items": 10,
-      "ms": 47
+      "ms": 40
     },
     "vicki": {
       "ok": true,
       "items": 15,
-      "ms": 75
+      "ms": 64
     },
     "geoffreylitt": {
       "ok": true,
       "items": 11,
-      "ms": 140
+      "ms": 144
     },
     "maggieappleton": {
       "ok": true,
       "items": 15,
-      "ms": 113
+      "ms": 75
     },
     "andybromberg": {
       "ok": true,
       "items": 10,
-      "ms": 63
+      "ms": 55
     },
     "ariadne": {
       "ok": true,
       "items": 15,
-      "ms": 722
+      "ms": 647
     },
     "eugeneyan": {
       "ok": true,
       "items": 15,
-      "ms": 67
+      "ms": 57
     },
     "seangoedecke": {
       "ok": true,
       "items": 15,
-      "ms": 474
+      "ms": 374
     },
     "idvorkin": {
       "ok": true,
       "items": 15,
-      "ms": 342
+      "ms": 267
     },
     "alexwlchan": {
       "ok": true,
       "items": 15,
-      "ms": 1245
+      "ms": 1268
     },
     "kellysutton": {
       "ok": true,
       "items": 8,
-      "ms": 51
+      "ms": 201
     },
     "stevekrouse": {
       "ok": true,
       "items": 15,
-      "ms": 323
+      "ms": 264
     },
     "philcalcado": {
       "ok": true,
       "items": 10,
-      "ms": 144
+      "ms": 48
     },
     "maryrosecook": {
       "ok": true,
       "items": 10,
-      "ms": 763
+      "ms": 771
     },
     "kvark": {
       "ok": true,
       "items": 10,
-      "ms": 144
+      "ms": 42
     },
     "ayende": {
       "ok": true,
       "items": 15,
-      "ms": 66
+      "ms": 55
     },
     "yegor256": {
       "ok": true,
       "items": 10,
-      "ms": 123
+      "ms": 40
     },
     "addyosmani": {
       "ok": true,
       "items": 10,
-      "ms": 150
+      "ms": 147
     },
     "blogappsnpr": {
       "ok": false,
       "items": 0,
-      "ms": 12363
+      "ms": 12418
     },
     "blogchromium": {
       "ok": true,
       "items": 15,
-      "ms": 191
+      "ms": 162
     },
     "cameronmoll": {
       "ok": true,
       "items": 15,
-      "ms": 554
+      "ms": 504
     },
     "codeflickr": {
       "ok": true,
       "items": 10,
-      "ms": 86
+      "ms": 141
     },
     "deliverooengineering": {
       "ok": true,
       "items": 10,
-      "ms": 105
+      "ms": 107
     },
     "dewith": {
       "ok": true,
       "items": 10,
-      "ms": 5315
+      "ms": 5360
     },
     "dyskinetic": {
       "ok": true,
       "items": 2,
-      "ms": 1184
+      "ms": 1250
     },
     "hanselman": {
       "ok": true,
       "items": 10,
-      "ms": 430
+      "ms": 429
     },
     "feeds2feedburner": {
       "ok": true,
       "items": 15,
-      "ms": 368
+      "ms": 355
     },
     "jankfree": {
       "ok": true,
       "items": 15,
-      "ms": 320
+      "ms": 276
     },
     "johnkeefe": {
       "ok": true,
       "items": 15,
-      "ms": 733
+      "ms": 676
     },
     "karbonbased": {
       "ok": true,
       "items": 15,
-      "ms": 221
+      "ms": 187
     },
     "kpqgithub": {
       "ok": true,
       "items": 6,
-      "ms": 28
+      "ms": 19
     },
     "perfectionkills": {
       "ok": true,
@@ -699,1117 +699,1117 @@
     "responsivenewsco": {
       "ok": true,
       "items": 10,
-      "ms": 1546
+      "ms": 1399
     },
     "simplebits": {
       "ok": true,
       "items": 15,
-      "ms": 180
+      "ms": 142
     },
     "thecodebarbarian": {
       "ok": true,
       "items": 15,
-      "ms": 79
+      "ms": 43
     },
     "aaronsw": {
       "ok": true,
       "items": 15,
-      "ms": 517
+      "ms": 535
     },
     "d3noob": {
       "ok": true,
       "items": 15,
-      "ms": 228
+      "ms": 246
     },
     "ebaytechblog": {
       "ok": true,
       "items": 15,
-      "ms": 1440
+      "ms": 1190
     },
     "planeterlang": {
       "ok": true,
       "items": 10,
-      "ms": 347
+      "ms": 313
     },
     "stubbornella": {
       "ok": true,
       "items": 10,
-      "ms": 319
+      "ms": 374
     },
     "0xdade": {
       "ok": true,
       "items": 10,
-      "ms": 47
+      "ms": 42
     },
     "100r": {
       "ok": true,
       "items": 15,
-      "ms": 67
+      "ms": 95
     },
     "512pixels": {
       "ok": true,
       "items": 15,
-      "ms": 173
+      "ms": 145
     },
     "aaronstuyvenberg": {
       "ok": true,
       "items": 10,
-      "ms": 50
+      "ms": 49
     },
     "aartaka": {
       "ok": true,
       "items": 15,
-      "ms": 937
+      "ms": 871
     },
     "adais": {
       "ok": true,
       "items": 15,
-      "ms": 55
+      "ms": 63
     },
     "adactio": {
       "ok": true,
       "items": 10,
-      "ms": 614
+      "ms": 623
     },
     "addyosubstack": {
       "ok": true,
       "items": 15,
-      "ms": 63
+      "ms": 66
     },
     "adoptingerlang": {
       "ok": true,
       "items": 2,
-      "ms": 186
+      "ms": 187
     },
     "adrianroselli": {
       "ok": true,
       "items": 10,
-      "ms": 830
+      "ms": 725
     },
     "aerotwist": {
       "ok": true,
       "items": 6,
-      "ms": 29
+      "ms": 43
     },
     "ahmadawais": {
       "ok": true,
       "items": 10,
-      "ms": 146
+      "ms": 177
     },
     "aieworkssubstack": {
       "ok": true,
       "items": 15,
-      "ms": 64
+      "ms": 52
     },
     "alistapart": {
       "ok": true,
       "items": 15,
-      "ms": 80
+      "ms": 73
     },
     "andersmurphy": {
       "ok": true,
       "items": 15,
-      "ms": 104
+      "ms": 49
     },
     "andrealeopardi": {
       "ok": true,
       "items": 15,
-      "ms": 162
+      "ms": 59
     },
     "andrewtimberlake": {
       "ok": true,
       "items": 15,
-      "ms": 3050
+      "ms": 1105
     },
     "andymalehblogspot": {
       "ok": true,
       "items": 15,
-      "ms": 189
+      "ms": 201
     },
     "anhvn": {
       "ok": true,
       "items": 15,
-      "ms": 248
+      "ms": 256
     },
     "antongunnarsson": {
       "ok": true,
       "items": 15,
-      "ms": 158
+      "ms": 144
     },
     "architectelevator": {
       "ok": true,
       "items": 13,
-      "ms": 33
+      "ms": 41
     },
     "arialdomartinigithub": {
       "ok": true,
       "items": 10,
-      "ms": 58
+      "ms": 55
     },
     "artsygithub": {
       "ok": true,
       "items": 10,
-      "ms": 48
+      "ms": 45
     },
     "austinhenley": {
       "ok": true,
       "items": 15,
-      "ms": 33
+      "ms": 31
     },
     "auth0": {
       "ok": true,
       "items": 10,
-      "ms": 265
+      "ms": 392
     },
     "automattic": {
       "ok": true,
       "items": 10,
-      "ms": 83
+      "ms": 101
     },
     "backendtea": {
       "ok": true,
       "items": 15,
-      "ms": 301
+      "ms": 277
     },
     "backstage": {
       "ok": true,
       "items": 15,
-      "ms": 125
+      "ms": 106
     },
     "basicappleguy": {
       "ok": true,
       "items": 15,
-      "ms": 709
+      "ms": 682
     },
     "batkosubstack": {
       "ok": true,
       "items": 15,
-      "ms": 117
+      "ms": 102
     },
     "beabetterdev": {
       "ok": true,
       "items": 10,
-      "ms": 458
+      "ms": 487
     },
     "benjamin": {
       "ok": true,
       "items": 15,
-      "ms": 945
+      "ms": 964
     },
     "bensmithgall": {
       "ok": true,
       "items": 10,
-      "ms": 496
+      "ms": 540
     },
     "betterdev": {
       "ok": true,
       "items": 15,
-      "ms": 97
+      "ms": 91
     },
     "birchtree": {
       "ok": true,
       "items": 15,
-      "ms": 74
+      "ms": 123
     },
     "bitmathblogspot": {
       "ok": true,
       "items": 15,
-      "ms": 171
+      "ms": 325
     },
     "bitsofco": {
       "ok": true,
       "items": 15,
-      "ms": 416
+      "ms": 335
     },
     "blog1password": {
       "ok": true,
       "items": 15,
-      "ms": 590
+      "ms": 960
     },
     "blogalexmaccaw": {
       "ok": true,
       "items": 15,
-      "ms": 105
+      "ms": 118
     },
     "blogangular": {
       "ok": true,
       "items": 10,
-      "ms": 526
+      "ms": 651
     },
     "blogasciinema": {
       "ok": true,
       "items": 15,
-      "ms": 633
+      "ms": 623
     },
     "blogaxlight": {
       "ok": true,
       "items": 15,
-      "ms": 105
+      "ms": 40
     },
     "blogchristianposta": {
       "ok": true,
       "items": 5,
-      "ms": 57
+      "ms": 30
     },
     "blogcoiled": {
       "ok": true,
       "items": 15,
-      "ms": 202
+      "ms": 80
     },
     "blogdomenic": {
       "ok": true,
       "items": 10,
-      "ms": 378
+      "ms": 376
     },
     "blogfrankel": {
       "ok": true,
       "items": 15,
-      "ms": 482
+      "ms": 509
     },
     "googleblog": {
       "ok": true,
       "items": 15,
-      "ms": 114
+      "ms": 113
     },
     "blogiconfactory": {
       "ok": true,
       "items": 10,
-      "ms": 247
+      "ms": 243
     },
     "blogj11y": {
       "ok": true,
       "items": 15,
-      "ms": 143
+      "ms": 113
     },
     "blogjanestreet": {
       "ok": true,
       "items": 15,
-      "ms": 287
+      "ms": 361
     },
     "blogjessfraz": {
       "ok": true,
       "items": 15,
-      "ms": 141
+      "ms": 115
     },
     "blogkenanb": {
       "ok": true,
       "items": 10,
-      "ms": 57
+      "ms": 40
     },
     "blogkhanacademy": {
       "ok": true,
       "items": 10,
-      "ms": 79
+      "ms": 83
     },
     "blogknatten": {
       "ok": true,
       "items": 10,
-      "ms": 79
+      "ms": 109
     },
     "blogkukiel": {
       "ok": true,
       "items": 10,
-      "ms": 878
+      "ms": 872
     },
     "bloglogrocket": {
       "ok": true,
       "items": 12,
-      "ms": 81
+      "ms": 83
     },
     "blogluden": {
       "ok": true,
       "items": 10,
-      "ms": 304
+      "ms": 1130
     },
     "blogroboflow": {
       "ok": true,
       "items": 15,
-      "ms": 226
+      "ms": 174
     },
     "blogrustlang": {
       "ok": true,
       "items": 10,
-      "ms": 48
+      "ms": 147
     },
     "blogscottlogic": {
       "ok": true,
       "items": 15,
-      "ms": 57
+      "ms": 53
     },
     "blogsentry": {
       "ok": true,
       "items": 15,
-      "ms": 78
+      "ms": 149
     },
     "blogtensorflow": {
       "ok": true,
       "items": 15,
-      "ms": 191
+      "ms": 320
     },
     "blogvuejs": {
       "ok": true,
       "items": 15,
-      "ms": 95
+      "ms": 88
     },
     "blogwokwi": {
       "ok": true,
       "items": 15,
-      "ms": 973
+      "ms": 1278
     },
     "blogsnewardassociates": {
       "ok": true,
       "items": 15,
-      "ms": 109
+      "ms": 92
     },
     "blueskyweb": {
       "ok": true,
       "items": 15,
-      "ms": 602
+      "ms": 519
     },
     "bogoyavlensky": {
       "ok": true,
       "items": 14,
-      "ms": 59
+      "ms": 32
     },
     "boonepetergithub": {
       "ok": true,
       "items": 15,
-      "ms": 56
+      "ms": 59
     },
     "borischerny": {
       "ok": true,
       "items": 10,
-      "ms": 47
+      "ms": 43
     },
     "bostocks": {
       "ok": true,
       "items": 15,
-      "ms": 51
+      "ms": 49
     },
     "boxofcables": {
       "ok": true,
       "items": 15,
-      "ms": 1036
+      "ms": 923
     },
     "boz": {
       "ok": true,
       "items": 15,
-      "ms": 70
+      "ms": 79
     },
     "buffer": {
       "ok": true,
       "items": 15,
-      "ms": 671
+      "ms": 879
     },
     "calpaterson": {
       "ok": true,
       "items": 15,
-      "ms": 49
+      "ms": 72
     },
     "calv": {
       "ok": true,
       "items": 10,
-      "ms": 284
+      "ms": 298
     },
     "carljohansenwordpress": {
       "ok": true,
       "items": 10,
-      "ms": 79
+      "ms": 83
     },
     "caseymuratori": {
       "ok": true,
       "items": 15,
-      "ms": 158
+      "ms": 155
     },
     "cezarypiatekgithub": {
       "ok": true,
       "items": 15,
-      "ms": 41
+      "ms": 35
     },
     "chrisprather": {
       "ok": true,
       "items": 10,
-      "ms": 88
+      "ms": 115
     },
     "chriscoyier": {
       "ok": true,
       "items": 12,
-      "ms": 72
+      "ms": 49
     },
     "christianheilmann": {
       "ok": true,
       "items": 5,
-      "ms": 199
+      "ms": 325
     },
     "christianselig": {
       "ok": true,
       "items": 15,
-      "ms": 842
+      "ms": 826
     },
     "chriswarrick": {
       "ok": true,
       "items": 10,
-      "ms": 1136
+      "ms": 1016
     },
     "cloudberry": {
       "ok": true,
       "items": 15,
-      "ms": 236
+      "ms": 238
     },
     "cloudplatformgoogleblog": {
       "ok": true,
       "items": 15,
-      "ms": 1780
+      "ms": 1777
     },
     "codetutsplus": {
       "ok": true,
       "items": 12,
-      "ms": 108
+      "ms": 81
     },
     "codevisualstudio": {
       "ok": true,
       "items": 15,
-      "ms": 294
+      "ms": 5557
     },
     "codecompass00substack": {
       "ok": true,
       "items": 15,
-      "ms": 87
+      "ms": 67
     },
     "cppcast": {
       "ok": true,
       "items": 15,
-      "ms": 133
+      "ms": 177
     },
     "csaiot": {
       "ok": true,
       "items": 10,
-      "ms": 65
+      "ms": 50
     },
     "cssirl": {
       "ok": true,
       "items": 15,
-      "ms": 358
+      "ms": 425
     },
     "csstricks": {
       "ok": true,
       "items": 15,
-      "ms": 574
+      "ms": 571
     },
     "culturedcode": {
       "ok": true,
       "items": 15,
-      "ms": 105
+      "ms": 77
     },
     "curiosum": {
       "ok": true,
       "items": 15,
-      "ms": 80
+      "ms": 50
     },
     "danielfeldroy": {
       "ok": true,
       "items": 15,
-      "ms": 218
+      "ms": 210
     },
     "danielcwilson": {
       "ok": true,
       "items": 15,
-      "ms": 103
+      "ms": 99
     },
     "dannorris": {
       "ok": true,
       "items": 10,
-      "ms": 3352
+      "ms": 1223
     },
     "dashbit": {
       "ok": true,
       "items": 15,
-      "ms": 351
+      "ms": 346
     },
     "datanewstumblr": {
       "ok": true,
       "items": 15,
-      "ms": 340
+      "ms": 353
     },
     "deanebarker": {
       "ok": true,
       "items": 15,
-      "ms": 140
+      "ms": 121
     },
     "deathandgravity": {
       "ok": true,
       "items": 15,
-      "ms": 189
+      "ms": 97
     },
     "den": {
       "ok": true,
       "items": 15,
-      "ms": 132
+      "ms": 69
     },
     "dev37signals": {
       "ok": true,
       "items": 15,
-      "ms": 114
+      "ms": 76
     },
     "devblogsmicrosoft": {
       "ok": true,
       "items": 10,
-      "ms": 130
+      "ms": 92
     },
     "devcop": {
       "ok": true,
       "items": 10,
-      "ms": 462
+      "ms": 429
     },
     "developerchrome": {
       "ok": true,
       "items": 10,
-      "ms": 140
+      "ms": 172
     },
     "developernvidia": {
       "ok": false,
       "items": 0,
-      "ms": 212
+      "ms": 604
     },
     "developsense": {
       "ok": true,
       "items": 10,
-      "ms": 144
+      "ms": 153
     },
     "devopscube": {
       "ok": false,
       "items": 0,
-      "ms": 81
+      "ms": 77
     },
     "diablohorn": {
       "ok": true,
       "items": 10,
-      "ms": 97
+      "ms": 102
     },
     "effectivesoftwaredesign": {
       "ok": true,
       "items": 10,
-      "ms": 136
+      "ms": 134
     },
     "effectivetypescript": {
       "ok": true,
       "items": 15,
-      "ms": 77
+      "ms": 129
     },
     "eieio": {
       "ok": true,
       "items": 10,
-      "ms": 74
+      "ms": 96
     },
     "eigr": {
       "ok": true,
       "items": 8,
-      "ms": 82
+      "ms": 59
     },
     "elixirlang": {
       "ok": true,
       "items": 15,
-      "ms": 32
+      "ms": 44
     },
     "elixirlibhunt": {
       "ok": true,
       "items": 10,
-      "ms": 63
+      "ms": 77
     },
     "encore": {
       "ok": true,
       "items": 15,
-      "ms": 122
+      "ms": 133
     },
     "engineercodexsubstack": {
       "ok": true,
       "items": 15,
-      "ms": 117
+      "ms": 108
     },
     "engineeringindeedblog": {
       "ok": true,
       "items": 10,
-      "ms": 355
+      "ms": 384
     },
     "engineeringsquarespace": {
       "ok": true,
       "items": 15,
-      "ms": 616
+      "ms": 695
     },
     "engineeringtumblr": {
       "ok": true,
       "items": 15,
-      "ms": 505
+      "ms": 487
     },
     "engineeringblogyelp": {
       "ok": true,
       "items": 10,
-      "ms": 73
+      "ms": 81
     },
     "ericwbailey": {
       "ok": true,
       "items": 15,
-      "ms": 361
+      "ms": 362
     },
     "erikarow": {
       "ok": true,
       "items": 15,
-      "ms": 257
+      "ms": 233
     },
     "esbuenonoahstokes": {
       "ok": true,
       "items": 15,
-      "ms": 444
+      "ms": 892
     },
     "ethanmarcotte": {
       "ok": true,
       "items": 15,
-      "ms": 961
+      "ms": 950
     },
     "feedbin": {
       "ok": true,
       "items": 5,
-      "ms": 89
+      "ms": 100
     },
     "feedpress": {
       "ok": true,
       "items": 15,
-      "ms": 1016
+      "ms": 1072
     },
     "fireside": {
       "ok": true,
       "items": 15,
-      "ms": 108
+      "ms": 119
     },
     "ferd": {
       "ok": true,
       "items": 5,
-      "ms": 401
+      "ms": 397
     },
     "fettblog": {
       "ok": true,
       "items": 15,
-      "ms": 111
+      "ms": 77
     },
     "flowingdata": {
       "ok": true,
       "items": 10,
-      "ms": 70
+      "ms": 66
     },
     "fly": {
       "ok": true,
       "items": 15,
-      "ms": 362
+      "ms": 553
     },
     "forweb": {
       "ok": true,
       "items": 7,
-      "ms": 353
+      "ms": 121
     },
     "frankchimero": {
       "ok": true,
       "items": 10,
-      "ms": 205
+      "ms": 49
     },
     "frankforce": {
       "ok": true,
       "items": 6,
-      "ms": 1785
+      "ms": 1958
     },
     "frontendmasters": {
       "ok": true,
       "items": 10,
-      "ms": 150
+      "ms": 152
     },
     "geoffgraham": {
       "ok": true,
       "items": 10,
-      "ms": 75
+      "ms": 212
     },
     "gleam": {
       "ok": true,
       "items": 10,
-      "ms": 152
+      "ms": 64
     },
     "gloria": {
       "ok": true,
       "items": 15,
-      "ms": 679
+      "ms": 842
     },
     "googletestingblogspot": {
       "ok": true,
       "items": 15,
-      "ms": 514
+      "ms": 711
     },
     "groovyapache": {
       "ok": true,
       "items": 15,
-      "ms": 48
+      "ms": 43
     },
     "gustedtwordpress": {
       "ok": true,
       "items": 10,
-      "ms": 83
+      "ms": 96
     },
     "hacksmozilla": {
       "ok": true,
       "items": 15,
-      "ms": 123
+      "ms": 130
     },
     "henry": {
       "ok": true,
       "items": 15,
-      "ms": 399
+      "ms": 180
     },
     "hex": {
       "ok": true,
       "items": 15,
-      "ms": 119
+      "ms": 117
     },
     "holub": {
       "ok": true,
       "items": 10,
-      "ms": 1761
+      "ms": 2519
     },
     "iamfran": {
       "ok": true,
       "items": 15,
-      "ms": 77
+      "ms": 94
     },
     "incident": {
       "ok": true,
       "items": 15,
-      "ms": 1018
+      "ms": 706
     },
     "insightsseicmu": {
       "ok": true,
       "items": 15,
-      "ms": 662
+      "ms": 658
     },
     "ishadeed": {
       "ok": true,
       "items": 15,
-      "ms": 75
+      "ms": 90
     },
     "itnotesdragas": {
       "ok": true,
       "items": 15,
-      "ms": 783
+      "ms": 565
     },
     "itnext": {
       "ok": true,
       "items": 10,
-      "ms": 694
+      "ms": 563
     },
     "jakearchibald": {
       "ok": true,
       "items": 10,
-      "ms": 127
+      "ms": 96
     },
     "janklang": {
       "ok": true,
       "items": 15,
-      "ms": 41
+      "ms": 34
     },
     "jaredpalmer": {
       "ok": true,
       "items": 9,
-      "ms": 63
+      "ms": 62
     },
     "javascriptweekly": {
       "ok": true,
       "items": 4,
-      "ms": 325
+      "ms": 348
     },
     "jmesnil": {
       "ok": true,
       "items": 15,
-      "ms": 474
+      "ms": 499
     },
     "johnmillikin": {
       "ok": true,
       "items": 15,
-      "ms": 129
+      "ms": 120
     },
     "josebrowne": {
       "ok": true,
       "items": 9,
-      "ms": 124
+      "ms": 394
     },
     "jrsinclair": {
       "ok": true,
       "items": 15,
-      "ms": 97
+      "ms": 117
     },
     "julialang": {
       "ok": true,
       "items": 15,
-      "ms": 49
+      "ms": 104
     },
     "jyn": {
       "ok": true,
       "items": 15,
-      "ms": 123
+      "ms": 120
     },
     "k8s": {
       "ok": true,
       "items": 15,
-      "ms": 840
+      "ms": 998
     },
     "katydecorah": {
       "ok": true,
       "items": 10,
-      "ms": 51
+      "ms": 89
     },
     "kayserifserif": {
       "ok": true,
       "items": 10,
-      "ms": 183
+      "ms": 322
     },
     "kettanaito": {
       "ok": true,
       "items": 15,
-      "ms": 118
+      "ms": 162
     },
     "layoffs": {
       "ok": true,
       "items": 10,
-      "ms": 520
+      "ms": 522
     },
     "learnk8s": {
       "ok": true,
       "items": 15,
-      "ms": 1271
+      "ms": 1206
     },
     "lfortran": {
       "ok": true,
       "items": 15,
-      "ms": 38
+      "ms": 36
     },
     "logtalk": {
       "ok": true,
       "items": 10,
-      "ms": 464
+      "ms": 524
     },
     "lynnandtonic": {
       "ok": true,
       "items": 15,
-      "ms": 190
+      "ms": 193
     },
     "m417z": {
       "ok": true,
       "items": 10,
-      "ms": 51
+      "ms": 162
     },
     "mattt": {
       "ok": true,
       "items": 15,
-      "ms": 342
+      "ms": 284
     },
     "macarthur": {
       "ok": true,
       "items": 15,
-      "ms": 392
+      "ms": 354
     },
     "macwright": {
       "ok": true,
       "items": 10,
-      "ms": 224
+      "ms": 145
     },
     "magpiraspberrypi": {
       "ok": true,
       "items": 12,
-      "ms": 1323
+      "ms": 1441
     },
     "mangopdf": {
       "ok": true,
       "items": 7,
-      "ms": 64
+      "ms": 82
     },
     "markermedium": {
       "ok": true,
       "items": 10,
-      "ms": 191
+      "ms": 186
     },
     "martialtesterwordpress": {
       "ok": true,
       "items": 5,
-      "ms": 113
+      "ms": 133
     },
     "mathematicaforpredictionwordpress": {
       "ok": true,
       "items": 10,
-      "ms": 161
+      "ms": 182
     },
     "matthenry": {
       "ok": true,
       "items": 10,
-      "ms": 206
+      "ms": 218
     },
     "matthiasott": {
       "ok": true,
       "items": 15,
-      "ms": 1764
+      "ms": 2119
     },
     "matttproud": {
       "ok": true,
       "items": 15,
-      "ms": 133
+      "ms": 92
     },
     "mcfunley": {
       "ok": true,
       "items": 15,
-      "ms": 61
+      "ms": 57
     },
     "medium": {
       "ok": true,
       "items": 10,
-      "ms": 504
+      "ms": 475
     },
     "melanierichards": {
       "ok": true,
       "items": 15,
-      "ms": 291
+      "ms": 318
     },
     "metaredux": {
       "ok": true,
       "items": 10,
-      "ms": 59
+      "ms": 55
     },
     "meyerweb": {
       "ok": true,
       "items": 15,
-      "ms": 479
+      "ms": 338
     },
     "michaelscodingspot": {
       "ok": true,
       "items": 15,
-      "ms": 191
+      "ms": 276
     },
     "mikelikesrobotsgithub": {
       "ok": true,
       "items": 15,
-      "ms": 77
+      "ms": 82
     },
     "mikezornek": {
       "ok": true,
       "items": 15,
-      "ms": 96
+      "ms": 117
     },
     "mko": {
       "ok": true,
       "items": 10,
-      "ms": 57
+      "ms": 50
     },
     "modernsql": {
       "ok": true,
       "items": 10,
-      "ms": 1016
+      "ms": 1012
     },
     "motherduck": {
       "ok": true,
       "items": 15,
-      "ms": 124
+      "ms": 89
     },
     "muhammadraza": {
       "ok": true,
       "items": 10,
-      "ms": 104
+      "ms": 94
     },
     "mwl": {
       "ok": true,
       "items": 10,
-      "ms": 404
+      "ms": 398
     },
     "mxb": {
       "ok": true,
       "items": 15,
-      "ms": 291
+      "ms": 460
     },
     "mxstbr": {
       "ok": true,
       "items": 15,
-      "ms": 60
+      "ms": 110
     },
     "nathanrooygithub": {
       "ok": true,
       "items": 15,
-      "ms": 84
+      "ms": 64
     },
     "nazhamid": {
       "ok": true,
       "items": 15,
-      "ms": 671
+      "ms": 170
     },
     "nedbatchelder": {
       "ok": false,
       "items": 0,
-      "ms": 398
+      "ms": 410
     },
     "neo4j": {
       "ok": true,
       "items": 15,
-      "ms": 199
+      "ms": 202
     },
     "nerdy": {
       "ok": true,
       "items": 10,
-      "ms": 125
+      "ms": 128
     },
     "neuviemeportegithub": {
       "ok": true,
       "items": 10,
-      "ms": 54
+      "ms": 52
     },
     "newrelic": {
       "ok": true,
       "items": 10,
-      "ms": 82
+      "ms": 75
     },
     "newsroomspotify": {
       "ok": true,
       "items": 10,
-      "ms": 151
+      "ms": 174
     },
     "nickcraver": {
       "ok": true,
       "items": 10,
-      "ms": 82
+      "ms": 91
     },
     "nicolasgallagher": {
       "ok": false,
       "items": 0,
-      "ms": 214
+      "ms": 239
     },
     "noidea": {
       "ok": true,
       "items": 15,
-      "ms": 808
+      "ms": 962
     },
     "notgull": {
       "ok": true,
       "items": 10,
-      "ms": 131
+      "ms": 101
     },
     "notlaura": {
       "ok": true,
       "items": 15,
-      "ms": 1579
+      "ms": 1425
     },
     "ntsstrzibny": {
       "ok": true,
       "items": 10,
-      "ms": 313
+      "ms": 114
     },
     "nullprogram": {
       "ok": true,
       "items": 8,
-      "ms": 43
+      "ms": 49
     },
     "opennytimes": {
       "ok": true,
       "items": 10,
-      "ms": 281
+      "ms": 278
     },
     "openai": {
       "ok": true,
@@ -1819,147 +1819,147 @@
     "openclaw": {
       "ok": true,
       "items": 15,
-      "ms": 58
+      "ms": 65
     },
     "orlp": {
       "ok": true,
       "items": 14,
-      "ms": 1343
+      "ms": 1368
     },
     "panic": {
       "ok": true,
       "items": 10,
-      "ms": 553
+      "ms": 509
     },
     "parkermicro": {
       "ok": true,
       "items": 15,
-      "ms": 510
+      "ms": 414
     },
     "paulstamatiou": {
       "ok": true,
       "items": 15,
-      "ms": 127
+      "ms": 125
     },
     "pawelurbanek": {
       "ok": true,
       "items": 10,
-      "ms": 68
+      "ms": 72
     },
     "perlhacks": {
       "ok": true,
       "items": 10,
-      "ms": 1645
+      "ms": 1231
     },
     "planetgnu": {
       "ok": true,
       "items": 15,
-      "ms": 597
+      "ms": 490
     },
     "pmjones": {
       "ok": true,
       "items": 10,
-      "ms": 264
+      "ms": 240
     },
     "pragprog": {
       "ok": true,
       "items": 15,
-      "ms": 114
+      "ms": 117
     },
     "pragtobwordpress": {
       "ok": true,
       "items": 10,
-      "ms": 142
+      "ms": 63
     },
     "priver": {
       "ok": true,
       "items": 15,
-      "ms": 1825
+      "ms": 4950
     },
     "projectf": {
       "ok": true,
       "items": 15,
-      "ms": 985
+      "ms": 968
     },
     "proton": {
       "ok": true,
       "items": 10,
-      "ms": 1815
+      "ms": 1557
     },
     "pugachev": {
       "ok": true,
       "items": 10,
-      "ms": 1539
+      "ms": 1396
     },
     "pythonspeed": {
       "ok": true,
       "items": 10,
-      "ms": 148
+      "ms": 431
     },
     "qsantos": {
       "ok": true,
       "items": 10,
-      "ms": 1137
+      "ms": 1121
     },
     "rachelandrewco": {
       "ok": true,
       "items": 10,
-      "ms": 912
+      "ms": 952
     },
     "rachsmith": {
       "ok": true,
       "items": 15,
-      "ms": 109
+      "ms": 98
     },
     "radumatei": {
       "ok": true,
       "items": 15,
-      "ms": 71
+      "ms": 67
     },
     "rakuadvent": {
       "ok": true,
       "items": 10,
-      "ms": 110
+      "ms": 106
     },
     "randomactsofarchitecture": {
       "ok": true,
       "items": 10,
-      "ms": 198
+      "ms": 114
     },
     "react": {
       "ok": true,
       "items": 15,
-      "ms": 59
+      "ms": 128
     },
     "reaganray": {
       "ok": true,
       "items": 15,
-      "ms": 294
+      "ms": 178
     },
     "redditinc": {
       "ok": true,
       "items": 10,
-      "ms": 239
+      "ms": 231
     },
     "remysharp": {
       "ok": true,
       "items": 15,
-      "ms": 164
+      "ms": 191
     },
     "researchfb": {
       "ok": true,
       "items": 10,
-      "ms": 1357
+      "ms": 1191
     },
     "rknight": {
       "ok": true,
       "items": 15,
-      "ms": 851
+      "ms": 862
     },
     "rmarcus": {
       "ok": true,
       "items": 15,
-      "ms": 1177
+      "ms": 958
     },
     "rmondello": {
       "ok": true,
@@ -1969,102 +1969,102 @@
     "rmurphey": {
       "ok": true,
       "items": 10,
-      "ms": 212
+      "ms": 142
     },
     "roadtolarissa": {
       "ok": true,
       "items": 15,
-      "ms": 433
+      "ms": 397
     },
     "robertheaton": {
       "ok": true,
       "items": 10,
-      "ms": 462
+      "ms": 525
     },
     "rosenzweig": {
       "ok": true,
       "items": 13,
-      "ms": 570
+      "ms": 580
     },
     "rubyonrails": {
       "ok": true,
       "items": 10,
-      "ms": 138
+      "ms": 50
     },
     "rushter": {
       "ok": true,
       "items": 10,
-      "ms": 80
+      "ms": 66
     },
     "samwooe": {
       "ok": true,
       "items": 8,
-      "ms": 1261
+      "ms": 813
     },
     "scriptsdotchatwordpress": {
       "ok": true,
       "items": 7,
-      "ms": 177
+      "ms": 183
     },
     "seattledataguysubstack": {
       "ok": true,
       "items": 15,
-      "ms": 68
+      "ms": 74
     },
     "sebgnotessubstack": {
       "ok": true,
       "items": 15,
-      "ms": 61
+      "ms": 47
     },
     "serokell": {
       "ok": true,
       "items": 10,
-      "ms": 52
+      "ms": 51
     },
     "sethmlarson": {
       "ok": true,
       "items": 5,
-      "ms": 117
+      "ms": 123
     },
     "shortdiv": {
       "ok": true,
       "items": 15,
-      "ms": 142
+      "ms": 153
     },
     "sidsite": {
       "ok": true,
       "items": 10,
-      "ms": 119
+      "ms": 46
     },
     "signal": {
       "ok": true,
       "items": 15,
-      "ms": 82
+      "ms": 65
     },
     "sindresorhus": {
       "ok": true,
       "items": 15,
-      "ms": 163
+      "ms": 78
     },
     "sizovs": {
       "ok": true,
       "items": 10,
-      "ms": 272
+      "ms": 295
     },
     "slottsoftwarearchitectblogspot": {
       "ok": true,
       "items": 15,
-      "ms": 152
+      "ms": 165
     },
     "smallcultfollowing": {
       "ok": true,
       "items": 15,
-      "ms": 64
+      "ms": 95
     },
     "smallsheds": {
       "ok": true,
       "items": 10,
-      "ms": 716
+      "ms": 706
     },
     "snarky": {
       "ok": true,
@@ -2074,1002 +2074,1102 @@
     "sneak": {
       "ok": true,
       "items": 10,
-      "ms": 86
+      "ms": 80
     },
     "snook": {
       "ok": true,
       "items": 10,
-      "ms": 423
+      "ms": 426
     },
     "socialclawhammer": {
       "ok": true,
       "items": 8,
-      "ms": 275
+      "ms": 278
     },
     "sophiebits": {
       "ok": true,
       "items": 15,
-      "ms": 487
+      "ms": 554
     },
     "spreadprivacy": {
       "ok": true,
       "items": 15,
-      "ms": 404
+      "ms": 372
     },
     "srcco": {
       "ok": true,
       "items": 10,
-      "ms": 681
+      "ms": 677
     },
     "stackabuse": {
       "ok": true,
       "items": 15,
-      "ms": 665
+      "ms": 1057
     },
     "staysaasy": {
       "ok": true,
       "items": 15,
-      "ms": 588
+      "ms": 606
     },
     "steipete": {
       "ok": true,
       "items": 15,
-      "ms": 64
+      "ms": 51
     },
     "stephango": {
       "ok": true,
       "items": 15,
-      "ms": 169
+      "ms": 218
     },
     "stevemcconnell": {
       "ok": true,
       "items": 10,
-      "ms": 97
+      "ms": 238
     },
     "storybookjs": {
       "ok": true,
       "items": 15,
-      "ms": 278
+      "ms": 172
     },
     "switowski": {
       "ok": true,
       "items": 15,
-      "ms": 290
+      "ms": 202
     },
     "sysdig": {
       "ok": true,
       "items": 15,
-      "ms": 417
+      "ms": 315
     },
     "systemdesign": {
       "ok": true,
       "items": 10,
-      "ms": 371
+      "ms": 355
     },
     "testguild": {
       "ok": true,
       "items": 15,
-      "ms": 842
+      "ms": 502
     },
     "theclouddevopslearningblog": {
       "ok": true,
       "items": 10,
-      "ms": 62
+      "ms": 60
     },
     "thorstenball": {
       "ok": true,
       "items": 15,
-      "ms": 415
+      "ms": 503
     },
     "thoughtbot": {
       "ok": false,
       "items": 0,
-      "ms": 103
+      "ms": 41
     },
     "thume": {
       "ok": true,
       "items": 15,
-      "ms": 94
+      "ms": 106
     },
     "timkadlec": {
       "ok": true,
       "items": 15,
-      "ms": 91
+      "ms": 84
     },
     "timotijhof": {
       "ok": true,
       "items": 15,
-      "ms": 1003
+      "ms": 1172
     },
     "tinyprojects": {
       "ok": true,
       "items": 15,
-      "ms": 113
+      "ms": 120
     },
     "trentwalton": {
       "ok": true,
       "items": 10,
-      "ms": 153
+      "ms": 189
     },
     "underjord": {
       "ok": true,
       "items": 15,
-      "ms": 88
+      "ms": 80
     },
     "unixdigest": {
       "ok": true,
       "items": 1,
-      "ms": 528
+      "ms": 516
     },
     "upmostly": {
       "ok": true,
       "items": 10,
-      "ms": 1282
+      "ms": 1266
     },
     "usetheindexluke": {
       "ok": true,
       "items": 6,
-      "ms": 876
+      "ms": 1012
     },
     "usesthis": {
       "ok": true,
       "items": 10,
-      "ms": 890
+      "ms": 904
     },
     "v2ocaml": {
       "ok": true,
       "items": 15,
-      "ms": 1236
+      "ms": 1185
     },
     "valhead": {
       "ok": false,
       "items": 0,
-      "ms": 12836
+      "ms": 13025
     },
     "verraes": {
       "ok": true,
       "items": 15,
-      "ms": 84
+      "ms": 242
     },
     "viralinstruction": {
       "ok": true,
       "items": 15,
-      "ms": 72
+      "ms": 43
     },
     "vite": {
       "ok": true,
       "items": 12,
-      "ms": 200
+      "ms": 187
     },
     "voidzero": {
       "ok": true,
       "items": 15,
-      "ms": 247
+      "ms": 214
     },
     "wattenberger": {
       "ok": true,
       "items": 11,
-      "ms": 31
+      "ms": 43
     },
     "waxy": {
       "ok": true,
       "items": 15,
-      "ms": 184
+      "ms": 182
     },
     "web3isgoinggreat": {
       "ok": true,
       "items": 15,
-      "ms": 71
+      "ms": 64
     },
     "webkit": {
       "ok": true,
       "items": 10,
-      "ms": 777
+      "ms": 891
     },
     "weblogrogueamoeba": {
       "ok": true,
       "items": 10,
-      "ms": 73
+      "ms": 57
     },
     "welltyped": {
       "ok": true,
       "items": 10,
-      "ms": 1205
+      "ms": 1199
     },
     "worldhey": {
       "ok": true,
       "items": 15,
-      "ms": 300
+      "ms": 212
     },
     "30secondsofcode": {
       "ok": true,
       "items": 15,
-      "ms": 94
+      "ms": 139
     },
     "aaronpowell": {
       "ok": true,
       "items": 15,
-      "ms": 373
+      "ms": 430
     },
     "aihero": {
       "ok": true,
       "items": 15,
-      "ms": 133
+      "ms": 106
     },
     "allthingsdistributed": {
       "ok": true,
       "items": 10,
-      "ms": 76
+      "ms": 84
     },
     "alwaystwisted": {
       "ok": true,
       "items": 15,
-      "ms": 170
+      "ms": 166
     },
     "apollographql": {
       "ok": true,
       "items": 15,
-      "ms": 451
+      "ms": 489
     },
     "apple": {
       "ok": true,
       "items": 15,
-      "ms": 33
+      "ms": 35
     },
     "arresteddevops": {
       "ok": true,
       "items": 15,
-      "ms": 295
+      "ms": 250
     },
     "askwinston": {
       "ok": true,
       "items": 10,
-      "ms": 485
+      "ms": 631
     },
     "benmorris": {
       "ok": true,
       "items": 15,
-      "ms": 104
+      "ms": 84
     },
     "bitlog": {
       "ok": true,
       "items": 10,
-      "ms": 275
+      "ms": 313
     },
     "blogpythonlibrary": {
       "ok": true,
       "items": 10,
-      "ms": 999
+      "ms": 963
     },
     "bram": {
       "ok": true,
       "items": 10,
-      "ms": 2105
+      "ms": 898
     },
     "caseyliss": {
       "ok": true,
       "items": 10,
-      "ms": 349
+      "ms": 275
     },
     "cnnr": {
       "ok": true,
       "items": 1,
-      "ms": 164
+      "ms": 44
     },
     "codingblocks": {
       "ok": true,
       "items": 15,
-      "ms": 1628
+      "ms": 1511
     },
     "codium": {
       "ok": true,
       "items": 12,
-      "ms": 142
+      "ms": 212
     },
     "computerenhance": {
       "ok": true,
       "items": 15,
-      "ms": 72
+      "ms": 43
     },
     "datomic": {
       "ok": true,
       "items": 15,
-      "ms": 93
+      "ms": 84
     },
     "davefarley": {
       "ok": true,
       "items": 10,
-      "ms": 297
+      "ms": 326
     },
     "davidsmith": {
       "ok": true,
       "items": 15,
-      "ms": 350
+      "ms": 347
     },
     "developertoarchitect": {
       "ok": true,
       "items": 15,
-      "ms": 118
+      "ms": 111
     },
     "dolthub": {
       "ok": true,
       "items": 15,
-      "ms": 38
+      "ms": 40
     },
     "dylanpaulus": {
       "ok": true,
       "items": 15,
-      "ms": 303
+      "ms": 199
     },
     "eff": {
       "ok": true,
       "items": 15,
-      "ms": 86
+      "ms": 83
     },
     "enkisoftware": {
       "ok": true,
       "items": 15,
-      "ms": 240
+      "ms": 61
     },
     "epicweb": {
       "ok": true,
       "items": 15,
-      "ms": 116
+      "ms": 126
     },
     "erlangsolutions": {
       "ok": false,
       "items": 0,
-      "ms": 12434
+      "ms": 12474
     },
     "erlang": {
       "ok": true,
       "items": 10,
-      "ms": 103
+      "ms": 482
     },
     "eviltester": {
       "ok": true,
       "items": 15,
-      "ms": 173
+      "ms": 369
     },
     "furia": {
       "ok": true,
       "items": 15,
-      "ms": 397
+      "ms": 350
     },
     "germanvelasco": {
       "ok": true,
       "items": 10,
-      "ms": 72
+      "ms": 82
     },
     "hackingwithswift": {
       "ok": true,
       "items": 15,
-      "ms": 250
+      "ms": 252
     },
     "hashicorp": {
       "ok": true,
       "items": 15,
-      "ms": 82
+      "ms": 64
     },
     "itsecurityguru": {
       "ok": true,
       "items": 10,
-      "ms": 791
+      "ms": 220
     },
     "jonmellman": {
       "ok": true,
       "items": 12,
-      "ms": 174
+      "ms": 289
     },
     "joshuakgoldberg": {
       "ok": true,
       "items": 15,
-      "ms": 62
+      "ms": 56
     },
     "joshwcomeau": {
       "ok": true,
       "items": 15,
-      "ms": 251
+      "ms": 246
     },
     "lastweekinaws": {
       "ok": true,
       "items": 12,
-      "ms": 128
+      "ms": 139
     },
     "laurentluce": {
       "ok": true,
       "items": 10,
-      "ms": 1227
+      "ms": 1222
     },
     "lihaoyi": {
       "ok": true,
       "items": 15,
-      "ms": 135
+      "ms": 38
     },
     "lireo": {
       "ok": true,
       "items": 5,
-      "ms": 179
+      "ms": 177
     },
     "mager": {
       "ok": true,
       "items": 15,
-      "ms": 75
+      "ms": 85
     },
     "miriamsuzanne": {
       "ok": true,
       "items": 15,
-      "ms": 490
+      "ms": 224
     },
     "mitchellhanberg": {
       "ok": true,
       "items": 15,
-      "ms": 249
+      "ms": 283
     },
     "morling": {
       "ok": true,
       "items": 15,
-      "ms": 187
+      "ms": 49
     },
     "msreverseengineering": {
       "ok": true,
       "items": 15,
-      "ms": 646
+      "ms": 773
     },
     "nytco": {
       "ok": true,
       "items": 10,
-      "ms": 42
+      "ms": 39
     },
     "pantsbuild": {
       "ok": true,
       "items": 15,
-      "ms": 187
+      "ms": 52
     },
     "platformer": {
       "ok": true,
       "items": 15,
-      "ms": 46
+      "ms": 80
     },
     "plex": {
       "ok": true,
       "items": 10,
-      "ms": 86
+      "ms": 69
     },
     "raspberrypi": {
       "ok": true,
       "items": 10,
-      "ms": 760
+      "ms": 757
     },
     "raymondcamden": {
       "ok": true,
       "items": 10,
-      "ms": 219
+      "ms": 181
     },
     "romainguy": {
       "ok": true,
       "items": 15,
-      "ms": 402
+      "ms": 179
     },
     "rubick": {
       "ok": true,
       "items": 15,
-      "ms": 193
+      "ms": 209
     },
     "rubylang": {
       "ok": true,
       "items": 10,
-      "ms": 157
+      "ms": 61
     },
     "sandordargo": {
       "ok": true,
       "items": 5,
-      "ms": 128
+      "ms": 33
     },
     "sarasoueidan": {
       "ok": true,
       "items": 15,
-      "ms": 316
+      "ms": 296
     },
     "satisfice": {
       "ok": true,
       "items": 10,
-      "ms": 1962
+      "ms": 2158
     },
     "scarydba": {
       "ok": true,
       "items": 10,
-      "ms": 275
+      "ms": 296
     },
     "securityinbits": {
       "ok": true,
       "items": 15,
-      "ms": 147
+      "ms": 159
     },
     "shashankthakur": {
       "ok": true,
       "items": 15,
-      "ms": 223
+      "ms": 314
     },
     "smashingmagazine": {
       "ok": true,
       "items": 15,
-      "ms": 256
+      "ms": 359
     },
     "stefanjudis": {
       "ok": true,
       "items": 15,
-      "ms": 361
+      "ms": 431
     },
     "stephaniemorillo": {
       "ok": true,
       "items": 15,
-      "ms": 41
+      "ms": 57
     },
     "taniarascia": {
       "ok": true,
       "items": 15,
-      "ms": 430
+      "ms": 355
     },
     "toni": {
       "ok": true,
       "items": 5,
-      "ms": 231
+      "ms": 190
     },
     "toptal": {
       "ok": true,
       "items": 15,
-      "ms": 64
+      "ms": 50
     },
     "tweag": {
       "ok": true,
       "items": 15,
-      "ms": 241
+      "ms": 218
     },
     "zachleat": {
       "ok": true,
       "items": 10,
-      "ms": 210
+      "ms": 245
     },
     "zeldman": {
       "ok": true,
       "items": 15,
-      "ms": 134
+      "ms": 142
     },
     "zhenghao": {
       "ok": true,
       "items": 15,
-      "ms": 68
+      "ms": 104
     },
     "zopatista": {
       "ok": true,
       "items": 10,
-      "ms": 45
+      "ms": 161
     },
     "xtdb": {
       "ok": true,
       "items": 15,
-      "ms": 52
+      "ms": 45
     },
     "a11ywinstumblr": {
       "ok": true,
       "items": 15,
-      "ms": 582
+      "ms": 570
     },
     "adblockplus": {
       "ok": true,
       "items": 10,
-      "ms": 345
+      "ms": 939
     },
     "allthingssmitty": {
       "ok": true,
       "items": 15,
-      "ms": 66
+      "ms": 164
     },
     "americanexpress": {
       "ok": true,
       "items": 10,
-      "ms": 714
+      "ms": 689
     },
     "annevankesteren": {
       "ok": true,
       "items": 10,
-      "ms": 615
+      "ms": 614
     },
     "benediktmeurer": {
       "ok": true,
       "items": 10,
-      "ms": 386
+      "ms": 415
     },
     "benfrain": {
       "ok": true,
       "items": 15,
-      "ms": 954
+      "ms": 965
     },
     "billwang1990github": {
       "ok": true,
       "items": 15,
-      "ms": 33
+      "ms": 111
     },
     "blogacolyer": {
       "ok": true,
       "items": 10,
-      "ms": 221
+      "ms": 125
     },
     "blogarchive": {
       "ok": true,
       "items": 10,
-      "ms": 1033
+      "ms": 1577
     },
     "blogbloomca": {
       "ok": true,
       "items": 15,
-      "ms": 457
+      "ms": 514
     },
     "blogcjgammon": {
       "ok": true,
       "items": 10,
-      "ms": 225
+      "ms": 276
     },
     "blogcnbang": {
       "ok": true,
       "items": 10,
-      "ms": 1411
+      "ms": 1606
     },
     "blogcodepen": {
       "ok": true,
       "items": 15,
-      "ms": 102
+      "ms": 100
     },
     "blogcodingnow": {
       "ok": true,
       "items": 15,
-      "ms": 245
+      "ms": 258
     },
     "blogcyeam": {
       "ok": false,
       "items": 0,
-      "ms": 186
+      "ms": 251
     },
     "blogdevtang": {
       "ok": true,
       "items": 15,
-      "ms": 175
+      "ms": 142
     },
     "blogfarmostwood": {
       "ok": true,
       "items": 10,
-      "ms": 441
+      "ms": 591
     },
     "blogibireme": {
       "ok": true,
       "items": 10,
-      "ms": 740
+      "ms": 956
     },
     "blogjquery": {
       "ok": true,
       "items": 10,
-      "ms": 39
+      "ms": 45
     },
     "bloglizardwrangler": {
       "ok": true,
       "items": 10,
-      "ms": 83
+      "ms": 104
     },
     "blogmgechev": {
       "ok": true,
       "items": 15,
-      "ms": 61
+      "ms": 175
     },
     "blogmozilla": {
       "ok": true,
       "items": 10,
-      "ms": 261
+      "ms": 235
     },
     "blogportswigger": {
       "ok": true,
       "items": 15,
-      "ms": 1032
+      "ms": 1049
     },
     "blogreybango": {
       "ok": true,
       "items": 10,
-      "ms": 570
+      "ms": 295
     },
     "blogsapegin": {
       "ok": true,
       "items": 15,
-      "ms": 586
+      "ms": 660
     },
     "blogshakirm": {
       "ok": true,
       "items": 10,
-      "ms": 1620
+      "ms": 2107
     },
     "blogsunnyxx": {
       "ok": true,
       "items": 15,
-      "ms": 47
+      "ms": 134
     },
     "blogtojicode": {
       "ok": true,
       "items": 15,
-      "ms": 524
+      "ms": 365
     },
     "blogunicode": {
       "ok": true,
       "items": 15,
-      "ms": 196
+      "ms": 272
     },
     "blogwhatwg": {
       "ok": true,
       "items": 10,
-      "ms": 337
+      "ms": 328
     },
     "blogsbing": {
       "ok": true,
       "items": 10,
-      "ms": 101
+      "ms": 155
     },
     "blogsigalia": {
       "ok": true,
       "items": 10,
-      "ms": 1567
+      "ms": 1609
     },
     "calendarperfplanet": {
       "ok": true,
       "items": 10,
-      "ms": 92
+      "ms": 116
     },
     "casatwy": {
       "ok": true,
       "items": 15,
-      "ms": 22113
+      "ms": 423
     },
     "clagnut": {
       "ok": true,
       "items": 5,
-      "ms": 1034
+      "ms": 1143
     },
     "codingitwrong": {
       "ok": true,
       "items": 10,
-      "ms": 84
+      "ms": 298
     },
     "colobu": {
       "ok": true,
       "items": 15,
-      "ms": 270
+      "ms": 284
     },
     "component": {
       "ok": true,
       "items": 15,
-      "ms": 441
+      "ms": 374
     },
     "crisal": {
       "ok": true,
       "items": 10,
-      "ms": 1548
+      "ms": 1428
     },
     "cssanimation": {
       "ok": true,
       "items": 15,
-      "ms": 267
+      "ms": 116
     },
     "cwilso": {
       "ok": true,
       "items": 15,
-      "ms": 135
+      "ms": 121
     },
     "davidstutz": {
       "ok": true,
       "items": 10,
-      "ms": 2943
+      "ms": 3065
     },
     "dbanotes": {
       "ok": true,
       "items": 8,
-      "ms": 483
+      "ms": 445
     },
     "debugmode": {
       "ok": true,
       "items": 10,
-      "ms": 156
+      "ms": 131
     },
     "diarybraniecki": {
       "ok": true,
       "items": 10,
-      "ms": 360
+      "ms": 310
     },
     "dracosco": {
       "ok": true,
       "items": 15,
-      "ms": 1003
+      "ms": 910
     },
     "emailisgood": {
       "ok": true,
       "items": 10,
-      "ms": 91
+      "ms": 75
     },
     "engwealthfront": {
       "ok": true,
       "items": 10,
-      "ms": 126
+      "ms": 96
     },
     "erikrunyon": {
       "ok": true,
       "items": 10,
-      "ms": 164
+      "ms": 99
     },
     "eslint": {
       "ok": true,
       "items": 10,
-      "ms": 299
+      "ms": 247
     },
     "evanminto": {
       "ok": true,
       "items": 3,
-      "ms": 302
+      "ms": 328
     },
     "cnblogs": {
       "ok": true,
       "items": 15,
-      "ms": 1294
+      "ms": 1403
     },
     "baymard": {
       "ok": true,
       "items": 10,
-      "ms": 1459
+      "ms": 1734
     },
     "dantup": {
       "ok": true,
       "items": 15,
-      "ms": 664
+      "ms": 598
     },
     "jamesmead": {
       "ok": true,
       "items": 10,
-      "ms": 612
+      "ms": 306
     },
     "fengjian0106github": {
       "ok": true,
       "items": 14,
-      "ms": 139
+      "ms": 49
     },
     "fitzgeraldnick": {
       "ok": true,
       "items": 10,
-      "ms": 483
+      "ms": 376
     },
     "florianrivoal": {
       "ok": true,
       "items": 10,
-      "ms": 577
+      "ms": 543
     },
     "fredericwang": {
       "ok": true,
       "items": 15,
-      "ms": 2048
+      "ms": 1950
+    },
+    "furbo": {
+      "ok": true,
+      "items": 10,
+      "ms": 474
+    },
+    "girliemac": {
+      "ok": true,
+      "items": 15,
+      "ms": 666
+    },
+    "glebbahmutov": {
+      "ok": true,
+      "items": 15,
+      "ms": 580
+    },
+    "goodui": {
+      "ok": true,
+      "items": 10,
+      "ms": 325
+    },
+    "googleonlinesecurityblogspot": {
+      "ok": true,
+      "items": 15,
+      "ms": 540
+    },
+    "gregoryszorc": {
+      "ok": true,
+      "items": 10,
+      "ms": 32
+    },
+    "gtdstudy": {
+      "ok": true,
+      "items": 9,
+      "ms": 797
+    },
+    "headsalon": {
+      "ok": true,
+      "items": 15,
+      "ms": 331
+    },
+    "hop": {
+      "ok": true,
+      "items": 15,
+      "ms": 171
+    },
+    "houssein": {
+      "ok": true,
+      "items": 10,
+      "ms": 496
+    },
+    "huiris": {
+      "ok": true,
+      "items": 10,
+      "ms": 1257
+    },
+    "iiiyu": {
+      "ok": true,
+      "items": 15,
+      "ms": 200
+    },
+    "imtx": {
+      "ok": true,
+      "items": 10,
+      "ms": 254
+    },
+    "ipotato": {
+      "ok": true,
+      "items": 15,
+      "ms": 925
+    },
+    "jaejunyooblogspot": {
+      "ok": true,
+      "items": 15,
+      "ms": 316
+    },
+    "javascripttumblr": {
+      "ok": true,
+      "items": 15,
+      "ms": 642
+    },
+    "jolestar": {
+      "ok": true,
+      "items": 15,
+      "ms": 404
+    },
+    "justinfagnani": {
+      "ok": true,
+      "items": 10,
+      "ms": 439
+    },
+    "keithclarkco": {
+      "ok": true,
+      "items": 15,
+      "ms": 133
+    },
+    "keithjgrant": {
+      "ok": true,
+      "items": 15,
+      "ms": 300
     },
     "hynek": {
       "ok": true,
       "items": 15,
-      "ms": 939
+      "ms": 913
     },
     "susam": {
       "ok": true,
       "items": 9,
-      "ms": 691
+      "ms": 733
     },
     "haxx": {
       "ok": true,
       "items": 10,
-      "ms": 262
+      "ms": 59
     },
     "jvns": {
       "ok": true,
       "items": 15,
-      "ms": 185
+      "ms": 200
     },
     "wingolog": {
       "ok": true,
       "items": 10,
-      "ms": 865
+      "ms": 860
     },
     "philopp": {
       "ok": true,
       "items": 15,
-      "ms": 142
+      "ms": 113
     },
     "sanglard": {
       "ok": true,
       "items": 15,
-      "ms": 387
+      "ms": 392
     },
     "antirez": {
       "ok": true,
       "items": 15,
-      "ms": 1454
+      "ms": 1495
     },
     "beesbuzz": {
       "ok": true,
       "items": 14,
-      "ms": 144
+      "ms": 148
     },
     "gargron": {
       "ok": true,
       "items": 15,
-      "ms": 180
+      "ms": 340
     },
     "overreacted": {
       "ok": true,
       "items": 15,
-      "ms": 103
+      "ms": 98
     },
     "swizec": {
       "ok": true,
       "items": 15,
-      "ms": 82
+      "ms": 69
     },
     "kentcdodds": {
       "ok": true,
       "items": 15,
-      "ms": 308
+      "ms": 183
     },
     "cloudflare": {
       "ok": true,
       "items": 15,
-      "ms": 67
+      "ms": 58
     },
     "netflix": {
       "ok": true,
       "items": 10,
-      "ms": 507
+      "ms": 308
     },
     "github_eng": {
       "ok": true,
       "items": 10,
-      "ms": 303
+      "ms": 92
     },
     "slack_eng": {
       "ok": true,
       "items": 8,
-      "ms": 65
+      "ms": 73
     },
     "aws_blog": {
       "ok": true,
       "items": 15,
-      "ms": 62
+      "ms": 67
     },
     "dropbox": {
       "ok": true,
       "items": 10,
-      "ms": 384
+      "ms": 400
     },
     "lyft": {
       "ok": true,
       "items": 10,
-      "ms": 235
+      "ms": 313
     },
     "pinterest": {
       "ok": true,
       "items": 10,
-      "ms": 278
+      "ms": 263
     },
     "etsy": {
       "ok": true,
       "items": 15,
-      "ms": 150
+      "ms": 160
     },
     "discord": {
       "ok": true,
       "items": 15,
-      "ms": 69
+      "ms": 63
     },
     "stripe": {
       "ok": true,
       "items": 10,
-      "ms": 53
+      "ms": 44
     },
     "vercel": {
       "ok": true,
@@ -3079,37 +3179,37 @@
     "meta_eng": {
       "ok": true,
       "items": 9,
-      "ms": 80
+      "ms": 64
     },
     "airbnb": {
       "ok": true,
       "items": 10,
-      "ms": 467
+      "ms": 190
     },
     "mongodb": {
       "ok": true,
       "items": 15,
-      "ms": 1519
+      "ms": 1511
     },
     "elastic": {
       "ok": true,
       "items": 15,
-      "ms": 47
+      "ms": 33
     },
     "gitlab_blog": {
       "ok": true,
       "items": 15,
-      "ms": 51
+      "ms": 60
     },
     "aphyr": {
       "ok": true,
       "items": 12,
-      "ms": 339
+      "ms": 349
     },
     "thisweek": {
       "ok": true,
       "items": 4,
-      "ms": 48
+      "ms": 49
     },
     "pythonblog": {
       "ok": true,
@@ -3119,62 +3219,62 @@
     "rands": {
       "ok": true,
       "items": 15,
-      "ms": 175
+      "ms": 172
     },
     "catonmat": {
       "ok": true,
       "items": 15,
-      "ms": 511
+      "ms": 509
     },
     "dabeaz": {
       "ok": true,
       "items": 15,
-      "ms": 237
+      "ms": 177
     },
     "mitchw": {
       "ok": true,
       "items": 15,
-      "ms": 64
+      "ms": 52
     },
     "birklund": {
       "ok": true,
       "items": 10,
-      "ms": 52
+      "ms": 50
     },
     "arstechnica": {
       "ok": true,
       "items": 15,
-      "ms": 60
+      "ms": 47
     },
     "theverge": {
       "ok": true,
       "items": 10,
-      "ms": 46
+      "ms": 45
     },
     "arxiv": {
       "ok": true,
       "items": 15,
-      "ms": 90
+      "ms": 30877
     },
     "github_trending": {
       "ok": true,
       "items": 15,
-      "ms": 422
+      "ms": 485
     },
     "npm": {
       "ok": true,
       "items": 24,
-      "ms": 7112
+      "ms": 7129
     },
     "pypi": {
       "ok": true,
       "items": 22,
-      "ms": 54899
+      "ms": 48537
     },
     "crates": {
       "ok": true,
       "items": 15,
-      "ms": 459
+      "ms": 643
     }
   }
 }
