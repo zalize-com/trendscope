@@ -231,6 +231,14 @@
     <div class="err" id="op-err"></div>
   </div>
 
+  <div class="tool" data-tool="cron">
+    <h2>Crontab explainer</h2>
+    <p class="hint">Paste a 5-field cron expression — get a plain-English reading plus the next 5 fire times (local tz).</p>
+    <input id="cr-in" placeholder="*/15 9-17 * * 1-5" style="width:100%;padding:6px 9px;font:inherit;font-family:ui-monospace,monospace">
+    <div class="out" id="cr-out" style="margin-top:8px"></div>
+    <div class="err" id="cr-err"></div>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -250,6 +258,7 @@ const TOOLS = [
   {id:"tz",     label:"Timezone converter"},
   {id:"freq",   label:"Word frequency"},
   {id:"opml",   label:"OPML → YAML"},
+  {id:"cron",   label:"Crontab explainer"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -662,6 +671,56 @@ document.getElementById("sg-in").addEventListener("input", sgGo);
   document.getElementById("op-in").value = '<opml version="2.0"><body><outline text="HN" xmlUrl="https://hnrss.org/frontpage"/><outline text="Simon" xmlUrl="https://simonwillison.net/atom/everything/"/></body></opml>';
   go();
 })();
+
+
+// ---- crontab explainer ----
+const CR_NAMES={4:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],3:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]};
+function crField(f,lo,hi){
+  const out=new Set();
+  for(const part of f.split(",")){
+    let step=1,p=part;
+    if(p.includes("/")){const [a,b]=p.split("/");p=a;step=+b||1;}
+    let a=lo,b=hi;
+    if(p==="*"||p===""){}else if(p.includes("-")){const [x,y]=p.split("-");a=+x;b=+y;}
+    else{a=+p;b=+p;}
+    if(isNaN(a)||isNaN(b))return null;
+    for(let v=a;v<=b;v+=step)if(v>=lo&&v<=hi)out.add(v);
+  }
+  return out;
+}
+function crRead(fields){
+  const names=["minute","hour","day-of-month","month","weekday"];
+  const human=["at minute "+fields[0],"past hour "+fields[1],"on day-of-month "+fields[2],"in month "+fields[3],"on weekday "+fields[4]];
+  const parts=[];
+  fields.forEach((f,i)=>{ if(f!=="*")parts.push(human[i]); });
+  if(!parts.length)return"every minute";
+  return"runs "+parts.join(", ");
+}
+function crGo(){
+  const v=document.getElementById("cr-in").value.trim();
+  const out=document.getElementById("cr-out"),err=document.getElementById("cr-err");
+  out.innerHTML="";err.textContent="";
+  if(!v)return;
+  const f=v.split(/\s+/);
+  if(f.length!==5){err.textContent="need exactly 5 fields (min hour dom mon dow)";return;}
+  const sets=[crField(f[0],0,59),crField(f[1],0,23),crField(f[2],1,31),crField(f[3],1,12),crField(f[4],0,7)];
+  if(sets.some(x=>x===null||!x.size)){err.textContent="could not parse one or more fields";return;}
+  const dows=new Set();for(const d of sets[4])dows.add(d%7);
+  // next 5 fire times: scan minutes forward, cap 366 days
+  const t=new Date();t.setSeconds(0,0);t.setMinutes(t.getMinutes()+1);
+  const hits=[];const end=Date.now()+366*864e5;
+  for(let i=0;i<527040&&hits.length<5;i++){
+    const d=new Date(t.getTime()+i*6e4);
+    if(d.getTime()>end)break;
+    if(sets[0].has(d.getMinutes())&&sets[1].has(d.getHours())&&
+       sets[2].has(d.getDate())&&sets[3].has(d.getMonth()+1)&&
+       dows.has(d.getDay()))hits.push(d);
+  }
+  out.innerHTML="<b>"+crRead(f)+"</b><ul style='margin:6px 0 0;padding-left:18px'>"+
+    hits.map(d=>"<li>"+d.toLocaleString()+"</li>").join("")+"</ul>"+
+    (hits.length?"":"<li>no fire times in the next year — check dom/dow combination</li>");
+}
+document.getElementById("cr-in").addEventListener("input",crGo);
 
 </script>
 </body>
