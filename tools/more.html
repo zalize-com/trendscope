@@ -117,6 +117,18 @@
     <div class="out md" id="md-out"></div>
   </div>
 
+  <!-- Markdown table builder -->
+  <div class="tool" data-tool="mdtable">
+    <h2>Markdown table builder</h2>
+    <p class="hint">Paste TSV/CSV (e.g. straight from Excel/Sheets) → aligned Markdown table with header row.</p>
+    <textarea id="mt-in" placeholder="name&#9;lang&#9;stars&#10;trendscope&#9;python&#9;–"></textarea>
+    <div class="btns">
+      <button class="act" onclick="mtGo()">Build table</button>
+      <button class="act" onclick="navigator.clipboard.writeText(document.getElementById('mt-out').textContent)">Copy</button>
+    </div>
+    <div class="out" id="mt-out"></div>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -127,6 +139,7 @@
 const TOOLS = [
   {id:"diff", label:"Text diff"},
   {id:"md",   label:"Markdown preview"},
+  {id:"mdtable", label:"MD table"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -246,6 +259,32 @@ function mdGo() {
 }
 document.getElementById("md-in").addEventListener("input", mdGo);
 mdGo();
+
+/* --- Markdown table builder --- */
+function mtGo() {
+  const raw = document.getElementById("mt-in").value;
+  const out = document.getElementById("mt-out");
+  const lines = raw.trim().split("\n").filter(l => l.trim());
+  if (!lines.length) { out.textContent = "paste TSV/CSV rows"; return; }
+  // split on tab, else comma (outside quotes)
+  const rows = lines.map(l => {
+    if (l.includes("\t")) return l.split("\t").map(c => c.trim());
+    const cells = []; let cur = "", inQ = false;
+    for (const ch of l) {
+      if (ch === '"') inQ = !inQ;
+      else if (ch === "," && !inQ) { cells.push(cur.trim()); cur = ""; }
+      else cur += ch;
+    }
+    cells.push(cur.trim()); return cells;
+  });
+  const ncol = Math.max(...rows.map(r => r.length));
+  rows.forEach(r => { while (r.length < ncol) r.push(""); });
+  const w = Array.from({length: ncol}, (_, i) =>
+    Math.max(3, ...rows.map(r => r[i].length)));
+  const fmt = r => "| " + r.map((c, i) => c.padEnd(w[i])).join(" | ") + " |";
+  const header = rows[0], sep = w.map(x => "-".repeat(x));
+  out.textContent = [fmt(header), fmt(sep), ...rows.slice(1).map(fmt)].join("\n");
+}
 </script>
 </body>
 </html>
