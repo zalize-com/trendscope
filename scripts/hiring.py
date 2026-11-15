@@ -20,6 +20,7 @@ from collect import get_json, DATA_DIR  # noqa: E402
 THREADS = {
     "hiring": ("who is hiring", "who is hiring?"),
     "seeking": ("who wants to be hired", "who wants to be hired?"),
+    "freelancer": ("seeking freelancer", "freelancer? seeking freelancer?"),
 }
 MONTH_RE = re.compile(r"\((January|February|March|April|May|June|July|August|"
                       r"September|October|November|December)\s+\d{4}\)", re.I)

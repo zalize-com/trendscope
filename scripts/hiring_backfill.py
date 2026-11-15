@@ -20,7 +20,8 @@ from collect import DATA_DIR  # noqa: E402
 MONTH_RE = re.compile(
     r"\((January|February|March|April|May|June|July|August|"
     r"September|October|November|December)\s+\d{4}\)", re.I)
-QUERIES = [("hiring", "who is hiring"), ("seeking", "who wants to be hired")]
+QUERIES = [("hiring", "who is hiring"), ("seeking", "who wants to be hired"),
+            ("freelancer", "seeking freelancer")]
 OUT = os.path.join(DATA_DIR, "hiring-monthly.csv")
 
 
