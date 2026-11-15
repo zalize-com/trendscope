@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T18:46:03.139225+00:00",
+ "generated_at": "2026-11-15T18:49:20.526709+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 14485,
- "new_items": 14358,
+ "total_items": 14726,
+ "new_items": 14599,
  "by_source": {
   "show_hn": 48,
   "producthunt": 45,
@@ -552,14 +552,22 @@
   "shaneosullivanwordpress": 15,
   "shashankthakur": 15,
   "shkspr": 15,
+  "shopify": 15,
   "shortdiv": 15,
+  "shyrz": 15,
+  "sia": 15,
   "signal": 15,
+  "simblobblogspot": 15,
+  "simonhearne": 15,
   "simonw": 15,
   "simplebits": 15,
   "sindresorhus": 15,
+  "sive": 15,
   "slottsoftwarearchitectblogspot": 15,
   "smallcultfollowing": 15,
   "smashingmagazine": 15,
+  "smellycode": 15,
+  "smitop": 15,
   "snarky": 15,
   "soblog": 15,
   "sookocheff": 15,
@@ -567,6 +575,7 @@
   "spreadprivacy": 15,
   "stackabuse": 15,
   "staysaasy": 15,
+  "steele": 15,
   "stefanjudis": 15,
   "steipete": 15,
   "stephango": 15,
@@ -574,11 +583,14 @@
   "steveblank": 15,
   "stevekrouse": 15,
   "storybookjs": 15,
+  "svelte": 15,
   "switowski": 15,
   "swizec": 15,
   "swyx": 15,
   "sysdig": 15,
+  "tamethebots": 15,
   "taniarascia": 15,
+  "tantek": 15,
   "tbray": 15,
   "tbrown": 15,
   "testguild": 15,
@@ -1015,6 +1027,9 @@
   "snook": 10,
   "soerenhentzschel": 10,
   "softwareas": 10,
+  "speakofthedevrel": 10,
+  "speedcurve": 10,
+  "spidermonkey": 10,
   "srcco": 10,
   "staltz": 10,
   "stevemcconnell": 10,
@@ -1022,7 +1037,10 @@
   "stripe": 10,
   "stubbornella": 10,
   "surfingcomplexity": 10,
+  "sylormiller": 10,
   "systemdesign": 10,
+  "taiwanchtsai": 10,
+  "tangledweb": 10,
   "techblogwikimedia": 10,
   "techmeituan": 10,
   "tedinski": 10,
@@ -1156,6 +1174,7 @@
   "cnnr": 1,
   "roytang": 1,
   "sebastiangreger": 1,
+  "simplified": 1,
   "uncaughtreferenceerror": 1,
   "unixdigest": 1
  },
@@ -102449,6 +102468,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Cyber Chaos Monkey: Staying ahead of security threats with AI agents",
+   "url": "https://shopify.engineering/cyber-chaos-monkey",
+   "source": "shopify",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shopify’s generative discovery model",
+   "url": "https://shopify.engineering/generative-discovery",
+   "source": "shopify",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How we rebuilt the Shopify app in 12 weeks",
+   "url": "https://shopify.engineering/shopify-app-rebuild",
+   "source": "shopify",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reflex: an architecture for building mobile apps with agents",
+   "url": "https://shopify.engineering/reflex",
+   "source": "shopify",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We gave AI agents a mobile dev environment",
+   "url": "https://shopify.engineering/remote-dev",
+   "source": "shopify",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Shopify turns open models into task experts",
+   "url": "https://shopify.engineering/open-model-task-experts",
+   "source": "shopify",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cross-store product clustering across millions of stores",
+   "url": "https://shopify.engineering/catalog-clustering-part-ii",
+   "source": "shopify",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building Overexposed: understanding application exposure",
+   "url": "https://shopify.engineering/overexposed",
+   "source": "shopify",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ShopGym: Realistic, reproducible sandboxes for shopping agents",
+   "url": "https://shopify.engineering/shopgym",
+   "source": "shopify",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Helix: The internal tool powering our Shopify app's native migration",
+   "url": "https://shopify.engineering/helix",
+   "source": "shopify",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Migrating Shop app from React Native to native",
+   "url": "https://shopify.engineering/shop-app-migration",
+   "source": "shopify",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Native is now the future of mobile at Shopify",
+   "url": "https://shopify.engineering/back-to-native",
+   "source": "shopify",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How River takes security work from a fix to merge",
+   "url": "https://shopify.engineering/river-vulnerability-remediation",
+   "source": "shopify",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gisting: Compressing LLM Agent context to ↑ throughput and ↓ cost",
+   "url": "https://shopify.engineering/gisting",
+   "source": "shopify",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How we raised mobile end-to-end test stability to 98%",
+   "url": "https://shopify.engineering/mobile-e2e-testing",
+   "source": "shopify",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Stealth (YC)",
    "url": "https://shortdiv.com/work/stealth-yc/",
    "source": "shortdiv",
@@ -102953,6 +103092,246 @@
    "metric": "points"
   },
   {
+   "title": "CyberClip #66 个人成长",
+   "url": "https://shyrz.me/cyberclip-66-personal-growth/",
+   "source": "shyrz",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CyberClip #65 诚实测试",
+   "url": "https://shyrz.me/cyberclip-65-testing-for-faithfulness/",
+   "source": "shyrz",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CyberClip #64 致富之道",
+   "url": "https://shyrz.me/cyberclip-64-the-way-to-wealth/",
+   "source": "shyrz",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CyberClip #63 天怒人怨",
+   "url": "https://shyrz.me/cyberclip-63-hated/",
+   "source": "shyrz",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CyberClip #62 生育困境",
+   "url": "https://shyrz.me/cyberclip-62-procreation-dilemma/",
+   "source": "shyrz",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CyberClip #61 知识诅咒",
+   "url": "https://shyrz.me/cyberclip-61-curse-of-knowledge/",
+   "source": "shyrz",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CyberClip #60 社媒之谎",
+   "url": "https://shyrz.me/cyberclip-60-lying-social-media/",
+   "source": "shyrz",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CyberClip #59 社媒之毒",
+   "url": "https://shyrz.me/cyberclip-59-toxic-social-media/",
+   "source": "shyrz",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CyberClip #58 婚姻的祛魅",
+   "url": "https://shyrz.me/cyberclip-58-the-disenchantment-of-marriage/",
+   "source": "shyrz",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CyberClip #57 睡眠剥夺",
+   "url": "https://shyrz.me/cyberclip-57-sleep-deprivation/",
+   "source": "shyrz",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CyberClip #56 好奇心与时间",
+   "url": "https://shyrz.me/56-curiosity-and-time/",
+   "source": "shyrz",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "钢笔杂谈：犀飞利简史",
+   "url": "https://shyrz.me/a-short-history-of-sheaffer/",
+   "source": "shyrz",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CyberClip #55 互联网的消失",
+   "url": "https://shyrz.me/55-the-disappearance-of-the-internet/",
+   "source": "shyrz",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CyberClip #54 错失的快乐",
+   "url": "https://shyrz.me/54-joy-of-missing-out/",
+   "source": "shyrz",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CyberClip #53 可能性思维",
+   "url": "https://shyrz.me/53-possibility-thinking/",
+   "source": "shyrz",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rails folder tree explained",
+   "url": "https://sia.codes/posts/rails-folder-tree/",
+   "source": "sia",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What finally pushed me to learn to code",
+   "url": "https://sia.codes/posts/what-pushed-me-to-code/",
+   "source": "sia",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google Analytics + caniuse = *MAGIC*",
+   "url": "https://sia.codes/posts/google-analytics-caniuse-magic/",
+   "source": "sia",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My adventures in turning a Pixelbook into a developer machine",
+   "url": "https://sia.codes/posts/adventures-pixelbook-dev-machine/",
+   "source": "sia",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making Google Fonts Faster in 2022",
+   "url": "https://sia.codes/posts/making-google-fonts-faster/",
+   "source": "sia",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Justifying performance improvements using Google Analytics",
+   "url": "https://sia.codes/posts/justifying_performance_with_analytics/",
+   "source": "sia",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An In-Depth Tutorial of Webmentions + Eleventy",
+   "url": "https://sia.codes/posts/webmentions-eleventy-in-depth/",
+   "source": "sia",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Show conditional Twitter intents with Eleventy",
+   "url": "https://sia.codes/posts/conditional-twitter-intents-with-eleventy/",
+   "source": "sia",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to build a website in 2021",
+   "url": "https://sia.codes/posts/how-to-build-a-website/",
+   "source": "sia",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Responsive, Performant Images for the Web",
+   "url": "https://sia.codes/posts/responsive-images-perf-matters-video/",
+   "source": "sia",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vintage Bundles talk at Magnolia JS",
+   "url": "https://sia.codes/posts/vintage-bundles-magnolia/",
+   "source": "sia",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Architecting data in Eleventy",
+   "url": "https://sia.codes/posts/architecting-data-in-eleventy/",
+   "source": "sia",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Webmentions + Eleventy Talk",
+   "url": "https://sia.codes/posts/webmentions-eleventy-talk/",
+   "source": "sia",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Optimize Images in Eleventy Using Cloudinary",
+   "url": "https://sia.codes/posts/eleventy-and-cloudinary-images/",
+   "source": "sia",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Faster YouTube embeds in Eleventy",
+   "url": "https://sia.codes/posts/lite-youtube-embed-eleventy/",
+   "source": "sia",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "The apostrophe’s in the wrong place show I’m human",
    "url": "https://sidsite.com/posts/apostrophes/",
    "source": "sidsite",
@@ -103148,6 +103527,246 @@
    "title": "Trend report: Use Signal",
    "url": "https://signal.org/blog/trend-report-use-signal/",
    "source": "signal",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Two Dimensional Version Control",
+   "url": "https://www.redblobgames.com/blog/2026-09-27-jujutsu-experience/",
+   "source": "simblobblogspot",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "English: a vs an",
+   "url": "https://www.redblobgames.com/blog/2026-09-16-english-a-vs-an/",
+   "source": "simblobblogspot",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Differential heuristics",
+   "url": "https://www.redblobgames.com/blog/2026-08-08-differential-heuristics/",
+   "source": "simblobblogspot",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Responsive design calculator",
+   "url": "https://www.redblobgames.com/blog/2026-07-11-responsive-design-calculator/",
+   "source": "simblobblogspot",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Academic citations",
+   "url": "https://www.redblobgames.com/blog/2026-05-02-academic-citations/",
+   "source": "simblobblogspot",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Highlighting interactive code blocks",
+   "url": "https://www.redblobgames.com/blog/2026-04-16-highlighting-interactive-code-blocks/",
+   "source": "simblobblogspot",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Optimizing page size",
+   "url": "https://www.redblobgames.com/blog/2026-03-25-optimizing-page-size/",
+   "source": "simblobblogspot",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing a guide to SDF fonts",
+   "url": "https://www.redblobgames.com/blog/2026-02-26-writing-a-guide-to-sdf-fonts/",
+   "source": "simblobblogspot",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "URLs with trailing punctuation",
+   "url": "https://www.redblobgames.com/blog/2026-02-12-urls-with-trailing-punctuation/",
+   "source": "simblobblogspot",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What I did in 2025",
+   "url": "https://www.redblobgames.com/blog/2025-12-29-what-i-did-in-2025/",
+   "source": "simblobblogspot",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Goodbye Sass",
+   "url": "https://www.redblobgames.com/blog/2025-12-27-goodbye-sass/",
+   "source": "simblobblogspot",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RotMG map seeds",
+   "url": "https://www.redblobgames.com/blog/2025-11-07-rotmg-seeds/",
+   "source": "simblobblogspot",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mapgen4's use of WebGL2",
+   "url": "https://www.redblobgames.com/blog/2025-10-13-mapgen4-webgl2/",
+   "source": "simblobblogspot",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mapgen4 river shader",
+   "url": "https://www.redblobgames.com/blog/2025-09-30-mapgen4-river-shader/",
+   "source": "simblobblogspot",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mapgen4 renderer",
+   "url": "https://www.redblobgames.com/blog/2025-09-29-mapgen4-renderer/",
+   "source": "simblobblogspot",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Adding site search to static sites using Zilliz Cloud",
+   "url": "https://simonhearne.com/2026/static-site-search-zilliz/",
+   "source": "simonhearne",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vector Search, Visualised: Milvus Meetup Paris",
+   "url": "https://simonhearne.com/2026/vector-search-visualised-paris/",
+   "source": "simonhearne",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Haystack Europe 2026: the bleeding edge of retrieval engineering",
+   "url": "https://simonhearne.com/2026/haystack-europe-2026/",
+   "source": "simonhearne",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fast typeahead search with Milvus",
+   "url": "https://simonhearne.com/2026/fast-typeahead-milvus/",
+   "source": "simonhearne",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The RAG Cost Curve",
+   "url": "https://simonhearne.com/2026/rag-cost-curve/",
+   "source": "simonhearne",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Migrating to Milvus: Tooling, Deployment Choices and Lessons from Real Migrations",
+   "url": "https://simonhearne.com/2026/migrating-to-milvus-talk/",
+   "source": "simonhearne",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Milvus 3.0: Closing the Search Gap",
+   "url": "https://simonhearne.com/2026/milvus_search_gap/",
+   "source": "simonhearne",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Migrating Self-managed Milvus to Managed Milvus to gain >99% Performance",
+   "url": "https://simonhearne.com/2026/migrating-milvus/",
+   "source": "simonhearne",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vector Search, Visualised",
+   "url": "https://simonhearne.com/2026/visualising-vector-search/",
+   "source": "simonhearne",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Adding site search to Netlify sites using Elasticsearch",
+   "url": "https://simonhearne.com/2024/netlify-elasticsearch/",
+   "source": "simonhearne",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WebPageTest Live: Third Parties and Request Map with Simon Hearne",
+   "url": "https://simonhearne.com/2022/third-parties-request-map/",
+   "source": "simonhearne",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Optimising Core Web Vitals on SPAs",
+   "url": "https://simonhearne.com/2022/core-web-vitals-on-spas/",
+   "source": "simonhearne",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fixing empty responses from Cloudflare Workers Sites",
+   "url": "https://simonhearne.com/2022/empty-responses-cloudflare-workers-sites/",
+   "source": "simonhearne",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Survivorship Bias in Web Performance",
+   "url": "https://simonhearne.com/2022/survorship-bias-in-webperf/",
+   "source": "simonhearne",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The value of an independent web performance consultant",
+   "url": "https://simonhearne.com/2022/value-of-a-consultant/",
+   "source": "simonhearne",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -103393,6 +104012,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "The Impact of Web Performance",
+   "url": "https://simplified.dev/performance/impact-of-web-performance",
+   "source": "simplified",
+   "rank": 1,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Bare",
    "url": "https://sindresorhus.com/bare",
    "source": "sindresorhus",
@@ -103508,6 +104135,126 @@
    "title": "App Buddy",
    "url": "https://sindresorhus.com/app-buddy",
    "source": "sindresorhus",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I’m on a slow background mission to reverse the othering in my worldview. De-othering",
+   "url": "https://sive.rs/d",
+   "source": "sive",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "De-othering",
+   "url": "https://sive.rs/deothering",
+   "source": "sive",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fascinating book “I Deliver Parcels in Beijing”. First you learn what it's like to do the no-skill jobs in China, but near the end it takes a twist as he quits to become an insightful writer. My notes",
+   "url": "https://sive.rs/d",
+   "source": "sive",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Explorer? Being lost makes you fully present? The mystery of distance. Desire cherished instead of satisfied. Similar thoughts in this book",
+   "url": "https://sive.rs/d",
+   "source": "sive",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Interesting business book 'Alchemy' by Rory Sutherland about ideas that don't make sense in theory but work in practice",
+   "url": "https://sive.rs/d",
+   "source": "sive",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I Deliver Parcels in Beijing - by Hu Anyan",
+   "url": "https://sive.rs/book/BeijingParcels",
+   "source": "sive",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Field Guide to Getting Lost - by Rebecca Solnit",
+   "url": "https://sive.rs/book/GettingLost",
+   "source": "sive",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Istanbul Tűrkiye - 12 days in 10 neighborhoods, meeting up with 30 local people for 60 hours of conversation",
+   "url": "https://sive.rs/d",
+   "source": "sive",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Alchemy - by Rory Sutherland",
+   "url": "https://sive.rs/book/Alchemy",
+   "source": "sive",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "To understand Türkiye and Turkish worldviews a bit, this book is a good quick start",
+   "url": "https://sive.rs/d",
+   "source": "sive",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When walking a city, what do different experts notice that you don’t? Fun book on this",
+   "url": "https://sive.rs/d",
+   "source": "sive",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Very good China book, following four real women in current China",
+   "url": "https://sive.rs/d",
+   "source": "sive",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Best food I’ve ever eaten",
+   "url": "https://sive.rs/d",
+   "source": "sive",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Audition - by Katie Kitamura",
+   "url": "https://sive.rs/book/Audition",
+   "source": "sive",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bangalore India hospital flow",
+   "url": "https://sive.rs/d",
+   "source": "sive",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -104340,6 +105087,246 @@
    "title": "Rethinking Data Visualisation: A UX Approach To Dashboards That Actually Drives Decisions",
    "url": "https://smashingmagazine.com/2026/08/rethinking-data-visualisation-ux-approach-dashboards/",
    "source": "smashingmagazine",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to \"require\" with aliases 🔁",
+   "url": "https://smellycode.com/require-with-aliases/",
+   "source": "smellycode",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A bit about Binary Heap 🌳",
+   "url": "https://smellycode.com/binary-heap/",
+   "source": "smellycode",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JavaScript and Bit-hacks 🧙🏻‍♂️",
+   "url": "https://smellycode.com/js-bithacks/",
+   "source": "smellycode",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building an Accordion with React Hooks.",
+   "url": "https://smellycode.com/accordion-in-reactjs/",
+   "source": "smellycode",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Variable Scope in Catch Block ~ JavaScript",
+   "url": "https://smellycode.com/catch-block-varible-scope/",
+   "source": "smellycode",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Component Glossary 📖",
+   "url": "https://smellycode.com/component-glossary/",
+   "source": "smellycode",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSRF in Action 🎭",
+   "url": "https://smellycode.com/csrf-in-action/",
+   "source": "smellycode",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NodeJs with(out) Express ~ Part 1",
+   "url": "https://smellycode.com/node-express-part1/",
+   "source": "smellycode",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React starter kit for Chrome Extensions with Live Reloading 🤓",
+   "url": "https://smellycode.com/chrome-extension-live-reloading-with-react/",
+   "source": "smellycode",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JS one-liners 😻",
+   "url": "https://smellycode.com/js-oneliners/",
+   "source": "smellycode",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Data Structures with Iterable Protocol",
+   "url": "https://smellycode.com/data-structures-with-iterable-protocol/",
+   "source": "smellycode",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Level up your Regex Game 🚀",
+   "url": "https://smellycode.com/regex-game/",
+   "source": "smellycode",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Bit about Binary Tree 🌳",
+   "url": "https://smellycode.com/binary-tree/",
+   "source": "smellycode",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Gentle Introduction to Trees 🌳",
+   "url": "https://smellycode.com/trees/",
+   "source": "smellycode",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Demystifying Interpolation formula for Interpolation Search",
+   "url": "https://smellycode.com/interpolation-formula/",
+   "source": "smellycode",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trying to understand that compute multiplier graph",
+   "url": "https://www.lesswrong.com/posts/WKt2mqJrsFuMiszed/trying-to-understand-that-compute-multiplier-graph",
+   "source": "smitop",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I think of NLA explanations",
+   "url": "https://iter.ca/post/nla-thoughtspace/",
+   "source": "smitop",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iter.ca update #15",
+   "url": "https://buttondown.com/z/archive/iterca-update-15/",
+   "source": "smitop",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "FDT and the sacrificial volunteer's dilemma",
+   "url": "https://www.lesswrong.com/posts/CatAYdBDuGim6m3cd/fdt-and-the-sacrificial-volunteer-s-dilemma",
+   "source": "smitop",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Modeling with Bayesian networks",
+   "url": "https://iter.ca/post/bayesian-networks/",
+   "source": "smitop",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iter.ca update #14",
+   "url": "https://buttondown.com/z/archive/iterca-update-14/",
+   "source": "smitop",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bayesian network editor",
+   "url": "https://iter.ca/bn/",
+   "source": "smitop",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Interpreting attention head outputs with NLAs",
+   "url": "https://www.lesswrong.com/posts/nNYc5qddHXwdk5kix/interpreting-attention-head-outputs-with-nlas",
+   "source": "smitop",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Some interesting internal documents from Anthropic litigation",
+   "url": "https://www.lesswrong.com/posts/em5wnA7gpQSvfsuxQ/some-interesting-internal-documents-from-anthropic",
+   "source": "smitop",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don't run your own mailserver",
+   "url": "https://iter.ca/post/mailserver-bad/",
+   "source": "smitop",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Anthropic's corporate structure",
+   "url": "https://www.lesswrong.com/posts/Hb5aCFtLuHc5uvAgX/anthropic-s-corporate-structure",
+   "source": "smitop",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iter.ca update #13",
+   "url": "https://buttondown.com/z/archive/iterca-update-13/",
+   "source": "smitop",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bypassing the GitHub workflow permission with nested Git tags",
+   "url": "https://iter.ca/post/gh-workflow-nested/",
+   "source": "smitop",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's your favorite letter?",
+   "url": "https://iter.ca/fave-letter/",
+   "source": "smitop",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "About me",
+   "url": "https://iter.ca/p/about/",
+   "source": "smitop",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -105209,6 +106196,246 @@
    "metric": "feed rank"
   },
   {
+   "title": "Lessons learned from running a popular Discord server",
+   "url": "https://speakofthedevrel.cloud/2025/04/15/lessons-learned-from-running-a-popular-discord-server/",
+   "source": "speakofthedevrel",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What are Vectors, and how they are used in Machine learning",
+   "url": "https://speakofthedevrel.cloud/2024/02/04/what-are-vectors-and-how-they-are-used-in-machine-learning/",
+   "source": "speakofthedevrel",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using the ChatGPT API in Jupyter Notebooks",
+   "url": "https://speakofthedevrel.cloud/2024/01/12/using-the-chatgpt-api-in-jupyter-notebooks/",
+   "source": "speakofthedevrel",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DevRel and the dotted line",
+   "url": "https://speakofthedevrel.cloud/2023/12/18/devrel-and-the-dotted-line/",
+   "source": "speakofthedevrel",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your DevRel Funnel is a Sieve",
+   "url": "https://speakofthedevrel.cloud/2023/10/08/your-devrel-funnel-is-a-sieve/",
+   "source": "speakofthedevrel",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chasing Stars",
+   "url": "https://speakofthedevrel.cloud/2023/09/14/chasing-stars/",
+   "source": "speakofthedevrel",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Similarities between DevRel and DIY",
+   "url": "https://speakofthedevrel.cloud/2023/08/28/similarities-between-devrel-and-diy/",
+   "source": "speakofthedevrel",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Taking the Temperature of your Docs",
+   "url": "https://speakofthedevrel.cloud/2023/06/13/taking-the-temperature-of-your-docs/",
+   "source": "speakofthedevrel",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DevRel Documentation: Building Automation to Make it Better",
+   "url": "https://speakofthedevrel.cloud/2023/05/09/devrel-documentation-building-automation-to-make-it-better/",
+   "source": "speakofthedevrel",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Digital Nomading: Accessing the web from abroad",
+   "url": "https://speakofthedevrel.cloud/2023/02/02/digital-nomading-accessing-the-web-from-abroad/",
+   "source": "speakofthedevrel",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thanks, SpeedCurve!",
+   "url": "https://www.speedcurve.com/blog/thanks-speedcurve",
+   "source": "speedcurve",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "September synthetic test agent updates: Chrome, Firefox and Lighthouse",
+   "url": "https://www.speedcurve.com/blog/august-synthetic-test-agent-updates-chrome-firefox-and-lighthouse",
+   "source": "speedcurve",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An update on the recent JavaScript error tracking outage",
+   "url": "https://www.speedcurve.com/blog/may-13-postmortem",
+   "source": "speedcurve",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The speed of trust: How slow pages hurt your brand",
+   "url": "https://www.speedcurve.com/blog/brand-perception",
+   "source": "speedcurve",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How fast is fast enough? Rethinking web performance in pragmagical terms",
+   "url": "https://www.speedcurve.com/blog/fast",
+   "source": "speedcurve",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2025 was a big year! Here are some highlights...",
+   "url": "https://www.speedcurve.com/blog/2025-web-performance-highlights",
+   "source": "speedcurve",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NEW! A trickle of updates to your waterfall charts",
+   "url": "https://www.speedcurve.com/blog/waterfall-updates",
+   "source": "speedcurve",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NEW! A better way to quantify user happiness on your site",
+   "url": "https://www.speedcurve.com/blog/user-happiness",
+   "source": "speedcurve",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Performance is about people",
+   "url": "https://www.speedcurve.com/blog/performance-is-about-people",
+   "source": "speedcurve",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NEW! Heatmaps now available on Favorites Dashboards",
+   "url": "https://www.speedcurve.com/blog/new-heatmaps-now-available-on-favorite-dashboards",
+   "source": "speedcurve",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Saying goodbye to asm.js",
+   "url": "https://spidermonkey.dev/blog/2026/05/20/saying-goodbye-to-asmjs.html",
+   "source": "spidermonkey",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Benchmark Mode in SpiderMonkey",
+   "url": "https://spidermonkey.dev/blog/2026/04/13/benchmark-mode.html",
+   "source": "spidermonkey",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Flipping Responsibility for Jobs in SpiderMonkey",
+   "url": "https://spidermonkey.dev/blog/2026/01/15/job-responsibility.html",
+   "source": "spidermonkey",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Who needs Graphviz when you can build it yourself?",
+   "url": "https://spidermonkey.dev/blog/2025/10/28/iongraph-web.html",
+   "source": "spidermonkey",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 Things You Might Not Know about Developing Self-Hosted Code",
+   "url": "https://spidermonkey.dev/blog/2025/04/23/self-hosted-development.html",
+   "source": "spidermonkey",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shipping Temporal",
+   "url": "https://spidermonkey.dev/blog/2025/04/11/shipping-temporal.html",
+   "source": "spidermonkey",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SpiderMonkey Newsletter (Firefox 135-137)",
+   "url": "https://spidermonkey.dev/blog/2025/03/17/newsletter-firefox-135-137.html",
+   "source": "spidermonkey",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Implementing Iterator.range in SpiderMonkey",
+   "url": "https://spidermonkey.dev/blog/2025/03/05/iterator-range.html",
+   "source": "spidermonkey",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making Teleporting Smarter",
+   "url": "https://spidermonkey.dev/blog/2025/02/19/Making-Teleporting-Smarter.html",
+   "source": "spidermonkey",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is Memory64 actually worth using?",
+   "url": "https://spidermonkey.dev/blog/2025/01/15/is-memory64-actually-worth-using.html",
+   "source": "spidermonkey",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "2026 DuckDuckGo Charitable Donations: $1M to privacy and digital competition non-profits around the world",
    "url": "https://spreadprivacy.com/2026-duckduckgo-charitable-donations/",
    "source": "spreadprivacy",
@@ -105724,6 +106951,126 @@
    "title": "Avoiding a Culture of Emergencies",
    "url": "https://staysaasy.com/management/2026/03/06/avoiding-a-culture-of-emergencies.html",
    "source": "staysaasy",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MicroLighter is Living Span-Free In My &lt;head&gt;",
+   "url": "https://www.steele.blue/microlighter/",
+   "source": "steele",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My house alerts me when my cat climbs into the ceiling",
+   "url": "https://www.steele.blue/ceiling-cat-presence-detection/",
+   "source": "steele",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Year Of The Linux Desktop (for fitness games)",
+   "url": "https://www.steele.blue/linux-desktop-zwift-beat-saber/",
+   "source": "steele",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hacking custom GIFs onto an LED Mask with mitmproxy",
+   "url": "https://www.steele.blue/hacking-led-mask-mitmproxy/",
+   "source": "steele",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Keep Your Running Cadence With a Garmin Music Playlist",
+   "url": "https://www.steele.blue/running-cadence-playlist/",
+   "source": "steele",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thank Java for Better JavaScript Dates",
+   "url": "https://www.steele.blue/java-script-dates/",
+   "source": "steele",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "This blog's comments are powered by Webmentions",
+   "url": "https://www.steele.blue/webmentions/",
+   "source": "steele",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From Gatsby to Eleventy",
+   "url": "https://www.steele.blue/gatsby-to-eleventy/",
+   "source": "steele",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Side projects should be fun",
+   "url": "https://www.steele.blue/side-projects-should-be-fun/",
+   "source": "steele",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mutation Testing with StrykerJS",
+   "url": "https://www.steele.blue/mutation-testing-with-strykerjs/",
+   "source": "steele",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My favorite water bottles",
+   "url": "https://www.steele.blue/my-favorite-water-bottles/",
+   "source": "steele",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Push is almost usable with iOS 17",
+   "url": "https://www.steele.blue/web-push-ios17/",
+   "source": "steele",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I wired up my bike's GPS to order me pizza during a gravel race 🍕",
+   "url": "https://www.steele.blue/geofence-pizza-ordering/",
+   "source": "steele",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Running a Playwright script on AWS Lambda",
+   "url": "https://www.steele.blue/playwright-on-lambda/",
+   "source": "steele",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Overly Complicate Starting Your Vehicle, Using Home Assistant, an ESP8266, and a Spare Car Fob",
+   "url": "https://www.steele.blue/esp8266-chevy-bolt-fob-homeassistant/",
+   "source": "steele",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -107041,6 +108388,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "What’s new in Svelte: October 2026",
+   "url": "https://svelte.dev/blog/whats-new-in-svelte-october-2026",
+   "source": "svelte",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SvelteKit 3 is here",
+   "url": "https://svelte.dev/blog/sveltekit-3-is-here",
+   "source": "svelte",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new in Svelte: September 2026",
+   "url": "https://svelte.dev/blog/whats-new-in-svelte-september-2026",
+   "source": "svelte",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The SvelteKit 3 Release Candidate is here",
+   "url": "https://svelte.dev/blog/sveltekit-3-release-candidate",
+   "source": "svelte",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new in Svelte: August 2026",
+   "url": "https://svelte.dev/blog/whats-new-in-svelte-august-2026",
+   "source": "svelte",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new in Svelte: July 2026",
+   "url": "https://svelte.dev/blog/whats-new-in-svelte-july-2026",
+   "source": "svelte",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new in Svelte: June 2026",
+   "url": "https://svelte.dev/blog/whats-new-in-svelte-june-2026",
+   "source": "svelte",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new in Svelte: May 2026",
+   "url": "https://svelte.dev/blog/whats-new-in-svelte-may-2026",
+   "source": "svelte",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new in Svelte: April 2026",
+   "url": "https://svelte.dev/blog/whats-new-in-svelte-april-2026",
+   "source": "svelte",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new in Svelte: March 2026",
+   "url": "https://svelte.dev/blog/whats-new-in-svelte-march-2026",
+   "source": "svelte",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new in Svelte: February 2026",
+   "url": "https://svelte.dev/blog/whats-new-in-svelte-february-2026",
+   "source": "svelte",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CVEs affecting the Svelte ecosystem",
+   "url": "https://svelte.dev/blog/cves-affecting-the-svelte-ecosystem",
+   "source": "svelte",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new in Svelte: January 2026",
+   "url": "https://svelte.dev/blog/whats-new-in-svelte-january-2026",
+   "source": "svelte",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new in Svelte: December 2025",
+   "url": "https://svelte.dev/blog/whats-new-in-svelte-december-2025",
+   "source": "svelte",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advent of Svelte is back",
+   "url": "https://svelte.dev/blog/advent-of-svelte-is-back",
+   "source": "svelte",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "The macOS Apps I'm Using",
    "url": "https://switowski.com/blog/my-favorite-macos-apps-2024/",
    "source": "switowski",
@@ -107401,6 +108868,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "The Staff+ Performance Cliff",
+   "url": "https://sylormiller.com/posts/2025/staff-plus-cliff/",
+   "source": "sylormiller",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Paradigm Shifters Part 2: Articles, Talks, and Books that have changed how I think about software engineering",
+   "url": "https://sylormiller.com/posts/2025/my-fave-articles-part-2/",
+   "source": "sylormiller",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Paradigm Shifters Part 1: Articles, Talks, and Books that have changed how I think about software engineering",
+   "url": "https://sylormiller.com/posts/2025/my-fave-articles-part-1/",
+   "source": "sylormiller",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Core Web Vitals hype train",
+   "url": "https://sylormiller.com/posts/2020/core-web-vitals/",
+   "source": "sylormiller",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bullet journalling for software engineers<br/> <span>(and other not-necessarily-artistic people)</span>",
+   "url": "https://sylormiller.com/posts/2020/bullet-journaling/",
+   "source": "sylormiller",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Staffeng.com interview",
+   "url": "https://sylormiller.com/posts/2020/staffeng/",
+   "source": "sylormiller",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Git Visualizer - Part 1 - Setup",
+   "url": "https://sylormiller.com/posts/2018/part-1-setup/",
+   "source": "sylormiller",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Git Visualizer - Getting (re)Started",
+   "url": "https://sylormiller.com/posts/2018/getting-restarted/",
+   "source": "sylormiller",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Endometriosis and My Long and Winding Road to Tech",
+   "url": "https://sylormiller.com/posts/2018/endo-and-my-long-and-winding-road/",
+   "source": "sylormiller",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An Anchor in the Storm",
+   "url": "https://sylormiller.com/posts/2018/an-anchor-in-the-storm/",
+   "source": "sylormiller",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "HTTPd (CVE-2026-119618): Detecting heap corruption and RCE in Apache HTTP Server mod_http2",
    "url": "https://webflow.sysdig.com/blog/httpd-cve-2026-119618-detecting-heap-corruption-and-rce-in-apache-http-server-mod-http2",
    "source": "sysdig",
@@ -107601,6 +109148,286 @@
    "metric": "feed rank"
   },
   {
+   "title": "能夠持續熱愛生活，就是不遺憾的老後",
+   "url": "https://taiwan.chtsai.org/2026/11/10/bu_yihan_de_laohou/",
+   "source": "taiwanchtsai",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "一張 TPASS 說走就走！新化半日遊，高雄往返時間全紀錄",
+   "url": "https://taiwan.chtsai.org/2026/11/08/xinhua_banri_you/",
+   "source": "taiwanchtsai",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "愛與幽默：台南最美的風景，都在公車上",
+   "url": "https://taiwan.chtsai.org/2026/10/27/ai_yu_youmo/",
+   "source": "taiwanchtsai",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "台南車站新站是台南人的客廳",
+   "url": "https://taiwan.chtsai.org/2026/10/26/tainan_chezhan/",
+   "source": "taiwanchtsai",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "善意的接力：當我們一起跨越障礙",
+   "url": "https://taiwan.chtsai.org/2026/10/23/shanyi_de_jieli/",
+   "source": "taiwanchtsai",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "當我們懂得欣賞時，庇護我們成長的時代已漸漸遠去",
+   "url": "https://taiwan.chtsai.org/2026/10/20/dang_women_dongde_xinshang_shi/",
+   "source": "taiwanchtsai",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "在公車上，遇見彼此",
+   "url": "https://taiwan.chtsai.org/2026/10/16/zai_gongche_shang/",
+   "source": "taiwanchtsai",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "老後的優雅",
+   "url": "https://taiwan.chtsai.org/2026/10/16/laohou_de_youya/",
+   "source": "taiwanchtsai",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "從口罩到社群：我們看到的世界，往往是自己內心的投射",
+   "url": "https://taiwan.chtsai.org/2026/10/14/cong_kouzhao_dao_shequn/",
+   "source": "taiwanchtsai",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "格子裡的家國：國慶日走訪高雄果貿社區",
+   "url": "https://taiwan.chtsai.org/2026/10/10/gezi_li_de_jiaguo/",
+   "source": "taiwanchtsai",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gemini and AI Mode Fetch with Google and Google-Lens User-Agents",
+   "url": "https://tamethebots.com/blog-n-bits/google-and-google-lens-user-agents",
+   "source": "tamethebots",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google doesn't cut off rendering after 5 seconds, but I understand why you might think it does.",
+   "url": "https://tamethebots.com/blog-n-bits/the-5-second-google-render-limit-myth",
+   "source": "tamethebots",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Similar are Google and Bing's AI Results for a site?",
+   "url": "https://tamethebots.com/blog-n-bits/how-similar-are-google-vs-bing-ai-results",
+   "source": "tamethebots",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I Spoke at Tech SEO North",
+   "url": "https://tamethebots.com/blog-n-bits/spoke-tech-seo-north",
+   "source": "tamethebots",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shuffling Rabbits: How LLMs handle out of order HTML streaming in Next.js",
+   "url": "https://tamethebots.com/blog-n-bits/out-of-order-streaming-and-llms",
+   "source": "tamethebots",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2 MB is a lot of HTML",
+   "url": "https://tamethebots.com/blog-n-bits/2mb-of-html",
+   "source": "tamethebots",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Noindex No Longer Means Not Rendered",
+   "url": "https://tamethebots.com/blog-n-bits/noindex-does-not-mean-not-rendered",
+   "source": "tamethebots",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Vitals, World Wide.",
+   "url": "https://tamethebots.com/blog-n-bits/web-vitals-world-wide",
+   "source": "tamethebots",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "View the Original Version of A Wayback Machine Page",
+   "url": "https://tamethebots.com/blog-n-bits/view-original-wayback-version",
+   "source": "tamethebots",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Geo-Visualisation of Googlebot Crawling",
+   "url": "https://tamethebots.com/blog-n-bits/googlebot-locations-visualisation",
+   "source": "tamethebots",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don't Dream E-E-A-T, Be E-E-A-T.",
+   "url": "https://tamethebots.com/blog-n-bits/dont-dream-eeat-be-eeat",
+   "source": "tamethebots",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "LCP & FCP on Single Page Application on Soft Navigations",
+   "url": "https://tamethebots.com/blog-n-bits/lcp-fcp-soft-navigations",
+   "source": "tamethebots",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "75th Percentile isn't the Only Measure for Core Web Vitals",
+   "url": "https://tamethebots.com/blog-n-bits/cwv-75-percentile-not-the-only-measure",
+   "source": "tamethebots",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HREFLANG Tools",
+   "url": "https://tamethebots.com/blog-n-bits/hreflang-tools",
+   "source": "tamethebots",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Does indexifembedded Work as Expected?",
+   "url": "https://tamethebots.com/blog-n-bits/does-indexifembedded-work",
+   "source": "tamethebots",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HI Lucas,",
+   "url": "https://tangledweb.xyz/hi-lucas-9150852ff4df?source=rss----36d7830f6552---4",
+   "source": "tangledweb",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting the Wrong, Right?",
+   "url": "https://tangledweb.xyz/hi-lucas-673167805f55?source=rss----36d7830f6552---4",
+   "source": "tangledweb",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS px vs Actual Pixels",
+   "url": "https://tangledweb.xyz/hi-ben-thank-you-for-the-question-and-its-a-good-one-so-i-should-probably-edit-the-article-to-27691a6377a3?source=rss----36d7830f6552---4",
+   "source": "tangledweb",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Notes Regarding Lines and Zooming",
+   "url": "https://tangledweb.xyz/hi-elise-a-great-article-4f09455a5207?source=rss----36d7830f6552---4",
+   "source": "tangledweb",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Regarding Black Text",
+   "url": "https://tangledweb.xyz/hi-kevin-im-going-to-add-example-images-to-this-in-a-moment-defe0f96c652?source=rss----36d7830f6552---4",
+   "source": "tangledweb",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Small Text is Medium’s Large Fail",
+   "url": "https://tangledweb.xyz/small-text-is-mediums-large-fail-b39589f5fae0?source=rss----36d7830f6552---4",
+   "source": "tangledweb",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Actual Accessibility vs Law",
+   "url": "https://tangledweb.xyz/hi-simon-nice-article-thank-you-for-the-kind-words-2cf04fa5ef03?source=rss----36d7830f6552---4",
+   "source": "tangledweb",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dark Beauty is in the Eye of the Beholder…",
+   "url": "https://tangledweb.xyz/black-beauty-is-in-the-eye-of-the-beholder-bacf85103438?source=rss----36d7830f6552---4",
+   "source": "tangledweb",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Examining Colorblindness",
+   "url": "https://tangledweb.xyz/hello-eric-i-found-your-article-very-interesting-as-i-am-researching-color-vision-for-9d44a2354caf?source=rss----36d7830f6552---4",
+   "source": "tangledweb",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reply to Kevin: Color Genome Thread",
+   "url": "https://tangledweb.xyz/hi-kevin-thank-you-for-the-reply-a0b6b375f084?source=rss----36d7830f6552---4",
+   "source": "tangledweb",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Enabling Apache ECharts in React for Data Visualization",
    "url": "https://www.taniarascia.com/apache-echarts-react/",
    "source": "taniarascia",
@@ -107716,6 +109543,126 @@
    "title": "Memories of Josh",
    "url": "https://www.taniarascia.com/josh/",
    "source": "taniarascia",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://tantek.com/2026/315/t1/indiewebcamp-san-diego-confirmed",
+   "source": "tantek",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://tantek.com/2026/314/t1/happy-international-pi-day",
+   "source": "tantek",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://tantek.com/2026/313/t1/google-search-url-query-nfpr-literal",
+   "source": "tantek",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://tantek.com/2026/312/t1/faschadenfreude-definition",
+   "source": "tantek",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://tantek.com/2026/306/t1/read-thru-shift-chapter-2-silo",
+   "source": "tantek",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://tantek.com/2026/296/t1/finished-reading-wool",
+   "source": "tantek",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://tantek.com/2026/263/t1/slack-pro-free-trial-old-posts-dms",
+   "source": "tantek",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://tantek.com/2026/257/t1/tip-turn-on-dns-over-https-doh",
+   "source": "tantek",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://tantek.com/2026/256/t1/happy-8bitday-ordinal-date-observations",
+   "source": "tantek",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://tantek.com/2026/250/t1/saving-pages-internet-archive-wayback-machine",
+   "source": "tantek",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://tantek.com/2026/249/t1/internet-archive-wayback-machine-search-shortcut",
+   "source": "tantek",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://tantek.com/2026/246/t2/awards-levels-wassup-challenge",
+   "source": "tantek",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://tantek.com/2026/246/t1/add-mapquest-search-shortcut-firefox",
+   "source": "tantek",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://tantek.com/2026/245/t1/page-mediawiki-view-history-tip",
+   "source": "tantek",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://tantek.com/2026/244/t1/september-blogging-challenge-wassup",
+   "source": "tantek",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
