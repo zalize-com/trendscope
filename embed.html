@@ -268,6 +268,23 @@ if (MODE === "watch") {
       || `<li id="err">no matches today</li>`;
   }).catch(() => { document.getElementById("err").textContent = "watch data unavailable"; });
 } else
+if (MODE === "meteors") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/meteors.html";
+  fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const ms = [];
+    for (const [u, it] of Object.entries(d.items)) {
+      const ds = Object.keys(it.days);
+      if (ds.length === 1) ms.push({ u, title: it.title, source: it.source, metric: it.metric, score: it.days[ds[0]][0], date: ds[0] });
+    }
+    ms.sort((a,b) => b.score - a.score);
+    document.getElementById("date").textContent = `one-day wonders · ${ms.length} meteors`;
+    document.getElementById("list").innerHTML = ms.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.u}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · ${e.date}</span></span>
+        <span class="score">${fmt(e.score)}</span></li>`).join("")
+      || `<li id="err">no meteors yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "meteors data unavailable"; });
+} else
 if (MODE === "risers") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/risers.html";
   fetch("docs/api/risers.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
