@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-15T20:01:08.755132+00:00",
+  "generated_at": "2026-11-15T20:19:09.954169+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
-      "items": 193,
-      "unique_urls": 180,
+      "items": 194,
+      "unique_urls": 181,
       "median_days_on_board": 1,
       "one_day_pct": 93,
       "top_item": {
@@ -15,8 +15,8 @@
       }
     },
     "ask_hn": {
-      "items": 80,
-      "unique_urls": 66,
+      "items": 81,
+      "unique_urls": 67,
       "median_days_on_board": 1,
       "one_day_pct": 79,
       "top_item": {
@@ -27,8 +27,8 @@
       }
     },
     "show_hn": {
-      "items": 49,
-      "unique_urls": 49,
+      "items": 50,
+      "unique_urls": 50,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -74,6 +74,18 @@
         "rank": 1
       }
     },
+    "lobsters": {
+      "items": 34,
+      "unique_urls": 23,
+      "median_days_on_board": 1,
+      "one_day_pct": 57,
+      "top_item": {
+        "title": "Terminal borders that don't cost a cell",
+        "url": "https://www.joshka.net/cell-borders/",
+        "score": 396,
+        "rank": 9
+      }
+    },
     "github_trending": {
       "items": 34,
       "unique_urls": 19,
@@ -96,18 +108,6 @@
         "url": "https://dev.to/francistrdev/how-do-you-truly-stand-out-in-tech-478a",
         "score": 202,
         "rank": 1
-      }
-    },
-    "lobsters": {
-      "items": 32,
-      "unique_urls": 22,
-      "median_days_on_board": 1,
-      "one_day_pct": 59,
-      "top_item": {
-        "title": "Terminal borders that don't cost a cell",
-        "url": "https://www.joshka.net/cell-borders/",
-        "score": 396,
-        "rank": 9
       }
     },
     "reddit": {
@@ -147,8 +147,8 @@
       }
     },
     "techmeme": {
-      "items": 26,
-      "unique_urls": 26,
+      "items": 27,
+      "unique_urls": 27,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -264,6 +264,18 @@
         "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
         "score": 568,
         "rank": 7
+      }
+    },
+    "infoq": {
+      "items": 16,
+      "unique_urls": 16,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Anthropic Outlines Its AI-Powered Code Review Process for Claude Code",
+        "url": "https://www.infoq.com/news/2026/11/claude-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "score": 15,
+        "rank": 1
       }
     },
     "gargron": {
@@ -394,18 +406,6 @@
       "top_item": {
         "title": "Dual JWT Authentication: Security, Redis, and Trade-Offs",
         "url": "https://www.jstools.space/blog/dual-jwt-authentication/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "infoq": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Anthropic Outlines Its AI-Powered Code Review Process for Claude Code",
-        "url": "https://www.infoq.com/news/2026/11/claude-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
         "score": 15,
         "rank": 1
       }
@@ -9746,6 +9746,174 @@
         "rank": 1
       }
     },
+    "rpython": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Showcase Thread",
+        "url": "https://www.reddit.com/r/Python/comments/1xntm2j/showcase_thread/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "scripting": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "",
+        "url": "http://scripting.com/2026/11/15.html#a143649",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "albertodebortoli": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Authentication and Authorization: A Comprehensive Guide",
+        "url": "https://albertodebortoli.com/2026/09/15/authentication-and-authorization-a-comprehensive-guide/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "apiaxios": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Bessent questions did Nvidia \"goose\" earnings with suspect China chip sales",
+        "url": "https://www.axios.com/2026/11/15/bessent-nvidia-earnings-china-chip-sales-ceo",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "atp": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "717: Two Hot Streaks",
+        "url": "https://atp.fm/717",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogdanlew": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "My life before & after automated testing",
+        "url": "https://blog.danlew.net/2026/09/15/my-life-before-after-automated-testing/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "chrynan": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "UseCases: Injectable Functions",
+        "url": "https://chrynan.codes/usecases-injectable-functions/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "publicobject": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Mitigating CVE-2026-111943 in OkHttp",
+        "url": "https://publicobject.com/2026/10/20/mitigating-bad-roots-in-okhttp/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "readwrite": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "DC online casino and sweepstakes ban bill gets Nov. 18 committee vote before Dec. 15 cutoff",
+        "url": "https://readwrite.com/dc-online-casino-and-sweepstakes-ban-bill-gets-nov-18-committee-vote-before-dec-15-cutoff/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "saket": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Writing interactive screenshot tests in Compose UI with Touch Robot",
+        "url": "https://saket.me/touch-robot/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "softwareengineeringdaily": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Fraud Prevention in the Age of AI Agents",
+        "url": "https://softwareengineeringdaily.com/podcasts/fraud-prevention-in-the-age-of-ai-agents/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "swiftbysundell": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Interesting ways of using Swift optionals",
+        "url": "https://www.swiftbysundell.com/articles/interesting-ways-of-using-swift-optionals",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "swiftrocks": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Reckless vibe-coding is on the rise in tech companies and needs to stop",
+        "url": "https://swiftrocks.com/reckless-vibe-coding-is-on-the-rise-in-tech-companies-and-needs-to-be-stopped",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "thewomenintechshow": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Microsoft Build: Responsible AI (Sarah Bird)",
+        "url": "https://thewomenintechshow.com/2023/08/01/microsoft-build-responsible-ai-sarah-bird/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -10106,6 +10274,18 @@
         "rank": 1
       }
     },
+    "patedcdn": {
+      "items": 13,
+      "unique_urls": 13,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Sunday Pick: Do all my friends secretly hate me? | from Corner Piece",
+        "url": "https://audiocollective.ted.com/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "baeldung": {
       "items": 12,
       "unique_urls": 12,
@@ -10452,18 +10632,6 @@
         "url": "https://novoda.com/blog/2023/11/16/novoda-is-a-b-corp/",
         "score": 12,
         "rank": 1
-      }
-    },
-    "zwischenzugs": {
-      "items": 11,
-      "unique_urls": 10,
-      "median_days_on_board": 1,
-      "one_day_pct": 90,
-      "top_item": {
-        "title": "A Family Tree of Software Job Titles",
-        "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
-        "score": 265,
-        "rank": 6
       }
     },
     "blogrustlang": {
@@ -16922,6 +17090,54 @@
         "rank": 1
       }
     },
+    "augmentedcode": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Swift 6 suitable notification observers in iOS",
+        "url": "https://augmentedcode.io/2024/11/18/swift-6-friendlier-notification-observers/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "proandroiddev": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Kotlin Multiplatform Networking with Native Android and iOS ViewModels",
+        "url": "https://proandroiddev.com/kmp-networking-native-viewmodels-cf6fb357b012?source=rss----c72404660798---4",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "thenextweb": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Megaspeed says Alice Huang left in August 2025",
+        "url": "https://thenextweb.com/news/megaspeed-alice-huang-left-august-2025-denies-claims",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "uxdesign": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Decision theatre or decision design?",
+        "url": "https://uxdesign.cc/decision-theatre-or-decision-design-f1604f178685?source=rss----138adf9c44c---4",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "hackaday": {
       "items": 9,
       "unique_urls": 9,
@@ -17088,6 +17304,18 @@
         "url": "https://developer.mozilla.org/docs/Mozilla/Firefox/Releases/160",
         "score": 15,
         "rank": 1
+      }
+    },
+    "zwischenzugs": {
+      "items": 9,
+      "unique_urls": 9,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "What I Learned Building a RAG Server on my Home Server",
+        "url": "https://zwischenzugs.com/2026/11/02/what-i-learned-building-a-rag-server-in-my-spare-room/",
+        "score": 9,
+        "rank": 2
       }
     },
     "blogreverberate": {
@@ -17326,6 +17554,18 @@
       "top_item": {
         "title": "How to Set Up Dokploy Self-Hosted PaaS on Debian 13",
         "url": "https://www.rosehosting.com/blog/how-to-set-up-dokploy-self-hosted-paas-on-debian-13/",
+        "score": 8,
+        "rank": 1
+      }
+    },
+    "okkotlin": {
+      "items": 8,
+      "unique_urls": 8,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Safely accessing lateinit variables",
+        "url": "https://okkotlin.com/lateinits/",
         "score": 8,
         "rank": 1
       }

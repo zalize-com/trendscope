@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T20:01:07.514015+00:00",
+ "generated_at": "2026-11-15T20:19:08.198071+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 1857,
+ "total": 1878,
  "domains": [
   {
    "hostname": "blog.google",
@@ -87,12 +87,13 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 2,
-   "items": 64,
+   "items": 79,
    "sources": [
     "hackernews",
     "k8s",
     "reddit",
     "rprogramming",
+    "rpython",
     "rwebdev"
    ],
    "top_hit": {
@@ -295,6 +296,23 @@
    }
   },
   {
+   "hostname": "zwischenzugs.com",
+   "days_on_board": 2,
+   "items": 13,
+   "sources": [
+    "hackernews",
+    "lobsters",
+    "zwischenzugs"
+   ],
+   "top_hit": {
+    "title": "A family tree of software job titles",
+    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+    "score": 265,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "aphyr.com",
    "days_on_board": 2,
    "items": 13,
@@ -308,22 +326,6 @@
     "score": 445,
     "metric": "points",
     "date": "2026-11-09"
-   }
-  },
-  {
-   "hostname": "zwischenzugs.com",
-   "days_on_board": 2,
-   "items": 12,
-   "sources": [
-    "hackernews",
-    "zwischenzugs"
-   ],
-   "top_hit": {
-    "title": "A family tree of software job titles",
-    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
-    "score": 265,
-    "metric": "points",
-    "date": "2026-11-15"
    }
   },
   {
@@ -378,7 +380,7 @@
   {
    "hostname": "nytimes.com",
    "days_on_board": 2,
-   "items": 9,
+   "items": 10,
    "sources": [
     "bostocks",
     "daringfireball",
