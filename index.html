@@ -473,6 +473,20 @@ function paint() {
     const n = Object.values(SNAP.items || {}).flat().filter(i => !seen.has(i.url)).length;
     if (n) fresh = ` · <b style="color:var(--orange)">${n} fresh</b> <span style="color:var(--dim)">(${Math.round(100*n/total)}% new)</span>`;
   }
+  // new-since-your-last-visit chip (today's board only)
+  const urlsNow = new Set(Object.values(SNAP.items || {}).flat().map(i => i.url));
+  if (isToday) {
+    try {
+      const prev = JSON.parse(localStorage.getItem("ts-seen") || "null");
+      if (prev && prev.urls) {
+        const nNew = [...urlsNow].filter(u => !prev.urls.includes(u)).length;
+        const hrs = Math.round((Date.now() - prev.ts) / 36e5);
+        if (nNew && hrs >= 1)
+          fresh += ` · <span title="vs the board you saw on your last visit">${nNew} new since your last visit ${hrs >= 24 ? Math.round(hrs/24)+"d" : hrs+"h"} ago</span>`;
+      }
+      localStorage.setItem("ts-seen", JSON.stringify({ ts: Date.now(), urls: [...urlsNow] }));
+    } catch (e) {}
+  }
   const bsub = document.getElementById("board-sub");
   delete bsub.dataset.cross;
   bsub.innerHTML =
