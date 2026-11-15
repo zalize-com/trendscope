@@ -75,6 +75,7 @@
     <button data-tool="ogimg">og image</button>
     <button data-tool="favicon">favicon pack</button>
     <button data-tool="sitemapgen">sitemap.xml</button>
+    <button data-tool="llmstxt">llms.txt</button>
   </div>
 
   <div class="panel" id="p-qr">
@@ -264,12 +265,24 @@
     <div class="err" id="smg-err"></div>
   </div>
 
+
+  <div class="panel" id="p-llmstxt">
+    <h2>llms.txt generator</h2>
+    <p class="hint">Generate an <a href="https://llmstxt.org/" target="_blank" rel="noopener">llms.txt</a> file so AI crawlers understand your site. One link per line: <code>title | url | note(optional)</code>.</p>
+    <input id="lt-name" placeholder="site / project name" style="width:100%;padding:7px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg);margin-bottom:6px">
+    <textarea id="lt-desc" placeholder="one-paragraph description of what the site is" style="width:100%;height:44px"></textarea>
+    <textarea id="lt-links" placeholder="docs | https://example.com/docs | API reference&#10;blog | https://example.com/blog" style="width:100%;height:90px;margin-top:6px"></textarea>
+    <div class="out" id="lt-out" style="white-space:pre;overflow-x:auto"></div>
+    <button class="copy" id="lt-copy">copy llms.txt</button>
+    <div class="err" id="lt-err"></div>
+  </div>
+
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots","spage","feed","badge","ogimg","favicon","sitemapgen"];
+const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots","spage","feed","badge","ogimg","favicon","sitemapgen","llmstxt"];
 
 // ---- status-page checker ----
 function spreset(u){ const i=document.getElementById("sp-in"); if(i){ i.value=u; i.dispatchEvent(new Event("input")); } return false; }
@@ -891,6 +904,31 @@ aibots();
   $("smg-in").addEventListener("input", go);
   $("smg-copy").onclick = () => navigator.clipboard?.writeText($("smg-out").textContent).then(() => { $("smg-copy").textContent = "copied"; setTimeout(() => $("smg-copy").textContent = "copy xml", 1200); });
   $("smg-in").value = "https://zalize-com.github.io/trendscope/\nhttps://zalize-com.github.io/trendscope/index.html, 2026-11-15, 0.8\nnot-a-url";
+  go();
+})();
+
+/* ---------- llms.txt generator ---------- */
+(function () {
+  function go() {
+    const name = $("lt-name").value.trim(), desc = $("lt-desc").value.trim();
+    const lines = $("lt-links").value.split("\n").map(l => l.trim()).filter(Boolean);
+    if (!name && !desc && !lines.length) { $("lt-out").textContent = ""; $("lt-err").textContent = ""; return; }
+    const bad = [], links = [];
+    for (const l of lines) {
+      const [t, u, note] = l.split("|").map(x => x.trim());
+      if (!t || !u) { bad.push(l.slice(0, 40)); continue; }
+      links.push(`- [${t}](${u})${note ? ": " + note : ""}`);
+    }
+    let out = `# ${name || "Site name"}\n\n` +
+      `> ${desc || "One-paragraph description."}\n\n`;
+    if (links.length) out += `## Links\n\n${links.join("\n")}\n`;
+    if (bad.length) $("lt-err").textContent = "⚠ skipped lines: " + bad.join(" · "); else $("lt-err").textContent = "";
+    $("lt-out").textContent = out;
+  }
+  for (const id of ["lt-name","lt-desc","lt-links"]) $(id).addEventListener("input", go);
+  $("lt-copy").onclick = () => navigator.clipboard?.writeText($("lt-out").textContent).then(() => { $("lt-copy").textContent = "copied"; setTimeout(() => $("lt-copy").textContent = "copy llms.txt", 1200); });
+  $("lt-name").value = "trendscope"; $("lt-desc").value = "Daily cross-source trend snapshots for builders.";
+  $("lt-links").value = "API | https://zalize-com.github.io/trendscope/api.html | 16 JSON endpoints\nllms.txt | https://zalize-com.github.io/trendscope/llms.txt";
   go();
 })();
 
