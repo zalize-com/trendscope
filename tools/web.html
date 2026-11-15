@@ -72,6 +72,7 @@
     <button data-tool="spage">status page</button>
     <button data-tool="feed">feed finder</button>
     <button data-tool="badge">badge builder</button>
+    <button data-tool="ogimg">og image</button>
   </div>
 
   <div class="panel" id="p-qr">
@@ -229,6 +230,16 @@
     <div id="bd-out" style="margin-top:10px"></div>
   </div>
 
+  <div class="panel" id="p-ogimg">
+    <h2>OG image sizer</h2>
+    <p class="hint">Drop or pick an image — center-crop to 1200×630 (og:image standard), download PNG. Everything stays in your browser.</p>
+    <input type="file" id="ogimg-file" accept="image/*" style="font-size:13px">
+    <div id="ogimg-drop" style="margin:10px 0;padding:26px;border:2px dashed var(--border);border-radius:10px;text-align:center;color:var(--dim);font-size:13px">…or drag an image here</div>
+    <canvas id="ogimg-cv" width="1200" height="630" style="max-width:100%;border:1px solid var(--border);border-radius:8px;display:none"></canvas>
+    <div style="margin-top:8px"><button id="ogimg-dl" style="display:none">download og.png</button> <span class="hint" id="ogimg-info"></span></div>
+  </div>
+
+<footer>
 <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
@@ -236,7 +247,7 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots","spage","feed","badge"];
+const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots","spage","feed","badge","ogimg"];
 
 // ---- status-page checker ----
 function spreset(u){ const i=document.getElementById("sp-in"); if(i){ i.value=u; i.dispatchEvent(new Event("input")); } return false; }
@@ -736,6 +747,35 @@ aibots();
   ids.forEach(id => { const el=$(id); el.oninput = go; el.onchange = go; });
   go();
 })();
+/* ---------- og image sizer ---------- */
+(function(){
+  const cv = $("ogimg-cv"), ctx = cv.getContext("2d");
+  function draw(img){
+    const sw = img.width, sh = img.height, TW = 1200, TH = 630;
+    const scale = Math.max(TW/sw, TH/sh);
+    const dw = sw*scale, dh = sh*scale;
+    ctx.fillStyle = "#0d1117"; ctx.fillRect(0,0,TW,TH);
+    ctx.drawImage(img, (TW-dw)/2, (TH-dh)/2, dw, dh);
+    cv.style.display = "block"; $("ogimg-dl").style.display = "inline-block";
+    $("ogimg-info").textContent = `${sw}×${sh} → 1200×630 (center crop)`;
+  }
+  function load(file){
+    if (!file || !file.type.startsWith("image/")) return;
+    const img = new Image();
+    img.onload = () => { draw(img); URL.revokeObjectURL(img.src); };
+    img.src = URL.createObjectURL(file);
+  }
+  $("ogimg-file").addEventListener("change", e => load(e.target.files[0]));
+  const dz = $("ogimg-drop");
+  ["dragover","dragenter"].forEach(ev=>dz.addEventListener(ev,e=>{e.preventDefault();dz.style.borderColor="var(--accent)";}));
+  ["dragleave","drop"].forEach(ev=>dz.addEventListener(ev,e=>{e.preventDefault();dz.style.borderColor="var(--border)";}));
+  dz.addEventListener("drop", e => load(e.dataTransfer.files[0]));
+  $("ogimg-dl").onclick = () => {
+    const a = document.createElement("a");
+    a.href = cv.toDataURL("image/png"); a.download = "og.png"; a.click();
+  };
+})();
+
 </script>
 </body>
 </html>
