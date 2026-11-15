@@ -72,8 +72,8 @@ def main():
     deduped = []
     for th in themes:
         fresh = [t for t in th["threads"] if t["url"] not in seen]
-        if not fresh:
-            continue
+        if len(fresh) < 2:
+            continue  # a theme needs ≥2 visible threads
         th["threads"] = fresh
         deduped.append(th)
         seen.update(t["url"] for t in fresh)

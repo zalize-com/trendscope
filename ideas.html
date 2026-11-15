@@ -144,7 +144,7 @@ const themes = [...tokMap.entries()]
 const seen = new Set();
 const topThemes = themes.filter(th => {
   const fresh = [...th.urls].filter(u => !seen.has(u));
-  if (!fresh.length) return false;
+  if (fresh.length < 2) return false; // a "theme" needs ≥2 visible threads
   th.urls = new Set(fresh);
   return true;
 }).slice(0, 8);
