@@ -203,6 +203,16 @@ if (MODE === "health") {
     }).join("") || `<li id="err">no source data</li>`;
   }).catch(() => { document.getElementById("err").textContent = "sources data unavailable"; });
 } else
+if (MODE === "streaks") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/oldest.html";
+  fetch("docs/api/streaks.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const rows = (d.active || []).slice(0, N);
+    document.getElementById("date").textContent = `longest active streaks · ${d.active_count} streaking · ${d.days_tracked}d tracked`;
+    document.getElementById("list").innerHTML = rows.map((it, i) =>
+      `<li><span class="rank">${i+1}</span><span><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a><span class="src">${it.source} · top #${it.top_rank} · ${it.top_score} ${it.metric}</span></span><span class="score"><b style="color:var(--orange)">🔥${it.consecutive_days}d</b></span></li>`
+    ).join("") || `<li id="err">no active streaks</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "streaks data unavailable"; });
+} else
 if (MODE === "heatmap") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/heatmap.html";
   fetch("docs/api/weekday.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
