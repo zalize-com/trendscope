@@ -100,6 +100,7 @@ A daily cross-source snapshot of developer attention:
 | Stratechery | tech strategy analysis | `stratechery.com/feed/` |
 | Baeldung | Java/Spring/backend tutorials | `feeds.feedburner.com/Baeldung` |
 | Troy Hunt | web security and HaveIBeenPwned | `troyhunt.com/rss/` |
+| Tonsky | UI design, fonts and Clojure | `tonsky.me/atom.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

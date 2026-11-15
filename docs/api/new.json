@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:01:32.848219+00:00",
+ "generated_at": "2026-11-15T16:02:42.360546+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1177,
- "new_items": 1051,
+ "total_items": 1184,
+ "new_items": 1058,
  "by_source": {
   "producthunt": 45,
   "show_hn": 30,
@@ -49,10 +49,10 @@
   "simonw": 15,
   "soblog": 15,
   "swizec": 15,
+  "theverge": 15,
   "troyhunt": 15,
   "vercel": 15,
   "beesbuzz": 14,
-  "theverge": 14,
   "aphyr": 12,
   "baeldung": 12,
   "airbnb": 10,
@@ -75,6 +75,7 @@
   "susam": 9,
   "hackaday": 8,
   "slack_eng": 8,
+  "tonsky": 6,
   "bendersky": 5,
   "thisweek": 4,
   "github_trending": 3,
@@ -8059,6 +8060,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Rachelle Hampton won’t admit how long she spent charting the use of ‘murmur’ in Twilight",
+   "url": "https://www.theverge.com/entertainment/1033895/rachelle-hampton-normal-gossip-interview",
+   "source": "theverge",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
    "title": "Magic: The Gathering is getting a Netflix animated series. For real this time.",
    "url": "https://www.theverge.com/entertainment/1033909/magic-the-gathering-netflix-series",
    "source": "theverge",
@@ -8167,6 +8176,54 @@
    "url": "https://this-week-in-rust.org/blog/2026/10/21/this-week-in-rust-674/",
    "source": "thisweek",
    "rank": 4,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Logo: Squawkbox",
+   "url": "https://tonsky.me/design/#2026-07-squawkbox",
+   "source": "tonsky",
+   "rank": 1,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Every Frame Perfect",
+   "url": "https://tonsky.me/blog/every-frame-perfect/",
+   "source": "tonsky",
+   "rank": 2,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Claude is an Electron App because we’ve lost native",
+   "url": "https://tonsky.me/blog/fall-of-native/",
+   "source": "tonsky",
+   "rank": 3,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Podcast: На Маке нет никаких шкафов @ Думаем дальше",
+   "url": "https://tonsky.me/talks/#2026-01-15",
+   "source": "tonsky",
+   "rank": 4,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "It’s hard to justify Tahoe icons",
+   "url": "https://tonsky.me/blog/tahoe-icons/",
+   "source": "tonsky",
+   "rank": 5,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Statistics made simple",
+   "url": "https://tonsky.me/blog/clj-simple-stats/",
+   "source": "tonsky",
+   "rank": 6,
    "score": 1,
    "metric": "feed rank"
   },
