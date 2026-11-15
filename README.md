@@ -625,3 +625,23 @@ root for self-hosted mirrors.
 | Made by Mike | CSS dev | `www.madebymike.com.au/feed.xml` |
 | MathJax | math rendering | `www.mathjax.org/feed.xml` |
 | matuzo | Manuel Matuzovic a11y | `www.matuzo.at/feed_all.xml` |
+| Maxi Ferreira | frontend dev | `www.maxiferreira.com/rss.xml` |
+| Max Kohler | design dev | `www.maxkohler.com/feed.xml` |
+| Mayank | design engineer | `www.mayank.co/blog/rss.xml` |
+| Mehul Kar | Ember dev | `www.mehulkar.com/feed.xml` |
+| Michal Spacek | security trainer | `www.michalspacek.com/exports/articles` |
+| MS Research | Microsoft Research | `www.microsoft.com/en-us/research/feed` |
+| Mike Aparicio | design systems | `www.mikeaparicio.com/feed.xml` |
+| Firefox Nightly | release notes | `www.mozilla.org/en-US/firefox/nightly/notes/feed/` |
+| naildrivin5 | Dave Copeland | `www.naildrivin5.com/atom.xml` |
+| Nic Chan | a11y frontend | `www.nicchan.me/feed.xml` |
+| NN/g | UX research | `www.nngroup.com/feed/rss/` |
+| Owen Young | Chinese indie dev | `www.owenyoung.com/atom.xml` |
+| Paige Niedringhaus | React dev | `www.paigeniedringhaus.com/rss.xml` |
+| Paul Foster | web designer | `www.paulfosterdesign.co.uk/feed.xml` |
+| Philip Renich | dev notes | `www.philiprenich.com/atom.xml` |
+| phpied | Stoyan Stefanov | `www.phpied.com/feed/` |
+| Quippd | dev notes | `www.quippd.com/feed.xml` |
+| Randall Degges | security dev | `www.rdegges.com/feed.xml` |
+| r/ML | Reddit MachineLearning | `www.reddit.com/r/MachineLearning/.rss` |
+| Robin Osborne | dev notes | `www.robinosborne.co.uk/feed/` |

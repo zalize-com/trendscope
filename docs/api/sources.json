@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-15T19:11:27.905400+00:00",
+  "generated_at": "2026-11-15T19:14:44.074768+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
-      "items": 190,
-      "unique_urls": 176,
+      "items": 191,
+      "unique_urls": 177,
       "median_days_on_board": 1,
       "one_day_pct": 93,
       "top_item": {
@@ -135,8 +135,8 @@
       }
     },
     "techmeme": {
-      "items": 24,
-      "unique_urls": 24,
+      "items": 25,
+      "unique_urls": 25,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -298,6 +298,18 @@
       "top_item": {
         "title": "Trying to understand that compute multiplier graph",
         "url": "https://www.lesswrong.com/posts/WKt2mqJrsFuMiszed/trying-to-understand-that-compute-multiplier-graph",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "kooslooijesteijn": {
+      "items": 16,
+      "unique_urls": 16,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "You are the best artist",
+        "url": "https://www.kooslooijesteijn.net/blog/you-are-the-best-artist",
         "score": 15,
         "rank": 1
       }
@@ -4850,14 +4862,14 @@
         "rank": 1
       }
     },
-    "12daysofweb": {
+    "mayank": {
       "items": 15,
       "unique_urls": 15,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
-        "title": "CSS margin-trim and line height units",
-        "url": "https://12daysofweb.dev/2024/css-margin-trim-line-height-units/",
+        "title": "CSS light-dark()",
+        "url": "https://12daysofweb.dev/2024/css-light-dark/",
         "score": 15,
         "rank": 1
       }
@@ -8306,18 +8318,6 @@
         "rank": 1
       }
     },
-    "kooslooijesteijn": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "You are the best artist",
-        "url": "https://www.kooslooijesteijn.net/blog/you-are-the-best-artist",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "leereamsnyder": {
       "items": 15,
       "unique_urls": 15,
@@ -8374,6 +8374,126 @@
       "top_item": {
         "title": "Getting started with CSS Font Loading",
         "url": "https://www.matuzo.at/blog/getting-started-with-css-font-loading",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "mehulkar": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Echo Valley",
+        "url": "https://mehulkar.com/blog/2025/06/echo-valley?utm_source=rss",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "mikeaparicio": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Closing Loops",
+        "url": "https://mikeaparicio.com/posts/2026-09-04-closing-loops/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "mozilla": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Starting with Firefox 162, Firefox Nightly now supports the inherit() arbitrary substitution...",
+        "url": "https://www.firefox.com/en-US/firefox/162.0a1/releasenotes/#note-792539",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "nicchan": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Wishcessibility",
+        "url": "https://www.nicchan.me/blog/wishcessibility/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "nngroup": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Research-In-The-Loop: How UXR Adapts to Development at AI Speed",
+        "url": "https://www.nngroup.com/articles/research-in-the-loop/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "owenyoung": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "尝试每周四晚上在上海举办 Tab 星期四线下聚会",
+        "url": "https://www.owenyoung.com/tab",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "paigeniedringhaus": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Getting the Most out of Claude Code",
+        "url": "https://www.paigeniedringhaus.com/blog/getting-the-most-out-of-claude-code/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "philiprenich": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "An Event Apart, Seattle",
+        "url": "https://philiprenich.com/blog/2006/09/an-event-apart-seattle/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rdegges": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "I'm Writing Again",
+        "url": "https://rdegges.com/2024/im-writing-again/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "reddit": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "ICLR 2027 Reviews Discussion [D]",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1xo6yzo/iclr_2027_reviews_discussion_d/",
         "score": 15,
         "rank": 1
       }
@@ -8483,6 +8603,18 @@
         "title": "我按照汉语「依字行腔」的规律，重译了朋霍费尔的赞美诗，并且做成了卡拉OK",
         "url": "https://wangpei.net/2026/10/by-gentle-powers/",
         "score": 14,
+        "rank": 1
+      }
+    },
+    "12daysofweb": {
+      "items": 14,
+      "unique_urls": 14,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "CSS margin-trim and line height units",
+        "url": "https://12daysofweb.dev/2024/css-margin-trim-line-height-units/",
+        "score": 15,
         "rank": 1
       }
     },
@@ -14306,6 +14438,90 @@
         "rank": 1
       }
     },
+    "maxiferreira": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Freewriting",
+        "url": "https://www.maxiferreira.com/blog/freewriting/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "microsoft": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Microsoft Research Focus – Edition #98",
+        "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "naildrivin5": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How Can You Be Responsible for Code You Don't Understand, Especially When You Can No Longer Program?",
+        "url": "https://naildrivin5.com/blog/2026/11/11/how-can-you-be-responsible-for-code-you-don-t-understand.html",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "paulfosterdesignco": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Year Review 2025",
+        "url": "https://www.paulfosterdesign.co.uk/blog/year-review-2025/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "phpied": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Debugging download initiator",
+        "url": "https://www.phpied.com/debugging-download-initiator/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "quippd": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Wikipedia Turned on its Volunteers. Now it’s Coming for its Workers.",
+        "url": "https://www.quippd.com/writing/2026/08/04/wikipedia-turned-on-its-volunteers-now-its-coming-for-its-workers.html",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "robinosborneco": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Your AI Robo-Buddy Is Legally Required to Grass You Up",
+        "url": "https://www.robinosborne.co.uk/2026/03/18/your-ai-robo-buddy-is-legally-required-to-grass-you-up/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "hackaday": {
       "items": 9,
       "unique_urls": 9,
@@ -15226,6 +15442,18 @@
       "top_item": {
         "title": "Dotfiles + Claude Code = my tiny config workshop",
         "url": "https://www.hsablonniere.com/dotfiles-claude-code-my-tiny-config-workshop--95d5fr/",
+        "score": 5,
+        "rank": 1
+      }
+    },
+    "michalspacek": {
+      "items": 5,
+      "unique_urls": 5,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Stealing session ids with <code>phpinfo()</code> and how to stop it",
+        "url": "https://www.michalspacek.com/stealing-session-ids-with-phpinfo-and-how-to-stop-it",
         "score": 5,
         "rank": 1
       }

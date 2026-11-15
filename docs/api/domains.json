@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T19:11:26.745347+00:00",
+ "generated_at": "2026-11-15T19:14:42.781748+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 1612,
+ "total": 1634,
  "domains": [
   {
    "hostname": "blog.google",
@@ -190,6 +190,23 @@
     "score": 72,
     "metric": "points",
     "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "reddit.com",
+   "days_on_board": 2,
+   "items": 17,
+   "sources": [
+    "hackernews",
+    "k8s",
+    "reddit"
+   ],
+   "top_hit": {
+    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+    "score": 382,
+    "metric": "points",
+    "date": "2026-11-13"
    }
   },
   {
@@ -731,22 +748,6 @@
     "title": "Nvidia employees petition to bring back Jensen Huang",
     "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
     "score": 811,
-    "metric": "points",
-    "date": "2026-11-13"
-   }
-  },
-  {
-   "hostname": "reddit.com",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews",
-    "k8s"
-   ],
-   "top_hit": {
-    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
-    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
-    "score": 382,
     "metric": "points",
     "date": "2026-11-13"
    }
