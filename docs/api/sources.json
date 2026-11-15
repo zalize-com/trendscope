@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T19:46:39.629773+00:00",
+  "generated_at": "2026-11-15T19:50:10.501438+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -15,10 +15,10 @@
       }
     },
     "ask_hn": {
-      "items": 79,
-      "unique_urls": 65,
+      "items": 80,
+      "unique_urls": 66,
       "median_days_on_board": 1,
-      "one_day_pct": 78,
+      "one_day_pct": 79,
       "top_item": {
         "title": "Ask HN: Microsoft/Azure Outage?",
         "url": "https://news.ycombinator.com/item?id=50471668",
@@ -3938,7 +3938,7 @@
         "rank": 1
       }
     },
-    "taniarascia": {
+    "tania": {
       "items": 15,
       "unique_urls": 15,
       "median_days_on_board": 1,
@@ -9442,6 +9442,66 @@
       "top_item": {
         "title": "Use 'git mv' to record filename case changes in Git",
         "url": "https://oleb.net/2025/git-mv-case-change/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "planetmozilla": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Making pip installations faster with wheel",
+        "url": "https://armenzg.medium.com/making-pip-installations-faster-with-wheel-e41bed129993?source=rss-d4d8839a88ef------2",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "realpython": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Scientific Python: Using SciPy for Optimization",
+        "url": "https://realpython.com/python-scipy-cluster-optimize/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "ruslanspivak": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "5 to 18: Why Your Count Might Be Off by One",
+        "url": "https://ruslanspivak.com/bb07/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "steveyeggeblogspot": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Why I left Google to join Grab",
+        "url": "https://steve-yegge.blogspot.com/2018/01/why-i-left-google-to-join-grab.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "syndicationthedailywtf": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Error'd: The Artist Formerly Known As",
+        "url": "https://thedailywtf.com/articles/the-artist-formerly-known-as",
         "score": 15,
         "rank": 1
       }
@@ -16298,6 +16358,126 @@
         "rank": 1
       }
     },
+    "postmarkapp": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Introducing IP Allowlisting",
+        "url": "https://postmarkapp.com/blog/restrict-email-sending-api-with-ip-allowlisting",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "reactjsnews": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Using Proxies with Redux Types",
+        "url": "https://reactjsnews.com/proxies-with-redux-types",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "regulargeek": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Geek Reading July 17, 2016 #1150",
+        "url": "https://regulargeek.com/2016/07/17/geek-reading-july-17-2016-1150/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "spinatomicobject": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Lessons from a Literary Clock",
+        "url": "https://spin.atomicobject.com/lessons-from-a-literary-clock/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "techfindmypast": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The Technology Behind the Names: How We're Bringing Local War Memorials to Life",
+        "url": "https://tech.findmypast.com/technology-behind-names/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "techolx": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Does it matter how you feed an agent its context?",
+        "url": "https://tech.olx.com/does-it-matter-how-you-feed-an-agent-its-context-ee1519586520?source=rss----761b019b483f---4",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "techsmallimprovements": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Making Our Frontend Unit Tests Much Faster with @swc/jest",
+        "url": "https://tech.small-improvements.com/making-our-frontend-unit-tests-much-faster-with-swc-jest/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "umbrellacisco": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Securing the Modern Workforce: The Evolution of Cisco Umbrella",
+        "url": "https://umbrella.cisco.com/blog/securing-the-modern-workforce-the-evolution-of-cisco-umbrella",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "undocumentedmatlab": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Speeding-up builtin Matlab functions – part 3",
+        "url": "https://undocumentedmatlab.com/articles/speeding-up-builtin-matlab-functions-part-3?utm_source=rss&utm_medium=rss&utm_campaign=speeding-up-builtin-matlab-functions-part-3",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "vinted": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How Vinted Serves Personalised Search Autocomplete",
+        "url": "https://vinted.engineering//2026/04/22/personalized-search-autocomplete/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "hackaday": {
       "items": 9,
       "unique_urls": 9,
@@ -16762,6 +16942,18 @@
       "top_item": {
         "title": "How to A/B test your site without making it slow",
         "url": "https://www.alexrp.co.uk/blog/ab-testing-and-web-performance.html",
+        "score": 7,
+        "rank": 1
+      }
+    },
+    "themodernlifegithub": {
+      "items": 7,
+      "unique_urls": 7,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Running Apache Flink on Amazon Elastic Mapreduce",
+        "url": "http://themodernlife.net/scala/hadoop/hdfs/sclading/flink/streaming/realtime/emr/aws/2016/01/06/running-apache-flink-on-amazon-elastic-mapreduce/",
         "score": 7,
         "rank": 1
       }
@@ -17342,6 +17534,18 @@
         "rank": 1
       }
     },
+    "useyourloaf": {
+      "items": 5,
+      "unique_urls": 5,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "WWDC 2026 Viewing Guide",
+        "url": "https://useyourloaf.com/blog/wwdc-2026-viewing-guide/",
+        "score": 5,
+        "rank": 1
+      }
+    },
     "thisweek": {
       "items": 4,
       "unique_urls": 4,
@@ -17642,6 +17846,18 @@
         "rank": 1
       }
     },
+    "rhettingerwordpress": {
+      "items": 3,
+      "unique_urls": 3,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Python’s super() considered super!",
+        "url": "https://rhettinger.wordpress.com/2011/05/26/super-considered-super/",
+        "score": 3,
+        "rank": 1
+      }
+    },
     "ciechanow": {
       "items": 2,
       "unique_urls": 2,
@@ -17903,6 +18119,18 @@
         "title": "Feed moved",
         "url": "https://www.codedump.info/en/index.xml",
         "score": 1,
+        "rank": 1
+      }
+    },
+    "targetgithub": {
+      "items": 1,
+      "unique_urls": 1,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Modernizing our IT Environment at Target",
+        "url": "https://target.github.io",
+        "score": 15,
         "rank": 1
       }
     }
