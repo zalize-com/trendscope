@@ -57,6 +57,7 @@
   .foot { margin-top: 8px; text-align: right; }
   .foot a { color: var(--dim); font-size: 11px; }
   #err { color: var(--dim); padding: 8px 0; }
+svg.lucide{width:13px;height:13px;vertical-align:-2px}
 </style>
 </head>
 <body>
@@ -65,14 +66,15 @@
     <span class="date" id="date"></span>
   </div>
   <ol id="list"><li id="err">loading…</li></ol>
-  <div class="foot"><a id="embedlink" href="#" style="margin-right:8px">⧉ embed</a><a href="https://zalize-com.github.io/trendscope/" target="_blank" rel="noopener">open dataset · CC0 →</a></div>
+  <div class="foot"><a id="embedlink" href="#" style="margin-right:8px"><i data-lucide="copy"></i> embed</a><a href="https://zalize-com.github.io/trendscope/" target="_blank" rel="noopener">open dataset · CC0 →</a></div>
+<script src="https://unpkg.com/lucide@latest"></script>
 <script>
 document.getElementById("embedlink").onclick = e => {
   e.preventDefault();
   const src = "https://zalize-com.github.io/trendscope/embed.html" + location.search;
   const code = `<iframe src="${src}" width="340" height="420" style="border:0;border-radius:12px" loading="lazy" title="trendscope"></iframe>`;
   navigator.clipboard?.writeText(code).then(() => {
-    e.target.textContent = "✓ copied"; setTimeout(() => e.target.textContent = "⧉ embed", 1400);
+    e.target.textContent = "✓ copied"; setTimeout(() => { e.target.innerHTML = '<i data-lucide="copy"></i> embed'; if(window.lucide)lucide.createIcons(); }, 1400);
   });
 };
 const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B" : n >= 1e6 ? (n/1e6).toFixed(1)+"M"
@@ -130,7 +132,7 @@ if (MODE === "hiring") {
     const h = t.hiring, s = t.seeking;
     const ratio = h && s ? (h.comments / s.comments).toFixed(2) : null;
     document.getElementById("list").innerHTML = `
-      <li><span class="rank">📈</span><span><a href="${h?.url || "#"}" target="_blank" rel="noopener">who is hiring</a><span class="src">ask hn</span></span><span class="score">${h ? fmt(h.comments) : "—"} posts</span></li>
+      <li><span class="rank"><i data-lucide="trending-up"></i></span><span><a href="${h?.url || "#"}" target="_blank" rel="noopener">who is hiring</a><span class="src">ask hn</span></span><span class="score">${h ? fmt(h.comments) : "—"} posts</span></li>
       <li><span class="rank">🙋</span><span><a href="${s?.url || "#"}" target="_blank" rel="noopener">who wants to be hired</a><span class="src">ask hn</span></span><span class="score">${s ? fmt(s.comments) : "—"} posts</span></li>
       ${ratio ? `<li><span class="rank">≈</span><span>positions per seeker</span><span class="score">${ratio}</span></li>` : ""}`;
   }).catch(() => { document.getElementById("err").textContent = "hiring data unavailable"; });
@@ -142,7 +144,7 @@ if (MODE === "discussed") {
     document.getElementById("list").innerHTML = d.discussed.slice(0, N).map((e,i) =>
       `<li><span class="rank">${i+1}</span>
         <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · ${e.date}</span></span>
-        <span class="score">💬 ${fmt(e.comments)}</span></li>`).join("")
+        <span class="score"><i data-lucide="message-square"></i> ${fmt(e.comments)}</span></li>`).join("")
       || `<li id="err">no discussed items yet</li>`;
   }).catch(() => { document.getElementById("err").textContent = "discussed data unavailable"; });
 } else
@@ -209,7 +211,7 @@ if (MODE === "streaks") {
     const rows = (d.active || []).slice(0, N);
     document.getElementById("date").textContent = `longest active streaks · ${d.active_count} streaking · ${d.days_tracked}d tracked`;
     document.getElementById("list").innerHTML = rows.map((it, i) =>
-      `<li><span class="rank">${i+1}</span><span><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a><span class="src">${it.source} · top #${it.top_rank} · ${it.top_score} ${it.metric}</span></span><span class="score"><b style="color:var(--orange)">🔥${it.consecutive_days}d</b></span></li>`
+      `<li><span class="rank">${i+1}</span><span><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a><span class="src">${it.source} · top #${it.top_rank} · ${it.top_score} ${it.metric}</span></span><span class="score"><b style="color:var(--orange)"><i data-lucide="flame"></i>${it.consecutive_days}d</b></span></li>`
     ).join("") || `<li id="err">no active streaks</li>`;
   }).catch(() => { document.getElementById("err").textContent = "streaks data unavailable"; });
 } else
@@ -389,9 +391,9 @@ if (MODE === "stats") {
     document.getElementById("date").textContent = `${st.first_day} → ${st.latest_day}`;
     const srcs = Object.keys(st.sources || {}).length;
     document.getElementById("list").innerHTML = `
-      <li><span class="rank">📊</span><span>rows tracked</span><span class="score">${fmt(st.total_rows)}</span></li>
-      <li><span class="rank">📅</span><span>days · consecutive</span><span class="score">${st.days_tracked} · ${st.consecutive_days}</span></li>
-      <li><span class="rank">🔗</span><span>unique URLs</span><span class="score">${fmt(st.unique_urls)}</span></li>
+      <li><span class="rank"><i data-lucide="bar-chart-3"></i></span><span>rows tracked</span><span class="score">${fmt(st.total_rows)}</span></li>
+      <li><span class="rank"><i data-lucide="calendar"></i></span><span>days · consecutive</span><span class="score">${st.days_tracked} · ${st.consecutive_days}</span></li>
+      <li><span class="rank"><i data-lucide="link"></i></span><span>unique URLs</span><span class="score">${fmt(st.unique_urls)}</span></li>
       <li><span class="rank">📡</span><span>sources</span><span class="score">${srcs}</span></li>
       <li><span class="rank">📰</span><span>items in latest snapshot</span><span class="score">${fmt(st.items_in_latest)}</span></li>`;
   }).catch(() => { document.getElementById("err").textContent = "stats unavailable"; });
@@ -481,6 +483,9 @@ fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
       <span class="score">${fmt(x.it.score)} ${x.it.metric}</span></li>`).join("")
     : `<li id="err">no items match this filter today</li>`;
 }).catch(() => { document.getElementById("err").textContent = "snapshot unavailable"; });
+
+new MutationObserver(()=>{if(window.lucide)lucide.createIcons()}).observe(document.getElementById("list"),{childList:true});
+if(window.lucide)lucide.createIcons();
 </script>
 </body>
 </html>
