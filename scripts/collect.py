@@ -18229,41 +18229,6 @@ def fetch_epicweb(limit=15):
     return out
 
 
-def fetch_erlangsolutions(limit=15):
-    """Erlang Solutions — BEAM consultancy (feed), position-scored."""
-    print("Fetching Erlang Solutions feed...")
-    import xml.etree.ElementTree as ET
-    ATOM = "{http://www.w3.org/2005/Atom}"
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(
-                "https://www.erlang-solutions.com/blog/feed",
-                headers={"User-Agent": "Mozilla/5.0 trendscope"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
-            break
-        except Exception as e:
-            print(f"  [warn] erlangsolutions attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            time.sleep(2 * (attempt + 1))
-    else:
-        return []
-    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
-    entries = entries[:limit]
-    out = []
-    for i, e in enumerate(entries):
-        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
-        link = e.findtext("link") or ""
-        if not link:
-            for l in e.findall(f"{ATOM}link"):
-                if l.get("rel", "alternate") == "alternate":
-                    link = l.get("href", "")
-        out.append(item(
-            "erlangsolutions", title, link.strip() or "https://erlang-solutions.com",
-            len(entries) - i, "feed rank",
-        ))
-    return out
-
-
 def fetch_erlang(limit=15):
     """Erlang — Erlang/OTP official (feed), position-scored."""
     print("Fetching Erlang feed...")
@@ -48715,41 +48680,6 @@ def fetch_samsaffron(limit=15):
     return out
 
 
-def fetch_techadroll(limit=15):
-    """AdRoll Tech — adtech eng (feed), position-scored."""
-    print("Fetching AdRoll Tech feed...")
-    import xml.etree.ElementTree as ET
-    ATOM = "{http://www.w3.org/2005/Atom}"
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(
-                "http://tech.adroll.com/feed.xml",
-                headers={"User-Agent": "Mozilla/5.0 trendscope"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
-            break
-        except Exception as e:
-            print(f"  [warn] techadroll attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            time.sleep(2 * (attempt + 1))
-    else:
-        return []
-    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
-    entries = entries[:limit]
-    out = []
-    for i, e in enumerate(entries):
-        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
-        link = e.findtext("link") or ""
-        if not link:
-            for l in e.findall(f"{ATOM}link"):
-                if l.get("rel", "alternate") == "alternate":
-                    link = l.get("href", "")
-        out.append(item(
-            "techadroll", title, link.strip() or "https://tech.adroll.com",
-            len(entries) - i, "feed rank",
-        ))
-    return out
-
-
 def fetch_techfinn(limit=15):
     """FINN Tech — Norwegian marketplace (feed), position-scored."""
     print("Fetching FINN Tech feed...")
@@ -60232,7 +60162,6 @@ def main():
         "eff": fetch_eff,
         "enkisoftware": fetch_enkisoftware,
         "epicweb": fetch_epicweb,
-        "erlangsolutions": fetch_erlangsolutions,
         "erlang": fetch_erlang,
         "eviltester": fetch_eviltester,
         "furia": fetch_furia,
@@ -61063,7 +60992,6 @@ def main():
         "radek": fetch_radek,
         "rocksdb": fetch_rocksdb,
         "samsaffron": fetch_samsaffron,
-        "techadroll": fetch_techadroll,
         "techfinn": fetch_techfinn,
         "techgc": fetch_techgc,
         "techblogthescore": fetch_techblogthescore,
