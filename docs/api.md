@@ -52,6 +52,11 @@ print(snap["date"], snap["total_items"])
 
 Attribution is welcome but not required — CC0.
 
+### `docs/api/badge.json`
+
+shields.io endpoint badge carrying the dataset size (`items tracked: N rows · Nd`) —
+embed `![trendscope](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zalize-com/trendscope/main/docs/api/badge.json)`.
+
 ### `docs/api/badge-top.json` | `docs/api/badge-sources.json`
 shields.io endpoint badge carrying today's #1 HN story — embed a live
 "top story" widget in any README:
