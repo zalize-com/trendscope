@@ -56,5 +56,17 @@ Then open `index.html` (served from the repo root) and check the tab, rows,
 Δ badges, and the topics classifier (`TOPIC_RULES` in collect.py) still
 bucket sensibly.
 
+## 4. Entity audit (RSS/Atom sources)
+
+Every new feed source has produced one real encoding bug — check before
+calling it done:
+
+- **double-encoded entities** in titles/summaries (`&#8217;`, `&amp;lt;`)
+  — run `html.unescape()` on the raw text, not the stripped text
+- **HTML truncation mid-entity** — unescape first, then `[:200]` slice
+- **junk entries** — feeds may keep deleted/housekeeping items
+  (Product Hunt ships `-deleted-NNNN` slugs); filter by URL pattern
+- **nested CDATA** — `findtext` returns it verbatim; strip tags after
+
 Merging a source automatically re-runs the daily workflow on push, so the
 first snapshot lands within minutes — no need to wait for the cron.
