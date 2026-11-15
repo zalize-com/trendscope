@@ -7,9 +7,11 @@ dataset in about two minutes:
 1. **Fork** → Settings → Pages → Deploy from branch → `main` / root.
 2. **The workflow is already enabled** — it runs daily at 06:05 UTC and
    commits `data/` back to your fork. First run: Actions → "Run workflow".
-3. **Edit the watchlists** in `scripts/collect.py` — `NPM_WATCHLIST`,
-   `PYPI_WATCHLIST`, `CRATES_WATCHLIST`, `HACKERNEWS_QUERIES` and the
-   source list at the bottom decide what you track.
+3. **Edit the watchlists** in `scripts/collect.py` — `NPM_WATCHLIST` and
+   `PYPI_WATCHLIST` pick the packages, `TOPIC_RULES` re-labels the topic
+   buckets, and the source functions at the bottom decide what you track
+   (drop a source = delete its entry; ask_hn's 48h window is in
+   `fetch_ask_hn`).
 
 That's it. No secrets, no pip installs, no servers. Your data accumulates
 in `data/history.csv` — the whole site runs off static files.
