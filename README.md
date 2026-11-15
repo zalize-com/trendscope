@@ -42,6 +42,7 @@ A daily cross-source snapshot of developer attention:
 | Changelog News | dev news + podcasts | `changelog.com/news/feed` |
 | freeCodeCamp News | tutorials + guides | `freecodecamp.org/news/rss/` |
 | Echo JS | JavaScript community news | `echojs.com/rss` |
+| InfoQ | enterprise dev news + talks | `feed.infoq.com` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

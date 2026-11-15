@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T13:11:11.966008+00:00",
+ "generated_at": "2026-11-15T13:18:19.877718+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 212,
+ "total": 213,
  "domains": [
   {
    "hostname": "so.long.thanks.fish",
@@ -611,6 +611,21 @@
    }
   },
   {
+   "hostname": "infoq.com",
+   "days_on_board": 1,
+   "items": 15,
+   "sources": [
+    "infoq"
+   ],
+   "top_hit": {
+    "title": "Anthropic Outlines Its AI-Powered Code Review Process for Claude Code",
+    "url": "https://www.infoq.com/news/2026/11/claude-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "krebsonsecurity.com",
    "days_on_board": 1,
    "items": 10,
@@ -744,21 +759,6 @@
     "score": 11,
     "metric": "feed rank",
     "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "monkeyisland.pages.dev",
-   "days_on_board": 1,
-   "items": 1,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Monkey Island: all 13 versions side by side",
-    "url": "https://monkeyisland.pages.dev/",
-    "score": 410,
-    "metric": "points",
-    "date": "2026-11-14"
    }
   }
  ]

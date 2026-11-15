@@ -10,11 +10,11 @@
 
 ## 这是什么
 
-每天两次，跨 **20 个数据源**抓一份"开发者注意力"快照：Hacker News、
+每天两次，跨 **21 个数据源**抓一份"开发者注意力"快照：Hacker News、
 Show HN、Ask HN、GitHub Trending、Lobste.rs、Dev.to、Product Hunt、
 Techmeme、Slashdot、Ars Technica、The Verge、arXiv、npm、PyPI、
 crates.io、Lemmy (programming.dev)、Krebs on Security、Changelog News、
-freeCodeCamp News、Echo JS。
+freeCodeCamp News、Echo JS、InfoQ。
 
 每条记录带 `url` + `captured_at` 溯源字段和各源原生分数
 （点数 / star / 反应数 / 下载量）——请在同一源内比较，不要跨源比。

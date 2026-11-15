@@ -482,6 +482,34 @@ def fetch_echojs(limit=15):
     return out
 
 
+def fetch_infoq(limit=15):
+    """InfoQ RSS — enterprise dev news/presentations, position-scored."""
+    print("Fetching InfoQ feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://feed.infoq.com/",
+                headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] infoq attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("title", default="") or "").strip()
+        url = (e.findtext("link", default="") or "").strip() or "https://www.infoq.com/"
+        out.append(item(
+            "infoq", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
 def fetch_slashdot(limit=15):
     """Slashdot RSS 1.0 (RDF) — nerd news, position-scored like techmeme."""
     print("Fetching Slashdot feed...")
@@ -749,6 +777,7 @@ def main():
         "changelog": fetch_changelog,
         "freecodecamp": fetch_freecodecamp,
         "echojs": fetch_echojs,
+        "infoq": fetch_infoq,
         "arstechnica": fetch_arstechnica,
         "theverge": fetch_theverge,
         "arxiv": fetch_arxiv,
