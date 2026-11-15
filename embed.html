@@ -163,6 +163,19 @@ if (MODE === "week") {
       : `<li id="err">no items this week</li>`;
   }).catch(() => { document.getElementById("err").textContent = "history data unavailable"; });
 } else
+if (MODE === "stats") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/stats.html";
+  fetch("docs/api/stats.json", {cache:"no-cache"}).then(r => r.json()).then(st => {
+    document.getElementById("date").textContent = `${st.first_day} → ${st.latest_day}`;
+    const srcs = Object.keys(st.sources || {}).length;
+    document.getElementById("list").innerHTML = `
+      <li><span class="rank">📊</span><span>rows tracked</span><span class="score">${fmt(st.total_rows)}</span></li>
+      <li><span class="rank">📅</span><span>days · consecutive</span><span class="score">${st.days_tracked} · ${st.consecutive_days}</span></li>
+      <li><span class="rank">🔗</span><span>unique URLs</span><span class="score">${fmt(st.unique_urls)}</span></li>
+      <li><span class="rank">📡</span><span>sources</span><span class="score">${srcs}</span></li>
+      <li><span class="rank">📰</span><span>items in latest snapshot</span><span class="score">${fmt(st.items_in_latest)}</span></li>`;
+  }).catch(() => { document.getElementById("err").textContent = "stats unavailable"; });
+} else
 fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
   document.getElementById("date").textContent = (QT ? QT+" · " : "") + (snap.date || snap.generated_at.slice(0,10));
   const max = {};
