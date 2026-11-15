@@ -61,3 +61,6 @@ ranking.
 - `data/show-hn-monthly.csv` — the Show HN canon: top-10 product launches per
   month, Jan 2012 → today (same schema); regenerate with
   `scripts/showhn_backfill.py`.
+- `data/ask-hn-monthly.csv` — the Ask/Tell HN canon: top-10 questions per
+  month, Feb 2007 → today (same schema); regenerate with
+  `scripts/askhn_backfill.py`.
