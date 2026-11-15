@@ -123,6 +123,23 @@ $("stats").innerHTML =
    <div class="stat"><b class="up">+${spikes.length ? fmt(spikes[0].delta) : 0}</b><small>biggest 1-day spike</small></div>
    <div class="stat"><b>${spikes.length}</b><small>positive single-day deltas</small></div>`;
 
+// sustained climbers: total rise from first to last observation for items
+// still on the latest board (non-rolling), longest-first among gainers
+const climbers = [];
+for (const [url, it] of Object.entries(items)) {
+  if (ROLLING.has(it.source) || it.obs.length < 2) continue;
+  if (it.obs[it.obs.length-1].date !== latest) continue;
+  const gain = it.obs[it.obs.length-1].score - it.obs[0].score;
+  if (gain > 0) climbers.push({ url, ...it, gain, days: it.obs.length });
+}
+climbers.sort((a,b) => b.gain - a.gain);
+const climbersF = climbers.filter(sf);
+const crow = (e,i) =>
+  `<li><span class="sc" style="min-width:16px;text-align:right">${i+1}</span>
+   <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span>
+   <a href="item.html?q=${encodeURIComponent(e.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>
+   <span class="sc"><span class="up">+${fmt(e.gain)}</span> ${e.metric} <span class="date">over ${e.days}d · still on board</span></span></li>`;
+
 const srow = (e,i) =>
   `<li><span class="sc" style="min-width:16px;text-align:right">${i+1}</span>
    <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span>
@@ -135,6 +152,8 @@ const jrow = (e,i) =>
    <span class="sc"><span class="up">▲${e.jump}</span> <span class="date">· ${e.date} · #${e.from}→#${e.to}</span></span></li>`;
 
 $("out").innerHTML =
+  `<h2>sustained climbers — still on board today</h2><ol>` +
+    (climbersF.slice(0,15).map(crow).join("") || `<li><span class="it" style="color:var(--dim)">none rising right now</span></li>`) + `</ol>` +
   `<h2>biggest single-day spikes (all time)</h2><ol>` +
     (spikesF.slice(0,30).map(srow).join("") || `<li><span class="it" style="color:var(--dim)">no consecutive-day gains in this filter</span></li>`) + `</ol>` +
   `<h2>package rank jumps (rolling sources)</h2><ol>` +
