@@ -73,6 +73,7 @@
     <button data-tool="jdiff">JSON diff</button>
     <button data-tool="llmcost">LLM cost est</button>
     <button data-tool="datauri">file → data URI</button>
+    <button data-tool="ccommit">commit msg</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -213,6 +214,14 @@
     <div class="out" id="ent-warn" style="display:none"></div>
   </div>
 
+
+  <div class="panel" id="p-ccommit">
+    <h2>conventional-commit checker</h2>
+    <p class="hint">Validate a commit message against the Conventional Commits spec — type(scope)!: description, with hints when it fails.</p>
+    <input type="text" id="cc-in" placeholder="feat(auth): add oauth callback" style="width:100%">
+    <div id="cc-out" style="margin-top:10px"></div>
+  </div>
+
   <div class="panel" id="p-datauri">
     <h2>file → data URI</h2>
     <p class="hint">Drop or pick a file — get a base64 data URI you can inline in CSS/HTML/markdown. Files up to ~2 MB work smoothly.</p>
@@ -240,7 +249,7 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -821,6 +830,36 @@ $("du-file").onchange = e => e.target.files[0] && readDataURI(e.target.files[0])
 $("p-datauri").addEventListener("dragover", e => { e.preventDefault(); });
 $("p-datauri").addEventListener("drop", e => { e.preventDefault(); e.dataTransfer.files[0] && readDataURI(e.dataTransfer.files[0]); });
 $("du-copy").onclick = () => { navigator.clipboard?.writeText($("du-out").value); $("du-copy").textContent="copied"; setTimeout(()=>$("du-copy").textContent="copy data URI",1200); };
+
+/* ---------- conventional commit ---------- */
+const CC_TYPES = ["feat","fix","docs","style","refactor","perf","test","build","ci","chore","revert"];
+function ccommit() {
+  const msg = $("cc-in").value.trim();
+  if (!msg) { $("cc-out").innerHTML = '<span style="color:var(--dim)">type a commit message…</span>'; return; }
+  const m = msg.match(/^([a-z]+)(\(([a-z0-9_./-]+)\))?(!)?: (.+)$/);
+  if (!m) {
+    $("cc-out").innerHTML = `<div style="color:var(--red)">✗ not conventional</div>
+      <p class="hint">shape: <code>type(scope)!: description</code> — e.g. <code>feat(api): retry on 429</code></p>`;
+    return;
+  }
+  const [, type, , scope, bang, desc] = m;
+  const issues = [];
+  if (!CC_TYPES.includes(type)) issues.push(`unknown type "${type}" — common: ${CC_TYPES.slice(0,8).join(", ")}`);
+  if (desc !== desc.trim() || desc.endsWith(".")) issues.push("description should be imperative, no trailing period");
+  if (/^[A-Z]/.test(desc)) issues.push("description usually starts lowercase");
+  if (desc.length > 72) issues.push(`description is ${desc.length} chars — aim ≤72`);
+  $("cc-out").innerHTML = `<div style="color:${issues.length?"#e3b341":"var(--green)"};font-weight:600">${issues.length?"⚠ valid, with style notes":"✓ conventional commit"}</div>
+    <table class="tbl" style="margin-top:8px">
+      <tr><td>type</td><td><b>${type}</b>${CC_TYPES.includes(type)?"":" (nonstandard)"}</td></tr>
+      <tr><td>scope</td><td>${scope || '<span style="color:var(--dim)">none</span>'}</td></tr>
+      <tr><td>breaking</td><td>${bang ? '<b style="color:var(--red)">YES — needs BREAKING CHANGE footer or !</b>' : "no"}</td></tr>
+      <tr><td>description</td><td>${desc.length} chars</td></tr>
+    </table>` +
+    (issues.length ? `<ul style="color:#e3b341;margin:8px 0 0 18px">${issues.map(i=>`<li>${i}</li>`).join("")}</ul>` : "");
+}
+$("cc-in").oninput = ccommit;
+$("cc-in").value = "feat(api): retry pypistats on 429";
+ccommit();
 </script>
 </body>
 </html>
