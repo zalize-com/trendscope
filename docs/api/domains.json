@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T14:10:21.654539+00:00",
+ "generated_at": "2026-11-15T14:11:36.320326+00:00",
  "latest_snapshot": "2026-11-15",
  "total": 224,
  "domains": [
@@ -536,6 +536,21 @@
    }
   },
   {
+   "hostname": "nytimes.com",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Jensen Huang said to have had relationship with executive who reports to him",
+    "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+    "score": 410,
+    "metric": "points",
+    "date": "2026-11-11"
+   }
+  },
+  {
    "hostname": "blog.rust-lang.org",
    "days_on_board": 2,
    "items": 2,
@@ -742,21 +757,6 @@
    "top_hit": {
     "title": "The Pulse: Details of incident.io’s AI spend",
     "url": "https://blog.pragmaticengineer.com/the-pulse-details-of-incident-ios-ai-spend/",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "dave.cheney.net",
-   "days_on_board": 1,
-   "items": 15,
-   "sources": [
-    "cheney"
-   ],
-   "top_hit": {
-    "title": "Pop quiz: what time was it?",
-    "url": "https://dave.cheney.net/2025/12/18/pop-quiz-what-time-was-it",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
