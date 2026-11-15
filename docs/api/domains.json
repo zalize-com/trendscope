@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T16:07:00.484742+00:00",
+ "generated_at": "2026-11-15T16:08:29.677960+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 299,
+ "total": 304,
  "domains": [
   {
    "hostname": "reuters.com",
@@ -757,20 +757,18 @@
    }
   },
   {
-   "hostname": "arstechnica.com",
+   "hostname": "surfingcomplexity.blog",
    "days_on_board": 1,
-   "items": 19,
+   "items": 20,
    "sources": [
-    "arstechnica",
-    "daringfireball",
-    "hackernews",
-    "rands"
+    "lorinhochstein",
+    "surfingcomplexity"
    ],
    "top_hit": {
-    "title": "Seagate's new hybrid drive raises some old questions",
-    "url": "https://arstechnica.com/gadgets/2026/11/seagate-resurrects-the-ssd-hdd-hybrid-drive/",
-    "score": 90,
-    "metric": "points",
+    "title": "Constraints and production pressure at eMudhra",
+    "url": "https://surfingcomplexity.blog/2026/11/12/constraints-and-production-pressure-at-emudhra/",
+    "score": 10,
+    "metric": "feed rank",
     "date": "2026-11-15"
    }
   }

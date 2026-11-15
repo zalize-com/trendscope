@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:07:00.484742+00:00",
+ "generated_at": "2026-11-15T16:08:29.677960+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1322,
- "new_items": 1196,
+ "total_items": 1392,
+ "new_items": 1266,
  "by_source": {
   "producthunt": 45,
   "show_hn": 30,
@@ -19,6 +19,7 @@
   "aws_blog": 15,
   "catonmat": 15,
   "changelog": 15,
+  "charity": 15,
   "cheney": 15,
   "chriskiehl": 15,
   "cloudflare": 15,
@@ -50,6 +51,7 @@
   "pragmatic": 15,
   "pythonblog": 15,
   "rands": 15,
+  "ridiculousfish": 15,
   "sanglard": 15,
   "simonw": 15,
   "soblog": 15,
@@ -68,17 +70,21 @@
   "freecodecamp": 10,
   "github_eng": 10,
   "haxx": 10,
+  "henrikwarne": 10,
   "joelonsoftware": 10,
   "krebs": 10,
+  "lorinhochstein": 10,
   "lucumr": 10,
   "lyft": 10,
   "matklad": 10,
+  "nadia": 10,
   "netflix": 10,
   "opensourcecom": 10,
   "pinterest": 10,
   "raphlinus": 10,
   "stratechery": 10,
   "stripe": 10,
+  "surfingcomplexity": 10,
   "tedinski": 10,
   "wingolog": 10,
   "xeiaso": 10,
@@ -1338,6 +1344,126 @@
    "title": "What is a tech bubble anyway?",
    "url": "https://changelog.com/news/171",
    "source": "changelog",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "If your team is happy, are you doing a good job?",
+   "url": "https://charity.wtf/p/if-your-team-is-happy-are-you-doing",
+   "source": "charity",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Where do AI norms come from?",
+   "url": "https://charity.wtf/p/where-do-ai-norms-come-from",
+   "source": "charity",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Confessions of an Unrepentant Slop Snob",
+   "url": "https://charity.wtf/p/confessions-of-an-unrepentant-slop",
+   "source": "charity",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Have you heard? Clickhouse is winning the observability wars! <-- THIS IS SARCASM",
+   "url": "https://charity.wtf/p/have-you-heard-clickhouse-is-winning",
+   "source": "charity",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In defense of AI mandates",
+   "url": "https://charity.wtf/p/in-defense-of-ai-mandates",
+   "source": "charity",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is it ethical to use AI?",
+   "url": "https://charity.wtf/p/make-ai-boring-again",
+   "source": "charity",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI demands more engineering discipline. Not less",
+   "url": "https://charity.wtf/p/ai-demands-more-engineering-discipline",
+   "source": "charity",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
+   "url": "https://charity.wtf/p/ai-enthusiasts-are-in-a-race-against",
+   "source": "charity",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your Data Is Made Powerful By Context (so stop destroying it already)",
+   "url": "https://charity.wtf/p/your-data-is-made-powerful-by-context",
+   "source": "charity",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My (hypothetical) SRECon26 keynote",
+   "url": "https://charity.wtf/p/my-hypothetical-srecon26-keynote",
+   "source": "charity",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "First I wrote the wrong book, then I wrote the right book",
+   "url": "https://charity.wtf/p/first-i-wrote-the-wrong-book-then",
+   "source": "charity",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Martin Fowler told me the second edition should be shorter (it's twice as long)",
+   "url": "https://charity.wtf/p/observability-engineering-a-book",
+   "source": "charity",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bring Back Ops Pride",
+   "url": "https://charity.wtf/p/bring-back-ops-pride",
+   "source": "charity",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Friday Deploys: Sometimes that Puppy Needs Murdering",
+   "url": "https://charity.wtf/p/on-friday-deploys-sometimes-that",
+   "source": "charity",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2025 was for AI what 2010 was for cloud",
+   "url": "https://charity.wtf/p/2025-was-for-ai-what-2010-was-for",
+   "source": "charity",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -4039,6 +4165,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Lessons Learned from Fixing Flaky Tests with Claude",
+   "url": "https://henrikwarne.com/2026/08/15/lessons-learned-from-fixing-flaky-tests-with-claude/",
+   "source": "henrikwarne",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "With Claude: Less Coding, More Testing",
+   "url": "https://henrikwarne.com/2026/05/31/with-claude-less-coding-more-testing/",
+   "source": "henrikwarne",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In Praise of –dry-run",
+   "url": "https://henrikwarne.com/2026/01/31/in-praise-of-dry-run/",
+   "source": "henrikwarne",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lessons From 9 More Years of Tricky Bugs",
+   "url": "https://henrikwarne.com/2025/06/15/lessons-from-9-more-years-of-tricky-bugs/",
+   "source": "henrikwarne",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "More Good Programming Quotes, Part 6",
+   "url": "https://henrikwarne.com/2025/03/02/more-good-programming-quotes-part-6/",
+   "source": "henrikwarne",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Programming Conference – Jfokus Stockholm 2025",
+   "url": "https://henrikwarne.com/2025/02/08/programming-conference-jfokus-stockholm-2025/",
+   "source": "henrikwarne",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Simple Knowledge Management and Time Tracking System",
+   "url": "https://henrikwarne.com/2024/11/09/my-simple-knowledge-management-and-time-tracking-system/",
+   "source": "henrikwarne",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Programming With ChatGPT",
+   "url": "https://henrikwarne.com/2024/08/25/programming-with-chatgpt/",
+   "source": "henrikwarne",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "John von Neumann – The Man from the Future",
+   "url": "https://henrikwarne.com/2024/07/07/john-von-neumann-the-man-from-the-future/",
+   "source": "henrikwarne",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding a New Software Developer Job",
+   "url": "https://henrikwarne.com/2024/02/11/finding-a-new-software-developer-job/",
+   "source": "henrikwarne",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "A Crash Course in Predicate Logic",
    "url": "https://www.hillelwayne.com/post/predicate-logic/",
    "source": "hillel",
@@ -5103,6 +5309,86 @@
    "metric": "score"
   },
   {
+   "title": "Constraints and production pressure at eMudhra",
+   "url": "https://surfingcomplexity.blog/2026/11/12/constraints-and-production-pressure-at-emudhra/",
+   "source": "lorinhochstein",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quick thoughts on the GCP europe-west2-b outage",
+   "url": "https://surfingcomplexity.blog/2026/11/08/quick-thoughts-on-the-gcp-europe-west2-b-outage/",
+   "source": "lorinhochstein",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quick thoughts about the eMudhra incident",
+   "url": "https://surfingcomplexity.blog/2026/11/01/quick-thoughts-about-the-emudhra-incident/",
+   "source": "lorinhochstein",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Anthropic and the changing nature of work",
+   "url": "https://surfingcomplexity.blog/2026/10/18/anthropic-and-the-changing-nature-of-work/",
+   "source": "lorinhochstein",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quick thoughts on GitHub’s Sept 23 incident",
+   "url": "https://surfingcomplexity.blog/2026/10/03/quick-thoughts-on-githubs-sept-23-incident/",
+   "source": "lorinhochstein",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "There was a light that never went out",
+   "url": "https://surfingcomplexity.blog/2026/10/02/there-was-a-light-that-never-went-out/",
+   "source": "lorinhochstein",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Saturation at GitHub: the saga continues",
+   "url": "https://surfingcomplexity.blog/2026/09/19/saturation-at-github-the-saga-continues/",
+   "source": "lorinhochstein",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How the incident happened: a play in one act",
+   "url": "https://surfingcomplexity.blog/2026/09/19/how-the-incident-happened-a-play-in-one-act/",
+   "source": "lorinhochstein",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughts on the July 8th Telstra outage report",
+   "url": "https://surfingcomplexity.blog/2026/09/12/thoughts-on-the-july-8th-telestra-outage-report/",
+   "source": "lorinhochstein",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughts on the Buildkite Aug 25 incident",
+   "url": "https://surfingcomplexity.blog/2026/09/01/thoughts-on-the-buildkite-aug-25-incident/",
+   "source": "lorinhochstein",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "AI and Irontown",
    "url": "https://lucumr.pocoo.org/2026/11/9/irontown/",
    "source": "lucumr",
@@ -6011,6 +6297,86 @@
    "url": "https://www.mongodb.com/company/blog/innovation/automated-secure-scalable-reference-implementation-mongodb-atlas-on-azure",
    "source": "mongodb",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Does meditation experience improve success with the jhanas?",
+   "url": "http://nadia.xyz/meditation-experience",
+   "source": "nadia",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to do the jhanas",
+   "url": "http://nadia.xyz/jhanas",
+   "source": "nadia",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Working notes for Summer of Protocols",
+   "url": "http://nadia.xyz/summer-of-protocols-working-notes",
+   "source": "nadia",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Explaining tech’s notion of talent scarcity",
+   "url": "http://nadia.xyz/top-talent",
+   "source": "nadia",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mapping digital worlds",
+   "url": "http://nadia.xyz/mapping-digital-worlds",
+   "source": "nadia",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Early stage funding markets for science - an analysis",
+   "url": "http://nadia.xyz/early-stage-science",
+   "source": "nadia",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mapping out the tribes of climate",
+   "url": "http://nadia.xyz/climate-tribes",
+   "source": "nadia",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cultivating agency",
+   "url": "http://nadia.xyz/agency",
+   "source": "nadia",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Idea machines",
+   "url": "http://nadia.xyz/idea-machines",
+   "source": "nadia",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Understanding science funding in tech, 2011-2021",
+   "url": "http://nadia.xyz/science-funding",
+   "source": "nadia",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -7295,6 +7661,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Labor of Division (Episode VI): Narrowing Division Insight and Benchmarks",
+   "url": "http://ridiculousfish.com/blog/posts/labor-of-division-episode-vi.html",
+   "source": "ridiculousfish",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Angband in WASM",
+   "url": "http://ridiculousfish.com/blog/posts/shelob-angband-in-wasm.html",
+   "source": "ridiculousfish",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Benchmarking division and libdivide on Apple M1 and Intel AVX512",
+   "url": "http://ridiculousfish.com/blog/posts/benchmarking-libdivide-m1-avx512.html",
+   "source": "ridiculousfish",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Labor of Division (Episode V): Faster Narrowing Division",
+   "url": "http://ridiculousfish.com/blog/posts/labor-of-division-episode-v.html",
+   "source": "ridiculousfish",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Labor of Division (Episode IV): Algorithm D",
+   "url": "http://ridiculousfish.com/blog/posts/labor-of-division-episode-iv.html",
+   "source": "ridiculousfish",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Least Favorite Rust Type",
+   "url": "http://ridiculousfish.com/blog/posts/least-favorite-rust-type.html",
+   "source": "ridiculousfish",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JavaScript's Tricky Rounding",
+   "url": "http://ridiculousfish.com/blog/posts/JavaScript-Rounding.html",
+   "source": "ridiculousfish",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Schrödinger? I hardly know her!",
+   "url": "http://ridiculousfish.com/blog/posts/Schrodinger.html",
+   "source": "ridiculousfish",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The One Second Dash",
+   "url": "http://ridiculousfish.com/blog/posts/The-one-second-dash.html",
+   "source": "ridiculousfish",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "fish shell 2.0",
+   "url": "http://ridiculousfish.com/blog/posts/fish_shell.html",
+   "source": "ridiculousfish",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Yahoo! Chat - A Eulogy",
+   "url": "http://ridiculousfish.com/blog/posts/YahooChatRooms.html",
+   "source": "ridiculousfish",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Go Bloviations (Optional Reading)",
+   "url": "http://ridiculousfish.com/blog/posts/go_bloviations.html",
+   "source": "ridiculousfish",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can a command line shell be Mac-like?",
+   "url": "http://ridiculousfish.com/blog/posts/fishfish.html",
+   "source": "ridiculousfish",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Joy of Hex",
+   "url": "http://ridiculousfish.com/blog/posts/hex-fiend-21.html",
+   "source": "ridiculousfish",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Labor of Division (Episode III): Faster Unsigned Division by Constants",
+   "url": "http://ridiculousfish.com/blog/posts/labor-of-division-episode-iii.html",
+   "source": "ridiculousfish",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "My agent.md to improve LLM-assisted code quality",
    "url": "https://fabiensanglard.net/agent.md/index.html",
    "source": "sanglard",
@@ -8258,6 +8744,86 @@
    "title": "OUSD is now the default stablecoin on Stripe",
    "url": "https://stripe.com/blog/ousd-now-live-on-stripe",
    "source": "stripe",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Constraints and production pressure at eMudhra",
+   "url": "https://surfingcomplexity.blog/2026/11/12/constraints-and-production-pressure-at-emudhra/",
+   "source": "surfingcomplexity",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quick thoughts on the GCP europe-west2-b outage",
+   "url": "https://surfingcomplexity.blog/2026/11/08/quick-thoughts-on-the-gcp-europe-west2-b-outage/",
+   "source": "surfingcomplexity",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quick thoughts about the eMudhra incident",
+   "url": "https://surfingcomplexity.blog/2026/11/01/quick-thoughts-about-the-emudhra-incident/",
+   "source": "surfingcomplexity",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Anthropic and the changing nature of work",
+   "url": "https://surfingcomplexity.blog/2026/10/18/anthropic-and-the-changing-nature-of-work/",
+   "source": "surfingcomplexity",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quick thoughts on GitHub’s Sept 23 incident",
+   "url": "https://surfingcomplexity.blog/2026/10/03/quick-thoughts-on-githubs-sept-23-incident/",
+   "source": "surfingcomplexity",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "There was a light that never went out",
+   "url": "https://surfingcomplexity.blog/2026/10/02/there-was-a-light-that-never-went-out/",
+   "source": "surfingcomplexity",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Saturation at GitHub: the saga continues",
+   "url": "https://surfingcomplexity.blog/2026/09/19/saturation-at-github-the-saga-continues/",
+   "source": "surfingcomplexity",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How the incident happened: a play in one act",
+   "url": "https://surfingcomplexity.blog/2026/09/19/how-the-incident-happened-a-play-in-one-act/",
+   "source": "surfingcomplexity",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughts on the July 8th Telstra outage report",
+   "url": "https://surfingcomplexity.blog/2026/09/12/thoughts-on-the-july-8th-telestra-outage-report/",
+   "source": "surfingcomplexity",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughts on the Buildkite Aug 25 incident",
+   "url": "https://surfingcomplexity.blog/2026/09/01/thoughts-on-the-buildkite-aug-25-incident/",
+   "source": "surfingcomplexity",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"

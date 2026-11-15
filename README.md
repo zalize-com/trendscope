@@ -112,6 +112,12 @@ A daily cross-source snapshot of developer attention:
 | Chris Kiehl | dev tooling (Gooey author) | `chriskiehl.com/rss.xml` |
 | Dimitri Fontaine | PostgreSQL and Emacs | `tapoueh.org/index.xml` |
 | Hillel Wayne | formal methods and TLA+ | `hillelwayne.com/post/index.xml` |
+| Ridiculous Fish | fish shell author, low-level dev | `ridiculousfish.com/blog/atom.xml` |
+| Nadia Eghbal | open source economics | `nadia.xyz/feed.xml` |
+| Henrik Warne | programming practice essays | `henrikwarne.com/feed/` |
+| Charity Majors | observability and eng leadership | `charity.wtf/feed/` |
+| Surfing Complexity | resilience engineering | `surfingcomplexity.blog/feed/` |
+| Lorin Hochstein | software essays and book notes | `lorinhochstein.wordpress.com/feed/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
