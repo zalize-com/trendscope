@@ -132,6 +132,7 @@
     <div class="stamp" id="stamp">loading…</div>
     <div id="src-health" class="muted" style="font-size:12px;margin-top:4px"></div>
     <div id="hiring-pulse" class="muted" style="font-size:12px;margin-top:4px"></div>
+    <div id="month-history" class="muted" style="font-size:12px;margin-top:4px"></div>
     <div class="topics" id="topics"></div>
     <div style="margin-top:10px">
       <select id="daypick" style="display:none;padding:6px 10px;border-radius:8px;border:1px solid var(--border);background:var(--panel);color:var(--fg);font-size:13px"></select>
@@ -536,6 +537,23 @@ async function main() {
         `HN ${t.hiring ? t.hiring.month : ""} hiring pulse — ` +
         [bit("hiring", "who's hiring"), bit("seeking", "wants to be hired")]
           .filter(Boolean).join(" · ") + ` · <a href="hiring.html" style="color:var(--dim)">details →</a>`;
+    }
+  } catch (e) { /* optional */ }
+
+  try {
+    const MM = CUR_DATE.slice(5, 7);
+    const ctext = await fetch("data/hn-canon-monthly.csv", {cache:"no-cache"}).then(r => r.text());
+    const crows = parseCSV(ctext), chdr = crows.shift() || [];
+    const cm = chdr.indexOf("month"), cr = chdr.indexOf("rank"),
+          ct = chdr.indexOf("title"), cp = chdr.indexOf("points"), ch = chdr.indexOf("hn_url");
+    const canonTop = crows
+      .filter(r => r[cm] && r[cm].endsWith("-" + MM) && +r[cr] === 1)
+      .sort((a, b) => b[cp] - a[cp]).slice(0, 3);
+    if (canonTop.length) {
+      document.getElementById("month-history").innerHTML =
+        `this month in history — ` + canonTop.map(r =>
+          `<a href="${r[ch]}" style="color:var(--accent)" title="${r[cm]}">${escapeHtml(r[ct])} (${fmt(+r[cp])})</a>`
+        ).join(" · ") + ` · <a href="canon.html" style="color:var(--dim)">canon →</a>`;
     }
   } catch (e) { /* optional */ }
 
