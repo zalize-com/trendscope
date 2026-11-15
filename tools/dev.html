@@ -72,6 +72,7 @@
     <button data-tool="keys">key inspector</button>
     <button data-tool="jdiff">JSON diff</button>
     <button data-tool="llmcost">LLM cost est</button>
+    <button data-tool="datauri">file → data URI</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -211,6 +212,16 @@
     <div class="out" id="ent-out"></div>
     <div class="out" id="ent-warn" style="display:none"></div>
   </div>
+
+  <div class="panel" id="p-datauri">
+    <h2>file → data URI</h2>
+    <p class="hint">Drop or pick a file — get a base64 data URI you can inline in CSS/HTML/markdown. Files up to ~2 MB work smoothly.</p>
+    <input type="file" id="du-file">
+    <div id="du-info" style="margin:8px 0;color:var(--dim);font-size:13px"></div>
+    <textarea id="du-out" rows="6" readonly placeholder="data:..."></textarea>
+    <button class="copy" id="du-copy">copy data URI</button>
+  </div>
+
   <div class="panel" id="p-llmcost">
     <h2>LLM API cost estimator</h2>
     <p class="hint">Estimate monthly spend per model from your usage shape. Prices are approximate public list prices (per 1M tokens, USD) — verify on provider pricing pages before budgeting.</p>
@@ -229,7 +240,7 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -795,6 +806,21 @@ function entGo(mode) {
   S.addEventListener("input",()=>{T.textContent="~"+Math.round(S.value.length/4).toLocaleString()+" tokens";});
   go();
 })();
+
+/* ---------- file -> data URI ---------- */
+function readDataURI(file) {
+  const r = new FileReader();
+  r.onload = () => {
+    const uri = r.result;
+    $("du-out").value = uri;
+    $("du-info").textContent = `${file.name} — ${file.type || "application/octet-stream"}, ${file.size.toLocaleString()} B → ${uri.length.toLocaleString()} chars`;
+  };
+  r.readAsDataURL(file);
+}
+$("du-file").onchange = e => e.target.files[0] && readDataURI(e.target.files[0]);
+$("p-datauri").addEventListener("dragover", e => { e.preventDefault(); });
+$("p-datauri").addEventListener("drop", e => { e.preventDefault(); e.dataTransfer.files[0] && readDataURI(e.dataTransfer.files[0]); });
+$("du-copy").onclick = () => { navigator.clipboard?.writeText($("du-out").value); $("du-copy").textContent="copied"; setTimeout(()=>$("du-copy").textContent="copy data URI",1200); };
 </script>
 </body>
 </html>
