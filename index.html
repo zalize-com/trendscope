@@ -151,7 +151,7 @@
       <span class="muted" style="font-size:12px;margin-left:8px">saved in your browser · npm / crates:</span>
     </div>
     <div class="board" id="board"></div>
-    <p style="margin:8px 0 0;font-size:12px"><a id="png-btn" style="cursor:pointer">⤓ export board as PNG</a> · <a id="csv-btn" style="cursor:pointer">⤓ download board as CSV</a> <span class="muted">· share today's top stories anywhere</span></p>
+    <p style="margin:8px 0 0;font-size:12px"><a id="png-btn" style="cursor:pointer">⤓ export board as PNG</a> · <a id="csv-btn" style="cursor:pointer">⤓ download board as CSV</a> · <a id="cmp-link" style="cursor:pointer;display:none">↔ vs previous day</a> <span class="muted">· share today's top stories anywhere</span></p>
   </section>
 
   <section>
@@ -406,7 +406,7 @@ function escapeHtml(s) {
   return d.innerHTML;
 }
 
-let ITEMS = [], INDEX = null, CUR_DATE = null, STREAK = new Map();
+let ITEMS = [], INDEX = null, CUR_DATE = null, PREV_DATE = null, STREAK = new Map();
 
 function parseCSV(text) {
   const rows = []; let field = "", row = [], inQ = false;
@@ -492,6 +492,7 @@ async function loadDay(day) {
   try {
     SNAP = await j(`data/daily/${day}.json`);
     CUR_DATE = day;
+    PREV_DATE = i > 0 ? INDEX.snapshots[i - 1] : null;
     YDAY = i > 0 ? await j(`data/daily/${INDEX.snapshots[i - 1]}.json`) : null;
     paint();
     renderRising();
@@ -510,12 +511,21 @@ async function main() {
   try {
     INDEX = await j("data/index.json");
     const days = INDEX.snapshots.filter(d => d !== CUR_DATE);
-    if (days.length) YDAY = await j(`data/daily/${days[days.length - 1]}.json`);
+    if (days.length) {
+      PREV_DATE = days[days.length - 1];
+      YDAY = await j(`data/daily/${days[days.length - 1]}.json`);
+    }
     document.getElementById("hist-days").textContent =
       `${INDEX.snapshots.length} day${INDEX.snapshots.length === 1 ? "" : "s"} so far.`;
     document.getElementById("daily-links").innerHTML = INDEX.snapshots.slice(-7).reverse()
       .map(d => `<div><a href="data/daily/${d}.json" style="color:var(--accent)">${d}.json</a>
                  <a href="data/daily/${d}.csv" style="color:var(--dim);font-size:12px">.csv</a></div>`).join("");
+    const cmpL = document.getElementById("cmp-link");
+    if (PREV_DATE) {
+      cmpL.style.display = "";
+      cmpL.addEventListener("click", () =>
+        location.href = `compare.html?a=${PREV_DATE}&b=${CUR_DATE}`);
+    }
     if (INDEX.snapshots.length > 1) {
       const sel = document.getElementById("daypick");
       sel.style.display = "";
@@ -707,7 +717,7 @@ async function renderTrends(days) {
 
 // Export the visible board as a shareable PNG (dark card, top 12 rows).
 document.getElementById("csv-btn").addEventListener("click", () => {
-  const esc = v => `"" + String(v ?? "").replace(/"/g, '""') + '"';
+  const esc = v => '"' + String(v ?? "").replace(/"/g, '""') + '"';
   const rows = [["source","rank","title","url","score","comments","tags","author","captured_at"]];
   for (const [s, its] of ITEMS) for (const it of its)
     rows.push([s, it.rank, it.title, it.url, it.score, it.comments ?? "",
