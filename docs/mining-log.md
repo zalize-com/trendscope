@@ -9,8 +9,10 @@ wording within ~48h. Clusters feed tools, pages and weekly notes.
 | Cluster | First seen | Rounds | Product response |
 |---|---|---|---|
 | AI career anxiety (hollowed skills + code ownership) | 11/14 | 7, 9, 11, 16 | W47 notes section; geo.html |
+| AI backlash (No-AI lists, LLM-link bans) | 11/15 | 21 | watching — curation list candidate |
+| Self-host security | 11/15 | 20, 21 | feedpaper + self-host.md |
 | MCP ecosystem — fatigue → mature diversification | 11/14 | 6, 11, 14 | W46+W47 narrative correction |
-| Own-your-data / self-hosting demand | 11/15 | 10, 13 | feedpaper positioning + dev.to #4 hook |
+| Own-your-data / self-hosting demand | 11/15 | 10, 13, 18, 21 | feedpaper positioning + dev.to #4 hook |
 | GEO / AI-referral visibility | 11/15 | 9, 15 | tools/geo.html; llms.txt ×2 |
 | Blog-impersonation anxiety | 11/15 | 10 | tools/web.html typosquat checker |
 | Blind-SWE / a11y tooling | 11/15 | 9 | utils contrast checker + a11y.html suite |
