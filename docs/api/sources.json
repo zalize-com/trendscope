@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T17:51:37.260052+00:00",
+  "generated_at": "2026-11-15T17:53:50.296267+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -262,6 +262,18 @@
       "top_item": {
         "title": "",
         "url": "https://mastodon.social/@Gargron/117606353009169239",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogfrankel": {
+      "items": 16,
+      "unique_urls": 16,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Skills across coding assistants",
+        "url": "https://blog.frankel.ch/skills-across-coding-assistants/",
         "score": 15,
         "rank": 1
       }
@@ -1786,18 +1798,6 @@
       "top_item": {
         "title": "One Trillion Row Challenge",
         "url": "https://docs.coiled.io/blog/1trc.html",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "blogfrankel": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Skills across coding assistants",
-        "url": "https://blog.frankel.ch/skills-across-coding-assistants/",
         "score": 15,
         "rank": 1
       }
@@ -4778,6 +4778,66 @@
         "rank": 1
       }
     },
+    "torgo": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The Web is for People",
+        "url": "https://www.torgo.com/blog/2026/06/the-web-is-for-people.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "zmonster": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "我给自己建了一个数据库",
+        "url": "http://www.zmonster.me/2026/07/30/build-self-db.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "yehudakatz": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Polaris: What I'm Working On",
+        "url": "https://yehudakatz.com/2024/10/28/polaris-what-im-working-on/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "yulingtianxia": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Flutter 官方终于出手了，DartNative 将何去何从?",
+        "url": "http://yulingtianxia.com/blog/2022/12/12/DartNative-Interface/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "12daysofweb": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "CSS margin-trim and line height units",
+        "url": "https://12daysofweb.dev/2024/css-margin-trim-line-height-units/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -4858,6 +4918,18 @@
       "top_item": {
         "title": "手机端运行卷积神经网络实现文档检测功能(二) -- 从 VGG 到 MobileNetV2 知识梳理",
         "url": "http://fengjian0106.github.io/2018/06/02/Document-Scanning-With-TensorFlow-And-OpenCV-Part-Two/",
+        "score": 14,
+        "rank": 1
+      }
+    },
+    "wangpei": {
+      "items": 14,
+      "unique_urls": 14,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "我按照汉语「依字行腔」的规律，重译了朋霍费尔的赞美诗，并且做成了卡拉OK",
+        "url": "https://wangpei.net/2026/10/by-gentle-powers/",
         "score": 14,
         "rank": 1
       }
@@ -8150,6 +8222,126 @@
         "rank": 1
       }
     },
+    "scottohara": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Popping preconceived popover ponderings",
+        "url": "https://scottohara.me/blog/2025/03/14/popovers.html",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "sjoerdlangkemper": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Passwords are always short, but bcrypt's limit can still be problematic",
+        "url": "https://www.sjoerdlangkemper.nl/2026/10/28/maximum-password-length-bcrypt-72-limit/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "soerenhentzschel": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Mozilla veröffentlicht Firefox 160 für Android",
+        "url": "https://www.soeren-hentzschel.at/firefox-android/firefox-160-android/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "useragentman": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Introducing Enable: Accessible Web Components You Can Learn From",
+        "url": "http://www.useragentman.com/blog/2022/08/25/introducing-enable-accessible-web-components-you-can-learn-from/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "webrtchacks": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Distributed and Cascaded SFUs",
+        "url": "https://webrtchacks.com/distributed-and-cascaded-sfus/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "wirfsbrock": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How Smalltalk Became a AI Language",
+        "url": "https://wirfs-brock.com/allen/posts/1179",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "zeichenschatz": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Choose your path – specializing and finding a focus as a creative",
+        "url": "https://zeichenschatz.net/persoenliches/choose-your-path-specializing-and-finding-a-focus-as-a-creative/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "yangqinyuan": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "投资的行动策略",
+        "url": "http://yangqinyuan.com/essay/tzcl.html",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "3perf": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Hidden Cost of Hydration Mismatches",
+        "url": "https://3perf.com/blog/hydration-mismatch/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "aarontgrogg": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Your Holiday Campaign Ready. Is Your Website?",
+        "url": "https://aarontgrogg.com/blog/2026/09/28/your-holiday-campaign-ready-is-your-website/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "susam": {
       "items": 9,
       "unique_urls": 9,
@@ -8362,6 +8554,18 @@
       "top_item": {
         "title": "Moving To Linux",
         "url": "https://scripts.chat/2020/11/07/moving-to-linux/",
+        "score": 7,
+        "rank": 1
+      }
+    },
+    "webaxe": {
+      "items": 7,
+      "unique_urls": 7,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Reading List, Oct 2026",
+        "url": "http://www.webaxe.org/reading-list-oct-2026/",
         "score": 7,
         "rank": 1
       }
@@ -8626,6 +8830,42 @@
       "top_item": {
         "title": "Informing HTTP Extension Design with Data",
         "url": "https://mnot.net/blog/2026/linting_the_web",
+        "score": 5,
+        "rank": 1
+      }
+    },
+    "xanthir": {
+      "items": 5,
+      "unique_urls": 5,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Houserules in my D&amp;D Games, Part 2",
+        "url": "http://www.xanthir.com/b5P00",
+        "score": 5,
+        "rank": 1
+      }
+    },
+    "accessabilly": {
+      "items": 5,
+      "unique_urls": 5,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "My grandfather was a Nazi, too",
+        "url": "https://accessabilly.com/my-grandfather-was-a-nazi-too/",
+        "score": 5,
+        "rank": 1
+      }
+    },
+    "accessibilitybloggov": {
+      "items": 5,
+      "unique_urls": 5,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Get involved with Digital Accessibility Week 2026",
+        "url": "https://accessibility.blog.gov.uk/2026/05/11/get-involved-with-digital-accessibility-week-2026/",
         "score": 5,
         "rank": 1
       }
