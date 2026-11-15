@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:34:28.600327+00:00",
+ "generated_at": "2026-11-15T16:36:47.383152+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 2042,
- "new_items": 1916,
+ "total_items": 2071,
+ "new_items": 1945,
  "by_source": {
   "producthunt": 45,
   "show_hn": 39,
@@ -60,6 +60,7 @@
   "matthewrocklin": 15,
   "mikeash": 15,
   "mitchw": 15,
+  "mollywhite": 15,
   "mongodb": 15,
   "mtlynch": 15,
   "murat": 15,
@@ -95,6 +96,7 @@
   "aphyr": 12,
   "baeldung": 12,
   "jetbrains": 12,
+  "agis": 11,
   "bret": 11,
   "lobsters": 11,
   "airbnb": 10,
@@ -144,6 +146,7 @@
   "bendersky": 5,
   "github_trending": 4,
   "thisweek": 4,
+  "michaelfeathers": 3,
   "prog21": 3,
   "ask_hn": 2,
   "ciechanow": 2,
@@ -151,6 +154,94 @@
   "roytang": 1
  },
  "items": [
+  {
+   "title": "Speeding Up Our Build Pipelines",
+   "url": "https://agis.io/post/speeding-up-builds/",
+   "source": "agis",
+   "rank": 1,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Slides from \"Go at Skroutz\" talk",
+   "url": "https://agis.io/post/go-at-skroutz/",
+   "source": "agis",
+   "rank": 2,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Kafka to a monolithic Rails application",
+   "url": "https://agis.io/post/kafka-rails-integration/",
+   "source": "agis",
+   "rank": 3,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rewriting an analytics tracking service in Go",
+   "url": "https://agis.io/post/rewriting-analytics-service-golang/",
+   "source": "agis",
+   "rank": 4,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Contiguous stacks in Go",
+   "url": "https://agis.io/post/contiguous-stacks-golang/",
+   "source": "agis",
+   "rank": 5,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dabbling in Erlang, part 2: A minimal introduction",
+   "url": "https://agis.io/post/dabbling-in-erlang-a-minimal-introduction/",
+   "source": "agis",
+   "rank": 6,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dabbling in Erlang, part 1: Hello function",
+   "url": "https://agis.io/post/dabbling-in-erlang-hello-function/",
+   "source": "agis",
+   "rank": 7,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rails tips, part 2",
+   "url": "https://agis.io/post/rails-tips-part-2/",
+   "source": "agis",
+   "rank": 8,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Validating Paperclip image dimensions in Rails",
+   "url": "https://agis.io/post/validating-paperclip-image-dimensions-in-rails/",
+   "source": "agis",
+   "rank": 9,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hands-on Rack",
+   "url": "https://agis.io/post/hands-on-rack-ruby/",
+   "source": "agis",
+   "rank": 10,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rails tips, part 1",
+   "url": "https://agis.io/post/my-rails-notes/",
+   "source": "agis",
+   "rank": 11,
+   "score": 1,
+   "metric": "feed rank"
+  },
   {
    "title": "Skipper, Airbnb’s embedded workflow engine, is now open source",
    "url": "https://medium.com/airbnb-engineering/skipper-airbnbs-embedded-workflow-engine-is-now-open-source-78dd354f472b?source=rss----53c7c27702d5---4",
@@ -8840,6 +8931,30 @@
    "metric": "feed rank"
   },
   {
+   "title": "Generate from Constraints",
+   "url": "https://michaelfeathers.silvrback.com/prompt-hoisting-for-gpt-based-code-generation",
+   "source": "michaelfeathers",
+   "rank": 1,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "(Possible) AI Impacts on Development Practice",
+   "url": "https://michaelfeathers.silvrback.com/possible-ai-impacts-on-development-practice",
+   "source": "michaelfeathers",
+   "rank": 2,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gateway Teams",
+   "url": "https://michaelfeathers.silvrback.com/gateway-teams",
+   "source": "michaelfeathers",
+   "rank": 3,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "objc_msgSend's New Prototype",
    "url": "http://www.mikeash.com/pyblog/objc_msgsends-new-prototype.html",
    "source": "mikeash",
@@ -9075,6 +9190,126 @@
    "title": "Libghostty Is Coming",
    "url": "https://mitchellh.com/writing/libghostty-is-coming",
    "source": "mitchw",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Investigating The President",
+   "url": "https://www.mollywhite.net/micro/entry/202611121258",
+   "source": "mollywhite",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Note published on November 11, 2026 at 2:44 PM UTC",
+   "url": "https://www.mollywhite.net/micro/entry/202611110942",
+   "source": "mollywhite",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Note published on November 11, 2026 at 3:54 AM UTC",
+   "url": "https://www.mollywhite.net/micro/entry/202611102253",
+   "source": "mollywhite",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Note published on November 7, 2026 at 12:32 AM UTC",
+   "url": "https://www.mollywhite.net/micro/entry/202611061927",
+   "source": "mollywhite",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Note published on November 5, 2026 at 7:54 PM UTC",
+   "url": "https://www.mollywhite.net/micro/entry/202611051453",
+   "source": "mollywhite",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Note published on November 5, 2026 at 2:20 PM UTC",
+   "url": "https://www.mollywhite.net/micro/entry/202611050920",
+   "source": "mollywhite",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Note published on November 4, 2026 at 5:08 PM UTC",
+   "url": "https://www.mollywhite.net/micro/entry/202611041038",
+   "source": "mollywhite",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Note published on November 4, 2026 at 12:28 AM UTC",
+   "url": "https://www.mollywhite.net/micro/entry/202611031924",
+   "source": "mollywhite",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Note published on November 3, 2026 at 10:29 PM UTC",
+   "url": "https://www.mollywhite.net/micro/entry/202611031729",
+   "source": "mollywhite",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Note published on November 1, 2026 at 4:23 PM UTC",
+   "url": "https://www.mollywhite.net/micro/entry/202611011118",
+   "source": "mollywhite",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Note published on November 1, 2026 at 3:52 PM UTC",
+   "url": "https://www.mollywhite.net/micro/entry/202611011044",
+   "source": "mollywhite",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Note published on November 1, 2026 at 3:17 PM UTC",
+   "url": "https://www.mollywhite.net/micro/entry/202611011015",
+   "source": "mollywhite",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Note published on November 1, 2026 at 2:48 PM UTC",
+   "url": "https://www.mollywhite.net/micro/entry/202611010944",
+   "source": "mollywhite",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Note published on October 30, 2026 at 11:03 PM UTC",
+   "url": "https://www.mollywhite.net/micro/entry/202610301902",
+   "source": "mollywhite",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Note published on October 30, 2026 at 10:13 PM UTC",
+   "url": "https://www.mollywhite.net/micro/entry/202610301811",
+   "source": "mollywhite",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"

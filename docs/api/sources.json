@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T16:34:28.750013+00:00",
+  "generated_at": "2026-11-15T16:36:47.534904+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -1082,6 +1082,18 @@
         "rank": 1
       }
     },
+    "mollywhite": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Investigating The President",
+        "url": "https://www.mollywhite.net/micro/entry/202611121258",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -1163,6 +1175,18 @@
         "title": "What’s Fixed and Improved in PyCharm 2026.3",
         "url": "https://blog.jetbrains.com/pycharm/2026/11/what-s-fixed-and-improved-in-pycharm-2026-3/",
         "score": 12,
+        "rank": 1
+      }
+    },
+    "agis": {
+      "items": 11,
+      "unique_urls": 11,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Speeding Up Our Build Pipelines",
+        "url": "https://agis.io/post/speeding-up-builds/",
+        "score": 11,
         "rank": 1
       }
     },
@@ -1726,6 +1750,18 @@
       "top_item": {
         "title": "So Long, Prog21",
         "url": "http://prog21.dadgum.com/229.html",
+        "score": 3,
+        "rank": 1
+      }
+    },
+    "michaelfeathers": {
+      "items": 3,
+      "unique_urls": 3,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Generate from Constraints",
+        "url": "https://michaelfeathers.silvrback.com/prompt-hoisting-for-gpt-based-code-generation",
         "score": 3,
         "rank": 1
       }

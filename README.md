@@ -169,6 +169,9 @@ A daily cross-source snapshot of developer attention:
 | Andrej Karpathy | neural nets and deep learning | `karpathy.github.io/feed.xml` |
 | Matthew Rocklin | Dask creator, data tools | `matthewrocklin.com/feed.xml` |
 | Wesley Aptekar-Cassels | systems and software essays | `blog.wesleyac.com/feed.xml` |
+| Michael Feathers | legacy code and org design | `michaelfeathers.silvrback.com/feed` |
+| Agis Anastasopoulos | programming and systems notes | `agis.io/feed.xml` |
+| Molly White | Web3 criticism and tech notes | `mollywhite.net/micro/feed.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

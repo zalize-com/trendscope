@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T16:34:28.684922+00:00",
+ "generated_at": "2026-11-15T16:36:47.468476+00:00",
  "name": "trendscope — daily developer attention dataset",
  "homepage": "https://zalize-com.github.io/trendscope/",
  "repo": "https://github.com/zalize-com/trendscope",
@@ -18,6 +18,7 @@
  ],
  "days_tracked": 9,
  "sources": [
+  "agis",
   "airbnb",
   "andrewkelley",
   "antirez",
@@ -103,8 +104,10 @@
   "matklad",
   "matthewrocklin",
   "meta_eng",
+  "michaelfeathers",
   "mikeash",
   "mitchw",
+  "mollywhite",
   "mongodb",
   "mtlynch",
   "murat",
@@ -166,8 +169,8 @@
   "xeiaso",
   "zackkanter"
  ],
- "source_count": 147,
- "item_count_latest": 1905,
+ "source_count": 150,
+ "item_count_latest": 1934,
  "endpoints": [
   "authors.json",
   "badge-sources.json",
