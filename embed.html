@@ -78,21 +78,21 @@ const TOPIC_RULES = {
 const inTopic = it => !QT || (TOPIC_RULES[QT]||[]).some(k =>
   `${it.title||""} ${(it.tags||[]).join(" ")}`.toLowerCase().includes(k));
 const MODE = P.get("mode") || "";
+function parseCSV(text) {
+  const rows = []; let field = "", row = [], inQ = false;
+  for (const c of text) {
+    if (inQ) { if (c === '"') inQ = false; else field += c; }
+    else if (c === '"') inQ = true;
+    else if (c === ",") { row.push(field); field = ""; }
+    else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+    else field += c;
+  }
+  if (field || row.length) { row.push(field); rows.push(row); }
+  return rows;
+}
 if (MODE === "canon") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/canon.html";
   document.getElementById("date").textContent = "all-time hn canon";
-  function parseCSV(text) {
-    const rows = []; let field = "", row = [], inQ = false;
-    for (const c of text) {
-      if (inQ) { if (c === '"') inQ = false; else field += c; }
-      else if (c === '"') inQ = true;
-      else if (c === ",") { row.push(field); field = ""; }
-      else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
-      else field += c;
-    }
-    if (field || row.length) { row.push(field); rows.push(row); }
-    return rows;
-  }
   fetch("data/hn-canon-monthly.csv", {cache:"no-cache"}).then(r => r.text()).then(text => {
     const top = parseCSV(text).slice(1).filter(r => r.length >= 8 && r[0])
       .map(r => ({ title: r[2], url: r[3], points: +r[4] || 0, month: r[0], hn: r[8] }))
@@ -115,6 +115,36 @@ if (MODE === "hiring") {
       <li><span class="rank">🙋</span><span><a href="${s?.url || "#"}" target="_blank" rel="noopener">who wants to be hired</a><span class="src">ask hn</span></span><span class="score">${s ? fmt(s.comments) : "—"} posts</span></li>
       ${ratio ? `<li><span class="rank">≈</span><span>positions per seeker</span><span class="score">${ratio}</span></li>` : ""}`;
   }).catch(() => { document.getElementById("err").textContent = "hiring data unavailable"; });
+} else
+if (MODE === "week") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/week.html";
+  fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(text => {
+    const rows = parseCSV(text), hdr = rows[0];
+    const recs = rows.slice(1).map(r => Object.fromEntries(hdr.map((h,i)=>[h,r[i]])));
+    const days = [...new Set(recs.map(r => r.date))].sort();
+    const win = new Set(days.slice(-7));
+    const wk = recs.filter(r => win.has(r.date));
+    const mx = {};
+    for (const r of wk) {
+      const k = r.date + "|" + r.source;
+      mx[k] = Math.max(mx[k] || 0, +r.score || 0);
+    }
+    const byUrl = {};
+    for (const r of wk) {
+      const k = r.url || r.title;
+      const e = byUrl[k] || (byUrl[k] = {title: r.title, url: r.url, source: r.source, metric: r.metric, total: 0});
+      e.total += (+r.score || 0) / (mx[r.date + "|" + r.source] || 1);
+    }
+    const top = Object.values(byUrl)
+      .filter(e => (!QS || e.source === QS) && (!QQ || (e.title + " " + e.source).toLowerCase().includes(QQ)))
+      .sort((a, b) => b.total - a.total).slice(0, N);
+    document.getElementById("date").textContent = "last 7 days · by cumulative heat";
+    document.getElementById("list").innerHTML = top.length ? top.map((e, i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source}</span></span>
+        <span class="score">${e.total.toFixed(1)} heat</span></li>`).join("")
+      : `<li id="err">no items this week</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "history data unavailable"; });
 } else
 fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
   document.getElementById("date").textContent = (QT ? QT+" · " : "") + (snap.date || snap.generated_at.slice(0,10));
