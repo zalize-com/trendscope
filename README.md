@@ -93,8 +93,7 @@ A daily cross-source snapshot of developer attention:
 | David Beazley | Python wizardry | `dabeaz.blogspot.com` |
 | Mitchell Hashimoto | infra tooling creator | `mitchellh.com/feed.xml` |
 | Two-Bit History | computing history essays | `twobithistory.org/feed.xml` |
-| lucumr | Armin Ronacher essays | `lucumr.pocoo.org/feed.atom` |
-| Coding Horror | classic dev culture essays | `blog.codinghorror.com/rss/` |
+| Simon Willison | LLM tooling and web dev | `simonwillison.net/atom/everything/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
