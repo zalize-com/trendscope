@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T19:43:18.461569+00:00",
+ "generated_at": "2026-11-15T19:46:38.229504+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 1775,
+ "total": 1797,
  "domains": [
   {
    "hostname": "blog.google",
@@ -162,6 +162,23 @@
    }
   },
   {
+   "hostname": "reddit.com",
+   "days_on_board": 2,
+   "items": 18,
+   "sources": [
+    "hackernews",
+    "k8s",
+    "reddit"
+   ],
+   "top_hit": {
+    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+    "score": 382,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
    "hostname": "eff.org",
    "days_on_board": 2,
    "items": 17,
@@ -208,23 +225,6 @@
     "score": 15,
     "metric": "arxiv recent",
     "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "reddit.com",
-   "days_on_board": 2,
-   "items": 17,
-   "sources": [
-    "hackernews",
-    "k8s",
-    "reddit"
-   ],
-   "top_hit": {
-    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
-    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
-    "score": 382,
-    "metric": "points",
-    "date": "2026-11-13"
    }
   },
   {
@@ -392,10 +392,11 @@
   {
    "hostname": "eli.thegreenplace.net",
    "days_on_board": 2,
-   "items": 6,
+   "items": 7,
    "sources": [
     "bendersky",
-    "hackernews"
+    "hackernews",
+    "lobsters"
    ],
    "top_hit": {
     "title": "Making any integer with four 2s (2025)",

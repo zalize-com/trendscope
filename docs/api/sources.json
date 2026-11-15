@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-15T19:43:19.656962+00:00",
+  "generated_at": "2026-11-15T19:46:39.629773+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
-      "items": 191,
-      "unique_urls": 178,
+      "items": 192,
+      "unique_urls": 179,
       "median_days_on_board": 1,
       "one_day_pct": 93,
       "top_item": {
@@ -99,10 +99,10 @@
       }
     },
     "lobsters": {
-      "items": 30,
-      "unique_urls": 20,
+      "items": 32,
+      "unique_urls": 22,
       "median_days_on_board": 1,
-      "one_day_pct": 55,
+      "one_day_pct": 59,
       "top_item": {
         "title": "Terminal borders that don't cost a cell",
         "url": "https://www.joshka.net/cell-borders/",
@@ -310,6 +310,18 @@
       "top_item": {
         "title": "You are the best artist",
         "url": "https://www.kooslooijesteijn.net/blog/you-are-the-best-artist",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "reddit": {
+      "items": 16,
+      "unique_urls": 16,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "ICLR 2027 Reviews Discussion [D]",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1xo6yzo/iclr_2027_reviews_discussion_d/",
         "score": 15,
         "rank": 1
       }
@@ -8486,18 +8498,6 @@
         "rank": 1
       }
     },
-    "reddit": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "ICLR 2027 Reviews Discussion [D]",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1xo6yzo/iclr_2027_reviews_discussion_d/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "robinwieruch": {
       "items": 15,
       "unique_urls": 15,
@@ -9374,6 +9374,78 @@
         "rank": 1
       }
     },
+    "jaketrent": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Publish an NPM Package to JFrog Artifactory",
+        "url": "https://jaketrent.com/post/publish-npm-package-jfrog-artifactory",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "jakewharton": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Compose & kotlinx.html",
+        "url": "https://jakewharton.com/compose-and-kotlinx-html/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "mattaimonetti": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The Problem Isn’t AI. It’s Lazy Creators",
+        "url": "https://matt.aimonetti.net/posts/2026-11-the-problem-isnt-ai-its-lazy-creators/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "mherman": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Pulling Images From Private Docker Registries on GitLab CI",
+        "url": "https://mherman.org/blog/gitlab-ci-private-docker-registry/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "nickdesaulniersgithub": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "USPS as an ISP",
+        "url": "https://nickdesaulniers.github.io/blog/2023/03/10/usps-as-an-isp/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "oleb": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Use 'git mv' to record filename case changes in Git",
+        "url": "https://oleb.net/2025/git-mv-case-change/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -10054,6 +10126,18 @@
       "top_item": {
         "title": "You Do It Too: Forfeiting Network Partition Tolerance in Distributed Systems",
         "url": "http://blog.thislongrun.com/2015/07/Forfeit-Partition-Tolerance-Distributed-System-CAP-Theorem.html",
+        "score": 12,
+        "rank": 1
+      }
+    },
+    "joshtronic": {
+      "items": 12,
+      "unique_urls": 12,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "I Cut My Test Suite Time in Half by Slicing Up a CSV File",
+        "url": "https://joshtronic.com/2026/11/15/i-cut-my-test-suite-time-in-half/",
         "score": 12,
         "rank": 1
       }
@@ -16054,6 +16138,162 @@
       "top_item": {
         "title": "Stochastic Systems, Fokker-Planck and the Heat Equation via Haskell",
         "url": "https://idontgetoutmuch.wordpress.com/2020/04/26/stochastic-systems-fokker-planck-and-the-heat-equation-via-haskell/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "jerrygamblin": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Decision Models vs. CVE Data",
+        "url": "https://jerrygamblin.com/2026/10/04/decision-models-vs-cve-data/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "jes": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How to break the cycle of firefighting and build engineering excellence",
+        "url": "https://jes.al/2025/01/how-break-cycle-of-firefighting/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "jtreminio": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "OpenAPI Tutorial Part III: Paths and Basic Request Data",
+        "url": "https://jtreminio.com/blog/openapi-tutorial-part-iii-paths-and-basic-request-data/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "kevinburke": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Why Can’t Walnut Creek Build 3 Bedroom Apartments with a Playground?",
+        "url": "https://kevin.burke.dev/kevin/walnut-creek-single-stair/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "lambdablinkit": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How INTEGER and INT Produced Different Schemas in Debezium",
+        "url": "https://lambda.blinkit.com/how-integer-and-int-produced-different-schemas-in-debezium-9c98e8a80aa2?source=rss----42df4a1e8725---4",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "lg": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Cloudy Gamer: Playing Overwatch on Azure's new monster GPU instances",
+        "url": "https://lg.io/2016/10/12/cloudy-gamer-playing-overwatch-on-azures-new-monster-gpu-instances.html",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "masnun": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Building Which-Fuji: A Side Project for Fujifilm Camera Enthusiasts",
+        "url": "https://masnun.com/which-fuji-fujifilm-camera-recommendations/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "mirocupak": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Validating OAS 3 specification in your CI build",
+        "url": "https://mirocupak.com/validating-oas-3-specification-in-your-ci-build/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "multithreadedstitchfix": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Towards Service Deployment Agility",
+        "url": "https://multithreaded.stitchfix.com/blog/2023/09/19/towards-service-deployment-agility/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "nativeguruwordpress": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Seven years of bitwise: a weekend project, a Hackernews front page, and the long road into Debian",
+        "url": "https://nativeguru.wordpress.com/2026/09/11/seven-years-of-bitwise-a-weekend-project-a-hackernews-front-page-and-the-long-road-into-debian/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "nikolabreznjak": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "FOMO as a Developer: You&#8217;re Not Behind, You&#8217;re Just Human",
+        "url": "https://nikola-breznjak.com/blog/devthink/fomo-as-a-developer-youre-not-behind-youre-just-human/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "nordicapis": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How API Governance Is Evolving In The Agentic Era",
+        "url": "https://nordicapis.com/how-api-governance-is-evolving-in-the-agentic-era/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "ocramiusgithub": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Proper logging in PHP with PSR-3",
+        "url": "https://ocramius.github.io/blog/php-logging-with-psr-3/",
         "score": 10,
         "rank": 1
       }
