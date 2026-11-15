@@ -42,6 +42,9 @@ jobs:
           python3 scripts/content_index.py || true
           python3 scripts/stats.py || true
 
+      - name: Validate dataset contract
+        run: python3 scripts/validate.py
+
       - name: Commit dataset
         run: |
           git config user.name "trendscope-bot"
