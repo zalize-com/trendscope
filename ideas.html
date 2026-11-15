@@ -182,7 +182,7 @@ $("stats").innerHTML =
    <div class="stat"><b>${latest}</b><small>latest snapshot</small></div>`;
 
 const row = (r, badge = "") =>
-  `<li><span class="it"><a href="${r.url}" target="_blank" rel="noopener">${esc(r.title)}</a></span>
+  `<li><span class="it"><a href="${r.url}" target="_blank" rel="noopener">${esc(r.title)}</a><a href="item.html?q=${encodeURIComponent(r.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>
    <span class="sc">${badge} <span class="pts">${r.maxScore ?? r.score} pts</span>${r.nDays > 1 ? ` <span class="days">· ${r.nDays}d on board</span>` : ""}</span></li>`;
 
 $("out").innerHTML =
