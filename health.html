@@ -44,7 +44,7 @@
     <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a></footer>
 <script type="module">
 const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
-const $ = id => document.getElementById("out");
+const $ = document.getElementById("out");
 
 function parseCSV(text) {
   const rows = []; let field = "", row = [], inQ = false;
