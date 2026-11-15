@@ -58,9 +58,18 @@ for page in sorted(pages):
         continue
     check(f"trendscope/{rel}" in sitemap, f"{rel}: missing from sitemap.xml")
 
-# every sitemap entry must resolve to a real page
+# every sitemap entry must resolve to a real page; ?t= entries must name a
+# tool tab that actually exists on that page
 for loc in re.findall(r"<loc>https://zalize-com\.github\.io/trendscope/([^<]+)</loc>", sitemap):
-    check(os.path.exists(os.path.join(ROOT, loc)), f"sitemap.xml: dead entry → {loc}")
+    base = loc.split("?")[0].split("#")[0]
+    target = os.path.join(ROOT, base)
+    check(os.path.exists(target), f"sitemap.xml: dead entry → {loc}")
+    if not os.path.exists(target):
+        continue
+    m = re.search(r"[?&]t=([A-Za-z0-9_-]+)", loc)
+    if m and base.startswith("tools/"):
+        src = open(target, encoding="utf-8").read()
+        check(f'data-tool="{m.group(1)}"' in src, f"sitemap.xml: unknown tool tab → {loc}")
 
 if fails:
     print(f"\nLINKCHECK FAILED — {len(fails)} problem(s)", file=sys.stderr)
