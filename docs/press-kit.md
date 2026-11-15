@@ -4,8 +4,8 @@ One-pager for anyone writing about or linking to this project.
 
 ## Taglines
 
-- Short: *the developer attention dataset — updated daily*
-- Medium: *What developers read, build and download — snapshotted daily
+- Short: *the developer attention dataset — updated twice daily*
+- Medium: *What developers read, build and download — snapshotted twice daily
   from 15 public sources, plus 19 years of Hacker News history. Open
   data (CC0).*
 - Long: see README intro paragraph.

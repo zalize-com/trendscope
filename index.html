@@ -129,7 +129,7 @@
 
   <header class="hero">
     <h1>trend<span class="scope">scope</span></h1>
-    <p class="tagline">The developer attention dataset — updated daily. · <a href="tools/" style="color:var(--accent)">free in-browser tools →</a> · <a href="search.html" style="color:var(--accent)">search 19y of HN →</a> · <a href="https://github.com/zalize-com/trendscope" style="color:var(--accent)">★ star on GitHub</a> · <a href="feed.xml" style="color:var(--accent)">📡 subscribe</a></p>
+    <p class="tagline">The developer attention dataset — updated twice daily. · <a href="tools/" style="color:var(--accent)">free in-browser tools →</a> · <a href="search.html" style="color:var(--accent)">search 19y of HN →</a> · <a href="https://github.com/zalize-com/trendscope" style="color:var(--accent)">★ star on GitHub</a> · <a href="feed.xml" style="color:var(--accent)">📡 subscribe</a></p>
     <div class="stamp" id="stamp">loading…</div>
     <div id="src-health" class="muted" style="font-size:12px;margin-top:4px"></div>
     <div id="brief-link" class="muted" style="font-size:12px;margin-top:2px"></div>
@@ -711,7 +711,7 @@ const SAP_SOURCES = () => SNAP.sources || {};
 function renderRising() {
   const empty = document.getElementById("rising-empty");
   if (!YDAY || !SNAP) {
-    if (empty) empty.textContent = "Needs a second daily snapshot — check back tomorrow.";
+    if (empty) empty.textContent = "Needs a second daily snapshot — check back later today.";
     return;
   }
   // rank-movers: items present yesterday and today, biggest absolute score gain

@@ -12,7 +12,7 @@ with their owners. If you cite it, a link back to the repo or the dataset
 page is appreciated but not required.
 
 ## How fresh is the data?
-`data/latest.json` regenerates once daily (06:05 UTC). `data/history.csv`
+`data/latest.json` regenerates twice daily (06:05 and 18:05 UTC). `data/history.csv`
 is append-only and never rewritten — safe to build on.
 
 ## What's the difference between daily/, history.csv and the long-history CSVs?

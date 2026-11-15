@@ -71,5 +71,5 @@ calling it done:
   the summary (`X / Y :`), not a field (Techmeme); extract it or
   `authors.html` can't see the source's writers
 
-Merging a source automatically re-runs the daily workflow on push, so the
+Merging a source automatically re-runs the collection workflow on push, so the
 first snapshot lands within minutes — no need to wait for the cron.

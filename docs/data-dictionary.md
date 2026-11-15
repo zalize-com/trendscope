@@ -43,13 +43,13 @@ ranking.
 ## Auxiliary files
 
 - `data/health.json` — per-source run health `{ok, items, ms}` for the latest
-  collection; `data/health-log.csv` appends `date,source,ok,items,ms` daily.
+  collection; `data/health-log.csv` appends `date,source,ok,items,ms` twice daily.
 - `data/topics-history.csv` — append-only `date,topic,count,total_score` per day.
 - `docs/api/movers-latest.json` — structured entered/left/gainers/droppers and
   package rank movers for the latest snapshot pair (same computation as
   `docs/movers/*.md`).
 - `data/hiring.json` / `data/hiring-history.csv` — monthly HN "Who is hiring?"
-  and "Who wants to be hired?" thread comment counts, tracked daily
+  and "Who wants to be hired?" thread comment counts, tracked twice daily
   (`captured_at,kind,thread_id,month,comments,url`); a labor-demand signal.
 - `data/hiring-monthly.csv` — full backfill: every canonical monthly thread
   Algolia indexes (2010 → today), `month,kind,comments,thread_id,url,created`;
