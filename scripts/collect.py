@@ -20,6 +20,7 @@ Outputs (the accumulating CC0 dataset):
 """
 
 import csv
+import html
 import json
 import os
 import sys
@@ -280,7 +281,14 @@ def fetch_producthunt(limit=20):
     else:
         return []
     ns = {"a": "http://www.w3.org/2005/Atom"}
-    entries = root.findall("a:entry", ns)[:limit]
+    entries = root.findall("a:entry", ns)
+    # PH keeps deleted launches in the feed with a "-deleted-NNNN" slug;
+    # note Elements are falsy when childless — compare with None explicitly
+    def _href(e):
+        l = e.find("a:link", ns)
+        return l.get("href") if l is not None else ""
+    entries = [e for e in entries if "-deleted-" not in _href(e)]
+    entries = entries[:limit]
     out = []
     for i, e in enumerate(entries):
         title = (e.findtext("a:title", default="", namespaces=ns) or "").strip()
@@ -289,7 +297,8 @@ def fetch_producthunt(limit=20):
         tagline = (e.findtext("a:summary", default="", namespaces=ns) or "").strip()
         if not tagline:
             content = (e.findtext("a:content", default="", namespaces=ns) or "")
-            tagline = " ".join(re.sub(r"<[^>]+>", " ", content).split())[:200]
+            tagline = " ".join(re.sub(r"<[^>]+>", " ", content).split())
+            tagline = html.unescape(tagline)[:200]
             tagline = re.sub(r"\s*Discussion\s*\|\s*Link\s*$", "", tagline)
         out.append(item(
             "producthunt", title, url or "https://www.producthunt.com/",
@@ -322,10 +331,14 @@ def fetch_techmeme(limit=20):
     for i, e in enumerate(entries):
         title = (e.findtext("title", default="") or "").strip()
         url = (e.findtext("link", default="") or "").strip() or "https://www.techmeme.com/"
-        desc = " ".join(re.sub(r"<[^>]+>", " ", e.findtext("description", default="") or "").split())[:200]
+        desc = " ".join(re.sub(r"<[^>]+>", " ", e.findtext("description", default="") or "").split())
+        desc = html.unescape(desc)[:200]
+        # descriptions lead with "Author / Outlet : body" — lift it into author
+        m = re.match(r"^([^:]{1,80}) : ", desc)
+        author = m.group(1).strip() if m else None
         out.append(item(
             "techmeme", title, url, len(entries) - i, "feed rank",
-            extra={"description": desc},
+            extra={"description": desc, "author": author},
         ))
     return out
 
