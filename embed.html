@@ -157,6 +157,18 @@ if (MODE === "crossovers") {
       || `<li id="err">no crossovers yet — stories stay in one lane so far</li>`;
   }).catch(() => { document.getElementById("err").textContent = "crossovers data unavailable"; });
 } else
+if (MODE === "sources") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/sources.html";
+  fetch("docs/api/sources.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const list = Object.entries(d.sources).sort((a,b) => b[1].items - a[1].items);
+    document.getElementById("date").textContent = `${list.length} sources · ${d.days_tracked}d tracked`;
+    document.getElementById("list").innerHTML = list.slice(0, N).map(([name, v], i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="https://zalize-com.github.io/trendscope/source.html?s=${encodeURIComponent(name)}" target="_blank" rel="noopener">${esc(name)}</a><span class="src">${v.unique_urls} unique · ${v.one_day_pct}% one-day</span></span>
+        <span class="score">${fmt(v.items)}</span></li>`).join("")
+      || `<li id="err">no source data</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "sources data unavailable"; });
+} else
 if (MODE === "domain") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/domains.html";
   fetch("docs/api/domains.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
