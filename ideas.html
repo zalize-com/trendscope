@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ideas — trendscope</title>
+<meta name="description" content="The demand lane: what developers are asking for, aggregated from Ask HN items across the trendscope dataset.">
+<meta property="og:title" content="trendscope ideas — what devs are asking for">
+<meta property="og:image" content="og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+<style>
+  :root { --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
+          --dim:#8b949e; --accent:#58a6ff; --green:#3fb950; --orange:#d29922; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 18px; max-width: 640px; }
+  .stats { display: flex; gap: 18px; flex-wrap: wrap; margin: 10px 0 6px; }
+  .stat b { font-size: 22px; } .stat small { color: var(--dim); display: block; font-size: 11px; }
+  h2 { font-size: 15px; color: var(--dim); font-weight: 600; margin: 26px 0 6px;
+       text-transform: uppercase; letter-spacing: .04em; }
+  ol, ul { list-style: none; }
+  li { display: flex; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--border); align-items: baseline; }
+  .it a { color: var(--fg); } .it a:hover { color: var(--accent); }
+  .src { color: var(--dim); font-size: 11px; border: 1px solid var(--border);
+         border-radius: 4px; padding: 0 5px; margin-left: 6px; }
+  .sc { margin-left: auto; white-space: nowrap; font-size: 12px; color: var(--dim); }
+  .pts { color: var(--orange); font-weight: 600; }
+  .days { color: var(--green); }
+  .theme { background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+           padding: 10px 14px; margin-bottom: 10px; }
+  .theme h3 { font-size: 14px; color: var(--accent); margin-bottom: 6px; }
+  .theme h3 b { color: var(--orange); }
+  .theme ul li { border-bottom: none; padding: 2px 0; }
+  .theme .it a { color: var(--dim); } .theme .it a:hover { color: var(--accent); }
+  .theme .it a { font-size: 13px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+  #err { color: var(--dim); }
+  .note { color: var(--dim); font-size: 12px; margin-top: 8px; }
+</style>
+</head>
+<body>
+  <nav><a href="index.html">← trendscope</a> · <a href="compare.html">compare</a> · <a href="streaks.html">streaks</a> · <a href="digest.html">digests</a></nav>
+  <h1>idea<span>s</span></h1>
+  <p class="sub">The demand lane. Ask HN is a self-reporting wishlist: people publicly describe what they'd
+    pay for, switch to, or build. Aggregated from <code>ask_hn</code> items across the dataset history —
+    repeated themes = repeated demand.</p>
+  <div class="stats" id="stats"></div>
+  <div id="out"><p id="err">loading…</p></div>
+  <p class="note">Method: keyword clustering over question titles (unigrams/bigrams, stopword-filtered).
+    A theme needs ≥2 distinct threads across the dataset history to appear. Points are HN score, a rough
+    proxy for how many devs share the itch.</p>
+  <footer>Open data, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> ·
+    <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a></footer>
+<script type="module">
+const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
+const $ = id => document.getElementById(id);
+
+function parseCSV(text) {
+  const rows = []; let field = "", row = [], inQ = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQ) {
+      if (c === '"') {
+        if (text[i+1] === '"') { field += '"'; i++; } else inQ = false;
+      } else field += c;
+    } else if (c === '"') inQ = true;
+    else if (c === ",") { row.push(field); field = ""; }
+    else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+    else if (c !== "\r") field += c;
+  }
+  if (field || row.length) { row.push(field); rows.push(row); }
+  return rows;
+}
+
+const STOP = new Set(("a an the is are was were be been what which who whom how when where why do does did " +
+  "can could should would will shall may might must i you he she it we they me him her us them my your its our their " +
+  "this that these those there here to of in on at for with about as by from or and but if not no so too very just " +
+  "any some all one two get got have has had hn ask tell show self best new more much most now today use used using " +
+  "name something anything everything nothing someone anyone everyone like make made take look people really also " +
+  "start started down done doing run running want wanted stuff thing things way ways good great big small old " +
+  "advice ideas idea question questions anyone advice build builds built state future 2026").split(" "));
+const SKIP = /^(ask hn|tell hn|show hn|hn)[:?]?\s*/i;
+
+function tokens(title) {
+  const words = title.toLowerCase().replace(SKIP, "").split(/[^a-z0-9]+/)
+    .filter(w => w.length > 2 && !STOP.has(w) && !/^\d+$/.test(w));
+  const out = [];
+  for (const w of words) out.push(w);
+  for (let i = 0; i < words.length - 1; i++) out.push(words[i] + " " + words[i+1]);
+  return out;
+}
+
+const text = await fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text());
+const rows = parseCSV(text);
+const hdr = rows[0];
+const ci = Object.fromEntries(hdr.map((h,i)=>[h,i]));
+
+// dedupe ask_hn items by url: max score, days seen
+const items = {};
+for (const r of rows.slice(1)) {
+  if (r[ci.source] !== "ask_hn") continue;
+  const url = r[ci.url]; if (!url) continue;
+  const it = items[url] ||= { title: r[ci.title], days: new Set(), maxScore: 0 };
+  it.days.add(r[ci.date]);
+  it.maxScore = Math.max(it.maxScore, Number(r[ci.score]) || 0);
+}
+const recs = Object.entries(items).map(([url, it]) => ({ url, ...it, nDays: it.days.size }));
+const allDates = [...new Set(rows.slice(1).filter(r => r[ci.source]==="ask_hn").map(r => r[ci.date]))].sort();
+const latest = allDates[allDates.length-1];
+
+// theme clustering: map token -> urls; keep tokens spanning ≥2 threads
+const tokMap = new Map();
+for (const r of recs) for (const t of new Set(tokens(r.title))) {
+  if (!tokMap.has(t)) tokMap.set(t, new Set());
+  tokMap.get(t).add(r.url);
+}
+const themes = [...tokMap.entries()]
+  // bigrams always allowed; single words need ≥3 threads to be a theme
+  .filter(([t, us]) => us.size >= (t.includes(" ") ? 2 : 3))
+  .map(([t, us]) => ({
+    name: t,
+    urls: us,
+    score: [...us].reduce((s,u) => s + (items[u] ? items[u].maxScore : 0), 0),
+  }))
+  // drop themes fully contained in a bigger theme on the same urls
+  .sort((a,b) => b.score - a.score);
+const seen = new Set();
+const topThemes = themes.filter(th => {
+  const fresh = [...th.urls].filter(u => !seen.has(u));
+  if (!fresh.length) return false;
+  th.urls = new Set(fresh);
+  return true;
+}).slice(0, 8);
+topThemes.forEach(th => th.urls.forEach(u => seen.add(u)));
+
+// today's board
+const snap = await fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json());
+const today = (snap.items?.ask_hn || []).slice(0, 12);
+
+$("stats").innerHTML =
+  `<div class="stat"><b>${recs.length}</b><small>unique ask/tell threads</small></div>
+   <div class="stat"><b>${allDates.length}</b><small>days of demand data</small></div>
+   <div class="stat"><b>${topThemes.length}</b><small>recurring themes</small></div>
+   <div class="stat"><b>${latest}</b><small>latest snapshot</small></div>`;
+
+const row = (r, badge = "") =>
+  `<li><span class="it"><a href="${r.url}" target="_blank" rel="noopener">${esc(r.title)}</a></span>
+   <span class="sc">${badge} <span class="pts">${r.maxScore ?? r.score} pts</span>${r.nDays > 1 ? ` <span class="days">· ${r.nDays}d on board</span>` : ""}</span></li>`;
+
+$("out").innerHTML =
+  `<h2>today's ask board (${snap.date})</h2><ol>` +
+    today.map(i => row({...i, maxScore: i.score, nDays: (items[i.url]?.nDays)||1}, "")).join("") + `</ol>` +
+  `<h2>recurring demand themes</h2>` +
+    (topThemes.length ? topThemes.map(th =>
+      `<div class="theme"><h3>${esc(th.name)} <b>×${th.urls.size}</b></h3><ul>` +
+      [...th.urls].map(u => row({...items[u], url: u})).join("") +
+      `</ul></div>`).join("")
+    : `<p style="color:var(--dim)">needs 2+ days of ask_hn data — check back soon.</p>`) +
+  `<h2>top asks of all time</h2><ol>` +
+    [...recs].sort((a,b) => b.maxScore - a.maxScore).slice(0, 15).map(r => row(r)).join("") + `</ol>`;
+</script>
+</body>
+</html>
