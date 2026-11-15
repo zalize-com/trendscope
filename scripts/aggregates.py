@@ -331,6 +331,53 @@ def emit_history_apis(now):
         print(f"hiring-history.json: {len(rows)} rows")
 
 
+
+def emit_gone(now):
+    """latest.json vs previous daily snapshot → docs/api/gone.json:
+    items that were on yesterday's board but not today's (the drop side
+    of new.json). Each entry: item fields + yesterday's rank/score."""
+    import datetime, glob
+    lpath = os.path.join(ROOT, "data", "latest.json")
+    if not os.path.exists(lpath):
+        return
+    latest = json.load(open(lpath, encoding="utf-8"))
+    today_urls = set()
+    lit = latest.get("items", {})
+    if isinstance(lit, dict):
+        lit = [it for v in lit.values() for it in v]
+    for it in lit:
+        u = (it.get("url") or "").split("?")[0].rstrip("/")
+        if u:
+            today_urls.add(u)
+    snaps = sorted(glob.glob(os.path.join(ROOT, "data", "daily", "*.json")))
+    today_date = latest.get("latest_snapshot", latest.get("date", ""))
+    prev = None
+    for p in reversed(snaps):
+        d = os.path.basename(p)[:10]
+        if d != today_date:
+            prev = p
+            break
+    gone = []
+    if prev:
+        pd = json.load(open(prev, encoding="utf-8"))
+        pit = pd.get("items", {})
+        if isinstance(pit, dict):
+            pit = [it for v in pit.values() for it in v]
+        for it in pit:
+            u = (it.get("url") or "").split("?")[0].rstrip("/")
+            if u and u not in today_urls:
+                gone.append({"title": it.get("title"), "url": it.get("url"),
+                             "source": it.get("source"), "metric": it.get("metric"),
+                             "score": it.get("score"), "rank": it.get("rank")})
+    gone.sort(key=lambda x: x.get("score") or 0, reverse=True)
+    out = {"generated_at": now, "latest_snapshot": today_date,
+           "previous_snapshot": os.path.basename(prev)[:10] if prev else None,
+           "items": gone}
+    op = os.path.join(ROOT, "docs", "api", "gone.json")
+    json.dump(out, open(op, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(f"gone.json: {len(gone)} dropped items")
+
+
 def emit_rss(now):
     """latest.json → docs/api/latest.rss: today's top items as RSS 2.0,
     so RSS readers can subscribe to the cross-source board."""
@@ -373,3 +420,4 @@ if __name__ == "__main__":
     now = datetime.datetime.now(datetime.timezone.utc).isoformat()
     emit_history_apis(now)
     emit_rss(now)
+    emit_gone(now)

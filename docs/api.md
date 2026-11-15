@@ -27,6 +27,7 @@ Fetch straight from GitHub raw or the Pages site (`/trendscope/…`).
 | `docs/api/authors.json` | JSON | Most-featured authors & orgs leaderboard (days/items/sources/top hit) |
 | `docs/api/crossovers.json` | JSON | Same URL ranked on ≥2 sources — the breakout stories |
 | `docs/api/new.json` | JSON | First-seen items on the latest snapshot — URL never in history before (per-source counts in `by_source`) |
+| `docs/api/gone.json` | JSON | Items on the previous snapshot but not the latest — the drop side of `new.json` |
 | `docs/api/discussed.json` | JSON | Comment leaderboards: most-discussed + heated (comments/point ratio, score ≥ 50) |
 | `docs/api/sources.json` | JSON | Per-source stats over the whole window: items, unique urls, median days-on-board, one-day %, top item |
 | `docs/api/series.json` | JSON | Per-item daily series: `{title, source, metric, author, days: {date: [score, rank, comments]}}` for every tracked url — the canonical feed all analytic pages read |
