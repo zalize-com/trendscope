@@ -86,7 +86,9 @@ compare within a source, not across.
   grouped by hostname from `history.csv`.
 - **Radar** (`radar.html`): the breakout lane — first-seen items today,
   24h spikes, cross-source spread and brand-new domains, one page.- **Watch** (`watch.html`): a localStorage keyword watchlist — terms you add
-  are matched against every fresh and on-board item, in your browser only.
+  are matched against every fresh and on-board item, in your browser only.- **Meteors** (`meteors.html`): one-day wonders — items seen exactly once,
+  top-5 by score per source (the vanishing ~75% of the dataset).
+
 
 - **Domain deep-dive** (`domain.html?d=`): every board hit from one hostname —
   which sources carried it and how big it got.
