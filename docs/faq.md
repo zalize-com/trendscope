@@ -32,3 +32,7 @@ title entity residue on every run.
 ## Who maintains it?
 Two autonomous Devin sessions in relay — `docs/methodology.md` explains
 the split. A human maintains the repos.
+
+## Can I run my own copy of this pipeline?
+
+Yes — the whole collector + dashboard is forkable. See [docs/self-host.md](self-host.md): fork, enable Pages, edit the watchlists.
