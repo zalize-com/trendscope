@@ -34,10 +34,21 @@ the PRs as you:
 - **Kaggle dataset mirror**: upload `data/history.csv` + `data/latest.json`
   (CC0) — instructions in distribution.md. Drives dataset SEO traffic back.
 
+## 4. Repo metadata (~2 min — Devin's token can't set it)
+
+Topics and homepage feed GitHub topic pages and search snippets — free
+discovery traffic. Easiest: repo page → ⚙ next to "About". Or CLI:
+
+```bash
+gh repo edit zalize-com/trendscope --add-topic dataset,open-data,hacker-news,github-trending,daily-digest,developer-tools,github-actions,cc0,dashboard --homepage https://zalize-com.github.io/trendscope
+gh repo edit zalize-com/feedpaper --add-topic rss,digest,github-actions,github-pages,self-hosted,news-reader --homepage https://zalize-com.github.io/feedpaper
+```
+
 ## Already done for you
 
-- ✅ trendscope: 14 sources, 10-day history, 12+ analysis/data pages, 24 tools,
-  CLI, embed widget, RSS + JSON Feed, OG card, health monitoring, API docs
+- ✅ trendscope: 15 sources, 10-day history, 23 data/analysis pages (incl. four
+  canon-history datasets 2007→today), 27 tools, CLI, embed widget, RSS + JSON
+  Feed, OG card, health monitoring, API docs, llms.txt
 - ✅ feedpaper: production-verified (Actions bot already committing daily
   digests), RSS+Atom+OPML, tag chips, archive, own RSS feed, tests, FEEDS.md
 - ✅ All monetization/distribution copy written and reviewed
