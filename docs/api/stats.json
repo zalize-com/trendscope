@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T14:38:37.225512+00:00",
+ "generated_at": "2026-11-15T14:42:49.480482+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 923,
- "unique_urls": 785,
- "items_in_latest": 521,
- "items_per_day_avg": 102.6,
+ "total_rows": 948,
+ "unique_urls": 810,
+ "items_in_latest": 546,
+ "items_per_day_avg": 105.3,
  "sources": {
   "arstechnica": {
    "rows": 16,
@@ -113,6 +113,10 @@
    "rows": 10,
    "days_active": 1
   },
+  "philopp": {
+   "rows": 15,
+   "days_active": 1
+  },
   "pragmatic": {
    "rows": 15,
    "days_active": 1
@@ -155,6 +159,10 @@
   },
   "theverge": {
    "rows": 14,
+   "days_active": 1
+  },
+  "wingolog": {
+   "rows": 10,
    "days_active": 1
   }
  },
