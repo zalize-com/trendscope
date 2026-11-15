@@ -131,6 +131,7 @@
     <p class="tagline">The developer attention dataset — updated daily. · <a href="tools/" style="color:var(--accent)">free in-browser tools →</a> · <a href="search.html" style="color:var(--accent)">search 19y of HN →</a> · <a href="https://github.com/zalize-com/trendscope" style="color:var(--accent)">★ star on GitHub</a></p>
     <div class="stamp" id="stamp">loading…</div>
     <div id="src-health" class="muted" style="font-size:12px;margin-top:4px"></div>
+    <div id="brief-link" class="muted" style="font-size:12px;margin-top:2px"></div>
     <div id="hiring-pulse" class="muted" style="font-size:12px;margin-top:4px"></div>
     <div id="month-history" class="muted" style="font-size:12px;margin-top:4px"></div>
     <div class="topics" id="topics"></div>
@@ -622,6 +623,13 @@ async function main() {
         + fresh
         + (slowest ? ` · slowest ${slowest[0]} ${(slowest[1].ms/1000).toFixed(1)}s` : "")
         + `<span style="color:var(--green)">${streak}</span>`;
+    try {
+      const IX = await j("docs/index.json");
+      const today = CUR_DATE;
+      if (IX.briefs && IX.briefs.includes(today))
+        document.getElementById("brief-link").innerHTML =
+          `<a href="digest.html?w=${today}.md" style="color:var(--dim)">📄 today's brief →</a>`;
+    } catch(e2) {}
   } catch (e) { /* health file optional */ }
 
   // watchlist: seed from ?pkgs= (shareable), persist to localStorage
