@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T13:00:24.276603+00:00",
+ "generated_at": "2026-11-15T13:07:50.953309+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 654,
- "unique_urls": 517,
- "items_in_latest": 265,
- "items_per_day_avg": 72.7,
+ "total_rows": 680,
+ "unique_urls": 543,
+ "items_in_latest": 290,
+ "items_per_day_avg": 75.6,
  "sources": {
   "arstechnica": {
    "rows": 16,
@@ -21,6 +21,10 @@
    "rows": 76,
    "days_active": 8
   },
+  "changelog": {
+   "rows": 15,
+   "days_active": 1
+  },
   "crates": {
    "rows": 30,
    "days_active": 2
@@ -28,6 +32,10 @@
   "devto": {
    "rows": 31,
    "days_active": 2
+  },
+  "freecodecamp": {
+   "rows": 10,
+   "days_active": 1
   },
   "github_trending": {
    "rows": 31,
@@ -74,7 +82,7 @@
    "days_active": 1
   },
   "theverge": {
-   "rows": 11,
+   "rows": 12,
    "days_active": 1
   }
  },
@@ -89,11 +97,19 @@
    "hits": 16
   },
   {
+   "domain": "changelog.com",
+   "hits": 15
+  },
+  {
    "domain": "theverge.com",
-   "hits": 13
+   "hits": 14
   },
   {
    "domain": "krebsonsecurity.com",
+   "hits": 10
+  },
+  {
+   "domain": "freecodecamp.org",
    "hits": 10
   },
   {
@@ -110,14 +126,6 @@
   },
   {
    "domain": "reuters.com",
-   "hits": 3
-  },
-  {
-   "domain": "joshka.net",
-   "hits": 3
-  },
-  {
-   "domain": "anthropic.com",
    "hits": 3
   }
  ],
