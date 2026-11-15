@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T17:14:42.781729+00:00",
+  "generated_at": "2026-11-15T17:16:33.616335+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -146,6 +146,18 @@
         "rank": 1
       }
     },
+    "daringfireball": {
+      "items": 19,
+      "unique_urls": 17,
+      "median_days_on_board": 1,
+      "one_day_pct": 88,
+      "top_item": {
+        "title": "Nvidia Employees Petition for Jensen Huang’s Return",
+        "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+        "score": 811,
+        "rank": 3
+      }
+    },
     "slashdot": {
       "items": 19,
       "unique_urls": 19,
@@ -156,18 +168,6 @@
         "url": "https://hardware.slashdot.org/story/26/11/15/0510225/did-alice-huangs-megaspeed-bypass-americas-controls-on-exporting-nvidia-chip-to-china?utm_source=rss1.0mainlinkanon&utm_medium=feed",
         "score": 15,
         "rank": 1
-      }
-    },
-    "daringfireball": {
-      "items": 18,
-      "unique_urls": 16,
-      "median_days_on_board": 1,
-      "one_day_pct": 88,
-      "top_item": {
-        "title": "Nvidia Employees Petition for Jensen Huang’s Return",
-        "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
-        "score": 811,
-        "rank": 3
       }
     },
     "googleblog": {
@@ -2942,6 +2942,114 @@
         "rank": 1
       }
     },
+    "projectf": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "ECP5 FPGA Clock Generation",
+        "url": "https://projectf.io/posts/ecp5-fpga-clock/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rachsmith": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How long have we got before the agent output is enshittified?",
+        "url": "https://rachsmith.com/how-long-until-agent-output-turns-to-shit",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "radumatei": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "A practical guide to WebAssembly memory",
+        "url": "https://radu-matei.com/blog/practical-guide-to-wasm-memory/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "react": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "React 19.3",
+        "url": "https://react.dev/blog/2026/09/09/react-19-3",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "reaganray": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "18 Books I Enjoyed in 2021",
+        "url": "https://reaganray.com/2022/01/19/18-books-2021.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "remysharp": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The Memory Police [book]",
+        "url": "https://remysharp.com/books/2026/the-memory-police",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rknight": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Knowember",
+        "url": "https://rknight.me/blog/knowember/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rmarcus": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How not to complain about peer review",
+        "url": "https://rmarcus.info/blog/2026/07/10/peer-review.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "roadtolarissa": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Advent of Code Solve Times",
+        "url": "https://roadtolarissa.com/advent-of-code",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -3106,6 +3214,18 @@
       "top_item": {
         "title": "Raspberry Pi Cinema Camera",
         "url": "https://magazine.raspberrypi.com/articles/raspberry-pi-cinema-camera",
+        "score": 12,
+        "rank": 1
+      }
+    },
+    "rmondello": {
+      "items": 12,
+      "unique_urls": 12,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Identiverse 2026 Keynote: Get the Most out of Passkeys",
+        "url": "https://rmondello.com/2026/09/20/identiverse-2026-keynote-passkeys/",
         "score": 12,
         "rank": 1
       }
@@ -4666,6 +4786,126 @@
       "top_item": {
         "title": "Remembering Piotr “chastell” Szotkowski",
         "url": "https://pragtob.wordpress.com/2026/04/12/remembering-piotr-chastell-szotkowski/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "proton": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Is Claude’s Microsoft 365 connector down? What to do when your AI assistant goes offline",
+        "url": "https://proton.me/business/blog/claude-microsoft-365-connector-outage",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "pugachev": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "GOT, PLT, RELRO, and other random characters",
+        "url": "https://pugachev.io/2026/11/08/got-plt-relro-and-other-random-characters/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "pythonspeed": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Faster floating point math with Rust’s new API",
+        "url": "https://pythonspeed.com/articles/faster-float-math-rust/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "qsantos": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The USB interposer",
+        "url": "https://qsantos.fr/2026/09/17/the-usb-interposer/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "rachelandrewco": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Making features generic in CSS",
+        "url": "https://rachelandrew.co.uk/archives/2026/11/02/making-features-generic-in-css/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "rakuadvent": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Day 16 – Post Removed",
+        "url": "https://raku-advent.blog/2026/02/28/day-16-post-removed/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "randomactsofarchitecture": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Adapting Software: A Case for Generalists",
+        "url": "https://randomactsofarchitecture.com/2022/09/26/adapting-software-a-case-for-generalists/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "redditinc": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Introducing Reddit Reviews",
+        "url": "https://redditinc.com/news/introducing-reddit-reviews",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "researchfb": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How generational differences affect consumer attitudes towards ads",
+        "url": "https://research.facebook.com/blog/2023/5/how-generational-differences-affect-consumer-attitudes-towards-ads/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "rmurphey": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Eng ladders, promotions & glue work",
+        "url": "https://rmurphey.com/posts/eng-ladder-glue-work/",
         "score": 10,
         "rank": 1
       }

@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T17:14:42.163120+00:00",
+ "generated_at": "2026-11-15T17:16:33.229794+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 5531,
- "new_items": 5405,
+ "total_items": 5779,
+ "new_items": 5653,
  "by_source": {
   "producthunt": 45,
   "show_hn": 40,
@@ -10,10 +10,10 @@
   "theregister": 29,
   "techmeme": 22,
   "slashdot": 19,
+  "daringfireball": 17,
   "thenewstack": 17,
   "theverge": 17,
   "arstechnica": 16,
-  "daringfireball": 16,
   "gargron": 16,
   "lemmy": 16,
   "100r": 15,
@@ -220,10 +220,19 @@
   "pragmatic": 15,
   "pragprog": 15,
   "priver": 15,
+  "projectf": 15,
   "pythonblog": 15,
+  "rachsmith": 15,
+  "radumatei": 15,
   "rands": 15,
   "rauchg": 15,
+  "react": 15,
+  "reaganray": 15,
+  "remysharp": 15,
   "ridiculousfish": 15,
+  "rknight": 15,
+  "rmarcus": 15,
+  "roadtolarissa": 15,
   "robinrendle": 15,
   "sanglard": 15,
   "seangoedecke": 15,
@@ -257,6 +266,7 @@
   "codetutsplus": 12,
   "jetbrains": 12,
   "magpiraspberrypi": 12,
+  "rmondello": 12,
   "agis": 11,
   "bret": 11,
   "geoffreylitt": 11,
@@ -377,8 +387,18 @@
   "pmjones": 10,
   "pragtobwordpress": 10,
   "producthubspot": 10,
+  "proton": 10,
+  "pugachev": 10,
+  "pythonspeed": 10,
+  "qsantos": 10,
+  "rachelandrewco": 10,
+  "rakuadvent": 10,
+  "randomactsofarchitecture": 10,
   "raphlinus": 10,
+  "redditinc": 10,
+  "researchfb": 10,
   "responsivenewsco": 10,
+  "rmurphey": 10,
   "schneems": 10,
   "stratechery": 10,
   "stripe": 10,
@@ -15519,6 +15539,14 @@
   {
    "title": "WorkOS: Let Agents Use Your Tools Without Giving Them Free Rein",
    "url": "https://www.workos.com/airlock?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q42026",
+   "source": "daringfireball",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Legion of PCAST",
+   "url": "https://www.whitehouse.gov/ostp/presidents-council-of-advisors-on-science-and-technology/",
    "source": "daringfireball",
    "rank": 1,
    "score": 15,
@@ -38261,6 +38289,286 @@
    "metric": "feed rank"
   },
   {
+   "title": "ECP5 FPGA Clock Generation",
+   "url": "https://projectf.io/posts/ecp5-fpga-clock/",
+   "source": "projectf",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RISC-V Assembler: Compiler Explorer",
+   "url": "https://projectf.io/posts/riscv-compiler-explorer/",
+   "source": "projectf",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RISC-V Assembler Cheat Sheet",
+   "url": "https://projectf.io/posts/riscv-cheat-sheet/",
+   "source": "projectf",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RISC-V Assembler: Multiply Divide",
+   "url": "https://projectf.io/posts/riscv-multiply-divide/",
+   "source": "projectf",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RISC-V Assembler: Jump and Function",
+   "url": "https://projectf.io/posts/riscv-jump-function/",
+   "source": "projectf",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RISC-V Assembler: Branch Set",
+   "url": "https://projectf.io/posts/riscv-branch-set/",
+   "source": "projectf",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RISC-V Assembler: Load Store",
+   "url": "https://projectf.io/posts/riscv-load-store/",
+   "source": "projectf",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RISC-V Assembler: Shift",
+   "url": "https://projectf.io/posts/riscv-shift/",
+   "source": "projectf",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RISC-V Assembler: Logical",
+   "url": "https://projectf.io/posts/riscv-logical/",
+   "source": "projectf",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RISC-V Assembler: Arithmetic",
+   "url": "https://projectf.io/posts/riscv-arithmetic/",
+   "source": "projectf",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "News: April 2023",
+   "url": "https://projectf.io/posts/news-2023-04/",
+   "source": "projectf",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vivado Tcl Build Script",
+   "url": "https://projectf.io/posts/vivado-tcl-build-script/",
+   "source": "projectf",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mandelbrot in Verilog",
+   "url": "https://projectf.io/posts/mandelbrot-verilog/",
+   "source": "projectf",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "News: December 2022",
+   "url": "https://projectf.io/posts/news-2022-12/",
+   "source": "projectf",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Verilog Vectors and Arrays",
+   "url": "https://projectf.io/posts/verilog-vectors-arrays/",
+   "source": "projectf",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is Claude’s Microsoft 365 connector down? What to do when your AI assistant goes offline",
+   "url": "https://proton.me/business/blog/claude-microsoft-365-connector-outage",
+   "source": "proton",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The business case for a password manager: How to calculate ROI and justify the investment",
+   "url": "https://proton.me/business/blog/password-manager-roi",
+   "source": "proton",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Microsoft outage: Is Outlook still down? Latest updates",
+   "url": "https://proton.me/business/blog/microsoft-365-outage-is-outlook-down",
+   "source": "proton",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple’s new features are raising privacy concerns",
+   "url": "https://proton.me/blog/apple-new-features-privacy-concerns",
+   "source": "proton",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to protect your business from SIM swapping and phone-based account attacks",
+   "url": "https://proton.me/business/blog/sim-swapping",
+   "source": "proton",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Venmo vs. Cash App: Which is more private?",
+   "url": "https://proton.me/blog/venmo-vs-cash-app-privacy",
+   "source": "proton",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Proton keeps your data secure in the age of AI",
+   "url": "https://proton.me/blog/how-proton-keeps-your-data-secure",
+   "source": "proton",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7 ways client data can leak from your SMB",
+   "url": "https://proton.me/business/blog/data-security-risks-small-business",
+   "source": "proton",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Secure password sharing for business: How to share credentials with your team",
+   "url": "https://proton.me/business/blog/secure-password-sharing-business",
+   "source": "proton",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "API key management: How to manage developer credentials and API keys securely",
+   "url": "https://proton.me/business/blog/api-key-management-business",
+   "source": "proton",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GOT, PLT, RELRO, and other random characters",
+   "url": "https://pugachev.io/2026/11/08/got-plt-relro-and-other-random-characters/",
+   "source": "pugachev",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "IOLI crackmes, rebuilt",
+   "url": "https://pugachev.io/2026/11/05/ioli-crackmes-rebuilt/",
+   "source": "pugachev",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Multiple ways to find the auxiliary vector (auxv)",
+   "url": "https://pugachev.io/2026/10/25/multiple-ways-to-find-the-auxiliary-vector-auxv/",
+   "source": "pugachev",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "“Kernel Monarch” by Hack The Box",
+   "url": "https://pugachev.io/2026/06/05/kernel-monarch-by-hack-the-box/",
+   "source": "pugachev",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "No more pwn.college writeups",
+   "url": "https://pugachev.io/2026/01/09/no-more-pwn-college-writeups/",
+   "source": "pugachev",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "“Hexecution” by Hack The Box",
+   "url": "https://pugachev.io/2025/11/03/hexecution-by-hack-the-box/",
+   "source": "pugachev",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "“Rega’s Town” by Hack The Box",
+   "url": "https://pugachev.io/2025/07/06/regas-town-by-hack-the-box/",
+   "source": "pugachev",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "“vvm” by Hack The Box",
+   "url": "https://pugachev.io/2025/04/11/vvm-by-hack-the-box/",
+   "source": "pugachev",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "“Wayback” by Hack The Box",
+   "url": "https://pugachev.io/2025/04/06/wayback-by-hack-the-box/",
+   "source": "pugachev",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "“BinCrypt Breaker” by Hack The Box",
+   "url": "https://pugachev.io/2025/04/03/bincrypt-breaker-by-hack-the-box/",
+   "source": "pugachev",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Python 3.16.0 alpha 2 is now available",
    "url": "https://blog.python.org/2026/11/python-3160-alpha-2-is-now-available/",
    "source": "pythonblog",
@@ -38377,6 +38685,646 @@
    "url": "https://blog.python.org/2026/09/language-summit-2026-memory-snapshots/",
    "source": "pythonblog",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Faster floating point math with Rust’s new API",
+   "url": "https://pythonspeed.com/articles/faster-float-math-rust/",
+   "source": "pythonspeed",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "8× faster binary search: from compiled code to mechanical sympathy",
+   "url": "https://pythonspeed.com/articles/branchless-binary-search/",
+   "source": "pythonspeed",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Timesliced reservoir sampling: a new(?) algorithm for profilers",
+   "url": "https://pythonspeed.com/articles/reservoir-sampling-profilers/",
+   "source": "pythonspeed",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unit testing your code's performance, part 2: Catching speed changes",
+   "url": "https://pythonspeed.com/articles/speed-unit-tests/",
+   "source": "pythonspeed",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The best Docker base image for your Python application (February 2026)",
+   "url": "https://pythonspeed.com/articles/base-image-python-docker-images/",
+   "source": "pythonspeed",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speeding up NumPy with parallelism",
+   "url": "https://pythonspeed.com/articles/numpy-parallelism/",
+   "source": "pythonspeed",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unit testing your code's performance, part 1: Big-O scaling",
+   "url": "https://pythonspeed.com/articles/big-o-tests/",
+   "source": "pythonspeed",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Testing the compiler optimizations your code relies on",
+   "url": "https://pythonspeed.com/articles/testing-compiler-optimizations/",
+   "source": "pythonspeed",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "330× faster: Four different ways to speed up your code",
+   "url": "https://pythonspeed.com/articles/different-ways-speed/",
+   "source": "pythonspeed",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Loading Pydantic models from JSON without running out of memory",
+   "url": "https://pythonspeed.com/articles/pydantic-json-memory/",
+   "source": "pythonspeed",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The USB interposer",
+   "url": "https://qsantos.fr/2026/09/17/the-usb-interposer/",
+   "source": "qsantos",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My first PCB: AIC3204 eval board",
+   "url": "https://qsantos.fr/2026/09/06/my-first-pcb-aic3204-eval-board/",
+   "source": "qsantos",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A few spikes in Pico cos()",
+   "url": "https://qsantos.fr/2026/08/15/a-few-spikes-in-pico-cos/",
+   "source": "qsantos",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The RP2350 is too fast",
+   "url": "https://qsantos.fr/2026/05/15/the-rp2350-is-too-fast/",
+   "source": "qsantos",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Asynchronous I²C in C",
+   "url": "https://qsantos.fr/2026/01/24/asynchronous-i%c2%b2c-in-c/",
+   "source": "qsantos",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "(No) alternatives to the RP2350-USB-A",
+   "url": "https://qsantos.fr/2026/01/07/no-alternatives-to-the-rp2350-usb-a/",
+   "source": "qsantos",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The RP2350-USB-A cannot see devices disconnect",
+   "url": "https://qsantos.fr/2026/01/01/the-rp2350-usb-a-cannot-see-devices-disconnect/",
+   "source": "qsantos",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fixing the RP2350-USB-A not working as USB host",
+   "url": "https://qsantos.fr/2025/11/21/fixing-the-rp2350-usb-a-not-working-as-usb-host/",
+   "source": "qsantos",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The serial TX path seems to be down",
+   "url": "https://qsantos.fr/2025/08/11/the-serial-tx-path-seems-to-be-down/",
+   "source": "qsantos",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Transistors in reverse and redundant circuits",
+   "url": "https://qsantos.fr/2025/07/06/transistors-in-reverse-and-redundant-circuits/",
+   "source": "qsantos",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making features generic in CSS",
+   "url": "https://rachelandrew.co.uk/archives/2026/11/02/making-features-generic-in-css/",
+   "source": "rachelandrewco",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "More than words",
+   "url": "https://rachelandrew.co.uk/archives/2026/09/30/more-than-words/",
+   "source": "rachelandrewco",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Remove start and end margins with the margin-trim property",
+   "url": "https://rachelandrew.co.uk/archives/2026/09/15/remove-start-and-end-margins-with-the-margin-trim-property/",
+   "source": "rachelandrewco",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS Layout News in the ATmosphere",
+   "url": "https://rachelandrew.co.uk/archives/2026/09/04/css-layout-news-in-the-atmosphere/",
+   "source": "rachelandrewco",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Multiple-column layout, rows, rules, and floats",
+   "url": "https://rachelandrew.co.uk/archives/2026/08/24/multiple-column-layout-rows-rules-and-floats/",
+   "source": "rachelandrewco",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How do we talk about atproto to non-developers?",
+   "url": "https://rachelandrew.co.uk/archives/2026/07/31/how-do-we-talk-about-atproto-to-non-developers/",
+   "source": "rachelandrewco",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Understanding AT Protocol",
+   "url": "https://rachelandrew.co.uk/archives/2026/07/30/understanding-at-protocol/",
+   "source": "rachelandrewco",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Over 15 years of conference speaking",
+   "url": "https://rachelandrew.co.uk/archives/2026/07/20/over-15-years-of-conference-speaking/",
+   "source": "rachelandrewco",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Where’s the holistic AI productivity data?",
+   "url": "https://rachelandrew.co.uk/archives/2026/06/11/wheres-the-holistic-ai-productivity-data/",
+   "source": "rachelandrewco",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Joining the atmosphere",
+   "url": "https://rachelandrew.co.uk/archives/2026/05/31/joining-the-atmosphere/",
+   "source": "rachelandrewco",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How long have we got before the agent output is enshittified?",
+   "url": "https://rachsmith.com/how-long-until-agent-output-turns-to-shit",
+   "source": "rachsmith",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://rachsmith.com/2026-11-13-10-02",
+   "source": "rachsmith",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The new site",
+   "url": "https://rachsmith.com/the-new-site",
+   "source": "rachsmith",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A return and a redesign",
+   "url": "https://rachsmith.com/return-and-redesign",
+   "source": "rachsmith",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://rachsmith.com/2025-11-22-14-29",
+   "source": "rachsmith",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://rachsmith.com/2025-10-27-12-33",
+   "source": "rachsmith",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Who needs a flying car when you have display: grid",
+   "url": "https://rachsmith.com/who-needs-a-flying-car",
+   "source": "rachsmith",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A letter to myself: Strategies",
+   "url": "https://rachsmith.com/strategies",
+   "source": "rachsmith",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://rachsmith.com/2025-10-03-11-56",
+   "source": "rachsmith",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://rachsmith.com/2025-09-25-10-08",
+   "source": "rachsmith",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Month notes & numbers No. 16",
+   "url": "https://rachsmith.com/mnan-16",
+   "source": "rachsmith",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://rachsmith.com/2025-08-26-05-30",
+   "source": "rachsmith",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://rachsmith.com/2025-08-23-08-38",
+   "source": "rachsmith",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://rachsmith.com/2025-08-10-13-23",
+   "source": "rachsmith",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Month notes & numbers No. 15",
+   "url": "https://rachsmith.com/mnan-15",
+   "source": "rachsmith",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A practical guide to WebAssembly memory",
+   "url": "https://radu-matei.com/blog/practical-guide-to-wasm-memory/",
+   "source": "radumatei",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From (C)Go to Rust: A practical guide to building shared and static libraries, linking, and FFI",
+   "url": "https://radu-matei.com/blog/from-go-to-rust-static-linking-ffi/",
+   "source": "radumatei",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Raspberry Pi SpinKube livestream",
+   "url": "https://radu-matei.com/notes/pi-cluster-stream/",
+   "source": "radumatei",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trying something new",
+   "url": "https://radu-matei.com/notes/trying-something-new/",
+   "source": "radumatei",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Fermyon Serverless AI",
+   "url": "https://radu-matei.com/blog/introducing-fermyon-serverless-ai/",
+   "source": "radumatei",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Spin 1.0 — The Developer Tool for Serverless WebAssembly",
+   "url": "https://radu-matei.com/blog/introducing-spin-v1/",
+   "source": "radumatei",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Six Ways of Optimizing WebAssembly",
+   "url": "https://radu-matei.com/blog/six-ways-optimize-webassembly/",
+   "source": "radumatei",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building host implementations for WebAssembly interfaces",
+   "url": "https://radu-matei.com/blog/wasm-components-host-implementations/",
+   "source": "radumatei",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introduction to WebAssembly components",
+   "url": "https://radu-matei.com/blog/intro-wasm-components/",
+   "source": "radumatei",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Neural network inferencing for PyTorch and TensorFlow with ONNX, WebAssembly System Interface, and WASI NN",
+   "url": "https://radu-matei.com/blog/wasi-nn-onnx/",
+   "source": "radumatei",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using Azure services from WebAssembly modules",
+   "url": "https://radu-matei.com/blog/using-azure-services-wasi/",
+   "source": "radumatei",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Updates on WAGI, the WebAssembly Gateway Interface",
+   "url": "https://radu-matei.com/blog/wagi-updates/",
+   "source": "radumatei",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An experimental outbound HTTP library for the WebAssembly System Interface",
+   "url": "https://radu-matei.com/blog/wasi-experimental-http/",
+   "source": "radumatei",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A simple WebAssembly linker in JavaScript",
+   "url": "https://radu-matei.com/blog/a-simple-wasm-linker-js/",
+   "source": "radumatei",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TensorFlow inferencing using WebAssembly and WASI",
+   "url": "https://radu-matei.com/blog/tensorflow-inferencing-wasi/",
+   "source": "radumatei",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Day 16 – Post Removed",
+   "url": "https://raku-advent.blog/2026/02/28/day-16-post-removed/",
+   "source": "rakuadvent",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Day 25 – Raku 2025 Review",
+   "url": "https://raku-advent.blog/2025/12/25/day-25-raku-2025-review/",
+   "source": "rakuadvent",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Day 24 – Maze Making Using Graphs",
+   "url": "https://raku-advent.blog/2025/12/24/day-24-maze-making-using-graphs/",
+   "source": "rakuadvent",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Day 23 – A Day Late and A Fish Short",
+   "url": "https://raku-advent.blog/2025/12/23/day-23-a-day-late-and-a-fish-short/",
+   "source": "rakuadvent",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Day 22 – Numerically 2026 Is Unremarkable Yet Happy",
+   "url": "https://raku-advent.blog/2025/12/22/day-22-numerically-2026-is-unremarkable-yet-happy/",
+   "source": "rakuadvent",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Day 21 – A Terminal’s Tale",
+   "url": "https://raku-advent.blog/2025/12/21/a-terminals-tale/",
+   "source": "rakuadvent",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Day 20 – We’re Walking On The Air",
+   "url": "https://raku-advent.blog/2025/12/20/day-20-were-walking-on-the-air/",
+   "source": "rakuadvent",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Day 19 – Welcome to the Megadungeon",
+   "url": "https://raku-advent.blog/2025/12/19/day-19-welcome-to-the-megadungeon/",
+   "source": "rakuadvent",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Day 18 – Hallo, Wêreld!",
+   "url": "https://raku-advent.blog/2025/12/18/day-18-hallo-wereld/",
+   "source": "rakuadvent",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Day 17 – An issue with evaluation",
+   "url": "https://raku-advent.blog/2025/12/17/day-17-an-issue-with-evaluation/",
+   "source": "rakuadvent",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Adapting Software: A Case for Generalists",
+   "url": "https://randomactsofarchitecture.com/2022/09/26/adapting-software-a-case-for-generalists/",
+   "source": "randomactsofarchitecture",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "IBM zDay",
+   "url": "https://randomactsofarchitecture.com/2022/09/14/ibm-zday/",
+   "source": "randomactsofarchitecture",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Separating the Wheat from the Chaff: Unpacking Professional Opinions",
+   "url": "https://randomactsofarchitecture.com/2022/05/09/separating-the-wheat-from-the-chaff-unpacking-professional-opinions/",
+   "source": "randomactsofarchitecture",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Twitter will never outsource its algorithm",
+   "url": "https://randomactsofarchitecture.com/2022/04/17/twitter-will-never-outsource-its-algorithm/",
+   "source": "randomactsofarchitecture",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "If it were easy, we would not need good IT architects",
+   "url": "https://randomactsofarchitecture.com/2021/09/05/if-it-were-easy-we-would-not-need-good-it-architects/",
+   "source": "randomactsofarchitecture",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Power of Alternatives",
+   "url": "https://randomactsofarchitecture.com/2021/07/12/the-power-of-alternatives/",
+   "source": "randomactsofarchitecture",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Problem with Agile Transformations",
+   "url": "https://randomactsofarchitecture.com/2021/07/05/the-problem-with-agile-transformations/",
+   "source": "randomactsofarchitecture",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Who moved my toast?",
+   "url": "https://randomactsofarchitecture.com/2020/04/25/who-moved-my-toast/",
+   "source": "randomactsofarchitecture",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Information security meets scaled Agile",
+   "url": "https://randomactsofarchitecture.com/2019/07/19/3478/",
+   "source": "randomactsofarchitecture",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Architecture as Persuasion",
+   "url": "https://randomactsofarchitecture.com/2019/04/30/architecture-as-persuasion/",
+   "source": "randomactsofarchitecture",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -38701,6 +39649,526 @@
    "metric": "feed rank"
   },
   {
+   "title": "React 19.3",
+   "url": "https://react.dev/blog/2026/09/09/react-19-3",
+   "source": "react",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The React Foundation: A New Home for React Hosted by the Linux Foundation",
+   "url": "https://react.dev/blog/2026/02/24/the-react-foundation",
+   "source": "react",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Denial of Service and Source Code Exposure in React Server Components",
+   "url": "https://react.dev/blog/2025/12/11/denial-of-service-and-source-code-exposure-in-react-server-components",
+   "source": "react",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Critical Security Vulnerability in React Server Components",
+   "url": "https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components",
+   "source": "react",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React Conf 2025 Recap",
+   "url": "https://react.dev/blog/2025/10/16/react-conf-2025-recap",
+   "source": "react",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React Compiler v1.0",
+   "url": "https://react.dev/blog/2025/10/07/react-compiler-1",
+   "source": "react",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing the React Foundation",
+   "url": "https://react.dev/blog/2025/10/07/introducing-the-react-foundation",
+   "source": "react",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React 19.2",
+   "url": "https://react.dev/blog/2025/10/01/react-19-2",
+   "source": "react",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React Labs: View Transitions, Activity, and more",
+   "url": "https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more",
+   "source": "react",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sunsetting Create React App",
+   "url": "https://react.dev/blog/2025/02/14/sunsetting-create-react-app",
+   "source": "react",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React v19",
+   "url": "https://react.dev/blog/2024/12/05/react-19",
+   "source": "react",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React Compiler Beta Release",
+   "url": "https://react.dev/blog/2024/10/21/react-compiler-beta-release",
+   "source": "react",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React Conf 2024 Recap",
+   "url": "https://react.dev/blog/2024/05/22/react-conf-2024-recap",
+   "source": "react",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React 19 Upgrade Guide",
+   "url": "https://react.dev/blog/2024/04/25/react-19-upgrade-guide",
+   "source": "react",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React Labs: What We've Been Working On – February 2024",
+   "url": "https://react.dev/blog/2024/02/15/react-labs-what-we-have-been-working-on-february-2024",
+   "source": "react",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "18 Books I Enjoyed in 2021",
+   "url": "https://reaganray.com/2022/01/19/18-books-2021.html",
+   "source": "reaganray",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Richard Amsel Movie Posters",
+   "url": "https://reaganray.com/2021/07/27/richard-amsel.html",
+   "source": "reaganray",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nick at Nite Lettering",
+   "url": "https://reaganray.com/2021/07/02/nick-at-nite-lettering.html",
+   "source": "reaganray",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Books about VHS",
+   "url": "https://reaganray.com/2021/06/09/vhs-books.html",
+   "source": "reaganray",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Greatest Hair Band Albums of All-Time",
+   "url": "https://reaganray.com/2021/05/19/hair-band-albums.html",
+   "source": "reaganray",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Books about Marvel",
+   "url": "https://reaganray.com/2021/05/06/marvel-books.html",
+   "source": "reaganray",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Best Picture Lettering",
+   "url": "https://reaganray.com/2021/04/23/best-picture-lettering.html",
+   "source": "reaganray",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Marvel Superhero Lettering",
+   "url": "https://reaganray.com/2021/04/06/marvel-lettering.html",
+   "source": "reaganray",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2021 Redesign or&#58; How I Learned to Stop Art Directing and Love the Blog",
+   "url": "https://reaganray.com/2021/03/05/2021-redesign.html",
+   "source": "reaganray",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "14 Books I Enjoyed in 2020",
+   "url": "https://reaganray.com/2021/01/20/14-books-2020.html",
+   "source": "reaganray",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "30 Christmas Singles",
+   "url": "https://reaganray.com/2020/12/18/christmas-45s.html",
+   "source": "reaganray",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hair Band Lettering",
+   "url": "https://reaganray.com/2020/12/04/hair-band-lettering.html",
+   "source": "reaganray",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dr. No: A Visual Tribute to Sean Connery",
+   "url": "https://reaganray.com/2020/11/17/dr-no.html",
+   "source": "reaganray",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "12 Jazz Piano Albums",
+   "url": "https://reaganray.com/2020/10/23/jazz-piano-albums.html",
+   "source": "reaganray",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "12 Jazz Saxophone Albums",
+   "url": "https://reaganray.com/2020/10/16/jazz-saxophone-albums.html",
+   "source": "reaganray",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Reddit Reviews",
+   "url": "https://redditinc.com/news/introducing-reddit-reviews",
+   "source": "redditinc",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The People's Fashion Index",
+   "url": "https://redditinc.com/news/the-peoples-fashion-index",
+   "source": "redditinc",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We Are Testing Ad Placements in Reddit Search Pages",
+   "url": "https://redditinc.com/news/we-are-testing-ad-placements-in-reddit-search-pages",
+   "source": "redditinc",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Explore More Communities with Reddit’s New Feed Updates",
+   "url": "https://redditinc.com/news/explore-more-communities-with-reddits-new-feed-updates",
+   "source": "redditinc",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Supporting Civic Knowledge and Participation for the 2026 US Elections",
+   "url": "https://redditinc.com/news/supporting-civic-knowledge-and-participation-for-the-2026-us-elections",
+   "source": "redditinc",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Maria Angelidou-Smith to Depart Reddit",
+   "url": "https://redditinc.com/news/maria-angelidou-smith-to-depart-reddit-1",
+   "source": "redditinc",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reddit Launches Enhanced Capabilities for Lead Generation",
+   "url": "https://redditinc.com/news/reddit-launches-enhanced-capabilities-for-lead-generation",
+   "source": "redditinc",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Performance unlocked: Reddit Max campaigns are now available to all advertisers",
+   "url": "https://redditinc.com/news/performance-unlocked-reddit-max-campaigns-are-now-available-to-all-advertisers",
+   "source": "redditinc",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reddit Will Be Added to the S&P 500",
+   "url": "https://redditinc.com/news/reddit-will-be-added-to-the-s-p-500",
+   "source": "redditinc",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Paul Cappuccio Named Reddit’s New Chief Legal Officer",
+   "url": "https://redditinc.com/news/paul-cappuccio-named-reddits-new-chief-legal-officer",
+   "source": "redditinc",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Memory Police [book]",
+   "url": "https://remysharp.com/books/2026/the-memory-police",
+   "source": "remysharp",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My 2027 Web Platform Feature Ranking [blog]",
+   "url": "https://remysharp.com/2026/10/29/my-2027-web-platform-feature-ranking",
+   "source": "remysharp",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "As You Wake, Break the Shell [book]",
+   "url": "https://remysharp.com/books/2026/as-you-wake-break-the-shell-as-you-wake-break-the-shell-1",
+   "source": "remysharp",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI can operate a screen reader. What does that actually test? [link]",
+   "url": "https://remysharp.com/links/2026-10-19-c4c792d9",
+   "source": "remysharp",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Correspondent [book]",
+   "url": "https://remysharp.com/books/2026/the-correspondent",
+   "source": "remysharp",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My AI policy [blog]",
+   "url": "https://remysharp.com/2026/10/12/my-ai-policy",
+   "source": "remysharp",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tell Me Everything (Amgash, #5) [book]",
+   "url": "https://remysharp.com/books/2026/tell-me-everything-amgash-5",
+   "source": "remysharp",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Firefox version 157 is very round (and how to make it less round) – creolened.com [link]",
+   "url": "https://remysharp.com/links/2026-10-03-fa9a3136",
+   "source": "remysharp",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "There are no \"rogue\" AI agents [link]",
+   "url": "https://remysharp.com/links/2026-09-28-ddc968f8",
+   "source": "remysharp",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Trump team wants to automate U.S. Web Design System accessibility testing. Experts are worried. [link]",
+   "url": "https://remysharp.com/links/2026-09-27-cf35a924",
+   "source": "remysharp",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Redesign: fonts, alignment and nav [blog]",
+   "url": "https://remysharp.com/2026/09/26/redesign-fonts-alignment-and-nav",
+   "source": "remysharp",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dungeon Crawler Carl (Dungeon Crawler Carl, #1) [book]",
+   "url": "https://remysharp.com/books/2026/dungeon-crawler-carl-dungeon-crawler-carl-1",
+   "source": "remysharp",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "tip turn on dns over https doh [link]",
+   "url": "https://remysharp.com/links/2026-09-15-82704751",
+   "source": "remysharp",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Redesign '26 [blog]",
+   "url": "https://remysharp.com/2026/09/14/redesign-26",
+   "source": "remysharp",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "text-decoration-thickness discrepancies [blog]",
+   "url": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+   "source": "remysharp",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How generational differences affect consumer attitudes towards ads",
+   "url": "https://research.facebook.com/blog/2023/5/how-generational-differences-affect-consumer-attitudes-towards-ads/",
+   "source": "researchfb",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Every tree counts",
+   "url": "https://research.facebook.com/blog/2023/4/every-tree-counts-large-scale-mapping-of-canopy-height-at-the-resolution-of-individual-trees/",
+   "source": "researchfb",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How a non-traditional background led to cutting-edge XR tech",
+   "url": "https://www.metacareers.com/life/how-a-non-traditional-background-led-to-cutting-edge-xr-tech",
+   "source": "researchfb",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A new, unique AI dataset for animating amateur drawings",
+   "url": "https://ai.facebook.com/blog/ai-dataset-animation-drawings/",
+   "source": "researchfb",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How the metaverse can transform education",
+   "url": "https://about.fb.com/news/2023/04/how-the-metaverse-can-transform-education/",
+   "source": "researchfb",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build faster with Buck2: Our open source build system",
+   "url": "https://engineering.fb.com/2023/04/06/open-source/buck2-open-source-large-scale-build-system/",
+   "source": "researchfb",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing the 2023 Meta Research PhD Fellowship award winners",
+   "url": "https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/",
+   "source": "researchfb",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Segment Anything: Working toward the first foundation model for image segmentation",
+   "url": "https://ai.facebook.com/blog/segment-anything-foundation-model-image-segmentation/",
+   "source": "researchfb",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing the winners of the 2022 Foundational Integrity Research request for proposals",
+   "url": "https://research.facebook.com/blog/2023/3/announcing-the-winners-of-the-2022-foundational-integrity-research-request-for-proposals-/",
+   "source": "researchfb",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Two meta sustainability grant and scholarship recipients share impact",
+   "url": "https://sustainability.fb.com/blog/2023/03/24/two-meta-sustainability-grant-and-scholarship-recipients-share-impact/",
+   "source": "researchfb",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "AMP and Responsive Web Design",
    "url": "https://responsivenews.co.uk/post/131144968568/amp-and-responsive-web-design",
    "source": "responsivenewsco",
@@ -38896,6 +40364,542 @@
    "title": "Labor of Division (Episode III): Faster Unsigned Division by Constants",
    "url": "http://ridiculousfish.com/blog/posts/labor-of-division-episode-iii.html",
    "source": "ridiculousfish",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Knowember",
+   "url": "https://rknight.me/blog/knowember/",
+   "source": "rknight",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weeknotes #2026",
+   "url": "https://rknight.me/blog/weeknotes-2026/",
+   "source": "rknight",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Jaffa Cake Jaffa Cam Review",
+   "url": "https://rknight.me/blog/jaffa-cake-jaffa-cam-review/",
+   "source": "rknight",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weeknote #2025",
+   "url": "https://rknight.me/blog/weeknote-2025/",
+   "source": "rknight",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "St Jude Drawings Gallery",
+   "url": "https://rknight.me/blog/st-jude-drawings-gallery/",
+   "source": "rknight",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weeknote #2024",
+   "url": "https://rknight.me/blog/weeknote-2024/",
+   "source": "rknight",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fixing Illustrations on a Dark Background with CSS",
+   "url": "https://rknight.me/blog/fixing-illustrations-on-a-dark-background-with-css/",
+   "source": "rknight",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Remove Valance Endcaps from Primrose Awning",
+   "url": "https://rknight.me/blog/remove-valance-endcaps-from-primrose-awning/",
+   "source": "rknight",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weeknote #2023",
+   "url": "https://rknight.me/blog/weeknote-2023/",
+   "source": "rknight",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fix Kindle Stuck in Sign In Loop",
+   "url": "https://rknight.me/blog/fix-kindle-stuck-in-sign-in-loop/",
+   "source": "rknight",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weeknote #2022",
+   "url": "https://rknight.me/blog/weeknote-2022/",
+   "source": "rknight",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Now (October 2026)",
+   "url": "https://rknight.me/blog/now-october-2026/",
+   "source": "rknight",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weeknote #2021",
+   "url": "https://rknight.me/blog/weeknote-2021/",
+   "source": "rknight",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "St Jude 2026 Recap",
+   "url": "https://rknight.me/blog/st-jude-2026-recap/",
+   "source": "rknight",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kodak Charmera Review",
+   "url": "https://rknight.me/blog/kodak-charmera-review/",
+   "source": "rknight",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How not to complain about peer review",
+   "url": "https://rmarcus.info/blog/2026/07/10/peer-review.html",
+   "source": "rmarcus",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Compiled and vectorized evaluation in columnar engines",
+   "url": "https://rmarcus.info/blog/2026/06/18/partial-vs-full-predicate.html",
+   "source": "rmarcus",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Neo, 6 years and 600 citations later",
+   "url": "https://rmarcus.info/blog/2025/12/15/neo600.html",
+   "source": "rmarcus",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2024's hottest topics in databases (a bibliometric approach)",
+   "url": "https://rmarcus.info/blog/2025/03/28/hottest-db-topics.html",
+   "source": "rmarcus",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Related work search for database papers",
+   "url": "https://rmarcus.info/blog/2025/02/02/related-work.html",
+   "source": "rmarcus",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ten years of improvements in PostgreSQL's optimizer",
+   "url": "https://rmarcus.info/blog/2024/04/12/pg-over-time.html",
+   "source": "rmarcus",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Most influential database papers",
+   "url": "https://rmarcus.info/blog/2023/07/25/papers.html",
+   "source": "rmarcus",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generating bios with large language models",
+   "url": "https://rmarcus.info/blog/2022/12/20/instant-bio.html",
+   "source": "rmarcus",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Applying Bao to distributed systems",
+   "url": "https://rmarcus.info/blog/2021/06/17/bao-distributed.html",
+   "source": "rmarcus",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Machine learning for systems",
+   "url": "https://rmarcus.info/blog/2019/06/06/ml4sys-in-your-browser.html",
+   "source": "rmarcus",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Good comment, bad comment",
+   "url": "https://rmarcus.info/blog/2018/11/05/good-bad-comment.html",
+   "source": "rmarcus",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Overflow in consistent hashing",
+   "url": "https://rmarcus.info/blog/2018/09/14/consistent-hashing-overflow.html",
+   "source": "rmarcus",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pretty pictures with Perlin noise fields",
+   "url": "https://rmarcus.info/blog/2018/03/04/perlin-noise.html",
+   "source": "rmarcus",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Computer-generated lines with a human feel",
+   "url": "https://rmarcus.info/blog/2017/10/23/humanlines.html",
+   "source": "rmarcus",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The often-overlooked random forest kernel",
+   "url": "https://rmarcus.info/blog/2017/10/04/rfk.html",
+   "source": "rmarcus",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Identiverse 2026 Keynote: Get the Most out of Passkeys",
+   "url": "https://rmondello.com/2026/09/20/identiverse-2026-keynote-passkeys/",
+   "source": "rmondello",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Switching Password Managers in 2026",
+   "url": "https://rmondello.com/2026/09/07/switching-password-managers-2026/",
+   "source": "rmondello",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I’m Doing at the End of 2025",
+   "url": "https://rmondello.com/2025/12/30/how-im-doing-at-the-end-of-2025/",
+   "source": "rmondello",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Authenticate Conference 2025 Keynote: Get the Most Out of Passkeys",
+   "url": "https://rmondello.com/2025/11/07/authenticate-conference-2025-keynote-get-the-most-out-of-passkeys/",
+   "source": "rmondello",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I Co-wrote a Post on the swift.org Blog",
+   "url": "https://rmondello.com/2025/07/04/i-co-wrote-a-post-on-the-swift-org-blog/",
+   "source": "rmondello",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Magic Links Have Rough Edges, but Passkeys Can Smooth Them Over",
+   "url": "https://rmondello.com/2025/01/02/magic-links-and-passkeys/",
+   "source": "rmondello",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple Passwords’ Generated Strong Password Format",
+   "url": "https://rmondello.com/2024/10/07/apple-passwords-generated-strong-password-format/",
+   "source": "rmondello",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Quirks in the Password Manager Resources open source project",
+   "url": "https://rmondello.com/2024/09/29/new-quirks-who-dis/",
+   "source": "rmondello",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "XOXO",
+   "url": "https://rmondello.com/2024/09/21/xoxo/",
+   "source": "rmondello",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Consider Slowing Down When Switching Password Managers",
+   "url": "https://rmondello.com/2024/09/19/consider-slowing-down-when-switching-password-managers/",
+   "source": "rmondello",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Changes",
+   "url": "https://rmondello.com/2023/12/28/changes/",
+   "source": "rmondello",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Twitter’s Decision to Limit SMS 2FA is Dangerous",
+   "url": "https://rmondello.com/2023/02/18/twitter-sms-2fa/",
+   "source": "rmondello",
+   "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Eng ladders, promotions & glue work",
+   "url": "https://rmurphey.com/posts/eng-ladder-glue-work/",
+   "source": "rmurphey",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "all too well.",
+   "url": "https://rmurphey.com/posts/all-too-well/",
+   "source": "rmurphey",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing effectively in software engineering organizations",
+   "url": "https://rmurphey.com/posts/writing-effectively-software-engineering/",
+   "source": "rmurphey",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Raspberry Pi setup notes",
+   "url": "https://rmurphey.com/posts/raspberry-pi-setup/",
+   "source": "rmurphey",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On micro-frontends",
+   "url": "https://rmurphey.com/posts/on-micro-frontends/",
+   "source": "rmurphey",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Effective storytelling for internal platform teams",
+   "url": "https://rmurphey.com/posts/effective-storytelling-internal-platforms/",
+   "source": "rmurphey",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Notes on setting up a JS project, circa 2016: ESLint",
+   "url": "https://rmurphey.com/posts/notes-on-setting-up-js-project-2016-eslint/",
+   "source": "rmurphey",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Notes on setting up a JS project, circa 2016: Babel and ES6",
+   "url": "https://rmurphey.com/posts/notes-on-setting-up-js-project-2016-babel-es6/",
+   "source": "rmurphey",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Notes on setting up a JS project, circa 2016: Webpack",
+   "url": "https://rmurphey.com/posts/notes-on-setting-up-js-project-2016-webpack/",
+   "source": "rmurphey",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Indeed",
+   "url": "https://rmurphey.com/posts/indeed/",
+   "source": "rmurphey",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advent of Code Solve Times",
+   "url": "https://roadtolarissa.com/advent-of-code",
+   "source": "roadtolarissa",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2024 Live Forecasts",
+   "url": "https://roadtolarissa.com/live-forecast-2024",
+   "source": "roadtolarissa",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NYC Feed",
+   "url": "https://roadtolarissa.com/nyc-feed",
+   "source": "roadtolarissa",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2022 Live Forecasts",
+   "url": "https://roadtolarissa.com/live-forecast-2022",
+   "source": "roadtolarissa",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Best Picture Winners Aren't Hits Anymore",
+   "url": "https://roadtolarissa.com/box-office-hits",
+   "source": "roadtolarissa",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Static RSS Reader",
+   "url": "https://roadtolarissa.com/static-rss",
+   "source": "roadtolarissa",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fox Forecasts Over Time",
+   "url": "https://roadtolarissa.com/fox-forecast",
+   "source": "roadtolarissa",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Election Forecast Correlations",
+   "url": "https://roadtolarissa.com/forecast-correlation",
+   "source": "roadtolarissa",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NBA Playoff Probabilities",
+   "url": "https://roadtolarissa.com/playoff-probabilities",
+   "source": "roadtolarissa",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You Regress It: Have Masks Prevented 66,000 Infections in New York City?",
+   "url": "https://roadtolarissa.com/regression-discontinuity",
+   "source": "roadtolarissa",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pitchfork's Best of the Year Over the Decade",
+   "url": "https://roadtolarissa.com/pitchfork",
+   "source": "roadtolarissa",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Faster Tooltips for Canvas",
+   "url": "https://roadtolarissa.com/scan-sorted",
+   "source": "roadtolarissa",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DVS, SVGs and Privacy",
+   "url": "https://roadtolarissa.com/dvs-privacy",
+   "source": "roadtolarissa",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7 Train Signal Upgrades Complete After Years of Delays. Up Next: The Rest of the Subway.",
+   "url": "https://roadtolarissa.com/flushing-cbtc-finished",
+   "source": "roadtolarissa",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2018 Worlds Group Advancement",
+   "url": "https://roadtolarissa.com/worlds-group-2018",
+   "source": "roadtolarissa",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
