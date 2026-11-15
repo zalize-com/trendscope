@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:08:29.677960+00:00",
+ "generated_at": "2026-11-15T16:09:55.270141+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1392,
- "new_items": 1266,
+ "total_items": 1437,
+ "new_items": 1311,
  "by_source": {
   "producthunt": 45,
   "show_hn": 30,
@@ -33,6 +33,7 @@
   "echojs": 15,
   "elastic": 15,
   "etsy": 15,
+  "geshan": 15,
   "gitlab_blog": 15,
   "grumpyg": 15,
   "hillel": 15,
@@ -46,6 +47,8 @@
   "martinfowler": 15,
   "mitchw": 15,
   "mongodb": 15,
+  "mtlynch": 15,
+  "nelhage": 15,
   "overreacted": 15,
   "philopp": 15,
   "pragmatic": 15,
@@ -3453,6 +3456,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "41 things about how software engineering has changed in 2026 because of AI, LLMs, and coding agents",
+   "url": "https://geshan.com.np/blog/2026/10/ai-software-engineering/",
+   "source": "geshan",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to clone your own voice to use for text to speech with Gemini on Google AI Studio",
+   "url": "https://geshan.com.np/blog/2026/10/gemini-text-to-speech/",
+   "source": "geshan",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "3 almost hidden Google Gemini features you should start leveraging today",
+   "url": "https://geshan.com.np/blog/2026/07/google-gemini-features/",
+   "source": "geshan",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to use /goal to add last updated at feature to an Eleventy blog in Antigravity IDE with a single prompt",
+   "url": "https://geshan.com.np/blog/2026/06/google-antigravity-goal/",
+   "source": "geshan",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to deploy a Google Agent Development Kit (ADK) agent to Google Cloud Run",
+   "url": "https://geshan.com.np/blog/2026/06/google-adk-deploy/",
+   "source": "geshan",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting Started with Google Agent Development Kit (ADK): Build and Run Your Simple Fact-Checker AI Agent",
+   "url": "https://geshan.com.np/blog/2026/05/google-adk-tutorial/",
+   "source": "geshan",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using Spec Driven Development with AWS Kiro to add the last updated date on Eleventy blog",
+   "url": "https://geshan.com.np/blog/2026/05/aws-kiro/",
+   "source": "geshan",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to build a simple Google login and profile page on Google AI Studio with Firebase as a datastore [step-by-step]",
+   "url": "https://geshan.com.np/blog/2026/03/google-ai-studio-database/",
+   "source": "geshan",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Choosing the best git branching strategy for continuous delivery in your team",
+   "url": "https://geshan.com.np/blog/2026/03/git-branching-strategy-for-continuous-delivery/",
+   "source": "geshan",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to use an open model with your application using Docker Model Runner and Docker Compose [Part 2]",
+   "url": "https://geshan.com.np/blog/2026/01/docker-model-runner-docker-compose/",
+   "source": "geshan",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Docker Model Runner: A beginner’s guide to running open models on your own machine [Part 1]",
+   "url": "https://geshan.com.np/blog/2026/01/docker-model-runner/",
+   "source": "geshan",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Recap 2025: Blogging, public speaking, tech community work, and other things",
+   "url": "https://geshan.com.np/blog/2025/12/recap-2025/",
+   "source": "geshan",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to use Gemini Live audio as an interviewer for a software engineering job (with video)",
+   "url": "https://geshan.com.np/blog/2025/12/gemini-live-audio/",
+   "source": "geshan",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to create a hair style changer app using Gemini 3 on Google AI Studio",
+   "url": "https://geshan.com.np/blog/2025/11/gemini-3-ai/",
+   "source": "geshan",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to use NotebookLM: A practical guide with examples",
+   "url": "https://geshan.com.np/blog/2025/11/how-to-use-notebooklm/",
+   "source": "geshan",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Inside GitHub&#8217;s new Git storage architecture",
    "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
    "source": "github_eng",
@@ -6301,6 +6424,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "The MustCreate Pattern for Go Tests",
+   "url": "https://mtlynch.io/notes/go-must-create-pattern/",
+   "source": "mtlynch",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refactoring English: Month 22",
+   "url": "https://mtlynch.io/retrospectives/2026/10/",
+   "source": "mtlynch",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Are Coding Agents So Dumb?",
+   "url": "https://mtlynch.io/why-are-coding-agents-so-dumb/",
+   "source": "mtlynch",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refactoring English: Month 21",
+   "url": "https://mtlynch.io/retrospectives/2026/09/",
+   "source": "mtlynch",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refactoring English: Month 20",
+   "url": "https://mtlynch.io/retrospectives/2026/08/",
+   "source": "mtlynch",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refactoring English: Month 19",
+   "url": "https://mtlynch.io/retrospectives/2026/07/",
+   "source": "mtlynch",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refactoring English: Month 18",
+   "url": "https://mtlynch.io/retrospectives/2026/06/",
+   "source": "mtlynch",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refactoring English: Month 17",
+   "url": "https://mtlynch.io/retrospectives/2026/05/",
+   "source": "mtlynch",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refactoring English: Month 16",
+   "url": "https://mtlynch.io/retrospectives/2026/04/",
+   "source": "mtlynch",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Claude Code Found a Linux Vulnerability Hidden for 23 Years",
+   "url": "https://mtlynch.io/claude-code-found-linux-vulnerability/",
+   "source": "mtlynch",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refactoring English: Month 15",
+   "url": "https://mtlynch.io/retrospectives/2026/03/",
+   "source": "mtlynch",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refactoring English: Month 14",
+   "url": "https://mtlynch.io/retrospectives/2026/02/",
+   "source": "mtlynch",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Eversource EV Rebate Program Exposed Massachusetts Customer Data",
+   "url": "https://mtlynch.io/eversource-resource-innovations-exposure/",
+   "source": "mtlynch",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Eighth Year as a Bootstrapped Founder",
+   "url": "https://mtlynch.io/bootstrapped-founder-year-8/",
+   "source": "mtlynch",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refactoring English: Month 13",
+   "url": "https://mtlynch.io/retrospectives/2026/01/",
+   "source": "mtlynch",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Does meditation experience improve success with the jhanas?",
    "url": "http://nadia.xyz/meditation-experience",
    "source": "nadia",
@@ -6377,6 +6620,126 @@
    "url": "http://nadia.xyz/science-funding",
    "source": "nadia",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From error-handling to structured concurrency",
+   "url": "https://blog.nelhage.com/post/concurrent-error-handling/",
+   "source": "nelhage",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Solving regex crosswords with Z3",
+   "url": "https://blog.nelhage.com/post/regex-crosswords-z3/",
+   "source": "nelhage",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The ITTAGE indirect branch predictor",
+   "url": "https://blog.nelhage.com/post/ittage-branch-predictor/",
+   "source": "nelhage",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Performance of the Python 3.14 tail-call interpreter",
+   "url": "https://blog.nelhage.com/post/cpython-tail-call/",
+   "source": "nelhage",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building personal software with Claude",
+   "url": "https://blog.nelhage.com/post/personal-software-with-claude/",
+   "source": "nelhage",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding near-duplicates with Jaccard similarity and MinHash",
+   "url": "https://blog.nelhage.com/post/fuzzy-dedup/",
+   "source": "nelhage",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stripe's monorepo developer environment",
+   "url": "https://blog.nelhage.com/post/stripe-dev-environment/",
+   "source": "nelhage",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Performance engineering, profilers, and seeing the invisible",
+   "url": "https://blog.nelhage.com/post/profilers-seeing-the-invisible/",
+   "source": "nelhage",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advent of Code in C++ Template Metaprogramming",
+   "url": "https://blog.nelhage.com/post/advent-of-templates/",
+   "source": "nelhage",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's with ML software and pickles?",
+   "url": "https://blog.nelhage.com/post/pickles-and-ml/",
+   "source": "nelhage",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Graceful behavior at capacity",
+   "url": "https://blog.nelhage.com/post/systems-at-capacity/",
+   "source": "nelhage",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Efficiency trades off against resiliency",
+   "url": "https://blog.nelhage.com/post/efficiency-vs-resiliency/",
+   "source": "nelhage",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Transformers for software engineers",
+   "url": "https://blog.nelhage.com/post/transformers-for-software-engineers/",
+   "source": "nelhage",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Cursed Bug",
+   "url": "https://blog.nelhage.com/post/a-cursed-bug/",
+   "source": "nelhage",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Distributed cloud builds for everyone",
+   "url": "https://blog.nelhage.com/post/distributed-builds-for-everyone/",
+   "source": "nelhage",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },

@@ -118,6 +118,9 @@ A daily cross-source snapshot of developer attention:
 | Charity Majors | observability and eng leadership | `charity.wtf/feed/` |
 | Surfing Complexity | resilience engineering | `surfingcomplexity.blog/feed/` |
 | Lorin Hochstein | software essays and book notes | `lorinhochstein.wordpress.com/feed/` |
+| Geshan | software engineering tutorials | `geshan.com.np/atom.xml` |
+| mtlynch | indie hacking and SRE retros | `mtlynch.io/feed.xml` |
+| Nelson Elhage | systems and tooling deep dives | `blog.nelhage.com/atom.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

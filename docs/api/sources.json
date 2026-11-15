@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T16:08:29.790653+00:00",
+  "generated_at": "2026-11-15T16:09:55.392320+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -730,6 +730,42 @@
       "top_item": {
         "title": "If your team is happy, are you doing a good job?",
         "url": "https://charity.wtf/p/if-your-team-is-happy-are-you-doing",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "geshan": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "41 things about how software engineering has changed in 2026 because of AI, LLMs, and coding agents",
+        "url": "https://geshan.com.np/blog/2026/10/ai-software-engineering/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "mtlynch": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The MustCreate Pattern for Go Tests",
+        "url": "https://mtlynch.io/notes/go-must-create-pattern/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "nelhage": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "From error-handling to structured concurrency",
+        "url": "https://blog.nelhage.com/post/concurrent-error-handling/",
         "score": 15,
         "rank": 1
       }
