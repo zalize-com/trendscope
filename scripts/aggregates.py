@@ -267,6 +267,34 @@ def emit_history_apis(now):
                                   for k, v in sorted(topics.items())}},
                       f, ensure_ascii=False, separators=(",", ":"))
         print(f"topics.json: {len(topics)} topics x {len(days)} days")
+    # sparkline.svg — items-per-day trend, embeddable in READMEs
+    per_day = {}
+    for r in csv.DictReader(open(HIST, encoding="utf-8")):
+        per_day.setdefault(r["date"], set()).add(r["url"])
+    days = sorted(per_day)
+    if days:
+        vals = [len(per_day[d]) for d in days]
+        W, Hh, P = 200, 36, 2
+        mx = max(vals)
+        pts = " ".join(
+            f"{P + (W - 2 * P) * (i / max(1, len(vals) - 1)):.1f},{Hh - P - (Hh - 2 * P) * (v / mx):.1f}"
+            for i, v in enumerate(vals))
+        svg = (
+            f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{Hh + 14}" '
+            f'viewBox="0 0 {W} {Hh + 14}" font-family="monospace">'
+            f'<rect width="{W}" height="{Hh + 14}" fill="#0d1117" rx="4"/>'
+            f'<polyline points="{pts}" fill="none" stroke="#58a6ff" stroke-width="1.5"/>')
+        for i, v in enumerate(vals):
+            x = P + (W - 2 * P) * (i / max(1, len(vals) - 1))
+            y = Hh - P - (Hh - 2 * P) * (v / mx)
+            svg += f'<circle cx="{x:.1f}" cy="{y:.1f}" r="1.6" fill="#58a6ff"/>'
+        svg += (f'<text x="{P}" y="{Hh + 11}" font-size="8" fill="#8b949e">{days[0]}</text>'
+                f'<text x="{W - P}" y="{Hh + 11}" font-size="8" fill="#8b949e" text-anchor="end">'
+                f'{days[-1]} · {vals[-1]} items</text></svg>')
+        with open(os.path.join(API, "sparkline.svg"), "w", encoding="utf-8") as f:
+            f.write(svg)
+        print(f"sparkline.svg: {len(days)} days, latest {vals[-1]}")
+
     hpath = os.path.join(ROOT, "data", "hiring-history.csv")
     if os.path.exists(hpath):
         rows = list(csv.DictReader(open(hpath, encoding="utf-8")))

@@ -32,6 +32,7 @@ Fetch straight from GitHub raw or the Pages site (`/trendscope/…`).
 | `docs/api/series.json` | JSON | Per-item daily series: `{title, source, metric, author, days: {date: [score, rank, comments]}}` for every tracked url — the canonical feed all analytic pages read |
 | `docs/api/topics.json` | JSON | Per-topic item/score counts for every tracked day: `days` + `topics.<name>.{counts, scores}` |
 | `docs/api/hiring-history.json` | JSON | Daily captures of the monthly HN hiring/seeking/freelancer threads (captured_at/kind/comments) |
+| `docs/api/sparkline.svg` | SVG | Items-per-day trend line — `<img>`-embeddable in any README |
 | `docs/api/velocity.json` | JSON | Score growth rate for multi-day items: url/title/source/metric/days/delta/per_day/latest, sorted by +/day — rolling counters excluded |
 | `docs/api/weekday.json` | JSON | Day-of-week x source item counts — `{sources:{name:{counts:[mon..sun],total}}}` |
 | `docs/api/rhythm.json` | JSON | Hour-of-day (UTC) x source capture counts — `{sources:{name:{counts:[0..23],total}}}` |
