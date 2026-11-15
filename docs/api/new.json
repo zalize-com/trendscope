@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T15:57:56.462397+00:00",
+ "generated_at": "2026-11-15T15:59:17.450583+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1149,
- "new_items": 1023,
+ "total_items": 1161,
+ "new_items": 1035,
  "by_source": {
   "producthunt": 45,
   "show_hn": 30,
@@ -53,6 +53,7 @@
   "beesbuzz": 14,
   "theverge": 14,
   "aphyr": 12,
+  "baeldung": 12,
   "airbnb": 10,
   "birklund": 10,
   "dropbox": 10,
@@ -757,6 +758,102 @@
    "url": "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-support-all-apache-iceberg-v3-data-types/",
    "source": "aws_blog",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rate Limit Information from Anthropic API Response Headers Using ChatResponseMetadata in Spring AI",
+   "url": "https://feeds.feedblitz.com/~/972994280/0/baeldung",
+   "source": "baeldung",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using the Official OpenAI Java SDK With Spring AI",
+   "url": "https://feeds.feedblitz.com/~/972994283/0/baeldung",
+   "source": "baeldung",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Java Weekly, Issue 671",
+   "url": "https://feeds.feedblitz.com/~/972991964/0/baeldung",
+   "source": "baeldung",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Customize the OpenID Connect 1.0 UserInfo Response in Spring Authorization Server",
+   "url": "https://feeds.feedblitz.com/~/972819959/0/baeldung",
+   "source": "baeldung",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Fix the Error: Missing Artifact com.sun:tools:jar in pom.xml Files",
+   "url": "https://feeds.feedblitz.com/~/972630176/0/baeldung",
+   "source": "baeldung",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Automating Shadow DOM in Selenium WebDriver",
+   "url": "https://feeds.feedblitz.com/~/972628949/0/baeldung",
+   "source": "baeldung",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Java Weekly, Issue 670",
+   "url": "https://feeds.feedblitz.com/~/972505319/0/baeldung",
+   "source": "baeldung",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Java Weekly, Issue 669",
+   "url": "https://feeds.feedblitz.com/~/972125879/0/baeldung",
+   "source": "baeldung",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Query Transformation in Spring AI Modular RAG",
+   "url": "https://feeds.feedblitz.com/~/972117848/0/baeldung",
+   "source": "baeldung",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Handle Forwarded Headers in Spring Boot",
+   "url": "https://feeds.feedblitz.com/~/972117851/0/baeldung",
+   "source": "baeldung",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Safeguarding LLM Output in Spring AI",
+   "url": "https://feeds.feedblitz.com/~/971759387/0/baeldung",
+   "source": "baeldung",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Java Weekly, Issue 668",
+   "url": "https://feeds.feedblitz.com/~/971746664/0/baeldung",
+   "source": "baeldung",
+   "rank": 12,
    "score": 1,
    "metric": "feed rank"
   },
