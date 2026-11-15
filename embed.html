@@ -282,6 +282,18 @@ if (MODE === "watch") {
       || `<li id="err">no matches today</li>`;
   }).catch(() => { document.getElementById("err").textContent = "watch data unavailable"; });
 } else
+if (MODE === "veterans") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/oldest.html";
+  fetch("docs/api/streaks.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const vs = d.longest_all_time || [];
+    document.getElementById("date").textContent = `board veterans · ${d.days_tracked}d tracked`;
+    document.getElementById("list").innerHTML = vs.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source}</span></span>
+        <span class="score">${e.days_on_board}d</span></li>`).join("")
+      || `<li id="err">no veterans yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "streak data unavailable"; });
+} else
 if (MODE === "meteors") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/meteors.html";
   fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json()).then(d => {

@@ -82,6 +82,7 @@ const MODES = [
   ["radar", "?mode=radar"],
   ["watch", "?mode=watch&kw=rust%2Csqlite"],
   ["meteors", "?mode=meteors"],
+  ["veterans", "?mode=veterans"],
 ];
 const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
 document.getElementById("out").innerHTML = MODES.map(([name, q]) => {
