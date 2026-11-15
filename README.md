@@ -105,6 +105,13 @@ A daily cross-source snapshot of developer attention:
 | Raph Levien | GUI/text rendering and Rust UI | `raphlinus.github.io/feed.xml` |
 | Xe Iaso | tech essays and homelab lore | `xeiaso.net/blog.rss` |
 | JetBrains | IDE and tooling news | `blog.jetbrains.com/feed/` |
+| Tedinski | programming language theory | `tedinski.com/feed.xml` |
+| DRMacIver | Hypothesis and property testing | `drmaciver.substack.com/feed` |
+| matklad | rust-analyzer and compilers | `matklad.github.io/feed.xml` |
+| GrumpyOldGeek | veteran engineer commentary | `grumpyoldgeek.tumblr.com/rss` |
+| Chris Kiehl | dev tooling (Gooey author) | `chriskiehl.com/rss.xml` |
+| Dimitri Fontaine | PostgreSQL and Emacs | `tapoueh.org/index.xml` |
+| Hillel Wayne | formal methods and TLA+ | `hillelwayne.com/post/index.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

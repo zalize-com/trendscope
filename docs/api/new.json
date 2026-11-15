@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:05:35.860237+00:00",
+ "generated_at": "2026-11-15T16:07:00.484742+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1226,
- "new_items": 1100,
+ "total_items": 1322,
+ "new_items": 1196,
  "by_source": {
   "producthunt": 45,
   "show_hn": 30,
@@ -20,16 +20,21 @@
   "catonmat": 15,
   "changelog": 15,
   "cheney": 15,
+  "chriskiehl": 15,
   "cloudflare": 15,
   "codinghorror": 15,
   "codinghorror2": 15,
   "dabeaz": 15,
   "danluu": 15,
+  "dimitri": 15,
   "discord": 15,
+  "drmaciver": 15,
   "echojs": 15,
   "elastic": 15,
   "etsy": 15,
   "gitlab_blog": 15,
+  "grumpyg": 15,
+  "hillel": 15,
   "hynek": 15,
   "infoq": 15,
   "jvns": 15,
@@ -56,6 +61,7 @@
   "aphyr": 12,
   "baeldung": 12,
   "jetbrains": 12,
+  "lobsters": 11,
   "airbnb": 10,
   "birklund": 10,
   "dropbox": 10,
@@ -64,15 +70,16 @@
   "haxx": 10,
   "joelonsoftware": 10,
   "krebs": 10,
-  "lobsters": 10,
   "lucumr": 10,
   "lyft": 10,
+  "matklad": 10,
   "netflix": 10,
   "opensourcecom": 10,
   "pinterest": 10,
   "raphlinus": 10,
   "stratechery": 10,
   "stripe": 10,
+  "tedinski": 10,
   "wingolog": 10,
   "xeiaso": 10,
   "meta_eng": 9,
@@ -1456,6 +1463,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "It's still OK to enjoy programming",
+   "url": "https://chriskiehl.com/article/it-is-still-ok-to-enjoy-programming",
+   "source": "chriskiehl",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I Under-Engineered my Book",
+   "url": "https://chriskiehl.com/article/how-i-under-engineered-my-book",
+   "source": "chriskiehl",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A phenomenal amount of work to end up with a rectangle",
+   "url": "https://chriskiehl.com/article/all-this-for-a-rectangle",
+   "source": "chriskiehl",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Euglenid Motion in flagellates",
+   "url": "https://chriskiehl.com/article/euglenid-motion-in-flagellates",
+   "source": "chriskiehl",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Evolving thoughts on AI",
+   "url": "https://chriskiehl.com/article/evolving-thoughts-on-ai-2026",
+   "source": "chriskiehl",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Books Jan - June 2026",
+   "url": "https://chriskiehl.com/article/books-jan-jun-2026",
+   "source": "chriskiehl",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Data Oriented Programming in Java: Progress 2026-05-10",
+   "url": "https://chriskiehl.com/article/dopij-progress-update-2026-05-10",
+   "source": "chriskiehl",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Data Oriented Programming in Java: Progress 2026-02-21",
+   "url": "https://chriskiehl.com/article/dopij-progress-update-2026-02-21",
+   "source": "chriskiehl",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bird Seed Holder V2",
+   "url": "https://chriskiehl.com/article/a-holder-for-bird-seed-v2",
+   "source": "chriskiehl",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Data Oriented Programming in Java: Progress 2026-02-02",
+   "url": "https://chriskiehl.com/article/dopij-progress-update-2026-02-02",
+   "source": "chriskiehl",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Data Oriented Programming in Java: Progress 2026-01-27",
+   "url": "https://chriskiehl.com/article/dopij-progress-update-2026-01-27",
+   "source": "chriskiehl",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Should You Add Reps or Weight: The Calculator",
+   "url": "https://chriskiehl.com/article/reps-or-weight-calculator",
+   "source": "chriskiehl",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Data Oriented Programming in Java: Progress 2026-01-19",
+   "url": "https://chriskiehl.com/article/dopij-progress-update-2026-01-19",
+   "source": "chriskiehl",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Holder for Bird Seed",
+   "url": "https://chriskiehl.com/article/a-holder-for-bird-seed",
+   "source": "chriskiehl",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Data Oriented Programming in Java: Progress 2026-01-06",
+   "url": "https://chriskiehl.com/article/dopij-progress-update-2026-01-06",
+   "source": "chriskiehl",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Kitesurf is now open source",
    "url": "https://blog.cloudflare.com/kitesurf-open-source/",
    "source": "cloudflare",
@@ -2192,6 +2319,126 @@
    "metric": "reactions"
   },
   {
+   "title": "Postgres logical replication beyond one writer",
+   "url": "https://tapoueh.org/blog/2026/11/postgres-logical-replication-beyond-one-writer/",
+   "source": "dimitri",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Zero-downtime Postgres upgrades with logical replication",
+   "url": "https://tapoueh.org/blog/2026/10/zero-downtime-postgres-upgrades-with-logical-replication/",
+   "source": "dimitri",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Consolidating databases with Postgres logical replication",
+   "url": "https://tapoueh.org/blog/2026/10/consolidating-databases-with-postgres-logical-replication/",
+   "source": "dimitri",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ten years of Postgres logical replication",
+   "url": "https://tapoueh.org/blog/2026/09/ten-years-of-postgres-logical-replication/",
+   "source": "dimitri",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Plan Advice in PostgreSQL 19",
+   "url": "https://tapoueh.org/blog/2026/09/plan-advice-in-postgresql-19/",
+   "source": "dimitri",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting Ready for PostgreSQL 19",
+   "url": "https://tapoueh.org/blog/2026/09/getting-ready-for-postgresql-19/",
+   "source": "dimitri",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing YeSQL: Practical PostgreSQL, One Concept at a Time",
+   "url": "https://tapoueh.org/blog/2026/08/introducing-yesql-practical-postgresql-one-concept-at-a-time/",
+   "source": "dimitri",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing sqlfmt: an SQL gofmt-style formatter",
+   "url": "https://tapoueh.org/blog/2026/08/introducing-sqlfmt-an-sql-gofmt-style-formatter/",
+   "source": "dimitri",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SQL Improvements in PostgreSQL 11–18: A Personal Selection",
+   "url": "https://tapoueh.org/blog/2026/07/sql-improvements-in-postgresql-1118-a-personal-selection/",
+   "source": "dimitri",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "pgcopydb v0.18",
+   "url": "https://tapoueh.org/blog/2026/07/pgcopydb-v0.18/",
+   "source": "dimitri",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "About Dimitri Fontaine",
+   "url": "https://tapoueh.org/about/",
+   "source": "dimitri",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Postgres HA: roles are dynamic",
+   "url": "https://tapoueh.org/blog/2021/12/postgres-ha-roles-are-dynamic/",
+   "source": "dimitri",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An introduction to the pg_auto_failover project",
+   "url": "https://tapoueh.org/blog/2021/11/an-introduction-to-the-pg_auto_failover-project/",
+   "source": "dimitri",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PostgreSQL as a Microservice",
+   "url": "https://tapoueh.org/blog/2021/06/postgresql-as-a-microservice/",
+   "source": "dimitri",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Message à caractère informatique #46: Faire Le Tri Dans Ses Relations",
+   "url": "https://tapoueh.org/conf/message-%C3%A0-caract%C3%A8re-informatique-%2346-faire-le-tri-dans-ses-relations/",
+   "source": "dimitri",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Discord <3 Linux: A Year of Upgrades",
    "url": "https://discord.com/blog/discord-linux-a-year-of-upgrades",
    "source": "discord",
@@ -2307,6 +2554,126 @@
    "title": "A letter to the Discord community in Brazil",
    "url": "https://discord.com/blog/a-letter-to-the-discord-community-in-brazil",
    "source": "discord",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Mediocrity",
+   "url": "https://drmaciver.substack.com/p/on-mediocrity",
+   "source": "drmaciver",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The hard problem with hard problems",
+   "url": "https://drmaciver.substack.com/p/the-hard-problem-with-hard-problems",
+   "source": "drmaciver",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to be less box-shaped",
+   "url": "https://drmaciver.substack.com/p/how-to-be-less-box-shaped",
+   "source": "drmaciver",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making connections",
+   "url": "https://drmaciver.substack.com/p/making-connections",
+   "source": "drmaciver",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reduce the need for active stabilisation",
+   "url": "https://drmaciver.substack.com/p/reduce-the-need-for-active-stabilisation",
+   "source": "drmaciver",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to find things (an intro to binary search)",
+   "url": "https://drmaciver.substack.com/p/how-to-find-things-an-intro-to-binary",
+   "source": "drmaciver",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How pen caps work",
+   "url": "https://drmaciver.substack.com/p/how-pen-caps-work",
+   "source": "drmaciver",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "COVID is doing the rounds again",
+   "url": "https://drmaciver.substack.com/p/covid-is-doing-the-rounds-again",
+   "source": "drmaciver",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Yes you can hum while holding your nose",
+   "url": "https://drmaciver.substack.com/p/yes-you-can-hum-while-holding-your",
+   "source": "drmaciver",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to say what you're good at",
+   "url": "https://drmaciver.substack.com/p/how-to-say-what-youre-good-at",
+   "source": "drmaciver",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Have you tried not having the problem?",
+   "url": "https://drmaciver.substack.com/p/have-you-tried-not-having-the-problem",
+   "source": "drmaciver",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I clean my kitchen at the end of the day",
+   "url": "https://drmaciver.substack.com/p/how-i-clean-my-kitchen-at-the-end",
+   "source": "drmaciver",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Behaving as if you were trying to succeed",
+   "url": "https://drmaciver.substack.com/p/behaving-as-if-you-were-trying-to",
+   "source": "drmaciver",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Setting up my new blogging engine",
+   "url": "https://drmaciver.substack.com/p/setting-up-my-new-blogging-engine",
+   "source": "drmaciver",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Meditations on taste",
+   "url": "https://drmaciver.substack.com/p/meditations-on-taste",
+   "source": "drmaciver",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -3184,6 +3551,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "",
+   "url": "https://www.tumblr.com/grumpyoldgeek/832554748343402497",
+   "source": "grumpyg",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://www.tumblr.com/grumpyoldgeek/832433658292011008",
+   "source": "grumpyg",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "of course parents are taking their four year olds to see wildwood and are shocked that a pg-13 movie&hellip;",
+   "url": "https://www.tumblr.com/grumpyoldgeek/831841541494571008",
+   "source": "grumpyg",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "This video depicts a moment that is nearly impossible to observe: a sperm whale surfacing with a&hellip;",
+   "url": "https://www.tumblr.com/grumpyoldgeek/831709603867852800",
+   "source": "grumpyg",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "everydaylouie:happy halloween! here is a ghost duet",
+   "url": "https://www.tumblr.com/grumpyoldgeek/831709125790613504",
+   "source": "grumpyg",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "finally got the context for GNU and 😭😭😭",
+   "url": "https://www.tumblr.com/grumpyoldgeek/831105114005766144",
+   "source": "grumpyg",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "46",
+   "url": "https://www.tumblr.com/grumpyoldgeek/831104103481556992",
+   "source": "grumpyg",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "voidsentprinces: bogleech: worthikids: Witches On...",
+   "url": "https://www.tumblr.com/grumpyoldgeek/830622393066225664",
+   "source": "grumpyg",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://www.tumblr.com/grumpyoldgeek/830618542463418368",
+   "source": "grumpyg",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://www.tumblr.com/grumpyoldgeek/830192878351450112",
+   "source": "grumpyg",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://www.tumblr.com/grumpyoldgeek/830192723063652352",
+   "source": "grumpyg",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "was reminded of that youtube channel that records footage of that bridge that scalps trucks today&hellip;.",
+   "url": "https://www.tumblr.com/grumpyoldgeek/830019157316812800",
+   "source": "grumpyg",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Llama Song (with official MP3) by AlbinoBlackSheep",
+   "url": "https://www.tumblr.com/grumpyoldgeek/827638755125067776",
+   "source": "grumpyg",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "kaijutegu: alder-knight: mother-entropy:takiki16: meganphntmgrl...",
+   "url": "https://www.tumblr.com/grumpyoldgeek/826471567766749184",
+   "source": "grumpyg",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "today I found out my mother doesn&rsquo;t know what dandelions are and now I&rsquo;m wondering what other&hellip;",
+   "url": "https://www.tumblr.com/grumpyoldgeek/825732357547065344",
+   "source": "grumpyg",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "An MP3 Player, Implemented As A Factorio Blueprint",
    "url": "https://hackaday.com/2026/11/15/an-mp3-player-implemented-as-a-factorio-blueprint/",
    "source": "hackaday",
@@ -3548,6 +4035,126 @@
    "url": "https://daniel.haxx.se/blog/2026/10/12/the-2026-curl-team/",
    "source": "haxx",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Crash Course in Predicate Logic",
+   "url": "https://www.hillelwayne.com/post/predicate-logic/",
+   "source": "hillel",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Logic for Programmers is Now Available",
+   "url": "https://www.hillelwayne.com/post/lfp/",
+   "source": "hillel",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chicago vs New York Pizza is the Wrong Argument",
+   "url": "https://www.hillelwayne.com/post/pizza/",
+   "source": "hillel",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Some Silly Z3 Scripts I Wrote",
+   "url": "https://www.hillelwayne.com/post/z3-examples/",
+   "source": "hillel",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Very Early History of Algebraic Data Types",
+   "url": "https://www.hillelwayne.com/post/algdt-history/",
+   "source": "hillel",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gamer Games for Non-Gamers",
+   "url": "https://www.hillelwayne.com/post/vidja-games/",
+   "source": "hillel",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Perplexing Javascript Parsing Puzzle",
+   "url": "https://www.hillelwayne.com/post/javascript-puzzle/",
+   "source": "hillel",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Hierarchy of Controls (or how to stop devs from dropping prod)",
+   "url": "https://www.hillelwayne.com/post/hoc/",
+   "source": "hillel",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hiatus",
+   "url": "https://www.hillelwayne.com/post/hiatus/",
+   "source": "hillel",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Toolbox languages",
+   "url": "https://www.hillelwayne.com/post/toolbox-languages/",
+   "source": "hillel",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Composing TLA+ Specifications with State Machines",
+   "url": "https://www.hillelwayne.com/post/composing-tla/",
+   "source": "hillel",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Software Friction",
+   "url": "https://www.hillelwayne.com/post/software-friction/",
+   "source": "hillel",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don't let Alloy facts make your specs a fiction",
+   "url": "https://www.hillelwayne.com/post/alloy-facts/",
+   "source": "hillel",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How old is the name 'Daniel'?",
+   "url": "https://www.hillelwayne.com/post/tale-of-daniel/",
+   "source": "hillel",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Hunt for the Missing Data Type",
+   "url": "https://www.hillelwayne.com/post/graph-types/",
+   "source": "hillel",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -4488,6 +5095,14 @@
    "metric": "score"
   },
   {
+   "title": "All AI-generated code should be Open Source",
+   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+   "source": "lobsters",
+   "rank": 15,
+   "score": 1,
+   "metric": "score"
+  },
+  {
    "title": "AI and Irontown",
    "url": "https://lucumr.pocoo.org/2026/11/9/irontown/",
    "source": "lucumr",
@@ -5004,6 +5619,86 @@
    "url": "https://martinfowler.com/articles/never-send-slides/slide-principles.html",
    "source": "martinfowler",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Avoid Public Functions Calling Other Public Functions",
+   "url": "https://matklad.github.io/2026/10/29/pub-calls-pub.html",
+   "source": "matklad",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Git Refs",
+   "url": "https://matklad.github.io/2026/10/07/git-ref.html",
+   "source": "matklad",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Benchmark In Milliseconds",
+   "url": "https://matklad.github.io/2026/10/05/benchmark-milliseconds.html",
+   "source": "matklad",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding Bugs",
+   "url": "https://matklad.github.io/2026/09/19/finding-bugs.html",
+   "source": "matklad",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Static Allocation, Constant Work",
+   "url": "https://matklad.github.io/2026/09/02/static-allocation-constant-work.html",
+   "source": "matklad",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cancelation Terminology",
+   "url": "https://matklad.github.io/2026/08/31/cancelation-terminology.html",
+   "source": "matklad",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rust Glancer",
+   "url": "https://matklad.github.io/2026/08/21/rust-glancer.html",
+   "source": "matklad",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Better Batteries",
+   "url": "https://matklad.github.io/2026/08/20/better-batteries.html",
+   "source": "matklad",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Printing Lists",
+   "url": "https://matklad.github.io/2026/08/14/printing-lists.html",
+   "source": "matklad",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Zig's Io.Threaded is Neat",
+   "url": "https://matklad.github.io/2026/08/06/neat-io-threaded.html",
+   "source": "matklad",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -7916,6 +8611,86 @@
    "url": "https://www.techmeme.com/261114/p12#a261114p12",
    "source": "techmeme",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "November book status update",
+   "url": "http://www.tedinski.com/2019/11/17/book-status-update.html",
+   "source": "tedinski",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On ideological purity in programming",
+   "url": "http://www.tedinski.com/2019/05/08/unexpected-moral-reasoning.html",
+   "source": "tedinski",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Encapsulating mutable state",
+   "url": "http://www.tedinski.com/2019/04/30/encapsulating-state.html",
+   "source": "tedinski",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Composition vs extension",
+   "url": "http://www.tedinski.com/2019/04/16/composition-vs-extension.html",
+   "source": "tedinski",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Controlling module dependencies",
+   "url": "http://www.tedinski.com/2019/04/09/module-anti-dependencies.html",
+   "source": "tedinski",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deconstructing SOLID design principles",
+   "url": "http://www.tedinski.com/2019/04/02/solid-critique.html",
+   "source": "tedinski",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Testing at the boundaries",
+   "url": "http://www.tedinski.com/2019/03/19/testing-at-the-boundaries.html",
+   "source": "tedinski",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quick feedback loops while coding",
+   "url": "http://www.tedinski.com/2019/03/11/fast-feedback-from-tests.html",
+   "source": "tedinski",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Backpressure",
+   "url": "http://www.tedinski.com/2019/03/05/backpressure.html",
+   "source": "tedinski",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The end-to-end principle in distributed systems",
+   "url": "http://www.tedinski.com/2019/02/27/end-to-end-principle.html",
+   "source": "tedinski",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },

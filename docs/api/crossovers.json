@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T16:05:35.860237+00:00",
+ "generated_at": "2026-11-15T16:07:00.484742+00:00",
  "latest_snapshot": "2026-11-15",
  "crossovers": [
   {
@@ -117,6 +117,21 @@
    "days": 1,
    "best": {
     "score": 60,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
+   "title": "All AI-generated code should be Open Source",
+   "sources": [
+    "hackernews",
+    "lobsters"
+   ],
+   "days": 1,
+   "best": {
+    "score": 54,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-15"
