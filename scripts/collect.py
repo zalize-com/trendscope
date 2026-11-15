@@ -27,6 +27,10 @@ import json
 import os
 import sys
 import re
+
+def xml_escape(t):
+    return (str(t).replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
+            .replace('"',"&quot;").replace("'","&apos;"))
 import time
 import urllib.parse
 import urllib.request
@@ -34,6 +38,8 @@ from datetime import datetime, timezone
 
 UA = "trendscope/0.1 (+https://github.com/zalize-com/trendscope)"
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SITE_URL = "https://trendscope--plov6nur.preview.devinapps.com"
 
 NPM_WATCHLIST = [
     "react", "vue", "@angular/core", "svelte", "next", "nuxt", "vite",
@@ -89400,6 +89406,35 @@ def main():
     latest_path = os.path.join(DATA_DIR, "latest.json")
     with open(latest_path, "w") as f:
         json.dump(snapshot, f, indent=2, ensure_ascii=False)
+
+    # feed.xml — daily top-30 RSS, so the aggregator is itself subscribable.
+    top = sorted(all_items, key=lambda i: i["score"], reverse=True)[:30]
+    rss_items = "\n".join(
+        "    <item>\n"
+        f"      <title>{xml_escape(i['title'])}</title>\n"
+        f"      <link>{xml_escape(i['url'])}</link>\n"
+        f"      <guid isPermaLink=\"false\">{today}-{i['source']}-{i['rank']}</guid>\n"
+        f"      <pubDate>{now.strftime('%a, %d %b %Y %H:%M:%S +0000')}</pubDate>\n"
+        f"      <source url=\"{xml_escape(i['source'])}\">trendscope:{i['source']}</source>\n"
+        f"      <description>{xml_escape(i['metric'])}: {i['score']}"
+        + (f" | comments: {i['comments']}" if i.get("comments") else "")
+        + (f" | by {xml_escape(i['author'])}" if i.get("author") else "")
+        + "</description>\n    </item>"
+        for i in top)
+    n_src = len(sections)
+    feed_xml = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<rss version="2.0"><channel>\n'
+        f"  <title>trendscope — today's top {len(top)} developer items</title>\n"
+        f"  <link>{SITE_URL}/index.html</link>\n"
+        f"  <description>Daily cross-source board across {n_src} feeds. "
+        "Full source list as OPML: trendscope.opml</description>\n"
+        f"  <pubDate>{now.strftime('%a, %d %b %Y %H:%M:%S +0000')}</pubDate>\n"
+        f"  <generator>trendscope collect.py</generator>\n{rss_items}\n"
+        "</channel></rss>\n")
+    for _p in (os.path.join(DATA_DIR, "feed.xml"), os.path.join(ROOT, "feed.xml")):
+        with open(_p, "w") as f:
+            f.write(feed_xml)
 
     daily_dir = os.path.join(DATA_DIR, "daily")
     os.makedirs(daily_dir, exist_ok=True)
