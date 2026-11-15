@@ -22,6 +22,12 @@
 - [docs/api/movers-latest.json](docs/api/movers-latest.json): today's board diffs
 - [docs/api/ideas-latest.json](docs/api/ideas-latest.json): clustered Ask HN demand themes
 - [docs/api/stats.json](docs/api/stats.json): dataset statistics
+- [docs/api/today.json](docs/api/today.json): one-call "today" summary (top-10, topic mix, streaks, movers)
+- [docs/api/new.json](docs/api/new.json): first-seen items on the latest snapshot
+- [docs/api/velocity.json](docs/api/velocity.json): score growth rate for multi-day items
+- [docs/api/crossovers.json](docs/api/crossovers.json): same URL ranked on 2+ sources
+- [docs/api/domains.json](docs/api/domains.json) / [docs/api/authors.json](docs/api/authors.json) / [docs/api/sources.json](docs/api/sources.json): entity leaderboards
+- [docs/api/discussed.json](docs/api/discussed.json) / [docs/api/risers.json](docs/api/risers.json) / [docs/api/streaks.json](docs/api/streaks.json): comment, spike and streak leaderboards
 - [feed.xml](feed.xml): RSS — daily snapshot + movers + weekly digests
 - [feed.json](feed.json): JSON Feed v1.1
 - [docs/api.md](docs/api.md): API index with examples
@@ -33,11 +39,13 @@
 - [why.html](why.html): positioning vs live-dashboard alternatives
 - [canon.html](canon.html) / [showhn.html](showhn.html) / [rituals.html](rituals.html) / [year.html](year.html): long-horizon HN history pages
 - [compare.html](compare.html) / [streaks.html](streaks.html) / [week.html](week.html) / [item.html](item.html): trajectory and velocity views
-- [topics.html](topics.html) / [ideas.html](ideas.html) / [domains.html](domains.html) / [authors.html](authors.html): aggregations
+- [topics.html](topics.html) / [ideas.html](ideas.html) / [domains.html](domains.html) / [authors.html](authors.html) / [sources.html](sources.html): aggregations
+- [domain.html](domain.html) / [author.html](author.html) / [source.html](source.html): single-entity deep dives (?d= ?u= ?s=)
+- [new.html](new.html) / [velocity.html](velocity.html) / [crossovers.html](crossovers.html) / [weekday.html](weekday.html) / [rhythm.html](rhythm.html): newer analytic views
 - [hiring.html](hiring.html): HN labor-market pulse
 - [health.html](health.html): pipeline uptime
-- [embed.html](embed.html): embeddable widget
-- [tools/](tools/): 25+ free in-browser dev utilities
+- [embed.html](embed.html) / [embeds.html](embeds.html): embeddable widget + live gallery of all 18 modes
+- [tools/](tools/): 72 free in-browser dev utilities
 - [digest.html](digest.html): weekly digests and analyses
 
 ## License
