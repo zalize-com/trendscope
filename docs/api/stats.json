@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T14:42:49.480482+00:00",
+ "generated_at": "2026-11-15T14:44:41.701865+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 948,
- "unique_urls": 810,
- "items_in_latest": 546,
- "items_per_day_avg": 105.3,
+ "total_rows": 963,
+ "unique_urls": 825,
+ "items_in_latest": 561,
+ "items_per_day_avg": 107.0,
  "sources": {
   "arstechnica": {
    "rows": 16,
@@ -128,6 +128,10 @@
   "pypi": {
    "rows": 44,
    "days_active": 2
+  },
+  "sanglard": {
+   "rows": 15,
+   "days_active": 1
   },
   "show_hn": {
    "rows": 22,
