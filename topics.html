@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>trendscope topics — what developers are paying attention to</title>
+<meta name="description" content="Per-topic drill-down of the daily developer-attention snapshot: every HN story, trending repo and package download matching a topic. Open data, CC0.">
+<meta property="og:title" content="trendscope topics">
+<meta property="og:image" content="og.png">
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --border: #30363d; --fg: #e6edf3;
+    --dim: #8b949e; --accent: #58a6ff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--fg);
+    font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px; margin: 0 auto; padding: 28px 18px 60px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; }
+  h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 18px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 26px; }
+  .chip {
+    border: 1px solid var(--border); border-radius: 14px; padding: 3px 12px;
+    color: var(--dim); font-size: 12px;
+  }
+  .chip b { color: var(--fg); }
+  .chip.on { border-color: var(--accent); color: var(--fg); }
+  h2 { font-size: 15px; color: var(--dim); font-weight: 600; margin: 22px 0 6px;
+       text-transform: uppercase; letter-spacing: .04em; }
+  ol { list-style: none; }
+  li { display: flex; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--border); }
+  li:last-child { border-bottom: 0; }
+  .r { color: var(--dim); min-width: 18px; text-align: right; }
+  .it a { color: var(--fg); }
+  .it a:hover { color: var(--accent); }
+  .sc { margin-left: auto; color: var(--dim); font-size: 12px; white-space: nowrap; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+  #err { color: var(--dim); }
+</style>
+</head>
+<body>
+  <nav><a href="index.html">← trendscope</a> · <a href="data/latest.json">latest.json</a></nav>
+  <h1 id="h1">topi<span>cs</span></h1>
+  <p class="sub" id="sub">loading…</p>
+  <div class="chips" id="chips"></div>
+  <div id="out"><p id="err"></p></div>
+  <footer>
+    Open data, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> ·
+    <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a> ·
+    updated daily
+  </footer>
+<script>
+const TOPIC_RULES = {
+  "AI/LLM": ["ai","llm","gpt","claude","gemini","openai","anthropic","machine learning","ml ","neural","diffusion","agent","rag","transformer","model","inference","fine-tun","copilot","mcp","prompt"],
+  "Web Dev": ["react","vue","svelte","angular","next.js","nextjs","typescript","javascript","css","html","web","vite","tailwind","frontend","browser","dom"],
+  "DevOps/Infra": ["kubernetes","k8s","docker","terraform","ci/cd","deploy","aws","cloud","serverless","infra","observability","monitor","devops"],
+  "Security": ["security","vuln","cve","exploit","breach","malware","ransomware","phishing","zero-day","0day","auth","encryption","privacy"],
+  "Data Eng": ["data","postgres","sql","database","duckdb","pipeline","etl","spark","kafka","analytics","warehouse","dbt"],
+  "Languages": ["rust","golang","go ","python","java","kotlin","swift","zig","c++","compiler","lua"],
+  "Tools/OSS": ["open source","cli","tool","github","git ","editor","vscode","neovim","terminal","framework","library","release","v1.0"],
+  "Career/Business": ["startup","hiring","salary","remote","career","interview","acquisition","ipo","funding","layoff","business","saas"],
+};
+const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
+const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B" : n >= 1e6 ? (n/1e6).toFixed(1)+"M" : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
+const topicsOf = it => {
+  const text = `${it.title||""} ${(it.tags||[]).join(" ")} ${it.description||""}`.toLowerCase();
+  return Object.keys(TOPIC_RULES).filter(t => TOPIC_RULES[t].some(k => text.includes(k)));
+};
+
+const params = new URLSearchParams(location.search);
+const want = params.get("t");
+
+fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
+  const all = Object.entries(snap.items).flatMap(([s, its]) => its);
+  const chipHTML = Object.keys(TOPIC_RULES).map(t => {
+    const c = (snap.topics.find(x => x.topic === t) || {}).count || 0;
+    return `<a class="chip ${t === want ? "on" : ""}" href="topics.html?t=${encodeURIComponent(t)}">${t} <b>${c}</b></a>`;
+  }).join("");
+  document.getElementById("chips").innerHTML = chipHTML;
+
+  if (!want || !TOPIC_RULES[want]) {
+    document.getElementById("h1").innerHTML = "topi<span>cs</span>";
+    document.getElementById("sub").textContent = `${snap.date} snapshot — pick a topic`;
+    document.getElementById("out").innerHTML = (snap.topics||[]).map(t =>
+      `<h2><a href="topics.html?t=${encodeURIComponent(t.topic)}">${t.topic}</a> — ${t.count} items</h2>
+       <ol>${(t.examples||[]).map(e => `<li><span class="it"><a href="${e.url}">${esc(e.title)}</a> <span class="sc">${e.source}</span></span></li>`).join("")}</ol>`).join("");
+    return;
+  }
+
+  document.title = `${want} — today's developer attention | trendscope`;
+  document.getElementById("h1").innerHTML = `<span>${esc(want)}</span>`;
+  const matched = all.filter(it => topicsOf(it).includes(want));
+  document.getElementById("sub").textContent =
+    `${matched.length} items across ${new Set(matched.map(i=>i.source)).size} sources · ${snap.date} snapshot`;
+  const bySrc = {};
+  matched.forEach(it => (bySrc[it.source] = bySrc[it.source] || []).push(it));
+  document.getElementById("out").innerHTML = Object.entries(bySrc)
+    .sort((a,b) => b[1].length - a[1].length).map(([s, its]) =>
+      `<h2>${s} — ${its.length}</h2><ol>${its.map((it,i) =>
+        `<li><span class="r">${i+1}</span><span class="it"><a href="${it.url}">${esc(it.title)}</a></span><span class="sc">${fmt(it.score)} ${it.metric}</span></li>`).join("")}</ol>`).join("");
+}).catch(() => { document.getElementById("err").textContent = "snapshot unavailable"; });
+</script>
+</body>
+</html>

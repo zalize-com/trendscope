@@ -47,6 +47,8 @@ compare within a source, not across.
   text inspector, YAML↔JSON, outline→tree, URL query editor.
 - **Weekly digests** (`docs/digest/`): machine-generated summaries plus
   narrative notes.
+- **Topics** (`topics.html?t=AI%2FLLM`): per-topic drill-down — every story,
+  repo and package matching a topic, grouped by source.
 - **Embed widget** (`embed.html`): the top-10 board as a drop-in iframe for
   blogs/docs (no signup, updates daily):
 

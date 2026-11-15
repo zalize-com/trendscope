@@ -64,7 +64,9 @@
   .topic-chip {
     padding: 4px 12px; border-radius: 999px; font-size: 13px;
     background: var(--panel); border: 1px solid var(--border); color: var(--dim);
+    text-decoration: none;
   }
+  a.topic-chip:hover { border-color: var(--accent); text-decoration: none; }
   .topic-chip b { color: var(--fg); font-weight: 600; }
   section { margin-top: 34px; }
   h2 { font-size: 20px; margin-bottom: 12px; }
@@ -306,7 +308,7 @@ function paint() {
   document.getElementById("board-sub").textContent =
     `${total} items across ${nsrc} source${nsrc === 1 ? "" : "s"}`;
   document.getElementById("topics").innerHTML = (SNAP.topics || [])
-    .map(t => `<span class="topic-chip">${t.topic} <b>${t.count}</b></span>`).join("");
+    .map(t => `<a class="topic-chip" href="topics.html?t=${encodeURIComponent(t.topic)}">${t.topic} <b>${t.count}</b></a>`).join("");
 
   ITEMS = Object.entries(SNAP.items || {});
   render(ITEMS, currentTab());
