@@ -47,36 +47,13 @@
     <a href="https://github.com/zalize-com/trendscope">trendscope</a>
   </footer>
 <script>
-const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
-function parseCSV(txt) {
-  const rows = []; let f = "", row = [], q = false;
-  for (let i = 0; i <= txt.length; i++) {
-    const c = txt[i];
-    if (q) {
-      if (c === '"') { if (txt[i+1] === '"') { f += '"'; i++; } else q = false; }
-      else if (c === undefined) {} else f += c;
-    } else if (c === '"') q = true;
-    else if (c === ',' ) { row.push(f); f = ""; }
-    else if (c === '\n' || c === undefined) { row.push(f); f = ""; rows.push(row); row = []; }
-    else if (c !== '\r') f += c;
-  }
-  return rows.filter(r => r.length > 1);
-}
 const DOW = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
-fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
-  const rows = parseCSV(txt), hdr = rows[0];
-  const ci = Object.fromEntries(hdr.map((h,i)=>[h,i]));
+const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
+fetch("docs/api/weekday.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
   const grid = {}, totals = {};
-  for (const r of rows.slice(1)) {
-    const src = r[ci.source], d = r[ci.date];
-    const m = d && d.match(/^(\d{4})-(\d{2})-(\d{2})$/);
-    if (!m) continue;
-    // weekday of the snapshot date (UTC); 1970-01-01 was a Thursday
-    const dt = Date.UTC(+m[1], +m[2]-1, +m[3]);
-    const w = (new Date(dt).getUTCDay() + 6) % 7;   // 0=Mon
-    grid[src] = grid[src] || {};
-    grid[src][w] = (grid[src][w]||0) + 1;
-    totals[src] = (totals[src]||0) + 1;
+  for (const [s, v] of Object.entries(d.sources)) {
+    grid[s] = Object.fromEntries(v.counts.map((c, i) => [i, c]));
+    totals[s] = v.total;
   }
   const srcs = Object.keys(totals).sort((a,b)=>totals[b]-totals[a]);
   const max = Math.max(...srcs.flatMap(s=>Object.values(grid[s]||{})),1);
@@ -96,10 +73,9 @@ fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
     return `${esc(s)} peaks on <b>${DOW[ent[0]?.[0]]}</b> (${ent[0]?.[1]} items)`;
   }).join(" · ");
   const tot = Object.values(totals).reduce((a,b)=>a+b,0);
-  const days = new Set(rows.slice(1).map(r=>r[ci.date]));
-  document.getElementById("sub").textContent = `${tot} items · ${srcs.length} sources · ${days.size} days of snapshots`;
+  document.getElementById("sub").textContent = `${tot} items · ${srcs.length} sources · ${d.days_tracked} days of snapshots`;
   document.getElementById("notes").innerHTML = notes + ". Based on the day each item first appeared on a front page — early days of data, so treat small numbers as directional.";
-}).catch(() => { document.getElementById("err").textContent = "history.csv unavailable"; });
+}).catch(() => { document.getElementById("err").textContent = "weekday.json unavailable"; });
 </script>
 </body>
 </html>

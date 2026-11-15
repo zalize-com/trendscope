@@ -196,6 +196,7 @@ def main():
     DOW = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
     with open(os.path.join(API, "weekday.json"), "w", encoding="utf-8") as f:
         json.dump({"generated_at": now, "latest_snapshot": max(days),
+                   "days_tracked": len(days),
                    "days_of_week": DOW,
                    "sources": {s: {"counts": grid[s], "total": totals[s]}
                                for s in sorted(totals, key=lambda k: -totals[k])}},
