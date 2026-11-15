@@ -10,7 +10,7 @@ backward compatibility.
 
 | Field | Type | Description |
 |---|---|---|
-| `source` | string | `hackernews`, `show_hn`, `ask_hn`, `github_trending`, `lobsters`, `devto`, `producthunt`, `techmeme`, `slashdot`, `arstechnica`, `theverge`, `arxiv`, `npm`, `pypi`, `crates`, `lemmy`, `krebs`, `changelog`, `freecodecamp`, `echojs`, `infoq`, `theregister`, `lwn`, `hackaday`, `thenewstack`, `opensourcecom`, `soblog`, `codinghorror`, `martinfowler`, `pragmatic`, `bendersky`, `cheney`, `lucumr`, `hynek`, `susam`, `haxx` |
+| `source` | string | `hackernews`, `show_hn`, `ask_hn`, `github_trending`, `lobsters`, `devto`, `producthunt`, `techmeme`, `slashdot`, `arstechnica`, `theverge`, `arxiv`, `npm`, `pypi`, `crates`, `lemmy`, `krebs`, `changelog`, `freecodecamp`, `echojs`, `infoq`, `theregister`, `lwn`, `hackaday`, `thenewstack`, `opensourcecom`, `soblog`, `codinghorror`, `martinfowler`, `pragmatic`, `bendersky`, `cheney`, `lucumr`, `hynek`, `susam`, `haxx`, `jvns` |
 | `rank` | int | Rank within that source for that day (1-based) |
 | `title` | string | Story title, or `owner/name` for repos, package name for registries |
 | `url` | string | Canonical link (provenance) |

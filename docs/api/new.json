@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T14:32:08.796651+00:00",
+ "generated_at": "2026-11-15T14:37:29.840080+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 577,
- "new_items": 451,
+ "total_items": 592,
+ "new_items": 466,
  "by_source": {
   "producthunt": 45,
   "hackernews": 22,
@@ -17,6 +17,7 @@
   "echojs": 15,
   "hynek": 15,
   "infoq": 15,
+  "jvns": 15,
   "lemmy": 15,
   "lwn": 15,
   "martinfowler": 15,
@@ -1475,6 +1476,126 @@
    "title": "Azure Logic Apps Standard Gets a Local CLI in Preview",
    "url": "https://www.infoq.com/news/2026/11/logic-apps-local-cli/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
    "source": "infoq",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Replacing the old battery on rechargeable bike lights",
+   "url": "https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights/",
+   "source": "jvns",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Some more things about Django I've been enjoying",
+   "url": "https://jvns.ca/blog/2026/07/21/more-nice-django-things/",
+   "source": "jvns",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learning a few things about running SQLite",
+   "url": "https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/",
+   "source": "jvns",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Moving away from Tailwind, and learning to structure my CSS",
+   "url": "https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/",
+   "source": "jvns",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Links to CSS colour palettes",
+   "url": "https://jvns.ca/blog/2026/05/04/css-colour-palettes/",
+   "source": "jvns",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Testing Vue components in the browser",
+   "url": "https://jvns.ca/blog/2026/05/02/testing-vue-components-in-the-browser/",
+   "source": "jvns",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Examples for the tcpdump and dig man pages",
+   "url": "https://jvns.ca/blog/2026/03/10/examples-for-the-tcpdump-and-dig-man-pages/",
+   "source": "jvns",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Notes on clarifying man pages",
+   "url": "https://jvns.ca/blog/2026/02/18/man-pages/",
+   "source": "jvns",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Some notes on starting to use Django",
+   "url": "https://jvns.ca/blog/2026/01/27/some-notes-on-starting-to-use-django/",
+   "source": "jvns",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A data model for Git (and other docs updates)",
+   "url": "https://jvns.ca/blog/2026/01/08/a-data-model-for-git/",
+   "source": "jvns",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Notes on switching to Helix from vim",
+   "url": "https://jvns.ca/blog/2025/10/10/notes-on-switching-to-helix-from-vim/",
+   "source": "jvns",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New zine: The Secret Rules of the Terminal",
+   "url": "https://jvns.ca/blog/2025/06/24/new-zine--the-secret-rules-of-the-terminal/",
+   "source": "jvns",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using `make` to compile C programs (for non-C-programmers)",
+   "url": "https://jvns.ca/blog/2025/06/10/how-to-compile-a-c-program/",
+   "source": "jvns",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Standards for ANSI escape codes",
+   "url": "https://jvns.ca/blog/2025/03/07/escape-code-standards/",
+   "source": "jvns",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to add a directory to your PATH",
+   "url": "https://jvns.ca/blog/2025/02/13/how-to-add-a-directory-to-your-path/",
+   "source": "jvns",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"

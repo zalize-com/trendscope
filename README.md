@@ -58,6 +58,7 @@ A daily cross-source snapshot of developer attention:
 | Hynek | Python ecosystem blog | `hynek.me/articles/index.xml` |
 | Susam | long-form hacker blog | `susam.net/feed.xml` |
 | Daniel Haxx | curl author blog | `daniel.haxx.se/blog/feed/` |
+| Julia Evans | zines/dev teaching blog | `jvns.ca/atom.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
