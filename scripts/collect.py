@@ -3214,26 +3214,26 @@ def fetch_schneems(limit=15):
                 "https://www.schneems.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                body = resp.read().decode("utf-8")
             break
         except Exception as e:
             print(f"  [warn] schneems attempt {attempt + 1} failed: {e}", file=sys.stderr)
             time.sleep(2 * (attempt + 1))
     else:
         return []
-    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
-    entries = entries[:limit]
+    # schneems.com emits non-well-formed Atom (raw & and " inside attributes)
+    # -> regex extraction fallback instead of ET
+    import re as _re
+    blocks = _re.findall(r"<entry>(.*?)</entry>", body, _re.S)[:limit]
     out = []
-    for i, e in enumerate(entries):
-        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
-        link = e.findtext("link") or ""
-        if not link:
-            for l in e.findall(f"{ATOM}link"):
-                if l.get("rel", "alternate") == "alternate":
-                    link = l.get("href", "")
+    for i, b in enumerate(blocks):
+        mt = _re.search(r"<title[^>]*>(.*?)</title>", b, _re.S)
+        ml = _re.search(r"<link[^>]+href=\"([^\"]+)\"", b)
+        title = " ".join((html.unescape(mt.group(1)) if mt else "").split())
+        link = ml.group(1) if ml else ""
         out.append(item(
             "schneems", title, link.strip() or "https://www.schneems.com/",
-            len(entries) - i, "feed rank",
+            len(blocks) - i, "feed rank",
         ))
     return out
 
