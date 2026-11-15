@@ -84,6 +84,7 @@ A daily cross-source snapshot of developer attention:
 | Airbnb Engineering | marketplace infrastructure | `medium.com/airbnb-engineering` |
 | MongoDB Blog | database engineering | `mongodb.com/blog/rss` |
 | Elastic Blog | search engine engineering | `elastic.co/blog/feed` |
+| GitLab Blog | DevOps platform news | `about.gitlab.com/atom.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-15T15:32:57.623989+00:00",
+ "generated_at": "2026-11-15T15:34:16.872795+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 925,
- "new_items": 799,
+ "total_items": 941,
+ "new_items": 815,
  "by_source": {
   "producthunt": 45,
-  "hackernews": 26,
+  "hackernews": 27,
   "show_hn": 26,
   "techmeme": 19,
   "slashdot": 17,
@@ -23,6 +23,7 @@
   "elastic": 15,
   "etsy": 15,
   "gargron": 15,
+  "gitlab_blog": 15,
   "hynek": 15,
   "infoq": 15,
   "jvns": 15,
@@ -2154,6 +2155,126 @@
    "metric": "stars"
   },
   {
+   "title": "Turn Jira tickets into GitLab merge requests with Duo Agent Platform",
+   "url": "https://about.gitlab.com/blog/jira-ticket-to-gitlab-mr-with-duo-agent-platform/",
+   "source": "gitlab_blog",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to prevent leaks from Claude Code's 'Don't ask again' file",
+   "url": "https://about.gitlab.com/blog/prevent-leaks-from-claude-code-dont-ask-again-file/",
+   "source": "gitlab_blog",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to design a decision-grade pilot for agentic AI",
+   "url": "https://about.gitlab.com/blog/how-to-develop-a-decision-grade-ai-pilot/",
+   "source": "gitlab_blog",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Pentagon wants to know who checks code when AI writes it",
+   "url": "https://about.gitlab.com/blog/department-of-war-instruction-for-ai-generated-code/",
+   "source": "gitlab_blog",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10 questions to ask any software vendor about sovereignty",
+   "url": "https://about.gitlab.com/blog/10-questions-to-ask-any-software-vendor-about-sovereignty/",
+   "source": "gitlab_blog",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GitLab Orbit is GA: Higher agent accuracy, lower token cost",
+   "url": "https://about.gitlab.com/blog/gitlab-orbit-ga/",
+   "source": "gitlab_blog",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GitLab Orbit: Find vulnerability blast radius without the manual hunt",
+   "url": "https://about.gitlab.com/blog/find-vulnerability-blast-radius-with-gitlab-orbit/",
+   "source": "gitlab_blog",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What happens when vulnerabilities are discovered faster than you can fix them?",
+   "url": "https://about.gitlab.com/blog/security-at-machine-speed/",
+   "source": "gitlab_blog",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Extend GitLab Duo Agent Platform into your business systems",
+   "url": "https://about.gitlab.com/blog/extend-gitlab-duo-agent-platform-into-your-business-systems/",
+   "source": "gitlab_blog",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pillow CVE-2026-112900: How to find and fix it with GitLab",
+   "url": "https://about.gitlab.com/blog/pillow-cve-find-and-fix-with-gitlab/",
+   "source": "gitlab_blog",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PHP2Shell: GitLab helps find and remediate critical PHP flaws",
+   "url": "https://about.gitlab.com/blog/gitlab-helps-remediate-critical-php-flaws/",
+   "source": "gitlab_blog",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GitLab Critical Patch Release: 19.5.1, 19.4.3, 19.3.6, 19.2.9, 19.1.9, 19.0.10, 18.11.13",
+   "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
+   "source": "gitlab_blog",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Redesign how your team ships software with AI agents",
+   "url": "https://about.gitlab.com/blog/redesign-how-your-team-ships-software-with-ai-agents/",
+   "source": "gitlab_blog",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Uncover the business logic vulnerabilities SAST scanners miss",
+   "url": "https://about.gitlab.com/blog/gitlab-business-logic-security-analyzer/",
+   "source": "gitlab_blog",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Governance: One view of agent activity",
+   "url": "https://about.gitlab.com/blog/ai-governance-dashboard/",
+   "source": "gitlab_blog",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "An MP3 Player, Implemented As A Factorio Blueprint",
    "url": "https://hackaday.com/2026/11/15/an-mp3-player-implemented-as-a-factorio-blueprint/",
    "source": "hackaday",
@@ -2303,6 +2424,14 @@
    "source": "hackernews",
    "rank": 19,
    "score": 44,
+   "metric": "points"
+  },
+  {
+   "title": "All AI-generated code should be Open Source",
+   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+   "source": "hackernews",
+   "rank": 19,
+   "score": 54,
    "metric": "points"
   },
   {
