@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T13:19:31.030865+00:00",
+ "generated_at": "2026-11-15T13:21:26.516957+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 710,
- "unique_urls": 573,
- "items_in_latest": 320,
- "items_per_day_avg": 78.9,
+ "total_rows": 725,
+ "unique_urls": 588,
+ "items_in_latest": 335,
+ "items_per_day_avg": 80.6,
  "sources": {
   "arstechnica": {
    "rows": 16,
@@ -89,6 +89,10 @@
    "rows": 19,
    "days_active": 1
   },
+  "theregister": {
+   "rows": 15,
+   "days_active": 1
+  },
   "theverge": {
    "rows": 12,
    "days_active": 1
@@ -113,6 +117,10 @@
    "hits": 15
   },
   {
+   "domain": "theregister.com",
+   "hits": 15
+  },
+  {
    "domain": "theverge.com",
    "hits": 14
   },
@@ -131,10 +139,6 @@
   {
    "domain": "tech.slashdot.org",
    "hits": 4
-  },
-  {
-   "domain": "so.long.thanks.fish",
-   "hits": 3
   }
  ],
  "files": {
