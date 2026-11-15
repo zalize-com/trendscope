@@ -96,7 +96,7 @@ const recs = Object.entries(items).map(([url, it]) => {
     run = ds[i-1] === prevDay(ds[i]) ? run + 1 : 1;
     best = Math.max(best, run);
   }
-  return { url, ...it, days: ds.size, cur, best };
+  return { url, ...it, days: ds.length, cur, best };
 });
 
 const live = recs.filter(r => r.cur >= 2).sort((a,b) => b.cur - a.cur || b.lastScore - a.lastScore);
