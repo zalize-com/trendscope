@@ -88262,7 +88262,7 @@ def fetch_yt_fireship(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_fireship", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88299,7 +88299,7 @@ def fetch_yt_traversymedia(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_traversymedia", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC29ju8bIPH5as8OGnQzwJyA",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88336,7 +88336,7 @@ def fetch_yt_networkchuck(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_networkchuck", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC9x0AN7BWHpCDHSm9NiJFJQ",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88373,7 +88373,7 @@ def fetch_yt_theprimeagen(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_theprimeagen", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88410,7 +88410,7 @@ def fetch_yt_3blue1brown(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_3blue1brown", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88447,7 +88447,7 @@ def fetch_yt_garyexplains(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_garyexplains", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCRjSO-juFtngAeJGJRMdIZw",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88484,7 +88484,7 @@ def fetch_yt_liveoverflow(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_liveoverflow", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UClcE-kVhqyiHCcjYwcpfj9w",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88521,7 +88521,7 @@ def fetch_yt_webdevsimplified(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_webdevsimplified", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCFbNIlppjAuEX4znoulh0Cw",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88558,7 +88558,7 @@ def fetch_yt_techworldwithnana(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_techworldwithnana", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCdngmbVKX1Tgre699-XLlUA",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88595,7 +88595,7 @@ def fetch_yt_codingwithjohn(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_codingwithjohn", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC42pOSNg804f1wCcj7qL0mA",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88632,7 +88632,7 @@ def fetch_yt_freecodecamp(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_freecodecamp", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC8butISFwT-Wl7EV0hUK0BQ",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88669,7 +88669,7 @@ def fetch_yt_computerphile(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_computerphile", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC9-y-6csu5WGm29I7JiwpnA",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88706,7 +88706,7 @@ def fetch_yt_hak5(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_hak5", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC3s0BtrBJpwNDaflRSoiieQ",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88743,7 +88743,7 @@ def fetch_yt_sebastianlague(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_sebastianlague", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCmtyQOKKmrMVaKuRXz02jbQ",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88780,7 +88780,7 @@ def fetch_yt_codevolution(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_codevolution", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC80PWRj_ZU8Zu0HSMNVwKWw",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88817,7 +88817,7 @@ def fetch_yt_iamtimcorey(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_iamtimcorey", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC-ptWR16ITQyYOglXyQmpzw",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88854,7 +88854,7 @@ def fetch_yt_netninja(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_netninja", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCW5YeuERMmlnqo4oq8vwUpg",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88891,7 +88891,7 @@ def fetch_yt_academind(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_academind", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCSJbGtTlrDami-tDGPUV9-w",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88928,7 +88928,7 @@ def fetch_yt_codinggarden(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_codinggarden", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCLNgu_OupwoeESgtab33CCw",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -88965,7 +88965,7 @@ def fetch_yt_wesbos(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_wesbos", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCoebwHSTvwalADTJhps0emA",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89002,7 +89002,7 @@ def fetch_yt_beyondfireship(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_beyondfireship", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC2Xd-TjJByJyK2w1zNwY0zQ",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89039,7 +89039,7 @@ def fetch_yt_theo(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_theo", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCbRP3c757lWg9M-U7TyEkXA",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89076,7 +89076,7 @@ def fetch_yt_statquest(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_statquest", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCtYLUTtgS3k1Fg4y5tAhLbw",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89113,7 +89113,7 @@ def fetch_yt_dreamsofcode(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_dreamsofcode", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCWQaM7SpSECp9FELz-cHzuQ",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89150,7 +89150,7 @@ def fetch_yt_hyperplexed(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_hyperplexed", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCmEzz-dPBVrsy4ZluSsYHDg",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89187,7 +89187,7 @@ def fetch_yt_codingwithlewis(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_codingwithlewis", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCWI-ohtRu8eEeDj93hmUsUQ",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89224,7 +89224,7 @@ def fetch_yt_theodorepowell(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_theodorepowell", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCYRAVr41A2406F3ofMoWijQ",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89261,7 +89261,7 @@ def fetch_yt_petecodes(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_petecodes", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCofmuxnMWDBDcDkHN8P2GsQ",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89298,7 +89298,7 @@ def fetch_yt_simsig(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_simsig", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCfYk8ZzFUCI9NZ-CqwdcCdw",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89335,7 +89335,7 @@ def fetch_yt_joshtriedcoding(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_joshtriedcoding", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCvGwM5woTl13I-qThI4YMCg",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89372,7 +89372,7 @@ def fetch_yt_thecodingtrain(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_thecodingtrain", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCvjgXvBlbQiydffZU7m1_aw",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89409,7 +89409,7 @@ def fetch_yt_beneater(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_beneater", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCS0N5baNlQWJCUrhCEo8WlA",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89446,7 +89446,7 @@ def fetch_yt_sentdex(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_sentdex", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCfzlCWGWYyIQ0aLC5w48gBQ",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89483,7 +89483,7 @@ def fetch_yt_yannickilcher(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_yannickilcher", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCZHmQk67mSJgfCCTn7xBfew",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89520,7 +89520,7 @@ def fetch_yt_twominutepapers(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_twominutepapers", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89557,7 +89557,7 @@ def fetch_yt_javidx9(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_javidx9", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC-yuWVUplUJZvieEligKBkA",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89594,7 +89594,7 @@ def fetch_yt_husseinnasser(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_husseinnasser", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC_ML5xP23TOWKUcc-oAE_Eg",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89631,7 +89631,7 @@ def fetch_yt_coreyschafer(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_coreyschafer", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCJoS8wONbN1zKh2oKn1RbEw",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89668,7 +89668,7 @@ def fetch_yt_brancheducation(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_brancheducation", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCdp4_l1vPmpN-gDbUwhaRUQ",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89705,7 +89705,7 @@ def fetch_yt_cppcon(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_cppcon", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCMlGfpWw-RUdWX_JbLCukXg",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89742,7 +89742,7 @@ def fetch_yt_goto(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_goto", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCs_tLP3AiwYKwdUHpltJPuA",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89779,7 +89779,7 @@ def fetch_yt_pyconus(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_pyconus", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCMjMBMGt0WJQLeluw6qNJuA",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89816,7 +89816,7 @@ def fetch_yt_codingtech(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_codingtech", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCtxCXg-UvSnTKPOzLH4wJaQ",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
@@ -89853,7 +89853,7 @@ def fetch_yt_asianometry(limit=15):
                     link = l.get("href", "")
         out.append(item(
             "yt_asianometry", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC1LpsuAUaKoMzzJSEt5WImw",
-            len(entries) - i, "feed rank",
+            len(entries) - i, "videos",
         ))
     return out
 
