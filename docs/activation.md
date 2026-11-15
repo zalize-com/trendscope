@@ -11,7 +11,7 @@ have). Ordered by impact-per-click. Estimated total time: **~10 minutes**.
 | feedpaper | [Settings → Pages](https://github.com/zalize-com/feedpaper/settings/pages) → same: main / root → Save |
 
 Result: `zalize-com.github.io/trendscope` + `zalize-com.github.io/feedpaper` live
-in ~1 min. Dashboard, all 44 tools, embed widget, every API endpoint activate
+in ~1 min. Dashboard, all 46 tools, embed widget, every API endpoint activate
 immediately — the site reads files straight from the repo.
 
 ## 2. Say the word and we ship the submissions

@@ -137,6 +137,16 @@
     <div class="out" id="uni-out"></div>
   </div>
 
+  <!-- AI-text tells -->
+  <div class="tool" data-tool="aitext">
+    <h2>AI-text tells</h2>
+    <p class="hint">Heuristic signals common in LLM-written prose — telltale words, em-dash density, uniform sentence length, formulaic transitions. <b>Not a detector</b>: humans write these too. Highlights what it flags.</p>
+    <textarea id="ai-in" placeholder="Paste text to check…"></textarea>
+    <div class="stat" id="ai-stat"></div>
+    <div class="out" id="ai-out"></div>
+    <div class="out md" id="ai-hl"></div>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -149,6 +159,7 @@ const TOOLS = [
   {id:"md",   label:"Markdown preview"},
   {id:"mdtable", label:"MD table"},
   {id:"uni", label:"Unicode"},
+  {id:"aitext", label:"AI-text tells"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -316,6 +327,51 @@ function uniInspect(){
   out.textContent=rows.map(r=>r.map((c,j)=>c.padEnd(w[j])).join("  ")).join("\n");
 }
 document.getElementById("uni-in").addEventListener("input",uniInspect);
+// ---- AI-text tells ----
+const AI_WORDS=["delve","leverage","tapestry","realm","bustling","testament","crucial","pivotal","vibrant","furthermore","moreover","notably","landscape","nuanced","elevate","unleash","embark","journey","streamline","robust","seamless","comprehensive","cutting-edge","game-changer","harness","foster","underscore","paramount","myriad","plethora","meticulous","intricate","resonate","beacon","transformative","synergy","holistic","profound","endeavor","facilitate","navigate the","rich tapestry","ever-evolving","fast-paced"];
+const AI_PHRASES=["it's important to note","it is important to note","it's worth noting","in today's","in conclusion","whether you're a","whether you are a","not only","but also","first and foremost","at the end of the day","when it comes to","one thing is clear","the bottom line","in a world where","as we navigate","look no further","rest assured","in the realm of","a testament to","unlock the power","take it to the next level","dive into","deep dive","let's explore","buckle up"];
+function aiInspect(){
+  const t=document.getElementById("ai-in").value,out=document.getElementById("ai-out"),
+        stat=document.getElementById("ai-stat"),hl=document.getElementById("ai-hl");
+  if(!t.trim()){out.textContent="";stat.textContent="";hl.textContent="";return;}
+  const words=t.toLowerCase().split(/\s+/),lines=[];
+  let score=0;
+  // 1. telltale words
+  const hits=[];
+  for(const w of AI_WORDS){const re=new RegExp("\\b"+w.replace(/\s/g,"\\s+")+"\\b","gi");const m=t.match(re);if(m)hits.push(w+" ×"+m.length);}
+  if(hits.length){const wpts=Math.min(4,hits.length);score+=wpts;lines.push(`🔸 telltale words (+${wpts}): ${hits.slice(0,12).join(", ")}${hits.length>12?" …":""}`);}
+  // 2. phrases
+  const ph=AI_PHRASES.filter(x=>t.toLowerCase().includes(x));
+  if(ph.length){const ppts=Math.min(3,ph.length);score+=ppts;lines.push(`🔸 formulaic phrases (+${ppts}): ${ph.slice(0,8).join(", ")}`);}
+  // 3. em-dash density
+  const dashes=(t.match(/[—–]/g)||[]).length,dd=dashes/Math.max(1,words.length)*100;
+  if(dd>1.5){score+=2;lines.push(`🔸 em-dash density ${dd.toFixed(1)}/100w (+2) — ${dashes} dashes`);}
+  else if(dd>0.7){score+=1;lines.push(`🔹 em-dash density ${dd.toFixed(1)}/100w (+1)`);}
+  // 4. sentence length uniformity
+  const sents=t.split(/[.!?]+/).map(x=>x.trim()).filter(x=>x.split(/\s+/).length>3);
+  if(sents.length>=4){
+    const lens=sents.map(x=>x.split(/\s+/).length),mean=lens.reduce((a,b)=>a+b)/lens.length;
+    const sd=Math.sqrt(lens.reduce((a,b)=>a+(b-mean)**2,0)/lens.length);
+    if(sd<4){score+=2;lines.push(`🔸 uniform sentences σ=${sd.toFixed(1)}w (+2) — human writing varies more`);}
+    else if(sd<7){score+=1;lines.push(`🔹 fairly uniform sentences σ=${sd.toFixed(1)}w (+1)`);}
+  }
+  // 5. bullet/formal structure density
+  const bullets=(t.match(/^\s*[-*•]\s|\d+\.\s/gm)||[]).length;
+  if(bullets>=4){score+=1;lines.push(`🔹 listicle structure ${bullets} bullets (+1)`);}
+  // 6. zero first-person & zero contractions (formality tells)
+  const fp=(t.match(/\b(I|me|my|we|our|us)\b/g)||[]).length;
+  const contr=(t.match(/\b\w+'(t|re|ll|ve|d|s|m)\b/gi)||[]).length;
+  if(words.length>60&&fp===0&&contr===0){score+=1;lines.push("🔹 zero first-person & zero contractions (+1) — detached register");}
+  const verdict=score>=6?"🔴 strong AI-style signals":score>=3?"🟠 mixed signals":"🟢 few AI-style tells";
+  stat.textContent=`${verdict} — score ${score} · ${words.length} words`;
+  out.textContent=lines.length?lines.join("\n"):"no heuristic flags";
+  // highlight
+  let h=t.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+  for(const w of AI_WORDS){h=h.replace(new RegExp("\\b("+w.replace(/\s/g,"\\s+")+")\\b","gi"),"<mark>$1</mark>");}
+  for(const ph2 of AI_PHRASES){h=h.replace(new RegExp("("+ph2.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+")","gi"),"<mark>$1</mark>");}
+  hl.innerHTML=h.replace(/\n/g,"<br>");
+}
+document.getElementById("ai-in").addEventListener("input",aiInspect);
 </script>
 </body>
 </html>
