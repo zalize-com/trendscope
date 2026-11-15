@@ -87,6 +87,15 @@
     <button data-tool="gostruct">JSON → Go</button>
     <button data-tool="jwtsign">JWT sign</button>
     <button data-tool="jsonsql">JSON → SQL</button>
+    <button data-tool="jq">JSON query (jq-lite)</button>
+  </div>
+
+  <div class="panel" id="p-jq">
+    <h2>JSON query — jq-lite</h2>
+    <p class="hint">Path syntax: <code>.a.b[0]</code>, <code>.items[]</code> (all elements), <code>.*</code> (all values). One result per line, JSON-encoded.</p>
+    <input type="text" id="jq-p" placeholder=".items[].title" value=".items[]">
+    <textarea id="jq-in" rows="8" placeholder='{"items":[{"title":"a"},{"title":"b"}]}'></textarea>
+    <pre id="jq-out" class="out"></pre>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -358,7 +367,36 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts","csvprof","mcp","sql","b64file","ascii","gostruct","jwtsign","jsonsql"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts","csvprof","mcp","sql","b64file","ascii","gostruct","jwtsign","jsonsql","jq"];
+if (document.getElementById("jq-in")) {
+  const run = () => {
+    const out = document.getElementById("jq-out");
+    let doc; try { doc = JSON.parse(document.getElementById("jq-in").value); }
+    catch(e){ out.textContent = "invalid JSON: "+e.message; return; }
+    const path = document.getElementById("jq-p").value.trim();
+    const toks = path.replace(/^\$?\.?/, "").split(".").filter(Boolean);
+    let cur = [doc];
+    const parts = [];
+    for (const t of toks) {
+      const m = t.match(/^([^\[]*)((\[[^\]]*\])*)$/);
+      if (!m) { out.textContent = "bad token: "+t; return; }
+      parts.push(m[1], ...(m[2] ? m[2].match(/\[[^\]]*\]/g) : []));
+    }
+    try {
+      for (const p of parts) {
+        if (p === "[]" || p === "[*]" || p === "*") cur = cur.flatMap(v => Array.isArray(v) ? v : (v && typeof v === "object" ? Object.values(v) : []));
+        else if (/^\[\d+\]$/.test(p)) cur = cur.map(v => Array.isArray(v) ? v[+p.slice(1,-1)] : undefined);
+        else if (/^\[.+\]$/.test(p)) cur = cur.map(v => v ? v[p.slice(1,-1).replace(/^['"]|['"]$/g,"")] : undefined);
+        else if (p) cur = cur.map(v => v ? v[p] : undefined);
+      }
+      cur = cur.filter(v => v !== undefined);
+      out.textContent = cur.map(v => typeof v === "string" ? JSON.stringify(v) : JSON.stringify(v, null, 0)).join("\n") || "— no matches —";
+    } catch(e){ out.textContent = "query error: "+e.message; }
+  };
+  document.getElementById("jq-in").addEventListener("input", run);
+  document.getElementById("jq-p").addEventListener("input", run);
+  run();
+}
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
