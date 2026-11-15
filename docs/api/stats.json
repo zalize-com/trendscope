@@ -1,11 +1,13 @@
 {
- "generated_at": "2026-11-15T06:52:23.071091+00:00",
+ "generated_at": "2026-11-15T06:53:05.308782+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
+ "consecutive_days": 9,
  "total_rows": 463,
  "unique_urls": 346,
  "items_in_latest": 185,
+ "items_per_day_avg": 51.4,
  "sources": {
   "ask_hn": {
    "rows": 13,
@@ -52,5 +54,56 @@
    "days_active": 1
   }
  },
- "all_green_days": 1
+ "all_green_days": 1,
+ "top_domains": [
+  {
+   "domain": "so.long.thanks.fish",
+   "hits": 3
+  },
+  {
+   "domain": "reuters.com",
+   "hits": 3
+  },
+  {
+   "domain": "joshka.net",
+   "hits": 3
+  },
+  {
+   "domain": "anthropic.com",
+   "hits": 3
+  },
+  {
+   "domain": "twitter.com",
+   "hits": 3
+  },
+  {
+   "domain": "blog.google",
+   "hits": 3
+  },
+  {
+   "domain": "eff.org",
+   "hits": 2
+  },
+  {
+   "domain": "crissyfield.de",
+   "hits": 2
+  },
+  {
+   "domain": "tube.kockatoo.org",
+   "hits": 2
+  },
+  {
+   "domain": "blog.pypi.org",
+   "hits": 2
+  }
+ ],
+ "files": {
+  "latest": "data/latest.json",
+  "history": "data/history.csv",
+  "topics_history": "data/topics-history.csv",
+  "movers": "docs/api/movers-latest.json",
+  "ideas": "docs/api/ideas-latest.json",
+  "stats": "docs/api/stats.json",
+  "health": "data/health.json"
+ }
 }

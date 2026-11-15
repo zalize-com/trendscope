@@ -34,18 +34,54 @@ def main():
                 break
             green += 1
 
+    # consecutive days with data ending at the latest day
+    streak = 0
+    for i, d in enumerate(reversed(days)):
+        if i == 0 or (
+                datetime.fromisoformat(days[-i]) - datetime.fromisoformat(d)).days == 1:
+            streak += 1
+        else:
+            break
+
+    # most-linked real domains (platform self-links are not signal)
+    from collections import Counter
+    from urllib.parse import urlparse
+    host_skip = {"news.ycombinator.com", "github.com", "npmjs.com", "pypi.org",
+                 "crates.io", "dev.to", "lobste.rs", "producthunt.com",
+                 "techmeme.com"}
+    doms = Counter()
+    for r in rows:
+        try:
+            h = (urlparse(r["url"]).hostname or "").replace("www.", "")
+        except Exception:
+            continue
+        if h and h not in host_skip:
+            doms[h] += 1
+
     latest = json.load(open(os.path.join(DATA, "latest.json")))
     doc = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "days_tracked": len(days),
         "first_day": days[0] if days else None,
         "latest_day": days[-1] if days else None,
+        "consecutive_days": streak,
         "total_rows": len(rows),
         "unique_urls": len(urls),
         "items_in_latest": latest.get("total_items"),
+        "items_per_day_avg": round(len(rows) / max(len(days), 1), 1),
         "sources": {s: {"rows": per_src[s], "days_active": len(src_days[s])}
                     for s in sorted(per_src)},
         "all_green_days": green,
+        "top_domains": [{"domain": h, "hits": n} for h, n in doms.most_common(10)],
+        "files": {
+            "latest": "data/latest.json",
+            "history": "data/history.csv",
+            "topics_history": "data/topics-history.csv",
+            "movers": "docs/api/movers-latest.json",
+            "ideas": "docs/api/ideas-latest.json",
+            "stats": "docs/api/stats.json",
+            "health": "data/health.json",
+        },
     }
     out = os.path.join(API, "stats.json")
     with open(out, "w") as f:
