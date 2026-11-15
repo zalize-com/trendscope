@@ -361,3 +361,39 @@ Body outline (material in docs/mining-log.md):
    we're missing.
 
 Tags: #ai #indiehacker #devtools #buildinginpublic
+
+
+---
+
+## Kaggle dataset card (paste-ready, needs user's Kaggle account)
+
+**Title**: trendscope — daily developer-attention dataset (HN, GitHub,
+Lobsters, 15 sources)
+
+**Subtitle**: What developers read, build and download — snapshotted
+daily, plus 19 years of Hacker News history.
+
+**Description** (paste into About):
+trendscope is an open (CC0) dataset of developer attention, collected
+daily from 15 public sources: Hacker News, GitHub Trending, Lobste.rs,
+Dev.to, npm, PyPI, crates.io, Product Hunt, Techmeme, Ars Technica,
+Slashdot, arXiv and more. Every record carries its source URL and UTC
+capture timestamp.
+
+This Kaggle mirror contains the four long-history files:
+- `hn-canon-monthly.csv` — monthly top-10 front-page stories,
+  Feb 2007 → now (2,380 rows)
+- `show-hn-monthly.csv` — monthly top-10 Show HN launches,
+  Jan 2012 → now (1,790 rows)
+- `ask-hn-monthly.csv` — monthly top-10 Ask HN questions,
+  Feb 2007 → now (2,378 rows)
+- `hiring-monthly.csv` — monthly "Who is hiring / wants to be hired /
+  freelancer" threads, Nov 2010 → now (528 rows)
+
+Daily snapshots and the live dataset live at
+https://github.com/zalize-com/trendscope (updated by GitHub Actions).
+
+**License**: CC0-1.0
+**Tags to add**: hacker news, github, developer trends, time series,
+web scraping, open dataset
+**Upload files**: the four monthly CSVs from `data/`.
