@@ -67,6 +67,9 @@ calling it done:
 - **junk entries** — feeds may keep deleted/housekeeping items
   (Product Hunt ships `-deleted-NNNN` slugs); filter by URL pattern
 - **nested CDATA** — `findtext` returns it verbatim; strip tags after
+- **author hidden in description prefix** — some feeds prefix the author in
+  the summary (`X / Y :`), not a field (Techmeme); extract it or
+  `authors.html` can't see the source's writers
 
 Merging a source automatically re-runs the daily workflow on push, so the
 first snapshot lands within minutes — no need to wait for the cron.
