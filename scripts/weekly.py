@@ -10,15 +10,12 @@ import os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HISTORY = os.path.join(ROOT, "data", "history.csv")
 TOPICS_HIST = os.path.join(ROOT, "data", "topics-history.csv")
-OUT = os.path.join(ROOT, "docs", "api", "week.json")
-WINDOW = 7
+def out_file(name):
+    return os.path.join(ROOT, "docs", "api", name)
 
 
-def main():
-    with open(HISTORY, newline="", encoding="utf-8") as f:
-        recs = list(csv.DictReader(f))
-    days = sorted({r["date"] for r in recs})
-    win = set(days[-WINDOW:])
+def build(recs, days, window, name):
+    win = set(days[-window:])
     wk = [r for r in recs if r["date"] in win]
 
     mx = {}
@@ -73,10 +70,18 @@ def main():
         "topics": [{"topic": k, "count": v} for k, v in
                    sorted(tacc.items(), key=lambda x: -x[1])],
     }
-    os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    with open(OUT, "w", encoding="utf-8") as f:
+    os.makedirs(os.path.dirname(out_file("x")), exist_ok=True)
+    with open(out_file(name), "w", encoding="utf-8") as f:
         json.dump(doc, f, ensure_ascii=False, indent=1)
-    print(f"week.json: {len(top)} top / {len(tacc)} topics / {len(wk)} items over {len(win)}d")
+    print(f"{name}: {len(top)} top / {len(tacc)} topics / {len(wk)} items over {len(win)}d")
+
+
+def main():
+    with open(HISTORY, newline="", encoding="utf-8") as f:
+        recs = list(csv.DictReader(f))
+    days = sorted({r["date"] for r in recs})
+    for window, name in ((7, "week.json"), (30, "month.json")):
+        build(recs, days, window, name)
 
 
 if __name__ == "__main__":
