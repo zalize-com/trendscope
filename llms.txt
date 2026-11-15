@@ -8,6 +8,7 @@
 ## Data
 
 - [latest.json](data/latest.json): today's full cross-source snapshot (items per source)
+- [trendscope.opml](trendscope.opml): all feed sources as OPML — import into any RSS reader
 - [history.csv](data/history.csv): append-only cumulative history for velocity analysis
 - [data/daily/](data/daily/): per-day snapshots, JSON + CSV
 - [data/topics-history.csv](data/topics-history.csv): per-day topic counts
