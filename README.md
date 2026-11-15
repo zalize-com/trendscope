@@ -79,7 +79,7 @@ compare within a source, not across.
 - **This week** (`week.html`): last-7-day cumulative board + staying-power list.
 - **Calendar** (`calendar.html`): month grid — each day's highest-scoring item at a glance.
 - **Hiring pulse** (`hiring.html`): monthly HN "Who is hiring?" tracker —
-  positions-vs-seekers ratio and comment growth chart (data/hiring.json).
+  positions-vs-seekers ratio, 15-year monthly history chart (hiring-monthly.csv).
 - **Digests** (`digest.html`): weekly markdown digests rendered in-site.
 - **Embed widget** (`embed.html`): the top-10 board as a drop-in iframe for
   blogs/docs (no signup, updates daily):
