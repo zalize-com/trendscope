@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T15:52:23.259835+00:00",
+ "generated_at": "2026-11-15T15:53:46.988367+00:00",
  "latest_snapshot": "2026-11-15",
  "crossovers": [
   {
@@ -27,6 +27,36 @@
    "days": 2,
    "best": {
     "score": 890,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-12"
+   }
+  },
+  {
+   "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return",
+   "title": "Nvidia Employees Petition for Jensen Huang’s Return",
+   "sources": [
+    "daringfireball",
+    "hackernews"
+   ],
+   "days": 2,
+   "best": {
+    "score": 811,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-13"
+   }
+  },
+  {
+   "url": "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12",
+   "title": "Reuters Raises the Jensen Huang Affair Tally to Three",
+   "sources": [
+    "daringfireball",
+    "hackernews"
+   ],
+   "days": 2,
+   "best": {
+    "score": 457,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-12"
@@ -209,6 +239,21 @@
     "score": 10,
     "metric": "feed rank",
     "source": "codinghorror",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/11/microsoft-blames-failed-server-health-checks-not-hackers-for-global-outage",
+   "title": "Microsoft, and Its Customers, Are Suffering a Global Cloud Outage",
+   "sources": [
+    "arstechnica",
+    "daringfireball"
+   ],
+   "days": 1,
+   "best": {
+    "score": 9,
+    "metric": "feed rank",
+    "source": "daringfireball",
     "date": "2026-11-15"
    }
   },

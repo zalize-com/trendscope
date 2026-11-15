@@ -1,8 +1,24 @@
 {
- "generated_at": "2026-11-15T15:52:23.259835+00:00",
+ "generated_at": "2026-11-15T15:53:46.988367+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 274,
+ "total": 281,
  "domains": [
+  {
+   "hostname": "reuters.com",
+   "days_on_board": 3,
+   "items": 4,
+   "sources": [
+    "daringfireball",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+    "url": "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
+    "score": 457,
+    "metric": "points",
+    "date": "2026-11-12"
+   }
+  },
   {
    "hostname": "so.long.thanks.fish",
    "days_on_board": 3,
@@ -177,21 +193,6 @@
    }
   },
   {
-   "hostname": "reuters.com",
-   "days_on_board": 2,
-   "items": 3,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
-    "url": "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
-    "score": 457,
-    "metric": "points",
-    "date": "2026-11-12"
-   }
-  },
-  {
    "hostname": "anthropic.com",
    "days_on_board": 2,
    "items": 3,
@@ -219,6 +220,38 @@
     "score": 923,
     "metric": "points",
     "date": "2026-11-13"
+   }
+  },
+  {
+   "hostname": "wsj.com",
+   "days_on_board": 2,
+   "items": 3,
+   "sources": [
+    "daringfireball",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Nvidia is preparing to oust Jensen Huang",
+    "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+    "score": 1224,
+    "metric": "points",
+    "date": "2026-11-11"
+   }
+  },
+  {
+   "hostname": "nytimes.com",
+   "days_on_board": 2,
+   "items": 3,
+   "sources": [
+    "daringfireball",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Jensen Huang said to have had relationship with executive who reports to him",
+    "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+    "score": 410,
+    "metric": "points",
+    "date": "2026-11-11"
    }
   },
   {
@@ -569,36 +602,6 @@
    }
   },
   {
-   "hostname": "wsj.com",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Nvidia is preparing to oust Jensen Huang",
-    "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
-    "score": 1224,
-    "metric": "points",
-    "date": "2026-11-11"
-   }
-  },
-  {
-   "hostname": "nytimes.com",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Jensen Huang said to have had relationship with executive who reports to him",
-    "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
-    "score": 410,
-    "metric": "points",
-    "date": "2026-11-11"
-   }
-  },
-  {
    "hostname": "blog.rust-lang.org",
    "days_on_board": 2,
    "items": 2,
@@ -612,6 +615,38 @@
     "score": 890,
     "metric": "points",
     "date": "2026-11-12"
+   }
+  },
+  {
+   "hostname": "wired.com",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "daringfireball",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Nvidia employees petition to bring back Jensen Huang",
+    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+    "score": 811,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
+   "hostname": "youtube.com",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "daringfireball",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+    "score": 444,
+    "metric": "points",
+    "date": "2026-11-13"
    }
   },
   {
@@ -691,6 +726,21 @@
    }
   },
   {
+   "hostname": "techmeme.com",
+   "days_on_board": 1,
+   "items": 20,
+   "sources": [
+    "techmeme"
+   ],
+   "top_hit": {
+    "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A (Tamara Djurickovic/Tech.eu)",
+    "url": "https://www.techmeme.com/261115/p3#a261115p3",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "medium.com",
    "days_on_board": 1,
    "items": 20,
@@ -707,26 +757,12 @@
    }
   },
   {
-   "hostname": "techmeme.com",
+   "hostname": "arstechnica.com",
    "days_on_board": 1,
    "items": 19,
    "sources": [
-    "techmeme"
-   ],
-   "top_hit": {
-    "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A (Tamara Djurickovic/Tech.eu)",
-    "url": "https://www.techmeme.com/261115/p3#a261115p3",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "arstechnica.com",
-   "days_on_board": 1,
-   "items": 18,
-   "sources": [
     "arstechnica",
+    "daringfireball",
     "hackernews",
     "rands"
    ],
@@ -735,37 +771,6 @@
     "url": "https://arstechnica.com/gadgets/2026/11/seagate-resurrects-the-ssd-hdd-hybrid-drive/",
     "score": 90,
     "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "thenewstack.io",
-   "days_on_board": 1,
-   "items": 17,
-   "sources": [
-    "thenewstack"
-   ],
-   "top_hit": {
-    "title": "AWS Emulator proves agents need a verification loop. Realism is the hard part.",
-    "url": "https://thenewstack.io/aws-emulator-verification-loops/",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "blog.cloudflare.com",
-   "days_on_board": 1,
-   "items": 16,
-   "sources": [
-    "cloudflare",
-    "lemmy"
-   ],
-   "top_hit": {
-    "title": "Kitesurf is now open source",
-    "url": "https://blog.cloudflare.com/kitesurf-open-source/",
-    "score": 15,
-    "metric": "feed rank",
     "date": "2026-11-15"
    }
   }
