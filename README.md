@@ -72,6 +72,9 @@ compare within a source, not across.
   exits and biggest gainers/droppers. The same diff is auto-published daily
   as markdown in `docs/movers/` and shipped in `feed.xml`. A machine-readable
   copy lives at `docs/api/movers-latest.json` for programmatic consumers.
+- **Movers** (`movers.html`): the latest daily diff in page form — entered,
+  left, gainers and droppers rendered from `docs/api/movers-latest.json`,
+  with a picker for dated archive files (`movers-YYYY-MM-DD.json`).
 - **Streaks** (`streaks.html`): staying-power leaderboard — items ranked by
   consecutive days on the board, computed client-side from `history.csv`.
 - **Risers** (`risers.html`): biggest single-day score spikes across all history, computed client-side from `history.csv`.
