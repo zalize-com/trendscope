@@ -74,6 +74,7 @@
     <button data-tool="llmcost">LLM cost est</button>
     <button data-tool="datauri">file → data URI</button>
     <button data-tool="ccommit">commit msg</button>
+    <button data-tool="ts">JSON → TS</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -244,12 +245,21 @@
     <table id="lc-tbl" style="margin-top:10px"></table>
   </div>
 
+  <div class="panel" id="p-ts">
+    <h2>JSON → TypeScript interface</h2>
+    <p class="hint">Paste a JSON sample — generates a typed interface tree (unions for mixed arrays, optional keys when siblings omit them, PascalCase names).</p>
+    <textarea id="ts-in" placeholder='{"user":{"id":1,"name":"ada","tags":["x","y"]},"repos":[{"id":9,"private":false}]}' style="width:100%;height:140px"></textarea>
+    <div class="out" id="ts-out" style="white-space:pre;overflow-x:auto"></div>
+    <button class="copy" id="ts-copy">copy types</button>
+    <div class="err" id="ts-err"></div>
+  </div>
+
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -860,6 +870,84 @@ function ccommit() {
 $("cc-in").oninput = ccommit;
 $("cc-in").value = "feat(api): retry pypistats on 429";
 ccommit();
+
+// -- JSON → TypeScript -------------------------------------------------------
+(() => {
+  const seen = new Map();
+  function pascal(n){ return (n||"T").replace(/[^a-zA-Z0-9]+(.)?/g,(_,c)=>c?c.toUpperCase():"").replace(/^./,c=>c.toUpperCase()) || "T"; }
+  function typeOf(v){
+    if (v === null) return "null";
+    if (Array.isArray(v)) return "array";
+    return typeof v === "object" ? "object" : (Number.isInteger(v) ? "int" : typeof v);
+  }
+  function union(ts){
+    const u = [...new Set(ts)];
+    return u.length === 1 ? u[0] : `(${u.join(" | ")})`;
+  }
+  function emit(name, obj, lines, depth){
+    const tn = seen.get(obj) || pascal(name) + (depth > 1 ? depth : "");
+    seen.set(obj, tn);
+    const keys = new Set();
+    obj.forEach(o => Object.keys(o).forEach(k => keys.add(k)));
+    const body = [`interface ${tn} {`];
+    for (const k of keys) {
+      const vals = obj.map(o => o[k]);
+      const optional = vals.some(v => v === undefined);
+      const present = vals.filter(v => v !== undefined);
+      const ts = present.map(v => {
+        const t = typeOf(v);
+        if (t === "object") return emit(k, [v], lines, depth + 1);
+        if (t === "array") {
+          const et = v.flat().length ? union(v.flat().map(e => {
+            const t2 = typeOf(e);
+            if (t2 === "object") return emit(k.replace(/s$/, "") || "item", [e], lines, depth + 1);
+            if (t2 === "array") return eType(e, k, lines, depth);
+            return t2 === "int" ? "number" : t2;
+          })) : "unknown";
+          return `${et}[]`;
+        }
+        return t === "int" ? "number" : t;
+      });
+      body.push(`  ${JSON.stringify(k).slice(1,-1).match(/^[a-zA-Z_$][a-zA-Z0-9_$]*$/) ? k : JSON.stringify(k)}${optional ? "?" : ""}: ${union(ts)};`);
+    }
+    body.push("}");
+    lines.push(body.join("\n"));
+    return tn;
+  }
+  function eType(arr, k, lines, depth){
+    const flat = arr.flat();
+    if (!flat.length) return "unknown[]";
+    const et = union(flat.map(e => {
+      const t = typeOf(e);
+      if (t === "object") return emit(k.replace(/s$/,"") || "item", [e], lines, depth + 1);
+      if (t === "array") return eType(e, k, lines, depth);
+      return t === "int" ? "number" : t;
+    }));
+    return `${et}[]`;
+  }
+  function run(){
+    $("ts-err").textContent = "";
+    let v;
+    try { v = JSON.parse($("ts-in").value); }
+    catch (e) { $("ts-err").textContent = "invalid JSON — " + e.message; $("ts-out").textContent = ""; return; }
+    seen.clear();
+    const lines = [];
+    const t = typeOf(v);
+    if (t === "object") emit("Root", [v], lines, 0);
+    else if (t === "array") {
+      const items = v.filter(x => typeOf(x) === "object");
+      if (items.length) emit("Item", items, lines, 0);
+      else lines.push(`type Root = ${union(v.map(x => { const t2 = typeOf(x); return t2 === "int" ? "number" : t2; }))}[];`);
+    }
+    else lines.push(`type Root = ${t === "int" ? "number" : t};`);
+    lines.reverse();
+    $("ts-out").textContent = lines.join("\n\n");
+  }
+  $("ts-in").oninput = run;
+  $("ts-copy").onclick = () => navigator.clipboard?.writeText($("ts-out").textContent).then(() => { $("ts-copy").textContent = "copied"; setTimeout(() => $("ts-copy").textContent = "copy types", 1200); });
+  $("ts-in").value = '{"user":{"id":1,"name":"ada","tags":["x","y"]},"repos":[{"id":9,"private":false,"lang":null}]}';
+  run();
+})();
 </script>
 </body>
 </html>
