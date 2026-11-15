@@ -125,7 +125,9 @@ if (!files.length) {
   const wanted = params.get("w") || files[0];
   $("files").innerHTML = files.map(f =>
     `<button data-f="${f}" class="${f===wanted?"active":""}">${f.replace(/\.md$/,"")}${f.includes("notes")?" ✍":""}</button>`).join("");
+  let cur = wanted;
   async function show(f) {
+    cur = f;
     document.querySelectorAll("#files button").forEach(b => b.classList.toggle("active", b.dataset.f === f));
     history.replaceState(null, "", `?w=${encodeURIComponent(f)}`);
     const md = await fetch(`docs/digest/${f}`, {cache:"no-cache"}).then(r => {
@@ -147,6 +149,13 @@ if (!files.length) {
     show(f).catch(() => {}); scrollTo({top: 0});
   });
   $("files").onclick = e => { const f = e.target?.dataset?.f; if (f) show(f).catch(() => { $("doc").innerHTML = '<p id="err">failed to load</p>'; }); };
+  document.addEventListener("keydown", e => {
+    if (e.target.matches("input,textarea")) return;
+    const i = files.indexOf(cur);
+    const t = e.key === "ArrowLeft" && i < files.length - 1 ? files[i + 1]
+            : e.key === "ArrowRight" && i > 0 ? files[i - 1] : null;
+    if (t) show(t).catch(() => {}), scrollTo({top: 0});
+  });
   await show(wanted).catch(() => { $("doc").innerHTML = '<p id="err">failed to load digest</p>'; });
 }
 const movers = idx.movers || [];
