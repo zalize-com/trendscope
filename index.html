@@ -129,6 +129,7 @@
     <p class="tagline">The developer attention dataset — updated daily. · <a href="tools/" style="color:var(--accent)">free in-browser tools →</a> · <a href="https://github.com/zalize-com/trendscope" style="color:var(--accent)">★ star on GitHub</a></p>
     <div class="stamp" id="stamp">loading…</div>
     <div id="src-health" class="muted" style="font-size:12px;margin-top:4px"></div>
+    <div id="hiring-pulse" class="muted" style="font-size:12px;margin-top:4px"></div>
     <div class="topics" id="topics"></div>
     <div style="margin-top:10px">
       <select id="daypick" style="display:none;padding:6px 10px;border-radius:8px;border:1px solid var(--border);background:var(--panel);color:var(--fg);font-size:13px"></select>
@@ -519,6 +520,19 @@ async function main() {
       document.getElementById("daypick-hint").textContent = "← browse any past day";
     }
     renderTrends(INDEX.snapshots.slice(-10));
+  } catch (e) { /* optional */ }
+
+  try {
+    const HP = await j("data/hiring.json");
+    const t = HP.threads || {};
+    if (t.hiring || t.seeking) {
+      const bit = (k, lbl) => t[k]
+        ? `<a href="${t[k].url}" style="color:var(--accent)">${lbl}: ${t[k].comments}</a>` : "";
+      document.getElementById("hiring-pulse").innerHTML =
+        `HN ${t.hiring ? t.hiring.month : ""} hiring pulse — ` +
+        [bit("hiring", "who's hiring"), bit("seeking", "wants to be hired")]
+          .filter(Boolean).join(" · ");
+    }
   } catch (e) { /* optional */ }
 
   try {

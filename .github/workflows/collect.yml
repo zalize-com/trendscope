@@ -34,6 +34,9 @@ jobs:
       - name: Regenerate ideas API
         run: python3 scripts/ideas.py || true
 
+      - name: Track HN hiring threads
+        run: python3 scripts/hiring.py || true
+
       - name: Regenerate RSS feed
         run: python3 scripts/feed.py || true
 
