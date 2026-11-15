@@ -74,6 +74,7 @@ A daily cross-source snapshot of developer attention:
 | Slack Engineering | messaging platform engineering | `slack.engineering/feed/` |
 | AWS News Blog | cloud announcements | `aws.amazon.com/blogs/aws/feed/` |
 | Dropbox Tech | storage infrastructure | `dropbox.tech/feed` |
+| Lyft Engineering | rideshare platform engineering | `eng.lyft.com/feed` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

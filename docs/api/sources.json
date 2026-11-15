@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T15:14:33.075273+00:00",
+  "generated_at": "2026-11-15T15:15:59.159088+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -111,8 +111,8 @@
       }
     },
     "show_hn": {
-      "items": 23,
-      "unique_urls": 23,
+      "items": 24,
+      "unique_urls": 24,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -574,6 +574,18 @@
       "top_item": {
         "title": "How two engineer side projects became the agent taking action inside Dropbox",
         "url": "https://dropbox.tech/machine-learning/how-two-engineer-side-projects-became-the-agent-taking-action-inside-dropbox",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "lyft": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Beyond Test Cards: A Fake Payment Provider for Testing at Scale",
+        "url": "https://eng.lyft.com/beyond-test-cards-a-fake-payment-provider-for-testing-at-scale-c69dddadb115?source=rss----25cd379abb8---4",
         "score": 10,
         "rank": 1
       }
