@@ -64,6 +64,7 @@
     <button data-tool="csv">CSV ↔ JSON</button>
     <button data-tool="schema">JSON → schema</button>
     <button data-tool="gi">.gitignore</button>
+    <button data-tool="semver">semver compare</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -130,13 +131,24 @@
     <button class="copy" id="gi-copy">copy .gitignore</button>
   </div>
 
+  <div class="panel" id="p-semver">
+    <h2>Semver compare</h2>
+    <p class="hint">Two versions in — correct pre-release ordering (<code>1.0.0-alpha &lt; 1.0.0</code>), build metadata ignored per spec.</p>
+    <div class="row">
+      <div><label>version A</label><input type="text" id="sv-a" placeholder="1.2.3" value="1.4.0-rc.1"></div>
+      <div><label>version B</label><input type="text" id="sv-b" placeholder="1.4.0" value="1.4.0"></div>
+    </div>
+    <div class="out" id="sv-out"></div>
+    <div class="err" id="sv-err"></div>
+  </div>
+
   <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -364,6 +376,54 @@ $("gi-picks").onclick = e => {
 };
 $("gi-copy").onclick = () => { navigator.clipboard?.writeText($("gi-out").textContent); $("gi-copy").textContent = "copied"; setTimeout(()=>$("gi-copy").textContent="copy .gitignore",1200); };
 ["Node","macOS"].forEach(k => giSel.add(k)); renderGI();
+
+// --- semver ---
+function svParse(v) {
+  const m = v.trim().replace(/^v/i,"")
+    .match(/^(\d+)\.(\d+)\.(\d+)(?:-([0-9A-Za-z.-]+))?(?:\+[0-9A-Za-z.-]+)?$/);
+  if (!m) return null;
+  return { major:+m[1], minor:+m[2], patch:+m[3],
+           pre: m[4] ? m[4].split(".") : [], raw: v.trim() };
+}
+function svCmpPre(a, b) {
+  if (!a.length && !b.length) return 0;
+  if (!a.length) return 1;           // release > pre-release
+  if (!b.length) return -1;
+  for (let i = 0; i < Math.max(a.length, b.length); i++) {
+    if (i >= a.length) return -1;
+    if (i >= b.length) return 1;
+    const x = a[i], y = b[i], nx = /^\d+$/.test(x), ny = /^\d+$/.test(y);
+    if (nx && ny) { if (+x !== +y) return +x - +y; continue; }
+    if (nx !== ny) return nx ? -1 : 1;   // numeric < alphanumeric
+    if (x !== y) return x < y ? -1 : 1;
+  }
+  return 0;
+}
+function svCmp(a, b) {
+  return a.major - b.major || a.minor - b.minor || a.patch - b.patch || svCmpPre(a.pre, b.pre);
+}
+function svBumpKind(a, b) {
+  if (a.major !== b.major) return "major";
+  if (a.minor !== b.minor) return "minor";
+  if (a.patch !== b.patch) return "patch";
+  if (a.pre.length !== b.pre.length || a.pre.join() !== b.pre.join()) return "pre-release";
+  return "identical";
+}
+function renderSv() {
+  const A = svParse($("sv-a").value), B = svParse($("sv-b").value);
+  $("sv-err").textContent = (!$("sv-a").value.trim() && !$("sv-b").value.trim()) ? ""
+    : (!A ? `not semver: ${$("sv-a").value.trim()}` : !B ? `not semver: ${$("sv-b").value.trim()}` : "");
+  if (!A || !B) { $("sv-out").innerHTML = ""; return; }
+  const c = svCmp(A, B), hi = c >= 0 ? A : B, lo = c >= 0 ? B : A;
+  const verdict = c === 0 ? `${A.raw} = ${B.raw} (equal precedence)`
+    : `${hi.raw} > ${lo.raw} — a <b>${svBumpKind(lo, hi)}</b> difference`;
+  const next = { "patch": `${hi.major}.${hi.minor}.${hi.patch+1}`,
+                 "minor": `${hi.major}.${hi.minor+1}.0`,
+                 "major": `${hi.major+1}.0.0` };
+  $("sv-out").innerHTML = `${verdict}<br><span class="muted">next bumps of ${hi.raw} — patch ${next.patch} · minor ${next.minor} · major ${next.major}</span>`;
+}
+["sv-a","sv-b"].forEach(id => $(id).addEventListener("input", renderSv));
+renderSv();
 </script>
 </body>
 </html>
