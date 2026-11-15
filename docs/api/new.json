@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-15T14:56:43.076486+00:00",
+ "generated_at": "2026-11-15T14:59:53.534349+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 680,
- "new_items": 554,
+ "total_items": 696,
+ "new_items": 570,
  "by_source": {
   "producthunt": 45,
-  "hackernews": 25,
+  "hackernews": 26,
   "show_hn": 22,
   "techmeme": 19,
   "slashdot": 17,
@@ -23,6 +23,7 @@
   "lemmy": 15,
   "lwn": 15,
   "martinfowler": 15,
+  "overreacted": 15,
   "philopp": 15,
   "pragmatic": 15,
   "sanglard": 15,
@@ -1551,6 +1552,14 @@
    "metric": "points"
   },
   {
+   "title": "What thousands of conversations look like inside a language model",
+   "url": "https://operator0x.com/field-notes/qwen-conversation-state-space/",
+   "source": "hackernews",
+   "rank": 20,
+   "score": 43,
+   "metric": "points"
+  },
+  {
    "title": "30 years of Internet transfers with curl",
    "url": "https://daniel.haxx.se/blog/2026/11/11/30-years-of-internet-transfers-with-curl/",
    "source": "haxx",
@@ -2667,6 +2676,126 @@
    "url": "https://opensource.com/article/23/4/linux-gnome-44-features",
    "source": "opensourcecom",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I Vibed a Proof of Conway’s Conjecture",
+   "url": "https://overreacted.io/how-i-vibed-a-proof-of-conways-conjecture/",
+   "source": "overreacted",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "There Are No Instances in atproto",
+   "url": "https://overreacted.io/there-are-no-instances-in-atproto/",
+   "source": "overreacted",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Social Filesystem",
+   "url": "https://overreacted.io/a-social-filesystem/",
+   "source": "overreacted",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing RSC Explorer",
+   "url": "https://overreacted.io/introducing-rsc-explorer/",
+   "source": "overreacted",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hire Me in Japan",
+   "url": "https://overreacted.io/hire-me-in-japan/",
+   "source": "overreacted",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Fix Any Bug",
+   "url": "https://overreacted.io/how-to-fix-any-bug/",
+   "source": "overreacted",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Where It's at://",
+   "url": "https://overreacted.io/where-its-at/",
+   "source": "overreacted",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Open Social",
+   "url": "https://overreacted.io/open-social/",
+   "source": "overreacted",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Lean Syntax Primer",
+   "url": "https://overreacted.io/a-lean-syntax-primer/",
+   "source": "overreacted",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beyond Booleans",
+   "url": "https://overreacted.io/beyond-booleans/",
+   "source": "overreacted",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Math Is Haunted",
+   "url": "https://overreacted.io/the-math-is-haunted/",
+   "source": "overreacted",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Suppressions of Suppressions",
+   "url": "https://overreacted.io/suppressions-of-suppressions/",
+   "source": "overreacted",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I'm Doing a Little Consulting",
+   "url": "https://overreacted.io/im-doing-a-little-consulting/",
+   "source": "overreacted",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Imports Work in RSC",
+   "url": "https://overreacted.io/how-imports-work-in-rsc/",
+   "source": "overreacted",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RSC for LISP Developers",
+   "url": "https://overreacted.io/rsc-for-lisp-developers/",
+   "source": "overreacted",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },

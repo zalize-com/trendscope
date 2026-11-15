@@ -65,6 +65,7 @@ A daily cross-source snapshot of developer attention:
 | antirez | Redis author blog | `antirez.com/rss` |
 | Beesbuzz | dev longform blog | `beesbuzz.biz/feed` |
 | Gargron | Mastodon creator posts | `mastodon.social/@Gargron.rss` |
+| Dan Abramov | React/longform dev blog | `overreacted.io/rss.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
