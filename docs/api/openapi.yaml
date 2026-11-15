@@ -147,7 +147,7 @@ components:
       properties:
         title: {type: string}
         url: {type: string, format: uri}
-        source: {type: string, description: 'one of: hackernews, show_hn, ask_hn, github_trending, lobsters, devto, producthunt, techmeme, slashdot, arstechnica, theverge, arxiv, npm, pypi, crates, lemmy, krebs, changelog, freecodecamp, echojs, infoq, theregister, lwn, hackaday, thenewstack'}
+        source: {type: string, description: 'one of: hackernews, show_hn, ask_hn, github_trending, lobsters, devto, producthunt, techmeme, slashdot, arstechnica, theverge, arxiv, npm, pypi, crates, lemmy, krebs, changelog, freecodecamp, echojs, infoq, theregister, lwn, hackaday, thenewstack, opensourcecom'}
         rank: {type: integer}
         score: {type: number, description: source-native score (points/stars/reactions/downloads)}
         metric: {type: string}

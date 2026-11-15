@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T13:36:56.025458+00:00",
+  "generated_at": "2026-11-15T13:38:22.078600+00:00",
   "date": "2026-11-15",
   "sources": {
     "hackernews": 20,
@@ -20,6 +20,7 @@
     "lwn": 15,
     "hackaday": 7,
     "thenewstack": 15,
+    "opensourcecom": 10,
     "arstechnica": 15,
     "theverge": 10,
     "arxiv": 15,
@@ -28,12 +29,12 @@
     "pypi": 22,
     "crates": 15
   },
-  "total_items": 372,
+  "total_items": 382,
   "topics": [
     {
       "topic": "AI/LLM",
-      "count": 126,
-      "total_score": 1998132822,
+      "count": 125,
+      "total_score": 1998132818,
       "examples": [
         {
           "title": "Lovable apps expose passport details and more than 200K private messages",
@@ -54,8 +55,8 @@
     },
     {
       "topic": "Web Dev",
-      "count": 43,
-      "total_score": 3560795880,
+      "count": 46,
+      "total_score": 3560795905,
       "examples": [
         {
           "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
@@ -71,6 +72,28 @@
           "title": "cursor:pointer on buttons",
           "url": "https://blog.kizu.dev/cursors/",
           "source": "lobsters"
+        }
+      ]
+    },
+    {
+      "topic": "Tools/OSS",
+      "count": 36,
+      "total_score": 2547745715,
+      "examples": [
+        {
+          "title": "Show HN: New In browser URL verification tool",
+          "url": "https://news.ycombinator.com/item?id=50505178",
+          "source": "show_hn"
+        },
+        {
+          "title": "Terminal borders that don't cost a cell",
+          "url": "https://www.joshka.net/cell-borders/",
+          "source": "lobsters"
+        },
+        {
+          "title": "Tool for bash script to send push notification to my phone?",
+          "url": "https://sh.itjust.works/post/69835965",
+          "source": "lemmy"
         }
       ]
     },
@@ -97,31 +120,9 @@
       ]
     },
     {
-      "topic": "Tools/OSS",
-      "count": 33,
-      "total_score": 2547745706,
-      "examples": [
-        {
-          "title": "Show HN: New In browser URL verification tool",
-          "url": "https://news.ycombinator.com/item?id=50505178",
-          "source": "show_hn"
-        },
-        {
-          "title": "Terminal borders that don't cost a cell",
-          "url": "https://www.joshka.net/cell-borders/",
-          "source": "lobsters"
-        },
-        {
-          "title": "Tool for bash script to send push notification to my phone?",
-          "url": "https://sh.itjust.works/post/69835965",
-          "source": "lemmy"
-        }
-      ]
-    },
-    {
       "topic": "Security",
       "count": 23,
-      "total_score": 702,
+      "total_score": 703,
       "examples": [
         {
           "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
@@ -143,7 +144,7 @@
     {
       "topic": "Data Eng",
       "count": 21,
-      "total_score": 1219982203,
+      "total_score": 1219982197,
       "examples": [
         {
           "title": "Let Me Let You Own Your Data",
@@ -156,16 +157,16 @@
           "source": "producthunt"
         },
         {
-          "title": "Dex Semantics",
-          "url": "https://www.producthunt.com/products/dex-by-exmergo",
+          "title": "Thunder",
+          "url": "https://www.producthunt.com/products/thunder-3",
           "source": "producthunt"
         }
       ]
     },
     {
       "topic": "DevOps/Infra",
-      "count": 14,
-      "total_score": 1571,
+      "count": 15,
+      "total_score": 1574,
       "examples": [
         {
           "title": "Show HN: PowerQueue free online message queue supports AWS, GCE, Azure, AMQP",
@@ -187,7 +188,7 @@
     {
       "topic": "Career/Business",
       "count": 11,
-      "total_score": 554,
+      "total_score": 549,
       "examples": [
         {
           "title": "How do you truly stand out in Tech?",
@@ -219,7 +220,7 @@
         "author": "ls612",
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -231,7 +232,7 @@
         "author": "armcat",
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -243,7 +244,7 @@
         "author": "casi",
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -255,7 +256,7 @@
         "author": "mrkn1",
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -267,7 +268,7 @@
         "author": "umerf",
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -279,7 +280,7 @@
         "author": "hacb",
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -291,7 +292,7 @@
         "author": "ybathaee",
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -303,7 +304,7 @@
         "author": "nobody9999",
         "tags": [],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -315,7 +316,7 @@
         "author": "rbanffy",
         "tags": [],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -329,7 +330,7 @@
           "show_hn"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -341,7 +342,7 @@
         "author": "Skyfall106",
         "tags": [],
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -353,7 +354,7 @@
         "author": "DeepLogin",
         "tags": [],
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -365,7 +366,7 @@
         "author": "acossta",
         "tags": [],
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -377,7 +378,7 @@
         "author": "jordigh",
         "tags": [],
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -389,7 +390,7 @@
         "author": "wmchen",
         "tags": [],
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -401,7 +402,7 @@
         "author": "Skyfall106",
         "tags": [],
         "rank": 16,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -413,7 +414,7 @@
         "author": "myth_drannon",
         "tags": [],
         "rank": 17,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -425,7 +426,7 @@
         "author": "nikolay",
         "tags": [],
         "rank": 18,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -437,7 +438,7 @@
         "author": "pseudolus",
         "tags": [],
         "rank": 19,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackernews",
@@ -449,7 +450,7 @@
         "author": "handfuloflight",
         "tags": [],
         "rank": 20,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "show_hn": [
@@ -465,7 +466,7 @@
           "story"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "show_hn",
@@ -479,7 +480,7 @@
           "story"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "show_hn",
@@ -494,7 +495,7 @@
           "front_page"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "show_hn",
@@ -508,7 +509,7 @@
           "story"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "show_hn",
@@ -522,7 +523,7 @@
           "story"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "show_hn",
@@ -536,7 +537,7 @@
           "story"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "show_hn",
@@ -550,7 +551,7 @@
           "story"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "show_hn",
@@ -564,7 +565,7 @@
           "story"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "show_hn",
@@ -578,7 +579,7 @@
           "story"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "show_hn",
@@ -592,7 +593,7 @@
           "story"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "show_hn",
@@ -606,7 +607,7 @@
           "story"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "show_hn",
@@ -620,7 +621,7 @@
           "story"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "ask_hn": [
@@ -634,7 +635,7 @@
         "author": "moonypto",
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "ask_hn",
@@ -646,7 +647,7 @@
         "author": "shnock",
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "ask_hn",
@@ -658,7 +659,7 @@
         "author": "exploraz",
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "ask_hn",
@@ -670,7 +671,7 @@
         "author": "0o777",
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "ask_hn",
@@ -682,7 +683,7 @@
         "author": "SamInTheShell",
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "ask_hn",
@@ -694,7 +695,7 @@
         "author": "basilikum",
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "ask_hn",
@@ -706,7 +707,7 @@
         "author": "gfalcao",
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "ask_hn",
@@ -718,7 +719,7 @@
         "author": "013",
         "tags": [],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "ask_hn",
@@ -730,7 +731,7 @@
         "author": "alexhr",
         "tags": [],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "ask_hn",
@@ -742,7 +743,7 @@
         "author": "herodoturtle",
         "tags": [],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "ask_hn",
@@ -754,7 +755,7 @@
         "author": "spottedmarley",
         "tags": [],
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "ask_hn",
@@ -766,7 +767,7 @@
         "author": "mjs06",
         "tags": [],
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "lobsters": [
@@ -783,7 +784,7 @@
           "zig"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lobsters",
@@ -799,7 +800,7 @@
           "mobile"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lobsters",
@@ -815,7 +816,7 @@
           "programming"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lobsters",
@@ -830,7 +831,7 @@
           "retrocomputing"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lobsters",
@@ -845,7 +846,7 @@
           "privacy"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lobsters",
@@ -861,7 +862,7 @@
           "retrocomputing"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lobsters",
@@ -875,7 +876,7 @@
           "math"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lobsters",
@@ -889,7 +890,7 @@
           "programming"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lobsters",
@@ -903,7 +904,7 @@
           "apl"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lobsters",
@@ -917,7 +918,7 @@
           "culture"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lobsters",
@@ -933,7 +934,7 @@
           "web"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lobsters",
@@ -948,7 +949,7 @@
           "virtualization"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lobsters",
@@ -962,7 +963,7 @@
           "programming"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lobsters",
@@ -976,13 +977,13 @@
           "netbsd"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lobsters",
         "title": "Memory management in 40 major C projects, a survey",
         "url": "https://theconsensus.dev/p/2026/11/08/c-memory-management-survey.html",
-        "score": 2,
+        "score": 3,
         "metric": "score",
         "comments": 0,
         "author": null,
@@ -990,7 +991,7 @@
           "c"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "devto": [
@@ -1009,7 +1010,7 @@
           "career"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "devto",
@@ -1026,7 +1027,7 @@
           "typescript"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "devto",
@@ -1043,7 +1044,7 @@
           "watercooler"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "devto",
@@ -1060,7 +1061,7 @@
           "programming"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "devto",
@@ -1077,7 +1078,7 @@
           "architecture"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "devto",
@@ -1094,7 +1095,7 @@
           "ai"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "devto",
@@ -1111,7 +1112,7 @@
           "programming"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "devto",
@@ -1128,7 +1129,7 @@
           "opensource"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "devto",
@@ -1145,7 +1146,7 @@
           "devto"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "devto",
@@ -1162,7 +1163,7 @@
           "ai"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "devto",
@@ -1179,7 +1180,7 @@
           "resources"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "devto",
@@ -1196,7 +1197,7 @@
           "machinelearning"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "devto",
@@ -1213,7 +1214,7 @@
           "pets"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "devto",
@@ -1228,7 +1229,7 @@
           "community"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "devto",
@@ -1245,7 +1246,7 @@
           "architecture"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "lemmy": [
@@ -1261,7 +1262,7 @@
           "programming"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lemmy",
@@ -1275,7 +1276,7 @@
           "programming"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lemmy",
@@ -1289,7 +1290,7 @@
           "programming"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lemmy",
@@ -1303,7 +1304,7 @@
           "programming"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lemmy",
@@ -1317,7 +1318,7 @@
           "programming"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lemmy",
@@ -1331,7 +1332,7 @@
           "programming"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lemmy",
@@ -1345,7 +1346,7 @@
           "programming"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lemmy",
@@ -1359,7 +1360,7 @@
           "programming"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lemmy",
@@ -1373,7 +1374,7 @@
           "programming"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lemmy",
@@ -1387,7 +1388,7 @@
           "programming"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lemmy",
@@ -1401,7 +1402,7 @@
           "programming"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lemmy",
@@ -1415,7 +1416,7 @@
           "programming"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lemmy",
@@ -1429,7 +1430,7 @@
           "programming"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lemmy",
@@ -1443,7 +1444,7 @@
           "programming"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lemmy",
@@ -1457,61 +1458,61 @@
           "programming"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "producthunt": [
       {
         "source": "producthunt",
-        "title": "Canvas by AgentGrid.io",
-        "url": "https://www.producthunt.com/products/agentgrid-io",
+        "title": "TwoBucket",
+        "url": "https://www.producthunt.com/products/twobucket",
         "score": 20,
         "metric": "feed rank",
         "comments": 0,
         "author": null,
         "tags": [],
-        "description": "Agentic Design Canvas - A visual way to collaborate with AI",
+        "description": "Beginner-friendly mobile detailing software for bookings",
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "producthunt",
-        "title": "Frevana Multiplayer",
-        "url": "https://www.producthunt.com/products/frevana-2",
+        "title": "Spiik",
+        "url": "https://www.producthunt.com/products/spiik",
         "score": 19,
         "metric": "feed rank",
         "comments": 0,
         "author": null,
         "tags": [],
-        "description": "AI that grows your business alongside your team",
+        "description": "AI note taker for meetings & lectures. No bot on your calls.",
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "producthunt",
-        "title": "Rakazo",
-        "url": "https://www.producthunt.com/products/rakazo",
+        "title": "Emayler",
+        "url": "https://www.producthunt.com/products/emayler",
         "score": 18,
         "metric": "feed rank",
         "comments": 0,
         "author": null,
         "tags": [],
-        "description": "The open source Grok Bot alternative you actually own",
+        "description": "Custom email on your domain, minus the headache",
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "producthunt",
-        "title": "Pixel Office",
-        "url": "https://www.producthunt.com/products/pixel-office-3",
+        "title": "Tulvo",
+        "url": "https://www.producthunt.com/products/tulvo",
         "score": 17,
         "metric": "feed rank",
         "comments": 0,
         "author": null,
         "tags": [],
-        "description": "Run a team of AI agents from a pixel-art office",
+        "description": "Smart & adaptive workspace to manage all your work",
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "producthunt",
@@ -1524,59 +1525,59 @@
         "tags": [],
         "description": "Catalog any collection, from Pokémon to pitcher plants",
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "producthunt",
-        "title": "Tulvo",
-        "url": "https://www.producthunt.com/products/tulvo",
+        "title": "Pixel Office",
+        "url": "https://www.producthunt.com/products/pixel-office-3",
         "score": 15,
         "metric": "feed rank",
         "comments": 0,
         "author": null,
         "tags": [],
-        "description": "Smart & adaptive workspace to manage all your work",
+        "description": "Run a team of AI agents from a pixel-art office",
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "producthunt",
-        "title": "Emayler",
-        "url": "https://www.producthunt.com/products/emayler",
+        "title": "Frevana Multiplayer",
+        "url": "https://www.producthunt.com/products/frevana-2",
         "score": 14,
         "metric": "feed rank",
         "comments": 0,
         "author": null,
         "tags": [],
-        "description": "Custom email on your domain, minus the headache",
+        "description": "AI that grows your business alongside your team",
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "producthunt",
-        "title": "Spiik",
-        "url": "https://www.producthunt.com/products/spiik",
+        "title": "Canvas by AgentGrid.io",
+        "url": "https://www.producthunt.com/products/agentgrid-io",
         "score": 13,
         "metric": "feed rank",
         "comments": 0,
         "author": null,
         "tags": [],
-        "description": "AI note taker for meetings & lectures. No bot on your calls.",
+        "description": "Agentic Design Canvas - A visual way to collaborate with AI",
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "producthunt",
-        "title": "TwoBucket",
-        "url": "https://www.producthunt.com/products/twobucket",
+        "title": "Rakazo",
+        "url": "https://www.producthunt.com/products/rakazo",
         "score": 12,
         "metric": "feed rank",
         "comments": 0,
         "author": null,
         "tags": [],
-        "description": "Beginner-friendly mobile detailing software for bookings",
+        "description": "The open source Grok Bot alternative you actually own",
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "producthunt",
@@ -1589,7 +1590,7 @@
         "tags": [],
         "description": "Run Claude Code and Codex in parallel cloud sandboxes",
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "producthunt",
@@ -1602,124 +1603,124 @@
         "tags": [],
         "description": "Privacy compliance on autopilot",
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "Perit Marketplace",
-        "url": "https://www.producthunt.com/products/perit-marketplace",
-        "score": 9,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "Sell your data and RL tasks to frontier AI labs",
-        "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "GotEmail",
-        "url": "https://www.producthunt.com/products/gotemail",
-        "score": 8,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "Fast, native and smart email for Mac and iPhone",
-        "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "ByteAsk Cloud Agents",
-        "url": "https://www.producthunt.com/products/byteask-cloud-agents",
-        "score": 7,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "Find the fix in big codebases. Ship it from Slack.",
-        "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "Polylane for Security",
-        "url": "https://www.producthunt.com/products/polylane",
-        "score": 6,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "Catch exploitable vulnerabilities before they ship",
-        "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "HuntMonitor",
-        "url": "https://www.producthunt.com/products/huntmonitor",
-        "score": 5,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "Watch today's hunt live: points, speed, rank moves",
-        "rank": 16,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "producthunt",
         "title": "Remindly",
         "url": "https://www.producthunt.com/products/remindly-6",
-        "score": 4,
+        "score": 9,
         "metric": "feed rank",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "Notes that remind you, on iPhone, iPad, Mac and web",
-        "rank": 17,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "rank": 12,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "producthunt",
-        "title": "Dex Semantics",
-        "url": "https://www.producthunt.com/products/dex-by-exmergo",
-        "score": 3,
+        "title": "HuntMonitor",
+        "url": "https://www.producthunt.com/products/huntmonitor",
+        "score": 8,
         "metric": "feed rank",
         "comments": 0,
         "author": null,
         "tags": [],
-        "description": "Let your agent build analytics with 25% fewer errors",
-        "rank": 18,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "description": "Watch today's hunt live: points, speed, rank moves",
+        "rank": 13,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Polylane for Security",
+        "url": "https://www.producthunt.com/products/polylane",
+        "score": 7,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Catch exploitable vulnerabilities before they ship",
+        "rank": 14,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "ByteAsk Cloud Agents",
+        "url": "https://www.producthunt.com/products/byteask-cloud-agents",
+        "score": 6,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Find the fix in big codebases. Ship it from Slack.",
+        "rank": 15,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "GotEmail",
+        "url": "https://www.producthunt.com/products/gotemail",
+        "score": 5,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Fast, native and smart email for Mac and iPhone",
+        "rank": 16,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Perit Marketplace",
+        "url": "https://www.producthunt.com/products/perit-marketplace",
+        "score": 4,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Sell your data and RL tasks to frontier AI labs",
+        "rank": 17,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "producthunt",
         "title": "Thunder",
         "url": "https://www.producthunt.com/products/thunder-3",
-        "score": 2,
+        "score": 3,
         "metric": "feed rank",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "A blazing-fast, persistent, key-value AI workload database",
-        "rank": 19,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "rank": 18,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "producthunt",
-        "title": "Tacie",
-        "url": "https://www.producthunt.com/products/tacie",
+        "title": "Default Tamer",
+        "url": "https://www.producthunt.com/products/default-tamer",
+        "score": 2,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Open every link in the right browser on macOS",
+        "rank": 19,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Restoration Scope",
+        "url": "https://www.producthunt.com/products/restoration-scope",
         "score": 1,
         "metric": "feed rank",
         "comments": 0,
         "author": null,
         "tags": [],
-        "description": "Meeting notes on your Mac, with no bot in the call",
+        "description": "Field data and monitoring software for reforestation",
         "rank": 20,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "techmeme": [
@@ -1734,7 +1735,7 @@
         "tags": [],
         "description": "Corbin Bolies / Variety : Inside the first AI Music Awards in Los Angeles, featuring AI announcers, lip-syncing, and human stand-ins, as the ceremony was mired in technical issues   —  I knew things w",
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "techmeme",
@@ -1747,7 +1748,7 @@
         "tags": [],
         "description": "Chris Miller / Financial Times : A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the US' most valuable company cannot dictate US foreign policy   —  The ",
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "techmeme",
@@ -1760,7 +1761,7 @@
         "tags": [],
         "description": "Alex Konrad / Upstarts Media : Nidus, which is developing AI-powered tech for manufacturing robots used by US defense industrial companies, raised $30M across a pre-seed and a seed   —  The startup ba",
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "techmeme",
@@ -1773,7 +1774,7 @@
         "tags": [],
         "description": "Cheng Ting-Fang / Nikkei Asia : TSMC plans to set up a new $500M fund to invest in chip startups, suppliers, and other upstream partners, saying “we also want to support the future's Nvidia”   —  TOKY",
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "techmeme",
@@ -1786,7 +1787,7 @@
         "tags": [],
         "description": "Tamara Djurickovic / Tech.eu : Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A   —  Nebuly de",
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "techmeme",
@@ -1799,7 +1800,7 @@
         "tags": [],
         "description": "Thomas Barrabi / New York Post : Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall   —  Ous",
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "techmeme",
@@ -1812,7 +1813,7 @@
         "tags": [],
         "description": "Wall Street Journal : How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chips in SE Asian data centers, exploiting a gap in US sanctions   —  Massive data",
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "techmeme",
@@ -1825,7 +1826,7 @@
         "tags": [],
         "description": "Washington Post : The Nvidia scandal presents a political challenge for the White House by tying together data centers, China, and corruption, all key voter issues in midterms   —  The scandal connect",
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "techmeme",
@@ -1838,7 +1839,7 @@
         "tags": [],
         "description": "Bloomberg : 23andMe's Anne Wojcicki, formerly married to Google co-founder Sergey Brin, says Jensen Huang's affair shows what happens when CEOs think they are “untouchable”   —  As the Nvidia drama un",
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "techmeme",
@@ -1851,7 +1852,7 @@
         "tags": [],
         "description": "Bloomberg : Source: Applied Digital has asked tenants like Oracle and Meta for billions in guarantees since at least last year to secure power before finalizing leases   —  Tech giants chasing the inf",
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "techmeme",
@@ -1864,7 +1865,7 @@
         "tags": [],
         "description": "Forbes : Unlike other larger-than-life tech founders, Jensen Huang lacked super-voting shares in Nvidia, making it easier for him to lose control of the company   —  This voice experience is generated",
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "techmeme",
@@ -1877,7 +1878,7 @@
         "tags": [],
         "description": "Maria Clara Cobo / Bloomberg : USD-pegged stablecoins are taking a growing share of Latin America's crypto activity, serving as a store of value and an efficient cross-border payment system   —  Stabl",
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "techmeme",
@@ -1890,7 +1891,7 @@
         "tags": [],
         "description": "Katie Tarasov / CNBC : Letter: Altimeter's Brad Gerstner and Atreides's Gavin Baker urge Nvidia's board to consider “the potential return of Jensen Huang”; they own $2.13B in Nvidia   —  Two major Nvi",
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "techmeme",
@@ -1903,7 +1904,7 @@
         "tags": [],
         "description": "Lauren Edmonds / Business Insider : A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim Sweeney, and Garry Tan; organizers say 5K+ Nvidia staff signed   —",
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "techmeme",
@@ -1916,7 +1917,7 @@
         "tags": [],
         "description": "FinTech Global : Databento, which offers market data APIs and says it has contracts with five of the six largest frontier AI labs, raised a $100M Series C at a $1.1B valuation   —  Databento, a platfo",
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "slashdot": [
@@ -1930,7 +1931,7 @@
         "author": "EditorDavid",
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "slashdot",
@@ -1942,7 +1943,7 @@
         "author": "EditorDavid",
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "slashdot",
@@ -1954,7 +1955,7 @@
         "author": "EditorDavid",
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "slashdot",
@@ -1966,7 +1967,7 @@
         "author": "EditorDavid",
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "slashdot",
@@ -1978,7 +1979,7 @@
         "author": "EditorDavid",
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "slashdot",
@@ -1990,7 +1991,7 @@
         "author": "EditorDavid",
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "slashdot",
@@ -2002,7 +2003,7 @@
         "author": "EditorDavid",
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "slashdot",
@@ -2014,7 +2015,7 @@
         "author": "EditorDavid",
         "tags": [],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "slashdot",
@@ -2026,7 +2027,7 @@
         "author": "EditorDavid",
         "tags": [],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "slashdot",
@@ -2038,7 +2039,7 @@
         "author": "EditorDavid",
         "tags": [],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "slashdot",
@@ -2050,7 +2051,7 @@
         "author": "EditorDavid",
         "tags": [],
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "slashdot",
@@ -2062,7 +2063,7 @@
         "author": "EditorDavid",
         "tags": [],
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "slashdot",
@@ -2074,7 +2075,7 @@
         "author": "EditorDavid",
         "tags": [],
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "slashdot",
@@ -2086,7 +2087,7 @@
         "author": "BeauHD",
         "tags": [],
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "slashdot",
@@ -2098,7 +2099,7 @@
         "author": "BeauHD",
         "tags": [],
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "krebs": [
@@ -2112,7 +2113,7 @@
         "author": "BrianKrebs",
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "krebs",
@@ -2124,7 +2125,7 @@
         "author": "BrianKrebs",
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "krebs",
@@ -2136,7 +2137,7 @@
         "author": "BrianKrebs",
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "krebs",
@@ -2148,7 +2149,7 @@
         "author": "BrianKrebs",
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "krebs",
@@ -2160,7 +2161,7 @@
         "author": "BrianKrebs",
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "krebs",
@@ -2172,7 +2173,7 @@
         "author": "BrianKrebs",
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "krebs",
@@ -2184,7 +2185,7 @@
         "author": "BrianKrebs",
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "krebs",
@@ -2196,7 +2197,7 @@
         "author": "BrianKrebs",
         "tags": [],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "krebs",
@@ -2208,7 +2209,7 @@
         "author": "BrianKrebs",
         "tags": [],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "krebs",
@@ -2220,7 +2221,7 @@
         "author": "BrianKrebs",
         "tags": [],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "changelog": [
@@ -2234,7 +2235,7 @@
         "author": null,
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "changelog",
@@ -2246,7 +2247,7 @@
         "author": null,
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "changelog",
@@ -2258,7 +2259,7 @@
         "author": null,
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "changelog",
@@ -2270,7 +2271,7 @@
         "author": null,
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "changelog",
@@ -2282,7 +2283,7 @@
         "author": null,
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "changelog",
@@ -2294,7 +2295,7 @@
         "author": null,
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "changelog",
@@ -2306,7 +2307,7 @@
         "author": null,
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "changelog",
@@ -2318,7 +2319,7 @@
         "author": null,
         "tags": [],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "changelog",
@@ -2330,7 +2331,7 @@
         "author": null,
         "tags": [],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "changelog",
@@ -2342,7 +2343,7 @@
         "author": null,
         "tags": [],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "changelog",
@@ -2354,7 +2355,7 @@
         "author": null,
         "tags": [],
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "changelog",
@@ -2366,7 +2367,7 @@
         "author": null,
         "tags": [],
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "changelog",
@@ -2378,7 +2379,7 @@
         "author": null,
         "tags": [],
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "changelog",
@@ -2390,7 +2391,7 @@
         "author": null,
         "tags": [],
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "changelog",
@@ -2402,7 +2403,7 @@
         "author": null,
         "tags": [],
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "freecodecamp": [
@@ -2416,7 +2417,7 @@
         "author": null,
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "freecodecamp",
@@ -2428,7 +2429,7 @@
         "author": null,
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "freecodecamp",
@@ -2440,7 +2441,7 @@
         "author": null,
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "freecodecamp",
@@ -2452,7 +2453,7 @@
         "author": null,
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "freecodecamp",
@@ -2464,7 +2465,7 @@
         "author": null,
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "freecodecamp",
@@ -2476,7 +2477,7 @@
         "author": null,
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "freecodecamp",
@@ -2488,7 +2489,7 @@
         "author": null,
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "freecodecamp",
@@ -2500,7 +2501,7 @@
         "author": null,
         "tags": [],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "freecodecamp",
@@ -2512,7 +2513,7 @@
         "author": null,
         "tags": [],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "freecodecamp",
@@ -2524,7 +2525,7 @@
         "author": null,
         "tags": [],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "echojs": [
@@ -2538,7 +2539,7 @@
         "author": null,
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "echojs",
@@ -2550,7 +2551,7 @@
         "author": null,
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "echojs",
@@ -2562,7 +2563,7 @@
         "author": null,
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "echojs",
@@ -2574,7 +2575,7 @@
         "author": null,
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "echojs",
@@ -2586,7 +2587,7 @@
         "author": null,
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "echojs",
@@ -2598,7 +2599,7 @@
         "author": null,
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "echojs",
@@ -2610,7 +2611,7 @@
         "author": null,
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "echojs",
@@ -2622,7 +2623,7 @@
         "author": null,
         "tags": [],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "echojs",
@@ -2634,7 +2635,7 @@
         "author": null,
         "tags": [],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "echojs",
@@ -2646,7 +2647,7 @@
         "author": null,
         "tags": [],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "echojs",
@@ -2658,7 +2659,7 @@
         "author": null,
         "tags": [],
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "echojs",
@@ -2670,7 +2671,7 @@
         "author": null,
         "tags": [],
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "echojs",
@@ -2682,7 +2683,7 @@
         "author": null,
         "tags": [],
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "echojs",
@@ -2694,7 +2695,7 @@
         "author": null,
         "tags": [],
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "echojs",
@@ -2706,7 +2707,7 @@
         "author": null,
         "tags": [],
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "infoq": [
@@ -2720,7 +2721,7 @@
         "author": null,
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "infoq",
@@ -2732,7 +2733,7 @@
         "author": null,
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "infoq",
@@ -2744,7 +2745,7 @@
         "author": null,
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "infoq",
@@ -2756,7 +2757,7 @@
         "author": null,
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "infoq",
@@ -2768,7 +2769,7 @@
         "author": null,
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "infoq",
@@ -2780,7 +2781,7 @@
         "author": null,
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "infoq",
@@ -2792,7 +2793,7 @@
         "author": null,
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "infoq",
@@ -2804,7 +2805,7 @@
         "author": null,
         "tags": [],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "infoq",
@@ -2816,7 +2817,7 @@
         "author": null,
         "tags": [],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "infoq",
@@ -2828,7 +2829,7 @@
         "author": null,
         "tags": [],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "infoq",
@@ -2840,7 +2841,7 @@
         "author": null,
         "tags": [],
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "infoq",
@@ -2852,7 +2853,7 @@
         "author": null,
         "tags": [],
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "infoq",
@@ -2864,7 +2865,7 @@
         "author": null,
         "tags": [],
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "infoq",
@@ -2876,7 +2877,7 @@
         "author": null,
         "tags": [],
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "infoq",
@@ -2888,7 +2889,7 @@
         "author": null,
         "tags": [],
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "theregister": [
@@ -2902,7 +2903,7 @@
         "author": null,
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theregister",
@@ -2914,7 +2915,7 @@
         "author": null,
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theregister",
@@ -2926,7 +2927,7 @@
         "author": null,
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theregister",
@@ -2938,7 +2939,7 @@
         "author": null,
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theregister",
@@ -2950,7 +2951,7 @@
         "author": null,
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theregister",
@@ -2962,7 +2963,7 @@
         "author": null,
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theregister",
@@ -2974,7 +2975,7 @@
         "author": null,
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theregister",
@@ -2986,7 +2987,7 @@
         "author": null,
         "tags": [],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theregister",
@@ -2998,7 +2999,7 @@
         "author": null,
         "tags": [],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theregister",
@@ -3010,7 +3011,7 @@
         "author": null,
         "tags": [],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theregister",
@@ -3022,7 +3023,7 @@
         "author": null,
         "tags": [],
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theregister",
@@ -3034,7 +3035,7 @@
         "author": null,
         "tags": [],
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theregister",
@@ -3046,7 +3047,7 @@
         "author": null,
         "tags": [],
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theregister",
@@ -3058,7 +3059,7 @@
         "author": null,
         "tags": [],
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theregister",
@@ -3070,7 +3071,7 @@
         "author": null,
         "tags": [],
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "lwn": [
@@ -3084,7 +3085,7 @@
         "author": null,
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lwn",
@@ -3096,7 +3097,7 @@
         "author": null,
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lwn",
@@ -3108,7 +3109,7 @@
         "author": null,
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lwn",
@@ -3120,7 +3121,7 @@
         "author": null,
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lwn",
@@ -3132,7 +3133,7 @@
         "author": null,
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lwn",
@@ -3144,7 +3145,7 @@
         "author": null,
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lwn",
@@ -3156,7 +3157,7 @@
         "author": null,
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lwn",
@@ -3168,7 +3169,7 @@
         "author": null,
         "tags": [],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lwn",
@@ -3180,7 +3181,7 @@
         "author": null,
         "tags": [],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lwn",
@@ -3192,7 +3193,7 @@
         "author": null,
         "tags": [],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lwn",
@@ -3204,7 +3205,7 @@
         "author": null,
         "tags": [],
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lwn",
@@ -3216,7 +3217,7 @@
         "author": null,
         "tags": [],
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lwn",
@@ -3228,7 +3229,7 @@
         "author": null,
         "tags": [],
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lwn",
@@ -3240,7 +3241,7 @@
         "author": null,
         "tags": [],
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "lwn",
@@ -3252,7 +3253,7 @@
         "author": null,
         "tags": [],
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "hackaday": [
@@ -3266,7 +3267,7 @@
         "author": null,
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackaday",
@@ -3278,7 +3279,7 @@
         "author": null,
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackaday",
@@ -3290,7 +3291,7 @@
         "author": null,
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackaday",
@@ -3302,7 +3303,7 @@
         "author": null,
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackaday",
@@ -3314,7 +3315,7 @@
         "author": null,
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackaday",
@@ -3326,7 +3327,7 @@
         "author": null,
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "hackaday",
@@ -3338,7 +3339,7 @@
         "author": null,
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "thenewstack": [
@@ -3352,7 +3353,7 @@
         "author": null,
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "thenewstack",
@@ -3364,7 +3365,7 @@
         "author": null,
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "thenewstack",
@@ -3376,7 +3377,7 @@
         "author": null,
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "thenewstack",
@@ -3388,7 +3389,7 @@
         "author": null,
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "thenewstack",
@@ -3400,7 +3401,7 @@
         "author": null,
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "thenewstack",
@@ -3412,7 +3413,7 @@
         "author": null,
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "thenewstack",
@@ -3424,7 +3425,7 @@
         "author": null,
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "thenewstack",
@@ -3436,7 +3437,7 @@
         "author": null,
         "tags": [],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "thenewstack",
@@ -3448,7 +3449,7 @@
         "author": null,
         "tags": [],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "thenewstack",
@@ -3460,7 +3461,7 @@
         "author": null,
         "tags": [],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "thenewstack",
@@ -3472,7 +3473,7 @@
         "author": null,
         "tags": [],
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "thenewstack",
@@ -3484,7 +3485,7 @@
         "author": null,
         "tags": [],
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "thenewstack",
@@ -3496,7 +3497,7 @@
         "author": null,
         "tags": [],
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "thenewstack",
@@ -3508,7 +3509,7 @@
         "author": null,
         "tags": [],
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "thenewstack",
@@ -3520,7 +3521,129 @@
         "author": null,
         "tags": [],
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
+      }
+    ],
+    "opensourcecom": [
+      {
+        "source": "opensourcecom",
+        "title": "New developments at Opensource.com",
+        "url": "https://opensource.com/article/23/6/new-developments-opensourcecom",
+        "score": 10,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "rank": 1,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
+      },
+      {
+        "source": "opensourcecom",
+        "title": "Tips for running virtual, in-person, and hybrid events",
+        "url": "https://opensource.com/article/23/5/virtual-in-person-events",
+        "score": 9,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "rank": 2,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
+      },
+      {
+        "source": "opensourcecom",
+        "title": "Generate web pages from Markdown with Docsify-This",
+        "url": "https://opensource.com/article/23/5/docsify-markdown-html",
+        "score": 8,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "rank": 3,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
+      },
+      {
+        "source": "opensourcecom",
+        "title": "How I used guilt as a motivator for good",
+        "url": "https://opensource.com/article/23/4/guilt-motivation",
+        "score": 7,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "rank": 4,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
+      },
+      {
+        "source": "opensourcecom",
+        "title": "3 reasons to host a docathon for your open source project",
+        "url": "https://opensource.com/article/23/4/open-source-docathon",
+        "score": 6,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "rank": 5,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
+      },
+      {
+        "source": "opensourcecom",
+        "title": "Run a virtual conference using only open source tools",
+        "url": "https://opensource.com/article/23/4/open-source-tools-virtual-conference",
+        "score": 5,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "rank": 6,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
+      },
+      {
+        "source": "opensourcecom",
+        "title": "3 key open source challenges in developing countries",
+        "url": "https://opensource.com/article/23/4/challenges-open-source-developing-countries",
+        "score": 4,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "rank": 7,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
+      },
+      {
+        "source": "opensourcecom",
+        "title": "Test your Drupal website with Cypress",
+        "url": "https://opensource.com/article/23/4/website-test-drupal-cypress",
+        "score": 3,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "rank": 8,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
+      },
+      {
+        "source": "opensourcecom",
+        "title": "5 open ways to help UX designers and developers collaborate better",
+        "url": "https://opensource.com/article/23/4/designers-developers-collaborate",
+        "score": 2,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "rank": 9,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
+      },
+      {
+        "source": "opensourcecom",
+        "title": "What's new in GNOME 44?",
+        "url": "https://opensource.com/article/23/4/linux-gnome-44-features",
+        "score": 1,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "rank": 10,
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "arstechnica": [
@@ -3535,7 +3658,7 @@
         "tags": [],
         "description": "COVID-19 lockdowns cut global fire activity by 12.3 percent.",
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arstechnica",
@@ -3548,7 +3671,7 @@
         "tags": [],
         "description": "It felt like stepping into the future.",
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arstechnica",
@@ -3561,7 +3684,7 @@
         "tags": [],
         "description": "Radiation and collisions reshape the planetary building materials.",
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arstechnica",
@@ -3574,7 +3697,7 @@
         "tags": [],
         "description": "Healthy soils, native plants, and fewer chemicals are helping vineyards adapt.",
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arstechnica",
@@ -3587,7 +3710,7 @@
         "tags": [],
         "description": "One way or another, the company will get some more data on Saturday.",
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arstechnica",
@@ -3600,7 +3723,7 @@
         "tags": [],
         "description": "Secretary of Transportation Sean Duffy blamed obsolete equipment for the outage.",
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arstechnica",
@@ -3613,7 +3736,7 @@
         "tags": [],
         "description": "Cost and access barriers are pushing people to modified use and unapproved versions.",
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arstechnica",
@@ -3626,7 +3749,7 @@
         "tags": [],
         "description": "Airlines praised the AI tool, but the air traffic controllers’ union wasn’t involved.",
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arstechnica",
@@ -3639,7 +3762,7 @@
         "tags": [],
         "description": "In Sri Lanka, ecological change is shrinking a park's elephant population.",
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arstechnica",
@@ -3652,7 +3775,7 @@
         "tags": [],
         "description": "Trump son advised Kalshi and got equity while Trump admin helped Kalshi in lawsuits.",
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arstechnica",
@@ -3665,7 +3788,7 @@
         "tags": [],
         "description": "Researcher traces a path from AI reward hacking to potential human extinction.",
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arstechnica",
@@ -3678,7 +3801,7 @@
         "tags": [],
         "description": "\"SignDrop\" exploit lets local users gain all-powerful System rights.",
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arstechnica",
@@ -3691,7 +3814,7 @@
         "tags": [],
         "description": "Governments, hospitals, courts scrambled by global Microsoft outage.",
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arstechnica",
@@ -3704,7 +3827,7 @@
         "tags": [],
         "description": "Heinz von Foerster thought population would grow exponentially and \"squeeze\" us all to death.",
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arstechnica",
@@ -3717,7 +3840,7 @@
         "tags": [],
         "description": "What’s more fitting than a spiral-bound map for a bare-bones two-door pickup?",
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "theverge": [
@@ -3737,7 +3860,7 @@
         ],
         "description": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on Jensen Huang's resignation and the fallout from Nvidia's leadership crisis, follow Terrence",
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theverge",
@@ -3755,7 +3878,7 @@
         ],
         "description": "After aborting a planned catch of Starship Flight 15's booster, SpaceX successfully captured Starship with its \"Mechazilla\" launch and catch tower for the first time. The company has performed 'chopst",
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theverge",
@@ -3773,7 +3896,7 @@
         ],
         "description": "\"It's really happening. I promise. For real.\" Those are the first words from Roy Graham, Head of Story at Magic: The Gathering, in a video posted yesterday announcing Planeswalker, the animated series",
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theverge",
@@ -3791,7 +3914,7 @@
         ],
         "description": "At a press conference today, Transportation Secretary Sean Duffy said that Friday's nationwide ground stop ordered by the FAA was related to work replacing outdated copper wire with a fiber optic line",
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theverge",
@@ -3809,7 +3932,7 @@
         ],
         "description": "Black Friday has become a shopping season of its own, with retailers once again offering discounts well ahead of the actual shopping holiday. We’ve already rounded up some of the best early Black Frid",
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theverge",
@@ -3827,7 +3950,7 @@
         ],
         "description": "Today, I’m talking with Helen Toner, the executive director of the Center for Security and Emerging Technology at Georgetown University. This episode is part two of our series on AI in real life. Hele",
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theverge",
@@ -3845,7 +3968,7 @@
         ],
         "description": "Tesla is doubling, or perhaps tripling down on its bold claims of an autonomous future with the offer to \"select customers\" to purchase a Cybercab for \"personal use.\" But the gilded, steering-wheel-fr",
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theverge",
@@ -3863,7 +3986,7 @@
         ],
         "description": "As much as I appreciate the ingenious design of the Nintendo Switch's Joy-Con, my family and I can't stand using them as standalone gamepads. So when we travel with the Switch 2, we always bring at le",
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theverge",
@@ -3881,7 +4004,7 @@
         ],
         "description": "Hi, friends! Welcome to Installer No. 152, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, thank you for taking time away from Zelda to be here, and also you ca",
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "theverge",
@@ -3899,7 +4022,7 @@
         ],
         "description": "On January 6th, 2025, Nvidia CEO Jensen Huang got his rockstar moment at last. He strode triumphantly onstage, hand raised in the air, to the claps and cheers of a 14,000-person arena absolutely packe",
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "arxiv": [
@@ -3917,7 +4040,7 @@
         ],
         "authors_count": 12,
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arxiv",
@@ -3933,7 +4056,7 @@
         ],
         "authors_count": 11,
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arxiv",
@@ -3948,7 +4071,7 @@
         ],
         "authors_count": 4,
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arxiv",
@@ -3964,7 +4087,7 @@
         ],
         "authors_count": 5,
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arxiv",
@@ -3979,7 +4102,7 @@
         ],
         "authors_count": 7,
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arxiv",
@@ -3996,7 +4119,7 @@
         ],
         "authors_count": 9,
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arxiv",
@@ -4012,7 +4135,7 @@
         ],
         "authors_count": 2,
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arxiv",
@@ -4030,7 +4153,7 @@
         ],
         "authors_count": 4,
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arxiv",
@@ -4046,7 +4169,7 @@
         ],
         "authors_count": 3,
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arxiv",
@@ -4062,7 +4185,7 @@
         ],
         "authors_count": 2,
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arxiv",
@@ -4077,7 +4200,7 @@
         ],
         "authors_count": 1,
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arxiv",
@@ -4092,7 +4215,7 @@
         ],
         "authors_count": 4,
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arxiv",
@@ -4108,7 +4231,7 @@
         ],
         "authors_count": 2,
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arxiv",
@@ -4126,7 +4249,7 @@
         ],
         "authors_count": 7,
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "arxiv",
@@ -4143,7 +4266,7 @@
         ],
         "authors_count": 10,
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "github_trending": [
@@ -4162,13 +4285,13 @@
         "created_at": "2026-11-09T05:15:48Z",
         "forks": 2656,
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "github_trending",
         "title": "deepseek-ai/chat-demo",
         "url": "https://github.com/deepseek-ai/chat-demo",
-        "score": 2202,
+        "score": 2205,
         "metric": "stars",
         "comments": 0,
         "author": "deepseek-ai",
@@ -4179,7 +4302,7 @@
         "created_at": "2026-11-12T08:08:19Z",
         "forks": 392,
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "github_trending",
@@ -4196,7 +4319,7 @@
         "created_at": "2026-11-10T02:37:31Z",
         "forks": 428,
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "github_trending",
@@ -4213,7 +4336,7 @@
         "created_at": "2026-11-11T04:27:17Z",
         "forks": 30,
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "github_trending",
@@ -4230,7 +4353,7 @@
         "created_at": "2026-11-10T20:01:01Z",
         "forks": 89,
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "github_trending",
@@ -4247,7 +4370,7 @@
         "created_at": "2026-11-12T20:49:07Z",
         "forks": 1,
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "github_trending",
@@ -4264,7 +4387,7 @@
         "created_at": "2026-11-10T10:46:56Z",
         "forks": 104,
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "github_trending",
@@ -4281,7 +4404,7 @@
         "created_at": "2026-11-09T00:50:28Z",
         "forks": 258,
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "github_trending",
@@ -4298,7 +4421,7 @@
         "created_at": "2026-11-09T23:53:25Z",
         "forks": 61,
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "github_trending",
@@ -4315,7 +4438,7 @@
         "created_at": "2026-11-09T15:40:06Z",
         "forks": 62,
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "github_trending",
@@ -4332,7 +4455,7 @@
         "created_at": "2026-11-09T13:43:40Z",
         "forks": 70,
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "github_trending",
@@ -4349,7 +4472,7 @@
         "created_at": "2026-11-09T19:13:52Z",
         "forks": 89,
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "github_trending",
@@ -4366,7 +4489,7 @@
         "created_at": "2026-11-11T06:25:10Z",
         "forks": 74,
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "github_trending",
@@ -4383,7 +4506,7 @@
         "created_at": "2026-11-09T00:47:33Z",
         "forks": 65,
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "github_trending",
@@ -4400,7 +4523,7 @@
         "created_at": "2026-11-10T09:25:25Z",
         "forks": 125,
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "npm": [
@@ -4416,7 +4539,7 @@
           "npm"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4430,7 +4553,7 @@
           "npm"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4444,7 +4567,7 @@
           "npm"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4458,7 +4581,7 @@
           "npm"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4472,7 +4595,7 @@
           "npm"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4486,7 +4609,7 @@
           "npm"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4500,7 +4623,7 @@
           "npm"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4514,7 +4637,7 @@
           "npm"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4528,7 +4651,7 @@
           "npm"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4542,7 +4665,7 @@
           "npm"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4556,7 +4679,7 @@
           "npm"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4570,7 +4693,7 @@
           "npm"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4584,7 +4707,7 @@
           "npm"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4598,7 +4721,7 @@
           "npm"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4612,7 +4735,7 @@
           "npm"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4626,7 +4749,7 @@
           "npm"
         ],
         "rank": 16,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4640,7 +4763,7 @@
           "npm"
         ],
         "rank": 17,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4654,7 +4777,7 @@
           "npm"
         ],
         "rank": 18,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4668,7 +4791,7 @@
           "npm"
         ],
         "rank": 19,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4682,7 +4805,7 @@
           "npm"
         ],
         "rank": 20,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4696,7 +4819,7 @@
           "npm"
         ],
         "rank": 21,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4710,7 +4833,7 @@
           "npm"
         ],
         "rank": 22,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4724,7 +4847,7 @@
           "npm"
         ],
         "rank": 23,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "npm",
@@ -4738,7 +4861,7 @@
           "npm"
         ],
         "rank": 24,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "pypi": [
@@ -4754,7 +4877,7 @@
           "pypi"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4768,7 +4891,7 @@
           "pypi"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4782,7 +4905,7 @@
           "pypi"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4796,7 +4919,7 @@
           "pypi"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4810,7 +4933,7 @@
           "pypi"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4824,7 +4947,7 @@
           "pypi"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4838,7 +4961,7 @@
           "pypi"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4852,7 +4975,7 @@
           "pypi"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4866,7 +4989,7 @@
           "pypi"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4880,7 +5003,7 @@
           "pypi"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4894,7 +5017,7 @@
           "pypi"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4908,7 +5031,7 @@
           "pypi"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4922,7 +5045,7 @@
           "pypi"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4936,7 +5059,7 @@
           "pypi"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4950,7 +5073,7 @@
           "pypi"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4964,7 +5087,7 @@
           "pypi"
         ],
         "rank": 16,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4978,7 +5101,7 @@
           "pypi"
         ],
         "rank": 17,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -4992,7 +5115,7 @@
           "pypi"
         ],
         "rank": 18,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -5006,7 +5129,7 @@
           "pypi"
         ],
         "rank": 19,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -5020,7 +5143,7 @@
           "pypi"
         ],
         "rank": 20,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -5034,7 +5157,7 @@
           "pypi"
         ],
         "rank": 21,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "pypi",
@@ -5048,7 +5171,7 @@
           "pypi"
         ],
         "rank": 22,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ],
     "crates": [
@@ -5063,7 +5186,7 @@
         "tags": [],
         "description": "A Rust port of Google's SwissTable hash map",
         "rank": 1,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "crates",
@@ -5076,7 +5199,7 @@
         "tags": [],
         "description": "Parser for Rust source code",
         "rank": 2,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "crates",
@@ -5089,7 +5212,7 @@
         "tags": [],
         "description": "A small cross-platform library for retrieving random data from system source",
         "rank": 3,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "crates",
@@ -5102,7 +5225,7 @@
         "tags": [],
         "description": "Random number generators and other randomness functionality.\n",
         "rank": 4,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "crates",
@@ -5115,7 +5238,7 @@
         "tags": [],
         "description": "Core random number generator traits and tools for implementation.\n",
         "rank": 5,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "crates",
@@ -5128,7 +5251,7 @@
         "tags": [],
         "description": "A macro to generate structures which behave like bitflags.\n",
         "rank": 6,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "crates",
@@ -5141,7 +5264,7 @@
         "tags": [],
         "description": "derive(Error)",
         "rank": 7,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "crates",
@@ -5154,7 +5277,7 @@
         "tags": [],
         "description": "Implementation detail of the `thiserror` crate",
         "rank": 8,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "crates",
@@ -5167,7 +5290,7 @@
         "tags": [],
         "description": "encodes and decodes base64 as bytes or utf8",
         "rank": 9,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "crates",
@@ -5180,7 +5303,7 @@
         "tags": [],
         "description": "Rust for Windows",
         "rank": 10,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "crates",
@@ -5193,7 +5316,7 @@
         "tags": [],
         "description": "Quasi-quoting macro quote!(...)",
         "rank": 11,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "crates",
@@ -5206,7 +5329,7 @@
         "tags": [],
         "description": "Raw FFI bindings to platform libraries like libc.",
         "rank": 12,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "crates",
@@ -5219,7 +5342,7 @@
         "tags": [],
         "description": "A hash table with consistent order and fast iteration.",
         "rank": 13,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "crates",
@@ -5232,7 +5355,7 @@
         "tags": [],
         "description": "A substitute implementation of the compiler's `proc_macro` API to decouple token-based libraries from the procedural macro use case.",
         "rank": 14,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       },
       {
         "source": "crates",
@@ -5245,7 +5368,7 @@
         "tags": [],
         "description": "Provides extremely fast (uses SIMD on x86_64, aarch64 and wasm32) routines for\n1, 2 or 3 byte search and single substring search.\n",
         "rank": 15,
-        "captured_at": "2026-11-15T13:36:56.025458+00:00"
+        "captured_at": "2026-11-15T13:38:22.078600+00:00"
       }
     ]
   }

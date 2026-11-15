@@ -47,6 +47,7 @@ A daily cross-source snapshot of developer attention:
 | LWN | Linux/kernel news | `lwn.net/headlines/rss` |
 | Hackaday | hardware/maker projects | `hackaday.com/feed/` |
 | The New Stack | cloud-native/devops | `thenewstack.io/feed/` |
+| Opensource.com | Red Hat OSS community | `opensource.com/feed` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

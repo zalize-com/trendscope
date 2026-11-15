@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T13:37:51.866635+00:00",
+ "generated_at": "2026-11-15T13:39:17.774559+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 216,
+ "total": 217,
  "domains": [
   {
    "hostname": "so.long.thanks.fish",
@@ -702,6 +702,21 @@
    }
   },
   {
+   "hostname": "opensource.com",
+   "days_on_board": 1,
+   "items": 10,
+   "sources": [
+    "opensourcecom"
+   ],
+   "top_hit": {
+    "title": "New developments at Opensource.com",
+    "url": "https://opensource.com/article/23/6/new-developments-opensourcecom",
+    "score": 10,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "hackaday.com",
    "days_on_board": 1,
    "items": 7,
@@ -741,21 +756,6 @@
    "top_hit": {
     "title": "Italy Fines Meta €805m Over Accessing Android Users' Photos with Facebook App",
     "url": "https://tech.slashdot.org/story/26/11/15/0823213/italy-fines-meta-805m-over-accessing-android-users-photos-with-facebook-app?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "news.slashdot.org",
-   "days_on_board": 1,
-   "items": 3,
-   "sources": [
-    "slashdot"
-   ],
-   "top_hit": {
-    "title": "How Will AI Affect Open Source Development?",
-    "url": "https://news.slashdot.org/story/26/11/15/0615219/how-will-ai-affect-open-source-development?utm_source=rss1.0mainlinkanon&utm_medium=feed",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
