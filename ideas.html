@@ -50,6 +50,7 @@
     pay for, switch to, or build. Aggregated from <code>ask_hn</code> items across the dataset history —
     repeated themes = repeated demand.</p>
   <div class="stats" id="stats"></div>
+  <p class="sub" id="hiring" style="margin-bottom:18px"></p>
   <div id="out"><p id="err">loading…</p></div>
   <p class="note">Method: keyword clustering over question titles (unigrams/bigrams, stopword-filtered).
     A theme needs ≥2 distinct threads across the dataset history to appear. Points are HN score, a rough
@@ -59,6 +60,15 @@
 <script type="module">
 const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
 const $ = id => document.getElementById(id);
+
+// Supply-side context: this month's HN hiring threads.
+fetch("data/hiring.json").then(r => r.ok ? r.json() : null).then(hp => {
+  const t = (hp && hp.threads) || {};
+  if (!t.hiring && !t.seeking) return;
+  const b = (k, lbl) => t[k] ? `<a href="${t[k].url}">${lbl}: <b>${t[k].comments}</b></a>` : "";
+  $("hiring").innerHTML = `Labor market · ${(t.hiring || t.seeking).month} — ` +
+    [b("hiring", "who's hiring"), b("seeking", "wants to be hired")].filter(Boolean).join(" · ");
+}).catch(() => {});
 
 function parseCSV(text) {
   const rows = []; let field = "", row = [], inQ = false;
