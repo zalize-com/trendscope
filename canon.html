@@ -55,6 +55,7 @@
   <select id="mpick" style="background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:13px;margin-bottom:8px"></select>
   <ol id="browse"></ol>
   <h2>all-time top 40</h2>
+  <input id="q" placeholder="search 2,380 canon stories — e.g. sqlite, layoff, outage…" style="width:100%;background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:13px;margin-bottom:8px;font-family:inherit">
   <div class="cn" id="years"></div>
   <ol id="out"></ol>
   <footer>Data: <a href="data/hn-canon-monthly.csv">hn-canon-monthly.csv</a> ·
@@ -138,12 +139,21 @@ document.getElementById("years").innerHTML =
   `<a class="${!yr?"on":""}" href="canon.html">all time</a>` +
   years.map(y => `<a class="${y===yr?"on":""}" href="canon.html?y=${y}">${y}</a>`).join("");
 
-const pool = (yr ? canon.filter(c => c.month.startsWith(yr)) : canon)
-  .slice().sort((a,b) => b.points - a.points).slice(0, 40);
-document.getElementById("out").innerHTML = pool.map((c,i) =>
-  `<li><span class="r">${i+1}</span><span class="it">
-   <a href="${c.hn}">${esc(c.title)}</a><span class="yr">${c.month}</span></span>
-   <span class="sc"><b>${fmt(c.points)}</b> pts · ${fmt(c.comments)}💬</span></li>`).join("");
+const q = (P.get("q") || "").toLowerCase();
+document.getElementById("q").value = q;
+function renderAll() {
+  const term = document.getElementById("q").value.trim().toLowerCase();
+  const pool = (yr ? canon.filter(c => c.month.startsWith(yr)) : canon)
+    .filter(c => !term || (c.title + " " + (c.author||"") + " " + c.month).toLowerCase().includes(term))
+    .slice().sort((a,b) => b.points - a.points).slice(0, term ? 100 : 40);
+  document.getElementById("out").innerHTML = pool.map((c,i) =>
+    `<li><span class="r">${i+1}</span><span class="it">
+     <a href="${c.hn}">${esc(c.title)}</a><span class="yr">${c.month}</span></span>
+     <span class="sc"><b>${fmt(c.points)}</b> pts · ${fmt(c.comments)}💬</span></li>`).join("")
+    || '<li class="it" style="color:var(--dim)">no canon stories match</li>';
+}
+document.getElementById("q").oninput = renderAll;
+renderAll();
 </script>
 </body>
 </html>
