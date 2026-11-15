@@ -127,6 +127,8 @@ def main():
     }
     with open(os.path.join(api, "movers-latest.json"), "w") as f:
         json.dump(api_doc, f, indent=1)
+    with open(os.path.join(api, f"movers-{day_b}.json"), "w") as f:
+        json.dump(api_doc, f, indent=1)
     print(f"wrote docs/movers/{day_b}.md + api (+{len(enter)}/-{len(exit_)}/{len(movers)})")
 
 
