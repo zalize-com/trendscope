@@ -67,6 +67,7 @@ try {
   $("out").innerHTML = "<ol>" + srcs.map(([name, v]) => {
     const t = v.top_item || {};
     return `<li><span class="it"><a href="source.html?s=${encodeURIComponent(name)}"><b>${esc(name)}</b></a>` +
+      ` <img src="docs/api/sparkline/${name}.svg" width="90" height="23" style="vertical-align:-4px;opacity:.85" alt="${name} items/day" loading="lazy">` +
       ` · ${v.items} items · ${v.unique_urls} unique · ${v.one_day_pct}% one-day` +
       (t.title ? ` · top: <a href="${esc(t.url)}">${esc(t.title)}</a>` : "") +
       `</span><span class="sc"><a href="source.html?s=${encodeURIComponent(name)}">deep dive →</a></span></li>`;

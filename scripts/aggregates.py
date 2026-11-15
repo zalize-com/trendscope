@@ -295,6 +295,33 @@ def emit_history_apis(now):
             f.write(svg)
         print(f"sparkline.svg: {len(days)} days, latest {vals[-1]}")
 
+        # per-source sparklines → docs/api/sparkline/<source>.svg
+        sdir = os.path.join(API, "sparkline")
+        os.makedirs(sdir, exist_ok=True)
+        per_src = {}
+        for r in csv.DictReader(open(HIST, encoding="utf-8")):
+            per_src.setdefault(r["source"], {}).setdefault(r["date"], set()).add(r["url"])
+        def mk_svg(days2, vals2, label):
+            W2, H2, P2 = 200, 36, 2
+            mx2 = max(vals2) or 1
+            pts2 = " ".join(
+                f"{P2 + (W2 - 2 * P2) * (i / max(1, len(vals2) - 1)):.1f},{H2 - P2 - (H2 - 2 * P2) * (v / mx2):.1f}"
+                for i, v in enumerate(vals2))
+            o = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W2}" height="{H2 + 14}" '
+                 f'viewBox="0 0 {W2} {H2 + 14}" font-family="monospace">'
+                 f'<rect width="{W2}" height="{H2 + 14}" fill="#0d1117" rx="4"/>'
+                 f'<polyline points="{pts2}" fill="none" stroke="#58a6ff" stroke-width="1.5"/>')
+            o += (f'<text x="{P2}" y="{H2 + 11}" font-size="8" fill="#8b949e">{days2[0]}</text>'
+                  f'<text x="{W2 - P2}" y="{H2 + 11}" font-size="8" fill="#8b949e" text-anchor="end">'
+                  f'{label} · {vals2[-1]}</text></svg>')
+            return o
+        for src, dm in sorted(per_src.items()):
+            vals2 = [len(dm.get(d, ())) for d in days]
+            with open(os.path.join(sdir, f"{src}.svg"), "w", encoding="utf-8") as f:
+                f.write(mk_svg(days, vals2, src))
+        print(f"sparkline/: {len(per_src)} source svgs")
+        print(f"sparkline.svg: {len(days)} days, latest {vals[-1]}")
+
     hpath = os.path.join(ROOT, "data", "hiring-history.csv")
     if os.path.exists(hpath):
         rows = list(csv.DictReader(open(hpath, encoding="utf-8")))
