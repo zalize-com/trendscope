@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T13:27:16.898552+00:00",
+ "generated_at": "2026-11-15T13:30:35.171729+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 741,
- "unique_urls": 604,
- "items_in_latest": 350,
- "items_per_day_avg": 82.3,
+ "total_rows": 748,
+ "unique_urls": 611,
+ "items_in_latest": 357,
+ "items_per_day_avg": 83.1,
  "sources": {
   "arstechnica": {
    "rows": 16,
@@ -44,6 +44,10 @@
   "github_trending": {
    "rows": 31,
    "days_active": 2
+  },
+  "hackaday": {
+   "rows": 7,
+   "days_active": 1
   },
   "hackernews": {
    "rows": 192,
@@ -141,8 +145,8 @@
    "hits": 10
   },
   {
-   "domain": "yro.slashdot.org",
-   "hits": 4
+   "domain": "hackaday.com",
+   "hits": 7
   }
  ],
  "files": {
