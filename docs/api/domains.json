@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T17:11:04.809861+00:00",
+ "generated_at": "2026-11-15T17:12:53.084731+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 623,
+ "total": 642,
  "domains": [
   {
    "hostname": "blog.google",
@@ -114,6 +114,28 @@
    }
   },
   {
+   "hostname": "youtube.com",
+   "days_on_board": 2,
+   "items": 17,
+   "sources": [
+    "bret",
+    "daringfireball",
+    "hackernews",
+    "jankfree",
+    "jmesnil",
+    "k8s",
+    "mko",
+    "planeterlang"
+   ],
+   "top_hit": {
+    "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+    "score": 444,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
    "hostname": "arxiv.org",
    "days_on_board": 2,
    "items": 16,
@@ -191,27 +213,6 @@
     "score": 331,
     "metric": "points",
     "date": "2026-11-10"
-   }
-  },
-  {
-   "hostname": "youtube.com",
-   "days_on_board": 2,
-   "items": 15,
-   "sources": [
-    "bret",
-    "daringfireball",
-    "hackernews",
-    "jankfree",
-    "jmesnil",
-    "k8s",
-    "planeterlang"
-   ],
-   "top_hit": {
-    "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
-    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
-    "score": 444,
-    "metric": "points",
-    "date": "2026-11-13"
    }
   },
   {
