@@ -431,7 +431,8 @@ def fetch_theverge(limit=15):
     entries = root.findall("a:entry", ns)[:limit]
     out = []
     for i, e in enumerate(entries):
-        title = (e.findtext("a:title", default="", namespaces=ns) or "").strip()
+        title = html.unescape(
+            (e.findtext("a:title", default="", namespaces=ns) or "").strip())
         url = ""
         for l in e.findall("a:link", ns):
             if l.get("rel", "alternate") == "alternate" and l.get("href"):
