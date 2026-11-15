@@ -338,6 +338,11 @@ function render(items, tab) {
           cur.it._also = [...(cur.it._also || []), x.it.source];
         }
       });
+    const cross = [...merged.values()].filter(x => (x.it._also || []).length).length;
+    if (cross) {
+      const el = document.getElementById("board-sub");
+      if (el && !el.dataset.cross) { el.innerHTML += ` · <b>${cross} crossovers</b>`; el.dataset.cross = "1"; }
+    }
     list = [...merged.values()]
       .sort((a, b) => b.heat - a.heat).slice(0, 30).map(x => x.it);
   } else if (tab === "packages") {
@@ -445,7 +450,9 @@ function paint() {
     const n = Object.values(SNAP.items || {}).flat().filter(i => !seen.has(i.url)).length;
     if (n) fresh = ` · <b style="color:var(--orange)">${n} fresh</b>`;
   }
-  document.getElementById("board-sub").innerHTML =
+  const bsub = document.getElementById("board-sub");
+  delete bsub.dataset.cross;
+  bsub.innerHTML =
     `${total} items across ${nsrc} source${nsrc === 1 ? "" : "s"}${fresh}`;
   document.getElementById("topics").innerHTML = (SNAP.topics || [])
     .map(t => `<a class="topic-chip" href="topics.html?t=${encodeURIComponent(t.topic)}">${t.topic} <b>${t.count}</b></a>`).join("");
