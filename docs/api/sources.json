@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T19:05:09.880043+00:00",
+  "generated_at": "2026-11-15T19:08:27.688710+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -26,6 +26,18 @@
         "rank": 12
       }
     },
+    "show_hn": {
+      "items": 49,
+      "unique_urls": 49,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Show HN: A custom font based on the Jamaican flag alphabet",
+        "url": "https://bobbiec.github.io/jamaican-font.html",
+        "score": 23,
+        "rank": 1
+      }
+    },
     "npm": {
       "items": 48,
       "unique_urls": 24,
@@ -35,18 +47,6 @@
         "title": "zod",
         "url": "https://www.npmjs.com/package/zod",
         "score": 456795275,
-        "rank": 1
-      }
-    },
-    "show_hn": {
-      "items": 48,
-      "unique_urls": 48,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Show HN: A custom font based on the Jamaican flag alphabet",
-        "url": "https://bobbiec.github.io/jamaican-font.html",
-        "score": 23,
         "rank": 1
       }
     },
@@ -8090,6 +8090,126 @@
         "rank": 1
       }
     },
+    "dandaviesco": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Media Officer Role Breakdown",
+        "url": "https://www.dan-davies.co.uk/media-officer-role-breakdown",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "dannyguo": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Beat the Drum",
+        "url": "https://www.dannyguo.com/blog/beat-the-drum",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "debugbear": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Astro Tutorial: Build a Static Site with Interactive Components",
+        "url": "https://www.debugbear.com/blog/astro-tutorial",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "devever": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "[Computing] The Bootstrapping Exam: Escaping from “Trusting Trust”",
+        "url": "https://www.devever.net/~hl/bootstrapping-exam",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "electronjs": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Electron 45",
+        "url": "https://electronjs.org/blog/electron-45-0",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "erikkroes": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Why I blog again",
+        "url": "https://www.erikkroes.nl/blog/why-i-blog-again/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "fastly": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "What a Midterm Election Night Looks Like from the Edge",
+        "url": "https://www.fastly.com/blog/what-midterm-election-night-looks-like-from-the-edge/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "ghacks": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Firefox's Free Built-In VPN Gets Unlimited Data From November 10 Through January 31, 2027",
+        "url": "https://www.ghacks.net/2026/11/10/firefoxs-free-built-in-vpn-gets-unlimited-data-from-november-10-through-january-31-2027/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "hoeser": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "11ty and Rollup - a take on current build pipelines",
+        "url": "https://www.hoeser.dev/blog/2021-02-28-11ty-and-Rollup/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "htmhell": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "HTML Input Validation is (maybe) Good",
+        "url": "https://htmhell.dev/adventcalendar/2025/28/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -8714,6 +8834,18 @@
         "rank": 1
       }
     },
+    "cssmine": {
+      "items": 12,
+      "unique_urls": 12,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "CSS text-decoration family (not just for underlining links)",
+        "url": "https://www.cssmine.com/blog/2020-03-30-css-text-decoration-family-not-just-for-underlining-links",
+        "score": 12,
+        "rank": 1
+      }
+    },
     "blogrustlang": {
       "items": 11,
       "unique_urls": 10,
@@ -8842,6 +8974,18 @@
       "top_item": {
         "title": "Poor Alder Lake performance when building Firefox due to bad scheduling",
         "url": "https://www.brycevandyk.com/poor-alder-lake-performance-when-building-firefox-due-to-scheduling-issues/",
+        "score": 11,
+        "rank": 1
+      }
+    },
+    "ezindie": {
+      "items": 11,
+      "unique_urls": 11,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "独立开发变现周刊（第165期） : AI视频代运营：月入3.8万美元",
+        "url": "https://www.ezindie.com/weekly/issue-165",
         "score": 11,
         "rank": 1
       }
@@ -13886,6 +14030,66 @@
         "rank": 1
       }
     },
+    "dannyvankooten": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "ibericode/vat version 2.2",
+        "url": "https://www.dannyvankooten.com/blog/2026/ibericode-vat-version-2-2/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "darins": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Easier striped tables with the 'of [selector]' syntax",
+        "url": "https://www.darins.page/articles/easier-striped-tables",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "davrous": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Guide pratique sur la gestion du son et du Dolby Atmos par la PlayStation 5 (Pro)",
+        "url": "https://www.davrous.com/2025/01/11/guide-pratique-sur-la-gestion-du-son-et-du-dolby-atmos-par-la-playstation-5-pro/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "digitala11y": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How to Test Touch Target Size for WCAG Compliance",
+        "url": "https://www.digitala11y.com/how-to-test-touch-target-size-for-wcag-compliance/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "gsqi": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The Impact of Google AI Overviews rolling out in France – The clearest evidence of impact to clicks and click-through rate yet [GSC Data]",
+        "url": "https://www.gsqi.com/marketing-blog/google-ai-overviews-roll-out-in-france-impact/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "hackaday": {
       "items": 9,
       "unique_urls": 9,
@@ -14782,6 +14986,30 @@
       "top_item": {
         "title": "Breaking Up with Long Tasks or: how I learned to group loops and wield the yield",
         "url": "https://rviscomi.dev/2025/01/breaking-up-with-long-tasks/",
+        "score": 5,
+        "rank": 1
+      }
+    },
+    "danielworsnup": {
+      "items": 5,
+      "unique_urls": 5,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Objects as Keys: A JavaScript Adventure",
+        "url": "https://danielworsnup.com/blog/objects-as-keys-a-javascript-adventure/",
+        "score": 5,
+        "rank": 1
+      }
+    },
+    "hsablonniere": {
+      "items": 5,
+      "unique_urls": 5,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Dotfiles + Claude Code = my tiny config workshop",
+        "url": "https://www.hsablonniere.com/dotfiles-claude-code-my-tiny-config-workshop--95d5fr/",
         "score": 5,
         "rank": 1
       }

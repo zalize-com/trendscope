@@ -585,3 +585,23 @@ root for self-hosted mirrors.
 | Corey Cleary | JS dev | `www.coreycleary.me/feed.xml` |
 | Craig Abbott | a11y lead | `www.craigabbott.co.uk/feed.xml` |
 | Creative Juiz | French web dev | `www.creativejuiz.fr/blog/en/feed` |
+| CSS Mine | CSS techniques | `www.cssmine.com/rss` |
+| Dan Davies | frontend dev | `www.dan-davies.co.uk/feed` |
+| Daniel Worsnup | dev notes | `www.danielworsnup.com/rss.xml` |
+| Danny Guo | software engineer | `www.dannyguo.com/blog/feed.xml` |
+| Danny v Kooten | PHP dev | `www.dannyvankooten.com/feed.xml` |
+| Darins | dev notes | `www.darins.page/articles/feed` |
+| Davrous | web dev | `www.davrous.com/feed/` |
+| DebugBear | web perf monitoring | `www.debugbear.com/blog/feed/rss` |
+| devever ~hl | low-level dev | `www.devever.net/~hl/index.feed` |
+| Digital A11y | a11y resources | `www.digitala11y.com/feed/` |
+| Ekioh | embedded browser | `www.ekioh.com/feed/` |
+| Electron | desktop framework | `www.electronjs.org/blog/rss.xml` |
+| Erik Kroes | a11y dev | `www.erikkroes.nl/feed.xml` |
+| EZ Indie | indie dev | `www.ezindie.com/feed/rss.xml` |
+| Fastly | edge cloud | `www.fastly.com/blog_rss.xml` |
+| gHacks Firefox | Firefox news | `www.ghacks.net/category/firefox/feed/` |
+| GSQi | SEO analysis | `www.gsqi.com/marketing-blog/feed/` |
+| Hoeser | dev notes | `www.hoeser.dev/feed.xml` |
+| H Sablonnière | web dev | `www.hsablonniere.com/articles-feed.xml` |
+| HTMHell | HTML best practices | `www.htmhell.dev/feed.xml` |
