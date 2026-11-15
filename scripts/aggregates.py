@@ -378,6 +378,44 @@ def emit_gone(now):
     print(f"gone.json: {len(gone)} dropped items")
 
 
+
+def emit_meta(now):
+    """docs/api/meta.json — dataset self-description for API consumers:
+    endpoint list, source ids, tracked days, snapshot dates."""
+    import glob
+    lpath = os.path.join(ROOT, "data", "latest.json")
+    latest = json.load(open(lpath, encoding="utf-8")) if os.path.exists(lpath) else {}
+    lit = latest.get("items", {})
+    if isinstance(lit, dict):
+        sources = sorted(lit.keys())
+        item_count = sum(len(v) for v in lit.values())
+    else:
+        sources = sorted({i.get("source") for i in lit})
+        item_count = len(lit)
+    snaps = sorted(os.path.basename(p)[:10]
+                   for p in glob.glob(os.path.join(ROOT, "data", "daily", "*.json")))
+    endpoints = sorted(os.path.basename(p)
+                       for p in glob.glob(os.path.join(API, "*.json"))
+                       if os.path.basename(p) != "meta.json")
+    out = {
+        "generated_at": now,
+        "name": "trendscope — daily developer attention dataset",
+        "homepage": "https://zalize-com.github.io/trendscope/",
+        "repo": "https://github.com/zalize-com/trendscope",
+        "openapi": "https://zalize-com.github.io/trendscope/docs/api/openapi.yaml",
+        "latest_snapshot": latest.get("latest_snapshot", latest.get("date")),
+        "snapshot_dates": snaps,
+        "days_tracked": len(snaps),
+        "sources": sources,
+        "source_count": len(sources),
+        "item_count_latest": item_count,
+        "endpoints": endpoints,
+    }
+    op = os.path.join(API, "meta.json")
+    json.dump(out, open(op, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(f"meta.json: {len(endpoints)} endpoints, {len(sources)} sources")
+
+
 def emit_rss(now):
     """latest.json → docs/api/latest.rss: today's top items as RSS 2.0,
     so RSS readers can subscribe to the cross-source board."""
@@ -421,3 +459,4 @@ if __name__ == "__main__":
     emit_history_apis(now)
     emit_rss(now)
     emit_gone(now)
+    emit_meta(now)
