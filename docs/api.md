@@ -20,6 +20,7 @@ Fetch straight from GitHub raw or the Pages site (`/trendscope/…`).
 | `docs/api/ideas-latest.json` | JSON | Ask-HN demand clusters + top asks + built/gap coverage |
 | `docs/api/stats.json` | JSON | Dataset summary: days, rows, unique URLs, per-source totals |
 | `docs/api/today.json` | JSON | One-call 'today' summary: top-10, topic mix, new entries, active streaks, movers counts, hiring pulse |
+| `docs/api/streaks.json` | JSON | Active on-board streaks (2+ consecutive days) + all-time longest runs |
 | `docs/api/sources.json` | JSON | Per-source stats over the whole window: items, unique urls, median days-on-board, one-day %, top item |
 | `data/hiring.json` | JSON | Latest HN monthly hiring/seeking thread comment counts |
 | `data/hiring-history.csv` | CSV | Append-only daily log of those counts (labor-demand signal) |
