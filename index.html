@@ -311,8 +311,33 @@ function render(items, tab) {
     // don't bury editorial scores.
     const maxBySrc = {};
     items.forEach(([s, its]) => { maxBySrc[s] = its[0]?.score || 1; });
-    list = items.flatMap(([s, its]) =>
+    // Merge the same story appearing on several sources: normalize the URL
+    // (scheme/www/tracking params/trailing slash) and keep the hottest entry.
+    const urlKey = u => {
+      try {
+        const x = new URL(u);
+        const keep = [...x.searchParams.entries()].filter(([k]) =>
+          !/^(utm_|ref$|fbclid|gclid|_hsenc|mc_)/i.test(k));
+        keep.sort(([a], [b]) => a.localeCompare(b));
+        return (x.hostname.replace(/^www\./, "") + x.pathname.replace(/\/+$/, "")
+          + (keep.length ? "?" + keep.map(([k, v]) => k + "=" + v).join("&") : "")).toLowerCase();
+      } catch (e) { return (u || "").toLowerCase(); }
+    };
+    const merged = new Map();
+    items.flatMap(([s, its]) =>
         its.map(it => ({ it, heat: it.score / (maxBySrc[s] || 1) })))
+      .forEach(x => {
+        const k = urlKey(x.it.url);
+        const cur = merged.get(k);
+        if (!cur || x.heat > cur.heat) {
+          if (cur && x.it.source !== cur.it.source)
+            x.it._also = [...(cur.it._also || [cur.it.source]), ...(x.it._also || [])];
+          merged.set(k, x);
+        } else if (x.it.source !== cur.it.source) {
+          cur.it._also = [...(cur.it._also || []), x.it.source];
+        }
+      });
+    list = [...merged.values()]
       .sort((a, b) => b.heat - a.heat).slice(0, 30).map(x => x.it);
   } else if (tab === "packages") {
     // Interleave registries by rank — weekly vs monthly windows aren't comparable.
@@ -353,7 +378,7 @@ function render(items, tab) {
         <span class="rank">${i + 1}</span>
         <span>
           <a href="${it.url}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a>
-          <span class="meta"><span class="src">${it.source}</span>${streak}${comments}${author}${tags}</span>
+          <span class="meta"><span class="src">${it.source}</span>${(it._also||[]).map(s => `<span class="src">+${s}</span>`).join("")}${streak}${comments}${author}${tags}</span>
         </span>
         <span class="score"><b>${fmt(it.score)}</b> <span class="muted" style="font-size:11px">${it.metric}</span>${delta}</span>
       </div>`);
