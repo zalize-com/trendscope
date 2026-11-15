@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-15T18:37:19.249123+00:00",
+ "generated_at": "2026-11-15T18:39:59.510530+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 13757,
- "new_items": 13630,
+ "total_items": 13985,
+ "new_items": 13858,
  "by_source": {
   "show_hn": 48,
   "producthunt": 45,
   "hackernews": 33,
   "theregister": 29,
   "techmeme": 23,
-  "slashdot": 20,
+  "slashdot": 21,
   "daringfireball": 17,
   "thenewstack": 17,
   "theverge": 17,
@@ -487,10 +487,18 @@
   "patwalls": 15,
   "paulkinlan": 15,
   "paulstamatiou": 15,
+  "performanceshopify": 15,
+  "petelepage": 15,
+  "peteris": 15,
+  "peteroshaughnessy": 15,
+  "philna": 15,
   "philopp": 15,
+  "pineco": 15,
   "planetgnu": 15,
   "planetigalia": 15,
   "platformer": 15,
+  "pokeinthe": 15,
+  "polypane": 15,
   "potaroo": 15,
   "pragmatic": 15,
   "pragprog": 15,
@@ -593,6 +601,7 @@
   "lit": 14,
   "mpatacchiolagithub": 14,
   "orlp": 14,
+  "pepelsbey": 14,
   "wangpei": 14,
   "architectelevator": 13,
   "fogus": 13,
@@ -618,6 +627,7 @@
   "magpiraspberrypi": 12,
   "meditic": 12,
   "paulmillr": 12,
+  "pimpmytype": 12,
   "rmondello": 12,
   "tumblrmapsbynik": 12,
   "vite": 12,
@@ -921,12 +931,18 @@
   "pawelurbanek": 10,
   "perfectionkills": 10,
   "perlhacks": 10,
+  "peter": 10,
   "peterbe": 10,
+  "petergasstonco": 10,
+  "peterhrynkow": 10,
   "peterkroener": 10,
   "philcalcado": 10,
   "phuu": 10,
   "pinterest": 10,
+  "pixelambacht": 10,
+  "pixelscommander": 10,
   "planeterlang": 10,
+  "plausible": 10,
   "plex": 10,
   "pmjones": 10,
   "poulpita": 10,
@@ -1014,6 +1030,7 @@
   "jeremydormitzer": 9,
   "josebrowne": 9,
   "meta_eng": 9,
+  "pmdartus": 9,
   "susam": 9,
   "blogchriszacharias": 8,
   "darker": 8,
@@ -1061,6 +1078,8 @@
   "mnot": 5,
   "onevcat": 5,
   "overengineer": 5,
+  "perishablepress": 5,
+  "piccalil": 5,
   "sandordargo": 5,
   "sethmlarson": 5,
   "toni": 5,
@@ -1093,6 +1112,7 @@
   "josephscott": 2,
   "lukechannings": 2,
   "nlpfast": 2,
+  "phabricatorwikimedia": 2,
   "bentojs": 1,
   "cnnr": 1,
   "roytang": 1,
@@ -88693,6 +88713,118 @@
    "metric": "feed rank"
   },
   {
+   "title": "One SVG, nine posters: CSS linked parameters",
+   "url": "https://pepelsbey.dev/articles/svg-link-params/",
+   "source": "pepelsbey",
+   "rank": 1,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Standards. Daily web platform news",
+   "url": "https://pepelsbey.dev/articles/web-standards-news/",
+   "source": "pepelsbey",
+   "rank": 2,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Native HTML light and dark color scheme switching",
+   "url": "https://pepelsbey.dev/articles/native-light-dark/",
+   "source": "pepelsbey",
+   "rank": 3,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The road to HTMHell is paved with semantics",
+   "url": "https://pepelsbey.dev/articles/road-to-htmhell/",
+   "source": "pepelsbey",
+   "rank": 4,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Uppercase copy and paste. The problem and a question&shy;able trick",
+   "url": "https://pepelsbey.dev/articles/uppercase-copy-paste/",
+   "source": "pepelsbey",
+   "rank": 5,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Jumping HTML tags. Another reason to validate your markup",
+   "url": "https://pepelsbey.dev/articles/jumping-html-tags/",
+   "source": "pepelsbey",
+   "rank": 6,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS lazy loading is kinda broken in Safari",
+   "url": "https://pepelsbey.dev/articles/lazy-loading-safari/",
+   "source": "pepelsbey",
+   "rank": 7,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A CSS challenge: skewed highlight",
+   "url": "https://pepelsbey.dev/articles/skewed-highlight/",
+   "source": "pepelsbey",
+   "rank": 8,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS and JavaScript as first-class citizens in Eleventy",
+   "url": "https://pepelsbey.dev/articles/eleventy-css-js/",
+   "source": "pepelsbey",
+   "rank": 9,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Condi&shy;tionally adaptive CSS. Browser behavior that might improve your performance",
+   "url": "https://pepelsbey.dev/articles/conditionally-adaptive/",
+   "source": "pepelsbey",
+   "rank": 10,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SVG sprites: old-school, modern, unknown, and forgotten",
+   "url": "https://pepelsbey.dev/articles/svg-sprites/",
+   "source": "pepelsbey",
+   "rank": 11,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "6+5 ways to make a two-column layout: from pretty reasonable to com&shy;pletely wrong",
+   "url": "https://pepelsbey.dev/articles/two-columns/",
+   "source": "pepelsbey",
+   "rank": 12,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A third breath",
+   "url": "https://pepelsbey.dev/articles/a-third-breath/",
+   "source": "pepelsbey",
+   "rank": 13,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When is a button not a button?",
+   "url": "https://www.smashingmagazine.com/2019/02/buttons-interfaces/",
+   "source": "pepelsbey",
+   "rank": 14,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "A year with WurQ",
    "url": "https://perfectionkills.com/a-year-with-wurq/",
    "source": "perfectionkills",
@@ -88773,6 +88905,166 @@
    "metric": "feed rank"
   },
   {
+   "title": "Liquid storefronts now start loading 29% faster",
+   "url": "https://performance.shopify.com/blogs/blog/liquid-storefronts-now-start-loading-29-faster",
+   "source": "performanceshopify",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Faster Shopify storefronts with automatic Early Hints",
+   "url": "https://performance.shopify.com/blogs/blog/faster-shopify-storefronts-with-automatic-early-hints",
+   "source": "performanceshopify",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Poptin improved storefront responsiveness for thousands of Shopify merchants",
+   "url": "https://performance.shopify.com/blogs/blog/how-poptin-improved-storefront-responsiveness-for-thousands-of-shopify-merchants",
+   "source": "performanceshopify",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Improve your LCP with Liquid's new video_tag lazy loading option",
+   "url": "https://performance.shopify.com/blogs/blog/liquid-video_tag-lazy-loading",
+   "source": "performanceshopify",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Faster storefront navigations with moderate speculation rules",
+   "url": "https://performance.shopify.com/blogs/blog/faster-storefront-navigations-with-moderate-speculation-rules",
+   "source": "performanceshopify",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You probably don't need a web performance proxy",
+   "url": "https://performance.shopify.com/blogs/blog/you-probably-dont-need-a-web-performance-proxy",
+   "source": "performanceshopify",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fast Video Banners that Work on Every Device",
+   "url": "https://performance.shopify.com/blogs/blog/fast-video-banners",
+   "source": "performanceshopify",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Performance Tools for 2026",
+   "url": "https://performance.shopify.com/blogs/blog/web-performance-tools-for-2026",
+   "source": "performanceshopify",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "LCP and INP are now in Safari - What to expect",
+   "url": "https://performance.shopify.com/blogs/blog/safari-lcp-inp",
+   "source": "performanceshopify",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chapter 4: How to debug Interaction to Next Paint issues using CSS selectors",
+   "url": "https://performance.shopify.com/blogs/blog/css-selectors-inp",
+   "source": "performanceshopify",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chapter 3: How to debug Cumulative Layout Shift issues using CSS selectors",
+   "url": "https://performance.shopify.com/blogs/blog/css-selectors",
+   "source": "performanceshopify",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chapter 2: How to debug Largest Contentful Paint issues using CSS selectors",
+   "url": "https://performance.shopify.com/blogs/blog/css-selectors-lcp",
+   "source": "performanceshopify",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chapter 1: How to debug Core Web Vitals using CSS selectors",
+   "url": "https://performance.shopify.com/blogs/blog/css-selectors-cwv",
+   "source": "performanceshopify",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Relive improved customer experience and conversions by focusing on real performance",
+   "url": "https://performance.shopify.com/blogs/blog/relive-case-study",
+   "source": "performanceshopify",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speculation Rules at Shopify",
+   "url": "https://performance.shopify.com/blogs/blog/speculation-rules-at-shopify",
+   "source": "performanceshopify",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "9G Firewall",
+   "url": "https://perishablepress.com/9g-firewall/",
+   "source": "perishablepress",
+   "rank": 1,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Launching My Latest WordPress Plugin: REST Pro Tools",
+   "url": "https://perishablepress.com/rest-pro-tools/",
+   "source": "perishablepress",
+   "rank": 2,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Micro API for Simple Download Counter WordPress Plugin",
+   "url": "https://perishablepress.com/micro-api-simple-download-counter/",
+   "source": "perishablepress",
+   "rank": 3,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Check 404 URLs in Database",
+   "url": "https://perishablepress.com/check-404-urls-database/",
+   "source": "perishablepress",
+   "rank": 4,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Download Blank .htaccess File",
+   "url": "https://perishablepress.com/download-blank-htaccess-file/",
+   "source": "perishablepress",
+   "rank": 5,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "The Long Life of WWW::Shorten",
    "url": "https://perlhacks.com/2026/10/the-long-life-of-wwwshorten/",
    "source": "perlhacks",
@@ -88848,6 +89140,206 @@
    "title": "The Long Road from CGI to Containers",
    "url": "https://perlhacks.com/2026/05/the-long-road-from-cgi-to-containers/",
    "source": "perlhacks",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scuba - Roatan (2025-10)",
+   "url": "https://petelepage.com/blog/2025/10/reef-gliders/",
+   "source": "petelepage",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scuba - Wakatobi (2025-07)",
+   "url": "https://petelepage.com/blog/2025/07/wakatobi/",
+   "source": "petelepage",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Slides from Armada JS",
+   "url": "https://petelepage.com/blog/2024/12/armadajs/",
+   "source": "petelepage",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scuba - Dive Sites",
+   "url": "https://petelepage.com/blog/2024/12/dive-sites/",
+   "source": "petelepage",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Slides from connect.tech",
+   "url": "https://petelepage.com/blog/2024/11/connect-tech/",
+   "source": "petelepage",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Raspberry Pi Headless Setup",
+   "url": "https://petelepage.com/blog/2021/08/rpi-setup/",
+   "source": "petelepage",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to serve a localized web app manifest for PWAs",
+   "url": "https://petelepage.com/blog/2021/05/how-to-serve-a-localized-web-app-manifest-for-pwas/",
+   "source": "petelepage",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Measure & understand how installed PWA users differ from browser tab users",
+   "url": "https://petelepage.com/blog/2020/08/measure-understand-how-installed-pwa-users-differ-from-browser-tab-users/",
+   "source": "petelepage",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Testing QuotaExceededError by simulating a small disk",
+   "url": "https://petelepage.com/blog/2020/07/testing-quotaexceedederror/",
+   "source": "petelepage",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GitHub SSH and 2-factor auth",
+   "url": "https://petelepage.com/blog/2020/06/github-ssh-and-2-factor-auth/",
+   "source": "petelepage",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Books I'm reading",
+   "url": "https://petelepage.com/blog/2020/04/books-im-reading/",
+   "source": "petelepage",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Seamless/GrubHub order history",
+   "url": "https://petelepage.com/blog/2019/08/seamless-grubhub-order-history/",
+   "source": "petelepage",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is my PWA installed?",
+   "url": "https://petelepage.com/blog/2019/07/is-my-pwa-installed/",
+   "source": "petelepage",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google I/O Device Lab",
+   "url": "https://petelepage.com/blog/2014/07/devlab/",
+   "source": "petelepage",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A web UI for my Pi",
+   "url": "https://petelepage.com/blog/2013/08/a-web-ui-for-my-pi/",
+   "source": "petelepage",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Element.matches(), the Cr tool and Happy Holidays!",
+   "url": "/2013/12/element-matches-the-cr-tool-and-happy-holidays/",
+   "source": "peter",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Animations Engine, Promises and Datalist Support for Android",
+   "url": "/2013/12/web-animations-engine-promises-and-datalist-support-for-android/",
+   "source": "peter",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Faster Web Font Downloads, Disableable Font Kerning and Easy Hosted Apps",
+   "url": "/2013/11/faster-web-font-downloads-disableable-font-kerning-and-easy-hosted-apps/",
+   "source": "peter",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vibration and Promises, Less Click Delays and Shutdown Sounds",
+   "url": "/2013/11/vibration-and-promises-less-click-delays-and-shutdown-sounds/",
+   "source": "peter",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Multiple Profiles, ES6’s Math.sign() in v8 and Debugging Inactive Android Tabs",
+   "url": "/2013/10/multiple-profiles-es6s-math-sign-in-v8-and-debugging-inactive-android-tabs/",
+   "source": "peter",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Animations, 2D Canvas’ Current Transforms and Snappy for IndexedDB",
+   "url": "/2013/10/animations-2d-canvas-current-transforms-and-snappy-for-indexeddb/",
+   "source": "peter",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Transparent VP8 Videos, Audio Codecs for MSE and Chrome’s 5th Birthday",
+   "url": "/2013/09/transparent-vp8-videos-audio-codecs-for-mse-and-chromes-5th-birthday/",
+   "source": "peter",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WheelEvents, Elliptical Canvas Paths and chrome://inspect Improvements",
+   "url": "/2013/09/wheelevents-elliptical-canvas-paths-and-chromeinspect-improvements/",
+   "source": "peter",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Zoom Dependent devicePixelRatio, Clear Error Messages and JSON for XMLHttpRequest",
+   "url": "/2013/08/zoom-dependent-devicepixelratio-clear-error-messages-and-json-for-xmlhttprequest/",
+   "source": "peter",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WebGL and Device Motion for Android, Port Forwarding and Named Grid Areas",
+   "url": "/2013/08/webgl-and-device-motion-for-android-port-forwarding-and-named-grid-areas/",
+   "source": "peter",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -88933,6 +89425,286 @@
    "metric": "feed rank"
   },
   {
+   "title": "AI & Books: notes from a moral panic",
+   "url": "https://petergasston.co.uk/ai-books-notes-from-a-moral-panic/",
+   "source": "petergasstonco",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I use AI in creating my newsletter",
+   "url": "https://petergasston.co.uk/how-i-use-ai-in-creating-my-newsletter/",
+   "source": "petergasstonco",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Taste is the bar of quality in the absence of correctness",
+   "url": "https://petergasston.co.uk/taste-is-the-bar-of-quality-in-the-absence-of-correctness/",
+   "source": "petergasstonco",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Future of AI Images",
+   "url": "https://petergasston.co.uk/the-future-of-ai-images/",
+   "source": "petergasstonco",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://petergasston.co.uk/2962-2/",
+   "source": "petergasstonco",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://petergasston.co.uk/2954-2/",
+   "source": "petergasstonco",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://petergasston.co.uk/2949-2/",
+   "source": "petergasstonco",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://petergasston.co.uk/2947-2/",
+   "source": "petergasstonco",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is JSON prompting effective? (No.)",
+   "url": "https://petergasston.co.uk/is-json-prompting-effective-no/",
+   "source": "petergasstonco",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Content, community, and coincidence",
+   "url": "https://petergasston.co.uk/content-community-and-coincidence/",
+   "source": "petergasstonco",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I Built a Custom Event Router, Then Deleted It: Lessons in Knowing When to Stop Building",
+   "url": "https://peterhrynkow.com/architecture/2025/02/15/i-built-an-event-router-then-deleted-it.html",
+   "source": "peterhrynkow",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Generates Configuration, Not Code: How I Use LLMs to Build Product Capabilities",
+   "url": "https://peterhrynkow.com/ai/architecture/2025/02/08/ai-generates-configuration-not-code.html",
+   "source": "peterhrynkow",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Schema-Driven Platforms: Why JSON Schema Is the Most Underrated Tool in Your Stack",
+   "url": "https://peterhrynkow.com/ai/architecture/2025/02/01/schema-driven-platforms.html",
+   "source": "peterhrynkow",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Use a JavaScript Framework",
+   "url": "https://peterhrynkow.com/javascript/2019/07/13/why-frameworks.html",
+   "source": "peterhrynkow",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hacking Image Interpolation for Fun and Profit",
+   "url": "https://peterhrynkow.com/performance/2019/01/13/blowing-up-images-to-make-them-small.html",
+   "source": "peterhrynkow",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Perils of Jest Snapshot Testing",
+   "url": "https://peterhrynkow.com/testing/2019/01/07/the-perils-of-snapshot-testing.html",
+   "source": "peterhrynkow",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "‪A Better Way to Test Your React-Redux App‬",
+   "url": "https://peterhrynkow.com/testing/2019/01/01/testing-atoms-and-molecules.html",
+   "source": "peterhrynkow",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Firebase + Create React App",
+   "url": "https://peterhrynkow.com/firebase/2018/08/01/firebase-with-create-react-app.html",
+   "source": "peterhrynkow",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Partial Application in Action",
+   "url": "https://peterhrynkow.com/functional-programming/2017/09/29/using-function-bind-for-partial-application.html",
+   "source": "peterhrynkow",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using SVG to Shrink Your PNGs",
+   "url": "https://peterhrynkow.com/how-to-compress-a-png-like-a-jpeg/",
+   "source": "peterhrynkow",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NFSv4 with only one open port",
+   "url": "https://peteris.rocks/blog/nfs4-single-port/",
+   "source": "peteris",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Persisting state between AWS EC2 spot instances",
+   "url": "https://peteris.rocks/blog/persisting-state-between-aws-ec2-spot-instances/",
+   "source": "peteris",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Modifying XML, JSON, INI configuration files without sed",
+   "url": "https://peteris.rocks/blog/modifying-xml-json-ini-configuration-files-without-sed/",
+   "source": "peteris",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Interview questions",
+   "url": "https://peteris.rocks/blog/interview-questions/",
+   "source": "peteris",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Open Firebird embedded database file",
+   "url": "https://peteris.rocks/blog/open-firebird-embedded-database-file/",
+   "source": "peteris",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cost of running a startup in Riga, Latvia",
+   "url": "https://peteris.rocks/blog/cost-of-running-a-startup-in-riga-latvia/",
+   "source": "peteris",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Extrapolate lines with numpy.polyfit",
+   "url": "https://peteris.rocks/blog/extrapolate-lines-with-numpy-polyfit/",
+   "source": "peteris",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Helpers in Phoenix Framework with Elixir",
+   "url": "https://peteris.rocks/blog/helpers-in-phoenix-framework-with-elixir/",
+   "source": "peteris",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Real time stats with WebSockets and React",
+   "url": "https://peteris.rocks/blog/real-time-stats-with-websockets-and-react/",
+   "source": "peteris",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exotic HTTP Headers",
+   "url": "https://peteris.rocks/blog/exotic-http-headers/",
+   "source": "peteris",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "htop explained",
+   "url": "https://peteris.rocks/blog/htop/",
+   "source": "peteris",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Parsing malformed JSON",
+   "url": "https://peteris.rocks/blog/parsing-malformed-json/",
+   "source": "peteris",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WaveSurfer.js copy audio",
+   "url": "https://peteris.rocks/blog/wavesurfer-js-copy-audio/",
+   "source": "peteris",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Audio API playback rate preserve pitch",
+   "url": "https://peteris.rocks/blog/web-audio-api-playback-rate-preserve-pitch/",
+   "source": "peteris",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Drip: import subscribers who did not confirm their email",
+   "url": "https://peteris.rocks/blog/drip-import-subscribers-who-did-not-confirm-their-email/",
+   "source": "peteris",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Öffentliche Erklärbär-Termine 1. Halbjahr 2025",
    "url": "https://www.peterkroener.de/oeffentliche-erklaerbaer-termine-1-halbjahr-2025/",
    "source": "peterkroener",
@@ -89013,6 +89785,142 @@
    "metric": "feed rank"
   },
   {
+   "title": "In defense of the human code review",
+   "url": "https://peteroshaughnessy.com/posts/2026-10-29-dangers-of-ai-software-speed-up.md",
+   "source": "peteroshaughnessy",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Green Energy Inference and Open Weight LLMs",
+   "url": "https://peteroshaughnessy.com/posts/2026-03-07-green-energy-llm.md",
+   "source": "peteroshaughnessy",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Responsible AI — The Only Way Is Ethics",
+   "url": "https://peteroshaughnessy.com/posts/2026-02-01-ai-ethics-safety-the-only-way-is-ethics.md",
+   "source": "peteroshaughnessy",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A beginner's guide to digital piano recording (with Linux)",
+   "url": "https://peteroshaughnessy.com/posts/2024-06-24-beginners-guide-to-digital-piano-recording-with-linux.md",
+   "source": "peteroshaughnessy",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 reasons I love being a software developer at the John Lewis Partnership (and you might too?)",
+   "url": "https://medium.com/john-lewis-software-engineering/5-reasons-i-love-being-a-software-developer-at-the-john-lewis-partnership-and-you-might-too-c0c0ec181efa",
+   "source": "peteroshaughnessy",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Equal Parenting Leave: a personal experience and a big thank you",
+   "url": "https://peteroshaughnessy.com/posts/2022-04-03-how-was-your-paternity-leave.md",
+   "source": "peteroshaughnessy",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Working from home? Here's 12 tips for avoiding/treating computer-related neck and wrist pain",
+   "url": "https://peteroshaughnessy.com/posts/2020-03-26-eleven-tips-for-computer-related-pain.md",
+   "source": "peteroshaughnessy",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10 Things I Learned as a Developer Advocate",
+   "url": "https://peteroshaughnessy.com/posts/2018-12-11-ten-things-i-learned.md",
+   "source": "peteroshaughnessy",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Mastodon is defying the “critical mass”",
+   "url": "https://peteroshaughnessy.com/posts/2018-11-10-why-mastodon-is-defying-critical-mass.md",
+   "source": "peteroshaughnessy",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Llama Vision, a website that detects llamas through your camera",
+   "url": "https://medium.com/samsung-internet-dev/introducing-llama-vision-a-website-that-detects-llamas-through-your-camera-aa6f16144ac4",
+   "source": "peteroshaughnessy",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating a Physical and Immersive Web Mashup",
+   "url": "https://medium.com/samsung-internet-dev/creating-a-physical-and-immersive-web-mashup-b5418f14b982",
+   "source": "peteroshaughnessy",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Disappearing Frameworks",
+   "url": "https://peteroshaughnessy.com/posts/2018-06-21-disappearing-frameworks.md",
+   "source": "peteroshaughnessy",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Samsung Internet v7.4 Beta is here!",
+   "url": "https://medium.com/samsung-internet-dev/samsung-internet-v7-4-beta-is-here-bdbc9be9f102",
+   "source": "peteroshaughnessy",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We're helping out on MDN Web Docs - and you can too!",
+   "url": "https://medium.com/samsung-internet-dev/were-helping-out-on-mdn-web-docs-and-you-can-too-68e001866ad3",
+   "source": "peteroshaughnessy",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Payments Update - new payment apps on their way — and more!",
+   "url": "https://medium.com/samsung-internet-dev/web-payments-update-new-payment-apps-on-their-way-and-more-cef1c62edaf6",
+   "source": "peteroshaughnessy",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Switching production traffic to Apache Traffic Server",
+   "url": "/phame/live/11/post/115/switching_production_traffic_to_apache_traffic_server/",
+   "source": "phabricatorwikimedia",
+   "rank": 1,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wikipedia goes 100% Forward Secret",
+   "url": "/phame/live/11/post/111/wikipedia_goes_100_forward_secret/",
+   "source": "phabricatorwikimedia",
+   "rank": 2,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Building AI Products—Part II: Task-Oriented vs. Component-Oriented Pipelines",
    "url": "http://philcalcado.com/2025/03/14/building-ai-products-part-ii.html",
    "source": "philcalcado",
@@ -89089,6 +89997,126 @@
    "url": "http://philcalcado.com/2018/11/19/a_structured_rfc_process.html",
    "source": "philcalcado",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build a contact form with Astro and Resend",
+   "url": "https://philna.sh/blog/2026/07/23/build-contact-form-astro-resend/",
+   "source": "philna",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generate AI-powered related links for your Astro content",
+   "url": "https://philna.sh/blog/2026/06/22/ai-powered-related-content-astro-site/",
+   "source": "philna",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I built a new app and I don't know how I feel about it",
+   "url": "https://philna.sh/blog/2026/05/25/i-built-a-new-app-and-i-dont-know-how-i-feel-about-it/",
+   "source": "philna",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 quick tips for giving better presentations",
+   "url": "https://philna.sh/blog/2026/03/05/talking-tips/",
+   "source": "philna",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things you need to do for npm trusted publishing to work",
+   "url": "https://philna.sh/blog/2026/01/28/trusted-publishing-npm/",
+   "source": "philna",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How wrong can a JavaScript Date calculation go?",
+   "url": "https://philna.sh/blog/2026/01/11/javascript-date-calculation/",
+   "source": "philna",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Create Vector Embeddings in Python",
+   "url": "https://philna.sh/blog/2025/04/08/how-to-create-vector-embeddings-in-python/",
+   "source": "philna",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Troubles with multipart form data and fetch in Node.js",
+   "url": "https://philna.sh/blog/2025/01/14/troubles-with-multipart-form-data-fetch-node-js/",
+   "source": "philna",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Clean up HTML Content for Retrieval-Augmented Generation with Readability.js",
+   "url": "https://philna.sh/blog/2025/01/09/html-content-retrieval-augmented-generation-readability-js/",
+   "source": "philna",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shallow clones versus structured clones",
+   "url": "https://philna.sh/blog/2024/12/30/shallow-clones-versus-structured-clones/",
+   "source": "philna",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Create Vector Embeddings in Node.js",
+   "url": "https://philna.sh/blog/2024/09/25/how-to-create-vector-embeddings-in-node-js/",
+   "source": "philna",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Chunk Text in JavaScript for Your RAG Application",
+   "url": "https://philna.sh/blog/2024/09/18/how-to-chunk-text-in-javascript-for-rag-applications/",
+   "source": "philna",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Using Fetch with the Streams API Gets You Faster UX with GenAI Apps",
+   "url": "https://philna.sh/blog/2024/08/22/fetch-streams-api-for-faster-ux-generative-ai-apps/",
+   "source": "philna",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JavaScript is getting array grouping methods",
+   "url": "https://philna.sh/blog/2023/09/14/javascript-array-grouping-methods/",
+   "source": "philna",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Node.js includes built-in support for .env files",
+   "url": "https://philna.sh/blog/2023/09/05/nodejs-supports-dotenv/",
+   "source": "philna",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -89293,6 +90321,262 @@
    "metric": "feed rank"
   },
   {
+   "title": "The Index: Issue #206",
+   "url": "https://piccalil.li/the-index/206/?ref=main-rss-feed",
+   "source": "piccalil",
+   "rank": 1,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JavaScript for Everyone: New Game+",
+   "url": "https://piccalil.li/links/javascript-for-everyone-new-game-plus/?ref=main-rss-feed",
+   "source": "piccalil",
+   "rank": 2,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Index: Issue #205",
+   "url": "https://piccalil.li/the-index/205/?ref=main-rss-feed",
+   "source": "piccalil",
+   "rank": 3,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Index: Issue #204",
+   "url": "https://piccalil.li/the-index/204/?ref=main-rss-feed",
+   "source": "piccalil",
+   "rank": 4,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "If we stop, we lose",
+   "url": "https://piccalil.li/blog/if-we-stop-we-lose/?ref=main-rss-feed",
+   "source": "piccalil",
+   "rank": 5,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Best Free Fonts of 2026",
+   "url": "https://pimpmytype.com/best-free-fonts-2026/",
+   "source": "pimpmytype",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The State of Typography in Design Systems",
+   "url": "https://pimpmytype.com/typography-design-systems/",
+   "source": "pimpmytype",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "FIFA’s World Cup Typography Foul: UI Design Learnings",
+   "url": "https://pimpmytype.com/fifa-2026-font/",
+   "source": "pimpmytype",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI design has no soul, but Typography makes it whole",
+   "url": "https://pimpmytype.com/about-ai-design/",
+   "source": "pimpmytype",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2025 in Review – Taking a New Direction",
+   "url": "https://pimpmytype.com/2025-review/",
+   "source": "pimpmytype",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can You Measure the Impact of Typography?",
+   "url": "https://pimpmytype.com/cro-typography/",
+   "source": "pimpmytype",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trump’s Oval Office Sign – A Typography Breakdown",
+   "url": "https://pimpmytype.com/oval-office-sign/",
+   "source": "pimpmytype",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple’s Liquid Glass Shatters Typography",
+   "url": "https://pimpmytype.com/liquid-glass/",
+   "source": "pimpmytype",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pope Francis’ Tomb: A Type Tragedy",
+   "url": "https://pimpmytype.com/pope-francis/",
+   "source": "pimpmytype",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Taking a Break",
+   "url": "https://pimpmytype.com/taking-a-break/",
+   "source": "pimpmytype",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Adobe Fonts + Monotype: Fonts You Need to Try",
+   "url": "https://pimpmytype.com/adobe-fonts-monotype/",
+   "source": "pimpmytype",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Understanding Font Licensing with Joyce Ketterer",
+   "url": "https://pimpmytype.com/talk09/",
+   "source": "pimpmytype",
+   "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Should We Care About Accessibility?",
+   "url": "https://pineco.de/why-should-we-care-about-accessibility/",
+   "source": "pineco",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Functional Array Manipulations in JavaScript",
+   "url": "https://pineco.de/functional-array-manipulations-in-javascript/",
+   "source": "pineco",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 Great CSS Framework in 2024",
+   "url": "https://pineco.de/5-great-css-framework-in-2024/",
+   "source": "pineco",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is a CSS Framework?",
+   "url": "https://pineco.de/what-is-a-css-framework/",
+   "source": "pineco",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Spruce CSS Introduction",
+   "url": "https://pineco.de/spruce-css-introduction/",
+   "source": "pineco",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Should We Open Links in a New Tab?",
+   "url": "https://pineco.de/should-we-open-links-in-a-new-tab/",
+   "source": "pineco",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Update npm Dependencies",
+   "url": "https://pineco.de/update-npm-dependencies/",
+   "source": "pineco",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Design Systems Book – A Great Starting Point",
+   "url": "https://pineco.de/design-systems-book-a-great-starting-point/",
+   "source": "pineco",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generating Incremental Usernames",
+   "url": "https://pineco.de/generating-incremental-usernames/",
+   "source": "pineco",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Designing in the Browser",
+   "url": "https://pineco.de/designing-in-the-browser/",
+   "source": "pineco",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is jQuery Really a Bad Choice Today?",
+   "url": "https://pineco.de/is-jquery-really-a-bad-choice-today/",
+   "source": "pineco",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 Laravel E-commerce Packages",
+   "url": "https://pineco.de/5-laravel-e-commerce-packages/",
+   "source": "pineco",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bazar: An E-Commerce Package for Laravel",
+   "url": "https://pineco.de/bazar-an-e-commerce-package-for-laravel/",
+   "source": "pineco",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Is the Accessibility Tree?",
+   "url": "https://pineco.de/what-is-the-accessibility-tree/",
+   "source": "pineco",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility in Real Life",
+   "url": "https://pineco.de/accessibility-in-real-life/",
+   "source": "pineco",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "How Pinterest Improved Analytics Agent Compliance with Loop Engineering",
    "url": "https://medium.com/pinterest-engineering/how-pinterest-improved-analytics-agent-compliance-with-loop-engineering-d3c52d0abaa2?source=rss-ef81ef829bcb------2",
    "source": "pinterest",
@@ -89368,6 +90652,166 @@
    "title": "Evolving Pinterest’s Embedding Retrieval Platform",
    "url": "https://medium.com/pinterest-engineering/evolving-pinterests-embedding-retrieval-platform-aede4e831e01?source=rss-ef81ef829bcb------2",
    "source": "pinterest",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ten Lines Of Code That Changed My World",
+   "url": "/2026/ten-lines-of-code/",
+   "source": "pixelambacht",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Archiving an absolutely ribbeting short story",
+   "url": "/2026/a-ribbiting-short-story/",
+   "source": "pixelambacht",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What do you get when you put every character that exists on a single page?",
+   "url": "/2026/every-character-that-exists/",
+   "source": "pixelambacht",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A new Wakamai Fondue",
+   "url": "/2026/a-new-wakamai-fondue/",
+   "source": "pixelambacht",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Boiled down: fixing the variable font inheritance problem",
+   "url": "/2022/boiled-down-fixing-variable-font-inheritance/",
+   "source": "pixelambacht",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Optical size, the hidden superpower of variable fonts",
+   "url": "/2021/optical-size-hidden-superpower/",
+   "source": "pixelambacht",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wakamai Fondue on the command line: never write font CSS again!",
+   "url": "/2021/wakamai-fondue-command-line/",
+   "source": "pixelambacht",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dev diary #003: Sprechen sie Wakamai Fondue?",
+   "url": "/2020/dev-diary-003/",
+   "source": "pixelambacht",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dev diary #002: Scaffolding and figuring outing",
+   "url": "/2020/dev-diary-002/",
+   "source": "pixelambacht",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dev diary #001: Hello world, Wakamai Fondue?",
+   "url": "/2020/dev-diary-001-hello-world/",
+   "source": "pixelambacht",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WebGPU computations performance in comparison to WebGL",
+   "url": "https://pixelscommander.com/2021/11/30/webgpu-computations-performance-in-comparison-to-webgl/",
+   "source": "pixelscommander",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How can computers pray for the benefit of all living beings?",
+   "url": "https://pixelscommander.com/2019/10/29/can-computer-pray-for-the-benefit-of-all-living-beings-praying-with-javascript-and-webgl/",
+   "source": "pixelscommander",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Control every pixel of your Web application flexibly keeping performance high with GLSL components",
+   "url": "https://pixelscommander.com/2016/12/24/glsl-web-components-webgl/",
+   "source": "pixelscommander",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Do we still need a server? P2P distribution for Web applications",
+   "url": "https://pixelscommander.com/2015/10/24/what-is-beyond-isomorphic/",
+   "source": "pixelscommander",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The state of HTML content rasterization: approaches, problems, solutions",
+   "url": "https://pixelscommander.com/2015/03/30/state-of-html-content-rasterization-draw-html-to-canvas-image/",
+   "source": "pixelscommander",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HTML/CSS rendering via WebGL for highest performance possible and unlimited animations abilities on the Web",
+   "url": "https://pixelscommander.com/2015/03/12/render-html-css-in-webgl-to-get-highest-performance-possibl/",
+   "source": "pixelscommander",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Applying NASA coding standards to JavaScript",
+   "url": "https://pixelscommander.com/2015/01/06/nasa-coding-standarts-for-javascript-performance/",
+   "source": "pixelscommander",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reliable web components with React.js and ReactiveElements",
+   "url": "https://pixelscommander.com/2014/05/04/web-components-and-react-js-with-reactiveelements/",
+   "source": "pixelscommander",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rotate HTML elements with mouse",
+   "url": "https://pixelscommander.com/2014/01/26/rotate-html-elements-with-mouse/",
+   "source": "pixelscommander",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Responsive images memory consumption optimization with HTML5 Canvas",
+   "url": "https://pixelscommander.com/2013/10/18/memory-optimization-html5-images-canvas/",
+   "source": "pixelscommander",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -89813,6 +91257,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "What is server-side tracking and how to set it up?",
+   "url": "https://plausible.io/blog/server-side-tracking-guide",
+   "source": "plausible",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google Analytics pricing: Free GA4 and paid GA360 explained",
+   "url": "https://plausible.io/blog/google-analytics-pricing",
+   "source": "plausible",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shopify, Squarespace and Webflow analytics: What you can track and what’s missing",
+   "url": "https://plausible.io/blog/cms-built-in-analytics",
+   "source": "plausible",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is direct traffic? What does it include, and why is its share the highest?",
+   "url": "https://plausible.io/blog/direct-traffic",
+   "source": "plausible",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web analytics: what it is, how it works and how to use it",
+   "url": "https://plausible.io/blog/web-analytics",
+   "source": "plausible",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web analytics vs product analytics: core difference and how to choose?",
+   "url": "https://plausible.io/blog/web-analytics-vs-product-analytics",
+   "source": "plausible",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to check your own website traffic accurately",
+   "url": "https://plausible.io/blog/check-website-traffic",
+   "source": "plausible",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "EU-hosted analytics isn’t the same as EU-owned analytics",
+   "url": "https://plausible.io/blog/eu-hosted-analytics-vs-eu-owned-analytics",
+   "source": "plausible",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Do ad blockers block Plausible Analytics?",
+   "url": "https://plausible.io/blog/do-ad-blockers-block-plausible-analytics",
+   "source": "plausible",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is PII? Meaning and examples of personal data you shouldn’t send to analytics",
+   "url": "https://plausible.io/blog/pii-examples",
+   "source": "plausible",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "New on Plex in November",
    "url": "https://www.plex.tv/blog/new-on-plex-in-november/",
    "source": "plex",
@@ -89893,6 +91417,78 @@
    "metric": "feed rank"
   },
   {
+   "title": "Step Up Your LWC skills - Part 1",
+   "url": "https://pm.dartus.fr/posts/2020/step-up-your-lwc-skills-part1/",
+   "source": "pmdartus",
+   "rank": 1,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Step Up Your LWC skills - Part 2",
+   "url": "https://pm.dartus.fr/posts/2020/step-up-your-lwc-skills-part2/",
+   "source": "pmdartus",
+   "rank": 2,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A complete guide on shadow DOM and event propagation",
+   "url": "https://pm.dartus.fr/posts/2021/shadow-dom-and-event-propagation/",
+   "source": "pmdartus",
+   "rank": 3,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generated GraphQL API for Salesforce",
+   "url": "https://pm.dartus.fr/posts/2022/generated-graphql-api-for-salesforce/",
+   "source": "pmdartus",
+   "rank": 4,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lightning Experience with Lightning Speed (Are We There Yet?)",
+   "url": "https://pm.dartus.fr/posts/2023/lex-with-lightning-speed/",
+   "source": "pmdartus",
+   "rank": 5,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Our Detailed Plan to Improve Lightning Experience Performance",
+   "url": "https://pm.dartus.fr/posts/2023/plan-to-improve-lex-performance/",
+   "source": "pmdartus",
+   "rank": 6,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Rule of Five - Making good calls from limited data",
+   "url": "https://pm.dartus.fr/posts/2024/rule-of-five/",
+   "source": "pmdartus",
+   "rank": 7,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How LLMs Generate Text for the Rest of Us",
+   "url": "https://pm.dartus.fr/posts/2025/how-llm-generate-text/",
+   "source": "pmdartus",
+   "rank": 8,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Unexpected Benefits of Using TypeScript with AI-Aided Development",
+   "url": "https://pm.dartus.fr/posts/2025/typescript-ai-aided-development/",
+   "source": "pmdartus",
+   "rank": 9,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Resolver-Interop Now Open For Public Review",
    "url": "http://paul-m-jones.com/post/2026/05/25/resolver-interop-now-open-for-public-review/",
    "source": "pmjones",
@@ -89969,6 +91565,246 @@
    "url": "http://paul-m-jones.com/post/2025/12/08/response-interop-now-open-for-public-review/",
    "source": "pmjones",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Handling Cookies is a Minefield",
+   "url": "https://grayduck.mn/2024/11/21/handling-cookies-is-a-minefield/",
+   "source": "pokeinthe",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refresh vs. Long-lived Access Tokens",
+   "url": "https://grayduck.mn/2023/04/17/refresh-vs-long-lived-access-tokens/",
+   "source": "pokeinthe",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cache-Control Recommendations",
+   "url": "https://grayduck.mn/2021/09/13/cache-control-recommendations/",
+   "source": "pokeinthe",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Analysis of the Alexa Top 1M sites (April 2019)",
+   "url": "https://grayduck.mn/2019/04/04/state-of-security-alexa-top-one-million-2019-04/",
+   "source": "pokeinthe",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lore of MTG - Battlemage",
+   "url": "https://grayduck.mn/2018/03/29/lore-of-magic-the-gathering-battlemage/",
+   "source": "pokeinthe",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Analysis of the Alexa Top 1M sites (Feb 2018)",
+   "url": "https://grayduck.mn/2018/02/08/state-of-security-alexa-top-one-million-2018-02/",
+   "source": "pokeinthe",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HTTP Status Code Handling",
+   "url": "https://grayduck.mn/2017/09/14/http-status-code-handling/",
+   "source": "pokeinthe",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Analysis of the Alexa Top 1M sites (June 2017)",
+   "url": "https://grayduck.mn/2017/06/13/state-of-security-alexa-top-one-million-2017-06/",
+   "source": "pokeinthe",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Recording MTGO in 4K with OBS",
+   "url": "https://grayduck.mn/2017/03/07/recording-mtgo-in-4k-with-obs/",
+   "source": "pokeinthe",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Understanding CORS",
+   "url": "https://grayduck.mn/2016/11/29/understanding-cors/",
+   "source": "pokeinthe",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Analysis of the Alexa Top 1M sites (October 2016)",
+   "url": "https://grayduck.mn/2016/11/14/state-of-security-alexa-one-top-million-2016-11/",
+   "source": "pokeinthe",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Let's Encrypt now supports IDNs",
+   "url": "https://grayduck.mn/2016/10/21/lets-encrypt-internationalized-domain-names/",
+   "source": "pokeinthe",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Observatory by Mozilla: Making the Web Safer",
+   "url": "https://grayduck.mn/2016/08/25/observatory-by-mozilla-a-new-tool/",
+   "source": "pokeinthe",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "X-Content-Type-Options + passive content?",
+   "url": "https://grayduck.mn/2016/08/11/x-content-type-options-passive-content/",
+   "source": "pokeinthe",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Offensive playmats in Magic",
+   "url": "https://grayduck.mn/2016/05/19/offensive-playmats-in-magic/",
+   "source": "pokeinthe",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Polypane 31: Canvas layout, elements panel improvements and Chromium 155",
+   "url": "https://polypane.app/blog/polypane-31-canvas-layout-elements-panel-improvements-and-chromium-155/",
+   "source": "polypane",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The root scroller and how not to lose it",
+   "url": "https://polypane.app/blog/the-root-scroller-and-how-not-to-lose-it/",
+   "source": "polypane",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Polypane 30.1: Selector specificity insights, server HTML validation, and more",
+   "url": "https://polypane.app/blog/polypane-30-1-selector-specificity-insights-server-html-validation-and-more/",
+   "source": "polypane",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Polypane 30: Playgrounds, Side Panel extension API, updated video recording and Chromium 152",
+   "url": "https://polypane.app/blog/polypane-30-playgrounds-side-panel-extension-api-updated-video-recording-and-chromium-152/",
+   "source": "polypane",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cheatsheets for flex, grid, anchor positioning and invoker commands",
+   "url": "https://polypane.app/blog/cheatsheets-for-flex-grid-anchor-positioning-and-invoker-commands/",
+   "source": "polypane",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Experimenting with the new pure CSS random() function",
+   "url": "https://polypane.app/blog/experimenting-with-the-new-pure-css-random-function/",
+   "source": "polypane",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using safe-area-inset to build mobile-safe layouts",
+   "url": "https://polypane.app/blog/using-safe-area-inset-to-build-mobile-safe-layouts/",
+   "source": "polypane",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Polypane 29: New network panel, snippet store and Chromium 148",
+   "url": "https://polypane.app/blog/polypane-29-new-network-panel-snippet-store-and-chromium-148/",
+   "source": "polypane",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Intl API: The best browser API you're not using",
+   "url": "https://polypane.app/blog/the-intl-api-the-best-browser-api-youre-not-using/",
+   "source": "polypane",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to debug the @starting-style at-rule in Polypane",
+   "url": "https://polypane.app/blog/how-to-debug-the-starting-style-at-rule-in-polypane/",
+   "source": "polypane",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Polypane 28: Project improvements, Elements panel updates and Chromium 146",
+   "url": "https://polypane.app/blog/polypane-28-project-improvements-elements-panel-updates-and-chromium-146/",
+   "source": "polypane",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Understanding the fundamentals of CSS Layout",
+   "url": "https://polypane.app/blog/understanding-the-fundamentals-of-css-layout/",
+   "source": "polypane",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Not All Browser APIs Are \"Web\" APIs",
+   "url": "https://polypane.app/blog/not-all-browser-apis-are-web-apis/",
+   "source": "polypane",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Polypane 27.1: Expanding Portal",
+   "url": "https://polypane.app/blog/polypane-27-1-expanding-portal/",
+   "source": "polypane",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Polypane 27: Projects, a Snippets Panel and Chromium 142",
+   "url": "https://polypane.app/blog/polypane-27-projects-a-snippets-panel-and-chromium-142/",
+   "source": "polypane",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -97903,6 +99739,14 @@
   {
    "title": "Huawei Set To Challenge Tesla Powerwall with New, 20 kW Home Battery",
    "url": "https://hardware.slashdot.org/story/26/11/15/1028237/huawei-set-to-challenge-tesla-powerwall-with-new-20-kw-home-battery?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "slashdot",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GTA 6's Upcoming Launch Celebrated by Wendy's, YouTube, the City of Miami, and 20% of America's Workforce",
+   "url": "https://games.slashdot.org/story/26/11/15/1628242/gta-6s-upcoming-launch-celebrated-by-wendys-youtube-the-city-of-miami-and-20-of-americas-workforce?utm_source=rss1.0mainlinkanon&utm_medium=feed",
    "source": "slashdot",
    "rank": 1,
    "score": 15,
