@@ -576,6 +576,36 @@ def fetch_lwn(limit=15):
     return out
 
 
+
+def fetch_hackaday(limit=15):
+    """Hackaday — hardware/maker feed, position-scored."""
+    print("Fetching Hackaday feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://hackaday.com/feed/",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] hackaday attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or "").split())
+        link = (e.findtext("link") or "").strip() or "https://hackaday.com/"
+        out.append(item(
+            "hackaday", title, link,
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
 def fetch_slashdot(limit=15):
     """Slashdot RSS 1.0 (RDF) — nerd news, position-scored like techmeme."""
     print("Fetching Slashdot feed...")
@@ -846,6 +876,7 @@ def main():
         "infoq": fetch_infoq,
         "theregister": fetch_theregister,
         "lwn": fetch_lwn,
+        "hackaday": fetch_hackaday,
         "arstechnica": fetch_arstechnica,
         "theverge": fetch_theverge,
         "arxiv": fetch_arxiv,

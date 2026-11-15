@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T13:27:14.399719+00:00",
+ "generated_at": "2026-11-15T13:28:26.085781+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 214,
+ "total": 215,
  "domains": [
   {
    "hostname": "so.long.thanks.fish",
@@ -687,6 +687,21 @@
    }
   },
   {
+   "hostname": "hackaday.com",
+   "days_on_board": 1,
+   "items": 7,
+   "sources": [
+    "hackaday"
+   ],
+   "top_hit": {
+    "title": "An MP3 Player, Implemented As A Factorio Blueprint",
+    "url": "https://hackaday.com/2026/11/15/an-mp3-player-implemented-as-a-factorio-blueprint/",
+    "score": 7,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "yro.slashdot.org",
    "days_on_board": 1,
    "items": 4,
@@ -744,21 +759,6 @@
     "score": 987,
     "metric": "points",
     "date": "2026-11-08"
-   }
-  },
-  {
-   "hostname": "play.google.com",
-   "days_on_board": 1,
-   "items": 2,
-   "sources": [
-    "show_hn"
-   ],
-   "top_hit": {
-    "title": "Show HN: Offline quoting, receipts, and expense tracking for entrepreneurs",
-    "url": "https://play.google.com/store/apps/details?id=com.companyname.moneyacc&hl=en_US",
-    "score": 4,
-    "metric": "points",
-    "date": "2026-11-15"
    }
   }
  ]

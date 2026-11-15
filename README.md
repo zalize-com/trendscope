@@ -45,6 +45,7 @@ A daily cross-source snapshot of developer attention:
 | InfoQ | enterprise dev news + talks | `feed.infoq.com` |
 | The Register | software/IT news | `theregister.com/software/headlines.atom` |
 | LWN | Linux/kernel news | `lwn.net/headlines/rss` |
+| Hackaday | hardware/maker projects | `hackaday.com/feed/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
