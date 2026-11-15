@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>glossary — trendscope</title>
+<meta name="description" content="Every term trendscope uses — board, fresh, meteor, veteran, crossover, spike — defined once, linked to where it lives.">
+<link rel="canonical" href="https://zalize-com.github.io/trendscope/glossary.html">
+<link rel="alternate" type="application/rss+xml" title="trendscope latest" href="docs/api/latest.rss">
+<style>
+body{font:15px/1.6 ui-sans-serif,system-ui,sans-serif;max-width:840px;margin:0 auto;padding:16px;color:#1a1a1a}
+h1{font-size:22px;margin:0 0 4px}
+a{color:#065fd4;text-decoration:none}
+a:hover{text-decoration:underline}
+nav{font-size:13px;margin:8px 0 16px;color:#666}
+nav a{margin-right:10px}
+.term{border-top:1px solid #eee;padding:14px 0}
+.term h2{font-size:16px;margin:0 0 4px}
+.term p{margin:4px 0;color:#333}
+.links{font-size:12px;color:#666;margin-top:4px}
+.links a{margin-right:8px}
+.muted{color:#666;font-size:13px}
+footer{margin-top:28px;font-size:12px;color:#888;border-top:1px solid #eee;padding-top:10px}
+</style></head><body>
+<nav><a href="index.html">&larr; board</a><a href="api.html">api</a><a href="docs/data-dictionary.md">data dictionary</a></nav>
+<h1>glossary</h1>
+<p class="muted">Every term this site uses, defined once — each links to the page and API where it lives.</p>
+
+<div class="term"><h2>board</h2>
+<p>The daily leaderboard: top items from all tracked sources, merged and scored. Items are ranked by a per-source score scaled to a comparable range.</p>
+<div class="links"><a href="index.html">index.html</a>· <a href="docs/api/latest.json">latest.json</a></div></div>
+
+<div class="term"><h2>score</h2>
+<p>Each item's ranking signal as reported by its source — points, comments, or feed position ("feed rank"). Scores are normalized per source so different communities compare fairly.</p>
+<div class="links"><a href="docs/data-dictionary.md">data dictionary</a></div></div>
+
+<div class="term"><h2>source</h2>
+<p>A tracked community or feed (27 of them): news sites, blogs, aggregators, package registries. Each uses its own fetcher in <code>scripts/collect.py</code>.</p>
+<div class="links"><a href="about.html">about.html</a>· <a href="docs/api/sources.json">sources.json</a></div></div>
+
+<div class="term"><h2>fresh / new</h2>
+<p>Items on today's board that were not on yesterday's — newly arrived. The reverse of "gone".</p>
+<div class="links"><a href="new.html">new.html</a>· <a href="docs/api/new.json">new.json</a></div></div>
+
+<div class="term"><h2>gone</h2>
+<p>Items on yesterday's board that dropped off today's — churned out. The exit side of the board.</p>
+<div class="links"><a href="gone.html">gone.html</a>· <a href="docs/api/gone.json">gone.json</a></div></div>
+
+<div class="term"><h2>riser</h2>
+<p>An item still on the board whose rank improved day-over-day. The reverse of "faller".</p>
+<div class="links"><a href="risers.html">risers.html</a>· <a href="docs/api/risers.json">risers.json</a></div></div>
+
+<div class="term"><h2>faller</h2>
+<p>An item still on the board whose rank dropped day-over-day. Falling, but not yet gone.</p>
+<div class="links"><a href="fallers.html">fallers.html</a>· <a href="docs/api/fallers.json">fallers.json</a></div></div>
+
+<div class="term"><h2>meteor</h2>
+<p>An item with the biggest single-day score spike — the fastest climbers, even mid-rank.</p>
+<div class="links"><a href="meteors.html">meteors.html</a>· <a href="docs/api/meteors.json">meteors.json</a></div></div>
+
+<div class="term"><h2>veteran / board veteran</h2>
+<p>An item with the longest streak of consecutive days on the board — staying power, not spike.</p>
+<div class="links"><a href="oldest.html">oldest.html</a>· <a href="docs/api/streaks.json">streaks.json</a></div></div>
+
+<div class="term"><h2>streak</h2>
+<p>Consecutive days an item has appeared on the board. Streaks drive veterans and the longest_all_time list.</p>
+<div class="links"><a href="streaks.html">streaks.html</a>· <a href="docs/api/streaks.json">streaks.json</a></div></div>
+
+<div class="term"><h2>crossover</h2>
+<p>An item appearing on multiple sources' boards the same day — a story that crossed communities.</p>
+<div class="links"><a href="crossovers.html">crossovers.html</a>· <a href="docs/api/crossovers.json">crossovers.json</a></div></div>
+
+<div class="term"><h2>spike</h2>
+<p>An unusual single-day volume jump for a source — more items than its weekday baseline suggests.</p>
+<div class="links"><a href="spikes.html">spikes.html</a></div></div>
+
+<div class="term"><h2>topic</h2>
+<p>A keyword bucket (AI/LLM, Web Dev, Security, …) classifying items by title/url. Cheap heuristic, good for slicing.</p>
+<div class="links"><a href="topics.html">topics.html</a>· <a href="docs/api/topics.json">topics.json</a></div></div>
+
+<div class="term"><h2>snapshot</h2>
+<p>The frozen daily board: <code>data/daily/YYYY-MM-DD.json</code>. Everything historical derives from snapshots.</p>
+<div class="links"><a href="datasets.html">datasets.html</a></div></div>
+
+<div class="term"><h2>embed</h2>
+<p>A self-contained widget page (<code>embed.html?mode=…</code>) you iframe anywhere — 25 modes, one per view.</p>
+<div class="links"><a href="embeds.html">embeds.html</a></div></div>
+
+<footer>trendscope glossary · CC0 · <a href="https://github.com/zalize-com/trendscope">source</a></footer>
+</body></html>
