@@ -408,6 +408,7 @@ cherry"></textarea>
 
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/dayjs.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/croner@9.0.0/dist/croner.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js"></script>
 <script>
 const TOOLS = [
   {id:"color", label:"Color converter"},
@@ -849,19 +850,6 @@ document.getElementById("sg-in").addEventListener("input", sgGo);
 
 // ---- crontab explainer ----
 const CR_NAMES={4:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],3:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]};
-function crField(f,lo,hi){
-  const out=new Set();
-  for(const part of f.split(",")){
-    let step=1,p=part;
-    if(p.includes("/")){const [a,b]=p.split("/");p=a;step=+b||1;}
-    let a=lo,b=hi;
-    if(p==="*"||p===""){}else if(p.includes("-")){const [x,y]=p.split("-");a=+x;b=+y;}
-    else{a=+p;b=+p;}
-    if(isNaN(a)||isNaN(b))return null;
-    for(let v=a;v<=b;v+=step)if(v>=lo&&v<=hi)out.add(v);
-  }
-  return out;
-}
 function crRead(fields){
   const names=["minute","hour","day-of-month","month","weekday"];
   const human=["at minute "+fields[0],"past hour "+fields[1],"on day-of-month "+fields[2],"in month "+fields[3],"on weekday "+fields[4]];
@@ -911,18 +899,8 @@ document.getElementById('cm-oct').addEventListener('input',e=>{
 
 // --- csv <-> json ---
 function cvParse(t){
-  const rows=[];let row=[],cur="",q=false;
-  for(let i=0;i<t.length;i++){const c=t[i];
-    if(q){ if(c==='"'){ if(t[i+1]==='"'){cur+='"';i++;} else q=false; } else cur+=c; }
-    else if(c==='"') q=true;
-    else if(c===','){ row.push(cur);cur=""; }
-    else if(c==='\n'){ row.push(cur);rows.push(row);row=[];cur=""; }
-    else if(c!=='\r') cur+=c;
-  }
-  row.push(cur);rows.push(row);
-  return rows.filter(r=>r.length>1||r[0]!=="");
+  return Papa.parse(t, { skipEmptyLines: "greedy" }).data;
 }
-function cvEsc(v){ v=String(v); const needsQ=/[",\n]/.test(v); return needsQ ? '"'+v.replace(/"/g,'""')+'"' : v; }
 document.getElementById('cv-go').onclick=()=>{
   try{
     const rows=cvParse(document.getElementById('cv-in').value);
@@ -941,12 +919,11 @@ document.getElementById('cv-bk').onclick=()=>{
     const arr=JSON.parse(document.getElementById('cv-in').value);
     if(!Array.isArray(arr)||!arr.length) throw 'need a JSON array';
     let head,rows;
-    if(typeof arr[0]==='object'&&arr[0]!==null){
+    if(typeof arr[0]==='object'&&arr[0]!==null&&!Array.isArray(arr[0])){
       head=[...new Set(arr.flatMap(o=>Object.keys(o)))];
       rows=arr.map(o=>head.map(h=>o[h]??""));
     } else { head=[];rows=arr; }
-    const lines=[...(head.length?[head]:[]),...rows].map(r=>r.map(cvEsc).join(','));
-    document.getElementById('cv-out').value=lines.join('\n');
+    document.getElementById('cv-out').value=Papa.unparse([...(head.length?[head]:[]),...rows]);
     document.getElementById('cv-outx').textContent=rows.length+' rows · '+(head.length||rows[0].length)+' cols';
   }catch(e){ document.getElementById('cv-outx').textContent='parse error: '+e; }
 };
