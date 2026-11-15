@@ -347,6 +347,20 @@ cherry"></textarea>
     <div class="out" id="by-out"></div>
   </div>
 
+  <div class="tool" data-tool="lorem">
+    <h2>lorem ipsum generator</h2>
+    <p class="hint">Placeholder text: N paragraphs or words, classic or silly.</p>
+    <p>
+      <input id="lo-n" type="number" value="3" min="1" max="50" style="width:4em">
+      <select id="lo-unit"><option value="p">paragraphs</option><option value="w">words</option><option value="s">sentences</option></select>
+      <select id="lo-flavor"><option value="classic">classic latin</option><option value="tech">tech ipsum</option></select>
+      <label><input type="checkbox" id="lo-start" checked> start with "Lorem ipsum"</label>
+      <button class="go" id="lo-go">generate</button>
+      <button class="go" id="lo-copy">copy</button>
+    </p>
+    <textarea id="lo-out" rows="8" style="width:100%" readonly></textarea>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -375,6 +389,7 @@ const TOOLS = [
   {id:"sortlines",label:"sort & dedupe lines"},
   {id:"uuid",  label:"uuid v4 generator"},
   {id:"bytes",label:"file-size converter"},
+  {id:"lorem",label:"lorem ipsum generator"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -1026,6 +1041,25 @@ document.getElementById('by-go').onclick=()=>{
   ];
   document.getElementById('by-out').innerHTML=rows.map(r=>'<div><b>'+r[0]+'</b>: '+r[1]+'</div>').join('');
 };
+
+// --- lorem ipsum ---
+const LOREM_C='lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat duis aute irure in reprehenderit voluptate velit esse cillum fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt culpa qui officia deserunt mollit anim id est laborum'.split(' ');
+const LOREM_T='deploy refactor microservice kubernetes docker pipeline observability latency throughput idempotent schema migration graphql kubernetes ingress canary rollback feature-flag endpoint serializer cache invalidation protobuf grpc serverless lambda webhook pagination retry backoff circuit-breaker loadbalancer autoscaling shard replication consensus quorum quorum'.split(' ');
+function loWord(pool){const r=crypto.getRandomValues(new Uint32Array(1))[0];return pool[r%pool.length];}
+function loSent(pool,n){const w=[];for(let i=0;i<n;i++)w.push(loWord(pool));const s=w.join(' ');return s[0].toUpperCase()+s.slice(1)+'.';}
+function loPara(pool){const n=3+crypto.getRandomValues(new Uint32Array(1))[0]%4;const s=[];for(let i=0;i<n;i++)s.push(loSent(pool,6+crypto.getRandomValues(new Uint32Array(1))[0]%12));return s.join(' ');}
+document.getElementById('lo-go').onclick=()=>{
+  const n=Math.max(1,Math.min(50,+document.getElementById('lo-n').value||3));
+  const unit=document.getElementById('lo-unit').value;
+  const pool=document.getElementById('lo-flavor').value==='tech'?LOREM_T:LOREM_C;
+  let out;
+  if(unit==='p') out=Array.from({length:n},()=>loPara(pool)).join('\n\n');
+  else if(unit==='s') out=Array.from({length:n},()=>loSent(pool,8+crypto.getRandomValues(new Uint32Array(1))[0]%8)).join(' ');
+  else out=Array.from({length:n},()=>loWord(pool)).join(' ')+'.';
+  if(document.getElementById('lo-start').checked&&unit!=='w') out='Lorem ipsum dolor sit amet, '+out;
+  document.getElementById('lo-out').value=out;
+};
+document.getElementById('lo-copy').onclick=async()=>{await navigator.clipboard.writeText(document.getElementById('lo-out').value);document.getElementById('lo-copy').textContent='copied!';setTimeout(()=>document.getElementById('lo-copy').textContent='copy',1200);};
 </script>
 </body>
 </html>
