@@ -142,6 +142,11 @@ New public endpoints welcome — see [docs/adding-a-source.md](docs/adding-a-sou
 (one fetcher + five lines of wiring, test instructions included).
 Bugs, data issues, source requests: [open an issue](https://github.com/zalize-com/trendscope/issues).
 
+## Built on this dataset
+
+Analysis, dashboards, papers or products using this data — PR a line here and
+link your project. (First one gets to be first.)
+
 ## Provenance & compliance
 
 - Only public, login-free endpoints; ~1 req/s or less per source; no anti-bot circumvention.
