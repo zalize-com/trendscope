@@ -83,10 +83,14 @@ fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
   for (const its of Object.values(snap.items)) for (const i of its) LIVE.add(i.url);
   if (RECS) paint();
 }).catch(() => {});
-fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
-  const rows = parseCSV(txt);
-  const hdr = rows[0];
-  RECS = rows.slice(1).map(r => Object.fromEntries(hdr.map((h,i)=>[h,r[i]])));
+fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+  RECS = [];
+  for (const [url, it] of Object.entries(d.items)) {
+    for (const [date, [score, rank, comments]] of Object.entries(it.days)) {
+      RECS.push({title: it.title, url, source: it.source, metric: it.metric,
+                 author: it.author, date, score, rank, comments});
+    }
+  }
   const q0 = new URLSearchParams(location.search).get("q") || "";
   document.getElementById("q").value = q0;
   paint();

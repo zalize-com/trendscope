@@ -43,8 +43,14 @@ def main():
         hit = {"title": r["title"], "url": url, "score": score,
                "metric": r.get("metric") or "", "date": d}
         se = series.setdefault(url, {"title": r["title"], "source": r["source"],
-                                     "metric": r.get("metric") or "", "days": {}})
+                                     "metric": r.get("metric") or "", "days": {},
+                                     "ranks": {}, "comments": {}, "author": ""})
         se["days"][d] = max(score, se["days"].get(d, 0))
+        rk = int(float(r.get("rank") or 99))
+        se["ranks"][d] = min(rk, se["ranks"].get(d, 99))
+        cm = int(float(r.get("comments") or 0))
+        se["comments"][d] = max(cm, se["comments"].get(d, 0))
+        se["author"] = r.get("author") or se["author"]
 
         h = host_of(url)
         if h:
@@ -180,6 +186,18 @@ def main():
                   f, ensure_ascii=False, indent=1)
     print(f"velocity.json: {len(vel)} multi-day items")
 
+    ser_items = {}
+    for url, o in series.items():
+        ser_items[url] = {"title": o["title"], "source": o["source"],
+                          "metric": o["metric"], "author": o["author"],
+                          "days": {d: [o["days"][d], o["ranks"].get(d, 99),
+                                       o["comments"].get(d, 0)]
+                                   for d in sorted(o["days"])}}
+    with open(os.path.join(API, "series.json"), "w", encoding="utf-8") as f:
+        json.dump({"generated_at": now, "latest_snapshot": max(days),
+                   "days_tracked": len(days), "total_items": len(ser_items),
+                   "items": ser_items}, f, ensure_ascii=False, separators=(",", ":"))
+    print(f"series.json: {len(ser_items)} items")
     # weekday: day-of-week x source item counts (UTC weekday of the snapshot date)
     grid = defaultdict(lambda: [0] * 7)
     totals = defaultdict(int)
