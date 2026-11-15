@@ -299,6 +299,37 @@ def fetch_producthunt(limit=20):
     return out
 
 
+def fetch_techmeme(limit=20):
+    """Techmeme RSS — editorial tech news, position-scored like producthunt."""
+    print("Fetching Techmeme feed...")
+    import re
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.techmeme.com/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] techmeme attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall("channel/item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("title", default="") or "").strip()
+        url = (e.findtext("link", default="") or "").strip() or "https://www.techmeme.com/"
+        desc = " ".join(re.sub(r"<[^>]+>", " ", e.findtext("description", default="") or "").split())[:200]
+        out.append(item(
+            "techmeme", title, url, len(entries) - i, "feed rank",
+            extra={"description": desc},
+        ))
+    return out
+
+
 def fetch_crates(limit=15):
     print("Fetching crates.io recent downloads...")
     data = get_json(
@@ -412,6 +443,7 @@ def main():
         "lobsters": fetch_lobsters,
         "devto": fetch_devto,
         "producthunt": fetch_producthunt,
+        "techmeme": fetch_techmeme,
         "github_trending": fetch_github_trending,
         "npm": fetch_npm_downloads,
         "pypi": fetch_pypi_downloads,
