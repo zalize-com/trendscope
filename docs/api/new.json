@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T18:05:18.790765+00:00",
+ "generated_at": "2026-11-15T18:07:28.814668+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 10780,
- "new_items": 10653,
+ "total_items": 11026,
+ "new_items": 10899,
  "by_source": {
   "show_hn": 46,
   "producthunt": 45,
@@ -166,6 +166,8 @@
   "chriskirknielsen": 15,
   "chrisruppel": 15,
   "christianselig": 15,
+  "chriszheng": 15,
+  "clarkio": 15,
   "clicktorelease": 15,
   "cloudberry": 15,
   "cloudflare": 15,
@@ -180,9 +182,18 @@
   "colobu": 15,
   "component": 15,
   "computerenhance": 15,
+  "coryrylan": 15,
+  "coywolf": 15,
+  "cpojer": 15,
   "cppcast": 15,
+  "cri": 15,
+  "crinkles": 15,
+  "crossoverjie": 15,
   "cssanimation": 15,
+  "cssarticles": 15,
+  "cssbattle": 15,
   "cssirl": 15,
+  "csstip": 15,
   "csstricks": 15,
   "culturedcode": 15,
   "curiosum": 15,
@@ -483,6 +494,7 @@
   "vite": 12,
   "agis": 11,
   "bret": 11,
+  "csshell": 11,
   "geoffreylitt": 11,
   "lobsters": 11,
   "wattenberger": 11,
@@ -583,7 +595,10 @@
   "chrislachance": 10,
   "chrisprather": 10,
   "chriswarrick": 10,
+  "chuttenblogwordpress": 10,
+  "cloudfour": 10,
   "codeflickr": 10,
+  "codersblock": 10,
   "codingitwrong": 10,
   "copyconstruct": 10,
   "cordcuttersnews": 10,
@@ -591,6 +606,9 @@
   "createaprowebsite": 10,
   "crisal": 10,
   "csaiot": 10,
+  "cssauditors": 10,
+  "cunderwood": 10,
+  "daimajia": 10,
   "dannorris": 10,
   "darice": 10,
   "davefarley": 10,
@@ -790,6 +808,7 @@
   "zeichenschatz": 10,
   "zopatista": 10,
   "bitbashing": 9,
+  "codesgo": 9,
   "gtdstudy": 9,
   "hackaday": 9,
   "jaredpalmer": 9,
@@ -842,13 +861,13 @@
   "javascriptweekly": 4,
   "thisweek": 4,
   "armin": 3,
+  "ask_hn": 3,
   "evanminto": 3,
   "michaelfeathers": 3,
   "neugierig": 3,
   "prog21": 3,
   "adoptingerlang": 2,
   "alicepagesigalia": 2,
-  "ask_hn": 2,
   "ciechanow": 2,
   "devto": 2,
   "dyskinetic": 2,
@@ -8899,6 +8918,14 @@
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
+  },
+  {
+   "title": "Should proper mouse support be added in CLI harnesses",
+   "url": "https://news.ycombinator.com/item?id=50508183",
+   "source": "ask_hn",
+   "rank": 10,
+   "score": 5,
+   "metric": "points"
   },
   {
    "title": "Anthropic, can you please make up your mind with your models?",
@@ -28453,6 +28480,206 @@
    "metric": "feed rank"
   },
   {
+   "title": "近思录 2026-11-03",
+   "url": "https://chriszheng.science/2026/11/03/Recent-thoughts-2026-11-03/",
+   "source": "chriszheng",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "近思录 2026-10-02",
+   "url": "https://chriszheng.science/2026/10/02/Recent-thoughts-2026-10-02/",
+   "source": "chriszheng",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "近思录 2026-09-01",
+   "url": "https://chriszheng.science/2026/09/01/Recent-thoughts-2026-09-01/",
+   "source": "chriszheng",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "近思录 2026-08-02",
+   "url": "https://chriszheng.science/2026/08/02/Recent-thoughts-2026-08-02/",
+   "source": "chriszheng",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "近思录 2026-07-07",
+   "url": "https://chriszheng.science/2026/07/07/Recent-thoughts-2026-07-07/",
+   "source": "chriszheng",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "近思录 2026-06-08",
+   "url": "https://chriszheng.science/2026/06/08/Recent-thoughts-2026-06-08/",
+   "source": "chriszheng",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "近思录 2026-05-10",
+   "url": "https://chriszheng.science/2026/05/10/Recent-thoughts-2026-05-10/",
+   "source": "chriszheng",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "近思录 2026-04-02",
+   "url": "https://chriszheng.science/2026/04/02/Recent-thoughts-2026-04-01/",
+   "source": "chriszheng",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "近思录 2026-03-04",
+   "url": "https://chriszheng.science/2026/03/04/Recent-thoughts-2026-03-04/",
+   "source": "chriszheng",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "近思录 2026-02-08",
+   "url": "https://chriszheng.science/2026/02/08/Recent-thoughts-2026-02-08/",
+   "source": "chriszheng",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "近思录 2026-01-01",
+   "url": "https://chriszheng.science/2026/01/01/Recent-thoughts-2026-01-01/",
+   "source": "chriszheng",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "近思录 2025-12-04",
+   "url": "https://chriszheng.science/2025/12/04/Recent-thoughts-2025-12-04/",
+   "source": "chriszheng",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "近思录 2025-11-11",
+   "url": "https://chriszheng.science/2025/11/11/Recent-thoughts-2025-11-11/",
+   "source": "chriszheng",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "近思录 2025-10-18",
+   "url": "https://chriszheng.science/2025/10/18/Recent-thoughts-2025-10-10/",
+   "source": "chriszheng",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "近思录 2025-09-03",
+   "url": "https://chriszheng.science/2025/09/03/Recent-thoughts-2025-09-03/",
+   "source": "chriszheng",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Eleven-Year Moziversary",
+   "url": "https://chuttenblog.wordpress.com/2026/10/19/eleven-year-moziversary/",
+   "source": "chuttenblogwordpress",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "So I’ve Finished Final Fantasy VII REMAKE",
+   "url": "https://chuttenblog.wordpress.com/2026/10/09/so-ive-finished-final-fantasy-vii-remake/",
+   "source": "chuttenblogwordpress",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "This Week in Data: There’s No Such Thing as a Normal Month",
+   "url": "https://chuttenblog.wordpress.com/2026/01/20/this-week-in-data-theres-no-such-thing-as-a-normal-month/",
+   "source": "chuttenblogwordpress",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ten-Year Moziversary",
+   "url": "https://chuttenblog.wordpress.com/2025/11/03/ten-year-moziversary/",
+   "source": "chuttenblogwordpress",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Perfect is the Enemy of Good Enough",
+   "url": "https://chuttenblog.wordpress.com/2025/04/17/perfect-is-the-enemy-of-good-enough/",
+   "source": "chuttenblogwordpress",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Operating a Prius Prime SE 2024: the first three months",
+   "url": "https://chuttenblog.wordpress.com/2025/01/28/operating-a-prius-prime-se-2024-the-first-three-months/",
+   "source": "chuttenblogwordpress",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nine-Year Moziversary",
+   "url": "https://chuttenblog.wordpress.com/2024/10/18/nine-year-moziversary/",
+   "source": "chuttenblogwordpress",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "So I’ve Finished: Lies of P (PS5)",
+   "url": "https://chuttenblog.wordpress.com/2024/06/06/so-ive-finished-lies-of-p-ps5/",
+   "source": "chuttenblogwordpress",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to go from “Looks like something changed in a Firefox Desktop version” to “Here is a list of potential culprit bugs”",
+   "url": "https://chuttenblog.wordpress.com/2024/04/10/how-to-go-from-looks-like-something-changed-in-a-firefox-desktop-version-to-here-is-a-list-of-potential-culprit-bugs/",
+   "source": "chuttenblogwordpress",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "So I’ve Finished: Final Fantasy XVI",
+   "url": "https://chuttenblog.wordpress.com/2024/04/05/so-ive-finished-final-fantasy-xvi/",
+   "source": "chuttenblogwordpress",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Moon",
    "url": "https://ciechanow.ski/moon/",
    "source": "ciechanow",
@@ -28505,6 +28732,126 @@
    "url": "https://clagnut.com/blog/2444/",
    "source": "clagnut",
    "rank": 5,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Upgrading to Astro 6",
+   "url": "https://clarkio.com/blog/2026-05-16-upgrading-to-astro-6/",
+   "source": "clarkio",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "VS Code July 2019 Release Highlights Video",
+   "url": "https://clarkio.com/2019/08/12/vs-code-july-release-video/",
+   "source": "clarkio",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visual Studio Code Extension Development",
+   "url": "https://clarkio.com/2019/03/26/vscode-extension-dev/",
+   "source": "clarkio",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Progressive Web Apps and Web Push API - Pushing Messages",
+   "url": "https://clarkio.com/2017/10/18/pwa-web-push-4/",
+   "source": "clarkio",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Progressive Web Apps and Web Push API - Application Server",
+   "url": "https://clarkio.com/2017/08/22/pwa-web-push-3/",
+   "source": "clarkio",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Progressive Web Apps and Web Push API - Subscriber",
+   "url": "https://clarkio.com/2017/08/04/pwa-web-push-2/",
+   "source": "clarkio",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Running Node.js in Azure",
+   "url": "https://clarkio.com/2017/06/23/node-in-azure/",
+   "source": "clarkio",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Progressive Web Apps and Web Push API - Introduction",
+   "url": "https://clarkio.com/2017/06/15/pwa-web-push/",
+   "source": "clarkio",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A New Start at Microsoft",
+   "url": "https://clarkio.com/2017/06/06/new-start-at-msft/",
+   "source": "clarkio",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Debugging in Node.js in 2017",
+   "url": "https://clarkio.com/2017/04/25/debugging-in-nodejs/",
+   "source": "clarkio",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting Started with Node.js Security with Express and Angular",
+   "url": "https://clarkio.com/2017/02/07/node-express-angular-security/",
+   "source": "clarkio",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Restify Middleware & Next()",
+   "url": "https://clarkio.com/2016/11/02/restify-middleware-next/",
+   "source": "clarkio",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Options in X-Frame-Options",
+   "url": "https://clarkio.com/2016/10/28/x-frame-options/",
+   "source": "clarkio",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting a Handle on User Input",
+   "url": "https://clarkio.com/2016/06/14/getting-a-handle-on-user-input/",
+   "source": "clarkio",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "First Post, First Course",
+   "url": "https://clarkio.com/2016/02/19/first-post-first-course/",
+   "source": "clarkio",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -28865,6 +29212,86 @@
    "url": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
    "source": "cloudflare",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Do We Write About AI in Web Development?",
+   "url": "https://cloudfour.com/thinks/how-do-we-write-about-ai-in-web-development/",
+   "source": "cloudfour",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Improvements to Web for AI Should Benefit All Users",
+   "url": "https://cloudfour.com/thinks/improvements-to-web-for-ai-should-benefit-all-users/",
+   "source": "cloudfour",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ending Responsive Images",
+   "url": "https://cloudfour.com/thinks/ending-responsive-images/",
+   "source": "cloudfour",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How We Use CI to Check Code Standards on Every PR",
+   "url": "https://cloudfour.com/thinks/ci-for-code-standards/",
+   "source": "cloudfour",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Most Cookie Consent Banners Don’t Check for Compliance",
+   "url": "https://cloudfour.com/thinks/most-cookie-consent-banners-dont-check-for-compliance/",
+   "source": "cloudfour",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weight Loss and the World Wide Web",
+   "url": "https://cloudfour.com/thinks/weight-loss-and-the-world-wide-web/",
+   "source": "cloudfour",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "More Projects Please",
+   "url": "https://cloudfour.com/thinks/more-projects-please/",
+   "source": "cloudfour",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GPC Opt Out: UX Fails or Malicious Compliance?",
+   "url": "https://cloudfour.com/thinks/gpc-opt-out-ux-fails-or-malicious-compliance/",
+   "source": "cloudfour",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cookie Consent Management in 2026, Part 2: Technical Tips",
+   "url": "https://cloudfour.com/thinks/cookie-consent-management-in-2026-part-2-technical-tips/",
+   "source": "cloudfour",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cookie Consent Management in 2026, Part 1: Overview",
+   "url": "https://cloudfour.com/thinks/cookie-consent-management-in-2026-part-1-overview/",
+   "source": "cloudfour",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -29437,6 +29864,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Announcing WordPress Export to Markdown v3",
+   "url": "https://codersblock.com/blog/announcing-wordpress-export-to-markdown-v3/",
+   "source": "codersblock",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making Orbit Animations with CSS Custom Properties",
+   "url": "https://codersblock.com/blog/making-orbit-animations-with-css-custom-properties/",
+   "source": "codersblock",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Anchor Links and How to Make Them Awesome",
+   "url": "https://codersblock.com/blog/anchor-links-and-how-to-make-them-awesome/",
+   "source": "codersblock",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Playing with Infinity in CSS",
+   "url": "https://codersblock.com/blog/playing-with-infinity-in-css/",
+   "source": "codersblock",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Acronym Frustration",
+   "url": "https://codersblock.com/blog/acronym-frustration/",
+   "source": "codersblock",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nicer Text Wrapping with CSS text-wrap",
+   "url": "https://codersblock.com/blog/nicer-text-wrapping-with-css-text-wrap/",
+   "source": "codersblock",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing Is Hard",
+   "url": "https://codersblock.com/blog/writing-is-hard/",
+   "source": "codersblock",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Star Wars Scene Transition Effects in CSS",
+   "url": "https://codersblock.com/blog/star-wars-scene-transition-effects-in-css/",
+   "source": "codersblock",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deep Dive into Text Wrapping and Word Breaking",
+   "url": "https://codersblock.com/blog/deep-dive-into-text-wrapping-and-word-breaking/",
+   "source": "codersblock",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making a Heart Light with IFTTT and Netlify Functions",
+   "url": "https://codersblock.com/blog/making-a-heart-light-with-ifttt-and-netlify-functions/",
+   "source": "codersblock",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Weex学习与实践(三):iOS原理篇",
    "url": "http://localhost:4000/posts/weex3/",
    "source": "coderyi",
@@ -29465,6 +29972,78 @@
    "url": "http://localhost:4000/posts/react-native_first_lesson/",
    "source": "coderyi",
    "rank": 4,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Delegation Devtrial",
+   "url": "https://code.sgo.to/2026/02/11/delegation-devtrial.html",
+   "source": "codesgo",
+   "rank": 1,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "&lt;login&gt; Devtrial",
+   "url": "https://code.sgo.to/2026/01/29/login.html",
+   "source": "codesgo",
+   "rank": 2,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Email Verification Protocol Devtrial",
+   "url": "https://code.sgo.to/2024/10/25/verified-email-autocomplete.html",
+   "source": "codesgo",
+   "rank": 3,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Zero Knowledge Proofs",
+   "url": "https://code.sgo.to/2024/10/10/zero-knowledge-proof.html",
+   "source": "codesgo",
+   "rank": 4,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Identity Is Who You Are",
+   "url": "https://code.sgo.to/2023/09/03/identity.html",
+   "source": "codesgo",
+   "rank": 5,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "S and K",
+   "url": "https://code.sgo.to/2023/03/23/sk.html",
+   "source": "codesgo",
+   "rank": 6,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Set.mm",
+   "url": "https://code.sgo.to/2022/11/26/set.mm.html",
+   "source": "codesgo",
+   "rank": 7,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is 2 + 2 = 4?",
+   "url": "https://code.sgo.to/2022/11/26/2p2e4.html",
+   "source": "codesgo",
+   "rank": 8,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Blind Signatures",
+   "url": "https://code.sgo.to/2022/11/11/blind-signatures.html",
+   "source": "codesgo",
+   "rank": 9,
    "score": 1,
    "metric": "feed rank"
   },
@@ -30741,6 +31320,366 @@
    "metric": "feed rank"
   },
   {
+   "title": "Enforcing Design System Rules in AI-Generated UI",
+   "url": "https://coryrylan.com/blog/enforcing-design-system-rules-in-ai-generated-ui",
+   "source": "coryrylan",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your Context Files Are a Code Smell",
+   "url": "https://coryrylan.com/blog/your-context-files-are-a-code-smell",
+   "source": "coryrylan",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dropdown Menus with HTML Popovers and CSS Anchor Positioning",
+   "url": "https://coryrylan.com/blog/dropdown-menus-with-html-popovers-and-css-anchor-positioning",
+   "source": "coryrylan",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting Started with 3D Printing - A Quick Guide",
+   "url": "https://coryrylan.com/blog/getting-started-with-3d-printing",
+   "source": "coryrylan",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using Angular CLI and Wireit",
+   "url": "https://coryrylan.com/blog/using-angular-cli-and-wireit",
+   "source": "coryrylan",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Domain-Driven Design for UI Components, Improving Consistency and Quality",
+   "url": "https://coryrylan.com/blog/domain-driven-design-for-ui-components-improving-consistency-and-quality",
+   "source": "coryrylan",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Developing Web UI with Domain Driven Design Principles",
+   "url": "https://coryrylan.com/blog/developing-web-ui-with-domain-driven-design-principles",
+   "source": "coryrylan",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Styling HTML Form Validation with CSS",
+   "url": "https://coryrylan.com/blog/styling-html-form-validation-with-css",
+   "source": "coryrylan",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Design System Architecture - Managing CSS Themes",
+   "url": "https://coryrylan.com/blog/design-system-architecture-managing-css-themes",
+   "source": "coryrylan",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Flow Charts with CSS Anchor Positioning",
+   "url": "https://coryrylan.com/blog/flow-charts-with-css-anchor-positioning",
+   "source": "coryrylan",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting Started with HTML Form Events",
+   "url": "https://coryrylan.com/blog/getting-started-with-html-form-events",
+   "source": "coryrylan",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dynamic Contrast Layers with CSS Style Queries",
+   "url": "https://coryrylan.com/blog/dynamic-contrast-layers-with-css-style-queries",
+   "source": "coryrylan",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "High Performance HTML Tables with Lit and CSS Contain",
+   "url": "https://coryrylan.com/blog/high-performance-html-tables-with-lit-and-css-contain",
+   "source": "coryrylan",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "High Performance HTML Tables with Lit and Virtual Scrolling",
+   "url": "https://coryrylan.com/blog/high-performance-html-tables-with-lit-and-virtual-scrolling",
+   "source": "coryrylan",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating Dynamic Tables in Lit",
+   "url": "https://coryrylan.com/blog/creating-dynamic-tables-in-lit",
+   "source": "coryrylan",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google releases Modern Web Guidance 1.0: here's how to use it",
+   "url": "https://coywolf.com/news/web-development/google-releases-modern-web-guidance-10-and-heres-the-best-way-to-use-it/",
+   "source": "coywolf",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google, OpenAI, Microsoft, and Anthropic back a shared robots.txt AI training signal",
+   "url": "https://coywolf.com/news/seo/google-openai-microsoft-and-anthropic-back-a-shared-robotstxt-ai-training-signal/",
+   "source": "coywolf",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google is feeding rank trackers poisoned SERPs with swapped results, Nozzle finds",
+   "url": "https://coywolf.com/news/seo/rank-trackers-getting-poisoned-serps-from-google/",
+   "source": "coywolf",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lexica Ultralegible is a new font for low-vision readers based on Atkinson Hyperlegible",
+   "url": "https://coywolf.com/news/web-development/lexica-ultralegible-is-a-new-font-for-low-vision-readers-based-on-atkinson-hyper/",
+   "source": "coywolf",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Anthropic research warns AI worms could replicate across cheap IoT devices",
+   "url": "https://coywolf.com/news/productivity/anthropic-research-warns-ai-worms-could-replicate-across-cheap-iot-devices/",
+   "source": "coywolf",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Critical internet software is still maintained by just 1 or 2 people",
+   "url": "https://coywolf.com/news/web-development/critical-internet-software-is-still-maintained-by-just-one-or-two-people/",
+   "source": "coywolf",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MacPaw releases CleanMyMac CLI for cleaning developer and AI environments on macOS",
+   "url": "https://coywolf.com/news/web-development/macpaw-releases-cleanmymac-cli-for-cleaning-developer-and-ai-environments-on-macos/",
+   "source": "coywolf",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You can now chat using RSS",
+   "url": "https://coywolf.com/news/social-media/you-can-now-chat-using-rss-well-sort-of/",
+   "source": "coywolf",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Alt Text for the Fediverse: Browser extension for generating image alt text on Mastodon",
+   "url": "https://coywolf.com/news/social-media/ai-alt-text-for-the-fediverse-chrome-extension/",
+   "source": "coywolf",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Panic announces Transmit 6: Here's everything that's new",
+   "url": "https://coywolf.com/news/productivity/first-look-at-transmit-6-by-panic/",
+   "source": "coywolf",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "1Password clarifies how they're using AI after users raise concerns",
+   "url": "https://coywolf.com/news/productivity/1password-clarifies-how-theyre-using-ai-after-users-raise-concerns/",
+   "source": "coywolf",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google AI search experiences will soon show more links to websites",
+   "url": "https://coywolf.com/news/seo/google-ai-search-experiences-will-soon-show-more-open-web-links/",
+   "source": "coywolf",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You don't need MCP or Markdown to make sites agentic-friendly",
+   "url": "https://coywolf.com/news/seo/google-says-you-dont-need-mcp-or-markdown-to-make-your-site-agentic-friendly/",
+   "source": "coywolf",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What would a LinkedIn alternative look like on the open web?",
+   "url": "https://coywolf.com/news/social-media/what-would-a-linkedin-alternative-look-like-on-the-open-web/",
+   "source": "coywolf",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fathom Analytics acquires Gauges from ReportGarden",
+   "url": "https://coywolf.com/news/startups/exclusive-fathom-analytics-acquires-gauges-from-reportgarden/",
+   "source": "coywolf",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Modern Engineering Values",
+   "url": "https://cpojer.net/posts/modern-engineering-values",
+   "source": "cpojer",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fastest Frontend Tooling for Humans & AI",
+   "url": "https://cpojer.net/posts/fastest-frontend-tooling",
+   "source": "cpojer",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You are absolutely right!?",
+   "url": "https://cpojer.net/posts/you-are-absolutely-right",
+   "source": "cpojer",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Athena Crisis is now Open Source",
+   "url": "https://cpojer.net/posts/athena-crisis-open-source",
+   "source": "cpojer",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I'm Building a Company",
+   "url": "https://cpojer.net/posts/building-a-company",
+   "source": "cpojer",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Frontend Engineer Archetypes",
+   "url": "https://cpojer.net/posts/frontend-engineering-archetypes",
+   "source": "cpojer",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fastest Frontend Tooling in 2022",
+   "url": "https://cpojer.net/posts/fastest-frontend-tooling-in-2022",
+   "source": "cpojer",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mastering Tech Lead Management",
+   "url": "https://cpojer.net/posts/mastering-tech-lead-management",
+   "source": "cpojer",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Perfect Development Environment",
+   "url": "https://cpojer.net/posts/the-perfect-development-environment",
+   "source": "cpojer",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Set up a new Mac, Fast",
+   "url": "https://cpojer.net/posts/set-up-a-new-mac-fast",
+   "source": "cpojer",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a JavaScript Bundler",
+   "url": "https://cpojer.net/posts/building-a-javascript-bundler",
+   "source": "cpojer",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a JavaScript Testing Framework",
+   "url": "https://cpojer.net/posts/building-a-javascript-testing-framework",
+   "source": "cpojer",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rethinking JavaScript Infrastructure",
+   "url": "https://cpojer.net/posts/rethinking-javascript-infrastructure",
+   "source": "cpojer",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dependency Managers Don’t Manage Your Dependencies",
+   "url": "https://cpojer.net/posts/dependency-managers-dont-manage-your-dependencies",
+   "source": "cpojer",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inclusion in a Distributed World",
+   "url": "https://cpojer.net/posts/inclusion-in-a-distributed-world",
+   "source": "cpojer",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Entity-Component-System框架心得",
    "url": "http://www.cppblog.com/sunicdavy/archive/2018/11/30/216103.html",
    "source": "cppblog",
@@ -31021,6 +31960,246 @@
    "metric": "feed rank"
   },
   {
+   "title": "node.js syntax checker bug about shadowing in private fields",
+   "url": "https://cri.dev/posts/2026-06-24-nodejs-syntax-checker-bug-private-fields-shadowing/?utm_medium=rss&utm_source=rss&utm_campaign=rss",
+   "source": "cri",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI hype",
+   "url": "https://cri.dev/posts/2026-06-13-ai-hype/?utm_medium=rss&utm_source=rss&utm_campaign=rss",
+   "source": "cri",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to fix hanging tests in Node.js",
+   "url": "https://cri.dev/posts/2025-08-20-how-to-fix-node-js-mock-timers-enable-setinterval-tests-hanging-pending/?utm_medium=rss&utm_source=rss&utm_campaign=rss",
+   "source": "cri",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to use an iPad Pro as an external display",
+   "url": "https://cri.dev/posts/2025-08-15-how-to-use-connect-ipad-as-primary-monitor-display-for-mac-mini-computer-nintendo-switch-playstation/?utm_medium=rss&utm_source=rss&utm_campaign=rss",
+   "source": "cri",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Implementing HTTP range requests in Node.js",
+   "url": "https://cri.dev/posts/2025-06-18-how-to-http-range-requests-video-nodejs/?utm_medium=rss&utm_source=rss&utm_campaign=rss",
+   "source": "cri",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Crazy CSS experiments",
+   "url": "https://cri.dev/posts/2024-12-19-crazy-css-experiments-visualization-animation/?utm_medium=rss&utm_source=rss&utm_campaign=rss",
+   "source": "cri",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exclude specific tags in Eleventy using a custom filter",
+   "url": "https://cri.dev/posts/2024-09-21-how-to-exclude-tags-collection-filter-eleventy/?utm_medium=rss&utm_source=rss&utm_campaign=rss",
+   "source": "cri",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Start Kindle script on system boot with init.d",
+   "url": "https://cri.dev/posts/2024-09-15-Start-Kindle-script-on-system-boot-with-init/?utm_medium=rss&utm_source=rss&utm_campaign=rss",
+   "source": "cri",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Converting my Kindle to a digital photo frame",
+   "url": "https://cri.dev/posts/2024-09-16-Kindle-image-carousel-custom-script/?utm_medium=rss&utm_source=rss&utm_campaign=rss",
+   "source": "cri",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Display jailbroken Kindle info using lipc-get-prop",
+   "url": "https://cri.dev/posts/2024-09-14-Display-jailbroken-Kindle-info-using-lipc-get-prop/?utm_medium=rss&utm_source=rss&utm_campaign=rss",
+   "source": "cri",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to install Epic Games store on iPad with iOS 18",
+   "url": "https://cri.dev/posts/2024-09-14-how-to-install-epic-games-store-ipad-ios-18/?utm_medium=rss&utm_source=rss&utm_campaign=rss",
+   "source": "cri",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Displaying RTSP stream on a jailbroken Kindle Paperwhite",
+   "url": "https://cri.dev/posts/2024-09-13-display-tapo-surveillance-camera-kindle-ffmpeg-jailbreak-root/?utm_medium=rss&utm_source=rss&utm_campaign=rss",
+   "source": "cri",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "No ImageMagick? No problem, use FFmpeg!",
+   "url": "https://cri.dev/posts/2024-09-13-no-imagemagick-no-problem-use-ffmpeg/?utm_medium=rss&utm_source=rss&utm_campaign=rss",
+   "source": "cri",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Display IP address on a jailbroken Kindle using eips",
+   "url": "https://cri.dev/posts/2024-09-13-first-kindle-rooted-jailbreak-script-eips-show-ip-address/?utm_medium=rss&utm_source=rss&utm_campaign=rss",
+   "source": "cri",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rooted / Jailbroke my Kindle Paperwhite",
+   "url": "https://cri.dev/posts/2024-08-28-rooted-my-kindle-paperwhite/?utm_medium=rss&utm_source=rss&utm_campaign=rss",
+   "source": "cri",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When coding gets cheap, engineering gets harder",
+   "url": "https://crinkles.dev/writing/when-coding-gets-cheap-engineering-gets-harder/",
+   "source": "crinkles",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The mythical magical button",
+   "url": "https://crinkles.dev/writing/the-mythical-magical-button/",
+   "source": "crinkles",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Slightly enhanced sticky revealing footer",
+   "url": "https://crinkles.dev/writing/enhanced-sticky-footer/",
+   "source": "crinkles",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A modern picture showcase using CSS",
+   "url": "https://crinkles.dev/writing/a-modern-image-showcase-using-css/",
+   "source": "crinkles",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I cannot wait for the CSS @function",
+   "url": "https://crinkles.dev/writing/i-cannot-wait-for-css-functions/",
+   "source": "crinkles",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The importance of shipping source code as a library maintainer",
+   "url": "https://crinkles.dev/writing/the-importance-of-shipping-source-code/",
+   "source": "crinkles",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MacOS-like dock effect with a “previous-sibling combinator”",
+   "url": "https://crinkles.dev/writing/a-modern-css-previous-sibling-combinator/",
+   "source": "crinkles",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using recursive CSS to change styles based on depth",
+   "url": "https://crinkles.dev/writing/using-recursive-css-to-change-styles-based-on-depth/",
+   "source": "crinkles",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Combining :has and :only-child to change tab containers",
+   "url": "https://crinkles.dev/writing/combining-has-and-only-child-to-change-tab-containers/",
+   "source": "crinkles",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Combining :placeholder-shown and :has",
+   "url": "https://crinkles.dev/writing/combining-placeholder-shown-and-has-selectors/",
+   "source": "crinkles",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Interdependencies and code stability",
+   "url": "https://crinkles.dev/writing/code-stability/",
+   "source": "crinkles",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I was wrong about service workers",
+   "url": "https://crinkles.dev/writing/i-was-wrong-about-service-workers/",
+   "source": "crinkles",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Going back to CSS-only after years of SCSS",
+   "url": "https://crinkles.dev/writing/going-back-to-css-only-after-years-of-scss/",
+   "source": "crinkles",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Old man yelling at a cloud",
+   "url": "https://crinkles.dev/writing/old-man-yelling-at-a-cloud/",
+   "source": "crinkles",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Engineering, UX design and the value stream",
+   "url": "https://crinkles.dev/writing/how-to-make-framework-decisions/",
+   "source": "crinkles",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Thoughts on code reviews",
    "url": "http://crisal.io/words/2026/08/03/code-review-thoughts.html",
    "source": "crisal",
@@ -31097,6 +32276,126 @@
    "url": "http://crisal.io/words/2019/08/08/more-geckoview-debugging-fun.html",
    "source": "crisal",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "从 JetBrains 的亏损聊起",
+   "url": "http://crossoverjie.top/2026/10/13/AI/JetBrains-loss/",
+   "source": "crossoverjie",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我的 Agent 工作流：终端折腾了一圈，又回到了 Warp",
+   "url": "http://crossoverjie.top/2026/09/23/AI/agent-workflow/",
+   "source": "crossoverjie",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我做了一个 比 openclaw/workbuddy 更适合自己的用 Agent",
+   "url": "http://crossoverjie.top/2026/08/25/AI/botler-agent-intro/",
+   "source": "crossoverjie",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "减脂用微信零碎记录饮食，剩下的交给 Agent",
+   "url": "http://crossoverjie.top/2026/08/11/AI/%E5%BE%AE%E4%BF%A1%E9%9B%B6%E7%A2%8E%E8%AE%B0%E5%BD%95%E9%A5%AE%E9%A3%9F-%E4%BA%A4%E7%BB%99Agent/",
+   "source": "crossoverjie",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MCP大版本发布：无状态核心、破坏性变更，以及它到底省不省 token",
+   "url": "http://crossoverjie.top/2026/07/30/AI/mcp-2026-07-28-release/",
+   "source": "crossoverjie",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "注意：StarRocks 3.5.x 滚动升级触发 MV 全量刷新问题",
+   "url": "http://crossoverjie.top/2026/07/24/starrocks/StarRocks-rolling-upgrade-MV-force-refresh/",
+   "source": "crossoverjie",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "读完 Bun 用 Rust 重写：1 个人 11 天重写 50 万行代码是怎么做到的",
+   "url": "http://crossoverjie.top/2026/07/12/AI/bun-rewrite-rust-reading-notes/",
+   "source": "crossoverjie",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我的 Claude Code 常用 SKILLS 和工具",
+   "url": "http://crossoverjie.top/2026/06/29/AI/claudecode-skills-tools/",
+   "source": "crossoverjie",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Coding Agent 时代，我自己最常用的 4 个终端工具",
+   "url": "http://crossoverjie.top/2026/06/22/AI/terminal-tools-for-ai-coding-agent/",
+   "source": "crossoverjie",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "从 Warp 换到 cmux：一个更适合 AI Agent 的终端",
+   "url": "http://crossoverjie.top/2026/06/17/AI/cmux-introduce/",
+   "source": "crossoverjie",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I Built an AI-Powered StarRocks Upgrade Risk Scanner — And It Caught a Real Risk",
+   "url": "http://crossoverjie.top/2026/06/14/starrocks/StarRocks-upgrade-skill-principle-en/",
+   "source": "crossoverjie",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我做了一个 AI 版的 StarRocks 升级风险扫描工具，直接帮我定位到一个风险",
+   "url": "http://crossoverjie.top/2026/06/14/starrocks/StarRocks-upgrade-skill-principle/",
+   "source": "crossoverjie",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[送码] 用 AI Coding 做了一个 App，谈谈 AI Coding 的真实体验",
+   "url": "http://crossoverjie.top/2026/05/26/clipshelf/clipshelf-introduce/",
+   "source": "crossoverjie",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "手搓一个 Agent 驱动的项目 Wiki 生成方案",
+   "url": "http://crossoverjie.top/2026/05/18/AI/cc-generate-wiki/",
+   "source": "crossoverjie",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "从企业版 Istio 迁移到社区版：一场给高速行驶汽车换轮胎的实践",
+   "url": "http://crossoverjie.top/2026/04/15/istio-enterprise-to-community-migration/",
+   "source": "crossoverjie",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -31301,6 +32600,414 @@
    "metric": "feed rank"
   },
   {
+   "title": "Creating Diagrams and Graphs Using Modern CSS",
+   "url": "https://blog.master.dev/creating-diagrams-and-graphs-using-modern-css/",
+   "source": "cssarticles",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Re-Implementing :nth-child() With Modern CSS",
+   "url": "https://css-tricks.com/re-implementing-nth-child-with-modern-css/",
+   "source": "cssarticles",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Two Circles, One Connection, and border-shape",
+   "url": "https://blog.master.dev/two-circles-one-connection-and-border-shape/",
+   "source": "cssarticles",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Transferring sibling-count() to a Parent Element",
+   "url": "https://blog.master.dev/transferring-sibling-count-to-a-parent-element/",
+   "source": "cssarticles",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Extracting Grid Information Using CSS",
+   "url": "https://blog.master.dev/extracting-grid-information-using-css/",
+   "source": "cssarticles",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hover Proximity Using Modern CSS",
+   "url": "https://blog.master.dev/hover-proximity-using-modern-css/",
+   "source": "cssarticles",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Something Nobody Told You About The Image Element (It Can Overflow!)",
+   "url": "https://master.dev/blog/something-nobody-told-you-about-the-image-element-it-can-overflow/",
+   "source": "cssarticles",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In-N-Out Animation using sibling-index()",
+   "url": "https://master.dev/blog/in-n-out-animation-using-sibling-index/",
+   "source": "cssarticles",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Get Ready For the Powerful CSS border-shape Property!",
+   "url": "https://css-tricks.com/get-ready-for-the-powerful-css-border-shape-property/",
+   "source": "cssarticles",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Let’s Play With Gap Decorations!",
+   "url": "https://master.dev/blog/lets-play-with-gap-decorations/",
+   "source": "cssarticles",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Control Infinite CSS Animations (Part 2 of 2)",
+   "url": "https://frontendmasters.com/blog/how-to-control-infinite-css-animations-part-2-of-2/",
+   "source": "cssarticles",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Control Infinite CSS Animations (Part 1 of 2)",
+   "url": "https://frontendmasters.com/blog/how-to-control-infinite-css-animations-part-1-of-2/",
+   "source": "cssarticles",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making Complex CSS Shapes Using shape()",
+   "url": "https://css-tricks.com/complex-css-shapes-with-shape-function/",
+   "source": "cssarticles",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Two Circles, One Arrow, and Anchor Positioning",
+   "url": "https://frontendmasters.com/blog/two-circles-one-arrow-and-anchor-positioning/",
+   "source": "cssarticles",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making a Responsive Pyramidal Grid With Modern CSS",
+   "url": "https://css-tricks.com/making-a-responsive-pyramidal-grid-with-modern-css/",
+   "source": "cssarticles",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Top 2021 CSS Frameworks Report, Part 4: Specificity and complexity",
+   "url": "https://css-auditors.com/reports/css-frameworks-part-4-2022-11/",
+   "source": "cssauditors",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Top 2021 CSS Frameworks Report, Part 3: Selectors",
+   "url": "https://css-auditors.com/reports/css-frameworks-part-3-2022-10/",
+   "source": "cssauditors",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Top 2021 CSS Frameworks Report, Part 2: Validation",
+   "url": "https://css-auditors.com/reports/css-frameworks-part-2-2022-05/",
+   "source": "cssauditors",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Top 2021 CSS Frameworks Report, Part 1: The CSS File Sizes",
+   "url": "https://css-auditors.com/reports/css-frameworks-part-1-2022-02/",
+   "source": "cssauditors",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The CSS File Size and Count Report for Bundesliga sites",
+   "url": "https://css-auditors.com/reports/bundesliga-2021-03/",
+   "source": "cssauditors",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The CSS File Size and Count Report for Premier League sites",
+   "url": "https://css-auditors.com/reports/premier-league-2021-02/",
+   "source": "cssauditors",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Find out the quality of your CSS code",
+   "url": "https://css-auditors.com/blog/css-code-quality/",
+   "source": "cssauditors",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I built and rewrote the CSS Auditors website",
+   "url": "https://css-auditors.com/blog/website-rewrite/",
+   "source": "cssauditors",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On CSS sizes and performance budget",
+   "url": "https://css-auditors.com/blog/the-second-css-report-about-css-file-sizes-and-file-count/",
+   "source": "cssauditors",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Very First CSS Report About CSS File Sizes and File Count",
+   "url": "https://css-auditors.com/blog/the-very-first-css-report-about-css-file-sizes-and-file-count/",
+   "source": "cssauditors",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10 Best Websites to Practice CSS Online in 2026 (Free & Paid)",
+   "url": "https://cssbattle.dev/blog/best-css-practice-websites/",
+   "source": "cssbattle",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How CSS works in the browser",
+   "url": "https://cssbattle.dev/blog/how-css-works/",
+   "source": "cssbattle",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating a Triangle with just CSS",
+   "url": "https://cssbattle.dev/blog/creating-triangle-with-css/",
+   "source": "cssbattle",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating a Rectangle with just CSS",
+   "url": "https://cssbattle.dev/blog/creating-rectangle-with-css/",
+   "source": "cssbattle",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating a Circle with just CSS",
+   "url": "https://cssbattle.dev/blog/creating-circle-with-css/",
+   "source": "cssbattle",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Top paid courses to learn CSS",
+   "url": "https://cssbattle.dev/blog/top-paid-css-courses/",
+   "source": "cssbattle",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Featured player of the month - Gabriele Antonelli",
+   "url": "https://cssbattle.dev/blog/featured-player-gabriele/",
+   "source": "cssbattle",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Featured player of the month - Kornelius",
+   "url": "https://cssbattle.dev/blog/featured-player-kornelius/",
+   "source": "cssbattle",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Featured player of the month - Ludvig Lindblom",
+   "url": "https://cssbattle.dev/blog/featured-player-ludvig-lindblom/",
+   "source": "cssbattle",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Featured player of the month - Jeroen Meijers",
+   "url": "https://cssbattle.dev/blog/featured-player-jeroen-meijers/",
+   "source": "cssbattle",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Featured player of the month - Esger Jellema",
+   "url": "https://cssbattle.dev/blog/featured-player-esger-jellema/",
+   "source": "cssbattle",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Create a Hexagon Shape in CSS — Tutorial with Code",
+   "url": "https://cssbattle.dev/blog/creating-hexagon-with-css/",
+   "source": "cssbattle",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Time-attack Battle mode ⏰",
+   "url": "https://cssbattle.dev/blog/time-attack-battle-mode/",
+   "source": "cssbattle",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learn CSS intuitively - Specificity",
+   "url": "https://cssbattle.dev/blog/learn-specificity/",
+   "source": "cssbattle",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Light theme now available to all",
+   "url": "https://cssbattle.dev/blog/light-theme-available-to-all/",
+   "source": "cssbattle",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "content is your Content?",
+   "url": "https://csshell.dev/posts/content-is-your-content/",
+   "source": "csshell",
+   "rank": 1,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "One size should fit all?",
+   "url": "https://csshell.dev/posts/one-size-should-fit-all/",
+   "source": "csshell",
+   "rank": 2,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We don't float down here anymore",
+   "url": "https://csshell.dev/posts/we-dont-float-down-here-anymore/",
+   "source": "csshell",
+   "rank": 3,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Convenient CSS naming conventions",
+   "url": "https://csshell.dev/posts/convenient-css-naming-conventions/",
+   "source": "csshell",
+   "rank": 4,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Let's talk about units",
+   "url": "https://csshell.dev/posts/lets-talk-about-units/",
+   "source": "csshell",
+   "rank": 5,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "font-variation-misfortune",
+   "url": "https://csshell.dev/posts/font-variation-misfortune/",
+   "source": "csshell",
+   "rank": 6,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Overspecified specificity",
+   "url": "https://csshell.dev/posts/overspecified-specificity/",
+   "source": "csshell",
+   "rank": 7,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "font-family everywhere!",
+   "url": "https://csshell.dev/posts/font-everywhere/",
+   "source": "csshell",
+   "rank": 8,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prefix mess",
+   "url": "https://csshell.dev/posts/prefix-mess/",
+   "source": "csshell",
+   "rank": 9,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Link & the forgotten accessibility",
+   "url": "https://csshell.dev/posts/link-and-the-forgotten-accessibility/",
+   "source": "csshell",
+   "rank": 10,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "z-index hell",
+   "url": "https://csshell.dev/posts/z-index-hell/",
+   "source": "csshell",
+   "rank": 11,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Clutter",
    "url": "https://css-irl.info/clutter/",
    "source": "cssirl",
@@ -31416,6 +33123,126 @@
    "title": "Limitation Breeds Creativity: A Study in Composition with Custom Properties",
    "url": "https://css-irl.info/limitation-breeds-creativity/",
    "source": "cssirl",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Fundamentals of CSS Alignment",
+   "url": "https://css-tip.com/explore/alignment/",
+   "source": "csstip",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Confetti Buttons using random()",
+   "url": "https://css-tip.com/confetti-button/",
+   "source": "csstip",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Spring Connector Using Anchor Positioning and border-shape",
+   "url": "https://css-tip.com/spring-connector/",
+   "source": "csstip",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Foldable Zig-Zag Connector Using Modern CSS",
+   "url": "https://css-tip.com/zig-zag-connector/",
+   "source": "csstip",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Confetti Shape Explosion using random()",
+   "url": "https://css-tip.com/shape-confetti/",
+   "source": "csstip",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Input Range Slider with Custom Shapes",
+   "url": "https://css-tip.com/shaped-range-slider/",
+   "source": "csstip",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Random Wavy Dividers",
+   "url": "https://css-tip.com/random-wavy-shapes/",
+   "source": "csstip",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Implementing children-count() using Modern CSS",
+   "url": "https://css-tip.com/children-count/",
+   "source": "csstip",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Random Blob Shapes",
+   "url": "https://css-tip.com/random-blob/",
+   "source": "csstip",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Complex border-only Shapes with Gradient Coloration",
+   "url": "https://css-tip.com/gradient-shapes/",
+   "source": "csstip",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dynamic Node Connection (CSS-only Diagram) II",
+   "url": "https://css-tip.com/node-connection-2/",
+   "source": "csstip",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Get Grid Information using pure CSS II",
+   "url": "https://css-tip.com/grid-information-2/",
+   "source": "csstip",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hover Proximity with Scroll-Driven Animations",
+   "url": "https://css-tip.com/hover-proximity/",
+   "source": "csstip",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Get Grid Information using pure CSS",
+   "url": "https://css-tip.com/grid-information/",
+   "source": "csstip",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Breakout Background using Modern CSS",
+   "url": "https://css-tip.com/breakout-background/",
+   "source": "csstip",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -31657,6 +33484,86 @@
    "url": "https://culturedcode.com/things/blog/2022/09/lock-screen-widgets-for-ios-16/",
    "source": "culturedcode",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple’s OS release and how it impacts Identity Graphs",
+   "url": "https://cunderwood.dev/2026/10/20/apples-os-release-and-how-it-impacts-identity-graphs/",
+   "source": "cunderwood",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI as Infrastructure",
+   "url": "https://cunderwood.dev/2026/05/01/ai-as-infrastructure/",
+   "source": "cunderwood",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Risky Business In the New Year",
+   "url": "https://cunderwood.dev/2025/12/15/risky-business-in-the-new-year/",
+   "source": "cunderwood",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Security Requirements come to the CCPA",
+   "url": "https://cunderwood.dev/2025/10/13/security-requirements-come-to-the-ccpa/",
+   "source": "cunderwood",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Regulation is Here",
+   "url": "https://cunderwood.dev/2025/03/09/ai-regulation-is-here/",
+   "source": "cunderwood",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The FTC and Hashing",
+   "url": "https://cunderwood.dev/2024/07/29/the-ftc-and-hashing/",
+   "source": "cunderwood",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The CCPA Standard",
+   "url": "https://cunderwood.dev/2024/04/21/the-ccpa-standard/",
+   "source": "cunderwood",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Blog Update",
+   "url": "https://cunderwood.dev/2024/03/11/blog-update/",
+   "source": "cunderwood",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2024 Comes in Like a Lion",
+   "url": "https://cunderwood.dev/2024/01/01/2024-comes-in-like-a-lion/",
+   "source": "cunderwood",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Firefox Privacy Enhancements",
+   "url": "https://cunderwood.dev/2023/11/26/new-firefox-privacy-enhancements/",
+   "source": "cunderwood",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -32137,6 +34044,86 @@
    "url": "https://dabeaz.blogspot.com/2011/04/practical-python-with-raymond-hettinger.html",
    "source": "dabeaz",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "抑郁了",
+   "url": "https://daimajia.com/2026/10/18/depression/",
+   "source": "daimajia",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "定在原地，回头和远望",
+   "url": "https://daimajia.com/2025/12/18/three-years-off-work-living-with-pain-and-finding-life/",
+   "source": "daimajia",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AIGC – 图片与文字分享",
+   "url": "https://daimajia.com/2023/01/03/aigc/",
+   "source": "daimajia",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ChatGPT 真格基金内部分享",
+   "url": "https://daimajia.com/2022/12/05/chatgpt-zhenfund/",
+   "source": "daimajia",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Step by Step 分析一次链上三明治套利攻击",
+   "url": "https://daimajia.com/2022/12/05/step-by-step-defi-sandwitch-attack/",
+   "source": "daimajia",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Flash Loans (闪电贷) 是什么？",
+   "url": "https://daimajia.com/2022/05/23/what-is-flash-loans/",
+   "source": "daimajia",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "新交规科目一知识导图速记",
+   "url": "https://daimajia.com/2022/04/07/kemu1/",
+   "source": "daimajia",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web 3.0 似乎正在将「群体行为」变成资产并为之定价",
+   "url": "https://daimajia.com/2022/04/06/behavior/",
+   "source": "daimajia",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web 3.0 带来了什么？",
+   "url": "https://daimajia.com/2022/03/17/web3/",
+   "source": "daimajia",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "新年轻人和新资产",
+   "url": "https://daimajia.com/2021/11/25/young-assets/",
+   "source": "daimajia",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },

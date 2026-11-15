@@ -29674,6 +29674,706 @@ def fetch_chrisruppel(limit=15):
     return out
 
 
+def fetch_chriszheng(limit=15):
+    """Chris Zheng — Chinese Emacs dev (feed), position-scored."""
+    print("Fetching Chris Zheng feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://chriszheng.science/atom.xml",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] chriszheng attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "chriszheng", title, link.strip() or "https://chriszheng.science",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_chuttenblogwordpress(limit=15):
+    """chutten — Mozilla telemetry (feed), position-scored."""
+    print("Fetching chutten feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://chuttenblog.wordpress.com/feed/",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] chuttenblogwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "chuttenblogwordpress", title, link.strip() or "https://chuttenblog.wordpress.com",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_clarkio(limit=15):
+    """Clarkio — dev streamer (feed), position-scored."""
+    print("Fetching Clarkio feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://clarkio.com/rss.xml",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] clarkio attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "clarkio", title, link.strip() or "https://clarkio.com",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_cloudfour(limit=15):
+    """Cloud Four — RWD consultancy (feed), position-scored."""
+    print("Fetching Cloud Four feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://cloudfour.com/feed/",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] cloudfour attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "cloudfour", title, link.strip() or "https://cloudfour.com",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_codesgo(limit=15):
+    """SGO — Google engineering (feed), position-scored."""
+    print("Fetching SGO feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://code.sgo.to/rss.xml",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] codesgo attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "codesgo", title, link.strip() or "https://code.sgo.to",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_codersblock(limit=15):
+    """Coders Block — dev notes (feed), position-scored."""
+    print("Fetching Coders Block feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://codersblock.com/rss.xml",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] codersblock attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "codersblock", title, link.strip() or "https://codersblock.com",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_coryrylan(limit=15):
+    """Cory Rylan — web components (feed), position-scored."""
+    print("Fetching Cory Rylan feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://coryrylan.com/feed.xml",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] coryrylan attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "coryrylan", title, link.strip() or "https://coryrylan.com",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_coywolf(limit=15):
+    """Coywolf — SEO and web (feed), position-scored."""
+    print("Fetching Coywolf feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://coywolf.pro/feed/",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] coywolf attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "coywolf", title, link.strip() or "https://coywolf.pro",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_cpojer(limit=15):
+    """cpojer — Jest creator (feed), position-scored."""
+    print("Fetching cpojer feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://cpojer.net/feed.xml",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] cpojer attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "cpojer", title, link.strip() or "https://cpojer.net",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_craftcms(limit=15):
+    """Craft CMS — CMS a11y notes (feed), position-scored."""
+    print("Fetching Craft CMS feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://craftcms.com/accessibility.rss",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] craftcms attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "craftcms", title, link.strip() or "https://craftcms.com",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_cri(limit=15):
+    """CRI Dev — dev notes (feed), position-scored."""
+    print("Fetching CRI Dev feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://cri.dev/rss.xml",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] cri attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "cri", title, link.strip() or "https://cri.dev",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_crinkles(limit=15):
+    """Crinkles — frontend notes (feed), position-scored."""
+    print("Fetching Crinkles feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://crinkles.dev/feed/feed.xml",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] crinkles attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "crinkles", title, link.strip() or "https://crinkles.dev",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_crossoverjie(limit=15):
+    """crossoverJie — Chinese Java dev (feed), position-scored."""
+    print("Fetching crossoverJie feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://crossoverjie.top/atom.xml",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] crossoverjie attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "crossoverjie", title, link.strip() or "https://crossoverjie.top",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_cssarticles(limit=15):
+    """CSS Articles — CSS techniques (feed), position-scored."""
+    print("Fetching CSS Articles feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://css-articles.com/feed.xml",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] cssarticles attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "cssarticles", title, link.strip() or "https://css-articles.com",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_cssauditors(limit=15):
+    """CSS Auditors — CSS tooling (feed), position-scored."""
+    print("Fetching CSS Auditors feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://css-auditors.com/rss.xml",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] cssauditors attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "cssauditors", title, link.strip() or "https://css-auditors.com",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_csstip(limit=15):
+    """CSS Tip — CSS tips (feed), position-scored."""
+    print("Fetching CSS Tip feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://css-tip.com/feed/feed.xml",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] csstip attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "csstip", title, link.strip() or "https://css-tip.com",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_cssbattle(limit=15):
+    """CSSBattle — CSS game (feed), position-scored."""
+    print("Fetching CSSBattle feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://cssbattle.dev/blog/feed/feed.xml",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] cssbattle attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "cssbattle", title, link.strip() or "https://cssbattle.dev",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_csshell(limit=15):
+    """CSS Hell — CSS pitfalls (feed), position-scored."""
+    print("Fetching CSS Hell feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://csshell.dev/feed.xml",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] csshell attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "csshell", title, link.strip() or "https://csshell.dev",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_cunderwood(limit=15):
+    """C Underwood — engineering notes (feed), position-scored."""
+    print("Fetching C Underwood feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://cunderwood.dev/feed/",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] cunderwood attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "cunderwood", title, link.strip() or "https://cunderwood.dev",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_daimajia(limit=15):
+    """Daimajia — Chinese Android dev (feed), position-scored."""
+    print("Fetching Daimajia feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://daimajia.com/feed",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] daimajia attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "daimajia", title, link.strip() or "https://daimajia.com",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
 def fetch_slashdot(limit=15):
     """Slashdot RSS 1.0 (RDF) — nerd news, position-scored like techmeme."""
     print("Fetching Slashdot feed...")
@@ -30698,6 +31398,26 @@ def main():
         "chriskirknielsen": fetch_chriskirknielsen,
         "chrislachance": fetch_chrislachance,
         "chrisruppel": fetch_chrisruppel,
+        "chriszheng": fetch_chriszheng,
+        "chuttenblogwordpress": fetch_chuttenblogwordpress,
+        "clarkio": fetch_clarkio,
+        "cloudfour": fetch_cloudfour,
+        "codesgo": fetch_codesgo,
+        "codersblock": fetch_codersblock,
+        "coryrylan": fetch_coryrylan,
+        "coywolf": fetch_coywolf,
+        "cpojer": fetch_cpojer,
+        "craftcms": fetch_craftcms,
+        "cri": fetch_cri,
+        "crinkles": fetch_crinkles,
+        "crossoverjie": fetch_crossoverjie,
+        "cssarticles": fetch_cssarticles,
+        "cssauditors": fetch_cssauditors,
+        "csstip": fetch_csstip,
+        "cssbattle": fetch_cssbattle,
+        "csshell": fetch_csshell,
+        "cunderwood": fetch_cunderwood,
+        "daimajia": fetch_daimajia,
         "guardianco": fetch_guardianco,
         "holovaty": fetch_holovaty,
         "huangjiwei": fetch_huangjiwei,
