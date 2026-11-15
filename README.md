@@ -231,6 +231,26 @@ A daily cross-source snapshot of developer attention:
 | aerotwist | Paul Lewis web performance | `aerotwist.com/blog/feed/` |
 | Ahmad Awais | WordPress and dev tools | `ahmadawais.com/feed/` |
 | AI Works | AI engineering newsletter | `aieworks.substack.com/feed` |
+| A List Apart | web design standards magazine | `alistapart.com/main/feed/` |
+| Anders Murphy | Clojure and systems blog | `andersmurphy.com/feed` |
+| Andrea Leopardi | Elixir core team blog | `andrealeopardi.com/feed.xml` |
+| Andrew Timberlake | Ruby and freelancing | `andrewtimberlake.com/blog/feed.xml` |
+| Andy Maleh | Ruby/Glimmer blog | `andymaleh.blogspot.com/feeds/posts/default?alt=rss` |
+| Anh Nguyen | data and ML notes | `anhvn.com/feed.xml` |
+| Anton Gunnarsson | TypeScript and web dev | `antongunnarsson.com/rss.xml` |
+| Architect Elevator | enterprise architecture | `architectelevator.com/feed.xml` |
+| Arialdo Martini | functional programming | `arialdomartini.github.io/feed.xml` |
+| Artsy Engineering | Artsy engineering blog | `artsy.github.io/feed` |
+| Austin Henley | CS research and teaching | `austinhenley.com/blog/feed.rss` |
+| Auth0 Blog | identity platform engineering | `auth0.com/blog/rss.xml` |
+| Automattic | WordPress company blog | `automattic.com/feed/` |
+| backendtea | PHP backend notes | `backendtea.com/index.xml` |
+| Backstage Blog | Spotify developer portal | `backstage.io/blog/rss.xml` |
+| Basic Apple Guy | Apple and design blog | `basicappleguy.com/basicappleblog?format=rss` |
+| Brian Batko | tech newsletter | `batko.substack.com/feed/` |
+| Be A Better Dev | cloud and AWS tutorials | `beabetterdev.com/feed/` |
+| benjamin.computer | computing essays | `benjamin.computer/atom.xml` |
+| Ben Smithgall | web engineering notes | `bensmithgall.com/feed.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

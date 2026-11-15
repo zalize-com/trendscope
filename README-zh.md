@@ -10,7 +10,7 @@
 
 ## 这是什么
 
-每天两次，跨 **209 个数据源**抓一份"开发者注意力"快照：Hacker News、
+每天两次，跨 **229 个数据源**抓一份"开发者注意力"快照：Hacker News、
 Show HN、Ask HN、GitHub Trending、Lobste.rs、Dev.to、Product Hunt、
 Techmeme、Slashdot、Ars Technica、The Verge、arXiv、npm、PyPI、
 crates.io、Lemmy (programming.dev)、Krebs on Security、Changelog News、
