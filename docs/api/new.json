@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T18:39:59.510530+00:00",
+ "generated_at": "2026-11-15T18:43:18.594751+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 13985,
- "new_items": 13858,
+ "total_items": 14245,
+ "new_items": 14118,
  "by_source": {
   "show_hn": 48,
   "producthunt": 45,
@@ -499,28 +499,42 @@
   "platformer": 15,
   "pokeinthe": 15,
   "polypane": 15,
+  "pomb": 15,
   "potaroo": 15,
+  "pqina": 15,
+  "pqvst": 15,
   "pragmatic": 15,
   "pragprog": 15,
+  "prettier": 15,
   "priver": 15,
   "proceedingsmlr": 15,
   "projectf": 15,
+  "pustelto": 15,
   "pythonblog": 15,
+  "quii": 15,
   "rachsmith": 15,
   "radumatei": 15,
   "raganwald": 15,
   "rands": 15,
   "rauchg": 15,
+  "rawgithubusercontent": 15,
   "react": 15,
   "reaganray": 15,
   "remysharp": 15,
   "ridiculousfish": 15,
+  "rightbadcode": 15,
   "rknight": 15,
   "rmarcus": 15,
   "roadtolarissa": 15,
+  "robbowen": 15,
+  "robdodson": 15,
   "robinrendle": 15,
   "romainguy": 15,
+  "romaricpascal": 15,
+  "rtpg": 15,
   "rubick": 15,
+  "ryanmulligan": 15,
+  "ryantrimble": 15,
   "sanglard": 15,
   "sarasoueidan": 15,
   "seangoedecke": 15,
@@ -947,11 +961,13 @@
   "pmjones": 10,
   "poulpita": 10,
   "pragtobwordpress": 10,
+  "presetenvcssdb": 10,
   "producthubspot": 10,
   "proton": 10,
   "pugachev": 10,
   "pythonspeed": 10,
   "qsantos": 10,
+  "quittengithub": 10,
   "rachelandrewco": 10,
   "rakuadvent": 10,
   "randomactsofarchitecture": 10,
@@ -959,10 +975,12 @@
   "raspberrypi": 10,
   "raymondcamden": 10,
   "redditinc": 10,
+  "redonion": 10,
   "researchfb": 10,
   "responsivenewsco": 10,
   "rmurphey": 10,
   "robertheaton": 10,
+  "robertocallahan": 10,
   "rubenverborgh": 10,
   "rubylang": 10,
   "rubyonrails": 10,
@@ -1080,6 +1098,8 @@
   "overengineer": 5,
   "perishablepress": 5,
   "piccalil": 5,
+  "racheleditullio": 5,
+  "rviscomi": 5,
   "sandordargo": 5,
   "sethmlarson": 5,
   "toni": 5,
@@ -91809,6 +91829,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Devtools FM",
+   "url": "https://www.youtube.com/watch?v=wKfupjQSGns",
+   "source": "pomb",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Curse of Markdown",
+   "url": "https://codehike.org/blog/the-curse-of-markdown",
+   "source": "pomb",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build-time Components",
+   "url": "https://codehike.org/blog/build-time-components",
+   "source": "pomb",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Code Hike 1.0",
+   "url": "https://codehike.org/blog/v1",
+   "source": "pomb",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fine-grained Markdown",
+   "url": "https://codehike.org/blog/fine-grained-markdown",
+   "source": "pomb",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rich Content Website Lean Content Website",
+   "url": "https://codehike.org/blog/rich-content-websites",
+   "source": "pomb",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From Markdown to Video",
+   "url": "https://codehike.org/blog/remotion",
+   "source": "pomb",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beyond Skeuomorphic Markdown",
+   "url": "https://www.youtube.com/watch?v=uYy2WXHSEqo",
+   "source": "pomb",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GPT API Unofficial Docs",
+   "url": "https://gpt.pomb.us/",
+   "source": "pomb",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bright",
+   "url": "https://bright.codehike.org/",
+   "source": "pomb",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Code Explainers",
+   "url": "https://codeexplainers.com/",
+   "source": "pomb",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stop Writing Dead Fish",
+   "url": "https://www.youtube.com/watch?v=9BU1fLCumR8",
+   "source": "pomb",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tailwind's home page clone with Code Hike",
+   "url": "https://www.youtube.com/watch?v=sPDvKlmUkC4",
+   "source": "pomb",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a Stripe Docs clone with Code Hike",
+   "url": "https://www.youtube.com/watch?v=W2rJ7p-G63c",
+   "source": "pomb",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CodeTV",
+   "url": "https://github.com/pomber/codetv",
+   "source": "pomb",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "DNS OARC 47",
    "url": "https://ispcol.potaroo.net/2026-11/oarc47.html",
    "source": "potaroo",
@@ -92005,6 +92145,246 @@
    "url": "https://poulpita.com/2022/12/09/andre-devambez-au-petit-palais/",
    "source": "poulpita",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Animating The Dialog Element Using View Transitions",
+   "url": "https://pqina.nl/blog/animating-the-dialog-element-using-view-transitions/",
+   "source": "pqina",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Updating CSS Border Radius When A Container Is Overflowing",
+   "url": "https://pqina.nl/blog/update-container-border-radius-scrollbar-overflow/",
+   "source": "pqina",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How To Disable Right Click With JavaScript",
+   "url": "https://pqina.nl/blog/disable-right-click-with-javascript/",
+   "source": "pqina",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Crop An Image With Canvas",
+   "url": "https://pqina.nl/blog/crop-an-image-with-canvas/",
+   "source": "pqina",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using CSS Color-Mix() to lower anchor underline opacity",
+   "url": "https://pqina.nl/blog/color-mix-anchor-underline/",
+   "source": "pqina",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building A Birthdate Input Custom Element",
+   "url": "https://pqina.nl/blog/building-birthdate-input-custom-element/",
+   "source": "pqina",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Animating And Transitioning CSS Custom Properties",
+   "url": "https://pqina.nl/blog/css-custom-property-mix-transition-animation/",
+   "source": "pqina",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating CSS Spring Animations With The Linear Easing Function",
+   "url": "https://pqina.nl/blog/css-spring-animation-with-linear-easing-function/",
+   "source": "pqina",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using Web Bluetooth To Read BBQ Temperature Sensor Data",
+   "url": "https://pqina.nl/blog/web-bluetooth-api-read-bbq-temperature-sensor-data/",
+   "source": "pqina",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's the JavaScript version of sleep",
+   "url": "https://pqina.nl/blog/whats-the-javascript-version-of-sleep/",
+   "source": "pqina",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Flexible CSS Colors With Custom Properties",
+   "url": "https://pqina.nl/blog/css-colors-with-custom-properties/",
+   "source": "pqina",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Create Crisp Image Borders With CSS Pseudo Elements",
+   "url": "https://pqina.nl/blog/crisp-image-borders-with-css-pseudo-elements/",
+   "source": "pqina",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Edit Images With Vue And Pintura",
+   "url": "https://pqina.nl/blog/edit-images-with-vue-and-pintura/",
+   "source": "pqina",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Compress An Image Before Upload With JavaScript",
+   "url": "https://pqina.nl/blog/compress-image-before-upload/",
+   "source": "pqina",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating A Custom Svelte Media Query Store",
+   "url": "https://pqina.nl/blog/svelte-media-query-store/",
+   "source": "pqina",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's your Google Residence?",
+   "url": "/2023/12/20/google-residence/",
+   "source": "pqvst",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Taipei Tips (Cafes, Food, Places)",
+   "url": "/2023/11/29/taipei-tips-cafes-food-places/",
+   "source": "pqvst",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Demystifying Web Push Notifications",
+   "url": "/2023/11/21/web-push-notifications/",
+   "source": "pqvst",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "One Day Build: Expense Tracking",
+   "url": "/2023/10/23/one-day-build-expense-tracking/",
+   "source": "pqvst",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Troubleshooting Express.js WebSockets",
+   "url": "/2023/09/25/troubleshooting-websockets/",
+   "source": "pqvst",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Transatlantic Coworking-Cruise on the Queen Mary 2",
+   "url": "/2023/08/24/coworking-crossing-the-atlantic/",
+   "source": "pqvst",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "State of my Hardware (2023)",
+   "url": "/2023/07/26/state-of-my-hardware-2023/",
+   "source": "pqvst",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Going Multi-Region with Zero Devops",
+   "url": "/2023/06/30/going-multi-region-with-zero-devops/",
+   "source": "pqvst",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exploring Taipei Underground",
+   "url": "/2023/05/28/taipei-underground/",
+   "source": "pqvst",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Help Scout + Stripe Integration using Custom Dynamic App",
+   "url": "/2023/04/27/help-scout-stripe-dynamic-integration/",
+   "source": "pqvst",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a SaaS product in 1 week",
+   "url": "/2022/07/14/one-week-build-instantrentalalerts/",
+   "source": "pqvst",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fastmail Spam Learning is Weird",
+   "url": "/2022/06/04/fastmail-spam-learning-is-weird/",
+   "source": "pqvst",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I use (and abuse) macOS",
+   "url": "/2022/02/15/how-i-use-and-abuse-macos/",
+   "source": "pqvst",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Custom Google Forms for your static website",
+   "url": "/2021/12/28/custom-google-forms/",
+   "source": "pqvst",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Monitoring DigitalOcean volume disk usage using Awk and Grafana",
+   "url": "/2021/11/29/monitor-volume-disk-usage/",
+   "source": "pqvst",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -92325,6 +92705,206 @@
    "url": "https://pragtob.wordpress.com/2023/12/22/benchee-1-3-0-published-oh-save-the-memory/",
    "source": "pragtobwordpress",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PostCSS Mixins And PostCSS Custom Functions",
+   "url": "https://preset-env.cssdb.org/blog/postcss-mixins-and-custom-functions/",
+   "source": "presetenvcssdb",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Relative Color Syntax : Channel Values",
+   "url": "https://preset-env.cssdb.org/blog/relative-color-syntax-channel-values/",
+   "source": "presetenvcssdb",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PostCSS Bundler",
+   "url": "https://preset-env.cssdb.org/blog/postcss-bundler/",
+   "source": "presetenvcssdb",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "License change to MIT-0",
+   "url": "https://preset-env.cssdb.org/blog/license-change/",
+   "source": "presetenvcssdb",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PostCSS Relative Color Syntax",
+   "url": "https://preset-env.cssdb.org/blog/postcss-relative-color-syntax/",
+   "source": "presetenvcssdb",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PostCSS Color Mix Function",
+   "url": "https://preset-env.cssdb.org/blog/postcss-color-mix-function/",
+   "source": "presetenvcssdb",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS Color Parser",
+   "url": "https://preset-env.cssdb.org/blog/css-color-parser-v1.0.0/",
+   "source": "presetenvcssdb",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS Calc",
+   "url": "https://preset-env.cssdb.org/blog/css-calc-v1.0.0/",
+   "source": "presetenvcssdb",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Upcoming changes to CSS Nesting",
+   "url": "https://preset-env.cssdb.org/blog/upcoming-changes-css-nesting/",
+   "source": "presetenvcssdb",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You can now use true and false in custom media queries!",
+   "url": "https://preset-env.cssdb.org/blog/can-use-boolean-custom-media/",
+   "source": "presetenvcssdb",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prettier 3.10: New Flow syntax, new JavaScript syntax, and new plugin powered by Yuku",
+   "url": "https://prettier.io/blog/2026/11/11/3.10.0",
+   "source": "prettier",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prettier 3.9: Major parser upgrades and Formatting improvements",
+   "url": "https://prettier.io/blog/2026/06/27/3.9.0",
+   "source": "prettier",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prettier 3.8: Support for Angular v21.1",
+   "url": "https://prettier.io/blog/2026/01/14/3.8.0",
+   "source": "prettier",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prettier 3.7: Improved formatting consistency and new plugin features!",
+   "url": "https://prettier.io/blog/2025/11/27/3.7.0",
+   "source": "prettier",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prettier 3.6: Experimental fast CLI and new OXC and Hermes plugins!",
+   "url": "https://prettier.io/blog/2025/06/23/3.6.0",
+   "source": "prettier",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prettier 3.5: New objectWrap option, experimentalOperatorPosition option and TS config file support!",
+   "url": "https://prettier.io/blog/2025/02/09/3.5.0",
+   "source": "prettier",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prettier 3.4: A lot of bug fixes",
+   "url": "https://prettier.io/blog/2024/11/26/3.4.0",
+   "source": "prettier",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prettier 3.3: New Flow features and a lot of bug fixes",
+   "url": "https://prettier.io/blog/2024/06/01/3.3.0",
+   "source": "prettier",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prettier 3.2: Support JSONC and Angular’s ICU expression",
+   "url": "https://prettier.io/blog/2024/01/12/3.2.0",
+   "source": "prettier",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prettier's CLI: A Performance Deep Dive",
+   "url": "https://prettier.io/blog/2023/11/30/cli-deep-dive",
+   "source": "prettier",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "$20k Bounty was Claimed!",
+   "url": "https://prettier.io/blog/2023/11/27/20k-bounty-was-claimed",
+   "source": "prettier",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prettier 3.1: New experimental ternaries formatting and Angular control flow syntax!",
+   "url": "https://prettier.io/blog/2023/11/13/3.1.0",
+   "source": "prettier",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A curious case of the ternaries",
+   "url": "https://prettier.io/blog/2023/11/13/curious-ternaries",
+   "source": "prettier",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prettier 3.0: Hello, ECMAScript Modules!",
+   "url": "https://prettier.io/blog/2023/07/05/3.0.0",
+   "source": "prettier",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prettier 2.8: improve --cache CLI option and TypeScript 4.9 satisfies operator!",
+   "url": "https://prettier.io/blog/2022/11/23/2.8.0",
+   "source": "prettier",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -93313,6 +93893,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "What every JavaScript developer should know about HTML and CSS",
+   "url": "https://pustelto.com/blog/what-every-javascript-developer-should-know-about-html/",
+   "source": "pustelto",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don't ignore Fieldset and Legend HTML elements",
+   "url": "https://pustelto.com/blog/dont-ignore-fieldset-and-legend-html-elements/",
+   "source": "pustelto",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tools & resources I use for front-end development",
+   "url": "https://pustelto.com/blog/tools-i-use/",
+   "source": "pustelto",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What have I learned when releasing Qjub",
+   "url": "https://pustelto.com/blog/what-have-i-learned-when-releasing-qjub/",
+   "source": "pustelto",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Optimizing CSS for faster page loads",
+   "url": "https://pustelto.com/blog/optimizing-css-for-faster-page-loads/",
+   "source": "pustelto",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What I read to stay up-to-date",
+   "url": "https://pustelto.com/blog/what-i-read-to-stay-up-to-date/",
+   "source": "pustelto",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What you might not know about sizing in CSS",
+   "url": "https://pustelto.com/blog/what_you_might_not_know_about_sizing_in_css/",
+   "source": "pustelto",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Freezing development of Qjub",
+   "url": "https://pustelto.com/blog/freezing-qjub/",
+   "source": "pustelto",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Real-world CSS vs. CSS-in-JS performance comparison",
+   "url": "https://pustelto.com/blog/css-vs-css-in-js-perf/",
+   "source": "pustelto",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How and why I've migrated from Netlify to Cloudflare",
+   "url": "https://pustelto.com/blog/how-and-why-i-have-migrated-from-netlify-to-cloudflare/",
+   "source": "pustelto",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 easy steps to improve accessibility.",
+   "url": "https://pustelto.com/blog/5-easy-steps-to-improve-accessibility/",
+   "source": "pustelto",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to (not) make a button",
+   "url": "https://pustelto.com/blog/how-to-make-a-button/",
+   "source": "pustelto",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I have switched from VS Code to VIM and I will never go back",
+   "url": "https://pustelto.com/blog/i-switched-to-vim/",
+   "source": "pustelto",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rust through the eyes of FE developer",
+   "url": "https://pustelto.com/blog/my-experience-with-rust/",
+   "source": "pustelto",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to implement Supabase auth in a browser extension",
+   "url": "https://pustelto.com/blog/supabase-auth/",
+   "source": "pustelto",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Python 3.16.0 alpha 2 is now available",
    "url": "https://blog.python.org/2026/11/python-3160-alpha-2-is-now-available/",
    "source": "pythonblog",
@@ -93593,6 +94293,206 @@
    "metric": "feed rank"
   },
   {
+   "title": "We learned this lesson already",
+   "url": "https://quii.dev/We_learned_this_lesson_already",
+   "source": "quii",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why \"Build vs Buy\" is the Wrong Question",
+   "url": "https://quii.dev/Why_Build_vs_Buy_is_the_Wrong_Question",
+   "source": "quii",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The weight of AI on engineers",
+   "url": "https://quii.dev/The_weight_of_AI_on_engineers",
+   "source": "quii",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Some nice feedback on LGWT",
+   "url": "https://quii.dev/Some_nice_feedback_on_LGWT",
+   "source": "quii",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learn Go with Tests reaches 20k stars",
+   "url": "https://quii.dev/Learn_Go_with_Tests_reaches_20k_stars",
+   "source": "quii",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Practical ways to shift QA left",
+   "url": "https://quii.dev/Practical_ways_to_shift_QA_left",
+   "source": "quii",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HTMX is the Future",
+   "url": "https://quii.dev/HTMX_is_the_Future",
+   "source": "quii",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to set a WIP limit",
+   "url": "https://quii.dev/How_to_set_a_WIP_limit",
+   "source": "quii",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My job advert for 2023",
+   "url": "https://quii.dev/My_job_advert_for_2023",
+   "source": "quii",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2022",
+   "url": "https://quii.dev/2022",
+   "source": "quii",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speaking at GopherconUK",
+   "url": "https://quii.dev/Speaking_at_GopherconUK",
+   "source": "quii",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reduce WIP by practicing trunk-based development, rather than pull requests",
+   "url": "https://quii.dev/Reduce_WIP_by_practicing_trunkbased_development_rather_than_pull_requests",
+   "source": "quii",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The TDD Thinking Hats",
+   "url": "https://quii.dev/The_TDD_Thinking_Hats",
+   "source": "quii",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Go Time - Giving TDD a Go",
+   "url": "https://quii.dev/Go_Time__Giving_TDD_a_Go",
+   "source": "quii",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Three Books",
+   "url": "https://quii.dev/The_Three_Books",
+   "source": "quii",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Firefox Local Files Theft - CVE-2019-11730",
+   "url": "https://quitten.github.io/Firefox/",
+   "source": "quittengithub",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "StackStorm - From Originull to RCE - CVE-2019-9580",
+   "url": "https://quitten.github.io/StackStorm/",
+   "source": "quittengithub",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Youtube - Open redirection",
+   "url": "https://quitten.github.io/Youtube/",
+   "source": "quittengithub",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to DoS 29% of the World Wide Websites - CVE-2018-6389",
+   "url": "https://quitten.github.io/Wordpress/",
+   "source": "quittengithub",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can you trust Facebook links?",
+   "url": "https://quitten.github.io/Facebook/",
+   "source": "quittengithub",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Autorize - automatic authorization enforcement detection extension for Burp Suite",
+   "url": "https://quitten.github.io/Autorize/",
+   "source": "quittengithub",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AliExpress XSS vulnerability - take over any seller account",
+   "url": "https://quitten.github.io/Aliexpress/",
+   "source": "quittengithub",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SoapUI Code Execution Vulnerability - CVE-2014-1202",
+   "url": "https://quitten.github.io/SoapUI/",
+   "source": "quittengithub",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gem in a box CSRF file upload - CVE-2017-14506",
+   "url": "https://quitten.github.io/GeminaboxCSRF/",
+   "source": "quittengithub",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gem in a box XSS vulnerability - CVE-2017-14506",
+   "url": "https://quitten.github.io/GeminaboxXSS/",
+   "source": "quittengithub",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Making features generic in CSS",
    "url": "https://rachelandrew.co.uk/archives/2026/11/02/making-features-generic-in-css/",
    "source": "rachelandrewco",
@@ -93669,6 +94569,46 @@
    "url": "https://rachelandrew.co.uk/archives/2026/05/31/joining-the-atmosphere/",
    "source": "rachelandrewco",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web accessibility smoke testing",
+   "url": "https://racheleditullio.com/blog/2026/10/web-accessibility-smoke-testing/",
+   "source": "racheleditullio",
+   "rank": 1,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AT for iPhone: Full Keyboard Access",
+   "url": "https://racheleditullio.com/blog/2026/05/at-for-iphone-full-keyboard-access/",
+   "source": "racheleditullio",
+   "rank": 2,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AT for iPhone: Voice Control speech input",
+   "url": "https://racheleditullio.com/blog/2026/05/at-for-iphone-voice-control-speech-input/",
+   "source": "racheleditullio",
+   "rank": 3,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AT for iPhone: VoiceOver screen reader",
+   "url": "https://racheleditullio.com/blog/2026/05/at-for-iphone-voiceover-screen-reader/",
+   "source": "racheleditullio",
+   "rank": 4,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "4 iOS display settings to check your app with",
+   "url": "https://racheleditullio.com/blog/2026/05/4-ios-display-settings-to-check-your-app-with/",
+   "source": "racheleditullio",
+   "rank": 5,
    "score": 1,
    "metric": "feed rank"
   },
@@ -94593,6 +95533,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "iPad Pro秒变Mac mini显示器教程",
+   "url": "https://github.com/superleeyom/blog/issues/63",
+   "source": "rawgithubusercontent",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我的老婆",
+   "url": "https://github.com/superleeyom/blog/issues/62",
+   "source": "rawgithubusercontent",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我的 Apple 设备",
+   "url": "https://github.com/superleeyom/blog/issues/61",
+   "source": "rawgithubusercontent",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2024 装修开支清单",
+   "url": "https://github.com/superleeyom/blog/issues/60",
+   "source": "rawgithubusercontent",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "8款高效又好用的安卓 TV App 推荐",
+   "url": "https://github.com/superleeyom/blog/issues/59",
+   "source": "rawgithubusercontent",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2024香港银行卡办卡之旅",
+   "url": "https://github.com/superleeyom/blog/issues/58",
+   "source": "rawgithubusercontent",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2024年个人周报",
+   "url": "https://github.com/superleeyom/blog/issues/57",
+   "source": "rawgithubusercontent",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Postman如何配置动态端口和IP",
+   "url": "https://github.com/superleeyom/blog/issues/56",
+   "source": "rawgithubusercontent",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2023上海之旅",
+   "url": "https://github.com/superleeyom/blog/issues/55",
+   "source": "rawgithubusercontent",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我的跑步数据流",
+   "url": "https://github.com/superleeyom/blog/issues/54",
+   "source": "rawgithubusercontent",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2022年终总结之我的买房经历",
+   "url": "https://github.com/superleeyom/blog/issues/53",
+   "source": "rawgithubusercontent",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2023年个人周报",
+   "url": "https://github.com/superleeyom/blog/issues/52",
+   "source": "rawgithubusercontent",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "解决 IDEA 因为 Clash 代理问题引起的疑难杂症",
+   "url": "https://github.com/superleeyom/blog/issues/51",
+   "source": "rawgithubusercontent",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[笔记]神的九十亿个名字",
+   "url": "https://github.com/superleeyom/blog/issues/50",
+   "source": "rawgithubusercontent",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[笔记]盐糖脂：食品巨头是如何操纵我们的",
+   "url": "https://github.com/superleeyom/blog/issues/49",
+   "source": "rawgithubusercontent",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "A Quick Demo of Gemini's Decisions API",
    "url": "https://www.raymondcamden.com/2026/11/14/a-quick-demo-of-geminis-decisions-api",
    "source": "raymondcamden",
@@ -94993,6 +96053,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Web Design Trends 2026",
+   "url": "https://redonion.se/en/web-design-trends-2026/",
+   "source": "redonion",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Design Trends 2025",
+   "url": "https://redonion.se/en/web-design-trends-2025/",
+   "source": "redonion",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Get ready for European Accessibility Act, EAA",
+   "url": "https://redonion.se/en/get-ready-for-european-accessibility-act-eaa/",
+   "source": "redonion",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web design trends 2024",
+   "url": "https://redonion.se/en/web-design-trends-2024/",
+   "source": "redonion",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s to know about Baseline",
+   "url": "https://redonion.se/en/whats-to-know-about-baseline/",
+   "source": "redonion",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Design Trends 2023",
+   "url": "https://redonion.se/en/web-design-trends-2023/",
+   "source": "redonion",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Design Trends 2022",
+   "url": "https://redonion.se/en/web-design-trends-2022/",
+   "source": "redonion",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "All about webP images",
+   "url": "https://redonion.se/en/all-about-webp-images-2/",
+   "source": "redonion",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Design Trends 2021",
+   "url": "https://redonion.se/en/web-design-trends-2021/",
+   "source": "redonion",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Setting up a CMS for Success: Effective CMS Editing",
+   "url": "https://redonion.se/en/setting-up-a-cms-for-success-effective-cms-editing/",
+   "source": "redonion",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "The Memory Police [book]",
    "url": "https://remysharp.com/books/2026/the-memory-police",
    "source": "remysharp",
@@ -95388,6 +96528,126 @@
    "title": "Labor of Division (Episode III): Faster Unsigned Division by Constants",
    "url": "http://ridiculousfish.com/blog/posts/labor-of-division-episode-iii.html",
    "source": "ridiculousfish",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A11y: Accessibility Testing",
+   "url": "https://rightbadcode.com/a11y-accessibility-testing/",
+   "source": "rightbadcode",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Accessibility Review Process",
+   "url": "https://rightbadcode.com/a11y-review-process/",
+   "source": "rightbadcode",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility Certification and Training",
+   "url": "https://rightbadcode.com/accessibility-certification-and-training/",
+   "source": "rightbadcode",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility Conformance Reports: Setting Expectations",
+   "url": "https://rightbadcode.com/accessibility-conformance-reports-setting-expectations/",
+   "source": "rightbadcode",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessible Navigation",
+   "url": "https://rightbadcode.com/accessible-navigation/",
+   "source": "rightbadcode",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Aligning Jakob Nielsen's 10 Usability Heuristics with the WCAG 2.2",
+   "url": "https://rightbadcode.com/aligning-jakob-nielsens-10-usability-heuristics-with-the-wcag-22/",
+   "source": "rightbadcode",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Aria-labels and Privacy: A Word of Caution",
+   "url": "https://rightbadcode.com/aria-labels-and-privacy-a-word-of-caution/",
+   "source": "rightbadcode",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Avoid Easy Aria Errors",
+   "url": "https://rightbadcode.com/avoid-easy-aria-errors/",
+   "source": "rightbadcode",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bad Form",
+   "url": "https://rightbadcode.com/bad-form/",
+   "source": "rightbadcode",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can ChatGPT build an Accessible Menu?",
+   "url": "https://rightbadcode.com/can-chatgpt-build-an-accessible-menu/",
+   "source": "rightbadcode",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Clear and Consistent UI Improves UX",
+   "url": "https://rightbadcode.com/clear-and-consistent-ui-improves-ux/",
+   "source": "rightbadcode",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Explaining Design Systems to a Golfer",
+   "url": "https://rightbadcode.com/explaining-design-systems-to-a-golfer/",
+   "source": "rightbadcode",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I Broke the Disabled Button",
+   "url": "https://rightbadcode.com/i-broke-the-disabled-button/",
+   "source": "rightbadcode",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Icon Buttons Need Tooltip Labels",
+   "url": "https://rightbadcode.com/icon-buttons-need-tooltip-labels/",
+   "source": "rightbadcode",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mapping the Revised 508/255 ICT Accessibility Standards to the WCAG 2.2",
+   "url": "https://rightbadcode.com/ict-standards-wcag22-mapping/",
+   "source": "rightbadcode",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -95929,6 +97189,246 @@
    "metric": "feed rank"
   },
   {
+   "title": "Looking elsewhere",
+   "url": "http://robbowen.digital/wrote-about/looking-elsewhere/",
+   "source": "robbowen",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting something from Nothing",
+   "url": "http://robbowen.digital/wrote-about/getting-something-from-nothing/",
+   "source": "robbowen",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "It's OK to abandon your side-project",
+   "url": "http://robbowen.digital/wrote-about/abandoned-side-projects/",
+   "source": "robbowen",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2023 Wrapped",
+   "url": "http://robbowen.digital/wrote-about/2023-wrapped/",
+   "source": "robbowen",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Locking scroll with :has()",
+   "url": "http://robbowen.digital/wrote-about/locking-scroll-with-has/",
+   "source": "robbowen",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HTML is like a camera",
+   "url": "http://robbowen.digital/wrote-about/HTML-is-like-a-camera/",
+   "source": "robbowen",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Legacy code",
+   "url": "http://robbowen.digital/wrote-about/legacy-code/",
+   "source": "robbowen",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hand-thrown frontends",
+   "url": "http://robbowen.digital/wrote-about/hand-thrown-frontends/",
+   "source": "robbowen",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "So long, 2022",
+   "url": "http://robbowen.digital/wrote-about/so-long-2022/",
+   "source": "robbowen",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Jammies 2022",
+   "url": "http://robbowen.digital/wrote-about/the-jammies-2022/",
+   "source": "robbowen",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Holograms, light-leaks and how to build CSS-only shaders",
+   "url": "http://robbowen.digital/wrote-about/css-blend-mode-shaders/",
+   "source": "robbowen",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mind your language",
+   "url": "http://robbowen.digital/wrote-about/minding-your-language/",
+   "source": "robbowen",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting started with Go",
+   "url": "http://robbowen.digital/wrote-about/getting-started-with-go/",
+   "source": "robbowen",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The year that was(n't)",
+   "url": "http://robbowen.digital/wrote-about/hindsight-is-2020/",
+   "source": "robbowen",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Rekishi",
+   "url": "http://robbowen.digital/wrote-about/introducing-rekishi/",
+   "source": "robbowen",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I Built My Mobile Second Brain",
+   "url": "https://robdodson.me/posts/how-i-built-my-mobile-second-brain/",
+   "source": "robdodson",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Second Brain Never Worked. Then I Gave It a Gardener.",
+   "url": "https://robdodson.me/posts/i-gave-my-second-brain-a-gardener/",
+   "source": "robdodson",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your AI Chatbot Is a Gatekeeper",
+   "url": "https://robdodson.me/posts/your-ai-chatbot-is-a-gatekeeper/",
+   "source": "robdodson",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Clawdbot's Missing Layers",
+   "url": "https://robdodson.me/posts/clawdbots-missing-layers/",
+   "source": "robdodson",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Joining Voltus to work on climate!",
+   "url": "https://robdodson.me/posts/joining-voltus/",
+   "source": "robdodson",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I'm turning my home into a virtual power plant",
+   "url": "https://robdodson.me/posts/your-home-is-a-virtual-power-plant/",
+   "source": "robdodson",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding a job in climate as a front-end engineer",
+   "url": "https://robdodson.me/posts/finding-a-job-in-climate/",
+   "source": "robdodson",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I work",
+   "url": "https://robdodson.me/posts/how-i-work/",
+   "source": "robdodson",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Command palettes for the web",
+   "url": "https://robdodson.me/posts/command-palettes/",
+   "source": "robdodson",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Easily upgrade Ghost 0.x to 2.0",
+   "url": "https://robdodson.me/posts/easily-upgrade-ghost-0-x-to-2-0/",
+   "source": "robdodson",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Which elements support shadow DOM?",
+   "url": "https://robdodson.me/posts/which-elements-support-shadow-dom/",
+   "source": "robdodson",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why you can't test a screen reader (yet)!",
+   "url": "https://robdodson.me/posts/why-you-cant-test-a-screen-reader-yet/",
+   "source": "robdodson",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hello, 2018!",
+   "url": "https://robdodson.me/posts/hello-2018/",
+   "source": "robdodson",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The future of accessibility for custom elements",
+   "url": "https://robdodson.me/posts/the-future-of-accessibility-for-custom-elements/",
+   "source": "robdodson",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to use Polymer with Webpack",
+   "url": "https://robdodson.me/posts/how-to-use-polymer-with-webpack/",
+   "source": "robdodson",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "diceomatic: a DSL for making children's dice games",
    "url": "https://robertheaton.com/diceomatic/",
    "source": "robertheaton",
@@ -96004,6 +97504,86 @@
    "title": "How to pass a coding interview with me",
    "url": "https://robertheaton.com/interview/",
    "source": "robertheaton",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Aotea Track (Great Barrier Island) 2026",
+   "url": "https://robert.ocallahan.org/2026/11/aotea-track.html",
+   "source": "robertocallahan",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Auckland Half Marathon 2026",
+   "url": "https://robert.ocallahan.org/2026/11/half-marathon.html",
+   "source": "robertocallahan",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wangapeka Track",
+   "url": "https://robert.ocallahan.org/2026/10/wangapeka.html",
+   "source": "robertocallahan",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What New Zealand should do about AI",
+   "url": "https://robert.ocallahan.org/2026/10/ai-policy-nz.html",
+   "source": "robertocallahan",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Abel Tasman 2026",
+   "url": "https://robert.ocallahan.org/2026/10/abel-tasman.html",
+   "source": "robertocallahan",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Goodbye Google",
+   "url": "https://robert.ocallahan.org/2026/09/goodbye-google.html",
+   "source": "robertocallahan",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Meta-Meditation On The Lord’s Prayer (And DNA)",
+   "url": "https://robert.ocallahan.org/2026/09/meta-lords-prayer-dna.html",
+   "source": "robertocallahan",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Meditation On The Lord’s Prayer",
+   "url": "https://robert.ocallahan.org/2026/09/lords-prayer.html",
+   "source": "robertocallahan",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Queenstown Walks",
+   "url": "https://robert.ocallahan.org/2026/08/queenstown-walks.html",
+   "source": "robertocallahan",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughts on ‘Pacing The Frontier’",
+   "url": "https://robert.ocallahan.org/2026/07/pacing-the-frontier.html",
+   "source": "robertocallahan",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -96249,6 +97829,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Adjust font size with CSS custom properties",
+   "url": "https://romaricpascal.is/posts/adjust-font-size-css-custom-properties",
+   "source": "romaricpascal",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hover effects with CSS custom properties",
+   "url": "https://romaricpascal.is/posts/hover-effects-css-custom-properties",
+   "source": "romaricpascal",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Composing box shadows with custom properties",
+   "url": "https://romaricpascal.is/posts/composing-box-shadows-with-custom-properties",
+   "source": "romaricpascal",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Revisiting the language hints",
+   "url": "https://romaricpascal.is/posts/revisiting-language-hints",
+   "source": "romaricpascal",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Once upon a time… an interaction in the browser",
+   "url": "https://romaricpascal.is/posts/front-end-interaction",
+   "source": "romaricpascal",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "One last step",
+   "url": "https://romaricpascal.is/posts/one-last-step",
+   "source": "romaricpascal",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Styling the list of posts",
+   "url": "https://romaricpascal.is/posts/styling-the-article-list",
+   "source": "romaricpascal",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Listing posts",
+   "url": "https://romaricpascal.is/posts/listing-posts",
+   "source": "romaricpascal",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Internationalising dates with JavaScript",
+   "url": "https://romaricpascal.is/posts/internationalising-dates",
+   "source": "romaricpascal",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rendering posts differently",
+   "url": "https://romaricpascal.is/posts/rendering-posts-differently",
+   "source": "romaricpascal",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The last stretch",
+   "url": "https://romaricpascal.is/posts/the-last-stretch",
+   "source": "romaricpascal",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing document's title changes with aria-live",
+   "url": "https://romaricpascal.is/posts/title-element-aria-live",
+   "source": "romaricpascal",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Typing French text with an English keyboard on Ubuntu",
+   "url": "https://romaricpascal.is/posts/french-text-english-keyboard-ubuntu",
+   "source": "romaricpascal",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Revisiting the language switcher - Linking to the right place",
+   "url": "https://romaricpascal.is/posts/revisiting-the-language-switcher-linking",
+   "source": "romaricpascal",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Revisiting the language switcher - Indexing content",
+   "url": "https://romaricpascal.is/posts/revisiting-the-language-switcher-indexing-content",
+   "source": "romaricpascal",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Dissecting the Apple M1 GPU, the end",
    "url": "https://alyssarosenzweig.ca/blog/asahi-gpu-part-n.html",
    "source": "rosenzweig",
@@ -96357,6 +98057,126 @@
    "url": "https://roytang.net/",
    "source": "roytang",
    "rank": 1,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fitting Some Files Through A Stdout-Shaped Hole",
+   "url": "http://rtpg.co/2026/02/03/fitting-some-files-through-a-stdout-shaped-hole/",
+   "source": "rtpg",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Checking Out CPython 3.14's remote debugging protocol",
+   "url": "http://rtpg.co/2025/06/28/checking-out-sys-remote-exec/",
+   "source": "rtpg",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Designing Code For Forward Progress",
+   "url": "http://rtpg.co/2025/01/10/designing-for-forward-progress/",
+   "source": "rtpg",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cowboy Debugging Python Memory Leaks",
+   "url": "http://rtpg.co/2025/01/01/cowboy-coding-memory/",
+   "source": "rtpg",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Differing Values In A Team Are Costly",
+   "url": "http://rtpg.co/2024/08/31/cost-of-a-values-gap/",
+   "source": "rtpg",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Named Arguments In Rust, If You Want Them",
+   "url": "http://rtpg.co/2024/07/22/rust-named-arguments/",
+   "source": "rtpg",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DB Indexes Do Not Magically Compose",
+   "url": "http://rtpg.co/2024/04/14/db-indexes-do-not-magically-compose/",
+   "source": "rtpg",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Type Unions Don't Always Compose Well",
+   "url": "http://rtpg.co/2024/03/11/union-types-do-not-always-compose-well/",
+   "source": "rtpg",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trying To Understand Copilot's Type Spaghetti",
+   "url": "http://rtpg.co/2024/03/07/parsing-copilots-type-spaghetti/",
+   "source": "rtpg",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Property Testing Stateful Code in Rust",
+   "url": "http://rtpg.co/2024/02/02/property-testing-with-imperative-rust/",
+   "source": "rtpg",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding And Debugging A Nushell Performance Issue",
+   "url": "http://rtpg.co/2023/12/13/debugging-nu/",
+   "source": "rtpg",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Feature Flags In Depth",
+   "url": "http://rtpg.co/2023/11/15/feature-flags-in-depth/",
+   "source": "rtpg",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Changing Node Version Requirements Should Not Bump Your Major Version",
+   "url": "http://rtpg.co/2023/09/27/avoiding-major-version-bumps-for-node/",
+   "source": "rtpg",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "It's All Just Debian",
+   "url": "http://rtpg.co/2023/08/27/its-all-just-debian/",
+   "source": "rtpg",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How To Adopt Mypy On Bigger Projects",
+   "url": "http://rtpg.co/2023/03/07/how-to-adopt-mypy-on-bigger-projects.html",
+   "source": "rtpg",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -96797,6 +98617,286 @@
    "url": "https://rushter.com/blog/pypi-packages/",
    "source": "rushter",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Breaking Up with Long Tasks or: how I learned to group loops and wield the yield",
+   "url": "https://rviscomi.dev/2025/01/breaking-up-with-long-tasks/",
+   "source": "rviscomi",
+   "rank": 1,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A faster web in 2024",
+   "url": "https://rviscomi.dev/2023/11/a-faster-web-in-2024/",
+   "source": "rviscomi",
+   "rank": 2,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You probably don’t need http-equiv meta tags",
+   "url": "https://rviscomi.dev/2023/07/you-probably-dont-need-http-equiv-meta-tags/",
+   "source": "rviscomi",
+   "rank": 3,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Origin trials and tribulations",
+   "url": "https://rviscomi.dev/2023/07/origin-trials-and-tribulations/",
+   "source": "rviscomi",
+   "rank": 4,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Querying parsed HTML in BigQuery",
+   "url": "https://rviscomi.dev/2023/05/querying-parsed-html-in-bigquery/",
+   "source": "rviscomi",
+   "rank": 5,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Style Review",
+   "url": "https://ryanmulligan.dev/blog/style-review/",
+   "source": "ryanmulligan",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Migrating to Eleventy",
+   "url": "https://ryanmulligan.dev/blog/migrating-to-11ty/",
+   "source": "ryanmulligan",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Horizontal Scroll List and Custom Keyboard Navigation",
+   "url": "https://ryanmulligan.dev/blog/project-keyboard-navigation/",
+   "source": "ryanmulligan",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Animating with the Flip Plugin for GSAP",
+   "url": "https://ryanmulligan.dev/blog/gsap-flip-cart/",
+   "source": "ryanmulligan",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Website Themes and Color Schemes",
+   "url": "https://ryanmulligan.dev/blog/themes-and-schemes/",
+   "source": "ryanmulligan",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Horizontal Scrolling in a Centered Max-Width Container",
+   "url": "https://ryanmulligan.dev/blog/x-scrolling-centered-max-width-container/",
+   "source": "ryanmulligan",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inverted Media Queries and Breakpoints",
+   "url": "https://ryanmulligan.dev/blog/invert-media-queries/",
+   "source": "ryanmulligan",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Infinite Marquee",
+   "url": "https://ryanmulligan.dev/blog/css-marquee/",
+   "source": "ryanmulligan",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Layout Breakouts with CSS Grid",
+   "url": "https://ryanmulligan.dev/blog/layout-breakouts/",
+   "source": "ryanmulligan",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating Time",
+   "url": "https://ryanmulligan.dev/blog/creating-time/",
+   "source": "ryanmulligan",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS Grid Gap Behavior with Hidden Elements",
+   "url": "https://ryanmulligan.dev/blog/grid-gap/",
+   "source": "ryanmulligan",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sticky Page Header Shadow on Scroll",
+   "url": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+   "source": "ryanmulligan",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Full-bleed Table Scrolling on Narrow Viewports",
+   "url": "https://ryanmulligan.dev/blog/full-bleed-table-scrolling/",
+   "source": "ryanmulligan",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS Custom Property Fallbacks in Shorthand Values",
+   "url": "https://ryanmulligan.dev/blog/css-custom-prop-fallbacks/",
+   "source": "ryanmulligan",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Starting Exploration of Scroll-driven Animations in CSS",
+   "url": "https://ryanmulligan.dev/blog/scroll-driven-animations/",
+   "source": "ryanmulligan",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things I Like",
+   "url": "https://ryantrimble.com/blog/things-i-like/",
+   "source": "ryantrimble",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Taking things into my own hands, Part 2: Electric Boogaloo",
+   "url": "https://ryantrimble.com/blog/taking-things-into-my-own-hands-part-2/",
+   "source": "ryantrimble",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Uploading Some Old Posts",
+   "url": "https://ryantrimble.com/blog/reuploading-old-posts/",
+   "source": "ryantrimble",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Strong Interests Profile",
+   "url": "https://ryantrimble.com/blog/my-strong-interests-profile/",
+   "source": "ryantrimble",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Troubleshooting my emotions",
+   "url": "https://ryantrimble.com/blog/troubleshooting-my-emotions/",
+   "source": "ryantrimble",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Taking things into my own hands",
+   "url": "https://ryantrimble.com/blog/taking-things-into-my-own-hands/",
+   "source": "ryantrimble",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly Roundup #39",
+   "url": "https://ryantrimble.com/blog/weekly-roundup-39/",
+   "source": "ryantrimble",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building with AI: Work Hackathon",
+   "url": "https://ryantrimble.com/blog/building-with-ai-work-hackathon/",
+   "source": "ryantrimble",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly Roundup #38",
+   "url": "https://ryantrimble.com/blog/weekly-roundup-38/",
+   "source": "ryantrimble",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly Roundup #37",
+   "url": "https://ryantrimble.com/blog/weekly-roundup-37/",
+   "source": "ryantrimble",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly Roundup #36",
+   "url": "https://ryantrimble.com/blog/weekly-roundup-36/",
+   "source": "ryantrimble",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly Roundup #35",
+   "url": "https://ryantrimble.com/blog/weekly-roundup-35/",
+   "source": "ryantrimble",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Yearly Roundup #1",
+   "url": "https://ryantrimble.com/blog/yearly-roundup-1/",
+   "source": "ryantrimble",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly Roundup #34",
+   "url": "https://ryantrimble.com/blog/weekly-roundup-34/",
+   "source": "ryantrimble",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly Roundup #33",
+   "url": "https://ryantrimble.com/blog/weekly-roundup-33/",
+   "source": "ryantrimble",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
