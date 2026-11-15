@@ -143,7 +143,8 @@ taxonomy as `topics.html` — niche blogs can embed just their beat),
 `?mode=discussed` renders the most-discussed items leaderboard (peak 💬 count).
 `?mode=crossovers` renders stories that broke containment — same URL on 2+ sources.
 `?mode=new` renders items first-seen on today's boards (from new.json).
-`?mode=domain`、`mode=sources` renders the top domains card (`&d=host` for a single domain).
+`?mode=domain` renders the top domains card (`&d=host` for a single domain).
+`?mode=sources` renders the all-sources stats card (items / unique / one-day%).
 `?theme=light` (or `dark`) overrides the card color scheme.
 
 ## Terminal
