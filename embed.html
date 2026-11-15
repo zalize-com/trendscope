@@ -282,6 +282,17 @@ if (MODE === "watch") {
       || `<li id="err">no matches today</li>`;
   }).catch(() => { document.getElementById("err").textContent = "watch data unavailable"; });
 } else
+if (MODE === "gone") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/gone.html";
+  fetch("docs/api/gone.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    document.getElementById("date").textContent = `dropped: ${d.previous_snapshot} → ${d.latest_snapshot}`;
+    document.getElementById("list").innerHTML = (d.items || []).slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source}</span></span>
+        <span class="score">was #${e.rank ?? "—"}</span></li>`).join("")
+      || `<li id="err">nothing dropped</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "gone data unavailable"; });
+} else
 if (MODE === "veterans") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/oldest.html";
   fetch("docs/api/streaks.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
