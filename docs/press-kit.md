@@ -22,7 +22,9 @@ One-pager for anyone writing about or linking to this project.
 | Ask HN span | Feb 2007 → now, 2,378 rows | `data/ask-hn-monthly.csv` |
 | Hiring threads | Nov 2010 → now, 528 rows | `data/hiring-monthly.csv` |
 | Free tools | 72 | `tools/` |
-| API endpoints | 8+ | `docs/api.md` |
+| API endpoints | 18 JSON/CSV lines | `docs/api.md` |
+| Embed modes | 18 (iframe card) + live gallery | `embed.html` / `embeds.html` |
+| Static pages | 47 | sitemap.xml |
 
 ## What makes it different
 
