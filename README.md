@@ -97,6 +97,11 @@ curl -s https://raw.githubusercontent.com/zalize-com/trendscope/main/data/latest
 See [`docs/data-dictionary.md`](docs/data-dictionary.md). Schema:
 `source, rank, title, url, score, metric, comments, author, tags, captured_at`.
 
+## Contributing a source
+
+New public endpoints welcome — see [docs/adding-a-source.md](docs/adding-a-source.md)
+(one fetcher + five lines of wiring, test instructions included).
+
 ## Provenance & compliance
 
 - Only public, login-free endpoints; ~1 req/s or less per source; no anti-bot circumvention.
