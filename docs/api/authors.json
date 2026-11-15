@@ -1,0 +1,759 @@
+{
+ "generated_at": "2026-11-15T10:48:13.609230+00:00",
+ "latest_snapshot": "2026-11-15",
+ "total": 308,
+ "authors": [
+  {
+   "author": "mjs06",
+   "days_on_board": 4,
+   "items": 5,
+   "sources": [
+    "ask_hn"
+   ],
+   "top_hit": {
+    "title": "Ask HN: Advice for those who want to build stuff but don't know where to start",
+    "url": "https://news.ycombinator.com/item?id=50486909",
+    "score": 7,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "casi",
+   "days_on_board": 3,
+   "items": 3,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Why get an expensive Pi when I have an old phone?",
+    "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
+    "score": 533,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "armcat",
+   "days_on_board": 3,
+   "items": 3,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Lovable apps expose passport details and more than 200K private messages",
+    "url": "https://www.crissyfield.de/research/lovable-en/",
+    "score": 743,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "DeepLogin",
+   "days_on_board": 3,
+   "items": 3,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Running a law firm on Free software",
+    "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
+    "score": 310,
+    "metric": "points",
+    "date": "2026-11-07"
+   }
+  },
+  {
+   "author": "ben",
+   "days_on_board": 2,
+   "items": 6,
+   "sources": [
+    "devto"
+   ],
+   "top_hit": {
+    "title": "Our Looping Factory Cut DEV Page Load Time by 75% and Counting",
+    "url": "https://dev.to/dailycontext/our-looping-factory-cut-dev-page-load-time-by-75-and-counting-1hnf",
+    "score": 142,
+    "metric": "reactions",
+    "date": "2026-11-14"
+   }
+  },
+  {
+   "author": "hemapriya_kanagala",
+   "days_on_board": 2,
+   "items": 4,
+   "sources": [
+    "devto"
+   ],
+   "top_hit": {
+    "title": "Dev Opportunity Radar #25: $120K+ Atlassian Hackathon, MLH Fellowship, and INSEAD AI Founder Sprint",
+    "url": "https://dev.to/devengers/dev-opportunity-radar-25-120k-atlassian-hackathon-mlh-fellowship-and-insead-ai-founder-sprint-m96",
+    "score": 89,
+    "metric": "reactions",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "nyaomaru",
+   "days_on_board": 2,
+   "items": 3,
+   "sources": [
+    "devto"
+   ],
+   "top_hit": {
+    "title": "Necoz Has a New Home on DEV! 🐈🎉",
+    "url": "https://dev.to/necoz/necoz-has-a-new-home-on-dev-3454",
+    "score": 179,
+    "metric": "reactions",
+    "date": "2026-11-14"
+   }
+  },
+  {
+   "author": "gslin",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Tech Companies Are Trying to Shift the Concept of Privacy (Again)",
+    "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+    "score": 339,
+    "metric": "points",
+    "date": "2026-11-14"
+   }
+  },
+  {
+   "author": "mrkn1",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "KDE: The documentary [video]",
+    "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
+    "score": 430,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "rbanffy",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "PyPI's redesigned project pages with clearer security signals are now live",
+    "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
+    "score": 225,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "acossta",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Advancing science and engineering with Antigravity's /teamwork",
+    "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+    "score": 188,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "snipedbywifi",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
+    "url": "https://gitlab.com/snipedbywifi/terminactory",
+    "score": 151,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "VaibhaavTiwari",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
+    "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
+    "score": 213,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "umerf",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "A family tree of software job titles",
+    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+    "score": 265,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "torutofu",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Testing a trash can Faraday cage",
+    "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
+    "score": 72,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "francistrdev",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "devto"
+   ],
+   "top_hit": {
+    "title": "How do you truly stand out in Tech?",
+    "url": "https://dev.to/francistrdev/how-do-you-truly-stand-out-in-tech-478a",
+    "score": 202,
+    "metric": "reactions",
+    "date": "2026-11-14"
+   }
+  },
+  {
+   "author": "maame-codes",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "devto"
+   ],
+   "top_hit": {
+    "title": "How did you end up in tech, and are you staying?",
+    "url": "https://dev.to/maame-codes/how-did-you-end-up-in-tech-and-are-you-staying-4l9b",
+    "score": 161,
+    "metric": "reactions",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "sylwia-lask",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "devto"
+   ],
+   "top_hit": {
+    "title": "MCP Is Dead Simple. And That's Exactly the Problem",
+    "url": "https://dev.to/sylwia-lask/mcp-is-dead-simple-and-thats-exactly-the-problem-5811",
+    "score": 161,
+    "metric": "reactions",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "dj29",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "devto"
+   ],
+   "top_hit": {
+    "title": "The C Trilogy: How Dennis Ritchie, Bjarne Stroustrup, and Anders Hejlsberg Built the Modern World 🏛️",
+    "url": "https://dev.to/devengers/the-c-trilogy-how-dennis-ritchie-bjarne-stroustrup-and-anders-hejlsberg-built-the-modern-world-1onp",
+    "score": 154,
+    "metric": "reactions",
+    "date": "2026-11-14"
+   }
+  },
+  {
+   "author": "xulingfeng",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "devto"
+   ],
+   "top_hit": {
+    "title": "We Keep Hearing About AI Productivity. The QA Group Chat Told a Different Story.",
+    "url": "https://dev.to/xulingfeng/we-keep-hearing-about-ai-productivity-the-qa-group-chat-told-a-different-story-2nma",
+    "score": 110,
+    "metric": "reactions",
+    "date": "2026-11-14"
+   }
+  },
+  {
+   "author": "star123",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "devto"
+   ],
+   "top_hit": {
+    "title": "A 10 years old developer who has become a DEV.to Trusted Member! 😱",
+    "url": "https://dev.to/necoz/a-10-years-old-developer-who-has-become-a-devto-trusted-member-49c8",
+    "score": 95,
+    "metric": "reactions",
+    "date": "2026-11-14"
+   }
+  },
+  {
+   "author": "hiper2d",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "devto"
+   ],
+   "top_hit": {
+    "title": "How much does it cost to run a text game with LLMs",
+    "url": "https://dev.to/hiper2d/how-much-does-it-cost-to-run-a-text-game-with-llms-57o7",
+    "score": 85,
+    "metric": "reactions",
+    "date": "2026-11-14"
+   }
+  },
+  {
+   "author": "heyitsjem",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "devto"
+   ],
+   "top_hit": {
+    "title": "Congrats to the Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine Winners!",
+    "url": "https://dev.to/devteam/congrats-to-the-hacktoberfest-open-source-ai-challenge-week-4-ghost-in-the-machine-winners-nok",
+    "score": 86,
+    "metric": "reactions",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "dannwaneri",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "devto"
+   ],
+   "top_hit": {
+    "title": "One Year on DEV.to, 109 Articles Later",
+    "url": "https://dev.to/dannwaneri/one-year-on-devto-109-articles-later-p31",
+    "score": 67,
+    "metric": "reactions",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "huamidev",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "github_trending"
+   ],
+   "top_hit": {
+    "title": "huamidev/GestaltX",
+    "url": "https://github.com/huamidev/GestaltX",
+    "score": 7616,
+    "metric": "stars",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "Kianuni",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "github_trending"
+   ],
+   "top_hit": {
+    "title": "Kianuni/Erosion-CN",
+    "url": "https://github.com/Kianuni/Erosion-CN",
+    "score": 2076,
+    "metric": "stars",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "apex-compute",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "github_trending"
+   ],
+   "top_hit": {
+    "title": "apex-compute/ANR",
+    "url": "https://github.com/apex-compute/ANR",
+    "score": 1878,
+    "metric": "stars",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "deepseek-ai",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "github_trending"
+   ],
+   "top_hit": {
+    "title": "deepseek-ai/chat-demo",
+    "url": "https://github.com/deepseek-ai/chat-demo",
+    "score": 1884,
+    "metric": "stars",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "HybridRobotics",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "github_trending"
+   ],
+   "top_hit": {
+    "title": "HybridRobotics/supermimic",
+    "url": "https://github.com/HybridRobotics/supermimic",
+    "score": 1512,
+    "metric": "stars",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "FrigadeHQ",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "github_trending"
+   ],
+   "top_hit": {
+    "title": "FrigadeHQ/yogurt",
+    "url": "https://github.com/FrigadeHQ/yogurt",
+    "score": 1520,
+    "metric": "stars",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "agentes-chat",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "github_trending"
+   ],
+   "top_hit": {
+    "title": "agentes-chat/agentes-chat",
+    "url": "https://github.com/agentes-chat/agentes-chat",
+    "score": 1416,
+    "metric": "stars",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "HolyArrs",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "github_trending"
+   ],
+   "top_hit": {
+    "title": "HolyArrs/HolyArrs",
+    "url": "https://github.com/HolyArrs/HolyArrs",
+    "score": 1200,
+    "metric": "stars",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "DevedevT",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "github_trending"
+   ],
+   "top_hit": {
+    "title": "DevedevT/FFmpeg-GUI-Editor-Windows",
+    "url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows",
+    "score": 1051,
+    "metric": "stars",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "adriadam10",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "github_trending"
+   ],
+   "top_hit": {
+    "title": "adriadam10/mkw-recomp",
+    "url": "https://github.com/adriadam10/mkw-recomp",
+    "score": 970,
+    "metric": "stars",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "kolbicz",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "github_trending"
+   ],
+   "top_hit": {
+    "title": "kolbicz/WQFiles",
+    "url": "https://github.com/kolbicz/WQFiles",
+    "score": 869,
+    "metric": "stars",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "alexeyw",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "github_trending"
+   ],
+   "top_hit": {
+    "title": "alexeyw/lot-map",
+    "url": "https://github.com/alexeyw/lot-map",
+    "score": 840,
+    "metric": "stars",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "serveroshq",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "github_trending"
+   ],
+   "top_hit": {
+    "title": "serveroshq/panel",
+    "url": "https://github.com/serveroshq/panel",
+    "score": 816,
+    "metric": "stars",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "JDhruv14",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "github_trending"
+   ],
+   "top_hit": {
+    "title": "JDhruv14/line-art-animation",
+    "url": "https://github.com/JDhruv14/line-art-animation",
+    "score": 782,
+    "metric": "stars",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "zenincognito",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "93% of paint splatters are valid Perl programs (2019)",
+    "url": "https://www.mcmillen.dev/sigbovik/",
+    "score": 586,
+    "metric": "points",
+    "date": "2026-11-11"
+   }
+  },
+  {
+   "author": "edward",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Humans will never again create a project quite like Wikipedia",
+    "url": "https://www.economist.com/culture/2026/10/29/humans-will-never-again-create-a-project-quite-like-wikipedia",
+    "score": 493,
+    "metric": "points",
+    "date": "2026-11-09"
+   }
+  },
+  {
+   "author": "gumby",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Found: A protein that drives ageing without unleashing inflammation",
+    "url": "https://www.nature.com/articles/d41586-026-03638-3",
+    "score": 247,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
+   "author": "meetpateltech",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Claude Fable 5.2 and Mythos 5.2",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+    "score": 1000,
+    "metric": "points",
+    "date": "2026-11-09"
+   }
+  },
+  {
+   "author": "speckx",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Synaptics patent claims stop work on DisplayLink drivers",
+    "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+    "score": 491,
+    "metric": "points",
+    "date": "2026-11-10"
+   }
+  },
+  {
+   "author": "dvaplima",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Gemini 4 Hydrogen",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+    "score": 568,
+    "metric": "points",
+    "date": "2026-11-12"
+   }
+  },
+  {
+   "author": "NaOH",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Scion is back and is going to sell a kei truck in America",
+    "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
+    "score": 562,
+    "metric": "points",
+    "date": "2026-11-10"
+   }
+  },
+  {
+   "author": "bigwheels",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "ask_hn",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Locating the source of a mysterious beep",
+    "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+    "score": 331,
+    "metric": "points",
+    "date": "2026-11-10"
+   }
+  },
+  {
+   "author": "jbredeche",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Nvidia is preparing to oust Jensen Huang",
+    "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+    "score": 1224,
+    "metric": "points",
+    "date": "2026-11-11"
+   }
+  },
+  {
+   "author": "simonebrunozzi",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "ask_hn",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "FM-1 Workbench",
+    "url": "https://open.m-vave.com/fm1-workbench",
+    "score": 265,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
+   "author": "dverlaeckt80",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Reverse engineering a vintage diode-transistor logic chip",
+    "url": "https://www.righto.com/2026/11/signetics-st680a-dtl-nand.html",
+    "score": 106,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "hacb",
+   "days_on_board": 2,
+   "items": 2,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
+    "url": "https://projectzero.google/2026/11/disclosure-policy.html",
+    "score": 220,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  }
+ ]
+}

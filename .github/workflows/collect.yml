@@ -39,6 +39,8 @@ jobs:
         run: python3 scripts/streaks.py
       - name: Risers API
         run: python3 scripts/risers.py
+      - name: Aggregates API (domains/authors)
+        run: python3 scripts/aggregates.py
 
       - name: Regenerate weekly aggregate API
         run: python3 scripts/weekly.py || true
