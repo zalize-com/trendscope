@@ -505,3 +505,23 @@ root for self-hosted mirrors.
 | Timmy OMahony | dev notes | `timmyomahony.com/feed.rss` |
 | Tim Tech | dev notes | `timtech.blog/feed/feed.xml` |
 | Tink | Leonie Watson a11y | `tink.uk/feed.xml` |
+| Tiny Helpers | dev tool directory | `tiny-helpers.dev/feed.xml` |
+| Tola | dev notes | `tola.me.uk/blog/feed/` |
+| Tollwerk | dev agency | `tollwerk.de/blog.atom` |
+| Tom VG | dev notes | `tom.vg/feed.xml` |
+| Tomek Dev | dev notes | `tomekdev.com/rss.xml` |
+| Tomer Aberbach | engineering notes | `tomeraberba.ch/rss.xml` |
+| Toni Sagrista | graphics dev | `tonisagrista.com/index.xml` |
+| Trekhleb | JS algorithms author | `trekhleb.dev/rss.xml` |
+| Trib TV | dev video notes | `trib.tv/feed/` |
+| TTNTM | dev notes | `ttntm.me/feed.xml` |
+| Tumutanzi | Chinese dev notes | `tumutanzi.com/feed` |
+| typeofNaN | JS quizzes | `typeofnan.dev/rss.xml` |
+| Una Kravets | Chrome dev rel | `una.im/rss.xml` |
+| Unfettered | dev notes | `unfetteredthoughts.net/feed/` |
+| Utopia | fluid typography | `utopia.fyi/feed.xml` |
+| V8 | V8 engine blog | `v8.dev/blog.atom` |
+| Varun CA | dev notes | `varun.ca/rss.xml` |
+| Vasilis | frontend dev | `vasilis.nl/nerd/feed/` |
+| Veroniiiica | a11y dev | `veroniiiica.com/feed/` |
+| Vesa Piittinen | frontend dev | `vesa.piittinen.name/blog/rss.xml` |

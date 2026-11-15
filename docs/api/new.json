@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-15T18:52:27.462466+00:00",
+ "generated_at": "2026-11-15T18:55:22.854547+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 14983,
- "new_items": 14856,
+ "total_items": 15237,
+ "new_items": 15110,
  "by_source": {
-  "show_hn": 48,
+  "show_hn": 49,
   "producthunt": 45,
   "hackernews": 33,
   "theregister": 29,
@@ -614,17 +614,29 @@
   "timmyomahony": 15,
   "timotijhof": 15,
   "tink": 15,
+  "tinyhelpers": 15,
   "tinyprojects": 15,
+  "tollwerk": 15,
+  "tomeraberba": 15,
+  "tonisagrista": 15,
   "toptal": 15,
   "torgo": 15,
+  "trekhleb": 15,
   "troyhunt": 15,
+  "ttntm": 15,
   "tweag": 15,
   "tylergaw": 15,
+  "typeofnan": 15,
+  "una": 15,
   "underjord": 15,
+  "utopia": 15,
   "v2ocaml": 15,
+  "varun": 15,
+  "vasilis": 15,
   "vercel": 15,
   "verdagon": 15,
   "verraes": 15,
+  "vesapiittinen": 15,
   "vicki": 15,
   "viralinstruction": 15,
   "voidzero": 15,
@@ -652,6 +664,7 @@
   "pepelsbey": 14,
   "sarahmhigley": 14,
   "schepp": 14,
+  "tomekdev": 14,
   "wangpei": 14,
   "architectelevator": 13,
   "fogus": 13,
@@ -1069,11 +1082,16 @@
   "thinkdobecreate": 10,
   "tjvantoll": 10,
   "tobiasahlin": 10,
+  "tolame": 10,
   "trentwalton": 10,
+  "tumutanzi": 10,
+  "unfetteredthoughts": 10,
   "unsearcher": 10,
   "upmostly": 10,
   "useragentman": 10,
   "usesthis": 10,
+  "v8": 10,
+  "veroniiiica": 10,
   "w3eleqtriq": 10,
   "webaim": 10,
   "webkit": 10,
@@ -1117,6 +1135,7 @@
   "samwooe": 8,
   "slack_eng": 8,
   "socialclawhammer": 8,
+  "tom": 8,
   "forweb": 7,
   "gomakethings": 7,
   "jgw96github": 7,
@@ -1173,6 +1192,7 @@
   "thisweek": 4,
   "armin": 3,
   "ask_hn": 3,
+  "devto": 3,
   "evanminto": 3,
   "jonneal": 3,
   "michaelfeathers": 3,
@@ -1182,7 +1202,6 @@
   "adoptingerlang": 2,
   "alicepagesigalia": 2,
   "ciechanow": 2,
-  "devto": 2,
   "dyskinetic": 2,
   "fathy": 2,
   "igor": 2,
@@ -38981,6 +39000,14 @@
    "source": "devto",
    "rank": 13,
    "score": 82,
+   "metric": "reactions"
+  },
+  {
+   "title": "AI is getting better. Here is my plan to stay ahead.",
+   "url": "https://dev.to/javz/ai-is-getting-better-here-is-my-plan-to-stay-ahead-2822",
+   "source": "devto",
+   "rank": 15,
+   "score": 39,
    "metric": "reactions"
   },
   {
@@ -102768,6 +102795,14 @@
    "metric": "points"
   },
   {
+   "title": "Show HN: Settlers of Catan Playable via SSH",
+   "url": "https://github.com/VichoReyes/el-poblador",
+   "source": "show_hn",
+   "rank": 5,
+   "score": 3,
+   "metric": "points"
+  },
+  {
    "title": "Show HN: PowerQueue free online message queue supports AWS, GCE, Azure, AMQP",
    "url": "https://www.powerqueue.link",
    "source": "show_hn",
@@ -114304,6 +114339,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "New helper added: Gradient Visualizer – Break layered CSS gradients into their single layers.",
+   "url": "https://lab.ishadeed.com/tools/gradient-visualizer/",
+   "source": "tinyhelpers",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New helper added: sliick – Create 3D device mockups for your screenshots and videos.",
+   "url": "https://www.sliick.co/",
+   "source": "tinyhelpers",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New helper added: SoVeryBright – Turn logos into HDR images that glow brighter than white..",
+   "url": "https://www.soverybright.com/",
+   "source": "tinyhelpers",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New helper added: TanStack npm stats – Track npm download numbers..",
+   "url": "https://tanstack.com/stats/npm",
+   "source": "tinyhelpers",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New helper added: ua-tracer – Reveal what a user agent downloads, follows, and executes..",
+   "url": "https://uatracer.com/",
+   "source": "tinyhelpers",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New helper added: Mitos – Convert images into ASCII illustrations..",
+   "url": "https://mitos-pied.vercel.app/",
+   "source": "tinyhelpers",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New helper added: BWPixel – Process images without uploading them to any server, ensuring complete privacy protection..",
+   "url": "https://bwpixel.com/",
+   "source": "tinyhelpers",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New helper added: EasyDev Tools – Format JSON, decode JWT, minify CSS/JS, generate hashes, convert colors, and more..",
+   "url": "https://easydev.tools",
+   "source": "tinyhelpers",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New helper added: Big File Tools – Format, beautify, or minify massive JSON, XML, and CSV files directly in the browser..",
+   "url": "https://big-file-tools.vercel.app/",
+   "source": "tinyhelpers",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New helper added: Fontastic Space – Find optimal font pairings..",
+   "url": "https://fontastic.space/",
+   "source": "tinyhelpers",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New helper added: Toolsetta – Convert files in browser for everyday tasks.",
+   "url": "https://toolsetta.com/",
+   "source": "tinyhelpers",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New helper added: Mockdown – Create ASCII wireframes and UI mockups in the browser and export them as Markdown..",
+   "url": "https://www.mockdown.design/",
+   "source": "tinyhelpers",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New helper added: find+font – Compare, preview and download fonts you love.",
+   "url": "https://www.findfont.co/",
+   "source": "tinyhelpers",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New helper added: Barcode Generator – Generate and customize production ready barcodes and QR codes instantly in your browser..",
+   "url": "https://generatorbarcode.com",
+   "source": "tinyhelpers",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New helper added: DevBento – Access a suite of privacy first developer utilities to format code, generate assets, and debug data 100% client side..",
+   "url": "https://devbento.dev",
+   "source": "tinyhelpers",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Tiny Website | Tiny Projects",
    "url": "https://tinyprojects.dev/projects/tiny_website",
    "source": "tinyprojects",
@@ -114584,6 +114739,502 @@
    "metric": "feed rank"
   },
   {
+   "title": "Putting the Web back in the Web of Things",
+   "url": "https://tola.me.uk/blog/2026/03/05/putting-the-web-back-in-the-web-of-things/",
+   "source": "tolame",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I think Web Apps Should be Installed",
+   "url": "https://tola.me.uk/blog/2026/02/12/how-i-think-web-apps-should-be-installed/",
+   "source": "tolame",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing the Web Thing Protocol",
+   "url": "https://tola.me.uk/blog/2025/11/06/introducing-the-web-thing-protocol/",
+   "source": "tolame",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Vision of a Smart Building Operating System",
+   "url": "https://tola.me.uk/blog/2025/02/03/my-vision-of-a-smart-building-operating-system/",
+   "source": "tolame",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A New Future for the WebThings IoT Platform",
+   "url": "https://tola.me.uk/blog/2020/12/03/a-new-future-for-the-webthings-iot-platform/",
+   "source": "tolame",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Krellian — Interactive Digital Signage",
+   "url": "https://tola.me.uk/blog/2020/03/12/introducing-krellian%e2%80%8a-%e2%80%8ainteractive-digital-signage/",
+   "source": "tolame",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Legacy of Firefox OS",
+   "url": "https://tola.me.uk/blog/2019/01/27/the-legacy-of-firefox-os/",
+   "source": "tolame",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building the Web of Things",
+   "url": "https://tola.me.uk/blog/2017/06/28/building-the-web-of-things/",
+   "source": "tolame",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Story of Firefox OS",
+   "url": "https://tola.me.uk/blog/2017/03/03/the-story-of-firefox-os/",
+   "source": "tolame",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pinned Apps – An App Model for the Web",
+   "url": "https://tola.me.uk/blog/2015/03/09/pinned-apps-an-app-model-for-the-web/",
+   "source": "tolame",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Empowering Consumers — Disempowering Overlays?",
+   "url": "https://tollwerk.de/blog/empowering-consumers-disempowering-overlays-empco",
+   "source": "tollwerk",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You look fresh!",
+   "url": "https://tollwerk.de/blog/you-look-fresh",
+   "source": "tollwerk",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "beyond tellerrand 2026",
+   "url": "https://tollwerk.de/blog/beyond-tellerrand-2026",
+   "source": "tollwerk",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rolle Rückwärts",
+   "url": "https://tollwerk.de/blog/rolle-rueckwaerts",
+   "source": "tollwerk",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "beyond tellerrand 2025",
+   "url": "https://tollwerk.de/blog/beyond-tellerrand-2025",
+   "source": "tollwerk",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "25 Jahre Tollwerk",
+   "url": "https://tollwerk.de/blog/25-jahre-tollwerk",
+   "source": "tollwerk",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Smarte Technik ist das neue Plastik",
+   "url": "https://tollwerk.de/blog/smarte-technik-ist-das-neue-plastik",
+   "source": "tollwerk",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wir rechnen uns kaputt …",
+   "url": "https://tollwerk.de/blog/strassenkreuzer-gemeinwohl-oekonomie",
+   "source": "tollwerk",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Die zweitbeste Lösung",
+   "url": "https://tollwerk.de/blog/die-zweitbeste-loesung-quantum-bayern-2",
+   "source": "tollwerk",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Workshop: Digitale Barrierefreiheit als Chance nutzen",
+   "url": "https://tollwerk.de/blog/workshop-digitale-barrierefreiheit-barrierefreiheitsstaerkungsgesetz-bfsg-hammerhof",
+   "source": "tollwerk",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Digitaler Produktpass für das Web",
+   "url": "https://tollwerk.de/blog/digitaler-produktpass-fuer-das-web",
+   "source": "tollwerk",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rückzug von Instagram, Facebook und Twitter / X",
+   "url": "https://tollwerk.de/blog/social-media-exit-instagram-facebook-twitter-x",
+   "source": "tollwerk",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Praxisprojekt 2025: Studierende suchen Barrierefreiheit",
+   "url": "https://tollwerk.de/blog/praxisprojekt-studium-barrierefreiheit-hsa",
+   "source": "tollwerk",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Working Draft Revision 644: BFSG",
+   "url": "https://tollwerk.de/blog/working-draft-655-barrierefreiheitsstaerkungsgesetz-bfsg",
+   "source": "tollwerk",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gemeinwohl-Bilanz abgeschlossen",
+   "url": "https://tollwerk.de/blog/gwoe-gemeinwohl-bilanz-abgeschlossen",
+   "source": "tollwerk",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Storage quota side-channel attacks in the browser",
+   "url": "https://tom.vg//2016/08/request-and-conquer/",
+   "source": "tom",
+   "rank": 1,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Timing Attacks in the Modern Web",
+   "url": "https://tom.vg//2016/08/browser-based-timing-attacks/",
+   "source": "tom",
+   "rank": 2,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Clubbing Seals",
+   "url": "https://tom.vg//2014/11/clubbing-seals/",
+   "source": "tom",
+   "rank": 3,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ClickJacking vulnerability leads to information leakage in Google Drive",
+   "url": "https://tom.vg//2014/02/google-drive-clickjacking-vulnerability/",
+   "source": "tom",
+   "rank": 4,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Remote Code Execution exploit in WordPress 3.5.1",
+   "url": "https://tom.vg//2013/12/wordpress-rce-exploit/",
+   "source": "tom",
+   "rank": 5,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WordPress &lt; 3.6.1 PHP Object Injection",
+   "url": "https://tom.vg//2013/09/wordpress-php-object-injection/",
+   "source": "tom",
+   "rank": 6,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HTML injection in mails sent from Google Scholar",
+   "url": "https://tom.vg//2013/09/google-scholar-email-html-injection/",
+   "source": "tom",
+   "rank": 7,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Implicit type conversion in MySQL",
+   "url": "https://tom.vg//2013/04/mysql-implicit-type-conversion/",
+   "source": "tom",
+   "rank": 8,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chasing 100 Lighthouse scores on my Astro blog",
+   "url": "https://tomekdev.com/posts/chasing-100-lighthouse-scores-on-my-astro-blog/",
+   "source": "tomekdev",
+   "rank": 1,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Blog migration from Gatsby to Astro for a cup of coffee",
+   "url": "https://tomekdev.com/posts/blog-migration-from-gatsby-to-astro-for-a-cup-of-coffee/",
+   "source": "tomekdev",
+   "rank": 2,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Benchmarking GraphQL solutions in the JS/TS landscape",
+   "url": "https://tomekdev.com/posts/benchmarking-graphql-solutions-in-the-js-ts-landscape/",
+   "source": "tomekdev",
+   "rank": 3,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Interactive Radial Gauge",
+   "url": "https://tomekdev.com/posts/interactive-radial-gauge-in-react/",
+   "source": "tomekdev",
+   "rank": 4,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sorting colors in JavaScript",
+   "url": "https://tomekdev.com/posts/sorting-colors-in-js/",
+   "source": "tomekdev",
+   "rank": 5,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Anchors for headings in MDX",
+   "url": "https://tomekdev.com/posts/anchors-for-headings-in-mdx/",
+   "source": "tomekdev",
+   "rank": 6,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Throttle vs Debounce on real examples",
+   "url": "https://tomekdev.com/posts/throttle-vs-debounce-on-real-examples/",
+   "source": "tomekdev",
+   "rank": 7,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Highlight text in JavaScript",
+   "url": "https://tomekdev.com/posts/highlight-text-in-javascript/",
+   "source": "tomekdev",
+   "rank": 8,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Search with typo tolerance",
+   "url": "https://tomekdev.com/posts/search-with-typo-tolerance/",
+   "source": "tomekdev",
+   "rank": 9,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Useful setup that I always use when starting a new project",
+   "url": "https://tomekdev.com/posts/powerful-start/",
+   "source": "tomekdev",
+   "rank": 10,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Effective titles and more",
+   "url": "https://tomekdev.com/posts/effective-titles-and-more/",
+   "source": "tomekdev",
+   "rank": 11,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "If there is an input, there should be a form",
+   "url": "https://tomekdev.com/posts/input-and-form/",
+   "source": "tomekdev",
+   "rank": 12,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Content Curation is going to be a job and how Content Marketing killed the web",
+   "url": "https://tomekdev.com/posts/content-curation-and-marketing/",
+   "source": "tomekdev",
+   "rank": 13,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dynamic partiallyActive Link in Gatsby",
+   "url": "https://tomekdev.com/posts/dynamic-partially-active-link-in-gatsby/",
+   "source": "tomekdev",
+   "rank": 14,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your Interface Has Two Channels",
+   "url": "https://tomeraberba.ch/your-interface-has-two-channels",
+   "source": "tomeraberba",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Insignificant",
+   "url": "https://tomeraberba.ch/insignificant",
+   "source": "tomeraberba",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What I Worked On at Stainless",
+   "url": "https://tomeraberba.ch/what-i-worked-on-at-stainless",
+   "source": "tomeraberba",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Actual Lines (And GIFs) From Tech Recruiter Emails",
+   "url": "https://tomeraberba.ch/actual-lines-from-tech-recruiter-emails",
+   "source": "tomeraberba",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cursed Knowledge",
+   "url": "https://tomeraberba.ch/cursed-knowledge",
+   "source": "tomeraberba",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Schoenberg: The MIDI Esoteric Programming Language",
+   "url": "https://tomeraberba.ch/schoenberg",
+   "source": "tomeraberba",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Frogs Flying Kites",
+   "url": "https://tomeraberba.ch/frogs-flying-kites",
+   "source": "tomeraberba",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Engineering Mindset",
+   "url": "https://tomeraberba.ch/engineering-mindset",
+   "source": "tomeraberba",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The 1 Hour per Year Bug (But Only in Pacific Time!)",
+   "url": "https://tomeraberba.ch/the-1-hour-per-year-bug",
+   "source": "tomeraberba",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "lonely cosmopolite",
+   "url": "https://tomeraberba.ch/lonely-cosmopolite",
+   "source": "tomeraberba",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "To Dedupe Then Sort or Sort Then Dedupe?",
+   "url": "https://tomeraberba.ch/to-dedupe-then-sort-or-sort-then-dedupe",
+   "source": "tomeraberba",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The 29 Days per Year Bug (30 Days for Leap Years!)",
+   "url": "https://tomeraberba.ch/the-29-days-per-year-bug",
+   "source": "tomeraberba",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Leverage",
+   "url": "https://tomeraberba.ch/leverage",
+   "source": "tomeraberba",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When Two Bugs Cancel Out",
+   "url": "https://tomeraberba.ch/when-two-bugs-cancel-out",
+   "source": "tomeraberba",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Making of Keyalesce",
+   "url": "https://tomeraberba.ch/the-making-of-keyalesce",
+   "source": "tomeraberba",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "2025 Year in Review",
    "url": "https://toni.li/blog/2025_in_review",
    "source": "toni",
@@ -114620,6 +115271,126 @@
    "url": "https://toni.li/blog/swiftui-explorations",
    "source": "toni",
    "rank": 5,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A maximally tiny language model",
+   "url": "https://tonisagrista.com/blog/2026/tinylm/",
+   "source": "tonisagrista",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Volumetric galaxy rendering",
+   "url": "https://tonisagrista.com/blog/2026/galaxy-rendering/",
+   "source": "tonisagrista",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JPEG XL finally lands in Chrome!",
+   "url": "https://tonisagrista.com/blog/2026/chrome-jpegxl/",
+   "source": "tonisagrista",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Git hash prefix or cellphone number?",
+   "url": "https://tonisagrista.com/blog/2026/git-hash-prefix-numbers/",
+   "source": "tonisagrista",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JPEG XL lands in Firefox",
+   "url": "https://tonisagrista.com/blog/2026/firefox-jpegxl/",
+   "source": "tonisagrista",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Local agentic workflows are getting crazy good",
+   "url": "https://tonisagrista.com/blog/2026/local-llm-qwen3.6/",
+   "source": "tonisagrista",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Local TTS is getting very capable and accessible",
+   "url": "https://tonisagrista.com/blog/2026/qwensay/",
+   "source": "tonisagrista",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fine-tuning Qwen3.5 for Gaia Sky",
+   "url": "https://tonisagrista.com/blog/2026/fine-tuning-qwen3.5-gaiasky/",
+   "source": "tonisagrista",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7Artisans EF-FX adapter review",
+   "url": "https://tonisagrista.com/blog/2026/7artisans-ef-fx/",
+   "source": "tonisagrista",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GGUF quantization guide",
+   "url": "https://tonisagrista.com/blog/2026/quantization/",
+   "source": "tonisagrista",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "LM Studio on systemd linger",
+   "url": "https://tonisagrista.com/blog/2026/lmster-service/",
+   "source": "tonisagrista",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Yet another architectural update for Play Kid",
+   "url": "https://tonisagrista.com/blog/2026/playkid-update-again/",
+   "source": "tonisagrista",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Game Boy emulator tech stack update",
+   "url": "https://tonisagrista.com/blog/2026/playkid-update/",
+   "source": "tonisagrista",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Play Kid",
+   "url": "https://tonisagrista.com/projects/playkid/",
+   "source": "tonisagrista",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Implementing a Game Boy emulator",
+   "url": "https://tonisagrista.com/blog/2026/playkid/",
+   "source": "tonisagrista",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -114912,6 +115683,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Yes-Brainer — A Council of AI Models",
+   "url": "https://trekhleb.dev/blog/2026/yesbrainer/",
+   "source": "trekhleb",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Run Claude Code's --dangerously-skip-permissions Flag Safely with Docker",
+   "url": "https://trekhleb.dev/blog/2026/claude-pod/",
+   "source": "trekhleb",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CaliVibe: Interactive map of California counties and cities — population, crime rates, temperature, and 3D terrain",
+   "url": "https://trekhleb.dev/blog/2026/cali-vibe/",
+   "source": "trekhleb",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tech Jobs Radar",
+   "url": "https://trekhleb.dev/blog/2025/jobs-radar/",
+   "source": "trekhleb",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "API Design of X (Twitter) Home Timeline",
+   "url": "https://trekhleb.dev/blog/2024/api-design-x-home-timeline/",
+   "source": "trekhleb",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Homemade GPT JS",
+   "url": "https://trekhleb.dev/blog/2024/homemade-gpt-js/",
+   "source": "trekhleb",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "System Design Sketches",
+   "url": "https://trekhleb.dev/blog/2024/system-design-sketches/",
+   "source": "trekhleb",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Micrograd TS",
+   "url": "https://trekhleb.dev/blog/2023/micrograd-ts/",
+   "source": "trekhleb",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Observations",
+   "url": "https://trekhleb.dev/blog/2023/observations/",
+   "source": "trekhleb",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SOLID Principles Sketches",
+   "url": "https://trekhleb.dev/blog/2022/solid-principles-sketches/",
+   "source": "trekhleb",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Data Structure Sketches",
+   "url": "https://trekhleb.dev/blog/2022/data-structure-sketches/",
+   "source": "trekhleb",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The OkSo Drawing App is Launched",
+   "url": "https://trekhleb.dev/blog/2022/okso/",
+   "source": "trekhleb",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Top 33 JavaScript Projects on GitHub (November 2021)",
+   "url": "https://trekhleb.dev/blog/2021/top-33-javascript-projects-on-github/",
+   "source": "trekhleb",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weighted Random algorithm in JavaScript",
+   "url": "https://trekhleb.dev/blog/2021/weighted-random-algorithm-in-javascript/",
+   "source": "trekhleb",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Self-Parking Car in 500 Lines of Code",
+   "url": "https://trekhleb.dev/blog/2021/self-parking-car-evolution/",
+   "source": "trekhleb",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Metroid Type Explorations",
    "url": "http://trentwalton.com/notes/2023/03/17/metroid-type-explorations.html",
    "source": "trentwalton",
@@ -115112,6 +116003,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Pollution",
+   "url": "https://ttntm.me/blog/pollution/",
+   "source": "ttntm",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Website Evolution: 2026",
+   "url": "https://ttntm.me/blog/website-evolution-2026/",
+   "source": "ttntm",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Guitar Chops 01",
+   "url": "https://ttntm.me/blog/guitar-chops-01/",
+   "source": "ttntm",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A New Guitar",
+   "url": "https://ttntm.me/blog/a-new-guitar/",
+   "source": "ttntm",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's next?",
+   "url": "https://ttntm.me/blog/whats-next/",
+   "source": "ttntm",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Archived Notes",
+   "url": "https://ttntm.me/blog/archived-notes/",
+   "source": "ttntm",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hiding",
+   "url": "https://ttntm.me/blog/hiding/",
+   "source": "ttntm",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Done Moving",
+   "url": "https://ttntm.me/blog/done-moving/",
+   "source": "ttntm",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "40 Questions – 2025 Edition",
+   "url": "https://ttntm.me/blog/40-questions-2025/",
+   "source": "ttntm",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "About the Past Year - 2025",
+   "url": "https://ttntm.me/blog/about-the-past-year-2025/",
+   "source": "ttntm",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "App Defaults - 2025",
+   "url": "https://ttntm.me/blog/app-defaults-2025/",
+   "source": "ttntm",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Out of Time",
+   "url": "https://ttntm.me/blog/out-of-time/",
+   "source": "ttntm",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Seven Years",
+   "url": "https://ttntm.me/blog/seven-years/",
+   "source": "ttntm",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "One Year of Lifting Weights",
+   "url": "https://ttntm.me/blog/one-year-of-lifting-weights/",
+   "source": "ttntm",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Webmentions V2",
+   "url": "https://ttntm.me/blog/webmentions-v2/",
+   "source": "ttntm",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Do you just shade the whole tract based on zero/non-zero, or is there some effort to make the areas equal, like square blocks (sq. mi. or sq. km)? Like per pixel or something?",
    "url": "https://tumblr.mapsbynik.com/post/664320766146412544",
    "source": "tumblrmapsbynik",
@@ -115204,6 +116215,86 @@
    "url": "https://tumblr.mapsbynik.com/post/69393005328",
    "source": "tumblrmapsbynik",
    "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "往嘉信理财入金哪种方式较好？",
+   "url": "https://tumutanzi.com/archives/17655/",
+   "source": "tumutanzi",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "迁移到静态网站，再见WordPress和PHP",
+   "url": "https://tumutanzi.com/archives/17654/",
+   "source": "tumutanzi",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "一些生活习惯上的改变",
+   "url": "https://tumutanzi.com/archives/17653/",
+   "source": "tumutanzi",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Starryblu：跨境资金管理平台Wise的平替？",
+   "url": "https://tumutanzi.com/archives/17648/",
+   "source": "tumutanzi",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iFAST：值得拥有的英国银行账户",
+   "url": "https://tumutanzi.com/archives/17647/",
+   "source": "tumutanzi",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Neverless：自由兑换加密货币与欧元",
+   "url": "https://tumutanzi.com/archives/17646/",
+   "source": "tumutanzi",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "人到中年开始明白的一些事",
+   "url": "https://tumutanzi.com/archives/17644/",
+   "source": "tumutanzi",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "投资心法：允许自己错过",
+   "url": "https://tumutanzi.com/archives/17641/",
+   "source": "tumutanzi",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "人生经营的终极目标",
+   "url": "https://tumutanzi.com/archives/17629/",
+   "source": "tumutanzi",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "众安银行股票投资功能试用",
+   "url": "https://tumutanzi.com/archives/17628/",
+   "source": "tumutanzi",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -115448,6 +116539,246 @@
    "metric": "feed rank"
   },
   {
+   "title": "I'm writing more",
+   "url": "https://typeofnan.dev/im-writing-more/",
+   "source": "typeofnan",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to sort an array of objects by multiple properties in JavaScript",
+   "url": "https://typeofnan.dev/sort-array-objects-multiple-properties-javascript/",
+   "source": "typeofnan",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to capitalize the first letter of a string in JavaScript",
+   "url": "https://typeofnan.dev/capitalize-first-letter-javascript/",
+   "source": "typeofnan",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to access an object property with a dynamically-computed name in JavaScript",
+   "url": "https://typeofnan.dev/access-dynamic-property-javascript/",
+   "source": "typeofnan",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to use the right \"this\" value in JavaScript classes",
+   "url": "https://typeofnan.dev/how-to-use-the-right-this-value-in-javascript-classes/",
+   "source": "typeofnan",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to return a response from an asynchronous call in JavaScript",
+   "url": "https://typeofnan.dev/how-to-return-response-async-call-javascript/",
+   "source": "typeofnan",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Conditional component props in React with Typescript",
+   "url": "https://typeofnan.dev/conditional-component-props-react/",
+   "source": "typeofnan",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to add script tags to your React app",
+   "url": "https://typeofnan.dev/how-to-add-script-tags-to-your-react-app/",
+   "source": "typeofnan",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A one-line OpenSSL command to generate a self-signed SSL certificate",
+   "url": "https://typeofnan.dev/a-one-line-command-to-generate-a-self-signed-ssl-certificate/",
+   "source": "typeofnan",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to use HTTP2 with Express.js and test it locally",
+   "url": "https://typeofnan.dev/how-to-use-http2-with-express/",
+   "source": "typeofnan",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to condition a function's output type based on its input type in Typescript",
+   "url": "https://typeofnan.dev/how-to-condition-a-functions-output-type-based-on-its-input-type-in-typescript/",
+   "source": "typeofnan",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10x engineering for the rest of us",
+   "url": "https://typeofnan.dev/10x-engineering-for-the-rest-of-us/",
+   "source": "typeofnan",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to access the index in an Angular ngFor loop",
+   "url": "https://typeofnan.dev/how-to-access-index-in-angular-ngfor-loop/",
+   "source": "typeofnan",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What does it mean that Solid.js is truly reactive?",
+   "url": "https://typeofnan.dev/what-does-it-mean-that-solid-js-is-truly-reactive/",
+   "source": "typeofnan",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What the useEvent React hook is (and isn't)",
+   "url": "https://typeofnan.dev/what-the-useevent-react-hook-is-and-isnt/",
+   "source": "typeofnan",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Modern CSS theming with light-dark(), contrast-color(), and style queries",
+   "url": "https://una.im/modern-css-theming/",
+   "source": "una",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "contrast-color() beyond black & white",
+   "url": "https://una.im/advanced-contrast-color/",
+   "source": "una",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Automated accessible text with contrast-color()",
+   "url": "https://una.im/contrast-color/",
+   "source": "una",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "border-shape: the future of the non-rectangular web",
+   "url": "https://una.im/border-shape/",
+   "source": "una",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2025 in Review",
+   "url": "https://una.im/2025-in-review/",
+   "source": "una",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Directional CSS with scroll-state(scrolled)",
+   "url": "https://una.im/scroll-state-scrolled/",
+   "source": "una",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS Wrapped: 2025!",
+   "url": "https://una.im/2025-12-08-css-wrapped/",
+   "source": "una",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Range Syntax for Style Queries",
+   "url": "https://una.im/range-style-queries/",
+   "source": "una",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Detect fallback positions with anchored container queries from Chrome 143",
+   "url": "https://una.im/2025-10-29-anchored-queries/",
+   "source": "una",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Follow-the-leader pattern with CSS anchor positioning",
+   "url": "https://una.im/follow-the-anchor/",
+   "source": "una",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 Useful CSS functions using the new @function rule",
+   "url": "https://una.im/5-css-functions/",
+   "source": "una",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating a scroll-spy with 2 lines of CSS",
+   "url": "https://una.im/scroll-target-group/",
+   "source": "una",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is popover=hint?",
+   "url": "https://una.im/popover-hint/",
+   "source": "una",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New capabilities for attr()",
+   "url": "https://una.im/advanced-attr/",
+   "source": "una",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Updates to the customizable select API",
+   "url": "https://una.im/select-updates/",
+   "source": "una",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "An Intro To Screen Reader Testing for Sighted Developers",
    "url": "http://uncaughtreferenceerror.com/a-crash-course-to-screenreaders-for-sighted-developers",
    "source": "uncaughtreferenceerror",
@@ -115572,6 +116903,86 @@
    "url": "https://underjord.io/from-big-kubers-down-to-small-genservers.html",
    "source": "underjord",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "@crystaltamar – Nowhere",
+   "url": "https://unfetteredthoughts.net/2018/09/01/crystaltamar-nowhere/",
+   "source": "unfetteredthoughts",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "@LexxJonez: Love Jones III",
+   "url": "https://unfetteredthoughts.net/2018/02/14/lexxjonez-love-jones-iii/",
+   "source": "unfetteredthoughts",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Should developers work around assistive technology bugs?",
+   "url": "https://unfetteredthoughts.net/2018/01/08/should-developers-work-around-assistive-technology-bugs/",
+   "source": "unfetteredthoughts",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "VoiceOver and list-style-type: none",
+   "url": "https://unfetteredthoughts.net/2017/09/26/voiceover-and-list-style-type-none/",
+   "source": "unfetteredthoughts",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You Might Not Need Web Components",
+   "url": "https://unfetteredthoughts.net/2017/08/23/you-might-not-need-web-components/",
+   "source": "unfetteredthoughts",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Disable Links",
+   "url": "https://unfetteredthoughts.net/2017/03/22/how-to-disable-links/",
+   "source": "unfetteredthoughts",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I probably won’t #deleteuber and here is why",
+   "url": "https://unfetteredthoughts.net/2017/02/22/i-probably-wont-deleteuber-and-here-is-why/",
+   "source": "unfetteredthoughts",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Intro to Web Accessibility",
+   "url": "https://unfetteredthoughts.net/2016/11/14/intro-to-web-accessibility/",
+   "source": "unfetteredthoughts",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JavaScript and Accessibility",
+   "url": "https://unfetteredthoughts.net/2016/10/17/javascript-and-accessibility/",
+   "source": "unfetteredthoughts",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Meeting Web Accessibility Guidelines (Section 508/ WCAG 2.0)",
+   "url": "https://unfetteredthoughts.net/2016/09/26/meeting-web-accessibility-guidelines-section-508-wcag-2-0/",
+   "source": "unfetteredthoughts",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -115952,6 +117363,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Fluid responsive typography: easy when you know how",
+   "url": "https://utopia.fyi/blog/utopian-typography-is-easy",
+   "source": "utopia",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Utopian project kickstarter: designing a fluid responsive website in a static tool like Figma",
+   "url": "https://utopia.fyi/blog/utopia-in-figma",
+   "source": "utopia",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generate all pair permutations in Utopia SCSS",
+   "url": "https://utopia.fyi/blog/generate-all-pairs",
+   "source": "utopia",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Type scale graphs",
+   "url": "https://utopia.fyi/blog/graph",
+   "source": "utopia",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Figma plugin and kickstarter V2",
+   "url": "https://utopia.fyi/blog/figma-plugin-v2",
+   "source": "utopia",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Readable clamp() with PostCSS Utopia",
+   "url": "https://utopia.fyi/blog/postcss-utopia",
+   "source": "utopia",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Utopia SCSS library",
+   "url": "https://utopia.fyi/blog/utopia-core-scss",
+   "source": "utopia",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Clamp calculator",
+   "url": "https://utopia.fyi/blog/clamp-calculator",
+   "source": "utopia",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Utopia Fluid Type + Space Calculator now supports Figma variables",
+   "url": "https://utopia.fyi/blog/figma-variables",
+   "source": "utopia",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Designing a Utopian layout grid: Working with fluid responsive values in a static design tool.",
+   "url": "https://utopia.fyi/blog/designing-a-utopian-layout-grid",
+   "source": "utopia",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting started with Utopia Figma Plugins",
+   "url": "https://utopia.fyi/blog/get-started-with-utopia-figma-plugins",
+   "source": "utopia",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A video introduction to Utopia",
+   "url": "https://utopia.fyi/blog/an-introduction-video",
+   "source": "utopia",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Painting with a fluid space palette",
+   "url": "https://utopia.fyi/blog/painting-with-a-fluid-space-palette",
+   "source": "utopia",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Designing with a fluid space palette",
+   "url": "https://utopia.fyi/blog/designing-with-a-fluid-space-palette",
+   "source": "utopia",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Clamp",
+   "url": "https://utopia.fyi/blog/clamp",
+   "source": "utopia",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "curry: a modern Emacs mode for Haskell",
    "url": "https://lambdafoo.com/posts/2026-11-15-curry-mode.html",
    "source": "v2ocaml",
@@ -116067,6 +117598,326 @@
    "title": "Notes from week 44",
    "url": "https://www.tunbury.org/2026/11/02/week-44/",
    "source": "v2ocaml",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How we made JSON.stringify more than twice as fast",
+   "url": "https://v8.dev/blog/json-stringify",
+   "source": "v8",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speculative Optimizations for WebAssembly using Deopts and Inlining",
+   "url": "https://v8.dev/blog/wasm-speculative-optimizations",
+   "source": "v8",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Giving V8 a Heads-Up: Faster JavaScript Startup with Explicit Compile Hints",
+   "url": "https://v8.dev/blog/explicit-compile-hints",
+   "source": "v8",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Land ahoy: leaving the Sea of Nodes",
+   "url": "https://v8.dev/blog/leaving-the-sea-of-nodes",
+   "source": "v8",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Turbocharging V8 with mutable heap numbers",
+   "url": "https://v8.dev/blog/mutable-heap-number",
+   "source": "v8",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing the WebAssembly JavaScript Promise Integration API",
+   "url": "https://v8.dev/blog/jspi",
+   "source": "v8",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WebAssembly JSPI has a new API",
+   "url": "https://v8.dev/blog/jspi-newapi",
+   "source": "v8",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The V8 Sandbox",
+   "url": "https://v8.dev/blog/sandbox",
+   "source": "v8",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WebAssembly JSPI is going to origin trial",
+   "url": "https://v8.dev/blog/jspi-ot",
+   "source": "v8",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Static Roots: Objects with Compile-Time Constant Addresses",
+   "url": "https://v8.dev/blog/static-roots",
+   "source": "v8",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Iridescent crystal with raymarching and signed distance fields",
+   "url": "https://varun.ca/writing/ray-march-sdf/",
+   "source": "varun",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How we built the Storybook Day 3D animation",
+   "url": "https://varun.ca/writing/storybook-day/",
+   "source": "varun",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Three ways to create 3D particle effects",
+   "url": "https://varun.ca/writing/three-js-particles/",
+   "source": "varun",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to build stunning 3D scenes with React Three Fiber",
+   "url": "https://varun.ca/writing/modular-webgl/",
+   "source": "varun",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Noise in Creative Coding",
+   "url": "https://varun.ca/writing/noise/",
+   "source": "varun",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Let's Build a Confetti Cannon",
+   "url": "https://varun.ca/writing/confetti/",
+   "source": "varun",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scrollytelling with React",
+   "url": "https://varun.ca/writing/scrollytelling/",
+   "source": "varun",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making things move",
+   "url": "https://varun.ca/writing/torsions/",
+   "source": "varun",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React Icon System",
+   "url": "https://varun.ca/writing/react-icon-system/",
+   "source": "varun",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Figma Plugins",
+   "url": "https://varun.ca/writing/figma-plugins/",
+   "source": "varun",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Styled System Revisited",
+   "url": "https://varun.ca/writing/styled-system-revisited/",
+   "source": "varun",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Side-Loading a Design System",
+   "url": "https://varun.ca/writing/side-loading-design-system/",
+   "source": "varun",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dark Mode",
+   "url": "https://varun.ca/writing/dark-mode/",
+   "source": "varun",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Not Both?",
+   "url": "https://varun.ca/writing/why-not-both/",
+   "source": "varun",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is a Design System?",
+   "url": "https://varun.ca/writing/what-is-a-design-system/",
+   "source": "varun",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What are we not talking about anymore?",
+   "url": "https://vasilis.nl/nerd/2026/what-are-we-not-talking-about-anymore/",
+   "source": "vasilis",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Actually reading RSS feeds",
+   "url": "https://vasilis.nl/nerd/2026/actually-reading-rss-feeds/",
+   "source": "vasilis",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The birds in our garden",
+   "url": "https://vasilis.nl/nerd/2026/the-birds-in-our-garden/",
+   "source": "vasilis",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New fonts",
+   "url": "https://vasilis.nl/nerd/2026/new-fonts/",
+   "source": "vasilis",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I like The Web They Want",
+   "url": "https://vasilis.nl/nerd/2026/i-like-the-web-they-want/",
+   "source": "vasilis",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS Zen Posters",
+   "url": "https://vasilis.nl/nerd/2026/css-zen-posters/",
+   "source": "vasilis",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Web You Want",
+   "url": "https://vasilis.nl/nerd/2026/the-web-you-want/",
+   "source": "vasilis",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In memoriam Marijn Meijles",
+   "url": "https://vasilis.nl/nerd/2026/rip-marijn/",
+   "source": "vasilis",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting rid of icloud",
+   "url": "https://vasilis.nl/nerd/2026/getting-rid-of-icloud/",
+   "source": "vasilis",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I read books",
+   "url": "https://vasilis.nl/nerd/2026/i-read-books/",
+   "source": "vasilis",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cancelling accounts",
+   "url": "https://vasilis.nl/nerd/2025/cancelling-accounts/",
+   "source": "vasilis",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A lasting digital clock",
+   "url": "https://vasilis.nl/nerd/2025/a-lasting-digital-clock/",
+   "source": "vasilis",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Colourful news",
+   "url": "https://vasilis.nl/nerd/2025/colourful-news/",
+   "source": "vasilis",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The unofficial Pre-CSS Day event",
+   "url": "https://vasilis.nl/nerd/2025/the-unofficial-precss-day-event/",
+   "source": "vasilis",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Talking about clocks",
+   "url": "https://vasilis.nl/nerd/2025/talking-about-clocks/",
+   "source": "vasilis",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -116312,6 +118163,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Tools and Workflows I Use For Blogging With Low Vision",
+   "url": "https://veroniiiica.com/blogging-with-low-vision/",
+   "source": "veroniiiica",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Recruiting Participants For Study: Reading Equations With Low Vision",
+   "url": "https://veroniiiica.com/recruiting-participants-for-study-reading-equations-with-low-vision/",
+   "source": "veroniiiica",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How To Record Your Computer Screen With Built-in Tools",
+   "url": "https://veroniiiica.com/how-to-record-your-computer-screen/",
+   "source": "veroniiiica",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ad-Free Video Magnifier Apps For Android",
+   "url": "https://veroniiiica.com/ad-free-video-magnifier-apps-android/",
+   "source": "veroniiiica",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessible Summer Reading Programs For Low Vision",
+   "url": "https://veroniiiica.com/accessible-summer-reading-programs-for-low-vision/",
+   "source": "veroniiiica",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A to Z of Screen Magnification For Low Vision",
+   "url": "https://veroniiiica.com/screen-magnification-for-low-vision/",
+   "source": "veroniiiica",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Experience Using Kagi Search With Low Vision",
+   "url": "https://veroniiiica.com/using-kagi-search-with-low-vision/",
+   "source": "veroniiiica",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessible Metronome Apps For Low Vision",
+   "url": "https://veroniiiica.com/accessible-metronome-apps-low-vision/",
+   "source": "veroniiiica",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Background Sounds and Ambient Audio for Low Vision",
+   "url": "https://veroniiiica.com/ambient-audio-for-low-vision/",
+   "source": "veroniiiica",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessing Online Readings For College Classes",
+   "url": "https://veroniiiica.com/online-readings-for-college-classes/",
+   "source": "veroniiiica",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Reasoning While We Still Can: Own the Rate of Change",
    "url": "https://verraes.net/2026/11/reasoning-while-we-still-can/",
    "source": "verraes",
@@ -116427,6 +118358,126 @@
    "title": "Design and Reality (Leanpub Podcast)",
    "url": "https://verraes.net/2023/01/leanpub-podcast-design-reality/",
    "source": "verraes",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HTML custom elements",
+   "url": "https://vesa.piittinen.name/blog/2024/12/html-custom-elements/",
+   "source": "vesapiittinen",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Smallest GIF? Meh! Tiniest data URL is a BMP!",
+   "url": "https://vesa.piittinen.name/blog/2024/09/smallest-gif-meh-tiniest-data-url/",
+   "source": "vesapiittinen",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Two line balanced inline block",
+   "url": "https://vesa.piittinen.name/blog/2024/02/two-line-balanced-inline-block/",
+   "source": "vesapiittinen",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Undesired horizontal scrolling",
+   "url": "https://vesa.piittinen.name/blog/2023/08/undesired-horizontal-scrolling/",
+   "source": "vesapiittinen",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I dislike React, and how to escape",
+   "url": "https://vesa.piittinen.name/blog/2023/08/why-i-dislike-react/",
+   "source": "vesapiittinen",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I gave up on statistics",
+   "url": "https://vesa.piittinen.name/blog/2023/07/i-gave-up-on-statistics/",
+   "source": "vesapiittinen",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Strong focus",
+   "url": "https://vesa.piittinen.name/blog/2023/07/strong-focus/",
+   "source": "vesapiittinen",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Maintaining the past",
+   "url": "https://vesa.piittinen.name/blog/2023/07/maintaining-the-past/",
+   "source": "vesapiittinen",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "External links with the least HTML",
+   "url": "https://vesa.piittinen.name/blog/2023/07/external-links-with-least-html/",
+   "source": "vesapiittinen",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Floats in 2023",
+   "url": "https://vesa.piittinen.name/blog/2023/06/floats-in-2023/",
+   "source": "vesapiittinen",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Can we at least modernize visually-hidden?",
+   "url": "https://vesa.piittinen.name/blog/2023/03/can-we-at-least-modernize-visually-hidden/",
+   "source": "vesapiittinen",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Astro SSR is still on the way but I have it in production already",
+   "url": "https://vesa.piittinen.name/blog/2022/06/astro-ssr-is-still-on-the-way-but-i-have-it-in-production-already/",
+   "source": "vesapiittinen",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Should I ever have a role=\"button\"?",
+   "url": "https://vesa.piittinen.name/blog/2022/01/should-i-ever-have-a-role-button/",
+   "source": "vesapiittinen",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Semantic HTML in React with zero new ideas",
+   "url": "https://vesa.piittinen.name/blog/2022/01/semantic-html-in-react-with-zero-new-ideas/",
+   "source": "vesapiittinen",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React class components in the World of Hooks",
+   "url": "https://vesa.piittinen.name/blog/2021/06/react-class-components-in-the-world-of-hooks/",
+   "source": "vesapiittinen",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
