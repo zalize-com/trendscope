@@ -92,6 +92,7 @@ A daily cross-source snapshot of developer attention:
 | catonmat | unix tools and programming | `catonmat.net/feed` |
 | David Beazley | Python wizardry | `dabeaz.blogspot.com` |
 | Mitchell Hashimoto | infra tooling creator | `mitchellh.com/feed.xml` |
+| Two-Bit History | computing history essays | `twobithistory.org/feed.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

@@ -1,10 +1,11 @@
 {
- "generated_at": "2026-11-15T15:44:04.919191+00:00",
+ "generated_at": "2026-11-15T15:46:38.288885+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1036,
- "new_items": 910,
+ "total_items": 1060,
+ "new_items": 934,
  "by_source": {
   "producthunt": 45,
+  "theregister": 29,
   "hackernews": 28,
   "show_hn": 28,
   "techmeme": 19,
@@ -43,12 +44,12 @@
   "sanglard": 15,
   "soblog": 15,
   "swizec": 15,
-  "theregister": 15,
   "vercel": 15,
   "beesbuzz": 14,
   "theverge": 14,
   "aphyr": 12,
   "airbnb": 10,
+  "birklund": 10,
   "dropbox": 10,
   "freecodecamp": 10,
   "github_eng": 10,
@@ -902,6 +903,86 @@
    "url": "https://eli.thegreenplace.net/2026/rusty-thoughts-on-parse-dont-validate/",
    "source": "bendersky",
    "rank": 5,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How the ARPANET Protocols Worked",
+   "url": "https://twobithistory.org/2021/03/08/arpanet-protocols.html",
+   "source": "birklund",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Real Novelty of the ARPANET",
+   "url": "https://twobithistory.org/2021/02/07/arpanet.html",
+   "source": "birklund",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Roy Fielding’s Misappropriated REST Dissertation",
+   "url": "https://twobithistory.org/2020/06/28/rest.html",
+   "source": "birklund",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Use a Differential Analyzer (to Murder People)",
+   "url": "https://twobithistory.org/2020/04/06/differential-analyzer.html",
+   "source": "birklund",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bulletin Board Systems: The VICE Exposé",
+   "url": "https://twobithistory.org/2020/02/02/bbs.html",
+   "source": "birklund",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Friend of a Friend: The Facebook That Could Have Been",
+   "url": "https://twobithistory.org/2020/01/05/foaf.html",
+   "source": "birklund",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Much of a Genius-Level Move Was Using Binary Space Partitioning in Doom?",
+   "url": "https://twobithistory.org/2019/11/06/doom-bsp.html",
+   "source": "birklund",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things You Didn’t Know About GNU Readline",
+   "url": "https://twobithistory.org/2019/08/22/readline.html",
+   "source": "birklund",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Codecademy vs. The BBC Micro",
+   "url": "https://twobithistory.org/2019/03/31/bbc-micro.html",
+   "source": "birklund",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "OOP Before OOP with Simula",
+   "url": "https://twobithistory.org/2019/01/31/simula.html",
+   "source": "birklund",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -6898,8 +6979,24 @@
    "metric": "feed rank"
   },
   {
+   "title": "LEO gets a birthday bash, 75 years after clocking in",
+   "url": "https://www.theregister.com/offbeat/2026/11/15/leo-gets-a-birthday-bash-75-years-after-clocking-in/5308806",
+   "source": "theregister",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "Developer cleverly shrank 2,600 lines of C into a six-line script but still ending up losing sleep",
    "url": "https://www.theregister.com/software/2026/11/13/developer-cleverly-shrank-2600-lines-of-c-into-a-six-line-script-but-still-ending-up-losing-sleep/5309264",
+   "source": "theregister",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Microsoft's school email bill gives rivals something to smile about",
+   "url": "https://www.theregister.com/saas/2026/11/14/microsofts-school-email-bill-gives-rivals-something-to-smile-about/5309296",
    "source": "theregister",
    "rank": 2,
    "score": 14,
@@ -6914,8 +7011,24 @@
    "metric": "feed rank"
   },
   {
+   "title": "Big Tech takes a beating as online safety experts accuse companies of doing bare minimum",
+   "url": "https://www.theregister.com/security/2026/11/14/big-tech-takes-a-beating-as-online-safety-experts-accuse-companies-of-doing-bare-minimum/5309302",
+   "source": "theregister",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
    "title": "Software Samaritan revamps borked Indian certs to block smart TV ads",
    "url": "https://www.theregister.com/security/2026/11/12/software-samaritan-revamps-borked-indian-certs-to-block-smart-tv-ads/5309467",
+   "source": "theregister",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "FAA blames ground stop on faulty copper wiring",
+   "url": "https://www.theregister.com/offbeat/2026/11/13/faa-blames-ground-stop-on-faulty-copper-wiring/5309912",
    "source": "theregister",
    "rank": 4,
    "score": 12,
@@ -6930,6 +7043,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Chinese AI labs are training models on Nvidia's Blackwell despite export controls, says ex-OpenAI engineer",
+   "url": "https://www.theregister.com/ai-and-ml/2026/11/13/chinese-ai-labs-are-training-models-on-nvidias-blackwell-despite-export-controls-says-ex-openai-engineer/5309891",
+   "source": "theregister",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
    "title": "Anthropic tiptoes into MS Office territory",
    "url": "https://www.theregister.com/software/2026/11/10/anthropic-tiptoes-into-ms-office-territory/5308988",
    "source": "theregister",
@@ -6938,8 +7059,24 @@
    "metric": "feed rank"
   },
   {
+   "title": "This year’s bug count just passed 100K",
+   "url": "https://www.theregister.com/security/2026/11/13/this-years-bug-count-just-passed-100k/5309882",
+   "source": "theregister",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
    "title": "14-year-old creates tool for AI agents to band together like a team",
    "url": "https://www.theregister.com/ai-and-ml/2026/11/10/14-year-old-creates-tool-for-ai-agents-to-band-together-like-a-team/5308841",
+   "source": "theregister",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Meatbags suck at spotting lying LLMs, so let AI narc on itself",
+   "url": "https://www.theregister.com/offbeat/2026/11/13/meatbags-suck-at-spotting-lying-llms-so-let-ai-narc-on-itself/5309876",
    "source": "theregister",
    "rank": 7,
    "score": 9,
@@ -6962,8 +7099,24 @@
    "metric": "feed rank"
   },
   {
+   "title": "Email addresses used in European school bomb hoaxes spotted in old infostealer logs",
+   "url": "https://www.theregister.com/cyber-crime/2026/11/13/email-addresses-used-in-european-school-bomb-hoaxes-spotted-in-old-infostealer-logs/5309765",
+   "source": "theregister",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
    "title": "Mac lookalikes multiply as Linux raids Apple's wardrobe",
    "url": "https://www.theregister.com/os-platforms/2026/11/06/mac-lookalikes-multiply-as-linux-raids-apples-wardrobe/5308070",
+   "source": "theregister",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HPE debuts hybrid storage configs: Rising SSD costs hit supercomputing",
+   "url": "https://www.theregister.com/storage/2026/11/13/hpe-debuts-hybrid-storage-configs-rising-ssd-costs-hit-supercomputing/5309679",
    "source": "theregister",
    "rank": 10,
    "score": 6,
@@ -6978,8 +7131,24 @@
    "metric": "feed rank"
   },
   {
+   "title": "Microsoft outage gives customers a crash course in dependence on Redmond",
+   "url": "https://www.theregister.com/saas/2026/11/13/microsoft-outage-gives-customers-a-crash-course-in-dependence-on-redmond/5309805",
+   "source": "theregister",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
    "title": "Microsoft fixed Excel 2016 copy-paste bug. Then reintroduced it. Now it's fixed again",
    "url": "https://www.theregister.com/software/2026/11/05/microsoft-fixed-excel-2016-copy-paste-bug-then-reintroduced-it-now-its-fixed-again/5307782",
+   "source": "theregister",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Another Linux kernel developer steps back from some duties due to overload",
+   "url": "https://www.theregister.com/ai-and-ml/2026/11/13/another-linux-kernel-developer-steps-back-from-some-duties-due-to-overload/5309628",
    "source": "theregister",
    "rank": 12,
    "score": 4,
@@ -6994,6 +7163,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Most affairs don't matter except to the people involved. Ex-Nvidia CEO Jensen's blunder will rock the world",
+   "url": "https://www.theregister.com/columnists/2026/11/13/most-affairs-dont-matter-except-to-the-people-involved-ex-nvidia-ceo-jensens-blunder-will-rock-the-world/5309649",
+   "source": "theregister",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
    "title": "Microsoft admits certifications can be a drag, launches creds that recognize skills",
    "url": "https://www.theregister.com/software/2026/11/05/microsoft-admits-certifications-can-be-a-drag-launches-creds-that-recognize-skills/5307725",
    "source": "theregister",
@@ -7002,8 +7179,24 @@
    "metric": "feed rank"
   },
   {
+   "title": "Oh my Word! Microsoft retires compatibility options, because who needs layouts to stay put",
+   "url": "https://www.theregister.com/applications/2026/11/13/oh-my-word-microsoft-retires-compatibility-options-because-who-needs-layouts-to-stay-put/5309664",
+   "source": "theregister",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
    "title": "Microsoft improves Windows 11 performance on 8 GB PCs as RAM prices keep climbing",
    "url": "https://www.theregister.com/software/2026/11/03/microsoft-improves-windows-11-performance-on-8-gb-pcs-as-ram-prices-keep-climbing/5307382",
+   "source": "theregister",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quantum Systems drones back in the air after malware scare",
+   "url": "https://www.theregister.com/security/2026/11/13/quantum-systems-drones-back-in-the-air-after-malware-scare/5309658",
    "source": "theregister",
    "rank": 15,
    "score": 1,

@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T15:44:04.919191+00:00",
+ "generated_at": "2026-11-15T15:46:38.288885+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 273,
+ "total": 274,
  "domains": [
   {
    "hostname": "so.long.thanks.fish",
@@ -644,6 +644,21 @@
    }
   },
   {
+   "hostname": "theregister.com",
+   "days_on_board": 1,
+   "items": 29,
+   "sources": [
+    "theregister"
+   ],
+   "top_hit": {
+    "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
+    "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "medium.com",
    "days_on_board": 1,
    "items": 20,
@@ -747,21 +762,6 @@
    "top_hit": {
     "title": "Anthropic Outlines Its AI-Powered Code Review Process for Claude Code",
     "url": "https://www.infoq.com/news/2026/11/claude-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "theregister.com",
-   "days_on_board": 1,
-   "items": 15,
-   "sources": [
-    "theregister"
-   ],
-   "top_hit": {
-    "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
-    "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"

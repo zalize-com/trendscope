@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T15:44:05.020112+00:00",
+  "generated_at": "2026-11-15T15:46:38.425018+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -107,6 +107,18 @@
         "title": "hashbrown",
         "url": "https://crates.io/crates/hashbrown",
         "score": 912501410,
+        "rank": 1
+      }
+    },
+    "theregister": {
+      "items": 29,
+      "unique_urls": 29,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
+        "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632",
+        "score": 15,
         "rank": 1
       }
     },
@@ -238,18 +250,6 @@
       "top_item": {
         "title": "Anthropic Outlines Its AI-Powered Code Review Process for Claude Code",
         "url": "https://www.infoq.com/news/2026/11/claude-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "theregister": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
-        "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632",
         "score": 15,
         "rank": 1
       }
@@ -766,6 +766,18 @@
       "top_item": {
         "title": "Skipper, Airbnb’s embedded workflow engine, is now open source",
         "url": "https://medium.com/airbnb-engineering/skipper-airbnbs-embedded-workflow-engine-is-now-open-source-78dd354f472b?source=rss----53c7c27702d5---4",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "birklund": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How the ARPANET Protocols Worked",
+        "url": "https://twobithistory.org/2021/03/08/arpanet-protocols.html",
         "score": 10,
         "rank": 1
       }
