@@ -193,6 +193,20 @@ if (MODE === "weekday") {
     }).join("") || `<li id="err">no weekday data</li>`;
   }).catch(() => { document.getElementById("err").textContent = "weekday data unavailable"; });
 } else
+if (MODE === "heatmap") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/heatmap.html";
+  fetch("docs/api/weekday.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const days = d.days_of_week || ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+    const srcs = Object.entries(d.sources).slice(0, N);
+    document.getElementById("date").textContent = `weekday heat · ${Object.keys(d.sources).length} sources`;
+    document.getElementById("list").innerHTML = srcs.map(([name, v]) => {
+      const mx = Math.max(...v.counts, 1);
+      const cells = v.counts.map((c, i) =>
+        `<span title="${days[i]}: ${c}" style="display:inline-block;width:9px;height:9px;border-radius:2px;margin:0 1px;background:${c===0?"#e5e7eb":`rgba(9,105,218,${0.15+0.85*(c/mx)})`}"></span>`).join("");
+      return `<li><span><a href="https://zalize-com.github.io/trendscope/heatmap.html" target="_blank" rel="noopener">${esc(name)}</a></span><span class="score">${cells}</span></li>`;
+    }).join("") || `<li id="err">no weekday data</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "weekday data unavailable"; });
+} else
 if (MODE === "rhythm") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/rhythm.html";
   fetch("docs/api/rhythm.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
