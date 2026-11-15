@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-15T19:53:36.983462+00:00",
+  "generated_at": "2026-11-15T19:56:59.157747+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
-      "items": 192,
-      "unique_urls": 179,
+      "items": 193,
+      "unique_urls": 180,
       "median_days_on_board": 1,
       "one_day_pct": 93,
       "top_item": {
@@ -111,8 +111,8 @@
       }
     },
     "reddit": {
-      "items": 31,
-      "unique_urls": 31,
+      "items": 32,
+      "unique_urls": 32,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -4730,7 +4730,7 @@
         "rank": 1
       }
     },
-    "guardianco": {
+    "theguardian": {
       "items": 15,
       "unique_urls": 15,
       "median_days_on_board": 1,
@@ -9602,6 +9602,126 @@
         "rank": 1
       }
     },
+    "miqu": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "My top 5 must-have technical books",
+        "url": "https://miqu.me/blog/2018/01/28/top-5-must-have-technical-books/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "pubnub": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "PubNub DataSync vs. real-time databases: Where your app's live state belongs",
+        "url": "https://www.pubnub.com/blog/datasync-vs-realtime-databases/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "raywenderlich": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "AI-Assisted iOS App Deployment [SUBSCRIBER]",
+        "url": "https://www.kodeco.com/ios/paths/shipping-with-ai/53703960-ai-assisted-ios-app-deployment",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "redlang": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "C++ libraries linking",
+        "url": "https://www.red-lang.org/2026/07/c-libraries-linking.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "serverless": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Web Apps on AWS Lambda",
+        "url": "https://www.serverless.com/blog/web-apps-on-aws-lambda",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "thecodedself": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Perfect is the Enemy of the Good",
+        "url": "https://www.thecodedself.com/Perfect-Is-The-Enemy-Of-The-Good/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "thepolyglotdeveloper": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Multiplayer Game Development with TypeScript, Phaser, Socket.io, and MongoDB",
+        "url": "https://www.thepolyglotdeveloper.com/blog/2026/10/multiplayer-game-development-with-typescript-phaser-socketio-and-mongodb/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "tjmaher": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How to add Static Application Security Testing (SAST) with SonarQube Cloud Free Tier to a GitLab CI/ CD pipeline",
+        "url": "https://www.tjmaher.com/2026/10/how-to-add-static-application-security.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "twilio": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Best practices for implementing Silent Network Authentication in production",
+        "url": "https://www.twilio.com/en-us/blog/developers/best-practices/best-practices-sna",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "windytan": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Passing planes and other whoosh sounds",
+        "url": "https://www.windytan.com/2025/04/passing-planes-and-other-whoosh-sounds.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -10294,6 +10414,18 @@
       "top_item": {
         "title": "I Cut My Test Suite Time in Half by Slicing Up a CSV File",
         "url": "https://joshtronic.com/2026/11/15/i-cut-my-test-suite-time-in-half/",
+        "score": 12,
+        "rank": 1
+      }
+    },
+    "novoda": {
+      "items": 12,
+      "unique_urls": 12,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "We’re a B Corp! Here’s what it means for our clients and impact.",
+        "url": "https://novoda.com/blog/2023/11/16/novoda-is-a-b-corp/",
         "score": 12,
         "rank": 1
       }
@@ -16694,6 +16826,66 @@
         "rank": 1
       }
     },
+    "mattcutts": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Twins!!",
+        "url": "https://www.mattcutts.com/blog/twins/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "reagroup": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Are REA’s Architecture Principles still relevant in an AI-assisted world?",
+        "url": "https://www.rea-group.com/about-us/news-and-insights/blog/are-reas-architecture-principles-still-relevant-in-an-ai-assisted-world/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "schakko": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Unknown status LTE_DIA_IP with FRITZ!Box 6850 LTE and Telekom MagentaMobil Business",
+        "url": "https://www.schakko.de/2025/05/21/unknown-status-lte_dia_ip-with-fritzbox-6850-lte-and-telekom-magentamobil-business/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "surveymonkey": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Webinar | 2027 trend forecast: 5 shifts shaping business next year",
+        "url": "https://www.surveymonkey.com/curiosity/trends-forecast-5-business-shifts/?ut_source=rss",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "zachholman": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The Death of the Angel Investor",
+        "url": "http://zachholman.com/posts/angel-investor-death",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "hackaday": {
       "items": 9,
       "unique_urls": 9,
@@ -16886,6 +17078,18 @@
         "rank": 1
       }
     },
+    "nateberkopec": {
+      "items": 9,
+      "unique_urls": 9,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Thoughts on LLMs in 2026",
+        "url": "https://www.nateberkopec.com/blog/thoughts-on-llms-in-2026/",
+        "score": 9,
+        "rank": 1
+      }
+    },
     "slack_eng": {
       "items": 8,
       "unique_urls": 8,
@@ -17074,6 +17278,18 @@
       "top_item": {
         "title": "Static site generators are weird",
         "url": "https://evanhahn.com/static-site-generators-are-weird/",
+        "score": 8,
+        "rank": 1
+      }
+    },
+    "rosehosting": {
+      "items": 8,
+      "unique_urls": 8,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "How to Set Up Dokploy Self-Hosted PaaS on Debian 13",
+        "url": "https://www.rosehosting.com/blog/how-to-set-up-dokploy-self-hosted-paas-on-debian-13/",
         "score": 8,
         "rank": 1
       }
@@ -18082,6 +18298,18 @@
       "top_item": {
         "title": "Python’s super() considered super!",
         "url": "https://rhettinger.wordpress.com/2011/05/26/super-considered-super/",
+        "score": 3,
+        "rank": 1
+      }
+    },
+    "michaelcrump": {
+      "items": 3,
+      "unique_urls": 3,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "DevRel Field Notes: Build Review Into the Work",
+        "url": "https://www.michaelcrump.net/posts/devrel-field-notes-build-review-into-the-work/",
         "score": 3,
         "rank": 1
       }

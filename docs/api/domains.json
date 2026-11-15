@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T19:53:35.726868+00:00",
+ "generated_at": "2026-11-15T19:56:57.850183+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 1837,
+ "total": 1856,
  "domains": [
   {
    "hostname": "blog.google",
@@ -23,10 +23,11 @@
   {
    "hostname": "theguardian.com",
    "days_on_board": 3,
-   "items": 17,
+   "items": 32,
    "sources": [
     "guardianco",
-    "hackernews"
+    "hackernews",
+    "theguardian"
    ],
    "top_hit": {
     "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
@@ -99,6 +100,23 @@
    }
   },
   {
+   "hostname": "reddit.com",
+   "days_on_board": 2,
+   "items": 34,
+   "sources": [
+    "hackernews",
+    "k8s",
+    "reddit"
+   ],
+   "top_hit": {
+    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+    "score": 382,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
    "hostname": "blog.janestreet.com",
    "days_on_board": 2,
    "items": 33,
@@ -117,26 +135,9 @@
    }
   },
   {
-   "hostname": "reddit.com",
-   "days_on_board": 2,
-   "items": 33,
-   "sources": [
-    "hackernews",
-    "k8s",
-    "reddit"
-   ],
-   "top_hit": {
-    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
-    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
-    "score": 382,
-    "metric": "points",
-    "date": "2026-11-13"
-   }
-  },
-  {
    "hostname": "youtube.com",
    "days_on_board": 2,
-   "items": 32,
+   "items": 33,
    "sources": [
     "bret",
     "caseyliss",

@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T19:53:35.726868+00:00",
+ "generated_at": "2026-11-15T19:56:57.850183+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 19130,
- "new_items": 19003,
+ "total_items": 19379,
+ "new_items": 19252,
  "by_source": {
   "show_hn": 50,
   "producthunt": 45,
-  "hackernews": 37,
-  "reddit": 31,
+  "hackernews": 38,
+  "reddit": 32,
   "theregister": 29,
   "techmeme": 26,
   "slashdot": 21,
@@ -551,6 +551,7 @@
   "mikelikesrobotsgithub": 15,
   "mikepennisi": 15,
   "mikezornek": 15,
+  "miqu": 15,
   "miragecraft": 15,
   "miriamsuzanne": 15,
   "mitchellhanberg": 15,
@@ -637,6 +638,7 @@
   "priver": 15,
   "proceedingsmlr": 15,
   "projectf": 15,
+  "pubnub": 15,
   "pustelto": 15,
   "pythonblog": 15,
   "quii": 15,
@@ -647,10 +649,12 @@
   "rands": 15,
   "rauchg": 15,
   "rawgithubusercontent": 15,
+  "raywenderlich": 15,
   "rdegges": 15,
   "react": 15,
   "reaganray": 15,
   "realpython": 15,
+  "redlang": 15,
   "remysharp": 15,
   "ridiculousfish": 15,
   "rightbadcode": 15,
@@ -683,6 +687,7 @@
   "sebgnotessubstack": 15,
   "securityinbits": 15,
   "seirdy": 15,
+  "serverless": 15,
   "shaneosullivanwordpress": 15,
   "shashankthakur": 15,
   "shkspr": 15,
@@ -744,8 +749,11 @@
   "testingaccessibility": 15,
   "tetralogical": 15,
   "thecodebarbarian": 15,
+  "thecodedself": 15,
   "thecssninja": 15,
+  "theguardian": 15,
   "thenewtoys": 15,
+  "thepolyglotdeveloper": 15,
   "thiscute": 15,
   "thisdavej": 15,
   "thisisoptimal": 15,
@@ -761,6 +769,7 @@
   "tink": 15,
   "tinyhelpers": 15,
   "tinyprojects": 15,
+  "tjmaher": 15,
   "tollwerk": 15,
   "tomeraberba": 15,
   "tonisagrista": 15,
@@ -771,6 +780,7 @@
   "ttntm": 15,
   "tunetheweb": 15,
   "tweag": 15,
+  "twilio": 15,
   "tylergaw": 15,
   "typeofnan": 15,
   "una": 15,
@@ -794,6 +804,7 @@
   "webperf": 15,
   "webplatform": 15,
   "wicki": 15,
+  "windytan": 15,
   "wolvic": 15,
   "worldhey": 15,
   "x065": 15,
@@ -853,6 +864,7 @@
   "lastweekinaws": 12,
   "magpiraspberrypi": 12,
   "meditic": 12,
+  "novoda": 12,
   "paulmillr": 12,
   "pimpmytype": 12,
   "rmondello": 12,
@@ -1189,6 +1201,7 @@
   "mastranskywordpress": 10,
   "mathematicaforpredictionwordpress": 10,
   "matklad": 10,
+  "mattcutts": 10,
   "matthenry": 10,
   "mattmight": 10,
   "mattzeunert": 10,
@@ -1284,6 +1297,7 @@
   "raspberrypi": 10,
   "raymondcamden": 10,
   "reactjsnews": 10,
+  "reagroup": 10,
   "redditinc": 10,
   "redonion": 10,
   "regulargeek": 10,
@@ -1302,6 +1316,7 @@
   "sarahgebauer": 10,
   "satisfice": 10,
   "scarydba": 10,
+  "schakko": 10,
   "schneems": 10,
   "schneier": 10,
   "scottohara": 10,
@@ -1331,6 +1346,7 @@
   "stripe": 10,
   "stubbornella": 10,
   "surfingcomplexity": 10,
+  "surveymonkey": 10,
   "sylormiller": 10,
   "systemdesign": 10,
   "taiwanchtsai": 10,
@@ -1396,6 +1412,7 @@
   "yifan": 10,
   "yuanchuan": 10,
   "yubico": 10,
+  "zachholman": 10,
   "zachleat": 10,
   "zackkanter": 10,
   "zeichenschatz": 10,
@@ -1413,6 +1430,7 @@
   "jeremydormitzer": 9,
   "josebrowne": 9,
   "meta_eng": 9,
+  "nateberkopec": 9,
   "pmdartus": 9,
   "susam": 9,
   "timtech": 9,
@@ -1427,6 +1445,7 @@
   "mikesherov": 8,
   "mozillazggithub": 8,
   "nullprogram": 8,
+  "rosehosting": 8,
   "samwooe": 8,
   "slack_eng": 8,
   "socialclawhammer": 8,
@@ -1511,6 +1530,7 @@
   "irigoyen": 3,
   "jonneal": 3,
   "lalutineduweb": 3,
+  "michaelcrump": 3,
   "michaelfeathers": 3,
   "neugierig": 3,
   "prog21": 3,
@@ -69138,6 +69158,14 @@
    "metric": "points"
   },
   {
+   "title": "A short explainer on how El Niño works [video]",
+   "url": "https://www.youtube.com/watch?v=7_JF3etiAv8",
+   "source": "hackernews",
+   "rank": 20,
+   "score": 48,
+   "metric": "points"
+  },
+  {
    "title": "Introducing Kickstart: the app that helps indie developers ship",
    "url": "https://www.hackingwithswift.com/articles/285/introducing-kickstart-the-app-that-helps-indie-developers-ship",
    "source": "hackingwithswift",
@@ -95362,6 +95390,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Twins!!",
+   "url": "https://www.mattcutts.com/blog/twins/",
+   "source": "mattcutts",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "This is Lindsay, my force of a human",
+   "url": "https://www.mattcutts.com/blog/meet-lindsay/",
+   "source": "mattcutts",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "All the Fitbit activity badges",
+   "url": "https://www.mattcutts.com/blog/all-the-fitbit-activity-badges/",
+   "source": "mattcutts",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Halloween 2018: Crab claws!",
+   "url": "https://www.mattcutts.com/blog/halloween-costume-crab-claws/",
+   "source": "mattcutts",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Some terrible personal news",
+   "url": "https://www.mattcutts.com/blog/cindy-cutts/",
+   "source": "mattcutts",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Talking to Mr. Money Mustache about the US Digital Service",
+   "url": "https://www.mattcutts.com/blog/interview-mr-money-mustache-us-digital-service/",
+   "source": "mattcutts",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Staying with the US Digital Service",
+   "url": "https://www.mattcutts.com/blog/join-the-us-digital-service/",
+   "source": "mattcutts",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A brief update",
+   "url": "https://www.mattcutts.com/blog/heading-to-usds/",
+   "source": "mattcutts",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thanks, Amit",
+   "url": "https://www.mattcutts.com/blog/thanks-amit-singhal/",
+   "source": "mattcutts",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Solving a Verizon issue (Nexus 5X)",
+   "url": "https://www.mattcutts.com/blog/verizon-visual-voicemail-texts/",
+   "source": "mattcutts",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "A design system is what it does",
    "url": "https://matthenry.fyi/posts/a-system-is-what-it-does/",
    "source": "matthenry",
@@ -98722,6 +98830,30 @@
    "metric": "feed rank"
   },
   {
+   "title": "DevRel Field Notes: Build Review Into the Work",
+   "url": "https://www.michaelcrump.net/posts/devrel-field-notes-build-review-into-the-work/",
+   "source": "michaelcrump",
+   "rank": 1,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DevRel Field Notes: Help Developers Decide What to Do Next",
+   "url": "https://www.michaelcrump.net/posts/devrel-field-notes-help-developers-decide/",
+   "source": "michaelcrump",
+   "rank": 2,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hello Again",
+   "url": "https://www.michaelcrump.net/posts/hello-again/",
+   "source": "michaelcrump",
+   "rank": 3,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Generate from Constraints",
    "url": "https://michaelfeathers.silvrback.com/prompt-hoisting-for-gpt-based-code-generation",
    "source": "michaelfeathers",
@@ -100374,6 +100506,126 @@
    "url": "https://starming.com/2024/09/05/iOS-performance-optimization-second-time/",
    "source": "ming1016github",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My top 5 must-have technical books",
+   "url": "https://miqu.me/blog/2018/01/28/top-5-must-have-technical-books/",
+   "source": "miqu",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fixing autocompletion on mixed Objective-C and Swift projects",
+   "url": "https://miqu.me/blog/2017/06/16/fixing-autocompletion-on-mixed-objective-c-and-swift-projects/",
+   "source": "miqu",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Automatic bridging from Swift to Objective-C using Sourcery",
+   "url": "https://miqu.me/blog/2017/05/21/automatic-bridging-from-swift-to-objective-c-using-sourcery/",
+   "source": "miqu",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build settings depending on Xcode version",
+   "url": "https://miqu.me/blog/2017/01/29/temporary-build-settings/",
+   "source": "miqu",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reducing the pain of git bisect with Xcode",
+   "url": "https://miqu.me/blog/2017/01/22/reducing-the-pain-of-git-bisect-with-xcode/",
+   "source": "miqu",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "App extensions, Xcode and Cocoapods, OMG!",
+   "url": "https://miqu.me/blog/2016/11/28/app-extensions-xcode-and-cocoapods-omg/",
+   "source": "miqu",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Easy localization management with Google spreadsheets",
+   "url": "https://miqu.me/blog/2016/11/19/easy-localizations-management-with-spreadsheets/",
+   "source": "miqu",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Controlling time in the app",
+   "url": "https://miqu.me/blog/2016/10/26/controlling-time-in-the-app/",
+   "source": "miqu",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Knowing when to delete code",
+   "url": "https://miqu.me/blog/2016/08/16/knowing-when-to-delete-code/",
+   "source": "miqu",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Xcode 8: New build settings and analyzer improvements",
+   "url": "https://miqu.me/blog/2016/07/31/xcode-8-new-build-settings-and-analyzer-improvements/",
+   "source": "miqu",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dear SDK developer",
+   "url": "https://miqu.me/blog/2016/04/22/dear-sdk-developer/",
+   "source": "miqu",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Xcode 7.3 analyzer improvements",
+   "url": "https://miqu.me/blog/2016/01/21/xcode-7-dot-3-analyzer-improvements/",
+   "source": "miqu",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Transitioning iOS versions",
+   "url": "https://miqu.me/blog/2015/12/14/transitioning-ios-versions/",
+   "source": "miqu",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building Swift on OSX",
+   "url": "https://miqu.me/blog/2015/12/05/building-swift-on-osx/",
+   "source": "miqu",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Three months with XVim",
+   "url": "https://miqu.me/blog/2015/11/19/three-months-with-xvim/",
+   "source": "miqu",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -103838,6 +104090,78 @@
    "url": "https://naildrivin5.com/blog/2025/11/05/discussing-brut-on-dead-code-podcast.html",
    "source": "naildrivin5",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughts on LLMs in 2026",
+   "url": "https://www.nateberkopec.com/blog/thoughts-on-llms-in-2026/",
+   "source": "nateberkopec",
+   "rank": 1,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "37signals Isn't Smarter Than You, But They Are Different",
+   "url": "https://www.nateberkopec.com/blog/37signals-is-not-smarter-than-you/",
+   "source": "nateberkopec",
+   "rank": 2,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Do better, not best - transitioning to a growth mindset",
+   "url": "https://www.nateberkopec.com/blog/growth-over-results/",
+   "source": "nateberkopec",
+   "rank": 3,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2019 Year in Review",
+   "url": "https://www.nateberkopec.com/blog/year-in-review/",
+   "source": "nateberkopec",
+   "rank": 4,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On the packaging of ideas",
+   "url": "https://www.nateberkopec.com/blog/idea-packaging/",
+   "source": "nateberkopec",
+   "rank": 5,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What does it mean to be a open-source project maintainer?",
+   "url": "https://www.nateberkopec.com/blog/what-does-it-mean-do-be-an-oss-maintainer/",
+   "source": "nateberkopec",
+   "rank": 6,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I'm Glad I Failed In Front of Millions on Shark Tank",
+   "url": "https://www.nateberkopec.com/blog/failing-on-shark-tank-changed-my-life/",
+   "source": "nateberkopec",
+   "rank": 7,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How To Get A Computer Science Degree in a Warzone",
+   "url": "https://www.nateberkopec.com/blog/how-to-get-a-computer-science-degree-in-a-warzone/",
+   "source": "nateberkopec",
+   "rank": 8,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I Made $220,033.50 Self-Publishing a Book About Ruby on Rails",
+   "url": "https://www.nateberkopec.com/blog/how-i-made-self-publishing-about-ruby-on-rails/",
+   "source": "nateberkopec",
+   "rank": 9,
    "score": 1,
    "metric": "feed rank"
   },
@@ -107622,6 +107946,102 @@
    "url": "https://notlaura.com/weekly-wanderings-5-5/",
    "source": "notlaura",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We’re a B Corp! Here’s what it means for our clients and impact.",
+   "url": "https://novoda.com/blog/2023/11/16/novoda-is-a-b-corp/",
+   "source": "novoda",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How To Ensure Exceptional Software Quality On Mobile",
+   "url": "https://novoda.com/blog/2023/09/26/how-to-ensure-exceptional-software-quality-on-mobile/",
+   "source": "novoda",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Much Should My Business Invest In Our Mobile Capabilities?",
+   "url": "https://novoda.com/blog/2023/09/21/how-much-should-my-business-invest-in-our-mobile-capabilities/",
+   "source": "novoda",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to create exceptional communication with mobile engineering teams",
+   "url": "https://novoda.com/blog/2023/08/21/how-to-create-exceptional-communication-with-mobile-engineering-teams/",
+   "source": "novoda",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating a Culture of Psychological Safety in Engineering Teams",
+   "url": "https://novoda.com/blog/2023/07/31/creating-a-culture-of-psychological-safety-in-engineering-teams/",
+   "source": "novoda",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How To Communicate Your Vision & Why It Matters",
+   "url": "https://novoda.com/blog/2023/07/19/how-to-communicate-your-vision-why-it-matters/",
+   "source": "novoda",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How To Create A Culture Of Continuous Improvement In Mobile Engineering Teams",
+   "url": "https://novoda.com/blog/2023/07/17/how-to-create-a-culture-of-continuous-improvement-in-mobile-engineering-teams/",
+   "source": "novoda",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Continuous Delivery Improves Mobile Developer Productivity",
+   "url": "https://novoda.com/blog/2023/07/07/how-continuous-delivery-improves-mobile-developer-productivity/",
+   "source": "novoda",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unleashing Productivity: The Power of Generative AI in the White Collar Sector",
+   "url": "https://novoda.com/blog/2023/07/07/unleashing-productivity-the-power-of-generative-ai-in-the-white-collar-sector/",
+   "source": "novoda",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How To Leverage Generative AI in Mobile DevOps",
+   "url": "https://novoda.com/blog/2023/06/07/how-to-leverage-generative-ai-in-mobile-devops/",
+   "source": "novoda",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Mobile Team Enablement Creates Efficiency As You Scale",
+   "url": "https://novoda.com/blog/2023/06/07/how-mobile-team-enablement-creates-efficiency-as-you-scale/",
+   "source": "novoda",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Democratisation of Artificial Intelligence with ChatGPT",
+   "url": "https://novoda.com/blog/2023/04/13/the-democratisation-of-artificial-intelligence-with-chatgpt/",
+   "source": "novoda",
+   "rank": 12,
    "score": 1,
    "metric": "feed rank"
   },
@@ -117842,6 +118262,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "PubNub DataSync vs. real-time databases: Where your app's live state belongs",
+   "url": "https://www.pubnub.com/blog/datasync-vs-realtime-databases/",
+   "source": "pubnub",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why MCP Alone Isn’t Enough for AI-Assisted Real-Time Development",
+   "url": "https://www.pubnub.com/blog/why-mcp-alone-isnt-enough-for-ai-assisted-real-time-development/",
+   "source": "pubnub",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The ultimate guide to fandom engagement in 2026",
+   "url": "https://www.pubnub.com/blog/the-ultimate-guide-to-fandom-engagement-in-2026/",
+   "source": "pubnub",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Coding One Year Later: A Product Manager's Lessons",
+   "url": "https://www.pubnub.com/blog/ai-coding-one-year-later-product-manager/",
+   "source": "pubnub",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building real-time features fast with the PubNub MCP: Eric Lake",
+   "url": "https://www.pubnub.com/blog/building-real-time-features-fast-with-the-pub-nub-mcp-eric-lake/",
+   "source": "pubnub",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "End the agent loneliness epidemic: How to connect your agent to the Dating Block",
+   "url": "https://www.pubnub.com/blog/end-agent-loneliness-how-to-connect-agent-on-dating-block/",
+   "source": "pubnub",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building AI Agents got easier; managing them didn’t: Managing agent sprawl with Blocks Enterprise",
+   "url": "https://www.pubnub.com/blog/managing-agent-sprawl-blocks-enterprise/",
+   "source": "pubnub",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing DataSync: The real-time data store for application state",
+   "url": "https://www.pubnub.com/blog/datasync-release/",
+   "source": "pubnub",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The complete guide to real-time streaming vs batch for agentic workflows",
+   "url": "https://www.pubnub.com/blog/the-complete-guide-to-real-time-streaming-vs-batch-for-agentic-workflows/",
+   "source": "pubnub",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your coding agent spends 26,000 tokens before it reads your prompt: Comparing MCP and CLI",
+   "url": "https://www.pubnub.com/blog/mcp-vs-cli-context-window-cost-blocks-ai",
+   "source": "pubnub",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Meet the new Debug Console in Portal",
+   "url": "https://www.pubnub.com/blog/meet-the-new-debug-console-in-portal/",
+   "source": "pubnub",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From broadcast rights to fan experiences: How SPOTV is rethinking sports engagement in Southeast Asia",
+   "url": "https://www.pubnub.com/blog/from-broadcast-rights-to-fan-experiences-how-spotv-is-rethinking-sports-engagement-in-southeast-asia",
+   "source": "pubnub",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Real-Time Infrastructure for Support Ticket Queues",
+   "url": "https://www.pubnub.com/blog/real-time-queueing-ticketing-systems/",
+   "source": "pubnub",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reference architecture: Real-time data for agentic workflows",
+   "url": "https://www.pubnub.com/blog/agentic-workflows-real-time-architecture/",
+   "source": "pubnub",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Customer Service Platforms Need Real-time Engagement",
+   "url": "https://www.pubnub.com/blog/real-time-customer-engagement-platforms/",
+   "source": "pubnub",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "GOT, PLT, RELRO, and other random characters",
    "url": "https://pugachev.io/2026/11/08/got-plt-relro-and-other-random-characters/",
    "source": "pugachev",
@@ -119962,6 +120502,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "AI-Assisted iOS App Deployment [SUBSCRIBER]",
+   "url": "https://www.kodeco.com/ios/paths/shipping-with-ai/53703960-ai-assisted-ios-app-deployment",
+   "source": "raywenderlich",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using AI for CI & Automation in iOS Projects [SUBSCRIBER]",
+   "url": "https://www.kodeco.com/ios/paths/shipping-with-ai/53703840-using-ai-for-ci-automation-in-ios-projects",
+   "source": "raywenderlich",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reviewing AI-generated Code for iOS [SUBSCRIBER]",
+   "url": "https://www.kodeco.com/ios/paths/validating-ai-code/53703811-reviewing-ai-generated-code-for-ios",
+   "source": "raywenderlich",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s New in Swift 6.4? [FREE]",
+   "url": "https://www.kodeco.com/53754585-what-s-new-in-swift-6-4",
+   "source": "raywenderlich",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using AI for Testing in iOS [SUBSCRIBER]",
+   "url": "https://www.kodeco.com/ios/paths/validating-ai-code/53684638-using-ai-for-testing-in-ios",
+   "source": "raywenderlich",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Codebase Exploration with AI [SUBSCRIBER]",
+   "url": "https://www.kodeco.com/ios/paths/ai-assisted-ios-dev/53684539-codebase-exploration-with-ai",
+   "source": "raywenderlich",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI-Assisted iOS Development",
+   "url": "https://www.kodeco.com/ios/programs/ai-assisted-ios-development",
+   "source": "raywenderlich",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iOS Feature Implementation Using AI [SUBSCRIBER]",
+   "url": "https://www.kodeco.com/ios/paths/planning-building-features-ai/53684606-ios-feature-implementation-using-ai",
+   "source": "raywenderlich",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI-Assisted Feature Development for iOS [SUBSCRIBER]",
+   "url": "https://www.kodeco.com/ios/paths/planning-building-features-ai/53684583-ai-assisted-feature-development-for-ios",
+   "source": "raywenderlich",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting Started with AI-Augmented Coding in iOS [SUBSCRIBER]",
+   "url": "https://www.kodeco.com/ios/paths/ai-assisted-ios-dev/53684496-getting-started-with-ai-augmented-coding-in-ios",
+   "source": "raywenderlich",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kodebits: September 2026: Day 100 and a Pause [FREE]",
+   "url": "https://www.kodeco.com/54531900-kodebits-september-2026-day-100-and-a-pause",
+   "source": "raywenderlich",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kodebits Day 100: Enum Cases [FREE]",
+   "url": "https://www.kodeco.com/52032952-kodebits-day-100-enum-cases",
+   "source": "raywenderlich",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kodebits Day 99: Tail Recursion [FREE]",
+   "url": "https://www.kodeco.com/52032950-kodebits-day-99-tail-recursion",
+   "source": "raywenderlich",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kodebits Day 98: Filter Evens [FREE]",
+   "url": "https://www.kodeco.com/52032948-kodebits-day-98-filter-evens",
+   "source": "raywenderlich",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kodebits Day 97: Enumerated Loop [FREE]",
+   "url": "https://www.kodeco.com/52032946-kodebits-day-97-enumerated-loop",
+   "source": "raywenderlich",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "I'm Writing Again",
    "url": "https://rdegges.com/2024/im-writing-again/",
    "source": "rdegges",
@@ -120402,6 +121062,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Are REA’s Architecture Principles still relevant in an AI-assisted world?",
+   "url": "https://www.rea-group.com/about-us/news-and-insights/blog/are-reas-architecture-principles-still-relevant-in-an-ai-assisted-world/",
+   "source": "reagroup",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Android Journey Tests with Gemini: CI Setup & 11-Week Review",
+   "url": "https://www.rea-group.com/about-us/news-and-insights/blog/android-journey-tests-with-gemini-ci-setup-11-week-review/",
+   "source": "reagroup",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Five Lessons from My Journey as a Platform Product Manager at REA",
+   "url": "https://www.rea-group.com/about-us/news-and-insights/blog/five-lessons-from-my-journey-as-a-platform-product-manager-at-rea/",
+   "source": "reagroup",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Day in the Life as a Tech Grad (Office Edition)",
+   "url": "https://www.rea-group.com/about-us/news-and-insights/blog/a-day-in-the-life-as-a-tech-grad-office-edition/",
+   "source": "reagroup",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Path to Head of Engineering",
+   "url": "https://www.rea-group.com/about-us/news-and-insights/blog/my-path-to-head-of-engineering/",
+   "source": "reagroup",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding my path: from tech graduate to Machine Learning Engineer",
+   "url": "https://www.rea-group.com/about-us/news-and-insights/blog/finding-my-path-from-tech-graduate-to-machine-learning-engineer/",
+   "source": "reagroup",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tips for Safer Internet Day",
+   "url": "https://www.rea-group.com/about-us/news-and-insights/blog/real-estate-in-the-digital-age-tips-for-safer-internet-day/",
+   "source": "reagroup",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scaling Technology with Architectural Principles",
+   "url": "https://www.rea-group.com/about-us/news-and-insights/blog/scaling-technology-with-architectural-principles/",
+   "source": "reagroup",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The grads that built our ‘Culture Lab’ app",
+   "url": "https://www.rea-group.com/about-us/news-and-insights/blog/the-grads-that-built-our-culture-lab-app/",
+   "source": "reagroup",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Argonaut: Part Seven.",
+   "url": "https://www.rea-group.com/about-us/news-and-insights/blog/introducing-argonaut-part-seven/",
+   "source": "reagroup",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Scientific Python: Using SciPy for Optimization",
    "url": "https://realpython.com/python-scipy-cluster-optimize/",
    "source": "realpython",
@@ -120690,6 +121430,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "We made a multiplayer game where each player's view is generated by a world model running on their GPU [P]",
+   "url": "https://www.reddit.com/r/MachineLearning/comments/1xx4ta3/we_made_a_multiplayer_game_where_each_players/",
+   "source": "reddit",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
    "title": "ICLR rebuttal [R]",
    "url": "https://www.reddit.com/r/MachineLearning/comments/1xw19o8/iclr_rebuttal_r/",
    "source": "reddit",
@@ -120846,6 +121594,126 @@
    "url": "https://redditinc.com/news/paul-cappuccio-named-reddits-new-chief-legal-officer",
    "source": "redditinc",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "C++ libraries linking",
+   "url": "https://www.red-lang.org/2026/07/c-libraries-linking.html",
+   "source": "redlang",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Static linking support",
+   "url": "https://www.red-lang.org/2026/06/static-linking-support.html",
+   "source": "redlang",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Multiple monitors support",
+   "url": "https://www.red-lang.org/2025/04/multiple-monitors-support.html",
+   "source": "redlang",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "0.6.6: Memory Management Improvements",
+   "url": "https://www.red-lang.org/2025/03/066-memory-management-improvements.html",
+   "source": "redlang",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Text-UI View backend",
+   "url": "https://www.red-lang.org/2024/06/text-ui-view-backend.html",
+   "source": "redlang",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Red in the real world",
+   "url": "https://www.red-lang.org/2024/05/red-in-real-world.html",
+   "source": "redlang",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "0.6.5: Changelog",
+   "url": "https://www.red-lang.org/2024/02/065-changelog.html",
+   "source": "redlang",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Important Change! Switching map and construction syntax.",
+   "url": "https://www.red-lang.org/2024/02/important-change-switching-map-and.html",
+   "source": "redlang",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tab Navigation",
+   "url": "https://www.red-lang.org/2023/11/tab-navigation.html",
+   "source": "redlang",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Subpixel GUI",
+   "url": "https://www.red-lang.org/2023/08/subpixel-gui.html",
+   "source": "redlang",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dynamic Refinements and Function Application",
+   "url": "https://www.red-lang.org/2023/06/dynamic-refinements-and-function.html",
+   "source": "redlang",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Red binaries",
+   "url": "https://www.red-lang.org/2022/07/new-red-binaries.html",
+   "source": "redlang",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Road To 1.0",
+   "url": "https://www.red-lang.org/2022/07/the-road-to-10.html",
+   "source": "redlang",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2021 Winding Down",
+   "url": "https://www.red-lang.org/2021/12/2021-winding-down.html",
+   "source": "redlang",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Long Time No Blog",
+   "url": "https://www.red-lang.org/2021/08/long-time-no-blog.html",
+   "source": "redlang",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -123134,6 +124002,70 @@
    "url": "https://romaricpascal.is/posts/revisiting-the-language-switcher-indexing-content",
    "source": "romaricpascal",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Set Up Dokploy Self-Hosted PaaS on Debian 13",
+   "url": "https://www.rosehosting.com/blog/how-to-set-up-dokploy-self-hosted-paas-on-debian-13/",
+   "source": "rosehosting",
+   "rank": 1,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Install Zabbix Server and Agent on Ubuntu 26.04 (2026 Guide)",
+   "url": "https://www.rosehosting.com/blog/how-to-install-zabbix-server-and-agent-on-ubuntu-26-04-2026-guide/",
+   "source": "rosehosting",
+   "rank": 2,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Integrate Prometheus with Alertmanager for Advanced Alerting (Beyond Basic Grafana Setup)",
+   "url": "https://www.rosehosting.com/blog/how-to-integrate-prometheus-with-alertmanager/",
+   "source": "rosehosting",
+   "rank": 3,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How To Set Up a Firewall with UFW on Debian 13",
+   "url": "https://www.rosehosting.com/blog/how-to-set-up-a-firewall-with-ufw-on-debian-13/",
+   "source": "rosehosting",
+   "rank": 4,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Deploy Multi-Container Applications with Docker Compose on Debian 13",
+   "url": "https://www.rosehosting.com/blog/how-to-deploy-multi-container-applications-with-docker-compose-on-debian-13/",
+   "source": "rosehosting",
+   "rank": 5,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Set Up Traefik as a Reverse Proxy with Automatic SSL",
+   "url": "https://www.rosehosting.com/blog/how-to-set-up-traefik-as-a-reverse-proxy-with-automatic-ssl/",
+   "source": "rosehosting",
+   "rank": 6,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Set Up Basic ELK Stack (or Lightweight Alternative) for Log Management on AlmaLinux 10",
+   "url": "https://www.rosehosting.com/blog/how-to-set-up-basic-elk-stack-or-lightweight-alternative-for-log-management-on-almalinux-10/",
+   "source": "rosehosting",
+   "rank": 7,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Install and Use Portainer for Docker Container Management on Ubuntu 26.04",
+   "url": "https://www.rosehosting.com/blog/how-to-install-and-use-portainer-for-docker-container-management-on-ubuntu-26-04/",
+   "source": "rosehosting",
+   "rank": 8,
    "score": 1,
    "metric": "feed rank"
   },
@@ -125562,6 +126494,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Unknown status LTE_DIA_IP with FRITZ!Box 6850 LTE and Telekom MagentaMobil Business",
+   "url": "https://www.schakko.de/2025/05/21/unknown-status-lte_dia_ip-with-fritzbox-6850-lte-and-telekom-magentamobil-business/",
+   "source": "schakko",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Migrating from 2 TByte SSD with MBR to 4 TByte with GPT",
+   "url": "https://www.schakko.de/2024/12/19/migrating-from-2-tbyte-ssd-with-mbr-to-4-tbyte-with-gpt/",
+   "source": "schakko",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fixing “Guided Access app unavailable. Please contact your administrator” when using Microsoft Intune and Endpoint Manager",
+   "url": "https://www.schakko.de/2022/03/16/fixing-guided-access-app-unavailable-please-contact-your-administrator-when-using-microsoft-intune-and-endpoint-manager/",
+   "source": "schakko",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Distributing Adobe Acrobat DC with Microsoft Intune and Endpoint Manager",
+   "url": "https://www.schakko.de/2021/12/07/distributing-adobe-acrobat-dc-with-microsoft-intune-and-endpoint-manager/",
+   "source": "schakko",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deploying PHP 8.0 applications with Azure App Service",
+   "url": "https://www.schakko.de/2021/09/08/deploying-php-8-0-applications-with-azure-app-service/",
+   "source": "schakko",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using GitHub Workflow with Maven dependencices from a private GitHub Package Registry",
+   "url": "https://www.schakko.de/2020/12/19/using-github-workflow-with-maven-dependencies-from-a-private-github-package-registry/",
+   "source": "schakko",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Diagnosing and fixing an ERR_CONNECTION_RESET error in WordPress",
+   "url": "https://www.schakko.de/2020/12/14/diagnosing-and-fixing-an-err_connection_reset-error-in-wordpress/",
+   "source": "schakko",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fixing HTTP 401 Unauthorized when calling WooCommerce’s REST API",
+   "url": "https://www.schakko.de/2020/09/05/fixing-http-401-unauthorized-when-calling-woocommerces-rest-api/",
+   "source": "schakko",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My software developer’s journey of narrowing down thought constructs I believe in",
+   "url": "https://www.schakko.de/2020/08/30/my-software-developers-journey-of-narrowing-down-thought-constrcuts-i-believe-in/",
+   "source": "schakko",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Restrict SSH to rsync for deploying files with GitHub Actions",
+   "url": "https://www.schakko.de/2020/07/20/restrict-ssh-to-rsync-for-deploying-files-with-github-actions/",
+   "source": "schakko",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Effects for the Web!",
    "url": "https://schepp.dev/posts/effects-for-the-web/",
    "source": "schepp",
@@ -127414,6 +128426,126 @@
    "url": "https://serokell.io/blog/rust-haskell-and-the-architecture-behind-solana-interview-with-greg-fitzgerald",
    "source": "serokell",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Apps on AWS Lambda",
+   "url": "https://www.serverless.com/blog/web-apps-on-aws-lambda",
+   "source": "serverless",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dev Mode V2 for AWS Lambda",
+   "url": "https://www.serverless.com/blog/dev-mode-v2",
+   "source": "serverless",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Serverless Framework Is Now Built for AI Coding Agents",
+   "url": "https://www.serverless.com/blog/serverless-framework-built-for-ai-coding-agents",
+   "source": "serverless",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deploy MCP Servers on AWS Lambda with Serverless Framework v4",
+   "url": "https://www.serverless.com/blog/deploy-mcp-servers-on-aws-lambda-with-serverless-framework-v4",
+   "source": "serverless",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Easily Develop AWS Lambda MicroVM Sandbox Architectures",
+   "url": "https://www.serverless.com/blog/aws-lambda-microvms-sandboxes",
+   "source": "serverless",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AWS Bedrock AgentCore, S3 File Mounts, Python & Install Improvements",
+   "url": "https://www.serverless.com/blog/aws-bedrock-agentcore-s3-file-mounts-python-install-improvements",
+   "source": "serverless",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Newsletter: Managed Instances, Durable Functions, Core Integrations",
+   "url": "https://www.serverless.com/blog/newsletter-managed-instances-durable-functions-core-integrations",
+   "source": "serverless",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Newsletter: Use new AWS re:Invent features today",
+   "url": "https://www.serverless.com/blog/use-new-aws-re-invent-features-today",
+   "source": "serverless",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Newsletter: Improved Python Support, Merging Plugins into Core, and more",
+   "url": "https://www.serverless.com/blog/newsletter-nov-2025-improved-python-support-merging-plugins-into-core-and-more",
+   "source": "serverless",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Self-Hosting AI Agents on AWS with Serverless Container Framework v2",
+   "url": "https://www.serverless.com/blog/self-hosting-ai-agents-on-aws-with-serverless-container-framework-v2",
+   "source": "serverless",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing the Serverless MCP",
+   "url": "https://www.serverless.com/blog/introducing-the-serverless-mcp",
+   "source": "serverless",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Serverless Container Framework",
+   "url": "https://www.serverless.com/blog/introducing-serverless-container-framework",
+   "source": "serverless",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing The AWS AI Stack",
+   "url": "https://www.serverless.com/blog/aws-ai-stack",
+   "source": "serverless",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Slash AWS Lambda Observability Costs with Serverless Framework’s Axiom Integration",
+   "url": "https://www.serverless.com/blog/serverless-framework-axiom-integration",
+   "source": "serverless",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Serverless Framework Now Supports AWS SAM & Cloudformation",
+   "url": "https://www.serverless.com/blog/serverless-framework-now-supports-aws-sam-cloudformation",
+   "source": "serverless",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -134970,6 +136102,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Webinar | 2027 trend forecast: 5 shifts shaping business next year",
+   "url": "https://www.surveymonkey.com/curiosity/trends-forecast-5-business-shifts/?ut_source=rss",
+   "source": "surveymonkey",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ask the Market: Shoppers are feeling the holiday price squeeze. Here’s what they’re doing differently.",
+   "url": "https://www.surveymonkey.com/curiosity/ask-the-market-holiday-shopping-pricing/?ut_source=rss",
+   "source": "surveymonkey",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing new HRIS integrations: Connect employee feedback to your people data",
+   "url": "https://www.surveymonkey.com/curiosity/hris-integrations-workday-bamboohr/?ut_source=rss",
+   "source": "surveymonkey",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SurveyMonkey Research: AI Sentiment Study",
+   "url": "https://www.surveymonkey.com/curiosity/surveymonkey-research-ai-sentiment-study/?ut_source=rss",
+   "source": "surveymonkey",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SurveyMonkey Research: Customer Feedback (Canada)",
+   "url": "https://www.surveymonkey.com/curiosity/surveymonkey-research-customer-feedback-ca/?ut_source=rss",
+   "source": "surveymonkey",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Webinar | DIY Market Research – How to get expert-level insights without an expert research team",
+   "url": "https://www.surveymonkey.com/curiosity/diy-research-how-to-get-expert-level-human-insights/?ut_source=rss",
+   "source": "surveymonkey",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bridging purpose through listening: Our 2025 Social Impact Report",
+   "url": "https://www.surveymonkey.com/curiosity/2025-social-impact-report/?ut_source=rss",
+   "source": "surveymonkey",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CNBC and SurveyMonkey Quarterly Money Survey (October 2026)",
+   "url": "https://www.surveymonkey.com/curiosity/cnbc-money-survey-affordability-october-2026/?ut_source=rss",
+   "source": "surveymonkey",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ask the Market: People are already using AI for mental health. Here’s what they actually trust it to do.",
+   "url": "https://www.surveymonkey.com/curiosity/ask-the-market-mental-health-ai/?ut_source=rss",
+   "source": "surveymonkey",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On the ground at HubSpot UNBOUND: The new rules of market research in an AI world",
+   "url": "https://www.surveymonkey.com/curiosity/hubspot-unbound-market-research-engine/?ut_source=rss",
+   "source": "surveymonkey",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Childhood Computing",
    "url": "https://susam.net/childhood-computing.html",
    "source": "susam",
@@ -139170,6 +140382,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Perfect is the Enemy of the Good",
+   "url": "https://www.thecodedself.com/Perfect-Is-The-Enemy-Of-The-Good/",
+   "source": "thecodedself",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "UI Testing the Clean Way",
+   "url": "https://www.thecodedself.com/UI-Testing-The-Clean-Way/",
+   "source": "thecodedself",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating a macOS Action (Gear) Button Programmatically in Swift",
+   "url": "https://www.thecodedself.com/macOS-action-button-swift/",
+   "source": "thecodedself",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Autoresizing Masks and You",
+   "url": "https://www.thecodedself.com/autoresizing-masks/",
+   "source": "thecodedself",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Functions Deserve Injection, Too",
+   "url": "https://www.thecodedself.com/functions-deserve-injection/",
+   "source": "thecodedself",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Staying Sane with Cuckoo and Code Generation",
+   "url": "https://www.thecodedself.com/cuckoo-and-code-generation/",
+   "source": "thecodedself",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lessons learned from Systems Thinking",
+   "url": "https://www.thecodedself.com/systems-thinking/",
+   "source": "thecodedself",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iOS: Animating your own toast view",
+   "url": "https://www.thecodedself.com/iOS-Toast-View-Animation/",
+   "source": "thecodedself",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iOS: Working with Images from a Server",
+   "url": "https://www.thecodedself.com/Swift-Send-Image-To-Server/",
+   "source": "thecodedself",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vim and Swift: Development in a post-apocalyptic world",
+   "url": "https://www.thecodedself.com/Vim-Swift/",
+   "source": "thecodedself",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your Other Job",
+   "url": "https://www.thecodedself.com/Your-Other-Job/",
+   "source": "thecodedself",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Half-Baked Solutions to Common RxSwift Problems",
+   "url": "https://www.thecodedself.com/Half-Baked-Solutions-To-Common-RxSwift-Problems/",
+   "source": "thecodedself",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lessons Learned From The Entelect Way",
+   "url": "https://www.thecodedself.com/Lessons-Learned-From-The-Entelect-Way/",
+   "source": "thecodedself",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Android Development Through the Eyes of an iOS Developer",
+   "url": "https://www.thecodedself.com/Android-Development-Through-the-Eyes-of-an-iOS-Developer/",
+   "source": "thecodedself",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using Multiple Author Identities With Git",
+   "url": "https://www.thecodedself.com/Using-Multiple-Author-Identities-With-Git/",
+   "source": "thecodedself",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Using agents to fix Xbox cloud stream issues",
    "url": "https://ryanseddon.com/hacking/agents-xbox-tailscale-stream-fix/",
    "source": "thecssninja",
@@ -139285,6 +140617,126 @@
    "title": "An earth mosaic",
    "url": "https://ryanseddon.com/javascript/an-earth-mosaic/",
    "source": "thecssninja",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cooking up recipe data for the Feast app",
+   "url": "https://www.theguardian.com/info/2024/sep/23/cooking-up-recipe-data-for-the-feast-app",
+   "source": "theguardian",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Day in the Life: Alex Guild",
+   "url": "https://www.theguardian.com/info/article/2024/sep/06/day-in-the-life-alex-guild",
+   "source": "theguardian",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Parsing: the merit of strictly typed JSON",
+   "url": "https://www.theguardian.com/info/article/2024/jul/26/parsing-the-merit-of-strictly-typed-json",
+   "source": "theguardian",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hack Day: Summer of Sport Fall of Democracy",
+   "url": "https://www.theguardian.com/info/article/2024/jun/17/hack-day-summer-of-sport-fall-of-democracy",
+   "source": "theguardian",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When security matters: working with Qubes OS at the Guardian",
+   "url": "https://www.theguardian.com/info/2024/apr/04/when-security-matters-working-with-qubes-os-at-the-guardian",
+   "source": "theguardian",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pinboard: transforming communication across the newsroom (part 3 of 3)",
+   "url": "https://www.theguardian.com/info/2024/feb/10/pinboard-transforming-communication-across-the-newsroom-part-3-of-3",
+   "source": "theguardian",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pinboard: transforming communication across the newsroom (part 2 of 3)",
+   "url": "https://www.theguardian.com/info/2024/feb/09/pinboard-transforming-communication-across-the-newsroom-part-2-of-3",
+   "source": "theguardian",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pinboard: transforming communication across the newsroom (part 1 of 3)",
+   "url": "https://www.theguardian.com/info/2024/feb/08/pinboard-transforming-communication-across-the-newsroom-part-1-of-3",
+   "source": "theguardian",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Digital Fellowship is your foot in the door to the future of news",
+   "url": "https://www.theguardian.com/info/2018/may/02/the-digital-fellowship-is-your-foot-in-the-door-to-the-future-of-news",
+   "source": "theguardian",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Large language models and generative AI: a recent hack day",
+   "url": "https://www.theguardian.com/info/2023/dec/22/large-language-models-and-generative-ai-a-recent-hack-day",
+   "source": "theguardian",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making Typerighter work harder",
+   "url": "https://www.theguardian.com/info/2023/dec/11/making-typerighter-work-harder-engineering-blog",
+   "source": "theguardian",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Who said what: using machine learning to correctly attribute quotes",
+   "url": "https://www.theguardian.com/info/2023/nov/21/who-said-what-using-machine-learning-to-correctly-attribute-quotes",
+   "source": "theguardian",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Standardisation: the merit of consistent patterns",
+   "url": "https://www.theguardian.com/info/2023/oct/24/standardisation-the-merit-of-consistent-patterns",
+   "source": "theguardian",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From a zebra to a rotating banner: how we stepped up your ability to Support the Guardian over the last seven years",
+   "url": "https://www.theguardian.com/info/2023/sep/12/from-a-zebra-to-a-rotating-banner-how-we-stepped-up-your-ability-to-support-the-guardian-over-the-last-seven-years",
+   "source": "theguardian",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Aurora Serverless – a migration story",
+   "url": "https://www.theguardian.com/info/2023/aug/16/serverless-postgres-at-the-guardian",
+   "source": "theguardian",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -139837,6 +141289,126 @@
    "title": "New: Logical Assignment Operators",
    "url": "https://thenewtoys.dev/blog/2020/07/21/logical-assignment-operators/",
    "source": "thenewtoys",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Multiplayer Game Development with TypeScript, Phaser, Socket.io, and MongoDB",
+   "url": "https://www.thepolyglotdeveloper.com/blog/2026/10/multiplayer-game-development-with-typescript-phaser-socketio-and-mongodb/",
+   "source": "thepolyglotdeveloper",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Resty Desktop, a GUI for the Restic Backup Application",
+   "url": "https://www.thepolyglotdeveloper.com/blog/2026/06/resty-desktop-a-gui-for-the-restic-backup-application/",
+   "source": "thepolyglotdeveloper",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Test Password Strength and Password History with TypeScript and MongoDB",
+   "url": "https://www.thepolyglotdeveloper.com/blog/2026/06/test-password-strength-and-password-history-with-typescript-and-mongodb/",
+   "source": "thepolyglotdeveloper",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Extract Text from Your PDF and Image Files with Apache Tika",
+   "url": "https://www.thepolyglotdeveloper.com/blog/2026/06/extract-text-from-your-pdf-and-image-files-with-apache-tika/",
+   "source": "thepolyglotdeveloper",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Install MongoDB on Ubuntu: A Step-by-Step Guide for Beginners",
+   "url": "https://www.thepolyglotdeveloper.com/blog/2026/06/how-to-install-mongodb-on-ubuntu-a-step-by-step-guide-for-beginners/",
+   "source": "thepolyglotdeveloper",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Running MongoDB in Docker - A Complete Guide with Examples",
+   "url": "https://www.thepolyglotdeveloper.com/blog/2026/05/running-mongodb-in-docker-a-complete-guide-with-examples/",
+   "source": "thepolyglotdeveloper",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Design Nested Documents for a Blogging App",
+   "url": "https://www.thepolyglotdeveloper.com/blog/2026/05/how-to-design-nested-documents-for-a-blogging-app/",
+   "source": "thepolyglotdeveloper",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MongoDB and GraphQL: A Perfect Match",
+   "url": "https://www.thepolyglotdeveloper.com/blog/2026/05/mongodb-and-graphql-a-perfect-match/",
+   "source": "thepolyglotdeveloper",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a REST API With Express Framework and MongoDB",
+   "url": "https://www.thepolyglotdeveloper.com/blog/2026/05/building-a-rest-api-with-express-framework-and-mongodb/",
+   "source": "thepolyglotdeveloper",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build a Real-Time Voice Interview Coach with TypeScript and LiveKit",
+   "url": "https://www.thepolyglotdeveloper.com/blog/2026/05/build-a-real-time-voice-interview-coach-with-typescript-and-livekit/",
+   "source": "thepolyglotdeveloper",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing CFP Manager to Manage Speaking Engagements for the Team",
+   "url": "https://www.thepolyglotdeveloper.com/blog/2026/05/introducing-cfp-manager-to-manage-speaking-engagements-for-the-team/",
+   "source": "thepolyglotdeveloper",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using Dot Notation to Query Nested Fields in MongoDB",
+   "url": "https://www.thepolyglotdeveloper.com/blog/2026/04/using-dot-notation-to-query-nested-fields-in-mongodb/",
+   "source": "thepolyglotdeveloper",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build a Movie Watchlist with Node.js, TypeScript, and MongoDB",
+   "url": "https://www.thepolyglotdeveloper.com/blog/2026/04/build-movie-watchlist-nodejs-typescript-mongodb/",
+   "source": "thepolyglotdeveloper",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Easy Automated Docker Volume Backups That Are Database Friendly",
+   "url": "https://www.thepolyglotdeveloper.com/blog/2025/05/easy-automated-docker-volume-backups-database-friendly/",
+   "source": "thepolyglotdeveloper",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Migrating Your Content Management System (CMS) Assets With MongoDB and Node.js",
+   "url": "https://www.thepolyglotdeveloper.com/blog/2025/05/migrating-your-content-management-system-cms-assets-with-mongodb-and-nodejs/",
+   "source": "thepolyglotdeveloper",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -142306,6 +143878,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "How to add Static Application Security Testing (SAST) with SonarQube Cloud Free Tier to a GitLab CI/ CD pipeline",
+   "url": "https://www.tjmaher.com/2026/10/how-to-add-static-application-security.html",
+   "source": "tjmaher",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refactoring The-Internet: Deploying the web app to Render",
+   "url": "https://www.tjmaher.com/2026/10/refactoring-theinternet-deploying-web.html",
+   "source": "tjmaher",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refactoring The-Internet: Fork, Fix, Farewell to Heroku and hello to Render!",
+   "url": "https://www.tjmaher.com/2026/10/refactoring-internet-fork-fix-farewell.html",
+   "source": "tjmaher",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The thoroughness of Tom Johnson's free Documenting API's course on OpenAPI 3.0 and Swagger UI",
+   "url": "https://www.tjmaher.com/2026/09/the-thoroughness-of-tom-johnsons-free.html",
+   "source": "tjmaher",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Testing the Swagger Petstore: Manually Testing An API Using Swagger UI",
+   "url": "https://www.tjmaher.com/2026/09/testing-swagger-petstore-manually.html",
+   "source": "tjmaher",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Testing the Swagger Petstore: Reviewing API Documentation Formatted in OpenAPI 3.0 with Swagger UI",
+   "url": "https://www.tjmaher.com/2026/09/reviewing-api-documentation-formatted.html",
+   "source": "tjmaher",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Publishing Playwright HTML reports on GitLab Pages",
+   "url": "https://www.tjmaher.com/2026/08/publishing-playwright-html-reports-on.html",
+   "source": "tjmaher",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Examining the artifacts job of a Playwright GitLab CI / CD pipeline",
+   "url": "https://www.tjmaher.com/2026/08/examining-artifacts-job-of-playwright.html",
+   "source": "tjmaher",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Developers Can Test Their Feature Branch Against Various Playwright Configurations Before Creating a Merge Request in GitLab CI/CD",
+   "url": "https://www.tjmaher.com/2026/08/how-developers-can-test-their-feature.html",
+   "source": "tjmaher",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Setting up a CI/ CD pipeline with GitLab: Quality, Test and Report",
+   "url": "https://www.tjmaher.com/2026/08/setting-up-ci-cd-pipeline-with-gitlab.html",
+   "source": "tjmaher",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Configure Playwright Test to run smoke tests, headed tests, and debug versions through scripts in package.json",
+   "url": "https://www.tjmaher.com/2026/08/how-to-configure-playwright-test-to-run.html",
+   "source": "tjmaher",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Implementing Page Objects in Playwright",
+   "url": "https://www.tjmaher.com/2026/08/implementing-page-objects-in-playwright.html",
+   "source": "tjmaher",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Playwright Frameworks get configured with playwright.config.ts",
+   "url": "https://www.tjmaher.com/2026/08/how-playwright-frameworks-get.html",
+   "source": "tjmaher",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Running Tests with Playwright Test Explorer and Generating Tests with Codegen",
+   "url": "https://www.tjmaher.com/2026/08/running-tests-with-playwright-test.html",
+   "source": "tjmaher",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Checking code with lint, formatting it with prettier",
+   "url": "https://www.tjmaher.com/2026/08/checking-code-with-lint-formatting-it.html",
+   "source": "tjmaher",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "What's New in Notehub—September 2026 Edition",
    "url": "https://www.tjvantoll.com/2026/09/02/blues/",
    "source": "tjvantoll",
@@ -144437,6 +146129,126 @@
    "title": "Accessing external resources reliably with Bazel",
    "url": "https://tweag.io/blog/2026-04-02-making-bazel-builds-more-reliable/",
    "source": "tweag",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Best practices for implementing Silent Network Authentication in production",
+   "url": "https://www.twilio.com/en-us/blog/developers/best-practices/best-practices-sna",
+   "source": "twilio",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Brilliant Builds Season 2: Rethinking Enterprise AI Across the Customer Journey",
+   "url": "https://www.twilio.com/en-us/blog/events/Builders-in-the-Spotlight--How-EMEA-Champions-Brought-SIGNAL-Paris-to-Life",
+   "source": "twilio",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Brilliant Builds Season 2: Rethinking Enterprise AI Across the Customer Journey",
+   "url": "https://www.twilio.com/en-us/blog/events/Brilliant-Builds-Rethinking-Enterprise-AI-Across-the-Customer-Journey",
+   "source": "twilio",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to share customer context across chat, SMS, and voice",
+   "url": "https://www.twilio.com/en-us/blog/insights/omnichannel-customer-context",
+   "source": "twilio",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PHP2Shell. What is it and What Do You Need to Do?",
+   "url": "https://www.twilio.com/en-us/blog/developers/tutorials/php2shell-what-is-it-what-do-you-need-to-do",
+   "source": "twilio",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Transitioning Your Communications: How to Keep Customer Messages Flowing Seamlessly",
+   "url": "https://www.twilio.com/en-us/blog/partners/integrations/transition-communications-tyntec-twilio",
+   "source": "twilio",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7 questions to ask a customer engagement platform before you commit",
+   "url": "https://www.twilio.com/en-us/blog/insights/customer-engagement-platform-lock-in-questions",
+   "source": "twilio",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "21 types of emails explained (with tips & examples)",
+   "url": "https://www.twilio.com/en-us/blog/insights/5-email-types-explained-with-examples",
+   "source": "twilio",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speed to a person isn't an AI failure: It may be it’s best feature",
+   "url": "https://www.twilio.com/en-us/blog/insights/speed-to-person-is-not-AI-failure",
+   "source": "twilio",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The AI race is actually a context race",
+   "url": "https://www.twilio.com/en-us/blog/insights/ai-race-is-context-race",
+   "source": "twilio",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Broadcast text messaging: What is it & how to use it",
+   "url": "https://www.twilio.com/en-us/blog/what-is-broadcast-messaging",
+   "source": "twilio",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How much does call center outsourcing cost in 2027?",
+   "url": "https://www.twilio.com/en-us/blog/insights/cloud-comms/call-center-services-pricing",
+   "source": "twilio",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to build an AI agent that remembers returning customers",
+   "url": "https://www.twilio.com/en-us/blog/insights/ai-agent-remember-returning-customers",
+   "source": "twilio",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How brands start trusted conversations on Apple Messages for Business",
+   "url": "https://www.twilio.com/en-us/blog/products/launches/how-brands-start-trusted-conversations-on-apple-messages-for-bus",
+   "source": "twilio",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why We Expanded our Internship Program this Year",
+   "url": "https://www.twilio.com/en-us/blog/company/inside-twilio/intern-program-expansion-2026",
+   "source": "twilio",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -150090,6 +151902,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Passing planes and other whoosh sounds",
+   "url": "https://www.windytan.com/2025/04/passing-planes-and-other-whoosh-sounds.html",
+   "source": "windytan",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ultrasonic investigations in shopping centres",
+   "url": "https://www.windytan.com/2024/06/ultrasonic-investigations-in-shopping.html",
+   "source": "windytan",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Smoother sailing: Studying audio imperfections in Steamboat Willie",
+   "url": "https://www.windytan.com/2024/01/smoother-sailing-steamboat-willie-flutter.html",
+   "source": "windytan",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using HDMI EMI for fast wireless data transfer",
+   "url": "https://www.windytan.com/2023/02/using-hdmi-radio-interference-for-high.html",
+   "source": "windytan",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Spiral spectrograms and intonation illustrations",
+   "url": "https://www.windytan.com/2021/11/spiral-spectrograms-and-intonation.html",
+   "source": "windytan",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speech to birdsong conversion",
+   "url": "https://www.windytan.com/2021/03/speech-to-birdsong-conversion.html",
+   "source": "windytan",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Plotting patterns in music with a fantasy record player",
+   "url": "https://www.windytan.com/2020/12/plotting-patterns-in-music-with-fantasy.html",
+   "source": "windytan",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Capturing PAL video with an SDR (and a few dead-ends)",
+   "url": "https://www.windytan.com/2019/08/capturing-pal-video-with-sdr-and-few.html",
+   "source": "windytan",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beeps and melodies in two-way radio",
+   "url": "https://www.windytan.com/2019/03/beeps-and-melodies-in-two-way-radio.html",
+   "source": "windytan",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Animated line drawings with OpenCV",
+   "url": "https://www.windytan.com/2017/12/animated-line-drawings-with-opencv.html",
+   "source": "windytan",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In pursuit of Otama's tone",
+   "url": "https://www.windytan.com/2017/11/in-pursuit-of-otamas-tone.html",
+   "source": "windytan",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Descrambling split-band voice inversion with deinvert",
+   "url": "https://www.windytan.com/2017/09/descrambling-split-band-voice-inversion.html",
+   "source": "windytan",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gramophone audio from photograph, revisited",
+   "url": "https://www.windytan.com/2017/07/gramophone-audio-from-photograph.html",
+   "source": "windytan",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Virtual music box",
+   "url": "https://www.windytan.com/2017/07/virtual-music-box.html",
+   "source": "windytan",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CTCSS fingerprinting: a method for transmitter identification",
+   "url": "https://www.windytan.com/2016/10/ctcss-fingerprinting-method-for.html",
+   "source": "windytan",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "soot, solar, sedimentation, sin, & 'centers",
    "url": "https://wingolog.org/archives/2026/05/16/soot-solar-sedimentation-sin-centers",
    "source": "wingolog",
@@ -152462,6 +154394,86 @@
    "url": "http://yulingtianxia.com/blog/2019/10/27/Write-Objective-C-Code-using-Dart/",
    "source": "yulingtianxia",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Death of the Angel Investor",
+   "url": "http://zachholman.com/posts/angel-investor-death",
+   "source": "zachholman",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You Should Have an LLC",
+   "url": "http://zachholman.com/posts/you-should-have-an-llc",
+   "source": "zachholman",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "As Someone Who Has Written This Blog Post,",
+   "url": "http://zachholman.com/posts/llm-writing",
+   "source": "zachholman",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Probably Won’t Pass You on to Another Investor",
+   "url": "http://zachholman.com/posts/investor-introductions",
+   "source": "zachholman",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Cold Email",
+   "url": "http://zachholman.com/posts/cold-email",
+   "source": "zachholman",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "There’s No Minimum Angel Check Size",
+   "url": "http://zachholman.com/posts/minimum-angel-check",
+   "source": "zachholman",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Signed: A Portfolio for Investors",
+   "url": "http://zachholman.com/posts/signed-a-portfolio-for-investors",
+   "source": "zachholman",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Tools of Angel Investing",
+   "url": "http://zachholman.com/posts/the-tools-of-angel-investing",
+   "source": "zachholman",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Taking Money off the Table",
+   "url": "http://zachholman.com/posts/money-off-the-table",
+   "source": "zachholman",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shipping Calendearing",
+   "url": "http://zachholman.com/posts/calendearing",
+   "source": "zachholman",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },

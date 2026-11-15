@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T19:53:35.726868+00:00",
+ "generated_at": "2026-11-15T19:56:57.850183+00:00",
  "latest_snapshot": "2026-11-15",
  "crossovers": [
   {
@@ -382,6 +382,21 @@
    }
   },
   {
+   "url": "https://www.theguardian.com/info/2024/sep/23/cooking-up-recipe-data-for-the-feast-app",
+   "title": "Cooking up recipe data for the Feast app",
+   "sources": [
+    "guardianco",
+    "theguardian"
+   ],
+   "days": 1,
+   "best": {
+    "score": 15,
+    "metric": "feed rank",
+    "source": "guardianco",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "url": "https://12daysofweb.dev/2024/css-light-dark",
    "title": "CSS light-dark()",
    "sources": [
@@ -472,6 +487,21 @@
    }
   },
   {
+   "url": "https://www.theguardian.com/info/article/2024/sep/06/day-in-the-life-alex-guild",
+   "title": "Day in the Life: Alex Guild",
+   "sources": [
+    "guardianco",
+    "theguardian"
+   ],
+   "days": 1,
+   "best": {
+    "score": 14,
+    "metric": "feed rank",
+    "source": "guardianco",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "url": "https://blog.codinghorror.com/you-cant-vibe-code-love",
    "title": "You Can't \"Vibe Code\" Love",
    "sources": [
@@ -528,6 +558,21 @@
     "score": 13,
     "metric": "feed rank",
     "source": "taniarascia",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://www.theguardian.com/info/article/2024/jul/26/parsing-the-merit-of-strictly-typed-json",
+   "title": "Parsing: the merit of strictly typed JSON",
+   "sources": [
+    "guardianco",
+    "theguardian"
+   ],
+   "days": 1,
+   "best": {
+    "score": 13,
+    "metric": "feed rank",
+    "source": "guardianco",
     "date": "2026-11-15"
    }
   },
@@ -592,6 +637,21 @@
    }
   },
   {
+   "url": "https://www.theguardian.com/info/article/2024/jun/17/hack-day-summer-of-sport-fall-of-democracy",
+   "title": "Hack Day: Summer of Sport Fall of Democracy",
+   "sources": [
+    "guardianco",
+    "theguardian"
+   ],
+   "days": 1,
+   "best": {
+    "score": 12,
+    "metric": "feed rank",
+    "source": "guardianco",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "url": "https://blog.codinghorror.com/thank-you-for-being-a-friend",
    "title": "Thank You For Being a Friend",
    "sources": [
@@ -637,6 +697,21 @@
    }
   },
   {
+   "url": "https://www.theguardian.com/info/2024/apr/04/when-security-matters-working-with-qubes-os-at-the-guardian",
+   "title": "When security matters: working with Qubes OS at the Guardian",
+   "sources": [
+    "guardianco",
+    "theguardian"
+   ],
+   "days": 1,
+   "best": {
+    "score": 11,
+    "metric": "feed rank",
+    "source": "guardianco",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "url": "https://blog.codinghorror.com/launching-the-rural-guaranteed-minimum-income-initiative",
    "title": "Launching The Rural Guaranteed Minimum Income Initiative",
    "sources": [
@@ -678,81 +753,6 @@
     "score": 10,
     "metric": "feed rank",
     "source": "erlang",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.janestreet.com/how-recurring-network-maintenance-exposed-6-bugs",
-   "title": "How recurring network maintenance exposed 6 bugs",
-   "sources": [
-    "blogjanestreet",
-    "blogsjanestreet"
-   ],
-   "days": 1,
-   "best": {
-    "score": 10,
-    "metric": "feed rank",
-    "source": "blogjanestreet",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.taniarascia.com/2023-into-2024",
-   "title": "Year in Review: 2023",
-   "sources": [
-    "tania",
-    "taniarascia"
-   ],
-   "days": 1,
-   "best": {
-    "score": 10,
-    "metric": "feed rank",
-    "source": "taniarascia",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://arstechnica.com/tech-policy/2026/11/microsoft-blames-failed-server-health-checks-not-hackers-for-global-outage",
-   "title": "Microsoft, and Its Customers, Are Suffering a Global Cloud Outage",
-   "sources": [
-    "arstechnica",
-    "daringfireball"
-   ],
-   "days": 1,
-   "best": {
-    "score": 9,
-    "metric": "feed rank",
-    "source": "daringfireball",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.codinghorror.com/the-road-not-taken-is-guaranteed-minimum-income",
-   "title": "The Road Not Taken is Guaranteed Minimum Income",
-   "sources": [
-    "codinghorror",
-    "codinghorror2"
-   ],
-   "days": 1,
-   "best": {
-    "score": 9,
-    "metric": "feed rank",
-    "source": "codinghorror",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://surfingcomplexity.blog/2026/11/08/quick-thoughts-on-the-gcp-europe-west2-b-outage",
-   "title": "Quick thoughts on the GCP europe-west2-b outage",
-   "sources": [
-    "lorinhochstein",
-    "surfingcomplexity"
-   ],
-   "days": 1,
-   "best": {
-    "score": 9,
-    "metric": "feed rank",
-    "source": "surfingcomplexity",
     "date": "2026-11-15"
    }
   }
