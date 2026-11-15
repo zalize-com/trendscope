@@ -409,8 +409,14 @@ function paint() {
     `snapshot <b>${date}</b> · ${total} items · ${nsrc} source${nsrc === 1 ? "" : "s"}`;
   const isToday = INDEX && date === INDEX.snapshots[INDEX.snapshots.length - 1];
   document.getElementById("board-title").textContent = isToday ? "Today's" : `${date}`;
-  document.getElementById("board-sub").textContent =
-    `${total} items across ${nsrc} source${nsrc === 1 ? "" : "s"}`;
+  let fresh = "";
+  if (YDAY && YDAY.items) {
+    const seen = new Set(Object.values(YDAY.items).flat().map(i => i.url));
+    const n = Object.values(SNAP.items || {}).flat().filter(i => !seen.has(i.url)).length;
+    if (n) fresh = ` · <b style="color:var(--orange)">${n} fresh</b>`;
+  }
+  document.getElementById("board-sub").innerHTML =
+    `${total} items across ${nsrc} source${nsrc === 1 ? "" : "s"}${fresh}`;
   document.getElementById("topics").innerHTML = (SNAP.topics || [])
     .map(t => `<a class="topic-chip" href="topics.html?t=${encodeURIComponent(t.topic)}">${t.topic} <b>${t.count}</b></a>`).join("");
 
