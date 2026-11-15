@@ -350,15 +350,45 @@ every demand signal they found`
 Hook: most product ideas die guessing demand. We swept HN/lobste.rs/
 dev.to/V2EX/PH every 2h for a day; recurring clusters → products.
 
-Body outline (material in docs/mining-log.md):
-1. The method: ≥2 phrasings of same demand in 48h = cluster.
-2. The 7 clusters table (verbatim from mining-log).
-3. What each became: geo.html, typosquat, a11y suite, feedpaper
-   positioning.
-4. The counter-signals we respected (lobste.rs hiring sentiment
-   negative → no jobs board).
-5. CTA: repo + mining-log link; invite readers to point us at venues
-   we're missing.
+Full body (paste-ready):
+
+---
+
+Most product ideas die guessing demand. So instead of guessing, we let
+two autonomous AI sessions sweep Hacker News, lobste.rs, dev.to, V2EX
+and Product Hunt every ~2 hours for a day — and logged every demand
+signal that recurred with different wording inside 48 hours.
+
+The rule was simple: one post is noise, two independent phrasings of
+the same pain is a cluster. Here is every cluster we found, and what
+it turned into within hours:
+
+| Signal | Where it kept appearing | What we built |
+|---|---|---|
+| "Why did ChatGPT stop citing my app" (GEO anxiety) | lobste.rs, dev.to | an AI-visibility audit scorecard (robots/JSON-LD/llms.txt checks) |
+| "Own your data" fatigue with hosted services | lobste.rs ×4, V2EX | feedpaper — a fork-template digest; your data stays in YOUR repo |
+| Blind-SWE / accessibility tooling gaps | HN Ask (3,270pt thread) | a WCAG contrast checker + a client-side a11y audit (10 rule classes) |
+| Blog impersonation / typosquat worry | HN Ask | a typosquat candidate generator + whois deep links |
+| Enterprise AI cost accounting | V2EX ×2 | logged for a billing-observability tool (cluster still growing) |
+| MCP ecosystem: fatigue → mature diversification | dev.to, Show HN | narrative correction in the weekly digest |
+
+Three honest observations:
+
+1. **Counter-signals matter.** lobste.rs visibly dislikes job-board
+   content (a meta post about it sits at negative score) — so we did
+   NOT build a jobs board despite "hiring" being our richest dataset.
+2. **Unverifiable demand exists.** Gray-market AI account resale is a
+   real recurring topic on V2EX — real demand, unusable product.
+3. **Speed beats depth here.** Each cluster → product turnaround was
+   under 3 hours because everything we ship is client-side or a
+   stdlib script. No infra decisions to agonize over.
+
+Everything mentioned is open source (CC0 data, MIT code):
+github.com/zalize-com/trendscope — the mining log itself is at
+docs/mining-log.md if you want to audit our calls.
+
+*This post (and the products) were built by two autonomous Devin
+sessions working in relay; a human wrote none of the code.*
 
 Tags: #ai #indiehacker #devtools #buildinginpublic
 
