@@ -4,7 +4,8 @@
   "partial": true,
   "backfilled": true,
   "sources": {
-    "hackernews": 20
+    "hackernews": 20,
+    "ask_hn": 8
   },
   "items": {
     "hackernews": [
@@ -268,6 +269,112 @@
         "captured_at": "2026-11-09T23:59:00+00:00",
         "backfilled": true
       }
+    ],
+    "ask_hn": [
+      {
+        "source": "ask_hn",
+        "rank": 1,
+        "title": "ChatGPT Desktop forwards your SSH agent to remote machines",
+        "url": "https://news.ycombinator.com/item?id=50422628",
+        "score": 221,
+        "metric": "points",
+        "comments": 79,
+        "author": "DenGorbachev",
+        "tags": [],
+        "captured_at": "2026-11-09T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 2,
+        "title": "Ask HN: Do you still enjoy coding in C++?",
+        "url": "https://news.ycombinator.com/item?id=50423371",
+        "score": 66,
+        "metric": "points",
+        "comments": 90,
+        "author": "hasley",
+        "tags": [],
+        "captured_at": "2026-11-09T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 3,
+        "title": "Ask HN: How do you evaluate the skills your AI agents use?",
+        "url": "https://news.ycombinator.com/item?id=50426070",
+        "score": 25,
+        "metric": "points",
+        "comments": 7,
+        "author": "enesalatas",
+        "tags": [],
+        "captured_at": "2026-11-09T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 4,
+        "title": "Tell HN: Another GitHub Major Outage",
+        "url": "https://news.ycombinator.com/item?id=50429551",
+        "score": 18,
+        "metric": "points",
+        "comments": 7,
+        "author": "sergiotapia",
+        "tags": [],
+        "captured_at": "2026-11-09T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 5,
+        "title": "uBlock Origin Can't Block Facebook Ads",
+        "url": "https://news.ycombinator.com/item?id=50427181",
+        "score": 13,
+        "metric": "points",
+        "comments": 5,
+        "author": "anidsiam",
+        "tags": [],
+        "captured_at": "2026-11-09T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 6,
+        "title": "Ask HN: Will Humans Become Useless?",
+        "url": "https://news.ycombinator.com/item?id=50422486",
+        "score": 5,
+        "metric": "points",
+        "comments": 19,
+        "author": "misano",
+        "tags": [],
+        "captured_at": "2026-11-09T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 7,
+        "title": "Ask HN: What should a stranger know first about your unfinished project?",
+        "url": "https://news.ycombinator.com/item?id=50433412",
+        "score": 5,
+        "metric": "points",
+        "comments": 6,
+        "author": "toddy_flogsit",
+        "tags": [],
+        "captured_at": "2026-11-09T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 8,
+        "title": "Ask HN: As a human, are you glad the AI bubble is bursting?",
+        "url": "https://news.ycombinator.com/item?id=50421778",
+        "score": 5,
+        "metric": "points",
+        "comments": 6,
+        "author": "roschdal",
+        "tags": [],
+        "captured_at": "2026-11-09T23:59:00+00:00",
+        "backfilled": true
+      }
     ]
   },
   "top_scores": {
@@ -337,8 +444,8 @@
   "topics": [
     {
       "topic": "AI/LLM",
-      "count": 9,
-      "total_score": 6092,
+      "count": 12,
+      "total_score": 6343,
       "examples": [
         {
           "title": "Foldable Flight: The Best Paper Airplanes",
@@ -354,6 +461,47 @@
           "title": "Claude Fable 5.2 and Mythos 5.2",
           "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
           "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "Languages",
+      "count": 2,
+      "total_score": 91,
+      "examples": [
+        {
+          "title": "Ask HN: Do you still enjoy coding in C++?",
+          "url": "https://news.ycombinator.com/item?id=50423371",
+          "source": "ask_hn"
+        },
+        {
+          "title": "Ask HN: How do you evaluate the skills your AI agents use?",
+          "url": "https://news.ycombinator.com/item?id=50426070",
+          "source": "ask_hn"
+        }
+      ]
+    },
+    {
+      "topic": "Career/Business",
+      "count": 1,
+      "total_score": 221,
+      "examples": [
+        {
+          "title": "ChatGPT Desktop forwards your SSH agent to remote machines",
+          "url": "https://news.ycombinator.com/item?id=50422628",
+          "source": "ask_hn"
+        }
+      ]
+    },
+    {
+      "topic": "Tools/OSS",
+      "count": 1,
+      "total_score": 18,
+      "examples": [
+        {
+          "title": "Tell HN: Another GitHub Major Outage",
+          "url": "https://news.ycombinator.com/item?id=50429551",
+          "source": "ask_hn"
         }
       ]
     }

@@ -4,7 +4,8 @@
   "partial": true,
   "backfilled": true,
   "sources": {
-    "hackernews": 20
+    "hackernews": 20,
+    "ask_hn": 12
   },
   "items": {
     "hackernews": [
@@ -268,6 +269,164 @@
         "captured_at": "2026-11-12T23:59:00+00:00",
         "backfilled": true
       }
+    ],
+    "ask_hn": [
+      {
+        "source": "ask_hn",
+        "rank": 1,
+        "title": "Ask HN: Microsoft/Azure Outage?",
+        "url": "https://news.ycombinator.com/item?id=50471668",
+        "score": 402,
+        "metric": "points",
+        "comments": 1,
+        "author": "nazgulsenpai",
+        "tags": [],
+        "captured_at": "2026-11-12T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 2,
+        "title": "Inception's Diffusion LLM API Is Shutting Down",
+        "url": "https://news.ycombinator.com/item?id=50470335",
+        "score": 15,
+        "metric": "points",
+        "comments": 9,
+        "author": "_matthew_",
+        "tags": [],
+        "captured_at": "2026-11-12T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 3,
+        "title": "Tell HN: Major Microsoft Outlook/Exchange Online/Teams Outage in the Americas",
+        "url": "https://news.ycombinator.com/item?id=50472411",
+        "score": 14,
+        "metric": "points",
+        "comments": 2,
+        "author": "wmchen",
+        "tags": [],
+        "captured_at": "2026-11-12T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 4,
+        "title": "Ask HN: Why use Jev/decision models at all?",
+        "url": "https://news.ycombinator.com/item?id=50470591",
+        "score": 10,
+        "metric": "points",
+        "comments": 8,
+        "author": "niceguy1827",
+        "tags": [],
+        "captured_at": "2026-11-12T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 5,
+        "title": "Ask HN: How do you market your consumer product",
+        "url": "https://news.ycombinator.com/item?id=50470809",
+        "score": 9,
+        "metric": "points",
+        "comments": 10,
+        "author": "mv4",
+        "tags": [],
+        "captured_at": "2026-11-12T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 6,
+        "title": "Ask HN: What % of HN is now AI-generated?",
+        "url": "https://news.ycombinator.com/item?id=50473788",
+        "score": 8,
+        "metric": "points",
+        "comments": 8,
+        "author": "simonebrunozzi",
+        "tags": [],
+        "captured_at": "2026-11-12T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 7,
+        "title": "I'm genuinely disappointed in our most visible tech leadership",
+        "url": "https://news.ycombinator.com/item?id=50471061",
+        "score": 8,
+        "metric": "points",
+        "comments": 4,
+        "author": "AnneTrotter",
+        "tags": [],
+        "captured_at": "2026-11-12T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 8,
+        "title": "Ask HN: What is holding back robots from being deployed everywhere?",
+        "url": "https://news.ycombinator.com/item?id=50466520",
+        "score": 7,
+        "metric": "points",
+        "comments": 20,
+        "author": "mjs06",
+        "tags": [],
+        "captured_at": "2026-11-12T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 9,
+        "title": "Ask HN: What do your technical interviews look like today? (Nov 2026)",
+        "url": "https://news.ycombinator.com/item?id=50461853",
+        "score": 7,
+        "metric": "points",
+        "comments": 3,
+        "author": "Heap4112",
+        "tags": [],
+        "captured_at": "2026-11-12T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 10,
+        "title": "Tell HN: Gemini Hydrogen Reachable via Vertex",
+        "url": "https://news.ycombinator.com/item?id=50464548",
+        "score": 7,
+        "metric": "points",
+        "comments": 2,
+        "author": "jcmp",
+        "tags": [],
+        "captured_at": "2026-11-12T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 11,
+        "title": "Tech is dead – also every tech stack",
+        "url": "https://news.ycombinator.com/item?id=50466256",
+        "score": 6,
+        "metric": "points",
+        "comments": 7,
+        "author": "yanikkumar",
+        "tags": [],
+        "captured_at": "2026-11-12T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 12,
+        "title": "Claude Code's API billing depends on how often the cache expires",
+        "url": "https://news.ycombinator.com/item?id=50467233",
+        "score": 6,
+        "metric": "points",
+        "comments": 1,
+        "author": "MaxBozhenko",
+        "tags": [],
+        "captured_at": "2026-11-12T23:59:00+00:00",
+        "backfilled": true
+      }
     ]
   },
   "top_scores": {
@@ -337,8 +496,8 @@
   "topics": [
     {
       "topic": "AI/LLM",
-      "count": 7,
-      "total_score": 4047,
+      "count": 12,
+      "total_score": 4093,
       "examples": [
         {
           "title": "Anthropic IPO",
@@ -375,6 +534,40 @@
       ]
     },
     {
+      "topic": "Career/Business",
+      "count": 2,
+      "total_score": 1008,
+      "examples": [
+        {
+          "title": "Anthropic IPO",
+          "url": "https://ipo.anthropic.com/us/",
+          "source": "hackernews"
+        },
+        {
+          "title": "Ask HN: What do your technical interviews look like today? (Nov 2026)",
+          "url": "https://news.ycombinator.com/item?id=50461853",
+          "source": "ask_hn"
+        }
+      ]
+    },
+    {
+      "topic": "DevOps/Infra",
+      "count": 2,
+      "total_score": 787,
+      "examples": [
+        {
+          "title": "Reverse engineering my Coway air purifier to ditch the cloud",
+          "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
+          "source": "hackernews"
+        },
+        {
+          "title": "Ask HN: What is holding back robots from being deployed everywhere?",
+          "url": "https://news.ycombinator.com/item?id=50466520",
+          "source": "ask_hn"
+        }
+      ]
+    },
+    {
       "topic": "Security",
       "count": 2,
       "total_score": 775,
@@ -387,30 +580,6 @@
         {
           "title": "Critical RCE Vulnerability in Apache HTTP Server",
           "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-          "source": "hackernews"
-        }
-      ]
-    },
-    {
-      "topic": "Career/Business",
-      "count": 1,
-      "total_score": 1001,
-      "examples": [
-        {
-          "title": "Anthropic IPO",
-          "url": "https://ipo.anthropic.com/us/",
-          "source": "hackernews"
-        }
-      ]
-    },
-    {
-      "topic": "DevOps/Infra",
-      "count": 1,
-      "total_score": 780,
-      "examples": [
-        {
-          "title": "Reverse engineering my Coway air purifier to ditch the cloud",
-          "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
           "source": "hackernews"
         }
       ]

@@ -8,6 +8,7 @@ contain just the hackernews section with `partial: true`.
 Usage: python3 scripts/backfill.py [days]   (default 7, skips today and existing days)
 """
 
+import csv
 import json
 import os
 import sys
@@ -25,18 +26,18 @@ def get_json(url):
         return json.loads(r.read().decode())
 
 
-def hn_top_for_day(day, limit=20):
+def _hn_items_for_day(day, tag, source, min_points, limit):
     start = int(datetime(day.year, day.month, day.day, tzinfo=timezone.utc).timestamp())
     end = start + 86400
-    url = (f"https://hn.algolia.com/api/v1/search?tags=story"
-           f"&numericFilters=created_at_i>={start},created_at_i<{end},points>=15"
+    url = (f"https://hn.algolia.com/api/v1/search?tags={tag}"
+           f"&numericFilters=created_at_i>={start},created_at_i<{end},points>={min_points}"
            f"&hitsPerPage=100")
     data = get_json(url) or {}
     hits = sorted(data.get("hits", []), key=lambda h: -h.get("points", 0))[:limit]
     out = []
     for rank, h in enumerate(hits, 1):
         out.append({
-            "source": "hackernews",
+            "source": source,
             "rank": rank,
             "title": h.get("title", ""),
             "url": h.get("url") or f"https://news.ycombinator.com/item?id={h.get('objectID')}",
@@ -49,6 +50,43 @@ def hn_top_for_day(day, limit=20):
             "backfilled": True,
         })
     return out
+
+
+def hn_top_for_day(day, limit=20):
+    return _hn_items_for_day(day, "story", "hackernews", 15, limit)
+
+
+def append_history_csv(items, ds):
+    """Append backfilled rows to history.csv (dedup on date+source+url)."""
+    fields = ["date", "source", "rank", "title", "url", "score", "metric",
+              "comments", "author", "tags", "captured_at"]
+    path = os.path.join(DATA_DIR, "history.csv")
+    existing = set()
+    write_header = not os.path.exists(path)
+    if not write_header:
+        with open(path, newline="") as f:
+            for r in csv.DictReader(f):
+                existing.add((r["date"], r["source"], r["url"]))
+    with open(path, "a", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=fields)
+        if write_header:
+            w.writeheader()
+        for i in items:
+            key = (ds, i["source"], i["url"])
+            if key in existing:
+                continue
+            existing.add(key)
+            w.writerow({
+                "date": ds, "source": i["source"], "rank": i.get("rank", 0),
+                "title": i["title"], "url": i["url"], "score": i["score"],
+                "metric": i["metric"], "comments": i.get("comments", 0),
+                "author": i.get("author") or "", "tags": "|".join(i.get("tags", [])),
+                "captured_at": i["captured_at"],
+            })
+
+
+def hn_ask_for_day(day, limit=12):
+    return _hn_items_for_day(day, "ask_hn", "ask_hn", 5, limit)
 
 
 TOPIC_RULES = {
@@ -109,27 +147,47 @@ def main():
         ds = day.isoformat()
         path = os.path.join(daily_dir, f"{ds}.json")
         if os.path.exists(path):
-            print(f"skip {ds} (exists)")
+            # merge ask_hn into an existing (HN-only) backfilled day
+            snap = json.load(open(path))
+            if "ask_hn" in snap.get("items", {}):
+                print(f"skip {ds} (ask_hn present)")
+                continue
+            ask = hn_ask_for_day(day)
+            if not ask:
+                print(f"skip {ds} (no ask_hn hits)")
+                continue
+            snap["items"]["ask_hn"] = ask
+            snap.setdefault("sources", {})["ask_hn"] = len(ask)
+            flat = [x for v in snap["items"].values() for x in v]
+            snap["topics"] = classify_topics(flat)
+            with open(path, "w") as f:
+                json.dump(snap, f, indent=2, ensure_ascii=False)
+            append_history_csv(ask, ds)
+            print(f"merged {ds}: +{len(ask)} ask_hn items")
+            time.sleep(1)
             continue
         items = hn_top_for_day(day)
         if not items:
             print(f"skip {ds} (no hits)")
             continue
+        ask = hn_ask_for_day(day)
+        all_items = items + ask
         snap = {
             "date": ds,
             "generated_at": f"{ds}T23:59:00+00:00",
             "partial": True,
             "backfilled": True,
-            "sources": {"hackernews": len(items)},
-            "items": {"hackernews": items},
+            "sources": {"hackernews": len(items), **({"ask_hn": len(ask)} if ask else {})},
+            "items": {"hackernews": items, **({"ask_hn": ask} if ask else {})},
             "top_scores": {"hackernews": [
                 {"title": x["title"], "url": x["url"], "score": x["score"],
                  "metric": x["metric"]} for x in items[:10]]},
-            "topics": classify_topics(items),
+            "topics": classify_topics(all_items),
         }
         with open(path, "w") as f:
             json.dump(snap, f, indent=2, ensure_ascii=False)
-        print(f"wrote {ds}: {len(items)} HN items")
+        append_history_csv(ask, ds)
+        print(f"wrote {ds}: {len(items)} HN + {len(ask)} ask_hn items")
         if ds not in idx["snapshots"]:
             idx["snapshots"].append(ds)
         time.sleep(1)

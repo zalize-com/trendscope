@@ -4,7 +4,8 @@
   "partial": true,
   "backfilled": true,
   "sources": {
-    "hackernews": 20
+    "hackernews": 20,
+    "ask_hn": 12
   },
   "items": {
     "hackernews": [
@@ -268,6 +269,164 @@
         "captured_at": "2026-11-11T23:59:00+00:00",
         "backfilled": true
       }
+    ],
+    "ask_hn": [
+      {
+        "source": "ask_hn",
+        "rank": 1,
+        "title": "What are your favorite tools?",
+        "url": "https://news.ycombinator.com/item?id=50449938",
+        "score": 16,
+        "metric": "points",
+        "comments": 10,
+        "author": "d675",
+        "tags": [],
+        "captured_at": "2026-11-11T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 2,
+        "title": "Ask HN: Personal \"Tears in the Rain\" Moments",
+        "url": "https://news.ycombinator.com/item?id=50458894",
+        "score": 14,
+        "metric": "points",
+        "comments": 15,
+        "author": "HoldOnAMinute",
+        "tags": [],
+        "captured_at": "2026-11-11T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 3,
+        "title": "The absolute travesty that is Google",
+        "url": "https://news.ycombinator.com/item?id=50455454",
+        "score": 11,
+        "metric": "points",
+        "comments": 1,
+        "author": "brb_bro",
+        "tags": [],
+        "captured_at": "2026-11-11T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 4,
+        "title": "Ask HN: Why didn't The Bible warn/tell us about AI?",
+        "url": "https://news.ycombinator.com/item?id=50452019",
+        "score": 10,
+        "metric": "points",
+        "comments": 30,
+        "author": "amelius",
+        "tags": [],
+        "captured_at": "2026-11-11T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 5,
+        "title": "Why does Reddit want me to use the iOS app on my desktop?",
+        "url": "https://news.ycombinator.com/item?id=50451569",
+        "score": 10,
+        "metric": "points",
+        "comments": 5,
+        "author": "corroclaro",
+        "tags": [],
+        "captured_at": "2026-11-11T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 6,
+        "title": "Any good ways on how to get into kernel dev?",
+        "url": "https://news.ycombinator.com/item?id=50454875",
+        "score": 9,
+        "metric": "points",
+        "comments": 8,
+        "author": "ihms",
+        "tags": [],
+        "captured_at": "2026-11-11T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 7,
+        "title": "Ask HN: Is lack of human imagination now the bottleneck instead of intelligence?",
+        "url": "https://news.ycombinator.com/item?id=50453369",
+        "score": 8,
+        "metric": "points",
+        "comments": 14,
+        "author": "amichail",
+        "tags": [],
+        "captured_at": "2026-11-11T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 8,
+        "title": "Ask HN: \"No AI\" apps/companies/resources?",
+        "url": "https://news.ycombinator.com/item?id=50452986",
+        "score": 8,
+        "metric": "points",
+        "comments": 8,
+        "author": "BrunoBernardino",
+        "tags": [],
+        "captured_at": "2026-11-11T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 9,
+        "title": "Ask HN: Software engineer with broken arm, any tips?",
+        "url": "https://news.ycombinator.com/item?id=50456164",
+        "score": 6,
+        "metric": "points",
+        "comments": 11,
+        "author": "spapas82",
+        "tags": [],
+        "captured_at": "2026-11-11T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 10,
+        "title": "Ask HN: Anybody using their own AI harness as well?",
+        "url": "https://news.ycombinator.com/item?id=50453453",
+        "score": 5,
+        "metric": "points",
+        "comments": 10,
+        "author": "madprops",
+        "tags": [],
+        "captured_at": "2026-11-11T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 11,
+        "title": "Opus 5.5 is definitely nerfed",
+        "url": "https://news.ycombinator.com/item?id=50458980",
+        "score": 5,
+        "metric": "points",
+        "comments": 5,
+        "author": "bigwheels",
+        "tags": [],
+        "captured_at": "2026-11-11T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 12,
+        "title": "Ask HN: Did anybody used F# in a production?",
+        "url": "https://news.ycombinator.com/item?id=50456492",
+        "score": 5,
+        "metric": "points",
+        "comments": 4,
+        "author": "vad_n__",
+        "tags": [],
+        "captured_at": "2026-11-11T23:59:00+00:00",
+        "backfilled": true
+      }
     ]
   },
   "top_scores": {
@@ -337,8 +496,8 @@
   "topics": [
     {
       "topic": "AI/LLM",
-      "count": 5,
-      "total_score": 3278,
+      "count": 9,
+      "total_score": 3315,
       "examples": [
         {
           "title": "My AI agents found an unmapped Maya site?",
@@ -354,6 +513,23 @@
           "title": "93% of paint splatters are valid Perl programs (2019)",
           "url": "https://www.mcmillen.dev/sigbovik/",
           "source": "hackernews"
+        }
+      ]
+    },
+    {
+      "topic": "Tools/OSS",
+      "count": 2,
+      "total_score": 352,
+      "examples": [
+        {
+          "title": "Lock Your GitHub Actions",
+          "url": "https://hugovk.dev/blog/2026/lock-github-actions/",
+          "source": "hackernews"
+        },
+        {
+          "title": "What are your favorite tools?",
+          "url": "https://news.ycombinator.com/item?id=50449938",
+          "source": "ask_hn"
         }
       ]
     },
@@ -389,18 +565,6 @@
         {
           "title": "Hyper-realistic sand with WebGL2",
           "url": "https://av.github.io/safe-sand/",
-          "source": "hackernews"
-        }
-      ]
-    },
-    {
-      "topic": "Tools/OSS",
-      "count": 1,
-      "total_score": 336,
-      "examples": [
-        {
-          "title": "Lock Your GitHub Actions",
-          "url": "https://hugovk.dev/blog/2026/lock-github-actions/",
           "source": "hackernews"
         }
       ]

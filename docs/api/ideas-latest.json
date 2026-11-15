@@ -1,85 +1,263 @@
 {
-  "generated": "2026-11-15 06:55 UTC",
-  "unique_threads": 13,
-  "themes": [],
+  "generated": "2026-11-15 06:56 UTC",
+  "unique_threads": 62,
+  "themes": [
+    {
+      "theme": "outage",
+      "threads": [
+        {
+          "url": "https://news.ycombinator.com/item?id=50472411",
+          "title": "Tell HN: Major Microsoft Outlook/Exchange Online/Teams Outage in the Americas",
+          "days_on_board": 1,
+          "max_score": 14
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50429551",
+          "title": "Tell HN: Another GitHub Major Outage",
+          "days_on_board": 1,
+          "max_score": 18
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50471668",
+          "title": "Ask HN: Microsoft/Azure Outage?",
+          "days_on_board": 1,
+          "max_score": 402
+        }
+      ],
+      "score": 434,
+      "coverage": {
+        "built": true,
+        "top_hit": {
+          "title": "Ask HN: Microsoft/Azure Outage?",
+          "url": "https://news.ycombinator.com/item?id=50471668",
+          "source": "hackernews",
+          "score": 402
+        }
+      }
+    },
+    {
+      "theme": "claude",
+      "threads": [
+        {
+          "url": "https://news.ycombinator.com/item?id=50480941",
+          "title": "Claude AI Is Down",
+          "days_on_board": 1,
+          "max_score": 28
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50481347",
+          "title": "Ask HN: What are you doing now that Claude is down?",
+          "days_on_board": 2,
+          "max_score": 7
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50480936",
+          "title": "Claude OAuth Failures",
+          "days_on_board": 1,
+          "max_score": 28
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50480909",
+          "title": "Tell HN: Claude Code Is Down",
+          "days_on_board": 1,
+          "max_score": 37
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50467233",
+          "title": "Claude Code's API billing depends on how often the cache expires",
+          "days_on_board": 1,
+          "max_score": 6
+        }
+      ],
+      "score": 106,
+      "coverage": {
+        "built": true,
+        "top_hit": {
+          "title": "Claude Fable 5.2 and Mythos 5.2",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+          "source": "hackernews",
+          "score": 1000
+        }
+      }
+    },
+    {
+      "theme": "code",
+      "threads": [
+        {
+          "url": "https://news.ycombinator.com/item?id=50444380",
+          "title": "How do you keep up quality when you vibe-code?",
+          "days_on_board": 1,
+          "max_score": 39
+        }
+      ],
+      "score": 82,
+      "coverage": {
+        "built": true,
+        "top_hit": {
+          "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+          "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+          "source": "hackernews",
+          "score": 905
+        }
+      }
+    },
+    {
+      "theme": "google",
+      "threads": [
+        {
+          "url": "https://news.ycombinator.com/item?id=50455454",
+          "title": "The absolute travesty that is Google",
+          "days_on_board": 1,
+          "max_score": 11
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50491617",
+          "title": "Tell HN: Google Search to start locking down search behind a login wall",
+          "days_on_board": 2,
+          "max_score": 44
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50478730",
+          "title": "Google search hides Nvidia stock graph",
+          "days_on_board": 1,
+          "max_score": 14
+        }
+      ],
+      "score": 69,
+      "coverage": {
+        "built": true,
+        "top_hit": {
+          "title": "Google Gemini routes personal Drive files and emails to human annotators",
+          "url": "https://github.com/thisisme6598/gemini_files/",
+          "source": "hackernews",
+          "score": 737
+        }
+      }
+    },
+    {
+      "theme": "human",
+      "threads": [
+        {
+          "url": "https://news.ycombinator.com/item?id=50453369",
+          "title": "Ask HN: Is lack of human imagination now the bottleneck instead of intelligence?",
+          "days_on_board": 1,
+          "max_score": 8
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50421778",
+          "title": "Ask HN: As a human, are you glad the AI bubble is bursting?",
+          "days_on_board": 1,
+          "max_score": 5
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50481227",
+          "title": "Ask HN: Do you see a human written book more valuable than an AI written one?",
+          "days_on_board": 1,
+          "max_score": 9
+        }
+      ],
+      "score": 22,
+      "coverage": {
+        "built": true,
+        "top_hit": {
+          "title": "Google Gemini routes personal Drive files and emails to human annotators",
+          "url": "https://github.com/thisisme6598/gemini_files/",
+          "source": "hackernews",
+          "score": 737
+        }
+      }
+    }
+  ],
   "top_asks": [
+    {
+      "url": "https://news.ycombinator.com/item?id=50471668",
+      "title": "Ask HN: Microsoft/Azure Outage?",
+      "days_on_board": 1,
+      "max_score": 402
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50417407",
+      "title": "Ask HN: What are you working on? (November 2026)",
+      "days_on_board": 1,
+      "max_score": 303
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50422628",
+      "title": "ChatGPT Desktop forwards your SSH agent to remote machines",
+      "days_on_board": 1,
+      "max_score": 221
+    },
     {
       "url": "https://news.ycombinator.com/item?id=50484421",
       "title": "U.S. October PPI Rises 6.5% YoY, Highest in Nearly Four Years",
-      "days_on_board": 1,
-      "max_score": 172
+      "days_on_board": 2,
+      "max_score": 173
     },
     {
       "url": "https://news.ycombinator.com/item?id=50494696",
       "title": "Ask HN: What are the most useful, concrete AI skills to independently learn?",
-      "days_on_board": 1,
+      "days_on_board": 2,
       "max_score": 82
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50423371",
+      "title": "Ask HN: Do you still enjoy coding in C++?",
+      "days_on_board": 1,
+      "max_score": 66
     },
     {
       "url": "https://news.ycombinator.com/item?id=50491617",
       "title": "Tell HN: Google Search to start locking down search behind a login wall",
-      "days_on_board": 1,
-      "max_score": 43
+      "days_on_board": 2,
+      "max_score": 44
     },
     {
       "url": "https://news.ycombinator.com/item?id=50488230",
       "title": "Ask HN: What is the state of self-hosting email in 2026?",
-      "days_on_board": 1,
+      "days_on_board": 2,
       "max_score": 41
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50444380",
+      "title": "How do you keep up quality when you vibe-code?",
+      "days_on_board": 1,
+      "max_score": 39
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50480909",
+      "title": "Tell HN: Claude Code Is Down",
+      "days_on_board": 1,
+      "max_score": 37
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50419019",
+      "title": "Tell HN: A flood of reports of Opus 5.5 being nerfed",
+      "days_on_board": 1,
+      "max_score": 32
     },
     {
       "url": "https://news.ycombinator.com/item?id=50484426",
       "title": "Ask HN: Can anyone name anything new that AI has done?",
-      "days_on_board": 1,
+      "days_on_board": 2,
       "max_score": 30
     },
     {
-      "url": "https://news.ycombinator.com/item?id=50491285",
-      "title": "Tell HN: Cloudflare's abuse report form is a blank page",
+      "url": "https://news.ycombinator.com/item?id=50480936",
+      "title": "Claude OAuth Failures",
       "days_on_board": 1,
-      "max_score": 16
+      "max_score": 28
     },
     {
-      "url": "https://news.ycombinator.com/item?id=50497196",
-      "title": "Vercel should fork and maintain Deno",
+      "url": "https://news.ycombinator.com/item?id=50480941",
+      "title": "Claude AI Is Down",
       "days_on_board": 1,
-      "max_score": 15
+      "max_score": 28
     },
     {
-      "url": "https://news.ycombinator.com/item?id=50501990",
-      "title": "Ask HN: Best books you read in 2026?",
+      "url": "https://news.ycombinator.com/item?id=50426070",
+      "title": "Ask HN: How do you evaluate the skills your AI agents use?",
       "days_on_board": 1,
-      "max_score": 8
-    },
-    {
-      "url": "https://news.ycombinator.com/item?id=50496383",
-      "title": "Do what must be done",
-      "days_on_board": 1,
-      "max_score": 8
-    },
-    {
-      "url": "https://news.ycombinator.com/item?id=50493765",
-      "title": "Elon should hire Jensen to run Terafab",
-      "days_on_board": 1,
-      "max_score": 7
-    },
-    {
-      "url": "https://news.ycombinator.com/item?id=50486909",
-      "title": "Ask HN: Advice for those who want to build stuff but don't know where to start",
-      "days_on_board": 1,
-      "max_score": 7
-    },
-    {
-      "url": "https://news.ycombinator.com/item?id=50481347",
-      "title": "Ask HN: What are you doing now that Claude is down?",
-      "days_on_board": 1,
-      "max_score": 7
-    },
-    {
-      "url": "https://news.ycombinator.com/item?id=50498484",
-      "title": "Ask HN: How do you decide when to stick with a project",
-      "days_on_board": 1,
-      "max_score": 5
+      "max_score": 25
     }
   ]
 }

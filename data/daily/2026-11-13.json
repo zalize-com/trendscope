@@ -4,7 +4,8 @@
   "partial": true,
   "backfilled": true,
   "sources": {
-    "hackernews": 20
+    "hackernews": 20,
+    "ask_hn": 12
   },
   "items": {
     "hackernews": [
@@ -268,6 +269,164 @@
         "captured_at": "2026-11-13T23:59:00+00:00",
         "backfilled": true
       }
+    ],
+    "ask_hn": [
+      {
+        "source": "ask_hn",
+        "rank": 1,
+        "title": "U.S. October PPI Rises 6.5% YoY, Highest in Nearly Four Years",
+        "url": "https://news.ycombinator.com/item?id=50484421",
+        "score": 173,
+        "metric": "points",
+        "comments": 227,
+        "author": "moonypto",
+        "tags": [],
+        "captured_at": "2026-11-13T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 2,
+        "title": "Tell HN: Google Search to start locking down search behind a login wall",
+        "url": "https://news.ycombinator.com/item?id=50491617",
+        "score": 44,
+        "metric": "points",
+        "comments": 28,
+        "author": "exploraz",
+        "tags": [],
+        "captured_at": "2026-11-13T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 3,
+        "title": "Ask HN: What is the state of self-hosting email in 2026?",
+        "url": "https://news.ycombinator.com/item?id=50488230",
+        "score": 41,
+        "metric": "points",
+        "comments": 33,
+        "author": "0o777",
+        "tags": [],
+        "captured_at": "2026-11-13T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 4,
+        "title": "Tell HN: Claude Code Is Down",
+        "url": "https://news.ycombinator.com/item?id=50480909",
+        "score": 37,
+        "metric": "points",
+        "comments": 21,
+        "author": "Andugal",
+        "tags": [],
+        "captured_at": "2026-11-13T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 5,
+        "title": "Ask HN: Can anyone name anything new that AI has done?",
+        "url": "https://news.ycombinator.com/item?id=50484426",
+        "score": 30,
+        "metric": "points",
+        "comments": 52,
+        "author": "SamInTheShell",
+        "tags": [],
+        "captured_at": "2026-11-13T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 6,
+        "title": "Claude OAuth Failures",
+        "url": "https://news.ycombinator.com/item?id=50480936",
+        "score": 28,
+        "metric": "points",
+        "comments": 24,
+        "author": "tankenmate",
+        "tags": [],
+        "captured_at": "2026-11-13T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 7,
+        "title": "Claude AI Is Down",
+        "url": "https://news.ycombinator.com/item?id=50480941",
+        "score": 28,
+        "metric": "points",
+        "comments": 7,
+        "author": "cheptsov",
+        "tags": [],
+        "captured_at": "2026-11-13T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 8,
+        "title": "Tell HN: Cloudflare's abuse report form is a blank page",
+        "url": "https://news.ycombinator.com/item?id=50491285",
+        "score": 16,
+        "metric": "points",
+        "comments": 6,
+        "author": "basilikum",
+        "tags": [],
+        "captured_at": "2026-11-13T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 9,
+        "title": "Google search hides Nvidia stock graph",
+        "url": "https://news.ycombinator.com/item?id=50478730",
+        "score": 14,
+        "metric": "points",
+        "comments": 3,
+        "author": "nedx",
+        "tags": [],
+        "captured_at": "2026-11-13T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 10,
+        "title": "Ask HN: Do you see a human written book more valuable than an AI written one?",
+        "url": "https://news.ycombinator.com/item?id=50481227",
+        "score": 9,
+        "metric": "points",
+        "comments": 20,
+        "author": "znano",
+        "tags": [],
+        "captured_at": "2026-11-13T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 11,
+        "title": "Ask HN: Advice for those who want to build stuff but don't know where to start",
+        "url": "https://news.ycombinator.com/item?id=50486909",
+        "score": 7,
+        "metric": "points",
+        "comments": 10,
+        "author": "mjs06",
+        "tags": [],
+        "captured_at": "2026-11-13T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 12,
+        "title": "Ask HN: What are you doing now that Claude is down?",
+        "url": "https://news.ycombinator.com/item?id=50481347",
+        "score": 7,
+        "metric": "points",
+        "comments": 7,
+        "author": "orbis-tertius",
+        "tags": [],
+        "captured_at": "2026-11-13T23:59:00+00:00",
+        "backfilled": true
+      }
     ]
   },
   "top_scores": {
@@ -337,8 +496,8 @@
   "topics": [
     {
       "topic": "AI/LLM",
-      "count": 8,
-      "total_score": 2818,
+      "count": 15,
+      "total_score": 2998,
       "examples": [
         {
           "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
@@ -376,13 +535,42 @@
     },
     {
       "topic": "Languages",
-      "count": 1,
-      "total_score": 362,
+      "count": 2,
+      "total_score": 371,
       "examples": [
         {
           "title": "AI is destroying the trust between writers and readers",
           "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
           "source": "hackernews"
+        },
+        {
+          "title": "Ask HN: Do you see a human written book more valuable than an AI written one?",
+          "url": "https://news.ycombinator.com/item?id=50481227",
+          "source": "ask_hn"
+        }
+      ]
+    },
+    {
+      "topic": "Security",
+      "count": 1,
+      "total_score": 28,
+      "examples": [
+        {
+          "title": "Claude OAuth Failures",
+          "url": "https://news.ycombinator.com/item?id=50480936",
+          "source": "ask_hn"
+        }
+      ]
+    },
+    {
+      "topic": "DevOps/Infra",
+      "count": 1,
+      "total_score": 16,
+      "examples": [
+        {
+          "title": "Tell HN: Cloudflare's abuse report form is a blank page",
+          "url": "https://news.ycombinator.com/item?id=50491285",
+          "source": "ask_hn"
         }
       ]
     }

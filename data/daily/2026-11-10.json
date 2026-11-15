@@ -4,7 +4,8 @@
   "partial": true,
   "backfilled": true,
   "sources": {
-    "hackernews": 20
+    "hackernews": 20,
+    "ask_hn": 7
   },
   "items": {
     "hackernews": [
@@ -268,6 +269,99 @@
         "captured_at": "2026-11-10T23:59:00+00:00",
         "backfilled": true
       }
+    ],
+    "ask_hn": [
+      {
+        "source": "ask_hn",
+        "rank": 1,
+        "title": "How do you keep up quality when you vibe-code?",
+        "url": "https://news.ycombinator.com/item?id=50444380",
+        "score": 39,
+        "metric": "points",
+        "comments": 39,
+        "author": "nkcodes",
+        "tags": [],
+        "captured_at": "2026-11-10T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 2,
+        "title": "I Am at School on Here",
+        "url": "https://news.ycombinator.com/item?id=50443855",
+        "score": 21,
+        "metric": "points",
+        "comments": 6,
+        "author": "Nic-G",
+        "tags": [],
+        "captured_at": "2026-11-10T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 3,
+        "title": "Tell HN: Notion AI chat sessions have been exposed via Fireworks AI hack",
+        "url": "https://news.ycombinator.com/item?id=50436636",
+        "score": 19,
+        "metric": "points",
+        "comments": 1,
+        "author": "RamblingCTO",
+        "tags": [],
+        "captured_at": "2026-11-10T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 4,
+        "title": "CoderPad Reports a Security Breach",
+        "url": "https://news.ycombinator.com/item?id=50435929",
+        "score": 9,
+        "metric": "points",
+        "comments": 1,
+        "author": "werrett",
+        "tags": [],
+        "captured_at": "2026-11-10T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 5,
+        "title": "Ask HR: Systems Engineering's Senior Pipeline Crisis",
+        "url": "https://news.ycombinator.com/item?id=50446617",
+        "score": 7,
+        "metric": "points",
+        "comments": 7,
+        "author": "ayoub10150",
+        "tags": [],
+        "captured_at": "2026-11-10T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 6,
+        "title": "Ask HN: Are companies making money by using AI?",
+        "url": "https://news.ycombinator.com/item?id=50435819",
+        "score": 6,
+        "metric": "points",
+        "comments": 13,
+        "author": "vanh4lt",
+        "tags": [],
+        "captured_at": "2026-11-10T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 7,
+        "title": "Ask HN: Anyone else notice Fable 5.2 making grammar errors?",
+        "url": "https://news.ycombinator.com/item?id=50438506",
+        "score": 5,
+        "metric": "points",
+        "comments": 3,
+        "author": "linearza",
+        "tags": [],
+        "captured_at": "2026-11-10T23:59:00+00:00",
+        "backfilled": true
+      }
     ]
   },
   "top_scores": {
@@ -337,8 +431,8 @@
   "topics": [
     {
       "topic": "AI/LLM",
-      "count": 7,
-      "total_score": 3197,
+      "count": 9,
+      "total_score": 3222,
       "examples": [
         {
           "title": "AI usage generates a fragile codebase",
@@ -358,6 +452,40 @@
       ]
     },
     {
+      "topic": "Security",
+      "count": 2,
+      "total_score": 469,
+      "examples": [
+        {
+          "title": "Tracking Anthropic-discovered vulnerabilities",
+          "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+          "source": "hackernews"
+        },
+        {
+          "title": "CoderPad Reports a Security Breach",
+          "url": "https://news.ycombinator.com/item?id=50435929",
+          "source": "ask_hn"
+        }
+      ]
+    },
+    {
+      "topic": "Data Eng",
+      "count": 2,
+      "total_score": 304,
+      "examples": [
+        {
+          "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
+          "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+          "source": "hackernews"
+        },
+        {
+          "title": "Ask HR: Systems Engineering's Senior Pipeline Crisis",
+          "url": "https://news.ycombinator.com/item?id=50446617",
+          "source": "ask_hn"
+        }
+      ]
+    },
+    {
       "topic": "Tools/OSS",
       "count": 1,
       "total_score": 498,
@@ -365,18 +493,6 @@
         {
           "title": "Blender 5.3 released with Gaussian Splat support",
           "url": "https://www.blender.org/download/releases/5-3/",
-          "source": "hackernews"
-        }
-      ]
-    },
-    {
-      "topic": "Security",
-      "count": 1,
-      "total_score": 460,
-      "examples": [
-        {
-          "title": "Tracking Anthropic-discovered vulnerabilities",
-          "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
           "source": "hackernews"
         }
       ]
@@ -401,18 +517,6 @@
         {
           "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
           "url": "https://github.com/GoogleChrome/modern-web-guidance",
-          "source": "hackernews"
-        }
-      ]
-    },
-    {
-      "topic": "Data Eng",
-      "count": 1,
-      "total_score": 297,
-      "examples": [
-        {
-          "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
-          "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
           "source": "hackernews"
         }
       ]

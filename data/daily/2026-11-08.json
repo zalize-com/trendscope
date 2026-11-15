@@ -4,7 +4,8 @@
   "partial": true,
   "backfilled": true,
   "sources": {
-    "hackernews": 20
+    "hackernews": 20,
+    "ask_hn": 4
   },
   "items": {
     "hackernews": [
@@ -264,6 +265,60 @@
         "metric": "points",
         "comments": 177,
         "author": "spikels",
+        "tags": [],
+        "captured_at": "2026-11-08T23:59:00+00:00",
+        "backfilled": true
+      }
+    ],
+    "ask_hn": [
+      {
+        "source": "ask_hn",
+        "rank": 1,
+        "title": "Ask HN: What are you working on? (November 2026)",
+        "url": "https://news.ycombinator.com/item?id=50417407",
+        "score": 303,
+        "metric": "points",
+        "comments": 1086,
+        "author": "david927",
+        "tags": [],
+        "captured_at": "2026-11-08T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 2,
+        "title": "Tell HN: A flood of reports of Opus 5.5 being nerfed",
+        "url": "https://news.ycombinator.com/item?id=50419019",
+        "score": 32,
+        "metric": "points",
+        "comments": 17,
+        "author": "b--l",
+        "tags": [],
+        "captured_at": "2026-11-08T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 3,
+        "title": "Ask HN: What are your advice for a CS/IT student for the future?",
+        "url": "https://news.ycombinator.com/item?id=50412307",
+        "score": 6,
+        "metric": "points",
+        "comments": 21,
+        "author": "L0in",
+        "tags": [],
+        "captured_at": "2026-11-08T23:59:00+00:00",
+        "backfilled": true
+      },
+      {
+        "source": "ask_hn",
+        "rank": 4,
+        "title": "Is YouTube starting to protect channel RSS feeds?",
+        "url": "https://news.ycombinator.com/item?id=50409244",
+        "score": 6,
+        "metric": "points",
+        "comments": 3,
+        "author": "kradeelav",
         "tags": [],
         "captured_at": "2026-11-08T23:59:00+00:00",
         "backfilled": true
