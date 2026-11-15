@@ -88229,6 +88229,783 @@ def fetch_cssweekly(limit=15):
         ))
     return out
 
+
+def fetch_yt_fireship(limit=15):
+    """Fireship — YouTube channel (feed), position-scored."""
+    print("Fetching Fireship feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_fireship attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_fireship", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_traversymedia(limit=15):
+    """Traversy Media — YouTube channel (feed), position-scored."""
+    print("Fetching Traversy Media feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UC29ju8bIPH5as8OGnQzwJyA",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_traversymedia attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_traversymedia", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC29ju8bIPH5as8OGnQzwJyA",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_networkchuck(limit=15):
+    """NetworkChuck — YouTube channel (feed), position-scored."""
+    print("Fetching NetworkChuck feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UC9x0AN7BWHpCDHSm9NiJFJQ",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_networkchuck attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_networkchuck", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC9x0AN7BWHpCDHSm9NiJFJQ",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_theprimeagen(limit=15):
+    """ThePrimeagen — YouTube channel (feed), position-scored."""
+    print("Fetching ThePrimeagen feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_theprimeagen attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_theprimeagen", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_3blue1brown(limit=15):
+    """3Blue1Brown — YouTube channel (feed), position-scored."""
+    print("Fetching 3Blue1Brown feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_3blue1brown attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_3blue1brown", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_garyexplains(limit=15):
+    """Gary Explains — YouTube channel (feed), position-scored."""
+    print("Fetching Gary Explains feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UCRjSO-juFtngAeJGJRMdIZw",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_garyexplains attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_garyexplains", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCRjSO-juFtngAeJGJRMdIZw",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_liveoverflow(limit=15):
+    """LiveOverflow — YouTube channel (feed), position-scored."""
+    print("Fetching LiveOverflow feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UClcE-kVhqyiHCcjYwcpfj9w",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_liveoverflow attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_liveoverflow", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UClcE-kVhqyiHCcjYwcpfj9w",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_webdevsimplified(limit=15):
+    """Web Dev Simplified — YouTube channel (feed), position-scored."""
+    print("Fetching Web Dev Simplified feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UCFbNIlppjAuEX4znoulh0Cw",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_webdevsimplified attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_webdevsimplified", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCFbNIlppjAuEX4znoulh0Cw",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_techworldwithnana(limit=15):
+    """TechWorld with Nana — YouTube channel (feed), position-scored."""
+    print("Fetching TechWorld with Nana feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UCdngmbVKX1Tgre699-XLlUA",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_techworldwithnana attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_techworldwithnana", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCdngmbVKX1Tgre699-XLlUA",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_codingwithjohn(limit=15):
+    """Coding with John — YouTube channel (feed), position-scored."""
+    print("Fetching Coding with John feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UC42pOSNg804f1wCcj7qL0mA",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_codingwithjohn attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_codingwithjohn", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC42pOSNg804f1wCcj7qL0mA",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_freecodecamp(limit=15):
+    """freeCodeCamp.org — YouTube channel (feed), position-scored."""
+    print("Fetching freeCodeCamp.org feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UC8butISFwT-Wl7EV0hUK0BQ",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_freecodecamp attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_freecodecamp", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC8butISFwT-Wl7EV0hUK0BQ",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_computerphile(limit=15):
+    """Computerphile — YouTube channel (feed), position-scored."""
+    print("Fetching Computerphile feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UC9-y-6csu5WGm29I7JiwpnA",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_computerphile attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_computerphile", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC9-y-6csu5WGm29I7JiwpnA",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_hak5(limit=15):
+    """Hak5 — YouTube channel (feed), position-scored."""
+    print("Fetching Hak5 feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UC3s0BtrBJpwNDaflRSoiieQ",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_hak5 attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_hak5", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC3s0BtrBJpwNDaflRSoiieQ",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_sebastianlague(limit=15):
+    """Sebastian Lague — YouTube channel (feed), position-scored."""
+    print("Fetching Sebastian Lague feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UCmtyQOKKmrMVaKuRXz02jbQ",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_sebastianlague attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_sebastianlague", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCmtyQOKKmrMVaKuRXz02jbQ",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_codevolution(limit=15):
+    """Codevolution — YouTube channel (feed), position-scored."""
+    print("Fetching Codevolution feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UC80PWRj_ZU8Zu0HSMNVwKWw",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_codevolution attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_codevolution", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC80PWRj_ZU8Zu0HSMNVwKWw",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_iamtimcorey(limit=15):
+    """IAmTimCorey — YouTube channel (feed), position-scored."""
+    print("Fetching IAmTimCorey feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UC-ptWR16ITQyYOglXyQmpzw",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_iamtimcorey attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_iamtimcorey", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC-ptWR16ITQyYOglXyQmpzw",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_netninja(limit=15):
+    """Net Ninja — YouTube channel (feed), position-scored."""
+    print("Fetching Net Ninja feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UCW5YeuERMmlnqo4oq8vwUpg",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_netninja attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_netninja", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCW5YeuERMmlnqo4oq8vwUpg",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_academind(limit=15):
+    """Academind — YouTube channel (feed), position-scored."""
+    print("Fetching Academind feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UCSJbGtTlrDami-tDGPUV9-w",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_academind attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_academind", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCSJbGtTlrDami-tDGPUV9-w",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_codinggarden(limit=15):
+    """Coding Garden — YouTube channel (feed), position-scored."""
+    print("Fetching Coding Garden feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UCLNgu_OupwoeESgtab33CCw",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_codinggarden attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_codinggarden", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCLNgu_OupwoeESgtab33CCw",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_wesbos(limit=15):
+    """Wes Bos — YouTube channel (feed), position-scored."""
+    print("Fetching Wes Bos feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UCoebwHSTvwalADTJhps0emA",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_wesbos attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_wesbos", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UCoebwHSTvwalADTJhps0emA",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_yt_beyondfireship(limit=15):
+    """Beyond Fireship — YouTube channel (feed), position-scored."""
+    print("Fetching Beyond Fireship feed...")
+    import xml.etree.ElementTree as ET
+    ATOM = "{http://www.w3.org/2005/Atom}"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.youtube.com/feeds/videos.xml?channel_id=UC2Xd-TjJByJyK2w1zNwY0zQ",
+                headers={"User-Agent": "Mozilla/5.0 trendscope"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+            for _el in root.iter():
+                _el.tag = _el.tag.split("}")[-1]
+            break
+        except Exception as e:
+            print(f"  [warn] yt_beyondfireship attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    entries = root.findall(".//item") or root.findall(".//entry") or root.findall(f"{ATOM}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = " ".join((e.findtext("title") or e.findtext(f"{ATOM}title", default="") or "").split())
+        link = e.findtext("link") or ""
+        if not link:
+            for l in e.findall("link") or e.findall(f"{ATOM}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    link = l.get("href", "")
+        out.append(item(
+            "yt_beyondfireship", title, link.strip() or "https://www.youtube.com/feeds/videos.xml?channel_id=UC2Xd-TjJByJyK2w1zNwY0zQ",
+            len(entries) - i, "feed rank",
+        ))
+    return out
+
 def fetch_slashdot(limit=15):
     """Slashdot RSS 1.0 (RDF) — nerd news, position-scored like techmeme."""
     print("Fetching Slashdot feed...")
@@ -90918,6 +91695,27 @@ def main():
         "dense": fetch_dense,
         "sidebar": fetch_sidebar,
         "cssweekly": fetch_cssweekly,
+        "yt_fireship": fetch_yt_fireship,
+        "yt_traversymedia": fetch_yt_traversymedia,
+        "yt_networkchuck": fetch_yt_networkchuck,
+        "yt_theprimeagen": fetch_yt_theprimeagen,
+        "yt_3blue1brown": fetch_yt_3blue1brown,
+        "yt_garyexplains": fetch_yt_garyexplains,
+        "yt_liveoverflow": fetch_yt_liveoverflow,
+        "yt_webdevsimplified": fetch_yt_webdevsimplified,
+        "yt_techworldwithnana": fetch_yt_techworldwithnana,
+        "yt_codingwithjohn": fetch_yt_codingwithjohn,
+        "yt_freecodecamp": fetch_yt_freecodecamp,
+        "yt_computerphile": fetch_yt_computerphile,
+        "yt_hak5": fetch_yt_hak5,
+        "yt_sebastianlague": fetch_yt_sebastianlague,
+        "yt_codevolution": fetch_yt_codevolution,
+        "yt_iamtimcorey": fetch_yt_iamtimcorey,
+        "yt_netninja": fetch_yt_netninja,
+        "yt_academind": fetch_yt_academind,
+        "yt_codinggarden": fetch_yt_codinggarden,
+        "yt_wesbos": fetch_yt_wesbos,
+        "yt_beyondfireship": fetch_yt_beyondfireship,
     }
     # Fetchers are independent — run them concurrently (slowest source bounds
     # the run instead of the sum of all sources).
