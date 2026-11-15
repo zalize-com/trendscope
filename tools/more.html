@@ -184,6 +184,7 @@
 <script src="https://cdn.jsdelivr.net/npm/turndown@7.2.2/dist/turndown.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/turndown-plugin-gfm@1.0.2/dist/turndown-plugin-gfm.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/diff@7.0.0/dist/diff.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js"></script>
 <script>
 const TOOLS = [
   {id:"diff", label:"Text diff"},
@@ -249,16 +250,8 @@ function mtGo() {
   const lines = raw.trim().split("\n").filter(l => l.trim());
   if (!lines.length) { out.textContent = "paste TSV/CSV rows"; return; }
   // split on tab, else comma (outside quotes)
-  const rows = lines.map(l => {
-    if (l.includes("\t")) return l.split("\t").map(c => c.trim());
-    const cells = []; let cur = "", inQ = false;
-    for (const ch of l) {
-      if (ch === '"') inQ = !inQ;
-      else if (ch === "," && !inQ) { cells.push(cur.trim()); cur = ""; }
-      else cur += ch;
-    }
-    cells.push(cur.trim()); return cells;
-  });
+  const rows = Papa.parse(raw.trim(), { delimiter: "", skipEmptyLines: "greedy" }).data
+    .map(r => r.map(c => String(c).trim()));
   const ncol = Math.max(...rows.map(r => r.length));
   rows.forEach(r => { while (r.length < ncol) r.push(""); });
   const w = Array.from({length: ncol}, (_, i) =>
