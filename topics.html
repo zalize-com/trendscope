@@ -37,6 +37,8 @@
   li { display: flex; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--border); }
   li:last-child { border-bottom: 0; }
   .r { color: var(--dim); min-width: 18px; text-align: right; }
+  .trj { color: var(--dim); font-size: 11px; margin-left: 6px; text-decoration: none; }
+  .trj:hover { color: var(--accent); }
   .it a { color: var(--fg); }
   .it a:hover { color: var(--accent); }
   .sc { margin-left: auto; color: var(--dim); font-size: 12px; white-space: nowrap; }
@@ -157,7 +159,7 @@ fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
   document.getElementById("out").innerHTML = Object.entries(bySrc)
     .sort((a,b) => b[1].length - a[1].length).map(([s, its]) =>
       `<h2>${s} — ${its.length}</h2><ol>${its.map((it,i) =>
-        `<li><span class="r">${i+1}</span><span class="it"><a href="${it.url}">${esc(it.title)}</a></span><span class="sc">${fmt(it.score)} ${it.metric}</span></li>`).join("")}</ol>`).join("");
+        `<li><span class="r">${i+1}</span><span class="it"><a href="${it.url}">${esc(it.title)}</a><a class="trj" href="item.html?q=${encodeURIComponent(it.title)}" title="trajectory">⤳</a></span><span class="sc">${fmt(it.score)} ${it.metric}</span></li>`).join("")}</ol>`).join("");
 }).catch(() => { document.getElementById("err").textContent = "snapshot unavailable"; });
 </script>
 </body>
