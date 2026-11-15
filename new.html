@@ -65,12 +65,13 @@ function parseCSV(txt) {
 }
 Promise.all([
   fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()),
-  fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()),
+  fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json()),
 ]).then(([snap, txt]) => {
   const today = (snap.date || snap.generated_at || "").slice(0,10);
-  const rows = parseCSV(txt), hdr = rows[0], ci = Object.fromEntries(hdr.map((h,i)=>[h,i]));
   const seenBefore = new Set();
-  for (const r of rows.slice(1)) if (r[ci.date] < today) seenBefore.add(r[ci.source] + "|" + r[ci.url]);
+  for (const [url, it] of Object.entries(txt.items)) {
+    for (const d of Object.keys(it.days)) if (d < today) { seenBefore.add(it.source + "|" + url); break; }
+  }
   const items = Array.isArray(snap.items) ? snap.items
     : Object.entries(snap.items || {}).flatMap(([src, list]) =>
         (Array.isArray(list) ? list : []).map(i => ({...i, source: i.source || src})));

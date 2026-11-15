@@ -65,20 +65,18 @@ function parseCSV(text) {
   return rows;
 }
 
-const text = await fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text());
-const rows = parseCSV(text);
-const hdr = rows[0];
-const ci = Object.fromEntries(hdr.map((h,i)=>[h,i]));
+const ser = await fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json());
 
 // per-day winner: highest score among non-rolling sources (downloads skew the view)
 const ROLLING = new Set(["npm","pypi","crates"]);
 const best = {};
-for (const r of rows.slice(1)) {
-  if (!r[ci.url] || ROLLING.has(r[ci.source])) continue;
-  const d = r[ci.date], sc = Number(r[ci.score]) || 0;
-  if (!best[d] || sc > best[d].score)
-    best[d] = { score: sc, title: r[ci.title], url: r[ci.url],
-                source: r[ci.source], metric: r[ci.metric] || "" };
+for (const [url, it] of Object.entries(ser.items)) {
+  if (ROLLING.has(it.source)) continue;
+  for (const [d, [sc]] of Object.entries(it.days)) {
+    if (!best[d] || sc > best[d].score)
+      best[d] = { score: sc, title: it.title, url,
+                  source: it.source, metric: it.metric || "" };
+  }
 }
 const days = Object.keys(best).sort();
 const first = days[0], last = days[days.length-1];
