@@ -18,6 +18,7 @@
 <meta name="twitter:description" content="Daily cross-source snapshot of what developers are reading, building and downloading. Open data, CC0.">
 <meta name="twitter:image" content="https://zalize-com.github.io/trendscope/og.png">
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="https://unpkg.com/minisearch@7.1.2/dist/umd/index.min.js"></script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
 <link rel="search" type="application/opensearchdescription+xml" title="trendscope" href="opensearch.xml">
 <link rel="manifest" href="manifest.json">
@@ -163,7 +164,7 @@
   <section>
     <h2><span id="board-title">Today's</span> cross-source board <span class="sub" id="board-sub"></span></h2>
     <div class="tabs" id="tabs"></div>
-    <input id="q" type="search" placeholder="filter titles… ⏎ = search 19y archives" style="width:100%;max-width:340px;margin:0 0 12px;padding:7px 12px;border-radius:8px;border:1px solid var(--border);background:var(--panel);color:var(--fg);font:inherit;font-size:13px">
+    <input id="q" type="search" placeholder="search 28k items across all sources… ⏎ = HN 19y" style="width:100%;max-width:340px;margin:0 0 12px;padding:7px 12px;border-radius:8px;border:1px solid var(--border);background:var(--panel);color:var(--fg);font:inherit;font-size:13px">
     <div id="cpk-bar" style="display:none;margin:0 0 10px">
       <input id="cpk-input" placeholder="track an npm package — e.g. hono" style="background:var(--panel);border:1px solid var(--border);border-radius:8px;color:var(--fg);padding:7px 12px;font-size:13px;width:260px">
       <a id="cpk-add" class="btn" style="margin-top:0;padding:5px 12px;cursor:pointer">+ track</a>
@@ -469,8 +470,13 @@ function render(items, tab) {
   } else {
     list = (items.find(([s]) => s === tab) || [null, []])[1];
   }
-  const q = (document.getElementById("q")?.value || "").trim().toLowerCase();
-  if (q) list = list.filter(it =>
+  const qRaw = (document.getElementById("q")?.value || "").trim();
+  const q = qRaw.toLowerCase();
+  if (qRaw.length >= 3 && MINI) {
+    const hits = MINI.search(qRaw).slice(0, 60);
+    list = hits.map(h => MINI_DOCS[h.id]);
+    list.forEach(it => { it.source = it._src; });
+  } else if (q) list = list.filter(it =>
     (it.title || "").toLowerCase().includes(q) ||
     (it.author || "").toLowerCase().includes(q) ||
     (it.tags || []).join(" ").toLowerCase().includes(q));
@@ -518,6 +524,23 @@ function escapeHtml(s) {
 }
 
 let ITEMS = [], INDEX = null, CUR_DATE = null, PREV_DATE = null, STREAK = new Map(), SERIES = {};
+let MINI = null, MINI_DOCS = null;
+function buildMini() {
+  if (MINI || typeof MiniSearch === "undefined") return;
+  MINI_DOCS = [];
+  for (const [src, list] of ITEMS) for (const it of list) {
+    const d = Object.assign({}, it);
+    d.id = MINI_DOCS.length;
+    d._src = src;
+    MINI_DOCS.push(d);
+  }
+  MINI = new MiniSearch({
+    fields: ["title", "author", "tags", "_src"],
+    storeFields: ["id"],
+    searchOptions: { prefix: true, fuzzy: 0.15, boost: { title: 2 } },
+  });
+  MINI.addAll(MINI_DOCS);
+}
 
 function parseCSV(text) {
   const rows = []; let field = "", row = [], inQ = false;
@@ -606,6 +629,7 @@ function paint() {
   ITEMS = Object.entries(SNAP.items || {});
   paintTabs();
   render(ITEMS, currentTab());
+  setTimeout(buildMini, 150);
 }
 
 function paintTabs() {
