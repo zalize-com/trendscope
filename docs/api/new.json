@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:03:51.103535+00:00",
+ "generated_at": "2026-11-15T16:05:35.860237+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1194,
- "new_items": 1068,
+ "total_items": 1226,
+ "new_items": 1100,
  "by_source": {
   "producthunt": 45,
   "show_hn": 30,
@@ -55,6 +55,7 @@
   "beesbuzz": 14,
   "aphyr": 12,
   "baeldung": 12,
+  "jetbrains": 12,
   "airbnb": 10,
   "birklund": 10,
   "dropbox": 10,
@@ -69,9 +70,11 @@
   "netflix": 10,
   "opensourcecom": 10,
   "pinterest": 10,
+  "raphlinus": 10,
   "stratechery": 10,
   "stripe": 10,
   "wingolog": 10,
+  "xeiaso": 10,
   "meta_eng": 9,
   "susam": 9,
   "hackaday": 8,
@@ -3789,6 +3792,102 @@
    "metric": "feed rank"
   },
   {
+   "title": "What’s Fixed and Improved in PyCharm 2026.3",
+   "url": "https://blog.jetbrains.com/pycharm/2026/11/what-s-fixed-and-improved-in-pycharm-2026-3/",
+   "source": "jetbrains",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scaling AI Agents: What We Learned From 9 Real-World Cases",
+   "url": "https://blog.jetbrains.com/blog/2026/11/13/scaling-ai-agents-what-we-learned-from-9-real-world-cases/",
+   "source": "jetbrains",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Forrester Consulting Finds IntelliJ IDEA Delivered 155% ROI and Highlights Open Approach to AI",
+   "url": "https://blog.jetbrains.com/idea/2026/11/forrester-consulting-finds-intellij-idea-delivered-155-roi-and-highlights-open-approach-to-ai/",
+   "source": "jetbrains",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Webinar Recap: Agentic Debugging of Embedded Systems With CLion and TRACE32®",
+   "url": "https://blog.jetbrains.com/clion/2026/11/webinar-recap-trace32/",
+   "source": "jetbrains",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rider 2026.3 for Game Development: Lua and Verse Plugins, Better C++ Debugging, and Closer Godot Integration",
+   "url": "https://blog.jetbrains.com/dotnet/2026/11/11/rider-2026-3-for-gamedev/",
+   "source": "jetbrains",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JetBrains IDEs Transformed for the Agentic Era of Development – With Air",
+   "url": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/",
+   "source": "jetbrains",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ReSharper 2026.3: Claude Agent and Codex in Visual Studio, .NET 11 and C# 15 Support, and More",
+   "url": "https://blog.jetbrains.com/dotnet/2026/11/10/resharper-2026-3-release/",
+   "source": "jetbrains",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rider 2026.3: .NET 11 Support and JetBrains Air",
+   "url": "https://blog.jetbrains.com/dotnet/2026/11/10/rider-2026-3-release/",
+   "source": "jetbrains",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ReSharper C++ 2026.3: Class Layout, Format String Analysis, And More",
+   "url": "https://blog.jetbrains.com/rscpp/2026/11/10/resharper-cpp-2026-3-class-layout-format-string-analysis-and-more/",
+   "source": "jetbrains",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The State of Developer Ecosystem 2026: A Decade of Understanding Developers",
+   "url": "https://blog.jetbrains.com/research/2026/11/state-of-developer-ecosystem-2026/",
+   "source": "jetbrains",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Debugging Rust in 2026",
+   "url": "https://blog.jetbrains.com/rust/2026/11/10/debugging-rust/",
+   "source": "jetbrains",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Debug Unity Builds From Rider With the TeamCity CLI and MCP",
+   "url": "https://blog.jetbrains.com/teamcity/2026/11/debug-unity-builds-from-rider-with-teamcity-cli-mcp/",
+   "source": "jetbrains",
+   "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Progress on the Block Protocol",
    "url": "https://www.joelonsoftware.com/2022/12/19/progress-on-the-block-protocol/",
    "source": "joelonsoftware",
@@ -6421,6 +6520,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "I want a good parallel computer",
+   "url": "https://raphlinus.github.io/gpu/2025/03/21/good-parallel-computer.html",
+   "source": "raphlinus",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A note on Metal shader converter",
+   "url": "https://raphlinus.github.io/gpu/2023/06/12/shader-converter.html",
+   "source": "raphlinus",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simplifying Bézier paths",
+   "url": "https://raphlinus.github.io/curves/2023/04/18/bezpath-simplify.html",
+   "source": "raphlinus",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Moving from Rust to C++",
+   "url": "https://raphlinus.github.io/rust/2023/04/01/rust-to-cpp.html",
+   "source": "raphlinus",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Requiem for piet-gpu-hal",
+   "url": "https://raphlinus.github.io/rust/gpu/2023/01/07/requiem-piet-gpu-hal.html",
+   "source": "raphlinus",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Raph’s reflections and wishes for 2023",
+   "url": "https://raphlinus.github.io/personal/2022/12/31/raph-2023.html",
+   "source": "raphlinus",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minikin retrospective",
+   "url": "https://raphlinus.github.io/text/2022/11/08/minikin.html",
+   "source": "raphlinus",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Parallel curves of cubic Béziers",
+   "url": "https://raphlinus.github.io/curves/2022/09/09/parallel-beziers.html",
+   "source": "raphlinus",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advice for the next dozen Rust GUIs",
+   "url": "https://raphlinus.github.io/rust/gui/2022/07/15/next-dozen-guis.html",
+   "source": "raphlinus",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Xilem: an architecture for UI in Rust",
+   "url": "https://raphlinus.github.io/rust/gui/2022/05/07/ui-architecture.html",
+   "source": "raphlinus",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "My agent.md to improve LLM-assisted code quality",
    "url": "https://fabiensanglard.net/agent.md/index.html",
    "source": "sanglard",
@@ -8624,6 +8803,86 @@
    "title": "two mechanisms for dynamic type checks",
    "url": "https://wingolog.org/archives/2026/02/18/two-mechanisms-for-dynamic-type-checks",
    "source": "wingolog",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+   "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-98432/",
+   "source": "xeiaso",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+   "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-89078/",
+   "source": "xeiaso",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+   "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-93479/",
+   "source": "xeiaso",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+   "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-94300/",
+   "source": "xeiaso",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+   "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-111813/",
+   "source": "xeiaso",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+   "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-111497/",
+   "source": "xeiaso",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+   "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-107891/",
+   "source": "xeiaso",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Jesus Christ patch your shit now",
+   "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-109618/",
+   "source": "xeiaso",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+   "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-92392/",
+   "source": "xeiaso",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Solve: AAC Heavyweight M1 (Savage)",
+   "url": "https://xeiaso.net/blog/2026/m9s/",
+   "source": "xeiaso",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"

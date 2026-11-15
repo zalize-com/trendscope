@@ -102,6 +102,9 @@ A daily cross-source snapshot of developer attention:
 | Troy Hunt | web security and HaveIBeenPwned | `troyhunt.com/rss/` |
 | Tonsky | UI design, fonts and Clojure | `tonsky.me/atom.xml` |
 | Joel on Software | classic software industry essays | `joelonsoftware.com/feed/` |
+| Raph Levien | GUI/text rendering and Rust UI | `raphlinus.github.io/feed.xml` |
+| Xe Iaso | tech essays and homelab lore | `xeiaso.net/blog.rss` |
+| JetBrains | IDE and tooling news | `blog.jetbrains.com/feed/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

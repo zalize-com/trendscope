@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T16:03:51.225330+00:00",
+  "generated_at": "2026-11-15T16:05:35.964853+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -686,6 +686,18 @@
         "rank": 1
       }
     },
+    "jetbrains": {
+      "items": 12,
+      "unique_urls": 12,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "What’s Fixed and Improved in PyCharm 2026.3",
+        "url": "https://blog.jetbrains.com/pycharm/2026/11/what-s-fixed-and-improved-in-pycharm-2026-3/",
+        "score": 12,
+        "rank": 1
+      }
+    },
     "krebs": {
       "items": 10,
       "unique_urls": 10,
@@ -874,6 +886,30 @@
       "top_item": {
         "title": "Progress on the Block Protocol",
         "url": "https://www.joelonsoftware.com/2022/12/19/progress-on-the-block-protocol/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "raphlinus": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "I want a good parallel computer",
+        "url": "https://raphlinus.github.io/gpu/2025/03/21/good-parallel-computer.html",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "xeiaso": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+        "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-98432/",
         "score": 10,
         "rank": 1
       }
