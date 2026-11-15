@@ -60903,7 +60903,7 @@ def main():
             if name in REDDIT_KEYS:
                 with reddit_lock:
                     items = fn()
-                    time.sleep(1.5)  # pace the lane
+                    time.sleep(3)  # pace the lane (~20 req/min)
             else:
                 items = fn()
         except Exception as e:
