@@ -37,6 +37,8 @@
   .stat b { font-size: 22px; } .stat small { color: var(--dim); display: block; font-size: 11px; }
   footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
   #err { color: var(--dim); }
+  .chip{display:inline-block;padding:2px 9px;border:1px solid var(--border);border-radius:12px;font-size:12px;color:var(--fg);text-decoration:none;margin:2px 3px 2px 0;opacity:.75}
+  .chip.on{opacity:1;border-color:var(--accent);color:var(--accent)}
 </style>
 </head>
 <body>
@@ -104,22 +106,31 @@ async function run() {
     `<div class="stat"><b class="up">+${enter.length}</b><small>entered</small></div>
      <div class="stat"><b class="down">−${exit.length}</b><small>left</small></div>
      <div class="stat"><b>${movers.length + pkgs.length}</b><small>persisted</small></div>`;
+  const QS = params.get("s") || "";
+  const sf = it => !QS || it.source === QS;
+  const moversF = movers.filter(m => sf(m.it)), enterF = enter.filter(sf),
+        pkgsF = pkgs.filter(m => sf(m.it));
+  const srcs = [...new Set([...enter, ...exit, ...movers.map(m=>m.it)].map(i => i.source))].sort();
+  const chips = srcs.map(s =>
+    `<a class="chip${s===QS?" on":""}" href="?a=${aEl.value}&b=${bEl.value}&s=${encodeURIComponent(s)}">${s}</a>`).join(" ") +
+    (QS ? ` <a class="chip" href="?a=${aEl.value}&b=${bEl.value}">all</a>` : "");
   $("out").innerHTML =
+    (srcs.length ? `<p id="chips">${chips}</p>` : "") +
     `<h2>biggest gainers (${B})</h2><ol>` +
-      movers.slice(0, 15).map(m =>
+      moversF.slice(0, 15).map(m =>
         row(m.it, `<span class="dim">${fmt(m.a)} →</span>`, `${m.d>0?"+":""}${fmt(m.d)} ${m.it.metric}`, "up")).join("") + `</ol>` +
     `<h2>new on the board</h2><ol>` +
-      enter.slice(0, 15).map(it => row(it, `<span class="dim">new</span>`, `${fmt(it.score)} ${it.metric}`, "up")).join("") + `</ol>` +
+      enterF.slice(0, 15).map(it => row(it, `<span class="dim">new</span>`, `${fmt(it.score)} ${it.metric}`, "up")).join("") + `</ol>` +
     `<h2>biggest droppers</h2><ol>` +
-      [...movers].sort((x,y)=>x.d-y.d).slice(0, 10).map(m =>
+      [...moversF].sort((x,y)=>x.d-y.d).slice(0, 10).map(m =>
         row(m.it, `<span class="dim">${fmt(m.a)} →</span>`, `${fmt(m.d)} ${m.it.metric}`, "down")).join("") + `</ol>` +
     `<h2>package rank movers <span class="dim">· npm/PyPI/crates (rank change)</span></h2><ol>` +
-      [...pkgs].sort((x,y)=>y.d-x.d).filter(m=>m.d>0).slice(0, 8).map(m =>
+      [...pkgsF].sort((x,y)=>y.d-x.d).filter(m=>m.d>0).slice(0, 8).map(m =>
         row(m.it, `<span class="dim">was #${(m.it.rank ?? 0) + m.d} →</span>`, `#${m.it.rank} · ${fmt(m.it.score)} ${m.it.metric}`, "up")).join("") +
-      [...pkgs].sort((x,y)=>x.d-y.d).filter(m=>m.d<0).slice(0, 8).map(m =>
+      [...pkgsF].sort((x,y)=>x.d-y.d).filter(m=>m.d<0).slice(0, 8).map(m =>
         row(m.it, `<span class="dim">was #${(m.it.rank ?? 0) + m.d} →</span>`, `#${m.it.rank} · ${fmt(m.it.score)} ${m.it.metric}`, "down")).join("") + `</ol>` +
     `<h2>left the board</h2><ol>` +
-      exit.slice(0, 15).map(it => row(it, `<span class="dim">gone</span>`, `${fmt(it.score)} ${it.metric}`, "dim")).join("") + `</ol>`;
+      exit.filter(sf).slice(0, 15).map(it => row(it, `<span class="dim">gone</span>`, `${fmt(it.score)} ${it.metric}`, "dim")).join("") + `</ol>`;
 }
 run().catch(e => { $("err").textContent = "could not load snapshots (check dates)"; });
 </script>
