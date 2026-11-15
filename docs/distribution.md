@@ -427,3 +427,27 @@ https://github.com/zalize-com/trendscope (updated by GitHub Actions).
 **Tags to add**: hacker news, github, developer trends, time series,
 web scraping, open dataset
 **Upload files**: the four monthly CSVs from `data/`.
+
+
+---
+
+## Outbound targets (newsletters / communities that cover data projects)
+
+| Target | Where | Pitch angle |
+|---|---|---|
+| Data Elixir newsletter | dataelixir.com (submission form) | open dataset + 19yr HN canon |
+| Data Science Weekly | datascienceweekly.org | dataset-of-the-week slot |
+| Awesome Public Datasets | github PR | table row drafted above |
+| r/datasets | reddit.com/r/datasets | [Data] tag, canon CSVs |
+| Kaggle datasets | kaggle.com | card drafted above (user account) |
+| Data Is Plural (Jeremy Singer-Vine) | tinyletter.com/data-is-plural | weekly dataset picks — our best fit |
+| OpenData subreddit | r/opendata | dataset post |
+| Lobste.rs | lobste.rs | data+show tag self-post ok |
+| Hacker News Show HN | news.ycombinator.com | drafts staged |
+| BetaList / PH | betalist.com / producthunt.com | launch listing |
+| Console.dev newsletter | console.dev | dev tools picks (tools/ suite) |
+| Weekend reads (Changelog News) | changelog.com/news | open data story angle |
+
+Note: "Data Is Plural" is the highest-fit single outlet — they feature
+exactly this kind of quirky public dataset weekly. Email a short pitch
+with the canon headline numbers (19 years, 6.5k rows).
