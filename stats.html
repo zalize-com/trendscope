@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>stats — trendscope</title>
+<meta name="description" content="trendscope dataset growth: items per day, cumulative rows, per-source coverage — computed from the public history.csv.">
+<meta property="og:title" content="trendscope stats — dataset growth">
+<meta property="og:image" content="og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+<style>
+  :root { --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
+          --dim:#8b949e; --accent:#58a6ff; --green:#3fb950; --orange:#d29922; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 18px; }
+  .stats { display: flex; gap: 22px; flex-wrap: wrap; margin: 10px 0 6px; }
+  .stat b { font-size: 24px; } .stat small { color: var(--dim); display: block; font-size: 11px; }
+  h2 { font-size: 15px; color: var(--dim); font-weight: 600; margin: 28px 0 10px;
+       text-transform: uppercase; letter-spacing: .04em; }
+  .chart { width: 100%; background: var(--panel); border: 1px solid var(--border); border-radius: 10px; }
+  .bar { display: flex; align-items: center; gap: 10px; margin-bottom: 5px; font-size: 12px; }
+  .bar .nm { min-width: 110px; color: var(--dim); text-align: right; }
+  .bar .fill { height: 14px; background: var(--accent); border-radius: 3px; opacity: .8; }
+  .bar .v { color: var(--dim); }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+</style>
+</head>
+<body>
+  <nav><a href="index.html">← trendscope</a> · <a href="health.html">status</a> · <a href="docs/api.md">api</a></nav>
+  <h1>dataset <span>stats</span></h1>
+  <p class="sub">How the dataset grows — computed live from <code>data/history.csv</code> + <code>docs/api/stats.json</code>.</p>
+  <div class="stats" id="stats"></div>
+  <h2>items per day</h2>
+  <svg class="chart" id="daily" viewBox="0 0 820 200"></svg>
+  <h2>cumulative rows</h2>
+  <svg class="chart" id="cum" viewBox="0 0 820 200"></svg>
+  <h2>rows per source</h2>
+  <div id="srcs"></div>
+  <footer>API: <a href="docs/api/stats.json">stats.json</a> ·
+    <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a> · CC0</footer>
+<script type="module">
+const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
+const fmt = n => n >= 1e6 ? (n/1e6).toFixed(1)+"M" : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
+
+function parseCSV(text) {
+  const rows = []; let field = "", row = [], inQ = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQ) {
+      if (c === '"') { if (text[i+1] === '"') { field += '"'; i++; } else inQ = false; }
+      else field += c;
+    } else if (c === '"') inQ = true;
+    else if (c === ",") { row.push(field); field = ""; }
+    else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+    else if (c !== "\r") field += c;
+  }
+  if (field || row.length) { row.push(field); rows.push(row); }
+  return rows;
+}
+
+const [csv, stats] = await Promise.all([
+  fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()),
+  fetch("docs/api/stats.json", {cache:"no-cache"}).then(r => r.json()).catch(() => null),
+]);
+const rows = parseCSV(csv);
+const hdr = rows[0];
+const ci = Object.fromEntries(hdr.map((h,i)=>[h,i]));
+
+const perDay = {}, perSrc = {};
+for (const r of rows.slice(1)) {
+  if (!r[ci.date]) continue;
+  perDay[r[ci.date]] = (perDay[r[ci.date]] || 0) + 1;
+  perSrc[r[ci.source]] = (perSrc[r[ci.source]] || 0) + 1;
+}
+const days = Object.keys(perDay).sort();
+const counts = days.map(d => perDay[d]);
+let cum = 0; const cums = counts.map(v => cum += v);
+
+document.getElementById("stats").innerHTML = `
+  <div class="stat"><b>${fmt(rows.length - 1)}</b><small>total rows</small></div>
+  <div class="stat"><b>${days.length}</b><small>days tracked</small></div>
+  <div class="stat"><b>${fmt(Math.round((rows.length-1)/days.length))}</b><small>rows/day avg</small></div>
+  <div class="stat"><b>${Object.keys(perSrc).length}</b><small>sources</small></div>
+  ${stats ? `<div class="stat"><b>${fmt(stats.unique_urls)}</b><small>unique urls</small></div>` : ""}`;
+
+function chart(id, vals, color, fill=false) {
+  const W = 820, H = 200, P = 30;
+  const max = Math.max(...vals, 1);
+  const x = i => P + (W - 2*P) * (vals.length < 2 ? 0.5 : i/(vals.length-1));
+  const y = v => H - P - (H - 2*P) * (v/max);
+  const pts = vals.map((v,i) => `${x(i)},${y(v)}`).join(" ");
+  document.getElementById(id).innerHTML = `
+    <line x1="${P}" y1="${H-P}" x2="${W-P}" y2="${H-P}" stroke="var(--border)"/>
+    <line x1="${P}" y1="${P}" x2="${P}" y2="${H-P}" stroke="var(--border)"/>
+    ${fill ? `<polygon fill="${color}" opacity=".15" points="${P},${H-P} ${pts} ${W-P},${H-P}"/>` : ""}
+    <polyline fill="none" stroke="${color}" stroke-width="2" points="${pts}"/>
+    ${vals.map((v,i) => `<circle cx="${x(i)}" cy="${y(v)}" r="2.5" fill="${color}"/>`).join("")}
+    ${days.map((d,i) => i % Math.ceil(days.length/9) === 0
+      ? `<text x="${x(i)}" y="${H-8}" fill="var(--dim)" font-size="10" text-anchor="middle">${d.slice(5)}</text>` : "").join("")}
+    <text x="8" y="${y(max)}" fill="var(--dim)" font-size="10">${fmt(max)}</text>`;
+}
+chart("daily", counts, "var(--accent)");
+chart("cum", cums, "var(--green)", true);
+
+const maxS = Math.max(...Object.values(perSrc));
+document.getElementById("srcs").innerHTML = Object.entries(perSrc)
+  .sort((a,b) => b[1]-a[1]).map(([s, n]) =>
+    `<div class="bar"><span class="nm">${s}</span>
+     <span class="fill" style="width:${Math.round(400*n/maxS)}px"></span>
+     <span class="v">${fmt(n)}</span></div>`).join("");
+</script>
+</body>
+</html>
