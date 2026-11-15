@@ -85,7 +85,7 @@ const list = Object.entries(authors)
 $("out").innerHTML = list.length
   ? `<table><tr><th>author</th><th class="num">days</th><th class="num">items</th><th>sources</th><th>top hit</th></tr>` +
     list.map(a =>
-      `<tr><td><span class="who">${esc(a.who)}</span></td>
+      `<tr><td><a class="who" href="author.html?u=${encodeURIComponent(a.who)}">${esc(a.who)}</a></td>
        <td class="num">${a.ndays}</td><td class="num">${a.hits}</td>
        <td class="srcs">${[...a.srcs].join(", ")}</td>
        <td class="last"><a href="${a.top.url}">${esc(a.top.title.length>70?a.top.title.slice(0,70)+"…":a.top.title)}</a><a href="item.html?q=${encodeURIComponent(a.top.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></td></tr>`).join("") +
