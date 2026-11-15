@@ -78,6 +78,8 @@ compare within a source, not across.
 - **Item history** (`item.html?q=`): any story/package's day-by-day rank & score trajectory.
 - **This week** (`week.html`): last-7-day cumulative board + staying-power list.
 - **Calendar** (`calendar.html`): month grid — each day's highest-scoring item at a glance.
+- **Canon** (`canon.html`): the HN canon — monthly top-10 front pages backfilled to 2007
+  (data/hn-canon-monthly.csv, 238 months), all-time top-40 + this-month-in-history.
 - **Hiring pulse** (`hiring.html`): monthly HN "Who is hiring?" tracker —
   positions-vs-seekers ratio, 15-year monthly history chart (hiring-monthly.csv).
 - **Digests** (`digest.html`): weekly markdown digests rendered in-site.
