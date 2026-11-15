@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T15:42:43.229434+00:00",
+ "generated_at": "2026-11-15T15:44:04.919191+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 1021,
- "new_items": 895,
+ "total_items": 1036,
+ "new_items": 910,
  "by_source": {
   "producthunt": 45,
   "hackernews": 28,
@@ -33,6 +33,7 @@
   "lemmy": 15,
   "lwn": 15,
   "martinfowler": 15,
+  "mitchw": 15,
   "mongodb": 15,
   "overreacted": 15,
   "philopp": 15,
@@ -4213,6 +4214,126 @@
    "url": "https://engineering.fb.com/2026/10/27/security/privacylib/",
    "source": "meta_eng",
    "rank": 9,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Libghostty 1.0",
+   "url": "https://mitchellh.com/writing/libghostty-1-0",
+   "source": "mitchw",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Terminal Protocol for Program Status (OSC 7501)",
+   "url": "https://mitchellh.com/writing/program-status-osc7501",
+   "source": "mitchw",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Superlogical",
+   "url": "https://mitchellh.com/writing/superlogical",
+   "source": "mitchw",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Everyone Should Know SIMD",
+   "url": "https://mitchellh.com/writing/everyone-should-know-simd",
+   "source": "mitchw",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pledging Another $400,000 to the Zig Software Foundation",
+   "url": "https://mitchellh.com/writing/zig-donation-2026",
+   "source": "mitchw",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ghostty Is Leaving GitHub",
+   "url": "https://mitchellh.com/writing/ghostty-leaving-github",
+   "source": "mitchw",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simdutf Can Now Be Used Without libc++ or libc++abi",
+   "url": "https://mitchellh.com/writing/simdutf-no-libcxx",
+   "source": "mitchw",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Building Block Economy",
+   "url": "https://mitchellh.com/writing/building-block-economy",
+   "source": "mitchw",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My AI Adoption Journey",
+   "url": "https://mitchellh.com/writing/my-ai-adoption-journey",
+   "source": "mitchw",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don't Trip[wire] Yourself: Testing Error Recovery in Zig",
+   "url": "https://mitchellh.com/writing/tripwire",
+   "source": "mitchw",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding and Fixing Ghostty's Largest Memory Leak",
+   "url": "https://mitchellh.com/writing/ghostty-memory-leak-fix",
+   "source": "mitchw",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ghostty Is Now Non-Profit",
+   "url": "https://mitchellh.com/writing/ghostty-non-profit",
+   "source": "mitchw",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vibing a Non-Trivial Ghostty Feature",
+   "url": "https://mitchellh.com/writing/non-trivial-vibing",
+   "source": "mitchw",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Zig Builds Are Getting Faster",
+   "url": "https://mitchellh.com/writing/zig-builds-getting-faster",
+   "source": "mitchw",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Libghostty Is Coming",
+   "url": "https://mitchellh.com/writing/libghostty-is-coming",
+   "source": "mitchw",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },

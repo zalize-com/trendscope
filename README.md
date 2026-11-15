@@ -91,6 +91,7 @@ A daily cross-source snapshot of developer attention:
 | Rands in Repose | engineering management essays | `randsinrepose.com/feed/` |
 | catonmat | unix tools and programming | `catonmat.net/feed` |
 | David Beazley | Python wizardry | `dabeaz.blogspot.com` |
+| Mitchell Hashimoto | infra tooling creator | `mitchellh.com/feed.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
