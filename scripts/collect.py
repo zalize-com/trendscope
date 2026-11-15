@@ -31662,7 +31662,7 @@ def fetch_craftcms(limit=15):
     for attempt in range(3):
         try:
             req = urllib.request.Request(
-                "https://craftcms.com/accessibility.rss",
+                "https://craftcms.com/blog.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
                 root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
