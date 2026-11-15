@@ -76,6 +76,7 @@ A daily cross-source snapshot of developer attention:
 | Dropbox Tech | storage infrastructure | `dropbox.tech/feed` |
 | Lyft Engineering | rideshare platform engineering | `eng.lyft.com/feed` |
 | Pinterest Engineering | visual discovery platform | `medium.com/@Pinterest_Engineering` |
+| Etsy Code as Craft | marketplace engineering | `etsy.com/codeascraft/rss` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
