@@ -28,6 +28,10 @@
          border-radius: 4px; padding: 0 5px; margin-left: 6px; }
   .sc { margin-left: auto; white-space: nowrap; font-size: 12px; color: var(--dim); }
   .days { color: var(--green); font-weight: 600; }
+  .src-chips { margin: 4px 0 10px; }
+  .chip { display: inline-block; padding: 1px 9px; margin: 0 5px 5px 0; border: 1px solid var(--border);
+          border-radius: 999px; color: var(--dim); font-size: 12px; cursor: pointer; }
+  .chip.on { color: var(--accent); border-color: var(--accent); }
   footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
   #err { color: var(--dim); }
 </style>
@@ -94,18 +98,35 @@ fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
   const items = Object.values(byUrl);
   document.getElementById("sub").textContent =
     `${[...win][0]} → ${[...win][[...win].length - 1]} · ${items.length} unique items · ${wk.length} rows`;
-  const top = items.sort((a,b) => b.total - a.total).slice(0, 50);
+  const srcCounts = {};
+  items.forEach(e => srcCounts[e.source] = (srcCounts[e.source] || 0) + 1);
+  const selSrc = new URLSearchParams(location.search).get("s") || "";
+  const chips = [`<span class="chip ${!selSrc ? "on" : ""}" data-s="">all</span>`]
+    .concat(Object.keys(srcCounts).sort((a,b) => srcCounts[b] - srcCounts[a])
+      .map(s => `<span class="chip ${s === selSrc ? "on" : ""}" data-s="${s}">${s} ${srcCounts[s]}</span>`))
+    .join("");
+  const items2 = selSrc ? items.filter(e => e.source === selSrc) : items;
+  const top = items2.sort((a,b) => b.total - a.total).slice(0, 50);
   const multi = items.filter(e => e.days.size >= Math.min(3, WIN))
     .sort((a,b) => b.days.size - a.days.size || b.total - a.total).slice(0, 15);
   document.getElementById("out").innerHTML = `
     <h2>top of the window — by cumulative heat</h2>
+    <p id="chips" class="src-chips">${chips}</p>
     <ol>${top.map((e,i) => `<li><span class="sc" style="min-width:16px;text-align:right">${i+1}</span>
       <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span></span>
-      <span class="sc">${e.total.toFixed(1)} heat</span></li>`).join("")}</ol>
+      <span class="sc">${e.total.toFixed(1)} heat</span></li>`).join("")
+      || `<li><span id="err">no ${selSrc} items in window</span></li>`}</ol>
     <h2>staying power — on the board 3+ days</h2>
     <ol>${multi.map(e => `<li><span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${e.source}</span></span>
       <span class="sc"><span class="days">${e.days.size}d</span> · ${e.total.toFixed(1)} heat</span></li>`).join("")
       || `<li><span id="err">none yet — the dataset needs a few more days</span></li>`}</ol>`;
+  document.getElementById("chips").onclick = ev => {
+    const c = ev.target.closest(".chip");
+    if (!c) return;
+    const u = new URL(location.href);
+    c.dataset.s ? u.searchParams.set("s", c.dataset.s) : u.searchParams.delete("s");
+    location.href = u;
+  };
 }).catch(e => { document.getElementById("err").textContent = "history unavailable"; });
 </script>
 </body>
