@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T13:07:50.953309+00:00",
+ "generated_at": "2026-11-15T13:11:13.387051+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 680,
- "unique_urls": 543,
- "items_in_latest": 290,
- "items_per_day_avg": 75.6,
+ "total_rows": 695,
+ "unique_urls": 558,
+ "items_in_latest": 305,
+ "items_per_day_avg": 77.2,
  "sources": {
   "arstechnica": {
    "rows": 16,
@@ -32,6 +32,10 @@
   "devto": {
    "rows": 31,
    "days_active": 2
+  },
+  "echojs": {
+   "rows": 15,
+   "days_active": 1
   },
   "freecodecamp": {
    "rows": 10,
