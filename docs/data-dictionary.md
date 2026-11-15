@@ -58,3 +58,6 @@ ranking.
   month, Feb 2007 (launch) → today
   (`month,rank,title,url,points,comments,author,id,hn_url`);
   regenerate with `scripts/canon_backfill.py`.
+- `data/show-hn-monthly.csv` — the Show HN canon: top-10 product launches per
+  month, Jan 2012 → today (same schema); regenerate with
+  `scripts/showhn_backfill.py`.
