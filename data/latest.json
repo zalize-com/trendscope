@@ -1,9 +1,10 @@
 {
-  "generated_at": "2026-11-15T06:11:48.681473+00:00",
+  "generated_at": "2026-11-15T06:13:24.810002+00:00",
   "date": "2026-11-15",
   "sources": {
     "hackernews": 20,
     "show_hn": 12,
+    "ask_hn": 12,
     "lobsters": 15,
     "devto": 15,
     "github_trending": 15,
@@ -11,12 +12,12 @@
     "pypi": 22,
     "crates": 15
   },
-  "total_items": 138,
+  "total_items": 150,
   "topics": [
     {
       "topic": "AI/LLM",
-      "count": 32,
-      "total_score": 1990888283,
+      "count": 37,
+      "total_score": 1992304411,
       "examples": [
         {
           "title": "Lovable apps expose passport details and more than 200K private messages",
@@ -38,7 +39,7 @@
     {
       "topic": "Web Dev",
       "count": 25,
-      "total_score": 3544420134,
+      "total_score": 3543639174,
       "examples": [
         {
           "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
@@ -60,7 +61,7 @@
     {
       "topic": "Languages",
       "count": 16,
-      "total_score": 2852396157,
+      "total_score": 2852396158,
       "examples": [
         {
           "title": "Show HN: Gawain – Require type hints on all Python variables",
@@ -146,6 +147,28 @@
       ]
     },
     {
+      "topic": "DevOps/Infra",
+      "count": 3,
+      "total_score": 1435,
+      "examples": [
+        {
+          "title": "Show HN: PowerQueue free online message queue supports AWS, GCE, Azure, AMQP",
+          "url": "https://www.powerqueue.link",
+          "source": "show_hn"
+        },
+        {
+          "title": "Tell HN: Cloudflare's abuse report form is a blank page",
+          "url": "https://news.ycombinator.com/item?id=50491285",
+          "source": "ask_hn"
+        },
+        {
+          "title": "agentes-chat/agentes-chat",
+          "url": "https://github.com/agentes-chat/agentes-chat",
+          "source": "github_trending"
+        }
+      ]
+    },
+    {
       "topic": "Career/Business",
       "count": 3,
       "total_score": 473,
@@ -166,23 +189,6 @@
           "source": "devto"
         }
       ]
-    },
-    {
-      "topic": "DevOps/Infra",
-      "count": 2,
-      "total_score": 1419,
-      "examples": [
-        {
-          "title": "Show HN: PowerQueue free online message queue supports AWS, GCE, Azure, AMQP",
-          "url": "https://www.powerqueue.link",
-          "source": "show_hn"
-        },
-        {
-          "title": "agentes-chat/agentes-chat",
-          "url": "https://github.com/agentes-chat/agentes-chat",
-          "source": "github_trending"
-        }
-      ]
     }
   ],
   "items": {
@@ -197,7 +203,7 @@
         "author": "ls612",
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -209,7 +215,7 @@
         "author": "armcat",
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -221,7 +227,7 @@
         "author": "casi",
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -233,7 +239,7 @@
         "author": "mrkn1",
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -245,7 +251,7 @@
         "author": "madihaa",
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -257,7 +263,7 @@
         "author": "umerf",
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -269,7 +275,7 @@
         "author": "rbanffy",
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -281,7 +287,7 @@
         "author": "hacb",
         "tags": [],
         "rank": 8,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -295,7 +301,7 @@
           "show_hn"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -307,7 +313,7 @@
         "author": "DeepLogin",
         "tags": [],
         "rank": 10,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -319,7 +325,7 @@
         "author": "acossta",
         "tags": [],
         "rank": 11,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -331,7 +337,7 @@
         "author": "Skyfall106",
         "tags": [],
         "rank": 12,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -343,7 +349,7 @@
         "author": "nobody9999",
         "tags": [],
         "rank": 13,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -355,7 +361,7 @@
         "author": "NaOH",
         "tags": [],
         "rank": 14,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -367,7 +373,7 @@
         "author": "PaulHoule",
         "tags": [],
         "rank": 15,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -379,7 +385,7 @@
         "author": "torutofu",
         "tags": [],
         "rank": 16,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -391,7 +397,7 @@
         "author": "wmchen",
         "tags": [],
         "rank": 17,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -403,7 +409,7 @@
         "author": "lxm",
         "tags": [],
         "rank": 18,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -415,7 +421,7 @@
         "author": "myth_drannon",
         "tags": [],
         "rank": 19,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "hackernews",
@@ -427,7 +433,7 @@
         "author": "handfuloflight",
         "tags": [],
         "rank": 20,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       }
     ],
     "show_hn": [
@@ -444,7 +450,7 @@
           "front_page"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "show_hn",
@@ -459,7 +465,7 @@
           "front_page"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "show_hn",
@@ -474,7 +480,7 @@
           "front_page"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "show_hn",
@@ -488,7 +494,7 @@
           "story"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "show_hn",
@@ -502,7 +508,7 @@
           "story"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "show_hn",
@@ -516,7 +522,7 @@
           "story"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "show_hn",
@@ -530,7 +536,7 @@
           "story"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "show_hn",
@@ -544,7 +550,7 @@
           "story"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "show_hn",
@@ -558,7 +564,7 @@
           "story"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "show_hn",
@@ -572,7 +578,7 @@
           "story"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "show_hn",
@@ -586,7 +592,7 @@
           "story"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "show_hn",
@@ -600,7 +606,153 @@
           "story"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
+      }
+    ],
+    "ask_hn": [
+      {
+        "source": "ask_hn",
+        "title": "U.S. October PPI Rises 6.5% YoY, Highest in Nearly Four Years",
+        "url": "https://news.ycombinator.com/item?id=50484421",
+        "score": 172,
+        "metric": "points",
+        "comments": 227,
+        "author": "moonypto",
+        "tags": [],
+        "rank": 1,
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
+      },
+      {
+        "source": "ask_hn",
+        "title": "Ask HN: What are the most useful, concrete AI skills to independently learn?",
+        "url": "https://news.ycombinator.com/item?id=50494696",
+        "score": 82,
+        "metric": "points",
+        "comments": 50,
+        "author": "shnock",
+        "tags": [],
+        "rank": 2,
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
+      },
+      {
+        "source": "ask_hn",
+        "title": "Tell HN: Google Search to start locking down search behind a login wall",
+        "url": "https://news.ycombinator.com/item?id=50491617",
+        "score": 43,
+        "metric": "points",
+        "comments": 28,
+        "author": "exploraz",
+        "tags": [],
+        "rank": 3,
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
+      },
+      {
+        "source": "ask_hn",
+        "title": "Ask HN: What is the state of self-hosting email in 2026?",
+        "url": "https://news.ycombinator.com/item?id=50488230",
+        "score": 41,
+        "metric": "points",
+        "comments": 33,
+        "author": "0o777",
+        "tags": [],
+        "rank": 4,
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
+      },
+      {
+        "source": "ask_hn",
+        "title": "Ask HN: Can anyone name anything new that AI has done?",
+        "url": "https://news.ycombinator.com/item?id=50484426",
+        "score": 30,
+        "metric": "points",
+        "comments": 52,
+        "author": "SamInTheShell",
+        "tags": [],
+        "rank": 5,
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
+      },
+      {
+        "source": "ask_hn",
+        "title": "Tell HN: Cloudflare's abuse report form is a blank page",
+        "url": "https://news.ycombinator.com/item?id=50491285",
+        "score": 16,
+        "metric": "points",
+        "comments": 6,
+        "author": "basilikum",
+        "tags": [],
+        "rank": 6,
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
+      },
+      {
+        "source": "ask_hn",
+        "title": "Vercel should fork and maintain Deno",
+        "url": "https://news.ycombinator.com/item?id=50497196",
+        "score": 15,
+        "metric": "points",
+        "comments": 9,
+        "author": "gfalcao",
+        "tags": [],
+        "rank": 7,
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
+      },
+      {
+        "source": "ask_hn",
+        "title": "Ask HN: Best books you read in 2026?",
+        "url": "https://news.ycombinator.com/item?id=50501990",
+        "score": 8,
+        "metric": "points",
+        "comments": 2,
+        "author": "013",
+        "tags": [],
+        "rank": 8,
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
+      },
+      {
+        "source": "ask_hn",
+        "title": "Do what must be done",
+        "url": "https://news.ycombinator.com/item?id=50496383",
+        "score": 8,
+        "metric": "points",
+        "comments": 1,
+        "author": "alexhr",
+        "tags": [],
+        "rank": 9,
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
+      },
+      {
+        "source": "ask_hn",
+        "title": "Elon should hire Jensen to run Terafab",
+        "url": "https://news.ycombinator.com/item?id=50493765",
+        "score": 7,
+        "metric": "points",
+        "comments": 4,
+        "author": "spottedmarley",
+        "tags": [],
+        "rank": 10,
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
+      },
+      {
+        "source": "ask_hn",
+        "title": "Ask HN: Advice for those who want to build stuff but don't know where to start",
+        "url": "https://news.ycombinator.com/item?id=50486909",
+        "score": 7,
+        "metric": "points",
+        "comments": 10,
+        "author": "mjs06",
+        "tags": [],
+        "rank": 11,
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
+      },
+      {
+        "source": "ask_hn",
+        "title": "Ask HN: What are you doing now that Claude is down?",
+        "url": "https://news.ycombinator.com/item?id=50481347",
+        "score": 7,
+        "metric": "points",
+        "comments": 7,
+        "author": "orbis-tertius",
+        "tags": [],
+        "rank": 12,
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       }
     ],
     "lobsters": [
@@ -617,7 +769,7 @@
           "zig"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "lobsters",
@@ -633,7 +785,7 @@
           "mobile"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "lobsters",
@@ -647,7 +799,7 @@
           "go"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "lobsters",
@@ -663,7 +815,7 @@
           "programming"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "lobsters",
@@ -677,7 +829,7 @@
           "security"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "lobsters",
@@ -693,7 +845,7 @@
           "retrocomputing"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "lobsters",
@@ -708,7 +860,7 @@
           "privacy"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "lobsters",
@@ -722,7 +874,7 @@
           "math"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "lobsters",
@@ -736,7 +888,7 @@
           "assembly"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "lobsters",
@@ -751,13 +903,13 @@
           "plt"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "lobsters",
         "title": "25 of my favourite modern NES games",
         "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
-        "score": 9,
+        "score": 10,
         "metric": "score",
         "comments": 0,
         "author": null,
@@ -766,7 +918,7 @@
           "retrocomputing"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "lobsters",
@@ -780,7 +932,7 @@
           "programming"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "lobsters",
@@ -794,7 +946,7 @@
           "apl"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "lobsters",
@@ -808,7 +960,7 @@
           "programming"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "lobsters",
@@ -822,7 +974,7 @@
           "netbsd"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       }
     ],
     "devto": [
@@ -841,7 +993,7 @@
           "career"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "devto",
@@ -858,7 +1010,7 @@
           "news"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "devto",
@@ -875,7 +1027,7 @@
           "typescript"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "devto",
@@ -892,7 +1044,7 @@
           "watercooler"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "devto",
@@ -909,7 +1061,7 @@
           "programming"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "devto",
@@ -926,7 +1078,7 @@
           "architecture"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "devto",
@@ -943,7 +1095,7 @@
           "ai"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "devto",
@@ -960,7 +1112,7 @@
           "programming"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "devto",
@@ -977,7 +1129,7 @@
           "devto"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "devto",
@@ -994,7 +1146,7 @@
           "resources"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "devto",
@@ -1011,7 +1163,7 @@
           "ai"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "devto",
@@ -1028,7 +1180,7 @@
           "machinelearning"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "devto",
@@ -1045,7 +1197,7 @@
           "pets"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "devto",
@@ -1060,7 +1212,7 @@
           "community"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "devto",
@@ -1077,7 +1229,7 @@
           "architecture"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       }
     ],
     "github_trending": [
@@ -1096,7 +1248,7 @@
         "created_at": "2026-11-09T05:15:48Z",
         "forks": 2645,
         "rank": 1,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "github_trending",
@@ -1113,13 +1265,13 @@
         "created_at": "2026-11-10T02:37:31Z",
         "forks": 424,
         "rank": 2,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "github_trending",
         "title": "deepseek-ai/chat-demo",
         "url": "https://github.com/deepseek-ai/chat-demo",
-        "score": 1884,
+        "score": 1885,
         "metric": "stars",
         "comments": 0,
         "author": "deepseek-ai",
@@ -1130,13 +1282,13 @@
         "created_at": "2026-11-12T08:08:19Z",
         "forks": 314,
         "rank": 3,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "github_trending",
         "title": "apex-compute/ANR",
         "url": "https://github.com/apex-compute/ANR",
-        "score": 1878,
+        "score": 1879,
         "metric": "stars",
         "comments": 0,
         "author": "apex-compute",
@@ -1147,7 +1299,7 @@
         "created_at": "2026-11-11T04:27:17Z",
         "forks": 29,
         "rank": 4,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "github_trending",
@@ -1164,7 +1316,7 @@
         "created_at": "2026-11-10T20:01:01Z",
         "forks": 86,
         "rank": 5,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "github_trending",
@@ -1181,7 +1333,7 @@
         "created_at": "2026-11-10T10:46:56Z",
         "forks": 103,
         "rank": 6,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "github_trending",
@@ -1198,7 +1350,7 @@
         "created_at": "2026-11-09T00:50:28Z",
         "forks": 250,
         "rank": 7,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "github_trending",
@@ -1215,7 +1367,7 @@
         "created_at": "2026-11-09T23:53:25Z",
         "forks": 61,
         "rank": 8,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "github_trending",
@@ -1232,7 +1384,7 @@
         "created_at": "2026-11-12T20:49:07Z",
         "forks": 1,
         "rank": 9,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "github_trending",
@@ -1249,7 +1401,7 @@
         "created_at": "2026-11-09T15:40:06Z",
         "forks": 52,
         "rank": 10,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "github_trending",
@@ -1266,7 +1418,7 @@
         "created_at": "2026-11-09T13:43:40Z",
         "forks": 64,
         "rank": 11,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "github_trending",
@@ -1283,7 +1435,7 @@
         "created_at": "2026-11-09T19:13:52Z",
         "forks": 88,
         "rank": 12,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "github_trending",
@@ -1300,7 +1452,7 @@
         "created_at": "2026-11-09T00:47:33Z",
         "forks": 63,
         "rank": 13,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "github_trending",
@@ -1317,7 +1469,7 @@
         "created_at": "2026-11-10T09:25:25Z",
         "forks": 125,
         "rank": 14,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "github_trending",
@@ -1334,7 +1486,7 @@
         "created_at": "2026-11-13T11:50:50Z",
         "forks": 56,
         "rank": 15,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       }
     ],
     "npm": [
@@ -1350,13 +1502,13 @@
           "npm"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
         "title": "typescript",
         "url": "https://www.npmjs.com/package/typescript",
-        "score": 423856689,
+        "score": 420299292,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1364,7 +1516,7 @@
           "npm"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
@@ -1378,13 +1530,13 @@
           "npm"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
         "title": "vite",
         "url": "https://www.npmjs.com/package/vite",
-        "score": 271758738,
+        "score": 274471057,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1392,13 +1544,13 @@
           "npm"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
         "title": "react",
         "url": "https://www.npmjs.com/package/react",
-        "score": 258500204,
+        "score": 256249908,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1406,7 +1558,7 @@
           "npm"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
@@ -1420,13 +1572,13 @@
           "npm"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
         "title": "express",
         "url": "https://www.npmjs.com/package/express",
-        "score": 197054038,
+        "score": 195709453,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1434,13 +1586,13 @@
           "npm"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
         "title": "vitest",
         "url": "https://www.npmjs.com/package/vitest",
-        "score": 182460991,
+        "score": 183935040,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1448,13 +1600,13 @@
           "npm"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
         "title": "tailwindcss",
         "url": "https://www.npmjs.com/package/tailwindcss",
-        "score": 178999790,
+        "score": 180415741,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1462,7 +1614,7 @@
           "npm"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
@@ -1476,13 +1628,13 @@
           "npm"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
         "title": "next",
         "url": "https://www.npmjs.com/package/next",
-        "score": 93677602,
+        "score": 92890722,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1490,13 +1642,13 @@
           "npm"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
         "title": "webpack",
         "url": "https://www.npmjs.com/package/webpack",
-        "score": 73286825,
+        "score": 72948249,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1504,13 +1656,13 @@
           "npm"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
         "title": "graphql",
         "url": "https://www.npmjs.com/package/graphql",
-        "score": 69819237,
+        "score": 69333039,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1518,7 +1670,7 @@
           "npm"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
@@ -1532,13 +1684,13 @@
           "npm"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
         "title": "prisma",
         "url": "https://www.npmjs.com/package/prisma",
-        "score": 26140810,
+        "score": 26240131,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1546,13 +1698,13 @@
           "npm"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
         "title": "vue",
         "url": "https://www.npmjs.com/package/vue",
-        "score": 25045648,
+        "score": 24808637,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1560,13 +1712,13 @@
           "npm"
         ],
         "rank": 16,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
         "title": "fastify",
         "url": "https://www.npmjs.com/package/fastify",
-        "score": 22737261,
+        "score": 22569216,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1574,7 +1726,7 @@
           "npm"
         ],
         "rank": 17,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
@@ -1588,7 +1740,7 @@
           "npm"
         ],
         "rank": 18,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
@@ -1602,7 +1754,7 @@
           "npm"
         ],
         "rank": 19,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
@@ -1616,7 +1768,7 @@
           "npm"
         ],
         "rank": 20,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
@@ -1630,7 +1782,7 @@
           "npm"
         ],
         "rank": 21,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
@@ -1644,7 +1796,7 @@
           "npm"
         ],
         "rank": 22,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
@@ -1658,7 +1810,7 @@
           "npm"
         ],
         "rank": 23,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "npm",
@@ -1672,7 +1824,7 @@
           "npm"
         ],
         "rank": 24,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       }
     ],
     "pypi": [
@@ -1688,7 +1840,7 @@
           "pypi"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1702,7 +1854,7 @@
           "pypi"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1716,7 +1868,7 @@
           "pypi"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1730,7 +1882,7 @@
           "pypi"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1744,7 +1896,7 @@
           "pypi"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1758,7 +1910,7 @@
           "pypi"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1772,7 +1924,7 @@
           "pypi"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1786,7 +1938,7 @@
           "pypi"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1800,7 +1952,7 @@
           "pypi"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1814,7 +1966,7 @@
           "pypi"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1828,7 +1980,7 @@
           "pypi"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1842,7 +1994,7 @@
           "pypi"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1856,7 +2008,7 @@
           "pypi"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1870,7 +2022,7 @@
           "pypi"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1884,7 +2036,7 @@
           "pypi"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1898,7 +2050,7 @@
           "pypi"
         ],
         "rank": 16,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1912,7 +2064,7 @@
           "pypi"
         ],
         "rank": 17,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1926,7 +2078,7 @@
           "pypi"
         ],
         "rank": 18,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1940,7 +2092,7 @@
           "pypi"
         ],
         "rank": 19,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1954,7 +2106,7 @@
           "pypi"
         ],
         "rank": 20,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1968,7 +2120,7 @@
           "pypi"
         ],
         "rank": 21,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "pypi",
@@ -1982,7 +2134,7 @@
           "pypi"
         ],
         "rank": 22,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       }
     ],
     "crates": [
@@ -1997,7 +2149,7 @@
         "tags": [],
         "description": "A Rust port of Google's SwissTable hash map",
         "rank": 1,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "crates",
@@ -2010,7 +2162,7 @@
         "tags": [],
         "description": "Parser for Rust source code",
         "rank": 2,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "crates",
@@ -2023,7 +2175,7 @@
         "tags": [],
         "description": "A small cross-platform library for retrieving random data from system source",
         "rank": 3,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "crates",
@@ -2036,7 +2188,7 @@
         "tags": [],
         "description": "Random number generators and other randomness functionality.\n",
         "rank": 4,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "crates",
@@ -2049,7 +2201,7 @@
         "tags": [],
         "description": "Core random number generator traits and tools for implementation.\n",
         "rank": 5,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "crates",
@@ -2062,7 +2214,7 @@
         "tags": [],
         "description": "A macro to generate structures which behave like bitflags.\n",
         "rank": 6,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "crates",
@@ -2075,7 +2227,7 @@
         "tags": [],
         "description": "derive(Error)",
         "rank": 7,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "crates",
@@ -2088,7 +2240,7 @@
         "tags": [],
         "description": "Implementation detail of the `thiserror` crate",
         "rank": 8,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "crates",
@@ -2101,7 +2253,7 @@
         "tags": [],
         "description": "encodes and decodes base64 as bytes or utf8",
         "rank": 9,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "crates",
@@ -2114,7 +2266,7 @@
         "tags": [],
         "description": "Rust for Windows",
         "rank": 10,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "crates",
@@ -2127,7 +2279,7 @@
         "tags": [],
         "description": "Quasi-quoting macro quote!(...)",
         "rank": 11,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "crates",
@@ -2140,7 +2292,7 @@
         "tags": [],
         "description": "Raw FFI bindings to platform libraries like libc.",
         "rank": 12,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "crates",
@@ -2153,7 +2305,7 @@
         "tags": [],
         "description": "A hash table with consistent order and fast iteration.",
         "rank": 13,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "crates",
@@ -2166,7 +2318,7 @@
         "tags": [],
         "description": "A substitute implementation of the compiler's `proc_macro` API to decouple token-based libraries from the procedural macro use case.",
         "rank": 14,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       },
       {
         "source": "crates",
@@ -2179,7 +2331,7 @@
         "tags": [],
         "description": "Provides extremely fast (uses SIMD on x86_64, aarch64 and wasm32) routines for\n1, 2 or 3 byte search and single substring search.\n",
         "rank": 15,
-        "captured_at": "2026-11-15T06:11:48.681473+00:00"
+        "captured_at": "2026-11-15T06:13:24.810002+00:00"
       }
     ]
   }
