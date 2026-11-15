@@ -19,6 +19,7 @@ Outputs (the accumulating CC0 dataset):
   data/index.json               snapshot index
 """
 
+import concurrent.futures
 import csv
 import html
 import json
@@ -494,17 +495,24 @@ def main():
         "pypi": fetch_pypi_downloads,
         "crates": fetch_crates,
     }
+    # Fetchers are independent — run them concurrently (slowest source bounds
+    # the run instead of the sum of all sources).
     sections, health = {}, {}
-    for name, fn in fetchers.items():
+
+    def run_one(item):
+        name, fn = item
         t0 = time.time()
         try:
             items = fn()
         except Exception as e:
             items = []
             print(f"  {name}: FAILED {e}")
-        sections[name] = items
-        health[name] = {"ok": bool(items), "items": len(items),
-                        "ms": int((time.time() - t0) * 1000)}
+        return name, items, int((time.time() - t0) * 1000)
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
+        for name, items, ms in pool.map(run_one, fetchers.items()):
+            sections[name] = items
+            health[name] = {"ok": bool(items), "items": len(items), "ms": ms}
     with open(os.path.join(DATA_DIR, "health.json"), "w") as f:
         json.dump({"generated_at": now.isoformat(), "sources": health}, f, indent=2)
 
