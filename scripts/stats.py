@@ -86,6 +86,12 @@ def main():
     out = os.path.join(API, "stats.json")
     with open(out, "w") as f:
         json.dump(doc, f, indent=1)
+
+    # shields.io endpoint badge — live "N items tracked" for the README.
+    with open(os.path.join(API, "badge.json"), "w") as f:
+        json.dump({"schemaVersion": 1, "label": "items tracked",
+                   "message": f"{doc['total_rows']:,} rows · {doc['days_tracked']}d",
+                   "color": "2b6cb0"}, f)
     print(f"wrote {os.path.relpath(out, ROOT)} "
           f"({doc['days_tracked']}d, {doc['total_rows']} rows, "
           f"{doc['unique_urls']} urls)")
