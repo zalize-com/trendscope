@@ -1,0 +1,46 @@
+# trendscope
+
+> The developer attention dataset — what developers are reading, building and
+> downloading, snapshotted daily across 15 sources and published as open data
+> (CC0). Live board plus complete history, machine-readable APIs, and a
+> 19-year Hacker News canon.
+
+## Data
+
+- [latest.json](data/latest.json): today's full cross-source snapshot (items per source)
+- [history.csv](data/history.csv): append-only cumulative history for velocity analysis
+- [data/daily/](data/daily/): per-day snapshots, JSON + CSV
+- [data/topics-history.csv](data/topics-history.csv): per-day topic counts
+- [data/hiring-monthly.csv](data/hiring-monthly.csv): HN labor-market series, 2010→today
+- [data/hn-canon-monthly.csv](data/hn-canon-monthly.csv): monthly HN top-10 since 2007
+- [data/show-hn-monthly.csv](data/show-hn-monthly.csv): monthly Show HN top-10 since 2012
+- [data/ask-hn-monthly.csv](data/ask-hn-monthly.csv): monthly Ask HN top-10 since 2007
+- [data/health.json](data/health.json): per-source pipeline health
+
+## APIs & feeds
+
+- [docs/api/movers-latest.json](docs/api/movers-latest.json): today's board diffs
+- [docs/api/ideas-latest.json](docs/api/ideas-latest.json): clustered Ask HN demand themes
+- [docs/api/stats.json](docs/api/stats.json): dataset statistics
+- [feed.xml](feed.xml): RSS — daily snapshot + movers + weekly digests
+- [feed.json](feed.json): JSON Feed v1.1
+- [docs/api.md](docs/api.md): API index with examples
+- [docs/data-dictionary.md](docs/data-dictionary.md): field-level schema
+
+## Pages
+
+- [index.html](index.html): daily cross-source board, time-travel, search
+- [why.html](why.html): positioning vs live-dashboard alternatives
+- [canon.html](canon.html) / [showhn.html](showhn.html) / [rituals.html](rituals.html) / [year.html](year.html): long-horizon HN history pages
+- [compare.html](compare.html) / [streaks.html](streaks.html) / [week.html](week.html) / [item.html](item.html): trajectory and velocity views
+- [topics.html](topics.html) / [ideas.html](ideas.html) / [domains.html](domains.html) / [authors.html](authors.html): aggregations
+- [hiring.html](hiring.html): HN labor-market pulse
+- [health.html](health.html): pipeline uptime
+- [embed.html](embed.html): embeddable widget
+- [tools/](tools/): 25+ free in-browser dev utilities
+- [digest.html](digest.html): weekly digests and analyses
+
+## License
+
+CC0 — use the data for anything; attribution appreciated, never required.
+Source: https://github.com/zalize-com/trendscope
