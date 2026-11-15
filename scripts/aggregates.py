@@ -331,7 +331,45 @@ def emit_history_apis(now):
         print(f"hiring-history.json: {len(rows)} rows")
 
 
+def emit_rss(now):
+    """latest.json → docs/api/latest.rss: today's top items as RSS 2.0,
+    so RSS readers can subscribe to the cross-source board."""
+    import html as _html
+    lpath = os.path.join(ROOT, "data", "latest.json")
+    if not os.path.exists(lpath):
+        return
+    latest = json.load(open(lpath, encoding="utf-8"))
+    items = latest.get("items", {})
+    if isinstance(items, dict):
+        items = [it for v in items.values() for it in v]
+    # package counters are rolling download numbers, not news — exclude
+    items = [it for it in items
+             if it.get("source") not in ("npm", "pypi", "crates")]
+    items.sort(key=lambda x: x.get("score", 0), reverse=True)
+    items = items[:25]
+    esc = lambda t: _html.escape(str(t or ""), quote=True)
+    body = "\n".join(
+        "  <item><title>{}</title><link>{}</link>"
+        "<description>{} · {} · score {}</description>"
+        "<guid isPermaLink=\"true\">{}</guid></item>".format(
+            esc(it.get("title")), esc(it.get("url")),
+            esc(it.get("source")), esc(it.get("metric")),
+            it.get("score", 0), esc(it.get("url")))
+        for it in items)
+    rss = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+           '<rss version="2.0"><channel>'
+           '<title>trendscope — today\'s top</title>'
+           '<link>https://zalize-com.github.io/trendscope/</link>'
+           '<description>Top items across 18 tracked sources, refreshed daily.</description>'
+           '<lastBuildDate>{}</lastBuildDate>\n{}\n</channel></rss>\n').format(now, body)
+    with open(os.path.join(API, "latest.rss"), "w", encoding="utf-8") as f:
+        f.write(rss)
+    print(f"latest.rss: {len(items)} items")
+
+
 if __name__ == "__main__":
     main()
     import datetime
-    emit_history_apis(datetime.datetime.now(datetime.timezone.utc).isoformat())
+    now = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    emit_history_apis(now)
+    emit_rss(now)

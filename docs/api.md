@@ -33,6 +33,7 @@ Fetch straight from GitHub raw or the Pages site (`/trendscope/…`).
 | `docs/api/topics.json` | JSON | Per-topic item/score counts for every tracked day: `days` + `topics.<name>.{counts, scores}` |
 | `docs/api/hiring-history.json` | JSON | Daily captures of the monthly HN hiring/seeking/freelancer threads (captured_at/kind/comments) |
 | `docs/api/sparkline.svg` | SVG | Items-per-day trend line — `<img>`-embeddable in any README |
+| `docs/api/latest.rss` | RSS 2.0 | Today's top 25 items (package counters excluded) — subscribe in any RSS reader |
 | `docs/api/sparkline/<source>.svg` | SVG | Same trend, one per source (17 files) |
 | `docs/api/velocity.json` | JSON | Score growth rate for multi-day items: url/title/source/metric/days/delta/per_day/latest, sorted by +/day — rolling counters excluded |
 | `docs/api/weekday.json` | JSON | Day-of-week x source item counts — `{sources:{name:{counts:[mon..sun],total}}}` |
