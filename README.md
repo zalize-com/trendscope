@@ -61,6 +61,9 @@ compare within a source, not across.
 - **Compare** (`compare.html?a=…&b=…`): diff two daily snapshots — entries,
   exits and biggest gainers/droppers. The same diff is auto-published daily
   as markdown in `docs/movers/` and shipped in `feed.xml`.
+- **Streaks** (`streaks.html`): staying-power leaderboard — items ranked by
+  consecutive days on the board, computed client-side from `history.csv`.
+- **Digests** (`digest.html`): weekly markdown digests rendered in-site.
 - **Embed widget** (`embed.html`): the top-10 board as a drop-in iframe for
   blogs/docs (no signup, updates daily):
 
