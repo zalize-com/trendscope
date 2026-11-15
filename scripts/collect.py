@@ -343,6 +343,37 @@ def fetch_techmeme(limit=20):
     return out
 
 
+def fetch_slashdot(limit=15):
+    """Slashdot RSS 1.0 (RDF) — nerd news, position-scored like techmeme."""
+    print("Fetching Slashdot feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://rss.slashdot.org/Slashdot/slashdotMain",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = ET.fromstring(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print(f"  [warn] slashdot attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(2 * (attempt + 1))
+    else:
+        return []
+    R = "{http://purl.org/rss/1.0/}"
+    entries = root.findall(f"{R}item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext(f"{R}title", default="") or "").strip()
+        url = (e.findtext(f"{R}link", default="") or "").strip() or "https://slashdot.org/"
+        author = (e.findtext("{http://purl.org/dc/elements/1.1/}creator", default="") or "").strip() or None
+        out.append(item(
+            "slashdot", title, url, len(entries) - i, "feed rank",
+            extra={"author": author},
+        ))
+    return out
+
+
 def fetch_crates(limit=15):
     print("Fetching crates.io recent downloads...")
     data = get_json(
@@ -457,6 +488,7 @@ def main():
         "devto": fetch_devto,
         "producthunt": fetch_producthunt,
         "techmeme": fetch_techmeme,
+        "slashdot": fetch_slashdot,
         "github_trending": fetch_github_trending,
         "npm": fetch_npm_downloads,
         "pypi": fetch_pypi_downloads,
