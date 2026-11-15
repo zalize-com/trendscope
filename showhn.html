@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>show hn canon — trendscope</title>
+<meta name="description" content="The Show HN canon: every month's top-10 product launches since 2012 — a ranked history of what builders shipped.">
+<meta property="og:title" content="trendscope canon — 19 years of HN front pages">
+<meta property="og:image" content="og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+<style>
+  :root { --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
+          --dim:#8b949e; --accent:#58a6ff; --green:#3fb950; --orange:#d29922; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 900px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 18px; }
+  .stats { display: flex; gap: 22px; flex-wrap: wrap; margin: 10px 0 6px; }
+  .stat b { font-size: 24px; } .stat small { color: var(--dim); display: block; font-size: 11px; }
+  h2 { font-size: 15px; color: var(--dim); font-weight: 600; margin: 28px 0 8px;
+       text-transform: uppercase; letter-spacing: .04em; }
+  ol { list-style: none; }
+  li { display: flex; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--border); align-items: baseline; }
+  .r { color: var(--dim); min-width: 22px; text-align: right; }
+  .it a { color: var(--fg); } .it a:hover { color: var(--accent); }
+  .it .yr { color: var(--dim); font-size: 11px; margin-left: 6px; }
+  .sc { margin-left: auto; white-space: nowrap; font-size: 12px; color: var(--dim); }
+  .sc b { color: var(--orange); font-weight: 600; }
+  .cn { display: flex; gap: 8px; flex-wrap: wrap; }
+  .cn a { border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px;
+          font-size: 12px; color: var(--dim); }
+  .cn a.on, .cn a:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
+  .bars { display: flex; align-items: flex-end; gap: 3px; height: 90px; margin-top: 6px; }
+  .bcol { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 3px; }
+  .bcol .b { width: 100%; background: var(--accent); border-radius: 3px 3px 0 0; opacity: .75; }
+  .bcol .y { color: var(--dim); font-size: 9px; }
+  .bcol .v { color: var(--dim); font-size: 9px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+</style>
+</head>
+<body>
+  <nav><a href="index.html">← trendscope</a> · <a href="canon.html">canon</a> · <a href="streaks.html">streaks</a></nav>
+  <h1>the <span>show hn</span> canon</h1>
+  <p class="sub" id="sub">Every month's top-10 Show HN product launches, backfilled to January 2012 — the history of what builders shipped, month by month. <a href="docs/data-dictionary.md">data dictionary →</a></p>
+  <div class="stats" id="stats"></div>
+  <h2>attention inflation — avg #1 score per year</h2>
+  <div class="bars" id="infl"></div>
+  <h2>this month in history</h2>
+  <ol id="timh"></ol>
+  <h2>browse a month</h2>
+  <select id="mpick" style="background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:13px;margin-bottom:8px"></select>
+  <ol id="browse"></ol>
+  <h2>all-time top 40</h2>
+  <div class="cn" id="years"></div>
+  <ol id="out"></ol>
+  <footer>Data: <a href="data/show-hn-monthly.csv">show-hn-monthly.csv</a> ·
+    <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a> · CC0</footer>
+<script type="module">
+const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
+const fmt = n => n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
+
+function parseCSV(text) {
+  const rows = []; let field = "", row = [], inQ = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQ) {
+      if (c === '"') { if (text[i+1] === '"') { field += '"'; i++; } else inQ = false; }
+      else field += c;
+    } else if (c === '"') inQ = true;
+    else if (c === ",") { row.push(field); field = ""; }
+    else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+    else if (c !== "\r") field += c;
+  }
+  if (field || row.length) { row.push(field); rows.push(row); }
+  return rows;
+}
+
+const text = await fetch("data/show-hn-monthly.csv", {cache:"no-cache"}).then(r => r.text());
+const rows = parseCSV(text).slice(1).filter(r => r.length >= 8 && r[0]);
+const canon = rows.map(r => ({ month: r[0], rank: +r[1], title: r[2], url: r[3],
+  points: +r[4], comments: +r[5], author: r[6], hn: r[8] }));
+const months = [...new Set(canon.map(c => c.month))].sort();
+const years = [...new Set(months.map(m => m.slice(0,4)))].sort();
+
+document.getElementById("stats").innerHTML = `
+  <div class="stat"><b>${months.length}</b><small>months</small></div>
+  <div class="stat"><b>${canon.length}</b><small>stories</small></div>
+  <div class="stat"><b>${fmt(canon.reduce((a,c)=>a+c.points,0))}</b><small>total points</small></div>
+  <div class="stat"><b>${fmt(Math.max(...canon.map(c=>c.points)))}</b><small>peak score</small></div>`;
+
+// attention inflation: avg points of the #1 story per year
+const byYear = {};
+canon.filter(c => c.rank === 1).forEach(c => {
+  const y = c.month.slice(0,4);
+  (byYear[y] = byYear[y] || []).push(c.points);
+});
+const yAvg = Object.entries(byYear).sort().map(([y, pts]) =>
+  [y, Math.round(pts.reduce((a,b)=>a+b,0)/pts.length)]);
+const yMax = Math.max(...yAvg.map(x=>x[1]));
+document.getElementById("infl").innerHTML = yAvg.map(([y,v]) =>
+  `<div class="bcol" title="${y}: avg #1 score ${fmt(v)}">
+    <span class="v">${y.endsWith("0")||y.endsWith("5")||v===yMax?fmt(v):""}</span>
+    <div class="b" style="height:${Math.max(4,Math.round(78*v/yMax))}px${v===yMax?";background:var(--orange);opacity:1":""}"></div>
+    <span class="y">${y.slice(2)}</span></div>`).join("");
+
+// this month in history: rank-1 story of the same month, every year
+const curM = months[months.length-1];
+const mm = curM.slice(5);
+const timh = canon.filter(c => c.month.slice(5) === mm && c.rank === 1 && c.month !== curM)
+  .sort((a,b) => b.month.localeCompare(a.month));
+document.getElementById("timh").innerHTML = timh.map((c,i) =>
+  `<li><span class="r">${c.month.slice(0,4)}</span><span class="it">
+   <a href="${c.url}">${esc(c.title)}</a></span><span class="sc"><b>${fmt(c.points)}</b> pts</span></li>`).join("")
+  || '<li class="it" style="color:var(--dim)">no prior years for this month</li>';
+
+// month explorer: any month's top-10
+const mpick = document.getElementById("mpick");
+mpick.innerHTML = [...months].reverse().map(m => `<option>${m}</option>`).join("");
+function renderMonth(m) {
+  document.getElementById("browse").innerHTML = canon.filter(c => c.month === m)
+    .sort((a,b) => a.rank - b.rank).map(c =>
+      `<li><span class="r">${c.rank}</span><span class="it">
+       <a href="${c.url}">${esc(c.title)}</a></span>
+       <span class="sc"><b>${fmt(c.points)}</b> pts · ${fmt(c.comments)}💬 · <a href="${c.hn}">hn</a></span></li>`).join("");
+}
+mpick.onchange = () => renderMonth(mpick.value);
+mpick.value = months[months.length - 1];
+renderMonth(mpick.value);
+
+// year chips
+const P = new URLSearchParams(location.search);
+let yr = P.get("y") || "";
+document.getElementById("years").innerHTML =
+  `<a class="${!yr?"on":""}" href="showhn.html">all time</a>` +
+  years.map(y => `<a class="${y===yr?"on":""}" href="showhn.html?y=${y}">${y}</a>`).join("");
+
+const pool = (yr ? canon.filter(c => c.month.startsWith(yr)) : canon)
+  .slice().sort((a,b) => b.points - a.points).slice(0, 40);
+document.getElementById("out").innerHTML = pool.map((c,i) =>
+  `<li><span class="r">${i+1}</span><span class="it">
+   <a href="${c.url}">${esc(c.title)}</a><span class="yr">${c.month}</span></span>
+   <span class="sc"><b>${fmt(c.points)}</b> pts · ${fmt(c.comments)}💬 · <a href="${c.hn}">hn</a></span></li>`).join("");
+</script>
+</body>
+</html>
