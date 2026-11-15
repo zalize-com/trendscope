@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-15T18:00:22.527973+00:00",
+ "generated_at": "2026-11-15T18:02:54.784351+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 10294,
- "new_items": 10167,
+ "total_items": 10544,
+ "new_items": 10417,
  "by_source": {
   "show_hn": 46,
   "producthunt": 45,
-  "hackernews": 32,
+  "hackernews": 33,
   "theregister": 29,
   "techmeme": 23,
   "slashdot": 20,
@@ -114,18 +114,29 @@
   "bloglukaszolejnik": 15,
   "blogmaximeheckel": 15,
   "blogmgechev": 15,
+  "blogouorz": 15,
+  "blogpaul": 15,
   "blogportswigger": 15,
+  "blogpwabuilder": 15,
+  "blogricardofilipe": 15,
   "blogroboflow": 15,
   "blogsapegin": 15,
   "blogscottlogic": 15,
   "blogsentry": 15,
+  "blogshalvah": 15,
+  "blogsilverorange": 15,
   "blogsnewardassociates": 15,
+  "blogstackblitz": 15,
+  "blogstephaniestimac": 15,
   "blogsunnyxx": 15,
   "blogtensorflow": 15,
   "blogtojicode": 15,
   "blogunicode": 15,
   "blogvuejs": 15,
   "blogwokwi": 15,
+  "blogyoav": 15,
+  "blogzgp": 15,
+  "blogzoomquiet": 15,
   "blueskyweb": 15,
   "bobmonsour": 15,
   "boonepetergithub": 15,
@@ -531,12 +542,20 @@
   "blogluden": 10,
   "blogmozilla": 10,
   "blognem": 10,
+  "blognightlymozilla": 10,
+  "blogomaralshaker": 10,
+  "blogpope": 10,
   "blogpythonlibrary": 10,
   "blogreybango": 10,
   "blogrustlang": 10,
   "blogsbing": 10,
   "blogshakirm": 10,
+  "blogsharvard": 10,
+  "blogshuiba": 10,
   "blogsigalia": 10,
+  "blogsopera": 10,
+  "blogtomayac": 10,
+  "blogtorproject": 10,
   "blogwhatwg": 10,
   "borischerny": 10,
   "bram": 10,
@@ -797,6 +816,7 @@
   "sethmlarson": 5,
   "toni": 5,
   "xanthir": 5,
+  "blogsamuelmaddock": 4,
   "coderyi": 4,
   "github_trending": 4,
   "javascriptweekly": 4,
@@ -19165,6 +19185,486 @@
    "metric": "feed rank"
   },
   {
+   "title": "Three Cheers for Volunteers! – These Weeks in Firefox: Issue 211",
+   "url": "https://blog.nightly.mozilla.org/2026/10/22/three-cheers-for-volunteers-these-weeks-in-firefox-issue-211/",
+   "source": "blognightlymozilla",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shoutout to More Layouts – These Weeks in Firefox: Issue 210",
+   "url": "https://blog.nightly.mozilla.org/2026/09/28/shoutout-to-more-layouts-these-weeks-in-firefox-issue-210/",
+   "source": "blognightlymozilla",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "High-speed Release Trains – These Weeks in Firefox: Issue 209",
+   "url": "https://blog.nightly.mozilla.org/2026/09/17/high-speed-release-trains-these-weeks-in-firefox-issue-209/",
+   "source": "blognightlymozilla",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Need for Speed Controls – These Weeks in Firefox: Issue 208",
+   "url": "https://blog.nightly.mozilla.org/2026/09/11/the-need-for-speed-controls-these-weeks-in-firefox-issue-208/",
+   "source": "blognightlymozilla",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Motion, Colour, Captions, Kit – These Weeks in Firefox: Issue 207",
+   "url": "https://blog.nightly.mozilla.org/2026/09/08/motion-colour-captions-kit-these-weeks-in-firefox-issue-207/",
+   "source": "blognightlymozilla",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Icons! Lots of them! – These Weeks in Firefox: Issue 206",
+   "url": "https://blog.nightly.mozilla.org/2026/08/25/icons-lots-of-them-these-weeks-in-firefox-issue-206/",
+   "source": "blognightlymozilla",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Try the New Firefox Design in Nightly",
+   "url": "https://blog.nightly.mozilla.org/2026/07/27/new-firefox-design/",
+   "source": "blognightlymozilla",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Eyedropper Quick Action, geckodriver 0.37, and Tighter File Permissions – These Weeks in Firefox: Issue 205",
+   "url": "https://blog.nightly.mozilla.org/2026/06/22/eyedropper-quick-action-geckodriver-0-37-and-tighter-file-permissions-these-weeks-in-firefox-issue-205/",
+   "source": "blognightlymozilla",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Giving You More Control – These Weeks in Firefox: Issue 204",
+   "url": "https://blog.nightly.mozilla.org/2026/06/15/giving-you-more-control-these-weeks-in-firefox-issue-204/",
+   "source": "blognightlymozilla",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "More Kit, More Control – These Weeks in Firefox: Issue 203",
+   "url": "https://blog.nightly.mozilla.org/2026/06/03/more-kit-more-control-these-weeks-in-firefox-issue-203/",
+   "source": "blognightlymozilla",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building Resilient (Signup) Flows",
+   "url": "https://blog.omaralshaker.com/2026/11/13/building-resilient-signup-flows/",
+   "source": "blogomaralshaker",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Live Guide to Buying Property in Poland",
+   "url": "https://blog.omaralshaker.com/2024/09/03/the-live-guide-to-buying-property-in-poland/",
+   "source": "blogomaralshaker",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I’m not an Insect, I’m Not a Software Developer",
+   "url": "https://blog.omaralshaker.com/2023/08/23/im-not-an-insect-im-not-a-software-developer/",
+   "source": "blogomaralshaker",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Orwellian Surrealism of Saddam Hussein-Era School Assemblies",
+   "url": "https://blog.omaralshaker.com/2023/01/28/the-orwellian-surrealism-of-saddam-hussein-era-school-assemblies/",
+   "source": "blogomaralshaker",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Dogs and Love",
+   "url": "https://blog.omaralshaker.com/2022/05/12/on-dogs-and-love/",
+   "source": "blogomaralshaker",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Home Country",
+   "url": "https://blog.omaralshaker.com/2021/05/18/home-country/",
+   "source": "blogomaralshaker",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reviewing Dell UltraSharp U4919DW Ultrawide Monitor: Six Months In as a Developer",
+   "url": "https://blog.omaralshaker.com/2020/11/10/reviewing-dell-ultrasharp-u4919dw-ultrawide-monitor-six-months-in-as-a-developer/",
+   "source": "blogomaralshaker",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stories from my Childhood – Catching up on Homework",
+   "url": "https://blog.omaralshaker.com/2020/09/21/stories-from-my-childhood-catching-up-on-homework/",
+   "source": "blogomaralshaker",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stories from my Childhood – Playing Hide-and-Seek in Baghdad",
+   "url": "https://blog.omaralshaker.com/2020/09/17/stories-from-childhood-playing-hide-and-seek-in-baghdad/",
+   "source": "blogomaralshaker",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Buying Cycling Gear – Advice From an Absolute Noob",
+   "url": "https://blog.omaralshaker.com/2020/08/03/buying-cycling-gear-advice-from-an-absolute-noob/",
+   "source": "blogomaralshaker",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dwarkesh Podcast",
+   "url": "https://lipeng.ac/post/2003",
+   "source": "blogouorz",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Founders",
+   "url": "https://lipeng.ac/post/2002",
+   "source": "blogouorz",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lex Fridman Podcast",
+   "url": "https://lipeng.ac/post/2001",
+   "source": "blogouorz",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Jing Blog – 陶靖的博客",
+   "url": "https://lipeng.ac/post/1001",
+   "source": "blogouorz",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "吕立青的博客",
+   "url": "https://lipeng.ac/post/1002",
+   "source": "blogouorz",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "土木坛子",
+   "url": "https://lipeng.ac/post/1003",
+   "source": "blogouorz",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "八咫烏",
+   "url": "https://lipeng.ac/post/1004",
+   "source": "blogouorz",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "宇阳",
+   "url": "https://lipeng.ac/post/1005",
+   "source": "blogouorz",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "D_SUPER BLOG",
+   "url": "https://lipeng.ac/post/1006",
+   "source": "blogouorz",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "涛叔",
+   "url": "https://lipeng.ac/post/1007",
+   "source": "blogouorz",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "理论派",
+   "url": "https://lipeng.ac/post/1008",
+   "source": "blogouorz",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "叶开",
+   "url": "https://lipeng.ac/post/1009",
+   "source": "blogouorz",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sukka's Blog",
+   "url": "https://lipeng.ac/post/1010",
+   "source": "blogouorz",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Adil",
+   "url": "https://lipeng.ac/post/1011",
+   "source": "blogouorz",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "设计笔记",
+   "url": "https://lipeng.ac/post/1012",
+   "source": "blogouorz",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A wait-free single-producer single-consumer ring buffer for the Web",
+   "url": "https://blog.paul.cx/post/a-wait-free-spsc-ringbuffer-for-the-web/",
+   "source": "blogpaul",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly notes 15",
+   "url": "https://blog.paul.cx/weekly-notes/weekly-notes-15/",
+   "source": "blogpaul",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly notes 14",
+   "url": "https://blog.paul.cx/weekly-notes/weekly-notes-14/",
+   "source": "blogpaul",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly notes 13",
+   "url": "https://blog.paul.cx/weekly-notes/weekly-notes-13/",
+   "source": "blogpaul",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly notes 12 — Back into the swing of things",
+   "url": "https://blog.paul.cx/weekly-notes/weekly-notes-12/",
+   "source": "blogpaul",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly notes 11 — Profiling and amateur filing",
+   "url": "https://blog.paul.cx/weekly-notes/weekly-notes-11/",
+   "source": "blogpaul",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly notes 10 — Life has restarted",
+   "url": "https://blog.paul.cx/weekly-notes/weekly-notes-10/",
+   "source": "blogpaul",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly notes 9 — Life start again?",
+   "url": "https://blog.paul.cx/weekly-notes/weekly-notes-9/",
+   "source": "blogpaul",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly notes 8 — Days off and a new bookshelf",
+   "url": "https://blog.paul.cx/weekly-notes/weekly-notes-8/",
+   "source": "blogpaul",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly notes 7 — More of the same",
+   "url": "https://blog.paul.cx/weekly-notes/weekly-notes-7/",
+   "source": "blogpaul",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly notes 6 — Wobbly abstractions and stable furniture",
+   "url": "https://blog.paul.cx/weekly-notes/weekly-notes-6/",
+   "source": "blogpaul",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly notes 5 — Sniffing and glue",
+   "url": "https://blog.paul.cx/weekly-notes/weekly-notes-5/",
+   "source": "blogpaul",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly notes 4 — ISOBMFF, ArrayBuffer and darbouka",
+   "url": "https://blog.paul.cx/weekly-notes/weekly-notes-4/",
+   "source": "blogpaul",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly notes 3 — Intense amen choppage",
+   "url": "https://blog.paul.cx/weekly-notes/weekly-notes-3/",
+   "source": "blogpaul",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly notes 2 — Volume management & typos",
+   "url": "https://blog.paul.cx/weekly-notes/weekly-notes-2/",
+   "source": "blogpaul",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Easy ways to make your Google Forms more accessible (video)",
+   "url": "https://blog.pope.tech/2026/10/03/easy-ways-to-make-your-google-forms-more-accessible-video/",
+   "source": "blogpope",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to make your Google Forms more accessible",
+   "url": "https://blog.pope.tech/2026/10/02/how-to-make-your-google-forms-more-accessible/",
+   "source": "blogpope",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Use tags to organize courses and subaccounts",
+   "url": "https://blog.pope.tech/2026/09/22/use-tags-to-organize-courses-and-subaccounts/",
+   "source": "blogpope",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speech Recognition Basics: Setup and a Quick Table Demo",
+   "url": "https://blog.pope.tech/2026/08/31/speech-recognition-basics-setup-and-a-quick-table-demo/",
+   "source": "blogpope",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speech recognition and complex tables with fields",
+   "url": "https://blog.pope.tech/2026/08/31/speech-recognition-and-complex-tables-with-fields/",
+   "source": "blogpope",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How One University Reduced Web Accessibility Errors by 90%",
+   "url": "https://blog.pope.tech/2026/08/12/how-one-university-reduced-web-accessibility-errors-by-90/",
+   "source": "blogpope",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to navigate headings with NVDA screen reader (video)",
+   "url": "https://blog.pope.tech/2026/08/06/how-to-navigate-headings-with-nvda-screen-reader-video/",
+   "source": "blogpope",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Canvas Documents and Videos Dashboard",
+   "url": "https://blog.pope.tech/2026/07/16/canvas-documents-and-videos-dashboard/",
+   "source": "blogpope",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is an accessible name, and why does it matter for accessibility?",
+   "url": "https://blog.pope.tech/2026/07/01/accessible-name/",
+   "source": "blogpope",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using BeeLine Reader in your Canvas Course",
+   "url": "https://blog.pope.tech/2026/06/03/using-beeline-reader-in-your-canvas-course/",
+   "source": "blogpope",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Heading to San Francisco? Meet PortSwigger at OWASP Global AppSec USA 2026",
    "url": "https://portswigger.net/blog/heading-to-san-francisco-meet-portswigger-at-owasp-global-appsec-usa-2026",
    "source": "blogportswigger",
@@ -19280,6 +19780,126 @@
    "title": "PortSwigger partners with Meta Bug Bounty to empower bug hunters with training and Pro licenses",
    "url": "https://portswigger.net/blog/portswigger-partners-with-meta-bug-bounty-to-empower-bug-hunters-with-training-and-pro-licenses",
    "source": "blogportswigger",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PWA Builder v3 a brand-new experience to build even better PWAs",
+   "url": "https://blog.pwabuilder.com/posts/pwa-builder-v3-a-brand-new-experience-to-build-even-better-pwas/",
+   "source": "blogpwabuilder",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Microsoft and Google team up to make PWAs better in the Play Store",
+   "url": "https://blog.pwabuilder.com/posts/microsoft-and-google-team-up-to-make-pwas-better-in-the-play-store/",
+   "source": "blogpwabuilder",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a drawing PWA with PWABuilder!",
+   "url": "https://blog.pwabuilder.com/posts/building-a-drawing-pwa-with-pwabuilder!/",
+   "source": "blogpwabuilder",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bringing Chromium Edge PWAs to the Microsoft Store",
+   "url": "https://blog.pwabuilder.com/posts/bringing-chromium-edge-pwas-to-the-microsoft-store/",
+   "source": "blogpwabuilder",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building PWAs with Web Components!",
+   "url": "https://blog.pwabuilder.com/posts/building-pwas-with-web-components!/",
+   "source": "blogpwabuilder",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PWA Inking Enable 2D inking for the web!",
+   "url": "https://blog.pwabuilder.com/posts/pwa-inking-enable-2d-inking-for-the-web!/",
+   "source": "blogpwabuilder",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visualizing your web manifest",
+   "url": "https://blog.pwabuilder.com/posts/visualizing-your-web-manifest/",
+   "source": "blogpwabuilder",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Publish your PWA to the iOS App Store",
+   "url": "https://blog.pwabuilder.com/posts/publish-your-pwa-to-the-ios-app-store/",
+   "source": "blogpwabuilder",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing PWA Studio, the VS Code extension for building Progressive Web Apps!",
+   "url": "https://blog.pwabuilder.com/posts/announcing-pwa-studio-the-vs-code-extension-for-building-progressive-web-apps!/",
+   "source": "blogpwabuilder",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The New PWABuilder Report Card",
+   "url": "https://blog.pwabuilder.com/posts/the-new-pwabuilder-report-card/",
+   "source": "blogpwabuilder",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Manifest Editor",
+   "url": "https://blog.pwabuilder.com/posts/the-manifest-editor/",
+   "source": "blogpwabuilder",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing informative and actionable tooltips for the PWABuilder Action Items list!",
+   "url": "https://blog.pwabuilder.com/posts/introducing-informative-and-actionable-tooltips-for-the-pwabuilder-action-items-list!/",
+   "source": "blogpwabuilder",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Use the PWABuilder CLI to Create a New Progressive Web App",
+   "url": "https://blog.pwabuilder.com/posts/use-the-pwabuilder-cli-to-create-a-new-progressive-web-app/",
+   "source": "blogpwabuilder",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mimic Native Transitions In Your Progressive Web App",
+   "url": "https://blog.pwabuilder.com/posts/mimic-native-transitions-in-your-progressive-web-app/",
+   "source": "blogpwabuilder",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing the App Capabilities Card",
+   "url": "https://blog.pwabuilder.com/posts/announcing-the-app-capabilities-card/",
+   "source": "blogpwabuilder",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -19441,6 +20061,126 @@
    "url": "https://blog.reybango.com/2015/06/02/the-windows-10-upgrade-notification-users-will-start-seeing/",
    "source": "blogreybango",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Manipulating strings with TypeScript",
+   "url": "https://ricardofilipe.com/manipulating-strings-with-ts/",
+   "source": "blogricardofilipe",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Looking back on 2022",
+   "url": "https://ricardofilipe.com/2022-year-in-review/",
+   "source": "blogricardofilipe",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Year Reset: A Different Approach",
+   "url": "https://ricardofilipe.com/new-year-reset/",
+   "source": "blogricardofilipe",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2020: My Personal Year Review",
+   "url": "https://ricardofilipe.com/2020-year-in-review/",
+   "source": "blogricardofilipe",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Understanding TypeScript Records",
+   "url": "https://ricardofilipe.com/understanding-typescript-records/",
+   "source": "blogricardofilipe",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pandemic Running",
+   "url": "https://ricardofilipe.com/pandemic-running/",
+   "source": "blogricardofilipe",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TypeScript Generics: A gentle introduction",
+   "url": "https://ricardofilipe.com/typescript-generics/",
+   "source": "blogricardofilipe",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Traveling for the right reason",
+   "url": "https://ricardofilipe.com/traveling-for-the-right-reason/",
+   "source": "blogricardofilipe",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "True Nature",
+   "url": "https://ricardofilipe.com/true-nature/",
+   "source": "blogricardofilipe",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On running—and saving me from a black hole",
+   "url": "https://ricardofilipe.com/on-runningand-saving-me-from-a-black-hole/",
+   "source": "blogricardofilipe",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Japan Photo Essay",
+   "url": "https://ricardofilipe.com/a-japan-photo-essay/",
+   "source": "blogricardofilipe",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Year in Photographs",
+   "url": "https://ricardofilipe.com/a-year-in-photographs/",
+   "source": "blogricardofilipe",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cinemagraphs — and working with constraints",
+   "url": "https://ricardofilipe.com/cinemagraphs-and-working-with-constraints/",
+   "source": "blogricardofilipe",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Leadership and Confidence",
+   "url": "https://ricardofilipe.com/on-leadership-and-confidence/",
+   "source": "blogricardofilipe",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Ghosts of Montreal",
+   "url": "https://ricardofilipe.com/the-ghosts-of-montreal/",
+   "source": "blogricardofilipe",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -19641,6 +20381,38 @@
    "url": "https://blog.rust-lang.org/2026/09/21/github-actions-leaking-secrets-when-miri-output-is-cached/",
    "source": "blogrustlang",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I lost 50,000 Chrome extension users after adding required permissions",
+   "url": "https://blog.samuelmaddock.com/posts/losing-50000-chrome-extension-users/",
+   "source": "blogsamuelmaddock",
+   "rank": 1,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The End of Indie Web Browsers: You Can (Not) Compete",
+   "url": "https://blog.samuelmaddock.com/posts/the-end-of-indie-web-browsers/",
+   "source": "blogsamuelmaddock",
+   "rank": 2,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I tried creating a web browser, and Google blocked me",
+   "url": "https://blog.samuelmaddock.com/posts/google-widevine-blocked-my-browser/",
+   "source": "blogsamuelmaddock",
+   "rank": 3,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Contact",
+   "url": "https://blog.samuelmaddock.com/contact/",
+   "source": "blogsamuelmaddock",
+   "rank": 4,
    "score": 1,
    "metric": "feed rank"
   },
@@ -20165,6 +20937,286 @@
    "metric": "feed rank"
   },
   {
+   "title": "DIY Smart home project: Restoring the wall switch",
+   "url": "https://blog.shalvah.me/posts/diy-smart-home-project-restoring-the-wall-switch",
+   "source": "blogshalvah",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dealing with domain modelling mismatches on external services",
+   "url": "https://blog.shalvah.me/posts/dealing-with-domain-modelling-mismatches-on-external-services",
+   "source": "blogshalvah",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "All decisions are wrong, but some are better",
+   "url": "https://blog.shalvah.me/posts/all-decisions-are-wrong-but-some-are-better",
+   "source": "blogshalvah",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making non-atomic actions atomic using intents",
+   "url": "https://blog.shalvah.me/posts/making-non-atomic-actions-atomic-using-intents",
+   "source": "blogshalvah",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DIY Smart home project: Presence-activated lights",
+   "url": "https://blog.shalvah.me/posts/diy-smart-home-project-presence-activated-lights",
+   "source": "blogshalvah",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In defence of complexity",
+   "url": "https://blog.shalvah.me/posts/in-defence-of-complexity",
+   "source": "blogshalvah",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reflections on Year 1 of my engineering studies",
+   "url": "https://blog.shalvah.me/posts/reflections-on-year-1-of-my-engineering-studies",
+   "source": "blogshalvah",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exploring software design problems and solutions: Transactions and side effects",
+   "url": "https://blog.shalvah.me/posts/exploring-software-design-problems-and-solutions-transactions-and-side-effects",
+   "source": "blogshalvah",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An exploration of vector search",
+   "url": "https://blog.shalvah.me/posts/an-exploration-of-vector-search",
+   "source": "blogshalvah",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lessons for me on leadership, from a film about apes",
+   "url": "https://blog.shalvah.me/posts/lessons-for-me-on-leadership-from-a-film-about-apes",
+   "source": "blogshalvah",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learn SVG by drawing an arrow",
+   "url": "https://blog.shalvah.me/posts/learn-svg-by-drawing-an-arrow",
+   "source": "blogshalvah",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a PHP client for Faktory, Part 6: Higher-level usage",
+   "url": "https://blog.shalvah.me/posts/building-a-php-client-for-faktory-part-6-higher-level-usage",
+   "source": "blogshalvah",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exploring concurrent rate limiters, mutexes, semaphores",
+   "url": "https://blog.shalvah.me/posts/diving-into-concurrent-rate-limiters-mutexes-semaphores",
+   "source": "blogshalvah",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "High and low cardinality",
+   "url": "https://blog.shalvah.me/posts/high-and-low-cardinality",
+   "source": "blogshalvah",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Packing and unpacking bytes",
+   "url": "https://blog.shalvah.me/posts/packing-and-unpacking-bytes",
+   "source": "blogshalvah",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sungleans",
+   "url": "https://doc.searls.com/2026/11/15/sungleans/",
+   "source": "blogsharvard",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hensday",
+   "url": "https://doc.searls.com/2026/11/11/hensday/",
+   "source": "blogsharvard",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "King of No Pain",
+   "url": "https://doc.searls.com/2026/11/11/king-of-no-pain/",
+   "source": "blogsharvard",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Computer History",
+   "url": "https://doc.searls.com/2026/11/07/computer-history/",
+   "source": "blogsharvard",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The California AI Rush",
+   "url": "https://doc.searls.com/2026/10/28/the-california-ai-rush/",
+   "source": "blogsharvard",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Harvest Moonday",
+   "url": "https://doc.searls.com/2026/10/25/harvest-moonday/",
+   "source": "blogsharvard",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Fossil Present",
+   "url": "https://doc.searls.com/2026/10/23/the-fossil-present/",
+   "source": "blogsharvard",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Friday Tab Clearance Sale",
+   "url": "https://doc.searls.com/2026/10/23/friday-tab-clearance-sale/",
+   "source": "blogsharvard",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fuseday",
+   "url": "https://doc.searls.com/2026/10/20/fuseday/",
+   "source": "blogsharvard",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cluesdays",
+   "url": "https://doc.searls.com/2026/10/19/cluesdays/",
+   "source": "blogsharvard",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "豆哥38岁生日快乐",
+   "url": "https://shuiba.co/happy-dou-38th-birthday",
+   "source": "blogshuiba",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "下雨了",
+   "url": "https://shuiba.co/it-is-raining",
+   "source": "blogshuiba",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "致我的高中同学",
+   "url": "https://shuiba.co/to-my-high-school-classmates",
+   "source": "blogshuiba",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "小K的一岁生日会",
+   "url": "https://shuiba.co/klayton-1st-birthday-party",
+   "source": "blogshuiba",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "亲情是什么",
+   "url": "https://shuiba.co/what-is-family",
+   "source": "blogshuiba",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "七五三的七岁写真",
+   "url": "https://shuiba.co/popo-seven-year-old-photos",
+   "source": "blogshuiba",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "给手机换个新皮肤",
+   "url": "https://shuiba.co/new-look-for-iphone",
+   "source": "blogshuiba",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "第二年云中祭",
+   "url": "https://shuiba.co/our-2nd-unchu-matsuri",
+   "source": "blogshuiba",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "银发周",
+   "url": "https://shuiba.co/silver-week",
+   "source": "blogshuiba",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "下午茶",
+   "url": "https://shuiba.co/afternoon-tea",
+   "source": "blogshuiba",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Protocol Handler Registration via Browser Extensions",
    "url": "https://blogs.igalia.com/jfernandez/2026/03/24/protocol-handler-registration-via-browser-extensions/?pk_campaign=feed&pk_kwd=protocol-handler-registration-via-browser-extensions",
    "source": "blogsigalia",
@@ -20241,6 +21293,126 @@
    "url": "https://blogs.igalia.com/jfernandez/2017/05/03/can-i-use-css-box-alignment/?pk_campaign=feed&pk_kwd=can-i-use-css-box-alignment",
    "source": "blogsigalia",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Uber for Dogs: How to Stop & Think for Design",
+   "url": "https://www.silverorange.com/blog/uber-for-dogs",
+   "source": "blogsilverorange",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "silverorange digest May 2026 Edition",
+   "url": "https://www.silverorange.com/blog/digest-may-2026",
+   "source": "blogsilverorange",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Floats are dead! Long live floats!",
+   "url": "https://www.silverorange.com/blog/float",
+   "source": "blogsilverorange",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Web is a Guitar Amp Now (Literally)",
+   "url": "https://www.silverorange.com/blog/the-web-is-guitar-amp",
+   "source": "blogsilverorange",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Working with Clients on Complex Software Estimations",
+   "url": "https://www.silverorange.com/blog/complex-software-estimations",
+   "source": "blogsilverorange",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Another Year of HTMHell",
+   "url": "https://www.silverorange.com/blog/another-year-of-htmhell",
+   "source": "blogsilverorange",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "silverorange digest Fall 2025 Edition",
+   "url": "https://www.silverorange.com/blog/digest-october-2025",
+   "source": "blogsilverorange",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What does it mean to be responsive?",
+   "url": "https://www.silverorange.com/blog/what-does-it-mean-to-be-responsive",
+   "source": "blogsilverorange",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ryan’s law of Suitability for choosing programming languages (or water bottles)",
+   "url": "https://www.silverorange.com/blog/law-of-suitability",
+   "source": "blogsilverorange",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learning Accessibility as a Designer",
+   "url": "https://www.silverorange.com/blog/practical-accessibility",
+   "source": "blogsilverorange",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility in our hiring process",
+   "url": "https://www.silverorange.com/blog/accessibility-in-our-hiring-process",
+   "source": "blogsilverorange",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gild Just One Lily at Smashing Magazine",
+   "url": "https://www.silverorange.com/blog/gild-just-one-lily",
+   "source": "blogsilverorange",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Not-So-Simple Redesign",
+   "url": "https://www.silverorange.com/blog/website-illustrations",
+   "source": "blogsilverorange",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why silverorange?",
+   "url": "https://www.silverorange.com/blog/why-silverorange",
+   "source": "blogsilverorange",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Our own little corner of HTMHell",
+   "url": "https://www.silverorange.com/blog/htmhell",
+   "source": "blogsilverorange",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -20360,6 +21532,326 @@
    "title": "Why Writing Matters (to the Technical Professional)",
    "url": "http://blogs.newardassociates.com/blog/2025/why-writing-matters.html",
    "source": "blogsnewardassociates",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Opera receives a Red Dot: Best of the Best Award",
+   "url": "https://blogs.opera.com/news/2026/11/opera-receives-a-red-dot-best-of-the-best-award/",
+   "source": "blogsopera",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Opera breaks through 100 million users on desktop",
+   "url": "https://blogs.opera.com/news/2026/11/opera-breaks-through-100-million-users-on-desktop/",
+   "source": "blogsopera",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Browser Booster Turns Opera GX Into Your Entertainment Hub",
+   "url": "https://blogs.opera.com/news/2026/10/opera-gx-browser-booster/",
+   "source": "blogsopera",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web AI: Local AI for the web, now in Opera",
+   "url": "https://blogs.opera.com/news/2026/10/webai-local-ai-for-the-web-now-in-opera/",
+   "source": "blogsopera",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Opera brings HTML-in-Canvas to gamers and developers",
+   "url": "https://blogs.opera.com/news/2026/10/opera-brings-html-in-canvas-to-the-browser/",
+   "source": "blogsopera",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing the New Opera Air",
+   "url": "https://blogs.opera.com/news/2026/10/opera-air/",
+   "source": "blogsopera",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Skip the Gacha Gamble: Pick Your Own ★4 Phantom Idol in Persona5: The Phantom X",
+   "url": "https://blogs.opera.com/news/2026/10/opera-gx-persona5/",
+   "source": "blogsopera",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "eSIM with Opera is here: get free data on your next trip abroad",
+   "url": "https://blogs.opera.com/news/2026/09/esim-with-opera-for-android-is-here/",
+   "source": "blogsopera",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Opera free VPN can now automatically protect you on public Wi-Fi networks",
+   "url": "https://blogs.opera.com/news/2026/09/opera-free-vpn-can-now-automatically-protect-you-on-public-wi-fi-networks/",
+   "source": "blogsopera",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We’re turning Vertical Tabs upside down in Opera",
+   "url": "https://blogs.opera.com/news/2026/09/opera-turns-vertical-tabs-upside-down/",
+   "source": "blogsopera",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cloudflare is now backing pkg.pr.new’s data infrastructure!",
+   "url": "https://blog.stackblitz.com/posts/cloudflare-backing-pkg-pr-new-data-infrastructure/",
+   "source": "blogstackblitz",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bolt 100K Open Source Fund",
+   "url": "https://blog.stackblitz.com/posts/bolt-100k-oss-fund/",
+   "source": "blogstackblitz",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ViteConf 2024 was a blast",
+   "url": "https://blog.stackblitz.com/posts/viteconf-2024-recap/",
+   "source": "blogstackblitz",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unbundling the JavaScript ecosystem",
+   "url": "https://blog.stackblitz.com/posts/unbundling-the-js-ecosystem/",
+   "source": "blogstackblitz",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "StackBlitz is joining the Open Source Pledge",
+   "url": "https://blog.stackblitz.com/posts/stackblitz-joins-osspledge/",
+   "source": "blogstackblitz",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing TutorialKit: Interactive tutorials in the browser",
+   "url": "https://blog.stackblitz.com/posts/announcing-tutorialkit/",
+   "source": "blogstackblitz",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Get ready for ViteConf 2024",
+   "url": "https://blog.stackblitz.com/posts/viteconf-2024/",
+   "source": "blogstackblitz",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing pkg.pr.new",
+   "url": "https://blog.stackblitz.com/posts/pkg-pr-new/",
+   "source": "blogstackblitz",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "StackBlitz welcomes Ari Perkkiö, core team member of Vitest",
+   "url": "https://blog.stackblitz.com/posts/stackblitz-welcomes-ari/",
+   "source": "blogstackblitz",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Catch us at Figma Config",
+   "url": "https://blog.stackblitz.com/posts/catch-us-at-figma-config/",
+   "source": "blogstackblitz",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WebContainers and the future of web dev (interview with Jòan Varvenne)",
+   "url": "https://blog.stackblitz.com/posts/beyond-docker-webcontainers-and-the-future-of-web-dev-interview-with-joan-varvenne/",
+   "source": "blogstackblitz",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Open Source at StackBlitz",
+   "url": "https://blog.stackblitz.com/posts/open-source-at-stackblitz/",
+   "source": "blogstackblitz",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Avoiding CORS issues with this one simple trick",
+   "url": "https://blog.stackblitz.com/posts/cors-proxy/",
+   "source": "blogstackblitz",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to document design system components",
+   "url": "https://blog.stackblitz.com/posts/design-system-component-documentation/",
+   "source": "blogstackblitz",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is Vite (and why is it so popular)?",
+   "url": "https://blog.stackblitz.com/posts/what-is-vite-introduction/",
+   "source": "blogstackblitz",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hello world...",
+   "url": "https://blog.stephaniestimac.com/posts/firstpost/",
+   "source": "blogstephaniestimac",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "First thoughts & musings on playing with CSS Subgrid",
+   "url": "https://blog.stephaniestimac.com/posts/07-2019_subgrid/",
+   "source": "blogstephaniestimac",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I'm an introvert and I gave a conference talk",
+   "url": "https://blog.stephaniestimac.com/posts/10-19-2019-first-talk/",
+   "source": "blogstephaniestimac",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Location, Privilege and Performant Websites",
+   "url": "https://blog.stephaniestimac.com/posts/10-30-2019-performance/",
+   "source": "blogstephaniestimac",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beyond Tellerrand Berlin 2019",
+   "url": "https://blog.stephaniestimac.com/posts/11-19-19-btconf-berlin/",
+   "source": "blogstephaniestimac",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building my bullet journal layout with CSS Grid & Subgrid & Flexbox",
+   "url": "https://blog.stephaniestimac.com/posts/12-29-2019-bullet-journal/",
+   "source": "blogstephaniestimac",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2019 - Running Up That Hill",
+   "url": "https://blog.stephaniestimac.com/posts/12-31-2019-year-end-review/",
+   "source": "blogstephaniestimac",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Setting intentions and goals for 2020",
+   "url": "https://blog.stephaniestimac.com/posts/2020-new-year-goals/",
+   "source": "blogstephaniestimac",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 of my favorite hints in the webhint browser extension",
+   "url": "https://blog.stephaniestimac.com/posts/01-05-2020-webhint-hints/",
+   "source": "blogstephaniestimac",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pushing the future of the platform forward with The Web We Want",
+   "url": "https://blog.stephaniestimac.com/posts/2020/01/pushing-the-web-platform-forward/",
+   "source": "blogstephaniestimac",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inspiring high school students with HTML and CSS",
+   "url": "https://blog.stephaniestimac.com/posts/2020/01/inspiring-high-school-students-tech/",
+   "source": "blogstephaniestimac",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why SmashingConf SF 2019 will always hold a special spot in my heart",
+   "url": "https://blog.stephaniestimac.com/posts/2020/04/smashing-sf-2019/",
+   "source": "blogstephaniestimac",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Web We Want Survey Results",
+   "url": "https://blog.stephaniestimac.com/posts/2020/05/web-we-want-2019-survey-results/",
+   "source": "blogstephaniestimac",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Musings on Creativity, COVID-19 and Normal",
+   "url": "https://blog.stephaniestimac.com/posts/2020/05/creativity-covid/",
+   "source": "blogstephaniestimac",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Browser font rendering inconsistencies",
+   "url": "https://blog.stephaniestimac.com/posts/2020/06/browser-fonts/",
+   "source": "blogstephaniestimac",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -20721,6 +22213,166 @@
    "url": "https://blog.tojicode.com/2013/11/the-state-of-webgl-on-chrome-aka-why.html",
    "source": "blogtojicode",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting my TOTP data out of Twilio's Authy app thanks to the GDPR",
+   "url": "https://blog.tomayac.com/2026/10/17/getting-my-totp-data-out-of-twilios-authy-app-thanks-to-the-gdpr/",
+   "source": "blogtomayac",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Refueling an EV be like",
+   "url": "https://blog.tomayac.com/2026/10/08/refueling-an-ev-be-like/",
+   "source": "blogtomayac",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Guest blog post on Cross-Origin Storage in Transformers.js",
+   "url": "https://blog.tomayac.com/2026/06/24/guest-blog-post-on-cross-origin-storage-in-transformersjs/",
+   "source": "blogtomayac",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your MP3s from Google Drive in Music Assistant on Home Assistant",
+   "url": "https://blog.tomayac.com/2026/05/30/your-mp3s-from-google-drive-in-music-assistant-on-home-assistant/",
+   "source": "blogtomayac",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A polyfill for the HTML switch element",
+   "url": "https://blog.tomayac.com/2026/01/12/a-polyfill-for-the-html-switch-element/",
+   "source": "blogtomayac",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using the Web Monetization API for fun and profit",
+   "url": "https://blog.tomayac.com/2025/11/07/using-the-web-monetization-api-for-fun-and-profit/",
+   "source": "blogtomayac",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Running Node.js in a Hugging Face Space",
+   "url": "https://blog.tomayac.com/2025/11/03/running-nodejs-in-a-hugging-face-space/",
+   "source": "blogtomayac",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prompt API color sensitivity",
+   "url": "https://blog.tomayac.com/2025/09/16/prompt-api-color-sensitivity/",
+   "source": "blogtomayac",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "For all that's holy, can you just leverage the Web, please?",
+   "url": "https://blog.tomayac.com/2025/09/03/for-all-thats-holy-can-you-just-leverage-the-web-please/",
+   "source": "blogtomayac",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What a diff'rence a semicolon makes",
+   "url": "https://blog.tomayac.com/2025/07/26/what-a-difference-a-semicolon-makes/",
+   "source": "blogtomayac",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Release: Tails 7.17",
+   "url": "https://blog.torproject.org/new-release-tails-7_17/",
+   "source": "blogtorproject",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Release: Tor Browser 16.0.1",
+   "url": "https://blog.torproject.org/new-release-tor-browser-1601/",
+   "source": "blogtorproject",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Release (Android Only): Tor Browser 16.0.2",
+   "url": "https://blog.torproject.org/new-release-tor-browser-1602/",
+   "source": "blogtorproject",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Arti 2.8.0 released",
+   "url": "https://blog.torproject.org/arti_2_8_0_released/",
+   "source": "blogtorproject",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Release: Tails 7.16",
+   "url": "https://blog.torproject.org/new-release-tails-7_16/",
+   "source": "blogtorproject",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Release: Tor Browser 16.0",
+   "url": "https://blog.torproject.org/new-release-tor-browser-160/",
+   "source": "blogtorproject",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Release: Tails 7.15.1",
+   "url": "https://blog.torproject.org/new-release-tails-7_15_1/",
+   "source": "blogtorproject",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Release: Tor Browser 15.0.26",
+   "url": "https://blog.torproject.org/new-release-tor-browser-15026/",
+   "source": "blogtorproject",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Alpha Release: Tor Browser 16.0a14",
+   "url": "https://blog.torproject.org/new-alpha-release-tor-browser-160a14/",
+   "source": "blogtorproject",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Release: Tails 7.15",
+   "url": "https://blog.torproject.org/new-release-tails-7_15/",
+   "source": "blogtorproject",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -21160,6 +22812,366 @@
    "title": "? How I won the CircuitPython Challenge with a Piano ?",
    "url": "https://blog.wokwi.com/how-i-won-the-circuitpython-challenge-with-a-piano/",
    "source": "blogwokwi",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "First post ever",
+   "url": "https://blog.yoav.ws/posts/first_post_ever/",
+   "source": "blogyoav",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "UA spoofers have feelings too!",
+   "url": "https://blog.yoav.ws/posts/ua_spoofers_have_feelings_too/",
+   "source": "blogyoav",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Putting IE to sleep",
+   "url": "https://blog.yoav.ws/posts/putting_ie_to_sleep/",
+   "source": "blogyoav",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My take on adaptive images",
+   "url": "https://blog.yoav.ws/posts/my_take_on_adaptive_images/",
+   "source": "blogyoav",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Responsive images - hacks won't cut it",
+   "url": "https://blog.yoav.ws/posts/responsive_images_hacks_wont_cut_it/",
+   "source": "blogyoav",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simpler responsive images proposal",
+   "url": "https://blog.yoav.ws/posts/simpler_responsive_images_proposal/",
+   "source": "blogyoav",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Preloaders, cookies and race conditions",
+   "url": "https://blog.yoav.ws/posts/preloaders_cookies_and_race_conditions/",
+   "source": "blogyoav",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unblocking blocking stylesheets",
+   "url": "https://blog.yoav.ws/posts/unblocking_blocking_stylesheets/",
+   "source": "blogyoav",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Responsive image format",
+   "url": "https://blog.yoav.ws/posts/responsive_image_format/",
+   "source": "blogyoav",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Images. Can we have less?",
+   "url": "https://blog.yoav.ws/posts/images_can_we_have_less/",
+   "source": "blogyoav",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fetching responsive image format",
+   "url": "https://blog.yoav.ws/posts/fetching_responsive_images_format/",
+   "source": "blogyoav",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Big Is Art-Direction?",
+   "url": "https://blog.yoav.ws/posts/how_big_is_art_direction/",
+   "source": "blogyoav",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Who Is Sizer Soze?",
+   "url": "https://blog.yoav.ws/posts/who_is_sizer_soze/",
+   "source": "blogyoav",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Responsive Image Container",
+   "url": "https://blog.yoav.ws/posts/responsive_image_container/",
+   "source": "blogyoav",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Long Overdue",
+   "url": "https://blog.yoav.ws/posts/long_overdue/",
+   "source": "blogyoav",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Some good news",
+   "url": "https://blog.zgp.org/mlp-2026-11-13/",
+   "source": "blogzgp",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "getting rid of extra mkdir commands in Makefile",
+   "url": "https://blog.zgp.org/getting-rid-of-extra-mkdir-commands-in-makefile/",
+   "source": "blogzgp",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Links for 10 November 2026",
+   "url": "https://blog.zgp.org/mlp-2026-11-10/",
+   "source": "blogzgp",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The missing part of the your ad here page",
+   "url": "https://blog.zgp.org/the-missing-part-of-the-your-ad-here-page/",
+   "source": "blogzgp",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Texas Linux Fest Q and A",
+   "url": "https://blog.zgp.org/texas-q-and-a/",
+   "source": "blogzgp",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Surviving the rugpull economy: notes and links from my talk at Texas Linux Fest",
+   "url": "https://blog.zgp.org/txlf/",
+   "source": "blogzgp",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google stole a damn sammich",
+   "url": "https://blog.zgp.org/google-stole-a-damn-sammich/",
+   "source": "blogzgp",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Not solving advertising",
+   "url": "https://blog.zgp.org/not-solving-advertising/",
+   "source": "blogzgp",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How are you finding the product?",
+   "url": "https://blog.zgp.org/how-are-you-finding-the-product/",
+   "source": "blogzgp",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I was wrong about ad reform",
+   "url": "https://blog.zgp.org/i-was-wrong-about-ad-reform/",
+   "source": "blogzgp",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "your server will be right with you",
+   "url": "https://blog.zgp.org/your-server-will-be-right-with-you/",
+   "source": "blogzgp",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Locked in to Rewarded Interest?",
+   "url": "https://blog.zgp.org/locked-in-to-rewarded-interest/",
+   "source": "blogzgp",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Links for 23 Oct 2026",
+   "url": "https://blog.zgp.org/mlp-2026-10-23/",
+   "source": "blogzgp",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CCPA and CIPA on the same site",
+   "url": "https://blog.zgp.org/ccpa-and-cipa-on-the-same-site/",
+   "source": "blogzgp",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "the insecurity department",
+   "url": "https://blog.zgp.org/insecurity-department/",
+   "source": "blogzgp",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我这样用GenAI",
+   "url": "https://blog.zoomquiet.io/240704-aigcxzh-genai101.html",
+   "source": "blogzoomquiet",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "世界梦续/旅程",
+   "url": "https://blog.zoomquiet.io/240317-wdp0.html",
+   "source": "blogzoomquiet",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "程序猿AIGC\"工具包\"",
+   "url": "https://blog.zoomquiet.io/240123-aigc-x-zhuhai-toolkit4developer.html",
+   "source": "blogzoomquiet",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "生命3.0:普通人如何理解未来",
+   "url": "https://blog.zoomquiet.io/231213-aigcxchina-life3.html",
+   "source": "blogzoomquiet",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "1024code 新环境新体验",
+   "url": "https://blog.zoomquiet.io/230519-1024code101.html",
+   "source": "blogzoomquiet",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "带生成器的惰性递归",
+   "url": "https://blog.zoomquiet.io/lazy_recursion_with_generators.html",
+   "source": "blogzoomquiet",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python 中的字典调度模式",
+   "url": "https://blog.zoomquiet.io/230209-dict-dispatch-pattern-in-python.html",
+   "source": "blogzoomquiet",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ScrapBook 在 M1macOS 上恢复",
+   "url": "https://blog.zoomquiet.io/221213-scrapbook-revert.html",
+   "source": "blogzoomquiet",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "开源软件开发导论课程作业0回响++",
+   "url": "https://blog.zoomquiet.io/220911-ossd-echo-plus.html",
+   "source": "blogzoomquiet",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "开源软件开发导论课程作业0之回响",
+   "url": "https://blog.zoomquiet.io/220901-ossd-faq.html",
+   "source": "blogzoomquiet",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "开源生活实录.3.GTD之始",
+   "url": "https://blog.zoomquiet.io/220822-flossstyle-3.html",
+   "source": "blogzoomquiet",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "开源生活实录.2.GNU之魂",
+   "url": "https://blog.zoomquiet.io/220820-flossstyle-2.html",
+   "source": "blogzoomquiet",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "开源生活实录.1.LAMP之辉",
+   "url": "https://blog.zoomquiet.io/220817-flossstyle-1.html",
+   "source": "blogzoomquiet",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "开源生活实录.0.从哪儿知道的?",
+   "url": "https://blog.zoomquiet.io/220817-flossstyle-0.html",
+   "source": "blogzoomquiet",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7niu 鉴黄故事",
+   "url": "https://blog.zoomquiet.io/220727-qiniu-block-matter.html",
+   "source": "blogzoomquiet",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -40282,6 +42294,14 @@
    "source": "hackernews",
    "rank": 19,
    "score": 62,
+   "metric": "points"
+  },
+  {
+   "title": "Emacs Is My Browser",
+   "url": "https://joshblais.com/blog/emacs-as-my-browser/",
+   "source": "hackernews",
+   "rank": 19,
+   "score": 66,
    "metric": "points"
   },
   {
