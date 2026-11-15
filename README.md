@@ -135,6 +135,7 @@ A daily cross-source snapshot of developer attention:
 | Tim Bray | XML inventor, tech commentary | `tbray.org/ongoing/ongoing.atom` |
 | Bertrand Meyer | Eiffel creator, SE methodology | `bertrandmeyer.com/feed/` |
 | Bret Victor | dynamic media essays | `worrydream.com/feed.xml` |
+| codemadness | minimal Unix tooling | `codemadness.org/atom.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

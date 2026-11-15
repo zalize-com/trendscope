@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T16:19:39.445550+00:00",
+  "generated_at": "2026-11-15T16:21:21.440094+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -98,6 +98,18 @@
         "rank": 1
       }
     },
+    "show_hn": {
+      "items": 31,
+      "unique_urls": 31,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Show HN: A custom font based on the Jamaican flag alphabet",
+        "url": "https://bobbiec.github.io/jamaican-font.html",
+        "score": 23,
+        "rank": 1
+      }
+    },
     "crates": {
       "items": 30,
       "unique_urls": 15,
@@ -107,18 +119,6 @@
         "title": "hashbrown",
         "url": "https://crates.io/crates/hashbrown",
         "score": 912501410,
-        "rank": 1
-      }
-    },
-    "show_hn": {
-      "items": 30,
-      "unique_urls": 30,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Show HN: A custom font based on the Jamaican flag alphabet",
-        "url": "https://bobbiec.github.io/jamaican-font.html",
-        "score": 23,
         "rank": 1
       }
     },
@@ -850,6 +850,18 @@
       "top_item": {
         "title": "La seule solution pour éviter le désastre",
         "url": "https://bertrandmeyer.com/2026/11/02/la-seule-solution-pour-eviter-le-desastre/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "codemadness": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Wireguard on OpenBSD for use as a mobile VPN",
+        "url": "https://www.codemadness.org/wireguard.html",
         "score": 15,
         "rank": 1
       }
