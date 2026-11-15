@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T21:46:06.355942+00:00",
+ "generated_at": "2026-11-15T22:14:58.517160+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 2034,
+ "total": 2674,
  "domains": [
   {
    "hostname": "blog.google",
@@ -23,11 +23,12 @@
   {
    "hostname": "theguardian.com",
    "days_on_board": 3,
-   "items": 32,
+   "items": 33,
    "sources": [
     "guardianco",
     "hackernews",
-    "theguardian"
+    "theguardian",
+    "w4feeds4"
    ],
    "top_hit": {
     "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
@@ -40,10 +41,11 @@
   {
    "hostname": "reuters.com",
    "days_on_board": 3,
-   "items": 4,
+   "items": 5,
    "sources": [
     "daringfireball",
-    "hackernews"
+    "hackernews",
+    "hnrss"
    ],
    "top_hit": {
     "title": "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
@@ -51,6 +53,22 @@
     "score": 457,
     "metric": "points",
     "date": "2026-11-12"
+   }
+  },
+  {
+   "hostname": "twitter.com",
+   "days_on_board": 3,
+   "items": 4,
+   "sources": [
+    "hackernews",
+    "w4feeds4"
+   ],
+   "top_hit": {
+    "title": "LibreOffice actually works 365 days a year",
+    "url": "https://twitter.com/LibreOffice/status/2121205272479998268",
+    "score": 923,
+    "metric": "points",
+    "date": "2026-11-13"
    }
   },
   {
@@ -87,7 +105,7 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 2,
-   "items": 702,
+   "items": 733,
    "sources": [
     "hackernews",
     "k8s",
@@ -107,6 +125,7 @@
     "rdotnet",
     "reddit",
     "relixir",
+    "relm",
     "rexperienceddevs",
     "rfrontend",
     "rgamedev",
@@ -115,6 +134,7 @@
     "rjava",
     "rjavascript",
     "rkotlin",
+    "rkubernetes",
     "rlisp",
     "rmongodb",
     "rnetsec",
@@ -161,33 +181,16 @@
    }
   },
   {
-   "hostname": "blog.janestreet.com",
-   "days_on_board": 2,
-   "items": 33,
-   "sources": [
-    "blogjanestreet",
-    "blogsjanestreet",
-    "lobsters",
-    "v2ocaml"
-   ],
-   "top_hit": {
-    "title": "Writing a DSL for high performance parallel programming in OxCaml",
-    "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "youtube.com",
    "days_on_board": 2,
-   "items": 33,
+   "items": 34,
    "sources": [
     "bret",
     "caseyliss",
     "changhai",
     "daringfireball",
     "hackernews",
+    "hnrss",
     "industrialempathy",
     "jankfree",
     "jmesnil",
@@ -208,6 +211,43 @@
    }
   },
   {
+   "hostname": "blog.janestreet.com",
+   "days_on_board": 2,
+   "items": 33,
+   "sources": [
+    "blogjanestreet",
+    "blogsjanestreet",
+    "lobsters",
+    "v2ocaml"
+   ],
+   "top_hit": {
+    "title": "Writing a DSL for high performance parallel programming in OxCaml",
+    "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "nytimes.com",
+   "days_on_board": 2,
+   "items": 26,
+   "sources": [
+    "bostocks",
+    "daringfireball",
+    "hackernews",
+    "hnrss",
+    "rss4"
+   ],
+   "top_hit": {
+    "title": "Jensen Huang said to have had relationship with executive who reports to him",
+    "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+    "score": 410,
+    "metric": "points",
+    "date": "2026-11-11"
+   }
+  },
+  {
    "hostname": "theverge.com",
    "days_on_board": 2,
    "items": 22,
@@ -221,6 +261,41 @@
     "score": 378,
     "metric": "points",
     "date": "2026-11-11"
+   }
+  },
+  {
+   "hostname": "github.blog",
+   "days_on_board": 2,
+   "items": 21,
+   "sources": [
+    "github_eng",
+    "githubengineering",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "GitHub New pull request overview page in public preview",
+    "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+    "score": 196,
+    "metric": "points",
+    "date": "2026-11-07"
+   }
+  },
+  {
+   "hostname": "wired.com",
+   "days_on_board": 2,
+   "items": 18,
+   "sources": [
+    "azure",
+    "daringfireball",
+    "hackernews",
+    "wired"
+   ],
+   "top_hit": {
+    "title": "Nvidia employees petition to bring back Jensen Huang",
+    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+    "score": 811,
+    "metric": "points",
+    "date": "2026-11-13"
    }
   },
   {
@@ -273,20 +348,19 @@
    }
   },
   {
-   "hostname": "wired.com",
+   "hostname": "9to5mac.com",
    "days_on_board": 2,
    "items": 17,
    "sources": [
-    "daringfireball",
-    "hackernews",
-    "wired"
+    "9to5mac",
+    "hackernews"
    ],
    "top_hit": {
-    "title": "Nvidia employees petition to bring back Jensen Huang",
-    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
-    "score": 811,
+    "title": "Apple has new Mac app coming to make running local AI models easy",
+    "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+    "score": 569,
     "metric": "points",
-    "date": "2026-11-13"
+    "date": "2026-11-10"
    }
   },
   {
@@ -306,17 +380,17 @@
    }
   },
   {
-   "hostname": "9to5mac.com",
+   "hostname": "deepmind.google",
    "days_on_board": 2,
    "items": 16,
    "sources": [
-    "9to5mac",
+    "deepmind",
     "hackernews"
    ],
    "top_hit": {
-    "title": "Apple has new Mac app coming to make running local AI models easy",
-    "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
-    "score": 569,
+    "title": "AlphaProof Code",
+    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "score": 678,
     "metric": "points",
     "date": "2026-11-10"
    }
@@ -351,6 +425,22 @@
     "score": 331,
     "metric": "points",
     "date": "2026-11-10"
+   }
+  },
+  {
+   "hostname": "cnn.com",
+   "days_on_board": 2,
+   "items": 16,
+   "sources": [
+    "hackernews",
+    "w4rss3"
+   ],
+   "top_hit": {
+    "title": "Global Microsoft Outage",
+    "url": "https://www.cnn.com/2026/11/12/business/live-news/microsoft-global-outage-intl-hnk",
+    "score": 292,
+    "metric": "points",
+    "date": "2026-11-13"
    }
   },
   {
@@ -405,19 +495,19 @@
    }
   },
   {
-   "hostname": "github.blog",
+   "hostname": "projectzero.google",
    "days_on_board": 2,
-   "items": 11,
+   "items": 12,
    "sources": [
-    "github_eng",
+    "googleprojectzero",
     "hackernews"
    ],
    "top_hit": {
-    "title": "GitHub New pull request overview page in public preview",
-    "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
-    "score": 196,
+    "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
+    "url": "https://projectzero.google/2026/11/disclosure-policy.html",
+    "score": 220,
     "metric": "points",
-    "date": "2026-11-07"
+    "date": "2026-11-15"
    }
   },
   {
@@ -434,23 +524,6 @@
     "score": 260,
     "metric": "points",
     "date": "2026-11-13"
-   }
-  },
-  {
-   "hostname": "nytimes.com",
-   "days_on_board": 2,
-   "items": 10,
-   "sources": [
-    "bostocks",
-    "daringfireball",
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Jensen Huang said to have had relationship with executive who reports to him",
-    "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
-    "score": 410,
-    "metric": "points",
-    "date": "2026-11-11"
    }
   },
   {
@@ -499,21 +572,6 @@
     "score": 1000,
     "metric": "points",
     "date": "2026-11-09"
-   }
-  },
-  {
-   "hostname": "twitter.com",
-   "days_on_board": 2,
-   "items": 3,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "LibreOffice actually works 365 days a year",
-    "url": "https://twitter.com/LibreOffice/status/2121205272479998268",
-    "score": 923,
-    "metric": "points",
-    "date": "2026-11-13"
    }
   },
   {
@@ -802,51 +860,6 @@
     "url": "https://www.spacex.com/launches/starship-flight-15",
     "score": 995,
     "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "righto.com",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Reverse engineering a vintage diode-transistor logic chip",
-    "url": "https://www.righto.com/2026/11/signetics-st680a-dtl-nand.html",
-    "score": 106,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "projectzero.google",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
-    "url": "https://projectzero.google/2026/11/disclosure-policy.html",
-    "score": 220,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "producthunt.com",
-   "days_on_board": 1,
-   "items": 45,
-   "sources": [
-    "producthunt"
-   ],
-   "top_hit": {
-    "title": "MAP & GO!",
-    "url": "https://www.producthunt.com/products/expert-chase-deleted-1107920",
-    "score": 20,
-    "metric": "feed rank",
     "date": "2026-11-15"
    }
   }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T21:46:06.355942+00:00",
+ "generated_at": "2026-11-15T22:14:58.517160+00:00",
  "latest_snapshot": "2026-11-15",
  "crossovers": [
   {
@@ -16,6 +16,23 @@
     "score": 15,
     "metric": "feed rank",
     "source": "blogjanestreet",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
+   "title": "All AI-generated code should be Open Source",
+   "sources": [
+    "hackernews",
+    "hnrss",
+    "lemmy",
+    "lobsters"
+   ],
+   "days": 1,
+   "best": {
+    "score": 54,
+    "metric": "points",
+    "source": "hackernews",
     "date": "2026-11-15"
    }
   },
@@ -46,22 +63,6 @@
    "days": 2,
    "best": {
     "score": 265,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
-   "title": "All AI-generated code should be Open Source",
-   "sources": [
-    "hackernews",
-    "lemmy",
-    "lobsters"
-   ],
-   "days": 1,
-   "best": {
-    "score": 54,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-15"
@@ -111,6 +112,21 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-13"
+   }
+  },
+  {
+   "url": "https://deepmind.google/blog/introducing-alphaproof-code",
+   "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+   "sources": [
+    "deepmind",
+    "hackernews"
+   ],
+   "days": 2,
+   "best": {
+    "score": 678,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-10"
    }
   },
   {
@@ -234,6 +250,21 @@
    }
   },
   {
+   "url": "https://projectzero.google/2026/11/disclosure-policy.html",
+   "title": "Policy and Disclosure: 2026 Edition",
+   "sources": [
+    "googleprojectzero",
+    "hackernews"
+   ],
+   "days": 2,
+   "best": {
+    "score": 220,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "url": "https://lexifina.com/blog/formalizing-the-us-tax-code",
    "title": "Lean proof of the entire US tax code to find loopholes",
    "sources": [
@@ -294,6 +325,36 @@
    }
   },
   {
+   "url": "https://joshblais.com/blog/emacs-as-my-browser",
+   "title": "Emacs Is My Browser",
+   "sources": [
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 1,
+   "best": {
+    "score": 66,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://arkanumdata.com/research/house-trades",
+   "title": "Do House members' stock trades beat the market? A test of 8,900 trades",
+   "sources": [
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 1,
+   "best": {
+    "score": 61,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "url": "https://netbsd.org/~nia/disk-encrypt",
    "title": "Disk encryption on NetBSD – achieving secrecy",
    "sources": [
@@ -339,6 +400,81 @@
    }
   },
   {
+   "url": "https://ykiko.me/en/articles/2105384023094834022",
+   "title": "Clice v1.0 Released: Welcome to Modern C++",
+   "sources": [
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 1,
+   "best": {
+    "score": 51,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://prog21.dadgum.com/116.html",
+   "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+   "sources": [
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 1,
+   "best": {
+    "score": 49,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+   "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+   "sources": [
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 1,
+   "best": {
+    "score": 49,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=7_jf3etiav8",
+   "title": "A short explainer on how El Niño works [video]",
+   "sources": [
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 1,
+   "best": {
+    "score": 48,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
+   "title": "'Birdbrain' Is a Misnomer. Crows Make Decisions Faster Than We Can",
+   "sources": [
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 1,
+   "best": {
+    "score": 46,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games",
    "title": "My favourite modern NES games",
    "sources": [
@@ -365,6 +501,21 @@
     "score": 15,
     "metric": "feed rank",
     "source": "codinghorror",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://www.etsy.com/codeascraft/that-which-we-can-do-sustainability-in-a-world-of-ai",
+   "title": "That Which We CAN Do: Sustainability in a World of AI",
+   "sources": [
+    "codeascraft",
+    "etsy"
+   ],
+   "days": 1,
+   "best": {
+    "score": 15,
+    "metric": "feed rank",
+    "source": "etsy",
     "date": "2026-11-15"
    }
   },
@@ -410,6 +561,21 @@
     "score": 15,
     "metric": "feed rank",
     "source": "cssarticles",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://mxb.dev/blog/faster-horses",
+   "title": "Faster Horses",
+   "sources": [
+    "mxb",
+    "w4mxb"
+   ],
+   "days": 1,
+   "best": {
+    "score": 15,
+    "metric": "feed rank",
+    "source": "mxb",
     "date": "2026-11-15"
    }
   },
@@ -489,272 +655,107 @@
    }
   },
   {
-   "url": "https://blog.codinghorror.com/if-we-do-not-stop-to-help-each-other-what-do-we-become",
-   "title": "If we do not stop to help each other, what do we become?",
+   "url": "https://benmyers.dev/blog/blog-questions-2025",
+   "title": "Tag, You’re It: Blog Questions 2025",
    "sources": [
-    "codinghorror",
-    "codinghorror2"
+    "benmyers",
+    "w3blog5"
    ],
    "days": 1,
    "best": {
-    "score": 14,
+    "score": 15,
     "metric": "feed rank",
-    "source": "codinghorror",
+    "source": "benmyers",
     "date": "2026-11-15"
    }
   },
   {
-   "url": "https://elixir-lang.org/blog/2026/06/03/elixir-v1-20-0-released",
-   "title": "Elixir v1.20 released: now a gradually typed language",
+   "url": "https://kittygiraudel.com/2026/11/01/playing-with-css-layers/index.md",
+   "title": "Playing with CSS Layers",
    "sources": [
-    "elixirlang",
-    "planeterlang"
+    "hugogiraudel",
+    "kittygiraudel"
    ],
    "days": 1,
    "best": {
-    "score": 14,
+    "score": 15,
     "metric": "feed rank",
-    "source": "elixirlang",
+    "source": "kittygiraudel",
     "date": "2026-11-15"
    }
   },
   {
-   "url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little",
-   "title": "Our software engineering interviews are changing (a little)",
+   "url": "https://podcasts.androidauthority.com/fin-part-deux",
+   "title": "Fin Part Deux",
    "sources": [
-    "blogjanestreet",
-    "blogsjanestreet"
+    "androidauthoritypod",
+    "rss2"
    ],
    "days": 1,
    "best": {
-    "score": 14,
+    "score": 15,
     "metric": "feed rank",
-    "source": "blogjanestreet",
+    "source": "androidauthoritypod",
     "date": "2026-11-15"
    }
   },
   {
-   "url": "https://bogoyavlensky.com/blog/clj-pulse",
-   "title": "clj-pulse: a fast Clojure language server",
+   "url": "https://blog.lyric.im/p/understanding-agent-02-data-is-code-code-is-data",
+   "title": "用开发 Agent 理解 Agent 02：数据即代码，代码即数据",
    "sources": [
-    "bogoyavlensky",
-    "planetclojure"
+    "lyricim",
+    "lyricquail"
    ],
    "days": 1,
    "best": {
-    "score": 14,
+    "score": 15,
     "metric": "feed rank",
-    "source": "bogoyavlensky",
+    "source": "lyricquail",
     "date": "2026-11-15"
    }
   },
   {
-   "url": "https://css-tricks.com/re-implementing-nth-child-with-modern-css",
-   "title": "Re-Implementing :nth-child() With Modern CSS",
+   "url": "https://blog.ops-coffee.com/r/2026-southwest-road-trip-14-beipanjiang.html",
+   "title": "向云端｜西南自驾14 - 北盘江",
    "sources": [
-    "cssarticles",
-    "csstricks"
+    "blog",
+    "blog21"
    ],
    "days": 1,
    "best": {
-    "score": 14,
+    "score": 15,
     "metric": "feed rank",
-    "source": "cssarticles",
+    "source": "blog",
     "date": "2026-11-15"
    }
   },
   {
-   "url": "https://www.taniarascia.com/2024-into-2025",
-   "title": "Year in Review: 2024",
+   "url": "https://jimmysong.io/blog/deepseek-harness-plugin-experience",
+   "title": "DeepSeek Harness First Impressions: Architecture, the Plugin Market, and the 20 Plugins That Stayed",
    "sources": [
-    "tania",
-    "taniarascia"
+    "jimmysong",
+    "w4jimmysong"
    ],
    "days": 1,
    "best": {
-    "score": 14,
+    "score": 15,
     "metric": "feed rank",
-    "source": "taniarascia",
+    "source": "jimmysong",
     "date": "2026-11-15"
    }
   },
   {
-   "url": "https://www.theguardian.com/info/article/2024/sep/06/day-in-the-life-alex-guild",
-   "title": "Day in the Life: Alex Guild",
+   "url": "http://wwj718.github.io/post/%e8%af%97%e8%af%8d/yulongwan-xunshan",
+   "title": "玉龙湾 巡山",
    "sources": [
-    "guardianco",
-    "theguardian"
+    "w4wwj718",
+    "wwj718"
    ],
    "days": 1,
    "best": {
-    "score": 14,
+    "score": 15,
     "metric": "feed rank",
-    "source": "guardianco",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.codinghorror.com/you-cant-vibe-code-love",
-   "title": "You Can't \"Vibe Code\" Love",
-   "sources": [
-    "codinghorror",
-    "codinghorror2"
-   ],
-   "days": 1,
-   "best": {
-    "score": 13,
-    "metric": "feed rank",
-    "source": "codinghorror",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.janestreet.com/flex-model-an-event-driven-feature-engineering-system",
-   "title": "Flex Model: an event-driven feature engineering system",
-   "sources": [
-    "blogjanestreet",
-    "blogsjanestreet"
-   ],
-   "days": 1,
-   "best": {
-    "score": 13,
-    "metric": "feed rank",
-    "source": "blogjanestreet",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.master.dev/two-circles-one-connection-and-border-shape",
-   "title": "Two Circles, One Connection, and border-shape",
-   "sources": [
-    "cssarticles",
-    "frontendmasters"
-   ],
-   "days": 1,
-   "best": {
-    "score": 13,
-    "metric": "feed rank",
-    "source": "cssarticles",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.taniarascia.com/redesign-version-7",
-   "title": "Redesign: Version 7.0",
-   "sources": [
-    "tania",
-    "taniarascia"
-   ],
-   "days": 1,
-   "best": {
-    "score": 13,
-    "metric": "feed rank",
-    "source": "taniarascia",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.theguardian.com/info/article/2024/jul/26/parsing-the-merit-of-strictly-typed-json",
-   "title": "Parsing: the merit of strictly typed JSON",
-   "sources": [
-    "guardianco",
-    "theguardian"
-   ],
-   "days": 1,
-   "best": {
-    "score": 13,
-    "metric": "feed rank",
-    "source": "guardianco",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.cloudflare.com/choosing-quepaxa",
-   "title": "Choosing QuePaxa, an unusual consensus algorithm",
-   "sources": [
-    "cloudflare",
-    "lemmy"
-   ],
-   "days": 1,
-   "best": {
-    "score": 12,
-    "metric": "feed rank",
-    "source": "cloudflare",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.codinghorror.com/every-choice-changes-everything-the-show",
-   "title": "Every Choice Changes Everything: The Show",
-   "sources": [
-    "codinghorror",
-    "codinghorror2"
-   ],
-   "days": 1,
-   "best": {
-    "score": 12,
-    "metric": "feed rank",
-    "source": "codinghorror",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://aphyr.com/posts/428-announcing-hegel-clj",
-   "title": "Announcing Hegel-clj",
-   "sources": [
-    "aphyr",
-    "planetclojure"
-   ],
-   "days": 1,
-   "best": {
-    "score": 12,
-    "metric": "feed rank",
-    "source": "aphyr",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.jetbrains.com/pycharm/2026/11/what-s-fixed-and-improved-in-pycharm-2026-3",
-   "title": "PyCharm: What’s Fixed and Improved in PyCharm 2026.3",
-   "sources": [
-    "jetbrains",
-    "planetpython"
-   ],
-   "days": 1,
-   "best": {
-    "score": 12,
-    "metric": "feed rank",
-    "source": "jetbrains",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.janestreet.com/config-management-orchestrator-for-windows",
-   "title": "Building and testing a config management orchestrator for Windows",
-   "sources": [
-    "blogjanestreet",
-    "blogsjanestreet"
-   ],
-   "days": 1,
-   "best": {
-    "score": 12,
-    "metric": "feed rank",
-    "source": "blogjanestreet",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.taniarascia.com/keyboard-shortcut-hook-react",
-   "title": "Creating a Keyboard Shortcut Hook in React (Deep Dive)",
-   "sources": [
-    "tania",
-    "taniarascia"
-   ],
-   "days": 1,
-   "best": {
-    "score": 12,
-    "metric": "feed rank",
-    "source": "taniarascia",
+    "source": "wwj718",
     "date": "2026-11-15"
    }
   }
