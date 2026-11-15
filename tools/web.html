@@ -63,6 +63,7 @@
     <button data-tool="robots">robots.txt</button>
     <button data-tool="squat">typosquat</button>
     <button data-tool="http">HTTP status</button>
+    <button data-tool="hash">file checksum</button>
   </div>
 
   <div class="panel" id="p-qr">
@@ -119,6 +120,13 @@
     <input type="text" id="ht-in" placeholder="e.g. 429 or rate limit">
     <div id="ht-out" style="margin-top:12px"></div>
   </div>
+  <div class="panel" id="p-hash">
+    <h2>File checksum</h2>
+    <p class="hint">Pick or drop a file — SHA-256/SHA-1 computed locally via WebCrypto. Nothing is uploaded.</p>
+    <input type="file" id="hs-in">
+    <div id="hs-drop" style="margin:10px 0;padding:18px;border:1px dashed var(--border);border-radius:8px;color:var(--dim);text-align:center">…or drop a file here</div>
+    <div id="hs-out" style="margin-top:8px"></div>
+  </div>
 
 <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -127,7 +135,7 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["qr","og","robots","squat","http"];
+const tools = ["qr","og","robots","squat","http","hash"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "qr");
@@ -339,6 +347,25 @@ function htRender() {
 }
 $("ht-in").oninput = htRender;
 htRender();
+
+// ---- file checksum ----
+async function hsGo(file) {
+  if (!file) return;
+  $("hs-out").innerHTML = `<span class="err">hashing ${escAttr(file.name)}…</span>`;
+  const buf = await file.arrayBuffer();
+  const hex = b => [...new Uint8Array(b)].map(x => x.toString(16).padStart(2,"0")).join("");
+  const [s256, s1] = await Promise.all([
+    crypto.subtle.digest("SHA-256", buf), crypto.subtle.digest("SHA-1", buf)]);
+  $("hs-out").innerHTML =
+    `<div style="margin-bottom:6px"><b>${escAttr(file.name)}</b> <span style="color:var(--dim)">${file.size.toLocaleString()} bytes</span></div>` +
+    `<div style="font-family:monospace;font-size:12px;word-break:break-all;margin:4px 0"><b>SHA-256</b> ${hex(s256)}</div>` +
+    `<div style="font-family:monospace;font-size:12px;word-break:break-all"><b>SHA-1&nbsp;&nbsp;&nbsp;</b> ${hex(s1)}</div>`;
+}
+$("hs-in").onchange = e => hsGo(e.target.files[0]);
+const drop = $("hs-drop");
+drop.ondragover = e => { e.preventDefault(); drop.style.borderColor = "var(--accent)"; };
+drop.ondragleave = () => drop.style.borderColor = "";
+drop.ondrop = e => { e.preventDefault(); drop.style.borderColor = ""; hsGo(e.dataTransfer.files[0]); };
 </script>
 </body>
 </html>
