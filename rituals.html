@@ -40,6 +40,8 @@
   .stats { display: flex; gap: 12px; flex-wrap: wrap; margin: 14px 0 4px; }
   .stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; }
   .stat b { font-size: 19px; display: block; } .stat small { color: var(--dim); }
+  .dlchip{display:inline-block;padding:2px 8px;border:1px solid var(--bord,#30363d);border-radius:12px;font-size:12px;color:var(--fg,#e6edf3);text-decoration:none;opacity:.8}
+  .dlchip:hover{opacity:1;border-color:var(--accent,#58a6ff)}
 </style>
 </head>
 <body>
@@ -47,6 +49,7 @@
   <h1>hn <span>rituals</span></h1>
   <p class="sub">Three Hacker News rituals, side by side for any month: the <b>story</b> everyone read,
     the <b>launch</b> someone shipped, the <b>question</b> someone asked. 2007 → today.</p>
+  <p class="muted" style="margin-top:2px"><a class="dlchip" href="data/hn-canon-monthly.csv" download>↓ canon</a></p>
   <div class="stats" id="stats"></div>
   <select id="mpick"></select>
   <div class="cols">

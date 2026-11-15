@@ -40,12 +40,15 @@
   .bcol .y { color: var(--dim); font-size: 9px; }
   .bcol .v { color: var(--dim); font-size: 9px; }
   footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+  .dlchip{display:inline-block;padding:2px 8px;border:1px solid var(--bord,#30363d);border-radius:12px;font-size:12px;color:var(--fg,#e6edf3);text-decoration:none;opacity:.8}
+  .dlchip:hover{opacity:1;border-color:var(--accent,#58a6ff)}
 </style>
 </head>
 <body>
   <nav><a href="index.html">← trendscope</a> · <a href="canon.html">canon</a> · <a href="rituals.html">rituals</a></nav>
   <h1>the <span>show hn</span> canon</h1>
   <p class="sub" id="sub">Every month's top-10 Show HN product launches, backfilled to January 2012 — the history of what builders shipped, month by month. <a href="docs/showhn-analysis.md">what it's made of →</a></p>
+  <p class="muted" style="margin-top:2px"><a class="dlchip" href="data/show-hn-monthly.csv" download>↓ showhn-monthly.csv</a></p>
   <div class="stats" id="stats"></div>
   <h2>attention inflation — avg #1 score per year</h2>
   <div class="bars" id="infl"></div>

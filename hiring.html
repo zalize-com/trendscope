@@ -35,6 +35,8 @@
   .dot { display: inline-block; width: 10px; height: 10px; border-radius: 5px; margin-right: 5px; }
   .note { color: var(--dim); font-size: 13px; margin-top: 14px; }
   footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+  .dlchip{display:inline-block;padding:2px 8px;border:1px solid var(--bord,#30363d);border-radius:12px;font-size:12px;color:var(--fg,#e6edf3);text-decoration:none;opacity:.8}
+  .dlchip:hover{opacity:1;border-color:var(--accent,#58a6ff)}
 </style>
 </head>
 <body>
@@ -42,6 +44,7 @@
   <h1>hiring <span>pulse</span></h1>
   <p class="sub">HN's monthly <i>Who is hiring?</i> / <i>Who wants to be hired?</i> threads, snapshotted daily.
     Comment counts = how many companies are hiring vs how many people are looking.</p>
+  <p class="muted" style="margin-top:2px"><a class="dlchip" href="data/hiring-monthly.csv" download>↓ hiring-monthly.csv</a></p>
   <div class="cards" id="cards"></div>
   <div id="hist"></div>
   <div id="daily"></div>
