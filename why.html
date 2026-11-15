@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>why trendscope — the only developer-attention dataset</title>
+<meta name="description" content="Every HN/GitHub radar shows you right now. trendscope is the only one that also keeps every day: an open, downloadable, versioned dataset of developer attention.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { --bg:#0d1117; --fg:#e6edf3; --dim:#8b98a5; --card:#161b22; --line:#30363d;
+          --accent:#58a6ff; --orange:#f0883e; --green:#3fb950; }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#fff; --fg:#1f2328; --dim:#57606a; --card:#f6f8fa; --line:#d0d7de; } }
+  * { box-sizing: border-box; }
+  body { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+         background: var(--bg); color: var(--fg); margin: 0 auto; max-width: 900px;
+         padding: 24px 18px 64px; font-size: 14px; line-height: 1.6; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav, footer { color: var(--dim); font-size: 12px; } footer { margin-top: 48px; }
+  h1 { font-size: 22px; margin: 12px 0 6px; } h1 span { color: var(--orange); }
+  .sub { color: var(--dim); font-size: 13px; margin: 0 0 22px; max-width: 640px; }
+  h2 { font-size: 15px; color: var(--dim); font-weight: 600; margin: 30px 0 8px;
+       text-transform: uppercase; letter-spacing: .5px; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  th, td { padding: 8px 10px; border: 1px solid var(--line); text-align: left; }
+  th { background: var(--card); color: var(--dim); font-weight: 600; }
+  td.y { color: var(--green); } td.n { color: var(--dim); }
+  tr.us td { background: var(--card); border-color: var(--accent); font-weight: 600; }
+  .pitch { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+           padding: 16px 18px; margin: 8px 0; }
+  .pitch b { color: var(--orange); }
+  ul { padding-left: 18px; margin: 6px 0; } li { padding: 2px 0; }
+</style>
+</head>
+<body>
+  <nav><a href="index.html">← trendscope</a> · <a href="datasets.html">datasets</a> · <a href="about.html">methodology</a></nav>
+  <h1>why <span>trendscope</span></h1>
+  <p class="sub">Every developer-attention radar shows you <i>right now</i>.
+    trendscope is the only one that also keeps <b>every day</b> — an open,
+    downloadable, versioned dataset.</p>
+
+  <h2>the difference in one table</h2>
+  <table>
+    <tr><th></th><th>live board</th><th>history</th><th>downloadable data</th><th>open license</th><th>price</th></tr>
+    <tr class="us"><td><b>trendscope</b></td>
+      <td class="y">15 sources daily</td><td class="y">every day since launch, forever</td>
+      <td class="y">JSON + CSV + API</td><td class="y">CC0</td><td class="y">free</td></tr>
+    <tr><td>live dashboards<br><small>(theinternetrightnow, ViralSlate, Sentinel Feed)</small></td>
+      <td class="y">yes</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="y">free</td></tr>
+    <tr><td>single-source trackers<br><small>(Hotfork, hckrnews)</small></td>
+      <td class="y">yes</td><td class="n">partial</td><td class="n">—</td><td class="n">—</td><td class="y">free</td></tr>
+    <tr><td>digest services<br><small>(usedigest, daily.dev)</small></td>
+      <td class="y">yes</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">account required</td></tr>
+  </table>
+
+  <h2>what "keeping every day" buys you</h2>
+  <div class="pitch">
+    <ul>
+      <li><b>Velocity, not just rank</b> — gainers/droppers/new entries published daily
+        (<a href="compare.html">compare</a>, <a href="docs/api/movers-latest.json">movers API</a>).</li>
+      <li><b>Streaks &amp; staying power</b> — which stories last a week, not a moment
+        (<a href="streaks.html">streaks</a>, <a href="week.html">this week</a>).</li>
+      <li><b>Time travel</b> — replay any day's board
+        (<a href="index.html">dashboard date picker</a>, <a href="calendar.html">calendar</a>).</li>
+      <li><b>The canon</b> — 19 years of Hacker News history backfilled:
+        <a href="canon.html">front pages</a>, <a href="showhn.html">launches</a>,
+        <a href="rituals.html">questions</a>, <a href="year.html">by year</a>.</li>
+      <li><b>Demand signals</b> — recurring Ask HN themes clustered
+        (<a href="ideas.html">ideas</a>) and the HN labor market
+        (<a href="hiring.html">hiring pulse</a>, 15-year series).</li>
+      <li><b>Self-described health</b> — the pipeline publishes its own uptime
+        (<a href="health.html">health</a>).</li>
+    </ul>
+  </div>
+
+  <h2>use the data</h2>
+  <div class="pitch">
+    Latest snapshot: <a href="data/latest.json"><code>data/latest.json</code></a> ·
+    Full history: <a href="data/history.csv"><code>history.csv</code></a> ·
+    Machine APIs: <a href="docs/api.md">movers / ideas / stats / hiring</a> ·
+    Terminal: <code>trendscope.py</code> (zero deps) ·
+    Feed: <a href="feed.xml">RSS</a> / <a href="feed.json">JSON Feed</a> ·
+    <a href="embed.html">embeddable widget</a> for your own site.
+    <br><b>CC0</b> — do anything with it; attribution appreciated, never required.
+  </div>
+
+  <footer>trendscope — the developer attention dataset ·
+    <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a> · CC0</footer>
+</body>
+</html>
