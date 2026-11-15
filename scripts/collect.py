@@ -297,7 +297,7 @@ def fetch_producthunt(limit=20):
                 "https://www.producthunt.com/feed",
                 headers={"User-Agent": UA, "Accept": "application/atom+xml"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] producthunt attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -343,7 +343,7 @@ def fetch_techmeme(limit=20):
                 "https://www.techmeme.com/feed.xml",
                 headers={"User-Agent": UA, "Accept": "application/rss+xml"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] techmeme attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -377,7 +377,7 @@ def fetch_krebs(limit=15):
                 "https://krebsonsecurity.com/feed/",
                 headers={"User-Agent": UA, "Accept": "application/rss+xml"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] krebs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -407,7 +407,7 @@ def fetch_changelog(limit=15):
                 "https://changelog.com/news/feed",
                 headers={"User-Agent": UA, "Accept": "application/rss+xml"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] changelog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -435,7 +435,7 @@ def fetch_freecodecamp(limit=15):
                 "https://www.freecodecamp.org/news/rss/",
                 headers={"User-Agent": UA, "Accept": "application/rss+xml"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] freecodecamp attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -493,7 +493,7 @@ def fetch_infoq(limit=15):
                 "https://feed.infoq.com/",
                 headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] infoq attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -522,7 +522,7 @@ def fetch_theregister(limit=15):
                 "https://feeds.feedburner.com/TheRegister",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] theregister attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -558,7 +558,7 @@ def fetch_lwn(limit=15):
                 "https://lwn.net/headlines/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lwn attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -588,7 +588,7 @@ def fetch_hackaday(limit=15):
                 "https://hackaday.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hackaday attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -618,7 +618,7 @@ def fetch_thenewstack(limit=15):
                 "https://thenewstack.io/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thenewstack attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -648,7 +648,7 @@ def fetch_opensourcecom(limit=15):
                 "https://opensource.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] opensourcecom attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -678,7 +678,7 @@ def fetch_soblog(limit=15):
                 "https://stackoverflow.blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] soblog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -708,7 +708,7 @@ def fetch_codinghorror(limit=15):
                 "https://blog.codinghorror.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codinghorror attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -739,7 +739,7 @@ def fetch_martinfowler(limit=15):
                 "https://martinfowler.com/feed.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] martinfowler attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -774,7 +774,7 @@ def fetch_pragmatic(limit=15):
                 "https://blog.pragmaticengineer.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pragmatic attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -805,7 +805,7 @@ def fetch_bendersky(limit=15):
                 "https://eli.thegreenplace.net/feeds/all.atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bendersky attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -840,7 +840,7 @@ def fetch_cheney(limit=15):
                 "https://dave.cheney.net/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cheney attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -871,7 +871,7 @@ def fetch_lucumr(limit=15):
                 "https://lucumr.pocoo.org/feed.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lucumr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -906,7 +906,7 @@ def fetch_hynek(limit=15):
                 "https://hynek.me/articles/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hynek attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -937,7 +937,7 @@ def fetch_susam(limit=15):
                 "https://susam.net/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] susam attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -972,7 +972,7 @@ def fetch_haxx(limit=15):
                 "https://daniel.haxx.se/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] haxx attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1007,7 +1007,7 @@ def fetch_jvns(limit=15):
                 "https://jvns.ca/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jvns attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1042,7 +1042,7 @@ def fetch_wingolog(limit=15):
                 "https://wingolog.org/feed/atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] wingolog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1077,7 +1077,7 @@ def fetch_philopp(limit=15):
                 "https://os.phil-opp.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] phil-opp attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1112,7 +1112,7 @@ def fetch_sanglard(limit=15):
                 "https://fabiensanglard.net/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sanglard attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1147,7 +1147,7 @@ def fetch_antirez(limit=15):
                 "https://antirez.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] antirez attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1182,7 +1182,7 @@ def fetch_beesbuzz(limit=15):
                 "https://beesbuzz.biz/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] beesbuzz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1217,7 +1217,7 @@ def fetch_gargron(limit=15):
                 "https://mastodon.social/@Gargron.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gargron attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1252,7 +1252,7 @@ def fetch_overreacted(limit=15):
                 "https://overreacted.io/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] overreacted attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1287,7 +1287,7 @@ def fetch_swizec(limit=15):
                 "https://swizec.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] swizec attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1322,7 +1322,7 @@ def fetch_kentcdodds(limit=15):
                 "https://kentcdodds.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kentcdodds attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1357,7 +1357,7 @@ def fetch_cloudflare(limit=15):
                 "https://blog.cloudflare.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cloudflare attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1392,7 +1392,7 @@ def fetch_netflix(limit=15):
                 "https://netflixtechblog.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] netflix attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1427,7 +1427,7 @@ def fetch_github_eng(limit=15):
                 "https://github.blog/engineering.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] github_eng attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1462,7 +1462,7 @@ def fetch_slack_eng(limit=15):
                 "https://slack.engineering/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] slack_eng attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1497,7 +1497,7 @@ def fetch_aws_blog(limit=15):
                 "https://aws.amazon.com/blogs/aws/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aws_blog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1532,7 +1532,7 @@ def fetch_dropbox(limit=15):
                 "https://dropbox.tech/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dropbox attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1567,7 +1567,7 @@ def fetch_lyft(limit=15):
                 "https://eng.lyft.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lyft attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1602,7 +1602,7 @@ def fetch_pinterest(limit=15):
                 "https://medium.com/feed/@Pinterest_Engineering",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pinterest attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1637,7 +1637,7 @@ def fetch_etsy(limit=15):
                 "https://www.etsy.com/codeascraft/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] etsy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1672,7 +1672,7 @@ def fetch_discord(limit=15):
                 "https://discord.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] discord attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1707,7 +1707,7 @@ def fetch_stripe(limit=15):
                 "https://stripe.com/blog/feed.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] stripe attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1742,7 +1742,7 @@ def fetch_vercel(limit=15):
                 "https://vercel.com/atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] vercel attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1777,7 +1777,7 @@ def fetch_meta_eng(limit=15):
                 "https://engineering.fb.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] meta_eng attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1812,7 +1812,7 @@ def fetch_airbnb(limit=15):
                 "https://medium.com/feed/airbnb-engineering",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] airbnb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1847,7 +1847,7 @@ def fetch_mongodb(limit=15):
                 "https://www.mongodb.com/blog/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mongodb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1882,7 +1882,7 @@ def fetch_elastic(limit=15):
                 "https://www.elastic.co/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] elastic attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1917,7 +1917,7 @@ def fetch_gitlab_blog(limit=15):
                 "https://about.gitlab.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gitlab_blog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1952,7 +1952,7 @@ def fetch_aphyr(limit=15):
                 "https://aphyr.com/posts.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aphyr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -1987,7 +1987,7 @@ def fetch_thisweek(limit=15):
                 "https://this-week-in-rust.org/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thisweek attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2022,7 +2022,7 @@ def fetch_pythonblog(limit=15):
                 "https://blog.python.org/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pythonblog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2057,7 +2057,7 @@ def fetch_rands(limit=15):
                 "https://randsinrepose.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rands attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2092,7 +2092,7 @@ def fetch_catonmat(limit=15):
                 "https://catonmat.net/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] catonmat attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2127,7 +2127,7 @@ def fetch_dabeaz(limit=15):
                 "https://dabeaz.blogspot.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dabeaz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2162,7 +2162,7 @@ def fetch_mitchw(limit=15):
                 "https://mitchellh.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mitchw attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2197,7 +2197,7 @@ def fetch_birklund(limit=15):
                 "https://twobithistory.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] birklund attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2232,7 +2232,7 @@ def fetch_simonw(limit=15):
                 "https://simonwillison.net/atom/everything/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] simonw attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2270,7 +2270,7 @@ def fetch_daringfireball(limit=15):
                 "https://daringfireball.net/feeds/main",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] daringfireball attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2305,7 +2305,7 @@ def fetch_marco(limit=15):
                 "https://marco.org/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] marco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2340,7 +2340,7 @@ def fetch_danluu(limit=15):
                 "https://danluu.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] danluu attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2375,7 +2375,7 @@ def fetch_stratechery(limit=15):
                 "https://stratechery.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] stratechery attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2410,7 +2410,7 @@ def fetch_baeldung(limit=15):
                 "https://feeds.feedburner.com/Baeldung",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] baeldung attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2445,7 +2445,7 @@ def fetch_troyhunt(limit=15):
                 "https://www.troyhunt.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] troyhunt attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2480,7 +2480,7 @@ def fetch_tonsky(limit=15):
                 "https://tonsky.me/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tonsky attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2515,7 +2515,7 @@ def fetch_joelonsoftware(limit=15):
                 "https://www.joelonsoftware.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] joelonsoftware attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2550,7 +2550,7 @@ def fetch_raphlinus(limit=15):
                 "https://raphlinus.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] raphlinus attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2585,7 +2585,7 @@ def fetch_xeiaso(limit=15):
                 "https://xeiaso.net/blog.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] xeiaso attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2620,7 +2620,7 @@ def fetch_jetbrains(limit=15):
                 "https://blog.jetbrains.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jetbrains attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2655,7 +2655,7 @@ def fetch_tedinski(limit=15):
                 "https://www.tedinski.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tedinski attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2690,7 +2690,7 @@ def fetch_drmaciver(limit=15):
                 "https://drmaciver.substack.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] drmaciver attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2725,7 +2725,7 @@ def fetch_matklad(limit=15):
                 "https://matklad.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] matklad attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2760,7 +2760,7 @@ def fetch_grumpyg(limit=15):
                 "https://grumpyoldgeek.tumblr.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] grumpyg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2795,7 +2795,7 @@ def fetch_chriskiehl(limit=15):
                 "https://chriskiehl.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] chriskiehl attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2830,7 +2830,7 @@ def fetch_dimitri(limit=15):
                 "https://tapoueh.org/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dimitri attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2865,7 +2865,7 @@ def fetch_hillel(limit=15):
                 "https://www.hillelwayne.com/post/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hillel attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2900,7 +2900,7 @@ def fetch_ridiculousfish(limit=15):
                 "https://ridiculousfish.com/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ridiculousfish attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2935,7 +2935,7 @@ def fetch_nadia(limit=15):
                 "https://nadia.xyz/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nadia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -2970,7 +2970,7 @@ def fetch_henrikwarne(limit=15):
                 "https://henrikwarne.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] henrikwarne attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3005,7 +3005,7 @@ def fetch_charity(limit=15):
                 "https://charity.wtf/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] charity attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3040,7 +3040,7 @@ def fetch_surfingcomplexity(limit=15):
                 "https://surfingcomplexity.blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] surfingcomplexity attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3075,7 +3075,7 @@ def fetch_lorinhochstein(limit=15):
                 "https://lorinhochstein.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lorinhochstein attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3110,7 +3110,7 @@ def fetch_geshan(limit=15):
                 "https://geshan.com.np/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] geshan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3145,7 +3145,7 @@ def fetch_mtlynch(limit=15):
                 "https://mtlynch.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mtlynch attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3180,7 +3180,7 @@ def fetch_nelhage(limit=15):
                 "https://blog.nelhage.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nelhage attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3250,7 +3250,7 @@ def fetch_lcamtuf(limit=15):
                 "https://lcamtuf.substack.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lcamtuf attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3285,7 +3285,7 @@ def fetch_copyconstruct(limit=15):
                 "https://copyconstruct.medium.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] copyconstruct attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3320,7 +3320,7 @@ def fetch_verdagon(limit=15):
                 "https://verdagon.dev/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] verdagon attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3355,7 +3355,7 @@ def fetch_bitbashing(limit=15):
                 "https://bitbashing.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bitbashing attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3390,7 +3390,7 @@ def fetch_ntietz(limit=15):
                 "https://ntietz.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ntietz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3425,7 +3425,7 @@ def fetch_murat(limit=15):
                 "https://muratbuffalo.blogspot.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] murat attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3460,7 +3460,7 @@ def fetch_begriffs(limit=15):
                 "https://begriffs.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] begriffs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3495,7 +3495,7 @@ def fetch_gds(limit=15):
                 "https://gds.blog.gov.uk/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gds attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3530,7 +3530,7 @@ def fetch_bitslog(limit=15):
                 "https://bitslog.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bitslog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3565,7 +3565,7 @@ def fetch_roytang(limit=15):
                 "https://roytang.net/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] roytang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3600,7 +3600,7 @@ def fetch_tbray(limit=15):
                 "https://www.tbray.org/ongoing/ongoing.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tbray attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3635,7 +3635,7 @@ def fetch_bertrand(limit=15):
                 "https://bertrandmeyer.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bertrand attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3670,7 +3670,7 @@ def fetch_bret(limit=15):
                 "http://worrydream.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bret attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3705,7 +3705,7 @@ def fetch_codemadness(limit=15):
                 "https://codemadness.org/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codemadness attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3740,7 +3740,7 @@ def fetch_jacobian(limit=15):
                 "https://jacobian.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jacobian attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3775,7 +3775,7 @@ def fetch_karl(limit=15):
                 "https://karl-voit.at/feeds/lazyblorg-all.atom_1.0.links-and-content.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] karl attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3810,7 +3810,7 @@ def fetch_gwern(limit=15):
                 "https://gwern.net/index.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gwern attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3845,7 +3845,7 @@ def fetch_andrewkelley(limit=15):
                 "https://andrewkelley.me/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] andrewkelley attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3880,7 +3880,7 @@ def fetch_joeduffy(limit=15):
                 "http://joeduffyblog.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] joeduffy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3915,7 +3915,7 @@ def fetch_bravenewgeek(limit=15):
                 "https://bravenewgeek.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bravenewgeek attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3950,7 +3950,7 @@ def fetch_ciechanow(limit=15):
                 "https://ciechanow.ski/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ciechanow attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -3985,7 +3985,7 @@ def fetch_mikeash(limit=15):
                 "https://mikeash.com/pyblog/rss.py",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mikeash attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4020,7 +4020,7 @@ def fetch_fogus(limit=15):
                 "https://blog.fogus.me/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fogus attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4055,7 +4055,7 @@ def fetch_ncase(limit=15):
                 "https://blog.ncase.me/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ncase attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4090,7 +4090,7 @@ def fetch_jwz(limit=15):
                 "https://www.jwz.org/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jwz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4125,7 +4125,7 @@ def fetch_steveblank(limit=15):
                 "https://steveblank.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] steveblank attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4160,7 +4160,7 @@ def fetch_zackkanter(limit=15):
                 "https://zackkanter.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] zackkanter attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4195,7 +4195,7 @@ def fetch_robinrendle(limit=15):
                 "https://robinrendle.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] robinrendle attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4230,7 +4230,7 @@ def fetch_terrytao(limit=15):
                 "https://terrytao.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] terrytao attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4265,7 +4265,7 @@ def fetch_norvig(limit=15):
                 "http://norvig.com/rss-feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] norvig attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4300,7 +4300,7 @@ def fetch_gamasutra(limit=15):
                 "https://www.gamedeveloper.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gamasutra attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4335,7 +4335,7 @@ def fetch_thisdavej(limit=15):
                 "https://thisdavej.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thisdavej attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4370,7 +4370,7 @@ def fetch_x065(limit=15):
                 "https://0x65.dev/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] x065 attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4405,7 +4405,7 @@ def fetch_shkspr(limit=15):
                 "https://shkspr.mobi/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] shkspr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4440,7 +4440,7 @@ def fetch_daverupert(limit=15):
                 "https://daverupert.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] daverupert attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4475,7 +4475,7 @@ def fetch_bobmonsour(limit=15):
                 "https://www.bobmonsour.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bobmonsour attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4510,7 +4510,7 @@ def fetch_justinpot(limit=15):
                 "https://justinpot.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] justinpot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4545,7 +4545,7 @@ def fetch_jakelazaroff(limit=15):
                 "https://jakelazaroff.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jakelazaroff attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4580,7 +4580,7 @@ def fetch_wcedmisten(limit=15):
                 "https://wcedmisten.fyi/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] wcedmisten attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4615,7 +4615,7 @@ def fetch_prog21(limit=15):
                 "https://prog21.dadgum.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] prog21 attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4650,7 +4650,7 @@ def fetch_danielmiessler(limit=15):
                 "https://danielmiessler.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] danielmiessler attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4685,7 +4685,7 @@ def fetch_swyx(limit=15):
                 "https://www.swyx.io/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] swyx attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4720,7 +4720,7 @@ def fetch_samwho(limit=15):
                 "https://samwho.dev/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] samwho attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4755,7 +4755,7 @@ def fetch_rauchg(limit=15):
                 "https://rauchg.com/atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rauchg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4790,7 +4790,7 @@ def fetch_karpathy(limit=15):
                 "http://karpathy.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] karpathy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4825,7 +4825,7 @@ def fetch_matthewrocklin(limit=15):
                 "https://matthewrocklin.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] matthewrocklin attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4860,7 +4860,7 @@ def fetch_wesleyac(limit=15):
                 "https://blog.wesleyac.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] wesleyac attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4895,7 +4895,7 @@ def fetch_michaelfeathers(limit=15):
                 "https://michaelfeathers.silvrback.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] michaelfeathers attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4930,7 +4930,7 @@ def fetch_agis(limit=15):
                 "https://agis.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] agis attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -4965,7 +4965,7 @@ def fetch_mollywhite(limit=15):
                 "https://www.mollywhite.net/micro/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mollywhite attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5000,7 +5000,7 @@ def fetch_amontalenti(limit=15):
                 "https://amontalenti.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] amontalenti attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5035,7 +5035,7 @@ def fetch_brandur(limit=15):
                 "https://brandur.org/articles.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] brandur attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5070,7 +5070,7 @@ def fetch_jesseduffield(limit=15):
                 "https://jesseduffield.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jesseduffield attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5105,7 +5105,7 @@ def fetch_vicki(limit=15):
                 "https://vicki.substack.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] vicki attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5140,7 +5140,7 @@ def fetch_geoffreylitt(limit=15):
                 "https://www.geoffreylitt.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] geoffreylitt attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5175,7 +5175,7 @@ def fetch_maggieappleton(limit=15):
                 "https://maggieappleton.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] maggieappleton attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5210,7 +5210,7 @@ def fetch_andybromberg(limit=15):
                 "https://andybromberg.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] andybromberg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5245,7 +5245,7 @@ def fetch_ariadne(limit=15):
                 "https://ariadne.space/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ariadne attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5280,7 +5280,7 @@ def fetch_eugeneyan(limit=15):
                 "https://eugeneyan.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] eugeneyan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5315,7 +5315,7 @@ def fetch_seangoedecke(limit=15):
                 "https://seangoedecke.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] seangoedecke attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5350,7 +5350,7 @@ def fetch_idvorkin(limit=15):
                 "https://idvork.in/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] idvorkin attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5385,7 +5385,7 @@ def fetch_alexwlchan(limit=15):
                 "https://alexwlchan.net/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] alexwlchan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5420,7 +5420,7 @@ def fetch_kellysutton(limit=15):
                 "https://kellysutton.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kellysutton attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5455,7 +5455,7 @@ def fetch_stevekrouse(limit=15):
                 "https://stevekrouse.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] stevekrouse attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5490,7 +5490,7 @@ def fetch_philcalcado(limit=15):
                 "https://philcalcado.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] philcalcado attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5525,7 +5525,7 @@ def fetch_maryrosecook(limit=15):
                 "https://maryrosecook.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] maryrosecook attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5560,7 +5560,7 @@ def fetch_kvark(limit=15):
                 "https://kvark.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kvark attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5595,7 +5595,7 @@ def fetch_ayende(limit=15):
                 "https://ayende.com/blog/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ayende attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5630,7 +5630,7 @@ def fetch_yegor256(limit=15):
                 "https://www.yegor256.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] yegor256 attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5665,7 +5665,7 @@ def fetch_addyosmani(limit=15):
                 "http://addyosmani.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] addyosmani attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5700,7 +5700,7 @@ def fetch_blogappsnpr(limit=15):
                 "http://blog.apps.npr.org/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogappsnpr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5735,7 +5735,7 @@ def fetch_blogchromium(limit=15):
                 "http://blog.chromium.org/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogchromium attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5770,7 +5770,7 @@ def fetch_cameronmoll(limit=15):
                 "http://cameronmoll.com/journal.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cameronmoll attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5805,7 +5805,7 @@ def fetch_codeflickr(limit=15):
                 "http://code.flickr.net/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codeflickr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5840,7 +5840,7 @@ def fetch_deliverooengineering(limit=15):
                 "http://deliveroo.engineering/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] deliverooengineering attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5875,7 +5875,7 @@ def fetch_dewith(limit=15):
                 "http://dewith.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dewith attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5910,7 +5910,7 @@ def fetch_dyskinetic(limit=15):
                 "http://dyskinetic.net/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dyskinetic attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5945,7 +5945,7 @@ def fetch_hanselman(limit=15):
                 "http://feeds.hanselman.com/ScottHanselman",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hanselman attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -5981,7 +5981,7 @@ def fetch_feeds2feedburner(limit=15):
                 "http://feeds2.feedburner.com/Swissmiss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] feeds2feedburner attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6017,7 +6017,7 @@ def fetch_jankfree(limit=15):
                 "http://jankfree.org/feed/all.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jankfree attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6052,7 +6052,7 @@ def fetch_johnkeefe(limit=15):
                 "http://johnkeefe.net/posts.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] johnkeefe attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6087,7 +6087,7 @@ def fetch_karbonbased(limit=15):
                 "http://karbonbased.io/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] karbonbased attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6122,7 +6122,7 @@ def fetch_kpqgithub(limit=15):
                 "http://kpq.github.io/chartsnthings/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kpqgithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6157,7 +6157,7 @@ def fetch_perfectionkills(limit=15):
                 "http://perfectionkills.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] perfectionkills attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6193,7 +6193,7 @@ def fetch_responsivenewsco(limit=15):
                 "http://responsivenews.co.uk/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] responsivenewsco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6228,7 +6228,7 @@ def fetch_simplebits(limit=15):
                 "http://simplebits.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] simplebits attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6263,7 +6263,7 @@ def fetch_thecodebarbarian(limit=15):
                 "http://thecodebarbarian.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thecodebarbarian attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6298,7 +6298,7 @@ def fetch_aaronsw(limit=15):
                 "http://www.aaronsw.com/2002/feeds/pgessays.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aaronsw attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6333,7 +6333,7 @@ def fetch_d3noob(limit=15):
                 "http://www.d3noob.org/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] d3noob attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6368,7 +6368,7 @@ def fetch_ebaytechblog(limit=15):
                 "http://www.ebaytechblog.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ebaytechblog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6403,7 +6403,7 @@ def fetch_planeterlang(limit=15):
                 "http://www.planeterlang.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] planeterlang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6438,7 +6438,7 @@ def fetch_stubbornella(limit=15):
                 "http://www.stubbornella.org/content/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] stubbornella attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6473,7 +6473,7 @@ def fetch_0xdade(limit=15):
                 "https://0xda.de/blog/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] 0xdade attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6508,7 +6508,7 @@ def fetch_100r(limit=15):
                 "https://100r.co/links/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] 100r attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6543,7 +6543,7 @@ def fetch_512pixels(limit=15):
                 "https://512pixels.net/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] 512pixels attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6579,7 +6579,7 @@ def fetch_aaronstuyvenberg(limit=15):
                 "https://aaronstuyvenberg.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aaronstuyvenberg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6614,7 +6614,7 @@ def fetch_aartaka(limit=15):
                 "https://aartaka.me/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aartaka attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6649,7 +6649,7 @@ def fetch_adais(limit=15):
                 "https://ada.is/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] adais attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6684,7 +6684,7 @@ def fetch_adactio(limit=15):
                 "https://adactio.com/journal/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] adactio attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6719,7 +6719,7 @@ def fetch_addyosubstack(limit=15):
                 "https://addyo.substack.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] addyosubstack attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6754,7 +6754,7 @@ def fetch_adoptingerlang(limit=15):
                 "https://adoptingerlang.org/docs/introduction/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] adoptingerlang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6789,7 +6789,7 @@ def fetch_adrianroselli(limit=15):
                 "https://adrianroselli.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] adrianroselli attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6824,7 +6824,7 @@ def fetch_aerotwist(limit=15):
                 "https://aerotwist.com/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aerotwist attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6859,7 +6859,7 @@ def fetch_ahmadawais(limit=15):
                 "https://ahmadawais.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ahmadawais attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6894,7 +6894,7 @@ def fetch_aieworkssubstack(limit=15):
                 "https://aieworks.substack.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aieworkssubstack attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6929,7 +6929,7 @@ def fetch_alistapart(limit=15):
                 "https://alistapart.com/main/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] alistapart attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6964,7 +6964,7 @@ def fetch_andersmurphy(limit=15):
                 "https://andersmurphy.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] andersmurphy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -6999,7 +6999,7 @@ def fetch_andrealeopardi(limit=15):
                 "https://andrealeopardi.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] andrealeopardi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7034,7 +7034,7 @@ def fetch_andrewtimberlake(limit=15):
                 "https://andrewtimberlake.com/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] andrewtimberlake attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7069,7 +7069,7 @@ def fetch_andymalehblogspot(limit=15):
                 "https://andymaleh.blogspot.com/feeds/posts/default?alt=rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] andymalehblogspot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7104,7 +7104,7 @@ def fetch_anhvn(limit=15):
                 "https://anhvn.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] anhvn attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7139,7 +7139,7 @@ def fetch_antongunnarsson(limit=15):
                 "https://antongunnarsson.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] antongunnarsson attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7174,7 +7174,7 @@ def fetch_architectelevator(limit=15):
                 "https://architectelevator.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] architectelevator attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7209,7 +7209,7 @@ def fetch_arialdomartinigithub(limit=15):
                 "https://arialdomartini.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] arialdomartinigithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7244,7 +7244,7 @@ def fetch_artsygithub(limit=15):
                 "https://artsy.github.io/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] artsygithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7279,7 +7279,7 @@ def fetch_austinhenley(limit=15):
                 "https://austinhenley.com/blog/feed.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] austinhenley attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7314,7 +7314,7 @@ def fetch_auth0(limit=15):
                 "https://auth0.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] auth0 attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7349,7 +7349,7 @@ def fetch_automattic(limit=15):
                 "https://automattic.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] automattic attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7384,7 +7384,7 @@ def fetch_backendtea(limit=15):
                 "https://backendtea.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] backendtea attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7419,7 +7419,7 @@ def fetch_backstage(limit=15):
                 "https://backstage.io/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] backstage attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7454,7 +7454,7 @@ def fetch_basicappleguy(limit=15):
                 "https://basicappleguy.com/basicappleblog?format=rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] basicappleguy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7489,7 +7489,7 @@ def fetch_batkosubstack(limit=15):
                 "https://batko.substack.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] batkosubstack attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7524,7 +7524,7 @@ def fetch_beabetterdev(limit=15):
                 "https://beabetterdev.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] beabetterdev attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7559,7 +7559,7 @@ def fetch_benjamin(limit=15):
                 "https://benjamin.computer/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] benjamin attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7594,7 +7594,7 @@ def fetch_bensmithgall(limit=15):
                 "https://bensmithgall.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bensmithgall attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7629,7 +7629,7 @@ def fetch_betterdev(limit=15):
                 "https://betterdev.blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] betterdev attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7664,7 +7664,7 @@ def fetch_birchtree(limit=15):
                 "https://birchtree.me/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] birchtree attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7699,7 +7699,7 @@ def fetch_bitmathblogspot(limit=15):
                 "https://bitmath.blogspot.com/feeds/posts/default?alt=rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bitmathblogspot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7734,7 +7734,7 @@ def fetch_bitsofco(limit=15):
                 "https://bitsofco.de/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bitsofco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7769,7 +7769,7 @@ def fetch_blog1password(limit=15):
                 "https://blog.1password.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blog1password attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7804,7 +7804,7 @@ def fetch_blogalexmaccaw(limit=15):
                 "https://blog.alexmaccaw.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogalexmaccaw attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7839,7 +7839,7 @@ def fetch_blogangular(limit=15):
                 "https://blog.angular.dev/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogangular attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7874,7 +7874,7 @@ def fetch_blogasciinema(limit=15):
                 "https://blog.asciinema.org/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogasciinema attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7909,7 +7909,7 @@ def fetch_blogaxlight(limit=15):
                 "https://blog.axlight.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogaxlight attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7944,7 +7944,7 @@ def fetch_blogchristianposta(limit=15):
                 "https://blog.christianposta.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogchristianposta attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -7979,7 +7979,7 @@ def fetch_blogcoiled(limit=15):
                 "https://blog.coiled.io/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogcoiled attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8014,7 +8014,7 @@ def fetch_blogdomenic(limit=15):
                 "https://blog.domenic.me/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogdomenic attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8049,7 +8049,7 @@ def fetch_blogfrankel(limit=15):
                 "https://blog.frankel.ch/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogfrankel attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8084,7 +8084,7 @@ def fetch_googleblog(limit=15):
                 "https://blog.google/products-and-platforms/products/gemini/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] googleblog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8119,7 +8119,7 @@ def fetch_blogiconfactory(limit=15):
                 "https://blog.iconfactory.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogiconfactory attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8154,7 +8154,7 @@ def fetch_blogj11y(limit=15):
                 "https://blog.j11y.io/rss_2.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogj11y attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8189,7 +8189,7 @@ def fetch_blogjanestreet(limit=15):
                 "https://blog.janestreet.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogjanestreet attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8224,7 +8224,7 @@ def fetch_blogjessfraz(limit=15):
                 "https://blog.jessfraz.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogjessfraz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8259,7 +8259,7 @@ def fetch_blogkenanb(limit=15):
                 "https://blog.kenanb.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogkenanb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8294,7 +8294,7 @@ def fetch_blogkhanacademy(limit=15):
                 "https://blog.khanacademy.org/engineering/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogkhanacademy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8329,7 +8329,7 @@ def fetch_blogknatten(limit=15):
                 "https://blog.knatten.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogknatten attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8364,7 +8364,7 @@ def fetch_blogkukiel(limit=15):
                 "https://blog.kukiel.dev/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogkukiel attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8399,7 +8399,7 @@ def fetch_bloglogrocket(limit=15):
                 "https://blog.logrocket.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bloglogrocket attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8434,7 +8434,7 @@ def fetch_blogluden(limit=15):
                 "https://blog.luden.io/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogluden attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8469,7 +8469,7 @@ def fetch_blogroboflow(limit=15):
                 "https://blog.roboflow.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogroboflow attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8504,7 +8504,7 @@ def fetch_blogrustlang(limit=15):
                 "https://blog.rust-lang.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogrustlang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8539,7 +8539,7 @@ def fetch_blogscottlogic(limit=15):
                 "https://blog.scottlogic.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogscottlogic attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8574,7 +8574,7 @@ def fetch_blogsentry(limit=15):
                 "https://blog.sentry.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogsentry attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8609,7 +8609,7 @@ def fetch_blogtensorflow(limit=15):
                 "https://blog.tensorflow.org/feeds/posts/default?alt=rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogtensorflow attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8644,7 +8644,7 @@ def fetch_blogvuejs(limit=15):
                 "https://blog.vuejs.org/feed.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogvuejs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8679,7 +8679,7 @@ def fetch_blogwokwi(limit=15):
                 "https://blog.wokwi.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogwokwi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8714,7 +8714,7 @@ def fetch_blogsnewardassociates(limit=15):
                 "https://blogs.newardassociates.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogsnewardassociates attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8749,7 +8749,7 @@ def fetch_blueskyweb(limit=15):
                 "https://blueskyweb.xyz/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blueskyweb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8784,7 +8784,7 @@ def fetch_bogoyavlensky(limit=15):
                 "https://bogoyavlensky.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bogoyavlensky attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8819,7 +8819,7 @@ def fetch_boonepetergithub(limit=15):
                 "https://boonepeter.github.io/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] boonepetergithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8854,7 +8854,7 @@ def fetch_borischerny(limit=15):
                 "https://borischerny.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] borischerny attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8889,7 +8889,7 @@ def fetch_bostocks(limit=15):
                 "https://bost.ocks.org/mike/index.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bostocks attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8924,7 +8924,7 @@ def fetch_boxofcables(limit=15):
                 "https://boxofcables.dev/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] boxofcables attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8959,7 +8959,7 @@ def fetch_boz(limit=15):
                 "https://boz.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] boz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -8994,7 +8994,7 @@ def fetch_buffer(limit=15):
                 "https://buffer.com/resources/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] buffer attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9029,7 +9029,7 @@ def fetch_calpaterson(limit=15):
                 "https://calpaterson.com/calpaterson.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] calpaterson attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9064,7 +9064,7 @@ def fetch_calv(limit=15):
                 "https://calv.info/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] calv attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9099,7 +9099,7 @@ def fetch_carljohansenwordpress(limit=15):
                 "https://carljohansen.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] carljohansenwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9134,7 +9134,7 @@ def fetch_caseymuratori(limit=15):
                 "https://caseymuratori.com/blog_atom.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] caseymuratori attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9169,7 +9169,7 @@ def fetch_cezarypiatekgithub(limit=15):
                 "https://cezarypiatek.github.io/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cezarypiatekgithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9204,7 +9204,7 @@ def fetch_chrisprather(limit=15):
                 "https://chris.prather.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] chrisprather attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9239,7 +9239,7 @@ def fetch_chriscoyier(limit=15):
                 "https://chriscoyier.net/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] chriscoyier attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9274,7 +9274,7 @@ def fetch_christianheilmann(limit=15):
                 "https://christianheilmann.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] christianheilmann attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9309,7 +9309,7 @@ def fetch_christianselig(limit=15):
                 "https://christianselig.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] christianselig attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9344,7 +9344,7 @@ def fetch_chriswarrick(limit=15):
                 "https://chriswarrick.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] chriswarrick attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9379,7 +9379,7 @@ def fetch_cloudberry(limit=15):
                 "https://cloudberry.engineering/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cloudberry attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9414,7 +9414,7 @@ def fetch_cloudplatformgoogleblog(limit=15):
                 "https://cloudplatform.googleblog.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cloudplatformgoogleblog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9449,7 +9449,7 @@ def fetch_codetutsplus(limit=15):
                 "https://code.tutsplus.com/posts.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codetutsplus attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9484,7 +9484,7 @@ def fetch_codevisualstudio(limit=15):
                 "https://code.visualstudio.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codevisualstudio attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9519,7 +9519,7 @@ def fetch_codecompass00substack(limit=15):
                 "https://codecompass00.substack.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codecompass00substack attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9555,7 +9555,7 @@ def fetch_cppcast(limit=15):
                 "https://cppcast.com/feed.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cppcast attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9591,7 +9591,7 @@ def fetch_csaiot(limit=15):
                 "https://csa-iot.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] csaiot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9626,7 +9626,7 @@ def fetch_cssirl(limit=15):
                 "https://css-irl.info/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cssirl attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9661,7 +9661,7 @@ def fetch_csstricks(limit=15):
                 "https://css-tricks.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] csstricks attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9696,7 +9696,7 @@ def fetch_culturedcode(limit=15):
                 "https://culturedcode.com/things/blog/feed/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] culturedcode attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9731,7 +9731,7 @@ def fetch_curiosum(limit=15):
                 "https://curiosum.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] curiosum attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9766,7 +9766,7 @@ def fetch_danielfeldroy(limit=15):
                 "https://daniel.feldroy.com/feeds/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] danielfeldroy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9801,7 +9801,7 @@ def fetch_danielcwilson(limit=15):
                 "https://danielcwilson.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] danielcwilson attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9836,7 +9836,7 @@ def fetch_dannorris(limit=15):
                 "https://dannorris.me/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dannorris attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9871,7 +9871,7 @@ def fetch_dashbit(limit=15):
                 "https://dashbit.co/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dashbit attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9906,7 +9906,7 @@ def fetch_datanewstumblr(limit=15):
                 "https://datanews.tumblr.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] datanewstumblr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9941,7 +9941,7 @@ def fetch_deanebarker(limit=15):
                 "https://deanebarker.net/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] deanebarker attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -9976,7 +9976,7 @@ def fetch_deathandgravity(limit=15):
                 "https://death.andgravity.com/_feed/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] deathandgravity attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10011,7 +10011,7 @@ def fetch_den(limit=15):
                 "https://den.dev/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] den attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10046,7 +10046,7 @@ def fetch_dev37signals(limit=15):
                 "https://dev.37signals.com/feed/posts.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dev37signals attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10081,7 +10081,7 @@ def fetch_devblogsmicrosoft(limit=15):
                 "https://devblogs.microsoft.com/python/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] devblogsmicrosoft attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10116,7 +10116,7 @@ def fetch_devcop(limit=15):
                 "https://devcop.io/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] devcop attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10151,7 +10151,7 @@ def fetch_developerchrome(limit=15):
                 "https://developer.chrome.com/static/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] developerchrome attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10186,7 +10186,7 @@ def fetch_developernvidia(limit=15):
                 "https://developer.nvidia.com/blog/posts/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] developernvidia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10221,7 +10221,7 @@ def fetch_developsense(limit=15):
                 "https://developsense.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] developsense attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10256,7 +10256,7 @@ def fetch_devopscube(limit=15):
                 "https://devopscube.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] devopscube attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10291,7 +10291,7 @@ def fetch_diablohorn(limit=15):
                 "https://diablohorn.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] diablohorn attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10326,7 +10326,7 @@ def fetch_effectivesoftwaredesign(limit=15):
                 "https://effectivesoftwaredesign.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] effectivesoftwaredesign attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10361,7 +10361,7 @@ def fetch_effectivetypescript(limit=15):
                 "https://effectivetypescript.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] effectivetypescript attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10396,7 +10396,7 @@ def fetch_eieio(limit=15):
                 "https://eieio.games/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] eieio attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10431,7 +10431,7 @@ def fetch_eigr(limit=15):
                 "https://eigr.io/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] eigr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10466,7 +10466,7 @@ def fetch_elixirlang(limit=15):
                 "https://elixir-lang.org/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] elixirlang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10501,7 +10501,7 @@ def fetch_elixirlibhunt(limit=15):
                 "https://elixir.libhunt.com/newsletter/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] elixirlibhunt attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10536,7 +10536,7 @@ def fetch_encore(limit=15):
                 "https://encore.dev/rss/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] encore attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10571,7 +10571,7 @@ def fetch_engineercodexsubstack(limit=15):
                 "https://engineercodex.substack.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineercodexsubstack attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10606,7 +10606,7 @@ def fetch_engineeringindeedblog(limit=15):
                 "https://engineering.indeedblog.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineeringindeedblog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10641,7 +10641,7 @@ def fetch_engineeringsquarespace(limit=15):
                 "https://engineering.squarespace.com/blog?format=RSS",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineeringsquarespace attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10676,7 +10676,7 @@ def fetch_engineeringtumblr(limit=15):
                 "https://engineering.tumblr.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineeringtumblr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10711,7 +10711,7 @@ def fetch_engineeringblogyelp(limit=15):
                 "https://engineeringblog.yelp.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineeringblogyelp attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10746,7 +10746,7 @@ def fetch_ericwbailey(limit=15):
                 "https://ericwbailey.website/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ericwbailey attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10781,7 +10781,7 @@ def fetch_erikarow(limit=15):
                 "https://erikarow.land/combined.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] erikarow attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10816,7 +10816,7 @@ def fetch_esbuenonoahstokes(limit=15):
                 "https://esbueno.noahstokes.com/rss/rss.feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] esbuenonoahstokes attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10851,7 +10851,7 @@ def fetch_ethanmarcotte(limit=15):
                 "https://ethanmarcotte.com/wrote/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ethanmarcotte attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10886,7 +10886,7 @@ def fetch_feedbin(limit=15):
                 "https://feedbin.com/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] feedbin attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10921,7 +10921,7 @@ def fetch_feedpress(limit=15):
                 "https://feedpress.me/coryd",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] feedpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10956,7 +10956,7 @@ def fetch_fireside(limit=15):
                 "https://feeds.fireside.fm/smartlogic/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fireside attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -10992,7 +10992,7 @@ def fetch_ferd(limit=15):
                 "https://ferd.ca/feed.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ferd attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11027,7 +11027,7 @@ def fetch_fettblog(limit=15):
                 "https://fettblog.eu/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fettblog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11062,7 +11062,7 @@ def fetch_flowingdata(limit=15):
                 "https://flowingdata.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] flowingdata attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11097,7 +11097,7 @@ def fetch_fly(limit=15):
                 "https://fly.io/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fly attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11132,7 +11132,7 @@ def fetch_forweb(limit=15):
                 "https://forweb.dev/en/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] forweb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11167,7 +11167,7 @@ def fetch_frankchimero(limit=15):
                 "https://frankchimero.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] frankchimero attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11202,7 +11202,7 @@ def fetch_frankforce(limit=15):
                 "https://frankforce.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] frankforce attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11237,7 +11237,7 @@ def fetch_frontendmasters(limit=15):
                 "https://frontendmasters.com/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] frontendmasters attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11272,7 +11272,7 @@ def fetch_geoffgraham(limit=15):
                 "https://geoffgraham.me/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] geoffgraham attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11307,7 +11307,7 @@ def fetch_gleam(limit=15):
                 "https://gleam.run//feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gleam attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11342,7 +11342,7 @@ def fetch_gloria(limit=15):
                 "https://gloria.social/@rizzi.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gloria attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11377,7 +11377,7 @@ def fetch_googletestingblogspot(limit=15):
                 "https://googletesting.blogspot.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] googletestingblogspot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11412,7 +11412,7 @@ def fetch_groovyapache(limit=15):
                 "https://groovy.apache.org/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] groovyapache attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11447,7 +11447,7 @@ def fetch_gustedtwordpress(limit=15):
                 "https://gustedt.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gustedtwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11482,7 +11482,7 @@ def fetch_hacksmozilla(limit=15):
                 "https://hacks.mozilla.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hacksmozilla attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11517,7 +11517,7 @@ def fetch_henry(limit=15):
                 "https://henry.codes/rss/writing.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] henry attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11552,7 +11552,7 @@ def fetch_hex(limit=15):
                 "https://hex.pm/feeds/blog.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hex attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11587,7 +11587,7 @@ def fetch_holub(limit=15):
                 "https://holub.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] holub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11623,7 +11623,7 @@ def fetch_iamfran(limit=15):
                 "https://iamfran.com/feed.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] iamfran attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11658,7 +11658,7 @@ def fetch_incident(limit=15):
                 "https://incident.io/blog.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] incident attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11693,7 +11693,7 @@ def fetch_insightsseicmu(limit=15):
                 "https://insights.sei.cmu.edu/blog/feeds/latest/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] insightsseicmu attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11728,7 +11728,7 @@ def fetch_ishadeed(limit=15):
                 "https://ishadeed.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ishadeed attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11763,7 +11763,7 @@ def fetch_itnotesdragas(limit=15):
                 "https://it-notes.dragas.net/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] itnotesdragas attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11798,7 +11798,7 @@ def fetch_itnext(limit=15):
                 "https://itnext.io/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] itnext attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11833,7 +11833,7 @@ def fetch_jakearchibald(limit=15):
                 "https://jakearchibald.com/posts.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jakearchibald attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11868,7 +11868,7 @@ def fetch_janklang(limit=15):
                 "https://jank-lang.org/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] janklang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11903,7 +11903,7 @@ def fetch_jaredpalmer(limit=15):
                 "https://jaredpalmer.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jaredpalmer attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11938,7 +11938,7 @@ def fetch_javascriptweekly(limit=15):
                 "https://javascriptweekly.com/rss/1317p6ij",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] javascriptweekly attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -11973,7 +11973,7 @@ def fetch_jmesnil(limit=15):
                 "https://jmesnil.net/weblog/feed/atom/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jmesnil attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12008,7 +12008,7 @@ def fetch_johnmillikin(limit=15):
                 "https://john-millikin.com/changes.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] johnmillikin attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12043,7 +12043,7 @@ def fetch_josebrowne(limit=15):
                 "https://josebrowne.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] josebrowne attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12078,7 +12078,7 @@ def fetch_jrsinclair(limit=15):
                 "https://jrsinclair.com/index.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jrsinclair attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12113,7 +12113,7 @@ def fetch_julialang(limit=15):
                 "https://julialang.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] julialang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12148,7 +12148,7 @@ def fetch_jyn(limit=15):
                 "https://jyn.dev/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jyn attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12183,7 +12183,7 @@ def fetch_k8s(limit=15):
                 "https://k8s.af/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] k8s attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12218,7 +12218,7 @@ def fetch_katydecorah(limit=15):
                 "https://katydecorah.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] katydecorah attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12253,7 +12253,7 @@ def fetch_kayserifserif(limit=15):
                 "https://kayserifserif.place/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kayserifserif attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12288,7 +12288,7 @@ def fetch_kettanaito(limit=15):
                 "https://kettanaito.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kettanaito attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12323,7 +12323,7 @@ def fetch_layoffs(limit=15):
                 "https://layoffs.fyi/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] layoffs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12358,7 +12358,7 @@ def fetch_learnk8s(limit=15):
                 "https://learnk8s.io/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] learnk8s attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12393,7 +12393,7 @@ def fetch_lfortran(limit=15):
                 "https://lfortran.org/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lfortran attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12428,7 +12428,7 @@ def fetch_logtalk(limit=15):
                 "https://logtalk.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] logtalk attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12463,7 +12463,7 @@ def fetch_lynnandtonic(limit=15):
                 "https://lynnandtonic.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lynnandtonic attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12498,7 +12498,7 @@ def fetch_m417z(limit=15):
                 "https://m417z.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] m417z attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12533,7 +12533,7 @@ def fetch_mattt(limit=15):
                 "https://ma.tt/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mattt attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12568,7 +12568,7 @@ def fetch_macarthur(limit=15):
                 "https://macarthur.me/rss/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] macarthur attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12603,7 +12603,7 @@ def fetch_macwright(limit=15):
                 "https://macwright.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] macwright attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12638,7 +12638,7 @@ def fetch_magpiraspberrypi(limit=15):
                 "https://magpi.raspberrypi.org/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] magpiraspberrypi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12673,7 +12673,7 @@ def fetch_mangopdf(limit=15):
                 "https://mango.pdf.zone/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mangopdf attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12708,7 +12708,7 @@ def fetch_markermedium(limit=15):
                 "https://marker.medium.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] markermedium attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12743,7 +12743,7 @@ def fetch_martialtesterwordpress(limit=15):
                 "https://martialtester.wordpress.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] martialtesterwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12778,7 +12778,7 @@ def fetch_mathematicaforpredictionwordpress(limit=15):
                 "https://mathematicaforprediction.wordpress.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mathematicaforpredictionwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12813,7 +12813,7 @@ def fetch_matthenry(limit=15):
                 "https://matthenry.fyi/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] matthenry attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12848,7 +12848,7 @@ def fetch_matthiasott(limit=15):
                 "https://matthiasott.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] matthiasott attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12883,7 +12883,7 @@ def fetch_matttproud(limit=15):
                 "https://matttproud.com/blog/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] matttproud attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12918,7 +12918,7 @@ def fetch_mcfunley(limit=15):
                 "https://mcfunley.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mcfunley attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12953,7 +12953,7 @@ def fetch_medium(limit=15):
                 "https://medium.engineering/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] medium attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -12988,7 +12988,7 @@ def fetch_melanierichards(limit=15):
                 "https://melanie-richards.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] melanierichards attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13023,7 +13023,7 @@ def fetch_metaredux(limit=15):
                 "https://metaredux.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] metaredux attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13058,7 +13058,7 @@ def fetch_meyerweb(limit=15):
                 "https://meyerweb.com/eric/thoughts/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] meyerweb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13093,7 +13093,7 @@ def fetch_michaelscodingspot(limit=15):
                 "https://michaelscodingspot.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] michaelscodingspot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13128,7 +13128,7 @@ def fetch_mikelikesrobotsgithub(limit=15):
                 "https://mikelikesrobots.github.io/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mikelikesrobotsgithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13163,7 +13163,7 @@ def fetch_mikezornek(limit=15):
                 "https://mikezornek.com/posts/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mikezornek attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13198,7 +13198,7 @@ def fetch_mko(limit=15):
                 "https://mko.re/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mko attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13233,7 +13233,7 @@ def fetch_modernsql(limit=15):
                 "https://modern-sql.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] modernsql attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13268,7 +13268,7 @@ def fetch_motherduck(limit=15):
                 "https://motherduck.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] motherduck attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13303,7 +13303,7 @@ def fetch_muhammadraza(limit=15):
                 "https://muhammadraza.me/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] muhammadraza attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13338,7 +13338,7 @@ def fetch_mwl(limit=15):
                 "https://mwl.io/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mwl attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13373,7 +13373,7 @@ def fetch_mxb(limit=15):
                 "https://mxb.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mxb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13408,7 +13408,7 @@ def fetch_mxstbr(limit=15):
                 "https://mxstbr.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mxstbr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13443,7 +13443,7 @@ def fetch_nathanrooygithub(limit=15):
                 "https://nathanrooy.github.io/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nathanrooygithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13478,7 +13478,7 @@ def fetch_nazhamid(limit=15):
                 "https://nazhamid.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nazhamid attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13513,7 +13513,7 @@ def fetch_nedbatchelder(limit=15):
                 "https://nedbatchelder.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nedbatchelder attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13548,7 +13548,7 @@ def fetch_neo4j(limit=15):
                 "https://neo4j.com/developer-blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] neo4j attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13583,7 +13583,7 @@ def fetch_nerdy(limit=15):
                 "https://nerdy.dev/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nerdy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13618,7 +13618,7 @@ def fetch_neuviemeportegithub(limit=15):
                 "https://neuviemeporte.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] neuviemeportegithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13653,7 +13653,7 @@ def fetch_newrelic(limit=15):
                 "https://newrelic.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] newrelic attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13689,7 +13689,7 @@ def fetch_newsroomspotify(limit=15):
                 "https://newsroom.spotify.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] newsroomspotify attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13724,7 +13724,7 @@ def fetch_nickcraver(limit=15):
                 "https://nickcraver.com/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nickcraver attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13759,7 +13759,7 @@ def fetch_nicolasgallagher(limit=15):
                 "https://nicolasgallagher.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nicolasgallagher attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13794,7 +13794,7 @@ def fetch_noidea(limit=15):
                 "https://noidea.dog/blog?format=rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] noidea attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13829,7 +13829,7 @@ def fetch_notgull(limit=15):
                 "https://notgull.net/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] notgull attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13864,7 +13864,7 @@ def fetch_notlaura(limit=15):
                 "https://notlaura.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] notlaura attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13899,7 +13899,7 @@ def fetch_ntsstrzibny(limit=15):
                 "https://nts.strzibny.name/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ntsstrzibny attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13934,7 +13934,7 @@ def fetch_nullprogram(limit=15):
                 "https://nullprogram.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nullprogram attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -13969,7 +13969,7 @@ def fetch_opennytimes(limit=15):
                 "https://open.nytimes.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] opennytimes attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14004,7 +14004,7 @@ def fetch_openai(limit=15):
                 "https://openai.com/news/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] openai attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14039,7 +14039,7 @@ def fetch_openclaw(limit=15):
                 "https://openclaw.ai/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] openclaw attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14074,7 +14074,7 @@ def fetch_orlp(limit=15):
                 "https://orlp.net/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] orlp attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14109,7 +14109,7 @@ def fetch_panic(limit=15):
                 "https://panic.com/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] panic attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14144,7 +14144,7 @@ def fetch_parkermicro(limit=15):
                 "https://parker.micro.blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] parkermicro attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14179,7 +14179,7 @@ def fetch_paulstamatiou(limit=15):
                 "https://paulstamatiou.com/posts.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] paulstamatiou attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14214,7 +14214,7 @@ def fetch_pawelurbanek(limit=15):
                 "https://pawelurbanek.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pawelurbanek attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14249,7 +14249,7 @@ def fetch_perlhacks(limit=15):
                 "https://perlhacks.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] perlhacks attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14284,7 +14284,7 @@ def fetch_planetgnu(limit=15):
                 "https://planet.gnu.org/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] planetgnu attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14319,7 +14319,7 @@ def fetch_pmjones(limit=15):
                 "https://pmjones.io/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pmjones attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14354,7 +14354,7 @@ def fetch_pragprog(limit=15):
                 "https://pragprog.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pragprog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14389,7 +14389,7 @@ def fetch_pragtobwordpress(limit=15):
                 "https://pragtob.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pragtobwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14424,7 +14424,7 @@ def fetch_priver(limit=15):
                 "https://priver.dev/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] priver attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14459,7 +14459,7 @@ def fetch_projectf(limit=15):
                 "https://projectf.io/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] projectf attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14494,7 +14494,7 @@ def fetch_proton(limit=15):
                 "https://proton.me/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] proton attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14529,7 +14529,7 @@ def fetch_pugachev(limit=15):
                 "https://pugachev.io/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pugachev attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14564,7 +14564,7 @@ def fetch_pythonspeed(limit=15):
                 "https://pythonspeed.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pythonspeed attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14599,7 +14599,7 @@ def fetch_qsantos(limit=15):
                 "https://qsantos.fr/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] qsantos attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14634,7 +14634,7 @@ def fetch_rachelandrewco(limit=15):
                 "https://rachelandrew.co.uk/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rachelandrewco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14669,7 +14669,7 @@ def fetch_rachsmith(limit=15):
                 "https://rachsmith.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rachsmith attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14704,7 +14704,7 @@ def fetch_radumatei(limit=15):
                 "https://radu-matei.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] radumatei attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14739,7 +14739,7 @@ def fetch_rakuadvent(limit=15):
                 "https://raku-advent.blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rakuadvent attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14774,7 +14774,7 @@ def fetch_randomactsofarchitecture(limit=15):
                 "https://randomactsofarchitecture.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] randomactsofarchitecture attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14809,7 +14809,7 @@ def fetch_react(limit=15):
                 "https://react.dev/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] react attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14844,7 +14844,7 @@ def fetch_reaganray(limit=15):
                 "https://reaganray.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] reaganray attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14879,7 +14879,7 @@ def fetch_redditinc(limit=15):
                 "https://redditinc.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] redditinc attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14914,7 +14914,7 @@ def fetch_remysharp(limit=15):
                 "https://remysharp.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] remysharp attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14949,7 +14949,7 @@ def fetch_researchfb(limit=15):
                 "https://research.fb.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] researchfb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -14984,7 +14984,7 @@ def fetch_rknight(limit=15):
                 "https://rknight.me/subscribe/posts/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rknight attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15019,7 +15019,7 @@ def fetch_rmarcus(limit=15):
                 "https://rmarcus.info/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rmarcus attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15054,7 +15054,7 @@ def fetch_rmondello(limit=15):
                 "https://rmondello.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rmondello attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15089,7 +15089,7 @@ def fetch_rmurphey(limit=15):
                 "https://rmurphey.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rmurphey attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15124,7 +15124,7 @@ def fetch_roadtolarissa(limit=15):
                 "https://roadtolarissa.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] roadtolarissa attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15159,7 +15159,7 @@ def fetch_robertheaton(limit=15):
                 "https://robertheaton.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] robertheaton attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15194,7 +15194,7 @@ def fetch_rosenzweig(limit=15):
                 "https://rosenzweig.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rosenzweig attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15229,7 +15229,7 @@ def fetch_rubyonrails(limit=15):
                 "https://rubyonrails.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rubyonrails attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15264,7 +15264,7 @@ def fetch_rushter(limit=15):
                 "https://rushter.com/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rushter attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15299,7 +15299,7 @@ def fetch_samwooe(limit=15):
                 "https://samwooe.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] samwooe attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15334,7 +15334,7 @@ def fetch_scriptsdotchatwordpress(limit=15):
                 "https://scriptsdotchat.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] scriptsdotchatwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15369,7 +15369,7 @@ def fetch_seattledataguysubstack(limit=15):
                 "https://seattledataguy.substack.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] seattledataguysubstack attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15404,7 +15404,7 @@ def fetch_sebgnotessubstack(limit=15):
                 "https://sebgnotes.substack.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sebgnotessubstack attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15439,7 +15439,7 @@ def fetch_serokell(limit=15):
                 "https://serokell.io/blog.rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] serokell attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15474,7 +15474,7 @@ def fetch_sethmlarson(limit=15):
                 "https://sethmlarson.dev/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sethmlarson attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15509,7 +15509,7 @@ def fetch_shortdiv(limit=15):
                 "https://shortdiv.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] shortdiv attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15544,7 +15544,7 @@ def fetch_sidsite(limit=15):
                 "https://sidsite.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sidsite attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15579,7 +15579,7 @@ def fetch_signal(limit=15):
                 "https://signal.org/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] signal attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15614,7 +15614,7 @@ def fetch_sindresorhus(limit=15):
                 "https://sindresorhus.com/rss-apps.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sindresorhus attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15649,7 +15649,7 @@ def fetch_sizovs(limit=15):
                 "https://sizovs.net/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sizovs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15684,7 +15684,7 @@ def fetch_slottsoftwarearchitectblogspot(limit=15):
                 "https://slott-softwarearchitect.blogspot.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] slottsoftwarearchitectblogspot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15719,7 +15719,7 @@ def fetch_smallcultfollowing(limit=15):
                 "https://smallcultfollowing.com/babysteps/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] smallcultfollowing attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15754,7 +15754,7 @@ def fetch_smallsheds(limit=15):
                 "https://smallsheds.garden/blog/feed.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] smallsheds attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15789,7 +15789,7 @@ def fetch_snarky(limit=15):
                 "https://snarky.ca/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] snarky attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15824,7 +15824,7 @@ def fetch_sneak(limit=15):
                 "https://sneak.berlin/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sneak attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15859,7 +15859,7 @@ def fetch_snook(limit=15):
                 "https://snook.ca/posts/index.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] snook attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15894,7 +15894,7 @@ def fetch_socialclawhammer(limit=15):
                 "https://social.clawhammer.net/blog/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] socialclawhammer attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15929,7 +15929,7 @@ def fetch_sophiebits(limit=15):
                 "https://sophiebits.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sophiebits attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15964,7 +15964,7 @@ def fetch_spreadprivacy(limit=15):
                 "https://spreadprivacy.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] spreadprivacy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -15999,7 +15999,7 @@ def fetch_srcco(limit=15):
                 "https://srcco.de/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] srcco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16034,7 +16034,7 @@ def fetch_stackabuse(limit=15):
                 "https://stackabuse.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] stackabuse attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16069,7 +16069,7 @@ def fetch_staysaasy(limit=15):
                 "https://staysaasy.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] staysaasy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16104,7 +16104,7 @@ def fetch_steipete(limit=15):
                 "https://steipete.me/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] steipete attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16139,7 +16139,7 @@ def fetch_stephango(limit=15):
                 "https://stephango.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] stephango attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16174,7 +16174,7 @@ def fetch_stevemcconnell(limit=15):
                 "https://stevemcconnell.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] stevemcconnell attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16209,7 +16209,7 @@ def fetch_storybookjs(limit=15):
                 "https://storybook.js.org/blog/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] storybookjs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16244,7 +16244,7 @@ def fetch_switowski(limit=15):
                 "https://switowski.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] switowski attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16279,7 +16279,7 @@ def fetch_sysdig(limit=15):
                 "https://sysdig.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sysdig attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16314,7 +16314,7 @@ def fetch_systemdesign(limit=15):
                 "https://systemdesign.one/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] systemdesign attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16349,7 +16349,7 @@ def fetch_testguild(limit=15):
                 "https://testguild.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] testguild attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16384,7 +16384,7 @@ def fetch_theclouddevopslearningblog(limit=15):
                 "https://theclouddevopslearningblog.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] theclouddevopslearningblog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16419,7 +16419,7 @@ def fetch_thorstenball(limit=15):
                 "https://thorstenball.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thorstenball attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16454,7 +16454,7 @@ def fetch_thoughtbot(limit=15):
                 "https://thoughtbot.com/blog/web/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thoughtbot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16489,7 +16489,7 @@ def fetch_thume(limit=15):
                 "https://thume.ca/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thume attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16524,7 +16524,7 @@ def fetch_timkadlec(limit=15):
                 "https://timkadlec.com/remembers/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] timkadlec attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16559,7 +16559,7 @@ def fetch_timotijhof(limit=15):
                 "https://timotijhof.net/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] timotijhof attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16594,7 +16594,7 @@ def fetch_tinyprojects(limit=15):
                 "https://tinyprojects.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tinyprojects attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16629,7 +16629,7 @@ def fetch_trentwalton(limit=15):
                 "https://trentwalton.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] trentwalton attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16665,7 +16665,7 @@ def fetch_underjord(limit=15):
                 "https://underjord.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] underjord attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16700,7 +16700,7 @@ def fetch_unixdigest(limit=15):
                 "https://unixdigest.com/feed.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] unixdigest attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16735,7 +16735,7 @@ def fetch_upmostly(limit=15):
                 "https://upmostly.com/category/tutorials/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] upmostly attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16770,7 +16770,7 @@ def fetch_usetheindexluke(limit=15):
                 "https://use-the-index-luke.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] usetheindexluke attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16805,7 +16805,7 @@ def fetch_usesthis(limit=15):
                 "https://usesthis.com/feed.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] usesthis attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16840,7 +16840,7 @@ def fetch_v2ocaml(limit=15):
                 "https://v2.ocaml.org/planet.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] v2ocaml attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16875,7 +16875,7 @@ def fetch_valhead(limit=15):
                 "https://valhead.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] valhead attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16910,7 +16910,7 @@ def fetch_verraes(limit=15):
                 "https://verraes.net/feed.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] verraes attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16945,7 +16945,7 @@ def fetch_viralinstruction(limit=15):
                 "https://viralinstruction.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] viralinstruction attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -16980,7 +16980,7 @@ def fetch_vite(limit=15):
                 "https://vite.dev/blog.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] vite attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17015,7 +17015,7 @@ def fetch_voidzero(limit=15):
                 "https://voidzero.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] voidzero attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17050,7 +17050,7 @@ def fetch_wattenberger(limit=15):
                 "https://wattenberger.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] wattenberger attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17085,7 +17085,7 @@ def fetch_waxy(limit=15):
                 "https://waxy.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] waxy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17120,7 +17120,7 @@ def fetch_web3isgoinggreat(limit=15):
                 "https://web3isgoinggreat.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] web3isgoinggreat attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17155,7 +17155,7 @@ def fetch_webkit(limit=15):
                 "https://webkit.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] webkit attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17190,7 +17190,7 @@ def fetch_weblogrogueamoeba(limit=15):
                 "https://weblog.rogueamoeba.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] weblogrogueamoeba attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17225,7 +17225,7 @@ def fetch_welltyped(limit=15):
                 "https://well-typed.com/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] welltyped attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17260,7 +17260,7 @@ def fetch_worldhey(limit=15):
                 "https://world.hey.com/dhh/feed.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] worldhey attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17295,7 +17295,7 @@ def fetch_30secondsofcode(limit=15):
                 "https://www.30secondsofcode.org/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] 30secondsofcode attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17330,7 +17330,7 @@ def fetch_aaronpowell(limit=15):
                 "https://www.aaron-powell.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aaronpowell attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17365,7 +17365,7 @@ def fetch_aihero(limit=15):
                 "https://www.aihero.dev/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aihero attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17400,7 +17400,7 @@ def fetch_allthingsdistributed(limit=15):
                 "https://www.allthingsdistributed.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] allthingsdistributed attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17435,7 +17435,7 @@ def fetch_alwaystwisted(limit=15):
                 "https://www.alwaystwisted.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] alwaystwisted attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17470,7 +17470,7 @@ def fetch_apollographql(limit=15):
                 "https://www.apollographql.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] apollographql attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17505,7 +17505,7 @@ def fetch_apple(limit=15):
                 "https://www.apple.com/newsroom/rss-feed.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] apple attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17540,7 +17540,7 @@ def fetch_arresteddevops(limit=15):
                 "https://www.arresteddevops.com/episode/index.xml?",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] arresteddevops attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17575,7 +17575,7 @@ def fetch_askwinston(limit=15):
                 "https://www.askwinston.xyz/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] askwinston attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17610,7 +17610,7 @@ def fetch_benmorris(limit=15):
                 "https://www.ben-morris.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] benmorris attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17645,7 +17645,7 @@ def fetch_bitlog(limit=15):
                 "https://www.bitlog.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bitlog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17680,7 +17680,7 @@ def fetch_blogpythonlibrary(limit=15):
                 "https://www.blog.pythonlibrary.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogpythonlibrary attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17715,7 +17715,7 @@ def fetch_bram(limit=15):
                 "https://www.bram.us/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bram attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17750,7 +17750,7 @@ def fetch_caseyliss(limit=15):
                 "https://www.caseyliss.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] caseyliss attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17785,7 +17785,7 @@ def fetch_cnnr(limit=15):
                 "https://www.cnnr.me/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cnnr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17820,7 +17820,7 @@ def fetch_codingblocks(limit=15):
                 "https://www.codingblocks.net/feed/podcast/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codingblocks attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17855,7 +17855,7 @@ def fetch_codium(limit=15):
                 "https://www.codium.ai/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codium attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17890,7 +17890,7 @@ def fetch_computerenhance(limit=15):
                 "https://www.computerenhance.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] computerenhance attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17925,7 +17925,7 @@ def fetch_datomic(limit=15):
                 "https://www.datomic.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] datomic attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17960,7 +17960,7 @@ def fetch_davefarley(limit=15):
                 "https://www.davefarley.net/?feed=rss2",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] davefarley attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -17995,7 +17995,7 @@ def fetch_davidsmith(limit=15):
                 "https://www.david-smith.org/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] davidsmith attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18030,7 +18030,7 @@ def fetch_developertoarchitect(limit=15):
                 "https://www.developertoarchitect.com/lessons/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] developertoarchitect attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18065,7 +18065,7 @@ def fetch_dolthub(limit=15):
                 "https://www.dolthub.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dolthub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18100,7 +18100,7 @@ def fetch_dylanpaulus(limit=15):
                 "https://www.dylanpaulus.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dylanpaulus attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18135,7 +18135,7 @@ def fetch_eff(limit=15):
                 "https://www.eff.org/rss/updates.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] eff attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18170,7 +18170,7 @@ def fetch_enkisoftware(limit=15):
                 "https://www.enkisoftware.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] enkisoftware attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18205,7 +18205,7 @@ def fetch_epicweb(limit=15):
                 "https://www.epicweb.dev/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] epicweb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18240,7 +18240,7 @@ def fetch_erlangsolutions(limit=15):
                 "https://www.erlang-solutions.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] erlangsolutions attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18275,7 +18275,7 @@ def fetch_erlang(limit=15):
                 "https://www.erlang.org/news.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] erlang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18310,7 +18310,7 @@ def fetch_eviltester(limit=15):
                 "https://www.eviltester.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] eviltester attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18345,7 +18345,7 @@ def fetch_furia(limit=15):
                 "https://www.furia.com/feed.cgi",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] furia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18380,7 +18380,7 @@ def fetch_germanvelasco(limit=15):
                 "https://www.germanvelasco.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] germanvelasco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18415,7 +18415,7 @@ def fetch_hackingwithswift(limit=15):
                 "https://www.hackingwithswift.com/articles/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hackingwithswift attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18450,7 +18450,7 @@ def fetch_hashicorp(limit=15):
                 "https://www.hashicorp.com/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hashicorp attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18485,7 +18485,7 @@ def fetch_itsecurityguru(limit=15):
                 "https://www.itsecurityguru.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] itsecurityguru attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18520,7 +18520,7 @@ def fetch_jonmellman(limit=15):
                 "https://www.jonmellman.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jonmellman attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18555,7 +18555,7 @@ def fetch_joshuakgoldberg(limit=15):
                 "https://www.joshuakgoldberg.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] joshuakgoldberg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18590,7 +18590,7 @@ def fetch_joshwcomeau(limit=15):
                 "https://www.joshwcomeau.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] joshwcomeau attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18625,7 +18625,7 @@ def fetch_lastweekinaws(limit=15):
                 "https://www.lastweekinaws.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lastweekinaws attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18660,7 +18660,7 @@ def fetch_laurentluce(limit=15):
                 "https://www.laurentluce.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] laurentluce attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18695,7 +18695,7 @@ def fetch_lihaoyi(limit=15):
                 "https://www.lihaoyi.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lihaoyi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18730,7 +18730,7 @@ def fetch_lireo(limit=15):
                 "https://www.lireo.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lireo attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18765,7 +18765,7 @@ def fetch_mager(limit=15):
                 "https://www.mager.co/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mager attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18800,7 +18800,7 @@ def fetch_miriamsuzanne(limit=15):
                 "https://www.miriamsuzanne.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] miriamsuzanne attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18835,7 +18835,7 @@ def fetch_mitchellhanberg(limit=15):
                 "https://www.mitchellhanberg.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mitchellhanberg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18870,7 +18870,7 @@ def fetch_morling(limit=15):
                 "https://www.morling.dev/blog/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] morling attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18905,7 +18905,7 @@ def fetch_msreverseengineering(limit=15):
                 "https://www.msreverseengineering.com/blog?format=RSS",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] msreverseengineering attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18940,7 +18940,7 @@ def fetch_nytco(limit=15):
                 "https://www.nytco.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nytco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -18975,7 +18975,7 @@ def fetch_pantsbuild(limit=15):
                 "https://www.pantsbuild.org/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pantsbuild attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19010,7 +19010,7 @@ def fetch_platformer(limit=15):
                 "https://www.platformer.news/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] platformer attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19045,7 +19045,7 @@ def fetch_plex(limit=15):
                 "https://www.plex.tv/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] plex attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19080,7 +19080,7 @@ def fetch_raspberrypi(limit=15):
                 "https://www.raspberrypi.org/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] raspberrypi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19115,7 +19115,7 @@ def fetch_raymondcamden(limit=15):
                 "https://www.raymondcamden.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] raymondcamden attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19150,7 +19150,7 @@ def fetch_romainguy(limit=15):
                 "https://www.romainguy.dev/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] romainguy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19185,7 +19185,7 @@ def fetch_rubick(limit=15):
                 "https://www.rubick.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rubick attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19220,7 +19220,7 @@ def fetch_rubylang(limit=15):
                 "https://www.ruby-lang.org/en/feeds/news.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rubylang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19255,7 +19255,7 @@ def fetch_sandordargo(limit=15):
                 "https://www.sandordargo.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sandordargo attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19290,7 +19290,7 @@ def fetch_sarasoueidan(limit=15):
                 "https://www.sarasoueidan.com/blog/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sarasoueidan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19325,7 +19325,7 @@ def fetch_satisfice(limit=15):
                 "https://www.satisfice.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] satisfice attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19360,7 +19360,7 @@ def fetch_scarydba(limit=15):
                 "https://www.scarydba.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] scarydba attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19395,7 +19395,7 @@ def fetch_securityinbits(limit=15):
                 "https://www.securityinbits.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] securityinbits attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19430,7 +19430,7 @@ def fetch_shashankthakur(limit=15):
                 "https://www.shashankthakur.dev/feeds/posts/default?alt=rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] shashankthakur attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19465,7 +19465,7 @@ def fetch_smashingmagazine(limit=15):
                 "https://www.smashingmagazine.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] smashingmagazine attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19500,7 +19500,7 @@ def fetch_stefanjudis(limit=15):
                 "https://www.stefanjudis.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] stefanjudis attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19535,7 +19535,7 @@ def fetch_stephaniemorillo(limit=15):
                 "https://www.stephaniemorillo.co/blog-feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] stephaniemorillo attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19570,7 +19570,7 @@ def fetch_taniarascia(limit=15):
                 "https://www.taniarascia.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] taniarascia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19605,7 +19605,7 @@ def fetch_toni(limit=15):
                 "https://www.toni.li/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] toni attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19640,7 +19640,7 @@ def fetch_toptal(limit=15):
                 "https://www.toptal.com/blog.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] toptal attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19675,7 +19675,7 @@ def fetch_tweag(limit=15):
                 "https://www.tweag.io/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tweag attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19710,7 +19710,7 @@ def fetch_zachleat(limit=15):
                 "https://www.zachleat.com/web/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] zachleat attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19745,7 +19745,7 @@ def fetch_zeldman(limit=15):
                 "https://www.zeldman.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] zeldman attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19780,7 +19780,7 @@ def fetch_zhenghao(limit=15):
                 "https://www.zhenghao.io/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] zhenghao attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19815,7 +19815,7 @@ def fetch_zopatista(limit=15):
                 "https://www.zopatista.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] zopatista attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19850,7 +19850,7 @@ def fetch_xtdb(limit=15):
                 "https://xtdb.com/blog.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] xtdb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19886,7 +19886,7 @@ def fetch_a11ywinstumblr(limit=15):
                 "http://a11ywins.tumblr.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] a11ywinstumblr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19921,7 +19921,7 @@ def fetch_adblockplus(limit=15):
                 "http://adblockplus.org/atom/?section=blog",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] adblockplus attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19956,7 +19956,7 @@ def fetch_allthingssmitty(limit=15):
                 "http://allthingssmitty.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] allthingssmitty attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -19991,7 +19991,7 @@ def fetch_americanexpress(limit=15):
                 "http://americanexpress.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] americanexpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20026,7 +20026,7 @@ def fetch_annevankesteren(limit=15):
                 "http://annevankesteren.nl/feeds/weblog",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] annevankesteren attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20061,7 +20061,7 @@ def fetch_benediktmeurer(limit=15):
                 "http://benediktmeurer.de/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] benediktmeurer attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20096,7 +20096,7 @@ def fetch_benfrain(limit=15):
                 "http://benfrain.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] benfrain attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20131,7 +20131,7 @@ def fetch_billwang1990github(limit=15):
                 "http://billwang1990.github.io/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] billwang1990github attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20166,7 +20166,7 @@ def fetch_blogacolyer(limit=15):
                 "http://blog.acolyer.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogacolyer attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20201,7 +20201,7 @@ def fetch_blogarchive(limit=15):
                 "http://blog.archive.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogarchive attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20236,7 +20236,7 @@ def fetch_blogbloomca(limit=15):
                 "http://blog.bloomca.me/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogbloomca attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20271,7 +20271,7 @@ def fetch_blogcjgammon(limit=15):
                 "http://blog.cjgammon.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogcjgammon attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20306,7 +20306,7 @@ def fetch_blogcnbang(limit=15):
                 "http://blog.cnbang.net/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogcnbang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20341,7 +20341,7 @@ def fetch_blogcodepen(limit=15):
                 "http://blog.codepen.io/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogcodepen attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20376,7 +20376,7 @@ def fetch_blogcodingnow(limit=15):
                 "http://blog.codingnow.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogcodingnow attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20411,7 +20411,7 @@ def fetch_blogcyeam(limit=15):
                 "http://blog.cyeam.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogcyeam attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20446,7 +20446,7 @@ def fetch_blogdevtang(limit=15):
                 "http://blog.devtang.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogdevtang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20481,7 +20481,7 @@ def fetch_blogfarmostwood(limit=15):
                 "http://blog.farmostwood.net/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogfarmostwood attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20516,7 +20516,7 @@ def fetch_blogibireme(limit=15):
                 "http://blog.ibireme.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogibireme attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20551,7 +20551,7 @@ def fetch_blogjquery(limit=15):
                 "http://blog.jquery.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogjquery attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20586,7 +20586,7 @@ def fetch_bloglizardwrangler(limit=15):
                 "http://blog.lizardwrangler.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bloglizardwrangler attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20621,7 +20621,7 @@ def fetch_blogmgechev(limit=15):
                 "http://blog.mgechev.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogmgechev attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20656,7 +20656,7 @@ def fetch_blogmozilla(limit=15):
                 "http://blog.mozilla.com/futurereleases/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogmozilla attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20691,7 +20691,7 @@ def fetch_blogportswigger(limit=15):
                 "http://blog.portswigger.net/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogportswigger attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20726,7 +20726,7 @@ def fetch_blogreybango(limit=15):
                 "http://blog.reybango.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogreybango attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20761,7 +20761,7 @@ def fetch_blogsapegin(limit=15):
                 "http://blog.sapegin.me/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogsapegin attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20796,7 +20796,7 @@ def fetch_blogshakirm(limit=15):
                 "http://blog.shakirm.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogshakirm attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20831,7 +20831,7 @@ def fetch_blogsunnyxx(limit=15):
                 "http://blog.sunnyxx.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogsunnyxx attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20866,7 +20866,7 @@ def fetch_blogtojicode(limit=15):
                 "http://blog.tojicode.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogtojicode attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20901,7 +20901,7 @@ def fetch_blogunicode(limit=15):
                 "http://blog.unicode.org/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogunicode attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20936,7 +20936,7 @@ def fetch_blogwhatwg(limit=15):
                 "http://blog.whatwg.org/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogwhatwg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -20971,7 +20971,7 @@ def fetch_blogsbing(limit=15):
                 "http://blogs.bing.com/webmaster/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogsbing attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21006,7 +21006,7 @@ def fetch_blogsigalia(limit=15):
                 "http://blogs.igalia.com/jfernandez/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogsigalia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21041,7 +21041,7 @@ def fetch_calendarperfplanet(limit=15):
                 "http://calendar.perfplanet.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] calendarperfplanet attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21076,7 +21076,7 @@ def fetch_casatwy(limit=15):
                 "http://casatwy.com/feeds/all.atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] casatwy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21111,7 +21111,7 @@ def fetch_clagnut(limit=15):
                 "http://clagnut.com/feeds/fullposts.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] clagnut attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21146,7 +21146,7 @@ def fetch_codingitwrong(limit=15):
                 "http://codingitwrong.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codingitwrong attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21181,7 +21181,7 @@ def fetch_colobu(limit=15):
                 "http://colobu.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] colobu attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21216,7 +21216,7 @@ def fetch_component(limit=15):
                 "http://component.kitchen/feeds/blog.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] component attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21251,7 +21251,7 @@ def fetch_crisal(limit=15):
                 "http://crisal.io/words/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] crisal attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21286,7 +21286,7 @@ def fetch_cssanimation(limit=15):
                 "http://cssanimation.rocks/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cssanimation attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21321,7 +21321,7 @@ def fetch_cwilso(limit=15):
                 "http://cwilso.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cwilso attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21356,7 +21356,7 @@ def fetch_davidstutz(limit=15):
                 "http://davidstutz.de/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] davidstutz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21391,7 +21391,7 @@ def fetch_dbanotes(limit=15):
                 "http://dbanotes.net/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dbanotes attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21426,7 +21426,7 @@ def fetch_debugmode(limit=15):
                 "http://debugmode.net/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] debugmode attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21461,7 +21461,7 @@ def fetch_diarybraniecki(limit=15):
                 "http://diary.braniecki.net/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] diarybraniecki attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21496,7 +21496,7 @@ def fetch_dracosco(limit=15):
                 "http://dracos.co.uk/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dracosco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21531,7 +21531,7 @@ def fetch_emailisgood(limit=15):
                 "http://email-is-good.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] emailisgood attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21566,7 +21566,7 @@ def fetch_engwealthfront(limit=15):
                 "http://eng.wealthfront.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engwealthfront attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21601,7 +21601,7 @@ def fetch_erikrunyon(limit=15):
                 "http://erikrunyon.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] erikrunyon attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21636,7 +21636,7 @@ def fetch_eslint(limit=15):
                 "http://eslint.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] eslint attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21671,7 +21671,7 @@ def fetch_evanminto(limit=15):
                 "http://evanminto.com/feed/blog.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] evanminto attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21706,7 +21706,7 @@ def fetch_cnblogs(limit=15):
                 "http://feed.cnblogs.com/blog/u/23857/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cnblogs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21741,7 +21741,7 @@ def fetch_baymard(limit=15):
                 "http://feeds.baymard.com/baymard?_ga=1.110790726.2145183607.1414082693",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] baymard attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21776,7 +21776,7 @@ def fetch_dantup(limit=15):
                 "http://feeds.dantup.com/DanTup",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dantup attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21811,7 +21811,7 @@ def fetch_jamesmead(limit=15):
                 "http://feeds.jamesmead.org/floehopper-blog",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jamesmead attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21846,7 +21846,7 @@ def fetch_fengjian0106github(limit=15):
                 "http://fengjian0106.github.io/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fengjian0106github attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21881,7 +21881,7 @@ def fetch_fitzgeraldnick(limit=15):
                 "http://fitzgeraldnick.com/weblog/feeds/latest-atom/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fitzgeraldnick attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21916,7 +21916,7 @@ def fetch_florianrivoal(limit=15):
                 "http://florian.rivoal.net/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] florianrivoal attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21951,7 +21951,7 @@ def fetch_fredericwang(limit=15):
                 "http://frederic-wang.fr/feeds/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fredericwang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -21986,7 +21986,7 @@ def fetch_furbo(limit=15):
                 "http://furbo.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] furbo attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22021,7 +22021,7 @@ def fetch_girliemac(limit=15):
                 "http://girliemac.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] girliemac attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22056,7 +22056,7 @@ def fetch_glebbahmutov(limit=15):
                 "http://glebbahmutov.com/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] glebbahmutov attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22091,7 +22091,7 @@ def fetch_goodui(limit=15):
                 "http://goodui.org/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] goodui attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22126,7 +22126,7 @@ def fetch_googleonlinesecurityblogspot(limit=15):
                 "http://googleonlinesecurity.blogspot.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] googleonlinesecurityblogspot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22161,7 +22161,7 @@ def fetch_gregoryszorc(limit=15):
                 "http://gregoryszorc.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gregoryszorc attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22196,7 +22196,7 @@ def fetch_gtdstudy(limit=15):
                 "http://gtdstudy.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gtdstudy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22231,7 +22231,7 @@ def fetch_headsalon(limit=15):
                 "http://headsalon.org/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] headsalon attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22266,7 +22266,7 @@ def fetch_hop(limit=15):
                 "http://hop.ie/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hop attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22301,7 +22301,7 @@ def fetch_houssein(limit=15):
                 "http://houssein.me/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] houssein attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22336,7 +22336,7 @@ def fetch_huiris(limit=15):
                 "http://huiris.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] huiris attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22371,7 +22371,7 @@ def fetch_iiiyu(limit=15):
                 "http://iiiyu.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] iiiyu attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22406,7 +22406,7 @@ def fetch_imtx(limit=15):
                 "http://imtx.me/feed/latest/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] imtx attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22441,7 +22441,7 @@ def fetch_ipotato(limit=15):
                 "http://ipotato.me/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ipotato attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22476,7 +22476,7 @@ def fetch_jaejunyooblogspot(limit=15):
                 "http://jaejunyoo.blogspot.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jaejunyooblogspot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22511,7 +22511,7 @@ def fetch_javascripttumblr(limit=15):
                 "http://javascript.tumblr.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] javascripttumblr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22546,7 +22546,7 @@ def fetch_jolestar(limit=15):
                 "http://jolestar.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jolestar attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22581,7 +22581,7 @@ def fetch_justinfagnani(limit=15):
                 "http://justinfagnani.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] justinfagnani attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22616,7 +22616,7 @@ def fetch_keithclarkco(limit=15):
                 "http://keithclark.co.uk/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] keithclarkco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22651,7 +22651,7 @@ def fetch_keithjgrant(limit=15):
                 "http://keithjgrant.com/notes/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] keithjgrant attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22686,7 +22686,7 @@ def fetch_kgrz(limit=15):
                 "http://kgrz.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kgrz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22721,7 +22721,7 @@ def fetch_krasimirtsonev(limit=15):
                 "http://krasimirtsonev.com/blog/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] krasimirtsonev attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22756,7 +22756,7 @@ def fetch_lflegal(limit=15):
                 "http://lflegal.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lflegal attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22791,7 +22791,7 @@ def fetch_machinelearningmastery(limit=15):
                 "http://machinelearningmastery.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] machinelearningmastery attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22826,7 +22826,7 @@ def fetch_maketeaco(limit=15):
                 "http://maketea.co.uk/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] maketeaco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22861,7 +22861,7 @@ def fetch_manishearthgithub(limit=15):
                 "http://manishearth.github.io/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] manishearthgithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22896,7 +22896,7 @@ def fetch_masinterblogspot(limit=15):
                 "http://masinter.blogspot.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] masinterblogspot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22931,7 +22931,7 @@ def fetch_mathiasbynens(limit=15):
                 "http://mathiasbynens.be/notes.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mathiasbynens attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -22966,7 +22966,7 @@ def fetch_mednoter(limit=15):
                 "http://mednoter.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mednoter attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23001,7 +23001,7 @@ def fetch_meowni(limit=15):
                 "http://meowni.ca/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] meowni attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23036,7 +23036,7 @@ def fetch_michaelkuehnel(limit=15):
                 "http://michael-kuehnel.de/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] michaelkuehnel attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23071,7 +23071,7 @@ def fetch_michaelgooding(limit=15):
                 "http://michaelgooding.me/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] michaelgooding attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23106,7 +23106,7 @@ def fetch_mikepennisi(limit=15):
                 "http://mikepennisi.com/blog/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mikepennisi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23141,7 +23141,7 @@ def fetch_mozillagfxwordpress(limit=15):
                 "http://mozillagfx.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mozillagfxwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23176,7 +23176,7 @@ def fetch_mrale(limit=15):
                 "http://mrale.ph/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mrale attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23211,7 +23211,7 @@ def fetch_mschinggithub(limit=15):
                 "http://msching.github.io/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mschinggithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23246,7 +23246,7 @@ def fetch_neugierig(limit=15):
                 "http://neugierig.org/software/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] neugierig attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23281,7 +23281,7 @@ def fetch_newsmit(limit=15):
                 "http://news.mit.edu/rss/topic/artificial-intelligence2",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] newsmit attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23316,7 +23316,7 @@ def fetch_nlpfast(limit=15):
                 "http://nlp.fast.ai/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nlpfast attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23351,7 +23351,7 @@ def fetch_nolanlawson(limit=15):
                 "http://nolanlawson.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nolanlawson attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23386,7 +23386,7 @@ def fetch_noncombatant(limit=15):
                 "http://noncombatant.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] noncombatant attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23421,7 +23421,7 @@ def fetch_oddbird(limit=15):
                 "http://oddbird.net/feed.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] oddbird attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23456,7 +23456,7 @@ def fetch_onevcat(limit=15):
                 "http://onevcat.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] onevcat attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23491,7 +23491,7 @@ def fetch_phuu(limit=15):
                 "http://phuu.net/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] phuu attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23526,7 +23526,7 @@ def fetch_planetigalia(limit=15):
                 "http://planet.igalia.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] planetigalia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23561,7 +23561,7 @@ def fetch_poulpita(limit=15):
                 "http://poulpita.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] poulpita attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23596,7 +23596,7 @@ def fetch_proceedingsmlr(limit=15):
                 "http://proceedings.mlr.press//feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] proceedingsmlr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23631,7 +23631,7 @@ def fetch_raganwald(limit=15):
                 "http://raganwald.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] raganwald attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23666,7 +23666,7 @@ def fetch_rubenverborgh(limit=15):
                 "http://ruben.verborgh.org/blog/latest.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rubenverborgh attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23701,7 +23701,7 @@ def fetch_softwareas(limit=15):
                 "http://softwareas.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] softwareas attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23736,7 +23736,7 @@ def fetch_sookocheff(limit=15):
                 "http://sookocheff.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sookocheff attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23771,7 +23771,7 @@ def fetch_staltz(limit=15):
                 "http://staltz.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] staltz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23806,7 +23806,7 @@ def fetch_tbrown(limit=15):
                 "http://tbrown.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tbrown attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23841,7 +23841,7 @@ def fetch_techmeituan(limit=15):
                 "http://tech.meituan.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] techmeituan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23876,7 +23876,7 @@ def fetch_techblogwikimedia(limit=15):
                 "http://techblog.wikimedia.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] techblogwikimedia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23911,7 +23911,7 @@ def fetch_textslashplain(limit=15):
                 "http://textslashplain.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] textslashplain attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23946,7 +23946,7 @@ def fetch_thehistoryoftheweb(limit=15):
                 "http://thehistoryoftheweb.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thehistoryoftheweb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -23981,7 +23981,7 @@ def fetch_thewebivore(limit=15):
                 "http://thewebivore.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thewebivore attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24016,7 +24016,7 @@ def fetch_tiffanybbrown(limit=15):
                 "http://tiffanybbrown.com/feeds/all.atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tiffanybbrown attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24051,7 +24051,7 @@ def fetch_tjvantoll(limit=15):
                 "http://tjvantoll.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tjvantoll attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24086,7 +24086,7 @@ def fetch_tobiasahlin(limit=15):
                 "http://tobiasahlin.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tobiasahlin attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24121,7 +24121,7 @@ def fetch_tylergaw(limit=15):
                 "http://tylergaw.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tylergaw attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24156,7 +24156,7 @@ def fetch_uncaughtreferenceerror(limit=15):
                 "http://uncaughtreferenceerror.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] uncaughtreferenceerror attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24191,7 +24191,7 @@ def fetch_unsearcher(limit=15):
                 "http://unsearcher.org/en/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] unsearcher attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24226,7 +24226,7 @@ def fetch_w3eleqtriq(limit=15):
                 "http://w3.eleqtriq.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] w3eleqtriq attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24261,7 +24261,7 @@ def fetch_webaim(limit=15):
                 "http://webaim.org/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] webaim attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24296,7 +24296,7 @@ def fetch_weiwuhui(limit=15):
                 "http://weiwuhui.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] weiwuhui attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24331,7 +24331,7 @@ def fetch_worklisk(limit=15):
                 "http://work.lisk.in/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] worklisk attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24366,7 +24366,7 @@ def fetch_a11ymatters(limit=15):
                 "http://www.a11ymatters.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] a11ymatters attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24401,7 +24401,7 @@ def fetch_aimeemarieknight(limit=15):
                 "http://www.aimeemarieknight.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aimeemarieknight attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24436,7 +24436,7 @@ def fetch_alexkras(limit=15):
                 "http://www.alexkras.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] alexkras attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24471,7 +24471,7 @@ def fetch_bimuyu(limit=15):
                 "http://www.bimuyu.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bimuyu attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24506,7 +24506,7 @@ def fetch_clicktorelease(limit=15):
                 "http://www.clicktorelease.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] clicktorelease attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24541,7 +24541,7 @@ def fetch_coderyi(limit=15):
                 "http://www.coderyi.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] coderyi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24576,7 +24576,7 @@ def fetch_cppblog(limit=15):
                 "http://www.cppblog.com/sunicdavy/rss.aspx",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cppblog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24611,7 +24611,7 @@ def fetch_darice(limit=15):
                 "http://www.darice.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] darice attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24646,7 +24646,7 @@ def fetch_deque(limit=15):
                 "http://www.deque.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] deque attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24681,7 +24681,7 @@ def fetch_erahm(limit=15):
                 "http://www.erahm.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] erahm attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24716,7 +24716,7 @@ def fetch_ftium4(limit=15):
                 "http://www.ftium4.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ftium4 attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24751,7 +24751,7 @@ def fetch_gijsk(limit=15):
                 "http://www.gijsk.com/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gijsk attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24786,7 +24786,7 @@ def fetch_guardianco(limit=15):
                 "http://www.guardian.co.uk/info/developer-blog/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] guardianco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24821,7 +24821,7 @@ def fetch_holovaty(limit=15):
                 "http://www.holovaty.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] holovaty attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24856,7 +24856,7 @@ def fetch_huangjiwei(limit=15):
                 "http://www.huangjiwei.com/blog/?feed=rss2",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] huangjiwei attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24891,7 +24891,7 @@ def fetch_ianbicking(limit=15):
                 "http://www.ianbicking.org/feeds/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ianbicking attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24926,7 +24926,7 @@ def fetch_ideobook(limit=15):
                 "http://www.ideobook.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ideobook attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24961,7 +24961,7 @@ def fetch_ietf(limit=15):
                 "http://www.ietf.org/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ietf attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -24996,7 +24996,7 @@ def fetch_imperialviolet(limit=15):
                 "http://www.imperialviolet.org/iv-rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] imperialviolet attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25031,7 +25031,7 @@ def fetch_jefftk(limit=15):
                 "http://www.jefftk.com/news.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jefftk attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25066,7 +25066,7 @@ def fetch_kirupa(limit=15):
                 "http://www.kirupa.com/modular/kirupa.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kirupa attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25101,7 +25101,7 @@ def fetch_kryogenix(limit=15):
                 "http://www.kryogenix.org/days/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kryogenix attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25136,7 +25136,7 @@ def fetch_mattzeunert(limit=15):
                 "http://www.mattzeunert.com/tech.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mattzeunert attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25171,7 +25171,7 @@ def fetch_miragecraft(limit=15):
                 "http://www.miragecraft.com/feed/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] miragecraft attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25206,7 +25206,7 @@ def fetch_mnot(limit=15):
                 "http://www.mnot.net/blog/index.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mnot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25241,7 +25241,7 @@ def fetch_netmeister(limit=15):
                 "http://www.netmeister.org/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] netmeister attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25276,7 +25276,7 @@ def fetch_opera(limit=15):
                 "http://www.opera.com/blogs/mobile/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] opera attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25311,7 +25311,7 @@ def fetch_otsukare(limit=15):
                 "http://www.otsukare.info/feeds/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] otsukare attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25346,7 +25346,7 @@ def fetch_peterbe(limit=15):
                 "http://www.peterbe.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] peterbe attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25381,7 +25381,7 @@ def fetch_peterkroener(limit=15):
                 "http://www.peterkroener.de/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] peterkroener attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25416,7 +25416,7 @@ def fetch_potaroo(limit=15):
                 "http://www.potaroo.net/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] potaroo attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25451,7 +25451,7 @@ def fetch_quirksmode(limit=15):
                 "http://www.quirksmode.org/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] quirksmode attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25486,7 +25486,7 @@ def fetch_scottohara(limit=15):
                 "http://www.scottohara.me/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] scottohara attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25521,7 +25521,7 @@ def fetch_sjoerdlangkemper(limit=15):
                 "http://www.sjoerdlangkemper.nl/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sjoerdlangkemper attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25556,7 +25556,7 @@ def fetch_soerenhentzschel(limit=15):
                 "http://www.soeren-hentzschel.at/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] soerenhentzschel attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25591,7 +25591,7 @@ def fetch_torgo(limit=15):
                 "http://www.torgo.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] torgo attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25626,7 +25626,7 @@ def fetch_useragentman(limit=15):
                 "http://www.useragentman.com/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] useragentman attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25661,7 +25661,7 @@ def fetch_wangpei(limit=15):
                 "http://www.wangpei.net/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] wangpei attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25696,7 +25696,7 @@ def fetch_webaxe(limit=15):
                 "http://www.webaxe.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] webaxe attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25731,7 +25731,7 @@ def fetch_webrtchacks(limit=15):
                 "http://www.webrtchacks.com/?feed=atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] webrtchacks attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25766,7 +25766,7 @@ def fetch_wirfsbrock(limit=15):
                 "http://www.wirfs-brock.com/allen/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] wirfsbrock attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25801,7 +25801,7 @@ def fetch_xanthir(limit=15):
                 "http://www.xanthir.com/blog/atom/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] xanthir attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25836,7 +25836,7 @@ def fetch_zeichenschatz(limit=15):
                 "http://www.zeichenschatz.net/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] zeichenschatz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25871,7 +25871,7 @@ def fetch_zmonster(limit=15):
                 "http://www.zmonster.me/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] zmonster attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25906,7 +25906,7 @@ def fetch_yangqinyuan(limit=15):
                 "http://yangqinyuan.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] yangqinyuan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25941,7 +25941,7 @@ def fetch_yehudakatz(limit=15):
                 "http://yehudakatz.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] yehudakatz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -25976,7 +25976,7 @@ def fetch_yulingtianxia(limit=15):
                 "http://yulingtianxia.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] yulingtianxia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26011,7 +26011,7 @@ def fetch_12daysofweb(limit=15):
                 "https://12daysofweb.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] 12daysofweb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26046,7 +26046,7 @@ def fetch_3perf(limit=15):
                 "https://3perf.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] 3perf attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26081,7 +26081,7 @@ def fetch_aarontgrogg(limit=15):
                 "https://aarontgrogg.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aarontgrogg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26116,7 +26116,7 @@ def fetch_accessabilly(limit=15):
                 "https://accessabilly.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] accessabilly attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26151,7 +26151,7 @@ def fetch_accessibilitybloggov(limit=15):
                 "https://accessibility.blog.gov.uk/feed/atom/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] accessibilitybloggov attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26186,7 +26186,7 @@ def fetch_accessibledreamshome(limit=15):
                 "https://accessibledreams.home.blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] accessibledreamshome attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26221,7 +26221,7 @@ def fetch_adamlynch(limit=15):
                 "https://adamlynch.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] adamlynch attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26256,7 +26256,7 @@ def fetch_adamsilver(limit=15):
                 "https://adamsilver.io/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] adamsilver attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26291,7 +26291,7 @@ def fetch_adamwathan(limit=15):
                 "https://adamwathan.me/rss/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] adamwathan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26326,7 +26326,7 @@ def fetch_aframe(limit=15):
                 "https://aframe.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aframe attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26361,7 +26361,7 @@ def fetch_ahrefs(limit=15):
                 "https://ahrefs.com/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ahrefs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26396,7 +26396,7 @@ def fetch_aiweirdness(limit=15):
                 "https://aiweirdness.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aiweirdness attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26431,7 +26431,7 @@ def fetch_alastairc(limit=15):
                 "https://alastairc.uk/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] alastairc attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26466,7 +26466,7 @@ def fetch_alex(limit=15):
                 "https://alex.party/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] alex attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26501,7 +26501,7 @@ def fetch_alexanderell(limit=15):
                 "https://alexanderell.is/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] alexanderell attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26536,7 +26536,7 @@ def fetch_alexlakatos(limit=15):
                 "https://alexlakatos.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] alexlakatos attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26571,7 +26571,7 @@ def fetch_alexplescan(limit=15):
                 "https://alexplescan.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] alexplescan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26606,7 +26606,7 @@ def fetch_alexsci(limit=15):
                 "https://alexsci.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] alexsci attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26641,7 +26641,7 @@ def fetch_alicepagesigalia(limit=15):
                 "https://alice.pages.igalia.com/blog/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] alicepagesigalia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26676,7 +26676,7 @@ def fetch_alvaromontoro(limit=15):
                 "https://alvaromontoro.com/feed.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] alvaromontoro attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26711,7 +26711,7 @@ def fetch_amberwilsonco(limit=15):
                 "https://amberwilson.co.uk/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] amberwilsonco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26746,7 +26746,7 @@ def fetch_amphtmlwordpress(limit=15):
                 "https://amphtml.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] amphtmlwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26781,7 +26781,7 @@ def fetch_anderegg(limit=15):
                 "https://anderegg.ca/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] anderegg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26816,7 +26816,7 @@ def fetch_andybellco(limit=15):
                 "https://andy-bell.co.uk/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] andybellco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26851,7 +26851,7 @@ def fetch_ar(limit=15):
                 "https://ar.al/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ar attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26886,7 +26886,7 @@ def fetch_ariya(limit=15):
                 "https://ariya.io/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ariya attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26921,7 +26921,7 @@ def fetch_armin(limit=15):
                 "https://armin.dev/blog/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] armin attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26956,7 +26956,7 @@ def fetch_ashleemboyer(limit=15):
                 "https://ashleemboyer.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ashleemboyer attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -26991,7 +26991,7 @@ def fetch_austingil(limit=15):
                 "https://austingil.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] austingil attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27026,7 +27026,7 @@ def fetch_axesslab(limit=15):
                 "https://axesslab.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] axesslab attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27061,7 +27061,7 @@ def fetch_babeljs(limit=15):
                 "https://babeljs.io/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] babeljs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27096,7 +27096,7 @@ def fetch_bairberkeley(limit=15):
                 "https://bair.berkeley.edu/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bairberkeley attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27131,7 +27131,7 @@ def fetch_bandarra(limit=15):
                 "https://bandarra.me/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bandarra attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27166,7 +27166,7 @@ def fetch_becominghuman(limit=15):
                 "https://becominghuman.ai/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] becominghuman attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27201,7 +27201,7 @@ def fetch_bendyworks(limit=15):
                 "https://bendyworks.com/feed/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bendyworks attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27236,7 +27236,7 @@ def fetch_benhoyt(limit=15):
                 "https://benhoyt.com/writings/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] benhoyt attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27271,7 +27271,7 @@ def fetch_benmccormick(limit=15):
                 "https://benmccormick.org/categories/article/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] benmccormick attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27306,7 +27306,7 @@ def fetch_benmyers(limit=15):
                 "https://benmyers.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] benmyers attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27341,7 +27341,7 @@ def fetch_bentojs(limit=15):
                 "https://bentojs.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bentojs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27376,7 +27376,7 @@ def fetch_berjon(limit=15):
                 "https://berjon.com/feed.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] berjon attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27411,7 +27411,7 @@ def fetch_birtles(limit=15):
                 "https://birtles.blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] birtles attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27446,7 +27446,7 @@ def fetch_bkardell(limit=15):
                 "https://bkardell.com/blog/feed.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bkardell attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27481,7 +27481,7 @@ def fetch_blanboom(limit=15):
                 "https://blanboom.org/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blanboom attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27516,7 +27516,7 @@ def fetch_blobfolio(limit=15):
                 "https://blobfolio.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blobfolio attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27551,7 +27551,7 @@ def fetch_blogalmaer(limit=15):
                 "https://blog.almaer.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogalmaer attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27586,7 +27586,7 @@ def fetch_blogcarlmjohnson(limit=15):
                 "https://blog.carlmjohnson.net/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogcarlmjohnson attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27621,7 +27621,7 @@ def fetch_blogchriszacharias(limit=15):
                 "https://blog.chriszacharias.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogchriszacharias attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27656,7 +27656,7 @@ def fetch_blogcryptographyengineering(limit=15):
                 "https://blog.cryptographyengineering.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogcryptographyengineering attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27691,7 +27691,7 @@ def fetch_blogemberjs(limit=15):
                 "https://blog.emberjs.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogemberjs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27726,7 +27726,7 @@ def fetch_blogerratasec(limit=15):
                 "https://blog.erratasec.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogerratasec attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27761,7 +27761,7 @@ def fetch_blogfirsov(limit=15):
                 "https://blog.firsov.net/feeds/posts/default?alt=rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogfirsov attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27796,7 +27796,7 @@ def fetch_blogforecho(limit=15):
                 "https://blog.forecho.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogforecho attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27831,7 +27831,7 @@ def fetch_blogfrankmtaylor(limit=15):
                 "https://blog.frankmtaylor.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogfrankmtaylor attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27866,7 +27866,7 @@ def fetch_bloggreenroots(limit=15):
                 "https://blog.greenroots.info/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bloggreenroots attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27901,7 +27901,7 @@ def fetch_bloghboeck(limit=15):
                 "https://blog.hboeck.de/feeds/index.rss2",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bloghboeck attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27936,7 +27936,7 @@ def fetch_blogionicframework(limit=15):
                 "https://blog.ionicframework.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogionicframework attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -27971,7 +27971,7 @@ def fetch_blogjimnielsen(limit=15):
                 "https://blog.jim-nielsen.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogjimnielsen attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28006,7 +28006,7 @@ def fetch_blogjoinmastodon(limit=15):
                 "https://blog.joinmastodon.org/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogjoinmastodon attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28041,7 +28041,7 @@ def fetch_blogjse(limit=15):
                 "https://blog.jse.li/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogjse attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28076,7 +28076,7 @@ def fetch_blogkizu(limit=15):
                 "https://blog.kizu.dev/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogkizu attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28111,7 +28111,7 @@ def fetch_bloglilydjwg(limit=15):
                 "https://blog.lilydjwg.me/posts.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bloglilydjwg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28146,7 +28146,7 @@ def fetch_bloglukaszolejnik(limit=15):
                 "https://blog.lukaszolejnik.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bloglukaszolejnik attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28181,7 +28181,7 @@ def fetch_blogmaximeheckel(limit=15):
                 "https://blog.maximeheckel.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogmaximeheckel attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28216,7 +28216,7 @@ def fetch_blogmayank(limit=15):
                 "https://blog.mayank.co/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogmayank attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28251,7 +28251,7 @@ def fetch_blognem(limit=15):
                 "https://blog.nem.ec/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blognem attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28286,7 +28286,7 @@ def fetch_blognightlymozilla(limit=15):
                 "https://blog.nightly.mozilla.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blognightlymozilla attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28321,7 +28321,7 @@ def fetch_blogomaralshaker(limit=15):
                 "https://blog.omaralshaker.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogomaralshaker attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28356,7 +28356,7 @@ def fetch_blogouorz(limit=15):
                 "https://blog.ouorz.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogouorz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28391,7 +28391,7 @@ def fetch_blogpaul(limit=15):
                 "https://blog.paul.cx/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogpaul attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28426,7 +28426,7 @@ def fetch_blogpope(limit=15):
                 "https://blog.pope.tech/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogpope attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28461,7 +28461,7 @@ def fetch_blogpwabuilder(limit=15):
                 "https://blog.pwabuilder.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogpwabuilder attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28496,7 +28496,7 @@ def fetch_blogricardofilipe(limit=15):
                 "https://blog.ricardofilipe.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogricardofilipe attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28531,7 +28531,7 @@ def fetch_blogsamuelmaddock(limit=15):
                 "https://blog.samuelmaddock.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogsamuelmaddock attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28566,7 +28566,7 @@ def fetch_blogshalvah(limit=15):
                 "https://blog.shalvah.me/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogshalvah attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28601,7 +28601,7 @@ def fetch_blogshuiba(limit=15):
                 "https://blog.shuiba.co/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogshuiba attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28636,7 +28636,7 @@ def fetch_blogsilverorange(limit=15):
                 "https://blog.silverorange.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogsilverorange attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28671,7 +28671,7 @@ def fetch_blogstackblitz(limit=15):
                 "https://blog.stackblitz.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogstackblitz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28706,7 +28706,7 @@ def fetch_blogstephaniestimac(limit=15):
                 "https://blog.stephaniestimac.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogstephaniestimac attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28741,7 +28741,7 @@ def fetch_blogtomayac(limit=15):
                 "https://blog.tomayac.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogtomayac attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28776,7 +28776,7 @@ def fetch_blogtorproject(limit=15):
                 "https://blog.torproject.org/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogtorproject attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28811,7 +28811,7 @@ def fetch_blogyoav(limit=15):
                 "https://blog.yoav.ws/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogyoav attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28846,7 +28846,7 @@ def fetch_blogzgp(limit=15):
                 "https://blog.zgp.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogzgp attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28881,7 +28881,7 @@ def fetch_blogzoomquiet(limit=15):
                 "https://blog.zoomquiet.io/feeds/all.atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogzoomquiet attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28916,7 +28916,7 @@ def fetch_blogsharvard(limit=15):
                 "https://blogs.harvard.edu/doc/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogsharvard attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28951,7 +28951,7 @@ def fetch_blogsopera(limit=15):
                 "https://blogs.opera.com/news/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogsopera attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -28986,7 +28986,7 @@ def fetch_blogswindows(limit=15):
                 "https://blogs.windows.com/msedgedev/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogswindows attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29021,7 +29021,7 @@ def fetch_borisschapira(limit=15):
                 "https://boris.schapira.dev/en/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] borisschapira attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29056,7 +29056,7 @@ def fetch_bottossongithub(limit=15):
                 "https://bottosson.github.io/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bottossongithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29091,7 +29091,7 @@ def fetch_brave(limit=15):
                 "https://brave.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] brave attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29126,7 +29126,7 @@ def fetch_bryanlrobinson(limit=15):
                 "https://bryanlrobinson.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bryanlrobinson attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29161,7 +29161,7 @@ def fetch_btxx(limit=15):
                 "https://btxx.org/index.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] btxx attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29196,7 +29196,7 @@ def fetch_calibreapp(limit=15):
                 "https://calibreapp.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] calibreapp attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29231,7 +29231,7 @@ def fetch_carneydevelopitwordpress(limit=15):
                 "https://carneydevelopit.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] carneydevelopitwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29266,7 +29266,7 @@ def fetch_catalin(limit=15):
                 "https://catalin.red/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] catalin attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29301,7 +29301,7 @@ def fetch_catcoding(limit=15):
                 "https://catcoding.me/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] catcoding attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29336,7 +29336,7 @@ def fetch_cathyduttonco(limit=15):
                 "https://cathydutton.co.uk/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cathyduttonco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29371,7 +29371,7 @@ def fetch_catskull(limit=15):
                 "https://catskull.net/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] catskull attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29406,7 +29406,7 @@ def fetch_chanindgithub(limit=15):
                 "https://chanind.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] chanindgithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29441,7 +29441,7 @@ def fetch_charlesharri(limit=15):
                 "https://charlesharri.es/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] charlesharri attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29476,7 +29476,7 @@ def fetch_charlottedann(limit=15):
                 "https://charlottedann.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] charlottedann attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29511,7 +29511,7 @@ def fetch_chipcullen(limit=15):
                 "https://chipcullen.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] chipcullen attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29546,7 +29546,7 @@ def fetch_chrisburnell(limit=15):
                 "https://chrisburnell.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] chrisburnell attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29581,7 +29581,7 @@ def fetch_chriskirknielsen(limit=15):
                 "https://chriskirknielsen.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] chriskirknielsen attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29616,7 +29616,7 @@ def fetch_chrislachance(limit=15):
                 "https://chrislachance.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] chrislachance attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29651,7 +29651,7 @@ def fetch_chrisruppel(limit=15):
                 "https://chrisruppel.com/blog.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] chrisruppel attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29686,7 +29686,7 @@ def fetch_chriszheng(limit=15):
                 "https://chriszheng.science/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] chriszheng attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29721,7 +29721,7 @@ def fetch_chuttenblogwordpress(limit=15):
                 "https://chuttenblog.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] chuttenblogwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29756,7 +29756,7 @@ def fetch_clarkio(limit=15):
                 "https://clarkio.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] clarkio attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29791,7 +29791,7 @@ def fetch_cloudfour(limit=15):
                 "https://cloudfour.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cloudfour attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29826,7 +29826,7 @@ def fetch_codesgo(limit=15):
                 "https://code.sgo.to/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codesgo attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29861,7 +29861,7 @@ def fetch_codersblock(limit=15):
                 "https://codersblock.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codersblock attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29896,7 +29896,7 @@ def fetch_coryrylan(limit=15):
                 "https://coryrylan.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] coryrylan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29931,7 +29931,7 @@ def fetch_coywolf(limit=15):
                 "https://coywolf.pro/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] coywolf attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -29966,7 +29966,7 @@ def fetch_cpojer(limit=15):
                 "https://cpojer.net/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cpojer attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30001,7 +30001,7 @@ def fetch_craftcms(limit=15):
                 "https://craftcms.com/accessibility.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] craftcms attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30036,7 +30036,7 @@ def fetch_cri(limit=15):
                 "https://cri.dev/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cri attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30071,7 +30071,7 @@ def fetch_crinkles(limit=15):
                 "https://crinkles.dev/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] crinkles attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30106,7 +30106,7 @@ def fetch_crossoverjie(limit=15):
                 "https://crossoverjie.top/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] crossoverjie attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30141,7 +30141,7 @@ def fetch_cssarticles(limit=15):
                 "https://css-articles.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cssarticles attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30176,7 +30176,7 @@ def fetch_cssauditors(limit=15):
                 "https://css-auditors.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cssauditors attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30211,7 +30211,7 @@ def fetch_csstip(limit=15):
                 "https://css-tip.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] csstip attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30246,7 +30246,7 @@ def fetch_cssbattle(limit=15):
                 "https://cssbattle.dev/blog/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cssbattle attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30281,7 +30281,7 @@ def fetch_csshell(limit=15):
                 "https://csshell.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] csshell attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30316,7 +30316,7 @@ def fetch_cunderwood(limit=15):
                 "https://cunderwood.dev/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cunderwood attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30351,7 +30351,7 @@ def fetch_daimajia(limit=15):
                 "https://daimajia.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] daimajia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30386,7 +30386,7 @@ def fetch_danabyerly(limit=15):
                 "https://danabyerly.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] danabyerly attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30421,7 +30421,7 @@ def fetch_danburzo(limit=15):
                 "https://danburzo.ro/posts.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] danburzo attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30456,7 +30456,7 @@ def fetch_daniel(limit=15):
                 "https://daniel.do/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] daniel attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30491,7 +30491,7 @@ def fetch_danieltakeshigithub(limit=15):
                 "https://danieltakeshi.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] danieltakeshigithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30526,7 +30526,7 @@ def fetch_darekkay(limit=15):
                 "https://darekkay.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] darekkay attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30561,7 +30561,7 @@ def fetch_darker(limit=15):
                 "https://darker.ink/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] darker attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30596,7 +30596,7 @@ def fetch_daveceddia(limit=15):
                 "https://daveceddia.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] daveceddia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30631,7 +30631,7 @@ def fetch_davidflanagan(limit=15):
                 "https://davidflanagan.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] davidflanagan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30666,7 +30666,7 @@ def fetch_dbaron(limit=15):
                 "https://dbaron.org/log/atom-feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dbaron attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30701,7 +30701,7 @@ def fetch_dbushell(limit=15):
                 "https://dbushell.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dbushell attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30736,7 +30736,7 @@ def fetch_defensivecss(limit=15):
                 "https://defensivecss.dev/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] defensivecss attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30771,7 +30771,7 @@ def fetch_deno(limit=15):
                 "https://deno.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] deno attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30806,7 +30806,7 @@ def fetch_designnotesbloggov(limit=15):
                 "https://designnotes.blog.gov.uk/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] designnotesbloggov attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30841,7 +30841,7 @@ def fetch_developermozilla(limit=15):
                 "https://developer.mozilla.org/en-US/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] developermozilla attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30876,7 +30876,7 @@ def fetch_developerokta(limit=15):
                 "https://developer.okta.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] developerokta attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30911,7 +30911,7 @@ def fetch_developerwordpress(limit=15):
                 "https://developer.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] developerwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30946,7 +30946,7 @@ def fetch_devyarns(limit=15):
                 "https://devyarns.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] devyarns attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -30981,7 +30981,7 @@ def fetch_dillionmegida(limit=15):
                 "https://dillionmegida.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dillionmegida attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31016,7 +31016,7 @@ def fetch_distill(limit=15):
                 "https://distill.pub/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] distill attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31051,7 +31051,7 @@ def fetch_dmitripavlutin(limit=15):
                 "https://dmitripavlutin.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dmitripavlutin attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31086,7 +31086,7 @@ def fetch_dodov(limit=15):
                 "https://dodov.dev/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dodov attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31121,7 +31121,7 @@ def fetch_doyj(limit=15):
                 "https://doyj.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] doyj attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31156,7 +31156,7 @@ def fetch_draveness(limit=15):
                 "https://draveness.me/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] draveness attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31191,7 +31191,7 @@ def fetch_drublic(limit=15):
                 "https://drublic.de/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] drublic attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31226,7 +31226,7 @@ def fetch_dtransposedgithub(limit=15):
                 "https://dtransposed.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dtransposedgithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31261,7 +31261,7 @@ def fetch_du101(limit=15):
                 "https://du.101.camp/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] du101 attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31296,7 +31296,7 @@ def fetch_dutchcelt(limit=15):
                 "https://dutchcelt.nl/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dutchcelt attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31331,7 +31331,7 @@ def fetch_dzhavatgithub(limit=15):
                 "https://dzhavat.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dzhavatgithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31366,7 +31366,7 @@ def fetch_easonyang(limit=15):
                 "https://easonyang.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] easonyang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31401,7 +31401,7 @@ def fetch_ecmascriptdailygithub(limit=15):
                 "https://ecmascript-daily.github.io/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ecmascriptdailygithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31436,7 +31436,7 @@ def fetch_educatedguesswork(limit=15):
                 "https://educatedguesswork.org/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] educatedguesswork attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31471,7 +31471,7 @@ def fetch_elisehe(limit=15):
                 "https://elisehe.in/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] elisehe attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31506,7 +31506,7 @@ def fetch_emilymstark(limit=15):
                 "https://emilymstark.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] emilymstark attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31541,7 +31541,7 @@ def fetch_emnudge(limit=15):
                 "https://emnudge.dev/blog.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] emnudge attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31576,7 +31576,7 @@ def fetch_endtimes(limit=15):
                 "https://endtimes.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] endtimes attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31611,7 +31611,7 @@ def fetch_engineeringq42(limit=15):
                 "https://engineering.q42.nl/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineeringq42 attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31646,7 +31646,7 @@ def fetch_ericbidelman(limit=15):
                 "https://ericbidelman.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ericbidelman attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31681,7 +31681,7 @@ def fetch_ericportis(limit=15):
                 "https://ericportis.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ericportis attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31716,7 +31716,7 @@ def fetch_ethanhuang13substack(limit=15):
                 "https://ethanhuang13.substack.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ethanhuang13substack attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31751,7 +31751,7 @@ def fetch_evertpot(limit=15):
                 "https://evertpot.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] evertpot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31786,7 +31786,7 @@ def fetch_everylayout(limit=15):
                 "https://every-layout.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] everylayout attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31821,7 +31821,7 @@ def fetch_evilmartians(limit=15):
                 "https://evilmartians.com/chronicles.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] evilmartians attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31856,7 +31856,7 @@ def fetch_expensive(limit=15):
                 "https://expensive.toys/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] expensive attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31891,7 +31891,7 @@ def fetch_falkus(limit=15):
                 "https://falkus.co/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] falkus attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31926,7 +31926,7 @@ def fetch_fantasaiinkedblade(limit=15):
                 "https://fantasai.inkedblade.net/weblog/all/rss2",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fantasaiinkedblade attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31961,7 +31961,7 @@ def fetch_fathy(limit=15):
                 "https://fathy.fr/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fathy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -31996,7 +31996,7 @@ def fetch_fedmentor(limit=15):
                 "https://fedmentor.dev/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fedmentor attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32031,7 +32031,7 @@ def fetch_ctrl(limit=15):
                 "https://feed.ctrl.blog/latest.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ctrl attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32066,7 +32066,7 @@ def fetch_feedingcloudgeek(limit=15):
                 "https://feeding.cloud.geek.nz/index.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] feedingcloudgeek attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32101,7 +32101,7 @@ def fetch_felixarntz(limit=15):
                 "https://felix-arntz.me/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] felixarntz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32136,7 +32136,7 @@ def fetch_felixgerschau(limit=15):
                 "https://felixgerschau.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] felixgerschau attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32171,7 +32171,7 @@ def fetch_ferjmgithub(limit=15):
                 "https://ferjm.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ferjmgithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32206,7 +32206,7 @@ def fetch_feross(limit=15):
                 "https://feross.org/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] feross attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32241,7 +32241,7 @@ def fetch_fershad(limit=15):
                 "https://fershad.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fershad attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32276,7 +32276,7 @@ def fetch_fingerprintjs(limit=15):
                 "https://fingerprintjs.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fingerprintjs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32311,7 +32311,7 @@ def fetch_firt(limit=15):
                 "https://firt.dev/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] firt attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32346,7 +32346,7 @@ def fetch_flailingmonkey(limit=15):
                 "https://flailingmonkey.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] flailingmonkey attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32381,7 +32381,7 @@ def fetch_foobartel(limit=15):
                 "https://foobartel.com/stream/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] foobartel attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32416,7 +32416,7 @@ def fetch_fossheim(limit=15):
                 "https://fossheim.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fossheim attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32451,7 +32451,7 @@ def fetch_fotis(limit=15):
                 "https://fotis.xyz/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fotis attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32486,7 +32486,7 @@ def fetch_foundationmozilla(limit=15):
                 "https://foundation.mozilla.org/en/blog/atom/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] foundationmozilla attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32521,7 +32521,7 @@ def fetch_frederikbraun(limit=15):
                 "https://frederik-braun.com/feeds/all.atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] frederikbraun attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32556,7 +32556,7 @@ def fetch_frontendian(limit=15):
                 "https://frontendian.co/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] frontendian attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32591,7 +32591,7 @@ def fetch_funwithforms(limit=15):
                 "https://funwithforms.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] funwithforms attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32626,7 +32626,7 @@ def fetch_fvsch(limit=15):
                 "https://fvsch.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fvsch attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32661,7 +32661,7 @@ def fetch_fxdx(limit=15):
                 "https://fxdx.dev/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fxdx attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32696,7 +32696,7 @@ def fetch_galhagever(limit=15):
                 "https://gal.hagever.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] galhagever attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32731,7 +32731,7 @@ def fetch_gardenbradwoods(limit=15):
                 "https://garden.bradwoods.io/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gardenbradwoods attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32766,7 +32766,7 @@ def fetch_gdstechnologybloggov(limit=15):
                 "https://gdstechnology.blog.gov.uk/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gdstechnologybloggov attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32801,7 +32801,7 @@ def fetch_geekplux(limit=15):
                 "https://geekplux.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] geekplux attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32836,7 +32836,7 @@ def fetch_gideonpyzer(limit=15):
                 "https://gideonpyzer.dev/blog/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gideonpyzer attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32871,7 +32871,7 @@ def fetch_giuseppegurgone(limit=15):
                 "https://giuseppegurgone.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] giuseppegurgone attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32906,7 +32906,7 @@ def fetch_gomakethings(limit=15):
                 "https://gomakethings.com/feed/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gomakethings attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32941,7 +32941,7 @@ def fetch_greatdk(limit=15):
                 "https://greatdk.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] greatdk attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -32976,7 +32976,7 @@ def fetch_hayatoitogithub(limit=15):
                 "https://hayatoito.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hayatoitogithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33011,7 +33011,7 @@ def fetch_heatherbuchel(limit=15):
                 "https://heather-buchel.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] heatherbuchel attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33046,7 +33046,7 @@ def fetch_helloanselm(limit=15):
                 "https://helloanselm.com/feed/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] helloanselm attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33081,7 +33081,7 @@ def fetch_hellogithub(limit=15):
                 "https://hellogithub.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hellogithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33116,7 +33116,7 @@ def fetch_heydonworks(limit=15):
                 "https://heydonworks.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] heydonworks attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33151,7 +33151,7 @@ def fetch_hidde(limit=15):
                 "https://hidde.blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hidde attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33186,7 +33186,7 @@ def fetch_horstmann(limit=15):
                 "https://horstmann.com/unblog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] horstmann attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33221,7 +33221,7 @@ def fetch_hospodarets(limit=15):
                 "https://hospodarets.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hospodarets attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33256,7 +33256,7 @@ def fetch_hsivonen(limit=15):
                 "https://hsivonen.fi/feed/atom/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hsivonen attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33291,7 +33291,7 @@ def fetch_hswolff(limit=15):
                 "https://hswolff.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hswolff attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33326,7 +33326,7 @@ def fetch_html5accessibility(limit=15):
                 "https://html5accessibility.com/stuff/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] html5accessibility attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33361,7 +33361,7 @@ def fetch_httptoolkit(limit=15):
                 "https://httptoolkit.tech/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] httptoolkit attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33396,7 +33396,7 @@ def fetch_hugotunius(limit=15):
                 "https://hugotunius.se/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hugotunius attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33431,7 +33431,7 @@ def fetch_humanwhocodes(limit=15):
                 "https://humanwhocodes.com/feeds/blog.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] humanwhocodes attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33466,7 +33466,7 @@ def fetch_husseinalhammad(limit=15):
                 "https://hussein-alhammad.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] husseinalhammad attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33501,7 +33501,7 @@ def fetch_iainbean(limit=15):
                 "https://iainbean.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] iainbean attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33536,7 +33536,7 @@ def fetch_iamakulov(limit=15):
                 "https://iamakulov.com/notes/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] iamakulov attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33571,7 +33571,7 @@ def fetch_iamschulz(limit=15):
                 "https://iamschulz.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] iamschulz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33606,7 +33606,7 @@ def fetch_iamvdo(limit=15):
                 "https://iamvdo.me/en/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] iamvdo attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33641,7 +33641,7 @@ def fetch_igor(limit=15):
                 "https://igor.dev/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] igor attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33676,7 +33676,7 @@ def fetch_imkev(limit=15):
                 "https://imkev.dev/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] imkev attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33711,7 +33711,7 @@ def fetch_infrequently(limit=15):
                 "https://infrequently.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] infrequently attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33746,7 +33746,7 @@ def fetch_insidegovukbloggov(limit=15):
                 "https://insidegovuk.blog.gov.uk/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] insidegovukbloggov attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33781,7 +33781,7 @@ def fetch_jaketracey(limit=15):
                 "https://jaketracey.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jaketracey attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33816,7 +33816,7 @@ def fetch_jalammargithub(limit=15):
                 "https://jalammar.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jalammargithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33851,7 +33851,7 @@ def fetch_jameshfisher(limit=15):
                 "https://jameshfisher.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jameshfisher attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33886,7 +33886,7 @@ def fetch_jasonwilliamsco(limit=15):
                 "https://jason-williams.co.uk/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jasonwilliamsco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33921,7 +33921,7 @@ def fetch_jasonformat(limit=15):
                 "https://jasonformat.com/posts.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jasonformat attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33956,7 +33956,7 @@ def fetch_jebswebs(limit=15):
                 "https://jebswebs.net/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jebswebs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -33991,7 +33991,7 @@ def fetch_jec(limit=15):
                 "https://jec.fish/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jec attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34026,7 +34026,7 @@ def fetch_jeffy(limit=15):
                 "https://jeffy.info/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jeffy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34061,7 +34061,7 @@ def fetch_jeremydormitzer(limit=15):
                 "https://jeremydormitzer.com/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jeremydormitzer attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34096,7 +34096,7 @@ def fetch_jerryjones(limit=15):
                 "https://jerryjones.dev/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jerryjones attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34131,7 +34131,7 @@ def fetch_jessbpeck(limit=15):
                 "https://jessbpeck.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jessbpeck attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34166,7 +34166,7 @@ def fetch_jessbudd(limit=15):
                 "https://jessbudd.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jessbudd attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34201,7 +34201,7 @@ def fetch_jfhr(limit=15):
                 "https://jfhr.me/index.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jfhr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34236,7 +34236,7 @@ def fetch_jgw96github(limit=15):
                 "https://jgw96.github.io/cascadia.computer/_site/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jgw96github attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34271,7 +34271,7 @@ def fetch_jjenzz(limit=15):
                 "https://jjenzz.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jjenzz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34306,7 +34306,7 @@ def fetch_johanhal(limit=15):
                 "https://johan.hal.se/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] johanhal attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34341,7 +34341,7 @@ def fetch_johannesodlandgithub(limit=15):
                 "https://johannesodland.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] johannesodlandgithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34376,7 +34376,7 @@ def fetch_jonneal(limit=15):
                 "https://jonneal.dev/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jonneal attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34411,7 +34411,7 @@ def fetch_joreteg(limit=15):
                 "https://joreteg.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] joreteg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34446,7 +34446,7 @@ def fetch_josephscott(limit=15):
                 "https://josephscott.org/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] josephscott attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34481,7 +34481,7 @@ def fetch_joshcollinsworth(limit=15):
                 "https://joshcollinsworth.com/api/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] joshcollinsworth attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34516,7 +34516,7 @@ def fetch_joshuatz(limit=15):
                 "https://joshuatz.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] joshuatz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34551,7 +34551,7 @@ def fetch_juffalow(limit=15):
                 "https://juffalow.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] juffalow attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34586,7 +34586,7 @@ def fetch_justinribeiro(limit=15):
                 "https://justinribeiro.com/data/chronicle/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] justinribeiro attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34621,7 +34621,7 @@ def fetch_justmarkup(limit=15):
                 "https://justmarkup.com/log/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] justmarkup attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34656,7 +34656,7 @@ def fetch_jwdallas(limit=15):
                 "https://jwdallas.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jwdallas attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34691,7 +34691,7 @@ def fetch_karlgroves(limit=15):
                 "https://karlgroves.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] karlgroves attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34726,7 +34726,7 @@ def fetch_kevincox(limit=15):
                 "https://kevincox.ca/feed.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kevincox attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34761,7 +34761,7 @@ def fetch_kevq(limit=15):
                 "https://kevq.uk/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kevq attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34796,7 +34796,7 @@ def fetch_kittygiraudel(limit=15):
                 "https://kittygiraudel.com/rss/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kittygiraudel attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34831,7 +34831,7 @@ def fetch_knowler(limit=15):
                 "https://knowler.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] knowler attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34866,7 +34866,7 @@ def fetch_knpw(limit=15):
                 "https://knpw.rs/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] knpw attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34901,7 +34901,7 @@ def fetch_krausefx(limit=15):
                 "https://krausefx.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] krausefx attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34936,7 +34936,7 @@ def fetch_kurtextrem(limit=15):
                 "https://kurtextrem.de/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kurtextrem attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -34971,7 +34971,7 @@ def fetch_kzarco(limit=15):
                 "https://kzar.co.uk/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kzarco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35006,7 +35006,7 @@ def fetch_labnotes(limit=15):
                 "https://labnotes.org/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] labnotes attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35041,7 +35041,7 @@ def fetch_lamplightdev(limit=15):
                 "https://lamplightdev.com/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lamplightdev attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35076,7 +35076,7 @@ def fetch_lapcatsoftware(limit=15):
                 "https://lapcatsoftware.com/articles/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lapcatsoftware attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35111,7 +35111,7 @@ def fetch_laurakalbag(limit=15):
                 "https://laurakalbag.com/posts/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] laurakalbag attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35146,7 +35146,7 @@ def fetch_laurieontech(limit=15):
                 "https://laurieontech.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] laurieontech attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35181,7 +35181,7 @@ def fetch_leaverou(limit=15):
                 "https://lea.verou.me/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] leaverou attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35216,7 +35216,7 @@ def fetch_leininger(limit=15):
                 "https://leininger.tech/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] leininger attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35251,7 +35251,7 @@ def fetch_leovan(limit=15):
                 "https://leovan.me/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] leovan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35286,7 +35286,7 @@ def fetch_letsencrypt(limit=15):
                 "https://letsencrypt.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] letsencrypt attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35321,7 +35321,7 @@ def fetch_levi(limit=15):
                 "https://levi.lol/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] levi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35356,7 +35356,7 @@ def fetch_lihautan(limit=15):
                 "https://lihautan.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lihautan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35391,7 +35391,7 @@ def fetch_linghao(limit=15):
                 "https://linghao.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] linghao attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35426,7 +35426,7 @@ def fetch_lisilinhart(limit=15):
                 "https://lisilinhart.info/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lisilinhart attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35461,7 +35461,7 @@ def fetch_lit(limit=15):
                 "https://lit.dev/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lit attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35496,7 +35496,7 @@ def fetch_lnhixie(limit=15):
                 "https://ln.hixie.ch/rss/html",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lnhixie attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35531,7 +35531,7 @@ def fetch_localghost(limit=15):
                 "https://localghost.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] localghost attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35566,7 +35566,7 @@ def fetch_localizely(limit=15):
                 "https://localizely.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] localizely attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35601,7 +35601,7 @@ def fetch_loige(limit=15):
                 "https://loige.co/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] loige attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35636,7 +35636,7 @@ def fetch_lowentropy(limit=15):
                 "https://lowentropy.net/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lowentropy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35671,7 +35671,7 @@ def fetch_lukechannings(limit=15):
                 "https://lukechannings.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lukechannings attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35706,7 +35706,7 @@ def fetch_lutaonan(limit=15):
                 "https://lutaonan.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lutaonan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35741,7 +35741,7 @@ def fetch_mattias(limit=15):
                 "https://ma.ttias.be/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mattias attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35776,7 +35776,7 @@ def fetch_mallonbacka(limit=15):
                 "https://mallonbacka.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mallonbacka attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35811,7 +35811,7 @@ def fetch_manuelstrehl(limit=15):
                 "https://manuel-strehl.de/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] manuelstrehl attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35846,7 +35846,7 @@ def fetch_manuelmoreale(limit=15):
                 "https://manuelmoreale.com/feed/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] manuelmoreale attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35881,7 +35881,7 @@ def fetch_marcosc(limit=15):
                 "https://marcosc.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] marcosc attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35916,7 +35916,7 @@ def fetch_marcus(limit=15):
                 "https://marcus.io/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] marcus attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35951,7 +35951,7 @@ def fetch_marcysutton(limit=15):
                 "https://marcysutton.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] marcysutton attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -35986,7 +35986,7 @@ def fetch_mariospr(limit=15):
                 "https://mariospr.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mariospr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36021,7 +36021,7 @@ def fetch_markentier(limit=15):
                 "https://markentier.tech/feed.atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] markentier attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36056,7 +36056,7 @@ def fetch_markosaric(limit=15):
                 "https://markosaric.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] markosaric attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36091,7 +36091,7 @@ def fetch_martinwolf(limit=15):
                 "https://martinwolf.org/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] martinwolf attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36126,7 +36126,7 @@ def fetch_marvinh(limit=15):
                 "https://marvinh.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] marvinh attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36161,7 +36161,7 @@ def fetch_mastranskywordpress(limit=15):
                 "https://mastransky.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mastranskywordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36196,7 +36196,7 @@ def fetch_mathmligalia(limit=15):
                 "https://mathml.igalia.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mathmligalia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36231,7 +36231,7 @@ def fetch_mathmlmusesnetlify(limit=15):
                 "https://mathmlmuses.netlify.app/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mathmlmusesnetlify attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36266,7 +36266,7 @@ def fetch_matthewphillips(limit=15):
                 "https://matthewphillips.info/programming/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] matthewphillips attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36301,7 +36301,7 @@ def fetch_matthewstrom(limit=15):
                 "https://matthewstrom.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] matthewstrom attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36336,7 +36336,7 @@ def fetch_maximorlov(limit=15):
                 "https://maximorlov.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] maximorlov attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36371,7 +36371,7 @@ def fetch_meditic(limit=15):
                 "https://meditic.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] meditic attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36406,7 +36406,7 @@ def fetch_meetguns(limit=15):
                 "https://meetguns.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] meetguns attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36441,7 +36441,7 @@ def fetch_mefody(limit=15):
                 "https://mefody.dev/feed/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mefody attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36476,7 +36476,7 @@ def fetch_meiert(limit=15):
                 "https://meiert.com/en/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] meiert attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36511,7 +36511,7 @@ def fetch_melsumnergithub(limit=15):
                 "https://melsumner.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] melsumnergithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36546,7 +36546,7 @@ def fetch_mgearon(limit=15):
                 "https://mgearon.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mgearon attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36581,7 +36581,7 @@ def fetch_micahflee(limit=15):
                 "https://micahflee.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] micahflee attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36616,7 +36616,7 @@ def fetch_michelenasti(limit=15):
                 "https://michelenasti.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] michelenasti attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36651,7 +36651,7 @@ def fetch_microblogjvdezign(limit=15):
                 "https://microblog.jvdezign.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] microblogjvdezign attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36686,7 +36686,7 @@ def fetch_microsoftedgegithub(limit=15):
                 "https://microsoftedge.github.io/edgevr/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] microsoftedgegithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36721,7 +36721,7 @@ def fetch_mikesherov(limit=15):
                 "https://mike.sherov.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mikesherov attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36756,7 +36756,7 @@ def fetch_mikespook(limit=15):
                 "https://mikespook.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mikespook attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36791,7 +36791,7 @@ def fetch_miketaylr(limit=15):
                 "https://miketaylr.com/posts/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] miketaylr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36826,7 +36826,7 @@ def fetch_mikewest(limit=15):
                 "https://mikewest.org/rss/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mikewest attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36861,7 +36861,7 @@ def fetch_ming1016github(limit=15):
                 "https://ming1016.github.io/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ming1016github attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36896,7 +36896,7 @@ def fetch_mlinproduction(limit=15):
                 "https://mlinproduction.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mlinproduction attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36931,7 +36931,7 @@ def fetch_mmazzarolo(limit=15):
                 "https://mmazzarolo.com/blog/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mmazzarolo attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -36966,7 +36966,7 @@ def fetch_mobiforge(limit=15):
                 "https://mobiforge.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mobiforge attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37001,7 +37001,7 @@ def fetch_moderncss(limit=15):
                 "https://moderncss.dev/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] moderncss attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37036,7 +37036,7 @@ def fetch_mozillaneckogithub(limit=15):
                 "https://mozilla-necko.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mozillaneckogithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37071,7 +37071,7 @@ def fetch_mozillazggithub(limit=15):
                 "https://mozillazg.github.io/feeds/all.atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mozillazggithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37106,7 +37106,7 @@ def fetch_mpatacchiolagithub(limit=15):
                 "https://mpatacchiola.github.io/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mpatacchiolagithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37141,7 +37141,7 @@ def fetch_mpulp(limit=15):
                 "https://mpulp.mobi/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mpulp attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37176,7 +37176,7 @@ def fetch_muffinman(limit=15):
                 "https://muffinman.io/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] muffinman attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37211,7 +37211,7 @@ def fetch_nervewax(limit=15):
                 "https://nervewax.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nervewax attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37246,7 +37246,7 @@ def fetch_neustadt(limit=15):
                 "https://neustadt.fr/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] neustadt attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37281,7 +37281,7 @@ def fetch_ngrmr(limit=15):
                 "https://ngrmr.at/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ngrmr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37316,7 +37316,7 @@ def fetch_nicolashoizey(limit=15):
                 "https://nicolas-hoizey.com/feeds/articles.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nicolashoizey attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37351,7 +37351,7 @@ def fetch_nielsleenheer(limit=15):
                 "https://nielsleenheer.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nielsleenheer attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37386,7 +37386,7 @@ def fetch_nitayneeman(limit=15):
                 "https://nitayneeman.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nitayneeman attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37421,7 +37421,7 @@ def fetch_nodejs(limit=15):
                 "https://nodejs.org/en/feed/blog.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nodejs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37456,7 +37456,7 @@ def fetch_nosleepjavascript(limit=15):
                 "https://nosleepjavascript.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nosleepjavascript attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37491,7 +37491,7 @@ def fetch_notebooklachlanjc(limit=15):
                 "https://notebook.lachlanjc.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] notebooklachlanjc attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37526,7 +37526,7 @@ def fetch_nullsweep(limit=15):
                 "https://nullsweep.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nullsweep attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37561,7 +37561,7 @@ def fetch_nystudio107(limit=15):
                 "https://nystudio107.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nystudio107 attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37596,7 +37596,7 @@ def fetch_obyford(limit=15):
                 "https://obyford.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] obyford attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37631,7 +37631,7 @@ def fetch_ognjen(limit=15):
                 "https://ognjen.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ognjen attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37666,7 +37666,7 @@ def fetch_ohhelloana(limit=15):
                 "https://ohhelloana.blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ohhelloana attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37701,7 +37701,7 @@ def fetch_oidaisdes(limit=15):
                 "https://oidaisdes.org/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] oidaisdes attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37736,7 +37736,7 @@ def fetch_oliverjam(limit=15):
                 "https://oliverjam.es/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] oliverjam attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37771,7 +37771,7 @@ def fetch_openwebadvocacy(limit=15):
                 "https://open-web-advocacy.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] openwebadvocacy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37806,7 +37806,7 @@ def fetch_openwebdocs(limit=15):
                 "https://openwebdocs.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] openwebdocs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37841,7 +37841,7 @@ def fetch_ourai(limit=15):
                 "https://ourai.ws/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ourai attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37876,7 +37876,7 @@ def fetch_overengineer(limit=15):
                 "https://overengineer.dev/blog/feeds/all.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] overengineer attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37911,7 +37911,7 @@ def fetch_palant(limit=15):
                 "https://palant.info/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] palant attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37946,7 +37946,7 @@ def fetch_paramdeo(limit=15):
                 "https://paramdeo.com/feed/blog.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] paramdeo attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -37981,7 +37981,7 @@ def fetch_patrickbrosset(limit=15):
                 "https://patrickbrosset.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] patrickbrosset attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38016,7 +38016,7 @@ def fetch_patwalls(limit=15):
                 "https://patwalls.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] patwalls attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38051,7 +38051,7 @@ def fetch_paulkinlan(limit=15):
                 "https://paul.kinlan.me/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] paulkinlan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38086,7 +38086,7 @@ def fetch_paulcalvano(limit=15):
                 "https://paulcalvano.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] paulcalvano attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38121,7 +38121,7 @@ def fetch_pauldambra(limit=15):
                 "https://pauldambra.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pauldambra attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38156,7 +38156,7 @@ def fetch_paulkinchla(limit=15):
                 "https://paulkinchla.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] paulkinchla attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38191,7 +38191,7 @@ def fetch_paulmillr(limit=15):
                 "https://paulmillr.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] paulmillr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38226,7 +38226,7 @@ def fetch_pawelgrzybek(limit=15):
                 "https://pawelgrzybek.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pawelgrzybek attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38261,7 +38261,7 @@ def fetch_pepelsbey(limit=15):
                 "https://pepelsbey.dev/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pepelsbey attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38296,7 +38296,7 @@ def fetch_performanceshopify(limit=15):
                 "https://performance.shopify.com/blogs/blog.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] performanceshopify attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38331,7 +38331,7 @@ def fetch_perishablepress(limit=15):
                 "https://perishablepress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] perishablepress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38366,7 +38366,7 @@ def fetch_petelepage(limit=15):
                 "https://petelepage.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] petelepage attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38401,7 +38401,7 @@ def fetch_peter(limit=15):
                 "https://peter.sh/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] peter attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38436,7 +38436,7 @@ def fetch_petergasstonco(limit=15):
                 "https://petergasston.co.uk/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] petergasstonco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38471,7 +38471,7 @@ def fetch_peterhrynkow(limit=15):
                 "https://peterhrynkow.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] peterhrynkow attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38506,7 +38506,7 @@ def fetch_peteris(limit=15):
                 "https://peteris.rocks/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] peteris attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38541,7 +38541,7 @@ def fetch_peteroshaughnessy(limit=15):
                 "https://peteroshaughnessy.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] peteroshaughnessy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38576,7 +38576,7 @@ def fetch_phabricatorwikimedia(limit=15):
                 "https://phabricator.wikimedia.org/phame/blog/feed/11/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] phabricatorwikimedia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38611,7 +38611,7 @@ def fetch_philna(limit=15):
                 "https://philna.sh/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] philna attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38646,7 +38646,7 @@ def fetch_piccalil(limit=15):
                 "https://piccalil.li/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] piccalil attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38681,7 +38681,7 @@ def fetch_pimpmytype(limit=15):
                 "https://pimpmytype.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pimpmytype attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38716,7 +38716,7 @@ def fetch_pineco(limit=15):
                 "https://pineco.de/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pineco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38751,7 +38751,7 @@ def fetch_pixelambacht(limit=15):
                 "https://pixelambacht.nl/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pixelambacht attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38786,7 +38786,7 @@ def fetch_pixelscommander(limit=15):
                 "https://pixelscommander.com/feed/atom/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pixelscommander attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38821,7 +38821,7 @@ def fetch_plausible(limit=15):
                 "https://plausible.io/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] plausible attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38856,7 +38856,7 @@ def fetch_pmdartus(limit=15):
                 "https://pm.dartus.fr/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pmdartus attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38891,7 +38891,7 @@ def fetch_pokeinthe(limit=15):
                 "https://pokeinthe.io/feeds/all.atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pokeinthe attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38926,7 +38926,7 @@ def fetch_polypane(limit=15):
                 "https://polypane.app/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] polypane attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38961,7 +38961,7 @@ def fetch_pomb(limit=15):
                 "https://pomb.us/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pomb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -38996,7 +38996,7 @@ def fetch_pqina(limit=15):
                 "https://pqina.nl/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pqina attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39031,7 +39031,7 @@ def fetch_pqvst(limit=15):
                 "https://pqvst.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pqvst attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39066,7 +39066,7 @@ def fetch_presetenvcssdb(limit=15):
                 "https://preset-env.cssdb.org/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] presetenvcssdb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39101,7 +39101,7 @@ def fetch_prettier(limit=15):
                 "https://prettier.io/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] prettier attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39136,7 +39136,7 @@ def fetch_pustelto(limit=15):
                 "https://pustelto.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pustelto attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39171,7 +39171,7 @@ def fetch_quii(limit=15):
                 "https://quii.dev/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] quii attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39206,7 +39206,7 @@ def fetch_quittengithub(limit=15):
                 "https://quitten.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] quittengithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39241,7 +39241,7 @@ def fetch_racheleditullio(limit=15):
                 "https://racheleditullio.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] racheleditullio attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39276,7 +39276,7 @@ def fetch_rawgithubusercontent(limit=15):
                 "https://raw.githubusercontent.com/superleeyom/blog/master/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rawgithubusercontent attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39311,7 +39311,7 @@ def fetch_redonion(limit=15):
                 "https://redonion.se/en/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] redonion attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39346,7 +39346,7 @@ def fetch_rightbadcode(limit=15):
                 "https://rightbadcode.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rightbadcode attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39381,7 +39381,7 @@ def fetch_robbowen(limit=15):
                 "https://robbowen.digital/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] robbowen attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39416,7 +39416,7 @@ def fetch_robdodson(limit=15):
                 "https://robdodson.me/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] robdodson attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39451,7 +39451,7 @@ def fetch_robertocallahan(limit=15):
                 "https://robert.ocallahan.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] robertocallahan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39486,7 +39486,7 @@ def fetch_romaricpascal(limit=15):
                 "https://romaricpascal.is/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] romaricpascal attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39521,7 +39521,7 @@ def fetch_rtpg(limit=15):
                 "https://rtpg.co/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rtpg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39556,7 +39556,7 @@ def fetch_rviscomi(limit=15):
                 "https://rviscomi.dev/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rviscomi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39591,7 +39591,7 @@ def fetch_ryanmulligan(limit=15):
                 "https://ryanmulligan.dev/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ryanmulligan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39626,7 +39626,7 @@ def fetch_ryantrimble(limit=15):
                 "https://ryantrimble.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ryantrimble attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39661,7 +39661,7 @@ def fetch_sallylait(limit=15):
                 "https://sallylait.com/blog/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sallylait attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39696,7 +39696,7 @@ def fetch_sammacbeth(limit=15):
                 "https://sammacbeth.eu/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sammacbeth attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39731,7 +39731,7 @@ def fetch_samuelkraft(limit=15):
                 "https://samuelkraft.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] samuelkraft attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39766,7 +39766,7 @@ def fetch_sarahmhigley(limit=15):
                 "https://sarahmhigley.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sarahmhigley attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39801,7 +39801,7 @@ def fetch_sarajoy(limit=15):
                 "https://sarajoy.dev/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sarajoy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39836,7 +39836,7 @@ def fetch_sasslang(limit=15):
                 "https://sass-lang.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sasslang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39871,7 +39871,7 @@ def fetch_schepp(limit=15):
                 "https://schepp.dev/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] schepp attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39906,7 +39906,7 @@ def fetch_scotthelmeco(limit=15):
                 "https://scotthelme.co.uk/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] scotthelmeco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39941,7 +39941,7 @@ def fetch_scottjehl(limit=15):
                 "https://scottjehl.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] scottjehl attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -39976,7 +39976,7 @@ def fetch_screenspan(limit=15):
                 "https://screenspan.net/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] screenspan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40011,7 +40011,7 @@ def fetch_searchgoogleblog(limit=15):
                 "https://search.googleblog.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] searchgoogleblog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40046,7 +40046,7 @@ def fetch_sebastiandedeyne(limit=15):
                 "https://sebastiandedeyne.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sebastiandedeyne attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40081,7 +40081,7 @@ def fetch_sebastiangreger(limit=15):
                 "https://sebastiangreger.net/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sebastiangreger attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40116,7 +40116,7 @@ def fetch_seirdy(limit=15):
                 "https://seirdy.one/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] seirdy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40151,7 +40151,7 @@ def fetch_seldo(limit=15):
                 "https://seldo.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] seldo attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40186,7 +40186,7 @@ def fetch_servo(limit=15):
                 "https://servo.org/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] servo attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40221,7 +40221,7 @@ def fetch_sgom(limit=15):
                 "https://sgom.es/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sgom attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40256,7 +40256,7 @@ def fetch_shaneosullivanwordpress(limit=15):
                 "https://shaneosullivan.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] shaneosullivanwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40291,7 +40291,7 @@ def fetch_sheribyrnehaber(limit=15):
                 "https://sheribyrnehaber.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sheribyrnehaber attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40326,7 +40326,7 @@ def fetch_shihn(limit=15):
                 "https://shihn.ca/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] shihn attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40361,7 +40361,7 @@ def fetch_shopify(limit=15):
                 "https://shopify.engineering/blog.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] shopify attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40396,7 +40396,7 @@ def fetch_shyrz(limit=15):
                 "https://shyrz.me/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] shyrz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40431,7 +40431,7 @@ def fetch_sia(limit=15):
                 "https://sia.codes/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40466,7 +40466,7 @@ def fetch_simblobblogspot(limit=15):
                 "https://simblob.blogspot.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] simblobblogspot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40501,7 +40501,7 @@ def fetch_simonhearne(limit=15):
                 "https://simonhearne.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] simonhearne attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40536,7 +40536,7 @@ def fetch_simplified(limit=15):
                 "https://simplified.dev/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] simplified attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40571,7 +40571,7 @@ def fetch_sive(limit=15):
                 "https://sive.rs/en.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sive attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40606,7 +40606,7 @@ def fetch_smellycode(limit=15):
                 "https://smellycode.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] smellycode attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40641,7 +40641,7 @@ def fetch_smitop(limit=15):
                 "https://smitop.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] smitop attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40676,7 +40676,7 @@ def fetch_speakofthedevrel(limit=15):
                 "https://speakofthedevrel.cloud/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] speakofthedevrel attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40711,7 +40711,7 @@ def fetch_speedcurve(limit=15):
                 "https://speedcurve.com/blog/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] speedcurve attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40746,7 +40746,7 @@ def fetch_spidermonkey(limit=15):
                 "https://spidermonkey.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] spidermonkey attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40781,7 +40781,7 @@ def fetch_steele(limit=15):
                 "https://steele.blue/feed/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] steele attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40816,7 +40816,7 @@ def fetch_stuffandnonsenseco(limit=15):
                 "https://stuffandnonsense.co.uk/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] stuffandnonsenseco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40851,7 +40851,7 @@ def fetch_svelte(limit=15):
                 "https://svelte.dev/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] svelte attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40886,7 +40886,7 @@ def fetch_sylormiller(limit=15):
                 "https://sylormiller.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sylormiller attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40921,7 +40921,7 @@ def fetch_taiwanchtsai(limit=15):
                 "https://taiwan.chtsai.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] taiwanchtsai attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40956,7 +40956,7 @@ def fetch_tamethebots(limit=15):
                 "https://tamethebots.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tamethebots attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -40991,7 +40991,7 @@ def fetch_tangledweb(limit=15):
                 "https://tangledweb.xyz/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tangledweb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41026,7 +41026,7 @@ def fetch_tantek(limit=15):
                 "https://tantek.com/updates.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tantek attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41061,7 +41061,7 @@ def fetch_techtrivago(limit=15):
                 "https://tech.trivago.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] techtrivago attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41096,7 +41096,7 @@ def fetch_techhubiodigital(limit=15):
                 "https://techhub.iodigital.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] techhubiodigital attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41131,7 +41131,7 @@ def fetch_terrillthompson(limit=15):
                 "https://terrillthompson.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] terrillthompson attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41166,7 +41166,7 @@ def fetch_tessoconnor(limit=15):
                 "https://tess.oconnor.cx/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tessoconnor attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41201,7 +41201,7 @@ def fetch_testingaccessibility(limit=15):
                 "https://testingaccessibility.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] testingaccessibility attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41236,7 +41236,7 @@ def fetch_tetralogical(limit=15):
                 "https://tetralogical.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tetralogical attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41271,7 +41271,7 @@ def fetch_thathtml(limit=15):
                 "https://thathtml.blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thathtml attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41306,7 +41306,7 @@ def fetch_thecssninja(limit=15):
                 "https://thecssninja.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thecssninja attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41341,7 +41341,7 @@ def fetch_theideaplace(limit=15):
                 "https://theideaplace.net/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] theideaplace attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41376,7 +41376,7 @@ def fetch_thenewtoys(limit=15):
                 "https://thenewtoys.dev/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thenewtoys attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41411,7 +41411,7 @@ def fetch_thereshouldbenored(limit=15):
                 "https://thereshouldbenored.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thereshouldbenored attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41446,7 +41446,7 @@ def fetch_thinkdobecreate(limit=15):
                 "https://thinkdobecreate.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thinkdobecreate attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41481,7 +41481,7 @@ def fetch_thiscute(limit=15):
                 "https://thiscute.world/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thiscute attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41516,7 +41516,7 @@ def fetch_thisisoptimal(limit=15):
                 "https://thisisoptimal.com/blog/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thisisoptimal attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41551,7 +41551,7 @@ def fetch_thomaspark(limit=15):
                 "https://thomaspark.co/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thomaspark attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41586,7 +41586,7 @@ def fetch_timdaubgithub(limit=15):
                 "https://timdaub.github.io/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] timdaubgithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41621,7 +41621,7 @@ def fetch_timmykokke(limit=15):
                 "https://timmykokke.com/blog/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] timmykokke attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41656,7 +41656,7 @@ def fetch_timmyomahony(limit=15):
                 "https://timmyomahony.com/feed.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] timmyomahony attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41691,7 +41691,7 @@ def fetch_timtech(limit=15):
                 "https://timtech.blog/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] timtech attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41726,7 +41726,7 @@ def fetch_tink(limit=15):
                 "https://tink.uk/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tink attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41761,7 +41761,7 @@ def fetch_tinyhelpers(limit=15):
                 "https://tiny-helpers.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tinyhelpers attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41796,7 +41796,7 @@ def fetch_tolame(limit=15):
                 "https://tola.me.uk/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tolame attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41831,7 +41831,7 @@ def fetch_tollwerk(limit=15):
                 "https://tollwerk.de/blog.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tollwerk attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41866,7 +41866,7 @@ def fetch_tom(limit=15):
                 "https://tom.vg/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tom attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41901,7 +41901,7 @@ def fetch_tomekdev(limit=15):
                 "https://tomekdev.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tomekdev attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41936,7 +41936,7 @@ def fetch_tomeraberba(limit=15):
                 "https://tomeraberba.ch/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tomeraberba attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -41971,7 +41971,7 @@ def fetch_tonisagrista(limit=15):
                 "https://tonisagrista.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tonisagrista attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42006,7 +42006,7 @@ def fetch_trekhleb(limit=15):
                 "https://trekhleb.dev/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] trekhleb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42041,7 +42041,7 @@ def fetch_trib(limit=15):
                 "https://trib.tv/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] trib attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42076,7 +42076,7 @@ def fetch_ttntm(limit=15):
                 "https://ttntm.me/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ttntm attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42111,7 +42111,7 @@ def fetch_tumutanzi(limit=15):
                 "https://tumutanzi.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tumutanzi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42146,7 +42146,7 @@ def fetch_typeofnan(limit=15):
                 "https://typeofnan.dev/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] typeofnan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42181,7 +42181,7 @@ def fetch_una(limit=15):
                 "https://una.im/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] una attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42216,7 +42216,7 @@ def fetch_unfetteredthoughts(limit=15):
                 "https://unfetteredthoughts.net/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] unfetteredthoughts attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42251,7 +42251,7 @@ def fetch_utopia(limit=15):
                 "https://utopia.fyi/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] utopia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42286,7 +42286,7 @@ def fetch_v8(limit=15):
                 "https://v8.dev/blog.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] v8 attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42321,7 +42321,7 @@ def fetch_varun(limit=15):
                 "https://varun.ca/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] varun attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42356,7 +42356,7 @@ def fetch_vasilis(limit=15):
                 "https://vasilis.nl/nerd/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] vasilis attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42391,7 +42391,7 @@ def fetch_veroniiiica(limit=15):
                 "https://veroniiiica.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] veroniiiica attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42426,7 +42426,7 @@ def fetch_vesapiittinen(limit=15):
                 "https://vesa.piittinen.name/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] vesapiittinen attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42461,7 +42461,7 @@ def fetch_vgpenagithub(limit=15):
                 "https://vgpena.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] vgpenagithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42496,7 +42496,7 @@ def fetch_vitalabgithub(limit=15):
                 "https://vitalab.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] vitalabgithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42531,7 +42531,7 @@ def fetch_vivaldi(limit=15):
                 "https://vivaldi.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] vivaldi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42566,7 +42566,7 @@ def fetch_w3cstudio24(limit=15):
                 "https://w3c.studio24.net/feeds/updates.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] w3cstudio24 attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42601,7 +42601,7 @@ def fetch_wasmlabs(limit=15):
                 "https://wasmlabs.dev/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] wasmlabs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42636,7 +42636,7 @@ def fetch_web(limit=15):
                 "https://web.dev/static/articles/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] web attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42671,7 +42671,7 @@ def fetch_webcomponents(limit=15):
                 "https://webcomponents.today/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] webcomponents attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42706,7 +42706,7 @@ def fetch_webdevlaw(limit=15):
                 "https://webdevlaw.uk/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] webdevlaw attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42741,7 +42741,7 @@ def fetch_webinista(limit=15):
                 "https://webinista.com/updates/feeds/all.atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] webinista attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42776,7 +42776,7 @@ def fetch_webplatform(limit=15):
                 "https://webplatform.news/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] webplatform attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42811,7 +42811,7 @@ def fetch_webventuresrejh(limit=15):
                 "https://webventures.rejh.nl/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] webventuresrejh attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42846,7 +42846,7 @@ def fetch_weeklytw93(limit=15):
                 "https://weekly.tw93.fun/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] weeklytw93 attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42881,7 +42881,7 @@ def fetch_westonruter(limit=15):
                 "https://weston.ruter.net/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] westonruter attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42916,7 +42916,7 @@ def fetch_wicki(limit=15):
                 "https://wicki.io/posts/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] wicki attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42951,7 +42951,7 @@ def fetch_wixux(limit=15):
                 "https://wix-ux.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] wixux attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -42986,7 +42986,7 @@ def fetch_wolvic(limit=15):
                 "https://wolvic.com/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] wolvic attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43021,7 +43021,7 @@ def fetch_wordpress(limit=15):
                 "https://wordpress.org/news/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] wordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43056,7 +43056,7 @@ def fetch_wpewebkit(limit=15):
                 "https://wpewebkit.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] wpewebkit attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43091,7 +43091,7 @@ def fetch_24a11y(limit=15):
                 "https://www.24a11y.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] 24a11y attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43126,7 +43126,7 @@ def fetch_a11ycollective(limit=15):
                 "https://www.a11y-collective.com/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] a11ycollective attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43161,7 +43161,7 @@ def fetch_a11yproject(limit=15):
                 "https://www.a11yproject.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] a11yproject attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43196,7 +43196,7 @@ def fetch_a11ywithlindsey(limit=15):
                 "https://www.a11ywithlindsey.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] a11ywithlindsey attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43231,7 +43231,7 @@ def fetch_aarongustafson(limit=15):
                 "https://www.aaron-gustafson.com/feeds/latest-posts.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aarongustafson attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43266,7 +43266,7 @@ def fetch_abeautifulsite(limit=15):
                 "https://www.abeautifulsite.net/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] abeautifulsite attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43301,7 +43301,7 @@ def fetch_abilitynetorg(limit=15):
                 "https://www.abilitynet.org.uk/news-blogs/feed.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] abilitynetorg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43336,7 +43336,7 @@ def fetch_accessibilityorg(limit=15):
                 "https://www.accessibility.org.au/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] accessibilityorg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43371,7 +43371,7 @@ def fetch_agwa(limit=15):
                 "https://www.agwa.name/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] agwa attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43406,7 +43406,7 @@ def fetch_ajsaucier(limit=15):
                 "https://www.ajsaucier.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ajsaucier attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43441,7 +43441,7 @@ def fetch_aleksandrhovhannisyan(limit=15):
                 "https://www.aleksandrhovhannisyan.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aleksandrhovhannisyan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43476,7 +43476,7 @@ def fetch_alexrpco(limit=15):
                 "https://www.alexrp.co.uk/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] alexrpco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43511,7 +43511,7 @@ def fetch_amitmerchant(limit=15):
                 "https://www.amitmerchant.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] amitmerchant attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43546,7 +43546,7 @@ def fetch_andreaverlicchi(limit=15):
                 "https://www.andreaverlicchi.eu/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] andreaverlicchi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43581,7 +43581,7 @@ def fetch_andrewwalpole(limit=15):
                 "https://www.andrewwalpole.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] andrewwalpole attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43616,7 +43616,7 @@ def fetch_artificiallawyer(limit=15):
                 "https://www.artificiallawyer.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] artificiallawyer attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43651,7 +43651,7 @@ def fetch_aymenloukil(limit=15):
                 "https://www.aymen-loukil.com/en/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aymenloukil attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43686,7 +43686,7 @@ def fetch_baldurbjarnason(limit=15):
                 "https://www.baldurbjarnason.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] baldurbjarnason attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43721,7 +43721,7 @@ def fetch_barretlee(limit=15):
                 "https://www.barretlee.com/rss2.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] barretlee attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43756,7 +43756,7 @@ def fetch_bejarano(limit=15):
                 "https://www.bejarano.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bejarano attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43791,7 +43791,7 @@ def fetch_bennadel(limit=15):
                 "https://www.bennadel.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bennadel attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43826,7 +43826,7 @@ def fetch_bmpi(limit=15):
                 "https://www.bmpi.dev/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bmpi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43861,7 +43861,7 @@ def fetch_boia(limit=15):
                 "https://www.boia.org/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] boia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43896,7 +43896,7 @@ def fetch_brandons(limit=15):
                 "https://www.brandons.me/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] brandons attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43931,7 +43931,7 @@ def fetch_browserling(limit=15):
                 "https://www.browserling.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] browserling attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -43966,7 +43966,7 @@ def fetch_browserlondon(limit=15):
                 "https://www.browserlondon.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] browserlondon attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44001,7 +44001,7 @@ def fetch_browsers(limit=15):
                 "https://www.browsers.fyi/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] browsers attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44036,7 +44036,7 @@ def fetch_browserstack(limit=15):
                 "https://www.browserstack.com/blog/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] browserstack attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44071,7 +44071,7 @@ def fetch_bryanbraun(limit=15):
                 "https://www.bryanbraun.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bryanbraun attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44106,7 +44106,7 @@ def fetch_brycevandyk(limit=15):
                 "https://www.brycevandyk.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] brycevandyk attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44141,7 +44141,7 @@ def fetch_brycewray(limit=15):
                 "https://www.brycewray.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] brycewray attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44176,7 +44176,7 @@ def fetch_callumhart(limit=15):
                 "https://www.callumhart.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] callumhart attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44211,7 +44211,7 @@ def fetch_carlrippon(limit=15):
                 "https://www.carlrippon.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] carlrippon attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44246,7 +44246,7 @@ def fetch_changhai(limit=15):
                 "https://www.changhai.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] changhai attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44281,7 +44281,7 @@ def fetch_chrislord(limit=15):
                 "https://www.chrislord.net/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] chrislord attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44316,7 +44316,7 @@ def fetch_chromestory(limit=15):
                 "https://www.chromestory.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] chromestory attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44351,7 +44351,7 @@ def fetch_cjcid(limit=15):
                 "https://www.cjcid.com/feeds/essays.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cjcid attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44386,7 +44386,7 @@ def fetch_cnfeat(limit=15):
                 "https://www.cnfeat.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cnfeat attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44421,7 +44421,7 @@ def fetch_codedump(limit=15):
                 "https://www.codedump.info/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codedump attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44456,7 +44456,7 @@ def fetch_coreycleary(limit=15):
                 "https://www.coreycleary.me/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] coreycleary attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44491,7 +44491,7 @@ def fetch_craigabbottco(limit=15):
                 "https://www.craigabbott.co.uk/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] craigabbottco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44526,7 +44526,7 @@ def fetch_creativejuiz(limit=15):
                 "https://www.creativejuiz.fr/blog/en/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] creativejuiz attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44561,7 +44561,7 @@ def fetch_cssmine(limit=15):
                 "https://www.cssmine.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cssmine attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44596,7 +44596,7 @@ def fetch_dandaviesco(limit=15):
                 "https://www.dan-davies.co.uk/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dandaviesco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44631,7 +44631,7 @@ def fetch_danielworsnup(limit=15):
                 "https://www.danielworsnup.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] danielworsnup attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44666,7 +44666,7 @@ def fetch_dannyguo(limit=15):
                 "https://www.dannyguo.com/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dannyguo attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44701,7 +44701,7 @@ def fetch_dannyvankooten(limit=15):
                 "https://www.dannyvankooten.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dannyvankooten attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44736,7 +44736,7 @@ def fetch_darins(limit=15):
                 "https://www.darins.page/articles/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] darins attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44771,7 +44771,7 @@ def fetch_davrous(limit=15):
                 "https://www.davrous.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] davrous attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44806,7 +44806,7 @@ def fetch_debugbear(limit=15):
                 "https://www.debugbear.com/blog/feed/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] debugbear attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44841,7 +44841,7 @@ def fetch_devever(limit=15):
                 "https://www.devever.net/~hl/index.feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] devever attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44876,7 +44876,7 @@ def fetch_digitala11y(limit=15):
                 "https://www.digitala11y.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] digitala11y attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44911,7 +44911,7 @@ def fetch_ekioh(limit=15):
                 "https://www.ekioh.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ekioh attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44946,7 +44946,7 @@ def fetch_electronjs(limit=15):
                 "https://www.electronjs.org/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] electronjs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -44981,7 +44981,7 @@ def fetch_erikkroes(limit=15):
                 "https://www.erikkroes.nl/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] erikkroes attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45016,7 +45016,7 @@ def fetch_ezindie(limit=15):
                 "https://www.ezindie.com/feed/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ezindie attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45051,7 +45051,7 @@ def fetch_fastly(limit=15):
                 "https://www.fastly.com/blog_rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fastly attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45086,7 +45086,7 @@ def fetch_ghacks(limit=15):
                 "https://www.ghacks.net/category/firefox/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ghacks attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45121,7 +45121,7 @@ def fetch_gsqi(limit=15):
                 "https://www.gsqi.com/marketing-blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gsqi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45156,7 +45156,7 @@ def fetch_hoeser(limit=15):
                 "https://www.hoeser.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hoeser attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45191,7 +45191,7 @@ def fetch_hsablonniere(limit=15):
                 "https://www.hsablonniere.com/articles-feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hsablonniere attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45226,7 +45226,7 @@ def fetch_htmhell(limit=15):
                 "https://www.htmhell.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] htmhell attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45261,7 +45261,7 @@ def fetch_igalia(limit=15):
                 "https://www.igalia.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] igalia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45296,7 +45296,7 @@ def fetch_industrialempathy(limit=15):
                 "https://www.industrialempathy.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] industrialempathy attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45331,7 +45331,7 @@ def fetch_inference(limit=15):
                 "https://www.inference.vc/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] inference attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45366,7 +45366,7 @@ def fetch_irigoyen(limit=15):
                 "https://www.irigoyen.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] irigoyen attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45401,7 +45401,7 @@ def fetch_jackfranklinco(limit=15):
                 "https://www.jackfranklin.co.uk/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jackfranklinco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45436,7 +45436,7 @@ def fetch_jameslmilner(limit=15):
                 "https://www.jameslmilner.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jameslmilner attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45471,7 +45471,7 @@ def fetch_jantrid(limit=15):
                 "https://www.jantrid.net/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jantrid attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45506,7 +45506,7 @@ def fetch_jayfreestone(limit=15):
                 "https://www.jayfreestone.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jayfreestone attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45541,7 +45541,7 @@ def fetch_joedolson(limit=15):
                 "https://www.joedolson.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] joedolson attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45576,7 +45576,7 @@ def fetch_joeforshaw(limit=15):
                 "https://www.joeforshaw.com/blog.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] joeforshaw attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45611,7 +45611,7 @@ def fetch_johndcook(limit=15):
                 "https://www.johndcook.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] johndcook attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45646,7 +45646,7 @@ def fetch_kaiostech(limit=15):
                 "https://www.kaiostech.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kaiostech attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45681,7 +45681,7 @@ def fetch_keithcirkelco(limit=15):
                 "https://www.keithcirkel.co.uk/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] keithcirkelco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45716,7 +45716,7 @@ def fetch_kooslooijesteijn(limit=15):
                 "https://www.kooslooijesteijn.net/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kooslooijesteijn attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45751,7 +45751,7 @@ def fetch_lalutineduweb(limit=15):
                 "https://www.lalutineduweb.fr/en/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lalutineduweb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45786,7 +45786,7 @@ def fetch_leereamsnyder(limit=15):
                 "https://www.leereamsnyder.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] leereamsnyder attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45821,7 +45821,7 @@ def fetch_lenesaile(limit=15):
                 "https://www.lenesaile.com/en/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lenesaile attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45856,7 +45856,7 @@ def fetch_madebymikecom(limit=15):
                 "https://www.madebymike.com.au/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] madebymikecom attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45891,7 +45891,7 @@ def fetch_mathjax(limit=15):
                 "https://www.mathjax.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mathjax attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45926,7 +45926,7 @@ def fetch_matuzo(limit=15):
                 "https://www.matuzo.at/feed_all.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] matuzo attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45961,7 +45961,7 @@ def fetch_maxiferreira(limit=15):
                 "https://www.maxiferreira.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] maxiferreira attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -45996,7 +45996,7 @@ def fetch_maxkohler(limit=15):
                 "https://www.maxkohler.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] maxkohler attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46031,7 +46031,7 @@ def fetch_mayank(limit=15):
                 "https://www.mayank.co/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mayank attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46066,7 +46066,7 @@ def fetch_mehulkar(limit=15):
                 "https://www.mehulkar.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mehulkar attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46101,7 +46101,7 @@ def fetch_michalspacek(limit=15):
                 "https://www.michalspacek.com/exports/articles",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] michalspacek attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46136,7 +46136,7 @@ def fetch_microsoft(limit=15):
                 "https://www.microsoft.com/en-us/research/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] microsoft attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46171,7 +46171,7 @@ def fetch_mikeaparicio(limit=15):
                 "https://www.mikeaparicio.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mikeaparicio attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46206,7 +46206,7 @@ def fetch_mozilla(limit=15):
                 "https://www.mozilla.org/en-US/firefox/nightly/notes/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mozilla attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46241,7 +46241,7 @@ def fetch_naildrivin5(limit=15):
                 "https://www.naildrivin5.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] naildrivin5 attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46276,7 +46276,7 @@ def fetch_nicchan(limit=15):
                 "https://www.nicchan.me/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nicchan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46311,7 +46311,7 @@ def fetch_nngroup(limit=15):
                 "https://www.nngroup.com/feed/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nngroup attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46346,7 +46346,7 @@ def fetch_owenyoung(limit=15):
                 "https://www.owenyoung.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] owenyoung attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46381,7 +46381,7 @@ def fetch_paigeniedringhaus(limit=15):
                 "https://www.paigeniedringhaus.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] paigeniedringhaus attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46416,7 +46416,7 @@ def fetch_paulfosterdesignco(limit=15):
                 "https://www.paulfosterdesign.co.uk/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] paulfosterdesignco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46451,7 +46451,7 @@ def fetch_philiprenich(limit=15):
                 "https://www.philiprenich.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] philiprenich attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46486,7 +46486,7 @@ def fetch_phpied(limit=15):
                 "https://www.phpied.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] phpied attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46521,7 +46521,7 @@ def fetch_quippd(limit=15):
                 "https://www.quippd.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] quippd attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46556,7 +46556,7 @@ def fetch_rdegges(limit=15):
                 "https://www.rdegges.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rdegges attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46591,7 +46591,7 @@ def fetch_reddit(limit=15):
                 "https://www.reddit.com/r/MachineLearning/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] reddit attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46626,7 +46626,7 @@ def fetch_robinosborneco(limit=15):
                 "https://www.robinosborne.co.uk/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] robinosborneco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46661,7 +46661,7 @@ def fetch_robinwieruch(limit=15):
                 "https://www.robinwieruch.de/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] robinwieruch attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46696,7 +46696,7 @@ def fetch_runningcheese(limit=15):
                 "https://www.runningcheese.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] runningcheese attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46731,7 +46731,7 @@ def fetch_sarahgebauer(limit=15):
                 "https://www.sarahgebauer.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sarahgebauer attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46766,7 +46766,7 @@ def fetch_schneier(limit=15):
                 "https://www.schneier.com/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] schneier attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46801,7 +46801,7 @@ def fetch_sciencedaily(limit=15):
                 "https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sciencedaily attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46836,7 +46836,7 @@ def fetch_silvestar(limit=15):
                 "https://www.silvestar.codes/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] silvestar attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46871,7 +46871,7 @@ def fetch_simeongriggs(limit=15):
                 "https://www.simeongriggs.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] simeongriggs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46906,7 +46906,7 @@ def fetch_simoahava(limit=15):
                 "https://www.simoahava.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] simoahava attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46941,7 +46941,7 @@ def fetch_sitepen(limit=15):
                 "https://www.sitepen.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sitepen attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -46976,7 +46976,7 @@ def fetch_sitepoint(limit=15):
                 "https://www.sitepoint.com/sitepoint.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] sitepoint attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47011,7 +47011,7 @@ def fetch_spicyweb(limit=15):
                 "https://www.spicyweb.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] spicyweb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47046,7 +47046,7 @@ def fetch_staciearellano(limit=15):
                 "https://www.staciearellano.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] staciearellano attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47081,7 +47081,7 @@ def fetch_tempertemper(limit=15):
                 "https://www.tempertemper.net/feeds/main.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tempertemper attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47116,7 +47116,7 @@ def fetch_thehaystack(limit=15):
                 "https://www.the-haystack.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thehaystack attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47151,7 +47151,7 @@ def fetch_tpgi(limit=15):
                 "https://www.tpgi.com/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tpgi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47186,7 +47186,7 @@ def fetch_trysmudford(limit=15):
                 "https://www.trysmudford.com/blog/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] trysmudford attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47221,7 +47221,7 @@ def fetch_tunetheweb(limit=15):
                 "https://www.tunetheweb.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tunetheweb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47256,7 +47256,7 @@ def fetch_webperf(limit=15):
                 "https://www.webperf.tips/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] webperf attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47291,7 +47291,7 @@ def fetch_xianmin(limit=15):
                 "https://www.xianmin.org/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] xianmin attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47326,7 +47326,7 @@ def fetch_xiaohui(limit=15):
                 "https://www.xiaohui.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] xiaohui attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47361,7 +47361,7 @@ def fetch_yubico(limit=15):
                 "https://www.yubico.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] yubico attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47396,7 +47396,7 @@ def fetch_yakim(limit=15):
                 "https://yakim.nl/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] yakim attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47431,7 +47431,7 @@ def fetch_yatil(limit=15):
                 "https://yatil.net/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] yatil attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47466,7 +47466,7 @@ def fetch_yetanother(limit=15):
                 "https://yetanother.blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] yetanother attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47501,7 +47501,7 @@ def fetch_yuanchuan(limit=15):
                 "https://yuanchuan.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] yuanchuan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47536,7 +47536,7 @@ def fetch_yushuangqi(limit=15):
                 "https://yushuangqi.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] yushuangqi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47571,7 +47571,7 @@ def fetch_zellwk(limit=15):
                 "https://zellwk.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] zellwk attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47606,7 +47606,7 @@ def fetch_zhengziying(limit=15):
                 "https://zhengziying.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] zhengziying attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47641,7 +47641,7 @@ def fetch_zwischenzugs(limit=15):
                 "https://zwischenzugs.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] zwischenzugs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47676,7 +47676,7 @@ def fetch_zwt(limit=15):
                 "https://zwt.one/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] zwt attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47711,7 +47711,7 @@ def fetch_badconcurrencyblogspot(limit=15):
                 "http://bad-concurrency.blogspot.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] badconcurrencyblogspot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47746,7 +47746,7 @@ def fetch_blogcleancoder(limit=15):
                 "http://blog.cleancoder.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogcleancoder attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47781,7 +47781,7 @@ def fetch_blogjayfields(limit=15):
                 "http://blog.jayfields.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogjayfields attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47816,7 +47816,7 @@ def fetch_blogpamelafox(limit=15):
                 "http://blog.pamelafox.org/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogpamelafox attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47851,7 +47851,7 @@ def fetch_blogthislongrun(limit=15):
                 "http://blog.thislongrun.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogthislongrun attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47886,7 +47886,7 @@ def fetch_blogvanillajava(limit=15):
                 "http://blog.vanillajava.blog/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogvanillajava attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47921,7 +47921,7 @@ def fetch_engineeringbrandwatch(limit=15):
                 "http://engineering.brandwatch.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineeringbrandwatch attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47956,7 +47956,7 @@ def fetch_engineeringcuralate(limit=15):
                 "http://engineering.curalate.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineeringcuralate attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -47991,7 +47991,7 @@ def fetch_engineeringgrab(limit=15):
                 "http://engineering.grab.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineeringgrab attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48026,7 +48026,7 @@ def fetch_engineeringhackerearth(limit=15):
                 "http://engineering.hackerearth.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineeringhackerearth attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48061,7 +48061,7 @@ def fetch_engineeringremind(limit=15):
                 "http://engineering.remind.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineeringremind attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48096,7 +48096,7 @@ def fetch_engineeringwingify(limit=15):
                 "http://engineering.wingify.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineeringwingify attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48131,7 +48131,7 @@ def fetch_fuzzyblog(limit=15):
                 "http://fuzzyblog.io/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fuzzyblog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48166,7 +48166,7 @@ def fetch_huonwgithub(limit=15):
                 "http://huonw.github.io/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] huonwgithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48201,7 +48201,7 @@ def fetch_ieftimov(limit=15):
                 "http://ieftimov.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ieftimov attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48236,7 +48236,7 @@ def fetch_jakeyesbeck(limit=15):
                 "http://jakeyesbeck.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jakeyesbeck attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48271,7 +48271,7 @@ def fetch_jelv(limit=15):
                 "http://jelv.is/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jelv attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48306,7 +48306,7 @@ def fetch_johannesbrodwall(limit=15):
                 "http://johannesbrodwall.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] johannesbrodwall attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48341,7 +48341,7 @@ def fetch_lackingrhoticityblogspot(limit=15):
                 "http://lackingrhoticity.blogspot.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lackingrhoticityblogspot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48376,7 +48376,7 @@ def fetch_lifepluslinuxblogspot(limit=15):
                 "http://lifepluslinux.blogspot.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lifepluslinuxblogspot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48411,7 +48411,7 @@ def fetch_mattmight(limit=15):
                 "http://matt.might.net/articles/feed.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mattmight attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48446,7 +48446,7 @@ def fetch_mattwarren(limit=15):
                 "http://mattwarren.org/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mattwarren attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48481,7 +48481,7 @@ def fetch_neopythonicblogspot(limit=15):
                 "http://neopythonic.blogspot.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] neopythonicblogspot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48516,7 +48516,7 @@ def fetch_nshipster(limit=15):
                 "http://nshipster.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nshipster attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48551,7 +48551,7 @@ def fetch_piotrpasich(limit=15):
                 "http://piotrpasich.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] piotrpasich attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48586,7 +48586,7 @@ def fetch_preshing(limit=15):
                 "http://preshing.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] preshing attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48621,7 +48621,7 @@ def fetch_radek(limit=15):
                 "http://radek.io/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] radek attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48656,7 +48656,7 @@ def fetch_rocksdb(limit=15):
                 "http://rocksdb.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rocksdb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48691,7 +48691,7 @@ def fetch_samsaffron(limit=15):
                 "http://samsaffron.com/posts.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] samsaffron attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48726,7 +48726,7 @@ def fetch_techadroll(limit=15):
                 "http://tech.adroll.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] techadroll attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48761,7 +48761,7 @@ def fetch_techfinn(limit=15):
                 "http://tech.finn.no/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] techfinn attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48796,7 +48796,7 @@ def fetch_techgc(limit=15):
                 "http://tech.gc.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] techgc attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48831,7 +48831,7 @@ def fetch_techblogthescore(limit=15):
                 "http://techblog.thescore.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] techblogthescore attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48866,7 +48866,7 @@ def fetch_tenderlovemaking(limit=15):
                 "http://tenderlovemaking.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tenderlovemaking attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48901,7 +48901,7 @@ def fetch_upcoder(limit=15):
                 "http://upcoder.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] upcoder attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48936,7 +48936,7 @@ def fetch_afronski(limit=15):
                 "http://www.afronski.pl/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] afronski attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -48971,7 +48971,7 @@ def fetch_brendangregg(limit=15):
                 "http://www.brendangregg.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] brendangregg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49006,7 +49006,7 @@ def fetch_evanjones(limit=15):
                 "http://www.evanjones.ca/index.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] evanjones attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49041,7 +49041,7 @@ def fetch_evanmiller(limit=15):
                 "http://www.evanmiller.org/news.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] evanmiller attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49076,7 +49076,7 @@ def fetch_practicallyefficient(limit=15):
                 "http://www.practicallyefficient.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] practicallyefficient attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49111,7 +49111,7 @@ def fetch_wilfredme(limit=15):
                 "http://www.wilfred.me.uk/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] wilfredme attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49146,7 +49146,7 @@ def fetch_yifan(limit=15):
                 "http://yifan.lu/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] yifan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49181,7 +49181,7 @@ def fetch_0xadada(limit=15):
                 "https://0xadada.pub/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] 0xadada attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49216,7 +49216,7 @@ def fetch_8thlight(limit=15):
                 "https://8thlight.com/insights/feed/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] 8thlight attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49251,7 +49251,7 @@ def fetch_advancedweb(limit=15):
                 "https://advancedweb.hu/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] advancedweb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49286,7 +49286,7 @@ def fetch_akrabat(limit=15):
                 "https://akrabat.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] akrabat attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49321,7 +49321,7 @@ def fetch_alanastorm(limit=15):
                 "https://alanastorm.com/feed/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] alanastorm attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49356,7 +49356,7 @@ def fetch_andregarzia(limit=15):
                 "https://andregarzia.com/feeds/all.atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] andregarzia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49391,7 +49391,7 @@ def fetch_androiddevelopersgoogleblog(limit=15):
                 "https://android-developers.googleblog.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] androiddevelopersgoogleblog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49426,7 +49426,7 @@ def fetch_archivejlongster(limit=15):
                 "https://archive.jlongster.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] archivejlongster attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49461,7 +49461,7 @@ def fetch_bandcamptechwordpress(limit=15):
                 "https://bandcamptech.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bandcamptechwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49496,7 +49496,7 @@ def fetch_benchling(limit=15):
                 "https://benchling.engineering/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] benchling attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49531,7 +49531,7 @@ def fetch_blogarkency(limit=15):
                 "https://blog.arkency.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogarkency attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49566,7 +49566,7 @@ def fetch_blogavenuecode(limit=15):
                 "https://blog.avenuecode.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogavenuecode attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49601,7 +49601,7 @@ def fetch_blogblundellappsco(limit=15):
                 "https://blog.blundellapps.co.uk/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogblundellappsco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49636,7 +49636,7 @@ def fetch_blogdeveloperbazaarvoice(limit=15):
                 "https://blog.developer.bazaarvoice.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogdeveloperbazaarvoice attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49671,7 +49671,7 @@ def fetch_blogfedecarg(limit=15):
                 "https://blog.fedecarg.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogfedecarg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49706,7 +49706,7 @@ def fetch_bloggetbootstrap(limit=15):
                 "https://blog.getbootstrap.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bloggetbootstrap attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49741,7 +49741,7 @@ def fetch_bloghypriot(limit=15):
                 "https://blog.hypriot.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bloghypriot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49776,7 +49776,7 @@ def fetch_blogipfs(limit=15):
                 "https://blog.ipfs.tech/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogipfs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49811,7 +49811,7 @@ def fetch_blogjgrossi(limit=15):
                 "https://blog.jgrossi.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogjgrossi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49846,7 +49846,7 @@ def fetch_blogjoda(limit=15):
                 "https://blog.joda.org/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogjoda attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49881,7 +49881,7 @@ def fetch_blogjooq(limit=15):
                 "https://blog.jooq.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogjooq attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49916,7 +49916,7 @@ def fetch_blogmitrichev(limit=15):
                 "https://blog.mitrichev.ch/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogmitrichev attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49951,7 +49951,7 @@ def fetch_blogmonstermuffin(limit=15):
                 "https://blog.monstermuffin.org/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogmonstermuffin attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -49986,7 +49986,7 @@ def fetch_blogocto(limit=15):
                 "https://blog.octo.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogocto attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50021,7 +50021,7 @@ def fetch_blogpalantir(limit=15):
                 "https://blog.palantir.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogpalantir attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50056,7 +50056,7 @@ def fetch_blogpchudzik(limit=15):
                 "https://blog.pchudzik.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogpchudzik attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50091,7 +50091,7 @@ def fetch_blogreverberate(limit=15):
                 "https://blog.reverberate.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogreverberate attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50126,7 +50126,7 @@ def fetch_blogrinesi(limit=15):
                 "https://blog.rinesi.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogrinesi attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50161,7 +50161,7 @@ def fetch_blogrtwilson(limit=15):
                 "https://blog.rtwilson.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogrtwilson attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50196,7 +50196,7 @@ def fetch_blogsensible(limit=15):
                 "https://blog.sensible.io/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogsensible attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50231,7 +50231,7 @@ def fetch_blogsjanestreet(limit=15):
                 "https://blogs.janestreet.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogsjanestreet attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50266,7 +50266,7 @@ def fetch_blogsnvidia(limit=15):
                 "https://blogs.nvidia.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogsnvidia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50301,7 +50301,7 @@ def fetch_bohops(limit=15):
                 "https://bohops.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bohops attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50336,7 +50336,7 @@ def fetch_brendaneich(limit=15):
                 "https://brendaneich.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] brendaneich attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50371,7 +50371,7 @@ def fetch_capgeminigithub(limit=15):
                 "https://capgemini.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] capgeminigithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50406,7 +50406,7 @@ def fetch_carlosbecker(limit=15):
                 "https://carlosbecker.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] carlosbecker attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50441,7 +50441,7 @@ def fetch_cloudblogcsc(limit=15):
                 "https://cloud.blog.csc.fi/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cloudblogcsc attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50476,7 +50476,7 @@ def fetch_codeblender(limit=15):
                 "https://code.blender.org/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codeblender attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50511,7 +50511,7 @@ def fetch_codedblock(limit=15):
                 "https://code.dblock.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codedblock attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50546,7 +50546,7 @@ def fetch_codebeforethehorsetumblr(limit=15):
                 "https://codebeforethehorse.tumblr.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codebeforethehorsetumblr attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50581,7 +50581,7 @@ def fetch_codeblogjonskeet(limit=15):
                 "https://codeblog.jonskeet.uk/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codeblogjonskeet attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50616,7 +50616,7 @@ def fetch_codewithoutrules(limit=15):
                 "https://codewithoutrules.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] codewithoutrules attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50651,7 +50651,7 @@ def fetch_conductofcode(limit=15):
                 "https://conductofcode.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] conductofcode attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50686,7 +50686,7 @@ def fetch_crystallang(limit=15):
                 "https://crystal-lang.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] crystallang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50721,7 +50721,7 @@ def fetch_davidwalsh(limit=15):
                 "https://davidwalsh.name/feed/atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] davidwalsh attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50756,7 +50756,7 @@ def fetch_deanhume(limit=15):
                 "https://deanhume.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] deanhume attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50791,7 +50791,7 @@ def fetch_devblogkogan(limit=15):
                 "https://devblog.kogan.com/blog?format=rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] devblogkogan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50826,7 +50826,7 @@ def fetch_developerssoundcloud(limit=15):
                 "https://developers.soundcloud.com/blog/blog.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] developerssoundcloud attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50861,7 +50861,7 @@ def fetch_domenicoluciani(limit=15):
                 "https://domenicoluciani.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] domenicoluciani attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50896,7 +50896,7 @@ def fetch_dragan(limit=15):
                 "https://dragan.rocks/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dragan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50931,7 +50931,7 @@ def fetch_drewdevault(limit=15):
                 "https://drewdevault.com/blog/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] drewdevault attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -50966,7 +50966,7 @@ def fetch_eaf4(limit=15):
                 "https://eaf4.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] eaf4 attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51001,7 +51001,7 @@ def fetch_englocalytics(limit=15):
                 "https://eng.localytics.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] englocalytics attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51036,7 +51036,7 @@ def fetch_engblognextdoor(limit=15):
                 "https://engblog.nextdoor.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engblognextdoor attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51071,7 +51071,7 @@ def fetch_engineeringatspotify(limit=15):
                 "https://engineering.atspotify.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineeringatspotify attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51106,7 +51106,7 @@ def fetch_engineeringcerner(limit=15):
                 "https://engineering.cerner.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineeringcerner attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51141,7 +51141,7 @@ def fetch_engineeringclever(limit=15):
                 "https://engineering.clever.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineeringclever attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51176,7 +51176,7 @@ def fetch_engineeringziffmedia(limit=15):
                 "https://engineering.ziffmedia.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineeringziffmedia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51211,7 +51211,7 @@ def fetch_engineroomteamwork(limit=15):
                 "https://engineroom.teamwork.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] engineroomteamwork attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51246,7 +51246,7 @@ def fetch_ericlippert(limit=15):
                 "https://ericlippert.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ericlippert attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51281,7 +51281,7 @@ def fetch_evanhahn(limit=15):
                 "https://evanhahn.com/blog/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] evanhahn attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51316,7 +51316,7 @@ def fetch_eviltrout(limit=15):
                 "https://eviltrout.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] eviltrout attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51351,7 +51351,7 @@ def fetch_laravelnews(limit=15):
                 "https://feed.laravel-news.com/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] laravelnews attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51386,7 +51386,7 @@ def fetch_freek(limit=15):
                 "https://freek.dev/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] freek attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51421,7 +51421,7 @@ def fetch_freeletics(limit=15):
                 "https://freeletics.engineering/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] freeletics attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51456,7 +51456,7 @@ def fetch_fullstack(limit=15):
                 "https://fullstack.info/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fullstack attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51491,7 +51491,7 @@ def fetch_gocardless(limit=15):
                 "https://gocardless.com/content-platform/rss/resources.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gocardless attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51526,7 +51526,7 @@ def fetch_hashrocket(limit=15):
                 "https://hashrocket.com/blog.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hashrocket attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51561,7 +51561,7 @@ def fetch_haydenjames(limit=15):
                 "https://haydenjames.io/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] haydenjames attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51596,7 +51596,7 @@ def fetch_highscalability(limit=15):
                 "https://highscalability.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] highscalability attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51631,7 +51631,7 @@ def fetch_hookrace(limit=15):
                 "https://hookrace.net/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hookrace attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51666,7 +51666,7 @@ def fetch_hyegar(limit=15):
                 "https://hyegar.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hyegar attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51701,7 +51701,7 @@ def fetch_ideapopcount(limit=15):
                 "https://idea.popcount.org/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ideapopcount attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51736,7 +51736,7 @@ def fetch_idiosyncraticruby(limit=15):
                 "https://idiosyncratic-ruby.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] idiosyncraticruby attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51771,7 +51771,7 @@ def fetch_idontgetoutmuchwordpress(limit=15):
                 "https://idontgetoutmuch.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] idontgetoutmuchwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51806,7 +51806,7 @@ def fetch_ilyagrigorik(limit=15):
                 "https://ilya.grigorik.com/essays/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ilyagrigorik attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51841,7 +51841,7 @@ def fetch_iridakos(limit=15):
                 "https://iridakos.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] iridakos attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51876,7 +51876,7 @@ def fetch_jackofspades(limit=15):
                 "https://jack.ofspades.com/rss/index.html",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jackofspades attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51911,7 +51911,7 @@ def fetch_jaketrent(limit=15):
                 "https://jaketrent.com/post/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jaketrent attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51946,7 +51946,7 @@ def fetch_jakewharton(limit=15):
                 "https://jakewharton.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jakewharton attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -51981,7 +51981,7 @@ def fetch_jerrygamblin(limit=15):
                 "https://jerrygamblin.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jerrygamblin attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52016,7 +52016,7 @@ def fetch_jes(limit=15):
                 "https://jes.al/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jes attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52051,7 +52051,7 @@ def fetch_joshtronic(limit=15):
                 "https://joshtronic.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] joshtronic attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52086,7 +52086,7 @@ def fetch_jtreminio(limit=15):
                 "https://jtreminio.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jtreminio attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52121,7 +52121,7 @@ def fetch_kevinburke(limit=15):
                 "https://kevin.burke.dev/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kevinburke attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52156,7 +52156,7 @@ def fetch_lambdablinkit(limit=15):
                 "https://lambda.blinkit.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lambdablinkit attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52191,7 +52191,7 @@ def fetch_lg(limit=15):
                 "https://lg.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lg attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52226,7 +52226,7 @@ def fetch_masnun(limit=15):
                 "https://masnun.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] masnun attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52261,7 +52261,7 @@ def fetch_mattaimonetti(limit=15):
                 "https://matt.aimonetti.net/posts/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mattaimonetti attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52296,7 +52296,7 @@ def fetch_mherman(limit=15):
                 "https://mherman.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mherman attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52331,7 +52331,7 @@ def fetch_mirocupak(limit=15):
                 "https://mirocupak.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mirocupak attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52366,7 +52366,7 @@ def fetch_multithreadedstitchfix(limit=15):
                 "https://multithreaded.stitchfix.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] multithreadedstitchfix attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52401,7 +52401,7 @@ def fetch_nativeguruwordpress(limit=15):
                 "https://nativeguru.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nativeguruwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52436,7 +52436,7 @@ def fetch_nickdesaulniersgithub(limit=15):
                 "https://nickdesaulniers.github.io/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nickdesaulniersgithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52471,7 +52471,7 @@ def fetch_nikolabreznjak(limit=15):
                 "https://nikola-breznjak.com/blog/feed/atom/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nikolabreznjak attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52506,7 +52506,7 @@ def fetch_nordicapis(limit=15):
                 "https://nordicapis.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nordicapis attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52541,7 +52541,7 @@ def fetch_ocramiusgithub(limit=15):
                 "https://ocramius.github.io/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ocramiusgithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52576,7 +52576,7 @@ def fetch_oleb(limit=15):
                 "https://oleb.net/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] oleb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52611,7 +52611,7 @@ def fetch_planetmozilla(limit=15):
                 "https://planet.mozilla.org/releng/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] planetmozilla attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52646,7 +52646,7 @@ def fetch_postmarkapp(limit=15):
                 "https://postmarkapp.com/blog/feed.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] postmarkapp attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52681,7 +52681,7 @@ def fetch_reactjsnews(limit=15):
                 "https://reactjsnews.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] reactjsnews attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52716,7 +52716,7 @@ def fetch_realpython(limit=15):
                 "https://realpython.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] realpython attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52751,7 +52751,7 @@ def fetch_regulargeek(limit=15):
                 "https://regulargeek.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] regulargeek attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52786,7 +52786,7 @@ def fetch_rhettingerwordpress(limit=15):
                 "https://rhettinger.wordpress.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rhettingerwordpress attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52821,7 +52821,7 @@ def fetch_ruslanspivak(limit=15):
                 "https://ruslanspivak.com/feeds/all.atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ruslanspivak attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52856,7 +52856,7 @@ def fetch_spinatomicobject(limit=15):
                 "https://spin.atomicobject.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] spinatomicobject attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52891,7 +52891,7 @@ def fetch_steveyeggeblogspot(limit=15):
                 "https://steve-yegge.blogspot.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] steveyeggeblogspot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52926,7 +52926,7 @@ def fetch_syndicationthedailywtf(limit=15):
                 "https://syndication.thedailywtf.com/TheDailyWtf",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] syndicationthedailywtf attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52961,7 +52961,7 @@ def fetch_tania(limit=15):
                 "https://tania.dev/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tania attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -52996,7 +52996,7 @@ def fetch_targetgithub(limit=15):
                 "https://target.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] targetgithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53031,7 +53031,7 @@ def fetch_techfindmypast(limit=15):
                 "https://tech.findmypast.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] techfindmypast attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53066,7 +53066,7 @@ def fetch_techolx(limit=15):
                 "https://tech.olx.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] techolx attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53101,7 +53101,7 @@ def fetch_techsmallimprovements(limit=15):
                 "https://tech.small-improvements.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] techsmallimprovements attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53136,7 +53136,7 @@ def fetch_themodernlifegithub(limit=15):
                 "https://themodernlife.github.io/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] themodernlifegithub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53171,7 +53171,7 @@ def fetch_umbrellacisco(limit=15):
                 "https://umbrella.cisco.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] umbrellacisco attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53206,7 +53206,7 @@ def fetch_undocumentedmatlab(limit=15):
                 "https://undocumentedmatlab.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] undocumentedmatlab attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53241,7 +53241,7 @@ def fetch_useyourloaf(limit=15):
                 "https://useyourloaf.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] useyourloaf attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53276,7 +53276,7 @@ def fetch_vinted(limit=15):
                 "https://vinted.engineering//atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] vinted attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53311,7 +53311,7 @@ def fetch_vladmihalcea(limit=15):
                 "https://vladmihalcea.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] vladmihalcea attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53346,7 +53346,7 @@ def fetch_wordsfilippo(limit=15):
                 "https://words.filippo.io/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] wordsfilippo attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53381,7 +53381,7 @@ def fetch_9lessons(limit=15):
                 "https://www.9lessons.info/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] 9lessons attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53416,7 +53416,7 @@ def fetch_aboutwayfair(limit=15):
                 "https://www.aboutwayfair.com/careers/tech-blog.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] aboutwayfair attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53451,7 +53451,7 @@ def fetch_andrewcbancroft(limit=15):
                 "https://www.andrewcbancroft.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] andrewcbancroft attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53486,7 +53486,7 @@ def fetch_canva(limit=15):
                 "https://www.canva.dev/blog/engineering/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] canva attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53521,7 +53521,7 @@ def fetch_confluent(limit=15):
                 "https://www.confluent.io/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] confluent attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53556,7 +53556,7 @@ def fetch_cppstories(limit=15):
                 "https://www.cppstories.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cppstories attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53591,7 +53591,7 @@ def fetch_cscolumbia(limit=15):
                 "https://www.cs.columbia.edu/~smb/blog/control/blog.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cscolumbia attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53626,7 +53626,7 @@ def fetch_darkcoding(limit=15):
                 "https://www.darkcoding.net/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] darkcoding attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53661,7 +53661,7 @@ def fetch_databricks(limit=15):
                 "https://www.databricks.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] databricks attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53696,7 +53696,7 @@ def fetch_dereuromark(limit=15):
                 "https://www.dereuromark.de/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] dereuromark attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53731,7 +53731,7 @@ def fetch_docker(limit=15):
                 "https://www.docker.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] docker attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53766,7 +53766,7 @@ def fetch_ebayinc(limit=15):
                 "https://www.ebayinc.com/stories/news/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ebayinc attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53801,7 +53801,7 @@ def fetch_gosquared(limit=15):
                 "https://www.gosquared.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gosquared attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53836,7 +53836,7 @@ def fetch_haptik(limit=15):
                 "https://www.haptik.ai/tech/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] haptik attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53871,7 +53871,7 @@ def fetch_hostinger(limit=15):
                 "https://www.hostinger.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] hostinger attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53906,7 +53906,7 @@ def fetch_jeremykun(limit=15):
                 "https://www.jeremykun.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jeremykun attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53941,7 +53941,7 @@ def fetch_justinweiss(limit=15):
                 "https://www.justinweiss.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] justinweiss attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -53976,7 +53976,7 @@ def fetch_maptiler(limit=15):
                 "https://www.maptiler.com/news/feed/posts.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] maptiler attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54011,7 +54011,7 @@ def fetch_mattcutts(limit=15):
                 "https://www.mattcutts.com/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mattcutts attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54046,7 +54046,7 @@ def fetch_michaelcrump(limit=15):
                 "https://www.michaelcrump.net/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] michaelcrump attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54081,7 +54081,7 @@ def fetch_miqu(limit=15):
                 "https://www.miqu.me/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] miqu attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54116,7 +54116,7 @@ def fetch_nateberkopec(limit=15):
                 "https://www.nateberkopec.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nateberkopec attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54151,7 +54151,7 @@ def fetch_novoda(limit=15):
                 "https://www.novoda.com/blog/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] novoda attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54186,7 +54186,7 @@ def fetch_pubnub(limit=15):
                 "https://www.pubnub.com/feed/blog/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pubnub attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54221,7 +54221,7 @@ def fetch_raywenderlich(limit=15):
                 "https://www.raywenderlich.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] raywenderlich attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54256,7 +54256,7 @@ def fetch_reagroup(limit=15):
                 "https://www.rea-group.com/category/tech/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] reagroup attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54291,7 +54291,7 @@ def fetch_redlang(limit=15):
                 "https://www.red-lang.org/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] redlang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54326,7 +54326,7 @@ def fetch_rosehosting(limit=15):
                 "https://www.rosehosting.com/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rosehosting attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54361,7 +54361,7 @@ def fetch_schakko(limit=15):
                 "https://www.schakko.de/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] schakko attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54396,7 +54396,7 @@ def fetch_serverless(limit=15):
                 "https://www.serverless.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] serverless attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54431,7 +54431,7 @@ def fetch_surveymonkey(limit=15):
                 "https://www.surveymonkey.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] surveymonkey attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54466,7 +54466,7 @@ def fetch_thecodedself(limit=15):
                 "https://www.thecodedself.com/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thecodedself attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54501,7 +54501,7 @@ def fetch_theguardian(limit=15):
                 "https://www.theguardian.com/info/developer-blog/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] theguardian attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54536,7 +54536,7 @@ def fetch_thepolyglotdeveloper(limit=15):
                 "https://www.thepolyglotdeveloper.com/blog/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thepolyglotdeveloper attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54571,7 +54571,7 @@ def fetch_tjmaher(limit=15):
                 "https://www.tjmaher.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tjmaher attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54606,7 +54606,7 @@ def fetch_twilio(limit=15):
                 "https://www.twilio.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] twilio attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54641,7 +54641,7 @@ def fetch_windytan(limit=15):
                 "https://www.windytan.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] windytan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54676,7 +54676,7 @@ def fetch_zachholman(limit=15):
                 "https://zachholman.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] zachholman attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54711,7 +54711,7 @@ def fetch_zolmeister(limit=15):
                 "https://zolmeister.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] zolmeister attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54746,7 +54746,7 @@ def fetch_rprogramming(limit=15):
                 "https://www.reddit.com/r/programming/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rprogramming attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54781,7 +54781,7 @@ def fetch_rwebdev(limit=15):
                 "https://www.reddit.com/r/webdev/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rwebdev attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54816,7 +54816,7 @@ def fetch_rgolang(limit=15):
                 "https://www.reddit.com/r/golang/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rgolang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54851,7 +54851,7 @@ def fetch_rrust(limit=15):
                 "https://www.reddit.com/r/rust/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rrust attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54886,7 +54886,7 @@ def fetch_rpython(limit=15):
                 "https://www.reddit.com/r/python/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rpython attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54921,7 +54921,7 @@ def fetch_rjavascript(limit=15):
                 "https://www.reddit.com/r/javascript/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rjavascript attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54956,7 +54956,7 @@ def fetch_rtypescript(limit=15):
                 "https://www.reddit.com/r/typescript/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rtypescript attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -54991,7 +54991,7 @@ def fetch_rdevops(limit=15):
                 "https://www.reddit.com/r/devops/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rdevops attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55026,7 +55026,7 @@ def fetch_rsysadmin(limit=15):
                 "https://www.reddit.com/r/sysadmin/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rsysadmin attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55061,7 +55061,7 @@ def fetch_rnetsec(limit=15):
                 "https://www.reddit.com/r/netsec/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rnetsec attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55096,7 +55096,7 @@ def fetch_rkubernetes(limit=15):
                 "https://www.reddit.com/r/kubernetes/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rkubernetes attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55131,7 +55131,7 @@ def fetch_raws(limit=15):
                 "https://www.reddit.com/r/aws/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] raws attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55166,7 +55166,7 @@ def fetch_rcompsci(limit=15):
                 "https://www.reddit.com/r/compsci/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rcompsci attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55201,7 +55201,7 @@ def fetch_rcoding(limit=15):
                 "https://www.reddit.com/r/coding/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rcoding attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55236,7 +55236,7 @@ def fetch_rtechnology(limit=15):
                 "https://www.reddit.com/r/technology/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rtechnology attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55271,7 +55271,7 @@ def fetch_rartificial(limit=15):
                 "https://www.reddit.com/r/artificial/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rartificial attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55306,7 +55306,7 @@ def fetch_rlisp(limit=15):
                 "https://www.reddit.com/r/lisp/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rlisp attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55341,7 +55341,7 @@ def fetch_rdatascience(limit=15):
                 "https://www.reddit.com/r/datascience/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rdatascience attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55376,7 +55376,7 @@ def fetch_rhaskell(limit=15):
                 "https://www.reddit.com/r/haskell/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rhaskell attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55411,7 +55411,7 @@ def fetch_scripting(limit=15):
                 "http://scripting.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] scripting attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55446,7 +55446,7 @@ def fetch_albertodebortoli(limit=15):
                 "https://albertodebortoli.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] albertodebortoli attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55481,7 +55481,7 @@ def fetch_apiaxios(limit=15):
                 "https://api.axios.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] apiaxios attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55516,7 +55516,7 @@ def fetch_atp(limit=15):
                 "https://atp.fm/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] atp attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55551,7 +55551,7 @@ def fetch_augmentedcode(limit=15):
                 "https://augmentedcode.io/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] augmentedcode attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55586,7 +55586,7 @@ def fetch_blogdanlew(limit=15):
                 "https://blog.danlew.net/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] blogdanlew attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55621,7 +55621,7 @@ def fetch_chrynan(limit=15):
                 "https://chrynan.codes/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] chrynan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55656,7 +55656,7 @@ def fetch_okkotlin(limit=15):
                 "https://okkotlin.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] okkotlin attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55691,7 +55691,7 @@ def fetch_patedcdn(limit=15):
                 "https://pa.tedcdn.com/feeds/talks.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] patedcdn attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55726,7 +55726,7 @@ def fetch_proandroiddev(limit=15):
                 "https://proandroiddev.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] proandroiddev attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55761,7 +55761,7 @@ def fetch_publicobject(limit=15):
                 "https://publicobject.com/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] publicobject attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55796,7 +55796,7 @@ def fetch_readwrite(limit=15):
                 "https://readwrite.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] readwrite attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55831,7 +55831,7 @@ def fetch_saket(limit=15):
                 "https://saket.me/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] saket attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55866,7 +55866,7 @@ def fetch_softwareengineeringdaily(limit=15):
                 "https://softwareengineeringdaily.com/category/podcast/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] softwareengineeringdaily attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55901,7 +55901,7 @@ def fetch_storesteampowered(limit=15):
                 "https://store.steampowered.com/feeds/news.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] storesteampowered attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55936,7 +55936,7 @@ def fetch_swiftbysundell(limit=15):
                 "https://swiftbysundell.com/feed.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] swiftbysundell attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -55971,7 +55971,7 @@ def fetch_swiftrocks(limit=15):
                 "https://swiftrocks.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] swiftrocks attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56006,7 +56006,7 @@ def fetch_thenextweb(limit=15):
                 "https://thenextweb.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thenextweb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56041,7 +56041,7 @@ def fetch_thewomenintechshow(limit=15):
                 "https://thewomenintechshow.com/category/podcast/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thewomenintechshow attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56076,7 +56076,7 @@ def fetch_uxdesign(limit=15):
                 "https://uxdesign.cc/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] uxdesign attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56111,7 +56111,7 @@ def fetch_uxmovement(limit=15):
                 "https://uxmovement.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] uxmovement attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56146,7 +56146,7 @@ def fetch_cultofandroid(limit=15):
                 "https://www.cultofandroid.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cultofandroid attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56181,7 +56181,7 @@ def fetch_loopinsight(limit=15):
                 "https://www.loopinsight.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] loopinsight attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56216,7 +56216,7 @@ def fetch_omnycontent(limit=15):
                 "https://www.omnycontent.com/d/playlist/aaea4e69-af51-495e-afc9-a9760146922b/2a195077-f014-41d2-8313-ab190186b4c2/277bcd5c-0a05-4c14-8ba6-ab190186b4d5/podcast.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] omnycontent attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56251,7 +56251,7 @@ def fetch_relay(limit=15):
                 "https://www.relay.fm/analogue/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] relay attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56286,7 +56286,7 @@ def fetch_space(limit=15):
                 "https://www.space.com/feeds/all",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] space attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56321,7 +56321,7 @@ def fetch_thecrazyprogrammer(limit=15):
                 "https://www.thecrazyprogrammer.com/category/programming/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thecrazyprogrammer attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56356,7 +56356,7 @@ def fetch_wired(limit=15):
                 "https://www.wired.com/feed/category/science/latest/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] wired attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56391,7 +56391,7 @@ def fetch_wonderhowto(limit=15):
                 "https://www.wonderhowto.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] wonderhowto attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56426,7 +56426,7 @@ def fetch_zacsweers(limit=15):
                 "https://www.zacsweers.dev/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] zacsweers attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56461,7 +56461,7 @@ def fetch_xkcd(limit=15):
                 "https://xkcd.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] xkcd attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56496,7 +56496,7 @@ def fetch_zarah(limit=15):
                 "https://zarah.dev/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] zarah attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56531,7 +56531,7 @@ def fetch_appledevnews(limit=15):
                 "https://developer.apple.com/news/rss/news.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] appledevnews attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56566,7 +56566,7 @@ def fetch_cynicaldeveloper(limit=15):
                 "https://cynicaldeveloper.com/feed/podcast",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] cynicaldeveloper attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56601,7 +56601,7 @@ def fetch_lifehacker(limit=15):
                 "https://lifehacker.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lifehacker attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56636,7 +56636,7 @@ def fetch_gizmodoscience(limit=15):
                 "https://gizmodo.com/tag/science/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] gizmodoscience attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56671,7 +56671,7 @@ def fetch_intercomb(limit=15):
                 "https://www.intercom.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] intercomb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56706,7 +56706,7 @@ def fetch_androidguys(limit=15):
                 "https://www.androidguys.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] androidguys attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56741,7 +56741,7 @@ def fetch_androidauthoritypod(limit=15):
                 "https://androidauthority.libsyn.com/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] androidauthoritypod attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56776,7 +56776,7 @@ def fetch_techcentral(limit=15):
                 "https://techcentral.co.za/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] techcentral attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56811,7 +56811,7 @@ def fetch_bradfeld(limit=15):
                 "https://feld.com/archives/tag/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] bradfeld attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56846,7 +56846,7 @@ def fetch_designboom(limit=15):
                 "https://www.designboom.com/design/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] designboom attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56881,7 +56881,7 @@ def fetch_designmilk(limit=15):
                 "https://design-milk.com/category/interior-design/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] designmilk attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56916,7 +56916,7 @@ def fetch_twis(limit=15):
                 "http://www.twis.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] twis attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56951,7 +56951,7 @@ def fetch_planetpython(limit=15):
                 "https://planetpython.org/rss20.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] planetpython attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -56986,7 +56986,7 @@ def fetch_planetgnome(limit=15):
                 "https://planet.gnome.org/rss20.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] planetgnome attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57021,7 +57021,7 @@ def fetch_planetdebian(limit=15):
                 "https://planet.debian.org/rss20.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] planetdebian attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57056,7 +57056,7 @@ def fetch_planethaskell(limit=15):
                 "https://planet.haskell.org/rss20.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] planethaskell attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57091,7 +57091,7 @@ def fetch_planetemacs(limit=15):
                 "https://planet.emacslife.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] planetemacs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57126,7 +57126,7 @@ def fetch_planetfreedesktop(limit=15):
                 "https://planet.freedesktop.org/rss20.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] planetfreedesktop attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57161,7 +57161,7 @@ def fetch_planetpostgresql(limit=15):
                 "https://planet.postgresql.org/rss20.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] planetpostgresql attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57196,7 +57196,7 @@ def fetch_planetclojure(limit=15):
                 "https://planet.clojure.in/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] planetclojure attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57231,7 +57231,7 @@ def fetch_planetjabber(limit=15):
                 "https://planet.jabber.org/rss20.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] planetjabber attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57266,7 +57266,7 @@ def fetch_planetfedora(limit=15):
                 "https://planet.fedoraproject.org/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] planetfedora attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57301,7 +57301,7 @@ def fetch_andrewchen(limit=15):
                 "http://andrewchen.co/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] andrewchen attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57336,7 +57336,7 @@ def fetch_benevans(limit=15):
                 "http://ben-evans.com/benedictevans?format=rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] benevans attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57371,7 +57371,7 @@ def fetch_evjang(limit=15):
                 "http://blog.evjang.com/feeds/posts/default?alt=rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] evjang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57406,7 +57406,7 @@ def fetch_samaltman(limit=15):
                 "http://blog.samaltman.com/posts.atom",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] samaltman attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57441,7 +57441,7 @@ def fetch_googleresearch(limit=15):
                 "http://googleresearch.blogspot.com/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] googleresearch attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57476,7 +57476,7 @@ def fetch_jwegan(limit=15):
                 "http://jwegan.com/feed/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] jwegan attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57511,7 +57511,7 @@ def fetch_magenta(limit=15):
                 "http://magenta.tensorflow.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] magenta attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57546,7 +57546,7 @@ def fetch_nature(limit=15):
                 "http://www.nature.com/nature/current_issue/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] nature attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57581,7 +57581,7 @@ def fetch_quanta(limit=15):
                 "http://www.quantamagazine.org/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] quanta attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57616,7 +57616,7 @@ def fetch_amasad(limit=15):
                 "https://amasad.me/rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] amasad attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57651,7 +57651,7 @@ def fetch_mlcmu(limit=15):
                 "https://blog.ml.cmu.edu/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] mlcmu attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57686,7 +57686,7 @@ def fetch_browsereng(limit=15):
                 "https://browser.engineering/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] browsereng attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57721,7 +57721,7 @@ def fetch_commoncog(limit=15):
                 "https://commoncog.com/blog/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] commoncog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57756,7 +57756,7 @@ def fetch_fsblog(limit=15):
                 "https://fs.blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] fsblog attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57791,7 +57791,7 @@ def fetch_geohot(limit=15):
                 "https://geohot.github.io/blog/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] geohot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57826,7 +57826,7 @@ def fetch_ixd(limit=15):
                 "https://interaction-design.org/rss/site_news.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ixd attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57861,7 +57861,7 @@ def fetch_lethain(limit=15):
                 "https://lethain.com/feeds/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lethain attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57896,7 +57896,7 @@ def fetch_lilianweng(limit=15):
                 "https://lilianweng.github.io/lil-log/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] lilianweng attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57931,7 +57931,7 @@ def fetch_productlife(limit=15):
                 "https://productlife.to/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] productlife attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -57966,7 +57966,7 @@ def fetch_pytorch(limit=15):
                 "https://pytorch.org/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] pytorch attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58001,7 +58001,7 @@ def fetch_slackdesign(limit=15):
                 "https://slack.design/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] slackdesign attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58036,7 +58036,7 @@ def fetch_techcrunch(limit=15):
                 "https://techcrunch.com/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] techcrunch attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58071,7 +58071,7 @@ def fetch_thegradient(limit=15):
                 "https://thegradient.pub/rss/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thegradient attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58106,7 +58106,7 @@ def fetch_tds(limit=15):
                 "https://towardsdatascience.com/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] tds attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58141,7 +58141,7 @@ def fetch_uxmatters(limit=15):
                 "https://uxmatters.com/index.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] uxmatters attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58176,7 +58176,7 @@ def fetch_uxplanet(limit=15):
                 "https://uxplanet.org/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] uxplanet attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58211,7 +58211,7 @@ def fetch_amazonscience(limit=15):
                 "https://www.amazon.science/index.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] amazonscience attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58246,7 +58246,7 @@ def fetch_uniteai(limit=15):
                 "https://www.unite.ai/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] uniteai attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58281,7 +58281,7 @@ def fetch_neverworkintheory(limit=15):
                 "http://neverworkintheory.org/feed.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] neverworkintheory attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58316,7 +58316,7 @@ def fetch_softwareprocesses(limit=15):
                 "http://softwareprocess.es/blog/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] softwareprocesses attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58351,7 +58351,7 @@ def fetch_spinellis(limit=15):
                 "http://www.spinellis.gr/blog/dds-blog-rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] spinellis attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58386,7 +58386,7 @@ def fetch_kaggarwal(limit=15):
                 "http://kaggarwal32.blogspot.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] kaggarwal attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58421,7 +58421,7 @@ def fetch_thoughtsofmei(limit=15):
                 "http://thoughtsofmei.blogspot.com/feeds/posts/default",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] thoughtsofmei attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58456,7 +58456,7 @@ def fetch_rnode(limit=15):
                 "https://www.reddit.com/r/node/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rnode attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58491,7 +58491,7 @@ def fetch_rreactjs(limit=15):
                 "https://www.reddit.com/r/reactjs/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rreactjs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58526,7 +58526,7 @@ def fetch_rdocker(limit=15):
                 "https://www.reddit.com/r/docker/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rdocker attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58561,7 +58561,7 @@ def fetch_rpostgresql(limit=15):
                 "https://www.reddit.com/r/PostgreSQL/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rpostgresql attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58596,7 +58596,7 @@ def fetch_rphp(limit=15):
                 "https://www.reddit.com/r/PHP/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rphp attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58631,7 +58631,7 @@ def fetch_rlaravel(limit=15):
                 "https://www.reddit.com/r/laravel/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rlaravel attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58666,7 +58666,7 @@ def fetch_raskprogramming(limit=15):
                 "https://www.reddit.com/r/AskProgramming/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] raskprogramming attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58701,7 +58701,7 @@ def fetch_rdotnet(limit=15):
                 "https://www.reddit.com/r/dotnet/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rdotnet attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58736,7 +58736,7 @@ def fetch_rwebdesign(limit=15):
                 "https://www.reddit.com/r/web_design/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rwebdesign attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58771,7 +58771,7 @@ def fetch_rfrontend(limit=15):
                 "https://www.reddit.com/r/Frontend/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rfrontend attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58806,7 +58806,7 @@ def fetch_rdataengineering(limit=15):
                 "https://www.reddit.com/r/dataengineering/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rdataengineering attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58841,7 +58841,7 @@ def fetch_ropensource(limit=15):
                 "https://www.reddit.com/r/opensource/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] ropensource attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58876,7 +58876,7 @@ def fetch_rselfhosted(limit=15):
                 "https://www.reddit.com/r/selfhosted/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rselfhosted attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58911,7 +58911,7 @@ def fetch_rexperienceddevs(limit=15):
                 "https://www.reddit.com/r/ExperiencedDevs/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rexperienceddevs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58946,7 +58946,7 @@ def fetch_relixir(limit=15):
                 "https://www.reddit.com/r/elixir/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] relixir attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -58981,7 +58981,7 @@ def fetch_rscala(limit=15):
                 "https://www.reddit.com/r/scala/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rscala attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59016,7 +59016,7 @@ def fetch_rkotlin(limit=15):
                 "https://www.reddit.com/r/Kotlin/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rkotlin attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59051,7 +59051,7 @@ def fetch_rswift(limit=15):
                 "https://www.reddit.com/r/swift/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rswift attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59086,7 +59086,7 @@ def fetch_rjava(limit=15):
                 "https://www.reddit.com/r/java/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rjava attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59121,7 +59121,7 @@ def fetch_rcpp(limit=15):
                 "https://www.reddit.com/r/cpp/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rcpp attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59156,7 +59156,7 @@ def fetch_rdartlang(limit=15):
                 "https://www.reddit.com/r/dartlang/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rdartlang attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59191,7 +59191,7 @@ def fetch_relm(limit=15):
                 "https://www.reddit.com/r/elm/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] relm attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59226,7 +59226,7 @@ def fetch_rclojure(limit=15):
                 "https://www.reddit.com/r/Clojure/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rclojure attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59261,7 +59261,7 @@ def fetch_rgamedev(limit=15):
                 "https://www.reddit.com/r/gamedev/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rgamedev attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59296,7 +59296,7 @@ def fetch_rdjango(limit=15):
                 "https://www.reddit.com/r/django/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rdjango attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59331,7 +59331,7 @@ def fetch_rnextjs(limit=15):
                 "https://www.reddit.com/r/nextjs/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rnextjs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59366,7 +59366,7 @@ def fetch_rsveltejs(limit=15):
                 "https://www.reddit.com/r/sveltejs/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rsveltejs attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59401,7 +59401,7 @@ def fetch_rangular(limit=15):
                 "https://www.reddit.com/r/Angular2/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rangular attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59436,7 +59436,7 @@ def fetch_rmongodb(limit=15):
                 "https://www.reddit.com/r/mongodb/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rmongodb attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59471,7 +59471,7 @@ def fetch_rredis(limit=15):
                 "https://www.reddit.com/r/redis/.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] rredis attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59505,7 +59505,7 @@ def fetch_slashdot(limit=15):
                 "https://rss.slashdot.org/Slashdot/slashdotMain",
                 headers={"User-Agent": UA, "Accept": "application/rss+xml"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] slashdot attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59537,7 +59537,7 @@ def fetch_arstechnica(limit=15):
                 "https://feeds.arstechnica.com/arstechnica/index",
                 headers={"User-Agent": UA, "Accept": "application/rss+xml"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] arstechnica attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59571,7 +59571,7 @@ def fetch_theverge(limit=15):
                 "https://www.theverge.com/rss/index.xml",
                 headers={"User-Agent": UA, "Accept": "application/atom+xml"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] theverge attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -59615,7 +59615,7 @@ def fetch_arxiv(limit=15):
             req = urllib.request.Request(
                 url, headers={"User-Agent": UA, "Accept": "application/atom+xml"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8"))
+                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
             break
         except Exception as e:
             print(f"  [warn] arxiv attempt {attempt + 1} failed: {e}", file=sys.stderr)
