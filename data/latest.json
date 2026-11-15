@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T06:40:19.830210+00:00",
+  "generated_at": "2026-11-15T06:43:42.591001+00:00",
   "date": "2026-11-15",
   "sources": {
     "hackernews": 20,
@@ -8,17 +8,18 @@
     "lobsters": 15,
     "devto": 15,
     "producthunt": 20,
+    "techmeme": 15,
     "github_trending": 15,
     "npm": 24,
     "pypi": 22,
     "crates": 15
   },
-  "total_items": 170,
+  "total_items": 185,
   "topics": [
     {
       "topic": "AI/LLM",
-      "count": 43,
-      "total_score": 1993436858,
+      "count": 48,
+      "total_score": 1994852883,
       "examples": [
         {
           "title": "Lovable apps expose passport details and more than 200K private messages",
@@ -40,7 +41,7 @@
     {
       "topic": "Web Dev",
       "count": 26,
-      "total_score": 3550676255,
+      "total_score": 3551026322,
       "examples": [
         {
           "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
@@ -61,8 +62,8 @@
     },
     {
       "topic": "Languages",
-      "count": 19,
-      "total_score": 2858367567,
+      "count": 20,
+      "total_score": 2858367575,
       "examples": [
         {
           "title": "Memory Safety Bugs in Rust Standard Library",
@@ -82,31 +83,9 @@
       ]
     },
     {
-      "topic": "Tools/OSS",
-      "count": 11,
-      "total_score": 2543621386,
-      "examples": [
-        {
-          "title": "Memory Safety Bugs in Rust Standard Library",
-          "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
-          "source": "hackernews"
-        },
-        {
-          "title": "Terminal borders that don't cost a cell",
-          "url": "https://www.joshka.net/cell-borders/",
-          "source": "lobsters"
-        },
-        {
-          "title": "huamidev/GestaltX",
-          "url": "https://github.com/huamidev/GestaltX",
-          "source": "github_trending"
-        }
-      ]
-    },
-    {
       "topic": "Data Eng",
-      "count": 11,
-      "total_score": 1217642056,
+      "count": 14,
+      "total_score": 1217642091,
       "examples": [
         {
           "title": "Show HN: Hazel – Declarative schema management for SQLite",
@@ -126,31 +105,31 @@
       ]
     },
     {
-      "topic": "Security",
-      "count": 5,
-      "total_score": 530,
+      "topic": "Tools/OSS",
+      "count": 11,
+      "total_score": 2543621388,
       "examples": [
         {
-          "title": "PyPI's redesigned project pages with clearer security signals are now live",
-          "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
+          "title": "Memory Safety Bugs in Rust Standard Library",
+          "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
           "source": "hackernews"
         },
         {
-          "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
-          "url": "https://projectzero.google/2026/11/disclosure-policy.html",
-          "source": "hackernews"
-        },
-        {
-          "title": "Someone's impersonating this blog",
-          "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/",
+          "title": "Terminal borders that don't cost a cell",
+          "url": "https://www.joshka.net/cell-borders/",
           "source": "lobsters"
+        },
+        {
+          "title": "huamidev/GestaltX",
+          "url": "https://github.com/huamidev/GestaltX",
+          "source": "github_trending"
         }
       ]
     },
     {
       "topic": "Career/Business",
-      "count": 5,
-      "total_score": 507,
+      "count": 11,
+      "total_score": 561,
       "examples": [
         {
           "title": "How do you truly stand out in Tech?",
@@ -170,9 +149,31 @@
       ]
     },
     {
+      "topic": "Security",
+      "count": 6,
+      "total_score": 543,
+      "examples": [
+        {
+          "title": "PyPI's redesigned project pages with clearer security signals are now live",
+          "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
+          "source": "hackernews"
+        },
+        {
+          "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
+          "url": "https://projectzero.google/2026/11/disclosure-policy.html",
+          "source": "hackernews"
+        },
+        {
+          "title": "Someone's impersonating this blog",
+          "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/",
+          "source": "lobsters"
+        }
+      ]
+    },
+    {
       "topic": "DevOps/Infra",
       "count": 4,
-      "total_score": 1447,
+      "total_score": 1445,
       "examples": [
         {
           "title": "Show HN: PowerQueue free online message queue supports AWS, GCE, Azure, AMQP",
@@ -204,7 +205,7 @@
         "author": "ls612",
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -216,7 +217,7 @@
         "author": "armcat",
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -228,7 +229,7 @@
         "author": "casi",
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -240,7 +241,7 @@
         "author": "mrkn1",
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -252,7 +253,7 @@
         "author": "madihaa",
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -264,7 +265,7 @@
         "author": "umerf",
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -276,7 +277,7 @@
         "author": "rbanffy",
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -288,7 +289,7 @@
         "author": "hacb",
         "tags": [],
         "rank": 8,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -302,7 +303,7 @@
           "show_hn"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -314,7 +315,7 @@
         "author": "DeepLogin",
         "tags": [],
         "rank": 10,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -326,7 +327,7 @@
         "author": "acossta",
         "tags": [],
         "rank": 11,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -338,7 +339,7 @@
         "author": "nobody9999",
         "tags": [],
         "rank": 12,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -350,7 +351,7 @@
         "author": "Skyfall106",
         "tags": [],
         "rank": 13,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -362,7 +363,7 @@
         "author": "NaOH",
         "tags": [],
         "rank": 14,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -374,7 +375,7 @@
         "author": "PaulHoule",
         "tags": [],
         "rank": 15,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -386,7 +387,7 @@
         "author": "torutofu",
         "tags": [],
         "rank": 16,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -398,7 +399,7 @@
         "author": "wmchen",
         "tags": [],
         "rank": 17,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -410,7 +411,7 @@
         "author": "lxm",
         "tags": [],
         "rank": 18,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -422,7 +423,7 @@
         "author": "ybathaee",
         "tags": [],
         "rank": 19,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "hackernews",
@@ -434,7 +435,7 @@
         "author": "pjmlp",
         "tags": [],
         "rank": 20,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       }
     ],
     "show_hn": [
@@ -442,7 +443,7 @@
         "source": "show_hn",
         "title": "Show HN: Gawain – Require type hints on all Python variables",
         "url": "https://github.com/matheuzgomes/gawain",
-        "score": 27,
+        "score": 28,
         "metric": "points",
         "comments": 9,
         "author": "MarinhoD",
@@ -451,7 +452,7 @@
           "front_page"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "show_hn",
@@ -466,7 +467,7 @@
           "front_page"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "show_hn",
@@ -481,7 +482,7 @@
           "front_page"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "show_hn",
@@ -495,7 +496,7 @@
           "story"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "show_hn",
@@ -509,7 +510,7 @@
           "story"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "show_hn",
@@ -523,7 +524,7 @@
           "story"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "show_hn",
@@ -537,7 +538,7 @@
           "story"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "show_hn",
@@ -551,7 +552,7 @@
           "story"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "show_hn",
@@ -565,7 +566,7 @@
           "story"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "show_hn",
@@ -579,7 +580,7 @@
           "story"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "show_hn",
@@ -593,7 +594,7 @@
           "story"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "show_hn",
@@ -607,7 +608,7 @@
           "story"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       }
     ],
     "ask_hn": [
@@ -621,7 +622,7 @@
         "author": "moonypto",
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "ask_hn",
@@ -633,7 +634,7 @@
         "author": "shnock",
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "ask_hn",
@@ -645,7 +646,7 @@
         "author": "exploraz",
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "ask_hn",
@@ -657,7 +658,7 @@
         "author": "0o777",
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "ask_hn",
@@ -669,7 +670,7 @@
         "author": "SamInTheShell",
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "ask_hn",
@@ -681,7 +682,7 @@
         "author": "basilikum",
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "ask_hn",
@@ -693,7 +694,7 @@
         "author": "gfalcao",
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "ask_hn",
@@ -705,7 +706,7 @@
         "author": "013",
         "tags": [],
         "rank": 8,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "ask_hn",
@@ -717,7 +718,7 @@
         "author": "alexhr",
         "tags": [],
         "rank": 9,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "ask_hn",
@@ -729,7 +730,7 @@
         "author": "spottedmarley",
         "tags": [],
         "rank": 10,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "ask_hn",
@@ -741,7 +742,7 @@
         "author": "mjs06",
         "tags": [],
         "rank": 11,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "ask_hn",
@@ -753,7 +754,7 @@
         "author": "mjs06",
         "tags": [],
         "rank": 12,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       }
     ],
     "lobsters": [
@@ -770,7 +771,7 @@
           "zig"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "lobsters",
@@ -786,7 +787,7 @@
           "mobile"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "lobsters",
@@ -800,7 +801,7 @@
           "go"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "lobsters",
@@ -816,7 +817,7 @@
           "programming"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "lobsters",
@@ -830,7 +831,7 @@
           "security"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "lobsters",
@@ -846,7 +847,7 @@
           "retrocomputing"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "lobsters",
@@ -861,7 +862,7 @@
           "privacy"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "lobsters",
@@ -875,7 +876,7 @@
           "math"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "lobsters",
@@ -889,7 +890,7 @@
           "assembly"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "lobsters",
@@ -904,7 +905,7 @@
           "plt"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "lobsters",
@@ -919,7 +920,7 @@
           "retrocomputing"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "lobsters",
@@ -933,7 +934,7 @@
           "programming"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "lobsters",
@@ -947,7 +948,7 @@
           "apl"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "lobsters",
@@ -961,7 +962,7 @@
           "programming"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "lobsters",
@@ -975,7 +976,7 @@
           "netbsd"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       }
     ],
     "devto": [
@@ -994,7 +995,7 @@
           "career"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "devto",
@@ -1011,7 +1012,7 @@
           "news"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "devto",
@@ -1028,7 +1029,7 @@
           "typescript"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "devto",
@@ -1045,7 +1046,7 @@
           "watercooler"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "devto",
@@ -1062,7 +1063,7 @@
           "programming"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "devto",
@@ -1079,7 +1080,7 @@
           "architecture"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "devto",
@@ -1096,7 +1097,7 @@
           "ai"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "devto",
@@ -1113,7 +1114,7 @@
           "programming"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "devto",
@@ -1130,7 +1131,7 @@
           "devto"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "devto",
@@ -1147,7 +1148,7 @@
           "resources"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "devto",
@@ -1164,7 +1165,7 @@
           "ai"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "devto",
@@ -1181,7 +1182,7 @@
           "machinelearning"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "devto",
@@ -1198,7 +1199,7 @@
           "pets"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "devto",
@@ -1213,7 +1214,7 @@
           "community"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "devto",
@@ -1230,7 +1231,7 @@
           "architecture"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       }
     ],
     "producthunt": [
@@ -1245,254 +1246,451 @@
         "tags": [],
         "description": "See your day on the map",
         "rank": 1,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "Thunder",
-        "url": "https://www.producthunt.com/products/thunder-3",
-        "score": 19,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "A blazing-fast, persistent, key-value AI workload database",
-        "rank": 2,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "HiringNow",
-        "url": "https://www.producthunt.com/products/hiringnow",
-        "score": 18,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "AI job agent that finds & apply for jobs before anyone else.",
-        "rank": 3,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "Kokonut UI",
-        "url": "https://www.producthunt.com/products/kokonutui",
-        "score": 17,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "Open-source UI components for your AI agent",
-        "rank": 4,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "AnyoneHiring.today",
-        "url": "https://www.producthunt.com/products/anyonehiring-today",
-        "score": 16,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "A world map of jobs. “Anywhere” is now a plan.",
-        "rank": 5,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "Valutorio",
-        "url": "https://www.producthunt.com/products/valutorio",
-        "score": 15,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "Your Markdown notes, native on Mac and iPhone",
-        "rank": 6,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "Antelog",
-        "url": "https://www.producthunt.com/products/antelog",
-        "score": 14,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "Stops AI coding agents from leaking or destroying your data",
-        "rank": 7,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "Drops",
-        "url": "https://www.producthunt.com/products/drops-4",
-        "score": 13,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "Discover new music through moments your friends love",
-        "rank": 8,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "Uber Parking",
-        "url": "https://www.producthunt.com/products/uber",
-        "score": 12,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "Find, compare and reserve parking inside the Uber app",
-        "rank": 9,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "Gemini Robotics 2.5",
-        "url": "https://www.producthunt.com/products/gemini-robotics-2-5",
-        "score": 11,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "Gemini Robotics 2.5: Google’s most capable robot model",
-        "rank": 10,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "VB Notes",
-        "url": "https://www.producthunt.com/products/vb-notes",
-        "score": 10,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "Markdown notes in your own folder, searched by meaning",
-        "rank": 11,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "Replay",
-        "url": "https://www.producthunt.com/products/replay-11",
-        "score": 9,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "Mac meeting recorder with no bot. Pay once, no subscription",
-        "rank": 12,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "Restoration Scope",
-        "url": "https://www.producthunt.com/products/restoration-scope",
-        "score": 8,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "Field data and monitoring software for reforestation",
-        "rank": 13,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "Default Tamer",
-        "url": "https://www.producthunt.com/products/default-tamer",
-        "score": 7,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "Open every link in the right browser on macOS",
-        "rank": 14,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "ScreenGo",
-        "url": "https://www.producthunt.com/products/screengo",
-        "score": 6,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "screen recorder for Mac with auto zooms and virtual webcam",
-        "rank": 15,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "Tacie",
-        "url": "https://www.producthunt.com/products/tacie",
-        "score": 5,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "Meeting notes on your Mac, with no bot in the call",
-        "rank": 16,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
-      },
-      {
-        "source": "producthunt",
-        "title": "Dynamic Edge",
-        "url": "https://www.producthunt.com/products/dynamic-edge",
-        "score": 4,
-        "metric": "feed rank",
-        "comments": 0,
-        "author": null,
-        "tags": [],
-        "description": "The Dynamic Island for Windows",
-        "rank": 17,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "producthunt",
         "title": "Dex Semantics",
         "url": "https://www.producthunt.com/products/dex-by-exmergo",
-        "score": 3,
+        "score": 19,
         "metric": "feed rank",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "Let your agent build analytics with 25% fewer errors",
-        "rank": 18,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "rank": 2,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "producthunt",
-        "title": "Aboard Sign",
-        "url": "https://www.producthunt.com/products/aboard-sign",
+        "title": "Businesses in ChatGPT",
+        "url": "https://www.producthunt.com/products/openai",
+        "score": 18,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Help customers discover your business through ChatGPT",
+        "rank": 3,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "HiringNow",
+        "url": "https://www.producthunt.com/products/hiringnow",
+        "score": 17,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "AI job agent that finds & apply for jobs before anyone else.",
+        "rank": 4,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Gemini Robotics 2.5",
+        "url": "https://www.producthunt.com/products/gemini-robotics-2-5",
+        "score": 16,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Gemini Robotics 2.5: Google’s most capable robot model",
+        "rank": 5,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "VB Notes",
+        "url": "https://www.producthunt.com/products/vb-notes",
+        "score": 15,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Markdown notes in your own folder, searched by meaning",
+        "rank": 6,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Thunder",
+        "url": "https://www.producthunt.com/products/thunder-3",
+        "score": 14,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "A blazing-fast, persistent, key-value AI workload database",
+        "rank": 7,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Kokonut UI",
+        "url": "https://www.producthunt.com/products/kokonutui",
+        "score": 13,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Open-source UI components for your AI agent",
+        "rank": 8,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "AnyoneHiring.today",
+        "url": "https://www.producthunt.com/products/anyonehiring-today",
+        "score": 12,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "A world map of jobs. “Anywhere” is now a plan.",
+        "rank": 9,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Valutorio",
+        "url": "https://www.producthunt.com/products/valutorio",
+        "score": 11,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Your Markdown notes, native on Mac and iPhone",
+        "rank": 10,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Antelog",
+        "url": "https://www.producthunt.com/products/antelog",
+        "score": 10,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Stops AI coding agents from leaking or destroying your data",
+        "rank": 11,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Drops",
+        "url": "https://www.producthunt.com/products/drops-4",
+        "score": 9,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Discover new music through moments your friends love",
+        "rank": 12,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Uber Parking",
+        "url": "https://www.producthunt.com/products/uber",
+        "score": 8,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Find, compare and reserve parking inside the Uber app",
+        "rank": 13,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Replay",
+        "url": "https://www.producthunt.com/products/replay-11",
+        "score": 7,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Mac meeting recorder with no bot. Pay once, no subscription",
+        "rank": 14,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Restoration Scope",
+        "url": "https://www.producthunt.com/products/restoration-scope",
+        "score": 6,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Field data and monitoring software for reforestation",
+        "rank": 15,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Default Tamer",
+        "url": "https://www.producthunt.com/products/default-tamer",
+        "score": 5,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Open every link in the right browser on macOS",
+        "rank": 16,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "ScreenGo",
+        "url": "https://www.producthunt.com/products/screengo",
+        "score": 4,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "screen recorder for Mac with auto zooms and virtual webcam",
+        "rank": 17,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Tacie",
+        "url": "https://www.producthunt.com/products/tacie",
+        "score": 3,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Meeting notes on your Mac, with no bot in the call",
+        "rank": 18,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Dynamic Edge",
+        "url": "https://www.producthunt.com/products/dynamic-edge",
         "score": 2,
         "metric": "feed rank",
         "comments": 0,
         "author": null,
         "tags": [],
-        "description": "Email a contract, CC sign@aboard.com and collect signatures",
+        "description": "The Dynamic Island for Windows",
         "rank": 19,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "producthunt",
-        "title": "Tabletop by Google Labs",
-        "url": "https://www.producthunt.com/products/google-labs",
+        "title": "Aboard Sign",
+        "url": "https://www.producthunt.com/products/aboard-sign",
         "score": 1,
         "metric": "feed rank",
         "comments": 0,
         "author": null,
         "tags": [],
-        "description": "Build interactive group experiences with AI.",
+        "description": "Email a contract, CC sign@aboard.com and collect signatures",
         "rank": 20,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      }
+    ],
+    "techmeme": [
+      {
+        "source": "techmeme",
+        "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A (Tamara Djurickovic/Tech.eu)",
+        "url": "https://www.techmeme.com/261115/p3#a261115p3",
+        "score": 15,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Tamara Djurickovic / Tech.eu : Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A &nbsp; &mdash;",
+        "rank": 1,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "techmeme",
+        "title": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall (Thomas Barrabi/New York Post)",
+        "url": "https://www.techmeme.com/261115/p2#a261115p2",
+        "score": 14,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Thomas Barrabi / New York Post : Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall &nbsp; &",
+        "rank": 2,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "techmeme",
+        "title": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chips in SE Asian data centers, exploiting a gap in US sanctions (Wall Street Journal)",
+        "url": "https://www.techmeme.com/261115/p1#a261115p1",
+        "score": 13,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Wall Street Journal : How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chips in SE Asian data centers, exploiting a gap in US sanctions &nbsp; &mdash;&nb",
+        "rank": 3,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "techmeme",
+        "title": "The Nvidia scandal presents a political challenge for the White House by tying together data centers, China, and corruption, all key voter issues in midterms (Washington Post)",
+        "url": "https://www.techmeme.com/261114/p23#a261114p23",
+        "score": 12,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Washington Post : The Nvidia scandal presents a political challenge for the White House by tying together data centers, China, and corruption, all key voter issues in midterms &nbsp; &mdash;&nbsp; The",
+        "rank": 4,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "techmeme",
+        "title": "23andMe's Anne Wojcicki, formerly married to Google co-founder Sergey Brin, says Jensen Huang's affair shows what happens when CEOs think they are \"untouchable\" (Bloomberg)",
+        "url": "https://www.techmeme.com/261114/p22#a261114p22",
+        "score": 11,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Bloomberg : 23andMe's Anne Wojcicki, formerly married to Google co-founder Sergey Brin, says Jensen Huang's affair shows what happens when CEOs think they are &ldquo;untouchable&rdquo; &nbsp; &mdash;&",
+        "rank": 5,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "techmeme",
+        "title": "Source: Applied Digital has asked tenants like Oracle and Meta for billions in guarantees since at least last year to secure power before finalizing leases (Bloomberg)",
+        "url": "https://www.techmeme.com/261114/p21#a261114p21",
+        "score": 10,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Bloomberg : Source: Applied Digital has asked tenants like Oracle and Meta for billions in guarantees since at least last year to secure power before finalizing leases &nbsp; &mdash;&nbsp; Tech giants",
+        "rank": 6,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "techmeme",
+        "title": "Unlike other larger-than-life tech founders, Jensen Huang lacked super-voting shares in Nvidia, making it easier for him to lose control of the company (Forbes)",
+        "url": "https://www.techmeme.com/261114/p20#a261114p20",
+        "score": 9,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Forbes : Unlike other larger-than-life tech founders, Jensen Huang lacked super-voting shares in Nvidia, making it easier for him to lose control of the company &nbsp; &mdash;&nbsp; This voice experie",
+        "rank": 7,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "techmeme",
+        "title": "USD-pegged stablecoins are taking a growing share of Latin America's crypto activity, serving as a store of value and an efficient cross-border payment system (Maria Clara Cobo/Bloomberg)",
+        "url": "https://www.techmeme.com/261114/p19#a261114p19",
+        "score": 8,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Maria Clara Cobo / Bloomberg : USD-pegged stablecoins are taking a growing share of Latin America's crypto activity, serving as a store of value and an efficient cross-border payment system &nbsp; &md",
+        "rank": 8,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "techmeme",
+        "title": "Letter: Altimeter's Brad Gerstner and Atreides's Gavin Baker urge Nvidia's board to consider \"the potential return of Jensen Huang\"; they own $2.13B in Nvidia (Katie Tarasov/CNBC)",
+        "url": "https://www.techmeme.com/261114/p18#a261114p18",
+        "score": 7,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Katie Tarasov / CNBC : Letter: Altimeter's Brad Gerstner and Atreides's Gavin Baker urge Nvidia's board to consider &ldquo;the potential return of Jensen Huang&rdquo;; they own $2.13B in Nvidia &nbsp;",
+        "rank": 9,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "techmeme",
+        "title": "A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim Sweeney, and Garry Tan; organizers say 5K+ Nvidia staff signed (Lauren Edmonds/Business Insider)",
+        "url": "https://www.techmeme.com/261114/p17#a261114p17",
+        "score": 6,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Lauren Edmonds / Business Insider : A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim Sweeney, and Garry Tan; organizers say 5K+ Nvidia staff signed &nb",
+        "rank": 10,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "techmeme",
+        "title": "Databento, which offers market data APIs and says it has contracts with five of the six largest frontier AI labs, raised a $100M Series C at a $1.1B valuation (FinTech Global)",
+        "url": "https://www.techmeme.com/261114/p16#a261114p16",
+        "score": 5,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "FinTech Global : Databento, which offers market data APIs and says it has contracts with five of the six largest frontier AI labs, raised a $100M Series C at a $1.1B valuation &nbsp; &mdash;&nbsp; Dat",
+        "rank": 11,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "techmeme",
+        "title": "Jensen Huang's resignation is a setback for US open models, as his funding gave open-source developers time to find their footing and will very likely dry up (Nathan Lambert/Interconnects AI)",
+        "url": "https://www.techmeme.com/261114/p15#a261114p15",
+        "score": 4,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Nathan Lambert / Interconnects AI : Jensen Huang's resignation is a setback for US open models, as his funding gave open-source developers time to find their footing and will very likely dry up &nbsp;",
+        "rank": 12,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "techmeme",
+        "title": "Sean Duffy blames Friday's FAA outage on copper-to-fiber wiring work at a remote facility, saying contractor L3Harris may have installed a \"faulty router\" (Joseph Pisani/Wall Street Journal)",
+        "url": "https://www.techmeme.com/261114/p14#a261114p14",
+        "score": 3,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Joseph Pisani / Wall Street Journal : Sean Duffy blames Friday's FAA outage on copper-to-fiber wiring work at a remote facility, saying contractor L3Harris may have installed a &ldquo;faulty router&rd",
+        "rank": 13,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "techmeme",
+        "title": "Trump Media faces a Nov. 30 deadline to repay up to $1B in convertible bonds sold last May to fund a \"bitcoin treasury,\" as its shares are down 60+% this year (Financial Times)",
+        "url": "https://www.techmeme.com/261114/p13#a261114p13",
+        "score": 2,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Financial Times : Trump Media faces a Nov. 30 deadline to repay up to $1B in convertible bonds sold last May to fund a &ldquo;bitcoin treasury,&rdquo; as its shares are down 60+% this year &nbsp; &mda",
+        "rank": 14,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
+      },
+      {
+        "source": "techmeme",
+        "title": "Tesla's Cybercab Autonomy Subscription agreement states the vehicles will only work inside Tesla-enabled geofences, which the company can change at any time (Fred Lambert/Electrek)",
+        "url": "https://www.techmeme.com/261114/p12#a261114p12",
+        "score": 1,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Fred Lambert / Electrek : Tesla's Cybercab Autonomy Subscription agreement states the vehicles will only work inside Tesla-enabled geofences, which the company can change at any time &nbsp; &mdash;&nb",
+        "rank": 15,
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       }
     ],
     "github_trending": [
@@ -1500,7 +1698,7 @@
         "source": "github_trending",
         "title": "huamidev/GestaltX",
         "url": "https://github.com/huamidev/GestaltX",
-        "score": 7622,
+        "score": 7624,
         "metric": "stars",
         "comments": 0,
         "author": "huamidev",
@@ -1511,7 +1709,7 @@
         "created_at": "2026-11-09T05:15:48Z",
         "forks": 2647,
         "rank": 1,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "github_trending",
@@ -1528,13 +1726,13 @@
         "created_at": "2026-11-10T02:37:31Z",
         "forks": 424,
         "rank": 2,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "github_trending",
         "title": "deepseek-ai/chat-demo",
         "url": "https://github.com/deepseek-ai/chat-demo",
-        "score": 1891,
+        "score": 1892,
         "metric": "stars",
         "comments": 0,
         "author": "deepseek-ai",
@@ -1545,13 +1743,13 @@
         "created_at": "2026-11-12T08:08:19Z",
         "forks": 314,
         "rank": 3,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "github_trending",
         "title": "apex-compute/ANR",
         "url": "https://github.com/apex-compute/ANR",
-        "score": 1881,
+        "score": 1882,
         "metric": "stars",
         "comments": 0,
         "author": "apex-compute",
@@ -1562,7 +1760,7 @@
         "created_at": "2026-11-11T04:27:17Z",
         "forks": 29,
         "rank": 4,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "github_trending",
@@ -1577,9 +1775,9 @@
         ],
         "description": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.",
         "created_at": "2026-11-10T20:01:01Z",
-        "forks": 87,
+        "forks": 86,
         "rank": 5,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "github_trending",
@@ -1596,7 +1794,7 @@
         "created_at": "2026-11-10T10:46:56Z",
         "forks": 103,
         "rank": 6,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "github_trending",
@@ -1613,7 +1811,7 @@
         "created_at": "2026-11-09T00:50:28Z",
         "forks": 251,
         "rank": 7,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "github_trending",
@@ -1630,7 +1828,7 @@
         "created_at": "2026-11-09T23:53:25Z",
         "forks": 61,
         "rank": 8,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "github_trending",
@@ -1647,13 +1845,13 @@
         "created_at": "2026-11-12T20:49:07Z",
         "forks": 1,
         "rank": 9,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "github_trending",
         "title": "adriadam10/mkw-recomp",
         "url": "https://github.com/adriadam10/mkw-recomp",
-        "score": 979,
+        "score": 980,
         "metric": "stars",
         "comments": 0,
         "author": "adriadam10",
@@ -1662,9 +1860,9 @@
         ],
         "description": "Static recompilation of Mario Kart World (Nintendo Switch 2) to a native PC program",
         "created_at": "2026-11-09T15:40:06Z",
-        "forks": 54,
+        "forks": 55,
         "rank": 10,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "github_trending",
@@ -1681,7 +1879,7 @@
         "created_at": "2026-11-09T13:43:40Z",
         "forks": 64,
         "rank": 11,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "github_trending",
@@ -1698,7 +1896,7 @@
         "created_at": "2026-11-09T19:13:52Z",
         "forks": 88,
         "rank": 12,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "github_trending",
@@ -1715,7 +1913,7 @@
         "created_at": "2026-11-09T00:47:33Z",
         "forks": 63,
         "rank": 13,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "github_trending",
@@ -1732,13 +1930,13 @@
         "created_at": "2026-11-10T09:25:25Z",
         "forks": 125,
         "rank": 14,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "github_trending",
         "title": "Eynnzerr/TelemetryCleaner",
         "url": "https://github.com/Eynnzerr/TelemetryCleaner",
-        "score": 698,
+        "score": 699,
         "metric": "stars",
         "comments": 0,
         "author": "Eynnzerr",
@@ -1749,7 +1947,7 @@
         "created_at": "2026-11-11T06:25:10Z",
         "forks": 66,
         "rank": 15,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       }
     ],
     "npm": [
@@ -1765,13 +1963,13 @@
           "npm"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
         "title": "typescript",
         "url": "https://www.npmjs.com/package/typescript",
-        "score": 423856689,
+        "score": 420299292,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1779,7 +1977,7 @@
           "npm"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
@@ -1793,13 +1991,13 @@
           "npm"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
         "title": "vite",
         "url": "https://www.npmjs.com/package/vite",
-        "score": 271758738,
+        "score": 274471057,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1807,7 +2005,7 @@
           "npm"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
@@ -1821,7 +2019,7 @@
           "npm"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
@@ -1835,7 +2033,7 @@
           "npm"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
@@ -1849,7 +2047,7 @@
           "npm"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
@@ -1863,13 +2061,13 @@
           "npm"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
         "title": "tailwindcss",
         "url": "https://www.npmjs.com/package/tailwindcss",
-        "score": 178999790,
+        "score": 180415741,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1877,7 +2075,7 @@
           "npm"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
@@ -1891,7 +2089,7 @@
           "npm"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
@@ -1905,13 +2103,13 @@
           "npm"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
         "title": "webpack",
         "url": "https://www.npmjs.com/package/webpack",
-        "score": 73286825,
+        "score": 72948249,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1919,7 +2117,7 @@
           "npm"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
@@ -1933,13 +2131,13 @@
           "npm"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
         "title": "jest",
         "url": "https://www.npmjs.com/package/jest",
-        "score": 59769774,
+        "score": 60029351,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1947,7 +2145,7 @@
           "npm"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
@@ -1961,7 +2159,7 @@
           "npm"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
@@ -1975,7 +2173,7 @@
           "npm"
         ],
         "rank": 16,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
@@ -1989,7 +2187,7 @@
           "npm"
         ],
         "rank": 17,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
@@ -2003,7 +2201,7 @@
           "npm"
         ],
         "rank": 18,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
@@ -2017,13 +2215,13 @@
           "npm"
         ],
         "rank": 19,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
         "title": "svelte",
         "url": "https://www.npmjs.com/package/svelte",
-        "score": 9567430,
+        "score": 9685203,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -2031,7 +2229,7 @@
           "npm"
         ],
         "rank": 20,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
@@ -2045,13 +2243,13 @@
           "npm"
         ],
         "rank": 21,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
         "title": "nuxt",
         "url": "https://www.npmjs.com/package/nuxt",
-        "score": 3355800,
+        "score": 3404733,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -2059,7 +2257,7 @@
           "npm"
         ],
         "rank": 22,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
@@ -2073,7 +2271,7 @@
           "npm"
         ],
         "rank": 23,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "npm",
@@ -2087,7 +2285,7 @@
           "npm"
         ],
         "rank": 24,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       }
     ],
     "pypi": [
@@ -2103,7 +2301,7 @@
           "pypi"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2117,7 +2315,7 @@
           "pypi"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2131,7 +2329,7 @@
           "pypi"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2145,7 +2343,7 @@
           "pypi"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2159,7 +2357,7 @@
           "pypi"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2173,7 +2371,7 @@
           "pypi"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2187,7 +2385,7 @@
           "pypi"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2201,7 +2399,7 @@
           "pypi"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2215,7 +2413,7 @@
           "pypi"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2229,7 +2427,7 @@
           "pypi"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2243,7 +2441,7 @@
           "pypi"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2257,7 +2455,7 @@
           "pypi"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2271,7 +2469,7 @@
           "pypi"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2285,7 +2483,7 @@
           "pypi"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2299,7 +2497,7 @@
           "pypi"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2313,7 +2511,7 @@
           "pypi"
         ],
         "rank": 16,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2327,7 +2525,7 @@
           "pypi"
         ],
         "rank": 17,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2341,7 +2539,7 @@
           "pypi"
         ],
         "rank": 18,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2355,7 +2553,7 @@
           "pypi"
         ],
         "rank": 19,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2369,7 +2567,7 @@
           "pypi"
         ],
         "rank": 20,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2383,7 +2581,7 @@
           "pypi"
         ],
         "rank": 21,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "pypi",
@@ -2397,7 +2595,7 @@
           "pypi"
         ],
         "rank": 22,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       }
     ],
     "crates": [
@@ -2412,7 +2610,7 @@
         "tags": [],
         "description": "A Rust port of Google's SwissTable hash map",
         "rank": 1,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "crates",
@@ -2425,7 +2623,7 @@
         "tags": [],
         "description": "Parser for Rust source code",
         "rank": 2,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "crates",
@@ -2438,7 +2636,7 @@
         "tags": [],
         "description": "A small cross-platform library for retrieving random data from system source",
         "rank": 3,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "crates",
@@ -2451,7 +2649,7 @@
         "tags": [],
         "description": "Random number generators and other randomness functionality.\n",
         "rank": 4,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "crates",
@@ -2464,7 +2662,7 @@
         "tags": [],
         "description": "Core random number generator traits and tools for implementation.\n",
         "rank": 5,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "crates",
@@ -2477,7 +2675,7 @@
         "tags": [],
         "description": "A macro to generate structures which behave like bitflags.\n",
         "rank": 6,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "crates",
@@ -2490,7 +2688,7 @@
         "tags": [],
         "description": "derive(Error)",
         "rank": 7,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "crates",
@@ -2503,7 +2701,7 @@
         "tags": [],
         "description": "Implementation detail of the `thiserror` crate",
         "rank": 8,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "crates",
@@ -2516,7 +2714,7 @@
         "tags": [],
         "description": "encodes and decodes base64 as bytes or utf8",
         "rank": 9,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "crates",
@@ -2529,7 +2727,7 @@
         "tags": [],
         "description": "Rust for Windows",
         "rank": 10,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "crates",
@@ -2542,7 +2740,7 @@
         "tags": [],
         "description": "Quasi-quoting macro quote!(...)",
         "rank": 11,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "crates",
@@ -2555,7 +2753,7 @@
         "tags": [],
         "description": "Raw FFI bindings to platform libraries like libc.",
         "rank": 12,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "crates",
@@ -2568,7 +2766,7 @@
         "tags": [],
         "description": "A hash table with consistent order and fast iteration.",
         "rank": 13,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "crates",
@@ -2581,7 +2779,7 @@
         "tags": [],
         "description": "A substitute implementation of the compiler's `proc_macro` API to decouple token-based libraries from the procedural macro use case.",
         "rank": 14,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       },
       {
         "source": "crates",
@@ -2594,7 +2792,7 @@
         "tags": [],
         "description": "Provides extremely fast (uses SIMD on x86_64, aarch64 and wasm32) routines for\n1, 2 or 3 byte search and single substring search.\n",
         "rank": 15,
-        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+        "captured_at": "2026-11-15T06:43:42.591001+00:00"
       }
     ]
   }
