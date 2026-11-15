@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>daily-updating open datasets — trendscope</title>
+<meta name="description" content="A curated list of open datasets that update themselves daily — developer attention, news archives, package stats, and more.">
+<meta property="og:title" content="daily-updating open datasets — curated list">
+<meta property="og:image" content="og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+<style>
+  :root { --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
+          --dim:#8b949e; --accent:#58a6ff; --green:#3fb950; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 18px; }
+  h2 { font-size: 15px; color: var(--dim); font-weight: 600; margin: 26px 0 6px;
+       text-transform: uppercase; letter-spacing: .04em; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 20px; }
+  td, th { padding: 7px 10px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+  th { color: var(--dim); font-size: 12px; font-weight: 600; }
+  td:first-child { white-space: nowrap; font-weight: 600; }
+  .lic { color: var(--dim); font-size: 12px; white-space: nowrap; }
+  .us { background: rgba(88,166,255,.08); }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+</style>
+</head>
+<body>
+  <nav><a href="index.html">← trendscope</a> · <a href="about.html">about</a> · <a href="docs/api.md">api docs</a></nav>
+  <h1>daily-updating <span>open datasets</span></h1>
+  <div class="sub">Open data that refreshes itself every day — no signup, no key.
+    Most "live" dashboards hoard their history; these publish it. Curated by the trendscope project.</div>
+
+  <h2>developer attention & news</h2>
+  <table>
+    <tr><th>dataset</th><th>what's inside</th><th>cadence</th><th class="lic">license</th></tr>
+    <tr class="us"><td><a href="https://github.com/zalize-com/trendscope">trendscope</a> ◂ us</td>
+      <td>Daily cross-source snapshot of what developers are reading & building: HN, GitHub Trending, Lobsters, Dev.to, Product Hunt, Techmeme, Slashdot, npm/PyPI/crates downloads. JSON+CSV, versioned history, machine-readable APIs.</td>
+      <td>daily</td><td class="lic">CC0</td></tr>
+    <tr><td><a href="https://github.com/HackerNews/API">HN API (official)</a></td>
+      <td>Every HN item & change stream via Firebase — raw firehose, no ranking snapshots.</td>
+      <td>realtime</td><td class="lic">open</td></tr>
+    <tr><td><a href="https://www.gharchive.org">GH Archive</a></td>
+      <td>Every public GitHub event, hourly BigQuery/downloadable archives.</td>
+      <td>hourly</td><td class="lic">CC-BY</td></tr>
+    <tr><td><a href="https://lobste.rs/hottest.json">Lobste.rs JSON</a></td>
+      <td>Front-page JSON endpoints — live only, no history.</td>
+      <td>realtime</td><td class="lic">open</td></tr>
+  </table>
+
+  <h2>package ecosystems</h2>
+  <table>
+    <tr><th>dataset</th><th>what's inside</th><th>cadence</th><th class="lic">license</th></tr>
+    <tr><td><a href="https://pypistats.org">pypistats</a></td><td>PyPI download counts, daily/monthly per package, JSON API.</td><td>daily</td><td class="lic">open</td></tr>
+    <tr><td><a href="https://api.npmjs.org">npm downloads API</a></td><td>Download counts per package/range.</td><td>daily</td><td class="lic">open</td></tr>
+    <tr><td><a href="https://libraries.io">libraries.io open data</a></td><td>Cross-ecosystem package metadata dumps (periodic).</td><td>periodic</td><td class="lic">CC-BY-SA</td></tr>
+  </table>
+
+  <h2>everything else</h2>
+  <table>
+    <tr><th>dataset</th><th>what's inside</th><th>cadence</th><th class="lic">license</th></tr>
+    <tr><td><a href="https://ourworldindata.org">Our World in Data</a></td><td>Global indicators, many auto-updated series, charts+CSV+API.</td><td>daily+</td><td class="lic">CC-BY</td></tr>
+    <tr><td><a href="https://github.com/CSSEGISandData/COVID-19">JHU COVID-19</a></td><td>The canonical git-committed daily dataset — the pattern trendscope follows.</td><td>daily</td><td class="lic">open</td></tr>
+    <tr><td><a href="https://www.wikipedia.org">Wikipedia pageviews</a></td><td>Hourly pageview dumps per article, whole-history.</td><td>hourly</td><td class="lic">open</td></tr>
+  </table>
+
+  <footer>
+    Know another daily-updating open dataset? <a href="https://github.com/zalize-com/trendscope">Open a PR</a> —
+    this list is a curated page of the trendscope repo. · CC0
+  </footer>
+</body>
+</html>
