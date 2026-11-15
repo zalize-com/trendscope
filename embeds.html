@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>embeds — trendscope</title>
+  <link rel="search" type="application/opensearchdescription+xml" title="trendscope" href="opensearch.xml">
+  <link rel="alternate" type="application/rss+xml" title="trendscope snapshots" href="feed.xml">
+  <link rel="alternate" type="application/feed+json" title="trendscope snapshots" href="feed.json">
+<meta name="description" content="Every embed mode, live: pick a card, copy the iframe snippet, drop it in any page.">
+<meta property="og:title" content="embeds — trendscope">
+<meta property="og:description" content="Every embed mode with a copy-ready iframe snippet — live previews below.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zalize-com.github.io/trendscope/embeds.html">
+<meta property="og:image" content="https://zalize-com.github.io/trendscope/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>">
+<style>
+  :root { --bg:#0d1117; --fg:#e6edf3; --dim:#8b949e; --border:#21262d; --accent:#58a6ff;
+          --green:#3fb950; --orange:#d29922; }
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 18px; }
+  .stats { display: flex; gap: 18px; flex-wrap: wrap; margin: 10px 0 6px; }
+  .stat b { font-size: 22px; } .stat small { color: var(--dim); display: block; font-size: 11px; }
+  h2 { font-size: 15px; color: var(--dim); font-weight: 600; margin: 26px 0 6px;
+       text-transform: uppercase; letter-spacing: .04em; }
+  ol { list-style: none; }
+  li { display: flex; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--border); align-items: baseline; }
+  .it a { color: var(--fg); } .it a:hover { color: var(--accent); }
+  .sc { margin-left: auto; white-space: nowrap; font-size: 12px; color: var(--dim); }
+  .date { color: var(--dim); font-size: 11px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+  #err { color: var(--dim); }
+  .card { border:1px solid var(--border); border-radius:8px; padding:10px 12px; margin:14px 0; }
+  .card h3 { margin:0 0 6px; font-size:14px; }
+  .card code { display:block; font-size:11px; color:var(--dim); background:var(--bg); border:1px solid var(--border); border-radius:6px; padding:6px 8px; margin:6px 0; white-space:nowrap; overflow-x:auto; }
+  .card iframe { width:100%; height:300px; border:1px solid var(--border); border-radius:6px; }
+  .chip { display:inline-block; padding:2px 9px; border:1px solid var(--border); border-radius:12px; font-size:12px; color:var(--fg); text-decoration:none; margin:2px 3px 2px 0; opacity:.75; }
+  .chip.on { opacity:1; border-color:var(--accent); color:var(--accent); }
+  .bars { display:flex; gap:3px; align-items:flex-end; height:44px; margin:6px 0; }
+  .bar { flex:1; background:var(--accent); opacity:.7; border-radius:2px 2px 0 0; min-height:2px; }
+  .blabels { display:flex; gap:3px; font-size:9px; color:var(--dim); font-family:ui-monospace,monospace; }
+  .blabels span { flex:1; text-align:center; }
+</style>
+</head>
+<body>
+  <nav><a href="index.html">← trendscope</a> · <a href="streaks.html">streaks</a> · <a href="domains.html">domains</a></nav>
+  <h1>em<span>beds</span></h1>
+  <p class="sub">Each card is a live <code>embed.html</code> iframe — grab the snippet under it. Params: <code>?n= ?s= ?q= ?t= ?mode= ?theme=</code>.</p>
+  <div id="out"></div>
+  <footer>Open data, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> ·
+    <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a></footer>
+  <script>
+const BASE = "https://zalize-com.github.io/trendscope/embed.html";
+const MODES = [
+  ["board (default)", ""],
+  ["stats", "?mode=stats"],
+  ["topics", "?mode=topics"],
+  ["streak", "?mode=streak"],
+  ["week", "?mode=week"],
+  ["movers", "?mode=movers"],
+  ["velocity", "?mode=velocity"],
+  ["new", "?mode=new"],
+  ["risers", "?mode=risers"],
+  ["discussed", "?mode=discussed"],
+  ["crossovers", "?mode=crossovers"],
+  ["canon", "?mode=canon"],
+  ["hiring", "?mode=hiring"],
+  ["ideas", "?mode=ideas"],
+  ["domain", "?mode=domain"],
+  ["author", "?mode=author"],
+  ["sources", "?mode=sources"],
+  ["item", "?mode=item&q=Show%20HN"],
+];
+const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+document.getElementById("out").innerHTML = MODES.map(([name, q]) => {
+  const src = BASE + q + (q ? "&" : "?") + "n=6";
+  const snip = `<iframe src="${src}" width="420" height="300" frameborder="0" loading="lazy"></iframe>`;
+  return `<div class="card"><h3>${name}</h3><code>${esc(snip)}</code><iframe src="${src}" loading="lazy"></iframe></div>`;
+}).join("");
+</script>
+</body>
+</html>
