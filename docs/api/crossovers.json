@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T15:05:09.615635+00:00",
+ "generated_at": "2026-11-15T15:05:44.606624+00:00",
  "latest_snapshot": "2026-11-15",
  "crossovers": [
   {
@@ -89,6 +89,21 @@
     "score": 39,
     "metric": "points",
     "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://blog.cloudflare.com/choosing-quepaxa",
+   "title": "Choosing QuePaxa, an unusual consensus algorithm",
+   "sources": [
+    "cloudflare",
+    "lemmy"
+   ],
+   "days": 1,
+   "best": {
+    "score": 12,
+    "metric": "feed rank",
+    "source": "cloudflare",
     "date": "2026-11-15"
    }
   }

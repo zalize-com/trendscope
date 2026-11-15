@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T15:05:09.451084+00:00",
+  "generated_at": "2026-11-15T15:05:44.684966+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -134,18 +134,6 @@
         "rank": 1
       }
     },
-    "lemmy": {
-      "items": 17,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 87,
-      "top_item": {
-        "title": "Announcing Rust 1.100.0",
-        "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
-        "score": 890,
-        "rank": 4
-      }
-    },
     "slashdot": {
       "items": 17,
       "unique_urls": 17,
@@ -156,6 +144,18 @@
         "url": "https://hardware.slashdot.org/story/26/11/15/0510225/did-alice-huangs-megaspeed-bypass-americas-controls-on-exporting-nvidia-chip-to-china?utm_source=rss1.0mainlinkanon&utm_medium=feed",
         "score": 15,
         "rank": 1
+      }
+    },
+    "lemmy": {
+      "items": 16,
+      "unique_urls": 14,
+      "median_days_on_board": 1,
+      "one_day_pct": 86,
+      "top_item": {
+        "title": "Announcing Rust 1.100.0",
+        "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+        "score": 890,
+        "rank": 4
       }
     },
     "arstechnica": {
@@ -190,6 +190,18 @@
       "top_item": {
         "title": "Unbundling Multimodal Vision Encoding",
         "url": "http://arxiv.org/abs/2611.17334v1",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "cloudflare": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Kitesurf is now open source",
+        "url": "https://blog.cloudflare.com/kitesurf-open-source/",
         "score": 15,
         "rank": 1
       }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T15:05:09.615635+00:00",
+ "generated_at": "2026-11-15T15:05:44.606624+00:00",
  "latest_snapshot": "2026-11-15",
  "total": 245,
  "domains": [
@@ -643,6 +643,22 @@
    }
   },
   {
+   "hostname": "blog.cloudflare.com",
+   "days_on_board": 1,
+   "items": 16,
+   "sources": [
+    "cloudflare",
+    "lemmy"
+   ],
+   "top_hit": {
+    "title": "Kitesurf is now open source",
+    "url": "https://blog.cloudflare.com/kitesurf-open-source/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "thenewstack.io",
    "days_on_board": 1,
    "items": 16,
@@ -742,21 +758,6 @@
    "top_hit": {
     "title": "Bliki: Generated Glossary",
     "url": "https://martinfowler.com/bliki/GeneratedGlossary.html",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "blog.pragmaticengineer.com",
-   "days_on_board": 1,
-   "items": 15,
-   "sources": [
-    "pragmatic"
-   ],
-   "top_hit": {
-    "title": "The Pulse: Details of incident.io’s AI spend",
-    "url": "https://blog.pragmaticengineer.com/the-pulse-details-of-incident-ios-ai-spend/",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
