@@ -605,3 +605,23 @@ root for self-hosted mirrors.
 | Hoeser | dev notes | `www.hoeser.dev/feed.xml` |
 | H Sablonnière | web dev | `www.hsablonniere.com/articles-feed.xml` |
 | HTMHell | HTML best practices | `www.htmhell.dev/feed.xml` |
+| Igalia | web engine consultancy | `www.igalia.com/feed.xml` |
+| Indust. Empathy | Malte Ubl | `www.industrialempathy.com/feed/feed.xml` |
+| inference.vc | ML essays | `www.inference.vc/rss` |
+| Irigoyen | dev notes | `www.irigoyen.dev/feed.xml` |
+| Jack Franklin | JS dev | `www.jackfranklin.co.uk/feed.xml` |
+| James L Milner | geo dev | `www.jameslmilner.com/feed/feed.xml` |
+| Jan Trid | dev notes | `www.jantrid.net/feeds/posts/default` |
+| Jay Freestone | frontend dev | `www.jayfreestone.com/feed.xml` |
+| Joe Dolson | WP a11y | `www.joedolson.com/feed/` |
+| Joe Forshaw | dev notes | `www.joeforshaw.com/blog.rss` |
+| John D. Cook | math computing | `www.johndcook.com/blog/feed` |
+| KaiOS | feature phone OS | `www.kaiostech.com/feed/` |
+| Keith Cirkel | GitHub staff | `www.keithcirkel.co.uk/feed.xml` |
+| Koos Looijesteijn | design engineer | `www.kooslooijesteijn.net/feed.xml` |
+| La Lutine | French web | `www.lalutineduweb.fr/en/feed/` |
+| Lee Reamsnyder | frontend dev | `www.leereamsnyder.com/rss.xml` |
+| Lene Saile | frontend dev | `www.lenesaile.com/en/feed.xml` |
+| Made by Mike | CSS dev | `www.madebymike.com.au/feed.xml` |
+| MathJax | math rendering | `www.mathjax.org/feed.xml` |
+| matuzo | Manuel Matuzovic a11y | `www.matuzo.at/feed_all.xml` |
