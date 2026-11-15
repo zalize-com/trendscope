@@ -65,6 +65,7 @@
     <button data-tool="http">HTTP status</button>
     <button data-tool="hash">file checksum</button>
     <button data-tool="pxrem">px ↔ rem</button>
+    <button data-tool="utm">UTM builder</button>
   </div>
 
   <div class="panel" id="p-qr">
@@ -129,6 +130,19 @@
     <div id="hs-out" style="margin-top:8px"></div>
   </div>
 
+  <div class="panel" id="p-utm">
+    <h2>UTM builder</h2>
+    <label>URL <input id="ut-url" placeholder="https://example.com/page" style="width:100%"></label>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0">
+      <label>utm_source <input id="ut-source" placeholder="newsletter"></label>
+      <label>utm_medium <input id="ut-medium" placeholder="email"></label>
+      <label>utm_campaign <input id="ut-campaign" placeholder="launch_2026"></label>
+      <label>utm_term <input id="ut-term" placeholder="(optional)"></label>
+      <label>utm_content <input id="ut-content" placeholder="(optional)"></label>
+    </div>
+    <textarea id="ut-out" readonly rows="3" style="width:100%" placeholder="tagged URL appears here"></textarea>
+    <p><button class="btn" onclick="navigator.clipboard.writeText(document.getElementById('ut-out').value)">copy</button></p>
+  </div>
   <div class="panel" id="p-pxrem">
     <h2>px ↔ rem converter</h2>
     <p class="hint">Type either side — converts at the base font-size below. Common values on the right.</p>
@@ -148,7 +162,29 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["qr","og","robots","squat","http","hash","pxrem"];
+const tools = ["qr","og","robots","squat","http","hash","pxrem","utm"];
+
+// ---- UTM builder ----
+function utmGo() {
+  const url = document.getElementById("ut-url").value.trim();
+  const params = {};
+  for (const k of ["source","medium","campaign","term","content"]) {
+    const v = document.getElementById("ut-"+k).value.trim();
+    if (v) params["utm_"+k] = v;
+  }
+  const out = document.getElementById("ut-out");
+  if (!url) { out.value = ""; return; }
+  try {
+    const u = new URL(url);
+    for (const [k,v] of Object.entries(params)) u.searchParams.set(k, v);
+    out.value = u.toString();
+  } catch {
+    const sep = url.includes("?") ? "&" : "?";
+    out.value = url + (Object.keys(params).length ? sep + new URLSearchParams(params).toString() : "");
+  }
+}
+for (const k of ["url","source","medium","campaign","term","content"])
+  document.getElementById("ut-"+k).addEventListener("input", utmGo);
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "qr");
