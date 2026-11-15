@@ -381,6 +381,14 @@ cherry"></textarea>
     </p>
   </div>
 
+  <div class="tool" data-tool="morse">
+    <h2>morse code converter</h2>
+    <p class="hint">Text &harr; Morse (dot/dash, / = word space). A-Z 0-9 + common punctuation.</p>
+    <textarea id="mo-in" rows="4" style="width:100%" placeholder="SOS 或 ... --- ..."></textarea>
+    <p><button class="go" data-mo="enc">text &rarr; morse</button><button class="go" data-mo="dec">morse &rarr; text</button></p>
+    <textarea id="mo-out" rows="4" style="width:100%" readonly></textarea>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -411,6 +419,7 @@ const TOOLS = [
   {id:"bytes",label:"file-size converter"},
   {id:"lorem",label:"lorem ipsum generator"},
   {id:"aspect",label:"aspect ratio calc"},
+  {id:"morse",label:"morse code"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -1100,6 +1109,20 @@ document.getElementById('ar-go').onclick=arCalc;
 document.querySelectorAll('[data-ar]').forEach(b=>b.onclick=()=>{
   const [w,h]=b.dataset.ar.split(',');
   document.getElementById('ar-w').value=w;document.getElementById('ar-h').value=h;arCalc();
+});
+
+// --- morse ---
+const MORSE={'a':'.-','b':'-...','c':'-.-.','d':'-..','e':'.','f':'..-.','g':'--.','h':'....','i':'..','j':'.---','k':'-.-','l':'.-..','m':'--','n':'-.','o':'---','p':'.--.','q':'--.-','r':'.-.','s':'...','t':'-','u':'..-','v':'...-','w':'.--','x':'-..-','y':'-.--','z':'--..','0':'-----','1':'.----','2':'..---','3':'...--','4':'....-','5':'.....','6':'-....','7':'--...','8':'---..','9':'----.','.':'.-.-.-',',':'--..--','?':'..--..','!':'-.-.--',"'":'.----.','"':'.-..-.','(':'-.--.',')':'-.--.-','&':'.-...',':':'---...',';':'-.-.-.','=':'-...-','+':'.-.-.','-':'-....-','_':'..--.-','/':'-..-.','@':'.--.-.'};
+const MORSE_R={};for(const k in MORSE)MORSE_R[MORSE[k]]=k;
+document.querySelectorAll('[data-mo]').forEach(b=>b.onclick=()=>{
+  const v=document.getElementById('mo-in').value;
+  let out;
+  if(b.dataset.mo==='enc'){
+    out=v.toLowerCase().split('').map(c=>c===' '?'/':(MORSE[c]||'')).filter(x=>x!=='').join(' ');
+  }else{
+    out=v.trim().split(/ +/).map(w=>w==='/'?' ':(MORSE_R[w]||'?')).join('');
+  }
+  document.getElementById('mo-out').value=out;
 });
 </script>
 </body>
