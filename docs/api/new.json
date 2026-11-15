@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:45:35.550405+00:00",
+ "generated_at": "2026-11-15T16:46:53.700706+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 2282,
- "new_items": 2156,
+ "total_items": 2317,
+ "new_items": 2191,
  "by_source": {
   "producthunt": 45,
   "show_hn": 39,
@@ -22,6 +22,7 @@
   "ariadne": 15,
   "arxiv": 15,
   "aws_blog": 15,
+  "ayende": 15,
   "begriffs": 15,
   "bertrand": 15,
   "bobmonsour": 15,
@@ -129,6 +130,7 @@
   "jwz": 10,
   "karpathy": 10,
   "krebs": 10,
+  "kvark": 10,
   "lorinhochstein": 10,
   "lucumr": 10,
   "lyft": 10,
@@ -150,6 +152,7 @@
   "wesleyac": 10,
   "wingolog": 10,
   "xeiaso": 10,
+  "yegor256": 10,
   "zackkanter": 10,
   "bitbashing": 9,
   "meta_eng": 9,
@@ -1494,6 +1497,126 @@
    "title": "Amazon S3 Tables now support all Apache Iceberg V3 data types",
    "url": "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-support-all-apache-iceberg-v3-data-types/",
    "source": "aws_blog",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The exponential growth of shadow IT",
+   "url": "http://ayende.com/204292-a/the-exponential-growth-of-shadow-it?Key=92955703-406d-4a7e-a645-f513581f03b3",
+   "source": "ayende",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What does \"XYZ developer\" mean?",
+   "url": "http://ayende.com/204291-a/what-does-xyz-developer-mean?Key=d57c7c5e-e4ce-4141-be50-8c8e6839a929",
+   "source": "ayende",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "High performance data structures design & optimizing for the GC",
+   "url": "http://ayende.com/204260-a/high-performance-data-structures-design-optimizing-for-the-gc?Key=7edcc96f-002a-4df6-8f75-c1517cb3612c",
+   "source": "ayende",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The value of long lived software in AI driven world",
+   "url": "http://ayende.com/204259-a/the-value-of-long-lived-software-in-ai-driven-world?Key=8e647a8d-4e8f-474d-8976-b95e70bf9d79",
+   "source": "ayende",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The cost of immutability",
+   "url": "http://ayende.com/204227-a/the-cost-of-immutability?Key=088c9089-5dfa-42ad-ab58-7c5b1812ed79",
+   "source": "ayende",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI scope creep & productivity",
+   "url": "http://ayende.com/204195-a/ai-scope-creep-productivity?Key=1a5c4f1b-f771-4cae-9d09-517df279ef5f",
+   "source": "ayende",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Doing it again, twenty years later: introducing Quill",
+   "url": "http://ayende.com/204163-a/doing-it-again-twenty-years-later-introducing-quill?Key=9778e219-50e7-48b3-95e4-0ddb4b36e403",
+   "source": "ayende",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Database research, frontier AI, and idiot savants, oh my!",
+   "url": "http://ayende.com/204131-a/database-research-frontier-ai-and-idiot-savants-oh-my?Key=53bb569b-cf7f-4df2-8679-47bb246b102e",
+   "source": "ayende",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Contextual embedding in RavenDB (or how to save 220,000,000 USD)",
+   "url": "http://ayende.com/204099-a/contextual-embedding-in-ravendb-or-how-to-save-220-000-000-usd?Key=197e6624-0b34-4c04-b195-126fdc9be2cd",
+   "source": "ayende",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The cost of a free feature",
+   "url": "http://ayende.com/204069-a/the-cost-of-a-free-feature?Key=c3ed237c-4a8c-41a0-8760-dc0cd139c034",
+   "source": "ayende",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Multi-Agents in RavenDB",
+   "url": "http://ayende.com/204068-a/multi-agents-in-ravendb?Key=161fe52a-a127-4955-b8aa-0d1d75f7b5b1",
+   "source": "ayende",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The best code is the one you shift+delete",
+   "url": "http://ayende.com/204067-a/the-best-code-is-the-one-you-shift-delete?Key=8b5a5104-ec4c-48b9-9a86-4d2a1715e0d0",
+   "source": "ayende",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"Optimizing\" concurrent regexes",
+   "url": "http://ayende.com/204035-a/optimizing-concurrent-regexes?Key=eaa35d86-bdd7-4d1e-8ac3-bd4a06a9a914",
+   "source": "ayende",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Non obvious optimization with divide and conquer",
+   "url": "http://ayende.com/204003-a/non-obvious-optimization-with-divide-and-conquer?Key=1fc2405c-08de-4e3e-90ec-79bbb4bab33a",
+   "source": "ayende",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learning to code, 1990s vs 2026",
+   "url": "http://ayende.com/203975-a/learning-to-code-1990s-vs-2026?Key=4bf78bb8-056a-412e-adcc-758ff6f269f1",
+   "source": "ayende",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -8774,6 +8897,86 @@
    "title": "ShinyHunters Extorted Boeing Spin-off Prior to Arrests",
    "url": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
    "source": "krebs",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Starcom: remote terminal session commander",
+   "url": "http://kvark.github.io/application/2026/09/18/starcom.html",
+   "source": "kvark",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Feeding the data monster",
+   "url": "http://kvark.github.io/ai/robotics/2026/07/12/feeding-the-data-monster.html",
+   "source": "kvark",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AR explosion",
+   "url": "http://kvark.github.io/ar/2026/07/12/ar-explosion.html",
+   "source": "kvark",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tales from the inference land",
+   "url": "http://kvark.github.io/ai/performance/2026/04/19/tales-from-the-inference-land.html",
+   "source": "kvark",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inference Arena",
+   "url": "http://kvark.github.io/ai/performance/2026/04/04/inference-arena.html",
+   "source": "kvark",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Blade XR Asteroids",
+   "url": "http://kvark.github.io/blade/xr/2026/03/21/blade-xr-asteroids.html",
+   "source": "kvark",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "File Manager",
+   "url": "http://kvark.github.io/application/2026/03/14/fileman.html",
+   "source": "kvark",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AGENTS.md doesn't make sense",
+   "url": "http://kvark.github.io/ai/2026/02/22/agents-nonsense.html",
+   "source": "kvark",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "UI failure",
+   "url": "http://kvark.github.io/ui/2024/11/13/ui-failure.html",
+   "source": "kvark",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Environment map importance sampling",
+   "url": "http://kvark.github.io/ray-tracing/2024/10/19/environment-sampling.html",
+   "source": "kvark",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -17334,6 +17537,86 @@
    "title": "How to Solve: AAC Heavyweight M1 (Savage)",
    "url": "https://xeiaso.net/blog/2026/m9s/",
    "source": "xeiaso",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Back to Socrates",
+   "url": "https://www.yegor256.com/2026/11/10/back-to-socrates.html",
+   "source": "yegor256",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Non Cogito, Ergo Quid Sum?",
+   "url": "https://www.yegor256.com/2026/09/21/cogito-ergo-sum.html",
+   "source": "yegor256",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rat’s Skills: Making Friends and Betraying Them",
+   "url": "https://www.yegor256.com/2026/07/12/rats-skills.html",
+   "source": "yegor256",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don’t Blame the Wheel for Missing a Turn",
+   "url": "https://www.yegor256.com/2026/06/01/dont-blame-the-wheel.html",
+   "source": "yegor256",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Help the Agent to Feel",
+   "url": "https://www.yegor256.com/2026/05/29/help-the-agent.html",
+   "source": "yegor256",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Monotonic Indentation",
+   "url": "https://www.yegor256.com/2026/05/24/monotonic-indentation.html",
+   "source": "yegor256",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Couriers, Not Coders",
+   "url": "https://www.yegor256.com/2026/05/03/no-mercy.html",
+   "source": "yegor256",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fast Software: More Programmers, Not Fewer",
+   "url": "https://www.yegor256.com/2026/03/05/fast-software.html",
+   "source": "yegor256",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SPAs Are a Performance Dead End",
+   "url": "https://www.yegor256.com/2026/01/25/spa-vs-performance.html",
+   "source": "yegor256",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Comments Considered Harmful in the Age of LLMs",
+   "url": "https://www.yegor256.com/2026/01/11/no-documentation-comments.html",
+   "source": "yegor256",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"

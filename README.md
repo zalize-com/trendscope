@@ -188,6 +188,9 @@ A daily cross-source snapshot of developer attention:
 | Steve Krouse | Val Town founder | `stevekrouse.com/rss.xml` |
 | Phil Calçado | engineering leadership | `philcalcado.com/feed.xml` |
 | Mary Rose Cook | code walkthroughs and experiments | `maryrosecook.com/feed.xml` |
+| Dzmitry Malyshau | Rust graphics and wgpu | `kvark.github.io/feed.xml` |
+| Oren Eini | RavenDB creator, database internals | `ayende.com/blog/rss` |
+| Yegor Bugayenko | opinionated software essays | `yegor256.com/rss.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
