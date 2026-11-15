@@ -148,7 +148,7 @@
     <div id="cpk-bar" style="display:none;margin:0 0 10px">
       <input id="cpk-input" placeholder="track an npm package — e.g. hono" style="background:var(--panel);border:1px solid var(--border);border-radius:8px;color:var(--fg);padding:7px 12px;font-size:13px;width:260px">
       <a id="cpk-add" class="btn" style="margin-top:0;padding:5px 12px;cursor:pointer">+ track</a>
-      <span class="muted" style="font-size:12px;margin-left:8px">saved in your browser · npm / crates:</span>
+      <span class="muted" style="font-size:12px;margin-left:8px">saved in your browser · npm / crates:name / gh:owner/repo</span>
     </div>
     <div class="board" id="board"></div>
     <p style="margin:8px 0 0;font-size:12px"><a id="png-btn" style="cursor:pointer">⤓ export board as PNG</a> · <a id="csv-btn" style="cursor:pointer">⤓ download board as CSV</a> · <a id="cmp-link" style="cursor:pointer;display:none">↔ vs previous day</a> <span class="muted">· share today's top stories anywhere</span></p>
@@ -279,14 +279,23 @@ const setCPK = list => localStorage.setItem("customPkgs", JSON.stringify(list));
 async function renderCustomPkgs(board) {
   const pkgs = CPK();
   if (!pkgs.length) return;
-  board.insertAdjacentHTML("beforeend",
-    `<div class="row"><span></span><span class="muted" style="font-size:12px">— your watchlist —</span><span></span></div>`);
+  // render() may fire several times in a row (paint, ?pkgs seeding, untrack);
+  // only the latest invocation may append, or watchlist rows duplicate.
+  const gen = (board._wlGen = (board._wlGen || 0) + 1);
+  const live = () => board._wlGen === gen;
+  const frags = [];
   for (const p of pkgs) {
     const isCrates = p.startsWith("crates:");
-    const name = p.replace(/^(npm|crates):/, "");
+    const isGh = p.startsWith("gh:");
+    const name = p.replace(/^(npm|crates|gh):/, "");
     try {
       let score, metric, href;
-      if (isCrates) {
+      if (isGh) {
+        const d = await fetch(`https://api.github.com/repos/${name.split("/").map(encodeURIComponent).join("/")}`)
+          .then(r => r.json());
+        score = d.stargazers_count || 0; metric = "stars";
+        href = `https://github.com/${name}`;
+      } else if (isCrates) {
         const d = await fetch(`https://crates.io/api/v1/crates/${encodeURIComponent(name)}`,
           {headers: {"User-Agent": "trendscope"}}).then(r => r.json());
         score = d.crate?.recent_downloads || 0; metric = "recent downloads";
@@ -297,18 +306,21 @@ async function renderCustomPkgs(board) {
         score = d.downloads || 0; metric = "weekly downloads";
         href = `https://www.npmjs.com/package/${encodeURIComponent(name)}`;
       }
-      board.insertAdjacentHTML("beforeend", `
+      frags.push(`
         <div class="row">
           <span class="rank">★</span>
           <span>
             <a href="${href}" target="_blank" rel="noopener">${escapeHtml(name)}</a>
-            <span class="meta"><span class="src">${isCrates ? "crates" : "npm"}</span><span class="src">watchlist</span></span>
+            <span class="meta"><span class="src">${isGh ? "github" : isCrates ? "crates" : "npm"}</span><span class="src">watchlist</span></span>
           </span>
           <span class="score"><b>${fmt(score)}</b> <span class="muted" style="font-size:11px">${metric}</span>
             <a href="#" data-untrack="${escapeHtml(p)}" class="delta" style="color:var(--dim)">✕</a></span>
         </div>`);
     } catch (e) { /* fetch failed — skip package */ }
   }
+  if (live()) board.insertAdjacentHTML("beforeend",
+    `<div class="row"><span></span><span class="muted" style="font-size:12px">— your watchlist —</span><span></span></div>`
+    + frags.join(""));
 }
 
 function render(items, tab) {
