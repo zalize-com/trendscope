@@ -429,6 +429,7 @@ cherry"></textarea>
 <script src="https://cdn.jsdelivr.net/npm/croner@9.0.0/dist/croner.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/compare-versions@6.1.1/lib/umd/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cronstrue@2.50.0/dist/cronstrue.min.js"></script>
 <script>
 const TOOLS = [
   {id:"color", label:"Color converter"},
@@ -872,14 +873,6 @@ document.getElementById("sg-in").addEventListener("input", sgGo);
 
 // ---- crontab explainer ----
 const CR_NAMES={4:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],3:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]};
-function crRead(fields){
-  const names=["minute","hour","day-of-month","month","weekday"];
-  const human=["at minute "+fields[0],"past hour "+fields[1],"on day-of-month "+fields[2],"in month "+fields[3],"on weekday "+fields[4]];
-  const parts=[];
-  fields.forEach((f,i)=>{ if(f!=="*")parts.push(human[i]); });
-  if(!parts.length)return"every minute";
-  return"runs "+parts.join(", ");
-}
 function crGo(){
   const v=document.getElementById("cr-in").value.trim();
   const out=document.getElementById("cr-out"),err=document.getElementById("cr-err");
@@ -890,7 +883,7 @@ function crGo(){
   let hits;
   try { hits = new Cron(v).nextRuns(5); }
   catch(e) { err.textContent="could not parse one or more fields"; return; }
-  out.innerHTML="<b>"+crRead(f)+"</b><ul style='margin:6px 0 0;padding-left:18px'>"+
+  out.innerHTML="<b>"+cronstrue.toString(v)+"</b><ul style='margin:6px 0 0;padding-left:18px'>"+
     hits.map(d=>"<li>"+d.toLocaleString()+"</li>").join("")+"</ul>"+
     (hits.length?"":"<li>no fire times in the next year — check dom/dow combination</li>");
 }
