@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>board veterans — trendscope</title>
+<meta name="description" content="The longest-running items ever seen on the trendscope board.">
+<link rel="stylesheet" href="style.css">
+<meta property="og:title" content="trendscope — board veterans">
+<meta property="og:type" content="website">
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a href="index.html">trendscope</a> ·
+    <a href="streaks.html">streaks</a> ·
+    <a href="meteors.html">meteors</a> ·
+    <a href="api.html">api</a>
+  </nav>
+
+  <h1>board veterans</h1>
+  <p class="muted" id="sub">
+    The items with the longest all-time presence on the daily board —
+    the mirror image of <a href="meteors.html">meteors</a>, which flash for
+    a single day. A long streak means a topic kept pulling attention
+    across sources for days on end.
+  </p>
+
+  <table id="t">
+    <thead>
+      <tr><th>#</th><th>days on board</th><th>longest streak</th><th>title</th><th>source</th><th>peak</th></tr>
+    </thead>
+    <tbody id="tb"></tbody>
+  </table>
+
+  <p class="muted" id="note"></p>
+
+  <footer>
+    Part of <a href="index.html">trendscope</a> — the daily developer attention dataset.
+    Data: <a href="docs/api/streaks.json">docs/api/streaks.json</a>
+  </footer>
+</div>
+
+<script type="module">
+const d = await fetch("docs/api/streaks.json").then(r => r.json());
+const rows = d.longest_all_time || [];
+const tb = document.getElementById("tb");
+for (let i = 0; i < rows.length; i++) {
+  const it = rows[i];
+  const tr = document.createElement("tr");
+  const peak = it.top_rank != null ? "#" + it.top_rank : (it.top_score ?? "");
+  tr.innerHTML = `<td>${i + 1}</td>
+    <td><b>${it.days_on_board ?? ""}</b></td>
+    <td>${it.longest_streak ?? ""}</td>
+    <td><a href="${it.url || "#"}">${it.title}</a></td>
+    <td>${it.source}</td>
+    <td class="muted">${peak}${it.top_score != null && it.top_rank != null ? " · " + it.top_score : ""}</td>`;
+  tb.appendChild(tr);
+}
+document.getElementById("note").textContent =
+  `${rows.length} veterans over ${d.days_tracked} tracked days · generated ${d.generated_at?.slice(0,10) || ""}`;
+</script>
+</body>
+</html>
