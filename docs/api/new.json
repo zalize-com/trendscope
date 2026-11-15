@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T19:56:57.850183+00:00",
+ "generated_at": "2026-11-15T20:01:07.514015+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 19379,
- "new_items": 19252,
+ "total_items": 19419,
+ "new_items": 19292,
  "by_source": {
   "show_hn": 50,
   "producthunt": 45,
@@ -666,9 +666,11 @@
   "robinwieruch": 15,
   "romainguy": 15,
   "romaricpascal": 15,
+  "rprogramming": 15,
   "rtpg": 15,
   "rubick": 15,
   "ruslanspivak": 15,
+  "rwebdev": 15,
   "ryanmulligan": 15,
   "ryantrimble": 15,
   "sallylait": 15,
@@ -1416,6 +1418,7 @@
   "zachleat": 10,
   "zackkanter": 10,
   "zeichenschatz": 10,
+  "zolmeister": 10,
   "zopatista": 10,
   "zwischenzugs": 10,
   "bejarano": 9,
@@ -124182,6 +124185,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Slack’s Migration to a Cellular Architecture",
+   "url": "https://www.reddit.com/r/programming/comments/1xwsbxo/slacks_migration_to_a_cellular_architecture/",
+   "source": "rprogramming",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Go 1.27’s generic methods made possible for ORMs. Compile-checked columns with no generated code",
+   "url": "https://www.reddit.com/r/programming/comments/1xwtfmr/what_go_127s_generic_methods_made_possible_for/",
+   "source": "rprogramming",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Memory management in 40 major C projects, a survey",
+   "url": "https://www.reddit.com/r/programming/comments/1xwxhbp/memory_management_in_40_major_c_projects_a_survey/",
+   "source": "rprogramming",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "544 unmaintained PyPI packages with imports that fail on Python 3.12+ still get 100M+ downloads a month",
+   "url": "https://www.reddit.com/r/programming/comments/1xwyhpm/544_unmaintained_pypi_packages_with_imports_that/",
+   "source": "rprogramming",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Brockett-Dobkin Rectangular Matrix Multiplication Algorithm From 1970s",
+   "url": "https://www.reddit.com/r/programming/comments/1xwxmp1/brockettdobkin_rectangular_matrix_multiplication/",
+   "source": "rprogramming",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Many Tiles, One Space, Two Worlds -- At Last, a Use for Bubble Sort",
+   "url": "https://www.reddit.com/r/programming/comments/1xx0jyi/many_tiles_one_space_two_worlds_at_last_a_use_for/",
+   "source": "rprogramming",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I accidentally became a millionaire",
+   "url": "https://www.reddit.com/r/programming/comments/1xvr455/how_i_accidentally_became_a_millionaire/",
+   "source": "rprogramming",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Understanding Go: inside PGO",
+   "url": "https://www.reddit.com/r/programming/comments/1xwz44b/understanding_go_inside_pgo/",
+   "source": "rprogramming",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What we learned operating auth for 1,000+ APIs",
+   "url": "https://www.reddit.com/r/programming/comments/1xwac98/what_we_learned_operating_auth_for_1000_apis/",
+   "source": "rprogramming",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "It's all about the allocator",
+   "url": "https://www.reddit.com/r/programming/comments/1xw1sem/its_all_about_the_allocator/",
+   "source": "rprogramming",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Under the Hood: Serving Kimi K3 | DigitalOcean",
+   "url": "https://www.reddit.com/r/programming/comments/1xw3jy7/under_the_hood_serving_kimi_k3_digitalocean/",
+   "source": "rprogramming",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Designing payouts that never payout twice: timeouts, an \"Unknown\" state, and idempotency in cross-border payments",
+   "url": "https://www.reddit.com/r/programming/comments/1xw8tdv/designing_payouts_that_never_payout_twice/",
+   "source": "rprogramming",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Rust 1.100.0",
+   "url": "https://www.reddit.com/r/programming/comments/1xvixj7/announcing_rust_11000/",
+   "source": "rprogramming",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Formal Verification is Not Verifiable: Bouba and Kiki Software",
+   "url": "https://www.reddit.com/r/programming/comments/1xvug39/formal_verification_is_not_verifiable_bouba_and/",
+   "source": "rprogramming",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beating the frontier on NetHack",
+   "url": "https://www.reddit.com/r/programming/comments/1xw2equ/beating_the_frontier_on_nethack/",
+   "source": "rprogramming",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Fitting Some Files Through A Stdout-Shaped Hole",
    "url": "http://rtpg.co/2026/02/03/fitting-some-files-through-a-stdout-shaped-hole/",
    "source": "rtpg",
@@ -124898,6 +125021,126 @@
    "url": "https://rviscomi.dev/2023/05/querying-parsed-html-in-bigquery/",
    "source": "rviscomi",
    "rank": 5,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Monthly Getting Started / Web Dev Career Thread",
+   "url": "https://www.reddit.com/r/webdev/comments/1w49w0r/monthly_getting_started_web_dev_career_thread/",
+   "source": "rwebdev",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Monthly Getting Started / Web Dev Career Thread",
+   "url": "https://www.reddit.com/r/webdev/comments/1xl1aup/monthly_getting_started_web_dev_career_thread/",
+   "source": "rwebdev",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple Continues to Hold Back Mobile Safari Features to Juice App Store Sales",
+   "url": "https://www.reddit.com/r/webdev/comments/1xwzugh/apple_continues_to_hold_back_mobile_safari/",
+   "source": "rwebdev",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "imgtune: an open-source auditor that measures how much smaller your site's media can get",
+   "url": "https://www.reddit.com/r/webdev/comments/1xwvesh/imgtune_an_opensource_auditor_that_measures_how/",
+   "source": "rwebdev",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "beginner here, why y'all use rem for almost everything? what if user increase the base font will it messed up the layout or your web?",
+   "url": "https://www.reddit.com/r/webdev/comments/1xwtct4/beginner_here_why_yall_use_rem_for_almost/",
+   "source": "rwebdev",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[Showoff Saturday] My team at Chrome worked with Edge, Firefox, and MDN on a skill to teach coding agents modern web best practices",
+   "url": "https://www.reddit.com/r/webdev/comments/1xw9yw4/showoff_saturday_my_team_at_chrome_worked_with/",
+   "source": "rwebdev",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[ Removed by Reddit ]",
+   "url": "https://www.reddit.com/r/webdev/comments/1xx12hs/removed_by_reddit/",
+   "source": "rwebdev",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "modest-ui: classless CSS that styles plain HTML",
+   "url": "https://www.reddit.com/r/webdev/comments/1xw5p0j/modestui_classless_css_that_styles_plain_html/",
+   "source": "rwebdev",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "how do you know if you need redis?",
+   "url": "https://www.reddit.com/r/webdev/comments/1xw8owi/how_do_you_know_if_you_need_redis/",
+   "source": "rwebdev",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dark mode support on IE5.5",
+   "url": "https://www.reddit.com/r/webdev/comments/1xwbwnh/dark_mode_support_on_ie55/",
+   "source": "rwebdev",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Open-source web analytics with session replay, error tracking, Web Vitals, uptime monitoring and status pages",
+   "url": "https://www.reddit.com/r/webdev/comments/1xw4v0x/opensource_web_analytics_with_session_replay/",
+   "source": "rwebdev",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a simple product configurator for my startup. DIY with Shopify or hire a developer?",
+   "url": "https://www.reddit.com/r/webdev/comments/1xwsc3p/building_a_simple_product_configurator_for_my/",
+   "source": "rwebdev",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minium: A CSS library for semantic HTML, with layouts and components when you need them",
+   "url": "https://www.reddit.com/r/webdev/comments/1xwbocv/minium_a_css_library_for_semantic_html_with/",
+   "source": "rwebdev",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[Showoff Saturday] I built a free toolkit for testing and debugging CORS",
+   "url": "https://www.reddit.com/r/webdev/comments/1xwele6/showoff_saturday_i_built_a_free_toolkit_for/",
+   "source": "rwebdev",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is this type of prompt called?",
+   "url": "https://www.reddit.com/r/webdev/comments/1xvm3kp/what_is_this_type_of_prompt_called/",
+   "source": "rwebdev",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -155290,6 +155533,86 @@
    "url": "http://www.zmonster.me/2023/05/07/llm-prompt-engineering-practice-prologue.html",
    "source": "zmonster",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JWT Authentication",
+   "url": "https://zolmeister.com/2016/09/jwt-auth.html",
+   "source": "zolmeister",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MySQL Migrations",
+   "url": "https://zolmeister.com/2016/08/mysql-migrations.html",
+   "source": "zolmeister",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Clay.io - A Reflection",
+   "url": "https://zolmeister.com/2016/05/clay-io.html",
+   "source": "zolmeister",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Zorium v1.0.0 (╯°□°)╯︵ ┻━┻",
+   "url": "https://zolmeister.com/2015/05/zorium.html",
+   "source": "zolmeister",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10x: Service Discovery at Clay.io",
+   "url": "https://zolmeister.com/2015/02/10x-service-discovery-at-clay-io.html",
+   "source": "zolmeister",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10x: Docker at Clay.io",
+   "url": "https://zolmeister.com/2014/12/10x-docker-at-clay-io.html",
+   "source": "zolmeister",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10x: Logging at Clay.io",
+   "url": "https://zolmeister.com/2014/10/10x-logging-at-clay-io.html",
+   "source": "zolmeister",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10x: Architecture at Clay.io",
+   "url": "https://zolmeister.com/2014/10/10x-architecture-at-clay-io.html",
+   "source": "zolmeister",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Developing on Linux",
+   "url": "https://zolmeister.com/2014/09/developing-on-linux.html",
+   "source": "zolmeister",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fuco - A Coloring Game",
+   "url": "https://zolmeister.com/2014/09/Fuco-a-coloring-game.html",
+   "source": "zolmeister",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
