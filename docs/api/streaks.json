@@ -2,8 +2,8 @@
   "generated_at": "2026-11-15",
   "latest_snapshot": "2026-11-15",
   "days_tracked": 9,
-  "active_count": 118,
-  "repeat_appearances": 118,
+  "active_count": 119,
+  "repeat_appearances": 119,
   "active": [
     {
       "title": "Terminal borders that don't cost a cell",
@@ -588,6 +588,16 @@
       "days_on_board": 2
     },
     {
+      "title": "Lean proof of the entire US tax code to find loopholes",
+      "source": "lemmy",
+      "url": "https://lexifina.com/blog/formalizing-the-us-tax-code",
+      "metric": "score",
+      "top_score": 104,
+      "top_rank": 12,
+      "longest_streak": 2,
+      "days_on_board": 2
+    },
+    {
       "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
       "source": "hackernews",
       "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
@@ -994,16 +1004,6 @@
       "metric": "stars",
       "top_score": 782,
       "top_rank": 14,
-      "longest_streak": 2,
-      "days_on_board": 2
-    },
-    {
-      "title": "zod",
-      "source": "npm",
-      "url": "https://www.npmjs.com/package/zod",
-      "metric": "weekly downloads",
-      "top_score": 456795275,
-      "top_rank": 1,
       "longest_streak": 2,
       "days_on_board": 2
     }

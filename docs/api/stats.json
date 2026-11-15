@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T12:36:49.938003+00:00",
+ "generated_at": "2026-11-15T12:43:18.905601+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 628,
- "unique_urls": 493,
- "items_in_latest": 240,
- "items_per_day_avg": 69.8,
+ "total_rows": 643,
+ "unique_urls": 506,
+ "items_in_latest": 255,
+ "items_per_day_avg": 71.4,
  "sources": {
   "arstechnica": {
    "rows": 16,
@@ -36,6 +36,10 @@
   "hackernews": {
    "rows": 192,
    "days_active": 9
+  },
+  "lemmy": {
+   "rows": 15,
+   "days_active": 1
   },
   "lobsters": {
    "rows": 33,
