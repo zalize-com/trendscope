@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T17:58:22.291307+00:00",
+ "generated_at": "2026-11-15T18:00:22.527973+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 10032,
- "new_items": 9905,
+ "total_items": 10294,
+ "new_items": 10167,
  "by_source": {
   "show_hn": 46,
   "producthunt": 45,
@@ -93,14 +93,26 @@
   "blogasciinema": 15,
   "blogaxlight": 15,
   "blogbloomca": 15,
+  "blogcarlmjohnson": 15,
   "blogchromium": 15,
   "blogcodepen": 15,
   "blogcodingnow": 15,
   "blogcoiled": 15,
   "blogdevtang": 15,
+  "blogemberjs": 15,
+  "blogerratasec": 15,
+  "blogfirsov": 15,
+  "blogforecho": 15,
+  "bloggreenroots": 15,
+  "bloghboeck": 15,
   "blogj11y": 15,
   "blogjanestreet": 15,
   "blogjessfraz": 15,
+  "blogjoinmastodon": 15,
+  "blogjse": 15,
+  "blogkizu": 15,
+  "bloglukaszolejnik": 15,
+  "blogmaximeheckel": 15,
   "blogmgechev": 15,
   "blogportswigger": 15,
   "blogroboflow": 15,
@@ -436,7 +448,9 @@
   "wcedmisten": 13,
   "aphyr": 12,
   "baeldung": 12,
+  "bloglilydjwg": 12,
   "bloglogrocket": 12,
+  "blogmayank": 12,
   "chriscoyier": 12,
   "codetutsplus": 12,
   "codium": 12,
@@ -500,10 +514,14 @@
   "blogarchive": 10,
   "blogcjgammon": 10,
   "blogcnbang": 10,
+  "blogcryptographyengineering": 10,
   "blogdomenic": 10,
   "blogfarmostwood": 10,
+  "blogfrankmtaylor": 10,
   "blogibireme": 10,
   "blogiconfactory": 10,
+  "blogionicframework": 10,
+  "blogjimnielsen": 10,
   "blogjquery": 10,
   "blogkenanb": 10,
   "blogkhanacademy": 10,
@@ -512,6 +530,7 @@
   "bloglizardwrangler": 10,
   "blogluden": 10,
   "blogmozilla": 10,
+  "blognem": 10,
   "blogpythonlibrary": 10,
   "blogreybango": 10,
   "blogrustlang": 10,
@@ -739,6 +758,7 @@
   "josebrowne": 9,
   "meta_eng": 9,
   "susam": 9,
+  "blogchriszacharias": 8,
   "dbanotes": 8,
   "eigr": 8,
   "hackaday": 8,
@@ -14585,6 +14605,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "What’s New in Go 1.24?",
+   "url": "https://blog.carlana.net/post/2025/fallthrough-podcast-124/",
+   "source": "blogcarlmjohnson",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new in Go 1.23? Podcast",
+   "url": "https://blog.carlana.net/post/2024/go-time-podcast-123/",
+   "source": "blogcarlmjohnson",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s New in Go 1.23: Iterators and reflect.Value.Seq",
+   "url": "https://blog.carlana.net/post/2024/golang-reflect-value-seq/",
+   "source": "blogcarlmjohnson",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Five Years Running a News Site on JAMStack",
+   "url": "https://blog.carlana.net/post/2024/spotlight-pa-jamstack-history/",
+   "source": "blogcarlmjohnson",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s New in Go 1.22: cmp.Or",
+   "url": "https://blog.carlana.net/post/2024/golang-cmp-or-uses-and-history/",
+   "source": "blogcarlmjohnson",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new in Go 1.22? Podcast",
+   "url": "https://blog.carlana.net/post/2024/go-time-podcast-122/",
+   "source": "blogcarlmjohnson",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s New in Go 1.22: slices.Concat",
+   "url": "https://blog.carlana.net/post/2024/golang-slices-concat/",
+   "source": "blogcarlmjohnson",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s New in Go 1.22: reflect.TypeFor",
+   "url": "https://blog.carlana.net/post/2024/golang-reflect-type-for/",
+   "source": "blogcarlmjohnson",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Alternate Futures for “Web Components”",
+   "url": "https://blog.carlana.net/post/2023/web-component-alternative-futures/",
+   "source": "blogcarlmjohnson",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "XML is better than YAML. Hear me out…",
+   "url": "https://blog.carlana.net/post/2023/xml-is-better-than-yaml/",
+   "source": "blogcarlmjohnson",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new in Go 1.21? Podcast",
+   "url": "https://blog.carlana.net/post/2023/go-time-podcast-121/",
+   "source": "blogcarlmjohnson",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What I worked on for Go 1.21",
+   "url": "https://blog.carlana.net/post/2023/go-121-flag-boolfunc-constraints/",
+   "source": "blogcarlmjohnson",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ten Years of “Go: The Good, the Bad, and the Meh”",
+   "url": "https://blog.carlana.net/post/2023/ten-years-of-go-good-bad-meh/",
+   "source": "blogcarlmjohnson",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to include Git version information in Go",
+   "url": "https://blog.carlana.net/post/2023/golang-git-hash-how-to/",
+   "source": "blogcarlmjohnson",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The bits of Go we avoid (and why) Podcast",
+   "url": "https://blog.carlana.net/post/2023/go-time-podcast-considered-harmful/",
+   "source": "blogcarlmjohnson",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Credential Brokering Patterns for AI Agents Part 3: Protecting the Token Vault with OpenBao",
    "url": "https://blog.christianposta.com/credential-brokering-patterns-for-ai-agent-egress-part3/",
    "source": "blogchristianposta",
@@ -14621,6 +14761,70 @@
    "url": "https://blog.christianposta.com/apis-for-probabilistic-callers/",
    "source": "blogchristianposta",
    "rank": 5,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Eat. Sleep. Exercise. Work.",
+   "url": "https://blog.chriszacharias.com/eat-sleep-exercise-work",
+   "source": "blogchriszacharias",
+   "rank": 1,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "imgix: A New Step Forward",
+   "url": "https://blog.chriszacharias.com/imgix-a-new-step-forward",
+   "source": "blogchriszacharias",
+   "rank": 2,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Conspiracy To Kill IE6",
+   "url": "https://blog.chriszacharias.com/a-conspiracy-to-kill-ie6",
+   "source": "blogchriszacharias",
+   "rank": 3,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Imaging Chain and the Internet",
+   "url": "https://blog.chriszacharias.com/imaging-and-the-internet",
+   "source": "blogchriszacharias",
+   "rank": 4,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Multiplane Camera",
+   "url": "https://blog.chriszacharias.com/multiplane-camera",
+   "source": "blogchriszacharias",
+   "rank": 5,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Page Weight Matters",
+   "url": "https://blog.chriszacharias.com/page-weight-matters",
+   "source": "blogchriszacharias",
+   "rank": 6,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Investors",
+   "url": "https://blog.chriszacharias.com/investors",
+   "source": "blogchriszacharias",
+   "rank": 7,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cruise Ships",
+   "url": "https://blog.chriszacharias.com/cruise-ships",
+   "source": "blogchriszacharias",
+   "rank": 8,
    "score": 1,
    "metric": "feed rank"
   },
@@ -15265,6 +15469,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "New website: estimating human cryptanalytic work",
+   "url": "https://blog.cryptographyengineering.com/2026/10/11/new-website-estimating-human-cryptanalytic-work/",
+   "source": "blogcryptographyengineering",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is sandboxing sufficient to contain rogue agents?",
+   "url": "https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/",
+   "source": "blogcryptographyengineering",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Everything is about to “go dark”",
+   "url": "https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/",
+   "source": "blogcryptographyengineering",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Some thoughts about Anthropic’s new cryptanalysis results",
+   "url": "https://blog.cryptographyengineering.com/2026/07/29/some-notes-about-anthropics-new-results/",
+   "source": "blogcryptographyengineering",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The future of Siri, or: why private inference isn’t private enough",
+   "url": "https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-or-more-shouting-into-the-void-about-private-agents/",
+   "source": "blogcryptographyengineering",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Let’s talk about encrypted reasoning",
+   "url": "https://blog.cryptographyengineering.com/2026/05/29/fooling-around-with-encrypted-reasoning-blobs/",
+   "source": "blogcryptographyengineering",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Anonymous credentials: an illustrated primer (Part 2)",
+   "url": "https://blog.cryptographyengineering.com/2026/04/17/anonymous-credentials-an-illustrated-primer-part-2/",
+   "source": "blogcryptographyengineering",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Anonymous credentials: an illustrated primer",
+   "url": "https://blog.cryptographyengineering.com/2026/03/02/anonymous-credentials-an-illustrated-primer/",
+   "source": "blogcryptographyengineering",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WhatsApp Encryption, a Lawsuit, and a Lot of Noise",
+   "url": "https://blog.cryptographyengineering.com/2026/02/02/whatsapp-encryption-a-lawsuit-and-a-lot-of-noise/",
+   "source": "blogcryptographyengineering",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kerberoasting",
+   "url": "https://blog.cryptographyengineering.com/2025/09/10/kerberoasting/",
+   "source": "blogcryptographyengineering",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "斑马玩教具荣获 4 大顶级设计大奖",
    "url": "https://blog.devtang.com/2026/11/14/get-4-top-design-reward-through-6-years-efforts/",
    "source": "blogdevtang",
@@ -15465,6 +15749,246 @@
    "metric": "feed rank"
   },
   {
+   "title": "2016 Ember Community Survey",
+   "url": "https://blog.emberjs.com/2016-ember-community-survey.html",
+   "source": "blogemberjs",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2017 Ember Community Survey",
+   "url": "https://blog.emberjs.com/2017-ember-community-survey.html",
+   "source": "blogemberjs",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2018 Ember Community Survey",
+   "url": "https://blog.emberjs.com/2018-ember-community-survey.html",
+   "source": "blogemberjs",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The 2020 Ember Roadmap",
+   "url": "https://blog.emberjs.com/2020-ember-roadmap",
+   "source": "blogemberjs",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility Working Group Update",
+   "url": "https://blog.emberjs.com/accessibility-working-group-update",
+   "source": "blogemberjs",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Ember's First LTS Release",
+   "url": "https://blog.emberjs.com/announcing-embers-first-lts",
+   "source": "blogemberjs",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing the Official TypeScript Types Public Preview",
+   "url": "https://blog.emberjs.com/announcing-official-typescript-types-public-preview",
+   "source": "blogemberjs",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing the Ember.js Security Policy",
+   "url": "https://blog.emberjs.com/announcing-the-ember-security-policy",
+   "source": "blogemberjs",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing The Glimmer 2 Alpha",
+   "url": "https://blog.emberjs.com/announcing-the-glimmer-2-alpha",
+   "source": "blogemberjs",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Another Ember 2.x Status Update",
+   "url": "https://blog.emberjs.com/another-two-oh-status-update",
+   "source": "blogemberjs",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Upcoming deprecation of baseURL in Ember CLI 2.7",
+   "url": "https://blog.emberjs.com/baseURL",
+   "source": "blogemberjs",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cleaning Up Github Issues",
+   "url": "https://blog.emberjs.com/cleaning-up-github-issues",
+   "source": "blogemberjs",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Coming Soon in Ember Octane - Part 1: Native Classes",
+   "url": "https://blog.emberjs.com/coming-soon-in-ember-octane-part-1",
+   "source": "blogemberjs",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Coming Soon in Ember Octane - Part 2: Angle Brackets & Named Arguments",
+   "url": "https://blog.emberjs.com/coming-soon-in-ember-octane-part-2",
+   "source": "blogemberjs",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Coming Soon in Ember Octane - Part 3: Tracked Properties",
+   "url": "https://blog.emberjs.com/coming-soon-in-ember-octane-part-3",
+   "source": "blogemberjs",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "C can be memory safe, part 2",
+   "url": "https://blog.erratasec.com/2024/02/c-can-be-memory-safe-part-2.html",
+   "source": "blogerratasec",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "C can be memory-safe",
+   "url": "https://blog.erratasec.com/2023/02/c-can-be-memory-safe.html",
+   "source": "blogerratasec",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I'm still bitter about Slammer",
+   "url": "https://blog.erratasec.com/2023/01/im-still-bitter-about-slammer.html",
+   "source": "blogerratasec",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The RISC Deprogrammer",
+   "url": "https://blog.erratasec.com/2022/10/the-risc-deprogrammer.html",
+   "source": "blogerratasec",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DS620slim tiny home server",
+   "url": "https://blog.erratasec.com/2022/07/ds620slim-tiny-home-server.html",
+   "source": "blogerratasec",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "No, a researcher didn't find Olympics app spying on you",
+   "url": "https://blog.erratasec.com/2022/01/no-researcher-didnt-find-olympics-app.html",
+   "source": "blogerratasec",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Journalists: stop selling NFTs that you don't understand",
+   "url": "https://blog.erratasec.com/2021/12/journalists-stop-selling-nfts-that-you.html",
+   "source": "blogerratasec",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Example: forensicating the Mesa County system image",
+   "url": "https://blog.erratasec.com/2021/11/example-forensicating-mesa-county.html",
+   "source": "blogerratasec",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Debunking: that Jones Alfa-Trump report",
+   "url": "https://blog.erratasec.com/2021/10/debunking-that-jones-alfa-trump-report.html",
+   "source": "blogerratasec",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Review: Dune (2021)",
+   "url": "https://blog.erratasec.com/2021/10/review-dune.html",
+   "source": "blogerratasec",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fact check: that \"forensics\" of the Mesa image is crazy",
+   "url": "https://blog.erratasec.com/2021/10/fact-check-that-forensics-of-mesa-image.html",
+   "source": "blogerratasec",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "100 terabyte home NAS",
+   "url": "https://blog.erratasec.com/2021/10/100-terabyte-home-nas.html",
+   "source": "blogerratasec",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Check: that Republican audit of Maricopa",
+   "url": "https://blog.erratasec.com/2021/09/check-that-republican-audit-of-maricopa.html",
+   "source": "blogerratasec",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "That Alfa-Trump Sussman indictment",
+   "url": "https://blog.erratasec.com/2021/09/that-alfa-trump-sussman-indictment.html",
+   "source": "blogerratasec",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How not to get caught in law-enforcement geofence requests",
+   "url": "https://blog.erratasec.com/2021/09/how-not-to-get-caught-in-law.html",
+   "source": "blogerratasec",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "小写的牧歌",
    "url": "https://blog.farmostwood.net/1256.html",
    "source": "blogfarmostwood",
@@ -15541,6 +16065,246 @@
    "url": "https://blog.farmostwood.net/859.html",
    "source": "blogfarmostwood",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "XHR by CEM, The data request API made right.",
+   "url": "https://blog.firsov.net/2026/11/xhr-by-cem-data-request-api-made-right.html",
+   "source": "blogfirsov",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Consumer Semantic Theme reached 110% coverage of Material Design tokens.",
+   "url": "https://blog.firsov.net/2025/12/consumer-semantic-theme-reached-110.html",
+   "source": "blogfirsov",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://blog.firsov.net/2025/12/continue-to-work-on-consumer-semnatic.html",
+   "source": "blogfirsov",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://blog.firsov.net/2025/07/in-progress.html",
+   "source": "blogfirsov",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Consumer Semantic theme design with AI",
+   "url": "https://blog.firsov.net/2025/06/consumer-semantic-theme-design-with-ai.html",
+   "source": "blogfirsov",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "UX Design Token source of truth",
+   "url": "https://blog.firsov.net/2025/04/ux-design-token-source-of-truth.html",
+   "source": "blogfirsov",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "7 UX design tokens",
+   "url": "https://blog.firsov.net/2025/04/7-ux-design-tokens.html",
+   "source": "blogfirsov",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://blog.firsov.net/2024/09/can-expenses-for-creating-mock-data-in.html",
+   "source": "blogfirsov",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "UI TDD with StoryBook",
+   "url": "https://blog.firsov.net/2024/04/ui-tdd-with-storybook.html",
+   "source": "blogfirsov",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2023 retrospective",
+   "url": "https://blog.firsov.net/2023/12/2023-retrospective.html",
+   "source": "blogfirsov",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to integrate MSW queries mocking with @web/test-runner and StoryBook",
+   "url": "https://blog.firsov.net/2023/03/how-to-integrate-msw-queries-mocking.html",
+   "source": "blogfirsov",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "npx dockerize-npm-module",
+   "url": "https://blog.firsov.net/2021/12/npx-dockerize-npm-module.html",
+   "source": "blogfirsov",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HTML5 SLOT tag for content management explained",
+   "url": "https://blog.firsov.net/2021/10/html5-slot-tag-for-content-management.html",
+   "source": "blogfirsov",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "XSLT 1.0 in-browser Q&A",
+   "url": "https://blog.firsov.net/2021/07/xslt-10-in-browser-q.html",
+   "source": "blogfirsov",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Semantic Theming - indexed palette",
+   "url": "https://blog.firsov.net/2021/04/semantic-theming-indexed-palette.html",
+   "source": "blogfirsov",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我做了两款微信小游戏",
+   "url": "https://blog.forecho.com/two-wechat-minigames.html",
+   "source": "blogforecho",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我做了个只收录精品软件的网站 SoftBests",
+   "url": "https://blog.forecho.com/introducing-softbests.html",
+   "source": "blogforecho",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ICT 核心概念笔记：流动性、FVG、Power of 3 与订单块",
+   "url": "https://blog.forecho.com/learn-every-ict-concept.html",
+   "source": "blogforecho",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Al Brooks：10 个最佳价格行为交易形态（全解析与中文图解）",
+   "url": "https://blog.forecho.com/10-best-price-action-trading-patterns.html",
+   "source": "blogforecho",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Al Brooks 团队交易员 Rose 访谈复盘：震荡区间的本质、散户优势与 PF 考核法则",
+   "url": "https://blog.forecho.com/al-brooks-team-trader-rose-interview-insights.html",
+   "source": "blogforecho",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "新手如何上手自营交易（Prop Firm）：FundedNext 保姆级开户与配置指南",
+   "url": "https://blog.forecho.com/fundednext-prop-firm-beginner-guide.html",
+   "source": "blogforecho",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "玩了 1 年半 Prop Firm，我才搞懂考试号和出金号的玩法",
+   "url": "https://blog.forecho.com/prop-firm-evaluation-and-funded-account-strategy.html",
+   "source": "blogforecho",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "交易员这行，到底在拼什么？",
+   "url": "https://blog.forecho.com/what-traders-really-compete-on-beyond-technical-analysis.html",
+   "source": "blogforecho",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "从 800U 到爆仓：过度交易和扛单，最后还是把账户做没了",
+   "url": "https://blog.forecho.com/from-800u-to-liquidation-overtrading-countertrend.html",
+   "source": "blogforecho",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "从 400U 到 800U：小账户做短线时，我这周学到的几件事",
+   "url": "https://blog.forecho.com/from-400u-to-800u-small-account-scalping-lessons.html",
+   "source": "blogforecho",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我拿 100U 开了个实盘账户，看看价格行为到底行不行",
+   "url": "https://blog.forecho.com/bitget-100u-price-action-real-money-test.html",
+   "source": "blogforecho",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "用交易平台风控设置改掉逆市加仓这个坏习惯",
+   "url": "https://blog.forecho.com/platform-risk-settings-stop-revenge-trading.html",
+   "source": "blogforecho",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "z 说讲的支撑阻力：有人被套，这条线才有效",
+   "url": "https://blog.forecho.com/price-action-support-resistance-zshuo-trading.html",
+   "source": "blogforecho",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "看懂 z 说交易的「缺口」：那根线到底画在哪",
+   "url": "https://blog.forecho.com/price-action-gap-zshuo-trading.html",
+   "source": "blogforecho",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "富途、老虎之后，大陆用户还能怎么买美股：我会试试 Bitget 美股代币",
+   "url": "https://blog.forecho.com/buy-us-stocks-with-usdt-bitget-stock-tokens.html",
+   "source": "blogforecho",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -15668,6 +16432,326 @@
    "title": "GitHub agentic workflows and Renovate",
    "url": "https://blog.frankel.ch/github-agentic-workflow-renovate/",
    "source": "blogfrankel",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I’m going to a Film Premier",
+   "url": "https://blog.frankmtaylor.com/2026/08/14/im-going-to-a-film-premier/",
+   "source": "blogfrankmtaylor",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You don’t know HTML Lists",
+   "url": "https://blog.frankmtaylor.com/2026/05/13/you-dont-know-html-lists/",
+   "source": "blogfrankmtaylor",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You Don’t Know HTML Tables",
+   "url": "https://blog.frankmtaylor.com/2026/03/05/you-dont-know-html-tables/",
+   "source": "blogfrankmtaylor",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Manage CSS Performance for Websites",
+   "url": "https://blog.frankmtaylor.com/2025/09/23/how-to-manage-css-performance-for-websites/",
+   "source": "blogfrankmtaylor",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "America by Design is Deplorable for All",
+   "url": "https://blog.frankmtaylor.com/2025/08/28/america-by-design-is-deplorable-for-all/",
+   "source": "blogfrankmtaylor",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Promising a change to an object",
+   "url": "https://blog.frankmtaylor.com/2025/07/23/promising-a-change-to-an-object/",
+   "source": "blogfrankmtaylor",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS Hyphens, Words, Syllables, and Languages",
+   "url": "https://blog.frankmtaylor.com/2025/07/17/css-hyphens-words-syllables-and-languages/",
+   "source": "blogfrankmtaylor",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Small Guide for Writing Comments in Front-end Code",
+   "url": "https://blog.frankmtaylor.com/2025/07/03/a-small-guide-for-writing-comments-in-front-end-code/",
+   "source": "blogfrankmtaylor",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Better selecting with a better :nth-child()",
+   "url": "https://blog.frankmtaylor.com/2025/07/02/better-selecting-with-a-better-nth-child/",
+   "source": "blogfrankmtaylor",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Front-end Developers Can Participate in Content Management and Architecture",
+   "url": "https://blog.frankmtaylor.com/2025/03/13/how-front-end-developers-can-participate-in-content-management-and-architecture/",
+   "source": "blogfrankmtaylor",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Goodbye, Slow-Motion Tortoise: A Deep Dive into SSR Streaming",
+   "url": "https://blog.greenroots.info/a-deep-dive-into-ssr-streaming-with-react",
+   "source": "bloggreenroots",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mastering React Design Patterns for Building Maintainable Forms",
+   "url": "https://blog.greenroots.info/react-design-patterns-for-building-maintainable-forms",
+   "source": "bloggreenroots",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JavaScript Variables Explained Clearly: Values, Types, and How Data Really Works",
+   "url": "https://blog.greenroots.info/javascript-variables-explained-values-references",
+   "source": "bloggreenroots",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "JavaScript Explained From Scratch: How the Web Becomes Interactive",
+   "url": "https://blog.greenroots.info/javascript-explained-from-scratch",
+   "source": "bloggreenroots",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tidbit 01: How Does Event Loop Handle Promises? Ever Thought?",
+   "url": "https://blog.greenroots.info/how-does-event-loop-handle-promises-ever-thought",
+   "source": "bloggreenroots",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Top 10 QA Automation Tools for Startups in 2026",
+   "url": "https://blog.greenroots.info/top-10-qa-automation-tools-for-startups-in-2026",
+   "source": "bloggreenroots",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exploring Advanced JavaScript Features: A Deep Dive into ECMAScript 2023 Updates",
+   "url": "https://blog.greenroots.info/exploring-advanced-javascript-features-ecmascript-2023",
+   "source": "bloggreenroots",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Effective Ways to Manage Shadcn Dialog Box: 3 Tips with Code",
+   "url": "https://blog.greenroots.info/shadcn-dialog-with-form-three-tips",
+   "source": "bloggreenroots",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why the with() method of JavaScript Array is a gem?",
+   "url": "https://blog.greenroots.info/javascript-array-method-with-immutability",
+   "source": "bloggreenroots",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Next.js and Next-Auth V5: Guide to Social Logins(OAuth)",
+   "url": "https://blog.greenroots.info/nextjs-and-next-auth-v5-guide-to-social-logins",
+   "source": "bloggreenroots",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is Authentication and Authorization - Explain like I am five",
+   "url": "https://blog.greenroots.info/what-is-authentication-and-authorization",
+   "source": "bloggreenroots",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to upload and preview images in ReactJS?",
+   "url": "https://blog.greenroots.info/how-to-upload-and-preview-images-in-reactjs",
+   "source": "bloggreenroots",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to navigate between routes in Next.js?",
+   "url": "https://blog.greenroots.info/how-to-navigate-between-routes-in-nextjs",
+   "source": "bloggreenroots",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10 Git stash commands every developer should know",
+   "url": "https://blog.greenroots.info/10-git-stash-commands-every-developer-should-know",
+   "source": "bloggreenroots",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Definitive Guide to Date and Time in JavaScript",
+   "url": "https://blog.greenroots.info/the-definitive-guide-to-javascript-date-and-time",
+   "source": "bloggreenroots",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mixing up Public and Private Keys in OpenID Connect deployments",
+   "url": "https://blog.hboeck.de/archives/909-Mixing-up-Public-and-Private-Keys-in-OpenID-Connect-deployments.html",
+   "source": "bloghboeck",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Private Keys in the Fortigate Leak",
+   "url": "https://blog.hboeck.de/archives/908-Private-Keys-in-the-Fortigate-Leak.html",
+   "source": "bloghboeck",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to create a Secure, Random Password with JavaScript",
+   "url": "https://blog.hboeck.de/archives/907-How-to-create-a-Secure,-Random-Password-with-JavaScript.html",
+   "source": "bloghboeck",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Newsletter about Climate Change and Industrial Decarbonization",
+   "url": "https://blog.hboeck.de/archives/905-A-Newsletter-about-Climate-Change-and-Industrial-Decarbonization.html",
+   "source": "bloghboeck",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Please do not put IP addresses into DNS MX records",
+   "url": "https://blog.hboeck.de/archives/904-Please-do-not-put-IP-addresses-into-DNS-MX-records.html",
+   "source": "bloghboeck",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "File Exfiltration via Libreoffice in BigBlueButton and JODConverter",
+   "url": "https://blog.hboeck.de/archives/902-File-Exfiltration-via-Libreoffice-in-BigBlueButton-and-JODConverter.html",
+   "source": "bloghboeck",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Generating CRIME safe CSRF Tokens",
+   "url": "https://blog.hboeck.de/archives/900-Generating-CRIME-safe-CSRF-Tokens.html",
+   "source": "bloghboeck",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Userdir URLs like https://example.org/~username/ are dangerous",
+   "url": "https://blog.hboeck.de/archives/899-Userdir-URLs-like-httpsexample.orgusername-are-dangerous.html",
+   "source": "bloghboeck",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "#include </etc/shadow>",
+   "url": "https://blog.hboeck.de/archives/898-include-etcshadow.html",
+   "source": "bloghboeck",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Security Issues with PGP Signatures and Linux Package Management",
+   "url": "https://blog.hboeck.de/archives/897-Security-Issues-with-PGP-Signatures-and-Linux-Package-Management.html",
+   "source": "bloghboeck",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How my personal Bug Bounty Program turned into a Free Security Audit for the Serendipity Blog",
+   "url": "https://blog.hboeck.de/archives/896-How-my-personal-Bug-Bounty-Program-turned-into-a-Free-Security-Audit-for-the-Serendipity-Blog.html",
+   "source": "bloghboeck",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Efail: HTML Mails have no Security Concept and are to blame",
+   "url": "https://blog.hboeck.de/archives/894-Efail-HTML-Mails-have-no-Security-Concept-and-are-to-blame.html",
+   "source": "bloghboeck",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "efail: Outdated Crypto Standards are to blame",
+   "url": "https://blog.hboeck.de/archives/893-efail-Outdated-Crypto-Standards-are-to-blame.html",
+   "source": "bloghboeck",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Snallygaster - a Tool to Scan for Secrets on Web Servers",
+   "url": "https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html",
+   "source": "bloghboeck",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Some minor Security Quirks in Firefox",
+   "url": "https://blog.hboeck.de/archives/891-Some-minor-Security-Quirks-in-Firefox.html",
+   "source": "bloghboeck",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -15828,6 +16912,86 @@
    "title": "Free Artemis Wallpapers are Out of this World!",
    "url": "https://blog.iconfactory.com/2026/04/free-artemis-wallpapers-are-out-of-this-world/",
    "source": "blogiconfactory",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Capacitor 9 Beta is here",
+   "url": "https://ionic.io/blog/the-capacitor-9-beta-is-here",
+   "source": "blogionicframework",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Community Spotlight: Ionic Theme iOS 27",
+   "url": "https://ionic.io/blog/introducing-ionic-theme-ios27",
+   "source": "blogionicframework",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "🚀 Announcing a Partnership with Capawesome!",
+   "url": "https://ionic.io/blog/%f0%9f%9a%80-announcing-a-partnership-with-capawesome",
+   "source": "blogionicframework",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Road to Capacitor 9",
+   "url": "https://ionic.io/blog/the-road-to-capacitor-9",
+   "source": "blogionicframework",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Ionic Framework 9",
+   "url": "https://ionic.io/blog/announcing-ionic-framework-9",
+   "source": "blogionicframework",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Capacitor 8.5 Released",
+   "url": "https://ionic.io/blog/capacitor-8-5-released",
+   "source": "blogionicframework",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Official Capacitor Skills",
+   "url": "https://ionic.io/blog/introducing-official-capacitor-skills",
+   "source": "blogionicframework",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Capacitor Showcase – LocalLLM",
+   "url": "https://ionic.io/blog/capacitor-showcase-localllm",
+   "source": "blogionicframework",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Capacitor 9 Starts Here",
+   "url": "https://ionic.io/blog/capacitor-9-starts-here",
+   "source": "blogionicframework",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Help Us Define The Direction Of Ionic!",
+   "url": "https://ionic.io/blog/help-us-define-the-direction-of-ionic",
+   "source": "blogionicframework",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -16193,6 +17357,206 @@
    "metric": "feed rank"
   },
   {
+   "title": "Making a Website in 2026",
+   "url": "https://blog.jim-nielsen.com/2026/making-websites-in-2026/",
+   "source": "blogjimnielsen",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Addition By Subtraction",
+   "url": "https://blog.jim-nielsen.com/2026/addition-by-subtraction/",
+   "source": "blogjimnielsen",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "“It Gives Great Demo”",
+   "url": "https://blog.jim-nielsen.com/2026/it-gives-great-demo/",
+   "source": "blogjimnielsen",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Celebrating SIM Cards",
+   "url": "https://blog.jim-nielsen.com/2026/celebrating-sim-cards/",
+   "source": "blogjimnielsen",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why My Dad Didn’t Have a Cell Phone",
+   "url": "https://blog.jim-nielsen.com/2026/why-dad-didnt-have-cellphone/",
+   "source": "blogjimnielsen",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "No Need for Retirement When Utopia Is Around the Corner",
+   "url": "https://blog.jim-nielsen.com/2026/skip-retirement-for-utopia/",
+   "source": "blogjimnielsen",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "No More Icons In Every Menu By Default",
+   "url": "https://blog.jim-nielsen.com/2026/icons-in-every-menu/",
+   "source": "blogjimnielsen",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We Need All the Disciplines",
+   "url": "https://blog.jim-nielsen.com/2026/we-need-all-disciplines/",
+   "source": "blogjimnielsen",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Dock on Mac, From OS 10 to macOS 27",
+   "url": "https://blog.jim-nielsen.com/2026/macos-dock-icons-over-time/",
+   "source": "blogjimnielsen",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Fascinating World of Domains",
+   "url": "https://blog.jim-nielsen.com/2026/domains-article-on-wired/",
+   "source": "blogjimnielsen",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trunk & Tidbits, September 2026",
+   "url": "https://blog.joinmastodon.org/2026/10/trunk-tidbits-september-2026/",
+   "source": "blogjoinmastodon",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5.0: A closer look",
+   "url": "https://blog.joinmastodon.org/2026/10/5.0-a-closer-look/",
+   "source": "blogjoinmastodon",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Plushtodon pre-orders now open",
+   "url": "https://blog.joinmastodon.org/2026/10/plushtodon-pre-orders-now-open/",
+   "source": "blogjoinmastodon",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trunk & Tidbits, August 2026",
+   "url": "https://blog.joinmastodon.org/2026/09/trunk-tidbits-august-2026/",
+   "source": "blogjoinmastodon",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mastodon 4.7",
+   "url": "https://blog.joinmastodon.org/2026/08/mastodon-4.7/",
+   "source": "blogjoinmastodon",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5.0: Laying the foundation",
+   "url": "https://blog.joinmastodon.org/2026/08/5.0-laying-the-foundation/",
+   "source": "blogjoinmastodon",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sharing Guidelines about Mastodon’s Trade Mark Policy",
+   "url": "https://blog.joinmastodon.org/2026/08/sharing-guidelines-about-mastodons-trade-mark-policy/",
+   "source": "blogjoinmastodon",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trunk & Tidbits, July 2026",
+   "url": "https://blog.joinmastodon.org/2026/08/trunk-tidbits-july-2026/",
+   "source": "blogjoinmastodon",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Discovery Week 2026: What we learned, and what we’re doing next",
+   "url": "https://blog.joinmastodon.org/2026/08/discovery-week-2026-what-we-learned-and-what-were-doing-next/",
+   "source": "blogjoinmastodon",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing new Terms of Service for our servers",
+   "url": "https://blog.joinmastodon.org/2026/07/announcing-new-terms-of-service-for-our-servers/",
+   "source": "blogjoinmastodon",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trunk & Tidbits, June 2026",
+   "url": "https://blog.joinmastodon.org/2026/07/trunk-tidbits-june-2026/",
+   "source": "blogjoinmastodon",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trunk & Tidbits, May 2026",
+   "url": "https://blog.joinmastodon.org/2026/06/trunk-tidbits-may-2026/",
+   "source": "blogjoinmastodon",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why the social web must work together",
+   "url": "https://blog.joinmastodon.org/2026/06/why-the-social-web-must-work-together/",
+   "source": "blogjoinmastodon",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mastodon 4.6",
+   "url": "https://blog.joinmastodon.org/2026/06/mastodon-4.6/",
+   "source": "blogjoinmastodon",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mastodon 4.6 for Developers",
+   "url": "https://blog.joinmastodon.org/2026/06/mastodon-4-6-for-devs/",
+   "source": "blogjoinmastodon",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "jQuery 4.0.0",
    "url": "https://blog.jquery.com/2026/01/17/jquery-4-0-0/",
    "source": "blogjquery",
@@ -16269,6 +17633,126 @@
    "url": "https://blog.jquery.com/2022/12/13/jquery-3-6-2-released/",
    "source": "blogjquery",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Resurrecting an old hack to build UI in GitHub READMEs",
+   "url": "https://blog.jse.li/posts/markdown/",
+   "source": "blogjse",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Estimating the heights of New Yorkers from their scuff marks",
+   "url": "https://blog.jse.li/posts/smith9street/",
+   "source": "blogjse",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Approve merge requests with your eyes closed",
+   "url": "https://blog.jse.li/posts/approval/",
+   "source": "blogjse",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Monitor Your Company's Stock Price on Grafana",
+   "url": "https://blog.jse.li/posts/stocks/",
+   "source": "blogjse",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Breaking electron-store's encryption",
+   "url": "https://blog.jse.li/posts/electron-store-encryption/",
+   "source": "blogjse",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ten seconds to ponder if a thread is worth it",
+   "url": "https://blog.jse.li/posts/ten-seconds/",
+   "source": "blogjse",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Chrome T-Rex game, except the dinosaur is you",
+   "url": "https://blog.jse.li/posts/projectordino/",
+   "source": "blogjse",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My brother’s hamster",
+   "url": "https://blog.jse.li/posts/peach/",
+   "source": "blogjse",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Where Did Software Go Wrong?",
+   "url": "https://blog.jse.li/posts/software/",
+   "source": "blogjse",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding secrets by decompiling Python bytecode in public repositories",
+   "url": "https://blog.jse.li/posts/pyc/",
+   "source": "blogjse",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Open and Shut",
+   "url": "https://blog.jse.li/posts/open-and-shut/",
+   "source": "blogjse",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a BitTorrent client from the ground up in Go",
+   "url": "https://blog.jse.li/posts/torrent/",
+   "source": "blogjse",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You're still not anonymous on Looped",
+   "url": "https://blog.jse.li/posts/looped-part-2/",
+   "source": "blogjse",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You're not anonymous on Looped",
+   "url": "https://blog.jse.li/posts/looped/",
+   "source": "blogjse",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Detecting incognito mode in Chrome 76 with a timing attack",
+   "url": "https://blog.jse.li/posts/chrome-76-incognito-filesystem-timing/",
+   "source": "blogjse",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -16433,6 +17917,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Apps with Presence on Mastodon",
+   "url": "https://blog.kizu.dev/apps-with-presence-on-mastodon/",
+   "source": "blogkizu",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fixing Obsidian’s Markdown Display with CSS",
+   "url": "https://blog.kizu.dev/fixing-obsidians-markdown-display-with-css/",
+   "source": "blogkizu",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Not an Ideal Start",
+   "url": "https://blog.kizu.dev/not-an-ideal-start/",
+   "source": "blogkizu",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scroll-Driven Animations in Stable Chrome",
+   "url": "https://blog.kizu.dev/scroll-driven-animations-in-stable-chrome/",
+   "source": "blogkizu",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "IndieWebCamp Updates",
+   "url": "https://blog.kizu.dev/indie-web-camp-updates/",
+   "source": "blogkizu",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly Bookmarks 1",
+   "url": "https://blog.kizu.dev/weekly-bookmarks-001/",
+   "source": "blogkizu",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weekly Bookmarks 2",
+   "url": "https://blog.kizu.dev/weekly-bookmarks-002/",
+   "source": "blogkizu",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Astro MDX Components",
+   "url": "https://blog.kizu.dev/astro-mdx-components/",
+   "source": "blogkizu",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Calculated Fractions (Report the Bugs!)",
+   "url": "https://blog.kizu.dev/calc-fr-unit/",
+   "source": "blogkizu",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Calculation Indentation",
+   "url": "https://blog.kizu.dev/calc-indent/",
+   "source": "blogkizu",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Observation: Clamp to Infinity",
+   "url": "https://blog.kizu.dev/clamp-to-infinity/",
+   "source": "blogkizu",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Observation: color-mix and currentColor",
+   "url": "https://blog.kizu.dev/color-mix-current-color/",
+   "source": "blogkizu",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fixing the Custom Ident Docs",
+   "url": "https://blog.kizu.dev/custom-ident-mdn/",
+   "source": "blogkizu",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dashed Idents for Everything",
+   "url": "https://blog.kizu.dev/dashed-idents-for-everything/",
+   "source": "blogkizu",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Extra Nesting Specificity",
+   "url": "https://blog.kizu.dev/extra-nesting-specificity/",
+   "source": "blogkizu",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "A prvalue is not a temporary",
    "url": "https://blog.knatten.org/2025/10/31/a-prvalue-is-not-a-temporary/",
    "source": "blogknatten",
@@ -16589,6 +18193,102 @@
    "url": "https://blog.kukiel.dev/posts/CFML-Lucee-in-Lambda-with-APIGateway.html",
    "source": "blogkukiel",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "加固我的virtiofs",
+   "url": "https://blog.lilydjwg.me/posts/217055.html",
+   "source": "bloglilydjwg",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "通过字幕总结YouTube视频内容",
+   "url": "https://blog.lilydjwg.me/posts/217033.html",
+   "source": "bloglilydjwg",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "自定义系统默认中文字体",
+   "url": "https://blog.lilydjwg.me/posts/217026.html",
+   "source": "bloglilydjwg",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wayfire支持不缩放Xwayland啦",
+   "url": "https://blog.lilydjwg.me/posts/217024.html",
+   "source": "bloglilydjwg",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "使用wayvnc远程访问无头Wayfire会话",
+   "url": "https://blog.lilydjwg.me/posts/217020.html",
+   "source": "bloglilydjwg",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "给论坛用上了文本嵌入模型",
+   "url": "https://blog.lilydjwg.me/posts/216954.html",
+   "source": "bloglilydjwg",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "使用 Restic 备份数据",
+   "url": "https://blog.lilydjwg.me/posts/216952.html",
+   "source": "bloglilydjwg",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Arch Linux 中文论坛迁移杂记",
+   "url": "https://blog.lilydjwg.me/posts/216948.html",
+   "source": "bloglilydjwg",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "pacfiles: 高速的 pacman -F 替代品",
+   "url": "https://blog.lilydjwg.me/posts/216909.html",
+   "source": "bloglilydjwg",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "用 Android 手机当电脑的话筒",
+   "url": "https://blog.lilydjwg.me/posts/216900.html",
+   "source": "bloglilydjwg",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "使用 ffmpeg 对音频文件进行响度归一化",
+   "url": "https://blog.lilydjwg.me/posts/216896.html",
+   "source": "bloglilydjwg",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "为团队部署邮件服务",
+   "url": "https://blog.lilydjwg.me/posts/216887.html",
+   "source": "bloglilydjwg",
+   "rank": 12,
    "score": 1,
    "metric": "feed rank"
   },
@@ -16849,6 +18549,342 @@
    "metric": "feed rank"
   },
   {
+   "title": "Alone among a thousand: the European Commission's \"anonymisation\" of Europeans' Google searches is broken",
+   "url": "https://blog.lukaszolejnik.com/alone-among-a-thousand-the-european-commissions-anonymisation-of-europeans-google-searches-is-broken/",
+   "source": "bloglukaszolejnik",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI grinding: what happens when cryptanalytic ideas become cheap?",
+   "url": "https://blog.lukaszolejnik.com/ai-grinding-what-happens-when-cryptanalytic-ideas-become-cheap/",
+   "source": "bloglukaszolejnik",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How we built and ran the first fully autonomous information operation",
+   "url": "https://blog.lukaszolejnik.com/how-we-built-and-ran-the-first-fully-autonomous-information-operation/",
+   "source": "bloglukaszolejnik",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The European Commission is turning Google Search into a privacy and national-security risk",
+   "url": "https://blog.lukaszolejnik.com/the-european-commission-is-turning-google-search-into-a-privacy-and-national-security-risk/",
+   "source": "bloglukaszolejnik",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Information warfare in Iran - what PSYOP looks like in 2026",
+   "url": "https://blog.lukaszolejnik.com/information-warfare-in-iran-what-psyop-looks-like-in-2026/",
+   "source": "bloglukaszolejnik",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When your AI agent publishes internal data",
+   "url": "https://blog.lukaszolejnik.com/when-your-ai-agent-publishes-internal-data/",
+   "source": "bloglukaszolejnik",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Agentic Analytical Pipeline?",
+   "url": "https://blog.lukaszolejnik.com/the-agentic-analytical-pipeline/",
+   "source": "bloglukaszolejnik",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Intelligence analysis platform for AI Agents (~OpenClaw)",
+   "url": "https://blog.lukaszolejnik.com/intelligence-analysis-platform-for-ai-agents-openclaw/",
+   "source": "bloglukaszolejnik",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hard-stopping AI agent pipelines with prompt-level kill switches",
+   "url": "https://blog.lukaszolejnik.com/hard-stopping-ai-agent-pipelines-with-prompt-level-kill-switches/",
+   "source": "bloglukaszolejnik",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Supply-chain risk of agentic AI - infecting infrastructures via skill worms",
+   "url": "https://blog.lukaszolejnik.com/supply-chain-risk-of-agentic-ai-infecting-infrastructures-via-skill-worms/",
+   "source": "bloglukaszolejnik",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Physical attacks on crypto holders - wrench assaults rising?",
+   "url": "https://blog.lukaszolejnik.com/physical-attacks-on-crypto-holders-wrench-assaults-rising/",
+   "source": "bloglukaszolejnik",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Polarisation is not about filter bubbles or echo chambers, here's why",
+   "url": "https://blog.lukaszolejnik.com/polarisation-is-not-about-filter-bubbles-or-echo-chambers-heres-why/",
+   "source": "bloglukaszolejnik",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weaponising AI for political persuasion - information operations on an industrial scale",
+   "url": "https://blog.lukaszolejnik.com/weaponising-ai-for-political-persuasion-information-operations-on-an-industrial-scale/",
+   "source": "bloglukaszolejnik",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Did the EU top court prohibit websites with user-generated content and anonymous users?",
+   "url": "https://blog.lukaszolejnik.com/did-the-eu-top-court-prohibit-websites-with-user-generated-content-and-anonymous-users/",
+   "source": "bloglukaszolejnik",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The GDPR proposal unveiled officially",
+   "url": "https://blog.lukaszolejnik.com/the-gdpr-proposal-unveiled-officially/",
+   "source": "bloglukaszolejnik",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shading Motion",
+   "url": "https://blog.maximeheckel.com/posts/shading-motion",
+   "source": "blogmaximeheckel",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Rendering the Sky, Sunsets, and Planets",
+   "url": "https://blog.maximeheckel.com/posts/on-rendering-the-sky-sunsets-and-planets",
+   "source": "blogmaximeheckel",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shades of Halftone",
+   "url": "https://blog.maximeheckel.com/posts/shades-of-halftone",
+   "source": "blogmaximeheckel",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Field Guide to TSL and WebGPU",
+   "url": "https://blog.maximeheckel.com/posts/field-guide-to-tsl-and-webgpu",
+   "source": "blogmaximeheckel",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Shaping Light",
+   "url": "https://blog.maximeheckel.com/posts/shaping-light-volumetric-lighting-with-post-processing-and-raymarching",
+   "source": "blogmaximeheckel",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speaking at Figma Config 2025",
+   "url": "https://blog.maximeheckel.com/posts/config-2025",
+   "source": "blogmaximeheckel",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Post-Processing Shaders as a Creative Medium",
+   "url": "https://blog.maximeheckel.com/posts/post-processing-as-a-creative-medium",
+   "source": "blogmaximeheckel",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Crafting Painterly Shaders",
+   "url": "https://blog.maximeheckel.com/posts/on-crafting-painterly-shaders",
+   "source": "blogmaximeheckel",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Art of Dithering and Retro Shading for the Web",
+   "url": "https://blog.maximeheckel.com/posts/the-art-of-dithering-and-retro-shading-web",
+   "source": "blogmaximeheckel",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Moebius-style post-processing and other stylized shaders",
+   "url": "https://blog.maximeheckel.com/posts/moebius-style-post-processing",
+   "source": "blogmaximeheckel",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shining a light on Caustics with Shaders and React Three Fiber",
+   "url": "https://blog.maximeheckel.com/posts/caustics-in-webgl",
+   "source": "blogmaximeheckel",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Real-time dreamy Cloudscapes with Volumetric Raymarching",
+   "url": "https://blog.maximeheckel.com/posts/real-time-cloudscapes-with-volumetric-raymarching",
+   "source": "blogmaximeheckel",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Painting with Math: A Gentle Study of Raymarching",
+   "url": "https://blog.maximeheckel.com/posts/painting-with-math-a-gentle-study-of-raymarching",
+   "source": "blogmaximeheckel",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a magical AI-powered semantic search from scratch",
+   "url": "https://blog.maximeheckel.com/posts/building-magical-ai-powered-semantic-search",
+   "source": "blogmaximeheckel",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beautiful and mind-bending effects with WebGL Render Targets",
+   "url": "https://blog.maximeheckel.com/posts/beautiful-and-mind-bending-effects-with-webgl-render-targets",
+   "source": "blogmaximeheckel",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My CSS Wishlist",
+   "url": "https://blog.mayank.co/my-css-wishlist-2023",
+   "source": "blogmayank",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is CSS-in-JS actually bad?",
+   "url": "https://blog.mayank.co/is-css-in-js-actually-bad",
+   "source": "blogmayank",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using text symbols in pseudo-elements accessibly",
+   "url": "https://blog.mayank.co/using-text-symbols-in-pseudo-elements-accessibly",
+   "source": "blogmayank",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is <dialog> enough?",
+   "url": "https://blog.mayank.co/is-dialog-enough",
+   "source": "blogmayank",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Astro just makes sense",
+   "url": "https://blog.mayank.co/astro-just-makes-sense",
+   "source": "blogmayank",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The case for using Sass in 2022",
+   "url": "https://blog.mayank.co/the-case-for-using-sass-in-2022",
+   "source": "blogmayank",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Better scrolling through modern CSS",
+   "url": "https://blog.mayank.co/better-scrolling-through-modern-css",
+   "source": "blogmayank",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS needs an Accent system color",
+   "url": "https://blog.mayank.co/css-needs-accent-system-color",
+   "source": "blogmayank",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I built an accessible version of Wordle",
+   "url": "https://blog.mayank.co/how-i-built-an-accessible-version-of-wordle",
+   "source": "blogmayank",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Customizing the new MDN redesign",
+   "url": "https://blog.mayank.co/customizing-the-new-mdn-redesign",
+   "source": "blogmayank",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Common JavaScript recipes for CSS developers and designers",
+   "url": "https://blog.mayank.co/javascript-recipes-for-css-developers",
+   "source": "blogmayank",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Progressively enhancing :focus-visible",
+   "url": "https://blog.mayank.co/focus-visible",
+   "source": "blogmayank",
+   "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "skill grade",
    "url": "https://blog.mgechev.com/2026/03/14/skillgrade/",
    "source": "blogmgechev",
@@ -17044,6 +19080,86 @@
    "title": "A brand new browsing experience arrives in Firefox for Android Nightly",
    "url": "https://blog.mozilla.org/futurereleases/2020/01/17/a-brand-new-browsing-experience-arrives-in-firefox-for-android-nightly/",
    "source": "blogmozilla",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HiDPI Scaling for Electron-based Snap apps like Spotify",
+   "url": "https://blog.nem.ec//2021/03/20/gnome-scaling-electron-snap/",
+   "source": "blognem",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding Facebook Groups a User Belongs to and Admins",
+   "url": "https://blog.nem.ec//2020/10/08/find-facebook-groups-for-user/",
+   "source": "blognem",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The New Facebook Graph Search",
+   "url": "https://blog.nem.ec//2020/06/07/new-facebook-graph-search/",
+   "source": "blognem",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "eBay is port scanning visitors to their website - and they aren't the only ones",
+   "url": "https://blog.nem.ec//2020/05/24/ebay-port-scanning/",
+   "source": "blognem",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Recover Python Virtualenvs After Upgrading",
+   "url": "https://blog.nem.ec//2020/05/07/recover-python-after-upgrading/",
+   "source": "blognem",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Turkey Chili Recipe",
+   "url": "https://blog.nem.ec//2020/02/24/turkey-chili-recipe/",
+   "source": "blognem",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Discovering the IP address of a Wordpress site hidden behind Cloudflare",
+   "url": "https://blog.nem.ec//2020/01/22/discover-cloudflare-wordpress-ip/",
+   "source": "blognem",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "LINQPad Tip: Make LINQPad scripts executable",
+   "url": "https://blog.nem.ec//2015/08/26/linqpad-executable-scripts/",
+   "source": "blognem",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exploring PathLib - A path manipulation library for .Net",
+   "url": "https://blog.nem.ec//2014/12/21/pathlib-intro/",
+   "source": "blognem",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dynamic DNS with CPanel",
+   "url": "https://blog.nem.ec//2014/11/17/dyndns-cpanel/",
+   "source": "blognem",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
