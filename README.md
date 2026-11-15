@@ -85,6 +85,8 @@ compare within a source, not across.
   (data/show-hn-monthly.csv, 179 months) — the history of what builders shipped.
 - **Rituals** (`rituals.html`): any month's three HN rituals side by side — top story,
   top launch, top question (?m= deep link).
+- **A year of HN** (`year.html?y=`): every month's #1 story, #1 launch and
+  #1 question for a chosen year.
   Analyses of the three canons live in `docs/canon-analysis.md`,
   `docs/showhn-analysis.md`, `docs/askhn-analysis.md` — events, objects, people.
 - **Hiring pulse** (`hiring.html`): monthly HN "Who is hiring?" tracker —
