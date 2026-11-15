@@ -26,6 +26,7 @@ import html
 import json
 import os
 import sys
+import re
 import time
 import urllib.parse
 import urllib.request
@@ -6008,7 +6009,11 @@ def fetch_blogappsnpr(limit=15):
                 "http://blog.apps.npr.org/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                root = ET.fromstring(resp.read().decode("utf-8-sig").lstrip())
+                _raw = resp.read().decode("utf-8-sig").lstrip()
+                try:
+                    root = ET.fromstring(_raw)
+                except ET.ParseError:
+                    root = ET.fromstring(re.sub(r"&(?!amp;|lt;|gt;|quot;|apos;|#)", "&amp;", _raw))
             for _el in root.iter():
                 _el.tag = _el.tag.split("}")[-1]
             break
