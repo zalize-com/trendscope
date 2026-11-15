@@ -361,6 +361,26 @@ cherry"></textarea>
     <textarea id="lo-out" rows="8" style="width:100%" readonly></textarea>
   </div>
 
+  <div class="tool" data-tool="aspect">
+    <h2>aspect ratio calculator</h2>
+    <p class="hint">W:H ratio &harr; missing dimension &harr; CSS padding trick.</p>
+    <p>
+      ratio <input id="ar-w" type="number" value="16" style="width:4em"> : <input id="ar-h" type="number" value="9" style="width:4em">
+      &nbsp;|&nbsp; width <input id="ar-dw" type="number" placeholder="px" style="width:6em">
+      &rarr; height <input id="ar-dh" type="number" placeholder="px" style="width:6em">
+      <button class="go" id="ar-go">calc</button>
+    </p>
+    <div class="out" id="ar-out"></div>
+    <p class="hint">presets:
+      <button class="go" data-ar="16,9">16:9</button>
+      <button class="go" data-ar="4,3">4:3</button>
+      <button class="go" data-ar="21,9">21:9</button>
+      <button class="go" data-ar="1,1">1:1</button>
+      <button class="go" data-ar="3,2">3:2</button>
+      <button class="go" data-ar="9,16">9:16</button>
+    </p>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -390,6 +410,7 @@ const TOOLS = [
   {id:"uuid",  label:"uuid v4 generator"},
   {id:"bytes",label:"file-size converter"},
   {id:"lorem",label:"lorem ipsum generator"},
+  {id:"aspect",label:"aspect ratio calc"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -1060,6 +1081,26 @@ document.getElementById('lo-go').onclick=()=>{
   document.getElementById('lo-out').value=out;
 };
 document.getElementById('lo-copy').onclick=async()=>{await navigator.clipboard.writeText(document.getElementById('lo-out').value);document.getElementById('lo-copy').textContent='copied!';setTimeout(()=>document.getElementById('lo-copy').textContent='copy',1200);};
+
+// --- aspect ratio ---
+function arCalc(){
+  const w=parseFloat(document.getElementById('ar-w').value),h=parseFloat(document.getElementById('ar-h').value);
+  const dw=parseFloat(document.getElementById('ar-dw').value),dh=parseFloat(document.getElementById('ar-dh').value);
+  if(!(w>0&&h>0)){document.getElementById('ar-out').textContent='enter ratio';return;}
+  const g=(a,b)=>b?g(b,a%b):a;
+  const d=g(Math.round(w*100),Math.round(h*100));
+  const sw=w*100/d,sh=h*100/d;
+  let out='ratio '+sw+':'+sh+' (decimal '+(w/h).toFixed(4)+')';
+  if(dw>0) out+=' · width '+dw+'px → height '+(dw*h/w).toFixed(1)+'px';
+  if(dh>0) out+=' · height '+dh+'px → width '+(dh*w/h).toFixed(1)+'px';
+  out+=' · css: aspect-ratio:'+sw+'/'+sh+' 或 padding-top:'+(h/w*100).toFixed(2)+'%';
+  document.getElementById('ar-out').textContent=out;
+}
+document.getElementById('ar-go').onclick=arCalc;
+document.querySelectorAll('[data-ar]').forEach(b=>b.onclick=()=>{
+  const [w,h]=b.dataset.ar.split(',');
+  document.getElementById('ar-w').value=w;document.getElementById('ar-h').value=h;arCalc();
+});
 </script>
 </body>
 </html>
