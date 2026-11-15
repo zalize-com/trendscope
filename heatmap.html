@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>weekday heatmap — trendscope</title>
+<meta name="description" content="Which days each source produces items — a source × weekday intensity grid.">
+<meta property="og:title" content="trendscope — weekday heatmap">
+<meta property="og:description" content="Source × weekday item-density grid across 20 tracked sources.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zalize-com.github.io/trendscope/heatmap.html">
+<meta property="og:image" content="https://zalize-com.github.io/trendscope/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<style>
+:root{--bg:#fff;--fg:#1f2328;--dim:#57606a;--line:#d8dee4;--acc:#0969da;--hot:#cf222e}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e6edf3;--dim:#8b949e;--line:#30363d;--acc:#58a6ff;--hot:#f85149}}
+*{box-sizing:border-box}
+body{margin:0 auto;max-width:900px;padding:16px;background:var(--bg);color:var(--fg);font:14px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}
+a{color:var(--acc);text-decoration:none}
+h1{font-size:22px;margin:4px 0}
+.sub{color:var(--dim);font-size:13px;margin-bottom:14px}
+nav{font-size:13px;margin:8px 0 14px}
+nav a{margin-right:8px}
+table{border-collapse:collapse;width:100%;font-size:12px}
+td,th{padding:3px 5px;border:1px solid var(--line);text-align:center}
+th{background:var(--bg);font-weight:600;position:sticky;top:0}
+td.src{text-align:left;white-space:nowrap}
+.cell{display:inline-block;min-width:38px;padding:1px 0;border-radius:3px}
+.legend{color:var(--dim);font-size:12px;margin:10px 0}
+#err{color:var(--hot);margin-top:12px}
+.stat{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:2px 8px;margin:0 6px 6px 0;font-size:12px}
+</style>
+</head>
+<body>
+<h1>weekday heatmap</h1>
+<div class="sub">Which days each source produces items — per-row normalized, so every lane shows its own rhythm.</div>
+<nav><a href="index.html">← board</a><a href="weekday.html">weekday</a><a href="rhythm.html">hourly rhythm</a><a href="sources.html">sources</a><a href="docs/api/weekday.json">↓ weekday.json</a></nav>
+<div id="stats"></div>
+<div id="out"></div>
+<div id="err"></div>
+<script type="module">
+const DOW=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+try{
+  const d=await (await fetch("docs/api/weekday.json")).json();
+  const names=Object.keys(d.sources);
+  const days=d.days_of_week||DOW;
+  // find busiest + quietest (source,day) pairs globally
+  let best=null,worst=null;
+  const rows=names.map(n=>{
+    const c=d.sources[n].counts;
+    const mx=Math.max(...c,1);
+    c.forEach((v,i)=>{
+      if(!best||v>best[2])best=[n,days[i]||DOW[i],v];
+      if(!worst||v<worst[2])worst=[n,days[i]||DOW[i],v];
+    });
+    return{n,c,mx,tot:d.sources[n].total};
+  }).sort((a,b)=>b.tot-a.tot);
+  document.getElementById("stats").innerHTML=
+    `<span class="stat">${names.length} sources × 7 days</span>
+     <span class="stat">${d.days_tracked||"?"} days tracked</span>
+     <span class="stat">busiest: ${best[0]} ${best[1]} (${best[2]})</span>
+     <span class="stat">quietest: ${worst[0]} ${worst[1]} (${worst[2]})</span>`;
+  const shade=v=>v===0?"background:var(--bg)":`background:color-mix(in srgb,var(--acc) ${Math.round(8+92*v)}%,transparent);color:${v>0.55?"#fff":""}`;
+  document.getElementById("out").innerHTML=`<table>
+    <tr><th>source</th>${days.map(x=>`<th>${x}</th>`).join("")}<th>total</th></tr>
+    ${rows.map(r=>`<tr><td class="src">${r.n}</td>${r.c.map(v=>`<td><span class="cell" style="${shade(v/r.mx)}">${v||""}</span></td>`).join("")}<td>${r.tot}</td></tr>`).join("")}
+  </table>
+  <p class="legend">cells are normalized within each row — deep blue = that source's busiest weekday, blank = zero items. totals are raw item counts.</p>`;
+}catch(e){document.getElementById("err").textContent="failed to load weekday.json — "+e.message;}
+</script>
+</body>
+</html>
