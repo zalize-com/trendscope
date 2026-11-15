@@ -73,6 +73,31 @@ const TOPIC_RULES = {
 const inTopic = it => !QT || (TOPIC_RULES[QT]||[]).some(k =>
   `${it.title||""} ${(it.tags||[]).join(" ")}`.toLowerCase().includes(k));
 const MODE = P.get("mode") || "";
+if (MODE === "canon") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/canon.html";
+  document.getElementById("date").textContent = "all-time hn canon";
+  function parseCSV(text) {
+    const rows = []; let field = "", row = [], inQ = false;
+    for (const c of text) {
+      if (inQ) { if (c === '"') inQ = false; else field += c; }
+      else if (c === '"') inQ = true;
+      else if (c === ",") { row.push(field); field = ""; }
+      else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+      else field += c;
+    }
+    if (field || row.length) { row.push(field); rows.push(row); }
+    return rows;
+  }
+  fetch("data/hn-canon-monthly.csv", {cache:"no-cache"}).then(r => r.text()).then(text => {
+    const top = parseCSV(text).slice(1).filter(r => r.length >= 8 && r[0])
+      .map(r => ({ title: r[2], url: r[3], points: +r[4] || 0, month: r[0], hn: r[8] }))
+      .sort((a,b) => b.points - a.points).slice(0, N);
+    document.getElementById("list").innerHTML = top.map((c, i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${c.hn}" target="_blank" rel="noopener">${esc(c.title)}</a><span class="src">${c.month}</span></span>
+        <span class="score">${fmt(c.points)} pts</span></li>`).join("");
+  }).catch(() => { document.getElementById("err").textContent = "canon data unavailable"; });
+} else
 if (MODE === "hiring") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/hiring.html";
   fetch("data/hiring.json", {cache:"no-cache"}).then(r => r.json()).then(hp => {
