@@ -34,6 +34,8 @@
   ol { list-style: none; }
   li { display: flex; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--border); align-items: baseline; }
   .r { color: var(--dim); min-width: 22px; text-align: right; }
+  .trj { color: var(--dim); font-size: 11px; margin-left: 6px; text-decoration: none; }
+  .trj:hover { color: var(--accent); }
   .it a { color: var(--fg); } .it a:hover { color: var(--accent); }
   .it .yr { color: var(--dim); font-size: 11px; margin-left: 6px; }
   .sc { margin-left: auto; white-space: nowrap; font-size: 12px; color: var(--dim); }
@@ -126,7 +128,7 @@ const timh = canon.filter(c => c.month.slice(5) === mm && c.rank === 1 && c.mont
   .sort((a,b) => b.month.localeCompare(a.month));
 document.getElementById("timh").innerHTML = timh.map((c,i) =>
   `<li><span class="r">${c.month.slice(0,4)}</span><span class="it">
-   <a href="${c.hn}">${esc(c.title)}</a></span><span class="sc"><b>${fmt(c.points)}</b> pts</span></li>`).join("")
+   <a href="${c.hn}">${esc(c.title)}</a><a class="trj" href="item.html?q=${encodeURIComponent(c.title)}" title="trajectory">⤳</a></span><span class="sc"><b>${fmt(c.points)}</b> pts</span></li>`).join("")
   || '<li class="it" style="color:var(--dim)">no prior years for this month</li>';
 
 // month explorer: any month's top-10
@@ -136,7 +138,7 @@ function renderMonth(m) {
   document.getElementById("browse").innerHTML = canon.filter(c => c.month === m)
     .sort((a,b) => a.rank - b.rank).map(c =>
       `<li><span class="r">${c.rank}</span><span class="it">
-       <a href="${c.hn}">${esc(c.title)}</a></span>
+       <a href="${c.hn}">${esc(c.title)}</a><a class="trj" href="item.html?q=${encodeURIComponent(c.title)}" title="trajectory">⤳</a></span>
        <span class="sc"><b>${fmt(c.points)}</b> pts · ${fmt(c.comments)}💬</span></li>`).join("");
 }
 mpick.onchange = () => renderMonth(mpick.value);
@@ -159,7 +161,7 @@ function renderAll() {
     .slice().sort((a,b) => b.points - a.points).slice(0, term ? 100 : 40);
   document.getElementById("out").innerHTML = pool.map((c,i) =>
     `<li><span class="r">${i+1}</span><span class="it">
-     <a href="${c.hn}">${esc(c.title)}</a><span class="yr">${c.month}</span></span>
+     <a href="${c.hn}">${esc(c.title)}</a><a class="trj" href="item.html?q=${encodeURIComponent(c.title)}" title="trajectory">⤳</a><span class="yr">${c.month}</span></span>
      <span class="sc"><b>${fmt(c.points)}</b> pts · ${fmt(c.comments)}💬</span></li>`).join("")
     || '<li class="it" style="color:var(--dim)">no canon stories match</li>';
 }
