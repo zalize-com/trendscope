@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中文 · trendscope</title>
+<meta name="description" content="中文开发者注意力——49 个中文技术源的当日混排：量子位、机器之心、ByteByteGo 中文、字节/美团/腾讯技术团队、wechat2rss 公众号镜像、中文独立博客。">
+<link rel="alternate" type="application/rss+xml" title="trendscope snapshots" href="feed.xml">
+<style>
+  :root { --bg:#0d1117; --fg:#e6edf3; --mut:#8b949e; --card:#161b22; --line:#30363d; --acc:#58a6ff; }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme]) { --bg:#f6f8fa; --fg:#1f2328; --mut:#59636e; --card:#ffffff; --line:#d0d7de; --acc:#0969da; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  .wrap { max-width:880px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:26px; margin:0 0 6px; }
+  h1 em { font-style:normal; color:var(--acc); }
+  nav { margin-bottom:18px; font-size:14px; }
+  .muted { color:var(--mut); font-size:13.5px; margin-bottom:20px; }
+  a { color:var(--acc); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .row { display:flex; gap:10px; padding:8px 4px; border-bottom:1px solid var(--line); align-items:baseline; }
+  .row .rank { color:var(--mut); font-size:12px; width:22px; text-align:right; flex:none; }
+  .row .meta { display:block; font-size:12px; color:var(--mut); margin-top:2px; }
+  .src { color:var(--acc); font-size:11.5px; font-weight:600; }
+  .grid { display:flex; flex-wrap:wrap; gap:6px; margin:14px 0 22px; }
+  .chip { padding:3px 9px; border:1px solid var(--line); border-radius:20px; font-size:12px; color:var(--mut); }
+  footer { margin-top:28px; color:var(--mut); font-size:12.5px; }
+  :focus-visible { outline:2px solid var(--acc); outline-offset:2px; }
+  @media (prefers-reduced-motion: reduce) {
+    *,*::before,*::after { animation-duration:.01ms !important; transition-duration:.01ms !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a href="index.html">trendscope</a> · <a href="about.html">about</a> · <a href="datasets.html">datasets</a> · <a href="trendscope.opml">OPML</a></nav>
+  <h1>中文<em>开发者注意力</em></h1>
+  <p class="muted">49 个中文技术源的当日混排 — 量子位 · 机器之心 · 新智元 · PaperWeekly · Datawhale · HuggingFace 中文 ·
+    字节/小米/得物/爱奇艺/百度安全/腾讯/阿里/B站技术（wechat2rss 公众号镜像）· 宝玉 · 李继刚 · 傅盛 · 歸藏 等独立博客。
+    全部源打包在 <a href="trendscope.opml">OPML</a> 里可一键导入。</p>
+  <div class="grid" id="srcs"></div>
+  <div id="board"><p class="muted">loading…</p></div>
+  <footer>trendscope · the developer attention dataset · <a href="index.html">main board →</a></footer>
+</div>
+<script>
+const ZH = new Set("billwang1990github,blogcodingnow,blogdevtang,colobu,dbanotes,cnblogs,headsalon,onevcat,techmeituan,casatwy,daimajia,42jing,aigcweekly,akimio,bojieli,yuanchaofa,huhuhang,liamding,lyricquail,lyricim,liduos,fusheng,quaily,baoyu,lijigang,datawhale,huggingface,paperweekly,xinzhi,jiqizhixin,mlbeginner,qbitai,qbitaigzh,xgo5b632,xgo831fa,bilibilitech,bytetech,xiaomitech,dewutech,iqiyitech,baidusec,tencenttech,alimiddle,the5fire,luenci,michealwayne,maonie,kekxv,corvo".split(","));
+const ZH_LABEL = {
+  "42jing":"42 章经","aigcweekly":"AIGC Weekly","akimio":"山与","bojieli":"Bojie Li",
+  "yuanchaofa":"元超法","huhuhang":"胡涂说","liamding":"Liam Ding","lyricquail":"Lyric",
+  "lyricim":"Lyric 编程","liduos":"李懂","fusheng":"傅盛","quaily":"Quaily",
+  "baoyu":"宝玉","lijigang":"李继刚","datawhale":"Datawhale","huggingface":"Hugging Face 中文",
+  "paperweekly":"PaperWeekly","xinzhi":"新智元","jiqizhixin":"机器之心","mlbeginner":"ML入门",
+  "qbitai":"量子位","qbitaigzh":"量子位 QbitAI","xgo5b632":"XGo","xgo831fa":"XGo 技术",
+  "bilibilitech":"B站技术","bytetech":"字节跳动技术","xiaomitech":"小米技术","dewutech":"得物技术",
+  "iqiyitech":"爱奇艺技术","baidusec":"百度安全","tencenttech":"腾讯技术","alimiddle":"阿里中间件",
+  "the5fire":"the5fire","luenci":"论词","michealwayne":"Micheal Wayne","maonie":"猫呢","kekxv":"kekxv","corvo":"Corvo",
+  "billwang1990github":"王垠","blogcodingnow":"酷壳","blogdevtang":"唐巧","colobu":"鸟窝",
+  "dbanotes":"冯大辉","cnblogs":"博客园","headsalon":"Headsalon","onevcat":"OneV's Den",
+  "techmeituan":"美团技术","casatwy":"casatwy","daimajia":"daimajia"
+};
+function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML;}
+async function main(){
+  const r=await fetch('data/latest.json'); const snap=await r.json();
+  const have=[...ZH].filter(k=>snap.items[k]);
+  document.getElementById('srcs').innerHTML=have.map(k=>
+    `<span class="chip">${esc(ZH_LABEL[k]||k)} <b>${snap.items[k].length}</b></span>`).join('');
+  const queues=have.map(k=>snap.items[k].slice());
+  const list=[]; while(list.length<60&&queues.some(q=>q.length))
+    for(const q of queues) if(q.length) list.push(q.shift());
+  const board=document.getElementById('board');
+  board.innerHTML=list.map((it,i)=>`
+    <div class="row"><span class="rank">${i+1}</span>
+      <span><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
+        <span class="meta"><span class="src">${esc(ZH_LABEL[it.source]||it.source)}</span>${it.author?' · '+esc(it.author):''}</span></span>
+    </div>`).join('');
+}
+main().catch(e=>{document.getElementById('board').innerHTML='<p class="muted">load failed: '+e+'</p>';});
+</script>
+</body>
+</html>
