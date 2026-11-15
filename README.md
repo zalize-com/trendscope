@@ -135,6 +135,13 @@ compare within a source, not across.
 
 ```html
 <iframe src="https://zalize-com.github.io/trendscope/embed.html" width="400" height="520" frameborder="0"></iframe>
+
+Or the lighter web component (no iframe):
+
+```html
+<script src="https://zalize-com.github.io/trendscope/docs/api/widget.js" defer></script>
+<trend-scope mode="top" n="5"></trend-scope>
+```
 ```
 
 Params: `?n=` rows (5–30), `?s=github_trending` single source,
