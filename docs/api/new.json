@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T13:59:57.885565+00:00",
+ "generated_at": "2026-11-15T14:03:23.092150+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 505,
- "new_items": 379,
+ "total_items": 513,
+ "new_items": 387,
  "by_source": {
   "producthunt": 45,
   "show_hn": 21,
+  "hackernews": 19,
   "techmeme": 19,
-  "hackernews": 18,
   "slashdot": 17,
   "arstechnica": 16,
   "arxiv": 15,
@@ -22,13 +22,14 @@
   "soblog": 15,
   "thenewstack": 15,
   "theregister": 15,
-  "theverge": 13,
+  "theverge": 14,
   "freecodecamp": 10,
   "krebs": 10,
   "opensourcecom": 10,
   "lobsters": 9,
   "hackaday": 7,
-  "github_trending": 2,
+  "bendersky": 5,
+  "github_trending": 3,
   "ask_hn": 1,
   "devto": 1
  },
@@ -288,6 +289,46 @@
    "rank": 12,
    "score": 5,
    "metric": "points"
+  },
+  {
+   "title": "Monads in Lean",
+   "url": "https://eli.thegreenplace.net/2026/monads-in-lean/",
+   "source": "bendersky",
+   "rank": 1,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Notes on the complex roots of unity",
+   "url": "https://eli.thegreenplace.net/2026/notes-on-the-complex-roots-of-unity/",
+   "source": "bendersky",
+   "rank": 2,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Monte-Carlo simulations",
+   "url": "https://eli.thegreenplace.net/2026/monte-carlo-simulations/",
+   "source": "bendersky",
+   "rank": 3,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Summary of reading: July - September 2026",
+   "url": "https://eli.thegreenplace.net/2026/summary-of-reading-july-september-2026/",
+   "source": "bendersky",
+   "rank": 4,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rusty thoughts on \"Parse, don't validate\"",
+   "url": "https://eli.thegreenplace.net/2026/rusty-thoughts-on-parse-dont-validate/",
+   "source": "bendersky",
+   "rank": 5,
+   "score": 1,
+   "metric": "feed rank"
   },
   {
    "title": "Bitwarden CLI compromised",
@@ -754,6 +795,14 @@
    "metric": "stars"
   },
   {
+   "title": "duwqijlk/muse-protocol",
+   "url": "https://github.com/duwqijlk/muse-protocol",
+   "source": "github_trending",
+   "rank": 15,
+   "score": 808,
+   "metric": "stars"
+  },
+  {
    "title": "An MP3 Player, Implemented As A Factorio Blueprint",
    "url": "https://hackaday.com/2026/11/15/an-mp3-player-implemented-as-a-factorio-blueprint/",
    "source": "hackaday",
@@ -948,6 +997,14 @@
   {
    "title": "Disk encryption on NetBSD – achieving secrecy",
    "url": "https://netbsd.org/~nia/disk-encrypt/",
+   "source": "hackernews",
+   "rank": 20,
+   "score": 60,
+   "metric": "points"
+  },
+  {
+   "title": "Book list for streetfighting computer scientists",
+   "url": "https://nick-black.com/dankwiki/index.php?title=Book_list_for_streetfighting_computer_scientists",
    "source": "hackernews",
    "rank": 20,
    "score": 60,
@@ -2980,6 +3037,14 @@
   {
    "title": "The Sony Aibo was a robot revolution dressed like a dog",
    "url": "https://www.theverge.com/podcast/1033948/sony-aibo-robot-dog-version-history",
+   "source": "theverge",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "LG’s budget-friendly B6E OLED TV is up to 50 percent off this weekend",
+   "url": "https://www.theverge.com/gadgets/1033432/lg-b6e-oled-tv-best-buy-doorbuster-black-friday-2026-deal-sale",
    "source": "theverge",
    "rank": 1,
    "score": 10,

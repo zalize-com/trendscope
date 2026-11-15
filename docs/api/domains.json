@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T13:59:57.885565+00:00",
+ "generated_at": "2026-11-15T14:03:23.092150+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 221,
+ "total": 222,
  "domains": [
   {
    "hostname": "so.long.thanks.fish",
@@ -99,7 +99,7 @@
   {
    "hostname": "theverge.com",
    "days_on_board": 2,
-   "items": 15,
+   "items": 16,
    "sources": [
     "hackernews",
     "theverge"
@@ -110,6 +110,22 @@
     "score": 378,
     "metric": "points",
     "date": "2026-11-11"
+   }
+  },
+  {
+   "hostname": "eli.thegreenplace.net",
+   "days_on_board": 2,
+   "items": 6,
+   "sources": [
+    "bendersky",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Making any integer with four 2s (2025)",
+    "url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
+    "score": 224,
+    "metric": "points",
+    "date": "2026-11-07"
    }
   },
   {
@@ -741,21 +757,6 @@
    "top_hit": {
     "title": "Who Runs the Ransomware Group Qilin?",
     "url": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
-    "score": 10,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "freecodecamp.org",
-   "days_on_board": 1,
-   "items": 10,
-   "sources": [
-    "freecodecamp"
-   ],
-   "top_hit": {
-    "title": "Build and Train a GLM-5.3-Flash Model From Scratch with Python",
-    "url": "https://www.freecodecamp.org/news/build-and-train-a-glm-53-flash-model-from-scratch-with-python/",
     "score": 10,
     "metric": "feed rank",
     "date": "2026-11-15"
