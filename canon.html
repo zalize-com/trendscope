@@ -51,6 +51,9 @@
   <div class="bars" id="infl"></div>
   <h2>this month in history</h2>
   <ol id="timh"></ol>
+  <h2>browse a month</h2>
+  <select id="mpick" style="background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:13px;margin-bottom:8px"></select>
+  <ol id="browse"></ol>
   <h2>all-time top 40</h2>
   <div class="cn" id="years"></div>
   <ol id="out"></ol>
@@ -113,6 +116,20 @@ document.getElementById("timh").innerHTML = timh.map((c,i) =>
   `<li><span class="r">${c.month.slice(0,4)}</span><span class="it">
    <a href="${c.hn}">${esc(c.title)}</a></span><span class="sc"><b>${fmt(c.points)}</b> pts</span></li>`).join("")
   || '<li class="it" style="color:var(--dim)">no prior years for this month</li>';
+
+// month explorer: any month's top-10
+const mpick = document.getElementById("mpick");
+mpick.innerHTML = [...months].reverse().map(m => `<option>${m}</option>`).join("");
+function renderMonth(m) {
+  document.getElementById("browse").innerHTML = canon.filter(c => c.month === m)
+    .sort((a,b) => a.rank - b.rank).map(c =>
+      `<li><span class="r">${c.rank}</span><span class="it">
+       <a href="${c.hn}">${esc(c.title)}</a></span>
+       <span class="sc"><b>${fmt(c.points)}</b> pts · ${fmt(c.comments)}💬</span></li>`).join("");
+}
+mpick.onchange = () => renderMonth(mpick.value);
+mpick.value = months[months.length - 1];
+renderMonth(mpick.value);
 
 // year chips
 const P = new URLSearchParams(location.search);
