@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>digests — trendscope</title>
+<meta name="description" content="Weekly digests and daily movers generated from the trendscope developer attention dataset.">
+<meta property="og:title" content="trendscope digests">
+<meta property="og:image" content="og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+<style>
+  :root { --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
+          --dim:#8b949e; --accent:#58a6ff; --green:#3fb950; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 18px; }
+  .files { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 22px; }
+  .files button {
+    background: var(--panel); color: var(--dim); border: 1px solid var(--border);
+    border-radius: 6px; padding: 5px 12px; font: inherit; font-size: 13px; cursor: pointer;
+  }
+  .files button.active { color: var(--fg); border-color: var(--accent); }
+  .files button:hover { color: var(--fg); }
+  #doc { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 24px 28px; }
+  #doc h1 { font-size: 22px; margin: 18px 0 8px; } #doc h2 { font-size: 17px; margin: 20px 0 8px; }
+  #doc h3 { font-size: 15px; margin: 16px 0 6px; }
+  #doc p { margin: 8px 0; } #doc ul, #doc ol { padding-left: 22px; margin: 8px 0; }
+  #doc li { margin: 3px 0; }
+  #doc code { background: rgba(110,118,129,.25); border-radius: 4px; padding: 1px 5px; font-size: 13px; }
+  #doc pre { background: #0a0e14; border: 1px solid var(--border); border-radius: 8px; padding: 12px; overflow-x: auto; margin: 10px 0; }
+  #doc pre code { background: none; padding: 0; }
+  #doc blockquote { border-left: 3px solid var(--border); padding-left: 12px; color: var(--dim); margin: 10px 0; }
+  #doc table { border-collapse: collapse; margin: 10px 0; width: 100%; }
+  #doc td, #doc th { border: 1px solid var(--border); padding: 5px 10px; font-size: 13px; }
+  #doc hr { border: none; border-top: 1px solid var(--border); margin: 18px 0; }
+  .movers-note { color: var(--dim); font-size: 13px; margin-top: 26px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+  #err { color: var(--dim); }
+</style>
+</head>
+<body>
+  <nav><a href="index.html">← trendscope</a> · <a href="compare.html">compare</a> · <a href="topics.html">topics</a></nav>
+  <h1>dig<span>ests</span></h1>
+  <p class="sub">Auto-generated weekly digests from the dataset.</p>
+  <div class="files" id="files"></div>
+  <div id="doc"><p id="err">loading…</p></div>
+  <p class="movers-note" id="movers"></p>
+  <footer>Open data, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> ·
+    <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a> ·
+    digest markdown lives in <a href="https://github.com/zalize-com/trendscope/tree/main/docs/digest">docs/digest</a></footer>
+<script type="module">
+const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
+const $ = id => document.getElementById(id);
+const params = new URLSearchParams(location.search);
+
+function mdInline(s) {
+  s = s.replace(/`([^`]+)`/g, (m, c) => `<code>${c}</code>`);
+  s = s.replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>").replace(/__([^_]+)__/g, "<b>$1</b>");
+  s = s.replace(/\*([^*\n]+)\*/g, "<i>$1</i>").replace(/\b_([^_\n]+)_/g, "<i>$1</i>");
+  s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+|[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  return s;
+}
+function mdRender(src) {
+  const lines = src.split("\n");
+  let html = "", inCode = false, list = null, para = [], tbl = null;
+  const flushPara = () => { if (para.length) { html += `<p>${mdInline(para.join(" "))}</p>`; para = []; } };
+  const flushList = () => { if (list) { html += `</${list}>`; list = null; } };
+  const flushTbl = () => { if (tbl) { html += "</table>"; tbl = null; } };
+  for (const raw of lines) {
+    if (/^```/.test(raw)) {
+      flushPara(); flushList(); flushTbl();
+      html += inCode ? "</code></pre>" : "<pre><code>";
+      inCode = !inCode; continue;
+    }
+    if (inCode) { html += esc(raw) + "\n"; continue; }
+    const t = raw.trimEnd();
+    if (!t.trim()) { flushPara(); flushList(); flushTbl(); continue; }
+    if (/^\|.+\|$/.test(t)) {
+      flushPara(); flushList();
+      const cells = t.split("|").slice(1, -1).map(c => c.trim());
+      if (cells.every(c => /^:?-+:?$/.test(c))) continue;
+      if (!tbl) { tbl = true; html += "<table>"; }
+      html += "<tr>" + cells.map(c => `<td>${mdInline(esc(c))}</td>`).join("") + "</tr>";
+      continue;
+    }
+    flushTbl();
+    let m;
+    if (m = t.match(/^(#{1,6})\s+(.*)/)) {
+      flushPara(); flushList();
+      const lv = Math.min(m[1].length, 3);
+      html += `<h${lv}>${mdInline(esc(m[2]))}</h${lv}>`;
+    } else if (/^(-{3,}|\*{3,})$/.test(t)) {
+      flushPara(); flushList(); html += "<hr>";
+    } else if (m = t.match(/^>|^&gt;/)) {
+      flushPara(); flushList();
+      html += `<blockquote>${mdInline(esc(t.replace(/^&gt;|^>\s?/, "")))}</blockquote>`;
+    } else if (m = t.match(/^[-*+]\s+(.*)/)) {
+      flushPara();
+      if (list !== "ul") { flushList(); html += "<ul>"; list = "ul"; }
+      html += `<li>${mdInline(esc(m[1]))}</li>`;
+    } else if (m = t.match(/^\d+[.)]\s+(.*)/)) {
+      flushPara();
+      if (list !== "ol") { flushList(); html += "<ol>"; list = "ol"; }
+      html += `<li>${mdInline(esc(m[1]))}</li>`;
+    } else {
+      flushList(); para.push(esc(t));
+    }
+  }
+  flushPara(); flushList(); flushTbl();
+  if (inCode) html += "</code></pre>";
+  return html;
+}
+
+const idx = await fetch("docs/index.json", {cache:"no-cache"}).then(r => r.json()).catch(() => ({digests:[],movers:[]}));
+const files = idx.digests || [];
+if (!files.length) {
+  $("doc").innerHTML = '<p id="err">No digests yet — the first weekly digest is generated by the daily pipeline.</p>';
+} else {
+  const wanted = params.get("w") || files[0];
+  $("files").innerHTML = files.map(f =>
+    `<button data-f="${f}" class="${f===wanted?"active":""}">${f.replace(/\.md$/,"")}${f.includes("notes")?" ✍":""}</button>`).join("");
+  async function show(f) {
+    document.querySelectorAll("#files button").forEach(b => b.classList.toggle("active", b.dataset.f === f));
+    history.replaceState(null, "", `?w=${encodeURIComponent(f)}`);
+    const md = await fetch(`docs/digest/${f}`, {cache:"no-cache"}).then(r => {
+      if (!r.ok) throw new Error(String(r.status));
+      return r.text();
+    });
+    $("doc").innerHTML = mdRender(md);
+    document.title = `${f.replace(/\.md$/,"")} — trendscope digest`;
+  }
+  $("files").onclick = e => { const f = e.target?.dataset?.f; if (f) show(f).catch(() => { $("doc").innerHTML = '<p id="err">failed to load</p>'; }); };
+  await show(wanted).catch(() => { $("doc").innerHTML = '<p id="err">failed to load digest</p>'; });
+}
+const movers = idx.movers || [];
+if (movers.length) {
+  const latest = movers[0];
+  $("movers").innerHTML =
+    `Daily movers: <a href="compare.html?a=${movers[1]||latest}&b=${latest}">what changed on ${latest}</a> · ` +
+    movers.slice(0, 5).map(d => `<a href="https://github.com/zalize-com/trendscope/blob/main/docs/movers/${d}.md">${d}</a>`).join(" · ");
+}
+</script>
+</body>
+</html>
