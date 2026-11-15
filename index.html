@@ -143,7 +143,7 @@
     <div id="cpk-bar" style="display:none;margin:0 0 10px">
       <input id="cpk-input" placeholder="track an npm package — e.g. hono" style="background:var(--panel);border:1px solid var(--border);border-radius:8px;color:var(--fg);padding:7px 12px;font-size:13px;width:260px">
       <a id="cpk-add" class="btn" style="margin-top:0;padding:5px 12px;cursor:pointer">+ track</a>
-      <span class="muted" style="font-size:12px;margin-left:8px">saved in your browser · npm only</span>
+      <span class="muted" style="font-size:12px;margin-left:8px">saved in your browser · npm / crates:</span>
     </div>
     <div class="board" id="board"></div>
   </section>
@@ -266,19 +266,31 @@ async function renderCustomPkgs(board) {
   const pkgs = CPK();
   if (!pkgs.length) return;
   board.insertAdjacentHTML("beforeend",
-    `<div class="row"><span></span><span class="muted" style="font-size:12px">— your npm watchlist —</span><span></span></div>`);
+    `<div class="row"><span></span><span class="muted" style="font-size:12px">— your watchlist —</span><span></span></div>`);
   for (const p of pkgs) {
+    const isCrates = p.startsWith("crates:");
+    const name = p.replace(/^(npm|crates):/, "");
     try {
-      const d = await fetch(`https://api.npmjs.org/downloads/point/last-week/${encodeURIComponent(p)}`)
-        .then(r => r.json());
+      let score, metric, href;
+      if (isCrates) {
+        const d = await fetch(`https://crates.io/api/v1/crates/${encodeURIComponent(name)}`,
+          {headers: {"User-Agent": "trendscope"}}).then(r => r.json());
+        score = d.crate?.recent_downloads || 0; metric = "recent downloads";
+        href = `https://crates.io/crates/${encodeURIComponent(name)}`;
+      } else {
+        const d = await fetch(`https://api.npmjs.org/downloads/point/last-week/${encodeURIComponent(name)}`)
+          .then(r => r.json());
+        score = d.downloads || 0; metric = "weekly downloads";
+        href = `https://www.npmjs.com/package/${encodeURIComponent(name)}`;
+      }
       board.insertAdjacentHTML("beforeend", `
         <div class="row">
           <span class="rank">★</span>
           <span>
-            <a href="https://www.npmjs.com/package/${encodeURIComponent(p)}" target="_blank" rel="noopener">${escapeHtml(p)}</a>
-            <span class="meta"><span class="src">npm</span><span class="src">watchlist</span></span>
+            <a href="${href}" target="_blank" rel="noopener">${escapeHtml(name)}</a>
+            <span class="meta"><span class="src">${isCrates ? "crates" : "npm"}</span><span class="src">watchlist</span></span>
           </span>
-          <span class="score"><b>${fmt(d.downloads || 0)}</b> <span class="muted" style="font-size:11px">weekly downloads</span>
+          <span class="score"><b>${fmt(score)}</b> <span class="muted" style="font-size:11px">${metric}</span>
             <a href="#" data-untrack="${escapeHtml(p)}" class="delta" style="color:var(--dim)">✕</a></span>
         </div>`);
     } catch (e) { /* fetch failed — skip package */ }
