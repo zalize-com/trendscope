@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T15:03:00.231699+00:00",
+ "generated_at": "2026-11-15T15:05:12.896089+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 1043,
- "unique_urls": 905,
- "items_in_latest": 635,
- "items_per_day_avg": 115.9,
+ "total_rows": 1058,
+ "unique_urls": 920,
+ "items_in_latest": 650,
+ "items_per_day_avg": 117.6,
  "sources": {
   "antirez": {
    "rows": 15,
@@ -90,6 +90,10 @@
    "days_active": 1
   },
   "jvns": {
+   "rows": 15,
+   "days_active": 1
+  },
+  "kentcdodds": {
    "rows": 15,
    "days_active": 1
   },
