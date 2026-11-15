@@ -71,6 +71,7 @@
     <button data-tool="ent">html entities</button>
     <button data-tool="keys">key inspector</button>
     <button data-tool="jdiff">JSON diff</button>
+    <button data-tool="llmcost">LLM cost est</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -210,13 +211,25 @@
     <div class="out" id="ent-out"></div>
     <div class="out" id="ent-warn" style="display:none"></div>
   </div>
+  <div class="panel" id="p-llmcost">
+    <h2>LLM API cost estimator</h2>
+    <p class="hint">Estimate monthly spend per model from your usage shape. Prices are approximate public list prices (per 1M tokens, USD) — verify on provider pricing pages before budgeting.</p>
+    <div class="row">
+      <div><label>requests / day</label><input type="text" id="lc-req" value="1000"></div>
+      <div><label>avg input tokens / req</label><input type="text" id="lc-in" value="2000"></div>
+      <div><label>avg output tokens / req</label><input type="text" id="lc-out" value="500"></div>
+    </div>
+    <p class="hint">Estimate tokens: paste a sample prompt → <span id="lc-tok">~0 tokens</span></p>
+    <textarea id="lc-sample" rows="3" placeholder="paste a sample prompt here… (≈4 chars ≈ 1 token for English)"></textarea>
+    <table id="lc-tbl" style="margin-top:10px"></table>
+  </div>
 
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -755,6 +768,32 @@ function entGo(mode) {
     }).join("")+`<div style="color:var(--dim);margin-top:6px">${acc.length} difference${acc.length>1?"s":""}${acc.length>200?" (showing first 200)":""}</div>`;
   }
   A.addEventListener("input",go); B.addEventListener("input",go);
+})();
+
+/* ---------- llm cost estimator ---------- */
+(function(){
+  const R=document.getElementById("lc-req"), I=document.getElementById("lc-in"), O=document.getElementById("lc-out"), S=document.getElementById("lc-sample"), T=document.getElementById("lc-tok"), TBL=document.getElementById("lc-tbl");
+  if(!R) return;
+  const escH=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
+  const MODELS=[ // [name, $/1M input, $/1M output] — approx public list prices, 2026-11
+    ["GPT-4.1",2.00,8.00],["GPT-4.1 mini",0.40,1.60],["GPT-4.1 nano",0.10,0.40],
+    ["GPT-4o",2.50,10.00],["GPT-4o-mini",0.15,0.60],
+    ["Claude Opus 4.5",5.00,25.00],["Claude Sonnet 4.5",3.00,15.00],["Claude Haiku 4.5",1.00,5.00],
+    ["Gemini 2.5 Pro",1.25,10.00],["Gemini 2.5 Flash",0.30,2.50],
+    ["DeepSeek V3.2",0.28,0.42],["Mistral Large 3",0.50,1.50],["Llama 3.3 70B (hosted)",0.10,0.40]
+  ];
+  const money=n=>n>=1000?"$"+n.toLocaleString("en-US",{maximumFractionDigits:0}):n>=1?"$"+n.toFixed(2):"$"+n.toFixed(4);
+  function go(){
+    const req=Math.max(0,parseFloat(R.value)||0), tin=Math.max(0,parseFloat(I.value)||0), tout=Math.max(0,parseFloat(O.value)||0);
+    const rows=MODELS.map(([n,pi,po])=>({n,per:(req*(tin*pi+tout*po))/1e6,mo:(30*req*(tin*pi+tout*po))/1e6}))
+      .sort((a,b)=>a.mo-b.mo);
+    const lo=rows[0];
+    TBL.innerHTML='<tr><th>model</th><th class="num">per request</th><th class="num">per month (30d)</th><th></th></tr>'+
+      rows.map(r=>`<tr><td>${escH(r.n)}</td><td class="num">${money(r.per)}</td><td class="num">${money(r.mo)}</td><td>${r===lo?'<span style="color:var(--green)">cheapest</span>':""}</td></tr>`).join("");
+  }
+  [R,I,O].forEach(e=>e.addEventListener("input",go));
+  S.addEventListener("input",()=>{T.textContent="~"+Math.round(S.value.length/4).toLocaleString()+" tokens";});
+  go();
 })();
 </script>
 </body>
