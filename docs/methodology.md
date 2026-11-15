@@ -75,3 +75,12 @@ A literal newline inside a `'...'` string is a SyntaxError — the whole
 inline script died and tools/web.html rendered nothing. When extending
 a JS string literal, keep it on one line (or deliberately use a
 template literal); "string contains the text" is not "the page runs".
+
+
+### 10. Don't empty the container your error path needs
+feedpaper's fetch catch showed its empty state in `#empty`, a child of
+`#box`; a later edit added `box.innerHTML=''` for the loading state —
+which deleted `#empty` itself, so the catch then threw a second error
+and the page rendered nothing *and* logged the wrong thing. Elements
+referenced by error paths must live outside containers that get
+cleared, or the catch must recreate them.
