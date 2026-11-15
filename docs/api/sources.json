@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-15T20:55:31.362870+00:00",
+  "generated_at": "2026-11-15T21:08:40.685426+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
-      "items": 193,
-      "unique_urls": 180,
+      "items": 194,
+      "unique_urls": 181,
       "median_days_on_board": 1,
       "one_day_pct": 93,
       "top_item": {
@@ -358,6 +358,30 @@
       "top_item": {
         "title": "Slack’s Migration to a Cellular Architecture",
         "url": "https://www.reddit.com/r/programming/comments/1xwsbxo/slacks_migration_to_a_cellular_architecture/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rwebdev": {
+      "items": 16,
+      "unique_urls": 16,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Monthly Getting Started / Web Dev Career Thread",
+        "url": "https://www.reddit.com/r/webdev/comments/1w49w0r/monthly_getting_started_web_dev_career_thread/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rselfhosted": {
+      "items": 16,
+      "unique_urls": 16,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Quarter 2 Update - Revisiting Rules. Again.",
+        "url": "https://www.reddit.com/r/selfhosted/comments/1sey9ch/quarter_2_update_revisiting_rules_again/",
         "score": 15,
         "rank": 1
       }
@@ -9770,18 +9794,6 @@
         "rank": 1
       }
     },
-    "rwebdev": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Monthly Getting Started / Web Dev Career Thread",
-        "url": "https://www.reddit.com/r/webdev/comments/1w49w0r/monthly_getting_started_web_dev_career_thread/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "rpython": {
       "items": 15,
       "unique_urls": 15,
@@ -10550,14 +10562,158 @@
         "rank": 1
       }
     },
-    "rselfhosted": {
+    "raws": {
       "items": 15,
       "unique_urls": 15,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
-        "title": "Quarter 2 Update - Revisiting Rules. Again.",
-        "url": "https://www.reddit.com/r/selfhosted/comments/1sey9ch/quarter_2_update_revisiting_rules_again/",
+        "title": "Is AWS US-East-1 Identity Center sign-in down?",
+        "url": "https://www.reddit.com/r/aws/comments/1xwtve5/is_aws_useast1_identity_center_signin_down/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rlisp": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "New CL VSCode extension: OLIVE",
+        "url": "https://www.reddit.com/r/lisp/comments/1tn3zff/new_cl_vscode_extension_olive/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "raskprogramming": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "ChatGPT / AI related questions",
+        "url": "https://www.reddit.com/r/AskProgramming/comments/120de2q/chatgpt_ai_related_questions/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rdotnet": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Rule change feedback",
+        "url": "https://www.reddit.com/r/dotnet/comments/1sa6ihu/rule_change_feedback/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rwebdesign": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Feedback Thread",
+        "url": "https://www.reddit.com/r/web_design/comments/1xv4y49/feedback_thread/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rfrontend": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Recreating Apple’s genie effect on the web: how the window bends into a funnel and drains into the dock",
+        "url": "https://www.reddit.com/r/Frontend/comments/1xvuamk/recreating_apples_genie_effect_on_the_web_how_the/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "relixir": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Elixir v1.20 released: now a gradually typed language",
+        "url": "https://www.reddit.com/r/elixir/comments/1twpzg2/elixir_v120_released_now_a_gradually_typed/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rswift": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "FAQ and Advice for Beginners - Please read before posting",
+        "url": "https://www.reddit.com/r/swift/comments/l0u5c3/faq_and_advice_for_beginners_please_read_before/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rjava": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "[PSA]/r/java is not for programming help, learning questions, or installing Java questions",
+        "url": "https://www.reddit.com/r/java/comments/j7h9er/psarjava_is_not_for_programming_help_learning/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rclojure": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Lambda performance comparison of running different Clojure dialects",
+        "url": "https://www.reddit.com/r/Clojure/comments/1xw4h0x/lambda_performance_comparison_of_running/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rgamedev": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "I interviewed the former Technical Director of Rockstar Games and the developer of the GTA games!",
+        "url": "https://www.reddit.com/r/gamedev/comments/1xq7u15/i_interviewed_the_former_technical_director_of/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rdjango": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "2026 Django Developers Survey",
+        "url": "https://www.reddit.com/r/django/comments/1tb38y7/2026_django_developers_survey/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rangular": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Announcement: We are merging with r/angular",
+        "url": "https://www.reddit.com/r/Angular2/comments/1uer01e/announcement_we_are_merging_with_rangular/",
         "score": 15,
         "rank": 1
       }
@@ -11399,6 +11555,18 @@
         "title": "Chat is AI’s command line.",
         "url": "https://wattenberger.com/thoughts/ai-is-still-in-its-terminal-era",
         "score": 11,
+        "rank": 1
+      }
+    },
+    "soerenhentzschel": {
+      "items": 11,
+      "unique_urls": 11,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Mozilla veröffentlicht Firefox 160 für Android",
+        "url": "https://www.soeren-hentzschel.at/firefox-android/firefox-160-android/",
+        "score": 10,
         "rank": 1
       }
     },
@@ -14530,18 +14698,6 @@
       "top_item": {
         "title": "Passwords are always short, but bcrypt's limit can still be problematic",
         "url": "https://www.sjoerdlangkemper.nl/2026/10/28/maximum-password-length-bcrypt-72-limit/",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "soerenhentzschel": {
-      "items": 10,
-      "unique_urls": 10,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Mozilla veröffentlicht Firefox 160 für Android",
-        "url": "https://www.soeren-hentzschel.at/firefox-android/firefox-160-android/",
         "score": 10,
         "rank": 1
       }
