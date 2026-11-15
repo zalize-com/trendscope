@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T16:46:53.700706+00:00",
+ "generated_at": "2026-11-15T16:51:54.865991+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 383,
+ "total": 410,
  "domains": [
   {
    "hostname": "reuters.com",
@@ -193,6 +193,24 @@
    }
   },
   {
+   "hostname": "youtube.com",
+   "days_on_board": 2,
+   "items": 7,
+   "sources": [
+    "bret",
+    "daringfireball",
+    "hackernews",
+    "jankfree"
+   ],
+   "top_hit": {
+    "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+    "score": 444,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
    "hostname": "eli.thegreenplace.net",
    "days_on_board": 2,
    "items": 6,
@@ -268,23 +286,6 @@
     "score": 410,
     "metric": "points",
     "date": "2026-11-11"
-   }
-  },
-  {
-   "hostname": "youtube.com",
-   "days_on_board": 2,
-   "items": 3,
-   "sources": [
-    "bret",
-    "daringfireball",
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
-    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
-    "score": 444,
-    "metric": "points",
-    "date": "2026-11-13"
    }
   },
   {

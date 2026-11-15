@@ -191,6 +191,26 @@ A daily cross-source snapshot of developer attention:
 | Dzmitry Malyshau | Rust graphics and wgpu | `kvark.github.io/feed.xml` |
 | Oren Eini | RavenDB creator, database internals | `ayende.com/blog/rss` |
 | Yegor Bugayenko | opinionated software essays | `yegor256.com/rss.xml` |
+| Addy Osmani | Chrome engineering and web performance | `addyosmani.com/rss.xml` |
+| NPR Visuals | NPR visuals team blog | `blog.apps.npr.org/atom.xml` |
+| Chromium Blog | Chromium project updates | `blog.chromium.org/atom.xml` |
+| Cameron Moll | design and product essays | `cameronmoll.com/journal.xml` |
+| code.flickr | Flickr engineering | `code.flickr.net/feed/` |
+| Deliveroo Eng | Deliveroo engineering | `deliveroo.engineering/feed.xml` |
+| Dewith | software and indie posts | `dewith.com/feed/` |
+| Dyskinetic | personal tech blog | `dyskinetic.net/feed/` |
+| Scott Hanselman | Microsoft dev advocate blog | `feeds.hanselman.com/ScottHanselman` |
+| MacRumors | Apple news and rumors | `feeds.macrumors.com/MacRumors-Front` |
+| swissmiss | design blog by Tina Roth Eisenberg | `feeds2.feedburner.com/Swissmiss` |
+| fetchrss feed | community-generated RSS | `fetchrss.com/rss/5f4456fa8a93f86d388b45685fdc1cf61232f518d12bb832.xml` |
+| Jank Free | web rendering performance | `jankfree.org/feed/all.xml` |
+| John Keefe | data journalism at WNYC | `johnkeefe.net/posts.atom` |
+| Karbon Based | engineering blog | `karbonbased.io/index.xml` |
+| NPR Charts | NPR charts n things | `kpq.github.io/chartsnthings/atom.xml` |
+| Perfection Kills | JavaScript deep-dives | `perfectionkills.com/feed.xml` |
+| HubSpot Product | HubSpot product engineering | `product.hubspot.com/blog/rss.xml` |
+| BBC Responsive News | BBC responsive news lab | `responsivenews.co.uk/rss` |
+| SimpleBits | Dan Cederholm design blog | `simplebits.com/feed.xml` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-15T16:46:53.700706+00:00",
+ "generated_at": "2026-11-15T16:51:54.865991+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 2317,
- "new_items": 2191,
+ "total_items": 2531,
+ "new_items": 2405,
  "by_source": {
   "producthunt": 45,
   "show_hn": 39,
-  "hackernews": 29,
+  "hackernews": 30,
   "theregister": 29,
   "techmeme": 22,
   "slashdot": 19,
@@ -25,9 +25,11 @@
   "ayende": 15,
   "begriffs": 15,
   "bertrand": 15,
+  "blogchromium": 15,
   "bobmonsour": 15,
   "brandur": 15,
   "bravenewgeek": 15,
+  "cameronmoll": 15,
   "catonmat": 15,
   "changelog": 15,
   "charity": 15,
@@ -48,6 +50,7 @@
   "elastic": 15,
   "etsy": 15,
   "eugeneyan": 15,
+  "feeds2feedburner": 15,
   "gamasutra": 15,
   "geshan": 15,
   "gitlab_blog": 15,
@@ -57,11 +60,15 @@
   "idvorkin": 15,
   "infoq": 15,
   "jacobian": 15,
+  "jankfree": 15,
+  "johnkeefe": 15,
   "jvns": 15,
+  "karbonbased": 15,
   "karl": 15,
   "kentcdodds": 15,
   "lcamtuf": 15,
   "lwn": 15,
+  "macrumors": 15,
   "maggieappleton": 15,
   "marco": 15,
   "martinfowler": 15,
@@ -87,6 +94,7 @@
   "seangoedecke": 15,
   "shkspr": 15,
   "simonw": 15,
+  "simplebits": 15,
   "soblog": 15,
   "steveblank": 15,
   "stevekrouse": 15,
@@ -111,15 +119,20 @@
   "bret": 11,
   "geoffreylitt": 11,
   "lobsters": 11,
+  "addyosmani": 10,
   "airbnb": 10,
   "andybromberg": 10,
   "birklund": 10,
   "bitslog": 10,
+  "codeflickr": 10,
   "copyconstruct": 10,
+  "deliverooengineering": 10,
+  "dewith": 10,
   "dropbox": 10,
   "freecodecamp": 10,
   "gds": 10,
   "github_eng": 10,
+  "hanselman": 10,
   "haxx": 10,
   "henrikwarne": 10,
   "jakelazaroff": 10,
@@ -140,9 +153,12 @@
   "ncase": 10,
   "netflix": 10,
   "opensourcecom": 10,
+  "perfectionkills": 10,
   "philcalcado": 10,
   "pinterest": 10,
+  "producthubspot": 10,
   "raphlinus": 10,
+  "responsivenewsco": 10,
   "schneems": 10,
   "stratechery": 10,
   "stripe": 10,
@@ -160,19 +176,102 @@
   "hackaday": 8,
   "kellysutton": 8,
   "slack_eng": 8,
+  "kpqgithub": 6,
   "samwho": 6,
   "tonsky": 6,
   "bendersky": 5,
+  "fetchrss": 5,
   "github_trending": 4,
   "thisweek": 4,
   "michaelfeathers": 3,
   "prog21": 3,
   "ask_hn": 2,
   "ciechanow": 2,
+  "dyskinetic": 2,
   "devto": 1,
   "roytang": 1
  },
  "items": [
+  {
+   "title": "Brownfield Agentic Engineering",
+   "url": "https://addyosmani.com/blog/brownfield-agentic-engineering/",
+   "source": "addyosmani",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Agentic Skill Decay",
+   "url": "https://addyosmani.com/blog/agentic-skill-decay/",
+   "source": "addyosmani",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Audit your Agent files",
+   "url": "https://addyosmani.com/blog/audit-your-agent-files/",
+   "source": "addyosmani",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Human judgment doesn't leave the software factory. It relocates.",
+   "url": "https://addyosmani.com/blog/human-judgment-doesnt-leave-the-software/",
+   "source": "addyosmani",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Practical Loop Engineering",
+   "url": "https://addyosmani.com/blog/practical-loop-engineering/",
+   "source": "addyosmani",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Agentic Code Quality",
+   "url": "https://addyosmani.com/blog/agentic-code-quality/",
+   "source": "addyosmani",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Software Factories, Light and Dark",
+   "url": "https://addyosmani.com/blog/software-factories/",
+   "source": "addyosmani",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Own the Outer Loop",
+   "url": "https://addyosmani.com/blog/own-the-outer-loop/",
+   "source": "addyosmani",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Earning taste and judgment",
+   "url": "https://addyosmani.com/blog/earning-judgment/",
+   "source": "addyosmani",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Agent-Era Career",
+   "url": "https://addyosmani.com/blog/career-advice-age-of-agents/",
+   "source": "addyosmani",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
   {
    "title": "Speeding Up Our Build Pipelines",
    "url": "https://agis.io/post/speeding-up-builds/",
@@ -2342,6 +2441,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "JetStream 3: A modern benchmark for high-performance, compute-intensive Web applications",
+   "url": "http://blog.chromium.org/2026/03/jetstream-3-a-modern-benchmark.html",
+   "source": "blogchromium",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Android Sets New Record for Mobile Web Performance",
+   "url": "http://blog.chromium.org/2026/03/android-sets-new-record-for-mobile-web.html",
+   "source": "blogchromium",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bringing Chrome to ARM64 Linux Devices",
+   "url": "http://blog.chromium.org/2026/03/bringing-chrome-to-arm64-linux-devices.html",
+   "source": "blogchromium",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reducing notification overload for a quieter browsing experience in Chrome",
+   "url": "http://blog.chromium.org/2025/10/automatic-notification-permission.html",
+   "source": "blogchromium",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Skia Graphite: Chrome's rasterization backend for the future",
+   "url": "http://blog.chromium.org/2025/07/introducing-skia-graphite-chromes.html",
+   "source": "blogchromium",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chrome achieves highest score ever on Speedometer 3.1, saving users millions of hours",
+   "url": "http://blog.chromium.org/2025/06/chrome-achieves-highest-score-ever-on.html",
+   "source": "blogchromium",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fighting Unwanted Notifications with Machine Learning in Chrome",
+   "url": "http://blog.chromium.org/2025/05/fighting-unwanted-notifications-with.html",
+   "source": "blogchromium",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Supporters of Chromium-based Browsers",
+   "url": "http://blog.chromium.org/2025/01/announcing-supporters-of-chromium-based.html",
+   "source": "blogchromium",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making Chrome QUICer",
+   "url": "http://blog.chromium.org/2024/12/making-chrome-quicer.html",
+   "source": "blogchromium",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Chrome doubled its Speedometer scores on Android",
+   "url": "http://blog.chromium.org/2024/12/doubling-speedometer-scores-android.html",
+   "source": "blogchromium",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Seamlessly use your passwords and addresses in Chrome across all devices",
+   "url": "http://blog.chromium.org/2024/08/seamlessly-use-your-passwords-and.html",
+   "source": "blogchromium",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a faster, smarter, Chromebook experience with the best of Google technologies",
+   "url": "http://blog.chromium.org/2024/06/building-faster-smarter-chromebook.html",
+   "source": "blogchromium",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Chrome achieved the highest score ever on Speedometer 3",
+   "url": "http://blog.chromium.org/2024/06/how-chrome-achieved-highest-score-ever.html",
+   "source": "blogchromium",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Shared Memory Versioning to improve slow interactions",
+   "url": "http://blog.chromium.org/2024/06/introducing-shared-memory-versioning-to.html",
+   "source": "blogchromium",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Manifest V2 phase-out begins",
+   "url": "http://blog.chromium.org/2024/05/manifest-v2-phase-out-begins.html",
+   "source": "blogchromium",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Deconstructing these auto-generated OG images",
    "url": "https://www.bobmonsour.com/blog/deconstructing-these-auto-generated-og-images/",
    "source": "bobmonsour",
@@ -2786,6 +3005,126 @@
    "url": "https://dynamicland.org/2024/Computational_Public_Space/",
    "source": "bret",
    "rank": 11,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10 More Things I Wish Every Design Student Knew",
+   "url": "https://cameronmoll.com/journal/10-more-things-every-design-student-should-know",
+   "source": "cameronmoll",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Repeating \"after this week things will slow down\" until you die, and tips for fixing it.",
+   "url": "https://cameronmoll.com/journal/after-this-week-things-will-slow-down-a-bit",
+   "source": "cameronmoll",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Design's knowledge-application gap",
+   "url": "https://cameronmoll.com/journal/design-knowledge-application-gap",
+   "source": "cameronmoll",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The job seeker 10-second rule of thumb",
+   "url": "https://cameronmoll.com/journal/10-seconds-to-leave-your-mark-as-a-candidate",
+   "source": "cameronmoll",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Who's left to be experts on design?",
+   "url": "https://cameronmoll.com/journal/who-s-left-to-be-experts-on-design",
+   "source": "cameronmoll",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "“Be the leader you wish you had.”",
+   "url": "https://cameronmoll.com/journal/be-the-leader-you-wish-you-had",
+   "source": "cameronmoll",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "10 pro tips for hiring managers",
+   "url": "https://cameronmoll.com/journal/10-pro-tips-for-hiring-managers",
+   "source": "cameronmoll",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Just a reminder",
+   "url": "https://cameronmoll.com/journal/signup-sign-up",
+   "source": "cameronmoll",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Like a lamb to the AI slaughter",
+   "url": "https://cameronmoll.com/journal/like-a-lamb-to-the-ai-slaughter",
+   "source": "cameronmoll",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fonts I've fallen in love with recently",
+   "url": "https://cameronmoll.com/journal/fonts-in-love-with-recently",
+   "source": "cameronmoll",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Business needs, customer needs, and a Sam's Club milk jug",
+   "url": "https://cameronmoll.com/journal/business-needs-vs-customer-needs-samsclub-milk",
+   "source": "cameronmoll",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Podcast Standards Project",
+   "url": "https://cameronmoll.com/journal/the-podcast-standards-project",
+   "source": "cameronmoll",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My problem-solving process in a nutshell",
+   "url": "https://cameronmoll.com/journal/my-problem-solving-process-in-a-nutshell",
+   "source": "cameronmoll",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Putting the kibosh on UI vs. UX",
+   "url": "https://cameronmoll.com/journal/putting-the-kibosh-on-ui-vs-ux",
+   "source": "cameronmoll",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"What if\" time",
+   "url": "https://cameronmoll.com/journal/what-if-time",
+   "source": "cameronmoll",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -3522,6 +3861,86 @@
    "url": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
    "source": "cloudflare",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Safer Internet Day and Open Source Codes of Conduct",
+   "url": "https://code.flickr.net/2022/02/14/safer-internet-day-and-open-source-codes-of-conduct/",
+   "source": "codeflickr",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Pluggable Solution for API Observability on our PHP System",
+   "url": "https://code.flickr.net/2022/01/04/a-pluggable-solution-for-api-observability-on-our-php-system/",
+   "source": "codeflickr",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Flickr Engineering Team Vision & Guiding Principles",
+   "url": "https://code.flickr.net/2021/11/22/flickr-engineering-team-vision-guiding-principles/",
+   "source": "codeflickr",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Together",
+   "url": "https://code.flickr.net/2018/04/20/together/",
+   "source": "codeflickr",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Similarity Search at Flickr",
+   "url": "https://code.flickr.net/2017/03/07/introducing-similarity-search-at-flickr/",
+   "source": "codeflickr",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Year Without a Byte",
+   "url": "https://code.flickr.net/2017/01/05/a-year-without-a-byte/",
+   "source": "codeflickr",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Personalized Group Recommendations on Flickr",
+   "url": "https://code.flickr.net/2016/09/30/personalized-group-recommendations-on-flickr/",
+   "source": "codeflickr",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We Want You… and Your Teammates",
+   "url": "https://code.flickr.net/2016/05/11/we-want-you-and-your-teammates/",
+   "source": "codeflickr",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing yakbak: Record and playback HTTP interactions in NodeJS",
+   "url": "https://code.flickr.net/2016/04/25/introducing-yakbak-record-and-playback-http-interactions-in-nodejs/",
+   "source": "codeflickr",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Our Justified Layout Goes Open Source",
+   "url": "https://code.flickr.net/2016/04/05/our-justified-layout-goes-open-source/",
+   "source": "codeflickr",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -4574,12 +4993,172 @@
    "metric": "feed rank"
   },
   {
+   "title": "Roonomics: How Economics Helped Us to Build a Churn Prediction Model",
+   "url": "https://deliveroo.engineering/2026/09/22/roonomics-how-economics-helped-us-to-build-a-churn-prediction-model.html",
+   "source": "deliverooengineering",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unlocking AI innovation through automated governance",
+   "url": "https://deliveroo.engineering/2026/02/27/unlocking-ai-innovation-through-automated-governance.html",
+   "source": "deliverooengineering",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "De-mystifying AI Agent Applications",
+   "url": "https://deliveroo.engineering/2026/02/16/demystifying-ai-agents.html",
+   "source": "deliverooengineering",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Engineering at Deliveroo India: How We Build, Collaborate, and Grow",
+   "url": "https://deliveroo.engineering/2025/11/06/engineering-at-deliveroo-india.html",
+   "source": "deliverooengineering",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cost Optimisation in ECS: Integrating Spot Instances at Scale",
+   "url": "https://deliveroo.engineering/2025/09/12/cost-optimisation-in-ecs.html",
+   "source": "deliverooengineering",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deliveroo's Machine Learning Platform: Powering the Future of ML",
+   "url": "https://deliveroo.engineering/2025/07/02/deliveroo-ml-platform.html",
+   "source": "deliverooengineering",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Antonio Troina: My Journey So Far as a Senior Staff Software Engineer",
+   "url": "https://deliveroo.engineering/2025/03/24/my-journey-so-far-as-a-senior-staff-engineer.html",
+   "source": "deliverooengineering",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Women in Tech presents: Roo Tech Showcase",
+   "url": "https://deliveroo.engineering/2025/03/13/roo-tech-showcase-blog.html",
+   "source": "deliverooengineering",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Gina Wiley: My Journey So Far as a Senior Engineering Manager",
+   "url": "https://deliveroo.engineering/2025/02/20/my-journey-so-far.html",
+   "source": "deliverooengineering",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deliveroo experimentation principles",
+   "url": "https://deliveroo.engineering/2025/02/06/experimentation-principles.html",
+   "source": "deliverooengineering",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Meet type-tune! 🦀 Give Your TypeScript Types a Better Home! 😸",
    "url": "https://dev.to/necoz/meet-type-tune-give-your-typescript-types-a-better-home-1p6l",
    "source": "devto",
    "rank": 9,
    "score": 109,
    "metric": "reactions"
+  },
+  {
+   "title": "My new project: Ride Earth",
+   "url": "http://dewith.com/2015/my-new-project-ride-earth/",
+   "source": "dewith",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GMUNK + Eric Prydz: Generate",
+   "url": "http://dewith.com/2015/gmunk-eric-prydz-generate/",
+   "source": "dewith",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Muir: the Master Collection",
+   "url": "http://dewith.com/2015/muir-the-master-collection/",
+   "source": "dewith",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Muir: Yosemite Icons, Volume III",
+   "url": "http://dewith.com/2015/muir-yosemite-icons-volume-iii/",
+   "source": "dewith",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Photos: Firewatch at GDC",
+   "url": "http://dewith.com/2015/photos-firewatch-at-gdc/",
+   "source": "dewith",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pokémon as Brands",
+   "url": "http://dewith.com/2015/pokemon-as-brands/",
+   "source": "dewith",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Build",
+   "url": "http://dewith.com/2015/the-build/",
+   "source": "dewith",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Muir 5K wallpapers",
+   "url": "http://dewith.com/2014/muir-5k-wallpapers/",
+   "source": "dewith",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Muir: Yosemite Icons, Volume II",
+   "url": "http://dewith.com/2014/muir-yosemite-icons-volume-ii/",
+   "source": "dewith",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Muir: Yosemite Creative Suite Icons",
+   "url": "http://dewith.com/2014/muir-yosemite-creative-suite-icons/",
+   "source": "dewith",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
   },
   {
    "title": "Postgres logical replication beyond one writer",
@@ -5018,6 +5597,22 @@
    "url": "https://dropbox.tech/security/dropbox-mcp-dash-design-code-security",
    "source": "dropbox",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "1000 threads catwalk gala",
+   "url": "https://dyskinetic.net/2026/06/19/1000-threads-catwalk-gala/",
+   "source": "dyskinetic",
+   "rank": 1,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The New Single – Centripetal",
+   "url": "https://dyskinetic.net/2025/09/09/the-new-single-centripetal/",
+   "source": "dyskinetic",
+   "rank": 2,
    "score": 1,
    "metric": "feed rank"
   },
@@ -5498,6 +6093,166 @@
    "url": "https://eugeneyan.com/speaking/nvidia-gtc-2025",
    "source": "eugeneyan",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Adam Grant on Friendship",
+   "url": "https://www.swiss-miss.com/2026/11/adam-grant-on-friendship.html",
+   "source": "feeds2feedburner",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stylescape Generator",
+   "url": "https://www.swiss-miss.com/2026/11/stylescape-generator.html",
+   "source": "feeds2feedburner",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Expectations",
+   "url": "https://www.swiss-miss.com/2026/11/expectations-4.html",
+   "source": "feeds2feedburner",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Archives.Design",
+   "url": "https://www.swiss-miss.com/2026/11/archives-design.html",
+   "source": "feeds2feedburner",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Draw.Horses",
+   "url": "https://www.swiss-miss.com/2026/11/draw-horses.html",
+   "source": "feeds2feedburner",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Beauty of a Lighter",
+   "url": "https://www.swiss-miss.com/2026/11/a-beauty-of-a-lighter.html",
+   "source": "feeds2feedburner",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Give Freely",
+   "url": "https://www.swiss-miss.com/2026/11/give-freely.html",
+   "source": "feeds2feedburner",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Available To Be Found",
+   "url": "https://www.swiss-miss.com/2026/10/available-to-be-found.html",
+   "source": "feeds2feedburner",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cooperation Over Competition",
+   "url": "https://www.swiss-miss.com/2026/10/cooperation-over-competition.html",
+   "source": "feeds2feedburner",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Light On",
+   "url": "https://www.swiss-miss.com/2026/10/light-on.html",
+   "source": "feeds2feedburner",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Universe Does Not Hand Us Meaning",
+   "url": "https://www.swiss-miss.com/2026/09/the-universe-does-not-hand-us-meaning.html",
+   "source": "feeds2feedburner",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Artist Guridi",
+   "url": "https://www.swiss-miss.com/2026/09/artist-guridi.html",
+   "source": "feeds2feedburner",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Assume misunderstanding",
+   "url": "https://www.swiss-miss.com/2026/09/assume-misunderstanding.html",
+   "source": "feeds2feedburner",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dumb Phone",
+   "url": "https://www.swiss-miss.com/2026/09/dumb-phone.html",
+   "source": "feeds2feedburner",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Quiet Grief of Adult Friendship",
+   "url": "https://www.swiss-miss.com/2026/08/the-quiet-grief-of-adult-friendship.html",
+   "source": "feeds2feedburner",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Progress update",
+   "url": "https://rocketgems.com/blog/may-2022-progress/",
+   "source": "fetchrss",
+   "rank": 1,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "It's been a while",
+   "url": "https://rocketgems.com/blog/while-loop/",
+   "source": "fetchrss",
+   "rank": 2,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Next steps",
+   "url": "https://rocketgems.com/blog/next-steps/",
+   "source": "fetchrss",
+   "rank": 3,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Selling a Micro-SaaS on MicroAcquire",
+   "url": "https://rocketgems.com/blog/selling-screenjar/",
+   "source": "fetchrss",
+   "rank": 4,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Integrating Screenjar with Help Scout",
+   "url": "https://rocketgems.com/blog/integrating-screenjar-with-help-scout/",
+   "source": "fetchrss",
+   "rank": 5,
    "score": 1,
    "metric": "feed rank"
   },
@@ -6982,6 +7737,94 @@
    "metric": "points"
   },
   {
+   "title": "The Hypertext Transfer Protocol Status Code 483 (I'm Not a Freezer)",
+   "url": "https://datatracker.ietf.org/doc/draft-banffy-httpbis-not-a-freezer/",
+   "source": "hackernews",
+   "rank": 20,
+   "score": 53,
+   "metric": "points"
+  },
+  {
+   "title": "Debugging my new network, when 10 Gigabit Ethernet Runs at 300 Megabits",
+   "url": "http://feeds.hanselman.com/~/968351264/0/scotthanselman~Debugging-my-new-network-when-Gigabit-Ethernet-Runs-at-Megabits",
+   "source": "hanselman",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Migrating a Synology NAS to a UniFi UNAS Pro 8 with Robocopy, SMB Multichannel, and Surprising Performance Traps",
+   "url": "http://feeds.hanselman.com/~/968151545/0/scotthanselman~Migrating-a-Synology-NAS-to-a-UniFi-UNAS-Pro-with-Robocopy-SMB-Multichannel-and-Surprising-Performance-Traps",
+   "source": "hanselman",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is the craft dead?",
+   "url": "http://feeds.hanselman.com/~/945480746/0/scotthanselman~Is-the-craft-dead",
+   "source": "hanselman",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The danger of glamourizing one shots",
+   "url": "http://feeds.hanselman.com/~/945480803/0/scotthanselman~The-danger-of-glamourizing-one-shots",
+   "source": "hanselman",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Automatically Signing a Windows EXE with Azure Trusted Signing, dotnet sign, and GitHub Actions",
+   "url": "http://feeds.hanselman.com/~/930373259/0/scotthanselman~Automatically-Signing-a-Windows-EXE-with-Azure-Trusted-Signing-dotnet-sign-and-GitHub-Actions",
+   "source": "hanselman",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Webcam randomly pausing in OBS, Discord, and websites - LSVCam and TikTok Studio",
+   "url": "http://feeds.hanselman.com/~/905963465/0/scotthanselman~Webcam-randomly-pausing-in-OBS-Discord-and-websites-LSVCam-and-TikTok-Studio",
+   "source": "hanselman",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Open Sourcing DOS 4",
+   "url": "http://feeds.hanselman.com/~/882544025/0/scotthanselman~Open-Sourcing-DOS",
+   "source": "hanselman",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Updating to .NET 8, updating to IHostBuilder, and running Playwright Tests within NUnit headless or headed on any OS",
+   "url": "http://feeds.hanselman.com/~/873234002/0/scotthanselman~Updating-to-NET-updating-to-IHostBuilder-and-running-Playwright-Tests-within-NUnit-headless-or-headed-on-any-OS",
+   "source": "hanselman",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using WSL and Let's Encrypt to create Azure App Service SSL Wildcard Certificates",
+   "url": "http://feeds.hanselman.com/~/749206136/0/scotthanselman~Using-WSL-and-Lets-Encrypt-to-create-Azure-App-Service-SSL-Wildcard-Certificates",
+   "source": "hanselman",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GitHub Copilot for CLI for PowerShell",
+   "url": "http://feeds.hanselman.com/~/737271731/0/scotthanselman~GitHub-Copilot-for-CLI-for-PowerShell",
+   "source": "hanselman",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "30 years of Internet transfers with curl",
    "url": "https://daniel.haxx.se/blog/2026/11/11/30-years-of-internet-transfers-with-curl/",
    "source": "haxx",
@@ -7822,6 +8665,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Mobile Web Performance Auditing",
+   "url": "https://www.youtube.com/watch?v=WrA85a4ZIaM",
+   "source": "jankfree",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS Triggers by Paul Lewis",
+   "url": "http://csstriggers.com",
+   "source": "jankfree",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Jank Busting, HTML5 Dev Conf 2014",
+   "url": "https://docs.google.com/a/chromium.org/presentation/d/1b82w3zZwAxV4h6bV35zCTMIUesglBmd59QNS-omXn4Q/",
+   "source": "jankfree",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chrome Dev Summit 2013: 60FPS Layout and Rendering",
+   "url": "https://www.youtube.com/watch?v=YyQYhhy1dZI",
+   "source": "jankfree",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "#perfmatters: 60FPS Layout and Rendering",
+   "url": "https://docs.google.com/presentation/d/1CH8ifryioHDLT1Oryyy8amusUmq2FytpCPCpk0G3E4o/edit#slide=id.p",
+   "source": "jankfree",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSSConf 2013: Jank Busting",
+   "url": "http://www.youtube.com/watch?v=n8ep4leoN9A",
+   "source": "jankfree",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Runtime Performance Checklist",
+   "url": "http://calendar.perfplanet.com/2013/the-runtime-performance-checklist/",
+   "source": "jankfree",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tip, \"Rendering\" recently moved in Dev Tools!",
+   "url": "https://plus.google.com/116853723811027299597/posts/7dFvx8BLiY7",
+   "source": "jankfree",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting 60 FPS using Chrome devtools",
+   "url": "http://engineering.wingify.com/posts/getting-60fps-using-devtools/",
+   "source": "jankfree",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fixing :hover jank",
+   "url": "https://plus.google.com/+MalteUbl/posts/NsyYKenqYNP",
+   "source": "jankfree",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Touch events community wiki",
+   "url": "http://www.w3.org/community/touchevents/wiki/Main_Page",
+   "source": "jankfree",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Velocity Europe: Rendering Performance Case Studies",
+   "url": "https://speakerdeck.com/addyosmani/velocityconf-rendering-performance-case-studies",
+   "source": "jankfree",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "#perfmatters: Performance Tooling",
+   "url": "https://docs.google.com/a/google.com/presentation/d/19R_E5B__kdE55L1bTpS6IFKbYbHq-PQKKky4do5Yc6A/edit#slide=id.g105c64d69_170",
+   "source": "jankfree",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "High Performance Animations",
+   "url": "http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/",
+   "source": "jankfree",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using classList for Great Good",
+   "url": "http://www.youtube.com/watch?v=hZJacl2VkKo",
+   "source": "jankfree",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Whoops, I context-switched one too many times",
    "url": "https://jesseduffield.com/Whoops-I-context-switched-one-too-many-times/",
    "source": "jesseduffield",
@@ -8158,6 +9121,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "Learn about open-source Protomaps in my updated map class",
+   "url": "https://johnkeefe.net/learn-about-open-source-protomaps-in-my-updated-map-class",
+   "source": "johnkeefe",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New online class: Mapmaking for journalists",
+   "url": "https://johnkeefe.net/new-online-class-mapmaking-for-journalists",
+   "source": "johnkeefe",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sharing NYC Police Precinct Data",
+   "url": "https://johnkeefe.net/nyc-police-precinct-and-census-data",
+   "source": "johnkeefe",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Covid cases, animated",
+   "url": "https://johnkeefe.net/covid-cases-animated",
+   "source": "johnkeefe",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Make Every Week returns",
+   "url": "https://johnkeefe.net/make-every-week-returns",
+   "source": "johnkeefe",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Taking time to build a triangle-grid clock",
+   "url": "https://johnkeefe.net/taking-time-to-build-a-triangle-gird-clock",
+   "source": "johnkeefe",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is it Monday? My Pi has the answer",
+   "url": "https://johnkeefe.net/is-it-monday-my-pi-has-the-answer",
+   "source": "johnkeefe",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Drawing arcs of circles",
+   "url": "https://johnkeefe.net/drawing-arcs-of-circles",
+   "source": "johnkeefe",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Printing a pumpkin",
+   "url": "https://johnkeefe.net/printing-a-pumpkin",
+   "source": "johnkeefe",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Modeling the 2020 vote with Observable",
+   "url": "https://johnkeefe.net/modeling-2020-voting-by-turnout-with-observable",
+   "source": "johnkeefe",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minneapolis race and ethnicity data by neighborhood, served with Datasette",
+   "url": "https://johnkeefe.net/minneapolis-race-and-ethnicity-data-by-neighborhood-served-with-datasette",
+   "source": "johnkeefe",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Race and ethnicity data by Washington DC police zones",
+   "url": "https://johnkeefe.net/race-and-ethnicity-data-by-washington-dc-police-zones",
+   "source": "johnkeefe",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chicago race and ethnicity data by police district",
+   "url": "https://johnkeefe.net/chicago-race-and-ethnicity-data-by-police-district",
+   "source": "johnkeefe",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lockdown loaves",
+   "url": "https://johnkeefe.net/lockdown-loaves",
+   "source": "johnkeefe",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a pulse oximeter",
+   "url": "https://johnkeefe.net/building-a-pulse-oximeter",
+   "source": "johnkeefe",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "",
    "url": "https://justinpot.com/47999-2/",
    "source": "justinpot",
@@ -8434,6 +9517,126 @@
    "url": "https://www.dnalounge.com/backstage/log/2026/10/23.html",
    "source": "jwz",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Studio Display XDR vs Pro Display XDR",
+   "url": "https://karbonbased.io/posts/2026/03/studio-display-xdr-vs-pro-display-xdr",
+   "source": "karbonbased",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Betting on Bungie",
+   "url": "https://karbonbased.io/posts/2026/03/betting-on-bungie",
+   "source": "karbonbased",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sixteen",
+   "url": "https://karbonbased.io/posts/2026/03/sixteen",
+   "source": "karbonbased",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Welcome (back) to Macintosh",
+   "url": "https://karbonbased.io/posts/2026/03/welcome-back-to-macintosh-take",
+   "source": "karbonbased",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TextEdit and the Relief of Simple Software",
+   "url": "https://karbonbased.io/posts/2026/01/textedit-and-the-relief-of-simple-software",
+   "source": "karbonbased",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Grabbing Air",
+   "url": "https://karbonbased.io/posts/2026/01/grabbing-air",
+   "source": "karbonbased",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Follow-ups to ‘And Stay Out’",
+   "url": "https://karbonbased.io/posts/2026/01/follow-ups-to-and-stay-out",
+   "source": "karbonbased",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "And Stay Out",
+   "url": "https://karbonbased.io/posts/2025/12/and-stay-out",
+   "source": "karbonbased",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Try This Software: DaftMusic",
+   "url": "https://karbonbased.io/posts/2025/12/try-this-software-daftmusic",
+   "source": "karbonbased",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple Gave Vision Pro Two Big Upgrades",
+   "url": "https://karbonbased.io/posts/2025/11/apple-gave-vision-pro-two-big-upgrades",
+   "source": "karbonbased",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inspiration: 14 March 2025",
+   "url": "https://karbonbased.io/posts/2025/03/inspiration-031425",
+   "source": "karbonbased",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inspiration: 9 December 2024",
+   "url": "https://karbonbased.io/posts/2024/12/inspiration-120924",
+   "source": "karbonbased",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We Failed",
+   "url": "https://karbonbased.io/posts/2024/11/we-failed",
+   "source": "karbonbased",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inspiration: 14 August 2024",
+   "url": "https://karbonbased.io/posts/2024/08/inspiration-081424",
+   "source": "karbonbased",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inspiration: 26 January 2024",
+   "url": "https://karbonbased.io/posts/2024/01/inspiration-012624",
+   "source": "karbonbased",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -8818,6 +10021,54 @@
    "url": "https://kentcdodds.com/blog/2023-in-review",
    "source": "kentcdodds",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The month in abandoned charts",
+   "url": "http://kpq.github.io/chartsnthings/2014/05/loose-sketches.html",
+   "source": "kpqgithub",
+   "rank": 1,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A rough couple weeks.",
+   "url": "http://kpq.github.io/chartsnthings/2014/04/rough.html",
+   "source": "kpqgithub",
+   "rank": 2,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Not close.",
+   "url": "http://kpq.github.io/chartsnthings/2014/03/jumble.html",
+   "source": "kpqgithub",
+   "rank": 3,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dots.",
+   "url": "http://kpq.github.io/chartsnthings/2014/03/dots.html",
+   "source": "kpqgithub",
+   "rank": 4,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A New RSS Link",
+   "url": "http://kpq.github.io/chartsnthings/2014/03/new-rss-link.html",
+   "source": "kpqgithub",
+   "rank": 5,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NYT 4th Down Bot",
+   "url": "http://kpq.github.io/chartsnthings/2014/03/nyt-4th-down-bot-goes-back-in-the-box.html",
+   "source": "kpqgithub",
+   "rank": 6,
    "score": 1,
    "metric": "feed rank"
   },
@@ -9674,6 +10925,126 @@
    "url": "https://eng.lyft.com/beyond-a-b-testing-using-surrogacy-and-region-splits-to-measure-long-term-effects-in-marketplaces-9cb06d628f2d?source=rss----25cd379abb8---4",
    "source": "lyft",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple Aiming to Upgrade the iPhone Duo in Four Ways",
+   "url": "https://www.macrumors.com/2026/11/15/apple-aims-to-upgrade-iphone-duo-in-four-ways/",
+   "source": "macrumors",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple Black Friday Starts Early: Save on Apple Watch, MacBook Air, and More",
+   "url": "https://www.macrumors.com/2026/11/14/early-apple-black-friday-deals-2/",
+   "source": "macrumors",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Top Stories: Apple's New Software Approach, iPhone Duo-Optimized Apps, and More",
+   "url": "https://www.macrumors.com/2026/11/14/top-stories-apple-new-software-approach/",
+   "source": "macrumors",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HomeView Tidbits: Mirror, Sleep Timer, and Other Details",
+   "url": "https://www.macrumors.com/2026/11/13/homeview-tidbits-2/",
+   "source": "macrumors",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Siri AI Still Not Enabled on HomePod Mini 2 With Latest Software Update",
+   "url": "https://www.macrumors.com/2026/11/13/homepod-mini-2-still-lacks-siri-ai/",
+   "source": "macrumors",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple Releases tvOS 27.2.1 With Siri AI for Older Apple TVs",
+   "url": "https://www.macrumors.com/2026/11/13/apple-releases-tvos-27-2-1/",
+   "source": "macrumors",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Microsoft 365 Outage Resolving After Nearly 24 Hours",
+   "url": "https://www.macrumors.com/2026/11/13/microsoft-365-outage-resolving/",
+   "source": "macrumors",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iPhone Duo Survives 450,000 Folds, but Hinge is Weakening",
+   "url": "https://www.macrumors.com/2026/11/13/iphone-duo-fold-testing/",
+   "source": "macrumors",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple TV 4K Launch Day Deal Arrives at Amazon",
+   "url": "https://www.macrumors.com/2026/11/13/apple-tv-4k-launch-day-deal/",
+   "source": "macrumors",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The MacRumors Show: HomeView and Apple TV 4K First Impressions",
+   "url": "https://www.macrumors.com/2026/11/13/the-macrumors-show-homeview-first-impressions/",
+   "source": "macrumors",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "YouTube App Not Working on Your New Apple TV? Here's the Fix",
+   "url": "https://www.macrumors.com/2026/11/13/youtube-app-apple-tv-not-working-fix/",
+   "source": "macrumors",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple Meets Thai Officials Over iPhone Spyware Warnings",
+   "url": "https://www.macrumors.com/2026/11/13/apple-thailand-spyware-warnings/",
+   "source": "macrumors",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple Shares HomeView 27.2 Release Notes With List of Features",
+   "url": "https://www.macrumors.com/2026/11/13/apple-shares-homeview-27-2-release-notes/",
+   "source": "macrumors",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HomeView in Québec: Apple Says Canadian French Support to Arrive in Software Update",
+   "url": "https://www.macrumors.com/2026/11/13/homeview-quebec-canadian-french/",
+   "source": "macrumors",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple Watch Ultra 3 Gets Big $250 Discounts Ahead of Black Friday",
+   "url": "https://www.macrumors.com/2026/11/13/apple-watch-ultra-3-250-off/",
+   "source": "macrumors",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -11934,6 +13305,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "A year with WurQ",
+   "url": "https://perfectionkills.com/a-year-with-wurq/",
+   "source": "perfectionkills",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tetris, not U-turns",
+   "url": "https://perfectionkills.com/tetris-not-u-turns/",
+   "source": "perfectionkills",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Great Experiment",
+   "url": "https://perfectionkills.com/the-great-experiment/",
+   "source": "perfectionkills",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How do you rank in your CrossFit box?",
+   "url": "https://perfectionkills.com/how-do-you-rank-in-your-crossfit-box/",
+   "source": "perfectionkills",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughts on first XENOM in Dallas",
+   "url": "https://perfectionkills.com/thoughts-on-first-xenom-in-dallas/",
+   "source": "perfectionkills",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your CrossFit App Doesn’t Know What You Did",
+   "url": "https://perfectionkills.com/your-crossfit-app-doesnt-know-what-you-did/",
+   "source": "perfectionkills",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CrossFit training in the age of AI",
+   "url": "https://perfectionkills.com/crossfit-training-in-the-age-of-ai/",
+   "source": "perfectionkills",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Overnight success",
+   "url": "https://perfectionkills.com/overnight-success/",
+   "source": "perfectionkills",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s my XENOM score?",
+   "url": "https://perfectionkills.com/whats-my-xenom-score/",
+   "source": "perfectionkills",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reflections on training, 2025 → ‘26",
+   "url": "https://perfectionkills.com/reflections-on-training-2025-26/",
+   "source": "perfectionkills",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Building AI Products—Part II: Task-Oriented vs. Component-Oriented Pipelines",
    "url": "http://philcalcado.com/2025/03/14/building-ai-products-part-ii.html",
    "source": "philcalcado",
@@ -12330,6 +13781,86 @@
    "url": "https://blog.pragmaticengineer.com/the-pulse-bending-spoons-acquisition-strategy/",
    "source": "pragmatic",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Incident Report: August 11, 2026",
+   "url": "https://product.hubspot.com/blog/incident-report-august-11-2026",
+   "source": "producthubspot",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From Data Silos to Feature Serving: How We Unified Fragmented Data for Training, Inference, and Reuse",
+   "url": "https://product.hubspot.com/blog/from-data-silos-to-feature-serving-how-we-unified-fragmented-data-for-training-inference-and-reuse",
+   "source": "producthubspot",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hedging Erasure-Coded Reads in HDFS",
+   "url": "https://product.hubspot.com/blog/hedging-erasure-coded-reads-in-hdfs",
+   "source": "producthubspot",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Incident Report: July 22, 2026",
+   "url": "https://product.hubspot.com/blog/incident-report-july-22-2026",
+   "source": "producthubspot",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building Observable Access Control at Scale: A Rule Engine Approach to JITA",
+   "url": "https://product.hubspot.com/blog/building-observable-access-control-at-scale-a-rule-engine-approach-to-jita",
+   "source": "producthubspot",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building the AI Retrieval Infrastructure Behind 20 Billion+ Vectors at HubSpot",
+   "url": "https://product.hubspot.com/blog/building-the-ai-retrieval-infrastructure-behind-20-billion-vectors-at-hubspot",
+   "source": "producthubspot",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HubSpot Incident Report: February 25, 2026",
+   "url": "https://product.hubspot.com/blog/hubspot-incident-report-february-25-2026",
+   "source": "producthubspot",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Automated Code Review: The 6-Month Evolution",
+   "url": "https://product.hubspot.com/blog/automated-code-review-the-6-month-evolution",
+   "source": "producthubspot",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cloud Coding Agents at HubSpot",
+   "url": "https://product.hubspot.com/blog/cloud-coding-agents-at-hubspot",
+   "source": "producthubspot",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Moving Mountains: How We Migrated from Enzyme to React Testing Library",
+   "url": "https://product.hubspot.com/blog/migrated-from-enzyme-to-react-testing-library",
+   "source": "producthubspot",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -13154,6 +14685,86 @@
    "url": "https://rauchg.com/2014/7-principles-of-rich-web-applications",
    "source": "rauchg",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AMP and Responsive Web Design",
+   "url": "https://responsivenews.co.uk/post/131144968568/amp-and-responsive-web-design",
+   "source": "responsivenewsco",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "13 tips for making responsive web design multi-lingual",
+   "url": "https://responsivenews.co.uk/post/123104512468/13-tips-for-making-responsive-web-design-multi-lingual",
+   "source": "responsivenewsco",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Does Facebook Instant Articles really threaten the web?",
+   "url": "https://responsivenews.co.uk/post/119275127613/does-facebook-instant-articles-really-threaten-the-web",
+   "source": "responsivenewsco",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We’ve made it.",
+   "url": "https://responsivenews.co.uk/post/114413142693/weve-made-it",
+   "source": "responsivenewsco",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a responsive SVG map",
+   "url": "https://responsivenews.co.uk/post/87988072178/building-a-responsive-svg-map",
+   "source": "responsivenewsco",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How the BBC should practice Responsive Web Design",
+   "url": "https://responsivenews.co.uk/post/79348308126/how-the-bbc-should-practice-responsive-web-design",
+   "source": "responsivenewsco",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Responsive infographics workflow: the “datapic”",
+   "url": "https://responsivenews.co.uk/post/77054578784/responsive-infographics-workflow-the-datapic",
+   "source": "responsivenewsco",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ask us!",
+   "url": "https://responsivenews.co.uk/post/74712192451/ask-us",
+   "source": "responsivenewsco",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A year as an undergraduate web developer at the BBC",
+   "url": "https://responsivenews.co.uk/post/73503438345/a-year-as-an-undergraduate-web-developer-at-the",
+   "source": "responsivenewsco",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Responsive iFrames",
+   "url": "https://responsivenews.co.uk/post/71845174511/responsive-iframes",
+   "source": "responsivenewsco",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -14321,6 +15932,126 @@
    "title": "llm-anthropic 0.31",
    "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
    "source": "simonw",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Studio Notes #110",
+   "url": "https://simplebits.com/n/studio-notes-110/",
+   "source": "simplebits",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Studio Notes #109",
+   "url": "https://simplebits.com/n/studio-notes-109/",
+   "source": "simplebits",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Studio Notes #108",
+   "url": "https://simplebits.com/n/studio-notes-108/",
+   "source": "simplebits",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Studio Notes #107",
+   "url": "https://simplebits.com/n/studio-notes-107/",
+   "source": "simplebits",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Studio Notes #106",
+   "url": "https://simplebits.com/n/studio-notes-106/",
+   "source": "simplebits",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Studio Notes #105",
+   "url": "https://simplebits.com/n/studio-notes-105/",
+   "source": "simplebits",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Studio Notes #104",
+   "url": "https://simplebits.com/n/studio-notes-104/",
+   "source": "simplebits",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Studio Notes #103",
+   "url": "https://simplebits.com/n/studio-notes-103/",
+   "source": "simplebits",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Studio Notes #102",
+   "url": "https://simplebits.com/n/studio-notes-102/",
+   "source": "simplebits",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Studio Notes #101",
+   "url": "https://simplebits.com/n/studio-notes-101/",
+   "source": "simplebits",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Studio Notes #100",
+   "url": "https://simplebits.com/n/studio-notes-100/",
+   "source": "simplebits",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Secret Livestream: August ’26",
+   "url": "https://simplebits.com/n/secret-livestream-august-26/",
+   "source": "simplebits",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Studio Notes #99",
+   "url": "https://simplebits.com/n/studio-notes-99/",
+   "source": "simplebits",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Studio Notes #98",
+   "url": "https://simplebits.com/n/studio-notes-98/",
+   "source": "simplebits",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An Update for Hubano",
+   "url": "https://simplebits.com/n/an-update-for-hubano/",
+   "source": "simplebits",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
