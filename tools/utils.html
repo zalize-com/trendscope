@@ -330,6 +330,23 @@ cherry"></textarea>
     <textarea id="uu-out" rows="6" style="width:100%" readonly></textarea>
   </div>
 
+  <div class="tool" data-tool="bytes">
+    <h2>file-size unit converter</h2>
+    <p class="hint">Bytes &harr; KB/MB/GB (SI 1000) &harr; KiB/MiB/GiB (IEC 1024), plus bit-rate.</p>
+    <p>
+      <input id="by-n" type="number" value="1.5" step="any" style="width:8em">
+      <select id="by-u">
+        <option value="1">B</option><option value="8">bit</option>
+        <option value="1e3">KB</option><option value="1024">KiB</option>
+        <option value="1e6">MB</option><option value="1048576">MiB</option>
+        <option value="1e9">GB</option><option value="1073741824">GiB</option>
+        <option value="1e12">TB</option><option value="1099511627776">TiB</option>
+      </select>
+      <button class="go" id="by-go">convert</button>
+    </p>
+    <div class="out" id="by-out"></div>
+  </div>
+
   <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
     Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
@@ -357,6 +374,7 @@ const TOOLS = [
   {id:"case",   label:"case converter"},
   {id:"sortlines",label:"sort & dedupe lines"},
   {id:"uuid",  label:"uuid v4 generator"},
+  {id:"bytes",label:"file-size converter"},
 ];
 const tabsEl = document.getElementById("tabs");
 tabsEl.innerHTML = TOOLS.map((t,i) =>
@@ -991,6 +1009,22 @@ document.getElementById('uu-copy').onclick=async()=>{
   await navigator.clipboard.writeText(document.getElementById('uu-out').value);
   document.getElementById('uu-copy').textContent='copied!';
   setTimeout(()=>document.getElementById('uu-copy').textContent='copy',1200);
+};
+
+// --- file-size unit converter ---
+document.getElementById('by-go').onclick=()=>{
+  const n=parseFloat(document.getElementById('by-n').value);
+  const u=parseFloat(document.getElementById('by-u').value);
+  if(!isFinite(n)){document.getElementById('by-out').textContent='enter a number';return;}
+  const bytes=n*u;
+  const fmt=(v,u)=>v.toLocaleString(undefined,{maximumFractionDigits:4})+' '+u;
+  const rows=[
+    ['B',fmt(bytes,'bytes')],
+    ['SI',fmt(bytes/1e3,'KB')+' · '+fmt(bytes/1e6,'MB')+' · '+fmt(bytes/1e9,'GB')+' · '+fmt(bytes/1e12,'TB')],
+    ['IEC',fmt(bytes/1024,'KiB')+' · '+fmt(bytes/1048576,'MiB')+' · '+fmt(bytes/1073741824,'GiB')+' · '+fmt(bytes/1099511627776,'TiB')],
+    ['bits',fmt(bytes*8,'bits')+' = '+fmt(bytes*8/1e6,'Mbit')+' = '+fmt(bytes*8/1e9,'Gbit')],
+  ];
+  document.getElementById('by-out').innerHTML=rows.map(r=>'<div><b>'+r[0]+'</b>: '+r[1]+'</div>').join('');
 };
 </script>
 </body>
