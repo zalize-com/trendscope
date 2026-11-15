@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T12:43:18.905601+00:00",
+ "generated_at": "2026-11-15T12:47:21.570046+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 643,
- "unique_urls": 506,
- "items_in_latest": 255,
- "items_per_day_avg": 71.4,
+ "total_rows": 653,
+ "unique_urls": 516,
+ "items_in_latest": 265,
+ "items_per_day_avg": 72.6,
  "sources": {
   "arstechnica": {
    "rows": 16,
@@ -36,6 +36,10 @@
   "hackernews": {
    "rows": 192,
    "days_active": 9
+  },
+  "krebs": {
+   "rows": 10,
+   "days_active": 1
   },
   "lemmy": {
    "rows": 15,
@@ -89,6 +93,10 @@
    "hits": 13
   },
   {
+   "domain": "krebsonsecurity.com",
+   "hits": 10
+  },
+  {
    "domain": "yro.slashdot.org",
    "hits": 4
   },
@@ -110,10 +118,6 @@
   },
   {
    "domain": "anthropic.com",
-   "hits": 3
-  },
-  {
-   "domain": "twitter.com",
    "hits": 3
   }
  ],
