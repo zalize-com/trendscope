@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T15:07:06.602962+00:00",
+ "generated_at": "2026-11-15T15:08:54.832336+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 1073,
- "unique_urls": 934,
- "items_in_latest": 665,
- "items_per_day_avg": 119.2,
+ "total_rows": 1083,
+ "unique_urls": 944,
+ "items_in_latest": 675,
+ "items_per_day_avg": 120.3,
  "sources": {
   "antirez": {
    "rows": 15,
@@ -123,6 +123,10 @@
   },
   "martinfowler": {
    "rows": 15,
+   "days_active": 1
+  },
+  "netflix": {
+   "rows": 10,
    "days_active": 1
   },
   "npm": {
