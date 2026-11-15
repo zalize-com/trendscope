@@ -23,7 +23,7 @@ One-pager for anyone writing about or linking to this project.
 | Hiring threads | Nov 2010 → now, 528 rows | `data/hiring-monthly.csv` |
 | Free tools | 82 | `tools/` |
 | API endpoints | 25 JSON/CSV/RSS lines | `docs/api.md` |
-| Embed modes | 25 (iframe card) + live gallery | `embed.html` / `embeds.html` |
+| Embed modes | 26 (iframe card) + live gallery | `embed.html` / `embeds.html` |
 | Static pages | 57 | sitemap.xml |
 
 ## What makes it different

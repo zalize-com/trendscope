@@ -193,6 +193,16 @@ if (MODE === "weekday") {
     }).join("") || `<li id="err">no weekday data</li>`;
   }).catch(() => { document.getElementById("err").textContent = "weekday data unavailable"; });
 } else
+if (MODE === "health") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/sources.html";
+  fetch("docs/api/sources.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const srcs = Object.entries(d.sources).slice(0, N);
+    document.getElementById("date").textContent = `source health · ${Object.keys(d.sources).length} sources · ${d.days_tracked}d tracked`;
+    document.getElementById("list").innerHTML = srcs.map(([name, v]) => {
+      return `<li><span><a href="https://zalize-com.github.io/trendscope/source.html?s=${encodeURIComponent(name)}" target="_blank" rel="noopener">${esc(name)}</a><span class="src">${v.items} items · median ${v.median_days_on_board}d on board</span></span><span class="score">${v.one_day_pct}% 1-day</span></li>`;
+    }).join("") || `<li id="err">no source data</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "sources data unavailable"; });
+} else
 if (MODE === "heatmap") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/heatmap.html";
   fetch("docs/api/weekday.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
