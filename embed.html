@@ -118,6 +118,17 @@ if (MODE === "hiring") {
       ${ratio ? `<li><span class="rank">≈</span><span>positions per seeker</span><span class="score">${ratio}</span></li>` : ""}`;
   }).catch(() => { document.getElementById("err").textContent = "hiring data unavailable"; });
 } else
+if (MODE === "discussed") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/discuss.html";
+  fetch("docs/api/discussed.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    document.getElementById("date").textContent = "most discussed · all snapshots";
+    document.getElementById("list").innerHTML = d.discussed.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · ${e.date}</span></span>
+        <span class="score">💬 ${fmt(e.comments)}</span></li>`).join("")
+      || `<li id="err">no discussed items yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "discussed data unavailable"; });
+} else
 if (MODE === "risers") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/risers.html";
   fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(text => {
