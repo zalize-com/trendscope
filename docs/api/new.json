@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T17:00:35.663008+00:00",
+ "generated_at": "2026-11-15T17:02:18.204140+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 3829,
- "new_items": 3703,
+ "total_items": 4065,
+ "new_items": 3939,
  "by_source": {
   "producthunt": 45,
   "show_hn": 39,
@@ -11,11 +11,11 @@
   "techmeme": 22,
   "slashdot": 19,
   "thenewstack": 17,
+  "theverge": 17,
   "arstechnica": 16,
   "daringfireball": 16,
   "gargron": 16,
   "lemmy": 16,
-  "theverge": 16,
   "100r": 15,
   "512pixels": 15,
   "9to5mac": 15,
@@ -97,11 +97,22 @@
   "codinghorror2": 15,
   "cppcast": 15,
   "cssirl": 15,
+  "csstricks": 15,
+  "culturedcode": 15,
+  "curiosum": 15,
   "d3noob": 15,
   "dabeaz": 15,
+  "danielcwilson": 15,
+  "danielfeldroy": 15,
   "danielmiessler": 15,
   "danluu": 15,
+  "dashbit": 15,
+  "datanewstumblr": 15,
   "daverupert": 15,
+  "deanebarker": 15,
+  "deathandgravity": 15,
+  "den": 15,
+  "dev37signals": 15,
   "dimitri": 15,
   "discord": 15,
   "drmaciver": 15,
@@ -220,9 +231,16 @@
   "cordcuttersnews": 10,
   "createaprowebsite": 10,
   "csaiot": 10,
+  "dannorris": 10,
   "deliverooengineering": 10,
+  "devblogsmicrosoft": 10,
+  "devcop": 10,
+  "developerchrome": 10,
+  "developsense": 10,
   "dewith": 10,
+  "diablohorn": 10,
   "dropbox": 10,
+  "effectivesoftwaredesign": 10,
   "freecodecamp": 10,
   "gds": 10,
   "github_eng": 10,
@@ -14213,6 +14231,366 @@
    "metric": "feed rank"
   },
   {
+   "title": "10 Big Ol’ 2027 Black Friday Deals",
+   "url": "https://css-tricks.com/2027-front-end-black-friday-deals/",
+   "source": "csstricks",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beyond 12 Columns: Designing Layouts With Personality",
+   "url": "https://css-tricks.com/beyond-12-columns/",
+   "source": "csstricks",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS Optimization: Is Using Declarations Just Once (UDJO) Still Effective Today?",
+   "url": "https://css-tricks.com/css-using-declarations-just-once/",
+   "source": "csstricks",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS-Tricks, Version 20",
+   "url": "https://css-tricks.com/css-tricks-version-20/",
+   "source": "csstricks",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RSS Club: CSS-Tricks Redesign Preview",
+   "url": "https://css-tricks.com/css-tricks-redesign-preview/",
+   "source": "csstricks",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Taming Typography: Building a Modern CSS Reset",
+   "url": "https://css-tricks.com/taming-typography-modern-css-reset/",
+   "source": "csstricks",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Smashing AI Conference",
+   "url": "https://css-tricks.com/smashing-ai-conference/",
+   "source": "csstricks",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Re-Implementing :nth-child() With Modern CSS",
+   "url": "https://css-tricks.com/re-implementing-nth-child-with-modern-css/",
+   "source": "csstricks",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s !important #20: GTA 6 Scroll Effects, Scrollspies, random()",
+   "url": "https://css-tricks.com/whats-important-20/",
+   "source": "csstricks",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Frankenstein Table",
+   "url": "https://css-tricks.com/the-frankenstein-table/",
+   "source": "csstricks",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s !important #19: CSS Refraction Effects, Scroll State Queries, @custom-media, and More",
+   "url": "https://css-tricks.com/whats-important-19/",
+   "source": "csstricks",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS-Tricks has a new owner!",
+   "url": "https://css-tricks.com/css-tricks-has-a-new-owner/",
+   "source": "csstricks",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Let’s Use the Emergent CSS random() Function in all the Browsers",
+   "url": "https://css-tricks.com/css-random-function-polyfill/",
+   "source": "csstricks",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s !important #18: <geolocation>, Syntax ::highlight()ing, named-feature(), and More",
+   "url": "https://css-tricks.com/whats-important-18/",
+   "source": "csstricks",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating Web Widgets Using the Document Picture-in-Picture API",
+   "url": "https://css-tricks.com/creating-web-widgets-using-the-document-picture-in-picture-api/",
+   "source": "csstricks",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hello Duo 👋",
+   "url": "https://culturedcode.com/things/blog/2026/10/hello-duo/",
+   "source": "culturedcode",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things for OS 27 and Siri AI",
+   "url": "https://culturedcode.com/things/blog/2026/09/things-for-os-27-and-siri-ai/",
+   "source": "culturedcode",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Repeating To-Dos, Refined",
+   "url": "https://culturedcode.com/things/blog/2026/08/repeating-to-dos-refined/",
+   "source": "culturedcode",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things for OS 26",
+   "url": "https://culturedcode.com/things/blog/2025/09/things-for-os-26/",
+   "source": "culturedcode",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Swift Cloud",
+   "url": "https://culturedcode.com/things/blog/2025/05/a-swift-cloud/",
+   "source": "culturedcode",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing Tools",
+   "url": "https://culturedcode.com/things/blog/2024/10/writing-tools/",
+   "source": "culturedcode",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things for the Latest OS Releases",
+   "url": "https://culturedcode.com/things/blog/2024/09/things-for-the-latest-os-releases/",
+   "source": "culturedcode",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things for Apple Vision Pro",
+   "url": "https://culturedcode.com/things/blog/2024/02/things-for-apple-vision-pro/",
+   "source": "culturedcode",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things for macOS 14 Sonoma",
+   "url": "https://culturedcode.com/things/blog/2023/09/things-for-macos-14-sonoma/",
+   "source": "culturedcode",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Interactive Widgets and More",
+   "url": "https://culturedcode.com/things/blog/2023/09/interactive-widgets-and-more/",
+   "source": "culturedcode",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things Big and Small",
+   "url": "https://culturedcode.com/things/blog/2023/09/things-big-and-small/",
+   "source": "culturedcode",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Come Work With Us",
+   "url": "https://culturedcode.com/things/blog/2023/09/come-work-with-us/",
+   "source": "culturedcode",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shortcuts Reloaded",
+   "url": "https://culturedcode.com/things/blog/2023/01/shortcuts-reloaded/",
+   "source": "culturedcode",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things for iPadOS 16 and macOS 13",
+   "url": "https://culturedcode.com/things/blog/2022/10/things-for-ipados-16-and-macos-13/",
+   "source": "culturedcode",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lock Screen Widgets for iOS 16",
+   "url": "https://culturedcode.com/things/blog/2022/09/lock-screen-widgets-for-ios-16/",
+   "source": "culturedcode",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "8 Elixir Development Companies Comparison | Curiosum",
+   "url": "https://curiosum.com/blog/top-elixir-development-companies-in-2026",
+   "source": "curiosum",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Schema evolution in distributed systems: compatibility guide",
+   "url": "https://curiosum.com/blog/schema-evolution-in-distributed-async-message-passing-systems",
+   "source": "curiosum",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Phoenix LiveView beyond SaaS: Robotics fleet management",
+   "url": "https://curiosum.com/blog/phoenix-liveview-robotics-fleet-management",
+   "source": "curiosum",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Permit authorization framework 0.4.0 gets faster setup with Igniter and Phoenix fixes",
+   "url": "https://curiosum.com/blog/updates-to-permit-igniter-setup-and-plural-actions",
+   "source": "curiosum",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Phoenix LiveView widgets with hooks: a reusable pattern",
+   "url": "https://curiosum.com/blog/hooking-up-with-liveview-stateful-widgets-with-function-components",
+   "source": "curiosum",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Embedded Elixir sound controller with Nerves and Arduino",
+   "url": "https://curiosum.com/blog/making-sound-with-embedded-elixir-using-nerves",
+   "source": "curiosum",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Phoenix scopes vs authorization: what developers need to know",
+   "url": "https://curiosum.com/blog/phoenix-scopes-authorization-permit-phoenix",
+   "source": "curiosum",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Top React Native development companies for your business",
+   "url": "https://curiosum.com/blog/top-6-software-development-companies-working-with-react-native",
+   "source": "curiosum",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Permit.Absinthe 0.2: Absinthe GraphQL authorization for Elixir",
+   "url": "https://curiosum.com/blog/permit-absinthe-0-2",
+   "source": "curiosum",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Design-Backed Pitch Deck for investors: clean, clear, credible slides",
+   "url": "https://curiosum.com/blog/pitching-to-investors-the-design-backed-pitch-deck-clean-clear-credible",
+   "source": "curiosum",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Startup branding after MVP: refresh without a full rebrand",
+   "url": "https://curiosum.com/blog/updating-your-branding-post-mvp-without-going-full-rebrand",
+   "source": "curiosum",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build maintainable Elixir apps with Ash Framework",
+   "url": "https://curiosum.com/blog/introduction-ash-framework",
+   "source": "curiosum",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Curiosum Becomes Main Sponsor of Hologram",
+   "url": "https://curiosum.com/blog/curiosum-becomes-main-sponsor-of-hologram",
+   "source": "curiosum",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Do you need a design system yet? A startup’s guide to consistent digital product.",
+   "url": "https://curiosum.com/blog/do-you-need-a-design-system-yet",
+   "source": "curiosum",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Turning feedback into features: A UX Playbook for startups",
+   "url": "https://curiosum.com/blog/turning-feedback-into-features-a-ux-playbook-for-startups",
+   "source": "curiosum",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Changing the GRUB boot delay time from the default 30s in Ubuntu 24.04 (SPOILER alert - ZFS)",
    "url": "http://www.d3noob.org/2024/04/changing-grub-boot-delay-time-from.html",
    "source": "d3noob",
@@ -14448,6 +14826,246 @@
    "title": "Practical Python with Raymond Hettinger",
    "url": "https://dabeaz.blogspot.com/2011/04/practical-python-with-raymond-hettinger.html",
    "source": "dabeaz",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The New CSS Math: pi and other constants",
+   "url": "https://danielcwilson.com/posts/mathematicss-constants/",
+   "source": "danielcwilson",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The New CSS Math: pow(), sqrt(), and exponential friends",
+   "url": "https://danielcwilson.com/posts/mathematicss-powers/",
+   "source": "danielcwilson",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The New CSS Math: rem() and mod()",
+   "url": "https://danielcwilson.com/posts/mathematicss-rem-mod/",
+   "source": "danielcwilson",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The New CSS Math: round()",
+   "url": "https://danielcwilson.com/posts/mathematicss-round/",
+   "source": "danielcwilson",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cutouts with Clip Paths",
+   "url": "https://danielcwilson.com/posts/clip-path-cutouts/",
+   "source": "danielcwilson",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Improving CSS Shapes with Trigonometric Functions",
+   "url": "https://danielcwilson.com/posts/css-shapes-with-trig-functions/",
+   "source": "danielcwilson",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mixing Device Cameras and the Web",
+   "url": "https://danielcwilson.com/blog/2021/11/user-media/",
+   "source": "danielcwilson",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Additive Animations in CSS",
+   "url": "https://danielcwilson.com/blog/2020/10/additive-css-animations/",
+   "source": "danielcwilson",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pseudo-elements in the Web Animations API",
+   "url": "https://danielcwilson.com/blog/2020/05/pseudo-waapi/",
+   "source": "danielcwilson",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS + the Web Animations API",
+   "url": "https://danielcwilson.com/blog/2020/04/css-in-the-waapi/",
+   "source": "danielcwilson",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When 255 × 0 does not Equal Zero",
+   "url": "https://danielcwilson.com/blog/2020/03/blend-modes-in-spaaaace/",
+   "source": "danielcwilson",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How They Fit Together: Transform, Translate, Rotate, Scale, and Offset",
+   "url": "https://danielcwilson.com/blog/2020/02/motion-path-transforms/",
+   "source": "danielcwilson",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Get Moving (or not) with CSS Motion Path",
+   "url": "https://danielcwilson.com/blog/2020/01/motion-path-quirks/",
+   "source": "danielcwilson",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Animating a Hue around the Color Wheel with Houdini",
+   "url": "https://danielcwilson.com/blog/2019/09/huedini/",
+   "source": "danielcwilson",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "3D Glasses with Perspective Origin",
+   "url": "https://danielcwilson.com/blog/2019/04/optical-fun-3d-glasses/",
+   "source": "danielcwilson",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TIL: Using PygmentsRenderer with mistletoe as a partial",
+   "url": "https://daniel.feldroy.com/posts/til-2026-02-using-pygmentsrenderer-with-mistletoe-as-a-partial",
+   "source": "danielfeldroy",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What I miss about London",
+   "url": "https://daniel.feldroy.com/posts/2026-02-what-i-miss-about-london",
+   "source": "danielfeldroy",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Top Terminal Tools",
+   "url": "https://daniel.feldroy.com/posts/2026-03-command-line-tools-im-using",
+   "source": "danielfeldroy",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TIL: Checkov's Gun",
+   "url": "https://daniel.feldroy.com/posts/til-2026-03-checkovs-gun",
+   "source": "danielfeldroy",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stupid human coding mistakes",
+   "url": "https://daniel.feldroy.com/posts/2026-03-stupid-human-coding-mistakes",
+   "source": "danielfeldroy",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "To return a value or not return a value",
+   "url": "https://daniel.feldroy.com/posts/2026-03-to-return-a-value-or-not-return-a-value",
+   "source": "danielfeldroy",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Facebook's Terms of Service",
+   "url": "https://daniel.feldroy.com/posts/2026-04-facebook-terms-of-service",
+   "source": "danielfeldroy",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TIL: Improving µCSS readability on mobile",
+   "url": "https://daniel.feldroy.com/posts/til-2026-04-improving-mucss-readability-on-mobile",
+   "source": "danielfeldroy",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Enter Grimdaniel",
+   "url": "https://daniel.feldroy.com/posts/2026-04-enter-grimdaniel",
+   "source": "danielfeldroy",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Word counter that ignores Markdown",
+   "url": "https://daniel.feldroy.com/posts/2026-05-word-counter-that-ignores-markdown",
+   "source": "danielfeldroy",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Everyone Dies... is on Kindle Unlimited",
+   "url": "https://daniel.feldroy.com/posts/2026-05-everyone-dies-kindle-unlimited",
+   "source": "danielfeldroy",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A week in the life of a seven year old",
+   "url": "https://daniel.feldroy.com/posts/2026-05-a-week-in-the-life-of-a-seven-year-old",
+   "source": "danielfeldroy",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Farewell, Doctor Who",
+   "url": "https://daniel.feldroy.com/posts/2026-06-farewell-doctor-who",
+   "source": "danielfeldroy",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing about electrification",
+   "url": "https://daniel.feldroy.com/posts/2026-07-writing-about-electrification",
+   "source": "danielfeldroy",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TIL: How to extract subtitles from video",
+   "url": "https://daniel.feldroy.com/posts/til-2026-10-how-to-extract-subtitles-from-video",
+   "source": "danielfeldroy",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -14693,6 +15311,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Vibe Coding Costs: How much I paid to build 3 Production SaaS Apps",
+   "url": "https://dannorris.me/vibe-coding-costs/",
+   "source": "dannorris",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Coworker vs AI Agent — What’s the Difference and Which Should You Use?",
+   "url": "https://dannorris.me/ai-coworker-vs-ai-agent/",
+   "source": "dannorris",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Overwhelmed By AI? Sign Up for Viktor Now.",
+   "url": "https://dannorris.me/overwhelmed-by-ai-sign-up-for-viktor-now/",
+   "source": "dannorris",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Predictions 2026",
+   "url": "https://dannorris.me/ai-predictions-2026/",
+   "source": "dannorris",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to replace your bookkeeper with AI",
+   "url": "https://dannorris.me/how-to-replace-your-bookkeeper-with-ai/",
+   "source": "dannorris",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I Built a Content Idea App (Content Machine) as a Non-Technical Person Using AI",
+   "url": "https://dannorris.me/how-i-built-a-content-idea-app-content-machine-as-a-non-technical-person-using-ai/",
+   "source": "dannorris",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Replit just changed the game with a new AI mobile app builder",
+   "url": "https://dannorris.me/replit-just-changed-the-game-with-a-new-ai-mobile-app-builder/",
+   "source": "dannorris",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2026 is the year AI coding changes everything",
+   "url": "https://dannorris.me/2026-is-the-year-ai-coding-changes-everything/",
+   "source": "dannorris",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You’re absolutely right: Lessons learned vibe coding our asset management system",
+   "url": "https://dannorris.me/lessons-learned-vibe-coding-our-asset-management-system/",
+   "source": "dannorris",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My New Book Is Available – Black Hops Down: The Rise and Fall of Australia’s Most Loved Craft Beer Brewery",
+   "url": "https://dannorris.me/my-new-book-is-available-black-hops-down-the-rise-and-fall-of-australias-most-loved-craft-beer-brewery/",
+   "source": "dannorris",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Joanna Stern Reviews the HomeView",
    "url": "https://www.youtube.com/watch?v=yVTcVtLn2o4",
    "source": "daringfireball",
@@ -14821,6 +15519,246 @@
    "metric": "feed rank"
   },
   {
+   "title": "Evolving programming languages in the AI era",
+   "url": "https://dashbit.co/blog/evolving-ai-era",
+   "source": "dashbit",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WebSockets vs. SSE should be about ordering and correctness",
+   "url": "https://dashbit.co/blog/websockets-vs-sse",
+   "source": "dashbit",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Distributed Python dataframes and machine learning with Livebook and Elixir",
+   "url": "https://dashbit.co/blog/distributed-python-livebook",
+   "source": "dashbit",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Type systems are leaky abstractions: the case of Map.take!/2",
+   "url": "https://dashbit.co/blog/type-systems-are-leaky-abstractions-map-take",
+   "source": "dashbit",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Elixir is the best language for AI",
+   "url": "https://dashbit.co/blog/why-elixir-best-language-for-ai",
+   "source": "dashbit",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Zero Trust Auth for Plug/Phoenix apps is here",
+   "url": "https://dashbit.co/blog/zero-trust-for-plug-phoenix",
+   "source": "dashbit",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The path to Tidewave: beyond code intelligence",
+   "url": "https://dashbit.co/blog/the-path-to-tidewave",
+   "source": "dashbit",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Embedding Python in Elixir, it's Fine",
+   "url": "https://dashbit.co/blog/running-python-in-elixir-its-fine",
+   "source": "dashbit",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dashbit plans for 2025",
+   "url": "https://dashbit.co/blog/dashbit-plans-2025",
+   "source": "dashbit",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Data evolution with set-theoretic types",
+   "url": "https://dashbit.co/blog/data-evolution-with-set-theoretic-types",
+   "source": "dashbit",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Remix's concurrent submissions are fundamentally flawed (without causal ordering)",
+   "url": "https://dashbit.co/blog/remix-concurrent-submissions-flawed",
+   "source": "dashbit",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Soft deletes with Ecto and PostgreSQL",
+   "url": "https://dashbit.co/blog/soft-deletes-with-ecto",
+   "source": "dashbit",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SDKs with Req: S3",
+   "url": "https://dashbit.co/blog/sdks-with-req-s3",
+   "source": "dashbit",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SDKs with Req: Stripe",
+   "url": "https://dashbit.co/blog/sdks-with-req-stripe",
+   "source": "dashbit",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Phoenix Playground",
+   "url": "https://dashbit.co/blog/announcing-phoenix-playground",
+   "source": "dashbit",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NYC: Here’s where lead has been found in school water...",
+   "url": "https://datanews.tumblr.com/post/159005189432",
+   "source": "datanewstumblr",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NYC metro area: Congress is on its first weeklong recess since...",
+   "url": "https://datanews.tumblr.com/post/157371069312",
+   "source": "datanewstumblr",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Notes on Building a Judicial Election Tool",
+   "url": "https://datanews.tumblr.com/post/156761329162",
+   "source": "datanewstumblr",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New Yorkers, Trump and Clinton won’t be the only ones on...",
+   "url": "https://datanews.tumblr.com/post/152772969702",
+   "source": "datanewstumblr",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Polls in New York are open until 9 p.m. tonight for the state...",
+   "url": "https://datanews.tumblr.com/post/150376020882",
+   "source": "datanewstumblr",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In 2000, there were 1,394 Section 8 voucher households in...",
+   "url": "https://datanews.tumblr.com/post/144517235942",
+   "source": "datanewstumblr",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "More than 80% of Section 8 tenants in NYC now live in...",
+   "url": "https://datanews.tumblr.com/post/144463546157",
+   "source": "datanewstumblr",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Last year, Housing Choice Vouchers (Section 8) provided rent...",
+   "url": "https://datanews.tumblr.com/post/144462220107",
+   "source": "datanewstumblr",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New York bird species endangered by climate change",
+   "url": "https://datanews.tumblr.com/post/143850802102",
+   "source": "datanewstumblr",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nailbiter Bot returns for March Madness",
+   "url": "https://datanews.tumblr.com/post/141152178307",
+   "source": "datanewstumblr",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The NYPD is updating a map of serious crimes in New York City,...",
+   "url": "https://datanews.tumblr.com/post/140693603307",
+   "source": "datanewstumblr",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From 1936 to 1966, a Harlem postal worker named Victor Green...",
+   "url": "https://datanews.tumblr.com/post/138999817122",
+   "source": "datanewstumblr",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The NYC Department of Education announced yesterday that the...",
+   "url": "https://datanews.tumblr.com/post/137157561507",
+   "source": "datanewstumblr",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "There are 14,066 known contaminated sites in New Jersey. Most...",
+   "url": "https://datanews.tumblr.com/post/134863757112",
+   "source": "datanewstumblr",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A little more than three years after Sandy hit, progress in...",
+   "url": "https://datanews.tumblr.com/post/133871544942",
+   "source": "datanewstumblr",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Conventional Commit rules everything around me",
    "url": "https://daverupert.com/2026/11/conventional-commit-rules-everything-around-me/",
    "source": "daverupert",
@@ -14941,6 +15879,246 @@
    "metric": "feed rank"
   },
   {
+   "title": "The Interpreter (2005)",
+   "url": "https://deanebarker.net/dead-drop/posts/4532f7/",
+   "source": "deanebarker",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Alias, Season 2",
+   "url": "https://deanebarker.net/dead-drop/posts/e3aa6f/",
+   "source": "deanebarker",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SNL Bond Girls Sketch",
+   "url": "https://deanebarker.net/dead-drop/posts/7016d1/",
+   "source": "deanebarker",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kids Spy Book Display",
+   "url": "https://deanebarker.net/dead-drop/posts/d07e92/",
+   "source": "deanebarker",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Day of the Jackal (1973)",
+   "url": "https://deanebarker.net/dead-drop/posts/a0e8f1/",
+   "source": "deanebarker",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bullet to Beijing (1995)",
+   "url": "https://deanebarker.net/dead-drop/posts/7dc036/",
+   "source": "deanebarker",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Agency, Season 2",
+   "url": "https://deanebarker.net/dead-drop/posts/50b76e/",
+   "source": "deanebarker",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Spy Role-Playing Games",
+   "url": "https://deanebarker.net/dead-drop/posts/5f8970/",
+   "source": "deanebarker",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pickup on South Street (1953)",
+   "url": "https://deanebarker.net/dead-drop/posts/6570e1/",
+   "source": "deanebarker",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Havana Syndrome",
+   "url": "https://deanebarker.net/dead-drop/posts/47fa9e/",
+   "source": "deanebarker",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Russia House (1990)",
+   "url": "https://deanebarker.net/dead-drop/posts/6062d6/",
+   "source": "deanebarker",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Book Review: The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger",
+   "url": "https://deanebarker.net/library/titles/the-box/",
+   "source": "deanebarker",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Heineken Skyfall Commercial",
+   "url": "https://deanebarker.net/dead-drop/posts/a26209/",
+   "source": "deanebarker",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Eiger Sanction (1975)",
+   "url": "https://deanebarker.net/dead-drop/posts/1bfd59/",
+   "source": "deanebarker",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Osterman Weekend (1983)",
+   "url": "https://deanebarker.net/dead-drop/posts/81fb79/",
+   "source": "deanebarker",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "pyinfra – simple infrastructure automation in Python",
+   "url": "https://death.andgravity.com/pyinfra",
+   "source": "deathandgravity",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "reader 3.26 released – discovery, exports, demo",
+   "url": "https://death.andgravity.com/reader-3-26",
+   "source": "deathandgravity",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ordered key sharding in DynamoDB",
+   "url": "https://death.andgravity.com/albumtitle",
+   "source": "deathandgravity",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DynamoDB crash course: part 3 – design patterns",
+   "url": "https://death.andgravity.com/dynamodb-patterns",
+   "source": "deathandgravity",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "reader 3.24 released – help, multi-user updates",
+   "url": "https://death.andgravity.com/reader-3-24",
+   "source": "deathandgravity",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "reader 3.23 released – OPML, hosted reader intro",
+   "url": "https://death.andgravity.com/reader-3-23",
+   "source": "deathandgravity",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learn Python object-oriented programming with Raymond Hettinger",
+   "url": "https://death.andgravity.com/hettinger",
+   "source": "deathandgravity",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "reader 3.22 released – new web app",
+   "url": "https://death.andgravity.com/reader-3-22",
+   "source": "deathandgravity",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DynamoDB crash course: part 2 – data model",
+   "url": "https://death.andgravity.com/dynamodb-model",
+   "source": "deathandgravity",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DynamoDB crash course: part 1 – philosophy",
+   "url": "https://death.andgravity.com/dynamodb",
+   "source": "deathandgravity",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "reader 3.20 released – we're so back",
+   "url": "https://death.andgravity.com/reader-3-20",
+   "source": "deathandgravity",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing asyncio-thread-runner: you can have a little async (as a treat)",
+   "url": "https://death.andgravity.com/asyncio-thread-runner",
+   "source": "deathandgravity",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inheritance over composition, sometimes",
+   "url": "https://death.andgravity.com/over-composition",
+   "source": "deathandgravity",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Process​Thread​Pool​Executor: when I‍/‍O becomes CPU-bound",
+   "url": "https://death.andgravity.com/ptpe",
+   "source": "deathandgravity",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "reader 3.16 released – Archived feed",
+   "url": "https://death.andgravity.com/reader-3-16",
+   "source": "deathandgravity",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Roonomics: How Economics Helped Us to Build a Churn Prediction Model",
    "url": "https://deliveroo.engineering/2026/09/22/roonomics-how-economics-helped-us-to-build-a-churn-prediction-model.html",
    "source": "deliverooengineering",
@@ -15016,6 +16194,566 @@
    "title": "Deliveroo experimentation principles",
    "url": "https://deliveroo.engineering/2025/02/06/experimentation-principles.html",
    "source": "deliverooengineering",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Operating System Preference Is Dead",
+   "url": "https://den.dev/blog/operating-system-preference-is-dead/",
+   "source": "den",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Halo: Campaign Evolved's Secret Difficulty Modifiers",
+   "url": "https://den.dev/blog/halo-campaign-evolved-secret-modifiers/",
+   "source": "den",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Unlocking The Halo: Campaign Evolved Secret Debug Menu",
+   "url": "https://den.dev/blog/halo-campaign-evolved-secret-menu/",
+   "source": "den",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MCP Apps And Interactive UIs In MCP Clients",
+   "url": "https://den.dev/blog/mcp-apps/",
+   "source": "den",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Programmatically Setting GitHub Issue Types",
+   "url": "https://den.dev/blog/set-github-issue-type/",
+   "source": "den",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hello, Anthropic",
+   "url": "https://den.dev/blog/anthropic/",
+   "source": "den",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wrapping Up My Latest Microsoft Chapter",
+   "url": "https://den.dev/blog/microsoft-chapter-wrap/",
+   "source": "den",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wrapping Up 2025 - The Year Of MCP",
+   "url": "https://den.dev/blog/wrapping-up-the-year-of-mcp/",
+   "source": "den",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "November 2025 Reading List",
+   "url": "https://den.dev/blog/november-2025-reading-list/",
+   "source": "den",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dissecting The Halo 5 Spartan Rank Manifest",
+   "url": "https://den.dev/blog/halo-5-spartan-rank-manifest/",
+   "source": "den",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "One Year Of Model Context Protocol Through A Core Maintainer Lens",
+   "url": "https://den.dev/blog/one-year-of-mcp/",
+   "source": "den",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's New In The 2025-11-25 MCP Authorization Spec",
+   "url": "https://den.dev/blog/mcp-november-authorization-spec/",
+   "source": "den",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Halo World Championship 2025",
+   "url": "https://den.dev/blog/halo-world-championship-2025/",
+   "source": "den",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Support For CIMD For MCP In Visual Studio Code",
+   "url": "https://den.dev/blog/cimd-vs-code-mcp/",
+   "source": "den",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You Need To Become A Full Stack Person",
+   "url": "https://den.dev/blog/full-stack-person/",
+   "source": "den",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Parsing JSON-structured Docker logs with the OpenTelemetry Collector",
+   "url": "https://dev.37signals.com/parsing-json-docker-logs-with-opentelemetry-collector/",
+   "source": "dev37signals",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hot Cell v1.0: Securing Active Storage in the age of AI",
+   "url": "https://dev.37signals.com/hot-cell-1-0/",
+   "source": "dev37signals",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Warming up the Puma master before it forks",
+   "url": "https://dev.37signals.com/warming-up-the-puma-master-before-it-forks/",
+   "source": "dev37signals",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lexxy 1.0 is here",
+   "url": "https://dev.37signals.com/lexxy-1-0/",
+   "source": "dev37signals",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The ONCE app server",
+   "url": "https://dev.37signals.com/once-app-server/",
+   "source": "dev37signals",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Behind the Fizzy Infrastructure",
+   "url": "https://dev.37signals.com/fizzy-infrastructure/",
+   "source": "dev37signals",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Upright: An Open Source Synthetic Monitoring System",
+   "url": "https://dev.37signals.com/introducing-upright/",
+   "source": "dev37signals",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rails Multi-Tenancy",
+   "url": "https://dev.37signals.com/rails-multi-tenancy/",
+   "source": "dev37signals",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Moving Mountains of Data off S3",
+   "url": "https://dev.37signals.com/moving-mountains-of-data-off-s3/",
+   "source": "dev37signals",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Rails Delegated Type Pattern",
+   "url": "https://dev.37signals.com/the-rails-delegated-type-pattern/",
+   "source": "dev37signals",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lexxy: A new rich text editor for Rails",
+   "url": "https://dev.37signals.com/announcing-lexxy-a-new-rich-text-editor-for-rails/",
+   "source": "dev37signals",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Running our Docker registry on-prem with Harbor",
+   "url": "https://dev.37signals.com/running-our-docker-registry-on-prem-with-harbor/",
+   "source": "dev37signals",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Action Push Native",
+   "url": "https://dev.37signals.com/introducing-action-push-native/",
+   "source": "dev37signals",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Hotwire Native 1.2",
+   "url": "https://dev.37signals.com/announcing-hotwire-native-v1-2/",
+   "source": "dev37signals",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Monitoring 10 Petabytes of data in Pure Storage",
+   "url": "https://dev.37signals.com/pure-storage-monitoring/",
+   "source": "dev37signals",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pylance + Pyrefly: bring your preferred type checker to Visual Studio Code",
+   "url": "https://devblogs.microsoft.com/python/announcing-tsp/",
+   "source": "devblogsmicrosoft",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PyCon US 2026",
+   "url": "https://devblogs.microsoft.com/python/pycon-us-2026/",
+   "source": "devblogsmicrosoft",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Apache Arrow Support in mssql-python",
+   "url": "https://devblogs.microsoft.com/python/introducing-apache-arrow-support-in-mssql-python/",
+   "source": "devblogsmicrosoft",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python Environments Extension for VS Code- April Update",
+   "url": "https://devblogs.microsoft.com/python/python-in-visual-studio-code-april-2026-release/",
+   "source": "devblogsmicrosoft",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Write SQL Your Way: Dual Parameter Style Benefits in mssql-python",
+   "url": "https://devblogs.microsoft.com/python/write-sql-your-way-dual-parameter-style-benefits-in-mssql-python/",
+   "source": "devblogsmicrosoft",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python in Visual Studio Code – March 2026 Release",
+   "url": "https://devblogs.microsoft.com/python/python-in-visual-studio-code-march-2026-release/",
+   "source": "devblogsmicrosoft",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python Environments Extension for VS Code",
+   "url": "https://devblogs.microsoft.com/python/python-in-visual-studio-code-february-2026-release/",
+   "source": "devblogsmicrosoft",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python in Visual Studio Code – November 2025 Release",
+   "url": "https://devblogs.microsoft.com/python/python-in-visual-studio-code-november-2025-release/",
+   "source": "devblogsmicrosoft",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python in Visual Studio Code – October 2025 Release",
+   "url": "https://devblogs.microsoft.com/python/python-in-visual-studio-code-october-2025-release/",
+   "source": "devblogsmicrosoft",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simplifying Resource Management in mssql-python through Context Manager",
+   "url": "https://devblogs.microsoft.com/python/simplifying-resource-management-in-mssql-python-through-context-manager/",
+   "source": "devblogsmicrosoft",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tỷ Lệ Kèo Malaysia Là Gì Và Cách Tính Lãi Lỗ Chuẩn Nhất",
+   "url": "https://aestheticpixels.io/ty-le-keo-malaysia-la-gi/",
+   "source": "devcop",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Odds Là Gì? Hướng Dẫn Cách Quy Đổi Lợi Nhuận Cho Newbie",
+   "url": "https://aestheticpixels.io/odds-la-gi/",
+   "source": "devcop",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kèo Châu Âu Là Gì Và Đọc Tỷ Lệ 1×2 Chuẩn Xác Năm 2026",
+   "url": "https://aestheticpixels.io/keo-chau-au-la-gi/",
+   "source": "devcop",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kèo Châu Á Là Gì? Bản Chất Cách Tham Gia Và Tính Điểm",
+   "url": "https://aestheticpixels.io/keo-chau-a-la-gi/",
+   "source": "devcop",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cách Xả Kèo Bóng Đá Hiệu Quả Và An Toàn Cho Người Mới 2026",
+   "url": "https://aestheticpixels.io/cach-xa-keo-bong-da/",
+   "source": "devcop",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kèo Giao Bóng Trước Là Gì? Cách Đọc Và Soi Kèo Chuẩn 2026",
+   "url": "https://aestheticpixels.io/keo-giao-bong-truoc-la-gi/",
+   "source": "devcop",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kèo 2 Đội Ghi Bàn – Những Thông Tin Người Chơi Cần Nắm",
+   "url": "https://aestheticpixels.io/keo-2-doi-ghi-ban/",
+   "source": "devcop",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kèo Tỷ Số Là Gì? Hướng Dẫn Hiểu Và Soi Trong Cá Cược",
+   "url": "https://aestheticpixels.io/keo-ty-so-la-gi/",
+   "source": "devcop",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cược Thắng Áp Đảo Là Gì? Kinh Nghiệm Phân Tích Hiệu Quả 2026",
+   "url": "https://aestheticpixels.io/cuoc-thang-ap-dao-la-gi/",
+   "source": "devcop",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kèo Draw No Bet Là Gì? Cách Đọc Kèo Và Soi Kèo Hiệu Quả 2026",
+   "url": "https://aestheticpixels.io/keo-draw-no-bet/",
+   "source": "devcop",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's New in WebGPU (Chrome 155-156)",
+   "url": "https://developer.chrome.com/blog/new-in-webgpu-155-156?hl=en",
+   "source": "developerchrome",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shipping JPEG XL in Chrome",
+   "url": "https://developer.chrome.com/blog/jpeg-xl-in-chrome?hl=en",
+   "source": "developerchrome",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Email verification updates, October 2026",
+   "url": "https://developer.chrome.com/blog/email-verification-october-2026?hl=en",
+   "source": "developerchrome",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chrome 156 beta",
+   "url": "https://developer.chrome.com/blog/chrome-156-beta?hl=en",
+   "source": "developerchrome",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HTML-in-Canvas updates: Iterating toward a better Web API",
+   "url": "https://developer.chrome.com/blog/html-in-canvas-ot-changes?hl=en",
+   "source": "developerchrome",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Connection allowlists: Secure your web application's network access",
+   "url": "https://developer.chrome.com/blog/connection-allowlist-announcement?hl=en",
+   "source": "developerchrome",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New in Chrome 154",
+   "url": "https://developer.chrome.com/blog/new-in-chrome-154?hl=en",
+   "source": "developerchrome",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New in DevTools - October 2026",
+   "url": "https://developer.chrome.com/blog/new-in-devtools-october-2026?hl=en",
+   "source": "developerchrome",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Enhance multitasking extensions with the new Tabs Split View API",
+   "url": "https://developer.chrome.com/blog/split-view-api-extensions?hl=en",
+   "source": "developerchrome",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chrome 155 beta",
+   "url": "https://developer.chrome.com/blog/chrome-155-beta?hl=en",
+   "source": "developerchrome",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Yeah, I Know. Stop Bugging Me.",
+   "url": "https://developsense.com/blog/2026/11/yeah-i-know-stop-bugging-me",
+   "source": "developsense",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In Praise of the Pause",
+   "url": "https://developsense.com/blog/2026/10/in-praise-of-the-pause",
+   "source": "developsense",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ed Zitron Reads My Mind",
+   "url": "https://developsense.com/blog/2026/10/ed-zitron-reads-my-mind",
+   "source": "developsense",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Do They Mean It?",
+   "url": "https://developsense.com/blog/2026/10/do-they-mean-it",
+   "source": "developsense",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Bottlenecks",
+   "url": "https://developsense.com/blog/2026/09/on-bottlenecks",
+   "source": "developsense",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Just the Facts, Please",
+   "url": "https://developsense.com/blog/2026/07/just-the-facts-please",
+   "source": "developsense",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quality Engineering Is Not Testing",
+   "url": "https://developsense.com/blog/2026/04/quality-engineering-is-not-testing",
+   "source": "developsense",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Extended Holidays",
+   "url": "https://developsense.com/blog/2026/04/extended-holidays",
+   "source": "developsense",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bugs Cost the Business",
+   "url": "https://developsense.com/blog/2026/03/bugs-cost-the-business",
+   "source": "developsense",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Is Testing? A Conversation with James Bach and Michael Bolton",
+   "url": "https://developsense.com/blog/2026/02/what-is-testing-a-conversation-with-james-bach-and-michael-bolton",
+   "source": "developsense",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -15112,6 +16850,86 @@
    "title": "Muir: Yosemite Creative Suite Icons",
    "url": "http://dewith.com/2014/muir-yosemite-creative-suite-icons/",
    "source": "dewith",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Failed jamming of transcribers",
+   "url": "https://diablohorn.com/2026/10/25/failed-jamming-of-transcribers/",
+   "source": "diablohorn",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vibe coding: supply chain insights",
+   "url": "https://diablohorn.com/2026/08/23/vibe-coding-supply-chain-insights/",
+   "source": "diablohorn",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Old skool tales on initial access",
+   "url": "https://diablohorn.com/2026/04/23/old-skool-tales-on-initial-access/",
+   "source": "diablohorn",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Playing with the LANL ARCS Data Sets",
+   "url": "https://diablohorn.com/2026/04/19/playing-with-the-lanl-arcs-data-sets/",
+   "source": "diablohorn",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Observations on AI generated Remote DuckDB via HTTP with mTLS",
+   "url": "https://diablohorn.com/2026/03/22/observations-on-ai-generated-remote-duckdb-via-http-with-mtls/",
+   "source": "diablohorn",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[QuickPost] DuckDB NDJSON force all columns",
+   "url": "https://diablohorn.com/2026/03/19/quickpost-duckdb-ndjson-force-all-columns/",
+   "source": "diablohorn",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Invisible security requires friction first",
+   "url": "https://diablohorn.com/2026/02/27/invisible-security-requires-friction-first/",
+   "source": "diablohorn",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Recon your patents with GenAI?",
+   "url": "https://diablohorn.com/2025/12/07/recon-your-patents-with-genai/",
+   "source": "diablohorn",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "YOLO detect security cameras",
+   "url": "https://diablohorn.com/2025/10/26/yolo-detect-security-cameras/",
+   "source": "diablohorn",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Emotions as human detection & defence",
+   "url": "https://diablohorn.com/2024/05/22/emotions-as-human-detection-defence/",
+   "source": "diablohorn",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -15809,6 +17627,86 @@
    "url": "https://reactdevelopment.substack.com/p/react-forms-and-reactmemo-understanding",
    "source": "echojs",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Gen-AI, LLMs, Problem-Solving and Optimization in Software Engineering and Data Science",
+   "url": "https://effectivesoftwaredesign.com/2026/10/12/on-gen-ai-llms-problem-solving-and-optimization-in-software-engineering-and-data-science/",
+   "source": "effectivesoftwaredesign",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Winning Strategy of Being a Fractional CTO",
+   "url": "https://effectivesoftwaredesign.com/2026/10/06/the-winning-strategy-of-being-a-fractional-cto/",
+   "source": "effectivesoftwaredesign",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI will never take the jobs of real Software Engineers",
+   "url": "https://effectivesoftwaredesign.com/2026/09/17/ai-will-never-take-the-jobs-of-real-software-engineers/",
+   "source": "effectivesoftwaredesign",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The real story of the monk that never sold a Ferrari",
+   "url": "https://effectivesoftwaredesign.com/2026/09/15/the-real-story-of-the-monk-that-never-sold-a-ferrari/",
+   "source": "effectivesoftwaredesign",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why startup companies are able to win but fail to scale",
+   "url": "https://effectivesoftwaredesign.com/2026/08/17/why-startup-companies-are-able-to-win-but-fail-to-scale/",
+   "source": "effectivesoftwaredesign",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Should we review the code that is generated by AI?",
+   "url": "https://effectivesoftwaredesign.com/2026/08/10/should-we-review-the-code-that-is-generated-by-ai/",
+   "source": "effectivesoftwaredesign",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You Should Talk to Strangers",
+   "url": "https://effectivesoftwaredesign.com/2025/01/31/you-should-talk-to-strangers/",
+   "source": "effectivesoftwaredesign",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Be Careful with Temporary Excitment",
+   "url": "https://effectivesoftwaredesign.com/2024/12/31/be-careful-with-temporary-excitment/",
+   "source": "effectivesoftwaredesign",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Comfort Zone is just an illusion",
+   "url": "https://effectivesoftwaredesign.com/2024/10/30/the-comfort-zone-is-just-an-illusion/",
+   "source": "effectivesoftwaredesign",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Real Programmers Don’t Eat Quiche",
+   "url": "https://effectivesoftwaredesign.com/2024/09/10/real-programmers-dont-eat-quiche/",
+   "source": "effectivesoftwaredesign",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -28527,6 +30425,14 @@
   {
    "title": "Apple’s first smart glasses are coming together",
    "url": "https://www.theverge.com/tech/1033968/apples-first-smart-glasses-are-coming-together",
+   "source": "theverge",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fanttik’s S1 Pro electric screwdriver is $40 off in the run-up to Black Friday",
+   "url": "https://www.theverge.com/gadgets/1033620/fantikk-s1-pro-electric-screwdriver-black-friday-2026-deal-sale",
    "source": "theverge",
    "rank": 1,
    "score": 10,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T17:00:35.949235+00:00",
+  "generated_at": "2026-11-15T17:02:18.493479+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -182,6 +182,18 @@
         "rank": 7
       }
     },
+    "theverge": {
+      "items": 17,
+      "unique_urls": 17,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Watch SpaceX successfully execute the first ‘chopstick’ catch of Starship",
+        "url": "https://www.theverge.com/science/1033930/spacex-chopstick-starship-catch",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "thenewstack": {
       "items": 17,
       "unique_urls": 17,
@@ -203,18 +215,6 @@
         "title": "Writing a DSL for high performance parallel programming in OxCaml",
         "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
         "score": 15,
-        "rank": 1
-      }
-    },
-    "theverge": {
-      "items": 16,
-      "unique_urls": 16,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Watch SpaceX successfully execute the first ‘chopstick’ catch of Starship",
-        "url": "https://www.theverge.com/science/1033930/spacex-chopstick-starship-catch",
-        "score": 10,
         "rank": 1
       }
     },
@@ -2054,6 +2054,138 @@
         "rank": 1
       }
     },
+    "csstricks": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "10 Big Ol’ 2027 Black Friday Deals",
+        "url": "https://css-tricks.com/2027-front-end-black-friday-deals/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "culturedcode": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Hello Duo 👋",
+        "url": "https://culturedcode.com/things/blog/2026/10/hello-duo/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "curiosum": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "8 Elixir Development Companies Comparison | Curiosum",
+        "url": "https://curiosum.com/blog/top-elixir-development-companies-in-2026",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "danielfeldroy": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "TIL: Using PygmentsRenderer with mistletoe as a partial",
+        "url": "https://daniel.feldroy.com/posts/til-2026-02-using-pygmentsrenderer-with-mistletoe-as-a-partial",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "danielcwilson": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The New CSS Math: pi and other constants",
+        "url": "https://danielcwilson.com/posts/mathematicss-constants/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "dashbit": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Evolving programming languages in the AI era",
+        "url": "https://dashbit.co/blog/evolving-ai-era",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "datanewstumblr": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "NYC: Here’s where lead has been found in school water...",
+        "url": "https://datanews.tumblr.com/post/159005189432",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "deanebarker": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The Interpreter (2005)",
+        "url": "https://deanebarker.net/dead-drop/posts/4532f7/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "deathandgravity": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "pyinfra – simple infrastructure automation in Python",
+        "url": "https://death.andgravity.com/pyinfra",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "den": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The Operating System Preference Is Dead",
+        "url": "https://den.dev/blog/operating-system-preference-is-dead/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "dev37signals": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Parsing JSON-structured Docker logs with the OpenTelemetry Collector",
+        "url": "https://dev.37signals.com/parsing-json-docker-logs-with-opentelemetry-collector/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -3178,6 +3310,90 @@
       "top_item": {
         "title": "Merging Matter connectivity with AI for next-generation home appliances",
         "url": "https://embeddedcomputing.com/application/consumer/smart-home-tech/merging-matter-connectivity-with-ai-for-next-generation-home-appliances",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "dannorris": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Vibe Coding Costs: How much I paid to build 3 Production SaaS Apps",
+        "url": "https://dannorris.me/vibe-coding-costs/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "devblogsmicrosoft": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Pylance + Pyrefly: bring your preferred type checker to Visual Studio Code",
+        "url": "https://devblogs.microsoft.com/python/announcing-tsp/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "devcop": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Tỷ Lệ Kèo Malaysia Là Gì Và Cách Tính Lãi Lỗ Chuẩn Nhất",
+        "url": "https://aestheticpixels.io/ty-le-keo-malaysia-la-gi/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "developerchrome": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "What's New in WebGPU (Chrome 155-156)",
+        "url": "https://developer.chrome.com/blog/new-in-webgpu-155-156?hl=en",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "developsense": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Yeah, I Know. Stop Bugging Me.",
+        "url": "https://developsense.com/blog/2026/11/yeah-i-know-stop-bugging-me",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "diablohorn": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Failed jamming of transcribers",
+        "url": "https://diablohorn.com/2026/10/25/failed-jamming-of-transcribers/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "effectivesoftwaredesign": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "On Gen-AI, LLMs, Problem-Solving and Optimization in Software Engineering and Data Science",
+        "url": "https://effectivesoftwaredesign.com/2026/10/12/on-gen-ai-llms-problem-solving-and-optimization-in-software-engineering-and-data-science/",
         "score": 10,
         "rank": 1
       }
