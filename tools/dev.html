@@ -75,6 +75,7 @@
     <button data-tool="datauri">file → data URI</button>
     <button data-tool="ccommit">commit msg</button>
     <button data-tool="ts">JSON → TS</button>
+    <button data-tool="csvprof">CSV profile</button>
   </div>
 
   <div class="panel" id="p-subnet">
@@ -254,12 +255,21 @@
     <div class="err" id="ts-err"></div>
   </div>
 
+
+  <div class="panel" id="p-csvprof">
+    <h2>CSV profiler</h2>
+    <p class="hint">Paste CSV/TSV — per-column profile: type guess, fill rate, unique count, top values, min/max/mean for numerics.</p>
+    <textarea id="prof-in" placeholder="date,source,rank&#10;2026-11-15,hackernews,1&#10;2026-11-15,lobsters,2" style="width:100%;height:130px"></textarea>
+    <div class="out" id="prof-out"></div>
+    <div class="err" id="prof-err"></div>
+  </div>
+
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts"];
+const tools = ["subnet","base","pw","csv","schema","gi","semver","curl","hidden","env","ent","keys","jdiff","llmcost","datauri","ccommit","ts","csvprof"];
 const t0 = params.get("t") || location.hash.slice(1);
 tools.forEach(t => {
   const active = t === (tools.includes(t0) ? t0 : "subnet");
@@ -948,6 +958,47 @@ ccommit();
   $("ts-in").value = '{"user":{"id":1,"name":"ada","tags":["x","y"]},"repos":[{"id":9,"private":false,"lang":null}]}';
   run();
 })();
+(() => {
+  function splitLine(line, d){
+    const out=[]; let cur="", q=false;
+    for(let i=0;i<line.length;i++){ const c=line[i];
+      if(q){ if(c==='"'){ if(line[i+1]==='"'){cur+='"';i++;} else q=false; } else cur+=c; }
+      else if(c==='"') q=true; else if(c===d){out.push(cur);cur="";} else cur+=c; }
+    out.push(cur); return out;
+  }
+  const esc = t => String(t).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  function profile(){
+    const rows = $("prof-in").value.split(/\r?\n/).map(l=>l.trimEnd()).filter(l=>l.trim()!=="");
+    if(rows.length<2){ $("prof-out").textContent=""; return; }
+    const delim = rows[0].includes("\t") ? "\t" : ",";
+    const cells = rows.map(r=>splitLine(r,delim));
+    const hdr = cells[0], data = cells.slice(1);
+    let html = `<b>${data.length} rows × ${hdr.length} cols</b><br><br>`;
+    hdr.forEach((h,ci)=>{
+      const vals = data.map(r=>r[ci]??"");
+      const filled = vals.filter(v=>v.trim()!=="");
+      const uniq = new Set(filled.map(v=>v.trim())).size;
+      const nums = filled.map(v=>Number(v)).filter(v=>!Number.isNaN(v)&&v!=="");
+      let type = "text";
+      if(filled.length && nums.length/filled.length>0.9) type="number";
+      else if(filled.length && filled.filter(v=>/^\d{4}-\d{2}-\d{2}/.test(v)).length/filled.length>0.9) type="date";
+      else if(filled.length && filled.filter(v=>/^https?:\/\//.test(v)).length/filled.length>0.9) type="url";
+      let line = `<b>${esc(h)}</b> <span class="dim">· ${type} · ${filled.length}/${data.length} filled · ${uniq} unique</span>`;
+      if(type==="number"){
+        const mn=Math.min(...nums), mx=Math.max(...nums), avg=nums.reduce((a,b)=>a+b,0)/nums.length;
+        line += ` <span class="dim">· min ${mn} / max ${mx} / avg ${Math.round(avg*100)/100}</span>`;
+      } else {
+        const cnt={}; filled.forEach(v=>cnt[v.trim()]=(cnt[v.trim()]||0)+1);
+        const top=Object.entries(cnt).sort((a,b)=>b[1]-a[1]).slice(0,3);
+        if(uniq>1) line += `<br>&nbsp;&nbsp;<span class="dim">top: ${top.map(([v,c])=>esc(v.slice(0,24))+" ×"+c).join(" · ")}</span>`;
+      }
+      html += line+"<br>";
+    });
+    $("prof-out").innerHTML = html; $("prof-err").textContent="";
+  }
+  $("prof-in").addEventListener("input", ()=>{try{profile()}catch(e){$("prof-err").textContent=String(e)}});
+})();
+
 </script>
 </body>
 </html>
