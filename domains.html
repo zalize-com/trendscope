@@ -107,7 +107,7 @@ const cross = Object.entries(byUrl).filter(([,e]) => e.srcs.size > 1)
 $("out").innerHTML =
   `<table><tr><th>domain</th><th class="num">days</th><th class="num">items</th><th>sources</th><th>top hit</th></tr>` +
   list.map(d =>
-    `<tr><td><span class="dom">${esc(d.h)}</span></td>
+    `<tr><td><a class="dom" href="domain.html?d=${encodeURIComponent(d.h)}">${esc(d.h)}</a></td>
      <td class="num">${d.ndays}</td><td class="num">${d.hits}</td>
      <td class="srcs">${[...d.srcs].join(", ")}</td>
      <td class="last"><a href="${d.top.url}">${esc(d.top.title.length>70?d.top.title.slice(0,70)+"…":d.top.title)}</a><a href="item.html?q=${encodeURIComponent(d.top.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></td></tr>`
