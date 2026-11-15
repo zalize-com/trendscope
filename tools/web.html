@@ -74,6 +74,7 @@
     <button data-tool="badge">badge builder</button>
     <button data-tool="ogimg">og image</button>
     <button data-tool="favicon">favicon pack</button>
+    <button data-tool="sitemapgen">sitemap.xml</button>
   </div>
 
   <div class="panel" id="p-qr">
@@ -253,12 +254,22 @@
     <div class="err" id="fav-err"></div>
   </div>
 
+
+  <div class="panel" id="p-sitemapgen">
+    <h2>sitemap.xml generator</h2>
+    <p class="hint">One URL per line. Optional: <code>url, lastmod, priority</code> (comma-separated).</p>
+    <textarea id="smg-in" placeholder="https://example.com/&#10;https://example.com/about, 2026-11-15, 0.8&#10;https://example.com/blog" style="width:100%;height:110px"></textarea>
+    <div class="out" id="smg-out" style="white-space:pre;overflow-x:auto"></div>
+    <button class="copy" id="smg-copy">copy xml</button>
+    <div class="err" id="smg-err"></div>
+  </div>
+
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots","spage","feed","badge","ogimg","favicon"];
+const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots","spage","feed","badge","ogimg","favicon","sitemapgen"];
 
 // ---- status-page checker ----
 function spreset(u){ const i=document.getElementById("sp-in"); if(i){ i.value=u; i.dispatchEvent(new Event("input")); } return false; }
@@ -848,6 +859,39 @@ aibots();
   dz.addEventListener("dragover", e => { e.preventDefault(); dz.style.borderColor = "var(--accent)"; });
   dz.addEventListener("dragleave", () => dz.style.borderColor = "");
   dz.addEventListener("drop", e => { e.preventDefault(); dz.style.borderColor = ""; load(e.dataTransfer.files[0]); });
+})();
+
+/* ---------- sitemap.xml generator ---------- */
+(function () {
+  const esc = t => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  function go() {
+    const lines = $("smg-in").value.split("\n").map(l => l.trim()).filter(Boolean);
+    if (!lines.length) { $("smg-out").textContent = ""; $("smg-err").textContent = ""; return; }
+    const bad = [], urls = [];
+    for (const l of lines) {
+      const [u, lm, pr] = l.split(",").map(x => x.trim());
+      if (!/^https?:\/\//i.test(u)) { bad.push(u); continue; }
+      let e = `  <url>\n    <loc>${esc(u)}</loc>`;
+      if (lm) {
+        if (/^\d{4}-\d{2}-\d{2}/.test(lm)) e += `\n    <lastmod>${lm.slice(0,10)}</lastmod>`;
+        else bad.push("lastmod: " + lm);
+      }
+      if (pr) {
+        const p = parseFloat(pr);
+        if (!isNaN(p) && p >= 0 && p <= 1) e += `\n    <priority>${p.toFixed(1)}</priority>`;
+        else bad.push("priority: " + pr);
+      }
+      urls.push(e + "\n  </url>");
+    }
+    $("smg-out").textContent =
+      `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+      urls.join("\n") + "\n</urlset>";
+    $("smg-err").textContent = bad.length ? "⚠ skipped: " + bad.join(", ") : "";
+  }
+  $("smg-in").addEventListener("input", go);
+  $("smg-copy").onclick = () => navigator.clipboard?.writeText($("smg-out").textContent).then(() => { $("smg-copy").textContent = "copied"; setTimeout(() => $("smg-copy").textContent = "copy xml", 1200); });
+  $("smg-in").value = "https://zalize-com.github.io/trendscope/\nhttps://zalize-com.github.io/trendscope/index.html, 2026-11-15, 0.8\nnot-a-url";
+  go();
 })();
 
 </script>

@@ -11,7 +11,7 @@ have). Ordered by impact-per-click. Estimated total time: **~10 minutes**.
 | feedpaper | [Settings → Pages](https://github.com/zalize-com/feedpaper/settings/pages) → same: main / root → Save |
 
 Result: `zalize-com.github.io/trendscope` + `zalize-com.github.io/feedpaper` live
-in ~1 min. Dashboard, all 69 tools, embed widget, every API endpoint activate
+in ~1 min. Dashboard, all 70 tools, embed widget, every API endpoint activate
 immediately — the site reads files straight from the repo.
 
 ## 2. Say the word and we ship the submissions
@@ -47,7 +47,7 @@ gh repo edit zalize-com/feedpaper --add-topic rss,digest,github-actions,github-p
 ## Already done for you
 
 - ✅ trendscope: 15 sources, 10-day history, 29 data/analysis pages (incl. four
-  canon-history datasets 2007→today), 69 tools, CLI, embed widget, RSS + JSON
+  canon-history datasets 2007→today), 70 tools, CLI, embed widget, RSS + JSON
   Feed, OG card, health monitoring, API docs, llms.txt
 - ✅ feedpaper: production-verified (Actions bot already committing daily
   digests), RSS+Atom+OPML, tag chips, archive, own RSS feed, tests, FEEDS.md

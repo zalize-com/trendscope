@@ -21,7 +21,7 @@ One-pager for anyone writing about or linking to this project.
 | Show HN span | Jan 2012 → now, 1,790 rows | `data/show-hn-monthly.csv` |
 | Ask HN span | Feb 2007 → now, 2,378 rows | `data/ask-hn-monthly.csv` |
 | Hiring threads | Nov 2010 → now, 528 rows | `data/hiring-monthly.csv` |
-| Free tools | 69 | `tools/` |
+| Free tools | 70 | `tools/` |
 | API endpoints | 8+ | `docs/api.md` |
 
 ## What makes it different
