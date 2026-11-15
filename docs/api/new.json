@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T15:31:11.860590+00:00",
+ "generated_at": "2026-11-15T15:32:57.623989+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 910,
- "new_items": 784,
+ "total_items": 925,
+ "new_items": 799,
  "by_source": {
   "producthunt": 45,
   "hackernews": 26,
@@ -20,6 +20,7 @@
   "codinghorror": 15,
   "discord": 15,
   "echojs": 15,
+  "elastic": 15,
   "etsy": 15,
   "gargron": 15,
   "hynek": 15,
@@ -1604,6 +1605,126 @@
    "title": "React Forms and React.memo: Understanding What Actually Re-Renders",
    "url": "https://reactdevelopment.substack.com/p/react-forms-and-reactmemo-understanding",
    "source": "echojs",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elastic named a Leader in the IDC MarketScape: Worldwide General-Purpose Knowledge Discovery 2025 Vendor Assessment",
+   "url": "https://www.elastic.co/blog/elasticsearch-idc-marketscape-leader-2025",
+   "source": "elastic",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elastic named a Leader in the IDC MarketScape: Worldwide Observability Platforms 2025 Vendor Assessment",
+   "url": "https://www.elastic.co/blog/elastic-observability-idc-marketscape-leader-2025",
+   "source": "elastic",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elasticsearch 8.10: Powerful personalized search powered by a comprehensive connector catalog",
+   "url": "https://www.elastic.co/blog/whats-new-elastic-search-8-10-0",
+   "source": "elastic",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elastic Stack 8.9: Faster cross-cluster searches and aggregations on metrics",
+   "url": "https://www.elastic.co/blog/whats-new-elasticsearch-platform-8-9-0",
+   "source": "elastic",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elastic 8.9: Meet the Elastic AI Assistant for Security and ML-powered SIEM",
+   "url": "https://www.elastic.co/blog/whats-new-elastic-8-9-0",
+   "source": "elastic",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elastic 8.12: GA of AI Assistant for Observability, Update to Apache Lucene 9.9",
+   "url": "https://www.elastic.co/blog/whats-new-elastic-8-12-0",
+   "source": "elastic",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Machine learning vs. AI: Understanding the differences",
+   "url": "https://www.elastic.co/blog/ml-vs-ai",
+   "source": "elastic",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Evolution of Workplace Search: Search your private data with Elasticsearch",
+   "url": "https://www.elastic.co/blog/evolution-workplace-search-private-data-elasticsearch",
+   "source": "elastic",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fingerprint enables rapid regulatory compliance with Elastic",
+   "url": "https://www.elastic.co/blog/fingerprint-enables-rapid-regulatory-compliance-with-elastic",
+   "source": "elastic",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elastic recognized as a Visionary in the 2022 Gartner® Magic Quadrant™ for APM and Observability for the second consecutive year",
+   "url": "https://www.elastic.co/blog/elastic-observability-2022-gartner-magic-quadrant-critical-capabilities-apm",
+   "source": "elastic",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Homegate’s fast and modern search experience helps users find their dream home",
+   "url": "https://www.elastic.co/blog/homegate-search-experience",
+   "source": "elastic",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shay Banon to (re)assume the role of CTO, Ash Kulkarni promoted to CEO",
+   "url": "https://www.elastic.co/blog/shay-banon-to-re-assume-the-role-of-cto-ash-kulkarni-promoted-to-ceo",
+   "source": "elastic",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elasticsearch 8.15: Accessible semantic search with semantic text and reranking",
+   "url": "https://www.elastic.co/blog/whats-new-elastic-search-8-15-0",
+   "source": "elastic",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elasticsearch 8.11: Announcing GA of Elastic’s Learned Sparse EncodeR model and a new set of enriched connectors",
+   "url": "https://www.elastic.co/blog/whats-new-elastic-search-8-11-0",
+   "source": "elastic",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elasticsearch 8.12: Making Lucene fast and developers faster",
+   "url": "https://www.elastic.co/blog/whats-new-elastic-search-8-12-0",
+   "source": "elastic",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
