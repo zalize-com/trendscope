@@ -73,6 +73,7 @@
     <button data-tool="feed">feed finder</button>
     <button data-tool="badge">badge builder</button>
     <button data-tool="ogimg">og image</button>
+    <button data-tool="favicon">favicon pack</button>
   </div>
 
   <div class="panel" id="p-qr">
@@ -242,12 +243,22 @@
 <footer>
 <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <div class="panel" id="p-favicon">
+    <h2>Favicon pack</h2>
+    <p class="hint">Upload a square-ish image — get all standard favicon sizes as PNGs plus the manifest snippet, generated locally.</p>
+    <input type="file" id="fav-file" accept="image/*" style="font-size:13px">
+    <div id="fav-drop" style="margin:10px 0;padding:26px;border:2px dashed var(--border);border-radius:10px;text-align:center;color:var(--dim);font-size:13px">…or drag an image here</div>
+    <div id="fav-out"></div>
+    <div class="err" id="fav-err"></div>
+  </div>
+
 <script>
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots","spage","feed","badge","ogimg"];
+const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots","spage","feed","badge","ogimg","favicon"];
 
 // ---- status-page checker ----
 function spreset(u){ const i=document.getElementById("sp-in"); if(i){ i.value=u; i.dispatchEvent(new Event("input")); } return false; }
@@ -774,6 +785,69 @@ aibots();
     const a = document.createElement("a");
     a.href = cv.toDataURL("image/png"); a.download = "og.png"; a.click();
   };
+})();
+
+/* ---------- favicon pack ---------- */
+(function () {
+  const SIZES = [
+    {n: "favicon-16.png", s: 16, label: "browser tab"},
+    {n: "favicon-32.png", s: 32, label: "retina tab / taskbar"},
+    {n: "favicon-48.png", s: 48, label: "site icon"},
+    {n: "apple-touch-icon.png", s: 180, label: "iOS home screen"},
+    {n: "android-chrome-192.png", s: 192, label: "Android"},
+    {n: "android-chrome-512.png", s: 512, label: "Android splash"},
+  ];
+  function render(img) {
+    const out = $("fav-out");
+    out.innerHTML = "";
+    const head = document.createElement("div");
+    head.style.margin = "8px 0";
+    head.innerHTML = `<div class="muted" style="font-size:12px;margin-bottom:6px">${img.naturalWidth}×${img.naturalHeight} → ${SIZES.length} files</div>`;
+    out.appendChild(head);
+    for (const f of SIZES) {
+      const c = document.createElement("canvas");
+      c.width = c.height = f.s;
+      const cx = c.getContext("2d");
+      cx.imageSmoothingQuality = "high";
+      const sc = Math.max(f.s / img.naturalWidth, f.s / img.naturalHeight);
+      const w = img.naturalWidth * sc, h = img.naturalHeight * sc;
+      cx.drawImage(img, (f.s - w) / 2, (f.s - h) / 2, w, h);
+      const url = c.toDataURL("image/png");
+      const row = document.createElement("div");
+      row.style.cssText = "display:flex;align-items:center;gap:10px;margin:4px 0";
+      const prv = document.createElement("img");
+      prv.src = url; prv.width = Math.min(32, f.s); prv.height = Math.min(32, f.s);
+      prv.style.cssText = "image-rendering:pixelated;border:1px solid var(--border);border-radius:4px";
+      const a = document.createElement("a");
+      a.href = url; a.download = f.n; a.textContent = `↓ ${f.n} (${f.s}×${f.s})`;
+      const lab = document.createElement("span");
+      lab.className = "muted"; lab.style.fontSize = "12px"; lab.textContent = f.label;
+      row.append(prv, a, lab);
+      out.appendChild(row);
+    }
+    const manifest = JSON.stringify({icons: [{src: "/android-chrome-192.png", sizes: "192x192", type: "image/png"},
+      {src: "/android-chrome-512.png", sizes: "512x512", type: "image/png"}]}, null, 2);
+    const mrow = document.createElement("div");
+    mrow.style.marginTop = "10px";
+    const btn = document.createElement("button");
+    btn.className = "copy"; btn.textContent = "copy manifest icons";
+    btn.onclick = () => navigator.clipboard?.writeText(manifest).then(() => { btn.textContent = "copied"; setTimeout(() => btn.textContent = "copy manifest icons", 1200); });
+    mrow.appendChild(btn);
+    out.appendChild(mrow);
+    $("fav-err").textContent = "";
+  }
+  function load(f) {
+    if (!f) return;
+    const img = new Image();
+    img.onload = () => render(img);
+    img.onerror = () => { $("fav-err").textContent = "✗ not an image"; };
+    img.src = URL.createObjectURL(f);
+  }
+  $("fav-file").addEventListener("change", e => load(e.target.files[0]));
+  const dz = $("fav-drop");
+  dz.addEventListener("dragover", e => { e.preventDefault(); dz.style.borderColor = "var(--accent)"; });
+  dz.addEventListener("dragleave", () => dz.style.borderColor = "");
+  dz.addEventListener("drop", e => { e.preventDefault(); dz.style.borderColor = ""; load(e.dataTransfer.files[0]); });
 })();
 
 </script>
