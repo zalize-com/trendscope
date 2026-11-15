@@ -1,13 +1,13 @@
 {
  "a": "2026-11-14",
  "b": "2026-11-15",
- "generated": "2026-11-15 07:09 UTC",
+ "generated": "2026-11-15 07:17 UTC",
  "entered": [
   {
    "title": "SpaceX catches the Starship to end Flight 15",
    "url": "https://www.spacex.com/launches/starship-flight-15",
    "source": "hackernews",
-   "score": 1049,
+   "score": 1062,
    "metric": "points",
    "rank": 1
   },
@@ -15,7 +15,7 @@
    "title": "Eynnzerr/TelemetryCleaner",
    "url": "https://github.com/Eynnzerr/TelemetryCleaner",
    "source": "github_trending",
-   "score": 711,
+   "score": 714,
    "metric": "stars",
    "rank": 15
   },
@@ -23,7 +23,7 @@
    "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
    "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
    "source": "hackernews",
-   "score": 186,
+   "score": 191,
    "metric": "points",
    "rank": 11
   },
@@ -31,7 +31,7 @@
    "title": "How did Woz write the Apple 1 BASIC before building the computer?",
    "url": "https://retrocomputing.stackexchange.com/questions/17957",
    "source": "hackernews",
-   "score": 179,
+   "score": 181,
    "metric": "points",
    "rank": 12
   },
@@ -63,9 +63,17 @@
    "title": "Testing a trash can Faraday cage",
    "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
    "source": "hackernews",
-   "score": 74,
+   "score": 75,
    "metric": "points",
    "rank": 16
+  },
+  {
+   "title": "Memory Safety Bugs in Rust Standard Library",
+   "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
+   "source": "hackernews",
+   "score": 62,
+   "metric": "points",
+   "rank": 17
   },
   {
    "title": "The Sicilian Citrus Family Tree",
@@ -73,21 +81,13 @@
    "source": "hackernews",
    "score": 61,
    "metric": "points",
-   "rank": 17
+   "rank": 18
   },
   {
    "title": "Court denies motion to dismiss DRAM price fixing case",
    "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
    "source": "hackernews",
-   "score": 58,
-   "metric": "points",
-   "rank": 18
-  },
-  {
-   "title": "Memory Safety Bugs in Rust Standard Library",
-   "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
-   "source": "hackernews",
-   "score": 56,
+   "score": 59,
    "metric": "points",
    "rank": 19
   },
@@ -108,12 +108,20 @@
    "rank": 4
   },
   {
-   "title": "500 Lines or Less A 3D Modeller",
-   "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
+   "title": "Oxford Molecular Motors",
+   "url": "https://www.physics.ox.ac.uk/research/group/oxford-molecular-motors/research/bacterial-flagellar-motor",
    "source": "hackernews",
    "score": 40,
    "metric": "points",
    "rank": 20
+  },
+  {
+   "title": "Show HN: Gawain \u2013 Require type hints on all Python variables",
+   "url": "https://github.com/matheuzgomes/gawain",
+   "source": "show_hn",
+   "score": 31,
+   "metric": "points",
+   "rank": 1
   },
   {
    "title": "Ask HN: Can anyone name anything new that AI has done?",
@@ -122,14 +130,6 @@
    "score": 30,
    "metric": "points",
    "rank": 5
-  },
-  {
-   "title": "Show HN: Gawain \u2013 Require type hints on all Python variables",
-   "url": "https://github.com/matheuzgomes/gawain",
-   "source": "show_hn",
-   "score": 29,
-   "metric": "points",
-   "rank": 1
   },
   {
    "title": "Show HN: A custom font based on the Jamaican flag alphabet",
@@ -143,21 +143,21 @@
    "title": "Show HN: Turbo-Browser-MCP \u2013 Batch forms, DOM deltas and submit guards for MCP",
    "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
    "source": "show_hn",
-   "score": 23,
+   "score": 24,
    "metric": "points",
    "rank": 3
   },
   {
-   "title": "Uber Parking",
-   "url": "https://www.producthunt.com/products/uber",
+   "title": "HiringNow",
+   "url": "https://www.producthunt.com/products/hiringnow",
    "source": "producthunt",
    "score": 20,
    "metric": "feed rank",
    "rank": 1
   },
   {
-   "title": "Businesses in ChatGPT",
-   "url": "https://www.producthunt.com/products/openai",
+   "title": "Dex Semantics",
+   "url": "https://www.producthunt.com/products/dex-by-exmergo",
    "source": "producthunt",
    "score": 19,
    "metric": "feed rank",
@@ -315,37 +315,37 @@
    "title": "Lovable apps expose passport details and more than 200K private messages",
    "url": "https://www.crissyfield.de/research/lovable-en/",
    "source": "hackernews",
-   "score": 760,
+   "score": 762,
    "metric": "points",
    "rank": 2,
-   "delta": 409
+   "delta": 411
   },
   {
    "title": "deepseek-ai/chat-demo",
    "url": "https://github.com/deepseek-ai/chat-demo",
    "source": "github_trending",
-   "score": 1904,
+   "score": 1906,
    "metric": "stars",
    "rank": 3,
-   "delta": 202
+   "delta": 204
   },
   {
    "title": "A family tree of software job titles",
    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
    "source": "hackernews",
-   "score": 275,
+   "score": 278,
    "metric": "points",
    "rank": 5,
-   "delta": 195
+   "delta": 198
   },
   {
    "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
    "url": "https://projectzero.google/2026/11/disclosure-policy.html",
    "source": "hackernews",
-   "score": 225,
+   "score": 226,
    "metric": "points",
    "rank": 7,
-   "delta": 163
+   "delta": 164
   },
   {
    "title": "KDE: The documentary [video]",
@@ -369,28 +369,28 @@
    "title": "adriadam10/mkw-recomp",
    "url": "https://github.com/adriadam10/mkw-recomp",
    "source": "github_trending",
-   "score": 987,
+   "score": 989,
    "metric": "stars",
    "rank": 10,
-   "delta": 127
+   "delta": 129
   },
   {
    "title": "apex-compute/ANR",
    "url": "https://github.com/apex-compute/ANR",
    "source": "github_trending",
-   "score": 1888,
+   "score": 1890,
    "metric": "stars",
    "rank": 4,
-   "delta": 104
+   "delta": 106
   },
   {
    "title": "Why get an expensive Pi when I have an old phone?",
    "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
    "source": "hackernews",
-   "score": 541,
+   "score": 544,
    "metric": "points",
    "rank": 3,
-   "delta": 102
+   "delta": 105
   },
   {
    "title": "huamidev/GestaltX",
@@ -405,10 +405,10 @@
    "title": "PyPI's redesigned project pages with clearer security signals are now live",
    "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
    "source": "hackernews",
-   "score": 230,
+   "score": 231,
    "metric": "points",
    "rank": 6,
-   "delta": 78
+   "delta": 79
   },
   {
    "title": "FrigadeHQ/yogurt",
@@ -441,10 +441,10 @@
    "title": "JDhruv14/line-art-animation",
    "url": "https://github.com/JDhruv14/line-art-animation",
    "source": "github_trending",
-   "score": 786,
+   "score": 787,
    "metric": "stars",
    "rank": 14,
-   "delta": 44
+   "delta": 45
   },
   {
    "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
@@ -459,10 +459,10 @@
    "title": "HolyArrs/HolyArrs",
    "url": "https://github.com/HolyArrs/HolyArrs",
    "source": "github_trending",
-   "score": 1203,
+   "score": 1205,
    "metric": "stars",
    "rank": 8,
-   "delta": 33
+   "delta": 35
   },
   {
    "title": "serveroshq/panel",
@@ -474,6 +474,15 @@
    "delta": 33
   },
   {
+   "title": "Kianuni/Erosion-CN",
+   "url": "https://github.com/Kianuni/Erosion-CN",
+   "source": "github_trending",
+   "score": 2084,
+   "metric": "stars",
+   "rank": 2,
+   "delta": 32
+  },
+  {
    "title": "agentes-chat/agentes-chat",
    "url": "https://github.com/agentes-chat/agentes-chat",
    "source": "github_trending",
@@ -481,15 +490,6 @@
    "metric": "stars",
    "rank": 7,
    "delta": 31
-  },
-  {
-   "title": "Kianuni/Erosion-CN",
-   "url": "https://github.com/Kianuni/Erosion-CN",
-   "source": "github_trending",
-   "score": 2082,
-   "metric": "stars",
-   "rank": 2,
-   "delta": 30
   }
  ],
  "droppers": [
@@ -509,15 +509,6 @@
    "score": 15,
    "metric": "points",
    "rank": 7,
-   "delta": 0
-  },
-  {
-   "title": "Ask HN: Best books you read in 2026?",
-   "url": "https://news.ycombinator.com/item?id=50501990",
-   "source": "ask_hn",
-   "score": 8,
-   "metric": "points",
-   "rank": 8,
    "delta": 0
   },
   {
@@ -627,6 +618,15 @@
    "metric": "reactions",
    "rank": 15,
    "delta": 0
+  },
+  {
+   "title": "Ask HN: Best books you read in 2026?",
+   "url": "https://news.ycombinator.com/item?id=50501990",
+   "source": "ask_hn",
+   "score": 9,
+   "metric": "points",
+   "rank": 8,
+   "delta": 1
   },
   {
    "title": "How did you end up in tech, and are you staying?",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15 07:09 UTC",
+  "generated": "2026-11-15 07:17 UTC",
   "unique_threads": 62,
   "themes": [
     {
@@ -39,10 +39,22 @@
       "theme": "claude",
       "threads": [
         {
+          "url": "https://news.ycombinator.com/item?id=50480941",
+          "title": "Claude AI Is Down",
+          "days_on_board": 1,
+          "max_score": 28
+        },
+        {
           "url": "https://news.ycombinator.com/item?id=50480936",
           "title": "Claude OAuth Failures",
           "days_on_board": 1,
           "max_score": 28
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50480909",
+          "title": "Tell HN: Claude Code Is Down",
+          "days_on_board": 1,
+          "max_score": 37
         },
         {
           "url": "https://news.ycombinator.com/item?id=50467233",
@@ -51,22 +63,10 @@
           "max_score": 6
         },
         {
-          "url": "https://news.ycombinator.com/item?id=50480941",
-          "title": "Claude AI Is Down",
-          "days_on_board": 1,
-          "max_score": 28
-        },
-        {
           "url": "https://news.ycombinator.com/item?id=50481347",
           "title": "Ask HN: What are you doing now that Claude is down?",
           "days_on_board": 2,
           "max_score": 7
-        },
-        {
-          "url": "https://news.ycombinator.com/item?id=50480909",
-          "title": "Tell HN: Claude Code Is Down",
-          "days_on_board": 1,
-          "max_score": 37
         }
       ],
       "score": 106,
@@ -84,6 +84,12 @@
       "theme": "google",
       "threads": [
         {
+          "url": "https://news.ycombinator.com/item?id=50491617",
+          "title": "Tell HN: Google Search to start locking down search behind a login wall",
+          "days_on_board": 2,
+          "max_score": 44
+        },
+        {
           "url": "https://news.ycombinator.com/item?id=50478730",
           "title": "Google search hides Nvidia stock graph",
           "days_on_board": 1,
@@ -94,12 +100,6 @@
           "title": "The absolute travesty that is Google",
           "days_on_board": 1,
           "max_score": 11
-        },
-        {
-          "url": "https://news.ycombinator.com/item?id=50491617",
-          "title": "Tell HN: Google Search to start locking down search behind a login wall",
-          "days_on_board": 2,
-          "max_score": 44
         }
       ],
       "score": 69,
@@ -117,10 +117,10 @@
       "theme": "human",
       "threads": [
         {
-          "url": "https://news.ycombinator.com/item?id=50481227",
-          "title": "Ask HN: Do you see a human written book more valuable than an AI written one?",
+          "url": "https://news.ycombinator.com/item?id=50421778",
+          "title": "Ask HN: As a human, are you glad the AI bubble is bursting?",
           "days_on_board": 1,
-          "max_score": 9
+          "max_score": 5
         },
         {
           "url": "https://news.ycombinator.com/item?id=50453369",
@@ -129,10 +129,10 @@
           "max_score": 8
         },
         {
-          "url": "https://news.ycombinator.com/item?id=50421778",
-          "title": "Ask HN: As a human, are you glad the AI bubble is bursting?",
+          "url": "https://news.ycombinator.com/item?id=50481227",
+          "title": "Ask HN: Do you see a human written book more valuable than an AI written one?",
           "days_on_board": 1,
-          "max_score": 5
+          "max_score": 9
         }
       ],
       "score": 22,
