@@ -113,6 +113,20 @@ def canon(_args):
     return 0
 
 
+def hiring(_args):
+    h = json.loads(fetch("data/hiring.json"))
+    t = h.get("threads", {})
+    hire, seek, free = t.get("hiring"), t.get("seeking"), t.get("freelancer")
+    month = (hire or seek or free or {}).get("month", "")
+    print(f"trendscope hiring pulse — {month}")
+    for label, th in (("hiring", hire), ("seeking", seek), ("freelancer", free)):
+        if th:
+            print(f"  {label:<10} {fmt(th['comments']):>6} comments   {th['url']}")
+    if hire and seek:
+        print(f"  ratio      {hire['comments']/seek['comments']:.2f} positions per seeker")
+    return 0
+
+
 def main():
     p = argparse.ArgumentParser(description="trendscope — the developer attention dataset, in your terminal")
     p.add_argument("-n", type=int, default=15, help="rows to show (board mode)")
@@ -120,6 +134,7 @@ def main():
     p.add_argument("--movers", action="store_true", help="today's board changes")
     p.add_argument("--week", action="store_true", help="last-7-day cumulative top")
     p.add_argument("--canon", action="store_true", help="HN all-time top stories")
+    p.add_argument("--hiring", action="store_true", help="HN who-is-hiring pulse")
     args = p.parse_args()
     try:
         if args.movers:
@@ -128,6 +143,8 @@ def main():
             return week(args)
         if args.canon:
             return canon(args)
+        if args.hiring:
+            return hiring(args)
         return board(args)
     except Exception as e:
         print(f"trendscope: fetch failed: {e}", file=sys.stderr)
