@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T18:19:30.935556+00:00",
+ "generated_at": "2026-11-15T18:21:58.396306+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 12259,
- "new_items": 12132,
+ "total_items": 12544,
+ "new_items": 12417,
  "by_source": {
   "show_hn": 46,
   "producthunt": 45,
@@ -337,16 +337,29 @@
   "jaejunyooblogspot": 15,
   "jankfree": 15,
   "janklang": 15,
+  "jasonformat": 15,
   "javascripttumblr": 15,
+  "jec": 15,
   "jefftk": 15,
+  "jeffy": 15,
+  "jessbpeck": 15,
+  "jessbudd": 15,
+  "jfhr": 15,
   "jmesnil": 15,
+  "johanhal": 15,
   "johnkeefe": 15,
   "johnmillikin": 15,
   "jolestar": 15,
+  "joreteg": 15,
+  "joshcollinsworth": 15,
   "joshuakgoldberg": 15,
+  "joshuatz": 15,
   "joshwcomeau": 15,
   "jrsinclair": 15,
+  "juffalow": 15,
   "julialang": 15,
+  "justinribeiro": 15,
+  "justmarkup": 15,
   "jvns": 15,
   "jyn": 15,
   "k8s": 15,
@@ -556,6 +569,7 @@
   "funwithforms": 11,
   "geoffreylitt": 11,
   "iainbean": 11,
+  "jjenzz": 11,
   "lobsters": 11,
   "wattenberger": 11,
   "0xdade": 10,
@@ -757,12 +771,17 @@
   "jalammargithub": 10,
   "jameshfisher": 10,
   "jamesmead": 10,
+  "jasonwilliamsco": 10,
+  "jebswebs": 10,
+  "jerryjones": 10,
   "jesseduffield": 10,
   "joeduffy": 10,
   "joelonsoftware": 10,
+  "johannesodlandgithub": 10,
   "justinfagnani": 10,
   "justinpot": 10,
   "jwz": 10,
+  "karlgroves": 10,
   "karpathy": 10,
   "katydecorah": 10,
   "kayserifserif": 10,
@@ -903,6 +922,7 @@
   "gtdstudy": 9,
   "hackaday": 9,
   "jaredpalmer": 9,
+  "jeremydormitzer": 9,
   "josebrowne": 9,
   "meta_eng": 9,
   "susam": 9,
@@ -919,6 +939,7 @@
   "socialclawhammer": 8,
   "forweb": 7,
   "gomakethings": 7,
+  "jgw96github": 7,
   "mangopdf": 7,
   "scriptsdotchatwordpress": 7,
   "webaxe": 7,
@@ -956,10 +977,13 @@
   "davidflanagan": 4,
   "github_trending": 4,
   "javascriptweekly": 4,
+  "jwdallas": 4,
+  "kevincox": 4,
   "thisweek": 4,
   "armin": 3,
   "ask_hn": 3,
   "evanminto": 3,
+  "jonneal": 3,
   "michaelfeathers": 3,
   "neugierig": 3,
   "prog21": 3,
@@ -970,6 +994,7 @@
   "dyskinetic": 2,
   "fathy": 2,
   "igor": 2,
+  "josephscott": 2,
   "nlpfast": 2,
   "bentojs": 1,
   "cnnr": 1,
@@ -60571,6 +60596,206 @@
    "metric": "feed rank"
   },
   {
+   "title": "Quick tip: reusable Array search predicates",
+   "url": "https://jasonformat.com/reusable-array-search-predicates",
+   "source": "jasonformat",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Element Worklet",
+   "url": "https://jasonformat.com/element-worklet",
+   "source": "jasonformat",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Real sleep() in JavaScript",
+   "url": "https://jasonformat.com/javascript-sleep",
+   "source": "jasonformat",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Event Listeners: Delegation VS Direct Binding",
+   "url": "https://jasonformat.com/event-delegation-vs-direct-binding",
+   "source": "jasonformat",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Islands Architecture",
+   "url": "https://jasonformat.com/islands-architecture",
+   "source": "jasonformat",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rome, a new JavaScript Toolchain",
+   "url": "https://jasonformat.com/rome-javascript-toolchain",
+   "source": "jasonformat",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Modern Script Loading",
+   "url": "https://jasonformat.com/modern-script-loading",
+   "source": "jasonformat",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Enabling Modern JavaScript on npm",
+   "url": "https://jasonformat.com/enabling-modern-js-on-npm",
+   "source": "jasonformat",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Application Holotypes: A Guide to Architecture Decisions",
+   "url": "https://jasonformat.com/application-holotypes",
+   "source": "jasonformat",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Preact AMA on Sideway",
+   "url": "https://jasonformat.com/preact-ama-on-sideway",
+   "source": "jasonformat",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Universal VDOM Components with factory-loader",
+   "url": "https://jasonformat.com/universal-vdom-components-with-factory-loader",
+   "source": "jasonformat",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "UMD is Dead! Long Live UMD!",
+   "url": "https://jasonformat.com/umd-is-dead-long-live-umd",
+   "source": "jasonformat",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Challenge for Centralized State",
+   "url": "https://jasonformat.com/a-challenge-for-centralized-state",
+   "source": "jasonformat",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Props Down, Events Up",
+   "url": "https://jasonformat.com/props-down-events-up",
+   "source": "jasonformat",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How CSS Modules Work (today)",
+   "url": "https://jasonformat.com/how-css-modules-work-today",
+   "source": "jasonformat",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Radio Explorer – What we’ve learned",
+   "url": "https://jason-williams.co.uk",
+   "source": "jasonwilliamsco",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rust Enhanced reaches 50k downloads",
+   "url": "https://jason-williams.co.uk",
+   "source": "jasonwilliamsco",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When should you show paddles within a carousel?",
+   "url": "https://jason-williams.co.uk",
+   "source": "jasonwilliamsco",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chromium adds initiator blackboxing",
+   "url": "https://jason-williams.co.uk",
+   "source": "jasonwilliamsco",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a JS Interpreter in Rust Part 1",
+   "url": "https://jason-williams.co.uk",
+   "source": "jasonwilliamsco",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a JS Interpreter in Rust Part 1",
+   "url": "https://jason-williams.co.uk",
+   "source": "jasonwilliamsco",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Promise.allSettled reaches stage 2",
+   "url": "https://jason-williams.co.uk",
+   "source": "jasonwilliamsco",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Debugging Rust in VSCode",
+   "url": "https://jason-williams.co.uk",
+   "source": "jasonwilliamsco",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Possible New Backend for Rust",
+   "url": "https://jason-williams.co.uk",
+   "source": "jasonwilliamsco",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speeding up VSCode (extensions) in 2022",
+   "url": "https://jason-williams.co.uk",
+   "source": "jasonwilliamsco",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Tumblr.js is back!",
    "url": "https://javascript.tumblr.com/post/727158498554707968",
    "source": "javascripttumblr",
@@ -60723,6 +60948,206 @@
    "metric": "feed rank"
   },
   {
+   "title": "Accessibility Tips – November 2026",
+   "url": "https://jebswebs.net/blog/2026/10/accessibility-tips-november-2026/",
+   "source": "jebswebs",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility Tips – October 2026",
+   "url": "https://jebswebs.net/blog/2026/09/accessibility-tips-october-2026/",
+   "source": "jebswebs",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility Tip – September 2026",
+   "url": "https://jebswebs.net/blog/2026/09/accessibility-tip-september-2026/",
+   "source": "jebswebs",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility Tips – August 2026",
+   "url": "https://jebswebs.net/blog/2026/07/accessibility-tips-august-2026/",
+   "source": "jebswebs",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility Tip – July 2026",
+   "url": "https://jebswebs.net/blog/2026/06/accessibility-tip-july-2026/",
+   "source": "jebswebs",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility Tip – June 2026",
+   "url": "https://jebswebs.net/blog/2026/05/accessibility-tip-june-2026/",
+   "source": "jebswebs",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Armstrong is in the House",
+   "url": "https://jebswebs.net/blog/2026/05/armstrong-is-in-the-house/",
+   "source": "jebswebs",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility Tip – May 2026",
+   "url": "https://jebswebs.net/blog/2026/05/accessibility-tip-may-2026/",
+   "source": "jebswebs",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility Tip: April 2026",
+   "url": "https://jebswebs.net/blog/2026/04/accessibility-tip-april-2026/",
+   "source": "jebswebs",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility Tip: March 2026",
+   "url": "https://jebswebs.net/blog/2026/02/accessibility-tip-march-2026/",
+   "source": "jebswebs",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Coding - The Power Language that Everyone can Speak",
+   "url": "https://jec.fish/deck/coding-the-powerful-language",
+   "source": "jec",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Processor Pattern with Angular Dependency Injection",
+   "url": "https://jec.fish/deck/angular-di-processor-pattern",
+   "source": "jec",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "以 PWA 實現 Angular 網站開發：離線、推播、Service Worker",
+   "url": "https://jec.fish/deck/angular-pwa-zh",
+   "source": "jec",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NGXS - State Management Made Simple",
+   "url": "https://jec.fish/deck/ngxs-state-management",
+   "source": "jec",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How We Built NG-MY Website",
+   "url": "https://jec.fish/deck/how-we-built-ng-my",
+   "source": "jec",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Performance Optimization",
+   "url": "https://jec.fish/deck/web-performance-optimization",
+   "source": "jec",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Modern JavaScript Frameworks and SEO",
+   "url": "https://jec.fish/deck/modern-js-frameworks-and-seo",
+   "source": "jec",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learning Functional Programming through Game",
+   "url": "https://jec.fish/deck/learning-rx-js-through-game",
+   "source": "jec",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "如何打造高性能，快速且SEO友好的单页应用（SPA）",
+   "url": "https://jec.fish/deck/spa-performance-zh",
+   "source": "jec",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing New Web APIs and Stylings",
+   "url": "https://jec.fish/deck/new-web-apis-and-stylings",
+   "source": "jec",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Becoming a GDE - What, Why, and How",
+   "url": "https://jec.fish/deck/becoming-a-gde",
+   "source": "jec",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Links to My Previous Write-Ups",
+   "url": "https://jec.fish/blog/past-write-ups",
+   "source": "jec",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building Personal Static Site with Eleventy",
+   "url": "https://jec.fish/blog/building-my-static-site-with-11ty",
+   "source": "jec",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Setting up GitHub Actions and Firebase Hosting",
+   "url": "https://jec.fish/blog/setting-up-github-actions-and-firebase-hosting",
+   "source": "jec",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Customizing File Structure, URLs and Browsersync",
+   "url": "https://jec.fish/blog/customizing-file-structure-urls-browsersync",
+   "source": "jec",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Reading Speculations Concerning the First Ultraintelligent Machine",
    "url": "https://www.jefftk.com/p/reading-speculations-concerning-the-first-ultraintelligent-machine",
    "source": "jefftk",
@@ -60838,6 +61263,518 @@
    "title": "Offer Tours to Bands",
    "url": "https://www.jefftk.com/p/offer-tours-to-bands",
    "source": "jefftk",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Which Mastodon servers are the accounts you follow on?",
+   "url": "/2022/11/19/following-mastodon-servers.html",
+   "source": "jeffy",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How do you test a service worker, anyway?",
+   "url": "/2022/08/25/testing-a-service-worker.html",
+   "source": "jeffy",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Smarter runtime caching of hashed assets",
+   "url": "/2021/10/10/smart-caching-hashes.html",
+   "source": "jeffy",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Precaching vs. runtime caching",
+   "url": "/2021/07/26/precaching-vs-runtime-caching.html",
+   "source": "jeffy",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing your build scripts in TypeScript",
+   "url": "/2021/07/25/esrun.html",
+   "source": "jeffy",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Service worker rendering, in the cloud and in the browser",
+   "url": "/2021/07/17/sw-rendering.html",
+   "source": "jeffy",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using npm modules inside of Apps Script",
+   "url": "/2021/07/12/npm-from-apps-script.html",
+   "source": "jeffy",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Debugging a specific service worker request",
+   "url": "/2021/03/11/debugging-sw-request.html",
+   "source": "jeffy",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Testing multiple versions of a module dependency",
+   "url": "/2020/10/01/testing-multiple-webpack-versions.html",
+   "source": "jeffy",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Performance auditing an eCommerce site",
+   "url": "/2020/04/06/live-site-audit.html",
+   "source": "jeffy",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exposing headers on CORS responses",
+   "url": "/2019/07/22/exposing-cors-headers.html",
+   "source": "jeffy",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "That time I used a generator",
+   "url": "/2019/03/22/that-time-i-used-a-generator.html",
+   "source": "jeffy",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Styling inline scripts",
+   "url": "/2019/03/14/styling-inline-scripts.html",
+   "source": "jeffy",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Service workers in create-react-app v2",
+   "url": "/2018/10/10/sw-in-c-r-a.html",
+   "source": "jeffy",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Something Brewing",
+   "url": "/2018/09/30/something-brewing.html",
+   "source": "jeffy",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "State of unifyDB: 2021",
+   "url": "https://jeremydormitzer.com/blog/state-of-unifydb-2021.html",
+   "source": "jeremydormitzer",
+   "rank": 1,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a purely-functional static site generator",
+   "url": "https://jeremydormitzer.com/blog/building-a-purely-functional-static-site-generator.html",
+   "source": "jeremydormitzer",
+   "rank": 2,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "unifyDB Dev Diary 1: the query system",
+   "url": "https://jeremydormitzer.com/blog/unifydb-dev-diary-1-query.html",
+   "source": "jeremydormitzer",
+   "rank": 3,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "unifyDB Dev Diary 0: I’m building a database!",
+   "url": "https://jeremydormitzer.com/blog/unifydb-dev-diary-0-intro.html",
+   "source": "jeremydormitzer",
+   "rank": 4,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "More than JSON: ActivityPub and JSON-LD",
+   "url": "https://jeremydormitzer.com/blog/more-than-json.html",
+   "source": "jeremydormitzer",
+   "rank": 5,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ActivityPub: Good enough for jazz",
+   "url": "https://jeremydormitzer.com/blog/activitypub-good-enough-for-jazz.html",
+   "source": "jeremydormitzer",
+   "rank": 6,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Pterotype",
+   "url": "https://jeremydormitzer.com/blog/announcing-pterotype.html",
+   "source": "jeremydormitzer",
+   "rank": 7,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is ActivityPub, and how will it change the internet?",
+   "url": "https://jeremydormitzer.com/blog/what-is-activitypub.html",
+   "source": "jeremydormitzer",
+   "rank": 8,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A DSL for music",
+   "url": "https://jeremydormitzer.com/blog/a-dsl-for-music.html",
+   "source": "jeremydormitzer",
+   "rank": 9,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Improving Procedural AI Reliability",
+   "url": "https://jerryjones.dev/2026/05/19/improving-procedural-ai-reliability/",
+   "source": "jerryjones",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Future of AI UX Is Not Just Chat: Building a WordPress-based personal grocery shopping assistant",
+   "url": "https://jerryjones.dev/2026/05/14/the-future-of-ai-ux-is-not-just-chat-building-a-wordpress-based-personal-grocery-shopping-assistant/",
+   "source": "jerryjones",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lessons from Hiring Software Engineers",
+   "url": "https://jerryjones.dev/2021/05/27/lessons-from-hiring-software-engineers/",
+   "source": "jerryjones",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tips for Text-based Interviews",
+   "url": "https://jerryjones.dev/2021/04/21/tips-for-text-based-interviews/",
+   "source": "jerryjones",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Incremental Simplicity",
+   "url": "https://jerryjones.dev/2021/02/02/incremental-simplicity/",
+   "source": "jerryjones",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Qualities of Expertise",
+   "url": "https://jerryjones.dev/2021/01/07/qualities-of-expertise/",
+   "source": "jerryjones",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "It’s OK to Move On",
+   "url": "https://jerryjones.dev/2020/12/28/its-ok-to-give-in/",
+   "source": "jerryjones",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Flickering Lights and Simple Fixes",
+   "url": "https://jerryjones.dev/2020/12/24/flickering-lights-and-easy-fixes/",
+   "source": "jerryjones",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Greenhouse Scorecard User Scripts",
+   "url": "https://jerryjones.dev/2020/12/09/greenhouse-scorecard-user-scripts/",
+   "source": "jerryjones",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Honesty in Anonymous vs Confidential Surveys",
+   "url": "https://jerryjones.dev/2020/11/25/honesty-in-anonymous-vs-confidential-surveys/",
+   "source": "jerryjones",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating Affirmations with a Google Translate Glitch",
+   "url": "https://jessbpeck.com/posts/translation/",
+   "source": "jessbpeck",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fun with Jeremy, my Test Action on Google, and Response Character Limits",
+   "url": "https://jessbpeck.com/posts/jeremy/",
+   "source": "jessbpeck",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Devtools, JS Snippets, and the Effect of Ads on Site Speed",
+   "url": "https://jessbpeck.com/posts/devtools/",
+   "source": "jessbpeck",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "So Let's Talk About Bounce Rate as a Ranking Factor",
+   "url": "https://jessbpeck.com/posts/bouncerate/",
+   "source": "jessbpeck",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chick Fil A, NLP, and the Knowledge Graph",
+   "url": "https://jessbpeck.com/posts/chickfilandnlp/",
+   "source": "jessbpeck",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Don't use AccessiBe (And other automated follies)",
+   "url": "https://jessbpeck.com/posts/enemytools/",
+   "source": "jessbpeck",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Advanced Tech SEO Slides and Resources",
+   "url": "https://jessbpeck.com/posts/advancedtechtalk/",
+   "source": "jessbpeck",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Truth vs. Truthiness | The Philosophy of Search Results",
+   "url": "https://jessbpeck.com/posts/truthvstruthiness/",
+   "source": "jessbpeck",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2021 SEO Predictions Bingo",
+   "url": "https://jessbpeck.com/posts/seopredictionbingo/",
+   "source": "jessbpeck",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Almost-Complete Guide to Cumulative Layout Shift",
+   "url": "https://jessbpeck.com/posts/completecls/",
+   "source": "jessbpeck",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Forget Mobile-First or Mobile-Only-- It's Time to Get Truly Responsive",
+   "url": "https://jessbpeck.com/posts/mobilefriendllyfirst/",
+   "source": "jessbpeck",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Guide To Artificial Intelligence in Easy English",
+   "url": "https://jessbpeck.com/posts/artificialintelligence/",
+   "source": "jessbpeck",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2023 in SEO with Data Science",
+   "url": "https://jessbpeck.com/posts/seoin2023/",
+   "source": "jessbpeck",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your AI Optimism is Going to Kill Someone",
+   "url": "https://jessbpeck.com/posts/YourAIOptimismisGoingtoKillSomeone/",
+   "source": "jessbpeck",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How and Why Google Made its Own Product Worse",
+   "url": "https://jessbpeck.com/posts/googlesaiisbad/",
+   "source": "jessbpeck",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What I've learned about the web industry",
+   "url": "http://jessbudd.com/blog/learned-about-web-industry/",
+   "source": "jessbudd",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The best tech podcasts",
+   "url": "http://jessbudd.com/blog/best-tech-podcasts/",
+   "source": "jessbudd",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web accessibility 101",
+   "url": "http://jessbudd.com/blog/web-accessibility-101/",
+   "source": "jessbudd",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I set up git aliases on bash",
+   "url": "http://jessbudd.com/blog/setting-up-git-aliases/",
+   "source": "jessbudd",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fixing npm EACCESS errors",
+   "url": "http://jessbudd.com/blog/fixing-npm-permission-error/",
+   "source": "jessbudd",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The year I became a conference speaker (Part One)",
+   "url": "http://jessbudd.com/blog/the-year-i-became-conference-speaker/",
+   "source": "jessbudd",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The year I became a conference speaker (Part Two)",
+   "url": "http://jessbudd.com/blog/the-year-i-became-conference-speaker-2/",
+   "source": "jessbudd",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hiding content accessibly",
+   "url": "http://jessbudd.com/blog/hiding-content-accessibly/",
+   "source": "jessbudd",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The year I became a conference speaker (conclusion)",
+   "url": "http://jessbudd.com/blog/year-I-became-conference-speaker-3/",
+   "source": "jessbudd",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Getting into front-end development",
+   "url": "http://jessbudd.com/blog/resources-for-getting-into-front-end-development/",
+   "source": "jessbudd",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Add an 'Old Content' warning in Eleventy",
+   "url": "http://jessbudd.com/blog/add-old-post-content-warning-in-eleventy/",
+   "source": "jessbudd",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Automate checking a ticket system's availability with Node.js and Pipedream",
+   "url": "http://jessbudd.com/blog/automate-ticket-availability-scraping/",
+   "source": "jessbudd",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 takeaways from screen reader usability interviews",
+   "url": "http://jessbudd.com/blog/screen-reader-usability-testing-observations/",
+   "source": "jessbudd",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The simple joy of building small things",
+   "url": "http://jessbudd.com/blog/the-simple-joy-of-building-small-things/",
+   "source": "jessbudd",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Typeform input announcing [object object] in screen readers",
+   "url": "http://jessbudd.com/blog/typeform-object-object-screenreader-issue/",
+   "source": "jessbudd",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -61015,6 +61952,270 @@
    "url": "https://blog.jetbrains.com/teamcity/2026/11/debug-unity-builds-from-rider-with-teamcity-cli-mcp/",
    "source": "jetbrains",
    "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How many fingers?",
+   "url": "https://jfhr.me",
+   "source": "jfhr",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The data element",
+   "url": "https://jfhr.me",
+   "source": "jfhr",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Use the tor browser",
+   "url": "https://jfhr.me",
+   "source": "jfhr",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HTTP security headers on error pages",
+   "url": "https://jfhr.me/http-headers-error-pages",
+   "source": "jfhr",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Streaming HTML inside the DOM",
+   "url": "https://jfhr.me/streaming-html-inside-the-dom",
+   "source": "jfhr",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ways to reset an HTML form",
+   "url": "https://jfhr.me/ways-to-reset-an-html-form",
+   "source": "jfhr",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GitHub Copilot and HTTP form injection",
+   "url": "https://jfhr.me/github-copilot-and-form-injection",
+   "source": "jfhr",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HTML, NPF and other markup formats",
+   "url": "https://jfhr.me/html-npf-and-other-markup-formats",
+   "source": "jfhr",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sorting a JavaScript array of objects by a property value",
+   "url": "https://jfhr.me/sort-javascript-array-by-property",
+   "source": "jfhr",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fungible Tokens and Decentralized Exchanges",
+   "url": "https://jfhr.me/fungible-tokens-and-decentralized-exchanges",
+   "source": "jfhr",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Consider using CSV",
+   "url": "https://jfhr.me/consider-using-csv",
+   "source": "jfhr",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Talking to yourself",
+   "url": "https://jfhr.me/talking-to-yourself",
+   "source": "jfhr",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Estimate Firestore collection count from a small sample of documents",
+   "url": "https://jfhr.me/estimate-firestore-collection-count",
+   "source": "jfhr",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Strict Transport Security and preloading",
+   "url": "https://jfhr.me/strict-transport-security-and-preloading",
+   "source": "jfhr",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is an eTLD + 1?",
+   "url": "https://jfhr.me/what-is-an-etld-+-1",
+   "source": "jfhr",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bringing AI to the Browser - On-Device AI with the Web AI Toolkit",
+   "url": "https://cascadia.computer/cascadia.computer/_site/blog/ondeviceai/",
+   "source": "jgw96github",
+   "rank": 1,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Progressive Web Apps - An Intro + Answering some common questions",
+   "url": "https://cascadia.computer/cascadia.computer/_site/blog/pwacommonquestions/",
+   "source": "jgw96github",
+   "rank": 2,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Upgrade your Progressive Web App",
+   "url": "https://cascadia.computer/cascadia.computer/_site/blog/upgradeyourpwa/",
+   "source": "jgw96github",
+   "rank": 3,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is a PWA?",
+   "url": "https://cascadia.computer/cascadia.computer/_site/blog/whatisapwa/",
+   "source": "jgw96github",
+   "rank": 4,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building Memos AI, a developers perspective",
+   "url": "https://cascadia.computer/cascadia.computer/_site/blog/memosai/",
+   "source": "jgw96github",
+   "rank": 5,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How do I, a web developer, build an app?",
+   "url": "https://cascadia.computer/cascadia.computer/_site/blog/pwasinappstores/",
+   "source": "jgw96github",
+   "rank": 6,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hello World",
+   "url": "https://cascadia.computer/cascadia.computer/_site/blog/helloworld/",
+   "source": "jgw96github",
+   "rank": 7,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making React Context Cheap with React Compiler",
+   "url": "https://jjenzz.com/making-react-context-cheap",
+   "source": "jjenzz",
+   "rank": 1,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Best Loading States Are No Loading States",
+   "url": "https://jjenzz.com/best-loading-states-are-no-loading-states",
+   "source": "jjenzz",
+   "rank": 2,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Judging APIs by Syntax is Misleading You",
+   "url": "https://jjenzz.com/judging-apis-by-syntax-is-misleading",
+   "source": "jjenzz",
+   "rank": 3,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Zero is Not Local-First. It's Better.",
+   "url": "https://jjenzz.com/zero-is-not-local-first-its-better",
+   "source": "jjenzz",
+   "rank": 4,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Future for Web Components Without Shadow DOM",
+   "url": "https://jjenzz.com/future-for-web-components-without-shadow-dom",
+   "source": "jjenzz",
+   "rank": 5,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Challenging Established Norms: Making Component Fetching the Exception",
+   "url": "https://jjenzz.com/making-component-fetching-the-exception",
+   "source": "jjenzz",
+   "rank": 6,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Progressively Enhance for a More Resilient Web",
+   "url": "https://jjenzz.com/progressively-enhance-for-a-more-resilient-web",
+   "source": "jjenzz",
+   "rank": 7,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Avoid Global State, Co-locate with Uncontrolled Compound Components",
+   "url": "https://jjenzz.com/avoid-global-state-colocate",
+   "source": "jjenzz",
+   "rank": 8,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Are You a Component Control Freak?",
+   "url": "https://jjenzz.com/component-control-freak",
+   "source": "jjenzz",
+   "rank": 9,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Smarter, Dumb Breadcrumb",
+   "url": "https://jjenzz.com/smarter-dumb-breadcrumb",
+   "source": "jjenzz",
+   "rank": 10,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Compound Components",
+   "url": "https://jjenzz.com/compound-components",
+   "source": "jjenzz",
+   "rank": 11,
    "score": 1,
    "metric": "feed rank"
   },
@@ -61294,6 +62495,206 @@
    "title": "A Dusting of Gamification",
    "url": "https://www.joelonsoftware.com/2018/04/13/gamification/",
    "source": "joelonsoftware",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Use string-backed enums",
+   "url": "https://johan.hal.se/wrote/2026/05/04/use-string-backed-enums",
+   "source": "johanhal",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Sideprocalypse",
+   "url": "https://johan.hal.se/wrote/2026/02/03/the-sideprocalypse",
+   "source": "johanhal",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Retrofuture",
+   "url": "https://johan.hal.se/wrote/2025/12/11/retrofuture",
+   "source": "johanhal",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "David, please stop posting",
+   "url": "https://johan.hal.se/wrote/2025/09/26/david-please-stop-posting",
+   "source": "johanhal",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Average",
+   "url": "https://johan.hal.se/wrote/2025/06/19/average",
+   "source": "johanhal",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pressing pause",
+   "url": "https://johan.hal.se/wrote/2025/02/18/pressing-pause",
+   "source": "johanhal",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Spice",
+   "url": "https://johan.hal.se/wrote/2024/12/02/the-spice",
+   "source": "johanhal",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Turbo considered harmful",
+   "url": "https://johan.hal.se/wrote/2024/11/19/turbo-considered-harmful",
+   "source": "johanhal",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Baby unit tests",
+   "url": "https://johan.hal.se/wrote/2024/11/15/baby-unit-tests",
+   "source": "johanhal",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Being a dick",
+   "url": "https://johan.hal.se/wrote/2024/06/11/being-a-dick",
+   "source": "johanhal",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Parenting",
+   "url": "https://johan.hal.se/wrote/2024/06/05/parenting",
+   "source": "johanhal",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Churn",
+   "url": "https://johan.hal.se/wrote/2024/03/05/churn",
+   "source": "johanhal",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Care",
+   "url": "https://johan.hal.se/wrote/2024/02/28/care",
+   "source": "johanhal",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I'm not holding it wrong, YOU'RE holding it wrong",
+   "url": "https://johan.hal.se/wrote/2024/02/20/im-not-holding-it-wrong-youre-holding-it-wrong",
+   "source": "johanhal",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Concatenating text",
+   "url": "https://johan.hal.se/wrote/2024/01/24/concatenating-text",
+   "source": "johanhal",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Wish 24: ::first-letter",
+   "url": "https://johannesodland.github.io/2024/12/24/web-wish-24-first-letter.html",
+   "source": "johannesodlandgithub",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Wish 23: Children Changed Callback",
+   "url": "https://johannesodland.github.io/2024/12/23/web-wish-23-children-changed-callback.html",
+   "source": "johannesodlandgithub",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Wish 22: Flex-Wrap Balance",
+   "url": "https://johannesodland.github.io/2024/12/22/web-wish-22-flex-wrap-balance.html",
+   "source": "johannesodlandgithub",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Wish 21: Has Slotted",
+   "url": "https://johannesodland.github.io/2024/12/21/web-wish-21-has-slotted.html",
+   "source": "johannesodlandgithub",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Wish 20: Text Fill",
+   "url": "https://johannesodland.github.io/2024/12/20/web-wish-20-text-fill.html",
+   "source": "johannesodlandgithub",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Wish 19: Display Invisible Characters",
+   "url": "https://johannesodland.github.io/2024/12/19/web-wish-19-display-invisible-characters.html",
+   "source": "johannesodlandgithub",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Wish 18: Sticky Next",
+   "url": "https://johannesodland.github.io/2024/12/18/web-wish-18-sticky-next.html",
+   "source": "johannesodlandgithub",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Wish 17: Viewport Relative Lengths",
+   "url": "https://johannesodland.github.io/2024/12/17/web-wish-17-viewport-relative-lengths.html",
+   "source": "johannesodlandgithub",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Wish 16: Role Text Next",
+   "url": "https://johannesodland.github.io/2024/12/16/web-wish-16-role-text-alternative.html",
+   "source": "johannesodlandgithub",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Wish 15: Transparent Video",
+   "url": "https://johannesodland.github.io/2024/12/15/web-wish-15-transparent-video.html",
+   "source": "johannesodlandgithub",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -61755,6 +63156,150 @@
    "metric": "feed rank"
   },
   {
+   "title": "Observing CSS",
+   "url": "https://jonneal.dev/blog/observing-css/",
+   "source": "jonneal",
+   "rank": 1,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Better Elements with Astro",
+   "url": "https://jonneal.dev/blog/better-elements-with-astro/",
+   "source": "jonneal",
+   "rank": 2,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Affordances",
+   "url": "https://jonneal.dev/blog/affordances/",
+   "source": "jonneal",
+   "rank": 3,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Project Fugu: A New Hope",
+   "url": "https://joreteg.com/blog/project-fugu-a-new-hope",
+   "source": "joreteg",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Improving Redux state transfer performance with JSON.parse(), a quick case study",
+   "url": "https://joreteg.com/blog/improving-redux-state-transfer-performance",
+   "source": "joreteg",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Architecting UIs for Change",
+   "url": "https://joreteg.com/blog/architecting-uis-for-change",
+   "source": "joreteg",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building Honey Badger Web Apps",
+   "url": "https://joreteg.com/blog/honey-badger-web-apps",
+   "source": "joreteg",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A PWA that Spawns PWAs, Oh My!",
+   "url": "https://joreteg.com/blog/pwa-spawns-pwas",
+   "source": "joreteg",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Betting on the Web",
+   "url": "https://joreteg.com/blog/betting-on-the-web",
+   "source": "joreteg",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Installing web apps on phones (for real)",
+   "url": "https://joreteg.com/blog/installing-web-apps-for-real",
+   "source": "joreteg",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I switched to Android after 7 years of iOS",
+   "url": "https://joreteg.com/blog/why-i-switched-to-android",
+   "source": "joreteg",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The viability of JS frameworks on mobile",
+   "url": "https://joreteg.com/blog/viability-of-js-frameworks-on-mobile",
+   "source": "joreteg",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reactive Programming",
+   "url": "https://joreteg.com/blog/reactive-programming",
+   "source": "joreteg",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The next adventure awaits",
+   "url": "https://joreteg.com/blog/the-next-adventure-awaits",
+   "source": "joreteg",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "a tech industry conversation",
+   "url": "https://joreteg.com/blog/a-tech-industry-conversation",
+   "source": "joreteg",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CEO of Coca-Cola on Balance",
+   "url": "https://joreteg.com/blog/imagine-life-as-a-game-in-which-you-are-juggling",
+   "source": "joreteg",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Back from the Future Insights Live in Las Vegas",
+   "url": "https://joreteg.com/blog/back-from-the-future-insights-live-in-las-vegas",
+   "source": "joreteg",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My interview with Mac Slocum at FluentConf 2015",
+   "url": "https://joreteg.com/blog/an-interview-i-did-with-oreillys-mac-slocum-at",
+   "source": "joreteg",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "On Coding, Ego and Attention",
    "url": "https://josebrowne.com/on-coding-ego-and-attention/",
    "source": "josebrowne",
@@ -61823,6 +63368,142 @@
    "url": "https://josebrowne.com/launched/",
    "source": "josebrowne",
    "rank": 9,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Type Casting and Null Coalescing Precedence in PHP",
+   "url": "https://josephscott.org/blog/2026/09/type-casting-and-null-coalescing-precedence-in-php/",
+   "source": "josephscott",
+   "rank": 1,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Trip to Infinity",
+   "url": "https://josephscott.org/blog/2026/08/a-trip-to-infinity/",
+   "source": "josephscott",
+   "rank": 2,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The story of Tupo, my new daily logic puzzle",
+   "url": "https://joshcollinsworth.com/blog/tupo",
+   "source": "joshcollinsworth",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In defense of two-state theme toggles",
+   "url": "https://joshcollinsworth.com/blog/in-defense-of-two-state-theme-toggles",
+   "source": "joshcollinsworth",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "LLMs and performative productivity",
+   "url": "https://joshcollinsworth.com/blog/productivity",
+   "source": "joshcollinsworth",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Man Cereal",
+   "url": "https://joshcollinsworth.com/blog/man-cereal",
+   "source": "joshcollinsworth",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My review of the Nüborn Baby at 3 months",
+   "url": "https://joshcollinsworth.com/blog/baby-review",
+   "source": "joshcollinsworth",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2025 Year in Review",
+   "url": "https://joshcollinsworth.com/blog/2025",
+   "source": "joshcollinsworth",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI optimism is a class privilege",
+   "url": "https://joshcollinsworth.com/blog/sloptimism",
+   "source": "joshcollinsworth",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Alchemy",
+   "url": "https://joshcollinsworth.com/blog/alchemy",
+   "source": "joshcollinsworth",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Titles matter",
+   "url": "https://joshcollinsworth.com/blog/titles-matter",
+   "source": "joshcollinsworth",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The blissful zen of a good side project",
+   "url": "https://joshcollinsworth.com/blog/the-blissful-zen-of-a-good-side-project",
+   "source": "joshcollinsworth",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Goodbye, Griff. You were a good boy.",
+   "url": "https://joshcollinsworth.com/blog/goodbye-griff",
+   "source": "joshcollinsworth",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rare words in common phrases, and how to avoid getting them wrong",
+   "url": "https://joshcollinsworth.com/blog/rare-words-in-common-phrases",
+   "source": "joshcollinsworth",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Things I enjoyed in 2024",
+   "url": "https://joshcollinsworth.com/blog/enjoyed-in-2024",
+   "source": "joshcollinsworth",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The childlike and the childish",
+   "url": "https://joshcollinsworth.com/blog/childlike-and-childish",
+   "source": "joshcollinsworth",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A response to \"Defending Open Source: Protecting the Future of WordPress\"",
+   "url": "https://joshcollinsworth.com/blog/response-to-defending-open-source",
+   "source": "joshcollinsworth",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -61942,6 +63623,126 @@
    "title": "Don't Write Bad Code",
    "url": "https://joshuakgoldberg.com/blog/dont-write-bad-code/",
    "source": "joshuakgoldberg",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Depth-Viewport: A Headset-Free 2D to 3D Web App Demo",
+   "url": "https://joshuatz.com/projects/web-stuff/depth-viewport-a-headset-free-2d-to-3d-web-app-demo/",
+   "source": "joshuatz",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Surprising Python Gotcha - Clashing Package Names",
+   "url": "https://joshuatz.com/posts/2026/a-surprising-python-gotcha---clashing-package-names/",
+   "source": "joshuatz",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Developing with Astro - Notes on Some Random Rough Edges",
+   "url": "https://joshuatz.com/posts/2026/developing-with-astro---notes-on-some-random-rough-edges/",
+   "source": "joshuatz",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Yet Another Site Rebuild",
+   "url": "https://joshuatz.com/posts/2026/yet-another-site-rebuild/",
+   "source": "joshuatz",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Makes Svelte So Great - Features and Comparisons",
+   "url": "https://joshuatz.com/posts/2023/what-makes-svelte-so-great-features-and-comparisons/",
+   "source": "joshuatz",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shell Heredocs - for Fun and Profit, in Bash and Beyond",
+   "url": "https://joshuatz.com/posts/2023/shell-heredocs-productive-fun-bash-and-beyond/",
+   "source": "joshuatz",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing Slack Messages with Markdown (Multiple Options)",
+   "url": "https://joshuatz.com/posts/2023/writing-slack-messages-with-markdown/",
+   "source": "joshuatz",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We Should Care More About Higher Level Documentation",
+   "url": "https://joshuatz.com/posts/2022/high-level-docs-matter/",
+   "source": "joshuatz",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pytest Productivity - Tips I Wish I Had Known Sooner",
+   "url": "https://joshuatz.com/posts/2022/pytest-productivity-tips/",
+   "source": "joshuatz",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Bulk Delete Album or Track Scrobbles on Last.fm",
+   "url": "https://joshuatz.com/posts/2022/bulk-delete-scrobbles-on-last-fm/",
+   "source": "joshuatz",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "YouTube History Bulk Deletion Script",
+   "url": "https://gist.github.com/joshuatz/8dd1c5c3714b9ab615853a0c8c163626",
+   "source": "joshuatz",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nook Simple Touch - Factory Reset & Bypass Network Error",
+   "url": "https://joshuatz.com/posts/2022/nook-simple-touch-factory-reset-bypass-network-error/",
+   "source": "joshuatz",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Support Me and My Content",
+   "url": "https://joshuatz.com/support-me/",
+   "source": "joshuatz",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing for DigitalOcean - Gatsby Tutorial Series",
+   "url": "https://www.digitalocean.com/community/tutorial_series/how-to-create-static-web-sites-with-gatsby-js",
+   "source": "joshuatz",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Canvas Hit Detection Methods - With or Without Tolerances",
+   "url": "https://joshuatz.com/posts/2022/canvas-hit-detection-methods/",
+   "source": "joshuatz",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -62182,6 +63983,126 @@
    "title": "Sick of the stupid jokes? Write your own arbitrary-precision JavaScript math library",
    "url": "https://jrsinclair.com/articles/2020/sick-of-the-jokes-write-your-own-arbitrary-precision-javascript-math-library/",
    "source": "jrsinclair",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cost of learning",
+   "url": "https://juffalow.com/blog/other/cost-of-learning",
+   "source": "juffalow",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AWS X-Ray used in Node.js project running in AWS ECS",
+   "url": "https://juffalow.com/blog/node/aws-xray",
+   "source": "juffalow",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Node.js and AWS Cognito Part #1",
+   "url": "https://juffalow.com/blog/node/nodejs-and-aws-cognito-part-1",
+   "source": "juffalow",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I failed during firing a developer",
+   "url": "https://juffalow.com/blog/cto/how-i-failed-during-firing-a-developer",
+   "source": "juffalow",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Extend logs in Node.js with unique trace ID",
+   "url": "https://juffalow.com/blog/node/extend-logs-in-nodejs-with-unique-trace-id",
+   "source": "juffalow",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to deploy Docusaurus page using AWS S3 and CloudFront",
+   "url": "https://juffalow.com/blog/other/how-to-deploy-docusaurus-page-using-aws-s3-and-cloudfront",
+   "source": "juffalow",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Non-root containers in Kubernetes",
+   "url": "https://juffalow.com/blog/javascript/non-root-containers-in-kubernetes",
+   "source": "juffalow",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Run simple Node.js application in Kubernetes cluster",
+   "url": "https://juffalow.com/blog/javascript/run-simple-node-application-in-kubernetes-cluster",
+   "source": "juffalow",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Summit 2021",
+   "url": "https://juffalow.com/blog/other/web-summit-2021",
+   "source": "juffalow",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Build Node, Typescript and GraphQL server from scratch",
+   "url": "https://juffalow.com/blog/javascript/build-node-typescript-and-graphql-server-from-scratch",
+   "source": "juffalow",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Publish NPM package with GitHub Actions",
+   "url": "https://juffalow.com/blog/javascript/publish-npm-package-with-github-actions",
+   "source": "juffalow",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My StartUp Experiences",
+   "url": "https://juffalow.com/blog/other/my-startup-experiences",
+   "source": "juffalow",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chesterton's fence",
+   "url": "https://juffalow.com/blog/other/chestertons-fence",
+   "source": "juffalow",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to install XDebug on MacOS (XAMPP)",
+   "url": "https://juffalow.com/blog/php/how-to-install-xdebug-on-macos-xampp",
+   "source": "juffalow",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Git commands that you might need sometime",
+   "url": "https://juffalow.com/blog/git/git-commands-that-you-might-need-sometime",
+   "source": "juffalow",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -62467,6 +64388,246 @@
    "metric": "feed rank"
   },
   {
+   "title": "Supporting Citation Managers and Google Scholar with PDFs",
+   "url": "https://justinribeiro.com/chronicle/2026/11/09/supporting-citation-managers-and-google-scholar-with-pdfs/",
+   "source": "justinribeiro",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creativity in Software Development: A Review",
+   "url": "https://justinribeiro.com/chronicle/2026/11/04/creativity-in-software-development-a-review/",
+   "source": "justinribeiro",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a Vacuum Former for Making Cosplay Parts",
+   "url": "https://justinribeiro.com/chronicle/2026/11/02/building-a-vacuum-former-for-making-cosplay-parts/",
+   "source": "justinribeiro",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "This Site, Now Registered with an International Standard Serial Number",
+   "url": "https://justinribeiro.com/chronicle/2026/10/22/this-site-now-registered-with-an-international-standard-serial-number/",
+   "source": "justinribeiro",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your Math Is Not Thinking",
+   "url": "https://justinribeiro.com/chronicle/2026/10/16/your-math-is-not-thinking/",
+   "source": "justinribeiro",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Paint Hoods Are Designed Around What You Have",
+   "url": "https://justinribeiro.com/chronicle/2026/10/12/paint-hoods-are-designed-around-what-you-have/",
+   "source": "justinribeiro",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Public Comment at Riverbank Unified School District board meeting regarding RAME",
+   "url": "https://justinribeiro.com/chronicle/2026/10/06/my-public-comment-at-riverbank-unified-school-district-board-meeting-regarding-rame/",
+   "source": "justinribeiro",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Printing Small Text with a 0.2mm HotEnd to Make Fuck AI Glasses",
+   "url": "https://justinribeiro.com/chronicle/2026/09/28/printing-small-text-with-a-0.2mm-hotend-to-make-fuck-ai-glasses/",
+   "source": "justinribeiro",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Resurrecting the Epson Stylus Photo R3000 with Precision Colors Inkset",
+   "url": "https://justinribeiro.com/chronicle/2026/09/23/resurrecting-the-epson-stylus-photo-r3000-with-precision-colors-inkset/",
+   "source": "justinribeiro",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "When Research Methodology Lacks",
+   "url": "https://justinribeiro.com/chronicle/2026/09/16/when-research-methodology-lacks/",
+   "source": "justinribeiro",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Public Comment at Riverbank Unified School District board meeting regarding RAME",
+   "url": "https://justinribeiro.com/chronicle/2026/09/02/my-public-comment-at-riverbank-unified-school-district-board-meeting-regarding-rame/",
+   "source": "justinribeiro",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Designing a Replacement Latch for the Dyson v11 Outsize Bin Canister",
+   "url": "https://justinribeiro.com/chronicle/2026/09/01/designing-a-replacement-latch-for-the-dyson-v11-outsize-bin-canister/",
+   "source": "justinribeiro",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google Scholar Citation Count Released for Zotero 10",
+   "url": "https://justinribeiro.com/chronicle/2026/08/31/google-scholar-citation-count-released-for-zotero-10/",
+   "source": "justinribeiro",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "And Now for Something Completely Different: Co-Managing Editor at Engaged Management ReView (EMR)",
+   "url": "https://justinribeiro.com/chronicle/2026/08/20/and-now-for-something-completely-different-co-managing-editor-at-engaged-management-review-emr/",
+   "source": "justinribeiro",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Archiving 15GB of Podcast History",
+   "url": "https://justinribeiro.com/chronicle/2026/07/31/archiving-15gb-of-podcast-history/",
+   "source": "justinribeiro",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thirteen years",
+   "url": "https://justmarkup.com/notes/2025-01-31-thirteen-years/",
+   "source": "justmarkup",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Not sharing GIFs",
+   "url": "https://justmarkup.com/notes/2025-01-13-not-sharing-gifs/",
+   "source": "justmarkup",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Twelve years",
+   "url": "https://justmarkup.com/notes/2024-01-31-twelve-years/",
+   "source": "justmarkup",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Eleven years",
+   "url": "https://justmarkup.com/notes/2023-01-31-eleven-years/",
+   "source": "justmarkup",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Book – Engineering Management for the Rest of Us",
+   "url": "https://justmarkup.com/notes/2022-12-06-engineering-management-for-the-rest-of-us/",
+   "source": "justmarkup",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lazy loading HTML includes",
+   "url": "https://justmarkup.com/notes/2022-08-31-lazy-loading-html/",
+   "source": "justmarkup",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a house",
+   "url": "https://justmarkup.com/notes/2022-08-05-building-a-house/",
+   "source": "justmarkup",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stop supporting Internet Explorer!",
+   "url": "https://justmarkup.com/notes/2022-07-06-stop-supporting-ie/",
+   "source": "justmarkup",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ten years 🎉",
+   "url": "https://justmarkup.com/notes/2022-01-31-ten-years/",
+   "source": "justmarkup",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Keeping up-to-date with web development",
+   "url": "https://justmarkup.com/notes/2022-01-04-keeping-up-to-date-with-the-web/",
+   "source": "justmarkup",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learn forms course on web.dev",
+   "url": "https://justmarkup.com/articles/2021-12-23-learn-forms-web-dev/",
+   "source": "justmarkup",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "100 days - 100 HTML elements in a tweet",
+   "url": "https://justmarkup.com/articles/2021-04-13-html-elements-in-a-tweet/",
+   "source": "justmarkup",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Overenhancement",
+   "url": "https://justmarkup.com/notes/2021-03-19-overenhancement/",
+   "source": "justmarkup",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Void",
+   "url": "https://justmarkup.com/notes/2021-03-01-the-void/",
+   "source": "justmarkup",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reduce your client-side JavaScript in Next.js",
+   "url": "https://justmarkup.com/articles/2021-02-15-recude-client-js-next-js/",
+   "source": "justmarkup",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Replacing the old battery on rechargeable bike lights",
    "url": "https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights/",
    "source": "jvns",
@@ -62583,6 +64744,38 @@
    "url": "https://jvns.ca/blog/2025/02/13/how-to-add-a-directory-to-your-path/",
    "source": "jvns",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "HTML Interfaces For CSS Libraries",
+   "url": "https://jwdallas.com/posts/HTMLInterfacesForCSSLibraries/",
+   "source": "jwdallas",
+   "rank": 1,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Naming Variables In CSS",
+   "url": "https://jwdallas.com/posts/NamingCSSVariables/",
+   "source": "jwdallas",
+   "rank": 2,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nested Dark Mode Via CSS Proximity",
+   "url": "https://jwdallas.com/posts/NestedDarkMode/",
+   "source": "jwdallas",
+   "rank": 3,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Style APIs As A Last Resort",
+   "url": "https://jwdallas.com/posts/StyleAPIsAsALastResort/",
+   "source": "jwdallas",
+   "rank": 4,
    "score": 1,
    "metric": "feed rank"
   },
@@ -63143,6 +65336,86 @@
    "url": "https://Karl-Voit.at/2021/07/23/emacs-lock-in",
    "source": "karl",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We need more choices in automated testing",
+   "url": "https://karlgroves.com/we-need-more-choices-in-automated-testing/",
+   "source": "karlgroves",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "“Notice and Cure” Violates Civil Rights",
+   "url": "https://karlgroves.com/notice-and-cure-violates-civil-rights/",
+   "source": "karlgroves",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A new attempt at ADA reform to protect small businesses",
+   "url": "https://karlgroves.com/a-new-attempt-at-ada-reform-to-protect-small-businesses/",
+   "source": "karlgroves",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How much should you spend on accessibility?",
+   "url": "https://karlgroves.com/how-much-should-you-spend-on-accessibility/",
+   "source": "karlgroves",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Deep Dive into the Websites and Software Applications Accessibility Act of 2025",
+   "url": "https://karlgroves.com/a-deep-dive-into-the-websites-and-software-applications-accessibility-act-of-2025/",
+   "source": "karlgroves",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The European Accessibility Act and B2B Software: What Internal Platforms Must Comply With",
+   "url": "https://karlgroves.com/the-european-accessibility-act-and-b2b-software-what-internal-platforms-must-comply-with/",
+   "source": "karlgroves",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Digital Accessibility is a Civil Right",
+   "url": "https://karlgroves.com/digital-accessibility-is-a-civil-right/",
+   "source": "karlgroves",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI is the future of accessibility",
+   "url": "https://karlgroves.com/ai-is-the-future-of-accessibility/",
+   "source": "karlgroves",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tracking the right metrics for measuring sales and marketing team performance",
+   "url": "https://karlgroves.com/tracking-the-right-metrics-for-measuring-sales-and-marketing-team-performance/",
+   "source": "karlgroves",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "ChatGPT is not ready to handle web accessibility remediation",
+   "url": "https://karlgroves.com/chatgpt-is-not-ready-to-handle-web-accessibility-remediation/",
+   "source": "karlgroves",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -63927,6 +66200,38 @@
    "url": "https://kettanaito.com/blog/making-sense-of-typescript-generics",
    "source": "kettanaito",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Sidewalk Game",
+   "url": "https://kevincox.ca/2026/11/05/sidewalk-game/",
+   "source": "kevincox",
+   "rank": 1,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lost Inputs",
+   "url": "https://kevincox.ca/2026/08/07/lost-inputs/",
+   "source": "kevincox",
+   "rank": 2,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Digdoku",
+   "url": "https://kevincox.ca/2025/11/18/digdoku/",
+   "source": "kevincox",
+   "rank": 3,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NixOS PostgreSQL Major Version Upgrade",
+   "url": "https://kevincox.ca/2025/08/24/nixos-postgres-upgrade/",
+   "source": "kevincox",
+   "rank": 4,
    "score": 1,
    "metric": "feed rank"
   },
