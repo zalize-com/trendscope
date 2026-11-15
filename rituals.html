@@ -35,7 +35,7 @@
   li { display: flex; gap: 8px; padding: 6px 0; border-top: 1px solid var(--line); }
   li:first-child { border-top: none; }
   .r { color: var(--dim); min-width: 18px; text-align: right; }
-  .it { flex: 1; } .it a { font-size: 13px; }
+  .it { flex: 1; } .it a { font-size: 13px; } .trj { color: var(--dim); font-size: 11px; margin-left: 6px; text-decoration: none; } .trj:hover { color: var(--accent); }
   .sc { color: var(--dim); font-size: 11px; white-space: nowrap; }
   .stats { display: flex; gap: 12px; flex-wrap: wrap; margin: 14px 0 4px; }
   .stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; }
@@ -95,7 +95,7 @@ document.getElementById("stats").innerHTML = `
 
 const row = (c, linkTitle=true) =>
   `<li><span class="r">${c.rank}</span><span class="it">
-   <a href="${linkTitle && c.url ? c.url : c.hn}">${esc(c.title)}</a></span>
+   <a href="${linkTitle && c.url ? c.url : c.hn}">${esc(c.title)}</a><a class="trj" href="item.html?q=${encodeURIComponent(c.title)}" title="trajectory">⤳</a></span>
    <span class="sc"><b>${fmt(c.points)}</b> pts</span></li>`;
 
 const mpick = document.getElementById("mpick");
