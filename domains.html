@@ -85,7 +85,7 @@ $("out").innerHTML =
     `<tr><td><span class="dom">${esc(d.h)}</span></td>
      <td class="num">${d.ndays}</td><td class="num">${d.hits}</td>
      <td class="srcs">${[...d.srcs].join(", ")}</td>
-     <td class="last"><a href="${d.top.url}">${esc(d.top.title.length>70?d.top.title.slice(0,70)+"…":d.top.title)}</a></td></tr>`
+     <td class="last"><a href="${d.top.url}">${esc(d.top.title.length>70?d.top.title.slice(0,70)+"…":d.top.title)}</a><a href="item.html?q=${encodeURIComponent(d.top.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></td></tr>`
   ).join("") + `</table>`;
 </script>
 </body>
