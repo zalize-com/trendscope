@@ -67,7 +67,10 @@ const TOPIC_RULES = {
   "Career/Business": ["startup","hiring","salary","remote","career","interview","acquisition","ipo","funding","layoff","business","saas"],
 };
 const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
-const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B" : n >= 1e6 ? (n/1e6).toFixed(1)+"M" : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
+const fmt = n => {
+  const s = n < 0 ? "-" : "", a = Math.abs(n);
+  return s + (a >= 1e9 ? (a/1e9).toFixed(1)+"B" : a >= 1e6 ? (a/1e6).toFixed(1)+"M" : a >= 1e3 ? (a/1e3).toFixed(1)+"k" : String(a));
+};
 const topicsOf = it => {
   const text = `${it.title||""} ${(it.tags||[]).join(" ")} ${it.description||""}`.toLowerCase();
   return Object.keys(TOPIC_RULES).filter(t => TOPIC_RULES[t].some(k => text.includes(k)));

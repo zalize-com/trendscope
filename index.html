@@ -215,9 +215,12 @@ const TABS = [
 ];
 const PKG = new Set(["npm", "pypi", "crates"]);
 
-const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B"
-             : n >= 1e6 ? (n/1e6).toFixed(1)+"M"
-             : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
+const fmt = n => {
+  const s = n < 0 ? "-" : "", a = Math.abs(n);
+  return s + (a >= 1e9 ? (a/1e9).toFixed(1)+"B"
+             : a >= 1e6 ? (a/1e6).toFixed(1)+"M"
+             : a >= 1e3 ? (a/1e3).toFixed(1)+"k" : String(a));
+};
 
 let SNAP = null, YDAY = null;
 
@@ -315,7 +318,18 @@ function paint() {
     .map(t => `<a class="topic-chip" href="topics.html?t=${encodeURIComponent(t.topic)}">${t.topic} <b>${t.count}</b></a>`).join("");
 
   ITEMS = Object.entries(SNAP.items || {});
+  paintTabs();
   render(ITEMS, currentTab());
+}
+
+function paintTabs() {
+  const have = new Set(ITEMS.map(([s]) => s));
+  const visible = TABS.filter(t =>
+    t.id === "all" || (t.id === "packages" ? [...PKG].some(p => have.has(p)) : have.has(t.id)));
+  const cur = currentTab();
+  const keep = visible.some(t => t.id === cur) ? cur : "all";
+  document.getElementById("tabs").innerHTML = visible.map(t =>
+    `<button class="tab${t.id === keep ? " active" : ""}" data-tab="${t.id}">${t.label}</button>`).join("");
 }
 
 function currentTab() {
@@ -364,13 +378,10 @@ async function main() {
     renderTrends(INDEX.snapshots.slice(-10));
   } catch (e) { /* optional */ }
 
-  const tabsEl = document.getElementById("tabs");
-  tabsEl.innerHTML = TABS.map((t, i) =>
-    `<button class="tab${i === 0 ? " active" : ""}" data-tab="${t.id}">${t.label}</button>`).join("");
-  tabsEl.addEventListener("click", ev => {
+  document.getElementById("tabs").addEventListener("click", ev => {
     const b = ev.target.closest(".tab");
     if (!b) return;
-    tabsEl.querySelectorAll(".tab").forEach(x => x.classList.toggle("active", x === b));
+    document.querySelectorAll("#tabs .tab").forEach(x => x.classList.toggle("active", x === b));
     render(ITEMS, b.dataset.tab);
   });
   paint();
