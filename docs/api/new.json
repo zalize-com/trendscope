@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T13:19:29.208589+00:00",
+ "generated_at": "2026-11-15T13:19:56.644246+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 380,
- "new_items": 254,
+ "total_items": 395,
+ "new_items": 269,
  "by_source": {
   "producthunt": 45,
   "show_hn": 20,
@@ -15,6 +15,7 @@
   "echojs": 15,
   "infoq": 15,
   "lemmy": 15,
+  "theregister": 15,
   "theverge": 12,
   "freecodecamp": 10,
   "krebs": 10,
@@ -1956,6 +1957,126 @@
    "title": "Tesla's Cybercab Autonomy Subscription agreement states the vehicles will only work inside Tesla-enabled geofences, which the company can change at any time (Fred Lambert/Electrek)",
    "url": "https://www.techmeme.com/261114/p12#a261114p12",
    "source": "techmeme",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
+   "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632",
+   "source": "theregister",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Developer cleverly shrank 2,600 lines of C into a six-line script but still ending up losing sleep",
+   "url": "https://www.theregister.com/software/2026/11/13/developer-cleverly-shrank-2600-lines-of-c-into-a-six-line-script-but-still-ending-up-losing-sleep/5309264",
+   "source": "theregister",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Palantir’s Karp takes a sharp left turn, says he and the company’s products are actually ‘progressive’",
+   "url": "https://www.theregister.com/software/2026/11/12/palantirs-karp-takes-a-sharp-left-turn-says-he-and-the-companys-products-are-actually-progressive/5309441",
+   "source": "theregister",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Software Samaritan revamps borked Indian certs to block smart TV ads",
+   "url": "https://www.theregister.com/security/2026/11/12/software-samaritan-revamps-borked-indian-certs-to-block-smart-tv-ads/5309467",
+   "source": "theregister",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rockstar workers vote on union recognition as GTA VI launch looms",
+   "url": "https://www.theregister.com/software/2026/11/12/rockstar-workers-vote-on-union-recognition-as-gta-vi-launch-looms/5309319",
+   "source": "theregister",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Anthropic tiptoes into MS Office territory",
+   "url": "https://www.theregister.com/software/2026/11/10/anthropic-tiptoes-into-ms-office-territory/5308988",
+   "source": "theregister",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "14-year-old creates tool for AI agents to band together like a team",
+   "url": "https://www.theregister.com/ai-and-ml/2026/11/10/14-year-old-creates-tool-for-ai-agents-to-band-together-like-a-team/5308841",
+   "source": "theregister",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mozilla Thunderbird email service edges closer to launch with early access",
+   "url": "https://www.theregister.com/software/2026/11/10/mozilla-thunderbird-email-service-edges-closer-to-launch-with-early-access/5308826",
+   "source": "theregister",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dev error bricked 600 PCs, caused $1M CD-ROM write-off",
+   "url": "https://www.theregister.com/software/2026/11/09/dev-error-bricked-600-pcs-caused-1m-cd-rom-write-off/5308039",
+   "source": "theregister",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mac lookalikes multiply as Linux raids Apple's wardrobe",
+   "url": "https://www.theregister.com/os-platforms/2026/11/06/mac-lookalikes-multiply-as-linux-raids-apples-wardrobe/5308070",
+   "source": "theregister",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "openSUSE Leap 16.1 gives Linux users the right to remain immutable",
+   "url": "https://www.theregister.com/os-platforms/2026/11/05/opensuse-leap-161-gives-linux-users-the-right-to-remain-immutable/5307874",
+   "source": "theregister",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Microsoft fixed Excel 2016 copy-paste bug. Then reintroduced it. Now it's fixed again",
+   "url": "https://www.theregister.com/software/2026/11/05/microsoft-fixed-excel-2016-copy-paste-bug-then-reintroduced-it-now-its-fixed-again/5307782",
+   "source": "theregister",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SAP promises to open out data flows in both directions",
+   "url": "https://www.theregister.com/software/2026/11/05/sap-promises-to-open-out-data-flows-in-both-directions/5307495",
+   "source": "theregister",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Microsoft admits certifications can be a drag, launches creds that recognize skills",
+   "url": "https://www.theregister.com/software/2026/11/05/microsoft-admits-certifications-can-be-a-drag-launches-creds-that-recognize-skills/5307725",
+   "source": "theregister",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Microsoft improves Windows 11 performance on 8 GB PCs as RAM prices keep climbing",
+   "url": "https://www.theregister.com/software/2026/11/03/microsoft-improves-windows-11-performance-on-8-gb-pcs-as-ram-prices-keep-climbing/5307382",
+   "source": "theregister",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"

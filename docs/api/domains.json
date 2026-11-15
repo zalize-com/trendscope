@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T13:19:29.208589+00:00",
+ "generated_at": "2026-11-15T13:19:56.644246+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 213,
+ "total": 214,
  "domains": [
   {
    "hostname": "so.long.thanks.fish",
@@ -626,6 +626,21 @@
    }
   },
   {
+   "hostname": "theregister.com",
+   "days_on_board": 1,
+   "items": 15,
+   "sources": [
+    "theregister"
+   ],
+   "top_hit": {
+    "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
+    "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "krebsonsecurity.com",
    "days_on_board": 1,
    "items": 10,
@@ -743,21 +758,6 @@
     "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
     "score": 39,
     "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "linux.slashdot.org",
-   "days_on_board": 1,
-   "items": 2,
-   "sources": [
-    "slashdot"
-   ],
-   "top_hit": {
-    "title": "Manjaro Linux Moves Toward Independent Community Governance",
-    "url": "https://linux.slashdot.org/story/26/11/14/2236207/manjaro-linux-moves-toward-independent-community-governance?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-    "score": 11,
-    "metric": "feed rank",
     "date": "2026-11-15"
    }
   }
