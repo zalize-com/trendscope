@@ -63,6 +63,8 @@ compare within a source, not across.
   as markdown in `docs/movers/` and shipped in `feed.xml`.
 - **Streaks** (`streaks.html`): staying-power leaderboard — items ranked by
   consecutive days on the board, computed client-side from `history.csv`.
+- **Domains** (`domains.html`): most-linked sites across all snapshots,
+  grouped by hostname from `history.csv`.
 - **Digests** (`digest.html`): weekly markdown digests rendered in-site.
 - **Embed widget** (`embed.html`): the top-10 board as a drop-in iframe for
   blogs/docs (no signup, updates daily):

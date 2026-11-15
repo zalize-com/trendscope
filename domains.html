@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>domains — trendscope</title>
+<meta name="description" content="Which domains developers keep sharing: most-linked sites across the trendscope daily snapshots.">
+<meta property="og:title" content="trendscope domains — most-shared sites">
+<meta property="og:image" content="og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+<style>
+  :root { --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
+          --dim:#8b949e; --accent:#58a6ff; --green:#3fb950; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 18px; }
+  table { border-collapse: collapse; width: 100%; margin-top: 8px; }
+  th { text-align: left; color: var(--dim); font-size: 11px; text-transform: uppercase;
+       letter-spacing: .04em; padding: 6px 10px; border-bottom: 1px solid var(--border); }
+  td { padding: 6px 10px; border-bottom: 1px solid var(--border); font-size: 13px; vertical-align: top; }
+  .dom { font-family: ui-monospace, monospace; color: var(--fg); font-weight: 600; }
+  .num { text-align: right; white-space: nowrap; font-family: ui-monospace, monospace; }
+  .last { color: var(--dim); font-size: 12px; }
+  .last a { color: var(--dim); }
+  .srcs { color: var(--dim); font-size: 11px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+  #err { color: var(--dim); }
+</style>
+</head>
+<body>
+  <nav><a href="index.html">← trendscope</a> · <a href="streaks.html">streaks</a> · <a href="compare.html">compare</a></nav>
+  <h1>dom<span>ains</span></h1>
+  <p class="sub">Most-linked sites across all daily snapshots — grouped by hostname from <code>data/history.csv</code>.</p>
+  <div id="out"><p id="err">loading…</p></div>
+  <footer>Open data, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> ·
+    <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a></footer>
+<script type="module">
+const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
+const $ = id => document.getElementById(id);
+
+function parseCSV(text) {
+  const rows = []; let field = "", row = [], inQ = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQ) {
+      if (c === '"') { if (text[i+1] === '"') { field += '"'; i++; } else inQ = false; }
+      else field += c;
+    } else if (c === '"') inQ = true;
+    else if (c === ",") { row.push(field); field = ""; }
+    else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+    else if (c !== "\r") field += c;
+  }
+  if (field || row.length) { row.push(field); rows.push(row); }
+  return rows;
+}
+
+const SKIP = new Set(["news.ycombinator.com","github.com","www.npmjs.com","pypi.org","crates.io","dev.to","lobste.rs"]);
+const text = await fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text());
+const rows = parseCSV(text);
+const ci = Object.fromEntries(rows[0].map((h,i)=>[h,i]));
+
+const doms = {};
+for (const r of rows.slice(1)) {
+  const url = r[ci.url]; if (!url) continue;
+  let host; try { host = new URL(url).hostname.replace(/^www\./,""); } catch { continue; }
+  if (SKIP.has(host)) continue; // platform self-links aren't signal
+  const d = doms[host] ||= { hits: 0, days: new Set(), srcs: new Set(), top: null };
+  d.hits++; d.days.add(r[ci.date]); d.srcs.add(r[ci.source]);
+  const score = Number(r[ci.score]) || 0;
+  if (!d.top || score > d.top.score) d.top = { title: r[ci.title], url, score, metric: r[ci.metric], date: r[ci.date] };
+}
+const list = Object.entries(doms)
+  .map(([h, d]) => ({ h, ...d, ndays: d.days.size }))
+  .sort((a,b) => b.ndays - a.ndays || b.hits - a.hits)
+  .slice(0, 40);
+
+$("out").innerHTML =
+  `<table><tr><th>domain</th><th class="num">days</th><th class="num">items</th><th>sources</th><th>top hit</th></tr>` +
+  list.map(d =>
+    `<tr><td><span class="dom">${esc(d.h)}</span></td>
+     <td class="num">${d.ndays}</td><td class="num">${d.hits}</td>
+     <td class="srcs">${[...d.srcs].join(", ")}</td>
+     <td class="last"><a href="${d.top.url}">${esc(d.top.title.length>70?d.top.title.slice(0,70)+"…":d.top.title)}</a></td></tr>`
+  ).join("") + `</table>`;
+</script>
+</body>
+</html>
