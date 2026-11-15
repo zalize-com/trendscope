@@ -123,9 +123,12 @@
   footer a { color: var(--accent); text-decoration: none; }
   .muted { color: var(--dim); }
   #err { color: var(--orange); display: none; margin-top: 12px; }
+  .skiplink{position:absolute;left:-9999px;top:0;background:var(--accent);color:#fff;padding:6px 12px;border-radius:0 0 8px 0;z-index:99}
+  .skiplink:focus{left:0}
 </style>
 </head>
 <body>
+<a class="skiplink" href="#board">skip to board</a>
 <div class="wrap">
 
   <header class="hero">
