@@ -33,12 +33,15 @@
   .cur { color: var(--green); }
   footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
   #err { color: var(--dim); }
+  .chip { display:inline-block; padding:2px 9px; border:1px solid var(--border); border-radius:12px; font-size:12px; color:var(--fg); text-decoration:none; margin:2px 3px 2px 0; opacity:.75; }
+  .chip.on { opacity:1; border-color:var(--accent); color:var(--accent); }
 </style>
 </head>
 <body>
   <nav><a href="index.html">← trendscope</a> · <a href="compare.html">compare</a> · <a href="digest.html">digests</a></nav>
   <h1>str<span>eaks</span></h1>
   <p class="sub">Staying power: which items keep making the board, computed from <code>data/history.csv</code>.</p>
+  <div id="srcbar" style="margin:8px 0"></div>
   <div class="stats" id="stats"></div>
   <div id="out"><p id="err">loading…</p></div>
   <footer>Open data, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> ·
@@ -113,13 +116,21 @@ const row = (r, badge) =>
   `<li><span class="it"><a href="${r.url}">${esc(r.title)}</a><span class="src">${r.source}</span></span>
    <span class="sc">${badge} · ${fmt(r.lastScore)} ${r.metric}</span></li>`;
 
+const srcs = [...new Set(recs.map(r => r.source))].sort();
+const QS = new URLSearchParams(location.search).get("s");
+$("srcbar").innerHTML = srcs.map(s =>
+  `<a class="chip${s===QS?" on":""}" href="?s=${encodeURIComponent(s)}">${s}</a>`).join(" ") +
+  (QS ? ` <a class="chip" href="?">all</a>` : "");
+
+const sf = r => !QS || r.source === QS;
+const liveF = live.filter(sf), allF = allTime.filter(sf);
 $("out").innerHTML =
   `<h2>on the board right now (consecutive days)</h2><ol>` +
-    (live.length
-      ? live.slice(0, 25).map(r => row(r, `<span class="streak">${r.cur}d streak</span>`)).join("")
+    (liveF.length
+      ? liveF.slice(0, 25).map(r => row(r, `<span class="streak">${r.cur}d streak</span>`)).join("")
       : `<li><span class="it" style="color:var(--dim)">nothing on a streak yet — streaks start at 2 consecutive days</span></li>`) + `</ol>` +
   `<h2>longest runs (all time)</h2><ol>` +
-    allTime.map(r => row(r, `<span class="streak">${r.best}d</span> <span class="dim">(${r.days}d total)</span>`)).join("") + `</ol>`;
+    allF.map(r => row(r, `<span class="streak">${r.best}d</span> <span class="dim">(${r.days}d total)</span>`)).join("") + `</ol>`;
 </script>
 </body>
 </html>
