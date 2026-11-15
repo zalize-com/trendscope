@@ -565,3 +565,23 @@ root for self-hosted mirrors.
 | Bejarano | engineering notes | `www.bejarano.io/feed.xml` |
 | Ben Nadel | JS dev | `www.bennadel.com/rss` |
 | BMPI | Chinese dev weekly | `www.bmpi.dev/index.xml` |
+| BOIA | a11y org | `www.boia.org/blog/rss.xml` |
+| Brandons | dev notes | `www.brandons.me/feed.xml` |
+| Browserling | browser tools | `www.browserling.com/blog/rss.xml` |
+| Browser London | dev agency | `www.browserlondon.com/feed/` |
+| Browsers FYI | browser news | `www.browsers.fyi/feed/` |
+| BrowserStack | testing platform | `www.browserstack.com/blog/rss/` |
+| Bryan Braun | frontend dev | `www.bryanbraun.com/rss.xml` |
+| Bryce Van Dyk | Mozilla media eng | `www.brycevandyk.com/rss/` |
+| Bryce Wray | web dev notes | `www.brycewray.com/index.xml` |
+| Callum Hart | frontend dev | `www.callumhart.com/feed/feed.xml` |
+| Carl Rippon | React dev | `www.carlrippon.com/rss.xml` |
+| Changhai | Chinese essayist | `www.changhai.org/feed.xml` |
+| Chris Lord | graphics engineer | `www.chrislord.net/feed/` |
+| Chrome Story | Chrome news | `www.chromestory.com/feed/` |
+| CJCid | dev notes | `www.cjcid.com/feeds/essays.xml` |
+| cnfeat | Chinese writing dev | `www.cnfeat.com/feed.xml` |
+| Codedump | Chinese infra dev | `www.codedump.info/index.xml` |
+| Corey Cleary | JS dev | `www.coreycleary.me/feed.xml` |
+| Craig Abbott | a11y lead | `www.craigabbott.co.uk/feed.xml` |
+| Creative Juiz | French web dev | `www.creativejuiz.fr/blog/en/feed` |
