@@ -265,6 +265,40 @@ if (MODE === "topics") {
       || `<li id="err">no topics yet</li>`;
   }).catch(() => { document.getElementById("err").textContent = "topics data unavailable"; });
 } else
+if (MODE === "item") {
+  // ?mode=item&q=<title> — one story's attention trajectory
+  document.querySelector(".foot a").href = `https://zalize-com.github.io/trendscope/item.html?q=${encodeURIComponent(P.get("q") || "")}`;
+  if (!QQ) document.getElementById("err").textContent = "add ?q=<title>";
+  else fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(text => {
+    const rows = parseCSV(text), hdr = rows[0];
+    const ci = Object.fromEntries(hdr.map((h, i) => [h, i]));
+    const byUrl = {};
+    for (const r of rows.slice(1)) {
+      const u = r[ci.url]; if (!u) continue;
+      const it = byUrl[u] ||= { title: r[ci.title], url: u, source: r[ci.source], days: [] };
+      it.days.push({ d: r[ci.date], s: +r[ci.score] || 0, rank: +r[ci.rank] || 0 });
+    }
+    const hit = Object.values(byUrl)
+      .filter(x => x.title.toLowerCase().includes(QQ))
+      .sort((a, b) => a.title.length - b.title.length)[0];
+    if (!hit) { document.getElementById("err").textContent = `no story matches "${P.get("q")}"`; return; }
+    const dayMap = {};
+    for (const d of hit.days) {
+      const cur = dayMap[d.d];
+      if (!cur || d.s > cur.s) dayMap[d.d] = d;
+    }
+    const ds = Object.values(dayMap).sort((a, b) => a.d < b.d ? -1 : 1);
+    const mx = Math.max(...ds.map(d => d.s), 1);
+    const w = 200, h = 40, step = ds.length > 1 ? w / (ds.length - 1) : 0;
+    const pts = ds.map((d, i) => `${(i * step).toFixed(1)},${(h - (d.s / mx) * (h - 6) - 3).toFixed(1)}`).join(" ");
+    const peak = ds.reduce((a, b) => (b.s > a.s ? b : a), ds[0]);
+    document.getElementById("date").textContent = `${ds.length}d on board · peak ${fmt(peak.s)} (${peak.d})`;
+    document.getElementById("list").innerHTML =
+      `<li><span><a href="${esc(hit.url)}" target="_blank" rel="noopener">${esc(hit.title)}</a>
+        <span class="meta"><span class="src">${hit.source}</span> ${ds.map(d => d.d.slice(5)).join(", ")}</span></span></li>
+       <li><svg viewBox="0 0 ${w} ${h}" style="width:100%;height:40px"><polyline points="${pts}" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/></svg></li>`;
+  }).catch(() => { document.getElementById("err").textContent = "history unavailable"; });
+} else
 fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
   document.getElementById("date").textContent = (QT ? QT+" · " : "") + (snap.date || snap.generated_at.slice(0,10));
   const max = {};
