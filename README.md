@@ -56,7 +56,8 @@ compare within a source, not across.
 - **Topics** (`topics.html?t=AI%2FLLM`): per-topic drill-down — every story,
   repo and package matching a topic, grouped by source.
 - **Compare** (`compare.html?a=…&b=…`): diff two daily snapshots — entries,
-  exits and biggest gainers/droppers.
+  exits and biggest gainers/droppers. The same diff is auto-published daily
+  as markdown in `docs/movers/` and shipped in `feed.xml`.
 - **Embed widget** (`embed.html`): the top-10 board as a drop-in iframe for
   blogs/docs (no signup, updates daily):
 
