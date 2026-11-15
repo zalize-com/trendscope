@@ -4,6 +4,7 @@ what left, and the biggest score movers vs the previous snapshot."""
 
 import json
 import os
+import sys
 from datetime import datetime, timedelta, timezone
 from urllib.parse import quote
 
@@ -55,7 +56,15 @@ def main():
     if len(days) < 2:
         print("need 2+ snapshots; skipping")
         return
-    day_b, day_a = days[-1], days[-2]
+    if len(sys.argv) > 1:
+        day_b = sys.argv[1]
+        i = days.index(day_b)
+        if i == 0:
+            print(f"no earlier snapshot before {day_b}; skipping")
+            return
+        day_a = days[i - 1]
+    else:
+        day_b, day_a = days[-1], days[-2]
     sa, sb = load(day_a), load(day_b)
     A, B = flat(sa), flat(sb)
 
