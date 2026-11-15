@@ -20,6 +20,7 @@ Fetch straight from GitHub raw or the Pages site (`/trendscope/…`).
 | `data/hiring.json` | JSON | Latest HN monthly hiring/seeking thread comment counts |
 | `data/hiring-history.csv` | CSV | Append-only daily log of those counts (labor-demand signal) |
 | `data/hiring-monthly.csv` | CSV | All canonical monthly hiring/seeking threads, 2010 → today |
+| `data/hn-canon-monthly.csv` | CSV | HN canon: top-10 stories per month, Feb 2007 → today |
 | `docs/index.json` | JSON | Index of `docs/digest/` weekly digests and `docs/movers/` reports |
 | `feed.xml` | RSS | Daily snapshots + movers + digests as feed items |
 

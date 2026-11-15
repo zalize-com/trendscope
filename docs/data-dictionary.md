@@ -54,3 +54,7 @@ ranking.
 - `data/hiring-monthly.csv` — full backfill: every canonical monthly thread
   Algolia indexes (2010 → today), `month,kind,comments,thread_id,url,created`;
   regenerate with `scripts/hiring_backfill.py`.
+- `data/hn-canon-monthly.csv` — the HN canon: top-10 front-page stories per
+  month, Feb 2007 (launch) → today
+  (`month,rank,title,url,points,comments,author,id,hn_url`);
+  regenerate with `scripts/canon_backfill.py`.
