@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T16:51:55.226514+00:00",
+  "generated_at": "2026-11-15T16:53:48.136845+00:00",
   "days_tracked": 9,
   "sources": {
     "hackernews": {
@@ -99,10 +99,10 @@
       }
     },
     "devto": {
-      "items": 31,
-      "unique_urls": 16,
+      "items": 32,
+      "unique_urls": 17,
       "median_days_on_board": 2,
-      "one_day_pct": 6,
+      "one_day_pct": 12,
       "top_item": {
         "title": "How do you truly stand out in Tech?",
         "url": "https://dev.to/francistrdev/how-do-you-truly-stand-out-in-tech-478a",
@@ -1322,6 +1322,138 @@
         "rank": 1
       }
     },
+    "thecodebarbarian": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Faster SSE Responses with Async Generators and Promise.race()",
+        "url": "https://thecodebarbarian.com/sse-yield-star.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "aaronsw": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Superlinear Returns",
+        "url": "http://www.paulgraham.com/superlinear.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "d3noob": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Changing the GRUB boot delay time from the default 30s in Ubuntu 24.04 (SPOILER alert - ZFS)",
+        "url": "http://www.d3noob.org/2024/04/changing-grub-boot-delay-time-from.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "ebaytechblog": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Inside Minerva: building scalable observability for eBay’s monetization platform",
+        "url": "https://innovation.ebayinc.com/stories/inside-minerva-building-scalable-observability-for-ebays-monetization-platform/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "100r": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Summary of changes for October 2026",
+        "url": "https://100r.ca/site/log.html#oct2026",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "512pixels": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Nodes",
+        "url": "https://512pixels.net/2026/11/thanks-nodes/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "9to5mac": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Apple engineers ‘actively working’ on Face ID for iPhone Duo 2’s outer display: report",
+        "url": "https://9to5mac.com/2026/11/15/apple-engineers-actively-working-on-face-id-for-iphone-duo-2s-outer-display-report/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "aartaka": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Teeny Scheme",
+        "url": "https://aartaka.me/teeny.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "adais": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Try out your website in the spatial web",
+        "url": "https://webkit.org/blog/15421/try-out-your-website-in-the-spatial-web/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "addyosubstack": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Agentic Verification",
+        "url": "https://addyo.substack.com/p/agentic-verification",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "aieworkssubstack": {
+      "items": 15,
+      "unique_urls": 15,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Why hybrid search beats vector search alone (and when it doesn't)",
+        "url": "https://aieworks.substack.com/p/why-hybrid-search-beats-vector-search-alone",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "beesbuzz": {
       "items": 14,
       "unique_urls": 14,
@@ -2030,6 +2162,90 @@
         "rank": 1
       }
     },
+    "planeterlang": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Type inference and narrowing with reverse arrows",
+        "url": "https://elixir-lang.org/blog/2026/11/10/inference-narrowing-reverse-arrows/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "stubbornella": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "IFSC Competition Regulations Para Climbing Events",
+        "url": "https://www.stubbornella.org/2025/03/30/ifsc-competition-regulations-para-climbing-events/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "0xdade": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Joiners, Movers, Leavers - An IaC Problem",
+        "url": "https://0xda.de/blog/2026/02/joiners-movers-leavers-an-iac-problem/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "aaronstuyvenberg": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Clawdbot bought me a car",
+        "url": "https://aaronstuyvenberg.com/posts/clawd-bought-a-car",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "adactio": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Palaces Of The Crow by Ray Nayler",
+        "url": "https://adactio.com/journal/22823",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "adrianroselli": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "My Interop 2027 Picks",
+        "url": "https://adrianroselli.com/2026/11/my-interop-2027-picks.html",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "ahmadawais": {
+      "items": 10,
+      "unique_urls": 10,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The Full Stack of Terminals Explained: Terminal, Shell, TTY, Console, POSIX, ANSI Escapes, PTYs, Raw/Canonical Modes",
+        "url": "https://ahmadawais.com/the-full-stack-of-terminals-explained-terminal-shell-tty-console-posix-ansi-escapes-ptys/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "susam": {
       "items": 9,
       "unique_urls": 9,
@@ -2150,6 +2366,18 @@
         "rank": 1
       }
     },
+    "aerotwist": {
+      "items": 6,
+      "unique_urls": 6,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "The Making of a Logo",
+        "url": "https://aerotwist.com/blog/the-making-of-a-logo/",
+        "score": 6,
+        "rank": 1
+      }
+    },
     "bendersky": {
       "items": 5,
       "unique_urls": 5,
@@ -2230,6 +2458,18 @@
       "top_item": {
         "title": "1000 threads catwalk gala",
         "url": "https://dyskinetic.net/2026/06/19/1000-threads-catwalk-gala/",
+        "score": 2,
+        "rank": 1
+      }
+    },
+    "adoptingerlang": {
+      "items": 2,
+      "unique_urls": 2,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "Changelog",
+        "url": "/docs/introduction/changelog/",
         "score": 2,
         "rank": 1
       }

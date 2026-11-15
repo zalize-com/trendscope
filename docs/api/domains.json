@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T16:51:54.865991+00:00",
+ "generated_at": "2026-11-15T16:53:47.946451+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 410,
+ "total": 434,
  "domains": [
   {
    "hostname": "reuters.com",
@@ -129,6 +129,22 @@
    }
   },
   {
+   "hostname": "9to5mac.com",
+   "days_on_board": 2,
+   "items": 16,
+   "sources": [
+    "9to5mac",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Apple has new Mac app coming to make running local AI models easy",
+    "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+    "score": 569,
+    "metric": "points",
+    "date": "2026-11-10"
+   }
+  },
+  {
    "hostname": "lwn.net",
    "days_on_board": 2,
    "items": 16,
@@ -195,12 +211,13 @@
   {
    "hostname": "youtube.com",
    "days_on_board": 2,
-   "items": 7,
+   "items": 10,
    "sources": [
     "bret",
     "daringfireball",
     "hackernews",
-    "jankfree"
+    "jankfree",
+    "planeterlang"
    ],
    "top_hit": {
     "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
@@ -754,23 +771,6 @@
     "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A (Tamara Djurickovic/Tech.eu)",
     "url": "https://www.techmeme.com/261115/p3#a261115p3",
     "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "medium.com",
-   "days_on_board": 1,
-   "items": 22,
-   "sources": [
-    "airbnb",
-    "norvig",
-    "pinterest"
-   ],
-   "top_hit": {
-    "title": "Functional Lifestyles Training",
-    "url": "https://medium.com/@peternorvig/functional-lifestyles-training-47984a3cd2ba",
-    "score": 14,
     "metric": "feed rank",
     "date": "2026-11-15"
    }

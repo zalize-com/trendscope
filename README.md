@@ -211,6 +211,26 @@ A daily cross-source snapshot of developer attention:
 | HubSpot Product | HubSpot product engineering | `product.hubspot.com/blog/rss.xml` |
 | BBC Responsive News | BBC responsive news lab | `responsivenews.co.uk/rss` |
 | SimpleBits | Dan Cederholm design blog | `simplebits.com/feed.xml` |
+| The Code Barbarian | Valeri Karpov Node.js blog | `thecodebarbarian.com/feed.xml` |
+| Aaron Swartz mirror | PG essays mirror via aaronsw | `www.aaronsw.com/2002/feeds/pgessays.rss` |
+| D3 Noob | D3.js tutorials | `www.d3noob.org/feeds/posts/default` |
+| eBay Tech | eBay tech blog | `www.ebaytechblog.com/feed/` |
+| Planet Erlang | Erlang community aggregator | `www.planeterlang.com/atom.xml` |
+| Stubbornella | Nicole Sullivan CSS/OOCSS | `www.stubbornella.org/content/feed/` |
+| 0Xda De | weblog | `0xda.de/blog/index.xml` |
+| 100R Co | weblog | `100r.co/links/rss.xml` |
+| 512Pixels Net | weblog | `512pixels.net/feed/` |
+| 9To5Mac Com | weblog | `9to5mac.com/feed/` |
+| AJ Stuyvenberg | Datadog serverless engineer | `aaronstuyvenberg.com/feed.xml` |
+| aartaka | Lisp and Emacs blog | `aartaka.me/rss.xml` |
+| Ada Rose Cannon | web and XR at Samsung | `ada.is/feed` |
+| Adactio | Jeremy Keith web standards | `adactio.com/journal/rss` |
+| Addy Osmani Substack | web performance newsletter | `addyo.substack.com/feed` |
+| Adopting Erlang | Erlang/OTP book and notes | `adoptingerlang.org/docs/introduction/index.xml` |
+| Adrian Roselli | accessibility engineering | `adrianroselli.com/feed` |
+| aerotwist | Paul Lewis web performance | `aerotwist.com/blog/feed/` |
+| Ahmad Awais | WordPress and dev tools | `ahmadawais.com/feed/` |
+| AI Works | AI engineering newsletter | `aieworks.substack.com/feed` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
