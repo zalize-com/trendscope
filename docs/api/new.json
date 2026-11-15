@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-15T18:24:50.042909+00:00",
+ "generated_at": "2026-11-15T18:28:28.897919+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 12820,
- "new_items": 12693,
+ "total_items": 13047,
+ "new_items": 12920,
  "by_source": {
-  "show_hn": 47,
+  "show_hn": 48,
   "producthunt": 45,
   "hackernews": 33,
   "theregister": 29,
@@ -389,6 +389,11 @@
   "lihautan": 15,
   "linghao": 15,
   "lisilinhart": 15,
+  "localghost": 15,
+  "localizely": 15,
+  "loige": 15,
+  "lowentropy": 15,
+  "lutaonan": 15,
   "lwn": 15,
   "lynnandtonic": 15,
   "macarthur": 15,
@@ -397,12 +402,17 @@
   "maggieappleton": 15,
   "maketeaco": 15,
   "manishearthgithub": 15,
+  "manuelstrehl": 15,
   "marco": 15,
+  "marcysutton": 15,
+  "markentier": 15,
   "martinfowler": 15,
+  "marvinh": 15,
   "masinterblogspot": 15,
   "mathiasbynens": 15,
   "matthewrocklin": 15,
   "matthiasott": 15,
+  "mattias": 15,
   "mattt": 15,
   "matttproud": 15,
   "mcfunley": 15,
@@ -553,6 +563,7 @@
   "fengjian0106github": 14,
   "fotis": 14,
   "gwern": 14,
+  "lit": 14,
   "orlp": 14,
   "wangpei": 14,
   "architectelevator": 13,
@@ -819,7 +830,13 @@
   "m417z": 10,
   "machinelearningmastery": 10,
   "macwright": 10,
+  "manuelmoreale": 10,
+  "marcosc": 10,
+  "marcus": 10,
+  "mariospr": 10,
   "markermedium": 10,
+  "markosaric": 10,
+  "martinwolf": 10,
   "maryrosecook": 10,
   "mathematicaforpredictionwordpress": 10,
   "matklad": 10,
@@ -1015,6 +1032,7 @@
   "fathy": 2,
   "igor": 2,
   "josephscott": 2,
+  "lukechannings": 2,
   "nlpfast": 2,
   "bentojs": 1,
   "cnnr": 1,
@@ -70048,6 +70066,118 @@
    "metric": "feed rank"
   },
   {
+   "title": "Lightning-fast templates & Web Components: lit-html & LitElement",
+   "url": "https://lit.dev/blog/2019-02-05-lit-element-and-lit-html-release/",
+   "source": "lit",
+   "rank": 1,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "LitElement 3.0 & lit-html 2.0: Early Preview Release",
+   "url": "https://lit.dev/blog/2020-09-22-lit-element-and-lit-html-next-preview/",
+   "source": "lit",
+   "rank": 2,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lit 2.0: Meet Lit, all over again!",
+   "url": "https://lit.dev/blog/2021-04-21-lit-2.0-meet-lit-all-over-again/",
+   "source": "lit",
+   "rank": 3,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Lit 2 stable release",
+   "url": "https://lit.dev/blog/2021-09-21-announcing-lit-2/",
+   "source": "lit",
+   "rank": 4,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Watch the Lit 2 release livestream",
+   "url": "https://lit.dev/blog/2021-09-22-lit-2-release-livestream/",
+   "source": "lit",
+   "rank": 5,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lit 2.1 Release",
+   "url": "https://lit.dev/blog/2022-01-05-lit-2.1-release/",
+   "source": "lit",
+   "rank": 6,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Eleventy + Lit",
+   "url": "https://lit.dev/blog/2022-02-07-eleventy/",
+   "source": "lit",
+   "rank": 7,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lit on Discord!",
+   "url": "https://lit.dev/blog/2022-09-06-discord/",
+   "source": "lit",
+   "rank": 8,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Get the lowdown on Lit Labs",
+   "url": "https://lit.dev/blog/2022-10-18-lit-labs-event/",
+   "source": "lit",
+   "rank": 9,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Lit 3.0 Pre-releases",
+   "url": "https://lit.dev/blog/2023-05-15-lit-3.0-prerelease/",
+   "source": "lit",
+   "rank": 10,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lit 3.0 Prerelease 2 and more!",
+   "url": "https://lit.dev/blog/2023-09-27-lit-3.0-prerelease-2/",
+   "source": "lit",
+   "rank": 11,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lit Launch Day: Lit 3.0, Labs graduations, a compiler and more!",
+   "url": "https://lit.dev/blog/2023-10-10-lit-3.0/",
+   "source": "lit",
+   "rank": 12,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bringing Signals to Lit Labs",
+   "url": "https://lit.dev/blog/2024-10-08-signals/",
+   "source": "lit",
+   "rank": 13,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lit is Joining the OpenJS Foundation!",
+   "url": "https://lit.dev/blog/2025-10-14-openjs/",
+   "source": "lit",
+   "rank": 14,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "25 of my favourite modern NES games",
    "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
    "source": "lobsters",
@@ -70136,6 +70266,246 @@
    "metric": "score"
   },
   {
+   "title": "Digital recipe management for fastidious cooks",
+   "url": "https://localghost.dev/blog/digital-recipe-management-for-fastidious-cooks/",
+   "source": "localghost",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Turning my sad gaming PC into a media server",
+   "url": "https://localghost.dev/blog/turning-my-sad-gaming-pc-into-a-media-server/",
+   "source": "localghost",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Returning to owning things in a streaming world",
+   "url": "https://localghost.dev/blog/returning-to-owning-things-in-a-streaming-world/",
+   "source": "localghost",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Some things I’ve been enjoying: August 2026",
+   "url": "https://localghost.dev/blog/some-things-i-ve-been-enjoying-august-2026/",
+   "source": "localghost",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Time-based background colour transitions with Temporal and CSS color-mix",
+   "url": "https://localghost.dev/blog/time-based-background-colour-transitions-with-temporal-and-css-color-mix/",
+   "source": "localghost",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making an original Jubilee line door button into a Hue light switch",
+   "url": "https://localghost.dev/blog/making-an-original-jubilee-line-door-button-into-a-hue-light-switch/",
+   "source": "localghost",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stop generating, start thinking",
+   "url": "https://localghost.dev/blog/stop-generating-start-thinking/",
+   "source": "localghost",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2025: The year in lists",
+   "url": "https://localghost.dev/blog/2025-the-year-in-lists/",
+   "source": "localghost",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "This website is for humans",
+   "url": "https://localghost.dev/blog/this-website-is-for-humans/",
+   "source": "localghost",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Touching grass (and shrubs, and flowers, and dog)",
+   "url": "https://localghost.dev/blog/touching-grass-and-shrubs-and-flowers-and-dog/",
+   "source": "localghost",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "This page is under construction",
+   "url": "https://localghost.dev/blog/this-page-is-under-construction/",
+   "source": "localghost",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The blog questions challenge",
+   "url": "https://localghost.dev/blog/the-blog-questions-challenge/",
+   "source": "localghost",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Good links: 16 February 2025",
+   "url": "https://localghost.dev/blog/good-links-2025-02-16/",
+   "source": "localghost",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Good links: 9 February 2025",
+   "url": "https://localghost.dev/blog/good-links-2025-02-09/",
+   "source": "localghost",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My month of rest and relaxation",
+   "url": "https://localghost.dev/blog/my-month-of-rest-and-relaxation/",
+   "source": "localghost",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Meet the AI Assistant: shorten, rephrase, fix or explain any translation in the editor",
+   "url": "https://localizely.com/blog/ai-assistant-launch",
+   "source": "localizely",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to share one set of translations between your Android and iOS app",
+   "url": "https://localizely.com/blog/share-translations-between-android-and-ios",
+   "source": "localizely",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Migrating from Flutter Intl and intl_utils to gen-l10n",
+   "url": "https://localizely.com/blog/flutter-intl-to-gen-l10n",
+   "source": "localizely",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to translate WordPress website into multiple languages",
+   "url": "https://localizely.com/blog/translate-wordpress-website-into-multiple-languages",
+   "source": "localizely",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to translate Excel files for software localization",
+   "url": "https://localizely.com/blog/translate-excel-file",
+   "source": "localizely",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Translate CSV files without headaches",
+   "url": "https://localizely.com/blog/translate-csv-file",
+   "source": "localizely",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Translate Android XML smoothly and efficiently",
+   "url": "https://localizely.com/blog/translate-android-xml-file",
+   "source": "localizely",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The right way to translate Java properties files",
+   "url": "https://localizely.com/blog/translate-java-properties-file",
+   "source": "localizely",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elevate localization efficiency with a dedicated YAML editor",
+   "url": "https://localizely.com/blog/yaml-editor",
+   "source": "localizely",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Boost your localization with a dedicated JSON editor",
+   "url": "https://localizely.com/blog/json-editor",
+   "source": "localizely",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A practical guide for efficient translation of YAML files",
+   "url": "https://localizely.com/blog/translate-yaml-file",
+   "source": "localizely",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to translate JSON files used in software localization",
+   "url": "https://localizely.com/blog/translate-json-file",
+   "source": "localizely",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Translate RESX files without hassle",
+   "url": "https://localizely.com/blog/translate-resx-file",
+   "source": "localizely",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "React internationalization with react-intl - Localizely",
+   "url": "https://localizely.com/blog/react-intl-tutorial",
+   "source": "localizely",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Language vs Locale: Understanding the key differences for better software localization",
+   "url": "https://localizely.com/blog/language-vs-locale",
+   "source": "localizely",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Building trust on property-based testing",
    "url": "http://localhost:4000/2020/04/23/building-trust-on-property-based-testing.html",
    "source": "logtalk",
@@ -70212,6 +70582,126 @@
    "url": "http://localhost:4000/2019/11/27/handling-optional-data.html",
    "source": "logtalk",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2016 - A year in review",
+   "url": "https://loige.co/2016-a-year-in-review/",
+   "source": "loige",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2017 - A year in review",
+   "url": "https://loige.co/2017-a-year-in-review/",
+   "source": "loige",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2018 - A year in review",
+   "url": "https://loige.co/2018-a-year-in-review/",
+   "source": "loige",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2019 - A year in review",
+   "url": "https://loige.co/2019-a-year-in-review/",
+   "source": "loige",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2020 - A year in review",
+   "url": "https://loige.co/2020-a-year-in-review/",
+   "source": "loige",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2021 - A year in review",
+   "url": "https://loige.co/2021-a-year-in-review/",
+   "source": "loige",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2022 - A year in Review",
+   "url": "https://loige.co/2022-a-year-in-review/",
+   "source": "loige",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2023 - A year in Review",
+   "url": "https://loige.co/2023-a-year-in-review/",
+   "source": "loige",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2024 - A year in Review",
+   "url": "https://loige.co/2024-a-year-in-review/",
+   "source": "loige",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2025 - A year in Review",
+   "url": "https://loige.co/2025-a-year-in-review/",
+   "source": "loige",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "3 invitations to try Atom.io",
+   "url": "https://loige.co/3-invitations-to-try-atom-io/",
+   "source": "loige",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "404: Newsletter Found",
+   "url": "https://loige.co/404-newsletter-found/",
+   "source": "loige",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 lessons learned at the Bank of Ireland Accelerator",
+   "url": "https://loige.co/5-lessons-learned-at-the-bank-of-ireland-accelerator/",
+   "source": "loige",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "6 Rules of thumb to build blazing fast web server applications",
+   "url": "https://loige.co/6-rules-of-thumb-to-build-blazing-fast-web-applications/",
+   "source": "loige",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "6 Tips to Build Fast Web Applications (Php Dublin March 2016 Talk)",
+   "url": "https://loige.co/6-tips-to-build-fast-web-applications-php-dublin-march-2016-talk/",
+   "source": "loige",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -70296,6 +70786,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "A Gentle Introduction to DAP and Prio",
+   "url": "https://lowentropy.net/posts/dap-basic/",
+   "source": "lowentropy",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Whole New Protocol Makes No Sense",
+   "url": "https://lowentropy.net/posts/whole-new-protocol/",
+   "source": "lowentropy",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "If you solve this CAPTCHA, you are not welcome here",
+   "url": "https://lowentropy.net/posts/captcha/",
+   "source": "lowentropy",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Versioning JSON for APIs",
+   "url": "https://lowentropy.net/posts/versioning-json/",
+   "source": "lowentropy",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Hacklore Letter and Privacy",
+   "url": "https://lowentropy.net/posts/hacklore-privacy/",
+   "source": "lowentropy",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Status Update: AI Preferences",
+   "url": "https://lowentropy.net/posts/aipref-update/",
+   "source": "lowentropy",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Expanding what HTTPS means",
+   "url": "https://lowentropy.net/posts/local-https/",
+   "source": "lowentropy",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "C2PA Is Not Going To Fix Our Misinformation Problem",
+   "url": "https://lowentropy.net/posts/c2pa/",
+   "source": "lowentropy",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Everything you need to know about selective disclosure",
+   "url": "https://lowentropy.net/posts/selective-disclosure/",
+   "source": "lowentropy",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thoughts on TAG Design Reviews",
+   "url": "https://lowentropy.net/posts/tag2023/",
+   "source": "lowentropy",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fraud, Abuse, Fingerprinting, Privacy, and Openness",
+   "url": "https://lowentropy.net/posts/fraud/",
+   "source": "lowentropy",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Entropy and Privacy Analysis",
+   "url": "https://lowentropy.net/posts/entropy-privacy/",
+   "source": "lowentropy",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Bundling for the Web",
+   "url": "https://lowentropy.net/posts/bundles/",
+   "source": "lowentropy",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Standardizing Principles",
+   "url": "https://lowentropy.net/posts/standard-principles/",
+   "source": "lowentropy",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RFCs in HTML",
+   "url": "https://lowentropy.net/posts/line-length/",
+   "source": "lowentropy",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "AI and Irontown",
    "url": "https://lucumr.pocoo.org/2026/11/9/irontown/",
    "source": "lucumr",
@@ -70372,6 +70982,142 @@
    "url": "https://lucumr.pocoo.org/2026/8/22/fast-hard-code/",
    "source": "lucumr",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Does Safari 15 finally fix viewport height?",
+   "url": "https://lukechannings.com/blog/2021-06-09-does-safari-15-fix-the-vh-bug/",
+   "source": "lukechannings",
+   "rank": 1,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mistakes made and lessons learned with Kubernetes and GitOps",
+   "url": "https://lukechannings.com/blog/2020-05-10-kubernetes-gitops-lessons/",
+   "source": "lukechannings",
+   "rank": 2,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "高考随想",
+   "url": "https://lutaonan.com/blog/undefined",
+   "source": "lutaonan",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "让 AI 戴着镣铐跳舞",
+   "url": "https://lutaonan.com/blog/undefined",
+   "source": "lutaonan",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "在 Claude Code 中使用 GLM 4.6 的体验",
+   "url": "https://lutaonan.com/blog/undefined",
+   "source": "lutaonan",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "现代浏览器插件开发指南",
+   "url": "https://lutaonan.com/blog/undefined",
+   "source": "lutaonan",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我们高估了智力的重要性",
+   "url": "https://lutaonan.com/blog/undefined",
+   "source": "lutaonan",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "我如何使用 Apple Notes 做笔记",
+   "url": "https://lutaonan.com/blog/undefined",
+   "source": "lutaonan",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "新 MacBook 的设置和软件",
+   "url": "https://lutaonan.com/blog/undefined",
+   "source": "lutaonan",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2024: 在夜海中观望浪潮",
+   "url": "https://lutaonan.com/blog/undefined",
+   "source": "lutaonan",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI 和写作",
+   "url": "https://lutaonan.com/blog/undefined",
+   "source": "lutaonan",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "「代码艺术家」不会被 AI 取代",
+   "url": "https://lutaonan.com/blog/undefined",
+   "source": "lutaonan",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "不上班的第一年",
+   "url": "https://lutaonan.com/blog/undefined",
+   "source": "lutaonan",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "在 Electron 中使用 SQLite 的最好方式",
+   "url": "https://lutaonan.com/blog/undefined",
+   "source": "lutaonan",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "读《岩田先生：任天堂传奇社长如是说》",
+   "url": "https://lutaonan.com/blog/undefined",
+   "source": "lutaonan",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "读 React 18 文档有感",
+   "url": "https://lutaonan.com/blog/undefined",
+   "source": "lutaonan",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2023 年终总结: 和自己对话",
+   "url": "https://lutaonan.com/blog/undefined",
+   "source": "lutaonan",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -71808,6 +72554,206 @@
    "metric": "feed rank"
   },
   {
+   "title": "Friends with new sites",
+   "url": "https://manuelmoreale.com/thoughts/friends-with-new-sites",
+   "source": "manuelmoreale",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The web used to belong somewhere",
+   "url": "https://manuelmoreale.com/thoughts/the-web-used-to-belong-somewhere",
+   "source": "manuelmoreale",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "More thinking on webmentions",
+   "url": "https://manuelmoreale.com/thoughts/more-thinking-on-webmentions",
+   "source": "manuelmoreale",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Continuing at the beginning",
+   "url": "https://manuelmoreale.com/walks/continuing-at-the-beginning",
+   "source": "manuelmoreale",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thinking about privacy and webmentions",
+   "url": "https://manuelmoreale.com/thoughts/thinking-about-privacy-and-webmentions",
+   "source": "manuelmoreale",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "35 down, 9 more to go",
+   "url": "https://manuelmoreale.com/walks/35-down-9-more-to-go",
+   "source": "manuelmoreale",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fitness challenge: what’s next?",
+   "url": "https://manuelmoreale.com/thoughts/fitness-challenge-what-s-next",
+   "source": "manuelmoreale",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Beginning at the end",
+   "url": "https://manuelmoreale.com/walks/beginning-at-the-end",
+   "source": "manuelmoreale",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The life triangle",
+   "url": "https://manuelmoreale.com/thoughts/the-life-triangle",
+   "source": "manuelmoreale",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Companies don’t make decisions",
+   "url": "https://manuelmoreale.com/thoughts/companies-don-t-make-decisions",
+   "source": "manuelmoreale",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "List rsync Modules Remotely",
+   "url": "https://manuel-strehl.de/list_rsync_modules",
+   "source": "manuelstrehl",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DOM Trees and Focus Order",
+   "url": "https://manuel-strehl.de/dom_trees_and_focus_order",
+   "source": "manuelstrehl",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Easy Theming with OKLCH colors",
+   "url": "https://manuel-strehl.de/easy_theming_with_oklch",
+   "source": "manuelstrehl",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Work Around MySQL’s “Big Packet” Error",
+   "url": "https://manuel-strehl.de/work_around_mysql_big_packet_error",
+   "source": "manuelstrehl",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Comfortably Call make from Subfolders",
+   "url": "https://manuel-strehl.de/comfortable_make",
+   "source": "manuelstrehl",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Efficiently Calling JS Bundlers in a Makefile",
+   "url": "https://manuel-strehl.de/calling_bundlers_in_makefile",
+   "source": "manuelstrehl",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Paradox of Irony",
+   "url": "https://manuel-strehl.de/paradox_of_irony",
+   "source": "manuelstrehl",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Searching MDN on the Command Line",
+   "url": "https://manuel-strehl.de/greppable-mdn",
+   "source": "manuelstrehl",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Docker One-Liners to Make Complex Tasks Simple",
+   "url": "https://manuel-strehl.de/quick_docker_commands",
+   "source": "manuelstrehl",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Create Opening Doors in CSS",
+   "url": "https://manuel-strehl.de/opening_door_in_css",
+   "source": "manuelstrehl",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Check Markdown Spelling with aspell",
+   "url": "https://manuel-strehl.de/check_markdown_spelling_with_aspell",
+   "source": "manuelstrehl",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trim LilyPond SVG Output",
+   "url": "https://manuel-strehl.de/trim_lilypond_svg",
+   "source": "manuelstrehl",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Overwrite PHP’s built-in functions in unit tests",
+   "url": "https://manuel-strehl.de/overwrite_PHP_built-in_functions",
+   "source": "manuelstrehl",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minimal contents of a .git folder",
+   "url": "https://manuel-strehl.de/minimal_git_folder",
+   "source": "manuelstrehl",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Makefile Rule for Generating Responsive Images from SVG",
+   "url": "https://manuel-strehl.de/a_makefile_rule_for_responsive_images",
+   "source": "manuelstrehl",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Community",
    "url": "https://marco.org/2026/10/24/community",
    "source": "marco",
@@ -71928,6 +72874,486 @@
    "metric": "feed rank"
   },
   {
+   "title": "System design interviews… during covid times",
+   "url": "https://marcosc.com/2021/11/system-design-interviews-during-covid-times/",
+   "source": "marcosc",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TIL from WebKit",
+   "url": "https://marcosc.com/2021/11/til-from-webkit/",
+   "source": "marcosc",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Browser Flavors of C++",
+   "url": "https://marcosc.com/2021/11/browser-flavors-of-c/",
+   "source": "marcosc",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WebKit – patches and tests",
+   "url": "https://marcosc.com/2021/09/webkit-patches-and-tests/",
+   "source": "marcosc",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building and Running WebKit",
+   "url": "https://marcosc.com/2020/09/building-and-running-webkit/",
+   "source": "marcosc",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Delving into Apple’s App Platform",
+   "url": "https://marcosc.com/2020/09/delving-into-apples-app-platform/",
+   "source": "marcosc",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web IDL Conversions when resolving Promises in Gecko",
+   "url": "https://marcosc.com/2020/07/web-idl-conversions-when-resolving-promises-in-gecko/",
+   "source": "marcosc",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Implementing a Permissions Policy in Gecko",
+   "url": "https://marcosc.com/2020/07/implementing-a-permissions-policy-in-gecko/",
+   "source": "marcosc",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tricky rebases in Phabricator",
+   "url": "https://marcosc.com/2020/07/tricky-rebases-in-phabricator/",
+   "source": "marcosc",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On weight loss",
+   "url": "https://marcosc.com/2020/01/on-weight-loss/",
+   "source": "marcosc",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Certification",
+   "url": "https://marcus.io/blog/on-certification",
+   "source": "marcus",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "80 / 20 accessibility",
+   "url": "https://marcus.io/blog/80-20-accessibility",
+   "source": "marcus",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Best intention barriers (ARIA edition)",
+   "url": "https://marcus.io/blog/best-intention-barriers-aria",
+   "source": "marcus",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Happy (?) belated new year",
+   "url": "https://marcus.io/blog/happy-new-year",
+   "source": "marcus",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Quick overview of \"What's New In WCAG 2.2\" explainer posts",
+   "url": "https://marcus.io/blog/overview-of-wcag22-posts",
+   "source": "marcus",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Role-playing game",
+   "url": "https://marcus.io/blog/role-playing-game",
+   "source": "marcus",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Contextual form errors and ARIA",
+   "url": "https://marcus.io/blog/contextual-form-errors-aria",
+   "source": "marcus",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Languages on Mastodon",
+   "url": "https://marcus.io/blog/languages-on-mastodon",
+   "source": "marcus",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Farewell, 2021",
+   "url": "https://marcus.io/blog/farewell-2021",
+   "source": "marcus",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's on the menu?",
+   "url": "https://marcus.io/blog/whats-on-the-menu",
+   "source": "marcus",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Joining Khan Academy",
+   "url": "https://marcysutton.com/on-joining-khan-academy/",
+   "source": "marcysutton",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Developing anti-SLAPP policies for A11y Slack with Harvard Cyberlaw Clinic",
+   "url": "https://marcysutton.com/developing-anti-slapp-policies-a11y-slack-harvard-cyberlaw/",
+   "source": "marcysutton",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Focus on What Matters",
+   "url": "https://marcysutton.com/focus-on-what-matters/",
+   "source": "marcysutton",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Celebrating One Year of Independence as Modern Sole Design, LLC",
+   "url": "https://marcysutton.com/one-year-of-independence-modern-sole-design-llc/",
+   "source": "marcysutton",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Evinced is Pushing the Limits of Automated Accessibility Testing",
+   "url": "https://marcysutton.com/evinced-automated-accessibility-testing/",
+   "source": "marcysutton",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Content-visibility and Accessible Semantics",
+   "url": "https://marcysutton.com/content-visibility-accessible-semantics/",
+   "source": "marcysutton",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding accessibility jobs in specialized companies and the mainstream",
+   "url": "https://marcysutton.com/accessibility-jobs-specialized-mainstream/",
+   "source": "marcysutton",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Outsider Leverage and Accessibility",
+   "url": "https://marcysutton.com/outsider-leverage-accessibility/",
+   "source": "marcysutton",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Encouraging Open Source Contributions with Docs: a Self-Fulfilling Prophecy",
+   "url": "https://marcysutton.com/encouraging-contributions-with-docs/",
+   "source": "marcysutton",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Remote Work and Van Life",
+   "url": "https://marcysutton.com/remote-work-van-life/",
+   "source": "marcysutton",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Salary and Career Growth",
+   "url": "https://marcysutton.com/salary-career-growth/",
+   "source": "marcysutton",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Prototype Testing for Accessible Client-Side Routing",
+   "url": "https://marcysutton.com/prototype-testing-accessible-clientside-routing/",
+   "source": "marcysutton",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Great Leadership, Gatsby & Girl Develop It",
+   "url": "https://marcysutton.com/great-leadership-gatsby-and-girl-develop-it/",
+   "source": "marcysutton",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Deal with Developer Advocacy",
+   "url": "https://marcysutton.com/the-deal-with-developer-advocacy/",
+   "source": "marcysutton",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Live Coding Accessibility",
+   "url": "https://marcysutton.com/live-coding-accessibility/",
+   "source": "marcysutton",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Letting an AI agent migrate this blog from WordPress to Hugo",
+   "url": "https://mariospr.org/2026/11/04/letting-an-ai-agent-migrate-this-blog-from-wordpress-to-hugo/",
+   "source": "mariospr",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Igalia and WebKit: status update and plans (2024)",
+   "url": "https://mariospr.org/2024/11/03/igalia-and-webkit-status-update-and-plans-2024/",
+   "source": "mariospr",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Igalia and the Chromium project",
+   "url": "https://mariospr.org/2021/07/22/igalia-and-the-chromium-project/",
+   "source": "mariospr",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "﻿​Chromium now migrated to the new C++ Mojo types",
+   "url": "https://mariospr.org/2020/07/08/chromium-now-migrated-to-the-new-c-mojo-types/",
+   "source": "mariospr",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Web Platform Tests project",
+   "url": "https://mariospr.org/2020/05/14/the-web-platform-tests-project/",
+   "source": "mariospr",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "End of the year Update: 2019 edition",
+   "url": "https://mariospr.org/2019/12/23/end-of-the-year-update-2019-edition/",
+   "source": "mariospr",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Working on the Chromium Servicification Project",
+   "url": "https://mariospr.org/2019/01/29/working-on-the-chromium-servicification-project/",
+   "source": "mariospr",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Frogr 1.5 released",
+   "url": "https://mariospr.org/2018/11/25/frogr-1-5-released/",
+   "source": "mariospr",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Moving",
+   "url": "https://mariospr.org/2018/08/03/on-moving/",
+   "source": "mariospr",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Updating Endless OS to GNOME Shell 3.26 (Video)",
+   "url": "https://mariospr.org/2018/05/06/updating-endless-os-to-gnome-shell-3-26-video/",
+   "source": "mariospr",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "cargo upgrade on Windows",
+   "url": "https://markentier.tech/posts/2023/12/cargo-upgrade-on-windows/",
+   "source": "markentier",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Self-signed certificates with mkcert",
+   "url": "https://markentier.tech/posts/2023/12/self-signed-certificates-mkcert/",
+   "source": "markentier",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sticky Notes: Self-signed Certificate",
+   "url": "https://markentier.tech/posts/2023/12/sticky-notes-self-signed-certificate/",
+   "source": "markentier",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sticky Notes: cargo upgrade",
+   "url": "https://markentier.tech/posts/2023/12/sticky-notes-cargo-upgrade/",
+   "source": "markentier",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Capture The IP",
+   "url": "https://markentier.tech/posts/2022/12/capture-the-ip/",
+   "source": "markentier",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Halftime",
+   "url": "https://markentier.tech/posts/2022/04/halftime/",
+   "source": "markentier",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speedy Rust builds under WSL2",
+   "url": "https://markentier.tech/posts/2022/01/speedy-rust-builds-under-wsl2/",
+   "source": "markentier",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "(blank)",
+   "url": "https://markentier.tech/posts/2021/12/blank/",
+   "source": "markentier",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Multi-arch container images for Docker and Kubernetes",
+   "url": "https://markentier.tech/posts/2021/11/multiarch-container-images-for-docker-and-kubernetes/",
+   "source": "markentier",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "git's autocrlf=true considered harmful",
+   "url": "https://markentier.tech/posts/2021/10/autocrlf-true-considered-harmful/",
+   "source": "markentier",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Clean up unmerged branches on GitHub automatically",
+   "url": "https://markentier.tech/posts/2021/09/delete-unmerged-branches-github/",
+   "source": "markentier",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tired",
+   "url": "https://markentier.tech/posts/2021/08/tired/",
+   "source": "markentier",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rust Safety and Security",
+   "url": "https://markentier.tech/posts/2021/07/rust-safety-and-security/",
+   "source": "markentier",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Meritocracy",
+   "url": "https://markentier.tech/posts/2021/06/meritocracy/",
+   "source": "markentier",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Whiteboards",
+   "url": "https://markentier.tech/posts/2021/06/whiteboards/",
+   "source": "markentier",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Netflix Loses Paid Users For the First Time in a Decade",
    "url": "https://marker.medium.com/netflix-loses-paid-users-for-the-first-time-in-a-decade-56902fcd0942?source=rss----7b6769f2748b---4",
    "source": "markermedium",
@@ -72003,6 +73429,86 @@
    "title": "Elon Musk Watches the Birdie…",
    "url": "https://marker.medium.com/elon-musk-watches-the-birdie-640e224f712e?source=rss----7b6769f2748b---4",
    "source": "markermedium",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Cloudflare Analytics review",
+   "url": "https://markosaric.com/cloudflare-analytics-review/",
+   "source": "markosaric",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "13% of my website visitors block Google Analytics",
+   "url": "https://markosaric.com/google-analytics-blocking/",
+   "source": "markosaric",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Only 9% of visitors give GDPR consent to be tracked",
+   "url": "https://markosaric.com/gdpr-consent/",
+   "source": "markosaric",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How you can help keep blogging alive and thriving",
+   "url": "https://markosaric.com/keep-blogging-alive/",
+   "source": "markosaric",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to fix the broken web as a site owner and web developer",
+   "url": "https://markosaric.com/broken-web/",
+   "source": "markosaric",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Please get your parents off Facebook",
+   "url": "https://markosaric.com/off-facebook/",
+   "source": "markosaric",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to de-Google your site to make it faster and visitor friendly",
+   "url": "https://markosaric.com/degoogleify/",
+   "source": "markosaric",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ethical marketing in the GDPR, CCPA and no third-party cookies world",
+   "url": "https://markosaric.com/ethical-marketing/",
+   "source": "markosaric",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Use Firefox Preview to make browsing on Android fast and distraction-free",
+   "url": "https://markosaric.com/firefox-mobile/",
+   "source": "markosaric",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to fight back against Google AMP",
+   "url": "https://markosaric.com/google-amp/",
+   "source": "markosaric",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -72163,6 +73669,206 @@
    "title": "Principles for effective slides",
    "url": "https://martinfowler.com/articles/never-send-slides/slide-principles.html",
    "source": "martinfowler",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Not A Newsletter #1",
+   "url": "https://martinwolf.org/2021/01/not-a-newsletter-1/",
+   "source": "martinwolf",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My typical day",
+   "url": "https://martinwolf.org/2021/01/my-typical-day/",
+   "source": "martinwolf",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2020",
+   "url": "https://martinwolf.org/2020/01/2020/",
+   "source": "martinwolf",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The inert attribute and property polyfill",
+   "url": "https://martinwolf.org/2019/07/inert/",
+   "source": "martinwolf",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Frontend Design, React, and a Bridge over the Great Divide",
+   "url": "https://martinwolf.org/2019/07/frontend-design-react-and-a-bridge-over-the-great-divide/",
+   "source": "martinwolf",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The New Wilderness",
+   "url": "https://martinwolf.org/2019/07/the-new-wilderness/",
+   "source": "martinwolf",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Dark Forest Theory of the Internet",
+   "url": "https://martinwolf.org/2019/06/dark-forest-internet/",
+   "source": "martinwolf",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inside Microsoft’s surprise decision to work with Google on its Edge browser",
+   "url": "https://martinwolf.org/2019/06/microsoft-chromium-edge-google-history-collaboration/",
+   "source": "martinwolf",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sunday, May 5th, 2019",
+   "url": "https://martinwolf.org/2019/05/sunset/",
+   "source": "martinwolf",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "font-weight: 1000",
+   "url": "https://martinwolf.org/2019/04/font-weight-1000/",
+   "source": "martinwolf",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a bike computer from scratch",
+   "url": "https://marvinh.dev/blog/bike-computer/",
+   "source": "marvinh",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speeding up the JavaScript ecosystem - oxlint and oxfmt",
+   "url": "https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-13/",
+   "source": "marvinh",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DDoS'ing the human brain",
+   "url": "https://marvinh.dev/blog/ddosing-the-human-brain/",
+   "source": "marvinh",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Signals vs Query-Based Compilers",
+   "url": "https://marvinh.dev/blog/signals-vs-query-based-compilers/",
+   "source": "marvinh",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building From First Principles",
+   "url": "https://marvinh.dev/blog/building-from-first-principles/",
+   "source": "marvinh",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The missing link in JavaScript tools",
+   "url": "https://marvinh.dev/blog/unifying-js-tools/",
+   "source": "marvinh",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speeding up the JavaScript ecosystem - Semver",
+   "url": "https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-12/",
+   "source": "marvinh",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speeding up the JavaScript ecosystem - Rust and JavaScript Plugins",
+   "url": "https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-11/",
+   "source": "marvinh",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The modern way to write JavaScript servers",
+   "url": "https://marvinh.dev/blog/modern-way-to-write-javascript-servers/",
+   "source": "marvinh",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speeding up the JavaScript ecosystem - Isolated Declarations",
+   "url": "https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-10/",
+   "source": "marvinh",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speeding up the JavaScript ecosystem - Server Side JSX",
+   "url": "https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-9/",
+   "source": "marvinh",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speeding up the JavaScript ecosystem - Tailwind CSS",
+   "url": "https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-8/",
+   "source": "marvinh",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speeding up the JavaScript ecosystem - The barrel file debacle",
+   "url": "https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-7/",
+   "source": "marvinh",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Speeding up the JavaScript ecosystem - Polyfills gone rogue",
+   "url": "https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-6/",
+   "source": "marvinh",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "So you want to render colors in your terminal",
+   "url": "https://marvinh.dev/blog/terminal-colors/",
+   "source": "marvinh",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -72963,6 +74669,126 @@
    "title": "Amateurs!",
    "url": "https://matthiasott.com/notes/amateurs",
    "source": "matthiasott",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CVE-2026-98432: which Linux kernels are still vulnerable",
+   "url": "https://ma.ttias.be/linux-cve-2026-98432-vulnerable-kernels/",
+   "source": "mattias",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Xcode 27 drew a white strip over my iPhone app's status bar",
+   "url": "https://ma.ttias.be/xcode-27-white-strip-status-bar/",
+   "source": "mattias",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Snapkin now uploads your photos before you tap Analyse",
+   "url": "https://ma.ttias.be/snapkin-pre-emptive-photo-uploads/",
+   "source": "mattias",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The PHP CVE scramble, in one graph",
+   "url": "https://ma.ttias.be/php-land-last-24-hours/",
+   "source": "mattias",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PHP CVE-2026-109618 and CVE-2026-109619: early mitigation steps",
+   "url": "https://ma.ttias.be/php-cve-2026-109618-early-mitigation/",
+   "source": "mattias",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PHP CVE-2026-109618 and CVE-2026-109619: how to apply the patches",
+   "url": "https://ma.ttias.be/php-cve-2026-109618-patch/",
+   "source": "mattias",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PHP's new memory_hard_limit_percent setting",
+   "url": "https://ma.ttias.be/php-memory-hard-limit/",
+   "source": "mattias",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Snapkin has an engineering blog now",
+   "url": "https://ma.ttias.be/snapkin-engineering-blog/",
+   "source": "mattias",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From laravel-echo-server to laravel-websockets to Laravel Reverb",
+   "url": "https://ma.ttias.be/from-laravel-echo-server-to-laravel-websockets-to-reverb/",
+   "source": "mattias",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The 7 reasons Apple rejected my app, and what I changed",
+   "url": "https://ma.ttias.be/app-store-rejection-reasons/",
+   "source": "mattias",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Data is the application",
+   "url": "https://ma.ttias.be/data-is-the-application/",
+   "source": "mattias",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Snapkin: the calorie tracker for people who've quit calorie trackers",
+   "url": "https://ma.ttias.be/introducing-snapkin/",
+   "source": "mattias",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "9000 RPM is faster than your screen refreshes",
+   "url": "https://ma.ttias.be/9000-rpm/",
+   "source": "mattias",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PWAs: Personal Web Apps",
+   "url": "https://ma.ttias.be/pwas-personal-web-apps/",
+   "source": "mattias",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deduplicating git worktrees on EXT4 with jdupes",
+   "url": "https://ma.ttias.be/deduplicating-git-worktrees-ext4-jdupes/",
+   "source": "mattias",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -89498,6 +91324,14 @@
   {
    "title": "Show HN: Online Anthakshari Game",
    "url": "https://anthakshari.ai",
+   "source": "show_hn",
+   "rank": 12,
+   "score": 2,
+   "metric": "points"
+  },
+  {
+   "title": "Show HN: I wrote 100 SaaS ideas with buyer, pricing, and MVP plan for each",
+   "url": "https://www.bestmillionstartups.com/100-saas-ideas",
    "source": "show_hn",
    "rank": 12,
    "score": 2,
