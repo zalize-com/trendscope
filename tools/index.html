@@ -267,8 +267,39 @@ function cronGo() {
   const out = document.getElementById("cron-out");
   const parts = v.split(/\s+/);
   if (parts.length !== 5) { out.innerHTML = `<span class="bad">need 5 fields, got ${parts.length}</span>`; return; }
+  const nxt = nextRuns(parts, 8);
   out.innerHTML = parts.map((p,i) => `<div><b>${CRON_NAMES[i][0]}:</b> ${cronField(p, CRON_NAMES[i])}</div>`).join("")
-    + `<div style="margin-top:8px" class="ok">runs at: ${describe(parts)}</div>`;
+    + `<div style="margin-top:8px" class="ok">runs at: ${describe(parts)}</div>`
+    + (nxt && nxt.length
+      ? `<div style="margin-top:8px"><b>next ${nxt.length}:</b><ol style="margin:6px 0 0 20px">${nxt.map(d=>`<li>${d.toString().slice(0,21)}</li>`).join("")}</ol></div>`
+      : `<div style="margin-top:8px" class="bad">no upcoming runs — check field ranges</div>`);
+}
+function cronSet(f, lo, hi) {
+  const out = new Set();
+  for (const part of f.split(",")) {
+    const m2 = part.match(/^(\*|\d+(?:-\d+)?)(?:\/(\d+))?$/);
+    if (!m2) return null;
+    let [a,b] = m2[1] === "*" ? [lo,hi] : m2[1].split("-").map(Number);
+    if (m2[1] !== "*" && !m2[1].includes("-")) b = a;
+    const step = +(m2[2] || 1);
+    for (let i = a; i <= b; i += step) if (i >= lo && i <= hi) out.add(i);
+  }
+  return out;
+}
+function nextRuns(parts, n) {
+  const mins = cronSet(parts[0],0,59), hrs = cronSet(parts[1],0,23),
+        doms = cronSet(parts[2],1,31), mons = cronSet(parts[3],1,12), dows = cronSet(parts[4],0,7);
+  if (!mins||!hrs||!doms||!mons||!dows) return null;
+  const res = [], t = new Date(); t.setSeconds(0,0); t.setMinutes(t.getMinutes()+1);
+  for (let i = 0; i < 600000 && res.length < n; i++) {
+    const dow = t.getDay(), dom = t.getDate();
+    const domOk = (parts[2]==="*"&&parts[4]==="*") ||
+      (parts[2]!=="*"&&parts[4]!=="*" ? doms.has(dom)||dows.has(dow) : doms.has(dom)&&dows.has(dow));
+    if (mins.has(t.getMinutes()) && hrs.has(t.getHours()) && mons.has(t.getMonth()+1) && domOk)
+      res.push(new Date(t));
+    t.setMinutes(t.getMinutes()+1);
+  }
+  return res;
 }
 function describe([m,h,dom,mon,dow]) {
   const time = (h==="*") ? `every hour at minute ${m}` :
