@@ -10,6 +10,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DAILY = os.path.join(ROOT, "data", "daily")
 OUT = os.path.join(ROOT, "docs", "movers")
 
+# Sources whose `score` is a rolling-window aggregate (weekly/monthly/recent
+# downloads): day-over-day score deltas measure window composition, not
+# attention. For those we rank by in-source rank change instead.
+ROLLING = {"npm", "pypi", "crates"}
+
 
 def fmt(n):
     a = abs(n)
@@ -54,11 +59,17 @@ def main():
 
     enter = [i for u, i in B.items() if u not in A]
     exit_ = [i for u, i in A.items() if u not in B]
-    movers = [(i, i["score"] - A[u]["score"]) for u, i in B.items() if u in A]
+    movers = [(i, i["score"] - A[u]["score"]) for u, i in B.items()
+              if u in A and i["source"] not in ROLLING]
+    pkg_ranks = [(i, A[u].get("rank", 99) - i.get("rank", 99))
+                 for u, i in B.items()
+                 if u in A and i["source"] in ROLLING]
     enter.sort(key=lambda i: -i["score"])
     exit_.sort(key=lambda i: -i["score"])
     gainers = sorted(movers, key=lambda m: -m[1])
     droppers = sorted(movers, key=lambda m: m[1])
+    pkg_up = sorted((m for m in pkg_ranks if m[1] > 0), key=lambda m: -m[1])
+    pkg_dn = sorted((m for m in pkg_ranks if m[1] < 0), key=lambda m: m[1])
 
     gen = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     md = [f"# Movers — {day_b}",
@@ -67,7 +78,7 @@ def main():
           f"generated {gen}_",
           f"",
           f"**+{len(enter)}** entered · **−{len(exit_)}** left · "
-          f"**{len(movers)}** persisted",
+          f"**{len(A) - len(exit_)}** persisted",
           f"",
           f"## Biggest gainers",
           rows(gainers, "", lambda i, d: f"{fmt(A[i['url']]['score'])} → "
@@ -79,6 +90,15 @@ def main():
           f"",
           f"## Biggest droppers",
           rows(droppers[:10], "", lambda i, d: f"{fmt(d)} {i['metric']}"),
+          f"",
+          f"## Package rank movers",
+          f"_npm/PyPI/crates scores are rolling windows — ranked by in-source "
+          f"rank change, not raw delta_",
+          f"",
+          rows(pkg_up[:8], "▲ ", lambda i, d: f"#{i['rank']} (was #{i['rank'] + d}) "
+                                             f"· {fmt(i['score'])} {i['metric']}"),
+          rows(pkg_dn[:8], "▼ ", lambda i, d: f"#{i['rank']} (was #{i['rank'] + d}) "
+                                             f"· {fmt(i['score'])} {i['metric']}"),
           f"",
           f"## Left the board",
           rows([(i, None) for i in exit_], "", lambda i, _: f"{fmt(i['score'])} {i['metric']} (was)"),
