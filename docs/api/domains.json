@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T16:58:53.902816+00:00",
+ "generated_at": "2026-11-15T17:00:35.663008+00:00",
  "latest_snapshot": "2026-11-15",
- "total": 491,
+ "total": 523,
  "domains": [
   {
    "hostname": "blog.google",
@@ -82,6 +82,22 @@
    }
   },
   {
+   "hostname": "theverge.com",
+   "days_on_board": 2,
+   "items": 18,
+   "sources": [
+    "hackernews",
+    "theverge"
+   ],
+   "top_hit": {
+    "title": "I asked every TV manufacturer 17 questions about how they spy on you",
+    "url": "https://www.theverge.com/tech/1012372/tv-privacy-acr-questions",
+    "score": 378,
+    "metric": "points",
+    "date": "2026-11-11"
+   }
+  },
+  {
    "hostname": "blog.janestreet.com",
    "days_on_board": 2,
    "items": 17,
@@ -95,22 +111,6 @@
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "theverge.com",
-   "days_on_board": 2,
-   "items": 17,
-   "sources": [
-    "hackernews",
-    "theverge"
-   ],
-   "top_hit": {
-    "title": "I asked every TV manufacturer 17 questions about how they spy on you",
-    "url": "https://www.theverge.com/tech/1012372/tv-privacy-acr-questions",
-    "score": 378,
-    "metric": "points",
-    "date": "2026-11-11"
    }
   },
   {

@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T16:58:53.902816+00:00",
+ "generated_at": "2026-11-15T17:00:35.663008+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 3579,
- "new_items": 3453,
+ "total_items": 3829,
+ "new_items": 3703,
  "by_source": {
   "producthunt": 45,
   "show_hn": 39,
@@ -15,6 +15,7 @@
   "daringfireball": 16,
   "gargron": 16,
   "lemmy": 16,
+  "theverge": 16,
   "100r": 15,
   "512pixels": 15,
   "9to5mac": 15,
@@ -76,16 +77,26 @@
   "brandur": 15,
   "bravenewgeek": 15,
   "buffer": 15,
+  "calpaterson": 15,
   "cameronmoll": 15,
+  "caseymuratori": 15,
   "catonmat": 15,
+  "cezarypiatekgithub": 15,
   "changelog": 15,
   "charity": 15,
   "cheney": 15,
   "chriskiehl": 15,
+  "christianselig": 15,
+  "cloudberry": 15,
   "cloudflare": 15,
+  "cloudplatformgoogleblog": 15,
+  "codecompass00substack": 15,
   "codemadness": 15,
+  "codevisualstudio": 15,
   "codinghorror": 15,
   "codinghorror2": 15,
+  "cppcast": 15,
+  "cssirl": 15,
   "d3noob": 15,
   "dabeaz": 15,
   "danielmiessler": 15,
@@ -152,7 +163,6 @@
   "swyx": 15,
   "tbray": 15,
   "thecodebarbarian": 15,
-  "theverge": 15,
   "thisdavej": 15,
   "troyhunt": 15,
   "vercel": 15,
@@ -168,6 +178,8 @@
   "aphyr": 12,
   "baeldung": 12,
   "bloglogrocket": 12,
+  "chriscoyier": 12,
+  "codetutsplus": 12,
   "jetbrains": 12,
   "agis": 11,
   "bret": 11,
@@ -199,8 +211,15 @@
   "blogluden": 10,
   "blogrustlang": 10,
   "borischerny": 10,
+  "calv": 10,
+  "carljohansenwordpress": 10,
+  "chrisprather": 10,
+  "chriswarrick": 10,
   "codeflickr": 10,
   "copyconstruct": 10,
+  "cordcuttersnews": 10,
+  "createaprowebsite": 10,
+  "csaiot": 10,
   "deliverooengineering": 10,
   "dewith": 10,
   "dropbox": 10,
@@ -259,6 +278,7 @@
   "tonsky": 6,
   "bendersky": 5,
   "blogchristianposta": 5,
+  "christianheilmann": 5,
   "fetchrss": 5,
   "github_trending": 4,
   "thisweek": 4,
@@ -10825,6 +10845,206 @@
    "metric": "feed rank"
   },
   {
+   "title": "Agent memory as a file format",
+   "url": "https://calpaterson.com/memoryfields.html",
+   "source": "calpaterson",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dependency cooldowns turn you into a free-rider",
+   "url": "https://calpaterson.com/deps.html",
+   "source": "calpaterson",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"Disregard that!\" attacks",
+   "url": "https://calpaterson.com/disregard.html",
+   "source": "calpaterson",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building LLMs is probably not going be a brilliant business",
+   "url": "https://calpaterson.com/porter.html",
+   "source": "calpaterson",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Is Tesla really more valuable than Toyota?",
+   "url": "https://calpaterson.com/singleton.html",
+   "source": "calpaterson",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "S3 is files, but not a filesystem",
+   "url": "https://calpaterson.com/s3.html",
+   "source": "calpaterson",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Take the tools out of 'Data', but don't take the data out of the tools",
+   "url": "https://csvbase.com/blog/1",
+   "source": "calpaterson",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "There aren't that many uses for blockchains",
+   "url": "https://calpaterson.com/blockchain.html",
+   "source": "calpaterson",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An oral history of Bank Python",
+   "url": "https://calpaterson.com/bank-python.html",
+   "source": "calpaterson",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "It looks like a product but is secretly a subscription",
+   "url": "https://calpaterson.com/printers.html",
+   "source": "calpaterson",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "No general method to detect fraud",
+   "url": "https://calpaterson.com/fraud.html",
+   "source": "calpaterson",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "We were promised Strong AI, but instead we got metadata analysis",
+   "url": "https://calpaterson.com/metadata.html",
+   "source": "calpaterson",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Staying out of TTL hell",
+   "url": "https://calpaterson.com/ttl-hell.html",
+   "source": "calpaterson",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Where's the fastest place to put my server? How much does it matter?",
+   "url": "https://calpaterson.com/latency.html",
+   "source": "calpaterson",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Firefox usage is down 85% despite Mozilla's top exec pay going up 400%",
+   "url": "https://calpaterson.com/mozilla.html",
+   "source": "calpaterson",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Small Models Have Arrived",
+   "url": "https://calv.info/small-models-have-arrived",
+   "source": "calv",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Durable Objects are Made for Agents",
+   "url": "https://calv.info/durable-objects-are-made-for-agents",
+   "source": "calv",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Oracle and the Firm",
+   "url": "https://calv.info/the-oracle-and-the-firm",
+   "source": "calv",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Coding Agents in Feb 2026",
+   "url": "https://calv.info/agents-feb-2026",
+   "source": "calv",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I Use Obsidian",
+   "url": "https://calv.info/how-i-use-obsidian",
+   "source": "calv",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You Still Need to Think",
+   "url": "https://calv.info/you-still-need-to-think",
+   "source": "calv",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Coding Agent Metagame",
+   "url": "https://calv.info/coding-agent-metagame",
+   "source": "calv",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reflections on OpenAI",
+   "url": "https://calv.info/openai-reflections",
+   "source": "calv",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Upsides and Downsides",
+   "url": "https://calv.info/upsides-and-downsides",
+   "source": "calv",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How much of a manager are you?",
+   "url": "https://calv.info/how-much-of-a-manager",
+   "source": "calv",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "10 More Things I Wish Every Design Student Knew",
    "url": "https://cameronmoll.com/journal/10-more-things-every-design-student-should-know",
    "source": "cameronmoll",
@@ -10945,6 +11165,206 @@
    "metric": "feed rank"
   },
   {
+   "title": "Smoothing line charts with Catmull-Rom splines",
+   "url": "https://carljohansen.wordpress.com/2026/05/07/smoothing-line-charts-with-catmull-rom-splines/",
+   "source": "carljohansenwordpress",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I can’t believe I didn’t know about TaskCompletionSource",
+   "url": "https://carljohansen.wordpress.com/2026/02/10/i-cant-believe-i-didnt-know-about-taskcompletionsource/",
+   "source": "carljohansenwordpress",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I finally found a use for ExpandoObject",
+   "url": "https://carljohansen.wordpress.com/2026/02/03/i-finally-found-a-use-for-expandoobject/",
+   "source": "carljohansenwordpress",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Short note about Bézier curves",
+   "url": "https://carljohansen.wordpress.com/2026/01/20/short-note-about-bezier-curves/",
+   "source": "carljohansenwordpress",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "First look at C# 14 extension properties",
+   "url": "https://carljohansen.wordpress.com/2025/11/13/first-look-at-c-14-extension-properties/",
+   "source": "carljohansenwordpress",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Longest palindromic substring, GitHub CoPilot and an existential crisis",
+   "url": "https://carljohansen.wordpress.com/2025/02/12/longest-palindromic-substring-github-copilot-and-an-existential-crisis/",
+   "source": "carljohansenwordpress",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Calculating Square Roots",
+   "url": "https://carljohansen.wordpress.com/2024/11/27/calculating-square-roots/",
+   "source": "carljohansenwordpress",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SpinShuffle puzzle walkthrough",
+   "url": "https://carljohansen.wordpress.com/2024/10/24/spinshuffle-puzzle-walkthrough/",
+   "source": "carljohansenwordpress",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shallow Thought versus Chess.com bots",
+   "url": "https://carljohansen.wordpress.com/2024/10/21/shallow-thought-versus-chess-com-bots/",
+   "source": "carljohansenwordpress",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shallow Thought Chess Player… in React",
+   "url": "https://carljohansen.wordpress.com/2024/10/03/shallow-thought-chess-player-in-react/",
+   "source": "carljohansenwordpress",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Printing Presses Are Giant GPUs",
+   "url": "https://caseymuratori.com/blog_0038",
+   "source": "caseymuratori",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Jittering Fonts in Photoshop with Prime Pussify",
+   "url": "https://caseymuratori.com/blog_0037",
+   "source": "caseymuratori",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stable Filtering - Part 2",
+   "url": "https://caseymuratori.com/blog_0036",
+   "source": "caseymuratori",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stable Filtering - Part 1",
+   "url": "https://caseymuratori.com/blog_0035",
+   "source": "caseymuratori",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to get clang++ to find link.exe",
+   "url": "https://caseymuratori.com/blog_0034",
+   "source": "caseymuratori",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How close is WinDBG Preview to an everyday debugger?",
+   "url": "https://caseymuratori.com/blog_0033",
+   "source": "caseymuratori",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Killing the Walk Monster (2018)",
+   "url": "https://caseymuratori.com/blog_0032",
+   "source": "caseymuratori",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Thirty-Million-Line Problem (2015)",
+   "url": "https://caseymuratori.com/blog_0031",
+   "source": "caseymuratori",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Papers I Have Loved (2016)",
+   "url": "https://caseymuratori.com/blog_0030",
+   "source": "caseymuratori",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Open a Black Box (2007)",
+   "url": "https://caseymuratori.com/blog_0029",
+   "source": "caseymuratori",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Are register names still useful?",
+   "url": "https://caseymuratori.com/blog_0028",
+   "source": "caseymuratori",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why Software Patents are Bad, Period.",
+   "url": "https://caseymuratori.com/blog_0027",
+   "source": "caseymuratori",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Fixing Multi-monitor and Multi-window OpenGL on Windows",
+   "url": "https://caseymuratori.com/blog_0026",
+   "source": "caseymuratori",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Worst API Ever Made",
+   "url": "https://caseymuratori.com/blog_0025",
+   "source": "caseymuratori",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Designing and Evaluating Reusable Components (2004)",
+   "url": "https://caseymuratori.com/blog_0024",
+   "source": "caseymuratori",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Try an Online Android Emulator! (For Free!)",
    "url": "https://catonmat.net/try-an-online-android-emulator-for-free",
    "source": "catonmat",
@@ -11060,6 +11480,126 @@
    "title": "6.62 Million Google Clicks! 💸",
    "url": "https://catonmat.net/662-million-google-clicks",
    "source": "catonmat",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visualizing Test Execution with OpenTelemetry",
+   "url": "https://cezarypiatek.github.io/post/visualizing-test-execution-with-opentelemetry/",
+   "source": "cezarypiatekgithub",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Structuring Test Projects for Maintainability",
+   "url": "https://cezarypiatek.github.io/post/structuring-test-projects-for-maintainability/",
+   "source": "cezarypiatekgithub",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Run a React Development Server with HTTPS",
+   "url": "https://cezarypiatek.github.io/post/react-with-https/",
+   "source": "cezarypiatekgithub",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mocking authorization tokens with WireMock.NET",
+   "url": "https://cezarypiatek.github.io/post/mocking-authorization-tokens/",
+   "source": "cezarypiatekgithub",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "C# code snippets for Resharper and Rider",
+   "url": "https://cezarypiatek.github.io/post/productivity-boost-snipptes/",
+   "source": "cezarypiatekgithub",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The fastest way to create WireMock.NET mappings",
+   "url": "https://cezarypiatek.github.io/post/generate-wiremocknet-mappings-with-proxy/",
+   "source": "cezarypiatekgithub",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mocking GraphQL queries with WireMock.NET",
+   "url": "https://cezarypiatek.github.io/post/mocking-graphql-with-wiremock/",
+   "source": "cezarypiatekgithub",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Common Setup and Teardown in dotnet tests without test framework magic",
+   "url": "https://cezarypiatek.github.io/post/maintainable-test-fixture/",
+   "source": "cezarypiatekgithub",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sharing WireMock.NET in sequential and parallel tests",
+   "url": "https://cezarypiatek.github.io/post/wiremock-in-parallel-tests/",
+   "source": "cezarypiatekgithub",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Collecting memory dumps for .NET Core on Kubernetes",
+   "url": "https://cezarypiatek.github.io/post/memory-dump-on-kubernetes/",
+   "source": "cezarypiatekgithub",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WireMock.NET - Troubleshooting",
+   "url": "https://cezarypiatek.github.io/post/mocking-outgoing-http-requests-p2/",
+   "source": "cezarypiatekgithub",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WireMock.NET - Introduction",
+   "url": "https://cezarypiatek.github.io/post/mocking-outgoing-http-requests-p1/",
+   "source": "cezarypiatekgithub",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mocking dependencies in ASP.NET Core tests",
+   "url": "https://cezarypiatek.github.io/post/mocking-dependencies-in-asp-net-core/",
+   "source": "cezarypiatekgithub",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I don't use MediatR for CQRS",
+   "url": "https://cezarypiatek.github.io/post/why-i-dont-use-mediatr-for-cqrs/",
+   "source": "cezarypiatekgithub",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Adding support for VisualStudio 2022 to your extension",
+   "url": "https://cezarypiatek.github.io/post/migrate-vsix-to-vs2022/",
+   "source": "cezarypiatekgithub",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -11425,6 +11965,102 @@
    "metric": "feed rank"
   },
   {
+   "title": "Got Them Little Side Projects Moved to CodePen Hosting",
+   "url": "https://chriscoyier.net/2026/11/06/got-them-little-side-projects-moved-to-codepen-hosting/",
+   "source": "chriscoyier",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Jobs Podcast",
+   "url": "https://chriscoyier.net/2026/10/30/jobs-podcast/",
+   "source": "chriscoyier",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Archived Tweets",
+   "url": "https://chriscoyier.net/2026/10/13/archived-tweets/",
+   "source": "chriscoyier",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Atomic Wall Clocks",
+   "url": "https://chriscoyier.net/2026/10/12/atomic-wall-clocks/",
+   "source": "chriscoyier",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "EPS?",
+   "url": "https://chriscoyier.net/2026/10/12/eps/",
+   "source": "chriscoyier",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dave’s Rule of Life",
+   "url": "https://chriscoyier.net/2026/10/11/daves-rule-of-life/",
+   "source": "chriscoyier",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Media Diet",
+   "url": "https://chriscoyier.net/2026/10/10/media-diet-11/",
+   "source": "chriscoyier",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Multipage",
+   "url": "https://chriscoyier.net/2026/10/09/multipage/",
+   "source": "chriscoyier",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Justice for CSS",
+   "url": "https://chriscoyier.net/2026/10/09/justice-for-css/",
+   "source": "chriscoyier",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Glasses",
+   "url": "https://chriscoyier.net/2026/10/07/glasses/",
+   "source": "chriscoyier",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kelsey",
+   "url": "https://chriscoyier.net/2026/10/06/kelsey/",
+   "source": "chriscoyier",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WordPress MCP",
+   "url": "https://chriscoyier.net/2026/10/05/wordpress-mcp/",
+   "source": "chriscoyier",
+   "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "It's still OK to enjoy programming",
    "url": "https://chriskiehl.com/article/it-is-still-ok-to-enjoy-programming",
    "source": "chriskiehl",
@@ -11545,6 +12181,326 @@
    "metric": "feed rank"
   },
   {
+   "title": "Who P-P-P-Plugged Perl?",
+   "url": "https://chris.prather.org/who-plugged-perl.html",
+   "source": "chrisprather",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Birds that Flock Together",
+   "url": "https://chris.prather.org/birds-that-flock.html",
+   "source": "chrisprather",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Surviving in the Wasteland with Raylib and a Platypus",
+   "url": "https://chris.prather.org/the-wasteland.html",
+   "source": "chrisprather",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Roguelike in Perl Part 6 - Doing (and taking) some damage",
+   "url": "https://chris.prather.org/perl-roguelike-part-6.html",
+   "source": "chrisprather",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Roguelike in Perl Part 5 - Knowing where your enemies are, and how to kick them",
+   "url": "https://chris.prather.org/perl-roguelike-part-5.html",
+   "source": "chrisprather",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Roguelike in Perl Part 4 - Field of View",
+   "url": "https://chris.prather.org/perl-roguelike-part-4.html",
+   "source": "chrisprather",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Roguelike in Perl Part 3 - Mastering the Generative Dungeon",
+   "url": "https://chris.prather.org/perl-roguelike-part-3.html",
+   "source": "chrisprather",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Roguelike in Perl Part 2 - Entities and Obstacles",
+   "url": "https://chris.prather.org/perl-roguelike-part-2.html",
+   "source": "chrisprather",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Roguelike in Perl Part 1 - Orchestrating Movement in the Dark",
+   "url": "https://chris.prather.org/perl-roguelike-part-1.html",
+   "source": "chrisprather",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Roguelike in Perl Part 0 - The Setup",
+   "url": "https://chris.prather.org/perl-roguelike-part-0.html",
+   "source": "chrisprather",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pardon my dust 2 – redesigning christianheilmann.com",
+   "url": "https://christianheilmann.com/2026/11/10/pardon-my-dust-2-redesigning-christianheilmann-com/",
+   "source": "christianheilmann",
+   "rank": 1,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Without-love – a creative coding challenge",
+   "url": "https://christianheilmann.com/2026/10/28/without-love-a-creative-coding-challenge/",
+   "source": "christianheilmann",
+   "rank": 2,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pardon my dust – re-homing 21 years of blog content of christianheilmann.com",
+   "url": "https://christianheilmann.com/2026/10/28/pardon-my-dust-re-homing-21-years-of-blog-content-of-christianheilmann-com/",
+   "source": "christianheilmann",
+   "rank": 3,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Returning to Bengaluru in November, see you there.",
+   "url": "https://christianheilmann.com/2026/10/09/returning-to-bengaluru-in-november-see-you-there/",
+   "source": "christianheilmann",
+   "rank": 4,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "TLDRs newsletters are TLDR so I wrote a converter that gets all the important links",
+   "url": "https://christianheilmann.com/2026/10/06/tldrs-newsletters-are-tldr-so-i-wrote-a-converter-that-gets-all-the-important-links/",
+   "source": "christianheilmann",
+   "rank": 5,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The iPhone Duo is fun",
+   "url": "https://christianselig.com/2026/11/iphone-duo-is-fun/",
+   "source": "christianselig",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "iOS 27 has some weird Dynamic Island behavior",
+   "url": "https://christianselig.com/2026/10/ios-27-dynamic-island-bug/",
+   "source": "christianselig",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The coolest use for the Vision Pro",
+   "url": "https://christianselig.com/2026/07/vision-pro-house/",
+   "source": "christianselig",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I have thoughts on the iPhone Air",
+   "url": "https://christianselig.com/2026/07/iphone-air-review/",
+   "source": "christianselig",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Fitbit Air is interesting",
+   "url": "https://christianselig.com/2026/06/fitbit-air/",
+   "source": "christianselig",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rivian R2 wishes as an R1 owner",
+   "url": "https://christianselig.com/2026/02/rivian-r2-wishes/",
+   "source": "christianselig",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CKSyncEngine questions and answers",
+   "url": "https://christianselig.com/2026/01/cksyncengine/",
+   "source": "christianselig",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The one software tweak the iPhone Air needs",
+   "url": "https://christianselig.com/2025/09/iphone-air-macro-need/",
+   "source": "christianselig",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "App Clip Local Experiences have consumed my day",
+   "url": "https://christianselig.com/2025/09/why-app-clip-no-work/",
+   "source": "christianselig",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "High quality, low filesize GIFs",
+   "url": "https://christianselig.com/2025/08/high-quality-low-filesize-gifs/",
+   "source": "christianselig",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You should repaste your MacBook (but don't)",
+   "url": "https://christianselig.com/2025/07/repaste-macbook/",
+   "source": "christianselig",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A slept on upscaling tool for macOS",
+   "url": "https://christianselig.com/2025/06/awesome-upscaling-tool/",
+   "source": "christianselig",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Embedding Godot games in iOS apps is easy now",
+   "url": "https://christianselig.com/2025/05/godot-ios-interop/",
+   "source": "christianselig",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Curing Mac mini M4 fomo with 3D printing",
+   "url": "https://christianselig.com/2024/11/mac-mini-m4-prints/",
+   "source": "christianselig",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing Tiny Storage: a small, lightweight UserDefaults replacement",
+   "url": "https://christianselig.com/2024/10/introducing-tiny-storage/",
+   "source": "christianselig",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Certified 100% Slop",
+   "url": "https://chriswarrick.com/blog/2026/05/06/certified-100-percent-slop/",
+   "source": "chriswarrick",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Docker In WSL: A No-Frills Guide",
+   "url": "https://chriswarrick.com/blog/2026/03/04/docker-in-wsl-a-no-frills-guide/",
+   "source": "chriswarrick",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I Wrote YetAnotherBlogGenerator",
+   "url": "https://chriswarrick.com/blog/2026/02/16/i-wrote-yet-another-blog-generator/",
+   "source": "chriswarrick",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Deploying Python Web Applications with Docker",
+   "url": "https://chriswarrick.com/blog/2026/02/06/deploying-python-web-applications-with-docker/",
+   "source": "chriswarrick",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Distro Hopping, Server Edition",
+   "url": "https://chriswarrick.com/blog/2025/11/09/distro-hopping-server-edition/",
+   "source": "chriswarrick",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "PowerShell: the object-oriented shell you didn’t know you needed",
+   "url": "https://chriswarrick.com/blog/2024/04/29/powershell-the-object-oriented-shell-you-didnt-know-you-needed/",
+   "source": "chriswarrick",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Python Packaging, One Year Later: A Look Back at 2023 in Python Packaging",
+   "url": "https://chriswarrick.com/blog/2024/01/15/python-packaging-one-year-later/",
+   "source": "chriswarrick",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to improve Python packaging, or why fourteen tools are at least twelve too many",
+   "url": "https://chriswarrick.com/blog/2023/01/15/how-to-improve-python-packaging/",
+   "source": "chriswarrick",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Writing a Console App in C# for Fun and Profit",
+   "url": "https://chriswarrick.com/blog/2022/09/19/writing-a-console-app-in-c-sharp-for-fun-and-profit/",
+   "source": "chriswarrick",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Enabling Virtualization Support in Boot Camp with rEFInd",
+   "url": "https://chriswarrick.com/blog/2021/01/31/enabling-virtualization-support-in-boot-camp-with-refind/",
+   "source": "chriswarrick",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Moon",
    "url": "https://ciechanow.ski/moon/",
    "source": "ciechanow",
@@ -11557,6 +12513,126 @@
    "url": "https://ciechanow.ski/airfoil/",
    "source": "ciechanow",
    "rank": 2,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Agentic Security Engineering",
+   "url": "https://cloudberry.engineering/article/agentic-security-engineering/",
+   "source": "cloudberry",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Automating Code Security Reviews",
+   "url": "https://cloudberry.engineering/article/automating-code-security-reviews/",
+   "source": "cloudberry",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Littlefactory",
+   "url": "https://cloudberry.engineering/note/littlefactory/",
+   "source": "cloudberry",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "All You Need Is CLI",
+   "url": "https://cloudberry.engineering/note/all-you-need-is-cli/",
+   "source": "cloudberry",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Test Theater",
+   "url": "https://cloudberry.engineering/note/test-theater/",
+   "source": "cloudberry",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scaling Vulnerability Management with AI",
+   "url": "https://cloudberry.engineering/article/scaling-vulnerability-management-with-ai/",
+   "source": "cloudberry",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Agentbox",
+   "url": "https://cloudberry.engineering/note/agentbox/",
+   "source": "cloudberry",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Sandboxing Agents",
+   "url": "https://cloudberry.engineering/article/on-sandboxing-agents/",
+   "source": "cloudberry",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Agent Sandboxes",
+   "url": "https://cloudberry.engineering/note/agent-sandboxes/",
+   "source": "cloudberry",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GH Issues Considered Dangerous",
+   "url": "https://cloudberry.engineering/note/gh-issues-considered-dangerous/",
+   "source": "cloudberry",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Claude Code Sandbox",
+   "url": "https://cloudberry.engineering/note/claude-code-sandbox/",
+   "source": "cloudberry",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How I Think About Agentic Risks",
+   "url": "https://cloudberry.engineering/article/agentic-risks/",
+   "source": "cloudberry",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Coding Agents Security Theater",
+   "url": "https://cloudberry.engineering/note/coding-agents-security-theater/",
+   "source": "cloudberry",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Finding vulnerabilities with LLMs",
+   "url": "https://cloudberry.engineering/note/finding-vulns-with-coding-agents/",
+   "source": "cloudberry",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The nx Breach",
+   "url": "https://cloudberry.engineering/note/nx-breach/",
+   "source": "cloudberry",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -11676,6 +12752,246 @@
    "title": "What took the Internet offline in Q3 2026",
    "url": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
    "source": "cloudflare",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new with Google Cloud",
+   "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/",
+   "source": "cloudplatformgoogleblog",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Google Cloud announced in AI this month",
+   "url": "https://cloud.google.com/blog/products/ai-machine-learning/what-google-cloud-announced-in-ai-this-month/",
+   "source": "cloudplatformgoogleblog",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How growing Latin American midsize businesses are building in the AI era",
+   "url": "https://cloud.google.com/blog/topics/customers/how-midsize-latam-companies-build-with-ai/",
+   "source": "cloudplatformgoogleblog",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Google Cloud announced in AI this month - 2025",
+   "url": "https://cloud.google.com/blog/products/ai-machine-learning/what-google-cloud-announced-in-ai-this-month-2025/",
+   "source": "cloudplatformgoogleblog",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new with Google Cloud - 2025",
+   "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud-2025/",
+   "source": "cloudplatformgoogleblog",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Year in Google Cloud — 2025",
+   "url": "https://cloud.google.com/blog/products/gcp/top-google-cloud-blogs-2025/",
+   "source": "cloudplatformgoogleblog",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Supporting Viksit Bharat: Announcing our newest AI investments in India",
+   "url": "https://cloud.google.com/blog/products/gcp/supporting-viksit-bharat-announcing-ai-investments-in-india/",
+   "source": "cloudplatformgoogleblog",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How scientists can leverage AI agents using Gemini Enterprise, Gemini Code Assist, and Gemini CLI",
+   "url": "https://cloud.google.com/blog/products/ai-machine-learning/how-scientists-can-use-gemini-enterprise-for-ai-workflows/",
+   "source": "cloudplatformgoogleblog",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Top 25 blogs of 2025… so far",
+   "url": "https://cloud.google.com/blog/products/gcp/most-read-blogs-from-h1-2025/",
+   "source": "cloudplatformgoogleblog",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The overwhelmed person’s guide to Google Cloud: week of January 16",
+   "url": "https://cloud.google.com/blog/products/gcp/the-overwhelmed-persons-guide-to-google-cloud/",
+   "source": "cloudplatformgoogleblog",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What’s new with Google Cloud - 2024",
+   "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud-2024/",
+   "source": "cloudplatformgoogleblog",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Year in Google Cloud - 2024",
+   "url": "https://cloud.google.com/blog/products/gcp/top-google-cloud-blogs/",
+   "source": "cloudplatformgoogleblog",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Playground: Where learning and innovation converge in the heart of London",
+   "url": "https://cloud.google.com/blog/products/ai-machine-learning/ai-playground-where-learning-and-innovation-converge-in-the-heart-of-london/",
+   "source": "cloudplatformgoogleblog",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "London Summit: UK businesses turn to Google Cloud AI",
+   "url": "https://cloud.google.com/blog/products/gcp/london-summit-uk-businesses-turn-to-google-cloud-ai/",
+   "source": "cloudplatformgoogleblog",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your ultimate guide to the latest in generative AI on Vertex AI",
+   "url": "https://cloud.google.com/blog/products/ai-machine-learning/your-ultimate-guide-to-the-latest-in-generative-ai-on-vertex-ai/",
+   "source": "cloudplatformgoogleblog",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How OpenAI Uses LLMs to Explain Neurons Inside LLMs",
+   "url": "https://codecompass00.substack.com/p/how-openai-uses-llms-to-explain-llm-neurons-at-scale",
+   "source": "codecompass00substack",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How Google DeepMind's AlphaGeometry Reached Math Olympiad Level Reasoning By Combining Creative LLMs With Deductive Symbolic Engines",
+   "url": "https://codecompass00.substack.com/p/google-deepmind-alpha-geometry-neuro-symbolic-llm-system",
+   "source": "codecompass00substack",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is QLoRA?: A Visual Guide to Efficient Finetuning of Quantized LLMs",
+   "url": "https://codecompass00.substack.com/p/qlora-visual-guide-finetune-quantized-llms-peft",
+   "source": "codecompass00substack",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[Jupyter Notebook] Build Your Own Open-source RAG Using LangChain, LLAMA 3 and Chroma",
+   "url": "https://codecompass00.substack.com/p/build-open-source-rag-langchain-llm-llama-chroma",
+   "source": "codecompass00substack",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is Retrieval Augmented Generation? A Visual Guide On RAGs in the Context of LLMs",
+   "url": "https://codecompass00.substack.com/p/what-is-retrieval-augemented-generation-rag-llm",
+   "source": "codecompass00substack",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Welcome to The Code Compass! [Start Here] ▶️",
+   "url": "https://codecompass00.substack.com/p/welcome-to-the-code-compass-start-here",
+   "source": "codecompass00substack",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Confident Product Decisions with Data: Inside Spotify’s Risk-Aware A/B Testing Framework",
+   "url": "https://codecompass00.substack.com/p/spotify-product-decisions-a-b-testing-framework",
+   "source": "codecompass00substack",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is an Eigenvector?: A Visual Guide to This Fundamental Concept From Linear Algebra",
+   "url": "https://codecompass00.substack.com/p/what-is-an-eigenvector-eigenvalue-a-visual-guide",
+   "source": "codecompass00substack",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What is LoRA?: A Visual Guide to Low-Rank Approximation for Fine-Tuning LLMs Efficiently",
+   "url": "https://codecompass00.substack.com/p/what-is-lora-a-visual-guide-llm-fine-tuning",
+   "source": "codecompass00substack",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Inside AlphaFold: DeepMind’s Recipe For Success",
+   "url": "https://codecompass00.substack.com/p/inside-alphafold-deepmind-recipe-success",
+   "source": "codecompass00substack",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Challenges of Building Effective LLM Benchmarks",
+   "url": "https://codecompass00.substack.com/p/llm-evaluation-leaderboards",
+   "source": "codecompass00substack",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why You Should Not Strive For Perfection: Perfect is the Enemy of Good",
+   "url": "https://codecompass00.substack.com/p/perfect-is-the-enemy-of-good-slow-sw-development",
+   "source": "codecompass00substack",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"Clustering Together\": A Visual Guide to the K-Means Algorithm",
+   "url": "https://codecompass00.substack.com/p/k-means-clustering-a-visual-guide",
+   "source": "codecompass00substack",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Transformers and the Power of Positional Encoding [Transformers Series]",
+   "url": "https://codecompass00.substack.com/p/positional-encoding-transformers",
+   "source": "codecompass00substack",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"Attention, Please!\": A Visual Guide To The Attention Mechanism [Transformers Series]",
+   "url": "https://codecompass00.substack.com/p/visual-guide-attention-mechanism-transformers",
+   "source": "codecompass00substack",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -11876,6 +13192,222 @@
    "title": "Idiotbox: Youtube interface",
    "url": "https://www.codemadness.org/idiotbox.html",
    "source": "codemadness",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Which Platform to Choose For Your Next Mobile Game?",
+   "url": "https://code.tutsplus.com/which-platform-to-choose-for-your-next-mobile-game--cms-25843a",
+   "source": "codetutsplus",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to create an SVG viewer in HTML, CSS, and JavaScript",
+   "url": "https://webdesign.tutsplus.com/svg-viewer--cms-109195t",
+   "source": "codetutsplus",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Create a color contrast checker with HTML, CSS, and JavaScript",
+   "url": "https://webdesign.tutsplus.com/color-contrast-checker--cms-109187t",
+   "source": "codetutsplus",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to use Lotties in Figma",
+   "url": "https://design.tutsplus.com/tutorials/how-to-use-lotties-in-figma--cms-109193",
+   "source": "codetutsplus",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to create a glassmorphism generator tool",
+   "url": "https://webdesign.tutsplus.com/glassmorphism-generator-tool--cms-109168t",
+   "source": "codetutsplus",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to create infinite text scrolling in HTML, CSS, and JavaScript",
+   "url": "https://code.tutsplus.com/infinite-text-scrolling-in-html-css-and-javascript--cms-109170t",
+   "source": "codetutsplus",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "25 ridiculously impressive HTML5 canvas experiments",
+   "url": "https://webdesign.tutsplus.com/21-ridiculously-impressive-html5-canvas-experiments--net-14210a",
+   "source": "codetutsplus",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Easy CSS slider (carousel with pure CSS)",
+   "url": "https://webdesign.tutsplus.com/easy-slider-carousel-with-pure-css--cms-107626t",
+   "source": "codetutsplus",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Create a currency converter with HTML, CSS, and vanilla JavaScript",
+   "url": "https://webdesign.tutsplus.com/currency-converter-with-html-css-and-vanilla-javascript--cms-108362t",
+   "source": "codetutsplus",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What to do when one of your WordPress plugins gets compromised",
+   "url": "https://webdesign.tutsplus.com/what-to-do-when-one-of-your-wordpress-plugins-gets-compromised--cms-109077a",
+   "source": "codetutsplus",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to build horizontal marquee effects with GSAP",
+   "url": "https://webdesign.tutsplus.com/how-to-build-horizontal-marquee-effects-with-gsap--cms-108794t",
+   "source": "codetutsplus",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Send email in Python with the API method: A step-by-step guide",
+   "url": "https://code.tutsplus.com/python-send-email-api--cms-108845t",
+   "source": "codetutsplus",
+   "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visual Studio Code 1.147 (Insiders)",
+   "url": "https://code.visualstudio.com/updates/v1_147",
+   "source": "codevisualstudio",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visual Studio Code 1.146",
+   "url": "https://code.visualstudio.com/updates/v1_146",
+   "source": "codevisualstudio",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visual Studio Code 1.145",
+   "url": "https://code.visualstudio.com/updates/v1_145",
+   "source": "codevisualstudio",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visual Studio Code 1.144",
+   "url": "https://code.visualstudio.com/updates/v1_144",
+   "source": "codevisualstudio",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "VS Code Wrapped: GitHub Universe 2026",
+   "url": "https://code.visualstudio.com/blogs/2026/10/28/vscode-wrapped",
+   "source": "codevisualstudio",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Tune GitHub Copilot Inline Suggestions with Configurable Eagerness",
+   "url": "https://code.visualstudio.com/blogs/2026/10/27/configurable-eagerness",
+   "source": "codevisualstudio",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visual Studio Code 1.143",
+   "url": "https://code.visualstudio.com/updates/v1_143",
+   "source": "codevisualstudio",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Modernizing the VS Code UI",
+   "url": "https://code.visualstudio.com/blogs/2026/10/15/modern-ui",
+   "source": "codevisualstudio",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visual Studio Code 1.142",
+   "url": "https://code.visualstudio.com/updates/v1_142",
+   "source": "codevisualstudio",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visual Studio Code 1.141",
+   "url": "https://code.visualstudio.com/updates/v1_141",
+   "source": "codevisualstudio",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visual Studio Code 1.140",
+   "url": "https://code.visualstudio.com/updates/v1_140",
+   "source": "codevisualstudio",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visual Studio Code 1.139",
+   "url": "https://code.visualstudio.com/updates/v1_139",
+   "source": "codevisualstudio",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building the new GitHub Copilot Inline Suggestions Model: Part Two",
+   "url": "https://code.visualstudio.com/blogs/2026/09/23/building-the-github-copilot-inline-suggestions-model-part-two",
+   "source": "codevisualstudio",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Visual Studio Code 1.138",
+   "url": "https://code.visualstudio.com/updates/v1_138",
+   "source": "codevisualstudio",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building the new GitHub Copilot Inline Suggestions Model: Part One",
+   "url": "https://code.visualstudio.com/blogs/2026/09/16/building-the-github-copilot-inline-suggestions-model-part-one",
+   "source": "codevisualstudio",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -12197,6 +13729,486 @@
    "url": "https://copyconstruct.medium.com/tactical-challenges-in-hiring-junior-engineers-29e31634a9bd?source=rss-87c8c84f24b1------2",
    "source": "copyconstruct",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stream College Basketball, NFL, NBA, WWE and More for $39.99 a Month With This Bundle",
+   "url": "https://cordcuttersnews.com/stream-college-basketball-nfl-nba-wwe-and-more-for-39-99-a-month-with-this-bundle/",
+   "source": "cordcuttersnews",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "41 Years Ago Today in TV History: The 200th Episode of Dallas Airs",
+   "url": "https://cordcuttersnews.com/41-years-ago-today-in-tv-history-the-200th-episode-of-dallas-airs/",
+   "source": "cordcuttersnews",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NBC Turns 100 Years Old Today",
+   "url": "https://cordcuttersnews.com/nbc-turns-100-years-old-today/",
+   "source": "cordcuttersnews",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Roku Channel is The Best Free Streaming Service According to a Survey of Over 1,700 Cord Cutters",
+   "url": "https://cordcuttersnews.com/the-roku-channel-is-the-best-free-streaming-service-according-to-a-survey-of-over-1700-cord-cutters/",
+   "source": "cordcuttersnews",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Apple TV 4K Is Once Again For Sale on Amazon New",
+   "url": "https://cordcuttersnews.com/the-apple-tv-4k-is-once-again-for-sale-on-amazon-new/",
+   "source": "cordcuttersnews",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "YouTube TV Rolls Out a Big Upgrade",
+   "url": "https://cordcuttersnews.com/youtube-tv-rolls-out-a-big-upgrade/",
+   "source": "cordcuttersnews",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Overpaying for Live TV? These YouTube TV, DIRECTV, and Fubo Deals Could Save You Money on Sports, News, and Entertainment",
+   "url": "https://cordcuttersnews.com/overpaying-for-live-tv-these-youtube-tv-directv-and-fubo-deals-could-save-you-money-on-sports-news-and-entertainment/",
+   "source": "cordcuttersnews",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Murphy Brown Premiered 38 Years Ago Today",
+   "url": "https://cordcuttersnews.com/murphy-brown-premiered-38-years-ago-today/",
+   "source": "cordcuttersnews",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Roku Loses Two Popular Streaming Services, CNN Sees Major Cuts, & More",
+   "url": "https://cordcuttersnews.com/roku-loses-two-popular-streaming-services-cnn-sees-major-cuts-more/",
+   "source": "cordcuttersnews",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pluto TV Is Adding A Ton of Warner Bros. Discovery TV Shows & Movies Following Skydance Merger",
+   "url": "https://cordcuttersnews.com/pluto-tv-is-adding-a-ton-of-warner-bros-discovery-tv-shows-movies-following-skydance-merger/",
+   "source": "cordcuttersnews",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Learning C++ With C++26's Reflection",
+   "url": "https://cppcast.com/learning_cpp_with_cpp26s_reflection/",
+   "source": "cppcast",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Safety and Interoperability with Rust and C++",
+   "url": "https://cppcast.com/safety_and_interoperability_with_rust_and_cpp/",
+   "source": "cppcast",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Running Conferences and Processing Credit Cards with Kevin Carpenter",
+   "url": "https://cppcast.com/running_conferences_and_processing_credit_cards_with_kevin_carpenter/",
+   "source": "cppcast",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From Self Taught to Committee Member's First Accepted Paper",
+   "url": "https://cppcast.com/from_self_taught_to_committee_members_first_accepted_paper/",
+   "source": "cppcast",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "40 Years of Programming and Embeddable Programming Languages with Mark Guidarelli",
+   "url": "https://cppcast.com/40_years_of_programming_and_embeddable_programming_languages_with_mark_guidarelli/",
+   "source": "cppcast",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Teaching C++ to Game Development Students in the Age of LLMs with Tom Tesch",
+   "url": "https://cppcast.com/teaching_cpp_to_game_development_students_in_the_age_of_llms_with_tom_tesch/",
+   "source": "cppcast",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GPU Programming and HLSL with Chris Bieneman",
+   "url": "https://cppcast.com/gpu_programming_and_hlsl_with_chris_bieneman/",
+   "source": "cppcast",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Compiler Warnings as Errors with Keith Stockdale",
+   "url": "https://cppcast.com/compiler_warnings_as_errors_with_keith_stockdale/",
+   "source": "cppcast",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building a Compiler Inside the C++ Compiler with Daniel Nikpayuk",
+   "url": "https://cppcast.com/a_compiler_insider_the_compiler_with_daniel_nikpayuk/",
+   "source": "cppcast",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Job Hunting and Optimizing Compilers with Jamie Pendergast",
+   "url": "https://cppcast.com/job_hunting_and_optimizing_compilers_with_jamie_pendergast/",
+   "source": "cppcast",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reflecting on Timur and Phil",
+   "url": "https://cppcast.com/reflecting_on_timur_and_phil/",
+   "source": "cppcast",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reflection and C++26, with Herb Sutter",
+   "url": "https://cppcast.com/reflection_and_cpp26/",
+   "source": "cppcast",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "BrontoSource and Swiss Tables",
+   "url": "https://cppcast.com/brontosource_and_swiss_tables/",
+   "source": "cppcast",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Friends-and-Family Special",
+   "url": "https://cppcast.com/friends-and-family_special/",
+   "source": "cppcast",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "From Refactoring to (physical) Relocation",
+   "url": "https://cppcast.com/from_refactoring_to_physical_relocation/",
+   "source": "cppcast",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Website Layout Ideas: 6 Patterns You Can Build",
+   "url": "https://createaprowebsite.com/website-layout-ideas/",
+   "source": "createaprowebsite",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "n8n vs Zapier: Which Automation Tool Is Better?",
+   "url": "https://createaprowebsite.com/n8n-vs-zapier/",
+   "source": "createaprowebsite",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Build a Website With GPT-6 Astra",
+   "url": "https://createaprowebsite.com/build-website-with-gpt-6-astra/",
+   "source": "createaprowebsite",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Website Launch Checklist: Test the Path Before You Share",
+   "url": "https://createaprowebsite.com/website-launch-checklist/",
+   "source": "createaprowebsite",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Webflow Review: Is It Right for You?",
+   "url": "https://createaprowebsite.com/webflow-review/",
+   "source": "createaprowebsite",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Create a Landing Page in WordPress",
+   "url": "https://createaprowebsite.com/how-to-create-a-landing-page-in-wordpress/",
+   "source": "createaprowebsite",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hostinger vs SiteGround: Which Host Fits Your WordPress Site?",
+   "url": "https://createaprowebsite.com/hostinger-vs-siteground/",
+   "source": "createaprowebsite",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "n8n vs Make: Which Automation Builder Is Better?",
+   "url": "https://createaprowebsite.com/n8n-vs-make/",
+   "source": "createaprowebsite",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What Is Squarespace? A Beginner’s Guide",
+   "url": "https://createaprowebsite.com/what-is-squarespace/",
+   "source": "createaprowebsite",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WordPress Maintenance Cost: What You Actually Pay",
+   "url": "https://createaprowebsite.com/wordpress-maintenance-cost/",
+   "source": "createaprowebsite",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Merging Matter connectivity with AI for next-generation home appliances",
+   "url": "https://embeddedcomputing.com/application/consumer/smart-home-tech/merging-matter-connectivity-with-ai-for-next-generation-home-appliances",
+   "source": "csaiot",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Aliro: Unlocking the future of smart locks with an ST reference design",
+   "url": "https://blog.st.com/aliro/",
+   "source": "csaiot",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Aliro Comes to Google. And Nuki is Ready.",
+   "url": "https://matter-smarthome.de/en/products/aliro-comes-to-google-and-nuki-is-ready/",
+   "source": "csaiot",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google Wallet can finally unlock your front door",
+   "url": "https://www.absolutegeeks.com/tech-news/google-wallet-can-finally-unlock-your-front-door-five-years-after-apple/",
+   "source": "csaiot",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google Wallet can now hold the keys to your home",
+   "url": "https://www.androidpolice.com/google-wallet-can-now-hold-keys-to-your-home/",
+   "source": "csaiot",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Best Smart Home Brands in the World 2026: Top 10 Ranked",
+   "url": "https://www.globalbrandsmagazine.com/best-smart-home-brands-in-the-world/",
+   "source": "csaiot",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Google Wallet adds digital home keys to open your front door smart lock with a tap",
+   "url": "https://www.androidauthority.com/google-wallet-digital-home-keys-nfc-uwb-unlocking-3734133/",
+   "source": "csaiot",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your Arduino Nano Matter board now speaks Zigbee",
+   "url": "https://blog.arduino.cc/2026/10/15/your-arduino-nano-matter-board-now-speaks-zigbee/",
+   "source": "csaiot",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nordic Semiconductor Promises Ultra-Low-Power, Multi-Protocol Edge Smarts with the New nRF71 Series",
+   "url": "https://www.hackster.io/news/nordic-semiconductor-promises-ultra-low-power-multi-protocol-edge-smarts-with-the-new-nrf71-series-6661e460e668",
+   "source": "csaiot",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Zigbee 4.0: Foundation for Harmonizing with Smart Energy",
+   "url": "https://csa-iot.org/wp-content/uploads/2026/11/Zigbee-4.0-Step-5.pdf",
+   "source": "csaiot",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Clutter",
+   "url": "https://css-irl.info/clutter/",
+   "source": "cssirl",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Reflections From Green IO 2025",
+   "url": "https://css-irl.info/reflections-from-green-io-2025/",
+   "source": "cssirl",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating CSS Theme Variables from a JS file",
+   "url": "https://css-irl.info/creating-css-variables-from-a-js-file/",
+   "source": "cssirl",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wholegrain Digital’s Response to the BBC’s Web Sustainability Report",
+   "url": "https://css-irl.info/wholegrain-digitals-response-to-web-sustainability-report/",
+   "source": "cssirl",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Debating the Merits of LLMs",
+   "url": "https://css-irl.info/debating-the-merits-of-llms/",
+   "source": "cssirl",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What I learned from migrating a Vue project from Vuex to Pinia",
+   "url": "https://css-irl.info/what-i-learned-from-migrating-a-vuex-app-to-pinia/",
+   "source": "cssirl",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating Static SVGs from GeoJSON",
+   "url": "https://css-irl.info/creating-static-svgs-from-geojson/",
+   "source": "cssirl",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sustainable Hardware Choices",
+   "url": "https://css-irl.info/sustainable-hardware-choices/",
+   "source": "cssirl",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Education Needs Teachers, Not More Technology",
+   "url": "https://css-irl.info/education-needs-teachers-not-more-technology/",
+   "source": "cssirl",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS Masonry Layout Syntax",
+   "url": "https://css-irl.info/css-masonry-layout-syntax/",
+   "source": "cssirl",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI Environmental Impact Report",
+   "url": "https://css-irl.info/ai-environmental-impact-report/",
+   "source": "cssirl",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Versatile Markdown Shortcode for Eleventy",
+   "url": "https://css-irl.info/a-versatile-markdown-shortcode-for-eleventy/",
+   "source": "cssirl",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I’ve Been Doing Blockquotes Wrong",
+   "url": "https://css-irl.info/ive-been-doing-blockquotes-wrong/",
+   "source": "cssirl",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Notes From Green IO Conference",
+   "url": "https://css-irl.info/notes-from-green-io-conference/",
+   "source": "cssirl",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Limitation Breeds Creativity: A Study in Composition with Custom Properties",
+   "url": "https://css-irl.info/limitation-breeds-creativity/",
+   "source": "cssirl",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -26507,6 +28519,14 @@
   {
    "title": "Rachelle Hampton won’t admit how long she spent charting the use of ‘murmur’ in Twilight",
    "url": "https://www.theverge.com/entertainment/1033895/rachelle-hampton-normal-gossip-interview",
+   "source": "theverge",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple’s first smart glasses are coming together",
+   "url": "https://www.theverge.com/tech/1033968/apples-first-smart-glasses-are-coming-together",
    "source": "theverge",
    "rank": 1,
    "score": 10,
