@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T12:53:36.438685+00:00",
+ "generated_at": "2026-11-15T12:55:22.344759+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 323,
- "new_items": 197,
+ "total_items": 324,
+ "new_items": 198,
  "by_source": {
   "producthunt": 45,
   "show_hn": 20,
@@ -14,7 +14,7 @@
   "lemmy": 15,
   "theverge": 11,
   "krebs": 10,
-  "lobsters": 8,
+  "lobsters": 9,
   "github_trending": 2,
   "ask_hn": 1,
   "devto": 1
@@ -695,6 +695,14 @@
   {
    "title": "Disk encryption on NetBSD achieving secrecy",
    "url": "https://netbsd.org/~nia/disk-encrypt/",
+   "source": "lobsters",
+   "rank": 15,
+   "score": 1,
+   "metric": "score"
+  },
+  {
+   "title": "Memory management in 40 major C projects, a survey",
+   "url": "https://theconsensus.dev/p/2026/11/08/c-memory-management-survey.html",
    "source": "lobsters",
    "rank": 15,
    "score": 1,

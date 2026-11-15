@@ -1,13 +1,13 @@
 {
  "a": "2026-11-14",
  "b": "2026-11-15",
- "generated": "2026-11-15 12:47 UTC",
+ "generated": "2026-11-15 12:55 UTC",
  "entered": [
   {
    "title": "SpaceX catches the Starship to end Flight 15",
    "url": "https://www.spacex.com/launches/starship-flight-15",
    "source": "hackernews",
-   "score": 1313,
+   "score": 1321,
    "metric": "points",
    "rank": 1
   },
@@ -15,7 +15,7 @@
    "title": "Eynnzerr/TelemetryCleaner",
    "url": "https://github.com/Eynnzerr/TelemetryCleaner",
    "source": "github_trending",
-   "score": 831,
+   "score": 836,
    "metric": "stars",
    "rank": 13
   },
@@ -23,7 +23,7 @@
    "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
    "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
    "source": "hackernews",
-   "score": 258,
+   "score": 259,
    "metric": "points",
    "rank": 7
   },
@@ -31,7 +31,7 @@
    "title": "Court denies motion to dismiss DRAM price fixing case",
    "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
    "source": "hackernews",
-   "score": 241,
+   "score": 245,
    "metric": "points",
    "rank": 10
   },
@@ -71,7 +71,7 @@
    "title": "The Sicilian Citrus Family Tree",
    "url": "https://www.notesfromtheroad.com/europa/citrus-family-tree.html",
    "source": "hackernews",
-   "score": 91,
+   "score": 92,
    "metric": "points",
    "rank": 15
   },
@@ -103,7 +103,7 @@
    "title": "Kiri \u2013 The Modern Container Runtime",
    "url": "https://runkiri.com/",
    "source": "hackernews",
-   "score": 62,
+   "score": 63,
    "metric": "points",
    "rank": 18
   },
@@ -111,9 +111,17 @@
    "title": "The Evolving Story of How Chemistry Became Biology",
    "url": "https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/",
    "source": "hackernews",
-   "score": 61,
+   "score": 62,
    "metric": "points",
    "rank": 19
+  },
+  {
+   "title": "Oxford Molecular Motors",
+   "url": "https://www.physics.ox.ac.uk/research/group/oxford-molecular-motors/research/bacterial-flagellar-motor",
+   "source": "hackernews",
+   "score": 60,
+   "metric": "points",
+   "rank": 20
   },
   {
    "title": "Show HN: Gawain \u2013 Require type hints on all Python variables",
@@ -127,7 +135,7 @@
    "title": "How to rediscover your passion for learning?",
    "url": "https://lemmy.zip/post/75003138",
    "source": "lemmy",
-   "score": 56,
+   "score": 57,
    "metric": "score",
    "rank": 4
   },
@@ -154,14 +162,6 @@
    "score": 43,
    "metric": "score",
    "rank": 5
-  },
-  {
-   "title": "Ask HN: What is the state of self-hosting email in 2026?",
-   "url": "https://news.ycombinator.com/item?id=50488230",
-   "source": "ask_hn",
-   "score": 42,
-   "metric": "points",
-   "rank": 4
   }
  ],
  "left": [
@@ -302,6 +302,14 @@
    "rank": 8
   },
   {
+   "title": "Creating a self booting ZIP archive",
+   "url": "https://goliath32.com/blog/ziphead.html",
+   "source": "lobsters",
+   "score": 14,
+   "metric": "score",
+   "rank": 10
+  },
+  {
    "title": "Link Previews and You",
    "url": "https://sable.moe/en/blog/link-previews-and-you/",
    "source": "lobsters",
@@ -316,14 +324,6 @@
    "score": 11,
    "metric": "score",
    "rank": 14
-  },
-  {
-   "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
-   "url": "https://arxiv.org/abs/2605.29713",
-   "source": "lobsters",
-   "score": 7,
-   "metric": "score",
-   "rank": 15
   }
  ],
  "gainers": [
@@ -331,19 +331,19 @@
    "title": "Lovable apps expose passport details and more than 200K private messages",
    "url": "https://www.crissyfield.de/research/lovable-en/",
    "source": "hackernews",
-   "score": 862,
+   "score": 865,
    "metric": "points",
    "rank": 2,
-   "delta": 511
+   "delta": 514
   },
   {
    "title": "deepseek-ai/chat-demo",
    "url": "https://github.com/deepseek-ai/chat-demo",
    "source": "github_trending",
-   "score": 2103,
+   "score": 2124,
    "metric": "stars",
    "rank": 2,
-   "delta": 401
+   "delta": 422
   },
   {
    "title": "A family tree of software job titles",
@@ -367,37 +367,46 @@
    "title": "adriadam10/mkw-recomp",
    "url": "https://github.com/adriadam10/mkw-recomp",
    "source": "github_trending",
-   "score": 1069,
+   "score": 1071,
    "metric": "stars",
    "rank": 9,
-   "delta": 209
+   "delta": 211
   },
   {
    "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
    "url": "https://projectzero.google/2026/11/disclosure-policy.html",
    "source": "hackernews",
-   "score": 269,
+   "score": 271,
    "metric": "points",
    "rank": 6,
-   "delta": 207
+   "delta": 209
   },
   {
    "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
    "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
    "source": "hackernews",
-   "score": 245,
+   "score": 246,
    "metric": "points",
    "rank": 9,
-   "delta": 156
+   "delta": 157
   },
   {
    "title": "apex-compute/ANR",
    "url": "https://github.com/apex-compute/ANR",
    "source": "github_trending",
-   "score": 1936,
+   "score": 1937,
    "metric": "stars",
    "rank": 4,
-   "delta": 152
+   "delta": 153
+  },
+  {
+   "title": "huamidev/GestaltX",
+   "url": "https://github.com/huamidev/GestaltX",
+   "source": "github_trending",
+   "score": 7681,
+   "metric": "stars",
+   "rank": 1,
+   "delta": 135
   },
   {
    "title": "Why get an expensive Pi when I have an old phone?",
@@ -409,22 +418,13 @@
    "delta": 133
   },
   {
-   "title": "huamidev/GestaltX",
-   "url": "https://github.com/huamidev/GestaltX",
-   "source": "github_trending",
-   "score": 7679,
-   "metric": "stars",
-   "rank": 1,
-   "delta": 133
-  },
-  {
    "title": "FrigadeHQ/yogurt",
    "url": "https://github.com/FrigadeHQ/yogurt",
    "source": "github_trending",
-   "score": 1561,
+   "score": 1562,
    "metric": "stars",
    "rank": 5,
-   "delta": 113
+   "delta": 114
   },
   {
    "title": "PyPI's redesigned project pages with clearer security signals are now live",
@@ -448,10 +448,10 @@
    "title": "Generative AI uses more energy on non-English text",
    "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
    "source": "hackernews",
-   "score": 216,
+   "score": 217,
    "metric": "points",
    "rank": 12,
-   "delta": 77
+   "delta": 78
   },
   {
    "title": "agentes-chat/agentes-chat",
@@ -484,28 +484,28 @@
    "title": "HolyArrs/HolyArrs",
    "url": "https://github.com/HolyArrs/HolyArrs",
    "source": "github_trending",
-   "score": 1217,
+   "score": 1218,
    "metric": "stars",
    "rank": 8,
-   "delta": 47
+   "delta": 48
   },
   {
    "title": "serveroshq/panel",
    "url": "https://github.com/serveroshq/panel",
    "source": "github_trending",
-   "score": 828,
+   "score": 829,
    "metric": "stars",
    "rank": 14,
-   "delta": 43
+   "delta": 44
   },
   {
    "title": "kolbicz/WQFiles",
    "url": "https://github.com/kolbicz/WQFiles",
    "source": "github_trending",
-   "score": 888,
+   "score": 889,
    "metric": "stars",
    "rank": 11,
-   "delta": 37
+   "delta": 38
   }
  ],
  "droppers": [
