@@ -34,6 +34,10 @@
   .rk { color: var(--accent); font-weight: 600; min-width: 38px; text-align: right; }
   .card { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; margin-top: 16px; }
   .card b { font-size: 16px; }
+  .embed-btn { float: right; font: 11px ui-monospace, monospace; color: var(--dim);
+    border: 1px solid var(--border); border-radius: 4px; padding: 2px 8px;
+    background: none; cursor: pointer; }
+  .embed-btn:hover { color: var(--fg); border-color: var(--dim); }
   .stats { display: flex; gap: 18px; flex-wrap: wrap; margin: 10px 0 0; }
   .stat b { font-size: 20px; } .stat small { color: var(--dim); display: block; font-size: 11px; }
   footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
@@ -116,6 +120,7 @@ function paint() {
     const live = LIVE.has(it.url) ? ` <span style="color:var(--green);font-size:11px" title="on today's board">● live</span>` : "";
     return `<div class="card">
       <b><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a>${live}</b>
+      <button class="embed-btn" data-t="${esc(it.title)}">embed this story</button>
       <div class="stats">
         <div class="stat"><b>${days}</b><small>days on board</small></div>
         <div class="stat"><b>#${best}</b><small>best rank</small></div>
@@ -179,6 +184,13 @@ function paint() {
     });
   }).catch(() => {});
 }
+document.getElementById("out").addEventListener("click", ev => {
+  const btn = ev.target.closest(".embed-btn");
+  if (!btn) return;
+  const src = `https://zalize-com.github.io/trendscope/embed.html?mode=item&q=${encodeURIComponent(btn.dataset.t || "")}`;
+  const code = `<iframe src="${src}" style="width:100%;max-width:560px;height:180px;border:0" loading="lazy" title="trendscope story trajectory"></iframe>`;
+  navigator.clipboard?.writeText(code).then(() => { btn.textContent = "copied iframe code"; setTimeout(() => btn.textContent = "embed this story", 1600); });
+});
 </script>
 </body>
 </html>
