@@ -129,6 +129,7 @@ if (!files.length) {
   $("files").innerHTML = files.map(e =>
     `<button data-f="${e.f}" class="${e.f===wanted?"active":""}">${e.dir==="brief"?"📄 ":""}${e.f.replace(/\.md$/,"")}${e.f.includes("notes")?" ✍":""}</button>`).join("");
   let cur = wanted;
+  let lastMd = "";
   const dirOf = f => (files.find(e => e.f === f) || {dir: "digest"}).dir;
   async function show(f) {
     cur = f;
@@ -138,16 +139,24 @@ if (!files.length) {
       if (!r.ok) throw new Error(String(r.status));
       return r.text();
     });
+    lastMd = md;
     const i = files.findIndex(e => e.f === f);
     const nav = `<p style="font-size:12px;color:var(--dim);margin:0 0 12px">` +
       (i < files.length - 1 ? `<a href="#" data-nav="${files[i+1].f}">← ${files[i+1].f.replace(/\.md$/,"")}</a> ` : `<span style="opacity:.5">← oldest</span> `) +
       `· ` +
       (i > 0 ? `<a href="#" data-nav="${files[i-1].f}">${files[i-1].f.replace(/\.md$/,"")} →</a>` : `<span style="opacity:.5">newest →</span>`) +
+      ` · <a href="#" id="copy-md">⧉ copy md</a>` +
       `</p>`;
     $("doc").innerHTML = nav + mdRender(md);
     document.title = `${f.replace(/\.md$/,"")} — trendscope digest`;
   }
   $("doc").addEventListener("click", e => {
+    if (e.target?.id === "copy-md") {
+      e.preventDefault();
+      const a = e.target;
+      navigator.clipboard?.writeText(lastMd).then(() => { a.textContent = "✓ copied"; setTimeout(() => a.textContent = "⧉ copy md", 1500); });
+      return;
+    }
     const f = e.target?.dataset?.nav; if (!f) return;
     e.preventDefault();
     show(f).catch(() => {}); scrollTo({top: 0});
