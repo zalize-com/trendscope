@@ -96,8 +96,9 @@ compare within a source, not across.
 - **Embed widget** (`embed.html`): the top-10 board as a drop-in iframe for
   blogs/docs (no signup, updates daily):
 
-  The Packages tab also supports a personal npm watchlist
-  (`?pkgs=hono,zod` — saved in the browser, shareable).
+  The Packages tab also supports a personal watchlist
+  (`?pkgs=hono,crates:tokio,gh:ollama/ollama` — npm downloads / crates recent
+  downloads / live GitHub stars, saved in the browser, shareable).
 
 ```html
 <iframe src="https://zalize-com.github.io/trendscope/embed.html" width="400" height="520" frameborder="0"></iframe>
