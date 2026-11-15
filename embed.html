@@ -245,28 +245,8 @@ if (MODE === "new") {
 } else
 if (MODE === "risers") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/risers.html";
-  fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(text => {
-    const rows = parseCSV(text), hdr = rows[0];
-    const ci = Object.fromEntries(hdr.map((h,i)=>[h,i]));
-    const ROLLING = new Set(["npm","pypi","crates"]);
-    const items = {};
-    for (const r of rows.slice(1)) {
-      const url = r[ci.url]; if (!url) continue;
-      const it = items[url] ||= { title: r[ci.title], source: r[ci.source], metric: r[ci.metric], obs: [] };
-      it.obs.push({ date: r[ci.date], score: +r[ci.score]||0 });
-    }
-    const pd = d => new Date(new Date(d+"T00:00:00Z") - 86400000).toISOString().slice(0,10);
-    const spikes = [];
-    for (const [url, it] of Object.entries(items)) {
-      if (ROLLING.has(it.source)) continue;
-      it.obs.sort((a,b) => a.date < b.date ? -1 : 1);
-      for (let i = 1; i < it.obs.length; i++) {
-        const p = it.obs[i-1], c = it.obs[i];
-        if (pd(c.date) === p.date && c.score > p.score)
-          spikes.push({ url, ...it, delta: c.score - p.score, date: c.date });
-      }
-    }
-    spikes.sort((a,b) => b.delta - a.delta);
+  fetch("docs/api/risers.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const spikes = d.single_day_spikes;
     document.getElementById("date").textContent = "biggest 1-day spikes";
     document.getElementById("list").innerHTML = spikes.slice(0, N).map((e,i) =>
       `<li><span class="rank">${i+1}</span>
@@ -292,26 +272,10 @@ if (MODE === "movers") {
 } else
 if (MODE === "week") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/week.html";
-  fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(text => {
-    const rows = parseCSV(text), hdr = rows[0];
-    const recs = rows.slice(1).map(r => Object.fromEntries(hdr.map((h,i)=>[h,r[i]])));
-    const days = [...new Set(recs.map(r => r.date))].sort();
-    const win = new Set(days.slice(-7));
-    const wk = recs.filter(r => win.has(r.date));
-    const mx = {};
-    for (const r of wk) {
-      const k = r.date + "|" + r.source;
-      mx[k] = Math.max(mx[k] || 0, +r.score || 0);
-    }
-    const byUrl = {};
-    for (const r of wk) {
-      const k = r.url || r.title;
-      const e = byUrl[k] || (byUrl[k] = {title: r.title, url: r.url, source: r.source, metric: r.metric, total: 0});
-      e.total += (+r.score || 0) / (mx[r.date + "|" + r.source] || 1);
-    }
-    const top = Object.values(byUrl)
+  fetch("docs/api/week.json", {cache:"no-cache"}).then(r => r.json()).then(wk => {
+    const top = wk.top
       .filter(e => (!QS || e.source === QS) && (!QQ || (e.title + " " + e.source).toLowerCase().includes(QQ)))
-      .sort((a, b) => b.total - a.total).slice(0, N);
+      .slice(0, N).map(e => ({...e, total: e.heat}));
     document.getElementById("date").textContent = "last 7 days · by cumulative heat";
     document.getElementById("list").innerHTML = top.length ? top.map((e, i) =>
       `<li><span class="rank">${i+1}</span>
@@ -335,24 +299,10 @@ if (MODE === "stats") {
 } else
 if (MODE === "streak") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/streaks.html";
-  fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(text => {
-    const rows = parseCSV(text), hdr = rows[0];
-    const ci = Object.fromEntries(hdr.map((h, i) => [h, i]));
-    const items = {};
-    for (const r of rows.slice(1)) {
-      const u = r[ci.url]; if (!u) continue;
-      const it = items[u] ||= { title: r[ci.title], source: r[ci.source], dates: new Set(), score: 0 };
-      it.dates.add(r[ci.date]); it.score = Math.max(it.score, +r[ci.score] || 0);
-    }
-    const dates = [...new Set(rows.slice(1).map(r => r[ci.date]))].sort();
-    const latest = dates[dates.length - 1];
-    const prev = d => new Date(new Date(d + "T00:00:00Z") - 864e5).toISOString().slice(0, 10);
-    const st = Object.entries(items).map(([u, it]) => {
-      let cur = 0;
-      for (let d = latest; it.dates.has(d); d = prev(d)) cur++;
-      return { u, ...it, cur };
-    }).filter(x => x.cur >= 2).sort((a, b) => b.cur - a.cur || b.score - a.score).slice(0, N);
-    document.getElementById("date").textContent = `active streaks · ${latest}`;
+  fetch("docs/api/streaks.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const st = d.active.map(it => ({ u: it.url, title: it.title, source: it.source,
+        score: it.top_score, cur: it.consecutive_days })).slice(0, N);
+    document.getElementById("date").textContent = `active streaks · ${d.latest_snapshot}`;
     document.getElementById("list").innerHTML = st.map((x, i) =>
       `<li><span class="rank">${i + 1}</span>
         <span><a href="${esc(x.u)}" target="_blank" rel="noopener">${esc(x.title)}</a>
@@ -394,16 +344,10 @@ if (MODE === "item") {
   // ?mode=item&q=<title> — one story's attention trajectory
   document.querySelector(".foot a").href = `https://zalize-com.github.io/trendscope/item.html?q=${encodeURIComponent(P.get("q") || "")}`;
   if (!QQ) document.getElementById("err").textContent = "add ?q=<title>";
-  else fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(text => {
-    const rows = parseCSV(text), hdr = rows[0];
-    const ci = Object.fromEntries(hdr.map((h, i) => [h, i]));
-    const byUrl = {};
-    for (const r of rows.slice(1)) {
-      const u = r[ci.url]; if (!u) continue;
-      const it = byUrl[u] ||= { title: r[ci.title], url: u, source: r[ci.source], days: [] };
-      it.days.push({ d: r[ci.date], s: +r[ci.score] || 0, rank: +r[ci.rank] || 0 });
-    }
-    const hit = Object.values(byUrl)
+  else fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json()).then(ser => {
+    const hit = Object.entries(ser.items)
+      .map(([u, o]) => ({ title: o.title, url: u, source: o.source,
+                          days: Object.entries(o.days).map(([d, [s, rank]]) => ({ d, s, rank })) }))
       .filter(x => x.title.toLowerCase().includes(QQ))
       .sort((a, b) => a.title.length - b.title.length)[0];
     if (!hit) { document.getElementById("err").textContent = `no story matches "${P.get("q")}"`; return; }

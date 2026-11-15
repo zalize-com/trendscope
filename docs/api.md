@@ -29,6 +29,7 @@ Fetch straight from GitHub raw or the Pages site (`/trendscope/…`).
 | `docs/api/new.json` | JSON | First-seen items on the latest snapshot — URL never in history before (per-source counts in `by_source`) |
 | `docs/api/discussed.json` | JSON | Comment leaderboards: most-discussed + heated (comments/point ratio, score ≥ 50) |
 | `docs/api/sources.json` | JSON | Per-source stats over the whole window: items, unique urls, median days-on-board, one-day %, top item |
+| `docs/api/series.json` | per-item daily series: `{title, source, metric, author, days: {date: [score, rank, comments]}}` for every tracked url
 | `docs/api/velocity.json` | JSON | Score growth rate for multi-day items: url/title/source/metric/days/delta/per_day/latest, sorted by +/day — rolling counters excluded |
 | `docs/api/weekday.json` | JSON | Day-of-week x source item counts — `{sources:{name:{counts:[mon..sun],total}}}` |
 | `docs/api/rhythm.json` | JSON | Hour-of-day (UTC) x source capture counts — `{sources:{name:{counts:[0..23],total}}}` |
