@@ -146,6 +146,12 @@ redistribute, please credit **trendscope** with a link back to
 trendscope developer attention dataset, https://zalize-com.github.io/trendscope/
 ```
 
+## Related
+
+- [feedpaper](https://github.com/zalize-com/feedpaper) — forkable template for
+  your *own* daily digest: fork it, edit `feeds.yaml`, get a self-hosted daily
+  page. The demand lane (`ideas`) is what told us people wanted this.
+
 ## Roadmap & paid tier (owner activates)
 
 - Cleaned long-range history + per-topic slices → dataset listing on
