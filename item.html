@@ -117,9 +117,16 @@ function paint() {
         <div class="stat"><b>${spark}</b><small>score/day</small></div>
       </div>
       <h2>trajectory</h2>
-      <ol>${rs.map(r => `<li><span class="rk">#${r.rank}</span>
+      <ol>${rs.map((r, i) => {
+        const prev = i > 0 ? +rs[i-1].score || 0 : null;
+        const d = prev === null ? "" : (+r.score || 0) - prev;
+        const dstr = prev === null ? '<span class="dim">—</span>'
+          : d === 0 ? '<span class="dim">±0</span>'
+          : `<span style="color:${d > 0 ? "var(--green)" : "var(--red)"}">${d > 0 ? "+" : "−"}${fmt(Math.abs(d))}</span>`;
+        return `<li><span class="rk">#${r.rank}</span>
         <span class="it">${r.date}<span class="src">${r.source}</span></span>
-        <span class="sc">${fmt(+r.score||0)} ${r.metric}</span></li>`).join("")}</ol>
+        <span class="sc">${fmt(+r.score||0)} ${r.metric} ${dstr}</span></li>`;
+      }).join("")}</ol>
     </div>`;
   }).join("") + (groups.length > 8 ? `<p id="err">…and ${groups.length-8} more matches</p>` : "");
 
