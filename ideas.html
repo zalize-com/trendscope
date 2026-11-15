@@ -113,6 +113,18 @@ const recs = Object.entries(items).map(([url, it]) => ({ url, ...it, nDays: it.d
 const allDates = [...new Set(rows.slice(1).filter(r => r[ci.source]==="ask_hn").map(r => r[ci.date]))].sort();
 const latest = allDates[allDates.length-1];
 
+// everything ELSE on our radar — used to mark themes as "already built" or "gap"
+const others = [];
+for (const r of rows.slice(1)) {
+  if (r[ci.source] === "ask_hn" || !r[ci.url]) continue;
+  others.push({ title: r[ci.title] || "", url: r[ci.url], source: r[ci.source],
+                score: Number(r[ci.score]) || 0 });
+}
+// does anything already address this theme? title contains the theme words
+const coverage = theme =>
+  others.filter(o => theme.split(" ").every(w => o.title.toLowerCase().includes(w)))
+        .sort((a, b) => b.score - a.score);
+
 // theme clustering: map token -> urls; keep tokens spanning ≥2 threads
 const tokMap = new Map();
 for (const r of recs) for (const t of new Set(tokens(r.title))) {
@@ -156,10 +168,15 @@ $("out").innerHTML =
   `<h2>today's ask board (${snap.date})</h2><ol>` +
     today.map(i => row({...i, maxScore: i.score, nDays: (items[i.url]?.nDays)||1}, "")).join("") + `</ol>` +
   `<h2>recurring demand themes</h2>` +
-    (topThemes.length ? topThemes.map(th =>
-      `<div class="theme"><h3>${esc(th.name)} <b>×${th.urls.size}</b></h3><ul>` +
-      [...th.urls].map(u => row({...items[u], url: u})).join("") +
-      `</ul></div>`).join("")
+    (topThemes.length ? topThemes.map(th => {
+      const cov = coverage(th.name);
+      const tag = cov.length
+        ? `<span class="sc" style="margin-left:8px">built: <a href="${cov[0].url}" target="_blank" rel="noopener">${esc(cov[0].title.slice(0, 42))}</a> <span class="src">${cov[0].source}</span></span>`
+        : `<span class="sc" style="margin-left:8px;color:var(--green)">◆ gap — nothing on our radar addresses it</span>`;
+      return `<div class="theme"><h3>${esc(th.name)} <b>×${th.urls.size}</b>${tag}</h3><ul>` +
+        [...th.urls].map(u => row({...items[u], url: u})).join("") +
+        `</ul></div>`;
+    }).join("")
     : `<p style="color:var(--dim)">needs 2+ days of ask_hn data — check back soon.</p>`) +
   `<h2>top asks of all time</h2><ol>` +
     [...recs].sort((a,b) => b.maxScore - a.maxScore).slice(0, 15).map(r => row(r)).join("") + `</ol>`;
