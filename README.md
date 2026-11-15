@@ -94,6 +94,7 @@ A daily cross-source snapshot of developer attention:
 | Mitchell Hashimoto | infra tooling creator | `mitchellh.com/feed.xml` |
 | Two-Bit History | computing history essays | `twobithistory.org/feed.xml` |
 | lucumr | Armin Ronacher essays | `lucumr.pocoo.org/feed.atom` |
+| Coding Horror | classic dev culture essays | `blog.codinghorror.com/rss/` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.

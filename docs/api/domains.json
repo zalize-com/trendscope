@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T15:48:01.259784+00:00",
+ "generated_at": "2026-11-15T15:49:24.289046+00:00",
  "latest_snapshot": "2026-11-15",
  "total": 274,
  "domains": [
@@ -644,6 +644,22 @@
    }
   },
   {
+   "hostname": "blog.codinghorror.com",
+   "days_on_board": 1,
+   "items": 30,
+   "sources": [
+    "codinghorror",
+    "codinghorror2"
+   ],
+   "top_hit": {
+    "title": "Suffering as a Feature",
+    "url": "https://blog.codinghorror.com/suffering-as-a-feature/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "theregister.com",
    "days_on_board": 1,
    "items": 29,
@@ -747,21 +763,6 @@
    "top_hit": {
     "title": "Bitwarden CLI compromised",
     "url": "https://changelog.com/news/185",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "infoq.com",
-   "days_on_board": 1,
-   "items": 15,
-   "sources": [
-    "infoq"
-   ],
-   "top_hit": {
-    "title": "Anthropic Outlines Its AI-Powered Code Review Process for Claude Code",
-    "url": "https://www.infoq.com/news/2026/11/claude-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
