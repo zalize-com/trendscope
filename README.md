@@ -64,6 +64,7 @@ A daily cross-source snapshot of developer attention:
 | Fabien Sanglard | game-engine deep dives | `fabiensanglard.net/rss.xml` |
 | antirez | Redis author blog | `antirez.com/rss` |
 | Beesbuzz | dev longform blog | `beesbuzz.biz/feed` |
+| Gargron | Mastodon creator posts | `mastodon.social/@Gargron.rss` |
 
 Every run also writes `data/health.json` — per-source item count and latency —
 shown as the health line on the dashboard.
