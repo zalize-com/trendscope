@@ -511,7 +511,8 @@ def fetch_pypi_downloads():
     print("Fetching PyPI monthly downloads...")
     out = []
     for pkg in PYPI_WATCHLIST:
-        data = get_json(f"https://pypistats.org/api/packages/{pkg}/recent")
+        data = get_json(f"https://pypistats.org/api/packages/{pkg}/recent",
+                        retries=4)
         if data and "data" in data:
             out.append(item(
                 "pypi", pkg,
@@ -519,7 +520,8 @@ def fetch_pypi_downloads():
                 data["data"].get("last_month", 0), "monthly downloads",
                 tags=["pypi"],
             ))
-        time.sleep(0.25)
+        # pypistats 429s on bursts — keep well under 1 req/s
+        time.sleep(2.0)
     return sorted(out, key=lambda x: -x["score"])
 
 
