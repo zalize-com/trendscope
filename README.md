@@ -525,3 +525,23 @@ root for self-hosted mirrors.
 | Vasilis | frontend dev | `vasilis.nl/nerd/feed/` |
 | Veroniiiica | a11y dev | `veroniiiica.com/feed/` |
 | Vesa Piittinen | frontend dev | `vesa.piittinen.name/blog/rss.xml` |
+| Violet Pena | frontend dev | `vgpena.github.io/feed.xml` |
+| Vita Lab | engineering notes | `vitalab.github.io/feed.xml` |
+| Vivaldi | Vivaldi browser | `vivaldi.com/feed/` |
+| W3C Studio24 | W3C updates | `w3c.studio24.net/feeds/updates.xml` |
+| Wasm Labs | WebAssembly | `wasmlabs.dev/rss.xml` |
+| web.dev | Chrome platform blog | `web.dev/static/articles/feed.xml` |
+| WC Today | web components | `webcomponents.today/feed.xml` |
+| WebDev Law | web legal | `webdevlaw.uk/feed/` |
+| Webinista | frontend dev | `webinista.com/updates/feeds/all.atom.xml` |
+| Web Platform | platform news | `webplatform.news/feed.xml` |
+| Web Ventures | dev notes | `webventures.rejh.nl/feed.xml` |
+| Tw93 Weekly | Chinese dev weekly | `weekly.tw93.fun/rss.xml` |
+| Weston Ruter | WordPress core | `weston.ruter.net/feed/` |
+| Wicki | engineering notes | `wicki.io/posts/index.xml` |
+| Wix UX | UX engineering | `wix-ux.com/feed` |
+| Wolvic | XR browser | `wolvic.com/blog/feed.xml` |
+| WordPress | WP official | `wordpress.org/news/feed/` |
+| WPE WebKit | embedded WebKit | `wpewebkit.org/feed.xml` |
+| 24 A11y | a11y advent | `www.24a11y.com/feed/` |
+| A11y Collective | a11y courses | `www.a11y-collective.com/blog/feed/` |

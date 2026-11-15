@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-15T18:55:22.854547+00:00",
+ "generated_at": "2026-11-15T18:58:18.372019+00:00",
  "latest_snapshot": "2026-11-15",
- "total_items": 15237,
- "new_items": 15110,
+ "total_items": 15470,
+ "new_items": 15343,
  "by_source": {
   "show_hn": 49,
   "producthunt": 45,
@@ -17,8 +17,11 @@
   "blogfrankel": 16,
   "gargron": 16,
   "lemmy": 16,
+  "robinrendle": 16,
+  "smitop": 16,
   "100r": 15,
   "12daysofweb": 15,
+  "24a11y": 15,
   "30secondsofcode": 15,
   "512pixels": 15,
   "9to5mac": 15,
@@ -528,7 +531,6 @@
   "roadtolarissa": 15,
   "robbowen": 15,
   "robdodson": 15,
-  "robinrendle": 15,
   "romainguy": 15,
   "romaricpascal": 15,
   "rtpg": 15,
@@ -567,7 +569,6 @@
   "smallcultfollowing": 15,
   "smashingmagazine": 15,
   "smellycode": 15,
-  "smitop": 15,
   "snarky": 15,
   "soblog": 15,
   "sookocheff": 15,
@@ -640,8 +641,14 @@
   "vicki": 15,
   "viralinstruction": 15,
   "voidzero": 15,
+  "w3cstudio24": 15,
+  "wasmlabs": 15,
   "waxy": 15,
   "web3isgoinggreat": 15,
+  "webinista": 15,
+  "webplatform": 15,
+  "wicki": 15,
+  "wolvic": 15,
   "worldhey": 15,
   "x065": 15,
   "xtdb": 15,
@@ -695,6 +702,9 @@
   "rmondello": 12,
   "tumblrmapsbynik": 12,
   "vite": 12,
+  "webdevlaw": 12,
+  "webventuresrejh": 12,
+  "weeklytw93": 12,
   "agis": 11,
   "bret": 11,
   "csshell": 11,
@@ -707,6 +717,7 @@
   "wattenberger": 11,
   "0xdade": 10,
   "3perf": 10,
+  "a11ycollective": 10,
   "a11ymatters": 10,
   "aaronstuyvenberg": 10,
   "aarontgrogg": 10,
@@ -1092,7 +1103,10 @@
   "usesthis": 10,
   "v8": 10,
   "veroniiiica": 10,
+  "vitalabgithub": 10,
+  "vivaldi": 10,
   "w3eleqtriq": 10,
+  "web": 10,
   "webaim": 10,
   "webkit": 10,
   "weblogrogueamoeba": 10,
@@ -1100,9 +1114,13 @@
   "weiwuhui": 10,
   "welltyped": 10,
   "wesleyac": 10,
+  "westonruter": 10,
   "wingolog": 10,
   "wirfsbrock": 10,
+  "wixux": 10,
+  "wordpress": 10,
   "worklisk": 10,
+  "wpewebkit": 10,
   "xeiaso": 10,
   "yangqinyuan": 10,
   "yegor256": 10,
@@ -1154,6 +1172,7 @@
   "sasslang": 6,
   "tonsky": 6,
   "usetheindexluke": 6,
+  "vgpenagithub": 6,
   "accessabilly": 5,
   "accessibilitybloggov": 5,
   "andybellco": 5,
@@ -1190,6 +1209,7 @@
   "mathmlmusesnetlify": 4,
   "meetguns": 4,
   "thisweek": 4,
+  "webcomponents": 4,
   "armin": 3,
   "ask_hn": 3,
   "devto": 3,
@@ -1534,6 +1554,126 @@
    "title": "FileReader API",
    "url": "https://12daysofweb.dev/2023/filereader-api/",
    "source": "12daysofweb",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What a Year of Learning and Teaching Accessibility Taught Me",
+   "url": "https://www.24a11y.com/2019/what-a-year-of-learning-and-teaching-accessibility-taught-me/",
+   "source": "24a11y",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "POURing ARIA into the HTML element specs",
+   "url": "https://www.24a11y.com/2019/pouring-aria-into-the-html-element-specs/",
+   "source": "24a11y",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pixels vs. Relative Units in CSS: Why it’s Still a Big Deal",
+   "url": "https://www.24a11y.com/2019/pixels-vs-relative-units-in-css-why-its-still-a-big-deal/",
+   "source": "24a11y",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Color Theory and Contrast Ratios",
+   "url": "https://www.24a11y.com/2019/color-theory-and-contrast-ratios/",
+   "source": "24a11y",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessible Products: Beyond Code",
+   "url": "https://www.24a11y.com/2019/accessible-products-beyond-code/",
+   "source": "24a11y",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "World-Building Accessibility Literacy",
+   "url": "https://www.24a11y.com/2019/world-building-accessibility-literacy/",
+   "source": "24a11y",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "<select> Your Poison Part 2: Test All the Things",
+   "url": "https://www.24a11y.com/2019/select-your-poison-part-2/",
+   "source": "24a11y",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "<select> Your Poison",
+   "url": "https://www.24a11y.com/2019/select-your-poison/",
+   "source": "24a11y",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why is an Agency the Perfect Place to Observe and Improve Digital Accessibility?",
+   "url": "https://www.24a11y.com/2019/why-is-an-agency-the-perfect-place-to-observe-and-improve-digital-accessibility/",
+   "source": "24a11y",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Blind System Administrator’s Journey to Microsoft",
+   "url": "https://www.24a11y.com/2019/a-blind-system-administrators-journey-to-microsoft/",
+   "source": "24a11y",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Automating Inclusive Documentation",
+   "url": "https://www.24a11y.com/2019/automating-inclusive-documentation/",
+   "source": "24a11y",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Customer is Always Right",
+   "url": "https://www.24a11y.com/2019/the-customer-is-always-right/",
+   "source": "24a11y",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Future is Now, So What About Tomorrow?",
+   "url": "https://www.24a11y.com/2019/the-future-is-now-so-what-about-tomorrow/",
+   "source": "24a11y",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making the Web for Real People",
+   "url": "https://www.24a11y.com/2019/making-the-web-for-real-people/",
+   "source": "24a11y",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Game Accessibility and the Web",
+   "url": "https://www.24a11y.com/2019/game-accessibility-and-the-web/",
+   "source": "24a11y",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -1975,6 +2115,86 @@
    "url": "https://9to5mac.com/2026/11/13/apple-details-homeview-facial-recognition-repair-options-and-more-in-new-support-guides/",
    "source": "9to5mac",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Incorporating Skip to Main Content Links for Better Website Accessibility",
+   "url": "https://www.a11y-collective.com/blog/skip-to-main-content/",
+   "source": "a11ycollective",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to Pick the Perfect Font Size: A Guide to WCAG Accessibility",
+   "url": "https://www.a11y-collective.com/blog/wcag-minimum-font-size/",
+   "source": "a11ycollective",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mastering Web Accessibility: Making Drop-Down Menus User-Friendly",
+   "url": "https://www.a11y-collective.com/blog/mastering-web-accessibility-making-drop-down-menus-user-friendly/",
+   "source": "a11ycollective",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Ultimate Checklist for Accessible Data Visualisations",
+   "url": "https://www.a11y-collective.com/blog/accessible-charts/",
+   "source": "a11ycollective",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Essential Visually Hidden CSS Techniques for Web Accessibility",
+   "url": "https://www.a11y-collective.com/blog/visually-hidden/",
+   "source": "a11ycollective",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Importance of Tooltips in Web Accessibility: A Rundown",
+   "url": "https://www.a11y-collective.com/blog/tooltips-in-web-accessibility/",
+   "source": "a11ycollective",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "6 Accessible Website Examples to Inspire Your Design",
+   "url": "https://www.a11y-collective.com/blog/6-accessible-website-examples-to-inspire-your-design/",
+   "source": "a11ycollective",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Understanding Focus Indicators for Web Accessibility",
+   "url": "https://www.a11y-collective.com/blog/focus-indicator/",
+   "source": "a11ycollective",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Web Developer’s Guide to Buttons vs Links",
+   "url": "https://www.a11y-collective.com/blog/button-vs-link/",
+   "source": "a11ycollective",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Hidden Gold of Web Accessibility: Everything About ARIA Labels",
+   "url": "https://www.a11y-collective.com/blog/aria-labels/",
+   "source": "a11ycollective",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -97683,6 +97903,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Why You Should Read Children’s Books",
+   "url": "https://robinrendle.com/notes/why-you-should-read-childrens-books/",
+   "source": "robinrendle",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "Small things like these",
    "url": "https://robinrendle.com/notes/small-things-like-these/",
    "source": "robinrendle",
@@ -105269,6 +105497,14 @@
   {
    "title": "Trying to understand that compute multiplier graph",
    "url": "https://www.lesswrong.com/posts/WKt2mqJrsFuMiszed/trying-to-understand-that-compute-multiplier-graph",
+   "source": "smitop",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Universal XSS in uBlock Origin from website-driven element picker",
+   "url": "https://iter.ca/post/ubo-uxss/",
    "source": "smitop",
    "rank": 1,
    "score": 15,
@@ -118483,6 +118719,54 @@
    "metric": "feed rank"
   },
   {
+   "title": "Throwaway Work",
+   "url": "https://vgpena.github.io/throwaway-work/",
+   "source": "vgpenagithub",
+   "rank": 1,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On Priorities",
+   "url": "https://vgpena.github.io/on-priorities/",
+   "source": "vgpenagithub",
+   "rank": 2,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Best Practices in JavaScript Array Iteration",
+   "url": "https://vgpena.github.io/js-arrays/",
+   "source": "vgpenagithub",
+   "rank": 3,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Basic Keyboard Customization with QMK",
+   "url": "https://vgpena.github.io/qmk/",
+   "source": "vgpenagithub",
+   "rank": 4,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Do you want to build a slide deck?",
+   "url": "https://vgpena.github.io/do-you-want-to-build-a-slide-deck/",
+   "source": "vgpenagithub",
+   "rank": 5,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using CSS Grid the right way",
+   "url": "https://vgpena.github.io/using-css-grid-the-right-way/",
+   "source": "vgpenagithub",
+   "rank": 6,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "What are embeddings?",
    "url": "https://vicki.substack.com/p/what-are-embeddings",
    "source": "vicki",
@@ -118723,6 +119007,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "Towards Brain MRI Foundation Models for the Clinic: Findings from the FOMO25 Challenge",
+   "url": "https://vitalab.github.io/article/2026/01/06/fomo.html",
+   "source": "vitalabgithub",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Brain Latent Progression Individual-based spatiotemporal disease progression on 3D Brain MRIs via latent diffusion",
+   "url": "https://vitalab.github.io/article/2025/08/28/brlp.html",
+   "source": "vitalabgithub",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Survey of popular LLM Evaluation Metrics",
+   "url": "https://vitalab.github.io/blog/2025/08/20/llm_evaluation_metrics.html",
+   "source": "vitalabgithub",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Open-Source Large Language Models in Radiology: A Review and Tutorial for Practical Research and Clinical Deployment",
+   "url": "https://vitalab.github.io/article/2025/08/11/Open-source-LLMs-in-radiology.html",
+   "source": "vitalabgithub",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MemSAM: Taming Segment Anything Model for Echocardiography Video Segmentation",
+   "url": "https://vitalab.github.io/article/2025/06/03/MemSAM.html",
+   "source": "vitalabgithub",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Simplifying Deep Temporal Difference Learning",
+   "url": "https://vitalab.github.io/article/2025/04/07/simplifying-td-learning.html",
+   "source": "vitalabgithub",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "EchoPrime: Multi-Video View-Informed Vision-Language Model for Comprehensive Echocardiography Interpretation",
+   "url": "https://vitalab.github.io/article/2025/03/24/echoprime.html",
+   "source": "vitalabgithub",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "DeepSeek-V3 Technical Report",
+   "url": "https://vitalab.github.io/article/2025/02/11/DeepSeekV3.html",
+   "source": "vitalabgithub",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Variational Autoencoders for Generating Synthetic Tractography-Based Bundle Templates in a Low-Data Setting",
+   "url": "https://vitalab.github.io/article/2025/01/14/AutoEncoderStreamlineTemplate.html",
+   "source": "vitalabgithub",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Implicit neural representations",
+   "url": "https://vitalab.github.io/tutorial/2024/12/17/INR.html",
+   "source": "vitalabgithub",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Vite 8.1 is out!",
    "url": "https://vite.dev/blog/announcing-vite8-1",
    "source": "vite",
@@ -118815,6 +119179,86 @@
    "url": "https://vite.dev/blog/announcing-vite2",
    "source": "vite",
    "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minor update(3) for Vivaldi Android Browser 8.3",
+   "url": "https://vivaldi.com/blog/android/minor-update3-android-8-3/",
+   "source": "vivaldi",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minor update (3) for Desktop 8.3",
+   "url": "https://vivaldi.com/blog/desktop/minor-update-three-8-3/",
+   "source": "vivaldi",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Open in app and other fixes – Vivaldi Android Browser snapshot 4228.3",
+   "url": "https://vivaldi.com/blog/android/android-8-4-4228-3/",
+   "source": "vivaldi",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minor update(2) for Vivaldi Android Browser 8.3",
+   "url": "https://vivaldi.com/blog/android/minor-update2-android-8-3/",
+   "source": "vivaldi",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minor update (2) for Desktop 8.3",
+   "url": "https://vivaldi.com/blog/desktop/minor-update-two-8-3/",
+   "source": "vivaldi",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On to the next one, 8.4 begins — Vivaldi Browser snapshot 4226.3",
+   "url": "https://vivaldi.com/blog/on-to-the-next-one-8-4-begins-vivaldi-browser-snapshot-4226-3/",
+   "source": "vivaldi",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New cycle and Chromium 158 – Vivaldi Android Browser snapshot 4226.4",
+   "url": "https://vivaldi.com/blog/android/android-8-4-4226-4/",
+   "source": "vivaldi",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minor update for Vivaldi Android Browser 8.3",
+   "url": "https://vivaldi.com/blog/android/minor-update-android-8-3/",
+   "source": "vivaldi",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minor update for Desktop 8.3",
+   "url": "https://vivaldi.com/blog/desktop/minor-update-8-3/",
+   "source": "vivaldi",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vivaldi 8.3 for Desktop: make bad ads sad",
+   "url": "https://vivaldi.com/blog/vivaldi-on-desktop-8-3/",
+   "source": "vivaldi",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
@@ -118934,6 +119378,126 @@
    "title": "Announcing Vite+ Alpha",
    "url": "https://voidzero.dev/posts/announcing-vite-plus-alpha",
    "source": "voidzero",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "W3C live website launch",
+   "url": "https://w3c.studio24.net/updates/live-website-launch",
+   "source": "w3cstudio24",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "W3C beta website launch",
+   "url": "https://w3c.studio24.net/updates/beta-site-launch",
+   "source": "w3cstudio24",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Handing over to W3C",
+   "url": "https://w3c.studio24.net/updates/beta-in-progress",
+   "source": "w3cstudio24",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "URL strategy",
+   "url": "https://w3c.studio24.net/docs/url-strategy",
+   "source": "w3cstudio24",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weeknotes, 1 Oct",
+   "url": "https://w3c.studio24.net/updates/weeknotes-01-oct/",
+   "source": "w3cstudio24",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "High level timeline and approach (August Update)",
+   "url": "https://w3c.studio24.net/updates/August-Timeline-Update/",
+   "source": "w3cstudio24",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Technical Reports page - version 4",
+   "url": "https://w3c.studio24.net/updates/tr-v4/",
+   "source": "w3cstudio24",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The W3C Design System is live",
+   "url": "https://w3c.studio24.net/updates/design-system-live/",
+   "source": "w3cstudio24",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Retest reports (accessibility, browser and device)",
+   "url": "https://w3c.studio24.net/updates/static-template-retest-reports/",
+   "source": "w3cstudio24",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Redesigning the landing page for Technical Reports",
+   "url": "https://w3c.studio24.net/updates/redesigning-the-landing-page-for-technical-reports/",
+   "source": "w3cstudio24",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accessibility testing - round 2",
+   "url": "https://w3c.studio24.net/updates/accessibility-round2/",
+   "source": "w3cstudio24",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Weeknotes, 11 June",
+   "url": "https://w3c.studio24.net/updates/weeknotes-11-june/",
+   "source": "w3cstudio24",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Building the main navigation",
+   "url": "https://w3c.studio24.net/updates/building-the-main-navigation/",
+   "source": "w3cstudio24",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Feedback guide",
+   "url": "https://w3c.studio24.net/updates/feedback-guide/",
+   "source": "w3cstudio24",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Round 2 testing - browser and device results",
+   "url": "https://w3c.studio24.net/updates/compatibility-round2-test-results/",
+   "source": "w3cstudio24",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -119127,6 +119691,126 @@
    "url": "https://wangpei.net/2024/05/learn-video-editing-from-wangziyue/",
    "source": "wangpei",
    "rank": 14,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Running Wasm Workers Server in Docker Desktop",
+   "url": "https://wasmlabs.dev/articles/docker-wasm-wws/",
+   "source": "wasmlabs",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shall you run AI in WebAssembly?",
+   "url": "https://wasmlabs.dev/articles/wasm-loves-ai/",
+   "source": "wasmlabs",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Zig support for Wasm Workers Server",
+   "url": "https://wasmlabs.dev/articles/zig-support-on-wasm-workers-server/",
+   "source": "wasmlabs",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wasm Workers Server 1.5, with Neural Network (wasi-nn) support!",
+   "url": "https://wasmlabs.dev/articles/wasm-workers-server-1-5/",
+   "source": "wasmlabs",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AI-powered workers in Wasm Workers Server",
+   "url": "https://wasmlabs.dev/articles/wasm-workers-server-ai/",
+   "source": "wasmlabs",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wasm Labs, AI and more!",
+   "url": "https://wasmlabs.dev/articles/wasm-labs-ai/",
+   "source": "wasmlabs",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wasm Workers Server 1.4, now with fetch support",
+   "url": "https://wasmlabs.dev/articles/wasm-workers-server-1-4/",
+   "source": "wasmlabs",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Serverless applications in Kubernetes with WebAssembly",
+   "url": "https://wasmlabs.dev/articles/serverless-applications-in-kubernetes-with-webassembly/",
+   "source": "wasmlabs",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Compiling PHP to WebAssembly",
+   "url": "https://wasmlabs.dev/articles/compiling-php-to-webassembly/",
+   "source": "wasmlabs",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's new in Wasm Workers Server 1.3 (and 1.2)",
+   "url": "https://wasmlabs.dev/articles/wasm-workers-server-1-3-and-1-2/",
+   "source": "wasmlabs",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Embedding Python in Rust with WebAssembly",
+   "url": "https://wasmlabs.dev/articles/python-wasm-rust/",
+   "source": "wasmlabs",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Announcing Go support for Wasm Workers Server",
+   "url": "https://wasmlabs.dev/articles/go-support-on-wasm-workers-server/",
+   "source": "wasmlabs",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Hardening Drupal with WebAssembly",
+   "url": "https://wasmlabs.dev/articles/hardening-drupal-with-webassembly/",
+   "source": "wasmlabs",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mitigating PHP Vulnerabilities with WebAssembly",
+   "url": "https://wasmlabs.dev/articles/mitigating-php-vulnerabilities-with-webassembly/",
+   "source": "wasmlabs",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Extending web applications with WebAssembly and Python",
+   "url": "https://wasmlabs.dev/articles/wasm-host-to-python/",
+   "source": "wasmlabs",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -119443,6 +120127,86 @@
    "metric": "feed rank"
   },
   {
+   "title": "How SPA architectures affect Core Web Vitals",
+   "url": "https://web.dev/articles/vitals-spa-faq?hl=en",
+   "source": "web",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Files and directories patterns",
+   "url": "https://web.dev/articles/files?hl=en",
+   "source": "web",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Preload responsive images",
+   "url": "https://web.dev/articles/preload-responsive-images?hl=en",
+   "source": "web",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Back/forward cache",
+   "url": "https://web.dev/articles/bfcache?hl=en",
+   "source": "web",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Lazy loading video",
+   "url": "https://web.dev/articles/lazy-loading-video?hl=en",
+   "source": "web",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rendering on the Web",
+   "url": "https://web.dev/articles/rendering-on-the-web?hl=en",
+   "source": "web",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why is CrUX data different from my RUM data?",
+   "url": "https://web.dev/articles/crux-and-rum-differences?hl=en",
+   "source": "web",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Responsive and fluid typography with Baseline CSS features",
+   "url": "https://web.dev/articles/baseline-in-action-fluid-type?hl=en",
+   "source": "web",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ten modern layouts in one line of CSS",
+   "url": "https://web.dev/articles/one-line-layouts?hl=en",
+   "source": "web",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Color themes with Baseline CSS features",
+   "url": "https://web.dev/articles/baseline-in-action-color-theme?hl=en",
+   "source": "web",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Polymarket users' funds stolen, again",
    "url": "https://web3isgoinggreat.com/single/polymarket-vendor-exploit-2",
    "source": "web3isgoinggreat",
@@ -119699,6 +120463,254 @@
    "metric": "feed rank"
   },
   {
+   "title": "2023 February Update",
+   "url": "https://webcomponents.today/2023-02-update/",
+   "source": "webcomponents",
+   "rank": 1,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2023 January Update",
+   "url": "https://webcomponents.today/2023-01-update/",
+   "source": "webcomponents",
+   "rank": 2,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2022 in Review",
+   "url": "https://webcomponents.today/2022-review/",
+   "source": "webcomponents",
+   "rank": 3,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introduction",
+   "url": "https://webcomponents.today/intro/",
+   "source": "webcomponents",
+   "rank": 4,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Burns on cybersecurity",
+   "url": "https://heatherburns.tech/2026/11/15/burns-on-cybersecurity/",
+   "source": "webdevlaw",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Oh sit down, oh sit down, oh sit down, sit down next to me",
+   "url": "https://heatherburns.tech/2026/11/08/oh-sit-down-oh-sit-down-oh-sit-down-sit-down-next-to-me/",
+   "source": "webdevlaw",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The threads that bind us",
+   "url": "https://heatherburns.tech/2026/10/07/threads-bind-us/",
+   "source": "webdevlaw",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Shall we play a game?",
+   "url": "https://heatherburns.tech/2026/10/05/shall-we-play-a-game/",
+   "source": "webdevlaw",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Back to first principles",
+   "url": "https://heatherburns.tech/2026/10/02/back-to-first-principles/",
+   "source": "webdevlaw",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I’m in love with a German film star",
+   "url": "https://heatherburns.tech/2026/10/01/im-in-love-with-a-german-film-star/",
+   "source": "webdevlaw",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The age-gating of history",
+   "url": "https://heatherburns.tech/2026/09/05/the-age-gating-of-history/",
+   "source": "webdevlaw",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I’m a what now?!",
+   "url": "https://heatherburns.tech/2026/08/31/im-a-what-now/",
+   "source": "webdevlaw",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Safe to call out this bullshit",
+   "url": "https://heatherburns.tech/2026/07/15/safe-to-net-martin-calladine/",
+   "source": "webdevlaw",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The kids (with phones) are alright",
+   "url": "https://heatherburns.tech/2026/07/08/the-kids-with-phones-are-alright/",
+   "source": "webdevlaw",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Going bla bla bla about wtf",
+   "url": "https://heatherburns.tech/2026/06/18/going-bla-bla-bla-about-wtf/",
+   "source": "webdevlaw",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Nerve of this woman",
+   "url": "https://heatherburns.tech/2026/06/16/the-nerve-of-this-woman/",
+   "source": "webdevlaw",
+   "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ghost: Filtering posts by multiple tags",
+   "url": "https://webinista.com/updates/ghost-filtering-posts-by-multiple-tags/",
+   "source": "webinista",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why is my WordPress dashboard so slow?",
+   "url": "https://webinista.com/updates/optimizing-wordpress-admin-dashboard/",
+   "source": "webinista",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "command and commandfor: the Invoker Commands API",
+   "url": "https://webinista.com/updates/command-and-commandfor-invoker-commands-api/",
+   "source": "webinista",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Webinista WreadIt: A text-to-speech plugin for WordPress",
+   "url": "https://webinista.com/updates/webinista-wreadit-a-text-to-speech-plugin-for-wordpress/",
+   "source": "webinista",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Popover pattern and CSS",
+   "url": "https://webinista.com/updates/popover-pattern-and-css/",
+   "source": "webinista",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Popover tutorial",
+   "url": "https://webinista.com/updates/popover-tutorial/",
+   "source": "webinista",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Automattic vs WP Engine: What could it mean for customers and developers?",
+   "url": "https://webinista.com/updates/automattic-vs-wpengine/",
+   "source": "webinista",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Browse and search WordPress actions and filters",
+   "url": "https://webinista.com/updates/browse-and-search-wordpress-actions-and-filters/",
+   "source": "webinista",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Showcasing Whereby's Browser-Based Video Calling SDK",
+   "url": "https://webinista.com/updates/whereby-browser-based-video-calling-video-conferencing-sdk/",
+   "source": "webinista",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "On SitePoint: An Overview of CSS Sizing Units",
+   "url": "https://webinista.com/updates/on-sitepoint--an-overview-of-css-sizing-units/",
+   "source": "webinista",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Managing media and animations with Intersection­­­Observer",
+   "url": "https://webinista.com/updates/intersectionobserver-tutorial/",
+   "source": "webinista",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What I ask when doing technical discovery",
+   "url": "https://webinista.com/updates/technical-discovery-web-projects/",
+   "source": "webinista",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Native CSS Nesting: A Primer",
+   "url": "https://webinista.com/updates/native-css-nesting/",
+   "source": "webinista",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Helping Whereby Users Get the Most Out of Whereby",
+   "url": "https://webinista.com/updates/helping-whereby-users-get-the-most-out-of-whereby/",
+   "source": "webinista",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Potential gotchas when migrating to PHP 8",
+   "url": "https://webinista.com/updates/php-migration-consulting/",
+   "source": "webinista",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Safari on Apple HomeView",
    "url": "https://webkit.org/blog/18608/safari-on-apple-homeview/",
    "source": "webkit",
@@ -119859,6 +120871,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "CSS calc(100% - 0) is invalid, but calc(100% - 0px) is valid",
+   "url": "https://webplatform.news/#1663639656000",
+   "source": "webplatform",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Import maps can make module dependencies more cacheable",
+   "url": "https://webplatform.news/#1663438187000",
+   "source": "webplatform",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Šime’s newsletter #1",
+   "url": "https://www.patreon.com/posts/simes-newsletter-71625608",
+   "source": "webplatform",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Websites can freely write text to the user’s clipboard",
+   "url": "https://webplatform.news/#1662158377000",
+   "source": "webplatform",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "figcaption and alt should not contain the same text",
+   "url": "https://webplatform.news/#1661985123000",
+   "source": "webplatform",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Third-party cookies are cross-site cookies",
+   "url": "https://webplatform.news/#1661804848000",
+   "source": "webplatform",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Double rAF is the generic way to wait for the next frame",
+   "url": "https://webplatform.news/#1661534276000",
+   "source": "webplatform",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Avoid the DOMContentLoaded event",
+   "url": "https://webplatform.news/#1661352106000",
+   "source": "webplatform",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Making sure that emoticons are correctly announced by screen readers",
+   "url": "https://webplatform.news/#1661264220000",
+   "source": "webplatform",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Firefox ships backdrop-filter and scroll-snap-stop",
+   "url": "https://webplatform.news/#1661091593000",
+   "source": "webplatform",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Use :focus-visible to style the browser’s default focus outline",
+   "url": "https://webplatform.news/#1660998787000",
+   "source": "webplatform",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "url(var(‑‑foo)) is an invalid value in CSS",
+   "url": "https://webplatform.news/#1660593045000",
+   "source": "webplatform",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Custom (synthetic) events are delivered synchronously",
+   "url": "https://webplatform.news/#1660560795000",
+   "source": "webplatform",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Scroll into view only if needed with the { block: 'nearest' } option",
+   "url": "https://webplatform.news/#1660475173000",
+   "source": "webplatform",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The HTML Standard has added a proposed focusVisible option",
+   "url": "https://webplatform.news/#1660387734000",
+   "source": "webplatform",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Distributed and Cascaded SFUs",
    "url": "https://webrtchacks.com/distributed-and-cascaded-sfus/",
    "source": "webrtchacks",
@@ -119935,6 +121067,198 @@
    "url": "https://webrtchacks.com/how-webrtcs-neteq-jitter-buffer-provides-smooth-audio/",
    "source": "webrtchacks",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Safe-area-inset-bottom does not update for keyboard",
+   "url": "https://webventures.rejh.nl/blog/2025/safe-area-inset-bottom-does-not-update",
+   "source": "webventuresrejh",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An Abridged History of Safari Showstoppers",
+   "url": "https://webventures.rejh.nl/blog/2024/history-of-safari-show-stoppers",
+   "source": "webventuresrejh",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "No, the EU is not okay with Apple's PWA WebKit restriction",
+   "url": "https://webventures.rejh.nl/blog/2024/the-eu-is-not-okay-with-pwa-webkit",
+   "source": "webventuresrejh",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Push on iOS - 1 year anniversary",
+   "url": "https://webventures.rejh.nl/blog/2024/web-push-ios-one-year",
+   "source": "webventuresrejh",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AIHTW: The useStyle hook",
+   "url": "https://webventures.rejh.nl/blog/2023/aihtw-use-style",
+   "source": "webventuresrejh",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Push on iOS requires installing the web app",
+   "url": "https://webventures.rejh.nl/blog/2023/ios-web-push-requires-install",
+   "source": "webventuresrejh",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Abortable promise chains",
+   "url": "https://webventures.rejh.nl/blog/2022/abortable-promise-chains",
+   "source": "webventuresrejh",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stripping html - dos, don'ts and more",
+   "url": "https://webventures.rejh.nl/blog/2022/strip-html",
+   "source": "webventuresrejh",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "In-App Browsers are tracking you(r users)",
+   "url": "https://webventures.rejh.nl/blog/2022/in-app-browsers-are-tracking-you",
+   "source": "webventuresrejh",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Need cheap paint? Use getComputedStyle().opacity",
+   "url": "https://webventures.rejh.nl/blog/2022/getcomputedstyle-element-opacity",
+   "source": "webventuresrejh",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Biggest Thing from WWDC 2022",
+   "url": "https://webventures.rejh.nl/blog/2022/the-biggest-thing-from-wwdc22",
+   "source": "webventuresrejh",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Returning a promise in new Promise() vs .then()",
+   "url": "https://webventures.rejh.nl/blog/2022/new-promise-vs-then",
+   "source": "webventuresrejh",
+   "rank": 12,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "第289期 - 南京李志",
+   "url": "https://weekly.tw93.fun/posts/289/",
+   "source": "weeklytw93",
+   "rank": 1,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "第288期 - 偶遇小猫",
+   "url": "https://weekly.tw93.fun/posts/288/",
+   "source": "weeklytw93",
+   "rank": 2,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "第287期 - 杭州金桂",
+   "url": "https://weekly.tw93.fun/posts/287/",
+   "source": "weeklytw93",
+   "rank": 3,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "第286期 - 径山双溪",
+   "url": "https://weekly.tw93.fun/posts/286/",
+   "source": "weeklytw93",
+   "rank": 4,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "第285期 - 陵水的云",
+   "url": "https://weekly.tw93.fun/posts/285/",
+   "source": "weeklytw93",
+   "rank": 5,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "第284期 - 小资餐厅",
+   "url": "https://weekly.tw93.fun/posts/284/",
+   "source": "weeklytw93",
+   "rank": 6,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "第283期 - 经典电影",
+   "url": "https://weekly.tw93.fun/posts/283/",
+   "source": "weeklytw93",
+   "rank": 7,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "第282期 - 夜雾上海",
+   "url": "https://weekly.tw93.fun/posts/282/",
+   "source": "weeklytw93",
+   "rank": 8,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "第281期 - 越王的剑",
+   "url": "https://weekly.tw93.fun/posts/281/",
+   "source": "weeklytw93",
+   "rank": 9,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "第280期 - 喜欢宋体",
+   "url": "https://weekly.tw93.fun/posts/280/",
+   "source": "weeklytw93",
+   "rank": 10,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "第279期 - 风之谷泉",
+   "url": "https://weekly.tw93.fun/posts/279/",
+   "source": "weeklytw93",
+   "rank": 11,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "第278期 - 大巧若拙",
+   "url": "https://weekly.tw93.fun/posts/278/",
+   "source": "weeklytw93",
+   "rank": 12,
    "score": 1,
    "metric": "feed rank"
   },
@@ -120179,6 +121503,206 @@
    "metric": "feed rank"
   },
   {
+   "title": "Adding an MCP Server to the WordPress Core Development Environment",
+   "url": "https://weston.ruter.net/2026/04/08/adding-an-mcp-server-to-the-wordpress-core-development-environment/",
+   "source": "westonruter",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Post Date Block: Published & Modified",
+   "url": "https://weston.ruter.net/2026/01/19/post-date-block-published-modified/",
+   "source": "westonruter",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Would Jesus have found refuge in the United States?",
+   "url": "https://weston.ruter.net/2025/12/31/would-jesus-have-found-refuge-in-the-united-states/",
+   "source": "westonruter",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WordPress 6.9 Performance Landings",
+   "url": "https://weston.ruter.net/2025/11/17/wordpress-6-9-performance-landings/",
+   "source": "westonruter",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Joining WP Engine",
+   "url": "https://weston.ruter.net/2025/08/27/joining-wp-engine/",
+   "source": "westonruter",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Site Speed Frontier with Performance Lab and Beyond",
+   "url": "https://weston.ruter.net/2025/08/27/the-site-speed-frontier-with-performance-lab-and-beyond/",
+   "source": "westonruter",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Web Performance Milestone",
+   "url": "https://weston.ruter.net/2025/08/21/web-performance-milestone/",
+   "source": "westonruter",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Instant Back/Forward Navigations in WordPress",
+   "url": "https://weston.ruter.net/2025/07/23/instant-back-forward-navigations-in-wordpress/",
+   "source": "westonruter",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Eliminating Layout Shifts in the Video Block",
+   "url": "https://weston.ruter.net/2025/06/05/eliminating-layout-shifts-in-the-video-block/",
+   "source": "westonruter",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Improve LCP by Deprioritizing Script Modules from the Interactivity API",
+   "url": "https://weston.ruter.net/2025/05/26/improve-lcp-by-deprioritizing-interactivity-api-script-modules/",
+   "source": "westonruter",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Duality of CLS with Lazy Loading Components",
+   "url": "https://wicki.io/posts/2022-03-cls-with-lazy-loading-components/",
+   "source": "wicki",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sued by Using Google Fonts: Data Privacy and GDPR",
+   "url": "https://wicki.io/posts/2022-02-goodbye-google-fonts-data-privacy-gdpr/",
+   "source": "wicki",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "An Ode to AngularJS",
+   "url": "https://wicki.io/posts/2022-01-an-ode-to-angularjs/",
+   "source": "wicki",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Interface vs Type Alias in TypeScript—Quick Comparison",
+   "url": "https://wicki.io/posts/2022-01-quick-comparison-interface-vs-type-alias/",
+   "source": "wicki",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "One Font Format to Rule Them All: WOFF2",
+   "url": "https://wicki.io/posts/2021-11-woff2-one-font-format-to-rule-them-all/",
+   "source": "wicki",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Keep Your Javascript Bundle Size in Check",
+   "url": "https://wicki.io/posts/2021-08-keep-your-bundle-size-in-check/",
+   "source": "wicki",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Accurate Daily Measurements of Core Web Vitals with Google Analytics",
+   "url": "https://wicki.io/posts/2021-08-accurate-core-web-vitals-measurements/",
+   "source": "wicki",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How List Rendering Can Cause Huge Cumulative Layout Shift",
+   "url": "https://wicki.io/posts/2021-07-list-rendering-cls/",
+   "source": "wicki",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Core Web Vitals explained with GIFs",
+   "url": "https://wicki.io/posts/2021-07-core-web-vitals/",
+   "source": "wicki",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pimp Your GitHub Profile with Books You Read",
+   "url": "https://wicki.io/posts/2021-04-goodreads-workflow-for-github-actions/",
+   "source": "wicki",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Useful Npx Packages for the Developer's Everyday Life",
+   "url": "https://wicki.io/posts/2021-02-useful-npx-packages/",
+   "source": "wicki",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Time to Say Goodbye to Google Fonts: Cache Performance",
+   "url": "https://wicki.io/posts/2020-11-goodbye-google-fonts/",
+   "source": "wicki",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "My Top 5 Book Recommendations",
+   "url": "https://wicki.io/posts/2020-09-my-top-5-book-recommendations/",
+   "source": "wicki",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Stats and Learnings from Finishing #11 on Product Hunt",
+   "url": "https://wicki.io/posts/2020-06-stats-and-learnings-from-finishing-11-on-product-hunt/",
+   "source": "wicki",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "\"Hybrid Apps are slow\"",
+   "url": "https://wicki.io/posts/2019-11-hybrid-apps-are-slow/",
+   "source": "wicki",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "soot, solar, sedimentation, sin, & 'centers",
    "url": "https://wingolog.org/archives/2026/05/16/soot-solar-sedimentation-sin-centers",
    "source": "wingolog",
@@ -120334,6 +121858,286 @@
    "title": "Slide Bite: Survival of the Fittest",
    "url": "https://wirfs-brock.com/allen/posts/738",
    "source": "wirfsbrock",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Our UX Student Program Graduates Share Their Journey",
+   "url": "https://wix-ux.com/our-ux-student-program-graduates-share-their-journey-8cb71725082e?source=rss----5c12f12b4121---4",
+   "source": "wixux",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Back to basics: How fundamental UX principles lead to big results",
+   "url": "https://wix-ux.com/back-to-basics-how-fundamental-ux-principles-lead-to-big-results-b5e3e6c3bfb1?source=rss----5c12f12b4121---4",
+   "source": "wixux",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Master your career journey: The power of intentional growth",
+   "url": "https://wix-ux.com/master-your-career-journey-the-power-of-intentional-growth-43348d056fc1?source=rss----5c12f12b4121---4",
+   "source": "wixux",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Elevating Product Quality: The UX Blitz Approach",
+   "url": "https://wix-ux.com/elevating-product-quality-the-ux-blitz-approach-56cd3961e1b9?source=rss----5c12f12b4121---4",
+   "source": "wixux",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Secret Ingredient for Team Success: Personal Connections",
+   "url": "https://wix-ux.com/the-secret-ingredient-for-team-success-personal-connections-afa9e240c6c4?source=rss----5c12f12b4121---4",
+   "source": "wixux",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "If design portfolios could talk, what would they say?",
+   "url": "https://wix-ux.com/if-design-portfolios-could-talk-what-would-they-say-92b62012ccb6?source=rss----5c12f12b4121---4",
+   "source": "wixux",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Discovering harmony in the designer-developer workflow",
+   "url": "https://wix-ux.com/discovering-harmony-in-the-designer-developer-workflow-22c79e6616cf?source=rss----5c12f12b4121---4",
+   "source": "wixux",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Case study: Designing a better experience for permissions",
+   "url": "https://wix-ux.com/case-study-designing-a-better-experience-for-permissions-9cda05ecc8e7?source=rss----5c12f12b4121---4",
+   "source": "wixux",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The case for web accessibility in 2023",
+   "url": "https://wix-ux.com/the-case-for-web-accessibility-in-2023-737cc886183a?source=rss----5c12f12b4121---4",
+   "source": "wixux",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Creating a human-centered AI experience",
+   "url": "https://wix-ux.com/creating-a-human-centered-ai-experience-eb3d3178a54?source=rss----5c12f12b4121---4",
+   "source": "wixux",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "AWE EU 2023",
+   "url": "https://wolvic.com/blog/AWE_Vienna_2023/",
+   "source": "wolvic",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wolvic 1.5.1 Released",
+   "url": "https://wolvic.com/blog/release_1.5.1/",
+   "source": "wolvic",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wolvic Enters Huawei App Gallery",
+   "url": "https://wolvic.com/blog/huawei-store/",
+   "source": "wolvic",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Community Support",
+   "url": "https://wolvic.com/blog/Community/",
+   "source": "wolvic",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wolvic 1.5.2 Released",
+   "url": "https://wolvic.com/blog/release_1.5.2/",
+   "source": "wolvic",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wolvic 1.6 Released",
+   "url": "https://wolvic.com/blog/release_1.6/",
+   "source": "wolvic",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chromium Backend Beta",
+   "url": "https://wolvic.com/blog/Chromium_Beta_APKs/",
+   "source": "wolvic",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Magic Leap Joins the Pack",
+   "url": "https://wolvic.com/blog/magicleap/",
+   "source": "wolvic",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Evolving the Wolvic interface",
+   "url": "https://wolvic.com/blog/ui-evolution/",
+   "source": "wolvic",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wolvic 1.6.1 Released",
+   "url": "https://wolvic.com/blog/release_1.6.1/",
+   "source": "wolvic",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Igalia and Wolvic at AWE USA 2024",
+   "url": "https://wolvic.com/blog/awe-announcements-2024/",
+   "source": "wolvic",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wolvic Chromium 0.9.1 Released",
+   "url": "https://wolvic.com/blog/chromium_release_0.9.1/",
+   "source": "wolvic",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wolvic 1.7 Released",
+   "url": "https://wolvic.com/blog/release_1.7/",
+   "source": "wolvic",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wolvic Chromium 1.0 Released",
+   "url": "https://wolvic.com/blog/chromium_release_1.0/",
+   "source": "wolvic",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wolvic Chromium 1.1 Released",
+   "url": "https://wolvic.com/blog/chromium_release_1.1/",
+   "source": "wolvic",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Copy Your WordPress Site with Reprint",
+   "url": "https://wordpress.org/news/2026/11/reprint-your-site/",
+   "source": "wordpress",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WordCamp Asia 2027 Is Coming to Penang",
+   "url": "https://wordpress.org/news/2026/11/wc-asia-2027-penang/",
+   "source": "wordpress",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WordPress 7.2 Beta 5",
+   "url": "https://wordpress.org/news/2026/11/wordpress-7-2-beta-5/",
+   "source": "wordpress",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WordPress Credits Welcomes More Than 50 Institutions",
+   "url": "https://wordpress.org/news/2026/11/wp-credits-reaches-50/",
+   "source": "wordpress",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WordPress 7.2 Beta 4",
+   "url": "https://wordpress.org/news/2026/11/wordpress-7-2-beta-4/",
+   "source": "wordpress",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WordPress 7.1.4",
+   "url": "https://wordpress.org/news/2026/10/wordpress-7-1-4/",
+   "source": "wordpress",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WordPress 7.2 Beta 2",
+   "url": "https://wordpress.org/news/2026/10/wordpress-7-2-beta-2/",
+   "source": "wordpress",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Critical PHP Security Release",
+   "url": "https://wordpress.org/news/2026/10/critical-php-security-release/",
+   "source": "wordpress",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WordPress 7.2 Beta 1 is Ready for Download and Testing",
+   "url": "https://wordpress.org/news/2026/10/wordpress-7-2-beta-1-is-ready-for-download-and-testing/",
+   "source": "wordpress",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WordPress 7.1.3 Maintenance and Security Release",
+   "url": "https://wordpress.org/news/2026/10/wordpress-7-1-3-maintenance-and-security-release/",
+   "source": "wordpress",
    "rank": 10,
    "score": 1,
    "metric": "feed rank"
@@ -120535,6 +122339,86 @@
    "url": "https://world.hey.com/dhh/the-rape-of-britain-610412f8",
    "source": "worldhey",
    "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WPE WebKit 2.54.2 released",
+   "url": "https://wpewebkit.org/release/wpewebkit-2.54.2.html",
+   "source": "wpewebkit",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WPE WebKit 2.54.1 released",
+   "url": "https://wpewebkit.org/release/wpewebkit-2.54.1.html",
+   "source": "wpewebkit",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WPEPlatform: the new WPE API",
+   "url": "https://wpewebkit.org/blog/2026-10-06-wpe-platform.html",
+   "source": "wpewebkit",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WebKitGTK and WPE WebKit Security Advisory WSA-2026-0006",
+   "url": "https://wpewebkit.org/security/WSA-2026-0006.html",
+   "source": "wpewebkit",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WPE WebKit 2.54.0 released",
+   "url": "https://wpewebkit.org/release/wpewebkit-2.54.0.html",
+   "source": "wpewebkit",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WPE WebKit 2.54 highlights",
+   "url": "https://wpewebkit.org/blog/2026-09-16-wpewebkit-2.54.html",
+   "source": "wpewebkit",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WPE WebKit 2.53.92 released",
+   "url": "https://wpewebkit.org/release/wpewebkit-2.53.92.html",
+   "source": "wpewebkit",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WPE WebKit 2.53.91 released",
+   "url": "https://wpewebkit.org/release/wpewebkit-2.53.91.html",
+   "source": "wpewebkit",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WebKitGTK and WPE WebKit Security Advisory WSA-2026-0005",
+   "url": "https://wpewebkit.org/security/WSA-2026-0005.html",
+   "source": "wpewebkit",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "WPE WebKit 2.52.6 released",
+   "url": "https://wpewebkit.org/release/wpewebkit-2.52.6.html",
+   "source": "wpewebkit",
+   "rank": 10,
    "score": 1,
    "metric": "feed rank"
   },
