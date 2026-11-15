@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>the stack — trendscope</title>
+<meta name="description" content="Every library trendscope runs on — reused wheels, not hand-rolled.">
+<meta property="og:title" content="trendscope — the stack">
+<meta property="og:description" content="The CDN libraries powering the trendscope dataset UI.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<style>
+:root{--bg:#fff;--fg:#1f2328;--dim:#57606a;--line:#d8dee4;--acc:#0969da;--hot:#cf222e}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e6edf3;--dim:#8b949e;--line:#30363d;--acc:#58a6ff;--hot:#f85149}}
+*{box-sizing:border-box}
+body{margin:0 auto;max-width:760px;padding:16px;background:var(--bg);color:var(--fg);font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+a{color:var(--acc);text-decoration:none}
+h1{font-size:22px;margin:4px 0}
+h2{font-size:15px;margin:20px 0 6px}
+.sub{color:var(--dim);font-size:13px;margin-bottom:14px}
+nav{font-size:13px;margin:8px 0 14px}
+nav a{margin-right:8px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{color:var(--dim);font-weight:normal;font-size:11px;text-transform:uppercase}
+code{background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:12px}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 7px;font-size:11px;color:var(--dim)}
+</style>
+</head>
+<body>
+<nav><a href="index.html">← board</a> · <a href="about.html">about</a> · <a href="api.html">api</a></nav>
+<h1>the <span style="color:var(--acc)">stack</span></h1>
+<p class="sub">Don't reinvent wheels — this site runs on <b>11 CDN libraries</b> loaded from jsdelivr/unpkg, plus hand-rolled code only where no wheel fits. No bundler, no build step, no framework: view-source is the source.</p>
+
+<h2>libraries in use</h2>
+<table id="t">
+<tr><th>library</th><th>version</th><th>where</th><th>replaces</th></tr>
+</table>
+
+<h2>philosophy</h2>
+<ul>
+<li><b>Reuse first</b> — charting, markdown, diffs, CSV, cron, dates, icons are solved problems. We load the standard wheel and move on.</li>
+<li><b>Indie-lightweight</b> — same stack pattern as mainstream indie products: static HTML + CDN scripts + fetch(). No node_modules, no transpile, no framework runtime.</li>
+<li><b>Hand-roll only the edge</b> — the aggregation pipeline, dedupe, scoring, and per-page glue are ours; everything else is a wheel.</li>
+<li><b>Pinned versions</b> — every dependency is version-pinned except <code>lucide@latest</code> (icon set is append-only).</li>
+</ul>
+
+<h2>cdn summary</h2>
+<p id="sum" class="sub"></p>
+<footer style="margin-top:30px;color:var(--dim);font-size:12px;border-top:1px solid var(--line);padding-top:10px">
+trendscope · <a href="index.html">board</a> · <a href="press-kit.html">press kit</a> · <a href="https://github.com/zalize-com/trendscope">source</a>
+</footer>
+<script>
+const LIBS = [
+["Chart.js","4.4.7","stats.html","3 hand-rolled SVG line charts","charting"],
+["marked","15.0.7","tools/more.html","60-line regex markdown renderer","markdown"],
+["turndown","7.2.2","tools/more.html","50-line HTML→MD conv()","markdown"],
+["turndown-plugin-gfm","1.0.2","tools/more.html","GFM tables for turndown","markdown"],
+["jsdiff (diff)","7.0.0","tools/more.html","O(n×m) LCS diff DP","diff"],
+["PapaParse","5.5.3","tools/more.html + utils.html","2 hand-rolled CSV quote parsers","csv"],
+["dayjs","1.11.13","tools/utils.html + feedpaper","864e5 millisecond date math","datetime"],
+["croner","9.0.0","tools/utils.html","527k-iteration cron brute force","scheduling"],
+["Lucide","latest","index.html + feedpaper","emoji glyphs (★🔥💬⚠📄)","icons"],
+["js-yaml","4.1.0","tools/utils.html","hand-rolled YAML parse","yaml"],
+["swagger-ui-dist","5","swagger.html","hand-rolled API docs UI","api docs"],
+];
+document.getElementById("t").insertAdjacentHTML("beforeend",
+  LIBS.map(([n,v,w,r,tag]) =>
+    `<tr><td><b>${n}</b></td><td><code>${v}</code></td><td>${w}<br><span class="tag">${tag}</span></td><td style="color:var(--dim)">${r}</td></tr>`).join(""));
+document.getElementById("sum").textContent =
+  `${LIBS.length} libraries · all MIT/BSD-family · ~${(LIBS.length*40)}KB gzipped total · zero npm install`;
+</script>
+</body>
+</html>
