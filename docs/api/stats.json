@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-15T14:05:25.719533+00:00",
+ "generated_at": "2026-11-15T14:08:24.271968+00:00",
  "days_tracked": 9,
  "first_day": "2026-11-07",
  "latest_day": "2026-11-15",
  "consecutive_days": 9,
- "total_rows": 843,
- "unique_urls": 705,
- "items_in_latest": 445,
- "items_per_day_avg": 93.7,
+ "total_rows": 858,
+ "unique_urls": 720,
+ "items_in_latest": 462,
+ "items_per_day_avg": 95.3,
  "sources": {
   "arstechnica": {
    "rows": 16,
@@ -26,6 +26,10 @@
    "days_active": 1
   },
   "changelog": {
+   "rows": 15,
+   "days_active": 1
+  },
+  "cheney": {
    "rows": 15,
    "days_active": 1
   },
