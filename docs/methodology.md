@@ -57,3 +57,12 @@ the white-screen bug shipped, the JS literal-balance scanner added to
 linkcheck.py was first run against the *broken* commit to prove it
 would have caught that exact backtick — then trusted. Any new CI check
 should be validated on the real failure, not just on green input.
+
+
+### 8. `$` scope differs per page — check before using it
+tools/utils.html defines `$` inside an IIFE, so a new tool block
+appended *outside* that function silently has no `$` — handlers
+reference an undefined identifier and the tool is dead at runtime.
+On pages where `$` is IIFE-local, new blocks must use
+`document.getElementById` explicitly. Before writing `$` into any
+page, grep whether it is a page-global or a closure-local.
