@@ -19,6 +19,7 @@ Fetch straight from GitHub raw or the Pages site (`/trendscope/…`).
 | `docs/api/week.json` | JSON | Rolling last-7-days top-50 by cumulative normalized heat + per-topic counts (same metric as `week.html`) |
 | `docs/api/ideas-latest.json` | JSON | Ask-HN demand clusters + top asks + built/gap coverage |
 | `docs/api/stats.json` | JSON | Dataset summary: days, rows, unique URLs, per-source totals |
+| `docs/api/today.json` | JSON | One-call 'today' summary: top-10, topic mix, new entries, active streaks, movers counts, hiring pulse |
 | `data/hiring.json` | JSON | Latest HN monthly hiring/seeking thread comment counts |
 | `data/hiring-history.csv` | CSV | Append-only daily log of those counts (labor-demand signal) |
 | `data/hiring-monthly.csv` | CSV | All canonical monthly hiring/seeking threads, 2010 → today |
