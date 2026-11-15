@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T06:17:37.092554+00:00",
+  "generated_at": "2026-11-15T06:40:19.830210+00:00",
   "date": "2026-11-15",
   "sources": {
     "hackernews": 20,
@@ -7,17 +7,18 @@
     "ask_hn": 12,
     "lobsters": 15,
     "devto": 15,
+    "producthunt": 20,
     "github_trending": 15,
     "npm": 24,
     "pypi": 22,
     "crates": 15
   },
-  "total_items": 150,
+  "total_items": 170,
   "topics": [
     {
       "topic": "AI/LLM",
-      "count": 37,
-      "total_score": 1990888470,
+      "count": 43,
+      "total_score": 1993436858,
       "examples": [
         {
           "title": "Lovable apps expose passport details and more than 200K private messages",
@@ -38,8 +39,8 @@
     },
     {
       "topic": "Web Dev",
-      "count": 25,
-      "total_score": 3544420139,
+      "count": 26,
+      "total_score": 3550676255,
       "examples": [
         {
           "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
@@ -60,12 +61,12 @@
     },
     {
       "topic": "Languages",
-      "count": 17,
-      "total_score": 2852396311,
+      "count": 19,
+      "total_score": 2858367567,
       "examples": [
         {
-          "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
-          "url": "https://gitlab.com/snipedbywifi/terminactory",
+          "title": "Memory Safety Bugs in Rust Standard Library",
+          "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
           "source": "hackernews"
         },
         {
@@ -83,11 +84,11 @@
     {
       "topic": "Tools/OSS",
       "count": 11,
-      "total_score": 2540416218,
+      "total_score": 2543621386,
       "examples": [
         {
-          "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
-          "url": "https://gitlab.com/snipedbywifi/terminactory",
+          "title": "Memory Safety Bugs in Rust Standard Library",
+          "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
           "source": "hackernews"
         },
         {
@@ -104,8 +105,8 @@
     },
     {
       "topic": "Data Eng",
-      "count": 7,
-      "total_score": 1215823426,
+      "count": 11,
+      "total_score": 1217642056,
       "examples": [
         {
           "title": "Show HN: Hazel – Declarative schema management for SQLite",
@@ -127,7 +128,7 @@
     {
       "topic": "Security",
       "count": 5,
-      "total_score": 524,
+      "total_score": 530,
       "examples": [
         {
           "title": "PyPI's redesigned project pages with clearer security signals are now live",
@@ -147,31 +148,9 @@
       ]
     },
     {
-      "topic": "DevOps/Infra",
-      "count": 3,
-      "total_score": 1435,
-      "examples": [
-        {
-          "title": "Show HN: PowerQueue free online message queue supports AWS, GCE, Azure, AMQP",
-          "url": "https://www.powerqueue.link",
-          "source": "show_hn"
-        },
-        {
-          "title": "Tell HN: Cloudflare's abuse report form is a blank page",
-          "url": "https://news.ycombinator.com/item?id=50491285",
-          "source": "ask_hn"
-        },
-        {
-          "title": "agentes-chat/agentes-chat",
-          "url": "https://github.com/agentes-chat/agentes-chat",
-          "source": "github_trending"
-        }
-      ]
-    },
-    {
       "topic": "Career/Business",
-      "count": 3,
-      "total_score": 473,
+      "count": 5,
+      "total_score": 507,
       "examples": [
         {
           "title": "How do you truly stand out in Tech?",
@@ -189,6 +168,28 @@
           "source": "devto"
         }
       ]
+    },
+    {
+      "topic": "DevOps/Infra",
+      "count": 4,
+      "total_score": 1447,
+      "examples": [
+        {
+          "title": "Show HN: PowerQueue free online message queue supports AWS, GCE, Azure, AMQP",
+          "url": "https://www.powerqueue.link",
+          "source": "show_hn"
+        },
+        {
+          "title": "Tell HN: Cloudflare's abuse report form is a blank page",
+          "url": "https://news.ycombinator.com/item?id=50491285",
+          "source": "ask_hn"
+        },
+        {
+          "title": "Restoration Scope",
+          "url": "https://www.producthunt.com/products/restoration-scope",
+          "source": "producthunt"
+        }
+      ]
     }
   ],
   "items": {
@@ -197,123 +198,123 @@
         "source": "hackernews",
         "title": "SpaceX catches the Starship to end Flight 15",
         "url": "https://www.spacex.com/launches/starship-flight-15",
-        "score": 1004,
+        "score": 1024,
         "metric": "points",
-        "comments": 670,
+        "comments": 687,
         "author": "ls612",
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
         "title": "Lovable apps expose passport details and more than 200K private messages",
         "url": "https://www.crissyfield.de/research/lovable-en/",
-        "score": 744,
+        "score": 750,
         "metric": "points",
-        "comments": 297,
+        "comments": 299,
         "author": "armcat",
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
         "title": "Why get an expensive Pi when I have an old phone?",
         "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
-        "score": 533,
+        "score": 537,
         "metric": "points",
-        "comments": 291,
+        "comments": 293,
         "author": "casi",
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
         "title": "KDE: The documentary [video]",
         "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
-        "score": 430,
+        "score": 433,
         "metric": "points",
-        "comments": 91,
+        "comments": 94,
         "author": "mrkn1",
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
         "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
         "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
-        "score": 393,
+        "score": 406,
         "metric": "points",
-        "comments": 193,
+        "comments": 199,
         "author": "madihaa",
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
         "title": "A family tree of software job titles",
         "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
-        "score": 267,
+        "score": 272,
         "metric": "points",
-        "comments": 130,
+        "comments": 132,
         "author": "umerf",
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
         "title": "PyPI's redesigned project pages with clearer security signals are now live",
         "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
-        "score": 226,
+        "score": 228,
         "metric": "points",
         "comments": 99,
         "author": "rbanffy",
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
         "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
         "url": "https://projectzero.google/2026/11/disclosure-policy.html",
-        "score": 220,
+        "score": 223,
         "metric": "points",
-        "comments": 76,
+        "comments": 85,
         "author": "hacb",
         "tags": [],
         "rank": 8,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
         "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
         "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
-        "score": 213,
+        "score": 217,
         "metric": "points",
-        "comments": 12,
+        "comments": 14,
         "author": "VaibhaavTiwari",
         "tags": [
           "show_hn"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
         "title": "Generative AI uses more energy on non-English text",
         "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
-        "score": 197,
+        "score": 198,
         "metric": "points",
-        "comments": 103,
+        "comments": 104,
         "author": "DeepLogin",
         "tags": [],
         "rank": 10,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
@@ -325,69 +326,55 @@
         "author": "acossta",
         "tags": [],
         "rank": 11,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
-      },
-      {
-        "source": "hackernews",
-        "title": "How did Woz write the Apple 1 BASIC before building the computer?",
-        "url": "https://retrocomputing.stackexchange.com/questions/17957",
-        "score": 167,
-        "metric": "points",
-        "comments": 69,
-        "author": "Skyfall106",
-        "tags": [],
-        "rank": 12,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
         "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
         "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
-        "score": 164,
+        "score": 175,
         "metric": "points",
-        "comments": 40,
+        "comments": 46,
         "author": "nobody9999",
         "tags": [],
-        "rank": 13,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "rank": 12,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
-        "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
-        "url": "https://gitlab.com/snipedbywifi/terminactory",
-        "score": 151,
+        "title": "How did Woz write the Apple 1 BASIC before building the computer?",
+        "url": "https://retrocomputing.stackexchange.com/questions/17957",
+        "score": 172,
         "metric": "points",
-        "comments": 37,
-        "author": "snipedbywifi",
-        "tags": [
-          "show_hn"
-        ],
-        "rank": 14,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "comments": 75,
+        "author": "Skyfall106",
+        "tags": [],
+        "rank": 13,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
         "title": "'Grey Rocking': The Life-Improving Power of Being Really, Really Boring (2021)",
         "url": "https://www.esquire.com/uk/life/a38473153/grey-rock-technique-being-boring/",
-        "score": 129,
+        "score": 133,
         "metric": "points",
         "comments": 76,
         "author": "NaOH",
         "tags": [],
-        "rank": 15,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "rank": 14,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
         "title": "Seagate's new hybrid drive raises some old questions",
         "url": "https://arstechnica.com/gadgets/2026/11/seagate-resurrects-the-ssd-hdd-hybrid-drive/",
-        "score": 90,
+        "score": 91,
         "metric": "points",
         "comments": 41,
         "author": "PaulHoule",
         "tags": [],
-        "rank": 16,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "rank": 15,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
@@ -398,44 +385,56 @@
         "comments": 57,
         "author": "torutofu",
         "tags": [],
-        "rank": 17,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "rank": 16,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
         "title": "The Sicilian Citrus Family Tree",
         "url": "https://www.notesfromtheroad.com/europa/citrus-family-tree.html",
-        "score": 57,
+        "score": 58,
         "metric": "points",
         "comments": 20,
         "author": "wmchen",
         "tags": [],
-        "rank": 18,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "rank": 17,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
         "title": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
         "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
-        "score": 44,
+        "score": 52,
         "metric": "points",
-        "comments": 24,
+        "comments": 29,
         "author": "lxm",
         "tags": [],
-        "rank": 19,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "rank": 18,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "hackernews",
-        "title": "500 Lines or Less A 3D Modeller",
-        "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
-        "score": 36,
+        "title": "Court denies motion to dismiss DRAM price fixing case",
+        "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+        "score": 44,
         "metric": "points",
-        "comments": 4,
-        "author": "myth_drannon",
+        "comments": 5,
+        "author": "ybathaee",
+        "tags": [],
+        "rank": 19,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "hackernews",
+        "title": "Memory Safety Bugs in Rust Standard Library",
+        "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
+        "score": 40,
+        "metric": "points",
+        "comments": 6,
+        "author": "pjmlp",
         "tags": [],
         "rank": 20,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       }
     ],
     "show_hn": [
@@ -443,22 +442,22 @@
         "source": "show_hn",
         "title": "Show HN: Gawain – Require type hints on all Python variables",
         "url": "https://github.com/matheuzgomes/gawain",
-        "score": 23,
+        "score": 27,
         "metric": "points",
-        "comments": 7,
+        "comments": 9,
         "author": "MarinhoD",
         "tags": [
           "story",
           "front_page"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "show_hn",
         "title": "Show HN: A custom font based on the Jamaican flag alphabet",
         "url": "https://bobbiec.github.io/jamaican-font.html",
-        "score": 23,
+        "score": 27,
         "metric": "points",
         "comments": 5,
         "author": "bobbiechen",
@@ -467,13 +466,13 @@
           "front_page"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "show_hn",
         "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
         "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
-        "score": 15,
+        "score": 19,
         "metric": "points",
         "comments": 1,
         "author": "tthanh2k6",
@@ -482,13 +481,13 @@
           "front_page"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "show_hn",
         "title": "Show HN: Umbrella – macOS app to capture audio from any app",
         "url": "https://umbrella.pixelegg.me/",
-        "score": 9,
+        "score": 10,
         "metric": "points",
         "comments": 4,
         "author": "threcius",
@@ -496,7 +495,7 @@
           "story"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "show_hn",
@@ -510,7 +509,21 @@
           "story"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "show_hn",
+        "title": "Show HN: PowerQueue free online message queue supports AWS, GCE, Azure, AMQP",
+        "url": "https://www.powerqueue.link",
+        "score": 4,
+        "metric": "points",
+        "comments": 1,
+        "author": "andrewstuart",
+        "tags": [
+          "story"
+        ],
+        "rank": 6,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "show_hn",
@@ -523,22 +536,22 @@
         "tags": [
           "story"
         ],
-        "rank": 6,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "rank": 7,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "show_hn",
-        "title": "Show HN: PowerQueue free online message queue supports AWS, GCE, Azure, AMQP",
-        "url": "https://www.powerqueue.link",
+        "title": "Show HN: KrocPDF – A Local-First, Alternative to iLovePDF",
+        "url": "https://github.com/KrocPDF/KrocPDF",
         "score": 3,
         "metric": "points",
-        "comments": 1,
-        "author": "andrewstuart",
+        "comments": 0,
+        "author": "abhijeetcreates",
         "tags": [
           "story"
         ],
-        "rank": 7,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "rank": 8,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "show_hn",
@@ -551,8 +564,8 @@
         "tags": [
           "story"
         ],
-        "rank": 8,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "rank": 9,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "show_hn",
@@ -565,8 +578,8 @@
         "tags": [
           "story"
         ],
-        "rank": 9,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "rank": 10,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "show_hn",
@@ -579,8 +592,8 @@
         "tags": [
           "story"
         ],
-        "rank": 10,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "rank": 11,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "show_hn",
@@ -593,22 +606,8 @@
         "tags": [
           "story"
         ],
-        "rank": 11,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
-      },
-      {
-        "source": "show_hn",
-        "title": "Show HN: KrocPDF – A Local-First, Alternative to iLovePDF",
-        "url": "https://github.com/KrocPDF/KrocPDF",
-        "score": 2,
-        "metric": "points",
-        "comments": 0,
-        "author": "abhijeetcreates",
-        "tags": [
-          "story"
-        ],
         "rank": 12,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       }
     ],
     "ask_hn": [
@@ -616,13 +615,13 @@
         "source": "ask_hn",
         "title": "U.S. October PPI Rises 6.5% YoY, Highest in Nearly Four Years",
         "url": "https://news.ycombinator.com/item?id=50484421",
-        "score": 172,
+        "score": 173,
         "metric": "points",
         "comments": 227,
         "author": "moonypto",
         "tags": [],
         "rank": 1,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "ask_hn",
@@ -630,23 +629,23 @@
         "url": "https://news.ycombinator.com/item?id=50494696",
         "score": 82,
         "metric": "points",
-        "comments": 50,
+        "comments": 51,
         "author": "shnock",
         "tags": [],
         "rank": 2,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "ask_hn",
         "title": "Tell HN: Google Search to start locking down search behind a login wall",
         "url": "https://news.ycombinator.com/item?id=50491617",
-        "score": 43,
+        "score": 44,
         "metric": "points",
         "comments": 28,
         "author": "exploraz",
         "tags": [],
         "rank": 3,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "ask_hn",
@@ -658,7 +657,7 @@
         "author": "0o777",
         "tags": [],
         "rank": 4,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "ask_hn",
@@ -670,7 +669,7 @@
         "author": "SamInTheShell",
         "tags": [],
         "rank": 5,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "ask_hn",
@@ -682,7 +681,7 @@
         "author": "basilikum",
         "tags": [],
         "rank": 6,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "ask_hn",
@@ -694,7 +693,7 @@
         "author": "gfalcao",
         "tags": [],
         "rank": 7,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "ask_hn",
@@ -706,7 +705,7 @@
         "author": "013",
         "tags": [],
         "rank": 8,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "ask_hn",
@@ -718,7 +717,7 @@
         "author": "alexhr",
         "tags": [],
         "rank": 9,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "ask_hn",
@@ -730,7 +729,7 @@
         "author": "spottedmarley",
         "tags": [],
         "rank": 10,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "ask_hn",
@@ -742,19 +741,19 @@
         "author": "mjs06",
         "tags": [],
         "rank": 11,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "ask_hn",
-        "title": "Ask HN: What are you doing now that Claude is down?",
-        "url": "https://news.ycombinator.com/item?id=50481347",
-        "score": 7,
+        "title": "Ask HN: How do you decide when to stick with a project",
+        "url": "https://news.ycombinator.com/item?id=50498484",
+        "score": 5,
         "metric": "points",
         "comments": 7,
-        "author": "orbis-tertius",
+        "author": "mjs06",
         "tags": [],
         "rank": 12,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       }
     ],
     "lobsters": [
@@ -771,7 +770,7 @@
           "zig"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "lobsters",
@@ -787,7 +786,7 @@
           "mobile"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "lobsters",
@@ -801,7 +800,7 @@
           "go"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "lobsters",
@@ -817,7 +816,7 @@
           "programming"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "lobsters",
@@ -831,7 +830,7 @@
           "security"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "lobsters",
@@ -847,13 +846,13 @@
           "retrocomputing"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "lobsters",
         "title": "Let Me Let You Own Your Data",
         "url": "https://www.willett.io/posts/data/",
-        "score": 31,
+        "score": 32,
         "metric": "score",
         "comments": 21,
         "author": null,
@@ -862,7 +861,7 @@
           "privacy"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "lobsters",
@@ -876,7 +875,7 @@
           "math"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "lobsters",
@@ -890,7 +889,7 @@
           "assembly"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "lobsters",
@@ -905,7 +904,7 @@
           "plt"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "lobsters",
@@ -920,7 +919,7 @@
           "retrocomputing"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "lobsters",
@@ -934,13 +933,13 @@
           "programming"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "lobsters",
         "title": "Parsing nested lists in BQN",
         "url": "https://saltysylvi.github.io/blog/parsing-nested-lists-in-bqn.html",
-        "score": 5,
+        "score": 6,
         "metric": "score",
         "comments": 0,
         "author": null,
@@ -948,13 +947,13 @@
           "apl"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "lobsters",
         "title": "Reintroducing Spaces",
         "url": "https://dholms.leaflet.pub/3mu3p3ldwrc26",
-        "score": 2,
+        "score": 3,
         "metric": "score",
         "comments": 1,
         "author": null,
@@ -962,7 +961,7 @@
           "programming"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "lobsters",
@@ -976,7 +975,7 @@
           "netbsd"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       }
     ],
     "devto": [
@@ -995,7 +994,7 @@
           "career"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "devto",
@@ -1012,7 +1011,7 @@
           "news"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "devto",
@@ -1029,7 +1028,7 @@
           "typescript"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "devto",
@@ -1046,7 +1045,7 @@
           "watercooler"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "devto",
@@ -1063,7 +1062,7 @@
           "programming"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "devto",
@@ -1080,7 +1079,7 @@
           "architecture"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "devto",
@@ -1097,7 +1096,7 @@
           "ai"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "devto",
@@ -1114,7 +1113,7 @@
           "programming"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "devto",
@@ -1131,7 +1130,7 @@
           "devto"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "devto",
@@ -1148,7 +1147,7 @@
           "resources"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "devto",
@@ -1165,7 +1164,7 @@
           "ai"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "devto",
@@ -1182,7 +1181,7 @@
           "machinelearning"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "devto",
@@ -1199,7 +1198,7 @@
           "pets"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "devto",
@@ -1214,7 +1213,7 @@
           "community"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "devto",
@@ -1231,7 +1230,269 @@
           "architecture"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      }
+    ],
+    "producthunt": [
+      {
+        "source": "producthunt",
+        "title": "MAP & GO!",
+        "url": "https://www.producthunt.com/products/expert-chase-deleted-1107920",
+        "score": 20,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "See your day on the map",
+        "rank": 1,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Thunder",
+        "url": "https://www.producthunt.com/products/thunder-3",
+        "score": 19,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "A blazing-fast, persistent, key-value AI workload database",
+        "rank": 2,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "HiringNow",
+        "url": "https://www.producthunt.com/products/hiringnow",
+        "score": 18,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "AI job agent that finds & apply for jobs before anyone else.",
+        "rank": 3,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Kokonut UI",
+        "url": "https://www.producthunt.com/products/kokonutui",
+        "score": 17,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Open-source UI components for your AI agent",
+        "rank": 4,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "AnyoneHiring.today",
+        "url": "https://www.producthunt.com/products/anyonehiring-today",
+        "score": 16,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "A world map of jobs. “Anywhere” is now a plan.",
+        "rank": 5,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Valutorio",
+        "url": "https://www.producthunt.com/products/valutorio",
+        "score": 15,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Your Markdown notes, native on Mac and iPhone",
+        "rank": 6,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Antelog",
+        "url": "https://www.producthunt.com/products/antelog",
+        "score": 14,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Stops AI coding agents from leaking or destroying your data",
+        "rank": 7,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Drops",
+        "url": "https://www.producthunt.com/products/drops-4",
+        "score": 13,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Discover new music through moments your friends love",
+        "rank": 8,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Uber Parking",
+        "url": "https://www.producthunt.com/products/uber",
+        "score": 12,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Find, compare and reserve parking inside the Uber app",
+        "rank": 9,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Gemini Robotics 2.5",
+        "url": "https://www.producthunt.com/products/gemini-robotics-2-5",
+        "score": 11,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Gemini Robotics 2.5: Google’s most capable robot model",
+        "rank": 10,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "VB Notes",
+        "url": "https://www.producthunt.com/products/vb-notes",
+        "score": 10,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Markdown notes in your own folder, searched by meaning",
+        "rank": 11,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Replay",
+        "url": "https://www.producthunt.com/products/replay-11",
+        "score": 9,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Mac meeting recorder with no bot. Pay once, no subscription",
+        "rank": 12,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Restoration Scope",
+        "url": "https://www.producthunt.com/products/restoration-scope",
+        "score": 8,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Field data and monitoring software for reforestation",
+        "rank": 13,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Default Tamer",
+        "url": "https://www.producthunt.com/products/default-tamer",
+        "score": 7,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Open every link in the right browser on macOS",
+        "rank": 14,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "ScreenGo",
+        "url": "https://www.producthunt.com/products/screengo",
+        "score": 6,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "screen recorder for Mac with auto zooms and virtual webcam",
+        "rank": 15,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Tacie",
+        "url": "https://www.producthunt.com/products/tacie",
+        "score": 5,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Meeting notes on your Mac, with no bot in the call",
+        "rank": 16,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Dynamic Edge",
+        "url": "https://www.producthunt.com/products/dynamic-edge",
+        "score": 4,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "The Dynamic Island for Windows",
+        "rank": 17,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Dex Semantics",
+        "url": "https://www.producthunt.com/products/dex-by-exmergo",
+        "score": 3,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Let your agent build analytics with 25% fewer errors",
+        "rank": 18,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Aboard Sign",
+        "url": "https://www.producthunt.com/products/aboard-sign",
+        "score": 2,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Email a contract, CC sign@aboard.com and collect signatures",
+        "rank": 19,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
+      },
+      {
+        "source": "producthunt",
+        "title": "Tabletop by Google Labs",
+        "url": "https://www.producthunt.com/products/google-labs",
+        "score": 1,
+        "metric": "feed rank",
+        "comments": 0,
+        "author": null,
+        "tags": [],
+        "description": "Build interactive group experiences with AI.",
+        "rank": 20,
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       }
     ],
     "github_trending": [
@@ -1239,7 +1500,7 @@
         "source": "github_trending",
         "title": "huamidev/GestaltX",
         "url": "https://github.com/huamidev/GestaltX",
-        "score": 7616,
+        "score": 7622,
         "metric": "stars",
         "comments": 0,
         "author": "huamidev",
@@ -1248,15 +1509,15 @@
         ],
         "description": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups.",
         "created_at": "2026-11-09T05:15:48Z",
-        "forks": 2645,
+        "forks": 2647,
         "rank": 1,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "github_trending",
         "title": "Kianuni/Erosion-CN",
         "url": "https://github.com/Kianuni/Erosion-CN",
-        "score": 2077,
+        "score": 2078,
         "metric": "stars",
         "comments": 0,
         "author": "Kianuni",
@@ -1267,13 +1528,13 @@
         "created_at": "2026-11-10T02:37:31Z",
         "forks": 424,
         "rank": 2,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "github_trending",
         "title": "deepseek-ai/chat-demo",
         "url": "https://github.com/deepseek-ai/chat-demo",
-        "score": 1885,
+        "score": 1891,
         "metric": "stars",
         "comments": 0,
         "author": "deepseek-ai",
@@ -1284,13 +1545,13 @@
         "created_at": "2026-11-12T08:08:19Z",
         "forks": 314,
         "rank": 3,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "github_trending",
         "title": "apex-compute/ANR",
         "url": "https://github.com/apex-compute/ANR",
-        "score": 1879,
+        "score": 1881,
         "metric": "stars",
         "comments": 0,
         "author": "apex-compute",
@@ -1301,13 +1562,13 @@
         "created_at": "2026-11-11T04:27:17Z",
         "forks": 29,
         "rank": 4,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "github_trending",
         "title": "FrigadeHQ/yogurt",
         "url": "https://github.com/FrigadeHQ/yogurt",
-        "score": 1521,
+        "score": 1523,
         "metric": "stars",
         "comments": 0,
         "author": "FrigadeHQ",
@@ -1316,15 +1577,15 @@
         ],
         "description": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.",
         "created_at": "2026-11-10T20:01:01Z",
-        "forks": 86,
+        "forks": 87,
         "rank": 5,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "github_trending",
         "title": "HybridRobotics/supermimic",
         "url": "https://github.com/HybridRobotics/supermimic",
-        "score": 1512,
+        "score": 1513,
         "metric": "stars",
         "comments": 0,
         "author": "HybridRobotics",
@@ -1335,13 +1596,13 @@
         "created_at": "2026-11-10T10:46:56Z",
         "forks": 103,
         "rank": 6,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "github_trending",
         "title": "agentes-chat/agentes-chat",
         "url": "https://github.com/agentes-chat/agentes-chat",
-        "score": 1416,
+        "score": 1419,
         "metric": "stars",
         "comments": 0,
         "author": "agentes-chat",
@@ -1350,15 +1611,15 @@
         ],
         "description": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
         "created_at": "2026-11-09T00:50:28Z",
-        "forks": 250,
+        "forks": 251,
         "rank": 7,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "github_trending",
         "title": "HolyArrs/HolyArrs",
         "url": "https://github.com/HolyArrs/HolyArrs",
-        "score": 1200,
+        "score": 1201,
         "metric": "stars",
         "comments": 0,
         "author": "HolyArrs",
@@ -1369,7 +1630,7 @@
         "created_at": "2026-11-09T23:53:25Z",
         "forks": 61,
         "rank": 8,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "github_trending",
@@ -1386,13 +1647,13 @@
         "created_at": "2026-11-12T20:49:07Z",
         "forks": 1,
         "rank": 9,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "github_trending",
         "title": "adriadam10/mkw-recomp",
         "url": "https://github.com/adriadam10/mkw-recomp",
-        "score": 970,
+        "score": 979,
         "metric": "stars",
         "comments": 0,
         "author": "adriadam10",
@@ -1401,9 +1662,9 @@
         ],
         "description": "Static recompilation of Mario Kart World (Nintendo Switch 2) to a native PC program",
         "created_at": "2026-11-09T15:40:06Z",
-        "forks": 52,
+        "forks": 54,
         "rank": 10,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "github_trending",
@@ -1420,7 +1681,7 @@
         "created_at": "2026-11-09T13:43:40Z",
         "forks": 64,
         "rank": 11,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "github_trending",
@@ -1437,13 +1698,13 @@
         "created_at": "2026-11-09T19:13:52Z",
         "forks": 88,
         "rank": 12,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "github_trending",
         "title": "serveroshq/panel",
         "url": "https://github.com/serveroshq/panel",
-        "score": 816,
+        "score": 817,
         "metric": "stars",
         "comments": 0,
         "author": "serveroshq",
@@ -1454,13 +1715,13 @@
         "created_at": "2026-11-09T00:47:33Z",
         "forks": 63,
         "rank": 13,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "github_trending",
         "title": "JDhruv14/line-art-animation",
         "url": "https://github.com/JDhruv14/line-art-animation",
-        "score": 783,
+        "score": 784,
         "metric": "stars",
         "comments": 0,
         "author": "JDhruv14",
@@ -1471,24 +1732,24 @@
         "created_at": "2026-11-10T09:25:25Z",
         "forks": 125,
         "rank": 14,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "github_trending",
-        "title": "opencoredev/islandcn",
-        "url": "https://github.com/opencoredev/islandcn",
-        "score": 688,
+        "title": "Eynnzerr/TelemetryCleaner",
+        "url": "https://github.com/Eynnzerr/TelemetryCleaner",
+        "score": 698,
         "metric": "stars",
         "comments": 0,
-        "author": "opencoredev",
+        "author": "Eynnzerr",
         "tags": [
-          "TypeScript"
+          "Kotlin"
         ],
-        "description": "The open-source Dynamic Island for React, installed with shadcn.",
-        "created_at": "2026-11-13T11:50:50Z",
-        "forks": 56,
+        "description": "基于 Shizuku 免 Root 清除国产安卓 SystemHelper、RegService 等系统预装隐私数据收集模块",
+        "created_at": "2026-11-11T06:25:10Z",
+        "forks": 66,
         "rank": 15,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       }
     ],
     "npm": [
@@ -1504,7 +1765,7 @@
           "npm"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1518,7 +1779,7 @@
           "npm"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1532,7 +1793,7 @@
           "npm"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1546,7 +1807,7 @@
           "npm"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1560,7 +1821,7 @@
           "npm"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1574,7 +1835,7 @@
           "npm"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1588,13 +1849,13 @@
           "npm"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
         "title": "vitest",
         "url": "https://www.npmjs.com/package/vitest",
-        "score": 182460991,
+        "score": 183935040,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1602,7 +1863,7 @@
           "npm"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1616,7 +1877,7 @@
           "npm"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1630,7 +1891,7 @@
           "npm"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1644,7 +1905,7 @@
           "npm"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1658,7 +1919,7 @@
           "npm"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1672,7 +1933,7 @@
           "npm"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1686,7 +1947,7 @@
           "npm"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1700,7 +1961,7 @@
           "npm"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1714,7 +1975,7 @@
           "npm"
         ],
         "rank": 16,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1728,13 +1989,13 @@
           "npm"
         ],
         "rank": 17,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
         "title": "react-native",
         "url": "https://www.npmjs.com/package/react-native",
-        "score": 21003443,
+        "score": 21226366,
         "metric": "weekly downloads",
         "comments": 0,
         "author": null,
@@ -1742,7 +2003,7 @@
           "npm"
         ],
         "rank": 18,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1756,7 +2017,7 @@
           "npm"
         ],
         "rank": 19,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1770,7 +2031,7 @@
           "npm"
         ],
         "rank": 20,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1784,7 +2045,7 @@
           "npm"
         ],
         "rank": 21,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1798,7 +2059,7 @@
           "npm"
         ],
         "rank": 22,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1812,7 +2073,7 @@
           "npm"
         ],
         "rank": 23,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "npm",
@@ -1826,7 +2087,7 @@
           "npm"
         ],
         "rank": 24,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       }
     ],
     "pypi": [
@@ -1842,7 +2103,7 @@
           "pypi"
         ],
         "rank": 1,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -1856,7 +2117,7 @@
           "pypi"
         ],
         "rank": 2,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -1870,7 +2131,7 @@
           "pypi"
         ],
         "rank": 3,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -1884,7 +2145,7 @@
           "pypi"
         ],
         "rank": 4,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -1898,7 +2159,7 @@
           "pypi"
         ],
         "rank": 5,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -1912,7 +2173,7 @@
           "pypi"
         ],
         "rank": 6,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -1926,7 +2187,7 @@
           "pypi"
         ],
         "rank": 7,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -1940,7 +2201,7 @@
           "pypi"
         ],
         "rank": 8,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -1954,7 +2215,7 @@
           "pypi"
         ],
         "rank": 9,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -1968,7 +2229,7 @@
           "pypi"
         ],
         "rank": 10,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -1982,7 +2243,7 @@
           "pypi"
         ],
         "rank": 11,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -1996,7 +2257,7 @@
           "pypi"
         ],
         "rank": 12,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -2010,7 +2271,7 @@
           "pypi"
         ],
         "rank": 13,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -2024,7 +2285,7 @@
           "pypi"
         ],
         "rank": 14,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -2038,7 +2299,7 @@
           "pypi"
         ],
         "rank": 15,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -2052,7 +2313,7 @@
           "pypi"
         ],
         "rank": 16,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -2066,7 +2327,7 @@
           "pypi"
         ],
         "rank": 17,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -2080,7 +2341,7 @@
           "pypi"
         ],
         "rank": 18,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -2094,7 +2355,7 @@
           "pypi"
         ],
         "rank": 19,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -2108,7 +2369,7 @@
           "pypi"
         ],
         "rank": 20,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -2122,7 +2383,7 @@
           "pypi"
         ],
         "rank": 21,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "pypi",
@@ -2136,7 +2397,7 @@
           "pypi"
         ],
         "rank": 22,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       }
     ],
     "crates": [
@@ -2144,196 +2405,196 @@
         "source": "crates",
         "title": "hashbrown",
         "url": "https://crates.io/crates/hashbrown",
-        "score": 907399302,
+        "score": 909266135,
         "metric": "recent downloads",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "A Rust port of Google's SwissTable hash map",
         "rank": 1,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "crates",
         "title": "syn",
         "url": "https://crates.io/crates/syn",
-        "score": 894041098,
+        "score": 896082347,
         "metric": "recent downloads",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "Parser for Rust source code",
         "rank": 2,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "crates",
         "title": "getrandom",
         "url": "https://crates.io/crates/getrandom",
-        "score": 815238656,
+        "score": 817057238,
         "metric": "recent downloads",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "A small cross-platform library for retrieving random data from system source",
         "rank": 3,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "crates",
         "title": "rand",
         "url": "https://crates.io/crates/rand",
-        "score": 638459100,
+        "score": 639813635,
         "metric": "recent downloads",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "Random number generators and other randomness functionality.\n",
         "rank": 4,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "crates",
         "title": "rand_core",
         "url": "https://crates.io/crates/rand_core",
-        "score": 636122364,
+        "score": 637509050,
         "metric": "recent downloads",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "Core random number generator traits and tools for implementation.\n",
         "rank": 5,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "crates",
         "title": "bitflags",
         "url": "https://crates.io/crates/bitflags",
-        "score": 593833898,
+        "score": 595112408,
         "metric": "recent downloads",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "A macro to generate structures which behave like bitflags.\n",
         "rank": 6,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "crates",
         "title": "thiserror",
         "url": "https://crates.io/crates/thiserror",
-        "score": 530525009,
+        "score": 531686606,
         "metric": "recent downloads",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "derive(Error)",
         "rank": 7,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "crates",
         "title": "thiserror-impl",
         "url": "https://crates.io/crates/thiserror-impl",
-        "score": 530452410,
+        "score": 531614027,
         "metric": "recent downloads",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "Implementation detail of the `thiserror` crate",
         "rank": 8,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "crates",
         "title": "base64",
         "url": "https://crates.io/crates/base64",
-        "score": 528269554,
+        "score": 529464193,
         "metric": "recent downloads",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "encodes and decodes base64 as bytes or utf8",
         "rank": 9,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "crates",
         "title": "windows-sys",
         "url": "https://crates.io/crates/windows-sys",
-        "score": 518412386,
+        "score": 519411871,
         "metric": "recent downloads",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "Rust for Windows",
         "rank": 10,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "crates",
         "title": "quote",
         "url": "https://crates.io/crates/quote",
-        "score": 489695962,
+        "score": 490765211,
         "metric": "recent downloads",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "Quasi-quoting macro quote!(...)",
         "rank": 11,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "crates",
         "title": "libc",
         "url": "https://crates.io/crates/libc",
-        "score": 488052535,
+        "score": 489123033,
         "metric": "recent downloads",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "Raw FFI bindings to platform libraries like libc.",
         "rank": 12,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "crates",
         "title": "indexmap",
         "url": "https://crates.io/crates/indexmap",
-        "score": 486576860,
+        "score": 487589007,
         "metric": "recent downloads",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "A hash table with consistent order and fast iteration.",
         "rank": 13,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "crates",
         "title": "proc-macro2",
         "url": "https://crates.io/crates/proc-macro2",
-        "score": 482244724,
+        "score": 483307805,
         "metric": "recent downloads",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "A substitute implementation of the compiler's `proc_macro` API to decouple token-based libraries from the procedural macro use case.",
         "rank": 14,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       },
       {
         "source": "crates",
         "title": "memchr",
         "url": "https://crates.io/crates/memchr",
-        "score": 468073428,
+        "score": 469093520,
         "metric": "recent downloads",
         "comments": 0,
         "author": null,
         "tags": [],
         "description": "Provides extremely fast (uses SIMD on x86_64, aarch64 and wasm32) routines for\n1, 2 or 3 byte search and single substring search.\n",
         "rank": 15,
-        "captured_at": "2026-11-15T06:17:37.092554+00:00"
+        "captured_at": "2026-11-15T06:40:19.830210+00:00"
       }
     ]
   }
