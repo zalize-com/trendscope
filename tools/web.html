@@ -68,6 +68,7 @@
     <button data-tool="utm">UTM builder</button>
     <button data-tool="aifree">AI-free badge</button>
     <button data-tool="meta">meta audit</button>
+    <button data-tool="aibots">AI bots</button>
   </div>
 
   <div class="panel" id="p-qr">
@@ -184,6 +185,14 @@
     <div id="pr-table" style="margin-top:12px"></div>
   </div>
 
+
+  <div class="panel" id="p-aibots">
+    <h2>AI-crawler robots.txt checker</h2>
+    <p class="hint">Paste your robots.txt — see which AI crawlers you allow or block. GEO starts here: a blocked GPTBot can never cite you.</p>
+    <textarea id="ab-in" rows="7" placeholder="User-agent: *&#10;Disallow: /private/&#10;&#10;User-agent: GPTBot&#10;Disallow: /"></textarea>
+    <div id="ab-out" style="margin-top:10px"></div>
+  </div>
+
 <footer>Free tools from <a href="../index.html">trendscope</a> · everything runs locally in your browser.</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
@@ -191,7 +200,7 @@ const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 const tabs = document.getElementById("tabs");
-const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta"];
+const tools = ["qr","og","robots","squat","http","hash","pxrem","utm","aifree","meta","aibots"];
 
 // ---- AI-free badge ----
 function afSvg(label, style) {
@@ -542,6 +551,50 @@ function pxGo(from) {
 }
 ["px","rm","base"].forEach(id => document.getElementById(id).addEventListener("input", () => pxGo(id)));
 pxTable();
+
+/* ---------- AI bots checker ---------- */
+const AI_BOTS = [["GPTBot","OpenAI"],["ChatGPT-User","OpenAI"],["OAI-SearchBot","OpenAI"],["ClaudeBot","Anthropic"],["Claude-User","Anthropic"],["PerplexityBot","Perplexity"],["Perplexity-User","Perplexity"],["Google-Extended","Google AI"],["CCBot","Common Crawl"],["Bytespider","ByteDance"],["Amazonbot","Amazon"],["meta-externalagent","Meta"],["Applebot-Extended","Apple"],["cohere-ai","Cohere"],["Diffbot","Diffbot"]];
+function aibots() {
+  const lines = $("ab-in").value.split("\n").map(l => l.trim()).filter(l => l && !l.startsWith("#"));
+  // group rules: user-agent -> [rules]
+  const groups = []; let cur = null;
+  for (const l of lines) {
+    const m = l.match(/^user-agent:\s*(.+)$/i);
+    if (m) { cur = { agents: m[1].split(",").map(a => a.trim().toLowerCase()), rules: [] }; groups.push(cur); continue; }
+    if (cur) { const r = l.match(/^(disallow|allow):\s*(.*)$/i); if (r) cur.rules.push([r[1].toLowerCase(), r[2].trim()]); }
+  }
+  const verdict = bot => {
+    const lb = bot.toLowerCase();
+    let specific = null, star = null;
+    for (const g of groups) {
+      if (g.agents.includes(lb)) specific = g;
+      if (g.agents.includes("*")) star = g;
+    }
+    const g = specific || star;
+    if (!g) return ["allow", "no robots rules at all"];
+    // apply longest-match on "/" path: any "Disallow: /" (whole-site) blocks;
+    // explicit empty Disallow or Allow wins per most specific rule
+    const exact = g.rules.filter(([k, p]) => p === "/");
+    const hasDisAll = exact.some(([k]) => k === "disallow");
+    const hasAllowAll = exact.some(([k]) => k === "allow");
+    if (hasDisAll && !hasAllowAll) return ["block", specific ? `own rule: Disallow: /` : `wildcard: Disallow: /`];
+    if (g.rules.some(([k, p]) => k === "disallow" && p && p !== "/"))
+      return ["partial", (specific ? "own" : "wildcard") + " rules — some paths blocked"];
+    return ["allow", specific ? "own rule — no block" : "wildcard — no block"];
+  };
+  $("ab-out").innerHTML = lines.length
+    ? `<table class="tbl"><tr><th>bot</th><th>org</th><th>verdict</th><th>why</th></tr>` +
+      AI_BOTS.map(([b, o]) => {
+        const [v, why] = verdict(b);
+        const col = v === "allow" ? "var(--green)" : v === "block" ? "var(--red)" : "#e3b341";
+        return `<tr><td><b>${b}</b></td><td>${o}</td><td style="color:${col};font-weight:600">${v.toUpperCase()}</td><td style="color:var(--dim)">${why}</td></tr>`;
+      }).join("") + `</table>
+      <p class="hint" style="margin-top:8px">15 AI crawlers · BLOCK means the bot should not read your site at all. Generate fixes with the <a href="?t=robots" style="color:var(--accent)">robots.txt builder</a> above.</p>`
+    : `<span style="color:var(--dim)">paste a robots.txt above</span>`;
+}
+$("ab-in").oninput = aibots;
+$("ab-in").value = "User-agent: *\nDisallow: /private/\n\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: ClaudeBot\nAllow: /";
+aibots();
 </script>
 </body>
 </html>
