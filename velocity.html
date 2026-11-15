@@ -47,55 +47,21 @@
     <a href="https://github.com/zalize-com/trendscope">trendscope</a>
   </footer>
 <script>
-const fmt = n => n>=1e6 ? (n/1e6).toFixed(1)+"M" : n>=1e3 ? (n/1e3).toFixed(1)+"k" : (+n).toFixed(1);
 const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
-function parseCSV(txt) {
-  const rows = []; let f = "", row = [], q = false;
-  for (let i = 0; i <= txt.length; i++) {
-    const c = txt[i];
-    if (q) {
-      if (c === '"') { if (txt[i+1] === '"') { f += '"'; i++; } else q = false; }
-      else if (c === undefined) {} else f += c;
-    } else if (c === '"') q = true;
-    else if (c === ',' ) { row.push(f); f = ""; }
-    else if (c === '\n' || c === undefined) { row.push(f); f = ""; rows.push(row); row = []; }
-    else if (c !== '\r') f += c;
-  }
-  return rows.filter(r => r.length > 1);
-}
-fetch("data/history.csv", {cache:"no-cache"}).then(r => r.text()).then(txt => {
-  const rows = parseCSV(txt), hdr = rows[0];
-  const ci = Object.fromEntries(hdr.map((h,i)=>[h,i]));
-  const byUrl = {};
-  for (const r of rows.slice(1)) {
-    const u = r[ci.url], sc = +r[ci.score];
-    if (!u || !isFinite(sc)) continue;
-    (byUrl[u] = byUrl[u] || { title: r[ci.title], source: r[ci.source], metric: r[ci.metric], days: [] })
-      .days.push({ d: r[ci.date], s: sc });
-  }
-  const items = [];
-  for (const [u, o] of Object.entries(byUrl)) {
-    const days = [...new Set(o.days.map(x => x.d))].sort();
-    if (days.length < 2) continue;
-    const first = Math.min(...o.days.filter(x => x.d === days[0]).map(x => x.s));
-    const last = Math.max(...o.days.filter(x => x.d === days[days.length-1]).map(x => x.s));
-    const span = Math.max(1, (new Date(days[days.length-1]) - new Date(days[0])) / 864e5);
-    items.push({ u, ...o, days: days.length, delta: last - first, v: (last - first) / span, last });
-  }
-  items.sort((a,b) => b.v - a.v);
-  const top = items.slice(0, 40);
+const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B" : n >= 1e6 ? (n/1e6).toFixed(1)+"M" : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : (Math.round(n*10)/10)+"";
+fetch("docs/api/velocity.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+  const top = d.items.slice(0, 40);
   document.getElementById("grid").innerHTML = top.length
     ? '<table><tr><th>#</th><th>title</th><th>+/day</th><th>latest</th><th>days</th></tr>' +
       top.map((it,i) => `<tr><td class="d">${i+1}</td>
-        <td><a href="${esc(it.u)}" target="_blank" rel="noopener">${esc(it.title)}</a> <span class="src">${esc(it.source)}</span></td>
-        <td class="n">+${fmt(it.v)} ${esc(it.metric||"")}/d</td>
-        <td class="n">${fmt(it.last)}</td>
+        <td><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a> <span class="src">${esc(it.source)}</span></td>
+        <td class="n">+${fmt(it.per_day)} ${esc(it.metric||"")}/d</td>
+        <td class="n">${fmt(it.latest)}</td>
         <td class="d">${it.days}d</td></tr>`).join("") + "</table>"
     : '<p id="err">no multi-day items yet — velocity needs items that stay on front pages across snapshots</p>';
-  const daysAll = new Set(rows.slice(1).map(r => r[ci.date]));
   document.getElementById("sub").textContent =
-    `${items.length} multi-day items · ${daysAll.size} days of snapshots · top ${top.length}`;
-}).catch(() => { document.getElementById("err").textContent = "history.csv unavailable"; });
+    `${d.total} multi-day items · snapshot ${d.latest_snapshot} · top ${top.length} · rolling counters (npm/pypi/crates) excluded`;
+}).catch(() => { document.getElementById("err").textContent = "velocity.json unavailable"; });
 </script>
 </body>
 </html>

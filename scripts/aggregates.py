@@ -14,6 +14,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HIST = os.path.join(ROOT, "data", "history.csv")
 API = os.path.join(ROOT, "docs", "api")
 
+ROLLING = {"npm", "pypi", "crates"}
 SKIP = {"news.ycombinator.com", "github.com", "www.npmjs.com", "pypi.org",
         "crates.io", "dev.to", "lobste.rs"}
 LIMIT = 50
@@ -31,6 +32,7 @@ def main():
     doms = defaultdict(lambda: {"hits": 0, "days": set(), "srcs": set(), "top": None})
     authors = defaultdict(lambda: {"hits": 0, "days": set(), "srcs": set(), "top": None})
     items = {}  # url -> best comment-bearing row
+    series = {}  # url -> {"title","source","metric","days": {date: score}}
     for r in csv.DictReader(open(HIST, encoding="utf-8")):
         url = r.get("url") or ""
         d = r.get("date") or ""
@@ -40,6 +42,9 @@ def main():
         score = int(float(r.get("score") or 0))
         hit = {"title": r["title"], "url": url, "score": score,
                "metric": r.get("metric") or "", "date": d}
+        se = series.setdefault(url, {"title": r["title"], "source": r["source"],
+                                     "metric": r.get("metric") or "", "days": {}})
+        se["days"][d] = max(score, se["days"].get(d, 0))
 
         h = host_of(url)
         if h:
@@ -152,6 +157,28 @@ def main():
                    "by_source": dict(sorted(by_src.items(), key=lambda x: -x[1])),
                    "items": new_items}, f, ensure_ascii=False, indent=1)
     print(f"new.json: {len(new_items)}/{len(latest_rows)} first-seen")
+
+    # velocity: score growth per day for urls seen on 2+ dates
+    vel = []
+    for url, o in series.items():
+        if o["source"] in ROLLING:
+            continue
+        ds = sorted(o["days"])
+        if len(ds) < 2:
+            continue
+        first, last = o["days"][ds[0]], o["days"][ds[-1]]
+        span = max(1, (datetime.fromisoformat(ds[-1]) - datetime.fromisoformat(ds[0])).days)
+        vel.append({"url": url, "title": o["title"], "source": o["source"],
+                    "metric": o["metric"], "days": len(ds),
+                    "delta": last - first,
+                    "per_day": round((last - first) / span, 1),
+                    "latest": last})
+    vel.sort(key=lambda x: -x["per_day"])
+    with open(os.path.join(API, "velocity.json"), "w", encoding="utf-8") as f:
+        json.dump({"generated_at": now, "latest_snapshot": max(days),
+                   "total": len(vel), "items": vel[:LIMIT]},
+                  f, ensure_ascii=False, indent=1)
+    print(f"velocity.json: {len(vel)} multi-day items")
 
     discussed = sorted(items.values(), key=lambda x: -x["comments"])[:LIMIT]
     heated = sorted((x for x in items.values() if x["score"] >= 50),

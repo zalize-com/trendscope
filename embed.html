@@ -169,6 +169,17 @@ if (MODE === "sources") {
       || `<li id="err">no source data</li>`;
   }).catch(() => { document.getElementById("err").textContent = "sources data unavailable"; });
 } else
+if (MODE === "velocity") {
+  document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/velocity.html";
+  fetch("docs/api/velocity.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    document.getElementById("date").textContent = `velocity · +/day · ${d.total} multi-day`;
+    document.getElementById("list").innerHTML = d.items.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · ${e.days}d</span></span>
+        <span class="score">+${fmt(e.per_day)}</span></li>`).join("")
+      || `<li id="err">no multi-day items yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "velocity data unavailable"; });
+} else
 if (MODE === "domain") {
   document.querySelector(".foot a").href = "https://zalize-com.github.io/trendscope/domains.html";
   fetch("docs/api/domains.json", {cache:"no-cache"}).then(r => r.json()).then(d => {

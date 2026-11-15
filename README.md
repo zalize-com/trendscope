@@ -145,6 +145,7 @@ taxonomy as `topics.html` — niche blogs can embed just their beat),
 `?mode=new` renders items first-seen on today's boards (from new.json).
 `?mode=domain` renders the top domains card (`&d=host` for a single domain).
 `?mode=sources` renders the all-sources stats card (items / unique / one-day%).
+`?mode=velocity` renders the fastest-growing stories card (+/day over multi-day items).
 `?theme=light` (or `dark`) overrides the card color scheme.
 
 ## Terminal
