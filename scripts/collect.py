@@ -98075,44 +98075,6 @@ def fetch_nl_wasm_weekly(limit=15):
     return out
 
 
-def fetch_nl_(limit=15):
-    """工劳小报 — curated newsletter feed, position-scored."""
-    print("Fetching 工劳小报 feed...")
-    import xml.etree.ElementTree as ET
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(
-                "https://feed.laborinfocn7.com/rss/",
-                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                root = _feed_root(resp)
-            break
-        except Exception as e:
-            print(f"  [warn] nl_ attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
-                time.sleep(2 * (attempt + 1))
-            else:
-                return []
-    else:
-        return []
-    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
-    entries = entries[:limit]
-    out = []
-    for i, e in enumerate(entries):
-        title = (e.findtext("{*}title", default="") or "").strip()
-        url = (e.findtext("{*}link", default="") or "").strip()
-        if not url:
-            for l in e.findall("{*}link"):
-                if l.get("rel", "alternate") == "alternate":
-                    url = l.get("href", "")
-                    break
-        url = url or "https://feed.laborinfocn7.com"
-        out.append(item(
-            "nl_", title, url, len(entries) - i, "feed rank",
-        ))
-    return out
-
-
 def fetch_nl_altern_newsletter(limit=15):
     """Altern Newsletter — curated newsletter feed, position-scored."""
     print("Fetching Altern Newsletter feed...")
@@ -99253,11 +99215,3871 @@ def fetch_nl_rendezvous_with_cassidoo(limit=15):
     return out
 
 
+def fetch_pb_angus_croll(limit=15):
+    """Angus Croll — personal tech blog feed, position-scored."""
+    print("Fetching Angus Croll feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://javascriptweblog.wordpress.com/rss",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_angus_croll attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://javascriptweblog.wordpress.com"
+        out.append(item(
+            "pb_angus_croll", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_aditya_rohilla(limit=15):
+    """Aditya Rohilla — personal tech blog feed, position-scored."""
+    print("Fetching Aditya Rohilla feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://adityarohilla.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_aditya_rohilla attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://adityarohilla.com"
+        out.append(item(
+            "pb_aditya_rohilla", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_alexandru_paul_copil(limit=15):
+    """Alexandru-Paul Copil — personal tech blog feed, position-scored."""
+    print("Fetching Alexandru-Paul Copil feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://cpl.li/index.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_alexandru_paul_copil attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://cpl.li"
+        out.append(item(
+            "pb_alexandru_paul_copil", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_ali_spittel(limit=15):
+    """Ali Spittel — personal tech blog feed, position-scored."""
+    print("Fetching Ali Spittel feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://dev.to/feed/aspittel",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_ali_spittel attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://dev.to"
+        out.append(item(
+            "pb_ali_spittel", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_amadou_sall(limit=15):
+    """Amadou Sall — personal tech blog feed, position-scored."""
+    print("Fetching Amadou Sall feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.amadousall.com/rss/",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_amadou_sall attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://www.amadousall.com"
+        out.append(item(
+            "pb_amadou_sall", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_amit_chaudhary(limit=15):
+    """Amit Chaudhary — personal tech blog feed, position-scored."""
+    print("Fetching Amit Chaudhary feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://amitness.com/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_amit_chaudhary attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://amitness.com"
+        out.append(item(
+            "pb_amit_chaudhary", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_andrew_healey(limit=15):
+    """Andrew Healey — personal tech blog feed, position-scored."""
+    print("Fetching Andrew Healey feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://healeycodes.com/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_andrew_healey attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://healeycodes.com"
+        out.append(item(
+            "pb_andrew_healey", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_antonin_januska(limit=15):
+    """Antonin Januska — personal tech blog feed, position-scored."""
+    print("Fetching Antonin Januska feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://antjanus.com/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_antonin_januska attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://antjanus.com"
+        out.append(item(
+            "pb_antonin_januska", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_avinash(limit=15):
+    """Avinash — personal tech blog feed, position-scored."""
+    print("Fetching Avinash feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://avinash.com.np/index.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_avinash attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://avinash.com.np"
+        out.append(item(
+            "pb_avinash", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_benedikt_meurer(limit=15):
+    """Benedikt Meurer — personal tech blog feed, position-scored."""
+    print("Fetching Benedikt Meurer feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://benediktmeurer.de/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_benedikt_meurer attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://benediktmeurer.de"
+        out.append(item(
+            "pb_benedikt_meurer", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_berkhan_berkdemir(limit=15):
+    """Berkhan Berkdemir — personal tech blog feed, position-scored."""
+    print("Fetching Berkhan Berkdemir feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.berkhanberkdemir.com/feed/",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_berkhan_berkdemir attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://www.berkhanberkdemir.com"
+        out.append(item(
+            "pb_berkhan_berkdemir", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_brandon_skerritt(limit=15):
+    """Brandon Skerritt — personal tech blog feed, position-scored."""
+    print("Fetching Brandon Skerritt feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://skerritt.blog/rss/",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_brandon_skerritt attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://skerritt.blog"
+        out.append(item(
+            "pb_brandon_skerritt", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_chase_mccoy(limit=15):
+    """Chase McCoy — personal tech blog feed, position-scored."""
+    print("Fetching Chase McCoy feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://chasem.co/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_chase_mccoy attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://chasem.co"
+        out.append(item(
+            "pb_chase_mccoy", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_chiamaka_ikeanyi(limit=15):
+    """Chiamaka Ikeanyi — personal tech blog feed, position-scored."""
+    print("Fetching Chiamaka Ikeanyi feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://chiamakaikeanyi.dev/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_chiamaka_ikeanyi attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://chiamakaikeanyi.dev"
+        out.append(item(
+            "pb_chiamaka_ikeanyi", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_dan_abramov(limit=15):
+    """Dan Abramov — personal tech blog feed, position-scored."""
+    print("Fetching Dan Abramov feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://overreacted.io/atom.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_dan_abramov attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://overreacted.io"
+        out.append(item(
+            "pb_dan_abramov", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_daniel_lo_nigro(limit=15):
+    """Daniel Lo Nigro — personal tech blog feed, position-scored."""
+    print("Fetching Daniel Lo Nigro feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://d.sb/blog/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_daniel_lo_nigro attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://d.sb"
+        out.append(item(
+            "pb_daniel_lo_nigro", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_dean_harris(limit=15):
+    """Dean Harris — personal tech blog feed, position-scored."""
+    print("Fetching Dean Harris feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://deanacus.com/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_dean_harris attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://deanacus.com"
+        out.append(item(
+            "pb_dean_harris", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_elijah_lynn(limit=15):
+    """Elijah Lynn — personal tech blog feed, position-scored."""
+    print("Fetching Elijah Lynn feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.elijahlynn.net/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_elijah_lynn attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://www.elijahlynn.net"
+        out.append(item(
+            "pb_elijah_lynn", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_eric_pierce(limit=15):
+    """Eric Pierce — personal tech blog feed, position-scored."""
+    print("Fetching Eric Pierce feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://eric-pierce.com/index.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_eric_pierce attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://eric-pierce.com"
+        out.append(item(
+            "pb_eric_pierce", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_fatih_arslan(limit=15):
+    """Fatih Arslan — personal tech blog feed, position-scored."""
+    print("Fetching Fatih Arslan feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://arslan.io/rss/",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_fatih_arslan attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://arslan.io"
+        out.append(item(
+            "pb_fatih_arslan", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_georgi_yanev(limit=15):
+    """Georgi Yanev — personal tech blog feed, position-scored."""
+    print("Fetching Georgi Yanev feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://blog.georgi-yanev.com/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_georgi_yanev attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://blog.georgi-yanev.com"
+        out.append(item(
+            "pb_georgi_yanev", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_gideon_pyzer(limit=15):
+    """Gideon Pyzer — personal tech blog feed, position-scored."""
+    print("Fetching Gideon Pyzer feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://gideonpyzer.dev/index.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_gideon_pyzer attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://gideonpyzer.dev"
+        out.append(item(
+            "pb_gideon_pyzer", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_glenn_stovall(limit=15):
+    """Glenn Stovall — personal tech blog feed, position-scored."""
+    print("Fetching Glenn Stovall feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://glennstovall.com/blog/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_glenn_stovall attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://glennstovall.com"
+        out.append(item(
+            "pb_glenn_stovall", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_hans_gerwitz(limit=15):
+    """Hans Gerwitz — personal tech blog feed, position-scored."""
+    print("Fetching Hans Gerwitz feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://hans.gerwitz.com/feeds/notes.rss",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_hans_gerwitz attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://hans.gerwitz.com"
+        out.append(item(
+            "pb_hans_gerwitz", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_henrique_dias(limit=15):
+    """Henrique Dias — personal tech blog feed, position-scored."""
+    print("Fetching Henrique Dias feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://hacdias.com/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_henrique_dias attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://hacdias.com"
+        out.append(item(
+            "pb_henrique_dias", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_houssein_djirdeh(limit=15):
+    """Houssein Djirdeh — personal tech blog feed, position-scored."""
+    print("Fetching Houssein Djirdeh feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://houssein.me/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_houssein_djirdeh attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://houssein.me"
+        out.append(item(
+            "pb_houssein_djirdeh", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_hugo_di_francesco(limit=15):
+    """Hugo Di Francesco — personal tech blog feed, position-scored."""
+    print("Fetching Hugo Di Francesco feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://codewithhugo.com/index.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_hugo_di_francesco attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://codewithhugo.com"
+        out.append(item(
+            "pb_hugo_di_francesco", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_huy_nguyen(limit=15):
+    """Huy Nguyen — personal tech blog feed, position-scored."""
+    print("Fetching Huy Nguyen feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.huy.dev/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_huy_nguyen attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://www.huy.dev"
+        out.append(item(
+            "pb_huy_nguyen", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_ire_aderinokun(limit=15):
+    """Ire Aderinokun — personal tech blog feed, position-scored."""
+    print("Fetching Ire Aderinokun feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://bitsofco.de/feed/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_ire_aderinokun attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://bitsofco.de"
+        out.append(item(
+            "pb_ire_aderinokun", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_ismail_ghallou(limit=15):
+    """Ismail Ghallou — personal tech blog feed, position-scored."""
+    print("Fetching Ismail Ghallou feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://smakosh.com/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_ismail_ghallou attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://smakosh.com"
+        out.append(item(
+            "pb_ismail_ghallou", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_j_c_hiatt(limit=15):
+    """J.C. Hiatt — personal tech blog feed, position-scored."""
+    print("Fetching J.C. Hiatt feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://jchiatt.com/rss/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_j_c_hiatt attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://jchiatt.com"
+        out.append(item(
+            "pb_j_c_hiatt", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_jaime_gonz_lez(limit=15):
+    """Jaime González — personal tech blog feed, position-scored."""
+    print("Fetching Jaime González feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.barbarianmeetscoding.com/atom.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_jaime_gonz_lez attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://www.barbarianmeetscoding.com"
+        out.append(item(
+            "pb_jaime_gonz_lez", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_jake_jarvis(limit=15):
+    """Jake Jarvis — personal tech blog feed, position-scored."""
+    print("Fetching Jake Jarvis feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://jarv.is/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_jake_jarvis attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://jarv.is"
+        out.append(item(
+            "pb_jake_jarvis", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_james_milner(limit=15):
+    """James Milner — personal tech blog feed, position-scored."""
+    print("Fetching James Milner feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://hwk.uk.com/feed/",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_james_milner attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://hwk.uk.com"
+        out.append(item(
+            "pb_james_milner", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_james_nelson(limit=15):
+    """James Nelson — personal tech blog feed, position-scored."""
+    print("Fetching James Nelson feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "http://jamesknelson.com/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_james_nelson attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "http://jamesknelson.com"
+        out.append(item(
+            "pb_james_nelson", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_jared_gorski(limit=15):
+    """Jared Gorski — personal tech blog feed, position-scored."""
+    print("Fetching Jared Gorski feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://jaredgorski.org/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_jared_gorski attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://jaredgorski.org"
+        out.append(item(
+            "pb_jared_gorski", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_jeremy_shaw(limit=15):
+    """Jeremy Shaw — personal tech blog feed, position-scored."""
+    print("Fetching Jeremy Shaw feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://blog.jeremyshaw.co.nz/atom.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_jeremy_shaw attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://blog.jeremyshaw.co.nz"
+        out.append(item(
+            "pb_jeremy_shaw", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_john_reilly(limit=15):
+    """John Reilly — personal tech blog feed, position-scored."""
+    print("Fetching John Reilly feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://blog.johnnyreilly.com/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_john_reilly attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://blog.johnnyreilly.com"
+        out.append(item(
+            "pb_john_reilly", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_jon_kuperman(limit=15):
+    """Jon Kuperman — personal tech blog feed, position-scored."""
+    print("Fetching Jon Kuperman feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://jonkuperman.com/feed/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_jon_kuperman attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://jonkuperman.com"
+        out.append(item(
+            "pb_jon_kuperman", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_jon_paul_uritis(limit=15):
+    """Jon Paul Uritis — personal tech blog feed, position-scored."""
+    print("Fetching Jon Paul Uritis feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://jonpauluritis.com/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_jon_paul_uritis attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://jonpauluritis.com"
+        out.append(item(
+            "pb_jon_paul_uritis", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_juri_strumpflohner(limit=15):
+    """Juri Strumpflohner — personal tech blog feed, position-scored."""
+    print("Fetching Juri Strumpflohner feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://juristr.com/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_juri_strumpflohner attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://juristr.com"
+        out.append(item(
+            "pb_juri_strumpflohner", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_justin_james(limit=15):
+    """Justin James — personal tech blog feed, position-scored."""
+    print("Fetching Justin James feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://digitaldrummerj.me/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_justin_james attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://digitaldrummerj.me"
+        out.append(item(
+            "pb_justin_james", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_katie_mclaughlin(limit=15):
+    """Katie McLaughlin — personal tech blog feed, position-scored."""
+    print("Fetching Katie McLaughlin feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://glasnt.com/blog/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_katie_mclaughlin attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://glasnt.com"
+        out.append(item(
+            "pb_katie_mclaughlin", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_kendra_little(limit=15):
+    """Kendra Little — personal tech blog feed, position-scored."""
+    print("Fetching Kendra Little feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://littlekendra.com/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_kendra_little attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://littlekendra.com"
+        out.append(item(
+            "pb_kendra_little", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_kent_c_dodds(limit=15):
+    """Kent C. Dodds — personal tech blog feed, position-scored."""
+    print("Fetching Kent C. Dodds feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://kentcdodds.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_kent_c_dodds attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://kentcdodds.com"
+        out.append(item(
+            "pb_kent_c_dodds", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_kevin_berridge(limit=15):
+    """Kevin Berridge — personal tech blog feed, position-scored."""
+    print("Fetching Kevin Berridge feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.kevinberridge.com/feed.rss",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_kevin_berridge attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://www.kevinberridge.com"
+        out.append(item(
+            "pb_kevin_berridge", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_kevin_jalbert(limit=15):
+    """Kevin Jalbert — personal tech blog feed, position-scored."""
+    print("Fetching Kevin Jalbert feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://kevinjalbert.com/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_kevin_jalbert attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://kevinjalbert.com"
+        out.append(item(
+            "pb_kevin_jalbert", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_khaled_garbaya(limit=15):
+    """Khaled Garbaya — personal tech blog feed, position-scored."""
+    print("Fetching Khaled Garbaya feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://khaledgarbaya.net/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_khaled_garbaya attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://khaledgarbaya.net"
+        out.append(item(
+            "pb_khaled_garbaya", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_kyle_mathews(limit=15):
+    """Kyle Mathews — personal tech blog feed, position-scored."""
+    print("Fetching Kyle Mathews feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.bricolage.io/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_kyle_mathews attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://www.bricolage.io"
+        out.append(item(
+            "pb_kyle_mathews", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_kyle_shevlin(limit=15):
+    """Kyle Shevlin — personal tech blog feed, position-scored."""
+    print("Fetching Kyle Shevlin feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://kyleshevlin.com/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_kyle_shevlin attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://kyleshevlin.com"
+        out.append(item(
+            "pb_kyle_shevlin", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_lacy_henschel(limit=15):
+    """Lacy Henschel — personal tech blog feed, position-scored."""
+    print("Fetching Lacy Henschel feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "http://feeds.feedburner.com/LaceyWilliamsHenschel",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_lacy_henschel attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "http://feeds.feedburner.com"
+        out.append(item(
+            "pb_lacy_henschel", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_lauren_tan(limit=15):
+    """Lauren Tan — personal tech blog feed, position-scored."""
+    print("Fetching Lauren Tan feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.no.lol/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_lauren_tan attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://www.no.lol"
+        out.append(item(
+            "pb_lauren_tan", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_lea_verou(limit=15):
+    """Lea Verou — personal tech blog feed, position-scored."""
+    print("Fetching Lea Verou feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "http://lea.verou.me/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_lea_verou attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "http://lea.verou.me"
+        out.append(item(
+            "pb_lea_verou", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_leo_van(limit=15):
+    """Leo Van — personal tech blog feed, position-scored."""
+    print("Fetching Leo Van feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "http://leovan.me/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_leo_van attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "http://leovan.me"
+        out.append(item(
+            "pb_leo_van", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_lorna_jane(limit=15):
+    """Lorna Jane — personal tech blog feed, position-scored."""
+    print("Fetching Lorna Jane feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://lornajane.net/feeds/all.atom.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_lorna_jane attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://lornajane.net"
+        out.append(item(
+            "pb_lorna_jane", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_lucy_bain(limit=15):
+    """Lucy Bain — personal tech blog feed, position-scored."""
+    print("Fetching Lucy Bain feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://lucybain.com/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_lucy_bain attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://lucybain.com"
+        out.append(item(
+            "pb_lucy_bain", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_maddy_miller(limit=15):
+    """Maddy Miller — personal tech blog feed, position-scored."""
+    print("Fetching Maddy Miller feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://madelinemiller.dev/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_maddy_miller attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://madelinemiller.dev"
+        out.append(item(
+            "pb_maddy_miller", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_marius_schulz(limit=15):
+    """Marius Schulz — personal tech blog feed, position-scored."""
+    print("Fetching Marius Schulz feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://feeds.feedburner.com/mariusschulz",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_marius_schulz attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://feeds.feedburner.com"
+        out.append(item(
+            "pb_marius_schulz", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_marshall_bowers(limit=15):
+    """Marshall Bowers — personal tech blog feed, position-scored."""
+    print("Fetching Marshall Bowers feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://maxdeviant.com/atom.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_marshall_bowers attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://maxdeviant.com"
+        out.append(item(
+            "pb_marshall_bowers", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_mark_luetke(limit=15):
+    """Mark Luetke — personal tech blog feed, position-scored."""
+    print("Fetching Mark Luetke feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://luetkemj.github.io/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_mark_luetke attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://luetkemj.github.io"
+        out.append(item(
+            "pb_mark_luetke", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_matt_podwysocki(limit=15):
+    """Matt Podwysocki — personal tech blog feed, position-scored."""
+    print("Fetching Matt Podwysocki feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://mattpodwysocki.github.io/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_matt_podwysocki attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://mattpodwysocki.github.io"
+        out.append(item(
+            "pb_matt_podwysocki", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_matthias_noback(limit=15):
+    """Matthias Noback — personal tech blog feed, position-scored."""
+    print("Fetching Matthias Noback feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://matthiasnoback.nl/atom.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_matthias_noback attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://matthiasnoback.nl"
+        out.append(item(
+            "pb_matthias_noback", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_matthieu_cneude(limit=15):
+    """Matthieu Cneude — personal tech blog feed, position-scored."""
+    print("Fetching Matthieu Cneude feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://web-techno.net/index.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_matthieu_cneude attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://web-techno.net"
+        out.append(item(
+            "pb_matthieu_cneude", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_michael_malura(limit=15):
+    """Michael Malura — personal tech blog feed, position-scored."""
+    print("Fetching Michael Malura feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://malura.de/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_michael_malura attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://malura.de"
+        out.append(item(
+            "pb_michael_malura", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_mike_behnke(limit=15):
+    """Mike Behnke — personal tech blog feed, position-scored."""
+    print("Fetching Mike Behnke feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://kgrz.io/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_mike_behnke attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://kgrz.io"
+        out.append(item(
+            "pb_mike_behnke", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_mike_bifulco(limit=15):
+    """Mike Bifulco — personal tech blog feed, position-scored."""
+    print("Fetching Mike Bifulco feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://mikebifulco.com/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_mike_bifulco attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://mikebifulco.com"
+        out.append(item(
+            "pb_mike_bifulco", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_mustafa_alap(limit=15):
+    """Mustafa Çalap — personal tech blog feed, position-scored."""
+    print("Fetching Mustafa Çalap feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://calap.co/index.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_mustafa_alap attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://calap.co"
+        out.append(item(
+            "pb_mustafa_alap", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_nicole_harris(limit=15):
+    """Nicole Harris — personal tech blog feed, position-scored."""
+    print("Fetching Nicole Harris feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "http://www.whoisnicoleharris.com/atom.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_nicole_harris attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "http://www.whoisnicoleharris.com"
+        out.append(item(
+            "pb_nicole_harris", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_nikita_sobolev(limit=15):
+    """Nikita Sobolev — personal tech blog feed, position-scored."""
+    print("Fetching Nikita Sobolev feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://sobolevn.me/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_nikita_sobolev attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://sobolevn.me"
+        out.append(item(
+            "pb_nikita_sobolev", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_olavi_haapala(limit=15):
+    """Olavi Haapala — personal tech blog feed, position-scored."""
+    print("Fetching Olavi Haapala feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://olavihaapala.fi/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_olavi_haapala attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://olavihaapala.fi"
+        out.append(item(
+            "pb_olavi_haapala", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_omar_bahareth(limit=15):
+    """Omar Bahareth — personal tech blog feed, position-scored."""
+    print("Fetching Omar Bahareth feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://omar.engineer/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_omar_bahareth attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://omar.engineer"
+        out.append(item(
+            "pb_omar_bahareth", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_paolo_melchiorre(limit=15):
+    """Paolo Melchiorre — personal tech blog feed, position-scored."""
+    print("Fetching Paolo Melchiorre feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.paulox.net/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_paolo_melchiorre attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://www.paulox.net"
+        out.append(item(
+            "pb_paolo_melchiorre", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_paul_hubbard(limit=15):
+    """Paul Hubbard — personal tech blog feed, position-scored."""
+    print("Fetching Paul Hubbard feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://ultracrepidarian.phfactor.net/feed/",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_paul_hubbard attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://ultracrepidarian.phfactor.net"
+        out.append(item(
+            "pb_paul_hubbard", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_peter_bengtsson(limit=15):
+    """Peter Bengtsson — personal tech blog feed, position-scored."""
+    print("Fetching Peter Bengtsson feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.peterbe.com/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_peter_bengtsson attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://www.peterbe.com"
+        out.append(item(
+            "pb_peter_bengtsson", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_peter_thaleikis(limit=15):
+    """Peter Thaleikis — personal tech blog feed, position-scored."""
+    print("Fetching Peter Thaleikis feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://peterthaleikis.com/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_peter_thaleikis attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://peterthaleikis.com"
+        out.append(item(
+            "pb_peter_thaleikis", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_pc_maffey(limit=15):
+    """PC Maffey — personal tech blog feed, position-scored."""
+    print("Fetching PC Maffey feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.pcmaffey.com/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_pc_maffey attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://www.pcmaffey.com"
+        out.append(item(
+            "pb_pc_maffey", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_philipp_spiess(limit=15):
+    """Philipp Spiess — personal tech blog feed, position-scored."""
+    print("Fetching Philipp Spiess feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://spiess.dev/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_philipp_spiess attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://spiess.dev"
+        out.append(item(
+            "pb_philipp_spiess", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_reginald_braithwaite(limit=15):
+    """Reginald Braithwaite — personal tech blog feed, position-scored."""
+    print("Fetching Reginald Braithwaite feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://raganwald.com/atom.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_reginald_braithwaite attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://raganwald.com"
+        out.append(item(
+            "pb_reginald_braithwaite", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_rob_kendal(limit=15):
+    """Rob Kendal — personal tech blog feed, position-scored."""
+    print("Fetching Rob Kendal feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://robkendal.co.uk/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_rob_kendal attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://robkendal.co.uk"
+        out.append(item(
+            "pb_rob_kendal", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_robin_cannon(limit=15):
+    """Robin Cannon — personal tech blog feed, position-scored."""
+    print("Fetching Robin Cannon feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.robin-cannon.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_robin_cannon attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://www.robin-cannon.com"
+        out.append(item(
+            "pb_robin_cannon", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_roelof_jan_elsinga(limit=15):
+    """Roelof Jan Elsinga — personal tech blog feed, position-scored."""
+    print("Fetching Roelof Jan Elsinga feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://roelofjanelsinga.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_roelof_jan_elsinga attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://roelofjanelsinga.com"
+        out.append(item(
+            "pb_roelof_jan_elsinga", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_russ_cox(limit=15):
+    """Russ Cox — personal tech blog feed, position-scored."""
+    print("Fetching Russ Cox feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://research.swtch.com/feed.atom",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_russ_cox attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://research.swtch.com"
+        out.append(item(
+            "pb_russ_cox", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_sagar_giri(limit=15):
+    """Sagar Giri — personal tech blog feed, position-scored."""
+    print("Fetching Sagar Giri feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://sagargiri.com/feeds/all.atom.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_sagar_giri attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://sagargiri.com"
+        out.append(item(
+            "pb_sagar_giri", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_shodipo_ayomide(limit=15):
+    """Shodipo Ayomide — personal tech blog feed, position-scored."""
+    print("Fetching Shodipo Ayomide feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://shodipoayomide.com/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_shodipo_ayomide attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://shodipoayomide.com"
+        out.append(item(
+            "pb_shodipo_ayomide", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_sarah_chima(limit=15):
+    """Sarah Chima — personal tech blog feed, position-scored."""
+    print("Fetching Sarah Chima feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://dev.to/feed/sarah_chima",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_sarah_chima attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://dev.to"
+        out.append(item(
+            "pb_sarah_chima", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_sarah_lean(limit=15):
+    """Sarah Lean — personal tech blog feed, position-scored."""
+    print("Fetching Sarah Lean feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.techielass.com/rss/",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_sarah_lean attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://www.techielass.com"
+        out.append(item(
+            "pb_sarah_lean", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_sergio_xalambr(limit=15):
+    """Sergio Xalambrí — personal tech blog feed, position-scored."""
+    print("Fetching Sergio Xalambrí feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://sergiodxa.com/rss",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_sergio_xalambr attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://sergiodxa.com"
+        out.append(item(
+            "pb_sergio_xalambr", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_soledad_penad_s(limit=15):
+    """Soledad Penadés — personal tech blog feed, position-scored."""
+    print("Fetching Soledad Penadés feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://soledadpenades.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_soledad_penad_s attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://soledadpenades.com"
+        out.append(item(
+            "pb_soledad_penad_s", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_tanner_linsley(limit=15):
+    """Tanner Linsley — personal tech blog feed, position-scored."""
+    print("Fetching Tanner Linsley feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://tannerlinsley.com/feed.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_tanner_linsley attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://tannerlinsley.com"
+        out.append(item(
+            "pb_tanner_linsley", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_terin_stock(limit=15):
+    """Terin Stock — personal tech blog feed, position-scored."""
+    print("Fetching Terin Stock feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://terinstock.com/index.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_terin_stock attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://terinstock.com"
+        out.append(item(
+            "pb_terin_stock", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_thomas_hunter_ii(limit=15):
+    """Thomas Hunter II — personal tech blog feed, position-scored."""
+    print("Fetching Thomas Hunter II feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://thomashunter.name/feed.rss",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_thomas_hunter_ii attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://thomashunter.name"
+        out.append(item(
+            "pb_thomas_hunter_ii", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_thomas_kekeisen(limit=15):
+    """Thomas Kekeisen — personal tech blog feed, position-scored."""
+    print("Fetching Thomas Kekeisen feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://thomaskekeisen.de/en/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_thomas_kekeisen attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://thomaskekeisen.de"
+        out.append(item(
+            "pb_thomas_kekeisen", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_tiger_oakes(limit=15):
+    """Tiger Oakes — personal tech blog feed, position-scored."""
+    print("Fetching Tiger Oakes feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://tigeroakes.com/blog/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_tiger_oakes attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://tigeroakes.com"
+        out.append(item(
+            "pb_tiger_oakes", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_tk(limit=15):
+    """TK — personal tech blog feed, position-scored."""
+    print("Fetching TK feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "http://leandrotk.github.io/rss",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_tk attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "http://leandrotk.github.io"
+        out.append(item(
+            "pb_tk", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_tony_xu(limit=15):
+    """Tony Xu — personal tech blog feed, position-scored."""
+    print("Fetching Tony Xu feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://tonyxu.io/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_tony_xu attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://tonyxu.io"
+        out.append(item(
+            "pb_tony_xu", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_trevor_harmon(limit=15):
+    """Trevor Harmon — personal tech blog feed, position-scored."""
+    print("Fetching Trevor Harmon feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://thetrevorharmon.com/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_trevor_harmon attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://thetrevorharmon.com"
+        out.append(item(
+            "pb_trevor_harmon", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_victor_gosse(limit=15):
+    """Victor Gosse — personal tech blog feed, position-scored."""
+    print("Fetching Victor Gosse feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://code-trotter.com/rss.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_victor_gosse attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://code-trotter.com"
+        out.append(item(
+            "pb_victor_gosse", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_victoria_dev(limit=15):
+    """Victoria Dev — personal tech blog feed, position-scored."""
+    print("Fetching Victoria Dev feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://victoria.dev/atom.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_victoria_dev attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://victoria.dev"
+        out.append(item(
+            "pb_victoria_dev", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_pb_zero_cho(limit=15):
+    """Zero Cho — personal tech blog feed, position-scored."""
+    print("Fetching Zero Cho feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://itsze.ro/index.xml",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] pb_zero_cho attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://itsze.ro"
+        out.append(item(
+            "pb_zero_cho", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
     fetchers = {
+        "pb_angus_croll": fetch_pb_angus_croll,
+        "pb_aditya_rohilla": fetch_pb_aditya_rohilla,
+        "pb_alexandru_paul_copil": fetch_pb_alexandru_paul_copil,
+        "pb_ali_spittel": fetch_pb_ali_spittel,
+        "pb_amadou_sall": fetch_pb_amadou_sall,
+        "pb_amit_chaudhary": fetch_pb_amit_chaudhary,
+        "pb_andrew_healey": fetch_pb_andrew_healey,
+        "pb_antonin_januska": fetch_pb_antonin_januska,
+        "pb_avinash": fetch_pb_avinash,
+        "pb_benedikt_meurer": fetch_pb_benedikt_meurer,
+        "pb_berkhan_berkdemir": fetch_pb_berkhan_berkdemir,
+        "pb_brandon_skerritt": fetch_pb_brandon_skerritt,
+        "pb_chase_mccoy": fetch_pb_chase_mccoy,
+        "pb_chiamaka_ikeanyi": fetch_pb_chiamaka_ikeanyi,
+        "pb_dan_abramov": fetch_pb_dan_abramov,
+        "pb_daniel_lo_nigro": fetch_pb_daniel_lo_nigro,
+        "pb_dean_harris": fetch_pb_dean_harris,
+        "pb_elijah_lynn": fetch_pb_elijah_lynn,
+        "pb_eric_pierce": fetch_pb_eric_pierce,
+        "pb_fatih_arslan": fetch_pb_fatih_arslan,
+        "pb_georgi_yanev": fetch_pb_georgi_yanev,
+        "pb_gideon_pyzer": fetch_pb_gideon_pyzer,
+        "pb_glenn_stovall": fetch_pb_glenn_stovall,
+        "pb_hans_gerwitz": fetch_pb_hans_gerwitz,
+        "pb_henrique_dias": fetch_pb_henrique_dias,
+        "pb_houssein_djirdeh": fetch_pb_houssein_djirdeh,
+        "pb_hugo_di_francesco": fetch_pb_hugo_di_francesco,
+        "pb_huy_nguyen": fetch_pb_huy_nguyen,
+        "pb_ire_aderinokun": fetch_pb_ire_aderinokun,
+        "pb_ismail_ghallou": fetch_pb_ismail_ghallou,
+        "pb_j_c_hiatt": fetch_pb_j_c_hiatt,
+        "pb_jaime_gonz_lez": fetch_pb_jaime_gonz_lez,
+        "pb_jake_jarvis": fetch_pb_jake_jarvis,
+        "pb_james_milner": fetch_pb_james_milner,
+        "pb_james_nelson": fetch_pb_james_nelson,
+        "pb_jared_gorski": fetch_pb_jared_gorski,
+        "pb_jeremy_shaw": fetch_pb_jeremy_shaw,
+        "pb_john_reilly": fetch_pb_john_reilly,
+        "pb_jon_kuperman": fetch_pb_jon_kuperman,
+        "pb_jon_paul_uritis": fetch_pb_jon_paul_uritis,
+        "pb_juri_strumpflohner": fetch_pb_juri_strumpflohner,
+        "pb_justin_james": fetch_pb_justin_james,
+        "pb_katie_mclaughlin": fetch_pb_katie_mclaughlin,
+        "pb_kendra_little": fetch_pb_kendra_little,
+        "pb_kent_c_dodds": fetch_pb_kent_c_dodds,
+        "pb_kevin_berridge": fetch_pb_kevin_berridge,
+        "pb_kevin_jalbert": fetch_pb_kevin_jalbert,
+        "pb_khaled_garbaya": fetch_pb_khaled_garbaya,
+        "pb_kyle_mathews": fetch_pb_kyle_mathews,
+        "pb_kyle_shevlin": fetch_pb_kyle_shevlin,
+        "pb_lacy_henschel": fetch_pb_lacy_henschel,
+        "pb_lauren_tan": fetch_pb_lauren_tan,
+        "pb_lea_verou": fetch_pb_lea_verou,
+        "pb_leo_van": fetch_pb_leo_van,
+        "pb_lorna_jane": fetch_pb_lorna_jane,
+        "pb_lucy_bain": fetch_pb_lucy_bain,
+        "pb_maddy_miller": fetch_pb_maddy_miller,
+        "pb_marius_schulz": fetch_pb_marius_schulz,
+        "pb_marshall_bowers": fetch_pb_marshall_bowers,
+        "pb_mark_luetke": fetch_pb_mark_luetke,
+        "pb_matt_podwysocki": fetch_pb_matt_podwysocki,
+        "pb_matthias_noback": fetch_pb_matthias_noback,
+        "pb_matthieu_cneude": fetch_pb_matthieu_cneude,
+        "pb_michael_malura": fetch_pb_michael_malura,
+        "pb_mike_behnke": fetch_pb_mike_behnke,
+        "pb_mike_bifulco": fetch_pb_mike_bifulco,
+        "pb_mustafa_alap": fetch_pb_mustafa_alap,
+        "pb_nicole_harris": fetch_pb_nicole_harris,
+        "pb_nikita_sobolev": fetch_pb_nikita_sobolev,
+        "pb_olavi_haapala": fetch_pb_olavi_haapala,
+        "pb_omar_bahareth": fetch_pb_omar_bahareth,
+        "pb_paolo_melchiorre": fetch_pb_paolo_melchiorre,
+        "pb_paul_hubbard": fetch_pb_paul_hubbard,
+        "pb_peter_bengtsson": fetch_pb_peter_bengtsson,
+        "pb_peter_thaleikis": fetch_pb_peter_thaleikis,
+        "pb_pc_maffey": fetch_pb_pc_maffey,
+        "pb_philipp_spiess": fetch_pb_philipp_spiess,
+        "pb_reginald_braithwaite": fetch_pb_reginald_braithwaite,
+        "pb_rob_kendal": fetch_pb_rob_kendal,
+        "pb_robin_cannon": fetch_pb_robin_cannon,
+        "pb_roelof_jan_elsinga": fetch_pb_roelof_jan_elsinga,
+        "pb_russ_cox": fetch_pb_russ_cox,
+        "pb_sagar_giri": fetch_pb_sagar_giri,
+        "pb_shodipo_ayomide": fetch_pb_shodipo_ayomide,
+        "pb_sarah_chima": fetch_pb_sarah_chima,
+        "pb_sarah_lean": fetch_pb_sarah_lean,
+        "pb_sergio_xalambr": fetch_pb_sergio_xalambr,
+        "pb_soledad_penad_s": fetch_pb_soledad_penad_s,
+        "pb_tanner_linsley": fetch_pb_tanner_linsley,
+        "pb_terin_stock": fetch_pb_terin_stock,
+        "pb_thomas_hunter_ii": fetch_pb_thomas_hunter_ii,
+        "pb_thomas_kekeisen": fetch_pb_thomas_kekeisen,
+        "pb_tiger_oakes": fetch_pb_tiger_oakes,
+        "pb_tk": fetch_pb_tk,
+        "pb_tony_xu": fetch_pb_tony_xu,
+        "pb_trevor_harmon": fetch_pb_trevor_harmon,
+        "pb_victor_gosse": fetch_pb_victor_gosse,
+        "pb_victoria_dev": fetch_pb_victoria_dev,
+        "pb_zero_cho": fetch_pb_zero_cho,
         "nl_changelog": fetch_nl_changelog,
         "nl_web_performance_news": fetch_nl_web_performance_news,
         "nl_wasm_weekly": fetch_nl_wasm_weekly,
-        "nl_": fetch_nl_,
         "nl_altern_newsletter": fetch_nl_altern_newsletter,
         "nl_techpresso": fetch_nl_techpresso,
         "nl_augmented_coding_weekly": fetch_nl_augmented_coding_weekly,

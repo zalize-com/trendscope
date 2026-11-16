@@ -1,13 +1,111 @@
 # Source registry
 
-2611 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
+2709 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
 
 | Key | Description | Host |
 |---|---|---|
+| `pb_angus_croll` | Angus Croll | `javascriptweblog.wordpress.com` |
+| `pb_aditya_rohilla` | Aditya Rohilla | `adityarohilla.com` |
+| `pb_alexandru_paul_copil` | Alexandru-Paul Copil | `cpl.li` |
+| `pb_ali_spittel` | Ali Spittel | `dev.to` |
+| `pb_amadou_sall` | Amadou Sall | `www.amadousall.com` |
+| `pb_amit_chaudhary` | Amit Chaudhary | `amitness.com` |
+| `pb_andrew_healey` | Andrew Healey | `healeycodes.com` |
+| `pb_antonin_januska` | Antonin Januska | `antjanus.com` |
+| `pb_avinash` | Avinash | `avinash.com.np` |
+| `pb_benedikt_meurer` | Benedikt Meurer | `benediktmeurer.de` |
+| `pb_berkhan_berkdemir` | Berkhan Berkdemir | `www.berkhanberkdemir.com` |
+| `pb_brandon_skerritt` | Brandon Skerritt | `skerritt.blog` |
+| `pb_chase_mccoy` | Chase McCoy | `chasem.co` |
+| `pb_chiamaka_ikeanyi` | Chiamaka Ikeanyi | `chiamakaikeanyi.dev` |
+| `pb_dan_abramov` | Dan Abramov | `overreacted.io` |
+| `pb_daniel_lo_nigro` | Daniel Lo Nigro | `d.sb` |
+| `pb_dean_harris` | Dean Harris | `deanacus.com` |
+| `pb_elijah_lynn` | Elijah Lynn | `www.elijahlynn.net` |
+| `pb_eric_pierce` | Eric Pierce | `eric-pierce.com` |
+| `pb_fatih_arslan` | Fatih Arslan | `arslan.io` |
+| `pb_georgi_yanev` | Georgi Yanev | `blog.georgi-yanev.com` |
+| `pb_gideon_pyzer` | Gideon Pyzer | `gideonpyzer.dev` |
+| `pb_glenn_stovall` | Glenn Stovall | `glennstovall.com` |
+| `pb_hans_gerwitz` | Hans Gerwitz | `hans.gerwitz.com` |
+| `pb_henrique_dias` | Henrique Dias | `hacdias.com` |
+| `pb_houssein_djirdeh` | Houssein Djirdeh | `houssein.me` |
+| `pb_hugo_di_francesco` | Hugo Di Francesco | `codewithhugo.com` |
+| `pb_huy_nguyen` | Huy Nguyen | `www.huy.dev` |
+| `pb_ire_aderinokun` | Ire Aderinokun | `bitsofco.de` |
+| `pb_ismail_ghallou` | Ismail Ghallou | `smakosh.com` |
+| `pb_j_c_hiatt` | J.C. Hiatt | `jchiatt.com` |
+| `pb_jaime_gonz_lez` | Jaime González | `www.barbarianmeetscoding.com` |
+| `pb_jake_jarvis` | Jake Jarvis | `jarv.is` |
+| `pb_james_milner` | James Milner | `hwk.uk.com` |
+| `pb_james_nelson` | James Nelson | `jamesknelson.com` |
+| `pb_jared_gorski` | Jared Gorski | `jaredgorski.org` |
+| `pb_jeremy_shaw` | Jeremy Shaw | `blog.jeremyshaw.co.nz` |
+| `pb_john_reilly` | John Reilly | `blog.johnnyreilly.com` |
+| `pb_jon_kuperman` | Jon Kuperman | `jonkuperman.com` |
+| `pb_jon_paul_uritis` | Jon Paul Uritis | `jonpauluritis.com` |
+| `pb_juri_strumpflohner` | Juri Strumpflohner | `juristr.com` |
+| `pb_justin_james` | Justin James | `digitaldrummerj.me` |
+| `pb_katie_mclaughlin` | Katie McLaughlin | `glasnt.com` |
+| `pb_kendra_little` | Kendra Little | `littlekendra.com` |
+| `pb_kent_c_dodds` | Kent C. Dodds | `kentcdodds.com` |
+| `pb_kevin_berridge` | Kevin Berridge | `www.kevinberridge.com` |
+| `pb_kevin_jalbert` | Kevin Jalbert | `kevinjalbert.com` |
+| `pb_khaled_garbaya` | Khaled Garbaya | `khaledgarbaya.net` |
+| `pb_kyle_mathews` | Kyle Mathews | `www.bricolage.io` |
+| `pb_kyle_shevlin` | Kyle Shevlin | `kyleshevlin.com` |
+| `pb_lacy_henschel` | Lacy Henschel | `feeds.feedburner.com` |
+| `pb_lauren_tan` | Lauren Tan | `www.no.lol` |
+| `pb_lea_verou` | Lea Verou | `lea.verou.me` |
+| `pb_leo_van` | Leo Van | `leovan.me` |
+| `pb_lorna_jane` | Lorna Jane | `lornajane.net` |
+| `pb_lucy_bain` | Lucy Bain | `lucybain.com` |
+| `pb_maddy_miller` | Maddy Miller | `madelinemiller.dev` |
+| `pb_marius_schulz` | Marius Schulz | `feeds.feedburner.com` |
+| `pb_marshall_bowers` | Marshall Bowers | `maxdeviant.com` |
+| `pb_mark_luetke` | Mark Luetke | `luetkemj.github.io` |
+| `pb_matt_podwysocki` | Matt Podwysocki | `mattpodwysocki.github.io` |
+| `pb_matthias_noback` | Matthias Noback | `matthiasnoback.nl` |
+| `pb_matthieu_cneude` | Matthieu Cneude | `web-techno.net` |
+| `pb_michael_malura` | Michael Malura | `malura.de` |
+| `pb_mike_behnke` | Mike Behnke | `kgrz.io` |
+| `pb_mike_bifulco` | Mike Bifulco | `mikebifulco.com` |
+| `pb_mustafa_alap` | Mustafa Çalap | `calap.co` |
+| `pb_nicole_harris` | Nicole Harris | `www.whoisnicoleharris.com` |
+| `pb_nikita_sobolev` | Nikita Sobolev | `sobolevn.me` |
+| `pb_olavi_haapala` | Olavi Haapala | `olavihaapala.fi` |
+| `pb_omar_bahareth` | Omar Bahareth | `omar.engineer` |
+| `pb_paolo_melchiorre` | Paolo Melchiorre | `www.paulox.net` |
+| `pb_paul_hubbard` | Paul Hubbard | `ultracrepidarian.phfactor.net` |
+| `pb_peter_bengtsson` | Peter Bengtsson | `www.peterbe.com` |
+| `pb_peter_thaleikis` | Peter Thaleikis | `peterthaleikis.com` |
+| `pb_pc_maffey` | PC Maffey | `www.pcmaffey.com` |
+| `pb_philipp_spiess` | Philipp Spiess | `spiess.dev` |
+| `pb_reginald_braithwaite` | Reginald Braithwaite | `raganwald.com` |
+| `pb_rob_kendal` | Rob Kendal | `robkendal.co.uk` |
+| `pb_robin_cannon` | Robin Cannon | `www.robin-cannon.com` |
+| `pb_roelof_jan_elsinga` | Roelof Jan Elsinga | `roelofjanelsinga.com` |
+| `pb_russ_cox` | Russ Cox | `research.swtch.com` |
+| `pb_sagar_giri` | Sagar Giri | `sagargiri.com` |
+| `pb_shodipo_ayomide` | Shodipo Ayomide | `shodipoayomide.com` |
+| `pb_sarah_chima` | Sarah Chima | `dev.to` |
+| `pb_sarah_lean` | Sarah Lean | `www.techielass.com` |
+| `pb_sergio_xalambr` | Sergio Xalambrí | `sergiodxa.com` |
+| `pb_soledad_penad_s` | Soledad Penadés | `soledadpenades.com` |
+| `pb_tanner_linsley` | Tanner Linsley | `tannerlinsley.com` |
+| `pb_terin_stock` | Terin Stock | `terinstock.com` |
+| `pb_thomas_hunter_ii` | Thomas Hunter II | `thomashunter.name` |
+| `pb_thomas_kekeisen` | Thomas Kekeisen | `thomaskekeisen.de` |
+| `pb_tiger_oakes` | Tiger Oakes | `tigeroakes.com` |
+| `pb_tk` | TK | `leandrotk.github.io` |
+| `pb_tony_xu` | Tony Xu | `tonyxu.io` |
+| `pb_trevor_harmon` | Trevor Harmon | `thetrevorharmon.com` |
+| `pb_victor_gosse` | Victor Gosse | `code-trotter.com` |
+| `pb_victoria_dev` | Victoria Dev | `victoria.dev` |
+| `pb_zero_cho` | Zero Cho | `itsze.ro` |
 | `nl_changelog` | Changelog | `changelog.com` |
 | `nl_web_performance_news` | Web Performance News | `buttondown.com` |
 | `nl_wasm_weekly` | Wasm Weekly | `wasmweekly.news` |
-| `nl_` | 工劳小报 | `feed.laborinfocn7.com` |
 | `nl_altern_newsletter` | Altern Newsletter | `newsletter.altern.ai` |
 | `nl_techpresso` | Techpresso | `rss.beehiiv.com` |
 | `nl_augmented_coding_weekly` | Augmented Coding Weekly | `colineberhardt.github.io` |
