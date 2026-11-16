@@ -17930,7 +17930,7 @@ def fetch_thoughtbot(limit=15):
     for attempt in range(3):
         try:
             req = urllib.request.Request(
-                "https://thoughtbot.com/blog/web/feed",
+                "https://feed.thoughtbot.com",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
                 root = _feed_root(resp)
@@ -90251,7 +90251,7 @@ def fetch_chenhuijing(limit=15):
     for attempt in range(3):
         try:
             req = urllib.request.Request(
-                "https://www.chenhuijing.com/feed.xml",
+                "https://chenhuijing.com/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
                 root = _feed_root(resp)
