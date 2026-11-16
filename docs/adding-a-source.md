@@ -1,5 +1,24 @@
 # Adding a source
 
+Two paths — pick the data-driven one whenever the source is a plain RSS/Atom
+feed:
+
+## Path A — data-driven (preferred for feeds)
+
+Drop a line into any `scripts/feeds_*.json` file:
+
+```json
+"example": ["Example Blog", "https://example.com/feed", "https://example.com"]
+```
+
+`{key: [label, feed_url, home]}`. `_extra_feed_fetchers()` globs
+`scripts/feeds_*.json` and registers each entry through
+`_make_feed_fetcher` — no Python code needed. `gen_sources_md.py` and
+`gen_opml.py` read the same files. Check for key AND feed-URL duplicates
+against existing pools first (a source may already exist under another lane).
+
+## Path B — custom fetcher (non-feed endpoints)
+
 A source = one function in `scripts/collect.py` + wiring in four places.
 
 ## 1. Write the fetcher
@@ -38,11 +57,11 @@ Rules we follow:
 
 | File | Change |
 |---|---|
-| `scripts/collect.py` | add fetcher to `fetchers` dict in `main()` |
-| `index.html` | add tab to `TABS` |
+| `scripts/collect.py` | add fetcher to `fetchers` dict in `main()` — **careful**: defs go before `def main()`, never between its lines; then smoke-run `python3 -u scripts/collect.py` and confirm the first `Fetching …` lines appear |
+| `index.html` | add tab to `TABS` (only for sources that deserve their own tab) |
 | `docs/data-dictionary.md` | add source to the `source` enum |
-| `about.html` | add row to the sources table |
-| `README.md` | update the sources list |
+| `data/sources.json` | regenerate (`scripts/gen_sources_md.py` emits it) — about.html's directory reads it |
+| `docs/SOURCES.md` | regenerate — it's the canonical registry |
 
 ## 3. Test
 
