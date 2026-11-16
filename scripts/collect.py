@@ -118947,16 +118947,27 @@ def _make_feed_fetcher(key, label, feed, home):
 
 
 def _extra_feed_fetchers():
-    """Load data-driven feeds from data/feeds_extra.json ({key: [label, feed, home]})."""
+    """Load data-driven feeds from scripts/feeds_*.json
+    ({key: [label, feed, home, ...flags]}). A 4th element "dormant" marks a
+    source that is alive but long-inactive — fetched as usual, listed in
+    data/dormant.json so the site can chip it grey instead of calling it dead."""
     import glob
     out = {}
+    dormant = []
     for path in glob.glob(os.path.join(os.path.dirname(__file__), "feeds_*.json")):
         try:
             with open(path) as f:
                 for key, row in json.load(f).items():
-                    out[key] = _make_feed_fetcher(key, *row)
+                    out[key] = _make_feed_fetcher(key, *row[:3])
+                    if len(row) > 3 and "dormant" in row[3:]:
+                        dormant.append(key)
         except Exception as e:
             print(f"  [warn] {path} skipped: {e}", file=sys.stderr)
+    try:
+        with open(os.path.join(DATA_DIR, "dormant.json"), "w") as f:
+            json.dump(sorted(dormant), f)
+    except Exception:
+        pass
     return out
 
 
