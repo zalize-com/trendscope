@@ -353,7 +353,15 @@ const fmt = n => {
 let SNAP = null, YDAY = null;
 
 async function j(url) {
-  const r = await fetch(url, {cache: "no-cache"});
+  let r = await fetch(url, {cache: "no-cache"});
+  if (!r.ok && url.endsWith(".json")) {
+    // daily snapshots past the gzip switchover live as .json.gz
+    const gz = await fetch(url + ".gz", {cache: "no-cache"});
+    if (gz.ok) {
+      const ds = new DecompressionStream("gzip");
+      return JSON.parse(await new Response(gz.body.pipeThrough(ds)).text());
+    }
+  }
   if (!r.ok) throw new Error(url + " " + r.status);
   return r.json();
 }

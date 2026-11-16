@@ -34,12 +34,14 @@ def item_date(name):
 
 def items():
     out = []
+    import gzip
     for name in sorted(os.listdir(DAILY), reverse=True):
-        if not name.endswith(".json"):
+        if not name.endswith(".json.gz"):
             continue
-        day = name[:-5]
+        day = name[:-8]
         try:
-            doc = json.load(open(os.path.join(DAILY, name)))
+            doc = json.load(gzip.open(os.path.join(DAILY, name), "rt",
+                                      encoding="utf-8"))
             n = sum(len(v) for v in doc.get("items", {}).values())
             src = len(doc.get("items", {}))
             tops = []
@@ -50,7 +52,7 @@ def items():
         except Exception:
             desc = "Daily snapshot."
         out.append((item_date(day), f"Snapshot {day}",
-                    f"{BASE}/", f"{REPO}/blob/main/data/daily/{name}", desc))
+                    f"{BASE}/", f"{REPO}/blob/main/data/daily/{day}.csv", desc))
     for name in sorted(os.listdir(DIGEST), reverse=True):
         if not re.fullmatch(r"\d{4}-W\d{2}\.md", name):
             continue

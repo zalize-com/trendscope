@@ -32,9 +32,13 @@ def fmt(n):
 
 def load(day):
     p = os.path.join(DAILY, f"{day}.json")
-    if not os.path.exists(p):
+    if os.path.exists(p):
+        return json.load(open(p))
+    gz = p + ".gz"
+    if not os.path.exists(gz):
         return None
-    return json.load(open(p))
+    import gzip
+    return json.load(gzip.open(gz, "rt", encoding="utf-8"))
 
 
 def flat(snap):

@@ -50,10 +50,11 @@ def main():
             check(not ("&#" in title or "&amp;" in title),
                   f"{src} title has HTML entity residue: {title[:60]}")
 
-    # data/daily/<today>.json exists
+    # data/daily/<today> snapshot exists (gzipped JSON post-switchover)
     day = latest["date"]
-    check(os.path.exists(os.path.join(ROOT, "data", "daily", f"{day}.json")),
-          f"daily/{day}.json missing")
+    check(any(os.path.exists(os.path.join(ROOT, "data", "daily", f"{day}{ext}"))
+              for ext in (".json", ".json.gz")),
+          f"daily/{day}.json[.gz] missing")
 
     # history.csv: header + today's rows present
     with open(os.path.join(ROOT, "data", "history.csv")) as f:

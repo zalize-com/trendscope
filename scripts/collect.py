@@ -122120,8 +122120,11 @@ def main():
         "topics": [{"topic": t["topic"], "count": t["count"],
                     "total_score": t["total_score"]} for t in topics],
     }
-    with open(history_path, "w") as f:
-        json.dump(history_record, f, indent=2, ensure_ascii=False)
+    # ~58MB/day raw JSON blows past GitHub's file-size ceiling — gzip it
+    # (~8MB); readers use DecompressionStream (browsers) / gzip.open
+    import gzip
+    with gzip.open(history_path + ".gz", "wt", encoding="utf-8") as f:
+        json.dump(history_record, f, ensure_ascii=False)
 
     # Per-day topic counts, append-only (time-series for analysts).
     tcsv = os.path.join(DATA_DIR, "topics-history.csv")
@@ -122165,9 +122168,10 @@ def main():
     # append-only long-term record)
     keep = idx["snapshots"][-14:]
     for d in idx["snapshots"][:-14] or []:
-        stale = os.path.join(daily_dir, f"{d}.json")
-        if os.path.exists(stale):
-            os.remove(stale)
+        for ext in (".json", ".json.gz"):
+            stale = os.path.join(daily_dir, f"{d}{ext}")
+            if os.path.exists(stale):
+                os.remove(stale)
     idx["snapshots"] = keep
     with open(os.path.join(DATA_DIR, "index.json"), "w") as f:
         json.dump(idx, f, indent=2)
