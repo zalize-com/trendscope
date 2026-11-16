@@ -1,9 +1,95 @@
 # Source registry
 
-2898 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
+2984 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
 
 | Key | Description | Host |
 |---|---|---|
+| `eb_artsy` | Artsy | `artsy.github.io` |
+| `eb_atlassian` | Atlassian | `www.atlassian.com` |
+| `eb_blender` | Blender | `code.blender.org` |
+| `eb_brandwatch` | Brandwatch | `engineering.brandwatch.com` |
+| `eb_cerner` | Cerner | `engineering.cerner.com` |
+| `eb_clever` | Clever | `engineering.clever.com` |
+| `eb_codename_one` | CodeName One | `www.codenameone.com` |
+| `eb_codeship` | Codeship | `www.cloudbees.com` |
+| `eb_deliveroo` | Deliveroo | `deliveroo.engineering` |
+| `eb_erlang_solutions` | Erlang Solutions | `www.erlang-solutions.com` |
+| `eb_finn_no` | Finn.no | `tech.finn.no` |
+| `eb_flickr` | Flickr | `code.flickr.net` |
+| `eb_github_old` | GitHub Old | `github.blog` |
+| `eb_guardian` | Guardian | `www.theguardian.com` |
+| `eb_gusto` | Gusto | `engineering.gusto.com` |
+| `eb_heroku` | Heroku | `www.heroku.com` |
+| `eb_honeybadger` | Honeybadger | `blog.honeybadger.io` |
+| `eb_hostinger` | Hostinger | `www.hostinger.com` |
+| `eb_hubspot` | HubSpot | `product.hubspot.com` |
+| `eb_instacart` | Instacart | `tech.instacart.com` |
+| `eb_kinvolk` | Kinvolk | `kinvolk.io` |
+| `eb_made_tech` | Made Tech | `www.madetech.com` |
+| `eb_mesosphere` | Mesosphere | `www.nutanix.com` |
+| `eb_moove_it` | Moove-it | `qubika.com` |
+| `eb_mozilla_automation_team` | Mozilla Automation Team | `planet.mozilla.org` |
+| `eb_new_york_times` | New York Times | `open.blogs.nytimes.com` |
+| `eb_novoda` | Novoda | `www.novoda.com` |
+| `eb_npr_apps` | NPR Apps | `blog.apps.npr.org` |
+| `eb_pinterest` | Pinterest | `medium.com` |
+| `eb_robert_elder_software` | Robert Elder Software | `blog.robertelder.org` |
+| `eb_sharethis` | Sharethis | `sharethis.com` |
+| `eb_simple` | Simple | `www.onstartups.com` |
+| `eb_small_improvements` | Small Improvements | `tech.small-improvements.com` |
+| `eb_soshace` | Soshace | `blog.soshace.com` |
+| `eb_squarespace` | Squarespace | `engineering.squarespace.com` |
+| `eb_thumbtack` | Thumbtack | `www.thumbtack.com` |
+| `eb_timescale` | Timescale | `blog.timescale.com` |
+| `eb_trivago` | Trivago | `tech.trivago.com` |
+| `eb_wealthfront` | Wealthfront | `eng.wealthfront.com` |
+| `eb_zapier` | Zapier | `zapier.com` |
+| `eb_abu_ashraf_masnun` | Abu Ashraf Masnun | `masnun.com` |
+| `eb_addy_osmani` | Addy Osmani | `addyosmani.com` |
+| `eb_andrew_bancroft` | Andrew Bancroft | `www.andrewcbancroft.com` |
+| `eb_antirez` | Antirez | `antirez.com` |
+| `eb_ariejan_de_vroom` | Ariejan de Vroom | `ariejan.net` |
+| `eb_armin_ronacher` | Armin Ronacher | `lucumr.pocoo.org` |
+| `eb_bartlomiej_filipek` | Bartlomiej Filipek | `www.bfilipek.com` |
+| `eb_bj_rn_johansen` | Bjørn Johansen | `bjornjohansen.com` |
+| `eb_brujo_benavides` | Brujo Benavides | `medium.com` |
+| `eb_chris_wellons` | Chris Wellons | `nullprogram.com` |
+| `eb_daniel_schmidt` | Daniel Schmidt | `medium.com` |
+| `eb_dean_hume` | Dean Hume | `deanhume.com` |
+| `eb_erik_runyon` | Erik Runyon | `erikrunyon.com` |
+| `eb_evan_hahn` | Evan Hahn | `evanhahn.com` |
+| `eb_federico_tomassetti` | Federico Tomassetti | `tomassetti.me` |
+| `eb_gleb_bahmutov` | Gleb Bahmutov | `glebbahmutov.com` |
+| `eb_graham_king` | Graham King | `www.darkcoding.net` |
+| `eb_hypriot` | Hypriot | `blog.hypriot.com` |
+| `eb_jacopo_tarantino` | Jacopo Tarantino | `jack.ofspades.com` |
+| `eb_james_hague` | James Hague | `prog21.dadgum.com` |
+| `eb_jamis_buck` | Jamis Buck | `feeds.feedburner.com` |
+| `eb_jeremy_kun` | Jeremy Kun | `jeremykun.com` |
+| `eb_josh_sherman` | Josh Sherman | `joshtronic.com` |
+| `eb_kirill_shevchenko` | Kirill Shevchenko | `medium.com` |
+| `eb_lerner_consulting_blog` | Lerner Consulting Blog | `lernerpython.com` |
+| `eb_liveoverflow` | LiveOverflow | `liveoverflow.com` |
+| `eb_marc_plano_lesay` | Marc Plano-Lesay | `enoent.fr` |
+| `eb_mary_rose_cook` | Mary Rose Cook | `maryrosecook.com` |
+| `eb_matt_aimonetti` | Matt Aimonetti | `matt.aimonetti.net` |
+| `eb_michael_crump` | Michael Crump | `michaelcrump.net` |
+| `eb_mike_ash` | Mike Ash | `www.mikeash.com` |
+| `eb_monica_dinculescu` | Monica Dinculescu | `meowni.ca` |
+| `eb_mykhailo_kozik` | Mykhailo Kozik | `feeds.feedburner.com` |
+| `eb_nic_raboy` | Nic Raboy | `www.thepolyglotdeveloper.com` |
+| `eb_pat_shaughnessy` | Pat Shaughnessy | `feeds2.feedburner.com` |
+| `eb_paul_irish` | Paul Irish | `feeds.feedburner.com` |
+| `eb_philip_walton` | Philip Walton | `feeds.feedburner.com` |
+| `eb_robin_ward` | Robin Ward | `eviltrout.com` |
+| `eb_sam_saffron` | Sam Saffron | `samsaffron.com` |
+| `eb_steve_bellovin` | Steve Bellovin | `www.cs.columbia.edu` |
+| `eb_the_daily_wtf` | The Daily WTF | `thedailywtf.com` |
+| `eb_william_kennedy` | William Kennedy | `www.goinggo.net` |
+| `eb_go` | Go | `blog.golang.org` |
+| `eb_kotlin` | Kotlin | `blog.jetbrains.com` |
+| `eb_microsoft_edge` | Microsoft Edge | `blogs.windows.com` |
+| `eb_sketch` | Sketch | `blog.sketchapp.com` |
 | `tb_perttu_l_hteenlahti` | Perttu Lähteenlahti | `perttu.dev` |
 | `tb_jon_c_phillips` | Jon C. Phillips | `joncphillips.com` |
 | `tb_axeploit` | Axeploit | `axeploit.com` |
