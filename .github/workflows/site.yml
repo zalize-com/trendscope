@@ -38,6 +38,10 @@ jobs:
           grep -q 'skiplink' site/dist/index.html
           echo "build sanity: index + tools/index present, no stray tools.html"
 
+      - name: Internal linkcheck
+        working-directory: site
+        run: python3 ../scripts/migrate/linkcheck.py
+
       - uses: actions/upload-artifact@v4
         with:
           name: site-dist
