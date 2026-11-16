@@ -1,0 +1,67 @@
+---
+import Base from "../../layouts/Base.astro";
+const title = "OPML doctor — check your feed list for dead, moved and dormant feeds";
+const description = "Paste your OPML (or a link to it) and get a health report for every feed: alive, moved, dormant, dead or unreachable — then download a fixed OPML with dead feeds removed and moved feeds updated.";
+const path = '/tools/doctor.html';
+---
+<Base title={title} description={description} path={path} nav="tools">
+
+<div class="wrap">
+  <a class="back" href="index.html">← tools</a>
+  <h1>OPML doctor</h1>
+  <p class="sub">Health-check your feed subscriptions. Paste OPML, a link to an OPML file, or a list of feed URLs — get a per-feed report (alive · moved · dormant · dead) and download a repaired OPML. <a href="../state-of-rss.html" style="color:var(--accent)">State of RSS census →</a></p>
+
+  <textarea id="d-in" rows="8" placeholder="Paste OPML (&lt;opml&gt;…&lt;/opml&gt;), a URL to an OPML file, or feed URLs (one per line)…"></textarea>
+  <div class="btns">
+    <button class="act" id="d-go">Run health check</button>
+    <button id="d-load-trendscope" class="ghost">try: trendscope security lane</button>
+    <button id="d-stop" class="ghost" disabled>stop</button>
+  </div>
+  <div class="stat" id="d-stat"></div>
+  <div id="d-sum"></div>
+  <div id="d-tbl"></div>
+  <div class="btns" id="d-ops" style="display:none">
+    <label><input type="checkbox" id="d-drop-dead" checked> drop dead/unreachable</label>
+    <label><input type="checkbox" id="d-fix-moved" checked> replace moved feed URLs</label>
+    <label><input type="checkbox" id="d-drop-dorm"> drop dormant</label>
+    <button class="act" id="d-dl">download fixed OPML</button>
+    <button id="d-copy" class="ghost">copy OPML</button>
+  </div>
+</div>
+
+<style is:global>
+  .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px 60px; }
+  a.back { color: var(--accent); text-decoration: none; font-size: 14px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; }
+  .sub { color: var(--dim); font-size: 14px; }
+  textarea {
+    width: 100%; padding: 10px 12px; border-radius: 8px; font-size: 14px;
+    border: 1px solid var(--border); background: var(--panel); color: var(--fg);
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+    min-height: 140px; resize: vertical; margin-top: 14px;
+  }
+  .btns { display: flex; gap: 12px; margin: 10px 0; flex-wrap: wrap; align-items: center; }
+  .btns label { color: var(--dim); font-size: 13px; }
+  button.act {
+    padding: 8px 16px; border-radius: 8px; border: 1px solid var(--accent);
+    background: transparent; color: var(--accent); cursor: pointer; font-size: 14px;
+  }
+  button.act:hover { background: var(--accent); color: var(--bg); }
+  button.ghost {
+    padding: 8px 14px; border-radius: 8px; border: 1px solid var(--border);
+    background: transparent; color: var(--dim); cursor: pointer; font-size: 13px;
+  }
+  button.ghost:hover { color: var(--fg); }
+  button:disabled { opacity: .45; cursor: default; }
+  .stat { color: var(--dim); font-size: 13px; margin-bottom: 8px; }
+  .chip {
+    display: inline-block; padding: 2px 10px; border-radius: 999px;
+    border: 1px solid var(--border); font-size: 12px;
+  }
+  #d-tbl table { border-collapse: collapse; }
+  #d-tbl td, #d-tbl th { padding: 4px 8px; border-bottom: 1px solid var(--border); text-align: left; }
+  .muted { color: var(--dim); }
+</style>
+
+<script is:inline src="/js/pages/tools/doctor.js"></script>
+</Base>
