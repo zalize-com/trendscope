@@ -110,3 +110,5 @@ cleared, or the catch must recreate them.
 30. **harvest 三戒（Substack/beehiiv 收割）**：①Substack feed >300KB 会被 CDN 截断成半截 XML，`ET.fromstring` 必然失败——收割前按 content-length/截断特征预检，截断 feed 走增量只取首段或标记手工；②`{slug}.substack.com` 与 `substack.com/@{pub-handle}` 不是同一物——pub handle 是订阅页身份，feed 在 `{slug}.substack.com/feed`，handle→slug 需先解析订阅页 `<link rel=alternate>` 而非直接拼 URL；③订阅落地页（SPA-subscribe 页，如 obstracts）不是裸 feed——落地页 200 不代表有 feed，必须嗅探 `<link rel=alternate>`/常见路径拿到真 feed URL 再判活。
 
 31. **CSS 注入层序：共享样式必须放在页面内联 `<style>` 之前**：Pico CSS v2 虽 classless 但带 `.grid`/`.container` utility 类；插到 `</head>` 前会把 Pico utility 放到页面样式之后、按层序规则 win——页面 `.grid` 卡片栅格被 Pico 一列堆叠替换（zh/calendar/tools 布局全塌）。规则：外部 `<link>` 一律注入在首个 `<style>` 之前，让页面内联规则始终最后声明、同优先级下胜出。
+
+32. **urllib 不跟 308 重定向**：`HTTPRedirectHandler` 只认 301/302/303/307——Cloudflare 系 CDN 越来越爱用 308 做路径规范化（去掉尾斜杠/换域名），spotify/timescale/codecentric 三个"零项源"全是 308 挡路。修法两层：①URL 直接换成 308 指向的最终地址；②全局 `install_opener` 挂一个把 `http_error_308` 转发给 `http_error_302` 的 handler，一票覆盖所有 fetcher。批量抓取管道遇到"零项源"先查响应码再判死。

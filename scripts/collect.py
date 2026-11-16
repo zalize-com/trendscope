@@ -139,6 +139,20 @@ import urllib.request
 from datetime import datetime, timezone
 
 UA = "trendscope/0.1 (+https://github.com/zalize-com/trendscope)"
+
+
+class _Redirect308(urllib.request.HTTPRedirectHandler):
+    """urllib's HTTPRedirectHandler follows 301/302/303/307 but not 308 —
+    and modern CDNs (Cloudflare etc.) increasingly answer 308 for path
+    normalization (trailing-slash drops, domain moves). Without this every
+    fetcher sees a raw 308 error instead of the feed behind it."""
+    def http_error_308(self, req, fp, code, msg, headers):
+        return self.http_error_302(req, fp, code, msg, headers)
+
+
+urllib.request.install_opener(
+    urllib.request.build_opener(_Redirect308))
+
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE_URL = "https://trendscope--plov6nur.preview.devinapps.com"
@@ -111436,7 +111450,7 @@ def fetch_eb_timescale(limit=15):
     for attempt in range(3):
         try:
             req = urllib.request.Request(
-                "https://blog.timescale.com/feed",
+                "https://www.tigerdata.com/blog/rss",
                 headers={"User-Agent": UA, "Accept": "application/rss+xml"})
             with urllib.request.urlopen(req, timeout=20) as resp:
                 root = _feed_root(resp)
@@ -113488,7 +113502,7 @@ def fetch_codecentric(limit=15):
     for attempt in range(3):
         try:
             req = urllib.request.Request(
-                "https://blog.codecentric.de/en/feed/",
+                "https://www.codecentric.de/rss/feed.xml",
                 headers={"User-Agent": UA, "Accept": "application/rss+xml"})
             with urllib.request.urlopen(req, timeout=20) as resp:
                 root = _feed_root(resp)
@@ -113526,7 +113540,7 @@ def fetch_spotify(limit=15):
     for attempt in range(3):
         try:
             req = urllib.request.Request(
-                "https://engineering.atspotify.com/feed/",
+                "https://engineering.atspotify.com/feed",
                 headers={"User-Agent": UA, "Accept": "application/rss+xml"})
             with urllib.request.urlopen(req, timeout=20) as resp:
                 root = _feed_root(resp)
