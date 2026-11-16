@@ -75,7 +75,33 @@ Then open `index.html` (served from the repo root) and check the tab, rows,
 Δ badges, and the topics classifier (`TOPIC_RULES` in collect.py) still
 bucket sensibly.
 
-## 4. Entity audit (RSS/Atom sources)
+## 4. Feed probe pitfalls (batch harvesting)
+
+When probing pools of candidate feeds, check the failure mode before writing
+a source off (see `docs/methodology.md` 19-21, 25-26, 29-32):
+
+- **HTTP status semantics vary by site** — a blanket 404 on `feeds/videos.xml`
+  is YouTube's IP rate-limit (self-heals ~hours), not a dead channel; 429 is
+  transient everywhere; 000 (connect timeout) may be *your* egress blocking an
+  AS range (whole DreamHost subnets went dark from one of our VMs while GitHub
+  Actions fetched the same hosts fine — compare against the previous Actions
+  snapshot before declaring death).
+- **308s must be followed** — urllib's default redirect handler ignores 308;
+  our global `_Redirect308` covers `urlopen`, but standalone probes should
+  also chase it (`curl -L`). If a stored URL answers 308, prefer updating the
+  stored URL to the final location.
+- **Subscribe landing pages are not feeds** — a 200 on a newsletter's SPA
+  subscribe page says nothing; sniff `<link rel="alternate">` or well-known
+  paths (`/feed`, `/rss`, `/atom.xml`) for the real endpoint. For Substack,
+  `{slug}.substack.com/feed` ≠ `substack.com/@handle` — resolve the handle
+  page's link-alternate instead of guessing.
+- **Truncated / zero-entry / malformed XML all have separate diagnoses** —
+  >300KB CDN truncation breaks mid-document (take the head or flag manual);
+  200 + zero entries → look for `<link rel="self">` / meta-refresh / moved
+  paths; parse failures → BOM-whitespace → entity-escape → regex extraction,
+  in that order.
+
+## 5. Entity audit (RSS/Atom sources)
 
 Every new feed source has produced one real encoding bug — check before
 calling it done:
