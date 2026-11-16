@@ -1,0 +1,61 @@
+name: pages deploy
+
+# Deploys the Astro build (site/dist) + repo data files to GitHub Pages.
+# Manual-only until Settings > Pages > Source is set to "GitHub Actions" —
+# then uncomment the push trigger so site/data pushes redeploy automatically.
+on:
+  workflow_dispatch:
+  # push:
+  #   branches: [main]
+  #   paths:
+  #     - 'site/**'
+  #     - 'data/**'
+  #     - '.github/workflows/pages.yml'
+
+permissions:
+  pages: write
+  id-token: write
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Build site
+        working-directory: site
+        run: |
+          npm ci
+          npm run build
+
+      - name: Overlay repo data/assets onto the build
+        # dist already carries data/ via public symlink copy; keep as
+        # explicit rsync so a symlink change can't silently drop data.
+        run: |
+          rsync -a data/ site/dist/data/
+          rsync -a docs/ site/dist/docs/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
