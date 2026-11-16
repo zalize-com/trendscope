@@ -3,6 +3,8 @@ const $ = id => document.getElementById(id);
 try {
   const d = await fetch("docs/api/sources.json", {cache:"no-cache"}).then(r => r.json());
   const dormant = new Set(await fetch("data/dormant.json", {cache:"no-cache"}).then(r => r.json()).catch(() => []));
+  const zw = await fetch("data/zerowatch.json", {cache:"no-cache"}).then(r => r.json()).catch(() => null);
+  const persistent = new Set(zw?.persistent_empty || []);
   const srcs = Object.entries(d.sources).sort((a,b) => b[1].items - a[1].items);
   const total = srcs.reduce((n,[,v]) => n + v.items, 0);
   $("stats").innerHTML =
@@ -12,7 +14,8 @@ try {
   $("out").innerHTML = "<ol>" + srcs.map(([name, v]) => {
     const t = v.top_item || {};
     const dorm = dormant.has(name) ? ` <span class="chip" title="alive but quiet — no new posts recently">dormant</span>` : "";
-    return `<li><span class="it"><a href="source.html?s=${encodeURIComponent(name)}"><b>${esc(name)}</b></a>${dorm}` +
+    const pchip = persistent.has(name) ? ` <span class="chip" title="empty in ${zw.rounds} consecutive snapshots — likely dead or egress-blocked">empty ${zw.rounds}d</span>` : "";
+    return `<li><span class="it"><a href="source.html?s=${encodeURIComponent(name)}"><b>${esc(name)}</b></a>${dorm}${pchip}` +
       ` <img src="docs/api/sparkline/${name}.svg" width="90" height="23" style="vertical-align:-4px;opacity:.85" alt="${name} items/day" loading="lazy">` +
       ` · ${v.items} items · ${v.unique_urls} unique · ${v.one_day_pct}% one-day` +
       (t.title ? ` · top: <a href="${esc(t.url)}">${esc(t.title)}</a>` : "") +
