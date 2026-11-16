@@ -9,7 +9,7 @@
   <link rel="alternate" type="application/feed+json" title="trendscope snapshots" href="feed.json">
 <meta name="description" content="Track a single story or package's rank and score across every day it's been on the trendscope board.">
 <meta property="og:title" content="trendscope item history — day-by-day trajectory">
-<meta property="og:image" content="https://zalize-com.github.io/trendscope/og.png">
+<meta property="og:image" content="https://trendscope--plov6nur.preview.devinapps.com/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
 <style>
@@ -248,7 +248,7 @@ function paint() {
 document.getElementById("out").addEventListener("click", ev => {
   const btn = ev.target.closest(".embed-btn");
   if (!btn) return;
-  const src = `https://zalize-com.github.io/trendscope/embed.html?mode=item&q=${encodeURIComponent(btn.dataset.t || "")}`;
+  const src = `https://trendscope--plov6nur.preview.devinapps.com/embed.html?mode=item&q=${encodeURIComponent(btn.dataset.t || "")}`;
   const code = `<iframe src="${src}" style="width:100%;max-width:560px;height:180px;border:0" loading="lazy" title="trendscope story trajectory"></iframe>`;
   navigator.clipboard?.writeText(code).then(() => { btn.textContent = "copied iframe code"; setTimeout(() => btn.textContent = "embed this story", 1600); });
 });

@@ -59,7 +59,7 @@ Example (Python, stdlib):
 ```python
 import json, urllib.request
 snap = json.load(urllib.request.urlopen(
-    "https://zalize-com.github.io/trendscope/data/latest.json"))
+    "https://trendscope--plov6nur.preview.devinapps.com/data/latest.json"))
 print(snap["date"], snap["total_items"])
 ```
 

@@ -29,7 +29,7 @@ the dashboard + `data/history.csv`.
 ## Badge
 
 ```markdown
-[![trendscope snapshot](https://img.shields.io/badge/trendscope-daily%20snapshot-58a6ff)](https://zalize-com.github.io/trendscope/)
+[![trendscope snapshot](https://img.shields.io/badge/trendscope-daily%20snapshot-58a6ff)](https://trendscope--plov6nur.preview.devinapps.com/)
 ```
 
 ## Submission targets (in order of fit)
