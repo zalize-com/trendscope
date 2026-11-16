@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-16T15:25:39.759838+00:00",
+ "generated_at": "2026-11-16T15:55:53.478955+00:00",
  "latest_snapshot": "2026-11-16",
- "total": 9457,
+ "total": 9458,
  "domains": [
   {
    "hostname": "blog.google",
@@ -24,11 +24,12 @@
   {
    "hostname": "theguardian.com",
    "days_on_board": 4,
-   "items": 123,
+   "items": 127,
    "sources": [
     "eb_guardian",
     "guardianco",
     "hackernews",
+    "hnrss",
     "sec_the_guardian",
     "theguardian",
     "w4feeds4"
@@ -78,7 +79,7 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 3,
-   "items": 1571,
+   "items": 1585,
    "sources": [
     "br_homepage_piotr_migda",
     "br_nelson_s_linkblog",
@@ -146,7 +147,7 @@
   {
    "hostname": "youtube.com",
    "days_on_board": 3,
-   "items": 1328,
+   "items": 1329,
    "sources": [
     "br_blog_ankush_menat",
     "br_dr_j_engineering_leadership_software_dev",
@@ -332,7 +333,7 @@
   {
    "hostname": "theverge.com",
    "days_on_board": 3,
-   "items": 41,
+   "items": 42,
    "sources": [
     "br_hearthside_by_caleb_hearth",
     "hackernews",
@@ -349,7 +350,7 @@
   {
    "hostname": "9to5mac.com",
    "days_on_board": 3,
-   "items": 38,
+   "items": 40,
    "sources": [
     "9to5mac",
     "br_posts_from_iamgregb",
@@ -397,6 +398,23 @@
    }
   },
   {
+   "hostname": "cnn.com",
+   "days_on_board": 3,
+   "items": 33,
+   "sources": [
+    "hackernews",
+    "hnrss",
+    "w4rss3"
+   ],
+   "top_hit": {
+    "title": "Global Microsoft Outage",
+    "url": "https://www.cnn.com/2026/11/12/business/live-news/microsoft-global-outage-intl-hnk",
+    "score": 292,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
    "hostname": "eff.org",
    "days_on_board": 3,
    "items": 32,
@@ -426,23 +444,6 @@
     "score": 72,
     "metric": "points",
     "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "cnn.com",
-   "days_on_board": 3,
-   "items": 32,
-   "sources": [
-    "hackernews",
-    "hnrss",
-    "w4rss3"
-   ],
-   "top_hit": {
-    "title": "Global Microsoft Outage",
-    "url": "https://www.cnn.com/2026/11/12/business/live-news/microsoft-global-outage-intl-hnk",
-    "score": 292,
-    "metric": "points",
-    "date": "2026-11-13"
    }
   },
   {
@@ -789,7 +790,7 @@
   {
    "hostname": "mp.weixin.qq.com",
    "days_on_board": 2,
-   "items": 534,
+   "items": 535,
    "sources": [
     "42jing",
     "alimiddle",
@@ -821,7 +822,7 @@
   {
    "hostname": "lore.kernel.org",
    "days_on_board": 2,
-   "items": 270,
+   "items": 285,
    "sources": [
     "lorekernel"
    ],
@@ -873,7 +874,7 @@
   {
    "hostname": "investing.com",
    "days_on_board": 2,
-   "items": 154,
+   "items": 164,
    "sources": [
     "investing"
    ],
@@ -927,6 +928,21 @@
    }
   },
   {
+   "hostname": "news.google.com",
+   "days_on_board": 2,
+   "items": 118,
+   "sources": [
+    "w4news"
+   ],
+   "top_hit": {
+    "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his silence on breakdown - AP News",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUjU5a3ljR1FocjlKQnRVS21kY1kwR3R4bEZvdUc4VExhbnc2NjZrU0ZfRS1iMkoxcGthaUV4a19MTlNsR2JFMlFqZDN0Y1JiejlNWUFUWjAyWTl3RFNXX0ZvbkNmX0l1elhVZndMd3pQSlQtbk1RYzBMT2tmOTJuaTlwUm5FQmdRODFJQTk4OWV5MlpScVhhc1BEWWotS1E?oc=5",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "producthunt.com",
    "days_on_board": 2,
    "items": 111,
@@ -943,24 +959,9 @@
    }
   },
   {
-   "hostname": "news.google.com",
-   "days_on_board": 2,
-   "items": 110,
-   "sources": [
-    "w4news"
-   ],
-   "top_hit": {
-    "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his silence on breakdown - AP News",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUjU5a3ljR1FocjlKQnRVS21kY1kwR3R4bEZvdUc4VExhbnc2NjZrU0ZfRS1iMkoxcGthaUV4a19MTlNsR2JFMlFqZDN0Y1JiejlNWUFUWjAyWTl3RFNXX0ZvbkNmX0l1elhVZndMd3pQSlQtbk1RYzBMT2tmOTJuaTlwUm5FQmdRODFJQTk4OWV5MlpScVhhc1BEWWotS1E?oc=5",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "timesofindia.indiatimes.com",
    "days_on_board": 2,
-   "items": 91,
+   "items": 96,
    "sources": [
     "timesofindia"
    ],
@@ -975,7 +976,7 @@
   {
    "hostname": "seekingalpha.com",
    "days_on_board": 2,
-   "items": 88,
+   "items": 95,
    "sources": [
     "seekingalpha"
    ],

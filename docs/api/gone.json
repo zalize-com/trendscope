@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T15:25:47.758900+00:00",
+ "generated_at": "2026-11-16T15:55:58.707122+00:00",
  "latest_snapshot": "2026-11-16",
  "previous_snapshot": "2026-11-15",
  "items": [
@@ -92,6 +92,14 @@
    "rank": 7
   },
   {
+   "title": "How do you truly stand out in Tech?",
+   "url": "https://dev.to/francistrdev/how-do-you-truly-stand-out-in-tech-478a",
+   "source": "devto",
+   "metric": "reactions",
+   "score": 203,
+   "rank": 1
+  },
+  {
    "title": "Things That Turbo Pascal Is Smaller Than (2011)",
    "url": "https://prog21.dadgum.com/116.html",
    "source": "hackernews",
@@ -106,6 +114,14 @@
    "metric": "points",
    "score": 157,
    "rank": 10
+  },
+  {
+   "title": "The C Trilogy: How Dennis Ritchie, Bjarne Stroustrup, and Anders Hejlsberg Built the Modern World 🏛️",
+   "url": "https://dev.to/devengers/the-c-trilogy-how-dennis-ritchie-bjarne-stroustrup-and-anders-hejlsberg-built-the-modern-world-1onp",
+   "source": "devto",
+   "metric": "reactions",
+   "score": 155,
+   "rank": 4
   },
   {
    "title": "What thousands of conversations look like inside a language model",
@@ -178,14 +194,6 @@
    "metric": "score",
    "score": 45,
    "rank": 2
-  },
-  {
-   "title": "AI is getting better. Here is my plan to stay ahead.",
-   "url": "https://dev.to/javz/ai-is-getting-better-here-is-my-plan-to-stay-ahead-2822",
-   "source": "devto",
-   "metric": "reactions",
-   "score": 41,
-   "rank": 15
   },
   {
    "title": "cursor:pointer on buttons",
@@ -348,14 +356,6 @@
    "rank": 1
   },
   {
-   "title": "Slack’s Migration to a Cellular Architecture",
-   "url": "https://www.reddit.com/r/programming/comments/1xwsbxo/slacks_migration_to_a_cellular_architecture/",
-   "source": "rprogramming",
-   "metric": "feed rank",
-   "score": 15,
-   "rank": 1
-  },
-  {
    "title": "Monthly Getting Started / Web Dev Career Thread",
    "url": "https://www.reddit.com/r/webdev/comments/1w49w0r/monthly_getting_started_web_dev_career_thread/",
    "source": "rwebdev",
@@ -388,6 +388,14 @@
    "rank": 1
   },
   {
+   "title": "PSA: This is not r/Programming. Quick Clarification on the guidelines",
+   "url": "https://www.reddit.com/r/compsci/comments/c15nbn/psa_this_is_not_rprogramming_quick_clarification/",
+   "source": "rcompsci",
+   "metric": "feed rank",
+   "score": 15,
+   "rank": 1
+  },
+  {
    "title": "New CL VSCode extension: OLIVE",
    "url": "https://www.reddit.com/r/lisp/comments/1tn3zff/new_cl_vscode_extension_olive/",
    "source": "rlisp",
@@ -399,14 +407,6 @@
    "title": "Weekly Entering & Transitioning - Thread 09 Nov, 2026 - 16 Nov, 2026",
    "url": "https://www.reddit.com/r/datascience/comments/1xrix7s/weekly_entering_transitioning_thread_09_nov_2026/",
    "source": "rdatascience",
-   "metric": "feed rank",
-   "score": 15,
-   "rank": 1
-  },
-  {
-   "title": "Monthly Hask Anything (November 2026)",
-   "url": "https://www.reddit.com/r/haskell/comments/1xkp46w/monthly_hask_anything_november_2026/",
-   "source": "rhaskell",
    "metric": "feed rank",
    "score": 15,
    "rank": 1
@@ -436,6 +436,14 @@
    "rank": 1
   },
   {
+   "title": "Optimized CI, 2 mins cache to 40 seconds",
+   "url": "https://www.reddit.com/r/node/comments/1xwt2k1/optimized_ci_2_mins_cache_to_40_seconds/",
+   "source": "rnode",
+   "metric": "feed rank",
+   "score": 15,
+   "rank": 1
+  },
+  {
    "title": "Postgres Conference 2027 CFP is open (San Jose, April 21-23)",
    "url": "https://www.reddit.com/r/PostgreSQL/comments/1x733v2/postgres_conference_2027_cfp_is_open_san_jose/",
    "source": "rpostgresql",
@@ -452,9 +460,9 @@
    "rank": 1
   },
   {
-   "title": "Recreating Apple’s genie effect on the web: how the window bends into a funnel and drains into the dock",
-   "url": "https://www.reddit.com/r/Frontend/comments/1xvuamk/recreating_apples_genie_effect_on_the_web_how_the/",
-   "source": "rfrontend",
+   "title": "Quarter 2 Update - Revisiting Rules. Again.",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1sey9ch/quarter_2_update_revisiting_rules_again/",
+   "source": "rselfhosted",
    "metric": "feed rank",
    "score": 15,
    "rank": 1
@@ -676,14 +684,6 @@
    "rank": 1
   },
   {
-   "title": "All the code review is a stage",
-   "url": "https://devinterrupted.substack.com/p/all-the-code-review-is-a-stage",
-   "source": "devinterrupted",
-   "metric": "feed rank",
-   "score": 15,
-   "rank": 1
-  },
-  {
    "title": "ChinAI #381: China’s Venture Capital Market is Defying Common Sense",
    "url": "https://chinai.substack.com/p/chinai-381-chinas-venture-capital",
    "source": "chinai",
@@ -804,14 +804,6 @@
    "rank": 2
   },
   {
-   "title": "544 unmaintained PyPI packages with imports that fail on Python 3.12+ still get 100M+ downloads a month",
-   "url": "https://www.reddit.com/r/programming/comments/1xwyhpm/544_unmaintained_pypi_packages_with_imports_that/",
-   "source": "rprogramming",
-   "metric": "feed rank",
-   "score": 14,
-   "rank": 2
-  },
-  {
    "title": "Monthly Getting Started / Web Dev Career Thread",
    "url": "https://www.reddit.com/r/webdev/comments/1xl1aup/monthly_getting_started_web_dev_career_thread/",
    "source": "rwebdev",
@@ -868,14 +860,6 @@
    "rank": 2
   },
   {
-   "title": "Mischief - The Haskell Game Engine. Now with Rendering, Assets, Input.",
-   "url": "https://www.reddit.com/r/haskell/comments/1xwzf96/mischief_the_haskell_game_engine_now_with/",
-   "source": "rhaskell",
-   "metric": "feed rank",
-   "score": 14,
-   "rank": 2
-  },
-  {
    "title": "Nobel Prizes: 5 Unlikely Winner Reactions, From the Unbothered to the Downright Mad",
    "url": "https://gizmodo.com/nobel-prizes-unlikely-winner-reactions-doris-lessing-peter-higgs-bob-dylan-2000669628",
    "source": "gizmodoscience",
@@ -887,6 +871,14 @@
    "title": "Why AI Inference Now Drives Energy, Water, and Carbon Costs",
    "url": "https://www.unite.ai/why-ai-inference-now-drives-energy-water-and-carbon-costs/",
    "source": "uniteai",
+   "metric": "feed rank",
+   "score": 14,
+   "rank": 2
+  },
+  {
+   "title": "Blocking requests to private IPs from inside the DNS lookup in Node",
+   "url": "https://www.reddit.com/r/node/comments/1xw9pld/blocking_requests_to_private_ips_from_inside_the/",
+   "source": "rnode",
    "metric": "feed rank",
    "score": 14,
    "rank": 2
@@ -908,9 +900,9 @@
    "rank": 2
   },
   {
-   "title": "Agentic Coding: Bet on the Primitives",
-   "url": "https://www.reddit.com/r/Frontend/comments/1xvsp1t/agentic_coding_bet_on_the_primitives/",
-   "source": "rfrontend",
+   "title": "New Project Megathread - Week of 12 Nov 2026",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xurjda/new_project_megathread_week_of_12_nov_2026/",
+   "source": "rselfhosted",
    "metric": "feed rank",
    "score": 14,
    "rank": 2
@@ -1140,14 +1132,6 @@
    "rank": 2
   },
   {
-   "title": "Balancing AI innovation with compliance and governance | Capital One’s Abhijit Bose",
-   "url": "https://devinterrupted.substack.com/p/balancing-ai-innovation-with-compliance",
-   "source": "devinterrupted",
-   "metric": "feed rank",
-   "score": 14,
-   "rank": 2
-  },
-  {
    "title": "ChinAI #380: It’s getting more and more difficult to make money",
    "url": "https://chinai.substack.com/p/chinai-380-its-getting-more-and-more",
    "source": "chinai",
@@ -1284,14 +1268,6 @@
    "rank": 3
   },
   {
-   "title": "What Go 1.27’s generic methods made possible for ORMs. Compile-checked columns with no generated code",
-   "url": "https://www.reddit.com/r/programming/comments/1xwtfmr/what_go_127s_generic_methods_made_possible_for/",
-   "source": "rprogramming",
-   "metric": "feed rank",
-   "score": 13,
-   "rank": 3
-  },
-  {
    "title": "Apple Continues to Hold Back Mobile Safari Features to Juice App Store Sales",
    "url": "https://www.reddit.com/r/webdev/comments/1xwzugh/apple_continues_to_hold_back_mobile_safari/",
    "source": "rwebdev",
@@ -1348,14 +1324,6 @@
    "rank": 3
   },
   {
-   "title": "Vibe yourself a better ghcid",
-   "url": "https://www.reddit.com/r/haskell/comments/1xw8hy7/vibe_yourself_a_better_ghcid/",
-   "source": "rhaskell",
-   "metric": "feed rank",
-   "score": 13,
-   "rank": 3
-  },
-  {
    "title": "An Artist Claims to Have Created Paint in a ‘New’ Impossible Hue Conjured by Scientists",
    "url": "https://gizmodo.com/an-artist-claims-to-have-created-paint-in-a-new-impossible-hue-conjured-by-scientists-2000593982",
    "source": "gizmodoscience",
@@ -1367,6 +1335,14 @@
    "title": "Megaspeed Retains Counsel to Probe Reports on Its AI Cloud Business",
    "url": "https://www.unite.ai/megaspeed-retains-counsel-to-probe-reports-on-its-ai-cloud-business/",
    "source": "uniteai",
+   "metric": "feed rank",
+   "score": 13,
+   "rank": 3
+  },
+  {
+   "title": "Diary Dev - Staxis is coming!",
+   "url": "https://www.reddit.com/r/node/comments/1xw5bmk/diary_dev_staxis_is_coming/",
+   "source": "rnode",
    "metric": "feed rank",
    "score": 13,
    "rank": 3
@@ -1388,9 +1364,9 @@
    "rank": 3
   },
   {
-   "title": "Is learning HTML, CSS and JavaScript still worth it for freelancing?",
-   "url": "https://www.reddit.com/r/Frontend/comments/1xv1mci/is_learning_html_css_and_javascript_still_worth/",
-   "source": "rfrontend",
+   "title": "Update your Seerr",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xx63v2/update_your_seerr/",
+   "source": "rselfhosted",
    "metric": "feed rank",
    "score": 13,
    "rank": 3
@@ -1628,14 +1604,6 @@
    "rank": 3
   },
   {
-   "title": "The software factory isn't a prompt",
-   "url": "https://devinterrupted.substack.com/p/the-software-factory-isnt-a-prompt",
-   "source": "devinterrupted",
-   "metric": "feed rank",
-   "score": 13,
-   "rank": 3
-  },
-  {
    "title": "ChinAI #379: “Chinese AI only makes trash TV?”",
    "url": "https://chinai.substack.com/p/chinai-379-chinese-ai-can-only-make",
    "source": "chinai",
@@ -1780,14 +1748,6 @@
    "rank": 4
   },
   {
-   "title": "Memory management in 40 major C projects, a survey",
-   "url": "https://www.reddit.com/r/programming/comments/1xwxhbp/memory_management_in_40_major_c_projects_a_survey/",
-   "source": "rprogramming",
-   "metric": "feed rank",
-   "score": 12,
-   "rank": 4
-  },
-  {
    "title": "imgtune: an open-source auditor that measures how much smaller your site's media can get",
    "url": "https://www.reddit.com/r/webdev/comments/1xwvesh/imgtune_an_opensource_auditor_that_measures_how/",
    "source": "rwebdev",
@@ -1844,14 +1804,6 @@
    "rank": 4
   },
   {
-   "title": "A technical vision for the Haskell ecosystem - Haskell Foundation",
-   "url": "https://www.reddit.com/r/haskell/comments/1xuza8d/a_technical_vision_for_the_haskell_ecosystem/",
-   "source": "rhaskell",
-   "metric": "feed rank",
-   "score": 12,
-   "rank": 4
-  },
-  {
    "title": "Scientists Agree That Everyone Hates Your Terrible Zoom Mic",
    "url": "https://gizmodo.com/scientists-agree-that-everyone-hates-your-terrible-zoom-mic-2000582080",
    "source": "gizmodoscience",
@@ -1876,6 +1828,14 @@
    "rank": 4
   },
   {
+   "title": "I built a typed router on top of Hono + zod-openapi",
+   "url": "https://www.reddit.com/r/node/comments/1xvuoc4/i_built_a_typed_router_on_top_of_hono_zodopenapi/",
+   "source": "rnode",
+   "metric": "feed rank",
+   "score": 12,
+   "rank": 4
+  },
+  {
    "title": "I built a free native Windows client for PostgreSQL (and SQL Server, MySQL, SQLite)",
    "url": "https://www.reddit.com/r/PostgreSQL/comments/1xwc3ca/i_built_a_free_native_windows_client_for/",
    "source": "rpostgresql",
@@ -1892,9 +1852,9 @@
    "rank": 4
   },
   {
-   "title": "I just shipped Forge UI, an open-source React component library",
-   "url": "https://www.reddit.com/r/Frontend/comments/1xw5bp0/i_just_shipped_forge_ui_an_opensource_react/",
-   "source": "rfrontend",
+   "title": "Karakeep 0.35 release - Security, Polish and 30k stars ⭐",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xx04an/karakeep_035_release_security_polish_and_30k_stars/",
+   "source": "rselfhosted",
    "metric": "feed rank",
    "score": 12,
    "rank": 4
@@ -2140,14 +2100,6 @@
    "rank": 4
   },
   {
-   "title": "Bet on research, not on vibes | Together AI’s Dan Fu",
-   "url": "https://devinterrupted.substack.com/p/bet-on-research-not-on-vibes-together",
-   "source": "devinterrupted",
-   "metric": "feed rank",
-   "score": 12,
-   "rank": 4
-  },
-  {
    "title": "ChinAI #378: China’s Two-day Weekend Defenders",
    "url": "https://chinai.substack.com/p/chinai-378-chinas-two-day-weekend",
    "source": "chinai",
@@ -2292,14 +2244,6 @@
    "rank": 5
   },
   {
-   "title": "Brockett-Dobkin Rectangular Matrix Multiplication Algorithm From 1970s",
-   "url": "https://www.reddit.com/r/programming/comments/1xwxmp1/brockettdobkin_rectangular_matrix_multiplication/",
-   "source": "rprogramming",
-   "metric": "feed rank",
-   "score": 11,
-   "rank": 5
-  },
-  {
    "title": "beginner here, why y'all use rem for almost everything? what if user increase the base font will it messed up the layout or your web?",
    "url": "https://www.reddit.com/r/webdev/comments/1xwtct4/beginner_here_why_yall_use_rem_for_almost/",
    "source": "rwebdev",
@@ -2356,14 +2300,6 @@
    "rank": 5
   },
   {
-   "title": "Fund the Products, Not the Foundation",
-   "url": "https://www.reddit.com/r/haskell/comments/1xukbpx/fund_the_products_not_the_foundation/",
-   "source": "rhaskell",
-   "metric": "feed rank",
-   "score": 11,
-   "rank": 5
-  },
-  {
    "title": "This $35,000 Computer Is Powered by Trapped Human Brain Cells",
    "url": "https://gizmodo.com/this-35000-computer-is-powered-by-trapped-human-brain-cells-2000573993",
    "source": "gizmodoscience",
@@ -2388,6 +2324,14 @@
    "rank": 5
   },
   {
+   "title": "I built Dakly: A free, zero-setup transactional email engine with multi-Gmail failover so you don't have to pay Resend or SendGrid for side projects",
+   "url": "https://www.reddit.com/r/node/comments/1xv1no6/i_built_dakly_a_free_zerosetup_transactional/",
+   "source": "rnode",
+   "metric": "feed rank",
+   "score": 11,
+   "rank": 5
+  },
+  {
    "title": "CFP is open for POSETTE: An Event for Postgres 2027 (until Sun 3 Jan 2027)",
    "url": "https://www.reddit.com/r/PostgreSQL/comments/1xvkgsu/cfp_is_open_for_posette_an_event_for_postgres/",
    "source": "rpostgresql",
@@ -2399,14 +2343,6 @@
    "title": "KillerPdf.Engine 1.9.3: a from-scratch PDF 2.0 engine for .NET 10 now reads EPUB and DjVu, does ICC color management and printer proofing, and is fully managed",
    "url": "https://www.reddit.com/r/dotnet/comments/1xx0kae/killerpdfengine_193_a_fromscratch_pdf_20_engine/",
    "source": "rdotnet",
-   "metric": "feed rank",
-   "score": 11,
-   "rank": 5
-  },
-  {
-   "title": "Publishing a JS framework",
-   "url": "https://www.reddit.com/r/Frontend/comments/1xv86s3/publishing_a_js_framework/",
-   "source": "rfrontend",
    "metric": "feed rank",
    "score": 11,
    "rank": 5
@@ -2503,6 +2439,14 @@
    "title": "AO3 is back online but with limited features",
    "url": "https://www.engadget.com/2317218/ao3-is-back-online-but-with-limited-features/",
    "source": "engadget",
+   "metric": "feed rank",
+   "score": 11,
+   "rank": 5
+  },
+  {
+   "title": "WebGL Flight Simulator with seed generated terrain",
+   "url": "https://baron.by.dai.studio/",
+   "source": "hnrss",
    "metric": "feed rank",
    "score": 11,
    "rank": 5
@@ -2660,14 +2604,6 @@
    "rank": 5
   },
   {
-   "title": "Do the models you use have an AI bill of materials? | CIQ’s Gregory Kurtzer",
-   "url": "https://devinterrupted.substack.com/p/do-the-models-you-use-have-an-ai",
-   "source": "devinterrupted",
-   "metric": "feed rank",
-   "score": 11,
-   "rank": 5
-  },
-  {
    "title": "ChinAI #377: American Data Center Hegemony - the Center-Satellite Structure",
    "url": "https://chinai.substack.com/p/chinai-377-us-dominance-of-the-center",
    "source": "chinai",
@@ -2679,6 +2615,14 @@
    "title": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of AI technologies and supply chains to protect from China (Financial Times)",
    "url": "https://www.techmeme.com/261115/p12#a261115p12",
    "source": "techmeme",
+   "metric": "feed rank",
+   "score": 10,
+   "rank": 6
+  },
+  {
+   "title": "Google Cloud Moves the Compute Engine API to Immutable Date-Based Versions",
+   "url": "https://www.infoq.com/news/2026/11/compute-engine-api-versioning/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "infoq",
    "metric": "feed rank",
    "score": 10,
    "rank": 6
@@ -2698,14 +2642,6 @@
    "metric": "feed rank",
    "score": 10,
    "rank": 6
-  },
-  {
-   "title": "How to effectively debug when you no longer understand the code",
-   "url": "https://copyconstruct.medium.com/how-to-effectively-debug-when-you-no-longer-understand-the-code-bd3dcb2c5f7b?source=rss-87c8c84f24b1------2",
-   "source": "copyconstruct",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
   },
   {
    "title": "Jan 2021 Gwern.net Newsletter",
@@ -2764,28 +2700,12 @@
    "rank": 6
   },
   {
-   "title": "Core Vitals Optimization, SSR Deployments, and Signal-First Architecture ⚡",
-   "url": "https://blog.angular.dev/core-vitals-optimization-ssr-deployments-and-signal-first-architecture-be82fd4a8c87?source=rss----447683c3d9a3---4",
-   "source": "blogangular",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
    "title": "Comparing the top React toast libraries [2026 update]",
    "url": "https://blog.logrocket.com/react-toast-libraries-compared-2026/",
    "source": "bloglogrocket",
    "metric": "feed rank",
    "score": 10,
    "rank": 3
-  },
-  {
-   "title": "AI Agents in Game Development: FOMO, Real Production Lessons, Failed Experiments, and Workshop 101",
-   "url": "https://blog.luden.io/ai-agents-in-game-development-real-production-lessons-failed-experiments-and-workshop-101-7d71e64685fa?source=rss----d6f120d108d1---4",
-   "source": "blogluden",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
   },
   {
    "title": "Create a color contrast checker with HTML, CSS, and JavaScript",
@@ -2802,30 +2722,6 @@
    "metric": "feed rank",
    "score": 10,
    "rank": 6
-  },
-  {
-   "title": "Your AI agent writes frontend code like it’s 2015. Chrome has a fix for that",
-   "url": "https://itnext.io/your-ai-agent-writes-frontend-code-like-its-2015-chrome-has-a-fix-for-that-8dad089d68ab?source=rss----5b301f10ddcd---4",
-   "source": "itnext",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
-   "title": "Netflix Loses Paid Users For the First Time in a Decade",
-   "url": "https://marker.medium.com/netflix-loses-paid-users-for-the-first-time-in-a-decade-56902fcd0942?source=rss----7b6769f2748b---4",
-   "source": "markermedium",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
-   "title": "Dark mode was never on our roadmap. Here’s how it got built.",
-   "url": "https://medium.engineering/dark-mode-was-never-on-our-roadmap-heres-how-it-got-built-b8e0a54c1d12?source=rss----2817475205d3---4",
-   "source": "medium",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
   },
   {
    "title": "137: Paired with a Ghost",
@@ -2852,22 +2748,6 @@
    "rank": 6
   },
   {
-   "title": "How to Validate Email Addresses with Ease in React",
-   "url": "https://upmostly.com/tutorials/how-to-validate-email-addresses-with-ease-in-react",
-   "source": "upmostly",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
-   "title": "The future of SEO may look more like an Ontology",
-   "url": "https://becominghuman.ai/the-future-of-seo-may-look-more-like-an-ontology-015e6949e9f9?source=rss----5e5bef33608a---4",
-   "source": "becominghuman",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
    "title": "One size should fit all?",
    "url": "https://csshell.dev/posts/one-size-should-fit-all/",
    "source": "csshell",
@@ -2887,86 +2767,6 @@
    "title": "Apple 開發者週報 #264 🔆全帶光就位",
    "url": "https://www.ethanhuang13.com/p/264",
    "source": "ethanhuang13substack",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 6
-  },
-  {
-   "title": "HI Lucas,",
-   "url": "https://tangledweb.xyz/hi-lucas-9150852ff4df?source=rss----36d7830f6552---4",
-   "source": "tangledweb",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
-   "title": "Our UX Student Program Graduates Share Their Journey",
-   "url": "https://wix-ux.com/our-ux-student-program-graduates-share-their-journey-8cb71725082e?source=rss----5c12f12b4121---4",
-   "source": "wixux",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
-   "title": "Infra at Scale: Agents, Tools and Infra-as-Code",
-   "url": "https://benchling.engineering/infra-at-scale-agents-tools-and-infra-as-code-105645ea7b58?source=rss----3d4aa8fb07ea---4",
-   "source": "benchling",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
-   "title": "Early Talent Hiring at Palantir",
-   "url": "https://blog.palantir.com/early-talent-hiring-at-palantir-c7388f1fdab7?source=rss----3c87dc14372f---4",
-   "source": "blogpalantir",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
-   "title": "Scaling Nextdoor’s Datastores: Part 5",
-   "url": "https://engblog.nextdoor.com/scaling-nextdoors-datastores-part-5-5221da60f374?source=rss----5e54f11cdfdf---4",
-   "source": "engblognextdoor",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
-   "title": "RetailMeNot GraphQL Federation",
-   "url": "https://engineering.ziffmedia.com/retailmenot-graphql-federation-3bb36dac5aaa?source=rss----d6bb34696ef5---4",
-   "source": "engineeringziffmedia",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
-   "title": "The “Go Serverless” Data Engineering Revolution at Teamwork (golang + AWS = ❤)",
-   "url": "https://engineroom.teamwork.com/the-go-serverless-data-engineering-revolution-at-teamwork-golang-aws-f2fd3cb1f563?source=rss----cea4eecd5960---4",
-   "source": "engineroomteamwork",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
-   "title": "How INTEGER and INT Produced Different Schemas in Debezium",
-   "url": "https://lambda.blinkit.com/how-integer-and-int-produced-different-schemas-in-debezium-9c98e8a80aa2?source=rss----42df4a1e8725---4",
-   "source": "lambdablinkit",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
-   "title": "Does it matter how you feed an agent its context?",
-   "url": "https://tech.olx.com/does-it-matter-how-you-feed-an-agent-its-context-ee1519586520?source=rss----761b019b483f---4",
-   "source": "techolx",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
-   "title": "Many Tiles, One Space, Two Worlds -- At Last, a Use for Bubble Sort",
-   "url": "https://www.reddit.com/r/programming/comments/1xx0jyi/many_tiles_one_space_two_worlds_at_last_a_use_for/",
-   "source": "rprogramming",
    "metric": "feed rank",
    "score": 10,
    "rank": 6
@@ -3004,6 +2804,14 @@
    "rank": 6
   },
   {
+   "title": "Exploring Data Integrity and Fault Tolerance in Erasure-Coded Distributed Storage Systems",
+   "url": "https://www.reddit.com/r/compsci/comments/1xsmti2/exploring_data_integrity_and_fault_tolerance_in/",
+   "source": "rcompsci",
+   "metric": "feed rank",
+   "score": 10,
+   "rank": 6
+  },
+  {
    "title": "ClojureLite: A high-performance, fast-startup implementation of Clojure",
    "url": "https://www.reddit.com/r/lisp/comments/1xwlk9z/clojurelite_a_highperformance_faststartup/",
    "source": "rlisp",
@@ -3020,22 +2828,6 @@
    "rank": 6
   },
   {
-   "title": "London Haskell Meetup - November",
-   "url": "https://www.reddit.com/r/haskell/comments/1xtmqq2/london_haskell_meetup_november/",
-   "source": "rhaskell",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 6
-  },
-  {
-   "title": "Kotlin Multiplatform Networking with Native Android and iOS ViewModels",
-   "url": "https://proandroiddev.com/kmp-networking-native-viewmodels-cf6fb357b012?source=rss----c72404660798---4",
-   "source": "proandroiddev",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
    "title": "Jensen Huang is discussing a return to Nvidia, FT reports",
    "url": "https://thenextweb.com/news/jensen-huang-is-discussing-a-return-to-nvidia-ft-reports",
    "source": "thenextweb",
@@ -3044,41 +2836,9 @@
    "rank": 1
   },
   {
-   "title": "Decision theatre or decision design?",
-   "url": "https://uxdesign.cc/decision-theatre-or-decision-design-f1604f178685?source=rss----138adf9c44c---4",
-   "source": "uxdesign",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
    "title": "Doubling the Number of Content Processes in Firefox",
    "url": "https://erahm.org/2019/03/13/doubling-the-number-of-content-processes-in-firefox/",
    "source": "erahm",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
-   "title": "Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System",
-   "url": "https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808?source=rss----2615bd06b42e---4",
-   "source": "netflix",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
-   "title": "Beyond Test Cards: A Fake Payment Provider for Testing at Scale",
-   "url": "https://eng.lyft.com/beyond-test-cards-a-fake-payment-provider-for-testing-at-scale-c69dddadb115?source=rss----25cd379abb8---4",
-   "source": "lyft",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
-   "title": "Skipper, Airbnb’s embedded workflow engine, is now open source",
-   "url": "https://medium.com/airbnb-engineering/skipper-airbnbs-embedded-workflow-engine-is-now-open-source-78dd354f472b?source=rss----53c7c27702d5---4",
-   "source": "airbnb",
    "metric": "feed rank",
    "score": 10,
    "rank": 1
@@ -3108,17 +2868,17 @@
    "rank": 6
   },
   {
-   "title": "Claude Fable 5.2 Official Prompting Guide",
-   "url": "https://uxplanet.org/claude-fable-5-2-official-prompting-guide-34cd74abe0a2?source=rss----819cc2aaeee0---4",
-   "source": "uxplanet",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
    "title": "Anakapalli MoU Maps 400 MW And 1,400 MW AirTrunk Campus Proposals",
    "url": "https://www.unite.ai/anakapalli-mou-maps-400-mw-and-1-400-mw-airtrunk-campus-proposals/",
    "source": "uniteai",
+   "metric": "feed rank",
+   "score": 10,
+   "rank": 6
+  },
+  {
+   "title": "A package for standardizing logging? Looking for thoughts",
+   "url": "https://www.reddit.com/r/node/comments/1xur6ma/a_package_for_standardizing_logging_looking_for/",
+   "source": "rnode",
    "metric": "feed rank",
    "score": 10,
    "rank": 6
@@ -3140,9 +2900,9 @@
    "rank": 6
   },
   {
-   "title": "We've been building our own JavaScript framework and would love some feedback",
-   "url": "https://www.reddit.com/r/Frontend/comments/1xtktle/weve_been_building_our_own_javascript_framework/",
-   "source": "rfrontend",
+   "title": "Infisical paywalled custom roles for self-hosters in a patch release. unstar it.",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xwoq7y/infisical_paywalled_custom_roles_for_selfhosters/",
+   "source": "rselfhosted",
    "metric": "feed rank",
    "score": 10,
    "rank": 6
@@ -3199,6 +2959,14 @@
    "title": "Angular 22: linkedSignal() Can Now Write Back to State",
    "url": "https://www.reddit.com/r/Angular2/comments/1uc1jpl/angular_22_linkedsignal_can_now_write_back_to/",
    "source": "rangular",
+   "metric": "feed rank",
+   "score": 10,
+   "rank": 6
+  },
+  {
+   "title": "Basic Support For The Apple M5 Expected To Land For Linux 7.5",
+   "url": "https://www.phoronix.com/news/Apple-M5-For-Linux-7.5",
+   "source": "phoronix",
    "metric": "feed rank",
    "score": 10,
    "rank": 6
@@ -3300,17 +3068,17 @@
    "rank": 6
   },
   {
-   "title": "Core Vitals Optimization, SSR Deployments, and Signal-First Architecture ⚡",
-   "url": "https://blog.angular.dev/core-vitals-optimization-ssr-deployments-and-signal-first-architecture-be82fd4a8c87?source=rss----447683c3d9a3---4",
-   "source": "w3blog4",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 1
-  },
-  {
    "title": "Rivian, Lucid, Scout CEOs aren’t counting on Democrats to restore EV federal support after midterm wins",
    "url": "https://www.cnbc.com/2026/11/15/rivian-lucid-scout-arent-counting-on-dems-to-restore-ev-incentives.html",
    "source": "cnbc",
+   "metric": "feed rank",
+   "score": 10,
+   "rank": 6
+  },
+  {
+   "title": "Lightweight Apple Glasses rumored for WWDC 2027 reveal",
+   "url": "https://appleinsider.com/articles/26/11/15/lightweight-apple-glasses-rumored-for-wwdc-2027-reveal?utm_source=rss",
+   "source": "appleinsider",
    "metric": "feed rank",
    "score": 10,
    "rank": 6
@@ -3476,14 +3244,6 @@
    "rank": 6
   },
   {
-   "title": "Multiplayer AI will revolutionize the way we work | OpenClaw Foundation’s Vincent Koc",
-   "url": "https://devinterrupted.substack.com/p/multiplayer-ai-will-revolutionize",
-   "source": "devinterrupted",
-   "metric": "feed rank",
-   "score": 10,
-   "rank": 6
-  },
-  {
    "title": "ChinAI #376: Around the Horn (27th episode)",
    "url": "https://chinai.substack.com/p/chinai-376-around-the-horn-27th-episode",
    "source": "chinai",
@@ -3522,14 +3282,6 @@
    "metric": "feed rank",
    "score": 9,
    "rank": 7
-  },
-  {
-   "title": "Why Success Is Often Elusive at the Highest Echelons",
-   "url": "https://copyconstruct.medium.com/why-success-is-often-elusive-at-the-highest-echelons-3e02e4dd3e7f?source=rss-87c8c84f24b1------2",
-   "source": "copyconstruct",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
   },
   {
    "title": "December newsletter",
@@ -3588,28 +3340,12 @@
    "rank": 7
   },
   {
-   "title": "From running edge-rendered Angular apps on Cloudflare Workers to crafting lifelike speech with…",
-   "url": "https://blog.angular.dev/from-running-edge-rendered-angular-apps-on-cloudflare-workers-to-crafting-lifelike-speech-with-67513b4b85e1?source=rss----447683c3d9a3---4",
-   "source": "blogangular",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
    "title": "Can Framer replace your web design stack in 2026?",
    "url": "https://blog.logrocket.com/ux-design/framer-next-full-stack-web-design-tool/",
    "source": "bloglogrocket",
    "metric": "feed rank",
    "score": 9,
    "rank": 4
-  },
-  {
-   "title": "How we stayed on the front page of itch.io for over a month",
-   "url": "https://blog.luden.io/how-we-stayed-on-the-front-page-of-itch-io-for-over-a-month-8e0d0cf1cc17?source=rss----d6f120d108d1---4",
-   "source": "blogluden",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
   },
   {
    "title": "How to use Lotties in Figma",
@@ -3626,30 +3362,6 @@
    "metric": "feed rank",
    "score": 9,
    "rank": 7
-  },
-  {
-   "title": "The More We Delegate to AI, the More We Need to Stay in Control.",
-   "url": "https://itnext.io/the-more-we-delegate-to-ai-the-more-we-need-to-stay-in-control-c141aa51e963?source=rss----5b301f10ddcd---4",
-   "source": "itnext",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
-   "title": "Fast: An Autopsy",
-   "url": "https://marker.medium.com/fast-an-autopsy-290447bcb4f3?source=rss----7b6769f2748b---4",
-   "source": "markermedium",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
-   "title": "What We Built for Medium Editors This Year (and What I Broke)",
-   "url": "https://medium.engineering/what-we-built-for-medium-editors-this-year-and-what-i-broke-1213c2746703?source=rss----2817475205d3---4",
-   "source": "medium",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
   },
   {
    "title": "OpenZFS Mastery Status",
@@ -3676,22 +3388,6 @@
    "rank": 7
   },
   {
-   "title": "The Definitive Guide to Master React’s Re-rendering Process",
-   "url": "https://upmostly.com/tutorials/the-definitive-guide-to-master-reacts-re-rendering-process",
-   "source": "upmostly",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
-   "title": "Becoming Human AI Is Expanding — Here’s What’s Changing",
-   "url": "https://becominghuman.ai/becoming-human-ai-is-expanding-heres-what-s-changing-0baaf57030d0?source=rss----5e5bef33608a---4",
-   "source": "becominghuman",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
    "title": "We don't float down here anymore",
    "url": "https://csshell.dev/posts/we-dont-float-down-here-anymore/",
    "source": "csshell",
@@ -3711,86 +3407,6 @@
    "title": "Apple 開發者週報 #263 👈少年們，要胸懷大志",
    "url": "https://www.ethanhuang13.com/p/263",
    "source": "ethanhuang13substack",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 7
-  },
-  {
-   "title": "Getting the Wrong, Right?",
-   "url": "https://tangledweb.xyz/hi-lucas-673167805f55?source=rss----36d7830f6552---4",
-   "source": "tangledweb",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
-   "title": "Back to basics: How fundamental UX principles lead to big results",
-   "url": "https://wix-ux.com/back-to-basics-how-fundamental-ux-principles-lead-to-big-results-b5e3e6c3bfb1?source=rss----5c12f12b4121---4",
-   "source": "wixux",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
-   "title": "Fragmentation to framework: Spec-first development at Benchling",
-   "url": "https://benchling.engineering/fragmentation-to-framework-spec-first-development-at-benchling-9b97302bddcf?source=rss----3d4aa8fb07ea---4",
-   "source": "benchling",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
-   "title": "Securing Software at the Speed of AI",
-   "url": "https://blog.palantir.com/securing-software-at-the-speed-of-ai-0b1d7ddd2bf0?source=rss----3c87dc14372f---4",
-   "source": "blogpalantir",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
-   "title": "Scaling Nextdoor’s Datastores: Part 4",
-   "url": "https://engblog.nextdoor.com/scaling-nextdoors-datastores-part-4-c9d3d3edcd34?source=rss----5e54f11cdfdf---4",
-   "source": "engblognextdoor",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
-   "title": "Decreasing Applitools Android Boilerplate with Kotlin and JUnit",
-   "url": "https://engineering.ziffmedia.com/decreasing-applitools-android-boilerplate-with-kotlin-and-junit-46c61b5e10ce?source=rss----d6bb34696ef5---4",
-   "source": "engineeringziffmedia",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
-   "title": "Drawing icons using Core Graphics",
-   "url": "https://engineroom.teamwork.com/drawing-icons-using-core-graphics-fed30458f2ed?source=rss----cea4eecd5960---4",
-   "source": "engineroomteamwork",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
-   "title": "Blinkit at OpenSearchCon India 2026",
-   "url": "https://lambda.blinkit.com/blinkit-at-opensearchcon-india-2026-37fd0046c318?source=rss----42df4a1e8725---4",
-   "source": "lambdablinkit",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
-   "title": "Correlation Lied to Us: Rethinking Product Impact with Causal Inference",
-   "url": "https://tech.olx.com/correlation-lied-to-us-rethinking-product-impact-with-causal-inference-5ba47181f7c5?source=rss----761b019b483f---4",
-   "source": "techolx",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
-   "title": "How I accidentally became a millionaire",
-   "url": "https://www.reddit.com/r/programming/comments/1xvr455/how_i_accidentally_became_a_millionaire/",
-   "source": "rprogramming",
    "metric": "feed rank",
    "score": 9,
    "rank": 7
@@ -3828,6 +3444,14 @@
    "rank": 7
   },
   {
+   "title": "A Matrix Multiplication Algorithm Rooted In Graph Theory",
+   "url": "https://www.reddit.com/r/compsci/comments/1xrx0ap/a_matrix_multiplication_algorithm_rooted_in_graph/",
+   "source": "rcompsci",
+   "metric": "feed rank",
+   "score": 9,
+   "rank": 7
+  },
+  {
    "title": "The entirety of \"Let Over Lambda\" is now freely available online",
    "url": "https://www.reddit.com/r/lisp/comments/1xut60e/the_entirety_of_let_over_lambda_is_now_freely/",
    "source": "rlisp",
@@ -3844,22 +3468,6 @@
    "rank": 7
   },
   {
-   "title": "[ann] base32-1.0",
-   "url": "https://www.reddit.com/r/haskell/comments/1xs0dm0/ann_base3210/",
-   "source": "rhaskell",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 7
-  },
-  {
-   "title": "Don’t Just Create a Flow. Know Where to Create It.",
-   "url": "https://proandroiddev.com/dont-just-create-a-flow-know-where-to-create-it-8184bd4cb6eb?source=rss----c72404660798---4",
-   "source": "proandroiddev",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
    "title": "Megaspeed says Alice Huang left in August 2025",
    "url": "https://thenextweb.com/news/megaspeed-alice-huang-left-august-2025-denies-claims",
    "source": "thenextweb",
@@ -3868,41 +3476,9 @@
    "rank": 2
   },
   {
-   "title": "Schrödinger’s Huang: Nvidia could not be everything to everybody",
-   "url": "https://uxdesign.cc/schr%C3%B6dingers-huang-d1da36bff88c?source=rss----138adf9c44c---4",
-   "source": "uxdesign",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
    "title": "Firefox Memory Usage in the Quantum Era",
    "url": "https://erahm.org/2017/09/25/firefox-memory-usage-in-the-quantum-era/",
    "source": "erahm",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
-   "title": "Making Failure Diagnosis Reliable with Pensive AI",
-   "url": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015?source=rss----2615bd06b42e---4",
-   "source": "netflix",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
-   "title": "Hiring Junior Engineers",
-   "url": "https://eng.lyft.com/hiring-junior-engineers-1edc53e0fd5f?source=rss----25cd379abb8---4",
-   "source": "lyft",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
-   "title": "CASTLE: training natural language search before the first real query",
-   "url": "https://medium.com/airbnb-engineering/castle-training-natural-language-search-before-the-first-real-query-3818ef8b4828?source=rss----53c7c27702d5---4",
-   "source": "airbnb",
    "metric": "feed rank",
    "score": 9,
    "rank": 2
@@ -3940,17 +3516,17 @@
    "rank": 7
   },
   {
-   "title": "Anthropic Just Dropped Claude Whiteboard, Sheets and Data",
-   "url": "https://uxplanet.org/anthropic-just-dropped-claude-whiteboard-sheets-and-data-a9a89b69a3d8?source=rss----819cc2aaeee0---4",
-   "source": "uxplanet",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
-  },
-  {
    "title": "Cursor Traces Breach to Access Key Exposed by Fireworks AI",
    "url": "https://www.unite.ai/cursor-traces-breach-to-access-key-exposed-by-fireworks-ai/",
    "source": "uniteai",
+   "metric": "feed rank",
+   "score": 9,
+   "rank": 7
+  },
+  {
+   "title": "Stop passing req.user everywhere: I ported Spring Security's architecture to Express",
+   "url": "https://www.reddit.com/r/node/comments/1xubgsm/stop_passing_requser_everywhere_i_ported_spring/",
+   "source": "rnode",
    "metric": "feed rank",
    "score": 9,
    "rank": 7
@@ -3972,9 +3548,9 @@
    "rank": 7
   },
   {
-   "title": "Do my website looks AI?",
-   "url": "https://www.reddit.com/r/Frontend/comments/1xtmsds/do_my_website_looks_ai/",
-   "source": "rfrontend",
+   "title": "Spacebin: a lightweight, self-hosted pastebin server in Go (JS-free, encrypted pastes)",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xx3f8c/spacebin_a_lightweight_selfhosted_pastebin_server/",
+   "source": "rselfhosted",
    "metric": "feed rank",
    "score": 9,
    "rank": 7
@@ -4100,14 +3676,6 @@
    "rank": 7
   },
   {
-   "title": "We found 45 early Black Friday deals: $250 off MacBooks, live Lego discounts, and Kindles on sale",
-   "url": "https://mashable.com/tech/best-early-black-friday-live-deals-2026",
-   "source": "feeds3",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 7
-  },
-  {
    "title": "Are private AI companies undervalued right now?",
    "url": "https://kelvinmu.substack.com/p/are-private-ai-companies-undervalued",
    "source": "kelvinmu",
@@ -4122,14 +3690,6 @@
    "metric": "feed rank",
    "score": 9,
    "rank": 7
-  },
-  {
-   "title": "From running edge-rendered Angular apps on Cloudflare Workers to crafting lifelike speech with…",
-   "url": "https://blog.angular.dev/from-running-edge-rendered-angular-apps-on-cloudflare-workers-to-crafting-lifelike-speech-with-67513b4b85e1?source=rss----447683c3d9a3---4",
-   "source": "w3blog4",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 2
   },
   {
    "title": "SpaceX catches upper stage of Starship rocket in historic first",
@@ -4316,14 +3876,6 @@
    "rank": 7
   },
   {
-   "title": "Your agents should ask the factory first",
-   "url": "https://devinterrupted.substack.com/p/your-agents-should-ask-the-factory",
-   "source": "devinterrupted",
-   "metric": "feed rank",
-   "score": 9,
-   "rank": 7
-  },
-  {
    "title": "ChinAI #375: Critiquing Anthropic’s Variant of Pacing the Frontier",
    "url": "https://chinai.substack.com/p/chinai-375-critiquing-anthropics",
    "source": "chinai",
@@ -4362,14 +3914,6 @@
    "metric": "feed rank",
    "score": 8,
    "rank": 8
-  },
-  {
-   "title": "know how your org works (or how to become a more effective engineer)",
-   "url": "https://copyconstruct.medium.com/know-how-your-org-works-or-how-to-become-a-more-effective-engineer-1a3287d1f58d?source=rss-87c8c84f24b1------2",
-   "source": "copyconstruct",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
   },
   {
    "title": "November newsletter",
@@ -4428,28 +3972,12 @@
    "rank": 8
   },
   {
-   "title": "Signal Value Transforms, Routing Essentials, and Video Extension with Veo! ⚡",
-   "url": "https://blog.angular.dev/signal-value-transforms-routing-essentials-and-video-extension-with-veo-3846cae9283a?source=rss----447683c3d9a3---4",
-   "source": "blogangular",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
    "title": "How Tecovas automates bug fixes with LogRocket’s Galileo AI",
    "url": "https://blog.logrocket.com/tecovas-galileo-ai/",
    "source": "bloglogrocket",
    "metric": "feed rank",
    "score": 8,
    "rank": 5
-  },
-  {
-   "title": "Generating prototypes from game design document with Cursor, Zed and LÖVE",
-   "url": "https://blog.luden.io/generating-prototypes-from-game-design-document-with-cursor-zed-and-l%C3%B6ve-7b8d932194d7?source=rss----d6f120d108d1---4",
-   "source": "blogluden",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
   },
   {
    "title": "How to create a glassmorphism generator tool",
@@ -4466,30 +3994,6 @@
    "metric": "feed rank",
    "score": 8,
    "rank": 8
-  },
-  {
-   "title": "Building a Lightweight Kubernetes Environment on K3s and the kubectl command on WSL2 Windows 11",
-   "url": "https://itnext.io/building-a-lightweight-kubernetes-environment-on-k3s-and-the-kubectl-command-on-wsl2-windows-11-e2b2ca3af082?source=rss----5b301f10ddcd---4",
-   "source": "itnext",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
-   "title": "Why We Need to Keep Competition Alive",
-   "url": "https://marker.medium.com/why-we-need-to-keep-competition-alive-cba7df57b58c?source=rss----7b6769f2748b---4",
-   "source": "markermedium",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
-   "title": "How we think about text classification in the LLM era",
-   "url": "https://medium.engineering/how-we-think-about-text-classification-in-the-llm-era-89a185f79b68?source=rss----2817475205d3---4",
-   "source": "medium",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
   },
   {
    "title": "136: sshd and Emacs",
@@ -4516,22 +4020,6 @@
    "rank": 8
   },
   {
-   "title": "How to Create a Search Bar in React",
-   "url": "https://upmostly.com/tutorials/how-to-create-a-search-bar-in-react",
-   "source": "upmostly",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
-   "title": "What is RAFT? RAG + Fine-Tuning",
-   "url": "https://becominghuman.ai/what-is-raft-rag-fine-tuning-e16cbb3e03f0?source=rss----5e5bef33608a---4",
-   "source": "becominghuman",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
    "title": "Convenient CSS naming conventions",
    "url": "https://csshell.dev/posts/convenient-css-naming-conventions/",
    "source": "csshell",
@@ -4556,76 +4044,12 @@
    "rank": 8
   },
   {
-   "title": "CSS px vs Actual Pixels",
-   "url": "https://tangledweb.xyz/hi-ben-thank-you-for-the-question-and-its-a-good-one-so-i-should-probably-edit-the-article-to-27691a6377a3?source=rss----36d7830f6552---4",
-   "source": "tangledweb",
+   "title": "Training-free early exit for reasoning models: a linear probe folded into the </think> row of the output layer [p]",
+   "url": "https://www.reddit.com/r/MachineLearning/comments/1xx1xdm/trainingfree_early_exit_for_reasoning_models_a/",
+   "source": "reddit",
    "metric": "feed rank",
    "score": 8,
-   "rank": 3
-  },
-  {
-   "title": "Master your career journey: The power of intentional growth",
-   "url": "https://wix-ux.com/master-your-career-journey-the-power-of-intentional-growth-43348d056fc1?source=rss----5c12f12b4121---4",
-   "source": "wixux",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
-   "title": "Leveling Up: Your Roadmap to Senior Engineering Manager",
-   "url": "https://benchling.engineering/leveling-up-your-roadmap-to-senior-engineering-management-593545039822?source=rss----3d4aa8fb07ea---4",
-   "source": "benchling",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
-   "title": "AI Sovereignty is Your Alpha",
-   "url": "https://blog.palantir.com/ai-sovereignty-is-your-alpha-how-to-avoid-transferring-your-alpha-to-a-hosted-model-provider-774a1b35bf98?source=rss----3c87dc14372f---4",
-   "source": "blogpalantir",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
-   "title": "Scaling Nextdoor’s Datastores: Part 3",
-   "url": "https://engblog.nextdoor.com/scaling-nextdoors-datastores-part-3-e9b4dd8a9393?source=rss----5e54f11cdfdf---4",
-   "source": "engblognextdoor",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
-   "title": "Treat Testing Pain with a Healthy Dose of Test Strategy",
-   "url": "https://engineering.ziffmedia.com/treat-testing-pain-with-a-healthy-dose-of-test-strategy-43285deaad95?source=rss----d6bb34696ef5---4",
-   "source": "engineeringziffmedia",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
-   "title": "Building an app with the Teamwork Developer Portal?",
-   "url": "https://engineroom.teamwork.com/building-an-app-with-the-teamwork-developer-portal-e4843579769e?source=rss----cea4eecd5960---4",
-   "source": "engineroomteamwork",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
-   "title": "A Day In The Life at Apple Park! Blinkit at WWDC 2026",
-   "url": "https://lambda.blinkit.com/a-day-in-the-life-at-apple-park-blinkit-at-wwdc-2026-d01cc542a29d?source=rss----42df4a1e8725---4",
-   "source": "lambdablinkit",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
-   "title": "Handling concurrency on the Web with Web Locks API",
-   "url": "https://tech.olx.com/handling-concurrency-on-the-web-with-web-locks-api-163b7e07eddd?source=rss----761b019b483f---4",
-   "source": "techolx",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
+   "rank": 8
   },
   {
    "title": "Understanding Go: inside PGO",
@@ -4668,6 +4092,14 @@
    "rank": 8
   },
   {
+   "title": "Symmetry gives 136 states, the Hankel rank is 51: minimal weighted automaton for 3-colourings of grid strips (review request)",
+   "url": "https://www.reddit.com/r/compsci/comments/1xrkhrh/symmetry_gives_136_states_the_hankel_rank_is_51/",
+   "source": "rcompsci",
+   "metric": "feed rank",
+   "score": 8,
+   "rank": 8
+  },
+  {
    "title": "sift: format, lint and LSP for Scheme/Elisp/CL > 90 lint rules, one binary, and it also compiles to WASM (Guile Hoot)",
    "url": "https://www.reddit.com/r/lisp/comments/1xu6zao/sift_format_lint_and_lsp_for_schemeelispcl_90/",
    "source": "rlisp",
@@ -4684,20 +4116,12 @@
    "rank": 8
   },
   {
-   "title": "New Relase of Swiss Army Knife",
-   "url": "https://www.reddit.com/r/haskell/comments/1xry5ue/new_relase_of_swiss_army_knife/",
-   "source": "rhaskell",
+   "title": "FAA back at \"full operations\" after Friday outage, Transportation Sec. says",
+   "url": "https://www.axios.com/2026/11/14/faa-ground-stop-outage-update",
+   "source": "apiaxios",
    "metric": "feed rank",
    "score": 8,
    "rank": 8
-  },
-  {
-   "title": "Your Android APK Is Bigger Than It Needs to Be: 22 Smart Ways to Reduce Its Size",
-   "url": "https://proandroiddev.com/your-android-apk-is-bigger-than-it-needs-to-be-22-smart-ways-to-reduce-its-size-d39f678e5b43?source=rss----c72404660798---4",
-   "source": "proandroiddev",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
   },
   {
    "title": "Uber drivers’ licence data stolen in Fireworks AI hack",
@@ -4708,41 +4132,9 @@
    "rank": 3
   },
   {
-   "title": "The crooked plate that felt more human than the algorithm",
-   "url": "https://uxdesign.cc/the-crooked-plate-that-felt-more-human-than-the-algorithm-40bb4e5da147?source=rss----138adf9c44c---4",
-   "source": "uxdesign",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
    "title": "MemShrink’s 6th Birthday",
    "url": "https://erahm.org/2017/05/29/memshrinks-6th-birthday/",
    "source": "erahm",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
-   "title": "Multi‑Ratio Video Resizing for Mobile Feed and Marketing",
-   "url": "https://netflixtechblog.com/multi-ratio-video-resizing-for-mobile-feed-and-marketing-2e6b42810f49?source=rss----2615bd06b42e---4",
-   "source": "netflix",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
-   "title": "Refreshing the Travel-Time Map Behind Lyft’s Marketplace: Rebuilding Neighborhood Reachability…",
-   "url": "https://eng.lyft.com/refreshing-the-travel-time-map-behind-lyfts-marketplace-rebuilding-neighborhood-reachability-5be3efbc82ea?source=rss----25cd379abb8---4",
-   "source": "lyft",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
-   "title": "Beyond synthetic testing: Capturing and replaying real database workloads at Airbnb",
-   "url": "https://medium.com/airbnb-engineering/beyond-synthetic-testing-capturing-and-replaying-real-database-workloads-at-airbnb-cea7ee9b1ab2?source=rss----53c7c27702d5---4",
-   "source": "airbnb",
    "metric": "feed rank",
    "score": 8,
    "rank": 3
@@ -4780,17 +4172,17 @@
    "rank": 8
   },
   {
-   "title": "Why Nobody Is Talking About Claude Fable 5.2",
-   "url": "https://uxplanet.org/why-nobody-is-talking-about-claude-fable-5-2-9395c67d1722?source=rss----819cc2aaeee0---4",
-   "source": "uxplanet",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 3
-  },
-  {
    "title": "FAA Issues Nationwide Ground Stop After Communications Problems",
    "url": "https://www.unite.ai/faa-issues-nationwide-ground-stop-after-communications-problems/",
    "source": "uniteai",
+   "metric": "feed rank",
+   "score": 8,
+   "rank": 8
+  },
+  {
+   "title": "3 years ago I posted my first Node Package, now it's at +1M monthly downloads.",
+   "url": "https://www.reddit.com/r/node/comments/1xtr0ue/3_years_ago_i_posted_my_first_node_package_now/",
+   "source": "rnode",
    "metric": "feed rank",
    "score": 8,
    "rank": 8
@@ -4812,9 +4204,9 @@
    "rank": 8
   },
   {
-   "title": "What we learned operating auth for 1,000+ APIs",
-   "url": "https://www.reddit.com/r/Frontend/comments/1xs0dwd/what_we_learned_operating_auth_for_1000_apis/",
-   "source": "rfrontend",
+   "title": "Vortix - Terminal UI for WireGuard and OpenVPN with real-time telemetry and leak guarding",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xwy0n2/vortix_terminal_ui_for_wireguard_and_openvpn_with/",
+   "source": "rselfhosted",
    "metric": "feed rank",
    "score": 8,
    "rank": 8
@@ -4980,12 +4372,12 @@
    "rank": 8
   },
   {
-   "title": "Signal Value Transforms, Routing Essentials, and Video Extension with Veo! ⚡",
-   "url": "https://blog.angular.dev/signal-value-transforms-routing-essentials-and-video-extension-with-veo-3846cae9283a?source=rss----447683c3d9a3---4",
-   "source": "w3blog4",
+   "title": "All Apple Watch Series 12 models just dropped to the lowest price ever",
+   "url": "https://9to5mac.com/2026/11/15/apple-watch-series-12-black-friday-deals-lowest-price/",
+   "source": "9to5mac",
    "metric": "feed rank",
    "score": 8,
-   "rank": 3
+   "rank": 8
   },
   {
    "title": "Crime blotter: Truck driver pleads guilty to theft of iPhones, iPads",
@@ -5156,14 +4548,6 @@
    "rank": 8
   },
   {
-   "title": "Building the software factory from the spec up | LinearB's Ariel Illouz & Ofer Affias",
-   "url": "https://devinterrupted.substack.com/p/building-the-software-factory-from",
-   "source": "devinterrupted",
-   "metric": "feed rank",
-   "score": 8,
-   "rank": 8
-  },
-  {
    "title": "ChinAI #374: China’s first AI-generated longform TV series",
    "url": "https://chinai.substack.com/p/chinai-374-chinas-first-ai-generated",
    "source": "chinai",
@@ -5202,14 +4586,6 @@
    "metric": "feed rank",
    "score": 7,
    "rank": 9
-  },
-  {
-   "title": "Best of 2021 in Tech [Talks]",
-   "url": "https://copyconstruct.medium.com/best-of-2021-in-tech-talks-331ec9454b4?source=rss-87c8c84f24b1------2",
-   "source": "copyconstruct",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
   },
   {
    "title": "October 2020 news",
@@ -5268,28 +4644,12 @@
    "rank": 9
   },
   {
-   "title": "Architecting the Modern Web: Debounce APIs, Rendering Strategies, and Automated AI Setup! ⚡",
-   "url": "https://blog.angular.dev/architecting-the-modern-web-debounce-apis-rendering-strategies-and-automated-ai-setup-826bc54ae3a9?source=rss----447683c3d9a3---4",
-   "source": "blogangular",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
    "title": "Goodhart’s Law: How optimizing for metrics can hurt your product",
    "url": "https://blog.logrocket.com/product-management/goodharts-law-product-metrics/",
    "source": "bloglogrocket",
    "metric": "feed rank",
    "score": 7,
    "rank": 6
-  },
-  {
-   "title": "Defold game engine for Steam games production",
-   "url": "https://blog.luden.io/defold-game-engine-for-steam-games-production-1f4e657c012e?source=rss----d6f120d108d1---4",
-   "source": "blogluden",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
   },
   {
    "title": "How to create infinite text scrolling in HTML, CSS, and JavaScript",
@@ -5306,30 +4666,6 @@
    "metric": "feed rank",
    "score": 7,
    "rank": 9
-  },
-  {
-   "title": "How do RPO, RTO and SLO relate to each other and why on earth would you add AI to the mix?",
-   "url": "https://itnext.io/how-do-rpo-rto-and-slo-relate-to-each-other-and-why-on-earth-would-you-add-ai-to-the-mix-cae68db8bbfb?source=rss----5b301f10ddcd---4",
-   "source": "itnext",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
-   "title": "Twitter After Elon",
-   "url": "https://marker.medium.com/twitter-after-elon-a52ddf578f09?source=rss----7b6769f2748b---4",
-   "source": "markermedium",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
-   "title": "How we built the new Table of Contents feature",
-   "url": "https://medium.engineering/how-we-built-the-new-table-of-contents-feature-c3825d8c279d?source=rss----2817475205d3---4",
-   "source": "medium",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
   },
   {
    "title": "October’s Orthopedic Sausage",
@@ -5356,22 +4692,6 @@
    "rank": 9
   },
   {
-   "title": "What is Hash Routing?",
-   "url": "https://upmostly.com/tutorials/what-is-hash-routing",
-   "source": "upmostly",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
-   "title": "Modern Operating Systems for AI Agents",
-   "url": "https://becominghuman.ai/modern-operating-systems-for-ai-agents-ef66f88103c4?source=rss----5e5bef33608a---4",
-   "source": "becominghuman",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
    "title": "Let's talk about units",
    "url": "https://csshell.dev/posts/lets-talk-about-units/",
    "source": "csshell",
@@ -5394,78 +4714,6 @@
    "metric": "feed rank",
    "score": 7,
    "rank": 9
-  },
-  {
-   "title": "Notes Regarding Lines and Zooming",
-   "url": "https://tangledweb.xyz/hi-elise-a-great-article-4f09455a5207?source=rss----36d7830f6552---4",
-   "source": "tangledweb",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
-   "title": "Elevating Product Quality: The UX Blitz Approach",
-   "url": "https://wix-ux.com/elevating-product-quality-the-ux-blitz-approach-56cd3961e1b9?source=rss----5c12f12b4121---4",
-   "source": "wixux",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
-   "title": "The Multi-Model Playbook",
-   "url": "https://benchling.engineering/the-multi-model-playbook-20d5fba48562?source=rss----3d4aa8fb07ea---4",
-   "source": "benchling",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
-   "title": "Managing Elasticsearch Reindex at Scale: Performance, Reliability, and Observability",
-   "url": "https://blog.palantir.com/managing-elasticsearch-reindex-at-scale-performance-reliability-and-observability-cf948d0efd47?source=rss----3c87dc14372f---4",
-   "source": "blogpalantir",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
-   "title": "Scaling Nextdoor’s Datastores: Part 2",
-   "url": "https://engblog.nextdoor.com/scaling-nextdoors-datastores-part-2-513922e4b4b1?source=rss----5e54f11cdfdf---4",
-   "source": "engblognextdoor",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
-   "title": "Better Code Review: Part 3",
-   "url": "https://engineering.ziffmedia.com/better-code-review-part-3-4efb568885?source=rss----d6bb34696ef5---4",
-   "source": "engineeringziffmedia",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
-   "title": "Prophecy: Teamwork’s Data Lake",
-   "url": "https://engineroom.teamwork.com/prophecy-teamworks-data-lake-1a8ebb6dd3ae?source=rss----cea4eecd5960---4",
-   "source": "engineroomteamwork",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
-   "title": "How a Deadlock Froze Blinkit’s Supply Chain",
-   "url": "https://lambda.blinkit.com/how-a-deadlock-froze-blinkits-supply-chain-4b7c4d6d4a3f?source=rss----42df4a1e8725---4",
-   "source": "lambdablinkit",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
-   "title": "Empowering Innovation Through Structure",
-   "url": "https://tech.olx.com/empowering-innovation-through-structure-93c15614f6d3?source=rss----761b019b483f---4",
-   "source": "techolx",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
   },
   {
    "title": "What we learned operating auth for 1,000+ APIs",
@@ -5508,6 +4756,14 @@
    "rank": 9
   },
   {
+   "title": "Moving Beyond The Compute Arms Race: A Discussion and Technical White Paper",
+   "url": "https://www.reddit.com/r/compsci/comments/1xrb9zj/moving_beyond_the_compute_arms_race_a_discussion/",
+   "source": "rcompsci",
+   "metric": "feed rank",
+   "score": 7,
+   "rank": 9
+  },
+  {
    "title": "Kawa - A optionally typed scheme for JVM which is performant",
    "url": "https://www.reddit.com/r/lisp/comments/1xu8cxy/kawa_a_optionally_typed_scheme_for_jvm_which_is/",
    "source": "rlisp",
@@ -5524,28 +4780,12 @@
    "rank": 9
   },
   {
-   "title": "FSK modulator in Haskell coming from imperative programmer",
-   "url": "https://www.reddit.com/r/haskell/comments/1xr6ysk/fsk_modulator_in_haskell_coming_from_imperative/",
-   "source": "rhaskell",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 9
-  },
-  {
    "title": "AI's four colliding crises",
    "url": "https://www.axios.com/2026/11/14/ai-trust-nvidia-tech-stocks",
    "source": "apiaxios",
    "metric": "feed rank",
    "score": 7,
    "rank": 9
-  },
-  {
-   "title": "Inside Jetpack Compose’s $changed Bit Field: Static Arguments and Fewer Runtime Comparisons",
-   "url": "https://proandroiddev.com/jetpack-compose-compiler-internals-24370c24a891?source=rss----c72404660798---4",
-   "source": "proandroiddev",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
   },
   {
    "title": "EV makers aren’t counting on Democrats to revive tax credits, CNBC says",
@@ -5556,41 +4796,9 @@
    "rank": 4
   },
   {
-   "title": "AI is the new old design material",
-   "url": "https://uxdesign.cc/ai-is-the-new-old-design-material-0e7f83540c9a?source=rss----138adf9c44c---4",
-   "source": "uxdesign",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
    "title": "Are we slim yet is dead, all hail are we slim yet",
    "url": "https://erahm.org/2017/05/25/are-we-slim-yet-is-dead-all-hail-are-we-slim-yet/",
    "source": "erahm",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
-   "title": "Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes",
-   "url": "https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90?source=rss----2615bd06b42e---4",
-   "source": "netflix",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
-   "title": "Rerouting the Stream: How Lyft Moved to the Apache Flink Kubernetes Operator",
-   "url": "https://eng.lyft.com/rerouting-the-stream-how-lyft-moved-to-the-apache-flink-operator-36f20246d250?source=rss----25cd379abb8---4",
-   "source": "lyft",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
-   "title": "Personalization without user identity",
-   "url": "https://medium.com/airbnb-engineering/personalization-without-user-identity-8e7891a1d486?source=rss----53c7c27702d5---4",
-   "source": "airbnb",
    "metric": "feed rank",
    "score": 7,
    "rank": 4
@@ -5628,17 +4836,17 @@
    "rank": 9
   },
   {
-   "title": "Want to Create Animations with Claude Code? Try These 5 GitHub Repositories",
-   "url": "https://uxplanet.org/want-to-create-animations-with-claude-code-try-these-5-github-repositories-8f5c5bb24908?source=rss----819cc2aaeee0---4",
-   "source": "uxplanet",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
    "title": "Anthropic IPO Could Raise $64 Billion as Orders Reach Six Times",
    "url": "https://www.unite.ai/anthropic-ipo-could-raise-64-billion-as-orders-reach-six-times/",
    "source": "uniteai",
+   "metric": "feed rank",
+   "score": 7,
+   "rank": 9
+  },
+  {
+   "title": "npm install",
+   "url": "https://www.reddit.com/r/node/comments/1xtgxuu/npm_install/",
+   "source": "rnode",
    "metric": "feed rank",
    "score": 7,
    "rank": 9
@@ -5655,14 +4863,6 @@
    "title": "GitHub - io7/FreePDF: MIT-licensed continuation of PDFsharp and MigraDoc for .NET",
    "url": "https://www.reddit.com/r/dotnet/comments/1xw720k/github_io7freepdf_mitlicensed_continuation_of/",
    "source": "rdotnet",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 9
-  },
-  {
-   "title": "Problem with concurrent linter fixes",
-   "url": "https://www.reddit.com/r/Frontend/comments/1xradl4/problem_with_concurrent_linter_fixes/",
-   "source": "rfrontend",
    "metric": "feed rank",
    "score": 7,
    "rank": 9
@@ -5836,17 +5036,17 @@
    "rank": 9
   },
   {
-   "title": "Architecting the Modern Web: Debounce APIs, Rendering Strategies, and Automated AI Setup! ⚡",
-   "url": "https://blog.angular.dev/architecting-the-modern-web-debounce-apis-rendering-strategies-and-automated-ai-setup-826bc54ae3a9?source=rss----447683c3d9a3---4",
-   "source": "w3blog4",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 4
-  },
-  {
    "title": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
    "url": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
    "source": "cnbc",
+   "metric": "feed rank",
+   "score": 7,
+   "rank": 9
+  },
+  {
+   "title": "Hands-on: ESR’s MagSafe kickstand charger solves two key iPhone Duo shortcomings",
+   "url": "https://9to5mac.com/2026/11/14/hands-on-esrs-magsafe-kickstand-charger-solves-two-key-iphone-duo-shortcomings/",
+   "source": "9to5mac",
    "metric": "feed rank",
    "score": 7,
    "rank": 9
@@ -6052,14 +5252,6 @@
    "rank": 9
   },
   {
-   "title": "The hardest parts about agents can’t fit on a billboard",
-   "url": "https://devinterrupted.substack.com/p/the-hardest-parts-about-agents-cant",
-   "source": "devinterrupted",
-   "metric": "feed rank",
-   "score": 7,
-   "rank": 9
-  },
-  {
    "title": "ChinAI #373: The OpenClaw Hype and Overestimating China’s Diffusion Advantage",
    "url": "https://chinai.substack.com/p/chinai-373-the-openclaw-hype-and",
    "source": "chinai",
@@ -6114,14 +5306,6 @@
    "metric": "feed rank",
    "score": 6,
    "rank": 10
-  },
-  {
-   "title": "Best of 2020 in Tech [Talks]",
-   "url": "https://copyconstruct.medium.com/best-of-2020-in-tech-talks-2f29002f4a92?source=rss-87c8c84f24b1------2",
-   "source": "copyconstruct",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
   },
   {
    "title": "September 2020 News",
@@ -6180,28 +5364,12 @@
    "rank": 10
   },
   {
-   "title": "An update on Angular’s TypeScript 7-powered Compiler",
-   "url": "https://blog.angular.dev/an-update-on-angulars-typescript-7-powered-compiler-9619a35e2b0a?source=rss----447683c3d9a3---4",
-   "source": "blogangular",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
    "title": "What is OctaneJS? A compiler-first alternative to React",
    "url": "https://blog.logrocket.com/octanejs-compiler-first-react-alternative/",
    "source": "bloglogrocket",
    "metric": "feed rank",
    "score": 6,
    "rank": 7
-  },
-  {
-   "title": "What do I think about Lua after shipping a project with 60,000 lines of code?",
-   "url": "https://blog.luden.io/what-do-i-think-about-lua-after-shipping-a-project-with-60-000-lines-of-code-bf72a1328733?source=rss----d6f120d108d1---4",
-   "source": "blogluden",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
   },
   {
    "title": "25 ridiculously impressive HTML5 canvas experiments",
@@ -6218,30 +5386,6 @@
    "metric": "feed rank",
    "score": 6,
    "rank": 10
-  },
-  {
-   "title": "Why a Java pod gets OOMKilled in Kubernetes with a half-empty heap",
-   "url": "https://itnext.io/why-a-java-pod-gets-oomkilled-in-kubernetes-with-a-half-empty-heap-e610e92dc9ee?source=rss----5b301f10ddcd---4",
-   "source": "itnext",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
-   "title": "The Elon Musk Rollercoaster of Volatility",
-   "url": "https://marker.medium.com/the-elon-musk-rollercoaster-of-volatility-9c3fcf0f413d?source=rss----7b6769f2748b---4",
-   "source": "markermedium",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
-   "title": "Outcomes we want to see from AI at Medium Engineering",
-   "url": "https://medium.engineering/outcomes-we-want-to-see-from-ai-at-medium-engineering-10891d52a19f?source=rss----2817475205d3---4",
-   "source": "medium",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
   },
   {
    "title": "135: What Flunkies Are For",
@@ -6268,22 +5412,6 @@
    "rank": 10
   },
   {
-   "title": "How to set up a React application using Vite",
-   "url": "https://upmostly.com/tutorials/how-to-set-up-a-react-application-using-vite",
-   "source": "upmostly",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
-   "title": "NLP in 2026: Trends, Use Cases & Future of Language AI | Shaip",
-   "url": "https://becominghuman.ai/nlp-in-2026-trends-use-cases-future-of-language-ai-shaip-3a0c0362191e?source=rss----5e5bef33608a---4",
-   "source": "becominghuman",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
    "title": "font-variation-misfortune",
    "url": "https://csshell.dev/posts/font-variation-misfortune/",
    "source": "csshell",
@@ -6306,86 +5434,6 @@
    "metric": "feed rank",
    "score": 6,
    "rank": 10
-  },
-  {
-   "title": "Regarding Black Text",
-   "url": "https://tangledweb.xyz/hi-kevin-im-going-to-add-example-images-to-this-in-a-moment-defe0f96c652?source=rss----36d7830f6552---4",
-   "source": "tangledweb",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
-   "title": "The Secret Ingredient for Team Success: Personal Connections",
-   "url": "https://wix-ux.com/the-secret-ingredient-for-team-success-personal-connections-afa9e240c6c4?source=rss----5c12f12b4121---4",
-   "source": "wixux",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
-   "title": "We made a multiplayer game where each player's view is generated by a world model running on their GPU [P]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1xx4ta3/we_made_a_multiplayer_game_where_each_players/",
-   "source": "reddit",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 10
-  },
-  {
-   "title": "How We Run Terraform At Scale",
-   "url": "https://benchling.engineering/how-we-run-terraform-at-scale-da7bb75dc394?source=rss----3d4aa8fb07ea---4",
-   "source": "benchling",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
-   "title": "Enterprise Business Software and the Mixed-Up Chameleon Problem",
-   "url": "https://blog.palantir.com/enterprise-business-software-and-the-mixed-up-chameleon-problem-f16df333bc71?source=rss----3c87dc14372f---4",
-   "source": "blogpalantir",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
-   "title": "Scaling Nextdoor’s Datastores: Part 1",
-   "url": "https://engblog.nextdoor.com/scaling-nextdoors-datastores-part-1-234d0cf67665?source=rss----5e54f11cdfdf---4",
-   "source": "engblognextdoor",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
-   "title": "Better Code Review: Part Two",
-   "url": "https://engineering.ziffmedia.com/better-code-review-part-two-92f17ee42c56?source=rss----d6bb34696ef5---4",
-   "source": "engineeringziffmedia",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
-   "title": "Vue.js Advanced Reactivity API and Caching Method-style Getters",
-   "url": "https://engineroom.teamwork.com/vue-js-advanced-reactivity-api-and-caching-method-style-getters-a80979b6660?source=rss----cea4eecd5960---4",
-   "source": "engineroomteamwork",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
-   "title": "How Blinkit Cracked Android’s Performance Puzzle with Droid Dex",
-   "url": "https://lambda.blinkit.com/droid-dex-1f807901626f?source=rss----42df4a1e8725---4",
-   "source": "lambdablinkit",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
-   "title": "OLX Masterclass Frontend 2026",
-   "url": "https://tech.olx.com/olx-masterclass-frontend-2026-068299a2df50?source=rss----761b019b483f---4",
-   "source": "techolx",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
   },
   {
    "title": "It's all about the allocator",
@@ -6428,6 +5476,14 @@
    "rank": 10
   },
   {
+   "title": "Challenges in calculating ETA at scale",
+   "url": "https://www.reddit.com/r/compsci/comments/1xqccpo/challenges_in_calculating_eta_at_scale/",
+   "source": "rcompsci",
+   "metric": "feed rank",
+   "score": 6,
+   "rank": 10
+  },
+  {
    "title": "pix-el",
    "url": "https://www.reddit.com/r/lisp/comments/1xu7vd5/pixel/",
    "source": "rlisp",
@@ -6444,28 +5500,12 @@
    "rank": 10
   },
   {
-   "title": "[ANN] hmssql: Pure Haskell SQL Server client (mostly AI-coded)",
-   "url": "https://www.reddit.com/r/haskell/comments/1xrltqi/ann_hmssql_pure_haskell_sql_server_client_mostly/",
-   "source": "rhaskell",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 10
-  },
-  {
    "title": "MAGA turns on Lutnick amid China spy scandal",
    "url": "https://www.axios.com/2026/11/14/lutnick-commerce-china",
    "source": "apiaxios",
    "metric": "feed rank",
    "score": 6,
    "rank": 10
-  },
-  {
-   "title": "How to get 12 testers for Google Play closed testing (and actually pass)",
-   "url": "https://proandroiddev.com/how-to-get-12-testers-for-google-play-closed-testing-and-actually-pass-6a2ab52a0779?source=rss----c72404660798---4",
-   "source": "proandroiddev",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
   },
   {
    "title": "Microsoft outage revives Europe’s tech sovereignty push, Politico says",
@@ -6476,41 +5516,9 @@
    "rank": 5
   },
   {
-   "title": "The AI mind tax that afflicts those who use AI best",
-   "url": "https://uxdesign.cc/the-ai-mind-tax-that-afflicts-those-who-use-ai-best-3eb67ff167d0?source=rss----138adf9c44c---4",
-   "source": "uxdesign",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
    "title": "A Rust-based XML parser for Firefox",
    "url": "https://erahm.org/2017/05/24/a-rust-based-xml-parser-for-firefox/",
    "source": "erahm",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
-   "title": "Single-tenant Titus: VM-level isolation on a multi-tenant container platform",
-   "url": "https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163?source=rss----2615bd06b42e---4",
-   "source": "netflix",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
-   "title": "From Day 1 to Production: Building Lyft’s Analytics & Rides Intelligence Assistant as Onboarding…",
-   "url": "https://eng.lyft.com/from-day-1-to-production-building-lyfts-analytics-rides-intelligence-assistant-as-onboarding-5c5643c192d9?source=rss----25cd379abb8---4",
-   "source": "lyft",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
-   "title": "The guest journey, updated in real time: extending Airbnb’s sequence recommender with Chronon",
-   "url": "https://medium.com/airbnb-engineering/the-guest-journey-updated-in-real-time-extending-airbnbs-sequence-recommender-with-chronon-8f1582578553?source=rss----53c7c27702d5---4",
-   "source": "airbnb",
    "metric": "feed rank",
    "score": 6,
    "rank": 5
@@ -6548,17 +5556,17 @@
    "rank": 10
   },
   {
-   "title": "3 UX Design Courses Worth Taking If You’ve Already Mastered the Basics",
-   "url": "https://uxplanet.org/3-ux-design-courses-worth-taking-if-youve-already-mastered-the-basics-956a5b2b0a36?source=rss----819cc2aaeee0---4",
-   "source": "uxplanet",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
    "title": "Fortreum Launches Kovr-Powered VDR/VER Offering Ahead of FedRAMP Vulnerability Deadline",
    "url": "https://www.unite.ai/fortreum-kovr-vdr-ver-fedramp-vulnerability-deadline/",
    "source": "uniteai",
+   "metric": "feed rank",
+   "score": 6,
+   "rank": 10
+  },
+  {
+   "title": "Building a multi-platform gaming project (E-commerce + Community + Video) — Need stack & database feedback",
+   "url": "https://www.reddit.com/r/node/comments/1xtnw2u/building_a_multiplatform_gaming_project_ecommerce/",
+   "source": "rnode",
    "metric": "feed rank",
    "score": 6,
    "rank": 10
@@ -6575,14 +5583,6 @@
    "title": "zip ExtractToFile change in .Net 11",
    "url": "https://www.reddit.com/r/dotnet/comments/1xw3m06/zip_extracttofile_change_in_net_11/",
    "source": "rdotnet",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 10
-  },
-  {
-   "title": "Introducing Skif - a repository/monorepo linter written in Rust",
-   "url": "https://www.reddit.com/r/Frontend/comments/1xrnqxf/introducing_skif_a_repositorymonorepo_linter/",
-   "source": "rfrontend",
    "metric": "feed rank",
    "score": 6,
    "rank": 10
@@ -6772,14 +5772,6 @@
    "rank": 10
   },
   {
-   "title": "An update on Angular’s TypeScript 7-powered Compiler",
-   "url": "https://blog.angular.dev/an-update-on-angulars-typescript-7-powered-compiler-9619a35e2b0a?source=rss----447683c3d9a3---4",
-   "source": "w3blog4",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 5
-  },
-  {
    "title": "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off",
    "url": "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
    "source": "cnbc",
@@ -6858,6 +5850,14 @@
    "metric": "feed rank",
    "score": 6,
    "rank": 5
+  },
+  {
+   "title": "Talyn - 在并行云沙箱中运行 Claude Code 和 Codex",
+   "url": "https://xinquji.com/posts/860926?utm_campaign=xinquji-rss",
+   "source": "xinquji",
+   "metric": "feed rank",
+   "score": 6,
+   "rank": 10
   },
   {
    "title": "WebGL 3D Geometry - Lathe",
@@ -6988,14 +5988,6 @@
    "rank": 10
   },
   {
-   "title": "A neutral home for MCP, A2A, goose, and more | AAIF co-founder Manik Surtani",
-   "url": "https://devinterrupted.substack.com/p/a-neutral-home-for-mcp-a2a-goose",
-   "source": "devinterrupted",
-   "metric": "feed rank",
-   "score": 6,
-   "rank": 10
-  },
-  {
    "title": "ChinAI #372: China’s Overhyped Embodied AI Sector",
    "url": "https://chinai.substack.com/p/chinai-372-chinas-overhyped-embodied",
    "source": "chinai",
@@ -7068,14 +6060,6 @@
    "rank": 11
   },
   {
-   "title": "Seamless file descriptor transfer between processes with pidfd and pidfd_getfd",
-   "url": "https://copyconstruct.medium.com/seamless-file-descriptor-transfer-between-processes-with-pidfd-and-pidfd-getfd-816afcd19ed4?source=rss-87c8c84f24b1------2",
-   "source": "copyconstruct",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
    "title": "August 2020 gwern.net newsletter",
    "url": "https://gwern.substack.com/p/august-2020-gwernnet-newsletter",
    "source": "gwern",
@@ -7132,28 +6116,12 @@
    "rank": 11
   },
   {
-   "title": "Customizing Angular Aria Tabs Quickly with Google Antigravity CLI",
-   "url": "https://blog.angular.dev/customizing-angular-aria-tabs-quickly-with-google-antigravity-cli-39ff8e0271a4?source=rss----447683c3d9a3---4",
-   "source": "blogangular",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
    "title": "The next UX era: 3 big predictions revisited for 2026",
    "url": "https://blog.logrocket.com/ux-design/predictions-future-ui-ux-design/",
    "source": "bloglogrocket",
    "metric": "feed rank",
    "score": 5,
    "rank": 8
-  },
-  {
-   "title": "Generated Adventure — The Postmortem of a Game Made With chatGPT and Midjourney (Prompts Included)",
-   "url": "https://blog.luden.io/generated-adventure-the-postmortem-of-a-game-made-with-chatgpt-and-midjourney-prompts-included-f87e7e615204?source=rss----d6f120d108d1---4",
-   "source": "blogluden",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
   },
   {
    "title": "Easy CSS slider (carousel with pure CSS)",
@@ -7170,30 +6138,6 @@
    "metric": "feed rank",
    "score": 5,
    "rank": 11
-  },
-  {
-   "title": "Kubernetes Says 4 GPUs. There Is Only One.",
-   "url": "https://itnext.io/kubernetes-says-4-gpus-there-is-only-one-7b3570bbc62e?source=rss----5b301f10ddcd---4",
-   "source": "itnext",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
-   "title": "The Ed Sheeran Problem, or, How the Record Industry Got What It Asked For",
-   "url": "https://marker.medium.com/the-ed-sheeran-problem-or-how-the-record-industry-got-what-it-asked-for-3ce2a929542d?source=rss----7b6769f2748b---4",
-   "source": "markermedium",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
-   "title": "How we improved image download sizes on Medium with just four characters",
-   "url": "https://medium.engineering/how-we-improved-image-download-sizes-on-medium-with-just-four-characters-9621b0ebb291?source=rss----2817475205d3---4",
-   "source": "medium",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
   },
   {
    "title": "New story: Tormented by Teledildonics",
@@ -7220,17 +6164,9 @@
    "rank": 11
   },
   {
-   "title": "How does React’s Reconciliation Algorithm work?",
-   "url": "https://upmostly.com/tutorials/how-does-reconciliation-in-react-work",
-   "source": "upmostly",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
-   "title": "AI Bias in Hiring Tools: Real Disasters and How Teams Fixed Them",
-   "url": "https://becominghuman.ai/ai-bias-in-hiring-tools-real-disasters-and-how-teams-fixed-them-422de2746bf0?source=rss----5e5bef33608a---4",
-   "source": "becominghuman",
+   "title": "Context Managers Beyond Opening Files in Python",
+   "url": "https://machinelearningmastery.com/context-managers-beyond-opening-files/",
+   "source": "machinelearningmastery",
    "metric": "feed rank",
    "score": 5,
    "rank": 6
@@ -7260,84 +6196,12 @@
    "rank": 11
   },
   {
-   "title": "Small Text is Medium’s Large Fail",
-   "url": "https://tangledweb.xyz/small-text-is-mediums-large-fail-b39589f5fae0?source=rss----36d7830f6552---4",
-   "source": "tangledweb",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
-   "title": "If design portfolios could talk, what would they say?",
-   "url": "https://wix-ux.com/if-design-portfolios-could-talk-what-would-they-say-92b62012ccb6?source=rss----5c12f12b4121---4",
-   "source": "wixux",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
    "title": "Hackathon project for MariaDB's Wikipedia Through Time challenge: matching sentences across seven Wikipedia editions at any past date [P]",
    "url": "https://www.reddit.com/r/MachineLearning/comments/1xwttxo/hackathon_project_for_mariadbs_wikipedia_through/",
    "source": "reddit",
    "metric": "feed rank",
    "score": 5,
    "rank": 11
-  },
-  {
-   "title": "Building an LLM-Powered Slackbot",
-   "url": "https://benchling.engineering/building-an-llm-powered-slackbot-557a6241e993?source=rss----3d4aa8fb07ea---4",
-   "source": "benchling",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
-   "title": "Ready, Set, Build with the NHS Federated Data Platform",
-   "url": "https://blog.palantir.com/ready-set-build-with-the-nhs-federated-data-platform-41405fa4c226?source=rss----3c87dc14372f---4",
-   "source": "blogpalantir",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
-   "title": "Let AI Entertain You: Increasing User Engagement with Generative AI and Rejection Sampling",
-   "url": "https://engblog.nextdoor.com/let-ai-entertain-you-increasing-user-engagement-with-generative-ai-and-rejection-sampling-50a402264f56?source=rss----5e54f11cdfdf---4",
-   "source": "engblognextdoor",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
-   "title": "Better Code Review: Part One",
-   "url": "https://engineering.ziffmedia.com/better-code-review-part-one-ae3d4ff0494d?source=rss----d6bb34696ef5---4",
-   "source": "engineeringziffmedia",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
-   "title": "Embedding Teamwork Chat",
-   "url": "https://engineroom.teamwork.com/embedding-teamwork-chat-7a6910a3d535?source=rss----cea4eecd5960---4",
-   "source": "engineroomteamwork",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
-   "title": "India’s First Instant Print Store",
-   "url": "https://lambda.blinkit.com/indias-first-instant-print-store-234e6f639c8c?source=rss----42df4a1e8725---4",
-   "source": "lambdablinkit",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
-   "title": "Importance of offline evaluation to guide model choice",
-   "url": "https://tech.olx.com/importance-of-offline-evaluation-to-guide-model-choice-1c2be1c4599a?source=rss----761b019b483f---4",
-   "source": "techolx",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
   },
   {
    "title": "Hostinger Credits launch: one balance for every AI tool, even outside Hostinger",
@@ -7388,6 +6252,14 @@
    "rank": 11
   },
   {
+   "title": "OpenAI lowered the matrix multiplication exponent from ~2.371 to 2.25 — here's how the new proof works",
+   "url": "https://www.reddit.com/r/compsci/comments/1xpj68z/openai_lowered_the_matrix_multiplication_exponent/",
+   "source": "rcompsci",
+   "metric": "feed rank",
+   "score": 5,
+   "rank": 11
+  },
+  {
    "title": "Common Lisp with Pixi - blog post at prefix.dev",
    "url": "https://www.reddit.com/r/lisp/comments/1xu5lm3/common_lisp_with_pixi_blog_post_at_prefixdev/",
    "source": "rlisp",
@@ -7404,14 +6276,6 @@
    "rank": 11
   },
   {
-   "title": "[ANN] wasmedge-hs: Type-safe Haskell bindings for WasmEdge runtime (v0.18.1)",
-   "url": "https://www.reddit.com/r/haskell/comments/1xqf885/ann_wasmedgehs_typesafe_haskell_bindings_for/",
-   "source": "rhaskell",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 11
-  },
-  {
    "title": "Wholesale food prices are on the rise",
    "url": "https://www.axios.com/2026/11/14/grocery-wholesale-inflation-vegetables",
    "source": "apiaxios",
@@ -7420,25 +6284,9 @@
    "rank": 11
   },
   {
-   "title": "AI Coding for Android: Reflections and Building Self-Verification",
-   "url": "https://proandroiddev.com/ai-coding-for-android-reflections-and-building-self-verification-2ca1d2f598a7?source=rss----c72404660798---4",
-   "source": "proandroiddev",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
    "title": "Nvidia pressed Taiwan officials over its indicted manager",
    "url": "https://thenextweb.com/news/nvidia-taiwan-officials-indicted-manager-smuggling",
    "source": "thenextweb",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
-   "title": "Why are we cloning Photoshop?",
-   "url": "https://uxdesign.cc/why-are-we-cloning-photoshop-52e6e165eef7?source=rss----138adf9c44c---4",
-   "source": "uxdesign",
    "metric": "feed rank",
    "score": 5,
    "rank": 6
@@ -7455,30 +6303,6 @@
    "title": "Firefox memory usage with multiple content processes",
    "url": "https://erahm.org/2017/05/15/firefox-memory-usage-with-multiple-content-processes/",
    "source": "erahm",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
-   "title": "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale",
-   "url": "https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf?source=rss----2615bd06b42e---4",
-   "source": "netflix",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
-   "title": "Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions",
-   "url": "https://eng.lyft.com/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions-56bee3643c29?source=rss----25cd379abb8---4",
-   "source": "lyft",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
-   "title": "Beyond the model: Engineering AI infra with scientific judgement",
-   "url": "https://medium.com/airbnb-engineering/beyond-the-model-engineering-ai-infra-with-scientific-judgement-371316d43261?source=rss----53c7c27702d5---4",
-   "source": "airbnb",
    "metric": "feed rank",
    "score": 5,
    "rank": 6
@@ -7524,17 +6348,17 @@
    "rank": 11
   },
   {
-   "title": "Can Claude Fable 5.2 Replace Product Designers?",
-   "url": "https://uxplanet.org/can-claude-fable-5-2-replace-product-designers-8f0bd3554d12?source=rss----819cc2aaeee0---4",
-   "source": "uxplanet",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
    "title": "NVIDIA Says Permanent CEO Search Remains at Search-Firm Stage",
    "url": "https://www.unite.ai/nvidia-says-permanent-ceo-search-remains-at-search-firm-stage/",
    "source": "uniteai",
+   "metric": "feed rank",
+   "score": 5,
+   "rank": 11
+  },
+  {
+   "title": "Your JS Error Is Lying to You",
+   "url": "https://www.reddit.com/r/node/comments/1xu2lpv/your_js_error_is_lying_to_you/",
+   "source": "rnode",
    "metric": "feed rank",
    "score": 5,
    "rank": 11
@@ -7551,14 +6375,6 @@
    "title": "Summary of Uno Platform announcements at .NET Conf",
    "url": "https://www.reddit.com/r/dotnet/comments/1xw292x/summary_of_uno_platform_announcements_at_net_conf/",
    "source": "rdotnet",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 11
-  },
-  {
-   "title": "Lean explained with TypeScript",
-   "url": "https://www.reddit.com/r/Frontend/comments/1xp93ly/lean_explained_with_typescript/",
-   "source": "rfrontend",
    "metric": "feed rank",
    "score": 5,
    "rank": 11
@@ -7748,14 +6564,6 @@
    "rank": 11
   },
   {
-   "title": "Customizing Angular Aria Tabs Quickly with Google Antigravity CLI",
-   "url": "https://blog.angular.dev/customizing-angular-aria-tabs-quickly-with-google-antigravity-cli-39ff8e0271a4?source=rss----447683c3d9a3---4",
-   "source": "w3blog4",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 6
-  },
-  {
    "title": "$180 million Van Gogh tests the art market and collector confidence",
    "url": "https://www.cnbc.com/2026/11/14/180-million-van-gogh-tests-the-art-market-and-collector-confidence-.html",
    "source": "cnbc",
@@ -7836,12 +6644,28 @@
    "rank": 6
   },
   {
+   "title": "今天疯传的“AI生成国产3A大作”，到底是哪传出来的乐子？",
+   "url": "https://www.yystv.cn/p/14615",
+   "source": "yystv",
+   "metric": "feed rank",
+   "score": 5,
+   "rank": 8
+  },
+  {
    "title": "奔赴属于股民的花海",
    "url": "https://www.bohaishibei.com/post/114431/",
    "source": "bohaishibei",
    "metric": "feed rank",
    "score": 5,
    "rank": 6
+  },
+  {
+   "title": "Pixel Office - 在像素艺术办公室管理一支人工智能代理团队",
+   "url": "https://xinquji.com/posts/860925?utm_campaign=xinquji-rss",
+   "source": "xinquji",
+   "metric": "feed rank",
+   "score": 5,
+   "rank": 11
   },
   {
    "title": "WebGL 3D - Directional Lighting",
@@ -7972,14 +6796,6 @@
    "rank": 11
   },
   {
-   "title": "Why AI made code review the new bottleneck, and the metric that spotted it | Newsela's Dee Wilcox",
-   "url": "https://devinterrupted.substack.com/p/why-ai-made-code-review-the-new-bottleneck",
-   "source": "devinterrupted",
-   "metric": "feed rank",
-   "score": 5,
-   "rank": 11
-  },
-  {
    "title": "ChinAI #371: Quiet Goodbyes, Switching Platforms, and Confrontation: Reactions to China's AI Companion Regulations",
    "url": "https://chinai.substack.com/p/chinai-371-a-quiet-goodbye-adaptation",
    "source": "chinai",
@@ -8076,14 +6892,6 @@
    "rank": 12
   },
   {
-   "title": "Waypoint",
-   "url": "https://copyconstruct.medium.com/waypoint-3f00b11da4a?source=rss-87c8c84f24b1------2",
-   "source": "copyconstruct",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
    "title": "July 2020 gwern.net newsletter",
    "url": "https://gwern.substack.com/p/july-2020-gwernnet-newsletter",
    "source": "gwern",
@@ -8140,28 +6948,12 @@
    "rank": 12
   },
   {
-   "title": "Styling Mastery and Declarative Form Submissions",
-   "url": "https://blog.angular.dev/styling-mastery-and-declarative-form-submissions-743bb9bd0b0e?source=rss----447683c3d9a3---4",
-   "source": "blogangular",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
    "title": "Vercel’s vgpu: A WebGPU library built for AI agents",
    "url": "https://blog.logrocket.com/vercel-vgpu-webgpu-ai-agents/",
    "source": "bloglogrocket",
    "metric": "feed rank",
    "score": 4,
    "rank": 9
-  },
-  {
-   "title": "Our new Blog and Newsletter",
-   "url": "https://blog.luden.io/our-new-blog-and-newsletter-806d6a268307?source=rss----d6f120d108d1---4",
-   "source": "blogluden",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
   },
   {
    "title": "Create a currency converter with HTML, CSS, and vanilla JavaScript",
@@ -8183,22 +6975,6 @@
    "title": "Stop Configuring the Same MCP Server in Every Copilot Client",
    "url": "https://itnext.io/github-copilot-connectors-mcp-setup-1e1c6db0685e?source=rss----5b301f10ddcd---4",
    "source": "itnext",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
-   "title": "Elon Musk and Twitter’s Business Are on a Collision Course",
-   "url": "https://marker.medium.com/elon-musk-and-twitters-business-are-on-a-collision-course-12499d6aaa35?source=rss----7b6769f2748b---4",
-   "source": "markermedium",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
-   "title": "Making AI Write Android Code Our Way: A Practical Guide to Agent Skills",
-   "url": "https://medium.engineering/making-ai-write-android-code-our-way-a-practical-guide-to-agent-skills-4e7b085d8e50?source=rss----2817475205d3---4",
-   "source": "medium",
    "metric": "feed rank",
    "score": 4,
    "rank": 7
@@ -8236,17 +7012,9 @@
    "rank": 12
   },
   {
-   "title": "A Guide to Effective Error Handling in React",
-   "url": "https://upmostly.com/tutorials/a-guide-to-effective-error-handling-in-react",
-   "source": "upmostly",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
-   "title": "AGI in 2025 |Do you think what matters today will still matter in the coming months? TL;DR: No!",
-   "url": "https://becominghuman.ai/agi-in-2025-do-you-think-what-matters-today-will-still-matter-in-the-coming-months-tl-dr-no-5f22fc93c221?source=rss----5e5bef33608a---4",
-   "source": "becominghuman",
+   "title": "Robust Serialization with JSON and Custom Types",
+   "url": "https://machinelearningmastery.com/robust-serialization-with-json-and-custom-types/",
+   "source": "machinelearningmastery",
    "metric": "feed rank",
    "score": 4,
    "rank": 7
@@ -8276,84 +7044,12 @@
    "rank": 12
   },
   {
-   "title": "Actual Accessibility vs Law",
-   "url": "https://tangledweb.xyz/hi-simon-nice-article-thank-you-for-the-kind-words-2cf04fa5ef03?source=rss----36d7830f6552---4",
-   "source": "tangledweb",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
-   "title": "Discovering harmony in the designer-developer workflow",
-   "url": "https://wix-ux.com/discovering-harmony-in-the-designer-developer-workflow-22c79e6616cf?source=rss----5c12f12b4121---4",
-   "source": "wixux",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
    "title": "ICLR rebuttal [R]",
    "url": "https://www.reddit.com/r/MachineLearning/comments/1xw19o8/iclr_rebuttal_r/",
    "source": "reddit",
    "metric": "feed rank",
    "score": 4,
    "rank": 12
-  },
-  {
-   "title": "Scaling Scientific Data: Migrating Benchling’s Schema Model for Performance at Scale",
-   "url": "https://benchling.engineering/scaling-scientific-data-migrating-benchlings-schema-model-for-performance-at-scale-2a91cf971040?source=rss----3d4aa8fb07ea---4",
-   "source": "benchling",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
-   "title": "Connecting Agents to Decisions",
-   "url": "https://blog.palantir.com/connecting-agents-to-decisions-277dee8ddb40?source=rss----3c87dc14372f---4",
-   "source": "blogpalantir",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
-   "title": "From Pre-trained to Fine-tuned: Nextdoor’s Path to Effective Embedding Applications",
-   "url": "https://engblog.nextdoor.com/from-pre-trained-to-fine-tuned-nextdoors-path-to-effective-embedding-applications-3a13b56d91aa?source=rss----5e54f11cdfdf---4",
-   "source": "engblognextdoor",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
-   "title": "Mentoring Angela",
-   "url": "https://engineering.ziffmedia.com/mentoring-angela-18ac3d6a766f?source=rss----d6bb34696ef5---4",
-   "source": "engineeringziffmedia",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
-   "title": "Monolith to Microservice: Architecture Behind V2 Webhooks",
-   "url": "https://engineroom.teamwork.com/monolith-to-microservice-architecture-behind-v2-webhooks-27789c36ace9?source=rss----cea4eecd5960---4",
-   "source": "engineroomteamwork",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
-   "title": "In Focus: Sumanth Reddy",
-   "url": "https://lambda.blinkit.com/in-focus-sumanth-reddy-79c6c293bda5?source=rss----42df4a1e8725---4",
-   "source": "lambdablinkit",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
-   "title": "Hybrid Search — Where Keywords Meet Vectors, Enabling Classifieds Discovery",
-   "url": "https://tech.olx.com/hybrid-search-where-keywords-meet-vectors-enabling-classifieds-discovery-b7c383fe4fc4?source=rss----761b019b483f---4",
-   "source": "techolx",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
   },
   {
    "title": "Unauthorized access to our Phoenix server: November 2026 incident report",
@@ -8404,6 +7100,14 @@
    "rank": 12
   },
   {
+   "title": "Deriving the Y-combinator",
+   "url": "https://www.reddit.com/r/compsci/comments/1xn4lig/deriving_the_ycombinator/",
+   "source": "rcompsci",
+   "metric": "feed rank",
+   "score": 4,
+   "rank": 12
+  },
+  {
    "title": "FLX: An OSI embeddable Lisp-2 interpreter and runtime implemented in Kotlin",
    "url": "https://www.reddit.com/r/lisp/comments/1xth5ln/flx_an_osi_embeddable_lisp2_interpreter_and/",
    "source": "rlisp",
@@ -8420,14 +7124,6 @@
    "rank": 12
   },
   {
-   "title": "Does anyone want to take over maintenance of the Kowainik ecosystem?",
-   "url": "https://www.reddit.com/r/haskell/comments/1xq0pxp/does_anyone_want_to_take_over_maintenance_of_the/",
-   "source": "rhaskell",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 12
-  },
-  {
    "title": "U.S. loses measles elimination status",
    "url": "https://www.axios.com/2026/11/14/us-loses-measles-elimination-status",
    "source": "apiaxios",
@@ -8436,25 +7132,9 @@
    "rank": 12
   },
   {
-   "title": "Migrating a Real Android App to Kotlin Multiplatform 3/4 — Sharing the UI without losing safety net",
-   "url": "https://proandroiddev.com/migrating-a-real-android-app-to-kotlin-multiplatform-3-4-sharing-the-ui-without-losing-safety-net-f74a6bf408ae?source=rss----c72404660798---4",
-   "source": "proandroiddev",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
    "title": "Applied Digital wants power guarantees from Oracle and Meta, Bloomberg says",
    "url": "https://thenextweb.com/news/applied-digital-power-guarantees-oracle-meta-grid-costs",
    "source": "thenextweb",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
-   "title": "Every click has a price now. Who designs how that “feels”?",
-   "url": "https://uxdesign.cc/every-click-has-a-price-now-who-designs-how-that-feels-e3f00b6cabb8?source=rss----138adf9c44c---4",
-   "source": "uxdesign",
    "metric": "feed rank",
    "score": 4,
    "rank": 7
@@ -8471,30 +7151,6 @@
    "title": "Are they slim yet, round 2",
    "url": "https://erahm.org/2017/03/10/are-they-slim-yet-round-2/",
    "source": "erahm",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
-   "title": "Integrating Netflix’s Foundation Model into Personalization applications",
-   "url": "https://netflixtechblog.com/integrating-netflixs-foundation-model-into-personalization-applications-cf176b5860eb?source=rss----2615bd06b42e---4",
-   "source": "netflix",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
-   "title": "From Chaos to Clarity: How We Built a Unified, Self-Routing Support Ops Ticketing System at Lyft",
-   "url": "https://eng.lyft.com/from-chaos-to-clarity-2ab50856d0c8?source=rss----25cd379abb8---4",
-   "source": "lyft",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
-   "title": "Project Lighthouse — Part 3: Introducing project-lighthouse-anonymize",
-   "url": "https://medium.com/airbnb-engineering/project-lighthouse-part-3-introducing-project-lighthouse-anonymize-74f8b26653fb?source=rss----53c7c27702d5---4",
-   "source": "airbnb",
    "metric": "feed rank",
    "score": 4,
    "rank": 7
@@ -8548,17 +7204,17 @@
    "rank": 12
   },
   {
-   "title": "Claude Fable 5.2 for UI Design: Better, but at What Cost?",
-   "url": "https://uxplanet.org/claude-fable-5-2-for-ui-design-better-but-at-what-cost-81aeec4170f4?source=rss----819cc2aaeee0---4",
-   "source": "uxplanet",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
-  },
-  {
    "title": "Cloudflare Open-Sources Kitesurf Browser Engine for AI Agents",
    "url": "https://www.unite.ai/cloudflare-open-sources-kitesurf-browser-engine-for-ai-agents/",
    "source": "uniteai",
+   "metric": "feed rank",
+   "score": 4,
+   "rank": 12
+  },
+  {
+   "title": "I built site2paper, a Node CLI that prints a whole website into a storybook (Playwright + pdf-lib + sharp)",
+   "url": "https://www.reddit.com/r/node/comments/1xsvesc/i_built_site2paper_a_node_cli_that_prints_a_whole/",
+   "source": "rnode",
    "metric": "feed rank",
    "score": 4,
    "rank": 12
@@ -8575,14 +7231,6 @@
    "title": ".NET 11 and RISC-V",
    "url": "https://www.reddit.com/r/dotnet/comments/1xw69p0/net_11_and_riscv/",
    "source": "rdotnet",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 12
-  },
-  {
-   "title": "Creating a Liquid Glass UI Effect for the Web: Inspired by Apple",
-   "url": "https://www.reddit.com/r/Frontend/comments/1xokkiq/creating_a_liquid_glass_ui_effect_for_the_web/",
-   "source": "rfrontend",
    "metric": "feed rank",
    "score": 4,
    "rank": 12
@@ -8778,14 +7426,6 @@
    "metric": "feed rank",
    "score": 4,
    "rank": 12
-  },
-  {
-   "title": "Styling Mastery and Declarative Form Submissions",
-   "url": "https://blog.angular.dev/styling-mastery-and-declarative-form-submissions-743bb9bd0b0e?source=rss----447683c3d9a3---4",
-   "source": "w3blog4",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 7
   },
   {
    "title": "Retailers are turning to entertainment to win shoppers’ attention",
@@ -9036,14 +7676,6 @@
    "rank": 12
   },
   {
-   "title": "They're building the factory as much as the product",
-   "url": "https://devinterrupted.substack.com/p/theyre-building-the-factory-as-much",
-   "source": "devinterrupted",
-   "metric": "feed rank",
-   "score": 4,
-   "rank": 12
-  },
-  {
    "title": "ChinAI #370: Why is there No Star AI Company from Guangdong?",
    "url": "https://chinai.substack.com/p/chinai-370-why-is-there-no-star-ai",
    "source": "chinai",
@@ -9148,14 +7780,6 @@
    "rank": 13
   },
   {
-   "title": "Bash Redirection Fun With Descriptors",
-   "url": "https://copyconstruct.medium.com/bash-redirection-fun-with-descriptors-e799ec5a3c16?source=rss-87c8c84f24b1------2",
-   "source": "copyconstruct",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
    "title": "June gwern.net newsletter",
    "url": "https://gwern.substack.com/p/june-gwernnet-newsletter",
    "source": "gwern",
@@ -9220,28 +7844,12 @@
    "rank": 13
   },
   {
-   "title": "The Forms Evolution, Web AI, and Architectural Vision!",
-   "url": "https://blog.angular.dev/the-forms-evolution-web-ai-and-architectural-vision-4f96634b0ae3?source=rss----447683c3d9a3---4",
-   "source": "blogangular",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
    "title": "Comparing the best Node.js unit testing frameworks",
    "url": "https://blog.logrocket.com/comparing-best-node-js-unit-testing-frameworks/",
    "source": "bloglogrocket",
    "metric": "feed rank",
    "score": 3,
    "rank": 10
-  },
-  {
-   "title": "Two years of making free games for learners on the autism spectrum",
-   "url": "https://blog.luden.io/two-years-of-making-free-games-for-learners-on-the-autism-spectrum-ea1b302c4b71?source=rss----d6f120d108d1---4",
-   "source": "blogluden",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
   },
   {
    "title": "What to do when one of your WordPress plugins gets compromised",
@@ -9263,22 +7871,6 @@
    "title": "When Users Are Reluctant To Install Your PWA",
    "url": "https://itnext.io/when-users-are-reluctant-to-install-your-pwa-d7406d39f7a1?source=rss----5b301f10ddcd---4",
    "source": "itnext",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
-   "title": "Could Spain Finally Be About to Join the 21st Century?",
-   "url": "https://marker.medium.com/could-spain-finally-be-about-to-join-the-21st-century-2aea9547e3e3?source=rss----7b6769f2748b---4",
-   "source": "markermedium",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
-   "title": "We’re Hiring a Principal Backend Engineer to Shape the Future of Medium",
-   "url": "https://medium.engineering/were-hiring-a-principal-backend-engineer-to-shape-the-future-of-medium-a0d7896b3717?source=rss----2817475205d3---4",
-   "source": "medium",
    "metric": "feed rank",
    "score": 3,
    "rank": 8
@@ -9316,17 +7908,9 @@
    "rank": 13
   },
   {
-   "title": "How To Build a Modal Component In React",
-   "url": "https://upmostly.com/tutorials/how-to-build-a-modal-component-in-react",
-   "source": "upmostly",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
-   "title": "When Algorithms Dream of Photons: Can AI Redefine Reality Like Einstein?",
-   "url": "https://becominghuman.ai/when-algorithms-dream-of-photons-can-ai-redefine-reality-like-einstein-47d1a8373178?source=rss----5e5bef33608a---4",
-   "source": "becominghuman",
+   "title": "Speculative Decoding Explained: How to Get 3× Faster Inference from Any LLM",
+   "url": "https://machinelearningmastery.com/speculative-decoding-explained-how-to-get-3x-faster-inference-from-any-llm/",
+   "source": "machinelearningmastery",
    "metric": "feed rank",
    "score": 3,
    "rank": 8
@@ -9356,84 +7940,12 @@
    "rank": 13
   },
   {
-   "title": "Dark Beauty is in the Eye of the Beholder…",
-   "url": "https://tangledweb.xyz/black-beauty-is-in-the-eye-of-the-beholder-bacf85103438?source=rss----36d7830f6552---4",
-   "source": "tangledweb",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
-   "title": "Case study: Designing a better experience for permissions",
-   "url": "https://wix-ux.com/case-study-designing-a-better-experience-for-permissions-9cda05ecc8e7?source=rss----5c12f12b4121---4",
-   "source": "wixux",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
    "title": "ICLR 2027 Rebuttal [D]",
    "url": "https://www.reddit.com/r/MachineLearning/comments/1xw5uwe/iclr_2027_rebuttal_d/",
    "source": "reddit",
    "metric": "feed rank",
    "score": 3,
    "rank": 13
-  },
-  {
-   "title": "A behind-the-scenes look at building interactive analysis capabilities in Benchling",
-   "url": "https://benchling.engineering/a-behind-the-scenes-look-at-building-interactive-analysis-capabilities-in-benchling-fa6ec1bab1e5?source=rss----3d4aa8fb07ea---4",
-   "source": "benchling",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
-   "title": "Frontend Engineering at Palantir: Engineering Multilingual Collaboration",
-   "url": "https://blog.palantir.com/frontend-engineering-at-palantir-engineering-multilingual-collaboration-58217e196bed?source=rss----3c87dc14372f---4",
-   "source": "blogpalantir",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
-   "title": "Securing Diversity in Cybersecurity",
-   "url": "https://engblog.nextdoor.com/securing-diversity-in-cybersecurity-6aa83dafb850?source=rss----5e54f11cdfdf---4",
-   "source": "engblognextdoor",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
-   "title": "Down the Swift associated type rabbit hole",
-   "url": "https://engineering.ziffmedia.com/down-the-swift-associated-type-rabbit-hole-1f41ee6ceaf4?source=rss----d6bb34696ef5---4",
-   "source": "engineeringziffmedia",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
-   "title": "Escape the Trap — Introducing Teamwork Catalyst",
-   "url": "https://engineroom.teamwork.com/escape-the-trap-introducing-teamwork-catalyst-b2ca3ef5e17f?source=rss----cea4eecd5960---4",
-   "source": "engineroomteamwork",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
-   "title": "Make your reports faster : Beginner’s guide to Tableau Optimization",
-   "url": "https://lambda.blinkit.com/make-your-reports-faster-beginners-guide-to-tableau-optimization-b94c4a666466?source=rss----42df4a1e8725---4",
-   "source": "lambdablinkit",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
-   "title": "Speed with Rigor: testing smarter with group sequential design",
-   "url": "https://tech.olx.com/speed-with-rigor-testing-smarter-with-group-sequential-design-af962363ce90?source=rss----761b019b483f---4",
-   "source": "techolx",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
   },
   {
    "title": "The two feedback loops behind running 10+ coding tasks at once",
@@ -9484,6 +7996,14 @@
    "rank": 13
   },
   {
+   "title": "\"Galactus the Devourer\", Ben Recht's reaction to The Exponential Time Hypothesis.",
+   "url": "https://www.reddit.com/r/compsci/comments/1xk02hd/galactus_the_devourer_ben_rechts_reaction_to_the/",
+   "source": "rcompsci",
+   "metric": "feed rank",
+   "score": 3,
+   "rank": 13
+  },
+  {
    "title": "Common Lisp in the browser: large improvements to miricl",
    "url": "https://www.reddit.com/r/lisp/comments/1xs0fn9/common_lisp_in_the_browser_large_improvements_to/",
    "source": "rlisp",
@@ -9500,14 +8020,6 @@
    "rank": 13
   },
   {
-   "title": "Is the GHC breakage inventory useful to anyone?",
-   "url": "https://www.reddit.com/r/haskell/comments/1xq1js8/is_the_ghc_breakage_inventory_useful_to_anyone/",
-   "source": "rhaskell",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 13
-  },
-  {
    "title": "3,000 flights cancelled as FAA ground stop chaos stretches into 2nd day",
    "url": "https://www.axios.com/2026/11/14/faa-ground-stop-saturday",
    "source": "apiaxios",
@@ -9516,25 +8028,9 @@
    "rank": 13
   },
   {
-   "title": "AI by lazy: R8 Shrinking and Obfuscation Handled by Your Agent",
-   "url": "https://proandroiddev.com/ai-by-lazy-r8-shrinking-and-obfuscation-handled-by-your-agent-e7cb3e124520?source=rss----c72404660798---4",
-   "source": "proandroiddev",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
    "title": "Jensen Huang struggled to reach Beijing’s chip policymakers, FT says",
    "url": "https://thenextweb.com/news/jensen-huang-struggled-to-reach-beijings-chip-policymakers-ft-says",
    "source": "thenextweb",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
-   "title": "The bathroom flaws that infuriate every designer",
-   "url": "https://uxdesign.cc/the-bathroom-flaws-that-infuriate-every-designer-a26d50145d47?source=rss----138adf9c44c---4",
-   "source": "uxdesign",
    "metric": "feed rank",
    "score": 3,
    "rank": 8
@@ -9551,30 +8047,6 @@
    "title": "Shit Viz: A trip to Chamonix",
    "url": "https://erahm.org/2017/03/07/shit-viz-a-trip-to-chamonix/",
    "source": "erahm",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
-   "title": "DataJunction as Netflix’s answer to the missing piece of the modern data stack",
-   "url": "https://netflixtechblog.com/datajunction-as-netflixs-answer-to-the-missing-piece-of-the-modern-data-stack-92af926b40a5?source=rss----2615bd06b42e---4",
-   "source": "netflix",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
-   "title": "How We Built a Smarter Pickup Experience for Gated Communities",
-   "url": "https://eng.lyft.com/how-we-built-a-smarter-pickup-experience-for-gated-communities-47416e9df029?source=rss----25cd379abb8---4",
-   "source": "lyft",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
-   "title": "How we knew COVID was over (and what our models had to unlearn)",
-   "url": "https://medium.com/airbnb-engineering/how-we-knew-covid-was-over-and-what-our-models-had-to-unlearn-c606b9bdb0ab?source=rss----53c7c27702d5---4",
-   "source": "airbnb",
    "metric": "feed rank",
    "score": 3,
    "rank": 8
@@ -9636,17 +8108,17 @@
    "rank": 13
   },
   {
-   "title": "5 Underrated Claude Code Tools That Fix Its Biggest Problems",
-   "url": "https://uxplanet.org/5-underrated-claude-code-tools-that-fix-its-biggest-problems-1b6007eddf4f?source=rss----819cc2aaeee0---4",
-   "source": "uxplanet",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
-  },
-  {
    "title": "Hertz to Pilot Decagon Gateway for Muse Reservation Changes",
    "url": "https://www.unite.ai/hertz-to-pilot-decagon-gateway-for-muse-reservation-changes/",
    "source": "uniteai",
+   "metric": "feed rank",
+   "score": 3,
+   "rank": 13
+  },
+  {
+   "title": "Best price/performance hosting setup for a TypeScript/Node.js SaaS? Dev vs Production, VPS vs PaaS",
+   "url": "https://www.reddit.com/r/node/comments/1xrtn6u/best_priceperformance_hosting_setup_for_a/",
+   "source": "rnode",
    "metric": "feed rank",
    "score": 3,
    "rank": 13
@@ -9671,6 +8143,14 @@
    "title": "How to do Local Visual Regression testing...the right way.",
    "url": "https://www.reddit.com/r/Frontend/comments/1xojqs9/how_to_do_local_visual_regression_testingthe/",
    "source": "rfrontend",
+   "metric": "feed rank",
+   "score": 3,
+   "rank": 13
+  },
+  {
+   "title": "How do people handle moving files from the torrent client folder to the media server folders?",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xx1cne/how_do_people_handle_moving_files_from_the/",
+   "source": "rselfhosted",
    "metric": "feed rank",
    "score": 3,
    "rank": 13
@@ -9874,14 +8354,6 @@
    "metric": "feed rank",
    "score": 3,
    "rank": 13
-  },
-  {
-   "title": "The Forms Evolution, Web AI, and Architectural Vision!",
-   "url": "https://blog.angular.dev/the-forms-evolution-web-ai-and-architectural-vision-4f96634b0ae3?source=rss----447683c3d9a3---4",
-   "source": "w3blog4",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 8
   },
   {
    "title": "Top Wall Street analysts are bullish on these 3 stocks for the long term",
@@ -10148,14 +8620,6 @@
    "rank": 13
   },
   {
-   "title": "Securing tomorrow’s git forge, so we can reimagine everything else | Entire's Thomas Dohmke & Apiiro's Idan Plotnik",
-   "url": "https://devinterrupted.substack.com/p/securing-tomorrows-git-forge-so-we",
-   "source": "devinterrupted",
-   "metric": "feed rank",
-   "score": 3,
-   "rank": 13
-  },
-  {
    "title": "ChinAI #369: My Boss Wants Me to Run Kimi K3, What Should I Do?",
    "url": "https://chinai.substack.com/p/chinai-369-my-boss-wants-me-to-run",
    "source": "chinai",
@@ -10268,14 +8732,6 @@
    "rank": 14
   },
   {
-   "title": "File Descriptor Transfer over Unix Domain Sockets",
-   "url": "https://copyconstruct.medium.com/file-descriptor-transfer-over-unix-domain-sockets-dcbbf5b3b6ec?source=rss-87c8c84f24b1------2",
-   "source": "copyconstruct",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
    "title": "May Gwern.net Newsletter",
    "url": "https://gwern.substack.com/p/may-gwernnet-newsletter",
    "source": "gwern",
@@ -10340,28 +8796,12 @@
    "rank": 14
   },
   {
-   "title": "Free Book Chapters, Better Testing Control, and Smart MCP Configuration!",
-   "url": "https://blog.angular.dev/free-book-chapters-better-testing-control-and-smart-mcp-configuration-ebc715561ca1?source=rss----447683c3d9a3---4",
-   "source": "blogangular",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
    "title": "Exploring the top React date pickers",
    "url": "https://blog.logrocket.com/top-react-date-pickers/",
    "source": "bloglogrocket",
    "metric": "feed rank",
    "score": 2,
    "rank": 11
-  },
-  {
-   "title": "Meet Learning Factory",
-   "url": "https://blog.luden.io/meet-learning-factory-8d5fd27dac7e?source=rss----d6f120d108d1---4",
-   "source": "blogluden",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
   },
   {
    "title": "Roboflow Serverless vs. Self-Hosted Inference: What a 90-Second Traffic Spike Does to One GPU Server",
@@ -10391,22 +8831,6 @@
    "title": "AWS Glue for Spark and Delta Lake without the Hive client",
    "url": "https://itnext.io/aws-glue-for-spark-and-delta-lake-without-the-hive-client-61c29e4db39d?source=rss----5b301f10ddcd---4",
    "source": "itnext",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
-   "title": "How To Apply The Concealed Wisdom of Equitable Holdings’ Investment Strategy",
-   "url": "https://marker.medium.com/a-simple-and-reliable-retirement-investment-strategy-anyone-could-use-2ec963690e97?source=rss----7b6769f2748b---4",
-   "source": "markermedium",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
-   "title": "Medium Android App — Migrating from Apollo Kotlin 3 to 4: Lessons Learned",
-   "url": "https://medium.engineering/medium-android-app-migrating-from-apollo-kotlin-3-to-4-lessons-learned-ff8d0d861cdb?source=rss----2817475205d3---4",
-   "source": "medium",
    "metric": "feed rank",
    "score": 2,
    "rank": 9
@@ -10452,14 +8876,6 @@
    "rank": 14
   },
   {
-   "title": "What are React Keys?",
-   "url": "https://upmostly.com/tutorials/what-are-react-keys",
-   "source": "upmostly",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
    "title": "10 Ways Cybersecurity Vendors Can Stand Out in a Crowded Market",
    "url": "https://www.itsecurityguru.org/2026/11/10/10-ways-cybersecurity-vendors-can-stand-out-in-a-crowded-market/?utm_source=rss&utm_medium=rss&utm_campaign=10-ways-cybersecurity-vendors-can-stand-out-in-a-crowded-market",
    "source": "itsecurityguru",
@@ -10468,9 +8884,9 @@
    "rank": 9
   },
   {
-   "title": "Be Part of the AI Revolution at the Chatbot Conference Tomorrow!",
-   "url": "https://becominghuman.ai/be-part-of-the-ai-revolution-at-the-chatbot-conference-tomorrow-e11b93baa6ff?source=rss----5e5bef33608a---4",
-   "source": "becominghuman",
+   "title": "How to Build a Multi-Modal RAG Pipeline for Images and Documents in Python",
+   "url": "https://machinelearningmastery.com/how-to-build-a-multi-modal-rag-pipeline-for-images-and-documents-in-python/",
+   "source": "machinelearningmastery",
    "metric": "feed rank",
    "score": 2,
    "rank": 9
@@ -10508,22 +8924,6 @@
    "rank": 14
   },
   {
-   "title": "Examining Colorblindness",
-   "url": "https://tangledweb.xyz/hello-eric-i-found-your-article-very-interesting-as-i-am-researching-color-vision-for-9d44a2354caf?source=rss----36d7830f6552---4",
-   "source": "tangledweb",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
-   "title": "The case for web accessibility in 2023",
-   "url": "https://wix-ux.com/the-case-for-web-accessibility-in-2023-737cc886183a?source=rss----5c12f12b4121---4",
-   "source": "wixux",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
    "title": "Blue J Follows Legora Alliance With $176m Raise",
    "url": "https://www.artificiallawyer.com/2026/11/10/blue-j-follows-legora-alliance-with-176m-raise/",
    "source": "artificiallawyer",
@@ -10556,68 +8956,12 @@
    "rank": 14
   },
   {
-   "title": "Signals, shells, and docker: an onion of footguns",
-   "url": "https://benchling.engineering/signals-shells-and-docker-an-onion-of-footguns-ee592e2b587b?source=rss----3d4aa8fb07ea---4",
-   "source": "benchling",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
-   "title": "Frontend Engineering at Palantir: Polar Scaled Tiles in Zodiac",
-   "url": "https://blog.palantir.com/frontend-engineering-at-palantir-polar-scaled-tiles-in-zodiac-6cebb5948a1a?source=rss----3c87dc14372f---4",
-   "source": "blogpalantir",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
-   "title": "Catching Anomalies Early in Mobile App Releases",
-   "url": "https://engblog.nextdoor.com/catching-anomalies-early-in-mobile-app-releases-ac95adf9da81?source=rss----5e54f11cdfdf---4",
-   "source": "engblognextdoor",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
-   "title": "Feature-oriented APIs",
-   "url": "https://engineering.ziffmedia.com/feature-oriented-apis-f0010d140d3a?source=rss----d6bb34696ef5---4",
-   "source": "engineeringziffmedia",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
-   "title": "Is Teamwork.com the best place for developers to work in Ireland?",
-   "url": "https://engineroom.teamwork.com/is-teamwork-com-the-best-place-for-developers-to-work-in-ireland-104b58b8643c?source=rss----cea4eecd5960---4",
-   "source": "engineroomteamwork",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
-   "title": "In Focus: Jay Dihenkar",
-   "url": "https://lambda.blinkit.com/in-focus-jay-dihenkar-3cd0456a9efa?source=rss----42df4a1e8725---4",
-   "source": "lambdablinkit",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
    "title": "Python Coding Interview Practice: Hashing, Pointers, and Windows",
    "url": "https://realpython.com/courses/coding-interview-practice-hashing-two-pointers-sliding-windows/",
    "source": "realpython",
    "metric": "feed rank",
    "score": 2,
    "rank": 14
-  },
-  {
-   "title": "Scaling recommendations service at OLX",
-   "url": "https://tech.olx.com/scaling-recommendations-service-at-olx-db4548813e3a?source=rss----761b019b483f---4",
-   "source": "techolx",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
   },
   {
    "title": "Hostinger weekly product updates: Week 45, 2026",
@@ -10668,6 +9012,14 @@
    "rank": 14
   },
   {
+   "title": "Deterministic factoring in time N^o(1)",
+   "url": "https://www.reddit.com/r/compsci/comments/1xiz7aj/deterministic_factoring_in_time_no1/",
+   "source": "rcompsci",
+   "metric": "feed rank",
+   "score": 2,
+   "rank": 14
+  },
+  {
    "title": "I wrote a Lisp indenter mimic SLIME's indentation rules for NeoVIM",
    "url": "https://www.reddit.com/r/lisp/comments/1xrtyqu/i_wrote_a_lisp_indenter_mimic_slimes_indentation/",
    "source": "rlisp",
@@ -10700,14 +9052,6 @@
    "rank": 14
   },
   {
-   "title": "Compose Multiplatform: Why You Shouldn’t Build Your Whole iOS App in Compose",
-   "url": "https://proandroiddev.com/compose-multiplatform-why-you-shouldnt-build-your-whole-ios-app-in-compose-9e1e8c978a5b?source=rss----c72404660798---4",
-   "source": "proandroiddev",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
    "title": "Italy fines Meta €805m over Facebook’s access to Android photos",
    "url": "https://thenextweb.com/news/italy-fines-meta-805m-facebook-android-photos",
    "source": "thenextweb",
@@ -10735,30 +9079,6 @@
    "title": "Clang Leads Firefox Compile Times on Linux",
    "url": "https://erahm.org/2016/12/30/clang-leads-firefox-compile-times-on-linux/",
    "source": "erahm",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
-   "title": "Measuring the Impact of Personalized Recommendations",
-   "url": "https://netflixtechblog.com/measuring-the-impact-of-personalized-recommendations-4c26be3a4d96?source=rss----2615bd06b42e---4",
-   "source": "netflix",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
-   "title": "Predicting Rider Conversion in Sparse Data Environments with Bayesian Trees",
-   "url": "https://eng.lyft.com/predicting-rider-conversion-in-sparse-data-environments-with-bayesian-trees-07227ff92789?source=rss----25cd379abb8---4",
-   "source": "lyft",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
-  },
-  {
-   "title": "Flexible Authentication: Reimagining authentication for millions of users at Airbnb",
-   "url": "https://medium.com/airbnb-engineering/flexible-authentication-reimagining-authentication-for-millions-of-users-at-airbnb-3a8a4c917137?source=rss----53c7c27702d5---4",
-   "source": "airbnb",
    "metric": "feed rank",
    "score": 2,
    "rank": 9
@@ -10866,14 +9186,6 @@
    "metric": "feed rank",
    "score": 2,
    "rank": 14
-  },
-  {
-   "title": "GPT-6.1 Terra for UI Design",
-   "url": "https://uxplanet.org/gpt-6-1-terra-for-ui-design-fb2ef70b907d?source=rss----819cc2aaeee0---4",
-   "source": "uxplanet",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
   },
   {
    "title": "Dyania Health Runs Synapsis AI on Hospital-Owned GPU Systems",
@@ -11122,14 +9434,6 @@
    "metric": "feed rank",
    "score": 2,
    "rank": 14
-  },
-  {
-   "title": "Free Book Chapters, Better Testing Control, and Smart MCP Configuration!",
-   "url": "https://blog.angular.dev/free-book-chapters-better-testing-control-and-smart-mcp-configuration-ebc715561ca1?source=rss----447683c3d9a3---4",
-   "source": "w3blog4",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 9
   },
   {
    "title": "They train people to avoid 'honeypot' scams—here are the common red flags they spot: 'It feels so good to be wanted'",
@@ -11460,14 +9764,6 @@
    "rank": 14
   },
   {
-   "title": "Treat your data pipelines like code, because your agents already do | MotherDuck's Jordan Tigani",
-   "url": "https://devinterrupted.substack.com/p/treat-your-data-pipelines-like-code",
-   "source": "devinterrupted",
-   "metric": "feed rank",
-   "score": 2,
-   "rank": 14
-  },
-  {
    "title": "ChinAI #368: The Affordable Luxury of Kimi K3",
    "url": "https://chinai.substack.com/p/chinai-368-the-affordable-luxury",
    "source": "chinai",
@@ -11540,6 +9836,14 @@
    "rank": 15
   },
   {
+   "title": "The Dream of Quibi Lives On",
+   "url": "https://www.nbcuniversal.com/article/peacock-extends-its-vertical-video-leadership-reimagined-mobile-experience",
+   "source": "daringfireball",
+   "metric": "feed rank",
+   "score": 1,
+   "rank": 15
+  },
+  {
    "title": "AI on the Ballot",
    "url": "https://stratechery.com/2026/ai-on-the-ballot/",
    "source": "stratechery",
@@ -11578,14 +9882,6 @@
    "metric": "feed rank",
    "score": 1,
    "rank": 15
-  },
-  {
-   "title": "Tactical Challenges In Hiring Junior Engineers",
-   "url": "https://copyconstruct.medium.com/tactical-challenges-in-hiring-junior-engineers-29e31634a9bd?source=rss-87c8c84f24b1------2",
-   "source": "copyconstruct",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
   },
   {
    "title": "April 2020 gwern.net newsletter",
@@ -11668,6 +9964,14 @@
    "rank": 15
   },
   {
+   "title": "WWDC26 Bingo",
+   "url": "https://basicappleguy.com/basicappleblog/wwdc26-bingo",
+   "source": "basicappleguy",
+   "metric": "feed rank",
+   "score": 1,
+   "rank": 15
+  },
+  {
    "title": "AI for Dummies - my Top 5",
    "url": "https://batko.substack.com/p/ai-for-dummies-my-top-5",
    "source": "batkosubstack",
@@ -11676,28 +9980,12 @@
    "rank": 15
   },
   {
-   "title": "Reactive Flows, AI Agents, and State Events: This Week’s Angular Masterclass! ⚡",
-   "url": "https://blog.angular.dev/angular-weekly-july-17-2026-05440da623ad?source=rss----447683c3d9a3---4",
-   "source": "blogangular",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
-  },
-  {
    "title": "AI-first helpdesks: The UX shift businesses can’t ignore",
    "url": "https://blog.logrocket.com/ux-design/ai-helpdesk-ux-design-guide/",
    "source": "bloglogrocket",
    "metric": "feed rank",
    "score": 1,
    "rank": 12
-  },
-  {
-   "title": "Rewire VR Lessons: Open Mind School Experience",
-   "url": "https://blog.luden.io/rewire-vr-lessons-open-mind-school-experience-b284efe293c9?source=rss----d6f120d108d1---4",
-   "source": "blogluden",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
   },
   {
    "title": "How Roboflow Helps with Compliance and Readiness for Computer Vision",
@@ -11756,25 +10044,17 @@
    "rank": 10
   },
   {
+   "title": "How I Used Claude Code to Speed Up My Shell Startup by 95%",
+   "url": "https://blog.master.dev/how-i-used-claude-code-to-speed-up-my-shell-startup-by-95/",
+   "source": "frontendmasters",
+   "metric": "feed rank",
+   "score": 1,
+   "rank": 10
+  },
+  {
    "title": "A Boardroom Bot That Fires the Tab Babysitters, a Hollywood Handshake for Your Docs, and a Robot…",
    "url": "https://itnext.io/a-boardroom-bot-that-fires-the-tab-babysitters-a-hollywood-handshake-for-your-docs-and-a-robot-85d92e6f48eb?source=rss----5b301f10ddcd---4",
    "source": "itnext",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
-  },
-  {
-   "title": "Elon Musk Watches the Birdie…",
-   "url": "https://marker.medium.com/elon-musk-watches-the-birdie-640e224f712e?source=rss----7b6769f2748b---4",
-   "source": "markermedium",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
-  },
-  {
-   "title": "Engineering stories behind the Medium Daily Digest Algorithm: Part 2",
-   "url": "https://medium.engineering/engineering-stories-behind-the-medium-daily-digest-algorithm-part-2-c977ad0b134f?source=rss----2817475205d3---4",
-   "source": "medium",
    "metric": "feed rank",
    "score": 1,
    "rank": 10
@@ -11834,14 +10114,6 @@
    "metric": "feed rank",
    "score": 1,
    "rank": 15
-  },
-  {
-   "title": "How To Set Up Redux in React",
-   "url": "https://upmostly.com/tutorials/how-to-set-up-redux-in-react",
-   "source": "upmostly",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
   },
   {
    "title": "Developers bring incredible new app experiences to iPhone Duo",
@@ -11908,6 +10180,14 @@
    "rank": 15
   },
   {
+   "title": "pgvector vs. Dedicated Vector Databases: A Production Benchmark",
+   "url": "https://machinelearningmastery.com/pgvector-vs-dedicated-vector-databases-a-production-benchmark/",
+   "source": "machinelearningmastery",
+   "metric": "feed rank",
+   "score": 1,
+   "rank": 10
+  },
+  {
    "title": "Like High School, But More So",
    "url": "https://mikepennisi.com/blog/2025/review-beastars/",
    "source": "mikepennisi",
@@ -11927,14 +10207,6 @@
    "title": "AI Discoverability, Page types, and more (September 2026)",
    "url": "https://ahrefs.com/blog/new-features-september-2026/",
    "source": "ahrefs",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
-  },
-  {
-   "title": "Join the Most-Awaited Chatbot Conference",
-   "url": "https://becominghuman.ai/join-the-most-awaited-chatbot-conference-8aa9da6cefbe?source=rss----5e5bef33608a---4",
-   "source": "becominghuman",
    "metric": "feed rank",
    "score": 1,
    "rank": 10
@@ -11996,14 +10268,6 @@
    "rank": 5
   },
   {
-   "title": "Reply to Kevin: Color Genome Thread",
-   "url": "https://tangledweb.xyz/hi-kevin-thank-you-for-the-reply-a0b6b375f084?source=rss----36d7830f6552---4",
-   "source": "tangledweb",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
-  },
-  {
    "title": "众安银行股票投资功能试用",
    "url": "https://tumutanzi.com/archives/17628/",
    "source": "tumutanzi",
@@ -12012,12 +10276,12 @@
    "rank": 10
   },
   {
-   "title": "Creating a human-centered AI experience",
-   "url": "https://wix-ux.com/creating-a-human-centered-ai-experience-eb3d3178a54?source=rss----5c12f12b4121---4",
-   "source": "wixux",
+   "title": "第278期 - 大巧若拙",
+   "url": "https://weekly.tw93.fun/posts/278/",
+   "source": "weeklytw93",
    "metric": "feed rank",
    "score": 1,
-   "rank": 10
+   "rank": 12
   },
   {
    "title": "Paper2Audio Brings Text-to-Speech To Academic Documents",
@@ -12084,52 +10348,12 @@
    "rank": 15
   },
   {
-   "title": "10x faster python test iteration via fork(2)",
-   "url": "https://benchling.engineering/10x-faster-python-test-iteration-via-fork-2-3aae52d2f6?source=rss----3d4aa8fb07ea---4",
-   "source": "benchling",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
-  },
-  {
-   "title": "Frontend Engineering at Palantir: Plotlines in Three.js",
-   "url": "https://blog.palantir.com/frontend-engineering-at-palantir-plotlines-in-three-js-c0c47f310715?source=rss----3c87dc14372f---4",
-   "source": "blogpalantir",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
-  },
-  {
    "title": "More Performance From Every Byte: How Full-Stack Codesign Solves AI’s Memory Challenge",
    "url": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
    "source": "blogsnvidia",
    "metric": "feed rank",
    "score": 1,
    "rank": 15
-  },
-  {
-   "title": "Typeahead Search at Nextdoor",
-   "url": "https://engblog.nextdoor.com/typeahead-search-at-nextdoor-1875e70c67e8?source=rss----5e54f11cdfdf---4",
-   "source": "engblognextdoor",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
-  },
-  {
-   "title": "Minimally Invasive API Versioning",
-   "url": "https://engineering.ziffmedia.com/minimally-invasive-api-versioning-de5d85ea96d7?source=rss----d6bb34696ef5---4",
-   "source": "engineeringziffmedia",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
-  },
-  {
-   "title": "Teamwork Gets a New Home",
-   "url": "https://engineroom.teamwork.com/teamwork-gets-a-new-home-2931a27a1346?source=rss----cea4eecd5960---4",
-   "source": "engineroomteamwork",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
   },
   {
    "title": "Search Polymorphic Relations and Filament Tables With Laravel Searchable",
@@ -12146,14 +10370,6 @@
    "metric": "feed rank",
    "score": 1,
    "rank": 15
-  },
-  {
-   "title": "My journey at Blinkit: A series of epiphanies",
-   "url": "https://lambda.blinkit.com/my-journey-at-blinkit-a-series-of-epiphanies-c004c30ad973?source=rss----42df4a1e8725---4",
-   "source": "lambdablinkit",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
   },
   {
    "title": "Python Coding Interview Practice: Prefix Sums and Binary Search",
@@ -12178,14 +10394,6 @@
    "metric": "feed rank",
    "score": 1,
    "rank": 15
-  },
-  {
-   "title": "Unlocking Flexibility in Configuration: The Power of Hydra",
-   "url": "https://tech.olx.com/unlocking-flexibility-in-configuration-the-power-of-hydra-3f9e69263bb4?source=rss----761b019b483f---4",
-   "source": "techolx",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
   },
   {
    "title": "Investigation: Identical Servers, Different Performance",
@@ -12252,6 +10460,14 @@
    "rank": 15
   },
   {
+   "title": "The Exponential Time Hypothesis is false",
+   "url": "https://www.reddit.com/r/compsci/comments/1xgadrr/the_exponential_time_hypothesis_is_false/",
+   "source": "rcompsci",
+   "metric": "feed rank",
+   "score": 1,
+   "rank": 15
+  },
+  {
    "title": "Do anyone ported emacs back to Clisp?",
    "url": "https://www.reddit.com/r/lisp/comments/1xs24vh/do_anyone_ported_emacs_back_to_clisp/",
    "source": "rlisp",
@@ -12290,14 +10506,6 @@
    "metric": "feed rank",
    "score": 1,
    "rank": 15
-  },
-  {
-   "title": "Android Dev Summit 2026",
-   "url": "https://proandroiddev.com/android-dev-summit-2026-6b6cdf59cbe0?source=rss----c72404660798---4",
-   "source": "proandroiddev",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
   },
   {
    "title": "BetMGM cash reaches MGM as Strip earnings fall 12% and US iGaming growth slows",
@@ -12364,36 +10572,12 @@
    "rank": 10
   },
   {
-   "title": "TimeSeries Tiered Storage Journey: Kafka/Flink Streams to Native Cassandra Cold Reads",
-   "url": "https://netflixtechblog.com/timeseries-tiered-storage-journey-kafka-flink-streams-to-native-cassandra-cold-reads-e59d597c9d60?source=rss----2615bd06b42e---4",
-   "source": "netflix",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
-  },
-  {
-   "title": "Beyond A/B Testing: Using Surrogacy and Region-Splits to Measure Long-Term Effects in Marketplaces",
-   "url": "https://eng.lyft.com/beyond-a-b-testing-using-surrogacy-and-region-splits-to-measure-long-term-effects-in-marketplaces-9cb06d628f2d?source=rss----25cd379abb8---4",
-   "source": "lyft",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
-  },
-  {
    "title": "Gemini 4 Carbon now available on AI Gateway",
    "url": "https://vercel.com/changelog/gemini-4-carbon-now-available-on-ai-gateway",
    "source": "vercel",
    "metric": "feed rank",
    "score": 1,
    "rank": 15
-  },
-  {
-   "title": "Eval-driven development: Lessons from evaluating GenAI at scale",
-   "url": "https://medium.com/airbnb-engineering/eval-driven-development-lessons-from-evaluating-genai-at-scale-e817e5ae5788?source=rss----53c7c27702d5---4",
-   "source": "airbnb",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
   },
   {
    "title": "Automated, Secure, and Scalable: Reference Implementation for Atlas on Azure",
@@ -12492,6 +10676,14 @@
    "rank": 15
   },
   {
+   "title": "The Case for a Bubble at Life’s Start",
+   "url": "https://www.quantamagazine.org/the-case-for-a-bubble-at-lifes-start-20261110/",
+   "source": "quanta",
+   "metric": "feed rank",
+   "score": 1,
+   "rank": 5
+  },
+  {
    "title": "Turn Your Non-Design Experience into Design Portfolio Gold",
    "url": "https://ixdf.org/literature/article/turn-your-non-design-experience-into-design-portfolio-gold",
    "source": "ixd",
@@ -12514,14 +10706,6 @@
    "metric": "feed rank",
    "score": 1,
    "rank": 15
-  },
-  {
-   "title": "5 NEW GitHub Repos for Claude Code Worth Trying for Product Design",
-   "url": "https://uxplanet.org/5-new-github-repos-for-claude-code-worth-trying-for-product-design-8d2ca0914487?source=rss----819cc2aaeee0---4",
-   "source": "uxplanet",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
   },
   {
    "title": "Anthropic Publishes Guidance for More Reliable AI Safety Evaluations",
@@ -12836,14 +11020,6 @@
    "rank": 15
   },
   {
-   "title": "Reactive Flows, AI Agents, and State Events: This Week’s Angular Masterclass! ⚡",
-   "url": "https://blog.angular.dev/angular-weekly-july-17-2026-05440da623ad?source=rss----447683c3d9a3---4",
-   "source": "w3blog4",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 10
-  },
-  {
    "title": "DOT Sec. Duffy ties router in southern Arkansas to issues that led to nationwide ground stop",
    "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
    "source": "cnbc",
@@ -13116,6 +11292,14 @@
    "rank": 15
   },
   {
+   "title": "解决Cloudflare Pages的308自动重定向问题",
+   "url": "https://www.williamlong.info/archives/7558.html",
+   "source": "williamlong",
+   "metric": "feed rank",
+   "score": 1,
+   "rank": 10
+  },
+  {
    "title": ".css | 动画笔记",
    "url": "https://blog.mountaye.com/articles/css-transform-transition-animation",
    "source": "blog40",
@@ -13159,6 +11343,14 @@
    "title": "Fed’s Schmid warns inflation fight has grown harder",
    "url": "https://seekingalpha.com/news/4672808-fed-s-schmid-warns-inflation-fight-has-grown-harder?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
    "source": "seekingalpha",
+   "metric": "feed rank",
+   "score": 1,
+   "rank": 7
+  },
+  {
+   "title": "Google’s Collapse Gives Hope for the Middle Class and Our Kids",
+   "url": "https://www.financialsamurai.com/googles-stumble-gives-hope-middle-class/",
+   "source": "financialsamurai",
    "metric": "feed rank",
    "score": 1,
    "rank": 7
@@ -13319,14 +11511,6 @@
    "title": "Coding Challenge #131 - Automated Code Review Agent",
    "url": "https://codingchallenges.substack.com/p/coding-challenge-131-automated-code",
    "source": "codingchallenges",
-   "metric": "feed rank",
-   "score": 1,
-   "rank": 15
-  },
-  {
-   "title": "Your agents are starving! Airbyte’s Michel Tricot on the data ingestion crisis",
-   "url": "https://devinterrupted.substack.com/p/your-agents-are-starving-airbytes",
-   "source": "devinterrupted",
    "metric": "feed rank",
    "score": 1,
    "rank": 15
