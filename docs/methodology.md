@@ -168,3 +168,10 @@ consecutive collects** — single-day zeros self-heal in-wave.
     （gen_opml/gen_sources_md）——factory 改了但生成器没扫。修法：
     统一 `row[:3]` 切片；schema 变更时 `grep -rn "feed, home" scripts/`
     过一遍所有消费者再提交。
+
+39. **错误码白名单会漏掉 TCP 级失败——拦截不一定有 HTTP 状态码**：
+    rss2json 兜底只认 code in (403,429,404)，但出口被 TCP 级拉黑时
+    urllib 抛 URLError（Errno 101/timeout），err.code=None——135 个
+    br_ 源在 Actions 上持续归零而 VM 直连全活。修法：`code is None`
+    也算失败兜底。判据：分诊"零源"时先问失败形态——HTTP 拒绝
+    （有码）/ TCP 黑洞（无码）/ DNS 失败，三者对应不同出口拦截层。
