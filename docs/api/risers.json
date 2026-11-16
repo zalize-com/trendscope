@@ -1,8 +1,38 @@
 {
-  "generated_at": "2026-11-15",
-  "latest_snapshot": "2026-11-15",
-  "days_tracked": 9,
+  "generated_at": "2026-11-16",
+  "latest_snapshot": "2026-11-16",
+  "days_tracked": 10,
   "single_day_spikes": [
+    {
+      "title": "deepseek-ai/chat-demo",
+      "source": "github_trending",
+      "url": "https://github.com/deepseek-ai/chat-demo",
+      "metric": "stars",
+      "date": "2026-11-16",
+      "delta": 1075,
+      "from_score": 1884,
+      "to_score": 2959
+    },
+    {
+      "title": "All AI-generated code should be Open Source",
+      "source": "tb_jakub_t_jankiewicz",
+      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+      "metric": "feed rank",
+      "date": "2026-11-16",
+      "delta": 1053,
+      "from_score": 2,
+      "to_score": 1055
+    },
+    {
+      "title": "SpaceX catches the Starship to end Flight 15",
+      "source": "hackernews",
+      "url": "https://www.spacex.com/launches/starship-flight-15",
+      "metric": "points",
+      "date": "2026-11-16",
+      "delta": 643,
+      "from_score": 995,
+      "to_score": 1638
+    },
     {
       "title": "Lovable apps expose passport details and more than 200K private messages",
       "source": "hackernews",
@@ -14,14 +44,104 @@
       "to_score": 743
     },
     {
-      "title": "A family tree of software job titles",
+      "title": "The MacBook Pro's OLED PWM problem",
       "source": "hackernews",
-      "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+      "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
       "metric": "points",
+      "date": "2026-11-16",
+      "delta": 356,
+      "from_score": 47,
+      "to_score": 403
+    },
+    {
+      "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+      "source": "hnrss",
+      "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+      "metric": "feed rank",
+      "date": "2026-11-16",
+      "delta": 341,
+      "from_score": 7,
+      "to_score": 348
+    },
+    {
+      "title": "apex-compute/ANR",
+      "source": "github_trending",
+      "url": "https://github.com/apex-compute/ANR",
+      "metric": "stars",
+      "date": "2026-11-16",
+      "delta": 329,
+      "from_score": 1878,
+      "to_score": 2207
+    },
+    {
+      "title": "Eynnzerr/TelemetryCleaner",
+      "source": "github_trending",
+      "url": "https://github.com/Eynnzerr/TelemetryCleaner",
+      "metric": "stars",
+      "date": "2026-11-16",
+      "delta": 299,
+      "from_score": 698,
+      "to_score": 997
+    },
+    {
+      "title": "Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]",
+      "source": "hackernews",
+      "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
+      "metric": "points",
+      "date": "2026-11-16",
+      "delta": 262,
+      "from_score": 57,
+      "to_score": 319
+    },
+    {
+      "title": "Noniv/abyssal-garden",
+      "source": "github_trending",
+      "url": "https://github.com/Noniv/abyssal-garden",
+      "metric": "stars",
+      "date": "2026-11-16",
+      "delta": 239,
+      "from_score": 836,
+      "to_score": 1075
+    },
+    {
+      "title": "duwqijlk/muse-protocol",
+      "source": "github_trending",
+      "url": "https://github.com/duwqijlk/muse-protocol",
+      "metric": "stars",
+      "date": "2026-11-16",
+      "delta": 208,
+      "from_score": 808,
+      "to_score": 1016
+    },
+    {
+      "title": "hitkeeen/blender-ai-mcp-addon",
+      "source": "github_trending",
+      "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
+      "metric": "stars",
+      "date": "2026-11-16",
+      "delta": 197,
+      "from_score": 904,
+      "to_score": 1101
+    },
+    {
+      "title": "A Family Tree of Software Job Titles",
+      "source": "zwischenzugs",
+      "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+      "metric": "feed rank",
       "date": "2026-11-15",
       "delta": 189,
       "from_score": 76,
       "to_score": 265
+    },
+    {
+      "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+      "source": "hackernews",
+      "url": "https://prog21.dadgum.com/116.html",
+      "metric": "points",
+      "date": "2026-11-16",
+      "delta": 189,
+      "from_score": 1,
+      "to_score": 190
     },
     {
       "title": "deepseek-ai/chat-demo",
@@ -34,10 +154,40 @@
       "to_score": 1884
     },
     {
-      "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
+      "title": "DevedevT/FFmpeg-GUI-Editor-Windows",
+      "source": "github_trending",
+      "url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows",
+      "metric": "stars",
+      "date": "2026-11-16",
+      "delta": 177,
+      "from_score": 1051,
+      "to_score": 1228
+    },
+    {
+      "title": "Understanding Positional Embeddings in Modern LLMs",
+      "source": "aheadofai",
+      "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+      "metric": "feed rank",
+      "date": "2026-11-16",
+      "delta": 177,
+      "from_score": 15,
+      "to_score": 192
+    },
+    {
+      "title": "Emacs Is My Browser",
       "source": "hackernews",
-      "url": "https://projectzero.google/2026/11/disclosure-policy.html",
+      "url": "https://joshblais.com/blog/emacs-as-my-browser/",
       "metric": "points",
+      "date": "2026-11-16",
+      "delta": 167,
+      "from_score": 3,
+      "to_score": 170
+    },
+    {
+      "title": "Policy and Disclosure: 2026 Edition",
+      "source": "sec_google_project_zero_legacy",
+      "url": "https://projectzero.google/2026/11/disclosure-policy.html",
+      "metric": "feed rank",
       "date": "2026-11-15",
       "delta": 158,
       "from_score": 62,
@@ -54,6 +204,36 @@
       "to_score": 430
     },
     {
+      "title": "Why did some Apollo missions carry a grenade launcher? (2019)",
+      "source": "hackernews",
+      "url": "https://space.stackexchange.com/questions/37775",
+      "metric": "points",
+      "date": "2026-11-16",
+      "delta": 157,
+      "from_score": 67,
+      "to_score": 224
+    },
+    {
+      "title": "A short explainer on how El Niño works [video]",
+      "source": "hnrss",
+      "url": "https://www.youtube.com/watch?v=7_JF3etiAv8",
+      "metric": "feed rank",
+      "date": "2026-11-16",
+      "delta": 149,
+      "from_score": 6,
+      "to_score": 155
+    },
+    {
+      "title": "'Birdbrain' Is a Misnomer. Crows Make Decisions Faster Than We Can",
+      "source": "hnrss",
+      "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
+      "metric": "feed rank",
+      "date": "2026-11-16",
+      "delta": 147,
+      "from_score": 5,
+      "to_score": 152
+    },
+    {
       "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
       "source": "hackernews",
       "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
@@ -64,6 +244,16 @@
       "to_score": 213
     },
     {
+      "title": "FrigadeHQ/yogurt",
+      "source": "github_trending",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "metric": "stars",
+      "date": "2026-11-16",
+      "delta": 127,
+      "from_score": 1520,
+      "to_score": 1647
+    },
+    {
       "title": "adriadam10/mkw-recomp",
       "source": "github_trending",
       "url": "https://github.com/adriadam10/mkw-recomp",
@@ -72,6 +262,26 @@
       "delta": 114,
       "from_score": 856,
       "to_score": 970
+    },
+    {
+      "title": "Old Bitly Links Are Being Hijacked",
+      "source": "hnrss",
+      "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
+      "metric": "feed rank",
+      "date": "2026-11-16",
+      "delta": 108,
+      "from_score": 15,
+      "to_score": 123
+    },
+    {
+      "title": "Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence",
+      "source": "hnrss",
+      "url": "https://news.ycombinator.com/item?id=50510042",
+      "metric": "feed rank",
+      "date": "2026-11-16",
+      "delta": 107,
+      "from_score": 4,
+      "to_score": 111
     },
     {
       "title": "Why get an expensive Pi when I have an old phone?",
@@ -94,6 +304,36 @@
       "to_score": 1878
     },
     {
+      "title": "Handwriting, as a Font",
+      "source": "hnrss",
+      "url": "https://ductus.sorenblank.com",
+      "metric": "feed rank",
+      "date": "2026-11-16",
+      "delta": 88,
+      "from_score": 10,
+      "to_score": 98
+    },
+    {
+      "title": "Clice v1.0 Released: Welcome to Modern C++",
+      "source": "hackernews",
+      "url": "https://ykiko.me/en/articles/2105384023094834022/",
+      "metric": "points",
+      "date": "2026-11-16",
+      "delta": 82,
+      "from_score": 4,
+      "to_score": 86
+    },
+    {
+      "title": "Vulcan rocket fails during return-to-flight launch, 40 Amazon satellites lost",
+      "source": "hnrss",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch",
+      "metric": "feed rank",
+      "date": "2026-11-16",
+      "delta": 82,
+      "from_score": 13,
+      "to_score": 95
+    },
+    {
       "title": "PyPI's redesigned project pages with clearer security signals are now live",
       "source": "hackernews",
       "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
@@ -102,6 +342,16 @@
       "delta": 77,
       "from_score": 148,
       "to_score": 225
+    },
+    {
+      "title": "Protomaps: Self-hosting map tiles has gotten cheap and easy",
+      "source": "hnrss",
+      "url": "https://bruceroettgers.eu/blog/protomaps/",
+      "metric": "feed rank",
+      "date": "2026-11-16",
+      "delta": 77,
+      "from_score": 53,
+      "to_score": 130
     },
     {
       "title": "Advancing science and engineering with Antigravity's /teamwork",
@@ -144,6 +394,46 @@
       "to_score": 196
     },
     {
+      "title": "WebGL Flight Simulator with seed generated terrain",
+      "source": "hnrss",
+      "url": "https://baron.by.dai.studio/",
+      "metric": "feed rank",
+      "date": "2026-11-16",
+      "delta": 56,
+      "from_score": 12,
+      "to_score": 68
+    },
+    {
+      "title": "A NES emulator written in Odin",
+      "source": "lobsters",
+      "url": "https://lucypero.com/lucynes.html",
+      "metric": "score",
+      "date": "2026-11-16",
+      "delta": 53,
+      "from_score": 52,
+      "to_score": 105
+    },
+    {
+      "title": "JDhruv14/line-art-animation",
+      "source": "github_trending",
+      "url": "https://github.com/JDhruv14/line-art-animation",
+      "metric": "stars",
+      "date": "2026-11-16",
+      "delta": 52,
+      "from_score": 782,
+      "to_score": 834
+    },
+    {
+      "title": "Kianuni/Erosion-CN",
+      "source": "github_trending",
+      "url": "https://github.com/Kianuni/Erosion-CN",
+      "metric": "stars",
+      "date": "2026-11-16",
+      "delta": 51,
+      "from_score": 2076,
+      "to_score": 2127
+    },
+    {
       "title": "Reverse engineering a vintage diode-transistor logic chip",
       "source": "hackernews",
       "url": "https://www.righto.com/2026/11/signetics-st680a-dtl-nand.html",
@@ -152,6 +442,16 @@
       "delta": 51,
       "from_score": 55,
       "to_score": 106
+    },
+    {
+      "title": "opencoredev/islandcn",
+      "source": "github_trending",
+      "url": "https://github.com/opencoredev/islandcn",
+      "metric": "stars",
+      "date": "2026-11-16",
+      "delta": 45,
+      "from_score": 688,
+      "to_score": 733
     },
     {
       "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
@@ -164,6 +464,16 @@
       "to_score": 151
     },
     {
+      "title": "HybridRobotics/supermimic",
+      "source": "github_trending",
+      "url": "https://github.com/HybridRobotics/supermimic",
+      "metric": "stars",
+      "date": "2026-11-16",
+      "delta": 42,
+      "from_score": 1512,
+      "to_score": 1554
+    },
+    {
       "title": "JDhruv14/line-art-animation",
       "source": "github_trending",
       "url": "https://github.com/JDhruv14/line-art-animation",
@@ -174,6 +484,16 @@
       "to_score": 782
     },
     {
+      "title": "Memory management in 40 major C projects, a survey",
+      "source": "lobsters",
+      "url": "https://theconsensus.dev/p/2026/11/08/c-memory-management-survey.html",
+      "metric": "score",
+      "date": "2026-11-16",
+      "delta": 41,
+      "from_score": 1,
+      "to_score": 42
+    },
+    {
       "title": "serveroshq/panel",
       "source": "github_trending",
       "url": "https://github.com/serveroshq/panel",
@@ -182,328 +502,32 @@
       "delta": 32,
       "from_score": 784,
       "to_score": 816
-    },
-    {
-      "title": "HolyArrs/HolyArrs",
-      "source": "github_trending",
-      "url": "https://github.com/HolyArrs/HolyArrs",
-      "metric": "stars",
-      "date": "2026-11-15",
-      "delta": 30,
-      "from_score": 1170,
-      "to_score": 1200
-    },
-    {
-      "title": "agentes-chat/agentes-chat",
-      "source": "github_trending",
-      "url": "https://github.com/agentes-chat/agentes-chat",
-      "metric": "stars",
-      "date": "2026-11-15",
-      "delta": 26,
-      "from_score": 1390,
-      "to_score": 1416
-    },
-    {
-      "title": "Kianuni/Erosion-CN",
-      "source": "github_trending",
-      "url": "https://github.com/Kianuni/Erosion-CN",
-      "metric": "stars",
-      "date": "2026-11-15",
-      "delta": 25,
-      "from_score": 2051,
-      "to_score": 2076
-    },
-    {
-      "title": "alexeyw/lot-map",
-      "source": "github_trending",
-      "url": "https://github.com/alexeyw/lot-map",
-      "metric": "stars",
-      "date": "2026-11-15",
-      "delta": 25,
-      "from_score": 815,
-      "to_score": 840
-    },
-    {
-      "title": "Let Me Let You Own Your Data",
-      "source": "lobsters",
-      "url": "https://www.willett.io/posts/data/",
-      "metric": "score",
-      "date": "2026-11-15",
-      "delta": 20,
-      "from_score": 11,
-      "to_score": 31
-    },
-    {
-      "title": "kolbicz/WQFiles",
-      "source": "github_trending",
-      "url": "https://github.com/kolbicz/WQFiles",
-      "metric": "stars",
-      "date": "2026-11-15",
-      "delta": 19,
-      "from_score": 850,
-      "to_score": 869
-    },
-    {
-      "title": "Testing a trash can Faraday cage",
-      "source": "hackernews",
-      "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
-      "metric": "points",
-      "date": "2026-11-15",
-      "delta": 18,
-      "from_score": 54,
-      "to_score": 72
-    },
-    {
-      "title": "HybridRobotics/supermimic",
-      "source": "github_trending",
-      "url": "https://github.com/HybridRobotics/supermimic",
-      "metric": "stars",
-      "date": "2026-11-15",
-      "delta": 17,
-      "from_score": 1495,
-      "to_score": 1512
-    },
-    {
-      "title": "What happened to 3com?",
-      "source": "lobsters",
-      "url": "https://dfarq.homeip.net/what-happened-to-3com/",
-      "metric": "score",
-      "date": "2026-11-15",
-      "delta": 13,
-      "from_score": 20,
-      "to_score": 33
-    },
-    {
-      "title": "How Not to Build a Music Player",
-      "source": "lobsters",
-      "url": "https://alichraghi.github.io/blog/how-not-to-build-a-music-player",
-      "metric": "score",
-      "date": "2026-11-15",
-      "delta": 8,
-      "from_score": 105,
-      "to_score": 113
-    },
-    {
-      "title": "Probabilistic data structures in Go",
-      "source": "lobsters",
-      "url": "https://antonz.org/probabilistic-data-structures/",
-      "metric": "score",
-      "date": "2026-11-15",
-      "delta": 7,
-      "from_score": 55,
-      "to_score": 62
-    },
-    {
-      "title": "Solving the fox game",
-      "source": "lobsters",
-      "url": "http://blog.sesse.net/blog/tech/2026-11-13-19-51_solving_the_fox_game.html",
-      "metric": "score",
-      "date": "2026-11-15",
-      "delta": 7,
-      "from_score": 12,
-      "to_score": 19
-    },
-    {
-      "title": "The need for at least a third option",
-      "source": "lobsters",
-      "url": "https://blog.ovalerio.net/archives/3359",
-      "metric": "score",
-      "date": "2026-11-15",
-      "delta": 6,
-      "from_score": 79,
-      "to_score": 85
-    },
-    {
-      "title": "Terminal borders that don't cost a cell",
-      "source": "lobsters",
-      "url": "https://www.joshka.net/cell-borders/",
-      "metric": "score",
-      "date": "2026-11-15",
-      "delta": 6,
-      "from_score": 54,
-      "to_score": 60
-    },
-    {
-      "title": "Someone's impersonating this blog",
-      "source": "lobsters",
-      "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/",
-      "metric": "score",
-      "date": "2026-11-15",
-      "delta": 5,
-      "from_score": 41,
-      "to_score": 46
-    },
-    {
-      "title": "Creating a self booting ZIP archive",
-      "source": "lobsters",
-      "url": "https://goliath32.com/blog/ziphead.html",
-      "metric": "score",
-      "date": "2026-11-15",
-      "delta": 5,
-      "from_score": 13,
-      "to_score": 18
-    },
-    {
-      "title": "MCP Is Dead Simple. And That's Exactly the Problem",
-      "source": "devto",
-      "url": "https://dev.to/sylwia-lask/mcp-is-dead-simple-and-thats-exactly-the-problem-5811",
-      "metric": "reactions",
-      "date": "2026-11-15",
-      "delta": 5,
-      "from_score": 156,
-      "to_score": 161
-    },
-    {
-      "title": "Writing a DSL for high performance parallel programming in OxCaml",
-      "source": "lobsters",
-      "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
-      "metric": "score",
-      "date": "2026-11-15",
-      "delta": 4,
-      "from_score": 10,
-      "to_score": 14
-    },
-    {
-      "title": "DevedevT/FFmpeg-GUI-Editor-Windows",
-      "source": "github_trending",
-      "url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows",
-      "metric": "stars",
-      "date": "2026-11-15",
-      "delta": 4,
-      "from_score": 1047,
-      "to_score": 1051
-    },
-    {
-      "title": "Long Live Rails",
-      "source": "devto",
-      "url": "https://dev.to/ben/long-live-rails-3p21",
-      "metric": "reactions",
-      "date": "2026-11-15",
-      "delta": 3,
-      "from_score": 123,
-      "to_score": 126
-    },
-    {
-      "title": "How did you end up in tech, and are you staying?",
-      "source": "devto",
-      "url": "https://dev.to/maame-codes/how-did-you-end-up-in-tech-and-are-you-staying-4l9b",
-      "metric": "reactions",
-      "date": "2026-11-15",
-      "delta": 2,
-      "from_score": 159,
-      "to_score": 161
-    },
-    {
-      "title": "Congrats to the Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine Winners!",
-      "source": "devto",
-      "url": "https://dev.to/devteam/congrats-to-the-hacktoberfest-open-source-ai-challenge-week-4-ghost-in-the-machine-winners-nok",
-      "metric": "reactions",
-      "date": "2026-11-15",
-      "delta": 2,
-      "from_score": 84,
-      "to_score": 86
-    },
-    {
-      "title": "Dev Opportunity Radar #25: $120K+ Atlassian Hackathon, MLH Fellowship, and INSEAD AI Founder Sprint",
-      "source": "devto",
-      "url": "https://dev.to/devengers/dev-opportunity-radar-25-120k-atlassian-hackathon-mlh-fellowship-and-insead-ai-founder-sprint-m96",
-      "metric": "reactions",
-      "date": "2026-11-15",
-      "delta": 1,
-      "from_score": 88,
-      "to_score": 89
-    },
-    {
-      "title": "One Year on DEV.to, 109 Articles Later",
-      "source": "devto",
-      "url": "https://dev.to/dannwaneri/one-year-on-devto-109-articles-later-p31",
-      "metric": "reactions",
-      "date": "2026-11-15",
-      "delta": 1,
-      "from_score": 66,
-      "to_score": 67
     }
   ],
   "package_rank_jumps": [],
   "sustained_climbers": [
     {
-      "title": "FrigadeHQ/yogurt",
-      "source": "github_trending",
-      "url": "https://github.com/FrigadeHQ/yogurt",
-      "metric": "stars",
-      "gain": 1218,
-      "days_tracked": 3
-    },
-    {
       "title": "SpaceX catches the Starship to end Flight 15",
       "source": "hackernews",
       "url": "https://www.spacex.com/launches/starship-flight-15",
       "metric": "points",
-      "gain": 814,
-      "days_tracked": 2
+      "gain": 1457,
+      "days_tracked": 3
     },
     {
-      "title": "Lovable apps expose passport details and more than 200K private messages",
-      "source": "hackernews",
-      "url": "https://www.crissyfield.de/research/lovable-en/",
-      "metric": "points",
-      "gain": 425,
-      "days_tracked": 2
-    },
-    {
-      "title": "A family tree of software job titles",
-      "source": "hackernews",
-      "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
-      "metric": "points",
-      "gain": 189,
-      "days_tracked": 2
+      "title": "FrigadeHQ/yogurt",
+      "source": "github_trending",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "metric": "stars",
+      "gain": 1345,
+      "days_tracked": 4
     },
     {
       "title": "deepseek-ai/chat-demo",
       "source": "github_trending",
       "url": "https://github.com/deepseek-ai/chat-demo",
       "metric": "stars",
-      "gain": 185,
-      "days_tracked": 2
-    },
-    {
-      "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
-      "source": "hackernews",
-      "url": "https://projectzero.google/2026/11/disclosure-policy.html",
-      "metric": "points",
-      "gain": 158,
-      "days_tracked": 2
-    },
-    {
-      "title": "KDE: The documentary [video]",
-      "source": "hackernews",
-      "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
-      "metric": "points",
-      "gain": 157,
-      "days_tracked": 2
-    },
-    {
-      "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
-      "source": "hackernews",
-      "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
-      "metric": "points",
-      "gain": 127,
-      "days_tracked": 2
-    },
-    {
-      "title": "adriadam10/mkw-recomp",
-      "source": "github_trending",
-      "url": "https://github.com/adriadam10/mkw-recomp",
-      "metric": "stars",
-      "gain": 114,
-      "days_tracked": 2
-    },
-    {
-      "title": "Why get an expensive Pi when I have an old phone?",
-      "source": "hackernews",
-      "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
-      "metric": "points",
-      "gain": 99,
+      "gain": 1260,
       "days_tracked": 3
     },
     {
@@ -511,239 +535,55 @@
       "source": "github_trending",
       "url": "https://github.com/apex-compute/ANR",
       "metric": "stars",
-      "gain": 99,
-      "days_tracked": 2
+      "gain": 428,
+      "days_tracked": 3
     },
     {
-      "title": "PyPI's redesigned project pages with clearer security signals are now live",
+      "title": "The MacBook Pro's OLED PWM problem",
       "source": "hackernews",
-      "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
+      "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
       "metric": "points",
-      "gain": 77,
+      "gain": 356,
       "days_tracked": 2
     },
     {
-      "title": "Advancing science and engineering with Antigravity's /teamwork",
+      "title": "Eynnzerr/TelemetryCleaner",
+      "source": "github_trending",
+      "url": "https://github.com/Eynnzerr/TelemetryCleaner",
+      "metric": "stars",
+      "gain": 299,
+      "days_tracked": 2
+    },
+    {
+      "title": "Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]",
       "source": "hackernews",
-      "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+      "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
       "metric": "points",
-      "gain": 76,
+      "gain": 262,
       "days_tracked": 2
     },
     {
-      "title": "huamidev/GestaltX",
+      "title": "Noniv/abyssal-garden",
       "source": "github_trending",
-      "url": "https://github.com/huamidev/GestaltX",
+      "url": "https://github.com/Noniv/abyssal-garden",
       "metric": "stars",
-      "gain": 70,
+      "gain": 239,
       "days_tracked": 2
     },
     {
-      "title": "Disk encryption on NetBSD – achieving secrecy",
-      "source": "hackernews",
-      "url": "https://netbsd.org/~nia/disk-encrypt/",
-      "metric": "points",
-      "gain": 59,
-      "days_tracked": 2
-    },
-    {
-      "title": "Generative AI uses more energy on non-English text",
-      "source": "hackernews",
-      "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
-      "metric": "points",
-      "gain": 58,
-      "days_tracked": 2
-    },
-    {
-      "title": "Reverse engineering a vintage diode-transistor logic chip",
-      "source": "hackernews",
-      "url": "https://www.righto.com/2026/11/signetics-st680a-dtl-nand.html",
-      "metric": "points",
-      "gain": 51,
-      "days_tracked": 2
-    },
-    {
-      "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
-      "source": "hackernews",
-      "url": "https://gitlab.com/snipedbywifi/terminactory",
-      "metric": "points",
-      "gain": 42,
-      "days_tracked": 2
-    },
-    {
-      "title": "JDhruv14/line-art-animation",
+      "title": "duwqijlk/muse-protocol",
       "source": "github_trending",
-      "url": "https://github.com/JDhruv14/line-art-animation",
+      "url": "https://github.com/duwqijlk/muse-protocol",
       "metric": "stars",
-      "gain": 41,
+      "gain": 208,
       "days_tracked": 2
     },
     {
-      "title": "serveroshq/panel",
+      "title": "hitkeeen/blender-ai-mcp-addon",
       "source": "github_trending",
-      "url": "https://github.com/serveroshq/panel",
+      "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
       "metric": "stars",
-      "gain": 32,
-      "days_tracked": 2
-    },
-    {
-      "title": "HolyArrs/HolyArrs",
-      "source": "github_trending",
-      "url": "https://github.com/HolyArrs/HolyArrs",
-      "metric": "stars",
-      "gain": 30,
-      "days_tracked": 2
-    },
-    {
-      "title": "My favourite modern NES games",
-      "source": "hackernews",
-      "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
-      "metric": "points",
-      "gain": 30,
-      "days_tracked": 2
-    },
-    {
-      "title": "agentes-chat/agentes-chat",
-      "source": "github_trending",
-      "url": "https://github.com/agentes-chat/agentes-chat",
-      "metric": "stars",
-      "gain": 26,
-      "days_tracked": 2
-    },
-    {
-      "title": "Kianuni/Erosion-CN",
-      "source": "github_trending",
-      "url": "https://github.com/Kianuni/Erosion-CN",
-      "metric": "stars",
-      "gain": 25,
-      "days_tracked": 2
-    },
-    {
-      "title": "alexeyw/lot-map",
-      "source": "github_trending",
-      "url": "https://github.com/alexeyw/lot-map",
-      "metric": "stars",
-      "gain": 25,
-      "days_tracked": 2
-    },
-    {
-      "title": "Show HN: Gawain – Require type hints on all Python variables",
-      "source": "hackernews",
-      "url": "https://github.com/matheuzgomes/gawain",
-      "metric": "points",
-      "gain": 23,
-      "days_tracked": 2
-    },
-    {
-      "title": "Let Me Let You Own Your Data",
-      "source": "lobsters",
-      "url": "https://www.willett.io/posts/data/",
-      "metric": "score",
-      "gain": 20,
-      "days_tracked": 2
-    },
-    {
-      "title": "kolbicz/WQFiles",
-      "source": "github_trending",
-      "url": "https://github.com/kolbicz/WQFiles",
-      "metric": "stars",
-      "gain": 19,
-      "days_tracked": 2
-    },
-    {
-      "title": "Testing a trash can Faraday cage",
-      "source": "hackernews",
-      "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
-      "metric": "points",
-      "gain": 18,
-      "days_tracked": 2
-    },
-    {
-      "title": "HybridRobotics/supermimic",
-      "source": "github_trending",
-      "url": "https://github.com/HybridRobotics/supermimic",
-      "metric": "stars",
-      "gain": 17,
-      "days_tracked": 2
-    },
-    {
-      "title": "What happened to 3com?",
-      "source": "lobsters",
-      "url": "https://dfarq.homeip.net/what-happened-to-3com/",
-      "metric": "score",
-      "gain": 13,
-      "days_tracked": 2
-    },
-    {
-      "title": "How Not to Build a Music Player",
-      "source": "lobsters",
-      "url": "https://alichraghi.github.io/blog/how-not-to-build-a-music-player",
-      "metric": "score",
-      "gain": 8,
-      "days_tracked": 2
-    },
-    {
-      "title": "Probabilistic data structures in Go",
-      "source": "lobsters",
-      "url": "https://antonz.org/probabilistic-data-structures/",
-      "metric": "score",
-      "gain": 7,
-      "days_tracked": 2
-    },
-    {
-      "title": "Solving the fox game",
-      "source": "lobsters",
-      "url": "http://blog.sesse.net/blog/tech/2026-11-13-19-51_solving_the_fox_game.html",
-      "metric": "score",
-      "gain": 7,
-      "days_tracked": 2
-    },
-    {
-      "title": "The need for at least a third option",
-      "source": "lobsters",
-      "url": "https://blog.ovalerio.net/archives/3359",
-      "metric": "score",
-      "gain": 6,
-      "days_tracked": 2
-    },
-    {
-      "title": "Someone's impersonating this blog",
-      "source": "lobsters",
-      "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/",
-      "metric": "score",
-      "gain": 5,
-      "days_tracked": 2
-    },
-    {
-      "title": "Creating a self booting ZIP archive",
-      "source": "lobsters",
-      "url": "https://goliath32.com/blog/ziphead.html",
-      "metric": "score",
-      "gain": 5,
-      "days_tracked": 2
-    },
-    {
-      "title": "MCP Is Dead Simple. And That's Exactly the Problem",
-      "source": "devto",
-      "url": "https://dev.to/sylwia-lask/mcp-is-dead-simple-and-thats-exactly-the-problem-5811",
-      "metric": "reactions",
-      "gain": 5,
-      "days_tracked": 2
-    },
-    {
-      "title": "Choosing QuePaxa, an unusual consensus algorithm",
-      "source": "cloudflare",
-      "url": "https://blog.cloudflare.com/choosing-quepaxa/",
-      "metric": "feed rank",
-      "gain": 5,
-      "days_tracked": 2
-    },
-    {
-      "title": "Writing a DSL for high performance parallel programming in OxCaml",
-      "source": "lobsters",
-      "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
-      "metric": "score",
-      "gain": 4,
+      "gain": 197,
       "days_tracked": 2
     },
     {
@@ -751,31 +591,279 @@
       "source": "github_trending",
       "url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows",
       "metric": "stars",
-      "gain": 4,
+      "gain": 181,
+      "days_tracked": 3
+    },
+    {
+      "title": "Why did some Apollo missions carry a grenade launcher? (2019)",
+      "source": "hackernews",
+      "url": "https://space.stackexchange.com/questions/37775",
+      "metric": "points",
+      "gain": 157,
       "days_tracked": 2
     },
     {
-      "title": "Long Live Rails",
-      "source": "devto",
-      "url": "https://dev.to/ben/long-live-rails-3p21",
-      "metric": "reactions",
-      "gain": 3,
+      "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+      "source": "hackernews",
+      "url": "https://prog21.dadgum.com/116.html",
+      "metric": "points",
+      "gain": 141,
+      "days_tracked": 3
+    },
+    {
+      "title": "Emacs Is My Browser",
+      "source": "hackernews",
+      "url": "https://joshblais.com/blog/emacs-as-my-browser/",
+      "metric": "points",
+      "gain": 104,
+      "days_tracked": 3
+    },
+    {
+      "title": "JDhruv14/line-art-animation",
+      "source": "github_trending",
+      "url": "https://github.com/JDhruv14/line-art-animation",
+      "metric": "stars",
+      "gain": 93,
+      "days_tracked": 3
+    },
+    {
+      "title": "Tor Project Issues Rapid-Response DoS-Defense Fix Amid Sustained DDoS Attack",
+      "source": "hackernews",
+      "url": "https://forum.torproject.org/t/security-release-0-4-9-17/22454",
+      "metric": "points",
+      "gain": 78,
       "days_tracked": 2
     },
     {
-      "title": "How did you end up in tech, and are you staying?",
-      "source": "devto",
-      "url": "https://dev.to/maame-codes/how-did-you-end-up-in-tech-and-are-you-staying-4l9b",
-      "metric": "reactions",
-      "gain": 2,
+      "title": "Kianuni/Erosion-CN",
+      "source": "github_trending",
+      "url": "https://github.com/Kianuni/Erosion-CN",
+      "metric": "stars",
+      "gain": 76,
+      "days_tracked": 3
+    },
+    {
+      "title": "Coles hit by a cybersecurity incident",
+      "source": "hackernews",
+      "url": "https://www.colesgroup.com.au/updates/",
+      "metric": "points",
+      "gain": 69,
       "days_tracked": 2
+    },
+    {
+      "title": "HybridRobotics/supermimic",
+      "source": "github_trending",
+      "url": "https://github.com/HybridRobotics/supermimic",
+      "metric": "stars",
+      "gain": 59,
+      "days_tracked": 3
+    },
+    {
+      "title": "25 of my favourite modern NES games",
+      "source": "lobsters",
+      "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
+      "metric": "score",
+      "gain": 54,
+      "days_tracked": 3
+    },
+    {
+      "title": "opencoredev/islandcn",
+      "source": "github_trending",
+      "url": "https://github.com/opencoredev/islandcn",
+      "metric": "stars",
+      "gain": 45,
+      "days_tracked": 2
+    },
+    {
+      "title": "Memory management in 40 major C projects, a survey",
+      "source": "lobsters",
+      "url": "https://theconsensus.dev/p/2026/11/08/c-memory-management-survey.html",
+      "metric": "score",
+      "gain": 41,
+      "days_tracked": 2
+    },
+    {
+      "title": "Clice v1.0 Released: Welcome to Modern C++",
+      "source": "hackernews",
+      "url": "https://ykiko.me/en/articles/2105384023094834022/",
+      "metric": "points",
+      "gain": 35,
+      "days_tracked": 3
+    },
+    {
+      "title": "Let Me Let You Own Your Data",
+      "source": "lobsters",
+      "url": "https://www.willett.io/posts/data/",
+      "metric": "score",
+      "gain": 34,
+      "days_tracked": 3
+    },
+    {
+      "title": "cursor:pointer on buttons",
+      "source": "lobsters",
+      "url": "https://blog.kizu.dev/cursors/",
+      "metric": "score",
+      "gain": 27,
+      "days_tracked": 2
+    },
+    {
+      "title": "Eclipse Mosquitto – An open source MQTT broker",
+      "source": "hackernews",
+      "url": "https://github.com/eclipse-mosquitto/mosquitto",
+      "metric": "points",
+      "gain": 27,
+      "days_tracked": 4
+    },
+    {
+      "title": "FreeBSD bhyve Live Migration: Moving VMs Between Hosts",
+      "source": "lobsters",
+      "url": "https://gyptazy.com/blog/freebsd-bhyve-live-migration-support-rfc/",
+      "metric": "score",
+      "gain": 22,
+      "days_tracked": 2
+    },
+    {
+      "title": "Anthropomorphic Software",
+      "source": "lobsters",
+      "url": "https://aspiz.uk/wiki/AnthropomorphicSoftware",
+      "metric": "score",
+      "gain": 19,
+      "days_tracked": 2
+    },
+    {
+      "title": "MCP Is Dead Simple. And That's Exactly the Problem",
+      "source": "devto",
+      "url": "https://dev.to/sylwia-lask/mcp-is-dead-simple-and-thats-exactly-the-problem-5811",
+      "metric": "reactions",
+      "gain": 18,
+      "days_tracked": 3
+    },
+    {
+      "title": "Periodic-Oriented Programming for FIRST Robotics",
+      "source": "lobsters",
+      "url": "https://bvisness.me/periodic-oriented-programming/",
+      "metric": "score",
+      "gain": 14,
+      "days_tracked": 2
+    },
+    {
+      "title": "Notes on Mathematics for Engineers (1959) [pdf]",
+      "source": "hackernews",
+      "url": "https://websites.umich.edu/~ners311/CourseLibrary/MathNotes.pdf",
+      "metric": "points",
+      "gain": 13,
+      "days_tracked": 2
+    },
+    {
+      "title": "A datetime library for Rust",
+      "source": "br_andrew_gallant_s_blog_andrew_gallant_s_b",
+      "url": "https://burntsushi.net/jiff/",
+      "metric": "feed rank",
+      "gain": 13,
+      "days_tracked": 3
+    },
+    {
+      "title": "Disk encryption on NetBSD achieving secrecy",
+      "source": "lobsters",
+      "url": "https://netbsd.org/~nia/disk-encrypt/",
+      "metric": "score",
+      "gain": 12,
+      "days_tracked": 3
+    },
+    {
+      "title": "A NES emulator written in Odin",
+      "source": "lobsters",
+      "url": "https://lucypero.com/lucynes.html",
+      "metric": "score",
+      "gain": 12,
+      "days_tracked": 4
+    },
+    {
+      "title": "Elixir v1.20 released: now a gradually typed language",
+      "source": "elixirlang",
+      "url": "https://elixir-lang.org/blog/2026/06/03/elixir-v1-20-0-released/",
+      "metric": "feed rank",
+      "gain": 12,
+      "days_tracked": 4
+    },
+    {
+      "title": "Stats and Learnings from Finishing #11 on Product Hunt",
+      "source": "tb_simon_wicki",
+      "url": "https://wicki.io/posts/2020-06-stats-and-learnings-from-finishing-11-on-product-hunt/",
+      "metric": "feed rank",
+      "gain": 11,
+      "days_tracked": 3
+    },
+    {
+      "title": "\"Hybrid Apps are slow\"",
+      "source": "tb_simon_wicki",
+      "url": "https://wicki.io/posts/2019-11-hybrid-apps-are-slow/",
+      "metric": "feed rank",
+      "gain": 11,
+      "days_tracked": 3
+    },
+    {
+      "title": "Foreign leaders look beyond Trump on his Asian meeting spree - Politico",
+      "source": "w4news",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4wci1tVVRaX05DXzNoNHROT2h1aGVyaS1IM1ZaTk5DX1pKdGV3TXdjY0I3cVZWbmxMWEVDV0VvVm1Hd2l5MEdzeVVTSExucy15c2tJZktVWmpHemRBcWJ4RXo3eVNzSzJFeGk1SEhSRTRtVFdxdVlBNU1NZjU5QQ?oc=5",
+      "metric": "feed rank",
+      "gain": 11,
+      "days_tracked": 2
+    },
+    {
+      "title": "Two Circles, One Connection, and border-shape",
+      "source": "cssarticles",
+      "url": "https://blog.master.dev/two-circles-one-connection-and-border-shape/",
+      "metric": "feed rank",
+      "gain": 10,
+      "days_tracked": 4
+    },
+    {
+      "title": "Rendering in batches with glimmer and Datastar",
+      "source": "br_iterate_think_thoughts",
+      "url": "https://yogthos.net/posts/2026-11-10-glimmer-datastar.html",
+      "metric": "feed rank",
+      "gain": 10,
+      "days_tracked": 3
     },
     {
       "title": "Congrats to the Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine Winners!",
       "source": "devto",
       "url": "https://dev.to/devteam/congrats-to-the-hacktoberfest-open-source-ai-challenge-week-4-ghost-in-the-machine-winners-nok",
       "metric": "reactions",
-      "gain": 2,
+      "gain": 9,
+      "days_tracked": 3
+    },
+    {
+      "title": "Book Reviews",
+      "source": "br_jake_roggenbuck",
+      "url": "/books/",
+      "metric": "feed rank",
+      "gain": 9,
+      "days_tracked": 3
+    },
+    {
+      "title": "Exploring OTP Patterns for Agentic Workflows",
+      "source": "eb_erlang_solutions",
+      "url": "https://www.erlang-solutions.com/blog/exploring-otp-patterns-for-agentic-workflows/",
+      "metric": "feed rank",
+      "gain": 9,
+      "days_tracked": 3
+    },
+    {
+      "title": "Long Live Rails",
+      "source": "devto",
+      "url": "https://dev.to/ben/long-live-rails-3p21",
+      "metric": "reactions",
+      "gain": 8,
+      "days_tracked": 3
+    },
+    {
+      "title": "Emayler",
+      "source": "producthunt",
+      "url": "https://www.producthunt.com/products/emayler",
+      "metric": "feed rank",
+      "gain": 8,
       "days_tracked": 2
     },
     {
@@ -783,16 +871,40 @@
       "source": "devto",
       "url": "https://dev.to/devengers/dev-opportunity-radar-25-120k-atlassian-hackathon-mlh-fellowship-and-insead-ai-founder-sprint-m96",
       "metric": "reactions",
-      "gain": 1,
-      "days_tracked": 2
+      "gain": 7,
+      "days_tracked": 3
     },
     {
-      "title": "One Year on DEV.to, 109 Articles Later",
-      "source": "devto",
-      "url": "https://dev.to/dannwaneri/one-year-on-devto-109-articles-later-p31",
-      "metric": "reactions",
-      "gain": 1,
-      "days_tracked": 2
+      "title": "Native Records on the Podcast BEAM There, Done That",
+      "source": "erlang",
+      "url": "https://www.erlang.org/news/189",
+      "metric": "feed rank",
+      "gain": 7,
+      "days_tracked": 4
+    },
+    {
+      "title": "Alcotest: finding flaky OCaml tests with JUnit reports",
+      "source": "br_thomas_gazagnaire_home",
+      "url": "https://gazagnaire.org/blog/2026-11-09-alcotest-dune-release.html",
+      "metric": "feed rank",
+      "gain": 7,
+      "days_tracked": 3
+    },
+    {
+      "title": "Announcing: Vibe to valid",
+      "source": "eb_lerner_consulting_blog",
+      "url": "https://lernerpython.com/2026/11/12/announcing-vibe-to-valid/",
+      "metric": "feed rank",
+      "gain": 7,
+      "days_tracked": 3
+    },
+    {
+      "title": "Looking back on 2025",
+      "source": "br_orhun_s_blog",
+      "url": "https://blog.orhun.dev/2025-wrapped/",
+      "metric": "feed rank",
+      "gain": 7,
+      "days_tracked": 3
     }
   ]
 }

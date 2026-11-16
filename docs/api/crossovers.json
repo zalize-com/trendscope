@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T04:15:06.897417+00:00",
+ "generated_at": "2026-11-16T06:09:57.528745+00:00",
  "latest_snapshot": "2026-11-16",
  "crossovers": [
   {
@@ -90,6 +90,22 @@
    }
   },
   {
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen",
+   "title": "Introducing Gemini 4 Hydrogen",
+   "sources": [
+    "googleblog",
+    "hackernews",
+    "sec_google_threat_analysis_group"
+   ],
+   "days": 3,
+   "best": {
+    "score": 568,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-12"
+   }
+  },
+  {
    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles",
    "title": "A Family Tree of Software Job Titles",
    "sources": [
@@ -154,6 +170,22 @@
    }
   },
   {
+   "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade",
+   "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+   "sources": [
+    "googleblog",
+    "searchgoogleblog",
+    "sec_google_threat_analysis_group"
+   ],
+   "days": 2,
+   "best": {
+    "score": 15,
+    "metric": "feed rank",
+    "source": "searchgoogleblog",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "url": "https://css-tricks.com/re-implementing-nth-child-with-modern-css",
    "title": "Re-Implementing :nth-child() With Modern CSS",
    "sources": [
@@ -182,6 +214,22 @@
     "score": 14,
     "metric": "feed rank",
     "source": "planetgnu",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://aphyr.com/posts/428-announcing-hegel-clj",
+   "title": "Announcing Hegel-clj",
+   "sources": [
+    "aphyr",
+    "lobsters",
+    "planetclojure"
+   ],
+   "days": 2,
+   "best": {
+    "score": 12,
+    "metric": "feed rank",
+    "source": "aphyr",
     "date": "2026-11-15"
    }
   },
@@ -229,21 +277,6 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-10"
-   }
-  },
-  {
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen",
-   "title": "Introducing Gemini 4 Hydrogen",
-   "sources": [
-    "googleblog",
-    "hackernews"
-   ],
-   "days": 3,
-   "best": {
-    "score": 568,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-12"
    }
   },
   {
@@ -457,6 +490,21 @@
    }
   },
   {
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api",
+   "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+   "sources": [
+    "hackernews",
+    "sec_google_threat_analysis_group"
+   ],
+   "days": 2,
+   "best": {
+    "score": 568,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-11"
+   }
+  },
+  {
    "url": "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12",
    "title": "Reuters Raises the Jensen Huang Affair Tally to Three",
    "sources": [
@@ -484,6 +532,21 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-09"
+   }
+  },
+  {
+   "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+   "title": "Critical RCE Vulnerability in Apache HTTP Server: Everything You Need To Know",
+   "sources": [
+    "hackernews",
+    "sec_wiz_blog"
+   ],
+   "days": 2,
+   "best": {
+    "score": 369,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-12"
    }
   },
   {
@@ -709,66 +772,6 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-16"
-   }
-  },
-  {
-   "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026",
-   "title": "Old Bitly Links Are Being Hijacked",
-   "sources": [
-    "hackernews",
-    "hnrss"
-   ],
-   "days": 2,
-   "best": {
-    "score": 123,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-16"
-   }
-  },
-  {
-   "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm",
-   "title": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
-   "sources": [
-    "developernvidia",
-    "hackernews"
-   ],
-   "days": 2,
-   "best": {
-    "score": 114,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-14"
-   }
-  },
-  {
-   "url": "https://lucypero.com/lucynes.html",
-   "title": "A NES emulator written in Odin",
-   "sources": [
-    "hackernews",
-    "lobsters"
-   ],
-   "days": 2,
-   "best": {
-    "score": 105,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-16"
-   }
-  },
-  {
-   "url": "https://lexifina.com/blog/formalizing-the-us-tax-code",
-   "title": "Lean proof of the entire US tax code to find loopholes",
-   "sources": [
-    "hackernews",
-    "lemmy"
-   ],
-   "days": 2,
-   "best": {
-    "score": 104,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-14"
    }
   }
  ]

@@ -1,16 +1,17 @@
 {
- "generated_at": "2026-11-16T04:15:06.897417+00:00",
+ "generated_at": "2026-11-16T06:09:57.528745+00:00",
  "latest_snapshot": "2026-11-16",
- "total": 9230,
+ "total": 9409,
  "domains": [
   {
    "hostname": "blog.google",
    "days_on_board": 5,
-   "items": 63,
+   "items": 78,
    "sources": [
     "googleblog",
     "hackernews",
-    "searchgoogleblog"
+    "searchgoogleblog",
+    "sec_google_threat_analysis_group"
    ],
    "top_hit": {
     "title": "Gemini Decisions API",
@@ -23,7 +24,7 @@
   {
    "hostname": "theguardian.com",
    "days_on_board": 4,
-   "items": 94,
+   "items": 99,
    "sources": [
     "eb_guardian",
     "guardianco",
@@ -60,9 +61,10 @@
   {
    "hostname": "twitter.com",
    "days_on_board": 4,
-   "items": 5,
+   "items": 6,
    "sources": [
     "hackernews",
+    "hnrss",
     "w4feeds4"
    ],
    "top_hit": {
@@ -76,7 +78,7 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 3,
-   "items": 1158,
+   "items": 1177,
    "sources": [
     "br_homepage_piotr_migda",
     "br_nelson_s_linkblog",
@@ -144,9 +146,10 @@
   {
    "hostname": "youtube.com",
    "days_on_board": 3,
-   "items": 1127,
+   "items": 1143,
    "sources": [
     "br_blog_ankush_menat",
+    "br_dr_j_engineering_leadership_software_dev",
     "br_jeff_huleatt",
     "br_nelson_s_linkblog",
     "br_rachel_kaufman_developer",
@@ -164,6 +167,7 @@
     "k8s",
     "kooslooijesteijn",
     "mko",
+    "nl_perl_weekly",
     "patrickbrosset",
     "planeterlang",
     "pomb",
@@ -253,6 +257,42 @@
    }
   },
   {
+   "hostname": "arxiv.org",
+   "days_on_board": 3,
+   "items": 63,
+   "sources": [
+    "arxiv",
+    "evanmiller",
+    "lobsters"
+   ],
+   "top_hit": {
+    "title": "Unbundling Multimodal Vision Encoding",
+    "url": "http://arxiv.org/abs/2611.17334v1",
+    "score": 15,
+    "metric": "arxiv recent",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "nytimes.com",
+   "days_on_board": 3,
+   "items": 52,
+   "sources": [
+    "bostocks",
+    "daringfireball",
+    "hackernews",
+    "hnrss",
+    "rss4"
+   ],
+   "top_hit": {
+    "title": "Jensen Huang said to have had relationship with executive who reports to him",
+    "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+    "score": 410,
+    "metric": "points",
+    "date": "2026-11-11"
+   }
+  },
+  {
    "hostname": "github.blog",
    "days_on_board": 3,
    "items": 51,
@@ -268,25 +308,6 @@
     "score": 196,
     "metric": "points",
     "date": "2026-11-07"
-   }
-  },
-  {
-   "hostname": "nytimes.com",
-   "days_on_board": 3,
-   "items": 51,
-   "sources": [
-    "bostocks",
-    "daringfireball",
-    "hackernews",
-    "hnrss",
-    "rss4"
-   ],
-   "top_hit": {
-    "title": "Jensen Huang said to have had relationship with executive who reports to him",
-    "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
-    "score": 410,
-    "metric": "points",
-    "date": "2026-11-11"
    }
   },
   {
@@ -306,23 +327,6 @@
     "score": 811,
     "metric": "points",
     "date": "2026-11-13"
-   }
-  },
-  {
-   "hostname": "arxiv.org",
-   "days_on_board": 3,
-   "items": 48,
-   "sources": [
-    "arxiv",
-    "evanmiller",
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "Unbundling Multimodal Vision Encoding",
-    "url": "http://arxiv.org/abs/2611.17334v1",
-    "score": 15,
-    "metric": "arxiv recent",
-    "date": "2026-11-15"
    }
   },
   {
@@ -508,10 +512,11 @@
   {
    "hostname": "aphyr.com",
    "days_on_board": 3,
-   "items": 27,
+   "items": 28,
    "sources": [
     "aphyr",
     "hackernews",
+    "lobsters",
     "planetclojure"
    ],
    "top_hit": {
@@ -891,7 +896,7 @@
   {
    "hostname": "lore.kernel.org",
    "days_on_board": 2,
-   "items": 90,
+   "items": 105,
    "sources": [
     "lorekernel"
    ],
@@ -943,7 +948,7 @@
   {
    "hostname": "producthunt.com",
    "days_on_board": 2,
-   "items": 70,
+   "items": 73,
    "sources": [
     "br_nelson_s_linkblog",
     "producthunt"
@@ -976,7 +981,7 @@
   {
    "hostname": "theregister.com",
    "days_on_board": 2,
-   "items": 60,
+   "items": 61,
    "sources": [
     "sec_the_register",
     "theregister"
