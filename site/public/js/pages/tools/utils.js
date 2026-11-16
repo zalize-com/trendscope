@@ -529,16 +529,20 @@ function svCmpPre(a,b){
   }
   return 0;
 }
-document.getElementById('sv-go').onclick=()=>{
-  const a=svParse(document.getElementById('sv-a').value), b=svParse(document.getElementById('sv-b').value);
-  const out=document.getElementById('sv-out');
-  if(!a||!b){out.textContent='invalid semver (need x.y.z[-pre])';return;}
-  let d=a.maj-b.maj||a.min-b.min||a.pat-b.pat;
-  let level=d?(a.maj!==b.maj?'major':a.min!==b.min?'minor':'patch'):'';
-  if(!d){d=svCmpPre(a.pre,b.pre);level=d?'prerelease':'';}
-  out.textContent = d===0 ? 'equal' :
-    (d>0 ? `A newer (${level})` : `B newer (${level})`);
-};
+function svLocalCmp(a,b){
+  const pa=svParse(a),pb=svParse(b);
+  if(!pa||!pb) return null;
+  const d=pa.maj-pb.maj||pa.min-pb.min||pa.pat-pb.pat||svCmpPre(pa.pre,pb.pre);
+  return Math.sign(d);
+}
+function svLib(){
+  return (window.compareVersions&&compareVersions.compareVersions)?compareVersions:null;
+}
+function svCmp2(a,b){
+  const lib=svLib();
+  if(lib){try{return lib.compareVersions(a,b)}catch(e){return null}}
+  return svLocalCmp(a,b);
+}
 
 // --- password generator ---
 document.getElementById('pg-go').onclick=()=>{
@@ -733,8 +737,9 @@ function svSort(){
   const lines=document.getElementById("sv-in").value.split("\n").map(l=>l.trim()).filter(Boolean);
   const out=document.getElementById("sv-out");
   if(!lines.length){out.textContent="";return}
-  const valid=lines.filter(v=>window.compareVersions&&compareVersions.validate?compareVersions.validate(v):/^\d+\.\d+\.\d+/.test(v));
-  const sorted=valid.sort((x,y)=>compareVersions.compareVersions(x,y));
+  const lib=svLib();
+  const valid=lines.filter(v=>lib&&lib.validate?lib.validate(v):svParse(v)!==null);
+  const sorted=valid.sort((x,y)=>svCmp2(x,y)||0);
   const bad=lines.filter(v=>!valid.includes(v));
   out.innerHTML=sorted.join("<br>")+(bad.length?`<div class="hint" style="margin-top:6px">skipped: ${bad.join(", ")}</div>`:"");
 }
@@ -742,10 +747,8 @@ function svCmp(){
   const a=document.getElementById("sv-a").value.trim(),b=document.getElementById("sv-b").value.trim();
   const out=document.getElementById("sv-out");
   if(!a||!b){out.textContent="";return}
-  try{
-    const r=compareVersions.compareVersions(a,b);
-    out.innerHTML=`<code>${a}</code> ${r<0?"&lt;":r>0?"&gt;":"="} <code>${b}</code>`;
-  }catch(e){out.textContent="invalid semver: "+e.message}
+  const r=svCmp2(a,b);
+  out.innerHTML=r===null?`invalid semver`:`<code>${a}</code> ${r<0?"&lt;":r>0?"&gt;":"="} <code>${b}</code>`;
 }
 
 function rxGo(){
