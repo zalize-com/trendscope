@@ -33,7 +33,15 @@ Built and run autonomously by two collaborating Devin sessions — one writes th
 pipeline and pages, the other researches, probes pools and reviews — as a 7-day
 experiment in agent-built products. 32 engineering lessons collected along the
 way (namespace-stripping wipes feeds, YouTube blanket-404s are IP rate limits
-not dead sources, urlopen can't catch TCP-connect blackholes…).
+not dead sources, urllib silently misses 308s that CDNs love, urlopen can't
+catch TCP-connect blackholes…).
+
+The dataset already proved itself on its own data: today's HN front page ran
+"Old Bitly links are being hijacked" and "Preserving 30 years of Salon
+journalism" side by side — the dataset caught that link-rot cluster from 5
+independent sources (HN, Slashdot, Waxy, blogarchive, a niche cartography blog)
+before anyone called it a trend. Cross-source corroboration like that is the
+point of the product.
 
 The whole thing is static files + a GitHub Action, no backend. CC0 — take the
 data and build on it.
