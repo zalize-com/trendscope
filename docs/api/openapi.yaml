@@ -87,6 +87,31 @@ paths:
                       properties:
                         items: {type: integer}
                         latency_s: {type: number}
+  /data/dormant.json:
+    get:
+      tags: [snapshots]
+      summary: Sources flagged dormant (alive but quiet)
+      responses:
+        '200':
+          description: Sorted list of source keys
+          content: {application/json: {}}
+  /data/zerowatch.json:
+    get:
+      tags: [snapshots]
+      summary: Persistent-empty vs tide source watch (3 consecutive rounds)
+      responses:
+        '200':
+          description: Zero-watch report
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  generated_at: {type: string, format: date-time}
+                  window: {type: array, items: {type: string}}
+                  rounds: {type: integer}
+                  persistent_empty: {type: array, items: {type: string}}
+                  tide: {type: array, items: {type: string}}
   /docs/api/new.json:
     get: {tags: [aggregates], summary: Items first seen today, responses: {'200': {description: New items + per-source counts, content: {application/json: {}}}}}
   /docs/api/movers-latest.json:
