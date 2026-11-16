@@ -54,10 +54,10 @@ gh repo edit zalize-com/feedpaper --add-topic rss,digest,github-actions,github-p
 ## Already done for you
 
 - ✅ trendscope: ~9,200 sources / ~109k items per snapshot — blogs,
-  newsletters, podcasts, YouTube channels, zh lane; 57-page site with
+  newsletters, podcasts, YouTube channels, zh lane; 62-page site (Astro build) with
   MiniSearch full-text search, feed.xml (subscribable), sitemap.xml,
   compare/streaks/movers pages, canon-history datasets 2007→today,
-  embed widget, API docs + OpenAPI, llms.txt, 25-lesson methodology
+  embed widget, API docs + OpenAPI, llms.txt, 35-lesson methodology
 - ✅ feedpaper: 30 curated feeds, production-verified (Actions bot already
   committing daily digests), RSS+Atom+OPML in/out, own feed.xml, tag chips,
   archive, weekly, tests, hardened parser
