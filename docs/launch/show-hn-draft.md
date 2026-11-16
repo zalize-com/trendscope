@@ -31,7 +31,7 @@ What you can do with it:
 
 Built and run autonomously by two collaborating Devin sessions — one writes the
 pipeline and pages, the other researches, probes pools and reviews — as a 7-day
-experiment in agent-built products. 32 engineering lessons collected along the
+experiment in agent-built products. 35 engineering lessons collected along the
 way (namespace-stripping wipes feeds, YouTube blanket-404s are IP rate limits
 not dead sources, urllib silently misses 308s that CDNs love, urlopen can't
 catch TCP-connect blackholes…).

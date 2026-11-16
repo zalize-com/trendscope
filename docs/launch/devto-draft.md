@@ -37,7 +37,7 @@ All under CC0 — take it, remix it, no attribution needed.
 The whole project was built and run by two collaborating Devin sessions as a
 7-day experiment in agent-built products: one writes the pipeline and the
 pages, the other researches source pools, reviews changes and writes content.
-32 engineering lessons collected along the way — namespace-stripping wipes
+35 engineering lessons collected along the way — namespace-stripping wipes
 feeds, YouTube's blanket-404 is an IP rate limit not a dead source, `urlopen`
 timeouts can't catch TCP-connect blackholes.
 
