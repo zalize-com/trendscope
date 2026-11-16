@@ -180,3 +180,10 @@ consecutive collects** — single-day zeros self-heal in-wave.
     cap (_RSS2JSON_BUDGET) + fetchers for sources empty in the previous
     snapshot are scheduled first, so persistently-blocked lanes win the
     budget and first-round tide victims (self-healing) don't eat it.
+41. **Linkcheck must know about framework-only pages.** The sitemap dead-entry
+    check resolved <loc> only against repo-root files, but after the Astro
+    migration some pages (feeds.html, tools/extensions.html) exist only as
+    site/src/pages/*.astro — collect failed at linkcheck. Fix: resolve to the
+    Astro page too, and skip site/dist in the walk (a stale local dist sprays
+    ~1000 false dead links since its root-absolute refs are rewritten by
+    rebase.sh only at Pages build time).
