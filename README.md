@@ -19,7 +19,9 @@
 
 ## What's inside
 
-A daily cross-source snapshot of developer attention:
+A daily cross-source snapshot of developer attention across **2,474 sources**.
+The full canonical registry is generated into [`docs/SOURCES.md`](docs/SOURCES.md)
+by `scripts/gen_sources_md.py` — the tables below show the founding waves.
 
 | Source | Signal | Endpoint |
 |---|---|---|
