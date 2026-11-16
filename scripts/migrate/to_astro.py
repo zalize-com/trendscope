@@ -23,12 +23,12 @@ def extract(page_path):
                re.finditer(r'<script((?![^>]*src=)[^>]*)>(.*?)</script>', t, re.S)]
     body = re.search(r'<body[^>]*>(.*)</body>', t, re.S)
     body = body.group(1) if body else ''
-    # strip shared chrome only: the sticky topbar header + skiplink +
-    # shared footer. `<header class="hero">` IS page content — keep it.
+    # strip shared chrome only: the sticky topbar header + skiplink.
+    # `<header class="hero">` and <footer> ARE page content — keep them
+    # (footers are per-page: method notes, data links, CC0 blurbs).
     body = re.sub(r'<a[^>]*class="skiplink"[^>]*>.*?</a>', '', body, flags=re.S)
     body = re.sub(r'<header[^>]*class="topbar"[^>]*>.*?</header>', '', body, flags=re.S)
     body = re.sub(r'<nav[^>]*class="[^"]*topbar[^"]*"[^>]*>.*?</nav>', '', body, flags=re.S)
-    body = re.sub(r'<footer[^>]*>.*?</footer>', '', body, flags=re.S)
     # lift scripts/styles out of body — they're re-emitted at the end as
     # is:inline / is:global. Left in place, Astro would try to bundle the
     # <script> tags (and scope the <style> tags).
@@ -40,10 +40,11 @@ def extract(page_path):
     return title, desc, styles.strip(), body.strip(), scripts
 
 # topbar nav keys — best-effort guess; reviewer may correct.
-NAV = {'movers': 'movers', 'topics': 'topics', 'digest': 'digests',
-       'week': 'digests', 'about': 'about', 'why': 'about', 'faq': 'about',
-       'source': 'board', 'sources': 'board', 'domain': 'board',
-       'domains': 'board', 'author': 'board', 'authors': 'board'}
+# legacy parity: only these pages carry class="here" in their topbar
+# (board/movers/topics/digests/tools/about on main nav, zh/search on right).
+NAV = {'index': 'board', 'movers': 'movers', 'topics': 'topics',
+       'digest': 'digests', 'tools/index': 'tools', 'about': 'about',
+       'zh': 'zh', 'search': 'search'}
 
 def main():
     p = sys.argv[1]
