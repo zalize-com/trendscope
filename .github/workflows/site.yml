@@ -27,7 +27,7 @@ jobs:
         working-directory: site
         run: |
           npm ci
-          npx astro build
+          npm run build
 
       - name: Verify parity-critical output
         run: |
