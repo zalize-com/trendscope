@@ -1,9 +1,198 @@
 # Source registry
 
-2709 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
+2898 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
 
 | Key | Description | Host |
 |---|---|---|
+| `tb_perttu_l_hteenlahti` | Perttu Lähteenlahti | `perttu.dev` |
+| `tb_jon_c_phillips` | Jon C. Phillips | `joncphillips.com` |
+| `tb_axeploit` | Axeploit | `axeploit.com` |
+| `tb_abhijit_sarode` | Abhijit Sarode | `abhijitsarode.hashnode.dev` |
+| `tb_dhanush_nehru` | Dhanush Nehru | `dhanushnehru.medium.com` |
+| `tb_nishant_kumar` | Nishant Kumar | `blog.nishant.lol` |
+| `tb_matt_ouille` | Matt Ouille | `ooo-yay.com` |
+| `tb_plantheflow` | PlanTheFlow | `plantheflow.com` |
+| `tb_don_t_break_prod` | Don't Break Prod | `dontbreakprod.com` |
+| `tb_kenta_takeuchi` | Kenta Takeuchi | `bmf-tech.com` |
+| `tb_devremote` | Devremote | `devremote.io` |
+| `tb_afobaje` | Afobaje | `afobaje.hashnode.dev` |
+| `tb_coder_spirit` | Coder Spirit | `blog.coderspirit.xyz` |
+| `tb_sundeep_agarwal` | Sundeep Agarwal | `learnbyexample.github.io` |
+| `tb_testgrid` | TestGrid | `testgrid.io` |
+| `tb_snehasish_chakraborty` | Snehasish Chakraborty | `blogs.snehasish-chakraborty.com` |
+| `tb_ash_allen` | Ash Allen 🚀 | `ashallendesign.co.uk` |
+| `tb_parth_desai` | Parth Desai | `musing.vercel.app` |
+| `tb_roopesh_sn_s_blog` | Roopesh Sn's Blog | `roopesh.hashnode.dev` |
+| `tb_tech_art_aid` | Tech Art Aid | `techartaid.com` |
+| `tb_hristo_iliev` | Hristo Iliev | `thatonegamedev.com` |
+| `tb_the_feqy` | The Feqy | `feqy.medium.com` |
+| `tb_mustafa_albazy_blog` | Mustafa Albazy Blog | `mustafa.page` |
+| `tb_mbaziira_ronald` | Mbaziira Ronald | `mbaziira.hashnode.dev` |
+| `tb_vivek` | Vivek | `vivekon.hashnode.dev` |
+| `tb_teotime_pacreau` | Teotime Pacreau | `www.teotimepacreau.fr` |
+| `tb_headspin_blog` | HeadSpin Blog | `www.headspin.io` |
+| `tb_bleyl_dev` | Bleyl Dev | `bleyldev.medium.com` |
+| `tb_pasindu_kavinda` | Pasindu Kavinda | `blog.pasindukavinda.me` |
+| `tb_lakin_mohapatra` | Lakin Mohapatra | `lakin-mohapatra.medium.com` |
+| `tb_dev_apt` | Dev Apt | `devapt.com` |
+| `tb_tech_sheet` | Tech Sheet | `techsheet.vercel.app` |
+| `tb_mohamad_fadhil` | Mohamad Fadhil | `fadhil-blog.dev` |
+| `tb_manish_prasad` | Manish Prasad | `techinsights.manisuec.com` |
+| `tb_siddhartha_d` | Siddhartha D | `techwithsidz.hashnode.dev` |
+| `tb_shivashish_yadav` | Shivashish Yadav | `shiva.hashnode.dev` |
+| `tb_joeeey` | joeeey | `joeeey.com` |
+| `tb_yannick_mougin` | Yannick Mougin | `code-with-yannick.com` |
+| `tb_saleh_mubashar` | Saleh Mubashar | `salehmubashar.com` |
+| `tb_mohammad_humayun_khan` | Mohammad Humayun Khan | `damianarado.medium.com` |
+| `tb_priyanshu_kumawat` | Priyanshu Kumawat | `kumarsonsoff.hashnode.dev` |
+| `tb_christine_belzie` | Christine Belzie | `chrissycodes.hashnode.dev` |
+| `tb_michael_hoffmann_mokkapps` | Michael Hoffmann (Mokkapps) | `mokkapps.de` |
+| `tb_bob_fornal` | Bob Fornal | `dev.to` |
+| `tb_alp1n3` | alp1n3 | `alp1n3.dev` |
+| `tb_darek_kay` | Darek Kay | `dariuszwinkler.com` |
+| `tb_andrew_shell` | Andrew Shell | `andrewshell.org` |
+| `tb_shravan_kumar` | Shravan Kumar | `ohmyscript.com` |
+| `tb_tonie_victor` | Tonie Victor | `tonie.hashnode.dev` |
+| `tb_shyam_manohar` | Shyam Manohar | `blog.shyam.eu.org` |
+| `tb_dave_murray_sailing_the_sharp_sea` | Dave Murray - Sailing the Sharp Sea | `blog.taranissoftware.com` |
+| `tb_james_turner` | James Turner | `turnerj.com` |
+| `tb_william_chin` | William Chin | `yourdigitalaid.com` |
+| `tb_kuldip_mochi` | Kuldip Mochi | `kuldipmochi.hashnode.dev` |
+| `tb_peter_smith` | Peter Smith | `sunriseprogrammer.blogspot.com` |
+| `tb_the_trojan` | The Trojan | `apoorvtyagi.tech` |
+| `tb_a_shreya_sri` | A Shreya Sri | `shreyasri.hashnode.dev` |
+| `tb_thomas_derflinger` | Thomas Derflinger | `tderflinger.com` |
+| `tb_karl_koch` | Karl Koch | `www.karlkoch.me` |
+| `tb_ivan_kahl` | Ivan Kahl | `ivankahl.com` |
+| `tb_akanksha_raghav` | Akanksha Raghav | `akanksharaghav.medium.com` |
+| `tb_vinit_shahdeo` | Vinit Shahdeo | `vinitshahdeo.dev` |
+| `tb_alexey_berezin` | Alexey Berezin | `blog.beraliv.dev` |
+| `tb_andrew_baisden` | Andrew Baisden | `dev.to` |
+| `tb_olena_drugalya` | Olena Drugalya | `olena.hashnode.dev` |
+| `tb_abia_tech_hub` | Abia Tech Hub | `blog.abiatechhub.com` |
+| `tb_alberto_bonacina` | Alberto Bonacina | `blog.albertobonacina.com` |
+| `tb_hacking_c` | hacking C++ | `hackingcpp.com` |
+| `tb_abdulmalik_adekunle` | Abdulmalik Adekunle | `abdulmalik.hashnode.dev` |
+| `tb_impure_fun` | impure.fun | `impure.fun` |
+| `tb_dubesar` | dubesar | `dubesar.hashnode.dev` |
+| `tb_c_augusto_proiete` | C. Augusto Proiete | `augustoproiete.net` |
+| `tb_rahul` | Rahul | `rahulism.hashnode.dev` |
+| `tb_k_vin_dunglas` | Kévin Dunglas | `dunglas.dev` |
+| `tb_kyle_platt` | Kyle Platt | `kyleplatt.com` |
+| `tb_danny_steenman` | Danny Steenman | `towardsthecloud.com` |
+| `tb_ayush_pawar` | Ayush Pawar | `cswithiyush.hashnode.dev` |
+| `tb_phil_mcparlane` | Phil McParlane | `4dayweek.io` |
+| `tb_bhanu_teja_pachipulusu` | Bhanu Teja Pachipulusu | `blog.bhanuteja.dev` |
+| `tb_nelson_figueroa` | Nelson Figueroa | `nelson.cloud` |
+| `tb_alexander_lichter` | Alexander Lichter | `www.lichter.io` |
+| `tb_nacho_iacovino` | Nacho Iacovino | `nachoiacovino.com` |
+| `tb_ozer_tayiz` | Ozer Tayiz | `ozercodesblockchain.hashnode.dev` |
+| `tb_ramya_chinnadurai_rams` | Ramya Chinnadurai (Rams) | `ramyachinnadurai.in` |
+| `tb_autosysops` | AutoSysOps | `autosysops.com` |
+| `tb_leon_ai` | Leon AI | `blog.getleon.ai` |
+| `tb_oliver_jumpertz` | Oliver Jumpertz | `deepdive.hashnode.dev` |
+| `tb_pauls_dev_blog` | //pauls dev blog | `www.paulsblog.dev` |
+| `tb_tshiteej_bhardwaj` | Tshiteej Bhardwaj | `www.tshiteej.com` |
+| `tb_victoria_lo` | Victoria Lo | `lo-victoria.com` |
+| `tb_abiola_farounbi` | Abiola Farounbi | `abiolafarounbiblog.hashnode.dev` |
+| `tb_aadhithyan_suresh` | Aadhithyan Suresh | `aadhithyan.hashnode.dev` |
+| `tb_nikita_hlopov` | Nikita Hlopov | `nikitahl.com` |
+| `tb_chris_kalmar` | Chris Kalmar | `chriskalmar.dev` |
+| `tb_spacelift` | Spacelift | `spacelift.io` |
+| `tb_sabe_io` | Sabe.io | `sabe.io` |
+| `tb_kumusta_mundo` | Kumusta Mundo | `blog.adrienne.io` |
+| `tb_juan_fernandes` | Juan Fernandes | `www.juanfernandes.uk` |
+| `tb_code_create` | Code Create | `blog.code-create.dev` |
+| `tb_sahan_serasinghe` | Sahan Serasinghe | `sahansera.dev` |
+| `tb_margo_mccabe` | Margo McCabe | `dev.to` |
+| `tb_cameron_armstrong` | Cameron Armstrong | `www.wysr.xyz` |
+| `tb_teco_tutorials` | Teco Tutorials | `blog.tericcabrel.com` |
+| `tb_rocco_sangellino` | Rocco Sangellino | `blog.roccosangellino.com` |
+| `tb_shefali` | Shefali | `shefali.dev` |
+| `tb_corey_o_donnell` | Corey O'Donnell | `codebycorey.com` |
+| `tb_jason_ross` | Jason Ross | `www.softwarepragmatism.com` |
+| `tb_stephan_k_mper` | Stephan Kämper | `seasidetesting.com` |
+| `tb_umair_hafeez` | Umair Hafeez | `blog.umairhafeez.com` |
+| `tb_goodness_ezeh` | Goodness Ezeh | `goodnessezeh.medium.com` |
+| `tb_scott_spence` | Scott Spence | `scottspence.com` |
+| `tb_ammaar_s_blog` | Ammaar's Blog | `ammaaraslam.hashnode.dev` |
+| `tb_nilanth` | Nilanth | `nilanth.hashnode.dev` |
+| `tb_florian_clanet` | Florian Clanet | `blog.flolight.dev` |
+| `tb_wp_owls` | WP OWls | `wpowls.co` |
+| `tb_idris_olubisi` | Idris Olubisi | `blog.idrisolubisi.com` |
+| `tb_aman_mittal` | Aman Mittal | `amanhimself.dev` |
+| `tb_developeraspire` | DeveloperAspire | `developeraspire.hashnode.dev` |
+| `tb_sushmita_pandey` | Sushmita Pandey | `sushmita.hashnode.dev` |
+| `tb_richard_kovacs` | Richard Kovacs | `richardkovacs.dev` |
+| `tb_mkiesel` | mkiesel | `mkiesel.ch` |
+| `tb_mads_brodt` | Mads Brodt | `madsbrodt.com` |
+| `tb_james_drysdale` | James Drysdale | `jamesdrysdale.hashnode.dev` |
+| `tb_saad_ahmad` | Saad Ahmad | `saadahmadhere.medium.com` |
+| `tb_simon_wicki` | Simon Wicki | `wicki.io` |
+| `tb_peter_smulovics` | Peter Smulovics | `dotneteers.net` |
+| `tb_emmanuel_ezeka` | Emmanuel Ezeka | `eecvision.hashnode.dev` |
+| `tb_webentwicklung_ideenreich` | Webentwicklung Ideenreich | `web-ideenreich.at` |
+| `tb_rishab_kumar` | Rishab Kumar | `rishabkumar.com` |
+| `tb_sebastian_hesse` | Sebastian Hesse | `www.sebastianhesse.de` |
+| `tb_devopsian` | Devopsian | `devopsian.net` |
+| `tb_jai_kumar_dewani` | Jai Kumar Dewani | `jai-dewani.github.io` |
+| `tb_sakun_pushpitha` | Sakun Pushpitha | `sakunpushpitha.hashnode.dev` |
+| `tb_sven_hofmann` | Sven Hofmann | `hofmannsven.com` |
+| `tb_ravgeet_dhillon` | Ravgeet Dhillon | `www.ravgeet.in` |
+| `tb_bisrategebriel_fisseha` | Bisrategebriel Fisseha | `bisrate22.medium.com` |
+| `tb_priya_pareek` | Priya Pareek | `techsavvypriya.wordpress.com` |
+| `tb_bitexpert_blog` | bitExpert Blog | `blog.bitexpert.de` |
+| `tb_renan_moura` | Renan Moura | `renanmf.com` |
+| `tb_vishunbhotla_v_d_v_bharadwaj` | Vishunbhotla V D V Bharadwaj | `bharadwaj.hashnode.dev` |
+| `tb_sachin_chaurasiya` | Sachin Chaurasiya | `blog.sachinchaurasiya.dev` |
+| `tb_bogdan_alexandru_militaru` | Bogdan Alexandru Militaru | `whyboobo.com` |
+| `tb_vanilla` | Vanilla | `vanilla.sh` |
+| `tb_franklin_ohaegbulam` | Franklin Ohaegbulam | `frankiefab.hashnode.dev` |
+| `tb_pankaj_patel_time_to_hack` | Pankaj Patel (Time to Hack) | `time2hack.com` |
+| `tb_rishabh_rawat` | Rishabh Rawat | `rrawat.com` |
+| `tb_alexandre_n_d_lec` | Alexandre Nédélec | `techwatching.dev` |
+| `tb_timonwa_s_notes` | Timonwa's Notes | `tech.timonwa.com` |
+| `tb_osama_mohamed_ammar` | Osama Mohamed Ammar | `dev.to` |
+| `tb_anish_de` | Anish De | `blog.anishde.dev` |
+| `tb_coderflex` | Coderflex | `coderflex.com` |
+| `tb_atharva_salitri` | Atharva Salitri | `theamazingatharva.hashnode.dev` |
+| `tb_maximiliano_contieri` | Maximiliano Contieri | `maximilianocontieri.com` |
+| `tb_employment_japan` | Employment Japan | `www.ejable.com` |
+| `tb_mike_driscoll` | Mike Driscoll | `blog.pythonlibrary.org` |
+| `tb_helmer_davila` | Helmer Davila | `helmerdavila.com` |
+| `tb_pritam_bera` | Pritam Bera | `pritambera2000.hashnode.dev` |
+| `tb_jakub_t_jankiewicz` | Jakub T. Jankiewicz | `jakub.jankiewicz.org` |
+| `tb_david_levai` | David Levai | `davidlevai.com` |
+| `tb_naveenkumar_namachivayam` | NaveenKumar Namachivayam | `qainsights.com` |
+| `tb_stack_diary` | Stack Diary | `stackdiary.com` |
+| `tb_all_in_one_person_ru` | All-in-One Person (RU) | `blog.themarfa.name` |
+| `tb_all_in_one_person_en` | All-in-One Person (EN) | `en.blog.themarfa.name` |
+| `tb_vasanti_suthar` | Vasanti Suthar | `vasantisuthar.hashnode.dev` |
+| `tb_testingbot` | TestingBot | `testingbot.com` |
+| `tb_aiherrera` | aiherrera | `blog.aiherrera.com` |
+| `tb_jones_zachariah_noel_n_zachjonesnoel` | Jones Zachariah Noel N (zachjonesnoel) | `blog.zachjonesnoel.com` |
+| `tb_alessandro_marino` | Alessandro Marino | `alessandromarinoac.com` |
+| `tb_alka_gupta` | Alka Gupta | `hashnode.com` |
+| `tb_john_paul_hernandez` | John Paul Hernandez | `johnpaulhernandez.com` |
+| `tb_namya_lg` | Namya LG | `namyalg.medium.com` |
+| `tb_prashant_yadav` | Prashant Yadav | `learnersbucket.com` |
+| `tb_ayesha_sahar` | Ayesha Sahar | `ayeshasahar.hashnode.dev` |
+| `tb_code4it` | Code4IT | `www.code4it.dev` |
+| `tb_vivek_jaiswal` | Vivek Jaiswal | `vivekjaiswal.me` |
+| `tb_industrial_ros2` | Industrial ROS2 | `rosindustrial.org` |
+| `tb_tauqeer_ahmad` | Tauqeer Ahmad | `tauqeerahmad5201.medium.com` |
+| `tb_andrej_gajdos` | Andrej Gajdos | `andrejgajdos.com` |
+| `tb_benjamin_crozat` | Benjamin Crozat | `benjamincrozat.com` |
+| `tb_ajxs` | Ajxs | `ajxs.me` |
+| `tb_mahdi` | Mahdi | `mahdix.com` |
+| `tb_harrison_broadbent` | Harrison Broadbent | `harrisonbroadbent.com` |
+| `tb_manthan_ank` | Manthan Ank | `dev.to` |
+| `tb_guillaume_briday` | Guillaume Briday | `guillaumebriday.fr` |
+| `tb_marco_g` | Marco G | `solariz.de` |
+| `tb_omer_karabacak` | Omer Karabacak | `omerkarabacak.medium.com` |
+| `tb_jpaul_me` | JPaul.me | `www.jpaul.me` |
+| `tb_hrishikesh_barua` | Hrishikesh Barua | `techops.substack.com` |
+| `tb_parish_khan` | Parish Khan | `parish.cv` |
 | `pb_angus_croll` | Angus Croll | `javascriptweblog.wordpress.com` |
 | `pb_aditya_rohilla` | Aditya Rohilla | `adityarohilla.com` |
 | `pb_alexandru_paul_copil` | Alexandru-Paul Copil | `cpl.li` |
