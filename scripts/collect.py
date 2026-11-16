@@ -58,22 +58,10 @@ def _feed_root(resp):
             try:
                 root = ET.fromstring(patched)
             except ET.ParseError:
-                # last resort: rebuild a clean feed from regex-extracted
-                # item title/link pairs (broken HTML-in-XML feeds)
-                pairs = re.findall(
-                    r"<item[^>]*>.*?<title[^>]*>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</title>"
-                    r".*?<link[^>]*>(.*?)</link>.*?</item>",
-                    raw, re.S)[:15]
-                if not pairs:
-                    # Atom <entry>: link is an href attribute
-                    pairs = [(t, l) for t, l in re.findall(
-                        r"<entry[^>]*>.*?<title[^>]*>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</title>"
-                        r".*?<link[^>]*href=\"([^\"]*)\"(.*?)</link.*?</entry>",
-                        raw, re.S)[:15]]
-                    pairs += re.findall(
-                        r"<entry[^>]*>.*?<title[^>]*>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</title>"
-                        r".*?<link[^>]*href=\"([^\"]*)\".*?</entry>",
-                        raw, re.S)[:15]
+                # last resort: rebuild a clean feed by splitting on <item>/<entry>
+                # then extracting title/link per chunk — linear scan, no regex
+                # backtracking on huge non-feed documents (adam was OOM-slow)
+                pairs = _regex_pairs(raw)
                 synth = ("<rss><channel>" + "".join(
                     f"<item><title>{xml_escape(t.strip())}</title>"
                     f"<link>{xml_escape(l.strip())}</link></item>"
@@ -82,6 +70,34 @@ def _feed_root(resp):
     for _el in root.iter():
         _el.tag = _el.tag.split("}")[-1]
     return root
+
+
+def _regex_pairs(raw, cap=15):
+    """Extract (title, link) pairs by splitting on item/entry tags and scanning
+    each chunk once — linear, no nested-wildcard backtracking. Stops early once
+    `cap` pairs are found so giant non-feed bodies stay cheap."""
+    pairs = []
+    for tag in ("item", "entry"):
+        chunks = raw.split("<" + tag)[1:]
+        for ch in chunks[:cap * 4]:
+            if len(pairs) >= cap:
+                return pairs
+            end = ch.find("</" + tag)
+            if end > 0:
+                ch = ch[:end]
+            tm = re.search(r"<title[^>]*>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</title>", ch, re.S)
+            if not tm:
+                continue
+            lm = re.search(r"<link[^>]*>(.*?)</link>", ch, re.S)
+            if lm:
+                link = lm.group(1)
+            else:
+                lm = re.search(r"<link[^>]*href=\"([^\"]*)\"", ch)
+                link = lm.group(1) if lm else ""
+            pairs.append((tm.group(1), link))
+        if pairs:
+            return pairs
+    return pairs
 import time
 import urllib.parse
 import urllib.request
