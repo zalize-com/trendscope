@@ -1,0 +1,79 @@
+const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
+const fmt = n => {
+  const s = n < 0 ? "-" : "", a = Math.abs(n);
+  return s + (a >= 1e9 ? (a/1e9).toFixed(1)+"B" : a >= 1e6 ? (a/1e6).toFixed(1)+"M" : a >= 1e3 ? (a/1e3).toFixed(1)+"k" : String(a));
+};
+const params = new URLSearchParams(location.search);
+const $ = id => document.getElementById(id);
+
+const idx = await fetch("data/index.json", {cache:"no-cache"}).then(r => r.json());
+const days = idx.snapshots || [];
+const aEl = $("a"), bEl = $("b");
+aEl.innerHTML = bEl.innerHTML = days.map(d => `<option>${d}</option>`).join("");
+aEl.value = params.get("a") || days[Math.max(0, days.length - 2)];
+bEl.value = params.get("b") || days[days.length - 1];
+aEl.onchange = bEl.onchange = () => { history.replaceState(null,"",`?a=${aEl.value}&b=${bEl.value}`); run(); };
+
+function row(it, badge, scoreTxt, cls) {
+  return `<li><span class="it"><a href="${it.url}">${esc(it.title)}</a><span class="src">${it.source}</span><a class="traj" href="item.html?q=${encodeURIComponent(it.title)}" title="score trajectory">⤳</a></span>
+          <span class="sc">${badge} <span class="${cls}">${scoreTxt}</span></span></li>`;
+}
+
+async function run() {
+  const [A, B] = [aEl.value, bEl.value];
+  $("out").innerHTML = `<p id="err">loading ${A} vs ${B}…</p>`;
+  const [sa, sb] = await Promise.all([
+    fetch(`data/daily/${A}.json`, {cache:"no-cache"}).then(r => r.json()),
+    fetch(`data/daily/${B}.json`, {cache:"no-cache"}).then(r => r.json()),
+  ]);
+  const mapA = {}, mapB = {};
+  Object.values(sa.items||{}).flat().forEach(i => mapA[i.url] = i);
+  Object.values(sb.items||{}).flat().forEach(i => mapB[i.url] = i);
+  // npm/pypi/crates scores are rolling windows — raw deltas are window noise;
+  // for those rank by in-source rank change instead
+  const ROLLING = new Set(["npm","pypi","crates"]);
+  const enter = [], exit = [], movers = [], pkgs = [];
+  for (const [u, it] of Object.entries(mapB)) {
+    if (!mapA[u]) enter.push(it);
+    else if (ROLLING.has(it.source))
+      pkgs.push({it, d: (mapA[u].rank ?? 99) - (it.rank ?? 99)});
+    else movers.push({it, d: it.score - mapA[u].score, a: mapA[u].score});
+  }
+  for (const [u, it] of Object.entries(mapA)) if (!mapB[u]) exit.push(it);
+  // relative velocity: score delta normalized by day-A score (new items rank separately)
+  movers.forEach(m => m.rel = m.d / Math.max(m.a, 1));
+  enter.sort((x,y) => y.score - x.score);
+  movers.sort((x,y) => y.d - x.d);
+  exit.sort((x,y) => y.score - x.score);
+  $("meta").textContent = `${Object.keys(mapA).length} → ${Object.keys(mapB).length} tracked URLs`;
+  $("stats").innerHTML =
+    `<div class="stat"><b class="up">+${enter.length}</b><small>entered</small></div>
+     <div class="stat"><b class="down">−${exit.length}</b><small>left</small></div>
+     <div class="stat"><b>${movers.length + pkgs.length}</b><small>persisted</small></div>`;
+  const QS = params.get("s") || "";
+  const sf = it => !QS || it.source === QS;
+  const moversF = movers.filter(m => sf(m.it)), enterF = enter.filter(sf),
+        pkgsF = pkgs.filter(m => sf(m.it));
+  const srcs = [...new Set([...enter, ...exit, ...movers.map(m=>m.it)].map(i => i.source))].sort();
+  const chips = srcs.map(s =>
+    `<a class="chip${s===QS?" on":""}" href="?a=${aEl.value}&b=${bEl.value}&s=${encodeURIComponent(s)}">${s}</a>`).join(" ") +
+    (QS ? ` <a class="chip" href="?a=${aEl.value}&b=${bEl.value}">all</a>` : "");
+  $("out").innerHTML =
+    (srcs.length ? `<p id="chips">${chips}</p>` : "") +
+    `<h2>biggest gainers (${B})</h2><ol>` +
+      moversF.slice(0, 15).map(m =>
+        row(m.it, `<span class="dim">${fmt(m.a)} →</span>`, `${m.d>0?"+":""}${fmt(m.d)} ${m.it.metric}`, "up")).join("") + `</ol>` +
+    `<h2>new on the board</h2><ol>` +
+      enterF.slice(0, 15).map(it => row(it, `<span class="dim">new</span>`, `${fmt(it.score)} ${it.metric}`, "up")).join("") + `</ol>` +
+    `<h2>biggest droppers</h2><ol>` +
+      [...moversF].sort((x,y)=>x.d-y.d).slice(0, 10).map(m =>
+        row(m.it, `<span class="dim">${fmt(m.a)} →</span>`, `${fmt(m.d)} ${m.it.metric}`, "down")).join("") + `</ol>` +
+    `<h2>package rank movers <span class="dim">· npm/PyPI/crates (rank change)</span></h2><ol>` +
+      [...pkgsF].sort((x,y)=>y.d-x.d).filter(m=>m.d>0).slice(0, 8).map(m =>
+        row(m.it, `<span class="dim">was #${(m.it.rank ?? 0) + m.d} →</span>`, `#${m.it.rank} · ${fmt(m.it.score)} ${m.it.metric}`, "up")).join("") +
+      [...pkgsF].sort((x,y)=>x.d-y.d).filter(m=>m.d<0).slice(0, 8).map(m =>
+        row(m.it, `<span class="dim">was #${(m.it.rank ?? 0) + m.d} →</span>`, `#${m.it.rank} · ${fmt(m.it.score)} ${m.it.metric}`, "down")).join("") + `</ol>` +
+    `<h2>left the board</h2><ol>` +
+      exit.filter(sf).slice(0, 15).map(it => row(it, `<span class="dim">gone</span>`, `${fmt(it.score)} ${it.metric}`, "dim")).join("") + `</ol>`;
+}
+run().catch(e => { $("err").textContent = "could not load snapshots (check dates)"; });

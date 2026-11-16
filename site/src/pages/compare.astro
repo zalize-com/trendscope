@@ -1,0 +1,59 @@
+---
+import Base from "../layouts/Base.astro";
+const title = "compare snapshots \u2014 trendscope";
+const description = "Diff any two daily snapshots: what entered the board, what left, and what gained or lost attention.";
+const path = '/compare.html';
+---
+<Base title={title} description={description} path={path} nav="none">
+
+<nav><a href="index.html">← trendscope</a> · <a href="topics.html">topics</a></nav>
+  <h1>com<span>pare</span></h1>
+  <p class="sub">Diff two daily snapshots: entries, exits and movers.</p>
+  <div class="pick">
+    <select id="a"></select><span class="arrow">→</span><select id="b"></select>
+    <span class="dim" id="meta"></span>
+  </div>
+  <div class="stats" id="stats"></div>
+  <div id="out"><p id="err">loading…</p></div>
+
+</Base>
+
+<style is:global>
+@media (prefers-color-scheme:dark){:root{ --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
+          --dim:#8b949e; --accent:#58a6ff; --green:#3fb950; --red:#f85149; }}
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 18px; }
+  .pick { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 24px; }
+  select {
+    background: var(--panel); color: var(--fg); border: 1px solid var(--border);
+    border-radius: 6px; padding: 6px 10px; font: inherit;
+  }
+  .arrow { color: var(--dim); }
+  h2 { font-size: 15px; color: var(--dim); font-weight: 600; margin: 24px 0 6px;
+       text-transform: uppercase; letter-spacing: .04em; }
+  ol { list-style: none; }
+  li { display: flex; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--border); align-items: baseline; }
+  .it a { color: var(--fg); } .it a:hover { color: var(--accent); }
+  .src { color: var(--dim); font-size: 11px; border: 1px solid var(--border);
+         border-radius: 4px; padding: 0 5px; margin-left: 6px; }
+  .traj { color: var(--dim); font-size: 11px; margin-left: 6px; text-decoration: none; }
+  .traj:hover { color: var(--accent); }
+  .sc { margin-left: auto; white-space: nowrap; font-size: 12px; }
+  .up { color: var(--green); } .down { color: var(--red); } .dim { color: var(--dim); }
+  .stats { display: flex; gap: 18px; flex-wrap: wrap; margin: 10px 0 6px; }
+  .stat b { font-size: 22px; } .stat small { color: var(--dim); display: block; font-size: 11px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+  #err { color: var(--dim); }
+  .chip{display:inline-block;padding:2px 9px;border:1px solid var(--border);border-radius:12px;font-size:12px;color:var(--fg);text-decoration:none;margin:2px 3px 2px 0;opacity:.75}
+  .chip.on{opacity:1;border-color:var(--accent);color:var(--accent)}
+
+  /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
+  :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
+</style>
+
+<script is:inline src="/js/pages/compare.mjs" type="module"></script>

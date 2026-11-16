@@ -1,0 +1,57 @@
+---
+import Base from "../layouts/Base.astro";
+const title = "gone \u2014 trendscope";
+const description = "Items that were on yesterday's board but dropped off today.";
+const path = '/gone.html';
+---
+<Base title={title} description={description} path={path} nav="none">
+
+<div class="wrap">
+  <nav>
+    <a href="index.html">trendscope</a> ·
+    <a href="meteors.html">meteors</a> ·
+    <a href="oldest.html">veterans</a> ·
+    <a href="api.html">api</a>
+  </nav>
+
+  <h1>gone</h1>
+  <p class="muted" id="sub">
+    Items that sat on yesterday's board but aren't on today's — the exit
+    door matching <a href="meteors.html">meteors</a>' arrivals. A drop
+    usually means the item's day-velocity faded, not that it died.
+  </p>
+
+  <table>
+    <thead><tr><th>#</th><th>title</th><th>source</th><th>was rank</th><th>was score</th></tr></thead>
+    <tbody id="tb"></tbody>
+  </table>
+  <p class="muted" id="note"></p>
+
+  
+</div>
+
+</Base>
+
+<style is:global>
+:root { --bg:#0d1117; --fg:#e6edf3; --mut:#8b949e; --card:#161b22; --line:#30363d; --acc:#58a6ff; }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme]) { --bg:#f6f8fa; --fg:#1f2328; --mut:#59636e; --card:#ffffff; --line:#d0d7de; --acc:#0969da; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  .wrap { max-width:880px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:26px; margin:0 0 6px; }
+  nav { margin-bottom:18px; font-size:14px; }
+  .muted { color:var(--mut); font-size:13.5px; }
+  a { color:var(--acc); text-decoration:none; }
+  table { width:100%; border-collapse:collapse; margin-top:16px; }
+  td,th { padding:8px 10px; border-bottom:1px solid var(--line); text-align:left; font-size:14px; }
+  th { color:var(--mut); font-weight:600; font-size:12px; text-transform:uppercase; }
+  .src { color:var(--mut); font-size:12px; }
+  footer { margin-top:28px; color:var(--mut); font-size:12.5px; }
+
+  /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
+  :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
+</style>
+
+<script is:inline src="/js/pages/gone.mjs" type="module"></script>

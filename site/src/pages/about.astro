@@ -1,0 +1,122 @@
+---
+import Base from "../layouts/Base.astro";
+const title = "about & methodology \u2014 trendscope";
+const description = "How trendscope builds the daily developer-attention dataset: sources, schedule, provenance and license.";
+const path = '/about.html';
+---
+<Base title={title} description={description} path={path} nav="about">
+
+<nav><a href="index.html">← trendscope</a></nav>
+  <h1>about &amp; methodolo<span>gy</span></h1>
+  <p class="sub">What this dataset is, where it comes from, and how to trust it.</p>
+
+  <h2>What trendscope is</h2>
+  <p>trendscope is an open dataset of <b>developer attention</b>: every day it snapshots what
+  developers are reading (Hacker News, Lobste.rs, Dev.to), building (GitHub trending), and
+  downloading (npm, PyPI, crates.io), and publishes the result as JSON/CSV under CC0.
+  The dashboard is a shop window; the dataset — versioned, timestamped, cumulative — is the product.</p>
+
+  <h2>Sources</h2>
+  <table>
+    <tr><th>Source</th><th>Endpoint</th><th>What the score means</th></tr>
+    <tr><td>hackernews</td><td>HN Algolia API (front page + search)</td><td>points</td></tr>
+    <tr><td>show_hn</td><td>HN Algolia API (tag: show_hn)</td><td>points</td></tr>
+    <tr><td>ask_hn</td><td>HN Algolia API (tag: ask_hn)</td><td>points</td></tr>
+    <tr><td>lobsters</td><td>lobste.rs/hottest.json</td><td>score</td></tr>
+    <tr><td>devto</td><td>dev.to API (top, 1-day window)</td><td>reactions</td></tr>
+    <tr><td>producthunt</td><td>producthunt.com/feed (Atom, daily launches)</td><td>feed rank</td></tr>
+    <tr><td>techmeme</td><td>techmeme.com/feed.xml (RSS, editorial news)</td><td>feed rank</td></tr>
+    <tr><td>slashdot</td><td>rss.slashdot.org/Slashdot/slashdotMain (RSS 1.0)</td><td>feed rank</td></tr>
+    <tr><td>arstechnica</td><td>feeds.arstechnica.com/arstechnica/index (RSS)</td><td>feed rank</td></tr>
+    <tr><td>theverge</td><td>theverge.com/rss/index.xml (Atom)</td><td>feed rank</td></tr>
+    <tr><td>arxiv</td><td>export.arxiv.org/api/query (cs.AI/CL/LG/SE)</td><td>arxiv recent</td></tr>
+    <tr><td>github_trending</td><td>github.com/trending (HTML)</td><td>stars gained today</td></tr>
+    <tr><td>npm</td><td>api.npmjs.org/downloads</td><td>weekly downloads</td></tr>
+    <tr><td>pypi</td><td>pypistats.org API</td><td>monthly downloads</td></tr>
+    <tr><td>crates</td><td>crates.io API (recent-downloads)</td><td>recent downloads</td></tr>
+    <tr><td>lemmy</td><td>programming.dev/api/v3 (Lemmy hot)</td><td>score</td></tr>
+    <tr><td>krebs</td><td>krebsonsecurity.com/feed (RSS, security journalism)</td><td>feed rank</td></tr>
+    <tr><td>changelog</td><td>changelog.com/news/feed (RSS, dev news)</td><td>feed rank</td></tr>
+    <tr><td>freecodecamp</td><td>freecodecamp.org/news/rss/ (RSS, tutorials)</td><td>feed rank</td></tr>
+    <tr><td>echojs</td><td>echojs.com/rss (RSS, JavaScript community)</td><td>feed rank</td></tr>
+    <tr><td>infoq</td><td>feed.infoq.com (RSS, enterprise dev news)</td><td>feed rank</td></tr>
+    <tr><td>theregister</td><td>theregister.com/software/headlines.atom (RSS, IT news)</td><td>feed rank</td></tr>
+    <tr><td>lwn</td><td>lwn.net/headlines/rss (Linux/kernel news)</td><td>feed rank</td></tr>
+    <tr><td>hackaday</td><td>hackaday.com/feed/ (hardware/maker)</td><td>feed rank</td></tr>
+    <tr><td>thenewstack</td><td>thenewstack.io/feed/ (cloud-native/devops)</td><td>feed rank</td></tr>
+    <tr><td>opensourcecom</td><td>opensource.com/feed (Red Hat OSS community)</td><td>feed rank</td></tr>
+    <tr><td>soblog</td><td>stackoverflow.blog/feed/ (dev culture)</td><td>feed rank</td></tr>
+    <tr><td>codinghorror</td><td>blog.codinghorror.com/rss/ (classic dev blog)</td><td>feed rank</td></tr>
+    <tr><td>martinfowler</td><td>martinfowler.com/feed.atom (SWE essays)</td><td>feed rank</td></tr>
+    <tr><td>pragmatic</td><td>blog.pragmaticengineer.com/rss/ (SWE newsletter)</td><td>feed rank</td></tr>
+    <tr><td>bendersky</td><td>eli.thegreenplace.net/feeds/all.atom.xml (deep-dive blog)</td><td>feed rank</td></tr>
+    <tr><td>cheney</td><td>dave.cheney.net/feed (Go/engineering blog)</td><td>feed rank</td></tr>
+    <tr><td>lucumr</td><td>lucumr.pocoo.org/feed.atom (Armin Ronacher)</td><td>feed rank</td></tr>
+    <tr><td>hynek</td><td>hynek.me/articles/index.xml (Python ecosystem)</td><td>feed rank</td></tr>
+    <tr><td>susam</td><td>susam.net/feed.xml (long-form hacker blog)</td><td>feed rank</td></tr>
+  </table>
+  <h2>Full source directory</h2>
+  <p id="dir-meta">Loading directory…</p>
+  <p><input id="dir-q" type="search" placeholder="filter 9,000+ sources — name, key or host" style="width:100%;max-width:480px;padding:6px 10px;border:1px solid var(--border);border-radius:6px;background:var(--panel);color:var(--fg);font:inherit"></p>
+  <p id="dir-chips"></p>
+  <table id="dir"><thead><tr><th>Key</th><th>Name</th><th>Lane</th><th>Metric</th></tr></thead><tbody id="dir-body"></tbody></table>
+  
+
+  <p>All endpoints are public and login-free. Scores are <b>source-native</b>: compare within a
+  source, never across them (a point on HN and a download on npm are different units).
+  The cross-source "All" board normalizes by each source's top score — heat, not raw numbers.</p>
+
+  <h2>Schedule &amp; provenance</h2>
+  <ul>
+    <li>A GitHub Action runs <code>scripts/collect.py</code> daily (~06:05 UTC) and commits
+      <code>data/daily/YYYY-MM-DD.json/.csv</code>, <code>latest.json/.csv</code>, and appends
+      <code>history.csv</code>.</li>
+    <li>Every record carries <code>url</code> + <code>captured_at</code> — provenance is part of the schema.</li>
+    <li><code>data/index.json</code> lists all snapshots; the day picker and topic sparklines read it.</li>
+    <li>History before the launch date was backfilled from HN Algolia's date index and is marked
+      <code>"backfilled": true, "partial": true</code> in those daily files.</li>
+  </ul>
+
+  <h2>Topics</h2>
+  <p>Items are classified by a keyword map (<code>TOPIC_RULES</code> in collect.py) over title +
+  tags + description — deliberately transparent and deterministic, no ML black box. An item can
+  belong to several topics or none.</p>
+
+  <h2>License &amp; use</h2>
+  <p>Compilation released under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>;
+  upstream titles/links remain with their owners. Cite as:
+  <em>trendscope — daily open dataset of developer attention, zalize-com, &#123;date&#125;</em>.</p>
+
+  <h2>Built by</h2>
+  <p>Designed, coded and maintained autonomously by two collaborating <a href="https://devin.ai">Devin</a>
+  sessions — one building, one researching and reviewing — as a 7-day experiment in agent-built
+  products. Daily collection, this page, and the weekly digest all run unattended.
+  <br><small><a href="https://github.com/zalize-com/trendscope/blob/main/docs/methodology.md">docs/methodology.md</a>
+  describes how the two sessions split, review and ship — written by them.</small></p>
+
+</Base>
+
+<style is:global>
+@media (prefers-color-scheme:dark){:root{ --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3; --dim:#8b949e; --accent:#58a6ff; }}
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 760px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 24px; }
+  h2 { font-size: 17px; margin: 28px 0 8px; }
+  p, li { color: var(--fg); }
+  ul { padding-left: 20px; }
+  li { padding: 2px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 8px 0; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); }
+  th { color: var(--dim); font-weight: 600; }
+  code { background: var(--panel); border: 1px solid var(--border); border-radius: 4px; padding: 1px 5px; font-size: 12px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+
+  /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
+  :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
+</style>
+
+<script is:inline src="/js/pages/about.js"></script>

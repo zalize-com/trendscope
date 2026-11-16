@@ -1,0 +1,56 @@
+---
+import Base from "../layouts/Base.astro";
+const title = "board veterans \u2014 trendscope";
+const description = "The longest-running items ever seen on the trendscope board.";
+const path = '/oldest.html';
+---
+<Base title={title} description={description} path={path} nav="none">
+
+<div class="wrap">
+  <nav>
+    <a href="index.html">trendscope</a> ·
+    <a href="streaks.html">streaks</a> ·
+    <a href="meteors.html">meteors</a> ·
+    <a href="api.html">api</a>
+  </nav>
+
+  <h1>board veterans</h1>
+  <p class="muted" id="sub">
+    The items with the longest all-time presence on the daily board —
+    the mirror image of <a href="meteors.html">meteors</a>, which flash for
+    a single day. A long streak means a topic kept pulling attention
+    across sources for days on end.
+  </p>
+
+  <table id="t">
+    <thead>
+      <tr><th>#</th><th>days on board</th><th>longest streak</th><th>title</th><th>source</th><th>peak</th></tr>
+    </thead>
+    <tbody id="tb"></tbody>
+  </table>
+
+  <p class="muted" id="note"></p>
+
+  
+</div>
+
+</Base>
+
+<style is:global>
+:root{--bg:#fff;--fg:#1f2328;--dim:#57606a;--line:#d8dee4;--acc:#0969da}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e6edf3;--dim:#8b949e;--line:#30363d;--acc:#58a6ff}}
+body{margin:0 auto;max-width:760px;padding:16px;background:var(--bg);color:var(--fg);font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+a{color:var(--acc)}
+h1{font-size:22px;margin:4px 0}
+h2{font-size:15px;margin:20px 0 6px}
+nav{font-size:13px;margin:8px 0 14px}
+nav a{margin-right:8px}
+.muted{color:var(--dim)}
+table{border-collapse:collapse;font-size:13px;width:100%}
+th,td{border:1px solid var(--line);padding:4px 10px;text-align:left}
+
+  /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
+  :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
+</style>
+
+<script is:inline src="/js/pages/oldest.mjs" type="module"></script>

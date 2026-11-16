@@ -1,0 +1,31 @@
+---
+import Base from "../layouts/Base.astro";
+const title = "API explorer \u2014 trendscope";
+const description = "Interactive OpenAPI explorer for the trendscope dataset endpoints \u2014 try every API live.";
+const path = '/swagger.html';
+---
+<Base title={title} description={description} path={path} nav="none">
+
+<h1>API explorer</h1>
+<div class="sub">Interactive docs for every trendscope endpoint — static files, no auth, CC0.</div>
+<nav><a href="index.html">← board</a><a href="api.html">api guide</a><a href="docs/api.md">api.md</a><a href="docs/api/openapi.yaml">openapi.yaml</a><a href="embeds.html">embeds</a></nav>
+<div id="ui"></div>
+<div id="err"></div>
+<script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js"></script>
+
+</Base>
+
+<style is:global>
+body{margin:0 auto;max-width:1100px;padding:14px;font:14px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}
+h1{font-size:20px;margin:4px 0}
+.sub{font-size:13px;color:#57606a;margin-bottom:10px}
+nav{font-size:13px;margin:8px 0 16px}
+nav a{margin-right:8px;color:#0969da;text-decoration:none}
+.swagger-ui .topbar{display:none}
+#err{color:#cf222e;margin-top:16px}
+
+  /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
+  :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
+</style>
+
+<script is:inline src="/js/pages/swagger.js"></script>

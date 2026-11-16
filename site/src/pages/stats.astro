@@ -1,0 +1,58 @@
+---
+import Base from "../layouts/Base.astro";
+const title = "stats \u2014 trendscope";
+const description = "trendscope dataset growth: items per day, cumulative rows, per-source coverage \u2014 computed from the public history.csv.";
+const path = '/stats.html';
+---
+<Base title={title} description={description} path={path} nav="none">
+
+<nav><a href="index.html">← trendscope</a> · <a href="health.html">status</a> · <a href="docs/api.md">api</a></nav>
+  <h1>dataset <span>stats</span></h1>
+  <p class="sub">How the dataset grows — computed live from <code>data/history.csv</code> + <code>docs/api/stats.json</code>.</p>
+  <div class="stats" id="stats"></div>
+  <h2>items per day</h2>
+  <div class="chart" style="height:200px;padding:8px"><canvas id="daily"></canvas></div>
+  <h2>cumulative rows</h2>
+  <div class="chart" style="height:200px;padding:8px"><canvas id="cum"></canvas></div>
+  <h2>novelty rate</h2>
+  <div class="chart" style="height:200px;padding:8px"><canvas id="nov"></canvas></div>
+  <p style="color:var(--dim);font-size:12px;margin:0 0 8px">% of URLs each day seen for the first time — falling line means the board is repeating itself</p>
+  <h2>attention by weekday</h2>
+  <svg class="chart" id="wd" viewBox="0 0 820 200"></svg>
+  <p style="color:var(--dim);font-size:12px;margin:0 0 8px" id="wd-note"></p>
+  <h2>rows per source</h2>
+  <svg class="chart" id="mix" viewBox="0 0 820 220"></svg>
+  <p style="color:var(--dim);font-size:12px;margin:0 0 8px">stacked source mix per day — same colors as the bars below</p>
+  <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start">
+    <svg id="donut" width="200" height="200" viewBox="0 0 200 200"></svg>
+    <div id="srcs" style="flex:1;min-width:280px"></div>
+  </div>
+
+</Base>
+
+<style is:global>
+@media (prefers-color-scheme:dark){:root{ --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
+          --dim:#8b949e; --accent:#58a6ff; --green:#3fb950; --orange:#d29922; }}
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 18px; }
+  .stats { display: flex; gap: 22px; flex-wrap: wrap; margin: 10px 0 6px; }
+  .stat b { font-size: 24px; } .stat small { color: var(--dim); display: block; font-size: 11px; }
+  h2 { font-size: 15px; color: var(--dim); font-weight: 600; margin: 28px 0 10px;
+       text-transform: uppercase; letter-spacing: .04em; }
+  .chart { width: 100%; background: var(--panel); border: 1px solid var(--border); border-radius: 10px; }
+  .bar { display: flex; align-items: center; gap: 10px; margin-bottom: 5px; font-size: 12px; }
+  .bar .nm { min-width: 110px; color: var(--dim); text-align: right; }
+  .bar .fill { height: 14px; background: var(--accent); border-radius: 3px; opacity: .8; }
+  .bar .v { color: var(--dim); }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+
+  /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
+  :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
+</style>
+
+<script is:inline src="/js/pages/stats.mjs" type="module"></script>

@@ -1,0 +1,47 @@
+---
+import Base from "../layouts/Base.astro";
+const title = "trendscope changelog \u2014 what shipped, when";
+const description = "trendscope changelog \u2014 every shipped feature, fix and data surface, newest first.";
+const path = '/changelog.html';
+---
+<Base title={title} description={description} path={path} nav="none">
+
+<nav><a href="index.html">← trendscope</a> · <a href="docs/data-dictionary.md">data dictionary</a> · <a href="badges.html">badges</a></nav>
+  <h1>changelog</h1>
+  <p class="sub">Every shipped change, newest first. This page renders <code>docs/changelog.md</code> live.</p>
+  <div id="doc"><p id="err">loading…</p></div>
+
+</Base>
+
+<style is:global>
+@media (prefers-color-scheme:dark){:root{ --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
+          --dim:#8b949e; --accent:#58a6ff; --green:#3fb950; --red:#f85149; --orange:#d29922; }}
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 18px; }
+  #doc h1 { font-size: 20px; margin: 18px 0 8px; }
+  #doc h2, #doc h3 { font-size: 15px; color: var(--dim); margin: 22px 0 8px;
+       text-transform: uppercase; letter-spacing: .04em; }
+  #doc p { margin: 8px 0; }
+  #doc code { font-family: ui-monospace, monospace; font-size: 12px;
+       background: var(--panel); border: 1px solid var(--border); border-radius: 4px; padding: 1px 5px; }
+  #doc pre { background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+       padding: 12px; overflow-x: auto; margin: 10px 0; }
+  #doc pre code { border: none; padding: 0; background: none; }
+  #doc table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 12.5px; }
+  #doc td { border: 1px solid var(--border); padding: 5px 8px; vertical-align: top; }
+  #doc tr:first-child td { color: var(--dim); font-weight: 600; }
+  #doc ul, #doc ol { padding-left: 22px; margin: 8px 0; }
+  #doc blockquote { border-left: 3px solid var(--border); padding-left: 12px; color: var(--dim); margin: 10px 0; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+  #err { color: var(--dim); }
+
+  /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
+  :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
+</style>
+
+<script is:inline src="/js/pages/changelog.mjs" type="module"></script>
