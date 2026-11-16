@@ -153,6 +153,12 @@ class _Redirect308(urllib.request.HTTPRedirectHandler):
 _REDDIT_MIN_INTERVAL = 10.0
 _reddit_last = [0.0]
 
+# rss2json free-tier quota: cap fallback calls per run; fetchers for sources
+# empty in the previous snapshot are scheduled first so they win the budget.
+_RSS2JSON_BUDGET = 140
+_rss2json_used = [0]
+_rss2json_lock = threading.Lock()
+
 
 class _RedditThrottle(urllib.request.BaseHandler):
     """Reddit rate-limits per client IP across ALL endpoints (any host, .rss
@@ -118900,6 +118906,16 @@ def _make_feed_fetcher(key, label, feed, home):
                     break
         _err_code = getattr(last_err, "code", None)
         if root is None and (_err_code in (403, 406, 429, 404) or _err_code is None):
+            # rss2json's free tier is a scarce daily quota — burn it only
+            # under a per-run cap, and let main() run previously-empty sources
+            # first so persistently-blocked lanes win the budget over
+            # first-round tide victims (which self-heal next wave).
+            with _rss2json_lock:
+                if _rss2json_used[0] >= _RSS2JSON_BUDGET:
+                    print(f"  [warn] {key} rss2json fallback skipped: budget "
+                          f"{_RSS2JSON_BUDGET}/run exhausted", file=sys.stderr)
+                    return []
+                _rss2json_used[0] += 1
             # Cloudflare-style 403 waves block the Actions egress IP for some
             # hosts (substack is the big one); YouTube's rotating rate-limit
             # wave presents as 404 (yt_ lane went 0/44 in one run while the
@@ -122109,6 +122125,22 @@ def main():
     # Fetchers are independent — run them concurrently (slowest source bounds
     # the run instead of the sum of all sources).
     fetchers.update(_extra_feed_fetchers())
+
+    # Prioritize sources that were empty in the previous snapshot so their
+    # rss2json fallback calls run before the per-run budget is spent on
+    # first-round tide victims (which typically self-heal next wave).
+    prev_empty = set()
+    try:
+        with open(os.path.join(DATA_DIR, "latest.json")) as f:
+            prev_empty = {k for k, v in json.load(f).get("items", {}).items()
+                          if not v}
+    except Exception:
+        pass
+    if prev_empty:
+        fetchers = dict(
+            sorted(fetchers.items(), key=lambda kv: kv[0] not in prev_empty))
+        print(f"  {len(prev_empty)} previously-empty sources scheduled first "
+              f"for rss2json budget")
 
     sections, health = {}, {}
 

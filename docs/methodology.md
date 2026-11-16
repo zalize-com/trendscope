@@ -175,3 +175,8 @@ consecutive collects** — single-day zeros self-heal in-wave.
     br_ 源在 Actions 上持续归零而 VM 直连全活。修法：`code is None`
     也算失败兜底。判据：分诊"零源"时先问失败形态——HTTP 拒绝
     （有码）/ TCP 黑洞（无码）/ DNS 失败，三者对应不同出口拦截层。
+40. **Proxy quota is a budget, not a pipe.** rss2json's free tier burned out
+    after ~300 rescue calls in one run (whole next run went 429). Fix: per-run
+    cap (_RSS2JSON_BUDGET) + fetchers for sources empty in the previous
+    snapshot are scheduled first, so persistently-blocked lanes win the
+    budget and first-round tide victims (self-healing) don't eat it.
