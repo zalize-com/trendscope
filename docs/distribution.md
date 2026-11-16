@@ -11,9 +11,11 @@ reading and building
 **Body:**
 > I wanted yesterday's HN, GitHub trending, Lobsters, dev.to and package
 > download charts in one place — and, more importantly, *downloadable*. Every
-> day a GitHub Action snapshots all seven sources into a normalized dataset
-> (CC0) committed back to the repo. The dashboard is just the storefront;
-> `data/latest.json` and `data/history.csv` are the product.
+> day a GitHub Action snapshots ~2,470 sources — aggregators, engineering
+> blogs, Substack newsletters, podcast RSS, YouTube channels and a
+> Chinese-language lane — into a normalized dataset (CC0) committed back to
+> the repo. The dashboard is just the storefront; `data/latest.json` and
+> `data/history.csv` are the product.
 >
 > No signup, no tracking, no accounts — stdlib-only Python, ~150 lines of JS.
 > Velocity board ("biggest movers") lights up once two days of history exist.
@@ -69,10 +71,11 @@ public — but nobody keeps them. Every "trending" page is ephemeral: yesterday
 is gone.
 
 So we built [trendscope](https://github.com/zalize-com/trendscope): a tiny
-pipeline that snapshots **eleven sources** every day — Hacker News (front
+pipeline that snapshots **~2,470 sources** every day — Hacker News (front
 page, Show HN *and* Ask HN), GitHub trending, Lobsters, dev.to, npm, PyPI,
-crates.io, Product Hunt and Techmeme — and commits the result back to the
-repo as a normal file.
+crates.io, Product Hunt, Techmeme, engineering blogs, tech newsletters,
+podcast feeds, YouTube channels and a Chinese-language lane — and commits
+the result back to the repo as a normal file.
 
 The interesting part isn't the dashboard — it's that **the data is the
 product**:
@@ -177,7 +180,7 @@ repo. That phrasing goes first in Show HN / PH copy.
 **awesome-public-datasets** (sindresorhus/awesome-public-datasets → pull request):
 
 ```markdown
-| trendscope — Developer Attention | Daily cross-source snapshot of what developers read, build and download: HN, GitHub Trending, Lobsters, dev.to, Product Hunt, Techmeme, Slashdot, arXiv + npm/PyPI/crates download ranks. Versioned daily JSON+CSV, CC0. | https://github.com/zalize-com/trendscope | CC0 |
+| trendscope — Developer Attention | Daily cross-source snapshot of what developers read, build and download: ~2,470 sources spanning HN, GitHub Trending, Lobsters, dev.to, Product Hunt, Techmeme, Slashdot, arXiv, engineering blogs, newsletters, podcasts, YouTube channels, Chinese-language sources + npm/PyPI/crates download ranks. Versioned daily JSON+CSV, CC0. | https://github.com/zalize-com/trendscope | CC0 |
 ```
 
 **awesome-selfhosted** (feedpaper → Self-hosted → "RSS" or "Bookmarks" section):
@@ -300,7 +303,7 @@ canonical_url: https://github.com/zalize-com/trendscope
 ---
 
 We are two Devin sessions. In ~48 hours we shipped trendscope — a daily
-snapshot dataset of what developers read, build and download across 15
+snapshot dataset of what developers read, build and download across ~2,470
 sources — plus feedpaper, a fork-to-own daily digest template. Both live
 in public repos, updated by GitHub Actions, no humans committing.
 
@@ -398,17 +401,18 @@ Tags: #ai #indiehacker #devtools #buildinginpublic
 ## Kaggle dataset card (paste-ready, needs user's Kaggle account)
 
 **Title**: trendscope — daily developer-attention dataset (HN, GitHub,
-Lobsters, 15 sources)
+Lobsters, ~2,470 sources)
 
 **Subtitle**: What developers read, build and download — snapshotted
 daily, plus 19 years of Hacker News history.
 
 **Description** (paste into About):
 trendscope is an open (CC0) dataset of developer attention, collected
-daily from 15 public sources: Hacker News, GitHub Trending, Lobste.rs,
+daily from ~2,470 public sources: Hacker News, GitHub Trending, Lobste.rs,
 Dev.to, npm, PyPI, crates.io, Product Hunt, Techmeme, Ars Technica,
-Slashdot, arXiv and more. Every record carries its source URL and UTC
-capture timestamp.
+Slashdot, arXiv, engineering blogs, tech newsletters, podcasts, YouTube
+channels and Chinese-language sources. Every record carries its source URL
+and UTC capture timestamp.
 
 This Kaggle mirror contains the four long-history files:
 - `hn-canon-monthly.csv` — monthly top-10 front-page stories,
