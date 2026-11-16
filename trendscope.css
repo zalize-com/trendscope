@@ -1,0 +1,162 @@
+/* trendscope design system — shared tokens + components
+   loaded after Pico CSS v2 (CDN). The tokens mirror the incumbent
+   dark/light palette; every page links this file, inline <style> blocks
+   shrink to page-specific extras only. */
+
+:root {
+  --bg: #0d1117; --panel: #161b22; --border: #30363d; --fg: #e6edf3;
+  --dim: #8b949e; --accent: #58a6ff; --green: #3fb950; --orange: #d29922;
+  /* legacy aliases seen across older pages */
+  --mut: var(--dim); --card: var(--panel); --line: var(--border);
+  --acc: var(--accent); --surface: var(--panel);
+  --radius: 10px; --radius-sm: 8px; --radius-pill: 999px;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --fg: #1f2328;
+    --dim: #59636e; --accent: #0969da; --green: #1a7f37; --orange: #9a6700;
+  }
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg); color: var(--fg);
+  font: 15px/1.55 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: var(--accent); color: var(--bg); }
+
+.wrap { max-width: 1080px; margin: 0 auto; padding: 32px 20px 64px; }
+
+/* ---- hero ---- */
+header.hero { text-align: center; padding: 28px 0 20px; }
+.hero h1 { font-size: 34px; letter-spacing: -0.5px; font-weight: 700; }
+.hero h1 .scope { color: var(--accent); }
+.tagline { color: var(--dim); margin-top: 6px; font-size: 16px; }
+.tagline a { color: var(--accent); text-decoration: none; }
+
+/* ---- pills & stamps ---- */
+.stamp {
+  display: inline-block; margin-top: 14px; padding: 4px 14px;
+  border: 1px solid var(--border); border-radius: var(--radius-pill);
+  color: var(--dim); font-size: 13px; background: var(--panel);
+}
+.stamp b { color: var(--green); font-weight: 600; }
+
+.topics { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 18px 0 4px; }
+.topic-chip {
+  padding: 4px 12px; border-radius: var(--radius-pill); font-size: 13px;
+  background: var(--panel); border: 1px solid var(--border); color: var(--dim);
+  text-decoration: none;
+}
+a.topic-chip:hover { border-color: var(--accent); text-decoration: none; }
+.topic-chip b { color: var(--fg); font-weight: 600; }
+
+/* ---- sections ---- */
+section { margin-top: 34px; }
+h2 { font-size: 20px; margin-bottom: 12px; font-weight: 650; }
+h2 .sub { color: var(--dim); font-size: 13px; font-weight: 400; margin-left: 8px; }
+
+/* ---- tabs ---- */
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.tab {
+  padding: 6px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border);
+  background: var(--panel); color: var(--dim); cursor: pointer; font-size: 14px;
+}
+.tab.active { color: var(--fg); border-color: var(--accent); }
+
+/* ---- board rows ---- */
+.board {
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+}
+.row {
+  display: grid; grid-template-columns: 34px 1fr auto; gap: 8px;
+  padding: 10px 14px; border-top: 1px solid var(--border); align-items: baseline;
+}
+.row:first-child { border-top: none; }
+.row .rank { color: var(--dim); font-variant-numeric: tabular-nums; font-size: 13px; }
+.row a { color: var(--fg); text-decoration: none; }
+.row a:hover { color: var(--accent); text-decoration: underline; }
+.row.cur { background: var(--panel); outline: 1px solid var(--accent); outline-offset: -1px; }
+.row .meta {
+  color: var(--dim); font-size: 12px; margin-top: 2px;
+  display: flex; flex-wrap: wrap; gap: 10px;
+}
+.meta a.authl, .meta a.doml { color: var(--dim); font-size: 11px; margin-left: 6px; }
+.meta a.authl:hover, .meta a.doml:hover { color: var(--accent); }
+
+.src {
+  font-size: 11px; padding: 1px 7px; border-radius: var(--radius-pill);
+  border: 1px solid var(--border); color: var(--dim); white-space: nowrap;
+}
+.score { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.score b { font-weight: 600; }
+.delta { font-size: 12px; color: var(--green); display: block; }
+.delta.new { color: var(--orange); }
+
+/* ---- cards ---- */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+.card {
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px;
+}
+.card h3 { font-size: 15px; margin-bottom: 6px; font-weight: 600; }
+.card p { color: var(--dim); font-size: 13px; }
+.card a { color: var(--accent); }
+
+/* ---- buttons ---- */
+.btn {
+  display: inline-block; margin-top: 10px; padding: 7px 14px; font-size: 13px;
+  border: 1px solid var(--accent); border-radius: var(--radius-sm);
+  color: var(--accent); text-decoration: none; cursor: pointer;
+  background: transparent;
+}
+.btn:hover { background: var(--accent); color: var(--bg); }
+.btn.ghost { border-color: var(--border); color: var(--dim); }
+
+/* ---- forms ---- */
+input[type="search"], input[type="text"], select {
+  padding: 7px 12px; border-radius: var(--radius-sm);
+  border: 1px solid var(--border); background: var(--panel); color: var(--fg);
+  font: inherit; font-size: 13px;
+}
+input[type="search"]:focus, input[type="text"]:focus, select:focus {
+  border-color: var(--accent); outline: none;
+}
+
+code {
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: 5px; padding: 1px 6px; font-size: 12.5px;
+}
+
+/* ---- footer ---- */
+footer {
+  margin-top: 48px; padding-top: 18px;
+  border-top: 1px solid var(--border); color: var(--dim); font-size: 13px;
+}
+footer a { color: var(--accent); text-decoration: none; }
+
+.muted { color: var(--dim); }
+#err { color: var(--orange); display: none; margin-top: 12px; }
+
+/* ---- accessibility ---- */
+.skiplink {
+  position: absolute; left: -9999px; top: 0;
+  background: var(--accent); color: #fff; padding: 6px 12px;
+  border-radius: 0 0 8px 0; z-index: 99;
+}
+.skiplink:focus { left: 0; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+svg.lucide { width: 13px; height: 13px; vertical-align: -2px; stroke-width: 2; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+}
