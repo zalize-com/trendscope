@@ -3,8 +3,48 @@ import Base from "../layouts/Base.astro";
 const title = "daily-updating open datasets \u2014 trendscope";
 const description = "A curated list of open datasets that update themselves daily \u2014 developer attention, news archives, package stats, and more.";
 const path = '/datasets.html';
+// ItemList markup turns this catalog into a Google Dataset Search surface —
+// each listed dataset gets its own Dataset node.
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "daily-updating open datasets",
+  "description": description,
+  "itemListElement": [
+    {"@type": "Dataset", "position": 1, "name": "trendscope — developer attention dataset",
+     "description": "Daily cross-source snapshot of what developers are reading & building across 9,200+ tracked sources. JSON+CSV, versioned history, machine-readable APIs.",
+     "url": "https://github.com/zalize-com/trendscope",
+     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+     "isAccessibleForFree": true,
+     "temporalCoverage": "2026-11-07/..",
+     "distribution": [
+       {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "data/latest.json"},
+       {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "data/history.csv"}]},
+    {"@type": "Dataset", "position": 2, "name": "Hacker News API",
+     "description": "Every HN item & change stream via Firebase — raw firehose.",
+     "url": "https://github.com/HackerNews/API", "isAccessibleForFree": true},
+    {"@type": "Dataset", "position": 3, "name": "GH Archive",
+     "description": "Every public GitHub event, hourly BigQuery/downloadable archives.",
+     "url": "https://www.gharchive.org", "isAccessibleForFree": true},
+    {"@type": "Dataset", "position": 4, "name": "PyPI download counts (pypistats)",
+     "description": "Daily/monthly download counts per PyPI package, JSON API.",
+     "url": "https://pypistats.org", "isAccessibleForFree": true},
+    {"@type": "Dataset", "position": 5, "name": "npm downloads API",
+     "description": "Download counts per package/range.", "url": "https://api.npmjs.org",
+     "isAccessibleForFree": true},
+    {"@type": "Dataset", "position": 6, "name": "libraries.io open data",
+     "description": "Cross-ecosystem package metadata dumps.",
+     "url": "https://libraries.io/data", "license": "CC-BY-SA", "isAccessibleForFree": true},
+    {"@type": "Dataset", "position": 7, "name": "Our World in Data",
+     "description": "Global indicators, many auto-updated series, charts+CSV+API.",
+     "url": "https://ourworldindata.org", "license": "CC-BY", "isAccessibleForFree": true},
+    {"@type": "Dataset", "position": 8, "name": "Wikipedia pageviews",
+     "description": "Hourly pageview dumps per article, whole-history.",
+     "url": "https://dumps.wikimedia.org/other/pageviews/", "isAccessibleForFree": true},
+  ],
+};
 ---
-<Base title={title} description={description} path={path} nav="none">
+<Base title={title} description={description} path={path} nav="none" jsonld={jsonld}>
 
 <nav><a href="index.html">← trendscope</a> · <a href="about.html">about</a> · <a href="docs/api.md">api docs</a></nav>
   <h1>daily-updating <span>open datasets</span></h1>
