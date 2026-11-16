@@ -10,7 +10,7 @@ have). Ordered by impact-per-click. Estimated total time: **~10 minutes**.
 | trendscope | [Settings → Pages](https://github.com/zalize-com/trendscope/settings/pages) → Source: **GitHub Actions** → Save |
 | feedpaper | [Settings → Pages](https://github.com/zalize-com/feedpaper/settings/pages) → same: main / root → Save |
 
-trendscope serves the **Astro build** (`site/dist` — 62 migrated pages, data
+trendscope serves the **Astro build** (`site/dist` — 64 migrated pages, data
 files included). The `pages deploy` workflow is ready: after enabling,
 uncomment the `push:` trigger in `.github/workflows/pages.yml` (lines 8-14)
 so future site/data pushes redeploy automatically, then run it once manually
