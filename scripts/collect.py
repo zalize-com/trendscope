@@ -158,6 +158,11 @@ _reddit_last = [0.0]
 _RSS2JSON_BUDGET = 140
 _rss2json_used = [0]
 _rss2json_lock = threading.Lock()
+# Keys eligible for rss2json rescue, populated in main() from zerowatch.json's
+# persistent_empty (3+ consecutive empty snapshots) — not latest.json's whole
+# empty set: tide victims self-heal when the rate-limit wave rotates, so
+# spending scarce proxy quota on them wastes ~200 calls/run.
+_RESCUE_KEYS = set()
 
 
 class _RedditThrottle(urllib.request.BaseHandler):
@@ -118906,8 +118911,12 @@ def _make_feed_fetcher(key, label, feed, home):
                     break
         _err_code = getattr(last_err, "code", None)
         if root is None and (_err_code in (403, 406, 429, 404) or _err_code is None):
+            # Only persistent-empty sources may spend proxy quota — first-round
+            # tide victims skip the proxy entirely and self-heal next wave.
+            if _RESCUE_KEYS and key not in _RESCUE_KEYS:
+                return []
             # rss2json's free tier is a scarce daily quota — burn it only
-            # under a per-run cap, and let main() run previously-empty sources
+            # under a per-run cap, and let main() run rescue-worthy sources
             # first so persistently-blocked lanes win the budget over
             # first-round tide victims (which self-heal next wave).
             with _rss2json_lock:
@@ -122150,21 +122159,28 @@ def main():
     # the run instead of the sum of all sources).
     fetchers.update(_extra_feed_fetchers())
 
-    # Prioritize sources that were empty in the previous snapshot so their
-    # rss2json fallback calls run before the per-run budget is spent on
-    # first-round tide victims (which typically self-heal next wave).
-    prev_empty = set()
+    # rss2json rescue candidates: zerowatch.json's persistent_empty (empty in
+    # 3+ consecutive snapshots) — tide victims self-heal when the wave rotates,
+    # so proxy quota goes only to sources that keep failing. Falls back to
+    # last snapshot's empty set when zerowatch hasn't run yet.
     try:
-        with open(os.path.join(DATA_DIR, "latest.json")) as f:
-            prev_empty = {k for k, v in json.load(f).get("items", {}).items()
-                          if not v}
+        with open(os.path.join(DATA_DIR, "zerowatch.json")) as f:
+            _RESCUE_KEYS.update(json.load(f).get("persistent_empty", []))
     except Exception:
         pass
-    if prev_empty:
+    if not _RESCUE_KEYS:
+        try:
+            with open(os.path.join(DATA_DIR, "latest.json")) as f:
+                _RESCUE_KEYS.update(
+                    k for k, v in json.load(f).get("items", {}).items()
+                    if not v)
+        except Exception:
+            pass
+    if _RESCUE_KEYS:
         fetchers = dict(
-            sorted(fetchers.items(), key=lambda kv: kv[0] not in prev_empty))
-        print(f"  {len(prev_empty)} previously-empty sources scheduled first "
-              f"for rss2json budget")
+            sorted(fetchers.items(), key=lambda kv: kv[0] not in _RESCUE_KEYS))
+        print(f"  {len(_RESCUE_KEYS)} rescue-candidate sources scheduled "
+              f"first for rss2json budget")
 
     sections, health = {}, {}
 

@@ -187,3 +187,10 @@ consecutive collects** — single-day zeros self-heal in-wave.
     Astro page too, and skip site/dist in the walk (a stale local dist sprays
     ~1000 false dead links since its root-absolute refs are rewritten by
     rebase.sh only at Pages build time).
+42. **Rescue candidates = persistent-empty, not last-round-empty.** Refining
+    entry 40: rss2json's free tier is a ~24h rolling window, and prev_empty
+    (~240 keys) is mostly tide victims that self-heal on the next direct
+    fetch — proxy calls for them are pure waste. Gate eligibility on
+    zerowatch.json's persistent_empty (3+ consecutive empties, ~70 keys):
+    a full order of magnitude less quota per run, spent only on sources
+    that demonstrably can't recover unaided.
