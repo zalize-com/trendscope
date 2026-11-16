@@ -142,3 +142,13 @@ cleared, or the catch must recreate them.
    循环），空源计数里 yt_ 全部归零时再上一轮有数据 = 波在摆，不要
    判死删源。判据：空源按 lane 前缀聚合，单 lane 全灭先看历史快照，
    有两轮连零再议对策（如代理兜底），一轮归零只观察。
+
+37. **全局限速比 403 墙更隐蔽——症状是"整 lane 间歇性全灭"**：r_*
+    lane（Reddit .rss，45+ 源）整批归零，单源 curl 却 200。根因：
+    Reddit 按 client IP 全局限速，与端点无关——collect 把 45 个
+    fetcher 背靠背打完，第一个吃掉配额其余全 429。修法：共享
+    urlopen opener 挂域名级 throttle（*.reddit.com ≥10s 间隔）——
+    一票覆盖该域全部 fetcher 和重试，比逐个改 fetcher 便宜。
+    判据：整 lane 失败 + 单源手动抓成功 + 错误码是 429 而非 404 =
+    速率限制，不是死源。验证口径：限速后一轮回收 ~2/3（窗口仍比
+    间隔长时剩 1/3，跨轮自愈）。
