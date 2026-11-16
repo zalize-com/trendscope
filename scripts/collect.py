@@ -118898,13 +118898,16 @@ def _make_feed_fetcher(key, label, feed, home):
                     time.sleep(2 * (attempt + 1))
                 else:
                     break
-        if root is None and getattr(last_err, "code", None) in (403, 429, 404):
+        _err_code = getattr(last_err, "code", None)
+        if root is None and (_err_code in (403, 429, 404) or _err_code is None):
             # Cloudflare-style 403 waves block the Actions egress IP for some
             # hosts (substack is the big one); YouTube's rotating rate-limit
             # wave presents as 404 (yt_ lane went 0/44 in one run while the
-            # same feeds returned items via rss2json). rss2json fetches
-            # server-side from its own egress, so try it once as a rescue
-            # lane. Dead sources just return empty here too — no side effect.
+            # same feeds returned items via rss2json); TCP-level blocks
+            # (DreamHost-segment blackhole, err.code=None) hit 135+ br_ feeds
+            # on Actions egress. rss2json fetches server-side from its own
+            # egress, so try it once as a rescue lane. Dead sources just
+            # return empty here too — no side effect.
             # yt_ literal fetchers also treat 404 as retryable, so adding it
             # here keeps parity with them.
             try:
