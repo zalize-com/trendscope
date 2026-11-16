@@ -386,6 +386,16 @@ Three honest observations:
    under 3 hours because everything we ship is client-side or a
    stdlib script. No infra decisions to agonize over.
 
+A fourth observation we only learned by measuring yield across three
+mining rounds: **corpus choice matters more than phrase choice**.
+Title-level "Ask HN: what tool do you wish existed" threads produced
+3 buildable clusters from ~200 posts. Comment-level sweeps on the same
+phrases produced zero — HN comments (241 scanned), Lobsters ask threads
+and dev.to discuss posts (~300 comments) contain praise, meta-debate and
+feature requests aimed at existing products, not "nobody built X" asks.
+Visible pain is already-taken pain: anything obvious enough to appear in
+comments is usually already a product category with paid competitors.
+
 Everything mentioned is open source (CC0 data, MIT code):
 github.com/zalize-com/trendscope — the mining log itself is at
 docs/mining-log.md if you want to audit our calls.
