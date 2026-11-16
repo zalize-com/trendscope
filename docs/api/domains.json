@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-16T08:08:05.163098+00:00",
+ "generated_at": "2026-11-16T08:34:47.333242+00:00",
  "latest_snapshot": "2026-11-16",
- "total": 9417,
+ "total": 9418,
  "domains": [
   {
    "hostname": "blog.google",
    "days_on_board": 5,
-   "items": 78,
+   "items": 81,
    "sources": [
     "googleblog",
     "hackernews",
@@ -76,77 +76,9 @@
    }
   },
   {
-   "hostname": "reddit.com",
-   "days_on_board": 3,
-   "items": 1194,
-   "sources": [
-    "br_homepage_piotr_migda",
-    "br_nelson_s_linkblog",
-    "hackernews",
-    "k8s",
-    "rangular",
-    "rartificial",
-    "raskprogramming",
-    "raws",
-    "rclojure",
-    "rcoding",
-    "rcompsci",
-    "rcpp",
-    "rdartlang",
-    "rdataengineering",
-    "rdatascience",
-    "rdevops",
-    "rdjango",
-    "rdocker",
-    "rdotnet",
-    "reddit",
-    "relixir",
-    "relm",
-    "rexperienceddevs",
-    "rfrontend",
-    "rgamedev",
-    "rgolang",
-    "rhaskell",
-    "rjava",
-    "rjavascript",
-    "rkotlin",
-    "rkubernetes",
-    "rlaravel",
-    "rlisp",
-    "rmongodb",
-    "rnetsec",
-    "rnextjs",
-    "rnode",
-    "ropensource",
-    "rphp",
-    "rpostgresql",
-    "rprogramming",
-    "rpython",
-    "rreactjs",
-    "rredis",
-    "rrust",
-    "rscala",
-    "rselfhosted",
-    "rsveltejs",
-    "rswift",
-    "rsysadmin",
-    "rtechnology",
-    "rtypescript",
-    "rwebdesign",
-    "rwebdev"
-   ],
-   "top_hit": {
-    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
-    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
-    "score": 382,
-    "metric": "points",
-    "date": "2026-11-13"
-   }
-  },
-  {
    "hostname": "youtube.com",
    "days_on_board": 3,
-   "items": 1143,
+   "items": 1324,
    "sources": [
     "br_blog_ankush_menat",
     "br_dr_j_engineering_leadership_software_dev",
@@ -224,6 +156,74 @@
    }
   },
   {
+   "hostname": "reddit.com",
+   "days_on_board": 3,
+   "items": 1248,
+   "sources": [
+    "br_homepage_piotr_migda",
+    "br_nelson_s_linkblog",
+    "hackernews",
+    "k8s",
+    "rangular",
+    "rartificial",
+    "raskprogramming",
+    "raws",
+    "rclojure",
+    "rcoding",
+    "rcompsci",
+    "rcpp",
+    "rdartlang",
+    "rdataengineering",
+    "rdatascience",
+    "rdevops",
+    "rdjango",
+    "rdocker",
+    "rdotnet",
+    "reddit",
+    "relixir",
+    "relm",
+    "rexperienceddevs",
+    "rfrontend",
+    "rgamedev",
+    "rgolang",
+    "rhaskell",
+    "rjava",
+    "rjavascript",
+    "rkotlin",
+    "rkubernetes",
+    "rlaravel",
+    "rlisp",
+    "rmongodb",
+    "rnetsec",
+    "rnextjs",
+    "rnode",
+    "ropensource",
+    "rphp",
+    "rpostgresql",
+    "rprogramming",
+    "rpython",
+    "rreactjs",
+    "rredis",
+    "rrust",
+    "rscala",
+    "rselfhosted",
+    "rsveltejs",
+    "rswift",
+    "rsysadmin",
+    "rtechnology",
+    "rtypescript",
+    "rwebdesign",
+    "rwebdev"
+   ],
+   "top_hit": {
+    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+    "score": 382,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
    "hostname": "npmjs.com",
    "days_on_board": 3,
    "items": 72,
@@ -276,7 +276,7 @@
   {
    "hostname": "nytimes.com",
    "days_on_board": 3,
-   "items": 53,
+   "items": 55,
    "sources": [
     "bostocks",
     "daringfireball",
@@ -820,7 +820,7 @@
   {
    "hostname": "medium.com",
    "days_on_board": 2,
-   "items": 178,
+   "items": 179,
    "sources": [
     "airbnb",
     "betterprog",
@@ -841,6 +841,7 @@
     "sec_tal_be_ery",
     "tb_akanksha_raghav",
     "tb_bleyl_dev",
+    "tb_dhanush_nehru",
     "tb_lakin_mohapatra",
     "tb_pasindu_kavinda",
     "zsmb"
@@ -848,6 +849,21 @@
    "top_hit": {
     "title": "A Better Way to Code",
     "url": "https://medium.com/@mbostock/a-better-way-to-code-2b1d2876a3a0",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "lore.kernel.org",
+   "days_on_board": 2,
+   "items": 150,
+   "sources": [
+    "lorekernel"
+   ],
+   "top_hit": {
+    "title": "Replication probe 2026-11-15T22:10Z",
+    "url": "https://lore.kernel.org/all/179478060190.2191695.904432943329958391.replication-probe@kernel.org/",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
@@ -873,24 +889,9 @@
    }
   },
   {
-   "hostname": "lore.kernel.org",
-   "days_on_board": 2,
-   "items": 135,
-   "sources": [
-    "lorekernel"
-   ],
-   "top_hit": {
-    "title": "Replication probe 2026-11-15T22:10Z",
-    "url": "https://lore.kernel.org/all/179478060190.2191695.904432943329958391.replication-probe@kernel.org/",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "x.com",
    "days_on_board": 2,
-   "items": 129,
+   "items": 131,
    "sources": [
     "api",
     "br_reid_burke_reid_software_engineer",
@@ -904,6 +905,22 @@
     "title": "持械入宋第11季更新了 快来看看详细的地图解析 这条昨晚在抖音发，不到一天已经3000赞 陆陆续续改了12个版本成型",
     "url": "https://x.com/PMbackttfuture/status/2121941825909072294",
     "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "producthunt.com",
+   "days_on_board": 2,
+   "items": 93,
+   "sources": [
+    "br_nelson_s_linkblog",
+    "producthunt"
+   ],
+   "top_hit": {
+    "title": "MAP & GO!",
+    "url": "https://www.producthunt.com/products/expert-chase-deleted-1107920",
+    "score": 20,
     "metric": "feed rank",
     "date": "2026-11-15"
    }
@@ -946,17 +963,16 @@
    }
   },
   {
-   "hostname": "producthunt.com",
+   "hostname": "investing.com",
    "days_on_board": 2,
-   "items": 73,
+   "items": 74,
    "sources": [
-    "br_nelson_s_linkblog",
-    "producthunt"
+    "investing"
    ],
    "top_hit": {
-    "title": "MAP & GO!",
-    "url": "https://www.producthunt.com/products/expert-chase-deleted-1107920",
-    "score": 20,
+    "title": "Evergy director Jonathan Rolph buys $133,610 in common stock",
+    "url": "https://www.investing.com/news/insider-trading-news/evergy-director-jonathan-rolph-buys-133610-in-common-stock-93CH-5028131",
+    "score": 10,
     "metric": "feed rank",
     "date": "2026-11-15"
    }
@@ -964,29 +980,13 @@
   {
    "hostname": "news.google.com",
    "days_on_board": 2,
-   "items": 71,
+   "items": 74,
    "sources": [
     "w4news"
    ],
    "top_hit": {
     "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his silence on breakdown - AP News",
     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUjU5a3ljR1FocjlKQnRVS21kY1kwR3R4bEZvdUc4VExhbnc2NjZrU0ZfRS1iMkoxcGthaUV4a19MTlNsR2JFMlFqZDN0Y1JiejlNWUFUWjAyWTl3RFNXX0ZvbkNmX0l1elhVZndMd3pQSlQtbk1RYzBMT2tmOTJuaTlwUm5FQmdRODFJQTk4OWV5MlpScVhhc1BEWWotS1E?oc=5",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "theregister.com",
-   "days_on_board": 2,
-   "items": 66,
-   "sources": [
-    "sec_the_register",
-    "theregister"
-   ],
-   "top_hit": {
-    "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
-    "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
