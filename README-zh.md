@@ -5,7 +5,7 @@
 
 [English README →](README.md)
 
-**在线仪表盘:** `https://zalize-com.github.io/trendscope/`
+**在线仪表盘:** `https://trendscope--plov6nur.preview.devinapps.com/`
 **最新数据:** [`data/latest.json`](data/latest.json)
 
 ## 这是什么
@@ -43,7 +43,7 @@ iframe 22 种模式（`embed.html?mode=top|new|risers|watch&kw=…` 等），
 或免 iframe 的 Web Component：
 
 ```html
-<script src="https://zalize-com.github.io/trendscope/docs/api/widget.js" defer></script>
+<script src="https://trendscope--plov6nur.preview.devinapps.com/docs/api/widget.js" defer></script>
 <trend-scope mode="top" n="5"></trend-scope>
 ```
 

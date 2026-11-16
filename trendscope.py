@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """trendscope — today's developer board, in your terminal.
 
-    curl -sL https://zalize-com.github.io/trendscope/trendscope.py | python3 -
+    curl -sL https://trendscope--plov6nur.preview.devinapps.com/trendscope.py | python3 -
     python3 trendscope.py --source hackernews -n 5
     python3 trendscope.py --movers     # what entered/left the board today
     python3 trendscope.py --week       # top of the last 7 days
@@ -19,7 +19,7 @@ import sys
 import urllib.request
 
 # TRENDSCOPE_BASE lets forks/mirrors serve their own copy of the dataset.
-BASE = os.environ.get("TRENDSCOPE_BASE", "https://zalize-com.github.io/trendscope").rstrip("/")
+BASE = os.environ.get("TRENDSCOPE_BASE", "https://trendscope--plov6nur.preview.devinapps.com").rstrip("/")
 UA = "trendscope-cli/1.0"
 
 

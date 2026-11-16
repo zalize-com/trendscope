@@ -11,7 +11,7 @@
 ![license](https://img.shields.io/badge/data-CC0-green)
 ![top story](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzalize-com%2Ftrendscope%2Fmain%2Fdocs%2Fapi%2Fbadge-top.json)
 
-**Live dashboard:** `https://zalize-com.github.io/trendscope/` *(enable Pages: Settings → Pages → Deploy from branch → `main` / root)*
+**Live dashboard:** `https://trendscope--plov6nur.preview.devinapps.com/` *(GitHub Pages mirror once enabled: Settings → Pages → Deploy from branch → `main` / root)*
 **Latest data:** [`data/latest.json`](data/latest.json)
 **Fully reproducible:** every snapshot is produced by `python3 scripts/collect.py` — stdlib only, no dependencies, no keys for most sources. Trust the data because you can rebuild it.
 
@@ -344,12 +344,12 @@ compare within a source, not across.
   downloads / live GitHub stars, saved in the browser, shareable).
 
 ```html
-<iframe src="https://zalize-com.github.io/trendscope/embed.html" width="400" height="520" frameborder="0"></iframe>
+<iframe src="https://trendscope--plov6nur.preview.devinapps.com/embed.html" width="400" height="520" frameborder="0"></iframe>
 
 Or the lighter web component (no iframe):
 
 ```html
-<script src="https://zalize-com.github.io/trendscope/docs/api/widget.js" defer></script>
+<script src="https://trendscope--plov6nur.preview.devinapps.com/docs/api/widget.js" defer></script>
 <trend-scope mode="top" n="5"></trend-scope>
 ```
 ```
@@ -383,7 +383,7 @@ taxonomy as `topics.html` — niche blogs can embed just their beat),
 ## Terminal
 
 ```bash
-curl -sL https://zalize-com.github.io/trendscope/trendscope.py | python3 -
+curl -sL https://trendscope--plov6nur.preview.devinapps.com/trendscope.py | python3 -
 python3 trendscope.py --movers   # what entered/left today
 python3 trendscope.py --week     # top of the last 7 days (heat-normalized)
 ```
@@ -451,7 +451,7 @@ redistribute, please credit **trendscope** with a link back to
 <https://github.com/zalize-com/trendscope> or the dashboard:
 
 ```text
-trendscope developer attention dataset, https://zalize-com.github.io/trendscope/
+trendscope developer attention dataset, https://trendscope--plov6nur.preview.devinapps.com/
 ```
 
 ## Related

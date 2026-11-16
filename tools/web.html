@@ -6,7 +6,7 @@
 <title>trendscope web tools — QR generator, social card preview, robots.txt builder</title>
 <meta name="description" content="Free in-browser web tools: QR code generator, Open Graph/Twitter card preview + meta tag generator, robots.txt builder, and a typosquat checker. No upload, no signup, no tracking.">
 <meta property="og:title" content="trendscope web tools">
-<meta property="og:image" content="https://zalize-com.github.io/trendscope/og.png">
+<meta property="og:image" content="https://trendscope--plov6nur.preview.devinapps.com/og.png">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
 <style>
   :root { --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
@@ -98,8 +98,8 @@
     <p class="hint">Fill in, see how the link card renders, copy the meta block.</p>
     <label>title</label><input type="text" id="og-t" value="trendscope — developer attention dataset">
     <label>description</label><input type="text" id="og-d" value="Daily cross-source snapshot of what developers read and build. Open data, CC0.">
-    <label>canonical URL</label><input type="text" id="og-u" value="https://zalize-com.github.io/trendscope/">
-    <label>image URL</label><input type="text" id="og-i" value="https://zalize-com.github.io/trendscope/og.png">
+    <label>canonical URL</label><input type="text" id="og-u" value="https://trendscope--plov6nur.preview.devinapps.com/">
+    <label>image URL</label><input type="text" id="og-i" value="https://trendscope--plov6nur.preview.devinapps.com/og.png">
     <div class="card" id="og-card">
       <div class="img" id="og-card-img">image preview</div>
       <div class="txt"><div class="dom" id="og-card-dom"></div><div class="ttl" id="og-card-t"></div><div class="dsc" id="og-card-d"></div></div>
@@ -363,7 +363,7 @@ function afGo() {
   const svg = afSvg(label, style);
   document.getElementById("af-view").innerHTML = svg;
   document.getElementById("af-out").textContent =
-    `<a href="https://zalize-com.github.io/trendscope/about.html" title="declared human-made">\n  ${svg.replace(/\n/g, "\n  ")}\n</a>`;
+    `<a href="https://trendscope--plov6nur.preview.devinapps.com/about.html" title="declared human-made">\n  ${svg.replace(/\n/g, "\n  ")}\n</a>`;
 }
 document.getElementById("af-label").addEventListener("change", afGo);
 document.getElementById("af-style").addEventListener("change", afGo);
@@ -518,8 +518,8 @@ document.getElementById("ma-go").addEventListener("click", () => {
       render();
     } catch { $("sv-err").textContent = "fetch failed (CORS?) — paste the page <head> manually"; }
   };
-  $("sv-in").value = '<head><title>trendscope — daily trend radar for builders</title><meta name="description" content="One page that watches HN, GitHub, Product Hunt, dev.to, Lobsters, npm, PyPI and 8 more — and keeps a permanent, queryable archive."><meta property="og:title" content="trendscope"><meta property="og:image" content="https://zalize-com.github.io/trendscope/og.png"></head>';
-  $("sv-url").value = "https://zalize-com.github.io/trendscope/";
+  $("sv-in").value = '<head><title>trendscope — daily trend radar for builders</title><meta name="description" content="One page that watches HN, GitHub, Product Hunt, dev.to, Lobsters, npm, PyPI and 8 more — and keeps a permanent, queryable archive."><meta property="og:title" content="trendscope"><meta property="og:image" content="https://trendscope--plov6nur.preview.devinapps.com/og.png"></head>';
+  $("sv-url").value = "https://trendscope--plov6nur.preview.devinapps.com/";
   render();
 })();
 
@@ -1012,7 +1012,7 @@ aibots();
   }
   $("smg-in").addEventListener("input", go);
   $("smg-copy").onclick = () => navigator.clipboard?.writeText($("smg-out").textContent).then(() => { $("smg-copy").textContent = "copied"; setTimeout(() => $("smg-copy").textContent = "copy xml", 1200); });
-  $("smg-in").value = "https://zalize-com.github.io/trendscope/\nhttps://zalize-com.github.io/trendscope/index.html, 2026-11-15, 0.8\nnot-a-url";
+  $("smg-in").value = "https://trendscope--plov6nur.preview.devinapps.com/\nhttps://trendscope--plov6nur.preview.devinapps.com/index.html, 2026-11-15, 0.8\nnot-a-url";
   go();
 })();
 
@@ -1037,7 +1037,7 @@ aibots();
   for (const id of ["lt-name","lt-desc","lt-links"]) $(id).addEventListener("input", go);
   $("lt-copy").onclick = () => navigator.clipboard?.writeText($("lt-out").textContent).then(() => { $("lt-copy").textContent = "copied"; setTimeout(() => $("lt-copy").textContent = "copy llms.txt", 1200); });
   $("lt-name").value = "trendscope"; $("lt-desc").value = "Daily cross-source trend snapshots for builders.";
-  $("lt-links").value = "API | https://zalize-com.github.io/trendscope/api.html | 16 JSON endpoints\nllms.txt | https://zalize-com.github.io/trendscope/llms.txt";
+  $("lt-links").value = "API | https://trendscope--plov6nur.preview.devinapps.com/api.html | 16 JSON endpoints\nllms.txt | https://trendscope--plov6nur.preview.devinapps.com/llms.txt";
   go();
 })();
 
