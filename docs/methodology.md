@@ -161,3 +161,10 @@ ASN-blocked (substack Cloudflare wave, YouTube 404 wave, Reddit per-IP
 IP segment, compare the last Actions snapshot, and probe from a second
 egress. For alerting, only flag sources that stay zero across **two
 consecutive collects** — single-day zeros self-heal in-wave.
+
+38. **改共享数据 schema 必须扫全部消费方**：feeds_*.json 行从三元
+    [label,feed,home] 扩到含 "dormant" flag 的四元后，解包写法
+    `for k,(label,feed,home) in ...` 的三处消费方里两处炸了
+    （gen_opml/gen_sources_md）——factory 改了但生成器没扫。修法：
+    统一 `row[:3]` 切片；schema 变更时 `grep -rn "feed, home" scripts/`
+    过一遍所有消费者再提交。
