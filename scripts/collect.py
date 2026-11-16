@@ -93611,7 +93611,7 @@ def fetch_pypi_downloads():
 
 def classify_topics(items):
     """Keyword-based topic counts over all titles/descriptions."""
-    topics = {k: {"count": 0, "total_score": 0, "examples": []} for k in TOPIC_RULES}
+    topics = {k: {"count": 0, "total_score": 0, "_cands": []} for k in TOPIC_RULES}
     for it in items:
         text = f"{it.get('title', '')} {' '.join(it.get('tags', []))} {it.get('description', '')}".lower()
         for topic, keywords in TOPIC_RULES.items():
@@ -93619,8 +93619,30 @@ def classify_topics(items):
                 t = topics[topic]
                 t["count"] += 1
                 t["total_score"] += it.get("score", 0)
-                if len(t["examples"]) < 3:
-                    t["examples"].append({"title": it["title"], "url": it["url"], "source": it["source"]})
+                t["_cands"].append(it)
+    # Examples: hottest items with lane diversity — one per lane prefix so a
+    # hot lane (security blogs) cannot fill all three slots. Scores normalize
+    # per source (heat = score / source-max) since raw units are incomparable.
+    src_max = {}
+    for it in items:
+        s = it["source"]
+        if it.get("score", 0) > src_max.get(s, 0):
+            src_max[s] = it["score"]
+    for t in topics.values():
+        cands = sorted(t["_cands"],
+                       key=lambda x: x.get("score", 0) / (src_max.get(x["source"], 0) or 1),
+                       reverse=True)
+        seen_lanes, seen_srcs, ex = set(), set(), []
+        for it in cands:
+            lane = it["source"].split("_", 1)[0] if "_" in it["source"] else it["source"]
+            if lane in seen_lanes or it["source"] in seen_srcs:
+                continue
+            seen_lanes.add(lane); seen_srcs.add(it["source"])
+            ex.append({"title": it["title"], "url": it["url"], "source": it["source"]})
+            if len(ex) >= 3:
+                break
+        t["examples"] = ex
+        del t["_cands"]
     # Rank by item count — raw scores mix incomparable units (points vs downloads).
     return [{"topic": k, **v} for k, v in sorted(
         topics.items(), key=lambda kv: (-kv[1]["count"], -kv[1]["total_score"]))
