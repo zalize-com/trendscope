@@ -5,6 +5,16 @@ have). Ordered by impact-per-click. Estimated total time: **~10 minutes**.
 
 ## 1. Publish both sites (highest impact — both currently code-only)
 
+### Path A — Cloudflare Pages (preferred once CF_API_KEY is fixed)
+
+Provide a working Cloudflare credential as org secret `CF_API_KEY`
+(either an **API Token** with Account→Pages→Edit, or the **Global API Key**
+paired with `CF_EMAIL`) and we run `bash scripts/deploy_cf.sh` →
+`trendscope.pages.dev` goes live immediately. The >25 MiB data files are
+served via `_redirects` → GitHub raw. No GitHub-side clicks needed at all.
+
+### Path B — GitHub Pages
+
 | Repo | Steps |
 |---|---|
 | trendscope | [Settings → Pages](https://github.com/zalize-com/trendscope/settings/pages) → Source: **GitHub Actions** → Save |
