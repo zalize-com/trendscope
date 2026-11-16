@@ -463,7 +463,7 @@ function render(items, tab) {
         <span class="rank">${i + 1}</span>
         <span>
           <a href="${it.url}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a>
-          <span class="meta"><span class="src">${it.source}</span>${(it._also||[]).map(s => `<span class="src">+${s}</span>`).join("")}${streak}${comments}${author}${doml}${tags}${sparkline(it.url)}<a class="delta" href="item.html?q=${encodeURIComponent(it.title)}" title="day-by-day trajectory">⤳</a></span>
+          <span class="meta"><span class="src">${it.source}</span>${(() => { const al = it._also || []; const shown = al.slice(0, 2).map(s => `<span class="src">+${s}</span>`).join(""); return shown + (al.length > 2 ? `<span class="src" title="also on: ${escapeHtml(al.slice(2).join(", "))}">+${al.length - 2} more</span>` : ""); })()}${streak}${comments}${author}${doml}${tags}${sparkline(it.url)}<a class="delta" href="item.html?q=${encodeURIComponent(it.title)}" title="day-by-day trajectory">⤳</a></span>
         </span>
         <span class="score"><b>${fmt(it.score)}</b> <span class="muted" style="font-size:11px">${it.metric}</span>${delta}</span>
       </div>`);
