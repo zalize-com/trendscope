@@ -31,7 +31,7 @@ class LinkParser(html.parser.HTMLParser):
 
 pages = []
 for dirpath, _dirs, files in os.walk(ROOT):
-    if ".git" in dirpath or "node_modules" in dirpath:
+    if ".git" in dirpath or "node_modules" in dirpath or os.path.sep + "dist" in dirpath:
         continue
     for f in files:
         if f.endswith(".html"):
@@ -164,8 +164,12 @@ for page in sorted(pages):
 for loc in re.findall(r"<loc>https?://[^/<]+/([^<]+)</loc>", sitemap):
     base = loc.split("?")[0].split("#")[0]
     target = os.path.join(ROOT, base)
-    check(os.path.exists(target), f"sitemap.xml: dead entry → {loc}")
-    if not os.path.exists(target):
+    # Astro-only pages exist under site/src/pages (as .astro), not as root html
+    astro = os.path.join(ROOT, "site", "src", "pages",
+                         base[:-5] + ".astro" if base.endswith(".html") else base)
+    exists = os.path.exists(target) or os.path.exists(astro)
+    check(exists, f"sitemap.xml: dead entry → {loc}")
+    if not exists or not os.path.exists(target):
         continue
     m = re.search(r"[?&]t=([A-Za-z0-9_-]+)", loc)
     if m and base.startswith("tools/"):
