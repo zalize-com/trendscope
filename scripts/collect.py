@@ -93644,7 +93644,423 @@ def main():
     now = datetime.now(timezone.utc)
     today = now.strftime("%Y-%m-%d")
 
+def fetch_tldr_tech(limit=15):
+    """TLDR Tech daily newsletter RSS — curated dev/industry digest, position-scored."""
+    print("Fetching TLDR Tech feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://tldr.tech/api/rss/tech",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] tldr_tech attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip() or "https://tldr.tech/tech"
+        out.append(item(
+            "tldr_tech", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_tldr_ai(limit=15):
+    """TLDR AI daily newsletter RSS — curated dev/industry digest, position-scored."""
+    print("Fetching TLDR AI feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://tldr.tech/api/rss/ai",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] tldr_ai attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip() or "https://tldr.tech/ai"
+        out.append(item(
+            "tldr_ai", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_tldr_devops(limit=15):
+    """TLDR DevOps daily newsletter RSS — curated dev/industry digest, position-scored."""
+    print("Fetching TLDR DevOps feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://tldr.tech/api/rss/devops",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] tldr_devops attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip() or "https://tldr.tech/devops"
+        out.append(item(
+            "tldr_devops", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_tldr_infosec(limit=15):
+    """TLDR Infosec daily newsletter RSS — curated dev/industry digest, position-scored."""
+    print("Fetching TLDR Infosec feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://tldr.tech/api/rss/infosec",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] tldr_infosec attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip() or "https://tldr.tech/infosec"
+        out.append(item(
+            "tldr_infosec", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_tldr_data(limit=15):
+    """TLDR Data daily newsletter RSS — curated dev/industry digest, position-scored."""
+    print("Fetching TLDR Data feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://tldr.tech/api/rss/data",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] tldr_data attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip() or "https://tldr.tech/data"
+        out.append(item(
+            "tldr_data", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_tldr_design(limit=15):
+    """TLDR Design daily newsletter RSS — curated dev/industry digest, position-scored."""
+    print("Fetching TLDR Design feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://tldr.tech/api/rss/design",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] tldr_design attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip() or "https://tldr.tech/design"
+        out.append(item(
+            "tldr_design", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_tldr_product(limit=15):
+    """TLDR Product daily newsletter RSS — curated dev/industry digest, position-scored."""
+    print("Fetching TLDR Product feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://tldr.tech/api/rss/product",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] tldr_product attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip() or "https://tldr.tech/product"
+        out.append(item(
+            "tldr_product", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_tldr_founders(limit=15):
+    """TLDR Founders daily newsletter RSS — curated dev/industry digest, position-scored."""
+    print("Fetching TLDR Founders feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://tldr.tech/api/rss/founders",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] tldr_founders attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip() or "https://tldr.tech/founders"
+        out.append(item(
+            "tldr_founders", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_tldr_crypto(limit=15):
+    """TLDR Crypto daily newsletter RSS — curated dev/industry digest, position-scored."""
+    print("Fetching TLDR Crypto feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://tldr.tech/api/rss/crypto",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] tldr_crypto attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip() or "https://tldr.tech/crypto"
+        out.append(item(
+            "tldr_crypto", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_tldr_marketing(limit=15):
+    """TLDR Marketing daily newsletter RSS — curated dev/industry digest, position-scored."""
+    print("Fetching TLDR Marketing feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://tldr.tech/api/rss/marketing",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] tldr_marketing attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip() or "https://tldr.tech/marketing"
+        out.append(item(
+            "tldr_marketing", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_tldr_dev(limit=15):
+    """TLDR Dev daily newsletter RSS — curated dev/industry digest, position-scored."""
+    print("Fetching TLDR Dev feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://tldr.tech/api/rss/dev",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] tldr_dev attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip() or "https://tldr.tech/dev"
+        out.append(item(
+            "tldr_dev", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_tldr_fintech(limit=15):
+    """TLDR Fintech daily newsletter RSS — curated dev/industry digest, position-scored."""
+    print("Fetching TLDR Fintech feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://tldr.tech/api/rss/fintech",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] tldr_fintech attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip() or "https://tldr.tech/fintech"
+        out.append(item(
+            "tldr_fintech", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_tldr_hardware(limit=15):
+    """TLDR Hardware daily newsletter RSS — curated dev/industry digest, position-scored."""
+    print("Fetching TLDR Hardware feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://tldr.tech/api/rss/hardware",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] tldr_hardware attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item")[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip() or "https://tldr.tech/hardware"
+        out.append(item(
+            "tldr_hardware", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
     fetchers = {
+        "tldr_tech": fetch_tldr_tech,
+        "tldr_ai": fetch_tldr_ai,
+        "tldr_devops": fetch_tldr_devops,
+        "tldr_infosec": fetch_tldr_infosec,
+        "tldr_data": fetch_tldr_data,
+        "tldr_design": fetch_tldr_design,
+        "tldr_product": fetch_tldr_product,
+        "tldr_founders": fetch_tldr_founders,
+        "tldr_crypto": fetch_tldr_crypto,
+        "tldr_marketing": fetch_tldr_marketing,
+        "tldr_dev": fetch_tldr_dev,
+        "tldr_fintech": fetch_tldr_fintech,
+        "tldr_hardware": fetch_tldr_hardware,
         "hackernews": fetch_hackernews,
         "show_hn": fetch_show_hn,
         "ask_hn": fetch_ask_hn,
