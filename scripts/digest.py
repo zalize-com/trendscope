@@ -70,7 +70,10 @@ def main():
     out.append("")
 
     out.append("## Top per source\n")
-    for src, items in sorted(by_source.items()):
+    # at ~9k sources a full per-source dump is unreadable — keep the 40
+    # busiest sources (by items seen in the window)
+    busy = sorted(by_source.items(), key=lambda kv: -len(kv[1]))[:40]
+    for src, items in busy:
         latest_date = max(i["date"] for i in items)
         top = sorted((i for i in items if i["date"] == latest_date),
                      key=lambda x: -int(x["score"]))[:5]
@@ -78,6 +81,9 @@ def main():
         for i in top:
             out.append(f"- {int(i['score']):,} {i['metric']} — [{i['title']}]({i['url']})")
         out.append("")
+    if len(by_source) > len(busy):
+        out.append(f"_({len(by_source) - len(busy)} quieter sources omitted — "
+                   f"full coverage in `data/daily/` snapshots)_\n")
 
     out.append("## Hot tags\n")
     out.append(" · ".join(f"`{t}` ({c})" for t, c in tags.most_common(20)))
