@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-16T09:04:01.341150+00:00",
+ "generated_at": "2026-11-16T10:13:03.348708+00:00",
  "latest_snapshot": "2026-11-16",
- "total": 9419,
+ "total": 9422,
  "domains": [
   {
    "hostname": "blog.google",
@@ -24,7 +24,7 @@
   {
    "hostname": "theguardian.com",
    "days_on_board": 4,
-   "items": 106,
+   "items": 107,
    "sources": [
     "eb_guardian",
     "guardianco",
@@ -76,9 +76,77 @@
    }
   },
   {
+   "hostname": "reddit.com",
+   "days_on_board": 3,
+   "items": 1393,
+   "sources": [
+    "br_homepage_piotr_migda",
+    "br_nelson_s_linkblog",
+    "hackernews",
+    "k8s",
+    "rangular",
+    "rartificial",
+    "raskprogramming",
+    "raws",
+    "rclojure",
+    "rcoding",
+    "rcompsci",
+    "rcpp",
+    "rdartlang",
+    "rdataengineering",
+    "rdatascience",
+    "rdevops",
+    "rdjango",
+    "rdocker",
+    "rdotnet",
+    "reddit",
+    "relixir",
+    "relm",
+    "rexperienceddevs",
+    "rfrontend",
+    "rgamedev",
+    "rgolang",
+    "rhaskell",
+    "rjava",
+    "rjavascript",
+    "rkotlin",
+    "rkubernetes",
+    "rlaravel",
+    "rlisp",
+    "rmongodb",
+    "rnetsec",
+    "rnextjs",
+    "rnode",
+    "ropensource",
+    "rphp",
+    "rpostgresql",
+    "rprogramming",
+    "rpython",
+    "rreactjs",
+    "rredis",
+    "rrust",
+    "rscala",
+    "rselfhosted",
+    "rsveltejs",
+    "rswift",
+    "rsysadmin",
+    "rtechnology",
+    "rtypescript",
+    "rwebdesign",
+    "rwebdev"
+   ],
+   "top_hit": {
+    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+    "score": 382,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
    "hostname": "youtube.com",
    "days_on_board": 3,
-   "items": 1324,
+   "items": 1325,
    "sources": [
     "br_blog_ankush_menat",
     "br_dr_j_engineering_leadership_software_dev",
@@ -156,74 +224,6 @@
    }
   },
   {
-   "hostname": "reddit.com",
-   "days_on_board": 3,
-   "items": 1318,
-   "sources": [
-    "br_homepage_piotr_migda",
-    "br_nelson_s_linkblog",
-    "hackernews",
-    "k8s",
-    "rangular",
-    "rartificial",
-    "raskprogramming",
-    "raws",
-    "rclojure",
-    "rcoding",
-    "rcompsci",
-    "rcpp",
-    "rdartlang",
-    "rdataengineering",
-    "rdatascience",
-    "rdevops",
-    "rdjango",
-    "rdocker",
-    "rdotnet",
-    "reddit",
-    "relixir",
-    "relm",
-    "rexperienceddevs",
-    "rfrontend",
-    "rgamedev",
-    "rgolang",
-    "rhaskell",
-    "rjava",
-    "rjavascript",
-    "rkotlin",
-    "rkubernetes",
-    "rlaravel",
-    "rlisp",
-    "rmongodb",
-    "rnetsec",
-    "rnextjs",
-    "rnode",
-    "ropensource",
-    "rphp",
-    "rpostgresql",
-    "rprogramming",
-    "rpython",
-    "rreactjs",
-    "rredis",
-    "rrust",
-    "rscala",
-    "rselfhosted",
-    "rsveltejs",
-    "rswift",
-    "rsysadmin",
-    "rtechnology",
-    "rtypescript",
-    "rwebdesign",
-    "rwebdev"
-   ],
-   "top_hit": {
-    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
-    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
-    "score": 382,
-    "metric": "points",
-    "date": "2026-11-13"
-   }
-  },
-  {
    "hostname": "npmjs.com",
    "days_on_board": 3,
    "items": 72,
@@ -276,7 +276,7 @@
   {
    "hostname": "nytimes.com",
    "days_on_board": 3,
-   "items": 55,
+   "items": 56,
    "sources": [
     "bostocks",
     "daringfireball",
@@ -413,6 +413,22 @@
    }
   },
   {
+   "hostname": "lwn.net",
+   "days_on_board": 3,
+   "items": 32,
+   "sources": [
+    "hackernews",
+    "lwn"
+   ],
+   "top_hit": {
+    "title": "Synaptics patent claims stop work on DisplayLink drivers",
+    "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+    "score": 491,
+    "metric": "points",
+    "date": "2026-11-10"
+   }
+  },
+  {
    "hostname": "projectzero.google",
    "days_on_board": 3,
    "items": 32,
@@ -457,22 +473,6 @@
     "title": "AlphaProof Code",
     "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
     "score": 678,
-    "metric": "points",
-    "date": "2026-11-10"
-   }
-  },
-  {
-   "hostname": "lwn.net",
-   "days_on_board": 3,
-   "items": 31,
-   "sources": [
-    "hackernews",
-    "lwn"
-   ],
-   "top_hit": {
-    "title": "Synaptics patent claims stop work on DisplayLink drivers",
-    "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
-    "score": 491,
     "metric": "points",
     "date": "2026-11-10"
    }
@@ -818,6 +818,21 @@
    }
   },
   {
+   "hostname": "lore.kernel.org",
+   "days_on_board": 2,
+   "items": 180,
+   "sources": [
+    "lorekernel"
+   ],
+   "top_hit": {
+    "title": "Replication probe 2026-11-15T22:10Z",
+    "url": "https://lore.kernel.org/all/179478060190.2191695.904432943329958391.replication-probe@kernel.org/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "medium.com",
    "days_on_board": 2,
    "items": 179,
@@ -849,21 +864,6 @@
    "top_hit": {
     "title": "A Better Way to Code",
     "url": "https://medium.com/@mbostock/a-better-way-to-code-2b1d2876a3a0",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "lore.kernel.org",
-   "days_on_board": 2,
-   "items": 165,
-   "sources": [
-    "lorekernel"
-   ],
-   "top_hit": {
-    "title": "Replication probe 2026-11-15T22:10Z",
-    "url": "https://lore.kernel.org/all/179478060190.2191695.904432943329958391.replication-probe@kernel.org/",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
@@ -912,7 +912,7 @@
   {
    "hostname": "producthunt.com",
    "days_on_board": 2,
-   "items": 105,
+   "items": 108,
    "sources": [
     "br_nelson_s_linkblog",
     "producthunt"
@@ -928,7 +928,7 @@
   {
    "hostname": "investing.com",
    "days_on_board": 2,
-   "items": 84,
+   "items": 94,
    "sources": [
     "investing"
    ],
@@ -963,7 +963,7 @@
   {
    "hostname": "news.google.com",
    "days_on_board": 2,
-   "items": 78,
+   "items": 80,
    "sources": [
     "w4news"
    ],
