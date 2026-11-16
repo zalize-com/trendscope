@@ -121,3 +121,9 @@ cleared, or the catch must recreate them.
    `merge-base --is-ancestor HEAD origin/main` 验证 push 真落地否则
    `exit 1`。任何"重试+静默吞错"的 CI 步骤都该有落地断言。
 
+34. **固化工具 ≠ 接线完成**：gen_opml.py（认 feeds_*.json 数据驱动
+   lane）落地后 workflow 的 OPML 步仍接旧 opml.py（只 regex collect.py
+   字面 fetcher → 3,116 < 9,202 outlines），真落库会反向回退产物。
+   新版生成器/脚本入库时把 CI 接线一并换掉并跑一轮对照（产物行数
+   前后对比），否则"工具在、链路旧"是长期暗退化。
+
