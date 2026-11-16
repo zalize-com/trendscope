@@ -611,6 +611,14 @@
       "days_tracked": 3
     },
     {
+      "title": "Nvidia was in trouble before the Jensen Huang mess",
+      "source": "hackernews",
+      "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
+      "metric": "points",
+      "gain": 127,
+      "days_tracked": 3
+    },
+    {
       "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
       "source": "hackernews",
       "url": "https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/",
@@ -681,6 +689,14 @@
       "metric": "stars",
       "gain": 59,
       "days_tracked": 3
+    },
+    {
+      "title": "Winudf – DVD / BluRay driver for DOS, Windows 1.x – 3x / 95 / 98 / ME",
+      "source": "hackernews",
+      "url": "https://github.com/ages2001/WINUDF",
+      "metric": "points",
+      "gain": 58,
+      "days_tracked": 2
     },
     {
       "title": "25 of my favourite modern NES games",
@@ -787,14 +803,6 @@
       "days_tracked": 2
     },
     {
-      "title": "A datetime library for Rust",
-      "source": "br_andrew_gallant_s_blog_andrew_gallant_s_b",
-      "url": "https://burntsushi.net/jiff/",
-      "metric": "feed rank",
-      "gain": 13,
-      "days_tracked": 3
-    },
-    {
       "title": "Disk encryption on NetBSD achieving secrecy",
       "source": "lobsters",
       "url": "https://netbsd.org/~nia/disk-encrypt/",
@@ -817,6 +825,14 @@
       "metric": "feed rank",
       "gain": 12,
       "days_tracked": 4
+    },
+    {
+      "title": "Show HN: Claimseed, synthetic Medicare docs with planted errors and answer keys",
+      "source": "hnrss",
+      "url": "https://github.com/claimseed/claimseed",
+      "metric": "feed rank",
+      "gain": 12,
+      "days_tracked": 2
     },
     {
       "title": "Stats and Learnings from Finishing #11 on Product Hunt",
@@ -883,28 +899,12 @@
       "days_tracked": 3
     },
     {
-      "title": "Show HN: CheeseDB – agent memory where deleting a source deletes what it taught",
+      "title": "Jiff 1.0: A datetime library for Rust",
       "source": "hnrss",
-      "url": "https://github.com/govinargo-labs/cheesedb",
+      "url": "https://burntsushi.net/jiff/",
       "metric": "feed rank",
       "gain": 9,
-      "days_tracked": 2
-    },
-    {
-      "title": "Long Live Rails",
-      "source": "devto",
-      "url": "https://dev.to/ben/long-live-rails-3p21",
-      "metric": "reactions",
-      "gain": 8,
-      "days_tracked": 3
-    },
-    {
-      "title": "Emayler",
-      "source": "producthunt",
-      "url": "https://www.producthunt.com/products/emayler",
-      "metric": "feed rank",
-      "gain": 8,
-      "days_tracked": 2
+      "days_tracked": 5
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T16:59:12.982160+00:00",
+ "generated_at": "2026-11-16T18:29:17.475990+00:00",
  "latest_snapshot": "2026-11-16",
  "total": 29709,
  "items": [
@@ -364,6 +364,16 @@
    "latest": 68
   },
   {
+   "url": "https://burntsushi.net/jiff/",
+   "title": "A datetime library for Rust",
+   "source": "lobsters",
+   "metric": "score",
+   "days": 2,
+   "delta": 56,
+   "per_day": 56.0,
+   "latest": 58
+  },
+  {
    "url": "https://lucypero.com/lucynes.html",
    "title": "A NES emulator written in Odin",
    "source": "lobsters",
@@ -492,16 +502,6 @@
    "delta": 27,
    "per_day": 27.0,
    "latest": 70
-  },
-  {
-   "url": "https://github.com/agentes-chat/agentes-chat",
-   "title": "agentes-chat/agentes-chat",
-   "source": "github_trending",
-   "metric": "stars",
-   "days": 2,
-   "delta": 26,
-   "per_day": 26.0,
-   "latest": 1416
   }
  ]
 }
