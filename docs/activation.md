@@ -5,7 +5,7 @@ have). Ordered by impact-per-click. Estimated total time: **~10 minutes**.
 
 ## 1. ~~Publish both sites~~ ✅ DONE 2026-11-17 (Cloudflare Pages)
 
-- **https://trendscope.zalize.com** — live, 64 pages, data proxied fresh from repo
+- **https://trendscope.zalize.com** — live, 74 pages, data proxied fresh from repo
 - **https://feedpaper.zalize.com** — live
 - Backup URLs: trendscope-660.pages.dev / feedpaper.pages.dev
 - `trendscope.pages.dev` is taken by an unrelated project — canonical is the zalize domain.

@@ -34,9 +34,12 @@ jobs:
           test -f site/dist/index.html
           test -f site/dist/tools/index.html
           test ! -f site/dist/tools.html
+          test -f site/dist/daily/index.html
+          test ! -f site/dist/daily.html
+          test -f site/dist/daily/sec.html
           grep -q 'class="topbar"' site/dist/index.html
           grep -q 'skiplink' site/dist/index.html
-          echo "build sanity: index + tools/index present, no stray tools.html"
+          echo "build sanity: index + tools/index + daily/index present, no stray flat pages"
 
       - name: Internal linkcheck
         working-directory: site

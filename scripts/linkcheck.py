@@ -31,7 +31,7 @@ class LinkParser(html.parser.HTMLParser):
 
 pages = []
 for dirpath, _dirs, files in os.walk(ROOT):
-    if ".git" in dirpath or "node_modules" in dirpath or os.path.sep + "dist" in dirpath:
+    if ".git" in dirpath or "node_modules" in dirpath or os.path.sep + "dist" in dirpath or ".deploy-cf" in dirpath:
         continue
     for f in files:
         if f.endswith(".html"):
@@ -168,6 +168,11 @@ for loc in re.findall(r"<loc>https?://[^/<]+/([^<]+)</loc>", sitemap):
     astro = os.path.join(ROOT, "site", "src", "pages",
                          base[:-5] + ".astro" if base.endswith(".html") else base)
     exists = os.path.exists(target) or os.path.exists(astro)
+    if not exists:
+        # dynamic Astro routes: daily/<lane>.html comes from daily/[lane].astro —
+        # any single-segment filename matches a [param].astro in the same dir
+        import glob as _glob
+        exists = bool(_glob.glob(os.path.join(os.path.dirname(astro), "[[]*].astro")))
     check(exists, f"sitemap.xml: dead entry → {loc}")
     if not exists or not os.path.exists(target):
         continue

@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && mkdir -p dist/tools && cp dist/tools.html dist/tools/index.html && rm dist/tools.html",
+    "build": "astro build && mkdir -p dist/tools dist/daily && cp dist/tools.html dist/tools/index.html && rm dist/tools.html && cp dist/daily.html dist/daily/index.html && rm dist/daily.html",
     "preview": "astro preview",
     "astro": "astro"
   },
