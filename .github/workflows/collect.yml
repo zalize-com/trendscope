@@ -44,6 +44,8 @@ jobs:
 
       - name: Regenerate daily brief
         run: python3 scripts/brief.py || true
+      - name: Zero-watch (persistent-empty vs tide)
+        run: python3 scripts/zerowatch.py --json || true
       - name: Source stats
         run: python3 scripts/sources.py
       - name: Streaks API

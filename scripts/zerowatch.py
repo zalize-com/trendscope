@@ -49,6 +49,19 @@ def main():
     print(f"tide (empty now, had data before): {len(tide)}")
     for k in persistent[:40]:
         print("  -", k)
+    if "--json" in sys.argv:
+        import datetime
+        out = {
+            "generated_at": datetime.datetime.now(datetime.timezone.utc)
+            .isoformat(timespec="seconds").replace("+00:00", "Z"),
+            "window": names,
+            "rounds": rounds,
+            "persistent_empty": persistent,
+            "tide": tide,
+        }
+        with open(os.path.join(DATA, "zerowatch.json"), "w") as f:
+            json.dump(out, f, indent=1)
+        print("wrote data/zerowatch.json")
     return 1 if persistent else 0
 
 
