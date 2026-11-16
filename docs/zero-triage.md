@@ -70,7 +70,8 @@ fallback lanes, not proof the pipeline sees them.
 `aboutwayfair`, `anyway`, `blog48`, `developerwordpress`, `mallonbacka`, `nicolasgallagher`, `rayepeng`, `seebug`, `trib`, `w3blog11`
 
 ## Actions
-1. **Revive 14 moved feeds** — one-line URL swap per row in §③ (substack→custom-domain migrations dominate; 12/14 are substack exits to own domains).
-2. **Prune 5 dead** (§①) — drops total_sources to ~9,208; coordinate the "9,200+" copy before removing.
-3. **Keep dormant 28** (§②) — feed alive, author inactive; add a `dormant` flag instead of deleting (historical items still valid).
+1. ~~**Revive 14 moved feeds**~~ — DONE 11/16: all 14 URL swaps landed (br_*×7 in-place, nl/eb/tidyfirst×7 via feeds_moved.json); collect run confirmed **18/18 revived** (18 = 14 swaps + 4 dormant overrides carrying new URLs).
+2. **Prune 5 dead** (§①) — drops total_sources to ~9,208; coordinate the "9,200+" copy before removing. Held for post-launch batch.
+3. ~~**Keep dormant 28**~~ — DONE 11/16: `dormant` 4th-element flag landed on all 28 (br 14 / yt 3 / nl 9 + tb_tauqeer + strategize via feeds_moved overrides); `data/dormant.json` generated, frontend grey-chip wiring by A.
 4. The 68 active-but-zero (§④) confirm the "egress wave" diagnosis — they're the audience for the rss2json fallback already shipped.
+5. §⑤ 20 probe-429 + §⑦ 10 unresolved — revisit next zerowatch pass; unresolved keys are fetcher-name mismatches (e.g. fetch_seebug→key "paper"), not missing sources.
