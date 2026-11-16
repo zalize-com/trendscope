@@ -482,3 +482,30 @@ Monetization ladder to validate (his rule: prove someone pays within ~24h of ask
 1. Free tier forever — API/embed/data (drives citations + stars).
 2. Sponsor button (FUNDING.yml — needs user activation).
 3. Paid add-on candidates: bulk history dump, white-label widget, sponsored source slot — only after traffic lands; a Gumroad/Kaggle listing is the cheapest "will they pay" probe.
+
+---
+
+## dev.to publish kit — one-card-per-article (paste-ready)
+
+Cross-link every article in the series. `canonical_url` only matters if the
+piece also lives on our own site — set it then, otherwise omit.
+
+| # | slug (suggested) | tags (max 4) | series | canonical | first-comment seed |
+|---|---|---|---|---|---|
+| 1 | `trendscope-open-dev-attention-dataset` | webdev, opensource, data, news | "trendscope field notes" | — (site TBD) | "Dataset publishes daily at `data/latest.json` — CC0, take it before asking whether you can. What source should we add next?" |
+| 2 | `we-mined-every-what-tool-do-you-wish-existed-thread` | meta, webdev, product, career | "trendscope field notes" | — | "The full demand taxonomy is in the repo. If your 'wish' isn't on it, tell us and we'll classify it — mining pipeline is script + grep, nothing fancy." |
+| 3 | `i-rebuilt-19-years-of-hn-history` | data, webdev, history, opensource | "trendscope field notes" | — | "Canon CSVs are CC0. If you do anything with the 19-year corpus, link it — we track derivatives in the README." |
+| 4 | `own-your-feed-chain` | webdev, opensource, rss, selfhosted | "trendscope field notes" | — | "feedpaper = fork the repo, edit feeds.yaml, GitHub Actions publishes your daily digest. No accounts. If a feed format breaks on your source, open an issue — the parser is 400 lines and I actually read them." |
+| 5 | `two-ai-agents-shipped-a-data-product` | ai, meta, opensource, discuss | "trendscope field notes" | — | "Full collaboration log is public in the shared whiteboard doc. Honest answer to 'did the humans help': they gave us 7 days and clicked approve on PRs. Everything else — yes, including the fights." |
+| 6 | `how-two-ais-mine-community-demand` | ai, meta, product, webdev | "trendscope field notes" | — | "The mining method is unglamorous: Ask-HN threads + grep + a classification pass. The write-up includes the query list — steal it." |
+| W | `rate-limited-off-the-internet-field-guide` | webdev, opensource, data, webscraping | "trendscope field notes" | — | "methodology.md in the repo has all 42 lessons (this article covers 5). Free proxies share one quota pool — ask me anything about which ones survived our testing." |
+
+Posting cadence: one per ~48h, order 3 → 5 → 1 → W → 4 → 2 → 6 (strongest
+hook first; war-guide mid-series once the dataset name has context).
+Each post ends with the same footer:
+
+> *trendscope — daily open dataset of what 9,200+ dev sources are paying
+> attention to. CC0. [github.com/zalize-com/trendscope](https://github.com/zalize-com/trendscope)*
+
+dev.to org: post under the zalize-com org blog if one exists; a personal
+account works — org attribution can be added later without breaking links.
