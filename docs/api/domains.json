@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-16T13:23:44.958368+00:00",
+ "generated_at": "2026-11-16T13:55:09.969017+00:00",
  "latest_snapshot": "2026-11-16",
- "total": 9441,
+ "total": 9446,
  "domains": [
   {
    "hostname": "blog.google",
@@ -24,7 +24,7 @@
   {
    "hostname": "theguardian.com",
    "days_on_board": 4,
-   "items": 118,
+   "items": 119,
    "sources": [
     "eb_guardian",
     "guardianco",
@@ -78,7 +78,7 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 3,
-   "items": 1499,
+   "items": 1542,
    "sources": [
     "br_homepage_piotr_migda",
     "br_nelson_s_linkblog",
@@ -330,6 +330,23 @@
    }
   },
   {
+   "hostname": "9to5mac.com",
+   "days_on_board": 3,
+   "items": 37,
+   "sources": [
+    "9to5mac",
+    "br_posts_from_iamgregb",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Apple has new Mac app coming to make running local AI models easy",
+    "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+    "score": 569,
+    "metric": "points",
+    "date": "2026-11-10"
+   }
+  },
+  {
    "hostname": "theverge.com",
    "days_on_board": 3,
    "items": 37,
@@ -344,23 +361,6 @@
     "score": 378,
     "metric": "points",
     "date": "2026-11-11"
-   }
-  },
-  {
-   "hostname": "9to5mac.com",
-   "days_on_board": 3,
-   "items": 36,
-   "sources": [
-    "9to5mac",
-    "br_posts_from_iamgregb",
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Apple has new Mac app coming to make running local AI models easy",
-    "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
-    "score": 569,
-    "metric": "points",
-    "date": "2026-11-10"
    }
   },
   {
@@ -820,7 +820,7 @@
   {
    "hostname": "lore.kernel.org",
    "days_on_board": 2,
-   "items": 240,
+   "items": 255,
    "sources": [
     "lorekernel"
    ],
@@ -870,6 +870,21 @@
    }
   },
   {
+   "hostname": "investing.com",
+   "days_on_board": 2,
+   "items": 144,
+   "sources": [
+    "investing"
+   ],
+   "top_hit": {
+    "title": "Evergy director Jonathan Rolph buys $133,610 in common stock",
+    "url": "https://www.investing.com/news/insider-trading-news/evergy-director-jonathan-rolph-buys-133610-in-common-stock-93CH-5028131",
+    "score": 10,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "changelog.com",
    "days_on_board": 2,
    "items": 135,
@@ -884,21 +899,6 @@
     "title": "Bitwarden CLI compromised",
     "url": "https://changelog.com/news/185",
     "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "investing.com",
-   "days_on_board": 2,
-   "items": 134,
-   "sources": [
-    "investing"
-   ],
-   "top_hit": {
-    "title": "Evergy director Jonathan Rolph buys $133,610 in common stock",
-    "url": "https://www.investing.com/news/insider-trading-news/evergy-director-jonathan-rolph-buys-133610-in-common-stock-93CH-5028131",
-    "score": 10,
     "metric": "feed rank",
     "date": "2026-11-15"
    }
@@ -943,7 +943,7 @@
   {
    "hostname": "news.google.com",
    "days_on_board": 2,
-   "items": 96,
+   "items": 104,
    "sources": [
     "w4news"
    ],
@@ -978,7 +978,7 @@
   {
    "hostname": "timesofindia.indiatimes.com",
    "days_on_board": 2,
-   "items": 82,
+   "items": 83,
    "sources": [
     "timesofindia"
    ],
