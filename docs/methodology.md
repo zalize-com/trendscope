@@ -104,3 +104,9 @@ cleared, or the catch must recreate them.
 27. **Dedupe at the feed-URL level before ingesting a new pool** — key-name and domain checks miss cross-lane duplicates: the same blog re-harvested under `pb_`/`tb_`/`br_`/`sec_` prefixes with different slugs. 34 groups → 35 duplicate keys found only by comparing `xmlUrl` across the whole registry. Keep the original lane's key; re-generate OPML/SOURCES after pruning.
 
 28. **大文件插入波次后必跑入口冒烟**：fetcher 批量插入把 `main()` 截断成 3 行 stub——fetchers dict+线程池+写库全成了最后一个 fetcher 里的死代码，collect 静默空跑 ~1h（0 字节日志两次"静默死亡"的根因）。教训：批量代码生成/插入后，除 `python3 -c "import ast"` 检查 main() 函数体规模外，最直接的是真跑一次入口看第一行输出。语法可解析 ≠ 主路径活着。
+
+29. **yt_ lane 的 404 是限流不是死源——404 语义分站点**：YouTube 单 IP burst 后对所有 channel_id（含无效 id）返同一 Google 标准 404 页，实测 homepage 200 而 feeds 全灭，外部文献记 ~8h 自愈。一般站点的 404=死源，yt_ 的 404=transient——死源判定必须按 lane 区分状态码语义，yt_ 404 归 retryable-transient 不进 dead 计数，采集串行+≥1s pacing 防再触发。
+
+30. **harvest 三戒（Substack/beehiiv 收割）**：①Substack feed >300KB 会被 CDN 截断成半截 XML，`ET.fromstring` 必然失败——收割前按 content-length/截断特征预检，截断 feed 走增量只取首段或标记手工；②`{slug}.substack.com` 与 `substack.com/@{pub-handle}` 不是同一物——pub handle 是订阅页身份，feed 在 `{slug}.substack.com/feed`，handle→slug 需先解析订阅页 `<link rel=alternate>` 而非直接拼 URL；③订阅落地页（SPA-subscribe 页，如 obstracts）不是裸 feed——落地页 200 不代表有 feed，必须嗅探 `<link rel=alternate>`/常见路径拿到真 feed URL 再判活。
+
+31. **CSS 注入层序：共享样式必须放在页面内联 `<style>` 之前**：Pico CSS v2 虽 classless 但带 `.grid`/`.container` utility 类；插到 `</head>` 前会把 Pico utility 放到页面样式之后、按层序规则 win——页面 `.grid` 卡片栅格被 Pico 一列堆叠替换（zh/calendar/tools 布局全塌）。规则：外部 `<link>` 一律注入在首个 `<style>` 之前，让页面内联规则始终最后声明、同优先级下胜出。
