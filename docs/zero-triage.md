@@ -1,4 +1,4 @@
-# Zero-source triage — 2026-11-16 (167 persistent-empty, 3 consecutive rounds)
+# Zero-source triage — 2026-11-16 (167 initial; now 71 persistent, 3 consecutive rounds)
 
 Method: extracted feed URLs → probed from VM egress (curl, UA browser) →
 parsed last-post dates on 200s. Caveat: VM egress ≠ Actions egress; a 200
@@ -76,3 +76,5 @@ All 10 were already pruned in earlier commits (9 in eedc5734 + rayepeng in 7777e
 4. The 68 active-but-zero (§④) confirm the "egress wave" diagnosis — they're the audience for the rss2json fallback already shipped.
 6. **11/16 update — TCP-blackhole rescue landed**: br_ persistent 141 → 127/141 revived after the fallback learned `code=None` (network-level errors). Remaining 14: 8 VM-alive double-failures (rss2json quota/egress also failing), 6 VM-dead candidates (br_flutterby etc. — prune candidates next pass).
 5. §⑤ 20 probe-429 + §⑦ 10 unresolved — revisit next zerowatch pass; unresolved keys are fetcher-name mismatches (e.g. fetch_seebug→key "paper"), not missing sources.
+
+7. **11/16 late update — post-rescue state (persistent 71, tide 29)**: br_ 23 (residue of the TCP-rescue — mostly double-failures awaiting fresh rss2json quota), nl_ 18 (mostly §② dormant, chip-marked), **24 r_* (rpython/rrust/rgolang/...)** — VM-side probes now return 403 from *this* VM too, so Reddit has hardened from "burst throttle" to "block datacenter ASNs outright". They're in feeds_bare.json so the rss2json lane covers them: tomorrow's reset quota decides whether the proxy's egress can still reach Reddit. If rss2json also 403s, options: r.jina.ai (rejects XML today), feedburner-style mirrors, or drop r_* to top-10 subreddits. sec_ 3 (hackread/security_online/the_register) + yt_ 3 — small residue, next pass.
