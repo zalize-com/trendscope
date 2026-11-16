@@ -47,7 +47,7 @@ gh repo edit zalize-com/feedpaper --add-topic rss,digest,github-actions,github-p
 
 ## Already done for you
 
-- ✅ trendscope: ~3,100 sources / ~30k items per snapshot — blogs,
+- ✅ trendscope: ~3,100 sources / ~37k items per snapshot — blogs,
   newsletters, podcasts, YouTube channels, zh lane; 57-page site with
   MiniSearch full-text search, feed.xml (subscribable), sitemap.xml,
   compare/streaks/movers pages, canon-history datasets 2007→today,
