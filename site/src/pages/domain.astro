@@ -4,7 +4,7 @@ const title = "domain deep-dive \u2014 trendscope";
 const description = "Per-domain deep dive: every item that hit any board from this hostname \u2014 which sources picked it up and how big it got.";
 const path = '/domain.html';
 ---
-<Base title={title} description={description} path={path} nav="board">
+<Base title={title} description={description} path={path} nav="none">
 
 <nav><a href="index.html">← trendscope</a> · <a href="domains.html">domains</a> · <a href="authors.html">authors</a></nav>
   <h1 id="h">do<span>main</span></h1>
@@ -14,6 +14,9 @@ const path = '/domain.html';
   <div id="out"><p id="err">loading…</p></div>
 
 <script is:inline src="/js/pages/domain.mjs" type="module"></script>
+
+<footer>Open data, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> ·
+    <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a></footer>
 
 </Base>
 

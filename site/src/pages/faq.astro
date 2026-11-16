@@ -4,7 +4,7 @@ const title = "trendscope FAQ \u2014 the developer attention dataset";
 const description = "trendscope FAQ \u2014 where the data comes from, what the API covers, and how to self-host.";
 const path = '/faq.html';
 ---
-<Base title={title} description={description} path={path} nav="about">
+<Base title={title} description={description} path={path} nav="none">
 
 <nav><a href="index.html">← trendscope</a> · <a href="docs/data-dictionary.md">data dictionary</a> · <a href="badges.html">badges</a></nav>
   <h1>faq</h1>
@@ -12,6 +12,9 @@ const path = '/faq.html';
   <div id="doc"><p id="err">loading…</p></div>
 
 <script is:inline src="/js/pages/faq.mjs" type="module"></script>
+
+<footer>Open data, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> ·
+    <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a></footer>
 
 </Base>
 

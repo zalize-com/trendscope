@@ -4,7 +4,7 @@ const title = "search \u2014 trendscope";
 const description = "One search box over the whole dataset: 19 years of HN canon, Show HN and Ask HN monthly leaders, plus every item of the current multi-source daily snapshots.";
 const path = '/search.html';
 ---
-<Base title={title} description={description} path={path} nav="none">
+<Base title={title} description={description} path={path} nav="search">
 
 <nav><a href="index.html">← trendscope</a> · <a href="canon.html">canon</a> · <a href="showhn.html">show&nbsp;hn</a> · <a href="rituals.html">rituals</a> · <a href="item.html">item history</a></nav>
   <h1>search the <span>dataset</span></h1>
@@ -21,6 +21,8 @@ const path = '/search.html';
   <ol id="res"></ol>
 
 <script is:inline src="/js/pages/search.mjs" type="module"></script>
+
+<footer>Data: <a href="data/hn-canon-monthly.csv">hn-canon-monthly.csv</a> · <a href="data/show-hn-monthly.csv">show-hn-monthly.csv</a> · <a href="data/ask-hn-monthly.csv">ask-hn-monthly.csv</a> · <a href="data/history.csv">history.csv</a> — all CC0, computed in your browser.</footer>
 
 </Base>
 

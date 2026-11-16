@@ -95,8 +95,8 @@ const lds = jsonld ? (Array.isArray(jsonld) ? jsonld : [jsonld]) : [];
     ))}
   </nav>
   <div class="right">
-    <a href="/search.html">search 19y of HN</a>
-    <a href="/zh.html">中文</a>
+    <a href="/search.html" class={nav === 'search' ? 'here' : undefined}>search 19y of HN</a>
+    <a href="/zh.html" class={nav === 'zh' ? 'here' : undefined}>中文</a>
     <a href="/feed.xml"><i data-lucide="rss"></i> subscribe</a>
     <a href="https://github.com/zalize-com/trendscope"><i data-lucide="star"></i> github</a>
   </div>

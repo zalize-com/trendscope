@@ -4,7 +4,7 @@ const title = "author deep-dive \u2014 trendscope";
 const description = "Per-author deep dive: every board hit by this author \u2014 which sources carried them and how big their stories got.";
 const path = '/author.html';
 ---
-<Base title={title} description={description} path={path} nav="board">
+<Base title={title} description={description} path={path} nav="none">
 
 <nav><a href="index.html">← trendscope</a> · <a href="authors.html">authors</a> · <a href="domains.html">domains</a></nav>
   <h1 id="h">au<span>thor</span></h1>
@@ -14,6 +14,9 @@ const path = '/author.html';
   <div id="out"><p id="err">loading…</p></div>
 
 <script is:inline src="/js/pages/author.mjs" type="module"></script>
+
+<footer>Open data, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> ·
+    <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a></footer>
 
 </Base>
 
