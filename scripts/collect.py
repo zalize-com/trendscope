@@ -122287,6 +122287,27 @@ def _extra_feed_fetchers():
     with open(latest_path, "w") as f:
         json.dump(snapshot, f, indent=2, ensure_ascii=False)
 
+    # latest-lite.json — top 3 items per source, trimmed fields, for the
+    # client-side boards; latest.json stays the full-fidelity artifact.
+    lite_items = {
+        k: [
+            {f: i[f] for f in ("source", "title", "url", "score", "metric",
+                               "comments", "author", "rank") if f in i}
+            for i in v[:3]
+        ]
+        for k, v in sections.items()
+    }
+    lite = {
+        "generated_at": now.isoformat(),
+        "date": today,
+        "sources": snapshot["sources"],
+        "total_items": snapshot["total_items"],
+        "topics": topics,
+        "items": lite_items,
+    }
+    with open(os.path.join(DATA_DIR, "latest-lite.json"), "w") as f:
+        json.dump(lite, f, ensure_ascii=False, separators=(",", ":"))
+
     # feed.xml — daily top-30 RSS, so the aggregator is itself subscribable.
     top = sorted(all_items, key=lambda i: i["score"], reverse=True)[:30]
     rss_items = "\n".join(
