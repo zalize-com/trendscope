@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-16T10:52:51.372747+00:00",
+ "generated_at": "2026-11-16T11:20:29.811661+00:00",
  "latest_snapshot": "2026-11-16",
- "total": 9423,
+ "total": 9425,
  "domains": [
   {
    "hostname": "blog.google",
@@ -24,7 +24,7 @@
   {
    "hostname": "theguardian.com",
    "days_on_board": 4,
-   "items": 108,
+   "items": 110,
    "sources": [
     "eb_guardian",
     "guardianco",
@@ -78,7 +78,7 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 3,
-   "items": 1410,
+   "items": 1411,
    "sources": [
     "br_homepage_piotr_migda",
     "br_nelson_s_linkblog",
@@ -349,7 +349,7 @@
   {
    "hostname": "theverge.com",
    "days_on_board": 3,
-   "items": 34,
+   "items": 35,
    "sources": [
     "br_hearthside_by_caleb_hearth",
     "hackernews",
@@ -788,7 +788,7 @@
   {
    "hostname": "mp.weixin.qq.com",
    "days_on_board": 2,
-   "items": 525,
+   "items": 526,
    "sources": [
     "42jing",
     "alimiddle",
@@ -820,7 +820,7 @@
   {
    "hostname": "lore.kernel.org",
    "days_on_board": 2,
-   "items": 195,
+   "items": 210,
    "sources": [
     "lorekernel"
    ],
@@ -910,9 +910,24 @@
    }
   },
   {
+   "hostname": "investing.com",
+   "days_on_board": 2,
+   "items": 114,
+   "sources": [
+    "investing"
+   ],
+   "top_hit": {
+    "title": "Evergy director Jonathan Rolph buys $133,610 in common stock",
+    "url": "https://www.investing.com/news/insider-trading-news/evergy-director-jonathan-rolph-buys-133610-in-common-stock-93CH-5028131",
+    "score": 10,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "producthunt.com",
    "days_on_board": 2,
-   "items": 110,
+   "items": 111,
    "sources": [
     "br_nelson_s_linkblog",
     "producthunt"
@@ -926,16 +941,16 @@
    }
   },
   {
-   "hostname": "investing.com",
+   "hostname": "news.google.com",
    "days_on_board": 2,
-   "items": 104,
+   "items": 86,
    "sources": [
-    "investing"
+    "w4news"
    ],
    "top_hit": {
-    "title": "Evergy director Jonathan Rolph buys $133,610 in common stock",
-    "url": "https://www.investing.com/news/insider-trading-news/evergy-director-jonathan-rolph-buys-133610-in-common-stock-93CH-5028131",
-    "score": 10,
+    "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his silence on breakdown - AP News",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUjU5a3ljR1FocjlKQnRVS21kY1kwR3R4bEZvdUc4VExhbnc2NjZrU0ZfRS1iMkoxcGthaUV4a19MTlNsR2JFMlFqZDN0Y1JiejlNWUFUWjAyWTl3RFNXX0ZvbkNmX0l1elhVZndMd3pQSlQtbk1RYzBMT2tmOTJuaTlwUm5FQmdRODFJQTk4OWV5MlpScVhhc1BEWWotS1E?oc=5",
+    "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
    }
@@ -958,21 +973,6 @@
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-16"
-   }
-  },
-  {
-   "hostname": "news.google.com",
-   "days_on_board": 2,
-   "items": 83,
-   "sources": [
-    "w4news"
-   ],
-   "top_hit": {
-    "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his silence on breakdown - AP News",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUjU5a3ljR1FocjlKQnRVS21kY1kwR3R4bEZvdUc4VExhbnc2NjZrU0ZfRS1iMkoxcGthaUV4a19MTlNsR2JFMlFqZDN0Y1JiejlNWUFUWjAyWTl3RFNXX0ZvbkNmX0l1elhVZndMd3pQSlQtbk1RYzBMT2tmOTJuaTlwUm5FQmdRODFJQTk4OWV5MlpScVhhc1BEWWotS1E?oc=5",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
    }
   },
   {
