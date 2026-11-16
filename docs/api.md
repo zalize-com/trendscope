@@ -15,6 +15,7 @@ Fetch straight from GitHub raw or the Pages site (`/trendscope/…`).
 | `data/health-log.csv` | CSV | Daily `date,source,ok,items,ms` health history |
 | `data/dormant.json` | JSON | Sources flagged dormant (alive but quiet — no recent posts) |
 | `data/zerowatch.json` | JSON | Source-health watch: `persistent_empty` (3 consecutive empty snapshots — likely dead or egress-blocked) vs `tide` (empty now, had data before — rate-limit wave) |
+| `data/feeds.json` | JSON | Feed registry: every RSS/Atom feed with key, label, URL, lane and dormant flag — the browsable directory behind feeds.html and trendscope.opml |
 | `data/topics-history.csv` | CSV | Append-only per-day topic counts — time-series |
 | `docs/api/movers-latest.json` | JSON | Entered/left/gainers/droppers + package rank movers for the latest day pair |
 | `docs/api/movers-YYYY-MM-DD.json` | JSON | Same schema, archived per day — the movers history (from 2026-11-15) |

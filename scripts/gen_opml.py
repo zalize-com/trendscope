@@ -17,10 +17,13 @@ for m in re.finditer(r'def (fetch_\w+)\([^)]*\):\s*\n\s*"""(.*?)"""(.*?)(?=\ndef
         feeds[name] = (label, um.group(1))
 
 out = [(k,) + feeds[fn] for k, fn in re.findall(r'"(\w+)": (fetch_\w+),', src) if fn in feeds]
+dormant_keys = set()
 for p in sorted(glob.glob(os.path.join(ROOT, "scripts", "feeds_*.json"))):
     for k, row in json.load(open(p)).items():
         label, feed, home = row[:3]
         out.append((k, label, feed))
+        if len(row) > 3 and "dormant" in row[3:]:
+            dormant_keys.add(k)
 
 def esc(s):
     return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
@@ -34,3 +37,20 @@ for k, n, f in out:
 lines += ['</outline>', '</body>', '</opml>']
 open(os.path.join(ROOT, "trendscope.opml"), "w").write("\n".join(lines))
 print(f"trendscope.opml: {len(out)} outlines")
+
+# data/feeds.json — the same registry as JSON so the site can render a
+# browsable feed directory (feeds.html) and API consumers can subscribe
+# without parsing OPML.
+feeds_json = {
+    "generated_at": datetime.datetime.now(datetime.timezone.utc)
+        .isoformat(timespec="seconds").replace("+00:00", "Z"),
+    "count": len(out),
+    "feeds": [
+        {"key": k, "label": n, "feed": f,
+         "lane": k.split("_")[0] if "_" in k else "misc",
+         "dormant": k in dormant_keys}
+        for k, n, f in out],
+}
+with open(os.path.join(ROOT, "data", "feeds.json"), "w") as fh:
+    json.dump(feeds_json, fh, indent=1, ensure_ascii=False)
+print(f"data/feeds.json: {len(out)} feeds")
