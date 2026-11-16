@@ -18,6 +18,8 @@ const path = '/year.html';
     <div class="col ask"><h2>❓ top questions (Ask HN)</h2><ol id="ask"></ol></div>
   </div>
 
+<script is:inline src="/js/pages/year.mjs" type="module"></script>
+
 </Base>
 
 <style is:global>
@@ -54,5 +56,3 @@ const path = '/year.html';
   /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
   :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
 </style>
-
-<script is:inline src="/js/pages/year.mjs" type="module"></script>

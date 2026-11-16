@@ -55,11 +55,7 @@ def main():
            f'const title = {json.dumps(title)};', f'const description = {json.dumps(desc)};',
            f'const path = \'/{name}.html\';', '---',
            f'<Base title={{title}} description={{description}} path={{path}} nav="{nav}">',
-           '', body, '', '</Base>']
-    if styles:
-        # is:global — Astro scopes <style> by default; legacy selectors
-        # target the verbatim body markup and must not get hashed.
-        out += ['', '<style is:global>', styles, '</style>']
+           '', body]
     # Astro parses {} inside inline <script> text as expressions — arrow fns
     # like e=>{ break the build. Only reliable verbatim path: external file.
     outdir = pathlib.Path('site/public/js/pages')
@@ -74,7 +70,13 @@ def main():
         (outdir / fname).write_text('\n\n'.join(blocks) + '\n',
                                     encoding='utf-8')
         mod = ' type="module"' if kind == 'module' else ''
+        # inside <Base> so it lands in <body>, not after </html>
         out += ['', f'<script is:inline src="/js/pages/{fname}"{mod}></script>']
+    out += ['', '</Base>']
+    if styles:
+        # is:global — Astro scopes <style> by default; legacy selectors
+        # target the verbatim body markup and must not get hashed.
+        out += ['', '<style is:global>', styles, '</style>']
     print('\n'.join(out))
 
 if __name__ == '__main__':

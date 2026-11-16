@@ -12,6 +12,8 @@ const path = '/health.html';
     <code>data/health-log.csv</code>. This page renders it.</p>
   <div id="out"><p id="err">loading…</p></div>
 
+<script is:inline src="/js/pages/health.mjs" type="module"></script>
+
 </Base>
 
 <style is:global>
@@ -41,5 +43,3 @@ const path = '/health.html';
   /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
   :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
 </style>
-
-<script is:inline src="/js/pages/health.mjs" type="module"></script>

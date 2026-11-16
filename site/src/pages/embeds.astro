@@ -11,6 +11,8 @@ const path = '/embeds.html';
   <p class="sub">Each card is a live <code>embed.html</code> iframe — grab the snippet under it. Params: <code>?n= ?s= ?q= ?t= ?mode= ?theme=</code>.</p>
   <div id="out"></div>
 
+<script is:inline src="/js/pages/embeds.js"></script>
+
 </Base>
 
 <style is:global>
@@ -48,5 +50,3 @@ const path = '/embeds.html';
   /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
   :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
 </style>
-
-<script is:inline src="/js/pages/embeds.js"></script>

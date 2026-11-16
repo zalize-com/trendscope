@@ -13,6 +13,8 @@ const path = '/week.html';
   <div id="daystrip" style="display:flex;gap:5px;align-items:flex-end;margin:6px 0 2px"></div>
   <div id="out"><p id="err">loading…</p></div>
 
+<script is:inline src="/js/pages/week.js"></script>
+
 </Base>
 
 <style is:global>
@@ -47,5 +49,3 @@ const path = '/week.html';
   /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
   :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
 </style>
-
-<script is:inline src="/js/pages/week.js"></script>

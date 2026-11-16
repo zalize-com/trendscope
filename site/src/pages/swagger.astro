@@ -13,6 +13,8 @@ const path = '/swagger.html';
 <div id="err"></div>
 <script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js"></script>
 
+<script is:inline src="/js/pages/swagger.js"></script>
+
 </Base>
 
 <style is:global>
@@ -27,5 +29,3 @@ nav a{margin-right:8px;color:#0969da;text-decoration:none}
   /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
   :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
 </style>
-
-<script is:inline src="/js/pages/swagger.js"></script>

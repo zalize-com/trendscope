@@ -13,6 +13,8 @@ const path = '/heatmap.html';
 <div id="out"></div>
 <div id="err"></div>
 
+<script is:inline src="/js/pages/heatmap.mjs" type="module"></script>
+
 </Base>
 
 <style is:global>
@@ -36,5 +38,3 @@ td.src{text-align:left;white-space:nowrap}
   /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
   :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
 </style>
-
-<script is:inline src="/js/pages/heatmap.mjs" type="module"></script>

@@ -11,6 +11,8 @@ const path = '/api.html';
   <p class="sub">Every endpoint is a static file — fetch it from Pages or GitHub raw. This page renders <code>docs/api.md</code> live.</p>
   <div id="doc"><p id="err">loading…</p></div>
 
+<script is:inline src="/js/pages/api.mjs" type="module"></script>
+
 </Base>
 
 <style is:global>
@@ -43,5 +45,3 @@ const path = '/api.html';
   /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
   :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
 </style>
-
-<script is:inline src="/js/pages/api.mjs" type="module"></script>

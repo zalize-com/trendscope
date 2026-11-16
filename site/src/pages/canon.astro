@@ -23,6 +23,10 @@ const path = '/canon.html';
   <div class="cn" id="years"></div>
   <ol id="out"></ol>
 
+<script is:inline src="/js/pages/canon.js"></script>
+
+<script is:inline src="/js/pages/canon.mjs" type="module"></script>
+
 </Base>
 
 <style is:global>
@@ -64,7 +68,3 @@ const path = '/canon.html';
   /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
   :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
 </style>
-
-<script is:inline src="/js/pages/canon.js"></script>
-
-<script is:inline src="/js/pages/canon.mjs" type="module"></script>

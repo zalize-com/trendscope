@@ -16,6 +16,8 @@ const path = '/badges.html';
     Schema: <code>&#123;"schemaVersion":1,"label":"…","message":"…","color":"2b6cb0"&#125;</code>. See
     <code>scripts/stats.py</code> / <code>scripts/sources.py</code> for how ours are generated.</p>
 
+<script is:inline src="/js/pages/badges.mjs" type="module"></script>
+
 </Base>
 
 <style is:global>
@@ -41,5 +43,3 @@ const path = '/badges.html';
   /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
   :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
 </style>
-
-<script is:inline src="/js/pages/badges.mjs" type="module"></script>

@@ -13,6 +13,8 @@ const path = '/crossovers.html';
   <div id="srcbar" style="margin:8px 0"></div>
   <div id="out"><p id="err">loading…</p></div>
 
+<script is:inline src="/js/pages/crossovers.mjs" type="module"></script>
+
 </Base>
 
 <style is:global>
@@ -43,5 +45,3 @@ const path = '/crossovers.html';
   /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
   :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
 </style>
-
-<script is:inline src="/js/pages/crossovers.mjs" type="module"></script>

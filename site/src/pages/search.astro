@@ -20,6 +20,8 @@ const path = '/search.html';
   <div id="meta">loading corpora…</div>
   <ol id="res"></ol>
 
+<script is:inline src="/js/pages/search.mjs" type="module"></script>
+
 </Base>
 
 <style is:global>
@@ -55,5 +57,3 @@ const path = '/search.html';
   /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
   :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
 </style>
-
-<script is:inline src="/js/pages/search.mjs" type="module"></script>

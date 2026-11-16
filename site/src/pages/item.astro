@@ -12,6 +12,8 @@ const path = '/item.html';
   <input type="search" id="q" placeholder="search title / url / author — e.g. SpaceX, boto3, val.town…" autofocus>
   <div id="out"></div>
 
+<script is:inline src="/js/pages/item.js"></script>
+
 </Base>
 
 <style is:global>
@@ -51,5 +53,3 @@ const path = '/item.html';
   /* a11y floor: focus ring + reduced motion (hallmark-style audit 2026-11-16) */
   :focus-visible { outline: 2px solid var(--accent, #58a6ff); outline-offset: 2px; }
 </style>
-
-<script is:inline src="/js/pages/item.js"></script>
