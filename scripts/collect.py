@@ -118860,6 +118860,8 @@ def _make_feed_fetcher(key, label, feed, home):
     def _f(limit=15):
         print(f"Fetching {label} feed...")
         import xml.etree.ElementTree as ET
+        root = None
+        last_err = None
         for attempt in range(3):
             try:
                 req = urllib.request.Request(
@@ -118869,13 +118871,38 @@ def _make_feed_fetcher(key, label, feed, home):
                     root = _feed_root(resp)
                 break
             except Exception as e:
+                last_err = e
                 print(f"  [warn] {key} attempt {attempt + 1} failed: {e}",
                       file=sys.stderr)
                 if _retryable(e):
                     time.sleep(2 * (attempt + 1))
                 else:
-                    return []
-        else:
+                    break
+        if root is None and getattr(last_err, "code", None) in (403, 429):
+            # Cloudflare-style 403 waves block the Actions egress IP for some
+            # hosts (substack is the big one). rss2json fetches server-side
+            # from its own egress, so try it once as a rescue lane.
+            try:
+                req = urllib.request.Request(
+                    "https://api.rss2json.com/v1/api.json?rss_url="
+                    + urllib.parse.quote(feed, safe=""),
+                    headers={"User-Agent": UA, "Accept": "application/json"})
+                with urllib.request.urlopen(req, timeout=20) as resp:
+                    proxy = json.loads(resp.read().decode("utf-8"))
+                entries = (proxy.get("items") or [])[:limit]
+                if entries:
+                    out = []
+                    n = len(entries)
+                    for i, e in enumerate(entries):
+                        out.append(item(
+                            key, e.get("title", ""), e.get("link") or home,
+                            n - i, "feed rank"))
+                    return out
+            except Exception as e:
+                print(f"  [warn] {key} rss2json fallback failed: {e}",
+                      file=sys.stderr)
+            return []
+        if root is None:
             return []
         entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
         entries = entries[:limit]

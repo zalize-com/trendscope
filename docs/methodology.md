@@ -127,3 +127,12 @@ cleared, or the catch must recreate them.
    新版生成器/脚本入库时把 CI 接线一并换掉并跑一轮对照（产物行数
    前后对比），否则"工具在、链路旧"是长期暗退化。
 
+
+35. **出口 IP 信誉是第三类限流，proxy 兜底能救回整条 lane**：403 对
+   子域名农场（substack 71 源同一波全灭）不是源站死而是 Cloudflare 把
+   GitHub Actions 出口 ASN 整体拉黑——VM 出口同刻 200 有数据。判据：
+   同一宿主域名下 N 个源同时同码失败 = 出口信誉问题不是源问题。修法：
+   `_make_feed_fetcher` 直连 403/429 后走一次 rss2json（它自己的出口
+   服务器端取 feed，JSON 返回），实测 403→10 items 救回。免费的
+   allorigins/codetabs 已死、corsproxy 要 key、r.jina.ai 会转 markdown
+   破坏 XML——rss2json 是当前唯一保语义的免 key 兜底。
