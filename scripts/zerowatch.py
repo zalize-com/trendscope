@@ -39,7 +39,9 @@ def main():
         snaps = [_snap(os.path.join(DATA, "daily", f)) for f in daily[-rounds:]]
         names = daily[-rounds:]
     print(f"window: {' / '.join(names)}")
-    keys = set().union(*snaps)
+    # Only keys in the newest snapshot count — keys absent from it were pruned
+    # from the registry (ghost keys from older snapshots), not zero sources.
+    keys = set(snaps[-1])
     persistent = sorted(k for k in keys if all(not s.get(k) for s in snaps))
     tide = sorted(k for k in keys if not snaps[-1].get(k) and any(s.get(k) for s in snaps[:-1]))
     print(f"persistent empty ({rounds} rounds): {len(persistent)}")

@@ -66,8 +66,8 @@ fallback lanes, not proof the pipeline sees them.
 `rdartlang`, `rdataengineering`, `rdjango`, `rdocker`, `relm`, `rgolang`, `rjavascript`, `rkubernetes`, `rlaravel`, `rnetsec`, `rnextjs`, `ropensource`, `rpython`, `rreactjs`, `rredis`, `rrust`, `rscala`, `rsveltejs`, `rsysadmin`, `rwebdesign`
 ## ⑥ Stale (90–365d) — slow publishers, keep (22)
 `br_aniruddha_substack`, `br_axel_s_substack_substack`, `br_blogxxxxxxx`, `br_brad_s_newsletter_substack`, `br_desert_of_my_real_life_media_technology_`, `br_engineering_at_scale_animesh_gaitonde`, `br_good_internet_ren_walter_substack`, `br_harmony_harshal_patil_substack`, `br_interessant3_duarte_substack`, `br_josh_baldwin`, `br_mccd_space`, `br_nehal_s_learnings_substack`, `br_of_scars_and_surprise_geoff_ayers_substa`, `br_posts_joisig_gone_awol`, `br_river_macleod`, `br_something_about_cats_ian_yanusko_substac`, `br_superb_owl_max_goodbird_substack`, `br_synystron_synlogica`, `br_the_incrementalist_jesal_gadhia_substack`, `br_theory_of_change_substack`, `nl_aifordevelopers`, `nl_womenonrails`
-## ⑦ Unresolved (key↔fetcher name mismatch) (10)
-`aboutwayfair`, `anyway`, `blog48`, `developerwordpress`, `mallonbacka`, `nicolasgallagher`, `rayepeng`, `seebug`, `trib`, `w3blog11`
+## ⑦ Resolved — registry ghost keys (10)
+All 10 were already pruned in earlier commits (9 in eedc5734 + rayepeng in 7777ef60): they appeared as "persistent empty" only because zerowatch's 3-round union included pre-prune snapshots. zerowatch.py fixed to count only keys present in the newest snapshot. `fetch_seebug` still emits under key `paper` (alive, 15 items) — a key-name mismatch, not a zero.
 
 ## Actions
 1. ~~**Revive 14 moved feeds**~~ — DONE 11/16: all 14 URL swaps landed (br_*×7 in-place, nl/eb/tidyfirst×7 via feeds_moved.json); collect run confirmed **18/18 revived** (18 = 14 swaps + 4 dormant overrides carrying new URLs).
