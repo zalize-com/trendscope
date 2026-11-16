@@ -12,7 +12,7 @@ import re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS = os.path.join(ROOT, "docs")
 
-DIGEST_RE = re.compile(r"^\d{4}-W\d{2}(-notes)?\.md$")
+DIGEST_RE = re.compile(r"^\d{4}-W\d{2}(-notes|-narrative)?\.md$")
 MOVERS_RE = re.compile(r"^\d{4}-\d{2}-\d{2}\.md$")
 
 
