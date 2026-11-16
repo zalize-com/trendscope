@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-16T07:37:59.102668+00:00",
+ "generated_at": "2026-11-16T08:08:05.163098+00:00",
  "latest_snapshot": "2026-11-16",
- "total": 9415,
+ "total": 9417,
  "domains": [
   {
    "hostname": "blog.google",
@@ -24,7 +24,7 @@
   {
    "hostname": "theguardian.com",
    "days_on_board": 4,
-   "items": 102,
+   "items": 106,
    "sources": [
     "eb_guardian",
     "guardianco",
@@ -78,7 +78,7 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 3,
-   "items": 1193,
+   "items": 1194,
    "sources": [
     "br_homepage_piotr_migda",
     "br_nelson_s_linkblog",
@@ -873,6 +873,21 @@
    }
   },
   {
+   "hostname": "lore.kernel.org",
+   "days_on_board": 2,
+   "items": 135,
+   "sources": [
+    "lorekernel"
+   ],
+   "top_hit": {
+    "title": "Replication probe 2026-11-15T22:10Z",
+    "url": "https://lore.kernel.org/all/179478060190.2191695.904432943329958391.replication-probe@kernel.org/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "x.com",
    "days_on_board": 2,
    "items": 129,
@@ -888,21 +903,6 @@
    "top_hit": {
     "title": "持械入宋第11季更新了 快来看看详细的地图解析 这条昨晚在抖音发，不到一天已经3000赞 陆陆续续改了12个版本成型",
     "url": "https://x.com/PMbackttfuture/status/2121941825909072294",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "lore.kernel.org",
-   "days_on_board": 2,
-   "items": 120,
-   "sources": [
-    "lorekernel"
-   ],
-   "top_hit": {
-    "title": "Replication probe 2026-11-15T22:10Z",
-    "url": "https://lore.kernel.org/all/179478060190.2191695.904432943329958391.replication-probe@kernel.org/",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
@@ -964,7 +964,7 @@
   {
    "hostname": "news.google.com",
    "days_on_board": 2,
-   "items": 67,
+   "items": 71,
    "sources": [
     "w4news"
    ],

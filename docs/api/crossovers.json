@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T07:37:59.102668+00:00",
+ "generated_at": "2026-11-16T08:08:05.163098+00:00",
  "latest_snapshot": "2026-11-16",
  "crossovers": [
   {
@@ -90,6 +90,23 @@
    }
   },
   {
+   "url": "https://iter.ca/post/ubo-uxss",
+   "title": "Universal XSS in uBlock Origin from website-driven element picker",
+   "sources": [
+    "hackernews",
+    "hnrss",
+    "lobsters",
+    "smitop"
+   ],
+   "days": 2,
+   "best": {
+    "score": 83,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-16"
+   }
+  },
+  {
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen",
    "title": "Introducing Gemini 4 Hydrogen",
    "sources": [
@@ -148,22 +165,6 @@
    "days": 2,
    "best": {
     "score": 94,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-16"
-   }
-  },
-  {
-   "url": "https://iter.ca/post/ubo-uxss",
-   "title": "Universal XSS in uBlock Origin from website-driven element picker",
-   "sources": [
-    "hackernews",
-    "hnrss",
-    "smitop"
-   ],
-   "days": 2,
-   "best": {
-    "score": 83,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-16"
