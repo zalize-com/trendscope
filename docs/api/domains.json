@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-16T12:41:44.996263+00:00",
+ "generated_at": "2026-11-16T13:23:44.958368+00:00",
  "latest_snapshot": "2026-11-16",
- "total": 9438,
+ "total": 9441,
  "domains": [
   {
    "hostname": "blog.google",
@@ -24,7 +24,7 @@
   {
    "hostname": "theguardian.com",
    "days_on_board": 4,
-   "items": 116,
+   "items": 118,
    "sources": [
     "eb_guardian",
     "guardianco",
@@ -78,7 +78,7 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 3,
-   "items": 1430,
+   "items": 1499,
    "sources": [
     "br_homepage_piotr_migda",
     "br_nelson_s_linkblog",
@@ -146,7 +146,7 @@
   {
    "hostname": "youtube.com",
    "days_on_board": 3,
-   "items": 1325,
+   "items": 1326,
    "sources": [
     "br_blog_ankush_menat",
     "br_dr_j_engineering_leadership_software_dev",
@@ -276,7 +276,7 @@
   {
    "hostname": "nytimes.com",
    "days_on_board": 3,
-   "items": 61,
+   "items": 62,
    "sources": [
     "bostocks",
     "daringfireball",
@@ -330,26 +330,9 @@
    }
   },
   {
-   "hostname": "simonwillison.net",
-   "days_on_board": 3,
-   "items": 36,
-   "sources": [
-    "br_nelson_s_linkblog",
-    "hackernews",
-    "simonw"
-   ],
-   "top_hit": {
-    "title": "Locating the source of a mysterious beep",
-    "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
-    "score": 331,
-    "metric": "points",
-    "date": "2026-11-10"
-   }
-  },
-  {
    "hostname": "theverge.com",
    "days_on_board": 3,
-   "items": 36,
+   "items": 37,
    "sources": [
     "br_hearthside_by_caleb_hearth",
     "hackernews",
@@ -366,7 +349,7 @@
   {
    "hostname": "9to5mac.com",
    "days_on_board": 3,
-   "items": 35,
+   "items": 36,
    "sources": [
     "9to5mac",
     "br_posts_from_iamgregb",
@@ -376,6 +359,23 @@
     "title": "Apple has new Mac app coming to make running local AI models easy",
     "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
     "score": 569,
+    "metric": "points",
+    "date": "2026-11-10"
+   }
+  },
+  {
+   "hostname": "simonwillison.net",
+   "days_on_board": 3,
+   "items": 36,
+   "sources": [
+    "br_nelson_s_linkblog",
+    "hackernews",
+    "simonw"
+   ],
+   "top_hit": {
+    "title": "Locating the source of a mysterious beep",
+    "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+    "score": 331,
     "metric": "points",
     "date": "2026-11-10"
    }
@@ -820,7 +820,7 @@
   {
    "hostname": "lore.kernel.org",
    "days_on_board": 2,
-   "items": 225,
+   "items": 240,
    "sources": [
     "lorekernel"
    ],
@@ -889,6 +889,21 @@
    }
   },
   {
+   "hostname": "investing.com",
+   "days_on_board": 2,
+   "items": 134,
+   "sources": [
+    "investing"
+   ],
+   "top_hit": {
+    "title": "Evergy director Jonathan Rolph buys $133,610 in common stock",
+    "url": "https://www.investing.com/news/insider-trading-news/evergy-director-jonathan-rolph-buys-133610-in-common-stock-93CH-5028131",
+    "score": 10,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "x.com",
    "days_on_board": 2,
    "items": 131,
@@ -905,21 +920,6 @@
     "title": "持械入宋第11季更新了 快来看看详细的地图解析 这条昨晚在抖音发，不到一天已经3000赞 陆陆续续改了12个版本成型",
     "url": "https://x.com/PMbackttfuture/status/2121941825909072294",
     "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "investing.com",
-   "days_on_board": 2,
-   "items": 124,
-   "sources": [
-    "investing"
-   ],
-   "top_hit": {
-    "title": "Evergy director Jonathan Rolph buys $133,610 in common stock",
-    "url": "https://www.investing.com/news/insider-trading-news/evergy-director-jonathan-rolph-buys-133610-in-common-stock-93CH-5028131",
-    "score": 10,
     "metric": "feed rank",
     "date": "2026-11-15"
    }
@@ -943,7 +943,7 @@
   {
    "hostname": "news.google.com",
    "days_on_board": 2,
-   "items": 86,
+   "items": 96,
    "sources": [
     "w4news"
    ],
@@ -978,7 +978,7 @@
   {
    "hostname": "timesofindia.indiatimes.com",
    "days_on_board": 2,
-   "items": 78,
+   "items": 82,
    "sources": [
     "timesofindia"
    ],
