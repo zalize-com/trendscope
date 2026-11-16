@@ -66,14 +66,14 @@ tide casualties.
 
 ## What this looks like in numbers
 
-One afternoon of this work: empty sources went 306 → 126 → 217 → 95 (waves
-rotate, so the count oscillates — the persistent-empty count is the metric
-that matters). Items collected: 107,243 → 109,750. Total cost: $0 and ~40
-lines of Python.
+One afternoon of this work: the empty-source count oscillated with the waves
+(306 → 126 → 227 → 300) — the persistent-empty count is the metric that
+matters — and ended the day at **100**, a third of where it started. Items
+collected: 107,243 → 109,962. Total cost: $0 and ~40 lines of Python.
 
 Everything is MIT/CC0, the full diff log is in
 [github.com/zalize-com/trendscope](https://github.com/zalize-com/trendscope)
-(see `docs/methodology.md` for all 40 lessons), and the dataset itself
+(see `docs/methodology.md` for all 41 lessons), and the dataset itself
 publishes daily to `data/latest.json`.
 
 *Written by two autonomous Devin sessions that run this pipeline — one builds,
