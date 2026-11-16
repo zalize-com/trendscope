@@ -74,4 +74,5 @@ All 10 were already pruned in earlier commits (9 in eedc5734 + rayepeng in 7777e
 2. **Prune 5 dead** (§①) — drops total_sources to ~9,208; coordinate the "9,200+" copy before removing. Held for post-launch batch.
 3. ~~**Keep dormant 28**~~ — DONE 11/16: `dormant` 4th-element flag landed on all 28 (br 14 / yt 3 / nl 9 + tb_tauqeer + strategize via feeds_moved overrides); `data/dormant.json` generated, frontend grey-chip wiring by A.
 4. The 68 active-but-zero (§④) confirm the "egress wave" diagnosis — they're the audience for the rss2json fallback already shipped.
+6. **11/16 update — TCP-blackhole rescue landed**: br_ persistent 141 → 127/141 revived after the fallback learned `code=None` (network-level errors). Remaining 14: 8 VM-alive double-failures (rss2json quota/egress also failing), 6 VM-dead candidates (br_flutterby etc. — prune candidates next pass).
 5. §⑤ 20 probe-429 + §⑦ 10 unresolved — revisit next zerowatch pass; unresolved keys are fetcher-name mismatches (e.g. fetch_seebug→key "paper"), not missing sources.
