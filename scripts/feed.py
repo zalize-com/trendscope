@@ -16,7 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DAILY = os.path.join(ROOT, "data", "daily")
 DIGEST = os.path.join(ROOT, "docs", "digest")
 MOVERS = os.path.join(ROOT, "docs", "movers")
-BASE = "https://zalize-com.github.io/trendscope"
+BASE = "https://trendscope--plov6nur.preview.devinapps.com"
 REPO = "https://github.com/zalize-com/trendscope"
 
 
