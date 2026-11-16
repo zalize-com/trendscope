@@ -112,3 +112,12 @@ cleared, or the catch must recreate them.
 31. **CSS 注入层序：共享样式必须放在页面内联 `<style>` 之前**：Pico CSS v2 虽 classless 但带 `.grid`/`.container` utility 类；插到 `</head>` 前会把 Pico utility 放到页面样式之后、按层序规则 win——页面 `.grid` 卡片栅格被 Pico 一列堆叠替换（zh/calendar/tools 布局全塌）。规则：外部 `<link>` 一律注入在首个 `<style>` 之前，让页面内联规则始终最后声明、同优先级下胜出。
 
 32. **urllib 不跟 308 重定向**：`HTTPRedirectHandler` 只认 301/302/303/307——Cloudflare 系 CDN 越来越爱用 308 做路径规范化（去掉尾斜杠/换域名），spotify/timescale/codecentric 三个"零项源"全是 308 挡路。修法两层：①URL 直接换成 308 指向的最终地址；②全局 `install_opener` 挂一个把 `http_error_308` 转发给 `http_error_302` 的 handler，一票覆盖所有 fetcher。批量抓取管道遇到"零项源"先查响应码再判死。
+
+33. **CI 静默绿比红更毒**：push 竞态重试循环写成 `cmd && push || sleep 5`，
+   循环最后一条命令恒 0 → `git pull --rebase` 三连失败、数据整轮丢弃、
+   步骤照样绿。两坑同犯：①`git add` 白名单漏了管道再生成的
+   trendscope.opml/SOURCES.md（unstaged → rebase 拒绝）；②失败路径没有
+   loud-fail。修法：`git add -A` 全 stage + `--autostash` + 循环后
+   `merge-base --is-ancestor HEAD origin/main` 验证 push 真落地否则
+   `exit 1`。任何"重试+静默吞错"的 CI 步骤都该有落地断言。
+

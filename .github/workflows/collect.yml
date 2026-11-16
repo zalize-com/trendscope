@@ -83,13 +83,21 @@ jobs:
         run: |
           git config user.name "trendscope-bot"
           git config user.email "trendscope-bot@users.noreply.github.com"
-          git add data/ docs/digest/ docs/movers/ docs/brief/ docs/api/ docs/index.json feed.xml feed.json
+          # stage everything the pipeline regenerates — leaving unstaged diffs
+          # (trendscope.opml, SOURCES.md, ...) makes `git pull --rebase` refuse
+          # and the retry loop below used to end on `sleep 5` = silent green.
+          git add -A
           if git diff --cached --quiet; then
             echo "No changes"
           else
             git commit -m "data: daily snapshot $(date -u +%Y-%m-%d)"
-            # retry on push races with concurrent manual pushes
+            # retry on push races with concurrent manual pushes; --autostash
+            # survives any leftover dirty files instead of refusing outright
             for i in 1 2 3; do
-              git pull --rebase origin main && git push && break || sleep 5
+              git pull --rebase --autostash origin main && git push && break || sleep 5
             done
+            # fail loudly if the commit never reached main — a dropped snapshot
+            # must not look green
+            git fetch -q origin main
+            git merge-base --is-ancestor HEAD origin/main || { echo "dataset push never landed"; exit 1; }
           fi
