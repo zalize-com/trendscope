@@ -194,3 +194,10 @@ consecutive collects** — single-day zeros self-heal in-wave.
     zerowatch.json's persistent_empty (3+ consecutive empties, ~70 keys):
     a full order of magnitude less quota per run, spent only on sources
     that demonstrably can't recover unaided.
+42. **Free feed proxies all share one pool: caller-IP quota.** Surveyed a
+    dozen candidates for a third rescue lane (docs/proxy-fallbacks.md): raw
+    proxies (cors.lol, allorigins) work but insta-limit, JSON proxies
+    (feedrapp) can't parse hostile feeds, everything else is dead or
+    key-gated. Multiplying channels multiplies complexity, not capacity —
+    capacity comes from spending quota only on sources that can't
+    self-heal (persistent_empty gating).
