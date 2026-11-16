@@ -1,0 +1,35 @@
+name: Deploy to Cloudflare Pages
+# Redeploys the static layer after every push that changes site/ or pages.
+# Data files don't need this — /data/* is 302-proxied to GitHub raw at the edge.
+# Requires repo secrets: CLOUDFLARE_API_KEY, CLOUDFLARE_EMAIL, CLOUDFLARE_ACCOUNT_ID
+# (until they're added the job skips cleanly).
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "*.html"
+      - "feed.xml"
+      - "trendscope.opml"
+      - "llms.txt"
+      - "robots.txt"
+      - "sitemap.xml"
+  workflow_dispatch:
+concurrency:
+  group: cf-pages-deploy
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: ${{ vars.CF_DEPLOY_ENABLED == '1' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Build + deploy
+        env:
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+          CLOUDFLARE_EMAIL: ${{ secrets.CLOUDFLARE_EMAIL }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: bash scripts/deploy_cf.sh
