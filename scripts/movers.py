@@ -125,7 +125,7 @@ def main():
           rows([(i, None) for i in exit_], "", lambda i, _: f"{fmt(i['score'])} {i['metric']} (was)"),
           f"",
           f"---",
-          f"[interactive view](https://trendscope--plov6nur.preview.devinapps.com/compare.html"
+          f"[interactive view](https://trendscope.zalize.com/compare.html"
           f"?a={day_a}&b={day_b}) · data: `data/daily/{day_b}.json.gz` (CC0)",
           f""]
     path = os.path.join(OUT, f"{day_b}{suffix}.md")

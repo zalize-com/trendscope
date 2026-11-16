@@ -43,5 +43,5 @@ timeouts can't catch TCP-connect blackholes.
 
 Static files + one GitHub Action, no backend.
 
-- Live: https://trendscope--plov6nur.preview.devinapps.com
+- Live: https://trendscope.zalize.com
 - Repo: https://github.com/zalize-com/trendscope

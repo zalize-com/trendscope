@@ -401,9 +401,9 @@ def emit_meta(now):
     out = {
         "generated_at": now,
         "name": "trendscope — daily developer attention dataset",
-        "homepage": "https://trendscope--plov6nur.preview.devinapps.com/",
+        "homepage": "https://trendscope.zalize.com/",
         "repo": "https://github.com/zalize-com/trendscope",
-        "openapi": "https://trendscope--plov6nur.preview.devinapps.com/docs/api/openapi.yaml",
+        "openapi": "https://trendscope.zalize.com/docs/api/openapi.yaml",
         "latest_snapshot": latest.get("latest_snapshot", latest.get("date")),
         "snapshot_dates": snaps,
         "days_tracked": len(snaps),
@@ -445,7 +445,7 @@ def emit_rss(now):
     rss = ('<?xml version="1.0" encoding="UTF-8"?>\n'
            '<rss version="2.0"><channel>'
            '<title>trendscope — today\'s top</title>'
-           '<link>https://trendscope--plov6nur.preview.devinapps.com/</link>'
+           '<link>https://trendscope.zalize.com/</link>'
            '<description>Top items across 18 tracked sources, refreshed daily.</description>'
            '<lastBuildDate>{}</lastBuildDate>\n{}\n</channel></rss>\n').format(now, body)
     with open(os.path.join(API, "latest.rss"), "w", encoding="utf-8") as f:

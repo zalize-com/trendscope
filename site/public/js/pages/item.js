@@ -182,7 +182,7 @@ function paint() {
 document.getElementById("out").addEventListener("click", ev => {
   const btn = ev.target.closest(".embed-btn");
   if (!btn) return;
-  const src = `https://trendscope--plov6nur.preview.devinapps.com/embed.html?mode=item&q=${encodeURIComponent(btn.dataset.t || "")}`;
+  const src = `https://trendscope.zalize.com/embed.html?mode=item&q=${encodeURIComponent(btn.dataset.t || "")}`;
   const code = `<iframe src="${src}" style="width:100%;max-width:560px;height:180px;border:0" loading="lazy" title="trendscope story trajectory"></iframe>`;
   navigator.clipboard?.writeText(code).then(() => { btn.textContent = "copied iframe code"; setTimeout(() => btn.textContent = "embed this story", 1600); });
 });

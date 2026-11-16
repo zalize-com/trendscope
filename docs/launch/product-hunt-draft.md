@@ -19,5 +19,5 @@ products. The dataset is the product: versioned, timestamped, CC0. OPML of all
 Developer Tools, Open Source, Data & Analytics, News
 
 ## Links
-- Website: https://trendscope--plov6nur.preview.devinapps.com
+- Website: https://trendscope.zalize.com
 - GitHub: https://github.com/zalize-com/trendscope

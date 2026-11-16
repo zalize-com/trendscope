@@ -57,7 +57,7 @@ Topics and homepage feed GitHub topic pages and search snippets — free
 discovery traffic. Easiest: repo page → ⚙ next to "About". Or CLI:
 
 ```bash
-gh repo edit zalize-com/trendscope --add-topic dataset,open-data,hacker-news,github-trending,daily-digest,developer-tools,github-actions,cc0,dashboard --homepage https://trendscope--plov6nur.preview.devinapps.com
+gh repo edit zalize-com/trendscope --add-topic dataset,open-data,hacker-news,github-trending,daily-digest,developer-tools,github-actions,cc0,dashboard --homepage https://trendscope.zalize.com
 gh repo edit zalize-com/feedpaper --add-topic rss,digest,github-actions,github-pages,self-hosted,news-reader --homepage https://zalize-com.github.io/feedpaper
 ```
 

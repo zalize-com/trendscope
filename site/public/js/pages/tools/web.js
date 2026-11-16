@@ -54,7 +54,7 @@ function afGo() {
   const svg = afSvg(label, style);
   document.getElementById("af-view").innerHTML = svg;
   document.getElementById("af-out").textContent =
-    `<a href="https://trendscope--plov6nur.preview.devinapps.com/about.html" title="declared human-made">\n  ${svg.replace(/\n/g, "\n  ")}\n</a>`;
+    `<a href="https://trendscope.zalize.com/about.html" title="declared human-made">\n  ${svg.replace(/\n/g, "\n  ")}\n</a>`;
 }
 document.getElementById("af-label").addEventListener("change", afGo);
 document.getElementById("af-style").addEventListener("change", afGo);
@@ -209,8 +209,8 @@ document.getElementById("ma-go").addEventListener("click", () => {
       render();
     } catch { $("sv-err").textContent = "fetch failed (CORS?) — paste the page <head> manually"; }
   };
-  $("sv-in").value = '<head><title>trendscope — daily trend radar for builders</title><meta name="description" content="One page that watches HN, GitHub, Product Hunt, dev.to, Lobsters, npm, PyPI and 8 more — and keeps a permanent, queryable archive."><meta property="og:title" content="trendscope"><meta property="og:image" content="https://trendscope--plov6nur.preview.devinapps.com/og.jpg"></head>';
-  $("sv-url").value = "https://trendscope--plov6nur.preview.devinapps.com/";
+  $("sv-in").value = '<head><title>trendscope — daily trend radar for builders</title><meta name="description" content="One page that watches HN, GitHub, Product Hunt, dev.to, Lobsters, npm, PyPI and 8 more — and keeps a permanent, queryable archive."><meta property="og:title" content="trendscope"><meta property="og:image" content="https://trendscope.zalize.com/og.jpg"></head>';
+  $("sv-url").value = "https://trendscope.zalize.com/";
   render();
 })();
 
@@ -703,7 +703,7 @@ aibots();
   }
   $("smg-in").addEventListener("input", go);
   $("smg-copy").onclick = () => navigator.clipboard?.writeText($("smg-out").textContent).then(() => { $("smg-copy").textContent = "copied"; setTimeout(() => $("smg-copy").textContent = "copy xml", 1200); });
-  $("smg-in").value = "https://trendscope--plov6nur.preview.devinapps.com/\nhttps://trendscope--plov6nur.preview.devinapps.com/index.html, 2026-11-15, 0.8\nnot-a-url";
+  $("smg-in").value = "https://trendscope.zalize.com/\nhttps://trendscope.zalize.com/index.html, 2026-11-15, 0.8\nnot-a-url";
   go();
 })();
 
@@ -728,6 +728,6 @@ aibots();
   for (const id of ["lt-name","lt-desc","lt-links"]) $(id).addEventListener("input", go);
   $("lt-copy").onclick = () => navigator.clipboard?.writeText($("lt-out").textContent).then(() => { $("lt-copy").textContent = "copied"; setTimeout(() => $("lt-copy").textContent = "copy llms.txt", 1200); });
   $("lt-name").value = "trendscope"; $("lt-desc").value = "Daily cross-source trend snapshots for builders.";
-  $("lt-links").value = "API | https://trendscope--plov6nur.preview.devinapps.com/api.html | 16 JSON endpoints\nllms.txt | https://trendscope--plov6nur.preview.devinapps.com/llms.txt";
+  $("lt-links").value = "API | https://trendscope.zalize.com/api.html | 16 JSON endpoints\nllms.txt | https://trendscope.zalize.com/llms.txt";
   go();
 })();

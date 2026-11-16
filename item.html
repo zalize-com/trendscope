@@ -8,10 +8,10 @@
   <link rel="alternate" type="application/rss+xml" title="trendscope snapshots" href="feed.xml">
   <link rel="alternate" type="application/feed+json" title="trendscope snapshots" href="feed.json">
 <meta name="description" content="Track a single story or package's rank and score across every day it's been on the trendscope board.">
-<link rel="canonical" href="https://trendscope--plov6nur.preview.devinapps.com/item.html">
+<link rel="canonical" href="https://trendscope.zalize.com/item.html">
 <meta property="og:title" content="trendscope item history — day-by-day trajectory">
-<meta property="og:url" content="https://trendscope--plov6nur.preview.devinapps.com/item.html">
-<meta property="og:image" content="https://trendscope--plov6nur.preview.devinapps.com/og.jpg">
+<meta property="og:url" content="https://trendscope.zalize.com/item.html">
+<meta property="og:image" content="https://trendscope.zalize.com/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
@@ -266,7 +266,7 @@ function paint() {
 document.getElementById("out").addEventListener("click", ev => {
   const btn = ev.target.closest(".embed-btn");
   if (!btn) return;
-  const src = `https://trendscope--plov6nur.preview.devinapps.com/embed.html?mode=item&q=${encodeURIComponent(btn.dataset.t || "")}`;
+  const src = `https://trendscope.zalize.com/embed.html?mode=item&q=${encodeURIComponent(btn.dataset.t || "")}`;
   const code = `<iframe src="${src}" style="width:100%;max-width:560px;height:180px;border:0" loading="lazy" title="trendscope story trajectory"></iframe>`;
   navigator.clipboard?.writeText(code).then(() => { btn.textContent = "copied iframe code"; setTimeout(() => btn.textContent = "embed this story", 1600); });
 });

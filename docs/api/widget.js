@@ -1,11 +1,11 @@
 // <trend-scope> — embeddable web component for trendscope.
-// Usage: <script src="https://trendscope--plov6nur.preview.devinapps.com/docs/api/widget.js" defer></script>
+// Usage: <script src="https://trendscope.zalize.com/docs/api/widget.js" defer></script>
 //        <trend-scope mode="top" n="5" source="hackernews"></trend-scope>
 // modes: top (today's board) | new (fresh today) | risers (today's spikes)
 // attrs: n=max items (default 5), source=filter, theme=light|dark|auto (default auto),
 //        api=base url override for self-hosting (default the github.io site)
 (() => {
-  const API_DEFAULT = "https://trendscope--plov6nur.preview.devinapps.com";
+  const API_DEFAULT = "https://trendscope.zalize.com";
   const css = `
     :host{display:block;font:13px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace}
     .ts{border:1px solid var(--tsbd,#d8dee4);border-radius:8px;padding:10px 12px;background:var(--tsbg,#fff);color:var(--tsfg,#1f2328)}

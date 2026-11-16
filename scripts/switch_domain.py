@@ -11,7 +11,7 @@ Usage:
 Without --apply it only prints the files that would change.
 
 Rewrites every literal occurrence of the CURRENT canonical origin
-(`https://trendscope--plov6nur.preview.devinapps.com`) in tracked text files:
+(`https://trendscope.zalize.com`) in tracked text files:
 HTML (canonical/og:url/og:image), sitemap.xml, robots.txt, llms.txt,
 feed generators' SITE_URL constants, scripts/collect.py SITE_URL,
 docs and README links.
@@ -23,7 +23,7 @@ import os
 import re
 import sys
 
-OLD = "https://trendscope--plov6nur.preview.devinapps.com"
+OLD = "https://trendscope.zalize.com"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 TEXT_EXT = {".html", ".xml", ".txt", ".md", ".yaml", ".yml", ".py",

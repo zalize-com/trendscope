@@ -186,7 +186,7 @@ urllib.request.install_opener(
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE_URL = "https://trendscope--plov6nur.preview.devinapps.com"
+SITE_URL = "https://trendscope.zalize.com"
 
 NPM_WATCHLIST = [
     "react", "vue", "@angular/core", "svelte", "next", "nuxt", "vite",

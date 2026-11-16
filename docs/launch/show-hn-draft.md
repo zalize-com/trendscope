@@ -13,7 +13,7 @@ crates downloads, 130+ security blogs, 6,000+ individual dev blogs, TLDR and
 engineering newsletters, company eng blogs (Cloudflare, Netflix, Meta, Stripe…)
 — and publishes it all as CC0 JSON/CSV.
 
-Live dashboard: https://trendscope--plov6nur.preview.devinapps.com
+Live dashboard: https://trendscope.zalize.com
 Data: latest.json (~27MB) / latest-lite.json (~6MB, what the site reads) /
 history.csv (append-only, for velocity analysis)
 Repo: https://github.com/zalize-com/trendscope

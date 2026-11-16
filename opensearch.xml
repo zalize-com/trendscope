@@ -3,6 +3,6 @@
   <ShortName>trendscope</ShortName>
   <Description>Search 19 years of HN history + recent cross-source trends</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/png">https://trendscope--plov6nur.preview.devinapps.com/favicon-16.png</Image>
-  <Url type="text/html" method="get" template="https://trendscope--plov6nur.preview.devinapps.com/search.html?q={searchTerms}"/>
+  <Image width="16" height="16" type="image/png">https://trendscope.zalize.com/favicon-16.png</Image>
+  <Url type="text/html" method="get" template="https://trendscope.zalize.com/search.html?q={searchTerms}"/>
 </OpenSearchDescription>

@@ -1,4 +1,4 @@
-const BASE = "https://trendscope--plov6nur.preview.devinapps.com/embed.html";
+const BASE = "https://trendscope.zalize.com/embed.html";
 const MODES = [
   ["board (default)", ""],
   ["stats", "?mode=stats"],

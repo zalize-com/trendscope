@@ -12,7 +12,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 export PATH="$HOME/opt/node24/bin:$PATH"
-ORIGIN="${SITE_ORIGIN:-https://trendscope.pages.dev}"
+ORIGIN="${SITE_ORIGIN:-https://trendscope.zalize.com}"
 OUT="$ROOT/.deploy-cf"
 
 cd "$ROOT/site"
