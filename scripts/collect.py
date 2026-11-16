@@ -119013,6 +119013,61 @@ def fetch_sec_zynap(limit=15):
     return out
 
 
+
+
+def _make_feed_fetcher(key, label, feed, home):
+    """Data-driven feed fetcher factory — feeds_extra.json registers these."""
+    def _f(limit=15):
+        print(f"Fetching {label} feed...")
+        import xml.etree.ElementTree as ET
+        for attempt in range(3):
+            try:
+                req = urllib.request.Request(
+                    feed,
+                    headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+                with urllib.request.urlopen(req, timeout=20) as resp:
+                    root = _feed_root(resp)
+                break
+            except Exception as e:
+                print(f"  [warn] {key} attempt {attempt + 1} failed: {e}",
+                      file=sys.stderr)
+                if _retryable(e):
+                    time.sleep(2 * (attempt + 1))
+                else:
+                    return []
+        else:
+            return []
+        entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+        entries = entries[:limit]
+        out = []
+        for i, e in enumerate(entries):
+            title = (e.findtext("{*}title", default="") or "").strip()
+            url = (e.findtext("{*}link", default="") or "").strip()
+            if not url:
+                for l in e.findall("{*}link"):
+                    if l.get("rel", "alternate") == "alternate":
+                        url = l.get("href", "")
+                        break
+            url = url or home
+            out.append(item(key, title, url, len(entries) - i, "feed rank"))
+        return out
+    return _f
+
+
+def _extra_feed_fetchers():
+    """Load data-driven feeds from data/feeds_extra.json ({key: [label, feed, home]})."""
+    import glob
+    out = {}
+    for path in glob.glob(os.path.join(os.path.dirname(__file__), "feeds_*.json")):
+        try:
+            with open(path) as f:
+                for key, row in json.load(f).items():
+                    out[key] = _make_feed_fetcher(key, *row)
+        except Exception as e:
+            print(f"  [warn] {path} skipped: {e}", file=sys.stderr)
+    return out
+
+
     fetchers = {
         "sec_blaze_s_security_blog": fetch_sec_blaze_s_security_blog,
         "sec_bushidotoken_threat_intel": fetch_sec_bushidotoken_threat_intel,
@@ -122148,6 +122203,8 @@ def fetch_sec_zynap(limit=15):
     }
     # Fetchers are independent — run them concurrently (slowest source bounds
     # the run instead of the sum of all sources).
+    fetchers.update(_extra_feed_fetchers())
+
     sections, health = {}, {}
 
     # reddit.com rate-limits bursts (429s); serialize that lane.
@@ -122191,7 +122248,7 @@ def fetch_sec_zynap(limit=15):
             print(f"  {name}: FAILED {e}")
         return name, items, int((time.time() - t0) * 1000)
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as pool:
         for name, items, ms in pool.map(run_one, fetchers.items()):
             sections[name] = items
             health[name] = {"ok": bool(items), "items": len(items), "ms": ms}

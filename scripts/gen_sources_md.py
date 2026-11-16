@@ -48,6 +48,16 @@ for k, fn in re.findall(r'"(\w+)": (fetch_\w+),', src):
     else:
         missing.append(k)
 
+# data-driven feeds from scripts/feeds_*.json ({key: [label, feed, home]})
+for path in sorted((ROOT / "scripts").glob("feeds_*.json")):
+    import json
+    for key, (label, feed, home) in json.load(open(path)).items():
+        host = re.sub(r"^https?://", "", feed)
+        host = re.sub(r"[/?].*$", "", host)
+        if key in {r[0] for r in rows}:
+            continue
+        rows.append((key, label, host))
+
 out = [
     "# Source registry",
     "",
