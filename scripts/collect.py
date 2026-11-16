@@ -179,9 +179,10 @@ def get_json(url, headers=None, retries=2):
 
 def item(source, title, url, score, metric, tags=None, comments=0,
          author=None, extra=None):
+    import html as _html
     d = {
         "source": source,
-        "title": title,
+        "title": _html.unescape(title) if title else title,
         "url": url,
         "score": score,
         "metric": metric,
