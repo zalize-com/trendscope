@@ -32,9 +32,11 @@ jobs:
       - name: Verify parity-critical output
         run: |
           test -f site/dist/index.html
+          test -f site/dist/tools/index.html
+          test ! -f site/dist/tools.html
           grep -q 'class="topbar"' site/dist/index.html
           grep -q 'skiplink' site/dist/index.html
-          echo "build sanity: index.html present with topbar + skiplink"
+          echo "build sanity: index + tools/index present, no stray tools.html"
 
       - uses: actions/upload-artifact@v4
         with:
