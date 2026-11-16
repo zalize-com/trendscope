@@ -19,7 +19,7 @@ if [ -n "$BASE" ]; then
   echo "rebased root-absolute refs -> $BASE"
 fi
 if [ -n "$ORIGIN" ] && [ "$ORIGIN" != "$PREVIEW" ]; then
-  find dist \( -name '*.xml' -o -name '*.html' \) -print0 | xargs -0 sed -i \
-    "s#${PREVIEW}#${ORIGIN%/}#g"
+  find dist \( -name '*.xml' -o -name '*.html' -o -name '*.txt' \) -print0 \
+    | xargs -0 sed -i "s#${PREVIEW}#${ORIGIN%/}#g"
   echo "rewrote origin $PREVIEW -> ${ORIGIN%/}"
 fi
