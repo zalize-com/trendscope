@@ -35,9 +35,16 @@ jobs:
 
       - name: Build site
         working-directory: site
+        env:
+          # Project Pages serves at https://zalize-com.github.io/trendscope —
+          # rebase root-absolute URLs onto that subpath. Swap both values if a
+          # custom domain (e.g. data.zalize.com) is wired up instead.
+          SITE_ORIGIN: 'https://zalize-com.github.io/trendscope'
+          SITE_BASE: '/trendscope'
         run: |
           npm ci
           npm run build
+          bash ../scripts/migrate/rebase.sh
 
       - name: Overlay repo data/assets onto the build
         # dist already carries data/ via public symlink copy; keep as

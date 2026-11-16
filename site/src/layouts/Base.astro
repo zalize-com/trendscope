@@ -33,7 +33,10 @@ const {
   skipTo = '#board',
 } = Astro.props;
 
-const ORIGIN = 'https://trendscope--plov6nur.preview.devinapps.com';
+// Site origin: override with SITE_ORIGIN env var at build time
+// (Pages flip: SITE_ORIGIN=https://zalize-com.github.io npm run build).
+const ORIGIN = import.meta.env.SITE_ORIGIN
+  ?? 'https://trendscope--plov6nur.preview.devinapps.com';
 const canonical = new URL(path, ORIGIN).href;
 const ogImage = `${ORIGIN}/og.jpg`;
 const ogT = ogTitle ?? title;
