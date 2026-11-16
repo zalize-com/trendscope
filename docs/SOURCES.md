@@ -1,9 +1,26 @@
 # Source registry
 
-2984 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
+3001 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
 
 | Key | Description | Host |
 |---|---|---|
+| `tidyfirst` | Tidy First (Kent Beck) | `tidyfirst.substack.com` |
+| `techworldmilan` | Tech World With Milan | `newsletter.techworld-with-milan.com` |
+| `refactoringfm` | Refactoring (Luca Rossi) | `refactoring.fm` |
+| `codingconfessions` | Coding Confessions | `blog.codingconfessions.com` |
+| `strategize` | Strategize Your Career | `strategize.substack.com` |
+| `hulry` | Hulry | `hulry.com` |
+| `byrslf` | BYRSLF (Medium) | `byrslf.co` |
+| `betterprog` | Better Programming | `betterprogramming.pub` |
+| `fedoramag` | Fedora Magazine | `fedoramagazine.org` |
+| `lennysnewsletter` | Lenny Newsletter | `www.lennysnewsletter.com` |
+| `netflixtech` | Netflix TechBlog | `netflixtechblog.com` |
+| `prageng` | Pragmatic Engineer NL | `newsletter.pragmaticengineer.com` |
+| `developingdev` | Developing Dev | `www.developing.dev` |
+| `engineerscodex` | Engineers Codex | `read.engineerscodex.com` |
+| `codecentric` | codecentric Blog | `blog.codecentric.de` |
+| `slackeng` | Slack Engineering | `slack.engineering` |
+| `spotify` | Spotify Engineering | `engineering.atspotify.com` |
 | `eb_artsy` | Artsy | `artsy.github.io` |
 | `eb_atlassian` | Atlassian | `www.atlassian.com` |
 | `eb_blender` | Blender | `code.blender.org` |
