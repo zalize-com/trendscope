@@ -3,33 +3,19 @@
 Everything below needs a human click (account or repo permissions we don't
 have). Ordered by impact-per-click. Estimated total time: **~10 minutes**.
 
-## 1. Publish both sites (highest impact — both currently code-only)
+## 1. ~~Publish both sites~~ ✅ DONE 2026-11-17 (Cloudflare Pages)
 
-### Path A — Cloudflare Pages (preferred once CF_API_KEY is fixed)
+- **https://trendscope.zalize.com** — live, 64 pages, data proxied fresh from repo
+- **https://feedpaper.zalize.com** — live
+- Backup URLs: trendscope-660.pages.dev / feedpaper.pages.dev
+- `trendscope.pages.dev` is taken by an unrelated project — canonical is the zalize domain.
 
-Provide a working Cloudflare credential as org secret `CF_API_KEY`
-(either an **API Token** with Account→Pages→Edit, or the **Global API Key**
-paired with `CF_EMAIL`) and we run `bash scripts/deploy_cf.sh` →
-`trendscope.pages.dev` goes live immediately. The >25 MiB data files are
-served via `_redirects` → GitHub raw. No GitHub-side clicks needed at all.
+### Remaining clicks here
 
-### Path B — GitHub Pages
-
-| Repo | Steps |
-|---|---|
-| trendscope | [Settings → Pages](https://github.com/zalize-com/trendscope/settings/pages) → Source: **GitHub Actions** → Save |
-| feedpaper | [Settings → Pages](https://github.com/zalize-com/feedpaper/settings/pages) → same: main / root → Save |
-
-trendscope serves the **Astro build** (`site/dist` — 64 migrated pages, data
-files included). The `pages deploy` workflow is ready: after enabling,
-uncomment the `push:` trigger in `.github/workflows/pages.yml` (lines 8-14)
-so future site/data pushes redeploy automatically, then run it once manually
-(Actions → "pages deploy" → Run workflow).
-
-Result: `zalize-com.github.io/trendscope` + `zalize-com.github.io/feedpaper` live
-in ~1 min. Dashboard (index/zh/YouTube tabs), full-text search, embed widget,
-feed.xml, sitemap and every API endpoint activate immediately — the site
-reads files straight from the repo.
+| Item | Why | Steps |
+|---|---|---|
+| feedpaper repo → public | fork-template product needs it; also re-enables live-data proxying (private raw 404s) | [Settings → Danger Zone → Change visibility](https://github.com/zalize-com/feedpaper/settings) → public |
+| (optional) auto-redeploy secrets | lets Actions redeploy the static layer after pushes — data already stays fresh via raw proxy | repo Settings → Secrets → `CLOUDFLARE_API_KEY`, `CLOUDFLARE_EMAIL`, `CLOUDFLARE_ACCOUNT_ID` + variable `CF_DEPLOY_ENABLED=1` |
 
 ## 2. Say the word and we ship the submissions
 
