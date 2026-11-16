@@ -115858,7 +115858,7 @@ def fetch_sec_google_threat_analysis_group(limit=15):
     for attempt in range(3):
         try:
             req = urllib.request.Request(
-                "https://blog.google/rss",
+                "https://blog.google/rss/",
                 headers={"User-Agent": UA, "Accept": "application/rss+xml"})
             with urllib.request.urlopen(req, timeout=20) as resp:
                 root = _feed_root(resp)
@@ -118252,7 +118252,7 @@ def fetch_sec_sentinelone(limit=15):
     for attempt in range(3):
         try:
             req = urllib.request.Request(
-                "https://www.sentinelone.com/blog/feed",
+                "https://www.sentinelone.com/blog/feed/",
                 headers={"User-Agent": UA, "Accept": "application/rss+xml"})
             with urllib.request.urlopen(req, timeout=20) as resp:
                 root = _feed_root(resp)
@@ -118708,7 +118708,7 @@ def fetch_sec_wiz_blog(limit=15):
     for attempt in range(3):
         try:
             req = urllib.request.Request(
-                "https://www.wiz.io/blog/rss",
+                "https://www.wiz.io/feed/rss.xml",
                 headers={"User-Agent": UA, "Accept": "application/rss+xml"})
             with urllib.request.urlopen(req, timeout=20) as resp:
                 root = _feed_root(resp)
