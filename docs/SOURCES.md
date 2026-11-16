@@ -1,9 +1,139 @@
 # Source registry
 
-3001 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
+3131 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
 
 | Key | Description | Host |
 |---|---|---|
+| `sec_blaze_s_security_blog` | Blaze's Security Blog | `bartblaze.blogspot.com` |
+| `sec_bushidotoken_threat_intel` | BushidoToken Threat Intel | `blog.bushidotoken.net` |
+| `sec_securitybreak` | SecurityBreak | `blog.securitybreak.io` |
+| `sec_connof_mcgarr` | Connof McGarr | `connormcgarr.github.io` |
+| `sec_databreaches` | DataBreaches | `databreaches.net` |
+| `sec_deepdarkcti` | deepdarkCTI | `deepdarkcti.com` |
+| `sec_defend_network_daily_briefings` | defend.network Daily Briefings | `defend.network` |
+| `sec_doublepulsar_kevin_beaumont` | DoublePulsar (Kevin Beaumont) | `doublepulsar.com` |
+| `sec_cyber_intelligence_insights` | Cyber Intelligence Insights | `intelinsights.substack.com` |
+| `sec_km_sec` | KM Sec | `kmsec.uk` |
+| `sec_raghavti_research` | Raghavti Research | `medium.com` |
+| `sec_tal_be_ery` | Tal Be'ery | `medium.com` |
+| `sec_on_the_hunt_newton_paul` | On the Hunt (Newton Paul) | `newtonpaul.com` |
+| `sec_the_dfir_report` | The DFIR Report | `thedfirreport.com` |
+| `sec_the_raven_file` | The Raven File | `theravenfile.com` |
+| `sec_bellingcat` | bellingcat | `www.bellingcat.com` |
+| `sec_center_for_internet_security` | Center for Internet Security | `www.cisecurity.org` |
+| `sec_darknet` | Darknet | `www.darknet.org.uk` |
+| `sec_lohrmann_on_cybersecurity` | Lohrmann on Cybersecurity | `www.govtech.com` |
+| `sec_schneier_on_security` | Schneier on Security | `www.schneier.com` |
+| `sec_will_s_root` | Will's Root | `www.willsroot.io` |
+| `sec_citizen_lab` | Citizen Lab | `citizenlab.ca` |
+| `sec_ctrl_alt_int3l` | Ctrl-Alt-Int3l | `ctrlaltintel.com` |
+| `sec_detect_fyi` | Detect FYI | `detect.fyi` |
+| `sec_open_source_malware` | Open Source Malware | `opensourcemalware.com` |
+| `sec_ransom_isac` | Ransom-ISAC | `ransom-isac.org` |
+| `sec_jpcert` | JPCERT | `blogs.jpcert.or.jp` |
+| `sec_cert_polska` | Cert Polska | `cert.pl` |
+| `sec_cert_fr_menaces_et_incidents` | CERT-FR MENACES ET INCIDENTS | `www.cert.ssi.gouv.fr` |
+| `sec_security_affairs` | Security Affairs | `securityaffairs.co` |
+| `sec_ars_technica` | Ars Technica | `arstechnica.com` |
+| `sec_cyberscoop` | Cyberscoop | `cyberscoop.com` |
+| `sec_security_online` | Security Online | `securityonline.info` |
+| `sec_the_cyber_express` | The Cyber Express | `thecyberexpress.com` |
+| `sec_the_hacker_news` | The Hacker News | `feeds.feedburner.com` |
+| `sec_bleepingcomputer` | BleepingComputer | `www.bleepingcomputer.com` |
+| `sec_graham_cluley` | Graham Cluley | `grahamcluley.com` |
+| `sec_hackread` | HackRead | `hackread.com` |
+| `sec_nextgov` | NextGov | `www.nextgov.com` |
+| `sec_securityweek` | SecurityWeek | `www.securityweek.com` |
+| `sec_techrepublic` | TechRepublic | `www.techrepublic.com` |
+| `sec_the_guardian` | The Guardian | `www.theguardian.com` |
+| `sec_the_register` | The Register | `www.theregister.com` |
+| `sec_wired` | WIRED | `www.wired.com` |
+| `sec_zdnet` | ZDNet | `www.zdnet.com` |
+| `sec_any_run` | ANY.RUN | `any.run` |
+| `sec_arctic_wolf` | Arctic Wolf | `arcticwolf.com` |
+| `sec_ahnlab_security_intelligence_center` | AhnLab Security Intelligence Center | `asec.ahnlab.com` |
+| `sec_aws_security` | AWS Security | `aws.amazon.com` |
+| `sec_bforeai` | BforeAI | `bfore.ai` |
+| `sec_eclecticiq` | EclecticIQ | `blog.eclecticiq.com` |
+| `sec_google_threat_analysis_group` | Google Threat Analysis Group | `blog.google` |
+| `sec_knowbe4` | KnowBe4 | `blog.knowbe4.com` |
+| `sec_morphisec_breach_prevention_blog` | Morphisec Breach Prevention Blog | `www.morphisec.com` |
+| `sec_nviso` | NVISO | `blog.nviso.eu` |
+| `sec_predictive_defense_blog` | Predictive Defense Blog | `blog.predictivedefense.io` |
+| `sec_pulsedive` | Pulsedive | `blog.pulsedive.com` |
+| `sec_qualys_blog` | Qualys Blog | `blog.qualys.com` |
+| `sec_sekoia` | Sekoia | `blog.sekoia.io` |
+| `sec_cisco_talos_intelligence_group` | Cisco Talos Intelligence Group | `blog.talosintelligence.com` |
+| `sec_virustotal_blog` | VirusTotal Blog | `blog.virustotal.com` |
+| `sec_qianxin_xlab` | QiAnXin XLab | `blog.xlab.qianxin.com` |
+| `sec_brandefense_blog` | BRANDEFENSE Blog | `brandefense.io` |
+| `sec_canary_trap` | Canary Trap | `canarytrap.com` |
+| `sec_censys` | Censys | `censys.com` |
+| `sec_checkmarx` | Checkmarx | `checkmarx.com` |
+| `sec_claroty` | Claroty | `claroty.com` |
+| `sec_cofense_intelligence` | Cofense Intelligence | `cofense.com` |
+| `sec_cyble` | Cyble | `cyble.com` |
+| `sec_fidelis_security` | Fidelis Security | `fidelissecurity.com` |
+| `sec_google_project_zero_legacy` | Google Project Zero (Legacy) | `projectzero.google` |
+| `sec_heimdal` | Heimdal | `heimdalsecurity.com` |
+| `sec_ironscales` | IRONSCALES | `ironscales.com` |
+| `sec_iverify` | iVerify | `rss.iverify.com` |
+| `sec_cosmicbytez` | CosmicBytez | `labs.cosmicbytez.ca` |
+| `sec_jumpsec_labs` | JumpSec Labs | `labs.jumpsec.com` |
+| `sec_levelblue_spiderlabs_blog` | LevelBlue SpiderLabs Blog | `www.levelblue.com` |
+| `sec_rst_cloud` | RST Cloud | `medium.com` |
+| `sec_doctor_web` | Doctor Web | `news.drweb.com` |
+| `sec_specterops_blog` | SpecterOps Blog | `specterops.io` |
+| `sec_red_canary` | Red Canary | `redcanary.com` |
+| `sec_reliaquest` | Reliaquest | `reliaquest.com` |
+| `sec_checkpoint` | Checkpoint | `research.checkpoint.com` |
+| `sec_securelist_by_kaspersky` | SecureList by Kaspersky | `securelist.com` |
+| `sec_google_online_security` | Google Online Security | `security.googleblog.com` |
+| `sec_security_scorecard` | Security Scorecard | `securityscorecard.com` |
+| `sec_soc_prime` | SOC Prime | `socprime.com` |
+| `sec_soc_radar` | SOC Radar | `socradar.io` |
+| `sec_the_record` | The Record | `therecord.media` |
+| `sec_threatmon` | Threatmon | `threatmon.io` |
+| `sec_trustedsec` | TrustedSec | `trustedsec.com` |
+| `sec_paloalto_networks_unit_42` | PaloAlto Networks Unit 42 | `unit42.paloaltonetworks.com` |
+| `sec_aquasec` | AquaSec | `www.aquasec.com` |
+| `sec_aryaka` | Aryaka | `www.aryaka.com` |
+| `sec_black_hills` | Black Hills | `www.blackhillsinfosec.com` |
+| `sec_certik` | Certik | `www.certik.com` |
+| `sec_chainalysis` | Chainalysis | `www.chainalysis.com` |
+| `sec_crowdstrike` | Crowdstrike | `www.crowdstrike.com` |
+| `sec_cybereason` | Cybereason | `www.levelblue.com` |
+| `sec_deep_instinct` | Deep Instinct | `www.deepinstinct.com` |
+| `sec_dragos` | Dragos | `www.dragos.com` |
+| `sec_group_ib` | Group IB | `www.group-ib.com` |
+| `sec_hack_the_box` | Hack the Box | `www.hackthebox.com` |
+| `sec_helpnet_security` | Helpnet Security | `www.helpnetsecurity.com` |
+| `sec_infostealers_by_hudsonrock` | Infostealers by HudsonRock | `www.infostealers.com` |
+| `sec_intrinsec` | Intrinsec | `www.intrinsec.com` |
+| `sec_jumpsec_blog` | JumpSec Blog | `www.jumpsec.com` |
+| `sec_malwarebytes_labs` | Malwarebytes Labs | `www.malwarebytes.com` |
+| `sec_microsoft_security_blog` | Microsoft Security Blog | `www.microsoft.com` |
+| `sec_netskope` | NetSkope | `www.netskope.com` |
+| `sec_nextron` | Nextron | `www.nextron-systems.com` |
+| `sec_proofpoint` | Proofpoint | `www.proofpoint.com` |
+| `sec_recorded_future` | Recorded Future | `www.recordedfuture.com` |
+| `sec_security_com` | security.com | `www.security.com` |
+| `sec_sentinelone` | SentinelOne | `www.sentinelone.com` |
+| `sec_seqrite` | seqrite | `www.seqrite.com` |
+| `sec_sophos` | Sophos | `www.sophos.com` |
+| `sec_spamhaus` | SpamHaus | `www.spamhaus.org` |
+| `sec_sysdig` | Sysdig | `www.sysdig.com` |
+| `sec_tenable` | Tenable | `feeds.feedburner.com` |
+| `sec_trinity_cyber` | Trinity Cyber | `www.trinitycyber.com` |
+| `sec_upguard_blog` | UpGuard Blog | `www.upguard.com` |
+| `sec_vectra` | Vectra | `www.vectra.ai` |
+| `sec_virus_bulletin` | Virus Bulletin | `www.virusbulletin.com` |
+| `sec_volexity` | Volexity | `www.volexity.com` |
+| `sec_we_live_security_by_eset` | We Live Security by ESET | `www.welivesecurity.com` |
+| `sec_wiz_blog` | WIZ Blog | `www.wiz.io` |
+| `sec_zero_day_initiative` | Zero Day Initiative | `www.thezdi.com` |
+| `sec_zimperium` | Zimperium | `zimperium.com` |
+| `sec_zynap` | Zynap | `www.zynap.com` |
 | `tidyfirst` | Tidy First (Kent Beck) | `tidyfirst.substack.com` |
 | `techworldmilan` | Tech World With Milan | `newsletter.techworld-with-milan.com` |
 | `refactoringfm` | Refactoring (Luca Rossi) | `refactoring.fm` |
