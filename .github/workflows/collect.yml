@@ -53,7 +53,9 @@ jobs:
       - name: Aggregates API (domains/authors)
         run: python3 scripts/aggregates.py
       - name: OPML export
-        run: python3 scripts/opml.py
+        # gen_opml.py also sweeps data-driven feeds_*.json sources;
+        # scripts/opml.py only regexes literal collect.py fetchers (3,116 < 9,202)
+        run: python3 scripts/gen_opml.py
 
       - name: Regenerate weekly aggregate API
         run: python3 scripts/weekly.py || true
