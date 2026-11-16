@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>中文 · trendscope</title>
-<meta name="description" content="中文开发者注意力——49 个中文技术源的当日混排：量子位、机器之心、ByteByteGo 中文、字节/美团/腾讯技术团队、wechat2rss 公众号镜像、中文独立博客。">
+<meta name="description" content="中文开发者注意力——53 个中文技术源的当日混排：量子位、机器之心、ByteByteGo 中文、字节/美团/腾讯技术团队、wechat2rss 公众号镜像、中文独立博客。">
 <link rel="alternate" type="application/rss+xml" title="trendscope snapshots" href="feed.xml">
 <style>
   :root { --bg:#0d1117; --fg:#e6edf3; --mut:#8b949e; --card:#161b22; --line:#30363d; --acc:#58a6ff; }
@@ -38,7 +38,7 @@
 <div class="wrap">
   <nav><a href="index.html">trendscope</a> · <a href="about.html">about</a> · <a href="datasets.html">datasets</a> · <a href="trendscope.opml">OPML</a></nav>
   <h1>中文<em>开发者注意力</em></h1>
-  <p class="muted">49 个中文技术源的当日混排 — 量子位 · 机器之心 · 新智元 · PaperWeekly · Datawhale · HuggingFace 中文 ·
+  <p class="muted">53 个中文技术源的当日混排 — 量子位 · 机器之心 · 新智元 · PaperWeekly · Datawhale · HuggingFace 中文 ·
     字节/小米/得物/爱奇艺/百度安全/腾讯/阿里/B站技术（wechat2rss 公众号镜像）· 宝玉 · 李继刚 · 傅盛 · 歸藏 等独立博客。
     全部源打包在 <a href="trendscope.opml">OPML</a> 里可一键导入。</p>
   <div class="grid" id="srcs"></div>
@@ -46,14 +46,14 @@
   <footer>trendscope · the developer attention dataset · <a href="index.html">main board →</a></footer>
 </div>
 <script>
-const ZH = new Set("billwang1990github,blogcodingnow,blogdevtang,colobu,dbanotes,cnblogs,headsalon,onevcat,techmeituan,casatwy,daimajia,42jing,aigcweekly,akimio,bojieli,yuanchaofa,huhuhang,liamding,lyricquail,lyricim,liduos,fusheng,quaily,baoyu,lijigang,datawhale,huggingface,paperweekly,xinzhi,jiqizhixin,mlbeginner,qbitai,qbitaigzh,xgo5b632,xgo831fa,bilibilitech,bytetech,xiaomitech,dewutech,iqiyitech,baidusec,tencenttech,alimiddle,the5fire,luenci,michealwayne,maonie,kekxv,corvo".split(","));
+const ZH = new Set("billwang1990github,blogcodingnow,blogdevtang,colobu,dbanotes,cnblogs,headsalon,onevcat,techmeituan,casatwy,daimajia,42jing,aigcweekly,akimio,bojieli,yuanchaofa,huhuhang,liamding,lyricquail,lyricim,liduos,fusheng,quaily,baoyu,lijigang,datawhale,huggingface,paperweekly,xinzhi,jiqizhixin,mlbeginner,qbitai,qbitaigzh,xgo5b632,xgo831fa,bilibilitech,bytetech,xiaomitech,dewutech,iqiyitech,baidusec,tencenttech,alimiddle,the5fire,luenci,michealwayne,maonie,kekxv,corvo,nl_hardcored,nl_pythoncat,laborinfocn,bestxtools".split(","));
 const ZH_LABEL = {
   "42jing":"42 章经","aigcweekly":"AIGC Weekly","akimio":"山与","bojieli":"Bojie Li",
   "yuanchaofa":"元超法","huhuhang":"胡涂说","liamding":"Liam Ding","lyricquail":"Lyric",
   "lyricim":"Lyric 编程","liduos":"李懂","fusheng":"傅盛","quaily":"Quaily",
   "baoyu":"宝玉","lijigang":"李继刚","datawhale":"Datawhale","huggingface":"Hugging Face 中文",
   "paperweekly":"PaperWeekly","xinzhi":"新智元","jiqizhixin":"机器之心","mlbeginner":"ML入门",
-  "qbitai":"量子位","qbitaigzh":"量子位 QbitAI","xgo5b632":"XGo","xgo831fa":"XGo 技术",
+  "qbitai":"量子位","qbitaigzh":"量子位 QbitAI","nl_hardcored":"硬核小卒","nl_pythoncat":"Python潮流周刊","laborinfocn":"工劳小报","bestxtools":"好工具周刊","xgo5b632":"XGo","xgo831fa":"XGo 技术",
   "bilibilitech":"B站技术","bytetech":"字节跳动技术","xiaomitech":"小米技术","dewutech":"得物技术",
   "iqiyitech":"爱奇艺技术","baidusec":"百度安全","tencenttech":"腾讯技术","alimiddle":"阿里中间件",
   "the5fire":"the5fire","luenci":"论词","michealwayne":"Micheal Wayne","maonie":"猫呢","kekxv":"kekxv","corvo":"Corvo",
