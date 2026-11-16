@@ -102,3 +102,5 @@ cleared, or the catch must recreate them.
 26. **`urlopen(timeout=)` 拦不住 TCP-connect 黑洞主机**：timeout 只管建连后的读写，对 SYN 发包后静默消失的主机（路由黑洞/丢包防火墙）无效——两线程卡死 40min，py-spy 剖出停在 `create_connection`。批量探测管道必须换 `curl -m N` 子进程做硬超时兜底（curl 的 -m 覆盖整个传输含 connect），或显式 socket timeout 包裹 connect 阶段。教训同 #24：批量扫描器要假设网络层全是恶意输入。
 
 27. **Dedupe at the feed-URL level before ingesting a new pool** — key-name and domain checks miss cross-lane duplicates: the same blog re-harvested under `pb_`/`tb_`/`br_`/`sec_` prefixes with different slugs. 34 groups → 35 duplicate keys found only by comparing `xmlUrl` across the whole registry. Keep the original lane's key; re-generate OPML/SOURCES after pruning.
+
+28. **大文件插入波次后必跑入口冒烟**：fetcher 批量插入把 `main()` 截断成 3 行 stub——fetchers dict+线程池+写库全成了最后一个 fetcher 里的死代码，collect 静默空跑 ~1h（0 字节日志两次"静默死亡"的根因）。教训：批量代码生成/插入后，除 `python3 -c "import ast"` 检查 main() 函数体规模外，最直接的是真跑一次入口看第一行输出。语法可解析 ≠ 主路径活着。
