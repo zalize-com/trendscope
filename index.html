@@ -392,8 +392,20 @@ function render(items, tab) {
       const el = document.getElementById("board-sub");
       if (el && !el.dataset.cross) { el.innerHTML += ` · <b>${cross} crossovers</b>`; el.dataset.cross = "1"; }
     }
-    list = [...merged.values()]
-      .sort((a, b) => b.heat - a.heat).slice(0, 30).map(x => x.it);
+    // Diversity caps: a high-frequency lane (e.g. 130 security blogs) must not
+    // crowd the mixed board — max 4 per lane prefix and max 2 per source.
+    const laneOf = s => (s.includes("_") ? s.split("_")[0] : s);
+    const laneCount = {}, srcCount = {};
+    list = [];
+    for (const x of [...merged.values()].sort((a, b) => b.heat - a.heat)) {
+      const lane = laneOf(x.it.source);
+      if ((laneCount[lane] || 0) >= 4) continue;
+      if ((srcCount[x.it.source] || 0) >= 2) continue;
+      laneCount[lane] = (laneCount[lane] || 0) + 1;
+      srcCount[x.it.source] = (srcCount[x.it.source] || 0) + 1;
+      list.push(x.it);
+      if (list.length >= 30) break;
+    }
   } else if (tab === "yt") {
     const queues = items.filter(([s]) => YT.has(s)).map(([, its]) => [...its]);
     list = [];

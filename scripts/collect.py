@@ -32,11 +32,46 @@ def xml_escape(t):
     return (str(t).replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
             .replace('"',"&quot;").replace("'","&apos;"))
 
+def _decode_body(resp):
+    """Decode a response body honoring its real charset: the Content-Type
+    header first, then the XML encoding declaration, then strict UTF-8,
+    then a detector fallback. Blind utf-8-sig+replace turned GBK/latin1
+    feeds into mojibake that the entity fix cannot repair."""
+    data = resp.read()
+    try:
+        cs = resp.headers.get_content_charset()
+    except Exception:
+        cs = None
+    if cs:
+        try:
+            return data.decode(cs, errors="replace")
+        except (LookupError, UnicodeDecodeError):
+            pass
+    m = re.search(rb'encoding\s*=\s*["\']([A-Za-z0-9._-]+)["\']', data[:2000])
+    if m:
+        try:
+            return data.decode(m.group(1).decode("ascii"), errors="replace")
+        except (LookupError, UnicodeDecodeError):
+            pass
+    try:
+        return data.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        pass
+    try:
+        from charset_normalizer import from_bytes
+        best = from_bytes(data).best()
+        if best is not None:
+            return str(best)
+    except Exception:
+        pass
+    return data.decode("utf-8-sig", errors="replace")
+
+
 def _feed_root(resp):
     """Parse a feed body with a 3-layer degrade chain:
     plain parse -> entity-whitelist sanitize -> xmlns-inject -> namespace-strip."""
     import xml.etree.ElementTree as ET
-    raw = resp.read().decode("utf-8-sig", errors="replace").lstrip()
+    raw = _decode_body(resp).lstrip()
     try:
         root = ET.fromstring(raw)
     except ET.ParseError:
@@ -6254,7 +6289,7 @@ def fetch_blogappsnpr(limit=15):
                 "http://blog.apps.npr.org/atom.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                _raw = resp.read().decode("utf-8-sig").lstrip()
+                _raw = _decode_body(resp).lstrip()
                 try:
                     root = ET.fromstring(_raw)
                 except ET.ParseError:
