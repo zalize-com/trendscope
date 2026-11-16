@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T10:13:03.348708+00:00",
+ "generated_at": "2026-11-16T10:52:51.372747+00:00",
  "latest_snapshot": "2026-11-16",
  "total": 491,
  "authors": [
@@ -604,6 +604,21 @@
    }
   },
   {
+   "author": "New York Times",
+   "days_on_board": 2,
+   "items": 3,
+   "sources": [
+    "techmeme"
+   ],
+   "top_hit": {
+    "title": "Investigation: Howard Lutnick pushed to narrow chip curbs affecting a client of his former firm Cantor Fitzgerald whose Malaysia data center may serve Tencent (New York Times)",
+    "url": "https://www.techmeme.com/261115/p9#a261115p9",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "author": "snirgbs",
    "days_on_board": 2,
    "items": 3,
@@ -737,21 +752,6 @@
     "score": 85,
     "metric": "reactions",
     "date": "2026-11-14"
-   }
-  },
-  {
-   "author": "huamidev",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "github_trending"
-   ],
-   "top_hit": {
-    "title": "huamidev/GestaltX",
-    "url": "https://github.com/huamidev/GestaltX",
-    "score": 7616,
-    "metric": "stars",
-    "date": "2026-11-15"
    }
   }
  ]
