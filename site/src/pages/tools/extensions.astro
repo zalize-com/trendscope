@@ -1,0 +1,109 @@
+---
+import Base from "../../layouts/Base.astro";
+const title = "Manifest V2 killed your Chrome extension — free in-browser replacements";
+const description = "Chrome removed Manifest V2 utility extensions in 2025-2026. These free developer tools run entirely in a browser tab — no install, no permissions, no upload, no tracking. JSON viewer, color picker, diff, regex tester and 90+ more.";
+const path = '/tools/extensions.html';
+---
+<Base title={title} description={description} path={path} nav="tools">
+
+<div class="wrap">
+  <a class="back" href="index.html">← tools</a>
+  <h1>Chrome extension replacements</h1>
+  <p class="sub">Chrome removed the last Manifest V2 extensions in 2026. Utility extensions — JSON viewers, color pickers, text tools — were among the casualties. Everything below runs in a plain browser tab: nothing to install, no permissions to grant, nothing leaves your machine.</p>
+
+  <h2>Code &amp; data formats</h2>
+  <table>
+    <tr><th>Your extension did…</th><th>Use instead</th></tr>
+    <tr><td>JSON viewer / formatter</td><td><a href="index.html#json">JSON formatter</a></td></tr>
+    <tr><td>JSONPath / jq querying</td><td><a href="dev.html#jq">JSON query (jq-lite)</a></td></tr>
+    <tr><td>JSON → TypeScript interfaces</td><td><a href="dev.html#ts">JSON → TS</a></td></tr>
+    <tr><td>JSON → Go structs / schema / SQL</td><td><a href="dev.html#gostruct">JSON → Go</a> · <a href="dev.html#schema">JSON → schema</a> · <a href="dev.html#jsonsql">JSON → SQL</a></td></tr>
+    <tr><td>YAML ↔ JSON converter</td><td><a href="utils.html#yaml">YAML ↔ JSON</a></td></tr>
+    <tr><td>CSV viewer / CSV ↔ JSON</td><td><a href="utils.html#csv">CSV ↔ JSON</a> · <a href="dev.html#csvprof">CSV profiler</a></td></tr>
+    <tr><td>Diff / compare text</td><td><a href="more.html#diff">Text diff</a></td></tr>
+    <tr><td>Regex tester</td><td><a href="index.html#regex">Regex tester</a></td></tr>
+    <tr><td>Markdown preview</td><td><a href="more.html#md">Markdown preview</a> · <a href="more.html#html2md">HTML → Markdown</a></td></tr>
+    <tr><td>.gitignore generator</td><td><a href="dev.html#gi">.gitignore builder</a></td></tr>
+    <tr><td>crontab guru-style explainer</td><td><a href="utils.html#cron">Crontab explainer</a></td></tr>
+    <tr><td>curl → fetch/python converter</td><td><a href="dev.html#curl">curl → code</a></td></tr>
+  </table>
+
+  <h2>Text &amp; writing</h2>
+  <table>
+    <tr><th>Your extension did…</th><th>Use instead</th></tr>
+    <tr><td>Word count / text stats</td><td><a href="utils.html#text">Text inspector</a> · <a href="utils.html#freq">Word frequency</a></td></tr>
+    <tr><td>Case converter</td><td><a href="utils.html#case">Case converter</a></td></tr>
+    <tr><td>Sort / dedupe lines</td><td><a href="utils.html#sortlines">Sort &amp; dedupe lines</a></td></tr>
+    <tr><td>Lorem ipsum generator</td><td><a href="utils.html#lorem">Lorem ipsum generator</a></td></tr>
+    <tr><td>Slug / permalink maker</td><td><a href="utils.html#slug">Slug generator</a></td></tr>
+    <tr><td>Morse code</td><td><a href="utils.html#morse">Morse converter</a></td></tr>
+    <tr><td>Unicode inspector</td><td><a href="more.html#uni">Unicode inspector</a></td></tr>
+  </table>
+
+  <h2>Color &amp; design</h2>
+  <table>
+    <tr><th>Your extension did…</th><th>Use instead</th></tr>
+    <tr><td>Color picker / hex↔rgb</td><td><a href="utils.html#color">Color converter</a></td></tr>
+    <tr><td>WCAG contrast checker</td><td><a href="utils.html#contrast">Contrast checker</a></td></tr>
+    <tr><td>px ↔ rem converter</td><td><a href="web.html#pxrem">px ↔ rem</a></td></tr>
+    <tr><td>Aspect ratio calculator</td><td><a href="utils.html#aspect">Aspect ratio</a></td></tr>
+    <tr><td>File size converter</td><td><a href="utils.html#bytes">Unit converter</a></td></tr>
+  </table>
+
+  <h2>Web &amp; SEO</h2>
+  <table>
+    <tr><th>Your extension did…</th><th>Use instead</th></tr>
+    <tr><td>QR code generator</td><td><a href="web.html#qr">QR generator</a></td></tr>
+    <tr><td>Meta / OG tag previewer</td><td><a href="web.html#meta">Meta inspector</a> · <a href="web.html#og">OG card preview</a></td></tr>
+    <tr><td>SERP snippet preview</td><td><a href="web.html#serp">SERP preview</a></td></tr>
+    <tr><td>robots.txt tester</td><td><a href="web.html#robots">robots.txt checker</a></td></tr>
+    <tr><td>Sitemap generator</td><td><a href="web.html#sitemapgen">Sitemap generator</a></td></tr>
+    <tr><td>UTM link builder</td><td><a href="web.html#utm">UTM builder</a></td></tr>
+    <tr><td>Favicon generator</td><td><a href="web.html#favicon">Favicon tools</a></td></tr>
+    <tr><td>Web manifest builder</td><td><a href="web.html#manifest">Manifest builder</a></td></tr>
+    <tr><td>HTTP header inspector</td><td><a href="web.html#http">HTTP reference</a></td></tr>
+    <tr><td>RSS feed detector</td><td><a href="web.html#feed">Feed finder</a></td></tr>
+  </table>
+
+  <h2>Security &amp; auth</h2>
+  <table>
+    <tr><th>Your extension did…</th><th>Use instead</th></tr>
+    <tr><td>JWT debugger</td><td><a href="index.html#jwt">JWT decoder</a> · <a href="dev.html#jwtsign">JWT sign</a></td></tr>
+    <tr><td>Password generator</td><td><a href="utils.html#pwgen">Password generator</a> · <a href="dev.html#pw">Password tools</a></td></tr>
+    <tr><td>Base64 / URL encoder</td><td><a href="index.html#enc">Encoder/decoder</a></td></tr>
+    <tr><td>UUID generator</td><td><a href="utils.html#uuid">UUID v4</a></td></tr>
+    <tr><td>chmod calculator</td><td><a href="utils.html#chmod">chmod calculator</a></td></tr>
+    <tr><td>Hidden/unicode char finder</td><td><a href="dev.html#hidden">Hidden chars</a></td></tr>
+  </table>
+
+  <h2>Time, date &amp; numbers</h2>
+  <table>
+    <tr><th>Your extension did…</th><th>Use instead</th></tr>
+    <tr><td>Epoch / unix timestamp converter</td><td><a href="index.html#ts">Timestamp converter</a></td></tr>
+    <tr><td>Timezone converter</td><td><a href="utils.html#tz">Timezone converter</a></td></tr>
+    <tr><td>Date difference calculator</td><td><a href="utils.html#date">Date calculator</a></td></tr>
+    <tr><td>Roman numerals</td><td><a href="utils.html#roman">Roman numerals</a></td></tr>
+    <tr><td>Base converter (hex/bin/dec)</td><td><a href="dev.html#base">Base converter</a></td></tr>
+    <tr><td>IP subnet calculator</td><td><a href="dev.html#subnet">Subnet calculator</a></td></tr>
+    <tr><td>ASCII table</td><td><a href="dev.html#ascii">ASCII reference</a></td></tr>
+    <tr><td>semver compare</td><td><a href="utils.html#semver">semver compare</a></td></tr>
+  </table>
+
+  <p class="sub" style="margin-top:18px">Everything runs client-side — your data never leaves the tab. Bookmark once; no extension can be yanked from under you again. <a href="index.html">All 90+ tools →</a></p>
+</div>
+
+<footer>
+    Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
+    Source: <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a>
+  </footer>
+
+</Base>
+
+<style is:global>
+  .wrap { max-width: 860px; }
+  h2 { margin: 26px 0 8px; font-size: 17px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--dim); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+  td:first-child { color: var(--dim); width: 45%; }
+</style>
