@@ -1,9 +1,99 @@
 # Source registry
 
-2474 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
+2564 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
 
 | Key | Description | Host |
 |---|---|---|
+| `nl_air_around_ai` | Air Around AI | `airaroundai.substack.com` |
+| `nl_android_croissants` | Android Croissants | `android-croissants.com` |
+| `nl_artificial_intelligence_weekly` | Artificial Intelligence Weekly | `aiweekly.co` |
+| `nl_awesome_android_newsletter` | Awesome Android Newsletter | `android.libhunt.com` |
+| `nl_awesome_c_newsletter` | Awesome C++ Newsletter | `cpp.libhunt.com` |
+| `nl_awesome_go_weekly` | Awesome Go Weekly | `go.libhunt.com` |
+| `nl_awesome_ios_newsletter` | Awesome iOS Newsletter | `ios.libhunt.com` |
+| `nl_awesome_java_newsletter` | Awesome Java Newsletter | `java.libhunt.com` |
+| `nl_awesome_javascript_newsletter` | Awesome JavaScript Newsletter | `js.libhunt.com` |
+| `nl_awesome_kotlin_newsletter` | Awesome Kotlin Newsletter | `kotlin.libhunt.com` |
+| `nl_awesome_net_newsletter` | Awesome .Net Newsletter | `dotnet.libhunt.com` |
+| `nl_awesome_node_js_newsletter` | Awesome Node.js Newsletter | `nodejs.libhunt.com` |
+| `nl_awesome_php_newsletter` | Awesome PHP Newsletter | `php.libhunt.com` |
+| `nl_awesome_python_newsletter` | Awesome Python Newsletter | `python.libhunt.com` |
+| `nl_awesome_react_newsletter` | Awesome React Newsletter | `react.libhunt.com` |
+| `nl_awesome_ruby_newsletter` | Awesome Ruby Newsletter | `ruby.libhunt.com` |
+| `nl_awesome_rust_newsletter` | Awesome Rust Newsletter | `rust.libhunt.com` |
+| `nl_awesome_scala_newsletter` | Awesome Scala Newsletter | `scala.libhunt.com` |
+| `nl_awesome_self_hosted_newsletter` | Awesome Self Hosted Newsletter | `selfhosted.libhunt.com` |
+| `nl_awesome_swift_newsletter` | Awesome Swift Newsletter | `swift.libhunt.com` |
+| `nl_awesome_sysadmin_newsletter` | Awesome SysAdmin Newsletter | `sysadmin.libhunt.com` |
+| `nl_big_tech_digest` | Big Tech Digest | `bigtechdigest.substack.com` |
+| `nl_build_blockchain` | Build Blockchain | `www.buildblockchain.tech` |
+| `nl_buzzrobot_ai_newsletter` | BuzzRobot AI Newsletter | `buzzrobot.substack.com` |
+| `nl_c_digest` | C# Digest | `csharpdigest.net` |
+| `nl_cron_weekly` | Cron.Weekly | `www.cronweekly.com` |
+| `nl_crypto_weekly` | Crypto Weekly | `cryptoweekly.co` |
+| `nl_css_layout_news` | CSS Layout News | `csslayout.news` |
+| `nl_data_elixir` | Data Elixir | `dataelixir.com` |
+| `nl_design_systems_news` | Design Systems News | `news.design.systems` |
+| `nl_discover_dev` | Discover dev | `www.discoverdev.io` |
+| `nl_elm_weekly` | Elm Weekly | `www.elmweekly.nl` |
+| `nl_ewebdesign` | eWebDesign | `ewebdesign.com` |
+| `nl_figmalion` | Figmalion | `figmalion.com` |
+| `nl_finxter_ai_nuggets` | Finxter AI Nuggets | `blog.finxter.com` |
+| `nl_flutter_croissants` | Flutter Croissants | `flutter-croissants.com` |
+| `nl_founders_grid` | Founders Grid | `smash.vc` |
+| `nl_friday_front_end` | Friday Front-end | `zendev.com` |
+| `nl_frontend_front` | Frontend Front | `frontendfront.com` |
+| `nl_gamedev_js_weekly` | Gamedev.js Weekly | `gamedevjsweekly.com` |
+| `nl_hack_design` | Hack Design | `hackdesign.org` |
+| `nl_hacking_ui` | Hacking UI | `hackingui.com` |
+| `nl_high_growth_engineer` | High Growth Engineer | `read.highgrowthengineer.com` |
+| `nl_hotwire_dev_newsletter` | ⚡️ Hotwire dev newsletter | `masilotti.com` |
+| `nl_indie_watch` | Indie Watch | `indie.watch` |
+| `nl_ios_dev_tools_newsletter` | iOS Dev Tools Newsletter | `iosdev.tools` |
+| `nl_la_semana_php` | La semana PHP | `www.lasemanaphp.com` |
+| `nl_leadership_in_tech` | Leadership in Tech | `leadershipintech.com` |
+| `nl_learn_kubernetes_weekly` | Learn Kubernetes weekly | `learnkube.com` |
+| `nl_lwkd` | LWKD | `lwkd.info` |
+| `nl_monitoring_weekly` | Monitoring Weekly | `monitoring.love` |
+| `nl_nixos` | NixOS | `nixos.org` |
+| `nl_nixos_weekly` | NixOS Weekly | `weekly.nixos.org` |
+| `nl_node_js_security_newsletter` | Node.js Security Newsletter | `www.nodejs-security.com` |
+| `nl_objc` | ObjC | `www.objc.io` |
+| `nl_obsidian_rocks` | Obsidian Rocks | `obsidian.rocks` |
+| `nl_perl_weekly` | Perl Weekly | `perlweekly.com` |
+| `nl_phaser_world` | Phaser World | `phaser.io` |
+| `nl_postgres_weekly` | Postgres Weekly | `postgresweekly.com` |
+| `nl_programming_digest` | Programming Digest | `programmingdigest.net` |
+| `nl_programming_feedback_for_advanced_beginners` | Programming Feedback for Advanced Beginners | `advancedbeginners.substack.com` |
+| `nl_pycoder_s_weekly` | PyCoder's Weekly | `pycoders.com` |
+| `nl_python_morsels_newsletter` | Python Morsels Newsletter | `www.pythonmorsels.com` |
+| `nl_react_digest` | React Digest | `reactdigest.net` |
+| `nl_reading` | Λ-Reading | `rizime.substack.com` |
+| `nl_resilience_roundup` | Resilience Roundup | `resilienceroundup.com` |
+| `nl_saas_bites` | SaaS Bites | `saasbites.substack.com` |
+| `nl_server_admin_for_programmers` | Server Admin for Programmers | `serversforhackers.com` |
+| `nl_shift_security_left` | Shift Security Left | `shift-security-left.curated.co` |
+| `nl_sre_weekly` | SRE Weekly | `sreweekly.com` |
+| `nl_startup_curated` | Startup Curated | `startup.curated.co` |
+| `nl_statuscode_weekly` | StatusCode Weekly | `weekly.statuscode.com` |
+| `nl_swift_developments` | Swift Developments | `andybargh.com` |
+| `nl_tailwind_weekly` | Tailwind Weekly | `tailwindweekly.com` |
+| `nl_tech_productivity` | Tech Productivity | `techproductivity.co` |
+| `nl_the_railsnotes_newsletter` | The RailsNotes Newsletter | `railsnotes.xyz` |
+| `nl_the_repl` | The REPL | `feeds.therepl.net` |
+| `nl_this_week_in_react` | This Week In React | `this-week-in-react.org` |
+| `nl_true_positive_weekly` | True Positive Weekly | `aiweekly.substack.com` |
+| `nl_ui_dev_newsletter` | UI Dev Newsletter | `mentor.silvestar.codes` |
+| `nl_unzip_dev` | Unzip.dev | `unzip.dev` |
+| `nl_vscode_email` | vscode.email | `vscode.email` |
+| `nl_web_design_weekly` | Web Design Weekly | `web-design-weekly.com` |
+| `nl_web_weekly` | Web Weekly | `webweekly.email` |
+| `nl_webrtc_weekly` | WebRTC Weekly | `webrtcweekly.com` |
+| `nl_webtools_weekly` | Webtools Weekly | `webtoolsweekly.com` |
+| `nl_weekly_dev_tips` | Weekly Dev Tips | `ardalis.com` |
+| `nl_weekly_robotics` | Weekly Robotics | `weeklyrobotics.com` |
+| `nl_weekly_vue_news` | Weekly Vue News | `weekly-vue.news` |
+| `nl_weekly_xamarin` | Weekly Xamarin | `ghuntley.com` |
 | `tldr_tech` | TLDR Tech daily newsletter RSS | `tldr.tech` |
 | `tldr_ai` | TLDR AI daily newsletter RSS | `tldr.tech` |
 | `tldr_devops` | TLDR DevOps daily newsletter RSS | `tldr.tech` |
