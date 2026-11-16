@@ -201,3 +201,9 @@ consecutive collects** — single-day zeros self-heal in-wave.
     key-gated. Multiplying channels multiplies complexity, not capacity —
     capacity comes from spending quota only on sources that can't
     self-heal (persistent_empty gating).
+43. **New data endpoint? Read its top-level shape before writing the fetch.**
+    state-of-rss assumed data/feeds.json was a flat {key: feed} map and rendered
+    three wrapper keys as fake lanes on the live page — the file is an envelope
+    {generated_at, count, feeds: []}. One `python -c "json.load(f).keys()"`
+    would have prevented a shipped bug. Same lesson as #38 (schema changes must
+    scan all consumers) seen from the consumer side.
