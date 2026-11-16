@@ -93640,11 +93640,6 @@ def write_csvs(items, today, now_iso):
                 w.writerow(r)
 
 
-def main():
-    os.makedirs(DATA_DIR, exist_ok=True)
-    now = datetime.now(timezone.utc)
-    today = now.strftime("%Y-%m-%d")
-
 def fetch_tldr_tech(limit=15):
     """TLDR Tech daily newsletter RSS — curated dev/industry digest, position-scored."""
     print("Fetching TLDR Tech feed...")
@@ -118841,6 +118836,10 @@ def _extra_feed_fetchers():
     return out
 
 
+def main():
+    os.makedirs(DATA_DIR, exist_ok=True)
+    now = datetime.now(timezone.utc)
+    today = now.strftime("%Y-%m-%d")
     fetchers = {
         "sec_blaze_s_security_blog": fetch_sec_blaze_s_security_blog,
         "sec_bushidotoken_threat_intel": fetch_sec_bushidotoken_threat_intel,
