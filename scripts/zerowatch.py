@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""zerowatch — report sources empty in the LAST TWO consecutive snapshots.
+"""zerowatch — report sources empty in the LAST THREE consecutive snapshots.
 
 Single-round zero = rate-limit tide (YouTube wave / Reddit per-IP cap /
 substack ASN block rotating through the egress), NOT a dead source — see
-methodology 35-37. Only sources empty in two consecutive daily snapshots
+methodology 35-37. Only sources empty in three consecutive daily snapshots
 are worth human attention.
 
 Usage: python3 scripts/zerowatch.py [--rounds N]
