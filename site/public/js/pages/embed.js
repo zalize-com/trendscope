@@ -1,0 +1,437 @@
+document.getElementById("embedlink").onclick = e => {
+  e.preventDefault();
+  const src = "https://trendscope--plov6nur.preview.devinapps.com/embed.html" + location.search;
+  const code = `<iframe src="${src}" width="340" height="420" style="border:0;border-radius:12px" loading="lazy" title="trendscope"></iframe>`;
+  navigator.clipboard?.writeText(code).then(() => {
+    e.target.textContent = "✓ copied"; setTimeout(() => { e.target.innerHTML = '<i data-lucide="copy"></i> embed'; if(window.lucide)lucide.createIcons(); }, 1400);
+  });
+};
+const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B" : n >= 1e6 ? (n/1e6).toFixed(1)+"M"
+             : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
+const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
+const P = new URLSearchParams(location.search);
+{ const th = P.get("theme"); if (th === "light" || th === "dark") document.documentElement.setAttribute("data-theme", th); }
+const N = Math.min(Math.max(parseInt(P.get("n") || "10"), 5), 30);
+const QS = (P.get("s") || "").toLowerCase();   // ?s=github_trending — single source
+const QQ = (P.get("q") || "").toLowerCase();   // ?q=llm — title/tag keyword
+const QT = P.get("t") || "";                   // ?t=AI/LLM — topic from topics.html rules
+const TOPIC_RULES = {
+  "AI/LLM": ["ai","llm","gpt","claude","gemini","openai","anthropic","machine learning","ml ","neural","diffusion","agent","rag","transformer","model","inference","fine-tun","copilot","mcp","prompt"],
+  "Web Dev": ["react","vue","svelte","angular","next.js","nextjs","typescript","javascript","css","html","web","vite","tailwind","frontend","browser","dom"],
+  "DevOps/Infra": ["kubernetes","k8s","docker","terraform","ci/cd","deploy","aws","cloud","serverless","infra","observability","monitor","devops"],
+  "Security": ["security","vuln","cve","exploit","breach","malware","ransomware","phishing","zero-day","0day","auth","encryption","privacy"],
+  "Data Eng": ["data","postgres","sql","database","duckdb","pipeline","etl","spark","kafka","analytics","warehouse","dbt"],
+  "Languages": ["rust","golang","go ","python","java","kotlin","swift","zig","c++","compiler","lua"],
+  "Tools/OSS": ["open source","cli","tool","github","git ","editor","vscode","neovim","terminal","framework","library","release","v1.0"],
+  "Career/Business": ["startup","hiring","salary","remote","career","interview","acquisition","ipo","funding","layoff","business","saas"],
+};
+const inTopic = it => !QT || (TOPIC_RULES[QT]||[]).some(k =>
+  `${it.title||""} ${(it.tags||[]).join(" ")}`.toLowerCase().includes(k));
+const MODE = P.get("mode") || "";
+function parseCSV(text) {
+  const rows = []; let field = "", row = [], inQ = false;
+  for (const c of text) {
+    if (inQ) { if (c === '"') inQ = false; else field += c; }
+    else if (c === '"') inQ = true;
+    else if (c === ",") { row.push(field); field = ""; }
+    else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+    else field += c;
+  }
+  if (field || row.length) { row.push(field); rows.push(row); }
+  return rows;
+}
+if (MODE === "canon") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/canon.html";
+  document.getElementById("date").textContent = "all-time hn canon";
+  fetch("data/hn-canon-monthly.csv", {cache:"no-cache"}).then(r => r.text()).then(text => {
+    const top = parseCSV(text).slice(1).filter(r => r.length >= 8 && r[0])
+      .map(r => ({ title: r[2], url: r[3], points: +r[4] || 0, month: r[0], hn: r[8] }))
+      .sort((a,b) => b.points - a.points).slice(0, N);
+    document.getElementById("list").innerHTML = top.map((c, i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${c.hn}" target="_blank" rel="noopener">${esc(c.title)}</a><span class="src">${c.month}</span></span>
+        <span class="score">${fmt(c.points)} pts</span></li>`).join("");
+  }).catch(() => { document.getElementById("err").textContent = "canon data unavailable"; });
+} else
+if (MODE === "hiring") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/hiring.html";
+  fetch("data/hiring.json", {cache:"no-cache"}).then(r => r.json()).then(hp => {
+    const t = (hp && hp.threads) || {};
+    document.getElementById("date").textContent = (t.hiring || t.seeking || {}).month || "";
+    const h = t.hiring, s = t.seeking;
+    const ratio = h && s ? (h.comments / s.comments).toFixed(2) : null;
+    document.getElementById("list").innerHTML = `
+      <li><span class="rank"><i data-lucide="trending-up"></i></span><span><a href="${h?.url || "#"}" target="_blank" rel="noopener">who is hiring</a><span class="src">ask hn</span></span><span class="score">${h ? fmt(h.comments) : "—"} posts</span></li>
+      <li><span class="rank">🙋</span><span><a href="${s?.url || "#"}" target="_blank" rel="noopener">who wants to be hired</a><span class="src">ask hn</span></span><span class="score">${s ? fmt(s.comments) : "—"} posts</span></li>
+      ${ratio ? `<li><span class="rank">≈</span><span>positions per seeker</span><span class="score">${ratio}</span></li>` : ""}`;
+  }).catch(() => { document.getElementById("err").textContent = "hiring data unavailable"; });
+} else
+if (MODE === "discussed") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/discuss.html";
+  fetch("docs/api/discussed.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    document.getElementById("date").textContent = "most discussed · all snapshots";
+    document.getElementById("list").innerHTML = d.discussed.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · ${e.date}</span></span>
+        <span class="score"><i data-lucide="message-square"></i> ${fmt(e.comments)}</span></li>`).join("")
+      || `<li id="err">no discussed items yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "discussed data unavailable"; });
+} else
+if (MODE === "crossovers") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/domains.html";
+  fetch("docs/api/crossovers.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    document.getElementById("date").textContent = "crossovers — same story on 2+ sources";
+    document.getElementById("list").innerHTML = d.crossovers.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.sources.join(" + ")} · ${e.days}d</span></span>
+        <span class="score">${fmt(e.best.score)}</span></li>`).join("")
+      || `<li id="err">no crossovers yet — stories stay in one lane so far</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "crossovers data unavailable"; });
+} else
+if (MODE === "sources") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/sources.html";
+  fetch("docs/api/sources.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const list = Object.entries(d.sources).sort((a,b) => b[1].items - a[1].items);
+    document.getElementById("date").textContent = `${list.length} sources · ${d.days_tracked}d tracked`;
+    document.getElementById("list").innerHTML = list.slice(0, N).map(([name, v], i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="https://trendscope--plov6nur.preview.devinapps.com/source.html?s=${encodeURIComponent(name)}" target="_blank" rel="noopener">${esc(name)}</a><span class="src">${v.unique_urls} unique · ${v.one_day_pct}% one-day</span></span>
+        <span class="score">${fmt(v.items)}</span></li>`).join("")
+      || `<li id="err">no source data</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "sources data unavailable"; });
+} else
+if (MODE === "velocity") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/velocity.html";
+  fetch("docs/api/velocity.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    document.getElementById("date").textContent = `velocity · +/day · ${d.total} multi-day`;
+    document.getElementById("list").innerHTML = d.items.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · ${e.days}d</span></span>
+        <span class="score">+${fmt(e.per_day)}</span></li>`).join("")
+      || `<li id="err">no multi-day items yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "velocity data unavailable"; });
+} else
+if (MODE === "weekday") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/weekday.html";
+  fetch("docs/api/weekday.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const srcs = Object.entries(d.sources).slice(0, N);
+    document.getElementById("date").textContent = `weekday rhythm · ${Object.keys(d.sources).length} sources`;
+    document.getElementById("list").innerHTML = srcs.map(([name, v], i) => {
+      const peak = v.counts.indexOf(Math.max(...v.counts));
+      return `<li><span class="rank">${i+1}</span>
+        <span><a href="https://trendscope--plov6nur.preview.devinapps.com/source.html?s=${encodeURIComponent(name)}" target="_blank" rel="noopener">${esc(name)}</a><span class="src">peaks ${d.days_of_week[peak]} · ${v.total} items</span></span>
+        <span class="score">${v.counts.join("·")}</span></li>`;
+    }).join("") || `<li id="err">no weekday data</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "weekday data unavailable"; });
+} else
+if (MODE === "health") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/sources.html";
+  fetch("docs/api/sources.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const srcs = Object.entries(d.sources).slice(0, N);
+    document.getElementById("date").textContent = `source health · ${Object.keys(d.sources).length} sources · ${d.days_tracked}d tracked`;
+    document.getElementById("list").innerHTML = srcs.map(([name, v]) => {
+      return `<li><span><a href="https://trendscope--plov6nur.preview.devinapps.com/source.html?s=${encodeURIComponent(name)}" target="_blank" rel="noopener">${esc(name)}</a><span class="src">${v.items} items · median ${v.median_days_on_board}d on board</span></span><span class="score">${v.one_day_pct}% 1-day</span></li>`;
+    }).join("") || `<li id="err">no source data</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "sources data unavailable"; });
+} else
+if (MODE === "streaks") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/oldest.html";
+  fetch("docs/api/streaks.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const rows = (d.active || []).slice(0, N);
+    document.getElementById("date").textContent = `longest active streaks · ${d.active_count} streaking · ${d.days_tracked}d tracked`;
+    document.getElementById("list").innerHTML = rows.map((it, i) =>
+      `<li><span class="rank">${i+1}</span><span><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a><span class="src">${it.source} · top #${it.top_rank} · ${it.top_score} ${it.metric}</span></span><span class="score"><b style="color:var(--orange)"><i data-lucide="flame"></i>${it.consecutive_days}d</b></span></li>`
+    ).join("") || `<li id="err">no active streaks</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "streaks data unavailable"; });
+} else
+if (MODE === "heatmap") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/heatmap.html";
+  fetch("docs/api/weekday.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const days = d.days_of_week || ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+    const srcs = Object.entries(d.sources).slice(0, N);
+    document.getElementById("date").textContent = `weekday heat · ${Object.keys(d.sources).length} sources`;
+    document.getElementById("list").innerHTML = srcs.map(([name, v]) => {
+      const mx = Math.max(...v.counts, 1);
+      const cells = v.counts.map((c, i) =>
+        `<span title="${days[i]}: ${c}" style="display:inline-block;width:9px;height:9px;border-radius:2px;margin:0 1px;background:${c===0?"#e5e7eb":`rgba(9,105,218,${0.15+0.85*(c/mx)})`}"></span>`).join("");
+      return `<li><span><a href="https://trendscope--plov6nur.preview.devinapps.com/heatmap.html" target="_blank" rel="noopener">${esc(name)}</a></span><span class="score">${cells}</span></li>`;
+    }).join("") || `<li id="err">no weekday data</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "weekday data unavailable"; });
+} else
+if (MODE === "rhythm") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/rhythm.html";
+  fetch("docs/api/rhythm.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const srcs = Object.entries(d.sources).slice(0, N);
+    document.getElementById("date").textContent = `capture rhythm · ${Object.keys(d.sources).length} sources · UTC`;
+    document.getElementById("list").innerHTML = srcs.map(([name, v], i) => {
+      const peak = v.counts.indexOf(Math.max(...v.counts));
+      return `<li><span class="rank">${i+1}</span>
+        <span><a href="https://trendscope--plov6nur.preview.devinapps.com/source.html?s=${encodeURIComponent(name)}" target="_blank" rel="noopener">${esc(name)}</a><span class="src">peaks ${String(peak).padStart(2,"0")}:00 · ${v.total} captures</span></span>
+        <span class="score">${v.counts.filter(c=>c>0).length}h</span></li>`;
+    }).join("") || `<li id="err">no rhythm data</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "rhythm data unavailable"; });
+} else
+if (MODE === "domain") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/domains.html";
+  fetch("docs/api/domains.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const host = P.get("d");
+    const list = host ? (d.domains || []).filter(x => x.hostname === host) : (d.domains || []);
+    document.getElementById("date").textContent = host ? `domain · ${host}` : "top domains this window";
+    document.getElementById("list").innerHTML = list.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.top_hit?.url || "#"}" target="_blank" rel="noopener">${esc(e.hostname)}</a><span class="src">${e.days_on_board}d on board · ${e.items} items · ${e.sources.join("+")}</span></span>
+        <span class="score">${fmt(e.top_hit?.score || 0)}</span></li>`).join("")
+      || `<li id="err">no domain data${host ? " for "+esc(host) : ""}</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "domain data unavailable"; });
+} else
+if (MODE === "author") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/authors.html";
+  fetch("docs/api/authors.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const who = P.get("u");
+    const list = who ? (d.authors || []).filter(x => x.author === who) : (d.authors || []);
+    document.getElementById("date").textContent = who ? `author · ${who}` : "top authors this window";
+    document.getElementById("list").innerHTML = list.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.top_hit?.url || "#"}" target="_blank" rel="noopener">${esc(e.author)}</a><span class="src">${e.days_on_board}d on board · ${e.items} items · ${e.sources.join("+")}</span></span>
+        <span class="score">${fmt(e.top_hit?.score || 0)}</span></li>`).join("")
+      || `<li id="err">no author data${who ? " for "+esc(who) : ""}</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "author data unavailable"; });
+} else
+if (MODE === "new") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/new.html";
+  fetch("docs/api/new.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    document.getElementById("date").textContent = `first-seen today · ${d.new_items}/${d.total_items} new`;
+    document.getElementById("list").innerHTML = d.items.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · #${e.rank}</span></span>
+        <span class="score">${fmt(e.score)}</span></li>`).join("")
+      || `<li id="err">nothing new today</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "new data unavailable"; });
+} else
+if (MODE === "radar") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/radar.html";
+  fetch("docs/api/risers.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const today = d.single_day_spikes.filter(x => x.date === d.latest_snapshot);
+    document.getElementById("date").textContent = `breakout today · ${d.latest_snapshot}`;
+    document.getElementById("list").innerHTML = today.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source}</span></span>
+        <span class="score up">+${fmt(e.delta)}</span></li>`).join("")
+      || `<li id="err">no spikes today</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "radar data unavailable"; });
+} else
+if (MODE === "watch") {
+  const kws = (P.get("kw") || "").split(",").map(k => k.trim().toLowerCase()).filter(Boolean);
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/watch.html";
+  fetch("docs/api/new.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const hits = d.items.filter(e => { const t = e.title.toLowerCase(); return kws.some(k => t.includes(k)); });
+    document.getElementById("date").textContent = `watching: ${kws.join(" · ") || "(no kw)"} · ${d.latest_snapshot}`;
+    document.getElementById("list").innerHTML = hits.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · #${e.rank}</span></span>
+        <span class="score">${fmt(e.score||0)}</span></li>`).join("")
+      || `<li id="err">no matches today</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "watch data unavailable"; });
+} else
+if (MODE === "gone") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/gone.html";
+  fetch("docs/api/gone.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    document.getElementById("date").textContent = `dropped: ${d.previous_snapshot} → ${d.latest_snapshot}`;
+    document.getElementById("list").innerHTML = (d.items || []).slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source}</span></span>
+        <span class="score">was #${e.rank ?? "—"}</span></li>`).join("")
+      || `<li id="err">nothing dropped</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "gone data unavailable"; });
+} else
+if (MODE === "veterans") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/oldest.html";
+  fetch("docs/api/streaks.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const vs = d.longest_all_time || [];
+    document.getElementById("date").textContent = `board veterans · ${d.days_tracked}d tracked`;
+    document.getElementById("list").innerHTML = vs.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source}</span></span>
+        <span class="score">${e.days_on_board}d</span></li>`).join("")
+      || `<li id="err">no veterans yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "streak data unavailable"; });
+} else
+if (MODE === "meteors") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/meteors.html";
+  fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const ms = [];
+    for (const [u, it] of Object.entries(d.items)) {
+      const ds = Object.keys(it.days);
+      if (ds.length === 1) ms.push({ u, title: it.title, source: it.source, metric: it.metric, score: it.days[ds[0]][0], date: ds[0] });
+    }
+    ms.sort((a,b) => b.score - a.score);
+    document.getElementById("date").textContent = `one-day wonders · ${ms.length} meteors`;
+    document.getElementById("list").innerHTML = ms.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.u}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · ${e.date}</span></span>
+        <span class="score">${fmt(e.score)}</span></li>`).join("")
+      || `<li id="err">no meteors yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "meteors data unavailable"; });
+} else
+if (MODE === "risers") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/risers.html";
+  fetch("docs/api/risers.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const spikes = d.single_day_spikes;
+    document.getElementById("date").textContent = "biggest 1-day spikes";
+    document.getElementById("list").innerHTML = spikes.slice(0, N).map((e,i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · ${e.date}</span></span>
+        <span class="score up">+${fmt(e.delta)}</span></li>`).join("")
+      || `<li id="err">no spikes yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "risers data unavailable"; });
+} else
+if (MODE === "movers") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/compare.html";
+  fetch("docs/api/movers-latest.json", {cache:"no-cache"}).then(r => r.json()).then(mv => {
+    document.getElementById("date").textContent = `movers ${mv.a || ""} → ${mv.b || ""}`;
+    const rows = [
+      ...(mv.gainers || []).slice(0, Math.ceil(N / 2)).map(g => ({ g, tag: `+${g.delta}`, cls: "up" })),
+      ...(mv.entered || []).slice(0, Math.floor(N / 2)).map(g => ({ g, tag: "new", cls: "new" })),
+    ].slice(0, N);
+    document.getElementById("list").innerHTML = rows.length ? rows.map((x, i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${x.g.url}" target="_blank" rel="noopener">${esc(x.g.title)}</a><span class="src">${x.g.source}</span></span>
+        <span class="score ${x.cls}">${x.tag}</span></li>`).join("")
+      : `<li id="err">no movers yet — needs two snapshots</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "movers data unavailable"; });
+} else
+if (MODE === "week") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/week.html";
+  fetch("docs/api/week.json", {cache:"no-cache"}).then(r => r.json()).then(wk => {
+    const top = wk.top
+      .filter(e => (!QS || e.source === QS) && (!QQ || (e.title + " " + e.source).toLowerCase().includes(QQ)))
+      .slice(0, N).map(e => ({...e, total: e.heat}));
+    document.getElementById("date").textContent = "last 7 days · by cumulative heat";
+    document.getElementById("list").innerHTML = top.length ? top.map((e, i) =>
+      `<li><span class="rank">${i+1}</span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source}</span></span>
+        <span class="score">${e.total.toFixed(1)} heat</span></li>`).join("")
+      : `<li id="err">no items this week</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "history data unavailable"; });
+} else
+if (MODE === "stats") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/stats.html";
+  fetch("docs/api/stats.json", {cache:"no-cache"}).then(r => r.json()).then(st => {
+    document.getElementById("date").textContent = `${st.first_day} → ${st.latest_day}`;
+    const srcs = Object.keys(st.sources || {}).length;
+    document.getElementById("list").innerHTML = `
+      <li><span class="rank"><i data-lucide="bar-chart-3"></i></span><span>rows tracked</span><span class="score">${fmt(st.total_rows)}</span></li>
+      <li><span class="rank"><i data-lucide="calendar"></i></span><span>days · consecutive</span><span class="score">${st.days_tracked} · ${st.consecutive_days}</span></li>
+      <li><span class="rank"><i data-lucide="link"></i></span><span>unique URLs</span><span class="score">${fmt(st.unique_urls)}</span></li>
+      <li><span class="rank">📡</span><span>sources</span><span class="score">${srcs}</span></li>
+      <li><span class="rank">📰</span><span>items in latest snapshot</span><span class="score">${fmt(st.items_in_latest)}</span></li>`;
+  }).catch(() => { document.getElementById("err").textContent = "stats unavailable"; });
+} else
+if (MODE === "streak") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/streaks.html";
+  fetch("docs/api/streaks.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const st = d.active.map(it => ({ u: it.url, title: it.title, source: it.source,
+        score: it.top_score, cur: it.consecutive_days })).slice(0, N);
+    document.getElementById("date").textContent = `active streaks · ${d.latest_snapshot}`;
+    document.getElementById("list").innerHTML = st.map((x, i) =>
+      `<li><span class="rank">${i + 1}</span>
+        <span><a href="${esc(x.u)}" target="_blank" rel="noopener">${esc(x.title)}</a>
+          <span class="meta"><span class="src">${x.source}</span> ${fmt(x.score)}</span></span>
+        <span class="score">${x.cur}d</span></li>`).join("")
+      || `<li id="err">no streaks yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "streak data unavailable"; });
+} else
+if (MODE === "ideas") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/ideas.html";
+  fetch("docs/api/ideas-latest.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    document.getElementById("date").textContent = `demand signals · ${d.unique_threads} threads`;
+    const rows = (d.themes || []).slice(0, N).map(t => {
+      const top = (t.threads || []).sort((a,b)=>b.max_score-a.max_score)[0] || {};
+      return `<li><span><a href="${esc(top.url || "#")}" target="_blank" rel="noopener">${esc(top.title || t.theme)}</a>
+          <span class="meta"><span class="src">${t.theme}</span> ${(t.threads||[]).length} threads</span></span>
+        <span class="score">${fmt(t.score || 0)}</span></li>`;
+    });
+    document.getElementById("list").innerHTML = rows.join("") || `<li id="err">no themes yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "ideas data unavailable"; });
+} else
+if (MODE === "topics") {
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/topics.html";
+  fetch("docs/api/topics.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const day = d.days[d.days.length-1] || "";
+    const ts = Object.entries(d.topics)
+      .map(([topic, t]) => ({ topic, count: t.counts[day] || 0 }))
+      .sort((a,b) => b.count - a.count).slice(0, 8);
+    const mx = ts[0]?.count || 1;
+    document.getElementById("date").textContent = `attention mix · ${day}`;
+    document.getElementById("list").innerHTML = ts.map(t =>
+      `<li><span><a href="https://trendscope--plov6nur.preview.devinapps.com/topics.html?t=${encodeURIComponent(t.topic)}" target="_blank" rel="noopener">${esc(t.topic)}</a></span>
+        <span class="score">${t.count} <span style="display:inline-block;width:60px;height:8px;background:var(--accent);opacity:${(+t.count/mx).toFixed(2)};border-radius:2px;margin-left:4px"></span></span></li>`).join("")
+      || `<li id="err">no topics yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "topics data unavailable"; });
+} else
+if (MODE === "heat") {
+  // ?mode=heat — each topic's 9-day attention sparkline
+  document.querySelector(".foot a").href = "https://trendscope--plov6nur.preview.devinapps.com/topics.html";
+  fetch("docs/api/topics.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    const days = d.days || [];
+    const rows = Object.entries(d.topics).map(([topic, t]) => {
+      const cs = days.map(dd => t.counts[dd] || 0);
+      return { topic, cs, total: cs.reduce((a,b)=>a+b,0), last: cs[cs.length-1]||0 };
+    }).sort((a,b) => b.total - a.total).slice(0, 8);
+    const mx = Math.max(...rows.flatMap(r => r.cs), 1);
+    const SPARK = "▁▂▃▄▅▆▇█";
+    const spark = cs => cs.map(c => SPARK[Math.min(7, Math.round((c/mx)*7))]).join("");
+    document.getElementById("date").textContent = `topic heat · ${days[0]?.slice(5)||""}→${days[days.length-1]?.slice(5)||""}`;
+    document.getElementById("list").innerHTML = rows.map(r =>
+      `<li><span><a href="https://trendscope--plov6nur.preview.devinapps.com/topics.html?t=${encodeURIComponent(r.topic)}" target="_blank" rel="noopener">${esc(r.topic)}</a>
+        <span class="meta"><span style="font-family:monospace;letter-spacing:1px;color:var(--accent)">${spark(r.cs)}</span> ${r.last} today</span></span>
+        <span class="score">${r.total}</span></li>`).join("")
+      || `<li id="err">no topics yet</li>`;
+  }).catch(() => { document.getElementById("err").textContent = "topics data unavailable"; });
+} else
+if (MODE === "item") {
+  // ?mode=item&q=<title> — one story's attention trajectory
+  document.querySelector(".foot a").href = `https://trendscope--plov6nur.preview.devinapps.com/item.html?q=${encodeURIComponent(P.get("q") || "")}`;
+  if (!QQ) document.getElementById("err").textContent = "add ?q=<title>";
+  else fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json()).then(ser => {
+    const hit = Object.entries(ser.items)
+      .map(([u, o]) => ({ title: o.title, url: u, source: o.source,
+                          days: Object.entries(o.days).map(([d, [s, rank]]) => ({ d, s, rank })) }))
+      .filter(x => x.title.toLowerCase().includes(QQ))
+      .sort((a, b) => a.title.length - b.title.length)[0];
+    if (!hit) { document.getElementById("err").textContent = `no story matches "${P.get("q")}"`; return; }
+    const dayMap = {};
+    for (const d of hit.days) {
+      const cur = dayMap[d.d];
+      if (!cur || d.s > cur.s) dayMap[d.d] = d;
+    }
+    const ds = Object.values(dayMap).sort((a, b) => a.d < b.d ? -1 : 1);
+    const mx = Math.max(...ds.map(d => d.s), 1);
+    const w = 200, h = 40, step = ds.length > 1 ? w / (ds.length - 1) : 0;
+    const pts = ds.map((d, i) => `${(i * step).toFixed(1)},${(h - (d.s / mx) * (h - 6) - 3).toFixed(1)}`).join(" ");
+    const peak = ds.reduce((a, b) => (b.s > a.s ? b : a), ds[0]);
+    document.getElementById("date").textContent = `${ds.length}d on board · peak ${fmt(peak.s)} (${peak.d})`;
+    document.getElementById("list").innerHTML =
+      `<li><span><a href="${esc(hit.url)}" target="_blank" rel="noopener">${esc(hit.title)}</a>
+        <span class="meta"><span class="src">${hit.source}</span> ${ds.map(d => d.d.slice(5)).join(", ")}</span></span></li>
+       <li><svg viewBox="0 0 ${w} ${h}" style="width:100%;height:40px"><polyline points="${pts}" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/></svg></li>`;
+  }).catch(() => { document.getElementById("err").textContent = "history unavailable"; });
+} else
+fetch("data/latest-lite.json", {cache:"no-cache"}).then(r=>r.ok?r:Promise.reject()).catch(()=>fetch("data/latest.json",{cache:"no-cache"})).then(r => r.json()).then(snap => {
+  document.getElementById("date").textContent = (QT ? QT+" · " : "") + (snap.date || snap.generated_at.slice(0,10));
+  const max = {};
+  for (const [s, its] of Object.entries(snap.items)) max[s] = its[0]?.score || 1;
+  const flat = Object.entries(snap.items).flatMap(([s, its]) =>
+    its.map(it => ({it, heat: it.score / (max[s] || 1)})))
+    .filter(x => (!QS || x.it.source === QS) && inTopic(x.it) &&
+                 (!QQ || (x.it.title + " " + (x.it.tags||[]).join(" ")).toLowerCase().includes(QQ)));
+  flat.sort((a,b) => b.heat - a.heat);
+  document.getElementById("list").innerHTML = flat.length ? flat.slice(0, N).map((x, i) =>
+    `<li><span class="rank">${i+1}</span>
+      <span><a href="${x.it.url}" target="_blank" rel="noopener">${esc(x.it.title)}</a><span class="src">${x.it.source}</span></span>
+      <span class="score">${fmt(x.it.score)} ${x.it.metric}</span></li>`).join("")
+    : `<li id="err">no items match this filter today</li>`;
+}).catch(() => { document.getElementById("err").textContent = "snapshot unavailable"; });
+
+new MutationObserver(()=>{if(window.lucide)lucide.createIcons()}).observe(document.getElementById("list"),{childList:true});
+if(window.lucide)lucide.createIcons();
