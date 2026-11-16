@@ -1,5 +1,14 @@
 # Astro migration plan (decided 11/16 — user: "best long-term, not short-sighted")
 
+> **Status 11/16 ~15:00 CST: all 62 pages migrated and building green.**
+> Waves A–C done via `scripts/migrate/to_astro.py` (hand-written index +
+> mechanical transcription). Parity fixes landed: daisyUI `d-` prefix
+> (class collisions), `.row` grid variant, per-page footers re-injected,
+> nav `.here` parity, `/tools/` postbuild copy, Pages-subpath rebase
+> (`scripts/migrate/rebase.sh` + `SITE_BASE`/`SITE_ORIGIN` envs),
+> canonical subpath concat, dist linkcheck wired into site.yml CI.
+> Remaining gate: full-site visual diff sign-off → Pages enable.
+
 ## Why Astro (+ Tailwind/daisyUI), and why now
 - Current state: 55+ static HTML pages each hand-duplicating
   head/OG/canonical/topbar/footer chrome. Style bugs proved the cost
