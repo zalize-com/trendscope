@@ -10,6 +10,7 @@ const TOOLS = [
   {id:"tz",     label:"Timezone converter"},
   {id:"freq",   label:"Word frequency"},
   {id:"opml",   label:"OPML → YAML"},
+  {id:"opmlbundle", label:"OPML starter pack"},
   {id:"cron",   label:"Crontab explainer"},
   {id:"chmod",  label:"chmod calculator"},
   {id:"csv",    label:"CSV ↔ JSON"},
@@ -436,6 +437,98 @@ document.getElementById("sg-in").addEventListener("input", sgGo);
   document.getElementById("op-copy").onclick = () => navigator.clipboard?.writeText(document.getElementById("op-out").textContent).then(() => { document.getElementById("op-copy").textContent = "copied"; setTimeout(() => document.getElementById("op-copy").textContent = "copy yaml", 1200); });
   document.getElementById("op-in").value = '<opml version="2.0"><body><outline text="HN" xmlUrl="https://hnrss.org/frontpage"/><outline text="Simon" xmlUrl="https://simonwillison.net/atom/everything/"/></body></opml>';
   go();
+})();
+
+
+// ---- OPML starter pack ----
+(function () {
+  const LANE_NAMES = { br: "blogs / blogrolls", yt: "YouTube channels", nl: "newsletters",
+    sec: "security", eb: "eng blogs", tb: "tech blogs", pb: "podcasts / personal",
+    misc: "misc / community", tldr: "TLDR", github: "GitHub", aws: "AWS",
+    gitlab: "GitLab", slack: "Slack", meta: "Meta" };
+  const lanesEl = document.getElementById("ob-lanes");
+  const errEl = document.getElementById("ob-err");
+  const statEl = document.getElementById("ob-stat");
+  let REG = null; // {key: feed}
+  let DEAD = new Set(), DORM = new Set();
+
+  function xmlEsc(s) {
+    return String(s || "").replace(/[&<>"']/g, c =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;" }[c]));
+  }
+
+  function selectedLanes() {
+    return [...lanesEl.querySelectorAll("input[type=checkbox]:checked")].map(b => b.value);
+  }
+
+  function buildOpml() {
+    const lanes = selectedLanes();
+    const bodies = lanes.map(lane => {
+      const outlines = Object.values(REG)
+        .filter(f => (f.lane || (f.key || "").split("_")[0]) === lane)
+        .filter(f => !DEAD.has(f.key) && !DORM.has(f.key))
+        .map(f => `      <outline text="${xmlEsc(f.label || f.key)}" title="${xmlEsc(f.label || f.key)}" type="rss" xmlUrl="${xmlEsc(f.feed || f.url || "")}"/>`)
+        .join("\n");
+      return `    <outline text="${xmlEsc(LANE_NAMES[lane] || lane)}" title="${xmlEsc(LANE_NAMES[lane] || lane)}">\n${outlines}\n    </outline>`;
+    }).join("\n");
+    return `<?xml version="1.0" encoding="UTF-8"?>\n<opml version="2.0">\n  <head>\n    <title>trendscope starter pack</title>\n    <dateCreated>${new Date().toUTCString()}</dateCreated>\n  </head>\n  <body>\n${bodies}\n  </body>\n</opml>`;
+  }
+
+  function stat() {
+    const lanes = selectedLanes();
+    const sel = lanes.reduce((a, l) =>
+      a + Object.values(REG || {}).filter(f => (f.lane || (f.key || "").split("_")[0]) === l).length, 0);
+    const live = lanes.reduce((a, l) =>
+      a + Object.values(REG || {}).filter(f => (f.lane || (f.key || "").split("_")[0]) === l)
+        .filter(f => !DEAD.has(f.key) && !DORM.has(f.key)).length, 0);
+    statEl.textContent = REG ? `${live.toLocaleString()} live feeds selected across ${lanes.length} lane(s)` +
+      (sel - live ? ` — ${(sel - live).toLocaleString()} dead/dormant skipped` : "") : "";
+  }
+
+  fetch("../data/zerowatch.json").then(r => r.ok ? r.json() : {}).then(z => {
+    for (const k of (z.persistent_empty || [])) DEAD.add(k);
+  }).catch(() => {});
+  fetch("../data/dormant.json").then(r => r.ok ? r.json() : []).then(d => {
+    for (const k of (Array.isArray(d) ? d : [])) DORM.add(k);
+    stat();
+  }).catch(() => {});
+
+  fetch("../data/feeds.json").then(r => r.json()).then(d => {
+    const arr = Array.isArray(d) ? d : (d.feeds || []);
+    REG = {};
+    for (const f of arr) REG[f.key || f.feed] = f;
+    const counts = {};
+    for (const f of arr) {
+      const l = f.lane || (f.key || "").split("_")[0] || "?";
+      counts[l] = (counts[l] || 0) + 1;
+    }
+    const DEFAULT_ON = new Set(["sec", "eb", "tb"]);
+    lanesEl.innerHTML = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([l, n]) =>
+      `<label style="display:inline-block;margin:3px 12px 3px 0;cursor:pointer"><input type="checkbox" value="${esc(l)}"${DEFAULT_ON.has(l) ? " checked" : ""}> ${esc(LANE_NAMES[l] || l)} <span style="opacity:.6">(${n.toLocaleString()})</span></label>`
+    ).join("");
+    lanesEl.addEventListener("change", stat);
+    stat();
+  }).catch(e => {
+    lanesEl.textContent = "";
+    errEl.textContent = "could not load ../data/feeds.json — " + e.message;
+  });
+
+  document.getElementById("ob-dl").onclick = () => {
+    if (!REG) return;
+    const blob = new Blob([buildOpml()], { type: "text/x-opml" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "trendscope-starter-pack.opml";
+    a.click();
+    URL.revokeObjectURL(a.href);
+  };
+  document.getElementById("ob-copy").onclick = () => {
+    if (!REG) return;
+    navigator.clipboard?.writeText(buildOpml()).then(() => {
+      const b = document.getElementById("ob-copy");
+      b.textContent = "copied"; setTimeout(() => b.textContent = "copy xml", 1200);
+    });
+  };
 })();
 
 

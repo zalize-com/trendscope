@@ -156,6 +156,15 @@ const path = '/tools/utils.html';
     <div class="err" id="op-err"></div>
   </div>
 
+  <div class="tool" data-tool="opmlbundle">
+    <h2>OPML starter pack</h2>
+    <p class="hint">Pick lanes from the trendscope registry (9,200+ curated feeds) — get one merged OPML for your reader. Dead/dormant feeds are marked so you only import live ones.</p>
+    <div id="ob-lanes" class="out" style="max-height:none">loading feed registry…</div>
+    <button id="ob-dl">download opml</button> <button class="copy" id="ob-copy">copy xml</button>
+    <div class="err" id="ob-err"></div>
+    <p class="hint" id="ob-stat"></p>
+  </div>
+
   <div class="tool" data-tool="cron">
     <h2>Crontab explainer</h2>
     <p class="hint">Paste a 5-field cron expression — get a plain-English reading plus the next 5 fire times (local tz).</p>
