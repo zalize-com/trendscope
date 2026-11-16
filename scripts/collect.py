@@ -96476,6 +96476,11 @@ def main():
         "redis"}}
     reddit_lock = threading.Lock()
 
+    # youtube.com/feeds/videos.xml also throttles bursts (flaky 404/500 when
+    # hammered) — serialize the yt_ lane the same way, gentler pacing.
+    YT_KEYS = {k for k in fetchers if k.startswith("yt_")}
+    yt_lock = threading.Lock()
+
     def run_one(item):
         name, fn = item
         t0 = time.time()
@@ -96484,6 +96489,13 @@ def main():
                 with reddit_lock:
                     items = fn()
                     time.sleep(3)  # pace the lane (~20 req/min)
+            elif name in YT_KEYS:
+                with yt_lock:
+                    items = fn()
+                    if not items:
+                        time.sleep(10)  # flaky 404/500 — one more shot
+                        items = fn()
+                    time.sleep(4)  # ~15 req/min — videos.xml is twitchy
             else:
                 items = fn()
         except Exception as e:
