@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-16T15:55:53.478955+00:00",
+ "generated_at": "2026-11-16T16:59:12.982160+00:00",
  "latest_snapshot": "2026-11-16",
- "total": 9458,
+ "total": 9465,
  "domains": [
   {
    "hostname": "blog.google",
@@ -24,7 +24,7 @@
   {
    "hostname": "theguardian.com",
    "days_on_board": 4,
-   "items": 127,
+   "items": 129,
    "sources": [
     "eb_guardian",
     "guardianco",
@@ -79,7 +79,7 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 3,
-   "items": 1585,
+   "items": 1626,
    "sources": [
     "br_homepage_piotr_migda",
     "br_nelson_s_linkblog",
@@ -242,7 +242,7 @@
   {
    "hostname": "nytimes.com",
    "days_on_board": 3,
-   "items": 65,
+   "items": 66,
    "sources": [
     "bostocks",
     "daringfireball",
@@ -296,11 +296,12 @@
   {
    "hostname": "wired.com",
    "days_on_board": 3,
-   "items": 56,
+   "items": 60,
    "sources": [
     "azure",
     "daringfireball",
     "hackernews",
+    "hnrss",
     "sec_wired",
     "wired"
    ],
@@ -333,7 +334,7 @@
   {
    "hostname": "theverge.com",
    "days_on_board": 3,
-   "items": 42,
+   "items": 45,
    "sources": [
     "br_hearthside_by_caleb_hearth",
     "hackernews",
@@ -350,7 +351,7 @@
   {
    "hostname": "9to5mac.com",
    "days_on_board": 3,
-   "items": 40,
+   "items": 44,
    "sources": [
     "9to5mac",
     "br_posts_from_iamgregb",
@@ -790,7 +791,7 @@
   {
    "hostname": "mp.weixin.qq.com",
    "days_on_board": 2,
-   "items": 535,
+   "items": 537,
    "sources": [
     "42jing",
     "alimiddle",
@@ -822,7 +823,7 @@
   {
    "hostname": "lore.kernel.org",
    "days_on_board": 2,
-   "items": 285,
+   "items": 300,
    "sources": [
     "lorekernel"
    ],
@@ -837,7 +838,7 @@
   {
    "hostname": "medium.com",
    "days_on_board": 2,
-   "items": 180,
+   "items": 182,
    "sources": [
     "airbnb",
     "betterprog",
@@ -874,7 +875,7 @@
   {
    "hostname": "investing.com",
    "days_on_board": 2,
-   "items": 164,
+   "items": 174,
    "sources": [
     "investing"
    ],
@@ -930,7 +931,7 @@
   {
    "hostname": "news.google.com",
    "days_on_board": 2,
-   "items": 118,
+   "items": 124,
    "sources": [
     "w4news"
    ],
@@ -959,24 +960,9 @@
    }
   },
   {
-   "hostname": "timesofindia.indiatimes.com",
-   "days_on_board": 2,
-   "items": 96,
-   "sources": [
-    "timesofindia"
-   ],
-   "top_hit": {
-    "title": "Georgia woman wins $2.5m after rear-end crash leads to spinal fusion surgery",
-    "url": "https://timesofindia.indiatimes.com/world/us/a-metro-atlanta-woman-was-awarded-2-5-million-by-a-cobb-county-georgia-jury-after-a-2023-rear-end-crash-left-her-with-injuries-so-serious-that-she-later-needed-spinal-fusion-surgery/articleshow/135865103.cms",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "seekingalpha.com",
    "days_on_board": 2,
-   "items": 95,
+   "items": 102,
    "sources": [
     "seekingalpha"
    ],
@@ -984,6 +970,21 @@
     "title": "NASA advances PRIMA mission with BAE Systems as space telescope supplier",
     "url": "https://seekingalpha.com/news/4672811-nasa-advances-prima-mission-with-bae-systems-as-space-telescope-supplier?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
     "score": 7,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "timesofindia.indiatimes.com",
+   "days_on_board": 2,
+   "items": 99,
+   "sources": [
+    "timesofindia"
+   ],
+   "top_hit": {
+    "title": "Georgia woman wins $2.5m after rear-end crash leads to spinal fusion surgery",
+    "url": "https://timesofindia.indiatimes.com/world/us/a-metro-atlanta-woman-was-awarded-2-5-million-by-a-cobb-county-georgia-jury-after-a-2023-rear-end-crash-left-her-with-injuries-so-serious-that-she-later-needed-spinal-fusion-surgery/articleshow/135865103.cms",
+    "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
    }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T15:55:53.478955+00:00",
+ "generated_at": "2026-11-16T16:59:12.982160+00:00",
  "latest_snapshot": "2026-11-16",
  "crossovers": [
   {
@@ -279,6 +279,22 @@
     "score": 15,
     "metric": "feed rank",
     "source": "allthingssmitty",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+   "title": "Microsoft blames monster email outage on software defect introduced in July fix",
+   "sources": [
+    "hnrss",
+    "sec_the_register",
+    "theregister"
+   ],
+   "days": 1,
+   "best": {
+    "score": 11,
+    "metric": "feed rank",
+    "source": "hnrss",
     "date": "2026-11-16"
    }
   },
@@ -760,21 +776,6 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=7_jf3etiav8",
-   "title": "A short explainer on how El Niño works [video]",
-   "sources": [
-    "hackernews",
-    "hnrss"
-   ],
-   "days": 2,
-   "best": {
-    "score": 155,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-16"
    }
   }
  ]

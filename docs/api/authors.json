@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-16T15:55:53.478955+00:00",
+ "generated_at": "2026-11-16T16:59:12.982160+00:00",
  "latest_snapshot": "2026-11-16",
- "total": 548,
+ "total": 558,
  "authors": [
   {
    "author": "mjs06",
@@ -529,6 +529,21 @@
    }
   },
   {
+   "author": "BeauHD",
+   "days_on_board": 2,
+   "items": 5,
+   "sources": [
+    "slashdot"
+   ],
+   "top_hit": {
+    "title": "Microsoft Blames Monster Email Outage On Software Defect Introduced In July Fix",
+    "url": "https://tech.slashdot.org/story/26/11/16/1628256/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-16"
+   }
+  },
+  {
    "author": "Sheena Vasani",
    "days_on_board": 2,
    "items": 5,
@@ -544,6 +559,21 @@
    }
   },
   {
+   "author": "HaraldvonBlauzahn",
+   "days_on_board": 2,
+   "items": 5,
+   "sources": [
+    "lemmy"
+   ],
+   "top_hit": {
+    "title": "For the first time, a C++ standard failed to pass the national bodies",
+    "url": "https://herecomesthemoon.net/2026/11/cpp26-failed-the-national-bodies/",
+    "score": 73,
+    "metric": "score",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "author": "New York Times",
    "days_on_board": 2,
    "items": 5,
@@ -555,21 +585,6 @@
     "url": "https://www.techmeme.com/261115/p9#a261115p9",
     "score": 15,
     "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "author": "HaraldvonBlauzahn",
-   "days_on_board": 2,
-   "items": 4,
-   "sources": [
-    "lemmy"
-   ],
-   "top_hit": {
-    "title": "For the first time, a C++ standard failed to pass the national bodies",
-    "url": "https://herecomesthemoon.net/2026/11/cpp26-failed-the-national-bodies/",
-    "score": 73,
-    "metric": "score",
     "date": "2026-11-15"
    }
   },
@@ -616,6 +631,21 @@
     "score": 10,
     "metric": "feed rank",
     "date": "2026-11-15"
+   }
+  },
+  {
+   "author": "Stevie Bonifield",
+   "days_on_board": 2,
+   "items": 3,
+   "sources": [
+    "theverge"
+   ],
+   "top_hit": {
+    "title": "Apple TV is getting video podcasts you can watch for free",
+    "url": "https://www.theverge.com/entertainment/1034168/apple-tv-video-podcasts",
+    "score": 10,
+    "metric": "feed rank",
+    "date": "2026-11-16"
    }
   },
   {
@@ -720,36 +750,6 @@
     "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
     "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
     "score": 213,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "author": "umerf",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "A family tree of software job titles",
-    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
-    "score": 265,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "author": "torutofu",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Testing a trash can Faraday cage",
-    "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
-    "score": 72,
     "metric": "points",
     "date": "2026-11-15"
    }
