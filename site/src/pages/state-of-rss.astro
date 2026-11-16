@@ -1,0 +1,90 @@
+---
+import Base from "../layouts/Base.astro";
+const title = "state of RSS — trendscope";
+const description = "A live census of 9,200+ RSS feeds: how many are alive, dormant, moved or dead — measured daily from the trendscope collection pipeline.";
+const path = '/state-of-rss.html';
+const ld = {
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "State of RSS — live feed census",
+  "description": description,
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "creator": {"@type":"Organization","name":"trendscope"},
+  "isAccessibleForFree": true
+};
+---
+<Base title={title} description={description} path={path} nav="none" ld={ld}>
+
+<nav><a href="index.html">← trendscope</a> · <a href="feeds.html">feed directory</a> · <a href="health.html">pipeline status</a> · <a href="datasets.html">datasets</a></nav>
+  <h1>State of RSS <span>— a live census</span></h1>
+  <p class="sub">Every day trendscope collects from 9,200+ RSS/Atom feeds. This page is the census:
+    how many are alive, dormant, moved or dead — measured, not surveyed. Numbers update with each
+    <a href="https://github.com/zalize-com/trendscope/actions">collection run</a>.</p>
+
+  <div id="cards" class="cards"></div>
+
+  <h2>By lane</h2>
+  <p class="legend">Feed counts per collection lane, with dormant and suspected-dead shares. Suspected-dead = empty in three consecutive daily snapshots (<a href="health.html">zero-watch</a>).</p>
+  <table id="lanes"><thead><tr><th>lane</th><th class="num">feeds</th><th class="num">dormant</th><th class="num">suspected dead</th><th class="num">alive today</th><th class="num">alive %</th></tr></thead><tbody></tbody></table>
+
+  <h2>What the census shows</h2>
+  <div id="findings" class="findings">
+    <p><strong>Blogrolls rot in place.</strong> The <code>br_*</code> blogroll lane is the largest
+    (6,000+ feeds) and carries most of the suspected-dead pool — personal blogs are the open web's
+    fragile edge: domains lapse, subdomains get reclaimed, and nobody files a bug report.</p>
+    <p><strong>Feeds move without telling anyone.</strong> A share of "dead" feeds are not dead at
+    all — they relocated (Substack → custom domain is the most common move we see). trendscope keeps
+    a moved-to map and follows it; static OPML lists never learn the new address.</p>
+    <p><strong>"Zero items" is a tide, not a verdict.</strong> A single empty snapshot mostly means
+    rate-limiting or a network transient, not a dead source. That is why the dead pool counts only
+    feeds that came back empty three snapshots in a row — the rest is weather.</p>
+    <p><strong>Newsletters die quietly.</strong> Dormant feeds (marked when a source stops publishing
+    but still serves XML) cluster in the newsletter lane — the content ended, the endpoint stayed.</p>
+    <p><strong>YouTube feeds are real.</strong> Every channel still exposes a working Atom feed at
+    <code>youtube.com/feeds/videos.xml?channel_id=…</code> — it is one of the few major platforms
+    that never turned RSS off.</p>
+  </div>
+
+  <h2>Use the data</h2>
+  <p class="use">
+    <a href="data/feeds.json">data/feeds.json</a> — the full feed registry (9,200+ entries) ·
+    <a href="data/zerowatch.json">data/zerowatch.json</a> — suspected-dead + transient pool ·
+    <a href="data/dormant.json">data/dormant.json</a> — dormant feed list ·
+    <a href="trendscope.opml">trendscope.opml</a> — import everything into your reader ·
+    <a href="api.html">API docs</a>
+  </p>
+  <p class="cc">All figures are derived from public endpoints only. Open data, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>
+
+<script is:inline src="/js/pages/state-of-rss.mjs" type="module"></script>
+
+<footer>Open data, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> ·     <a href="https://github.com/zalize-com/trendscope">github.com/zalize-com/trendscope</a></footer>
+
+</Base>
+
+<style is:global>
+@media (prefers-color-scheme:dark){:root{ --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
+          --dim:#8b949e; --accent:#58a6ff; --green:#3fb950; --red:#f85149; }}
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--green); }
+  .sub { color: var(--dim); margin-bottom: 18px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); gap: 10px; margin: 18px 0 8px; }
+  .card { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 14px 10px; }
+  .card .n { font-size: 26px; font-weight: 700; font-family: ui-monospace, monospace; }
+  .card .l { color: var(--dim); font-size: 12px; margin-top: 2px; }
+  .card.dead .n { color: var(--red); } .card.alive .n { color: var(--green); }
+  table { border-collapse: collapse; width: 100%; margin-top: 8px; }
+  th { text-align: left; color: var(--dim); font-size: 11px; text-transform: uppercase;
+       letter-spacing: .04em; padding: 6px 10px; border-bottom: 1px solid var(--border); }
+  td { padding: 6px 10px; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .num { text-align: right; font-family: ui-monospace, monospace; white-space: nowrap; }
+  h2 { font-size: 15px; margin: 24px 0 6px; color: var(--dim); text-transform: uppercase; letter-spacing:.05em; }
+  .legend { color: var(--dim); font-size: 12px; margin: 0 0 8px; }
+  .findings p { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; margin: 8px 0; }
+  .use { line-height: 2; } .use code { font-size: 12px; }
+  .cc { color: var(--dim); font-size: 12px; margin-top: 18px; }
+  #err { color: var(--red); }
+</style>
