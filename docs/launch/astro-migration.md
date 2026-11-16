@@ -15,9 +15,10 @@
 
 ## Non-negotiables (don't regress these)
 - Static output only; no backend; stdlib-only data pipeline untouched.
-- All URLs stay byte-identical: `<page>.html` paths map to Astro pages
-  (`astro.config` trailingSlash + `.html` emit) so sitemap/links/SEO
-  and downstream consumers (feed.xml, OPML, widget.js) keep working.
+- All URLs stay byte-identical: `astro.config.mjs` sets
+  `build: { format: 'file' }` so `src/pages/x.astro` emits `x.html`
+  (not `x/index.html`) — sitemap/links/SEO and downstream consumers
+  (feed.xml, OPML, widget.js) keep working byte-for-byte.
 - data/, docs/, scripts/, .github/ are NOT part of the site build —
   Pages deploy serves build output + repo data files unchanged.
 - 55-page parity checklist before Pages flips to build output.
