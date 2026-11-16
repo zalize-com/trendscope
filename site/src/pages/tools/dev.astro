@@ -1,0 +1,359 @@
+---
+import Base from "../../layouts/Base.astro";
+const title = "trendscope dev tools \u2014 subnet calculator, number base converter, password generator";
+const description = "Free in-browser developer tools: IPv4 subnet calculator, binary/octal/decimal/hex converter, and a cryptographically secure password generator. No upload, no signup, no tracking.";
+const path = '/tools/dev.html';
+---
+<Base title={title} description={description} path={path} nav="tools">
+
+<nav><a href="../index.html">← trendscope</a> · <a href="./">tools</a> · <a href="more.html">tools+</a> · <a href="utils.html">utils</a> · <a href="web.html">web</a> · <a href="a11y.html">a11y</a> · <a href="geo.html">geo</a></nav>
+  <h1>dev<span> tools</span></h1>
+  <p class="sub">Subnet calculator · number base · number base · password gen · CSV↔JSON — 20 tools, all client-side.</p>
+  <div class="tabs" id="tabs">
+    <button data-tool="subnet">IPv4 subnet</button>
+    <button data-tool="base">number base</button>
+    <button data-tool="pw">password gen</button>
+    <button data-tool="csv">CSV ↔ JSON</button>
+    <button data-tool="schema">JSON → schema</button>
+    <button data-tool="gi">.gitignore</button>
+    <button data-tool="semver">semver compare</button>
+    <button data-tool="curl">curl → code</button>
+    <button data-tool="hidden">hidden chars</button>
+    <button data-tool="env">.env auditor</button>
+    <button data-tool="ent">html entities</button>
+    <button data-tool="keys">key inspector</button>
+    <button data-tool="jdiff">JSON diff</button>
+    <button data-tool="llmcost">LLM cost est</button>
+    <button data-tool="datauri">file → data URI</button>
+    <button data-tool="ccommit">commit msg</button>
+    <button data-tool="ts">JSON → TS</button>
+    <button data-tool="csvprof">CSV profile</button>
+    <button data-tool="mcp">MCP config</button>
+    <button data-tool="sql">SQL format</button>
+    <button data-tool="b64file">b64→file</button>
+    <button data-tool="ascii">ASCII</button>
+    <button data-tool="gostruct">JSON → Go</button>
+    <button data-tool="jwtsign">JWT sign</button>
+    <button data-tool="jsonsql">JSON → SQL</button>
+    <button data-tool="jq">JSON query (jq-lite)</button>
+  </div>
+
+  <div class="panel" id="p-jq">
+    <h2>JSON query — jq-lite</h2>
+    <p class="hint">Path syntax: <code>.a.b[0]</code>, <code>.items[]</code> (all elements), <code>.*</code> (all values). One result per line, JSON-encoded.</p>
+    <input type="text" id="jq-p" placeholder=".items[].title" value=".items[]">
+    <textarea id="jq-in" rows="8" placeholder='&#123;"items":[&#123;"title":"a"&#125;,&#123;"title":"b"&#125;]&#125;'></textarea>
+    <pre id="jq-out" class="out"></pre>
+  </div>
+
+  <div class="panel" id="p-subnet">
+    <h2>IPv4 subnet calculator</h2>
+    <p class="hint">CIDR or IP/prefix, e.g. <code>10.0.0.17/24</code> or <code>192.168.1.0/26</code>.</p>
+    <input type="text" id="cidr" placeholder="192.168.1.0/24" value="192.168.1.0/24">
+    <div class="err" id="cidr-err"></div>
+    <table id="cidr-out"></table>
+  </div>
+
+  <div class="panel" id="p-base">
+    <h2>Number base converter</h2>
+    <p class="hint">Type in any field; the others update. Unsigned integers.</p>
+    <div class="row">
+      <div><label>decimal</label><input type="text" id="b-dec" placeholder="255"></div>
+      <div><label>hexadecimal</label><input type="text" id="b-hex" placeholder="ff or 0xff"></div>
+    </div>
+    <div class="row">
+      <div><label>octal</label><input type="text" id="b-oct" placeholder="377 or 0o377"></div>
+      <div><label>binary</label><input type="text" id="b-bin" placeholder="11111111 or 0b11111111"></div>
+    </div>
+    <div class="out" id="b-size" style="display:none"></div>
+    <div class="err" id="b-err"></div>
+  </div>
+
+  <div class="panel" id="p-pw">
+    <h2>Password generator</h2>
+    <p class="hint">crypto.getRandomValues — never leaves the browser.</p>
+    <label>length: <b id="pw-len-v">20</b></label>
+    <input type="range" id="pw-len" min="8" max="64" value="20">
+    <label class="chk"><input type="checkbox" id="pw-up" checked> uppercase A-Z</label>
+    <label class="chk"><input type="checkbox" id="pw-num" checked> digits 0-9</label>
+    <label class="chk"><input type="checkbox" id="pw-sym" checked> symbols !@#$%^&*()-_=+[]&#123;&#125;</label>
+    <label class="chk"><input type="checkbox" id="pw-noread"> exclude lookalikes (0O1lI|)</label>
+    <div class="out" id="pw-out"></div>
+    <button class="copy" id="pw-copy">copy</button>
+    <button class="copy" id="pw-regen">regenerate</button>
+  </div>
+
+  <div class="panel" id="p-csv">
+    <h2>CSV ↔ JSON</h2>
+    <p class="hint">Auto-detects direction: paste CSV → JSON array of objects; paste a JSON array → CSV. Handles quoted fields with commas/newlines.</p>
+    <textarea id="csv-in" placeholder="name,score\nalpha,12\nbeta,7" style="width:100%;height:150px"></textarea>
+    <div class="out" id="csv-out" style="white-space:pre;overflow-x:auto"></div>
+    <button class="copy" id="csv-copy">copy output</button>
+    <div class="err" id="csv-err"></div>
+  </div>
+
+
+  <div class="panel" id="p-schema">
+    <h2>JSON → JSON Schema</h2>
+    <p class="hint">Paste a JSON sample — infers a draft-2020-12 schema (types, required keys, array item schemas, enums for small string sets).</p>
+    <textarea id="sc-in" placeholder='[&#123;"name":"alpha","score":12,"tags":["a","b"]&#125;]' style="width:100%;height:150px"></textarea>
+    <div class="out" id="sc-out" style="white-space:pre;overflow-x:auto"></div>
+    <button class="copy" id="sc-copy">copy schema</button>
+    <div class="err" id="sc-err"></div>
+  </div>
+
+  <div class="panel" id="p-gi">
+    <h2>.gitignore generator</h2>
+    <p class="hint">Pick the languages/OS/IDEs in your stack — combined template outputs below.</p>
+    <div class="cn" id="gi-picks"></div>
+    <div class="out" id="gi-out" style="white-space:pre;overflow-x:auto;max-height:280px;overflow-y:auto"></div>
+    <button class="copy" id="gi-copy">copy .gitignore</button>
+  </div>
+
+  <div class="panel" id="p-semver">
+    <h2>Semver compare</h2>
+    <p class="hint">Two versions in — correct pre-release ordering (<code>1.0.0-alpha &lt; 1.0.0</code>), build metadata ignored per spec.</p>
+    <div class="row">
+      <div><label>version A</label><input type="text" id="sv-a" placeholder="1.2.3" value="1.4.0-rc.1"></div>
+      <div><label>version B</label><input type="text" id="sv-b" placeholder="1.4.0" value="1.4.0"></div>
+    </div>
+    <div class="out" id="sv-out"></div>
+    <div class="err" id="sv-err"></div>
+  </div>
+
+  <div class="panel" id="p-curl">
+    <h2>curl → fetch / requests</h2>
+    <p class="hint">Paste a curl command (with or without <code>curl</code> prefix). Emits JS <code>fetch()</code> and Python <code>requests</code> equivalents. Supports -X/-H/-d/--data*/-u/-A/-G/-F/--compressed.</p>
+    <textarea id="cu-in" style="width:100%;height:120px" placeholder="curl -X POST https://api.example.com/v1/items -H 'Content-Type: application/json' -H 'Authorization: Bearer x' -d '&#123;&quot;a&quot;:1&#125;'">curl -X POST https://api.example.com/v1/items -H 'Content-Type: application/json' -H 'Authorization: Bearer TOKEN' -d '&#123;"a":1,"b":[2,3]&#125;'</textarea>
+    <div class="row">
+      <div><label>fetch()</label><div class="out" id="cu-fetch" style="white-space:pre;overflow-x:auto;max-height:300px;overflow-y:auto"></div></div>
+      <div><label>python requests</label><div class="out" id="cu-py" style="white-space:pre;overflow-x:auto;max-height:300px;overflow-y:auto"></div></div>
+    </div>
+    <button class="copy" id="cu-copy">copy fetch</button>
+    <button class="copy" id="cu-copy-py">copy requests</button>
+    <div class="err" id="cu-err"></div>
+  </div>
+
+  <div class="panel" id="p-hidden">
+    <h2>Hidden character inspector</h2>
+    <p class="hint">Paste text that came from somewhere else — finds zero-width chars, bidi controls, non-breaking/exotic spaces, soft hyphens and lookalike non-ASCII letters (common in copy-paste attacks and broken diffs).</p>
+    <textarea id="hc-in" style="width:100%;height:100px" placeholder="paste suspicious text…"></textarea>
+    <div class="out" id="hc-summary"></div>
+    <div class="out" id="hc-list" style="white-space:pre;overflow-x:auto;max-height:220px;overflow-y:auto"></div>
+    <button class="copy" id="hc-strip">copy cleaned text</button>
+  </div>
+
+  <div class="panel" id="p-keys">
+    <h2>Keyboard key inspector</h2>
+    <p class="hint">Click the box, then press any key — shows <code>event.key</code>, <code>code</code>, <code>which</code> and modifiers. Recent keys below.</p>
+    <div id="kb-box" tabindex="0" style="border:1px dashed var(--border);border-radius:8px;padding:26px;text-align:center;color:var(--dim);outline:none;cursor:pointer">press a key…</div>
+    <div id="kb-out" style="margin-top:10px"></div>
+    <div id="kb-hist" style="margin-top:12px;font-size:13px"></div>
+  </div>
+
+  <div class="panel" id="p-jdiff">
+    <h2>JSON diff</h2>
+    <p class="hint">Paste two JSON values — path-level diff (added / removed / changed). Objects compared recursively; arrays by index.</p>
+    <div style="display:flex;gap:10px">
+      <textarea id="jd-a" rows="8" style="flex:1" placeholder='&#123;"a":1,"b":[1,2]&#125;'></textarea>
+      <textarea id="jd-b" rows="8" style="flex:1" placeholder='&#123;"a":2,"b":[1,3],"c":true&#125;'></textarea>
+    </div>
+    <div id="jd-out" style="margin-top:10px"></div>
+  </div>
+
+  
+  <div class="panel" id="p-env">
+    <h2>.env file auditor</h2>
+    <p class="hint">Paste a <code>.env</code> — flags keys that look like real secrets, duplicates and placeholders. Nothing leaves the page.</p>
+    <textarea id="env-in" rows="9" placeholder="DATABASE_URL=postgres://u:p@host/db&#10;AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE&#10;DEBUG=true"></textarea>
+    <div class="out" id="env-summary"></div>
+    <div class="out" id="env-list" style="display:none"></div>
+    <button class="copy" id="env-copy">copy sanitized</button>
+  </div>
+  <div class="panel" id="p-ent">
+    <h2>HTML entity encoder / decoder</h2>
+    <p class="hint">Encode text for safe embedding (&amp; &lt; &gt; &quot; ' → entities) or decode entities back. Catches the double-encoding bug class too.</p>
+    <textarea id="ent-in" rows="7" placeholder="can't use <tags> "raw" & stuff — or &#8217; decoded"></textarea>
+    <div class="btns" style="display:flex;gap:8px;margin:8px 0">
+      <button class="act" onclick="entGo(1)">encode →</button>
+      <button class="act" onclick="entGo(2)">decode →</button>
+      <button class="act" onclick="entGo(3)">encode×2 →</button>
+      <button class="copy" onclick="navigator.clipboard.writeText(document.getElementById('ent-out').textContent)">copy</button>
+    </div>
+    <div class="out" id="ent-out"></div>
+    <div class="out" id="ent-warn" style="display:none"></div>
+  </div>
+
+
+  <div class="panel" id="p-ccommit">
+    <h2>conventional-commit checker</h2>
+    <p class="hint">Validate a commit message against the Conventional Commits spec — type(scope)!: description, with hints when it fails.</p>
+    <input type="text" id="cc-in" placeholder="feat(auth): add oauth callback" style="width:100%">
+    <div id="cc-out" style="margin-top:10px"></div>
+  </div>
+
+  <div class="panel" id="p-datauri">
+    <h2>file → data URI</h2>
+    <p class="hint">Drop or pick a file — get a base64 data URI you can inline in CSS/HTML/markdown. Files up to ~2 MB work smoothly.</p>
+    <input type="file" id="du-file">
+    <div id="du-info" style="margin:8px 0;color:var(--dim);font-size:13px"></div>
+    <textarea id="du-out" rows="6" readonly placeholder="data:..."></textarea>
+    <button class="copy" id="du-copy">copy data URI</button>
+  </div>
+
+  <div class="panel" id="p-llmcost">
+    <h2>LLM API cost estimator</h2>
+    <p class="hint">Estimate monthly spend per model from your usage shape. Prices are approximate public list prices (per 1M tokens, USD) — verify on provider pricing pages before budgeting.</p>
+    <div class="row">
+      <div><label>requests / day</label><input type="text" id="lc-req" value="1000"></div>
+      <div><label>avg input tokens / req</label><input type="text" id="lc-in" value="2000"></div>
+      <div><label>avg output tokens / req</label><input type="text" id="lc-out" value="500"></div>
+    </div>
+    <p class="hint">Estimate tokens: paste a sample prompt → <span id="lc-tok">~0 tokens</span></p>
+    <textarea id="lc-sample" rows="3" placeholder="paste a sample prompt here… (≈4 chars ≈ 1 token for English)"></textarea>
+    <table id="lc-tbl" style="margin-top:10px"></table>
+  </div>
+
+  <div class="panel" id="p-ts">
+    <h2>JSON → TypeScript interface</h2>
+    <p class="hint">Paste a JSON sample — generates a typed interface tree (unions for mixed arrays, optional keys when siblings omit them, PascalCase names).</p>
+    <textarea id="ts-in" placeholder='&#123;"user":&#123;"id":1,"name":"ada","tags":["x","y"]&#125;,"repos":[&#123;"id":9,"private":false&#125;]&#125;' style="width:100%;height:140px"></textarea>
+    <div class="out" id="ts-out" style="white-space:pre;overflow-x:auto"></div>
+    <button class="copy" id="ts-copy">copy types</button>
+    <div class="err" id="ts-err"></div>
+  </div>
+
+
+  <div class="panel" id="p-csvprof">
+    <h2>CSV profiler</h2>
+    <p class="hint">Paste CSV/TSV — per-column profile: type guess, fill rate, unique count, top values, min/max/mean for numerics.</p>
+    <textarea id="prof-in" placeholder="date,source,rank&#10;2026-11-15,hackernews,1&#10;2026-11-15,lobsters,2" style="width:100%;height:130px"></textarea>
+    <div class="out" id="prof-out"></div>
+    <div class="err" id="prof-err"></div>
+  </div>
+
+
+  <div class="panel" id="p-mcp">
+    <h2>MCP server config validator</h2>
+    <p class="hint">Paste an <code>mcp.json</code> / <code>claude_desktop_config.json</code> — validates each server entry: stdio needs <code>command</code>, remote needs <code>url</code>, flags inline secrets and unpinned packages.</p>
+    <textarea id="mcp-in" placeholder='&#123;"mcpServers":&#123;"github":&#123;"command":"npx","args":["-y","@modelcontextprotocol/server-github"],"env":&#123;"GITHUB_TOKEN":"ghp_..."&#125;&#125;&#125;&#125;' style="width:100%;height:140px"></textarea>
+    <div class="out" id="mcp-out" style="white-space:pre-wrap"></div>
+    <div class="err" id="mcp-err"></div>
+  </div>
+
+
+  <div class="panel" id="p-sql">
+    <h2>SQL formatter</h2>
+    <p class="hint">Paste SQL — keywords uppercased, major clauses break to new lines, indent for subqueries and JOIN chains.</p>
+    <textarea id="sql-in" placeholder="select id, name from users where age > 30 order by name limit 10" style="width:100%;height:140px"></textarea>
+    <div style="display:flex;gap:8px;margin-top:6px"><button id="sql-copy">copy</button></div>
+    <div class="out" id="sql-out" style="white-space:pre-wrap"></div>
+    <div class="err" id="sql-err"></div>
+  </div>
+
+
+  <div class="panel" id="p-b64file">
+    <h2>Base64 / data URI → file</h2>
+    <p class="hint">Paste base64 or a full <code>data:…;base64,</code> URI — reconstructs the file locally and downloads it. Nothing leaves the browser.</p>
+    <textarea id="b64f-in" placeholder="data:image/png;base64,iVBORw0KGgo… or plain base64" style="width:100%;height:140px"></textarea>
+    <div style="display:flex;gap:8px;margin-top:6px;flex-wrap:wrap;align-items:center">
+      <input id="b64f-name" placeholder="filename (optional)" style="padding:7px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg);width:180px">
+      <button id="b64f-dl">download</button>
+    </div>
+    <div class="out" id="b64f-out"></div>
+    <div class="err" id="b64f-err"></div>
+  </div>
+
+
+  <div class="panel" id="p-ascii">
+    <h2>ASCII table</h2>
+    <p class="hint">All 128 ASCII codes — searchable by char, code, hex or name.</p>
+    <input id="as-q" placeholder="search: A / 65 / 0x41 / space / \n…" style="width:100%;padding:8px 11px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg);margin-bottom:8px">
+    <div class="tbl" id="as-out"></div>
+  </div>
+
+
+  <div class="panel" id="p-gostruct">
+    <h2>JSON → Go struct</h2>
+    <p class="hint">Paste a JSON sample — generates Go struct definitions with <code>json:</code> tags (nested structs, slices, optional→pointer-free by default).</p>
+    <textarea id="go-in" placeholder='&#123;"user":&#123;"id":1,"name":"ada","tags":["x","y"]&#125;,"repos":[&#123;"id":9,"private":false&#125;]&#125;' style="width:100%;height:140px"></textarea>
+    <div class="out" id="go-out" style="white-space:pre;overflow-x:auto"></div>
+    <button class="copy" id="go-copy">copy structs</button>
+    <div class="err" id="go-err"></div>
+  </div>
+
+
+  <div class="panel" id="p-jwtsign">
+    <h2>JWT signer (HS256)</h2>
+    <p class="hint">Signs a JWT with HMAC-SHA256 in your browser via WebCrypto — the secret never leaves this page. Pairs with the JWT decoder.</p>
+    <div style="display:grid;gap:8px">
+      <textarea id="jwt-h" placeholder='&#123;"alg":"HS256","typ":"JWT"&#125;' style="width:100%;height:56px"></textarea>
+      <textarea id="jwt-p" placeholder='&#123;"sub":"user-1","iat":1731700000,"exp":1731703600&#125;' style="width:100%;height:90px"></textarea>
+      <input id="jwt-s" type="text" placeholder="secret" style="padding:8px 11px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg)">
+    </div>
+    <div class="out" id="jwt-o" style="word-break:break-all"></div>
+    <button class="copy" id="jwt-c">copy token</button>
+    <div class="err" id="jwt-e"></div>
+  </div>
+
+
+  <div class="panel" id="p-jsonsql">
+    <h2>JSON → SQL</h2>
+    <p class="hint">Paste a JSON array of objects — infers a <code>CREATE TABLE</code> (portable types) plus <code>INSERT</code> rows.</p>
+    <div style="display:flex;gap:8px;align-items:center;margin-bottom:6px">
+      <input id="jsq-table" placeholder="table name (default: items)" style="padding:7px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--fg);width:200px">
+      <label class="muted" style="font-size:12px"><input type="checkbox" id="jsq-ins" checked> include INSERTs</label>
+    </div>
+    <textarea id="jsq-in" placeholder='[&#123;"id":1,"name":"ada","active":true,"score":9.5&#125;,&#123;"id":2,"name":"bob","active":false,"score":8.1&#125;]' style="width:100%;height:130px"></textarea>
+    <div class="out" id="jsq-out" style="white-space:pre;overflow-x:auto"></div>
+    <button class="copy" id="jsq-copy">copy sql</button>
+    <div class="err" id="jsq-err"></div>
+  </div>
+
+</Base>
+
+<style is:global>
+:root { --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3;
+          --dim:#8b949e; --accent:#58a6ff; --green:#3fb950; }
+  body { background: var(--bg); color: var(--fg);
+         font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 900px; margin: 0 auto; padding: 28px 18px 60px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  nav a { color: var(--dim); font-size: 13px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; } h1 span { color: var(--accent); }
+  .sub { color: var(--dim); margin-bottom: 20px; }
+  .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 22px; }
+  .tabs button {
+    background: var(--panel); color: var(--dim); border: 1px solid var(--border);
+    border-radius: 8px; padding: 7px 14px; font: inherit; font-size: 13px; cursor: pointer;
+  }
+  .tabs button.active { color: var(--fg); border-color: var(--accent); background: #1c2330; }
+  .panel { display: none; background: var(--panel); border: 1px solid var(--border);
+           border-radius: 10px; padding: 20px; }
+  .panel.active { display: block; }
+  h2 { font-size: 16px; margin-bottom: 4px; }
+  .hint { color: var(--dim); font-size: 13px; margin-bottom: 14px; }
+  label { display: block; font-size: 12px; color: var(--dim); margin: 12px 0 4px; }
+  input[type=text], input[type=number] {
+    width: 100%; background: var(--bg); color: var(--fg); border: 1px solid var(--border);
+    border-radius: 8px; padding: 9px 12px; font: inherit; font-family: ui-monospace, monospace;
+  }
+  input[type=range] { width: 100%; }
+  .row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .row > div { flex: 1; min-width: 200px; }
+  table { border-collapse: collapse; margin-top: 14px; width: 100%; }
+  td { padding: 5px 10px; border-bottom: 1px solid var(--border); font-size: 13px; }
+  td:first-child { color: var(--dim); width: 42%; }
+  td:last-child { font-family: ui-monospace, monospace; }
+  .out { font-family: ui-monospace, monospace; background: var(--bg); border: 1px solid var(--border);
+         border-radius: 8px; padding: 10px 12px; margin-top: 10px; word-break: break-all; }
+  .err { color: #f85149; font-size: 13px; margin-top: 8px; }
+  .chk { display: flex; align-items: center; gap: 8px; margin: 8px 0; font-size: 13px; cursor: pointer; }
+  .chk input { accent-color: var(--accent); }
+  button.copy { background: var(--panel); color: var(--dim); border: 1px solid var(--border);
+    border-radius: 6px; padding: 4px 12px; font: inherit; font-size: 12px; cursor: pointer; margin-top: 8px; }
+  button.copy:hover { color: var(--fg); }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--dim); font-size: 12px; }
+</style>
+
+<script is:inline src="/js/pages/tools/dev.js"></script>

@@ -1,0 +1,75 @@
+---
+import Base from "../../layouts/Base.astro";
+const title = "a11y audit \u2014 trendscope tools";
+const description = "Paste HTML, get an instant accessibility audit: missing alt, unlabeled inputs, heading order, duplicate ids, and more. 100% client-side.";
+const path = '/tools/a11y.html';
+---
+<Base title={title} description={description} path={path} nav="tools">
+
+<div class="wrap">
+  <nav><a class="back" href="../index.html">← trendscope</a> · <a href="./">tools</a> · <a href="utils.html">utils</a> · <a href="dev.html">dev</a> · <a href="web.html">web</a> · <a href="geo.html">geo</a></nav>
+  <h1>a11y audit</h1>
+  <p class="sub">Paste HTML — get an instant accessibility audit + tab-order map. Checks run in your browser via DOMParser; nothing is uploaded.
+    &nbsp;·&nbsp;<a href="utils.html#contrast" style="color:var(--accent)">contrast checker →</a></p>
+
+  <textarea id="in" placeholder='<html>&#10;  <body>&#10;    <img src="logo.png">&#10;    <button></button>&#10;    <input type="text">&#10;  </body>&#10;</html>'></textarea>
+  <div class="stat" id="stat"></div>
+  <div class="out" id="out"></div>
+  <h2>tab order</h2>
+  <div class="out" id="focus"></div>
+  <h2>heading outline</h2>
+  <div class="out" id="outline"></div>
+
+  
+</div>
+
+</Base>
+
+<style is:global>
+:root {
+    --bg: #0d1117; --panel: #161b22; --border: #30363d; --fg: #e6edf3;
+    --dim: #8b949e; --accent: #58a6ff; --green: #3fb950; --red: #f85149; --orange: #d29922;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --fg: #1f2328;
+      --dim: #59636e; --accent: #0969da; --green: #1a7f37; --red: #cf222e; --orange: #9a6700;
+    }
+  }
+  body { background: var(--bg); color: var(--fg);
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 24px 20px 60px; }
+  a.back { color: var(--accent); text-decoration: none; font-size: 14px; }
+  nav a { color: var(--dim); font-size: 13px; text-decoration: none; }
+  nav a:hover { color: var(--accent); }
+  h1 { font-size: 26px; margin: 14px 0 4px; }
+  .sub { color: var(--dim); font-size: 14px; }
+  textarea, input[type=text] {
+    width: 100%; padding: 10px 12px; border-radius: 8px; font-size: 14px;
+    border: 1px solid var(--border); background: var(--panel); color: var(--fg);
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  }
+  textarea { min-height: 180px; resize: vertical; }
+  .out { margin-top: 12px; }
+  .issue { display: flex; gap: 10px; padding: 8px 10px; border: 1px solid var(--border);
+    border-radius: 8px; margin-bottom: 8px; background: var(--panel);
+    font-size: 13px; align-items: baseline; }
+  .issue .sev { font-weight: 700; min-width: 52px; }
+  .sev.err { color: var(--red); } .sev.warn { color: var(--orange); }
+  .issue code { color: var(--dim); word-break: break-all; }
+  .issue .what { flex: 1; }
+  .foc { display: flex; gap: 10px; padding: 5px 10px; border-left: 2px solid var(--border);
+    margin-bottom: 4px; font-size: 13px; align-items: baseline; }
+  .foc .num { color: var(--dim); min-width: 30px; font-family: ui-monospace, monospace; }
+  .foc .nm { color: var(--dim); }
+  .foc.bad { border-left-color: var(--orange); }
+  .stat { color: var(--dim); font-size: 13px; margin-top: 12px; }
+  .ok { color: var(--green); font-weight: 600; }
+  h2 { font-size: 15px; color: var(--dim); font-weight: 600; margin: 22px 0 8px;
+    text-transform: uppercase; letter-spacing: .04em; }
+  footer { margin-top: 36px; padding-top: 14px; border-top: 1px solid var(--border);
+    color: var(--dim); font-size: 13px; }
+</style>
+
+<script is:inline src="/js/pages/tools/a11y.js"></script>

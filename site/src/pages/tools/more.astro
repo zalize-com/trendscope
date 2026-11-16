@@ -1,0 +1,176 @@
+---
+import Base from "../../layouts/Base.astro";
+const title = "trendscope tools+ \u2014 diff viewer & markdown preview, free in-browser";
+const description = "More free developer tools that run entirely in your browser: text diff viewer and markdown preview. No upload, no signup, no tracking.";
+const path = '/tools/more.html';
+---
+<Base title={title} description={description} path={path} nav="tools">
+
+<div class="wrap">
+  <a class="back" href="index.html">← more tools</a>
+  <h1>tools+</h1>
+  <p class="sub">Seven utilities, 100% client-side. No upload, no signup, no tracking. &nbsp;·&nbsp;<a href="utils.html" style="color:var(--accent)">utils →</a>&nbsp;·&nbsp;<a href="web.html" style="color:var(--accent)">web: QR, social card, robots.txt →</a>&nbsp;·&nbsp;<a href="dev.html" style="color:var(--accent)">dev: subnet, base, password, CSV↔JSON →</a>&nbsp;·&nbsp;<a href="a11y.html" style="color:var(--accent)">a11y audit →</a> · <a href="geo.html">geo</a></p>
+
+  <div class="tabs" id="tabs"></div>
+
+  <!-- Diff viewer -->
+  <div class="tool" data-tool="diff">
+    <h2>Text diff</h2>
+    <p class="hint">Line-based diff (LCS). Paste the original on the left, the new version on the right.</p>
+    <div class="row2">
+      <textarea id="diff-a" placeholder="original text…"></textarea>
+      <textarea id="diff-b" placeholder="changed text…"></textarea>
+    </div>
+    <div class="btns">
+      <button class="act" onclick="diffGo()">Compare</button>
+      <button class="act" onclick="diffSwap()">Swap</button>
+    </div>
+    <div class="stat" id="diff-stat"></div>
+    <div class="out" id="diff-out"></div>
+  </div>
+
+  <!-- Markdown preview -->
+  <div class="tool" data-tool="md">
+    <h2>Markdown preview</h2>
+    <p class="hint">Live preview. Supports headings, bold/italic/code, lists, tables, links, quotes, fences.</p>
+    <textarea id="md-in" placeholder="# Hello&#10;&#10;Type **markdown** here…"></textarea>
+    <div class="out md" id="md-out"></div>
+  </div>
+
+  <!-- Markdown table builder -->
+  <div class="tool" data-tool="mdtable">
+    <h2>Markdown table builder</h2>
+    <p class="hint">Paste TSV/CSV (e.g. straight from Excel/Sheets) → aligned Markdown table with header row.</p>
+    <textarea id="mt-in" placeholder="name&#9;lang&#9;stars&#10;trendscope&#9;python&#9;–"></textarea>
+    <div class="btns">
+      <button class="act" onclick="mtGo()">Build table</button>
+      <button class="act" onclick="navigator.clipboard.writeText(document.getElementById('mt-out').textContent)">Copy</button>
+    </div>
+    <div class="out" id="mt-out"></div>
+  </div>
+
+  <!-- Unicode inspector -->
+  <div class="tool" data-tool="uni">
+    <h2>Unicode inspector</h2>
+    <p class="hint">Paste any text — per-character codepoint, UTF-8 bytes, UTF-16 units, block and category.</p>
+    <textarea id="uni-in" placeholder="héllo → Ω≈ç√ 🚀"></textarea>
+    <div class="out" id="uni-out"></div>
+  </div>
+
+  <!-- AI-text tells -->
+  <div class="tool" data-tool="aitext">
+    <h2>AI-text tells</h2>
+    <p class="hint">Heuristic signals common in LLM-written prose — telltale words, em-dash density, uniform sentence length, formulaic transitions. <b>Not a detector</b>: humans write these too. Highlights what it flags.</p>
+    <textarea id="ai-in" placeholder="Paste text to check…"></textarea>
+    <div class="stat" id="ai-stat"></div>
+    <div class="out" id="ai-out"></div>
+    <div class="out md" id="ai-hl"></div>
+  </div>
+
+  <div class="tool" data-tool="toc">
+    <h2>Markdown TOC generator</h2>
+    <p class="hint">Paste markdown — get a table of contents with GitHub-style anchor links. Depth limit optional.</p>
+    <textarea id="toc-in" placeholder="# Title\n## Section\n### Sub…"></textarea>
+    <div style="display:flex;gap:8px;margin-top:6px;align-items:center">
+      <label class="hint" style="margin:0">max depth <input id="toc-depth" type="number" min="1" max="6" value="3" style="width:50px"></label>
+      <label class="hint" style="margin:0"><input id="toc-noh1" type="checkbox" checked> skip H1</label>
+      <button id="toc-copy">copy</button>
+    </div>
+    <pre class="out" id="toc-out"></pre>
+  </div>
+
+  <div class="tool" data-tool="html2md">
+    <h2>HTML → Markdown</h2>
+    <p class="hint">Paste HTML — get clean Markdown. Handles headings, links, lists, code, tables, quotes, images.</p>
+    <textarea id="h2m-in" placeholder="<h1>Hello</h1><p>Some <b>bold</b> and <a href=&quot;#&quot;>a link</a></p>"></textarea>
+    <div style="display:flex;gap:8px;margin-top:6px">
+      <button id="h2m-copy">copy</button>
+      <button id="h2m-dl">download .md</button>
+    </div>
+    <pre class="out" id="h2m-out"></pre>
+  </div>
+
+  
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/turndown@7.2.2/dist/turndown.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/turndown-plugin-gfm@1.0.2/dist/turndown-plugin-gfm.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/diff@7.0.0/dist/diff.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js"></script>
+
+</Base>
+
+<style is:global>
+:root {
+    --bg: #0d1117; --panel: #161b22; --border: #30363d; --fg: #e6edf3;
+    --dim: #8b949e; --accent: #58a6ff; --green: #3fb950; --red: #f85149; --orange: #d29922;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --fg: #1f2328;
+      --dim: #59636e; --accent: #0969da; --green: #1a7f37; --red: #cf222e; --orange: #9a6700;
+    }
+  }
+  body {
+    background: var(--bg); color: var(--fg);
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px 60px; }
+  a.back { color: var(--accent); text-decoration: none; font-size: 14px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; }
+  .sub { color: var(--dim); font-size: 14px; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 20px 0 16px; }
+  .tab {
+    padding: 7px 14px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--panel); color: var(--dim); cursor: pointer; font-size: 14px;
+  }
+  .tool { display: none; }
+  .tool.active { display: block; }
+  h2 { font-size: 18px; margin-bottom: 4px; }
+  .hint { color: var(--dim); font-size: 13px; margin-bottom: 12px; }
+  textarea, input[type=text] {
+    width: 100%; padding: 10px 12px; border-radius: 8px; font-size: 14px;
+    border: 1px solid var(--border); background: var(--panel); color: var(--fg);
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  }
+  textarea { min-height: 160px; resize: vertical; }
+  .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 640px) { .row2 { grid-template-columns: 1fr; } }
+  .btns { display: flex; gap: 8px; margin: 10px 0; flex-wrap: wrap; }
+  button.act {
+    padding: 8px 16px; border-radius: 8px; border: 1px solid var(--accent);
+    background: transparent; color: var(--accent); cursor: pointer; font-size: 14px;
+  }
+  button.act:hover { background: var(--accent); color: var(--bg); }
+  .out {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+    padding: 12px 14px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 13px; white-space: pre-wrap; word-break: break-word; min-height: 60px;
+    overflow-x: auto;
+  }
+  .diff-add { background: rgba(63,185,80,.15); color: var(--green); display: block; }
+  .diff-del { background: rgba(248,81,73,.15); color: var(--red); display: block; }
+  .diff-ctx { color: var(--dim); display: block; }
+  .ok { color: var(--green); }
+  .bad { color: var(--red); }
+  .stat { color: var(--dim); font-size: 13px; margin-bottom: 8px; }
+  /* markdown preview output */
+  .md h1, .md h2, .md h3 { margin: 14px 0 6px; font-family: inherit; }
+  .md h1 { font-size: 22px; border-bottom: 1px solid var(--border); padding-bottom: 4px; }
+  .md h2 { font-size: 18px; } .md h3 { font-size: 16px; }
+  .md p { margin: 8px 0; }
+  .md code { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: 0 5px; }
+  .md pre { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 10px; overflow-x: auto; margin: 8px 0; }
+  .md pre code { background: none; border: none; padding: 0; }
+  .md blockquote { border-left: 3px solid var(--border); padding-left: 12px; color: var(--dim); margin: 8px 0; }
+  .md ul, .md ol { padding-left: 22px; margin: 8px 0; }
+  .md a { color: var(--accent); }
+  .md table { border-collapse: collapse; margin: 8px 0; }
+  .md th, .md td { border: 1px solid var(--border); padding: 4px 10px; }
+  .md hr { border: none; border-top: 1px solid var(--border); margin: 14px 0; }
+  footer { margin-top: 40px; color: var(--dim); font-size: 13px; border-top: 1px solid var(--border); padding-top: 14px; }
+  footer a { color: var(--accent); }
+</style>
+
+<script is:inline src="/js/pages/tools/more.js"></script>

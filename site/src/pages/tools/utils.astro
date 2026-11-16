@@ -1,0 +1,429 @@
+---
+import Base from "../../layouts/Base.astro";
+const title = "trendscope utils \u2014 color converter, text inspector, URL editor, free in-browser";
+const description = "Free developer utilities that run entirely in your browser: color format converter, text statistics & case tools, URL query editor. No upload, no signup, no tracking \u2014 a replacement for dead utility extensions.";
+const path = '/tools/utils.html';
+---
+<Base title={title} description={description} path={path} nav="tools">
+
+<div class="wrap">
+  <a class="back" href="index.html">← tools</a>
+  <h1>utils</h1>
+  <p class="sub">Everyday utilities that used to need a browser extension. 100% client-side.&nbsp;·&nbsp;<a href="web.html" style="color:var(--accent)">web: QR, social card, robots.txt →</a>&nbsp;·&nbsp;<a href="dev.html" style="color:var(--accent)">dev: subnet, base, password, CSV↔JSON →</a>&nbsp;·&nbsp;<a href="a11y.html" style="color:var(--accent)">a11y audit →</a> · <a href="geo.html">geo</a></p>
+
+  <div class="tabs" id="tabs"></div>
+
+  <!-- Color converter -->
+  <div class="tool" data-tool="color">
+    <h2>Color converter</h2>
+    <p class="hint">Accepts #hex, rgb(), rgba(), hsl(), named colors.</p>
+    <input type="text" id="c-in" placeholder="#58a6ff or rgb(88,166,255) or hsl(210,100%,65%) or rebeccapurple">
+    <div class="swatch" id="c-sw"></div>
+    <div class="out kv" id="c-out"></div>
+  </div>
+
+  <!-- Text inspector -->
+  <div class="tool" data-tool="text">
+    <h2>Text inspector</h2>
+    <p class="hint">Counts, case transforms, whitespace cleanup — live as you type.</p>
+    <textarea id="t-in" placeholder="Paste or type text…"></textarea>
+    <div class="stat" id="t-stat"></div>
+    <div class="btns">
+      <button class="act" onclick="tGo('upper')">UPPER</button>
+      <button class="act" onclick="tGo('lower')">lower</button>
+      <button class="act" onclick="tGo('title')">Title Case</button>
+      <button class="act" onclick="tGo('camel')">camelCase</button>
+      <button class="act" onclick="tGo('snake')">snake_case</button>
+      <button class="act" onclick="tGo('kebab')">kebab-case</button>
+      <button class="act" onclick="tGo('trim')">trim lines</button>
+      <button class="act" onclick="tGo('dedupe')">dedupe lines</button>
+      <button class="act" onclick="tGo('sort')">sort lines</button>
+    </div>
+    <div class="out" id="t-out"></div>
+  </div>
+
+  <!-- YAML <-> JSON -->
+  <div class="tool" data-tool="yaml">
+    <h2>YAML ↔ JSON</h2>
+    <p class="hint">JSON→YAML always runs offline. YAML→JSON uses js-yaml via CDN when available.</p>
+    <div class="row2">
+      <textarea id="y-in" placeholder='&#123;"name":"demo","tags":["a","b"]&#125;'></textarea>
+      <div class="out" id="y-out" style="min-height:140px"></div>
+    </div>
+    <div class="btns">
+      <button class="act" onclick="yGo('j2y')">JSON → YAML</button>
+      <button class="act" onclick="yGo('y2j')">YAML → JSON</button>
+    </div>
+    <div class="stat" id="y-stat"></div>
+  </div>
+
+  <!-- Outline -> tree -->
+  <div class="tool" data-tool="tree">
+    <h2>Outline → tree</h2>
+    <p class="hint">Indented list (2 spaces or tab per level) → SVG decision tree. Great for branching options.</p>
+    <div class="row2">
+      <textarea id="tr-in" placeholder="Launch?&#10;  yes&#10;    write docs&#10;    tweet&#10;  no&#10;    fix bugs"></textarea>
+      <div class="out" id="tr-out" style="min-height:140px;overflow:auto"></div>
+    </div>
+    <div class="stat" id="tr-stat"></div>
+  </div>
+
+  <!-- Contrast checker -->
+  <div class="tool" data-tool="contrast">
+    <h2>Contrast checker</h2>
+    <p class="hint">WCAG 2.1 contrast ratio for text on background — AA needs 4.5:1, AAA 7:1.</p>
+    <div class="row2">
+      <input type="text" id="cc-fg" placeholder="foreground #e6edf3">
+      <input type="text" id="cc-bg" placeholder="background #0d1117">
+    </div>
+    <div class="swatch" id="cc-sw" style="display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:600">Aa preview</div>
+    <div class="out kv" id="cc-out"></div>
+  </div>
+
+  <!-- URL editor -->
+  <div class="tool" data-tool="slug">
+    <h2>Slug generator</h2>
+    <p class="hint">Title → URL-safe slug. Handles accents (Café → cafe), keeps '-' and '_', batch mode = one per line.</p>
+    <textarea id="sg-in" rows="5" placeholder="Café Notes: Why I Love Rust!&#10;你好 world"></textarea>
+    <div class="out" id="sg-out" style="margin-top:10px"></div>
+  </div>
+
+  <div class="tool" data-tool="url">
+    <h2>URL query editor</h2>
+    <p class="hint">Paste a URL — inspect and edit its parts, get the rebuilt URL.</p>
+    <input type="text" id="u-in" placeholder="https://example.com/path?a=1&b=two">
+    <div class="out kv" id="u-parts" style="margin-top:10px"></div>
+    <div class="stat" style="margin-top:10px">query params (edit values directly)</div>
+    <div class="out" id="u-params"></div>
+    <div class="stat" style="margin-top:10px">rebuilt</div>
+    <div class="out" id="u-out"></div>
+  </div>
+
+  <div class="tool" data-tool="date">
+    <h2>Date calculator</h2>
+    <p class="hint">Two dates → the span between them (incl./excl.); or a date ± N days → result date. No upload.</p>
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+      <input type="date" id="dc-a"> <span style="color:var(--dim)">→</span> <input type="date" id="dc-b">
+    </div>
+    <div class="out" id="dc-span" style="margin-top:10px"></div>
+    <div class="stat" style="margin-top:12px">date ± days</div>
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:6px">
+      <input type="date" id="dc-c">
+      <button class="btn" id="dc-minus">−</button>
+      <input type="number" id="dc-n" value="30" style="width:80px">
+      <button class="btn" id="dc-plus">+</button>
+      <span class="out" id="dc-res" style="flex:1"></span>
+    </div>
+  </div>
+
+  <div class="tool" data-tool="tz">
+    <h2>Timezone converter</h2>
+    <p class="hint">Now, or a datetime — shown across common zones. Pick a zone to see the converted time; all client-side (Intl).</p>
+    <input type="datetime-local" id="tz-in" step="60">
+    <div class="out" id="tz-out" style="margin-top:10px"></div>
+  </div>
+
+  <div class="tool" data-tool="freq">
+    <h2>Word frequency</h2>
+    <p class="hint">Paste text — counts words (case-folded, punctuation stripped). Toggle the stopword filter, export as CSV.</p>
+    <textarea id="fq-in" placeholder="paste text to analyze…" style="width:100%;height:130px"></textarea>
+    <label style="font-size:13px;color:var(--dim)"><input type="checkbox" id="fq-stop" checked> hide English stopwords</label>
+    <div class="out" id="fq-out" style="margin-top:8px"></div>
+    <button class="copy" id="fq-csv">copy as CSV</button>
+  </div>
+
+  <div class="tool" data-tool="lines">
+    <h2>Line ops</h2>
+    <p class="hint">Paste lines — sort, dedupe, reverse, shuffle, number, or strip whitespace in one click.</p>
+    <textarea id="ln-in" placeholder="one\nper\nline\nline" style="width:100%;height:120px"></textarea>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin:8px 0">
+      <button data-op="az">A→Z</button><button data-op="za">Z→A</button>
+      <button data-op="uniq">dedupe</button><button data-op="rev">reverse</button>
+      <button data-op="shuf">shuffle</button><button data-op="num">number</button>
+      <button data-op="trim">trim</button><button data-op="empty">remove empty</button>
+    </div>
+    <div class="out" id="ln-out"></div>
+    <button class="copy" id="ln-copy">copy</button>
+    <p class="hint" id="ln-stat" style="margin-top:6px"></p>
+  </div>
+
+  <div class="tool" data-tool="opml">
+    <h2>OPML → feeds.yaml</h2>
+    <p class="hint">Paste an OPML export from your RSS reader — get <a href="https://github.com/zalize-com/feedpaper" target="_blank" rel="noopener">feedpaper</a> <code>feeds.yaml</code> entries.</p>
+    <textarea id="op-in" placeholder='<opml version="2.0"><body><outline text="HN" xmlUrl="https://hnrss.org/frontpage"/><outline text="SW" xmlUrl="https://simonwillison.net/atom/everything/"/></body></opml>' style="width:100%;height:120px"></textarea>
+    <div class="out" id="op-out"></div>
+    <button class="copy" id="op-copy">copy yaml</button>
+    <div class="err" id="op-err"></div>
+  </div>
+
+  <div class="tool" data-tool="cron">
+    <h2>Crontab explainer</h2>
+    <p class="hint">Paste a 5-field cron expression — get a plain-English reading plus the next 5 fire times (local tz).</p>
+    <input id="cr-in" placeholder="*/15 9-17 * * 1-5" style="width:100%;padding:6px 9px;font:inherit;font-family:ui-monospace,monospace">
+    <div class="out" id="cr-out" style="margin-top:8px"></div>
+    <div class="err" id="cr-err"></div>
+  </div>
+
+  <div class="tool" data-tool="chmod">
+    <h2>chmod calculator</h2>
+    <p class="hint">Tick the permission boxes — get the octal and symbolic forms, or paste an octal to fill the boxes.</p>
+    <table id="cm-t" style="font-size:13px;border-collapse:collapse;margin:6px 0">
+      <tr><th></th><th>read</th><th>write</th><th>execute</th></tr>
+      <tr><td>owner</td><td><input type="checkbox" data-g="0" data-b="4"></td><td><input type="checkbox" data-g="0" data-b="2"></td><td><input type="checkbox" data-g="0" data-b="1"></td></tr>
+      <tr><td>group</td><td><input type="checkbox" data-g="1" data-b="4"></td><td><input type="checkbox" data-g="1" data-b="2"></td><td><input type="checkbox" data-g="1" data-b="1"></td></tr>
+      <tr><td>others</td><td><input type="checkbox" data-g="2" data-b="4"></td><td><input type="checkbox" data-g="2" data-b="2"></td><td><input type="checkbox" data-g="2" data-b="1"></td></tr>
+    </table>
+    <div class="out" id="cm-out"></div>
+    <p class="hint" style="margin-top:6px">octal: <input id="cm-oct" size="6" placeholder="755"> → fill boxes</p>
+  </div>
+
+  <div class="tool" data-tool="csv">
+    <h2>CSV &harr; JSON</h2>
+    <p class="hint">Paste CSV on the left &rarr; JSON rows on the right. Paste a JSON array &rarr; back to CSV.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <textarea id="cv-in" rows="9" placeholder="name,score&#10;alpha,10&#10;beta,20" style="width:100%"></textarea>
+      <textarea id="cv-out" rows="9" readonly style="width:100%"></textarea>
+    </div>
+    <p style="margin:6px 0">
+      <button class="go" id="cv-go">csv &rarr; json</button>
+      <button class="go" id="cv-bk">json &rarr; csv</button>
+      <label><input type="checkbox" id="cv-obj"> json as &#123;header:value&#125;</label>
+    </p>
+    <div class="out" id="cv-outx"></div>
+  </div>
+
+  <div class="tool" data-tool="semver">
+    <h2>semver compare</h2>
+    <p class="hint">Paste two versions — get which is newer, and the bump level (major/minor/patch/prerelease).</p>
+    <p><input id="sv-a" size="12" placeholder="1.2.3"> vs <input id="sv-b" size="12" placeholder="1.4.0">
+    <button class="go" id="sv-go">compare</button></p>
+    <div class="out" id="sv-out"></div>
+  </div>
+
+  <div class="tool" data-tool="pwgen">
+    <h2>password generator</h2>
+    <p class="hint">crypto.getRandomValues, runs entirely in your browser — nothing is sent anywhere.</p>
+    <p>
+      length <input id="pg-n" type="number" value="20" min="4" max="128" size="4">
+      <label><input type="checkbox" id="pg-sym" checked> symbols</label>
+      <label><input type="checkbox" id="pg-amb"> no-ambiguous (0O1lI)</label>
+      <button class="go" id="pg-go">generate</button>
+    </p>
+    <div class="out mono" id="pg-out" style="word-break:break-all"></div>
+    <p class="hint" id="pg-bits"></p>
+  </div>
+
+  <div class="tool" data-tool="case">
+    <h2>case converter</h2>
+    <p class="hint">Paste any identifier or text &rarr; all naming conventions at once.</p>
+    <p><input id="cc-in" size="36" placeholder="hello_world-example"></p>
+    <div class="out" id="cc-out" style="font-family:ui-monospace,monospace;font-size:13px;white-space:pre-wrap"></div>
+  </div>
+
+  <div class="tool" data-tool="sortlines">
+    <h2>sort &amp; dedupe lines</h2>
+    <p class="hint">Paste lines &rarr; sorted/deduped/reversed/shuffled out.</p>
+    <textarea id="sl-in" rows="7" style="width:100%" placeholder="banana
+Apple
+banana
+cherry"></textarea>
+    <p>
+      <button class="go" data-sl="az">a&rarr;z</button>
+      <button class="go" data-sl="za">z&rarr;a</button>
+      <button class="go" data-sl="len">by length</button>
+      <button class="go" data-sl="num">numeric</button>
+      <button class="go" data-sl="dedupe">dedupe</button>
+      <button class="go" data-sl="rev">reverse order</button>
+      <button class="go" data-sl="shuffle">shuffle</button>
+      <label><input type="checkbox" id="sl-ci"> ignore case</label>
+      <label><input type="checkbox" id="sl-trim"> trim</label>
+    </p>
+    <textarea id="sl-out" rows="7" style="width:100%" readonly></textarea>
+    <div class="out" id="sl-stat"></div>
+  </div>
+
+  <div class="tool" data-tool="uuid">
+    <h2>uuid v4 generator</h2>
+    <p class="hint">Random UUIDs from <code>crypto.randomUUID()</code> (CSPRNG), batch of N.</p>
+    <p>
+      <input id="uu-n" type="number" value="5" min="1" max="100" style="width:4em">
+      <label><input type="checkbox" id="uu-up"> uppercase</label>
+      <label><input type="checkbox" id="uu-nodash"> no dashes</label>
+      <button class="go" id="uu-go">generate</button>
+      <button class="go" id="uu-copy">copy</button>
+    </p>
+    <textarea id="uu-out" rows="6" style="width:100%" readonly></textarea>
+  </div>
+
+  <div class="tool" data-tool="bytes">
+    <h2>file-size unit converter</h2>
+    <p class="hint">Bytes &harr; KB/MB/GB (SI 1000) &harr; KiB/MiB/GiB (IEC 1024), plus bit-rate.</p>
+    <p>
+      <input id="by-n" type="number" value="1.5" step="any" style="width:8em">
+      <select id="by-u">
+        <option value="1">B</option><option value="8">bit</option>
+        <option value="1e3">KB</option><option value="1024">KiB</option>
+        <option value="1e6">MB</option><option value="1048576">MiB</option>
+        <option value="1e9">GB</option><option value="1073741824">GiB</option>
+        <option value="1e12">TB</option><option value="1099511627776">TiB</option>
+      </select>
+      <button class="go" id="by-go">convert</button>
+    </p>
+    <div class="out" id="by-out"></div>
+  </div>
+
+  <div class="tool" data-tool="lorem">
+    <h2>lorem ipsum generator</h2>
+    <p class="hint">Placeholder text: N paragraphs or words, classic or silly.</p>
+    <p>
+      <input id="lo-n" type="number" value="3" min="1" max="50" style="width:4em">
+      <select id="lo-unit"><option value="p">paragraphs</option><option value="w">words</option><option value="s">sentences</option></select>
+      <select id="lo-flavor"><option value="classic">classic latin</option><option value="tech">tech ipsum</option></select>
+      <label><input type="checkbox" id="lo-start" checked> start with "Lorem ipsum"</label>
+      <button class="go" id="lo-go">generate</button>
+      <button class="go" id="lo-copy">copy</button>
+    </p>
+    <textarea id="lo-out" rows="8" style="width:100%" readonly></textarea>
+  </div>
+
+  <div class="tool" data-tool="aspect">
+    <h2>aspect ratio calculator</h2>
+    <p class="hint">W:H ratio &harr; missing dimension &harr; CSS padding trick.</p>
+    <p>
+      ratio <input id="ar-w" type="number" value="16" style="width:4em"> : <input id="ar-h" type="number" value="9" style="width:4em">
+      &nbsp;|&nbsp; width <input id="ar-dw" type="number" placeholder="px" style="width:6em">
+      &rarr; height <input id="ar-dh" type="number" placeholder="px" style="width:6em">
+      <button class="go" id="ar-go">calc</button>
+    </p>
+    <div class="out" id="ar-out"></div>
+    <p class="hint">presets:
+      <button class="go" data-ar="16,9">16:9</button>
+      <button class="go" data-ar="4,3">4:3</button>
+      <button class="go" data-ar="21,9">21:9</button>
+      <button class="go" data-ar="1,1">1:1</button>
+      <button class="go" data-ar="3,2">3:2</button>
+      <button class="go" data-ar="9,16">9:16</button>
+    </p>
+  </div>
+
+  <div class="tool" data-tool="morse">
+    <h2>morse code converter</h2>
+    <p class="hint">Text &harr; Morse (dot/dash, / = word space). A-Z 0-9 + common punctuation.</p>
+    <textarea id="mo-in" rows="4" style="width:100%" placeholder="SOS 或 ... --- ..."></textarea>
+    <p><button class="go" data-mo="enc">text &rarr; morse</button><button class="go" data-mo="dec">morse &rarr; text</button></p>
+    <textarea id="mo-out" rows="4" style="width:100%" readonly></textarea>
+  </div>
+
+  <div class="tool" data-tool="roman">
+    <h2>roman numeral converter</h2>
+    <p class="hint">1-3999 &harr; I-MMMCMXCIX, strict validation.</p>
+    <p>
+      <input id="rn-in" style="width:14em" placeholder="2026 或 MMXXVI">
+      <button class="go" data-rn="enc">to roman</button>
+      <button class="go" data-rn="dec">to number</button>
+    </p>
+    <div class="out" id="rn-out"></div>
+  </div>
+
+  <div class="tool" data-tool="mime">
+    <h2>mime type ↔ extension</h2>
+    <p class="hint">Filter the table — or paste a filename / mime type. Common web dev types.</p>
+    <input id="mm-in" placeholder="e.g. webp, .json, application/pdf, image/" style="width:100%">
+    <div class="out" id="mm-out" style="margin-top:8px"></div>
+  </div>
+
+  <div class="tool" data-tool="semver">
+    <h2>semver sort & compare</h2>
+    <p class="hint">One version per line → sorted. Or two versions to compare. Powered by compare-versions.</p>
+    <textarea id="sv-in" rows="4" placeholder="1.10.0&#10;1.9.2&#10;2.0.0-rc.1&#10;1.9.10" style="width:100%"></textarea>
+    <div style="margin:6px 0">
+      <input id="sv-a" placeholder="a = 1.9.2" style="width:32%"> vs
+      <input id="sv-b" placeholder="b = 1.10.0" style="width:32%">
+      <button onclick="svCmp()">compare</button> <button onclick="svSort()">sort list</button>
+    </div>
+    <div class="out" id="sv-out"></div>
+  </div>
+
+  <div class="tool" data-tool="regex">
+    <h2>regex tester</h2>
+    <p class="hint">Pattern + flags + test text → highlighted matches with capture groups.</p>
+    <input id="rx-pat" placeholder="\b\w+@\w+\.\w+\b" style="width:62%;font-family:ui-monospace,monospace">
+    <input id="rx-fl" placeholder="gi" style="width:10%;font-family:ui-monospace,monospace">
+    <textarea id="rx-in" rows="4" placeholder="mail a@b.com or c@d.org" style="width:100%"></textarea>
+    <div class="out" id="rx-out" style="margin-top:8px"></div>
+  </div>
+
+  
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/dayjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/croner@9.0.0/dist/croner.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/compare-versions@6.1.1/lib/umd/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cronstrue@2.50.0/dist/cronstrue.min.js"></script>
+
+</Base>
+
+<style is:global>
+:root {
+    --bg: #0d1117; --panel: #161b22; --border: #30363d; --fg: #e6edf3;
+    --dim: #8b949e; --accent: #58a6ff; --green: #3fb950; --red: #f85149;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --fg: #1f2328;
+      --dim: #59636e; --accent: #0969da; --green: #1a7f37; --red: #cf222e;
+    }
+  }
+  body {
+    background: var(--bg); color: var(--fg);
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px 60px; }
+  a.back { color: var(--accent); text-decoration: none; font-size: 14px; }
+  h1 { font-size: 26px; margin: 14px 0 4px; }
+  .sub { color: var(--dim); font-size: 14px; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 20px 0 16px; }
+  .tab {
+    padding: 7px 14px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--panel); color: var(--dim); cursor: pointer; font-size: 14px;
+  }
+  .tool { display: none; }
+  .tool.active { display: block; }
+  h2 { font-size: 18px; margin-bottom: 4px; }
+  .hint { color: var(--dim); font-size: 13px; margin-bottom: 12px; }
+  textarea, input[type=text] {
+    width: 100%; padding: 10px 12px; border-radius: 8px; font-size: 14px;
+    border: 1px solid var(--border); background: var(--panel); color: var(--fg);
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  }
+  textarea { min-height: 140px; resize: vertical; }
+  .btns { display: flex; gap: 8px; margin: 10px 0; flex-wrap: wrap; }
+  button.act {
+    padding: 8px 16px; border-radius: 8px; border: 1px solid var(--accent);
+    background: transparent; color: var(--accent); cursor: pointer; font-size: 14px;
+  }
+  button.act:hover { background: var(--accent); color: var(--bg); }
+  .out {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+    padding: 12px 14px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 13px; white-space: pre-wrap; word-break: break-word; min-height: 40px;
+    overflow-x: auto;
+  }
+  .stat { color: var(--dim); font-size: 13px; margin-bottom: 8px; }
+  .kv { display: grid; grid-template-columns: 130px 1fr; gap: 4px 12px; }
+  .kv .k { color: var(--dim); }
+  .swatch {
+    width: 100%; height: 56px; border-radius: 8px; border: 1px solid var(--border);
+    margin: 8px 0 12px;
+  }
+  .err { color: var(--red); font-size: 13px; }
+  table.params { border-collapse: collapse; width: 100%; font-size: 13px; }
+  table.params td { border: 1px solid var(--border); padding: 4px 8px; }
+  table.params input { background: transparent; border: none; color: var(--fg); width: 100%;
+    font-family: inherit; font-size: 13px; }
+  footer { margin-top: 40px; color: var(--dim); font-size: 13px; border-top: 1px solid var(--border); padding-top: 14px; }
+  footer a { color: var(--accent); }
+</style>
+
+<script is:inline src="/js/pages/tools/utils.js"></script>
