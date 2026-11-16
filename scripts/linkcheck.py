@@ -56,7 +56,8 @@ for page in sorted(pages):
     rel = os.path.relpath(page, ROOT)
     if os.sep in rel:
         continue
-    check(f"trendscope/{rel}" in sitemap, f"{rel}: missing from sitemap.xml")
+    check(re.search(r"<loc>[^<]*/" + re.escape(rel) + r"</loc>", sitemap),
+            f"{rel}: missing from sitemap.xml")
 
 def js_string_scan(src):
     """Stack-based JS scanner — catches unclosed ', ", ` literals, /* comments
@@ -160,7 +161,7 @@ for page in sorted(pages):
 
 # every sitemap entry must resolve to a real page; ?t= entries must name a
 # tool tab that actually exists on that page
-for loc in re.findall(r"<loc>https://zalize-com\.github\.io/trendscope/([^<]+)</loc>", sitemap):
+for loc in re.findall(r"<loc>https?://[^/<]+/([^<]+)</loc>", sitemap):
     base = loc.split("?")[0].split("#")[0]
     target = os.path.join(ROOT, base)
     check(os.path.exists(target), f"sitemap.xml: dead entry → {loc}")
