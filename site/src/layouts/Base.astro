@@ -82,6 +82,8 @@ const lds = jsonld ? (Array.isArray(jsonld) ? jsonld : [jsonld]) : [];
 <link rel="alternate" type="application/rss+xml" title="trendscope snapshots" href="/feed.xml">
 <link rel="alternate" type="application/feed+json" title="trendscope snapshots" href="/feed.json">
 {lds.map((ld) => <script type="application/ld+json" set:html={JSON.stringify(ld)} />)}
+<!-- Cloudflare Web Analytics -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "3114a02fcbf84a80ba7f4258b80a82f9"}'></script>
 <slot name="head" />
 </head>
 <body>
