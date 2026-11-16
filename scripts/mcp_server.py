@@ -21,7 +21,7 @@ import urllib.request
 import urllib.parse
 
 BASE = os.environ.get("TRENDSCOPE_BASE",
-                      "https://zalize-com.github.io/trendscope")
+                      "https://trendscope--plov6nur.preview.devinapps.com")
 UA = "trendscope-mcp/0.1"
 
 
