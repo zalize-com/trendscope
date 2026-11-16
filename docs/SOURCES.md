@@ -147,7 +147,7 @@
 | `prageng` | Pragmatic Engineer NL | `newsletter.pragmaticengineer.com` |
 | `developingdev` | Developing Dev | `www.developing.dev` |
 | `engineerscodex` | Engineers Codex | `read.engineerscodex.com` |
-| `codecentric` | codecentric Blog | `blog.codecentric.de` |
+| `codecentric` | codecentric Blog | `www.codecentric.de` |
 | `spotify` | Spotify Engineering | `engineering.atspotify.com` |
 | `eb_artsy` | Artsy | `artsy.github.io` |
 | `eb_atlassian` | Atlassian | `www.atlassian.com` |
@@ -185,7 +185,7 @@
 | `eb_soshace` | Soshace | `blog.soshace.com` |
 | `eb_squarespace` | Squarespace | `engineering.squarespace.com` |
 | `eb_thumbtack` | Thumbtack | `www.thumbtack.com` |
-| `eb_timescale` | Timescale | `blog.timescale.com` |
+| `eb_timescale` | Timescale | `www.tigerdata.com` |
 | `eb_trivago` | Trivago | `tech.trivago.com` |
 | `eb_wealthfront` | Wealthfront | `eng.wealthfront.com` |
 | `eb_zapier` | Zapier | `zapier.com` |
@@ -2200,7 +2200,7 @@
 | `zarah` | zarah.dev | `zarah.dev` |
 | `guardianco` | Guardian Dev | `www.guardian.co.uk` |
 | `holovaty` | Adrian Holovaty | `www.holovaty.com` |
-| `huangjiwei` | Huang Jiwei | `www.huangjiwei.com` |
+| `huangjiwei` | Huang Jiwei | `huangjiwei.com` |
 | `ianbicking` | Ian Bicking | `www.ianbicking.org` |
 | `ideobook` | Ideobook | `www.ideobook.com` |
 | `ietf` | IETF Blog | `www.ietf.org` |
@@ -2229,7 +2229,7 @@
 | `a11ymatters` | A11y Matters | `www.a11ymatters.com` |
 | `aimeemarieknight` | Aimee Knight | `www.aimeemarieknight.com` |
 | `alexkras` | Alex Kras | `www.alexkras.com` |
-| `bimuyu` | Bimuyu | `www.bimuyu.com` |
+| `bimuyu` | Bimuyu | `bimuyu.com` |
 | `clicktorelease` | Click to Release | `www.clicktorelease.com` |
 | `coderyi` | CodeRyi | `www.coderyi.com` |
 | `cppblog` | CPPBlog | `www.cppblog.com` |
@@ -2690,7 +2690,7 @@
 | `w3api` | Binyuan Hui(@huybery) | `api.xgo.ing` |
 | `yahooeng` | Yahoo Engineering (Tumblr) | `yahooeng.tumblr.com` |
 | `youtubeblog` | YouTube Official Blog | `blog.youtube` |
-| `deepmind` | DeepMind | `deepmind.com` |
+| `deepmind` | DeepMind | `deepmind.google` |
 | `darkreading` | https://www.darkreading.com/rss.xml | `www.darkreading.com` |
 | `phys` | Phys.org - latest science and technology news stories | `phys.org` |
 | `probablyscience` | Probably Science | `probablyscience.libsyn.com` |
