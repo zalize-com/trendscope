@@ -32,6 +32,9 @@ jobs:
       - name: Regenerate daily movers
         run: python3 scripts/movers.py || true
 
+      - name: Regenerate weekly movers
+        run: MOVERS_WINDOW=7 python3 scripts/movers.py || true
+
       - name: Regenerate daily brief
         run: python3 scripts/brief.py || true
       - name: Source stats

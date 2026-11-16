@@ -71,9 +71,10 @@ const idx = await fetch("docs/index.json", {cache:"no-cache"}).then(r => r.json(
 const days = (idx.movers || []).slice().reverse(); // newest first
 const pick = $("dpick");
 pick.innerHTML = `<option value="latest">latest</option>` +
+  `<option value="w7">weekly (7d)</option>` +
   days.map(d => `<option value="${d}">${d}</option>`).join("");
 const want = P.get("d") || "latest";
-pick.value = days.includes(want) ? want : "latest";
+pick.value = (days.includes(want) || want === "w7") ? want : "latest";
 pick.onchange = () => { history.replaceState(null,"",`?d=${pick.value}`); load(); };
 
 function row(it, right) {
