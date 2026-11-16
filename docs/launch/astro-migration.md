@@ -58,3 +58,34 @@ site/dist/            # build output → Pages deploy target
 - A: scaffold, layout/components, CI deploy wiring, wave B bulk
 - B (me): tokens/design parity QA, wave A+C migration, screenshot
   diff harness, parity checklist owner
+
+## Gate results (2026-11-16) — PASS, ready for Pages flip
+
+62/62 pages built and parity-verified on `site/dist`:
+
+- **Pixel diff** (`scripts/migrate/visual_diff.sh`, `--virtual-time-budget` + 25s timeout):
+  board family 0%, 20+ pages <2%, median ~5%. Three pages >15% all
+  classified non-regression noise: `source`/`week` (dense word-cloud
+  pages — 1px line-height delta × whole-page glyph edges) and
+  `tools/web` (QR CDN fetch timing flake, same CDN both sides).
+- **Head parity**: title/canonical/JSON-LD/twitter equal; og copy
+  refreshed on 9 pages (semantically equal or richer, e.g. stale
+  "2375 sources" in old JSON-LD fixed to 9213).
+- **Structural**: footer 0 missing, nav `.here` page-set identical,
+  embed.html keeps topbar + 28 `?mode=` branches 1:1, tools/index.html
+  URL preserved via postbuild copy, 86 internal refs 0 broken,
+  sitemap/tools parity green.
+- **Architecture bugs found & fixed during migration**: daisyUI class
+  collision (`.hero>*` grid overlay stacked all hero children — fixed
+  with `prefix: "d-"`), `.row` flex/grid variant mixup, tools/index
+  URL fold under `build.format:'file'`, canonical losing SITE_ORIGIN
+  subpath (`new URL("/x", base)` drops path → string concat),
+  51 page footers stripped by chrome-pass, JSX whitespace collapse in
+  footers, scripts emitted after `</html>`, `<script is:inline>` braces
+  parsed as expressions (fixed by externalizing to `/js/pages/*`).
+- **Subpath deploy**: `SITE_BASE=/trendscope` + `SITE_ORIGIN` env rebase
+  root-absolute refs at postbuild (`scripts/migrate/rebase.sh`);
+  default build stays preview-domain identical.
+
+Remaining: Pages source flip to Actions artifact (user action), then
+legacy `.html` deletion after one stable week.
