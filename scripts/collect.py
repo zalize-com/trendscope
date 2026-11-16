@@ -67,8 +67,8 @@ def _feed_root(resp):
                     f"<link>{xml_escape(l.strip())}</link></item>"
                     for t, l in pairs) + "</channel></rss>")
                 root = ET.fromstring(synth)
-    for _el in root.iter():
-        _el.tag = _el.tag.split("}")[-1]
+    # keep namespaced tags as-is: fetchers query either bare tags (.//item) or
+    # explicit namespaces ({ATOM}entry / {R}item) — stripping them broke both
     return root
 
 
