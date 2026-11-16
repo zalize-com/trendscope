@@ -16,6 +16,7 @@ Fetch straight from GitHub raw or the Pages site (`/trendscope/…`).
 | `data/topics-history.csv` | CSV | Append-only per-day topic counts — time-series |
 | `docs/api/movers-latest.json` | JSON | Entered/left/gainers/droppers + package rank movers for the latest day pair |
 | `docs/api/movers-YYYY-MM-DD.json` | JSON | Same schema, archived per day — the movers history (from 2026-11-15) |
+| `docs/api/movers-w7-latest.json` | JSON | Weekly movers over a rolling 7-day window — same schema as movers-latest (entered/left/gainers/droppers + package ranks) |
 | `docs/api/week.json` | JSON | Rolling last-7-days top-50 by cumulative normalized heat + per-topic counts (same metric as `week.html`) |
 | `docs/api/month.json` | JSON | Same aggregate over a rolling 30-day window |
 | `docs/api/ideas-latest.json` | JSON | Ask-HN demand clusters + top asks + built/gap coverage |
