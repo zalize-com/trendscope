@@ -90,7 +90,13 @@ const path = '/tools/extensions.html';
   </table>
 
   <p class="sub" style="margin-top:18px">Everything runs client-side — your data never leaves the tab. Bookmark once; no extension can be yanked from under you again. <a href="index.html">All 90+ tools →</a></p>
+  <h2>FAQ</h2>
+  <details><summary>Why did my utility extension disappear?</summary><p>Chrome completed the Manifest V2 phase-out in 2025–2026: MV2 extensions were disabled, then removed from the Web Store. Utility extensions (JSON viewers, pickers, text tools) that were never ported died with it. Security extensions needing <code>webRequest</code> (e.g. classic uBlock Origin) can't be replaced by a webpage — but every read-only utility can.</p></details>
+  <details><summary>Do these tools send my data anywhere?</summary><p>No. Every tool on this site is 100% client-side JavaScript — paste stays in the tab, nothing is uploaded, no account, no tracking.</p></details>
+  <details><summary>Will these disappear like extensions did?</summary><p>They can't be remotely disabled — they're plain pages. The whole site is open source on <a href="https://github.com/zalize-com/trendscope">GitHub</a>; you can even self-host it.</p></details>
 </div>
+
+<script is:inline type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why did my utility extension disappear?","acceptedAnswer":{"@type":"Answer","text":"Chrome completed the Manifest V2 phase-out in 2025-2026: MV2 extensions were disabled then removed from the Web Store. Utility extensions never ported died with it."}},{"@type":"Question","name":"Do these tools send my data anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. Every tool is 100% client-side JavaScript — nothing is uploaded, no account, no tracking."}},{"@type":"Question","name":"Will these disappear like extensions did?","acceptedAnswer":{"@type":"Answer","text":"They cannot be remotely disabled — they are plain web pages, and the whole site is open source on GitHub."}}]}</script>
 
 <footer>
     Part of <a href="../index.html">trendscope</a> — the daily developer attention dataset.
