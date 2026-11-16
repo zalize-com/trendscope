@@ -18,7 +18,8 @@ for m in re.finditer(r'def (fetch_\w+)\([^)]*\):\s*\n\s*"""(.*?)"""(.*?)(?=\ndef
 
 out = [(k,) + feeds[fn] for k, fn in re.findall(r'"(\w+)": (fetch_\w+),', src) if fn in feeds]
 for p in sorted(glob.glob(os.path.join(ROOT, "scripts", "feeds_*.json"))):
-    for k, (label, feed, home) in json.load(open(p)).items():
+    for k, row in json.load(open(p)).items():
+        label, feed, home = row[:3]
         out.append((k, label, feed))
 
 def esc(s):

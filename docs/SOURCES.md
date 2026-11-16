@@ -3161,7 +3161,7 @@
 | `br_have_you_played_adrian_hon` | Have You Played? | Adrian Hon | `adrianhon.substack.com` |
 | `br_adriano_caloiaro` | Adriano Caloiaro | `adriano.fyi` |
 | `br_agentultra` | Agentultra | `agentultra.com` |
-| `br_age_of_ai_zap` | Age of AI | Zap | `ageofai.substack.com` |
+| `br_age_of_ai_zap` | Age of AI | Zap | `www.zappable.com` |
 | `br_armand_halbert_the_official_website_of_a` | Armand Halbert | The official website of Armand Halbert: Sof | `ahalbert.com` |
 | `br_joakim_ahnfelt_r_nne` | Joakim Ahnfelt-Rønne | `ahnfelt.medium.com` |
 | `br_aj_dev` | AJ.dev | `ajkueterman.com` |
@@ -3178,7 +3178,7 @@
 | `br_all_about_coding` | All about coding | `allaboutcoding.ghinda.com` |
 | `br_allen_pike_pixel_crafter` | Allen Pike, pixel crafter | `allenpike.com` |
 | `br_amish_s_blog` | Amish's Blog | `amishbhadeshia.co.uk` |
-| `br_am_i_stronger_yet_steve` | Am I Stronger Yet? | Steve | `amistrongeryet.substack.com` |
+| `br_am_i_stronger_yet_steve` | Am I Stronger Yet? | Steve | `secondthoughts.ai` |
 | `br_ananth_s_reflections_ananth_majumdar` | Ananth's Reflections | Ananth Majumdar | `ananthmajumdar.substack.com` |
 | `br_a_spot_of_sunlight` | A spot of sunlight | `anardil.net` |
 | `br_andersource_experiments_and_musings` | andersource | Experiments and musings | `andersource.dev` |
@@ -3328,7 +3328,7 @@
 | `br_christopher_mason` | Christopher Mason | `www.cmason.com` |
 | `br_codakuma_ios_apps_and_more` | Codakuma | iOS apps and more | `codakuma.com` |
 | `br_zikani_s_blog` | Zikani's Blog | `code.zikani.me` |
-| `br_confessions_of_a_code_addict_abhinav_upa` | Confessions of a Code Addict | Abhinav Upadhyay | `codeconfessions.substack.com` |
+| `br_confessions_of_a_code_addict_abhinav_upa` | Confessions of a Code Addict | Abhinav Upadhyay | `blog.codingconfessions.com` |
 | `br_coders_home_php_bash_uvm` | coders-home | PHP, Bash uvm. | `coders-home.de` |
 | `br_code_yarns_index` | Code Yarns – index | `codeyarns.com` |
 | `br_coles_codes` | coles.codes | `coles.codes` |
@@ -3491,7 +3491,7 @@
 | `br_jamie_s_blog` | Jamie’s blog | `jamie.ideasasylum.com` |
 | `br_jamie_dumont_photographer` | Jamie Dumont — Photographer | `jamiedumont.com` |
 | `br_jane_s_dev_blog` | Jane's Dev Blog | `janejeon.blog` |
-| `br_jan_kremer` | Jan Kremer | `jankremer.eu` |
+| `br_jan_kremer` | Jan Kremer | `jankremer.de` |
 | `br_jarek_avi_software_engineer_indie_hacker` | Jarek Avi | Software Engineer & Indie Hacker | `jarekavi.com` |
 | `br_jason_eckert_s_website_and_blog` | Jason Eckert's Website and Blog | `jasoneckert.github.io` |
 | `br_simply_confusing` | Simply Confusing | `jasonfantl.com` |
@@ -3679,7 +3679,7 @@
 | `br_prbs23_prbs23` | PRBS23 - PRBS23 | `prbs23.com` |
 | `br_principles_dev_software_engineering_prin` | Principles.dev - Software Engineering Principles | `principles.dev` |
 | `br_parker_rowe_engineer_developer` | Parker Rowe - Engineer, Developer. | `prowe.ca` |
-| `br_pseudofreedom_yi_zhang` | PseudoFreedom | Yi Zhang | `pseudofreedom.substack.com` |
+| `br_pseudofreedom_yi_zhang` | PseudoFreedom | Yi Zhang | `www.pseudofreedom.com` |
 | `br_peter_dev` | Peter Dev | `www.ptrdev.com` |
 | `br_welcome_to_purpleidea_com_https_purpleid` | Welcome to purpleidea.com - https://purpleidea.com/ | `purpleidea.com` |
 | `br_pv_wtf` | PV;WTF | `pv.wtf` |
@@ -4474,7 +4474,7 @@
 | `br_software_developer_preet_shah` | Software Developer | Preet Shah | `shahpreetk.com` |
 | `br_sharedphysics_roman_kudryashov` | SharedPhysics | Roman Kudryashov | `sharedphysics.com` |
 | `br_sharpnife_s_blog` | sharpnife's blog | `sharpnife.github.io` |
-| `br_shdon_com` | shdon.com | `shdon.com` |
+| `br_shdon_com` | shdon.com | `www.shdon.com` |
 | `br_shreyas` | Shreyas | `shreyasprakash.com` |
 | `br_shub_club` | shub.club | `shub.club` |
 | `br_simedw_s_blog` | SimEdw's Blog | `simedw.com` |
@@ -8442,7 +8442,7 @@
 | `br_nikdoof_com_posts` | nikdoof.com - Posts | `nikdoof.com` |
 | `br_niklasbarning_gedanken_ber_design_medien` | niklasbarning - Gedanken über Design, Medien und das moderne | `niklasbarning.de` |
 | `br_nitin_you_can_t_be_serious` | Nitin, you can't be serious! | `www.nitinpai.in` |
-| `br_niklas_weber` | Niklas Weber | `nklswbr.com` |
+| `br_niklas_weber` | Niklas Weber | `nklswbr.substack.com` |
 | `br_you_find_yourself_in_a_room` | You find yourself in a room... | `njms.ca` |
 | `br_ninio_s_learning_notes_just_notes_on_pro` | Ninio's Learning Notes – Just notes on problems I face | `ninio.ninarski.com` |
 | `br_nicorola_musik_zwischen_indie_und_electr` | NICOROLA | Musik zwischen Indie und Electronica. | `www.nicorola.de` |

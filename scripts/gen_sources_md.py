@@ -51,7 +51,8 @@ for k, fn in re.findall(r'"(\w+)": (fetch_\w+),', src):
 # data-driven feeds from scripts/feeds_*.json ({key: [label, feed, home]})
 for path in sorted((ROOT / "scripts").glob("feeds_*.json")):
     import json
-    for key, (label, feed, home) in json.load(open(path)).items():
+    for key, row in json.load(open(path)).items():
+        label, feed, home = row[:3]
         host = re.sub(r"^https?://", "", feed)
         host = re.sub(r"[/?].*$", "", host)
         if key in {r[0] for r in rows}:
