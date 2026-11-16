@@ -442,7 +442,7 @@ and open `index.html`.
 This dataset is free forever (CC0). If it saves you time, you can sponsor the
 infrastructure via the **Sponsor** button on this repo — GitHub Sponsors is
 wired up in `.github/FUNDING.yml`. Sponsorship keeps the twice-daily collection,
-the public API files, and the 72 free tools running.
+the public API files, and the 91 free tools running.
 
 ## Attribution
 
