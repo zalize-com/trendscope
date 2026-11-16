@@ -22,9 +22,22 @@ function row(it, badge, scoreTxt, cls) {
 async function run() {
   const [A, B] = [aEl.value, bEl.value];
   $("out").innerHTML = `<p id="err">loading ${A} vs ${B}…</p>`;
+  const j = async url => {
+    let r = await fetch(url, {cache: "no-cache"});
+    if (!r.ok && url.endsWith(".json")) {
+      // daily snapshots past the gzip switchover live as .json.gz
+      const gz = await fetch(url + ".gz", {cache: "no-cache"});
+      if (gz.ok) {
+        const ds = new DecompressionStream("gzip");
+        return JSON.parse(await new Response(gz.body.pipeThrough(ds)).text());
+      }
+    }
+    if (!r.ok) throw new Error(url + " " + r.status);
+    return r.json();
+  };
   const [sa, sb] = await Promise.all([
-    fetch(`data/daily/${A}.json`, {cache:"no-cache"}).then(r => r.json()),
-    fetch(`data/daily/${B}.json`, {cache:"no-cache"}).then(r => r.json()),
+    j(`data/daily/${A}.json`),
+    j(`data/daily/${B}.json`),
   ]);
   const mapA = {}, mapB = {};
   Object.values(sa.items||{}).flat().forEach(i => mapA[i.url] = i);

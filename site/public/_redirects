@@ -1,0 +1,5 @@
+# Cloudflare Pages: assets >25 MiB can't be stored on Pages — redirect to the
+# canonical copies on GitHub raw (always in sync: CI commits them daily).
+# Fetch follows 302 across origins; raw.githubusercontent.com sends ACAO:*.
+/data/latest.json https://raw.githubusercontent.com/zalize-com/trendscope/main/data/latest.json 302
+/data/history.csv https://raw.githubusercontent.com/zalize-com/trendscope/main/data/history.csv 302
