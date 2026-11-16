@@ -91724,7 +91724,7 @@ def fetch_yt_fireship(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_fireship attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -91762,7 +91762,7 @@ def fetch_yt_traversymedia(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_traversymedia attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -91800,7 +91800,7 @@ def fetch_yt_networkchuck(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_networkchuck attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -91838,7 +91838,7 @@ def fetch_yt_theprimeagen(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_theprimeagen attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -91876,7 +91876,7 @@ def fetch_yt_3blue1brown(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_3blue1brown attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -91914,7 +91914,7 @@ def fetch_yt_garyexplains(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_garyexplains attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -91952,7 +91952,7 @@ def fetch_yt_liveoverflow(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_liveoverflow attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -91990,7 +91990,7 @@ def fetch_yt_webdevsimplified(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_webdevsimplified attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92028,7 +92028,7 @@ def fetch_yt_techworldwithnana(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_techworldwithnana attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92066,7 +92066,7 @@ def fetch_yt_codingwithjohn(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_codingwithjohn attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92104,7 +92104,7 @@ def fetch_yt_freecodecamp(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_freecodecamp attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92142,7 +92142,7 @@ def fetch_yt_computerphile(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_computerphile attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92180,7 +92180,7 @@ def fetch_yt_hak5(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_hak5 attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92218,7 +92218,7 @@ def fetch_yt_sebastianlague(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_sebastianlague attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92256,7 +92256,7 @@ def fetch_yt_codevolution(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_codevolution attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92294,7 +92294,7 @@ def fetch_yt_iamtimcorey(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_iamtimcorey attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92332,7 +92332,7 @@ def fetch_yt_netninja(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_netninja attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92370,7 +92370,7 @@ def fetch_yt_academind(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_academind attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92408,7 +92408,7 @@ def fetch_yt_codinggarden(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_codinggarden attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92446,7 +92446,7 @@ def fetch_yt_wesbos(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_wesbos attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92484,7 +92484,7 @@ def fetch_yt_beyondfireship(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_beyondfireship attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92522,7 +92522,7 @@ def fetch_yt_theo(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_theo attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92560,7 +92560,7 @@ def fetch_yt_statquest(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_statquest attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92598,7 +92598,7 @@ def fetch_yt_dreamsofcode(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_dreamsofcode attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92636,7 +92636,7 @@ def fetch_yt_hyperplexed(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_hyperplexed attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92674,7 +92674,7 @@ def fetch_yt_codingwithlewis(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_codingwithlewis attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92712,7 +92712,7 @@ def fetch_yt_theodorepowell(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_theodorepowell attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92750,7 +92750,7 @@ def fetch_yt_petecodes(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_petecodes attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92788,7 +92788,7 @@ def fetch_yt_simsig(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_simsig attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92826,7 +92826,7 @@ def fetch_yt_joshtriedcoding(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_joshtriedcoding attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92864,7 +92864,7 @@ def fetch_yt_thecodingtrain(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_thecodingtrain attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92902,7 +92902,7 @@ def fetch_yt_beneater(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_beneater attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92940,7 +92940,7 @@ def fetch_yt_sentdex(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_sentdex attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -92978,7 +92978,7 @@ def fetch_yt_yannickilcher(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_yannickilcher attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -93016,7 +93016,7 @@ def fetch_yt_twominutepapers(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_twominutepapers attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -93054,7 +93054,7 @@ def fetch_yt_javidx9(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_javidx9 attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -93092,7 +93092,7 @@ def fetch_yt_husseinnasser(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_husseinnasser attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -93130,7 +93130,7 @@ def fetch_yt_coreyschafer(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_coreyschafer attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -93168,7 +93168,7 @@ def fetch_yt_brancheducation(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_brancheducation attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -93206,7 +93206,7 @@ def fetch_yt_cppcon(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_cppcon attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -93244,7 +93244,7 @@ def fetch_yt_goto(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_goto attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -93282,7 +93282,7 @@ def fetch_yt_pyconus(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_pyconus attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -93320,7 +93320,7 @@ def fetch_yt_codingtech(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_codingtech attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
@@ -93358,7 +93358,7 @@ def fetch_yt_asianometry(limit=15):
             break
         except Exception as e:
             print(f"  [warn] yt_asianometry attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
+            if _retryable(e) or getattr(e, "code", None) == 404:
                 time.sleep(2 * (attempt + 1))
             else:
                 return []
