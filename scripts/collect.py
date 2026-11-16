@@ -26609,7 +26609,7 @@ def fetch_bimuyu(limit=15):
     for attempt in range(3):
         try:
             req = urllib.request.Request(
-                "http://www.bimuyu.com/blog/rss.xml",
+                "https://bimuyu.com/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
                 root = _feed_root(resp)
@@ -27027,7 +27027,7 @@ def fetch_huangjiwei(limit=15):
     for attempt in range(3):
         try:
             req = urllib.request.Request(
-                "http://www.huangjiwei.com/blog/?feed=rss2",
+                "https://huangjiwei.com/blog/?feed=rss2",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
                 root = _feed_root(resp)
@@ -62329,7 +62329,7 @@ def fetch_nature(limit=15):
     for attempt in range(3):
         try:
             req = urllib.request.Request(
-                "http://www.nature.com/nature/current_issue/rss",
+                "https://www.nature.com/nature.rss",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
                 root = _feed_root(resp)
@@ -76698,7 +76698,7 @@ def fetch_deepmind(limit=15):
     for attempt in range(3):
         try:
             req = urllib.request.Request(
-                "https://deepmind.com/blog/feed/basic",
+                "https://deepmind.google/blog/rss.xml",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
                 root = _feed_root(resp)
