@@ -150,8 +150,28 @@ class _Redirect308(urllib.request.HTTPRedirectHandler):
         return self.http_error_302(req, fp, code, msg, headers)
 
 
+_REDDIT_MIN_INTERVAL = 10.0
+_reddit_last = [0.0]
+
+
+class _RedditThrottle(urllib.request.BaseHandler):
+    """Reddit rate-limits per client IP across ALL endpoints (any host, .rss
+    or .json): ~1 request then a 429 wave. 45 r_* fetchers firing back-to-back
+    from the Actions runner all starve. Enforce a minimum gap between requests
+    to *.reddit.com so the lane trickles instead of blacking out."""
+    def http_request(self, req):
+        if "reddit.com" in (req.host or ""):
+            gap = time.time() - _reddit_last[0]
+            if gap < _REDDIT_MIN_INTERVAL:
+                time.sleep(_REDDIT_MIN_INTERVAL - gap)
+            _reddit_last[0] = time.time()
+        return req
+
+    https_request = http_request
+
+
 urllib.request.install_opener(
-    urllib.request.build_opener(_Redirect308))
+    urllib.request.build_opener(_Redirect308, _RedditThrottle))
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
