@@ -101381,44 +101381,6 @@ def fetch_pb_maddy_miller(limit=15):
     return out
 
 
-def fetch_pb_marius_schulz(limit=15):
-    """Marius Schulz — personal tech blog feed, position-scored."""
-    print("Fetching Marius Schulz feed...")
-    import xml.etree.ElementTree as ET
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(
-                "https://feeds.feedburner.com/mariusschulz",
-                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                root = _feed_root(resp)
-            break
-        except Exception as e:
-            print(f"  [warn] pb_marius_schulz attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
-                time.sleep(2 * (attempt + 1))
-            else:
-                return []
-    else:
-        return []
-    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
-    entries = entries[:limit]
-    out = []
-    for i, e in enumerate(entries):
-        title = (e.findtext("{*}title", default="") or "").strip()
-        url = (e.findtext("{*}link", default="") or "").strip()
-        if not url:
-            for l in e.findall("{*}link"):
-                if l.get("rel", "alternate") == "alternate":
-                    url = l.get("href", "")
-                    break
-        url = url or "https://feeds.feedburner.com"
-        out.append(item(
-            "pb_marius_schulz", title, url, len(entries) - i, "feed rank",
-        ))
-    return out
-
-
 def fetch_pb_marshall_bowers(limit=15):
     """Marshall Bowers — personal tech blog feed, position-scored."""
     print("Fetching Marshall Bowers feed...")
@@ -103927,44 +103889,6 @@ def fetch_tb_vivek(limit=15):
     return out
 
 
-def fetch_tb_teotime_pacreau(limit=15):
-    """Teotime Pacreau — tech blog feed, position-scored."""
-    print("Fetching Teotime Pacreau feed...")
-    import xml.etree.ElementTree as ET
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(
-                "https://www.teotimepacreau.fr/feed/feed.xml",
-                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                root = _feed_root(resp)
-            break
-        except Exception as e:
-            print(f"  [warn] tb_teotime_pacreau attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
-                time.sleep(2 * (attempt + 1))
-            else:
-                return []
-    else:
-        return []
-    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
-    entries = entries[:limit]
-    out = []
-    for i, e in enumerate(entries):
-        title = (e.findtext("{*}title", default="") or "").strip()
-        url = (e.findtext("{*}link", default="") or "").strip()
-        if not url:
-            for l in e.findall("{*}link"):
-                if l.get("rel", "alternate") == "alternate":
-                    url = l.get("href", "")
-                    break
-        url = url or "https://www.teotimepacreau.fr"
-        out.append(item(
-            "tb_teotime_pacreau", title, url, len(entries) - i, "feed rank",
-        ))
-    return out
-
-
 def fetch_tb_headspin_blog(limit=15):
     """HeadSpin Blog — tech blog feed, position-scored."""
     print("Fetching HeadSpin Blog feed...")
@@ -106279,44 +106203,6 @@ def fetch_tb_oliver_jumpertz(limit=15):
         url = url or "https://deepdive.hashnode.dev"
         out.append(item(
             "tb_oliver_jumpertz", title, url, len(entries) - i, "feed rank",
-        ))
-    return out
-
-
-def fetch_tb_pauls_dev_blog(limit=15):
-    """//pauls dev blog — tech blog feed, position-scored."""
-    print("Fetching //pauls dev blog feed...")
-    import xml.etree.ElementTree as ET
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(
-                "https://www.paulsblog.dev/rss/",
-                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                root = _feed_root(resp)
-            break
-        except Exception as e:
-            print(f"  [warn] tb_pauls_dev_blog attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
-                time.sleep(2 * (attempt + 1))
-            else:
-                return []
-    else:
-        return []
-    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
-    entries = entries[:limit]
-    out = []
-    for i, e in enumerate(entries):
-        title = (e.findtext("{*}title", default="") or "").strip()
-        url = (e.findtext("{*}link", default="") or "").strip()
-        if not url:
-            for l in e.findall("{*}link"):
-                if l.get("rel", "alternate") == "alternate":
-                    url = l.get("href", "")
-                    break
-        url = url or "https://www.paulsblog.dev"
-        out.append(item(
-            "tb_pauls_dev_blog", title, url, len(entries) - i, "feed rank",
         ))
     return out
 
@@ -110045,44 +109931,6 @@ def fetch_tb_omer_karabacak(limit=15):
     return out
 
 
-def fetch_tb_jpaul_me(limit=15):
-    """JPaul.me — tech blog feed, position-scored."""
-    print("Fetching JPaul.me feed...")
-    import xml.etree.ElementTree as ET
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(
-                "https://www.jpaul.me/feed/",
-                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                root = _feed_root(resp)
-            break
-        except Exception as e:
-            print(f"  [warn] tb_jpaul_me attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
-                time.sleep(2 * (attempt + 1))
-            else:
-                return []
-    else:
-        return []
-    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
-    entries = entries[:limit]
-    out = []
-    for i, e in enumerate(entries):
-        title = (e.findtext("{*}title", default="") or "").strip()
-        url = (e.findtext("{*}link", default="") or "").strip()
-        if not url:
-            for l in e.findall("{*}link"):
-                if l.get("rel", "alternate") == "alternate":
-                    url = l.get("href", "")
-                    break
-        url = url or "https://www.jpaul.me"
-        out.append(item(
-            "tb_jpaul_me", title, url, len(entries) - i, "feed rank",
-        ))
-    return out
-
-
 def fetch_tb_hrishikesh_barua(limit=15):
     """Hrishikesh Barua — tech blog feed, position-scored."""
     print("Fetching Hrishikesh Barua feed...")
@@ -113465,44 +113313,6 @@ def fetch_lennysnewsletter(limit=15):
     return out
 
 
-def fetch_netflixtech(limit=15):
-    """Netflix TechBlog — engineering feed, position-scored."""
-    print("Fetching Netflix TechBlog feed...")
-    import xml.etree.ElementTree as ET
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(
-                "https://netflixtechblog.com/feed",
-                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                root = _feed_root(resp)
-            break
-        except Exception as e:
-            print(f"  [warn] netflixtech attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
-                time.sleep(2 * (attempt + 1))
-            else:
-                return []
-    else:
-        return []
-    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
-    entries = entries[:limit]
-    out = []
-    for i, e in enumerate(entries):
-        title = (e.findtext("{*}title", default="") or "").strip()
-        url = (e.findtext("{*}link", default="") or "").strip()
-        if not url:
-            for l in e.findall("{*}link"):
-                if l.get("rel", "alternate") == "alternate":
-                    url = l.get("href", "")
-                    break
-        url = url or "https://netflixtechblog.com"
-        out.append(item(
-            "netflixtech", title, url, len(entries) - i, "feed rank",
-        ))
-    return out
-
-
 def fetch_prageng(limit=15):
     """Pragmatic Engineer NL — engineering feed, position-scored."""
     print("Fetching Pragmatic Engineer NL feed...")
@@ -113651,44 +113461,6 @@ def fetch_codecentric(limit=15):
         url = url or "https://blog.codecentric.de"
         out.append(item(
             "codecentric", title, url, len(entries) - i, "feed rank",
-        ))
-    return out
-
-
-def fetch_slackeng(limit=15):
-    """Slack Engineering — engineering feed, position-scored."""
-    print("Fetching Slack Engineering feed...")
-    import xml.etree.ElementTree as ET
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(
-                "https://slack.engineering/feed/",
-                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                root = _feed_root(resp)
-            break
-        except Exception as e:
-            print(f"  [warn] slackeng attempt {attempt + 1} failed: {e}", file=sys.stderr)
-            if _retryable(e):
-                time.sleep(2 * (attempt + 1))
-            else:
-                return []
-    else:
-        return []
-    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
-    entries = entries[:limit]
-    out = []
-    for i, e in enumerate(entries):
-        title = (e.findtext("{*}title", default="") or "").strip()
-        url = (e.findtext("{*}link", default="") or "").strip()
-        if not url:
-            for l in e.findall("{*}link"):
-                if l.get("rel", "alternate") == "alternate":
-                    url = l.get("href", "")
-                    break
-        url = url or "https://slack.engineering"
-        out.append(item(
-            "slackeng", title, url, len(entries) - i, "feed rank",
         ))
     return out
 
@@ -119209,12 +118981,10 @@ def _extra_feed_fetchers():
         "betterprog": fetch_betterprog,
         "fedoramag": fetch_fedoramag,
         "lennysnewsletter": fetch_lennysnewsletter,
-        "netflixtech": fetch_netflixtech,
         "prageng": fetch_prageng,
         "developingdev": fetch_developingdev,
         "engineerscodex": fetch_engineerscodex,
         "codecentric": fetch_codecentric,
-        "slackeng": fetch_slackeng,
         "spotify": fetch_spotify,
         "eb_artsy": fetch_eb_artsy,
         "eb_atlassian": fetch_eb_atlassian,
@@ -119327,7 +119097,6 @@ def _extra_feed_fetchers():
         "tb_mustafa_albazy_blog": fetch_tb_mustafa_albazy_blog,
         "tb_mbaziira_ronald": fetch_tb_mbaziira_ronald,
         "tb_vivek": fetch_tb_vivek,
-        "tb_teotime_pacreau": fetch_tb_teotime_pacreau,
         "tb_headspin_blog": fetch_tb_headspin_blog,
         "tb_bleyl_dev": fetch_tb_bleyl_dev,
         "tb_pasindu_kavinda": fetch_tb_pasindu_kavinda,
@@ -119389,7 +119158,6 @@ def _extra_feed_fetchers():
         "tb_autosysops": fetch_tb_autosysops,
         "tb_leon_ai": fetch_tb_leon_ai,
         "tb_oliver_jumpertz": fetch_tb_oliver_jumpertz,
-        "tb_pauls_dev_blog": fetch_tb_pauls_dev_blog,
         "tb_tshiteej_bhardwaj": fetch_tb_tshiteej_bhardwaj,
         "tb_victoria_lo": fetch_tb_victoria_lo,
         "tb_abiola_farounbi": fetch_tb_abiola_farounbi,
@@ -119488,7 +119256,6 @@ def _extra_feed_fetchers():
         "tb_guillaume_briday": fetch_tb_guillaume_briday,
         "tb_marco_g": fetch_tb_marco_g,
         "tb_omer_karabacak": fetch_tb_omer_karabacak,
-        "tb_jpaul_me": fetch_tb_jpaul_me,
         "tb_hrishikesh_barua": fetch_tb_hrishikesh_barua,
         "tb_parish_khan": fetch_tb_parish_khan,
         "pb_angus_croll": fetch_pb_angus_croll,
@@ -119548,7 +119315,6 @@ def _extra_feed_fetchers():
         "pb_lorna_jane": fetch_pb_lorna_jane,
         "pb_lucy_bain": fetch_pb_lucy_bain,
         "pb_maddy_miller": fetch_pb_maddy_miller,
-        "pb_marius_schulz": fetch_pb_marius_schulz,
         "pb_marshall_bowers": fetch_pb_marshall_bowers,
         "pb_mark_luetke": fetch_pb_mark_luetke,
         "pb_matt_podwysocki": fetch_pb_matt_podwysocki,

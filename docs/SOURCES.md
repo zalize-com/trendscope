@@ -1,6 +1,6 @@
 # Source registry
 
-9249 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
+9213 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
 
 | Key | Description | Host |
 |---|---|---|
@@ -144,12 +144,10 @@
 | `betterprog` | Better Programming | `betterprogramming.pub` |
 | `fedoramag` | Fedora Magazine | `fedoramagazine.org` |
 | `lennysnewsletter` | Lenny Newsletter | `www.lennysnewsletter.com` |
-| `netflixtech` | Netflix TechBlog | `netflixtechblog.com` |
 | `prageng` | Pragmatic Engineer NL | `newsletter.pragmaticengineer.com` |
 | `developingdev` | Developing Dev | `www.developing.dev` |
 | `engineerscodex` | Engineers Codex | `read.engineerscodex.com` |
 | `codecentric` | codecentric Blog | `blog.codecentric.de` |
-| `slackeng` | Slack Engineering | `slack.engineering` |
 | `spotify` | Spotify Engineering | `engineering.atspotify.com` |
 | `eb_artsy` | Artsy | `artsy.github.io` |
 | `eb_atlassian` | Atlassian | `www.atlassian.com` |
@@ -262,7 +260,6 @@
 | `tb_mustafa_albazy_blog` | Mustafa Albazy Blog | `mustafa.page` |
 | `tb_mbaziira_ronald` | Mbaziira Ronald | `mbaziira.hashnode.dev` |
 | `tb_vivek` | Vivek | `vivekon.hashnode.dev` |
-| `tb_teotime_pacreau` | Teotime Pacreau | `www.teotimepacreau.fr` |
 | `tb_headspin_blog` | HeadSpin Blog | `www.headspin.io` |
 | `tb_bleyl_dev` | Bleyl Dev | `bleyldev.medium.com` |
 | `tb_pasindu_kavinda` | Pasindu Kavinda | `blog.pasindukavinda.me` |
@@ -324,7 +321,6 @@
 | `tb_autosysops` | AutoSysOps | `autosysops.com` |
 | `tb_leon_ai` | Leon AI | `blog.getleon.ai` |
 | `tb_oliver_jumpertz` | Oliver Jumpertz | `deepdive.hashnode.dev` |
-| `tb_pauls_dev_blog` | //pauls dev blog | `www.paulsblog.dev` |
 | `tb_tshiteej_bhardwaj` | Tshiteej Bhardwaj | `www.tshiteej.com` |
 | `tb_victoria_lo` | Victoria Lo | `lo-victoria.com` |
 | `tb_abiola_farounbi` | Abiola Farounbi | `abiolafarounbiblog.hashnode.dev` |
@@ -423,7 +419,6 @@
 | `tb_guillaume_briday` | Guillaume Briday | `guillaumebriday.fr` |
 | `tb_marco_g` | Marco G | `solariz.de` |
 | `tb_omer_karabacak` | Omer Karabacak | `omerkarabacak.medium.com` |
-| `tb_jpaul_me` | JPaul.me | `www.jpaul.me` |
 | `tb_hrishikesh_barua` | Hrishikesh Barua | `techops.substack.com` |
 | `tb_parish_khan` | Parish Khan | `parish.cv` |
 | `pb_angus_croll` | Angus Croll | `javascriptweblog.wordpress.com` |
@@ -483,7 +478,6 @@
 | `pb_lorna_jane` | Lorna Jane | `lornajane.net` |
 | `pb_lucy_bain` | Lucy Bain | `lucybain.com` |
 | `pb_maddy_miller` | Maddy Miller | `madelinemiller.dev` |
-| `pb_marius_schulz` | Marius Schulz | `feeds.feedburner.com` |
 | `pb_marshall_bowers` | Marshall Bowers | `maxdeviant.com` |
 | `pb_mark_luetke` | Mark Luetke | `luetkemj.github.io` |
 | `pb_matt_podwysocki` | Matt Podwysocki | `mattpodwysocki.github.io` |
@@ -3670,7 +3664,6 @@
 | `br_pete_keen` | Pete Keen | `petekeen.net` |
 | `br_peter_h_ng_thinker_maker` | Peter Hưng - Thinker. Maker | `peterhung.org` |
 | `br_nicolas_goutay_software_engineer_speaker` | Nicolas Goutay — Software Engineer, Speaker, Open Source tin | `www.phacks.dev` |
-| `br_philip_i_thomas` | Philip I. Thomas | `www.philipithomas.com` |
 | `br_philipp_zentner` | Philipp Zentner | `philippzentner.com` |
 | `br_nick_s_substack_nick_m` | Nick’s Substack | Nick M | `photonlines.substack.com` |
 | `br_pikuma_fundamentals_of_computer_science_` | Pikuma: Fundamentals of computer science and mathematics | `pikuma.com` |
@@ -3701,7 +3694,6 @@
 | `br_raesene_s_ramblings` | Raesene's Ramblings | `raesene.github.io` |
 | `br_raja_simon` | Raja Simon | `23s.11d.in` |
 | `br_online_home_of_rajkumar` | Online Home of Rajkumar | `rajkumaar.co.in` |
-| `br_ram_s_personal_website_the_personal_webs` | Ram’s Personal Website | The personal website of Ram Vasuthe | `ramvasuthevan.ca` |
 | `br_rasik_jain_software_engineer_consulting` | Rasik Jain - Software Engineer | Consulting | `rasikjain.com` |
 | `br_rasul_kireev` | Rasul Kireev | `rasulkireev.com` |
 | `br_reuben_rapose` | Reuben Rapose | `reubence.com` |
@@ -3800,7 +3792,6 @@
 | `br_trend_guardian` | Trend Guardian | `trendguardian.medium.com` |
 | `br_blog_trevor_stenson` | Blog — Trevor Stenson | `trevo.rs` |
 | `br_trickjarrett_com_semper_ad_meliora` | TrickJarrett.com: Semper Ad Meliora | `trickjarrett.com` |
-| `br_troy_hunt_troy_hunt` | Troy Hunt: Troy Hunt | `www.troyhunt.com` |
 | `br_truth_industri_es_giles_bowkett_s_blog_a` | truth industri.es | giles bowkett’s blog about code and musi | `truthindustri.es` |
 | `br_look_mum_i_have_a_blog_tsak_dev` | Look mum, I have a blog - tsak.dev | `tsak.dev` |
 | `br_tuesday_triage_weekly_newsletter_about_t` | Tuesday Triage — weekly newsletter about things I read and t | `tuesdaytriage.com` |
@@ -4311,7 +4302,6 @@
 | `br_lucas_makes_software` | Lucas Makes Software | `lucasegray.com` |
 | `br_luka_builds_things` | Luka builds things | `luka.korosec.cc` |
 | `br_lukas_werner` | Lukas Werner | `lukaswerner.com` |
-| `br_luke_hsiaox` | Luke Hsiao | `luke.hsiao.dev` |
 | `br_luke_bechtel` | Luke Bechtel | `lukebechtel.com` |
 | `br_everything_flows_a_celestial_emporium_of` | Everything Flows | A Celestial Emporium of Benevolent Knowle | `lukerodgers.ca` |
 | `br_ollin_boer_bohan` | Ollin Boer Bohan | `madebyoll.in` |
@@ -4331,7 +4321,6 @@
 | `br_matt_brandly` | matt brandly | `mattbrandly.com` |
 | `br_matthew_bauer` | Matthew Bauer | `matthewbauer.us` |
 | `br_matthew_blode` | Matthew Blode | `blode.co` |
-| `br_matthew_brunelle_s_blogx` | Matthew Brunelle's Blog | `blog.matthewbrunelle.com` |
 | `br_software_quality_design_architecture_ai_` | Software Quality, Design, Architecture & AI Assisted Develop | `mattilehtinen.com` |
 | `br_mattsayar_com` | mattsayar.com | `mattsayar.com` |
 | `br_max_bo` | ✶ Max Bo ✶ | `maxbo.me` |
@@ -4381,7 +4370,6 @@
 | `br_andrew_nesbitt_software_engineer_and_pac` | Andrew Nesbitt | Software Engineer and Package Management Ne | `nesbitt.io` |
 | `br_notes` | Notes | `netbros.com` |
 | `br_newbeelearn` | Newbeelearn | `newbeelearn.com` |
-| `br_software_engineering_news_from_bruno_ber` | Software Engineering News from Bruno Bernardino | `news.onbrn.com` |
 | `br_harald_nezbeda_software_development_blog` | Harald Nezbeda - Software Development Blog | `nezhar.com` |
 | `br_nicol_s_hatcher` | Nicolás Hatcher | `nhatcher.com` |
 | `br_nickmonad_blog` | nickmonad | blog | `nickmonad.blog` |
@@ -4401,7 +4389,6 @@
 | `br_olzhas_adiyatov` | Olzhas Adiyatov | `olzhas.github.io` |
 | `br_omar_kamali_tech_founder_ai_strategist` | Omar Kamali | Tech Founder & AI Strategist | `omarkamali.com` |
 | `br_systems_and_tech_thoughts` | Systems and Tech Thoughts | `on-systems.tech` |
-| `br_bruno_bernardino_automation_engineer_andx` | Bruno Bernardino - Automation Engineer and Consultant | `news.onbrn.com` |
 | `br_ether` | Ether | `onether.com` |
 | `br_ooer` | Ooer | `ooer.com` |
 | `br_op111_net_recipes_on_topics_of_web_devel` | op111.net - Recipes on topics of web development | `op111.net` |
@@ -4600,7 +4587,6 @@
 | `br_adam_s_blag` | Adam's Blag | `arm64.ca` |
 | `br_damian_bemben` | damian bemben | `bemben.co.uk` |
 | `br_jakub_brzozowski` | Jakub Brzozowski | `www.brzozowski.io` |
-| `br_my_small_ecofriendly_blogx` | My Small EcoFriendly Blog | `www.chrisbako.com` |
 | `br_chris_place` | Chris' Place | `chris-besch.com` |
 | `br_david_tran_s_blog_co_founder_of_flow_clu` | David Tran’s Blog | Co-founder of Flow Club, software engine | `davidtran.me` |
 | `br_denial_of_services` | Denial of Services | `denialof.services` |
@@ -4618,7 +4604,6 @@
 | `br_xlii_space` | xlii.space | `xlii.space` |
 | `br_journal_yagmur_cetin_tas` | Journal | Yagmur Cetin Tas | `yagmurtas.com` |
 | `br_yeis_dev` | yeis.dev | `yeis.dev` |
-| `br_yield_code_dmitry_kudryavtsev` | yield code(); - Dmitry Kudryavtsev | `kudmitry.com` |
 | `br_welcome_to_yobihome` | Welcome to yobihome | `yobibyte.github.io` |
 | `br_yousef_s_blog` | Yousef's μBlog | `yousef.sh` |
 | `br_yusuf_aytas_my_thoughts_on_tech_life_and` | Yusuf Aytas - My Thoughts on Tech, Life, and More | `yusufaytas.com` |
@@ -4631,7 +4616,6 @@
 | `br_home_zayenz_se` | Home - zayenz.se | `zayenz.se` |
 | `br_moze` | @moze | `zenadi.com` |
 | `br_blog_zubspace_between_code_and_design` | Blog | zubspace - between code and design | `www.zubspace.com` |
-| `br_paul_graham` | Paul Graham | `www.aaronsw.com` |
 | `br_maurycy_s_blog` | Maurycy's blog | `maurycyz.com` |
 | `br_ken_shirriff_s_blog` | Ken Shirriff's blog | `www.righto.com` |
 | `br_jeff_huang_computer_science_at_brown_uni` | Jeff Huang · Computer Science at Brown University | `jeffhuang.com` |
@@ -4646,7 +4630,6 @@
 | `br_conor_barnes` | Conor Barnes | `ideopunk.com` |
 | `br_paul_butler` | Paul Butler | `paulbutler.org` |
 | `br_raptitude_com_getting_better_at_being_hu` | Raptitude.com – Getting Better at Being Human | `www.raptitude.com` |
-| `br_scott_hanselman_coder_blogger_teacher_sp` | Scott Hanselman - Coder, Blogger, Teacher, Speaker, Author | `feeds.hanselman.com` |
 | `br_shtetl_optimized` | Shtetl-Optimized | `scottaaronson.blog` |
 | `br_slate_star_codex` | Slate Star Codex | `slatestarcodex.com` |
 | `br_jacques_mattheij` | Jacques Mattheij | `jacquesmattheij.com` |
@@ -4894,7 +4877,6 @@
 | `br_reasonable_performance` | Reasonable Performance | `vfoley.xyz` |
 | `br_meain_blog` | meain/blog | `blog.meain.io` |
 | `br_raed_s_blog` | Raed's blog | `blog.raed.dev` |
-| `br_deciphering_glyph_indexx` | Deciphering Glyph :: index | `blog.glyph.im` |
 | `br_schemescape` | Schemescape | `log.schemescape.com` |
 | `br_combinatorics_and_more_gil_kalai_s_blog` | Combinatorics and more | Gil Kalai’s blog | `gilkalai.wordpress.com` |
 | `br_tratt_net` | tratt.net | `tratt.net` |
@@ -4913,7 +4895,6 @@
 | `br_performance_matters_a_blog_about_low_lev` | Performance Matters | A blog about low-level software and ha | `travisdowns.github.io` |
 | `br_postgresql_and_databases_in_general` | PostgreSQL and Databases in general | `amitkapila16.blogspot.com` |
 | `br_random_ascii_tech_blog_of_bruce_dawson_f` | Random ASCII – tech blog of Bruce Dawson | Forecast for rand | `randomascii.wordpress.com` |
-| `br_without_boats_dreams_dry_up` | Without boats, dreams dry up | `without.boats` |
 | `br_xaver_s_blog_more_or_less_random_posts_a` | Xaver’s blog | More or less random posts about stuff in KDE  | `zamundaaa.github.io` |
 | `br_tyler_mandry` | Tyler Mandry | `tmandry.gitlab.io` |
 | `br_benjojo_s_blog` | Benjojo's Blog | `blog.benjojo.co.uk` |
@@ -5095,7 +5076,6 @@
 | `br_sunil_pai_solving_the_decision_problem` | Sunil Pai • Solving the decision problem | `sunilpai.dev` |
 | `br_cassidy_williams` | Cassidy Williams | `cassidoo.co` |
 | `br_wickopedia_a_blog_by_john_wickerson` | Wickopedia – A blog by John Wickerson | `johnwickerson.wordpress.com` |
-| `br_boringsql_supercharge_your_sql_postgresqx` | boringSQL | Supercharge your SQL & PostgreSQL powers | `boringsql.com` |
 | `br_kevin_boone_home_page` | Kevin Boone: Home page | `kevinboone.me` |
 | `br_alok_s_blog` | Alok's blog | `alok.github.io` |
 | `br_justin_skycak` | Justin Skycak | `justinmath.com` |
@@ -5114,7 +5094,6 @@
 | `br_frederick_vanbrabant_s_delirious_ranting` | Frederick Vanbrabant's Delirious Rantings | `frederickvanbrabant.com` |
 | `br_blog_mike_saburenkov` | Blog - Mike Saburenkov | `mikesub.net` |
 | `br_blog_dan_q` | Blog – Dan Q | `danq.me` |
-| `br_joel_on_software` | Joel on Software | `www.joelonsoftware.com` |
 | `br_campbell_mclauchlan` | Campbell McLauchlan | `universealacarte.blogspot.com` |
 | `br_posts_easyperf` | Posts | Easyperf | `easyperf.net` |
 | `br_everythings_better_with_brentter` | Everythings Better With Brentter | `brentter.com` |
@@ -5413,7 +5392,6 @@
 | `br_don_t_panic` | Don't Panic | `commaok.xyz` |
 | `br_archives_reasonably_polymorphic` | Archives :: Reasonably Polymorphic | `reasonablypolymorphic.com` |
 | `br_the_sporks_space_party_with_sporks_in_sp` | the sporks space - party with sporks in space | `sporks.space` |
-| `br_schneems_programming_practices_performan` | Schneems - Programming Practices, Performance, and Pedantry | `www.schneems.com` |
 | `br_michael_bang_s_blog` | Michael Bang's blog | `blog.vbang.dk` |
 | `br_x_log` | x-log | `blog.x-way.org` |
 | `br_articles_daniel_ritzenthaler` | Articles — Daniel Ritzenthaler | `danritz.com` |
@@ -7331,7 +7309,6 @@
 | `br_sam_hardacre` | Sam Hardacre | `blog.nocturnalmonkey.com` |
 | `br_never_afk_bitstackers_blog` | never-afk - bitstackers blog | `blog.never-afk.de` |
 | `br_random_notesx` | Random Notes | `blog.nytsoi.net` |
-| `br_home_morning_coffeex` | Home | Morning Coffee | `oberbrunner.com` |
 | `br_the_old_dog_blog` | The Old Dog Blog | `blog.olddog.games` |
 | `br_oh_hey_blogx` | Oh, hey blog | `blog.ohheybrian.com` |
 | `br_fragmede` | fragmede | `blog.onepatchdown.net` |
@@ -7385,7 +7362,6 @@
 | `br_blogissimo_meine_sicht_auf_das_leben_das` | Blogissimo - Meine Sicht auf das Leben, das Internet und den | `www.blogissimo.de` |
 | `br_bobby_hiltz_bobbyhiltz_com` | Bobby Hiltz | BobbyHiltz.com | `bobbyhiltz.com` |
 | `br_boat_horse` | boat.horse | `boat.horse` |
-| `br_bob_monsour` | Bob Monsour | `www.bobmonsour.com` |
 | `br_bob_matyas` | Bob Matyas | `bobmatyas.com` |
 | `br_the_archive_ivan_bogomolov_s_personal_we` | The Archive | Ivan Bogomolov's personal web page: dev notes, | `bogomolov.work` |
 | `br_bohemian_sultriness` | Bohemian Sultriness | `bohemiansultriness.nekoweb.org` |
@@ -9189,7 +9165,6 @@
 | `br_a_diary_of_secret_yearnings` | A Diary of Secret Yearnings | `yearnings-diary.bearblog.dev` |
 | `br_yequari_com` | yequari.com | `yequari.com` |
 | `br_yeri_tiete` | Yeri Tiete | `yeri.be` |
-| `br_yegor_s_blog_about_computers` | Yegor's Blog About Computers | `www.yegor256.com` |
 | `br_yesterday` | yesterday | `yesterday.bearblog.dev` |
 | `br_snow_reflected_light` | Snow-reflected light | `yingxue.bearblog.dev` |
 | `br_inane_observations` | Inane Observations | `yingtongli.me` |
@@ -9232,24 +9207,13 @@
 | `br_zwentner_com_blog_f_r_pop_netzkultur` | ZWENTNER.com – Blog für Pop- & Netzkultur | `www.zwentner.com` |
 | `br_rod_amora` | Rod Amora | `rodamora.com` |
 | `br_decomposition_alx` | decomposition.al | `decomposition.al` |
-| `br_decomposition_alxx` | decomposition.al | `decomposition.al` |
 | `br_kamalmarhubi_com` | kamalmarhubi.com | `kamalmarhubi.com` |
-| `br_kamalmarhubi_comx` | kamalmarhubi.com | `kamalmarhubi.com` |
-| `br_blog_bonnieeisenman_comx` | blog.bonnieeisenman.com | `blog.bonnieeisenman.com` |
-| `br_blog_jfo_clickx` | blog.jfo.click | `blog.jfo.click` |
-| `br_blog_plover_comx` | blog.plover.com | `blog.plover.com` |
 | `br_blog_safia_rocks` | blog.safia.rocks | `blog.safia.rocks` |
 | `br_boats_gitlab_io` | boats.gitlab.io | `boats.gitlab.io` |
-| `br_chelseatroy_comx` | chelseatroy.com | `chelseatroy.com` |
 | `br_larahogan_me` | larahogan.me | `larahogan.me` |
-| `br_larahogan_mex` | larahogan.me | `larahogan.me` |
-| `br_mathbabe_orgx` | mathbabe.org | `mathbabe.org` |
 | `br_mickens_seas_harvard_edu` | mickens.seas.harvard.edu | `mickens.seas.harvard.edu` |
 | `br_stackingthebricks_com` | stackingthebricks.com | `stackingthebricks.com` |
-| `br_stackingthebricks_comx` | stackingthebricks.com | `stackingthebricks.com` |
 | `br_web_archive_org` | web.archive.org | `web.archive.org` |
 | `br_without_boats` | without.boats | `without.boats` |
-| `br_elidedbranches_comx` | elidedbranches.com | `www.elidedbranches.com` |
 | `br_harihareswara_net` | harihareswara.net | `www.harihareswara.net` |
-| `br_harihareswara_netx` | harihareswara.net | `www.harihareswara.net` |
 | `br_recurse_com` | recurse.com | `www.recurse.com` |
