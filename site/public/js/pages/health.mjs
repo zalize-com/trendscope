@@ -73,3 +73,22 @@ try {
 } catch (e) {
   $.innerHTML = `<p id="err">health log not available yet — the pipeline writes it on each daily run.</p>`;
 }
+
+// zero-watch: sources empty in N consecutive snapshots (likely dead/blocked)
+// vs tide (empty now but had data before — rate-limit waves).
+try {
+  const zw = await fetch("data/zerowatch.json", {cache:"no-cache"}).then(r => r.json());
+  const lanes = {};
+  for (const k of zw.persistent_empty) { const p = k.split("_")[0]; (lanes[p] ||= []).push(k); }
+  $.innerHTML += `
+    <h2>zero-watch <span style="text-transform:none">(empty ${zw.rounds} consecutive snapshots)</span></h2>
+    <p class="legend">${zw.persistent_empty.length} persistent-empty · ${zw.tide.length} in rate-limit tide
+      — a single empty round is usually a rate-limit wave (YouTube 404, substack 403, Reddit 429, TCP blackhole),
+      not a dead source. ${zw.rounds}+ rounds in a row is worth a look.</p>
+    ${Object.entries(lanes).sort((a,b)=>b[1].length-a[1].length).map(([p,ks]) =>
+      `<h3 style="font-size:14px;margin:12px 0 4px">${p}_ (${ks.length})</h3>
+       <p class="legend" style="font-size:12px">${ks.map(k=>`<a href="source.html?s=${encodeURIComponent(k)}">${esc(k)}</a>`).join(" · ")}</p>`
+    ).join("")}
+    <h3 style="font-size:14px;margin:12px 0 4px">tide (${zw.tide.length}) — expected to self-heal</h3>
+    <p class="legend" style="font-size:12px">${zw.tide.slice(0,80).map(k=>`<a href="source.html?s=${encodeURIComponent(k)}">${esc(k)}</a>`).join(" · ")}${zw.tide.length>80?" · …":""}</p>`;
+} catch (e) { /* zerowatch.json not generated yet */ }
