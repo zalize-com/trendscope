@@ -1,0 +1,28 @@
+{
+  "title": "Developer Attention Dataset \u2014 daily snapshot of 9,200+ dev sources",
+  "id": "conoru505/trendscope-developer-attention",
+  "licenses": [
+    {
+      "name": "CC0-1.0"
+    }
+  ],
+  "description": "Daily cross-source snapshot of what developers are reading, building and downloading. HN, Lobste.rs, Dev.to, GitHub trending, npm/PyPI/crates downloads, plus ~9,000 blogs/newsletters/podcasts/YouTube channels. Updated daily by GitHub Actions. Source repo: github.com/zalize-com/trendscope",
+  "resources": [
+    {
+      "path": "history.csv",
+      "description": "Append-only cumulative history (every source-day observation since 2026-11-08)"
+    },
+    {
+      "path": "latest.json",
+      "description": "Most recent full snapshot \u2014 items keyed by source with rank/score/url/title/captured_at"
+    }
+  ],
+  "keywords": [
+    "dataset",
+    "hacker-news",
+    "developer-tools",
+    "trending",
+    "open-data",
+    "rss"
+  ]
+}
