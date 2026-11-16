@@ -24,6 +24,10 @@ for p in sorted(glob.glob(os.path.join(ROOT, "scripts", "feeds_*.json"))):
         out.append((k, label, feed))
         if len(row) > 3 and "dormant" in row[3:]:
             dormant_keys.add(k)
+# Data-driven feeds_*.json rows override literal fetchers for the same key
+# (mirrors collect.py's fetchers.update()) — dedupe last-wins so OPML/JSON
+# don't double-count moved sources.
+out = list({k: (k, n, f) for k, n, f in out}.values())
 
 def esc(s):
     return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
