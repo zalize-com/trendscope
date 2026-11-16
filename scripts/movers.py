@@ -56,15 +56,21 @@ def main():
     if len(days) < 2:
         print("need 2+ snapshots; skipping")
         return
+    window = int(os.environ.get("MOVERS_WINDOW", "1"))
     if len(sys.argv) > 1:
         day_b = sys.argv[1]
         i = days.index(day_b)
-        if i == 0:
+        if i < window:
             print(f"no earlier snapshot before {day_b}; skipping")
             return
-        day_a = days[i - 1]
+        day_a = days[i - window]
     else:
-        day_b, day_a = days[-1], days[-2]
+        day_b = days[-1]
+        if len(days) < window + 1:
+            print(f"need {window + 1}+ snapshots; skipping")
+            return
+        day_a = days[-1 - window]
+    suffix = f"-w{window}" if window > 1 else ""
     sa, sb = load(day_a), load(day_b)
     A, B = flat(sa), flat(sb)
 
@@ -118,7 +124,7 @@ def main():
           f"[interactive view](https://zalize-com.github.io/trendscope/compare.html"
           f"?a={day_a}&b={day_b}) · data: `data/daily/{day_b}.json` (CC0)",
           f""]
-    path = os.path.join(OUT, f"{day_b}.md")
+    path = os.path.join(OUT, f"{day_b}{suffix}.md")
     with open(path, "w") as f:
         f.write("\n".join(md))
 
@@ -136,9 +142,10 @@ def main():
         "pkg_rank_up": [{**slim(i), "rank_delta": d} for i, d in pkg_up[:20]],
         "pkg_rank_down": [{**slim(i), "rank_delta": d} for i, d in pkg_dn[:20]],
     }
-    with open(os.path.join(api, "movers-latest.json"), "w") as f:
+    latest_name = "movers-latest.json" if not suffix else f"movers{suffix}-latest.json"
+    with open(os.path.join(api, latest_name), "w") as f:
         json.dump(api_doc, f, indent=1)
-    with open(os.path.join(api, f"movers-{day_b}.json"), "w") as f:
+    with open(os.path.join(api, f"movers{suffix}-{day_b}.json"), "w") as f:
         json.dump(api_doc, f, indent=1)
     print(f"wrote docs/movers/{day_b}.md + api (+{len(enter)}/-{len(exit_)}/{len(movers)})")
 
