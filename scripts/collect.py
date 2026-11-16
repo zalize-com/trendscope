@@ -118946,6 +118946,30 @@ def _make_feed_fetcher(key, label, feed, home):
             except Exception as e:
                 print(f"  [warn] {key} rss2json fallback failed: {e}",
                       file=sys.stderr)
+            # secondary rescue lane: feed2json.org also fetches server-side
+            # from its own egress (verified to clear reddit/YouTube/moved
+            # feeds), free and keyless. Same rescue slot — no extra budget
+            # charge, so total proxy calls stay under the per-run cap.
+            try:
+                req = urllib.request.Request(
+                    "https://feed2json.org/convert?url="
+                    + urllib.parse.quote(feed, safe=""),
+                    headers={"User-Agent": UA, "Accept": "application/json"})
+                with urllib.request.urlopen(req, timeout=20) as resp:
+                    proxy = json.loads(resp.read().decode("utf-8"))
+                entries = (proxy.get("items") or [])[:limit]
+                if entries:
+                    out = []
+                    n = len(entries)
+                    for i, e in enumerate(entries):
+                        out.append(item(
+                            key, e.get("title", ""),
+                            e.get("url") or e.get("external_url") or home,
+                            n - i, "feed rank"))
+                    return out
+            except Exception as e:
+                print(f"  [warn] {key} feed2json fallback failed: {e}",
+                      file=sys.stderr)
             return []
         if root is None:
             return []
