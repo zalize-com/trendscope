@@ -44,7 +44,7 @@ discovery traffic. Easiest: repo page → ⚙ next to "About". Or CLI:
 
 ```bash
 gh repo edit zalize-com/trendscope --add-topic dataset,open-data,hacker-news,github-trending,daily-digest,developer-tools,github-actions,cc0,dashboard --homepage https://trendscope.zalize.com
-gh repo edit zalize-com/feedpaper --add-topic rss,digest,github-actions,github-pages,self-hosted,news-reader --homepage https://zalize-com.github.io/feedpaper
+gh repo edit zalize-com/feedpaper --add-topic rss,digest,github-actions,github-pages,self-hosted,news-reader --homepage https://feedpaper.zalize.com
 ```
 
 ## Already done for you

@@ -199,7 +199,7 @@ upload `data/history.csv` + `data/latest.json`, description = README "What's ins
 title: I rebuilt 19 years of Hacker News history — here's what the front page is actually made of
 published: false
 tags: hackernews, data, opensource, showdev
-canonical_url: https://<owner>.github.io/trendscope/canon.html
+canonical_url: https://trendscope.zalize.com/canon.html
 ---
 
 We built trendscope — a daily open dataset of developer attention — and
@@ -270,7 +270,7 @@ digest page every morning. Your reading history accumulates as JSON files
 inside *your own* repo.
 
 What you get:
-- A daily page at `<you>.github.io/feedpaper/` — every feed as a section,
+- A daily page at `<you>.pages.dev/` (or your custom domain) — every feed as a section,
   tag filters when you tag sources
 - `data/daily/YYYY-MM-DD.json` — every edition kept as data you own
 - `feed.xml` — your digest is *itself an RSS feed* (subscribe to yourself,
