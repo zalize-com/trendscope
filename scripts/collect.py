@@ -118925,6 +118925,44 @@ def _make_feed_fetcher(key, label, feed, home):
                           f"{_RSS2JSON_BUDGET}/run exhausted", file=sys.stderr)
                     return []
                 _rss2json_used[0] += 1
+            # Primary rescue lane: our own Cloudflare Worker
+            # (opml-doctor.zalize.workers.dev) — CF edge egress is immune to
+            # every block shape we've met (substack ASN-403, YouTube 404 waves,
+            # DreamHost TCP blackhole, reddit 429) and the free tier is
+            # 100k req/day, vs the ~140/day the public proxies give us.
+            # It returns the raw feed body + X-Remote-Status, so the result
+            # goes through the same _feed_root parser as a direct fetch.
+            try:
+                req = urllib.request.Request(
+                    "https://opml-doctor.zalize.workers.dev/?u="
+                    + urllib.parse.quote(feed, safe=""),
+                    headers={"User-Agent": UA})
+                with urllib.request.urlopen(req, timeout=30) as resp:
+                    remote = resp.headers.get("X-Remote-Status", "")
+                    if remote and remote != "200":
+                        raise ValueError(f"remote {remote}")
+                    root = _feed_root(resp)
+                entries = (root.findall(".//{*}item")
+                           or root.findall(".//{*}entry"))[:limit]
+                if entries:
+                    out = []
+                    n = len(entries)
+                    for i, e in enumerate(entries):
+                        title = (e.findtext("{*}title", default="")
+                                 or "").strip()
+                        url = (e.findtext("{*}link", default="")
+                               or "").strip()
+                        if not url:
+                            for l in e.findall("{*}link"):
+                                if l.get("rel", "alternate") == "alternate":
+                                    url = l.get("href", "")
+                                    break
+                        out.append(item(key, title, url or home,
+                                        n - i, "feed rank"))
+                    return out
+            except Exception as e:
+                print(f"  [warn] {key} worker fallback failed: {e}",
+                      file=sys.stderr)
             # Cloudflare-style 403 waves block the Actions egress IP for some
             # hosts (substack is the big one); YouTube's rotating rate-limit
             # wave presents as 404 (yt_ lane went 0/44 in one run while the
