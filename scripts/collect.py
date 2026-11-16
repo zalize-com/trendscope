@@ -122159,6 +122159,18 @@ def main():
     with open(os.path.join(DATA_DIR, "index.json"), "w") as f:
         json.dump(idx, f, indent=2)
 
+    # daily JSON snapshots are ~27MB each at ~9k sources — keep a 14-day
+    # rolling window (CSV twins stay forever; history.csv is the
+    # append-only long-term record)
+    keep = idx["snapshots"][-14:]
+    for d in idx["snapshots"][:-14] or []:
+        stale = os.path.join(daily_dir, f"{d}.json")
+        if os.path.exists(stale):
+            os.remove(stale)
+    idx["snapshots"] = keep
+    with open(os.path.join(DATA_DIR, "index.json"), "w") as f:
+        json.dump(idx, f, indent=2)
+
     write_csvs(all_items, today, now.isoformat())
 
     print(f"\nDone. {len(all_items)} items across {len(sections)} sources.")
