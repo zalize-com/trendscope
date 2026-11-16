@@ -10,11 +10,12 @@
 
 ## 这是什么
 
-每天两次，跨 **9,213 个数据源**抓一份"开发者注意力"快照：Hacker News、
-Show HN、Ask HN、GitHub Trending、Lobste.rs、Dev.to、Product Hunt、
-Techmeme、Slashdot、Ars Technica、The Verge、arXiv、npm、PyPI、
-crates.io、Lemmy (programming.dev)、Krebs on Security、Changelog News、
-freeCodeCamp News、Echo JS、InfoQ、The Register。
+每天两次，跨 **9,213 个数据源**抓一份"开发者注意力"快照——Hacker News、
+GitHub Trending、Lobste.rs、Dev.to、Product Hunt、arXiv、npm/PyPI/crates.io
+等核心榜之外，还覆盖数千个技术博客（`br_`）、newsletter（`nl_`）、
+技术团队博客（`tb_`）、安全情报（`sec_`）、YouTube 频道（`yt_`）、
+播客（`pb_`）与中文源（`zh_`）等数据驱动 lane。完整源注册表由
+`scripts/gen_sources_md.py` 生成进 [`docs/SOURCES.md`](docs/SOURCES.md)。
 
 每条记录带 `url` + `captured_at` 溯源字段和各源原生分数
 （点数 / star / 反应数 / 下载量）——请在同一源内比较，不要跨源比。
