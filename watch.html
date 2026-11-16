@@ -86,7 +86,7 @@ async function run() {
   const match = t => { t = t.toLowerCase(); return low.filter(k => t.includes(k)); };
   const [nw, latest] = await Promise.all([
     fetch("docs/api/new.json", {cache:"no-cache"}).then(r => r.json()),
-    fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()),
+    fetch("data/latest-lite.json", {cache:"no-cache"}).then(r=>r.ok?r:Promise.reject()).catch(()=>fetch("data/latest.json",{cache:"no-cache"})).then(r => r.json()),
   ]);
   const fresh = nw.items.map(e => ({...e, hit: match(e.title)})).filter(e => e.hit.length);
   const board = Object.values(latest.items).flat().map(e => ({...e, hit: match(e.title)})).filter(e => e.hit.length);

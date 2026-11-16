@@ -494,7 +494,7 @@ if (MODE === "item") {
        <li><svg viewBox="0 0 ${w} ${h}" style="width:100%;height:40px"><polyline points="${pts}" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/></svg></li>`;
   }).catch(() => { document.getElementById("err").textContent = "history unavailable"; });
 } else
-fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
+fetch("data/latest-lite.json", {cache:"no-cache"}).then(r=>r.ok?r:Promise.reject()).catch(()=>fetch("data/latest.json",{cache:"no-cache"})).then(r => r.json()).then(snap => {
   document.getElementById("date").textContent = (QT ? QT+" · " : "") + (snap.date || snap.generated_at.slice(0,10));
   const max = {};
   for (const [s, its] of Object.entries(snap.items)) max[s] = its[0]?.score || 1;

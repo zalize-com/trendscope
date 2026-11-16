@@ -70,7 +70,7 @@ function parseCSV(txt) {
   return rows.filter(r => r.length > 1);
 }
 Promise.all([
-  fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()),
+  fetch("data/latest-lite.json", {cache:"no-cache"}).then(r=>r.ok?r:Promise.reject()).catch(()=>fetch("data/latest.json",{cache:"no-cache"})).then(r => r.json()),
   fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json()),
 ]).then(([snap, txt]) => {
   const today = (snap.date || snap.generated_at || "").slice(0,10);

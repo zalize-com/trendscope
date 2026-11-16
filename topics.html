@@ -92,7 +92,7 @@ const topicsOf = it => {
 const params = new URLSearchParams(location.search);
 const want = params.get("t");
 
-fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
+fetch("data/latest-lite.json", {cache:"no-cache"}).then(r=>r.ok?r:Promise.reject()).catch(()=>fetch("data/latest.json",{cache:"no-cache"})).then(r => r.json()).then(snap => {
   const all = Object.entries(snap.items).flatMap(([s, its]) => its);
   const chipHTML = Object.keys(TOPIC_RULES).map(t => {
     const c = (snap.topics.find(x => x.topic === t) || {}).count || 0;

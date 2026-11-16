@@ -63,7 +63,7 @@ const ZH_LABEL = {
 };
 function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML;}
 async function main(){
-  const r=await fetch('data/latest.json'); const snap=await r.json();
+  let r=await fetch('data/latest-lite.json'); if(!r.ok) r=await fetch('data/latest.json'); const snap=await r.json();
   const have=[...ZH].filter(k=>snap.items[k]);
   document.getElementById('srcs').innerHTML=have.map(k=>
     `<span class="chip">${esc(ZH_LABEL[k]||k)} <b>${snap.items[k].length}</b></span>`).join('');

@@ -85,7 +85,7 @@ function parseCSV(txt) {
 
 let RECS = null;
 let LIVE = new Set();
-fetch("data/latest.json", {cache:"no-cache"}).then(r => r.json()).then(snap => {
+fetch("data/latest-lite.json", {cache:"no-cache"}).then(r=>r.ok?r:Promise.reject()).catch(()=>fetch("data/latest.json",{cache:"no-cache"})).then(r => r.json()).then(snap => {
   for (const its of Object.values(snap.items)) for (const i of its) LIVE.add(i.url);
   if (RECS) paint();
 }).catch(() => {});
