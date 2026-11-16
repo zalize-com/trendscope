@@ -39,7 +39,7 @@ One-pager for anyone writing about or linking to this project.
 ## Assets
 
 - Dashboard screenshot/animation: `docs/demo.webp`
-- Share card: `og.png`
+- Share card: `og.jpg`
 - Sister project: [feedpaper](https://github.com/zalize-com/feedpaper) —
   fork-template for a self-owned daily digest.
 

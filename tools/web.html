@@ -6,7 +6,7 @@
 <title>trendscope web tools — QR generator, social card preview, robots.txt builder</title>
 <meta name="description" content="Free in-browser web tools: QR code generator, Open Graph/Twitter card preview + meta tag generator, robots.txt builder, and a typosquat checker. No upload, no signup, no tracking.">
 <meta property="og:title" content="trendscope web tools">
-<meta property="og:image" content="https://trendscope--plov6nur.preview.devinapps.com/og.png">
+<meta property="og:image" content="https://trendscope--plov6nur.preview.devinapps.com/og.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
 <link rel="stylesheet" href="../trendscope.css">
@@ -118,7 +118,7 @@
     <label>title</label><input type="text" id="og-t" value="trendscope — developer attention dataset">
     <label>description</label><input type="text" id="og-d" value="Daily cross-source snapshot of what developers read and build. Open data, CC0.">
     <label>canonical URL</label><input type="text" id="og-u" value="https://trendscope--plov6nur.preview.devinapps.com/">
-    <label>image URL</label><input type="text" id="og-i" value="https://trendscope--plov6nur.preview.devinapps.com/og.png">
+    <label>image URL</label><input type="text" id="og-i" value="https://trendscope--plov6nur.preview.devinapps.com/og.jpg">
     <div class="card" id="og-card">
       <div class="img" id="og-card-img">image preview</div>
       <div class="txt"><div class="dom" id="og-card-dom"></div><div class="ttl" id="og-card-t"></div><div class="dsc" id="og-card-d"></div></div>
@@ -537,7 +537,7 @@ document.getElementById("ma-go").addEventListener("click", () => {
       render();
     } catch { $("sv-err").textContent = "fetch failed (CORS?) — paste the page <head> manually"; }
   };
-  $("sv-in").value = '<head><title>trendscope — daily trend radar for builders</title><meta name="description" content="One page that watches HN, GitHub, Product Hunt, dev.to, Lobsters, npm, PyPI and 8 more — and keeps a permanent, queryable archive."><meta property="og:title" content="trendscope"><meta property="og:image" content="https://trendscope--plov6nur.preview.devinapps.com/og.png"></head>';
+  $("sv-in").value = '<head><title>trendscope — daily trend radar for builders</title><meta name="description" content="One page that watches HN, GitHub, Product Hunt, dev.to, Lobsters, npm, PyPI and 8 more — and keeps a permanent, queryable archive."><meta property="og:title" content="trendscope"><meta property="og:image" content="https://trendscope--plov6nur.preview.devinapps.com/og.jpg"></head>';
   $("sv-url").value = "https://trendscope--plov6nur.preview.devinapps.com/";
   render();
 })();
