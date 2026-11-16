@@ -27,7 +27,29 @@ const path = '/tools/doctor.html';
     <button class="act" id="d-dl">download fixed OPML</button>
     <button id="d-copy" class="ghost">copy OPML</button>
   </div>
+
+  <h2 style="margin-top:36px">FAQ</h2>
+  <div class="kv">
+    <div class="k">Why do feeds rot?</div>
+    <div>About 5%/year: blogs go quiet, sites move their feed URL, newsletters stop publishing. Most readers never notice — entries just silently stop arriving.</div>
+    <div class="k">What does "moved" mean?</div>
+    <div>The URL redirects to a different feed address. The feed is alive, but your reader may or may not have followed the redirect — the fixed OPML rewrites it.</div>
+    <div class="k">Why is a working feed "dormant"?</div>
+    <div>The feed serves fine but hasn't published in 180+ days. Usually a paused blog or a finished newsletter — keep or drop it, your call.</div>
+    <div class="k">Is my list uploaded?</div>
+    <div>Your OPML never leaves the browser. Only the individual feed URLs inside it go through our proxy worker for the health check — same as your reader fetching them.</div>
+  </div>
 </div>
+<script type="application/ld+json" is:inline>{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Why do RSS feeds rot?","acceptedAnswer":{"@type":"Answer","text":"About 5% per year: blogs go quiet, sites move their feed URL, newsletters stop publishing. Most readers never notice because entries just silently stop arriving."}},
+    {"@type":"Question","name":"What does a moved feed mean in the health check?","acceptedAnswer":{"@type":"Answer","text":"The URL redirects to a different feed address. The feed is alive, but the fixed OPML rewrites it to the new URL."}},
+    {"@type":"Question","name":"Why is a working feed marked dormant?","acceptedAnswer":{"@type":"Answer","text":"The feed serves correctly but has not published a new item in over 180 days — usually a paused blog or finished newsletter."}},
+    {"@type":"Question","name":"Is my OPML uploaded to a server?","acceptedAnswer":{"@type":"Answer","text":"No. Your OPML never leaves the browser. Only the individual feed URLs inside it are fetched through the proxy worker for the health check."}}
+  ]
+}</script>
 
 <style is:global>
   .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px 60px; }
@@ -61,6 +83,10 @@ const path = '/tools/doctor.html';
   #d-tbl table { border-collapse: collapse; }
   #d-tbl td, #d-tbl th { padding: 4px 8px; border-bottom: 1px solid var(--border); text-align: left; }
   .muted { color: var(--dim); }
+  .kv { display: grid; grid-template-columns: 220px 1fr; gap: 10px 16px; font-size: 14px; }
+  .kv .k { color: var(--fg); font-weight: 600; }
+  .kv div:not(.k) { color: var(--dim); }
+  @media (max-width: 640px) { .kv { grid-template-columns: 1fr; gap: 4px 0; } }
 </style>
 
 <script is:inline src="/js/pages/tools/doctor.js"></script>
