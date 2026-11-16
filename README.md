@@ -278,6 +278,9 @@ compare within a source, not across.
   chmod calculator, UUID/hash, text diff, markdown preview, color converter,
   text inspector, YAML↔JSON, outline→tree, URL query editor, CSV↔JSON,
   WCAG contrast checker, a11y audit.
+- **Daily lane digests** (`daily/`): fresh per-topic landing pages — daily
+  security news, engineering blogs, developer blogs, newsletters, podcasts,
+  tech videos, TLDR — rendered from the latest snapshot.
 - **Weekly digests** (`docs/digest/`): machine-generated summaries plus
   narrative notes.
 - **Topics** (`topics.html?t=AI%2FLLM`): per-topic drill-down — every story,
