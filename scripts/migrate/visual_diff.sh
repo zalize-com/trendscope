@@ -8,7 +8,9 @@ OUT="/tmp/vdiff/$NAME"; mkdir -p "$OUT"
 CHROME=${CHROME:-google-chrome}
 for which in old new; do
   url=$OLD; [ "$which" = new ] && url=$NEW
-  "$CHROME" --headless --disable-gpu --hide-scrollbars \
+  # --virtual-time-budget lets async fetches (latest-lite.json) finish
+  timeout 25 "$CHROME" --headless --disable-gpu --hide-scrollbars \
+    --virtual-time-budget=15000 \
     --window-size=1280,2400 --screenshot="$OUT/$which.png" "$url" >/dev/null 2>&1
 done
 python3 - "$OUT" << 'PY'
