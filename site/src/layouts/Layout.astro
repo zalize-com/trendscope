@@ -1,0 +1,107 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  /** path like "/movers.html" — used for canonical + og:url */
+  path?: string;
+  /** topbar active nav key: board|movers|topics|digests|tools|about|none */
+  nav?: string;
+  /** og:title override (defaults to title) */
+  ogTitle?: string;
+  ogDescription?: string;
+  keywords?: string;
+  /** extra JSON-LD objects to embed */
+  jsonld?: object | object[];
+  /** hide the topbar (embed.html etc.) */
+  bare?: boolean;
+  /** skip-to target id for the skiplink (default "#board") */
+  skipTo?: string;
+}
+
+const {
+  title,
+  description = 'trendscope is a daily open dataset of developer attention — snapshotted every day, free to download (CC0).',
+  path = '/',
+  nav = 'none',
+  ogTitle,
+  ogDescription,
+  keywords,
+  jsonld,
+  bare = false,
+  skipTo = '#board',
+} = Astro.props;
+
+const ORIGIN = 'https://trendscope--plov6nur.preview.devinapps.com';
+const canonical = new URL(path, ORIGIN).href;
+const ogImage = `${ORIGIN}/og.jpg`;
+const ogT = ogTitle ?? title;
+const ogD = ogDescription ?? description;
+
+const NAV: [string, string, string][] = [
+  ['board', '/index.html', 'board'],
+  ['movers', '/movers.html', 'movers'],
+  ['topics', '/topics.html', 'topics'],
+  ['digests', '/digest.html', 'digests'],
+  ['tools', '/tools/', 'tools'],
+  ['about', '/about.html', 'about'],
+];
+
+const lds = jsonld ? (Array.isArray(jsonld) ? jsonld : [jsonld]) : [];
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+{description && <meta name="description" content={description} />}
+<link rel="canonical" href={canonical}>
+{keywords && <meta name="keywords" content={keywords}>}
+<meta property="og:title" content={ogT}>
+<meta property="og:description" content={ogD}>
+<meta property="og:type" content="website">
+<meta property="og:url" content={canonical}>
+<meta property="og:image" content={ogImage}>
+<meta property="og:image:width" content="1536">
+<meta property="og:image:height" content="1024">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content={ogT}>
+<meta name="twitter:description" content={ogD}>
+<meta name="twitter:image" content={ogImage}>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+<link rel="search" type="application/opensearchdescription+xml" title="trendscope" href="/opensearch.xml">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0d1117">
+<link rel="alternate" type="application/rss+xml" title="trendscope snapshots" href="/feed.xml">
+<link rel="alternate" type="application/feed+json" title="trendscope snapshots" href="/feed.json">
+{lds.map((ld) => <script type="application/ld+json" set:html={JSON.stringify(ld)} />)}
+<slot name="head" />
+</head>
+<body>
+{!bare && <a class="skiplink" href={skipTo}>skip to content</a>}
+{!bare && (
+<header class="topbar">
+  <a class="brand" href="/index.html">trend<span class="scope">scope</span></a>
+  <nav>
+    {NAV.map(([key, href, label]) => (
+      <a href={href} class={nav === key ? 'here' : undefined}>{label}</a>
+    ))}
+  </nav>
+  <div class="right">
+    <a href="/search.html">search 19y of HN</a>
+    <a href="/zh.html">中文</a>
+    <a href="/feed.xml"><i data-lucide="rss"></i> subscribe</a>
+    <a href="https://github.com/zalize-com/trendscope"><i data-lucide="star"></i> github</a>
+  </div>
+</header>
+)}
+<slot />
+<slot name="scripts" />
+<script is:inline>
+  if (window.lucide) lucide.createIcons();
+</script>
+</body>
+</html>
