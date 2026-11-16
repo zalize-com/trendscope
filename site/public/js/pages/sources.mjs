@@ -10,7 +10,9 @@ try {
   $("stats").innerHTML =
     `<div class="stat"><b>${srcs.length}</b><small>sources</small></div>` +
     `<div class="stat"><b>${total}</b><small>items collected</small></div>` +
-    `<div class="stat"><b>${d.days_tracked}</b><small>days tracked</small></div>`;
+    `<div class="stat"><b>${d.days_tracked}</b><small>days tracked</small></div>` +
+    (zw ? `<div class="stat"><b>${zw.persistent_empty.length}</b><small>persistent-empty (${zw.rounds}d)</small></div>` +
+      `<div class="stat"><b>${zw.tide.length}</b><small>in rate-limit tide</small></div>` : "");
   $("out").innerHTML = "<ol>" + srcs.map(([name, v]) => {
     const t = v.top_item || {};
     const dorm = dormant.has(name) ? ` <span class="chip" title="alive but quiet — no new posts recently">dormant</span>` : "";
