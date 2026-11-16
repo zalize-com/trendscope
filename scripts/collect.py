@@ -11125,7 +11125,7 @@ def fetch_developernvidia(limit=15):
     for attempt in range(3):
         try:
             req = urllib.request.Request(
-                "https://developer.nvidia.com/blog/posts/feed",
+                "https://developer.nvidia.com/blog/feed",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
                 root = _feed_root(resp)
@@ -11201,7 +11201,7 @@ def fetch_devopscube(limit=15):
     for attempt in range(3):
         try:
             req = urllib.request.Request(
-                "https://devopscube.com/feed/",
+                "https://devopscube.com/blog/feed/",
                 headers={"User-Agent": "Mozilla/5.0 trendscope"})
             with urllib.request.urlopen(req, timeout=20) as resp:
                 root = _feed_root(resp)
