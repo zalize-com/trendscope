@@ -152,3 +152,12 @@ cleared, or the catch must recreate them.
     判据：整 lane 失败 + 单源手动抓成功 + 错误码是 429 而非 404 =
     速率限制，不是死源。验证口径：限速后一轮回收 ~2/3（窗口仍比
     间隔长时剩 1/3，跨轮自愈）。
+
+## 37. Egress waves vs dead sources — "two consecutive zeros" rule
+Zero-item counts are a rate-limit tide gauge, not a death certificate:
+the same source can be 200/20-items from the VM while Actions egress is
+ASN-blocked (substack Cloudflare wave, YouTube 404 wave, Reddit per-IP
+429, DreamHost TCP blackhole). Before declaring a source dead: check its
+IP segment, compare the last Actions snapshot, and probe from a second
+egress. For alerting, only flag sources that stay zero across **two
+consecutive collects** — single-day zeros self-heal in-wave.
