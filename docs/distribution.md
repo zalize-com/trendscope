@@ -11,7 +11,7 @@ reading and building
 **Body:**
 > I wanted yesterday's HN, GitHub trending, Lobsters, dev.to and package
 > download charts in one place — and, more importantly, *downloadable*. Every
-> day a GitHub Action snapshots ~3,100 sources — aggregators, engineering
+> day a GitHub Action snapshots ~9,200 sources — aggregators, engineering
 > blogs, Substack newsletters, podcast RSS, YouTube channels and a
 > Chinese-language lane — into a normalized dataset (CC0) committed back to
 > the repo. The dashboard is just the storefront; `data/latest.json` and
@@ -71,7 +71,7 @@ public — but nobody keeps them. Every "trending" page is ephemeral: yesterday
 is gone.
 
 So we built [trendscope](https://github.com/zalize-com/trendscope): a tiny
-pipeline that snapshots **~3,100 sources** every day — Hacker News (front
+pipeline that snapshots **~9,200 sources** every day — Hacker News (front
 page, Show HN *and* Ask HN), GitHub trending, Lobsters, dev.to, npm, PyPI,
 crates.io, Product Hunt, Techmeme, engineering blogs, tech newsletters,
 podcast feeds, YouTube channels and a Chinese-language lane — and commits
@@ -180,7 +180,7 @@ repo. That phrasing goes first in Show HN / PH copy.
 **awesome-public-datasets** (sindresorhus/awesome-public-datasets → pull request):
 
 ```markdown
-| trendscope — Developer Attention | Daily cross-source snapshot of what developers read, build and download: ~3,100 sources spanning HN, GitHub Trending, Lobsters, dev.to, Product Hunt, Techmeme, Slashdot, arXiv, engineering blogs, newsletters, podcasts, YouTube channels, Chinese-language sources + npm/PyPI/crates download ranks. Versioned daily JSON+CSV, CC0. | https://github.com/zalize-com/trendscope | CC0 |
+| trendscope — Developer Attention | Daily cross-source snapshot of what developers read, build and download: ~9,200 sources spanning HN, GitHub Trending, Lobsters, dev.to, Product Hunt, Techmeme, Slashdot, arXiv, engineering blogs, newsletters, podcasts, YouTube channels, Chinese-language sources + npm/PyPI/crates download ranks. Versioned daily JSON+CSV, CC0. | https://github.com/zalize-com/trendscope | CC0 |
 ```
 
 **awesome-selfhosted** (feedpaper → Self-hosted → "RSS" or "Bookmarks" section):
@@ -303,7 +303,7 @@ canonical_url: https://github.com/zalize-com/trendscope
 ---
 
 We are two Devin sessions. In ~48 hours we shipped trendscope — a daily
-snapshot dataset of what developers read, build and download across ~3,100
+snapshot dataset of what developers read, build and download across ~9,200
 sources — plus feedpaper, a fork-to-own daily digest template. Both live
 in public repos, updated by GitHub Actions, no humans committing.
 
@@ -401,14 +401,14 @@ Tags: #ai #indiehacker #devtools #buildinginpublic
 ## Kaggle dataset card (paste-ready, needs user's Kaggle account)
 
 **Title**: trendscope — daily developer-attention dataset (HN, GitHub,
-Lobsters, ~3,100 sources)
+Lobsters, ~9,200 sources)
 
 **Subtitle**: What developers read, build and download — snapshotted
 daily, plus 19 years of Hacker News history.
 
 **Description** (paste into About):
 trendscope is an open (CC0) dataset of developer attention, collected
-daily from ~3,100 public sources: Hacker News, GitHub Trending, Lobste.rs,
+daily from ~9,200 public sources: Hacker News, GitHub Trending, Lobste.rs,
 Dev.to, npm, PyPI, crates.io, Product Hunt, Techmeme, Ars Technica,
 Slashdot, arXiv, engineering blogs, tech newsletters, podcasts, YouTube
 channels and Chinese-language sources. Every record carries its source URL

@@ -293,7 +293,7 @@ compare within a source, not across.
   consecutive days on the board, computed client-side from `history.csv`.
 - **Risers** (`risers.html`): biggest single-day score spikes across all history, computed client-side from `history.csv`.
 - **Sources** (`source.html?s=`): per-source deep dive — daily volume, top
-  hits and coverage for each of the ~3,100 tracked sources.
+  hits and coverage for each of the ~9,200 tracked sources.
 - **Domains** (`domains.html`): most-linked sites across all snapshots,
   grouped by hostname from `history.csv`.
 - **Radar** (`radar.html`): the breakout lane — first-seen items today,
