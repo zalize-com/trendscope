@@ -136,3 +136,9 @@ cleared, or the catch must recreate them.
    服务器端取 feed，JSON 返回），实测 403→10 items 救回。免费的
    allorigins/codetabs 已死、corsproxy 要 key、r.jina.ai 会转 markdown
    破坏 XML——rss2json 是当前唯一保语义的免 key 兜底。
+
+36. **限流波是轮转吞没不是源死**：同 lane 44 源（yt_）一轮 2/44、下一轮
+   0/44——出口对 YouTube 的限流窗口按小时级摆动（404↔500↔200 三态
+   循环），空源计数里 yt_ 全部归零时再上一轮有数据 = 波在摆，不要
+   判死删源。判据：空源按 lane 前缀聚合，单 lane 全灭先看历史快照，
+   有两轮连零再议对策（如代理兜底），一轮归零只观察。
