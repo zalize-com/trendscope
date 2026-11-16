@@ -75,6 +75,34 @@ blackholes (curl -m does); stub feeds aren't dead feeds — follow self-links
 before pruning; and cross-lane dedupe has to happen at the xmlUrl level, not
 the key level.
 
+
+## Evening addendum — the dataset fought its own rate-limit war
+
+By afternoon the metrics told a second story: the aggregator itself became
+the case study. Three independent blockwaves hit the Actions egress in one
+day — **71 substack feeds Cloudflare-403'd** (ASN-level), **44 YouTube
+channels 404'd** (Google's datacenter-IP throttle presents as 404, not 429),
+**~120 reddit .rss endpoints per-IP 429'd**. Every one was fixed the same
+way: not by retrying harder, but by changing lanes — rss2json as a
+semantic-preserving proxy for 403/429/404, a shared ≥10s per-domain
+throttle for reddit, and migrating literal fetchers to data-driven
+`feeds_*.json` lanes (44 yt_ + 81 bare keys) so one fix covers thousands
+of sources at once. Recoveries: substack 25/64, yt_ 41/44, r_* ~2/3,
+bare 24/81 — and the zero-count itself turned out to be a tide gauge:
+"two consecutive empty rounds" is now the only death signal worth an
+alert (methodology 37).
+
+Meanwhile the silent-failure audit caught two CI bugs that no green
+checkmark showed: a collect run whose `git pull --rebase` was refused by
+unstaged generated files (the retry loop ended in `sleep 5`, so 39
+minutes of data silently vanished) and an OPML step still wired to the
+legacy scanner — either would have looked fine in the Actions UI. And the
+frontend crossed its own gate: **62/62 pages pixel-verified** after the
+Astro + Tailwind migration, URL-identical, with the interesting bugs
+being the ones pixel diffs *can't* see (Jekyll skipping `_astro/`,
+`new URL()` dropping the Pages subpath, daisyUI's `.hero` grid overlay
+colliding with our own class names).
+
 ## Watching into the weekend
 
 - Does AWS/GCP join the outage list → "everything broke at once" narrative?
