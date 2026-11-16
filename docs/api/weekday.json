@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T13:55:09.969017+00:00",
+ "generated_at": "2026-11-16T15:25:39.759838+00:00",
  "latest_snapshot": "2026-11-16",
  "days_tracked": 10,
  "days_of_week": [
@@ -12,21 +12,9 @@
   "sun"
  ],
  "sources": {
-  "hackernews": {
-   "counts": [
-    58,
-    20,
-    20,
-    20,
-    20,
-    42,
-    79
-   ],
-   "total": 259
-  },
   "lorekernel": {
    "counts": [
-    210,
+    225,
     0,
     0,
     0,
@@ -34,11 +22,23 @@
     0,
     45
    ],
-   "total": 255
+   "total": 270
+  },
+  "hackernews": {
+   "counts": [
+    62,
+    20,
+    20,
+    20,
+    20,
+    42,
+    79
+   ],
+   "total": 263
   },
   "investing": {
    "counts": [
-    131,
+    141,
     0,
     0,
     0,
@@ -46,7 +46,7 @@
     0,
     13
    ],
-   "total": 144
+   "total": 154
   },
   "producthunt": {
    "counts": [
@@ -62,7 +62,7 @@
   },
   "w4news": {
    "counts": [
-    79,
+    85,
     0,
     0,
     0,
@@ -70,23 +70,11 @@
     0,
     25
    ],
-   "total": 104
-  },
-  "ask_hn": {
-   "counts": [
-    25,
-    7,
-    12,
-    12,
-    12,
-    7,
-    26
-   ],
-   "total": 101
+   "total": 110
   },
   "show_hn": {
    "counts": [
-    39,
+    47,
     0,
     0,
     0,
@@ -94,11 +82,23 @@
     0,
     57
    ],
-   "total": 96
+   "total": 104
+  },
+  "ask_hn": {
+   "counts": [
+    26,
+    7,
+    12,
+    12,
+    12,
+    7,
+    26
+   ],
+   "total": 102
   },
   "timesofindia": {
    "counts": [
-    66,
+    74,
     0,
     0,
     0,
@@ -106,11 +106,11 @@
     0,
     17
    ],
-   "total": 83
+   "total": 91
   },
   "seekingalpha": {
    "counts": [
-    72,
+    78,
     0,
     0,
     0,
@@ -118,11 +118,11 @@
     0,
     10
    ],
-   "total": 82
+   "total": 88
   },
   "techmeme": {
    "counts": [
-    51,
+    58,
     0,
     0,
     0,
@@ -130,7 +130,7 @@
     0,
     29
    ],
-   "total": 80
+   "total": 87
   },
   "npm": {
    "counts": [
@@ -144,9 +144,21 @@
    ],
    "total": 72
   },
+  "forbes": {
+   "counts": [
+    53,
+    0,
+    0,
+    0,
+    0,
+    0,
+    18
+   ],
+   "total": 71
+  },
   "lobsters": {
    "counts": [
-    26,
+    27,
     0,
     0,
     0,
@@ -154,7 +166,19 @@
     15,
     28
    ],
-   "total": 69
+   "total": 70
+  },
+  "uniteai": {
+   "counts": [
+    55,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 70
   },
   "bloglogrocket": {
    "counts": [
@@ -216,29 +240,17 @@
    ],
    "total": 60
   },
-  "uniteai": {
+  "hnrss": {
    "counts": [
-    43,
+    41,
     0,
     0,
     0,
     0,
     0,
-    15
+    16
    ],
-   "total": 58
-  },
-  "forbes": {
-   "counts": [
-    38,
-    0,
-    0,
-    0,
-    0,
-    0,
-    18
-   ],
-   "total": 56
+   "total": 57
   },
   "tb_headspin_blog": {
    "counts": [
@@ -252,21 +264,21 @@
    ],
    "total": 55
   },
-  "hnrss": {
+  "fortune": {
    "counts": [
-    36,
+    43,
     0,
     0,
     0,
     0,
     0,
-    16
+    10
    ],
-   "total": 52
+   "total": 53
   },
   "reddit": {
    "counts": [
-    19,
+    20,
     0,
     0,
     0,
@@ -274,7 +286,7 @@
     0,
     32
    ],
-   "total": 51
+   "total": 52
   },
   "github_trending": {
    "counts": [
@@ -300,6 +312,54 @@
    ],
    "total": 50
   },
+  "rrust": {
+   "counts": [
+    31,
+    0,
+    0,
+    0,
+    0,
+    0,
+    19
+   ],
+   "total": 50
+  },
+  "euroweeklynews": {
+   "counts": [
+    34,
+    0,
+    0,
+    0,
+    0,
+    0,
+    16
+   ],
+   "total": 50
+  },
+  "cnbc": {
+   "counts": [
+    35,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 50
+  },
+  "feeds11": {
+   "counts": [
+    34,
+    0,
+    0,
+    0,
+    0,
+    0,
+    16
+   ],
+   "total": 50
+  },
   "devto": {
    "counts": [
     16,
@@ -312,7 +372,19 @@
    ],
    "total": 49
   },
-  "feeds11": {
+  "phys": {
+   "counts": [
+    33,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 48
+  },
+  "moneysavingmom": {
    "counts": [
     30,
     0,
@@ -345,18 +417,6 @@
     0,
     0,
     15
-   ],
-   "total": 45
-  },
-  "euroweeklynews": {
-   "counts": [
-    29,
-    0,
-    0,
-    0,
-    0,
-    0,
-    16
    ],
    "total": 45
   },
@@ -396,7 +456,19 @@
    ],
    "total": 45
   },
-  "cnbc": {
+  "engadget": {
+   "counts": [
+    27,
+    0,
+    0,
+    0,
+    0,
+    0,
+    17
+   ],
+   "total": 44
+  },
+  "rss4": {
    "counts": [
     29,
     0,
@@ -408,15 +480,15 @@
    ],
    "total": 44
   },
-  "moneysavingmom": {
+  "eb_guardian": {
    "counts": [
-    28,
+    44,
     0,
     0,
     0,
     0,
     0,
-    16
+    0
    ],
    "total": 44
   },
@@ -432,15 +504,27 @@
    ],
    "total": 43
   },
-  "fortune": {
+  "rsysadmin": {
    "counts": [
-    33,
+    27,
     0,
     0,
     0,
     0,
     0,
-    10
+    16
+   ],
+   "total": 43
+  },
+  "rselfhosted": {
+   "counts": [
+    26,
+    0,
+    0,
+    0,
+    0,
+    0,
+    17
    ],
    "total": 43
   },
@@ -453,18 +537,6 @@
     0,
     0,
     21
-   ],
-   "total": 42
-  },
-  "phys": {
-   "counts": [
-    27,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
    ],
    "total": 42
   },
@@ -492,19 +564,7 @@
    ],
    "total": 41
   },
-  "rselfhosted": {
-   "counts": [
-    24,
-    0,
-    0,
-    0,
-    0,
-    0,
-    17
-   ],
-   "total": 41
-  },
-  "rss4": {
+  "techcentral": {
    "counts": [
     26,
     0,
@@ -515,6 +575,18 @@
     15
    ],
    "total": 41
+  },
+  "infoq": {
+   "counts": [
+    24,
+    0,
+    0,
+    0,
+    0,
+    0,
+    16
+   ],
+   "total": 40
   },
   "jasonwilliamsco": {
    "counts": [
@@ -528,19 +600,19 @@
    ],
    "total": 40
   },
-  "techcentral": {
+  "thenextweb": {
    "counts": [
-    25,
+    29,
     0,
     0,
     0,
     0,
     0,
-    15
+    11
    ],
    "total": 40
   },
-  "rsysadmin": {
+  "techcrunch": {
    "counts": [
     24,
     0,
@@ -552,53 +624,41 @@
    ],
    "total": 40
   },
-  "engadget": {
+  "appleinsider": {
    "counts": [
-    23,
+    24,
     0,
     0,
     0,
     0,
     0,
-    17
-   ],
-   "total": 40
-  },
-  "eb_guardian": {
-   "counts": [
-    40,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 40
-  },
-  "infoq": {
-   "counts": [
-    23,
-    0,
-    0,
-    0,
-    0,
-    0,
-    16
+    15
    ],
    "total": 39
   },
-  "rrust": {
+  "petapixel": {
    "counts": [
-    20,
+    24,
     0,
     0,
     0,
     0,
     0,
-    19
+    15
    ],
    "total": 39
+  },
+  "theverge": {
+   "counts": [
+    18,
+    0,
+    0,
+    0,
+    0,
+    0,
+    20
+   ],
+   "total": 38
   },
   "apiaxios": {
    "counts": [
@@ -609,6 +669,18 @@
     0,
     0,
     17
+   ],
+   "total": 38
+  },
+  "phoronix": {
+   "counts": [
+    23,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
    ],
    "total": 38
   },
@@ -624,7 +696,31 @@
    ],
    "total": 38
   },
-  "techcrunch": {
+  "macworld": {
+   "counts": [
+    23,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 38
+  },
+  "rcpp": {
+   "counts": [
+    23,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 38
+  },
+  "rartificial": {
    "counts": [
     21,
     0,
@@ -636,19 +732,43 @@
    ],
    "total": 37
   },
-  "rcpp": {
+  "lemmy": {
    "counts": [
-    22,
+    19,
     0,
     0,
     0,
     0,
     0,
-    15
+    17
    ],
-   "total": 37
+   "total": 36
   },
-  "macworld": {
+  "9to5mac": {
+   "counts": [
+    20,
+    0,
+    0,
+    0,
+    0,
+    0,
+    16
+   ],
+   "total": 36
+  },
+  "openai": {
+   "counts": [
+    19,
+    0,
+    0,
+    0,
+    0,
+    0,
+    17
+   ],
+   "total": 36
+  },
+  "space": {
    "counts": [
     21,
     0,
@@ -660,29 +780,17 @@
    ],
    "total": 36
   },
-  "lemmy": {
+  "blog12": {
    "counts": [
-    18,
+    21,
     0,
     0,
     0,
     0,
     0,
-    17
+    15
    ],
-   "total": 35
-  },
-  "9to5mac": {
-   "counts": [
-    19,
-    0,
-    0,
-    0,
-    0,
-    0,
-    16
-   ],
-   "total": 35
+   "total": 36
   },
   "ixd": {
    "counts": [
@@ -720,18 +828,6 @@
    ],
    "total": 35
   },
-  "phoronix": {
-   "counts": [
-    20,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 35
-  },
   "discoursellvm": {
    "counts": [
     20,
@@ -744,7 +840,7 @@
    ],
    "total": 35
   },
-  "appleinsider": {
+  "gsmarena": {
    "counts": [
     20,
     0,
@@ -756,15 +852,27 @@
    ],
    "total": 35
   },
-  "theverge": {
+  "arstechnica": {
    "counts": [
-    14,
+    18,
     0,
     0,
     0,
     0,
     0,
-    20
+    16
+   ],
+   "total": 34
+  },
+  "lwn": {
+   "counts": [
+    19,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
    ],
    "total": 34
   },
@@ -780,18 +888,6 @@
    ],
    "total": 34
   },
-  "openai": {
-   "counts": [
-    17,
-    0,
-    0,
-    0,
-    0,
-    0,
-    17
-   ],
-   "total": 34
-  },
   "rprogramming": {
    "counts": [
     18,
@@ -801,30 +897,6 @@
     0,
     0,
     16
-   ],
-   "total": 34
-  },
-  "thenextweb": {
-   "counts": [
-    23,
-    0,
-    0,
-    0,
-    0,
-    0,
-    11
-   ],
-   "total": 34
-  },
-  "space": {
-   "counts": [
-    19,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
    ],
    "total": 34
   },
@@ -840,15 +912,15 @@
    ],
    "total": 34
   },
-  "petapixel": {
+  "forummanjaro": {
    "counts": [
-    19,
+    18,
     0,
     0,
     0,
     0,
     0,
-    15
+    16
    ],
    "total": 34
   },
@@ -876,7 +948,43 @@
    ],
    "total": 34
   },
+  "nl_web_design_weekly": {
+   "counts": [
+    34,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 34
+  },
   "512pixels": {
+   "counts": [
+    18,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 33
+  },
+  "lifehacker": {
+   "counts": [
+    18,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 33
+  },
+  "tds": {
    "counts": [
     18,
     0,
@@ -912,7 +1020,7 @@
    ],
    "total": 33
   },
-  "jiqizhixin": {
+  "rjavascript": {
    "counts": [
     18,
     0,
@@ -924,7 +1032,19 @@
    ],
    "total": 33
   },
-  "blog12": {
+  "xinzhi": {
+   "counts": [
+    18,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 33
+  },
+  "jiqizhixin": {
    "counts": [
     18,
     0,
@@ -948,7 +1068,7 @@
    ],
    "total": 33
   },
-  "gsmarena": {
+  "cultofmac": {
    "counts": [
     18,
     0,
@@ -972,7 +1092,7 @@
    ],
    "total": 33
   },
-  "arstechnica": {
+  "echojs": {
    "counts": [
     16,
     0,
@@ -1032,6 +1152,30 @@
    ],
    "total": 32
   },
+  "johndcook": {
+   "counts": [
+    17,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 32
+  },
+  "realpython": {
+   "counts": [
+    17,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 32
+  },
   "rwebdev": {
    "counts": [
     16,
@@ -1080,7 +1224,19 @@
    ],
    "total": 32
   },
-  "tds": {
+  "rcompsci": {
+   "counts": [
+    17,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 32
+  },
+  "rnode": {
    "counts": [
     17,
     0,
@@ -1128,18 +1284,6 @@
    ],
    "total": 32
   },
-  "rjavascript": {
-   "counts": [
-    17,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 32
-  },
   "rsveltejs": {
    "counts": [
     17,
@@ -1176,7 +1320,19 @@
    ],
    "total": 32
   },
-  "cultofmac": {
+  "stackoverflow": {
+   "counts": [
+    17,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 32
+  },
+  "feeds4": {
    "counts": [
     17,
     0,
@@ -1212,30 +1368,6 @@
    ],
    "total": 32
   },
-  "echojs": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    16
-   ],
-   "total": 31
-  },
-  "lwn": {
-   "counts": [
-    16,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 31
-  },
   "gargron": {
    "counts": [
     15,
@@ -1249,6 +1381,18 @@
    "total": 31
   },
   "vercel": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 31
+  },
+  "mongodb": {
    "counts": [
     16,
     0,
@@ -1368,6 +1512,18 @@
    ],
    "total": 31
   },
+  "blogsentry": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 31
+  },
   "mikezornek": {
    "counts": [
     15,
@@ -1476,18 +1632,6 @@
    ],
    "total": 31
   },
-  "johndcook": {
-   "counts": [
-    16,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 31
-  },
   "kooslooijesteijn": {
    "counts": [
     15,
@@ -1513,18 +1657,6 @@
    "total": 31
   },
   "freek": {
-   "counts": [
-    16,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 31
-  },
-  "realpython": {
    "counts": [
     16,
     0,
@@ -1581,30 +1713,6 @@
     0,
     0,
     15
-   ],
-   "total": 31
-  },
-  "lifehacker": {
-   "counts": [
-    16,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 31
-  },
-  "rartificial": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    16
    ],
    "total": 31
   },
@@ -1716,19 +1824,43 @@
    ],
    "total": 31
   },
-  "forummanjaro": {
+  "datawhale": {
    "counts": [
-    15,
+    16,
     0,
     0,
     0,
     0,
     0,
-    16
+    15
    ],
    "total": 31
   },
-  "datawhale": {
+  "xgo5b632": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 31
+  },
+  "dewutech": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 31
+  },
+  "tencenttech": {
    "counts": [
     16,
     0,
@@ -1752,31 +1884,19 @@
    ],
    "total": 31
   },
+  "blog6": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 31
+  },
   "w3feeds2": {
-   "counts": [
-    16,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 31
-  },
-  "stackoverflow": {
-   "counts": [
-    16,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 31
-  },
-  "feeds4": {
    "counts": [
     16,
     0,
@@ -1884,6 +2004,18 @@
    ],
    "total": 31
   },
+  "yt_codingwithjohn": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15
+   ],
+   "total": 31
+  },
   "yt_iamtimcorey": {
    "counts": [
     16,
@@ -1920,15 +2052,15 @@
    ],
    "total": 31
   },
-  "nl_web_design_weekly": {
+  "yt_cppcon": {
    "counts": [
-    31,
+    16,
     0,
     0,
     0,
     0,
     0,
-    0
+    15
    ],
    "total": 31
   },
@@ -2137,18 +2269,6 @@
    "total": 30
   },
   "discord": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 30
-  },
-  "mongodb": {
    "counts": [
     15,
     0,
@@ -3277,18 +3397,6 @@
    "total": 30
   },
   "blogjessfraz": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 30
-  },
-  "blogsentry": {
    "counts": [
     15,
     0,
@@ -11580,31 +11688,7 @@
    ],
    "total": 30
   },
-  "rcompsci": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 30
-  },
   "rhaskell": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 30
-  },
-  "rnode": {
    "counts": [
     15,
     0,
@@ -12060,18 +12144,6 @@
    ],
    "total": 30
   },
-  "xinzhi": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 30
-  },
   "mlbeginner": {
    "counts": [
     15,
@@ -12084,19 +12156,19 @@
    ],
    "total": 30
   },
-  "qbitaigzh": {
+  "qbitai": {
    "counts": [
-    15,
+    20,
     0,
     0,
     0,
     0,
     0,
-    15
+    10
    ],
    "total": 30
   },
-  "xgo5b632": {
+  "qbitaigzh": {
    "counts": [
     15,
     0,
@@ -12144,18 +12216,6 @@
    ],
    "total": 30
   },
-  "dewutech": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 30
-  },
   "iqiyitech": {
    "counts": [
     15,
@@ -12169,18 +12229,6 @@
    "total": 30
   },
   "baidusec": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 30
-  },
-  "tencenttech": {
    "counts": [
     15,
     0,
@@ -12877,18 +12925,6 @@
    "total": 30
   },
   "4hou": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 30
-  },
-  "blog6": {
    "counts": [
     15,
     0,
@@ -16380,18 +16416,6 @@
    ],
    "total": 30
   },
-  "yt_codingwithjohn": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 30
-  },
   "yt_freecodecamp": {
    "counts": [
     15,
@@ -16668,18 +16692,6 @@
    ],
    "total": 30
   },
-  "yt_cppcon": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15
-   ],
-   "total": 30
-  },
   "yt_goto": {
    "counts": [
     15,
@@ -16725,6 +16737,18 @@
     0,
     0,
     15
+   ],
+   "total": 30
+  },
+  "sec_the_register": {
+   "counts": [
+    30,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
    ],
    "total": 30
   },
@@ -16920,17 +16944,29 @@
    ],
    "total": 28
   },
-  "sec_the_register": {
+  "yystv": {
    "counts": [
-    28,
+    16,
     0,
     0,
     0,
     0,
     0,
-    0
+    12
    ],
    "total": 28
+  },
+  "sciencealert": {
+   "counts": [
+    17,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10
+   ],
+   "total": 27
   },
   "feedx": {
    "counts": [
@@ -17101,30 +17137,6 @@
    "total": 25
   },
   "darekkay": {
-   "counts": [
-    13,
-    0,
-    0,
-    0,
-    0,
-    0,
-    12
-   ],
-   "total": 25
-  },
-  "sciencealert": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    10
-   ],
-   "total": 25
-  },
-  "yystv": {
    "counts": [
     13,
     0,
@@ -17580,6 +17592,30 @@
    ],
    "total": 23
   },
+  "sec_google_threat_analysis_group": {
+   "counts": [
+    23,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 23
+  },
+  "hackaday": {
+   "counts": [
+    12,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10
+   ],
+   "total": 22
+  },
   "bret": {
    "counts": [
     11,
@@ -17625,6 +17661,18 @@
     0,
     0,
     11
+   ],
+   "total": 22
+  },
+  "itsecurityguru": {
+   "counts": [
+    12,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10
    ],
    "total": 22
   },
@@ -17737,6 +17785,18 @@
    "total": 22
   },
   "uxdesign": {
+   "counts": [
+    12,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10
+   ],
+   "total": 22
+  },
+  "androidguys": {
    "counts": [
     12,
     0,
@@ -17868,7 +17928,19 @@
    ],
    "total": 22
   },
-  "hackaday": {
+  "sec_bleepingcomputer": {
+   "counts": [
+    22,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 22
+  },
+  "stratechery": {
    "counts": [
     11,
     0,
@@ -17880,7 +17952,7 @@
    ],
    "total": 21
   },
-  "stratechery": {
+  "blogrustlang": {
    "counts": [
     11,
     0,
@@ -17904,7 +17976,19 @@
    ],
    "total": 21
   },
-  "itsecurityguru": {
+  "newsroomspotify": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10
+   ],
+   "total": 21
+  },
+  "nytco": {
    "counts": [
     11,
     0,
@@ -17929,6 +18013,18 @@
    "total": 21
   },
   "weiwuhui": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10
+   ],
+   "total": 21
+  },
+  "imperialviolet": {
    "counts": [
     11,
     0,
@@ -18060,7 +18156,7 @@
    ],
    "total": 21
   },
-  "androidguys": {
+  "docker": {
    "counts": [
     11,
     0,
@@ -18120,6 +18216,18 @@
    ],
    "total": 21
   },
+  "yufree": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10
+   ],
+   "total": 21
+  },
   "mobius": {
    "counts": [
     11,
@@ -18156,6 +18264,18 @@
    ],
    "total": 21
   },
+  "nerdwallet": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10
+   ],
+   "total": 21
+  },
   "savingadvice": {
    "counts": [
     10,
@@ -18177,6 +18297,30 @@
     0,
     0,
     10
+   ],
+   "total": 21
+  },
+  "sec_techrepublic": {
+   "counts": [
+    21,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 21
+  },
+  "sec_malwarebytes_labs": {
+   "counts": [
+    21,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
    ],
    "total": 21
   },
@@ -19032,18 +19176,6 @@
    ],
    "total": 20
   },
-  "blogrustlang": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    10
-   ],
-   "total": 20
-  },
   "borischerny": {
    "counts": [
     10,
@@ -19537,18 +19669,6 @@
    "total": 20
   },
   "newrelic": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    10
-   ],
-   "total": 20
-  },
-  "newsroomspotify": {
    "counts": [
     10,
     0,
@@ -20125,18 +20245,6 @@
    "total": 20
   },
   "laurentluce": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    10
-   ],
-   "total": 20
-  },
-  "nytco": {
    "counts": [
     10,
     0,
@@ -21037,18 +21145,6 @@
    "total": 20
   },
   "ideobook": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    10
-   ],
-   "total": 20
-  },
-  "imperialviolet": {
    "counts": [
     10,
     0,
@@ -24180,18 +24276,6 @@
    ],
    "total": 20
   },
-  "docker": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    10
-   ],
-   "total": 20
-  },
   "gosquared": {
    "counts": [
     10,
@@ -24493,18 +24577,6 @@
    "total": 20
   },
   "yuanchaofa": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    10
-   ],
-   "total": 20
-  },
-  "qbitai": {
    "counts": [
     10,
     0,
@@ -25944,18 +26016,6 @@
    ],
    "total": 20
   },
-  "yufree": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    10
-   ],
-   "total": 20
-  },
   "muyun": {
    "counts": [
     10,
@@ -26664,18 +26724,6 @@
    ],
    "total": 20
   },
-  "nerdwallet": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    10
-   ],
-   "total": 20
-  },
   "wellkeptwallet": {
    "counts": [
     10,
@@ -26772,7 +26820,7 @@
    ],
    "total": 20
   },
-  "sec_the_hacker_news": {
+  "nature": {
    "counts": [
     20,
     0,
@@ -26784,7 +26832,19 @@
    ],
    "total": 20
   },
-  "sec_bleepingcomputer": {
+  "sec_cert_fr_menaces_et_incidents": {
+   "counts": [
+    20,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 20
+  },
+  "sec_the_hacker_news": {
    "counts": [
     20,
     0,
@@ -26820,6 +26880,18 @@
    ],
    "total": 20
   },
+  "br_one_mile_at_a_time_airline_travel_news_r": {
+   "counts": [
+    20,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 20
+  },
   "br_old_deptford_history": {
    "counts": [
     20,
@@ -26844,31 +26916,7 @@
    ],
    "total": 20
   },
-  "nature": {
-   "counts": [
-    19,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 19
-  },
   "sec_helpnet_security": {
-   "counts": [
-    19,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 19
-  },
-  "br_one_mile_at_a_time_airline_travel_news_r": {
    "counts": [
     19,
     0,
@@ -27132,7 +27180,19 @@
    ],
    "total": 18
   },
-  "sec_malwarebytes_labs": {
+  "sec_zdnet": {
+   "counts": [
+    18,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 18
+  },
+  "br_ion_howto_ion_howto_diy_projects": {
    "counts": [
     18,
     0,
@@ -27180,7 +27240,7 @@
    ],
    "total": 18
   },
-  "br_the_literary_saloon_at_the_complete_revi": {
+  "br_kottke_org_home_of_fine_hypertext_produc": {
    "counts": [
     18,
     0,
@@ -27192,7 +27252,7 @@
    ],
    "total": 18
   },
-  "sec_google_threat_analysis_group": {
+  "br_the_literary_saloon_at_the_complete_revi": {
    "counts": [
     18,
     0,
@@ -27228,6 +27288,18 @@
    ],
    "total": 17
   },
+  "sec_heimdal": {
+   "counts": [
+    17,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 17
+  },
   "pb_michael_malura": {
    "counts": [
     17,
@@ -27241,18 +27313,6 @@
    "total": 17
   },
   "nl_rendezvous_with_cassidoo": {
-   "counts": [
-    17,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 17
-  },
-  "br_ion_howto_ion_howto_diy_projects": {
    "counts": [
     17,
     0,
@@ -27289,6 +27349,42 @@
    "total": 17
   },
   "br_peter_rukavina_s_blog": {
+   "counts": [
+    17,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 17
+  },
+  "br_home_max_frequency": {
+   "counts": [
+    17,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 17
+  },
+  "br_baty_net": {
+   "counts": [
+    17,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 17
+  },
+  "br_bits_by_bino": {
    "counts": [
     17,
     0,
@@ -27648,6 +27744,18 @@
    ],
    "total": 16
   },
+  "sec_nextgov": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
   "sec_securityweek": {
    "counts": [
     16,
@@ -27661,6 +27769,18 @@
    "total": 16
   },
   "sec_ironscales": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "sec_checkpoint": {
    "counts": [
     16,
     0,
@@ -27708,7 +27828,31 @@
    ],
    "total": 16
   },
+  "developingdev": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
   "eb_mesosphere": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "eb_mozilla_automation_team": {
    "counts": [
     16,
     0,
@@ -27816,7 +27960,31 @@
    ],
    "total": 16
   },
+  "tldr_ai": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
   "tldr_devops": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "tldr_infosec": {
    "counts": [
     16,
     0,
@@ -27900,7 +28068,43 @@
    ],
    "total": 16
   },
+  "tldr_fintech": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "tldr_hardware": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
   "devopscube": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "br_aj_dev": {
    "counts": [
     16,
     0,
@@ -28092,6 +28296,42 @@
    ],
    "total": 16
   },
+  "br_writing_by_yury_molodtsov_tech_and_comms": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "br_manual_do_usu_rio_coment_rios_de_tecnolo": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "br_daily_medieval": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
   "br_atharva_s_internet_place": {
    "counts": [
     16,
@@ -28117,6 +28357,18 @@
    "total": 16
   },
   "br_talmud_tech_ezra_brand_substack": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "br_oz_gultekin_designer_of_things_notes_and": {
    "counts": [
     16,
     0,
@@ -28224,7 +28476,43 @@
    ],
    "total": 16
   },
+  "br_streams_of_expression": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "br_the_other_side_blog": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
   "br_the_ttablog": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "br_cake_wrecks": {
    "counts": [
     16,
     0,
@@ -28309,6 +28597,30 @@
    "total": 16
   },
   "br_the_brooks_review": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "br_colin_devroe_head_of_ai_product_at_nerdp": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "br_cendrine_marrouat_visual_poetry_of_the_m": {
    "counts": [
     16,
     0,
@@ -28464,7 +28776,7 @@
    ],
    "total": 16
   },
-  "br_kottke_org_home_of_fine_hypertext_produc": {
+  "br_laudator_temporis_acti": {
    "counts": [
     16,
     0,
@@ -28501,6 +28813,18 @@
    "total": 16
   },
   "br_blog_matt_gemmell": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "br_orange_crate_art": {
    "counts": [
     16,
     0,
@@ -28620,7 +28944,7 @@
    ],
    "total": 16
   },
-  "br_home_max_frequency": {
+  "br_the_pen_addict": {
    "counts": [
     16,
     0,
@@ -28657,6 +28981,18 @@
    "total": 16
   },
   "br_linkmachinego_this_is_lima_mike_golf_sha": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "br_world_of_reel": {
    "counts": [
     16,
     0,
@@ -28705,6 +29041,18 @@
    "total": 16
   },
   "br_are_you_electronic": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "br_beat_hagenlochers_digital_garden": {
    "counts": [
     16,
     0,
@@ -28812,6 +29160,18 @@
    ],
    "total": 16
   },
+  "br_devz_cl": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
   "br_flippism_is_the_key": {
    "counts": [
     16,
@@ -28872,6 +29232,18 @@
    ],
    "total": 16
   },
+  "br_internals_for_interns": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
   "br_posts_entropy_arbitrage": {
    "counts": [
     16,
@@ -28896,6 +29268,18 @@
    ],
    "total": 16
   },
+  "br_about_the_codeartist_programmer_and_engi": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
   "br_kristin_berkey_abbott": {
    "counts": [
     16,
@@ -28909,6 +29293,18 @@
    "total": 16
   },
   "br_kristy_bowen_horror_writer_book_artist": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "br_louche_leaves": {
    "counts": [
     16,
     0,
@@ -29136,6 +29532,18 @@
    ],
    "total": 16
   },
+  "br_siddhant_khare_sustainable_ai_assisted_e": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
   "br_smart_people_i_know_interesting_things_t": {
    "counts": [
     16,
@@ -29184,6 +29592,18 @@
    ],
    "total": 16
   },
+  "br_timomeh_de": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
   "br_homexxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx": {
    "counts": [
     16,
@@ -29221,6 +29641,18 @@
    "total": 16
   },
   "br_writing_slowly": {
+   "counts": [
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 16
+  },
+  "br_brettterpstra_com": {
    "counts": [
     16,
     0,
@@ -29628,18 +30060,6 @@
    ],
    "total": 15
   },
-  "sec_cert_fr_menaces_et_incidents": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
   "sec_ars_technica": {
    "counts": [
     15,
@@ -29664,43 +30084,7 @@
    ],
    "total": 15
   },
-  "sec_nextgov": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "sec_techrepublic": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
   "sec_the_guardian": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "sec_zdnet": {
    "counts": [
     15,
     0,
@@ -29832,18 +30216,6 @@
    ],
    "total": 15
   },
-  "sec_heimdal": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
   "sec_iverify": {
    "counts": [
     15,
@@ -29857,18 +30229,6 @@
    "total": 15
   },
   "sec_doctor_web": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "sec_checkpoint": {
    "counts": [
     15,
     0,
@@ -30072,18 +30432,6 @@
    ],
    "total": 15
   },
-  "developingdev": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
   "engineerscodex": {
    "counts": [
     15,
@@ -30157,18 +30505,6 @@
    "total": 15
   },
   "eb_kinvolk": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "eb_mozilla_automation_team": {
    "counts": [
     15,
     0,
@@ -33216,55 +33552,7 @@
    ],
    "total": 15
   },
-  "tldr_ai": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "tldr_infosec": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
   "tldr_product": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "tldr_fintech": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "tldr_hardware": {
    "counts": [
     15,
     0,
@@ -33541,18 +33829,6 @@
    "total": 15
   },
   "br_age_of_ai_zap": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "br_aj_dev": {
    "counts": [
     15,
     0,
@@ -35461,6 +35737,18 @@
    "total": 15
   },
   "br_hrafn_thorvaldsson": {
+   "counts": [
+    15,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 15
+  },
+  "br_hypertexthero": {
    "counts": [
     15,
     0,
@@ -47064,18 +47352,6 @@
    ],
    "total": 15
   },
-  "br_writing_by_yury_molodtsov_tech_and_comms": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
   "br_jon_udell_strategies_for_internet_citize": {
    "counts": [
     15,
@@ -47304,18 +47580,6 @@
    ],
    "total": 15
   },
-  "br_manual_do_usu_rio_coment_rios_de_tecnolo": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
   "br_life_in_the_real_world_karen_davis_subst": {
    "counts": [
     15,
@@ -47353,18 +47617,6 @@
    "total": 15
   },
   "br_adam_s_apples": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "br_daily_medieval": {
    "counts": [
     15,
     0,
@@ -48241,18 +48493,6 @@
    "total": 15
   },
   "br_sunil_shenoy": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "br_oz_gultekin_designer_of_things_notes_and": {
    "counts": [
     15,
     0,
@@ -49716,18 +49956,6 @@
    ],
    "total": 15
   },
-  "br_streams_of_expression": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
   "br_swole_at_every_height": {
    "counts": [
     15,
@@ -49837,18 +50065,6 @@
    "total": 15
   },
   "br_the_sewing_goatherd": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "br_the_other_side_blog": {
    "counts": [
     15,
     0,
@@ -50077,18 +50293,6 @@
    "total": 15
   },
   "br_blackplastic_co_uk_alternative_music_blo": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "br_cake_wrecks": {
    "counts": [
     15,
     0,
@@ -51096,18 +51300,6 @@
    ],
    "total": 15
   },
-  "br_colin_devroe_head_of_ai_product_at_nerdp": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
   "br_cheese_and_biscuits": {
    "counts": [
     15,
@@ -51253,18 +51445,6 @@
    "total": 15
   },
   "br_conscientious_photography_magazine": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "br_cendrine_marrouat_visual_poetry_of_the_m": {
    "counts": [
     15,
     0,
@@ -52308,18 +52488,6 @@
    ],
    "total": 15
   },
-  "br_laudator_temporis_acti": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
   "br_dr_laura_james_s_writings": {
    "counts": [
     15,
@@ -52597,18 +52765,6 @@
    "total": 15
   },
   "br_mike_lynch": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "br_orange_crate_art": {
    "counts": [
     15,
     0,
@@ -54588,18 +54744,6 @@
    ],
    "total": 15
   },
-  "br_the_pen_addict": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
   "br_tom_francis": {
    "counts": [
     15,
@@ -54937,18 +55081,6 @@
    "total": 15
   },
   "br_blog_will_hawkes": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "br_world_of_reel": {
    "counts": [
     15,
     0,
@@ -56088,31 +56220,7 @@
    ],
    "total": 15
   },
-  "br_baty_net": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
   "br_homexxxxxxxxxxxxxxxxxxx": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "br_beat_hagenlochers_digital_garden": {
    "counts": [
     15,
     0,
@@ -56329,18 +56437,6 @@
    "total": 15
   },
   "br_bitsplitting_org_chasing_the_impossible_": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "br_bits_by_bino": {
    "counts": [
     15,
     0,
@@ -57325,6 +57421,18 @@
    "total": 15
   },
   "br_home_cabbage_sorter": {
+   "counts": [
+    15,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 15
+  },
+  "br_cafebedouin_org_the_archive_is_the_argum": {
    "counts": [
     15,
     0,
@@ -58537,18 +58645,6 @@
    "total": 15
   },
   "br_dev_urandom_s_dev_site": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "br_devz_cl": {
    "counts": [
     15,
     0,
@@ -60276,18 +60372,6 @@
    ],
    "total": 15
   },
-  "br_internals_for_interns": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
   "br_interstellar_boats": {
    "counts": [
     15,
@@ -61284,18 +61368,6 @@
    ],
    "total": 15
   },
-  "br_about_the_codeartist_programmer_and_engi": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
   "br_blog_korigamik": {
    "counts": [
     15,
@@ -61573,18 +61645,6 @@
    "total": 15
   },
   "br_lugh_ch": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "br_louche_leaves": {
    "counts": [
     15,
     0,
@@ -64440,18 +64500,6 @@
    ],
    "total": 15
   },
-  "br_siddhant_khare_sustainable_ai_assisted_e": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
   "br_shrik3": {
    "counts": [
     15,
@@ -65245,18 +65293,6 @@
    "total": 15
   },
   "br_woodworking_in_a_tiny_shop": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
-  "br_timomeh_de": {
    "counts": [
     15,
     0,
@@ -66780,18 +66816,6 @@
    ],
    "total": 15
   },
-  "br_brettterpstra_com": {
-   "counts": [
-    15,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 15
-  },
   "br_blog_sam_curry": {
    "counts": [
     15,
@@ -67548,6 +67572,18 @@
    ],
    "total": 14
   },
+  "sec_soc_radar": {
+   "counts": [
+    14,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 14
+  },
   "eb_hostinger": {
    "counts": [
     14,
@@ -67609,18 +67645,6 @@
    "total": 14
   },
   "br_eric_s_site": {
-   "counts": [
-    14,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 14
-  },
-  "br_hypertexthero": {
    "counts": [
     14,
     0,
@@ -68076,18 +68100,6 @@
    ],
    "total": 14
   },
-  "br_cafebedouin_org_the_archive_is_the_argum": {
-   "counts": [
-    14,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 14
-  },
   "br_dhanish_semar": {
    "counts": [
     14,
@@ -68229,6 +68241,30 @@
     0,
     0,
     6
+   ],
+   "total": 13
+  },
+  "sec_databreaches": {
+   "counts": [
+    13,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 13
+  },
+  "sec_cofense_intelligence": {
+   "counts": [
+    13,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
    ],
    "total": 13
   },
@@ -68520,6 +68556,18 @@
    ],
    "total": 13
   },
+  "br_rz01_org": {
+   "counts": [
+    13,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 13
+  },
   "br_testy_cool_mostly_llms_mostly": {
    "counts": [
     13,
@@ -68760,6 +68808,18 @@
    ],
    "total": 13
   },
+  "br_leiter_reports_news_and_views_about_phil": {
+   "counts": [
+    13,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 13
+  },
   "br_the_pub_man": {
    "counts": [
     13,
@@ -68785,6 +68845,18 @@
    "total": 13
   },
   "br_engineers_need_art": {
+   "counts": [
+    13,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 13
+  },
+  "br_news_articles": {
    "counts": [
     13,
     0,
@@ -69241,30 +69313,6 @@
    "total": 12
   },
   "sec_qualys_blog": {
-   "counts": [
-    12,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 12
-  },
-  "sec_cofense_intelligence": {
-   "counts": [
-    12,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 12
-  },
-  "sec_soc_radar": {
    "counts": [
     12,
     0,
@@ -69840,18 +69888,6 @@
    ],
    "total": 12
   },
-  "br_rz01_org": {
-   "counts": [
-    12,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 12
-  },
   "br_will_morrison_personal_blog": {
    "counts": [
     12,
@@ -69877,6 +69913,18 @@
    "total": 12
   },
   "br_home_anil_dash": {
+   "counts": [
+    12,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 12
+  },
+  "br_the_big_picture_macro_perspective_on_the": {
    "counts": [
     12,
     0,
@@ -69996,6 +70044,18 @@
    ],
    "total": 12
   },
+  "br_language_models_co_jay_alammar_substack": {
+   "counts": [
+    12,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 12
+  },
   "br_recently": {
    "counts": [
     12,
@@ -70104,18 +70164,6 @@
    ],
    "total": 12
   },
-  "br_leiter_reports_news_and_views_about_phil": {
-   "counts": [
-    12,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 12
-  },
   "br_journal": {
    "counts": [
     12,
@@ -70153,18 +70201,6 @@
    "total": 12
   },
   "br_blog_adam_yn_yr_ardd": {
-   "counts": [
-    12,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 12
-  },
-  "br_news_articles": {
    "counts": [
     12,
     0,
@@ -70273,6 +70309,18 @@
    "total": 12
   },
   "br_blogbuzzter_de_deine_t_gliche_dosis_netz": {
+   "counts": [
+    12,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 12
+  },
+  "br_nicky_the_bibliophibian_reviews_from_a_b": {
    "counts": [
     12,
     0,
@@ -70500,6 +70548,18 @@
    ],
    "total": 12
   },
+  "br_pixelboomer_by_patric_rossmeisl_das_frei": {
+   "counts": [
+    12,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 12
+  },
   "br_ralf_s_ramblings": {
    "counts": [
     12,
@@ -70572,6 +70632,18 @@
    ],
    "total": 12
   },
+  "br_wolf_witte": {
+   "counts": [
+    12,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 12
+  },
   "br_zwentner_com_blog_f_r_pop_netzkultur": {
    "counts": [
     12,
@@ -70632,6 +70704,18 @@
    ],
    "total": 11
   },
+  "laravelnews": {
+   "counts": [
+    6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5
+   ],
+   "total": 11
+  },
   "mountaye": {
    "counts": [
     6,
@@ -70677,18 +70761,6 @@
     0,
     0,
     5
-   ],
-   "total": 11
-  },
-  "sec_databreaches": {
-   "counts": [
-    11,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
    ],
    "total": 11
   },
@@ -70752,6 +70824,18 @@
    ],
    "total": 11
   },
+  "sec_rst_cloud": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
   "sec_securelist_by_kaspersky": {
    "counts": [
     11,
@@ -70777,6 +70861,18 @@
    "total": 11
   },
   "sec_security_com": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
+  "sec_tenable": {
    "counts": [
     11,
     0,
@@ -70908,6 +71004,18 @@
    ],
    "total": 11
   },
+  "nl_frontend_front": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
   "br_hall_chen": {
    "counts": [
     11,
@@ -70993,6 +71101,18 @@
    "total": 11
   },
   "br_han": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
+  "br_joehx_blog_writing_what_i_want": {
    "counts": [
     11,
     0,
@@ -71256,18 +71376,6 @@
    ],
    "total": 11
   },
-  "br_the_big_picture_macro_perspective_on_the": {
-   "counts": [
-    11,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 11
-  },
   "br_knife_steel_nerds_metallurgy_and_testing": {
    "counts": [
     11,
@@ -71436,18 +71544,6 @@
    ],
    "total": 11
   },
-  "br_language_models_co_jay_alammar_substack": {
-   "counts": [
-    11,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 11
-  },
   "br_runtimeterror": {
    "counts": [
     11,
@@ -71497,6 +71593,18 @@
    "total": 11
   },
   "br_laura_michet_s_blog": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
+  "br_buildings_of_new_england_exploring_new_e": {
    "counts": [
     11,
     0,
@@ -71592,6 +71700,18 @@
    ],
    "total": 11
   },
+  "br_kevin_spencer": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
   "br_kimimi_the_game_eating_she_monster": {
    "counts": [
     11,
@@ -71616,7 +71736,43 @@
    ],
    "total": 11
   },
+  "br_my_granddad_is_keeping_busy_my_granddad_": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
+  "br_blog_nikhil_s_blog": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
   "br_patently_o_the_nation_s_leading_patent_l": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
+  "br_prior_probability_hey_where_did_you_get_": {
    "counts": [
     11,
     0,
@@ -71653,6 +71809,18 @@
    "total": 11
   },
   "br_shadowsandsatin_where_the_worlds_of_film": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
+  "br_sinclair_trails_the_travels_of_david_and": {
    "counts": [
     11,
     0,
@@ -71736,6 +71904,18 @@
    ],
    "total": 11
   },
+  "br_the_pulp_super_fan_commentary_from_the_d": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
   "br_blog_the_savvy_diabetic": {
    "counts": [
     11,
@@ -71772,6 +71952,18 @@
    ],
    "total": 11
   },
+  "br_warren_ellis_ltd_a_writer_s_notebook": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
   "br_waves_of_devotion_the_writings_and_reali": {
    "counts": [
     11,
@@ -71784,7 +71976,31 @@
    ],
    "total": 11
   },
+  "br_food_politics_by_marion_nestle": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
   "br_musings_happily_imperfect": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
+  "br_pogowasright_org": {
    "counts": [
     11,
     0,
@@ -71880,6 +72096,18 @@
    ],
    "total": 11
   },
+  "br_a_weekly_swift_blog_on_xcode_and_ios_dev": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
   "br_balus_cave": {
    "counts": [
     11,
@@ -71953,18 +72181,6 @@
    "total": 11
   },
   "br_rachel_binx_blog": {
-   "counts": [
-    11,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 11
-  },
-  "br_nicky_the_bibliophibian_reviews_from_a_b": {
    "counts": [
     11,
     0,
@@ -72084,6 +72300,18 @@
    ],
    "total": 11
   },
+  "br_explicating_elle": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
   "br_fenil_jain": {
    "counts": [
     11,
@@ -72108,6 +72336,18 @@
    ],
    "total": 11
   },
+  "br_freyncis": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
   "br_thomas_gigold_digitales_zuhause_blog": {
    "counts": [
     11,
@@ -72120,7 +72360,31 @@
    ],
    "total": 11
   },
+  "br_graham_s_island_life_on_the_big_island_o": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
   "br_henning_uhle_es_waren_nicht_alle_so": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
+  "br_horst_scheuer_mehr_als_technik_internet": {
    "counts": [
     11,
     0,
@@ -72180,7 +72444,31 @@
    ],
    "total": 11
   },
+  "br_an_almost_anonymous_blog": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
   "br_the_honest_courtesan_frank_commentary_fr": {
+   "counts": [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 11
+  },
+  "br_o_write_marilynonaroll_s_blog_thoughts_o": {
    "counts": [
     11,
     0,
@@ -72253,18 +72541,6 @@
    "total": 11
   },
   "br_pklucky_s_beachside_lounge": {
-   "counts": [
-    11,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 11
-  },
-  "br_pixelboomer_by_patric_rossmeisl_das_frei": {
    "counts": [
     11,
     0,
@@ -72481,18 +72757,6 @@
    "total": 11
   },
   "br_words_deferred_free_fiction_ruminations_": {
-   "counts": [
-    11,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 11
-  },
-  "br_wolf_witte": {
    "counts": [
     11,
     0,
@@ -72973,18 +73237,6 @@
    "total": 10
   },
   "engineeringatspotify": {
-   "counts": [
-    5,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5
-   ],
-   "total": 10
-  },
-  "laravelnews": {
    "counts": [
     5,
     0,
@@ -73536,18 +73788,6 @@
    ],
    "total": 10
   },
-  "sec_rst_cloud": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
   "sec_red_canary": {
    "counts": [
     10,
@@ -73753,18 +73993,6 @@
    "total": 10
   },
   "sec_seqrite": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
-  "sec_tenable": {
    "counts": [
     10,
     0,
@@ -75204,18 +75432,6 @@
    ],
    "total": 10
   },
-  "nl_frontend_front": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
   "nl_gamedev_js_weekly": {
    "counts": [
     10,
@@ -76405,18 +76621,6 @@
    "total": 10
   },
   "br_homexxxx": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
-  "br_joehx_blog_writing_what_i_want": {
    "counts": [
     10,
     0,
@@ -83388,18 +83592,6 @@
    ],
    "total": 10
   },
-  "br_buildings_of_new_england_exploring_new_e": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
   "br_buried_treasure_reviewing_the_indie_game": {
    "counts": [
     10,
@@ -84672,18 +84864,6 @@
    ],
    "total": 10
   },
-  "br_kevin_spencer": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
   "br_kids_bricks_my_kids_lego_creations": {
    "counts": [
     10,
@@ -85212,18 +85392,6 @@
    ],
    "total": 10
   },
-  "br_my_granddad_is_keeping_busy_my_granddad_": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
   "br_my_life_100_years_ago_a_journey_back_in_": {
    "counts": [
     10,
@@ -85261,18 +85429,6 @@
    "total": 10
   },
   "br_net_wars_computers_freedom_and_privacy": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
-  "br_blog_nikhil_s_blog": {
    "counts": [
     10,
     0,
@@ -85597,18 +85753,6 @@
    "total": 10
   },
   "br_precast_reinforced_concrete_heart_ray_ne": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
-  "br_prior_probability_hey_where_did_you_get_": {
    "counts": [
     10,
     0,
@@ -86149,18 +86293,6 @@
    "total": 10
   },
   "br_man_in_chair_music_theatre_opera_ballet_": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
-  "br_sinclair_trails_the_travels_of_david_and": {
    "counts": [
     10,
     0,
@@ -86724,18 +86856,6 @@
    ],
    "total": 10
   },
-  "br_the_pulp_super_fan_commentary_from_the_d": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
   "br_the_simple_catholic_helping_you_develop_": {
    "counts": [
     10,
@@ -87192,18 +87312,6 @@
    ],
    "total": 10
   },
-  "br_warren_ellis_ltd_a_writer_s_notebook": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
   "br_we_make_money_not_art": {
    "counts": [
     10,
@@ -87576,18 +87684,6 @@
    ],
    "total": 10
   },
-  "br_food_politics_by_marion_nestle": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
   "br_my_blog_andrew_fraknoi_astronomy_lecture": {
    "counts": [
     10,
@@ -87865,18 +87961,6 @@
    "total": 10
   },
   "br_blog_packing_up_the_pieces": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
-  "br_pogowasright_org": {
    "counts": [
     10,
     0,
@@ -89245,18 +89329,6 @@
    "total": 10
   },
   "br_a_whisk_and_a_spoon_connoisseur_of_fine_": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
-  "br_a_weekly_swift_blog_on_xcode_and_ios_dev": {
    "counts": [
     10,
     0,
@@ -91548,18 +91620,6 @@
    ],
    "total": 10
   },
-  "br_explicating_elle": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
   "br_extra_guac_to_make_a_long_story": {
    "counts": [
     10,
@@ -91812,18 +91872,6 @@
    ],
    "total": 10
   },
-  "br_freyncis": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
   "br_kaffeediffusion_fabians_blog_politik_med": {
    "counts": [
     10,
@@ -92065,18 +92113,6 @@
    "total": 10
   },
   "br_grove_of_the_gourd_dwarf": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
-  "br_graham_s_island_life_on_the_big_island_o": {
    "counts": [
     10,
     0,
@@ -92413,18 +92449,6 @@
    "total": 10
   },
   "br_how_to_save_the_world_dave_pollard_s_chr": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
-  "br_horst_scheuer_mehr_als_technik_internet": {
    "counts": [
     10,
     0,
@@ -93792,18 +93816,6 @@
    ],
    "total": 10
   },
-  "br_an_almost_anonymous_blog": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
   "br_lynnandtonic_blog": {
    "counts": [
     10,
@@ -93949,18 +93961,6 @@
    "total": 10
   },
   "br_marcus_obst_webanwendungen_und_digitale_": {
-   "counts": [
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 10
-  },
-  "br_o_write_marilynonaroll_s_blog_thoughts_o": {
    "counts": [
     10,
     0,
@@ -98604,6 +98604,30 @@
    ],
    "total": 10
   },
+  "br_brightball": {
+   "counts": [
+    10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 10
+  },
+  "br_there_oughta_be": {
+   "counts": [
+    10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 10
+  },
   "sec_will_s_root": {
    "counts": [
     9,
@@ -99145,6 +99169,30 @@
    "total": 9
   },
   "br_home_beepb00p": {
+   "counts": [
+    9,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 9
+  },
+  "br_author_of_deep_work_study_hacks_blog_cal": {
+   "counts": [
+    9,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 9
+  },
+  "br_why_evolution_is_true_why_evolution_is_t": {
    "counts": [
     9,
     0,
@@ -100044,6 +100092,18 @@
    ],
    "total": 8
   },
+  "sec_the_record": {
+   "counts": [
+    8,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 8
+  },
   "eb_atlassian": {
    "counts": [
     8,
@@ -100632,18 +100692,6 @@
    ],
    "total": 8
   },
-  "br_author_of_deep_work_study_hacks_blog_cal": {
-   "counts": [
-    8,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 8
-  },
   "br_learn_code_the_hard_way": {
    "counts": [
     8,
@@ -100669,18 +100717,6 @@
    "total": 8
   },
   "br_xn_gckvb8fzb_com": {
-   "counts": [
-    8,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 8
-  },
-  "br_why_evolution_is_true_why_evolution_is_t": {
    "counts": [
     8,
     0,
@@ -104232,6 +104268,18 @@
    ],
    "total": 6
   },
+  "br_rasterweb_insights_and_such_since_1997": {
+   "counts": [
+    6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 6
+  },
   "br_sonechka_bearblog_dev": {
    "counts": [
     6,
@@ -104373,18 +104421,6 @@
     0,
     0,
     5
-   ],
-   "total": 5
-  },
-  "sec_the_record": {
-   "counts": [
-    5,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
    ],
    "total": 5
   },
@@ -106236,18 +106272,6 @@
    ],
    "total": 5
   },
-  "br_rasterweb_insights_and_such_since_1997": {
-   "counts": [
-    5,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 5
-  },
   "br_residuals": {
    "counts": [
     5,
@@ -106749,6 +106773,18 @@
     0,
     0,
     2
+   ],
+   "total": 4
+  },
+  "sec_dragos": {
+   "counts": [
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
    ],
    "total": 4
   },
@@ -107675,18 +107711,6 @@
     0
    ],
    "total": 4
-  },
-  "sec_dragos": {
-   "counts": [
-    3,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 3
   },
   "eb_michael_crump": {
    "counts": [

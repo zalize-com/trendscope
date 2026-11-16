@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-16T13:55:09.969017+00:00",
+ "generated_at": "2026-11-16T15:25:39.759838+00:00",
  "latest_snapshot": "2026-11-16",
- "total": 525,
+ "total": 544,
  "authors": [
   {
    "author": "mjs06",
@@ -21,7 +21,7 @@
   {
    "author": "DeepLogin",
    "days_on_board": 4,
-   "items": 5,
+   "items": 6,
    "sources": [
     "hackernews"
    ],
@@ -394,6 +394,21 @@
    }
   },
   {
+   "author": "dverlaeckt80",
+   "days_on_board": 3,
+   "items": 3,
+   "sources": [
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "What the fuck is w2rt6byl5nf1opmc-a.com?",
+    "url": "https://jack.cab/blog/siterate",
+    "score": 152,
+    "metric": "points",
+    "date": "2026-11-16"
+   }
+  },
+  {
    "author": "gfalcao",
    "days_on_board": 3,
    "items": 3,
@@ -486,7 +501,7 @@
   {
    "author": "sanitation",
    "days_on_board": 2,
-   "items": 10,
+   "items": 11,
    "sources": [
     "lemmy"
    ],
@@ -737,21 +752,6 @@
     "score": 72,
     "metric": "points",
     "date": "2026-11-15"
-   }
-  },
-  {
-   "author": "hiper2d",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "devto"
-   ],
-   "top_hit": {
-    "title": "How much does it cost to run a text game with LLMs",
-    "url": "https://dev.to/hiper2d/how-much-does-it-cost-to-run-a-text-game-with-llms-57o7",
-    "score": 85,
-    "metric": "reactions",
-    "date": "2026-11-14"
    }
   }
  ]
