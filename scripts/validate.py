@@ -31,11 +31,12 @@ def main():
         check(k in latest, f"latest.json missing key {k!r}")
     check(len(latest.get("items", {})) >= 5,
           f"latest.json has {len(latest.get('items', {}))} sources (<5)")
-    # at ~9k sources transient empties are routine (~1-2% per run); fail
-    # only if the empty share is beyond noise
+    # at ~9k sources transient empties are routine (~1-2% per run); a
+    # single-lane upstream outage (YouTube IP-limit wave, reddit 429 tail)
+    # can push it to ~4% — fail only beyond that
     empty = [src for src, items in latest.get("items", {}).items() if not items]
     total = len(latest.get("items", {}))
-    check(len(empty) <= max(5, total * 0.03),
+    check(len(empty) <= max(5, total * 0.04),
           f"{len(empty)}/{total} sources empty: {', '.join(empty[:10])}")
     for src, items in latest.get("items", {}).items():
         if not items:
@@ -78,7 +79,7 @@ def main():
     hsrcs = health.get("sources", health)
     unhealthy = sum(1 for h in hsrcs.values()
                     if not (h.get("ok") and h.get("items", 0) > 0))
-    check(unhealthy <= max(5, len(hsrcs) * 0.03),
+    check(unhealthy <= max(5, len(hsrcs) * 0.04),
           f"health.json: {unhealthy}/{len(hsrcs)} sources unhealthy")
 
     # docs/api JSON endpoints parse
