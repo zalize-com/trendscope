@@ -66,7 +66,7 @@ async function main(){
   let r=await fetch('data/latest-lite.json'); if(!r.ok) r=await fetch('data/latest.json'); const snap=await r.json();
   const have=[...ZH].filter(k=>snap.items[k]);
   document.getElementById('srcs').innerHTML=have.map(k=>
-    `<span class="chip">${esc(ZH_LABEL[k]||k)} <b>${snap.items[k].length}</b></span>`).join('');
+    `<a class="chip" href="zh-source.html?k=${k}" style="color:inherit">${esc(ZH_LABEL[k]||k)} <b>${snap.items[k].length}</b></a>`).join('');
   const queues=have.map(k=>snap.items[k].slice());
   const list=[]; while(list.length<60&&queues.some(q=>q.length))
     for(const q of queues) if(q.length) list.push(q.shift());
