@@ -97467,7 +97467,514 @@ def fetch_nl_weekly_xamarin(limit=15):
     return out
 
 
+def fetch_nl_hardcored(limit=15):
+    """硬核小卒 — curated newsletter feed, position-scored."""
+    print("Fetching 硬核小卒 feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://hardcored.substack.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] nl_hardcored attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://hardcored.substack.com"
+        out.append(item(
+            "nl_hardcored", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_nl_pythoncat(limit=15):
+    """Python潮流周刊 — curated newsletter feed, position-scored."""
+    print("Fetching Python潮流周刊 feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://pythoncat.substack.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] nl_pythoncat attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://pythoncat.substack.com"
+        out.append(item(
+            "nl_pythoncat", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_nl_aifordevelopers(limit=15):
+    """AI For Developers — curated newsletter feed, position-scored."""
+    print("Fetching AI For Developers feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://aifordevelopers.substack.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] nl_aifordevelopers attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://aifordevelopers.substack.com"
+        out.append(item(
+            "nl_aifordevelopers", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_nl_alternainewsletter(limit=15):
+    """Altern AI Tools Newsletter — curated newsletter feed, position-scored."""
+    print("Fetching Altern AI Tools Newsletter feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://alternainewsletter.substack.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] nl_alternainewsletter attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://alternainewsletter.substack.com"
+        out.append(item(
+            "nl_alternainewsletter", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_nl_aievaluation(limit=15):
+    """The AI Evaluation Substack — curated newsletter feed, position-scored."""
+    print("Fetching The AI Evaluation Substack feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://aievaluation.substack.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] nl_aievaluation attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://aievaluation.substack.com"
+        out.append(item(
+            "nl_aievaluation", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_nl_embertimes(limit=15):
+    """The Ember Times — curated newsletter feed, position-scored."""
+    print("Fetching The Ember Times feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://embertimes.substack.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] nl_embertimes attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://embertimes.substack.com"
+        out.append(item(
+            "nl_embertimes", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_nl_generative(limit=15):
+    """Generative Collective — curated newsletter feed, position-scored."""
+    print("Fetching Generative Collective feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://generative.substack.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] nl_generative attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://generative.substack.com"
+        out.append(item(
+            "nl_generative", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_nl_techtalksweekly(limit=15):
+    """Tech Talks Weekly — curated newsletter feed, position-scored."""
+    print("Fetching Tech Talks Weekly feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://techtalksweekly.substack.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] nl_techtalksweekly attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://techtalksweekly.substack.com"
+        out.append(item(
+            "nl_techtalksweekly", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_nl_womenonrails(limit=15):
+    """Women on Rails Newsletter — curated newsletter feed, position-scored."""
+    print("Fetching Women on Rails Newsletter feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://womenonrailsinternational.substack.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] nl_womenonrails attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://womenonrailsinternational.substack.com"
+        out.append(item(
+            "nl_womenonrails", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_nl_weeklyrust(limit=15):
+    """Rust Bytes — curated newsletter feed, position-scored."""
+    print("Fetching Rust Bytes feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://weeklyrust.substack.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] nl_weeklyrust attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://weeklyrust.substack.com"
+        out.append(item(
+            "nl_weeklyrust", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_nl_consolesubstack(limit=15):
+    """Console Weekly — curated newsletter feed, position-scored."""
+    print("Fetching Console Weekly feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://console.substack.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] nl_consolesubstack attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://console.substack.com"
+        out.append(item(
+            "nl_consolesubstack", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_nl_weeklyengineering(limit=15):
+    """Weekly Engineering Newsletter — curated newsletter feed, position-scored."""
+    print("Fetching Weekly Engineering Newsletter feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://weeklyengineeringnewsletter.substack.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] nl_weeklyengineering attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://weeklyengineeringnewsletter.substack.com"
+        out.append(item(
+            "nl_weeklyengineering", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
+def fetch_nl_devinterrupted(limit=15):
+    """Dev Interrupted — curated newsletter feed, position-scored."""
+    print("Fetching Dev Interrupted feed...")
+    import xml.etree.ElementTree as ET
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://dev-interrupted.substack.com/feed",
+                headers={"User-Agent": UA, "Accept": "application/rss+xml"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                root = _feed_root(resp)
+            break
+        except Exception as e:
+            print(f"  [warn] nl_devinterrupted attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            if _retryable(e):
+                time.sleep(2 * (attempt + 1))
+            else:
+                return []
+    else:
+        return []
+    entries = root.findall(".//{*}item") or root.findall(".//{*}entry")
+    entries = entries[:limit]
+    out = []
+    for i, e in enumerate(entries):
+        title = (e.findtext("{*}title", default="") or "").strip()
+        url = (e.findtext("{*}link", default="") or "").strip()
+        if not url:
+            for l in e.findall("{*}link"):
+                if l.get("rel", "alternate") == "alternate":
+                    url = l.get("href", "")
+                    break
+        url = url or "https://dev-interrupted.substack.com"
+        out.append(item(
+            "nl_devinterrupted", title, url, len(entries) - i, "feed rank",
+        ))
+    return out
+
+
     fetchers = {
+        "nl_hardcored": fetch_nl_hardcored,
+        "nl_pythoncat": fetch_nl_pythoncat,
+        "nl_aifordevelopers": fetch_nl_aifordevelopers,
+        "nl_alternainewsletter": fetch_nl_alternainewsletter,
+        "nl_aievaluation": fetch_nl_aievaluation,
+        "nl_embertimes": fetch_nl_embertimes,
+        "nl_generative": fetch_nl_generative,
+        "nl_techtalksweekly": fetch_nl_techtalksweekly,
+        "nl_womenonrails": fetch_nl_womenonrails,
+        "nl_weeklyrust": fetch_nl_weeklyrust,
+        "nl_consolesubstack": fetch_nl_consolesubstack,
+        "nl_weeklyengineering": fetch_nl_weeklyengineering,
+        "nl_devinterrupted": fetch_nl_devinterrupted,
         "nl_air_around_ai": fetch_nl_air_around_ai,
         "nl_android_croissants": fetch_nl_android_croissants,
         "nl_artificial_intelligence_weekly": fetch_nl_artificial_intelligence_weekly,

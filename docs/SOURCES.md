@@ -1,9 +1,22 @@
 # Source registry
 
-2564 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
+2577 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
 
 | Key | Description | Host |
 |---|---|---|
+| `nl_hardcored` | 硬核小卒 | `hardcored.substack.com` |
+| `nl_pythoncat` | Python潮流周刊 | `pythoncat.substack.com` |
+| `nl_aifordevelopers` | AI For Developers | `aifordevelopers.substack.com` |
+| `nl_alternainewsletter` | Altern AI Tools Newsletter | `alternainewsletter.substack.com` |
+| `nl_aievaluation` | The AI Evaluation Substack | `aievaluation.substack.com` |
+| `nl_embertimes` | The Ember Times | `embertimes.substack.com` |
+| `nl_generative` | Generative Collective | `generative.substack.com` |
+| `nl_techtalksweekly` | Tech Talks Weekly | `techtalksweekly.substack.com` |
+| `nl_womenonrails` | Women on Rails Newsletter | `womenonrailsinternational.substack.com` |
+| `nl_weeklyrust` | Rust Bytes | `weeklyrust.substack.com` |
+| `nl_consolesubstack` | Console Weekly | `console.substack.com` |
+| `nl_weeklyengineering` | Weekly Engineering Newsletter | `weeklyengineeringnewsletter.substack.com` |
+| `nl_devinterrupted` | Dev Interrupted | `dev-interrupted.substack.com` |
 | `nl_air_around_ai` | Air Around AI | `airaroundai.substack.com` |
 | `nl_android_croissants` | Android Croissants | `android-croissants.com` |
 | `nl_artificial_intelligence_weekly` | Artificial Intelligence Weekly | `aiweekly.co` |
