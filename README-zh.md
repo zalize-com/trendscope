@@ -30,7 +30,7 @@ GitHub Trending、Lobste.rs、Dev.to、Product Hunt、arXiv、npm/PyPI/crates.io
 | `data/history.csv` | 追加式全量历史 —— 可做趋势速度分析 |
 | `data/index.json` | 全部快照日期索引 |
 | `feed.xml` | 每次快照 + 每周摘要的 RSS |
-| `docs/api/` | 23 条 JSON/CSV/SVG/RSS API 线（见 `docs/api.md`） |
+| `docs/api/` | 28 条 JSON/CSV/SVG/RSS API 线（见 `docs/api.md`） |
 
 ## 62 个静态页面
 
