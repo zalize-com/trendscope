@@ -18,8 +18,14 @@ const [feeds, zw, dormant, latest] = await Promise.all([
   j("data/latest-lite.json", null).then((d) => d || j("data/latest.json", { items: [] })),
 ]);
 
-const feedMap = typeof feeds === "object" && !Array.isArray(feeds) ? feeds : {};
-const feedList = Object.entries(feedMap).map(([key, f]) => ({ key, ...(typeof f === "object" ? f : {}) }));
+// feeds.json = { generated_at, count, feeds: [{key,label,feed,lane,dormant}] }
+const feedArr = Array.isArray(feeds) ? feeds : (feeds.feeds || []);
+const feedMap = {};
+const feedList = feedArr.map((f) => {
+  const rec = typeof f === "object" ? f : { feed: f };
+  feedMap[rec.key] = rec;
+  return rec;
+});
 const persistent = new Set(zw.persistent_empty || []);
 const tide = new Set(zw.tide || []);
 const dormantSet = new Set(Array.isArray(dormant) ? dormant : dormant.keys || []);
