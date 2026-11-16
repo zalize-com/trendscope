@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T18:29:17.475990+00:00",
+ "generated_at": "2026-11-16T18:53:52.773533+00:00",
  "latest_snapshot": "2026-11-16",
  "crossovers": [
   {
@@ -312,6 +312,22 @@
     "score": 15,
     "metric": "feed rank",
     "source": "allthingssmitty",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://www.wired.com/story/data-centers-use-more-electricity-than-michigan",
+   "title": "Just 400 US Data Centers Use More Electricity Than Michigan",
+   "sources": [
+    "hnrss",
+    "sec_wired",
+    "wired"
+   ],
+   "days": 1,
+   "best": {
+    "score": 15,
+    "metric": "feed rank",
+    "source": "wired",
     "date": "2026-11-16"
    }
   },
@@ -761,21 +777,6 @@
    "days": 2,
    "best": {
     "score": 192,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-16"
-   }
-  },
-  {
-   "url": "https://prog21.dadgum.com/116.html",
-   "title": "Things That Turbo Pascal Is Smaller Than (2011)",
-   "sources": [
-    "hackernews",
-    "hnrss"
-   ],
-   "days": 2,
-   "best": {
-    "score": 190,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-16"

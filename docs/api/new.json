@@ -1,74 +1,82 @@
 {
- "generated_at": "2026-11-16T18:29:17.475990+00:00",
+ "generated_at": "2026-11-16T18:53:52.773533+00:00",
  "latest_snapshot": "2026-11-16",
- "total_items": 114411,
- "new_items": 84170,
+ "total_items": 114644,
+ "new_items": 84403,
  "by_source": {
-  "lorekernel": 270,
-  "investing": 169,
-  "seekingalpha": 95,
-  "w4news": 92,
-  "timesofindia": 74,
+  "lorekernel": 285,
+  "investing": 178,
+  "seekingalpha": 102,
+  "w4news": 99,
+  "timesofindia": 77,
+  "uniteai": 70,
   "bloglogrocket": 68,
-  "uniteai": 67,
   "forbes": 63,
-  "show_hn": 59,
-  "eb_guardian": 55,
+  "show_hn": 63,
+  "eb_guardian": 56,
   "tb_headspin_blog": 55,
   "techmeme": 52,
-  "fortune": 47,
-  "hnrss": 44,
-  "feeds3": 40,
+  "fortune": 50,
+  "hnrss": 48,
+  "phys": 43,
+  "feeds3": 42,
   "nl_web_design_weekly": 40,
-  "phys": 39,
   "producthunt": 38,
-  "sec_the_register": 36,
+  "sec_the_register": 37,
+  "thenextweb": 34,
+  "hackernews": 33,
   "cnbc": 31,
-  "thenextweb": 31,
   "arxiv": 30,
   "br_alexx_fyi": 30,
   "br_light_logged": 30,
-  "hackernews": 30,
+  "eb_zapier": 29,
+  "moneysavingmom": 29,
   "sec_techrepublic": 28,
-  "moneysavingmom": 27,
+  "engadget": 27,
   "bohaishibei": 26,
-  "engadget": 26,
+  "rartificial": 26,
+  "sec_google_threat_analysis_group": 26,
+  "br_brightball": 25,
   "euroweeklynews": 25,
   "nl_embertimes": 25,
   "nl_hardcored": 25,
   "nl_simply_explained": 25,
   "sec_cosmicbytez": 25,
-  "sec_google_threat_analysis_group": 25,
+  "sec_wired": 25,
+  "sec_zdnet": 25,
   "sec_bleepingcomputer": 24,
-  "sec_wired": 24,
+  "rsysadmin": 23,
   "sec_security_online": 23,
   "br_jan_harasym": 22,
   "br_one_mile_at_a_time_airline_travel_news_r": 22,
   "nature": 22,
   "sec_brandefense_blog": 22,
   "sec_the_hacker_news": 22,
+  "theregister": 22,
   "br_ion_howto_ion_howto_diy_projects": 21,
   "br_kottke_org_home_of_fine_hypertext_produc": 21,
   "feeds11": 21,
   "nl_perl_weekly": 21,
-  "rartificial": 21,
   "sec_malwarebytes_labs": 21,
-  "sec_zdnet": 21,
-  "br_brightball": 20,
   "br_chris_swan_s_weblog_it_mixology_and_othe": 20,
   "br_it_starts_with_a_birthstone": 20,
   "br_old_deptford_history": 20,
   "levelup": 20,
   "rtechnology": 20,
   "sec_cert_fr_menaces_et_incidents": 20,
+  "appleinsider": 19,
   "br_home_cyberbuffalo_industries_cyberbuffal": 19,
   "br_maique_void": 19,
   "br_marginal_revolution_small_steps_toward_a": 19,
   "br_small_scale_world": 19,
   "rrust": 19,
+  "rselfhosted": 19,
   "sec_helpnet_security": 19,
   "sec_securityweek": 19,
+  "techcrunch": 19,
+  "9to5mac": 18,
   "br_ask_a_manager": 18,
+  "br_diamond_geezer": 18,
   "br_justin_searls_co": 18,
   "br_manton_reece": 18,
   "br_peter_rukavina_s_blog": 18,
@@ -77,20 +85,16 @@
   "br_wirres_net_fachblog_f_uuml_r_irrelevanz": 18,
   "br_world_of_reel": 18,
   "developernvidia": 18,
-  "eb_zapier": 18,
   "economictimes": 18,
-  "techcrunch": 18,
-  "theregister": 18,
-  "9to5mac": 17,
-  "appleinsider": 17,
+  "nl_rendezvous_with_cassidoo": 18,
   "br_aiee_run_from_kelvin_s_brainsplurge": 17,
   "br_baty_net": 17,
   "br_bits_by_bino": 17,
   "br_blog_the_white_pube": 17,
   "br_blogxxxxxxxx": 17,
   "br_bookofjoe": 17,
-  "br_diamond_geezer": 17,
   "br_hi_i_m_squid": 17,
+  "br_hola_i_m_cesar_aguirre_just_some_code": 17,
   "br_home_max_frequency": 17,
   "br_kiko_io_memorable_tech_stuff": 17,
   "br_leon_mika": 17,
@@ -100,15 +104,14 @@
   "br_theoblog_de": 17,
   "lennysnewsletter": 17,
   "lobsters": 17,
-  "nl_rendezvous_with_cassidoo": 17,
   "pb_michael_malura": 17,
-  "rsysadmin": 17,
   "sec_cert_polska": 17,
   "sec_heimdal": 17,
   "br_0110_be": 16,
   "br_a_trip_down_memory_lane": 16,
   "br_about_the_codeartist_programmer_and_engi": 16,
   "br_adam_keys_is_thinking": 16,
+  "br_airplane_mode_with_liz_plank_substack": 16,
   "br_aj_dev": 16,
   "br_ambient_irony": 16,
   "br_anecdotal_evidence": 16,
@@ -154,6 +157,7 @@
   "br_fotografie_aus_leidenschaft_norbert_eder": 16,
   "br_frank_adler_astrophotography_web_enginee": 16,
   "br_from_the_front_of_the_choir": 16,
+  "br_gabz_ml": 16,
   "br_gorillas_don_t_blog": 16,
   "br_greenbriar_picture_shows": 16,
   "br_gus_van_horn": 16,
@@ -161,7 +165,6 @@
   "br_happybuddha_enjoy_the_ride": 16,
   "br_hawkworld": 16,
   "br_helen_mccookerybook": 16,
-  "br_hola_i_m_cesar_aguirre_just_some_code": 16,
   "br_home_anthony_ciccarello": 16,
   "br_home_in_retrospect": 16,
   "br_home_raskell": 16,
@@ -182,6 +185,7 @@
   "br_john_clare_weblog": 16,
   "br_josh_beckman": 16,
   "br_julio_merino_jmmv_dev": 16,
+  "br_kamilkazani_substack": 16,
   "br_kellblog": 16,
   "br_kevin_london_s_blog": 16,
   "br_konfetti_explorations": 16,
@@ -204,6 +208,8 @@
   "br_nathan_upchurch": 16,
   "br_nelson_s_linkblog": 16,
   "br_news_from_me_mark_evanier_s_blog_about_a": 16,
+  "br_nigeness": 16,
+  "br_one_foot_tsunami_by_paul_kafasis": 16,
   "br_onli_blogging": 16,
   "br_orange_crate_art": 16,
   "br_oz_gultekin_designer_of_things_notes_and": 16,
@@ -240,6 +246,7 @@
   "br_tabs_over_spaces_by_ji_x2_in_ura": 16,
   "br_taiwan_quest_a_blog_about_moving_to_taiw": 16,
   "br_talmud_tech_ezra_brand_substack": 16,
+  "br_teacher_tom": 16,
   "br_technology_consultant_python_django_web_": 16,
   "br_the_art_of_not_asking_why": 16,
   "br_the_audacity_roxane_gay_substack": 16,
@@ -258,12 +265,14 @@
   "br_trickjarrett_com_semper_ad_meliora": 16,
   "br_tywkiwdbi_tai_wiki_widbee": 16,
   "br_v_buckenham": 16,
+  "br_valerie_flynn_author_podcaster_learner": 16,
   "br_vic_mancini_on_death_row": 16,
   "br_vintage_buses": 16,
   "br_wargamesculptors_blog": 16,
   "br_west_coast_stat_views_on_observational_e": 16,
   "br_what_the_fundus": 16,
   "br_witt_weekly_benjamin_witt": 16,
+  "br_writing_a_working_library": 16,
   "br_writing_by_yury_molodtsov_tech_and_comms": 16,
   "br_writing_slowly": 16,
   "br_wyrd_britain": 16,
@@ -282,6 +291,7 @@
   "pb_andrew_healey": 16,
   "prageng": 16,
   "refactoringfm": 16,
+  "rlaravel": 16,
   "rss4": 16,
   "sec_checkpoint": 16,
   "sec_defend_network_daily_briefings": 16,
@@ -404,7 +414,6 @@
   "br_ahmad_rosid_software_enginer": 15,
   "br_ai_focus_paul_kinlan_on_how_ai_is_changi": 15,
   "br_ai_for_software_engineers_logan_thornelo": 15,
-  "br_airplane_mode_with_liz_plank_substack": 15,
   "br_aka_pastor_guy": 15,
   "br_akash_rajpurohit": 15,
   "br_aksdev": 15,
@@ -1200,6 +1209,7 @@
   "br_florian_photo_a_blog_where_florian_tries": 15,
   "br_florian_ziegler_web_designer_developer_p": 15,
   "br_florimond_manca": 15,
+  "br_flutterby": 15,
   "br_fluxblog": 15,
   "br_flying_thoughts_ein_blog_ber_b_cher_und_": 15,
   "br_fog_songs": 15,
@@ -1239,7 +1249,6 @@
   "br_g_s_hillenius": 15,
   "br_gabe_s_blog_semper_esurientem": 15,
   "br_gabe_venberg": 15,
-  "br_gabz_ml": 15,
   "br_gaganpreet_arora": 15,
   "br_galactic_hunter_s_star_wars_figure_of_th": 15,
   "br_gallimore_railroading": 15,
@@ -1294,6 +1303,7 @@
   "br_grizzlebit": 15,
   "br_grognardia": 15,
   "br_grumpy_gamer": 15,
+  "br_grumpyoldman": 15,
   "br_gunwant_jain": 15,
   "br_gurney_journey": 15,
   "br_guru_das_srinagesh": 15,
@@ -1729,7 +1739,6 @@
   "br_kamal_marhubi": 15,
   "br_kamalmarhubi_com": 15,
   "br_kami_s_cornerx": 15,
-  "br_kamilkazani_substack": 15,
   "br_kan_yilmaz": 15,
   "br_kanada_rail": 15,
   "br_kanishk_singh_runes_of_undocumented_code": 15,
@@ -1847,6 +1856,7 @@
   "br_lord_io": 15,
   "br_lordmatt_co_uk": 15,
   "br_lorentz_app": 15,
+  "br_lotte_s_attic": 15,
   "br_low_poly_brainblasts": 15,
   "br_lu_is": 15,
   "br_luca_lanziani": 15,
@@ -2089,7 +2099,6 @@
   "br_nicola_losito_can_use_search_engine": 15,
   "br_nicolas_goutay_software_engineer_speaker": 15,
   "br_nicolas_mattia": 15,
-  "br_nigeness": 15,
   "br_nikdoof_com_posts": 15,
   "br_nikhil_anand_des_moines_iowa_nikhil_io": 15,
   "br_nikhil_r_hi_welcome_to_my_corner_on_the_": 15,
@@ -2146,7 +2155,6 @@
   "br_omar_kamali_tech_founder_ai_strategist": 15,
   "br_once_upon_a_time_in_the_vest": 15,
   "br_ondrej_sevcik": 15,
-  "br_one_foot_tsunami_by_paul_kafasis": 15,
   "br_one_man_1001_albums": 15,
   "br_onlineornot_uptime_monitoring_and_status": 15,
   "br_onlyrss": 15,
@@ -2390,6 +2398,7 @@
   "br_rishi_baldawa": 15,
   "br_rishikesh_sreehari": 15,
   "br_ritik_sahni": 15,
+  "br_river_macleod": 15,
   "br_river_writes_a_mediawiki_blog": 15,
   "br_rjohnthebad": 15,
   "br_rl_vision_independent_pc_software_develo": 15,
@@ -2648,7 +2657,6 @@
   "br_taylor_troesh": 15,
   "br_tea_and_bits": 15,
   "br_teacher_s_notes": 15,
-  "br_teacher_tom": 15,
   "br_tech_blog": 15,
   "br_tech_blog_vicki_boykis": 15,
   "br_tech_tutorials_howtos_and_buying_advice": 15,
@@ -2893,7 +2901,6 @@
   "br_usher_dev": 15,
   "br_v_h_belvadi_home_venkatram_harish_belvad": 15,
   "br_vadim_kravcenko_fractional_cto_on_demand": 15,
-  "br_valerie_flynn_author_podcaster_learner": 15,
   "br_varun_kumar": 15,
   "br_varun_ramesh_s_blog": 15,
   "br_vasili_s_blog": 15,
@@ -3002,7 +3009,6 @@
   "br_write_software_well": 15,
   "br_writewhim": 15,
   "br_writing": 15,
-  "br_writing_a_working_library": 15,
   "br_writing_by_anna_e_cook_anna_e_cook": 15,
   "br_writing_cennydd_bowles": 15,
   "br_writing_denvaar_s_site": 15,
@@ -3254,7 +3260,6 @@
   "pb_tony_xu": 15,
   "pb_trevor_harmon": 15,
   "pb_victoria_dev": 15,
-  "rlaravel": 15,
   "sec_ahnlab_security_intelligence_center": 15,
   "sec_ars_technica": 15,
   "sec_aws_security": 15,
@@ -3387,6 +3392,7 @@
   "tb_vishunbhotla_v_d_v_bharadwaj": 15,
   "techblogthescore": 15,
   "techworldmilan": 15,
+  "theverge": 15,
   "tidyfirst": 15,
   "tldr_product": 15,
   "webglfundamentals": 15,
@@ -3422,6 +3428,7 @@
   "br_luna_s_blog": 14,
   "br_matt_hogg_fyi": 14,
   "br_maxime_peabody_generative_ai_engineer_ex": 14,
+  "br_mccd_space": 14,
   "br_mira_welner_s_personal_site": 14,
   "br_monroe_clinton": 14,
   "br_my_small_ecofriendly_blog": 14,
@@ -3446,9 +3453,9 @@
   "br_yakko_s_blog": 14,
   "br_yeis_dev": 14,
   "eb_hostinger": 14,
+  "planetfedora": 14,
   "sec_soc_radar": 14,
   "tb_joeeey": 14,
-  "theverge": 14,
   "br_a_smol_miscellanea": 13,
   "br_adriel_sand": 13,
   "br_akash_goswami": 13,
@@ -3511,8 +3518,7 @@
   "br_weeknotes_denis_defreyne": 13,
   "br_yet_another_math_programming_consultant": 13,
   "nl_finxter_ai_nuggets": 13,
-  "planetfedora": 13,
-  "rselfhosted": 13,
+  "rprogramming": 13,
   "sec_cofense_intelligence": 13,
   "tb_darek_kay": 13,
   "tb_dhanush_nehru": 13,
@@ -3626,6 +3632,7 @@
   "sec_hackread": 12,
   "sec_qualys_blog": 12,
   "sec_the_cyber_express": 12,
+  "sec_the_record": 12,
   "slashdot": 12,
   "tb_ajxs": 12,
   "tb_alessandro_marino": 12,
@@ -3689,6 +3696,7 @@
   "br_fbrs": 11,
   "br_fenil_jain": 11,
   "br_fernsehersatz_just_wwwatch": 11,
+  "br_field_notes": 11,
   "br_food_politics_by_marion_nestle": 11,
   "br_for_people_who_like_to_sweat_swear_do_st": 11,
   "br_freyncis": 11,
@@ -3823,6 +3831,7 @@
   "nl_frontend_front": 11,
   "pb_omar_bahareth": 11,
   "sec_any_run": 11,
+  "sec_citizen_lab": 11,
   "sec_crowdstrike": 11,
   "sec_fidelis_security": 11,
   "sec_infostealers_by_hudsonrock": 11,
@@ -3833,7 +3842,6 @@
   "sec_securelist_by_kaspersky": 11,
   "sec_security_com": 11,
   "sec_tenable": 11,
-  "sec_the_record": 11,
   "tb_impure_fun": 11,
   "tb_jason_ross": 11,
   "tb_mbaziira_ronald": 11,
@@ -4432,7 +4440,6 @@
   "br_female_inside_erz_hlungen_und_geschichte": 10,
   "br_feuerfest_just_the_private_blog_of_a_lin": 10,
   "br_fiddery": 10,
-  "br_field_notes": 10,
   "br_field_notes_on_the_jesus_way_a_pilgrim_o": 10,
   "br_filipa_mv": 10,
   "br_filippo_valsorda": 10,
@@ -5847,7 +5854,6 @@
   "sec_censys": 10,
   "sec_chainalysis": 10,
   "sec_checkmarx": 10,
-  "sec_citizen_lab": 10,
   "sec_connof_mcgarr": 10,
   "sec_ctrl_alt_int3l": 10,
   "sec_cybereason": 10,
@@ -6010,7 +6016,6 @@
   "pb_berkhan_berkdemir": 9,
   "pb_jared_gorski": 9,
   "reddit": 9,
-  "rprogramming": 9,
   "sec_sophos": 9,
   "sec_will_s_root": 9,
   "space": 9,
@@ -6135,9 +6140,11 @@
   "eb_chris_wellons": 8,
   "eb_evan_hahn": 8,
   "hackaday": 8,
+  "lifehacker": 8,
   "nl_monitoring_weekly": 8,
   "openai": 8,
   "pb_elijah_lynn": 8,
+  "rdotnet": 8,
   "rgamedev": 8,
   "rkubernetes": 8,
   "tb_abiola_farounbi": 8,
@@ -6245,12 +6252,12 @@
   "br_words_eshed_schacham": 7,
   "br_writing_william_o_connell": 7,
   "cultofmac": 7,
+  "discoursellvm": 7,
   "feedx": 7,
+  "forummanjaro": 7,
   "gsmarena": 7,
-  "lifehacker": 7,
   "pb_dean_harris": 7,
   "pb_victor_gosse": 7,
-  "rdotnet": 7,
   "ropensource": 7,
   "rwebdev": 7,
   "sciencealert": 7,
@@ -6365,7 +6372,8 @@
   "br_windy_s_notebook": 6,
   "br_winricklabs_blog": 6,
   "codecentric": 6,
-  "discoursellvm": 6,
+  "databricks": 6,
+  "itnext": 6,
   "lemmy": 6,
   "nl_c_digest": 6,
   "nl_leadership_in_tech": 6,
@@ -6374,6 +6382,7 @@
   "pb_tanner_linsley": 6,
   "raws": 6,
   "rcompsci": 6,
+  "savingadvice": 6,
   "tb_afobaje": 6,
   "tb_chris_kalmar": 6,
   "tb_code_create": 6,
@@ -6546,10 +6555,7 @@
   "br_zdimension": 5,
   "br_zeilenkino_wo_film_und_literatur_sich_tr": 5,
   "br_zeroair_reviews_reviewing_flashlights_an": 5,
-  "databricks": 5,
-  "forummanjaro": 5,
   "hostinger": 5,
-  "itnext": 5,
   "ixd": 5,
   "machinelearningmastery": 5,
   "nl_objc": 5,
@@ -6558,8 +6564,8 @@
   "nl_weekly_vue_news": 5,
   "pb_eric_pierce": 5,
   "pb_mustafa_alap": 5,
+  "rphp": 5,
   "rreactjs": 5,
-  "savingadvice": 5,
   "sec_zimperium": 5,
   "simonw": 5,
   "spotify": 5,
@@ -6641,6 +6647,7 @@
   "br_wells_dev": 4,
   "br_zasm": 4,
   "feeds4": 4,
+  "gamasutra": 4,
   "github_trending": 4,
   "lwn": 4,
   "nl_data_elixir": 4,
@@ -6649,7 +6656,7 @@
   "pb_matt_podwysocki": 4,
   "planetemacs": 4,
   "rdatascience": 4,
-  "rphp": 4,
+  "rjavascript": 4,
   "sec_dragos": 4,
   "sitepoint": 4,
   "sspai": 4,
@@ -6741,9 +6748,9 @@
   "developers": 3,
   "devto": 3,
   "douban": 3,
+  "droidlife": 3,
   "eb_james_hague": 3,
   "eb_michael_crump": 3,
-  "gamasutra": 3,
   "itsecurityguru": 3,
   "jiqizhixin": 3,
   "leimao": 3,
@@ -6752,13 +6759,13 @@
   "raskprogramming": 3,
   "rfrontend": 3,
   "rgolang": 3,
-  "rjavascript": 3,
   "tb_david_levai": 3,
   "tb_james_drysdale": 3,
   "tb_nacho_iacovino": 3,
   "tb_pritam_bera": 3,
   "tb_sushmita_pandey": 3,
   "thecollegeinvestor": 3,
+  "thenewstack": 3,
   "xinzhi": 3,
   "aeon": 2,
   "appinn": 2,
@@ -6832,7 +6839,6 @@
   "br_xitij_ritesh_patel": 2,
   "cynicaldeveloper": 2,
   "designboom": 2,
-  "droidlife": 2,
   "flaviocopes": 2,
   "geekpark": 2,
   "joedolson": 2,
@@ -6863,7 +6869,6 @@
   "tb_goodness_ezeh": 2,
   "tb_mads_brodt": 2,
   "techblogwikimedia": 2,
-  "thenewstack": 2,
   "thoughtbot": 2,
   "uxdesign": 2,
   "vercel": 2,
@@ -6998,8 +7003,10 @@
   "planetarch": 1,
   "planetclojure": 1,
   "planetdebian": 1,
+  "planeterlang": 1,
   "planetgnome": 1,
   "planetjabber": 1,
+  "pythonblog": 1,
   "pytorch": 1,
   "quanta": 1,
   "rachsmith": 1,
@@ -7010,9 +7017,12 @@
   "remysharp": 1,
   "rkotlin": 1,
   "rnetsec": 1,
+  "rnextjs": 1,
+  "rpostgresql": 1,
   "rss3": 1,
   "sarasoueidan": 1,
   "schneier": 1,
+  "searchgoogleblog": 1,
   "sec_security_scorecard": 1,
   "shkspr": 1,
   "spinatomicobject": 1,
@@ -7026,6 +7036,7 @@
   "tencenttech": 1,
   "troyhunt": 1,
   "tumutanzi": 1,
+  "uxplanet": 1,
   "vinted": 1,
   "w3feeds2": 1,
   "w4blog5": 1,
@@ -7133,6 +7144,14 @@
   {
    "title": "iOS 27.3 adds new face unlock feature for iPhone Duo",
    "url": "https://9to5mac.com/2026/11/16/ios-27-3-adds-new-face-unlock-feature-for-iphone-duo/",
+   "source": "9to5mac",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Apple․com now available in Spanish for US users",
+   "url": "https://9to5mac.com/2026/11/16/apple-website-now-available-in-spanish-for-us-users/",
    "source": "9to5mac",
    "rank": 1,
    "score": 15,
@@ -7675,6 +7694,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Apple Pay chief Jennifer Bailey's successor is a longtime company veteran",
+   "url": "https://appleinsider.com/articles/26/11/16/apple-pay-chief-jennifer-baileys-successor-is-a-longtime-company-veteran?utm_source=rss",
+   "source": "appleinsider",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "iPhone 20 Pro camera rumored to use a faster 17nm imaging processor",
    "url": "https://appleinsider.com/articles/26/11/16/iphone-20-pro-camera-rumored-to-use-a-faster-17nm-imaging-processor?utm_source=rss",
    "source": "appleinsider",
@@ -7693,6 +7720,14 @@
   {
    "title": "Siri AI daily usage limits and fees will launch with iOS 27.3",
    "url": "https://appleinsider.com/articles/26/11/16/siri-ai-daily-usage-limits-and-fees-will-launch-with-ios-273?utm_source=rss",
+   "source": "appleinsider",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Second developer betas of iOS 27.3, macOS 27.3 out for testing",
+   "url": "https://appleinsider.com/articles/26/11/16/second-developer-betas-of-ios-273-macos-273-out-for-testing?utm_source=rss",
    "source": "appleinsider",
    "rank": 2,
    "score": 14,
@@ -29661,6 +29696,14 @@
   {
    "title": "Are Men Too Horny To Lead?",
    "url": "https://lizplank.substack.com/p/are-men-too-horny-to-lead",
+   "source": "br_airplane_mode_with_liz_plank_substack",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Sister Sketch Is a Documentary",
+   "url": "https://lizplank.substack.com/p/the-sister-sketch-is-a-documentary",
    "source": "br_airplane_mode_with_liz_plank_substack",
    "rank": 1,
    "score": 15,
@@ -104547,6 +104590,46 @@
    "metric": "feed rank"
   },
   {
+   "title": "What to Expect When You're Emailing",
+   "url": "https://www.brightball.com/articles/what-to-expect-when-youre-emailing",
+   "source": "br_brightball",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Video: Developing a Layered Email Security Strategy Webinar",
+   "url": "https://www.brightball.com/articles/developing-a-layered-email-security-strategy-webinar",
+   "source": "br_brightball",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I'm offering my first Scaled Agile Class",
+   "url": "https://www.brightball.com/articles/im-offering-my-first-scaled-agile-framework-safe-class",
+   "source": "br_brightball",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ansible + Terraform, the PBJ of DevOps",
+   "url": "https://www.brightball.com/articles/ansible-and-terraform-the-pb-and-j-of-devops",
+   "source": "br_brightball",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thank You TailwindCSS",
+   "url": "https://www.brightball.com/articles/thank-you-tailwindcss",
+   "source": "br_brightball",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "“The joy of life is in the contrast.”",
    "url": "https://brilliantcrank.com/the-joy-of-life-is-in-the-contrast/",
    "source": "br_brilliantcrank",
@@ -161075,6 +161158,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Rail quiz (1)",
+   "url": "http://diamondgeezer.blogspot.com/2026/11/rail-quiz-1.html",
+   "source": "br_diamond_geezer",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "10 to Battersea Bridge",
    "url": "http://diamondgeezer.blogspot.com/2026/11/10-to-battersea-bridge.html",
    "source": "br_diamond_geezer",
@@ -191763,6 +191854,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Words Matter",
+   "url": "https://rickw.bearblog.dev/words-matter/",
+   "source": "br_field_notes",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
    "title": "Why Do Modern Restaurants Suck?",
    "url": "https://rickw.bearblog.dev/why-do-modern-restaurants-suck/",
    "source": "br_field_notes",
@@ -195263,6 +195362,126 @@
    "url": "https://blog.flurdy.com/2019/06/all-eggs-in-one-cloud-basket.html",
    "source": "br_flurdy_s_ranting",
    "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "whoopsie",
+   "url": "https://www.flutterby.com/archives/comments/34740.html",
+   "source": "br_flutterby",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I'm looking at Hetzner's shared",
+   "url": "https://www.flutterby.com/archives/comments/34739.html",
+   "source": "br_flutterby",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "MBA students are anti-merit",
+   "url": "https://www.flutterby.com/archives/comments/34738.html",
+   "source": "br_flutterby",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Universal Robots UR3",
+   "url": "https://www.flutterby.com/archives/comments/34737.html",
+   "source": "br_flutterby",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Android System SafetyCore",
+   "url": "https://www.flutterby.com/archives/comments/34736.html",
+   "source": "br_flutterby",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kavanaugh Stops",
+   "url": "https://www.flutterby.com/archives/comments/34735.html",
+   "source": "br_flutterby",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Moment of hesitation while I tried to",
+   "url": "https://www.flutterby.com/archives/comments/34734.html",
+   "source": "br_flutterby",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Wow Saw that there were two hang",
+   "url": "https://www.flutterby.com/archives/comments/34733.html",
+   "source": "br_flutterby",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rather than the awful treelayered GUI",
+   "url": "https://www.flutterby.com/archives/comments/34732.html",
+   "source": "br_flutterby",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Sometimes it takes a great cover to",
+   "url": "https://www.flutterby.com/archives/comments/34731.html",
+   "source": "br_flutterby",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Oh good pulling the open source",
+   "url": "https://www.flutterby.com/archives/comments/34730.html",
+   "source": "br_flutterby",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Local climate  active transportation",
+   "url": "https://www.flutterby.com/archives/comments/34729.html",
+   "source": "br_flutterby",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "listeria outbreak",
+   "url": "https://www.flutterby.com/archives/comments/34728.html",
+   "source": "br_flutterby",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I mentioned that Firefox's AImake the",
+   "url": "https://www.flutterby.com/archives/comments/34727.html",
+   "source": "br_flutterby",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nextdoor post saying I've got some",
+   "url": "https://www.flutterby.com/archives/comments/34726.html",
+   "source": "br_flutterby",
+   "rank": 15,
    "score": 1,
    "metric": "feed rank"
   },
@@ -203285,6 +203504,14 @@
   {
    "title": "A low-key birthday weekend.",
    "url": "https://gabz.blog/posts/a-low-key-birthday-weekend",
+   "source": "br_gabz_ml",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "A Kitty from Japan",
+   "url": "https://gabz.blog/posts/a-kitty-from-japan",
    "source": "br_gabz_ml",
    "rank": 1,
    "score": 15,
@@ -215158,6 +215385,126 @@
    "title": "Death By Scrolling Level Design",
    "url": "https://grumpygamer.com/deathbyscrolling7/",
    "source": "br_grumpy_gamer",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Irgenwann gebähr ich hier…",
+   "url": "https://grumpyoldman.de/post/27599",
+   "source": "br_grumpyoldman",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://grumpyoldman.de/post/27594",
+   "source": "br_grumpyoldman",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://grumpyoldman.de/post/27593",
+   "source": "br_grumpyoldman",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://grumpyoldman.de/post/27592",
+   "source": "br_grumpyoldman",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://grumpyoldman.de/post/27591",
+   "source": "br_grumpyoldman",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Rings of Power Staffel 3 Folge 1",
+   "url": "https://grumpyoldman.de/post/27589",
+   "source": "br_grumpyoldman",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://grumpyoldman.de/post/27579",
+   "source": "br_grumpyoldman",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Kommentare und DRV Spaß",
+   "url": "https://grumpyoldman.de/post/27577",
+   "source": "br_grumpyoldman",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Vorboten des Grauens",
+   "url": "https://grumpyoldman.de/post/27576",
+   "source": "br_grumpyoldman",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://grumpyoldman.de/post/27574",
+   "source": "br_grumpyoldman",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://grumpyoldman.de/post/27573",
+   "source": "br_grumpyoldman",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Damit bricht ein neues Zeitalter an.",
+   "url": "https://grumpyoldman.de/post/27572",
+   "source": "br_grumpyoldman",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Was haben BOGESTRA und DHL gemeinsam?",
+   "url": "https://grumpyoldman.de/post/27568",
+   "source": "br_grumpyoldman",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://grumpyoldman.de/post/27567",
+   "source": "br_grumpyoldman",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "",
+   "url": "https://grumpyoldman.de/post/27564",
+   "source": "br_grumpyoldman",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -229525,6 +229872,14 @@
   {
    "title": "One Random Drop of Wisdom I Left on My Notebook to My Future Self",
    "url": "https://canro91.github.io/2026/11/16/DropOfWisdom/",
+   "source": "br_hola_i_m_cesar_aguirre_just_some_code",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What I'm Working On–November 2026",
+   "url": "https://canro91.github.io/2026/11/16/Now/",
    "source": "br_hola_i_m_cesar_aguirre_just_some_code",
    "rank": 1,
    "score": 15,
@@ -302099,6 +302454,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Kurt, Walter, and Horst",
+   "url": "https://kamilkazani.substack.com/p/kurt-walter-and-horst",
+   "source": "br_kamilkazani_substack",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "Why did not Russia become a democracy?",
    "url": "https://kamilkazani.substack.com/p/why-did-not-russia-become-a-democracy",
    "source": "br_kamilkazani_substack",
@@ -329083,6 +329446,126 @@
    "metric": "feed rank"
   },
   {
+   "title": "The week of the number 4",
+   "url": "https://lotte.chir.rs/ly/r/week-of-four/",
+   "source": "br_lotte_s_attic",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Megolm key confusion",
+   "url": "https://lotte.chir.rs/ly/l/megolm-key-confusion/",
+   "source": "br_lotte_s_attic",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Optimizing Links for QR Codes",
+   "url": "https://lotte.chir.rs/ly/k/qr-code-optimization/",
+   "source": "br_lotte_s_attic",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Braille Features on the Euro Bills proposals",
+   "url": "https://lotte.chir.rs/ly/g/euro-braille/",
+   "source": "br_lotte_s_attic",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "New entrances to Lotte’s Attic",
+   "url": "https://lotte.chir.rs/ly/g/new-entrances/",
+   "source": "br_lotte_s_attic",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Charlotte’s Space",
+   "url": "https://lotte.chir.rs/chat/",
+   "source": "br_lotte_s_attic",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Porting MIPI-DSI drivers to newer versions of Linux",
+   "url": "https://lotte.chir.rs/lx/-/mipi-dsi-driver-upgrade/",
+   "source": "br_lotte_s_attic",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Rant: Keccak, or the case for software-first ciphers",
+   "url": "https://lotte.chir.rs/lw/w/software-first-ciphers/",
+   "source": "br_lotte_s_attic",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Malicious homeserver can trick Element/Schildichat into revealing links in E2EE Rooms",
+   "url": "https://lotte.chir.rs/lw/h/element-url-exposure/",
+   "source": "br_lotte_s_attic",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Missing Salamanders: Matrix Media can be decrypted to multiple valid plaintexts using different keys",
+   "url": "https://lotte.chir.rs/lw/h/missing-salamanders/",
+   "source": "br_lotte_s_attic",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Setting up Final Fantasy 14: Online on NixOS",
+   "url": "https://lotte.chir.rs/lw/(/ffxiv-on-nixos/",
+   "source": "br_lotte_s_attic",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CSS Tip: Hamburger Menus without Javascript",
+   "url": "https://lotte.chir.rs/lv/~/css-hamburger-menu/",
+   "source": "br_lotte_s_attic",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pokémon Gen 1 Living Pokédex Journey: Boulder Badge",
+   "url": "https://lotte.chir.rs/lv/k/living-pokedex-journey-2/",
+   "source": "br_lotte_s_attic",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Pokémon Gen 1 Living Pokédex Journey Introduction",
+   "url": "https://lotte.chir.rs/lv/k/living-pokedex-journey-1/",
+   "source": "br_lotte_s_attic",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Managing Passwords without storing them",
+   "url": "https://lotte.chir.rs/ls/t/storageless-passwords/",
+   "source": "br_lotte_s_attic",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Write While True Episode 58: Glenn Stovall",
    "url": "https://loufranco.com/blog/write-while-true-episode-58-glenn-stovall",
    "source": "br_lou_franco_code_apps_and_writings",
@@ -349855,6 +350338,118 @@
    "url": "https://mayhul.com/posts/type-driven-design/",
    "source": "br_mayhul_arora",
    "rank": 3,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Email Patch Review Tool for Thunderbird",
+   "url": "https://mccd.space/posts/26-07-18/3-patch-review-tool-for-thunderbird",
+   "source": "br_mccd_space",
+   "rank": 1,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minimal Git CI using hooks",
+   "url": "https://mccd.space/posts/26-06-29/simple-git-ci",
+   "source": "br_mccd_space",
+   "rank": 2,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Remote Editing with Kakoune and Sway",
+   "url": "https://mccd.space/posts/26-02-11/remote-sway-kak",
+   "source": "br_mccd_space",
+   "rank": 3,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Landlock is Great",
+   "url": "https://mccd.space/posts/26-02-03/landlock",
+   "source": "br_mccd_space",
+   "rank": 4,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Local Test CI Using Git Hooks and Notes",
+   "url": "https://mccd.space/posts/26-01-16/simple-git-hook",
+   "source": "br_mccd_space",
+   "rank": 5,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exploring pq, a plain-text database connector for plan9",
+   "url": "https://mccd.space/posts/25-11-27/pq",
+   "source": "br_mccd_space",
+   "rank": 6,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Minimal Nix Microservices",
+   "url": "https://mccd.space/posts/25-04-23/nix-microservices",
+   "source": "br_mccd_space",
+   "rank": 7,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I love OCaml",
+   "url": "https://mccd.space/posts/25-04-16/ocaml-the-worlds-best",
+   "source": "br_mccd_space",
+   "rank": 8,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Purity is Great for Collaboration",
+   "url": "https://mccd.space/posts/24-08-23/purity",
+   "source": "br_mccd_space",
+   "rank": 9,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Why I Like NetBSD, or Why Portability Matters",
+   "url": "https://mccd.space/posts/24-07-16/netbsd-review",
+   "source": "br_mccd_space",
+   "rank": 10,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exploring the Offline Doc Landscape",
+   "url": "https://mccd.space/posts/24-03-27/search-internet",
+   "source": "br_mccd_space",
+   "rank": 11,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Curse of Convenience",
+   "url": "https://mccd.space/posts/24-03-12/curse-of-convenience",
+   "source": "br_mccd_space",
+   "rank": 12,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Using Git to Deploy NixOS Configurations",
+   "url": "https://mccd.space/posts/24-01-20/git-to-deploy",
+   "source": "br_mccd_space",
+   "rank": 13,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Consent, Attribution, Compensation and AI",
+   "url": "https://mccd.space/posts/23-12-08/consent-and-ai",
+   "source": "br_mccd_space",
+   "rank": 14,
    "score": 1,
    "metric": "feed rank"
   },
@@ -379739,6 +380334,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Footnotes: From Kenneth Connor to Nora Barnacle",
+   "url": "https://nigeness.blogspot.com/2026/11/footnotes-from-kenneth-connor-to-nora.html",
+   "source": "br_nigeness",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "Dangling Crow",
    "url": "https://nigeness.blogspot.com/2026/11/dangling-crow.html",
    "source": "br_nigeness",
@@ -392757,6 +393360,14 @@
   {
    "title": "Mississippi Picked Another Senator",
    "url": "https://onefoottsunami.com/2026/11/13/mississippi-picked-another-senator/",
+   "source": "br_one_foot_tsunami_by_paul_kafasis",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The Numbers Tell a Different Story",
+   "url": "https://onefoottsunami.com/2026/11/16/the-numbers-tell-a-different-story/",
    "source": "br_one_foot_tsunami_by_paul_kafasis",
    "rank": 1,
    "score": 15,
@@ -444974,6 +445585,126 @@
    "title": "Protecting Peace: A Game?",
    "url": "https://ritiksahni.com/blog/protecting-peace/",
    "source": "br_ritik_sahni",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RSVP to PostgreSQL Edinburgh Meetup April 2026",
+   "url": "https://river.cat/2026/04/244b",
+   "source": "br_river_macleod",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RSVP to PostgreSQL Edinburgh Meetup May 2026",
+   "url": "https://river.cat/2026/05/4354",
+   "source": "br_river_macleod",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RSVP to Open Circuit Edinburgh",
+   "url": "https://river.cat/2026/05/f981",
+   "source": "br_river_macleod",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Improved image handling on this blog",
+   "url": "https://river.cat/2026/03/improved-images",
+   "source": "br_river_macleod",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": ".cat",
+   "url": "https://river.cat/2018/05/puntcat",
+   "source": "br_river_macleod",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I link one of my favourite oh no comics, becaus...",
+   "url": "https://river.cat/2026/03/oh-no-activity-book",
+   "source": "br_river_macleod",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I'm having a look at TimescaleDB. I'm going to ...",
+   "url": "https://river.cat/2026/03/74dd",
+   "source": "br_river_macleod",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "RSVP to Homebrew Website Club Edinburgh",
+   "url": "https://river.cat/2026/02/4333",
+   "source": "br_river_macleod",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Holy Water",
+   "url": "https://river.cat/2012/01/e5fd",
+   "source": "br_river_macleod",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "CR2032 Welding",
+   "url": "https://river.cat/2021/12/3fb8",
+   "source": "br_river_macleod",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Thinkpad X1C USB-C Port Replacement",
+   "url": "https://river.cat/2026/03/X1C-USB-C-replacement",
+   "source": "br_river_macleod",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "X1 Carbon 7th USB C Connector",
+   "url": "https://river.cat/2026/02/9000",
+   "source": "br_river_macleod",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "X1 Carbon 7th USB and dock connectors",
+   "url": "https://river.cat/2026/02/9951",
+   "source": "br_river_macleod",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I successfully replaced the USB-C port on my Th...",
+   "url": "https://river.cat/2026/02/da46",
+   "source": "br_river_macleod",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Calton Hill thinks it is a ship",
+   "url": "https://river.cat/2018/10/hill-ship",
+   "source": "br_river_macleod",
    "rank": 15,
    "score": 1,
    "metric": "feed rank"
@@ -500139,6 +500870,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "And That's How to Share",
+   "url": "http://teachertomsblog.blogspot.com/2026/11/and-thats-how-to-share.html",
+   "source": "br_teacher_tom",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "\"I Wish This Connected to Something\"",
    "url": "http://teachertomsblog.blogspot.com/2026/11/i-wish-this-connected-to-something.html",
    "source": "br_teacher_tom",
@@ -554371,6 +555110,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "In Development",
+   "url": "https://valerieflynn.com/in-development/",
+   "source": "br_valerie_flynn_author_podcaster_learner",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "Webmaster Journey",
    "url": "https://valerieflynn.com/webmaster-journey/",
    "source": "br_valerie_flynn_author_podcaster_learner",
@@ -579155,6 +579902,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Crocosmia",
+   "url": "https://aworkinglibrary.com/reading/crocosmia",
+   "source": "br_writing_a_working_library",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "The City of Words",
    "url": "https://aworkinglibrary.com/reading/city-of-words",
    "source": "br_writing_a_working_library",
@@ -594059,6 +594814,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Talk to your clinical data: unlocking AWS HealthLake with OpenSharing and Genie One",
+   "url": "https://www.databricks.com/blog/talk-your-clinical-data-unlocking-aws-healthlake-opensharing-and-genie-one",
+   "source": "databricks",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
    "title": "Databricks is a Leader and positioned highest in execution in the 2026 Gartner® Magic Quadrant™ for Data Lakehouse Platforms",
    "url": "https://www.databricks.com/blog/databricks-leader-and-positioned-highest-execution-2026-gartnerr-magic-quadranttm-data",
    "source": "databricks",
@@ -594739,6 +595502,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "LLVM Weekly - #672, November 16th 2026",
+   "url": "https://discourse.llvm.org/t/llvm-weekly-672-november-16th-2026/92862",
+   "source": "discoursellvm",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "Can' compile LLVM-20.1.0 with Xcode 27",
    "url": "https://discourse.llvm.org/t/can-compile-llvm-20-1-0-with-xcode-27/92855",
    "source": "discoursellvm",
@@ -594909,6 +595680,14 @@
   {
    "title": "Galaxy Z Fold 8 Early Black Friday Deal Brings Heavy Price Cuts",
    "url": "https://www.droid-life.com/2026/11/16/galaxy-z-fold-8-early-black-friday-deal-brings-heavy-price-cuts/",
+   "source": "droidlife",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Your Pixel Can Early Test Its New Create My Widget App: Here’s How",
+   "url": "https://www.droid-life.com/2026/11/16/your-pixel-can-early-test-its-new-create-my-widget-app-heres-how/",
    "source": "droidlife",
    "rank": 1,
    "score": 15,
@@ -598005,6 +598784,14 @@
   {
    "title": "Ministry of Justice investigating Russell Brand message from prison claiming he is not guilty",
    "url": "https://www.theguardian.com/news/2026/nov/16/ministry-of-justice-investigating-russell-brand-message",
+   "source": "eb_guardian",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Police ‘retreating from streets’ due to major funding crisis, chief constables say",
+   "url": "https://www.theguardian.com/uk-news/2026/nov/16/police-retreating-from-streets-major-funding-crisis-england-wales",
    "source": "eb_guardian",
    "rank": 7,
    "score": 9,
@@ -603451,8 +604238,24 @@
    "metric": "feed rank"
   },
   {
+   "title": "7 Slack automation ideas",
+   "url": "https://zapier.com/blog/best-automations-for-slack",
+   "source": "eb_zapier",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
    "title": "Grok automation: How to use the Zapier Grok integration (Grok 4.7, Grok Bot, and more)",
    "url": "https://zapier.com/blog/automate-grok",
+   "source": "eb_zapier",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "4 Reddit automation ideas",
+   "url": "https://zapier.com/blog/keep-up-with-reddit",
    "source": "eb_zapier",
    "rank": 3,
    "score": 13,
@@ -603475,8 +604278,24 @@
    "metric": "feed rank"
   },
   {
+   "title": "Your spreadsheet automation playbook",
+   "url": "https://zapier.com/blog/automate-spreadsheets",
+   "source": "eb_zapier",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
    "title": "Tray pricing: Is it worth it?",
    "url": "https://zapier.com/blog/tray-pricing",
+   "source": "eb_zapier",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to follow up on contact forms faster with automation",
+   "url": "https://zapier.com/blog/automate-contact-form",
    "source": "eb_zapier",
    "rank": 5,
    "score": 11,
@@ -603491,8 +604310,24 @@
    "metric": "feed rank"
   },
   {
+   "title": "5 ways to automate Microsoft Excel",
+   "url": "https://zapier.com/blog/automate-microsoft-excel",
+   "source": "eb_zapier",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
    "title": "Workato pricing: Is it worth it?",
    "url": "https://zapier.com/blog/workato-pricing",
+   "source": "eb_zapier",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
+   "title": "5 ways to automate Meta's Conversions API tool with Zapier",
+   "url": "https://zapier.com/blog/automate-facebook-conversion-api-with-zapier",
    "source": "eb_zapier",
    "rank": 7,
    "score": 9,
@@ -603507,8 +604342,24 @@
    "metric": "feed rank"
   },
   {
+   "title": "A guide to email marketing automation: best practices and automated workflows",
+   "url": "https://zapier.com/blog/automate-email-marketing",
+   "source": "eb_zapier",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
    "title": "n8n pricing: Is it worth it?",
    "url": "https://zapier.com/blog/n8n-pricing",
+   "source": "eb_zapier",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Popular ways to automate Microsoft Outlook",
+   "url": "https://zapier.com/blog/automate-microsoft-outlook-email-with-zapier",
    "source": "eb_zapier",
    "rank": 9,
    "score": 7,
@@ -603523,6 +604374,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "How to share Google Tasks",
+   "url": "https://zapier.com/blog/how-to-share-google-tasks",
+   "source": "eb_zapier",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
    "title": "MuleSoft pricing: Is it worth it? [2026]",
    "url": "https://zapier.com/blog/mulesoft-pricing",
    "source": "eb_zapier",
@@ -603531,8 +604390,24 @@
    "metric": "feed rank"
   },
   {
+   "title": "5 ways to automate Google Chat with Zapier",
+   "url": "https://zapier.com/blog/automate-google-hangouts-chat",
+   "source": "eb_zapier",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
    "title": "Pipedream pricing: Is it worth it?",
    "url": "https://zapier.com/blog/pipedream-pricing",
+   "source": "eb_zapier",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Automate your meetings",
+   "url": "https://zapier.com/blog/automate-meetings",
    "source": "eb_zapier",
    "rank": 12,
    "score": 4,
@@ -603877,6 +604752,14 @@
   {
    "title": "GTA 6 hacker pleads guilty to stealing and leaking gameplay footage",
    "url": "https://www.engadget.com/2318001/gta-6-hacker-pleads-guilty-to-stealing-and-leaking-gameplay-footage/",
+   "source": "engadget",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "You won't find Nothing phones at US carriers, but here's how you can still buy them",
+   "url": "https://www.engadget.com/2314632/nothing-phones-not-available-us-carriers-how-still-buy/",
    "source": "engadget",
    "rank": 1,
    "score": 15,
@@ -604795,6 +605678,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Microsoft outage cause revealed: It was a perfect storm of problems",
+   "url": "https://mashable.com/tech/microsoft-outage-cause-revealed",
+   "source": "feeds3",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "NYT Connections hints today: Clues, answers for November 16, 2026",
    "url": "https://mashable.com/entertainment/nyt-connections-hint-answer-today-november-16-2026",
    "source": "feeds3",
@@ -604845,6 +605736,14 @@
   {
    "title": "The best Black Friday AirPods deals save you $70 on the AirPods Pro and bring the AirPods 4 down to $89",
    "url": "https://mashable.com/tech/best-early-black-friday-airpods-live-deals-2026",
+   "source": "feeds3",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "60+ holiday gifts for Dad he wont have to pretend to like",
+   "url": "https://mashable.com/gifts/best-gifts-for-dad",
    "source": "feeds3",
    "rank": 2,
    "score": 14,
@@ -605803,6 +606702,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "‘Absurd’: Delta CEO says it takes longer to fly from ATL to LGA today than in the 1950s",
+   "url": "https://fortune.com/2026/11/16/delta-ceo-ed-bastian-atlanta-laguardia-flight-1950s-faa/",
+   "source": "fortune",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
    "title": "‘I might live forever’: Inside billionaire Larry Connor’s no-email, 5-minute-block longevity routine",
    "url": "https://fortune.com/2026/11/16/larry-connor-billionaire-longevity-routine/",
    "source": "fortune",
@@ -605899,6 +606806,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Sam Bankman-Fried’s former employer Jane Street poised for $35 billion windfall from purchase of Anthropic shares in FTX bankruptcy",
+   "url": "https://fortune.com/2026/11/16/sam-bankman-fried-former-employer-jane-street-35-billion-windfall-purchase-anthropic-shares-ftx-bankruptcy/",
+   "source": "fortune",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
    "title": "South Korea faces an AI cheating scandal days before its national college entrance exams",
    "url": "https://fortune.com/2026/11/16/south-korea-ai-cheating-scandal-tax-qualifications/",
    "source": "fortune",
@@ -605933,6 +606848,14 @@
   {
    "title": "As Jensen Huang watches his $136 billion wealth tumble, the ex-Nvidia CEO is being praised as ‘the only billionaire willing to pay his share of taxes’",
    "url": "https://fortune.com/2026/11/16/jensen-huang-billionaire-willing-to-pay-california-wealth-tax-social-media-praise-amid-affair-allegations-nvidia-ceo-resignation/",
+   "source": "fortune",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "At 17, South Carolina-bound GG Banks is building a brand before her first college game",
+   "url": "https://fortune.com/2026/11/16/gg-banks-logo-nil-south-carolina-twitch/",
    "source": "fortune",
    "rank": 5,
    "score": 6,
@@ -606059,6 +606982,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "The brightness quickstart shortcut. KDE 6.7.5",
+   "url": "https://forum.manjaro.org/t/the-brightness-quickstart-shortcut-kde-6-7-5/191257",
+   "source": "forummanjaro",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "Bericht über Manjaro Project e.V. auf heise.de",
    "url": "https://forum.manjaro.org/t/bericht-uber-manjaro-project-e-v-auf-heise-de/191247",
    "source": "forummanjaro",
@@ -606069,6 +607000,14 @@
   {
    "title": "Retroarch Flatpak starts partially on the wrong monitor frozen solid",
    "url": "https://forum.manjaro.org/t/retroarch-flatpak-starts-partially-on-the-wrong-monitor-frozen-solid/191248",
+   "source": "forummanjaro",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "2026-10-28 Stable update and encrypted partition",
+   "url": "https://forum.manjaro.org/t/2026-10-28-stable-update-and-encrypted-partition/191249",
    "source": "forummanjaro",
    "rank": 3,
    "score": 13,
@@ -606109,6 +607048,14 @@
   {
    "title": "Paradox Interactive names new CEO",
    "url": "https://www.gamedeveloper.com/business/paradox-interactive-names-a-new-ceo",
+   "source": "gamasutra",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "'It's common for there to be speculation and headlines:' Unity exec addresses acquisition rumors",
+   "url": "https://www.gamedeveloper.com/business/-it-s-common-for-there-to-be-speculation-and-headlines-unity-exec-addresses-acquisition-rumors",
    "source": "gamasutra",
    "rank": 1,
    "score": 15,
@@ -606491,6 +607438,14 @@
    "metric": "points"
   },
   {
+   "title": "Grazing sheep in fields with solar arrays",
+   "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+   "source": "hackernews",
+   "rank": 18,
+   "score": 63,
+   "metric": "points"
+  },
+  {
    "title": "Jensen Huang might return to Nvidia as CEO",
    "url": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/",
    "source": "hackernews",
@@ -606547,6 +607502,14 @@
    "metric": "points"
   },
   {
+   "title": "The Active Directory Era Is Finally Over",
+   "url": "https://infisical.com/blog/active-directory-machine-identity",
+   "source": "hackernews",
+   "rank": 19,
+   "score": 63,
+   "metric": "points"
+  },
+  {
    "title": "WebGL Flight Simulator with seed generated terrain",
    "url": "https://baron.by.dai.studio/",
    "source": "hackernews",
@@ -606600,6 +607563,14 @@
    "source": "hackernews",
    "rank": 20,
    "score": 58,
+   "metric": "points"
+  },
+  {
+   "title": "Show HN: ThingStudio, Node-RED style programming for microcontrollers",
+   "url": "https://thingstudio.net/",
+   "source": "hackernews",
+   "rank": 20,
+   "score": 35,
    "metric": "points"
   },
   {
@@ -606811,6 +607782,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Software is breaking down at a systemic level",
+   "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
+   "source": "hnrss",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "Jensen Huang might return to Nvidia as CEO",
    "url": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/",
    "source": "hnrss",
@@ -606877,6 +607856,14 @@
   {
    "title": "Show HN: Claimseed, synthetic Medicare docs with planted errors and answer keys",
    "url": "https://github.com/claimseed/claimseed",
+   "source": "hnrss",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Just 400 US Data Centers Use More Electricity Than Michigan",
+   "url": "https://www.wired.com/story/data-centers-use-more-electricity-than-michigan/",
    "source": "hnrss",
    "rank": 2,
    "score": 14,
@@ -607019,6 +608006,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Aristotle Expands into Rust",
+   "url": "https://www.harmonic.fun/news/aristotle-rust-verification/",
+   "source": "hnrss",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
    "title": "What's Next for Nvidia?",
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "hnrss",
@@ -607077,6 +608072,14 @@
   {
    "title": "Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence",
    "url": "https://news.ycombinator.com/item?id=50510042",
+   "source": "hnrss",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Frame – 31.5\" color ePaper display",
+   "url": "https://trmnl.com/blog/introducing-frame",
    "source": "hnrss",
    "rank": 9,
    "score": 7,
@@ -607627,6 +608630,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "INVO Fertility earnings beat by $0.16, revenue fell short of estimates",
+   "url": "https://www.investing.com/news/earnings/invo-fertility-earnings-beat-by-016-revenue-fell-short-of-estimates-5030689",
+   "source": "investing",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
    "title": "SK Hynix to spend $1 billion over five years to support chip suppliers",
    "url": "https://www.investing.com/news/stock-market-news/sk-hynix-to-spend-1-billion-over-five-years-to-support-chip-suppliers-5028220",
    "source": "investing",
@@ -607757,6 +608768,14 @@
   {
    "title": "Uranium Energy Corp stock hits 52-week low at 6.11 USD",
    "url": "https://www.investing.com/news/company-news/uranium-energy-corp-stock-hits-52week-low-at-611-usd-93CH-5030662",
+   "source": "investing",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Nvidia board not discussing Jensen Huang’s return as CEO, CNBC reports",
+   "url": "https://www.investing.com/news/stock-market-news/nvidia-board-not-discussing-jensen-huangs-return-as-ceo-cnbc-reports-5030688",
    "source": "investing",
    "rank": 3,
    "score": 8,
@@ -607907,6 +608926,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Banijay 9M 2026 slides: solid growth amid sports volatility, M&A on track",
+   "url": "https://www.investing.com/news/company-news/banijay-9m-2026-slides-solid-growth-amid-sports-volatility-ma-on-track-93CH-5030687",
+   "source": "investing",
+   "rank": 4,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
    "title": "Zimmer Biomet group president Kevin Thornal sells $528,978 in stock",
    "url": "https://www.investing.com/news/insider-trading-news/zimmer-biomet-group-president-kevin-thornal-sells-528978-in-stock-93CH-5028214",
    "source": "investing",
@@ -608051,6 +609078,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Somnigroup International stock hits 52-week low at 60.07 USD",
+   "url": "https://www.investing.com/news/company-news/somnigroup-international-stock-hits-52week-low-at-6007-usd-93CH-5030686",
+   "source": "investing",
+   "rank": 5,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
    "title": "OppFi CFO Pamela Johnson sells $69,365 in company shares",
    "url": "https://www.investing.com/news/insider-trading-news/oppfi-cfo-pamela-johnson-sells-69365-in-company-shares-93CH-5028212",
    "source": "investing",
@@ -608181,6 +609216,14 @@
   {
    "title": "B.Riley cuts Almonty Industries stock price target on Sangdong delays",
    "url": "https://www.investing.com/news/analyst-ratings/briley-cuts-almonty-industries-stock-price-target-on-sangdong-delays-93CH-5030657",
+   "source": "investing",
+   "rank": 6,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Altimeter Capital to invest $5 billion in Anthropic IPO - report",
+   "url": "https://www.investing.com/news/stock-market-news/altimeter-capital-to-invest-5-billion-in-anthropic-ipo--report-5030684",
    "source": "investing",
    "rank": 6,
    "score": 5,
@@ -608323,6 +609366,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Structure Therapeutics stock hits 52-week low at $18.68",
+   "url": "https://www.investing.com/news/company-news/structure-therapeutics-stock-hits-52week-low-at-1868-93CH-5030683",
+   "source": "investing",
+   "rank": 7,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
    "title": "Japan’s economy contracts annualised 0.1% in July-September",
    "url": "https://www.investing.com/news/economic-indicators/japans-economy-contracts-annualised-01-in-julyseptember-5028208",
    "source": "investing",
@@ -608445,6 +609496,14 @@
   {
    "title": "Minerva at Jefferies Global Healthcare Conference: roluperidone push advances",
    "url": "https://www.investing.com/news/transcripts/minerva-at-jefferies-global-healthcare-conference-roluperidone-push-advances-93CH-5030555",
+   "source": "investing",
+   "rank": 8,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Napco Security Technologies stock hits 52-week low at $29.35",
+   "url": "https://www.investing.com/news/company-news/napco-security-technologies-stock-hits-52week-low-at-2935-93CH-5030673",
    "source": "investing",
    "rank": 8,
    "score": 3,
@@ -608579,6 +609638,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "NKGen presents Alzheimer’s patient data at CTAD conference",
+   "url": "https://www.investing.com/news/company-news/nkgen-presents-alzheimers-patient-data-at-ctad-conference-93CH-5030672",
+   "source": "investing",
+   "rank": 9,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
    "title": "FleetPartners FY26 slides: core profit up 10%, EOL income pressured",
    "url": "https://www.investing.com/news/company-news/fleetpartners-fy26-slides-core-profit-up-10-eol-income-pressured-93CH-5028201",
    "source": "investing",
@@ -608707,6 +609774,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "IDEX at RBC Global Industrials Conference 2026: growth push gains speed",
+   "url": "https://www.investing.com/news/transcripts/idex-at-rbc-global-industrials-conference-2026-growth-push-gains-speed-93CH-5030671",
+   "source": "investing",
+   "rank": 10,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
    "title": "Documentation is now “Ask your AI”",
    "url": "https://itnext.io/documentation-is-now-ask-your-ai-832e7c701ce7?source=rss----5b301f10ddcd---4",
    "source": "itnext",
@@ -608725,6 +609800,14 @@
   {
    "title": "From Event Logs to GreptimeDB: How OpenAI’s Spark Observability Evolved at Hyperscale",
    "url": "https://itnext.io/from-event-logs-to-greptimedb-how-openais-spark-observability-evolved-at-hyperscale-0276d52b8d69?source=rss----5b301f10ddcd---4",
+   "source": "itnext",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "How to make technical decisions more objectively",
+   "url": "https://itnext.io/how-to-make-technical-decisions-more-objectively-1e08446ce989?source=rss----5b301f10ddcd---4",
    "source": "itnext",
    "rank": 1,
    "score": 10,
@@ -609707,6 +610790,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Eight Hacks Every Tidal User Should Know",
+   "url": "https://lifehacker.com/tech/hacks-every-tidal-user-should-known?utm_medium=RSS",
+   "source": "lifehacker",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "MacBooks, AirPods, iPads (and More) Are up to $250 Off in This Early Black Friday Sale",
    "url": "https://lifehacker.com/tech/apple-macbooks-airpods-sales-early-black-friday-2026?utm_medium=RSS",
    "source": "lifehacker",
@@ -610027,6 +611118,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Re: [PATCH 05/15] s390/cert_store: Unlink before invalidate in invalidate_keyring_keys()",
+   "url": "https://lore.kernel.org/all/avtOLkZ_7VhYXUlq@kernel.org/",
+   "source": "lorekernel",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "[PATCH nf-next,v8 6/7] netfilter: nfnetlink_queue: restrict upper verdict bitmask to queue and drop",
    "url": "https://lore.kernel.org/all/20261116003733.2820132-6-pablo@netfilter.org/",
    "source": "lorekernel",
@@ -610165,6 +611264,14 @@
   {
    "title": "Re: [PATCH v1 0/4] ACPI: Use named initializers for acpi_device_id arrays",
    "url": "https://lore.kernel.org/all/CAJZ5v0iSJVszOCLCuK+ifCzTgx1RgDAExaYUbij=jaWmaTsb8Q@mail.gmail.com/",
+   "source": "lorekernel",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[PATCH v6 17/17] x86/msr: Make all MSR access functions __always_inline",
+   "url": "https://lore.kernel.org/all/20261116183905.1591611-18-jgross@suse.com/",
    "source": "lorekernel",
    "rank": 2,
    "score": 14,
@@ -610315,6 +611422,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "[PATCH v6 16/17] x86/paravirt: Use alternatives for MSR access with paravirt",
+   "url": "https://lore.kernel.org/all/20261116183905.1591611-17-jgross@suse.com/",
+   "source": "lorekernel",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
    "title": "[PATCH nf-next,v8 4/7] netfilter: ctnetlink: restrict expectation creation glue to userspace helpers",
    "url": "https://lore.kernel.org/all/20261116003733.2820132-4-pablo@netfilter.org/",
    "source": "lorekernel",
@@ -610453,6 +611568,14 @@
   {
    "title": "Re: [PATCH v4] drm/xe: Remove unused xe_vm_restart and xe_vma_flush tracepoints",
    "url": "https://lore.kernel.org/all/CAFsBPPnsv2xbLXHQfM66h6RdK1+mGR91S=D86OzKzmds1cTPnA@mail.gmail.com/",
+   "source": "lorekernel",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[PATCH v6 15/17] x86/msr: Reduce number of low level MSR access helpers",
+   "url": "https://lore.kernel.org/all/20261116183905.1591611-16-jgross@suse.com/",
    "source": "lorekernel",
    "rank": 4,
    "score": 12,
@@ -610603,6 +611726,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "[PATCH v6 14/17] x86/paravirt: Switch MSR access pv_ops functions to instruction interfaces",
+   "url": "https://lore.kernel.org/all/20261116183905.1591611-15-jgross@suse.com/",
+   "source": "lorekernel",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
    "title": "[PATCH nf-next,v8 2/7] netfilter: nfnetlink_queue: add helper function to retrieve hook entries",
    "url": "https://lore.kernel.org/all/20261116003733.2820132-2-pablo@netfilter.org/",
    "source": "lorekernel",
@@ -610741,6 +611872,14 @@
   {
    "title": "[meta-multimedia][PATCH 1/2] libupnp: upgrade 1.14.31 -> 22.2.2",
    "url": "https://lore.kernel.org/all/20261116181458.351824-1-khem.raj@oss.qualcomm.com/",
+   "source": "lorekernel",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[PATCH v6 13/17] x86/paravirt: Prepare support of MSR instruction interfaces",
+   "url": "https://lore.kernel.org/all/20261116183905.1591611-14-jgross@suse.com/",
    "source": "lorekernel",
    "rank": 6,
    "score": 10,
@@ -610891,6 +612030,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "[PATCH v6 12/17] x86/paravirt: Split off MSR related hooks into new header",
+   "url": "https://lore.kernel.org/all/20261116183905.1591611-13-jgross@suse.com/",
+   "source": "lorekernel",
+   "rank": 7,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
    "title": "Re: [PATCH RFC 11/18] scsi: target: uring: Drop aborted commands that are still queued",
    "url": "https://lore.kernel.org/all/sashiko-outbox-215958@kernel.org/",
    "source": "lorekernel",
@@ -611029,6 +612176,14 @@
   {
    "title": "Re: [PATCH 2/2] firmware: arm_scmi: Fix SCMI Power Control driver removal",
    "url": "https://lore.kernel.org/all/20261116-merry-hypersonic-skink-91109c@sudeepholla/",
+   "source": "lorekernel",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Re: [PATCH v5 00/58] mtd: rawnand: retain chip and controller state across removal",
+   "url": "https://lore.kernel.org/all/CADvTj4pe5BLcsZg3WYCywTi91jiHMFVg26SPhP3Lk=8KQ=gbtw@mail.gmail.com/",
    "source": "lorekernel",
    "rank": 8,
    "score": 8,
@@ -611179,6 +612334,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Re: [PATCH v5 00/58] mtd: rawnand: retain chip and controller state across removal",
+   "url": "https://lore.kernel.org/all/CADvTj4pe5BLcsZg3WYCywTi91jiHMFVg26SPhP3Lk=8KQ=gbtw@mail.gmail.com/",
+   "source": "lorekernel",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
    "title": "[PATCH,v8 2/7] netfilter: nfnetlink_queue: add helper function to retrieve hook entries",
    "url": "https://lore.kernel.org/all/20261116003634.2819957-2-pablo@netfilter.org/",
    "source": "lorekernel",
@@ -611317,6 +612480,14 @@
   {
    "title": "[PATCH v2] x86/nsvm: Fix L2 VINTR intercept merging when only Xen intercepts L1",
    "url": "https://lore.kernel.org/all/62a5fa318da59de8a39b97c6fc7bc071d69cb483.1794845629.git.abdelkareem.abdelsaamad@citrix.com/",
+   "source": "lorekernel",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[PATCH v6 11/17] x86/alternatives: Add ALTERNATIVE_4()",
+   "url": "https://lore.kernel.org/all/20261116183905.1591611-12-jgross@suse.com/",
    "source": "lorekernel",
    "rank": 10,
    "score": 6,
@@ -611467,6 +612638,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Re: [PATCH v5 00/58] mtd: rawnand: retain chip and controller state across removal",
+   "url": "https://lore.kernel.org/all/CADvTj4pe5BLcsZg3WYCywTi91jiHMFVg26SPhP3Lk=8KQ=gbtw@mail.gmail.com/",
+   "source": "lorekernel",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
    "title": "Re: [PATCH net 3/3] net/mlx5: DR, Fix out-of-bounds write when sync to HW fails",
    "url": "https://lore.kernel.org/all/76da7f8a-7735-436c-9ee1-1198d7e98255@nvidia.com/",
    "source": "lorekernel",
@@ -611605,6 +612784,14 @@
   {
    "title": "Re: [PATCH 2/3] mm/memory: do not report OOM if insert_pfn() races a huge fault",
    "url": "https://lore.kernel.org/all/179485283354.482102.2633605640287961592.b4-reply@b4/",
+   "source": "lorekernel",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[PATCH v6 10/17] x86/msr: Use the alternatives mechanism for RDMSR",
+   "url": "https://lore.kernel.org/all/20261116183905.1591611-11-jgross@suse.com/",
    "source": "lorekernel",
    "rank": 12,
    "score": 4,
@@ -611755,6 +612942,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "[PATCH v6 09/17] x86/msr: Introduce sync_cpu_after_wrmsrns()",
+   "url": "https://lore.kernel.org/all/20261116183905.1591611-10-jgross@suse.com/",
+   "source": "lorekernel",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
    "title": "Re: [PATCH v2 6/8] dt-bindings: rtc: Add linux,wakeup-states",
    "url": "https://lore.kernel.org/all/sashiko-outbox-215957@kernel.org/",
    "source": "lorekernel",
@@ -611899,6 +613094,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Replication probe 2026-11-16T18:40Z",
+   "url": "https://lore.kernel.org/all/179485440050.2907093.3463813575368867206.replication-probe@kernel.org/",
+   "source": "lorekernel",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
    "title": "Re: [PATCH v2 6/8] dt-bindings: rtc: Add linux,wakeup-states",
    "url": "https://lore.kernel.org/all/sashiko-outbox-215957@kernel.org/",
    "source": "lorekernel",
@@ -612037,6 +613240,14 @@
   {
    "title": "Re: [PATCH ath-next] wifi: ath11k: don't create a duplicate peer on the same pdev",
    "url": "https://lore.kernel.org/all/9744CE3F-114F-4A08-9A3D-E39DA7D06E1F@sunydutchess.edu/",
+   "source": "lorekernel",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "[PATCH v6 08/17] x86/msr: Make wrmsrns() a first class citizen",
+   "url": "https://lore.kernel.org/all/20261116183905.1591611-9-jgross@suse.com/",
    "source": "lorekernel",
    "rank": 15,
    "score": 1,
@@ -612659,6 +613870,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "BOGO Picklewiches at Jimmy John’s on November 14th!",
+   "url": "https://moneysavingmom.com/bogo-picklewiches-at-jimmy-johns-on-november-14th/",
+   "source": "moneysavingmom",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "*HOT* 40% off Matching Pajamas for the Family at Target: $6 MicroFleece Holiday Pants, plus more!",
    "url": "https://moneysavingmom.com/up-to-40-off-pajamas-for-the-family-at-target/",
    "source": "moneysavingmom",
@@ -612701,6 +613920,14 @@
   {
    "title": "*HOT* ULTA Beauty Boxes only $20.24 each, shipped!",
    "url": "https://moneysavingmom.com/hot-ulta-caboodles-58-piece-beauty-box-deal/",
+   "source": "moneysavingmom",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Walmart: Get FREE Golden Star Jasmine Rice after cash back!",
+   "url": "https://moneysavingmom.com/walmart-get-free-golden-star-jasmine-rice-after-cash-back/",
    "source": "moneysavingmom",
    "rank": 2,
    "score": 14,
@@ -622109,6 +623336,14 @@
   {
    "title": "🧯 \"The invariable mark of wisdom is to see the miraculous in the common.\" - Ralph Waldo Emerson",
    "url": "https://buttondown.com/cassidoo/archive/u1f9ef-the-invariable-mark-of-wisdom-is-to-see-the/",
+   "source": "nl_rendezvous_with_cassidoo",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "🧯 \"The invariable mark of wisdom is to see the miraculous in the common.\" - Ralph Waldo Emerson",
+   "url": "https://cassidoo.co/newsletter/2026-11-15/",
    "source": "nl_rendezvous_with_cassidoo",
    "rank": 1,
    "score": 15,
@@ -637691,6 +638926,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Protecting forests outside parks benefits the birds within",
+   "url": "https://phys.org/news/2026-11-forests-benefits-birds.html",
+   "source": "phys",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "School environment plays key role in shaping parents' educational hopes for their children, suggests study",
    "url": "https://phys.org/news/2026-11-school-environment-plays-key-role.html",
    "source": "phys",
@@ -637771,6 +639014,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "City crows and country crows don't see the world the same way",
+   "url": "https://phys.org/news/2026-11-city-crows-country-dont-world.html",
+   "source": "phys",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
    "title": "Archaeologists uncover a witness to the Neolithic revolution",
    "url": "https://phys.org/news/2026-11-archaeologists-uncover-witness-neolithic-revolution.html",
    "source": "phys",
@@ -637819,6 +639070,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "From 400 miles above Earth, AI tracks invasive leafy spurge",
+   "url": "https://phys.org/news/2026-11-miles-earth-ai-tracks-invasive.html",
+   "source": "phys",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
    "title": "Was a kinder fate possible for Marineland's animals? How the planning process failed them",
    "url": "https://phys.org/news/2026-11-kinder-fate-marineland-animals.html",
    "source": "phys",
@@ -637837,6 +639096,14 @@
   {
    "title": "Deadly virus reduces tree frog population by 83% in Atlantic Forest reserve",
    "url": "https://phys.org/news/2026-11-deadly-virus-tree-frog-population.html",
+   "source": "phys",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Ancient tree rings and ice cores help pin down when Babylonia fell",
+   "url": "https://phys.org/news/2026-11-ancient-tree-ice-cores-pin.html",
    "source": "phys",
    "rank": 4,
    "score": 12,
@@ -637979,6 +639246,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Gleam’s Interoperability with Erlang and Elixir - Raúl Chouza | Erlang Solutions Webinar",
+   "url": "https://www.youtube.com/watch?v=63Z2oNW1Bf4",
+   "source": "planeterlang",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
    "title": "Fedora Badges: New badge: Fedora 50 CoreOS Test Day !",
    "url": "https://badges.fedoraproject.org/badge/fedora-50-coreos-test-day",
    "source": "planetfedora",
@@ -637989,6 +639264,14 @@
   {
    "title": "Fedora Magazine: Dictate into any app on Fedora with TuxTalk",
    "url": "https://fedoramagazine.org/dictate-into-any-app-on-fedora-with-tuxtalk/",
+   "source": "planetfedora",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Aurélien Bompard: From November 09 to November 15",
+   "url": "https://abompard.fedorapeople.org/twif/2026/11-09-to-11-15/",
    "source": "planetfedora",
    "rank": 2,
    "score": 14,
@@ -638563,6 +639846,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "XTM Transifex sponsors Python’s documentation translations",
+   "url": "https://blog.python.org/2026/11/transifex-sponsors-python-docs/",
+   "source": "pythonblog",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "PyTorch Foundation Ambassador Community Highlights November 2026",
    "url": "https://pytorch.org/blog/pytorch-ambassador-community-highlights-november-2026/",
    "source": "pytorch",
@@ -638683,6 +639974,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Survey of 268 early-career mathematicians: 7 in 10 say AI has made them less likely to stay in math",
+   "url": "https://www.reddit.com/r/artificial/comments/1xxqt45/survey_of_268_earlycareer_mathematicians_7_in_10/",
+   "source": "rartificial",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "built a fact-checker that catches politicians lying in real-time",
    "url": "https://rss2json.com/to/sZhTX9RpkOWASy5tXMkX0KXxQQ",
    "source": "rartificial",
@@ -638739,6 +640038,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Would you let an AI agent keep retrying while you're asleep?",
+   "url": "https://www.reddit.com/r/artificial/comments/1xxt4yh/would_you_let_an_ai_agent_keep_retrying_while/",
+   "source": "rartificial",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
    "title": "AI cheating scandal spooks South Korea ahead of high-stakes college entrance exam",
    "url": "https://www.reddit.com/r/artificial/comments/1xxl8ho/ai_cheating_scandal_spooks_south_korea_ahead_of/",
    "source": "rartificial",
@@ -638752,6 +640059,14 @@
    "source": "rartificial",
    "rank": 6,
    "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "I’ve been running a persistent world where four LLMs from rival labs live with no goal, since April 2026",
+   "url": "https://www.reddit.com/r/artificial/comments/1xxkngu/ive_been_running_a_persistent_world_where_four/",
+   "source": "rartificial",
+   "rank": 6,
+   "score": 10,
    "metric": "feed rank"
   },
   {
@@ -638819,8 +640134,24 @@
    "metric": "feed rank"
   },
   {
+   "title": "What you want from a conscious AI is what you never got from people",
+   "url": "https://www.reddit.com/r/artificial/comments/1xxv2yy/what_you_want_from_a_conscious_ai_is_what_you/",
+   "source": "rartificial",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
    "title": "Humanity's future after cognitive offloading",
    "url": "https://www.reddit.com/r/artificial/comments/1xxmym6/humanitys_future_after_cognitive_offloading/",
+   "source": "rartificial",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Chatgpt Plus vs Claude Pro usage limits",
+   "url": "https://www.reddit.com/r/artificial/comments/1xxtogi/chatgpt_plus_vs_claude_pro_usage_limits/",
    "source": "rartificial",
    "rank": 12,
    "score": 4,
@@ -639109,6 +640440,14 @@
   {
    "title": "Best .net educator",
    "url": "https://www.reddit.com/r/dotnet/comments/1xxjcgo/best_net_educator/",
+   "source": "rdotnet",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": ".NET 11 won't start on CPUs below x86-64-v2, and you won't get a compiler warning",
+   "url": "https://www.reddit.com/r/dotnet/comments/1xxwszu/net_11_wont_start_on_cpus_below_x8664v2_and_you/",
    "source": "rdotnet",
    "rank": 2,
    "score": 14,
@@ -639579,6 +640918,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Flashwright: the fastest e2e testing framework, up to 4x faster than Playwright",
+   "url": "https://www.reddit.com/r/javascript/comments/1xxs9yl/flashwright_the_fastest_e2e_testing_framework_up/",
+   "source": "rjavascript",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
    "title": "Fetching remote config in Kotlin with OkHttp: callTimeout, ETags, and a fallback that never caches garbage",
    "url": "https://www.reddit.com/r/Kotlin/comments/1xx8pv2/fetching_remote_config_in_kotlin_with_okhttp/",
    "source": "rkotlin",
@@ -639669,6 +641016,14 @@
   {
    "title": "mnapoli/backoffice-mcp: Give AI agents access to your app's models for admin and support tasks",
    "url": "https://www.reddit.com/r/laravel/comments/1xx65zd/mnapolibackofficemcp_give_ai_agents_access_to/",
+   "source": "rlaravel",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Release SimpleStats 6.0 - now counts page views server-side: bounce rate and views per visitor next to your signups and revenue",
+   "url": "https://www.reddit.com/r/laravel/comments/1xxw32n/release_simplestats_60_now_counts_page_views/",
    "source": "rlaravel",
    "rank": 3,
    "score": 13,
@@ -639779,6 +641134,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Cms with next.js?",
+   "url": "https://www.reddit.com/r/nextjs/comments/1xxt17a/cms_with_nextjs/",
+   "source": "rnextjs",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
    "title": "The future of Software Engineering is boring",
    "url": "https://www.reddit.com/r/node/comments/1xxlr8v/the_future_of_software_engineering_is_boring/",
    "source": "rnode",
@@ -639883,6 +641246,22 @@
    "metric": "feed rank"
   },
   {
+   "title": "I built Phoxite, a free, open-source PHP/Laravel language server written in Rust (VS Code, Neovim, Helix, Zed…)",
+   "url": "https://www.reddit.com/r/PHP/comments/1xxv4np/i_built_phoxite_a_free_opensource_phplaravel/",
+   "source": "rphp",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dr. Ibrar Ahmed on When Postgres Breaks: A Practical Guide to Corruption and Disaster Recovery - Free Online Webinar 11/19 8AM PST",
+   "url": "https://www.reddit.com/r/PostgreSQL/comments/1xxt65o/dr_ibrar_ahmed_on_when_postgres_breaks_a/",
+   "source": "rpostgresql",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
    "title": "Ring programming language version 1.28 is released!",
    "url": "https://www.reddit.com/r/programming/comments/1xxmn7s/ring_programming_language_version_128_is_released/",
    "source": "rprogramming",
@@ -639899,6 +641278,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Learning to Code in 2026: The Data",
+   "url": "https://www.reddit.com/r/programming/comments/1xxu86p/learning_to_code_in_2026_the_data/",
+   "source": "rprogramming",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
    "title": "When Good Practices Become Empty Rituals",
    "url": "https://www.reddit.com/r/programming/comments/1xxm6d1/when_good_practices_become_empty_rituals/",
    "source": "rprogramming",
@@ -639909,6 +641296,14 @@
   {
    "title": "How JavaScript and Python actually run your code",
    "url": "https://www.reddit.com/r/programming/comments/1xxk3zb/how_javascript_and_python_actually_run_your_code/",
+   "source": "rprogramming",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Introducing the World's Strongest Sokoban Solver",
+   "url": "https://www.reddit.com/r/programming/comments/1xxw6xh/introducing_the_worlds_strongest_sokoban_solver/",
    "source": "rprogramming",
    "rank": 5,
    "score": 11,
@@ -639952,6 +641347,22 @@
    "source": "rprogramming",
    "rank": 10,
    "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Do Repeat Yourself",
+   "url": "https://www.reddit.com/r/programming/comments/1xxu2yo/do_repeat_yourself/",
+   "source": "rprogramming",
+   "rank": 12,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Publishing the Python wheels PyPI is missing: each built twice from the sdist, released only if the builds are byte-identical",
+   "url": "https://www.reddit.com/r/programming/comments/1xxvugz/publishing_the_python_wheels_pypi_is_missing_each/",
+   "source": "rprogramming",
+   "rank": 15,
+   "score": 1,
    "metric": "feed rank"
   },
   {
@@ -640187,11 +641598,27 @@
    "metric": "feed rank"
   },
   {
+   "title": "Sniffnet: open-source network traffic monitor (now with support for routers, firewalls, servers)",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xxrxlg/sniffnet_opensource_network_traffic_monitor_now/",
+   "source": "rselfhosted",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
    "title": "Any blind self hosters?",
    "url": "https://www.reddit.com/r/selfhosted/comments/1xxkxps/any_blind_self_hosters/",
    "source": "rselfhosted",
    "rank": 5,
    "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Self-hosting Git with Forgejo while benefiting from GitHub's community — how do you manage both?",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xxtro7/selfhosting_git_with_forgejo_while_benefiting/",
+   "source": "rselfhosted",
+   "rank": 6,
+   "score": 10,
    "metric": "feed rank"
   },
   {
@@ -640259,6 +641686,22 @@
    "metric": "feed rank"
   },
   {
+   "title": "Do I need to start over?",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xxsv5f/do_i_need_to_start_over/",
+   "source": "rselfhosted",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Selfhosted price tracker",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xxwpy6/selfhosted_price_tracker/",
+   "source": "rselfhosted",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
    "title": "[ Removed by Reddit ]",
    "url": "https://www.reddit.com/r/selfhosted/comments/1xxb9ib/removed_by_reddit/",
    "source": "rselfhosted",
@@ -640280,6 +641723,22 @@
    "source": "rselfhosted",
    "rank": 13,
    "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "What's the best way to build an all-in-one Jellyfin setup with local media, Stremio, and Live TV",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xxwsrs/whats_the_best_way_to_build_an_allinone_jellyfin/",
+   "source": "rselfhosted",
+   "rank": 14,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Dispatcharr Multistreaming",
+   "url": "https://www.reddit.com/r/selfhosted/comments/1xxubd8/dispatcharr_multistreaming/",
+   "source": "rselfhosted",
+   "rank": 15,
+   "score": 1,
    "metric": "feed rank"
   },
   {
@@ -640467,6 +641926,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Is noone reporting another MS service degradation or is it just isolated now?",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xxuosg/is_noone_reporting_another_ms_service_degradation/",
+   "source": "rsysadmin",
+   "rank": 6,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
    "title": "Windows 11 is getting Remote Lock via custom Intune OMA-URI (RemoteDeviceLock CSP) without needing a full wipe",
    "url": "https://www.reddit.com/r/sysadmin/comments/1xxb34o/windows_11_is_getting_remote_lock_via_custom/",
    "source": "rsysadmin",
@@ -640515,6 +641982,22 @@
    "metric": "feed rank"
   },
   {
+   "title": "Microsoft outage causing shared inbox issues",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xxw1e1/microsoft_outage_causing_shared_inbox_issues/",
+   "source": "rsysadmin",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Windows Server 2016 RDP stops working after KB5131291 - anyone else seeing this? Reminding me of the September update symptoms",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xxsb9y/windows_server_2016_rdp_stops_working_after/",
+   "source": "rsysadmin",
+   "rank": 10,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
    "title": "exchange mail groups not appearing on classic outlook",
    "url": "https://www.reddit.com/r/sysadmin/comments/1xxmgf6/exchange_mail_groups_not_appearing_on_classic/",
    "source": "rsysadmin",
@@ -640531,6 +642014,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Teams Room Devices, who's your manufacturer?",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xxx7rq/teams_room_devices_whos_your_manufacturer/",
+   "source": "rsysadmin",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
    "title": "Latest Android update for Pixel phones breaks WPA enterprise with \"do not validate\" option",
    "url": "https://www.reddit.com/r/sysadmin/comments/1xxk59f/latest_android_update_for_pixel_phones_breaks_wpa/",
    "source": "rsysadmin",
@@ -640541,6 +642032,14 @@
   {
    "title": "kb5131291 bsod server 2016",
    "url": "https://www.reddit.com/r/sysadmin/comments/1xxni7x/kb5131291_bsod_server_2016/",
+   "source": "rsysadmin",
+   "rank": 13,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Mac OS management (MDM) for small team. Where do we start?",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xxtquv/mac_os_management_mdm_for_small_team_where_do_we/",
    "source": "rsysadmin",
    "rank": 13,
    "score": 3,
@@ -640565,6 +642064,14 @@
   {
    "title": "Office 365 to Office 365 migration.",
    "url": "https://www.reddit.com/r/sysadmin/comments/1xxlga3/office_365_to_office_365_migration/",
+   "source": "rsysadmin",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "SSRS failure with windows update fix..",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1xxsk1h/ssrs_failure_with_windows_update_fix/",
    "source": "rsysadmin",
    "rank": 15,
    "score": 1,
@@ -640899,6 +642406,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Your Spouse Dies and Their Phone Number Gets Reassigned — Why Your Financial Accounts Could Be at Risk",
+   "url": "https://www.savingadvice.com/articles/2026/11/16/10769763_your-spouse-dies-and-their-phone-number-gets-reassigned-why-your-financial-accounts-could-be-at-risk.html",
+   "source": "savingadvice",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
    "title": "Your Medicare Plan Stops Covering a Specialist — Can You Keep Seeing the Same Doctor?",
    "url": "https://www.savingadvice.com/articles/2026/11/15/10769706_your-medicare-plan-stops-covering-a-specialist-can-you-keep-seeing-the-same-doctor.html",
    "source": "savingadvice",
@@ -640992,6 +642507,14 @@
    "source": "scripting",
    "rank": 2,
    "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "4 ways Search can help with your holiday plans",
+   "url": "https://blog.google/products-and-platforms/products/search/holiday-prep-search-2026/",
+   "source": "searchgoogleblog",
+   "rank": 1,
+   "score": 15,
    "metric": "feed rank"
   },
   {
@@ -643659,6 +645182,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Jon Penney Delivers Testimony to the House of Commons Sub-Committee on International Human Rights",
+   "url": "https://citizenlab.ca/jon-penney-delivers-testimony-to-the-house-of-commons-sub-committee-on-international-human-rights/",
+   "source": "sec_citizen_lab",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
    "title": "Citizen Lab Researchers Win IRTF Applied Networking Research Prize",
    "url": "https://citizenlab.ca/citizen-lab-researchers-win-irtf-applied-networking-research-prize/",
    "source": "sec_citizen_lab",
@@ -645957,6 +647488,14 @@
   {
    "title": "New Google AdMob AI tools help app creators build, fix, and grow faster",
    "url": "https://blog.google/products/publisher-connections/new-google-admob-tools/",
+   "source": "sec_google_threat_analysis_group",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The era of autonomous attacks has arrived.",
+   "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gtig-ai-threat-tracker-q4-2026/",
    "source": "sec_google_threat_analysis_group",
    "rank": 1,
    "score": 15,
@@ -652779,6 +654318,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Italian regulator fines Meta $886 million for violating data privacy law",
+   "url": "https://therecord.media/italian-regulator-fines-meta-886-million-privacy",
+   "source": "sec_the_record",
+   "rank": 1,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
    "title": "City of Osaka warns of data breach impacting 1 million as Japan reels from dozens of cyber incidents",
    "url": "https://therecord.media/city-of-osaka-japan-email-data-breach",
    "source": "sec_the_record",
@@ -652917,6 +654464,14 @@
   {
    "title": "Ubuntu gets AI-generated security fixes for those feeling brave",
    "url": "https://www.theregister.com/os-platforms/2026/11/16/ubuntu-gets-ai-generated-security-fixes-for-those-feeling-brave/5310139",
+   "source": "sec_the_register",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
+   "title": "NoisyTCP bug gives Linux servers a remote crash problem 11 years in the making",
+   "url": "https://www.theregister.com/security/2026/11/16/noisytcp-bug-gives-linux-servers-a-remote-crash-problem-11-years-in-the-making/5310144",
    "source": "sec_the_register",
    "rank": 1,
    "score": 15,
@@ -654115,6 +655670,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "The iPhone Duo Is Getting a Limited Version of Face ID",
+   "url": "https://www.wired.com/story/iphone-duo-is-getting-a-limited-version-of-face-id/",
+   "source": "sec_wired",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "AI DJs Completely Kill My Groove",
    "url": "https://www.wired.com/story/ai-djs-completely-kill-my-groove/",
    "source": "sec_wired",
@@ -654419,6 +655982,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Your Samsung phone could soon get a personal AI agent – what we know about Galaxy Claw",
+   "url": "https://www.zdnet.com/innovation/samsung-galaxy-claw-ai-cross-app-upgrade/",
+   "source": "sec_zdnet",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "4 ways Anthropic’s new Claude Sheets beat using a Google Sheets connector in my tests",
    "url": "https://www.zdnet.com/innovation/claude-sheets-review-ai-spreadsheet-tool/",
    "source": "sec_zdnet",
@@ -654437,6 +656008,14 @@
   {
    "title": "This mini PC from ACEMAGIC is 20% off on Amazon right now – get the deal",
    "url": "https://www.zdnet.com/tech/this-mini-pc-from-acemagic-is-20-off-on-amazon-right-now-get-the-deal/",
+   "source": "sec_zdnet",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
+   "title": "The AirPods Pro 3 are back down to $179 – close to the lowest price of the year",
+   "url": "https://www.zdnet.com/tech/apple-airpods-pro-3-black-friday-deal/",
    "source": "sec_zdnet",
    "rank": 2,
    "score": 14,
@@ -654467,8 +656046,24 @@
    "metric": "feed rank"
   },
   {
+   "title": "4 new Google Maps features to try on your next holiday road trip",
+   "url": "https://www.zdnet.com/tech/google-ask-maps-new-features-holiday-travel/",
+   "source": "sec_zdnet",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
    "title": "Best early Black Friday Costco deals: Up to 44% off TVs, laptops, and more",
    "url": "https://www.zdnet.com/home-and-office/best-early-black-friday-costco-deals-2026/",
+   "source": "sec_zdnet",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Microsoft blames major outage on a July update defect – and two other factors",
+   "url": "https://www.zdnet.com/business/microsoft-outage-outlook-teams-copilot/",
    "source": "sec_zdnet",
    "rank": 4,
    "score": 12,
@@ -654939,6 +656534,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Vycor Medical GAAP EPS of $0.00, revenue of $0.41M",
+   "url": "https://seekingalpha.com/news/4673211-vycor-medical-gaap-eps-of-0_00-revenue-of-0_41m?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+   "source": "seekingalpha",
+   "rank": 1,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
    "title": "Oil stabilizes as Middle East attacks offset supply surplus",
    "url": "https://seekingalpha.com/news/4672815-oil-stabilizes-as-middle-east-attacks-offset-supply-surplus?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
    "source": "seekingalpha",
@@ -655061,6 +656664,14 @@
   {
    "title": "Computer Modelling GAAP EPS of C$0.01, revenue of C$29.27M",
    "url": "https://seekingalpha.com/news/4673197-computer-modelling-gaap-eps-of-c001-revenue-of-c2927m?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+   "source": "seekingalpha",
+   "rank": 2,
+   "score": 6,
+   "metric": "feed rank"
+  },
+  {
+   "title": "GreenPower Motor GAAP EPS of -$1.64, revenue of $2.55M",
+   "url": "https://seekingalpha.com/news/4673209-greenpower-motor-gaap-eps-of-1_64-revenue-of-2_55m?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
    "source": "seekingalpha",
    "rank": 2,
    "score": 6,
@@ -655195,6 +656806,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "LG Display GAAP EPS of ₩1493.00, revenue of ₩6074B",
+   "url": "https://seekingalpha.com/news/4673208-lg-display-gaap-eps-of-149300-revenue-of-6074b?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+   "source": "seekingalpha",
+   "rank": 3,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
    "title": "Malaga Financial declares $0.25 quarterly cash dividend and 5% special stock dividend",
    "url": "https://seekingalpha.com/news/4672822-malaga-financial-declares-025-quarterly-cash-dividend-and-5-special-stock-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
    "source": "seekingalpha",
@@ -655299,6 +656918,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Lucara outlines $140M-$160M 2026 revenue guidance as it targets kimberlite access in Q1 2027",
+   "url": "https://seekingalpha.com/news/4673207-lucara-outlines-140m-160m-2026-revenue-guidance-as-it-targets-kimberlite-access-in-q1-2027?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+   "source": "seekingalpha",
+   "rank": 4,
+   "score": 4,
+   "metric": "feed rank"
+  },
+  {
    "title": "Monday's Economic Calendar",
    "url": "https://seekingalpha.com/news/4672757-mondays-economic-calendar?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
    "source": "seekingalpha",
@@ -655395,6 +657022,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "American is expected to take the biggest hit from the weekend FAA disruption",
+   "url": "https://seekingalpha.com/news/4673206-american-is-expected-to-take-the-biggest-hit-from-the-weekend-faa-disruption?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+   "source": "seekingalpha",
+   "rank": 5,
+   "score": 3,
+   "metric": "feed rank"
+  },
+  {
    "title": "China's October retail sales ease to 0.4%, factory output slows to 4.8%, while jobless rate dips to 5.1%",
    "url": "https://seekingalpha.com/news/4672826-china-october-retail-sales-ease-to-04-factory-output-slows-to-48-while-jobless-rate-dips-to-51?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
    "source": "seekingalpha",
@@ -655483,6 +657118,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Galectin Therapeutics GAAP EPS of -$0.04 beats by $0.01",
+   "url": "https://seekingalpha.com/news/4673203-galectin-therapeutics-gaap-eps-of-0_04-beats-by-0_01?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+   "source": "seekingalpha",
+   "rank": 6,
+   "score": 2,
+   "metric": "feed rank"
+  },
+  {
    "title": "Japan’s economy contracts 0.1% annualized in Q3; September industrial output rebounds 2.0%",
    "url": "https://seekingalpha.com/news/4672825-japans-economy-contracts-01-annualized-in-q3-september-industrial-output-rebounds-20?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
    "source": "seekingalpha",
@@ -655557,6 +657200,14 @@
   {
    "title": "Table Trac GAAP EPS of $0.01, revenue of $2.41M",
    "url": "https://seekingalpha.com/news/4673191-table-trac-gaap-eps-of-0_01-revenue-of-2_41m?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+   "source": "seekingalpha",
+   "rank": 7,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Exxon starts production at fifth Guyana offshore project, lifting Stabroek capacity to 1.1M bbl/day",
+   "url": "https://seekingalpha.com/news/4673194-exxon-starts-production-at-fifth-guyana-offshore-project-lifting-stabroek-capacity-to-11m-bblday?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
    "source": "seekingalpha",
    "rank": 7,
    "score": 1,
@@ -655725,6 +657376,14 @@
   {
    "title": "Show HN: CoderBaba – An open-source AI Coding Agent with security scanning",
    "url": "https://coderbaba.si",
+   "source": "show_hn",
+   "rank": 3,
+   "score": 3,
+   "metric": "points"
+  },
+  {
+   "title": "Show HN: A booking page that handles payment and sends a Zoom/Meet/Discord link",
+   "url": "https://news.ycombinator.com/item?id=50520744",
    "source": "show_hn",
    "rank": 3,
    "score": 3,
@@ -656003,6 +657662,14 @@
    "metric": "points"
   },
   {
+   "title": "Show HN: Treestamp – An editor for project directory trees",
+   "url": "https://treestamp.reponomics.org",
+   "source": "show_hn",
+   "rank": 10,
+   "score": 2,
+   "metric": "points"
+  },
+  {
    "title": "Show HN: Anarchy Chess",
    "url": "https://dawnofthe.dad/anarchy-chess",
    "source": "show_hn",
@@ -656053,6 +657720,14 @@
   {
    "title": "Show HN: DockShip42, small browser game to land Starship",
    "url": "https://www.dockship42.com",
+   "source": "show_hn",
+   "rank": 11,
+   "score": 2,
+   "metric": "points"
+  },
+  {
+   "title": "Show HN: Fakemetrics.com – \"build in public\" like a superstar",
+   "url": "https://fakemetrics.com/",
    "source": "show_hn",
    "rank": 11,
    "score": 2,
@@ -656157,6 +657832,14 @@
   {
    "title": "Show HN: Torsher – a Jellyfin and *ARR alternative in one Docker container",
    "url": "https://torsher.app/demo/tv/",
+   "source": "show_hn",
+   "rank": 12,
+   "score": 2,
+   "metric": "points"
+  },
+  {
+   "title": "Show HN: Acutis Firewall – free, open-source parental control for Android",
+   "url": "https://acutis.castillo.sh/",
    "source": "show_hn",
    "rank": 12,
    "score": 2,
@@ -674523,6 +676206,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Tesla goes all-in on the Cybercab with upcoming €3B Berlin Gigafactory expansion",
+   "url": "https://techcrunch.com/2026/11/16/tesla-goes-all-in-on-the-cybercab-with-upcoming-e3b-berlin-gigafactory-expansion/",
+   "source": "techcrunch",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "Zoox robotaxis are now on the Uber app in Las Vegas",
    "url": "https://techcrunch.com/2026/11/16/zoox-robotaxis-are-now-on-the-uber-app-in-las-vegas/",
    "source": "techcrunch",
@@ -675179,6 +676870,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "DuckDB just shipped its biggest release ever. Its own team says not to run it in production just yet.",
+   "url": "https://thenewstack.io/duckdb-storage-compatibility-agents/",
+   "source": "thenewstack",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "With Qwen4-Max, Alibaba puts the open source jacket back on the hanger",
    "url": "https://thenewstack.io/qwen4-max-alibaba-open-weights/",
    "source": "thenewstack",
@@ -675259,6 +676958,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "OpenAI lets Apollo embed six AI safety testers during training",
+   "url": "https://thenextweb.com/news/apollo-research-openai-embedded-evaluations-pilot",
+   "source": "thenextweb",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
    "title": "Cassava and Graphiant reportedly plan quantum-safe networks for Africa",
    "url": "https://thenextweb.com/news/cassava-and-graphiant-reportedly-plan-quantum-safe-networks-for-africa",
    "source": "thenextweb",
@@ -675307,6 +677014,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Stanford professors’ AI lab Noeri launches with $110m, backed by Nvidia",
+   "url": "https://thenextweb.com/news/noeri-110m-stanford-yejin-choi-carlos-guestrin-menlo-nvidia",
+   "source": "thenextweb",
+   "rank": 2,
+   "score": 9,
+   "metric": "feed rank"
+  },
+  {
    "title": "Alibaba launches Qwen4-Max flagship AI model without open weights",
    "url": "https://thenextweb.com/news/alibaba-launches-qwen4-max-flagship-ai-model-without-open-weights",
    "source": "thenextweb",
@@ -675333,6 +677048,14 @@
   {
    "title": "Nokia, Telia, Verda, Nscale and Skeleton team up for EU AI gigafactory bid",
    "url": "https://thenextweb.com/news/ai-gigafactory-northern-nokia-nscale-telia-verda-skeleton",
+   "source": "thenextweb",
+   "rank": 3,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
+   "title": "OpenAI widens free ChatGPT for researchers but swaps Pro for Plus",
+   "url": "https://thenextweb.com/news/openai-chatgpt-academic-researchers-50000-grants-plus",
    "source": "thenextweb",
    "rank": 3,
    "score": 8,
@@ -675467,6 +677190,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Ubuntu gets AI-generated security fixes for those feeling brave",
+   "url": "https://www.theregister.com/os-platforms/2026/11/16/ubuntu-gets-ai-generated-security-fixes-for-those-feeling-brave/5310139",
+   "source": "theregister",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "Microsoft’s Azure Linux dons Fedora to dress itself up for mainstream workloads",
    "url": "https://www.theregister.com/os-platforms/2026/11/16/microsofts-azure-linux-dons-fedora-to-dress-itself-up-for-mainstream-workloads/5310016",
    "source": "theregister",
@@ -675491,6 +677222,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Microsoft fixes Windows activation as admins pick through Exchange outage wreckage",
+   "url": "https://www.theregister.com/software/2026/11/16/microsoft-fixes-windows-activation-as-admins-pick-through-exchange-outage-wreckage/5310102",
+   "source": "theregister",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
    "title": "Amazon loses first batch of broadband satellites launched on custom rocket",
    "url": "https://www.theregister.com/networks/2026/11/16/amazon-loses-first-batch-of-broadband-satellites-launched-on-custom-rocket/5310000",
    "source": "theregister",
@@ -675507,6 +677246,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Crook turns free trials into phishing factory, as LearnWorlds sends 13,000 fake YouTube copyright notices",
+   "url": "https://www.theregister.com/security/2026/11/16/crook-turns-free-trials-into-phishing-factory-as-learnworlds-sends-13000-fake-youtube-copyright-notices/5310122",
+   "source": "theregister",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
    "title": "Google: AI agent turned a security patch into a working exploit with no human help",
    "url": "https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926",
    "source": "theregister",
@@ -675517,6 +677264,14 @@
   {
    "title": "Marvell and Penguin Solutions aim to end the RAMpocalypse with photonic memory fabric",
    "url": "https://www.theregister.com/systems/2026/11/16/marvell-and-penguin-solutions-aim-to-end-the-rampocalypse-with-photonic-memory-fabric/5309921",
+   "source": "theregister",
+   "rank": 5,
+   "score": 11,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Has AI’s ‘Black October’ changed the way you secure your code?",
+   "url": "https://www.theregister.com/security/2026/11/16/partner-content-has-ais-black-october-changed-the-way-you-secure-your-code/5309775",
    "source": "theregister",
    "rank": 5,
    "score": 11,
@@ -675645,6 +677400,14 @@
   {
    "title": "Sony’s PlayStation 5 accessories are cheaper ahead of Black Friday",
    "url": "https://www.theverge.com/gadgets/1034178/sony-playstation-5-ps5-accessories-monitor-dualsense-headset-deal-sale",
+   "source": "theverge",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
+   "title": "15 hotel guests were injured by chlorine poisoning due to Microsoft’s global email outage",
+   "url": "https://www.theverge.com/tech/1034538/microsoft-365-outlook-outage-hotel-chlorine-poisoning",
    "source": "theverge",
    "rank": 1,
    "score": 10,
@@ -675955,6 +677718,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "'Spent lakhs on a US master's, graduated with a 3.9 GPA, and still had to return to India': 26-year-old man earning Rs 9LPA asks, 'Did I not try hard enough'",
+   "url": "https://timesofindia.indiatimes.com/world/us/spent-lakhs-on-a-us-masters-graduated-with-a-3-9-gpa-and-still-had-to-return-to-india-26-year-old-man-earning-rs-9lpa-asks-did-i-not-try-hard-enough/articleshow/135899592.cms",
+   "source": "timesofindia",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "'Perfectly safe' but not 'maxed out'? Trump takes Qatar jet to Asia",
    "url": "https://timesofindia.indiatimes.com/world/us/perfectly-safe-but-not-maxed-out-trump-takes-qatar-gifted-jet-to-asia/articleshow/135869574.cms",
    "source": "timesofindia",
@@ -676067,6 +677838,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "NBA star Baron Davis seeks dismissal of sister's California home lawsuit",
+   "url": "https://timesofindia.indiatimes.com/world/us/nba-star-baron-davis-sister-claims-he-sold-a-california-home-he-promised-her-after-she-spent-her-savings-renovating-it-he-is-now-asking-a-court-to-dismiss-her-lawsuit/articleshow/135886672.cms",
+   "source": "timesofindia",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
    "title": "Megaspeed says Alice Huang left in 2025 as company conducts internal investigation",
    "url": "https://timesofindia.indiatimes.com/world/rest-of-world/megaspeed-says-alice-huang-left-in-25-as-company-conducts-internal-investigation/articleshow/135869498.cms",
    "source": "timesofindia",
@@ -676157,6 +677936,14 @@
   {
    "title": "Trump hints at meeting Kim Jong Un in China, says Xi could play role",
    "url": "https://timesofindia.indiatimes.com/world/us/trump-hints-at-meeting-kim-jong-un-in-china-says-xi-could-play-role/articleshow/135896438.cms",
+   "source": "timesofindia",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "California woman sells her $350,000 home in AI Steve Burton romance scam",
+   "url": "https://timesofindia.indiatimes.com/world/us/a-california-woman-sold-her-350000-home-after-an-ai-scammer-posing-as-general-hospital-star-steve-burton-convinced-her-they-were-in-love-and-would-build-a-future-together/articleshow/135875919.cms",
    "source": "timesofindia",
    "rank": 3,
    "score": 13,
@@ -678219,6 +680006,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Dr. Shaun Passley, Chairman and CEO of ZenaTech – Interview Series",
+   "url": "https://www.unite.ai/dr-shaun-passley-chairman-and-ceo-of-zenatech-interview-series/",
+   "source": "uniteai",
+   "rank": 1,
+   "score": 15,
+   "metric": "feed rank"
+  },
+  {
    "title": "Wotton Kearney Expands Harvey Legal AI Across Asia Pacific",
    "url": "https://www.unite.ai/wotton-kearney-expands-harvey-legal-ai-across-asia-pacific/",
    "source": "uniteai",
@@ -678315,6 +680110,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Databricks Publishes Tabular Foundation Model Guide for AI Runtime",
+   "url": "https://www.unite.ai/databricks-publishes-tabular-foundation-model-guide-for-ai-runtime/",
+   "source": "uniteai",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
    "title": "LG Electronics Targets Humanoid Safety Certification with KIRIA",
    "url": "https://www.unite.ai/lg-electronics-targets-humanoid-safety-certification-with-kiria/",
    "source": "uniteai",
@@ -678381,6 +680184,14 @@
   {
    "title": "TensorWave Signs Six-Year OpenAI Deal for AMD-Powered AI Capacity",
    "url": "https://www.unite.ai/tensorwave-signs-six-year-openai-deal-for-amd-powered-ai-capacity/",
+   "source": "uniteai",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Huang’s CEO Reinstatement Isn’t On NVIDIA Board’s Agenda, CNBC Says",
+   "url": "https://www.unite.ai/huangs-ceo-reinstatement-isnt-on-nvidia-boards-agenda-cnbc-says/",
    "source": "uniteai",
    "rank": 3,
    "score": 13,
@@ -678643,6 +680454,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Anthropic Just Launched Claude DATA",
+   "url": "https://uxplanet.org/anthropic-just-launched-claude-data-7095bbe77805?source=rss----819cc2aaeee0---4",
+   "source": "uxplanet",
+   "rank": 1,
+   "score": 10,
+   "metric": "feed rank"
+  },
+  {
    "title": "Qwen4-Max now available on AI Gateway",
    "url": "https://vercel.com/changelog/qwen4-max-now-available-on-ai-gateway",
    "source": "vercel",
@@ -678851,6 +680670,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Lindsay Clancy to face a new trial in spring of 2027 over children’s killing - NPR",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZENNTzhnc1htbHhFeDMyak1Zc25Yam1WelZtWGZGOTV0cWJuWE5BS0FHZERsV0F4VnA3YVNwR1AtRHVBMEdiOWk5d3piMWdlVmtiaE9adTRnTUpNeVdKb2ZWdk85WVFxYlN5MjFzRHpqaWk5TWE1RUI5bjdmWUYxSnNmRTdVZTQ?oc=5",
+   "source": "w4news",
+   "rank": 2,
+   "score": 14,
+   "metric": "feed rank"
+  },
+  {
    "title": "Trump heads to Asia with hopes of shifting the momentum after midterm setbacks hurt him at home - AP News",
    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPU1NqQ012SUxkSlBybGhjS290cUFLdzVaU0NabWlVbkN3Y3IzbzRqTGsteHlBOFMwUFF6M21sa0lhVGZsaUM2MkZwaHBCN3ZqRGVKSk5DWFdOVGhVR2JHcXo2OXFtQTNrUm9jSWxqWVZ0cndRMHB0UnRtWm1rc29heE9xLXdtRnhhZ0tCdW1yZHlhVEJTN0E?oc=5",
    "source": "w4news",
@@ -678869,6 +680696,14 @@
   {
    "title": "NYPD SRG disbanded: Mamdani, Tisch on NYC protest unit - ABC7 New York",
    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNcGNVVk40aXN4dlBjQUhaSnFvQkxvUWxOZXY3dHBycWRheDh3cEFsQXVWMU81R2xrUzlNTndnRE5YWjQwWEtfUFB3bkZBUzRwQjlVSjU5bHFKaUF3STdBaUxndUN1V2s1R1lldXhGbnZEN29vRHJsTmhlbVdIR0cwSFprdDNsQjc1YkJGSDQ4QmV2dDNlTktiV29UOWdSNm5HYnpTa0ZURUwtdk81ZGppNHJnd3Q5R0tXTWlndmpwSlB0RWZvSWVYX2V4TFRGcTc5TUY2U1RBTHA2VE5N0gHiAUFVX3lxTE9wWER3dDRBZXZLb1pXUWl2cHNLRkVtc2diU29Xd3pneXJBMm4xTWVfQVMxVm9jR2lVYW8waEtLTG9KNHFIamdyOUJIc1JzRm9ZSGE3RDIzVFVYUWJ4Z3p6bXlpRmRHdTF5Ulp5QjFXUGdTdjZzcjdxLVFrSlV6a2tZRnl0cExva1FGenBTblRXOXRGRjhPamZGc0dmOEE1R0tpWG9rdFd6SHR1cTE2ZEl1NnBuYmhGejNqZDl2cjRKU2VxNlRxcUdEdWVxeTBhQTBWdlFKNGVScUh4SmhvenJ4cUE?oc=5",
+   "source": "w4news",
+   "rank": 3,
+   "score": 13,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Trump says FAA ground stop due to old equipment, denies responsibility - USA Today",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNeGRzaG8wWE1PaXRrbkdweGxGQ3prU3JpWjduRExfd01NYURoaUFkaThWZG95dDVVZFkweUYzVWdWZFNkNmMwb3J1WnF4b3BWOVUza1hXU1I4VWZOY05mQVdEWGdVMUxrOURCeHdkN2UyR3hDYzlvRkE4S285YjUyU1Jfang5LXBOeUdIemFRTmJSX1VOQkZZSWd6eFJDeU5qaWFaamVTSjN0Q1dVcDIwX04yNUU1UW5JMlNqeU5xYzJNRHh5cFRwamMzNA?oc=5",
    "source": "w4news",
    "rank": 3,
    "score": 13,
@@ -678925,6 +680760,14 @@
   {
    "title": "5 remain hospitalized as NTSB investigation into tanker, cruise ship crash continues - WDSU",
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNzBwZENZTFNRTGszQmJzMlFFdTJKR2VBRzMxTWNLd3l0WUtNTld5aV9lc1N2dndkY0U4V0UzeWI1azdRTWVqdWswTmkwRFpsbExpZWlaMGg2MWIwX2xDVnllQko0bS1UcjdmeHNfSjJ4VllSQ2tuVU84ckhGM2lJNUlmSTQ1SFJ2czlaWTFCSzcyNWNCYUpvdWlrT2t5UDdzOG9fUw?oc=5",
+   "source": "w4news",
+   "rank": 4,
+   "score": 12,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Supreme Court turns down Trump’s plan to cut off UC research grants that promote DEI - Los Angeles Times",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPWnRmYlhSRFR2X0tWR0VZcF9DUmVPcF8wdFJqb1hCT3NyZXZ6ak55SmhrYUEzbDFYS2ZsaFd1R1RjUUJqMkRZNHRseWxqR3hmek5VTy16WlVnWmhJTERZVThqX3FKOHZNT1NMOG0wYnlTQ0JaUmo2NzhPaEFxc3A5X3FWTjdEZWUyQ3B2endwN2YyQWtQX1NHMHpaR3FJMExWYzJRb05rYU5WNkRCS3BCd2FlWUtmOFI2YmVMYm4zdFliT2UwYzZZRm1ZeEpzUQ?oc=5",
    "source": "w4news",
    "rank": 4,
    "score": 12,
@@ -679107,6 +680950,14 @@
    "metric": "feed rank"
   },
   {
+   "title": "Mamdani Disbands Controversial NYPD Protest Unit - WSJ",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNXzRveVl1LUFDVFliMm9NU2huenhiQlRTbS1NQ2t1eTRPN0czZUJHZDNVNksyWldCZ3hwdDByS1U4c04yOTJNbG9FamJKblg0MHdfdXBRR0lQLTZRUFYzQVNWQnMwWEVCZ3FUR2lsZjFBeFVPQmpmMkJDdXdteDJrN3c3QW92VUxCcVJocmh4aw?oc=5",
+   "source": "w4news",
+   "rank": 8,
+   "score": 8,
+   "metric": "feed rank"
+  },
+  {
    "title": "US colleges struggle as international students turn away - Politico",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQ0pjRHBkVUIzcVBjNnVYMXdtU3gtSm9EVXhlOGctUUlQYS1OTEZJRTZZRC02YTcydXNJQTdXQklBcUVVMUl4X0JPNHlKbFNaS1pTaTZPdVAzZmR4LUd0S3ctSnlPZ2JKaGZaZU1hUGp0WVd5YTFoU01ybmU3Q25GbHIxQ0o3Z2pTWk9PU2x5bjF6ZXdlY192REZ0anphdlZQOU8xRWt6dVJ5QQ?oc=5",
    "source": "w4news",
@@ -679141,6 +680992,14 @@
   {
    "title": "Trump says Nvidia scandal did not put U.S. national security ‘at risk,’ defends Lutnick - CNBC",
    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONVZuVWJHaTJ6elZWYk81VFhVenZSVVJVa1NHb0lycThIQVBXZFNyNHZpNHVzZnNib28tOGt0XzdOMmotZkxCVXhnNFlrMk9wb09uRTZxdVBkSkNYbDVUcDFWV0M2czFlNmd2MzQ3RGMxdmp4elBTeGY1aGpteVB2TTNKeG9FUUpCaVBwRHAzbmNCUdIBlwFBVV95cUxPeDdvNW94aFJlaVExSzIyR19OWERVUGV2SWdiNUFkWWxQSF80U1VzTU90Z0FVX3BKMDl5LTJKZGRoNDl0MzNNWVdfX2t5R19KV0ZueGh5aU1zQ1FVTDduRXlIVTZLdV9tdFJBcmJ5VVlIbU9PdFVjT2tmaXlDV194NUY3UmF1Y3R4UGhteVdmUWo5eUUtSlBJ?oc=5",
+   "source": "w4news",
+   "rank": 9,
+   "score": 7,
+   "metric": "feed rank"
+  },
+  {
+   "title": "International student enrollments at US universities plunge this fall, data shows - The Guardian",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWGhoZjFfNWtlY1pOZzN6bzN3WjFhckk1MjFGYklaZk44elVCMEdwY1NPX2RleHhKM1BpYzRDcFIzNEJaWGtYYXo1dzUzSEtlYjN0dUx2dFJBVjljMnR0aEp6eF8zUkVaUnlhdXdyQk9MWmJQeW5uMlFaMXc2XzBXU2FWUUJwSUptVXpDSzBOR0Y2UmM?oc=5",
    "source": "w4news",
    "rank": 9,
    "score": 7,
@@ -679277,6 +681136,14 @@
   {
    "title": "Pope Endures Grueling Travel in South America Weeks After Surgery - The New York Times",
    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5JbjVmclNEa1JWTEtYZ09KRElsa0NzVy1pck9saldDV2ZhWU5CQUh5TzhTVGxjQk9FVHRqTlAtai1aclA3ZC1Hc3JJdTdxTFBsb1I3QXRITGtpLWFCaE1vYW8xZ2YwMEU2cFhRRjBOY0k4RnN0X1o0a2twdnVsZw?oc=5",
+   "source": "w4news",
+   "rank": 11,
+   "score": 5,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Photos: Highlights from Pope Leo’s historic, 12-day tour of South America - NBC News",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNaDZUanZ5VHY1clo3UlZyOURxV2pBb2dTUnRXZHRfdVZzLU5sc0NyVENBeTdDN3ByVmZIak1UQ1A2d0dOTUFGcGstNHp4clNWLUp2M2U3TUVscFp5YnR6U2JtYkV1U2VDU1VQeDhILUVMQ1V5SzFIS1hBZkJicjk4cXhsYnJWUlY0eGlFbGJJMXhuTmFSNVFmTlRmZ2lsYmRFUDdYVGhhWE95ZnBkV21nVVB3aks3bXItLVE?oc=5",
    "source": "w4news",
    "rank": 11,
    "score": 5,
@@ -679501,6 +681368,14 @@
   {
    "title": "Flight delays, cancellations return to normal levels after weekend of travel chaos - NBC News",
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOd1BfV19QMDFadUlzSzY0Y2VmWlByZEpQeld0QjZaeWJVS0lNTTRwbzlwMUVRelkycmF0QndXSHpIdVBodHBfN0dYV2pkeU5kd0hKS3ZpMnhYdjV5RVZ2X0NzMDRfTUFtS2trcmZVa1V2TVZ5MDJwYzYxVmtZdUxqbGVCQk5QbDBmaVhUVnE2a2JObzliSVRhSEl3Zw?oc=5",
+   "source": "w4news",
+   "rank": 15,
+   "score": 1,
+   "metric": "feed rank"
+  },
+  {
+   "title": "Monday air travel faces key test after FAA ground stop as possible cause emerges - Fox Business",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbXpodGZBblp4MEhQaWFrcjhwVkRkeG5xb2NrU0p2SWozLXJ5dHdTTG9ONGE4SlNlLW9QalRleEJCdU9sQlRLV19EVlhwM05BMHZRbVVVQl9zOWFJYXdYam1CQzViSXlzcVQ4MGxJNUdlaXptWkVleDMyRl9kN2NmWnR3VENmbG0zNDE1aUxmTGV0MFJYMUMzbW1pS2YzMF9tb25HODBsMkxXekFjaW1rb3ZmcWpoOFVNeGfSAb8BQVVfeXFMTlg0NWlrQ3RSaHRZdGVnVGVFZTFFNzduRXNRZTctV1RscHFhemNud3FDT2p2RWdwTk84OFJPWS1wNkhCWVh0bUNFZzV5WTNqVk04bllUWEVuMHFuSUxHV2YwUk83WTV3dTJEUGc3dDBEcF8xMmdwVWhkeXQzX3NWUEJSa01laW4tYzl1SjQ0UEFyN3N6bGNDTU0xZzZNWExYSjJTWFFJeXo2azFVMVMtdk9xRmQ5Q2ZscktDdXpjaUk?oc=5",
    "source": "w4news",
    "rank": 15,
    "score": 1,

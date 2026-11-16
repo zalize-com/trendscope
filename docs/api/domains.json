@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-16T18:29:17.475990+00:00",
+ "generated_at": "2026-11-16T18:53:52.773533+00:00",
  "latest_snapshot": "2026-11-16",
- "total": 9476,
+ "total": 9488,
  "domains": [
   {
    "hostname": "blog.google",
    "days_on_board": 5,
-   "items": 88,
+   "items": 90,
    "sources": [
     "googleblog",
     "hackernews",
@@ -24,7 +24,7 @@
   {
    "hostname": "theguardian.com",
    "days_on_board": 4,
-   "items": 135,
+   "items": 136,
    "sources": [
     "eb_guardian",
     "guardianco",
@@ -79,7 +79,7 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 3,
-   "items": 1645,
+   "items": 1672,
    "sources": [
     "br_homepage_piotr_migda",
     "br_nelson_s_linkblog",
@@ -147,7 +147,7 @@
   {
    "hostname": "youtube.com",
    "days_on_board": 3,
-   "items": 1330,
+   "items": 1331,
    "sources": [
     "br_blog_ankush_menat",
     "br_dr_j_engineering_leadership_software_dev",
@@ -259,6 +259,26 @@
    }
   },
   {
+   "hostname": "wired.com",
+   "days_on_board": 3,
+   "items": 65,
+   "sources": [
+    "azure",
+    "daringfireball",
+    "hackernews",
+    "hnrss",
+    "sec_wired",
+    "wired"
+   ],
+   "top_hit": {
+    "title": "Nvidia employees petition to bring back Jensen Huang",
+    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+    "score": 811,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
    "hostname": "blog.janestreet.com",
    "days_on_board": 3,
    "items": 64,
@@ -294,26 +314,6 @@
    }
   },
   {
-   "hostname": "wired.com",
-   "days_on_board": 3,
-   "items": 63,
-   "sources": [
-    "azure",
-    "daringfireball",
-    "hackernews",
-    "hnrss",
-    "sec_wired",
-    "wired"
-   ],
-   "top_hit": {
-    "title": "Nvidia employees petition to bring back Jensen Huang",
-    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
-    "score": 811,
-    "metric": "points",
-    "date": "2026-11-13"
-   }
-  },
-  {
    "hostname": "github.blog",
    "days_on_board": 3,
    "items": 51,
@@ -334,7 +334,7 @@
   {
    "hostname": "9to5mac.com",
    "days_on_board": 3,
-   "items": 49,
+   "items": 50,
    "sources": [
     "9to5mac",
     "br_posts_from_iamgregb",
@@ -351,7 +351,7 @@
   {
    "hostname": "theverge.com",
    "days_on_board": 3,
-   "items": 46,
+   "items": 47,
    "sources": [
     "br_hearthside_by_caleb_hearth",
     "hackernews",
@@ -823,7 +823,7 @@
   {
    "hostname": "lore.kernel.org",
    "days_on_board": 2,
-   "items": 315,
+   "items": 330,
    "sources": [
     "lorekernel"
    ],
@@ -838,7 +838,7 @@
   {
    "hostname": "investing.com",
    "days_on_board": 2,
-   "items": 183,
+   "items": 192,
    "sources": [
     "investing"
    ],
@@ -888,6 +888,21 @@
    }
   },
   {
+   "hostname": "news.google.com",
+   "days_on_board": 2,
+   "items": 138,
+   "sources": [
+    "w4news"
+   ],
+   "top_hit": {
+    "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his silence on breakdown - AP News",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUjU5a3ljR1FocjlKQnRVS21kY1kwR3R4bEZvdUc4VExhbnc2NjZrU0ZfRS1iMkoxcGthaUV4a19MTlNsR2JFMlFqZDN0Y1JiejlNWUFUWjAyWTl3RFNXX0ZvbkNmX0l1elhVZndMd3pQSlQtbk1RYzBMT2tmOTJuaTlwUm5FQmdRODFJQTk4OWV5MlpScVhhc1BEWWotS1E?oc=5",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "changelog.com",
    "days_on_board": 2,
    "items": 135,
@@ -929,16 +944,16 @@
    }
   },
   {
-   "hostname": "news.google.com",
+   "hostname": "seekingalpha.com",
    "days_on_board": 2,
-   "items": 131,
+   "items": 116,
    "sources": [
-    "w4news"
+    "seekingalpha"
    ],
    "top_hit": {
-    "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his silence on breakdown - AP News",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUjU5a3ljR1FocjlKQnRVS21kY1kwR3R4bEZvdUc4VExhbnc2NjZrU0ZfRS1iMkoxcGthaUV4a19MTlNsR2JFMlFqZDN0Y1JiejlNWUFUWjAyWTl3RFNXX0ZvbkNmX0l1elhVZndMd3pQSlQtbk1RYzBMT2tmOTJuaTlwUm5FQmdRODFJQTk4OWV5MlpScVhhc1BEWWotS1E?oc=5",
-    "score": 15,
+    "title": "NASA advances PRIMA mission with BAE Systems as space telescope supplier",
+    "url": "https://seekingalpha.com/news/4672811-nasa-advances-prima-mission-with-bae-systems-as-space-telescope-supplier?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+    "score": 7,
     "metric": "feed rank",
     "date": "2026-11-15"
    }
@@ -960,24 +975,9 @@
    }
   },
   {
-   "hostname": "seekingalpha.com",
-   "days_on_board": 2,
-   "items": 109,
-   "sources": [
-    "seekingalpha"
-   ],
-   "top_hit": {
-    "title": "NASA advances PRIMA mission with BAE Systems as space telescope supplier",
-    "url": "https://seekingalpha.com/news/4672811-nasa-advances-prima-mission-with-bae-systems-as-space-telescope-supplier?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-    "score": 7,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "timesofindia.indiatimes.com",
    "days_on_board": 2,
-   "items": 104,
+   "items": 107,
    "sources": [
     "timesofindia"
    ],
