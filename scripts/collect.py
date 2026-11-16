@@ -182,7 +182,8 @@ def item(source, title, url, score, metric, tags=None, comments=0,
     import html as _html
     d = {
         "source": source,
-        "title": _html.unescape(title) if title else title,
+        # unescape twice — some feeds double-encode (&amp;amp; -> &amp; -> &)
+        "title": _html.unescape(_html.unescape(title)) if title else title,
         "url": url,
         "score": score,
         "metric": metric,
