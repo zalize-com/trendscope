@@ -58,3 +58,23 @@ feeds_json = {
 with open(os.path.join(ROOT, "data", "feeds.json"), "w") as fh:
     json.dump(feeds_json, fh, indent=1, ensure_ascii=False)
 print(f"data/feeds.json: {len(out)} feeds")
+
+# data/opml/<lane>.opml — per-lane OPML so readers can subscribe to just
+# security feeds, just YouTube channels, etc. without importing 9k+ outlines.
+opml_dir = os.path.join(ROOT, "data", "opml")
+os.makedirs(opml_dir, exist_ok=True)
+for stale in glob.glob(os.path.join(opml_dir, "*.opml")):
+    os.remove(stale)
+lanes = {}
+for k, n, f in out:
+    lanes.setdefault(k.split("_")[0] if "_" in k else "misc", []).append((k, n, f))
+for lane, rows in sorted(lanes.items()):
+    ll = ['<?xml version="1.0" encoding="UTF-8"?>', '<opml version="2.0">', '<head>',
+          f'<title>trendscope {lane} feeds ({len(rows)})</title>',
+          f'<dateModified>{datetime.date.today()}</dateModified>', '</head>', '<body>',
+          f'<outline text="{esc(lane)}" title="trendscope {lane}">']
+    for k, n, f in rows:
+        ll.append(f'<outline type="rss" text="{esc(n)[:80]}" title="{esc(n)[:80]}" xmlUrl="{esc(f)}"/>')
+    ll += ['</outline>', '</body>', '</opml>']
+    open(os.path.join(opml_dir, f"{lane}.opml"), "w").write("\n".join(ll))
+print(f"data/opml/: {len(lanes)} lane files")

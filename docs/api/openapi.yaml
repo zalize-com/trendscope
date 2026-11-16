@@ -95,6 +95,16 @@ paths:
         '200':
           description: Feed registry
           content: {application/json: {}}
+  /data/opml/{lane}.opml:
+    get:
+      tags: [snapshots]
+      summary: Per-lane OPML subset — subscribe to one lane (br/yt/nl/sec/eb/tb/pb/tldr/…) without importing the full 9,202-feed OPML
+      parameters:
+        - {name: lane, in: path, required: true, schema: {type: string}}
+      responses:
+        '200':
+          description: Lane OPML
+          content: {text/x-opml: {}}
   /data/dormant.json:
     get:
       tags: [snapshots]

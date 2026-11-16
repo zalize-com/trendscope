@@ -5,8 +5,14 @@ const host = u => { try { return new URL(u).host; } catch { return u; } };
 const LANE_NAMES = {
   br: "blogs & sites", yt: "YouTube", nl: "newsletters", sec: "security",
   eb: "engineering blogs", tb: "tech blogs", pb: "personal blogs",
-  tldr: "TLDR", misc: "other sources",
+  tldr: "TLDR", aws: "AWS", github: "GitHub", gitlab: "GitLab",
+  meta: "Meta", slack: "Slack", misc: "other sources",
 };
+
+const laneDetails = ([lane, fs]) =>
+  `<details data-lane="${esc(lane)}"><summary>${esc(LANE_NAMES[lane] || lane)}<small>${fs.length.toLocaleString()} feeds</small></summary>` +
+  `<p class="lane-opml"><a href="data/opml/${encodeURIComponent(lane)}.opml" download>⬇ subscribe to this lane (OPML)</a></p>` +
+  `<ul data-fill="${esc(lane)}"></ul></details>`;
 
 const row = f => `<li class="feed"><a href="${esc(f.feed)}">${esc(f.label)}</a>` +
   `<span class="host">${esc(host(f.feed))}</span>` +
@@ -26,9 +32,7 @@ try {
     `<div class="stat"><b>${groups.length}</b><small>lanes</small></div>` +
     `<div class="stat"><b>${feeds.filter(f=>f.dormant).length}</b><small>dormant</small></div>`;
 
-  $("out").innerHTML = groups.map(([lane, fs]) =>
-    `<details data-lane="${esc(lane)}"><summary>${esc(LANE_NAMES[lane] || lane)}<small>${fs.length.toLocaleString()} feeds</small></summary><ul data-fill="${esc(lane)}"></ul></details>`
-  ).join("");
+  $("out").innerHTML = groups.map(laneDetails).join("");
 
   const byLane = l => lanes[l].map(row).join("");
   $("out").addEventListener("toggle", e => {
@@ -52,9 +56,7 @@ try {
     t = setTimeout(() => {
       const q = e.target.value.trim().toLowerCase();
       if (!q) {
-        $("out").innerHTML = groups.map(([lane, fs]) =>
-          `<details data-lane="${esc(lane)}"><summary>${esc(LANE_NAMES[lane] || lane)}<small>${fs.length.toLocaleString()} feeds</small></summary><ul data-fill="${esc(lane)}"></ul></details>`
-        ).join("");
+        $("out").innerHTML = groups.map(laneDetails).join("");
         return;
       }
       const hits = feeds.filter(f =>

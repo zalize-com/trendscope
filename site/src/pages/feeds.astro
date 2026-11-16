@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 const title = "RSS feed directory \u2014 trendscope";
-const description = "Every RSS/Atom feed behind the trendscope dataset, browsable and searchable: 9,300+ developer blogs, newsletters, security blogs, engineering blogs and YouTube channels. Copy a URL or take the whole OPML.";
+const description = "Every RSS/Atom feed behind the trendscope dataset, browsable and searchable: 9,200+ developer blogs, newsletters, security blogs, engineering blogs and YouTube channels. Copy a URL, take a lane OPML, or take the whole OPML.";
 const path = '/feeds.html';
 const jsonld = {
   "@context": "https://schema.org",
@@ -19,7 +19,7 @@ const jsonld = {
     or grab the whole thing as <a href="trendscope.opml" style="font-weight:600">trendscope.opml</a> (CC0).
     Machine-readable: <a href="data/feeds.json" style="color:var(--accent)">↓ feeds.json</a></p>
   <div class="stats" id="stats"></div>
-  <input id="q" type="search" placeholder="search 9,300+ feeds — try 'rust', 'ai', 'security'…" autocomplete="off">
+  <input id="q" type="search" placeholder="search 9,200+ feeds — try 'rust', 'ai', 'security'…" autocomplete="off">
   <div id="out"><p id="err">loading…</p></div>
 
 <script is:inline src="/js/pages/feeds.mjs" type="module"></script>
@@ -48,6 +48,7 @@ const jsonld = {
   details { border: 1px solid var(--border); border-radius: 8px; margin: 6px 0; }
   summary { cursor: pointer; padding: 9px 12px; font-weight: 600; user-select: none; }
   summary small { color: var(--dim); font-weight: 400; margin-left: 8px; }
+  .lane-opml { margin: 0; padding: 0 12px 4px; font-size: 12px; }
   details ul { list-style: none; margin: 0; padding: 0 12px 10px; }
   li.feed { display: flex; gap: 8px; padding: 4px 0; border-top: 1px solid var(--border); align-items: baseline; }
   li.feed a { color: var(--fg); } li.feed a:hover { color: var(--accent); }
