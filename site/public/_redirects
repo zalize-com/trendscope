@@ -1,5 +1,10 @@
-# Cloudflare Pages: assets >25 MiB can't be stored on Pages — redirect to the
-# canonical copies on GitHub raw (always in sync: CI commits them daily).
-# Fetch follows 302 across origins; raw.githubusercontent.com sends ACAO:*.
-/data/latest.json https://raw.githubusercontent.com/zalize-com/trendscope/main/data/latest.json 302
-/data/history.csv https://raw.githubusercontent.com/zalize-com/trendscope/main/data/history.csv 302
+# Cloudflare Pages: /data/* is always served from GitHub raw — Actions commits
+# fresh data daily; a static snapshot would go stale between redeploys.
+# Pages evaluates _redirects before static assets, so these win even though
+# (small) copies exist in the upload. raw.githubusercontent.com sends ACAO:*.
+/data/* https://raw.githubusercontent.com/zalize-com/trendscope/main/data/:splat 302
+# Repo-generated files (feed.py/gen_opml.py run daily in Actions) — same
+# freshness reason as /data/*.
+/feed.xml https://raw.githubusercontent.com/zalize-com/trendscope/main/feed.xml 302
+/trendscope.opml https://raw.githubusercontent.com/zalize-com/trendscope/main/trendscope.opml 302
+/llms.txt https://raw.githubusercontent.com/zalize-com/trendscope/main/llms.txt 302
