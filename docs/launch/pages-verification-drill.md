@@ -1,8 +1,9 @@
 # Pages 上线 30 分钟公网验证清单
 
-前置：GitHub Pages 已启用（Settings → Pages → source=deploy from branch /
-main + root，或 Actions 部署）。目标域：`https://zalize-com.github.io/trendscope/`
-（或自定义域）。
+前置：GitHub Pages 已启用——trendscope 必须选 **Source: GitHub Actions**
+（站点是 Astro 构建产物，deploy-from-branch 会直出 Markdown 源文件不工作）。
+feedpaper 可选 deploy-from-branch（main/root，纯静态）。目标域：
+`https://zalize-com.github.io/trendscope/`（或自定义域）。
 
 ## 0-5 min：存活与 HTTPS
 - [ ] `curl -sI https://<pages-domain>/` → 200，无 mixed-content 警告
