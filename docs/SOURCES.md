@@ -1,9 +1,43 @@
 # Source registry
 
-2577 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
+2611 fetchers, generated from `scripts/collect.py` by `scripts/gen_sources_md.py`.
 
 | Key | Description | Host |
 |---|---|---|
+| `nl_changelog` | Changelog | `changelog.com` |
+| `nl_web_performance_news` | Web Performance News | `buttondown.com` |
+| `nl_wasm_weekly` | Wasm Weekly | `wasmweekly.news` |
+| `nl_` | 工劳小报 | `feed.laborinfocn7.com` |
+| `nl_altern_newsletter` | Altern Newsletter | `newsletter.altern.ai` |
+| `nl_techpresso` | Techpresso | `rss.beehiiv.com` |
+| `nl_augmented_coding_weekly` | Augmented Coding Weekly | `colineberhardt.github.io` |
+| `nl_the_marketing_newsletter` | The Marketing Newsletter | `themarketingnewsletter.org` |
+| `nl_the_ml_engineer_newsletter` | The ML Engineer Newsletter | `ethical.institute` |
+| `nl_diamantai` | DiamantAI | `newsletter.diamant-ai.com` |
+| `nl_jster` | JSter | `jster.net` |
+| `nl_vuedose` | VueDose | `vuedose.tips` |
+| `nl_the_coder_cafe` | The Coder Cafe | `thecoder.cafe` |
+| `nl_ios_dev_weekly` | iOS Dev Weekly | `iosdevweekly.com` |
+| `nl_swift_weekly_brief` | Swift Weekly Brief | `swiftweekly.github.io` |
+| `nl_the_swift_by_sundell` | The Swift by Sundell | `www.swiftbysundell.com` |
+| `nl_the_ios_weekly_brief` | The iOS Weekly Brief | `iosweeklybrief.com` |
+| `nl_r_weekly` | R Weekly | `rweekly.org` |
+| `nl_php_weekly` | PHP Weekly | `www.phpweekly.com` |
+| `nl_laravel_daily` | Laravel Daily | `laraveldaily.com` |
+| `nl_git_rev_news` | Git Rev News | `git.github.io` |
+| `nl_devops_bulletin` | DevOps Bulletin | `devopsbulletin.com` |
+| `nl_your_weekly_azure_news_fix` | Your weekly Azure news fix | `azureweekly.info` |
+| `nl_google_cloud_weekly_newsletter` | Google Cloud Weekly Newsletter | `www.gcpweekly.com` |
+| `nl_kubelist` | kubelist | `kubelist.com` |
+| `nl_flutter_tap` | Flutter Tap | `fluttertap.com` |
+| `nl_augmented_coding_weeklyx` | Augmented Coding Weekly | `augmentedcoding.dev` |
+| `nl_hacking_scale` | Hacking Scale | `newsletter.betterstack.com` |
+| `nl_engineering_leadership` | Engineering Leadership | `newsletter.eng-leadership.com` |
+| `nl_better_dev_link` | Better Dev Link | `betterdev.link` |
+| `nl_simply_explained` | Simply Explained | `newsletter.simplyexplained.com` |
+| `nl_tl_dr_sec` | tl;dr sec | `tldrsec.com` |
+| `nl_web_audio_weekly` | Web Audio Weekly | `www.webaudioweekly.com` |
+| `nl_rendezvous_with_cassidoo` | rendezvous with cassidoo | `buttondown.com` |
 | `nl_hardcored` | 硬核小卒 | `hardcored.substack.com` |
 | `nl_pythoncat` | Python潮流周刊 | `pythoncat.substack.com` |
 | `nl_aifordevelopers` | AI For Developers | `aifordevelopers.substack.com` |
