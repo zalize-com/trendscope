@@ -146,9 +146,11 @@ def main():
         day = today - timedelta(days=i)
         ds = day.isoformat()
         path = os.path.join(daily_dir, f"{ds}.json")
-        if os.path.exists(path):
+        gz = path + ".gz"
+        if os.path.exists(path) or os.path.exists(gz):
             # merge ask_hn into an existing (HN-only) backfilled day
-            snap = json.load(open(path))
+            import gzip
+            snap = json.load(gzip.open(gz, "rt", encoding="utf-8")) if os.path.exists(gz) else json.load(open(path))
             if "ask_hn" in snap.get("items", {}):
                 print(f"skip {ds} (ask_hn present)")
                 continue
@@ -160,8 +162,10 @@ def main():
             snap.setdefault("sources", {})["ask_hn"] = len(ask)
             flat = [x for v in snap["items"].values() for x in v]
             snap["topics"] = classify_topics(flat)
-            with open(path, "w") as f:
-                json.dump(snap, f, indent=2, ensure_ascii=False)
+            import gzip
+            if os.path.exists(path): os.remove(path)
+            with gzip.open(gz, "wt", encoding="utf-8") as f:
+                json.dump(snap, f, ensure_ascii=False)
             append_history_csv(ask, ds)
             print(f"merged {ds}: +{len(ask)} ask_hn items")
             time.sleep(1)
@@ -184,8 +188,9 @@ def main():
                  "metric": x["metric"]} for x in items[:10]]},
             "topics": classify_topics(all_items),
         }
-        with open(path, "w") as f:
-            json.dump(snap, f, indent=2, ensure_ascii=False)
+        import gzip
+        with gzip.open(gz, "wt", encoding="utf-8") as f:
+            json.dump(snap, f, ensure_ascii=False)
         append_history_csv(ask, ds)
         print(f"wrote {ds}: {len(items)} HN + {len(ask)} ask_hn items")
         if ds not in idx["snapshots"]:

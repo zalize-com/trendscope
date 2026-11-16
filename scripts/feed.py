@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """TrendScope RSS feed — generates feed.xml at repo root.
 
-Items: one per daily snapshot (data/daily/*.json) and one per weekly digest
+Items: one per daily snapshot (data/daily/*.json.gz) and one per weekly digest
 (docs/digest/*.md). Most recent first, capped at 30 items.
 """
 

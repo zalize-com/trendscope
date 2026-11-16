@@ -1,7 +1,60 @@
 {
- "generated_at": "2026-11-15T22:14:58.517160+00:00",
- "latest_snapshot": "2026-11-15",
+ "generated_at": "2026-11-16T04:15:06.897417+00:00",
+ "latest_snapshot": "2026-11-16",
  "crossovers": [
+  {
+   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
+   "title": "All AI-generated code should be Open Source",
+   "sources": [
+    "hackernews",
+    "hnrss",
+    "lemmy",
+    "lobsters",
+    "tb_jakub_t_jankiewicz"
+   ],
+   "days": 2,
+   "best": {
+    "score": 1055,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https:///about",
+   "title": "About",
+   "sources": [
+    "br_broderic_duncan",
+    "br_denys_vitali",
+    "br_homexxxxxxxxxxx",
+    "br_kelvin_s_blog",
+    "br_wheelsblog_v7"
+   ],
+   "days": 1,
+   "best": {
+    "score": 14,
+    "metric": "feed rank",
+    "source": "br_wheelsblog_v7",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://blog.rust-lang.org/2026/11/12/rust-1.100.0",
+   "title": "Announcing Rust 1.100.0",
+   "sources": [
+    "blogrustlang",
+    "eb_mozilla_automation_team",
+    "hackernews",
+    "lemmy"
+   ],
+   "days": 3,
+   "best": {
+    "score": 890,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-12"
+   }
+  },
   {
    "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml",
    "title": "Writing a DSL for high performance parallel programming in OxCaml",
@@ -11,7 +64,7 @@
     "lobsters",
     "v2ocaml"
    ],
-   "days": 2,
+   "days": 3,
    "best": {
     "score": 15,
     "metric": "feed rank",
@@ -20,36 +73,20 @@
    }
   },
   {
-   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
-   "title": "All AI-generated code should be Open Source",
+   "url": "https://blog.archive.org/2026/11/12/preserving-30-years-of-salon-journalism",
+   "title": "Internet Archive on preserving 30 years of Salon",
    "sources": [
+    "blogarchive",
     "hackernews",
     "hnrss",
-    "lemmy",
-    "lobsters"
-   ],
-   "days": 1,
-   "best": {
-    "score": 54,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.rust-lang.org/2026/11/12/rust-1.100.0",
-   "title": "Announcing Rust 1.100.0",
-   "sources": [
-    "blogrustlang",
-    "hackernews",
-    "lemmy"
+    "waxy"
    ],
    "days": 2,
    "best": {
-    "score": 890,
+    "score": 89,
     "metric": "points",
     "source": "hackernews",
-    "date": "2026-11-12"
+    "date": "2026-11-16"
    }
   },
   {
@@ -60,11 +97,75 @@
     "lobsters",
     "zwischenzugs"
    ],
-   "days": 2,
+   "days": 3,
    "best": {
     "score": 265,
     "metric": "points",
     "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://projectzero.google/2026/11/disclosure-policy.html",
+   "title": "Policy and Disclosure: 2026 Edition",
+   "sources": [
+    "googleprojectzero",
+    "hackernews",
+    "sec_google_project_zero_legacy"
+   ],
+   "days": 3,
+   "best": {
+    "score": 220,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia",
+   "title": "What's Next for Nvidia?",
+   "sources": [
+    "hackernews",
+    "hnrss",
+    "steveblank"
+   ],
+   "days": 2,
+   "best": {
+    "score": 94,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://iter.ca/post/ubo-uxss",
+   "title": "Universal XSS in uBlock Origin from website-driven element picker",
+   "sources": [
+    "hackernews",
+    "hnrss",
+    "smitop"
+   ],
+   "days": 2,
+   "best": {
+    "score": 83,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://css-tricks.com/re-implementing-nth-child-with-modern-css",
+   "title": "Re-Implementing :nth-child() With Modern CSS",
+   "sources": [
+    "cssarticles",
+    "csstricks",
+    "nl_frontend_front"
+   ],
+   "days": 2,
+   "best": {
+    "score": 14,
+    "metric": "feed rank",
+    "source": "cssarticles",
     "date": "2026-11-15"
    }
   },
@@ -76,12 +177,88 @@
     "planetemacs",
     "planetgnu"
    ],
-   "days": 1,
+   "days": 2,
    "best": {
     "score": 14,
     "metric": "feed rank",
     "source": "planetgnu",
     "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture",
+   "title": "Inside GitHub’s new Git storage architecture",
+   "sources": [
+    "eb_github_old",
+    "github_eng",
+    "githubengineering"
+   ],
+   "days": 2,
+   "best": {
+    "score": 10,
+    "metric": "feed rank",
+    "source": "github_eng",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return",
+   "title": "Nvidia Employees Petition for Jensen Huang’s Return",
+   "sources": [
+    "daringfireball",
+    "hackernews"
+   ],
+   "days": 3,
+   "best": {
+    "score": 811,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-13"
+   }
+  },
+  {
+   "url": "https://deepmind.google/blog/introducing-alphaproof-code",
+   "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+   "sources": [
+    "deepmind",
+    "hackernews"
+   ],
+   "days": 3,
+   "best": {
+    "score": 678,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-10"
+   }
+  },
+  {
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen",
+   "title": "Introducing Gemini 4 Hydrogen",
+   "sources": [
+    "googleblog",
+    "hackernews"
+   ],
+   "days": 3,
+   "best": {
+    "score": 568,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-12"
+   }
+  },
+  {
+   "url": "https://aphyr.com/posts/427-rip-harvest",
+   "title": "RIP, Harvest",
+   "sources": [
+    "aphyr",
+    "hackernews"
+   ],
+   "days": 3,
+   "best": {
+    "score": 445,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-09"
    }
   },
   {
@@ -100,45 +277,180 @@
    }
   },
   {
-   "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return",
-   "title": "Nvidia Employees Petition for Jensen Huang’s Return",
+   "url": "https://chimera-vocal-synth.vercel.app",
+   "title": "Chimera",
    "sources": [
-    "daringfireball",
-    "hackernews"
+    "hackernews",
+    "waxy"
    ],
-   "days": 2,
+   "days": 3,
    "best": {
-    "score": 811,
+    "score": 356,
     "metric": "points",
     "source": "hackernews",
-    "date": "2026-11-13"
+    "date": "2026-11-08"
    }
   },
   {
-   "url": "https://deepmind.google/blog/introducing-alphaproof-code",
-   "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+   "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+   "title": "Tech Companies Are Trying to Shift the Entire Concept of Privacy (Again)",
    "sources": [
-    "deepmind",
+    "eff",
     "hackernews"
    ],
-   "days": 2,
+   "days": 3,
    "best": {
-    "score": 678,
+    "score": 339,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-14"
+   }
+  },
+  {
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available",
+   "title": "Gemini 4 Carbon is now available",
+   "sources": [
+    "googleblog",
+    "hackernews"
+   ],
+   "days": 3,
+   "best": {
+    "score": 295,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-10"
    }
   },
   {
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen",
-   "title": "Introducing Gemini 4 Hydrogen",
+   "url": "https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest",
+   "title": "Breaking: Eli Lilly CEO becomes latest to push back on Dario Amodei’s ludicrous, Elizabeth Holmes-like medical claims",
    "sources": [
-    "googleblog",
+    "garymarcus",
+    "hackernews"
+   ],
+   "days": 3,
+   "best": {
+    "score": 269,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-13"
+   }
+  },
+  {
+   "url": "https://brave.com/blog/search-api-agentic-payments",
+   "title": "The Brave Search API now accepts agentic payments via the x402 protocol",
+   "sources": [
+    "brave",
+    "hackernews"
+   ],
+   "days": 3,
+   "best": {
+    "score": 260,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-13"
+   }
+  },
+  {
+   "url": "https://blog.ovalerio.net/archives/3359",
+   "title": "The need for at least a third option",
+   "sources": [
+    "br_gon_alo_val_rio_thoughts_projects_and_so",
+    "lobsters"
+   ],
+   "days": 3,
+   "best": {
+    "score": 85,
+    "metric": "score",
+    "source": "lobsters",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
+   "title": "Testing a Trash Can Faraday Cage",
+   "sources": [
+    "hackernews",
+    "jefftk"
+   ],
+   "days": 3,
+   "best": {
+    "score": 72,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://antonz.org/probabilistic-data-structures",
+   "title": "Probabilistic data structures in Go",
+   "sources": [
+    "br_anton_zhiyanov",
+    "lobsters"
+   ],
+   "days": 3,
+   "best": {
+    "score": 62,
+    "metric": "score",
+    "source": "lobsters",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog",
+   "title": "Someone's impersonating this blog",
+   "sources": [
+    "br_a_lovely_harmless_monster",
+    "lobsters"
+   ],
+   "days": 3,
+   "best": {
+    "score": 46,
+    "metric": "score",
+    "source": "lobsters",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "http://blog.sesse.net/blog/tech/2026-11-13-19-51_solving_the_fox_game.html",
+   "title": "Steinar H. Gunderson: Solving the fox game",
+   "sources": [
+    "lobsters",
+    "planetdebian"
+   ],
+   "days": 3,
+   "best": {
+    "score": 19,
+    "metric": "score",
+    "source": "lobsters",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://docodethatmatters.com/home-automation-overnight-success",
+   "title": "Smart home devices should work without the internet",
+   "sources": [
+    "br_do_code_that_matters",
     "hackernews"
    ],
    "days": 2,
    "best": {
-    "score": 568,
+    "score": 1197,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-10"
+   }
+  },
+  {
+   "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud",
+   "title": "Reverse Engineering My Coway Air Purifier to Ditch the Cloud",
+   "sources": [
+    "br_posts_scott_s_blog",
+    "hackernews"
+   ],
+   "days": 2,
+   "best": {
+    "score": 780,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-12"
@@ -160,48 +472,78 @@
    }
   },
   {
-   "url": "https://aphyr.com/posts/427-rip-harvest",
-   "title": "RIP, Harvest",
+   "url": "https://joshstrange.com/2026/11/09/i-saw-your-hn-comment",
+   "title": "I Saw Your HN Comment",
    "sources": [
-    "aphyr",
+    "br_josh_strange_my_personal_blog",
     "hackernews"
    ],
    "days": 2,
    "best": {
-    "score": 445,
+    "score": 447,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-09"
    }
   },
   {
-   "url": "https://chimera-vocal-synth.vercel.app",
-   "title": "Chimera",
+   "url": "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100",
+   "title": "A100 unlocking",
    "sources": [
-    "hackernews",
-    "waxy"
-   ],
-   "days": 2,
-   "best": {
-    "score": 356,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-08"
-   }
-  },
-  {
-   "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
-   "title": "Tech Companies Are Trying to Shift the Entire Concept of Privacy (Again)",
-   "sources": [
-    "eff",
+    "br_nelson_s_linkblog",
     "hackernews"
    ],
    "days": 2,
    "best": {
-    "score": 339,
+    "score": 353,
     "metric": "points",
     "source": "hackernews",
-    "date": "2026-11-14"
+    "date": "2026-11-11"
+   }
+  },
+  {
+   "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+   "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+   "sources": [
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 2,
+   "best": {
+    "score": 348,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://hugovk.dev/blog/2026/lock-github-actions",
+   "title": "Lock your GitHub Actions",
+   "sources": [
+    "br_hugo_van_kemenade",
+    "hackernews"
+   ],
+   "days": 2,
+   "best": {
+    "score": 336,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-11"
+   }
+  },
+  {
+   "url": "https://simonwillison.net/2026/nov/9/mysterious-beeps",
+   "title": "Beep Locator",
+   "sources": [
+    "br_nelson_s_linkblog",
+    "hackernews"
+   ],
+   "days": 2,
+   "best": {
+    "score": 331,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-10"
    }
   },
   {
@@ -220,48 +562,198 @@
    }
   },
   {
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available",
-   "title": "Gemini 4 Carbon is now available",
+   "url": "https://www.nature.com/articles/d41586-026-03638-3",
+   "title": "Found: a protein that drives ageing without unleashing inflammation",
    "sources": [
-    "googleblog",
-    "hackernews"
+    "hackernews",
+    "nature"
    ],
    "days": 2,
    "best": {
-    "score": 295,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-10"
-   }
-  },
-  {
-   "url": "https://brave.com/blog/search-api-agentic-payments",
-   "title": "The Brave Search API now accepts agentic payments via the x402 protocol",
-   "sources": [
-    "brave",
-    "hackernews"
-   ],
-   "days": 2,
-   "best": {
-    "score": 260,
+    "score": 247,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-13"
    }
   },
   {
-   "url": "https://projectzero.google/2026/11/disclosure-policy.html",
-   "title": "Policy and Disclosure: 2026 Edition",
+   "url": "https://wilsoniumite.com/2026/11/11/why-are-we-still-working-this-hard",
+   "title": "Why Are We Still Working This Hard?",
    "sources": [
-    "googleprojectzero",
+    "br_wilsons_blog",
     "hackernews"
    ],
    "days": 2,
    "best": {
-    "score": 220,
+    "score": 243,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-11"
+   }
+  },
+  {
+   "url": "https://ftrain.com/aboard-the-web-is-more-than-enough",
+   "title": "",
+   "sources": [
+    "br_blog_lincoln_mullen",
+    "hackernews"
+   ],
+   "days": 2,
+   "best": {
+    "score": 214,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-08"
+   }
+  },
+  {
+   "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+   "title": "Understanding Positional Embeddings in Modern LLMs",
+   "sources": [
+    "aheadofai",
+    "hackernews"
+   ],
+   "days": 2,
+   "best": {
+    "score": 192,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://prog21.dadgum.com/116.html",
+   "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+   "sources": [
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 2,
+   "best": {
+    "score": 190,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://joshblais.com/blog/emacs-as-my-browser",
+   "title": "Emacs Is My Browser",
+   "sources": [
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 2,
+   "best": {
+    "score": 170,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
+   "title": "We’re Asking an Appeals Court to Require a Warrant for ALPR Searches",
+   "sources": [
+    "eff",
+    "hackernews"
+   ],
+   "days": 2,
+   "best": {
+    "score": 161,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=7_jf3etiav8",
+   "title": "A short explainer on how El Niño works [video]",
+   "sources": [
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 2,
+   "best": {
+    "score": 155,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
+   "title": "'Birdbrain' Is a Misnomer. Crows Make Decisions Faster Than We Can",
+   "sources": [
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 2,
+   "best": {
+    "score": 152,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://bruceroettgers.eu/blog/protomaps",
+   "title": "Protomaps: Self-hosting map tiles has gotten cheap and easy",
+   "sources": [
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 2,
+   "best": {
+    "score": 130,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026",
+   "title": "Old Bitly Links Are Being Hijacked",
+   "sources": [
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 2,
+   "best": {
+    "score": 123,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm",
+   "title": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
+   "sources": [
+    "developernvidia",
+    "hackernews"
+   ],
+   "days": 2,
+   "best": {
+    "score": 114,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-14"
+   }
+  },
+  {
+   "url": "https://lucypero.com/lucynes.html",
+   "title": "A NES emulator written in Odin",
+   "sources": [
+    "hackernews",
+    "lobsters"
+   ],
+   "days": 2,
+   "best": {
+    "score": 105,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-16"
    }
   },
   {
@@ -277,486 +769,6 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-14"
-   }
-  },
-  {
-   "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
-   "title": "Testing a Trash Can Faraday Cage",
-   "sources": [
-    "hackernews",
-    "jefftk"
-   ],
-   "days": 2,
-   "best": {
-    "score": 72,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "http://blog.sesse.net/blog/tech/2026-11-13-19-51_solving_the_fox_game.html",
-   "title": "Steinar H. Gunderson: Solving the fox game",
-   "sources": [
-    "lobsters",
-    "planetdebian"
-   ],
-   "days": 2,
-   "best": {
-    "score": 19,
-    "metric": "score",
-    "source": "lobsters",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
-   "title": "We’re Asking an Appeals Court to Require a Warrant for ALPR Searches",
-   "sources": [
-    "eff",
-    "hackernews"
-   ],
-   "days": 1,
-   "best": {
-    "score": 161,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://joshblais.com/blog/emacs-as-my-browser",
-   "title": "Emacs Is My Browser",
-   "sources": [
-    "hackernews",
-    "hnrss"
-   ],
-   "days": 1,
-   "best": {
-    "score": 66,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://arkanumdata.com/research/house-trades",
-   "title": "Do House members' stock trades beat the market? A test of 8,900 trades",
-   "sources": [
-    "hackernews",
-    "hnrss"
-   ],
-   "days": 1,
-   "best": {
-    "score": 61,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://netbsd.org/~nia/disk-encrypt",
-   "title": "Disk encryption on NetBSD – achieving secrecy",
-   "sources": [
-    "hackernews",
-    "lobsters"
-   ],
-   "days": 1,
-   "best": {
-    "score": 60,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112",
-   "title": "The Evolving Story of How Chemistry Became Biology",
-   "sources": [
-    "hackernews",
-    "quanta"
-   ],
-   "days": 1,
-   "best": {
-    "score": 55,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://lucypero.com/lucynes.html",
-   "title": "A NES emulator written in Odin",
-   "sources": [
-    "hackernews",
-    "lobsters"
-   ],
-   "days": 1,
-   "best": {
-    "score": 52,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://ykiko.me/en/articles/2105384023094834022",
-   "title": "Clice v1.0 Released: Welcome to Modern C++",
-   "sources": [
-    "hackernews",
-    "hnrss"
-   ],
-   "days": 1,
-   "best": {
-    "score": 51,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://prog21.dadgum.com/116.html",
-   "title": "Things That Turbo Pascal Is Smaller Than (2011)",
-   "sources": [
-    "hackernews",
-    "hnrss"
-   ],
-   "days": 1,
-   "best": {
-    "score": 49,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
-   "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
-   "sources": [
-    "hackernews",
-    "hnrss"
-   ],
-   "days": 1,
-   "best": {
-    "score": 49,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=7_jf3etiav8",
-   "title": "A short explainer on how El Niño works [video]",
-   "sources": [
-    "hackernews",
-    "hnrss"
-   ],
-   "days": 1,
-   "best": {
-    "score": 48,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
-   "title": "'Birdbrain' Is a Misnomer. Crows Make Decisions Faster Than We Can",
-   "sources": [
-    "hackernews",
-    "hnrss"
-   ],
-   "days": 1,
-   "best": {
-    "score": 46,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games",
-   "title": "My favourite modern NES games",
-   "sources": [
-    "hackernews",
-    "lobsters"
-   ],
-   "days": 1,
-   "best": {
-    "score": 39,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.codinghorror.com/suffering-as-a-feature",
-   "title": "Suffering as a Feature",
-   "sources": [
-    "codinghorror",
-    "codinghorror2"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "codinghorror",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.etsy.com/codeascraft/that-which-we-can-do-sustainability-in-a-world-of-ai",
-   "title": "That Which We CAN Do: Sustainability in a World of AI",
-   "sources": [
-    "codeascraft",
-    "etsy"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "etsy",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://elixir-lang.org/blog/2026/11/10/inference-narrowing-reverse-arrows",
-   "title": "Type inference and narrowing with reverse arrows",
-   "sources": [
-    "elixirlang",
-    "planeterlang"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "elixirlang",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade",
-   "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
-   "sources": [
-    "googleblog",
-    "searchgoogleblog"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "searchgoogleblog",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.master.dev/creating-diagrams-and-graphs-using-modern-css",
-   "title": "Creating Diagrams and Graphs Using Modern CSS",
-   "sources": [
-    "cssarticles",
-    "frontendmasters"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "cssarticles",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://mxb.dev/blog/faster-horses",
-   "title": "Faster Horses",
-   "sources": [
-    "mxb",
-    "w4mxb"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "mxb",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.taniarascia.com/apache-echarts-react",
-   "title": "Enabling Apache ECharts in React for Data Visualization",
-   "sources": [
-    "tania",
-    "taniarascia"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "taniarascia",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://tweag.io/blog/2026-10-29-running-local-dev-services-with-nix",
-   "title": "Tweag I/O: Running local development services",
-   "sources": [
-    "planethaskell",
-    "tweag"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "tweag",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://rg3.name/202611091721.html",
-   "title": "Ricardo Garcia: XDC 2026 CTS Talk",
-   "sources": [
-    "planetfreedesktop",
-    "planetigalia"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "planetfreedesktop",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.theguardian.com/info/2024/sep/23/cooking-up-recipe-data-for-the-feast-app",
-   "title": "Cooking up recipe data for the Feast app",
-   "sources": [
-    "guardianco",
-    "theguardian"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "guardianco",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://12daysofweb.dev/2024/css-light-dark",
-   "title": "CSS light-dark()",
-   "sources": [
-    "12daysofweb",
-    "mayank"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "mayank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://benmyers.dev/blog/blog-questions-2025",
-   "title": "Tag, You’re It: Blog Questions 2025",
-   "sources": [
-    "benmyers",
-    "w3blog5"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "benmyers",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://kittygiraudel.com/2026/11/01/playing-with-css-layers/index.md",
-   "title": "Playing with CSS Layers",
-   "sources": [
-    "hugogiraudel",
-    "kittygiraudel"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "kittygiraudel",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://podcasts.androidauthority.com/fin-part-deux",
-   "title": "Fin Part Deux",
-   "sources": [
-    "androidauthoritypod",
-    "rss2"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "androidauthoritypod",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.lyric.im/p/understanding-agent-02-data-is-code-code-is-data",
-   "title": "用开发 Agent 理解 Agent 02：数据即代码，代码即数据",
-   "sources": [
-    "lyricim",
-    "lyricquail"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "lyricquail",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://blog.ops-coffee.com/r/2026-southwest-road-trip-14-beipanjiang.html",
-   "title": "向云端｜西南自驾14 - 北盘江",
-   "sources": [
-    "blog",
-    "blog21"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "blog",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://jimmysong.io/blog/deepseek-harness-plugin-experience",
-   "title": "DeepSeek Harness First Impressions: Architecture, the Plugin Market, and the 20 Plugins That Stayed",
-   "sources": [
-    "jimmysong",
-    "w4jimmysong"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "jimmysong",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "http://wwj718.github.io/post/%e8%af%97%e8%af%8d/yulongwan-xunshan",
-   "title": "玉龙湾 巡山",
-   "sources": [
-    "w4wwj718",
-    "wwj718"
-   ],
-   "days": 1,
-   "best": {
-    "score": 15,
-    "metric": "feed rank",
-    "source": "wwj718",
-    "date": "2026-11-15"
    }
   }
  ]

@@ -349,7 +349,7 @@ def emit_gone(now):
         u = (it.get("url") or "").split("?")[0].rstrip("/")
         if u:
             today_urls.add(u)
-    snaps = sorted(glob.glob(os.path.join(ROOT, "data", "daily", "*.json")))
+    snaps = sorted(glob.glob(os.path.join(ROOT, "data", "daily", "*.json.gz")))
     today_date = latest.get("latest_snapshot", latest.get("date", ""))
     prev = None
     for p in reversed(snaps):
@@ -359,7 +359,8 @@ def emit_gone(now):
             break
     gone = []
     if prev:
-        pd = json.load(open(prev, encoding="utf-8"))
+        import gzip
+        pd = json.load(gzip.open(prev, "rt", encoding="utf-8"))
         pit = pd.get("items", {})
         if isinstance(pit, dict):
             pit = [it for v in pit.values() for it in v]
@@ -393,7 +394,7 @@ def emit_meta(now):
         sources = sorted({i.get("source") for i in lit})
         item_count = len(lit)
     snaps = sorted(os.path.basename(p)[:10]
-                   for p in glob.glob(os.path.join(ROOT, "data", "daily", "*.json")))
+                   for p in glob.glob(os.path.join(ROOT, "data", "daily", "*.json.gz")))
     endpoints = sorted(os.path.basename(p)
                        for p in glob.glob(os.path.join(API, "*.json"))
                        if os.path.basename(p) != "meta.json")

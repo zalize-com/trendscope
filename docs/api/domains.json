@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-15T22:14:58.517160+00:00",
- "latest_snapshot": "2026-11-15",
- "total": 2674,
+ "generated_at": "2026-11-16T04:15:06.897417+00:00",
+ "latest_snapshot": "2026-11-16",
+ "total": 9230,
  "domains": [
   {
    "hostname": "blog.google",
-   "days_on_board": 4,
-   "items": 33,
+   "days_on_board": 5,
+   "items": 63,
    "sources": [
     "googleblog",
     "hackernews",
@@ -22,11 +22,13 @@
   },
   {
    "hostname": "theguardian.com",
-   "days_on_board": 3,
-   "items": 33,
+   "days_on_board": 4,
+   "items": 94,
    "sources": [
+    "eb_guardian",
     "guardianco",
     "hackernews",
+    "sec_the_guardian",
     "theguardian",
     "w4feeds4"
    ],
@@ -40,8 +42,8 @@
   },
   {
    "hostname": "reuters.com",
-   "days_on_board": 3,
-   "items": 5,
+   "days_on_board": 4,
+   "items": 8,
    "sources": [
     "daringfireball",
     "hackernews",
@@ -57,8 +59,8 @@
   },
   {
    "hostname": "twitter.com",
-   "days_on_board": 3,
-   "items": 4,
+   "days_on_board": 4,
+   "items": 5,
    "sources": [
     "hackernews",
     "w4feeds4"
@@ -69,6 +71,636 @@
     "score": 923,
     "metric": "points",
     "date": "2026-11-13"
+   }
+  },
+  {
+   "hostname": "reddit.com",
+   "days_on_board": 3,
+   "items": 1158,
+   "sources": [
+    "br_homepage_piotr_migda",
+    "br_nelson_s_linkblog",
+    "hackernews",
+    "k8s",
+    "rangular",
+    "rartificial",
+    "raskprogramming",
+    "raws",
+    "rclojure",
+    "rcoding",
+    "rcompsci",
+    "rcpp",
+    "rdartlang",
+    "rdataengineering",
+    "rdatascience",
+    "rdevops",
+    "rdjango",
+    "rdocker",
+    "rdotnet",
+    "reddit",
+    "relixir",
+    "relm",
+    "rexperienceddevs",
+    "rfrontend",
+    "rgamedev",
+    "rgolang",
+    "rhaskell",
+    "rjava",
+    "rjavascript",
+    "rkotlin",
+    "rkubernetes",
+    "rlaravel",
+    "rlisp",
+    "rmongodb",
+    "rnetsec",
+    "rnextjs",
+    "rnode",
+    "ropensource",
+    "rphp",
+    "rpostgresql",
+    "rprogramming",
+    "rpython",
+    "rreactjs",
+    "rredis",
+    "rrust",
+    "rscala",
+    "rselfhosted",
+    "rsveltejs",
+    "rswift",
+    "rsysadmin",
+    "rtechnology",
+    "rtypescript",
+    "rwebdesign",
+    "rwebdev"
+   ],
+   "top_hit": {
+    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+    "score": 382,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
+   "hostname": "youtube.com",
+   "days_on_board": 3,
+   "items": 1127,
+   "sources": [
+    "br_blog_ankush_menat",
+    "br_jeff_huleatt",
+    "br_nelson_s_linkblog",
+    "br_rachel_kaufman_developer",
+    "br_technical_inconsistencies_blog",
+    "br_trickjarrett_com_semper_ad_meliora",
+    "bret",
+    "caseyliss",
+    "changhai",
+    "daringfireball",
+    "hackernews",
+    "hnrss",
+    "industrialempathy",
+    "jankfree",
+    "jmesnil",
+    "k8s",
+    "kooslooijesteijn",
+    "mko",
+    "patrickbrosset",
+    "planeterlang",
+    "pomb",
+    "sidebar",
+    "waxy",
+    "yt_3blue1brown",
+    "yt_academind",
+    "yt_asianometry",
+    "yt_beneater",
+    "yt_beyondfireship",
+    "yt_brancheducation",
+    "yt_codevolution",
+    "yt_codinggarden",
+    "yt_codingtech",
+    "yt_codingwithjohn",
+    "yt_codingwithlewis",
+    "yt_computerphile",
+    "yt_cppcon",
+    "yt_dreamsofcode",
+    "yt_fireship",
+    "yt_freecodecamp",
+    "yt_garyexplains",
+    "yt_goto",
+    "yt_hak5",
+    "yt_husseinnasser",
+    "yt_hyperplexed",
+    "yt_iamtimcorey",
+    "yt_javidx9",
+    "yt_joshtriedcoding",
+    "yt_liveoverflow",
+    "yt_netninja",
+    "yt_networkchuck",
+    "yt_petecodes",
+    "yt_pyconus",
+    "yt_sebastianlague",
+    "yt_sentdex",
+    "yt_statquest",
+    "yt_techworldwithnana",
+    "yt_thecodingtrain",
+    "yt_theo",
+    "yt_theprimeagen",
+    "yt_traversymedia",
+    "yt_twominutepapers",
+    "yt_webdevsimplified",
+    "yt_wesbos",
+    "yt_yannickilcher"
+   ],
+   "top_hit": {
+    "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+    "score": 444,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
+   "hostname": "npmjs.com",
+   "days_on_board": 3,
+   "items": 72,
+   "sources": [
+    "npm"
+   ],
+   "top_hit": {
+    "title": "zod",
+    "url": "https://www.npmjs.com/package/zod",
+    "score": 460607664,
+    "metric": "weekly downloads",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "hostname": "blog.janestreet.com",
+   "days_on_board": 3,
+   "items": 64,
+   "sources": [
+    "blogjanestreet",
+    "blogsjanestreet",
+    "lobsters",
+    "v2ocaml"
+   ],
+   "top_hit": {
+    "title": "Writing a DSL for high performance parallel programming in OxCaml",
+    "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "github.blog",
+   "days_on_board": 3,
+   "items": 51,
+   "sources": [
+    "eb_github_old",
+    "github_eng",
+    "githubengineering",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "GitHub New pull request overview page in public preview",
+    "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+    "score": 196,
+    "metric": "points",
+    "date": "2026-11-07"
+   }
+  },
+  {
+   "hostname": "nytimes.com",
+   "days_on_board": 3,
+   "items": 51,
+   "sources": [
+    "bostocks",
+    "daringfireball",
+    "hackernews",
+    "hnrss",
+    "rss4"
+   ],
+   "top_hit": {
+    "title": "Jensen Huang said to have had relationship with executive who reports to him",
+    "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+    "score": 410,
+    "metric": "points",
+    "date": "2026-11-11"
+   }
+  },
+  {
+   "hostname": "wired.com",
+   "days_on_board": 3,
+   "items": 50,
+   "sources": [
+    "azure",
+    "daringfireball",
+    "hackernews",
+    "sec_wired",
+    "wired"
+   ],
+   "top_hit": {
+    "title": "Nvidia employees petition to bring back Jensen Huang",
+    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+    "score": 811,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
+   "hostname": "arxiv.org",
+   "days_on_board": 3,
+   "items": 48,
+   "sources": [
+    "arxiv",
+    "evanmiller",
+    "lobsters"
+   ],
+   "top_hit": {
+    "title": "Unbundling Multimodal Vision Encoding",
+    "url": "http://arxiv.org/abs/2611.17334v1",
+    "score": 15,
+    "metric": "arxiv recent",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "simonwillison.net",
+   "days_on_board": 3,
+   "items": 36,
+   "sources": [
+    "br_nelson_s_linkblog",
+    "hackernews",
+    "simonw"
+   ],
+   "top_hit": {
+    "title": "Locating the source of a mysterious beep",
+    "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+    "score": 331,
+    "metric": "points",
+    "date": "2026-11-10"
+   }
+  },
+  {
+   "hostname": "theverge.com",
+   "days_on_board": 3,
+   "items": 34,
+   "sources": [
+    "br_hearthside_by_caleb_hearth",
+    "hackernews",
+    "theverge"
+   ],
+   "top_hit": {
+    "title": "I asked every TV manufacturer 17 questions about how they spy on you",
+    "url": "https://www.theverge.com/tech/1012372/tv-privacy-acr-questions",
+    "score": 378,
+    "metric": "points",
+    "date": "2026-11-11"
+   }
+  },
+  {
+   "hostname": "9to5mac.com",
+   "days_on_board": 3,
+   "items": 33,
+   "sources": [
+    "9to5mac",
+    "br_posts_from_iamgregb",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Apple has new Mac app coming to make running local AI models easy",
+    "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+    "score": 569,
+    "metric": "points",
+    "date": "2026-11-10"
+   }
+  },
+  {
+   "hostname": "eff.org",
+   "days_on_board": 3,
+   "items": 32,
+   "sources": [
+    "eff",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Tech Companies Are Trying to Shift the Concept of Privacy (Again)",
+    "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+    "score": 339,
+    "metric": "points",
+    "date": "2026-11-14"
+   }
+  },
+  {
+   "hostname": "jefftk.com",
+   "days_on_board": 3,
+   "items": 32,
+   "sources": [
+    "hackernews",
+    "jefftk"
+   ],
+   "top_hit": {
+    "title": "Testing a trash can Faraday cage",
+    "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
+    "score": 72,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "projectzero.google",
+   "days_on_board": 3,
+   "items": 32,
+   "sources": [
+    "googleprojectzero",
+    "hackernews",
+    "sec_google_project_zero_legacy"
+   ],
+   "top_hit": {
+    "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
+    "url": "https://projectzero.google/2026/11/disclosure-policy.html",
+    "score": 220,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "muratbuffalo.blogspot.com",
+   "days_on_board": 3,
+   "items": 31,
+   "sources": [
+    "hackernews",
+    "murat"
+   ],
+   "top_hit": {
+    "title": "Writing as a thinking tool",
+    "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
+    "score": 475,
+    "metric": "points",
+    "date": "2026-11-08"
+   }
+  },
+  {
+   "hostname": "deepmind.google",
+   "days_on_board": 3,
+   "items": 31,
+   "sources": [
+    "deepmind",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "AlphaProof Code",
+    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "score": 678,
+    "metric": "points",
+    "date": "2026-11-10"
+   }
+  },
+  {
+   "hostname": "lwn.net",
+   "days_on_board": 3,
+   "items": 31,
+   "sources": [
+    "hackernews",
+    "lwn"
+   ],
+   "top_hit": {
+    "title": "Synaptics patent claims stop work on DisplayLink drivers",
+    "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+    "score": 491,
+    "metric": "points",
+    "date": "2026-11-10"
+   }
+  },
+  {
+   "hostname": "cnn.com",
+   "days_on_board": 3,
+   "items": 31,
+   "sources": [
+    "hackernews",
+    "w4rss3"
+   ],
+   "top_hit": {
+    "title": "Global Microsoft Outage",
+    "url": "https://www.cnn.com/2026/11/12/business/live-news/microsoft-global-outage-intl-hnk",
+    "score": 292,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
+   "hostname": "garymarcus.substack.com",
+   "days_on_board": 3,
+   "items": 31,
+   "sources": [
+    "garymarcus",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Eli Lilly CEO pushes back on Dario Amodei's medical claims",
+    "url": "https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest",
+    "score": 269,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
+   "hostname": "aphyr.com",
+   "days_on_board": 3,
+   "items": 27,
+   "sources": [
+    "aphyr",
+    "hackernews",
+    "planetclojure"
+   ],
+   "top_hit": {
+    "title": "RIP, Harvest",
+    "url": "https://aphyr.com/posts/427-rip-harvest",
+    "score": 445,
+    "metric": "points",
+    "date": "2026-11-09"
+   }
+  },
+  {
+   "hostname": "blog.rust-lang.org",
+   "days_on_board": 3,
+   "items": 25,
+   "sources": [
+    "blogrustlang",
+    "eb_mozilla_automation_team",
+    "hackernews",
+    "lemmy"
+   ],
+   "top_hit": {
+    "title": "Rust 1.100",
+    "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+    "score": 890,
+    "metric": "points",
+    "date": "2026-11-12"
+   }
+  },
+  {
+   "hostname": "zwischenzugs.com",
+   "days_on_board": 3,
+   "items": 23,
+   "sources": [
+    "hackernews",
+    "lobsters",
+    "zwischenzugs"
+   ],
+   "top_hit": {
+    "title": "A family tree of software job titles",
+    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+    "score": 265,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "brave.com",
+   "days_on_board": 3,
+   "items": 21,
+   "sources": [
+    "brave",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Brave Search API now accepts agentic payments via the x402 protocol",
+    "url": "https://brave.com/blog/search-api-agentic-payments/",
+    "score": 260,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
+   "hostname": "blog.ovalerio.net",
+   "days_on_board": 3,
+   "items": 17,
+   "sources": [
+    "br_gon_alo_val_rio_thoughts_projects_and_so",
+    "lobsters"
+   ],
+   "top_hit": {
+    "title": "The need for at least a third option",
+    "url": "https://blog.ovalerio.net/archives/3359",
+    "score": 85,
+    "metric": "score",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "mattbee.mataroa.blog",
+   "days_on_board": 3,
+   "items": 17,
+   "sources": [
+    "br_a_lovely_harmless_monster",
+    "lobsters"
+   ],
+   "top_hit": {
+    "title": "Someone's impersonating this blog",
+    "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/",
+    "score": 46,
+    "metric": "score",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "righto.com",
+   "days_on_board": 3,
+   "items": 17,
+   "sources": [
+    "br_ken_shirriff_s_blog",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Reverse engineering a vintage diode-transistor logic chip",
+    "url": "https://www.righto.com/2026/11/signetics-st680a-dtl-nand.html",
+    "score": 106,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "antonz.org",
+   "days_on_board": 3,
+   "items": 12,
+   "sources": [
+    "br_anton_zhiyanov",
+    "lobsters"
+   ],
+   "top_hit": {
+    "title": "Probabilistic data structures in Go",
+    "url": "https://antonz.org/probabilistic-data-structures/",
+    "score": 62,
+    "metric": "score",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "eli.thegreenplace.net",
+   "days_on_board": 3,
+   "items": 12,
+   "sources": [
+    "bendersky",
+    "hackernews",
+    "lobsters"
+   ],
+   "top_hit": {
+    "title": "Making any integer with four 2s (2025)",
+    "url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
+    "score": 224,
+    "metric": "points",
+    "date": "2026-11-07"
+   }
+  },
+  {
+   "hostname": "blog.sesse.net",
+   "days_on_board": 3,
+   "items": 4,
+   "sources": [
+    "lobsters",
+    "planetdebian"
+   ],
+   "top_hit": {
+    "title": "Solving the fox game",
+    "url": "http://blog.sesse.net/blog/tech/2026-11-13-19-51_solving_the_fox_game.html",
+    "score": 19,
+    "metric": "score",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "anthropic.com",
+   "days_on_board": 3,
+   "items": 4,
+   "sources": [
+    "br_reid_burke_reid_software_engineer",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Claude Fable 5.2 and Mythos 5.2",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+    "score": 1000,
+    "metric": "points",
+    "date": "2026-11-09"
+   }
+  },
+  {
+   "hostname": "wsj.com",
+   "days_on_board": 3,
+   "items": 4,
+   "sources": [
+    "br_tiny_subversions_darius_kazemi",
+    "daringfireball",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Nvidia is preparing to oust Jensen Huang",
+    "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+    "score": 1224,
+    "metric": "points",
+    "date": "2026-11-11"
    }
   },
   {
@@ -103,739 +735,24 @@
    }
   },
   {
-   "hostname": "reddit.com",
-   "days_on_board": 2,
-   "items": 733,
-   "sources": [
-    "hackernews",
-    "k8s",
-    "rangular",
-    "rartificial",
-    "raskprogramming",
-    "raws",
-    "rclojure",
-    "rcoding",
-    "rcompsci",
-    "rdartlang",
-    "rdataengineering",
-    "rdatascience",
-    "rdevops",
-    "rdjango",
-    "rdocker",
-    "rdotnet",
-    "reddit",
-    "relixir",
-    "relm",
-    "rexperienceddevs",
-    "rfrontend",
-    "rgamedev",
-    "rgolang",
-    "rhaskell",
-    "rjava",
-    "rjavascript",
-    "rkotlin",
-    "rkubernetes",
-    "rlisp",
-    "rmongodb",
-    "rnetsec",
-    "rnextjs",
-    "rnode",
-    "ropensource",
-    "rphp",
-    "rprogramming",
-    "rpython",
-    "rreactjs",
-    "rredis",
-    "rrust",
-    "rscala",
-    "rselfhosted",
-    "rsveltejs",
-    "rswift",
-    "rsysadmin",
-    "rtechnology",
-    "rtypescript",
-    "rwebdesign",
-    "rwebdev"
-   ],
-   "top_hit": {
-    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
-    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
-    "score": 382,
-    "metric": "points",
-    "date": "2026-11-13"
-   }
-  },
-  {
-   "hostname": "npmjs.com",
-   "days_on_board": 2,
-   "items": 48,
-   "sources": [
-    "npm"
-   ],
-   "top_hit": {
-    "title": "zod",
-    "url": "https://www.npmjs.com/package/zod",
-    "score": 456795275,
-    "metric": "weekly downloads",
-    "date": "2026-11-14"
-   }
-  },
-  {
-   "hostname": "youtube.com",
-   "days_on_board": 2,
-   "items": 34,
-   "sources": [
-    "bret",
-    "caseyliss",
-    "changhai",
-    "daringfireball",
-    "hackernews",
-    "hnrss",
-    "industrialempathy",
-    "jankfree",
-    "jmesnil",
-    "k8s",
-    "kooslooijesteijn",
-    "mko",
-    "patrickbrosset",
-    "planeterlang",
-    "pomb",
-    "waxy"
-   ],
-   "top_hit": {
-    "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
-    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
-    "score": 444,
-    "metric": "points",
-    "date": "2026-11-13"
-   }
-  },
-  {
-   "hostname": "blog.janestreet.com",
-   "days_on_board": 2,
-   "items": 33,
-   "sources": [
-    "blogjanestreet",
-    "blogsjanestreet",
-    "lobsters",
-    "v2ocaml"
-   ],
-   "top_hit": {
-    "title": "Writing a DSL for high performance parallel programming in OxCaml",
-    "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "nytimes.com",
-   "days_on_board": 2,
-   "items": 26,
-   "sources": [
-    "bostocks",
-    "daringfireball",
-    "hackernews",
-    "hnrss",
-    "rss4"
-   ],
-   "top_hit": {
-    "title": "Jensen Huang said to have had relationship with executive who reports to him",
-    "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
-    "score": 410,
-    "metric": "points",
-    "date": "2026-11-11"
-   }
-  },
-  {
-   "hostname": "theverge.com",
-   "days_on_board": 2,
-   "items": 22,
-   "sources": [
-    "hackernews",
-    "theverge"
-   ],
-   "top_hit": {
-    "title": "I asked every TV manufacturer 17 questions about how they spy on you",
-    "url": "https://www.theverge.com/tech/1012372/tv-privacy-acr-questions",
-    "score": 378,
-    "metric": "points",
-    "date": "2026-11-11"
-   }
-  },
-  {
-   "hostname": "github.blog",
-   "days_on_board": 2,
-   "items": 21,
-   "sources": [
-    "github_eng",
-    "githubengineering",
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "GitHub New pull request overview page in public preview",
-    "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
-    "score": 196,
-    "metric": "points",
-    "date": "2026-11-07"
-   }
-  },
-  {
-   "hostname": "wired.com",
-   "days_on_board": 2,
-   "items": 18,
-   "sources": [
-    "azure",
-    "daringfireball",
-    "hackernews",
-    "wired"
-   ],
-   "top_hit": {
-    "title": "Nvidia employees petition to bring back Jensen Huang",
-    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
-    "score": 811,
-    "metric": "points",
-    "date": "2026-11-13"
-   }
-  },
-  {
-   "hostname": "eff.org",
-   "days_on_board": 2,
-   "items": 17,
-   "sources": [
-    "eff",
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Tech Companies Are Trying to Shift the Concept of Privacy (Again)",
-    "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
-    "score": 339,
-    "metric": "points",
-    "date": "2026-11-14"
-   }
-  },
-  {
-   "hostname": "jefftk.com",
-   "days_on_board": 2,
-   "items": 17,
-   "sources": [
-    "hackernews",
-    "jefftk"
-   ],
-   "top_hit": {
-    "title": "Testing a trash can Faraday cage",
-    "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
-    "score": 72,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "arxiv.org",
-   "days_on_board": 2,
-   "items": 17,
-   "sources": [
-    "arxiv",
-    "evanmiller",
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "Unbundling Multimodal Vision Encoding",
-    "url": "http://arxiv.org/abs/2611.17334v1",
-    "score": 15,
-    "metric": "arxiv recent",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "9to5mac.com",
-   "days_on_board": 2,
-   "items": 17,
-   "sources": [
-    "9to5mac",
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Apple has new Mac app coming to make running local AI models easy",
-    "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
-    "score": 569,
-    "metric": "points",
-    "date": "2026-11-10"
-   }
-  },
-  {
-   "hostname": "muratbuffalo.blogspot.com",
-   "days_on_board": 2,
-   "items": 16,
-   "sources": [
-    "hackernews",
-    "murat"
-   ],
-   "top_hit": {
-    "title": "Writing as a thinking tool",
-    "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
-    "score": 475,
-    "metric": "points",
-    "date": "2026-11-08"
-   }
-  },
-  {
-   "hostname": "deepmind.google",
-   "days_on_board": 2,
-   "items": 16,
-   "sources": [
-    "deepmind",
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "AlphaProof Code",
-    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-    "score": 678,
-    "metric": "points",
-    "date": "2026-11-10"
-   }
-  },
-  {
-   "hostname": "lwn.net",
-   "days_on_board": 2,
-   "items": 16,
-   "sources": [
-    "hackernews",
-    "lwn"
-   ],
-   "top_hit": {
-    "title": "Synaptics patent claims stop work on DisplayLink drivers",
-    "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
-    "score": 491,
-    "metric": "points",
-    "date": "2026-11-10"
-   }
-  },
-  {
-   "hostname": "simonwillison.net",
-   "days_on_board": 2,
-   "items": 16,
-   "sources": [
-    "hackernews",
-    "simonw"
-   ],
-   "top_hit": {
-    "title": "Locating the source of a mysterious beep",
-    "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
-    "score": 331,
-    "metric": "points",
-    "date": "2026-11-10"
-   }
-  },
-  {
-   "hostname": "cnn.com",
-   "days_on_board": 2,
-   "items": 16,
-   "sources": [
-    "hackernews",
-    "w4rss3"
-   ],
-   "top_hit": {
-    "title": "Global Microsoft Outage",
-    "url": "https://www.cnn.com/2026/11/12/business/live-news/microsoft-global-outage-intl-hnk",
-    "score": 292,
-    "metric": "points",
-    "date": "2026-11-13"
-   }
-  },
-  {
-   "hostname": "aphyr.com",
-   "days_on_board": 2,
-   "items": 14,
-   "sources": [
-    "aphyr",
-    "hackernews",
-    "planetclojure"
-   ],
-   "top_hit": {
-    "title": "RIP, Harvest",
-    "url": "https://aphyr.com/posts/427-rip-harvest",
-    "score": 445,
-    "metric": "points",
-    "date": "2026-11-09"
-   }
-  },
-  {
-   "hostname": "zwischenzugs.com",
-   "days_on_board": 2,
-   "items": 13,
-   "sources": [
-    "hackernews",
-    "lobsters",
-    "zwischenzugs"
-   ],
-   "top_hit": {
-    "title": "A family tree of software job titles",
-    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
-    "score": 265,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "blog.rust-lang.org",
-   "days_on_board": 2,
-   "items": 12,
-   "sources": [
-    "blogrustlang",
-    "hackernews",
-    "lemmy"
-   ],
-   "top_hit": {
-    "title": "Rust 1.100",
-    "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
-    "score": 890,
-    "metric": "points",
-    "date": "2026-11-12"
-   }
-  },
-  {
-   "hostname": "projectzero.google",
-   "days_on_board": 2,
-   "items": 12,
-   "sources": [
-    "googleprojectzero",
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
-    "url": "https://projectzero.google/2026/11/disclosure-policy.html",
-    "score": 220,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "brave.com",
-   "days_on_board": 2,
-   "items": 11,
-   "sources": [
-    "brave",
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Brave Search API now accepts agentic payments via the x402 protocol",
-    "url": "https://brave.com/blog/search-api-agentic-payments/",
-    "score": 260,
-    "metric": "points",
-    "date": "2026-11-13"
-   }
-  },
-  {
-   "hostname": "eli.thegreenplace.net",
-   "days_on_board": 2,
-   "items": 7,
-   "sources": [
-    "bendersky",
-    "hackernews",
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "Making any integer with four 2s (2025)",
-    "url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
-    "score": 224,
-    "metric": "points",
-    "date": "2026-11-07"
-   }
-  },
-  {
-   "hostname": "blog.sesse.net",
-   "days_on_board": 2,
-   "items": 3,
-   "sources": [
-    "lobsters",
-    "planetdebian"
-   ],
-   "top_hit": {
-    "title": "Solving the fox game",
-    "url": "http://blog.sesse.net/blog/tech/2026-11-13-19-51_solving_the_fox_game.html",
-    "score": 19,
-    "metric": "score",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "anthropic.com",
-   "days_on_board": 2,
-   "items": 3,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Claude Fable 5.2 and Mythos 5.2",
-    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-    "score": 1000,
-    "metric": "points",
-    "date": "2026-11-09"
-   }
-  },
-  {
-   "hostname": "wsj.com",
-   "days_on_board": 2,
-   "items": 3,
-   "sources": [
-    "daringfireball",
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Nvidia is preparing to oust Jensen Huang",
-    "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
-    "score": 1224,
-    "metric": "points",
-    "date": "2026-11-11"
-   }
-  },
-  {
-   "hostname": "crissyfield.de",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Lovable apps expose passport details and more than 200K private messages",
-    "url": "https://www.crissyfield.de/research/lovable-en/",
-    "score": 743,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "tube.kockatoo.org",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "KDE: The documentary [video]",
-    "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
-    "score": 430,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "blog.pypi.org",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "PyPI's redesigned project pages with clearer security signals are now live",
-    "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
-    "score": 225,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "news.umich.edu",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Generative AI uses more energy on non-English text",
-    "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
-    "score": 196,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "research.google",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Advancing science and engineering with Antigravity's /teamwork",
-    "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
-    "score": 188,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "gitlab.com",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
-    "url": "https://gitlab.com/snipedbywifi/terminactory",
-    "score": 151,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "lexifina.com",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews",
-    "lemmy"
-   ],
-   "top_hit": {
-    "title": "Formalizing US Tax Code (Using Lean)",
-    "url": "https://lexifina.com/blog/formalizing-the-us-tax-code",
-    "score": 104,
-    "metric": "points",
-    "date": "2026-11-14"
-   }
-  },
-  {
-   "hostname": "alichraghi.github.io",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "How Not to Build a Music Player",
-    "url": "https://alichraghi.github.io/blog/how-not-to-build-a-music-player",
-    "score": 113,
-    "metric": "score",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "blog.ovalerio.net",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "The need for at least a third option",
-    "url": "https://blog.ovalerio.net/archives/3359",
-    "score": 85,
-    "metric": "score",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "antonz.org",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "Probabilistic data structures in Go",
-    "url": "https://antonz.org/probabilistic-data-structures/",
-    "score": 62,
-    "metric": "score",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "decoded.legal",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews",
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "Running a law firm on Free software",
-    "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
-    "score": 310,
-    "metric": "points",
-    "date": "2026-11-07"
-   }
-  },
-  {
-   "hostname": "mattbee.mataroa.blog",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "Someone's impersonating this blog",
-    "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/",
-    "score": 46,
-    "metric": "score",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "dfarq.homeip.net",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "What happened to 3com?",
-    "url": "https://dfarq.homeip.net/what-happened-to-3com/",
-    "score": 33,
-    "metric": "score",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "goliath32.com",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "Creating a self booting ZIP archive",
-    "url": "https://goliath32.com/blog/ziphead.html",
-    "score": 18,
-    "metric": "score",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "willett.io",
-   "days_on_board": 2,
-   "items": 2,
+   "days_on_board": 3,
+   "items": 3,
    "sources": [
     "lobsters"
    ],
    "top_hit": {
     "title": "Let Me Let You Own Your Data",
     "url": "https://www.willett.io/posts/data/",
-    "score": 31,
+    "score": 45,
     "metric": "score",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "science.org",
-   "days_on_board": 2,
-   "items": 2,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Doomsday: Friday, 13 November, A.D. 2026 (1960)",
-    "url": "https://www.science.org/doi/10.1126/science.132.3436.1291",
-    "score": 487,
-    "metric": "points",
-    "date": "2026-11-13"
+    "date": "2026-11-16"
    }
   },
   {
    "hostname": "chimera-vocal-synth.vercel.app",
-   "days_on_board": 2,
-   "items": 2,
+   "days_on_board": 3,
+   "items": 3,
    "sources": [
     "hackernews",
     "waxy"
@@ -850,16 +767,225 @@
   },
   {
    "hostname": "spacex.com",
-   "days_on_board": 2,
-   "items": 2,
+   "days_on_board": 3,
+   "items": 3,
    "sources": [
     "hackernews"
    ],
    "top_hit": {
     "title": "SpaceX catches the Starship to end Flight 15",
     "url": "https://www.spacex.com/launches/starship-flight-15",
-    "score": 995,
+    "score": 1638,
     "metric": "points",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "hostname": "mp.weixin.qq.com",
+   "days_on_board": 2,
+   "items": 525,
+   "sources": [
+    "42jing",
+    "alimiddle",
+    "baidusec",
+    "bilibilitech",
+    "bytetech",
+    "datawhale",
+    "dewutech",
+    "fusheng",
+    "iqiyitech",
+    "jiqizhixin",
+    "meituantech",
+    "mlbeginner",
+    "paperweekly",
+    "qbitaigzh",
+    "tencenttech",
+    "wxandroid",
+    "xiaomitech",
+    "xinzhi"
+   ],
+   "top_hit": {
+    "title": "锐评国模与 Neo Lab，畅谈 RLaaS｜42章经",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzIyMDE5OTYyMw==&mid=2651051702&idx=1&sn=3e3de13864f10d39ac09c31c581e1503",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "medium.com",
+   "days_on_board": 2,
+   "items": 178,
+   "sources": [
+    "airbnb",
+    "betterprog",
+    "bostocks",
+    "br_buster_s_notes_notes",
+    "br_joakim_ahnfelt_r_nne",
+    "br_mediumx",
+    "eb_brujo_benavides",
+    "eb_daniel_schmidt",
+    "eb_kirill_shevchenko",
+    "eb_pinterest",
+    "k8s",
+    "norvig",
+    "peteroshaughnessy",
+    "pinterest",
+    "sec_raghavti_research",
+    "sec_rst_cloud",
+    "sec_tal_be_ery",
+    "tb_akanksha_raghav",
+    "tb_bleyl_dev",
+    "tb_lakin_mohapatra",
+    "tb_pasindu_kavinda",
+    "zsmb"
+   ],
+   "top_hit": {
+    "title": "A Better Way to Code",
+    "url": "https://medium.com/@mbostock/a-better-way-to-code-2b1d2876a3a0",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "changelog.com",
+   "days_on_board": 2,
+   "items": 135,
+   "sources": [
+    "changelog",
+    "changelogships",
+    "gotime",
+    "jsparty",
+    "nl_changelog"
+   ],
+   "top_hit": {
+    "title": "Bitwarden CLI compromised",
+    "url": "https://changelog.com/news/185",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "x.com",
+   "days_on_board": 2,
+   "items": 129,
+   "sources": [
+    "api",
+    "br_reid_burke_reid_software_engineer",
+    "daringfireball",
+    "industrialempathy",
+    "w3api",
+    "xgo5b632",
+    "xgo831fa"
+   ],
+   "top_hit": {
+    "title": "持械入宋第11季更新了 快来看看详细的地图解析 这条昨晚在抖音发，不到一天已经3000赞 陆陆续续改了12个版本成型",
+    "url": "https://x.com/PMbackttfuture/status/2121941825909072294",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "lore.kernel.org",
+   "days_on_board": 2,
+   "items": 90,
+   "sources": [
+    "lorekernel"
+   ],
+   "top_hit": {
+    "title": "Replication probe 2026-11-15T22:10Z",
+    "url": "https://lore.kernel.org/all/179478060190.2191695.904432943329958391.replication-probe@kernel.org/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "localhost",
+   "days_on_board": 2,
+   "items": 83,
+   "sources": [
+    "br_bevel_work",
+    "br_blog_jeffrey_moro",
+    "br_hello_i_m_clayton",
+    "br_mixed_laterality",
+    "coderyi",
+    "logtalk"
+   ],
+   "top_hit": {
+    "title": "Everything is Free",
+    "url": "http://localhost:1313/blog/2026-11-08-everything-is-free.html",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "hostname": "aws.amazon.com",
+   "days_on_board": 2,
+   "items": 75,
+   "sources": [
+    "aws_blog",
+    "awsarchitectureblo",
+    "sec_aws_security"
+   ],
+   "top_hit": {
+    "title": "Test your applications against AWS locally with AWS Emulator",
+    "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "producthunt.com",
+   "days_on_board": 2,
+   "items": 70,
+   "sources": [
+    "br_nelson_s_linkblog",
+    "producthunt"
+   ],
+   "top_hit": {
+    "title": "MAP & GO!",
+    "url": "https://www.producthunt.com/products/expert-chase-deleted-1107920",
+    "score": 20,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "relay.fm",
+   "days_on_board": 2,
+   "items": 62,
+   "sources": [
+    "caseyliss",
+    "relay",
+    "undertheradar"
+   ],
+   "top_hit": {
+    "title": "255: A Rigid Phone?!",
+    "url": "http://relay.fm/analogue/255",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "theregister.com",
+   "days_on_board": 2,
+   "items": 60,
+   "sources": [
+    "sec_the_register",
+    "theregister"
+   ],
+   "top_hit": {
+    "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
+    "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632",
+    "score": 15,
+    "metric": "feed rank",
     "date": "2026-11-15"
    }
   }

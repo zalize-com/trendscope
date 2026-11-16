@@ -25,7 +25,7 @@ def load_history():
 
 
 def main():
-    files = sorted(glob.glob(os.path.join(DATA_DIR, "daily", "????-??-??.json")))
+    files = sorted(glob.glob(os.path.join(DATA_DIR, "daily", "????-??-??.json.gz")))
     date = sys.argv[1] if len(sys.argv) > 1 else (os.path.basename(files[-1])[:10] if files else None)
     if not date:
         print("no daily snapshots", file=sys.stderr)

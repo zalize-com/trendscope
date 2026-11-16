@@ -13,7 +13,7 @@ Sources (all keyless or token-optional):
 Outputs (the accumulating CC0 dataset):
   data/latest.json              full snapshot consumed by the dashboard
   data/latest.csv               today's items, flat CSV
-  data/daily/YYYY-MM-DD.json    daily snapshot archive (json + csv)
+  data/daily/YYYY-MM-DD.json.gz daily snapshot archive (gzipped json + csv)
   data/daily/YYYY-MM-DD.csv
   data/history.csv              cumulative flat rows for velocity analysis
   data/index.json               snapshot index

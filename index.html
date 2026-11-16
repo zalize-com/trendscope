@@ -709,7 +709,7 @@ async function main() {
     document.getElementById("hist-days").textContent =
       `${INDEX.snapshots.length} day${INDEX.snapshots.length === 1 ? "" : "s"} so far.`;
     document.getElementById("daily-links").innerHTML = INDEX.snapshots.slice(-7).reverse()
-      .map(d => `<div><a href="data/daily/${d}.json" style="color:var(--accent)">${d}.json</a>
+      .map(d => `<div><a href="data/daily/${d}.json.gz" style="color:var(--accent)">${d}.json.gz</a>
                  <a href="data/daily/${d}.csv" style="color:var(--dim);font-size:12px">.csv</a></div>`).join("");
     const cmpL = document.getElementById("cmp-link");
     if (PREV_DATE) {
