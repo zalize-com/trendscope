@@ -38,7 +38,10 @@ const {
 // ORIGIN may carry a subpath (project Pages); keep it in canonical/og URLs.
 const ORIGIN = (import.meta.env.SITE_ORIGIN
   ?? 'https://trendscope--plov6nur.preview.devinapps.com').replace(/\/+$/, '');
-const canonical = `${ORIGIN}${path}`;
+// CF Pages serves extensionless URLs (/x.html 308s to /x): canonical/og must
+// name the final URL, not the redirect hop.
+const cleanPath = path === '/index.html' ? '/' : path.replace(/\.html$/, '');
+const canonical = `${ORIGIN}${cleanPath}`;
 const ogImage = `${ORIGIN}/og.jpg`;
 const ogT = ogTitle ?? title;
 const ogD = ogDescription ?? description;

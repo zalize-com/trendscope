@@ -56,7 +56,9 @@ for page in sorted(pages):
     rel = os.path.relpath(page, ROOT)
     if os.sep in rel:
         continue
-    check(re.search(r"<loc>[^<]*/" + re.escape(rel) + r"</loc>", sitemap),
+    # sitemap locs are extensionless (CF Pages 308s .html → extensionless)
+    loc_rel = rel[:-5] if rel.endswith(".html") else rel
+    check(re.search(r"<loc>[^<]*/" + re.escape(loc_rel) + r"</loc>", sitemap),
             f"{rel}: missing from sitemap.xml")
 
 def js_string_scan(src):
@@ -168,6 +170,10 @@ for loc in re.findall(r"<loc>https?://[^/<]+/([^<]+)</loc>", sitemap):
     astro = os.path.join(ROOT, "site", "src", "pages",
                          base[:-5] + ".astro" if base.endswith(".html") else base)
     exists = os.path.exists(target) or os.path.exists(astro)
+    if not exists and not base.endswith(".html") and not base.endswith("/"):
+        # extensionless loc (CF Pages canonical form): try <base>.html / <base>.astro
+        exists = (os.path.exists(target + ".html")
+                  or os.path.exists(astro + ".astro"))
     if not exists:
         # dynamic Astro routes: daily/<lane>.html comes from daily/[lane].astro —
         # any single-segment filename matches a [param].astro in the same dir
