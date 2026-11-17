@@ -3,7 +3,7 @@ import Base from "../layouts/Base.astro";
 const title = "state of RSS — trendscope";
 const description = "A live census of 9,200+ RSS feeds: how many are alive, dormant, moved or dead — measured daily from the trendscope collection pipeline.";
 const path = '/state-of-rss.html';
-const ld = {
+const jsonld = [{
   "@context": "https://schema.org",
   "@type": "Dataset",
   "name": "State of RSS — live feed census",
@@ -11,9 +11,18 @@ const ld = {
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "creator": {"@type":"Organization","name":"trendscope"},
   "isAccessibleForFree": true
-};
+},{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Is RSS dead in 2026?","acceptedAnswer":{"@type":"Answer","text":"No. In trendscope's daily census of 9,200+ feeds, ~97% return items on a typical day — personal blogs, security research, YouTube channels and newsletters all keep publishing."}},
+    {"@type":"Question","name":"Why does a feed return zero items without being dead?","acceptedAnswer":{"@type":"Answer","text":"Most empty snapshots are rate-limit tides or network transients, not dead feeds — the membership of the empty set rotates daily. trendscope only flags a feed suspected-dead after three consecutive empty snapshots."}},
+    {"@type":"Question","name":"What is a dormant feed?","acceptedAnswer":{"@type":"Answer","text":"A feed that still serves valid XML (HTTP 200) but has published nothing in 180+ days. The endpoint stayed alive; the content ended — common with newsletters that quietly stopped."}},
+    {"@type":"Question","name":"Can I get this data?","acceptedAnswer":{"@type":"Answer","text":"Yes — the registry (data/feeds.json), health data (data/zerowatch.json, data/dormant.json) and OPML bundles are all public and CC0-licensed."}}
+  ]
+}];
 ---
-<Base title={title} description={description} path={path} nav="none" ld={ld}>
+<Base title={title} description={description} path={path} nav="none" jsonld={jsonld}>
 
 <nav><a href="index.html">← trendscope</a> · <a href="feeds.html">feed directory</a> · <a href="health.html">pipeline status</a> · <a href="datasets.html">datasets</a></nav>
   <h1>State of RSS <span>— a live census</span></h1>
@@ -43,6 +52,19 @@ const ld = {
     <p><strong>YouTube feeds are real.</strong> Every channel still exposes a working Atom feed at
     <code>youtube.com/feeds/videos.xml?channel_id=…</code> — it is one of the few major platforms
     that never turned RSS off.</p>
+  </div>
+
+  <h2>FAQ</h2>
+  <div class="findings">
+    <p><strong>Is RSS dead in 2026?</strong> No — ~97% of our 9,200+ feeds return items on a typical day.
+    Personal blogs, security research, YouTube channels and newsletters all keep publishing.</p>
+    <p><strong>Why does a feed return zero items without being dead?</strong> Rate-limit tides and
+    transients rotate daily through the empty set. Only three consecutive empty snapshots count as
+    suspected-dead.</p>
+    <p><strong>What is a dormant feed?</strong> Valid XML, HTTP 200, nothing published in 180+ days —
+    the endpoint stayed alive but the content ended.</p>
+    <p><strong>Can I get this data?</strong> Everything below is public and CC0 — registry, health
+    data, and per-lane OPML bundles.</p>
   </div>
 
   <h2>Use the data</h2>
