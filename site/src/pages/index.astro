@@ -1,5 +1,8 @@
 ---
 import Layout from '../layouts/Base.astro';
+import RailCard from '../components/RailCard.astro';
+import Section from '../components/Section.astro';
+import Card from '../components/Card.astro';
 
 const jsonld = {
   "@context": "https://schema.org",
@@ -42,10 +45,10 @@ const jsonld = {
   <div class="dash">
     <main class="dash-main">
       <div class="tabs" id="tabs"></div>
-      <input id="q" type="search" placeholder="search 107k items across all sources… ⏎ = HN 19y">
+      <input id="q" class="d-input d-input-bordered w-full" type="search" placeholder="search 107k items across all sources… ⏎ = HN 19y">
       <div id="cpk-bar" style="display:none;margin:0 0 10px">
-        <input id="cpk-input" placeholder="track an npm package — e.g. hono">
-        <a id="cpk-add" class="btn" style="margin-top:0;padding:5px 12px;cursor:pointer">+ track</a>
+        <input id="cpk-input" class="d-input d-input-bordered d-input-sm" placeholder="track an npm package — e.g. hono">
+        <a id="cpk-add" class="d-btn d-btn-sm" style="margin-top:0;cursor:pointer">+ track</a>
         <span class="muted" style="font-size:12px;margin-left:8px">saved in your browser · npm / crates:name / gh:owner/repo</span>
       </div>
       <div class="board" id="board"></div>
@@ -53,77 +56,66 @@ const jsonld = {
     </main>
 
     <aside class="rail">
-      <div class="railcard">
-        <h3>Snapshot</h3>
+      <RailCard title="Snapshot">
         <div class="stamp" id="stamp">loading…</div>
         <div class="daypick-row">
-          <select id="daypick" style="display:none"></select>
+          <select id="daypick" class="d-select d-select-bordered d-select-sm w-full" style="display:none"></select>
           <span class="muted" id="daypick-hint"></span>
         </div>
-      </div>
-      <div class="railcard">
-        <h3>Signals</h3>
+      </RailCard>
+      <RailCard title="Signals">
         <div class="status-item" id="src-health"></div>
         <div class="status-item" id="brief-link"></div>
         <div class="status-item" id="hiring-pulse"></div>
         <div class="status-item" id="month-history"></div>
-      </div>
-      <div class="railcard">
-        <h3>By topic</h3>
+      </RailCard>
+      <RailCard title="By topic">
         <div class="topics" id="topics"></div>
-      </div>
+      </RailCard>
     </aside>
   </div>
 
-  <section>
-    <h2>Topic trend <span class="sub">items per day across sources</span></h2>
+  <Section title="Topic trend" sub="items per day across sources">
     <div class="cards" id="trend-cards">
       <div class="card"><p class="muted">Collecting history…</p></div>
     </div>
-  </section>
+  </Section>
 
-  <section>
-    <h2>Rising this week <span class="sub">velocity vs. previous snapshots</span></h2>
+  <Section title="Rising this week" sub="velocity vs. previous snapshots">
     <div class="board" id="rising">
       <div class="row"><span></span><span class="muted" id="rising-empty">Loading…</span><span></span></div>
     </div>
-  </section>
+  </Section>
 
-  <section>
-    <h2>Dataset <span class="sub">CC0 — take it, use it, cite us</span></h2>
+  <Section title="Dataset" sub="CC0 — take it, use it, cite us">
     <div class="cards">
-      <div class="card">
-        <h3>Latest snapshot</h3>
+      <Card title="Latest snapshot">
         <p>All items from the most recent run, normalized schema.</p>
-        <a class="btn" href="data/latest.json">latest.json</a>
-        <a class="btn ghost" href="data/latest.csv">latest.csv</a>
-      </div>
-      <div class="card">
-        <h3>Full history</h3>
+        <a class="d-btn d-btn-sm" href="data/latest.json">latest.json</a>
+        <a class="d-btn d-btn-sm d-btn-outline" href="data/latest.csv">latest.csv</a>
+      </Card>
+      <Card title="Full history">
         <p>Append-only cumulative rows for velocity analysis. <span id="hist-days"></span></p>
-        <a class="btn" href="data/history.csv">history.csv</a>
-        <a class="btn ghost" href="data/index.json">index.json</a>
-      </div>
-      <div class="card">
-        <h3>Daily archives</h3>
+        <a class="d-btn d-btn-sm" href="data/history.csv">history.csv</a>
+        <a class="d-btn d-btn-sm d-btn-outline" href="data/index.json">index.json</a>
+      </Card>
+      <Card title="Daily archives">
         <p>Per-day JSON + CSV snapshots under <code>data/daily/</code>.</p>
         <div id="daily-links"></div>
-      </div>
-      <div class="card">
-        <h3>Schema</h3>
+      </Card>
+      <Card title="Schema">
         <p><code>source, rank, title, url, score, metric, comments, author, tags, captured_at</code></p>
-        <a class="btn ghost" href="docs/data-dictionary.md">data-dictionary.md</a>
-        <a class="btn ghost" href="docs/api.md">api docs →</a>
-      </div>
-      <div class="card">
-        <h3>Digest &amp; feed</h3>
+        <a class="d-btn d-btn-sm d-btn-outline" href="docs/data-dictionary.md">data-dictionary.md</a>
+        <a class="d-btn d-btn-sm d-btn-outline" href="docs/api.md">api docs →</a>
+      </Card>
+      <Card title="Digest &amp; feed">
         <p>Weekly narrative notes + machine digest, and an RSS feed of every snapshot.</p>
-        <a class="btn" href="feed.xml">feed.xml</a>
-        <a class="btn ghost" href="embed.html">embed widget →</a> <a class="btn ghost" href="embeds.html">gallery</a>
-        <a class="btn ghost" href="digest.html">weekly digests →</a>
-      </div>
+        <a class="d-btn d-btn-sm" href="feed.xml">feed.xml</a>
+        <a class="d-btn d-btn-sm d-btn-outline" href="embed.html">embed widget →</a> <a class="d-btn d-btn-sm d-btn-outline" href="embeds.html">gallery</a>
+        <a class="d-btn d-btn-sm d-btn-outline" href="digest.html">weekly digests →</a>
+      </Card>
     </div>
-  </section>
+  </Section>
 
   <footer>
     <p><b>Method.</b> A GitHub Action runs <code>scripts/collect.py</code> twice a day (06:05 + 18:05 UTC), aggregating public keyless endpoints:

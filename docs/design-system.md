@@ -42,6 +42,19 @@ sources before inventing anything new):
 - Quiet links use dashed muted underline
   (`.status-item a`, `.board-actions a`, `.pagesub a`), not color change.
 
+## Wheels we use (don't hand-roll these)
+- **daisyUI 5 (`d-` prefix)**: `d-input`, `d-select`, `d-btn`, `d-btn-outline`,
+  `d-badge`, `d-tabs`, `d-dropdown`, `d-join`, `d-card`, `d-table`, `d-tooltip`.
+  Colors are bridged to our tokens via the palette-bridge block in global.css —
+  d-* components follow our theme automatically (default light + dark themes
+  already match our `data-theme`/`prefers-color-scheme` semantics).
+- **Astro compound kit** (`src/components/`): `RailCard`, `Section`, `Card` —
+  the repeated page furniture. New pages compose these, never copy markup.
+- **JS libs (CDN, always `is:inline`)**: MiniSearch (search), dayjs, cronstrue,
+  diff, marked, papaparse, lucide icons, swagger-ui, js-yaml, compare-versions.
+- **Layout wheels**: `.wrap` container, `.dash` two-column grid, `.cards` grid,
+  `.board/.row` list primitive — compose, don't invent.
+
 ## Theme
 - `html[data-theme]` + `localStorage.tsTheme` + `?theme=` param; OS
   `prefers-color-scheme` as default. FOUC script runs before first paint in

@@ -32,6 +32,30 @@ html[data-theme="light"] { --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; -
     --dim: #59636e; --accent: #0969da; --green: #1a7f37; --orange: #9a6700;
     --red: #cf222e; }
 
+/* daisyUI palette bridge — d-* components take our tokens, not daisyUI's.
+   daisyUI dark theme already activates on [data-theme="dark"] and
+   prefers-color-scheme, matching our toggle semantics. */
+:root, html[data-theme="light"] {
+  --color-base-100: #f6f8fa; --color-base-200: #ffffff; --color-base-300: #eaeef2;
+  --color-base-content: #1f2328; --color-primary: #0969da; --color-primary-content: #ffffff;
+  --color-neutral: #f6f8fa; --color-neutral-content: #1f2328;
+  --color-info: #0969da; --color-success: #1a7f37; --color-warning: #9a6700; --color-error: #cf222e;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --color-base-100: #0d1117; --color-base-200: #161b22; --color-base-300: #21262d;
+    --color-base-content: #e6edf3; --color-primary: #58a6ff; --color-primary-content: #0d1117;
+    --color-neutral: #161b22; --color-neutral-content: #e6edf3;
+    --color-info: #58a6ff; --color-success: #3fb950; --color-warning: #d29922; --color-error: #f85149;
+  }
+}
+html[data-theme="dark"] {
+  --color-base-100: #0d1117; --color-base-200: #161b22; --color-base-300: #21262d;
+  --color-base-content: #e6edf3; --color-primary: #58a6ff; --color-primary-content: #0d1117;
+  --color-neutral: #161b22; --color-neutral-content: #e6edf3;
+  --color-info: #58a6ff; --color-success: #3fb950; --color-warning: #d29922; --color-error: #f85149;
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root { color-scheme: dark; }
