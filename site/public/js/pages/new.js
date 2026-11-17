@@ -17,6 +17,7 @@ function parseCSV(txt) {
 Promise.all([
   fetch("data/latest-lite.json", {cache:"no-cache"}).then(r=>r.ok?r:Promise.reject()).catch(()=>fetch("data/latest.json",{cache:"no-cache"})).then(r => r.json()),
   fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json()),
+  loadKinds(),
 ]).then(([snap, txt]) => {
   const today = (snap.date || snap.generated_at || "").slice(0,10);
   const seenBefore = new Set();
@@ -35,7 +36,7 @@ Promise.all([
     .sort((a,b)=>b[1].length-a[1].length).map(([src,list]) =>
       `<li style="display:block;padding:8px 0"><b style="color:var(--dim)">${esc(srcName(src))} · ${list.length} new</b>` +
       list.map(i => `<div style="display:flex;gap:8px;padding:3px 0 3px 14px;border-bottom:1px solid var(--border)">
-        <a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a>
+        <a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a>${kindChip(i.url)}
         <span style="margin-left:auto;color:var(--dim);font-size:12px;white-space:nowrap">${scoreText(i, fmt)}</span></div>`).join("") + `</li>`).join("")
     || `<li id="err">nothing new — every board item has been seen before</li>`;
 }).catch(() => { document.getElementById("err").textContent = "data unavailable"; });

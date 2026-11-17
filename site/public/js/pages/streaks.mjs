@@ -2,6 +2,7 @@ const esc = s => { const d = document.createElement("div"); d.textContent = s||"
 const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B" : n >= 1e6 ? (n/1e6).toFixed(1)+"M" : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
 const $ = id => document.getElementById(id);
 const d = await fetch("docs/api/streaks.json", {cache:"no-cache"}).then(r => r.json());
+await loadKinds();
 const recs = d.active.concat(d.longest_all_time);
 const live = d.active.slice().sort((a,b) => b.consecutive_days - a.consecutive_days || b.top_score - a.top_score);
 const allTime = d.longest_all_time.slice(0, 15);
@@ -13,7 +14,7 @@ $("stats").innerHTML =
    <div class="stat"><b>${d.repeat_appearances}</b><small>repeat appearances</small></div>`;
 
 const row = (r, badge) =>
-  `<li><span class="it"><a href="${r.url}">${esc(r.title)}</a><span class="src">${srcName(r.source)}</span>
+  `<li><span class="it"><a href="${r.url}">${esc(r.title)}</a><span class="src">${srcName(r.source)}</span>${kindChip(r.url)}
    <a href="item.html?q=${encodeURIComponent(r.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>
    <span class="sc">${badge} · ${r.metric === "feed rank" ? "#" + (r.top_rank ?? r.top_score) + " in feed" : fmt(r.top_score) + " " + (r.metric||"")}</span></li>`;
 

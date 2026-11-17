@@ -2,6 +2,7 @@ const esc = s => { const d = document.createElement("div"); d.textContent = s||"
 const fmt = n => n >= 1e9 ? (n/1e9).toFixed(1)+"B" : n >= 1e6 ? (n/1e6).toFixed(1)+"M" : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
 const $ = id => document.getElementById(id);
 const d = await fetch("docs/api/risers.json", {cache:"no-cache"}).then(r => r.json());
+await loadKinds();
 const spikes = d.single_day_spikes, jumps = d.package_rank_jumps,
       climbers = d.sustained_climbers, latest = d.latest_snapshot;
 
@@ -21,18 +22,18 @@ $("stats").innerHTML =
 
 const crow = (e,i) =>
   `<li><span class="sc" style="min-width:16px;text-align:right">${i+1}</span>
-   <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${srcName(e.source)}</span>
+   <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${srcName(e.source)}</span>${kindChip(e.url)}
    <a href="item.html?q=${encodeURIComponent(e.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>
    <span class="sc"><span class="up">+${fmt(e.gain)}</span> ${e.metric} <span class="date">over ${e.days_tracked}d · still on board</span></span></li>`;
 
 const srow = (e,i) =>
   `<li><span class="sc" style="min-width:16px;text-align:right">${i+1}</span>
-   <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${srcName(e.source)}</span>
+   <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${srcName(e.source)}</span>${kindChip(e.url)}
    <a href="item.html?q=${encodeURIComponent(e.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>
    <span class="sc"><span class="up">+${fmt(e.delta)}</span> ${e.metric} <span class="date">· ${e.date} · ${fmt(e.from_score)}→${fmt(e.to_score)}</span></span></li>`;
 const jrow = (e,i) =>
   `<li><span class="sc" style="min-width:16px;text-align:right">${i+1}</span>
-   <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${srcName(e.source)}</span>
+   <span class="it"><a href="${e.url}">${esc(e.title)}</a><span class="src">${srcName(e.source)}</span>${kindChip(e.url)}
    <a href="item.html?q=${encodeURIComponent(e.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>
    <span class="sc"><span class="up">▲${e.jump}</span> <span class="date">· ${e.date} · #${e.from_rank}→#${e.to_rank}</span></span></li>`;
 

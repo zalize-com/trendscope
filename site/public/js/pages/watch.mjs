@@ -18,6 +18,7 @@ async function run() {
   if (!kws.length) { $("out").innerHTML = ""; $("stats").innerHTML = ""; return; }
   const low = kws.map(k => k.toLowerCase());
   const match = t => { t = t.toLowerCase(); return low.filter(k => t.includes(k)); };
+  await loadKinds();
   const [nw, latest] = await Promise.all([
     fetch("docs/api/new.json", {cache:"no-cache"}).then(r => r.json()),
     fetch("data/latest-lite.json", {cache:"no-cache"}).then(r=>r.ok?r:Promise.reject()).catch(()=>fetch("data/latest.json",{cache:"no-cache"})).then(r => r.json()),
@@ -31,7 +32,7 @@ async function run() {
      <div class="stat"><b class="up">${fresh.length}</b><small>new today matching</small></div>
      <div class="stat"><b>${still.length}</b><small>still on the board</small></div>`;
   const row = e =>
-    `<li><span class="it"><a href="${e.url}">${esc(e.title.length>85?e.title.slice(0,85)+"…":e.title)}</a><span class="src">${srcName(e.source)}</span>
+    `<li><span class="it"><a href="${e.url}">${esc(e.title.length>85?e.title.slice(0,85)+"…":e.title)}</a><span class="src">${srcName(e.source)}</span>${kindChip(e.url)}
      ${e.hit.map(k=>`<span class="chip on" style="margin:0 0 0 4px">${esc(k)}</span>`).join("")}
      <a href="item.html?q=${encodeURIComponent(e.title)}" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>
      <span class="sc">${fmt(e.score||0)} ${e.metric||""}</span></li>`;
