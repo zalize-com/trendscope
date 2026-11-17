@@ -12,9 +12,20 @@ const LIBS = [
 ["Lucide","latest","index.html + feedpaper","emoji glyphs (★🔥💬⚠📄)","icons"],
 ["js-yaml","4.1.0","tools/utils.html","hand-rolled YAML parse","yaml"],
 ["swagger-ui-dist","5","swagger.html","hand-rolled API docs UI","api docs"],
+["qrcodejs","1.0.0","tools/web.html","QR matrix encoder","qr"],
+["minisearch","7","search.html","hand-rolled full-text index","search"],
 ];
 document.getElementById("t").insertAdjacentHTML("beforeend",
   LIBS.map(([n,v,w,r,tag]) =>
     `<tr><td><b>${n}</b></td><td><code>${v}</code></td><td>${w}<br><span class="tag">${tag}</span></td><td style="color:var(--dim)">${r}</td></tr>`).join(""));
 document.getElementById("sum").textContent =
-  `${LIBS.length} libraries · all MIT/BSD-family · ~${(LIBS.length*40)}KB gzipped total · zero npm install`;
+  `${LIBS.length} CDN libraries · all MIT/BSD-family · pages load only what they use`;
+const FW = [
+["Astro","7","whole site","static build, 77 pages, zero client JS framework","framework"],
+["Tailwind CSS","4","whole site","utility layer under our token system","css"],
+["daisyUI","5","whole site","d- prefixed: inputs/buttons/selects (our palette bridged in)","css"],
+["Pico CSS","2","whole site","baseline semantic styles","css"],
+];
+document.getElementById("t2").insertAdjacentHTML("beforeend",
+  FW.map(([n,v,w,r,tag]) =>
+    `<tr><td><b>${n}</b></td><td><code>${v}</code></td><td>${w}<br><span class="tag">${tag}</span></td><td style="color:var(--dim)">${r}</td></tr>`).join(""));

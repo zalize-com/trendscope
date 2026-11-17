@@ -8,9 +8,14 @@ const path = '/stack.html';
 
 <nav><a href="index.html">← board</a> · <a href="about.html">about</a> · <a href="api.html">api</a></nav>
 <h1>the <span style="color:var(--acc)">stack</span></h1>
-<p class="sub">Don't reinvent wheels — this site runs on <b>11 CDN libraries</b> loaded from jsdelivr/unpkg, plus hand-rolled code only where no wheel fits. No bundler, no build step, no framework: view-source is the source.</p>
+<p class="sub">Don't reinvent wheels — this site is built with <b>Astro + Tailwind + daisyUI</b> and runs on <b>15 CDN libraries</b> loaded from jsdelivr/unpkg, plus hand-rolled code only where no wheel fits. Static output, zero client-side framework runtime.</p>
 
-<h2>libraries in use</h2>
+<h2>build & css layer</h2>
+<table id="t2">
+<tr><th>tool</th><th>version</th><th>where</th><th>what it does</th></tr>
+</table>
+
+<h2>cdn libraries in use</h2>
 <table id="t">
 <tr><th>library</th><th>version</th><th>where</th><th>replaces</th></tr>
 </table>
@@ -18,7 +23,7 @@ const path = '/stack.html';
 <h2>philosophy</h2>
 <ul>
 <li><b>Reuse first</b> — charting, markdown, diffs, CSV, cron, dates, icons are solved problems. We load the standard wheel and move on.</li>
-<li><b>Indie-lightweight</b> — same stack pattern as mainstream indie products: static HTML + CDN scripts + fetch(). No node_modules, no transpile, no framework runtime.</li>
+<li><b>Indie-lightweight</b> — Astro static build + CDN scripts + fetch() on the client. No SPA runtime, no server rendering.</li>
 <li><b>Hand-roll only the edge</b> — the aggregation pipeline, dedupe, scoring, and per-page glue are ours; everything else is a wheel.</li>
 <li><b>Pinned versions</b> — every dependency is version-pinned except <code>lucide@latest</code> (icon set is append-only).</li>
 </ul>
