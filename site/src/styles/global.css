@@ -75,6 +75,11 @@ h2 .sub { color: var(--dim); font-size: 13px; font-weight: 400; margin-left: 8px
   background: var(--panel); color: var(--dim); cursor: pointer; font-size: 14px;
 }
 .tab.active { color: var(--fg); border-color: var(--accent); }
+.tabsel {
+  padding: 6px 10px; border-radius: var(--radius-sm); border: 1px solid var(--border);
+  background: var(--panel); color: var(--dim); font-size: 14px; max-width: 170px; cursor: pointer;
+}
+.tabsel.active { color: var(--fg); border-color: var(--accent); }
 
 /* ---- board rows ---- */
 .board {

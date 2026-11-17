@@ -85,6 +85,7 @@ const TABS = [
   { id: "jetbrains",         label: "JB" },
 ];
 const PKG = new Set(["npm", "pypi", "crates"]);
+const MAJOR_TAB = new Set(TABS.slice(0, TABS.findIndex(t => t.id === "krebs")).map(t => t.id));
 const YT = new Set("yt_fireship,yt_traversymedia,yt_networkchuck,yt_theprimeagen,yt_3blue1brown,yt_garyexplains,yt_liveoverflow,yt_webdevsimplified,yt_techworldwithnana,yt_codingwithjohn,yt_freecodecamp,yt_computerphile,yt_hak5,yt_sebastianlague,yt_codevolution,yt_iamtimcorey,yt_netninja,yt_academind,yt_codinggarden,yt_wesbos,yt_beyondfireship,yt_theo,yt_statquest,yt_dreamsofcode,yt_hyperplexed,yt_codingwithlewis,yt_theodorepowell,yt_petecodes,yt_simsig,yt_joshtriedcoding,yt_thecodingtrain,yt_beneater,yt_sentdex,yt_yannickilcher,yt_twominutepapers,yt_javidx9,yt_husseinnasser,yt_coreyschafer,yt_brancheducation,yt_cppcon,yt_goto,yt_pyconus,yt_codingtech,yt_asianometry".split(","));
 const ZH = new Set("billwang1990github,blogcodingnow,blogdevtang,colobu,dbanotes,cnblogs,headsalon,onevcat,techmeituan,casatwy,daimajia,42jing,aigcweekly,akimio,bojieli,yuanchaofa,huhuhang,liamding,lyricquail,lyricim,liduos,fusheng,quaily,baoyu,lijigang,datawhale,huggingface,paperweekly,xinzhi,jiqizhixin,mlbeginner,qbitai,qbitaigzh,xgo5b632,xgo831fa,bilibilitech,bytetech,xiaomitech,dewutech,iqiyitech,baidusec,tencenttech,alimiddle,the5fire,luenci,michealwayne,maonie,kekxv,corvo".split(","));
 
@@ -419,8 +420,15 @@ function paintTabs() {
   const wantTab = new URLSearchParams(location.search).get("s");
   const cur = visible.some(t => t.id === wantTab) ? wantTab : currentTab();
   const keep = visible.some(t => t.id === cur) ? cur : "all";
-  document.getElementById("tabs").innerHTML = visible.map(t =>
-    `<button class="tab${t.id === keep ? " active" : ""}" data-tab="${t.id}">${t.label}</button>`).join("");
+  const prim = visible.filter(t => MAJOR_TAB.has(t.id));
+  const rest = visible.filter(t => !MAJOR_TAB.has(t.id));
+  const restActive = rest.some(t => t.id === keep);
+  document.getElementById("tabs").innerHTML =
+    prim.map(t => `<button class="tab${t.id === keep ? " active" : ""}" data-tab="${t.id}">${t.label}</button>`).join("") +
+    (rest.length ? `<select id="tabsel" class="tabsel${restActive ? " active" : ""}" title="all tracked sources">` +
+      `<option value="" disabled${restActive ? "" : " selected"}>sources ▾</option>` +
+      rest.map(t => `<option value="${t.id}"${t.id === keep ? " selected" : ""}>${t.label}</option>`).join("") +
+      `</select>` : "");
 }
 
 function currentTab() {
@@ -639,10 +647,22 @@ async function main() {
     const b = ev.target.closest(".tab");
     if (!b) return;
     document.querySelectorAll("#tabs .tab").forEach(x => x.classList.toggle("active", x === b));
+    const ts = document.getElementById("tabsel");
+    if (ts) { ts.value = ""; ts.classList.remove("active"); }
     const u = new URL(location.href);
     b.dataset.tab === "all" ? u.searchParams.delete("s") : u.searchParams.set("s", b.dataset.tab);
     history.replaceState(null, "", u);
     render(ITEMS, b.dataset.tab);
+  });
+  document.getElementById("tabs").addEventListener("change", ev => {
+    const s = ev.target.closest("#tabsel");
+    if (!s || !s.value) return;
+    document.querySelectorAll("#tabs .tab").forEach(x => x.classList.remove("active"));
+    s.classList.add("active");
+    const u = new URL(location.href);
+    u.searchParams.set("s", s.value);
+    history.replaceState(null, "", u);
+    render(ITEMS, s.value);
   });
   paint();
   renderRising();
