@@ -23,6 +23,9 @@ mkdir -p "$OUT"
 cp -rL "$ROOT/site/dist/." "$OUT/"
 
 rm -f "$OUT/data/latest.json" "$OUT/data/history.csv" "$OUT/docs/api/series.json"
+# everything under /data/* and /docs/* already 302s to GitHub raw via _redirects —
+# strip every >1MB file so daily csvs/sparkline can't breach CF's 25MiB file cap
+find "$OUT/data" "$OUT/docs" -type f -size +1M -delete 2>/dev/null || true
 
 # repo-level generated files (sitemap.xml, feed.xml, llms.txt, ...) still name
 # the preview origin — repoint the deploy copy only; repo files switch via
