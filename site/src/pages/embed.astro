@@ -38,6 +38,11 @@ html[data-theme="light"] { --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; -
     font: 13px/1.5 var(--font-sans)"Segoe UI", Helvetica, Arial, sans-serif;
     padding: 10px 12px;
   }
+  /* iframes are narrow — drop site nav so the topbar fits on one row */
+  @media (max-width: 560px) {
+    .topbar nav, .topbar .right { display: none; }
+    .topbar { padding: 6px 0; }
+  }
   .brand { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
   .brand b { font-size: 14px; }
   .brand b span { color: var(--accent); }
