@@ -23,6 +23,7 @@ fetch("data/latest-lite.json", {cache:"no-cache"}).then(r=>r.ok?r:Promise.reject
   for (const its of Object.values(snap.items)) for (const i of its) LIVE.add(i.url);
   if (RECS) paint();
 }).catch(() => {});
+loadKinds().then(() => paint());
 fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
   RECS = [];
   for (const [url, it] of Object.entries(d.items)) {
@@ -106,7 +107,7 @@ function paint() {
       : '<span class="dim">—</span>';
     const live = LIVE.has(it.url) ? ` <span style="color:var(--green);font-size:11px" title="on today's board">● live</span>` : "";
     return `<div class="card">
-      <b><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a>${live}</b>
+      <b><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a>${kindChip(it.url)}${live}</b>
       <button class="embed-btn" data-t="${esc(it.title)}">embed this story</button>
       <div class="stats">
         <div class="stat"><b>${days}</b><small>days on board</small></div>
