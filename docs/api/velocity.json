@@ -1,27 +1,47 @@
 {
- "generated_at": "2026-11-16T18:53:52.773533+00:00",
- "latest_snapshot": "2026-11-16",
- "total": 29709,
+ "generated_at": "2026-11-17T02:08:01.625513+00:00",
+ "latest_snapshot": "2026-11-17",
+ "total": 108406,
  "items": [
-  {
-   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
-   "title": "All AI-generated code should be Open Source",
-   "source": "hackernews",
-   "metric": "points",
-   "days": 2,
-   "delta": 1001,
-   "per_day": 1001.0,
-   "latest": 1055
-  },
   {
    "url": "https://github.com/deepseek-ai/chat-demo",
    "title": "deepseek-ai/chat-demo",
    "source": "github_trending",
    "metric": "stars",
+   "days": 4,
+   "delta": 2411,
+   "per_day": 803.7,
+   "latest": 4110
+  },
+  {
+   "url": "http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/",
+   "title": "Amazon's Discount Illusion: 1 in 3 \"Deals\" Offered No Savings– 1 in 10 Cost More",
+   "source": "hackernews",
+   "metric": "points",
+   "days": 2,
+   "delta": 743,
+   "per_day": 743.0,
+   "latest": 837
+  },
+  {
+   "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
+   "title": "hitkeeen/blender-ai-mcp-addon",
+   "source": "github_trending",
+   "metric": "stars",
    "days": 3,
-   "delta": 1260,
-   "per_day": 630.0,
-   "latest": 2959
+   "delta": 1309,
+   "per_day": 654.5,
+   "latest": 2213
+  },
+  {
+   "url": "https://github.com/Noniv/abyssal-garden",
+   "title": "Noniv/abyssal-garden",
+   "source": "github_trending",
+   "metric": "stars",
+   "days": 3,
+   "delta": 892,
+   "per_day": 446.0,
+   "latest": 1728
   },
   {
    "url": "https://www.crissyfield.de/research/lovable-en/",
@@ -34,6 +54,16 @@
    "latest": 743
   },
   {
+   "url": "https://github.com/ZiChuanLan/freebie-radar",
+   "title": "ZiChuanLan/freebie-radar",
+   "source": "github_trending",
+   "metric": "stars",
+   "days": 2,
+   "delta": 369,
+   "per_day": 369.0,
+   "latest": 1170
+  },
+  {
    "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
    "title": "The MacBook Pro's OLED PWM Problem: When a 'Better' Display Becomes Worse to Use",
    "source": "hackernews",
@@ -44,14 +74,24 @@
    "latest": 403
   },
   {
+   "url": "https://github.com/duwqijlk/muse-protocol",
+   "title": "duwqijlk/muse-protocol",
+   "source": "github_trending",
+   "metric": "stars",
+   "days": 3,
+   "delta": 647,
+   "per_day": 323.5,
+   "latest": 1455
+  },
+  {
    "url": "https://github.com/Eynnzerr/TelemetryCleaner",
    "title": "Eynnzerr/TelemetryCleaner",
    "source": "github_trending",
    "metric": "stars",
-   "days": 2,
-   "delta": 299,
-   "per_day": 299.0,
-   "latest": 997
+   "days": 3,
+   "delta": 625,
+   "per_day": 312.5,
+   "latest": 1323
   },
   {
    "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
@@ -62,6 +102,16 @@
    "delta": 299,
    "per_day": 299.0,
    "latest": 348
+  },
+  {
+   "url": "https://trmnl.com/blog/introducing-frame",
+   "title": "Frame – 31.5\" color ePaper display",
+   "source": "hnrss",
+   "metric": "feed rank",
+   "days": 2,
+   "delta": 288,
+   "per_day": 288.0,
+   "latest": 295
   },
   {
    "url": "https://github.com/FrigadeHQ/yogurt",
@@ -84,44 +134,24 @@
    "latest": 319
   },
   {
-   "url": "https://github.com/Noniv/abyssal-garden",
-   "title": "Noniv/abyssal-garden",
-   "source": "github_trending",
-   "metric": "stars",
-   "days": 2,
-   "delta": 239,
-   "per_day": 239.0,
-   "latest": 1075
-  },
-  {
    "url": "https://github.com/apex-compute/ANR",
    "title": "apex-compute/ANR",
    "source": "github_trending",
    "metric": "stars",
-   "days": 3,
-   "delta": 428,
-   "per_day": 214.0,
-   "latest": 2207
+   "days": 4,
+   "delta": 695,
+   "per_day": 231.7,
+   "latest": 2474
   },
   {
-   "url": "https://github.com/duwqijlk/muse-protocol",
-   "title": "duwqijlk/muse-protocol",
-   "source": "github_trending",
-   "metric": "stars",
+   "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+   "title": "Microsoft blames monster email outage on software defect introduced in July fix",
+   "source": "sec_the_register",
+   "metric": "feed rank",
    "days": 2,
-   "delta": 208,
-   "per_day": 208.0,
-   "latest": 1016
-  },
-  {
-   "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
-   "title": "hitkeeen/blender-ai-mcp-addon",
-   "source": "github_trending",
-   "metric": "stars",
-   "days": 2,
-   "delta": 197,
-   "per_day": 197.0,
-   "latest": 1101
+   "delta": 209,
+   "per_day": 209.0,
+   "latest": 220
   },
   {
    "url": "https://www.spacex.com/launches/starship-flight-15",
@@ -132,6 +162,36 @@
    "delta": 1457,
    "per_day": 182.1,
    "latest": 1638
+  },
+  {
+   "url": "https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/",
+   "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+   "source": "hnrss",
+   "metric": "feed rank",
+   "days": 2,
+   "delta": 175,
+   "per_day": 175.0,
+   "latest": 298
+  },
+  {
+   "url": "https://blog.startifact.com/posts/how-rust-changed-me/",
+   "title": "How Rust Changed Me As A Developer",
+   "source": "br_secret_weblog",
+   "metric": "feed rank",
+   "days": 2,
+   "delta": 166,
+   "per_day": 166.0,
+   "latest": 181
+  },
+  {
+   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+   "title": "All AI-generated code should be Open Source",
+   "source": "hackernews",
+   "metric": "points",
+   "days": 3,
+   "delta": 328,
+   "per_day": 164.0,
+   "latest": 382
   },
   {
    "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
@@ -154,14 +214,24 @@
    "latest": 224
   },
   {
-   "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
-   "title": "Understanding Positional Embeddings in Modern LLMs",
-   "source": "hackernews",
-   "metric": "points",
+   "url": "https://burntsushi.net/jiff/",
+   "title": "A datetime library for Rust",
+   "source": "lobsters",
+   "metric": "score",
+   "days": 3,
+   "delta": 306,
+   "per_day": 153.0,
+   "latest": 308
+  },
+  {
+   "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+   "title": "Grazing sheep in fields with solar arrays",
+   "source": "hnrss",
+   "metric": "feed rank",
    "days": 2,
-   "delta": 148,
-   "per_day": 148.0,
-   "latest": 192
+   "delta": 151,
+   "per_day": 151.0,
+   "latest": 214
   },
   {
    "url": "https://prog21.dadgum.com/116.html",
@@ -184,6 +254,16 @@
    "latest": 213
   },
   {
+   "url": "https://linebender.org/wiki/curves/squircle/",
+   "title": "Squircles",
+   "source": "lobsters",
+   "metric": "score",
+   "days": 2,
+   "delta": 121,
+   "per_day": 121.0,
+   "latest": 131
+  },
+  {
    "url": "https://github.com/adriadam10/mkw-recomp",
    "title": "adriadam10/mkw-recomp",
    "source": "github_trending",
@@ -194,16 +274,6 @@
    "latest": 970
   },
   {
-   "url": "https://news.ycombinator.com/item?id=50510042",
-   "title": "Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence",
-   "source": "ask_hn",
-   "metric": "points",
-   "days": 2,
-   "delta": 109,
-   "per_day": 109.0,
-   "latest": 113
-  },
-  {
    "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
    "title": "Old Bitly Links Are Being Hijacked",
    "source": "hnrss",
@@ -212,6 +282,16 @@
    "delta": 108,
    "per_day": 108.0,
    "latest": 123
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50513451",
+   "title": "Tell HN: HN is being scraped for emails to scam",
+   "source": "ask_hn",
+   "metric": "points",
+   "days": 2,
+   "delta": 108,
+   "per_day": 108.0,
+   "latest": 121
   },
   {
    "url": "https://www.youtube.com/watch?v=7_JF3etiAv8",
@@ -244,6 +324,16 @@
    "latest": 170
   },
   {
+   "url": "https://www.harmonic.fun/news/aristotle-rust-verification/",
+   "title": "Aristotle Expands into Rust",
+   "source": "hnrss",
+   "metric": "feed rank",
+   "days": 2,
+   "delta": 92,
+   "per_day": 92.0,
+   "latest": 103
+  },
+  {
    "url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows",
    "title": "DevedevT/FFmpeg-GUI-Editor-Windows",
    "source": "github_trending",
@@ -264,6 +354,26 @@
    "latest": 98
   },
   {
+   "url": "https://news.ycombinator.com/item?id=50510042",
+   "title": "Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence",
+   "source": "ask_hn",
+   "metric": "points",
+   "days": 3,
+   "delta": 175,
+   "per_day": 87.5,
+   "latest": 179
+  },
+  {
+   "url": "https://jolt-lang.net/",
+   "title": "Jolt – Clojure that speaks C",
+   "source": "hnrss",
+   "metric": "feed rank",
+   "days": 2,
+   "delta": 87,
+   "per_day": 87.0,
+   "latest": 97
+  },
+  {
    "url": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch",
    "title": "Vulcan rocket fails during return-to-flight launch, 40 Amazon satellites lost",
    "source": "hnrss",
@@ -272,26 +382,6 @@
    "delta": 82,
    "per_day": 82.0,
    "latest": 95
-  },
-  {
-   "url": "https://blog.archive.org/2026/11/12/preserving-30-years-of-salon-journalism/",
-   "title": "Preserving 30 Years of Salon Journalism",
-   "source": "blogarchive",
-   "metric": "feed rank",
-   "days": 2,
-   "delta": 79,
-   "per_day": 79.0,
-   "latest": 89
-  },
-  {
-   "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
-   "title": "What’s Next For Nvidia?",
-   "source": "steveblank",
-   "metric": "feed rank",
-   "days": 2,
-   "delta": 79,
-   "per_day": 79.0,
-   "latest": 94
   },
   {
    "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
@@ -324,6 +414,16 @@
    "latest": 188
   },
   {
+   "url": "https://copyrightlately.com/michael-mann-heat-copyright-termination/",
+   "title": "Michael Mann's 'Heat' Copyright Fight Turns on a Deal with Himself",
+   "source": "hnrss",
+   "metric": "feed rank",
+   "days": 2,
+   "delta": 76,
+   "per_day": 76.0,
+   "latest": 91
+  },
+  {
    "url": "https://github.com/huamidev/GestaltX",
    "title": "huamidev/GestaltX",
    "source": "github_trending",
@@ -334,14 +434,24 @@
    "latest": 7616
   },
   {
-   "url": "https://iter.ca/post/ubo-uxss/",
-   "title": "Universal XSS in uBlock Origin from website-driven element picker",
-   "source": "smitop",
-   "metric": "feed rank",
+   "url": "https://ingrids.space/posts/you-wont-win-at-copyright/",
+   "title": "you won't win at copyright",
+   "source": "lobsters",
+   "metric": "score",
    "days": 2,
-   "delta": 68,
-   "per_day": 68.0,
-   "latest": 83
+   "delta": 63,
+   "per_day": 63.0,
+   "latest": 69
+  },
+  {
+   "url": "https://citrons.xyz/journal/2026-04-13",
+   "title": "Paint in the memory of other programs",
+   "source": "lobsters",
+   "metric": "score",
+   "days": 2,
+   "delta": 61,
+   "per_day": 61.0,
+   "latest": 66
   },
   {
    "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
@@ -364,16 +474,6 @@
    "latest": 68
   },
   {
-   "url": "https://burntsushi.net/jiff/",
-   "title": "A datetime library for Rust",
-   "source": "lobsters",
-   "metric": "score",
-   "days": 2,
-   "delta": 56,
-   "per_day": 56.0,
-   "latest": 58
-  },
-  {
    "url": "https://lucypero.com/lucynes.html",
    "title": "A NES emulator written in Odin",
    "source": "lobsters",
@@ -394,114 +494,14 @@
    "latest": 106
   },
   {
-   "url": "https://github.com/JDhruv14/line-art-animation",
-   "title": "JDhruv14/line-art-animation",
-   "source": "github_trending",
-   "metric": "stars",
-   "days": 3,
-   "delta": 93,
-   "per_day": 46.5,
-   "latest": 834
-  },
-  {
-   "url": "https://github.com/opencoredev/islandcn",
-   "title": "opencoredev/islandcn",
+   "url": "https://github.com/AIRzZ90/study-materials-fork",
+   "title": "AIRzZ90/study-materials-fork",
    "source": "github_trending",
    "metric": "stars",
    "days": 2,
-   "delta": 45,
-   "per_day": 45.0,
-   "latest": 733
-  },
-  {
-   "url": "https://gitlab.com/snipedbywifi/terminactory",
-   "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
-   "source": "hackernews",
-   "metric": "points",
-   "days": 2,
-   "delta": 42,
-   "per_day": 42.0,
-   "latest": 151
-  },
-  {
-   "url": "https://theconsensus.dev/p/2026/11/08/c-memory-management-survey.html",
-   "title": "Memory management in 40 major C projects, a survey",
-   "source": "lobsters",
-   "metric": "score",
-   "days": 2,
-   "delta": 41,
-   "per_day": 41.0,
-   "latest": 42
-  },
-  {
-   "url": "https://github.com/Kianuni/Erosion-CN",
-   "title": "Kianuni/Erosion-CN",
-   "source": "github_trending",
-   "metric": "stars",
-   "days": 3,
-   "delta": 76,
-   "per_day": 38.0,
-   "latest": 2127
-  },
-  {
-   "url": "https://ykiko.me/en/articles/2105384023094834022/",
-   "title": "Clice v1.0 Released: Welcome to Modern C++",
-   "source": "hackernews",
-   "metric": "points",
-   "days": 2,
-   "delta": 35,
-   "per_day": 35.0,
-   "latest": 86
-  },
-  {
-   "url": "https://github.com/serveroshq/panel",
-   "title": "serveroshq/panel",
-   "source": "github_trending",
-   "metric": "stars",
-   "days": 2,
-   "delta": 32,
-   "per_day": 32.0,
-   "latest": 816
-  },
-  {
-   "url": "https://github.com/HolyArrs/HolyArrs",
-   "title": "HolyArrs/HolyArrs",
-   "source": "github_trending",
-   "metric": "stars",
-   "days": 2,
-   "delta": 30,
-   "per_day": 30.0,
-   "latest": 1200
-  },
-  {
-   "url": "https://github.com/HybridRobotics/supermimic",
-   "title": "HybridRobotics/supermimic",
-   "source": "github_trending",
-   "metric": "stars",
-   "days": 3,
-   "delta": 59,
-   "per_day": 29.5,
-   "latest": 1554
-  },
-  {
-   "url": "https://blog.kizu.dev/cursors/",
-   "title": "cursor:pointer on buttons",
-   "source": "lobsters",
-   "metric": "score",
-   "days": 2,
-   "delta": 27,
-   "per_day": 27.0,
-   "latest": 28
-  },
-  {
-   "url": "https://github.com/eclipse-mosquitto/mosquitto",
-   "title": "Eclipse Mosquitto – An open source MQTT broker",
-   "source": "hackernews",
-   "metric": "points",
-   "days": 2,
-   "delta": 27,
-   "per_day": 27.0,
-   "latest": 70
+   "delta": 49,
+   "per_day": 49.0,
+   "latest": 738
   }
  ]
 }

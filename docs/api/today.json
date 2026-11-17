@@ -1,92 +1,92 @@
 {
- "date": "2026-11-16",
- "generated_at": "2026-11-16T18:54:15.765054+00:00",
- "items": 114644,
- "sources": 9206,
- "new_entries": 83297,
- "active_streaks_2d_plus": 29723,
+ "date": "2026-11-17",
+ "generated_at": "2026-11-17T02:08:48.367370+00:00",
+ "items": 109431,
+ "sources": 9066,
+ "new_entries": 807,
+ "active_streaks_2d_plus": 106228,
  "top10": [
   {
    "title": "boto3",
    "url": "https://pypi.org/project/boto3/",
    "source": "pypi",
-   "score": 2569182316,
+   "score": 2547486524,
    "metric": "monthly downloads"
   },
   {
    "title": "requests",
    "url": "https://pypi.org/project/requests/",
    "source": "pypi",
-   "score": 1463424574,
+   "score": 1471523858,
    "metric": "monthly downloads"
   },
   {
    "title": "pydantic",
    "url": "https://pypi.org/project/pydantic/",
    "source": "pypi",
-   "score": 1127910464,
+   "score": 1139429690,
    "metric": "monthly downloads"
   },
   {
    "title": "click",
    "url": "https://pypi.org/project/click/",
    "source": "pypi",
-   "score": 1089042465,
+   "score": 1100967551,
    "metric": "monthly downloads"
   },
   {
    "title": "numpy",
    "url": "https://pypi.org/project/numpy/",
    "source": "pypi",
-   "score": 1087068506,
+   "score": 1090453280,
    "metric": "monthly downloads"
   },
   {
    "title": "pytest",
    "url": "https://pypi.org/project/pytest/",
    "source": "pypi",
-   "score": 950353086,
+   "score": 959443999,
    "metric": "monthly downloads"
   },
   {
    "title": "hashbrown",
    "url": "https://crates.io/crates/hashbrown",
    "source": "crates",
-   "score": 914123124,
+   "score": 914217920,
    "metric": "recent downloads"
   },
   {
    "title": "syn",
    "url": "https://crates.io/crates/syn",
    "source": "crates",
-   "score": 901468579,
+   "score": 903385756,
    "metric": "recent downloads"
   },
   {
    "title": "getrandom",
    "url": "https://crates.io/crates/getrandom",
    "source": "crates",
-   "score": 821837842,
+   "score": 823835904,
    "metric": "recent downloads"
   },
   {
    "title": "httpx",
    "url": "https://pypi.org/project/httpx/",
    "source": "pypi",
-   "score": 786990793,
+   "score": 794931619,
    "metric": "monthly downloads"
   }
  ],
  "topic_mix": {
-  "Other": 89811,
-  "AI/LLM": 9593,
-  "Web Dev": 5451,
-  "DevTools": 4990,
-  "Programming": 3702,
-  "Security": 2478,
-  "Career": 971,
-  "Hardware": 828,
-  "Open Source": 488
+  "Other": 86219,
+  "AI/LLM": 8817,
+  "Web Dev": 5216,
+  "DevTools": 4639,
+  "Programming": 3489,
+  "Security": 2324,
+  "Career": 910,
+  "Hardware": 735,
+  "Open Source": 442
  },
  "movers": {
   "entered": 20,
@@ -95,7 +95,7 @@
   "droppers": 20
  },
  "hiring": {
-  "generated_at": "2026-11-16T18:54:07+00:00",
+  "generated_at": "2026-11-17T02:08:33+00:00",
   "threads": {
    "hiring": {
     "id": "50338728",

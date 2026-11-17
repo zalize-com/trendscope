@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-16",
-  "latest_snapshot": "2026-11-16",
-  "days_tracked": 10,
-  "active_count": 29723,
-  "repeat_appearances": 29749,
+  "generated_at": "2026-11-17",
+  "latest_snapshot": "2026-11-17",
+  "days_tracked": 11,
+  "active_count": 106228,
+  "repeat_appearances": 108453,
   "active": [
     {
       "title": "boto3",
@@ -12,8 +12,8 @@
       "metric": "monthly downloads",
       "top_score": 2600056407,
       "top_rank": 1,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "requests",
@@ -22,28 +22,28 @@
       "metric": "monthly downloads",
       "top_score": 1478957330,
       "top_rank": 2,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "pydantic",
       "source": "pypi",
       "url": "https://pypi.org/project/pydantic/",
       "metric": "monthly downloads",
-      "top_score": 1138753582,
+      "top_score": 1139429690,
       "top_rank": 3,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "click",
       "source": "pypi",
       "url": "https://pypi.org/project/click/",
       "metric": "monthly downloads",
-      "top_score": 1097885406,
+      "top_score": 1100967551,
       "top_rank": 4,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "numpy",
@@ -52,8 +52,8 @@
       "metric": "monthly downloads",
       "top_score": 1095220575,
       "top_rank": 5,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "pytest",
@@ -62,48 +62,48 @@
       "metric": "monthly downloads",
       "top_score": 960310675,
       "top_rank": 6,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "hashbrown",
       "source": "crates",
       "url": "https://crates.io/crates/hashbrown",
       "metric": "recent downloads",
-      "top_score": 914123124,
+      "top_score": 914217920,
       "top_rank": 1,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "syn",
       "source": "crates",
       "url": "https://crates.io/crates/syn",
       "metric": "recent downloads",
-      "top_score": 901468579,
+      "top_score": 903385756,
       "top_rank": 2,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "getrandom",
       "source": "crates",
       "url": "https://crates.io/crates/getrandom",
       "metric": "recent downloads",
-      "top_score": 821837842,
+      "top_score": 823835904,
       "top_rank": 3,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "httpx",
       "source": "pypi",
       "url": "https://pypi.org/project/httpx/",
       "metric": "monthly downloads",
-      "top_score": 794805198,
+      "top_score": 794931619,
       "top_rank": 7,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "pandas",
@@ -112,88 +112,78 @@
       "metric": "monthly downloads",
       "top_score": 698520592,
       "top_rank": 8,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "rand",
       "source": "crates",
       "url": "https://crates.io/crates/rand",
       "metric": "recent downloads",
-      "top_score": 643357445,
+      "top_score": 644641940,
       "top_rank": 4,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "rand_core",
       "source": "crates",
       "url": "https://crates.io/crates/rand_core",
       "metric": "recent downloads",
-      "top_score": 641113152,
+      "top_score": 642680238,
       "top_rank": 5,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "bitflags",
       "source": "crates",
       "url": "https://crates.io/crates/bitflags",
       "metric": "recent downloads",
-      "top_score": 598489130,
+      "top_score": 598655112,
       "top_rank": 6,
-      "consecutive_days": 3,
-      "days_on_board": 3
-    },
-    {
-      "title": "rich",
-      "source": "pypi",
-      "url": "https://pypi.org/project/rich/",
-      "metric": "monthly downloads",
-      "top_score": 565221275,
-      "top_rank": 9,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "thiserror",
       "source": "crates",
       "url": "https://crates.io/crates/thiserror",
       "metric": "recent downloads",
-      "top_score": 534750362,
+      "top_score": 535391981,
       "top_rank": 7,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "thiserror-impl",
       "source": "crates",
       "url": "https://crates.io/crates/thiserror-impl",
       "metric": "recent downloads",
-      "top_score": 534677313,
+      "top_score": 535318088,
       "top_rank": 8,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "base64",
       "source": "crates",
       "url": "https://crates.io/crates/base64",
       "metric": "recent downloads",
-      "top_score": 532581810,
+      "top_score": 535135286,
       "top_rank": 9,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "fastapi",
       "source": "pypi",
       "url": "https://pypi.org/project/fastapi/",
       "metric": "monthly downloads",
-      "top_score": 532085116,
-      "top_rank": 10,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "top_score": 532877425,
+      "top_rank": 9,
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "windows-sys",
@@ -202,8 +192,8 @@
       "metric": "recent downloads",
       "top_score": 521957341,
       "top_rank": 10,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "quote",
@@ -212,8 +202,8 @@
       "metric": "recent downloads",
       "top_score": 493612355,
       "top_rank": 11,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "libc",
@@ -222,8 +212,8 @@
       "metric": "recent downloads",
       "top_score": 491980717,
       "top_rank": 12,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "indexmap",
@@ -232,8 +222,8 @@
       "metric": "recent downloads",
       "top_score": 490272673,
       "top_rank": 13,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "proc-macro2",
@@ -242,8 +232,8 @@
       "metric": "recent downloads",
       "top_score": 486136152,
       "top_rank": 14,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "memchr",
@@ -252,38 +242,38 @@
       "metric": "recent downloads",
       "top_score": 471784865,
       "top_rank": 15,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "zod",
       "source": "npm",
       "url": "https://www.npmjs.com/package/zod",
       "metric": "weekly downloads",
-      "top_score": 460607664,
+      "top_score": 462273503,
       "top_rank": 1,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "typescript",
       "source": "npm",
       "url": "https://www.npmjs.com/package/typescript",
       "metric": "weekly downloads",
-      "top_score": 423856689,
+      "top_score": 427220745,
       "top_rank": 2,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "esbuild",
       "source": "npm",
       "url": "https://www.npmjs.com/package/esbuild",
       "metric": "weekly downloads",
-      "top_score": 422097531,
+      "top_score": 425498708,
       "top_rank": 3,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "sqlalchemy",
@@ -292,8 +282,8 @@
       "metric": "monthly downloads",
       "top_score": 405468918,
       "top_rank": 11,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "scipy",
@@ -302,8 +292,8 @@
       "metric": "monthly downloads",
       "top_score": 385547821,
       "top_rank": 12,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "openai",
@@ -312,28 +302,28 @@
       "metric": "monthly downloads",
       "top_score": 376229755,
       "top_rank": 13,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "vite",
       "source": "npm",
       "url": "https://www.npmjs.com/package/vite",
       "metric": "weekly downloads",
-      "top_score": 274471057,
+      "top_score": 277315630,
       "top_rank": 4,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "react",
       "source": "npm",
       "url": "https://www.npmjs.com/package/react",
       "metric": "weekly downloads",
-      "top_score": 258500204,
+      "top_score": 260880973,
       "top_rank": 5,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "scikit-learn",
@@ -342,8 +332,8 @@
       "metric": "monthly downloads",
       "top_score": 215203255,
       "top_rank": 14,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "flask",
@@ -352,78 +342,58 @@
       "metric": "monthly downloads",
       "top_score": 207427404,
       "top_rank": 15,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "lodash",
       "source": "npm",
       "url": "https://www.npmjs.com/package/lodash",
       "metric": "weekly downloads",
-      "top_score": 201638951,
+      "top_score": 202579418,
       "top_rank": 6,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "express",
       "source": "npm",
       "url": "https://www.npmjs.com/package/express",
       "metric": "weekly downloads",
-      "top_score": 197054038,
+      "top_score": 198122501,
       "top_rank": 7,
-      "consecutive_days": 3,
-      "days_on_board": 3
-    },
-    {
-      "title": "matplotlib",
-      "source": "pypi",
-      "url": "https://pypi.org/project/matplotlib/",
-      "metric": "monthly downloads",
-      "top_score": 190852970,
-      "top_rank": 16,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "vitest",
       "source": "npm",
       "url": "https://www.npmjs.com/package/vitest",
       "metric": "weekly downloads",
-      "top_score": 183935040,
+      "top_score": 185479011,
       "top_rank": 8,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "tailwindcss",
       "source": "npm",
       "url": "https://www.npmjs.com/package/tailwindcss",
       "metric": "weekly downloads",
-      "top_score": 180415741,
+      "top_score": 182099083,
       "top_rank": 9,
-      "consecutive_days": 3,
-      "days_on_board": 3
-    },
-    {
-      "title": "langchain",
-      "source": "pypi",
-      "url": "https://pypi.org/project/langchain/",
-      "metric": "monthly downloads",
-      "top_score": 156867095,
-      "top_rank": 17,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "axios",
       "source": "npm",
       "url": "https://www.npmjs.com/package/axios",
       "metric": "weekly downloads",
-      "top_score": 142918770,
+      "top_score": 143624637,
       "top_rank": 10,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "transformers",
@@ -432,38 +402,38 @@
       "metric": "monthly downloads",
       "top_score": 118379121,
       "top_rank": 18,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "next",
       "source": "npm",
       "url": "https://www.npmjs.com/package/next",
       "metric": "weekly downloads",
-      "top_score": 93677602,
+      "top_score": 94442807,
       "top_rank": 11,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "webpack",
       "source": "npm",
       "url": "https://www.npmjs.com/package/webpack",
       "metric": "weekly downloads",
-      "top_score": 73286825,
+      "top_score": 73522067,
       "top_rank": 12,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "graphql",
       "source": "npm",
       "url": "https://www.npmjs.com/package/graphql",
       "metric": "weekly downloads",
-      "top_score": 69819237,
+      "top_score": 70187226,
       "top_rank": 13,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "torch",
@@ -472,18 +442,18 @@
       "metric": "monthly downloads",
       "top_score": 60717074,
       "top_rank": 19,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "jest",
       "source": "npm",
       "url": "https://www.npmjs.com/package/jest",
       "metric": "weekly downloads",
-      "top_score": 60029351,
+      "top_score": 60155469,
       "top_rank": 14,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "celery",
@@ -492,8 +462,8 @@
       "metric": "monthly downloads",
       "top_score": 52627840,
       "top_rank": 20,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
     },
     {
       "title": "django",
@@ -502,8 +472,38 @@
       "metric": "monthly downloads",
       "top_score": 51151192,
       "top_rank": 21,
-      "consecutive_days": 3,
-      "days_on_board": 3
+      "consecutive_days": 4,
+      "days_on_board": 4
+    },
+    {
+      "title": "prisma",
+      "source": "npm",
+      "url": "https://www.npmjs.com/package/prisma",
+      "metric": "weekly downloads",
+      "top_score": 26315058,
+      "top_rank": 15,
+      "consecutive_days": 4,
+      "days_on_board": 4
+    },
+    {
+      "title": "vue",
+      "source": "npm",
+      "url": "https://www.npmjs.com/package/vue",
+      "metric": "weekly downloads",
+      "top_score": 25213072,
+      "top_rank": 16,
+      "consecutive_days": 4,
+      "days_on_board": 4
+    },
+    {
+      "title": "fastify",
+      "source": "npm",
+      "url": "https://www.npmjs.com/package/fastify",
+      "metric": "weekly downloads",
+      "top_score": 22949989,
+      "top_rank": 17,
+      "consecutive_days": 4,
+      "days_on_board": 4
     }
   ],
   "longest_all_time": [
@@ -514,8 +514,8 @@
       "metric": "feed rank",
       "top_score": 339,
       "top_rank": 3,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "A Family Tree of Software Job Titles",
@@ -524,8 +524,8 @@
       "metric": "feed rank",
       "top_score": 265,
       "top_rank": 6,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "Testing a Trash Can Faraday Cage",
@@ -534,8 +534,8 @@
       "metric": "feed rank",
       "top_score": 72,
       "top_rank": 16,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "The need for at least a third option",
@@ -544,8 +544,8 @@
       "metric": "feed rank",
       "top_score": 85,
       "top_rank": 2,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "Probabilistic data structures in Go",
@@ -554,18 +554,8 @@
       "metric": "feed rank",
       "top_score": 62,
       "top_rank": 3,
-      "longest_streak": 3,
-      "days_on_board": 3
-    },
-    {
-      "title": "Terminal borders that don't cost a cell",
-      "source": "lobsters",
-      "url": "https://www.joshka.net/cell-borders/",
-      "metric": "score",
-      "top_score": 396,
-      "top_rank": 9,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "Someone's impersonating this blog",
@@ -574,8 +564,8 @@
       "metric": "feed rank",
       "top_score": 46,
       "top_rank": 5,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "Steinar H. Gunderson: Solving the fox game",
@@ -584,18 +574,8 @@
       "metric": "feed rank",
       "top_score": 19,
       "top_rank": 8,
-      "longest_streak": 3,
-      "days_on_board": 3
-    },
-    {
-      "title": "Let Me Let You Own Your Data",
-      "source": "lobsters",
-      "url": "https://www.willett.io/posts/data/",
-      "metric": "score",
-      "top_score": 45,
-      "top_rank": 2,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "Writing a DSL for high performance parallel programming in OxCaml",
@@ -604,398 +584,308 @@
       "metric": "feed rank",
       "top_score": 15,
       "top_rank": 1,
-      "longest_streak": 3,
-      "days_on_board": 3
-    },
-    {
-      "title": "How do you truly stand out in Tech?",
-      "source": "devto",
-      "url": "https://dev.to/francistrdev/how-do-you-truly-stand-out-in-tech-478a",
-      "metric": "reactions",
-      "top_score": 203,
-      "top_rank": 1,
-      "longest_streak": 3,
-      "days_on_board": 3
-    },
-    {
-      "title": "How did you end up in tech, and are you staying?",
-      "source": "devto",
-      "url": "https://dev.to/maame-codes/how-did-you-end-up-in-tech-and-are-you-staying-4l9b",
-      "metric": "reactions",
-      "top_score": 161,
-      "top_rank": 4,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "MCP Is Dead Simple. And That's Exactly the Problem",
       "source": "devto",
       "url": "https://dev.to/sylwia-lask/mcp-is-dead-simple-and-thats-exactly-the-problem-5811",
       "metric": "reactions",
-      "top_score": 174,
-      "top_rank": 2,
-      "longest_streak": 3,
-      "days_on_board": 3
-    },
-    {
-      "title": "The C Trilogy: How Dennis Ritchie, Bjarne Stroustrup, and Anders Hejlsberg Built the Modern World 🏛️",
-      "source": "devto",
-      "url": "https://dev.to/devengers/the-c-trilogy-how-dennis-ritchie-bjarne-stroustrup-and-anders-hejlsberg-built-the-modern-world-1onp",
-      "metric": "reactions",
-      "top_score": 155,
-      "top_rank": 4,
-      "longest_streak": 3,
-      "days_on_board": 3
-    },
-    {
-      "title": "Our Looping Factory Cut DEV Page Load Time by 75% and Counting",
-      "source": "devto",
-      "url": "https://dev.to/dailycontext/our-looping-factory-cut-dev-page-load-time-by-75-and-counting-1hnf",
-      "metric": "reactions",
-      "top_score": 143,
-      "top_rank": 5,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "top_score": 195,
+      "top_rank": 1,
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "Long Live Rails",
       "source": "devto",
       "url": "https://dev.to/ben/long-live-rails-3p21",
       "metric": "reactions",
-      "top_score": 131,
-      "top_rank": 6,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "top_score": 139,
+      "top_rank": 2,
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "We Keep Hearing About AI Productivity. The QA Group Chat Told a Different Story.",
       "source": "devto",
       "url": "https://dev.to/xulingfeng/we-keep-hearing-about-ai-productivity-the-qa-group-chat-told-a-different-story-2nma",
       "metric": "reactions",
-      "top_score": 111,
-      "top_rank": 7,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "top_score": 112,
+      "top_rank": 4,
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "A 10 years old developer who has become a DEV.to Trusted Member! 😱",
       "source": "devto",
       "url": "https://dev.to/necoz/a-10-years-old-developer-who-has-become-a-devto-trusted-member-49c8",
       "metric": "reactions",
-      "top_score": 96,
-      "top_rank": 9,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "top_score": 97,
+      "top_rank": 7,
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "Dev Opportunity Radar #25: $120K+ Atlassian Hackathon, MLH Fellowship, and INSEAD AI Founder Sprint",
       "source": "devto",
       "url": "https://dev.to/devengers/dev-opportunity-radar-25-120k-atlassian-hackathon-mlh-fellowship-and-insead-ai-founder-sprint-m96",
       "metric": "reactions",
-      "top_score": 95,
-      "top_rank": 10,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "top_score": 108,
+      "top_rank": 5,
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "Congrats to the Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine Winners!",
       "source": "devto",
       "url": "https://dev.to/devteam/congrats-to-the-hacktoberfest-open-source-ai-challenge-week-4-ghost-in-the-machine-winners-nok",
       "metric": "reactions",
-      "top_score": 93,
-      "top_rank": 11,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "top_score": 105,
+      "top_rank": 6,
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "One Year on DEV.to, 109 Articles Later",
       "source": "devto",
       "url": "https://dev.to/dannwaneri/one-year-on-devto-109-articles-later-p31",
       "metric": "reactions",
-      "top_score": 69,
-      "top_rank": 13,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "top_score": 74,
+      "top_rank": 11,
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "Ask More of Your UI",
       "source": "devto",
       "url": "https://dev.to/dailycontext/ask-more-of-your-ui-2nf7",
       "metric": "reactions",
-      "top_score": 58,
-      "top_rank": 14,
-      "longest_streak": 3,
-      "days_on_board": 3
-    },
-    {
-      "title": "Kianuni/Erosion-CN",
-      "source": "github_trending",
-      "url": "https://github.com/Kianuni/Erosion-CN",
-      "metric": "stars",
-      "top_score": 2127,
-      "top_rank": 3,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "top_score": 60,
+      "top_rank": 12,
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "apex-compute/ANR",
       "source": "github_trending",
       "url": "https://github.com/apex-compute/ANR",
       "metric": "stars",
-      "top_score": 2207,
+      "top_score": 2474,
       "top_rank": 2,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "deepseek-ai/chat-demo",
       "source": "github_trending",
       "url": "https://github.com/deepseek-ai/chat-demo",
       "metric": "stars",
-      "top_score": 2959,
+      "top_score": 4110,
       "top_rank": 1,
-      "longest_streak": 3,
-      "days_on_board": 3
-    },
-    {
-      "title": "HybridRobotics/supermimic",
-      "source": "github_trending",
-      "url": "https://github.com/HybridRobotics/supermimic",
-      "metric": "stars",
-      "top_score": 1554,
-      "top_rank": 5,
-      "longest_streak": 3,
-      "days_on_board": 3
-    },
-    {
-      "title": "FrigadeHQ/yogurt",
-      "source": "github_trending",
-      "url": "https://github.com/FrigadeHQ/yogurt",
-      "metric": "stars",
-      "top_score": 1647,
-      "top_rank": 4,
-      "longest_streak": 3,
+      "longest_streak": 4,
       "days_on_board": 4
-    },
-    {
-      "title": "DevedevT/FFmpeg-GUI-Editor-Windows",
-      "source": "github_trending",
-      "url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows",
-      "metric": "stars",
-      "top_score": 1228,
-      "top_rank": 6,
-      "longest_streak": 3,
-      "days_on_board": 3
-    },
-    {
-      "title": "JDhruv14/line-art-animation",
-      "source": "github_trending",
-      "url": "https://github.com/JDhruv14/line-art-animation",
-      "metric": "stars",
-      "top_score": 834,
-      "top_rank": 11,
-      "longest_streak": 3,
-      "days_on_board": 3
     },
     {
       "title": "zod",
       "source": "npm",
       "url": "https://www.npmjs.com/package/zod",
       "metric": "weekly downloads",
-      "top_score": 460607664,
+      "top_score": 462273503,
       "top_rank": 1,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "typescript",
       "source": "npm",
       "url": "https://www.npmjs.com/package/typescript",
       "metric": "weekly downloads",
-      "top_score": 423856689,
+      "top_score": 427220745,
       "top_rank": 2,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "esbuild",
       "source": "npm",
       "url": "https://www.npmjs.com/package/esbuild",
       "metric": "weekly downloads",
-      "top_score": 422097531,
+      "top_score": 425498708,
       "top_rank": 3,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "vite",
       "source": "npm",
       "url": "https://www.npmjs.com/package/vite",
       "metric": "weekly downloads",
-      "top_score": 274471057,
+      "top_score": 277315630,
       "top_rank": 4,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "react",
       "source": "npm",
       "url": "https://www.npmjs.com/package/react",
       "metric": "weekly downloads",
-      "top_score": 258500204,
+      "top_score": 260880973,
       "top_rank": 5,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "lodash",
       "source": "npm",
       "url": "https://www.npmjs.com/package/lodash",
       "metric": "weekly downloads",
-      "top_score": 201638951,
+      "top_score": 202579418,
       "top_rank": 6,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "express",
       "source": "npm",
       "url": "https://www.npmjs.com/package/express",
       "metric": "weekly downloads",
-      "top_score": 197054038,
+      "top_score": 198122501,
       "top_rank": 7,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "vitest",
       "source": "npm",
       "url": "https://www.npmjs.com/package/vitest",
       "metric": "weekly downloads",
-      "top_score": 183935040,
+      "top_score": 185479011,
       "top_rank": 8,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "tailwindcss",
       "source": "npm",
       "url": "https://www.npmjs.com/package/tailwindcss",
       "metric": "weekly downloads",
-      "top_score": 180415741,
+      "top_score": 182099083,
       "top_rank": 9,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "axios",
       "source": "npm",
       "url": "https://www.npmjs.com/package/axios",
       "metric": "weekly downloads",
-      "top_score": 142918770,
+      "top_score": 143624637,
       "top_rank": 10,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "next",
       "source": "npm",
       "url": "https://www.npmjs.com/package/next",
       "metric": "weekly downloads",
-      "top_score": 93677602,
+      "top_score": 94442807,
       "top_rank": 11,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "webpack",
       "source": "npm",
       "url": "https://www.npmjs.com/package/webpack",
       "metric": "weekly downloads",
-      "top_score": 73286825,
+      "top_score": 73522067,
       "top_rank": 12,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "graphql",
       "source": "npm",
       "url": "https://www.npmjs.com/package/graphql",
       "metric": "weekly downloads",
-      "top_score": 69819237,
+      "top_score": 70187226,
       "top_rank": 13,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "jest",
       "source": "npm",
       "url": "https://www.npmjs.com/package/jest",
       "metric": "weekly downloads",
-      "top_score": 60029351,
+      "top_score": 60155469,
       "top_rank": 14,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "prisma",
       "source": "npm",
       "url": "https://www.npmjs.com/package/prisma",
       "metric": "weekly downloads",
-      "top_score": 26240131,
+      "top_score": 26315058,
       "top_rank": 15,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "vue",
       "source": "npm",
       "url": "https://www.npmjs.com/package/vue",
       "metric": "weekly downloads",
-      "top_score": 25045648,
+      "top_score": 25213072,
       "top_rank": 16,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "fastify",
       "source": "npm",
       "url": "https://www.npmjs.com/package/fastify",
       "metric": "weekly downloads",
-      "top_score": 22737261,
+      "top_score": 22949989,
       "top_rank": 17,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "react-native",
       "source": "npm",
       "url": "https://www.npmjs.com/package/react-native",
       "metric": "weekly downloads",
-      "top_score": 21226366,
+      "top_score": 21394203,
       "top_rank": 18,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "electron",
       "source": "npm",
       "url": "https://www.npmjs.com/package/electron",
       "metric": "weekly downloads",
-      "top_score": 12569506,
+      "top_score": 12662253,
       "top_rank": 19,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "svelte",
       "source": "npm",
       "url": "https://www.npmjs.com/package/svelte",
       "metric": "weekly downloads",
-      "top_score": 9685203,
+      "top_score": 9766604,
       "top_rank": 20,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
     },
     {
       "title": "@angular/core",
@@ -1004,8 +894,118 @@
       "metric": "weekly downloads",
       "top_score": 8195583,
       "top_rank": 21,
-      "longest_streak": 3,
-      "days_on_board": 3
+      "longest_streak": 4,
+      "days_on_board": 4
+    },
+    {
+      "title": "nuxt",
+      "source": "npm",
+      "url": "https://www.npmjs.com/package/nuxt",
+      "metric": "weekly downloads",
+      "top_score": 3438091,
+      "top_rank": 22,
+      "longest_streak": 4,
+      "days_on_board": 4
+    },
+    {
+      "title": "react-query",
+      "source": "npm",
+      "url": "https://www.npmjs.com/package/react-query",
+      "metric": "weekly downloads",
+      "top_score": 1916439,
+      "top_rank": 23,
+      "longest_streak": 4,
+      "days_on_board": 4
+    },
+    {
+      "title": "nestjs",
+      "source": "npm",
+      "url": "https://www.npmjs.com/package/nestjs",
+      "metric": "weekly downloads",
+      "top_score": 17373,
+      "top_rank": 24,
+      "longest_streak": 4,
+      "days_on_board": 4
+    },
+    {
+      "title": "boto3",
+      "source": "pypi",
+      "url": "https://pypi.org/project/boto3/",
+      "metric": "monthly downloads",
+      "top_score": 2600056407,
+      "top_rank": 1,
+      "longest_streak": 4,
+      "days_on_board": 4
+    },
+    {
+      "title": "requests",
+      "source": "pypi",
+      "url": "https://pypi.org/project/requests/",
+      "metric": "monthly downloads",
+      "top_score": 1478957330,
+      "top_rank": 2,
+      "longest_streak": 4,
+      "days_on_board": 4
+    },
+    {
+      "title": "pydantic",
+      "source": "pypi",
+      "url": "https://pypi.org/project/pydantic/",
+      "metric": "monthly downloads",
+      "top_score": 1139429690,
+      "top_rank": 3,
+      "longest_streak": 4,
+      "days_on_board": 4
+    },
+    {
+      "title": "click",
+      "source": "pypi",
+      "url": "https://pypi.org/project/click/",
+      "metric": "monthly downloads",
+      "top_score": 1100967551,
+      "top_rank": 4,
+      "longest_streak": 4,
+      "days_on_board": 4
+    },
+    {
+      "title": "numpy",
+      "source": "pypi",
+      "url": "https://pypi.org/project/numpy/",
+      "metric": "monthly downloads",
+      "top_score": 1095220575,
+      "top_rank": 5,
+      "longest_streak": 4,
+      "days_on_board": 4
+    },
+    {
+      "title": "pytest",
+      "source": "pypi",
+      "url": "https://pypi.org/project/pytest/",
+      "metric": "monthly downloads",
+      "top_score": 960310675,
+      "top_rank": 6,
+      "longest_streak": 4,
+      "days_on_board": 4
+    },
+    {
+      "title": "httpx",
+      "source": "pypi",
+      "url": "https://pypi.org/project/httpx/",
+      "metric": "monthly downloads",
+      "top_score": 794931619,
+      "top_rank": 7,
+      "longest_streak": 4,
+      "days_on_board": 4
+    },
+    {
+      "title": "pandas",
+      "source": "pypi",
+      "url": "https://pypi.org/project/pandas/",
+      "metric": "monthly downloads",
+      "top_score": 698520592,
+      "top_rank": 8,
+      "longest_streak": 4,
+      "days_on_board": 4
     }
   ]
 }

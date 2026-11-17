@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-16T18:53:57.766993+00:00",
+ "generated_at": "2026-11-17T02:08:12.666926+00:00",
  "name": "trendscope — daily developer attention dataset",
  "homepage": "https://trendscope.zalize.com/",
  "repo": "https://github.com/zalize-com/trendscope",
  "openapi": "https://trendscope.zalize.com/docs/api/openapi.yaml",
- "latest_snapshot": "2026-11-16",
+ "latest_snapshot": "2026-11-17",
  "snapshot_dates": [
   "2026-11-07",
   "2026-11-08",
@@ -15,9 +15,10 @@
   "2026-11-13",
   "2026-11-14",
   "2026-11-15",
-  "2026-11-16"
+  "2026-11-16",
+  "2026-11-17"
  ],
- "days_tracked": 10,
+ "days_tracked": 11,
  "sources": [
   "0xadada",
   "0xdade",
@@ -9234,7 +9235,7 @@
   "zzzwb"
  ],
  "source_count": 9213,
- "item_count_latest": 109034,
+ "item_count_latest": 109431,
  "endpoints": [
   "authors.json",
   "badge-sources.json",

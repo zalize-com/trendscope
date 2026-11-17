@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-16T18:53:52.773533+00:00",
- "latest_snapshot": "2026-11-16",
- "total": 9488,
+ "generated_at": "2026-11-17T02:08:01.625513+00:00",
+ "latest_snapshot": "2026-11-17",
+ "total": 9505,
  "domains": [
   {
    "hostname": "blog.google",
-   "days_on_board": 5,
-   "items": 90,
+   "days_on_board": 6,
+   "items": 135,
    "sources": [
     "googleblog",
     "hackernews",
@@ -23,8 +23,8 @@
   },
   {
    "hostname": "theguardian.com",
-   "days_on_board": 4,
-   "items": 136,
+   "days_on_board": 5,
+   "items": 197,
    "sources": [
     "eb_guardian",
     "guardianco",
@@ -44,8 +44,8 @@
   },
   {
    "hostname": "reuters.com",
-   "days_on_board": 4,
-   "items": 8,
+   "days_on_board": 5,
+   "items": 9,
    "sources": [
     "daringfireball",
     "hackernews",
@@ -61,8 +61,8 @@
   },
   {
    "hostname": "twitter.com",
-   "days_on_board": 4,
-   "items": 6,
+   "days_on_board": 5,
+   "items": 7,
    "sources": [
     "hackernews",
     "hnrss",
@@ -77,77 +77,9 @@
    }
   },
   {
-   "hostname": "reddit.com",
-   "days_on_board": 3,
-   "items": 1672,
-   "sources": [
-    "br_homepage_piotr_migda",
-    "br_nelson_s_linkblog",
-    "hackernews",
-    "k8s",
-    "rangular",
-    "rartificial",
-    "raskprogramming",
-    "raws",
-    "rclojure",
-    "rcoding",
-    "rcompsci",
-    "rcpp",
-    "rdartlang",
-    "rdataengineering",
-    "rdatascience",
-    "rdevops",
-    "rdjango",
-    "rdocker",
-    "rdotnet",
-    "reddit",
-    "relixir",
-    "relm",
-    "rexperienceddevs",
-    "rfrontend",
-    "rgamedev",
-    "rgolang",
-    "rhaskell",
-    "rjava",
-    "rjavascript",
-    "rkotlin",
-    "rkubernetes",
-    "rlaravel",
-    "rlisp",
-    "rmongodb",
-    "rnetsec",
-    "rnextjs",
-    "rnode",
-    "ropensource",
-    "rphp",
-    "rpostgresql",
-    "rprogramming",
-    "rpython",
-    "rreactjs",
-    "rredis",
-    "rrust",
-    "rscala",
-    "rselfhosted",
-    "rsveltejs",
-    "rswift",
-    "rsysadmin",
-    "rtechnology",
-    "rtypescript",
-    "rwebdesign",
-    "rwebdev"
-   ],
-   "top_hit": {
-    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
-    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
-    "score": 382,
-    "metric": "points",
-    "date": "2026-11-13"
-   }
-  },
-  {
    "hostname": "youtube.com",
-   "days_on_board": 3,
-   "items": 1331,
+   "days_on_board": 4,
+   "items": 2001,
    "sources": [
     "br_blog_ankush_menat",
     "br_dr_j_engineering_leadership_software_dev",
@@ -225,43 +157,92 @@
    }
   },
   {
+   "hostname": "reddit.com",
+   "days_on_board": 4,
+   "items": 1946,
+   "sources": [
+    "br_homepage_piotr_migda",
+    "br_nelson_s_linkblog",
+    "hackernews",
+    "k8s",
+    "rangular",
+    "rartificial",
+    "raskprogramming",
+    "raws",
+    "rclojure",
+    "rcoding",
+    "rcompsci",
+    "rcpp",
+    "rdartlang",
+    "rdataengineering",
+    "rdatascience",
+    "rdevops",
+    "rdjango",
+    "rdocker",
+    "rdotnet",
+    "reddit",
+    "relixir",
+    "relm",
+    "rexperienceddevs",
+    "rfrontend",
+    "rgamedev",
+    "rgolang",
+    "rhaskell",
+    "rjava",
+    "rjavascript",
+    "rkotlin",
+    "rkubernetes",
+    "rlaravel",
+    "rlisp",
+    "rmongodb",
+    "rnetsec",
+    "rnextjs",
+    "rnode",
+    "ropensource",
+    "rphp",
+    "rpostgresql",
+    "rprogramming",
+    "rpython",
+    "rreactjs",
+    "rredis",
+    "rrust",
+    "rscala",
+    "rselfhosted",
+    "rsveltejs",
+    "rswift",
+    "rsysadmin",
+    "rtechnology",
+    "rtypescript",
+    "rwebdesign",
+    "rwebdev"
+   ],
+   "top_hit": {
+    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+    "score": 382,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
    "hostname": "npmjs.com",
-   "days_on_board": 3,
-   "items": 72,
+   "days_on_board": 4,
+   "items": 96,
    "sources": [
     "npm"
    ],
    "top_hit": {
     "title": "zod",
     "url": "https://www.npmjs.com/package/zod",
-    "score": 460607664,
+    "score": 462273503,
     "metric": "weekly downloads",
-    "date": "2026-11-16"
-   }
-  },
-  {
-   "hostname": "nytimes.com",
-   "days_on_board": 3,
-   "items": 67,
-   "sources": [
-    "bostocks",
-    "daringfireball",
-    "hackernews",
-    "hnrss",
-    "rss4"
-   ],
-   "top_hit": {
-    "title": "Jensen Huang said to have had relationship with executive who reports to him",
-    "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
-    "score": 410,
-    "metric": "points",
-    "date": "2026-11-11"
+    "date": "2026-11-17"
    }
   },
   {
    "hostname": "wired.com",
-   "days_on_board": 3,
-   "items": 65,
+   "days_on_board": 4,
+   "items": 96,
    "sources": [
     "azure",
     "daringfireball",
@@ -280,8 +261,8 @@
   },
   {
    "hostname": "blog.janestreet.com",
-   "days_on_board": 3,
-   "items": 64,
+   "days_on_board": 4,
+   "items": 95,
    "sources": [
     "blogjanestreet",
     "blogsjanestreet",
@@ -297,26 +278,28 @@
    }
   },
   {
-   "hostname": "arxiv.org",
-   "days_on_board": 3,
-   "items": 63,
+   "hostname": "nytimes.com",
+   "days_on_board": 4,
+   "items": 88,
    "sources": [
-    "arxiv",
-    "evanmiller",
-    "lobsters"
+    "bostocks",
+    "daringfireball",
+    "hackernews",
+    "hnrss",
+    "rss4"
    ],
    "top_hit": {
-    "title": "Unbundling Multimodal Vision Encoding",
-    "url": "http://arxiv.org/abs/2611.17334v1",
-    "score": 15,
-    "metric": "arxiv recent",
-    "date": "2026-11-15"
+    "title": "Jensen Huang said to have had relationship with executive who reports to him",
+    "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+    "score": 410,
+    "metric": "points",
+    "date": "2026-11-11"
    }
   },
   {
    "hostname": "github.blog",
-   "days_on_board": 3,
-   "items": 51,
+   "days_on_board": 4,
+   "items": 81,
    "sources": [
     "eb_github_old",
     "github_eng",
@@ -332,12 +315,30 @@
    }
   },
   {
+   "hostname": "arxiv.org",
+   "days_on_board": 4,
+   "items": 79,
+   "sources": [
+    "arxiv",
+    "evanmiller",
+    "lobsters"
+   ],
+   "top_hit": {
+    "title": "Unbundling Multimodal Vision Encoding",
+    "url": "http://arxiv.org/abs/2611.17334v1",
+    "score": 15,
+    "metric": "arxiv recent",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "9to5mac.com",
-   "days_on_board": 3,
-   "items": 50,
+   "days_on_board": 4,
+   "items": 67,
    "sources": [
     "9to5mac",
     "br_posts_from_iamgregb",
+    "daringfireball",
     "hackernews"
    ],
    "top_hit": {
@@ -350,8 +351,8 @@
   },
   {
    "hostname": "theverge.com",
-   "days_on_board": 3,
-   "items": 47,
+   "days_on_board": 4,
+   "items": 58,
    "sources": [
     "br_hearthside_by_caleb_hearth",
     "hackernews",
@@ -366,9 +367,26 @@
    }
   },
   {
+   "hostname": "projectzero.google",
+   "days_on_board": 4,
+   "items": 52,
+   "sources": [
+    "googleprojectzero",
+    "hackernews",
+    "sec_google_project_zero_legacy"
+   ],
+   "top_hit": {
+    "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
+    "url": "https://projectzero.google/2026/11/disclosure-policy.html",
+    "score": 220,
+    "metric": "points",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "simonwillison.net",
-   "days_on_board": 3,
-   "items": 36,
+   "days_on_board": 4,
+   "items": 51,
    "sources": [
     "br_nelson_s_linkblog",
     "hackernews",
@@ -384,8 +402,8 @@
   },
   {
    "hostname": "lwn.net",
-   "days_on_board": 3,
-   "items": 35,
+   "days_on_board": 4,
+   "items": 50,
    "sources": [
     "hackernews",
     "lwn"
@@ -400,8 +418,8 @@
   },
   {
    "hostname": "cnn.com",
-   "days_on_board": 3,
-   "items": 33,
+   "days_on_board": 4,
+   "items": 50,
    "sources": [
     "hackernews",
     "hnrss",
@@ -417,8 +435,8 @@
   },
   {
    "hostname": "eff.org",
-   "days_on_board": 3,
-   "items": 32,
+   "days_on_board": 4,
+   "items": 47,
    "sources": [
     "eff",
     "hackernews"
@@ -433,8 +451,8 @@
   },
   {
    "hostname": "jefftk.com",
-   "days_on_board": 3,
-   "items": 32,
+   "days_on_board": 4,
+   "items": 47,
    "sources": [
     "hackernews",
     "jefftk"
@@ -448,26 +466,9 @@
    }
   },
   {
-   "hostname": "projectzero.google",
-   "days_on_board": 3,
-   "items": 32,
-   "sources": [
-    "googleprojectzero",
-    "hackernews",
-    "sec_google_project_zero_legacy"
-   ],
-   "top_hit": {
-    "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
-    "url": "https://projectzero.google/2026/11/disclosure-policy.html",
-    "score": 220,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "muratbuffalo.blogspot.com",
-   "days_on_board": 3,
-   "items": 31,
+   "days_on_board": 4,
+   "items": 46,
    "sources": [
     "hackernews",
     "murat"
@@ -481,41 +482,28 @@
    }
   },
   {
-   "hostname": "deepmind.google",
-   "days_on_board": 3,
-   "items": 31,
+   "hostname": "blog.rust-lang.org",
+   "days_on_board": 4,
+   "items": 42,
    "sources": [
-    "deepmind",
-    "hackernews"
+    "blogrustlang",
+    "eb_mozilla_automation_team",
+    "hackernews",
+    "lemmy",
+    "lobsters"
    ],
    "top_hit": {
-    "title": "AlphaProof Code",
-    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-    "score": 678,
+    "title": "Rust 1.100",
+    "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+    "score": 890,
     "metric": "points",
-    "date": "2026-11-10"
-   }
-  },
-  {
-   "hostname": "garymarcus.substack.com",
-   "days_on_board": 3,
-   "items": 31,
-   "sources": [
-    "garymarcus",
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Eli Lilly CEO pushes back on Dario Amodei's medical claims",
-    "url": "https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest",
-    "score": 269,
-    "metric": "points",
-    "date": "2026-11-13"
+    "date": "2026-11-12"
    }
   },
   {
    "hostname": "aphyr.com",
-   "days_on_board": 3,
-   "items": 28,
+   "days_on_board": 4,
+   "items": 41,
    "sources": [
     "aphyr",
     "hackernews",
@@ -531,27 +519,9 @@
    }
   },
   {
-   "hostname": "blog.rust-lang.org",
-   "days_on_board": 3,
-   "items": 27,
-   "sources": [
-    "blogrustlang",
-    "eb_mozilla_automation_team",
-    "hackernews",
-    "lemmy"
-   ],
-   "top_hit": {
-    "title": "Rust 1.100",
-    "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
-    "score": 890,
-    "metric": "points",
-    "date": "2026-11-12"
-   }
-  },
-  {
    "hostname": "zwischenzugs.com",
-   "days_on_board": 3,
-   "items": 23,
+   "days_on_board": 4,
+   "items": 33,
    "sources": [
     "hackernews",
     "lobsters",
@@ -566,25 +536,9 @@
    }
   },
   {
-   "hostname": "brave.com",
-   "days_on_board": 3,
-   "items": 22,
-   "sources": [
-    "brave",
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Brave Search API now accepts agentic payments via the x402 protocol",
-    "url": "https://brave.com/blog/search-api-agentic-payments/",
-    "score": 260,
-    "metric": "points",
-    "date": "2026-11-13"
-   }
-  },
-  {
    "hostname": "blog.ovalerio.net",
-   "days_on_board": 3,
-   "items": 17,
+   "days_on_board": 4,
+   "items": 32,
    "sources": [
     "br_gon_alo_val_rio_thoughts_projects_and_so",
     "lobsters"
@@ -599,8 +553,8 @@
   },
   {
    "hostname": "mattbee.mataroa.blog",
-   "days_on_board": 3,
-   "items": 17,
+   "days_on_board": 4,
+   "items": 32,
    "sources": [
     "br_a_lovely_harmless_monster",
     "lobsters"
@@ -614,9 +568,25 @@
    }
   },
   {
+   "hostname": "brave.com",
+   "days_on_board": 4,
+   "items": 32,
+   "sources": [
+    "brave",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "Brave Search API now accepts agentic payments via the x402 protocol",
+    "url": "https://brave.com/blog/search-api-agentic-payments/",
+    "score": 260,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
    "hostname": "righto.com",
-   "days_on_board": 3,
-   "items": 17,
+   "days_on_board": 4,
+   "items": 32,
    "sources": [
     "br_ken_shirriff_s_blog",
     "hackernews"
@@ -631,8 +601,8 @@
   },
   {
    "hostname": "antonz.org",
-   "days_on_board": 3,
-   "items": 12,
+   "days_on_board": 4,
+   "items": 22,
    "sources": [
     "br_anton_zhiyanov",
     "lobsters"
@@ -647,8 +617,8 @@
   },
   {
    "hostname": "eli.thegreenplace.net",
-   "days_on_board": 3,
-   "items": 12,
+   "days_on_board": 4,
+   "items": 17,
    "sources": [
     "bendersky",
     "hackernews",
@@ -664,8 +634,8 @@
   },
   {
    "hostname": "wsj.com",
-   "days_on_board": 3,
-   "items": 5,
+   "days_on_board": 4,
+   "items": 7,
    "sources": [
     "br_tiny_subversions_darius_kazemi",
     "daringfireball",
@@ -681,8 +651,8 @@
   },
   {
    "hostname": "blog.sesse.net",
-   "days_on_board": 3,
-   "items": 4,
+   "days_on_board": 4,
+   "items": 5,
    "sources": [
     "lobsters",
     "planetdebian"
@@ -697,8 +667,8 @@
   },
   {
    "hostname": "anthropic.com",
-   "days_on_board": 3,
-   "items": 4,
+   "days_on_board": 4,
+   "items": 5,
    "sources": [
     "br_reid_burke_reid_software_engineer",
     "hackernews"
@@ -712,55 +682,9 @@
    }
   },
   {
-   "hostname": "so.long.thanks.fish",
-   "days_on_board": 3,
-   "items": 3,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "Why get an expensive Pi when I have an old phone?",
-    "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
-    "score": 533,
-    "metric": "points",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "joshka.net",
-   "days_on_board": 3,
-   "items": 3,
-   "sources": [
-    "hackernews",
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "Terminal borders that don't cost a cell",
-    "url": "https://www.joshka.net/cell-borders/",
-    "score": 396,
-    "metric": "points",
-    "date": "2026-11-13"
-   }
-  },
-  {
-   "hostname": "willett.io",
-   "days_on_board": 3,
-   "items": 3,
-   "sources": [
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "Let Me Let You Own Your Data",
-    "url": "https://www.willett.io/posts/data/",
-    "score": 45,
-    "metric": "score",
-    "date": "2026-11-16"
-   }
-  },
-  {
    "hostname": "chimera-vocal-synth.vercel.app",
-   "days_on_board": 3,
-   "items": 3,
+   "days_on_board": 4,
+   "items": 4,
    "sources": [
     "hackernews",
     "waxy"
@@ -774,24 +698,9 @@
    }
   },
   {
-   "hostname": "spacex.com",
-   "days_on_board": 3,
-   "items": 3,
-   "sources": [
-    "hackernews"
-   ],
-   "top_hit": {
-    "title": "SpaceX catches the Starship to end Flight 15",
-    "url": "https://www.spacex.com/launches/starship-flight-15",
-    "score": 1638,
-    "metric": "points",
-    "date": "2026-11-16"
-   }
-  },
-  {
    "hostname": "mp.weixin.qq.com",
-   "days_on_board": 2,
-   "items": 537,
+   "days_on_board": 3,
+   "items": 792,
    "sources": [
     "42jing",
     "alimiddle",
@@ -822,8 +731,8 @@
   },
   {
    "hostname": "lore.kernel.org",
-   "days_on_board": 2,
-   "items": 330,
+   "days_on_board": 3,
+   "items": 345,
    "sources": [
     "lorekernel"
    ],
@@ -836,24 +745,9 @@
    }
   },
   {
-   "hostname": "investing.com",
-   "days_on_board": 2,
-   "items": 192,
-   "sources": [
-    "investing"
-   ],
-   "top_hit": {
-    "title": "Evergy director Jonathan Rolph buys $133,610 in common stock",
-    "url": "https://www.investing.com/news/insider-trading-news/evergy-director-jonathan-rolph-buys-133610-in-common-stock-93CH-5028131",
-    "score": 10,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "medium.com",
-   "days_on_board": 2,
-   "items": 182,
+   "days_on_board": 3,
+   "items": 300,
    "sources": [
     "airbnb",
     "betterprog",
@@ -888,24 +782,9 @@
    }
   },
   {
-   "hostname": "news.google.com",
-   "days_on_board": 2,
-   "items": 138,
-   "sources": [
-    "w4news"
-   ],
-   "top_hit": {
-    "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his silence on breakdown - AP News",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUjU5a3ljR1FocjlKQnRVS21kY1kwR3R4bEZvdUc4VExhbnc2NjZrU0ZfRS1iMkoxcGthaUV4a19MTlNsR2JFMlFqZDN0Y1JiejlNWUFUWjAyWTl3RFNXX0ZvbkNmX0l1elhVZndMd3pQSlQtbk1RYzBMT2tmOTJuaTlwUm5FQmdRODFJQTk4OWV5MlpScVhhc1BEWWotS1E?oc=5",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "changelog.com",
-   "days_on_board": 2,
-   "items": 135,
+   "days_on_board": 3,
+   "items": 210,
    "sources": [
     "changelog",
     "changelogships",
@@ -922,9 +801,24 @@
    }
   },
   {
+   "hostname": "investing.com",
+   "days_on_board": 3,
+   "items": 202,
+   "sources": [
+    "investing"
+   ],
+   "top_hit": {
+    "title": "Evergy director Jonathan Rolph buys $133,610 in common stock",
+    "url": "https://www.investing.com/news/insider-trading-news/evergy-director-jonathan-rolph-buys-133610-in-common-stock-93CH-5028131",
+    "score": 10,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "x.com",
-   "days_on_board": 2,
-   "items": 133,
+   "days_on_board": 3,
+   "items": 198,
    "sources": [
     "api",
     "br_reid_burke_reid_software_engineer",
@@ -944,24 +838,47 @@
    }
   },
   {
-   "hostname": "seekingalpha.com",
-   "days_on_board": 2,
-   "items": 116,
+   "hostname": "localhost",
+   "days_on_board": 3,
+   "items": 152,
    "sources": [
-    "seekingalpha"
+    "br_bevel_work",
+    "br_blog_jeffrey_moro",
+    "br_hello_i_m_clayton",
+    "br_mixed_laterality",
+    "coderyi",
+    "logtalk"
    ],
    "top_hit": {
-    "title": "NASA advances PRIMA mission with BAE Systems as space telescope supplier",
-    "url": "https://seekingalpha.com/news/4672811-nasa-advances-prima-mission-with-bae-systems-as-space-telescope-supplier?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-    "score": 7,
+    "title": "Everything is Free",
+    "url": "http://localhost:1313/blog/2026-11-08-everything-is-free.html",
+    "score": 15,
     "metric": "feed rank",
-    "date": "2026-11-15"
+    "date": "2026-11-16"
+   }
+  },
+  {
+   "hostname": "theregister.com",
+   "days_on_board": 3,
+   "items": 135,
+   "sources": [
+    "hackernews",
+    "hnrss",
+    "sec_the_register",
+    "theregister"
+   ],
+   "top_hit": {
+    "title": "Microsoft blames monster email outage on software defect introduced in July fix",
+    "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+    "score": 220,
+    "metric": "points",
+    "date": "2026-11-17"
    }
   },
   {
    "hostname": "producthunt.com",
-   "days_on_board": 2,
-   "items": 111,
+   "days_on_board": 3,
+   "items": 132,
    "sources": [
     "br_nelson_s_linkblog",
     "producthunt"
@@ -975,9 +892,24 @@
    }
   },
   {
+   "hostname": "seekingalpha.com",
+   "days_on_board": 3,
+   "items": 123,
+   "sources": [
+    "seekingalpha"
+   ],
+   "top_hit": {
+    "title": "NASA advances PRIMA mission with BAE Systems as space telescope supplier",
+    "url": "https://seekingalpha.com/news/4672811-nasa-advances-prima-mission-with-bae-systems-as-space-telescope-supplier?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+    "score": 7,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "timesofindia.indiatimes.com",
-   "days_on_board": 2,
-   "items": 107,
+   "days_on_board": 3,
+   "items": 122,
    "sources": [
     "timesofindia"
    ],
@@ -985,6 +917,83 @@
     "title": "Georgia woman wins $2.5m after rear-end crash leads to spinal fusion surgery",
     "url": "https://timesofindia.indiatimes.com/world/us/a-metro-atlanta-woman-was-awarded-2-5-million-by-a-cobb-county-georgia-jury-after-a-2023-rear-end-crash-left-her-with-injuries-so-serious-that-she-later-needed-spinal-fusion-surgery/articleshow/135865103.cms",
     "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "aws.amazon.com",
+   "days_on_board": 3,
+   "items": 121,
+   "sources": [
+    "aws_blog",
+    "awsarchitectureblo",
+    "sec_aws_security"
+   ],
+   "top_hit": {
+    "title": "Test your applications against AWS locally with AWS Emulator",
+    "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "unite.ai",
+   "days_on_board": 3,
+   "items": 113,
+   "sources": [
+    "uniteai"
+   ],
+   "top_hit": {
+    "title": "Bessent Gives Nvidia 10 Days to Address Export-Control Questions",
+    "url": "https://www.unite.ai/bessent-gives-nvidia-10-days-to-address-export-control-questions/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "techmeme.com",
+   "days_on_board": 3,
+   "items": 110,
+   "sources": [
+    "techmeme"
+   ],
+   "top_hit": {
+    "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A (Tamara Djurickovic/Tech.eu)",
+    "url": "https://www.techmeme.com/261115/p3#a261115p3",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "forbes.com",
+   "days_on_board": 3,
+   "items": 107,
+   "sources": [
+    "forbes"
+   ],
+   "top_hit": {
+    "title": "The Good, Bad And Ugly From The Packers’ Loss To The Vikings",
+    "url": "https://www.forbes.com/sites/robreischel/2026/11/15/the-good-bad-and-ugly-from-the-packers-loss-to-the-vikings/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "blog.logrocket.com",
+   "days_on_board": 3,
+   "items": 104,
+   "sources": [
+    "bloglogrocket"
+   ],
+   "top_hit": {
+    "title": "Top 5 AI code review tools in 2026",
+    "url": "https://blog.logrocket.com/ai-code-review-tools-2026/",
+    "score": 12,
     "metric": "feed rank",
     "date": "2026-11-15"
    }

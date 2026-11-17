@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-16T18:53:52.773533+00:00",
- "latest_snapshot": "2026-11-16",
+ "generated_at": "2026-11-17T02:08:01.625513+00:00",
+ "latest_snapshot": "2026-11-17",
  "crossovers": [
   {
    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
@@ -12,7 +12,7 @@
     "lobsters",
     "tb_jakub_t_jankiewicz"
    ],
-   "days": 2,
+   "days": 3,
    "best": {
     "score": 1055,
     "metric": "points",
@@ -30,7 +30,7 @@
     "br_kelvin_s_blog",
     "br_wheelsblog_v7"
    ],
-   "days": 1,
+   "days": 2,
    "best": {
     "score": 14,
     "metric": "feed rank",
@@ -47,7 +47,7 @@
     "hackernews",
     "lemmy"
    ],
-   "days": 3,
+   "days": 4,
    "best": {
     "score": 890,
     "metric": "points",
@@ -64,7 +64,7 @@
     "lobsters",
     "v2ocaml"
    ],
-   "days": 3,
+   "days": 4,
    "best": {
     "score": 15,
     "metric": "feed rank",
@@ -73,15 +73,32 @@
    }
   },
   {
+   "url": "https://burntsushi.net/jiff",
+   "title": "A datetime library for Rust",
+   "sources": [
+    "br_andrew_gallant_s_blog_andrew_gallant_s_b",
+    "hackernews",
+    "hnrss",
+    "lobsters"
+   ],
+   "days": 3,
+   "best": {
+    "score": 308,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-17"
+   }
+  },
+  {
    "url": "https://blog.archive.org/2026/11/12/preserving-30-years-of-salon-journalism",
-   "title": "Internet Archive on preserving 30 years of Salon",
+   "title": "Preserving 30 Years of Salon Journalism",
    "sources": [
     "blogarchive",
     "hackernews",
     "hnrss",
     "waxy"
    ],
-   "days": 2,
+   "days": 3,
    "best": {
     "score": 89,
     "metric": "points",
@@ -98,7 +115,7 @@
     "lobsters",
     "smitop"
    ],
-   "days": 2,
+   "days": 3,
    "best": {
     "score": 83,
     "metric": "points",
@@ -107,20 +124,37 @@
    }
   },
   {
-   "url": "https://burntsushi.net/jiff",
-   "title": "Jiff 1.0: A datetime library for Rust",
+   "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+   "title": "Microsoft blames monster email outage on software defect introduced in July fix",
    "sources": [
-    "br_andrew_gallant_s_blog_andrew_gallant_s_b",
+    "hackernews",
+    "hnrss",
+    "sec_the_register",
+    "theregister"
+   ],
+   "days": 2,
+   "best": {
+    "score": 220,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "url": "https://blog.startifact.com/posts/how-rust-changed-me",
+   "title": "How Rust Changed Me As A Developer",
+   "sources": [
+    "br_secret_weblog",
     "hackernews",
     "hnrss",
     "lobsters"
    ],
    "days": 2,
    "best": {
-    "score": 58,
+    "score": 181,
     "metric": "points",
     "source": "hackernews",
-    "date": "2026-11-16"
+    "date": "2026-11-17"
    }
   },
   {
@@ -131,7 +165,7 @@
     "hackernews",
     "sec_google_threat_analysis_group"
    ],
-   "days": 3,
+   "days": 4,
    "best": {
     "score": 568,
     "metric": "points",
@@ -147,7 +181,7 @@
     "lobsters",
     "zwischenzugs"
    ],
-   "days": 3,
+   "days": 4,
    "best": {
     "score": 265,
     "metric": "points",
@@ -163,7 +197,7 @@
     "hackernews",
     "sec_google_project_zero_legacy"
    ],
-   "days": 3,
+   "days": 4,
    "best": {
     "score": 220,
     "metric": "points",
@@ -173,13 +207,13 @@
   },
   {
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia",
-   "title": "What's Next for Nvidia?",
+   "title": "What’s Next For Nvidia?",
    "sources": [
     "hackernews",
     "hnrss",
     "steveblank"
    ],
-   "days": 2,
+   "days": 3,
    "best": {
     "score": 94,
     "metric": "points",
@@ -195,7 +229,7 @@
     "searchgoogleblog",
     "sec_google_threat_analysis_group"
    ],
-   "days": 2,
+   "days": 3,
    "best": {
     "score": 15,
     "metric": "feed rank",
@@ -211,7 +245,7 @@
     "csstricks",
     "nl_frontend_front"
    ],
-   "days": 2,
+   "days": 3,
    "best": {
     "score": 14,
     "metric": "feed rank",
@@ -227,7 +261,7 @@
     "planetemacs",
     "planetgnu"
    ],
-   "days": 2,
+   "days": 3,
    "best": {
     "score": 14,
     "metric": "feed rank",
@@ -243,7 +277,7 @@
     "lobsters",
     "planetclojure"
    ],
-   "days": 2,
+   "days": 3,
    "best": {
     "score": 12,
     "metric": "feed rank",
@@ -259,7 +293,7 @@
     "github_eng",
     "githubengineering"
    ],
-   "days": 2,
+   "days": 3,
    "best": {
     "score": 10,
     "metric": "feed rank",
@@ -269,18 +303,34 @@
   },
   {
    "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess",
-   "title": "Nvidia was in trouble before the Jensen Huang mess",
+   "title": "Nvidia Was Already in Trouble Before the Jensen Huang Mess",
    "sources": [
     "hackernews",
     "hnrss",
     "sec_wired"
    ],
-   "days": 1,
+   "days": 2,
    "best": {
     "score": 139,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://linebender.org/wiki/curves/squircle",
+   "title": "Squircles",
+   "sources": [
+    "hackernews",
+    "lemmy",
+    "lobsters"
+   ],
+   "days": 2,
+   "best": {
+    "score": 131,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-17"
    }
   },
   {
@@ -291,12 +341,28 @@
     "hackernews",
     "hnrss"
    ],
-   "days": 1,
+   "days": 2,
    "best": {
     "score": 51,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://blog.rust-lang.org/2026/11/16/enabling-parallel-frontend-on-nightly",
+   "title": "Enabling the parallel frontend on nightly",
+   "sources": [
+    "blogrustlang",
+    "eb_mozilla_automation_team",
+    "lobsters"
+   ],
+   "days": 2,
+   "best": {
+    "score": 21,
+    "metric": "score",
+    "source": "lobsters",
+    "date": "2026-11-17"
    }
   },
   {
@@ -307,7 +373,7 @@
     "echojs",
     "nl_frontend_front"
    ],
-   "days": 1,
+   "days": 2,
    "best": {
     "score": 15,
     "metric": "feed rank",
@@ -323,7 +389,7 @@
     "sec_wired",
     "wired"
    ],
-   "days": 1,
+   "days": 2,
    "best": {
     "score": 15,
     "metric": "feed rank",
@@ -332,19 +398,168 @@
    }
   },
   {
-   "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
-   "title": "Microsoft blames monster email outage on software defect introduced in July fix",
+   "url": "https://aphyr.com/posts/427-rip-harvest",
+   "title": "RIP, Harvest",
    "sources": [
-    "hnrss",
-    "sec_the_register",
-    "theregister"
+    "aphyr",
+    "hackernews"
    ],
-   "days": 1,
+   "days": 4,
    "best": {
-    "score": 11,
-    "metric": "feed rank",
-    "source": "hnrss",
-    "date": "2026-11-16"
+    "score": 445,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-09"
+   }
+  },
+  {
+   "url": "https://chimera-vocal-synth.vercel.app",
+   "title": "Chimera",
+   "sources": [
+    "hackernews",
+    "waxy"
+   ],
+   "days": 4,
+   "best": {
+    "score": 356,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-08"
+   }
+  },
+  {
+   "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+   "title": "Tech Companies Are Trying to Shift the Entire Concept of Privacy (Again)",
+   "sources": [
+    "eff",
+    "hackernews"
+   ],
+   "days": 4,
+   "best": {
+    "score": 339,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-14"
+   }
+  },
+  {
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available",
+   "title": "Gemini 4 Carbon is now available",
+   "sources": [
+    "googleblog",
+    "hackernews"
+   ],
+   "days": 4,
+   "best": {
+    "score": 295,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-10"
+   }
+  },
+  {
+   "url": "https://brave.com/blog/search-api-agentic-payments",
+   "title": "The Brave Search API now accepts agentic payments via the x402 protocol",
+   "sources": [
+    "brave",
+    "hackernews"
+   ],
+   "days": 4,
+   "best": {
+    "score": 260,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-13"
+   }
+  },
+  {
+   "url": "https://blog.ovalerio.net/archives/3359",
+   "title": "The need for at least a third option",
+   "sources": [
+    "br_gon_alo_val_rio_thoughts_projects_and_so",
+    "lobsters"
+   ],
+   "days": 4,
+   "best": {
+    "score": 85,
+    "metric": "score",
+    "source": "lobsters",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
+   "title": "Testing a Trash Can Faraday Cage",
+   "sources": [
+    "hackernews",
+    "jefftk"
+   ],
+   "days": 4,
+   "best": {
+    "score": 72,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://antonz.org/probabilistic-data-structures",
+   "title": "Probabilistic data structures in Go",
+   "sources": [
+    "br_anton_zhiyanov",
+    "lobsters"
+   ],
+   "days": 4,
+   "best": {
+    "score": 62,
+    "metric": "score",
+    "source": "lobsters",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog",
+   "title": "Someone's impersonating this blog",
+   "sources": [
+    "br_a_lovely_harmless_monster",
+    "lobsters"
+   ],
+   "days": 4,
+   "best": {
+    "score": 46,
+    "metric": "score",
+    "source": "lobsters",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "http://blog.sesse.net/blog/tech/2026-11-13-19-51_solving_the_fox_game.html",
+   "title": "Steinar H. Gunderson: Solving the fox game",
+   "sources": [
+    "lobsters",
+    "planetdebian"
+   ],
+   "days": 4,
+   "best": {
+    "score": 19,
+    "metric": "score",
+    "source": "lobsters",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://docodethatmatters.com/home-automation-overnight-success",
+   "title": "Smart home devices should work without the internet",
+   "sources": [
+    "br_do_code_that_matters",
+    "hackernews"
+   ],
+   "days": 3,
+   "best": {
+    "score": 1197,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-10"
    }
   },
   {
@@ -363,6 +578,21 @@
    }
   },
   {
+   "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud",
+   "title": "Reverse Engineering My Coway Air Purifier to Ditch the Cloud",
+   "sources": [
+    "br_posts_scott_s_blog",
+    "hackernews"
+   ],
+   "days": 3,
+   "best": {
+    "score": 780,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-12"
+   }
+  },
+  {
    "url": "https://deepmind.google/blog/introducing-alphaproof-code",
    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
    "sources": [
@@ -378,15 +608,15 @@
    }
   },
   {
-   "url": "https://aphyr.com/posts/427-rip-harvest",
-   "title": "RIP, Harvest",
+   "url": "https://joshstrange.com/2026/11/09/i-saw-your-hn-comment",
+   "title": "I Saw Your HN Comment",
    "sources": [
-    "aphyr",
+    "br_josh_strange_my_personal_blog",
     "hackernews"
    ],
    "days": 3,
    "best": {
-    "score": 445,
+    "score": 447,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-09"
@@ -408,48 +638,48 @@
    }
   },
   {
-   "url": "https://chimera-vocal-synth.vercel.app",
-   "title": "Chimera",
+   "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+   "title": "Critical RCE Vulnerability in Apache HTTP Server: Everything You Need To Know",
    "sources": [
     "hackernews",
-    "waxy"
+    "sec_wiz_blog"
    ],
    "days": 3,
    "best": {
-    "score": 356,
+    "score": 369,
     "metric": "points",
     "source": "hackernews",
-    "date": "2026-11-08"
+    "date": "2026-11-12"
    }
   },
   {
-   "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
-   "title": "Tech Companies Are Trying to Shift the Entire Concept of Privacy (Again)",
+   "url": "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100",
+   "title": "A100 unlocking",
    "sources": [
-    "eff",
+    "br_nelson_s_linkblog",
     "hackernews"
    ],
    "days": 3,
    "best": {
-    "score": 339,
+    "score": 353,
     "metric": "points",
     "source": "hackernews",
-    "date": "2026-11-14"
+    "date": "2026-11-11"
    }
   },
   {
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available",
-   "title": "Gemini 4 Carbon is now available",
+   "url": "https://hugovk.dev/blog/2026/lock-github-actions",
+   "title": "Lock your GitHub Actions",
    "sources": [
-    "googleblog",
+    "br_hugo_van_kemenade",
     "hackernews"
    ],
    "days": 3,
    "best": {
-    "score": 295,
+    "score": 336,
     "metric": "points",
     "source": "hackernews",
-    "date": "2026-11-10"
+    "date": "2026-11-11"
    }
   },
   {
@@ -468,283 +698,13 @@
    }
   },
   {
-   "url": "https://brave.com/blog/search-api-agentic-payments",
-   "title": "The Brave Search API now accepts agentic payments via the x402 protocol",
-   "sources": [
-    "brave",
-    "hackernews"
-   ],
-   "days": 3,
-   "best": {
-    "score": 260,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-13"
-   }
-  },
-  {
-   "url": "https://blog.ovalerio.net/archives/3359",
-   "title": "The need for at least a third option",
-   "sources": [
-    "br_gon_alo_val_rio_thoughts_projects_and_so",
-    "lobsters"
-   ],
-   "days": 3,
-   "best": {
-    "score": 85,
-    "metric": "score",
-    "source": "lobsters",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
-   "title": "Testing a Trash Can Faraday Cage",
-   "sources": [
-    "hackernews",
-    "jefftk"
-   ],
-   "days": 3,
-   "best": {
-    "score": 72,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://antonz.org/probabilistic-data-structures",
-   "title": "Probabilistic data structures in Go",
-   "sources": [
-    "br_anton_zhiyanov",
-    "lobsters"
-   ],
-   "days": 3,
-   "best": {
-    "score": 62,
-    "metric": "score",
-    "source": "lobsters",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog",
-   "title": "Someone's impersonating this blog",
-   "sources": [
-    "br_a_lovely_harmless_monster",
-    "lobsters"
-   ],
-   "days": 3,
-   "best": {
-    "score": 46,
-    "metric": "score",
-    "source": "lobsters",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "http://blog.sesse.net/blog/tech/2026-11-13-19-51_solving_the_fox_game.html",
-   "title": "Steinar H. Gunderson: Solving the fox game",
-   "sources": [
-    "lobsters",
-    "planetdebian"
-   ],
-   "days": 3,
-   "best": {
-    "score": 19,
-    "metric": "score",
-    "source": "lobsters",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://docodethatmatters.com/home-automation-overnight-success",
-   "title": "Smart home devices should work without the internet",
-   "sources": [
-    "br_do_code_that_matters",
-    "hackernews"
-   ],
-   "days": 2,
-   "best": {
-    "score": 1197,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-10"
-   }
-  },
-  {
-   "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud",
-   "title": "Reverse Engineering My Coway Air Purifier to Ditch the Cloud",
-   "sources": [
-    "br_posts_scott_s_blog",
-    "hackernews"
-   ],
-   "days": 2,
-   "best": {
-    "score": 780,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-12"
-   }
-  },
-  {
-   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api",
-   "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-   "sources": [
-    "hackernews",
-    "sec_google_threat_analysis_group"
-   ],
-   "days": 2,
-   "best": {
-    "score": 568,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-11"
-   }
-  },
-  {
-   "url": "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12",
-   "title": "Reuters Raises the Jensen Huang Affair Tally to Three",
-   "sources": [
-    "daringfireball",
-    "hackernews"
-   ],
-   "days": 2,
-   "best": {
-    "score": 457,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-12"
-   }
-  },
-  {
-   "url": "https://joshstrange.com/2026/11/09/i-saw-your-hn-comment",
-   "title": "I Saw Your HN Comment",
-   "sources": [
-    "br_josh_strange_my_personal_blog",
-    "hackernews"
-   ],
-   "days": 2,
-   "best": {
-    "score": 447,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-09"
-   }
-  },
-  {
-   "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-   "title": "Critical RCE Vulnerability in Apache HTTP Server: Everything You Need To Know",
-   "sources": [
-    "hackernews",
-    "sec_wiz_blog"
-   ],
-   "days": 2,
-   "best": {
-    "score": 369,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-12"
-   }
-  },
-  {
-   "url": "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100",
-   "title": "A100 unlocking",
-   "sources": [
-    "br_nelson_s_linkblog",
-    "hackernews"
-   ],
-   "days": 2,
-   "best": {
-    "score": 353,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-11"
-   }
-  },
-  {
-   "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
-   "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
-   "sources": [
-    "hackernews",
-    "hnrss"
-   ],
-   "days": 2,
-   "best": {
-    "score": 348,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-16"
-   }
-  },
-  {
-   "url": "https://hugovk.dev/blog/2026/lock-github-actions",
-   "title": "Lock your GitHub Actions",
-   "sources": [
-    "br_hugo_van_kemenade",
-    "hackernews"
-   ],
-   "days": 2,
-   "best": {
-    "score": 336,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-11"
-   }
-  },
-  {
-   "url": "https://simonwillison.net/2026/nov/9/mysterious-beeps",
-   "title": "Beep Locator",
-   "sources": [
-    "br_nelson_s_linkblog",
-    "hackernews"
-   ],
-   "days": 2,
-   "best": {
-    "score": 331,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-10"
-   }
-  },
-  {
-   "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition",
-   "title": "Running a law firm on Free software",
-   "sources": [
-    "hackernews",
-    "lobsters"
-   ],
-   "days": 2,
-   "best": {
-    "score": 310,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-07"
-   }
-  },
-  {
-   "url": "https://www.nature.com/articles/d41586-026-03638-3",
-   "title": "Found: a protein that drives ageing without unleashing inflammation",
-   "sources": [
-    "hackernews",
-    "nature"
-   ],
-   "days": 2,
-   "best": {
-    "score": 247,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-13"
-   }
-  },
-  {
    "url": "https://wilsoniumite.com/2026/11/11/why-are-we-still-working-this-hard",
    "title": "Why Are We Still Working This Hard?",
    "sources": [
     "br_wilsons_blog",
     "hackernews"
    ],
-   "days": 2,
+   "days": 3,
    "best": {
     "score": 243,
     "metric": "points",
@@ -759,7 +719,7 @@
     "br_blog_lincoln_mullen",
     "hackernews"
    ],
-   "days": 2,
+   "days": 3,
    "best": {
     "score": 214,
     "metric": "points",
@@ -774,12 +734,57 @@
     "aheadofai",
     "hackernews"
    ],
-   "days": 2,
+   "days": 3,
    "best": {
     "score": 192,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
+   "title": "We’re Asking an Appeals Court to Require a Warrant for ALPR Searches",
+   "sources": [
+    "eff",
+    "hackernews"
+   ],
+   "days": 3,
+   "best": {
+    "score": 161,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm",
+   "title": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
+   "sources": [
+    "developernvidia",
+    "hackernews"
+   ],
+   "days": 3,
+   "best": {
+    "score": 114,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-14"
+   }
+  },
+  {
+   "url": "https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112",
+   "title": "The Evolving Story of How Chemistry Became Biology",
+   "sources": [
+    "hackernews",
+    "quanta"
+   ],
+   "days": 3,
+   "best": {
+    "score": 55,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-15"
    }
   }
  ]

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-16 18:54 UTC",
-  "unique_threads": 78,
+  "generated": "2026-11-17 02:08 UTC",
+  "unique_threads": 84,
   "themes": [
     {
       "theme": "outage",
@@ -36,13 +36,52 @@
       }
     },
     {
+      "theme": "being",
+      "threads": [
+        {
+          "url": "https://news.ycombinator.com/item?id=50419019",
+          "title": "Tell HN: A flood of reports of Opus 5.5 being nerfed",
+          "days_on_board": 1,
+          "max_score": 32
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50513451",
+          "title": "Tell HN: HN is being scraped for emails to scam",
+          "days_on_board": 2,
+          "max_score": 121
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50466520",
+          "title": "Ask HN: What is holding back robots from being deployed everywhere?",
+          "days_on_board": 1,
+          "max_score": 7
+        }
+      ],
+      "score": 160,
+      "coverage": {
+        "built": true,
+        "top_hit": {
+          "title": "'Grey Rocking': The Life-Improving Power of Being Really, Really Boring (2021)",
+          "url": "https://www.esquire.com/uk/life/a38473153/grey-rock-technique-being-boring/",
+          "source": "hackernews",
+          "score": 129
+        }
+      }
+    },
+    {
       "theme": "claude",
       "threads": [
         {
-          "url": "https://news.ycombinator.com/item?id=50467233",
-          "title": "Claude Code's API billing depends on how often the cache expires",
+          "url": "https://news.ycombinator.com/item?id=50481347",
+          "title": "Ask HN: What are you doing now that Claude is down?",
+          "days_on_board": 2,
+          "max_score": 7
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50480936",
+          "title": "Claude OAuth Failures",
           "days_on_board": 1,
-          "max_score": 6
+          "max_score": 28
         },
         {
           "url": "https://news.ycombinator.com/item?id=50480909",
@@ -51,20 +90,14 @@
           "max_score": 37
         },
         {
-          "url": "https://news.ycombinator.com/item?id=50481347",
-          "title": "Ask HN: What are you doing now that Claude is down?",
-          "days_on_board": 2,
-          "max_score": 7
+          "url": "https://news.ycombinator.com/item?id=50467233",
+          "title": "Claude Code's API billing depends on how often the cache expires",
+          "days_on_board": 1,
+          "max_score": 6
         },
         {
           "url": "https://news.ycombinator.com/item?id=50480941",
           "title": "Claude AI Is Down",
-          "days_on_board": 1,
-          "max_score": 28
-        },
-        {
-          "url": "https://news.ycombinator.com/item?id=50480936",
-          "title": "Claude OAuth Failures",
           "days_on_board": 1,
           "max_score": 28
         }
@@ -117,19 +150,25 @@
           "max_score": 5
         },
         {
-          "url": "https://news.ycombinator.com/item?id=50510540",
-          "title": "Ask HN: What do coding interviews look like in the age of AI?",
-          "days_on_board": 2,
-          "max_score": 7
+          "url": "https://news.ycombinator.com/item?id=50525329",
+          "title": "Ask HN: Who's really winning with AI-Coding?",
+          "days_on_board": 1,
+          "max_score": 4
         },
         {
           "url": "https://news.ycombinator.com/item?id=50423371",
           "title": "Ask HN: Do you still enjoy coding in C++?",
           "days_on_board": 1,
           "max_score": 66
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50510540",
+          "title": "Ask HN: What do coding interviews look like in the age of AI?",
+          "days_on_board": 3,
+          "max_score": 11
         }
       ],
-      "score": 78,
+      "score": 86,
       "coverage": {
         "built": true,
         "top_hit": {
@@ -150,16 +189,16 @@
           "max_score": 44
         },
         {
-          "url": "https://news.ycombinator.com/item?id=50478730",
-          "title": "Google search hides Nvidia stock graph",
-          "days_on_board": 1,
-          "max_score": 14
-        },
-        {
           "url": "https://news.ycombinator.com/item?id=50455454",
           "title": "The absolute travesty that is Google",
           "days_on_board": 1,
           "max_score": 11
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50478730",
+          "title": "Google search hides Nvidia stock graph",
+          "days_on_board": 1,
+          "max_score": 14
         }
       ],
       "score": 69,
@@ -170,39 +209,6 @@
           "url": "https://github.com/thisisme6598/gemini_files/",
           "source": "hackernews",
           "score": 737
-        }
-      }
-    },
-    {
-      "theme": "being",
-      "threads": [
-        {
-          "url": "https://news.ycombinator.com/item?id=50513451",
-          "title": "Tell HN: HN is being scraped for emails to scam",
-          "days_on_board": 1,
-          "max_score": 7
-        },
-        {
-          "url": "https://news.ycombinator.com/item?id=50419019",
-          "title": "Tell HN: A flood of reports of Opus 5.5 being nerfed",
-          "days_on_board": 1,
-          "max_score": 32
-        },
-        {
-          "url": "https://news.ycombinator.com/item?id=50466520",
-          "title": "Ask HN: What is holding back robots from being deployed everywhere?",
-          "days_on_board": 1,
-          "max_score": 7
-        }
-      ],
-      "score": 46,
-      "coverage": {
-        "built": true,
-        "top_hit": {
-          "title": "'Grey Rocking': The Life-Improving Power of Being Really, Really Boring (2021)",
-          "url": "https://www.esquire.com/uk/life/a38473153/grey-rock-technique-being-boring/",
-          "source": "hackernews",
-          "score": 129
         }
       }
     },
@@ -238,6 +244,99 @@
           "score": 737
         }
       }
+    },
+    {
+      "theme": "product",
+      "threads": [
+        {
+          "url": "https://news.ycombinator.com/item?id=50470809",
+          "title": "Ask HN: How do you market your consumer product",
+          "days_on_board": 1,
+          "max_score": 9
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50520644",
+          "title": "Ask HN: How to bring traffic to new product with out social media presence",
+          "days_on_board": 1,
+          "max_score": 4
+        }
+      ],
+      "score": 18,
+      "coverage": {
+        "built": true,
+        "top_hit": {
+          "title": "Tesla Hasn't Had a Successful New Product Launch Since JB Straubel Stepped Down",
+          "url": "https://cleantechnica.com/2026/11/07/tesla-hasnt-had-a-successful-new-product-launch-since-jb-straubel-stepped-down-as-cto/",
+          "source": "hackernews",
+          "score": 208
+        }
+      }
+    },
+    {
+      "theme": "project",
+      "threads": [
+        {
+          "url": "https://news.ycombinator.com/item?id=50519403",
+          "title": "Project Gutenberg temporarily down for maintenance",
+          "days_on_board": 1,
+          "max_score": 4
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50498484",
+          "title": "Ask HN: How do you decide when to stick with a project",
+          "days_on_board": 3,
+          "max_score": 5
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50433412",
+          "title": "Ask HN: What should a stranger know first about your unfinished project?",
+          "days_on_board": 1,
+          "max_score": 5
+        }
+      ],
+      "score": 14,
+      "coverage": {
+        "built": true,
+        "top_hit": {
+          "title": "Humans will never again create a project quite like Wikipedia",
+          "url": "https://www.economist.com/culture/2026/10/29/humans-will-never-again-create-a-project-quite-like-wikipedia",
+          "source": "hackernews",
+          "score": 493
+        }
+      }
+    },
+    {
+      "theme": "software",
+      "threads": [
+        {
+          "url": "https://news.ycombinator.com/item?id=50521585",
+          "title": "Is the Economy Over-Indexed to Software?",
+          "days_on_board": 1,
+          "max_score": 4
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50456164",
+          "title": "Ask HN: Software engineer with broken arm, any tips?",
+          "days_on_board": 1,
+          "max_score": 6
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50509195",
+          "title": "We handed our lives to closed software. AI is about to show us the cost",
+          "days_on_board": 1,
+          "max_score": 4
+        }
+      ],
+      "score": 14,
+      "coverage": {
+        "built": true,
+        "top_hit": {
+          "title": "Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video]",
+          "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+          "source": "hackernews",
+          "score": 444
+        }
+      }
     }
   ],
   "top_asks": [
@@ -260,16 +359,22 @@
       "max_score": 221
     },
     {
+      "url": "https://news.ycombinator.com/item?id=50510042",
+      "title": "Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence",
+      "days_on_board": 3,
+      "max_score": 179
+    },
+    {
       "url": "https://news.ycombinator.com/item?id=50484421",
       "title": "U.S. October PPI Rises 6.5% YoY, Highest in Nearly Four Years",
       "days_on_board": 2,
       "max_score": 173
     },
     {
-      "url": "https://news.ycombinator.com/item?id=50510042",
-      "title": "Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence",
+      "url": "https://news.ycombinator.com/item?id=50513451",
+      "title": "Tell HN: HN is being scraped for emails to scam",
       "days_on_board": 2,
-      "max_score": 113
+      "max_score": 121
     },
     {
       "url": "https://news.ycombinator.com/item?id=50494696",
@@ -296,6 +401,12 @@
       "max_score": 41
     },
     {
+      "url": "https://news.ycombinator.com/item?id=50520076",
+      "title": "Ask HN: If AI tools are so good, why isn't your bug backlog empty?",
+      "days_on_board": 2,
+      "max_score": 40
+    },
+    {
       "url": "https://news.ycombinator.com/item?id=50444380",
       "title": "How do you keep up quality when you vibe-code?",
       "days_on_board": 1,
@@ -318,18 +429,6 @@
       "title": "Ask HN: Can anyone name anything new that AI has done?",
       "days_on_board": 2,
       "max_score": 30
-    },
-    {
-      "url": "https://news.ycombinator.com/item?id=50480936",
-      "title": "Claude OAuth Failures",
-      "days_on_board": 1,
-      "max_score": 28
-    },
-    {
-      "url": "https://news.ycombinator.com/item?id=50480941",
-      "title": "Claude AI Is Down",
-      "days_on_board": 1,
-      "max_score": 28
     }
   ]
 }
