@@ -33,22 +33,30 @@ const jsonld = {
 
 <div class="wrap">
 
-  <header class="hero" style="padding-top:8px">
+  <header class="hero">
     <div class="radar" aria-hidden="true"></div>
-    <h1 style="font-size:30px;margin-top:10px">trend<span class="scope">scope</span></h1>
-    <p class="tagline" style="margin-top:6px">The developer attention dataset — updated twice daily.</p>
+    <h1 class="wordmark">trend<span class="scope">scope</span></h1>
+    <p class="tagline">The developer attention dataset — updated twice daily.</p>
     <div class="stamp" id="stamp">loading…</div>
-    <div id="src-health" class="muted" style="font-size:12px;margin-top:4px"></div>
-    <div id="brief-link" class="muted" style="font-size:12px;margin-top:2px"></div>
-    <div id="hiring-pulse" class="muted" style="font-size:12px;margin-top:4px"></div>
-    <div id="month-history" class="muted" style="font-size:12px;margin-top:4px"></div>
-    <div class="topics" id="topics"></div>
-    <div style="margin-top:10px">
-      <select id="daypick" style="display:none;padding:6px 10px;border-radius:8px;border:1px solid var(--border);background:var(--panel);color:var(--fg);font-size:13px"></select>
-      <span class="muted" id="daypick-hint" style="font-size:12px"></span>
-    </div>
     <p id="err">Could not load <code>data/latest.json</code> — the first snapshot may not have run yet.</p>
   </header>
+
+  <section class="statusbar" id="statusbar">
+    <div class="status-item" id="src-health"></div>
+    <div class="status-item" id="brief-link"></div>
+    <div class="status-item" id="hiring-pulse"></div>
+    <div class="status-item" id="month-history"></div>
+  </section>
+
+  <section class="topics-row">
+    <span class="topics-label">by topic</span>
+    <div class="topics" id="topics"></div>
+  </section>
+
+  <div class="daypick-row">
+    <select id="daypick" style="display:none"></select>
+    <span class="muted" id="daypick-hint"></span>
+  </div>
 
   <section>
     <h2><span id="board-title">Today's</span> cross-source board <span class="sub" id="board-sub"></span></h2>
