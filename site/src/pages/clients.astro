@@ -8,10 +8,10 @@ const path = '/clients.html';
 
 <nav><a href="index.html">&larr; board</a><a href="api.html">api</a><a href="swagger.html">swagger</a><a href="docs/api.md">api.md</a></nav>
 <h1>api clients</h1>
-<p class="muted">Copy-paste starters for the trendscope API — no keys, no signup, plain JSON. Base: <code>https://trendscope--plov6nur.preview.devinapps.com</code>.</p>
+<p class="muted">Copy-paste starters for the trendscope API — no keys, no signup, plain JSON. Base: <code>https://trendscope.zalize.com</code>.</p>
 
 <h2>curl</h2>
-<pre>BASE=https://trendscope--plov6nur.preview.devinapps.com
+<pre>BASE=https://trendscope.zalize.com
 curl -s $BASE/data/latest.json | python3 -m json.tool | head -40
 curl -s $BASE/docs/api/new.json      # today's fresh items
 curl -s $BASE/docs/api/meteors.json  # biggest 1-day climbers
@@ -20,20 +20,20 @@ curl -s $BASE/docs/api/meta.json     # machine-readable catalog</pre>
 
 <h2>python (stdlib only)</h2>
 <pre>import json, urllib.request
-BASE = "https://trendscope--plov6nur.preview.devinapps.com"
+BASE = "https://trendscope.zalize.com"
 latest = json.load(urllib.request.urlopen(BASE + "/data/latest.json"))
 items = [i for v in latest["items"].values() for i in v] if isinstance(latest.get("items"), dict) else latest["items"]
 for it in items[:10]:
     print(it["rank"], it["title"], it["url"])</pre>
 
 <h2>javascript / browser</h2>
-<pre>const BASE = "https://trendscope--plov6nur.preview.devinapps.com";
+<pre>const BASE = "https://trendscope.zalize.com";
 const latest = await (await fetch(BASE + "/data/latest.json")).json();
 const items = Object.values(latest.items).flat(); // dict-of-lists or list
 console.table(items.slice(0, 10));</pre>
 
 <h2>web component</h2>
-<pre>&lt;script src="https://trendscope--plov6nur.preview.devinapps.com/docs/api/widget.js"&gt;&lt;/script&gt;
+<pre>&lt;script src="https://trendscope.zalize.com/docs/api/widget.js"&gt;&lt;/script&gt;
 &lt;trend-scope mode="board" n="10"&gt;&lt;/trend-scope&gt;</pre>
 
 <h2>MCP server (agents)</h2>
@@ -44,7 +44,7 @@ python3 trendscope/scripts/mcp_server.py
 # override base: TRENDSCOPE_BASE=http://localhost:8000</pre>
 
 <h2>iframe embeds</h2>
-<pre>&lt;iframe src="https://trendscope--plov6nur.preview.devinapps.com/embed.html?mode=board&n=5"
+<pre>&lt;iframe src="https://trendscope.zalize.com/embed.html?mode=board&n=5"
         style="width:420px;height:300px;border:0"&gt;&lt;/iframe&gt;
 # 26 modes — gallery at embeds.html</pre>
 
@@ -58,9 +58,7 @@ body{font:15px/1.6 ui-sans-serif,system-ui,sans-serif;margin:0;padding:16px;colo
 h1{font-size:22px;margin:0 0 4px}
 h2{font-size:16px;margin:22px 0 6px}
 a{color:#065fd4;text-decoration:none}
-a:hover{text-decoration:underline}
-nav{font-size:13px;margin:8px 0 16px;color:#666}
-nav a{margin-right:10px}
+a:hover{text-decoration:underline} body > nav{font-size:13px;margin:8px 0 16px;color:#666} body > nav a{margin-right:10px}
 pre{background:#f6f8fa;border:1px solid #ddd;border-radius:6px;padding:10px;font:12px/1.5 ui-monospace,monospace;overflow-x:auto}
 .muted{color:#666;font-size:13px}
 footer{margin-top:28px;font-size:12px;color:#888;border-top:1px solid #eee;padding-top:10px}

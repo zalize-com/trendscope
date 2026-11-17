@@ -37,7 +37,7 @@ const {
 // (Pages flip: SITE_ORIGIN=https://zalize-com.github.io/trendscope npm run build).
 // ORIGIN may carry a subpath (project Pages); keep it in canonical/og URLs.
 const ORIGIN = (import.meta.env.SITE_ORIGIN
-  ?? 'https://trendscope--plov6nur.preview.devinapps.com').replace(/\/+$/, '');
+  ?? 'https://trendscope.zalize.com').replace(/\/+$/, '');
 // CF Pages serves extensionless URLs (/x.html 308s to /x): canonical/og must
 // name the final URL, not the redirect hop.
 const cleanPath = path === '/index.html' ? '/' : path.replace(/\.html$/, '');
