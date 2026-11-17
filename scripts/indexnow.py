@@ -26,7 +26,8 @@ def main():
     urls = sitemap_urls()
     # verify key file is live before submitting
     key_url = f"https://{host}/{key}.txt"
-    with urllib.request.urlopen(key_url, timeout=20) as r:
+    req0 = urllib.request.Request(key_url, headers={"User-Agent": "curl/8"})
+    with urllib.request.urlopen(req0, timeout=20) as r:
         assert r.read().decode().strip() == key, "key file mismatch"
     body = json.dumps({
         "host": host,
