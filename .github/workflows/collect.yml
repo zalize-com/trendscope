@@ -80,6 +80,9 @@ jobs:
       - name: Near-duplicate scan (SimHash)
         run: python3 scripts/dedup_scan.py || true
 
+      - name: Kind classification (rules)
+        run: python3 scripts/kind.py || true
+
       - name: Rebuild content index + stats
         run: |
           python3 scripts/content_index.py || true
