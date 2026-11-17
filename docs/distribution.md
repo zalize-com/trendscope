@@ -483,7 +483,7 @@ results below, mapped onto our two products.
 | Magazine ads | thousands of £, limited | skip |
 | Forum answers + soft link | worked | answer "HN dataset / GitHub trends API" questions on HN/Reddit/dev.to (user accounts) |
 | Telemarketing | gave up | skip |
-| Product blogging | worked well | dev.to ×6 drafts staged |
+| Product blogging | worked well | dev.to ×8 drafts staged |
 | Download-site / directory listings | worked | **free + doable now**: submit to public-apis/public-apis PR, awesome-public-datasets, awesome-selfhosted (feedpaper), Kaggle datasets, GitHub topics |
 | **Pirate-page trick**: SEO page ranking for "X crack" that converts pirates → buyers | extra revenue | our analog: SEO landing pages for intent keywords — "free alternative to <paid dev-trends tool>", "HN dataset download", "GitHub trending API no key". Tools pages (91) are already the long-tail matrix; keep keyword-targeted copy on each |
 | Upgrade revenue from loyal users | major later income | sponsors tier + paid "history archive" bulk export (canon CSVs are the seed) |
@@ -575,3 +575,9 @@ the dead and dormant.
 github.com/zalize-com/trendscope
 ```
 \n
+## dev.to draft #8 — "We gave our open dataset an MCP server" (publish-ready)
+
+File: docs/launch/devto-mcp-draft.md — agent-angle follow-up to draft #1.
+170-line stdlib stdio MCP server, 7 tools, install in 30s, lessons-learned
+section (context-window design, .json.gz fallback, TRENDSCOPE_BASE mirrors).
+First-comment seed included. Run after draft #1 lands.
