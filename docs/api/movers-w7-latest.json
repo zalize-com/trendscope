@@ -1,7 +1,7 @@
 {
  "a": "2026-11-10",
  "b": "2026-11-17",
- "generated": "2026-11-17 20:42 UTC",
+ "generated": "2026-11-17 21:16 UTC",
  "entered": [
   {
    "title": "boto3",
@@ -190,6 +190,14 @@
    "rank": 4
   },
   {
+   "title": "AlphaProof Code",
+   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+   "source": "hackernews",
+   "score": 678,
+   "metric": "points",
+   "rank": 5
+  },
+  {
    "title": "AI usage generates a fragile codebase",
    "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
    "source": "hackernews",
@@ -316,14 +324,6 @@
    "score": 21,
    "metric": "points",
    "rank": 2
-  },
-  {
-   "title": "Tell HN: Notion AI chat sessions have been exposed via Fireworks AI hack",
-   "url": "https://news.ycombinator.com/item?id=50436636",
-   "source": "ask_hn",
-   "score": 19,
-   "metric": "points",
-   "rank": 3
   }
  ],
  "gainers": [
@@ -335,15 +335,6 @@
    "metric": "feed rank",
    "rank": 11,
    "delta": -290
-  },
-  {
-   "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
-   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-   "source": "deepmind",
-   "score": 12,
-   "metric": "feed rank",
-   "rank": 4,
-   "delta": -666
   },
   {
    "title": "Smart home devices should work without the internet",
@@ -364,15 +355,6 @@
    "metric": "feed rank",
    "rank": 2,
    "delta": -1183
-  },
-  {
-   "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
-   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-   "source": "deepmind",
-   "score": 12,
-   "metric": "feed rank",
-   "rank": 4,
-   "delta": -666
   },
   {
    "title": "Gemini 4 Carbon is now available",

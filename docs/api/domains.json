@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-17T20:42:50.069208+00:00",
+ "generated_at": "2026-11-17T21:16:16.092659+00:00",
  "latest_snapshot": "2026-11-17",
- "total": 9577,
+ "total": 9579,
  "domains": [
   {
    "hostname": "blog.google",
@@ -24,7 +24,7 @@
   {
    "hostname": "theguardian.com",
    "days_on_board": 5,
-   "items": 229,
+   "items": 232,
    "sources": [
     "eb_guardian",
     "guardianco",
@@ -79,7 +79,7 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 4,
-   "items": 2523,
+   "items": 2531,
    "sources": [
     "br_homepage_piotr_migda",
     "br_nelson_s_linkblog",
@@ -247,7 +247,7 @@
   {
    "hostname": "nytimes.com",
    "days_on_board": 4,
-   "items": 110,
+   "items": 111,
    "sources": [
     "bostocks",
     "daringfireball",
@@ -261,6 +261,24 @@
     "score": 595,
     "metric": "points",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "hostname": "arxiv.org",
+   "days_on_board": 4,
+   "items": 96,
+   "sources": [
+    "arxiv",
+    "evanmiller",
+    "hnrss",
+    "lobsters"
+   ],
+   "top_hit": {
+    "title": "Unbundling Multimodal Vision Encoding",
+    "url": "http://arxiv.org/abs/2611.17334v1",
+    "score": 15,
+    "metric": "arxiv recent",
+    "date": "2026-11-15"
    }
   },
   {
@@ -293,23 +311,6 @@
     "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
     "score": 15,
     "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "arxiv.org",
-   "days_on_board": 4,
-   "items": 95,
-   "sources": [
-    "arxiv",
-    "evanmiller",
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "Unbundling Multimodal Vision Encoding",
-    "url": "http://arxiv.org/abs/2611.17334v1",
-    "score": 15,
-    "metric": "arxiv recent",
     "date": "2026-11-15"
    }
   },
@@ -353,7 +354,7 @@
   {
    "hostname": "theverge.com",
    "days_on_board": 4,
-   "items": 81,
+   "items": 83,
    "sources": [
     "br_hearthside_by_caleb_hearth",
     "hackernews",
@@ -765,7 +766,7 @@
   {
    "hostname": "lore.kernel.org",
    "days_on_board": 3,
-   "items": 435,
+   "items": 450,
    "sources": [
     "lorekernel"
    ],
@@ -817,7 +818,7 @@
   {
    "hostname": "investing.com",
    "days_on_board": 3,
-   "items": 259,
+   "items": 268,
    "sources": [
     "investing"
    ],
@@ -849,6 +850,21 @@
    }
   },
   {
+   "hostname": "news.google.com",
+   "days_on_board": 3,
+   "items": 207,
+   "sources": [
+    "w4news"
+   ],
+   "top_hit": {
+    "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his silence on breakdown - AP News",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUjU5a3ljR1FocjlKQnRVS21kY1kwR3R4bEZvdUc4VExhbnc2NjZrU0ZfRS1iMkoxcGthaUV4a19MTlNsR2JFMlFqZDN0Y1JiejlNWUFUWjAyWTl3RFNXX0ZvbkNmX0l1elhVZndMd3pQSlQtbk1RYzBMT2tmOTJuaTlwUm5FQmdRODFJQTk4OWV5MlpScVhhc1BEWWotS1E?oc=5",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "x.com",
    "days_on_board": 3,
    "items": 202,
@@ -865,21 +881,6 @@
    "top_hit": {
     "title": "持械入宋第11季更新了 快来看看详细的地图解析 这条昨晚在抖音发，不到一天已经3000赞 陆陆续续改了12个版本成型",
     "url": "https://x.com/PMbackttfuture/status/2121941825909072294",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "news.google.com",
-   "days_on_board": 3,
-   "items": 198,
-   "sources": [
-    "w4news"
-   ],
-   "top_hit": {
-    "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his silence on breakdown - AP News",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUjU5a3ljR1FocjlKQnRVS21kY1kwR3R4bEZvdUc4VExhbnc2NjZrU0ZfRS1iMkoxcGthaUV4a19MTlNsR2JFMlFqZDN0Y1JiejlNWUFUWjAyWTl3RFNXX0ZvbkNmX0l1elhVZndMd3pQSlQtbk1RYzBMT2tmOTJuaTlwUm5FQmdRODFJQTk4OWV5MlpScVhhc1BEWWotS1E?oc=5",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
@@ -904,6 +905,36 @@
    }
   },
   {
+   "hostname": "timesofindia.indiatimes.com",
+   "days_on_board": 3,
+   "items": 175,
+   "sources": [
+    "timesofindia"
+   ],
+   "top_hit": {
+    "title": "Georgia woman wins $2.5m after rear-end crash leads to spinal fusion surgery",
+    "url": "https://timesofindia.indiatimes.com/world/us/a-metro-atlanta-woman-was-awarded-2-5-million-by-a-cobb-county-georgia-jury-after-a-2023-rear-end-crash-left-her-with-injuries-so-serious-that-she-later-needed-spinal-fusion-surgery/articleshow/135865103.cms",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "seekingalpha.com",
+   "days_on_board": 3,
+   "items": 172,
+   "sources": [
+    "seekingalpha"
+   ],
+   "top_hit": {
+    "title": "NASA advances PRIMA mission with BAE Systems as space telescope supplier",
+    "url": "https://seekingalpha.com/news/4672811-nasa-advances-prima-mission-with-bae-systems-as-space-telescope-supplier?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+    "score": 7,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "producthunt.com",
    "days_on_board": 3,
    "items": 171,
@@ -920,39 +951,9 @@
    }
   },
   {
-   "hostname": "timesofindia.indiatimes.com",
-   "days_on_board": 3,
-   "items": 171,
-   "sources": [
-    "timesofindia"
-   ],
-   "top_hit": {
-    "title": "Georgia woman wins $2.5m after rear-end crash leads to spinal fusion surgery",
-    "url": "https://timesofindia.indiatimes.com/world/us/a-metro-atlanta-woman-was-awarded-2-5-million-by-a-cobb-county-georgia-jury-after-a-2023-rear-end-crash-left-her-with-injuries-so-serious-that-she-later-needed-spinal-fusion-surgery/articleshow/135865103.cms",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "seekingalpha.com",
-   "days_on_board": 3,
-   "items": 165,
-   "sources": [
-    "seekingalpha"
-   ],
-   "top_hit": {
-    "title": "NASA advances PRIMA mission with BAE Systems as space telescope supplier",
-    "url": "https://seekingalpha.com/news/4672811-nasa-advances-prima-mission-with-bae-systems-as-space-telescope-supplier?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-    "score": 7,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "unite.ai",
    "days_on_board": 3,
-   "items": 160,
+   "items": 164,
    "sources": [
     "uniteai"
    ],
@@ -967,7 +968,7 @@
   {
    "hostname": "forbes.com",
    "days_on_board": 3,
-   "items": 154,
+   "items": 162,
    "sources": [
     "forbes"
    ],
@@ -982,7 +983,7 @@
   {
    "hostname": "techmeme.com",
    "days_on_board": 3,
-   "items": 152,
+   "items": 155,
    "sources": [
     "techmeme"
    ],
