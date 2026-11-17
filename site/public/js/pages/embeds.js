@@ -33,5 +33,5 @@ const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
 document.getElementById("out").innerHTML = MODES.map(([name, q]) => {
   const src = BASE + q + (q ? "&" : "?") + "n=6";
   const snip = `<iframe src="${src}" width="420" height="300" frameborder="0" loading="lazy"></iframe>`;
-  return `<div class="card"><h3>${name}</h3><code>${esc(snip)}</code><iframe src="${src}" loading="lazy"></iframe></div>`;
+  return `<div class="card"><h2>${name}</h2><code>${esc(snip)}</code><iframe src="${src}" loading="lazy"></iframe></div>`;
 }).join("");

@@ -12,15 +12,15 @@ async function main() {
   const th = j.threads;
   const hire = th.hiring, seek = th.seeking;
   $("cards").innerHTML = `
-    <div class="card hire"><h3>WHO IS HIRING — ${esc(hire?.month || "")}</h3>
+    <div class="card hire"><h2>WHO IS HIRING — ${esc(hire?.month || "")}</h2>
       <div class="n">${hire ? fmt(hire.comments) : "—"}</div>
       <small>comments = open positions posted</small>
       ${hire ? `<a href="${hire.url}">${esc(hire.title)} ↗</a>` : ""}</div>
-    <div class="card seek"><h3>WHO WANTS TO BE HIRED — ${esc(seek?.month || "")}</h3>
+    <div class="card seek"><h2>WHO WANTS TO BE HIRED — ${esc(seek?.month || "")}</h2>
       <div class="n">${seek ? fmt(seek.comments) : "—"}</div>
       <small>comments = candidates looking</small>
       ${seek ? `<a href="${seek.url}">${esc(seek.title)} ↗</a>` : ""}</div>
-    ${th.freelancer ? `<div class="card"><h3>FREELANCER — ${esc(th.freelancer.month)}</h3>
+    ${th.freelancer ? `<div class="card"><h2>FREELANCER — ${esc(th.freelancer.month)}</h2>
       <div class="n" style="color:var(--accent)">${fmt(th.freelancer.comments)}</div>
       <small>comments = freelance gigs/offers</small>
       <a href="${th.freelancer.url}">${esc(th.freelancer.title)} ↗</a></div>` : ""}`;

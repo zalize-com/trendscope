@@ -1,5 +1,5 @@
 const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
-const PAGES = "https://trendscope--plov6nur.preview.devinapps.com";
+const PAGES = "https://trendscope.zalize.com";
 const RAW   = "https://raw.githubusercontent.com/zalize-com/trendscope/main";
 
 const BADGES = [
