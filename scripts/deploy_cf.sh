@@ -32,7 +32,8 @@ find "$OUT/data" "$OUT/docs" -type f -size +1M -delete 2>/dev/null || true
 # scripts/switch_domain.py once the public domain is final.
 OLD="https://trendscope--plov6nur.preview.devinapps.com"
 if [ "$ORIGIN" != "$OLD" ]; then
-  grep -rl "$OLD" "$OUT" | xargs -r sed -i "s|$OLD|$ORIGIN|g"
+  # grep exits 1 on no matches; under pipefail that aborts the deploy — tolerate
+  grep -rl "$OLD" "$OUT" 2>/dev/null | xargs -r sed -i "s|$OLD|$ORIGIN|g" || true
 fi
 
 npx -y wrangler@latest pages deploy "$OUT" \
