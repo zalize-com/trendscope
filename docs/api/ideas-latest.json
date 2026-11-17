@@ -1,15 +1,15 @@
 {
-  "generated": "2026-11-17 02:08 UTC",
-  "unique_threads": 84,
+  "generated": "2026-11-17 07:11 UTC",
+  "unique_threads": 88,
   "themes": [
     {
       "theme": "outage",
       "threads": [
         {
-          "url": "https://news.ycombinator.com/item?id=50471668",
-          "title": "Ask HN: Microsoft/Azure Outage?",
+          "url": "https://news.ycombinator.com/item?id=50429551",
+          "title": "Tell HN: Another GitHub Major Outage",
           "days_on_board": 1,
-          "max_score": 402
+          "max_score": 18
         },
         {
           "url": "https://news.ycombinator.com/item?id=50472411",
@@ -18,10 +18,10 @@
           "max_score": 14
         },
         {
-          "url": "https://news.ycombinator.com/item?id=50429551",
-          "title": "Tell HN: Another GitHub Major Outage",
+          "url": "https://news.ycombinator.com/item?id=50471668",
+          "title": "Ask HN: Microsoft/Azure Outage?",
           "days_on_board": 1,
-          "max_score": 18
+          "max_score": 402
         }
       ],
       "score": 434,
@@ -45,16 +45,16 @@
           "max_score": 32
         },
         {
-          "url": "https://news.ycombinator.com/item?id=50513451",
-          "title": "Tell HN: HN is being scraped for emails to scam",
-          "days_on_board": 2,
-          "max_score": 121
-        },
-        {
           "url": "https://news.ycombinator.com/item?id=50466520",
           "title": "Ask HN: What is holding back robots from being deployed everywhere?",
           "days_on_board": 1,
           "max_score": 7
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50513451",
+          "title": "Tell HN: HN is being scraped for emails to scam",
+          "days_on_board": 2,
+          "max_score": 121
         }
       ],
       "score": 160,
@@ -78,6 +78,18 @@
           "max_score": 7
         },
         {
+          "url": "https://news.ycombinator.com/item?id=50467233",
+          "title": "Claude Code's API billing depends on how often the cache expires",
+          "days_on_board": 1,
+          "max_score": 6
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50526330",
+          "title": "Claude Is Always Right",
+          "days_on_board": 1,
+          "max_score": 4
+        },
+        {
           "url": "https://news.ycombinator.com/item?id=50480936",
           "title": "Claude OAuth Failures",
           "days_on_board": 1,
@@ -90,19 +102,13 @@
           "max_score": 37
         },
         {
-          "url": "https://news.ycombinator.com/item?id=50467233",
-          "title": "Claude Code's API billing depends on how often the cache expires",
-          "days_on_board": 1,
-          "max_score": 6
-        },
-        {
           "url": "https://news.ycombinator.com/item?id=50480941",
           "title": "Claude AI Is Down",
           "days_on_board": 1,
           "max_score": 28
         }
       ],
-      "score": 106,
+      "score": 110,
       "coverage": {
         "built": true,
         "top_hit": {
@@ -183,10 +189,10 @@
       "theme": "google",
       "threads": [
         {
-          "url": "https://news.ycombinator.com/item?id=50491617",
-          "title": "Tell HN: Google Search to start locking down search behind a login wall",
-          "days_on_board": 2,
-          "max_score": 44
+          "url": "https://news.ycombinator.com/item?id=50478730",
+          "title": "Google search hides Nvidia stock graph",
+          "days_on_board": 1,
+          "max_score": 14
         },
         {
           "url": "https://news.ycombinator.com/item?id=50455454",
@@ -195,10 +201,10 @@
           "max_score": 11
         },
         {
-          "url": "https://news.ycombinator.com/item?id=50478730",
-          "title": "Google search hides Nvidia stock graph",
-          "days_on_board": 1,
-          "max_score": 14
+          "url": "https://news.ycombinator.com/item?id=50491617",
+          "title": "Tell HN: Google Search to start locking down search behind a login wall",
+          "days_on_board": 2,
+          "max_score": 44
         }
       ],
       "score": 69,
@@ -216,10 +222,10 @@
       "theme": "human",
       "threads": [
         {
-          "url": "https://news.ycombinator.com/item?id=50421778",
-          "title": "Ask HN: As a human, are you glad the AI bubble is bursting?",
+          "url": "https://news.ycombinator.com/item?id=50453369",
+          "title": "Ask HN: Is lack of human imagination now the bottleneck instead of intelligence?",
           "days_on_board": 1,
-          "max_score": 5
+          "max_score": 8
         },
         {
           "url": "https://news.ycombinator.com/item?id=50481227",
@@ -228,10 +234,10 @@
           "max_score": 9
         },
         {
-          "url": "https://news.ycombinator.com/item?id=50453369",
-          "title": "Ask HN: Is lack of human imagination now the bottleneck instead of intelligence?",
+          "url": "https://news.ycombinator.com/item?id=50421778",
+          "title": "Ask HN: As a human, are you glad the AI bubble is bursting?",
           "days_on_board": 1,
-          "max_score": 8
+          "max_score": 5
         }
       ],
       "score": 22,
@@ -246,19 +252,58 @@
       }
     },
     {
-      "theme": "product",
+      "theme": "software",
       "threads": [
         {
-          "url": "https://news.ycombinator.com/item?id=50470809",
-          "title": "Ask HN: How do you market your consumer product",
+          "url": "https://news.ycombinator.com/item?id=50521585",
+          "title": "Is the Economy Over-Indexed to Software?",
           "days_on_board": 1,
-          "max_score": 9
+          "max_score": 4
         },
+        {
+          "url": "https://news.ycombinator.com/item?id=50526822",
+          "title": "Ask HN: Are the more software malfunctions now than before?",
+          "days_on_board": 1,
+          "max_score": 5
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50456164",
+          "title": "Ask HN: Software engineer with broken arm, any tips?",
+          "days_on_board": 1,
+          "max_score": 6
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50509195",
+          "title": "We handed our lives to closed software. AI is about to show us the cost",
+          "days_on_board": 1,
+          "max_score": 4
+        }
+      ],
+      "score": 19,
+      "coverage": {
+        "built": true,
+        "top_hit": {
+          "title": "Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video]",
+          "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+          "source": "hackernews",
+          "score": 444
+        }
+      }
+    },
+    {
+      "theme": "product",
+      "threads": [
         {
           "url": "https://news.ycombinator.com/item?id=50520644",
           "title": "Ask HN: How to bring traffic to new product with out social media presence",
           "days_on_board": 1,
           "max_score": 4
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50470809",
+          "title": "Ask HN: How do you market your consumer product",
+          "days_on_board": 1,
+          "max_score": 9
         }
       ],
       "score": 18,
@@ -276,6 +321,12 @@
       "theme": "project",
       "threads": [
         {
+          "url": "https://news.ycombinator.com/item?id=50433412",
+          "title": "Ask HN: What should a stranger know first about your unfinished project?",
+          "days_on_board": 1,
+          "max_score": 5
+        },
+        {
           "url": "https://news.ycombinator.com/item?id=50519403",
           "title": "Project Gutenberg temporarily down for maintenance",
           "days_on_board": 1,
@@ -285,12 +336,6 @@
           "url": "https://news.ycombinator.com/item?id=50498484",
           "title": "Ask HN: How do you decide when to stick with a project",
           "days_on_board": 3,
-          "max_score": 5
-        },
-        {
-          "url": "https://news.ycombinator.com/item?id=50433412",
-          "title": "Ask HN: What should a stranger know first about your unfinished project?",
-          "days_on_board": 1,
           "max_score": 5
         }
       ],
@@ -302,39 +347,6 @@
           "url": "https://www.economist.com/culture/2026/10/29/humans-will-never-again-create-a-project-quite-like-wikipedia",
           "source": "hackernews",
           "score": 493
-        }
-      }
-    },
-    {
-      "theme": "software",
-      "threads": [
-        {
-          "url": "https://news.ycombinator.com/item?id=50521585",
-          "title": "Is the Economy Over-Indexed to Software?",
-          "days_on_board": 1,
-          "max_score": 4
-        },
-        {
-          "url": "https://news.ycombinator.com/item?id=50456164",
-          "title": "Ask HN: Software engineer with broken arm, any tips?",
-          "days_on_board": 1,
-          "max_score": 6
-        },
-        {
-          "url": "https://news.ycombinator.com/item?id=50509195",
-          "title": "We handed our lives to closed software. AI is about to show us the cost",
-          "days_on_board": 1,
-          "max_score": 4
-        }
-      ],
-      "score": 14,
-      "coverage": {
-        "built": true,
-        "top_hit": {
-          "title": "Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video]",
-          "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
-          "source": "hackernews",
-          "score": 444
         }
       }
     }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T02:08:01.625513+00:00",
+ "generated_at": "2026-11-17T07:11:21.392965+00:00",
  "latest_snapshot": "2026-11-17",
  "crossovers": [
   {
@@ -334,6 +334,22 @@
    }
   },
   {
+   "url": "https://ben3d.ca/blog/building-the-aaa-lighting-pipeline-in-threejs",
+   "title": "My Quest to push native Three.js quality match AAA Game Engines",
+   "sources": [
+    "br_ben_houston_s_blog",
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 2,
+   "best": {
+    "score": 129,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-17"
+   }
+  },
+  {
    "url": "https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean",
    "title": "“…and the proof is checked in Lean”",
    "sources": [
@@ -395,6 +411,53 @@
     "metric": "feed rank",
     "source": "wired",
     "date": "2026-11-16"
+   }
+  },
+  {
+   "url": "https://www.cs.cmu.edu/learn",
+   "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
+   "sources": [
+    "hackernews",
+    "hnrss",
+    "lemmy"
+   ],
+   "days": 1,
+   "best": {
+    "score": 712,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/11/comcast-falsely-advertises-cable-internet-as-fiber-powered-att-lawsuit-says",
+   "title": "Comcast's \"fiber-powered Wi-Fi\" is cable, AT&T says in false advertising case",
+   "sources": [
+    "arstechnica",
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 1,
+   "best": {
+    "score": 110,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "url": "https://deepmind.google/blog/introducing-alphaproof-code",
+   "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+   "sources": [
+    "deepmind",
+    "hackernews"
+   ],
+   "days": 4,
+   "best": {
+    "score": 678,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-10"
    }
   },
   {
@@ -593,21 +656,6 @@
    }
   },
   {
-   "url": "https://deepmind.google/blog/introducing-alphaproof-code",
-   "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
-   "sources": [
-    "deepmind",
-    "hackernews"
-   ],
-   "days": 3,
-   "best": {
-    "score": 678,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-10"
-   }
-  },
-  {
    "url": "https://joshstrange.com/2026/11/09/i-saw-your-hn-comment",
    "title": "I Saw Your HN Comment",
    "sources": [
@@ -740,51 +788,6 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-16"
-   }
-  },
-  {
-   "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
-   "title": "We’re Asking an Appeals Court to Require a Warrant for ALPR Searches",
-   "sources": [
-    "eff",
-    "hackernews"
-   ],
-   "days": 3,
-   "best": {
-    "score": 161,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm",
-   "title": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
-   "sources": [
-    "developernvidia",
-    "hackernews"
-   ],
-   "days": 3,
-   "best": {
-    "score": 114,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-14"
-   }
-  },
-  {
-   "url": "https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112",
-   "title": "The Evolving Story of How Chemistry Became Biology",
-   "sources": [
-    "hackernews",
-    "quanta"
-   ],
-   "days": 3,
-   "best": {
-    "score": 55,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-15"
    }
   }
  ]

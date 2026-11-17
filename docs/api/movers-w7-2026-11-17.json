@@ -1,31 +1,15 @@
 {
  "a": "2026-11-10",
  "b": "2026-11-17",
- "generated": "2026-11-17 06:46 UTC",
+ "generated": "2026-11-17 07:11 UTC",
  "entered": [
-  {
-   "title": "boto3",
-   "url": "https://pypi.org/project/boto3/",
-   "source": "pypi",
-   "score": 2547486524,
-   "metric": "monthly downloads",
-   "rank": 1
-  },
-  {
-   "title": "requests",
-   "url": "https://pypi.org/project/requests/",
-   "source": "pypi",
-   "score": 1471523858,
-   "metric": "monthly downloads",
-   "rank": 2
-  },
   {
    "title": "pydantic",
    "url": "https://pypi.org/project/pydantic/",
    "source": "pypi",
    "score": 1139429690,
    "metric": "monthly downloads",
-   "rank": 3
+   "rank": 1
   },
   {
    "title": "click",
@@ -33,15 +17,7 @@
    "source": "pypi",
    "score": 1100967551,
    "metric": "monthly downloads",
-   "rank": 4
-  },
-  {
-   "title": "numpy",
-   "url": "https://pypi.org/project/numpy/",
-   "source": "pypi",
-   "score": 1090453280,
-   "metric": "monthly downloads",
-   "rank": 5
+   "rank": 2
   },
   {
    "title": "pytest",
@@ -49,13 +25,13 @@
    "source": "pypi",
    "score": 959443999,
    "metric": "monthly downloads",
-   "rank": 6
+   "rank": 3
   },
   {
    "title": "hashbrown",
    "url": "https://crates.io/crates/hashbrown",
    "source": "crates",
-   "score": 914217920,
+   "score": 917700890,
    "metric": "recent downloads",
    "rank": 1
   },
@@ -63,7 +39,7 @@
    "title": "syn",
    "url": "https://crates.io/crates/syn",
    "source": "crates",
-   "score": 903385756,
+   "score": 907014061,
    "metric": "recent downloads",
    "rank": 2
   },
@@ -71,7 +47,7 @@
    "title": "getrandom",
    "url": "https://crates.io/crates/getrandom",
    "source": "crates",
-   "score": 823835904,
+   "score": 827085412,
    "metric": "recent downloads",
    "rank": 3
   },
@@ -81,21 +57,13 @@
    "source": "pypi",
    "score": 794931619,
    "metric": "monthly downloads",
-   "rank": 7
-  },
-  {
-   "title": "pandas",
-   "url": "https://pypi.org/project/pandas/",
-   "source": "pypi",
-   "score": 695595266,
-   "metric": "monthly downloads",
-   "rank": 8
+   "rank": 4
   },
   {
    "title": "rand",
    "url": "https://crates.io/crates/rand",
    "source": "crates",
-   "score": 644641940,
+   "score": 647190482,
    "metric": "recent downloads",
    "rank": 4
   },
@@ -103,7 +71,7 @@
    "title": "rand_core",
    "url": "https://crates.io/crates/rand_core",
    "source": "crates",
-   "score": 642680238,
+   "score": 645245445,
    "metric": "recent downloads",
    "rank": 5
   },
@@ -111,15 +79,23 @@
    "title": "bitflags",
    "url": "https://crates.io/crates/bitflags",
    "source": "crates",
-   "score": 598655112,
+   "score": 600956432,
    "metric": "recent downloads",
    "rank": 6
+  },
+  {
+   "title": "rich",
+   "url": "https://pypi.org/project/rich/",
+   "source": "pypi",
+   "score": 563019498,
+   "metric": "monthly downloads",
+   "rank": 5
   },
   {
    "title": "thiserror",
    "url": "https://crates.io/crates/thiserror",
    "source": "crates",
-   "score": 535391981,
+   "score": 537520931,
    "metric": "recent downloads",
    "rank": 7
   },
@@ -127,7 +103,7 @@
    "title": "thiserror-impl",
    "url": "https://crates.io/crates/thiserror-impl",
    "source": "crates",
-   "score": 535318088,
+   "score": 537446733,
    "metric": "recent downloads",
    "rank": 8
   },
@@ -135,23 +111,15 @@
    "title": "base64",
    "url": "https://crates.io/crates/base64",
    "source": "crates",
-   "score": 535135286,
+   "score": 537439340,
    "metric": "recent downloads",
-   "rank": 9
-  },
-  {
-   "title": "fastapi",
-   "url": "https://pypi.org/project/fastapi/",
-   "source": "pypi",
-   "score": 532877425,
-   "metric": "monthly downloads",
    "rank": 9
   },
   {
    "title": "windows-sys",
    "url": "https://crates.io/crates/windows-sys",
    "source": "crates",
-   "score": 520194838,
+   "score": 522123504,
    "metric": "recent downloads",
    "rank": 10
   },
@@ -159,9 +127,41 @@
    "title": "quote",
    "url": "https://crates.io/crates/quote",
    "source": "crates",
-   "score": 493154585,
+   "score": 495059105,
    "metric": "recent downloads",
    "rank": 11
+  },
+  {
+   "title": "libc",
+   "url": "https://crates.io/crates/libc",
+   "source": "crates",
+   "score": 493689382,
+   "metric": "recent downloads",
+   "rank": 12
+  },
+  {
+   "title": "indexmap",
+   "url": "https://crates.io/crates/indexmap",
+   "source": "crates",
+   "score": 492030608,
+   "metric": "recent downloads",
+   "rank": 13
+  },
+  {
+   "title": "proc-macro2",
+   "url": "https://crates.io/crates/proc-macro2",
+   "source": "crates",
+   "score": 487748392,
+   "metric": "recent downloads",
+   "rank": 14
+  },
+  {
+   "title": "memchr",
+   "url": "https://crates.io/crates/memchr",
+   "source": "crates",
+   "score": 473278823,
+   "metric": "recent downloads",
+   "rank": 15
   }
  ],
  "left": [
@@ -188,14 +188,6 @@
    "score": 707,
    "metric": "points",
    "rank": 4
-  },
-  {
-   "title": "AlphaProof Code",
-   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-   "source": "hackernews",
-   "score": 678,
-   "metric": "points",
-   "rank": 5
   },
   {
    "title": "AI usage generates a fragile codebase",
@@ -324,6 +316,14 @@
    "score": 21,
    "metric": "points",
    "rank": 2
+  },
+  {
+   "title": "Tell HN: Notion AI chat sessions have been exposed via Fireworks AI hack",
+   "url": "https://news.ycombinator.com/item?id=50436636",
+   "source": "ask_hn",
+   "score": 19,
+   "metric": "points",
+   "rank": 3
   }
  ],
  "gainers": [
@@ -335,6 +335,15 @@
    "metric": "feed rank",
    "rank": 10,
    "delta": -289
+  },
+  {
+   "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+   "source": "deepmind",
+   "score": 12,
+   "metric": "feed rank",
+   "rank": 4,
+   "delta": -666
   },
   {
    "title": "Smart home devices should work without the internet",
@@ -355,6 +364,15 @@
    "metric": "feed rank",
    "rank": 2,
    "delta": -1183
+  },
+  {
+   "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+   "source": "deepmind",
+   "score": 12,
+   "metric": "feed rank",
+   "rank": 4,
+   "delta": -666
   },
   {
    "title": "Gemini 4 Carbon is now available",

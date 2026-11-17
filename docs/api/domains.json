@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-17T02:08:01.625513+00:00",
+ "generated_at": "2026-11-17T07:11:21.392965+00:00",
  "latest_snapshot": "2026-11-17",
- "total": 9505,
+ "total": 9514,
  "domains": [
   {
    "hostname": "blog.google",
@@ -24,7 +24,7 @@
   {
    "hostname": "theguardian.com",
    "days_on_board": 5,
-   "items": 197,
+   "items": 202,
    "sources": [
     "eb_guardian",
     "guardianco",
@@ -62,7 +62,7 @@
   {
    "hostname": "twitter.com",
    "days_on_board": 5,
-   "items": 7,
+   "items": 8,
    "sources": [
     "hackernews",
     "hnrss",
@@ -77,9 +77,77 @@
    }
   },
   {
+   "hostname": "reddit.com",
+   "days_on_board": 4,
+   "items": 2071,
+   "sources": [
+    "br_homepage_piotr_migda",
+    "br_nelson_s_linkblog",
+    "hackernews",
+    "k8s",
+    "rangular",
+    "rartificial",
+    "raskprogramming",
+    "raws",
+    "rclojure",
+    "rcoding",
+    "rcompsci",
+    "rcpp",
+    "rdartlang",
+    "rdataengineering",
+    "rdatascience",
+    "rdevops",
+    "rdjango",
+    "rdocker",
+    "rdotnet",
+    "reddit",
+    "relixir",
+    "relm",
+    "rexperienceddevs",
+    "rfrontend",
+    "rgamedev",
+    "rgolang",
+    "rhaskell",
+    "rjava",
+    "rjavascript",
+    "rkotlin",
+    "rkubernetes",
+    "rlaravel",
+    "rlisp",
+    "rmongodb",
+    "rnetsec",
+    "rnextjs",
+    "rnode",
+    "ropensource",
+    "rphp",
+    "rpostgresql",
+    "rprogramming",
+    "rpython",
+    "rreactjs",
+    "rredis",
+    "rrust",
+    "rscala",
+    "rselfhosted",
+    "rsveltejs",
+    "rswift",
+    "rsysadmin",
+    "rtechnology",
+    "rtypescript",
+    "rwebdesign",
+    "rwebdev"
+   ],
+   "top_hit": {
+    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+    "score": 382,
+    "metric": "points",
+    "date": "2026-11-13"
+   }
+  },
+  {
    "hostname": "youtube.com",
    "days_on_board": 4,
-   "items": 2001,
+   "items": 2002,
    "sources": [
     "br_blog_ankush_menat",
     "br_dr_j_engineering_leadership_software_dev",
@@ -157,69 +225,21 @@
    }
   },
   {
-   "hostname": "reddit.com",
+   "hostname": "wired.com",
    "days_on_board": 4,
-   "items": 1946,
+   "items": 107,
    "sources": [
-    "br_homepage_piotr_migda",
-    "br_nelson_s_linkblog",
+    "azure",
+    "daringfireball",
     "hackernews",
-    "k8s",
-    "rangular",
-    "rartificial",
-    "raskprogramming",
-    "raws",
-    "rclojure",
-    "rcoding",
-    "rcompsci",
-    "rcpp",
-    "rdartlang",
-    "rdataengineering",
-    "rdatascience",
-    "rdevops",
-    "rdjango",
-    "rdocker",
-    "rdotnet",
-    "reddit",
-    "relixir",
-    "relm",
-    "rexperienceddevs",
-    "rfrontend",
-    "rgamedev",
-    "rgolang",
-    "rhaskell",
-    "rjava",
-    "rjavascript",
-    "rkotlin",
-    "rkubernetes",
-    "rlaravel",
-    "rlisp",
-    "rmongodb",
-    "rnetsec",
-    "rnextjs",
-    "rnode",
-    "ropensource",
-    "rphp",
-    "rpostgresql",
-    "rprogramming",
-    "rpython",
-    "rreactjs",
-    "rredis",
-    "rrust",
-    "rscala",
-    "rselfhosted",
-    "rsveltejs",
-    "rswift",
-    "rsysadmin",
-    "rtechnology",
-    "rtypescript",
-    "rwebdesign",
-    "rwebdev"
+    "hnrss",
+    "sec_wired",
+    "wired"
    ],
    "top_hit": {
-    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
-    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
-    "score": 382,
+    "title": "Nvidia employees petition to bring back Jensen Huang",
+    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+    "score": 811,
     "metric": "points",
     "date": "2026-11-13"
    }
@@ -237,26 +257,6 @@
     "score": 462273503,
     "metric": "weekly downloads",
     "date": "2026-11-17"
-   }
-  },
-  {
-   "hostname": "wired.com",
-   "days_on_board": 4,
-   "items": 96,
-   "sources": [
-    "azure",
-    "daringfireball",
-    "hackernews",
-    "hnrss",
-    "sec_wired",
-    "wired"
-   ],
-   "top_hit": {
-    "title": "Nvidia employees petition to bring back Jensen Huang",
-    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
-    "score": 811,
-    "metric": "points",
-    "date": "2026-11-13"
    }
   },
   {
@@ -280,7 +280,7 @@
   {
    "hostname": "nytimes.com",
    "days_on_board": 4,
-   "items": 88,
+   "items": 90,
    "sources": [
     "bostocks",
     "daringfireball",
@@ -334,7 +334,7 @@
   {
    "hostname": "9to5mac.com",
    "days_on_board": 4,
-   "items": 67,
+   "items": 68,
    "sources": [
     "9to5mac",
     "br_posts_from_iamgregb",
@@ -367,6 +367,23 @@
    }
   },
   {
+   "hostname": "simonwillison.net",
+   "days_on_board": 4,
+   "items": 52,
+   "sources": [
+    "br_nelson_s_linkblog",
+    "hackernews",
+    "simonw"
+   ],
+   "top_hit": {
+    "title": "Locating the source of a mysterious beep",
+    "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+    "score": 331,
+    "metric": "points",
+    "date": "2026-11-10"
+   }
+  },
+  {
    "hostname": "projectzero.google",
    "days_on_board": 4,
    "items": 52,
@@ -381,23 +398,6 @@
     "score": 220,
     "metric": "points",
     "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "simonwillison.net",
-   "days_on_board": 4,
-   "items": 51,
-   "sources": [
-    "br_nelson_s_linkblog",
-    "hackernews",
-    "simonw"
-   ],
-   "top_hit": {
-    "title": "Locating the source of a mysterious beep",
-    "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
-    "score": 331,
-    "metric": "points",
-    "date": "2026-11-10"
    }
   },
   {
@@ -479,6 +479,22 @@
     "score": 475,
     "metric": "points",
     "date": "2026-11-08"
+   }
+  },
+  {
+   "hostname": "deepmind.google",
+   "days_on_board": 4,
+   "items": 46,
+   "sources": [
+    "deepmind",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "AlphaProof Code",
+    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "score": 678,
+    "metric": "points",
+    "date": "2026-11-10"
    }
   },
   {
@@ -700,7 +716,7 @@
   {
    "hostname": "mp.weixin.qq.com",
    "days_on_board": 3,
-   "items": 792,
+   "items": 793,
    "sources": [
     "42jing",
     "alimiddle",
@@ -732,7 +748,7 @@
   {
    "hostname": "lore.kernel.org",
    "days_on_board": 3,
-   "items": 345,
+   "items": 360,
    "sources": [
     "lorekernel"
    ],
@@ -747,7 +763,7 @@
   {
    "hostname": "medium.com",
    "days_on_board": 3,
-   "items": 300,
+   "items": 301,
    "sources": [
     "airbnb",
     "betterprog",
@@ -782,6 +798,21 @@
    }
   },
   {
+   "hostname": "investing.com",
+   "days_on_board": 3,
+   "items": 211,
+   "sources": [
+    "investing"
+   ],
+   "top_hit": {
+    "title": "Evergy director Jonathan Rolph buys $133,610 in common stock",
+    "url": "https://www.investing.com/news/insider-trading-news/evergy-director-jonathan-rolph-buys-133610-in-common-stock-93CH-5028131",
+    "score": 10,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "changelog.com",
    "days_on_board": 3,
    "items": 210,
@@ -801,24 +832,9 @@
    }
   },
   {
-   "hostname": "investing.com",
-   "days_on_board": 3,
-   "items": 202,
-   "sources": [
-    "investing"
-   ],
-   "top_hit": {
-    "title": "Evergy director Jonathan Rolph buys $133,610 in common stock",
-    "url": "https://www.investing.com/news/insider-trading-news/evergy-director-jonathan-rolph-buys-133610-in-common-stock-93CH-5028131",
-    "score": 10,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "x.com",
    "days_on_board": 3,
-   "items": 198,
+   "items": 199,
    "sources": [
     "api",
     "br_reid_burke_reid_software_engineer",
@@ -832,6 +848,21 @@
    "top_hit": {
     "title": "持械入宋第11季更新了 快来看看详细的地图解析 这条昨晚在抖音发，不到一天已经3000赞 陆陆续续改了12个版本成型",
     "url": "https://x.com/PMbackttfuture/status/2121941825909072294",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "news.google.com",
+   "days_on_board": 3,
+   "items": 153,
+   "sources": [
+    "w4news"
+   ],
+   "top_hit": {
+    "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his silence on breakdown - AP News",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUjU5a3ljR1FocjlKQnRVS21kY1kwR3R4bEZvdUc4VExhbnc2NjZrU0ZfRS1iMkoxcGthaUV4a19MTlNsR2JFMlFqZDN0Y1JiejlNWUFUWjAyWTl3RFNXX0ZvbkNmX0l1elhVZndMd3pQSlQtbk1RYzBMT2tmOTJuaTlwUm5FQmdRODFJQTk4OWV5MlpScVhhc1BEWWotS1E?oc=5",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"
@@ -860,7 +891,7 @@
   {
    "hostname": "theregister.com",
    "days_on_board": 3,
-   "items": 135,
+   "items": 143,
    "sources": [
     "hackernews",
     "hnrss",
@@ -878,7 +909,7 @@
   {
    "hostname": "producthunt.com",
    "days_on_board": 3,
-   "items": 132,
+   "items": 138,
    "sources": [
     "br_nelson_s_linkblog",
     "producthunt"
@@ -892,24 +923,9 @@
    }
   },
   {
-   "hostname": "seekingalpha.com",
-   "days_on_board": 3,
-   "items": 123,
-   "sources": [
-    "seekingalpha"
-   ],
-   "top_hit": {
-    "title": "NASA advances PRIMA mission with BAE Systems as space telescope supplier",
-    "url": "https://seekingalpha.com/news/4672811-nasa-advances-prima-mission-with-bae-systems-as-space-telescope-supplier?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-    "score": 7,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "timesofindia.indiatimes.com",
    "days_on_board": 3,
-   "items": 122,
+   "items": 132,
    "sources": [
     "timesofindia"
    ],
@@ -917,6 +933,21 @@
     "title": "Georgia woman wins $2.5m after rear-end crash leads to spinal fusion surgery",
     "url": "https://timesofindia.indiatimes.com/world/us/a-metro-atlanta-woman-was-awarded-2-5-million-by-a-cobb-county-georgia-jury-after-a-2023-rear-end-crash-left-her-with-injuries-so-serious-that-she-later-needed-spinal-fusion-surgery/articleshow/135865103.cms",
     "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "seekingalpha.com",
+   "days_on_board": 3,
+   "items": 130,
+   "sources": [
+    "seekingalpha"
+   ],
+   "top_hit": {
+    "title": "NASA advances PRIMA mission with BAE Systems as space telescope supplier",
+    "url": "https://seekingalpha.com/news/4672811-nasa-advances-prima-mission-with-bae-systems-as-space-telescope-supplier?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+    "score": 7,
     "metric": "feed rank",
     "date": "2026-11-15"
    }
@@ -941,7 +972,7 @@
   {
    "hostname": "unite.ai",
    "days_on_board": 3,
-   "items": 113,
+   "items": 119,
    "sources": [
     "uniteai"
    ],
@@ -956,7 +987,7 @@
   {
    "hostname": "techmeme.com",
    "days_on_board": 3,
-   "items": 110,
+   "items": 118,
    "sources": [
     "techmeme"
    ],
@@ -964,36 +995,6 @@
     "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A (Tamara Djurickovic/Tech.eu)",
     "url": "https://www.techmeme.com/261115/p3#a261115p3",
     "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "forbes.com",
-   "days_on_board": 3,
-   "items": 107,
-   "sources": [
-    "forbes"
-   ],
-   "top_hit": {
-    "title": "The Good, Bad And Ugly From The Packers’ Loss To The Vikings",
-    "url": "https://www.forbes.com/sites/robreischel/2026/11/15/the-good-bad-and-ugly-from-the-packers-loss-to-the-vikings/",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "blog.logrocket.com",
-   "days_on_board": 3,
-   "items": 104,
-   "sources": [
-    "bloglogrocket"
-   ],
-   "top_hit": {
-    "title": "Top 5 AI code review tools in 2026",
-    "url": "https://blog.logrocket.com/ai-code-review-tools-2026/",
-    "score": 12,
     "metric": "feed rank",
     "date": "2026-11-15"
    }

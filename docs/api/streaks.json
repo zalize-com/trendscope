@@ -2,8 +2,8 @@
   "generated_at": "2026-11-17",
   "latest_snapshot": "2026-11-17",
   "days_tracked": 11,
-  "active_count": 106228,
-  "repeat_appearances": 108453,
+  "active_count": 106492,
+  "repeat_appearances": 108577,
   "active": [
     {
       "title": "boto3",
@@ -142,6 +142,16 @@
       "metric": "recent downloads",
       "top_score": 598655112,
       "top_rank": 6,
+      "consecutive_days": 4,
+      "days_on_board": 4
+    },
+    {
+      "title": "rich",
+      "source": "pypi",
+      "url": "https://pypi.org/project/rich/",
+      "metric": "monthly downloads",
+      "top_score": 565221275,
+      "top_rank": 9,
       "consecutive_days": 4,
       "days_on_board": 4
     },
@@ -366,6 +376,16 @@
       "days_on_board": 4
     },
     {
+      "title": "matplotlib",
+      "source": "pypi",
+      "url": "https://pypi.org/project/matplotlib/",
+      "metric": "monthly downloads",
+      "top_score": 191747759,
+      "top_rank": 10,
+      "consecutive_days": 4,
+      "days_on_board": 4
+    },
+    {
       "title": "vitest",
       "source": "npm",
       "url": "https://www.npmjs.com/package/vitest",
@@ -382,6 +402,16 @@
       "metric": "weekly downloads",
       "top_score": 182099083,
       "top_rank": 9,
+      "consecutive_days": 4,
+      "days_on_board": 4
+    },
+    {
+      "title": "langchain",
+      "source": "pypi",
+      "url": "https://pypi.org/project/langchain/",
+      "metric": "monthly downloads",
+      "top_score": 156867095,
+      "top_rank": 17,
       "consecutive_days": 4,
       "days_on_board": 4
     },
@@ -472,36 +502,6 @@
       "metric": "monthly downloads",
       "top_score": 51151192,
       "top_rank": 21,
-      "consecutive_days": 4,
-      "days_on_board": 4
-    },
-    {
-      "title": "prisma",
-      "source": "npm",
-      "url": "https://www.npmjs.com/package/prisma",
-      "metric": "weekly downloads",
-      "top_score": 26315058,
-      "top_rank": 15,
-      "consecutive_days": 4,
-      "days_on_board": 4
-    },
-    {
-      "title": "vue",
-      "source": "npm",
-      "url": "https://www.npmjs.com/package/vue",
-      "metric": "weekly downloads",
-      "top_score": 25213072,
-      "top_rank": 16,
-      "consecutive_days": 4,
-      "days_on_board": 4
-    },
-    {
-      "title": "fastify",
-      "source": "npm",
-      "url": "https://www.npmjs.com/package/fastify",
-      "metric": "weekly downloads",
-      "top_score": 22949989,
-      "top_rank": 17,
       "consecutive_days": 4,
       "days_on_board": 4
     }

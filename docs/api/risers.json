@@ -144,6 +144,16 @@
       "to_score": 1323
     },
     {
+      "title": "What is w2rt6byl5nf1opmc-a.com?",
+      "source": "hackernews",
+      "url": "https://jack.cab/blog/siterate",
+      "metric": "points",
+      "date": "2026-11-17",
+      "delta": 306,
+      "from_score": 13,
+      "to_score": 319
+    },
+    {
       "title": "Eynnzerr/TelemetryCleaner",
       "source": "github_trending",
       "url": "https://github.com/Eynnzerr/TelemetryCleaner",
@@ -492,19 +502,39 @@
       "delta": 88,
       "from_score": 10,
       "to_score": 98
-    },
-    {
-      "title": "Jolt – Clojure that speaks C",
-      "source": "hackernews",
-      "url": "https://jolt-lang.net/",
-      "metric": "points",
-      "date": "2026-11-17",
-      "delta": 87,
-      "from_score": 10,
-      "to_score": 97
     }
   ],
   "package_rank_jumps": [
+    {
+      "title": "matplotlib",
+      "source": "pypi",
+      "url": "https://pypi.org/project/matplotlib/",
+      "metric": "monthly downloads",
+      "date": "2026-11-17",
+      "jump": 6,
+      "from_rank": 16,
+      "to_rank": 10
+    },
+    {
+      "title": "langchain",
+      "source": "pypi",
+      "url": "https://pypi.org/project/langchain/",
+      "metric": "monthly downloads",
+      "date": "2026-11-17",
+      "jump": 6,
+      "from_rank": 17,
+      "to_rank": 11
+    },
+    {
+      "title": "rich",
+      "source": "pypi",
+      "url": "https://pypi.org/project/rich/",
+      "metric": "monthly downloads",
+      "date": "2026-11-17",
+      "jump": 4,
+      "from_rank": 9,
+      "to_rank": 5
+    },
     {
       "title": "transformers",
       "source": "pypi",
@@ -730,6 +760,22 @@
       "days_tracked": 5
     },
     {
+      "title": "What is w2rt6byl5nf1opmc-a.com?",
+      "source": "hackernews",
+      "url": "https://jack.cab/blog/siterate",
+      "metric": "points",
+      "gain": 167,
+      "days_tracked": 3
+    },
+    {
+      "title": "My Quest to push native Three.js quality match AAA Game Engines",
+      "source": "hackernews",
+      "url": "https://ben3d.ca/blog/building-the-aaa-lighting-pipeline-in-threejs",
+      "metric": "points",
+      "gain": 118,
+      "days_tracked": 4
+    },
+    {
       "title": "Tell HN: HN is being scraped for emails to scam",
       "source": "ask_hn",
       "url": "https://news.ycombinator.com/item?id=50513451",
@@ -754,6 +800,14 @@
       "days_tracked": 3
     },
     {
+      "title": "How to Break into Security, Ptacek Edition (2012)",
+      "source": "hackernews",
+      "url": "https://krebsonsecurity.com/2012/06/how-to-break-into-security-ptacek-edition/",
+      "metric": "points",
+      "gain": 88,
+      "days_tracked": 2
+    },
+    {
       "title": "Jolt – Clojure that speaks C",
       "source": "hackernews",
       "url": "https://jolt-lang.net/",
@@ -765,6 +819,14 @@
       "title": "Michael Mann's 'Heat' Copyright Fight Turns on a Deal with Himself",
       "source": "hackernews",
       "url": "https://copyrightlately.com/michael-mann-heat-copyright-termination/",
+      "metric": "points",
+      "gain": 76,
+      "days_tracked": 2
+    },
+    {
+      "title": "Running coding agents without handing them my credentials",
+      "source": "hackernews",
+      "url": "https://blog.antonio.cx/running-agents-with-lend",
       "metric": "points",
       "gain": 76,
       "days_tracked": 2
@@ -984,38 +1046,6 @@
       "metric": "feed rank",
       "gain": 10,
       "days_tracked": 2
-    },
-    {
-      "title": "What are you doing this week?",
-      "source": "lobsters",
-      "url": "https://lobste.rs/s/isejqv",
-      "metric": "score",
-      "gain": 10,
-      "days_tracked": 2
-    },
-    {
-      "title": "Meet type-tune! 🦀 Give Your TypeScript Types a Better Home! 😸",
-      "source": "devto",
-      "url": "https://dev.to/necoz/meet-type-tune-give-your-typescript-types-a-better-home-1p6l",
-      "metric": "reactions",
-      "gain": 9,
-      "days_tracked": 3
-    },
-    {
-      "title": "Book Reviews",
-      "source": "br_jake_roggenbuck",
-      "url": "/books/",
-      "metric": "feed rank",
-      "gain": 9,
-      "days_tracked": 5
-    },
-    {
-      "title": "Exploring OTP Patterns for Agentic Workflows",
-      "source": "eb_erlang_solutions",
-      "url": "https://www.erlang-solutions.com/blog/exploring-otp-patterns-for-agentic-workflows/",
-      "metric": "feed rank",
-      "gain": 9,
-      "days_tracked": 4
     }
   ]
 }
