@@ -16,12 +16,24 @@ async function load() {
   }
 }
 
+// lazy kind chips — re-render once loaded
+async function loadKinds() {
+  try {
+    const r = await fetch("../data/kind-lite.json");
+    if (!r.ok) return;
+    KINDS = (await r.json()).kinds || {};
+    if (LAST) render(LAST);
+  } catch (e) {}
+}
+let KINDS = {}, LAST = null;
+
 function inLane(key) {
   if (lane === "misc") return !KNOWN_PREFIXES.has(key.split("_")[0]);
   return key.startsWith(lane + "_");
 }
 
 function render(d) {
+  LAST = d;
   const items = d.items || {};
   const rows = [];
   for (const key of Object.keys(items)) {
@@ -39,9 +51,10 @@ function render(d) {
     <div class="row">
       <span class="rank">${i + 1}</span>
       <span><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
-        <span class="meta">${it.author ? " · " + esc(it.author) : ""}${it.source ? " · " + esc(srcName(it.source)) : ""}</span></span>
+        <span class="meta">${it.author ? " · " + esc(it.author) : ""}${it.source ? " · " + esc(srcName(it.source)) : ""}${KINDS[it.url] ? ` <span class="src kindchip">${KINDS[it.url]}</span>` : ""}</span></span>
       <span class="score">${it.metric === "feed rank" ? "#" + (it.rank ?? it.score) : (it.score || 0).toLocaleString("en-US")}</span>
     </div>`).join("");
 }
 
 load();
+loadKinds();
