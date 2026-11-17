@@ -157,6 +157,23 @@ header.hero { text-align: center; padding: 40px 0 24px; }
   .rail { grid-template-columns: 1fr; }
 }
 
+/* ---- borrowed discipline (openstatus/dub): mono values, quiet links, press ---- */
+.stamp, .topic-chip b, .row .rank, .row .score, .row .heat, .num, code {
+  font-family: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+}
+.status-item a, .board-actions a, .pagesub a {
+  text-decoration: underline; text-decoration-style: dashed;
+  text-decoration-color: color-mix(in srgb, var(--dim) 45%, transparent);
+  text-underline-offset: 2px;
+}
+.btn, .tab, .topic-chip, .chip {
+  transition-property: color, border-color, background, transform;
+}
+.btn:active, .tab:active, .topic-chip:active, .chip:active {
+  transform: scale(.97);
+}
+
 /* ---- pills & stamps ---- */
 .stamp {
   display: inline-block; margin-top: 14px; padding: 4px 14px;
