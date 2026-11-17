@@ -1,9 +1,9 @@
-# Pages 上线 30 分钟公网验证清单
+# 上线后 30 分钟公网验证清单
 
-前置：GitHub Pages 已启用——trendscope 必须选 **Source: GitHub Actions**
-（站点是 Astro 构建产物，deploy-from-branch 会直出 Markdown 源文件不工作）。
-feedpaper 可选 deploy-from-branch（main/root，纯静态）。目标域：
-`https://zalize-com.github.io/trendscope/`（或自定义域）。
+**11/17 状态：已走 Cloudflare Pages 上线**——trendscope.zalize.com +
+feedpaper.zalize.com（GH Pages 路径放弃：CF 的 _redirects 数据保鲜层 +
+自定义域 + Web Analytics 全套更优）。目标域即两站正式域名；
+URL 为无扩展名形态（CF 对 .html 自动 308）。
 
 ## 0-5 min：存活与 HTTPS
 - [ ] `curl -sI https://<pages-domain>/` → 200，无 mixed-content 警告
