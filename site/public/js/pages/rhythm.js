@@ -10,7 +10,7 @@ fetch("docs/api/rhythm.json", {cache:"no-cache"}).then(r => r.json()).then(d => 
   const hr = [...Array(24).keys()];
   let h = '<table><tr><th>source</th>' + hr.map(x=>`<th>${String(x).padStart(2,"0")}</th>`).join("") + '<th>total</th></tr>';
   for (const s of srcs) {
-    h += `<tr><td class="src">${esc(s)}</td>`;
+    h += `<tr><td class="src" title="${esc(s)}">${esc(srcName(s))}</td>`;
     for (const x of hr) {
       const v = (grid[s]||{})[x] || 0;
       const a = v ? (0.12 + 0.88*v/max).toFixed(2) : 0;
@@ -21,7 +21,7 @@ fetch("docs/api/rhythm.json", {cache:"no-cache"}).then(r => r.json()).then(d => 
   document.getElementById("grid").innerHTML = h + "</table>";
   const peaks = srcs.slice(0,4).map(s => {
     const ent = Object.entries(grid[s]||{}).sort((a,b)=>b[1]-a[1]);
-    return `${esc(s)} peaks ${String(ent[0]?.[0]).padStart(2,"0")}:00 UTC`;
+    return `${esc(srcName(s))} peaks ${String(ent[0]?.[0]).padStart(2,"0")}:00 UTC`;
   }).join(" · ");
   const tot = Object.values(totals).reduce((a,b)=>a+b,0);
   document.getElementById("sub").textContent = `${tot} captures · ${srcs.length} sources · ${d.days_tracked} days · UTC hours`;

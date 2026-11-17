@@ -15,7 +15,7 @@ $("stats").innerHTML =
 const row = (r, badge) =>
   `<li><span class="it"><a href="${r.url}">${esc(r.title)}</a><span class="src">${srcName(r.source)}</span>
    <a href="item.html?q=${encodeURIComponent(r.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>
-   <span class="sc">${badge} · ${fmt(r.top_score)} ${r.metric||""}</span></li>`;
+   <span class="sc">${badge} · ${r.metric === "feed rank" ? "#" + (r.top_rank ?? r.top_score) + " in feed" : fmt(r.top_score) + " " + (r.metric||"")}</span></li>`;
 
 const srcs = [...new Set(recs.map(r => r.source))].sort();
 const QS = new URLSearchParams(location.search).get("s");

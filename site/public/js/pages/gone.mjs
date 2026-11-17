@@ -7,7 +7,7 @@ for (let i = 0; i < d.items.length; i++) {
     <td><a href="${it.url || "#"}">${it.title}</a></td>
     <td class="src">${srcName(it.source)}</td>
     <td>${it.rank ?? ""}</td>
-    <td class="src">${it.score ?? ""} ${it.metric || ""}</td>`;
+    <td class="src">${scoreText(it)}</td>`;
   tb.appendChild(tr);
 }
 document.getElementById("note").textContent =

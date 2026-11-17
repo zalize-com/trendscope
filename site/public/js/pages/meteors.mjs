@@ -24,7 +24,7 @@ try {
     `<li><span class="it"><a href="${m.url}">${esc(m.title.length>80?m.title.slice(0,80)+"…":m.title)}</a>` +
       `<a href="item.html?q=${encodeURIComponent(m.title)}" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a>
        ${m.author ? `<span class="src">@${esc(m.author)}</span>` : ""}</span>
-       <span class="sc">${fmt(m.score)} ${m.metric||""} <span class="date">· ${m.date}</span></span></li>`;
+       <span class="sc">${scoreText(m, fmt)} <span class="date">· ${m.date}</span></span></li>`;
   $("out").innerHTML = srcs.map(([s, ms]) =>
     `<h2>${s} — ${ms.length} meteors</h2><ol>` +
     ms.slice(0,5).map(row).join("") + `</ol>`).join("");

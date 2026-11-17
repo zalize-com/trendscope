@@ -39,14 +39,14 @@ try {
 
   $("out").innerHTML =
     `<h2>fresh on the board today</h2><ol>` +
-      (fresh.slice(0,20).map(e => row(e, `<span class="up">${fmt(e.score||0)}</span> ${e.metric||""}`)).join("")
+      (fresh.slice(0,20).map(e => row(e, `<span class="up">${scoreText(e, fmt)}</span>`)).join("")
         || `<li><span class="it" style="color:var(--dim)">nothing new today</span></li>`) + `</ol>` +
     `<h2>heating up — gains in the last 24h</h2><ol>` +
       (hot.slice(0,12).map(e => row(e, `<span class="up">+${fmt(e.delta)}</span>`)).join("")
         || `<li><span class="it" style="color:var(--dim)">no spikes today</span></li>`) + `</ol>` +
     `<h2>crossing over — on 2+ sources</h2><ol>` +
       (cross.slice(0,10).map(c => row({title: c.title, url: c.url, source: c.sources.join(" + ")},
-        `${fmt(c.best.score)} ${c.best.metric}`)).join("")
+        `${scoreText(c.best, fmt)}`)).join("")
         || `<li><span class="it" style="color:var(--dim)">none yet</span></li>`) + `</ol>` +
     `<h2>new neighborhoods — domains first seen today</h2><ol>` +
       (newDoms.slice(0,15).map(([h, v]) => row({title: h, url: v.url, source: v.source},
