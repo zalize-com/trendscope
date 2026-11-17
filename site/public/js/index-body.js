@@ -564,8 +564,23 @@ async function main() {
       const mins = Math.max(0, Math.round((Date.now() - new Date(H.generated_at).getTime()) / 60000));
       fresh = mins < 60 ? ` · updated ${mins || "just now"}m ago` : ` · updated ${Math.round(mins / 60)}h ago`;
     }
+    // split durable failures (empty for several rounds) from this-round-only
+    // ones — raw last-run count would cry wolf about rate-limit tides
+    let persistent = [];
+    try {
+      const ZW = await j("data/zerowatch.json");
+      persistent = ZW.persistent_empty || [];
+    } catch (e) { /* optional */ }
+    const names = (list, n) => list.slice(0, n).map(srcName).join(", ")
+      + (list.length > n ? ", …" : "");
+    const persSet = new Set(persistent);
+    const tideOnly = bad.filter(s => !persSet.has(s));
     document.getElementById("src-health").innerHTML = bad.length
-      ? `<span style="color:var(--orange)"><i data-lucide="triangle-alert"></i> ${bad.length} source${bad.length > 1 ? "s" : ""} degraded${bad.length > 8 ? ` (${bad.slice(0, 8).map(srcName).join(", ")}, …)` : `: ${bad.map(srcName).join(", ")}`} — <a href="health.html">details →</a></span>`
+      ? (persistent.length
+          ? `<span style="color:var(--orange)"><i data-lucide="triangle-alert"></i> ${persistent.length} source${persistent.length > 1 ? "s" : ""} down for several rounds (${names(persistent, 8)})`
+          : `<span style="color:var(--orange)"><i data-lucide="triangle-alert"></i> ${bad.length} source${bad.length > 1 ? "s" : ""} empty (${names(bad, 8)})`)
+        + (tideOnly.length && persistent.length ? ` · <span style="color:var(--dim)">${tideOnly.length} empty this round</span>` : "")
+        + ` — <a href="health.html">details →</a></span>`
       : `<span style="color:var(--green)">●</span> all ${Object.keys(H.sources).length} sources healthy`
         + fresh
         + (slowest ? ` · slowest ${slowest[0]} ${(slowest[1].ms/1000).toFixed(1)}s` : "")
