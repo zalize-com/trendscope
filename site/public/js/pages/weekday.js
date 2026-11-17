@@ -7,7 +7,8 @@ fetch("docs/api/weekday.json", {cache:"no-cache"}).then(r => r.json()).then(d =>
     totals[s] = v.total;
   }
   const srcs = Object.keys(totals).sort((a,b)=>totals[b]-totals[a]);
-  const max = Math.max(...srcs.flatMap(s=>Object.values(grid[s]||{})),1);
+  let max = 1;
+  for (const s of srcs) for (const v of Object.values(grid[s]||{})) if (v > max) max = v;
   let h = '<table><tr><th>source</th>' + DOW.map(x=>`<th>${x}</th>`).join("") + '<th>total</th></tr>';
   for (const s of srcs) {
     h += `<tr><td class="src" title="${esc(s)}">${esc(srcName(s))}</td>`;
