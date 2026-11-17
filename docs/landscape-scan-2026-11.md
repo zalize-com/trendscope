@@ -82,3 +82,36 @@ product. Correctly deprioritized as a differentiator.
 4. **RSSHub is infrastructure, not competition** — potential source/citation.
 5. Watch closest analogs: OrangeBot.AI (digest UX), keep-up-daily (same
    GH-Actions pattern), Tidings/SlashFeed (OPML UX).
+
+## 补扫：聚合雷达/监控族（2026-11-17，GitHub 关键词扫描）
+
+### 福利/线报族
+- ZiChuanLan/freebie-radar 1.4k★（4 天爆红，本报告触发源）
+- 中国「线报」生态真身：青龙面板+脚本——6dylan6/jdm 337、lo1kda/M_UTOPIA 33、mgmg22/QinglongMy 164
+- 结论：线报=羊毛脚本形态，freebie-radar 把它产品化成工作台=爆红原因
+
+### 热榜聚合族
+- tophubs/TopList 4.7k（mo.fish）、imsyy/DailyHotApi 4.1k、uxiaohan/HotList-Web 456、huqi-pr/trending-in-one 465（唯一带归档思想的）、iiecho1/api-for-hot-search-golang 48
+- 结论：全员实时，仅 trending-in-one 有小时级归档（单源微博热搜）
+
+### 多平台爬虫基建族（小红书/X/FB 线）
+- NanmiCoder/MediaCrawler **71k**——小红书/抖音/快手/B站/微博/贴吧/知乎逆向签名爬虫事实标准，垄断生态位
+- 666ghj/MindSpider 429（BettaFish 配套爬虫）、XHS_Crawler 系全部个位数星
+- **X/Facebook：无活的免登录开源方案**——X 断 API+登墙、FB Graph 锁死，所有爬虫要带 cookie/开发者账号；这个空位是真但没人能做，包括我们（零账号哲学同样受限）
+
+### 舆情/监控族（企业 FOMO）
+- 666ghj/BettaFish 微舆 **42.7k**——多 Agent 舆情分析（微博/小红书/抖音/知乎），近期爆红
+- 思通舆情 627、hmmnxkl/LLM舆情助手 714
+- 借：AI 二审/Agent 分析的消费形态
+
+### 通用变更监控族（西人社区）
+- huginn 50.6k、changedetection.io 35.9k——监控+触发器万能体，不同族不同客户
+
+### 垂直监控
+- cooderl/wewe-rss 9.6k：微信公众号→RSS（微信读书接口），私域订阅痛点已占
+- 微博监控：全是个位数小项目无大一统
+
+### 本轮结论
+1. trendscope「沉淀成数据集」差异化仍稳——所有聚合器都是看现在
+2. 社媒爬虫生态位被 MediaCrawler 垄断，不碰
+3. X/FB 空位真但无免登录路径，不属于我们
