@@ -56,7 +56,9 @@ def rows(items, badge, fmt_score, limit=15):
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    days = sorted(f[:-5] for f in os.listdir(DAILY) if f.endswith(".json"))
+    days = sorted(f[:-5] if f.endswith(".json") else f[:-8]
+                  for f in os.listdir(DAILY)
+                  if f.endswith(".json") or f.endswith(".json.gz"))
     if len(days) < 2:
         print("need 2+ snapshots; skipping")
         return
