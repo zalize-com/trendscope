@@ -1,4 +1,4 @@
-// <trend-scope> — embeddable web component for trendscope.
+// <trend-scope> - embeddable web component for trendscope.
 // Usage: <script src="https://trendscope.zalize.com/docs/api/widget.js" defer></script>
 //        <trend-scope mode="top" n="5" source="hackernews"></trend-scope>
 // modes: top (today's board) | new (fresh today) | risers (today's spikes)
@@ -26,7 +26,7 @@
       const src = this.getAttribute("source");
       const API = this.getAttribute("api") || API_DEFAULT;
       const root = this.attachShadow({ mode: "open" });
-      root.innerHTML = `<style>${css}</style><div class="ts"><h4>trendscope</h4><ul>loading…</ul></div>`;
+      root.innerHTML = `<style>${css}</style><div class="ts"><h4>trendscope</h4><ul>loading\u2026</ul></div>`;
       try {
         let items;
         if (mode === "new") {
@@ -45,9 +45,9 @@
         items = items.slice(0, n);
         root.querySelector("ul").innerHTML = items.map(it =>
           `<li><span class="sc">${it.score ?? ""}</span><a href="${it.url}" target="_blank" rel="noopener">${(it.title || "").replace(/</g, "&lt;")}</a></li>`
-        ).join("") + `<li class="ft"><a href="${API}/">trendscope →</a> ${mode} · ${items.length}</li>`;
+        ).join("") + `<li class="ft"><a href="${API}/">trendscope \u2192</a> ${mode} \u00b7 ${items.length}</li>`;
       } catch (e) {
-        root.querySelector("ul").innerHTML = `<li class="ft"><a href="${API}/">trendscope →</a></li>`;
+        root.querySelector("ul").innerHTML = `<li class="ft"><a href="${API}/">trendscope \u2192</a></li>`;
       }
     }
   }
