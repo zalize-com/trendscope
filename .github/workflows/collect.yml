@@ -59,6 +59,9 @@ jobs:
         # scripts/opml.py only regexes literal collect.py fetchers (3,116 < 9,202)
         run: python3 scripts/gen_opml.py
 
+      - name: Regenerate source registry table
+        run: python3 scripts/gen_sources_md.py
+
       - name: Regenerate weekly aggregate API
         run: python3 scripts/weekly.py || true
 
@@ -82,6 +85,9 @@ jobs:
 
       - name: Check internal links + sitemap
         run: python3 scripts/linkcheck.py
+
+      - name: Registry/docs consistency (SOURCES.md, feeds.json, OPML, llms.txt)
+        run: python3 scripts/consistency.py
 
       - name: Validate dataset contract
         run: python3 scripts/validate.py

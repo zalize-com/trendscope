@@ -49,11 +49,12 @@
 - [domain.html](domain.html) / [author.html](author.html) / [source.html](source.html): single-entity deep dives (?d= ?u= ?s=)
 - [new.html](new.html) / [movers.html](movers.html) / [risers.html](risers.html) / [velocity.html](velocity.html) / [crossovers.html](crossovers.html) / [weekday.html](weekday.html) / [rhythm.html](rhythm.html) / [calendar.html](calendar.html) / [stats.html](stats.html) / [discuss.html](discuss.html) / [stack.html](stack.html): analytic views
 - [zh-source.html](zh-source.html): single-source deep dive for the Chinese lane
-- [feeds.html](feeds.html): browsable/searchable RSS feed directory (9,300+ feeds, OPML export)
+- [feeds.html](feeds.html): browsable/searchable RSS feed directory (9,200+ feeds, OPML export)
 - [tools/index.html](tools/index.html) / [tools/more.html](tools/more.html) / [tools/utils.html](tools/utils.html) / [tools/dev.html](tools/dev.html) / [tools/web.html](tools/web.html) / [tools/a11y.html](tools/a11y.html) / [tools/geo.html](tools/geo.html) / [tools/extensions.html](tools/extensions.html) / [tools/doctor.html](tools/doctor.html) / [tools/all.html](tools/all.html): the 91 utilities + OPML feed health checker, grouped by page + an MV2-dead-extension replacement index
 - [hiring.html](hiring.html): HN labor-market pulse
 - [state-of-rss.html](state-of-rss.html): live RSS census — feeds tracked, dormant, suspected-dead, per-lane
-- [daily/](daily/) + [daily/sec.html](daily/sec.html) etc.: fresh daily digests per topic lane (security, eng blogs, dev blogs, newsletters, podcasts, videos, TLDR, misc)
+- [daily/](daily/) + [daily/sec.html](daily/sec.html) / [daily/eb.html](daily/eb.html) / [daily/br.html](daily/br.html) / [daily/nl.html](daily/nl.html) / [daily/pb.html](daily/pb.html) / [daily/yt.html](daily/yt.html) / [daily/tldr.html](daily/tldr.html) / [daily/tb.html](daily/tb.html) / [daily/misc.html](daily/misc.html): fresh daily digests per topic lane (security, eng blogs, dev blogs, newsletters, podcasts, videos, TLDR, tooling blogs, misc)
+- [llms.txt](llms.txt): this index
 - [health.html](health.html): pipeline uptime
 - [search.html](search.html): full-text search over 19y of HN canon + recent items
 - [datasets.html](datasets.html) / [api.html](api.html) / [badges.html](badges.html) / [clients.html](clients.html) / [swagger.html](swagger.html): data access surfaces
