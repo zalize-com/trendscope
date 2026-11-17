@@ -8,4 +8,4 @@
 /feed.xml https://raw.githubusercontent.com/zalize-com/trendscope/main/feed.xml 302
 /trendscope.opml https://raw.githubusercontent.com/zalize-com/trendscope/main/trendscope.opml 302
 /llms.txt https://raw.githubusercontent.com/zalize-com/trendscope/main/llms.txt 302
-/docs/api/series.json https://raw.githubusercontent.com/zalize-com/trendscope/main/docs/api/series.json 302
+/docs/* https://raw.githubusercontent.com/zalize-com/trendscope/main/docs/:splat 302
