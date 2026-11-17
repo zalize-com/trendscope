@@ -164,9 +164,10 @@
   stopBtn.addEventListener("click", () => { aborted = true; });
 
   $("d-load-trendscope").addEventListener("click", async () => {
-    stat.textContent = "loading trendscope security lane OPML…";
+    const lane = $("d-lane").value;
+    stat.textContent = `loading ${lane} lane OPML…`;
     try {
-      const r = await fetch("../data/opml/sec.opml");
+      const r = await fetch(`../data/opml/${lane}.opml`);
       inp.value = await r.text();
       stat.textContent = "loaded — hit Run health check";
     } catch (e) { stat.textContent = "failed: " + e.message; }
