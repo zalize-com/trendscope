@@ -288,9 +288,9 @@ function render(items, tab) {
         <span class="rank">${i + 1}</span>
         <span>
           <a href="${it.url}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a>
-          <span class="meta"><span class="src">${it.source}</span>${(() => { const al = it._also || []; const shown = al.slice(0, 2).map(s => `<span class="src">+${s}</span>`).join(""); return shown + (al.length > 2 ? `<span class="src" title="also on: ${escapeHtml(al.slice(2).join(", "))}">+${al.length - 2} more</span>` : ""); })()}${streak}${comments}${author}${doml}${tags}${sparkline(it.url)}<a class="delta" href="item.html?q=${encodeURIComponent(it.title)}" title="day-by-day trajectory">⤳</a></span>
+          <span class="meta"><span class="src">${srcName(it.source)}</span>${(() => { const al = it._also || []; const shown = al.slice(0, 2).map(s => `<span class="src">+${srcName(s)}</span>`).join(""); return shown + (al.length > 2 ? `<span class="src" title="also on: ${escapeHtml(al.slice(2).map(srcName).join(", "))}">+${al.length - 2} more</span>` : ""); })()}${streak}${comments}${author}${doml}${tags}${sparkline(it.url)}<a class="delta" href="item.html?q=${encodeURIComponent(it.title)}" title="day-by-day trajectory">⤳</a></span>
         </span>
-        <span class="score"><b>${fmt(it.score)}</b> <span class="muted" style="font-size:11px">${it.metric}</span>${delta}</span>
+        <span class="score">${it.metric === "feed rank" ? `<b>#${it.rank ?? it.score}</b> <span class="muted" style="font-size:11px">in feed</span>` : `<b>${fmt(it.score)}</b> <span class="muted" style="font-size:11px">${it.metric}</span>`}${delta}</span>
       </div>`);
   });
   if (tab === "packages") renderCustomPkgs(board);
@@ -451,6 +451,7 @@ async function main() {
       SNAP = await j("data/latest.json");
     } catch (e2) {
       document.getElementById("err").style.display = "block";
+      document.getElementById("stamp").textContent = "snapshot unavailable";
       return;
     }
   }
@@ -564,7 +565,7 @@ async function main() {
       fresh = mins < 60 ? ` · updated ${mins || "just now"}m ago` : ` · updated ${Math.round(mins / 60)}h ago`;
     }
     document.getElementById("src-health").innerHTML = bad.length
-      ? `<span style="color:var(--orange)"><i data-lucide="triangle-alert"></i> ${bad.length} source${bad.length > 1 ? "s" : ""} degraded${bad.length > 8 ? ` (${bad.slice(0, 8).join(", ")}, …)` : `: ${bad.join(", ")}`} — <a href="health.html">details →</a></span>`
+      ? `<span style="color:var(--orange)"><i data-lucide="triangle-alert"></i> ${bad.length} source${bad.length > 1 ? "s" : ""} degraded${bad.length > 8 ? ` (${bad.slice(0, 8).map(srcName).join(", ")}, …)` : `: ${bad.map(srcName).join(", ")}`} — <a href="health.html">details →</a></span>`
       : `<span style="color:var(--green)">●</span> all ${Object.keys(H.sources).length} sources healthy`
         + fresh
         + (slowest ? ` · slowest ${slowest[0]} ${(slowest[1].ms/1000).toFixed(1)}s` : "")
@@ -662,7 +663,7 @@ function renderRising() {
       <div class="row">
         <span class="rank"></span>
         <span><a href="${it.url}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a>
-          <span class="meta"><span class="src">${it.source}</span></span></span>
+          <span class="meta"><span class="src">${srcName(it.source)}</span></span></span>
         <span class="score"><b>${fmt(it.score)}</b> <span class="delta">+${fmt(gain)}</span></span>
       </div>`);
   });

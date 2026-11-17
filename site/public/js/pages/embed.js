@@ -72,7 +72,7 @@ if (MODE === "discussed") {
     document.getElementById("date").textContent = "most discussed · all snapshots";
     document.getElementById("list").innerHTML = d.discussed.slice(0, N).map((e,i) =>
       `<li><span class="rank">${i+1}</span>
-        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · ${e.date}</span></span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${srcName(e.source)} · ${e.date}</span></span>
         <span class="score"><i data-lucide="message-square"></i> ${fmt(e.comments)}</span></li>`).join("")
       || `<li id="err">no discussed items yet</li>`;
   }).catch(() => { document.getElementById("err").textContent = "discussed data unavailable"; });
@@ -83,7 +83,7 @@ if (MODE === "crossovers") {
     document.getElementById("date").textContent = "crossovers — same story on 2+ sources";
     document.getElementById("list").innerHTML = d.crossovers.slice(0, N).map((e,i) =>
       `<li><span class="rank">${i+1}</span>
-        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.sources.join(" + ")} · ${e.days}d</span></span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.sources.map(srcName).join(" + ")} · ${e.days}d</span></span>
         <span class="score">${fmt(e.best.score)}</span></li>`).join("")
       || `<li id="err">no crossovers yet — stories stay in one lane so far</li>`;
   }).catch(() => { document.getElementById("err").textContent = "crossovers data unavailable"; });
@@ -106,7 +106,7 @@ if (MODE === "velocity") {
     document.getElementById("date").textContent = `velocity · +/day · ${d.total} multi-day`;
     document.getElementById("list").innerHTML = d.items.slice(0, N).map((e,i) =>
       `<li><span class="rank">${i+1}</span>
-        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · ${e.days}d</span></span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${srcName(e.source)} · ${e.days}d</span></span>
         <span class="score">+${fmt(e.per_day)}</span></li>`).join("")
       || `<li id="err">no multi-day items yet</li>`;
   }).catch(() => { document.getElementById("err").textContent = "velocity data unavailable"; });
@@ -140,7 +140,7 @@ if (MODE === "streaks") {
     const rows = (d.active || []).slice(0, N);
     document.getElementById("date").textContent = `longest active streaks · ${d.active_count} streaking · ${d.days_tracked}d tracked`;
     document.getElementById("list").innerHTML = rows.map((it, i) =>
-      `<li><span class="rank">${i+1}</span><span><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a><span class="src">${it.source} · top #${it.top_rank} · ${it.top_score} ${it.metric}</span></span><span class="score"><b style="color:var(--orange)"><i data-lucide="flame"></i>${it.consecutive_days}d</b></span></li>`
+      `<li><span class="rank">${i+1}</span><span><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a><span class="src">${srcName(it.source)} · top #${it.top_rank} · ${it.top_score} ${it.metric}</span></span><span class="score"><b style="color:var(--orange)"><i data-lucide="flame"></i>${it.consecutive_days}d</b></span></li>`
     ).join("") || `<li id="err">no active streaks</li>`;
   }).catch(() => { document.getElementById("err").textContent = "streaks data unavailable"; });
 } else
@@ -203,7 +203,7 @@ if (MODE === "new") {
     document.getElementById("date").textContent = `first-seen today · ${d.new_items}/${d.total_items} new`;
     document.getElementById("list").innerHTML = d.items.slice(0, N).map((e,i) =>
       `<li><span class="rank">${i+1}</span>
-        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · #${e.rank}</span></span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${srcName(e.source)} · #${e.rank}</span></span>
         <span class="score">${fmt(e.score)}</span></li>`).join("")
       || `<li id="err">nothing new today</li>`;
   }).catch(() => { document.getElementById("err").textContent = "new data unavailable"; });
@@ -215,7 +215,7 @@ if (MODE === "radar") {
     document.getElementById("date").textContent = `breakout today · ${d.latest_snapshot}`;
     document.getElementById("list").innerHTML = today.slice(0, N).map((e,i) =>
       `<li><span class="rank">${i+1}</span>
-        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source}</span></span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${srcName(e.source)}</span></span>
         <span class="score up">+${fmt(e.delta)}</span></li>`).join("")
       || `<li id="err">no spikes today</li>`;
   }).catch(() => { document.getElementById("err").textContent = "radar data unavailable"; });
@@ -228,7 +228,7 @@ if (MODE === "watch") {
     document.getElementById("date").textContent = `watching: ${kws.join(" · ") || "(no kw)"} · ${d.latest_snapshot}`;
     document.getElementById("list").innerHTML = hits.slice(0, N).map((e,i) =>
       `<li><span class="rank">${i+1}</span>
-        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · #${e.rank}</span></span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${srcName(e.source)} · #${e.rank}</span></span>
         <span class="score">${fmt(e.score||0)}</span></li>`).join("")
       || `<li id="err">no matches today</li>`;
   }).catch(() => { document.getElementById("err").textContent = "watch data unavailable"; });
@@ -239,7 +239,7 @@ if (MODE === "gone") {
     document.getElementById("date").textContent = `dropped: ${d.previous_snapshot} → ${d.latest_snapshot}`;
     document.getElementById("list").innerHTML = (d.items || []).slice(0, N).map((e,i) =>
       `<li><span class="rank">${i+1}</span>
-        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source}</span></span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${srcName(e.source)}</span></span>
         <span class="score">was #${e.rank ?? "—"}</span></li>`).join("")
       || `<li id="err">nothing dropped</li>`;
   }).catch(() => { document.getElementById("err").textContent = "gone data unavailable"; });
@@ -251,7 +251,7 @@ if (MODE === "veterans") {
     document.getElementById("date").textContent = `board veterans · ${d.days_tracked}d tracked`;
     document.getElementById("list").innerHTML = vs.slice(0, N).map((e,i) =>
       `<li><span class="rank">${i+1}</span>
-        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source}</span></span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${srcName(e.source)}</span></span>
         <span class="score">${e.days_on_board}d</span></li>`).join("")
       || `<li id="err">no veterans yet</li>`;
   }).catch(() => { document.getElementById("err").textContent = "streak data unavailable"; });
@@ -268,7 +268,7 @@ if (MODE === "meteors") {
     document.getElementById("date").textContent = `one-day wonders · ${ms.length} meteors`;
     document.getElementById("list").innerHTML = ms.slice(0, N).map((e,i) =>
       `<li><span class="rank">${i+1}</span>
-        <span><a href="${e.u}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · ${e.date}</span></span>
+        <span><a href="${e.u}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${srcName(e.source)} · ${e.date}</span></span>
         <span class="score">${fmt(e.score)}</span></li>`).join("")
       || `<li id="err">no meteors yet</li>`;
   }).catch(() => { document.getElementById("err").textContent = "meteors data unavailable"; });
@@ -280,7 +280,7 @@ if (MODE === "risers") {
     document.getElementById("date").textContent = "biggest 1-day spikes";
     document.getElementById("list").innerHTML = spikes.slice(0, N).map((e,i) =>
       `<li><span class="rank">${i+1}</span>
-        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source} · ${e.date}</span></span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${srcName(e.source)} · ${e.date}</span></span>
         <span class="score up">+${fmt(e.delta)}</span></li>`).join("")
       || `<li id="err">no spikes yet</li>`;
   }).catch(() => { document.getElementById("err").textContent = "risers data unavailable"; });
@@ -295,7 +295,7 @@ if (MODE === "movers") {
     ].slice(0, N);
     document.getElementById("list").innerHTML = rows.length ? rows.map((x, i) =>
       `<li><span class="rank">${i+1}</span>
-        <span><a href="${x.g.url}" target="_blank" rel="noopener">${esc(x.g.title)}</a><span class="src">${x.g.source}</span></span>
+        <span><a href="${x.g.url}" target="_blank" rel="noopener">${esc(x.g.title)}</a><span class="src">${srcName(x.g.source)}</span></span>
         <span class="score ${x.cls}">${x.tag}</span></li>`).join("")
       : `<li id="err">no movers yet — needs two snapshots</li>`;
   }).catch(() => { document.getElementById("err").textContent = "movers data unavailable"; });
@@ -309,7 +309,7 @@ if (MODE === "week") {
     document.getElementById("date").textContent = "last 7 days · by cumulative heat";
     document.getElementById("list").innerHTML = top.length ? top.map((e, i) =>
       `<li><span class="rank">${i+1}</span>
-        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${e.source}</span></span>
+        <span><a href="${e.url}" target="_blank" rel="noopener">${esc(e.title)}</a><span class="src">${srcName(e.source)}</span></span>
         <span class="score">${e.total.toFixed(1)} heat</span></li>`).join("")
       : `<li id="err">no items this week</li>`;
   }).catch(() => { document.getElementById("err").textContent = "history data unavailable"; });
@@ -336,7 +336,7 @@ if (MODE === "streak") {
     document.getElementById("list").innerHTML = st.map((x, i) =>
       `<li><span class="rank">${i + 1}</span>
         <span><a href="${esc(x.u)}" target="_blank" rel="noopener">${esc(x.title)}</a>
-          <span class="meta"><span class="src">${x.source}</span> ${fmt(x.score)}</span></span>
+          <span class="meta"><span class="src">${srcName(x.source)}</span> ${fmt(x.score)}</span></span>
         <span class="score">${x.cur}d</span></li>`).join("")
       || `<li id="err">no streaks yet</li>`;
   }).catch(() => { document.getElementById("err").textContent = "streak data unavailable"; });
@@ -413,7 +413,7 @@ if (MODE === "item") {
     document.getElementById("date").textContent = `${ds.length}d on board · peak ${fmt(peak.s)} (${peak.d})`;
     document.getElementById("list").innerHTML =
       `<li><span><a href="${esc(hit.url)}" target="_blank" rel="noopener">${esc(hit.title)}</a>
-        <span class="meta"><span class="src">${hit.source}</span> ${ds.map(d => d.d.slice(5)).join(", ")}</span></span></li>
+        <span class="meta"><span class="src">${srcName(hit.source)}</span> ${ds.map(d => d.d.slice(5)).join(", ")}</span></span></li>
        <li><svg viewBox="0 0 ${w} ${h}" style="width:100%;height:40px"><polyline points="${pts}" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/></svg></li>`;
   }).catch(() => { document.getElementById("err").textContent = "history unavailable"; });
 } else

@@ -5,7 +5,7 @@ fetch("docs/api/velocity.json", {cache:"no-cache"}).then(r => r.json()).then(d =
   document.getElementById("grid").innerHTML = top.length
     ? '<table><tr><th>#</th><th>title</th><th>+/day</th><th>latest</th><th>days</th></tr>' +
       top.map((it,i) => `<tr><td class="d">${i+1}</td>
-        <td><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a> <span class="src">${esc(it.source)}</span></td>
+        <td><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a> <span class="src">${esc(srcName(it.source))}</span></td>
         <td class="n">+${fmt(it.per_day)} ${esc(it.metric||"")}/d</td>
         <td class="n">${fmt(it.latest)}</td>
         <td class="d">${it.days}d</td></tr>`).join("") + "</table>"

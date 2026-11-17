@@ -33,7 +33,7 @@ try {
      <div class="stat"><b>${newDoms.length}</b><small>new domains today</small></div>`;
 
   const row = (e, badge) =>
-    `<li><span class="it"><a href="${e.url}">${esc(e.title.length>80?e.title.slice(0,80)+"…":e.title)}</a><span class="src">${e.source}</span>
+    `<li><span class="it"><a href="${e.url}">${esc(e.title.length>80?e.title.slice(0,80)+"…":e.title)}</a><span class="src">${srcName(e.source)}</span>
      <a href="item.html?q=${encodeURIComponent(e.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>
      <span class="sc">${badge}</span></li>`;
 

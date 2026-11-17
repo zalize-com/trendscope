@@ -1,6 +1,7 @@
 // daily/<lane> — renders one lane's freshest items from latest-lite.json
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const KNOWN_PREFIXES = new Set(["sec", "eb", "tb", "br", "nl", "pb", "yt", "tldr", "aws", "github", "gitlab", "meta", "slack"]);
+const srcName = window.srcName;
 const el = document.getElementById("daily");
 const lane = el.dataset.lane;
 
@@ -38,8 +39,8 @@ function render(d) {
     <div class="row">
       <span class="rank">${i + 1}</span>
       <span><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
-        <span class="meta">${it.author ? " · " + esc(it.author) : ""}${it.source ? " · " + esc(it.source) : ""}</span></span>
-      <span class="score">${(it.score || 0).toLocaleString("en-US")}</span>
+        <span class="meta">${it.author ? " · " + esc(it.author) : ""}${it.source ? " · " + esc(srcName(it.source)) : ""}</span></span>
+      <span class="score">${it.metric === "feed rank" ? "#" + (it.rank ?? it.score) : (it.score || 0).toLocaleString("en-US")}</span>
     </div>`).join("");
 }
 

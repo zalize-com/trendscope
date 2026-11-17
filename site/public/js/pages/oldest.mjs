@@ -9,7 +9,7 @@ for (let i = 0; i < rows.length; i++) {
     <td><b>${it.days_on_board ?? ""}</b></td>
     <td>${it.longest_streak ?? ""}</td>
     <td><a href="${it.url || "#"}">${it.title}</a></td>
-    <td>${it.source}</td>
+    <td>${srcName(it.source)}</td>
     <td class="muted">${peak}${it.top_score != null && it.top_rank != null ? " · " + it.top_score : ""}</td>`;
   tb.appendChild(tr);
 }

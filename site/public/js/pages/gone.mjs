@@ -5,7 +5,7 @@ for (let i = 0; i < d.items.length; i++) {
   const tr = document.createElement("tr");
   tr.innerHTML = `<td>${i + 1}</td>
     <td><a href="${it.url || "#"}">${it.title}</a></td>
-    <td class="src">${it.source}</td>
+    <td class="src">${srcName(it.source)}</td>
     <td>${it.rank ?? ""}</td>
     <td class="src">${it.score ?? ""} ${it.metric || ""}</td>`;
   tb.appendChild(tr);

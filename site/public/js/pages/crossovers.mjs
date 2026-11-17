@@ -21,7 +21,7 @@ function render() {
     list.map(x => `<li>
       <span class="it"><a href="${esc(x.url)}">${esc(x.title)}</a></span>
       ${x.sources.map(s => `<span class="src${state.src===s?" on":""}">${esc(s)}</span>`).join("")}
-      <span class="sc">${x.days}d · best ${fmt(x.best.score)} ${esc(x.best.metric)} on ${esc(x.best.source)} <span class="date">${esc(x.best.date)}</span></span>
+      <span class="sc">${x.days}d · best ${fmt(x.best.score)} ${esc(x.best.metric)} on ${esc(srcName(x.best.source))} <span class="date">${esc(x.best.date)}</span></span>
     </li>`).join("") + `</ol>`;
 }
 render();

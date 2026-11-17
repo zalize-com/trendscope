@@ -77,5 +77,5 @@ $("out").innerHTML =
     `<li><span class="date">${i<3?["①","②","③"][i]:i+1+"."}</span>` +
     `<span class="it"><a href="${t.url}">${esc(t.title.length>85?t.title.slice(0,85)+"…":t.title)}</a>` +
     `<a href="item.html?q=${encodeURIComponent(t.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>` +
-    `<span class="sc">${[...t.srcs].join("/")} · ${t.days.size>1?t.days.size+"d · ":""}${t.best<99?"#"+t.best+" · ":""}${fmt(t.score)}${t.comments?" · "+t.comments+"💬":""}</span></li>`
+    `<span class="sc">${[...t.srcs].map(srcName).join("/")} · ${t.days.size>1?t.days.size+"d · ":""}${t.best<99?"#"+t.best+" · ":""}${fmt(t.score)}${t.comments?" · "+t.comments+"💬":""}</span></li>`
   ).join("") + `</ol>`;

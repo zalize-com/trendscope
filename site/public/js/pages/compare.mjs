@@ -15,7 +15,7 @@ bEl.value = params.get("b") || days[days.length - 1];
 aEl.onchange = bEl.onchange = () => { history.replaceState(null,"",`?a=${aEl.value}&b=${bEl.value}`); run(); };
 
 function row(it, badge, scoreTxt, cls) {
-  return `<li><span class="it"><a href="${it.url}">${esc(it.title)}</a><span class="src">${it.source}</span><a class="traj" href="item.html?q=${encodeURIComponent(it.title)}" title="score trajectory">⤳</a></span>
+  return `<li><span class="it"><a href="${it.url}">${esc(it.title)}</a><span class="src">${srcName(it.source)}</span><a class="traj" href="item.html?q=${encodeURIComponent(it.title)}" title="score trajectory">⤳</a></span>
           <span class="sc">${badge} <span class="${cls}">${scoreTxt}</span></span></li>`;
 }
 

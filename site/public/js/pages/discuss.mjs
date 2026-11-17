@@ -12,7 +12,7 @@ $("stats").innerHTML =
   `<div class="stat"><b>${srcs.size}</b><small>sources with comments</small></div>`;
 
 function row(it, right) {
-  return `<li><span class="it"><a href="${it.url}">${esc(it.title)}</a><span class="src">${it.source}</span>` +
+  return `<li><span class="it"><a href="${it.url}">${esc(it.title)}</a><span class="src">${srcName(it.source)}</span>` +
     `<a class="trj" href="item.html?q=${encodeURIComponent(it.title)}" title="trajectory">⤳</a></span>` +
     `<span class="sc">${right}</span></li>`;
 }

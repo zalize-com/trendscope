@@ -13,7 +13,7 @@ $("stats").innerHTML =
    <div class="stat"><b>${d.repeat_appearances}</b><small>repeat appearances</small></div>`;
 
 const row = (r, badge) =>
-  `<li><span class="it"><a href="${r.url}">${esc(r.title)}</a><span class="src">${r.source}</span>
+  `<li><span class="it"><a href="${r.url}">${esc(r.title)}</a><span class="src">${srcName(r.source)}</span>
    <a href="item.html?q=${encodeURIComponent(r.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>
    <span class="sc">${badge} · ${fmt(r.top_score)} ${r.metric||""}</span></li>`;
 

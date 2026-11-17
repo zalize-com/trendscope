@@ -35,7 +35,7 @@ fetch("data/latest-lite.json", {cache:"no-cache"}).then(r=>r.ok?r:Promise.reject
     document.getElementById("out").innerHTML = (snap.topics||[]).map(t =>
       `<h2><a href="topics.html?t=${encodeURIComponent(t.topic)}">${t.topic}</a> — ${t.count} items
        <span class="spark" data-topic="${t.topic}"></span></h2>
-       <ol>${(t.examples||[]).map(e => `<li><span class="it"><a href="${e.url}">${esc(e.title)}</a> <span class="sc">${e.source}</span></span></li>`).join("")}</ol>`).join("");
+       <ol>${(t.examples||[]).map(e => `<li><span class="it"><a href="${e.url}">${esc(e.title)}</a> <span class="sc">${srcName(e.source)}</span></span></li>`).join("")}</ol>`).join("");
     // per-topic daily counts → inline sparkline
     fetch("docs/api/topics.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
       const days = d.days, topics = d.topics;
