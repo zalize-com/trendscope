@@ -33,43 +33,47 @@ const jsonld = {
 
 <div class="wrap">
 
-  <header class="hero">
-    <div class="radar" aria-hidden="true"></div>
-    <h1 class="wordmark">trend<span class="scope">scope</span></h1>
-    <p class="tagline">The developer attention dataset — updated twice daily.</p>
-    <div class="stamp" id="stamp">loading…</div>
+  <header class="pagehead">
+    <h1 class="pagetitle"><span class="radar" aria-hidden="true"></span><span><span id="board-title">Today's</span> cross-source board</span></h1>
+    <p class="pagesub" id="board-sub">The developer attention dataset — updated twice daily.</p>
     <p id="err">Could not load <code>data/latest.json</code> — the first snapshot may not have run yet.</p>
   </header>
 
-  <section class="statusbar" id="statusbar">
-    <div class="status-item" id="src-health"></div>
-    <div class="status-item" id="brief-link"></div>
-    <div class="status-item" id="hiring-pulse"></div>
-    <div class="status-item" id="month-history"></div>
-  </section>
+  <div class="dash">
+    <main class="dash-main">
+      <div class="tabs" id="tabs"></div>
+      <input id="q" type="search" placeholder="search 107k items across all sources… ⏎ = HN 19y">
+      <div id="cpk-bar" style="display:none;margin:0 0 10px">
+        <input id="cpk-input" placeholder="track an npm package — e.g. hono">
+        <a id="cpk-add" class="btn" style="margin-top:0;padding:5px 12px;cursor:pointer">+ track</a>
+        <span class="muted" style="font-size:12px;margin-left:8px">saved in your browser · npm / crates:name / gh:owner/repo</span>
+      </div>
+      <div class="board" id="board"></div>
+      <p class="board-actions"><a id="png-btn" style="cursor:pointer">⤓ export board as PNG</a> · <a id="csv-btn" style="cursor:pointer">⤓ download board as CSV</a> · <a id="md-btn" style="cursor:pointer">⧉ copy board as markdown</a> · <a id="json-btn" style="cursor:pointer">⤓ download board as JSON</a> · <a id="cmp-link" style="cursor:pointer;display:none">↔ vs previous day</a> <span class="muted">· share today's top stories anywhere</span></p>
+    </main>
 
-  <section class="topics-row">
-    <span class="topics-label">by topic</span>
-    <div class="topics" id="topics"></div>
-  </section>
-
-  <div class="daypick-row">
-    <select id="daypick" style="display:none"></select>
-    <span class="muted" id="daypick-hint"></span>
+    <aside class="rail">
+      <div class="railcard">
+        <h3>Snapshot</h3>
+        <div class="stamp" id="stamp">loading…</div>
+        <div class="daypick-row">
+          <select id="daypick" style="display:none"></select>
+          <span class="muted" id="daypick-hint"></span>
+        </div>
+      </div>
+      <div class="railcard">
+        <h3>Signals</h3>
+        <div class="status-item" id="src-health"></div>
+        <div class="status-item" id="brief-link"></div>
+        <div class="status-item" id="hiring-pulse"></div>
+        <div class="status-item" id="month-history"></div>
+      </div>
+      <div class="railcard">
+        <h3>By topic</h3>
+        <div class="topics" id="topics"></div>
+      </div>
+    </aside>
   </div>
-
-  <section>
-    <h2><span id="board-title">Today's</span> cross-source board <span class="sub" id="board-sub"></span></h2>
-    <div class="tabs" id="tabs"></div>
-    <input id="q" type="search" placeholder="search 107k items across all sources… ⏎ = HN 19y" style="width:100%;max-width:340px;margin:0 0 12px;padding:7px 12px;border-radius:8px;border:1px solid var(--border);background:var(--panel);color:var(--fg);font:inherit;font-size:13px">
-    <div id="cpk-bar" style="display:none;margin:0 0 10px">
-      <input id="cpk-input" placeholder="track an npm package — e.g. hono" style="background:var(--panel);border:1px solid var(--border);border-radius:8px;color:var(--fg);padding:7px 12px;font-size:13px;width:260px">
-      <a id="cpk-add" class="btn" style="margin-top:0;padding:5px 12px;cursor:pointer">+ track</a>
-      <span class="muted" style="font-size:12px;margin-left:8px">saved in your browser · npm / crates:name / gh:owner/repo</span>
-    </div>
-    <div class="board" id="board"></div>
-    <p style="margin:8px 0 0;font-size:12px"><a id="png-btn" style="cursor:pointer">⤓ export board as PNG</a> · <a id="csv-btn" style="cursor:pointer">⤓ download board as CSV</a> · <a id="md-btn" style="cursor:pointer">⧉ copy board as markdown</a> · <a id="json-btn" style="cursor:pointer">⤓ download board as JSON</a> · <a id="cmp-link" style="cursor:pointer;display:none">↔ vs previous day</a> <span class="muted">· share today's top stories anywhere</span></p>
-  </section>
 
   <section>
     <h2>Topic trend <span class="sub">items per day across sources</span></h2>
