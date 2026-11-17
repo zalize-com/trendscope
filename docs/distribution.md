@@ -519,3 +519,59 @@ Each post ends with the same footer:
 
 dev.to org: post under the zalize-com org blog if one exists; a personal
 account works — org attribution can be added later without breaking links.
+
+## dev.to draft #7 — "The state of RSS in 2026" (data journalism, publish-ready)
+
+Title: `We tracked 9,202 RSS feeds daily for a week — here's the state of RSS in 2026`
+
+```markdown
+---
+title: We tracked 9,202 RSS feeds daily for a week — here's the state of RSS in 2026
+published: false
+tags: rss, data, opensource, webdev
+canonical_url: https://github.com/zalize-com/trendscope
+---
+
+RSS was declared dead in 2013 when Google Reader shut down. We snapshot
+9,202 feeds every day, so instead of arguing from vibes we can show
+receipts. A week of daily data says: RSS isn't dead — it's rotting in
+place, and the interesting story is *how*.
+
+**8,977 feeds published something today.** Out of 9,202 tracked sources,
+97.6% returned items in the latest snapshot — personal blogs, security
+research, YouTube channels, newsletters. The long tail is very much alive:
+two-thirds of our registry (6,088 feeds) are personal blogs, most with a
+handful of subscribers and zero SEO strategy. They keep writing anyway.
+
+**Feeds die quietly.** 28 sources are *dormant* — the feed is live, the
+HTTP 200 is fine, but nothing has been published in 180+ days. Nobody
+unsubscribes because nothing breaks. Newsletters are the quietest quitters:
+they just stop arriving.
+
+**Feeds move and nobody notices.** We found 18 sources whose feeds
+silently relocated — new domain, new path, same content. Every RSS
+reader on earth kept polling the old URL and getting nothing. We only
+caught them by diffing "alive but empty" against manual probes.
+(`docs/zero-triage.md` has the full table; the OPML doctor tool at
+trendscope.zalize.com/tools/doctor will find moved feeds in your own
+subscription file.)
+
+**"Empty" is weather, not death.** In any given snapshot, ~1-3% of
+sources return zero items — but the *membership* of that set rotates
+daily. It's rate-limit tides, not dying blogs: GitHub Actions egress
+IPs get ASN-blocked by Cloudflare, YouTube 404s rotate through channels
+on an hourly wave, Reddit throttles per client IP. Judging a feed "dead"
+from one snapshot misdiagnoses ~90% of cases. Our rule: only flag it
+after 3+ consecutive empty rounds — that set is stable around ~108.
+
+**YouTube feeds still work.** All 44 channels we track publish valid
+Atom feeds — the least-loved feature of the platform nobody knows about.
+
+The census page updates daily (trendscope.zalize.com/state-of-rss), the
+raw health data is CC0 at `data/zerowatch.json`, and the whole registry
+is downloadable OPML — including per-lane bundles that already exclude
+the dead and dormant.
+
+github.com/zalize-com/trendscope
+```
+\n
