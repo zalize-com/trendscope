@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-17T17:58:06.497304+00:00",
+ "generated_at": "2026-11-17T20:42:50.069208+00:00",
  "latest_snapshot": "2026-11-17",
- "total": 9558,
+ "total": 9577,
  "domains": [
   {
    "hostname": "blog.google",
    "days_on_board": 6,
-   "items": 146,
+   "items": 147,
    "sources": [
     "googleblog",
     "hackernews",
@@ -24,7 +24,7 @@
   {
    "hostname": "theguardian.com",
    "days_on_board": 5,
-   "items": 223,
+   "items": 229,
    "sources": [
     "eb_guardian",
     "guardianco",
@@ -227,7 +227,7 @@
   {
    "hostname": "wired.com",
    "days_on_board": 4,
-   "items": 122,
+   "items": 126,
    "sources": [
     "azure",
     "daringfireball",
@@ -247,7 +247,7 @@
   {
    "hostname": "nytimes.com",
    "days_on_board": 4,
-   "items": 109,
+   "items": 110,
    "sources": [
     "bostocks",
     "daringfireball",
@@ -316,12 +316,13 @@
   {
    "hostname": "9to5mac.com",
    "days_on_board": 4,
-   "items": 84,
+   "items": 91,
    "sources": [
     "9to5mac",
     "br_posts_from_iamgregb",
     "daringfireball",
-    "hackernews"
+    "hackernews",
+    "hnrss"
    ],
    "top_hit": {
     "title": "Apple has new Mac app coming to make running local AI models easy",
@@ -334,7 +335,7 @@
   {
    "hostname": "github.blog",
    "days_on_board": 4,
-   "items": 81,
+   "items": 85,
    "sources": [
     "eb_github_old",
     "github_eng",
@@ -352,7 +353,7 @@
   {
    "hostname": "theverge.com",
    "days_on_board": 4,
-   "items": 73,
+   "items": 81,
    "sources": [
     "br_hearthside_by_caleb_hearth",
     "hackernews",
@@ -732,7 +733,7 @@
   {
    "hostname": "mp.weixin.qq.com",
    "days_on_board": 3,
-   "items": 812,
+   "items": 813,
    "sources": [
     "42jing",
     "alimiddle",
@@ -764,7 +765,7 @@
   {
    "hostname": "lore.kernel.org",
    "days_on_board": 3,
-   "items": 420,
+   "items": 435,
    "sources": [
     "lorekernel"
    ],
@@ -779,7 +780,7 @@
   {
    "hostname": "medium.com",
    "days_on_board": 3,
-   "items": 321,
+   "items": 322,
    "sources": [
     "airbnb",
     "betterprog",
@@ -816,7 +817,7 @@
   {
    "hostname": "investing.com",
    "days_on_board": 3,
-   "items": 250,
+   "items": 259,
    "sources": [
     "investing"
    ],
@@ -872,7 +873,7 @@
   {
    "hostname": "news.google.com",
    "days_on_board": 3,
-   "items": 191,
+   "items": 198,
    "sources": [
     "w4news"
    ],
@@ -885,25 +886,9 @@
    }
   },
   {
-   "hostname": "producthunt.com",
-   "days_on_board": 3,
-   "items": 169,
-   "sources": [
-    "br_nelson_s_linkblog",
-    "producthunt"
-   ],
-   "top_hit": {
-    "title": "MAP & GO!",
-    "url": "https://www.producthunt.com/products/expert-chase-deleted-1107920",
-    "score": 20,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "theregister.com",
    "days_on_board": 3,
-   "items": 169,
+   "items": 177,
    "sources": [
     "hackernews",
     "hnrss",
@@ -919,16 +904,17 @@
    }
   },
   {
-   "hostname": "seekingalpha.com",
+   "hostname": "producthunt.com",
    "days_on_board": 3,
-   "items": 158,
+   "items": 171,
    "sources": [
-    "seekingalpha"
+    "br_nelson_s_linkblog",
+    "producthunt"
    ],
    "top_hit": {
-    "title": "NASA advances PRIMA mission with BAE Systems as space telescope supplier",
-    "url": "https://seekingalpha.com/news/4672811-nasa-advances-prima-mission-with-bae-systems-as-space-telescope-supplier?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-    "score": 7,
+    "title": "MAP & GO!",
+    "url": "https://www.producthunt.com/products/expert-chase-deleted-1107920",
+    "score": 20,
     "metric": "feed rank",
     "date": "2026-11-15"
    }
@@ -936,7 +922,7 @@
   {
    "hostname": "timesofindia.indiatimes.com",
    "days_on_board": 3,
-   "items": 157,
+   "items": 171,
    "sources": [
     "timesofindia"
    ],
@@ -949,29 +935,24 @@
    }
   },
   {
-   "hostname": "localhost",
+   "hostname": "seekingalpha.com",
    "days_on_board": 3,
-   "items": 152,
+   "items": 165,
    "sources": [
-    "br_bevel_work",
-    "br_blog_jeffrey_moro",
-    "br_hello_i_m_clayton",
-    "br_mixed_laterality",
-    "coderyi",
-    "logtalk"
+    "seekingalpha"
    ],
    "top_hit": {
-    "title": "Everything is Free",
-    "url": "http://localhost:1313/blog/2026-11-08-everything-is-free.html",
-    "score": 15,
+    "title": "NASA advances PRIMA mission with BAE Systems as space telescope supplier",
+    "url": "https://seekingalpha.com/news/4672811-nasa-advances-prima-mission-with-bae-systems-as-space-telescope-supplier?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+    "score": 7,
     "metric": "feed rank",
-    "date": "2026-11-16"
+    "date": "2026-11-15"
    }
   },
   {
    "hostname": "unite.ai",
    "days_on_board": 3,
-   "items": 145,
+   "items": 160,
    "sources": [
     "uniteai"
    ],
@@ -984,9 +965,24 @@
    }
   },
   {
+   "hostname": "forbes.com",
+   "days_on_board": 3,
+   "items": 154,
+   "sources": [
+    "forbes"
+   ],
+   "top_hit": {
+    "title": "The Good, Bad And Ugly From The Packers’ Loss To The Vikings",
+    "url": "https://www.forbes.com/sites/robreischel/2026/11/15/the-good-bad-and-ugly-from-the-packers-loss-to-the-vikings/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "techmeme.com",
    "days_on_board": 3,
-   "items": 143,
+   "items": 152,
    "sources": [
     "techmeme"
    ],

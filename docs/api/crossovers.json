@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T17:58:06.497304+00:00",
+ "generated_at": "2026-11-17T20:42:50.069208+00:00",
  "latest_snapshot": "2026-11-17",
  "crossovers": [
   {
@@ -478,6 +478,22 @@
    }
   },
   {
+   "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+   "title": "GPT‑6.2 Astra and Sol",
+   "sources": [
+    "hackernews",
+    "hnrss",
+    "openai"
+   ],
+   "days": 1,
+   "best": {
+    "score": 700,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-17"
+   }
+  },
+  {
    "url": "https://arstechnica.com/tech-policy/2026/11/comcast-falsely-advertises-cable-internet-as-fiber-powered-att-lawsuit-says",
    "title": "Comcast's \"fiber-powered Wi-Fi\" is cable, AT&T says in false advertising case",
    "sources": [
@@ -526,6 +542,22 @@
    }
   },
   {
+   "url": "https://9to5mac.com/2026/11/17/icloud-app-store-and-other-apple-services-hit-by-ongoing-outage",
+   "title": "iCloud, App Store, and other Apple services hit by ongoing outage",
+   "sources": [
+    "9to5mac",
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 1,
+   "best": {
+    "score": 60,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-17"
+   }
+  },
+  {
    "url": "https://blog.pythonlibrary.org/2026/11/17/python-black-friday-2026-sale",
    "title": "Mike Driscoll: Python Black Friday 2026 Sale",
    "sources": [
@@ -538,6 +570,22 @@
     "score": 15,
     "metric": "feed rank",
     "source": "planetpython",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices",
+   "title": "Building the Agent Host Protocol for sessions that continue across devices",
+   "sources": [
+    "eb_github_old",
+    "github_eng",
+    "githubengineering"
+   ],
+   "days": 1,
+   "best": {
+    "score": 10,
+    "metric": "feed rank",
+    "source": "github_eng",
     "date": "2026-11-17"
    }
   },
@@ -746,51 +794,6 @@
    "days": 3,
    "best": {
     "score": 811,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-13"
-   }
-  },
-  {
-   "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud",
-   "title": "Reverse Engineering My Coway Air Purifier to Ditch the Cloud",
-   "sources": [
-    "br_posts_scott_s_blog",
-    "hackernews"
-   ],
-   "days": 3,
-   "best": {
-    "score": 780,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-12"
-   }
-  },
-  {
-   "url": "https://joshstrange.com/2026/11/09/i-saw-your-hn-comment",
-   "title": "I Saw Your HN Comment",
-   "sources": [
-    "br_josh_strange_my_personal_blog",
-    "hackernews"
-   ],
-   "days": 3,
-   "best": {
-    "score": 447,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-09"
-   }
-  },
-  {
-   "url": "https://www.joshka.net/cell-borders",
-   "title": "Terminal borders that don't cost a cell",
-   "sources": [
-    "hackernews",
-    "lobsters"
-   ],
-   "days": 3,
-   "best": {
-    "score": 396,
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-13"
