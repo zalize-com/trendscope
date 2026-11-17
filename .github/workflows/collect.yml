@@ -74,6 +74,9 @@ jobs:
       - name: Regenerate RSS feed
         run: python3 scripts/feed.py || true
 
+      - name: Per-lane RSS feeds
+        run: python3 scripts/gen_lane_feeds.py || true
+
       - name: Rebuild content index + stats
         run: |
           python3 scripts/content_index.py || true

@@ -56,6 +56,7 @@ Fetch straight from GitHub raw or the Pages site (`/trendscope/…`).
 | `docs/index.json` | JSON | Index of `docs/digest/` weekly digests, `docs/movers/` reports and `docs/brief/` daily briefs |
 | `docs/brief/YYYY-MM-DD.md` | Markdown | Rule-based daily prose brief: top story, biggest climber, new entries, streaks, source mix |
 | `feed.xml` | RSS | Daily snapshots + movers + digests as feed items |
+| `data/rss/<lane>.xml` | RSS | Per-lane feeds (hn/github/sec/yt/…): today's top 25 per lane; bundle at `data/rss/index.opml`, manifest `data/rss/index.json` |
 
 Schema for item rows: `source, rank, title, url, score, metric, comments, author, tags, captured_at` — see [data-dictionary.md](data-dictionary.md).
 
