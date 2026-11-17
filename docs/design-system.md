@@ -61,3 +61,24 @@ sources before inventing anything new):
   `Base.astro`. Page-local token overrides must target
   `:root:not([data-theme])` inside the media block **and**
   `html[data-theme="light"|"dark"]` — transform all new pages accordingly.
+
+## Type tokens (2026-11-18)
+
+| token | value | role |
+|---|---|---|
+| `--font-sans` | IBM Plex Sans (+ CJK stack) | body/UI text — one token, every page consumes |
+| `--font-display` | Bricolage Grotesque | h1/h2/brand/tagline |
+| `--font-mono` | IBM Plex Mono | tabular numbers, code, stamps |
+
+Page `body{font:...}` rules must reference `var(--font-sans)` — no inline stacks
+(53 pages were converged to the token when it was introduced).
+
+## Impeccable detector — accepted exceptions
+
+- `radial-halo` on the `.radar` dial: the radar instrument is the brand motif
+  (concentric rings + conic sweep), not a decorative page wash. Documented,
+  not a defect.
+- `em-dash-overuse` advisories: long-form copy pages; trimmed where cheap.
+- `tools/web.js font-family:arial`: intentional — Facebook OG-card mock.
+- Modeled contrast warnings that pair a light-theme token with a dark-theme
+  surface (e.g. `#0969da on #161b22`) — verified visually as false pairings.
