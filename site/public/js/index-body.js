@@ -291,7 +291,7 @@ function render(items, tab) {
         <span class="rank">${i + 1}</span>
         <span>
           <a href="${it.url}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a>
-          <span class="meta"><span class="src">${srcName(it.source)}</span>${(() => { const al = it._also || []; const shown = al.slice(0, 2).map(s => `<span class="src">+${srcName(s)}</span>`).join(""); return shown + (al.length > 2 ? `<span class="src" title="also on: ${escapeHtml(al.slice(2).map(srcName).join(", "))}">+${al.length - 2} more</span>` : ""); })()}${streak}${comments}${author}${doml}${tags}${sparkline(it.url)}<a class="delta" href="item.html?q=${encodeURIComponent(it.title)}" title="day-by-day trajectory">⤳</a></span>
+          <span class="meta"><span class="src">${srcName(it.source)}</span>${KINDS[it.url] ? `<span class="src kindchip">${KINDS[it.url]}</span>` : ""}${(() => { const al = it._also || []; const shown = al.slice(0, 2).map(s => `<span class="src">+${srcName(s)}</span>`).join(""); return shown + (al.length > 2 ? `<span class="src" title="also on: ${escapeHtml(al.slice(2).map(srcName).join(", "))}">+${al.length - 2} more</span>` : ""); })()}${streak}${comments}${author}${doml}${tags}${sparkline(it.url)}<a class="delta" href="item.html?q=${encodeURIComponent(it.title)}" title="day-by-day trajectory">⤳</a></span>
         </span>
         <span class="score">${it.metric === "feed rank" ? `<b>#${it.rank ?? it.score}</b> <span class="muted" style="font-size:11px">in feed</span>` : `<b>${fmt(it.score)}</b> <span class="muted" style="font-size:11px">${it.metric}</span>`}${delta}</span>
       </div>`);
@@ -306,7 +306,7 @@ function escapeHtml(s) {
   return d.innerHTML;
 }
 
-let ITEMS = [], INDEX = null, CUR_DATE = null, PREV_DATE = null, STREAK = new Map(), SERIES = {};
+let ITEMS = [], INDEX = null, CUR_DATE = null, PREV_DATE = null, STREAK = new Map(), SERIES = {}, KINDS = {};
 let MINI = null, MINI_DOCS = null;
 function buildMini() {
   if (MINI || typeof MiniSearch === "undefined") return;
@@ -678,6 +678,11 @@ async function main() {
     render(ITEMS, s.value);
   });
   paint();
+  // lazy kind chips (release/paper/video/...) — non-blocking, re-render once loaded
+  j("data/kind-lite.json").then(K => {
+    KINDS = K.kinds || {};
+    render(ITEMS, currentTab());
+  }).catch(() => {});
   renderRising();
   loadStreaks(); loadSeries();
 }

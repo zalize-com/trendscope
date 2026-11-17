@@ -68,6 +68,13 @@ def main():
         json.dump({"date": lite.get("date"), "counts": counts,
                    "kinds": kinds}, f, ensure_ascii=False)
     print(f"kind.json: {len(kinds)} items -> {counts}")
+    # Lite variant for lazy UI join: everything except the "post" default
+    # (~3% of items, ~60KB vs ~2MB full file).
+    notable = {u: k for u, k in kinds.items() if k != "post"}
+    with open(os.path.join(ROOT, "data", "kind-lite.json"), "w") as f:
+        json.dump({"date": lite.get("date"), "kinds": notable}, f,
+                  ensure_ascii=False)
+    print(f"kind-lite.json: {len(notable)} non-post items")
 
 
 if __name__ == "__main__":

@@ -295,6 +295,7 @@ h2 .sub { color: var(--dim); font-size: 13px; font-weight: 400; margin-left: 8px
   border: 1px solid var(--border); color: var(--dim); white-space: nowrap;
   font-weight: 500;
 }
+.src.kindchip { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
 .score { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .score b { font-weight: 600; }
 .delta { font-size: 12px; color: var(--green); display: block; }
