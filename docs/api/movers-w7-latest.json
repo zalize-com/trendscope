@@ -1,15 +1,23 @@
 {
  "a": "2026-11-10",
  "b": "2026-11-17",
- "generated": "2026-11-17 07:11 UTC",
+ "generated": "2026-11-17 08:42 UTC",
  "entered": [
+  {
+   "title": "boto3",
+   "url": "https://pypi.org/project/boto3/",
+   "source": "pypi",
+   "score": 2547486524,
+   "metric": "monthly downloads",
+   "rank": 1
+  },
   {
    "title": "pydantic",
    "url": "https://pypi.org/project/pydantic/",
    "source": "pypi",
    "score": 1139429690,
    "metric": "monthly downloads",
-   "rank": 1
+   "rank": 2
   },
   {
    "title": "click",
@@ -17,7 +25,15 @@
    "source": "pypi",
    "score": 1100967551,
    "metric": "monthly downloads",
-   "rank": 2
+   "rank": 3
+  },
+  {
+   "title": "numpy",
+   "url": "https://pypi.org/project/numpy/",
+   "source": "pypi",
+   "score": 1090453280,
+   "metric": "monthly downloads",
+   "rank": 4
   },
   {
    "title": "pytest",
@@ -25,7 +41,7 @@
    "source": "pypi",
    "score": 959443999,
    "metric": "monthly downloads",
-   "rank": 3
+   "rank": 5
   },
   {
    "title": "hashbrown",
@@ -57,7 +73,7 @@
    "source": "pypi",
    "score": 794931619,
    "metric": "monthly downloads",
-   "rank": 4
+   "rank": 6
   },
   {
    "title": "rand",
@@ -89,7 +105,7 @@
    "source": "pypi",
    "score": 563019498,
    "metric": "monthly downloads",
-   "rank": 5
+   "rank": 7
   },
   {
    "title": "thiserror",
@@ -146,22 +162,6 @@
    "score": 492030608,
    "metric": "recent downloads",
    "rank": 13
-  },
-  {
-   "title": "proc-macro2",
-   "url": "https://crates.io/crates/proc-macro2",
-   "source": "crates",
-   "score": 487748392,
-   "metric": "recent downloads",
-   "rank": 14
-  },
-  {
-   "title": "memchr",
-   "url": "https://crates.io/crates/memchr",
-   "source": "crates",
-   "score": 473278823,
-   "metric": "recent downloads",
-   "rank": 15
   }
  ],
  "left": [

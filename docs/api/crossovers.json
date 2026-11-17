@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T07:11:21.392965+00:00",
+ "generated_at": "2026-11-17T08:43:00.530856+00:00",
  "latest_snapshot": "2026-11-17",
  "crossovers": [
   {
@@ -446,6 +446,22 @@
    }
   },
   {
+   "url": "https://support.apple.com/en-us/149699",
+   "title": "If an App Asks for Full Disk Access or System and App Protection Override",
+   "sources": [
+    "daringfireball",
+    "hackernews",
+    "hnrss"
+   ],
+   "days": 1,
+   "best": {
+    "score": 105,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-17"
+   }
+  },
+  {
    "url": "https://deepmind.google/blog/introducing-alphaproof-code",
    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
    "sources": [
@@ -773,21 +789,6 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-08"
-   }
-  },
-  {
-   "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
-   "title": "Understanding Positional Embeddings in Modern LLMs",
-   "sources": [
-    "aheadofai",
-    "hackernews"
-   ],
-   "days": 3,
-   "best": {
-    "score": 192,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-16"
    }
   }
  ]
