@@ -163,6 +163,12 @@ _rss2json_lock = threading.Lock()
 # empty set: tide victims self-heal when the rate-limit wave rotates, so
 # spending scarce proxy quota on them wastes ~200 calls/run.
 _RESCUE_KEYS = set()
+# Keys eligible for the own-Worker rescue tier, populated in main() from
+# latest.json's empty set (prev_empty). The worker's free tier (100k/day)
+# dwarfs the ~300/day we actually spend, so tide victims get rescued in the
+# same round instead of waiting for the wave to rotate. External free
+# proxies (~140/day shared caller-IP quota) stay gated to _RESCUE_KEYS.
+_WORKER_KEYS = set()
 
 
 class _RedditThrottle(urllib.request.BaseHandler):
@@ -118911,20 +118917,12 @@ def _make_feed_fetcher(key, label, feed, home):
                     break
         _err_code = getattr(last_err, "code", None)
         if root is None and (_err_code in (403, 406, 429, 404) or _err_code is None):
-            # Only persistent-empty sources may spend proxy quota — first-round
-            # tide victims skip the proxy entirely and self-heal next wave.
-            if _RESCUE_KEYS and key not in _RESCUE_KEYS:
+            # Two-tier gating: the own-Worker lane (100k/day) opens to every
+            # last-round empty; the scarce external proxies stay persistent-
+            # gated below. Sources empty in neither set skip rescue entirely.
+            if (_WORKER_KEYS and _RESCUE_KEYS
+                    and key not in _WORKER_KEYS and key not in _RESCUE_KEYS):
                 return []
-            # rss2json's free tier is a scarce daily quota — burn it only
-            # under a per-run cap, and let main() run rescue-worthy sources
-            # first so persistently-blocked lanes win the budget over
-            # first-round tide victims (which self-heal next wave).
-            with _rss2json_lock:
-                if _rss2json_used[0] >= _RSS2JSON_BUDGET:
-                    print(f"  [warn] {key} rss2json fallback skipped: budget "
-                          f"{_RSS2JSON_BUDGET}/run exhausted", file=sys.stderr)
-                    return []
-                _rss2json_used[0] += 1
             # Primary rescue lane: our own Cloudflare Worker
             # (opml-doctor.zalize.workers.dev) — CF edge egress is immune to
             # every block shape we've met (substack ASN-403, YouTube 404 waves,
@@ -118963,6 +118961,20 @@ def _make_feed_fetcher(key, label, feed, home):
             except Exception as e:
                 print(f"  [warn] {key} worker fallback failed: {e}",
                       file=sys.stderr)
+            # External proxies: only persistent-empty sources may spend this
+            # quota — first-round tide victims self-heal next wave.
+            if _RESCUE_KEYS and key not in _RESCUE_KEYS:
+                return []
+            # rss2json's free tier is a scarce daily quota — burn it only
+            # under a per-run cap, and let main() run rescue-worthy sources
+            # first so persistently-blocked lanes win the budget over
+            # first-round tide victims (which self-heal next wave).
+            with _rss2json_lock:
+                if _rss2json_used[0] >= _RSS2JSON_BUDGET:
+                    print(f"  [warn] {key} rss2json fallback skipped: budget "
+                          f"{_RSS2JSON_BUDGET}/run exhausted", file=sys.stderr)
+                    return []
+                _rss2json_used[0] += 1
             # Cloudflare-style 403 waves block the Actions egress IP for some
             # hosts (substack is the big one); YouTube's rotating rate-limit
             # wave presents as 404 (yt_ lane went 0/44 in one run while the
@@ -122206,14 +122218,17 @@ def main():
             _RESCUE_KEYS.update(json.load(f).get("persistent_empty", []))
     except Exception:
         pass
+    # Worker tier: every source empty in the last snapshot qualifies
+    # (prev_empty — includes tide victims, who get rescued the same round).
+    try:
+        with open(os.path.join(DATA_DIR, "latest.json")) as f:
+            _WORKER_KEYS.update(
+                k for k, v in json.load(f).get("items", {}).items()
+                if not v)
+    except Exception:
+        pass
     if not _RESCUE_KEYS:
-        try:
-            with open(os.path.join(DATA_DIR, "latest.json")) as f:
-                _RESCUE_KEYS.update(
-                    k for k, v in json.load(f).get("items", {}).items()
-                    if not v)
-        except Exception:
-            pass
+        _RESCUE_KEYS.update(_WORKER_KEYS)
     if _RESCUE_KEYS:
         fetchers = dict(
             sorted(fetchers.items(), key=lambda kv: kv[0] not in _RESCUE_KEYS))
