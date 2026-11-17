@@ -46,7 +46,8 @@ const path = '/oldest.html';
   :root:not([data-theme]) { --bg:#0d1117;--fg:#e6edf3;--dim:#8b949e;--line:#30363d;--acc:#58a6ff }
 }
 html[data-theme="dark"] { --bg:#0d1117;--fg:#e6edf3;--dim:#8b949e;--line:#30363d;--acc:#58a6ff }
-body{margin:0 auto;max-width:760px;padding:16px;background:var(--bg);color:var(--fg);font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+  body > :not(.topbar):not(.skiplink) { max-width: 760px; margin-left: auto; margin-right: auto; }
 a{color:var(--acc)}
 h1{font-size:22px;margin:4px 0}
 h2{font-size:15px;margin:20px 0 6px}
