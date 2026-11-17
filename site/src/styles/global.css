@@ -206,12 +206,27 @@ header.hero { text-align: center; padding: 40px 0 24px; }
 }
 .stamp b { color: var(--green); font-weight: 600; }
 
-.topics { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 20px 0 4px; }
+/* KPI tiles — numbers are the interface (shadcn/Tremor metric-card pattern) */
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 0 0 14px; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; }
+.kpi .kpi-label { display: block; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--dim); font-weight: 600; margin-bottom: 3px; }
+.kpi .num { font-size: 20px; font-weight: 650; }
+.kpi .num.hot { color: var(--orange); }
+@media (max-width: 620px) { .kpis { grid-template-columns: 1fr 1fr; } }
+
+/* topic bars — count = fill width, mono number right-aligned */
+.topics { display: grid; gap: 4px; margin: 2px 0 0; }
 .topic-chip {
-  padding: 5px 13px; border-radius: var(--radius-pill); font-size: 13px;
+  position: relative; display: flex; justify-content: space-between; align-items: center;
+  gap: 8px; padding: 5px 9px; border-radius: 7px; font-size: 12.5px; overflow: hidden;
   background: var(--panel); border: 1px solid var(--border); color: var(--dim);
   text-decoration: none; transition: border-color .15s, color .15s;
 }
+.topic-chip::before {
+  content: ""; position: absolute; inset: 0; width: calc(var(--p, 0) * 1%);
+  background: var(--accent); opacity: .09;
+}
+.topic-chip > * { position: relative; }
 a.topic-chip:hover { border-color: var(--accent); color: var(--fg); text-decoration: none; }
 .topic-chip b { color: var(--fg); font-weight: 650; }
 

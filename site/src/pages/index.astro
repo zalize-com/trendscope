@@ -44,6 +44,12 @@ const jsonld = {
 
   <div class="dash">
     <main class="dash-main">
+      <div class="kpis">
+        <div class="kpi"><span class="kpi-label">Items</span><span class="num" id="kpi-items">—</span></div>
+        <div class="kpi"><span class="kpi-label">Sources</span><span class="num" id="kpi-srcs">—</span></div>
+        <div class="kpi"><span class="kpi-label">Fresh vs prev</span><span class="num" id="kpi-fresh">—</span></div>
+        <div class="kpi"><span class="kpi-label">Crossovers</span><span class="num" id="kpi-cross">—</span></div>
+      </div>
       <div class="tabs" id="tabs"></div>
       <input id="q" class="d-input d-input-bordered w-full" type="search" placeholder="search 107k items across all sources… ⏎ = HN 19y">
       <div id="cpk-bar" style="display:none;margin:0 0 10px">

@@ -217,6 +217,8 @@ function render(items, tab) {
     if (cross) {
       const el = document.getElementById("board-sub");
       if (el && !el.dataset.cross) { el.innerHTML += ` · <b>${cross} crossovers</b>`; el.dataset.cross = "1"; }
+      const kc = document.getElementById("kpi-cross");
+      if (kc) kc.textContent = cross.toLocaleString("en-US");
     }
     // Diversity caps: a high-frequency lane (e.g. 130 security blogs) must not
     // crowd the mixed board — max 4 per lane prefix and max 2 per source.
@@ -381,10 +383,12 @@ function paint() {
   const isToday = INDEX && date === INDEX.snapshots[INDEX.snapshots.length - 1];
   document.getElementById("board-title").textContent = isToday ? "Today's" : `${date}`;
   let fresh = "";
+  let nFresh = 0, pctFresh = 0;
   if (YDAY && YDAY.items) {
     const seen = new Set(Object.values(YDAY.items).flat().map(i => i.url));
     const n = Object.values(SNAP.items || {}).flat().filter(i => !seen.has(i.url)).length;
-    if (n) fresh = ` · <b style="color:var(--orange)">${n} fresh</b> <span style="color:var(--dim)">(${Math.round(100*n/total)}% new)</span>`;
+    if (n) { nFresh = n; pctFresh = Math.round(100*n/total);
+      fresh = ` · <b style="color:var(--orange)">${n} fresh</b> <span style="color:var(--dim)">(${pctFresh}% new)</span>`; }
   }
   // new-since-your-last-visit chip (today's board only)
   const urlsNow = new Set(Object.values(SNAP.items || {}).flat().map(i => i.url));
@@ -404,8 +408,17 @@ function paint() {
   delete bsub.dataset.cross;
   bsub.innerHTML =
     `${total} items across ${nsrc} source${nsrc === 1 ? "" : "s"}${fresh}`;
-  document.getElementById("topics").innerHTML = (SNAP.topics || [])
-    .map(t => `<a class="topic-chip" href="topics.html?t=${encodeURIComponent(t.topic)}">${t.topic} <b>${t.count}</b></a>`).join("");
+  const kpi = (id, v) => { const e = document.getElementById(id); if (e) e.textContent = v; };
+  kpi("kpi-items", total.toLocaleString("en-US"));
+  kpi("kpi-srcs", nsrc.toLocaleString("en-US"));
+  kpi("kpi-cross", "—");
+  const kf = document.getElementById("kpi-fresh");
+  if (kf) { kf.textContent = nFresh ? `${nFresh.toLocaleString("en-US")} · ${pctFresh}%` : "—";
+    kf.classList.toggle("hot", nFresh > 0); }
+  const tps = SNAP.topics || [];
+  const tpMax = Math.max(...tps.map(t => t.count), 1);
+  document.getElementById("topics").innerHTML = tps
+    .map(t => `<a class="topic-chip" style="--p:${Math.round(t.count / tpMax * 100)}" href="topics.html?t=${encodeURIComponent(t.topic)}"><span>${t.topic}</span><b>${t.count}</b></a>`).join("");
 
   ITEMS = Object.entries(SNAP.items || {});
   paintTabs();
