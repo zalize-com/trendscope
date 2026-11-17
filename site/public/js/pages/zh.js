@@ -16,6 +16,7 @@ const ZH_LABEL = {
 function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML;}
 async function main(){
   let r=await fetch('data/latest-lite.json'); if(!r.ok) r=await fetch('data/latest.json'); const snap=await r.json();
+  await loadKinds();
   const have=[...ZH].filter(k=>snap.items[k]?.length);
   document.getElementById('srcs').innerHTML=have.map(k=>
     `<a class="chip" href="zh-source.html?k=${k}" style="color:inherit">${esc(ZH_LABEL[k]||k)} <b>${snap.items[k].length}</b></a>`).join('');
@@ -26,7 +27,7 @@ async function main(){
   board.innerHTML=list.map((it,i)=>`
     <div class="row"><span class="rank">${i+1}</span>
       <span><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
-        <span class="meta"><span class="src">${esc(ZH_LABEL[it.source]||it.source)}</span>${it.author?' · '+esc(it.author):''}</span></span>
+        <span class="meta"><span class="src">${esc(ZH_LABEL[it.source]||it.source)}</span>${kindChip(it.url)}${it.author?' · '+esc(it.author):''}</span></span>
     </div>`).join('');
 }
 main().catch(e=>{document.getElementById('board').innerHTML='<p class="muted">load failed: '+e+'</p>';});

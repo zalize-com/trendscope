@@ -22,6 +22,7 @@ async function main(){
  let snap,srcs;
  try{
   let r=await fetch('data/latest-lite.json');if(!r.ok)r=await fetch('data/latest.json');snap=await r.json();
+  await loadKinds();
   srcs=await fetch('data/sources.json').then(r=>r.json()).catch(()=>({}));
  }catch(e){document.getElementById('err').textContent='数据加载失败';return;}
  const items=(snap.items||{})[k]||[];
@@ -32,7 +33,7 @@ async function main(){
   `<div><b style="font-size:14px">${esc(s.type||'zh')}</b><small>lane</small></div>`;
  if(!items.length){document.getElementById('err').textContent='今日无条目——该源本轮未更新或 feed 暂不可达';return;}
  document.getElementById('list').innerHTML=items.map((it,i)=>
-  `<li><span class="rk">${i+1}</span><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>`+
+  `<li><span class="rk">${i+1}</span><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>${kindChip(it.url)}`+
   `<span class="sc">${esc(scoreText(it))}</span></li>`).join('');
 }
 main();
