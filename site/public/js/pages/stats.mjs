@@ -1,21 +1,6 @@
 const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
 const fmt = n => n >= 1e6 ? (n/1e6).toFixed(1)+"M" : n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
 
-function parseCSV(text) {
-  const rows = []; let field = "", row = [], inQ = false;
-  for (let i = 0; i < text.length; i++) {
-    const c = text[i];
-    if (inQ) {
-      if (c === '"') { if (text[i+1] === '"') { field += '"'; i++; } else inQ = false; }
-      else field += c;
-    } else if (c === '"') inQ = true;
-    else if (c === ",") { row.push(field); field = ""; }
-    else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
-    else if (c !== "\r") field += c;
-  }
-  if (field || row.length) { row.push(field); rows.push(row); }
-  return rows;
-}
 
 const [ser, stats] = await Promise.all([
   fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json()),
@@ -34,6 +19,14 @@ for (const it of Object.values(ser.items)) {
 const days = Object.keys(perDay).sort();
 const counts = days.map(d => perDay[d]);
 let cum = 0; const cums = counts.map(v => cum += v);
+
+const dayUrlMap = {}, perDaySrc = {};
+for (const [url, it] of Object.entries(ser.items)) {
+  for (const d of Object.keys(it.days)) {
+    (dayUrlMap[d] ||= new Set()).add(url);
+    (perDaySrc[d] ||= {})[it.source] = (perDaySrc[d][it.source] || 0) + 1;
+  }
+}
 
 document.getElementById("stats").innerHTML = `
   <div class="stat"><b>${fmt(nrows)}</b><small>total rows</small></div>
@@ -65,7 +58,7 @@ lineChart("cum", cums, "#3fb950", true);
 {
   const seen = new Set();
   const nov = days.map(d => {
-    const dayUrls = new Set(rows.slice(1).filter(r => r[ci.date] === d && r[ci.url]).map(r => r[ci.url]));
+    const dayUrls = dayUrlMap[d] || new Set();
     const fresh = [...dayUrls].filter(u => !seen.has(u)).length;
     dayUrls.forEach(u => seen.add(u));
     return dayUrls.size ? Math.round(100 * fresh / dayUrls.size) : 0;
@@ -100,11 +93,7 @@ document.getElementById("donut").innerHTML =
 
 // stacked source mix per day
 {
-  const perDaySrc = {};
-  for (const r of rows.slice(1)) {
-    if (!r[ci.date]) continue;
-    (perDaySrc[r[ci.date]] ||= {})[r[ci.source]] = (perDaySrc[r[ci.date]][r[ci.source]] || 0) + 1;
-  }
+
   const W = 820, H = 220, P = 30;
   const maxTot = Math.max(...days.map(d => perDay[d] || 0), 1);
   const bw = Math.min(60, (W - 2*P) / days.length * 0.7);
@@ -129,10 +118,12 @@ document.getElementById("donut").innerHTML =
 const ROLLING = new Set(["npm","pypi","crates"]);
 const WD = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 const wCount = [0,0,0,0,0,0,0], wScore = [0,0,0,0,0,0,0], wDays = [new Set(),new Set(),new Set(),new Set(),new Set(),new Set(),new Set()];
-for (const r of rows.slice(1)) {
-  if (ROLLING.has(r[ci.source])) continue;
-  const w = new Date(r[ci.date] + "T00:00:00Z").getUTCDay();
-  wCount[w]++; wScore[w] += Number(r[ci.score]) || 0; wDays[w].add(r[ci.date]);
+for (const it of Object.values(ser.items)) {
+  if (ROLLING.has(it.source)) continue;
+  for (const [d, v] of Object.entries(it.days)) {
+    const w = new Date(d + "T00:00:00Z").getUTCDay();
+    wCount[w]++; wScore[w] += Number(v[0]) || 0; wDays[w].add(d);
+  }
 }
 const wAvg = wScore.map((s,i) => wDays[i].size ? s/wDays[i].size : 0);
 {
