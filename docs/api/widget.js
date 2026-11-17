@@ -36,7 +36,7 @@
           const d = await (await fetch(`${API}/docs/api/risers.json`)).json();
           items = (d.single_day_spikes || []).map(s => s.item || s);
         } else {
-          const d = await (await fetch(`${API}/data/latest.json`)).json();
+          const d = await (await fetch(`${API}/data/latest-lite.json`)).json();
           items = Array.isArray(d.items) ? d.items : Object.values(d.items || {}).flat();
           items = items.filter(i => !["npm", "pypi", "crates"].includes(i.source));
         }
