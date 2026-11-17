@@ -1,7 +1,7 @@
 {
  "a": "2026-11-10",
  "b": "2026-11-17",
- "generated": "2026-11-17 08:42 UTC",
+ "generated": "2026-11-17 16:16 UTC",
  "entered": [
   {
    "title": "boto3",
@@ -12,12 +12,20 @@
    "rank": 1
   },
   {
+   "title": "requests",
+   "url": "https://pypi.org/project/requests/",
+   "source": "pypi",
+   "score": 1471523858,
+   "metric": "monthly downloads",
+   "rank": 2
+  },
+  {
    "title": "pydantic",
    "url": "https://pypi.org/project/pydantic/",
    "source": "pypi",
    "score": 1139429690,
    "metric": "monthly downloads",
-   "rank": 2
+   "rank": 3
   },
   {
    "title": "click",
@@ -25,7 +33,7 @@
    "source": "pypi",
    "score": 1100967551,
    "metric": "monthly downloads",
-   "rank": 3
+   "rank": 4
   },
   {
    "title": "numpy",
@@ -33,7 +41,7 @@
    "source": "pypi",
    "score": 1090453280,
    "metric": "monthly downloads",
-   "rank": 4
+   "rank": 5
   },
   {
    "title": "pytest",
@@ -41,13 +49,13 @@
    "source": "pypi",
    "score": 959443999,
    "metric": "monthly downloads",
-   "rank": 5
+   "rank": 6
   },
   {
    "title": "hashbrown",
    "url": "https://crates.io/crates/hashbrown",
    "source": "crates",
-   "score": 917700890,
+   "score": 921252578,
    "metric": "recent downloads",
    "rank": 1
   },
@@ -55,7 +63,7 @@
    "title": "syn",
    "url": "https://crates.io/crates/syn",
    "source": "crates",
-   "score": 907014061,
+   "score": 910762629,
    "metric": "recent downloads",
    "rank": 2
   },
@@ -63,7 +71,7 @@
    "title": "getrandom",
    "url": "https://crates.io/crates/getrandom",
    "source": "crates",
-   "score": 827085412,
+   "score": 830428565,
    "metric": "recent downloads",
    "rank": 3
   },
@@ -73,13 +81,13 @@
    "source": "pypi",
    "score": 794931619,
    "metric": "monthly downloads",
-   "rank": 6
+   "rank": 7
   },
   {
    "title": "rand",
    "url": "https://crates.io/crates/rand",
    "source": "crates",
-   "score": 647190482,
+   "score": 649758563,
    "metric": "recent downloads",
    "rank": 4
   },
@@ -87,7 +95,7 @@
    "title": "rand_core",
    "url": "https://crates.io/crates/rand_core",
    "source": "crates",
-   "score": 645245445,
+   "score": 647840082,
    "metric": "recent downloads",
    "rank": 5
   },
@@ -95,7 +103,7 @@
    "title": "bitflags",
    "url": "https://crates.io/crates/bitflags",
    "source": "crates",
-   "score": 600956432,
+   "score": 603299011,
    "metric": "recent downloads",
    "rank": 6
   },
@@ -105,37 +113,45 @@
    "source": "pypi",
    "score": 563019498,
    "metric": "monthly downloads",
-   "rank": 7
-  },
-  {
-   "title": "thiserror",
-   "url": "https://crates.io/crates/thiserror",
-   "source": "crates",
-   "score": 537520931,
-   "metric": "recent downloads",
-   "rank": 7
-  },
-  {
-   "title": "thiserror-impl",
-   "url": "https://crates.io/crates/thiserror-impl",
-   "source": "crates",
-   "score": 537446733,
-   "metric": "recent downloads",
    "rank": 8
   },
   {
    "title": "base64",
    "url": "https://crates.io/crates/base64",
    "source": "crates",
-   "score": 537439340,
+   "score": 539714806,
    "metric": "recent downloads",
+   "rank": 7
+  },
+  {
+   "title": "thiserror",
+   "url": "https://crates.io/crates/thiserror",
+   "source": "crates",
+   "score": 539700564,
+   "metric": "recent downloads",
+   "rank": 8
+  },
+  {
+   "title": "thiserror-impl",
+   "url": "https://crates.io/crates/thiserror-impl",
+   "source": "crates",
+   "score": 539626332,
+   "metric": "recent downloads",
+   "rank": 9
+  },
+  {
+   "title": "fastapi",
+   "url": "https://pypi.org/project/fastapi/",
+   "source": "pypi",
+   "score": 532877425,
+   "metric": "monthly downloads",
    "rank": 9
   },
   {
    "title": "windows-sys",
    "url": "https://crates.io/crates/windows-sys",
    "source": "crates",
-   "score": 522123504,
+   "score": 524055084,
    "metric": "recent downloads",
    "rank": 10
   },
@@ -143,25 +159,9 @@
    "title": "quote",
    "url": "https://crates.io/crates/quote",
    "source": "crates",
-   "score": 495059105,
+   "score": 497024663,
    "metric": "recent downloads",
    "rank": 11
-  },
-  {
-   "title": "libc",
-   "url": "https://crates.io/crates/libc",
-   "source": "crates",
-   "score": 493689382,
-   "metric": "recent downloads",
-   "rank": 12
-  },
-  {
-   "title": "indexmap",
-   "url": "https://crates.io/crates/indexmap",
-   "source": "crates",
-   "score": 492030608,
-   "metric": "recent downloads",
-   "rank": 13
   }
  ],
  "left": [

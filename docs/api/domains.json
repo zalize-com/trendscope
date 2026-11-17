@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-17T08:43:00.530856+00:00",
+ "generated_at": "2026-11-17T16:16:49.922955+00:00",
  "latest_snapshot": "2026-11-17",
- "total": 9516,
+ "total": 9541,
  "domains": [
   {
    "hostname": "blog.google",
    "days_on_board": 6,
-   "items": 135,
+   "items": 138,
    "sources": [
     "googleblog",
     "hackernews",
@@ -24,7 +24,7 @@
   {
    "hostname": "theguardian.com",
    "days_on_board": 5,
-   "items": 204,
+   "items": 219,
    "sources": [
     "eb_guardian",
     "guardianco",
@@ -79,7 +79,7 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 4,
-   "items": 2379,
+   "items": 2430,
    "sources": [
     "br_homepage_piotr_migda",
     "br_nelson_s_linkblog",
@@ -147,7 +147,7 @@
   {
    "hostname": "youtube.com",
    "days_on_board": 4,
-   "items": 2002,
+   "items": 2007,
    "sources": [
     "br_blog_ankush_menat",
     "br_dr_j_engineering_leadership_software_dev",
@@ -227,7 +227,7 @@
   {
    "hostname": "wired.com",
    "days_on_board": 4,
-   "items": 108,
+   "items": 121,
    "sources": [
     "azure",
     "daringfireball",
@@ -242,6 +242,25 @@
     "score": 811,
     "metric": "points",
     "date": "2026-11-13"
+   }
+  },
+  {
+   "hostname": "nytimes.com",
+   "days_on_board": 4,
+   "items": 105,
+   "sources": [
+    "bostocks",
+    "daringfireball",
+    "hackernews",
+    "hnrss",
+    "rss4"
+   ],
+   "top_hit": {
+    "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+    "url": "https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
+    "score": 595,
+    "metric": "points",
+    "date": "2026-11-17"
    }
   },
   {
@@ -280,7 +299,7 @@
   {
    "hostname": "arxiv.org",
    "days_on_board": 4,
-   "items": 94,
+   "items": 95,
    "sources": [
     "arxiv",
     "evanmiller",
@@ -292,25 +311,6 @@
     "score": 15,
     "metric": "arxiv recent",
     "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "nytimes.com",
-   "days_on_board": 4,
-   "items": 93,
-   "sources": [
-    "bostocks",
-    "daringfireball",
-    "hackernews",
-    "hnrss",
-    "rss4"
-   ],
-   "top_hit": {
-    "title": "Jensen Huang said to have had relationship with executive who reports to him",
-    "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
-    "score": 410,
-    "metric": "points",
-    "date": "2026-11-11"
    }
   },
   {
@@ -334,7 +334,7 @@
   {
    "hostname": "9to5mac.com",
    "days_on_board": 4,
-   "items": 68,
+   "items": 80,
    "sources": [
     "9to5mac",
     "br_posts_from_iamgregb",
@@ -352,7 +352,7 @@
   {
    "hostname": "theverge.com",
    "days_on_board": 4,
-   "items": 58,
+   "items": 67,
    "sources": [
     "br_hearthside_by_caleb_hearth",
     "hackernews",
@@ -364,6 +364,22 @@
     "score": 378,
     "metric": "points",
     "date": "2026-11-11"
+   }
+  },
+  {
+   "hostname": "lwn.net",
+   "days_on_board": 4,
+   "items": 53,
+   "sources": [
+    "hackernews",
+    "lwn"
+   ],
+   "top_hit": {
+    "title": "Synaptics patent claims stop work on DisplayLink drivers",
+    "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+    "score": 491,
+    "metric": "points",
+    "date": "2026-11-10"
    }
   },
   {
@@ -401,22 +417,6 @@
    }
   },
   {
-   "hostname": "lwn.net",
-   "days_on_board": 4,
-   "items": 50,
-   "sources": [
-    "hackernews",
-    "lwn"
-   ],
-   "top_hit": {
-    "title": "Synaptics patent claims stop work on DisplayLink drivers",
-    "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
-    "score": 491,
-    "metric": "points",
-    "date": "2026-11-10"
-   }
-  },
-  {
    "hostname": "cnn.com",
    "days_on_board": 4,
    "items": 50,
@@ -436,7 +436,7 @@
   {
    "hostname": "eff.org",
    "days_on_board": 4,
-   "items": 47,
+   "items": 48,
    "sources": [
     "eff",
     "hackernews"
@@ -716,7 +716,7 @@
   {
    "hostname": "mp.weixin.qq.com",
    "days_on_board": 3,
-   "items": 797,
+   "items": 811,
    "sources": [
     "42jing",
     "alimiddle",
@@ -748,7 +748,7 @@
   {
    "hostname": "lore.kernel.org",
    "days_on_board": 3,
-   "items": 375,
+   "items": 390,
    "sources": [
     "lorekernel"
    ],
@@ -800,7 +800,7 @@
   {
    "hostname": "investing.com",
    "days_on_board": 3,
-   "items": 221,
+   "items": 231,
    "sources": [
     "investing"
    ],
@@ -854,9 +854,24 @@
    }
   },
   {
+   "hostname": "news.google.com",
+   "days_on_board": 3,
+   "items": 173,
+   "sources": [
+    "w4news"
+   ],
+   "top_hit": {
+    "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his silence on breakdown - AP News",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUjU5a3ljR1FocjlKQnRVS21kY1kwR3R4bEZvdUc4VExhbnc2NjZrU0ZfRS1iMkoxcGthaUV4a19MTlNsR2JFMlFqZDN0Y1JiejlNWUFUWjAyWTl3RFNXX0ZvbkNmX0l1elhVZndMd3pQSlQtbk1RYzBMT2tmOTJuaTlwUm5FQmdRODFJQTk4OWV5MlpScVhhc1BEWWotS1E?oc=5",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "producthunt.com",
    "days_on_board": 3,
-   "items": 158,
+   "items": 166,
    "sources": [
     "br_nelson_s_linkblog",
     "producthunt"
@@ -870,18 +885,21 @@
    }
   },
   {
-   "hostname": "news.google.com",
+   "hostname": "theregister.com",
    "days_on_board": 3,
-   "items": 158,
+   "items": 161,
    "sources": [
-    "w4news"
+    "hackernews",
+    "hnrss",
+    "sec_the_register",
+    "theregister"
    ],
    "top_hit": {
-    "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his silence on breakdown - AP News",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUjU5a3ljR1FocjlKQnRVS21kY1kwR3R4bEZvdUc4VExhbnc2NjZrU0ZfRS1iMkoxcGthaUV4a19MTlNsR2JFMlFqZDN0Y1JiejlNWUFUWjAyWTl3RFNXX0ZvbkNmX0l1elhVZndMd3pQSlQtbk1RYzBMT2tmOTJuaTlwUm5FQmdRODFJQTk4OWV5MlpScVhhc1BEWWotS1E?oc=5",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
+    "title": "Microsoft blames monster email outage on software defect introduced in July fix",
+    "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+    "score": 220,
+    "metric": "points",
+    "date": "2026-11-17"
    }
   },
   {
@@ -905,42 +923,9 @@
    }
   },
   {
-   "hostname": "theregister.com",
-   "days_on_board": 3,
-   "items": 143,
-   "sources": [
-    "hackernews",
-    "hnrss",
-    "sec_the_register",
-    "theregister"
-   ],
-   "top_hit": {
-    "title": "Microsoft blames monster email outage on software defect introduced in July fix",
-    "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
-    "score": 220,
-    "metric": "points",
-    "date": "2026-11-17"
-   }
-  },
-  {
-   "hostname": "seekingalpha.com",
-   "days_on_board": 3,
-   "items": 137,
-   "sources": [
-    "seekingalpha"
-   ],
-   "top_hit": {
-    "title": "NASA advances PRIMA mission with BAE Systems as space telescope supplier",
-    "url": "https://seekingalpha.com/news/4672811-nasa-advances-prima-mission-with-bae-systems-as-space-telescope-supplier?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-    "score": 7,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "timesofindia.indiatimes.com",
    "days_on_board": 3,
-   "items": 135,
+   "items": 150,
    "sources": [
     "timesofindia"
    ],
@@ -953,18 +938,16 @@
    }
   },
   {
-   "hostname": "aws.amazon.com",
+   "hostname": "seekingalpha.com",
    "days_on_board": 3,
-   "items": 121,
+   "items": 144,
    "sources": [
-    "aws_blog",
-    "awsarchitectureblo",
-    "sec_aws_security"
+    "seekingalpha"
    ],
    "top_hit": {
-    "title": "Test your applications against AWS locally with AWS Emulator",
-    "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/",
-    "score": 15,
+    "title": "NASA advances PRIMA mission with BAE Systems as space telescope supplier",
+    "url": "https://seekingalpha.com/news/4672811-nasa-advances-prima-mission-with-bae-systems-as-space-telescope-supplier?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+    "score": 7,
     "metric": "feed rank",
     "date": "2026-11-15"
    }
@@ -972,7 +955,7 @@
   {
    "hostname": "unite.ai",
    "days_on_board": 3,
-   "items": 120,
+   "items": 135,
    "sources": [
     "uniteai"
    ],
@@ -987,7 +970,7 @@
   {
    "hostname": "techmeme.com",
    "days_on_board": 3,
-   "items": 119,
+   "items": 134,
    "sources": [
     "techmeme"
    ],
@@ -995,6 +978,21 @@
     "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A (Tamara Djurickovic/Tech.eu)",
     "url": "https://www.techmeme.com/261115/p3#a261115p3",
     "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "hostname": "blog.logrocket.com",
+   "days_on_board": 3,
+   "items": 128,
+   "sources": [
+    "bloglogrocket"
+   ],
+   "top_hit": {
+    "title": "Top 5 AI code review tools in 2026",
+    "url": "https://blog.logrocket.com/ai-code-review-tools-2026/",
+    "score": 12,
     "metric": "feed rank",
     "date": "2026-11-15"
    }
