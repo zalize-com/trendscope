@@ -28,7 +28,9 @@ const path = '/year.html';
 :root { --bg:#0d1117; --fg:#e6edf3; --dim:#8b98a5; --card:#161b22; --line:#30363d;
           --accent:#58a6ff; --orange:#f0883e; --green:#3fb950; }
   @media (prefers-color-scheme: light) {
-    :root { --bg:#fff; --fg:#1f2328; --dim:#57606a; --card:#f6f8fa; --line:#d0d7de; } }
+  :root:not([data-theme]) { --bg:#fff; --fg:#1f2328; --dim:#57606a; --card:#f6f8fa; --line:#d0d7de; }
+}
+html[data-theme="light"] { --bg:#fff; --fg:#1f2328; --dim:#57606a; --card:#f6f8fa; --line:#d0d7de; }
   body { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
          background: var(--bg); color: var(--fg); margin: 0 auto; max-width: 1150px;
          padding: 24px 18px 64px; font-size: 14px; line-height: 1.55; }

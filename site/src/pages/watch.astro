@@ -24,8 +24,12 @@ const path = '/watch.html';
 </Base>
 
 <style is:global>
-@media (prefers-color-scheme:dark){:root{ --bg:#0d1117; --fg:#e6edf3; --dim:#8b949e; --border:#21262d; --accent:#58a6ff;
-          --green:#3fb950; --orange:#d29922; }}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) { --bg:#0d1117; --fg:#e6edf3; --dim:#8b949e; --border:#21262d; --accent:#58a6ff;
+          --green:#3fb950; --orange:#d29922; }
+}
+html[data-theme="dark"] { --bg:#0d1117; --fg:#e6edf3; --dim:#8b949e; --border:#21262d; --accent:#58a6ff;
+          --green:#3fb950; --orange:#d29922; }
   body { background: var(--bg); color: var(--fg);
          font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
          max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }

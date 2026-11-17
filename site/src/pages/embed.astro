@@ -24,11 +24,11 @@ const path = '/embed.html';
     --dim: #8b949e; --accent: #58a6ff;
   }
   @media (prefers-color-scheme: light) {
-    :root:not([data-theme]) {
-      --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --fg: #1f2328;
-      --dim: #59636e; --accent: #0969da;
-    }
-  }
+  :root:not([data-theme]) { --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --fg: #1f2328;
+      --dim: #59636e; --accent: #0969da; }
+}
+html[data-theme="light"] { --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --fg: #1f2328;
+      --dim: #59636e; --accent: #0969da; }
   :root[data-theme="light"] {
     --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --fg: #1f2328;
     --dim: #59636e; --accent: #0969da;
