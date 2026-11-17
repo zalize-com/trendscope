@@ -81,8 +81,9 @@
   }
 
   const ORDER = ["alive", "moved", "dormant", "empty", "not-a-feed", "dead", "unreachable"];
-  const COLOR = { alive: "#2ea043", moved: "#58a6ff", dormant: "#d29922",
-                  empty: "#8b949e", "not-a-feed": "#8b949e", dead: "#f85149", unreachable: "#f85149" };
+  const COLOR = { alive: "var(--st-alive)", moved: "var(--st-moved)", dormant: "var(--st-dormant)",
+                  empty: "var(--st-empty)", "not-a-feed": "var(--st-unknown)",
+                  dead: "var(--st-dead)", unreachable: "var(--st-unreachable)" };
 
   function render() {
     const counts = {};

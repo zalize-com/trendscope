@@ -15,8 +15,8 @@ try {
       `<div class="stat"><b>${zw.tide.length}</b><small>in rate-limit tide</small></div>` : "");
   $("out").innerHTML = "<ol>" + srcs.map(([name, v]) => {
     const t = v.top_item || {};
-    const dorm = dormant.has(name) ? ` <span class="chip" title="alive but quiet — no new posts recently">dormant</span>` : "";
-    const pchip = persistent.has(name) ? ` <span class="chip" title="empty in ${zw.rounds} consecutive snapshots — likely dead or egress-blocked">empty ${zw.rounds}d</span>` : "";
+    const dorm = dormant.has(name) ? ` <span class="chip" style="color:var(--st-dormant);border-color:var(--st-dormant)" title="alive but quiet — no new posts recently">dormant</span>` : "";
+    const pchip = persistent.has(name) ? ` <span class="chip" style="color:var(--st-dead);border-color:var(--st-dead)" title="empty in ${zw.rounds} consecutive snapshots — likely dead or egress-blocked">empty ${zw.rounds}d</span>` : "";
     return `<li><span class="it"><a href="source.html?s=${encodeURIComponent(name)}"><b>${esc(name)}</b></a>${dorm}${pchip}` +
       ` <img src="docs/api/sparkline/${name}.svg" width="90" height="23" style="vertical-align:-4px;opacity:.85" alt="${name} items/day" loading="lazy">` +
       ` · ${v.items} items · ${v.unique_urls} unique · ${v.one_day_pct}% one-day` +

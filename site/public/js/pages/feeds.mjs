@@ -16,7 +16,7 @@ const laneDetails = ([lane, fs]) =>
 
 const row = f => `<li class="feed"><a href="${esc(f.feed)}">${esc(f.label)}</a>` +
   `<span class="host">${esc(host(f.feed))}</span>` +
-  (f.dormant ? `<span class="chip" title="alive but quiet — no new posts recently">dormant</span>` : "") +
+  (f.dormant ? `<span class="chip" style="color:var(--st-dormant);border-color:var(--st-dormant)" title="alive but quiet — no new posts recently">dormant</span>` : "") +
   `<span class="acts"><button class="copy" data-url="${esc(f.feed)}" title="copy feed URL">copy</button>` +
   `<a href="source.html?s=${encodeURIComponent(f.key)}" title="deep dive">src</a></span></li>`;
 

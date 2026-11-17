@@ -13,6 +13,11 @@
 :root {
   --bg: #0d1117; --panel: #161b22; --border: #30363d; --fg: #e6edf3;
   --dim: #8b949e; --accent: #58a6ff; --green: #3fb950; --orange: #d29922;
+  --red: #f85149; --hot: var(--red);
+  /* semantic source-health status colors (alive/moved/dormant/empty/dead) */
+  --st-alive: var(--green); --st-moved: var(--accent); --st-dormant: var(--orange);
+  --st-empty: var(--dim); --st-dead: var(--red); --st-unreachable: var(--red);
+  --st-unknown: var(--dim);
   /* legacy aliases seen across older pages */
   --mut: var(--dim); --card: var(--panel); --line: var(--border);
   --acc: var(--accent); --surface: var(--panel);
@@ -22,6 +27,7 @@
   :root {
     --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --fg: #1f2328;
     --dim: #59636e; --accent: #0969da; --green: #1a7f37; --orange: #9a6700;
+    --red: #cf222e;
   }
 }
 
