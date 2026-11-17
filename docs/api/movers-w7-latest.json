@@ -1,7 +1,7 @@
 {
  "a": "2026-11-10",
  "b": "2026-11-17",
- "generated": "2026-11-17 16:16 UTC",
+ "generated": "2026-11-17 17:25 UTC",
  "entered": [
   {
    "title": "boto3",
@@ -84,6 +84,14 @@
    "rank": 7
   },
   {
+   "title": "pandas",
+   "url": "https://pypi.org/project/pandas/",
+   "source": "pypi",
+   "score": 695595266,
+   "metric": "monthly downloads",
+   "rank": 8
+  },
+  {
    "title": "rand",
    "url": "https://crates.io/crates/rand",
    "source": "crates",
@@ -113,7 +121,7 @@
    "source": "pypi",
    "score": 563019498,
    "metric": "monthly downloads",
-   "rank": 8
+   "rank": 9
   },
   {
    "title": "base64",
@@ -145,7 +153,7 @@
    "source": "pypi",
    "score": 532877425,
    "metric": "monthly downloads",
-   "rank": 9
+   "rank": 10
   },
   {
    "title": "windows-sys",
@@ -154,14 +162,6 @@
    "score": 524055084,
    "metric": "recent downloads",
    "rank": 10
-  },
-  {
-   "title": "quote",
-   "url": "https://crates.io/crates/quote",
-   "source": "crates",
-   "score": 497024663,
-   "metric": "recent downloads",
-   "rank": 11
   }
  ],
  "left": [
@@ -331,10 +331,10 @@
    "title": "Gemini 4 Carbon is now available",
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
    "source": "googleblog",
-   "score": 6,
+   "score": 5,
    "metric": "feed rank",
-   "rank": 10,
-   "delta": -289
+   "rank": 11,
+   "delta": -290
   },
   {
    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
@@ -378,10 +378,10 @@
    "title": "Gemini 4 Carbon is now available",
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
    "source": "googleblog",
-   "score": 6,
+   "score": 5,
    "metric": "feed rank",
-   "rank": 10,
-   "delta": -289
+   "rank": 11,
+   "delta": -290
   }
  ],
  "pkg_rank_up": [],

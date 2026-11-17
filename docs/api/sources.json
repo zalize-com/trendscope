@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-17T16:16:42.743903+00:00",
+  "generated_at": "2026-11-17T17:25:45.354431+00:00",
   "days_tracked": 11,
   "sources": {
     "lorekernel": {
-      "items": 378,
-      "unique_urls": 378,
+      "items": 393,
+      "unique_urls": 393,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -15,8 +15,8 @@
       }
     },
     "investing": {
-      "items": 231,
-      "unique_urls": 230,
+      "items": 241,
+      "unique_urls": 240,
       "median_days_on_board": 1,
       "one_day_pct": 100,
       "top_item": {
@@ -27,8 +27,8 @@
       }
     },
     "hackernews": {
-      "items": 227,
-      "unique_urls": 196,
+      "items": 228,
+      "unique_urls": 197,
       "median_days_on_board": 1,
       "one_day_pct": 85,
       "top_item": {
@@ -39,10 +39,10 @@
       }
     },
     "w4news": {
-      "items": 173,
-      "unique_urls": 156,
+      "items": 181,
+      "unique_urls": 164,
       "median_days_on_board": 1,
-      "one_day_pct": 89,
+      "one_day_pct": 90,
       "top_item": {
         "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his silence on breakdown - AP News",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUjU5a3ljR1FocjlKQnRVS21kY1kwR3R4bEZvdUc4VExhbnc2NjZrU0ZfRS1iMkoxcGthaUV4a19MTlNsR2JFMlFqZDN0Y1JiejlNWUFUWjAyWTl3RFNXX0ZvbkNmX0l1elhVZndMd3pQSlQtbk1RYzBMT2tmOTJuaTlwUm5FQmdRODFJQTk4OWV5MlpScVhhc1BEWWotS1E?oc=5",
@@ -51,10 +51,10 @@
       }
     },
     "producthunt": {
-      "items": 164,
-      "unique_urls": 111,
+      "items": 167,
+      "unique_urls": 114,
       "median_days_on_board": 1,
-      "one_day_pct": 52,
+      "one_day_pct": 54,
       "top_item": {
         "title": "MAP & GO!",
         "url": "https://www.producthunt.com/products/expert-chase-deleted-1107920",
@@ -62,21 +62,9 @@
         "rank": 1
       }
     },
-    "timesofindia": {
-      "items": 150,
-      "unique_urls": 136,
-      "median_days_on_board": 1,
-      "one_day_pct": 90,
-      "top_item": {
-        "title": "Georgia woman wins $2.5m after rear-end crash leads to spinal fusion surgery",
-        "url": "https://timesofindia.indiatimes.com/world/us/a-metro-atlanta-woman-was-awarded-2-5-million-by-a-cobb-county-georgia-jury-after-a-2023-rear-end-crash-left-her-with-injuries-so-serious-that-she-later-needed-spinal-fusion-surgery/articleshow/135865103.cms",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "show_hn": {
-      "items": 149,
-      "unique_urls": 144,
+      "items": 157,
+      "unique_urls": 152,
       "median_days_on_board": 1,
       "one_day_pct": 97,
       "top_item": {
@@ -86,9 +74,21 @@
         "rank": 1
       }
     },
+    "timesofindia": {
+      "items": 156,
+      "unique_urls": 142,
+      "median_days_on_board": 1,
+      "one_day_pct": 90,
+      "top_item": {
+        "title": "Georgia woman wins $2.5m after rear-end crash leads to spinal fusion surgery",
+        "url": "https://timesofindia.indiatimes.com/world/us/a-metro-atlanta-woman-was-awarded-2-5-million-by-a-cobb-county-georgia-jury-after-a-2023-rear-end-crash-left-her-with-injuries-so-serious-that-she-later-needed-spinal-fusion-surgery/articleshow/135865103.cms",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "seekingalpha": {
-      "items": 144,
-      "unique_urls": 140,
+      "items": 151,
+      "unique_urls": 147,
       "median_days_on_board": 1,
       "one_day_pct": 97,
       "top_item": {
@@ -99,10 +99,10 @@
       }
     },
     "uniteai": {
-      "items": 135,
-      "unique_urls": 122,
+      "items": 142,
+      "unique_urls": 129,
       "median_days_on_board": 1,
-      "one_day_pct": 89,
+      "one_day_pct": 90,
       "top_item": {
         "title": "Bessent Gives Nvidia 10 Days to Address Export-Control Questions",
         "url": "https://www.unite.ai/bessent-gives-nvidia-10-days-to-address-export-control-questions/",
@@ -111,13 +111,25 @@
       }
     },
     "techmeme": {
-      "items": 134,
-      "unique_urls": 114,
+      "items": 140,
+      "unique_urls": 120,
       "median_days_on_board": 1,
-      "one_day_pct": 82,
+      "one_day_pct": 83,
       "top_item": {
         "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A (Tamara Djurickovic/Tech.eu)",
         "url": "https://www.techmeme.com/261115/p3#a261115p3",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "forbes": {
+      "items": 137,
+      "unique_urls": 126,
+      "median_days_on_board": 1,
+      "one_day_pct": 91,
+      "top_item": {
+        "title": "The Good, Bad And Ugly From The Packers’ Loss To The Vikings",
+        "url": "https://www.forbes.com/sites/robreischel/2026/11/15/the-good-bad-and-ugly-from-the-packers-loss-to-the-vikings/",
         "score": 15,
         "rank": 1
       }
@@ -134,18 +146,6 @@
         "rank": 1
       }
     },
-    "forbes": {
-      "items": 127,
-      "unique_urls": 116,
-      "median_days_on_board": 1,
-      "one_day_pct": 91,
-      "top_item": {
-        "title": "The Good, Bad And Ugly From The Packers’ Loss To The Vikings",
-        "url": "https://www.forbes.com/sites/robreischel/2026/11/15/the-good-bad-and-ugly-from-the-packers-loss-to-the-vikings/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "ask_hn": {
       "items": 124,
       "unique_urls": 91,
@@ -156,6 +156,18 @@
         "url": "https://news.ycombinator.com/item?id=50471668",
         "score": 402,
         "rank": 12
+      }
+    },
+    "phys": {
+      "items": 112,
+      "unique_urls": 100,
+      "median_days_on_board": 1,
+      "one_day_pct": 88,
+      "top_item": {
+        "title": "When the Saudi desert was green: A 125,000-year-old lakeside reveals how early humans lived",
+        "url": "https://phys.org/news/2026-11-saudi-green-year-lakeside-reveals.html",
+        "score": 15,
+        "rank": 1
       }
     },
     "feeds3": {
@@ -170,14 +182,26 @@
         "rank": 1
       }
     },
-    "phys": {
-      "items": 106,
-      "unique_urls": 94,
+    "fortune": {
+      "items": 100,
+      "unique_urls": 87,
       "median_days_on_board": 1,
-      "one_day_pct": 87,
+      "one_day_pct": 85,
       "top_item": {
-        "title": "When the Saudi desert was green: A 125,000-year-old lakeside reveals how early humans lived",
-        "url": "https://phys.org/news/2026-11-saudi-green-year-lakeside-reveals.html",
+        "title": "Son of ex-Alamo Rent a Car owner went from hip hop label founder to lithium leader. He’s even eyeing the White House",
+        "url": "https://fortune.com/2026/11/15/son-alamo-rent-car-hip-hop-label-lithium-leader-white-house/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "cnbc": {
+      "items": 97,
+      "unique_urls": 79,
+      "median_days_on_board": 1,
+      "one_day_pct": 78,
+      "top_item": {
+        "title": "Bessent calls for ‘dramatic shakeup’ at Nvidia, urges outside CEO",
+        "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
         "score": 15,
         "rank": 1
       }
@@ -194,26 +218,26 @@
         "rank": 1
       }
     },
-    "fortune": {
-      "items": 93,
-      "unique_urls": 80,
-      "median_days_on_board": 1,
-      "one_day_pct": 84,
-      "top_item": {
-        "title": "Son of ex-Alamo Rent a Car owner went from hip hop label founder to lithium leader. He’s even eyeing the White House",
-        "url": "https://fortune.com/2026/11/15/son-alamo-rent-car-hip-hop-label-lithium-leader-white-house/",
-        "score": 10,
-        "rank": 1
-      }
-    },
     "eb_guardian": {
-      "items": 93,
-      "unique_urls": 84,
+      "items": 96,
+      "unique_urls": 87,
       "median_days_on_board": 1,
-      "one_day_pct": 89,
+      "one_day_pct": 90,
       "top_item": {
         "title": "‘She was a monster’: the real Patricia Highsmith, by the people who knew her",
         "url": "https://www.theguardian.com/books/2026/nov/15/she-was-a-monster-the-real-patricia-highsmith-by-the-people-who-knew-her",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "moneysavingmom": {
+      "items": 94,
+      "unique_urls": 69,
+      "median_days_on_board": 1,
+      "one_day_pct": 68,
+      "top_item": {
+        "title": "Ionic Hair Dryer Only $19.99 with Free Prime Shipping {Crystal Loves This!}",
+        "url": "https://moneysavingmom.com/professional-ionic-hair-dryer-deal/",
         "score": 15,
         "rank": 1
       }
@@ -230,14 +254,14 @@
         "rank": 1
       }
     },
-    "cnbc": {
+    "euroweeklynews": {
       "items": 90,
-      "unique_urls": 72,
+      "unique_urls": 68,
       "median_days_on_board": 1,
-      "one_day_pct": 76,
+      "one_day_pct": 68,
       "top_item": {
-        "title": "Bessent calls for ‘dramatic shakeup’ at Nvidia, urges outside CEO",
-        "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
+        "title": "Back in the running? Mijas considers four proposals for abandoned horse-racing complex",
+        "url": "https://euroweeklynews.com/2026/11/15/back-in-the-running-mijas-considers-four-proposals-for-abandoned-horse-racing-complex/",
         "score": 15,
         "rank": 1
       }
@@ -254,26 +278,26 @@
         "rank": 1
       }
     },
-    "moneysavingmom": {
+    "engadget": {
       "items": 88,
-      "unique_urls": 64,
+      "unique_urls": 77,
       "median_days_on_board": 1,
-      "one_day_pct": 66,
+      "one_day_pct": 86,
       "top_item": {
-        "title": "Ionic Hair Dryer Only $19.99 with Free Prime Shipping {Crystal Loves This!}",
-        "url": "https://moneysavingmom.com/professional-ionic-hair-dryer-deal/",
+        "title": "How to get warnings about speed cameras in Apple CarPlay",
+        "url": "https://www.engadget.com/2313915/how-to-get-speed-camera-alerts-carplay/",
         "score": 15,
         "rank": 1
       }
     },
-    "euroweeklynews": {
-      "items": 86,
+    "feeds11": {
+      "items": 87,
       "unique_urls": 64,
       "median_days_on_board": 1,
       "one_day_pct": 66,
       "top_item": {
-        "title": "Back in the running? Mijas considers four proposals for abandoned horse-racing complex",
-        "url": "https://euroweeklynews.com/2026/11/15/back-in-the-running-mijas-considers-four-proposals-for-abandoned-horse-racing-complex/",
+        "title": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
+        "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&at_campaign=rss",
         "score": 15,
         "rank": 1
       }
@@ -290,6 +314,30 @@
         "rank": 1
       }
     },
+    "thenextweb": {
+      "items": 83,
+      "unique_urls": 73,
+      "median_days_on_board": 1,
+      "one_day_pct": 86,
+      "top_item": {
+        "title": "Megaspeed says Alice Huang left in August 2025",
+        "url": "https://thenextweb.com/news/megaspeed-alice-huang-left-august-2025-denies-claims",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "rartificial": {
+      "items": 83,
+      "unique_urls": 67,
+      "median_days_on_board": 1,
+      "one_day_pct": 78,
+      "top_item": {
+        "title": "built a fact-checker that catches politicians lying in real-time",
+        "url": "https://www.reddit.com/r/artificial/comments/1xwmtff/built_a_factchecker_that_catches_politicians/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "reddit": {
       "items": 82,
       "unique_urls": 55,
@@ -302,35 +350,11 @@
         "rank": 1
       }
     },
-    "engadget": {
-      "items": 82,
-      "unique_urls": 71,
-      "median_days_on_board": 1,
-      "one_day_pct": 85,
-      "top_item": {
-        "title": "How to get warnings about speed cameras in Apple CarPlay",
-        "url": "https://www.engadget.com/2313915/how-to-get-speed-camera-alerts-carplay/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "feeds11": {
-      "items": 82,
-      "unique_urls": 59,
-      "median_days_on_board": 1,
-      "one_day_pct": 63,
-      "top_item": {
-        "title": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
-        "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&at_campaign=rss",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "appleinsider": {
-      "items": 78,
-      "unique_urls": 53,
+      "items": 80,
+      "unique_urls": 55,
       "median_days_on_board": 1,
-      "one_day_pct": 53,
+      "one_day_pct": 55,
       "top_item": {
         "title": "Sunday Reboot: Unhinged robots and commentator curses",
         "url": "https://appleinsider.com/articles/26/11/15/sunday-reboot-unhinged-robots-and-commentator-curses?utm_source=rss",
@@ -338,35 +362,11 @@
         "rank": 1
       }
     },
-    "thenextweb": {
-      "items": 76,
-      "unique_urls": 66,
-      "median_days_on_board": 1,
-      "one_day_pct": 85,
-      "top_item": {
-        "title": "Megaspeed says Alice Huang left in August 2025",
-        "url": "https://thenextweb.com/news/megaspeed-alice-huang-left-august-2025-denies-claims",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "rartificial": {
-      "items": 76,
-      "unique_urls": 60,
-      "median_days_on_board": 1,
-      "one_day_pct": 75,
-      "top_item": {
-        "title": "built a fact-checker that catches politicians lying in real-time",
-        "url": "https://www.reddit.com/r/artificial/comments/1xwmtff/built_a_factchecker_that_catches_politicians/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "9to5mac": {
-      "items": 75,
-      "unique_urls": 61,
+      "items": 78,
+      "unique_urls": 64,
       "median_days_on_board": 1,
-      "one_day_pct": 77,
+      "one_day_pct": 78,
       "top_item": {
         "title": "Apple engineers ‘actively working’ on Face ID for iPhone Duo 2’s outer display: report",
         "url": "https://9to5mac.com/2026/11/15/apple-engineers-actively-working-on-face-id-for-iphone-duo-2s-outer-display-report/",
@@ -375,10 +375,10 @@
       }
     },
     "techcrunch": {
-      "items": 75,
-      "unique_urls": 55,
+      "items": 77,
+      "unique_urls": 57,
       "median_days_on_board": 1,
-      "one_day_pct": 64,
+      "one_day_pct": 65,
       "top_item": {
         "title": "SNL gathers all the tech tycoons for a lesson in dating and spycraft",
         "url": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/",
@@ -387,14 +387,38 @@
       }
     },
     "rss4": {
-      "items": 75,
-      "unique_urls": 48,
+      "items": 76,
+      "unique_urls": 49,
       "median_days_on_board": 2,
-      "one_day_pct": 44,
+      "one_day_pct": 45,
       "top_item": {
         "title": "Israel Kidnapped Iranian Generals in Hunt for Ron Arad",
         "url": "https://www.nytimes.com/2026/11/15/world/europe/ron-arad-missing-israel-iran-asgari-hunt.html",
         "score": 15,
+        "rank": 1
+      }
+    },
+    "xinquji": {
+      "items": 75,
+      "unique_urls": 45,
+      "median_days_on_board": 2,
+      "one_day_pct": 33,
+      "top_item": {
+        "title": "FindAIforWork - 为工作精选 AI 工具目录，按岗位和场景找到合适的 AI 助手。",
+        "url": "https://xinquji.com/posts/860915?utm_campaign=xinquji-rss",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "nl_web_design_weekly": {
+      "items": 75,
+      "unique_urls": 75,
+      "median_days_on_board": 1,
+      "one_day_pct": 100,
+      "top_item": {
+        "title": "🗞  Easily improve your Web Design with AI",
+        "url": "https://web-design-weekly.com/%f0%9f%97%9e-easily-improve-your-web-design-with-ai-26303/",
+        "score": 10,
         "rank": 1
       }
     },
@@ -406,6 +430,18 @@
       "top_item": {
         "title": "Nvidia board director cashed out $1 billion in stock before Jensen Huang scandal — Mark Stevens sold 4.2 million shares without a trading plan",
         "url": "https://www.reddit.com/r/technology/comments/1xww9xh/nvidia_board_director_cashed_out_1_billion_in/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rsysadmin": {
+      "items": 74,
+      "unique_urls": 57,
+      "median_days_on_board": 1,
+      "one_day_pct": 74,
+      "top_item": {
+        "title": "Weekly 'I made a useful thing' Thread - November 13, 2026",
+        "url": "https://www.reddit.com/r/sysadmin/comments/1xv229k/weekly_i_made_a_useful_thing_thread_november_13/",
         "score": 15,
         "rank": 1
       }
@@ -422,15 +458,27 @@
         "rank": 1
       }
     },
-    "nl_web_design_weekly": {
+    "lobsters": {
       "items": 73,
-      "unique_urls": 73,
+      "unique_urls": 47,
       "median_days_on_board": 1,
-      "one_day_pct": 100,
+      "one_day_pct": 51,
       "top_item": {
-        "title": "🗞  Easily improve your Web Design with AI",
-        "url": "https://web-design-weekly.com/%f0%9f%97%9e-easily-improve-your-web-design-with-ai-26303/",
-        "score": 10,
+        "title": "Terminal borders that don't cost a cell",
+        "url": "https://www.joshka.net/cell-borders/",
+        "score": 396,
+        "rank": 9
+      }
+    },
+    "rselfhosted": {
+      "items": 73,
+      "unique_urls": 49,
+      "median_days_on_board": 1,
+      "one_day_pct": 59,
+      "top_item": {
+        "title": "Quarter 2 Update - Revisiting Rules. Again.",
+        "url": "https://www.reddit.com/r/selfhosted/comments/1sey9ch/quarter_2_update_revisiting_rules_again/",
+        "score": 15,
         "rank": 1
       }
     },
@@ -446,27 +494,51 @@
         "rank": 1
       }
     },
-    "lobsters": {
-      "items": 71,
-      "unique_urls": 45,
-      "median_days_on_board": 2,
-      "one_day_pct": 49,
+    "theregister": {
+      "items": 70,
+      "unique_urls": 59,
+      "median_days_on_board": 1,
+      "one_day_pct": 81,
       "top_item": {
-        "title": "Terminal borders that don't cost a cell",
-        "url": "https://www.joshka.net/cell-borders/",
-        "score": 396,
-        "rank": 9
+        "title": "Microsoft lifts Indian cloud prices by 15 percent, cuts costs in China",
+        "url": "https://www.theregister.com/off-prem/2026/11/15/microsoft-lifts-indian-cloud-prices-by-15-percent-cuts-costs-in-china/5309993",
+        "score": 15,
+        "rank": 1
       }
     },
-    "rsysadmin": {
-      "items": 71,
-      "unique_urls": 54,
+    "hnrss": {
+      "items": 70,
+      "unique_urls": 60,
       "median_days_on_board": 1,
-      "one_day_pct": 72,
+      "one_day_pct": 83,
       "top_item": {
-        "title": "Weekly 'I made a useful thing' Thread - November 13, 2026",
-        "url": "https://www.reddit.com/r/sysadmin/comments/1xv229k/weekly_i_made_a_useful_thing_thread_november_13/",
-        "score": 15,
+        "title": "Technical issue at JPMorgan Chase triggers online banking delays for US banks",
+        "url": "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
+        "score": 714,
+        "rank": 2
+      }
+    },
+    "theverge": {
+      "items": 69,
+      "unique_urls": 60,
+      "median_days_on_board": 1,
+      "one_day_pct": 85,
+      "top_item": {
+        "title": "Watch SpaceX successfully execute the first ‘chopstick’ catch of Starship",
+        "url": "https://www.theverge.com/science/1033930/spacex-chopstick-starship-catch",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "devto": {
+      "items": 68,
+      "unique_urls": 24,
+      "median_days_on_board": 3,
+      "one_day_pct": 12,
+      "top_item": {
+        "title": "How do you truly stand out in Tech?",
+        "url": "https://dev.to/francistrdev/how-do-you-truly-stand-out-in-tech-478a",
+        "score": 203,
         "rank": 1
       }
     },
@@ -482,15 +554,15 @@
         "rank": 1
       }
     },
-    "devto": {
+    "apiaxios": {
       "items": 67,
-      "unique_urls": 23,
-      "median_days_on_board": 3,
-      "one_day_pct": 9,
+      "unique_urls": 43,
+      "median_days_on_board": 2,
+      "one_day_pct": 47,
       "top_item": {
-        "title": "How do you truly stand out in Tech?",
-        "url": "https://dev.to/francistrdev/how-do-you-truly-stand-out-in-tech-478a",
-        "score": 203,
+        "title": "Bessent questions did Nvidia \"goose\" earnings with suspect China chip sales",
+        "url": "https://www.axios.com/2026/11/15/bessent-nvidia-earnings-china-chip-sales-ceo",
+        "score": 15,
         "rank": 1
       }
     },
@@ -502,6 +574,18 @@
       "top_item": {
         "title": "TCS | Piet le Roux on Sakeliga’s fight with Icasa over BEE",
         "url": "https://techcentral.co.za/tcs-piet-le-roux-sakeliga-icasa-bee/288416/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "macworld": {
+      "items": 67,
+      "unique_urls": 40,
+      "median_days_on_board": 2,
+      "one_day_pct": 38,
+      "top_item": {
+        "title": "This $90 adapter makes your car’s CarPlay wireless before Thanksgiving road trips",
+        "url": "https://www.macworld.com/article/3284409/this-90-adapter-makes-your-cars-carplay-wireless-before-thanksgiving-road-trips.html",
         "score": 15,
         "rank": 1
       }
@@ -530,86 +614,14 @@
         "rank": 1
       }
     },
-    "hnrss": {
-      "items": 66,
-      "unique_urls": 56,
-      "median_days_on_board": 1,
-      "one_day_pct": 82,
-      "top_item": {
-        "title": "Technical issue at JPMorgan Chase triggers online banking delays for US banks",
-        "url": "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
-        "score": 714,
-        "rank": 2
-      }
-    },
-    "apiaxios": {
-      "items": 66,
-      "unique_urls": 42,
-      "median_days_on_board": 2,
-      "one_day_pct": 45,
-      "top_item": {
-        "title": "Bessent questions did Nvidia \"goose\" earnings with suspect China chip sales",
-        "url": "https://www.axios.com/2026/11/15/bessent-nvidia-earnings-china-chip-sales-ceo",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "rselfhosted": {
-      "items": 66,
-      "unique_urls": 42,
-      "median_days_on_board": 1,
-      "one_day_pct": 52,
-      "top_item": {
-        "title": "Quarter 2 Update - Revisiting Rules. Again.",
-        "url": "https://www.reddit.com/r/selfhosted/comments/1sey9ch/quarter_2_update_revisiting_rules_again/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "slashdot": {
-      "items": 64,
-      "unique_urls": 42,
+      "items": 65,
+      "unique_urls": 43,
       "median_days_on_board": 2,
-      "one_day_pct": 48,
+      "one_day_pct": 49,
       "top_item": {
         "title": "Did Alice Huang's Megaspeed Bypass America's Controls on Exporting Nvidia Chip to China?",
         "url": "https://hardware.slashdot.org/story/26/11/15/0510225/did-alice-huangs-megaspeed-bypass-americas-controls-on-exporting-nvidia-chip-to-china?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "macworld": {
-      "items": 64,
-      "unique_urls": 37,
-      "median_days_on_board": 2,
-      "one_day_pct": 32,
-      "top_item": {
-        "title": "This $90 adapter makes your car’s CarPlay wireless before Thanksgiving road trips",
-        "url": "https://www.macworld.com/article/3284409/this-90-adapter-makes-your-cars-carplay-wireless-before-thanksgiving-road-trips.html",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "theverge": {
-      "items": 63,
-      "unique_urls": 54,
-      "median_days_on_board": 1,
-      "one_day_pct": 83,
-      "top_item": {
-        "title": "Watch SpaceX successfully execute the first ‘chopstick’ catch of Starship",
-        "url": "https://www.theverge.com/science/1033930/spacex-chopstick-starship-catch",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "theregister": {
-      "items": 63,
-      "unique_urls": 52,
-      "median_days_on_board": 1,
-      "one_day_pct": 79,
-      "top_item": {
-        "title": "Microsoft lifts Indian cloud prices by 15 percent, cuts costs in China",
-        "url": "https://www.theregister.com/off-prem/2026/11/15/microsoft-lifts-indian-cloud-prices-by-15-percent-cuts-costs-in-china/5309993",
         "score": 15,
         "rank": 1
       }
@@ -626,14 +638,14 @@
         "rank": 1
       }
     },
-    "xinquji": {
+    "phoronix": {
       "items": 61,
-      "unique_urls": 31,
+      "unique_urls": 34,
       "median_days_on_board": 2,
-      "one_day_pct": 3,
+      "one_day_pct": 29,
       "top_item": {
-        "title": "FindAIforWork - 为工作精选 AI 工具目录，按岗位和场景找到合适的 AI 助手。",
-        "url": "https://xinquji.com/posts/860915?utm_campaign=xinquji-rss",
+        "title": "AMD Posts Linux Patches For Capacity Aware Scheduling On Hybrid CPUs",
+        "url": "https://www.phoronix.com/news/AMD-Hybrid-Capacity-Aware-Sched",
         "score": 15,
         "rank": 1
       }
@@ -650,26 +662,50 @@
         "rank": 1
       }
     },
-    "phoronix": {
+    "fingerprintjs": {
       "items": 60,
-      "unique_urls": 33,
-      "median_days_on_board": 2,
-      "one_day_pct": 27,
+      "unique_urls": 30,
+      "median_days_on_board": 3,
+      "one_day_pct": 50,
       "top_item": {
-        "title": "AMD Posts Linux Patches For Capacity Aware Scheduling On Hybrid CPUs",
-        "url": "https://www.phoronix.com/news/AMD-Hybrid-Capacity-Aware-Sched",
+        "title": "How to detect Claude Duet AI agent traffic",
+        "url": "/blog/how-to-detect-claude-duet/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "discoursellvm": {
+      "items": 60,
+      "unique_urls": 32,
+      "median_days_on_board": 2,
+      "one_day_pct": 31,
+      "top_item": {
+        "title": "[RFC][AMDGPU] Deprecating and removing LLVM’s R600/TeraScale backend",
+        "url": "https://discourse.llvm.org/t/rfc-amdgpu-deprecating-and-removing-llvm-s-r600-terascale-backend/92840",
         "score": 15,
         "rank": 1
       }
     },
     "gsmarena": {
-      "items": 59,
-      "unique_urls": 34,
+      "items": 60,
+      "unique_urls": 35,
       "median_days_on_board": 2,
-      "one_day_pct": 35,
+      "one_day_pct": 37,
       "top_item": {
         "title": "Gaming performance evolution: iPhone 15 Pro to iPhone 18 Pro",
         "url": "https://www.gsmarena.com/gaming_performance_evolution_iphone_15_pro_to_iphone_18_pro-news-75486.php",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "space": {
+      "items": 59,
+      "unique_urls": 33,
+      "median_days_on_board": 2,
+      "one_day_pct": 30,
+      "top_item": {
+        "title": "30 years ago, 'Space Jam' proposed the best way to resolve interplanetary disputes",
+        "url": "https://www.space.com/entertainment/space-movies-shows/30-years-ago-space-jam-proposed-the-best-way-to-resolve-interplanetary-disputes",
         "score": 15,
         "rank": 1
       }
@@ -686,28 +722,28 @@
         "rank": 1
       }
     },
-    "space": {
+    "cultofmac": {
       "items": 58,
-      "unique_urls": 32,
+      "unique_urls": 31,
       "median_days_on_board": 2,
-      "one_day_pct": 28,
+      "one_day_pct": 29,
       "top_item": {
-        "title": "30 years ago, 'Space Jam' proposed the best way to resolve interplanetary disputes",
-        "url": "https://www.space.com/entertainment/space-movies-shows/30-years-ago-space-jam-proposed-the-best-way-to-resolve-interplanetary-disputes",
+        "title": "Today in Apple history: Apple’s last mechanical keyboard is a winner",
+        "url": "https://www.cultofmac.com/apple-history/apple-extended-keyboard-ii",
         "score": 15,
         "rank": 1
       }
     },
-    "discoursellvm": {
+    "sec_wired": {
       "items": 58,
-      "unique_urls": 30,
-      "median_days_on_board": 2,
-      "one_day_pct": 27,
+      "unique_urls": 48,
+      "median_days_on_board": 1,
+      "one_day_pct": 79,
       "top_item": {
-        "title": "[RFC][AMDGPU] Deprecating and removing LLVM’s R600/TeraScale backend",
-        "url": "https://discourse.llvm.org/t/rfc-amdgpu-deprecating-and-removing-llvm-s-r600-terascale-backend/92840",
-        "score": 15,
-        "rank": 1
+        "title": "Nvidia Was Already in Trouble Before the Jensen Huang Mess",
+        "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
+        "score": 139,
+        "rank": 17
       }
     },
     "rprogramming": {
@@ -746,28 +782,16 @@
         "rank": 1
       }
     },
-    "cultofmac": {
+    "feeds4": {
       "items": 57,
-      "unique_urls": 30,
+      "unique_urls": 28,
       "median_days_on_board": 2,
-      "one_day_pct": 27,
+      "one_day_pct": 32,
       "top_item": {
-        "title": "Today in Apple history: Apple’s last mechanical keyboard is a winner",
-        "url": "https://www.cultofmac.com/apple-history/apple-extended-keyboard-ii",
+        "title": "Gemini can now tap into Google Wallet to help manage your money",
+        "url": "https://www.androidcentral.com/apps-software/ai/gemini-can-now-tap-into-google-wallet-to-help-manage-your-money",
         "score": 15,
         "rank": 1
-      }
-    },
-    "sec_wired": {
-      "items": 57,
-      "unique_urls": 47,
-      "median_days_on_board": 1,
-      "one_day_pct": 79,
-      "top_item": {
-        "title": "Nvidia Was Already in Trouble Before the Jensen Huang Mess",
-        "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
-        "score": 139,
-        "rank": 17
       }
     },
     "planetfedora": {
@@ -778,6 +802,18 @@
       "top_item": {
         "title": "Fedora Infrastructure Status: Updates and reboots on Fedora infrastructure",
         "url": "https://status.fedoraproject.org/2026-11-19-updates-reboots.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rkubernetes": {
+      "items": 56,
+      "unique_urls": 30,
+      "median_days_on_board": 2,
+      "one_day_pct": 37,
+      "top_item": {
+        "title": "Monthly: Who is hiring?",
+        "url": "https://www.reddit.com/r/kubernetes/comments/1xl09p9/monthly_who_is_hiring/",
         "score": 15,
         "rank": 1
       }
@@ -818,6 +854,30 @@
         "rank": 1
       }
     },
+    "arstechnica": {
+      "items": 54,
+      "unique_urls": 34,
+      "median_days_on_board": 2,
+      "one_day_pct": 44,
+      "top_item": {
+        "title": "SpaceX returned its Starship rocket on Saturday—but there's a catch",
+        "url": "https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "mozilla": {
+      "items": 54,
+      "unique_urls": 24,
+      "median_days_on_board": 3,
+      "one_day_pct": 29,
+      "top_item": {
+        "title": "Starting with Firefox 162, Firefox Nightly now supports the inherit() arbitrary substitution...",
+        "url": "https://www.firefox.com/en-US/firefox/162.0a1/releasenotes/#note-792539",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "forummanjaro": {
       "items": 54,
       "unique_urls": 26,
@@ -826,18 +886,6 @@
       "top_item": {
         "title": "Another topic for help with pacnew grub",
         "url": "https://forum.manjaro.org/t/another-topic-for-help-with-pacnew-grub/191236",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "feeds4": {
-      "items": 54,
-      "unique_urls": 25,
-      "median_days_on_board": 2,
-      "one_day_pct": 24,
-      "top_item": {
-        "title": "Gemini can now tap into Google Wallet to help manage your money",
-        "url": "https://www.androidcentral.com/apps-software/ai/gemini-can-now-tap-into-google-wallet-to-help-manage-your-money",
         "score": 15,
         "rank": 1
       }
@@ -866,23 +914,11 @@
         "rank": 1
       }
     },
-    "arstechnica": {
-      "items": 53,
-      "unique_urls": 33,
-      "median_days_on_board": 2,
-      "one_day_pct": 42,
-      "top_item": {
-        "title": "SpaceX returned its Starship rocket on Saturday—but there's a catch",
-        "url": "https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "lwn": {
-      "items": 52,
-      "unique_urls": 22,
-      "median_days_on_board": 3,
-      "one_day_pct": 14,
+      "items": 53,
+      "unique_urls": 23,
+      "median_days_on_board": 2,
+      "one_day_pct": 17,
       "top_item": {
         "title": "[$] 25 years of Buildroot",
         "url": "https://lwn.net/Articles/1103395/",
@@ -890,14 +926,50 @@
         "rank": 1
       }
     },
+    "rwebdev": {
+      "items": 53,
+      "unique_urls": 28,
+      "median_days_on_board": 2,
+      "one_day_pct": 36,
+      "top_item": {
+        "title": "Monthly Getting Started / Web Dev Career Thread",
+        "url": "https://www.reddit.com/r/webdev/comments/1w49w0r/monthly_getting_started_web_dev_career_thread/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "scripting": {
-      "items": 52,
-      "unique_urls": 24,
-      "median_days_on_board": 3,
-      "one_day_pct": 33,
+      "items": 53,
+      "unique_urls": 25,
+      "median_days_on_board": 2,
+      "one_day_pct": 36,
       "top_item": {
         "title": "",
         "url": "http://scripting.com/2026/11/15.html#a143649",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "tds": {
+      "items": 53,
+      "unique_urls": 23,
+      "median_days_on_board": 2,
+      "one_day_pct": 17,
+      "top_item": {
+        "title": "A Practitioner's Guide to 6 Agentic GraphRAG Patterns",
+        "url": "https://towardsdatascience.com/a-practitioners-guide-to-6-agentic-graphrag-patterns/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "blogsnvidia": {
+      "items": 52,
+      "unique_urls": 25,
+      "median_days_on_board": 2,
+      "one_day_pct": 16,
+      "top_item": {
+        "title": "AI Is Helping Care Teams Get Patients the Right Care, Sooner",
+        "url": "https://blogs.nvidia.com/blog/how-ai-is-helping-care-teams/",
         "score": 15,
         "rank": 1
       }
@@ -914,14 +986,26 @@
         "rank": 1
       }
     },
-    "tds": {
+    "raskprogramming": {
       "items": 52,
-      "unique_urls": 22,
-      "median_days_on_board": 3,
-      "one_day_pct": 14,
+      "unique_urls": 23,
+      "median_days_on_board": 2,
+      "one_day_pct": 22,
       "top_item": {
-        "title": "A Practitioner's Guide to 6 Agentic GraphRAG Patterns",
-        "url": "https://towardsdatascience.com/a-practitioners-guide-to-6-agentic-graphrag-patterns/",
+        "title": "ChatGPT / AI related questions",
+        "url": "https://www.reddit.com/r/AskProgramming/comments/120de2q/chatgpt_ai_related_questions/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rdotnet": {
+      "items": 52,
+      "unique_urls": 31,
+      "median_days_on_board": 2,
+      "one_day_pct": 45,
+      "top_item": {
+        "title": "Rule change feedback",
+        "url": "https://www.reddit.com/r/dotnet/comments/1sa6ihu/rule_change_feedback/",
         "score": 15,
         "rank": 1
       }
@@ -950,14 +1034,50 @@
         "rank": 1
       }
     },
-    "blogsnvidia": {
+    "daringfireball": {
       "items": 51,
-      "unique_urls": 24,
+      "unique_urls": 26,
       "median_days_on_board": 2,
-      "one_day_pct": 12,
+      "one_day_pct": 27,
       "top_item": {
-        "title": "AI Is Helping Care Teams Get Patients the Right Care, Sooner",
-        "url": "https://blogs.nvidia.com/blog/how-ai-is-helping-care-teams/",
+        "title": "Nvidia Employees Petition for Jensen Huang’s Return",
+        "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+        "score": 811,
+        "rank": 3
+      }
+    },
+    "thenewstack": {
+      "items": 51,
+      "unique_urls": 23,
+      "median_days_on_board": 2,
+      "one_day_pct": 26,
+      "top_item": {
+        "title": "AWS Emulator proves agents need a verification loop. Realism is the hard part.",
+        "url": "https://thenewstack.io/aws-emulator-verification-loops/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "simonw": {
+      "items": 51,
+      "unique_urls": 23,
+      "median_days_on_board": 2,
+      "one_day_pct": 17,
+      "top_item": {
+        "title": "datasette-llm 0.1a11",
+        "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "sitepoint": {
+      "items": 51,
+      "unique_urls": 21,
+      "median_days_on_board": 3,
+      "one_day_pct": 10,
+      "top_item": {
+        "title": "How AI Image-to-Image and Image-to-Video Tools Work, and How to Build a Reliable Workflow",
+        "url": "https://www.sitepoint.com/how-ai-image-to-image-and-image-to-video-tools-work-and-how-to-build-a-reliable-workflow/?utm_source=rss",
         "score": 15,
         "rank": 1
       }
@@ -974,26 +1094,14 @@
         "rank": 1
       }
     },
-    "rdotnet": {
+    "rsveltejs": {
       "items": 51,
-      "unique_urls": 30,
-      "median_days_on_board": 2,
-      "one_day_pct": 43,
+      "unique_urls": 21,
+      "median_days_on_board": 3,
+      "one_day_pct": 19,
       "top_item": {
-        "title": "Rule change feedback",
-        "url": "https://www.reddit.com/r/dotnet/comments/1sa6ihu/rule_change_feedback/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "rkubernetes": {
-      "items": 51,
-      "unique_urls": 25,
-      "median_days_on_board": 2,
-      "one_day_pct": 24,
-      "top_item": {
-        "title": "Monthly: Who is hiring?",
-        "url": "https://www.reddit.com/r/kubernetes/comments/1xl09p9/monthly_who_is_hiring/",
+        "title": "Svelte Summit Ljubljana 2026 - November 19-20",
+        "url": "https://www.reddit.com/r/sveltejs/comments/1v8bdel/svelte_summit_ljubljana_2026_november_1920/",
         "score": 15,
         "rank": 1
       }
@@ -1022,6 +1130,18 @@
         "rank": 1
       }
     },
+    "sec_zdnet": {
+      "items": 51,
+      "unique_urls": 42,
+      "median_days_on_board": 1,
+      "one_day_pct": 79,
+      "top_item": {
+        "title": "How I safely run my OpenClaw AI agent 24/7 on a Mac – with Claude Code standing guard",
+        "url": "https://www.zdnet.com/innovation/openclaw-agent-claude-code-security-test/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "lemmy": {
       "items": 50,
       "unique_urls": 25,
@@ -1034,38 +1154,26 @@
         "rank": 2
       }
     },
-    "daringfireball": {
+    "mongodb": {
       "items": 50,
-      "unique_urls": 25,
-      "median_days_on_board": 2,
-      "one_day_pct": 24,
-      "top_item": {
-        "title": "Nvidia Employees Petition for Jensen Huang’s Return",
-        "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
-        "score": 811,
-        "rank": 3
-      }
-    },
-    "thenewstack": {
-      "items": 50,
-      "unique_urls": 22,
+      "unique_urls": 21,
       "median_days_on_board": 3,
-      "one_day_pct": 23,
+      "one_day_pct": 29,
       "top_item": {
-        "title": "AWS Emulator proves agents need a verification loop. Realism is the hard part.",
-        "url": "https://thenewstack.io/aws-emulator-verification-loops/",
+        "title": "How to Model an Insurance Policy Without Joining Dozens of Tables",
+        "url": "https://www.mongodb.com/company/blog/innovation/how-model-insurance-policy-without-joining-dozens-tables",
         "score": 15,
         "rank": 1
       }
     },
-    "simonw": {
+    "gamasutra": {
       "items": 50,
       "unique_urls": 22,
       "median_days_on_board": 2,
       "one_day_pct": 14,
       "top_item": {
-        "title": "datasette-llm 0.1a11",
-        "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+        "title": "Newly-proposed EU law could place tight restrictions on free-to-play games",
+        "url": "https://www.gamedeveloper.com/business/european-union-proposes-digital-fairness-act-which-could-have-major-effects-on-game-development",
         "score": 15,
         "rank": 1
       }
@@ -1118,6 +1226,18 @@
         "rank": 1
       }
     },
+    "rkotlin": {
+      "items": 50,
+      "unique_urls": 21,
+      "median_days_on_board": 3,
+      "one_day_pct": 24,
+      "top_item": {
+        "title": "Using Jetpack AppState (alpha) with an MVI library: what worked, and what I found out about StateStore along the way",
+        "url": "https://www.reddit.com/r/Kotlin/comments/1xx5s3t/using_jetpack_appstate_alpha_with_an_mvi_library/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "levelup": {
       "items": 50,
       "unique_urls": 30,
@@ -1142,30 +1262,6 @@
         "rank": 20
       }
     },
-    "mongodb": {
-      "items": 49,
-      "unique_urls": 20,
-      "median_days_on_board": 3,
-      "one_day_pct": 25,
-      "top_item": {
-        "title": "How to Model an Insurance Policy Without Joining Dozens of Tables",
-        "url": "https://www.mongodb.com/company/blog/innovation/how-model-insurance-policy-without-joining-dozens-tables",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "gamasutra": {
-      "items": 49,
-      "unique_urls": 21,
-      "median_days_on_board": 2,
-      "one_day_pct": 10,
-      "top_item": {
-        "title": "Newly-proposed EU law could place tight restrictions on free-to-play games",
-        "url": "https://www.gamedeveloper.com/business/european-union-proposes-digital-fairness-act-which-could-have-major-effects-on-game-development",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "sidebar": {
       "items": 49,
       "unique_urls": 19,
@@ -1174,30 +1270,6 @@
       "top_item": {
         "title": "Design is a search problem",
         "url": "https://mattstromawn.com/writing/design-is-a-search-problem/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "sitepoint": {
-      "items": 49,
-      "unique_urls": 19,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "How AI Image-to-Image and Image-to-Video Tools Work, and How to Build a Reliable Workflow",
-        "url": "https://www.sitepoint.com/how-ai-image-to-image-and-image-to-video-tools-work-and-how-to-build-a-reliable-workflow/?utm_source=rss",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "rwebdev": {
-      "items": 49,
-      "unique_urls": 24,
-      "median_days_on_board": 2,
-      "one_day_pct": 25,
-      "top_item": {
-        "title": "Monthly Getting Started / Web Dev Career Thread",
-        "url": "https://www.reddit.com/r/webdev/comments/1w49w0r/monthly_getting_started_web_dev_career_thread/",
         "score": 15,
         "rank": 1
       }
@@ -1226,6 +1298,18 @@
         "rank": 1
       }
     },
+    "rcompsci": {
+      "items": 49,
+      "unique_urls": 23,
+      "median_days_on_board": 2,
+      "one_day_pct": 35,
+      "top_item": {
+        "title": "PSA: This is not r/Programming. Quick Clarification on the guidelines",
+        "url": "https://www.reddit.com/r/compsci/comments/c15nbn/psa_this_is_not_rprogramming_quick_clarification/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "rreactjs": {
       "items": 49,
       "unique_urls": 22,
@@ -1234,6 +1318,18 @@
       "top_item": {
         "title": "React 19.3",
         "url": "https://www.reddit.com/r/reactjs/comments/1wczvs6/react_193/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rexperienceddevs": {
+      "items": 49,
+      "unique_urls": 22,
+      "median_days_on_board": 3,
+      "one_day_pct": 32,
+      "top_item": {
+        "title": "Experienced Devs Weekly Burnout and Venting Thread: A weekly thread for sharing experiences",
+        "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xsbwrz/experienced_devs_weekly_burnout_and_venting/",
         "score": 15,
         "rank": 1
       }
@@ -1258,6 +1354,18 @@
       "top_item": {
         "title": "MEET2027含金量加码：第二批嘉宾强势来袭！",
         "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247944090&idx=1&sn=7ad196ef9360e26ca192f22ef5645bbb",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "xgo831fa": {
+      "items": 49,
+      "unique_urls": 20,
+      "median_days_on_board": 3,
+      "one_day_pct": 15,
+      "top_item": {
+        "title": "B 站还会免费送大会员，有空可以领一下",
+        "url": "https://x.com/op7418/status/2121763817629876440",
         "score": 15,
         "rank": 1
       }
@@ -1298,6 +1406,30 @@
         "rank": 1
       }
     },
+    "developers": {
+      "items": 49,
+      "unique_urls": 20,
+      "median_days_on_board": 3,
+      "one_day_pct": 10,
+      "top_item": {
+        "title": "Catch Go bugs that fuzzing misses with Gemini and a constraint solver",
+        "url": "https://developers.googleblog.com/catch-go-bugs-that-fuzzing-misses-with-gemini-and-a-constraint-solver/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "eff": {
+      "items": 48,
+      "unique_urls": 20,
+      "median_days_on_board": 3,
+      "one_day_pct": 25,
+      "top_item": {
+        "title": "Tech Companies Are Trying to Shift the Entire Concept of Privacy (Again)",
+        "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+        "score": 339,
+        "rank": 3
+      }
+    },
     "elastic": {
       "items": 48,
       "unique_urls": 21,
@@ -1322,6 +1454,18 @@
         "rank": 1
       }
     },
+    "rpython": {
+      "items": 48,
+      "unique_urls": 20,
+      "median_days_on_board": 3,
+      "one_day_pct": 20,
+      "top_item": {
+        "title": "Showcase Thread",
+        "url": "https://www.reddit.com/r/Python/comments/1xntm2j/showcase_thread/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "wired": {
       "items": 48,
       "unique_urls": 18,
@@ -1334,14 +1478,14 @@
         "rank": 1
       }
     },
-    "raskprogramming": {
+    "rhaskell": {
       "items": 48,
-      "unique_urls": 19,
+      "unique_urls": 20,
       "median_days_on_board": 3,
-      "one_day_pct": 5,
+      "one_day_pct": 15,
       "top_item": {
-        "title": "ChatGPT / AI related questions",
-        "url": "https://www.reddit.com/r/AskProgramming/comments/120de2q/chatgpt_ai_related_questions/",
+        "title": "Monthly Hask Anything (November 2026)",
+        "url": "https://www.reddit.com/r/haskell/comments/1xkp46w/monthly_hask_anything_november_2026/",
         "score": 15,
         "rank": 1
       }
@@ -1358,38 +1502,14 @@
         "rank": 1
       }
     },
-    "rkotlin": {
-      "items": 48,
-      "unique_urls": 19,
-      "median_days_on_board": 3,
-      "one_day_pct": 16,
-      "top_item": {
-        "title": "Using Jetpack AppState (alpha) with an MVI library: what worked, and what I found out about StateStore along the way",
-        "url": "https://www.reddit.com/r/Kotlin/comments/1xx5s3t/using_jetpack_appstate_alpha_with_an_mvi_library/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "rsveltejs": {
+    "rnetsec": {
       "items": 48,
       "unique_urls": 18,
       "median_days_on_board": 3,
-      "one_day_pct": 6,
-      "top_item": {
-        "title": "Svelte Summit Ljubljana 2026 - November 19-20",
-        "url": "https://www.reddit.com/r/sveltejs/comments/1v8bdel/svelte_summit_ljubljana_2026_november_1920/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "xgo831fa": {
-      "items": 48,
-      "unique_urls": 19,
-      "median_days_on_board": 3,
       "one_day_pct": 11,
       "top_item": {
-        "title": "B 站还会免费送大会员，有空可以领一下",
-        "url": "https://x.com/op7418/status/2121763817629876440",
+        "title": "r/netsec monthly discussion & tool thread",
+        "url": "https://www.reddit.com/r/netsec/comments/1xl4ghe/rnetsec_monthly_discussion_tool_thread/",
         "score": 15,
         "rank": 1
       }
@@ -1402,6 +1522,18 @@
       "top_item": {
         "title": "Hidden Brain Signals Predict Alzheimer's Years Before Symptoms",
         "url": "http://www.socialpsychology.org/client/redirect.php?from=rss_feed&id=192564&url=https://news.google.com/rss/articles/CBMib0FVX3lxTFBhVGxjTnpfbGlWQm4xV2tOUTl2MDZXZjYyX3oybXlyR0dEUm1xQmMtcEdTQW1sMER6STJxRmZ5SmcxNUFYTlhqbGNFUy1IV3FtdkRNTzNSQml0Qnh1LXRfMzJ1SzFsSW84SEhnM2hRYw?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "stackoverflow": {
+      "items": 48,
+      "unique_urls": 18,
+      "median_days_on_board": 3,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "css stacked background images size [closed]",
+        "url": "https://stackoverflow.com/questions/80016595/css-stacked-background-images-size",
         "score": 15,
         "rank": 1
       }
@@ -1454,18 +1586,6 @@
         "rank": 1
       }
     },
-    "developers": {
-      "items": 48,
-      "unique_urls": 19,
-      "median_days_on_board": 3,
-      "one_day_pct": 5,
-      "top_item": {
-        "title": "Catch Go bugs that fuzzing misses with Gemini and a constraint solver",
-        "url": "https://developers.googleblog.com/catch-go-bugs-that-fuzzing-misses-with-gemini-and-a-constraint-solver/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "yt_hak5": {
       "items": 48,
       "unique_urls": 18,
@@ -1478,16 +1598,16 @@
         "rank": 1
       }
     },
-    "eff": {
+    "aws_blog": {
       "items": 47,
-      "unique_urls": 19,
+      "unique_urls": 17,
       "median_days_on_board": 3,
-      "one_day_pct": 21,
+      "one_day_pct": 6,
       "top_item": {
-        "title": "Tech Companies Are Trying to Shift the Entire Concept of Privacy (Again)",
-        "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
-        "score": 339,
-        "rank": 3
+        "title": "Test your applications against AWS locally with AWS Emulator",
+        "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/",
+        "score": 15,
+        "rank": 1
       }
     },
     "vercel": {
@@ -1522,6 +1642,18 @@
       "top_item": {
         "title": "Bring Vision AI into Ignition with Roboflow",
         "url": "https://roboflow.com/blog/show-vision-ai-results-in-ignition",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "prageng": {
+      "items": 47,
+      "unique_urls": 17,
+      "median_days_on_board": 3,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "The Pulse: What can we learn from the Railway hack?",
+        "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-what-can-we-learn-from-114",
         "score": 15,
         "rank": 1
       }
@@ -1574,18 +1706,6 @@
         "rank": 1
       }
     },
-    "mozilla": {
-      "items": 47,
-      "unique_urls": 17,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Starting with Firefox 162, Firefox Nightly now supports the inherit() arbitrary substitution...",
-        "url": "https://www.firefox.com/en-US/firefox/162.0a1/releasenotes/#note-792539",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "sciencedaily": {
       "items": 47,
       "unique_urls": 17,
@@ -1634,18 +1754,6 @@
         "rank": 1
       }
     },
-    "rpython": {
-      "items": 47,
-      "unique_urls": 19,
-      "median_days_on_board": 3,
-      "one_day_pct": 16,
-      "top_item": {
-        "title": "Showcase Thread",
-        "url": "https://www.reddit.com/r/Python/comments/1xntm2j/showcase_thread/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "readwrite": {
       "items": 47,
       "unique_urls": 17,
@@ -1666,30 +1774,6 @@
       "top_item": {
         "title": "Will We Still Need Software Architects?",
         "url": "https://cynical.dev/203/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "rcompsci": {
-      "items": 47,
-      "unique_urls": 21,
-      "median_days_on_board": 3,
-      "one_day_pct": 29,
-      "top_item": {
-        "title": "PSA: This is not r/Programming. Quick Clarification on the guidelines",
-        "url": "https://www.reddit.com/r/compsci/comments/c15nbn/psa_this_is_not_rprogramming_quick_clarification/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "rhaskell": {
-      "items": 47,
-      "unique_urls": 19,
-      "median_days_on_board": 3,
-      "one_day_pct": 11,
-      "top_item": {
-        "title": "Monthly Hask Anything (November 2026)",
-        "url": "https://www.reddit.com/r/haskell/comments/1xkp46w/monthly_hask_anything_november_2026/",
         "score": 15,
         "rank": 1
       }
@@ -1730,6 +1814,18 @@
         "rank": 1
       }
     },
+    "relixir": {
+      "items": 47,
+      "unique_urls": 21,
+      "median_days_on_board": 2,
+      "one_day_pct": 19,
+      "top_item": {
+        "title": "Elixir v1.20 released: now a gradually typed language",
+        "url": "https://www.reddit.com/r/elixir/comments/1twpzg2/elixir_v120_released_now_a_gradually_typed/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "rclojure": {
       "items": 47,
       "unique_urls": 20,
@@ -1738,6 +1834,18 @@
       "top_item": {
         "title": "Lambda performance comparison of running different Clojure dialects",
         "url": "https://www.reddit.com/r/Clojure/comments/1xw4h0x/lambda_performance_comparison_of_running/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rdjango": {
+      "items": 47,
+      "unique_urls": 18,
+      "median_days_on_board": 3,
+      "one_day_pct": 17,
+      "top_item": {
+        "title": "2026 Django Developers Survey",
+        "url": "https://www.reddit.com/r/django/comments/1tb38y7/2026_django_developers_survey/",
         "score": 15,
         "rank": 1
       }
@@ -1802,18 +1910,6 @@
         "rank": 1
       }
     },
-    "stackoverflow": {
-      "items": 47,
-      "unique_urls": 17,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "css stacked background images size [closed]",
-        "url": "https://stackoverflow.com/questions/80016595/css-stacked-background-images-size",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "hecaitou": {
       "items": 47,
       "unique_urls": 17,
@@ -1822,6 +1918,18 @@
       "top_item": {
         "title": "只为怀旧就可惜了",
         "url": "https://www.hecaitou.com/2026/11/more-than-nostalgia.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "toodaylab": {
+      "items": 47,
+      "unique_urls": 18,
+      "median_days_on_board": 3,
+      "one_day_pct": 17,
+      "top_item": {
+        "title": "我们开箱了宝可梦联名的特别版 Beats Pill，看看为什么最近它这么火",
+        "url": "http://www.toodaylab.com/84293",
         "score": 15,
         "rank": 1
       }
@@ -1838,6 +1946,18 @@
         "rank": 1
       }
     },
+    "rpostgresql": {
+      "items": 47,
+      "unique_urls": 19,
+      "median_days_on_board": 3,
+      "one_day_pct": 16,
+      "top_item": {
+        "title": "Postgres Conference 2027 CFP is open (San Jose, April 21-23)",
+        "url": "https://www.reddit.com/r/PostgreSQL/comments/1x733v2/postgres_conference_2027_cfp_is_open_san_jose/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "youtubeblog": {
       "items": 47,
       "unique_urls": 17,
@@ -1848,6 +1968,18 @@
         "url": "https://blog.youtube/news-and-events/youtube-rockstar-games-gta-vi-launch/",
         "score": 0,
         "rank": 99
+      }
+    },
+    "bytebytego": {
+      "items": 47,
+      "unique_urls": 17,
+      "median_days_on_board": 3,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "LAST CALL FOR ENROLLMENT: AI Engineering Fundamentals",
+        "url": "https://blog.bytebytego.com/p/last-call-for-enrollment-ai-engineering",
+        "score": 15,
+        "rank": 1
       }
     },
     "latentspace": {
@@ -1862,6 +1994,18 @@
         "rank": 1
       }
     },
+    "yt_3blue1brown": {
+      "items": 47,
+      "unique_urls": 17,
+      "median_days_on_board": 3,
+      "one_day_pct": 12,
+      "top_item": {
+        "title": "The Sphere Intersection Puzzle",
+        "url": "https://www.youtube.com/shorts/V_uq3v6xK-4",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "yt_cppcon": {
       "items": 47,
       "unique_urls": 17,
@@ -1870,18 +2014,6 @@
       "top_item": {
         "title": "How I made chess move generation 20x faster #programming #chessengine #coding",
         "url": "https://www.youtube.com/shorts/A38GVPFJSjM",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "sec_zdnet": {
-      "items": 47,
-      "unique_urls": 38,
-      "median_days_on_board": 1,
-      "one_day_pct": 76,
-      "top_item": {
-        "title": "How I safely run my OpenClaw AI agent 24/7 on a Mac – with Claude Code standing guard",
-        "url": "https://www.zdnet.com/innovation/openclaw-agent-claude-code-security-test/",
         "score": 15,
         "rank": 1
       }
@@ -1920,6 +2052,18 @@
         "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
         "score": 678,
         "rank": 5
+      }
+    },
+    "garymarcus": {
+      "items": 46,
+      "unique_urls": 18,
+      "median_days_on_board": 3,
+      "one_day_pct": 17,
+      "top_item": {
+        "title": "Breaking: Eli Lilly CEO becomes latest to push back on Dario Amodei’s ludicrous, Elizabeth Holmes-like medical claims",
+        "url": "https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest",
+        "score": 269,
+        "rank": 17
       }
     },
     "echojs": {
@@ -1966,18 +2110,6 @@
       "top_item": {
         "title": "",
         "url": "https://mastodon.social/@Gargron/117606353009169239",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "aws_blog": {
-      "items": 46,
-      "unique_urls": 16,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Test your applications against AWS locally with AWS Emulator",
-        "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/",
         "score": 15,
         "rank": 1
       }
@@ -2050,6 +2182,18 @@
       "top_item": {
         "title": "Postgres logical replication beyond one writer",
         "url": "https://tapoueh.org/blog/2026/11/postgres-logical-replication-beyond-one-writer/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "mtlynch": {
+      "items": 46,
+      "unique_urls": 16,
+      "median_days_on_board": 3,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "The MustCreate Pattern for Go Tests",
+        "url": "https://mtlynch.io/notes/go-must-create-pattern/",
         "score": 15,
         "rank": 1
       }
@@ -2242,18 +2386,6 @@
       "top_item": {
         "title": "A Kind of Blue",
         "url": "https://nazhamid.com/journal/a-kind-of-blue/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "prageng": {
-      "items": 46,
-      "unique_urls": 16,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "The Pulse: What can we learn from the Railway hack?",
-        "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-what-can-we-learn-from-114",
         "score": 15,
         "rank": 1
       }
@@ -2522,26 +2654,14 @@
         "rank": 1
       }
     },
-    "rdjango": {
+    "rcoding": {
       "items": 46,
-      "unique_urls": 18,
+      "unique_urls": 16,
       "median_days_on_board": 3,
-      "one_day_pct": 17,
+      "one_day_pct": 6,
       "top_item": {
-        "title": "2026 Django Developers Survey",
-        "url": "https://www.reddit.com/r/django/comments/1tb38y7/2026_django_developers_survey/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "rexperienceddevs": {
-      "items": 46,
-      "unique_urls": 19,
-      "median_days_on_board": 3,
-      "one_day_pct": 21,
-      "top_item": {
-        "title": "Experienced Devs Weekly Burnout and Venting Thread: A weekly thread for sharing experiences",
-        "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1xsbwrz/experienced_devs_weekly_burnout_and_venting/",
+        "title": "No \"I made a ____\" posts. No AI slop posts. No advertising. No discord links. No surveys.",
+        "url": "https://www.reddit.com/r/coding/comments/1keo68j/no_i_made_a_posts_no_ai_slop_posts_no_advertising/",
         "score": 15,
         "rank": 1
       }
@@ -2558,18 +2678,6 @@
         "rank": 1
       }
     },
-    "rnetsec": {
-      "items": 46,
-      "unique_urls": 16,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "r/netsec monthly discussion & tool thread",
-        "url": "https://www.reddit.com/r/netsec/comments/1xl4ghe/rnetsec_monthly_discussion_tool_thread/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "planetkde": {
       "items": 46,
       "unique_urls": 16,
@@ -2578,6 +2686,18 @@
       "top_item": {
         "title": "Tellico 4.3.1 Released",
         "url": "https://tellico-project.org/tellico-4-3-1-released/?utm_source=atom_feed",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "aigcweekly": {
+      "items": 46,
+      "unique_urls": 16,
+      "median_days_on_board": 3,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "AIGC Weekly #196",
+        "url": "https://quaily.com/op7418/p/aigc-weekly-mooetzi4",
         "score": 15,
         "rank": 1
       }
@@ -2630,6 +2750,18 @@
         "rank": 1
       }
     },
+    "xiaomitech": {
+      "items": 46,
+      "unique_urls": 16,
+      "median_days_on_board": 3,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "亮相联合国气候大会，小米斩获中国车企首个国际EPD双项认证",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzUxMDQxMDMyNg==&mid=2247520709&idx=1&sn=52eacfac881f2a4bbb6e22cb0e33dc11",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "dewutech": {
       "items": 46,
       "unique_urls": 16,
@@ -2650,6 +2782,18 @@
       "top_item": {
         "title": "【调研】从 Generate 到 Decide：Jev、System One Models 与 Agent 决策层",
         "url": "https://blog.michealwayne.cn/2026/09/19/ai/Jev_System_One_Models_Agent_Decision_Runtime_%E8%B0%83%E7%A0%94%E6%96%87%E7%AB%A0_%E4%BC%98%E5%8C%96%E7%89%88/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "awsarchitectureblo": {
+      "items": 46,
+      "unique_urls": 17,
+      "median_days_on_board": 3,
+      "one_day_pct": 12,
+      "top_item": {
+        "title": "How Thermo Fisher Scientific built AI-powered patient matching on AWS",
+        "url": "https://aws.amazon.com/blogs/architecture/how-thermo-fisher-scientific-built-ai-powered-patient-matching-on-aws/",
         "score": 15,
         "rank": 1
       }
@@ -2810,18 +2954,6 @@
         "rank": 1
       }
     },
-    "toodaylab": {
-      "items": 46,
-      "unique_urls": 17,
-      "median_days_on_board": 3,
-      "one_day_pct": 12,
-      "top_item": {
-        "title": "我们开箱了宝可梦联名的特别版 Beats Pill，看看为什么最近它这么火",
-        "url": "http://www.toodaylab.com/84293",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "bboy": {
       "items": 46,
       "unique_urls": 16,
@@ -2846,18 +2978,6 @@
         "rank": 1
       }
     },
-    "rpostgresql": {
-      "items": 46,
-      "unique_urls": 18,
-      "median_days_on_board": 3,
-      "one_day_pct": 11,
-      "top_item": {
-        "title": "Postgres Conference 2027 CFP is open (San Jose, April 21-23)",
-        "url": "https://www.reddit.com/r/PostgreSQL/comments/1x733v2/postgres_conference_2027_cfp_is_open_san_jose/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "webdesignerdepot": {
       "items": 46,
       "unique_urls": 16,
@@ -2866,18 +2986,6 @@
       "top_item": {
         "title": "AI Is Killing the CAPTCHA—and the Irony Is Perfect",
         "url": "https://webdesignerdepot.com/ai-is-killing-the-captcha-and-the-irony-is-perfect/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "bytebytego": {
-      "items": 46,
-      "unique_urls": 16,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "LAST CALL FOR ENROLLMENT: AI Engineering Fundamentals",
-        "url": "https://blog.bytebytego.com/p/last-call-for-enrollment-ai-engineering",
         "score": 15,
         "rank": 1
       }
@@ -3002,6 +3110,30 @@
         "rank": 1
       }
     },
+    "yt_goto": {
+      "items": 46,
+      "unique_urls": 16,
+      "median_days_on_board": 3,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "Engineer Confidence with Reliable Training Programs • Jennifer Petoff • GOTO Copenhagen 2026",
+        "url": "https://www.youtube.com/watch?v=V0rIn_vb1VU",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "sec_bleepingcomputer": {
+      "items": 46,
+      "unique_urls": 35,
+      "median_days_on_board": 1,
+      "one_day_pct": 69,
+      "top_item": {
+        "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
+        "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "br_alexx_fyi": {
       "items": 46,
       "unique_urls": 31,
@@ -3024,6 +3156,18 @@
         "url": "https://chimera-vocal-synth.vercel.app/",
         "score": 356,
         "rank": 10
+      }
+    },
+    "googleblog": {
+      "items": 45,
+      "unique_urls": 16,
+      "median_days_on_board": 3,
+      "one_day_pct": 12,
+      "top_item": {
+        "title": "Introducing Gemini 4 Hydrogen",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+        "score": 568,
+        "rank": 7
       }
     },
     "cloudflare": {
@@ -3266,6 +3410,30 @@
         "rank": 1
       }
     },
+    "planetpython": {
+      "items": 45,
+      "unique_urls": 19,
+      "median_days_on_board": 3,
+      "one_day_pct": 16,
+      "top_item": {
+        "title": "Speed Matters: zar-rs",
+        "url": "https://brmmm3.github.io/posts/2026/11/15/zar-rs/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "drmaciver": {
+      "items": 45,
+      "unique_urls": 15,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "On Mediocrity",
+        "url": "https://drmaciver.substack.com/p/on-mediocrity",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "chriskiehl": {
       "items": 45,
       "unique_urls": 15,
@@ -3314,18 +3482,6 @@
         "rank": 1
       }
     },
-    "mtlynch": {
-      "items": 45,
-      "unique_urls": 15,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "The MustCreate Pattern for Go Tests",
-        "url": "https://mtlynch.io/notes/go-must-create-pattern/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "nelhage": {
       "items": 45,
       "unique_urls": 15,
@@ -3334,6 +3490,18 @@
       "top_item": {
         "title": "From error-handling to structured concurrency",
         "url": "https://blog.nelhage.com/post/concurrent-error-handling/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "lcamtuf": {
+      "items": 45,
+      "unique_urls": 15,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "Spreadsheets and other models of morality",
+        "url": "https://blog.coredump.cx/p/spreadsheets-and-other-models-of",
         "score": 15,
         "rank": 1
       }
@@ -3626,6 +3794,18 @@
         "rank": 1
       }
     },
+    "vicki": {
+      "items": 45,
+      "unique_urls": 15,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "What are embeddings?",
+        "url": "https://vicki.substack.com/p/what-are-embeddings",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "maggieappleton": {
       "items": 45,
       "unique_urls": 15,
@@ -3694,6 +3874,18 @@
       "top_item": {
         "title": "Val Town is winding down",
         "url": "https://stevekrouse.com/syndicated/val-town-winding-down",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "ayende": {
+      "items": 45,
+      "unique_urls": 15,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "The exponential growth of shadow IT",
+        "url": "http://ayende.com/204292-a/the-exponential-growth-of-shadow-it?Key=92955703-406d-4a7e-a645-f513581f03b3",
         "score": 15,
         "rank": 1
       }
@@ -3878,6 +4070,30 @@
         "rank": 1
       }
     },
+    "addyosubstack": {
+      "items": 45,
+      "unique_urls": 15,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "Agentic Verification",
+        "url": "https://addyo.substack.com/p/agentic-verification",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "aieworkssubstack": {
+      "items": 45,
+      "unique_urls": 16,
+      "median_days_on_board": 3,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "Why hybrid search beats vector search alone (and when it doesn't)",
+        "url": "https://aieworks.substack.com/p/why-hybrid-search-beats-vector-search-alone",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "alistapart": {
       "items": 45,
       "unique_urls": 15,
@@ -3994,6 +4210,18 @@
       "top_item": {
         "title": "Automating Backstage upgrades with codemods",
         "url": "https://backstage.io/blog/2026/10/02/automating-backstage-upgrades-with-codemods",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "batkosubstack": {
+      "items": 45,
+      "unique_urls": 15,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "AI Rooms: 10 peers, 1 hour, what worked and what didn't",
+        "url": "https://batko.substack.com/p/ai-rooms-10-peers-1-hour-what-worked",
         "score": 15,
         "rank": 1
       }
@@ -4322,6 +4550,18 @@
         "rank": 1
       }
     },
+    "codecompass00substack": {
+      "items": 45,
+      "unique_urls": 15,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "How OpenAI Uses LLMs to Explain Neurons Inside LLMs",
+        "url": "https://codecompass00.substack.com/p/how-openai-uses-llms-to-explain-llm-neurons-at-scale",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "cppcast": {
       "items": 45,
       "unique_urls": 15,
@@ -4490,7 +4730,7 @@
         "rank": 1
       }
     },
-    "engineerscodex": {
+    "engineercodexsubstack": {
       "items": 45,
       "unique_urls": 15,
       "median_days_on_board": 3,
@@ -5078,6 +5318,18 @@
         "rank": 1
       }
     },
+    "planetemacs": {
+      "items": 45,
+      "unique_urls": 20,
+      "median_days_on_board": 2,
+      "one_day_pct": 20,
+      "top_item": {
+        "title": "Irreal: Vim To Emacs",
+        "url": "https://irreal.org/blog/?p=14220",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "pragprog": {
       "items": 45,
       "unique_urls": 15,
@@ -5182,6 +5434,30 @@
       "top_item": {
         "title": "Advent of Code Solve Times",
         "url": "https://roadtolarissa.com/advent-of-code",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "seattledataguysubstack": {
+      "items": 45,
+      "unique_urls": 15,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "What’s Going To Matter In 2027 For Data Engineers?",
+        "url": "https://seattledataguy.substack.com/p/whats-going-to-matter-in-2027-for",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "sebgnotessubstack": {
+      "items": 45,
+      "unique_urls": 15,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "Friday Finds Post, 2025-06-06",
+        "url": "https://sebgnotes.substack.com/p/friday-finds-post-2025-06-06",
         "score": 15,
         "rank": 1
       }
@@ -5542,6 +5818,18 @@
       "top_item": {
         "title": "Apollo Summit 2026 Product Highlights: The Governed Graph for Agents and Apps",
         "url": "https://www.apollographql.com/blog/apollo-summit-2026-product-highlights",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "apple": {
+      "items": 45,
+      "unique_urls": 17,
+      "median_days_on_board": 3,
+      "one_day_pct": 12,
+      "top_item": {
+        "title": "Apple HomeView available today",
+        "url": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/",
         "score": 15,
         "rank": 1
       }
@@ -7778,6 +8066,18 @@
         "rank": 1
       }
     },
+    "ethanhuang13substack": {
+      "items": 45,
+      "unique_urls": 15,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "Apple 開發者週報 #269 📖iPhone Duo 特輯",
+        "url": "https://www.ethanhuang13.com/p/269",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "evertpot": {
       "items": 45,
       "unique_urls": 15,
@@ -7846,18 +8146,6 @@
       "top_item": {
         "title": "How to Form a California LLC (without a lawyer)",
         "url": "https://feross.org/form-california-llc/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "fingerprintjs": {
-      "items": 45,
-      "unique_urls": 15,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "How to detect Claude Duet AI agent traffic",
-        "url": "/blog/how-to-detect-claude-duet/",
         "score": 15,
         "rank": 1
       }
@@ -11462,18 +11750,6 @@
         "rank": 1
       }
     },
-    "rcoding": {
-      "items": 45,
-      "unique_urls": 15,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "No \"I made a ____\" posts. No AI slop posts. No advertising. No discord links. No surveys.",
-        "url": "https://www.reddit.com/r/coding/comments/1keo68j/no_i_made_a_posts_no_ai_slop_posts_no_advertising/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "rdatascience": {
       "items": 45,
       "unique_urls": 21,
@@ -11542,6 +11818,18 @@
       "top_item": {
         "title": "Announcing the Swift Student Challenge 2027",
         "url": "https://developer.apple.com/news/?id=jkykd58d",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "gizmodoscience": {
+      "items": 45,
+      "unique_urls": 15,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "Don’t Be Afraid of Self-Improving AI, Says a16z-Backed Startup Mirendil",
+        "url": "https://gizmodo.com/dont-be-afraid-of-self-improving-ai-says-a16z-backed-startup-mirendil-2000778973",
         "score": 15,
         "rank": 1
       }
@@ -11942,18 +12230,6 @@
         "rank": 1
       }
     },
-    "aigcweekly": {
-      "items": 45,
-      "unique_urls": 15,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "AIGC Weekly #196",
-        "url": "https://quaily.com/op7418/p/aigc-weekly-mooetzi4",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "akimio": {
       "items": 45,
       "unique_urls": 15,
@@ -12082,18 +12358,6 @@
       "top_item": {
         "title": "Index-Translate：支持 150 种语言的多模态翻译模型是如何炼成的？",
         "url": "https://mp.weixin.qq.com/s?__biz=Mzg3Njc0NTgwMg==&mid=2247504445&idx=1&sn=f75fce7106f8ba37e7ee3918ab5aa787",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "xiaomitech": {
-      "items": 45,
-      "unique_urls": 15,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "亮相联合国气候大会，小米斩获中国车企首个国际EPD双项认证",
-        "url": "https://mp.weixin.qq.com/s?__biz=MzUxMDQxMDMyNg==&mid=2247520709&idx=1&sn=52eacfac881f2a4bbb6e22cb0e33dc11",
         "score": 15,
         "rank": 1
       }
@@ -12298,18 +12562,6 @@
       "top_item": {
         "title": "逃离：一个实验",
         "url": "http://raptazure.github.io/2026/07/21/%E9%80%83%E7%A6%BB%EF%BC%9A%E4%B8%80%E4%B8%AA%E5%AE%9E%E9%AA%8C/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "awsarchitectureblo": {
-      "items": 45,
-      "unique_urls": 16,
-      "median_days_on_board": 3,
-      "one_day_pct": 6,
-      "top_item": {
-        "title": "How Thermo Fisher Scientific built AI-powered patient matching on AWS",
-        "url": "https://aws.amazon.com/blogs/architecture/how-thermo-fisher-scientific-built-ai-powered-patient-matching-on-aws/",
         "score": 15,
         "rank": 1
       }
@@ -12962,6 +13214,18 @@
         "rank": 1
       }
     },
+    "coffeeandjunk": {
+      "items": 45,
+      "unique_urls": 15,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "There Is No Life That Cannot Be Successfully Prosecuted From the Right Angle",
+        "url": "https://coffeeandjunk.substack.com/p/position",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "bestxtools": {
       "items": 45,
       "unique_urls": 15,
@@ -12994,6 +13258,18 @@
       "top_item": {
         "title": "混沌周刊 #42 | 谁的救生衣",
         "url": "https://weekly.love/issue-42/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "kelvinmu": {
+      "items": 45,
+      "unique_urls": 15,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "What AI enterprise leaders care about",
+        "url": "https://kelvinmu.substack.com/p/what-ai-enterprise-leaders-care-about",
         "score": 15,
         "rank": 1
       }
@@ -15398,7 +15674,43 @@
         "rank": 1
       }
     },
-    "nl_devinterrupted": {
+    "sequence": {
+      "items": 45,
+      "unique_urls": 16,
+      "median_days_on_board": 3,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "The Sequence Radar - Issue #972: Last Week in AI: The Invisible Hand Wore a Leather Jacket",
+        "url": "https://thesequence.substack.com/p/the-sequence-radar-issue-972-last",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "aisnakeoil": {
+      "items": 45,
+      "unique_urls": 15,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "The missing quadrant in responses to AI",
+        "url": "https://www.normaltech.ai/p/the-missing-quadrant-in-responses",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "codingchallenges": {
+      "items": 45,
+      "unique_urls": 15,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "Coding Challenge #146 - Kanban",
+        "url": "https://codingchallenges.substack.com/p/coding-challenge-146-kanban",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "devinterrupted": {
       "items": 45,
       "unique_urls": 15,
       "median_days_on_board": 3,
@@ -15406,6 +15718,18 @@
       "top_item": {
         "title": "All the code review is a stage",
         "url": "https://devinterrupted.substack.com/p/all-the-code-review-is-a-stage",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "chinai": {
+      "items": 45,
+      "unique_urls": 16,
+      "median_days_on_board": 3,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "ChinAI #381: China’s Venture Capital Market is Defying Common Sense",
+        "url": "https://chinai.substack.com/p/chinai-381-chinas-venture-capital",
         "score": 15,
         "rank": 1
       }
@@ -15598,18 +15922,6 @@
       "top_item": {
         "title": "am I becoming a real Game Dev?",
         "url": "https://www.youtube.com/watch?v=tYQyh1tjSFc",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "yt_3blue1brown": {
-      "items": 45,
-      "unique_urls": 15,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "The Sphere Intersection Puzzle",
-        "url": "https://www.youtube.com/shorts/V_uq3v6xK-4",
         "score": 15,
         "rank": 1
       }
@@ -15902,18 +16214,6 @@
         "rank": 1
       }
     },
-    "yt_goto": {
-      "items": 45,
-      "unique_urls": 15,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Engineer Confidence with Reliable Training Programs • Jennifer Petoff • GOTO Copenhagen 2026",
-        "url": "https://www.youtube.com/watch?v=V0rIn_vb1VU",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "yt_pyconus": {
       "items": 45,
       "unique_urls": 15,
@@ -15946,18 +16246,6 @@
       "top_item": {
         "title": "Indonesia’s Mega Rice Failure",
         "url": "https://www.youtube.com/watch?v=ZnNRkW51qng",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "sec_bleepingcomputer": {
-      "items": 45,
-      "unique_urls": 34,
-      "median_days_on_board": 1,
-      "one_day_pct": 68,
-      "top_item": {
-        "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
-        "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
         "score": 15,
         "rank": 1
       }
@@ -15998,6 +16286,18 @@
         "rank": 1
       }
     },
+    "br_one_mile_at_a_time_airline_travel_news_r": {
+      "items": 45,
+      "unique_urls": 34,
+      "median_days_on_board": 1,
+      "one_day_pct": 68,
+      "top_item": {
+        "title": "Is A Priority Pass Airport Lounge Membership Worth It?",
+        "url": "https://onemileatatime.com/guides/priority-pass-airport-lounge/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "br_light_logged": {
       "items": 45,
       "unique_urls": 30,
@@ -16022,18 +16322,6 @@
         "rank": 8
       }
     },
-    "googleblog": {
-      "items": 44,
-      "unique_urls": 15,
-      "median_days_on_board": 3,
-      "one_day_pct": 7,
-      "top_item": {
-        "title": "Introducing Gemini 4 Hydrogen",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-        "score": 568,
-        "rank": 7
-      }
-    },
     "pythonblog": {
       "items": 44,
       "unique_urls": 15,
@@ -16042,42 +16330,6 @@
       "top_item": {
         "title": "Python 3.16.0 alpha 2 is now available",
         "url": "https://blog.python.org/2026/11/python-3160-alpha-2-is-now-available/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "planetpython": {
-      "items": 44,
-      "unique_urls": 18,
-      "median_days_on_board": 3,
-      "one_day_pct": 11,
-      "top_item": {
-        "title": "Speed Matters: zar-rs",
-        "url": "https://brmmm3.github.io/posts/2026/11/15/zar-rs/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "planetemacs": {
-      "items": 44,
-      "unique_urls": 19,
-      "median_days_on_board": 2,
-      "one_day_pct": 16,
-      "top_item": {
-        "title": "Irreal: Vim To Emacs",
-        "url": "https://irreal.org/blog/?p=14220",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "apple": {
-      "items": 44,
-      "unique_urls": 16,
-      "median_days_on_board": 3,
-      "one_day_pct": 6,
-      "top_item": {
-        "title": "Apple HomeView available today",
-        "url": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/",
         "score": 15,
         "rank": 1
       }
@@ -16130,18 +16382,6 @@
         "rank": 1
       }
     },
-    "br_one_mile_at_a_time_airline_travel_news_r": {
-      "items": 44,
-      "unique_urls": 33,
-      "median_days_on_board": 1,
-      "one_day_pct": 67,
-      "top_item": {
-        "title": "Is A Priority Pass Airport Lounge Membership Worth It?",
-        "url": "https://onemileatatime.com/guides/priority-pass-airport-lounge/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "planetclojure": {
       "items": 43,
       "unique_urls": 16,
@@ -16175,6 +16415,18 @@
         "title": "10 Big Ol’ 2027 Black Friday Deals",
         "url": "https://css-tricks.com/2027-front-end-black-friday-deals/",
         "score": 15,
+        "rank": 1
+      }
+    },
+    "itnext": {
+      "items": 43,
+      "unique_urls": 24,
+      "median_days_on_board": 2,
+      "one_day_pct": 33,
+      "top_item": {
+        "title": "The More We Delegate to AI, the More We Need to Stay in Control.",
+        "url": "https://itnext.io/the-more-we-delegate-to-ai-the-more-we-need-to-stay-in-control-c141aa51e963?source=rss----5b301f10ddcd---4",
+        "score": 10,
         "rank": 1
       }
     },
@@ -16226,6 +16478,18 @@
         "rank": 1
       }
     },
+    "sec_google_threat_analysis_group": {
+      "items": 42,
+      "unique_urls": 30,
+      "median_days_on_board": 1,
+      "one_day_pct": 60,
+      "top_item": {
+        "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "score": 568,
+        "rank": 8
+      }
+    },
     "beesbuzz": {
       "items": 42,
       "unique_urls": 14,
@@ -16234,6 +16498,18 @@
       "top_item": {
         "title": "fluffy rambles: Random updates",
         "url": "https://beesbuzz.biz/blog/9626-Random-updates",
+        "score": 14,
+        "rank": 1
+      }
+    },
+    "gwern": {
+      "items": 42,
+      "unique_urls": 14,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "May 2021 Gwern.net Newsletter",
+        "url": "https://gwern.substack.com/p/may-2021-gwernnet-newsletter",
         "score": 14,
         "rank": 1
       }
@@ -16502,6 +16778,18 @@
         "rank": 1
       }
     },
+    "databricks": {
+      "items": 41,
+      "unique_urls": 22,
+      "median_days_on_board": 2,
+      "one_day_pct": 27,
+      "top_item": {
+        "title": "Apache Spark vs Apache Flink: which should you use?",
+        "url": "https://www.databricks.com/blog/spark-vs-flink",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "erahm": {
       "items": 40,
       "unique_urls": 25,
@@ -16511,6 +16799,18 @@
         "title": "Doubling the Number of Content Processes in Firefox",
         "url": "https://erahm.org/posts/doubling-the-number-of-content-processes-in-firefox/",
         "score": 15,
+        "rank": 1
+      }
+    },
+    "stanfordeng": {
+      "items": 40,
+      "unique_urls": 20,
+      "median_days_on_board": 3,
+      "one_day_pct": 50,
+      "top_item": {
+        "title": "The future of substance use disorder",
+        "url": "https://engineering.stanford.edu/news/future-substance-use-disorder",
+        "score": 10,
         "rank": 1
       }
     },
@@ -16546,6 +16846,42 @@
       "top_item": {
         "title": "The Ember Times - Issue No. 211",
         "url": "https://embertimes.substack.com/p/the-ember-times-issue-no-211",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "br_ion_howto_ion_howto_diy_projects": {
+      "items": 40,
+      "unique_urls": 31,
+      "median_days_on_board": 1,
+      "one_day_pct": 71,
+      "top_item": {
+        "title": "How to Change iPhone App Icons with Shortcuts and Custom Photos",
+        "url": "https://www.ionhowto.com/how-to-change-iphone-app-icons-shortcuts-custom-photos/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "br_it_starts_with_a_birthstone": {
+      "items": 40,
+      "unique_urls": 26,
+      "median_days_on_board": 2,
+      "one_day_pct": 46,
+      "top_item": {
+        "title": "Coveted # 43 Liquid Swords - GZA",
+        "url": "https://itstartswithabirthstone.blogspot.com/2026/11/coveted-43-liquid-swords-gza.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "br_kottke_org_home_of_fine_hypertext_produc": {
+      "items": 40,
+      "unique_urls": 31,
+      "median_days_on_board": 1,
+      "one_day_pct": 71,
+      "top_item": {
+        "title": "A Literary Map of the United States",
+        "url": "https://kottke.org/26/11/a-literary-map-of-the-united-states",
         "score": 15,
         "rank": 1
       }
@@ -16694,18 +17030,6 @@
         "rank": 1
       }
     },
-    "br_ion_howto_ion_howto_diy_projects": {
-      "items": 39,
-      "unique_urls": 30,
-      "median_days_on_board": 1,
-      "one_day_pct": 70,
-      "top_item": {
-        "title": "How to Change iPhone App Icons with Shortcuts and Custom Photos",
-        "url": "https://www.ionhowto.com/how-to-change-iphone-app-icons-shortcuts-custom-photos/",
-        "score": 10,
-        "rank": 1
-      }
-    },
     "br_maique_void": {
       "items": 39,
       "unique_urls": 25,
@@ -16718,26 +17042,14 @@
         "rank": 1
       }
     },
-    "br_it_starts_with_a_birthstone": {
-      "items": 39,
-      "unique_urls": 25,
-      "median_days_on_board": 2,
-      "one_day_pct": 44,
-      "top_item": {
-        "title": "Coveted # 43 Liquid Swords - GZA",
-        "url": "https://itstartswithabirthstone.blogspot.com/2026/11/coveted-43-liquid-swords-gza.html",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "databricks": {
+    "sec_databreaches": {
       "items": 38,
-      "unique_urls": 19,
-      "median_days_on_board": 2,
-      "one_day_pct": 16,
+      "unique_urls": 30,
+      "median_days_on_board": 1,
+      "one_day_pct": 73,
       "top_item": {
-        "title": "Apache Spark vs Apache Flink: which should you use?",
-        "url": "https://www.databricks.com/blog/spark-vs-flink",
+        "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
+        "url": "https://databreaches.net/2026/11/15/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
         "score": 10,
         "rank": 1
       }
@@ -16754,15 +17066,39 @@
         "rank": 1
       }
     },
-    "br_kottke_org_home_of_fine_hypertext_produc": {
+    "br_marginal_revolution_small_steps_toward_a": {
       "items": 38,
-      "unique_urls": 29,
-      "median_days_on_board": 1,
-      "one_day_pct": 69,
+      "unique_urls": 24,
+      "median_days_on_board": 2,
+      "one_day_pct": 42,
       "top_item": {
-        "title": "A Literary Map of the United States",
-        "url": "https://kottke.org/26/11/a-literary-map-of-the-united-states",
+        "title": "Sunday assorted links",
+        "url": "https://marginalrevolution.com/marginalrevolution/2026/11/sunday-assorted-links-590.html?utm_source=rss&utm_medium=rss&utm_campaign=sunday-assorted-links-590",
         "score": 15,
+        "rank": 1
+      }
+    },
+    "br_world_of_reel": {
+      "items": 38,
+      "unique_urls": 30,
+      "median_days_on_board": 1,
+      "one_day_pct": 73,
+      "top_item": {
+        "title": "What Did You See This Weekend? ‘Ebenezer,’ ‘Paper Tiger' Opens, ‘Victorian Psycho,' ‘How to Rob a Bank,' ‘Wild Horse Nine' Goes Wide",
+        "url": "https://www.worldofreel.com/blog/2026/11/15/what-did-you-see-this-weekend-ebenezer-paper-tiger-opens-victorian-psycho-how-to-rob-a-bank-wild-horse-nine-goes-wide",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "hackaday": {
+      "items": 37,
+      "unique_urls": 27,
+      "median_days_on_board": 1,
+      "one_day_pct": 63,
+      "top_item": {
+        "title": "An MP3 Player, Implemented As A Factorio Blueprint",
+        "url": "https://hackaday.com/2026/11/15/an-mp3-player-implemented-as-a-factorio-blueprint/",
+        "score": 7,
         "rank": 1
       }
     },
@@ -16775,18 +17111,6 @@
         "title": "AI models hate Python and love PHP: we asked 12 of them 1,200 times",
         "url": "https://blog.jetbrains.com/ai/2026/11/ai-models-hate-python-and-love-php-we-asked-12-of-them-1-200-times/",
         "score": 12,
-        "rank": 1
-      }
-    },
-    "itnext": {
-      "items": 37,
-      "unique_urls": 18,
-      "median_days_on_board": 2,
-      "one_day_pct": 11,
-      "top_item": {
-        "title": "The More We Delegate to AI, the More We Need to Stay in Control.",
-        "url": "https://itnext.io/the-more-we-delegate-to-ai-the-more-we-need-to-stay-in-control-c141aa51e963?source=rss----5b301f10ddcd---4",
-        "score": 10,
         "rank": 1
       }
     },
@@ -16850,27 +17174,15 @@
         "rank": 1
       }
     },
-    "sec_databreaches": {
+    "savingadvice": {
       "items": 37,
-      "unique_urls": 29,
-      "median_days_on_board": 1,
-      "one_day_pct": 72,
-      "top_item": {
-        "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
-        "url": "https://databreaches.net/2026/11/15/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "br_marginal_revolution_small_steps_toward_a": {
-      "items": 37,
-      "unique_urls": 23,
+      "unique_urls": 22,
       "median_days_on_board": 2,
-      "one_day_pct": 39,
+      "one_day_pct": 36,
       "top_item": {
-        "title": "Sunday assorted links",
-        "url": "https://marginalrevolution.com/marginalrevolution/2026/11/sunday-assorted-links-590.html?utm_source=rss&utm_medium=rss&utm_campaign=sunday-assorted-links-590",
-        "score": 15,
+        "title": "Your Doctor Suddenly Retires — What Happens to Your Prescriptions and Medical Records?",
+        "url": "https://www.savingadvice.com/articles/2026/11/15/10769700_your-doctor-retires-without-warning-what-happens-to-your-prescriptions-and-medical-records.html",
+        "score": 10,
         "rank": 1
       }
     },
@@ -16883,30 +17195,6 @@
         "title": "Publishing the Booker-winner",
         "url": "https://www.complete-review.com/saloon/archive/202611b.htm#of8",
         "score": 15,
-        "rank": 1
-      }
-    },
-    "sec_google_threat_analysis_group": {
-      "items": 36,
-      "unique_urls": 24,
-      "median_days_on_board": 2,
-      "one_day_pct": 50,
-      "top_item": {
-        "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-        "score": 568,
-        "rank": 8
-      }
-    },
-    "hackaday": {
-      "items": 36,
-      "unique_urls": 26,
-      "median_days_on_board": 1,
-      "one_day_pct": 62,
-      "top_item": {
-        "title": "An MP3 Player, Implemented As A Factorio Blueprint",
-        "url": "https://hackaday.com/2026/11/15/an-mp3-player-implemented-as-a-factorio-blueprint/",
-        "score": 7,
         "rank": 1
       }
     },
@@ -17306,6 +17594,30 @@
         "rank": 1
       }
     },
+    "br_diamond_geezer": {
+      "items": 36,
+      "unique_urls": 21,
+      "median_days_on_board": 2,
+      "one_day_pct": 29,
+      "top_item": {
+        "title": "Rail week (1)",
+        "url": "http://diamondgeezer.blogspot.com/2026/11/rail-week-1.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "br_pharyngula_evolution_development_and_ran": {
+      "items": 36,
+      "unique_urls": 22,
+      "median_days_on_board": 2,
+      "one_day_pct": 36,
+      "top_item": {
+        "title": "Canada is not sending their best",
+        "url": "https://freethoughtblogs.com/pharyngula/2026/11/15/canada-is-not-sending-their-best/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "br_small_scale_world": {
       "items": 36,
       "unique_urls": 22,
@@ -17314,18 +17626,6 @@
       "top_item": {
         "title": "S is for Space Shelfies & Sandown!",
         "url": "https://smallscaleworld.blogspot.com/2026/11/s-is-for-space-shelfies-sandown.html",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "br_world_of_reel": {
-      "items": 36,
-      "unique_urls": 28,
-      "median_days_on_board": 1,
-      "one_day_pct": 71,
-      "top_item": {
-        "title": "What Did You See This Weekend? ‘Ebenezer,’ ‘Paper Tiger' Opens, ‘Victorian Psycho,' ‘How to Rob a Bank,' ‘Wild Horse Nine' Goes Wide",
-        "url": "https://www.worldofreel.com/blog/2026/11/15/what-did-you-see-this-weekend-ebenezer-paper-tiger-opens-victorian-psycho-how-to-rob-a-bank-wild-horse-nine-goes-wide",
         "score": 15,
         "rank": 1
       }
@@ -17340,6 +17640,18 @@
         "url": "https://orivega.io/from-tmail-to-tilde-i-rewrote-my-winter-project-as-a-framework/",
         "score": 15,
         "rank": 1
+      }
+    },
+    "developernvidia": {
+      "items": 35,
+      "unique_urls": 20,
+      "median_days_on_board": 2,
+      "one_day_pct": 30,
+      "top_item": {
+        "title": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
+        "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+        "score": 114,
+        "rank": 9
       }
     },
     "itsecurityguru": {
@@ -17414,42 +17726,6 @@
         "rank": 1
       }
     },
-    "savingadvice": {
-      "items": 35,
-      "unique_urls": 20,
-      "median_days_on_board": 2,
-      "one_day_pct": 30,
-      "top_item": {
-        "title": "Your Doctor Suddenly Retires — What Happens to Your Prescriptions and Medical Records?",
-        "url": "https://www.savingadvice.com/articles/2026/11/15/10769700_your-doctor-retires-without-warning-what-happens-to-your-prescriptions-and-medical-records.html",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "br_diamond_geezer": {
-      "items": 35,
-      "unique_urls": 20,
-      "median_days_on_board": 2,
-      "one_day_pct": 25,
-      "top_item": {
-        "title": "Rail week (1)",
-        "url": "http://diamondgeezer.blogspot.com/2026/11/rail-week-1.html",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "br_pharyngula_evolution_development_and_ran": {
-      "items": 35,
-      "unique_urls": 21,
-      "median_days_on_board": 2,
-      "one_day_pct": 33,
-      "top_item": {
-        "title": "Canada is not sending their best",
-        "url": "https://freethoughtblogs.com/pharyngula/2026/11/15/canada-is-not-sending-their-best/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "br_blogxxxxxxxx": {
       "items": 35,
       "unique_urls": 22,
@@ -17486,18 +17762,6 @@
         "rank": 1
       }
     },
-    "developernvidia": {
-      "items": 34,
-      "unique_urls": 19,
-      "median_days_on_board": 2,
-      "one_day_pct": 26,
-      "top_item": {
-        "title": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
-        "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
-        "score": 114,
-        "rank": 9
-      }
-    },
     "aphyr": {
       "items": 34,
       "unique_urls": 11,
@@ -17510,15 +17774,15 @@
         "rank": 14
       }
     },
-    "sec_the_register": {
+    "archpaper": {
       "items": 34,
-      "unique_urls": 20,
+      "unique_urls": 17,
       "median_days_on_board": 2,
-      "one_day_pct": 30,
+      "one_day_pct": 35,
       "top_item": {
-        "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
-        "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632",
-        "score": 15,
+        "title": "Eavesdrop: Kalshi and Artnet announce epic collab, Supreme Court greenlights Big Bend border wall, Zohran at MoMA, The New Yorker snubs architects, Penn honors Holl",
+        "url": "https://www.archpaper.com/2026/11/eavesdrop-kalshi-artnet/",
+        "score": 10,
         "rank": 1
       }
     },
@@ -17546,6 +17810,30 @@
         "rank": 1
       }
     },
+    "poststatus": {
+      "items": 34,
+      "unique_urls": 12,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "Post Status Happiness Hour Session Thirty Nine",
+        "url": "https://poststatus.com/post-status-happiness-hour-session-thirty-nine/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "rlaravel": {
+      "items": 34,
+      "unique_urls": 20,
+      "median_days_on_board": 2,
+      "one_day_pct": 30,
+      "top_item": {
+        "title": "Weekly /r/Laravel Help Thread",
+        "url": "https://www.reddit.com/r/laravel/comments/1xx24nx/weekly_rlaravel_help_thread/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "sec_ahnlab_security_intelligence_center": {
       "items": 34,
       "unique_urls": 19,
@@ -17558,6 +17846,18 @@
         "rank": 1
       }
     },
+    "br_bookofjoe": {
+      "items": 34,
+      "unique_urls": 20,
+      "median_days_on_board": 2,
+      "one_day_pct": 30,
+      "top_item": {
+        "title": "Screens of Death",
+        "url": "https://bookofjoe2.blogspot.com/2026/11/screens-of-death.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "br_manton_reece": {
       "items": 34,
       "unique_urls": 20,
@@ -17566,6 +17866,18 @@
       "top_item": {
         "title": "",
         "url": "https://www.manton.org/2026/11/15/rolled-out-an-updated-design.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "br_marzchipane": {
+      "items": 34,
+      "unique_urls": 18,
+      "median_days_on_board": 2,
+      "one_day_pct": 11,
+      "top_item": {
+        "title": "Sunrise on the Reaping",
+        "url": "https://marzchipane.com/reviews/books/sunrise_on_the_reaping",
         "score": 15,
         "rank": 1
       }
@@ -17627,6 +17939,18 @@
         "title": "Understanding is the new bottleneck",
         "url": "https://geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html",
         "score": 11,
+        "rank": 1
+      }
+    },
+    "newsroomspotify": {
+      "items": 33,
+      "unique_urls": 14,
+      "median_days_on_board": 3,
+      "one_day_pct": 21,
+      "top_item": {
+        "title": "‘The Toast’ Hosts Jackie and Claudia Oshry Want to Make Pop Culture Feel Like the Group Chat",
+        "url": "https://newsroom.spotify.com/2026-11-13/the-toast-jackie-claudia-oshry/",
+        "score": 10,
         "rank": 1
       }
     },
@@ -17882,18 +18206,6 @@
         "rank": 1
       }
     },
-    "br_bookofjoe": {
-      "items": 33,
-      "unique_urls": 19,
-      "median_days_on_board": 2,
-      "one_day_pct": 26,
-      "top_item": {
-        "title": "Screens of Death",
-        "url": "https://bookofjoe2.blogspot.com/2026/11/screens-of-death.html",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "br_tomaytotomato_com": {
       "items": 33,
       "unique_urls": 18,
@@ -17942,6 +18254,18 @@
         "rank": 1
       }
     },
+    "br_dull_tool_dim_bulb": {
+      "items": 33,
+      "unique_urls": 18,
+      "median_days_on_board": 2,
+      "one_day_pct": 17,
+      "top_item": {
+        "title": "Woman with Pepsi Soda Bottlecaps in her eyes and pretzel earrings Vintage Photo Snapshot.",
+        "url": "https://dulltooldimbulb.blogspot.com/2026/11/woman-with-pepsi-soda-bottlecaps-in-her.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "br_justin_searls_co": {
       "items": 33,
       "unique_urls": 18,
@@ -17966,6 +18290,18 @@
         "rank": 1
       }
     },
+    "br_loureviews_london_theatre_films_books_di": {
+      "items": 33,
+      "unique_urls": 18,
+      "median_days_on_board": 2,
+      "one_day_pct": 17,
+      "top_item": {
+        "title": "Play review: On The Line at Questors Studio",
+        "url": "https://loureviews.blog/2026/11/15/play-review-on-the-line-at-questors-studio/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "br_marcel_io": {
       "items": 33,
       "unique_urls": 18,
@@ -17986,6 +18322,30 @@
       "top_item": {
         "title": "Video of Brian Willis’ Talk on the Province House Conservation Project",
         "url": "https://ruk.ca/content/video-brian-willis-talk-province-house-conservation-project",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "br_news_articles": {
+      "items": 33,
+      "unique_urls": 23,
+      "median_days_on_board": 1,
+      "one_day_pct": 57,
+      "top_item": {
+        "title": "Falling concrete shuts Thameslink train services through central London",
+        "url": "https://www.ianvisits.co.uk/articles/falling-concrete-shuts-thameslink-train-services-through-central-london-94124/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "br_news_from_me_mark_evanier_s_blog_about_a": {
+      "items": 33,
+      "unique_urls": 18,
+      "median_days_on_board": 2,
+      "one_day_pct": 17,
+      "top_item": {
+        "title": "Comic-Con News",
+        "url": "https://www.newsfromme.com/2026/11/15/83270/",
         "score": 15,
         "rank": 1
       }
@@ -18170,18 +18530,6 @@
         "rank": 1
       }
     },
-    "newsroomspotify": {
-      "items": 32,
-      "unique_urls": 13,
-      "median_days_on_board": 3,
-      "one_day_pct": 15,
-      "top_item": {
-        "title": "‘The Toast’ Hosts Jackie and Claudia Oshry Want to Make Pop Culture Feel Like the Group Chat",
-        "url": "https://newsroom.spotify.com/2026-11-13/the-toast-jackie-claudia-oshry/",
-        "score": 10,
-        "rank": 1
-      }
-    },
     "nytco": {
       "items": 32,
       "unique_urls": 12,
@@ -18290,6 +18638,18 @@
         "rank": 1
       }
     },
+    "microsoft": {
+      "items": 32,
+      "unique_urls": 12,
+      "median_days_on_board": 3,
+      "one_day_pct": 8,
+      "top_item": {
+        "title": "Microsoft Research Focus – Edition #98",
+        "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "spinatomicobject": {
       "items": 32,
       "unique_urls": 12,
@@ -18314,14 +18674,38 @@
         "rank": 1
       }
     },
-    "relixir": {
+    "uxplanet": {
       "items": 32,
-      "unique_urls": 17,
-      "median_days_on_board": 2,
-      "one_day_pct": 12,
+      "unique_urls": 13,
+      "median_days_on_board": 3,
+      "one_day_pct": 15,
       "top_item": {
-        "title": "Elixir v1.20 released: now a gradually typed language",
-        "url": "https://www.reddit.com/r/elixir/comments/1twpzg2/elixir_v120_released_now_a_gradually_typed/",
+        "title": "Claude Fable 5.2 Official Prompting Guide",
+        "url": "https://uxplanet.org/claude-fable-5-2-official-prompting-guide-34cd74abe0a2?source=rss----819cc2aaeee0---4",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "rdevops": {
+      "items": 32,
+      "unique_urls": 26,
+      "median_days_on_board": 1,
+      "one_day_pct": 77,
+      "top_item": {
+        "title": "Weekly Self Promotion Thread",
+        "url": "https://www.reddit.com/r/devops/comments/1xrlgil/weekly_self_promotion_thread/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "rswift": {
+      "items": 32,
+      "unique_urls": 19,
+      "median_days_on_board": 2,
+      "one_day_pct": 32,
+      "top_item": {
+        "title": "FAQ and Advice for Beginners - Please read before posting",
+        "url": "https://www.reddit.com/r/swift/comments/l0u5c3/faq_and_advice_for_beginners_please_read_before/",
         "score": 15,
         "rank": 1
       }
@@ -18470,18 +18854,6 @@
         "rank": 1
       }
     },
-    "poststatus": {
-      "items": 32,
-      "unique_urls": 12,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Post Status Happiness Hour Session Thirty Nine",
-        "url": "https://poststatus.com/post-status-happiness-hour-session-thirty-nine/",
-        "score": 10,
-        "rank": 1
-      }
-    },
     "br_colin_devroe_head_of_ai_product_at_nerdp": {
       "items": 32,
       "unique_urls": 16,
@@ -18502,6 +18874,18 @@
       "top_item": {
         "title": "UnrealIRCd flaw, Cursor breach, GitHub wfx-loot target 61K repos",
         "url": "https://defend.network/briefings/unrealircd-cursor-breach-github-wfx-loot-2026-11-15.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "sec_nextgov": {
+      "items": 32,
+      "unique_urls": 21,
+      "median_days_on_board": 2,
+      "one_day_pct": 48,
+      "top_item": {
+        "title": "Legacy tech issue led to FAA’s nationwide ground stop",
+        "url": "https://www.nextgov.com/modernization/2026/11/legacy-tech-issue-led-faas-nationwide-ground-stop/417232/",
         "score": 15,
         "rank": 1
       }
@@ -18854,6 +19238,18 @@
         "rank": 1
       }
     },
+    "br_shellsharks": {
+      "items": 32,
+      "unique_urls": 17,
+      "median_days_on_board": 2,
+      "one_day_pct": 12,
+      "top_item": {
+        "title": "Scroll quīnquāgintā",
+        "url": "https://shellsharks.com/scrolls/scroll/2026-11-10",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "br_talmud_tech_ezra_brand_substack": {
       "items": 32,
       "unique_urls": 17,
@@ -18962,18 +19358,6 @@
         "rank": 1
       }
     },
-    "br_dull_tool_dim_bulb": {
-      "items": 32,
-      "unique_urls": 17,
-      "median_days_on_board": 2,
-      "one_day_pct": 12,
-      "top_item": {
-        "title": "Woman with Pepsi Soda Bottlecaps in her eyes and pretzel earrings Vintage Photo Snapshot.",
-        "url": "https://dulltooldimbulb.blogspot.com/2026/11/woman-with-pepsi-soda-bottlecaps-in-her.html",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "br_anecdotal_evidence": {
       "items": 32,
       "unique_urls": 17,
@@ -18994,6 +19378,18 @@
       "top_item": {
         "title": "FISH FINGERS: THE DEEP HISTORY OF YOUR HANDS",
         "url": "https://fossilhuntress.blogspot.com/2026/11/fish-fingers-deep-history-of-your-hands.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "br_gabz_ml": {
+      "items": 32,
+      "unique_urls": 17,
+      "median_days_on_board": 2,
+      "one_day_pct": 12,
+      "top_item": {
+        "title": "A low-key birthday weekend.",
+        "url": "https://gabz.blog/posts/a-low-key-birthday-weekend",
         "score": 15,
         "rank": 1
       }
@@ -19034,14 +19430,14 @@
         "rank": 1
       }
     },
-    "br_loureviews_london_theatre_films_books_di": {
+    "br_one_foot_tsunami_by_paul_kafasis": {
       "items": 32,
       "unique_urls": 17,
       "median_days_on_board": 2,
       "one_day_pct": 12,
       "top_item": {
-        "title": "Play review: On The Line at Questors Studio",
-        "url": "https://loureviews.blog/2026/11/15/play-review-on-the-line-at-questors-studio/",
+        "title": "Mississippi Picked Another Senator",
+        "url": "https://onefoottsunami.com/2026/11/13/mississippi-picked-another-senator/",
         "score": 15,
         "rank": 1
       }
@@ -19078,18 +19474,6 @@
       "top_item": {
         "title": "Daft Punk Auto VI",
         "url": "https://maxfrequency.net/2026/11/14/daft-punk-gta-soundtrack-rumor/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "br_news_from_me_mark_evanier_s_blog_about_a": {
-      "items": 32,
-      "unique_urls": 17,
-      "median_days_on_board": 2,
-      "one_day_pct": 12,
-      "top_item": {
-        "title": "Comic-Con News",
-        "url": "https://www.newsfromme.com/2026/11/15/83270/",
         "score": 15,
         "rank": 1
       }
@@ -19142,6 +19526,18 @@
         "rank": 1
       }
     },
+    "br_the_audacity_roxane_gay_substack": {
+      "items": 32,
+      "unique_urls": 17,
+      "median_days_on_board": 2,
+      "one_day_pct": 12,
+      "top_item": {
+        "title": "The Four Wives and Five Deaths of Richard Milford: V Is Indeed for Vengeance",
+        "url": "https://audacity.substack.com/p/the-four-wives-and-five-deaths-of",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "br_baty_net": {
       "items": 32,
       "unique_urls": 17,
@@ -19150,6 +19546,18 @@
       "top_item": {
         "title": "Sunday, November 15, 2026",
         "url": "https://baty.net/journal/15Nov26/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "br_bln41_de_icke_in_berlin_friedenau": {
+      "items": 32,
+      "unique_urls": 17,
+      "median_days_on_board": 2,
+      "one_day_pct": 12,
+      "top_item": {
+        "title": "Das Geheimnis des Totenwaldes",
+        "url": "https://icke.lol/das-geheimnis-des-totenwaldes/",
         "score": 15,
         "rank": 1
       }
@@ -19370,6 +19778,18 @@
         "rank": 1
       }
     },
+    "br_grumpyoldman": {
+      "items": 32,
+      "unique_urls": 18,
+      "median_days_on_board": 2,
+      "one_day_pct": 22,
+      "top_item": {
+        "title": "Irgendwann gebähr ich hier…",
+        "url": "https://grumpyoldman.de/post/27599",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "zwischenzugs": {
       "items": 31,
       "unique_urls": 10,
@@ -19430,18 +19850,6 @@
         "rank": 14
       }
     },
-    "garymarcus": {
-      "items": 31,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Breaking: Eli Lilly CEO becomes latest to push back on Dario Amodei’s ludicrous, Elizabeth Holmes-like medical claims",
-        "url": "https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest",
-        "score": 269,
-        "rank": 17
-      }
-    },
     "googleprojectzero": {
       "items": 31,
       "unique_urls": 10,
@@ -19466,6 +19874,30 @@
         "rank": 5
       }
     },
+    "netflix": {
+      "items": 31,
+      "unique_urls": 11,
+      "median_days_on_board": 3,
+      "one_day_pct": 9,
+      "top_item": {
+        "title": "Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System",
+        "url": "https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808?source=rss----2615bd06b42e---4",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "lyft": {
+      "items": 31,
+      "unique_urls": 11,
+      "median_days_on_board": 3,
+      "one_day_pct": 9,
+      "top_item": {
+        "title": "Beyond Test Cards: A Fake Payment Provider for Testing at Scale",
+        "url": "https://eng.lyft.com/beyond-test-cards-a-fake-payment-provider-for-testing-at-scale-c69dddadb115?source=rss----25cd379abb8---4",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "br_thomas_gazagnaire_home": {
       "items": 31,
       "unique_urls": 15,
@@ -19478,16 +19910,16 @@
         "rank": 1
       }
     },
-    "blogpythonlibrary": {
+    "blogarchive": {
       "items": 31,
       "unique_urls": 11,
       "median_days_on_board": 3,
       "one_day_pct": 9,
       "top_item": {
-        "title": "An Intro to Python Logging Handlers (Video)",
-        "url": "https://blog.pythonlibrary.org/2026/11/06/12823/",
-        "score": 10,
-        "rank": 1
+        "title": "Preserving 30 Years of Salon Journalism",
+        "url": "https://blog.archive.org/2026/11/12/preserving-30-years-of-salon-journalism/",
+        "score": 89,
+        "rank": 17
       }
     },
     "baymard": {
@@ -19610,6 +20042,18 @@
         "rank": 1
       }
     },
+    "wordpress": {
+      "items": 31,
+      "unique_urls": 11,
+      "median_days_on_board": 3,
+      "one_day_pct": 9,
+      "top_item": {
+        "title": "Copy Your WordPress Site with Reprint",
+        "url": "https://wordpress.org/news/2026/11/reprint-your-site/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "accessibilityorg": {
       "items": 31,
       "unique_urls": 11,
@@ -19630,18 +20074,6 @@
       "top_item": {
         "title": "Our current screen time policies",
         "url": "https://www.bryanbraun.com/2026/11/11/our-current-screen-time-policies/",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "microsoft": {
-      "items": 31,
-      "unique_urls": 11,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Microsoft Research Focus – Edition #98",
-        "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/",
         "score": 10,
         "rank": 1
       }
@@ -19778,42 +20210,6 @@
         "rank": 1
       }
     },
-    "uxplanet": {
-      "items": 31,
-      "unique_urls": 12,
-      "median_days_on_board": 3,
-      "one_day_pct": 8,
-      "top_item": {
-        "title": "Claude Fable 5.2 Official Prompting Guide",
-        "url": "https://uxplanet.org/claude-fable-5-2-official-prompting-guide-34cd74abe0a2?source=rss----819cc2aaeee0---4",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "rdevops": {
-      "items": 31,
-      "unique_urls": 25,
-      "median_days_on_board": 1,
-      "one_day_pct": 76,
-      "top_item": {
-        "title": "Weekly Self Promotion Thread",
-        "url": "https://www.reddit.com/r/devops/comments/1xrlgil/weekly_self_promotion_thread/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "rswift": {
-      "items": 31,
-      "unique_urls": 18,
-      "median_days_on_board": 2,
-      "one_day_pct": 28,
-      "top_item": {
-        "title": "FAQ and Advice for Beginners - Please read before posting",
-        "url": "https://www.reddit.com/r/swift/comments/l0u5c3/faq_and_advice_for_beginners_please_read_before/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "rdartlang": {
       "items": 31,
       "unique_urls": 16,
@@ -19894,18 +20290,6 @@
       "top_item": {
         "title": "Detection Engineering: Implementing Detection-as-Code in an Existing Environment: Part 3 – Validation and Future Possibilities",
         "url": "https://blog.nviso.eu/2026/11/13/detection-engineering-implementing-detection-as-code-in-an-existing-environment-part-3-validation-and-future-possibilities/",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "archpaper": {
-      "items": 31,
-      "unique_urls": 14,
-      "median_days_on_board": 2,
-      "one_day_pct": 21,
-      "top_item": {
-        "title": "Eavesdrop: Kalshi and Artnet announce epic collab, Supreme Court greenlights Big Bend border wall, Zohran at MoMA, The New Yorker snubs architects, Penn honors Holl",
-        "url": "https://www.archpaper.com/2026/11/eavesdrop-kalshi-artnet/",
         "score": 10,
         "rank": 1
       }
@@ -20030,18 +20414,6 @@
         "rank": 1
       }
     },
-    "rlaravel": {
-      "items": 31,
-      "unique_urls": 17,
-      "median_days_on_board": 2,
-      "one_day_pct": 18,
-      "top_item": {
-        "title": "Weekly /r/Laravel Help Thread",
-        "url": "https://www.reddit.com/r/laravel/comments/1xx24nx/weekly_rlaravel_help_thread/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "sec_ransom_isac": {
       "items": 31,
       "unique_urls": 16,
@@ -20050,18 +20422,6 @@
       "top_item": {
         "title": "The Gentlemen Incident: Locked Out",
         "url": "https://ransom-isac.org/blog/the-gentlemen-incident-locked-out/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "sec_nextgov": {
-      "items": 31,
-      "unique_urls": 20,
-      "median_days_on_board": 2,
-      "one_day_pct": 45,
-      "top_item": {
-        "title": "Legacy tech issue led to FAA’s nationwide ground stop",
-        "url": "https://www.nextgov.com/modernization/2026/11/legacy-tech-issue-led-faas-nationwide-ground-stop/417232/",
         "score": 15,
         "rank": 1
       }
@@ -20098,6 +20458,18 @@
       "top_item": {
         "title": "Arcus Incident Analysis",
         "url": "https://www.certik.com/blog/arcus-incident-analysis",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "sec_recorded_future": {
+      "items": 31,
+      "unique_urls": 16,
+      "median_days_on_board": 2,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "Five Findings From the 2027 State of Threat Intelligence",
+        "url": "https://www.recordedfuture.com/blog/state-of-threat-intelligence-2027",
         "score": 15,
         "rank": 1
       }
@@ -20186,6 +20558,18 @@
         "rank": 1
       }
     },
+    "pb_robin_cannon": {
+      "items": 31,
+      "unique_urls": 16,
+      "median_days_on_board": 2,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "Eighteen months of noodles",
+        "url": "https://www.robin-cannon.com/p/eighteen-months-of-noodles",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "nl_techpresso": {
       "items": 31,
       "unique_urls": 16,
@@ -20254,6 +20638,18 @@
       "top_item": {
         "title": "AI Weekly Issue #543: Google is the latest tech giant to chase TypeSafe's 8-week-old Jev",
         "url": "https://aiweekly.co/issues/google-is-the-latest-tech-giant-to-chase-typesafes-8-week",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "nl_elm_weekly": {
+      "items": 31,
+      "unique_urls": 16,
+      "median_days_on_board": 2,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "Elm Weekly - Issue #444",
+        "url": "https://www.elmweekly.nl/p/elm-weekly-issue-444",
         "score": 15,
         "rank": 1
       }
@@ -20558,6 +20954,18 @@
         "rank": 1
       }
     },
+    "br_about_blog": {
+      "items": 31,
+      "unique_urls": 16,
+      "median_days_on_board": 2,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "openSUSE Asia Summit 2026 Yogyakarta",
+        "url": "https://aguno.xyz/post/2026/10/20/opensuse-asia-summit-2026-yogyakarta/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "br_home_in_retrospect": {
       "items": 31,
       "unique_urls": 16,
@@ -20774,6 +21182,18 @@
         "rank": 1
       }
     },
+    "br_cool_as_heck": {
+      "items": 31,
+      "unique_urls": 20,
+      "median_days_on_board": 2,
+      "one_day_pct": 45,
+      "top_item": {
+        "title": "Moving DMV.community home",
+        "url": "https://cool-as-heck.blog/moving-dmv-community-home",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "br_niklas_s_blog": {
       "items": 31,
       "unique_urls": 16,
@@ -20818,6 +21238,18 @@
       "top_item": {
         "title": "A Missive to Struggling Founders",
         "url": "https://www.kellblog.com/a-missive-to-struggling-founders/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "br_smashing_frames": {
+      "items": 31,
+      "unique_urls": 16,
+      "median_days_on_board": 2,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "Workshop: KI und die Gefährdung des Politischen an der Uni Bremen",
+        "url": "https://tante.cc/2026/11/13/workshop-ki-und-die-gefahrdung-des-politischen-an-der-uni-bremen/",
         "score": 15,
         "rank": 1
       }
@@ -20870,14 +21302,14 @@
         "rank": 1
       }
     },
-    "br_shellsharks": {
+    "br_life_in_the_real_world_karen_davis_subst": {
       "items": 31,
       "unique_urls": 16,
       "median_days_on_board": 2,
       "one_day_pct": 6,
       "top_item": {
-        "title": "Scroll quīnquāgintā",
-        "url": "https://shellsharks.com/scrolls/scroll/2026-11-10",
+        "title": "Migration Update",
+        "url": "https://karendavis.substack.com/p/migration-update",
         "score": 15,
         "rank": 1
       }
@@ -21254,18 +21686,6 @@
         "rank": 1
       }
     },
-    "br_gabz_ml": {
-      "items": 31,
-      "unique_urls": 16,
-      "median_days_on_board": 2,
-      "one_day_pct": 6,
-      "top_item": {
-        "title": "A low-key birthday weekend.",
-        "url": "https://gabz.blog/posts/a-low-key-birthday-weekend",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "br_greenbriar_picture_shows": {
       "items": 31,
       "unique_urls": 16,
@@ -21334,18 +21754,6 @@
       "top_item": {
         "title": "Mini-story: The True Death",
         "url": "https://mattgemmell.scot/books/once-upon-a-time/stories/the-true-death/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "br_one_foot_tsunami_by_paul_kafasis": {
-      "items": 31,
-      "unique_urls": 16,
-      "median_days_on_board": 2,
-      "one_day_pct": 6,
-      "top_item": {
-        "title": "Mississippi Picked Another Senator",
-        "url": "https://onefoottsunami.com/2026/11/13/mississippi-picked-another-senator/",
         "score": 15,
         "rank": 1
       }
@@ -21506,6 +21914,18 @@
         "rank": 1
       }
     },
+    "br_asking_the_wrong_questions": {
+      "items": 31,
+      "unique_urls": 16,
+      "median_days_on_board": 2,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "The Great Tolkien Reread: The White Rider",
+        "url": "https://wrongquestions.blogspot.com/2026/11/the-great-tolkien-reread-white-rider.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "br_blckdgrd": {
       "items": 31,
       "unique_urls": 16,
@@ -21539,18 +21959,6 @@
         "title": "Flashback! Hawkman and Hawkgirl Historical Infographic by Hawkworld.org",
         "url": "https://www.hawkworld.org/2026/11/flashback-hawkman-and-hawkgirl.html",
         "score": 15,
-        "rank": 1
-      }
-    },
-    "br_news_articles": {
-      "items": 31,
-      "unique_urls": 21,
-      "median_days_on_board": 1,
-      "one_day_pct": 52,
-      "top_item": {
-        "title": "Falling concrete shuts Thameslink train services through central London",
-        "url": "https://www.ianvisits.co.uk/articles/falling-concrete-shuts-thameslink-train-services-through-central-london-94124/",
-        "score": 10,
         "rank": 1
       }
     },
@@ -21686,18 +22094,6 @@
         "rank": 1
       }
     },
-    "br_the_audacity_roxane_gay_substack": {
-      "items": 31,
-      "unique_urls": 16,
-      "median_days_on_board": 2,
-      "one_day_pct": 6,
-      "top_item": {
-        "title": "The Four Wives and Five Deaths of Richard Milford: V Is Indeed for Vengeance",
-        "url": "https://audacity.substack.com/p/the-four-wives-and-five-deaths-of",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "br_the_axis_of_bozz": {
       "items": 31,
       "unique_urls": 16,
@@ -21734,18 +22130,6 @@
         "rank": 1
       }
     },
-    "br_bln41_de_icke_in_berlin_friedenau": {
-      "items": 31,
-      "unique_urls": 16,
-      "median_days_on_board": 2,
-      "one_day_pct": 6,
-      "top_item": {
-        "title": "Das Geheimnis des Totenwaldes",
-        "url": "https://icke.lol/das-geheimnis-des-totenwaldes/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "br_larvitz_blog_freebsd_linux_all_things_cl": {
       "items": 31,
       "unique_urls": 16,
@@ -21754,6 +22138,18 @@
       "top_item": {
         "title": "An IdM Replica at Home: Kerberos That Survives a Dead Tunnel",
         "url": "https://blog.hofstede.it/an-idm-replica-at-home-kerberos-that-survives-a-dead-tunnel/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "br_swimming_in_the_earth_swimming_in_the_ea": {
+      "items": 31,
+      "unique_urls": 16,
+      "median_days_on_board": 2,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "",
+        "url": "https://blog.nertzy.com/2026/11/11/170343.html",
         "score": 15,
         "rank": 1
       }
@@ -21914,6 +22310,18 @@
         "rank": 1
       }
     },
+    "br_geek_bravado": {
+      "items": 31,
+      "unique_urls": 16,
+      "median_days_on_board": 2,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "Generative AI is ruining gaming but I think there's hope",
+        "url": "https://geekbravado.com/generative-ai-is-ruining-gaming-but-i-think-theres-hope/",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "br_hakkerblog": {
       "items": 31,
       "unique_urls": 16,
@@ -22042,6 +22450,18 @@
       "top_item": {
         "title": "Why sanctions produce the opposite effect to what they had intended",
         "url": "https://kamilkazani.substack.com/p/why-sanctions-produce-the-opposite",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "br_the_fine_print": {
+      "items": 31,
+      "unique_urls": 16,
+      "median_days_on_board": 2,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "Total System Failure: U.S. Government Networks Will Need To Be Torched And Rebuilt",
+        "url": "https://karlbode.com/u-s-government-it-systems-are-completely-compromised-and-will-require-a-total-rebuild/",
         "score": 15,
         "rank": 1
       }
@@ -22238,6 +22658,18 @@
         "rank": 1
       }
     },
+    "br_lee_perry_on_the_indieweb": {
+      "items": 31,
+      "unique_urls": 16,
+      "median_days_on_board": 2,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "",
+        "url": "https://prry.uk/checkins/2026-11-07-cardiff-city-stadium",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "br_startseite_esse_est_percipi": {
       "items": 31,
       "unique_urls": 16,
@@ -22426,6 +22858,18 @@
       "top_item": {
         "title": "Young Voters are Fired Up and Changing Long-Held Political Narratives",
         "url": "https://theinternet.review/2026/11/09/engaged-youth-voters-changing-the-narrative/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "br_things": {
+      "items": 31,
+      "unique_urls": 16,
+      "median_days_on_board": 2,
+      "one_day_pct": 6,
+      "top_item": {
+        "title": "",
+        "url": "https://thingstoclick.com/2026/11/10/static-radio/",
         "score": 15,
         "rank": 1
       }
@@ -22718,18 +23162,6 @@
         "rank": 1
       }
     },
-    "netflix": {
-      "items": 30,
-      "unique_urls": 10,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System",
-        "url": "https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808?source=rss----2615bd06b42e---4",
-        "score": 10,
-        "rank": 1
-      }
-    },
     "githubengineering": {
       "items": 30,
       "unique_urls": 10,
@@ -22750,18 +23182,6 @@
       "top_item": {
         "title": "How two engineer side projects became the agent taking action inside Dropbox",
         "url": "https://dropbox.tech/machine-learning/how-two-engineer-side-projects-became-the-agent-taking-action-inside-dropbox",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "lyft": {
-      "items": 30,
-      "unique_urls": 10,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Beyond Test Cards: A Fake Payment Provider for Testing at Scale",
-        "url": "https://eng.lyft.com/beyond-test-cards-a-fake-payment-provider-for-testing-at-scale-c69dddadb115?source=rss----25cd379abb8---4",
         "score": 10,
         "rank": 1
       }
@@ -22850,18 +23270,6 @@
         "rank": 1
       }
     },
-    "drmaciver": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "On Mediocrity",
-        "url": "https://drmaciver.substack.com/p/on-mediocrity",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "matklad": {
       "items": 30,
       "unique_urls": 10,
@@ -22922,18 +23330,6 @@
         "rank": 1
       }
     },
-    "lcamtuf": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Spreadsheets and other models of morality",
-        "url": "https://blog.coredump.cx/p/spreadsheets-and-other-models-of",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "copyconstruct": {
       "items": 30,
       "unique_urls": 10,
@@ -22990,6 +23386,18 @@
       "top_item": {
         "title": "Signal Boosts for Winter 2026",
         "url": "https://blog.ncase.me/signal-boost-winter-2026/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "jwz": {
+      "items": 30,
+      "unique_urls": 11,
+      "median_days_on_board": 3,
+      "one_day_pct": 9,
+      "top_item": {
+        "title": "Noise",
+        "url": "https://www.jwz.org/blog/2026/11/noise/",
         "score": 10,
         "rank": 1
       }
@@ -23078,18 +23486,6 @@
         "rank": 1
       }
     },
-    "vicki": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "What are embeddings?",
-        "url": "https://vicki.substack.com/p/what-are-embeddings",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "andybromberg": {
       "items": 30,
       "unique_urls": 10,
@@ -23135,18 +23531,6 @@
         "title": "Starcom: remote terminal session commander",
         "url": "http://kvark.github.io/application/2026/09/18/starcom.html",
         "score": 10,
-        "rank": 1
-      }
-    },
-    "ayende": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "The exponential growth of shadow IT",
-        "url": "http://ayende.com/204292-a/the-exponential-growth-of-shadow-it?Key=92955703-406d-4a7e-a645-f513581f03b3",
-        "score": 15,
         "rank": 1
       }
     },
@@ -23318,18 +23702,6 @@
         "rank": 1
       }
     },
-    "addyosubstack": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Agentic Verification",
-        "url": "https://addyo.substack.com/p/agentic-verification",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "adrianroselli": {
       "items": 30,
       "unique_urls": 10,
@@ -23351,18 +23723,6 @@
         "title": "The Full Stack of Terminals Explained: Terminal, Shell, TTY, Console, POSIX, ANSI Escapes, PTYs, Raw/Canonical Modes",
         "url": "https://ahmadawais.com/the-full-stack-of-terminals-explained-terminal-shell-tty-console-posix-ansi-escapes-ptys/",
         "score": 10,
-        "rank": 1
-      }
-    },
-    "aieworkssubstack": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Why hybrid search beats vector search alone (and when it doesn't)",
-        "url": "https://aieworks.substack.com/p/why-hybrid-search-beats-vector-search-alone",
-        "score": 15,
         "rank": 1
       }
     },
@@ -23411,18 +23771,6 @@
         "title": "Meet Spacefast, Everything Your Agents Need to Bring Your Ideas to Life",
         "url": "https://automattic.com/2026/11/09/meet-spacefast/",
         "score": 10,
-        "rank": 1
-      }
-    },
-    "batkosubstack": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "AI Rooms: 10 peers, 1 hour, what worked and what didn't",
-        "url": "https://batko.substack.com/p/ai-rooms-10-peers-1-hour-what-worked",
-        "score": 15,
         "rank": 1
       }
     },
@@ -23603,18 +23951,6 @@
         "title": "Certified 100% Slop",
         "url": "https://chriswarrick.com/blog/2026/05/06/certified-100-percent-slop/",
         "score": 10,
-        "rank": 1
-      }
-    },
-    "codecompass00substack": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "How OpenAI Uses LLMs to Explain Neurons Inside LLMs",
-        "url": "https://codecompass00.substack.com/p/how-openai-uses-llms-to-explain-llm-neurons-at-scale",
-        "score": 15,
         "rank": 1
       }
     },
@@ -23990,6 +24326,18 @@
         "rank": 1
       }
     },
+    "mwl": {
+      "items": 30,
+      "unique_urls": 10,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "137: Paired with a Ghost",
+        "url": "https://mwl.io/archives/25049",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "nerdy": {
       "items": 30,
       "unique_urls": 10,
@@ -24278,30 +24626,6 @@
         "rank": 1
       }
     },
-    "seattledataguysubstack": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "What’s Going To Matter In 2027 For Data Engineers?",
-        "url": "https://seattledataguy.substack.com/p/whats-going-to-matter-in-2027-for",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "sebgnotessubstack": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Friday Finds Post, 2025-06-06",
-        "url": "https://sebgnotes.substack.com/p/friday-finds-post-2025-06-06",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "serokell": {
       "items": 30,
       "unique_urls": 11,
@@ -24514,6 +24838,18 @@
       "top_item": {
         "title": "Software may be getting worse, but it used to be horrible",
         "url": "https://www.bitlog.com/2026/10/27/software-may-be-getting-worse-but-it-used-to-be-horrible/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "blogpythonlibrary": {
+      "items": 30,
+      "unique_urls": 10,
+      "median_days_on_board": 3,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "An Intro to Python Logging Handlers (Video)",
+        "url": "https://blog.pythonlibrary.org/2026/11/06/12823/",
         "score": 10,
         "rank": 1
       }
@@ -24732,18 +25068,6 @@
         "url": "https://blog.acolyer.org/2021/02/08/the-ants-and-the-pheromones/",
         "score": 10,
         "rank": 1
-      }
-    },
-    "blogarchive": {
-      "items": 30,
-      "unique_urls": 10,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Preserving 30 Years of Salon Journalism",
-        "url": "https://blog.archive.org/2026/11/12/preserving-30-years-of-salon-journalism/",
-        "score": 89,
-        "rank": 17
       }
     },
     "blogcjgammon": {
@@ -26174,18 +26498,6 @@
         "rank": 1
       }
     },
-    "ethanhuang13substack": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Apple 開發者週報 #269 📖iPhone Duo 特輯",
-        "url": "https://www.ethanhuang13.com/p/269",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "falkus": {
       "items": 30,
       "unique_urls": 10,
@@ -27226,18 +27538,6 @@
       "top_item": {
         "title": "Our UX Student Program Graduates Share Their Journey",
         "url": "https://wix-ux.com/our-ux-student-program-graduates-share-their-journey-8cb71725082e?source=rss----5c12f12b4121---4",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "wordpress": {
-      "items": 30,
-      "unique_urls": 10,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Copy Your WordPress Site with Reprint",
-        "url": "https://wordpress.org/news/2026/11/reprint-your-site/",
         "score": 10,
         "rank": 1
       }
@@ -28574,18 +28874,6 @@
         "rank": 1
       }
     },
-    "gizmodoscience": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Don’t Be Afraid of Self-Improving AI, Says a16z-Backed Startup Mirendil",
-        "url": "https://gizmodo.com/dont-be-afraid-of-self-improving-ai-says-a16z-backed-startup-mirendil-2000778973",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "jwegan": {
       "items": 30,
       "unique_urls": 10,
@@ -28690,18 +28978,6 @@
       "top_item": {
         "title": "Go Turns 17",
         "url": "https://go.dev/blog/17years",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "stanfordeng": {
-      "items": 30,
-      "unique_urls": 10,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "The future of substance use disorder",
-        "url": "https://engineering.stanford.edu/news/future-substance-use-disorder",
         "score": 10,
         "rank": 1
       }
@@ -29234,18 +29510,6 @@
         "rank": 1
       }
     },
-    "coffeeandjunk": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "There Is No Life That Cannot Be Successfully Prosecuted From the Right Angle",
-        "url": "https://coffeeandjunk.substack.com/p/position",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "zyzhang": {
       "items": 30,
       "unique_urls": 10,
@@ -29255,18 +29519,6 @@
         "title": "炒作口诀",
         "url": "https://zyzhang.com/%E7%82%92%E4%BD%9C%E5%8F%A3%E8%AF%80/",
         "score": 10,
-        "rank": 1
-      }
-    },
-    "kelvinmu": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "What AI enterprise leaders care about",
-        "url": "https://kelvinmu.substack.com/p/what-ai-enterprise-leaders-care-about",
-        "score": 15,
         "rank": 1
       }
     },
@@ -30590,54 +30842,6 @@
         "rank": 1
       }
     },
-    "sequence": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "The Sequence Radar - Issue #972: Last Week in AI: The Invisible Hand Wore a Leather Jacket",
-        "url": "https://thesequence.substack.com/p/the-sequence-radar-issue-972-last",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "aisnakeoil": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "The missing quadrant in responses to AI",
-        "url": "https://www.normaltech.ai/p/the-missing-quadrant-in-responses",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "codingchallenges": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Coding Challenge #146 - Kanban",
-        "url": "https://codingchallenges.substack.com/p/coding-challenge-146-kanban",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "chinai": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "ChinAI #381: China’s Venture Capital Market is Defying Common Sense",
-        "url": "https://chinai.substack.com/p/chinai-381-chinas-venture-capital",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "theengineeringmanager": {
       "items": 30,
       "unique_urls": 10,
@@ -30814,6 +31018,18 @@
       "top_item": {
         "title": "UK Cybercrime Journal: Beacon CRM Breach Impacts Over 1,500 Charities",
         "url": "https://blog.bushidotoken.net/2026/11/uk-cybercrime-journal-beacon-crm-breach.html",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "sec_cyber_intelligence_insights": {
+      "items": 30,
+      "unique_urls": 15,
+      "median_days_on_board": 2,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "Behind the Leak",
+        "url": "https://intelinsights.substack.com/p/behind-the-leak",
         "score": 15,
         "rank": 1
       }
@@ -31042,18 +31258,6 @@
       "top_item": {
         "title": "Inside The Server: 14 Months of Offensive Cyber Operations Targeting Europe",
         "url": "https://www.group-ib.com/blog/offensive-cyber-operations-europe/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "sec_recorded_future": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Five Findings From the 2027 State of Threat Intelligence",
-        "url": "https://www.recordedfuture.com/blog/state-of-threat-intelligence-2027",
         "score": 15,
         "rank": 1
       }
@@ -32354,6 +32558,18 @@
         "rank": 1
       }
     },
+    "tb_hrishikesh_barua": {
+      "items": 30,
+      "unique_urls": 15,
+      "median_days_on_board": 2,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "5 Patterns I Found in Cloud Outages in 2025 - 2026",
+        "url": "https://techops.substack.com/p/5-patterns-i-found-in-cloud-outages",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "tb_parish_khan": {
       "items": 30,
       "unique_urls": 15,
@@ -32870,18 +33086,6 @@
         "rank": 1
       }
     },
-    "pb_robin_cannon": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Eighteen months of noodles",
-        "url": "https://www.robin-cannon.com/p/eighteen-months-of-noodles",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "pb_roelof_jan_elsinga": {
       "items": 30,
       "unique_urls": 15,
@@ -33302,6 +33506,42 @@
         "rank": 1
       }
     },
+    "nl_pythoncat": {
+      "items": 30,
+      "unique_urls": 15,
+      "median_days_on_board": 2,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "Python 潮流周刊#175（附第 125 期全文）：AI 为 CPython 写出 61 万行 Lean 证明",
+        "url": "https://pythoncat.substack.com/p/python-175-125-ai-cpython-61-lean",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "nl_aifordevelopers": {
+      "items": 30,
+      "unique_urls": 15,
+      "median_days_on_board": 2,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "One Year with AI For Developers",
+        "url": "https://aifordevelopers.substack.com/p/one-year-with-ai-for-developers",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "nl_aievaluation": {
+      "items": 30,
+      "unique_urls": 15,
+      "median_days_on_board": 2,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "2026 October \"AI Evaluation\" Digest",
+        "url": "https://aievaluation.substack.com/p/2026-october-ai-evaluation-digest",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "nl_generative": {
       "items": 30,
       "unique_urls": 15,
@@ -33322,6 +33562,30 @@
       "top_item": {
         "title": "Issue 123",
         "url": "https://www.techtalksweekly.io/p/issue-123",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "nl_womenonrails": {
+      "items": 30,
+      "unique_urls": 15,
+      "median_days_on_board": 2,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "🪨 Newsletter WoR #69: AI won't solve all your problems, being human to avoid human error, and some games",
+        "url": "https://womenonrailsinternational.substack.com/p/newsletter-wor-69-ai-wont-solve-all",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "nl_weeklyrust": {
+      "items": 30,
+      "unique_urls": 16,
+      "median_days_on_board": 2,
+      "one_day_pct": 12,
+      "top_item": {
+        "title": "🦀 Systemd Finally Lets Rust In",
+        "url": "https://weeklyrust.substack.com/p/systemd-finally-lets-rust-in",
         "score": 15,
         "rank": 1
       }
@@ -33374,6 +33638,18 @@
         "rank": 1
       }
     },
+    "nl_buzzrobot_ai_newsletter": {
+      "items": 30,
+      "unique_urls": 15,
+      "median_days_on_board": 2,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "Famous consciousness researcher on why machines will not be sentient",
+        "url": "https://buzzrobot.substack.com/p/famous-consciousness-researcher-on",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "nl_cron_weekly": {
       "items": 30,
       "unique_urls": 15,
@@ -33394,18 +33670,6 @@
       "top_item": {
         "title": "Issue 347",
         "url": "https://csslayout.news/a/3mzhziouk3323-issue-347",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "nl_elm_weekly": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Elm Weekly - Issue #444",
-        "url": "https://www.elmweekly.nl/p/elm-weekly-issue-444",
         "score": 15,
         "rank": 1
       }
@@ -33562,6 +33826,18 @@
       "top_item": {
         "title": "56: XTDB: A Bitemporal database in Clojure",
         "url": "https://www.therepl.net/episodes/56/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "nl_true_positive_weekly": {
+      "items": 30,
+      "unique_urls": 15,
+      "median_days_on_board": 2,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "True Positive Weekly #185",
+        "url": "https://aiweekly.substack.com/p/true-positive-weekly-185",
         "score": 15,
         "rank": 1
       }
@@ -36770,6 +37046,18 @@
         "rank": 1
       }
     },
+    "br_nick_s_substack_nick_m": {
+      "items": 30,
+      "unique_urls": 15,
+      "median_days_on_board": 2,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "A Visual Intro to Complex Numbers",
+        "url": "https://photonlines.substack.com/p/a-visual-intro-to-complex-numbers",
+        "score": 15,
+        "rank": 1
+      }
+    },
     "br_pikuma_fundamentals_of_computer_science_": {
       "items": 30,
       "unique_urls": 15,
@@ -38482,18 +38770,6 @@
       "top_item": {
         "title": "One Year with evil-winrm-py - A Retrospective",
         "url": "https://adityatelange.in/blog/evil-winrm-py/",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "br_about_blog": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "openSUSE Asia Summit 2026 Yogyakarta",
-        "url": "https://aguno.xyz/post/2026/10/20/opensuse-asia-summit-2026-yogyakarta/",
         "score": 15,
         "rank": 1
       }
@@ -45254,18 +45530,6 @@
         "rank": 1
       }
     },
-    "br_cool_as_heck": {
-      "items": 30,
-      "unique_urls": 19,
-      "median_days_on_board": 2,
-      "one_day_pct": 42,
-      "top_item": {
-        "title": "Moving DMV.community home",
-        "url": "https://cool-as-heck.blog/moving-dmv-community-home",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "br_the_artist_s_notebook": {
       "items": 30,
       "unique_urls": 15,
@@ -46262,18 +46526,6 @@
         "rank": 1
       }
     },
-    "br_smashing_frames": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Workshop: KI und die Gefährdung des Politischen an der Uni Bremen",
-        "url": "https://tante.cc/2026/11/13/workshop-ki-und-die-gefahrdung-des-politischen-an-der-uni-bremen/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "br_jerred_shepherd": {
       "items": 30,
       "unique_urls": 15,
@@ -46646,18 +46898,6 @@
         "rank": 1
       }
     },
-    "br_life_in_the_real_world_karen_davis_subst": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Migration Update",
-        "url": "https://karendavis.substack.com/p/migration-update",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "br_but_she_s_a_girl": {
       "items": 30,
       "unique_urls": 15,
@@ -46714,6 +46954,18 @@
       "top_item": {
         "title": "New host, new rss feed, new url, new diary entries!",
         "url": "https://www.cabbagesorter.net/",
+        "score": 15,
+        "rank": 1
+      }
+    },
+    "br_the_neighborhoods_rob_stephenson_substac": {
+      "items": 30,
+      "unique_urls": 16,
+      "median_days_on_board": 2,
+      "one_day_pct": 12,
+      "top_item": {
+        "title": "Hollis - Queens",
+        "url": "https://theneighborhoods.substack.com/p/hollis-queens",
         "score": 15,
         "rank": 1
       }
@@ -47674,18 +47926,6 @@
       "top_item": {
         "title": "Stop Making Excuses for Infidelity",
         "url": "https://writewhim.blogspot.com/2026/11/stop-making-excuses-for-infidelity.html",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "br_marzchipane": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Sunrise on the Reaping",
-        "url": "https://marzchipane.com/reviews/books/sunrise_on_the_reaping",
         "score": 15,
         "rank": 1
       }
@@ -52718,18 +52958,6 @@
         "rank": 1
       }
     },
-    "br_asking_the_wrong_questions": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "The Great Tolkien Reread: The White Rider",
-        "url": "https://wrongquestions.blogspot.com/2026/11/the-great-tolkien-reread-white-rider.html",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "br_ace_linguist": {
       "items": 30,
       "unique_urls": 15,
@@ -55174,18 +55402,6 @@
       "top_item": {
         "title": "Building Strathcona Power — September 2026",
         "url": "https://blog.minchin.ca/2026/09/strathcona-power-sept-2026.html",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "br_swimming_in_the_earth_swimming_in_the_ea": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "",
-        "url": "https://blog.nertzy.com/2026/11/11/170343.html",
         "score": 15,
         "rank": 1
       }
@@ -57806,18 +58022,6 @@
         "rank": 1
       }
     },
-    "br_geek_bravado": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Generative AI is ruining gaming but I think there's hope",
-        "url": "https://geekbravado.com/generative-ai-is-ruining-gaming-but-i-think-theres-hope/",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "br_geist_und_gegenwart": {
       "items": 30,
       "unique_urls": 15,
@@ -59122,18 +59326,6 @@
       "top_item": {
         "title": "Pasta mit ein wenig Gemüse und Pfifferlingen",
         "url": "https://kaquushausmannskost.blogspot.com/2025/10/pasta-mit-ein-wenig-gemuse-und.html",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "br_the_fine_print": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Total System Failure: U.S. Government Networks Will Need To Be Torched And Rebuilt",
-        "url": "https://karlbode.com/u-s-government-it-systems-are-completely-compromised-and-will-require-a-total-rebuild/",
         "score": 15,
         "rank": 1
       }
@@ -61262,18 +61454,6 @@
         "rank": 1
       }
     },
-    "br_lee_perry_on_the_indieweb": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "",
-        "url": "https://prry.uk/checkins/2026-11-07-cardiff-city-stadium",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "br_push_to_prod_matthew_hawthorne_substack": {
       "items": 30,
       "unique_urls": 15,
@@ -62830,18 +63010,6 @@
       "top_item": {
         "title": "WT355 — Writing, Building, and the Open Web",
         "url": "https://www.thingelstad.com/2026/11/15/wt-writing-building-and-the.html",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "br_things": {
-      "items": 30,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "",
-        "url": "https://thingstoclick.com/2026/11/10/static-radio/",
         "score": 15,
         "rank": 1
       }
@@ -64814,18 +64982,6 @@
         "rank": 1
       }
     },
-    "br_grumpyoldman": {
-      "items": 30,
-      "unique_urls": 16,
-      "median_days_on_board": 2,
-      "one_day_pct": 12,
-      "top_item": {
-        "title": "Irgendwann gebähr ich hier…",
-        "url": "https://grumpyoldman.de/post/27599",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "br_lotte_s_attic": {
       "items": 30,
       "unique_urls": 15,
@@ -64910,18 +65066,6 @@
         "rank": 1
       }
     },
-    "br_the_neighborhoods_rob_stephenson_substac": {
-      "items": 29,
-      "unique_urls": 16,
-      "median_days_on_board": 2,
-      "one_day_pct": 19,
-      "top_item": {
-        "title": "Hollis - Queens",
-        "url": "https://theneighborhoods.substack.com/p/hollis-queens",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "br_cafebedouin_org_the_archive_is_the_argum": {
       "items": 29,
       "unique_urls": 15,
@@ -64934,15 +65078,15 @@
         "rank": 1
       }
     },
-    "gwern": {
+    "sec_the_register": {
       "items": 28,
       "unique_urls": 14,
       "median_days_on_board": 2,
       "one_day_pct": 0,
       "top_item": {
-        "title": "May 2021 Gwern.net Newsletter",
-        "url": "https://gwern.substack.com/p/may-2021-gwernnet-newsletter",
-        "score": 14,
+        "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
+        "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632",
+        "score": 15,
         "rank": 1
       }
     },
@@ -65039,18 +65183,6 @@
         "title": "Learning Linux IO: Part 1",
         "url": "https://parallelthoughts.xyz/2026/08/learning-linux-io-part-1/",
         "score": 14,
-        "rank": 1
-      }
-    },
-    "br_nick_s_substack_nick_m": {
-      "items": 28,
-      "unique_urls": 15,
-      "median_days_on_board": 2,
-      "one_day_pct": 13,
-      "top_item": {
-        "title": "A Visual Intro to Complex Numbers",
-        "url": "https://photonlines.substack.com/p/a-visual-intro-to-complex-numbers",
-        "score": 15,
         "rank": 1
       }
     },
@@ -66038,6 +66170,18 @@
         "rank": 1
       }
     },
+    "nl_finxter_ai_nuggets": {
+      "items": 27,
+      "unique_urls": 17,
+      "median_days_on_board": 2,
+      "one_day_pct": 41,
+      "top_item": {
+        "title": "How Many Books in a Series Is Too Many? With 2,000 Book 1 Buyers, Book 9 Is the First That Loses Money",
+        "url": "https://blog.finxter.com/how-many-books-in-a-series-is-too-many/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "br_raven_sings_the_blues": {
       "items": 27,
       "unique_urls": 17,
@@ -66083,18 +66227,6 @@
         "title": "All your packages are belong to us",
         "url": "https://changelog.com/podcast/690",
         "score": 15,
-        "rank": 1
-      }
-    },
-    "nl_finxter_ai_nuggets": {
-      "items": 26,
-      "unique_urls": 16,
-      "median_days_on_board": 2,
-      "one_day_pct": 38,
-      "top_item": {
-        "title": "How Many Books in a Series Is Too Many? With 2,000 Book 1 Buyers, Book 9 Is the First That Loses Money",
-        "url": "https://blog.finxter.com/how-many-books-in-a-series-is-too-many/",
-        "score": 10,
         "rank": 1
       }
     },
@@ -66878,6 +67010,18 @@
         "rank": 1
       }
     },
+    "br_oftwominds_charles_hugh_smith": {
+      "items": 25,
+      "unique_urls": 14,
+      "median_days_on_board": 2,
+      "one_day_pct": 21,
+      "top_item": {
+        "title": "It's Wall Street's Turn To Be Stripmined",
+        "url": "http://charleshughsmith.blogspot.com/2026/11/its-wall-streets-turn-to-be-stripmined.html",
+        "score": 12,
+        "rank": 1
+      }
+    },
     "br_tiny_wanderer": {
       "items": 25,
       "unique_urls": 13,
@@ -67211,6 +67355,18 @@
         "title": "WordPress REST API vs MCP: Application Passwords, OAuth and When You Need Each",
         "url": "https://wpshout.com/wordpress-rest-api-vs-mcp/",
         "score": 8,
+        "rank": 1
+      }
+    },
+    "sec_qualys_blog": {
+      "items": 24,
+      "unique_urls": 14,
+      "median_days_on_board": 2,
+      "one_day_pct": 29,
+      "top_item": {
+        "title": "November Patch Tuesday: How to Sort Through the Patches",
+        "url": "https://blog.qualys.com/product-tech/2026/11/13/november-patch-tuesday-how-to-sort-through-the-patches",
+        "score": 10,
         "rank": 1
       }
     },
@@ -67822,18 +67978,6 @@
       "top_item": {
         "title": "The wild west of polyglot docs sites",
         "url": "https://technicalwriting.dev/blog/2026/10/polyglot/index.html",
-        "score": 12,
-        "rank": 1
-      }
-    },
-    "br_oftwominds_charles_hugh_smith": {
-      "items": 24,
-      "unique_urls": 13,
-      "median_days_on_board": 2,
-      "one_day_pct": 15,
-      "top_item": {
-        "title": "It's Wall Street's Turn To Be Stripmined",
-        "url": "http://charleshughsmith.blogspot.com/2026/11/its-wall-streets-turn-to-be-stripmined.html",
         "score": 12,
         "rank": 1
       }
@@ -68714,18 +68858,6 @@
         "rank": 1
       }
     },
-    "sec_qualys_blog": {
-      "items": 22,
-      "unique_urls": 12,
-      "median_days_on_board": 2,
-      "one_day_pct": 17,
-      "top_item": {
-        "title": "November Patch Tuesday: How to Sort Through the Patches",
-        "url": "https://blog.qualys.com/product-tech/2026/11/13/november-patch-tuesday-how-to-sort-through-the-patches",
-        "score": 10,
-        "rank": 1
-      }
-    },
     "sec_infostealers_by_hudsonrock": {
       "items": 22,
       "unique_urls": 13,
@@ -68987,6 +69119,18 @@
         "title": "Modelling Agent Behaviour with Bevy Behave",
         "url": "https://www.hankruiger.com/posts/bevy-behave/",
         "score": 11,
+        "rank": 1
+      }
+    },
+    "br_herbert_lui_blog_on_creativity_marketing": {
+      "items": 22,
+      "unique_urls": 12,
+      "median_days_on_board": 2,
+      "one_day_pct": 17,
+      "top_item": {
+        "title": "Permission is a useful marketing signal",
+        "url": "https://herbertlui.net/permission-is-a-useful-marketing-signal/",
+        "score": 10,
         "rank": 1
       }
     },
@@ -69386,6 +69530,18 @@
         "rank": 1
       }
     },
+    "br_laura_michet_s_blog": {
+      "items": 22,
+      "unique_urls": 12,
+      "median_days_on_board": 2,
+      "one_day_pct": 17,
+      "top_item": {
+        "title": "500 Finger Fillet is out!",
+        "url": "https://blog.lauramichet.com/500-finger-fillet-is-out/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "br_buildings_of_new_england_exploring_new_e": {
       "items": 22,
       "unique_urls": 14,
@@ -69514,6 +69670,30 @@
       "top_item": {
         "title": "Sustut",
         "url": "https://stephenbodio.com/2026/11/sustut/?utm_source=rss&utm_medium=rss&utm_campaign=sustut",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "br_the_figure_in_question_action_figure_rev": {
+      "items": 22,
+      "unique_urls": 12,
+      "median_days_on_board": 2,
+      "one_day_pct": 17,
+      "top_item": {
+        "title": "Flashback Friday Figure Addendum #0099: Kang",
+        "url": "https://thefigureinquestion.com/2026/11/13/flashback-friday-figure-addendum-0099-kang/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "br_the_hippies_now_wear_black_the_anarcho_p": {
+      "items": 22,
+      "unique_urls": 12,
+      "median_days_on_board": 2,
+      "one_day_pct": 17,
+      "top_item": {
+        "title": "Omega Tribe, Icons of Filth and others join D.O.V.E. UK mini-tour",
+        "url": "https://thehippiesnowwearblack.org.uk/2026/10/13/omega-tribe-icons-of-filth-and-others-join-d-o-v-e-uk-mini-tour/",
         "score": 10,
         "rank": 1
       }
@@ -69758,6 +69938,18 @@
         "rank": 1
       }
     },
+    "br_thomas_gigold_digitales_zuhause_blog": {
+      "items": 22,
+      "unique_urls": 13,
+      "median_days_on_board": 2,
+      "one_day_pct": 31,
+      "top_item": {
+        "title": "Status: Jensen Huang hat eine Ehefrau, drei Affären und das wertvollste…",
+        "url": "https://gigold.me/notes/2492",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "br_graham_s_island_life_on_the_big_island_o": {
       "items": 22,
       "unique_urls": 12,
@@ -69815,6 +70007,30 @@
         "title": "Samodzielnie, rowerem przez Alpy: Via Claudia Augusta (część 2)",
         "url": "https://janilowski.pl/blog/2026/alpy-czesc2/",
         "score": 11,
+        "rank": 1
+      }
+    },
+    "br_jd_torian": {
+      "items": 22,
+      "unique_urls": 12,
+      "median_days_on_board": 2,
+      "one_day_pct": 17,
+      "top_item": {
+        "title": "On “Being Creative”",
+        "url": "https://jdtorian.com/on-being-creative/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "br_escarpment": {
+      "items": 22,
+      "unique_urls": 13,
+      "median_days_on_board": 2,
+      "one_day_pct": 31,
+      "top_item": {
+        "title": "rainroof sunrise vista",
+        "url": "https://lnebres.bearblog.dev/rainroof-sunrise-vista/",
+        "score": 10,
         "rank": 1
       }
     },
@@ -70214,6 +70430,30 @@
         "rank": 1
       }
     },
+    "thecollegeinvestor": {
+      "items": 21,
+      "unique_urls": 12,
+      "median_days_on_board": 2,
+      "one_day_pct": 33,
+      "top_item": {
+        "title": "Student Loan Interest Cap Plans: 0%, 2% And A 10% Credit Card Cap",
+        "url": "https://thecollegeinvestor.com/92224/student-loan-interest-credit-card-cap/",
+        "score": 5,
+        "rank": 1
+      }
+    },
+    "darknet": {
+      "items": 21,
+      "unique_urls": 11,
+      "median_days_on_board": 2,
+      "one_day_pct": 9,
+      "top_item": {
+        "title": "Phone Phreaking – The Blind Teenager Who Whistled Free Calls",
+        "url": "https://www.darknet.org.uk/2026/11/phone-phreaking-joe-engressia-john-draper/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "chener": {
       "items": 21,
       "unique_urls": 11,
@@ -70358,6 +70598,18 @@
         "rank": 1
       }
     },
+    "sec_microsoft_security_blog": {
+      "items": 21,
+      "unique_urls": 12,
+      "median_days_on_board": 2,
+      "one_day_pct": 25,
+      "top_item": {
+        "title": "SCKit abuses ScreenConnect to deploy remote access and target technician sessions",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "sec_tenable": {
       "items": 21,
       "unique_urls": 11,
@@ -70414,18 +70666,6 @@
       "top_item": {
         "title": "Jeva: Rethinking System One Models from First Principles",
         "url": "https://andlukyane.com/blog/paper-review-jeva",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "br_herbert_lui_blog_on_creativity_marketing": {
-      "items": 21,
-      "unique_urls": 11,
-      "median_days_on_board": 2,
-      "one_day_pct": 9,
-      "top_item": {
-        "title": "Permission is a useful marketing signal",
-        "url": "https://herbertlui.net/permission-is-a-useful-marketing-signal/",
         "score": 10,
         "rank": 1
       }
@@ -70646,6 +70886,30 @@
         "rank": 1
       }
     },
+    "br_leaded_solder_old_computer_repair_histor": {
+      "items": 21,
+      "unique_urls": 11,
+      "median_days_on_board": 2,
+      "one_day_pct": 9,
+      "top_item": {
+        "title": "Halloween with the Camels",
+        "url": "https://www.leadedsolder.com/2026/10/31/rc2026-soggy-camelforth-happy-halloween-demo.html",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "br_fiddery": {
+      "items": 21,
+      "unique_urls": 11,
+      "median_days_on_board": 2,
+      "one_day_pct": 9,
+      "top_item": {
+        "title": "spooky ooky friday 13th + today so far",
+        "url": "https://blog.fiddery.com/spooky-ooky-friday-13th-today-so-far/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "br_speedysnail": {
       "items": 21,
       "unique_urls": 11,
@@ -70678,18 +70942,6 @@
       "top_item": {
         "title": "#550 When your roommate cleans the place while you’re away",
         "url": "https://1000awesomethings.com/2026/11/13/550-when-your-roommate-cleans-the-place-while-youre-away-4/",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "br_laura_michet_s_blog": {
-      "items": 21,
-      "unique_urls": 11,
-      "median_days_on_board": 2,
-      "one_day_pct": 9,
-      "top_item": {
-        "title": "500 Finger Fillet is out!",
-        "url": "https://blog.lauramichet.com/500-finger-fillet-is-out/",
         "score": 10,
         "rank": 1
       }
@@ -71014,30 +71266,6 @@
       "top_item": {
         "title": "The tensions-based approach to constitutions",
         "url": "https://theemptycity.com/blog/2026/11/the-tensions-based-approach-to-constitutions/",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "br_the_figure_in_question_action_figure_rev": {
-      "items": 21,
-      "unique_urls": 11,
-      "median_days_on_board": 2,
-      "one_day_pct": 9,
-      "top_item": {
-        "title": "Flashback Friday Figure Addendum #0099: Kang",
-        "url": "https://thefigureinquestion.com/2026/11/13/flashback-friday-figure-addendum-0099-kang/",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "br_the_hippies_now_wear_black_the_anarcho_p": {
-      "items": 21,
-      "unique_urls": 11,
-      "median_days_on_board": 2,
-      "one_day_pct": 9,
-      "top_item": {
-        "title": "Omega Tribe, Icons of Filth and others join D.O.V.E. UK mini-tour",
-        "url": "https://thehippiesnowwearblack.org.uk/2026/10/13/omega-tribe-icons-of-filth-and-others-join-d-o-v-e-uk-mini-tour/",
         "score": 10,
         "rank": 1
       }
@@ -71426,6 +71654,18 @@
         "rank": 1
       }
     },
+    "br_bovelo_das_unabh_ngige_und_kritische_fah": {
+      "items": 21,
+      "unique_urls": 11,
+      "median_days_on_board": 2,
+      "one_day_pct": 9,
+      "top_item": {
+        "title": "Bahntrassen: Vorfahrt fürs Fahrrad",
+        "url": "https://bovelo.de/2026/11/13/bahntrassen-vorfahrt-fuers-fahrrad/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "br_bunte_k_chenabenteuer": {
       "items": 21,
       "unique_urls": 11,
@@ -71458,6 +71698,18 @@
       "top_item": {
         "title": "Discoveries of Flickr Photo Reuse Under the Spell of Magic Pixsy Dust",
         "url": "https://cogdogblog.com/2026/11/lmagic-pixsy-dust/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "br_crow_s_corner": {
+      "items": 21,
+      "unique_urls": 11,
+      "median_days_on_board": 2,
+      "one_day_pct": 9,
+      "top_item": {
+        "title": "Table-Tested Review of the “13 Omens” Preview",
+        "url": "https://crowscorner.bearblog.dev/table-tested-review-of-the-13-omens-preview/",
         "score": 10,
         "rank": 1
       }
@@ -71570,18 +71822,6 @@
         "rank": 1
       }
     },
-    "br_thomas_gigold_digitales_zuhause_blog": {
-      "items": 21,
-      "unique_urls": 12,
-      "median_days_on_board": 2,
-      "one_day_pct": 25,
-      "top_item": {
-        "title": "Status: Jensen Huang hat eine Ehefrau, drei Affären und das wertvollste…",
-        "url": "https://gigold.me/notes/2492",
-        "score": 10,
-        "rank": 1
-      }
-    },
     "br_omn_open_media_network_hamish_campbell_a": {
       "items": 21,
       "unique_urls": 11,
@@ -71590,6 +71830,18 @@
       "top_item": {
         "title": "Why we need a different path",
         "url": "https://hamishcampbell.com/why-the-omn-needs-a-different-path/",
+        "score": 10,
+        "rank": 1
+      }
+    },
+    "br_how_to_save_the_world_dave_pollard_s_chr": {
+      "items": 21,
+      "unique_urls": 11,
+      "median_days_on_board": 2,
+      "one_day_pct": 9,
+      "top_item": {
+        "title": "Links of the Month: November 2026",
+        "url": "https://howtosavetheworld.ca/2026/11/14/links-of-the-month-november-2026/",
         "score": 10,
         "rank": 1
       }
@@ -71702,14 +71954,14 @@
         "rank": 1
       }
     },
-    "br_escarpment": {
+    "br_lorenzos_welt_der_blog_ber_die_dinge_der": {
       "items": 21,
       "unique_urls": 12,
       "median_days_on_board": 2,
       "one_day_pct": 25,
       "top_item": {
-        "title": "rainroof sunrise vista",
-        "url": "https://lnebres.bearblog.dev/rainroof-sunrise-vista/",
+        "title": "Deutschland gewinnt in Serbien: Ein Schritt in die richtige Richtung",
+        "url": "https://lorenzos-welt.com/deutschland-gewinnt-in-serbien-ein-schritt-in-die-richtige-richtung/",
         "score": 10,
         "rank": 1
       }
@@ -71954,6 +72206,18 @@
         "rank": 1
       }
     },
+    "br_victor_kropp": {
+      "items": 21,
+      "unique_urls": 11,
+      "median_days_on_board": 2,
+      "one_day_pct": 9,
+      "top_item": {
+        "title": "Amazon Warehouse Tour",
+        "url": "https://victor.kropp.name/blog/2026/amazon-warehouse-tour/",
+        "score": 10,
+        "rank": 1
+      }
+    },
     "br_vomran_de": {
       "items": 21,
       "unique_urls": 11,
@@ -72062,30 +72326,6 @@
         "rank": 1
       }
     },
-    "jwz": {
-      "items": 20,
-      "unique_urls": 10,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Noise",
-        "url": "https://www.jwz.org/blog/2026/11/noise/",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "mwl": {
-      "items": 20,
-      "unique_urls": 10,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "137: Paired with a Ghost",
-        "url": "https://mwl.io/archives/25049",
-        "score": 10,
-        "rank": 1
-      }
-    },
     "fedoramag": {
       "items": 20,
       "unique_urls": 10,
@@ -72096,18 +72336,6 @@
         "url": "https://fedoramagazine.org/installing-the-official-claude-desktop-linux-beta-on-fedora-linux/",
         "score": 11,
         "rank": 5
-      }
-    },
-    "thecollegeinvestor": {
-      "items": 20,
-      "unique_urls": 11,
-      "median_days_on_board": 2,
-      "one_day_pct": 27,
-      "top_item": {
-        "title": "Student Loan Interest Cap Plans: 0%, 2% And A 10% Credit Card Cap",
-        "url": "https://thecollegeinvestor.com/92224/student-loan-interest-credit-card-cap/",
-        "score": 5,
-        "rank": 1
       }
     },
     "ekioh": {
@@ -72142,18 +72370,6 @@
       "top_item": {
         "title": "Read No Frills Magento Layout For Free",
         "url": "https://alanastorm.com/read-no-frills-magento-layout-for-free/",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "darknet": {
-      "items": 20,
-      "unique_urls": 10,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Phone Phreaking – The Blind Teenager Who Whistled Free Calls",
-        "url": "https://www.darknet.org.uk/2026/11/phone-phreaking-joe-engressia-john-draper/",
         "score": 10,
         "rank": 1
       }
@@ -72466,18 +72682,6 @@
       "top_item": {
         "title": "CartSiphon: A Financially Motivated VShell Data-Theft Operation",
         "url": "https://www.jumpsec.com/guides/cartsiphon-a-financially-motivated-vshell-cluster/",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "sec_microsoft_security_blog": {
-      "items": 20,
-      "unique_urls": 11,
-      "median_days_on_board": 2,
-      "one_day_pct": 18,
-      "top_item": {
-        "title": "SCKit abuses ScreenConnect to deploy remote access and target technician sessions",
-        "url": "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
         "score": 10,
         "rank": 1
       }
@@ -80258,18 +80462,6 @@
         "rank": 1
       }
     },
-    "br_leaded_solder_old_computer_repair_histor": {
-      "items": 20,
-      "unique_urls": 10,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Halloween with the Camels",
-        "url": "https://www.leadedsolder.com/2026/10/31/rc2026-soggy-camelforth-happy-halloween-demo.html",
-        "score": 10,
-        "rank": 1
-      }
-    },
     "br_blog_posts_frank_elavsky": {
       "items": 20,
       "unique_urls": 10,
@@ -80314,18 +80506,6 @@
       "top_item": {
         "title": "Reality is the first step",
         "url": "https://polgarp.com/blog/reality-is-the-first-step/",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "br_fiddery": {
-      "items": 20,
-      "unique_urls": 10,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "spooky ooky friday 13th + today so far",
-        "url": "https://blog.fiddery.com/spooky-ooky-friday-13th-today-so-far/",
         "score": 10,
         "rank": 1
       }
@@ -87590,18 +87770,6 @@
         "rank": 1
       }
     },
-    "br_bovelo_das_unabh_ngige_und_kritische_fah": {
-      "items": 20,
-      "unique_urls": 10,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Bahntrassen: Vorfahrt fürs Fahrrad",
-        "url": "https://bovelo.de/2026/11/13/bahntrassen-vorfahrt-fuers-fahrrad/",
-        "score": 10,
-        "rank": 1
-      }
-    },
     "br_breakfastscot_ch_real_knowledge_is_to_kn": {
       "items": 20,
       "unique_urls": 10,
@@ -88162,18 +88330,6 @@
       "top_item": {
         "title": "Monthly Log: 10.26",
         "url": "https://crescendo.bearblog.dev/monthly-log-1026/",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "br_crow_s_corner": {
-      "items": 20,
-      "unique_urls": 10,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Table-Tested Review of the “13 Omens” Preview",
-        "url": "https://crowscorner.bearblog.dev/table-tested-review-of-the-13-omens-preview/",
         "score": 10,
         "rank": 1
       }
@@ -89630,18 +89786,6 @@
         "rank": 1
       }
     },
-    "br_how_to_save_the_world_dave_pollard_s_chr": {
-      "items": 20,
-      "unique_urls": 10,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Links of the Month: November 2026",
-        "url": "https://howtosavetheworld.ca/2026/11/14/links-of-the-month-november-2026/",
-        "score": 10,
-        "rank": 1
-      }
-    },
     "br_kalle_von_tobla_a_weng_kalle": {
       "items": 20,
       "unique_urls": 10,
@@ -90022,18 +90166,6 @@
       "top_item": {
         "title": "Thoughts on Writing in the Age of LLMs",
         "url": "https://jarosays.blog/2026/04/03/thoughts-on-writing-in-the-age-of-llms/",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "br_jd_torian": {
-      "items": 20,
-      "unique_urls": 10,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "On “Being Creative”",
-        "url": "https://jdtorian.com/on-being-creative/",
         "score": 10,
         "rank": 1
       }
@@ -90806,18 +90938,6 @@
         "rank": 1
       }
     },
-    "br_lorenzos_welt_der_blog_ber_die_dinge_der": {
-      "items": 20,
-      "unique_urls": 11,
-      "median_days_on_board": 2,
-      "one_day_pct": 18,
-      "top_item": {
-        "title": "Deutschland gewinnt in Serbien: Ein Schritt in die richtige Richtung",
-        "url": "https://lorenzos-welt.com/deutschland-gewinnt-in-serbien-ein-schritt-in-die-richtige-richtung/",
-        "score": 10,
-        "rank": 1
-      }
-    },
     "br_love_blood_rhetoric_writing_about_writin": {
       "items": 20,
       "unique_urls": 10,
@@ -91078,18 +91198,6 @@
       "top_item": {
         "title": "Our Agency",
         "url": "https://mattdobbins.com/our-agency/",
-        "score": 10,
-        "rank": 1
-      }
-    },
-    "br_matt_lakeman_writing_on_books_experiment": {
-      "items": 20,
-      "unique_urls": 10,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Notes on San Marino",
-        "url": "https://mattlakeman.org/2026/11/05/notes-on-san-marino/",
         "score": 10,
         "rank": 1
       }
@@ -93998,18 +94106,6 @@
         "rank": 1
       }
     },
-    "br_victor_kropp": {
-      "items": 20,
-      "unique_urls": 10,
-      "median_days_on_board": 2,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "Amazon Warehouse Tour",
-        "url": "https://victor.kropp.name/blog/2026/amazon-warehouse-tour/",
-        "score": 10,
-        "rank": 1
-      }
-    },
     "br_vince_honrado_imbat": {
       "items": 20,
       "unique_urls": 10,
@@ -95426,6 +95522,18 @@
         "rank": 1
       }
     },
+    "sec_the_record": {
+      "items": 19,
+      "unique_urls": 17,
+      "median_days_on_board": 1,
+      "one_day_pct": 88,
+      "top_item": {
+        "title": "FBI flash alert says Artex tool automating cyberattacks at ‘machine speed’",
+        "url": "https://therecord.media/artex-ai-tool-fbi-flash-alert",
+        "score": 5,
+        "rank": 1
+      }
+    },
     "br_willkommen_ebildungslabor": {
       "items": 19,
       "unique_urls": 11,
@@ -95711,18 +95819,6 @@
         "title": "Eternal-Tux: Crafting a Linux Kernel KSMBD 0-Click RCE Exploit from N-Days",
         "url": "https://www.willsroot.io/2025/09/ksmbd-0-click.html",
         "score": 9,
-        "rank": 1
-      }
-    },
-    "sec_the_record": {
-      "items": 18,
-      "unique_urls": 16,
-      "median_days_on_board": 1,
-      "one_day_pct": 88,
-      "top_item": {
-        "title": "FBI flash alert says Artex tool automating cyberattacks at ‘machine speed’",
-        "url": "https://therecord.media/artex-ai-tool-fbi-flash-alert",
-        "score": 5,
         "rank": 1
       }
     },
@@ -96696,6 +96792,18 @@
         "url": "https://hung.bearblog.dev/vietnamese-delicacy-bear-blog-carnival/",
         "score": 9,
         "rank": 1
+      }
+    },
+    "br_matt_lakeman_writing_on_books_experiment": {
+      "items": 18,
+      "unique_urls": 9,
+      "median_days_on_board": 2,
+      "one_day_pct": 0,
+      "top_item": {
+        "title": "Infinite Jest Extraction",
+        "url": "https://mattlakeman.org/2026/03/26/infinite-jest-extraction/",
+        "score": 9,
+        "rank": 2
       }
     },
     "br_mauro_meden": {
@@ -99002,114 +99110,6 @@
         "rank": 1
       }
     },
-    "sec_cyber_intelligence_insights": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Behind the Leak",
-        "url": "https://intelinsights.substack.com/p/behind-the-leak",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "tb_hrishikesh_barua": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "5 Patterns I Found in Cloud Outages in 2025 - 2026",
-        "url": "https://techops.substack.com/p/5-patterns-i-found-in-cloud-outages",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "nl_pythoncat": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Python 潮流周刊#175（附第 125 期全文）：AI 为 CPython 写出 61 万行 Lean 证明",
-        "url": "https://pythoncat.substack.com/p/python-175-125-ai-cpython-61-lean",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "nl_aifordevelopers": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "One Year with AI For Developers",
-        "url": "https://aifordevelopers.substack.com/p/one-year-with-ai-for-developers",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "nl_aievaluation": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "2026 October \"AI Evaluation\" Digest",
-        "url": "https://aievaluation.substack.com/p/2026-october-ai-evaluation-digest",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "nl_womenonrails": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "🪨 Newsletter WoR #69: AI won't solve all your problems, being human to avoid human error, and some games",
-        "url": "https://womenonrailsinternational.substack.com/p/newsletter-wor-69-ai-wont-solve-all",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "nl_weeklyrust": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "🦀 Systemd Finally Lets Rust In",
-        "url": "https://weeklyrust.substack.com/p/systemd-finally-lets-rust-in",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "nl_buzzrobot_ai_newsletter": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "Famous consciousness researcher on why machines will not be sentient",
-        "url": "https://buzzrobot.substack.com/p/famous-consciousness-researcher-on",
-        "score": 15,
-        "rank": 1
-      }
-    },
-    "nl_true_positive_weekly": {
-      "items": 15,
-      "unique_urls": 15,
-      "median_days_on_board": 1,
-      "one_day_pct": 100,
-      "top_item": {
-        "title": "True Positive Weekly #185",
-        "url": "https://aiweekly.substack.com/p/true-positive-weekly-185",
-        "score": 15,
-        "rank": 1
-      }
-    },
     "br_she_reads_novels_she_had_read_novels_whi": {
       "items": 15,
       "unique_urls": 8,
@@ -100358,6 +100358,18 @@
         "rank": 1
       }
     },
+    "javascriptweekly": {
+      "items": 13,
+      "unique_urls": 5,
+      "median_days_on_board": 3,
+      "one_day_pct": 20,
+      "top_item": {
+        "title": "How X (Twitter) is rebuilding its web app",
+        "url": "https://javascriptweekly.com/issues/810",
+        "score": 4,
+        "rank": 1
+      }
+    },
     "codecentric": {
       "items": 13,
       "unique_urls": 7,
@@ -100380,18 +100392,6 @@
         "url": "https://this-week-in-rust.org/blog/2026/11/11/this-week-in-rust-677/",
         "score": 9,
         "rank": 7
-      }
-    },
-    "javascriptweekly": {
-      "items": 12,
-      "unique_urls": 4,
-      "median_days_on_board": 3,
-      "one_day_pct": 0,
-      "top_item": {
-        "title": "How X (Twitter) is rebuilding its web app",
-        "url": "https://javascriptweekly.com/issues/810",
-        "score": 4,
-        "rank": 1
       }
     },
     "tumblrmapsbynik": {

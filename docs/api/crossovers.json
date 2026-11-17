@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T16:16:49.922955+00:00",
+ "generated_at": "2026-11-17T17:25:50.962685+00:00",
  "latest_snapshot": "2026-11-17",
  "crossovers": [
   {
@@ -510,6 +510,22 @@
    }
   },
   {
+   "url": "https://blog.pythonlibrary.org/2026/11/17/python-black-friday-2026-sale",
+   "title": "Mike Driscoll: Python Black Friday 2026 Sale",
+   "sources": [
+    "blogpythonlibrary",
+    "planetpython",
+    "tb_mike_driscoll"
+   ],
+   "days": 1,
+   "best": {
+    "score": 15,
+    "metric": "feed rank",
+    "source": "planetpython",
+    "date": "2026-11-17"
+   }
+  },
+  {
    "url": "https://deepmind.google/blog/introducing-alphaproof-code",
    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
    "sources": [
@@ -582,6 +598,21 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-10"
+   }
+  },
+  {
+   "url": "https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest",
+   "title": "Breaking: Eli Lilly CEO becomes latest to push back on Dario Amodei’s ludicrous, Elizabeth Holmes-like medical claims",
+   "sources": [
+    "garymarcus",
+    "hackernews"
+   ],
+   "days": 4,
+   "best": {
+    "score": 269,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-13"
    }
   },
   {
@@ -762,36 +793,6 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-12"
-   }
-  },
-  {
-   "url": "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100",
-   "title": "A100 unlocking",
-   "sources": [
-    "br_nelson_s_linkblog",
-    "hackernews"
-   ],
-   "days": 3,
-   "best": {
-    "score": 353,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-11"
-   }
-  },
-  {
-   "url": "https://hugovk.dev/blog/2026/lock-github-actions",
-   "title": "Lock your GitHub Actions",
-   "sources": [
-    "br_hugo_van_kemenade",
-    "hackernews"
-   ],
-   "days": 3,
-   "best": {
-    "score": 336,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-11"
    }
   }
  ]
