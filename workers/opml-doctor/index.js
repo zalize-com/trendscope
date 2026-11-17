@@ -30,16 +30,28 @@ export default {
     if (/^(localhost|127\.|10\.|192\.168\.|169\.254\.|0\.0\.0\.0|\[?::1)/.test(host)) {
       return j({ error: "not allowed" }, 403);
     }
+    const RETRYABLE = new Set([429, 502, 503, 520, 522, 525, 526, 527]);
+    const UAS = [
+      "opml-doctor/1.0 (+https://trendscope.zalize.com/tools/doctor)",
+      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36 opml-doctor/1.0",
+      "FeedFetcher-Google; (+http://www.google.com/feedfetcher.html)",
+    ];
     let resp;
     try {
-      resp = await fetch(target, {
-        redirect: "follow",
-        headers: {
-          "User-Agent": "opml-doctor/1.0 (+https://trendscope.zalize.com/tools/doctor)",
-          "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
-        },
-        cf: { timeout: 10000, cacheTtl: 300 },
-      });
+      for (let attempt = 0; ; attempt++) {
+        resp = await fetch(target, {
+          redirect: "follow",
+          headers: {
+            "User-Agent": UAS[Math.min(attempt, UAS.length - 1)],
+            "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+          },
+          cf: { timeout: 10000, cacheTtl: attempt === 0 ? 300 : 0 },
+        });
+        if (!RETRYABLE.has(resp.status) || attempt >= 2) break;
+        // burst-limited upstream (e.g. substack 429 wave): back off and retry
+        // with a different UA + fresh edge colo chance
+        await new Promise(r => setTimeout(r, 1200 + Math.random() * 1500));
+      }
     } catch (e) {
       return new Response("", {
         status: 200,
