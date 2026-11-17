@@ -29,3 +29,17 @@ window.kindChip = url => {
   const k = (window.__KINDS || {})[url];
   return k ? `<span class="src kindchip">${k}</span>` : "";
 };
+
+// dedup-lite.json (SimHash cross-source near-dup clusters) — shared lazy loader.
+let _dupsP = null;
+window.loadDups = (base = "") => {
+  _dupsP = _dupsP || fetch(base + "data/dedup-lite.json")
+    .then(r => (r.ok ? r.json() : {}))
+    .then(d => (window.__DUPS = d.dups || {}))
+    .catch(() => (window.__DUPS = {}));
+  return _dupsP;
+};
+window.dupChip = url => {
+  const d = (window.__DUPS || {})[url];
+  return d && d.n > 1 ? `<span class="src dupchip" title="same story on ${d.n} sources">≈${d.n}</span>` : "";
+};

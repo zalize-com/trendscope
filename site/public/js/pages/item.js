@@ -24,6 +24,7 @@ fetch("data/latest-lite.json", {cache:"no-cache"}).then(r=>r.ok?r:Promise.reject
   if (RECS) paint();
 }).catch(() => {});
 loadKinds().then(() => paint());
+loadDups().then(() => paint());
 fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
   RECS = [];
   for (const [url, it] of Object.entries(d.items)) {
@@ -109,6 +110,7 @@ function paint() {
     return `<div class="card">
       <b><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a>${kindChip(it.url)}${live}</b>
       <button class="embed-btn" data-t="${esc(it.title)}">embed this story</button>
+      ${(() => { const d = (window.__DUPS || {})[it.url]; return d && d.n > 1 ? `<div class="muted" style="font-size:12px;margin:2px 0 6px">same story near-dup on <b>${d.n}</b> sources: ${d.s.map(srcName).join(", ")}</div>` : ""; })()}
       <div class="stats">
         <div class="stat"><b>${days}</b><small>days on board</small></div>
         <div class="stat"><b>#${best}</b><small>best rank</small></div>

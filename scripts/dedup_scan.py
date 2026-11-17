@@ -121,6 +121,14 @@ def main():
            "cross_source_clusters": len(groups), "clusters": groups[:200]}
     with open(OUT, "w") as f:
         json.dump(out, f, ensure_ascii=False)
+    dups = {}
+    for g in groups:
+        canon_url = g["canonical"]["url"]
+        for m in g["members"]:
+            if m["url"]:
+                dups[m["url"]] = {"n": g["size"], "c": canon_url, "s": g["sources"]}
+    with open(os.path.join(ROOT, "data", "dedup-lite.json"), "w") as f:
+        json.dump({"date": lite.get("date"), "dups": dups}, f, ensure_ascii=False)
     print(f"scanned {len(items)} items, {len(sig)} fingerprinted, "
           f"{pairs} near-dup pairs, {len(groups)} cross-source clusters")
     for g in groups[:8]:
