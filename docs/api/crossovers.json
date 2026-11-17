@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T17:25:50.962685+00:00",
+ "generated_at": "2026-11-17T17:58:06.497304+00:00",
  "latest_snapshot": "2026-11-17",
  "crossovers": [
   {
@@ -510,6 +510,22 @@
    }
   },
   {
+   "url": "https://alloyhtml.com/example.html",
+   "title": "Show HN: Alloy CSS, dialogs, menus and tabs that work with JavaScript off",
+   "sources": [
+    "hackernews",
+    "hnrss",
+    "show_hn"
+   ],
+   "days": 1,
+   "best": {
+    "score": 82,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-17"
+   }
+  },
+  {
    "url": "https://blog.pythonlibrary.org/2026/11/17/python-black-friday-2026-sale",
    "title": "Mike Driscoll: Python Black Friday 2026 Sale",
    "sources": [
@@ -778,21 +794,6 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-13"
-   }
-  },
-  {
-   "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-   "title": "Critical RCE Vulnerability in Apache HTTP Server: Everything You Need To Know",
-   "sources": [
-    "hackernews",
-    "sec_wiz_blog"
-   ],
-   "days": 3,
-   "best": {
-    "score": 369,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-12"
    }
   }
  ]
