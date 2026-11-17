@@ -69,7 +69,7 @@ async function run() {
         pkgsF = pkgs.filter(m => sf(m.it));
   const srcs = [...new Set([...enter, ...exit, ...movers.map(m=>m.it)].map(i => i.source))].sort();
   const chips = srcs.map(s =>
-    `<a class="chip${s===QS?" on":""}" href="?a=${aEl.value}&b=${bEl.value}&s=${encodeURIComponent(s)}">${s}</a>`).join(" ") +
+    `<a class="chip${s===QS?" on":""}" href="?a=${aEl.value}&b=${bEl.value}&s=${encodeURIComponent(s)}">${esc(srcName(s))}</a>`).join(" ") +
     (QS ? ` <a class="chip" href="?a=${aEl.value}&b=${bEl.value}">all</a>` : "");
   $("out").innerHTML =
     (srcs.length ? `<p id="chips">${chips}</p>` : "") +

@@ -37,13 +37,13 @@ $("out").innerHTML =
   list.map(d =>
     `<tr><td><a class="dom" href="domain.html?d=${encodeURIComponent(d.h)}">${esc(d.h)}</a></td>
      <td class="num">${d.ndays}</td><td class="num">${d.hits}</td>
-     <td class="srcs">${d.srcs.join(", ")}</td>
+     <td class="srcs">${d.srcs.map(srcName).join(", ")}</td>
      <td class="last"><a href="${d.top.url}">${esc(d.top.title.length>70?d.top.title.slice(0,70)+"…":d.top.title)}</a><a href="item.html?q=${encodeURIComponent(d.top.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></td></tr>`
   ).join("") + `</table>` +
   (cross.length ? `<h2 style="margin-top:28px">crossovers — same url on 2+ sources &nbsp;<a href="docs/api/crossovers.json" style="font-size:12px;font-weight:400">↓ json</a></h2><ol>` +
     cross.map(c =>
       `<li><span class="it"><a href="${c.url}">${esc(c.title.length>80?c.title.slice(0,80)+"…":c.title)}</a>` +
-      `<span class="srcs" style="margin-left:6px">${c.srcs.join(" + ")}</span>` +
+      `<span class="srcs" style="margin-left:6px">${c.srcs.map(srcName).join(" + ")}</span>` +
       `<a href="item.html?q=${encodeURIComponent(c.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>` +
       `<span class="sc">${fmt(c.score)}</span></li>`).join("") + `</ol>` : "") +
   // source-pair overlap: how many URLs each pair of sources shared

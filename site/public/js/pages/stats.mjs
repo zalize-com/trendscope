@@ -72,7 +72,7 @@ const srcList = Object.entries(perSrc).sort((a,b) => b[1]-a[1]);
 const maxS = Math.max(...Object.values(perSrc));
 const PALETTE = ["#58a6ff","#7ee2a8","#f0883e","#d2a8ff","#79c0ff","#ffa657","#56d4bc","#ff9bcf","#a5d6ff","#e3b341","#8ddb8c","#f778ba","#76e3ea","#d3a6ff","#ffb86b"];
 document.getElementById("srcs").innerHTML = srcList.map(([s, n], i) =>
-    `<div class="bar"><span class="nm">${s}</span>
+    `<div class="bar"><span class="nm" title="${s}">${esc(srcName(s))}</span>
      <span class="fill" style="width:${Math.round(400*n/maxS)}px;background:${PALETTE[i % PALETTE.length]}"></span>
      <span class="v">${fmt(n)}</span></div>`).join("");
 // per-source share donut
@@ -85,7 +85,7 @@ document.getElementById("donut").innerHTML =
     const seg = `<circle cx="${CX}" cy="${CY}" r="${R}" fill="none" stroke="${PALETTE[i % PALETTE.length]}"
       stroke-width="26" stroke-dasharray="${len.toFixed(2)} ${(CIRC - len).toFixed(2)}"
       stroke-dashoffset="${(-acc * CIRC).toFixed(2)}" transform="rotate(-90 ${CX} ${CY})"
-      ><title>${s} — ${fmt(n)} (${(frac*100).toFixed(1)}%)</title></circle>`;
+      ><title>${srcName(s)} — ${fmt(n)} (${(frac*100).toFixed(1)}%)</title></circle>`;
     acc += frac; return seg;
   }).join("") +
   `<text x="${CX}" y="${CY-4}" fill="var(--fg)" font-size="18" font-weight="600" text-anchor="middle">${srcList.length}</text>` +
@@ -108,7 +108,7 @@ document.getElementById("donut").innerHTML =
         if (!n) return "";
         const h = (H - 2*P) * n / maxTot;
         y0 -= h;
-        return `<rect x="${cx - bw/2}" y="${y0}" width="${bw}" height="${h}" fill="${PALETTE[si % PALETTE.length]}"><title>${s}: ${n} (${d})</title></rect>`;
+        return `<rect x="${cx - bw/2}" y="${y0}" width="${bw}" height="${h}" fill="${PALETTE[si % PALETTE.length]}"><title>${srcName(s)}: ${n} (${d})</title></rect>`;
       }).join("");
       return segs + `<text x="${cx}" y="${H-8}" fill="var(--dim)" font-size="10" text-anchor="middle">${d.slice(5)}</text>`;
     }).join("");

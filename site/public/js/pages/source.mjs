@@ -31,7 +31,7 @@ const sources = [...new Set(all.map(r => r.source))].sort();
 if (!sources.includes(S)) location.search = "?s=hackernews";
 
 $("srcbar").innerHTML = sources.map(s =>
-  `<a class="chip ${s===S?"on":""}" href="?s=${encodeURIComponent(s)}">${s}</a>`).join("");
+  `<a class="chip ${s===S?"on":""}" href="?s=${encodeURIComponent(s)}">${esc(srcName(s))}</a>`).join("");
 
 const items = all.filter(r => r.source === S);
 const days = [...new Set(items.map(r => r.date))].sort();

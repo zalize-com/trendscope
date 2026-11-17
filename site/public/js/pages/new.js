@@ -33,9 +33,9 @@ Promise.all([
     `<b>${fresh.length}</b> of ${items.length} board items are first-seen today (${(100*fresh.length/Math.max(items.length,1)).toFixed(0)}%) · snapshot ${today}`;
   document.getElementById("out").innerHTML = Object.entries(bySrc)
     .sort((a,b)=>b[1].length-a[1].length).map(([src,list]) =>
-      `<li style="display:block;padding:8px 0"><b style="color:var(--dim)">${esc(src)} · ${list.length} new</b>` +
+      `<li style="display:block;padding:8px 0"><b style="color:var(--dim)">${esc(srcName(src))} · ${list.length} new</b>` +
       list.map(i => `<div style="display:flex;gap:8px;padding:3px 0 3px 14px;border-bottom:1px solid var(--border)">
         <a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a>
-        <span style="margin-left:auto;color:var(--dim);font-size:12px;white-space:nowrap">#${i.rank||"—"} ${fmt(i.score)}</span></div>`).join("") + `</li>`).join("")
+        <span style="margin-left:auto;color:var(--dim);font-size:12px;white-space:nowrap">${scoreText(i, fmt)}</span></div>`).join("") + `</li>`).join("")
     || `<li id="err">nothing new — every board item has been seen before</li>`;
 }).catch(() => { document.getElementById("err").textContent = "data unavailable"; });

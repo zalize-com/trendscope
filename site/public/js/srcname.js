@@ -1,6 +1,8 @@
 // source key → human label: strip the lane prefix, underscores to spaces
 // (sec_cyber_intelligence_insights → "cyber intelligence insights")
+const PLATFORM = { github_trending: "github trending", gitlab_stars: "gitlab stars" };
 window.srcName = s =>
+  PLATFORM[s] ||
   String(s || "")
     .replace(/^(sec|eb|tb|br|nl|pb|yt|tldr|aws|github|gitlab|meta|slack)_/, "")
     .replace(/_/g, " ");

@@ -45,7 +45,7 @@ try {
       (hot.slice(0,12).map(e => row(e, `<span class="up">+${fmt(e.delta)}</span>`)).join("")
         || `<li><span class="it" style="color:var(--dim)">no spikes today</span></li>`) + `</ol>` +
     `<h2>crossing over — on 2+ sources</h2><ol>` +
-      (cross.slice(0,10).map(c => row({title: c.title, url: c.url, source: c.sources.join(" + ")},
+      (cross.slice(0,10).map(c => row({title: c.title, url: c.url, source: c.sources.map(srcName).join(" + ")},
         `${scoreText(c.best, fmt)}`)).join("")
         || `<li><span class="it" style="color:var(--dim)">none yet</span></li>`) + `</ol>` +
     `<h2>new neighborhoods — domains first seen today</h2><ol>` +

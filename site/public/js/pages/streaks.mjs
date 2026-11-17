@@ -20,7 +20,7 @@ const row = (r, badge) =>
 const srcs = [...new Set(recs.map(r => r.source))].sort();
 const QS = new URLSearchParams(location.search).get("s");
 $("srcbar").innerHTML = srcs.map(s =>
-  `<a class="chip${s===QS?" on":""}" href="?s=${encodeURIComponent(s)}">${s}</a>`).join(" ") +
+  `<a class="chip${s===QS?" on":""}" href="?s=${encodeURIComponent(s)}">${esc(srcName(s))}</a>`).join(" ") +
   (QS ? ` <a class="chip" href="?">all</a>` : "");
 
 const sf = r => !QS || r.source === QS;

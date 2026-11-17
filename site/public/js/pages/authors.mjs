@@ -29,7 +29,7 @@ $("out").innerHTML = list.length
     list.map(a =>
       `<tr><td><a class="who" href="author.html?u=${encodeURIComponent(a.who)}">${esc(a.who)}</a></td>
        <td class="num">${a.ndays}</td><td class="num">${a.hits}</td>
-       <td class="srcs">${a.srcs.join(", ")}</td>
+       <td class="srcs">${a.srcs.map(srcName).join(", ")}</td>
        <td class="last"><a href="${a.top.url}">${esc(a.top.title.length>70?a.top.title.slice(0,70)+"…":a.top.title)}</a><a href="item.html?q=${encodeURIComponent(a.top.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></td></tr>`).join("") +
     `</table>`
   : `<p id="err">No author data yet — only some sources carry an author field.</p>`;

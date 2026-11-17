@@ -8,7 +8,7 @@ const spikes = d.single_day_spikes, jumps = d.package_rank_jumps,
 const QS = new URLSearchParams(location.search).get("s");
 const srcs = [...new Set(spikes.concat(jumps, climbers).map(i => i.source))].sort();
 $("srcbar").innerHTML = srcs.map(s =>
-  `<a class="chip${s===QS?" on":""}" href="?s=${encodeURIComponent(s)}">${s}</a>`).join(" ") +
+  `<a class="chip${s===QS?" on":""}" href="?s=${encodeURIComponent(s)}">${esc(srcName(s))}</a>`).join(" ") +
   (QS ? ` <a class="chip" href="?">all</a>` : "");
 const sf = e => !QS || e.source === QS;
 const spikesF = spikes.filter(sf), jumpsF = jumps.filter(sf), climbersF = climbers.filter(sf);
