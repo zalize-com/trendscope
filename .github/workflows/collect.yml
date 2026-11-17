@@ -77,6 +77,9 @@ jobs:
           python3 scripts/stats.py || true
           python3 scripts/today.py || true
 
+      - name: Regenerate sitemap (fresh lastmod daily)
+        run: python3 scripts/gen_sitemap.py
+
       - name: Check internal links + sitemap
         run: python3 scripts/linkcheck.py
 

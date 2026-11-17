@@ -58,8 +58,11 @@ for page in sorted(pages):
         continue
     # sitemap locs are extensionless (CF Pages 308s .html → extensionless)
     loc_rel = rel[:-5] if rel.endswith(".html") else rel
-    check(re.search(r"<loc>[^<]*/" + re.escape(loc_rel) + r"</loc>", sitemap),
-            f"{rel}: missing from sitemap.xml")
+    if loc_rel == "index":
+        ok = re.search(r"<loc>https?://[^/<]+/</loc>", sitemap)
+    else:
+        ok = re.search(r"<loc>[^<]*/" + re.escape(loc_rel) + r"</loc>", sitemap)
+    check(ok, f"{rel}: missing from sitemap.xml")
 
 def js_string_scan(src):
     """Stack-based JS scanner — catches unclosed ', ", ` literals, /* comments
