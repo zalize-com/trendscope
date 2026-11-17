@@ -95,7 +95,7 @@ if (MODE === "sources") {
     document.getElementById("date").textContent = `${list.length} sources · ${d.days_tracked}d tracked`;
     document.getElementById("list").innerHTML = list.slice(0, N).map(([name, v], i) =>
       `<li><span class="rank">${i+1}</span>
-        <span><a href="https://trendscope.zalize.com/source.html?s=${encodeURIComponent(name)}" target="_blank" rel="noopener">${esc(name)}</a><span class="src">${v.unique_urls} unique · ${v.one_day_pct}% one-day</span></span>
+        <span><a href="https://trendscope.zalize.com/source.html?s=${encodeURIComponent(name)}" target="_blank" rel="noopener">${esc(srcName(name))}</a><span class="src">${v.unique_urls} unique · ${v.one_day_pct}% one-day</span></span>
         <span class="score">${fmt(v.items)}</span></li>`).join("")
       || `<li id="err">no source data</li>`;
   }).catch(() => { document.getElementById("err").textContent = "sources data unavailable"; });
@@ -119,7 +119,7 @@ if (MODE === "weekday") {
     document.getElementById("list").innerHTML = srcs.map(([name, v], i) => {
       const peak = v.counts.indexOf(Math.max(...v.counts));
       return `<li><span class="rank">${i+1}</span>
-        <span><a href="https://trendscope.zalize.com/source.html?s=${encodeURIComponent(name)}" target="_blank" rel="noopener">${esc(name)}</a><span class="src">peaks ${d.days_of_week[peak]} · ${v.total} items</span></span>
+        <span><a href="https://trendscope.zalize.com/source.html?s=${encodeURIComponent(name)}" target="_blank" rel="noopener">${esc(srcName(name))}</a><span class="src">peaks ${d.days_of_week[peak]} · ${v.total} items</span></span>
         <span class="score">${v.counts.join("·")}</span></li>`;
     }).join("") || `<li id="err">no weekday data</li>`;
   }).catch(() => { document.getElementById("err").textContent = "weekday data unavailable"; });
@@ -130,7 +130,7 @@ if (MODE === "health") {
     const srcs = Object.entries(d.sources).slice(0, N);
     document.getElementById("date").textContent = `source health · ${Object.keys(d.sources).length} sources · ${d.days_tracked}d tracked`;
     document.getElementById("list").innerHTML = srcs.map(([name, v]) => {
-      return `<li><span><a href="https://trendscope.zalize.com/source.html?s=${encodeURIComponent(name)}" target="_blank" rel="noopener">${esc(name)}</a><span class="src">${v.items} items · median ${v.median_days_on_board}d on board</span></span><span class="score">${v.one_day_pct}% 1-day</span></li>`;
+      return `<li><span><a href="https://trendscope.zalize.com/source.html?s=${encodeURIComponent(name)}" target="_blank" rel="noopener">${esc(srcName(name))}</a><span class="src">${v.items} items · median ${v.median_days_on_board}d on board</span></span><span class="score">${v.one_day_pct}% 1-day</span></li>`;
     }).join("") || `<li id="err">no source data</li>`;
   }).catch(() => { document.getElementById("err").textContent = "sources data unavailable"; });
 } else
@@ -179,7 +179,7 @@ if (MODE === "domain") {
     document.getElementById("date").textContent = host ? `domain · ${host}` : "top domains this window";
     document.getElementById("list").innerHTML = list.slice(0, N).map((e,i) =>
       `<li><span class="rank">${i+1}</span>
-        <span><a href="${e.top_hit?.url || "#"}" target="_blank" rel="noopener">${esc(e.hostname)}</a><span class="src">${e.days_on_board}d on board · ${e.items} items · ${e.sources.join("+")}</span></span>
+        <span><a href="${e.top_hit?.url || "#"}" target="_blank" rel="noopener">${esc(e.hostname)}</a><span class="src">${e.days_on_board}d on board · ${e.items} items · ${e.sources.map(srcName).join("+")}</span></span>
         <span class="score">${fmt(e.top_hit?.score || 0)}</span></li>`).join("")
       || `<li id="err">no domain data${host ? " for "+esc(host) : ""}</li>`;
   }).catch(() => { document.getElementById("err").textContent = "domain data unavailable"; });
@@ -192,7 +192,7 @@ if (MODE === "author") {
     document.getElementById("date").textContent = who ? `author · ${who}` : "top authors this window";
     document.getElementById("list").innerHTML = list.slice(0, N).map((e,i) =>
       `<li><span class="rank">${i+1}</span>
-        <span><a href="${e.top_hit?.url || "#"}" target="_blank" rel="noopener">${esc(e.author)}</a><span class="src">${e.days_on_board}d on board · ${e.items} items · ${e.sources.join("+")}</span></span>
+        <span><a href="${e.top_hit?.url || "#"}" target="_blank" rel="noopener">${esc(e.author)}</a><span class="src">${e.days_on_board}d on board · ${e.items} items · ${e.sources.map(srcName).join("+")}</span></span>
         <span class="score">${fmt(e.top_hit?.score || 0)}</span></li>`).join("")
       || `<li id="err">no author data${who ? " for "+esc(who) : ""}</li>`;
   }).catch(() => { document.getElementById("err").textContent = "author data unavailable"; });
@@ -428,7 +428,7 @@ fetch("data/latest-lite.json", {cache:"no-cache"}).then(r=>r.ok?r:Promise.reject
   flat.sort((a,b) => b.heat - a.heat);
   document.getElementById("list").innerHTML = flat.length ? flat.slice(0, N).map((x, i) =>
     `<li><span class="rank">${i+1}</span>
-      <span><a href="${x.it.url}" target="_blank" rel="noopener">${esc(x.it.title)}</a><span class="src">${x.it.source}</span></span>
+      <span><a href="${x.it.url}" target="_blank" rel="noopener">${esc(x.it.title)}</a><span class="src">${srcName(x.it.source)}</span></span>
       <span class="score">${scoreText(x.it, fmt)}</span></li>`).join("")
     : `<li id="err">no items match this filter today</li>`;
 }).catch(() => { document.getElementById("err").textContent = "snapshot unavailable"; });

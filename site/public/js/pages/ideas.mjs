@@ -128,7 +128,7 @@ $("out").innerHTML =
     (topThemes.length ? topThemes.map(th => {
       const cov = coverage(th.name);
       const tag = cov.length
-        ? `<span class="sc" style="margin-left:8px">built: <a href="${cov[0].url}" target="_blank" rel="noopener">${esc(cov[0].title.slice(0, 42))}</a> <span class="src">${cov[0].source}</span></span>`
+        ? `<span class="sc" style="margin-left:8px">built: <a href="${cov[0].url}" target="_blank" rel="noopener">${esc(cov[0].title.slice(0, 42))}</a> <span class="src">${srcName(cov[0].source)}</span></span>`
         : `<span class="sc" style="margin-left:8px;color:var(--green)">◆ gap — nothing on our radar addresses it</span>`;
       return `<div class="theme"><h3>${esc(th.name)} <b>×${th.urls.size}</b>${tag}</h3><ul>` +
         [...th.urls].map(u => row({...items[u], url: u})).join("") +

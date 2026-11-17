@@ -65,7 +65,7 @@ fetch("docs/api/series.json", {cache:"no-cache"}).then(r => r.json()).then(ser =
   const selSrc = new URLSearchParams(location.search).get("s") || "";
   const chips = [`<span class="chip ${!selSrc ? "on" : ""}" data-s="">all</span>`]
     .concat(Object.keys(srcCounts).sort((a,b) => srcCounts[b] - srcCounts[a])
-      .map(s => `<span class="chip ${s === selSrc ? "on" : ""}" data-s="${s}">${s} ${srcCounts[s]}</span>`))
+      .map(s => `<span class="chip ${s === selSrc ? "on" : ""}" data-s="${s}">${srcName(s)} ${srcCounts[s]}</span>`))
     .join("");
   const items2 = selSrc ? items.filter(e => e.source === selSrc) : items;
   const top = items2.sort((a,b) => b.total - a.total).slice(0, 50);
