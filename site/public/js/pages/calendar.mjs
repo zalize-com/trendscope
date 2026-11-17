@@ -53,7 +53,7 @@ for (const m of months) {
     grid.innerHTML += `<div class="cell${ds === last ? " today" : ""}">
       <div class="d"><a href="index.html?day=${ds}" title="open the ${ds} snapshot" style="color:var(--dim);text-decoration:none">${d}</a></div>
       <a href="${esc(b.url)}">${esc(b.title.slice(0, 90))}</a>
-      <div class="meta"><span class="src">${srcName(b.source)}</span> ${fmt(b.score)} ${b.metric}</div></div>`;
+      <div class="meta"><span class="src">${srcName(b.source)}</span> ${scoreText(b, fmt)}</div></div>`;
   }
 }
 document.getElementById("sub").innerHTML =

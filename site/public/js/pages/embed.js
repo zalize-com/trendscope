@@ -140,7 +140,7 @@ if (MODE === "streaks") {
     const rows = (d.active || []).slice(0, N);
     document.getElementById("date").textContent = `longest active streaks · ${d.active_count} streaking · ${d.days_tracked}d tracked`;
     document.getElementById("list").innerHTML = rows.map((it, i) =>
-      `<li><span class="rank">${i+1}</span><span><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a><span class="src">${srcName(it.source)} · top #${it.top_rank} · ${it.top_score} ${it.metric}</span></span><span class="score"><b style="color:var(--orange)"><i data-lucide="flame"></i>${it.consecutive_days}d</b></span></li>`
+      `<li><span class="rank">${i+1}</span><span><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a><span class="src">${srcName(it.source)} · ${scoreText(it)}</span></span><span class="score"><b style="color:var(--orange)"><i data-lucide="flame"></i>${it.consecutive_days}d</b></span></li>`
     ).join("") || `<li id="err">no active streaks</li>`;
   }).catch(() => { document.getElementById("err").textContent = "streaks data unavailable"; });
 } else
@@ -429,7 +429,7 @@ fetch("data/latest-lite.json", {cache:"no-cache"}).then(r=>r.ok?r:Promise.reject
   document.getElementById("list").innerHTML = flat.length ? flat.slice(0, N).map((x, i) =>
     `<li><span class="rank">${i+1}</span>
       <span><a href="${x.it.url}" target="_blank" rel="noopener">${esc(x.it.title)}</a><span class="src">${x.it.source}</span></span>
-      <span class="score">${fmt(x.it.score)} ${x.it.metric}</span></li>`).join("")
+      <span class="score">${scoreText(x.it, fmt)}</span></li>`).join("")
     : `<li id="err">no items match this filter today</li>`;
 }).catch(() => { document.getElementById("err").textContent = "snapshot unavailable"; });
 

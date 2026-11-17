@@ -124,7 +124,7 @@ function paint() {
           : `<span style="color:${d > 0 ? "var(--green)" : "var(--red)"}">${d > 0 ? "+" : "−"}${fmt(Math.abs(d))}</span>`;
         return `<li><span class="rk">#${r.rank}</span>
         <span class="it">${r.date}<a class="src" href="source.html?s=${encodeURIComponent(r.source)}" title="source deep-dive" style="text-decoration:none">${srcName(r.source)}</a></span>
-        <span class="sc">${fmt(+r.score||0)} ${r.metric} ${dstr}</span></li>`;
+        <span class="sc">${scoreText(r, fmt)} ${dstr}</span></li>`;
       }).join("")}</ol>
     </div>`;
   }).join("") + (groups.length > 8 ? `<p id="err">…and ${groups.length-8} more matches</p>` : "");

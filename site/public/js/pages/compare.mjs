@@ -77,7 +77,7 @@ async function run() {
       moversF.slice(0, 15).map(m =>
         row(m.it, `<span class="dim">${fmt(m.a)} →</span>`, `${m.d>0?"+":""}${fmt(m.d)} ${m.it.metric}`, "up")).join("") + `</ol>` +
     `<h2>new on the board</h2><ol>` +
-      enterF.slice(0, 15).map(it => row(it, `<span class="dim">new</span>`, `${fmt(it.score)} ${it.metric}`, "up")).join("") + `</ol>` +
+      enterF.slice(0, 15).map(it => row(it, `<span class="dim">new</span>`, scoreText(it, fmt), "up")).join("") + `</ol>` +
     `<h2>biggest droppers</h2><ol>` +
       [...moversF].sort((x,y)=>x.d-y.d).slice(0, 10).map(m =>
         row(m.it, `<span class="dim">${fmt(m.a)} →</span>`, `${fmt(m.d)} ${m.it.metric}`, "down")).join("") + `</ol>` +

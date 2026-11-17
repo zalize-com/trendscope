@@ -33,6 +33,6 @@ async function main(){
  if(!items.length){document.getElementById('err').textContent='今日无条目——该源本轮未更新或 feed 暂不可达';return;}
  document.getElementById('list').innerHTML=items.map((it,i)=>
   `<li><span class="rk">${i+1}</span><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>`+
-  `<span class="sc">${it.metric?esc(it.metric)+' ':''}${it.score??''}</span></li>`).join('');
+  `<span class="sc">${esc(scoreText(it))}</span></li>`).join('');
 }
 main();

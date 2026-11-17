@@ -84,5 +84,5 @@ fetch("data/latest-lite.json", {cache:"no-cache"}).then(r=>r.ok?r:Promise.reject
   document.getElementById("out").innerHTML = Object.entries(bySrc)
     .sort((a,b) => b[1].length - a[1].length).map(([s, its]) =>
       `<h2>${s} — ${its.length}</h2><ol>${its.map((it,i) =>
-        `<li><span class="r">${i+1}</span><span class="it"><a href="${it.url}">${esc(it.title)}</a><a class="trj" href="item.html?q=${encodeURIComponent(it.title)}" title="trajectory">⤳</a></span><span class="sc">${fmt(it.score)} ${it.metric}</span></li>`).join("")}</ol>`).join("");
+        `<li><span class="r">${i+1}</span><span class="it"><a href="${it.url}">${esc(it.title)}</a><a class="trj" href="item.html?q=${encodeURIComponent(it.title)}" title="trajectory">⤳</a></span><span class="sc">${scoreText(it, fmt)}</span></li>`).join("")}</ol>`).join("");
 }).catch(() => { document.getElementById("err").textContent = "snapshot unavailable"; });
