@@ -22,7 +22,7 @@ rm -rf "$OUT"
 mkdir -p "$OUT"
 cp -rL "$ROOT/site/dist/." "$OUT/"
 
-rm -f "$OUT/data/latest.json" "$OUT/data/history.csv"
+rm -f "$OUT/data/latest.json" "$OUT/data/history.csv" "$OUT/docs/api/series.json"
 
 # repo-level generated files (sitemap.xml, feed.xml, llms.txt, ...) still name
 # the preview origin — repoint the deploy copy only; repo files switch via
