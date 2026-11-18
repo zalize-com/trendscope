@@ -1,10 +1,24 @@
 ---
 import Base from "../layouts/Base.astro";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 const title = "trendscope FAQ \u2014 the developer attention dataset";
 const description = "trendscope FAQ \u2014 where the data comes from, what the API covers, and how to self-host.";
 const path = '/faq.html';
+// Build FAQPage JSON-LD from the same docs/faq.md the page renders live.
+const md = readFileSync(resolve(process.cwd(), "../docs/faq.md"), "utf8");
+const qa = [...md.matchAll(/^## (.+?)\n([\s\S]*?)(?=^## |\s*$)/gm)]
+  .map(m => ({
+    "@type": "Question",
+    "name": m[1].trim(),
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": m[2].replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1 ($2)").replace(/[`*#]/g, "").trim().slice(0, 800),
+    },
+  }));
+const jsonld = { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": qa };
 ---
-<Base title={title} description={description} path={path} nav="none">
+<Base title={title} description={description} path={path} nav="none" jsonld={jsonld}>
 
 <nav><a href="index.html">← trendscope</a> · <a href="docs/data-dictionary.md">data dictionary</a> · <a href="badges.html">badges</a></nav>
   <h1>faq</h1>
