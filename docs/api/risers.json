@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17",
-  "latest_snapshot": "2026-11-17",
-  "days_tracked": 11,
+  "generated_at": "2026-11-18",
+  "latest_snapshot": "2026-11-18",
+  "days_tracked": 12,
   "single_day_spikes": [
     {
       "title": "deepseek-ai/chat-demo",
@@ -12,6 +12,16 @@
       "delta": 1151,
       "from_score": 2959,
       "to_score": 4110
+    },
+    {
+      "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+      "source": "hackernews",
+      "url": "https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
+      "metric": "points",
+      "date": "2026-11-18",
+      "delta": 1139,
+      "from_score": 6,
+      "to_score": 1145
     },
     {
       "title": "hitkeeen/blender-ai-mcp-addon",
@@ -34,6 +44,16 @@
       "to_score": 2959
     },
     {
+      "title": "GPT‑6.2 Astra and Sol",
+      "source": "hackernews",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "metric": "points",
+      "date": "2026-11-18",
+      "delta": 1057,
+      "from_score": 3,
+      "to_score": 1060
+    },
+    {
       "title": "All AI-generated code should be Open Source",
       "source": "lemmy",
       "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
@@ -42,6 +62,36 @@
       "delta": 1053,
       "from_score": 2,
       "to_score": 1055
+    },
+    {
+      "title": "Immortal-Protocols/lastbook",
+      "source": "github_trending",
+      "url": "https://github.com/Immortal-Protocols/lastbook",
+      "metric": "stars",
+      "date": "2026-11-18",
+      "delta": 937,
+      "from_score": 851,
+      "to_score": 1788
+    },
+    {
+      "title": "krisgfx9/Wireless-Device-Battery-Monitor",
+      "source": "github_trending",
+      "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
+      "metric": "stars",
+      "date": "2026-11-18",
+      "delta": 895,
+      "from_score": 1786,
+      "to_score": 2681
+    },
+    {
+      "title": "gylive/google-ultra",
+      "source": "github_trending",
+      "url": "https://github.com/gylive/google-ultra",
+      "metric": "stars",
+      "date": "2026-11-18",
+      "delta": 873,
+      "from_score": 704,
+      "to_score": 1577
     },
     {
       "title": "Many of Amazon’s Black Friday and Cyber Monday “deals” offered no savings",
@@ -74,6 +124,26 @@
       "to_score": 1638
     },
     {
+      "title": "Apple Services Down",
+      "source": "hackernews",
+      "url": "https://developer.apple.com/system-status/",
+      "metric": "points",
+      "date": "2026-11-18",
+      "delta": 615,
+      "from_score": 4,
+      "to_score": 619
+    },
+    {
+      "title": "Highly classified US national security communications network goes down",
+      "source": "hackernews",
+      "url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
+      "metric": "points",
+      "date": "2026-11-18",
+      "delta": 440,
+      "from_score": 11,
+      "to_score": 451
+    },
+    {
       "title": "duwqijlk/muse-protocol",
       "source": "github_trending",
       "url": "https://github.com/duwqijlk/muse-protocol",
@@ -84,6 +154,16 @@
       "to_score": 1455
     },
     {
+      "title": "Noniv/abyssal-garden",
+      "source": "github_trending",
+      "url": "https://github.com/Noniv/abyssal-garden",
+      "metric": "stars",
+      "date": "2026-11-18",
+      "delta": 432,
+      "from_score": 1728,
+      "to_score": 2160
+    },
+    {
       "title": "Lovable apps expose passport details and more than 200K private messages",
       "source": "hackernews",
       "url": "https://www.crissyfield.de/research/lovable-en/",
@@ -92,6 +172,46 @@
       "delta": 425,
       "from_score": 318,
       "to_score": 743
+    },
+    {
+      "title": "deepseek-ai/chat-demo",
+      "source": "github_trending",
+      "url": "https://github.com/deepseek-ai/chat-demo",
+      "metric": "stars",
+      "date": "2026-11-18",
+      "delta": 418,
+      "from_score": 4110,
+      "to_score": 4528
+    },
+    {
+      "title": "CzzzzzzJ/mdldm-maitian",
+      "source": "github_trending",
+      "url": "https://github.com/CzzzzzzJ/mdldm-maitian",
+      "metric": "stars",
+      "date": "2026-11-18",
+      "delta": 385,
+      "from_score": 640,
+      "to_score": 1025
+    },
+    {
+      "title": "erkamyaman/rust-anything",
+      "source": "github_trending",
+      "url": "https://github.com/erkamyaman/rust-anything",
+      "metric": "stars",
+      "date": "2026-11-18",
+      "delta": 374,
+      "from_score": 939,
+      "to_score": 1313
+    },
+    {
+      "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
+      "source": "hackernews",
+      "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+      "metric": "points",
+      "date": "2026-11-18",
+      "delta": 373,
+      "from_score": 1,
+      "to_score": 374
     },
     {
       "title": "ZiChuanLan/freebie-radar",
@@ -184,6 +304,16 @@
       "to_score": 295
     },
     {
+      "title": "MAI Code 2 and Code 2 Flash",
+      "source": "hnrss",
+      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+      "metric": "feed rank",
+      "date": "2026-11-18",
+      "delta": 268,
+      "from_score": 6,
+      "to_score": 274
+    },
+    {
       "title": "apex-compute/ANR",
       "source": "github_trending",
       "url": "https://github.com/apex-compute/ANR",
@@ -204,6 +334,46 @@
       "to_score": 319
     },
     {
+      "title": "ZiChuanLan/freebie-radar",
+      "source": "github_trending",
+      "url": "https://github.com/ZiChuanLan/freebie-radar",
+      "metric": "stars",
+      "date": "2026-11-18",
+      "delta": 261,
+      "from_score": 1170,
+      "to_score": 1431
+    },
+    {
+      "title": "How the Claude Code team thinks about verification",
+      "source": "hackernews",
+      "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+      "metric": "points",
+      "date": "2026-11-18",
+      "delta": 253,
+      "from_score": 5,
+      "to_score": 258
+    },
+    {
+      "title": "Phrack 73 Released",
+      "source": "hnrss",
+      "url": "https://phrack.org/issues/73/introduction_md",
+      "metric": "feed rank",
+      "date": "2026-11-18",
+      "delta": 252,
+      "from_score": 8,
+      "to_score": 260
+    },
+    {
+      "title": "sybil-solutions/inference-optimisation-skill",
+      "source": "github_trending",
+      "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+      "metric": "stars",
+      "date": "2026-11-18",
+      "delta": 240,
+      "from_score": 686,
+      "to_score": 926
+    },
+    {
       "title": "Noniv/abyssal-garden",
       "source": "github_trending",
       "url": "https://github.com/Noniv/abyssal-garden",
@@ -212,6 +382,16 @@
       "delta": 239,
       "from_score": 836,
       "to_score": 1075
+    },
+    {
+      "title": "What is the best harness for each model?",
+      "source": "hackernews",
+      "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+      "metric": "points",
+      "date": "2026-11-18",
+      "delta": 223,
+      "from_score": 108,
+      "to_score": 331
     },
     {
       "title": "Microsoft blames monster email outage on software defect introduced in July fix",
@@ -224,6 +404,16 @@
       "to_score": 220
     },
     {
+      "title": "350 years ago, Ole Rømer discovered that light has a finite speed",
+      "source": "hnrss",
+      "url": "https://www.sciencenorway.no/culture-history-history-of-science/350-years-ago-this-man-discovered-that-light-has-a-finite-speed/2737969",
+      "metric": "feed rank",
+      "date": "2026-11-18",
+      "delta": 216,
+      "from_score": 12,
+      "to_score": 228
+    },
+    {
       "title": "duwqijlk/muse-protocol",
       "source": "github_trending",
       "url": "https://github.com/duwqijlk/muse-protocol",
@@ -234,6 +424,26 @@
       "to_score": 1016
     },
     {
+      "title": "Quad9's withdrawal from France: A canary in the coal mine",
+      "source": "hnrss",
+      "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+      "metric": "feed rank",
+      "date": "2026-11-18",
+      "delta": 206,
+      "from_score": 15,
+      "to_score": 221
+    },
+    {
+      "title": "Solid 2.0",
+      "source": "hnrss",
+      "url": "https://www.solidjs.com/blog/solid-2-0-the-long-hold/",
+      "metric": "feed rank",
+      "date": "2026-11-18",
+      "delta": 203,
+      "from_score": 10,
+      "to_score": 213
+    },
+    {
       "title": "hitkeeen/blender-ai-mcp-addon",
       "source": "github_trending",
       "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
@@ -242,6 +452,16 @@
       "delta": 197,
       "from_score": 904,
       "to_score": 1101
+    },
+    {
+      "title": "haziqahmedqasmi/PeakCut",
+      "source": "github_trending",
+      "url": "https://github.com/haziqahmedqasmi/PeakCut",
+      "metric": "stars",
+      "date": "2026-11-18",
+      "delta": 196,
+      "from_score": 669,
+      "to_score": 865
     },
     {
       "title": "A Family Tree of Software Job Titles",
@@ -282,226 +502,6 @@
       "delta": 177,
       "from_score": 1051,
       "to_score": 1228
-    },
-    {
-      "title": "Understanding Positional Embeddings in Modern LLMs",
-      "source": "aheadofai",
-      "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
-      "metric": "feed rank",
-      "date": "2026-11-16",
-      "delta": 177,
-      "from_score": 15,
-      "to_score": 192
-    },
-    {
-      "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
-      "source": "hackernews",
-      "url": "https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/",
-      "metric": "points",
-      "date": "2026-11-17",
-      "delta": 175,
-      "from_score": 123,
-      "to_score": 298
-    },
-    {
-      "title": "Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence",
-      "source": "ask_hn",
-      "url": "https://news.ycombinator.com/item?id=50510042",
-      "metric": "points",
-      "date": "2026-11-17",
-      "delta": 172,
-      "from_score": 7,
-      "to_score": 179
-    },
-    {
-      "title": "Emacs Is My Browser",
-      "source": "hackernews",
-      "url": "https://joshblais.com/blog/emacs-as-my-browser/",
-      "metric": "points",
-      "date": "2026-11-16",
-      "delta": 167,
-      "from_score": 3,
-      "to_score": 170
-    },
-    {
-      "title": "How Rust Changed Me As A Developer",
-      "source": "br_secret_weblog",
-      "url": "https://blog.startifact.com/posts/how-rust-changed-me/",
-      "metric": "feed rank",
-      "date": "2026-11-17",
-      "delta": 166,
-      "from_score": 15,
-      "to_score": 181
-    },
-    {
-      "title": "Policy and Disclosure: 2026 Edition",
-      "source": "googleprojectzero",
-      "url": "https://projectzero.google/2026/11/disclosure-policy.html",
-      "metric": "feed rank",
-      "date": "2026-11-15",
-      "delta": 158,
-      "from_score": 62,
-      "to_score": 220
-    },
-    {
-      "title": "KDE: The documentary [video]",
-      "source": "hackernews",
-      "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
-      "metric": "points",
-      "date": "2026-11-15",
-      "delta": 157,
-      "from_score": 273,
-      "to_score": 430
-    },
-    {
-      "title": "Why did some Apollo missions carry a grenade launcher? (2019)",
-      "source": "hackernews",
-      "url": "https://space.stackexchange.com/questions/37775",
-      "metric": "points",
-      "date": "2026-11-16",
-      "delta": 157,
-      "from_score": 67,
-      "to_score": 224
-    },
-    {
-      "title": "Grazing sheep in fields with solar arrays",
-      "source": "hackernews",
-      "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
-      "metric": "points",
-      "date": "2026-11-17",
-      "delta": 151,
-      "from_score": 63,
-      "to_score": 214
-    },
-    {
-      "title": "A short explainer on how El Niño works [video]",
-      "source": "hnrss",
-      "url": "https://www.youtube.com/watch?v=7_JF3etiAv8",
-      "metric": "feed rank",
-      "date": "2026-11-16",
-      "delta": 149,
-      "from_score": 6,
-      "to_score": 155
-    },
-    {
-      "title": "'Birdbrain' Is a Misnomer. Crows Make Decisions Faster Than We Can",
-      "source": "hnrss",
-      "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
-      "metric": "feed rank",
-      "date": "2026-11-16",
-      "delta": 147,
-      "from_score": 5,
-      "to_score": 152
-    },
-    {
-      "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
-      "source": "hackernews",
-      "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
-      "metric": "points",
-      "date": "2026-11-15",
-      "delta": 127,
-      "from_score": 86,
-      "to_score": 213
-    },
-    {
-      "title": "FrigadeHQ/yogurt",
-      "source": "github_trending",
-      "url": "https://github.com/FrigadeHQ/yogurt",
-      "metric": "stars",
-      "date": "2026-11-16",
-      "delta": 127,
-      "from_score": 1520,
-      "to_score": 1647
-    },
-    {
-      "title": "Squircles",
-      "source": "lemmy",
-      "url": "https://linebender.org/wiki/curves/squircle/",
-      "metric": "score",
-      "date": "2026-11-17",
-      "delta": 121,
-      "from_score": 10,
-      "to_score": 131
-    },
-    {
-      "title": "adriadam10/mkw-recomp",
-      "source": "github_trending",
-      "url": "https://github.com/adriadam10/mkw-recomp",
-      "metric": "stars",
-      "date": "2026-11-15",
-      "delta": 114,
-      "from_score": 856,
-      "to_score": 970
-    },
-    {
-      "title": "Old Bitly Links Are Being Hijacked",
-      "source": "hnrss",
-      "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
-      "metric": "feed rank",
-      "date": "2026-11-16",
-      "delta": 108,
-      "from_score": 15,
-      "to_score": 123
-    },
-    {
-      "title": "Tell HN: HN is being scraped for emails to scam",
-      "source": "ask_hn",
-      "url": "https://news.ycombinator.com/item?id=50513451",
-      "metric": "points",
-      "date": "2026-11-17",
-      "delta": 108,
-      "from_score": 13,
-      "to_score": 121
-    },
-    {
-      "title": "Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence",
-      "source": "ask_hn",
-      "url": "https://news.ycombinator.com/item?id=50510042",
-      "metric": "points",
-      "date": "2026-11-16",
-      "delta": 107,
-      "from_score": 4,
-      "to_score": 111
-    },
-    {
-      "title": "Why get an expensive Pi when I have an old phone?",
-      "source": "hackernews",
-      "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
-      "metric": "points",
-      "date": "2026-11-15",
-      "delta": 100,
-      "from_score": 433,
-      "to_score": 533
-    },
-    {
-      "title": "apex-compute/ANR",
-      "source": "github_trending",
-      "url": "https://github.com/apex-compute/ANR",
-      "metric": "stars",
-      "date": "2026-11-15",
-      "delta": 99,
-      "from_score": 1779,
-      "to_score": 1878
-    },
-    {
-      "title": "Aristotle Expands into Rust",
-      "source": "hackernews",
-      "url": "https://www.harmonic.fun/news/aristotle-rust-verification/",
-      "metric": "points",
-      "date": "2026-11-17",
-      "delta": 92,
-      "from_score": 11,
-      "to_score": 103
-    },
-    {
-      "title": "Handwriting, as a Font",
-      "source": "hnrss",
-      "url": "https://ductus.sorenblank.com",
-      "metric": "feed rank",
-      "date": "2026-11-16",
-      "delta": 88,
-      "from_score": 10,
-      "to_score": 98
     }
   ],
   "package_rank_jumps": [
@@ -586,6 +586,16 @@
       "to_rank": 19
     },
     {
+      "title": "base64",
+      "source": "crates",
+      "url": "https://crates.io/crates/base64",
+      "metric": "recent downloads",
+      "date": "2026-11-18",
+      "jump": 2,
+      "from_rank": 9,
+      "to_rank": 7
+    },
+    {
       "title": "fastapi",
       "source": "pypi",
       "url": "https://pypi.org/project/fastapi/",
@@ -652,239 +662,151 @@
       "source": "github_trending",
       "url": "https://github.com/deepseek-ai/chat-demo",
       "metric": "stars",
-      "gain": 2411,
-      "days_tracked": 4
-    },
-    {
-      "title": "hitkeeen/blender-ai-mcp-addon",
-      "source": "github_trending",
-      "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
-      "metric": "stars",
-      "gain": 1309,
-      "days_tracked": 3
+      "gain": 2829,
+      "days_tracked": 5
     },
     {
       "title": "Noniv/abyssal-garden",
       "source": "github_trending",
       "url": "https://github.com/Noniv/abyssal-garden",
       "metric": "stars",
-      "gain": 892,
-      "days_tracked": 3
-    },
-    {
-      "title": "Many of Amazon’s Black Friday and Cyber Monday “deals” offered no savings",
-      "source": "hackernews",
-      "url": "http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/",
-      "metric": "points",
-      "gain": 743,
-      "days_tracked": 3
-    },
-    {
-      "title": "apex-compute/ANR",
-      "source": "github_trending",
-      "url": "https://github.com/apex-compute/ANR",
-      "metric": "stars",
-      "gain": 695,
+      "gain": 1324,
       "days_tracked": 4
+    },
+    {
+      "title": "Immortal-Protocols/lastbook",
+      "source": "github_trending",
+      "url": "https://github.com/Immortal-Protocols/lastbook",
+      "metric": "stars",
+      "gain": 937,
+      "days_tracked": 2
+    },
+    {
+      "title": "krisgfx9/Wireless-Device-Battery-Monitor",
+      "source": "github_trending",
+      "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
+      "metric": "stars",
+      "gain": 895,
+      "days_tracked": 2
+    },
+    {
+      "title": "gylive/google-ultra",
+      "source": "github_trending",
+      "url": "https://github.com/gylive/google-ultra",
+      "metric": "stars",
+      "gain": 873,
+      "days_tracked": 2
     },
     {
       "title": "duwqijlk/muse-protocol",
       "source": "github_trending",
       "url": "https://github.com/duwqijlk/muse-protocol",
       "metric": "stars",
-      "gain": 647,
-      "days_tracked": 3
+      "gain": 778,
+      "days_tracked": 4
     },
     {
-      "title": "Eynnzerr/TelemetryCleaner",
+      "title": "chuanqisun/spaceship",
       "source": "github_trending",
-      "url": "https://github.com/Eynnzerr/TelemetryCleaner",
+      "url": "https://github.com/chuanqisun/spaceship",
       "metric": "stars",
-      "gain": 625,
-      "days_tracked": 3
+      "gain": 699,
+      "days_tracked": 2
     },
     {
       "title": "ZiChuanLan/freebie-radar",
       "source": "github_trending",
       "url": "https://github.com/ZiChuanLan/freebie-radar",
       "metric": "stars",
-      "gain": 369,
+      "gain": 630,
+      "days_tracked": 3
+    },
+    {
+      "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+      "source": "hackernews",
+      "url": "https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
+      "metric": "points",
+      "gain": 550,
+      "days_tracked": 3
+    },
+    {
+      "title": "CzzzzzzJ/mdldm-maitian",
+      "source": "github_trending",
+      "url": "https://github.com/CzzzzzzJ/mdldm-maitian",
+      "metric": "stars",
+      "gain": 385,
       "days_tracked": 2
+    },
+    {
+      "title": "erkamyaman/rust-anything",
+      "source": "github_trending",
+      "url": "https://github.com/erkamyaman/rust-anything",
+      "metric": "stars",
+      "gain": 374,
+      "days_tracked": 2
+    },
+    {
+      "title": "GPT‑6.2 Astra and Sol",
+      "source": "hackernews",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "metric": "points",
+      "gain": 360,
+      "days_tracked": 3
     },
     {
       "title": "All AI-generated code should be Open Source",
       "source": "lemmy",
       "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
       "metric": "score",
-      "gain": 328,
-      "days_tracked": 10
-    },
-    {
-      "title": "Frame – 31.5\" color ePaper display",
-      "source": "hackernews",
-      "url": "https://trmnl.com/blog/introducing-frame",
-      "metric": "points",
-      "gain": 288,
-      "days_tracked": 2
-    },
-    {
-      "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
-      "source": "hackernews",
-      "url": "https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/",
-      "metric": "points",
-      "gain": 283,
-      "days_tracked": 3
-    },
-    {
-      "title": "Microsoft blames monster email outage on software defect introduced in July fix",
-      "source": "hackernews",
-      "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
-      "metric": "points",
-      "gain": 211,
-      "days_tracked": 4
-    },
-    {
-      "title": "Grazing sheep in fields with solar arrays",
-      "source": "hackernews",
-      "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
-      "metric": "points",
-      "gain": 201,
-      "days_tracked": 3
-    },
-    {
-      "title": "Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence",
-      "source": "ask_hn",
-      "url": "https://news.ycombinator.com/item?id=50510042",
-      "metric": "points",
-      "gain": 175,
-      "days_tracked": 5
-    },
-    {
-      "title": "What is w2rt6byl5nf1opmc-a.com?",
-      "source": "hackernews",
-      "url": "https://jack.cab/blog/siterate",
-      "metric": "points",
-      "gain": 167,
-      "days_tracked": 3
-    },
-    {
-      "title": "My Quest to push native Three.js quality match AAA Game Engines",
-      "source": "hackernews",
-      "url": "https://ben3d.ca/blog/building-the-aaa-lighting-pipeline-in-threejs",
-      "metric": "points",
-      "gain": 118,
-      "days_tracked": 4
-    },
-    {
-      "title": "Tell HN: HN is being scraped for emails to scam",
-      "source": "ask_hn",
-      "url": "https://news.ycombinator.com/item?id=50513451",
-      "metric": "points",
-      "gain": 114,
-      "days_tracked": 3
+      "gain": 340,
+      "days_tracked": 12
     },
     {
       "title": "What is the best harness for each model?",
       "source": "hackernews",
       "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
       "metric": "points",
-      "gain": 97,
-      "days_tracked": 2
+      "gain": 320,
+      "days_tracked": 3
     },
     {
-      "title": "NSA Internal Network Down",
+      "title": "Highly classified US national security communications network goes down",
       "source": "hackernews",
-      "url": "https://www.reuters.com/technology/highly-classified-us-national-security-communications-network-is-down-cnn-2026-11-17/",
+      "url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
       "metric": "points",
-      "gain": 97,
-      "days_tracked": 2
+      "gain": 296,
+      "days_tracked": 3
     },
     {
-      "title": "Aristotle Expands into Rust",
+      "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
       "source": "hackernews",
-      "url": "https://www.harmonic.fun/news/aristotle-rust-verification/",
+      "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
       "metric": "points",
-      "gain": 92,
-      "days_tracked": 2
+      "gain": 243,
+      "days_tracked": 3
     },
     {
-      "title": "opencoredev/islandcn",
+      "title": "sybil-solutions/inference-optimisation-skill",
       "source": "github_trending",
-      "url": "https://github.com/opencoredev/islandcn",
+      "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
       "metric": "stars",
-      "gain": 90,
+      "gain": 240,
+      "days_tracked": 2
+    },
+    {
+      "title": "Apple Services Down",
+      "source": "hackernews",
+      "url": "https://developer.apple.com/system-status/",
+      "metric": "points",
+      "gain": 227,
       "days_tracked": 3
     },
     {
-      "title": "If an App Asks for Full Disk Access or System and App Protection Override",
-      "source": "hackernews",
-      "url": "https://support.apple.com/en-us/149699",
-      "metric": "points",
-      "gain": 90,
-      "days_tracked": 3
-    },
-    {
-      "title": "Why 3dfx 1 cards had such a washed out color output?",
-      "source": "hackernews",
-      "url": "https://twitter.com/id_aa_carmack/status/2122478083319992513",
-      "metric": "points",
-      "gain": 89,
-      "days_tracked": 2
-    },
-    {
-      "title": "How to Break into Security, Ptacek Edition (2012)",
-      "source": "hackernews",
-      "url": "https://krebsonsecurity.com/2012/06/how-to-break-into-security-ptacek-edition/",
-      "metric": "points",
-      "gain": 88,
-      "days_tracked": 2
-    },
-    {
-      "title": "Jolt – Clojure that speaks C",
-      "source": "hackernews",
-      "url": "https://jolt-lang.net/",
-      "metric": "points",
-      "gain": 87,
-      "days_tracked": 2
-    },
-    {
-      "title": "jQuery 4.1.0",
-      "source": "hackernews",
-      "url": "https://github.com/jquery/jquery/releases/tag/4.1.0",
-      "metric": "points",
-      "gain": 77,
-      "days_tracked": 2
-    },
-    {
-      "title": "Michael Mann's 'Heat' Copyright Fight Turns on a Deal with Himself",
-      "source": "hackernews",
-      "url": "https://copyrightlately.com/michael-mann-heat-copyright-termination/",
-      "metric": "points",
-      "gain": 76,
-      "days_tracked": 2
-    },
-    {
-      "title": "Running coding agents without handing them my credentials",
-      "source": "hackernews",
-      "url": "https://blog.antonio.cx/running-agents-with-lend",
-      "metric": "points",
-      "gain": 76,
-      "days_tracked": 2
-    },
-    {
-      "title": "you won't win at copyright",
-      "source": "lobsters",
-      "url": "https://ingrids.space/posts/you-wont-win-at-copyright/",
-      "metric": "score",
-      "gain": 63,
-      "days_tracked": 2
-    },
-    {
-      "title": "Paint in the memory of other programs",
-      "source": "lobsters",
-      "url": "https://citrons.xyz/journal/2026-04-13",
-      "metric": "score",
-      "gain": 61,
+      "title": "haziqahmedqasmi/PeakCut",
+      "source": "github_trending",
+      "url": "https://github.com/haziqahmedqasmi/PeakCut",
+      "metric": "stars",
+      "gain": 196,
       "days_tracked": 2
     },
     {
@@ -892,63 +814,87 @@
       "source": "hackernews",
       "url": "https://alloyhtml.com/example.html",
       "metric": "points",
-      "gain": 56,
+      "gain": 149,
+      "days_tracked": 4
+    },
+    {
+      "title": "How the Claude Code team thinks about verification",
+      "source": "hackernews",
+      "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+      "metric": "points",
+      "gain": 139,
       "days_tracked": 3
+    },
+    {
+      "title": "joshpuckett/allo",
+      "source": "github_trending",
+      "url": "https://github.com/joshpuckett/allo",
+      "metric": "stars",
+      "gain": 124,
+      "days_tracked": 2
+    },
+    {
+      "title": "opencoredev/islandcn",
+      "source": "github_trending",
+      "url": "https://github.com/opencoredev/islandcn",
+      "metric": "stars",
+      "gain": 108,
+      "days_tracked": 4
     },
     {
       "title": "AIRzZ90/study-materials-fork",
       "source": "github_trending",
       "url": "https://github.com/AIRzZ90/study-materials-fork",
       "metric": "stars",
-      "gain": 49,
-      "days_tracked": 2
-    },
-    {
-      "title": "Purism Launches Librem 5 v2, a RISC-V Phone to Empower People",
-      "source": "hackernews",
-      "url": "https://puri.sm/posts/purism-launches-librem-5-v2-a-risc-v-phone-to-empower-people/",
-      "metric": "points",
-      "gain": 45,
-      "days_tracked": 2
+      "gain": 57,
+      "days_tracked": 3
     },
     {
       "title": "anyone else have cron jobs that only fail on weekends?",
       "source": "lemmy",
       "url": "https://lemmy.world/post/54471840",
       "metric": "score",
-      "gain": 44,
-      "days_tracked": 2
+      "gain": 57,
+      "days_tracked": 3
     },
     {
-      "title": "What is w2rt6byl5nf1opmc-a[.]com?",
-      "source": "lobsters",
-      "url": "https://jack.cab/blog/siterate.html",
+      "title": "Software is breaking down at a systemic level",
+      "source": "lemmy",
+      "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
       "metric": "score",
-      "gain": 41,
-      "days_tracked": 2
+      "gain": 53,
+      "days_tracked": 4
     },
     {
       "title": "MCP Is Dead Simple. And That's Exactly the Problem",
       "source": "devto",
       "url": "https://dev.to/sylwia-lask/mcp-is-dead-simple-and-thats-exactly-the-problem-5811",
       "metric": "reactions",
-      "gain": 39,
-      "days_tracked": 4
+      "gain": 51,
+      "days_tracked": 5
     },
     {
-      "title": "Ask HN: If AI tools are so good, why isn't your bug backlog empty?",
-      "source": "ask_hn",
-      "url": "https://news.ycombinator.com/item?id=50520076",
+      "title": "Who Builds the Machines That Build the Machines?",
+      "source": "hackernews",
+      "url": "https://read.corematter.com/p/section-232-us-machine-tools",
       "metric": "points",
-      "gain": 31,
+      "gain": 44,
       "days_tracked": 3
     },
     {
-      "title": "Antfly learned to stop worrying and love Apache 2.0",
-      "source": "hackernews",
-      "url": "https://antfly.io/thoughts/how-antfly-learned-to-stop-worrying-and-love-apache-2",
-      "metric": "points",
-      "gain": 28,
+      "title": "What does DEV stand for?",
+      "source": "devto",
+      "url": "https://dev.to/devengers/what-does-dev-stand-for-2kg9",
+      "metric": "reactions",
+      "gain": 32,
+      "days_tracked": 2
+    },
+    {
+      "title": "Gate By Gate (recreating a 6502 in an FPGA)",
+      "source": "lemmy",
+      "url": "https://youtu.be/czPMjs0Y0zc",
+      "metric": "score",
+      "gain": 30,
       "days_tracked": 2
     },
     {
@@ -956,47 +902,39 @@
       "source": "devto",
       "url": "https://dev.to/devteam/congrats-to-the-hacktoberfest-open-source-ai-challenge-week-4-ghost-in-the-machine-winners-nok",
       "metric": "reactions",
-      "gain": 21,
-      "days_tracked": 4
-    },
-    {
-      "title": "Dev Opportunity Radar #25: $120K+ Atlassian Hackathon, MLH Fellowship, and INSEAD AI Founder Sprint",
-      "source": "devto",
-      "url": "https://dev.to/devengers/dev-opportunity-radar-25-120k-atlassian-hackathon-mlh-fellowship-and-insead-ai-founder-sprint-m96",
-      "metric": "reactions",
-      "gain": 20,
-      "days_tracked": 4
+      "gain": 29,
+      "days_tracked": 5
     },
     {
       "title": "Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up.",
       "source": "devto",
       "url": "https://dev.to/earlgreyhot1701d/ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575",
       "metric": "reactions",
-      "gain": 20,
-      "days_tracked": 2
-    },
-    {
-      "title": "Janet Reno was talking about my friend Coolio (computer criminal)",
-      "source": "lobsters",
-      "url": "https://michael.bacarella.com/2026/11/16/janet-reno-vs-my-friend-coolio/",
-      "metric": "score",
-      "gain": 20,
-      "days_tracked": 2
-    },
-    {
-      "title": "Software is breaking down at a systemic level",
-      "source": "lemmy",
-      "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
-      "metric": "score",
-      "gain": 18,
+      "gain": 28,
       "days_tracked": 3
     },
     {
-      "title": "Cal.com v7",
-      "source": "producthunt",
-      "url": "https://www.producthunt.com/products/cal",
-      "metric": "feed rank",
-      "gain": 17,
+      "title": "AI Avatar v28 (Security Support, Voxel Avatar)🛡️",
+      "source": "devto",
+      "url": "https://dev.to/webdeveloperhyper/ai-avatar-v28-security-support-voxel-avatar-2i5i",
+      "metric": "reactions",
+      "gain": 25,
+      "days_tracked": 3
+    },
+    {
+      "title": "Dev Opportunity Radar #25: $120K+ Atlassian Hackathon, MLH Fellowship, and INSEAD AI Founder Sprint",
+      "source": "devto",
+      "url": "https://dev.to/devengers/dev-opportunity-radar-25-120k-atlassian-hackathon-mlh-fellowship-and-insead-ai-founder-sprint-m96",
+      "metric": "reactions",
+      "gain": 24,
+      "days_tracked": 5
+    },
+    {
+      "title": "Phrack 73",
+      "source": "lobsters",
+      "url": "https://phrack.org/issues/73/introduction_md.html",
+      "metric": "score",
+      "gain": 24,
       "days_tracked": 2
     },
     {
@@ -1004,23 +942,23 @@
       "source": "devto",
       "url": "https://dev.to/ben/long-live-rails-3p21",
       "metric": "reactions",
-      "gain": 16,
-      "days_tracked": 4
+      "gain": 17,
+      "days_tracked": 5
     },
     {
-      "title": "ChatGPT Wallet",
+      "title": "EkLine",
       "source": "producthunt",
-      "url": "https://www.producthunt.com/products/chatgpt",
+      "url": "https://www.producthunt.com/products/ekline",
       "metric": "feed rank",
-      "gain": 14,
+      "gain": 16,
       "days_tracked": 2
     },
     {
-      "title": "Deployment Testing Guide: Types, Tools & Benefits",
-      "source": "tb_headspin_blog",
-      "url": "https://wf.headspin.io/blog/deployment-testing-guide",
-      "metric": "feed rank",
-      "gain": 14,
+      "title": "Steve Jobs Core Animation demo from WWDC 2007",
+      "source": "lobsters",
+      "url": "https://lucas.love/100/058",
+      "metric": "score",
+      "gain": 16,
       "days_tracked": 2
     },
     {
@@ -1028,8 +966,24 @@
       "source": "devto",
       "url": "https://dev.to/annavi11arrea1/ultimate-ai-roast-168b",
       "metric": "reactions",
+      "gain": 15,
+      "days_tracked": 4
+    },
+    {
+      "title": "Github Redesign (2019)",
+      "source": "lobsters",
+      "url": "https://tonsky.me/blog/github-redesign/",
+      "metric": "score",
+      "gain": 15,
+      "days_tracked": 2
+    },
+    {
+      "title": "AI is getting better. Here is my plan to stay ahead.",
+      "source": "devto",
+      "url": "https://dev.to/javz/ai-is-getting-better-here-is-my-plan-to-stay-ahead-2822",
+      "metric": "reactions",
       "gain": 13,
-      "days_tracked": 3
+      "days_tracked": 4
     },
     {
       "title": "A datetime library for Rust",
@@ -1037,14 +991,70 @@
       "url": "https://burntsushi.net/jiff/",
       "metric": "feed rank",
       "gain": 13,
+      "days_tracked": 9
+    },
+    {
+      "title": "Lasso",
+      "source": "producthunt",
+      "url": "https://www.producthunt.com/products/lasso-11",
+      "metric": "feed rank",
+      "gain": 13,
+      "days_tracked": 2
+    },
+    {
+      "title": "Trading Agents",
+      "source": "producthunt",
+      "url": "https://www.producthunt.com/products/alpha-vantage",
+      "metric": "feed rank",
+      "gain": 13,
+      "days_tracked": 2
+    },
+    {
+      "title": "How to Bypass Rust's Orphan Rule",
+      "source": "lobsters",
+      "url": "https://edvong.com/bypass-orphan-rule/",
+      "metric": "score",
+      "gain": 13,
+      "days_tracked": 2
+    },
+    {
+      "title": "Elixir v1.20 released: now a gradually typed language",
+      "source": "elixirlang",
+      "url": "https://elixir-lang.org/blog/2026/06/03/elixir-v1-20-0-released/",
+      "metric": "feed rank",
+      "gain": 12,
       "days_tracked": 8
     },
     {
-      "title": "NoisyTCP",
-      "source": "lobsters",
-      "url": "https://www.openwall.com/lists/oss-security/2026/11/15/2",
+      "title": "544 unmaintained PyPI packages with imports that fail on Python 3.12+ still get 100M+ downloads a month",
+      "source": "lemmy",
+      "url": "https://py-code.org/blog/removed-stdlib-modules-pypi/",
       "metric": "score",
-      "gain": 13,
+      "gain": 12,
+      "days_tracked": 3
+    },
+    {
+      "title": "Cash Hidden in Forests? Hungary Goes After Corruption Under Orban",
+      "source": "rss4",
+      "url": "https://www.nytimes.com/2026/11/17/world/europe/hungary-magyar-orban-corruption-cash.html",
+      "metric": "feed rank",
+      "gain": 12,
+      "days_tracked": 2
+    },
+    {
+      "title": "PyCoder’s Weekly: Issue #761: Goose Typing, Gemini 4 Carbon, HTTPX2, and More (2026-11-17)",
+      "source": "planetpython",
+      "url": "https://pycoders.com/issues/761",
+      "metric": "feed rank",
+      "gain": 12,
+      "days_tracked": 4
+    },
+    {
+      "title": "Redict is deprecated",
+      "source": "lobsters",
+      "url": "https://redict.io/posts/2026-11-17-redict-deprecated/",
+      "metric": "score",
+      "gain": 11,
       "days_tracked": 2
     }
   ]
