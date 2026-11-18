@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T01:13:49.340767+00:00",
+ "generated_at": "2026-11-18T09:32:21.827911+00:00",
  "latest_snapshot": "2026-11-18",
  "crossovers": [
   {
@@ -155,6 +155,23 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "url": "https://calif.io/java4shell",
+   "title": "Java4Shell: RCE in OpenJDK Base64 (Calif)",
+   "sources": [
+    "hackernews",
+    "hnrss",
+    "lemmy",
+    "lobsters"
+   ],
+   "days": 1,
+   "best": {
+    "score": 459,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-18"
    }
   },
   {
@@ -590,22 +607,6 @@
    }
   },
   {
-   "url": "https://calif.io/java4shell",
-   "title": "Java4Shell: RCE in OpenJDK when processing Base64",
-   "sources": [
-    "hackernews",
-    "hnrss",
-    "lobsters"
-   ],
-   "days": 1,
-   "best": {
-    "score": 459,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-18"
-   }
-  },
-  {
    "url": "https://arstechnica.com/tech-policy/2026/11/comcast-falsely-advertises-cable-internet-as-fiber-powered-att-lawsuit-says",
    "title": "Comcast's \"fiber-powered Wi-Fi\" is cable, AT&T says in false advertising case",
    "sources": [
@@ -619,6 +620,21 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "url": "https://deepmind.google/blog/introducing-alphaproof-code",
+   "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+   "sources": [
+    "deepmind",
+    "hackernews"
+   ],
+   "days": 5,
+   "best": {
+    "score": 678,
+    "metric": "points",
+    "source": "hackernews",
+    "date": "2026-11-10"
    }
   },
   {
@@ -784,21 +800,6 @@
     "metric": "points",
     "source": "hackernews",
     "date": "2026-11-10"
-   }
-  },
-  {
-   "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud",
-   "title": "Reverse Engineering My Coway Air Purifier to Ditch the Cloud",
-   "sources": [
-    "br_posts_scott_s_blog",
-    "hackernews"
-   ],
-   "days": 4,
-   "best": {
-    "score": 780,
-    "metric": "points",
-    "source": "hackernews",
-    "date": "2026-11-12"
    }
   }
  ]

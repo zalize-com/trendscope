@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-18T01:13:49.340767+00:00",
+ "generated_at": "2026-11-18T09:32:21.827911+00:00",
  "latest_snapshot": "2026-11-18",
- "total": 9594,
+ "total": 9623,
  "domains": [
   {
    "hostname": "blog.google",
@@ -24,7 +24,7 @@
   {
    "hostname": "theguardian.com",
    "days_on_board": 6,
-   "items": 293,
+   "items": 309,
    "sources": [
     "eb_guardian",
     "guardianco",
@@ -142,11 +142,12 @@
   {
    "hostname": "reddit.com",
    "days_on_board": 5,
-   "items": 2550,
+   "items": 2562,
    "sources": [
     "br_homepage_piotr_migda",
     "br_nelson_s_linkblog",
     "hackernews",
+    "hnrss",
     "k8s",
     "rangular",
     "rartificial",
@@ -210,7 +211,7 @@
   {
    "hostname": "wired.com",
    "days_on_board": 5,
-   "items": 157,
+   "items": 166,
    "sources": [
     "azure",
     "daringfireball",
@@ -230,7 +231,7 @@
   {
    "hostname": "nytimes.com",
    "days_on_board": 5,
-   "items": 133,
+   "items": 134,
    "sources": [
     "bostocks",
     "daringfireball",
@@ -244,6 +245,24 @@
     "score": 1145,
     "metric": "points",
     "date": "2026-11-18"
+   }
+  },
+  {
+   "hostname": "arxiv.org",
+   "days_on_board": 5,
+   "items": 129,
+   "sources": [
+    "arxiv",
+    "evanmiller",
+    "hnrss",
+    "lobsters"
+   ],
+   "top_hit": {
+    "title": "Unbundling Multimodal Vision Encoding",
+    "url": "http://arxiv.org/abs/2611.17334v1",
+    "score": 15,
+    "metric": "arxiv recent",
+    "date": "2026-11-15"
    }
   },
   {
@@ -298,27 +317,9 @@
    }
   },
   {
-   "hostname": "arxiv.org",
-   "days_on_board": 5,
-   "items": 114,
-   "sources": [
-    "arxiv",
-    "evanmiller",
-    "hnrss",
-    "lobsters"
-   ],
-   "top_hit": {
-    "title": "Unbundling Multimodal Vision Encoding",
-    "url": "http://arxiv.org/abs/2611.17334v1",
-    "score": 15,
-    "metric": "arxiv recent",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "9to5mac.com",
    "days_on_board": 5,
-   "items": 106,
+   "items": 107,
    "sources": [
     "9to5mac",
     "br_posts_from_iamgregb",
@@ -437,7 +438,7 @@
   {
    "hostname": "jefftk.com",
    "days_on_board": 5,
-   "items": 62,
+   "items": 63,
    "sources": [
     "hackernews",
     "jefftk"
@@ -453,7 +454,7 @@
   {
    "hostname": "muratbuffalo.blogspot.com",
    "days_on_board": 5,
-   "items": 61,
+   "items": 62,
    "sources": [
     "hackernews",
     "murat"
@@ -464,6 +465,22 @@
     "score": 475,
     "metric": "points",
     "date": "2026-11-08"
+   }
+  },
+  {
+   "hostname": "deepmind.google",
+   "days_on_board": 5,
+   "items": 61,
+   "sources": [
+    "deepmind",
+    "hackernews"
+   ],
+   "top_hit": {
+    "title": "AlphaProof Code",
+    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "score": 678,
+    "metric": "points",
+    "date": "2026-11-10"
    }
   },
   {
@@ -702,7 +719,7 @@
   {
    "hostname": "mp.weixin.qq.com",
    "days_on_board": 4,
-   "items": 1068,
+   "items": 1071,
    "sources": [
     "42jing",
     "alimiddle",
@@ -734,7 +751,7 @@
   {
    "hostname": "lore.kernel.org",
    "days_on_board": 4,
-   "items": 465,
+   "items": 480,
    "sources": [
     "lorekernel"
    ],
@@ -784,6 +801,21 @@
    }
   },
   {
+   "hostname": "investing.com",
+   "days_on_board": 4,
+   "items": 287,
+   "sources": [
+    "investing"
+   ],
+   "top_hit": {
+    "title": "Evergy director Jonathan Rolph buys $133,610 in common stock",
+    "url": "https://www.investing.com/news/insider-trading-news/evergy-director-jonathan-rolph-buys-133610-in-common-stock-93CH-5028131",
+    "score": 10,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "changelog.com",
    "days_on_board": 4,
    "items": 285,
@@ -803,24 +835,9 @@
    }
   },
   {
-   "hostname": "investing.com",
-   "days_on_board": 4,
-   "items": 278,
-   "sources": [
-    "investing"
-   ],
-   "top_hit": {
-    "title": "Evergy director Jonathan Rolph buys $133,610 in common stock",
-    "url": "https://www.investing.com/news/insider-trading-news/evergy-director-jonathan-rolph-buys-133610-in-common-stock-93CH-5028131",
-    "score": 10,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "x.com",
    "days_on_board": 4,
-   "items": 266,
+   "items": 275,
    "sources": [
     "api",
     "br_reid_burke_reid_software_engineer",
@@ -842,7 +859,7 @@
   {
    "hostname": "news.google.com",
    "days_on_board": 4,
-   "items": 222,
+   "items": 236,
    "sources": [
     "w4news"
    ],
@@ -877,7 +894,7 @@
   {
    "hostname": "theregister.com",
    "days_on_board": 4,
-   "items": 207,
+   "items": 218,
    "sources": [
     "hackernews",
     "hnrss",
@@ -895,7 +912,7 @@
   {
    "hostname": "producthunt.com",
    "days_on_board": 4,
-   "items": 192,
+   "items": 212,
    "sources": [
     "br_nelson_s_linkblog",
     "producthunt"
@@ -911,7 +928,7 @@
   {
    "hostname": "timesofindia.indiatimes.com",
    "days_on_board": 4,
-   "items": 190,
+   "items": 205,
    "sources": [
     "timesofindia"
    ],
@@ -924,9 +941,24 @@
    }
   },
   {
+   "hostname": "forbes.com",
+   "days_on_board": 4,
+   "items": 190,
+   "sources": [
+    "forbes"
+   ],
+   "top_hit": {
+    "title": "The Good, Bad And Ugly From The Packers’ Loss To The Vikings",
+    "url": "https://www.forbes.com/sites/robreischel/2026/11/15/the-good-bad-and-ugly-from-the-packers-loss-to-the-vikings/",
+    "score": 15,
+    "metric": "feed rank",
+    "date": "2026-11-15"
+   }
+  },
+  {
    "hostname": "unite.ai",
    "days_on_board": 4,
-   "items": 179,
+   "items": 187,
    "sources": [
     "uniteai"
    ],
@@ -941,7 +973,7 @@
   {
    "hostname": "seekingalpha.com",
    "days_on_board": 4,
-   "items": 179,
+   "items": 186,
    "sources": [
     "seekingalpha"
    ],
@@ -954,47 +986,15 @@
    }
   },
   {
-   "hostname": "forbes.com",
-   "days_on_board": 4,
-   "items": 177,
-   "sources": [
-    "forbes"
-   ],
-   "top_hit": {
-    "title": "The Good, Bad And Ugly From The Packers’ Loss To The Vikings",
-    "url": "https://www.forbes.com/sites/robreischel/2026/11/15/the-good-bad-and-ugly-from-the-packers-loss-to-the-vikings/",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
    "hostname": "techmeme.com",
    "days_on_board": 4,
-   "items": 170,
+   "items": 184,
    "sources": [
     "techmeme"
    ],
    "top_hit": {
     "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A (Tamara Djurickovic/Tech.eu)",
     "url": "https://www.techmeme.com/261115/p3#a261115p3",
-    "score": 15,
-    "metric": "feed rank",
-    "date": "2026-11-15"
-   }
-  },
-  {
-   "hostname": "aws.amazon.com",
-   "days_on_board": 4,
-   "items": 170,
-   "sources": [
-    "aws_blog",
-    "awsarchitectureblo",
-    "sec_aws_security"
-   ],
-   "top_hit": {
-    "title": "Test your applications against AWS locally with AWS Emulator",
-    "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/",
     "score": 15,
     "metric": "feed rank",
     "date": "2026-11-15"

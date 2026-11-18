@@ -1,13 +1,13 @@
 {
  "a": "2026-11-11",
  "b": "2026-11-18",
- "generated": "2026-11-18 01:13 UTC",
+ "generated": "2026-11-18 09:31 UTC",
  "entered": [
   {
    "title": "boto3",
    "url": "https://pypi.org/project/boto3/",
    "source": "pypi",
-   "score": 2547486524,
+   "score": 2550539506,
    "metric": "monthly downloads",
    "rank": 1
   },
@@ -15,7 +15,7 @@
    "title": "requests",
    "url": "https://pypi.org/project/requests/",
    "source": "pypi",
-   "score": 1471523858,
+   "score": 1496666327,
    "metric": "monthly downloads",
    "rank": 2
   },
@@ -23,7 +23,7 @@
    "title": "pydantic",
    "url": "https://pypi.org/project/pydantic/",
    "source": "pypi",
-   "score": 1139429690,
+   "score": 1161611363,
    "metric": "monthly downloads",
    "rank": 3
   },
@@ -31,7 +31,7 @@
    "title": "click",
    "url": "https://pypi.org/project/click/",
    "source": "pypi",
-   "score": 1100967551,
+   "score": 1123162851,
    "metric": "monthly downloads",
    "rank": 4
   },
@@ -39,7 +39,7 @@
    "title": "numpy",
    "url": "https://pypi.org/project/numpy/",
    "source": "pypi",
-   "score": 1090453280,
+   "score": 1106618345,
    "metric": "monthly downloads",
    "rank": 5
   },
@@ -47,7 +47,7 @@
    "title": "pytest",
    "url": "https://pypi.org/project/pytest/",
    "source": "pypi",
-   "score": 959443999,
+   "score": 977079757,
    "metric": "monthly downloads",
    "rank": 6
   },
@@ -55,7 +55,7 @@
    "title": "hashbrown",
    "url": "https://crates.io/crates/hashbrown",
    "source": "crates",
-   "score": 920752207,
+   "score": 924398751,
    "metric": "recent downloads",
    "rank": 1
   },
@@ -63,7 +63,7 @@
    "title": "syn",
    "url": "https://crates.io/crates/syn",
    "source": "crates",
-   "score": 911150756,
+   "score": 914933747,
    "metric": "recent downloads",
    "rank": 2
   },
@@ -71,7 +71,7 @@
    "title": "getrandom",
    "url": "https://crates.io/crates/getrandom",
    "source": "crates",
-   "score": 830701144,
+   "score": 834090385,
    "metric": "recent downloads",
    "rank": 3
   },
@@ -79,7 +79,7 @@
    "title": "httpx",
    "url": "https://pypi.org/project/httpx/",
    "source": "pypi",
-   "score": 794931619,
+   "score": 810633888,
    "metric": "monthly downloads",
    "rank": 7
   },
@@ -87,7 +87,7 @@
    "title": "pandas",
    "url": "https://pypi.org/project/pandas/",
    "source": "pypi",
-   "score": 695595266,
+   "score": 706035536,
    "metric": "monthly downloads",
    "rank": 8
   },
@@ -95,7 +95,7 @@
    "title": "rand",
    "url": "https://crates.io/crates/rand",
    "source": "crates",
-   "score": 649932618,
+   "score": 652602134,
    "metric": "recent downloads",
    "rank": 4
   },
@@ -103,7 +103,7 @@
    "title": "rand_core",
    "url": "https://crates.io/crates/rand_core",
    "source": "crates",
-   "score": 648092636,
+   "score": 650782387,
    "metric": "recent downloads",
    "rank": 5
   },
@@ -111,7 +111,7 @@
    "title": "bitflags",
    "url": "https://crates.io/crates/bitflags",
    "source": "crates",
-   "score": 602961764,
+   "score": 605340141,
    "metric": "recent downloads",
    "rank": 6
   },
@@ -119,15 +119,23 @@
    "title": "rich",
    "url": "https://pypi.org/project/rich/",
    "source": "pypi",
-   "score": 563019498,
+   "score": 575104710,
    "metric": "monthly downloads",
    "rank": 9
+  },
+  {
+   "title": "fastapi",
+   "url": "https://pypi.org/project/fastapi/",
+   "source": "pypi",
+   "score": 543984863,
+   "metric": "monthly downloads",
+   "rank": 10
   },
   {
    "title": "base64",
    "url": "https://crates.io/crates/base64",
    "source": "crates",
-   "score": 540774075,
+   "score": 543169079,
    "metric": "recent downloads",
    "rank": 7
   },
@@ -135,7 +143,7 @@
    "title": "thiserror",
    "url": "https://crates.io/crates/thiserror",
    "source": "crates",
-   "score": 539666445,
+   "score": 541852277,
    "metric": "recent downloads",
    "rank": 8
   },
@@ -143,23 +151,15 @@
    "title": "thiserror-impl",
    "url": "https://crates.io/crates/thiserror-impl",
    "source": "crates",
-   "score": 539590335,
+   "score": 541776080,
    "metric": "recent downloads",
    "rank": 9
-  },
-  {
-   "title": "fastapi",
-   "url": "https://pypi.org/project/fastapi/",
-   "source": "pypi",
-   "score": 532877425,
-   "metric": "monthly downloads",
-   "rank": 10
   },
   {
    "title": "windows-sys",
    "url": "https://crates.io/crates/windows-sys",
    "source": "crates",
-   "score": 522893159,
+   "score": 524935236,
    "metric": "recent downloads",
    "rank": 10
   }
@@ -331,10 +331,10 @@
    "title": "Why Are We Still Working This Hard?",
    "url": "https://wilsoniumite.com/2026/11/11/why-are-we-still-working-this-hard/",
    "source": "br_wilsons_blog",
-   "score": 9,
+   "score": 8,
    "metric": "feed rank",
-   "rank": 2,
-   "delta": -234
+   "rank": 3,
+   "delta": -235
   },
   {
    "title": "Lock your GitHub Actions",
@@ -378,10 +378,10 @@
    "title": "Why Are We Still Working This Hard?",
    "url": "https://wilsoniumite.com/2026/11/11/why-are-we-still-working-this-hard/",
    "source": "br_wilsons_blog",
-   "score": 9,
+   "score": 8,
    "metric": "feed rank",
-   "rank": 2,
-   "delta": -234
+   "rank": 3,
+   "delta": -235
   }
  ],
  "pkg_rank_up": [],
