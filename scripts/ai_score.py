@@ -19,9 +19,16 @@ import os
 import sys
 import urllib.request
 
-BASE = os.environ.get("TRENDSCOPE_LLM_BASE", "https://api.openai.com/v1").rstrip("/")
 KEY = os.environ.get("TRENDSCOPE_LLM_KEY")
-MODEL = os.environ.get("TRENDSCOPE_LLM_MODEL", "gpt-4o-mini")
+# Auto-detect provider from the key shape so "paste any key" just works:
+# Gemini keys start with AIza → Google's OpenAI-compatible endpoint.
+if KEY and KEY.startswith("AIza"):
+    _def_base, _def_model = ("https://generativelanguage.googleapis.com/v1beta/openai",
+                             "gemini-2.0-flash")
+else:
+    _def_base, _def_model = ("https://api.openai.com/v1", "gpt-4o-mini")
+BASE = os.environ.get("TRENDSCOPE_LLM_BASE", _def_base).rstrip("/")
+MODEL = os.environ.get("TRENDSCOPE_LLM_MODEL", _def_model)
 PER_LANE = 25          # top-N items per lane sent to the model
 OUT = "data/ai_quality.json"
 
