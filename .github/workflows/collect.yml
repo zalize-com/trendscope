@@ -83,6 +83,11 @@ jobs:
       - name: Kind classification (rules)
         run: python3 scripts/kind.py || true
 
+      - name: AI quality layer (no-op without key)
+        env:
+          TRENDSCOPE_LLM_KEY: ${{ secrets.TRENDSCOPE_LLM_KEY }}
+        run: python3 scripts/ai_score.py || true
+
       - name: Rebuild content index + stats
         run: |
           python3 scripts/content_index.py || true
