@@ -1,10 +1,17 @@
 ---
 import Base from "../layouts/Base.astro";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 const title = "glossary \u2014 trendscope";
 const description = "Every term trendscope uses \u2014 board, fresh, meteor, veteran, crossover, spike \u2014 defined once, linked to where it lives.";
 const path = '/glossary.html';
+// DefinedTermSet JSON-LD parsed from this page's own .term blocks.
+const src = readFileSync(resolve(process.cwd(), "src/pages/glossary.astro"), "utf8");
+const terms = [...src.matchAll(/<div class="term"><h2>(.*?)<\/h2>\s*<p>([\s\S]*?)<\/p>/g)]
+  .map(m => ({ "@type": "DefinedTerm", "name": m[1].trim(), "description": m[2].replace(/<[^>]+>/g, "").trim() }));
+const jsonld = { "@context": "https://schema.org", "@type": "DefinedTermSet", "name": "trendscope glossary", "hasDefinedTerm": terms };
 ---
-<Base title={title} description={description} path={path} nav="none">
+<Base title={title} description={description} path={path} nav="none" jsonld={jsonld}>
 
 <nav><a href="index.html">&larr; board</a><a href="api.html">api</a><a href="docs/data-dictionary.md">data dictionary</a></nav>
 <h1>glossary</h1>
