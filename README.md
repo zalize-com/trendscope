@@ -433,15 +433,29 @@ link your project. (First one gets to be first.)
 - Titles/links/scores only — no personal data beyond public author handles.
 - CC0 for our compilation; upstream content rights remain with their owners.
 
+## Repository layout
+
+| Path | What lives here |
+|---|---|
+| `site/` | The website — Astro 7 + Tailwind/daisyUI (`d-` prefixed) source. `cd site && npm run build` → `site/dist`, deployed to Cloudflare Pages |
+| `data/` | The dataset — `daily/` snapshots, `latest.json`, `history.csv`, feeds/OPML/RSS/zerowatch outputs |
+| `docs/` | Generated content — weekly digests, movers, daily briefs, api docs |
+| `scripts/` | The pipeline — stdlib-only Python (`collect.py` + generators), run by GitHub Actions |
+| `workers/` | Cloudflare Workers (opml-doctor feed-health proxy) |
+| repo root | Generated artifacts served publicly (feed.xml, sitemap.xml, opml, og.jpg, `trendscope.py` CLI) |
+
+All pages live in `site/src/pages/*.astro` — there are no loose `.html` files;
+the deploy ships the Astro build output.
+
 ## Run it yourself
 
 ```bash
 python3 scripts/collect.py            # stdlib only, no dependencies
 GITHUB_TOKEN=... python3 scripts/collect.py   # optional: higher GitHub API limits
-```
 
-Then serve the dashboard statically from the repo root (e.g. `python3 -m http.server`)
-and open `index.html`.
+cd site && npm ci && npm run build    # static site → site/dist
+python3 -m http.server -d site/dist   # serve the dashboard
+```
 
 ## Support
 
