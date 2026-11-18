@@ -58,6 +58,9 @@ Fetch straight from GitHub raw or the Pages site (`/trendscope/…`).
 | `feed.xml` | RSS | Daily snapshots + movers + digests as feed items |
 | `data/rss/<lane>.xml` | RSS | Per-lane feeds (hn/github/sec/yt/…): today's top 25 per lane; bundle at `data/rss/index.opml`, manifest `data/rss/index.json` |
 | `data/dedup.json` | JSON | SimHash near-dup scan: cross-source clusters of the same story (64-bit fingerprint, hamming ≤3) |
+| `data/kind-lite.json` | JSON | Non-`post` kind labels per item url (video/release/paper/podcast/newsletter/tool/show/ask/job) |
+| `data/dedup-lite.json` | JSON | url → `{n, c, s}`: near-dup cluster size, canonical url, member sources |
+| `data/ai_quality.json` | JSON | *(generated when `TRENDSCOPE_LLM_KEY` is set)* Per-lane LLM scoring: kind, 1–5 quality against the lane rubric, dup_key, one-line `note` |
 
 Schema for item rows: `source, rank, title, url, score, metric, comments, author, tags, captured_at` — see [data-dictionary.md](data-dictionary.md).
 
