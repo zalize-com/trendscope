@@ -1,7 +1,7 @@
 const esc = s => { const d = document.createElement("div"); d.textContent = s||""; return d.innerHTML; };
 const fmt = n => n>=1e6?(n/1e6).toFixed(1)+"M":n>=1e3?(n/1e3).toFixed(1)+"k":String(n);
 const data = await fetch("docs/api/crossovers.json", {cache:"no-cache"}).then(r => r.json()).catch(() => null);
-if (!data) { document.getElementById("err").textContent = "could not load docs/api/crossovers.json"; throw 0; }
+if (!data) { document.getElementById("err").textContent = "could not load docs/api/crossovers.json"; } else {
 const xs = data.crossovers || [];
 const SRCS = [...new Set(xs.flatMap(x => x.sources))].sort();
 const state = { src: null };
@@ -25,3 +25,4 @@ function render() {
     </li>`).join("") + `</ol>`;
 }
 render();
+}

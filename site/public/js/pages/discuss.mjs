@@ -3,7 +3,7 @@ const fmt = n => n >= 1e3 ? (n/1e3).toFixed(1)+"k" : String(n);
 const $ = id => document.getElementById(id);
 
 const data = await fetch("docs/api/discussed.json", {cache:"no-cache"}).then(r => r.json()).catch(() => null);
-if (!data) { $("err").textContent = "could not load docs/api/discussed.json"; throw 0; }
+if (!data) { $("err").textContent = "could not load docs/api/discussed.json"; } else {
 
 const srcs = new Set(data.discussed.map(x => x.source));
 $("stats").innerHTML =
@@ -23,3 +23,4 @@ $("out").innerHTML =
   d.map(it => row(it, `💬 ${fmt(it.comments)} · ${fmt(it.score)} ${it.metric||""} · ${it.date}`)).join("") + `</ol>` +
   `<h2>heated — comments per point (score ≥ 50)</h2><ol>` +
   h.map(it => row(it, `<span class="hot">${(it.comments/Math.max(1,it.score)).toFixed(1)}×</span> 💬${fmt(it.comments)} · ${fmt(it.score)}pts`)).join("") + `</ol>`;
+}

@@ -31,7 +31,7 @@ const allAuth = {};
 for (const r of all) { const a = (r.author||"").trim(); if (a) allAuth[a] = (allAuth[a]||0)+1; }
 const topAuth = Object.entries(allAuth).sort((a,b)=>b[1]-a[1]).slice(0,25).map(x=>x[0]);
 document.title = D+" — author deep-dive — trendscope";
-if (!D || !allAuth[D]) { $("err").textContent = "pass ?u=author — e.g. author.html?u="+encodeURIComponent(topAuth[0]||"pg"); throw 0; }
+if (!D || !allAuth[D]) { $("err").textContent = "pass ?u=author — e.g. author.html?u="+encodeURIComponent(topAuth[0]||"pg"); } else {
 
 $("h").textContent = D;
 $("srcbar").innerHTML = `<a class="chip" href="authors.html">all authors</a>` + topAuth.map(h =>
@@ -78,3 +78,4 @@ $("out").innerHTML =
     `<a href="item.html?q=${encodeURIComponent(t.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>` +
     `<span class="sc">${[...t.srcs].map(srcName).join("/")} · ${t.days.size>1?t.days.size+"d · ":""}${t.best<99?"#"+t.best+" · ":""}${fmt(t.score)}${t.comments?" · "+t.comments+"💬":""}</span></li>`
   ).join("") + `</ol>`;
+}

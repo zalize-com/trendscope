@@ -32,7 +32,7 @@ const allHosts = {};
 for (const r of all) { const h = hostOf(r.url); if (h) allHosts[h] = (allHosts[h]||0)+1; }
 const topHosts = Object.entries(allHosts).sort((a,b)=>b[1]-a[1]).slice(0,25).map(x=>x[0]);
 document.title = D+" — domain deep-dive — trendscope";
-if (!D || !allHosts[D]) { $("err").textContent = "pass ?d=hostname — e.g. domain.html?d="+(topHosts[0]||"github.com"); throw 0; }
+if (!D || !allHosts[D]) { $("err").textContent = "pass ?d=hostname — e.g. domain.html?d="+(topHosts[0]||"github.com"); } else {
 
 $("h").textContent = D;
 $("srcbar").innerHTML = `<a class="chip" href="domains.html">all domains</a>` + topHosts.map(h =>
@@ -79,3 +79,4 @@ $("out").innerHTML =
     `<a href="item.html?q=${encodeURIComponent(t.title)}" title="score trajectory" style="color:var(--dim);text-decoration:none;margin-left:4px">⤳</a></span>` +
     `<span class="sc">${[...t.srcs].map(srcName).join("/")} · ${t.days.size>1?t.days.size+"d · ":""}${t.best<99?"#"+t.best+" · ":""}${fmt(t.score)}${t.comments?" · "+t.comments+"💬":""}</span></li>`
   ).join("") + `</ol>`;
+}
