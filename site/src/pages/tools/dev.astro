@@ -3,8 +3,19 @@ import Base from "../../layouts/Base.astro";
 const title = "trendscope dev tools \u2014 subnet calculator, number base converter, password generator";
 const description = "Free in-browser developer tools: IPv4 subnet calculator, binary/octal/decimal/hex converter, and a cryptographically secure password generator. No upload, no signup, no tracking.";
 const path = '/tools/dev.html';
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "trendscope dev tools — subnet calculator, base converter, password generator",
+  "url": "https://trendscope.zalize.com/tools/dev.html",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "isPartOf": { "@type": "WebSite", "name": "trendscope", "url": "https://trendscope.zalize.com/" }
+};
 ---
-<Base title={title} description={description} path={path} nav="tools">
+<Base title={title} description={description} path={path} nav="tools" jsonld={jsonld}>
 
 <nav><a href="../index.html">← trendscope</a> · <a href="./">tools</a> · <a href="more.html">tools+</a> · <a href="utils.html">utils</a> · <a href="web.html">web</a> · <a href="a11y.html">a11y</a> · <a href="geo.html">geo</a> · <a href="extensions.html">ext?</a> · <a href="doctor.html">doctor</a></nav>
   <h1>dev<span> tools</span></h1>

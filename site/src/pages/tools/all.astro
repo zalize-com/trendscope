@@ -3,8 +3,19 @@ import Base from "../../layouts/Base.astro";
 const title = "all tools — 90+ free client-side developer utilities";
 const description = "Searchable index of every trendscope utility: JSON, YAML, regex, cron, JWT, diff, QR, subnet, OPML doctor and 90+ more — all free, all client-side, no signup.";
 const path = "/tools/all.html";
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "trendscope all tools — searchable index of 90+ free utilities",
+  "url": "https://trendscope.zalize.com/tools/all.html",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "isPartOf": { "@type": "WebSite", "name": "trendscope", "url": "https://trendscope.zalize.com/" }
+};
 ---
-<Base title={title} description={description} path={path} nav="tools">
+<Base title={title} description={description} path={path} nav="tools" jsonld={jsonld}>
 <main class="wrap">
   <p class="back"><a href="../index.html">&larr; trendscope</a></p>
   <h1>all tools</h1>

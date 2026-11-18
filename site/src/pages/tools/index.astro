@@ -3,8 +3,19 @@ import Base from "../../layouts/Base.astro";
 const title = "trendscope tools \u2014 free in-browser developer utilities";
 const description = "Free developer tools that run entirely in your browser: JSON formatter, regex tester, cron explainer, timestamp converter, Base64/URL encoder. No upload, no signup, no tracking.";
 const path = '/tools/index.html';
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "trendscope tools — free in-browser developer utilities",
+  "url": "https://trendscope.zalize.com/tools/",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "isPartOf": { "@type": "WebSite", "name": "trendscope", "url": "https://trendscope.zalize.com/" }
+};
 ---
-<Base title={title} description={description} path={path} nav="tools">
+<Base title={title} description={description} path={path} nav="tools" jsonld={jsonld}>
 
 <div class="wrap">
   <a class="back" href="../index.html">← trendscope dashboard</a>

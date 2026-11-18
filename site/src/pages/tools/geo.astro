@@ -3,8 +3,19 @@ import Base from "../../layouts/Base.astro";
 const title = "trendscope GEO audit \u2014 is AI search citing your site?";
 const description = "Free in-browser GEO/AEO checklist: score how visible your site is to ChatGPT, Claude, Perplexity and other AI answer engines. No upload, no signup, no tracking.";
 const path = '/tools/geo.html';
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "trendscope GEO audit — check AI-search visibility",
+  "url": "https://trendscope.zalize.com/tools/geo.html",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "isPartOf": { "@type": "WebSite", "name": "trendscope", "url": "https://trendscope.zalize.com/" }
+};
 ---
-<Base title={title} description={description} path={path} nav="tools">
+<Base title={title} description={description} path={path} nav="tools" jsonld={jsonld}>
 
 <nav><a href="../index.html">← trendscope</a> · <a href="./">tools</a> · <a href="more.html">tools+</a> · <a href="utils.html">utils</a> · <a href="dev.html">dev</a> · <a href="web.html">web</a> · <a href="a11y.html">a11y</a> · <a href="extensions.html">ext?</a> · <a href="doctor.html">doctor</a></nav>
   <h1>GEO<span> audit</span></h1>

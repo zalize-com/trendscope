@@ -3,8 +3,19 @@ import Base from "../../layouts/Base.astro";
 const title = "trendscope tools+ \u2014 diff viewer & markdown preview, free in-browser";
 const description = "More free developer tools that run entirely in your browser: text diff viewer and markdown preview. No upload, no signup, no tracking.";
 const path = '/tools/more.html';
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "trendscope tools+ — diff viewer & markdown preview",
+  "url": "https://trendscope.zalize.com/tools/more.html",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "isPartOf": { "@type": "WebSite", "name": "trendscope", "url": "https://trendscope.zalize.com/" }
+};
 ---
-<Base title={title} description={description} path={path} nav="tools">
+<Base title={title} description={description} path={path} nav="tools" jsonld={jsonld}>
 
 <div class="wrap">
   <a class="back" href="index.html">← more tools</a>
