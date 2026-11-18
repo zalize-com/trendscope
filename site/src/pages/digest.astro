@@ -3,8 +3,11 @@ import Base from "../layouts/Base.astro";
 const title = "digests \u2014 trendscope";
 const description = "Weekly digests and daily movers generated from the trendscope developer attention dataset.";
 const path = '/digest.html';
+const jsonld = { "@context": "https://schema.org", "@type": "CollectionPage", "name": title, "description": description,
+  "url": "https://trendscope.zalize.com/digest",
+  "isPartOf": { "@type": "WebSite", "name": "trendscope", "url": "https://trendscope.zalize.com/" } };
 ---
-<Base title={title} description={description} path={path} nav="digests">
+<Base title={title} description={description} path={path} nav="digests" jsonld={jsonld}>
 
 <nav><a href="index.html">← trendscope</a> · <a href="daily/">daily by lane</a> · <a href="compare.html">compare</a> · <a href="topics.html">topics</a></nav>
   <h1>dig<span>ests</span></h1>

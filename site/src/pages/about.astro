@@ -3,8 +3,11 @@ import Base from "../layouts/Base.astro";
 const title = "about & methodology \u2014 trendscope";
 const description = "How trendscope builds the daily developer-attention dataset: sources, schedule, provenance and license.";
 const path = '/about.html';
+const jsonld = { "@context": "https://schema.org", "@type": "AboutPage", "name": title, "description": description,
+  "url": "https://trendscope.zalize.com/about",
+  "isPartOf": { "@type": "WebSite", "name": "trendscope", "url": "https://trendscope.zalize.com/" } };
 ---
-<Base title={title} description={description} path={path} nav="about">
+<Base title={title} description={description} path={path} nav="about" jsonld={jsonld}>
 
 <nav><a href="index.html">← trendscope</a></nav>
   <h1>about &amp; methodolo<span>gy</span></h1>
