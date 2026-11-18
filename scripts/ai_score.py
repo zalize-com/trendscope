@@ -17,16 +17,18 @@ Env:
 import json
 import os
 import sys
+import time
 import urllib.request
 
 KEY = os.environ.get("TRENDSCOPE_LLM_KEY")
 # Auto-detect provider from the key shape so "paste any key" just works:
-# Gemini keys start with AIza → Google's OpenAI-compatible endpoint.
-if KEY and KEY.startswith("AIza"):
-    _def_base, _def_model = ("https://generativelanguage.googleapis.com/v1beta/openai",
-                             "gemini-2.0-flash")
-else:
+# OpenAI keys start with sk-; anything else is treated as a Gemini key
+# (newer Google API keys no longer reliably start with AIza).
+if KEY and KEY.startswith("sk-"):
     _def_base, _def_model = ("https://api.openai.com/v1", "gpt-4o-mini")
+else:
+    _def_base, _def_model = ("https://generativelanguage.googleapis.com/v1beta/openai",
+                             "gemini-3.1-flash-lite")
 BASE = os.environ.get("TRENDSCOPE_LLM_BASE", _def_base).rstrip("/")
 MODEL = os.environ.get("TRENDSCOPE_LLM_MODEL", _def_model)
 PER_LANE = 25          # top-N items per lane sent to the model
@@ -80,9 +82,16 @@ def chat(messages):
         BASE + "/chat/completions", data=body,
         headers={"Authorization": "Bearer " + KEY,
                  "Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=120) as r:
-        out = json.loads(r.read())
-    return out["choices"][0]["message"]["content"]
+    for attempt in range(5):
+        try:
+            with urllib.request.urlopen(req, timeout=120) as r:
+                out = json.loads(r.read())
+            return out["choices"][0]["message"]["content"]
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 500, 502, 503, 504) and attempt < 4:
+                time.sleep(min(60, 8 * (attempt + 1)))
+                continue
+            raise
 
 
 def main():
@@ -104,17 +113,26 @@ def main():
                           "title": it.get("title"), "url": it.get("url"),
                           "score": it.get("score")})
     print(f"scoring {len(batch)} items across {len(lanes)} lanes …")
-    raw = chat([
-        {"role": "system", "content": "You are a precise classifier. JSON only."},
-        {"role": "user", "content": PROMPT + json.dumps(batch, ensure_ascii=False)},
-    ])
-    try:
-        scored = json.loads(raw)
-        if isinstance(scored, dict):  # tolerate {"items":[...]} wrapping
-            scored = scored.get("items") or scored.get("results") or []
-    except json.JSONDecodeError:
-        print("model returned non-JSON; aborting without writes.")
-        return 1
+    # chunk the batch: one giant prompt blows the free tier's
+    # tokens-per-minute quota even when RPM is fine.
+    CHUNK = 400
+    scored = []
+    for off in range(0, len(batch), CHUNK):
+        chunk = batch[off:off + CHUNK]
+        raw = chat([
+            {"role": "system", "content": "You are a precise classifier. JSON only."},
+            {"role": "user", "content": PROMPT + json.dumps(chunk, ensure_ascii=False)},
+        ])
+        try:
+            part = json.loads(raw)
+            if isinstance(part, dict):  # tolerate {"items":[...]} wrapping
+                part = part.get("items") or part.get("results") or []
+        except json.JSONDecodeError:
+            print(f"model returned non-JSON for chunk at {off}; skipping.")
+            part = []
+        scored.extend(part)
+        if off + CHUNK < len(batch):
+            time.sleep(4)
     by_i = {s.get("i"): s for s in scored if isinstance(s, dict)}
     out = {"generated_at": d.get("generated_at"), "model": MODEL,
            "scored": len(by_i), "items": []}
