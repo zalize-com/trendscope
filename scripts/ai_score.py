@@ -25,13 +25,30 @@ MODEL = os.environ.get("TRENDSCOPE_LLM_MODEL", "gpt-4o-mini")
 PER_LANE = 25          # top-N items per lane sent to the model
 OUT = "data/ai_quality.json"
 
+# Horizon-style profiles: what "worth reading" means differs per lane.
+# A news story wants "why it matters"; an engineering post wants
+# "what I can use". One rubric line per lane, picked by `lane(source)`.
+RUBRICS = {
+    "security": "novel vulnerabilities, exploitable techniques, major breaches, actionable defense",
+    "eng-blog": "reusable engineering practice, real production lessons, architecture decisions",
+    "tech-blog": "clear technical explanations, usable tools/libraries, non-trivial how-tos",
+    "blogroll": "distinctive personal insight or experience, not generic listicles",
+    "newsletter": "the issue's standout link, not newsletter meta-content",
+    "pod-blog": "high-signal talks/interviews worth the watch time",
+    "youtube": "high-signal tutorials/talks/demos worth the watch time",
+    "tldr": "stories a busy senior dev must not miss today",
+    "misc": "broad developer relevance, novel or consequential",
+}
+DEFAULT_RUBRIC = RUBRICS["misc"]
+
 PROMPT = """You classify developer-attention items. For each item return:
 kind (paper|release|tool|news|discussion|question|show|job|other),
-quality 1-5 (5 = must-read for a developer today),
-dup_key (short slug; identical stories across sources share it).
+quality 1-5 (5 = must-read for a developer today, judged by the per-source rubric given in `rubric`),
+dup_key (short slug; identical stories across sources share it),
+note (one line, <=12 words: why it matters OR what a dev can use — whichever fits the rubric).
 Reply ONLY with a JSON array aligned to the input order:
-[{"i":0,"kind":"...","quality":3,"dup_key":"..."}, ...]
-Items (JSON array of {i, source, title, url, score}):
+[{"i":0,"kind":"...","quality":3,"dup_key":"...","note":"..."}, ...]
+Items (JSON array of {i, source, rubric, title, url, score}):
 """
 
 LANE_OF = {
@@ -76,6 +93,7 @@ def main():
         rows.sort(key=lambda x: -(x.get("score") or 0))
         for it in rows[:PER_LANE]:
             batch.append({"i": len(batch), "source": it.get("source"),
+                          "rubric": RUBRICS.get(ln, DEFAULT_RUBRIC),
                           "title": it.get("title"), "url": it.get("url"),
                           "score": it.get("score")})
     print(f"scoring {len(batch)} items across {len(lanes)} lanes …")
@@ -97,7 +115,8 @@ def main():
         s = by_i.get(b["i"]) or {}
         out["items"].append({**b, "kind": s.get("kind"),
                              "quality": s.get("quality"),
-                             "dup_key": s.get("dup_key")})
+                             "dup_key": s.get("dup_key"),
+                             "note": s.get("note")})
     with open(OUT, "w") as f:
         json.dump(out, f, ensure_ascii=False)
     print(f"wrote {OUT} ({len(out['items'])} items, model={MODEL})")
