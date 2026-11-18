@@ -333,11 +333,11 @@ a.card:hover, .card:hover { border-color: color-mix(in srgb, var(--accent) 45%, 
 .topbar .brand svg { width: 17px; height: 17px; color: var(--accent); flex: none; }
 .topbar nav { display: flex; gap: 15px; flex-wrap: wrap; }
 /* font-size pins shared chrome: ~50 pages carry a legacy `nav a{font-size:13px}` for in-page navs */
-.topbar nav a { color: var(--dim); text-decoration: none; transition: color .15s; font-size: inherit; }
+.topbar nav a { color: var(--dim); text-decoration: none; transition: color .15s; font-size: inherit; white-space: nowrap; }
 .topbar nav a:hover { color: var(--fg); }
 .topbar nav a.here { color: var(--accent); font-weight: 600; }
 .topbar .right { margin-left: auto; display: flex; gap: 13px; align-items: center; }
-.topbar .right a { color: var(--dim); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; }
+.topbar .right a { color: var(--dim); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
 .topbar .right a:hover { color: var(--fg); }
 .theme-toggle {
   border: 1px solid var(--border); background: var(--panel); color: var(--dim);
