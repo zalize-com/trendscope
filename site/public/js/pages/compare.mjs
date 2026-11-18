@@ -22,15 +22,22 @@ function row(it, badge, scoreTxt, cls) {
 async function run() {
   const [A, B] = [aEl.value, bEl.value];
   $("out").innerHTML = `<p id="err">loading ${A} vs ${B}…</p>`;
+  const fetchGz = async url => {
+    const gz = await fetch(url + ".gz", {cache: "no-cache"});
+    if (!gz.ok) return null;
+    const ds = new DecompressionStream("gzip");
+    return JSON.parse(await new Response(gz.body.pipeThrough(ds)).text());
+  };
   const j = async url => {
+    // daily snapshots past the gzip switchover live only as .json.gz — try gz first
+    if (/data\/daily\/.+\.json$/.test(url)) {
+      const d = await fetchGz(url).catch(() => null);
+      if (d) return d;
+    }
     let r = await fetch(url, {cache: "no-cache"});
     if (!r.ok && url.endsWith(".json")) {
-      // daily snapshots past the gzip switchover live as .json.gz
-      const gz = await fetch(url + ".gz", {cache: "no-cache"});
-      if (gz.ok) {
-        const ds = new DecompressionStream("gzip");
-        return JSON.parse(await new Response(gz.body.pipeThrough(ds)).text());
-      }
+      const d = await fetchGz(url).catch(() => null);
+      if (d) return d;
     }
     if (!r.ok) throw new Error(url + " " + r.status);
     return r.json();

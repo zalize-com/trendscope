@@ -98,15 +98,23 @@ const fmt = n => {
 
 let SNAP = null, YDAY = null;
 
+async function fetchGz(url) {
+  const gz = await fetch(url + ".gz", {cache: "no-cache"});
+  if (!gz.ok) return null;
+  const ds = new DecompressionStream("gzip");
+  return JSON.parse(await new Response(gz.body.pipeThrough(ds)).text());
+}
+
 async function j(url) {
+  // daily snapshots past the gzip switchover live only as .json.gz — try gz first
+  if (/data\/daily\/.+\.json$/.test(url)) {
+    const d = await fetchGz(url).catch(() => null);
+    if (d) return d;
+  }
   let r = await fetch(url, {cache: "no-cache"});
   if (!r.ok && url.endsWith(".json")) {
-    // daily snapshots past the gzip switchover live as .json.gz
-    const gz = await fetch(url + ".gz", {cache: "no-cache"});
-    if (gz.ok) {
-      const ds = new DecompressionStream("gzip");
-      return JSON.parse(await new Response(gz.body.pipeThrough(ds)).text());
-    }
+    const d = await fetchGz(url).catch(() => null);
+    if (d) return d;
   }
   if (!r.ok) throw new Error(url + " " + r.status);
   return r.json();
