@@ -1,0 +1,33 @@
+---
+title: trendscope developer attention dataset (daily cross-source snapshots, from 2026-11-08)
+homepage: https://github.com/zalize-com/trendscope
+category: Software
+description: Daily snapshot of developer attention across 9,200+ public sources: Hacker News, Lobste.rs, Dev.to, GitHub Trending, npm/PyPI/crates.io downloads, 130+ security blogs, ~6,000 individual developer blogs, engineering newsletters and company engineering blogs. Each record carries source, rank, title, canonical URL, a source-normalized score, comments count, tags, author handle and an ISO-8601 capture timestamp. Published as CC0 JSON and CSV: latest.json (full snapshot), latest-lite.json (top-3 per source), daily/*.json.gz archives, append-only history.csv for velocity analysis, plus feeds.json (the 9,202-feed registry with health state), zerowatch.json (persistent-empty detection over consecutive snapshots) and dedup.json (SimHash near-duplicate story clusters). A GitHub Action regenerates the dataset every day and commits it back to the same repository.
+version: daily
+keywords: developer news, hacker news, rss, feeds, trending, attention, aggregation, time series, json, csv, opml, open data
+image:
+temporal: 2026-11-08 to present, one snapshot per UTC day
+spatial: global
+access_level: public
+copyrights: CC0
+accrual_periodicity: daily
+specification: https://github.com/zalize-com/trendscope/blob/main/docs/data-dictionary.md
+data_quality: true
+data_dictionary: https://github.com/zalize-com/trendscope/blob/main/docs/data-dictionary.md
+language: en
+license: CC0
+publisher:
+  - name: zalize
+    web: https://github.com/zalize-com
+organization:
+issued_time: 2026.11
+sources:
+  - name: Latest full snapshot (JSON)
+    access_url: https://raw.githubusercontent.com/zalize-com/trendscope/main/data/latest.json
+  - name: Append-only cumulative history (CSV)
+    access_url: https://raw.githubusercontent.com/zalize-com/trendscope/main/data/history.csv
+  - name: Daily archives (gzipped JSON, one per UTC day)
+    access_url: https://github.com/zalize-com/trendscope/tree/main/data/daily
+references:
+  - title: Live dashboard built on the dataset
+    reference: https://trendscope.zalize.com
